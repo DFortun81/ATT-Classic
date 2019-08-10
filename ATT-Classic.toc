@@ -1,11 +1,11 @@
 ## Author: Crieve-Sargeras
 ## Interface: 11302
-## Title: AllTheThings
-## Name: AllTheThings
+## Title: ATT-Classic
+## Name: ATT-Classic
 ## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 1.9.3 [1.3.2]
+## Version: 0.0.1
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
@@ -23,7 +23,7 @@ locales\ruRU.lua
 locales\zhCN.lua
 db\Presets.lua
 Settings.lua
-AllTheThings.lua
+ATT-Classic.lua
 db\FactionDB.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
