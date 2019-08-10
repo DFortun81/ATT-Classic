@@ -34,11 +34,11 @@ end
 checkbuttonClass.SetATTTooltip = buttonClass.SetATTTooltip;
 frameClass.SetATTTooltip = buttonClass.SetATTTooltip;
 textureClass.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetTexture("Interface\\Addons\\AllTheThings\\assets\\content");
+	self:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\content");
 	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
 end
 buttonClass.SetATTHighlightSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetHighlightTexture("Interface\\Addons\\AllTheThings\\assets\\content");
+	self:SetHighlightTexture("Interface\\Addons\\ATT-Classic\\assets\\content");
 	local hl = self:GetHighlightTexture();
 	hl:SetATTSprite(name, x, y, w, h, sourceW, sourceH);
 	return hl;

@@ -2442,12 +2442,12 @@ end)();
 				local info = t.info;
 				if info and info.faction and info.faction > 0 then
 					if info.faction == Enum.FlightPathFaction.Horde then
-						return "Interface\\Addons\\AllTheThings\\assets\\fp_horde";
+						return "Interface\\Addons\\ATT-Classic\\assets\\fp_horde";
 					else
-						return "Interface\\Addons\\AllTheThings\\assets\\fp_alliance";
+						return "Interface\\Addons\\ATT-Classic\\assets\\fp_alliance";
 					end
 				end
-				return "Interface\\Addons\\AllTheThings\\assets\\fp_neutral";
+				return "Interface\\Addons\\ATT-Classic\\assets\\fp_neutral";
 			else
 				-- Something that isn't dynamic.
 				return table[key];
@@ -3690,9 +3690,9 @@ local function SetRowData(self, row, data)
 		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.isDaily then
-				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known");
+				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known");
 			else
-				row.Indicator:SetTexture("Interface\\Addons\\AllTheThings\\assets\\known_green");
+				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known_green");
 			end
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
@@ -4581,7 +4581,7 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.icon = "Interface\\Addons\\ATT-Classic\\assets\\content";
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
@@ -4702,7 +4702,7 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\AllTheThings\\assets\\content";
+		allData.icon = "Interface\\Addons\\ATT-Classic\\assets\\content";
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
@@ -4867,7 +4867,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		
 		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
 		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture("Interface\\AddOns\\AllTheThings\\assets\\grip");
+		grip:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\grip");
 		grip:SetSize(16, 16);
 		grip:SetTexCoord(0,1,0,1);
 		grip:SetPoint("BOTTOMRIGHT", -5, 5);
@@ -5501,7 +5501,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
 				print("Path: ", mapPath);
-				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("AllTheThings", "Version"));
+				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("ATT-Classic", "Version"));
 			end
 		end
 		local function OpenMiniList(id, show)
@@ -6754,7 +6754,7 @@ app.events.PLAYER_LOGIN = function()
 	app:RefreshData(false);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
-		icon = "Interface\\Addons\\AllTheThings\\assets\\logo_32x32",
+		icon = "Interface\\Addons\\ATT-Classic\\assets\\logo_32x32",
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
