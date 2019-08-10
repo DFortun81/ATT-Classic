@@ -910,7 +910,6 @@ end
 local function ResolveSymbolicLink(o)
 	if o.sym then
 		local searchResults = {};
-		-- {{"select", "itemID", 119321}, {"where", "modID", 6 },{"pop"}},
 		for j,sym in ipairs(o.sym) do
 			local cmd = sym[1];
 			if cmd == "select" then
@@ -1130,7 +1129,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, d, numBonusIds = strsplit(":", itemString);
+					local _, itemID2, _, _, _, _, _, suffixId = strsplit(":", itemString);
 					if itemID2 then
 						itemID = tonumber(itemID2); 
 						paramA = "itemID";
@@ -1470,30 +1469,9 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
-			local _, itemID, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId,
-				linkLevel, specializationID, upgradeId, modID = strsplit(":", link);
+			local itemID = select(2, strsplit(":", link));
 			if itemID then
-				itemID = tonumber(itemID) or 0;
-				
-				-- Search for the item ID.
-				_ = SearchForField("itemID", itemID);
-				if _ and modID and modID ~= "" then
-					modID = tonumber(modID or "1");
-					local onlyMatchingModIDs = {};
-					for i,o in ipairs(_) do
-						if o.modID then
-							if o.modID == modID then
-								tinsert(onlyMatchingModIDs, o);
-							end
-						else
-							tinsert(onlyMatchingModIDs, o);
-						end
-					end
-					if #onlyMatchingModIDs > 0 then
-						return onlyMatchingModIDs;
-					end
-				end
-				return _;
+				return SearchForField("itemID", tonumber(itemID) or 0);
 			end
 		end
 	else
@@ -2650,39 +2628,26 @@ app.BaseItem = {
 			return t.saved;
 		elseif key == "text" then
 			return t.link;
+		elseif key == "icon" then
+			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 		elseif key == "link" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						itemLink = string.format("item:%d::::::::::::1:%d", itemLink, t.bonusID);
-					else
-						itemLink = string.format("item:%d:::::::::::::", itemLink);
+			local link = select(2, GetItemInfo(t.itemID));
+			if link then
+				t.link = link;
+				t.retries = nil;
+				return link;
+			else
+				if t.retries then
+					t.retries = t.retries + 1;
+					if t.retries > app.MaximumItemInfoRetries then
+						local itemName = "Item #" .. t.itemID .. "*";
+						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
+						t.link = "";
+						t.text = itemName;
+						return itemName;
 					end
-				elseif t.modID then
-					itemLink = string.format("item:%d:::::::::::%d:1:3524", itemLink, t.modID);
-				end
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(itemLink);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					t.retries = nil;
-					return link;
 				else
-					if t.retries then
-						t.retries = t.retries + 1;
-						if t.retries > app.MaximumItemInfoRetries then
-							local itemName = "Item #" .. t.itemID .. "*";
-							t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
-							t.icon = "Interface\\Icons\\INV_Misc_QuestionMark";
-							t.link = "";
-							t.s = nil;
-							t.text = itemName;
-							return itemName;
-						end
-					else
-						t.retries = 1;
-					end
+					t.retries = 1;
 				end
 			end
 		elseif key == "trackable" then
@@ -2691,25 +2656,10 @@ app.BaseItem = {
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
-		elseif key == "modID" then
-			return 1;
 		elseif key == "name" then
 			return t.link and GetItemInfo(t.link);
 		elseif key == "tsm" then
-			local itemLink = t.itemID;
-			if itemLink then
-				if t.bonusID then
-					if t.bonusID > 0 then
-						return string.format("i:%d:0:1:%d", itemLink, t.bonusID);
-					else
-						return string.format("i:%d", itemLink);
-					end
-				--elseif t.modID then
-					-- NOTE: At this time, TSM3 does not support modID. (RIP)
-					--return string.format("i:%d:%d:1:3524", itemLink, t.modID);
-				end
-				return string.format("i:%d", itemLink);
-			end
+			return string.format("i:%d", t.itemID);
 		elseif key == "b" then
 			return 2;
 		else
@@ -2974,24 +2924,10 @@ app.BaseRecipe = {
 		elseif key == "text" then
 			return t.link;
 		elseif key == "icon" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
+			if t.itemID then return select(5, GetItemInfoInstant(t.itemID)); end
 			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
 		elseif key == "link" then
-			if t.itemID then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
+			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
 			return select(1, GetSpellLink(t.spellID));
 		elseif key == "collectible" then
 			return app.CollectibleRecipes;
@@ -4222,8 +4158,6 @@ local function RowOnEnter(self)
 				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " .. 
 				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
 		end
-		if reference.bonusID and app.Settings:GetTooltipSetting("bonusID") then GameTooltip:AddDoubleLine("Bonus ID", tostring(reference.bonusID)); end
-		if reference.modID and app.Settings:GetTooltipSetting("modID") then GameTooltip:AddDoubleLine("Mod ID", tostring(reference.modID)); end
 		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if not reference.itemID then
 			if reference.speciesID then
@@ -5632,90 +5566,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			
-			-- Define the different window configurations that the mini list will switch to based on context.
-			local raidassistant, lootspecialization, dungeondifficulty, raiddifficulty, legacyraiddifficulty;
-			
 			-- Raid Assistant
-			local difficultyLookup = {
-				personalloot = "Personal Loot",
-				group = "Group Loot",
-				master = "Master Loot",
-			};
-			local difficultyDescriptions = {
-				personalloot = "Each player has an independent chance at looting an item useful for their class...\n\n... Or useless things like rings.\n\nClick twice to create a group automatically if you're by yourself.",
-				group = "Group loot, round-robin for normal items, rolling for special ones.\n\nClick twice to create a group automatically if you're by yourself.",
-				master = "Master looter, designated player distributes loot.\n\nClick twice to create a group automatically if you're by yourself.",
-			};
-			local switchDungeonDifficulty = function(row, button)
-				self.data = raidassistant;
-				SetDungeonDifficultyID(row.ref.difficultyID);
-				self:Update(true);
-				return true;
-			end
-			local switchRaidDifficulty = function(row, button)
-				self.data = raidassistant;
-				local myself = self;
-				local difficultyID = row.ref.difficultyID;
-				if not self.running then
-					self.running = true;
-				else
-					self.running = false;
-				end
-				
-				SetRaidDifficultyID(difficultyID);
-				StartCoroutine("RaidDifficulty", function()
-					while InCombatLockdown() do coroutine.yield(); end
-					while myself.running do
-						for i=0,150,1 do
-							if myself.running then
-								coroutine.yield();
-							else
-								break;
-							end
-						end
-						if app.RaidDifficulty == difficultyID then
-							myself.running = false;
-							break;
-						else
-							SetRaidDifficultyID(difficultyID);
-						end
-					end
-				end);
-				self:Update(true);
-				return true;
-			end
-			local switchLegacyRaidDifficulty = function(row, button)
-				self.data = raidassistant;
-				local myself = self;
-				local difficultyID = row.ref.difficultyID;
-				if not self.legacyrunning then
-					self.legacyrunning = true;
-				else
-					self.legacyrunning = false;
-				end
-				SetLegacyRaidDifficultyID(difficultyID);
-				StartCoroutine("LegacyRaidDifficulty", function()
-					while InCombatLockdown() do coroutine.yield(); end
-					while myself.legacyrunning do
-						for i=0,150,1 do
-							if myself.legacyrunning then
-								coroutine.yield();
-							else
-								break;
-							end
-						end
-						if app.LegacyRaidDifficulty == difficultyID then
-							myself.legacyrunning = false;
-							break;
-						else
-							SetLegacyRaidDifficultyID(difficultyID);
-						end
-					end
-				end);
-				self:Update(true);
-				return true;
-			end
-			raidassistant = {
+			local raidassistant = {
 				['text'] = "Raid Assistant",
 				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
 				["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
@@ -5723,100 +5575,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
-					{
-						['text'] = "Loot Specialization Unknown",
-						['title'] = "Loot Specialization",
-						["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to change it now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.data = lootspecialization;
-							self:Update(true);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							if app.Spec then
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(app.Spec);
-								if name then
-									if GetLootSpecialization() == 0 then name = name .. " (Automatic)"; end
-									data.text = name;
-									data.icon = icon;
-								end
-							end
-						end,
-					},
-					app.CreateDifficulty(1, {
-						['title'] = "Dungeon Difficulty",
-						["description"] = "The difficulty setting for dungeons.\n\nClick this row to change it now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							self.data = dungeondifficulty;
-							self:Update(true);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							if app.DungeonDifficulty then
-								data.difficultyID = app.DungeonDifficulty;
-								data.name = GetDifficultyInfo(data.difficultyID) or "???";
-								local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
-								if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'party' then
-									data.name = data.name .. " (" .. (difficultyName or "???") .. ")";
-								end
-							end
-						end,
-					}),
-					app.CreateDifficulty(14, {
-						['title'] = "Raid Difficulty",
-						["description"] = "The difficulty setting for raids.\n\nClick this row to change it now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-							self.data = raiddifficulty;
-							self:Update(true);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							if app.RaidDifficulty then
-								data.difficultyID = app.RaidDifficulty;
-								local name, instanceType, instanceDifficulty, difficultyName = GetInstanceInfo();
-								if instanceDifficulty and data.difficultyID ~= instanceDifficulty and instanceType == 'raid' then
-									data.name = (GetDifficultyInfo(data.difficultyID) or "???") .. " (" .. (difficultyName or "???") .. ")";
-								else
-									data.name = GetDifficultyInfo(data.difficultyID);
-								end
-							end
-						end,
-					}),
-					app.CreateDifficulty(5, {
-						['title'] = "Legacy Raid Difficulty",
-						["description"] = "The difficulty setting for legacy raids.\n\nClick this row to change it now!",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							-- Don't allow you to change difficulties when you're in LFR / Raid Finder
-							if app.RaidDifficulty == 7 or app.RaidDifficulty == 17 then return true; end
-							self.data = legacyraiddifficulty;
-							self:Update(true);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							if app.LegacyRaidDifficulty then
-								data.difficultyID = app.LegacyRaidDifficulty;
-							end
-						end,
-					}),
-					{
-						['text'] = "Teleport to/from Dungeon",
-						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
-						['description'] = "Click here to teleport to/from your current instance.\n\nYou can utilize the Mists of Pandaria Scenarios to quickly teleport yourself outside of your current instance this way.",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							LFGTeleport(IsInLFGDungeon());
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = IsAllowedToUserTeleport();
-						end,
-					},
 					{
 						['text'] = "Reset Instances",
 						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
@@ -5834,7 +5592,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['OnUpdate'] = function(data)
 							data.visible = not IsInGroup() or UnitIsGroupLeader("player");
 							if data.visible and data.saved then
-								if IsInInstance() or C_Scenario.IsInScenario() then
+								if IsInInstance() then
 									data.shouldReset = true;
 								elseif data.shouldReset then
 									data.shouldReset = nil;
@@ -5844,33 +5602,12 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						end,
 					},
 					{
-						['text'] = "Delist Group",
-						['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
-						['description'] = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							C_LFGList.RemoveListing();
-							if GroupFinderFrame:IsVisible() then
-								PVEFrame_ToggleFrame("GroupFinderFrame")
-							end
-							self.data = raidassistant;
-							UpdateWindow(self, true);
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = C_LFGList.GetActiveEntryInfo();
-						end,
-					},
-					{
 						['text'] = "Leave Group",
 						['icon'] = "Interface\\Icons\\Ability_Vanish",
 						['description'] = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							LeaveParty();
-							if GroupFinderFrame:IsVisible() then
-								PVEFrame_ToggleFrame("GroupFinderFrame")
-							end
 							self.data = raidassistant;
 							UpdateWindow(self, true);
 							return true;
@@ -5881,173 +5618,16 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					},
 				}
 			};
-			lootspecialization = {
-				['text'] = "Loot Specialization",
-				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
-				["description"] = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
-				['OnClick'] = function(row, button)
-					self.data = raidassistant;
-					self:Update(true);
-					return true;
-				end,
-				['OnUpdate'] = function(data)
-					data.g = {};
-					local numSpecializations = GetNumSpecializations();
-					if numSpecializations and numSpecializations > 0 then
-						tinsert(data.g, {
-							['text'] = "Current Specialization",
-							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
-							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
-							['id'] = 0,
-							["description"] = "If you switch your talents, your loot specialization changes with you.",
-							['visible'] = true,
-							['OnClick'] = function(row, button)
-								self.data = raidassistant;
-								SetLootSpecialization(row.ref.id);
-								self:Update(true);
-							end,
-						});
-						for i=1,numSpecializations,1 do
-							local id, name, description, icon, background, role, primaryStat = GetSpecializationInfo(i);
-							tinsert(data.g, {
-								['text'] = name,
-								['icon'] = icon,
-								['id'] = id,
-								["description"] = description,
-								['visible'] = true,
-								['OnClick'] = function(row, button)
-									self.data = raidassistant;
-									SetLootSpecialization(row.ref.id);
-									self:Update(true);
-								end,
-							});
-						end
-					end
-				end,
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {},
-			};
-			dungeondifficulty = {
-				['text'] = "Dungeon Difficulty",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = "This setting allows you to customize the difficulty of a dungeon.\n\nClick this row to go back to the Raid Assistant.",
-				['OnClick'] = function(row, button)
-					self.data = raidassistant;
-					self:Update(true);
-					return true;
-				end,
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {
-					app.CreateDifficulty(1, {
-						['OnClick'] = switchDungeonDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-						['back'] = 0.5,
-					}),
-					app.CreateDifficulty(2, {
-						['OnClick'] = switchDungeonDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-						['back'] = 0.5,
-					}),
-					app.CreateDifficulty(23, {
-						['OnClick'] = switchDungeonDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-						['back'] = 0.5,
-					})
-				},
-			};
-			raiddifficulty = {
-				['text'] = "Raid Difficulty",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = "This setting allows you to customize the difficulty of a raid.\n\nClick this row to go back to the Raid Assistant.",
-				['OnClick'] = function(row, button)
-					self.data = raidassistant;
-					self:Update(true);
-					return true;
-				end,
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {
-					app.CreateDifficulty(14, {
-						['OnClick'] = switchRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-					app.CreateDifficulty(15, {
-						['OnClick'] = switchRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-					app.CreateDifficulty(16, {
-						['OnClick'] = switchRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					})
-				},
-			};
-			legacyraiddifficulty = {
-				['text'] = "Legacy Raid Difficulty",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
-				["description"] = "This setting allows you to customize the difficulty of a legacy raid. (Pre-Siege of Orgrimmar)\n\nClick this row to go back to the Raid Assistant.",
-				['OnClick'] = function(row, button)
-					self.data = raidassistant;
-					self:Update(true);
-					return true;
-				end,
-				['visible'] = true, 
-				['expanded'] = true,
-				['back'] = 1,
-				['g'] = {
-					app.CreateDifficulty(3, {
-						['OnClick'] = switchLegacyRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-					app.CreateDifficulty(5, {
-						['OnClick'] = switchLegacyRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-					app.CreateDifficulty(4, {
-						['OnClick'] = switchLegacyRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-					app.CreateDifficulty(6, {
-						['OnClick'] = switchLegacyRaidDifficulty,
-						["description"] = "Click to change now. (if available)",
-						['visible'] = true,
-					}),
-				},
-			};
 			self.data = raidassistant;
 			
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
-			self:RegisterEvent("PLAYER_LOOT_SPEC_UPDATED");
-			self:RegisterEvent("ACTIVE_TALENT_GROUP_CHANGED");
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
-			self:RegisterEvent("SCENARIO_UPDATE");
 			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
 		end
 		
 		-- Update the window and all of its row data
-		app.LegacyRaidDifficulty = GetLegacyRaidDifficultyID() or 1;
-		app.DungeonDifficulty = GetDungeonDifficultyID() or 1;
-		app.RaidDifficulty = GetRaidDifficultyID() or 14;
-		app.Spec = GetLootSpecialization();
-		if not app.Spec or app.Spec == 0 then
-			local s = GetSpecialization();
-			if s then app.Spec = select(1, GetSpecializationInfo(s)); end
-		end
 		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
 		for i,g in ipairs(self.data.g) do
 			if g.OnUpdate then g.OnUpdate(g); end
@@ -6100,21 +5680,6 @@ app:GetWindow("Random", UIParent, function(self)
 					end
 					searchCache["randomatt"] = searchResults;
 					return searchResults;
-				end
-			end
-			function self:SelectAchievement()
-				if searchCache["randomachievement"] then
-					return searchCache["randomachievement"];
-				else
-					local searchResults, dict, temp = {}, {} , {};
-					SearchRecursively(app:GetWindow("Prime").data, "achievementID", searchResults);
-					for i,o in pairs(searchResults) do
-						if not (o.saved or o.collected) and not o.saved and o.collectible and not o.mapID then
-							tinsert(temp, o);
-						end
-					end
-					searchCache["randomachievement"] = temp;
-					return temp;
 				end
 			end
 			function self:SelectItem()
@@ -6207,33 +5772,10 @@ app:GetWindow("Random", UIParent, function(self)
 					return temp;
 				end
 			end
-			function self:SelectToy()
-				if searchCache["randomtoy"] then
-					return searchCache["randomtoy"];
-				else
-					local searchResults, dict, temp = {}, {} , {};
-					SearchRecursively(app:GetWindow("Prime").data, "isToy", searchResults);
-					for i,o in pairs(searchResults) do
-						if not (o.saved or o.collected) and o.collectible then
-							tinsert(temp, o);
-						end
-					end
-					searchCache["randomtoy"] = temp;
-					return temp;
-				end
-			end
 			local excludedZones = {
-				12,	-- Kalimdor
-				13, -- Eastern Kingdoms
-				101,	-- Outland
-				113,	-- Northrend
-				424,	-- Pandaria
-				948,	-- The Maelstrom
-				572,	-- Draenor
-				619,	-- The Broken Isles
-				905,	-- Argus
-				876,	-- Kul'Tiras
-				875,	-- Zandalar
+				947,	-- Cosmic
+				1414,	-- Kalimdor
+				1415,	-- Eastern Kingdoms
 			};
 			function self:SelectZone()
 				if searchCache["randomzone"] then
@@ -6292,21 +5834,6 @@ app:GetWindow("Random", UIParent, function(self)
 							return app:GetWindow("Prime").data[key];
 						end
 					end}),
-					{
-						['text'] = "Achievement",
-						['icon'] = "Interface\\Icons\\Achievement_FeatsOfStrength_Gladiator_10",
-						['description'] = "Click this button to select a random achievement based on what you're missing.",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Achievement");
-							self.data = mainHeader;
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
-					},
 					{
 						['text'] = "Item",
 						['icon'] = "Interface\\Icons\\INV_Box_02",
@@ -6389,21 +5916,6 @@ app:GetWindow("Random", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Pet");
-							self.data = mainHeader;
-							self:Reroll();
-							return true;
-						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
-					},
-					{
-						['text'] = "Toy",
-						['icon'] = "Interface\\Icons\\INV_Misc_Toy_10",
-						['description'] = "Click this button to select a random toy based on what you're missing.",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Toy");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -6966,11 +6478,6 @@ app.events.ADDON_LOADED = function(addonName)
 		
 		-- Function to Update the State of the Scan button. (Coroutines, do not call manually.)
 		local ObjectTypeMetas = {
-			["s"] = setmetatable({	-- Appearances
-				["npcID"] = -10032,
-				["description"] = "All appearances that you need are displayed here.",
-				["priority"] = 2,
-			}, app.BaseNPC),
 			["mountID"] = setmetatable({	-- Mounts
 				["filterID"] = 100,
 				["description"] = "All mounts that you have not collected yet are displayed here.",
@@ -6987,10 +6494,10 @@ app.events.ADDON_LOADED = function(addonName)
 				["description"] = "All items that can be used to craft an item using a profession on your account.",
 				["priority"] = 5,
 			},
-			["itemID"] = {	-- Non-Collectible Items
-				["text"] = "Non-Collectible Items",
+			["itemID"] = {	-- Items
+				["text"] = "Items",
 				["icon"] = "Interface/ICONS/ACHIEVEMENT_GUILDPERK_BARTERING",
-				["description"] = "All items that can be used to earn other collectible items, but are not necessarily collectible themselves are displayed here.",
+				["description"] = "All items that could potentially be upgrades are listed here.",
 				["priority"] = 7,
 			},
 		};
