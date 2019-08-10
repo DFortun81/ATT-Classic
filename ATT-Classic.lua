@@ -4249,11 +4249,19 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.cost then
-			local cost = tostring(reference.cost);
-			if reference.parent and (reference.parent.currencyID or reference.parent.itemID) then
-				cost = (reference.parent.icon and ("|T" .. reference.parent.icon .. ":0|t") or "") .. (reference.parent.text or "???") .. " x" .. cost;
+			if type(reference.cost) == "table" then
+				for k,v in pairs(reference.cost) do
+					local name, icon, _;
+					if v[1] == "i" then
+						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2])
+					elseif v[1] == "c" then
+						name,_,icon = GetCurrencyInfo(v[2])
+					end
+					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " x" .. v[3]);
+				end
+			else
+				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
 			end
-			GameTooltip:AddDoubleLine("Cost", cost); 
 		end
 		if app.Settings:GetTooltipSetting("Progress") then
 			local right = (app.Settings:GetTooltipSetting("ShowIconOnly") and GetProgressTextForRow or GetProgressTextForTooltip)(reference);
@@ -4945,14 +4953,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 end);
 
 -- Uncomment this section if you need to enable Debugger:
---[[
-app.ModelViewer = GameTooltipModel;
-app.ModelViewer.SetRotation = function(number)
-	GameTooltipModel.Model:SetFacing(number and ((number * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
-end
-app.ModelViewer.SetScale = function(number)
-	GameTooltipModel.Model:SetCamDistanceScale(number or 1);
-end
+--[[]]--
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -5060,10 +5061,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 						for i=1,numItems,1 do
 							local link = GetMerchantItemLink(i);
 							if link then
-								local parent = rawGroups;
 								local name, texture, cost, quantity, numAvailable, isPurchasable, isUsable, extendedCost = GetMerchantItemInfo(i);
-								-- print(link, cost, extendedCost);
 								if extendedCost then
+									cost = {};
 									local itemCount = GetMerchantItemCostInfo(i);
 									for j=1,itemCount,1 do
 										local itemTexture, itemValue, itemLink = GetMerchantItemCostItem(i, j);
@@ -5071,42 +5071,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 											-- print("  ", itemValue, itemLink, gsub(itemLink, "\124", "\124\124"));
 											local m = itemLink:match("currency:(%d+)");
 											if m then
-												-- Parse as a CURRENCY LINK.
-												parent = MergeObject(parent, {["currencyID"] = tonumber(m), ["g"] = {}}).g;
-												cost = itemValue;
+												-- Parse as a CURRENCY.
+												tinsert(cost, {"c", tonumber(m), itemValue});
 											else
-												-- Parse as an ITEM LINK.
-												m = itemLink:match("item:(%d+)");
-												if m then
-													cost = itemValue;
-													parent = MergeObject(parent, {["itemID"] = tonumber(m), ["g"] = {}}).g;
-												end
+												-- Parse as an ITEM.
+												tinsert(cost, {"i", tonumber(itemLink:match("item:(%d+)")), itemValue});
 											end
 										end
 									end
 								end
 								
 								-- Parse as an ITEM LINK.
-								m = link:match("item:(%d+)");
-								if m then
-									m = tonumber(m);
-									local found = false;
-									local searchResults = SearchForField("itemID", m);
-									if searchResults and #searchResults > 0 then
-										for j,k in ipairs(searchResults) do
-											if k.parent and (k.parent.creatureID == npc_id or (k.parent.parent and k.parent.parent.creatureID == npc_id)) then
-												found = true;
-											end
-										end
-									end
-									if not found then
-										table.insert(parent, {["itemID"] = m, ["cost"] = cost});
-									end
-								end
-								--[===[
-								local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(link);
-								print(" ", itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice);
-								]===]--
+								table.insert(rawGroups, {["itemID"] = tonumber(link:match("item:(%d+)")), ["cost"] = cost});
 							end
 						end
 						
@@ -5193,7 +5169,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end):Show();
-]]--
+--[[]]--
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
