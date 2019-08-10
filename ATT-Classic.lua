@@ -4803,7 +4803,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 				if pos then
 					local px, py = pos:GetXY();
-					info.coord = { px * 100, py * 100 };
+					info.coord = { px * 100, py * 100, mapID };
 				end
 				repeat
 					mapInfo = C_Map.GetMapInfo(mapID);

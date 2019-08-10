@@ -1365,6 +1365,7 @@ table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
+	["Coordinates"] = "Coordinates",
 	["currencyID"] = "Currency ID",
 	["encounterID"] = "Encounter ID",
 	["factionID"] = "Faction ID",
@@ -1381,7 +1382,7 @@ local ids = {
 	["spellID"] = "Spell ID",
 };
 local last = nil;
-for _,id in pairs({"creatureID","creatures","currencyID","encounterID","factionID","fileID","filterID","flightPathID","instanceID"}) do
+for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","encounterID","factionID","fileID","filterID","flightPathID","instanceID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
