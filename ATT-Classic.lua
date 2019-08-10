@@ -4235,18 +4235,12 @@ local function RowOnEnter(self)
 				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
 			end
 			GameTooltipIcon:Show();
-		elseif reference.displayID or reference.modelID or reference.model then
-			if app.Settings:GetTooltipSetting("fileID") then
-				GameTooltip:AddDoubleLine("File ID", GameTooltipModel.Model:GetModelFileID());
-			end
-			if app.Settings:GetTooltipSetting("displayID") then
-				if reference.displayID or reference.modelID then
-					GameTooltip:AddDoubleLine("Display ID", reference.displayID);
-				end
-				if reference.modelID then
-					GameTooltip:AddDoubleLine("Model ID", reference.modelID);
-				end
-			end
+		end
+		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
+			GameTooltip:AddDoubleLine("Display ID", reference.displayID);
+		end
+		if reference.modelID and app.Settings:GetTooltipSetting("modelID") then
+			GameTooltip:AddDoubleLine("Model ID", reference.modelID);
 		end
 		if reference.cost then
 			if type(reference.cost) == "table" then
