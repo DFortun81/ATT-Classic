@@ -198,7 +198,8 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 	if creatureID > 0 then
 		self.Model:SetUnit("none");
 		self.Model:SetCreature(creatureID);
-		if not self.Model:GetModelFileID() then
+		local displayID = self.Model:GetDisplayInfo();
+		if not displayID then
 			Push(app, "SetCreatureID", function()
 				if self.lastModel == creatureID then
 					self:SetCreatureID(creatureID);
@@ -724,23 +725,6 @@ local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
 	if title and title ~= RETRIEVING_DATA then
 		t[id] = title
 		return title
-	end
-end })
-
--- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
-local NPCTitlesFromID = {};
-local NPCNameFromID = setmetatable({}, { __index = function(t, id)
-	QuestHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-	QuestHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText();
-	if title and QuestHarvester:NumLines() > 2 then
-		-- title = title .. " <" .. AllTheThingsQuestHarvesterTextLeft2:GetText() .. ">";
-		NPCTitlesFromID[id] = AllTheThingsQuestHarvesterTextLeft2:GetText();
-	end
-	QuestHarvester:Hide();
-	if title and title ~= RETRIEVING_DATA then
-		t[id] = title
-		return title;
 	end
 end })
 
@@ -2741,6 +2725,47 @@ app.CreateMap = function(id, t)
 end
 
 -- NPC Lib
+(function()
+-- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
+local NPCTitlesFromID = {};
+local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
+local NPCNameFromID = setmetatable({}, { __index = function(t, id)
+	if id > 0 then
+		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
+		if title and NPCHarvester:NumLines() > 2 then
+			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
+		end
+		NPCHarvester:Hide();
+		if title and title ~= RETRIEVING_DATA then
+			rawset(t, id, title);
+			return title;
+		end
+	else
+		local title = L["NPC_ID_NAMES"][id];
+		rawset(t, id, title);
+		return title;
+	end
+end});
+
+-- NPC Model Harvester (also acquires the displayID)
+local npcModelHarvester = CreateFrame("DressUpModel", nil, UIParent);
+npcModelHarvester:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 0);
+npcModelHarvester:SetSize(1, 1);
+npcModelHarvester:Hide();
+local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
+	if id > 0 then
+		npcModelHarvester:SetDisplayInfo(0);
+		npcModelHarvester:SetUnit("none");
+		npcModelHarvester:SetCreature(id);
+		local displayID = npcModelHarvester:GetDisplayInfo();
+		if displayID and displayID ~= 0 then
+			rawset(t, id, displayID);
+			return displayID;
+		end
+	end
+end});
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "key" then
@@ -2749,15 +2774,13 @@ app.BaseNPC = {
 			if t["isRaid"] and t.name then return "|cffff8000" .. t.name .. "|r"; end
 			return t.name;
 		elseif key == "name" then
-			if t.npcID > 0 then
-				return t.npcID > 0 and NPCNameFromID[t.npcID];
-			else
-				return L["NPC_ID_NAMES"][t.npcID];
-			end
+			return NPCNameFromID[t.npcID];
 		elseif key == "title" then
-			if t.npcID > 0 then return NPCTitlesFromID[t.npcID]; end
+			return NPCTitlesFromID[t.npcID];
 		elseif key == "icon" then
 			return L["NPC_ID_ICONS"][t.npcID] or "Interface\\Icons\\INV_Misc_Head_Human_01";
+		elseif key == "displayID" then
+			return NPCDisplayIDFromID[t.npcID];
 		elseif key == "creatureID" then
 			return t.npcID;
 		elseif key == "trackable" then
@@ -2784,6 +2807,7 @@ app.BaseNPC = {
 app.CreateNPC = function(id, t)
 	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
 end
+end)();
 
 -- Object Lib (as in "World Object")
 app.BaseObject = {
@@ -4674,6 +4698,23 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
 		db.text = "Flight Paths";
+		table.insert(g, db);
+		
+		-- NPCs (Dynamic)
+		db = {};
+		db.g = (function()
+			local cache = GetTempDataMember("NPC_CACHE");
+			if not cache then
+				cache = {};
+				SetTempDataMember("NPC_CACHE", cache);
+				for i=1,40000,1 do
+					tinsert(cache, app.CreateNPC(i));
+				end
+			end
+			return cache;
+		end)();
+		db.expanded = false;
+		db.text = "Non-Player Characters";
 		table.insert(g, db);
 		
 		-- Quests (Dynamic)
