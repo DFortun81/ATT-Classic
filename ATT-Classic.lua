@@ -262,7 +262,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 				displayInfos = {};
 				local markedKeys = {};
 				for i,creatureID in ipairs(reference.qgs) do
-					local displayID = app.NPCDB[creatureID];
+					local displayID = app.NPCDisplayIDFromID[creatureID];
 					if displayID and not markedKeys[displayID] then
 						tinsert(displayInfos, displayID);
 						markedKeys[displayID] = 1;
@@ -272,7 +272,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 					return true;
 				end
 			else
-				local displayID = app.NPCDB[reference.qgs[1]];
+				local displayID = app.NPCDisplayIDFromID[reference.qgs[1]];
 				if displayID then
 					self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
 					self.Model:SetCamDistanceScale(reference.modelScale or 1);
@@ -499,6 +499,30 @@ app.GetProgressTextDefault = GetProgressTextDefault;
 app.GetProgressTextRemaining = GetProgressTextRemaining;
 CS:Hide();
 
+-- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
+local NPCTitlesFromID = {};
+local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
+local NPCNameFromID = setmetatable({}, { __index = function(t, id)
+	if id > 0 then
+		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
+		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
+		if title and NPCHarvester:NumLines() > 2 then
+			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
+		end
+		NPCHarvester:Hide();
+		if title and title ~= RETRIEVING_DATA then
+			rawset(t, id, title);
+			return title;
+		end
+	else
+		local title = L["NPC_ID_NAMES"][id];
+		rawset(t, id, title);
+		return title;
+	end
+end});
+
+
 -- Source ID Harvesting Lib
 local DressUpModel = CreateFrame('DressUpModel');
 local NPCModelHarvester = CreateFrame('DressUpModel', nil, OffScreenFrame);
@@ -600,14 +624,14 @@ local function GetDisplayID(data)
 	if data.displayID then
 		return data.displayID;
 	elseif data.creatureID then
-		local displayID = app.NPCDB[data.creatureID];
+		local displayID = app.NPCDisplayIDFromID[data.creatureID];
 		if displayID then
 			return displayID;
 		end
 	end
 	
 	if data.qgs and #data.qgs > 0 then
-		return app.NPCDB[data.qgs[1]];
+		return app.NPCDisplayIDFromID[data.qgs[1]];
 	end
 end
 local function SetPortraitIcon(self, data, x)
@@ -2726,29 +2750,6 @@ end
 
 -- NPC Lib
 (function()
--- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
-local NPCTitlesFromID = {};
-local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
-local NPCNameFromID = setmetatable({}, { __index = function(t, id)
-	if id > 0 then
-		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
-		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
-		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
-		if title and NPCHarvester:NumLines() > 2 then
-			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
-		end
-		NPCHarvester:Hide();
-		if title and title ~= RETRIEVING_DATA then
-			rawset(t, id, title);
-			return title;
-		end
-	else
-		local title = L["NPC_ID_NAMES"][id];
-		rawset(t, id, title);
-		return title;
-	end
-end});
-
 -- NPC Model Harvester (also acquires the displayID)
 local npcModelHarvester = CreateFrame("DressUpModel", nil, UIParent);
 npcModelHarvester:SetPoint("TOPRIGHT", UIParent, "BOTTOMRIGHT", 0, 0);
@@ -2766,6 +2767,7 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		end
 	end
 end});
+app.NPCDisplayIDFromID = NPCDisplayIDFromID;
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "key" then
