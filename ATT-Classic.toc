@@ -28,5 +28,4 @@ db\FactionDB.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
 db\NPCDB.lua
-db\QuestDB.lua
 db\Categories.lua

@@ -736,22 +736,6 @@ local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
 end
 
--- Quest Name Harvesting Lib (http://www.wowinterface.com/forums/showthread.php?t=46934)
-local QuestHarvester = CreateFrame("GameTooltip", "AllTheThingsQuestHarvester", UIParent, "GameTooltipTemplate");
-local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
-	--[[
-	QuestHarvester:SetOwner(UIParent, "ANCHOR_NONE");
-	QuestHarvester:SetHyperlink("quest:"..id);
-	local title = AllTheThingsQuestHarvesterTextLeft1:GetText();
-	QuestHarvester:Hide()
-	--]]
-	local title = AllTheThings.QuestDB[id];
-	if title and title ~= RETRIEVING_DATA then
-		t[id] = title
-		return title
-	end
-end })
-
 -- Search Caching
 local searchCache = {};
 app.searchCache = searchCache;
@@ -2835,6 +2819,28 @@ app.CreateProfession = function(id, t)
 end
 
 -- Quest Lib
+(function()
+-- Quest Name Harvesting Lib
+local questRetries = {};
+local QuestTitleFromID = setmetatable({}, { __index = function(t, id)
+	local title = C_QuestLog.GetQuestInfo(id);
+	if title and title ~= RETRIEVING_DATA then
+		rawset(questRetries, id, nil);
+		rawset(t, id, title);
+		return title
+	else
+		local retries = rawget(questRetries, id);
+		if retries and retries > 120 then
+			title = "Quest #" .. id .. "*";
+			rawset(questRetries, id, nil);
+			rawset(t, id, title);
+			return title;
+		else
+			rawset(questRetries, id, (retries or 0) + 1);
+		end
+		return RETRIEVING_DATA;
+	end
+end })
 app.BaseQuest = {
 	__index = function(t, key)
 		if key == "key" then
@@ -2858,25 +2864,30 @@ app.BaseQuest = {
 			return questName;
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
-			local questName = AllTheThings.QuestDB[questID];--QuestTitleFromID[questID];
-			if questName then
-				t.retries = nil;
-				t.title = nil;
-				return questName;
-			end
-			if t.retries and t.retries > 120 then
-				return "[Quest #" .. questID .. "*]";
-			else
-				t.retries = (t.retries or 0) + 1;
-			end
+			return QuestTitleFromID[questID];
 		elseif key == "link" then
 			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Book_09";
 		elseif key == "trackable" then
 			return true;
+		elseif key == "description" then
+			local objectives = C_QuestLog.GetQuestObjectives(t.questID);
+			if objectives and #objectives > 0 then
+				local d;
+				for i,objective in ipairs(objectives) do
+					if d then
+						d = d .. "\n";
+					else
+						d = "";
+					end
+					d = d .. (objective.text or "???");
+				end
+				return d and ("|cffffffff" .. d .. "|r");
+			end
 		--[[
 		elseif key == "description" then
+			/dump C_QuestLog.GetQuestObjectives(t.questID)
 			return GetQuestLogRewardMoney(t.questID) .. " Bronze";
 		elseif key == "g" then
 			local g = {};
@@ -2913,6 +2924,7 @@ app.BaseQuest = {
 app.CreateQuest = function(id, t)
 	return setmetatable(constructor(id, t, "questID"), app.BaseQuest);
 end
+end)();
 
 -- Recipe Lib
 app.BaseRecipe = {
@@ -5121,7 +5133,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					end
 				end
 				
-				local info = { ["questID"] = questID, ["g"] = rawGroups };
+				local info = { ["questID"] = questID, ["description"] = GetQuestText(), ["g"] = rawGroups };
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
 				if npc_id then
 					npc_id = tonumber(npc_id);
