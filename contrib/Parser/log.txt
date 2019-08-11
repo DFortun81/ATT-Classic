@@ -1,7 +1,6 @@
 .\DATAS\output.json... 
 Done parsing JSON files...
-There are 7 Items loaded in the database.
-Custom NPC ID [0] has no reference and should be removed.
+There are 19 Items loaded in the database.
 Custom NPC ID [-1] has no reference and should be removed.
 Custom NPC ID [-2] has no reference and should be removed.
 Custom NPC ID [-3] has no reference and should be removed.

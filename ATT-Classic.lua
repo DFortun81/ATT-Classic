@@ -8,7 +8,6 @@ local L = app.L;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_Map_GetMapDisplayInfo = C_Map.GetMapDisplayInfo;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
@@ -1824,10 +1823,22 @@ app.GetCurrentMapID = function()
 	-- print("Current UI Map ID: ", uiMapID);
 	return uiMapID;
 end
+app.GetMapLevel = function(mapID)
+	return select(1, C_Map.GetMapLevels(mapID));
+end
 app.GetMapName = function(mapID)
 	if mapID and mapID > 0 then
 		local info = C_Map.GetMapInfo(mapID);
-		return (info and info.name) or ("Map ID #" .. mapID);
+		if info then
+			return info.name;
+		else
+			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
+				if mapID == m then
+					return name;
+				end
+			end
+		end
+		return "Map ID #" .. mapID;
 	else
 		return "Map ID #???";
 	end
@@ -2668,7 +2679,7 @@ app.BaseMap = {
 		elseif key == "icon" then
 			return "Interface/ICONS/INV_Misc_Map_01";
 		elseif key == "lvl" then
-			return select(1, C_Map.GetMapLevels(t.mapID));
+			return app.GetMapLevel(t.mapID);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5014,10 +5025,10 @@ app:GetWindow("Debugger", UIParent, function(self)
 				local mapID = app.GetCurrentMapID();
 				if mapID then
 					repeat
+						info = { ["mapID"] = mapID, ["g"] = info and { info } or nil };
 						mapInfo = C_Map.GetMapInfo(mapID);
 						if mapInfo then
-							info = { ["mapID"] = mapInfo.mapID, ["g"] = { info } };
-							mapID = mapInfo.parentMapID
+							mapID = mapInfo.parentMapID;
 						end
 					until not mapInfo or not mapID;
 					
@@ -5424,20 +5435,23 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			-- If we don't have any map data on this area, report it to the chat window.
 			if not results or not results.g or #results.g < 1 then
 				local mapID = self.mapID;
+				print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
+				
 				local mapInfo = C_Map.GetMapInfo(mapID);
-				local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-				mapID = mapInfo.parentMapID;
-				while mapID do
-					mapInfo = C_Map.GetMapInfo(mapID);
-					if mapInfo then
-						mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
-						mapID = mapInfo.parentMapID;
-					else
-						break;
+				if mapInfo then
+					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
+					mapID = mapInfo.parentMapID;
+					while mapID do
+						mapInfo = C_Map.GetMapInfo(mapID);
+						if mapInfo then
+							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+							mapID = mapInfo.parentMapID;
+						else
+							break;
+						end
 					end
+					print("Path: ", mapPath);
 				end
-				print("No map found for this location ", app.GetMapName(self.mapID), " [", self.mapID, "]");
-				print("Path: ", mapPath);
 				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("ATT-Classic", "Version"));
 			end
 		end

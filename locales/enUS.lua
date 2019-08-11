@@ -2388,5 +2388,6 @@ AllTheThings.L = {
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
 		["Onyxia's Lair"] = 248,
+		["The Stockade"] = 225,
 	};
 };
