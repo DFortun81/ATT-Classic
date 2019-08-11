@@ -9,6 +9,63 @@ _.Instances = {
 		["coord"] = { 39.77, 54.21, 1453 },	-- The Stockade, Stormwind City
 		["description"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
 		["g"] = {
+			n(-17, {	-- Quests
+				q(377, {	-- Crime and Punishment
+					["qg"] = 270,	-- Councilman Millstipe
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.0, 46.8, 1431 },
+					["maps"] = { 1431 },
+					["lvl"] = 26,
+					["g"] = {
+						i(2906),	-- Darkshire Mail Leggings
+						i(2033),	-- Ambassador's Boots
+					},
+				}),
+				q(387, {	-- Quell The Uprising
+					["qg"] = 1719,	-- Warden Thelwater
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 39.77, 54.21, 1453 },
+					["maps"] = { 1453 },
+					["lvl"] = 22,
+				}),
+				q(388, {	-- The Color of Blood
+					["qg"] = 1721,	-- Nikova Raskol
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.2, 55.2, 1437 },
+					["maps"] = { 1437 },
+					["lvl"] = 22,
+				}),
+				q(378, {	-- The Fury Runs Deep
+					["qg"] = 1074,	-- Motley Garmason
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 49.8, 18.2, 1437 },
+					["maps"] = { 1437 },
+					["lvl"] = 25,
+					["g"] = {
+						i(1264),	-- Headbasher
+						i(3562),	-- Belt of Vindication
+					},
+				}),
+				q(391, {	-- The Stockade Riots
+					["qg"] = 1719,	-- Warden Thelwater
+					["sourceQuest"] = 389,	-- Bazil Thredd
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 39.77, 54.21, 1453 },
+					["maps"] = { 1453 },
+					["lvl"] = 16,
+				}),
+				q(386, { 	-- What Comes Around...
+					["qg"] = 859,	-- Guard Berton
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 26, 43, 1433 },
+					["maps"] = { 1433 },
+					["lvl"] = 22,
+					["g"] = {
+						i(1317),	-- Hardened Root Staff
+						i(3400),	-- Lucine Longsword
+					},
+				}),
+			}),
 			n(0, {	-- Zone Drop
 				i(1076),	-- Defias Renegade Ring
 			}),
