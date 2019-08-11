@@ -2195,7 +2195,6 @@ app.BaseEncounter = {
 		elseif key == "link" then
 			return select(5, EJ_GetEncounterInfo(t.encounterID)) or "";
 		elseif key == "displayID" then
-			-- local id, name, description, displayInfo, iconImage = EJ_GetCreatureInfo(1, t.encounterID);
 			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
 		elseif key == "displayInfo" then
 			local displayInfos, displayInfo = {};
@@ -2557,8 +2556,6 @@ app.BaseInstance = {
 			return select(2, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "icon" then
 			return select(6, EJ_GetInstanceInfo(t.instanceID)) or "";
-		--elseif key == "link" then
-		--	return select(8, EJ_GetInstanceInfo(t.instanceID)) or "";
 		elseif key == "saved" then
 			return t.locks;
 		elseif key == "back" then
@@ -2865,8 +2862,6 @@ app.BaseQuest = {
 		elseif key == "questName" then
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			return QuestTitleFromID[questID];
-		elseif key == "link" then
-			return "quest:" .. (t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID);
 		elseif key == "icon" then
 			return "Interface\\Icons\\INV_Misc_Book_09";
 		elseif key == "trackable" then
@@ -2885,23 +2880,6 @@ app.BaseQuest = {
 				end
 				return d and ("|cffffffff" .. d .. "|r");
 			end
-		--[[
-		elseif key == "description" then
-			/dump C_QuestLog.GetQuestObjectives(t.questID)
-			return GetQuestLogRewardMoney(t.questID) .. " Bronze";
-		elseif key == "g" then
-			local g = {};
-			local numQuestRewards = GetNumQuestLogRewards (t.questID);
-			for j=1,numQuestRewards,1 do
-				local _, _, _, _, _, itemID, ilvl = GetQuestLogRewardInfo (j, t.questID);
-				if itemID then
-					local item = app.CreateItem(itemID);
-					item.parent = t;
-					tinsert(g, item);
-				end
-			end
-			return g;
-		]]--
 		elseif key == "collectible" then
 			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "collected" then
