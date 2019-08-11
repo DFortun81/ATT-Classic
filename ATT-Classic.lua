@@ -2878,6 +2878,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "description" then
+			local saved = t.saved;
 			local objectives = C_QuestLog.GetQuestObjectives(t.questID);
 			if objectives and #objectives > 0 then
 				local d;
@@ -2887,7 +2888,7 @@ app.BaseQuest = {
 					else
 						d = "";
 					end
-					d = d .. (objective.text or "???");
+					d = d .. (objective.text or "???") .. " " .. GetCompletionIcon(objective.finished or saved);
 				end
 				return d and ("|cffffffff" .. d .. "|r");
 			end
