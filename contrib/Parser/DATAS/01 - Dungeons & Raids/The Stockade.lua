@@ -31,8 +31,8 @@ _.Instances = {
 				q(388, {	-- The Color of Blood
 					["qg"] = 1721,	-- Nikova Raskol
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.2, 55.2, 1437 },
-					["maps"] = { 1437 },
+					["coord"] = { 73.2, 55.2, 1453 },
+					["maps"] = { 1453 },
 					["lvl"] = 22,
 				}),
 				q(378, {	-- The Fury Runs Deep
