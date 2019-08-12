@@ -2584,52 +2584,44 @@ app.CacheFlightPathData = function()
 	end
 end
 app.CacheFlightPathDataForCurrentNode = function()
-	local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
-	if pos then
-		local px, py = pos:GetXY();
-		px = px * 100;
-		py = py * 100;
-		local flightMaps = {};
-		for nodeID,node in pairs(app.FlightPathDB) do
-			if node.mapID == app.CurrentMapID then
-				tinsert(flightMaps, nodeID);
-			end
+	local flightMaps, knownNodeIDs = {}, {};
+	for nodeID,node in pairs(app.FlightPathDB) do
+		if node.mapID == app.CurrentMapID then
+			tinsert(flightMaps, nodeID);
 		end
-		local count = #flightMaps;
-		if count > 0 then
-			local nodeID;
-			if count > 1 then
+	end
+	local count = #flightMaps;
+	if count > 0 then
+		if count > 1 then
+			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
+			if pos then
+				local px, py = pos:GetXY();
+				px = px * 100;
+				py = py * 100;
 				-- Select the best flight path node.
 				for i,id in ipairs(flightMaps) do
 					local node = app.FlightPathDB[id];
 					if node and node.coord then
 						-- Allow for a little bit of leeway.
 						if math.sqrt((x2 - px)^2 + (y2 - py)^2) < 0.05 then
-							nodeID = id;
+							tinsert(knownNodeIDs, id);
 						end
 					end
 				end
-			else
-				nodeID = flightMaps[1];
 			end
-			if nodeID then
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-					UpdateSearchResults(SearchForField("flightPathID", nodeID));
-				end
-			else
-				print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
-			end
+		else
+			tinsert(knownNodeIDs, flightMaps[1]);
+		end
+		if #knownNodeIDs == 0 then
+			print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
 		end
 	end
 	
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
 	if allNodeData then
-		local knownNodeIDs = {};
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
-				table.insert(knownNodeIDs, nodeData.nodeID);
+				tinsert(knownNodeIDs, nodeData.nodeID);
 			end
 			if nodeData.name then 
 				local node = app.FlightPathDB[nodeData.nodeID];
@@ -2641,21 +2633,22 @@ app.CacheFlightPathDataForCurrentNode = function()
 				end
 			end
 		end
-		if app.AccountWideFlightPaths then
-			for i,nodeID in ipairs(knownNodeIDs) do
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-					UpdateSearchResults(SearchForField("flightPathID", nodeID));
-				end
-			end
-		else
-			for i,nodeID in ipairs(knownNodeIDs) do
+	end
+	
+	if app.AccountWideFlightPaths then
+		for i,nodeID in ipairs(knownNodeIDs) do
+			SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+			if not GetDataSubMember("CollectedFlightPaths", nodeID) then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-					UpdateSearchResults(SearchForField("flightPathID", nodeID));
-				end
+				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+			end
+		end
+	else
+		for i,nodeID in ipairs(knownNodeIDs) do
+			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				UpdateSearchResults(SearchForField("flightPathID", nodeID));
 			end
 		end
 	end
