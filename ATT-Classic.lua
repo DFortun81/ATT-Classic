@@ -8,7 +8,6 @@ local L = app.L;
 
 -- Performance Cache 
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
-local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
@@ -1810,39 +1809,6 @@ local function RefreshMountCollection()
 		collectgarbage();
 	end);
 end
-app.GetCurrentMapID = function()
-	local uiMapID = C_Map_GetBestMapForUnit("player");
-	
-	-- Onyxia's Lair fix
-	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
-	if text_to_mapID then
-		local otherMapID = (GetRealZoneText() and text_to_mapID[GetRealZoneText()]) or (GetSubZoneText() and text_to_mapID[GetSubZoneText()]);
-		if otherMapID then uiMapID = otherMapID; end
-	end
-	
-	-- print("Current UI Map ID: ", uiMapID);
-	return uiMapID;
-end
-app.GetMapLevel = function(mapID)
-	return select(1, C_Map.GetMapLevels(mapID));
-end
-app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
-		local info = C_Map.GetMapInfo(mapID);
-		if info then
-			return info.name;
-		else
-			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
-				if mapID == m then
-					return name;
-				end
-			end
-		end
-		return "Map ID #" .. mapID;
-	else
-		return "Map ID #???";
-	end
-end
 app.ToggleMainList = function()
 	app:ToggleWindow("Prime");
 end
@@ -2323,122 +2289,6 @@ app.GetFactionStandingColor = function(standingID, text)
 end
 end)();
 
--- Flight Path Lib
-(function()
-	local arrOfNodes = {
-		1414,		-- Kalimdor
-		1415,		-- Eastern Kingdoms
-	};
-	app.CacheFlightPathData = function()
-		for i,mapID in ipairs(arrOfNodes) do
-			local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-			if allNodeData then
-				for j,nodeData in ipairs(allNodeData) do
-					if nodeData.name then 
-						local node = app.FlightPathDB[nodeData.nodeID];
-						if node then
-							node.name = nodeData.name;
-						else
-							node = {};
-							node.name = nodeData.name .. " *NEW*";
-							node.faction = nodeData.faction;
-							app.FlightPathDB[nodeData.nodeID] = node;
-						end
-					end
-				end
-			end
-		end
-	end
-	app.CacheFlightPathDataForCurrentNode = function()
-		local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
-		if allNodeData then
-			local knownNodeIDs = {};
-			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.state and nodeData.state < 2 then
-					table.insert(knownNodeIDs, nodeData.nodeID);
-				end
-				if nodeData.name then 
-					local node = app.FlightPathDB[nodeData.nodeID];
-					if not node then
-						node = {};
-						node.name = nodeData.name .. " *NEW*";
-						node.faction = nodeData.faction;
-						app.FlightPathDB[nodeData.nodeID] = node;
-					end
-				end
-			end
-			if app.AccountWideFlightPaths then
-				for i,nodeID in ipairs(knownNodeIDs) do
-					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-					if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-						SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			else
-				for i,nodeID in ipairs(knownNodeIDs) do
-					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-					if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-						SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-						UpdateSearchResults(SearchForField("flightPathID", nodeID));
-					end
-				end
-			end
-		end
-	end
-	app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
-	app.BaseFlightPath = {
-		__index = function(t, key)
-			if key == "key" then
-				return "flightPathID";
-			elseif key == "collectible" then
-				return app.CollectibleFlightPaths;
-			elseif key == "collected" then
-				if app.AccountWideFlightPaths then
-					if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
-						return 1;
-					end
-				end
-			elseif key == "text" then
-				return t.info.name or "Visit the Flight Master to cache.";
-			elseif key == "u" then
-				return t.info.u;
-			elseif key == "mapID" then
-				return t.info.mapID;
-			elseif key == "nmr" then
-				local info = t.info;
-				if info and info.faction and info.faction > 0 then
-					return info.faction ~= app.FactionID;
-				end
-			elseif key == "info" then
-				return app.FlightPathDB[t.flightPathID];
-			elseif key == "description" then
-				return "Flight paths are cached when you look at the flight master on each continent. Collection status appears to be broken on the Classic client right now.\n\n:(\n  - Crieve";
-			elseif key == "icon" then
-				local info = t.info;
-				if info and info.faction and info.faction > 0 then
-					if info.faction == Enum.FlightPathFaction.Horde then
-						return "Interface\\Addons\\ATT-Classic\\assets\\fp_horde";
-					else
-						return "Interface\\Addons\\ATT-Classic\\assets\\fp_alliance";
-					end
-				end
-				return "Interface\\Addons\\ATT-Classic\\assets\\fp_neutral";
-			else
-				-- Something that isn't dynamic.
-				return table[key];
-			end
-		end
-	};
-	app.CreateFlightPath = function(id, t)
-		return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
-	end
-end)();
-
 -- Filter Lib
 app.BaseFilter = {
 	__index = function(t, key)
@@ -2665,6 +2515,204 @@ app.CreateItem  = function(id, t)
 end
 
 -- Map Lib
+(function()
+local arrOfNodes = {
+	1414,		-- Kalimdor
+	1415,		-- Eastern Kingdoms
+};
+local C_Map_GetMapInfo = C_Map.GetMapInfo;
+local C_Map_GetMapLevels = C_Map.GetMapLevels;
+local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+app.GetCurrentMapID = function()
+	local mapID = C_Map_GetBestMapForUnit("player");
+	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
+	if text_to_mapID then
+		local real = GetRealZoneText();
+		local zone = GetSubZoneText();
+		local otherMapID = (real and text_to_mapID[real]) or (zone and text_to_mapID[zone]);
+		if otherMapID then return otherMapID; end
+	end
+	return mapID;
+end
+app.GetMapLevel = function(mapID)
+	return select(1, C_Map_GetMapLevels(mapID));
+end
+app.GetMapParent = function(mapID)
+	local mapInfo = C_Map_GetMapInfo(mapID);
+	if mapInfo then
+		return mapInfo.parentMapID;
+	else
+		
+	end
+end
+app.GetMapName = function(mapID)
+	if mapID and mapID > 0 then
+		local info = C_Map_GetMapInfo(mapID);
+		if info then
+			return info.name;
+		else
+			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
+				if mapID == m then
+					return name;
+				end
+			end
+		end
+		return "Map ID #" .. mapID;
+	else
+		return "Map ID #???";
+	end
+end
+app.CacheFlightPathData = function()
+	for i,mapID in ipairs(arrOfNodes) do
+		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
+		if allNodeData then
+			local keys = {};
+			for j,nodeData in ipairs(allNodeData) do
+				if nodeData.name then 
+					local node = app.FlightPathDB[nodeData.nodeID];
+					if node then
+						node.name = nodeData.name;
+					else
+						node = {};
+						node.faction = nodeData.faction;
+						node.name = nodeData.name .. " *NEW*";
+						app.FlightPathDB[nodeData.nodeID] = node;
+					end
+				end
+			end
+		end
+	end
+end
+app.CacheFlightPathDataForCurrentNode = function()
+	local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
+	if pos then
+		local px, py = pos:GetXY();
+		px = px * 100;
+		py = py * 100;
+		local flightMaps = {};
+		for nodeID,node in pairs(app.FlightPathDB) do
+			if node.mapID == app.CurrentMapID then
+				tinsert(flightMaps, nodeID);
+			end
+		end
+		local count = #flightMaps;
+		if count > 0 then
+			local nodeID;
+			if count > 1 then
+				-- Select the best flight path node.
+				for i,id in ipairs(flightMaps) do
+					local node = app.FlightPathDB[id];
+					if node and node.coord then
+						-- Allow for a little bit of leeway.
+						if math.sqrt((x2 - px)^2 + (y2 - py)^2) < 0.05 then
+							nodeID = id;
+						end
+					end
+				end
+			else
+				nodeID = flightMaps[1];
+			end
+			if nodeID then
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			else
+				print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
+			end
+		end
+	end
+	
+	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
+	if allNodeData then
+		local knownNodeIDs = {};
+		for j,nodeData in ipairs(allNodeData) do
+			if nodeData.state and nodeData.state < 2 then
+				table.insert(knownNodeIDs, nodeData.nodeID);
+			end
+			if nodeData.name then 
+				local node = app.FlightPathDB[nodeData.nodeID];
+				if not node then
+					node = {};
+					node.name = nodeData.name .. " *NEW*";
+					node.faction = nodeData.faction;
+					app.FlightPathDB[nodeData.nodeID] = node;
+				end
+			end
+		end
+		if app.AccountWideFlightPaths then
+			for i,nodeID in ipairs(knownNodeIDs) do
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		else
+			for i,nodeID in ipairs(knownNodeIDs) do
+				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		end
+	end
+end
+app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
+app.BaseFlightPath = {
+	__index = function(t, key)
+		if key == "key" then
+			return "flightPathID";
+		elseif key == "collectible" then
+			return app.CollectibleFlightPaths;
+		elseif key == "collected" then
+			if app.AccountWideFlightPaths then
+				if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
+					return 1;
+				end
+			end
+		elseif key == "text" then
+			return t.info.name or "Visit the Flight Master to cache.";
+		elseif key == "u" then
+			return t.info.u;
+		elseif key == "coord" then
+			return t.info.coord;
+		elseif key == "mapID" then
+			return t.info.mapID;
+		elseif key == "nmr" then
+			local info = t.info;
+			if info and info.faction and info.faction > 0 then
+				return info.faction ~= app.FactionID;
+			end
+		elseif key == "info" then
+			return app.FlightPathDB[t.flightPathID];
+		elseif key == "description" then
+			return "Flight paths are cached when you look at the flight master on each continent. Collection status appears to be broken on the Classic client right now.\n\n:(\n  - Crieve";
+		elseif key == "icon" then
+			local info = t.info;
+			if info and info.faction and info.faction > 0 then
+				if info.faction == Enum.FlightPathFaction.Horde then
+					return "Interface\\Addons\\ATT-Classic\\assets\\fp_horde";
+				else
+					return "Interface\\Addons\\ATT-Classic\\assets\\fp_alliance";
+				end
+			end
+			return "Interface\\Addons\\ATT-Classic\\assets\\fp_neutral";
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateFlightPath = function(id, t)
+	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+end
 app.BaseMap = {
 	__index = function(t, key)
 		if key == "key" then
@@ -2689,6 +2737,7 @@ app.BaseMap = {
 app.CreateMap = function(id, t)
 	return setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 end
+end)();
 
 -- NPC Lib
 (function()
