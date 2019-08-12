@@ -2860,6 +2860,14 @@ app.BaseQuest = {
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			return QuestTitleFromID[questID];
 		elseif key == "icon" then
+			if t.isDaily or t.isDaily then
+				return "Interface\\GossipFrame\\DailyQuestIcon";
+			elseif t.repeatable then
+				return "Interface\\GossipFrame\\DailyActiveQuestIcon";
+			else
+				return "Interface\\GossipFrame\\AvailableQuestIcon";
+			end
+		elseif key == "preview" then
 			return "Interface\\Icons\\INV_Misc_Book_09";
 		elseif key == "trackable" then
 			return true;
