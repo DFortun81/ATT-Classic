@@ -2583,7 +2583,7 @@ app.CacheFlightPathData = function()
 		end
 	end
 end
-app.CacheFlightPathDataForCurrentNode = function()
+app.events.TAXIMAP_OPENED = function()
 	local flightMaps, knownNodeIDs = {}, {};
 	for nodeID,node in pairs(app.FlightPathDB) do
 		if node.mapID == app.CurrentMapID then
@@ -2598,6 +2598,7 @@ app.CacheFlightPathDataForCurrentNode = function()
 				local px, py = pos:GetXY();
 				px = px * 100;
 				py = py * 100;
+				
 				-- Select the best flight path node.
 				for i,id in ipairs(flightMaps) do
 					local node = app.FlightPathDB[id];
@@ -2612,9 +2613,10 @@ app.CacheFlightPathDataForCurrentNode = function()
 		else
 			tinsert(knownNodeIDs, flightMaps[1]);
 		end
-		if #knownNodeIDs == 0 then
-			print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
-		end
+	end
+	
+	if #knownNodeIDs == 0 then
+		print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
 	end
 	
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
@@ -2653,7 +2655,6 @@ app.CacheFlightPathDataForCurrentNode = function()
 		end
 	end
 end
-app.events.TAXIMAP_OPENED = app.CacheFlightPathDataForCurrentNode;
 app.BaseFlightPath = {
 	__index = function(t, key)
 		if key == "key" then
