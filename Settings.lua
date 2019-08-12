@@ -1367,8 +1367,8 @@ local ids = {
 	["creatures"] = "Creatures List",
 	["Coordinates"] = "Coordinates",
 	["currencyID"] = "Currency ID",
+	["Descriptions"] = "Descriptions",
 	["displayID"] = "Display ID",
-	["encounterID"] = "Encounter ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["flightPathID"] = "Flight Path ID",
@@ -1378,12 +1378,13 @@ local ids = {
 	["mapID"] = "Map ID",
 	["modelID"] = "Model ID",
 	["objectID"] = "Object ID",
+	["Objectives"] = "Objectives",
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
 	["spellID"] = "Spell ID",
 };
 local last = nil;
-for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","displayID","encounterID","factionID","filterID","flightPathID","instanceID"}) do
+for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","factionID","filterID","flightPathID","instanceID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -1400,7 +1401,7 @@ for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","displayI
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","questID","QuestGivers","spellID"}) do
+for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));

@@ -764,8 +764,6 @@ local function CreateObject(t)
 			t = s;
 			if t.mapID then
 				t = app.CreateMap(t.mapID, t);
-			elseif t.encounterID then
-				t = app.CreateEncounter(t.encounterID, t);
 			elseif t.instanceID then
 				t = app.CreateInstance(t.instanceID, t);
 			elseif t.currencyID then
@@ -807,8 +805,6 @@ local function MergeObject(g, t, index)
 			key = "currencyID";
 		elseif t.objectID then
 			key = "objectID";
-		elseif t.encounterID then
-			key = "encounterID";
 		elseif t.instanceID then
 			key = "instanceID";
 		elseif t.recipeID then
@@ -1063,7 +1059,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		local group = method(paramA, paramB, ...) or {};
 		
 		-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
-		if paramA == "creatureID" or paramA == "encounterID" then
+		if paramA == "creatureID" then
 			if not app.Settings:Get("DebugMode") then
 				local regroup = {};
 				if app.Settings:Get("AccountMode") then
@@ -1082,7 +1078,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 			
 			if group and #group > 0 then
-				if app.Settings:GetTooltipSetting("Descriptions") and paramA ~= "encounterID" then
+				if app.Settings:GetTooltipSetting("Descriptions") then
 					for i,j in ipairs(group) do
 						if j.description and j[paramA] and j[paramA] == paramB then
 							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
@@ -1141,7 +1137,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		-- Create a list of sources
-		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (paramA ~= "encounterID" and app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
+		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 			local temp = {};
 			local unfiltered = {};
 			local abbrevs = L["ABBREVIATIONS"];
@@ -1159,7 +1155,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 			end
-			if (#temp < 1 and not (paramA == "creatureID" or paramA == "encounterID")) or app.Settings:Get("DebugMode") then
+			if (#temp < 1 and paramA ~= "creatureID") or app.Settings:Get("DebugMode") then
 				for i,j in ipairs(unfiltered) do
 					tinsert(temp, j);
 				end
@@ -1231,8 +1227,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
-		if group.description and app.Settings:GetTooltipSetting("Descriptions") and not group.encounterID then
+		if group.description and app.Settings:GetTooltipSetting("Descriptions") then
 			tinsert(info, 1, { left = group.description, wrap = true, color = "ff66ccff" });
+		end
+		
+		if group.objectives and app.Settings:GetTooltipSetting("Objectives") then
+			tinsert(info, 1, { left = QUEST_OBJECTIVES });
+			tinsert(info, 1, { left = group.objectives, color = "ff66ccff" });
 		end
 		
 		if group.g and #group.g > 0 then
@@ -1322,8 +1323,6 @@ local CacheFields;
 (function()
 fieldCache["currencyID"] = {};
 fieldCache["creatureID"] = {};
-fieldCache["encounterID"] = {};
-fieldCache["instanceID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["itemID"] = {};
@@ -1375,8 +1374,6 @@ CacheFields = function(group)
 	CacheFieldID(group, "currencyID");
 	CacheArrayFieldIDs(group, "creatureID", "crs");
 	CacheArrayFieldIDs(group, "creatureID", "qgs");
-	CacheFieldID(group, "encounterID");
-	CacheFieldID(group, "instanceID");
 	CacheFieldID(group, "flightPathID");
 	CacheFieldID(group, "objectID");
 	CacheFieldID(group, "itemID");
@@ -1951,13 +1948,6 @@ local function AttachTooltip(self)
 					self:Show();
 					--]]--
 					
-					local encounterID = owner.encounterID;
-					if encounterID and not owner.itemID then
-						if app.Settings:GetTooltipSetting("encounterID") then self:AddDoubleLine(L["ENCOUNTER_ID"], tostring(encounterID)); end
-						AttachTooltipSearchResults(self, "encounterID:" .. encounterID, SearchForField, "encounterID", tonumber(encounterID));
-						return;
-					end
-					
 					local gf;
 					if owner.lastNumMountsNeedingFanfare then
 						-- Collections
@@ -2155,53 +2145,6 @@ app.BaseCurrencyClass = {
 };
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
-end
-
--- Encounter Lib
-app.BaseEncounter = {
-	__index = function(t, key)
-		if key == "key" then
-			return "encounterID";
-		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "name" then
-			return select(1, EJ_GetEncounterInfo(t.encounterID)) or "";
-		elseif key == "description" then
-			return select(2, EJ_GetEncounterInfo(t.encounterID)) or "";
-		elseif key == "link" then
-			return select(5, EJ_GetEncounterInfo(t.encounterID)) or "";
-		elseif key == "displayID" then
-			return select(4, EJ_GetCreatureInfo(t.index, t.encounterID));
-		elseif key == "displayInfo" then
-			local displayInfos, displayInfo = {};
-			for i=1,MAX_CREATURES_PER_ENCOUNTER do
-				displayInfo = select(4, EJ_GetCreatureInfo(i, t.encounterID));
-				if displayInfo then
-					tinsert(displayInfos, displayInfo);
-				else
-					break;
-				end
-			end
-			return displayInfos;
-		elseif key == "icon" then
-			return "Interface\\Icons\\INV_Misc_Head_Human_01";
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
-				return true;
-			end
-		elseif key == "index" then
-			return 1;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateEncounter = function(id, t)
-	return setmetatable(constructor(id, t, "encounterID"), app.BaseEncounter);
 end
 
 -- Faction Lib
@@ -2920,21 +2863,6 @@ app.BaseQuest = {
 			return "Interface\\Icons\\INV_Misc_Book_09";
 		elseif key == "trackable" then
 			return true;
-		elseif key == "description" then
-			local saved = t.saved;
-			local objectives = C_QuestLog.GetQuestObjectives(t.questID);
-			if objectives and #objectives > 0 then
-				local d;
-				for i,objective in ipairs(objectives) do
-					if d then
-						d = d .. "\n";
-					else
-						d = "";
-					end
-					d = d .. (objective.text or "???") .. " " .. GetCompletionIcon(objective.finished or saved);
-				end
-				return d and ("|cffffffff" .. d .. "|r");
-			end
 		elseif key == "collectible" then
 			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "collected" then
@@ -4097,7 +4025,7 @@ local function RowOnEnter(self)
 				end
 			elseif reference.currencyID then
 				GameTooltip:SetCurrencyByID(reference.currencyID, 1);
-			elseif not reference.encounterID then
+			else
 				local link = reference.link;
 				if link then pcall(GameTooltip.SetHyperlink, GameTooltip, link); end
 			end
@@ -4142,9 +4070,6 @@ local function RowOnEnter(self)
 			elseif reference.npcID and reference.npcID > 0 then
 				GameTooltip:AddDoubleLine(L["NPC_ID"], tostring(reference.npcID));
 			end
-		end
-		if reference.encounterID then
-			if app.Settings:GetTooltipSetting("encounterID") then GameTooltip:AddDoubleLine(L["ENCOUNTER_ID"], tostring(reference.encounterID)); end
 		end
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
@@ -4217,6 +4142,24 @@ local function RowOnEnter(self)
 						end
 					end
 					if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+				end
+				
+				if reference.questID and app.Settings:GetTooltipSetting("Objectives") then
+					if reference.objectives then
+						GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
+						GameTooltip:AddLine(reference.objectives, 0.4, 0.8, 1, 1);
+					end
+					if not reference.saved then
+						local objectives = C_QuestLog.GetQuestObjectives(reference.questID);
+						if objectives and #objectives > 0 then
+							if not reference.objectives then
+								GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
+							end
+							for i,objective in ipairs(objectives) do
+								GameTooltip:AddDoubleLine("  " .. (objective.text or "???"), GetCompletionIcon(objective.finished), 1, 1, 1, 1);
+							end
+						end
+					end
 				end
 			end
 		end
@@ -5132,6 +5075,23 @@ app:GetWindow("Debugger", UIParent, function(self)
 						self:AddObject(info);
 					end
 				end);
+			elseif e == "GOSSIP_SHOW" then
+				local guid = UnitGUID("npc");
+				if guid then
+					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
+					if npc_id then
+						npc_id = tonumber(npc_id);
+						print("GOSSIP_SHOW", type, npc_id);
+						if type == "GameObject" then
+							info = { ["objectID"] = npc_id, ["text"] = UnitName("npc") };
+						else
+							info = { ["npcID"] = npc_id };
+							info.name = UnitName("npc");
+						end
+						info.faction = UnitFactionGroup("npc");
+						self:AddObject(info);
+					end
+				end
 			elseif e == "QUEST_DETAIL" then
 				local questStartItemID = ...;
 				local questID = GetQuestID();
@@ -5166,7 +5126,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					end
 				end
 				
-				local info = { ["questID"] = questID, ["description"] = GetQuestText(), ["g"] = rawGroups };
+				local info = { ["questID"] = questID, ["description"] = GetQuestText(), ["objectives"] = GetObjectiveText(), ["g"] = rawGroups };
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
 				if npc_id then
 					npc_id = tonumber(npc_id);
@@ -5188,6 +5148,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 			end
 		end);
 		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("GOSSIP_SHOW");
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
