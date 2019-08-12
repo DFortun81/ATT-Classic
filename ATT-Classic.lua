@@ -4152,15 +4152,22 @@ local function RowOnEnter(self)
 					if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 				end
 				
-				if reference.questID and app.Settings:GetTooltipSetting("Objectives") then
-					if reference.objectives then
-						GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
-						GameTooltip:AddLine(reference.objectives, 0.4, 0.8, 1, 1);
+				if reference.questID then
+					local objectified = false;
+					local questLogIndex = GetQuestLogIndexByID(reference.questID);
+					if questLogIndex then
+						local description, objective = GetQuestLogQuestText(questLogIndex);
+						if description and app.Settings:GetTooltipSetting("Descriptions") then GameTooltip:AddLine(description, 0.4, 0.8, 1, 1); end
+						if objective and app.Settings:GetTooltipSetting("Objectives") then
+							GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
+							GameTooltip:AddLine(objective, 0.4, 0.8, 1, 1);
+							objectified = true;
+						end
 					end
-					if not reference.saved then
+					if not reference.saved and app.Settings:GetTooltipSetting("Objectives") then
 						local objectives = C_QuestLog.GetQuestObjectives(reference.questID);
 						if objectives and #objectives > 0 then
-							if not reference.objectives then
+							if not objectified then
 								GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
 							end
 							for i,objective in ipairs(objectives) do
