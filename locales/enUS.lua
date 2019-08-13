@@ -2383,14 +2383,21 @@ AllTheThings.L = {
 	-- didn't use the same localization for the instance. Sorry.
 	["SAVED_TO_DJ_INSTANCES"] = {
 		["Stormwind Stockade"] = "The Stockade";
+		["Ahn'Qiraj"] = "Temple of Ahn'Qiraj";
 		["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
 		["Sunken Temple"] = "The Temple of Atal'hakkar";
 	};
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
+		["Blackwing Lair"] = 287,
 		["Deeprun Tram"] = 499,
+		["Molten Core"] = 232,
+		["Naxxramas"] = 162,
 		["Onyxia's Lair"] = 248,
+		["Ruins of Ahn'Qiraj"] = 247,
 		["The Stockade"] = 225,
+		["Temple of Ahn'Qiraj"] = 320,
+		["Zul'Gurub"] = 337,
 	};
 };
