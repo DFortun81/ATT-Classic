@@ -7,7 +7,7 @@ _.Instances = {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			n(-17, {	-- Legacy Quests
+			n(-17, {	-- Quests
 				{
 					["itemID"] = 18330,	-- Arcanum of Focus
 					["groups"] = {
