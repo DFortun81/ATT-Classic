@@ -759,23 +759,47 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
-	DirtyQuests[key] = true;
-	rawset(t, key, value);
-	
-	if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
-		local searchResults = app.SearchForField("questID", key);
-		if searchResults and #searchResults > 0 then
-			if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
-				return true;
+	if value then
+		rawset(t, key, value);
+		rawset(DirtyQuests, key, true);
+		SetDataSubMember("CollectedQuests", key, 1);
+		SetTempDataSubMember("CollectedQuests", key, 1);
+		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
+			local searchResults = app.SearchForField("questID", key);
+			if searchResults and #searchResults > 0 then
+				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+					return true;
+				end
+			else
+				key = key .. " (Missing in ATT)";
 			end
-		else
-			key = key .. " (Missing in ATT)";
+			print("Completed Quest ID #" .. key);
 		end
-		print("Completed Quest ID #" .. key);
 	end
 end});
 local IsQuestFlaggedCompleted = function(questID)
 	return questID and CompletedQuests[questID];
+end
+local IsQuestFlaggedCompletedForObject = function(t)
+	-- If the quest or altQuestID is completed, then return completed.
+	if IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID) then
+		return 1;
+	end
+	if not t.repeatable and app.AccountWideQuests then
+		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+			return 2;
+		end
+		if t.altQuestID and GetDataSubMember("CollectedQuests", t.altQuestID) then
+			return 2;
+		end
+	end
+	if t.altQuests then
+		for i,questID in ipairs(t.altQuests) do
+			if IsQuestFlaggedCompleted(questID) then
+				return 2;
+			end
+		end
+	end
 end
 
 -- Search Caching
@@ -1385,7 +1409,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			group = regroup;
 		else
 			-- Determine if this is a cache for an item
-			local itemID, sourceID;
+			local itemID;
 			if not paramB then
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
@@ -1395,14 +1419,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						itemID = tonumber(itemID2); 
 						paramA = "itemID";
 						paramB = itemID;
-					end
-					if #group > 0 then
-						local first = group[1];
-						if first.s then sourceID = first.s; end
-						if first.u and first.u == 7 and numBonusIds and numBonusIds ~= "" and tonumber(numBonusIds) > 0 then
-							tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE"] });
-							tinsert(info, { left = L["RECENTLY_MADE_OBTAINABLE_PT2"] });
-						end
 					end
 				else
 					local kind, id = strsplit(":", paramA);
@@ -1425,176 +1441,16 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			elseif paramA == "itemID" then
 				itemID = paramB;
-				if #group > 0 then
-					local first = group[1];
-					if first.s then sourceID = first.s; end
-				end
 			end
 			
 			if itemID then
 				-- Show the unobtainable source text
 				for i,j in ipairs(group.g or group) do
 					if j.itemID == itemID then
-						if j.u and (not j.crs or paramA == "itemID" or paramA == "sourceID") then
+						if j.u and (not j.crs or paramA == "itemID") then
 							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
 							break;
 						end
-					end
-				end
-				if sourceID then
-					local sourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);
-					if sourceInfo then
-						if app.Settings:GetTooltipSetting("SharedAppearances") then
-							local text;
-							if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
-								-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
-											local link = group[1].link;
-											if not link then 
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if group[1].u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
-											
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if (group[1].f == otherATTSource.f or group[1].f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-												local link = otherATTSource.link;
-												if not link then 
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												if otherATTSource.u then
-													local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][otherATTSource.u or 1][1]];
-													if texture then
-														text = "|T" .. texture .. ":0|t";
-													else
-														text = "   ";
-													end
-												else
-													text = "   ";
-												end
-												tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherATTSource.collected)});
-											end
-										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local link = select(2, GetItemInfo(otherSource.itemID));
-												if not link then 
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												tinsert(info, { left = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSource.itemID or "???") .. ")") or ""), right = GetCollectionIcon(otherSource.isCollected)});
-											end
-										end
-									end
-								end
-							else
-								-- This is where we need to calculate the requirements differently because Unique Mode users are extremely frustrating.
-								for i, otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
-									if otherSourceID == sourceID then
-										if app.Settings:GetTooltipSetting("IncludeOriginalSource") and #group > 0 then
-											local link = group[1].link;
-											if not link then 
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if group[1].u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group[1].u or 1][1]];
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											tinsert(info, { left = text .. link .. (app.Settings:GetTooltipSetting("itemID") and " (*)" or ""), right = GetCollectionIcon(group[1].collected)});
-										end
-									else
-										local otherATTSource = app.SearchForField("s", otherSourceID);
-										if otherATTSource then
-											otherATTSource = otherATTSource[1];
-											
-											-- Show information about the appearance:
-											local failText = "";
-											local link = otherATTSource.link;
-											if not link then 
-												link = RETRIEVING_DATA;
-												working = true;
-											end
-											if otherATTSource.u then
-												local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][otherATTSource.u or 1][1]];
-												if texture then
-													text = "|T" .. texture .. ":0|t";
-												else
-													text = "   ";
-												end
-											else
-												text = "   ";
-											end
-											text = text .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherATTSource.itemID or "???") .. ")") or "");
-											
-											-- Show all of the reasons why an appearance does not meet given criteria.
-											-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
-											if group[1].f ~= otherATTSource.f then
-												-- This is NOT the same type. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												failText = failText .. (L["FILTER_ID_TYPES"][otherATTSource.f] or "???");
-											elseif otherATTSource.nmc then
-												-- This is NOT for your class. Therefore, no credit for you!
-												if #failText > 0 then failText = failText .. ", "; end
-												-- failText = failText .. "Class Locked";
-												for i,classID in ipairs(otherATTSource.c) do
-													if i > 1 then failText = failText .. ", "; end
-													failText = failText .. (GetClassInfo(classID) or "???");
-												end
-											elseif otherATTSource.nmr then
-												-- This is NOT for your race. Therefore, no credit for you!
-												if #failText > 1 then failText = failText .. ", "; end
-												failText = failText .. "Race Locked";
-											else
-												-- Should be fine
-											end
-											
-											if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-											tinsert(info, { left = text, right = GetCollectionIcon(otherATTSource.collected)});
-										else
-											local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
-											if otherSource then
-												local name, link = GetItemInfo(string.format("item:%d:::::::::::%d:1:3524", otherSource.itemID, otherSource.modID));
-												if not link then 
-													link = RETRIEVING_DATA;
-													working = true;
-												end
-												text = " |CFFFF0000!|r " .. link .. (app.Settings:GetTooltipSetting("itemID") and (" (" .. (otherSourceID == sourceID and "*" or otherSource.itemID or "???") .. ")") or "");
-												if otherSource.isCollected then SetDataSubMember("CollectedSources", otherSourceID, 1); end
-												tinsert(info, { left = text	.. " |CFFFF0000(MISSING IN ATT - " .. otherSourceID .. ")|r", right = GetCollectionIcon(otherSource.isCollected)});
-											end
-										end
-									end
-								end
-							end
-						end
-						
-						if app.Settings:GetTooltipSetting("visualID") then tinsert(info, { left = L["VISUAL_ID"], right = tostring(sourceInfo.visualID) }); end
-						if app.Settings:GetTooltipSetting("sourceID") then tinsert(info, { left = L["SOURCE_ID"], right = sourceID .. " " .. GetCollectionIcon(sourceInfo.isCollected) }); end
 					end
 				end
 				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
@@ -2459,20 +2315,23 @@ local function AttachTooltipRawSearchResults(self, group)
 	if group then
 		-- If there was info text generated for this search result, then display that first.
 		if group.info then
+			local left, right;
 			for i,entry in ipairs(group.info) do
-				if entry.right then
-					self:AddDoubleLine(entry.left or " ", entry.right);
+				left = entry.left;
+				right = entry.right;
+				if right then
+					self:AddDoubleLine(left or " ", right);
 				elseif entry.r then
 					if entry.wrap then
-						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255, 1);
 					else
-						self:AddLine(entry.left, entry.r / 255, entry.g / 255, entry.b / 255);
+						self:AddLine(left, entry.r / 255, entry.g / 255, entry.b / 255);
 					end
 				else
 					if entry.wrap then
-						self:AddLine(entry.left, nil, nil, nil, 1);
+						self:AddLine(left, nil, nil, nil, 1);
 					else
-						self:AddLine(entry.left);
+						self:AddLine(left);
 					end
 				end
 			end
@@ -3043,7 +2902,7 @@ app.BaseItem = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "name" then
 			return t.link and GetItemInfo(t.link);
 		elseif key == "tsm" then
@@ -3321,12 +3180,7 @@ app.BaseNPC = {
 		elseif key == "collectible" then
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
-			if t.questID and IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
@@ -3361,7 +3215,7 @@ app.BaseObject = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "saved" then
-			return IsQuestFlaggedCompleted(t.questID) or IsQuestFlaggedCompleted(t.altQuestID);
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3481,12 +3335,7 @@ app.BaseQuest = {
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly;
 		elseif key == "saved" then
-			if IsQuestFlaggedCompleted(t.questID) then
-				return 1;
-			end
-			if t.altQuestID and IsQuestFlaggedCompleted(t.altQuestID) then
-				return 1;
-			end
+			return IsQuestFlaggedCompletedForObject(t);
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3709,10 +3558,6 @@ UpdateGroup = function(parent, group)
 			if group.collectible then
 				-- An item is a special case where it may have both an appearance and a set of items
 				group.progress = group.collected and 1 or 0;
-				group.total = 1;
-			elseif group.s and group.s < 1 then
-				-- This item is missing its source ID. :(
-				group.progress = 0;
 				group.total = 1;
 			else
 				-- Default to 0 for both
@@ -4169,6 +4014,26 @@ local function CreateMiniListForGroup(group)
 				["g"] = g,
 				["hideText"] = true
 			};
+		elseif group.sym then
+			popout.data = CloneData(group);
+			popout.data.collectible = true;
+			popout.data.visible = true;
+			popout.data.progress = 0;
+			popout.data.total = 0;
+			if not popout.data.g then
+				local resolved = ResolveSymbolicLink(group);
+				if resolved then
+					for i=#resolved,1,-1 do
+						resolved[i] = CreateObject(resolved[i]);
+					end
+					popout.data.g = resolved;
+				end
+			else
+				local resolved = ResolveSymbolicLink(group);
+				if resolved then
+					MergeObjects(popout.data.g, resolved);
+				end
+			end
 		elseif group.g then
 			-- This is already a container with accurate numbers.
 			popout.data = group;
@@ -6711,6 +6576,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFlightPaths", {});
+	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("WaypointFilters", {});
 	
@@ -6765,6 +6631,15 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Cache your character's quest data.
+	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
+	local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
+	if not myQuests then
+		myQuests = {};
+		quests[app.GUID] = myQuests;
+		SetTempDataMember("CollectedQuests", myQuests);
+	end
+	
 	-- GUID to Character Name cache
 	local characters = GetDataMember("Characters", {});
 	if not characters[app.GUID] or true then -- Temporary
@@ -6804,7 +6679,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFactionsPerCharacter",
 		"CollectedFlightPaths",
 		"CollectedFlightPathsPerCharacter",
-		"CollectedSources",
+		"CollectedQuests",
+		"CollectedQuestsPerCharacter",
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
 		"lockouts",
