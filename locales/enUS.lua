@@ -85,6 +85,7 @@ AllTheThings.L = {
 	["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known_circle:0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
 	["NOT_COLLECTED"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
 	["COMPLETE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known_green:0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
+	["COMPLETE_OTHER"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known_green:0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
 	["INCOMPLETE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known:0|t |cff15abffKnown on current character|r";
 	["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333Unknown on current character|r";
@@ -2400,4 +2401,16 @@ AllTheThings.L = {
 		["Temple of Ahn'Qiraj"] = 320,
 		["Zul'Gurub"] = 337,
 	};
+
+	-- Unobtainable Listing
+	["UNOBTAINABLE_ITEM_TEXTURES"] = {
+		"Interface\\FriendsFrame\\StatusIcon-DnD", 		-- No Hope
+		"Interface\\FriendsFrame\\StatusIcon-Away", 	-- Little Hope
+		"Interface\\FriendsFrame\\StatusIcon-Online",	-- There is Hope
+	};
+	["UNOBTAINABLE_ITEM_REASONS"] = {
+		{1, "|CFFFF0000The source of this item was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
+		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
+	};
+
 };
