@@ -262,16 +262,7 @@ _.Instances = {
 				i(19356),	-- Staff of the Shadow Flame
 				i(19363),	-- Crul'shorukh, Edge of Chaos
 				i(19360),	-- Lok'amir il Romathis
-				i(16908),	-- Bloodfang Hood
-				i(16939),	-- Dragonstalker's Helm
-				i(16921),	-- Halo of Transcendence
-				i(16963),	-- Helm of Wrath
-				i(16947),	-- Helmet of Ten Storms
-				i(16955),	-- Judgment Crown
 				i(19375),	-- Mish'undare, Circlet of the Mind Flayer
-				i(16929),	-- Nemesis Skullcap
-				i(16914),	-- Netherwind Crown
-				i(16900),	-- Stormrage Cover
 				i(19377),	-- Prestor's Talisman of Connivery
 				i(19378),	-- Cloak of the Brood Lord
 				i(16905),	-- Bloodfang Chestpiece
