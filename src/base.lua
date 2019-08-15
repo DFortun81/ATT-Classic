@@ -5,7 +5,7 @@
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local app = CreateFrame("FRAME", "AllTheThings", UIParent);
-app:SetScript("OnEvent", function(self, e, ...) print(e, ...); (self.events[e] or print)(...); end);
+app:SetScript("OnEvent", function(self, e, ...) (self.events[e] or print)(...); end);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 app.events = {};
 app:SetSize(1, 1);

@@ -5063,6 +5063,7 @@ function app:GetDataCache()
 		end
 		
 		-- Items (Dynamic)
+		--[[
 		db = {};
 		db.g = (function()
 			local cache = GetTempDataMember("ITEM_CACHE");
@@ -5087,12 +5088,6 @@ function app:GetDataCache()
 			for i=1,929,1 do
 				local faction = app.CreateFaction(i);
 				tinsert(cache, faction);
-				--[[
-				local name = faction.name;
-				if name then
-					datas[faction.factionID] = name;
-				end
-				]]--
 			end
 			--SetDataMember("FactionDB", datas);
 			return cache;
@@ -5100,6 +5095,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Factions (Dynamic)";
 		table.insert(g, db);
+		]]--
 		
 		-- Flight Paths (Dynamic)
 		db = {};
@@ -5119,6 +5115,7 @@ function app:GetDataCache()
 		table.insert(g, db);
 		
 		-- NPCs (Dynamic)
+		--[[
 		db = {};
 		db.g = (function()
 			local cache = GetTempDataMember("NPC_CACHE");
@@ -5151,6 +5148,7 @@ function app:GetDataCache()
 		db.expanded = false;
 		db.text = "Quests";
 		table.insert(g, db);
+		]]--
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
