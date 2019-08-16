@@ -5,6 +5,7 @@ local L = AllTheThings.L;
 -- TODO
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Sima Ígnea"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Castillo de Colmillo Oscuro"] = 310;	-- SFK
 
 local a = L.NPC_ID_NAMES;

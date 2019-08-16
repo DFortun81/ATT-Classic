@@ -2396,6 +2396,7 @@ AllTheThings.L = {
 		["Molten Core"] = 232,
 		["Naxxramas"] = 162,
 		["Onyxia's Lair"] = 248,
+		["Ragefire Chasm"] = 213,
 		["Ruins of Ahn'Qiraj"] = 247,
 		["Shadowfang Keep"] = 310,
 		["The Stockade"] = 225,
