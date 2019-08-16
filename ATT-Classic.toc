@@ -2,10 +2,10 @@
 ## Interface: 11302
 ## Title: ATT-Classic
 ## Name: ATT-Classic
-## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData, AllTheThingsHarvestItems
+## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData
 ## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 0.0.2
+## Version: 0.0.3
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
