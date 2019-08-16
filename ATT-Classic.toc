@@ -27,5 +27,4 @@ ATT-Classic.lua
 db\FactionDB.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
-db\NPCDB.lua
 db\Categories.lua
