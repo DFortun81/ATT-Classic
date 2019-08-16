@@ -2397,6 +2397,7 @@ AllTheThings.L = {
 		["Naxxramas"] = 162,
 		["Onyxia's Lair"] = 248,
 		["Ruins of Ahn'Qiraj"] = 247,
+		["Shadowfang Keep"] = 310,
 		["The Stockade"] = 225,
 		["Temple of Ahn'Qiraj"] = 320,
 		["Zul'Gurub"] = 337,
