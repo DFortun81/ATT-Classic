@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1415, {	-- Eastern Kingdoms
-		m(1429, {	-- Elwynn Forest
+		m(51, {	-- Swamp of Sorrows
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

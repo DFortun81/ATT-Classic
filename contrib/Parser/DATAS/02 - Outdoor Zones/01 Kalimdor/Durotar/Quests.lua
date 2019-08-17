@@ -275,9 +275,9 @@ _.Zones =
 					["u"] = 40,
 					["itemID"] = 14649,	-- Valley of Trials Gift Voucher
 					["g"] = {
-						un(40, i(13584)),	-- Diablo Stone
-						un(40, i(13583)),	-- Panda Collar
-						un(40, i(13582)),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 				q(834,  {	-- Winds in the Desert
