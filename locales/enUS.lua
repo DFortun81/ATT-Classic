@@ -59,6 +59,7 @@ AllTheThings.L = {
 	["SPLIT"] = "Per Difficulty";
 	["REQUIRES"] = "Requires";
 	["REQUIRES_LEVEL"] = "Requires Level";
+	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	
 	-- Filter Text
 	["CREATURE_ID"] = "Creature ID";
