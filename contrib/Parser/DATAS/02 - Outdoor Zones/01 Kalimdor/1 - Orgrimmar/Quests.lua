@@ -61,6 +61,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 14727,	-- Vehena
 				}),
+				q(809, {	-- Ak'Zeloth
+					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
+					["qg"] = 3216,	-- Neeru Fireblade
+					["sourceQuest"] = 829,	-- Neeru Fireblade
+				}),
 				q(1433, {	-- Alliance Relations
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
@@ -500,6 +506,9 @@ _.Zones =
 				q(1018, {	-- The New Frontier
 					["lvl"] = 54,
 					["qg"] = 10880,	-- Warcaller Gorlach
+				}),
+				q(787, {	-- The New Horde
+					["qg"] = 3144,	-- Eitrigg
 				}),
 				q(1146, {	-- The Swarm Grows
 					["lvl"] = 29,
