@@ -1,8 +1,7 @@
 -- Localization for Chinese (Simplified, PRC) Clients.
-if GetLocale() ~= "zhCN" then
-    return
-end
-local L = ATTC.L
+if GetLocale() ~= "zhCN" then return; end
+local app = select(2, ...);
+local L = app.L;
 
 -- TODO
 

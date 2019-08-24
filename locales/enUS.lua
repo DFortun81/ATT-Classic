@@ -9,7 +9,8 @@
 --------------------------------------------------------------------------------
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
-ATTC.L = {
+local name, app = ...;
+app.L = {
 	-- General Text
 	["TITLE"] = "|cffb4b4ffATT-Classic|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT-C|r";

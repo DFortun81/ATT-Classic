@@ -1,4 +1,4 @@
-ATTC.FlightPathDB = {
+select(2, ...).FlightPathDB = {
 	[1] = {
 		name="Northshire Abbey",
 		faction=2,

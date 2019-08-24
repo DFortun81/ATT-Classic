@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = ATTC;	-- Create a local (non global) reference
+local app = select(2, ...);
 local L = app.L;
 
 -- Performance Cache 
@@ -422,7 +422,7 @@ function PlayAudio(targetAudio)
 end
 
 -- Color Lib
-local CS = CreateFrame("ColorSelect", nil, app);
+local CS = CreateFrame("ColorSelect", nil, app._);
 local function Colorize(str, color)
 	return "|c" .. color .. str .. "|r";
 end
@@ -2700,7 +2700,7 @@ app.BaseFaction = {
 		elseif key == "description" then
 			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 		elseif key == "name" then
-			return ATTC.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID)) .. " *NEW*");
+			return app.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID)) .. " *NEW*");
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5094,7 +5094,7 @@ function app:GetDataCache()
 		db = {};
 		db.g = (function()
 			local cache = {};
-			for key,fp in pairs(ATTC.FlightPathDB) do
+			for key,fp in pairs(app.FlightPathDB) do
 				tinsert(cache, app.CreateFlightPath(tonumber(key)));
 			end
 			table.sort(cache, function(a, b)
@@ -5477,7 +5477,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
-			print(e, ...);
+			--print(e, ...);
 			if e == "PLAYER_LOGIN" then
 				if not ATTClassicDebugData then
 					ATTClassicDebugData = app.GetDataMember("Debugger", {});

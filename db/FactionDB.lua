@@ -1,4 +1,4 @@
-ATTC.FactionDB = {
+select(2, ...).FactionDB = {
 	"PLAYER, Human", -- [1]
 	"PLAYER, Orc", -- [2]
 	"PLAYER, Dwarf", -- [3]
