@@ -154,7 +154,7 @@ settings.Initialize = function(self)
 	if not ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = {}; end
 	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
 	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
-	FilterSettingsBase.__index = app.Presets[app.Class] or {};
+	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
 	
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));

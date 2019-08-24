@@ -2,6 +2,7 @@
 --   P R E S E T S   M O D U L E   --
 -------------------------------------
 ATTC.Presets = {
+	["ALL"] = setmetatable({}, { __index = function() return true; end}),
 	["DRUID"] = {
 		true, -- [1]
 		true, -- [2]
