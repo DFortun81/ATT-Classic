@@ -2484,15 +2484,12 @@ local function AttachTooltip(self)
 				-- Addons Menu?
 				if numLines == 2 then
 					local leftSide = _G[self:GetName() .. "TextLeft1"];
-					if leftSide and leftSide:GetText() == "ATTC" then
-						leftSide:SetText(L["TITLE"]);
+					if leftSide and leftSide:GetText() == "ATT-Classic" then
 						local reference = app:GetDataCache();
-						local rightSide = _G[self:GetName() .. "TextRight1"];
-						if rightSide then
-							rightSide:SetText(GetProgressColorText(reference.progress, reference.total));
-							rightSide:Show();
-						end
+						self:ClearLines();
+						self:AddDoubleLine(L["TITLE"], GetProgressColorText(reference.progress, reference.total), 1, 1, 1);
 						self:AddDoubleLine(app.Settings:GetModeString(), app.GetNumberOfItemsUntilNextPercentage(reference.progress, reference.total), 1, 1, 1);
+						self:AddLine(reference.description, 0.4, 0.8, 1, 1);
 						return true;
 					end
 				end
