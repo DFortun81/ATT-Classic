@@ -5936,7 +5936,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					end
 					print("Path: ", mapPath);
 				end
-				print("Please report this to the ATT Discord! Thanks! ", GetAddOnMetadata("ATT-Classic", "Version"));
+				print("Please report this to the ATT Discord! Thanks! ", app.Version);
 			end
 		end
 		local function OpenMiniList(id, show)
@@ -6527,6 +6527,7 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
+	app.Version = GetAddOnMetadata("AllTheThings", "Version");
 	ATTClassicAD = _G["ATTClassicAD"];	-- For account-wide data.
 	if not ATTClassicAD then
 		ATTClassicAD = { };
