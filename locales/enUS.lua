@@ -2404,6 +2404,7 @@ app.L = {
 		["Shadowfang Keep"] = 310,
 		["The Stockade"] = 225,
 		["Temple of Ahn'Qiraj"] = 320,
+		["Wailing Caverns"] = 279,
 		["Zul'Gurub"] = 337,
 	};
 

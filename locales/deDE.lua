@@ -22,6 +22,7 @@ L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({

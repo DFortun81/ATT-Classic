@@ -8,6 +8,7 @@ local L = app.L;
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Cavernas Ígneas"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Bastilha da Presa Negra"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
