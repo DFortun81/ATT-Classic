@@ -1826,6 +1826,9 @@ local function SendGroupMessage(msg)
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "PARTY")
 	end
 end
+local function SendResponseMessage(msg, player)
+	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
+end
 local function SendSocialMessage(msg)
 	SendGroupMessage(msg);
 	if IsInGuild() then
