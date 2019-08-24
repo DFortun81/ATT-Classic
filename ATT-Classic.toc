@@ -3,8 +3,8 @@
 ## X-Curse-Project-ID: 267285
 ## Title: ATT-Classic
 ## Name: ATT-Classic
-## SavedVariables: AllTheThingsSettings, AllTheThingsAD, AllTheThingsAuctionData, AllTheThingsDebugData
-## SavedVariablesPerCharacter: AllTheThingsSettingsPerCharacter
+## SavedVariables: ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
+## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 0.0.4
 lib\LibStub\LibStub.lua

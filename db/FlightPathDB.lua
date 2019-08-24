@@ -1,4 +1,4 @@
-AllTheThings.FlightPathDB = {
+ATTC.FlightPathDB = {
 	[1] = {
 		name="Northshire Abbey",
 		faction=2,

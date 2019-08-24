@@ -1,7 +1,7 @@
 -------------------------------------
 --   P R E S E T S   M O D U L E   --
 -------------------------------------
-AllTheThings.Presets = {
+ATTC.Presets = {
 	["DRUID"] = {
 		true, -- [1]
 		true, -- [2]

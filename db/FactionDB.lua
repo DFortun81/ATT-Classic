@@ -1,4 +1,4 @@
-AllTheThings.FactionDB = {
+ATTC.FactionDB = {
 	"PLAYER, Human", -- [1]
 	"PLAYER, Orc", -- [2]
 	"PLAYER, Dwarf", -- [3]

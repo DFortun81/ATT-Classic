@@ -1,6 +1,6 @@
 -- Localization for German Clients.
 if GetLocale() ~= "deDE" then return; end
-local L = AllTheThings.L;
+local L = ATTC.L;
 
 L.CUSTOM_DIFFICULTIES[-1] = "Schlachtzugbrowser (5.4)";
 L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";

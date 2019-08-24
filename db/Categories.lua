@@ -4,7 +4,7 @@
 --   WARNING: This file is dynamically generated   --
 -- UPDATED: Saturday, August 17, 2019 @ 4:07 AM    --
 -----------------------------------------------------
-local _ = AllTheThings; local rawset = rawset;
+local _ = ATTC; local rawset = rawset;
 local g = function(t,g) rawset(t,'g',g); return t; end
 local cl,faction,i,m,n,o,q,r,sp=_.CreateCharacterClass,_.CreateFaction,_.CreateItem,_.CreateMap,_.CreateNPC,_.CreateObject,_.CreateQuest,_.CreateRecipe,_.CreateSpell;
 local a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11={2},{9},{5},{3},{1},{8},{4},{7},{11},{1,3},{32,37.8};

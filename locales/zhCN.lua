@@ -2,7 +2,7 @@
 if GetLocale() ~= "zhCN" then
     return
 end
-local L = AllTheThings.L
+local L = ATTC.L
 
 -- TODO
 

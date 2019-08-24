@@ -4,7 +4,7 @@
 --            Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
-local app = CreateFrame("FRAME", "AllTheThings", UIParent);
+local app = CreateFrame("FRAME", "ATTC", UIParent);
 app:SetScript("OnEvent", function(self, e, ...) (self.events[e] or print)(...); end);
 app:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 app.events = {};

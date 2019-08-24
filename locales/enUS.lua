@@ -9,10 +9,10 @@
 --------------------------------------------------------------------------------
 --				This script is called directly after the Core.lua file. 	  --
 --------------------------------------------------------------------------------
-AllTheThings.L = {
+ATTC.L = {
 	-- General Text
-	["TITLE"] = "|cffb4b4ffALL THE THINGS|r";
-	["AUCTION_TAB"] = "|cffb4b4ffATT|r";
+	["TITLE"] = "|cffb4b4ffATT-Classic|r";
+	["AUCTION_TAB"] = "|cffb4b4ffATT-C|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
 
 	-- Instructional Text
@@ -93,6 +93,7 @@ AllTheThings.L = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
+		["ATT-Classic"] = "ATT",
 		["Expansion Pre"] = "Pre",
 		["Dungeons & Raids"] = "D&R",
 		["Player vs Player"] = STAT_CATEGORY_PVP,

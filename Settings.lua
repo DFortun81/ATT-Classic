@@ -3,33 +3,33 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = AllTheThings;
+local app = ATTC;
 local L = app.L;
 
 -- Binding Localizations
-BINDING_HEADER_ALLTHETHINGS = L["TITLE"];
-BINDING_NAME_ALLTHETHINGS_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"];
-BINDING_NAME_ALLTHETHINGS_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
+BINDING_HEADER_ATTC = L["TITLE"];
+BINDING_NAME_ATTC_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"];
+BINDING_NAME_ATTC_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
 
-BINDING_HEADER_ALLTHETHINGS_PREFERENCES = L["PREFERENCES"];
-BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
-BINDING_NAME_ALLTHETHINGS_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
-BINDING_NAME_ALLTHETHINGS_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
-BINDING_NAME_ALLTHETHINGS_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
-BINDING_NAME_ALLTHETHINGS_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"];
+BINDING_HEADER_ATTC_PREFERENCES = L["PREFERENCES"];
+BINDING_NAME_ATTC_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
+BINDING_NAME_ATTC_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
+BINDING_NAME_ATTC_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
+BINDING_NAME_ATTC_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
+BINDING_NAME_ATTC_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"];
 
-BINDING_HEADER_ALLTHETHINGS_MODULES = L["MODULES"];
-BINDING_NAME_ALLTHETHINGS_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"];
-BINDING_NAME_ALLTHETHINGS_TOGGLEMINILIST = L["TOGGLE_MINILIST"];
-BINDING_NAME_ALLTHETHINGS_TOGGLE_PROFESSION_LIST = L["TOGGLE_PROFESSION_LIST"];
-BINDING_NAME_ALLTHETHINGS_TOGGLE_RAID_ASSISTANT = L["TOGGLE_RAID_ASSISTANT"];
-BINDING_NAME_ALLTHETHINGS_TOGGLERANDOM = L["TOGGLE_RANDOM"];
-BINDING_NAME_ALLTHETHINGS_REROLL_RANDOM = L["REROLL_RANDOM"];
+BINDING_HEADER_ATTC_MODULES = L["MODULES"];
+BINDING_NAME_ATTC_TOGGLEMAINLIST = L["TOGGLE_MAINLIST"];
+BINDING_NAME_ATTC_TOGGLEMINILIST = L["TOGGLE_MINILIST"];
+BINDING_NAME_ATTC_TOGGLE_PROFESSION_LIST = L["TOGGLE_PROFESSION_LIST"];
+BINDING_NAME_ATTC_TOGGLE_RAID_ASSISTANT = L["TOGGLE_RAID_ASSISTANT"];
+BINDING_NAME_ATTC_TOGGLERANDOM = L["TOGGLE_RANDOM"];
+BINDING_NAME_ATTC_REROLL_RANDOM = L["REROLL_RANDOM"];
 
 -- The Settings Frame
 local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent );
 app.Settings = settings;
-settings.name = app:GetName();
+settings.name = "ATT-Classic";
 settings.MostRecentTab = nil;
 settings.Tabs = {};
 settings:SetBackdrop({
@@ -40,6 +40,15 @@ settings:SetBackdrop({
 });
 settings:SetBackdropColor(0, 0, 0, 1);
 InterfaceOptions_AddCategory(settings);
+settings.Open = function(self)
+	-- Open the Options menu.
+	if InterfaceOptionsFrame:IsVisible() then
+		InterfaceOptionsFrame_Show();
+	else
+		InterfaceOptionsFrame_OpenToCategory(self.name);
+		InterfaceOptionsFrame_OpenToCategory(self.name);
+	end
+end
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
@@ -135,17 +144,17 @@ settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
 	
 	-- Assign the default settings
-	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
-	if not AllTheThingsSettings.General then AllTheThingsSettings.General = {}; end
-	if not AllTheThingsSettings.Tooltips then AllTheThingsSettings.Tooltips = {}; end
-	setmetatable(AllTheThingsSettings.General, GeneralSettingsBase);
-	setmetatable(AllTheThingsSettings.Tooltips, TooltipSettingsBase);
+	if not ATTClassicSettings then ATTClassicSettings = {}; end
+	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
+	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
+	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
+	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
 	
 	-- Assign the preset filters for your character class as the default states
-	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {}; end
-	if not AllTheThingsSettingsPerCharacter.Filters then AllTheThingsSettingsPerCharacter.Filters = {}; end
-	setmetatable(AllTheThingsSettingsPerCharacter.Filters, FilterSettingsBase);
-	FilterSettingsBase.__index = app.Presets[app.Class];
+	if not ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = {}; end
+	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
+	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
+	FilterSettingsBase.__index = app.Presets[app.Class] or {};
 	
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
@@ -173,10 +182,10 @@ settings.Initialize = function(self)
 	end
 end
 settings.Get = function(self, setting)
-	return AllTheThingsSettings.General[setting];
+	return ATTClassicSettings.General[setting];
 end
 settings.GetFilter = function(self, filterID)
-	return AllTheThingsSettingsPerCharacter.Filters[filterID];
+	return ATTClassicSettingsPerCharacter.Filters[filterID];
 end
 settings.GetModeString = function(self)
 	local mode = "Mode";
@@ -217,27 +226,27 @@ settings.GetModeString = function(self)
 	return mode;
 end
 settings.GetPersonal = function(self, setting)
-	return AllTheThingsSettingsPerCharacter[setting];
+	return ATTClassicSettingsPerCharacter[setting];
 end
 settings.GetTooltipSetting = function(self, setting)
-	return AllTheThingsSettings.Tooltips[setting];
+	return ATTClassicSettings.Tooltips[setting];
 end
 settings.Set = function(self, setting, value)
-	AllTheThingsSettings.General[setting] = value;
+	ATTClassicSettings.General[setting] = value;
 	self:Refresh();
 end
 settings.SetFilter = function(self, filterID, value)
-	AllTheThingsSettingsPerCharacter.Filters[filterID] = value;
+	ATTClassicSettingsPerCharacter.Filters[filterID] = value;
 	self:Refresh();
 	app:RefreshData();
 end
 settings.SetTooltipSetting = function(self, setting, value)
-	AllTheThingsSettings.Tooltips[setting] = value;
+	ATTClassicSettings.Tooltips[setting] = value;
 	wipe(app.searchCache);
 	self:Refresh();
 end
 settings.SetPersonal = function(self, setting, value)
-	AllTheThingsSettingsPerCharacter[setting] = value;
+	ATTClassicSettingsPerCharacter[setting] = value;
 	self:Refresh();
 end
 settings.Refresh = function(self)
@@ -990,8 +999,8 @@ f:SetWidth(120);
 f:SetHeight(24);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", function(self)
-	for key,value in pairs(AllTheThingsSettingsPerCharacter.Filters) do
-		AllTheThingsSettingsPerCharacter.Filters[key] = nil;
+	for key,value in pairs(ATTClassicSettingsPerCharacter.Filters) do
+		ATTClassicSettingsPerCharacter.Filters[key] = nil;
 	end
 	settings:Refresh();
 	app:RefreshData();
@@ -1018,7 +1027,7 @@ f:SetScript("OnClick", function(self)
 	for key,value in pairs(FilterSettingsBase.__index) do
 		if value then
 			count = count + 1;
-			if AllTheThingsSettingsPerCharacter.Filters[key] then
+			if ATTClassicSettingsPerCharacter.Filters[key] then
 				active = active + 1;
 			end
 		end
@@ -1026,11 +1035,11 @@ f:SetScript("OnClick", function(self)
 	if count > 0 then
 		if (active / count) > 0.5 then
 			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then AllTheThingsSettingsPerCharacter.Filters[key] = false; end
+				if value then ATTClassicSettingsPerCharacter.Filters[key] = false; end
 			end
 		else
 			for key,value in pairs(FilterSettingsBase.__index) do
-				if value then AllTheThingsSettingsPerCharacter.Filters[key] = true; end
+				if value then ATTClassicSettingsPerCharacter.Filters[key] = true; end
 			end
 		end
 		settings:Refresh();

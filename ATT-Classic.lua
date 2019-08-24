@@ -3,7 +3,7 @@
 --------------------------------------------------------------------------------
 --				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
-local app = AllTheThings;	-- Create a local (non global) reference
+local app = ATTC;	-- Create a local (non global) reference
 local L = app.L;
 
 -- Performance Cache 
@@ -90,48 +90,48 @@ end
 
 -- Data Lib
 local attData;
-local AllTheThingsTempData = {}; 	-- For temporary data.
-local AllTheThingsAD = {};			-- For account-wide data.
+local ATTCTempData = {}; 	-- For temporary data.
+local ATTClassicAD = {};			-- For account-wide data.
 local function SetDataMember(member, data)
-	rawset(AllTheThingsAD, member, data);
+	rawset(ATTClassicAD, member, data);
 end
 local function GetDataMember(member, default)
-	attData = rawget(AllTheThingsAD, member);
+	attData = rawget(ATTClassicAD, member);
 	if attData == nil then
-		rawset(AllTheThingsAD, member, default);
+		rawset(ATTClassicAD, member, default);
 		return default;
 	else
 		return attData;
 	end
 end
 local function SetTempDataMember(member, data)
-	rawset(AllTheThingsTempData, member, data);
+	rawset(ATTCTempData, member, data);
 end
 local function GetTempDataMember(member, default)
-	attData = rawget(AllTheThingsTempData, member);
+	attData = rawget(ATTCTempData, member);
 	if attData == nil then
-		rawset(AllTheThingsTempData, member, default);
+		rawset(ATTCTempData, member, default);
 		return default;
 	else
 		return attData;
 	end
 end
 local function SetDataSubMember(member, submember, data)
-	attData = rawget(AllTheThingsAD, member);
+	attData = rawget(ATTClassicAD, member);
 	if attData == nil then
 		attData = {};
 		rawset(attData, submember, data);
-		rawset(AllTheThingsAD, member, attData);
+		rawset(ATTClassicAD, member, attData);
 	else
 		rawset(attData, submember, data);
 	end
 end
 local function GetDataSubMember(member, submember, default)
-	attData = rawget(AllTheThingsAD,member);
+	attData = rawget(ATTClassicAD,member);
 	if attData then 
 		attData = rawget(attData, submember);
 		if attData == nil then
-			rawset(rawget(AllTheThingsAD,member), submember, default);
+			rawset(rawget(ATTClassicAD,member), submember, default);
 			return default;
 		else
 			return attData;
@@ -139,26 +139,26 @@ local function GetDataSubMember(member, submember, default)
 	else
 		attData = {};
 		rawset(attData, submember, default);
-		rawset(AllTheThingsAD, member, attData);
+		rawset(ATTClassicAD, member, attData);
 		return default;
 	end
 end
 local function SetTempDataSubMember(member, submember, data)
-	attData = rawget(AllTheThingsTempData, member);
+	attData = rawget(ATTCTempData, member);
 	if attData == nil then
 		attData = {};
 		rawset(attData, submember, data);
-		rawset(AllTheThingsTempData, member, attData);
+		rawset(ATTCTempData, member, attData);
 	else
 		rawset(attData, submember, data);
 	end
 end
 local function GetTempDataSubMember(member, submember, default)
-	attData = rawget(AllTheThingsTempData,member);
+	attData = rawget(ATTCTempData,member);
 	if attData then 
 		attData = rawget(attData, submember);
 		if attData == nil then
-			rawset(rawget(AllTheThingsTempData,member), submember, default);
+			rawset(rawget(ATTCTempData,member), submember, default);
 			return default;
 		else
 			return attData;
@@ -166,7 +166,7 @@ local function GetTempDataSubMember(member, submember, default)
 	else
 		attData = {};
 		rawset(attData, submember, default);
-		rawset(AllTheThingsTempData, member, attData);
+		rawset(ATTCTempData, member, attData);
 		return default;
 	end
 end
@@ -543,14 +543,14 @@ CS:Hide();
 
 -- NPC & Title Name Harvesting Lib (https://us.battle.net/forums/en/wow/topic/20758497390?page=1#post-4, Thanks Gello!)
 local NPCTitlesFromID = {};
-local NPCHarvester = CreateFrame("GameTooltip", "AllTheThingsNPCHarvester", UIParent, "GameTooltipTemplate");
+local NPCHarvester = CreateFrame("GameTooltip", "ATTCNPCHarvester", UIParent, "GameTooltipTemplate");
 local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 	if id > 0 then
 		NPCHarvester:SetOwner(UIParent,"ANCHOR_NONE")
 		NPCHarvester:SetHyperlink(format("unit:Creature-0-0-0-0-%d-0000000000",id))
-		local title = AllTheThingsNPCHarvesterTextLeft1:GetText();
+		local title = ATTCNPCHarvesterTextLeft1:GetText();
 		if title and NPCHarvester:NumLines() > 2 then
-			rawset(NPCTitlesFromID, id, AllTheThingsNPCHarvesterTextLeft2:GetText());
+			rawset(NPCTitlesFromID, id, ATTCNPCHarvesterTextLeft2:GetText());
 		end
 		NPCHarvester:Hide();
 		if title and title ~= RETRIEVING_DATA then
@@ -2355,8 +2355,8 @@ local function AttachTooltipSearchResults(self, search, method, paramA, paramB, 
 	AttachTooltipRawSearchResults(self, GetCachedSearchResults(search, method, paramA, paramB, ...));
 end
 local function AttachTooltip(self)
-	if not self.AllTheThingsProcessing then
-		self.AllTheThingsProcessing = true;
+	if not self.ATTCProcessing then
+		self.ATTCProcessing = true;
 		if (not InCombatLockdown() or app.Settings:GetTooltipSetting("DisplayInCombat")) and app.Settings:GetTooltipSetting("Enabled") then
 			local numLines = self:NumLines();
 			if numLines > 0 then
@@ -2429,7 +2429,7 @@ local function AttachTooltip(self)
 					AttachTooltipSearchResults(self, "spellID:" .. spellID, SearchForField, "spellID", spellID);
 					self:Show();
 					if owner and owner.ActiveTexture then
-						self.AllTheThingsProcessing = nil;
+						self.ATTCProcessing = nil;
 					end
 					return true;
 				end
@@ -2484,7 +2484,7 @@ local function AttachTooltip(self)
 				-- Addons Menu?
 				if numLines == 2 then
 					local leftSide = _G[self:GetName() .. "TextLeft1"];
-					if leftSide and leftSide:GetText() == "AllTheThings" then
+					if leftSide and leftSide:GetText() == "ATTC" then
 						leftSide:SetText(L["TITLE"]);
 						local reference = app:GetDataCache();
 						local rightSide = _G[self:GetName() .. "TextRight1"];
@@ -2501,7 +2501,7 @@ local function AttachTooltip(self)
 	end
 end
 local function ClearTooltip(self)
-	self.AllTheThingsProcessing = nil;
+	self.ATTCProcessing = nil;
 end
 
 -- Tooltip Hooks
@@ -2700,7 +2700,7 @@ app.BaseFaction = {
 		elseif key == "description" then
 			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 		elseif key == "name" then
-			return AllTheThings.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID)) .. " *NEW*");
+			return ATTC.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID)) .. " *NEW*");
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3720,12 +3720,7 @@ end
 local function MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
-		if InterfaceOptionsFrame:IsVisible() then
-			InterfaceOptionsFrame_Show();
-		else
-			InterfaceOptionsFrame_OpenToCategory(app:GetName());
-			InterfaceOptionsFrame_OpenToCategory(app:GetName());
-		end
+		app.Settings:Open();
 	else
 		-- Left Button
 		if IsShiftKeyDown() then
@@ -4474,13 +4469,7 @@ local function RowOnClick(self, button)
 			if self.index > 0 then
 				CreateMiniListForGroup(self.ref);
 			else
-				-- Open the Settings Menu
-				if InterfaceOptionsFrame:IsVisible() then
-					InterfaceOptionsFrame_Show();
-				else
-					InterfaceOptionsFrame_OpenToCategory(app:GetName());
-					InterfaceOptionsFrame_OpenToCategory(app:GetName());
-				end
+				app.Settings:Open();
 			end
 		elseif self.index > 0 then
 			reference.expanded = not reference.expanded;
@@ -5105,7 +5094,7 @@ function app:GetDataCache()
 		db = {};
 		db.g = (function()
 			local cache = {};
-			for key,fp in pairs(AllTheThings.FlightPathDB) do
+			for key,fp in pairs(ATTC.FlightPathDB) do
 				tinsert(cache, app.CreateFlightPath(tonumber(key)));
 			end
 			table.sort(cache, function(a, b)
@@ -5490,11 +5479,11 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:SetScript("OnEvent", function(self, e, ...)
 			print(e, ...);
 			if e == "PLAYER_LOGIN" then
-				if not AllTheThingsDebugData then
-					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
+				if not ATTClassicDebugData then
+					ATTClassicDebugData = app.GetDataMember("Debugger", {});
 					app.SetDataMember("Debugger", nil);
 				end
-				self.rawData = AllTheThingsDebugData;
+				self.rawData = ATTClassicDebugData;
 				self.data.g = CreateObject(self.rawData);
 				for i=#self.data.options,1,-1 do
 					tinsert(self.data.g, 1, self.data.options[i]);
@@ -6142,7 +6131,7 @@ app:GetWindow("Random", UIParent, function(self)
 					if group[field] and group[field] == value then tinsert(temp, group); end
 				end
 			end
-			function self:SelectAllTheThings()
+			function self:SelectATTC()
 				if searchCache["randomatt"] then
 					return searchCache["randomatt"];
 				else
@@ -6263,7 +6252,7 @@ app:GetWindow("Random", UIParent, function(self)
 						['description'] = "Click this button to search... EVERYTHING.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "AllTheThings");
+							app.SetDataMember("RandomSearchFilter", "ATTC");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -6471,10 +6460,10 @@ WorldMapTooltip:HookScript("OnTooltipCleared", ClearTooltip);
 WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 
 -- Slash Command List
-SLASH_AllTheThings1 = "/allthethings";
-SLASH_AllTheThings2 = "/things";
-SLASH_AllTheThings3 = "/att";
-SlashCmdList["AllTheThings"] = function(cmd)
+SLASH_ATTC1 = "/allthethings";
+SLASH_ATTC2 = "/things";
+SLASH_ATTC3 = "/att";
+SlashCmdList["ATTC"] = function(cmd)
 	if cmd then
 		cmd = string.lower(cmd);
 		if cmd == "" or cmd == "main" or cmd == "mainlist" then
@@ -6509,26 +6498,26 @@ SlashCmdList["AllTheThings"] = function(cmd)
 	end
 end
 
-SLASH_AllTheThingsMAPS1 = "/attmaps";
-SlashCmdList["AllTheThingsMAPS"] = function(cmd)
+SLASH_ATTCMAPS1 = "/attmaps";
+SlashCmdList["ATTCMAPS"] = function(cmd)
 	app:GetWindow("CosmicInfuser"):Toggle();
 end
 
-SLASH_AllTheThingsMINI1 = "/attmini";
-SLASH_AllTheThingsMINI2 = "/attminilist";
-SlashCmdList["AllTheThingsMINI"] = function(cmd)
+SLASH_ATTCMINI1 = "/attmini";
+SLASH_ATTCMINI2 = "/attminilist";
+SlashCmdList["ATTCMINI"] = function(cmd)
 	app:ToggleMiniListForCurrentZone();
 end
 
-SLASH_AllTheThingsRA1 = "/attra";
-SLASH_AllTheThingsRA2 = "/attraid";
-SlashCmdList["AllTheThingsRA"] = function(cmd)
+SLASH_ATTCRA1 = "/attra";
+SLASH_ATTCRA2 = "/attraid";
+SlashCmdList["ATTCRA"] = function(cmd)
 	app:GetWindow("RaidAssistant"):Toggle();
 end
 
-SLASH_AllTheThingsRAN1 = "/attran";
-SLASH_AllTheThingsRAN2 = "/attrandom";
-SlashCmdList["AllTheThingsRAN"] = function(cmd)
+SLASH_ATTCRAN1 = "/attran";
+SLASH_ATTCRAN2 = "/attrandom";
+SlashCmdList["ATTCRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
@@ -6541,10 +6530,10 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
-	AllTheThingsAD = _G["AllTheThingsAD"];	-- For account-wide data.
-	if not AllTheThingsAD then
-		AllTheThingsAD = { };
-		_G["AllTheThingsAD"] = AllTheThingsAD;
+	ATTClassicAD = _G["ATTClassicAD"];	-- For account-wide data.
+	if not ATTClassicAD then
+		ATTClassicAD = { };
+		_G["ATTClassicAD"] = ATTClassicAD;
 	end
 	app:UpdateWindowColors();
 	
@@ -6619,13 +6608,13 @@ app.events.VARIABLES_LOADED = function()
 	end
 	
 	-- Migrate Flight Path data to the new containers.
-	if AllTheThingsAD.FlightPaths then
-		for key,value in pairs(AllTheThingsAD.FlightPaths) do
+	if ATTClassicAD.FlightPaths then
+		for key,value in pairs(ATTClassicAD.FlightPaths) do
 			SetDataSubMember("CollectedFlightPaths", key, value);
 		end
 	end
-	if AllTheThingsPCD and AllTheThingsPCD.FlightPaths then
-		for key,value in pairs(AllTheThingsPCD.FlightPaths) do
+	if ATTCPCD and ATTCPCD.FlightPaths then
+		for key,value in pairs(ATTCPCD.FlightPaths) do
 			if value then
 				myFlightPaths[key] = value;
 				SetDataSubMember("CollectedFlightPaths", key, value);
@@ -6693,11 +6682,11 @@ app.events.VARIABLES_LOADED = function()
 		"EnableTomTomWaypointsOnTaxi",
 		"TomTomIgnoreCompletedObjects"
 	}) do
-		oldsettings[key] = AllTheThingsAD[key];
+		oldsettings[key] = ATTClassicAD[key];
 	end
-	wipe(AllTheThingsAD);
+	wipe(ATTClassicAD);
 	for key,value in pairs(oldsettings) do
-		AllTheThingsAD[key] = value;
+		ATTClassicAD[key] = value;
 	end
 
 	-- Tooltip Settings
@@ -6887,14 +6876,8 @@ app.events.ADDON_LOADED = function(addonName)
 		f:SetWidth(120);
 		f:SetHeight(22);
 		f:RegisterForClicks("AnyUp");
-		f:SetScript("OnClick", function() 
-			-- Open the Settings Menu
-			if InterfaceOptionsFrame:IsVisible() then
-				InterfaceOptionsFrame_Show();
-			else
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-				InterfaceOptionsFrame_OpenToCategory(app:GetName());
-			end
+		f:SetScript("OnClick", function()
+			app.Settings:Open();
 		end);
 		f:SetATTTooltip("Click this button to toggle the settings menu.\n\nThe results displayed in this window will be filtered by your settings.");
 		frame.settingsButton = f;
@@ -6937,8 +6920,8 @@ app.events.ADDON_LOADED = function(addonName)
 		end
 		local ProcessAuctionData = function()
 			-- If we have no auction data, then simply return now.
-			if not AllTheThingsAuctionData then return false; end
-			local count = #AllTheThingsAuctionData;
+			if not ATTClassicAuctionData then return false; end
+			local count = #ATTClassicAuctionData;
 			if count < 1 then return false; end
 			
 			-- Wait a second!
@@ -6946,7 +6929,7 @@ app.events.ADDON_LOADED = function(addonName)
 			
 			-- Search the ATT Database for information related to the auction links (items, species, etc)
 			local searchResultsByKey, searchResult, searchResults, key, keys, value, data = {};
-			for i,itemLink in ipairs(AllTheThingsAuctionData) do
+			for i,itemLink in ipairs(ATTClassicAuctionData) do
 				searchResults = SearchForLink(itemLink);
 				if searchResults and #searchResults > 0 then
 					searchResult = searchResults[1];
@@ -7060,7 +7043,7 @@ app.events.ADDON_LOADED = function(addonName)
 		end
 		local ProcessAuctions = function()
 			-- Gather the Auctions
-			AllTheThingsAuctionData = {};
+			ATTClassicAuctionData = {};
 			app.CurrentAuctionIndex = 1;
 			if app.CurrentAuctionIndex <= app.CurrentAuctionTotal then
 				local iter = 0;
@@ -7068,13 +7051,13 @@ app.events.ADDON_LOADED = function(addonName)
 					-- Process the Auction
 					local link = _GetAuctionItemLink("list", app.CurrentAuctionIndex);
 					if link then
-						table.insert(AllTheThingsAuctionData, link);
+						table.insert(ATTClassicAuctionData, link);
 					else
 						local name, texture, count, quality, canUse, level, levelColHeader, minBid,
 							minIncrement, buyoutPrice, bidAmount, highBidder, bidderFullName, owner,
 							ownerFullName, saleStatus, itemID, hasAllInfo = _GetAuctionItemInfo("list", app.CurrentAuctionIndex);
 						if itemID and itemID > 0 and saleStatus == 0 then
-							table.insert(AllTheThingsAuctionData, "item:" .. itemID);
+							table.insert(ATTClassicAuctionData, "item:" .. itemID);
 						end
 					end
 					

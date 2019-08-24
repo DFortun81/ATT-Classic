@@ -1,5 +1,5 @@
-AllTheThings = {};
-_ = AllTheThings;
+ATTC = {};
+_ = ATTC;
 
 -- Used by the Harvester
 function Harvest(things)
