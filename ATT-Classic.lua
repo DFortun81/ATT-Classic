@@ -1827,7 +1827,11 @@ local function SendGroupMessage(msg)
 	end
 end
 local function SendResponseMessage(msg, player)
-	C_ChatInfo.SendAddonMessage("ATT", msg, "WHISPER", player);
+	if UnitInRaid(player) or UnitInParty(player) then
+		SendGroupMessage("to\t" .. player .. "\t" .. msg);
+	else
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
+	end
 end
 local function SendSocialMessage(msg)
 	SendGroupMessage(msg);
@@ -6545,6 +6549,14 @@ SlashCmdList["ATTCRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
+SLASH_AllTheThingsU1 = "/attu";
+SLASH_AllTheThingsU2 = "/attyou";
+SLASH_AllTheThingsU3 = "/attwho";
+SlashCmdList["AllTheThingsU"] = function(cmd)
+	local name,server = UnitName("target");
+	if name then SendResponseMessage("?", server and (name .. "-" .. server) or name); end
+end
+
 -- Register Events required at the start
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
@@ -7212,6 +7224,39 @@ end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATTC" then
 		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+		local cmd, a, b, c, d, e, f = strsplit("\t", text);
+		if cmd then
+			--print(cmd, a, b, c, d, e, f);
+			if cmd == "?" then		-- Query Request
+				local response;
+				if a then
+					b = tonumber(b);
+					if a == "q" then
+						response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+					end
+				else
+					local data = app:GetWindow("Prime").data;
+					response = "ATTC\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. app.Settings:GetShortModeString();
+				end
+				if response then SendResponseMessage("!\t" .. response, sender); end
+			elseif cmd == "!" then	-- Query Response
+				if a == "ATTC" then
+					print(sender .. ": " .. GetProgressColorText(tonumber(b), tonumber(c)) .. " " .. string.sub(d, 1, 12));
+				else
+					b = tonumber(b);
+					c = tonumber(c);
+					if a == "q" then
+						print(sender .. ": ", b, GetCompletionText(c));
+					end
+				end
+			elseif cmd == "to" then	-- To Command
+				local myName = UnitName("player");
+				local name,server = strsplit("-", a);
+				if myName == name and (not server or GetRealmName() == server) then
+					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
+				end
+			end
+		end
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
