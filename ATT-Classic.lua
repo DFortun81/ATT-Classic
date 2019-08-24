@@ -1817,6 +1817,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
+local function SendGroupMessage(msg)
+	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "INSTANCE_CHAT")
+	elseif IsInRaid() then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "RAID")
+	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "PARTY")
+	end
+end
+local function SendSocialMessage(msg)
+	SendGroupMessage(msg);
+	if IsInGuild() then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "GUILD");
+	else
+		app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
+	end
+end
 
 -- Lua Constructor Lib
 local fieldCache = {};
@@ -5215,6 +5232,13 @@ function app:RefreshData(lazy, got, manual)
 		else
 			app:UpdateWindows(nil, got);
 		end
+		-- Send a message to your party members.
+		local data = app:GetWindow("Prime").data;
+		local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
+		if app.lastMsg ~= msg then
+			SendSocialMessage(msg);
+			app.lastMsg = msg;
+		end
 		wipe(searchCache);
 		collectgarbage();
 	end);
@@ -6521,6 +6545,7 @@ end
 -- Register Events required at the start
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
+app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
@@ -6691,6 +6716,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);
 	app.Settings:Initialize();
+	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
@@ -7178,6 +7204,11 @@ app.events.ADDON_LOADED = function(addonName)
 				frame:Hide();
 			end
 		end);
+	end
+end
+app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+	if prefix == "ATTC" then
+		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
