@@ -10,6 +10,7 @@ L.SAVED_TO_DJ_INSTANCES["Donjon de la Tempête"] = "L’Œil";
 L.SAVED_TO_DJ_INSTANCES["Glissecroc : caverne du sanctuaire du Serpent"] = "Caverne du sanctuaire du Serpent";
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Profondeurs de Brassenoire"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Les Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gouffre de Ragefeu"] = 213;	-- RFC

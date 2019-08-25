@@ -6,6 +6,7 @@ local L = app.L;
 -- TODO
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Cavernas de Brazanegra"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Minas de la Muerte"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Las Minas de la Muerte"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Sima Ígnea"] = 213;	-- RFC

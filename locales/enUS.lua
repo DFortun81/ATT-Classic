@@ -2394,6 +2394,7 @@ app.L = {
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
+		["Blackfathom Deeps"] = 221,
 		["Blackwing Lair"] = 287,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,

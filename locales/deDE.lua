@@ -15,6 +15,7 @@ L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlo
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Tiefschwarze Grotte"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
