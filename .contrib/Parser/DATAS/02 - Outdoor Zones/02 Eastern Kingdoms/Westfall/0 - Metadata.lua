@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(1415, {	-- Eastern Kingdoms
-		m(52, {	-- Westfall
+		m(1436, {	-- Westfall
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

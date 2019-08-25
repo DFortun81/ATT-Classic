@@ -62,8 +62,8 @@ _.Instances = {
 					["qg"] = 6171,	-- Duthorian Rall
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1 },	-- Human
-					["coord"] = { 39.8, 30.8  },	-- Stormwind City [TODO: Add MapID]
-					-- ["maps"] = { },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
+					["maps"] = { 1453 },	-- Stormwind City
 					["lvl"] = 20,
 				}),
 				q(1649, {	-- The Tome of Valor [Pt 1]
@@ -74,8 +74,8 @@ _.Instances = {
 					},
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8  },	-- Stormwind City [TODO: Add MapID]
-					-- ["maps"] = { },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
+					["maps"] = { 1453 },	-- Stormwind City
 					["itemID"] = 6776,	-- Tome of Valor
 					["lvl"] = 20,
 				}),
@@ -84,8 +84,8 @@ _.Instances = {
 					["sourceQuest"] = 1649,	-- The Tome of Valor [Pt 1]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8  },	-- Stormwind City [TODO: Add MapID]
-					-- ["maps"] = { },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
+					["maps"] = { 1453 },	-- Stormwind City
 					["lvl"] = 20,
 				}),
 				q(1651, {	-- The Tome of Valor [Pt 3]
@@ -93,8 +93,8 @@ _.Instances = {
 					["sourceQuest"] = 1650,	-- The Tome of Valor [Pt 2]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 42.4, 88.4  },	-- Westfall [TODO: Add MapID]
-					-- ["maps"] = { },	-- Westfall
+					["coord"] = { 42.4, 88.4, 1436  },	-- Westfall
+					["maps"] = { 1436 },	-- Westfall
 					["lvl"] = 20,
 				}),
 				q(1652, {	-- The Tome of Valor [Pt 4]
@@ -102,8 +102,8 @@ _.Instances = {
 					["sourceQuest"] = 1651,	-- The Tome of Valor [Pt 3]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8  },	-- Stormwind City [TODO: Add MapID]
-					-- ["maps"] = { },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
+					["maps"] = { 1453 },	-- Stormwind City
 					["lvl"] = 20,
 					["g"] = {
 						spell(5502),	-- Sense Undead
@@ -115,8 +115,8 @@ _.Instances = {
 					["sourceQuest"] = 1652,	-- The Tome of Valor [Pt 2]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8  },	-- Stormwind City [TODO: Add MapID]
-					-- ["maps"] = { },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
+					["maps"] = { 1453 },	-- Stormwind City
 					["lvl"] = 20,
 				}),
 				q(1654, {	-- The Test of Righteousness [Pt 2]

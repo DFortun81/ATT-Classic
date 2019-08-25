@@ -7,6 +7,7 @@ _.Zones =
 		m(90, {	-- Undercity
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
+			["isRaid"] = true,
 		}),
 	}),
 };
