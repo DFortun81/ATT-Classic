@@ -3,11 +3,6 @@ if GetLocale() ~= "deDE" then return; end
 local app = select(2, ...);
 local L = app.L;
 
-L.CUSTOM_DIFFICULTIES[-1] = "Schlachtzugbrowser (5.4)";
-L.CUSTOM_DIFFICULTIES[-2] = "Flexible (5.4)";
-L.CUSTOM_DIFFICULTIES[-3] = "Normal (5.4)";
-L.CUSTOM_DIFFICULTIES[-4] = "Heroisch (5.4)";
-
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Violette Festung"] = "Die Violette Festung";
 L.SAVED_TO_DJ_INSTANCES["Geschmolzener Kern"] = "Der Geschmolzene Kern";
@@ -20,6 +15,8 @@ L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlo
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC

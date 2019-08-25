@@ -181,9 +181,11 @@ _.Instances = {
 			n(3654, { 	-- Mutanus the Devourer
 				{
 					["itemID"] = 10441,	-- Glowing Shard
-					["questID"] = 6981,	-- The Glowing Shard
-					["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
-					["coord"] = { 63.0, 37.2, BARRENS },
+					["groups"] = {
+						["questID"] = 6981,	-- The Glowing Shard
+						["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
+						["coord"] = { 63.0, 37.2, BARRENS },
+					},
 				},
 				i(6461), 	-- Slime-Encrusted Pads
 				i(6627), 	-- Mutant Breastplate

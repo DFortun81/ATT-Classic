@@ -6,6 +6,7 @@ local L = app.L;
 -- TODO
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Minas Mortas"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Cavernas Ígneas"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Bastilha da Presa Negra"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC

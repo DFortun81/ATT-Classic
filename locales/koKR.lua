@@ -6,6 +6,7 @@ local L = app.L;
 -- TODO
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["죽음의 폐광"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["성난불길 협곡"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["그림자송곳니 성채"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["통곡의 동굴"] = 279;	-- WC

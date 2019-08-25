@@ -432,6 +432,7 @@ _.Zones =
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6569,	-- Gnoarn
+					["isBreadcrumb"] = true,
 				}),
 				q(637, {	-- Sully Balloo's Letter
 					["lvl"] = 25,

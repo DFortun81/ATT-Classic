@@ -6,6 +6,8 @@ local L = app.L;
 -- TODO
 
 -- Dungeons
+L.ZONE_TEXT_TO_MAP_ID["Minas de la Muerte"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Las Minas de la Muerte"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Sima Ígnea"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Castillo de Colmillo Oscuro"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Cuevas de los Lamentos"] = 279;	-- WC
