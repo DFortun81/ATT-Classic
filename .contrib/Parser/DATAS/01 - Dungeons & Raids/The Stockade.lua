@@ -3,11 +3,10 @@
 -----------------------------------------------------
 
 _.Instances = {
-	{	-- The Stockade
-		["lvl"] = 15,
-		["mapID"] = 225,
-		["coord"] = { 39.77, 54.21, 1453 },	-- The Stockade, Stormwind City
+	map(225, {	-- The Stockade
 		["description"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
+		["coord"] = { 39.77, 54.21, 1453 },	-- The Stockade, Stormwind City
+		["lvl"] = 15,
 		["g"] = {
 			n(-17, {	-- Quests
 				q(377, {	-- Crime and Punishment
@@ -101,5 +100,5 @@ _.Instances = {
 				i(4306),	-- Silk Cloth
 			}),
 		},
-	},
+	}),
 };
