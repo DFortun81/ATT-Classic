@@ -1826,19 +1826,18 @@ local function SendGroupMessage(msg)
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "PARTY")
 	end
 end
+local function SendGuildMessage(msg)
+	if IsInGuild() then
+		C_ChatInfo.SendAddonMessage("ATTC", msg, "GUILD");
+	else
+		app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
+	end
+end
 local function SendResponseMessage(msg, player)
 	if UnitInRaid(player) or UnitInParty(player) then
 		SendGroupMessage("to\t" .. player .. "\t" .. msg);
 	else
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
-	end
-end
-local function SendSocialMessage(msg)
-	SendGroupMessage(msg);
-	if IsInGuild() then
-		C_ChatInfo.SendAddonMessage("ATTC", msg, "GUILD");
-	else
-		app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
 	end
 end
 
@@ -5246,7 +5245,8 @@ function app:RefreshData(lazy, got, manual)
 		local data = app:GetWindow("Prime").data;
 		local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0);
 		if app.lastMsg ~= msg then
-			SendSocialMessage(msg);
+			SendGroupMessage(msg);
+			SendGuildMessage(msg);
 			app.lastMsg = msg;
 		end
 		wipe(searchCache);
@@ -6552,10 +6552,33 @@ SlashCmdList["ATTCRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
-SLASH_AllTheThingsU1 = "/attu";
-SLASH_AllTheThingsU2 = "/attyou";
-SLASH_AllTheThingsU3 = "/attwho";
-SlashCmdList["AllTheThingsU"] = function(cmd)
+SLASH_ATTUNED1 = "/attuned";
+SlashCmdList["ATTUNED"] = function(cmd)
+	if IsInRaid() or (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) or IsInGroup(LE_PARTY_CATEGORY_HOME) then
+		SlashCmdList["ATTUNEDRAID"]();
+	else
+		SlashCmdList["ATTUNEDGUILD"]();
+	end
+end
+
+SLASH_ATTUNEDGUILD1 = "/attunedguild";
+SLASH_ATTUNEDGUILD2 = "/attunedg";
+SlashCmdList["ATTUNEDGUILD"] = function()
+	print("MC - ONY - PLAYER");
+	SendGuildMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502));
+end
+
+SLASH_ATTUNEDRAID1 = "/attunedraid";
+SLASH_ATTUNEDRAID2 = "/attunedr";
+SlashCmdList["ATTUNEDRAID"] = function()
+	print("MC - ONY - PLAYER");
+	SendGroupMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502));
+end
+
+SLASH_ATTCU1 = "/attu";
+SLASH_ATTCU2 = "/attyou";
+SLASH_ATTCU3 = "/attwho";
+SlashCmdList["ATTCU"] = function(cmd)
 	local name,server = UnitName("target");
 	if name then SendResponseMessage("?", server and (name .. "-" .. server) or name); end
 end
@@ -7227,15 +7250,18 @@ end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 	if prefix == "ATTC" then
 		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
-		local cmd, a, b, c, d, e, f = strsplit("\t", text);
+		local args = { strsplit("\t", text) };
+		local cmd, a = args[1], args[2];
 		if cmd then
-			--print(cmd, a, b, c, d, e, f);
 			if cmd == "?" then		-- Query Request
 				local response;
 				if a then
-					b = tonumber(b);
 					if a == "q" then
-						response = "q\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+						response = "q";
+						for i=3,#args,1 do
+							local b = tonumber(args[i]);
+							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+						end
 					end
 				else
 					local data = app:GetWindow("Prime").data;
@@ -7244,12 +7270,16 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 				if response then SendResponseMessage("!\t" .. response, sender); end
 			elseif cmd == "!" then	-- Query Response
 				if a == "ATTC" then
-					print(sender .. ": " .. GetProgressColorText(tonumber(b), tonumber(c)) .. " " .. string.sub(d, 1, 12));
+					print(sender .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 				else
-					b = tonumber(b);
-					c = tonumber(c);
 					if a == "q" then
-						print(sender .. ": ", b, GetCompletionText(c));
+						local response = " ";
+						for i=3,#args,2 do
+							local b = tonumber(args[i]);
+							local c = tonumber(args[i + 1]);
+							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
+						end
+						print(response .. sender);
 					end
 				end
 			elseif cmd == "to" then	-- To Command

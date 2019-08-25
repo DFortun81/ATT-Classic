@@ -217,13 +217,22 @@ settings.GetModeString = function(self)
 		elseif thingCount == totalThingCount then
 			mode = "Insane " .. mode;
 		else
-			mode = "Best in Slot " .. mode;
+			mode = "Normal " .. mode;
 		end
 	end
 	if self:Get("Filter:ByLevel") then
 		mode = "Level " .. app.Level .. " " .. mode;
 	end
 	return mode;
+end
+settings.GetShortModeString = function(self)
+	if self:Get("DebugMode") then
+		return "D";
+	elseif self:Get("AccountMode") then
+		return "A";
+	else
+		return "N";
+	end
 end
 settings.GetPersonal = function(self, setting)
 	return ATTClassicSettingsPerCharacter[setting];
