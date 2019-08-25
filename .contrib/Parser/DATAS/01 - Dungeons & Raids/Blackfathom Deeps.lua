@@ -23,7 +23,7 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 6565,	-- Amongst the Ruins
+					["questID"] = 6921,	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
 					["maps"] = { ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
@@ -87,7 +87,7 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 6565,	-- The Essence of Aku'Mai
+					["questID"] = 6563,	-- The Essence of Aku'Mai
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
@@ -462,7 +462,7 @@ _.Instances = {
 			}),
 			o(177964, {	-- Fathom Stone
 				["description"] = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
-				["sourceQuest"] = 6565,	-- Amongst the Ruins
+				["sourceQuest"] = 6921,	-- Amongst the Ruins
 				["races"] = HORDE_ONLY,
 				["groups"] = {
 					i(16762),	-- Fathom Core
