@@ -1,84 +1,22 @@
 AllTheThings = {};
 _ = AllTheThings;
 
--- Used by the Harvester
-function Harvest(things)
-	if not _.ItemDB then _.ItemDB = {}; end
-	local thing;
-	for i,j in pairs(things) do
-		thing = _.ItemDB[i];
-		if not thing then
-			thing = {};
-			thing.mods = {};
-			thing.bonuses = {};
-			_.ItemDB[i] = thing;
-		else
-			if not thing.mods then thing.mods = {} end
-			if not thing.bonuses then thing.bonuses = {} end
-		end
-		if j.mods then
-			for l,modID in ipairs(j.mods) do
-				thing.mods[l] = modID;
-			end
-			for l,modID in pairs(j.mods) do
-				thing.mods[l] = modID;
-			end
-		end
-		if j.bonuses then
-			for l,bonusID in pairs(j.bonuses) do
-				thing.bonuses[l] = bonusID;
-			end
-		end
-	end
-end
-
 -- Static values for minReputation/maxReputation properties. 
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
 -- Helper Tables
-local DifficultyDB = {
-	[1] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[2] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
-	[3] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[4] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[5] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[6] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[7] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
-	[14] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
-	[15] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
-	[16] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
-	[17] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
-	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event
-	[23] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[24] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22, u = 42 },
-};
 ALLIANCE_ONLY = {
 	1,	-- Human
 	3,	-- Dwarf
 	4,	-- Night Elf
 	7,	-- Gnome
-	11,	-- Draenei
-	22,	-- Worgen
-	25,	-- Pandaren [Alliance]
-	29,	-- Void Elf
-	30,	-- Lightforged
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
 };
 HORDE_ONLY = {
 	2,	-- Orc
 	5,	-- Undead
 	6,	-- Tauren
 	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	31,	-- Zandalari
-	36,	-- Mag'har
 };
 ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Human
@@ -89,21 +27,6 @@ ALL_RACES = {	-- NOTE: Use this with the exclude function.
 	6,	-- Tauren
 	7,	-- Gnome
 	8,	-- Troll
-	9,	-- Goblin
-	10,	-- Blood Elf
-	11,	-- Draenei
-	22,	-- Worgen
-	24,	-- Pandaren [Neutral]
-	25,	-- Pandaren [Alliance]
-	26,	-- Pandaren [Horde]
-	27,	-- Nightborne
-	28,	-- Highmountain
-	29,	-- Void Elf
-	30,	-- Lightforged
-	31,	-- Zandalari
-	32,	-- Kul Tiran
-	34,	-- Dark Iron
-	36,	-- Mag'har
 };
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	1,	-- Warrior
@@ -111,13 +34,10 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	3,	-- Hunter
 	4,	-- Rogue
 	5,	-- Priest
-	6,	-- Death Knight
 	7,	-- Shaman
 	8,	-- Mage
 	9,	-- Warlock
-	10,	-- Monk
 	11,	-- Druid
-	12,	-- Demon Hunter
 };
 ItemClassInfo = {
 	{
@@ -334,39 +254,6 @@ ItemClassInfo = {
 		["class"] = "Consumable",
 	},
 };
-WOD_CRAFTED_ITEM = function(id)
-	return
-	{
-		["itemID"] = id,
-		["bonusID"] = 525,
-		["groups"] = {
-			{
-				["itemID"] = id,
-				["bonusID"] = 558,
-				["groups"] = {
-					{
-						["itemID"] = id,
-						["bonusID"] = 559,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 594,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 619,
-					},
-					{
-						["itemID"] = id,
-						["bonusID"] = 620,
-					}
-				}
-			}
-		}
-	};
-end
-TIMEWALKING_DUNGEON_CREATURE_IDS = {};
-TIMEWALKING_DUNGEON_MAP_IDS = {};
 POST_PROCESSING_FUNCTIONS = {};
 
 -- Construct a commonly formatted object.
@@ -482,30 +369,9 @@ isarray = function(t)
 end
 
 -- SHORTCUTS for Object Class Types
-artifact = function(id, t)								-- Create an ARTIFACT Object
-	return struct("artifactID", id, t);
-end
-ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
-	if t or type(altID) == "number" then
-		t = struct("allianceAchievementID", id, t or {});
-		t["hordeAchievementID"] = altID;
-		return t;
-	else
-		return struct("achievementID", id, altID);
-	end
-end
-battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
-	return struct("speciesID", id, t);
-end
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
-p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
-pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
-battlepetability = function(id, t)						-- Create a BATTLE PET ABILITY Object
-	return struct("petAbilityID", id, t);
-end
-pa = battlepetability;									-- Create a BATTLE PET ABILITY Object (alternative shortcut)
 cl = function(id, t)									-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
@@ -515,15 +381,6 @@ end
 cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
-end
-d = function(id, t)										-- Create a DIFFICULTY Object
-	t = struct("difficultyID", id, t);
-	local db = DifficultyDB[id];
-	if db then t.modID = db.modID; end
-	return t;
-end
-e = function(id, t)										-- Create an ENCOUNTER Object
-	return struct("encounterID", id, t);
 end
 faction = function(id, t)								-- Create an FACTION Object
 	return struct("factionID", id, t);
@@ -535,88 +392,14 @@ fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
 filter = function(id, t)								-- Create an FILTER Object
 	return struct("f", id, t);
 end
-follower = function(id, t)								-- Create an FOLLOWER Object
-	return struct("followerID", id, t);
-end
-garrisonBuilding = function(id, t)						-- Create an GARRISON BUILDING Object
-	return struct("buildingID", id, t);
-end
-gb = function(id, t)									-- Create an GARRISON BUILDING Object (Alternative)
-	return struct("buildingID", id, t);
-end
-garrisonMission = function(id, t)						-- Create an GARRISON MISSION Object
-	return struct("missionID", id, t);
-end
-gm = function(id, t)									-- Create an GARRISON MISSION Object (Alternative)
-	return struct("missionID", id, t);
-end
-garrisonTalent = function(id, t)						-- Create an GARRISON TALENT Object
-	return struct("talentID", id, t);
-end
-gt = function(id, t)									-- Create an GARRISON TALENT Object (Alternative)
-	return struct("talentID", id, t);
-end
-gs = function(id, t)									-- Create a GEAR SET Object (IE: "Vestments of Prophecy")
-	return struct("setID", id, t);
-end
-gsh = function(id, t)									-- Create a GEAR SET HEADER Object (IE: "Season 1")
-	return struct("setHeaderID", id, t);
-end
-gssh = function(id, t)									-- Create a GEAR SET SUB HEADER Object (IE: "Gladiator")
-	return struct("setSubHeaderID", id, t);
-end
-heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should only use this if not an appearance)
-	return struct("itemID", id, t);
-end
 holiday = function(id, t)								-- Create an HOLIDAY Object
 	return struct("holidayID", id, t);
 end
 ho = holiday;											-- Create an HOLIDAY Object (alternative shortcut)
-inst = function(id, t)									-- Create an INSTANCE Object
-	t = struct("instanceID", id, t);
-	
-	-- Look for the Timewalking difficulty
-	local groups = t.groups or t.g;
-	if groups then
-		for i,data in ipairs(groups) do
-			if data.difficultyID and data.difficultyID == 24 then
-				if t.mapID then
-					table.insert(TIMEWALKING_DUNGEON_MAP_IDS, t.mapID);
-				end
-				if t.maps then
-					for j,mapID in ipairs(t.maps) do
-						table.insert(TIMEWALKING_DUNGEON_MAP_IDS, mapID);
-					end
-				end
-				if data.g then
-					for j,subgroup in ipairs(data.g) do
-						if subgroup.creatureID and subgroup.creatureID > 0 then
-							table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, subgroup.creatureID);
-						end
-						if subgroup.crs then
-							for j,creatureID in ipairs(subgroup.crs) do
-								table.insert(TIMEWALKING_DUNGEON_CREATURE_IDS, creatureID);
-							end
-						end
-					end
-				end
-			end
-		end
-	end
-	return t;
-end
 item = function(id, t)									-- Create an ITEM Object
 	return struct("itemID", id, t);
 end
 i = item;												-- Create an ITEM Object (alternative shortcut)
-ig = function(id, t)									-- Create an ITEM Object that ignores bonus IDs.
-	t = struct("itemID", id, t);
-	t.ignoreBonus = true;
-	return t;
-end
-ill = function(id, t)									-- Create an ILLUSION Object
-	return struct("illusionID", id, t);
-end
 map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
@@ -651,9 +434,6 @@ spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
-tier = function(id, t)									-- Create a TIER Object
-	return struct("tierID", id, t);
-end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end
@@ -662,119 +442,4 @@ v = function(id, t)										-- Create a VIGNETTE Object
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
-a = function(t)	-- Flag as Alliance Only
-	if t.races then
-		for key,value in pairs(t) do
-			if key == "g" then
-				-- Do nothing.
-			elseif type(value) == "table" then
-				-- Show the table.
-				local statement = "";
-				local count = 0;
-				for j,value2 in ipairs(value) do
-					if count > 0 then statement = statement .. ", "; end
-					statement = statement .. tostring(valu2);
-					count = count + 1;
-				end
-				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
-			else
-				print("\t" .. tostring(key) .. ": " .. tostring(value));
-			end
-		end
-		error("Attempted to assign RACES as ALLIANCE_ONLY on a thing already marked with races.");
-	else
-		t.races = ALLIANCE_ONLY;
-	end
-	return t;
-end			
-cr = function(id, t)											-- Add a Creature List to an object.
-	if type(id) == "number" then
-		t.cr = id;
-	else
-		t.crs = id;
-	end
-	return t;
-end
-crs = cr;
-h = function(t) -- Flag as Horde Only
-	if t.races then
-		for key,value in pairs(t) do
-			if key == "g" then
-				-- Do nothing.
-			elseif type(value) == "table" then
-				-- Show the table.
-				local statement = "";
-				local count = 0;
-				for j,value2 in ipairs(value) do
-					if count > 0 then statement = statement .. ", "; end
-					statement = statement .. tostring(value2);
-					count = count + 1;
-				end
-				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
-			else
-				print("\t" .. tostring(key) .. ": " .. tostring(value));
-			end
-		end
-		error("Attempted to assign RACES as HORDE_ONLY on a thing already marked with races.");
-	else
-		t.races = HORDE_ONLY;
-	end
-	return t;
-end	
-modID = function(modID, t) t.modID = modID; return t; end		-- Add a Mod ID to an object.
-qa = function(id, t) return a(q(id,t)); end						-- Alliance Only Quest Object
-qh = function(id, t) return h(q(id,t)); end						-- Horde Only Quest Object
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
-
-
-
--- BEGIN UNFINISHED SECTION:
-crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
-  if not t then t = {};
-    elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
-		else
-			t = { ["groups"] = t };
-		end
-	end
-    t.criteriaID = criteriaID;
-  return t;
-end
-sz = function(achievementID, criteriaID, t)  -- Create a Subzone Object (localized automatically)
-  if not t then t = {};
-    elseif not t.groups then
-		if not isarray(t) then
-			-- DO NOT do that lol
-		else
-			t = { ["groups"] = t };
-		end
-	end
-    t.achievementID = achievementID;
-    t.criteriaID = criteriaID;
-  return t;
-end
-model = function(displayID, t)
-	t.displayID = displayID;
-	return t;
-end
-na = function(id, t) return a(n(id,t)); end					-- Alliance Only NPC Object
-nh = function(id, t) return h(n(id,t)); end					-- Horde Only NPC Object
-
--- Specific Quest Type Shortcuts [Blame Daktar for long list! :) ]
-qart = function(t)						-- Gives a quest the Artifact Description
-	t.description = "This is an artifact quest.";
-	t.icon = "Interface\\Minimap\\TrapInactive_HammerGold";
-	return t;
-end
-ql = function(t)							-- Gives a quest the Legendary Description
-	t.description = "This quest is part of a legendary quest line.";
-	t.icon = "Interface\\Icons\\70_inscription_vantus_rune_odyn";
-	return t;
-end
-qpvp = function(t)						-- Gives a quest the PvP Description
-	t.description = "This quest is a PvP quest.";
-	t.icon = "Interface\\PVPFrame\\Icons\\prestige-icon-3";
-	return t;
-end
--- End Specific Quest Types
