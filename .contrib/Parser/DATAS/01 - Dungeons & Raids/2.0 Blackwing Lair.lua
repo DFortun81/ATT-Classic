@@ -4,9 +4,53 @@
 
 _.Instances = {
 	map(287, {	-- Blackwing Lair
+		["description"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
+		--["coord"] = { , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
+		["sourceQuest"] = 7761,	-- Blackhand's Command
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
+			n(-17, {	-- Quests
+				{
+					["questID"] = 7761,	-- Blackhand's Command
+					["qg"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
+					["coords"] = {
+						--{ , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
+						{ 34.9, 27.9, BURNING_STEPPES },	-- TODO: Burning Steppes MapID and location
+					},
+					["maps"] = {
+						BLACKROCK_MOUNTAIN,	-- TODO: Blackrock Mountain MapID and location
+						BURNING_STEPPES,	-- TODO: Burning Steppes MapID and location
+					},
+				},
+				{
+					["allianceQuestID"] = 7781,	-- The Lord of Blackrock [Alliance]
+					["hordeQuestID"] = 7783,	-- The Lord of Blackrock [Horde]
+					["description"] = "This quest is started by looting the Head of Nefarian.",
+				},
+				{
+					["questID"] = 7782,	-- The Lord of Blackrock
+					["sourceQuest"] = 7781,	-- The Lord of Blackrock
+					["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(19366), 	-- Master Dragonslayer's Orb
+						i(19383),	-- Master Dragonslayer's Medallion
+						i(19384),	-- Master Dragonslayer's Ring
+					},
+				},
+				{
+					["questID"] = 7784,	-- The Lord of Blackrock
+					["sourceQuest"] = 7783,	-- The Lord of Blackrock
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(19383),	-- Master Dragonslayer's Medallion
+						i(19366),	-- Master Dragonslayer's Orb
+						i(19384),	-- Master Dragonslayer's Ring
+					},
+				},
+			}),
 			n(0, {	-- Zone Drop
 				i(19434, {	-- Band of Dark Dominion
 					["crs"] = {
@@ -112,6 +156,7 @@ _.Instances = {
 				i(19340),	-- Rune of Metamorphosis
 			}),
 			n(12017, {	-- Broodlord Lashlayer
+				i(20383),	-- Head of the Broodlord Lashlayer
 				i(19351),	-- Maladath, Runed Blade of the Black Flight
 				i(19350),	-- Heartstriker
 				i(19373),	-- Black Brood Pauldrons
@@ -228,36 +273,22 @@ _.Instances = {
 				i(19391),	-- Shimmering Geta
 			}),
 			n(11583, {	-- Nefarian
-				i(19003, {	-- Head of Nefarian
-					q(7781, { 	-- The Lord of Blackrock
-						["races"] = ALLIANCE_ONLY,
-					}),
-					q(7782, {	-- The Lord of Blackrock
-						["qg"] = 1750,	-- Grand Admiral Jes-Tereth
-						["races"] = ALLIANCE_ONLY,
-						["sourceQuest"] = 7781,	-- The Lord of Blackrock
-						["g"] = {
-							i(19366), 	-- Master Dragonslayer's Orb
-							i(19383),	-- Master Dragonslayer's Medallion
-							i(19384),	-- Master Dragonslayer's Ring
-						},
-					}),
-				}),
-				i(19002, {	-- Head of Nefarian
-					q(7783, { 	-- The Lord of Blackrock
-						["races"] = HORDE_ONLY,
-					}),
-					q(7784, {	-- The Lord of Blackrock
-						["qg"] = 4949,	-- Thrall <Warchief>
-						["sourceQuest"] = 7783,	-- The Lord of Blackrock (Head of Nefarian)
-						["races"] = HORDE_ONLY,
-						["g"] = {
-							i(19383),	-- Master Dragonslayer's Medallion
-							i(19366),	-- Master Dragonslayer's Orb
-							i(19384),	-- Master Dragonslayer's Ring
-						},
-					}),
-				}),
+				{
+					["itemID"] = 19003,	-- Head of Nefarian [Alliance]
+					["questID"] = 7781,	-- The Lord of Blackrock [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						7783,	-- The Lord of Blackrock [Horde]
+					},
+				},
+				{
+					["itemID"] = 19002,	-- Head of Nefarian
+					["questID"] = 7783,	-- The Lord of Blackrock [Horde]
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						7781,	-- The Lord of Blackrock [Horde]
+					},
+				},
 				i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 				i(19356),	-- Staff of the Shadow Flame
 				i(19363),	-- Crul'shorukh, Edge of Chaos

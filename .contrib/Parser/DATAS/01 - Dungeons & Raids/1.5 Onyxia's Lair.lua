@@ -4,6 +4,10 @@
 
 _.Instances = {
 	map(248, { 	-- Onyxia's Lair
+		["sourceQuests"] = {
+			6502,	-- Alliance Attunement Quest
+			6602,	-- Horde Attunement Quest
+		},
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
