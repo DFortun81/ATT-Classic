@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(48, {	-- Loch Modan
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(LOCH_MODAN, {	-- Loch Modan
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

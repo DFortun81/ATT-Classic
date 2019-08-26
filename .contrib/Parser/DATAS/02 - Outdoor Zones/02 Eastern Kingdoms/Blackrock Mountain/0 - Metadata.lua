@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,

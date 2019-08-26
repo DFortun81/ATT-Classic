@@ -3,17 +3,17 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(225, {	-- The Stockade
+	map(THE_STOCKADE, {	-- The Stockade
 		["description"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
-		["coord"] = { 39.77, 54.21, 1453 },	-- The Stockade, Stormwind City
+		["coord"] = { 39.77, 54.21, STORMWIND_CITY },
 		["lvl"] = 15,
 		["g"] = {
 			n(-17, {	-- Quests
 				q(377, {	-- Crime and Punishment
 					["qg"] = 270,	-- Councilman Millstipe
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.0, 46.8, 1431 },
-					["maps"] = { 1431 },
+					["coord"] = { 72.0, 46.8, DUSKWOOD },
+					["maps"] = { DUSKWOOD },
 					["lvl"] = 26,
 					["g"] = {
 						i(2906),	-- Darkshire Mail Leggings
@@ -23,22 +23,22 @@ _.Instances = {
 				q(387, {	-- Quell The Uprising
 					["qg"] = 1719,	-- Warden Thelwater
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 39.77, 54.21, 1453 },
-					["maps"] = { 1453 },
+					["coord"] = { 39.77, 54.21, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 22,
 				}),
 				q(388, {	-- The Color of Blood
 					["qg"] = 1721,	-- Nikova Raskol
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.2, 55.2, 1453 },
-					["maps"] = { 1453 },
+					["coord"] = { 73.2, 55.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 22,
 				}),
 				q(378, {	-- The Fury Runs Deep
 					["qg"] = 1074,	-- Motley Garmason
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 49.8, 18.2, 1437 },
-					["maps"] = { 1437 },
+					["coord"] = { 49.8, 18.2, WETLANDS },
+					["maps"] = { WETLANDS },
 					["lvl"] = 25,
 					["g"] = {
 						i(1264),	-- Headbasher
@@ -49,15 +49,15 @@ _.Instances = {
 					["qg"] = 1719,	-- Warden Thelwater
 					["sourceQuest"] = 389,	-- Bazil Thredd
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 39.77, 54.21, 1453 },
-					["maps"] = { 1453 },
+					["coord"] = { 39.77, 54.21, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 16,
 				}),
 				q(386, { 	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 26, 43, 1433 },
-					["maps"] = { 1433 },
+					["coord"] = { 26, 43, REDRIDGE_MOUNTAINS },
+					["maps"] = { REDRIDGE_MOUNTAINS },
 					["lvl"] = 22,
 					["g"] = {
 						i(1317),	-- Hardened Root Staff

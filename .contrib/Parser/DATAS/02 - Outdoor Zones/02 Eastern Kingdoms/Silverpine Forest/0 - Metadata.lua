@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(21, {	-- Silverpine Forest
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(SILVERPINE_FOREST, {	-- Silverpine Forest
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

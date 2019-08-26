@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(27, {	-- Dun Morogh
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(DUN_MOROGH, {	-- Dun Morogh
 			n(-17, {	-- Quests
 				q(319, {	-- A Favor for Evershine
 					["lvl"] = 2,

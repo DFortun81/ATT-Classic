@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(17, {	-- Blasted Lands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(BLASTED_LANDS, {	-- Blasted Lands
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

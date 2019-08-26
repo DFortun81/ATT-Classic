@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(23, {	-- Eastern Plaguelands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
 				q(5153, {	-- A Strange Historian
 					["lvl"] = 50,

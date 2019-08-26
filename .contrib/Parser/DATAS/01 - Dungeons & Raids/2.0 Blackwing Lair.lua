@@ -19,8 +19,8 @@ _.Instances = {
 						{ 34.9, 27.9, BURNING_STEPPES },
 					},
 					["maps"] = {
-						BLACKROCK_MOUNTAIN,	-- TODO: Blackrock Mountain MapID and location
-						BURNING_STEPPES,	-- TODO: Burning Steppes MapID and location
+						BLACKROCK_MOUNTAIN,
+						BURNING_STEPPES,
 					},
 				},
 				{

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(87, {	-- Ironforge
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(IRONFORGE, {	-- Ironforge
 			n(-17, {	-- Quests
 				q(5090, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,

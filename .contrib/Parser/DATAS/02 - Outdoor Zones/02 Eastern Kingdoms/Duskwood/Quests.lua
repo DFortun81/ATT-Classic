@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(47, {	-- Duskwood
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(DUSKWOOD, {	-- Duskwood
 			n(-17, {	-- Quests
 				q(231, {	-- A Daughter's Love
 					["lvl"] = 28,

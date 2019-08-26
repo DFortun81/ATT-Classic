@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(51, {	-- Swamp of Sorrows
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
 			n(-17, {	-- Quests
 				q(1428, {	-- Continued Threat
 					["lvl"] = 35,

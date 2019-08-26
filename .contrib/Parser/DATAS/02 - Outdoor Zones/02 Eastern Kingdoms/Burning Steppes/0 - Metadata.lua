@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(36, {	-- Burning Steppes
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(BURNING_STEPPES, {	-- Burning Steppes
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

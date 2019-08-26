@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(14, {	-- Arathi Highlands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(ARATHI_HIGHLANDS, {	-- Arathi Highlands
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

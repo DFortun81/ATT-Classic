@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(90, {	-- Undercity
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(UNDERCITY, {	-- Undercity
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

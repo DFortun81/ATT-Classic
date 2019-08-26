@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(32, {	-- Searing Gorge
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(SEARING_GORGE, {	-- Searing Gorge
 			n(-17, {	-- Quests
 				q(4449, {	-- Caught!
 					["lvl"] = 43,

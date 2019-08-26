@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(15, {	-- Badlands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(BADLANDS, {	-- Badlands
 			n(-17, {	-- Quests
 				q(719, {	-- A Dwarf and His Tools
 					["lvl"] = 35,

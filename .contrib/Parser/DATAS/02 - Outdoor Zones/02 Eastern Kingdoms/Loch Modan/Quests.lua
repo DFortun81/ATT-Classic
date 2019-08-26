@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(48, {	-- Loch Modan
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(LOCH_MODAN, {	-- Loch Modan
 			n(-17, {	-- Quests
 				q(280, {	-- A Dark Threat Looms
 					["lvl"] = 16,

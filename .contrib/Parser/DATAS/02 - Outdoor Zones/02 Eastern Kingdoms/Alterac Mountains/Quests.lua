@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(-2, {	-- Alterac Mountains
 			n(-17, {	-- Quests
 				q(522, {	-- Assassin's Contract

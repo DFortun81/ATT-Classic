@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(47, {	-- Duskwood
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(DUSKWOOD, {	-- Duskwood
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

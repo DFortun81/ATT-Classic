@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(-4, {	-- Stranglethorn Vale
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
 			n(-17, {	-- Quests
 				q(610, {	-- "Pretty Boy" Duncan
 					["lvl"] = 32,

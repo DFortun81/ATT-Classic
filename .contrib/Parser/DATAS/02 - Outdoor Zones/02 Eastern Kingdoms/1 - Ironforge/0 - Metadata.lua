@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(87, {	-- Ironforge
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(IRONFORGE, {	-- Ironforge
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

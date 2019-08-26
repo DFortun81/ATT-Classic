@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(14, {	-- Arathi Highlands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(ARATHI_HIGHLANDS, {	-- Arathi Highlands
 			n(-17, {	-- Quests
 				q(695, {	-- An Apprentice's Enchantment
 					["lvl"] = 30,

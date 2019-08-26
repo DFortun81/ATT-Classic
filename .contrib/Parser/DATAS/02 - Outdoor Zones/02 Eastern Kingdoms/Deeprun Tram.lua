@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(499, {	-- Deeprun Tram
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(DEEPRUN_TRAM, {	-- Deeprun Tram
 			["description"] = "The Deeprun Tram is a long, fully enclosed, underground (and partially underwater) set of double tracks upon which rolls two sets of three wagons, all credited to the gnomes' technical engineering. The service is fast and smooth, and is provided free of charge to travelers between the Alliance-aligned cities of Ironforge and Stormwind City.",					
 			["g"] = {
 				n(-17, {	-- Quests

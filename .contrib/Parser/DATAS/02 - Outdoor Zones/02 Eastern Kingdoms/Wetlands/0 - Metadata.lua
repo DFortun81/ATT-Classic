@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(56, {	-- Wetlands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(WETLANDS, {	-- Wetlands
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

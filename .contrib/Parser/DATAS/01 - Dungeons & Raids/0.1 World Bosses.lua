@@ -79,8 +79,8 @@ _.Instances = {
 				},
 			}),
 			n(14888, {	-- Lethon
-				["coord"] = { 63.3, 27.8, HINTERLANDS },
-				["maps"] = { HINTERLANDS },
+				["coord"] = { 63.3, 27.8, THE_HINTERLANDS },
+				["maps"] = { THE_HINTERLANDS },
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(49, {	-- Redridge Mountains
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
 			n(-17, {	-- Quests
 				q(124, {	-- A Baying of Gnolls
 					["lvl"] = 15,

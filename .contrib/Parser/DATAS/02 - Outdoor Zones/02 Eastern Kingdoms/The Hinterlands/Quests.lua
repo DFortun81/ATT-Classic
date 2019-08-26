@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(26, {	-- The Hinterlands
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(THE_HINTERLANDS, {	-- The Hinterlands
 			n(-17, {	-- Quests
 				q(77, {	-- A Sticky Situation
 					["lvl"] = 42,

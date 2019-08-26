@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(-3, {	-- Blackrock Mountain
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
 			n(-17, {	-- Quests
 				q(9032, {	-- Bodley's Unfortunate Fate
 					["lvl"] = 58,

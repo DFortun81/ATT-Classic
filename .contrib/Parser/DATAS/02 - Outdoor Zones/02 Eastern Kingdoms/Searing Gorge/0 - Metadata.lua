@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(32, {	-- Searing Gorge
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(SEARING_GORGE, {	-- Searing Gorge
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

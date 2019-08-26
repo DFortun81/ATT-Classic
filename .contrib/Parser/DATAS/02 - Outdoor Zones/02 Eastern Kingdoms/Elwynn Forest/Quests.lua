@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(1429, {	-- Elwynn Forest
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(ELWYNN_FOREST, {	-- Elwynn Forest
 			n(-17, {	-- Quests
 				q(5545, {	-- A Bundle of Trouble
 					["lvl"] = 5,

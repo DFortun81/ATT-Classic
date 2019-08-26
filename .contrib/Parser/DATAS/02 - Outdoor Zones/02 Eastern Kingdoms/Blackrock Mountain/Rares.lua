@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(-3, {	-- Blackrock Mountain
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
 			n(-16, {	-- Rares
 				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
 					["coords"] = {

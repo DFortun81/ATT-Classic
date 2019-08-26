@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1415, {	-- Eastern Kingdoms
-		m(27, {	-- Dun Morogh
+	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+		m(DUN_MOROGH, {	-- Dun Morogh
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

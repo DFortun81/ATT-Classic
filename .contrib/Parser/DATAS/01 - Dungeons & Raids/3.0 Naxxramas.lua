@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(162, { 	-- Naxxramas
+	map(NAXXRAMAS, { 	-- Naxxramas
 		["description"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		["isRaid"] = true,
@@ -193,8 +193,8 @@ _.Instances = {
 				{	-- The Dread Citadel - Naxxramas [Honored]
 					["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
-					["maps"] = { EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
 					["altQuests"] = {
 						9122,	-- The Dread Citadel - Naxxramas [Revered]
@@ -211,8 +211,8 @@ _.Instances = {
 				{	-- The Dread Citadel - Naxxramas [Revered]
 					["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
-					["maps"] = { EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 					["altQuests"] = {
 						9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -227,8 +227,8 @@ _.Instances = {
 				{	-- The Dread Citadel - Naxxramas [Exalted]
 					["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
-					["maps"] = { EASTERN_PLAGUELANDS },	-- Eastern Plaguelands [TODO: MapID]
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 					["altQuests"] = {
 						9121,	-- The Dread Citadel - Naxxramas [Honored]

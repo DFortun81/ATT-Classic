@@ -3,17 +3,17 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(291, { 	-- Deadmines
+	map(DEADMINES, { 	-- Deadmines
 		["description"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
-		["coord"] = { 42.2, 82.6, 1436 },	-- The Deadmines, Westfall [TODO: More approximate location]
+		["coord"] = { 42.2, 82.6, WESTFALL },
 		["lvl"] = 10,
 		["groups"] = {
 			n(-17, {	-- Quests
 				{
 					["questID"] = 168,	-- Collecting Memories
 					["qg"] = 656,	-- Wilder Thistlenettle
-					["coord"] = { 65.4, 21.2, 1453 },	-- Dwarven District, Stormwind
-					["maps"] = { 1453 },	-- Stormwind
+					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2036),	-- Dusty Mining Gloves
@@ -23,8 +23,8 @@ _.Instances = {
 				{
 					["questID"] = 167,	-- Oh Brother. . .
 					["qg"] = 656,	-- Wilder Thistlenettle
-					["coord"] = { 65.4, 21.2, 1453 },	-- Dwarven District, Stormwind
-					["maps"] = { 1453 },	-- Stormwind
+					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(1893),	-- Miner's Revenge
@@ -34,8 +34,8 @@ _.Instances = {
 					["questID"] = 214,	-- Red Silk Bandanas
 					["sourceQuest"] = 155,	-- The Defias Brotherhood [Part 1]
 					["qg"] = 820,	-- Scout Riell <The People's Militia>
-					["coord"] = { 56.7, 47.4, 1436 },	-- Sentinel Hill, Westfall
-					["maps"] = { 1436 },	-- Westfall
+					["coord"] = { 56.7, 47.4, WESTFALL },
+					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6094),	-- Piercing Axe
@@ -47,8 +47,8 @@ _.Instances = {
 					["questID"] = 166,	-- The Defias Brotherhood [Part 2]
 					["sourceQuest"] = 155,	-- The Defias Brotherhood [Part 1]
 					["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
-					["coord"] = { 56.3, 47.5, 1436 },	-- Sentinel Hill, Westfall
-					["maps"] = { 1436 },	-- Westfall
+					["coord"] = { 56.3, 47.5, WESTFALL },
+					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6087),		-- Chausses of Westfall
@@ -60,8 +60,8 @@ _.Instances = {
 					["questID"] = 2040,	-- Underground Assault
 					["sourceQuest"] = 2041,	-- Speak with Shoni
 					["qg"] = 6579,	-- Shoni the Shilent
-					["coord"] = { 55.5, 12.5, 1453 },	-- Dwarven District, Stormwind
-					["maps"] = { 1453 },	-- Stormwind
+					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7607),		-- Sable Wand
@@ -216,7 +216,7 @@ _.Instances = {
 					["groups"] = {
 						["questID"] = 373,	-- The Unsent Letter
 						["qg"] = 1646,	-- Baros Alexston <City Architect>
-						["coord"] = { 49.2, 30.0, 1453 },	-- Stormwind
+						["coord"] = { 49.2, 30.0, STORMWIND_CITY },
 					},
 				},
 				i(3637),	-- Head of VanCleef

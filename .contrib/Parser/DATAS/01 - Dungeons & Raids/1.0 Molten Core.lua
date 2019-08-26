@@ -31,7 +31,7 @@ _.Instances = {
 					["lvl"] = 55,
 					["maps"] = {
 						BLACKROCK_DEPTHS,	-- TODO: Blackrock Depths MapID
-						BLACKROCK_MOUNTAIN,	-- TODO: Blackrock Mountain MapID
+						BLACKROCK_MOUNTAIN,
 					},
 				},
 				{
