@@ -13,6 +13,7 @@ L.ZONE_TEXT_TO_MAP_ID["Огненная пропасть"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Курганы Иглошкурых"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Лабиринты Иглошкурых"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Крепость Темного Клыка"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Ульдаман"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
 
 local a = L.NPC_ID_NAMES;

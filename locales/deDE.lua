@@ -23,6 +23,7 @@ L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Die Hügel von Razorfen"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Der Kral von Razorfen"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
 
 local a = L.NPC_ID_NAMES;

@@ -18,6 +18,7 @@ L.ZONE_TEXT_TO_MAP_ID["Gouffre de Ragefeu"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Souilles de Tranchebauge"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Kraal de Tranchebauge"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Donjon d'Ombrecroc"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Cavernes des lamentations"] = 279;	-- WC
 
 local a = L.NPC_ID_NAMES;

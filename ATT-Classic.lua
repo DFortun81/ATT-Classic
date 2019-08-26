@@ -1553,7 +1553,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				
-				if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
+				if app.Settings:GetTooltipSetting("Progress") then
 					-- If the item is a relic, then let's compare against equipped relics.
 					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
 					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
@@ -5586,7 +5586,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 						end
 						
 						local numItems = GetMerchantNumItems();
-						print("MERCHANT DETAILS", ty, npc_id, numItems);
+						--print("MERCHANT DETAILS", ty, npc_id, numItems);
 						
 						local rawGroups = {};
 						for i=1,numItems,1 do
@@ -5630,7 +5630,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if npc_id then
 						npc_id = tonumber(npc_id);
-						print("GOSSIP_SHOW", type, npc_id);
+						--print("GOSSIP_SHOW", type, npc_id);
 						if type == "GameObject" then
 							info = { ["objectID"] = npc_id, ["text"] = UnitName("npc") };
 						else
@@ -5653,7 +5653,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
 				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-				print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
+				-- print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
 				
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
