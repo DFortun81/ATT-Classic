@@ -12,15 +12,7 @@ _.Instances = {
 				--["maps"] = { AZSHARA },	-- Azshara [TODO]
 				["isRaid"] = true,
 				["groups"] = {
-					i(18704, {	-- Mature Blue Dragon Sinew
-						{
-							["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
-							["qg"] = 14526,	-- Hastat the Ancient
-							["groups"] = {
-								i(18714),	-- Ancient Sinew Wrapped Lamina
-							},
-						},
-					}),
+					i(18704),	-- Mature Blue Dragon Sinew
 					i(19130),	-- Cold Snap
 					i(18202),	-- Eskhandar's Left Claw
 					i(17070),	-- Fang of the Mystics

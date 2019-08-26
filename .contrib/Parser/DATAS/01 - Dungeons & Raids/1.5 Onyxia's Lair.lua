@@ -23,21 +23,28 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 18705, 1 },	-- Mature Black Dragon Sinew
 					},
-				},{
-					["questID"] = 7632,	-- The Ancient Leaf
-					["qg"] = 14524,	-- Vartrus the Ancient
-					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					["groups"] = {
+						i(18724),	-- Enchanted Black Dragon Sinew
+					},
+				},
+				{
+					["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
+					["sourceQuest"] = 7633,	-- An Introduction
+					["qg"] = 14526,	-- Hastat the Ancient
 					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
 					["classes"] = { 3 },	-- Hunter
+					["crs"] = {
+						6109,	-- Azuregos
+						7435,	-- Cobalt Wyrmkin
+						7436,	-- Cobalt Scalebane
+						7437,	-- Cobalt Mageweaver
+					},
 					["lvl"] = 60,
 					["cost"] = {
-						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
+						{ "i", 18704, 1 },	-- Mature Blue Dragon Sinew
 					},
 					["groups"] = {
-						i(18715),	-- Lok'delar, Stave of the Ancient Keepers
-						i(18707, {	-- Ancient Rune Etched Stave
-							i(18713),	-- Rhok'delar, Longbow of the Ancient Keepers
-						}),
+						i(18714),	-- Ancient Sinew Wrapped Lamina
 					},
 				},
 				q(7496, {	-- Celebrating Good Times
@@ -71,6 +78,72 @@ _.Instances = {
 					["lvl"] = 60,
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
+					},
+				},
+				{
+					["questID"] = 7636,	-- Stave of the Ancients
+					["qg"] = 14524,	-- Vartrus the Ancient
+					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
+					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
+					["classes"] = { 3 },	-- Hunter
+					["lvl"] = 60,
+					["cost"] = {
+						{ "i", 18955, 1 },	-- Artorius's Head
+						{ "i", 18953, 1 },	-- Klinfran's Head
+						{ "i", 18952, 1 },	-- Simone's Head
+						{ "i", 18954, 1 },	-- Solenor's Head
+					},
+					["groups"] = {
+						n(14535, {	-- Artorius the Doombringer
+							["description"] = "Kite him using Aspect of the Cheetah. Keep Serpent Sting on at all times and use Concussive Shot whenever he gets close. It is important to remain beyond 30 yards of the Demonic Doom, yet within range to use Arcane Shot so that he continues chasing you. If you rely completely on Serpent Sting for damage, he will break aggro and return to where he started. Once you apply Serpent Sting, count to 4, and apply it again before it wears off (the damage does stack). You will be able to see this by a 2nd damage listing \"Stinging Trauma\", which will continue to increase each time the sting is applied.\n\nBe sure to clear the area you plan on fighting so as to not get dazed by another NPC wandering by.\n\nLocated in Winterspring.",
+							["coord"] = { 60.3, 13.2, WINTERSPRING },	-- TODO: Find the MapID and location for Winterspring
+							["crs"] = { 14531 },	-- Artorius the Amiable
+							["groups"] = {
+								i(18955),	-- Artorius's Head
+							},
+						}),
+						n(14534, {	-- Klinfran the Crazed
+							["description"] = "Use Concussive Shot/Serpent Sting to kite him down the road. You should know how long serpent sting lasts, use only one per trip down the road, more if you think you can risk it. As soon as it's worn off, drop an ice trap, let him stand in it, go to the other side, max range, and start again. If for whatever reason he breaks trap, you can use scatter shot, or use concussive shot to just keep kiting him in a circle until the cooldown finishes.\n\nDo not worry about his enrage, because he won't be touching you at all if you play right.\n\nLocated in the Burning Steppes.",
+							["coord"] = { 25.3, 65.9, BURNING_STEPPES },	-- TODO: Find the MapID for Burning Steppes
+							["crs"] = { 14529 },	-- Franklin the Friendly
+							["groups"] = {
+								i(18953),	-- Klinfran's Head
+							},
+						}),
+						n(14533, {	-- Simone the Seductress
+							["description"] = "There are two things that can make this fight difficult: her pet, a felhound named Precious and low nature resistance. Most hunters tend to CC Precious by freeze trapping it. Using ranged attacks is useless because she casts a debuff that substantially lowers ranged attack power. Your best bet is to use aspect of the wild + a greater nature protection potion (to dull and absorb her lightning bolts) and melee her until she falls.\n\nLocated in Ungoro Crater.",
+							["coord"] = { 34.5, 41.1, UNGORO_CRATER },	-- TODO: Find the MapID for Ungoro Crater
+							["crs"] = { 14527 },	-- Simone the Inconspicuous
+							["groups"] = {
+								i(18952),	-- Simone's Head
+							},
+						}),
+						n(14530, {	-- Solenor the Slayer
+							["description"] = "This is the hardest demon:\n\nStrengths:\n* He does NOT predictably chase you. He frequently stops to fear (disorienting you and causing around 800 damage also) or will stop to shoot homing beetles at you.\n* The homing beetles basically prevent you from bandaging. They move extremely slow but hit extremely hard\n* If you leave melee range (further than 2-3 range or so), he uses an instant cast fear spell that also does 700-800 damage instantly, and he can cast these quickly, almost seemingly chain casting. Shadow protection potions do absorb this damage, however, even with greater potions, he tears through them very fast. It's also likely that the fear will send you into the homing beetles\n* Seemingly unlimited mana bar, so Viper Sting is useless\n* Scorpid sting has very little/no effect on him\n* Melees extremely hard and fast (200+) when in normal form\n\nWeaknesses:\n* If you use Rank 3 Wing Clip on him, it immobilizes him completely with \"Crippling Clip\" for 30 seconds.\n* The homing missiles (creepings) are not fired when you remain in melee range\n* He does NOT cast his fear when you remain in melee range\n* Must be 'chilled' via Frost Trap prior to fully engaging\n\nLocated in Silithus.",
+							["coord"] = { 24.7, 76.0, SILITHUS },	-- TODO: Find the MapID for Silithus
+							["crs"] = { 14536 },	-- Nelson the Nice
+							["groups"] = {
+								i(18954),	-- Solenor's Head
+							},
+						}),
+						{
+							["itemID"] = 18707,	-- Ancient Rune Etched Stave
+							["cost"] = {
+								{ "i", 18724, 1 },	-- Enchanted Black Dragon Sinew
+							},
+							["groups"] = {
+								i(18713),	-- Rhok'delar, Longbow of the Ancient Keepers
+							},
+						},
+						i(18715, {	-- Lok'delar, Stave of the Ancient Keepers
+							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
+							["classes"] = { 3 },	-- Hunter
+							["sourceQuests"] = {
+								7634,	-- Ancient Sinew Wrapped Lamina
+								7635,	-- A Proper String
+								7636,	-- Stave of the Ancients
+							},
+						}),
 					},
 				},
 				{
