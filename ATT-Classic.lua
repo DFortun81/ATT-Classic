@@ -1552,48 +1552,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
-				
-				if app.Settings:GetTooltipSetting("Progress") then
-					-- If the item is a relic, then let's compare against equipped relics.
-					local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
-					local myArtifactData = GetTempDataMember("ArtifactRelicItemLevels");
-					if myArtifactData then
-						local progress, total = 0, 0;
-						local relicItemLevel = select(1, GetDetailedItemLevelInfo(search)) or 0;
-						for relicID,artifactData in pairs(myArtifactData) do
-							local infoString;
-							for relicSlotIndex,relicData in pairs(artifactData) do
-								if relicData.relicType == relicType then
-									if infoString then
-										infoString = infoString .. " | " .. relicData.iLvl;
-									else
-										infoString = relicData.iLvl;
-									end
-									total = total + 1;
-									if relicData.iLvl >= relicItemLevel then
-										progress = progress + 1;
-										infoString = infoString .. " " .. GetCompletionIcon(1);
-									else
-										infoString = infoString .. " " .. GetCompletionIcon();
-									end
-								end
-							end
-							if infoString then
-								local itemLink = select(2, GetItemInfo(relicID));
-								tinsert(info, 1, { 
-									left = itemLink and ("   " .. itemLink) or RETRIEVING_DATA, 
-									right = L["iLvl"] .. " " .. infoString,
-								});
-							end
-						end
-						if total > 0 then
-							tinsert(group, { itemID=itemID, total=total, progress=progress});
-							tinsert(info, 1, { left = L["ARTIFACT_RELIC_COMPLETION"], right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
-						end
-					else
-						tinsert(info, 1, { left = L["ARTIFACT_RELIC_CACHE"], wrap = true, color = "ff66ccff" });
-					end
-				end
 			end
 		end
 		
