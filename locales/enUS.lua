@@ -65,9 +65,7 @@ app.L = {
 	-- Filter Text
 	["CREATURE_ID"] = "Creature ID";
 	["CURRENCY_ID"] = "Currency ID";
-	["ENCOUNTER_ID"] = "Encounter ID";
 	["FILTER_ID"] = "Filter ID";
-	["INSTANCE_ID"] = "Instance ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
 	["FLIGHT_PATH_ID"] = "Flight Path ID";
@@ -101,7 +99,6 @@ app.L = {
 		["Player vs. Player"] = STAT_CATEGORY_PVP,
 		["Outdoor Zones"] = LFG_TYPE_ZONE,
 		["Zone Drop"] = LFG_TYPE_ZONE,
-		["WoW Anniversary"] = "Anniversary",
 	};
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"
