@@ -6564,15 +6564,15 @@ end
 SLASH_ATTUNEDGUILD1 = "/attunedguild";
 SLASH_ATTUNEDGUILD2 = "/attunedg";
 SlashCmdList["ATTUNEDGUILD"] = function()
-	print("MC - ONY - PLAYER");
-	SendGuildMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502));
+	print("MC - ONY - BWL - NAXX - PLAYER");
+	SendGuildMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502) .. "\t7761\t9121");
 end
 
 SLASH_ATTUNEDRAID1 = "/attunedraid";
 SLASH_ATTUNEDRAID2 = "/attunedr";
 SlashCmdList["ATTUNEDRAID"] = function()
-	print("MC - ONY - PLAYER");
-	SendGroupMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502));
+	print("MC - ONY - BWL - NAXX - PLAYER");
+	SendGroupMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502) .. "\t7761\t9121");
 end
 
 SLASH_ATTCU1 = "/attu";
@@ -7251,8 +7251,9 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 	if prefix == "ATTC" then
 		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
 		local args = { strsplit("\t", text) };
-		local cmd, a = args[1], args[2];
+		local cmd = args[1];
 		if cmd then
+			local a = args[2];
 			if cmd == "?" then		-- Query Request
 				local response;
 				if a then
