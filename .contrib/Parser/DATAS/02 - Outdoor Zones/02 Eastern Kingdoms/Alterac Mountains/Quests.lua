@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
-		m(-2, {	-- Alterac Mountains
+		m(ALTERAC_MOUNTAINS, {	-- Alterac Mountains
 			n(-17, {	-- Quests
 				q(522, {	-- Assassin's Contract
 					["lvl"] = 30,

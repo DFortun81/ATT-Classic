@@ -54,6 +54,7 @@ UNGORO_CRATER = 1449;	-- Confirmed!
 WINTERSPRING = 1452;	-- Confirmed!
 
 -- Eastern Kingdoms
+ALTERAC_MOUNTAINS = -2;
 ARATHI_HIGHLANDS = 1417;	-- Confirmed!
 BADLANDS = 1418;	-- Confirmed!
 BLASTED_LANDS = 1419;	-- Confirmed!

@@ -5717,7 +5717,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	self.data.indent = 0;
 	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
-end):Show();
+end);
 --[[]]--
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
@@ -6529,11 +6529,15 @@ WorldMapTooltip:HookScript("OnShow", AttachTooltip);
 SLASH_ATTC1 = "/allthethings";
 SLASH_ATTC2 = "/things";
 SLASH_ATTC3 = "/att";
+SLASH_ATTC4 = "/attc";
 SlashCmdList["ATTC"] = function(cmd)
 	if cmd then
 		cmd = string.lower(cmd);
 		if cmd == "" or cmd == "main" or cmd == "mainlist" then
 			app.ToggleMainList();
+			return true;
+		elseif cmd == "debug" or cmd == "debugger" then
+			app:GetWindow("Debugger"):Toggle();
 			return true;
 		elseif cmd == "ra" then
 			app:GetWindow("RaidAssistant"):Toggle();
