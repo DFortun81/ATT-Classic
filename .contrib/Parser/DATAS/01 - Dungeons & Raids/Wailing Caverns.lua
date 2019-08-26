@@ -182,9 +182,11 @@ _.Instances = {
 				{
 					["itemID"] = 10441,	-- Glowing Shard
 					["groups"] = {
-						["questID"] = 6981,	-- The Glowing Shard
-						["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
-						["coord"] = { 63.0, 37.2, BARRENS },
+						{
+							["questID"] = 6981,	-- The Glowing Shard
+							["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
+							["coord"] = { 63.0, 37.2, BARRENS },
+						},
 					},
 				},
 				i(6461), 	-- Slime-Encrusted Pads
