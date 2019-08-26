@@ -20,6 +20,8 @@ L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
+L.ZONE_TEXT_TO_MAP_ID["Die Hügel von Razorfen"] = 300;	-- RFD
+L.ZONE_TEXT_TO_MAP_ID["Der Kral von Razorfen"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
 
