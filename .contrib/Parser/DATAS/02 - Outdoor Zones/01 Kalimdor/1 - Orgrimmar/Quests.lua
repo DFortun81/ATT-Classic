@@ -371,14 +371,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 7010,	-- Zilzibin Drumlore
 				}),
-				q(2950, {	-- Nogg's Ring Redo
-					["lvl"] = 28,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3412,	-- Nogg
-					["g"] = {
-						i(9588),	-- Nogg's Gold Ring
-					},
-				}),
 				q(8978, {	-- Return to Mokvar
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

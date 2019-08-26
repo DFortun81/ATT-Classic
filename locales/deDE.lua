@@ -18,6 +18,7 @@ L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 L.ZONE_TEXT_TO_MAP_ID["Tiefschwarze Grotte"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC

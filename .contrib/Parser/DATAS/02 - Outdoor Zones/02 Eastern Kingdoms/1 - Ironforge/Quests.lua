@@ -249,14 +249,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6569,	-- Gnoarn
 				}),
-				q(2948, {	-- Gnome Improvement
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6826,	-- Talvash del Kissel
-					["g"] = {
-						i(9538),	-- Talvash's Gold Ring
-					},
-				}),
 				q(707, {	-- Ironband Wants You!
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,

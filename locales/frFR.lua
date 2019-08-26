@@ -13,6 +13,7 @@ L.SAVED_TO_DJ_INSTANCES["Glissecroc : caverne du sanctuaire du Serpent"] = "Cav
 L.ZONE_TEXT_TO_MAP_ID["Profondeurs de Brassenoire"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Les Mortemines"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Gouffre de Ragefeu"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Donjon d'Ombrecroc"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Cavernes des lamentations"] = 279;	-- WC

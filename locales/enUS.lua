@@ -1221,6 +1221,7 @@ app.L = {
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,
+		["Gnomeregan"] = 226,
 		["Molten Core"] = 232,
 		["Naxxramas"] = 162,
 		["Onyxia's Lair"] = 248,
