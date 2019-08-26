@@ -13,6 +13,14 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				{
+					["questID"] = 7633,	-- An Introduction
+					["sourceQuest"] = 7632,	-- The Ancient Leaf
+					["qg"] = 14524,	-- Vartrus the Ancient
+					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
+					["classes"] = { 3 },	-- Hunter
+					["lvl"] = 60,
+				},
+				{
 					["questID"] = 7848,	-- Attunement to the Core
 					["altQuests"] = {
 						7487,	-- Attunement to the Core [Original??]
@@ -58,6 +66,17 @@ _.Instances = {
 					},
 				},
 				{
+					["questID"] = 7632,	-- The Ancient Leaf
+					["qg"] = 14524,	-- Vartrus the Ancient
+					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
+					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
+					["classes"] = { 3 },	-- Hunter
+					["lvl"] = 60,
+					["cost"] = {
+						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
+					},
+				},
+				{
 					["questID"] = 7786,	-- Thunderaan the Windseeker
 					["altQuests"] = {
 						7521,	-- Thunderaan the Windseeker [Original?]
@@ -88,6 +107,10 @@ _.Instances = {
 				},
 			}),
 			n(0, {	-- Zone Drop
+				i(20951, {	-- Narain's Scrying Goggles
+					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
+					["questID"] = 8578,	-- Scrying Goggles? No Problem!
+				}),
 				i(16802, {	-- Arcanist Belt (Mage)
 					["crs"] = {
 						11673,	-- Ancient Core Hound
@@ -373,7 +396,6 @@ _.Instances = {
 						11658,	-- Molten Giant
 					},
 				}),
-				i(20951),	-- Narain's Scrying Goggles
 				i(16827, {	-- Nightslayer Belt (Rogue)
 					["crs"] = {
 						11673,	-- Ancient Core Hound
@@ -719,6 +741,17 @@ _.Instances = {
 				i(18820),	-- Talisman of Ephemeral Power
 			}),
 			n(12018, {	-- Majordomo Executus
+				{
+					["itemID"] = 18703,	-- Ancient Petrified Leaf
+					["questID"] = 7632,	-- The Ancient Leaf
+					["classes"] = { 3 },	-- Hunter
+					["lvl"] = 60,
+				},
+				i(18646, {	-- The Eye of Divinity
+					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
+					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
+					["classes"] = { 5 },
+				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
 				i(19139),	-- Fireguard Shoulders
@@ -729,17 +762,17 @@ _.Instances = {
 				i(18809),	-- Sash of Whispered Secrets
 				i(18806),	-- Core Forged Greaves
 				i(19140),	-- Cauterizing Band
-				i(18646, {	-- The Eye of Divinity
-					["classes"] = { 5 },
-					["groups"] = {
-						i(18609),	-- Anathema
-						i(18608),	-- Benediction
-					},
-				}),
 			}),
 			n(11502, {	-- Ragnaros
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
+					["questID"] = 7786,	-- Thunderaan the Windseeker
+					["classes"] = {
+						11,	-- Druid
+						2,	-- Paladin
+						7,	-- Shaman
+						1,	-- Warrior
+					},
 				}),
 				{	-- Eye of Sulfuras
 					["itemID"] = 17204,	-- Eye of Sulfuras

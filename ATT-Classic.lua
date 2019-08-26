@@ -3874,9 +3874,30 @@ local function CreateMiniListForGroup(group)
 		popout.shouldFullRefresh = true;
 		if group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
+			if group.parent.questID == group.questID then
+				group = group.parent;
+			end
 			local mainQuest = CloneData(group);
 			mainQuest.collectible = true;
 			local g = { mainQuest };
+			
+			-- Check to see if Source Quests are listed elsewhere.
+			if group.questID and not group.sourceQuests then
+				local searchResults = SearchForField("questID", group.questID);
+				if searchResults and #searchResults > 1 then
+					for i=1,#searchResults,1 do
+						local searchResult = searchResults[i];
+						if searchResult.sourceQuests then
+							searchResult = CloneData(searchResult);
+							searchResult.collectible = true;
+							searchResult.g = g;
+							mainQuest = searchResult;
+							g = { mainQuest };
+							break;
+						end
+					end
+				end
+			end
 			
 			-- Show Quest Prereqs
 			if mainQuest.sourceQuests then
@@ -3891,6 +3912,9 @@ local function CreateMiniListForGroup(group)
 							for i=1,#sourceQuest,1 do
 								-- Only care about the first search result.
 								local sq = sourceQuest[i];
+								if sq.parent and sq.parent.questID == sq.questID then
+									sq = sq.parent;
+								end
 								if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
 									if sq.altQuestID then
 										-- Alt Quest IDs are always Horde.
