@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(63, {	-- Ashenvale
+	m(KALIMDOR, {	-- Kalimdor
+		m(ASHENVALE, {	-- Ashenvale
 			n(-17, {	-- Quests
 				q(908, {	-- Amongst the Ruins
 					["lvl"] = 25,

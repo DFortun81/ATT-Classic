@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(80, {	-- Moonglade
+	m(KALIMDOR, {	-- Kalimdor
+		m(MOONGLADE, {	-- Moonglade
 			n(-17, {	-- Quests
 				q(5527, {	-- A Reliquary of Purity
 					["lvl"] = 56,

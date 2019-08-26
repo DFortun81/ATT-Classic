@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(76, {	-- Azshara
+	m(KALIMDOR, {	-- Kalimdor
+		m(AZSHARA, {	-- Azshara
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

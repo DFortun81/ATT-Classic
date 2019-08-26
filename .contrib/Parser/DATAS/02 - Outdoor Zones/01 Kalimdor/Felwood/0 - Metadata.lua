@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(77, {	-- Felwood
+	m(KALIMDOR, {	-- Kalimdor
+		m(FELWOOD, {	-- Felwood
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

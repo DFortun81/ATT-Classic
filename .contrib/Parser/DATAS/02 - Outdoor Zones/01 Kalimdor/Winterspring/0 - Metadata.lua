@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(83, {	-- Winterspring
+	m(KALIMDOR, {	-- Kalimdor
+		m(WINTERSPRING, {	-- Winterspring
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

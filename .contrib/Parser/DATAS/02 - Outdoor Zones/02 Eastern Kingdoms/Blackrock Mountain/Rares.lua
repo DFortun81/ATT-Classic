@@ -9,7 +9,7 @@ _.Zones =
 				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
 					["coords"] = {
 						--{ , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
-						{ 34.9, 27.9, BURNING_STEPPES },	-- TODO: Burning Steppes MapID and location
+						{ 34.9, 27.9, BURNING_STEPPES },
 					},
 					["groups"] = {
 						{

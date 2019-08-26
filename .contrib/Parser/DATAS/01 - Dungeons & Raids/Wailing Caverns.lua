@@ -3,9 +3,9 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(279, { 	-- Wailing Caverns
+	map(WAILING_CAVERNS, { 	-- Wailing Caverns
 		["description"] = "Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",
-		["coord"] = { 45.9, 35.7, BARRENS },	-- TODO: Barrens MapID
+		["coord"] = { 45.9, 35.7, THE_BARRENS },
 		["lvl"] = 10,
 		["g"] = {
 			n(-17, {	-- Quests
@@ -14,8 +14,8 @@ _.Instances = {
 					{
 						["questID"] = 1487,	-- Deviate Eradication
 						["qg"] = 5768,	-- Ebru <Disciple of Naralex>
-						["coord"] = { 46.0, 35.7, BARRENS },
-						["maps"] = { BARRENS },
+						["coord"] = { 46.0, 35.7, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
 						["lvl"] = 15,
 						["g"] = {
 							i(6476),	-- Pattern: Deviate Scale Belt
@@ -26,8 +26,8 @@ _.Instances = {
 					{
 						["questID"] = 1486,	-- Deviate Hides
 						["qg"] = 5767,	-- Nalpak <Disciple of Naralex>
-						["coord"] = { 46.0, 35.7, BARRENS },
-						["maps"] = { BARRENS },
+						["coord"] = { 46.0, 35.7, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
 						["lvl"] = 13,
 						["g"] = {
 							i(6480),	-- Slick Deviate Leggings
@@ -38,8 +38,8 @@ _.Instances = {
 						["questID"] = 1489,	-- Hamuul Runetotem
 						["sourceQuest"] = 880,	-- Altered Beings
 						["qg"] = 3448,	-- Tonga Runetotem
-						["coord"] = { 52.3, 31.9, BARRENS },
-						["maps"] = { BARRENS },
+						["coord"] = { 52.3, 31.9, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					},
@@ -49,8 +49,8 @@ _.Instances = {
 						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
 						["description"] = "She lives in a house on top of the mountain.",
-						["coord"] = { 48.2, 32.8, BARRENS },
-						["maps"] = { BARRENS },
+						["coord"] = { 48.2, 32.8, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
 						["lvl"] = 15,
 						["groups"] = {
 							i(10657),	-- Talbar Mantle
@@ -63,9 +63,9 @@ _.Instances = {
 						["qg"] = 5770,	-- Nara Wildmane
 						["coords"] = {
 							{ 45.2, 23.3, MULGORE },
-							{ 75, 31, THUNDERBLUFF },
+							{ 75, 31, THUNDER_BLUFF },
 						},
-						["maps"] = { MULGORE, THUNDERBLUFF },
+						["maps"] = { MULGORE, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 						["g"] = {
@@ -79,9 +79,9 @@ _.Instances = {
 						["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 						["coords"] = {
 							{ 45.8, 22.6, MULGORE },
-							{ 74.7, 30.2, THUNDERBLUFF },
+							{ 74.7, 30.2, THUNDER_BLUFF },
 						},
-						["maps"] = { MULGORE, THUNDERBLUFF },
+						["maps"] = { MULGORE, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 10,
 					},
@@ -89,7 +89,7 @@ _.Instances = {
 						["questID"] = 962,	-- Serpentbloom
 						["qg"] = 3419,	-- Apothecary Zamah <Royal Apothecary Society>
 						["coord"] = { 34.4, 21.1, MULGORE },
-						["maps"] = { MULGORE, THUNDERBLUFF },
+						["maps"] = { MULGORE, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
 						["lvl"] = 14,
 						["groups"] = {
@@ -100,18 +100,18 @@ _.Instances = {
 						["questID"] = 1491,	-- Smart Drinks
 						["sourceQuest"] = 865,	-- Raptor Horns
 						["qg"] = 3446,	-- Mebok Mizzyrix
-						["coord"] = { 62.4, 37.6, BARRENS },
-						["maps"] = { BARRENS },
+						["coord"] = { 62.4, 37.6, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
 						["lvl"] = 13,
 					},
 					{
 						["questID"] = 959,	-- Trouble at the Docks
 						["qg"] = 3665,	-- Crane Operator Bigglefuzz
 						["coords"] = {
-							{ 63.1, 37.6, BARRENS },
-							{ 45.7, 33.6, BARRENS },
+							{ 63.1, 37.6, THE_BARRENS },
+							{ 45.7, 33.6, THE_BARRENS },
 						},
-						["maps"] = { BARRENS },
+						["maps"] = { THE_BARRENS },
 						["crs"] = { 3655 },	-- Mad Magglish
 						["lvl"] = 14,
 					},
@@ -119,8 +119,8 @@ _.Instances = {
 			}),
 			n(-2, {	-- Vendors
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
-					["coord"] = { 45.9, 35.7, BARRENS },	-- TODO: Barrens MapID
-					["maps"] = { BARRENS },	-- TODO: Barrens MapID
+					["coord"] = { 45.9, 35.7, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
 					["g"] = {
 						i(6474),	-- Pattern: Deviate Scale Cloak
 						i(6475),	-- Pattern: Deviate Scale Gloves
@@ -185,7 +185,7 @@ _.Instances = {
 						{
 							["questID"] = 6981,	-- The Glowing Shard
 							["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
-							["coord"] = { 63.0, 37.2, BARRENS },
+							["coord"] = { 63.0, 37.2, THE_BARRENS },
 						},
 					},
 				},

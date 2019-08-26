@@ -4,13 +4,9 @@
 _.Zones =
 {
 	m(1415, {	-- Eastern Kingdoms
-		m(-3, {	-- Blackrock Mountain
+		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
-			["maps"] = {
-				BLACKROCK_MOUNTAIN,	-- TODO: Blackrock Mountain MapID and location
-				BURNING_STEPPES,	-- TODO: Burning Steppes MapID and location
-			},
 		}),
 	}),
 };

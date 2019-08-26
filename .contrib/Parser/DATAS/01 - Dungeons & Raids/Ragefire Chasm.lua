@@ -5,46 +5,46 @@
 _.Instances = {
 	map(213, { 	-- Ragefire Chasm
 		["description"] = "Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",
-		--["coord"] = { },	-- Orgrimmar [TODO: Add MapID]
+		--["coord"] = { , ORGRIMMAR },	-- TODO: Add location
 		["lvl"] = 13,
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(5726, {	-- Hidden Enemies [Pt 1]
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["coord"] = { 32.0, 37.8 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5727, {	-- Hidden Enemies [Pt 2]
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5726,	-- Hidden Enemies [Pt 1]
-					["coord"] = { 32.0, 37.8 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5728, {	-- Hidden Enemies [Pt 3]
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5727,	-- Hidden Enemies [Pt 2]
-					["coord"] = { 32.0, 37.8 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5729, {	-- Hidden Enemies [Pt 4]
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["sourceQuest"] = 5728,	-- Hidden Enemies [Pt 3]
-					["coord"] = { 32.0, 37.8 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5730, {	-- Hidden Enemies [Pt 5]
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5729,	-- Hidden Enemies [Pt 4]
-					["coord"] = { 49.6, 50.6 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {
@@ -66,30 +66,30 @@ _.Instances = {
 				}),
 				q(5722, {	-- Searching for the Lost Satchel
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
-					["coord"] = { 70.6, 31.4 },	-- Thunder Bluff [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5761, {	-- Slaying the Beast
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 5727,	-- Hidden Enemies [Pt 2]
-					["coord"] = { 49.6, 50.6 },	-- Orgrimmar [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 49.6, 50.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
 					["qg"] = 11833,	-- Rahauro <Magatha's Servant>
-					["coord"] = { 70.6, 31.4 },	-- Thunder Bluff [TODO: Add MapID]
-					--["maps"] = { },	-- Orgrimmar
+					["coord"] = { 70.6, 31.4, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(5725, {	-- The Power to Destroy...
 					["qg"] = 2425,	-- Varimathras
-					["coord"] = { 56.2, 91.8 },	-- Undercity [TODO: Add MapID]
-					--["maps"] = { },	-- Undercity
+					["coord"] = { 56.2, 91.8, UNDERCITY },
+					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["groups"] = {

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(89, {	-- Darnassus
+	m(KALIMDOR, {	-- Kalimdor
+		m(DARNASSUS, {	-- Darnassus
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

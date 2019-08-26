@@ -3,17 +3,17 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(310, {	-- Shadowfang Keep
+	map(SHADOWFANG_KEEP, {	-- Shadowfang Keep
 		["description"] = "During the Third War, the wizards of the Kirin Tor battled against the undead armies of the Scourge. When the wizards of Dalaran died in battle, they would rise soon after - adding their former might to the growing Scourge. Frustrated by their lack of progress (and against the advice of his peers) the Archmage, Arugal elected to summon extra-dimensional entities to bolster Dalaran's diminishing ranks. Arugal's summoning brought the ravenous worgen into the world of Azeroth. The feral wolf-men slaughtered not only the Scourge, but quickly turned on the wizards themselves. The worgen sieged the keep of the noble, Baron Silverlaine. Situated above the tiny hamlet of Pyrewood, the keep quickly fell into shadow and ruin. Driven mad with guilt, Arugal adopted the worgen as his children and retreated to the newly dubbed 'Shadowfang Keep'. It's said he still resides there, protected by his massive pet, Fenrus - and haunted by the vengeful ghost of Baron Silverlaine.",
-		--["coord"] = { },	-- Silverpine Forest [TODO: Add MapID]
+		["coord"] = { 36.6, 65.6, SILVERPINE_FOREST },
 		["lvl"] = 14,
 		["groups"] = {
 			n(-17, { 		-- Quests
 				q(1014, {	-- Arugal Must Die
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["races"] = HORDE_ONLY,
-					["coord"] = { 44.2, 39.8,  },	-- The Sepulcher, Silverpine Forest [TODO: Add MapID]
-					-- ["maps"] = { },	-- Silverpine Forest
+					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
+					["maps"] = { SILVERPINE_FOREST },
 					["lvl"] = 18,
 					["g"] = {
 						i(6414),	-- Seal of Sylvanas
@@ -22,8 +22,8 @@ _.Instances = {
 				q(1098, {	-- Deathstalkers in Shadowfang
 					["qg"] = 1952,	-- High Executor Hadrec
 					["races"] = HORDE_ONLY,
-					["coord"] = { 43.4, 40.8,  },	-- The Sepulcher, Silverpine Forest [TODO: Add MapID]
-					-- ["maps"] = { },	-- Silverpine Forest
+					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
+					["maps"] = { SILVERPINE_FOREST },
 					["lvl"] = 18,
 					["g"] = {
 						i(3324),	-- Ghostly Mantle
@@ -32,8 +32,8 @@ _.Instances = {
 				q(1013, {	-- The Book of Ur
 					["qg"]	= 2934,	-- Keeper Bel'dugur
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54, 54.6,  },	-- Undercity [TODO: Add MapID]
-					-- ["maps"] = { },	-- The Undercity
+					["coord"] = { 54, 54.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
 					["lvl"] = 16,
 					["g"] = {
 						i(4534),	-- Steel-Clasped Bracers
@@ -43,8 +43,8 @@ _.Instances = {
 				q(1740, {	-- The Orb of Soran'ruk
 					["qg"] = 6247,	-- Doan Karhan
 					["classes"] = { 9 },
-					["coord"] = { 49.2, 57.2 },	-- The Barrens [TODO: Add MapID]
-					-- ["maps"] = { },	-- The Barrens
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
 					["lvl"] = 20,
 					["g"] = {
 						i(6898),	-- Orb of Soran'ruk
@@ -55,16 +55,16 @@ _.Instances = {
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 3 },	-- Dwarf
-					["coord"] = { 23.6, 6.4, },	-- Ironforge [TODO: Add MapID]
-					-- ["maps"] = { },	-- Ironforge
+					["coord"] = { 23.6, 6.4, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["lvl"] = 20,
 				}),
 				q(1793, {	-- The Tome of Valor [Human]
 					["qg"] = 6171,	-- Duthorian Rall
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1 },	-- Human
-					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
-					["maps"] = { 1453 },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 20,
 				}),
 				q(1649, {	-- The Tome of Valor [Pt 1]
@@ -75,8 +75,8 @@ _.Instances = {
 					},
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
-					["maps"] = { 1453 },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["itemID"] = 6776,	-- Tome of Valor
 					["lvl"] = 20,
 				}),
@@ -85,8 +85,8 @@ _.Instances = {
 					["sourceQuest"] = 1649,	-- The Tome of Valor [Pt 1]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
-					["maps"] = { 1453 },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 20,
 				}),
 				q(1651, {	-- The Tome of Valor [Pt 3]
@@ -94,8 +94,8 @@ _.Instances = {
 					["sourceQuest"] = 1650,	-- The Tome of Valor [Pt 2]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 42.4, 88.4, 1436  },	-- Westfall
-					["maps"] = { 1436 },	-- Westfall
+					["coord"] = { 42.4, 88.4, WESTFALL },
+					["maps"] = { WESTFALL },
 					["lvl"] = 20,
 				}),
 				q(1652, {	-- The Tome of Valor [Pt 4]
@@ -103,8 +103,8 @@ _.Instances = {
 					["sourceQuest"] = 1651,	-- The Tome of Valor [Pt 3]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
-					["maps"] = { 1453 },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 20,
 					["g"] = {
 						spell(5502),	-- Sense Undead
@@ -116,8 +116,8 @@ _.Instances = {
 					["sourceQuest"] = 1652,	-- The Tome of Valor [Pt 2]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 39.8, 30.8, 1453 },	-- Stormwind City
-					["maps"] = { 1453 },	-- Stormwind City
+					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 20,
 				}),
 				q(1654, {	-- The Test of Righteousness [Pt 2]
@@ -125,8 +125,8 @@ _.Instances = {
 					["sourceQuest"] = 1653,	-- The Test of Righteousness [Pt 1]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 52.6, 36.8,  },	-- Dun Morogh [TODO: Add MapID]
-					-- ["maps"] = { },	-- Dun Morogh
+					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["maps"] = { DUN_MOROGH },
 					["lvl"] = 20,
 				}),
 				q(1806, {	-- The Test of Righteousness [Pt 3]
@@ -134,8 +134,8 @@ _.Instances = {
 					["sourceQuest"] = 1654,	-- The Test of Righteousness [Pt 2]
 					["classes"] = { 2 },	-- Paladin Only
 					["races"] = { 1, 3 },	-- Human/Dwarf
-					["coord"] = { 52.6, 36.8,  },	-- Dun Morogh [TODO: Add MapID]
-					-- ["maps"] = { },	-- Dun Morogh
+					["coord"] = { 52.6, 36.8, DUN_MOROGH },
+					["maps"] = { DUN_MOROGH },
 					["lvl"] = 20,
 					["g"] = {
 						i(6953),	-- Verigan's Fist

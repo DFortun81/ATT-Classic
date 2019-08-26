@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(65, {	-- Stonetalon Mountains
+	m(KALIMDOR, {	-- Kalimdor
+		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(62, {	-- Darkshore
+	m(KALIMDOR, {	-- Kalimdor
+		m(DARKSHORE, {	-- Darkshore
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

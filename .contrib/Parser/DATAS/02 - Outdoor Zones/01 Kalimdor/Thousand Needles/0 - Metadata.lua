@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(64, {	-- Thousand Needles
+	m(KALIMDOR, {	-- Kalimdor
+		m(THOUSAND_NEEDLES, {	-- Thousand Needles
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

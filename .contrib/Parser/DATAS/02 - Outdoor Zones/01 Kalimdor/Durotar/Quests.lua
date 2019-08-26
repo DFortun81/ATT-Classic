@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(1, {	-- Durotar
+	m(KALIMDOR, {	-- Kalimdor
+		m(DUROTAR, {	-- Durotar
 			n(-17, {	-- Quests
 				q(2161, {	-- A Peon's Burden
 					["qg"] = 6786,	-- Ukor

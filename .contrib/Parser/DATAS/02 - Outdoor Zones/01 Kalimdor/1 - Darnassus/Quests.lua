@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(89, {	-- Darnassus
+	m(KALIMDOR, {	-- Kalimdor
+		m(DARNASSUS, {	-- Darnassus
 			n(-17, {	-- Quests
 				q(5091, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,

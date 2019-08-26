@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(66, {	-- Desolace
+	m(KALIMDOR, {	-- Kalimdor
+		m(DESOLACE, {	-- Desolace
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(76, {	-- Azshara
+	m(KALIMDOR, {	-- Kalimdor
+		m(AZSHARA, {	-- Azshara
 			n(-17, {	-- Quests
 				q(3382, {	-- A Crew Under Fire
 					["lvl"] = 48,

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(80, {	-- Moonglade
+	m(KALIMDOR, {	-- Kalimdor
+		m(MOONGLADE, {	-- Moonglade
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

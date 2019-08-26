@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(85, {	-- Orgrimmar
+	m(KALIMDOR, {	-- Kalimdor
+		m(ORGRIMMAR, {	-- Orgrimmar
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

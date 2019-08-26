@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(83, {	-- Winterspring
+	m(KALIMDOR, {	-- Kalimdor
+		m(WINTERSPRING, {	-- Winterspring
 			n(-17, {	-- Quests
 				q(6606, {	-- A Little Luck
 					["lvl"] = 55,

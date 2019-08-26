@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(7, {	-- Mulgore
+	m(KALIMDOR, {	-- Kalimdor
+		m(MULGORE, {	-- Mulgore
 			n(-17, {	-- Quests
 				q(753, {	-- A Humble Task
 					["qg"] = 2991,	-- Greatmother Hawkwind

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(78, {	-- Un'Goro Crater
+	m(KALIMDOR, {	-- Kalimdor
+		m(UNGORO_CRATER, {	-- Un'Goro Crater
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(70, {	-- Dustwallow Marsh
+	m(KALIMDOR, {	-- Kalimdor
+		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			n(-17, {	-- Quests
 				q(1258, {	-- ... and Bugs
 					["lvl"] = 33,

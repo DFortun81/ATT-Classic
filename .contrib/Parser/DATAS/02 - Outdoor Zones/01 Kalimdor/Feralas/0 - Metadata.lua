@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(69, {	-- Feralas
+	m(KALIMDOR, {	-- Kalimdor
+		m(FERALAS, {	-- Feralas
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

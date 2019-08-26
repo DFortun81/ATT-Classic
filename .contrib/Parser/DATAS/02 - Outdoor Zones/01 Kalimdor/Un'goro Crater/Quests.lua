@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(78, {	-- Un'Goro Crater
+	m(KALIMDOR, {	-- Kalimdor
+		m(UNGORO_CRATER, {	-- Un'Goro Crater
 			n(-17, {	-- Quests
 				q(3941, {	-- A Gnome's Assistance
 					["lvl"] = 47,

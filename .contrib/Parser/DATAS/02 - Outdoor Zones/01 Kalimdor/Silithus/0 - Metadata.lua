@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(81, {	-- Silithus
+	m(KALIMDOR, {	-- Kalimdor
+		m(SILITHUS, {	-- Silithus
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

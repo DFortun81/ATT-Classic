@@ -3,9 +3,9 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(221, { 	-- Blackfathom Deeps
+	map(BLACKFATHOM_DEEPS, { 	-- Blackfathom Deeps
 		["description"] = "Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",
-		["coord"] = { 14.0, 11.1, ASHENVALE },	-- TODO: Ashenvale MapID and approximate location
+		["coord"] = { 14.0, 11.1, ASHENVALE },
 		["lvl"] = 19,
 		["groups"] = {
 			n(-17, {	-- Quests
@@ -13,8 +13,8 @@ _.Instances = {
 					["questID"] = 6565,	-- Allegiance to the Old Gods
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
-					["maps"] = { ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
+					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 					["groups"] = {
@@ -25,8 +25,8 @@ _.Instances = {
 				{
 					["questID"] = 6921,	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
-					["maps"] = { ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
+					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 				},
@@ -56,8 +56,8 @@ _.Instances = {
 				{
 					["questID"] = 1198,	-- In Search of Thaelrid
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
-					["coord"] = { 28.7, 52.1, TELDRASSIL },	-- Teldrassil [TODO: Get the MapID]
-					["maps"] = { TELDRASSIL },	-- Teldrassil [TODO: Get the MapID]
+					["coord"] = { 28.7, 52.1, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
 					-- This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)
 					-- Trying to accept the followup quest as Horde gives you "That quest is not available for your race.".
 					["isBreadcrumb"] = true,
@@ -66,8 +66,8 @@ _.Instances = {
 				{
 					["questID"] = 971,	-- Knowledge in the Deeps
 					["qg"] = 2786,	-- Gerrig Bonegrip
-					["coord"] = { 50.8, 5.6, IRONFORGE },	-- Ironforge [TODO: Get the MapID]
-					["maps"] = { IRONFORGE },	-- Ironforge [TODO: Get the MapID]
+					["coord"] = { 50.8, 5.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -77,8 +77,8 @@ _.Instances = {
 				{
 					["questID"] = 1275,	-- Researching the Corruption
 					["qg"] = 8997,	-- Gershala Nightwhisper
-					["coord"] = { 38.3, 43.0, DARKSHORE },	-- Darkshore [TODO: Get the MapID]
-					["maps"] = { DARKSHORE },	-- Darkshore [TODO: Get the MapID]
+					["coord"] = { 38.3, 43.0, DARKSHORE },
+					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 					["groups"] = {
@@ -90,16 +90,16 @@ _.Instances = {
 					["questID"] = 6563,	-- The Essence of Aku'Mai
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
-					["maps"] = { ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
+					["coord"] = { 11.6, 34.3, ASHENVALE },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
 				},
 				{
 					["questID"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
-					["coord"] = { 47.3, 64.4, STONETALON },	-- Stonetalon Mountains [TODO: Get the MapID]
-					["maps"] = { STONETALON },	-- Stonetalon Mountains [TODO: Get the MapID]
+					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
+					["maps"] = { STONETALON_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -107,8 +107,8 @@ _.Instances = {
 				{
 					["questID"] = 1199,	-- Twilight Falls
 					["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
-					["coord"] = { 38.3, 43.0, TELDRASSIL },	-- Teldrassil [TODO: Get the MapID]
-					["maps"] = { TELDRASSIL },	-- Teldrassil [TODO: Get the MapID]
+					["coord"] = { 38.3, 43.0, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
@@ -161,14 +161,14 @@ _.Instances = {
 				}),
 				i(16790, {	-- Damp Note
 					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
-					["coord"] = { 14.0, 11.1, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
+					["coord"] = { 14.0, 11.1, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						{
 							["questID"] = 6564,	-- Allegiance to the Old Gods
 							["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-							["coord"] = { 11.6, 34.3, ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
-							["maps"] = { ASHENVALE },	-- Ashenvale [TODO: Get the MapID]
+							["coord"] = { 11.6, 34.3, ASHENVALE },
+							["maps"] = { ASHENVALE },
 							["races"] = HORDE_ONLY,
 						},
 					},

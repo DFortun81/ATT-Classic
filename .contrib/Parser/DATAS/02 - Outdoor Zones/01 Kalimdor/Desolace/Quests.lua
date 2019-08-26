@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(66, {	-- Desolace
+	m(KALIMDOR, {	-- Kalimdor
+		m(DESOLACE, {	-- Desolace
 			n(-17, {	-- Quests
 				q(1386, {	-- Assault on the Kolkar
 					["lvl"] = 30,

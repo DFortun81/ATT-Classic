@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(70, {	-- Dustwallow Marsh
+	m(KALIMDOR, {	-- Kalimdor
+		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(232, { 	-- Molten Core
+	map(MOLTEN_CORE, { 	-- Molten Core
 		["description"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
 		--["coord"] = { , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
 		["lvl"] = 50,
@@ -16,7 +16,7 @@ _.Instances = {
 					["questID"] = 7633,	-- An Introduction
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
-					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
+					["coord"] = { 47, 24.48, FELWOOD },
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 60,
 				},
@@ -38,8 +38,8 @@ _.Instances = {
 					["questID"] = 7785,	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
-					["coord"] = { 21.7, 8.6, SILITHUS },	-- TODO: Silithus MapID and location
-					["maps"] = { SILITHUS },	-- TODO: Silithus MapID
+					["coord"] = { 21.7, 8.6, SILITHUS },
+					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
 					["cost"] = {
@@ -57,8 +57,8 @@ _.Instances = {
 					["questID"] = 7787,	-- Rise, Thunderfury!
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
-					["coord"] = { 21.7, 8.6, SILITHUS },	-- TODO: Silithus MapID and location
-					["maps"] = { SILITHUS },	-- TODO: Silithus MapID
+					["coord"] = { 21.7, 8.6, SILITHUS },
+					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
 					["groups"] = {
@@ -69,7 +69,7 @@ _.Instances = {
 					["questID"] = 7632,	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
-					-- ["coord"] = { , FELWOOD },	-- TODO: Find the MapID and location for Felwood
+					["coord"] = { 47, 24.48, FELWOOD },
 					["classes"] = { 3 },	-- Hunter
 					["lvl"] = 60,
 					["cost"] = {
@@ -83,8 +83,8 @@ _.Instances = {
 					},
 					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
-					["coord"] = { 21.7, 8.6, SILITHUS },	-- TODO: Silithus MapID and location
-					["maps"] = { SILITHUS },	-- TODO: Silithus MapID
+					["coord"] = { 21.7, 8.6, SILITHUS },
+					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
 					["cost"] = {

@@ -8,9 +8,10 @@ _.Instances = {
 		["lvl"] = 60,
 		["groups"] = {
 			n(6109, {	-- Azuregos
-				--["coord"] = { , AZSHARA },	-- TODO: Azshara MapID and location
-				--["maps"] = { AZSHARA },	-- Azshara [TODO]
+				["coord"] = { 53.3, 80.4, AZSHARA },
+				["maps"] = { AZSHARA },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					i(18704),	-- Mature Blue Dragon Sinew
 					i(19130),	-- Cold Snap
@@ -25,35 +26,12 @@ _.Instances = {
 					i(18547),	-- Unmelting Ice Girdle
 				},
 			}),
-			n(18338, {	-- Highlord Kruul
-				--["coord"] = { , BLASTED_LANDS },	-- TODO: Blasted Lands MapID and location
-				--["maps"] = { },	-- Blasted Lands [TODO]
-				["modelScale"] = 6.0,
-				["isRaid"] = true,
-				["groups"] = {
-					i(18665, {	-- The Eye of Shadow
-						["classes"] = { 5 },
-						["groups"] = {
-							i(18609),	-- Anathema
-							i(18608),	-- Benediction
-						},
-					}),
-					i(17113),	-- Amberseal Keeper
-					i(17112),	-- Empyrean Demolisher
-					i(18546),	-- Infernal Headcage
-					i(17111),	-- Blazefury Medallion
-					i(18204),	-- Eskhandar's Pelt
-					i(19135),	-- Blacklight Bracer
-					i(18544),	-- Doomhide Gauntlets
-					i(19134),	-- Flayed Doomguard Belt
-					i(19133),	-- Fel Infused Leggings
-					i(18543),	-- Ring of Entropy
-				},
-			}),
 			n(12397, {	-- Lord Kazzak
-				--["coord"] = { , BLASTED_LANDS },	-- TODO: Blasted Lands MapID and location
-				--["maps"] = { },	-- Blasted Lands [TODO]
+				--["coord"] = { , BLASTED_LANDS },	-- TODO: Add location
+				["description"] = "Starting in Phase 2, Lord Kazzak can spawn as a World Boss in the Tainted Scar.",
+				["maps"] = { BLASTED_LANDS },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					i(18665, {	-- The Eye of Shadow
 						["classes"] = { 5 },
@@ -75,16 +53,10 @@ _.Instances = {
 				},
 			}),
 			n(14889, {	-- Emeriss
-				--[[
-				["coords"] = {
-					{, ASHENVALE },	-- TODO: Ashenvale MapID and location
-					{, DUSKWOOD },	-- TODO: Duskwood MapID and location
-					{, FERALAS },	-- TODO: Feralas MapID and location
-					{, HINTERLANDS },	-- TODO: The Hinterlands MapID and location
-				},
-				--["maps"] = {  },	-- Ashenvale / Duskwood / Feralas / The Hinterlands [TODO]
-				]]--
+				["coord"] = { 51.2, 10.9, FERALAS },
+				["maps"] = { FERALAS },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					{
 						["itemID"] = 20644,	-- Nightmare Engulfed Object
@@ -107,16 +79,10 @@ _.Instances = {
 				},
 			}),
 			n(14888, {	-- Lethon
-				--[[
-				["coords"] = {
-					{, ASHENVALE },	-- TODO: Ashenvale MapID and location
-					{, DUSKWOOD },	-- TODO: Duskwood MapID and location
-					{, FERALAS },	-- TODO: Feralas MapID and location
-					{, HINTERLANDS },	-- TODO: The Hinterlands MapID and location
-				},
-				--["maps"] = {  },	-- Ashenvale / Duskwood / Feralas / The Hinterlands [TODO]
-				]]--
+				["coord"] = { 63.3, 27.8, HINTERLANDS },
+				["maps"] = { HINTERLANDS },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					{
 						["itemID"] = 20644,	-- Nightmare Engulfed Object
@@ -140,16 +106,10 @@ _.Instances = {
 				},
 			}),
 			n(14890, {	-- Taerar
-				--[[
-				["coords"] = {
-					{, ASHENVALE },	-- TODO: Ashenvale MapID and location
-					{, DUSKWOOD },	-- TODO: Duskwood MapID and location
-					{, FERALAS },	-- TODO: Feralas MapID and location
-					{, HINTERLANDS },	-- TODO: The Hinterlands MapID and location
-				},
-				--["maps"] = {  },	-- Ashenvale / Duskwood / Feralas / The Hinterlands [TODO]
-				]]--
+				["coord"] = { 45.4, 39.6, DUSKWOOD },
+				["maps"] = { DUSKWOOD },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					{
 						["itemID"] = 20644,	-- Nightmare Engulfed Object
@@ -172,16 +132,10 @@ _.Instances = {
 				},
 			}),
 			n(14887, {	-- Ysondre
-				--[[
-				["coords"] = {
-					{, ASHENVALE },	-- TODO: Ashenvale MapID and location
-					{, DUSKWOOD },	-- TODO: Duskwood MapID and location
-					{, FERALAS },	-- TODO: Feralas MapID and location
-					{, HINTERLANDS },	-- TODO: The Hinterlands MapID and location
-				},
-				--["maps"] = {  },	-- Ashenvale / Duskwood / Feralas / The Hinterlands [TODO]
-				]]--
+				["coord"] = { 94.2, 35.7, ASHENVALE },
+				["maps"] = { ASHENVALE },
 				["isRaid"] = true,
+				["lvl"] = 60,
 				["groups"] = {
 					{
 						["itemID"] = 20644,	-- Nightmare Engulfed Object

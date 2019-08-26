@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(81, {	-- Silithus
+	m(KALIMDOR, {	-- Kalimdor
+		m(SILITHUS, {	-- Silithus
 			n(-17, {	-- Quests
 				q(9248, {	-- A Humble Offering
 					["lvl"] = 54,

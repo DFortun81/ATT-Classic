@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(85, {	-- Orgrimmar
+	m(KALIMDOR, {	-- Kalimdor
+		m(ORGRIMMAR, {	-- Orgrimmar
 			n(-17, {	-- Quests
 				q(7831, {	-- A Donation of Mageweave
 					["lvl"] = 40,

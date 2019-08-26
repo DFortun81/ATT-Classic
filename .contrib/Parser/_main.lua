@@ -5,6 +5,50 @@ _ = AllTheThings;
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
+-- Map Constants for quick and easy replacement when we can get mapIDs on live!
+-- NOTE: All of these must be changed!
+-- Raids (Custom)
+BLACKWING_LAIR = 287;
+MOLTEN_CORE = 232;
+ONYXIAS_LAIR = 248;
+ZULGURUB = 337;
+
+-- Dungeons (Custom)
+BLACKFATHOM_DEEPS = 221;
+DIRE_MAUL = -1;
+SHADOWFANG_KEEP = 310;
+WAILING_CAVERNS = 279;
+
+-- Continents
+KALIMDOR = 1414;
+
+-- Kalimdor
+ASHENVALE = 63;
+AZSHARA = 76;
+DARKSHORE = 62;
+DARNASSUS = 89;
+DESOLACE = 66;
+DUROTAR = 1;
+DUSTWALLOW_MARSH = 70;
+FELWOOD = 77;
+FERALAS = 69;
+MOONGLADE = 80;
+MULGORE = 7;
+ORGRIMMAR = 85;
+SILITHUS = 81;
+STONETALON_MOUNTAINS = 65;
+TANARIS = 71;
+TELDRASSIL = 57;
+THE_BARRENS = -2;
+THOUSAND_NEEDLES = 64;
+THUNDER_BLUFF = 88;
+UNGORO_CRATER = 78;
+WINTERSPRING = 83;
+
+-- Custom Maps
+BLACKROCK_MOUNTAIN = -3;
+
+
 -- Helper Tables
 ALLIANCE_ONLY = {
 	1,	-- Human

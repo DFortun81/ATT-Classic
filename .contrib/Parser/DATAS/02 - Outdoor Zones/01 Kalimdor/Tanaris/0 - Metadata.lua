@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(1414, {	-- Kalimdor
-		m(71, {	-- Tanaris
+	m(KALIMDOR, {	-- Kalimdor
+		m(TANARIS, {	-- Tanaris
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),
