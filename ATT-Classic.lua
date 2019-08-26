@@ -6590,7 +6590,7 @@ app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
-	app.Version = GetAddOnMetadata("AllTheThings", "Version");
+	app.Version = GetAddOnMetadata("ATT-Classic", "Version");
 	ATTClassicAD = _G["ATTClassicAD"];	-- For account-wide data.
 	if not ATTClassicAD then
 		ATTClassicAD = { };
