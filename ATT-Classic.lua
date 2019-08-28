@@ -395,6 +395,11 @@ function app:PlayCompleteSound()
 		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
 	end
 end
+function app:PlayDeathSound()
+	if app.Settings:GetTooltipSetting("Celebrate") then
+		PlayAudio(app.Settings.AUDIO_DEATH_TABLE);
+	end
+end
 function app:PlayFanfare()
 	if app.Settings:GetTooltipSetting("Celebrate") then
 		-- Don't spam the users. It's nice sometimes, but let's put a delay of at least 1 second on there.
@@ -831,12 +836,6 @@ local function GetKey(t)
 			return key;
 		end
 	end
-	--[[
-	print("could not determine key for object")
-	for key,value in pairs(t) do
-		print(key, value);
-	end
-	]]--
 end
 local function CreateHash(t)
 	local key = t.key or GetKey(t);
@@ -1941,6 +1940,10 @@ CacheFields = function(group)
 		_cache = rawget(fieldConverters, rawget(clone, i));
 		if _cache then _cache(group, rawget(group, rawget(clone, i))); end
 	end
+	if group.mapID then
+		_cache = fieldConverters.mapID;
+		if _cache then _cache(group, group.mapID); end
+	end
 end
 end)();
 local function SearchForFieldRecursively(group, field, value)
@@ -2634,26 +2637,19 @@ app.BaseDeathClass = {
 		elseif key == "text" then
 			return "Total Deaths";
 		elseif key == "icon" then
-			return "Interface/ICONS/INV_Misc_Head_Scourge_01";
+			return "Interface\\Addons\\ATT-Classic\\assets\\Normal";
+		elseif key == "collectible" then
+			return true;
 		elseif key == "progress" then
 			return math.min(1000, t.deaths);
 		elseif key == "total" then
 			return 1000;
 		elseif key == "deaths" then
-			return GetTempDataMember("Deaths", 0);
+			return GetDataMember("DeathsPerCharacter", {})[app.GUID] or 0;
 		elseif key == "accountdeaths" then
 			return GetDataMember("Deaths", 0);
 		elseif key == "description" then
-			local description = "Total Deaths Per Character:";
-			local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-			if deathsPerCharacter then
-				for guid,deaths in pairs(GetDataMember("DeathsPerCharacter")) do
-					description = description .. "\n  " .. guid .. ": " .. deaths;
-				end
-			else
-				description = description .. "\n  No Deaths! Literal god!";
-			end
-			return description;
+			return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2661,7 +2657,24 @@ app.BaseDeathClass = {
 	end
 };
 app.CreateDeathClass = function()
-	return setmetatable({}, app.BaseDeathClass);
+	local t = setmetatable({}, app.BaseDeathClass);
+	t.OnTooltip = function(self, tooltip)
+		tooltip:AddLine("Total Deaths Per Character:");
+		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+		if deathsPerCharacter then
+			local characters = GetDataMember("Characters");
+			for guid,deaths in pairs(deathsPerCharacter) do
+				tooltip:AddDoubleLine("  " .. characters[guid], deaths, 1, 1, 1);
+			end
+		else
+			tooltip:AddLine("  No Deaths! Literal god!");
+		end
+	end
+	t.OnUpdate = function(self)
+		t.parent.progress = t.parent.progress + t.progress;
+		t.parent.total = t.parent.total + t.total;
+	end
+	return t;
 end
 
 -- Faction Lib
@@ -4802,6 +4815,8 @@ local function RowOnEnter(self)
 			end
 		end
 		
+		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
+		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
 			local prereqs, bc = {}, {};
@@ -6674,12 +6689,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Cache your character's deaths.
 	local totalDeaths = GetDataMember("Deaths", 0);
 	local deaths = GetDataMember("DeathsPerCharacter", {});
-	local myDeaths = GetTempDataMember("Deaths", deaths[app.GUID]);
-	if not myDeaths then
-		myDeaths = 0;
-		deaths[app.GUID] = myDeaths;
-		SetTempDataMember("Deaths", myDeaths);
-	end
+	deaths[app.GUID] = deaths[app.GUID] or 0;
 	
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -6784,6 +6794,8 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedQuestsPerCharacter",
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
+		"Deaths",
+		"DeathsPerCharacter",
 		"lockouts",
 		"Position",
 		"RandomSearchFilter",
@@ -6840,7 +6852,11 @@ app.events.PLAYER_LOGIN = function()
 end
 app.events.PLAYER_DEAD = function()
 	SetDataMember("Deaths", GetDataMember("Deaths", 0) + 1);
-	SetTempDataMember("Deaths", GetTempDataMember("Deaths", 0) + 1);
+	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+	deathsPerCharacter[app.GUID] = (deathsPerCharacter[app.GUID] or 0) + 1;
+	app.refreshDataForce = true;
+	app:RefreshData(true, true);
+	app:PlayDeathSound();
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then

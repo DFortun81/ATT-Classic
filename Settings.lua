@@ -54,6 +54,9 @@ end
 settings.AUDIO_COMPLETE_TABLE = {
 	"Interface\\Addons\\ATT-Classic\\assets\\complete1.ogg",
 };
+settings.AUDIO_DEATH_TABLE = {
+	"Interface\\Addons\\ATT-Classic\\assets\\death.ogg",
+};
 settings.AUDIO_FANFARE_TABLE = {
 	"Interface\\Addons\\ATT-Classic\\assets\\fanfare1.ogg",
 	"Interface\\Addons\\ATT-Classic\\assets\\fanfare2.ogg",
@@ -108,6 +111,7 @@ local TooltipSettingsBase = {
 		["Locations"] = 5,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
+		["PlayDeathSound"] = false,
 		["Precision"] = 2,
 		["Progress"] = true,
 		["QuestGivers"] = true,
@@ -1643,6 +1647,16 @@ end);
 CelebrateCollectedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a celebratory 'fanfare' sound effect when you obtain a new Thing.\n\nThis feature can greatly help keep you motivated.");
 CelebrateCollectedThingsCheckBox:SetPoint("TOPLEFT", UseMasterAudioChannel, "BOTTOMLEFT", 0, 4);
 
+local DeathSoundCheckBox = settings:CreateCheckBox("Play a Sound Effect when you Die",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("PlayDeathSound"));
+end,
+function(self)
+	settings:SetTooltipSetting("PlayDeathSound", self:GetChecked());
+end);
+DeathSoundCheckBox:SetATTTooltip("Enable this option if you want to hear a sound effect when you die.");
+DeathSoundCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local WarnRemovedThingsCheckBox = settings:CreateCheckBox("Removed Things Trigger a Warning",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Warn:Removed"));
@@ -1651,7 +1665,7 @@ function(self)
 	settings:SetTooltipSetting("Warn:Removed", self:GetChecked());
 end);
 WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
-WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", CelebrateCollectedThingsCheckBox, "BOTTOMLEFT", 0, 4);
+WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", DeathSoundCheckBox, "BOTTOMLEFT", 0, 4);
 end)();
 
 ------------------------------------------
