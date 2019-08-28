@@ -16,6 +16,9 @@ L.ZONE_TEXT_TO_MAP_ID["Bastilha da Presa Negra"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC
 
+-- Cities
+L.ZONE_TEXT_TO_MAP_ID["Penhasco do Trovão"] = 88;	-- Thunder Bluff
+
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here

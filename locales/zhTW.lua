@@ -16,6 +16,9 @@ L.ZONE_TEXT_TO_MAP_ID["影牙城堡"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["奥达曼"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["哀嚎洞穴"] = 279;	-- WC
 
+-- Cities
+L.ZONE_TEXT_TO_MAP_ID["雷霆崖"] = 88;	-- Thunder Bluff
+
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
