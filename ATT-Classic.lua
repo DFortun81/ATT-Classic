@@ -2617,8 +2617,6 @@ app.BaseCurrencyClass = {
 			return GetCurrencyLink(t.currencyID, 1) or select(1, GetCurrencyInfo(t.currencyID));
 		elseif key == "icon" then
 			return select(3, GetCurrencyInfo(t.currencyID));
-		elseif key == "icon" then
-			return select(3, GetCurrencyInfo(t.currencyID));
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2627,6 +2625,34 @@ app.BaseCurrencyClass = {
 };
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
+end
+
+app.BaseDeathClass = {
+	__index = function(t, key)
+		if key == "key" then
+			return "deaths";
+		elseif key == "text" then
+			return t.deaths .. " Deaths (so far)";
+		elseif key == "icon" then
+			return "Interface/ICONS/INV_Misc_Head_Scourge_01";
+		elseif key == "deaths" then
+			return GetTempDataMember("Deaths", 0);
+		elseif key == "accountdeaths" then
+			return GetDataMember("Deaths", 0);
+		elseif key == "description" then
+			local description = "Total Deaths Per Character:";
+			for guid,deaths in pairs(GetDataMember("DeathsPerCharacter")) do
+				description = description .. "\n\t" .. guid .. ": " .. deaths;
+			end
+			return description;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateDeathClass = function()
+	return setmetatable({}, app.BaseDeathClass);
 end
 
 -- Faction Lib
@@ -5159,6 +5185,9 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 		
+		-- Track Deaths!
+		table.insert(g, all:CreateDeathClass());
+		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
 		BuildGroups(allData, allData.g);
@@ -6584,6 +6613,7 @@ end
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
+app:RegisterEvent("PLAYER_DEAD");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
@@ -6631,6 +6661,16 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("WaypointFilters", {});
+	
+	-- Cache your character's deaths.
+	local totalDeaths = GetDataMember("Deaths", 0);
+	local deaths = GetDataMember("DeathsPerCharacter", {});
+	local myDeaths = GetTempDataMember("Deaths", deaths[app.GUID]);
+	if not myDeaths then
+		myDeaths = 0;
+		deaths[app.GUID] = myDeaths;
+		SetTempDataMember("Deaths", myDeaths);
+	end
 	
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -6788,6 +6828,10 @@ app.events.PLAYER_LOGIN = function()
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
+end
+app.events.PLAYER_DEAD = function()
+	SetDataMember("Deaths", GetDataMember("Deaths", 0) + 1);
+	SetTempDataMember("Deaths", GetTempDataMember("Deaths", 0) + 1);
 end
 app.events.ADDON_LOADED = function(addonName)
 	if addonName == "Blizzard_AuctionUI" then
