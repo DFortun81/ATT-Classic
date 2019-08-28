@@ -3122,7 +3122,7 @@ app.BaseFlightPath = {
 		elseif key == "info" then
 			return app.FlightPathDB[t.flightPathID];
 		elseif key == "description" then
-			return "Flight paths are cached when you look at the flight master on each continent. Collection status appears to be broken on the Classic client right now.\n\n:(\n  - Crieve";
+			return "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
 		elseif key == "icon" then
 			local info = t.info;
 			if info and info.faction and info.faction > 0 then
@@ -5978,7 +5978,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					local top = {};
 					for i=#results.g,1,-1 do
 						local o = results.g[i];
-						if o.isRaid then
+						if o.isRaid or o.flightPathID then
 							table.remove(results.g, i);
 							table.insert(top, o);
 						end
