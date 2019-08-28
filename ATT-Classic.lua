@@ -2632,17 +2632,26 @@ app.BaseDeathClass = {
 		if key == "key" then
 			return "deaths";
 		elseif key == "text" then
-			return t.deaths .. " Deaths (so far)";
+			return "Total Deaths";
 		elseif key == "icon" then
 			return "Interface/ICONS/INV_Misc_Head_Scourge_01";
+		elseif key == "progress" then
+			return math.min(1000, t.deaths);
+		elseif key == "total" then
+			return 1000;
 		elseif key == "deaths" then
 			return GetTempDataMember("Deaths", 0);
 		elseif key == "accountdeaths" then
 			return GetDataMember("Deaths", 0);
 		elseif key == "description" then
 			local description = "Total Deaths Per Character:";
-			for guid,deaths in pairs(GetDataMember("DeathsPerCharacter")) do
-				description = description .. "\n\t" .. guid .. ": " .. deaths;
+			local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+			if deathsPerCharacter then
+				for guid,deaths in pairs(GetDataMember("DeathsPerCharacter")) do
+					description = description .. "\n  " .. guid .. ": " .. deaths;
+				end
+			else
+				description = description .. "\n  No Deaths! Literal god!";
 			end
 			return description;
 		else
@@ -5186,7 +5195,7 @@ function app:GetDataCache()
 		]]--
 		
 		-- Track Deaths!
-		table.insert(g, all:CreateDeathClass());
+		table.insert(g, app:CreateDeathClass());
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
