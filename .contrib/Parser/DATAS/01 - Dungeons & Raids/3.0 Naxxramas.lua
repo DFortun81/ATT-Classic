@@ -959,7 +959,7 @@ _.Instances = {
 				},
 			}),
 			n(-370, { 	-- The Plague Quarter
-				["icon"] = "Interface\\Icons\\inv_misc_cauldron_nature",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_PlagueCloud",
 				["groups"] = {
 					n(15954, {	-- Noth the Plaguebringer
 						i(22816),	-- Hatchet of Sundered Bone
@@ -985,7 +985,7 @@ _.Instances = {
 				},
 			}),
 			n(-369, { 	-- The Military Quarter
-				["icon"] = "Interface\\Icons\\spell_deathknight_classicon",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyStrength",
 				["groups"] = {
 					n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 						["description"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
@@ -1040,7 +1040,7 @@ _.Instances = {
 				},
 			}),
 			n(-367, { 	-- The Construct Quarter
-				["icon"] = "Interface\\Icons\\ability_rogue_deviouspoisons",
+				["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 				["groups"] = {
 					n(16028, {	-- Patchwerk
 						i(22815),	-- Severance

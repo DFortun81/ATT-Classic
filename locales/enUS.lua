@@ -198,12 +198,12 @@ app.L = {
 	["NPC_ID_ICONS"] = {
 
 --		[-] = "Interface\\Icons\\", --
-		[0] = "Interface\\Icons\\INV_TreasureChest_FelfireCitadel", 						-- Zone Drop
-		[-1] = "Interface\\Icons\\Achievement_Garrison_Horde_PVE", 							-- Common Boss Drop
+		[0] = "Interface\\Addons\\ATT-Classic\\assets\\INV_TreasureChest_FelfireCitadel", 	-- Zone Drop
+		[-1] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Garrison_Horde_PVE", 	-- Common Boss Drop
 		[-2] = "Interface\\Icons\\INV_Misc_Coin_02", 										-- Vendors
 		[-3] = "Interface\\Icons\\Achievement_Halloween_Bat_01", 							-- World Event
 		[-4] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO", 						-- Achievement
-		[-7] = "Interface\\Icons\\Inv_offhand_1h_artifactskulloferedar_d_05",				-- World Bosses (Achievement_Boss_ShadeOfEranikus)
+		[-7] = "Interface\\Addons\\ATT-Classic\\assets\\Inv_offhand_1h_artifactskulloferedar_d_05",				-- World Bosses (Achievement_Boss_ShadeOfEranikus)
 		[-8] = "Interface\\Icons\\ability_monk_dragonkick",									-- PvE
 		[-9] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- PvP
 		[-12] = "Interface\\Icons\\Ability_Warlock_DemonicEmpowerment", 					-- East entrance demons
@@ -935,6 +935,8 @@ app.L = {
 -- Factions
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
+		
+		[-10066] = "Legendary",
 	},
 
 	["OBJECT_ID_ICONS"] = {

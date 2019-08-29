@@ -2663,8 +2663,17 @@ app.CreateDeathClass = function()
 		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
 		if deathsPerCharacter then
 			local characters = GetDataMember("Characters");
+			local characterDeaths = {};
 			for guid,deaths in pairs(deathsPerCharacter) do
-				tooltip:AddDoubleLine("  " .. characters[guid], deaths, 1, 1, 1);
+				if deaths > 0 then
+					table.insert(characterDeaths, {"  " .. characters[guid], deaths});
+				end
+			end
+			table.sort(characterDeaths, function(a, b)
+				return a[2] >= b[2];
+			end);
+			for i,data in ipairs(characterDeaths) do
+				tooltip:AddDoubleLine(data[1], data[2], 1, 1, 1);
 			end
 		else
 			tooltip:AddLine("  No Deaths! Literal god!");
@@ -5107,7 +5116,7 @@ function app:GetDataCache()
 			db = {};
 			db.mapID = 947;
 			db.text = BUG_CATEGORY2;
-			db.icon = "Interface\\ICONS\\Achievement_Zone_Outland_01"
+			db.icon = "Interface/ICONS/INV_Misc_Map_01"
 			db.g = app.Categories.Zones;
 			table.insert(g, db);
 		end
@@ -5116,7 +5125,7 @@ function app:GetDataCache()
 		if app.Categories.WorldDrops then
 			db = {};
 			db.text = TRANSMOG_SOURCE_4;
-			db.icon = "Interface\\ICONS\\INV_Misc_Map02";
+			db.icon = "Interface/ICONS/INV_Misc_Map_01";
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
 		end
