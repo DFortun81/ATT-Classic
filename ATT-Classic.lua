@@ -396,7 +396,7 @@ function app:PlayCompleteSound()
 	end
 end
 function app:PlayDeathSound()
-	if app.Settings:GetTooltipSetting("Celebrate") then
+	if app.Settings:GetTooltipSetting("PlayDeathSound") then
 		PlayAudio(app.Settings.AUDIO_DEATH_TABLE);
 	end
 end
