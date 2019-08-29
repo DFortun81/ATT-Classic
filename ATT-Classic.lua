@@ -2641,13 +2641,9 @@ app.BaseDeathClass = {
 		elseif key == "collectible" then
 			return true;
 		elseif key == "progress" then
-			return math.min(1000, t.deaths);
+			return math.min(1000, GetDataMember("Deaths", 0));
 		elseif key == "total" then
 			return 1000;
-		elseif key == "deaths" then
-			return GetDataMember("DeathsPerCharacter", {})[app.GUID] or 0;
-		elseif key == "accountdeaths" then
-			return GetDataMember("Deaths", 0);
 		elseif key == "description" then
 			return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 		else
