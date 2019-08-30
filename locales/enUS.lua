@@ -1249,8 +1249,8 @@ app.L = {
 		"Interface\\FriendsFrame\\StatusIcon-Online",	-- There is Hope
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
-		{1, "|CFFFF0000The source of this item was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
-		{1, "|CFFFF0000The source of this item has been removed and the item is Bind on Pickup or Bind on Account.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
+		{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
+		{1, "|CFFFF0000This has been removed from the game.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
 	};
 
 };
