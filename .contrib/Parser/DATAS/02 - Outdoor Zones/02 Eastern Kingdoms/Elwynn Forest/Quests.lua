@@ -107,6 +107,7 @@ _.Zones =
 				q(16, {	-- Give Gerard a Drink
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 255,	-- Gerard Tiller
+					["repeatable"] = true,
 					["g"] = {
 						i(4536),	-- Shiny Red Apple
 					},
@@ -312,6 +313,7 @@ _.Zones =
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 				}),
 				q(7962, {	-- Wabbit Pelts
+					["u"] = 1,
 					["g"] = {
 						i(13913),	-- 22 Pound Lobster
 					},
@@ -331,12 +333,14 @@ _.Zones =
 					},
 				}),
 				q(7961, {	-- Waskily Wabbits!
+					["u"] = 1,
 					["g"] = {
 						i(3300),	-- Rabbit's Foot
 						i(8497),	-- Rabbit Crate (Snowshoe)
 					},
 				}),
 				q(5805, {	-- Welcome!
+					["u"] = 2,
 					["g"] = {
 						i(13584),	-- Diablo Stone
 						i(13583),	-- Panda Collar
