@@ -3495,11 +3495,13 @@ function app.FilterItemBind(item)
 	return item.b == 2 or item.b == 3; -- BoE
 end
 function app.FilterItemClass(item)
-	if app.ItemBindFilter(item) then return true; end
-	return app.ItemTypeFilter(item)
-		and app.RequireBindingFilter(item)
-		and app.ClassRequirementFilter(item)
-		and app.RaceRequirementFilter(item);
+	if app.UnobtainableItemFilter(item) then
+		if app.ItemBindFilter(item) then return true; end
+		return app.ItemTypeFilter(item)
+			and app.RequireBindingFilter(item)
+			and app.ClassRequirementFilter(item)
+			and app.RaceRequirementFilter(item);
+	end
 end
 function app.FilterItemClass_RequireClasses(item)
 	return not item.nmc;
@@ -3551,7 +3553,7 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
-app.UnobtainableItemFilter = app.NoFilter;
+app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 app.ShowIncompleteThings = app.Filter;
 
 -- Recursive Checks
