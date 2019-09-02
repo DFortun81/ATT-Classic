@@ -43,6 +43,7 @@ select(2, ...).FlightPathDB = {
 		name="Booty Bay, Stranglethorn",
 		faction=0,
 		mapID=1434,
+		coord={ 27.5, 77.8, 1434 },
 	},
 	[10] = {
 		name="The Sepulcher, Silverpine Forest",
@@ -88,11 +89,13 @@ select(2, ...).FlightPathDB = {
 		name="Booty Bay, Stranglethorn",
 		faction=0,
 		mapID=1434,
+		coord={ 27.5, 77.8, 1434 },
 	},
 	[19] = {
 		name="Booty Bay, Stranglethorn",
 		faction=0,
 		mapID=1434,
+		coord={ 27.5, 77.8, 1434 },
 	},
 	[20] = {
 		name="Grom'gol, Stranglethorn",

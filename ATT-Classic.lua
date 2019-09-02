@@ -3025,9 +3025,9 @@ app.CacheFlightPathData = function()
 end
 app.events.TAXIMAP_OPENED = function()
 	local flightMaps, knownNodeIDs = {}, {};
-	for nodeID,node in pairs(app.FlightPathDB) do
+	for nodeID,node in ipairs(app.FlightPathDB) do
 		if node.mapID == app.CurrentMapID and not node.u then
-			if not node.faction or (node.faction > 0 and node.faction == app.FactionID) then
+			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
 				tinsert(flightMaps, nodeID);
 			end
 		end
@@ -3046,7 +3046,7 @@ app.events.TAXIMAP_OPENED = function()
 					local node = app.FlightPathDB[id];
 					if node and node.coord then
 						-- Allow for a little bit of leeway.
-						if math.sqrt((x2 - px)^2 + (y2 - py)^2) < 0.05 then
+						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.05 then
 							tinsert(knownNodeIDs, id);
 						end
 					end
@@ -3058,7 +3058,7 @@ app.events.TAXIMAP_OPENED = function()
 	end
 	
 	if #knownNodeIDs == 0 then
-		print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", mapID);
+		print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", app.CurrentMapID);
 	end
 	
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
