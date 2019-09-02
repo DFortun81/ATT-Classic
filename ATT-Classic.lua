@@ -3026,8 +3026,10 @@ end
 app.events.TAXIMAP_OPENED = function()
 	local flightMaps, knownNodeIDs = {}, {};
 	for nodeID,node in pairs(app.FlightPathDB) do
-		if node.mapID == app.CurrentMapID then
-			tinsert(flightMaps, nodeID);
+		if node.mapID == app.CurrentMapID and not node.u then
+			if not node.faction or (node.faction > 0 and node.faction == app.FactionID) then
+				tinsert(flightMaps, nodeID);
+			end
 		end
 	end
 	local count = #flightMaps;

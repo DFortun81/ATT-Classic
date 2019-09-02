@@ -2,7 +2,6 @@ select(2, ...).FlightPathDB = {
 	[1] = {
 		name="Northshire Abbey",
 		faction=2,
-		--mapID=1429,
 		u=1,
 	},
 	[2] = {
@@ -229,6 +228,7 @@ select(2, ...).FlightPathDB = {
 		name="Southshore Ferry, Hillsbrad",
 		faction=2,
 		mapID=1424,
+		u=1,
 	},
 	[47] = {
 		name="Transport, Grom'gol - Orgrimmar",
