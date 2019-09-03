@@ -58,6 +58,17 @@ profession(356, {	-- Fishing
 			["lvl"] = 10,
 		},
 		{
+			["questID"] = 6609,	-- I Got Nothin' Left!
+			["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
+			["requireSkill"] = 356,	-- Fishing
+			["description"] = "Requires 225 Fishing to start this quest.",
+			["coord"] = { 48.4, 6.4, IRONFORGE },
+			["maps"] = { IRONFORGE },
+			["races"] = ALLIANCE_ONLY,
+			["isBreadcrumb"] = true,
+			["lvl"] = 35,
+		},
+		{
 			["questID"] = 8193,	-- Master Angler
 			["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 			["requireSkill"] = 356,	-- Fishing
@@ -70,6 +81,28 @@ profession(356, {	-- Fishing
 			["groups"] = {
 				i(19970),	-- Arcanite Fishing Pole
 				i(19979),	-- Hook of the Master Angler
+			},
+		},
+		{
+			["questID"] = 6607,	-- Nat Pagle, Angler Extreme
+			["qg"] = 12919,	-- Nat Pagle
+			["sourceQuests"] = {
+				6609,	-- I Got Nothin' Left!
+				6608,	-- You Too Good.
+			},
+			["requireSkill"] = 356,	-- Fishing
+			["description"] = "Requires 225 Fishing to start this quest.",
+			["coord"] = { 48.4, 6.4, DUSTWALLOW_MARSH },
+			["maps"] = { DUSTWALLOW_MARSH },
+			["lvl"] = 35,
+			["cost"] = {
+				{ "i", 16967, 1 },	-- Feralas Ahi
+				{ "i", 16970, 1 },	-- Misty Reed Mahi Mahi
+				{ "i", 16968, 1 },	-- Sar'theris Striker
+				{ "i", 16969, 1 },	-- Savage Coast Blue Sailfin
+			},
+			["groups"] = {
+				recipe(18248),	-- Fishing (Artisan)
 			},
 		},
 		{
@@ -129,9 +162,16 @@ profession(356, {	-- Fishing
 				i(7996),	-- Worn Fishing Hat
 			},
 		},
-		
-		
-		
-		
+		{
+			["questID"] = 6608,	-- You Too Good.
+			["qg"] = 3332,	-- Lumak <Fishing Trainer>
+			["requireSkill"] = 356,	-- Fishing
+			["description"] = "Requires 225 Fishing to start this quest.",
+			["coord"] = { 69.8, 29.6, ORGRIMMAR },
+			["maps"] = { ORGRIMMAR },
+			["races"] = HORDE_ONLY,
+			["isBreadcrumb"] = true,
+			["lvl"] = 35,
+		},
 	}),
 });
