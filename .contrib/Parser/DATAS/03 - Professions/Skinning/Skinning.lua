@@ -6,6 +6,7 @@ profession(393, {	-- Skinning
 			["requireSkill"] = 393,	-- Skinning
 			["coord"] = { 44.0, 44.6, THUNDER_BLUFF },
 			["maps"] = { THUNDER_BLUFF },
+			["races"] = HORDE_ONLY,
 			["lvl"] = 4,
 			["g"] = {
 				i(5936),	-- Animal Skin Belt
