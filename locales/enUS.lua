@@ -1207,7 +1207,38 @@ app.L = {
 		[189989] = "Dark Iron Mole Machine Wreckage",
 		[189990] = "Dark Iron Mole Machine Wreckage",
 	};
-
+	
+	["TRADESKILL_CATEGORY_ICONS"] = {
+		[1] = "Interface\\Icons\\INV_Ammo_Bullet_01",	-- Bullets
+		[2] = "Interface\\Icons\\INV_Crate_06",	-- Devices
+		[3] = "Interface\\Icons\\INV_Misc_Bomb_03",	-- Explosives
+		[4] = "Interface\\Icons\\Spell_Fire_Flare",	-- Fireworks
+		[5] = "Interface\\Icons\\INV_Helmet_47",	-- Goggles
+		[6] = "Interface\\Icons\\INV_Weapon_Rifle_03",	-- Guns
+		[7] = "Interface\\Icons\\INV_Gizmo_BronzeFramework_01",	-- Parts
+		[8] = "Interface\\Icons\\INV_Misc_Spyglass_03",	-- Scopes
+		[9] = "Interface\\Icons\\INV_Misc_Wrench_01",	-- Tools
+	},
+	["TRADESKILL_CATEGORY_NAMES"] = {
+		[1] = "Bullets",	-- Bullets
+		[2] = "Devices",	-- Devices
+		[3] = "Explosives",	-- Explosives
+		[4] = "Fireworks",	-- Fireworks
+		[5] = "Goggles",	-- Goggles
+		[6] = "Guns",	-- Guns
+		[7] = "Parts",	-- Parts
+		[8] = "Scopes",	-- Scopes
+		[9] = "Tools",	-- Tools
+	},
+	["TRADESKILL_TEXT_TO_SPELL_ID"] = {
+		["Engineering"] = 4036,
+		["Gnomish Engineer"] = 4036,
+		["Goblin Engineer"] = 4036,
+		["First Aid"] = 3273,
+		["Mining"] = 2656,
+		["Smelting"] = 2656,
+	},
+	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard
 	-- didn't use the same localization for the instance. Sorry.

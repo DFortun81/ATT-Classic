@@ -199,8 +199,11 @@ _.Instances = {
 				i(19343),	-- Scrolls of Blinding Light
 			}),
 			n(14401, {	-- Master Elemental Shaper Krixix
-				i(18562),	-- Elementium Ingot
-				i(44956),	-- Goblin's Guide to Elementium
+				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
+				["groups"] = {
+					recipe(22967),	-- Smelt Elementium
+					i(18562),	-- Elementium Ingot
+				},
 			}),
 			n(14601, {	-- Ebonroc
 				i(19353),	-- Drake Talon Cleaver

@@ -24,6 +24,14 @@ L.ZONE_TEXT_TO_MAP_ID["Cavernes des lamentations"] = 279;	-- WC
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["Thunder Bluff"] = 88;	-- Thunder Bluff
 
+-- Professions
+L.TRADESKILL_TEXT_TO_SPELL_ID["Ingénieur"] = 4036;	-- Engineering
+L.TRADESKILL_TEXT_TO_SPELL_ID["Ingénieur gobelin"] = 4036;	-- Goblin Engineer
+L.TRADESKILL_TEXT_TO_SPELL_ID["Ingénieur gnome"] = 4036;	-- Gnome Engineer
+L.TRADESKILL_TEXT_TO_SPELL_ID["Premiers soins"] = 3273;	-- First Aid
+L.TRADESKILL_TEXT_TO_SPELL_ID["Minage"] = 2656;	-- Mining
+L.TRADESKILL_TEXT_TO_SPELL_ID["Fondre"] = 2656;	-- Smelting
+
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here

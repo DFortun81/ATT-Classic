@@ -1233,7 +1233,7 @@ end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
-		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		if true or app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			local right = nil;
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
@@ -1259,11 +1259,10 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						end
 					end
 				elseif group.visible then
-					right = "---";
+					right = group.count and (group.count .. "x") or "---";
 				end
 			end
 			
-			-- If there's progress to display, then let's summarize a bit better.
 			if right then
 				-- If this group has a droprate, add it to the display.
 				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
@@ -1289,7 +1288,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- Determine if this tooltip needs more work the next time it refreshes.
 		if not paramA then paramA = ""; end
-		local working, info = false, {};
+		local working, info, crafted = false, {}, {};
 		cache = { now, 100000000 };
 		searchCache[search] = cache;
 		
@@ -1480,73 +1479,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				
 				local reagentCache = app.GetDataSubMember("Reagents", itemID);
 				if reagentCache then
-					--[[
-					for recipeID,count in pairs(reagentCache[1]) do
-						local searchResults = SearchForField("spellID", recipeID);
-						if searchResults then
+					for itemID,count in pairs(reagentCache[2]) do
+						MergeObject(crafted, CreateObject({ ["itemID"] = itemID, ["count"] = count }));
+						local searchResults = app.SearchForField("itemID", itemID);
+						if searchResults and #searchResults > 0 then
 							for i,o in ipairs(searchResults) do
-								if not contains(group, o) then
-									tinsert(group, o);
-								end
-							end
-						end
-					end
-					]]--
-					if select(14, GetItemInfo(itemID)) == 1 and not app.Settings:Get("DebugMode") then
-						if not app.AppliedSkillIDToNPCIDs then
-							app.AppliedSkillIDToNPCIDs = true;
-							local skillIDMap = {
-								[-178] = 20222, 										-- Goblin Engineering
-								[-179] = 20219, 										-- Gnomish Engineering
-								[-180] = 171,				 							-- Alchemy
-								[-181] = 164,				 							-- Blacksmithing
-								[-182] = 333,				 							-- Enchanting
-								[-183] = 202,				 							-- Engineering
-								[-184] = 182,				 							-- Herbalism
-								[-185] = 773,				 							-- Inscription
-								[-186] = 755,				 							-- Jewelcrafting
-								[-187] = 165,				 							-- Leatherworking
-								[-188] = 186,				 							-- Mining
-								[-189] = 393,				 							-- Skinning
-								[-190] = 197,				 							-- Tailoring
-								[-191] = 794, 										-- Archaeology
-								[-192] = 185, 											-- Cooking
-								[-193] = 129, 										-- First Aid
-								[-194] = 356, 											-- Fishing
-							};
-							for npcID,skillID in pairs(skillIDMap) do
-								local searchResults = app.SearchForField("creatureID", npcID);
-								if searchResults then
-									for i,o in ipairs(searchResults) do
-										o.skillID = skillID;
-									end
-								end
-							end
-						end
-					
-						-- If the reagent itself is BOP, then only show things you can make.
-						for itemID,count in pairs(reagentCache[2]) do
-							local searchResults = app.SearchForField("itemID", itemID);
-							if searchResults then
-								for i,o in ipairs(searchResults) do
-									if not contains(group, o) then
-										local skillID = GetRelativeValue(o, "skillID");
-										if not skillID or app.GetTradeSkillCache()[skillID] then
-											tinsert(group, o);
-										end
-									end
-								end
-							end
-						end
-					else
-						for itemID,count in pairs(reagentCache[2]) do
-							local searchResults = app.SearchForField("itemID", itemID);
-							if searchResults then
-								for i,o in ipairs(searchResults) do
-									if not contains(group, o) then
-										tinsert(group, o);
-									end
-								end
+								MergeObject(crafted, CreateObject(o));
 							end
 						end
 					end
@@ -1682,6 +1620,66 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if #entries > 0 then
 					tinsert(info, { left = "Contains:" });
 					if #entries < 25 then
+						for i,item in ipairs(entries) do
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							
+							-- If this group has specialization requirements, let's attempt to show the specialization icons.
+							right = item.right;
+							local specs = item.group.specs;
+							if specs and #specs > 0 then
+								table.sort(specs);
+								for i,spec in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+								end
+							end
+							tinsert(info, { left = item.prefix .. left, right = right });
+						end
+					else
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							
+							-- If this group has specialization requirements, let's attempt to show the specialization icons.
+							right = item.right;
+							local specs = item.group.specs;
+							if specs and #specs > 0 then
+								table.sort(specs);
+								for i,spec in ipairs(specs) do
+									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
+									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
+								end
+							end
+							tinsert(info, { left = item.prefix .. left, right = right });
+						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+					end
+				end
+			end
+		end
+		
+		-- Crafted Items
+		if crafted and #crafted > 0 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				local entries, left, right = {};
+				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				if #entries > 0 then
+					tinsert(info, { left = "Used to Craft:" });
+					if #entries < 25 then
+						table.sort(entries, function(a, b)
+							if a.group.name then
+								if b.group.name then
+									return a.group.name <= b.group.name;
+								end
+								return true;
+							end
+							return false;
+						end);
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
@@ -2532,11 +2530,9 @@ app.BaseCategory = {
 		if key == "key" then
 			return "categoryID";
 		elseif key == "text" then
-			local info = app.GetDataSubMember("Categories", t.categoryID);
-			if info then return info; end
-			return "Open your Professions to Cache";
+			return L.TRADESKILL_CATEGORY_NAMES[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 		elseif key == "icon" then
-			return "Interface/ICONS/INV_Garrison_Blueprints1";
+			return L.TRADESKILL_CATEGORY_ICONS[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -3195,6 +3191,22 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 app.NPCDisplayIDFromID = NPCDisplayIDFromID;
+local skillIDMap = {
+	[-178] = 20222, 										-- Goblin Engineering
+	[-179] = 20219, 										-- Gnomish Engineering
+	[-180] = 171,				 							-- Alchemy
+	[-181] = 164,				 							-- Blacksmithing
+	[-182] = 333,				 							-- Enchanting
+	[-183] = 202,				 							-- Engineering
+	[-184] = 182,				 							-- Herbalism
+	[-187] = 165,				 							-- Leatherworking
+	[-188] = 186,				 							-- Mining
+	[-189] = 393,				 							-- Skinning
+	[-190] = 197,				 							-- Tailoring
+	[-192] = 185, 											-- Cooking
+	[-193] = 129, 											-- First Aid
+	[-194] = 356, 											-- Fishing
+};
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3218,6 +3230,8 @@ app.BaseNPC = {
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "spellID" then
+			return skillIDMap[t.npcID];
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
@@ -3266,7 +3280,6 @@ end
 -- Profession Lib
 local SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
-	[794] = 158762,	-- Arch
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
 	[333] = 7411,	-- Enchanting
@@ -3274,14 +3287,11 @@ local SkillIDToSpellID = setmetatable({
 	[356] = 7620,	-- Fishing
 	[129] = 3273,	-- First Aid
 	[182] = 2366,	-- Herb Gathering
-	[773] = 45357,	-- Inscription
-	[755] = 25229,	-- Jewelcrafting
 	[165] = 2108,	-- Leatherworking
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
-	[960] = 53428,  -- Runeforging
-}, {__index = function(t,k) return(106727) end})
+}, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3394,6 +3404,12 @@ app.BaseRecipe = {
 		elseif key == "text" then
 			return t.link;
 		elseif key == "icon" then
+			local icon = t.baseicon;
+			if icon and icon ~= 136235 then
+				return icon;
+			end
+			return "Interface\\ICONS\\INV_Scroll_04";
+		elseif key == "baseicon" then
 			if t.itemID then return select(5, GetItemInfoInstant(t.itemID)); end
 			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
 		elseif key == "link" then
@@ -3431,6 +3447,31 @@ app.CreateRecipe = function(id, t)
 end
 
 -- Spell Lib
+(function()
+local dirty = false;
+app.SpellIDToSpellName = setmetatable({}, {
+	__index = function(t, spellID)
+		local spellName = GetSpellInfo(spellID);
+		if spellName then
+			dirty = true;
+			rawset(t, spellID, spellName);
+			rawset(app.SpellNameToSpellID, spellName, spellID);
+			return spellName;
+		end
+	end
+});
+app.SpellNameToSpellID = setmetatable({}, {
+	__index = function(t, key)
+		local cache, spellName = fieldCache["spellID"];
+		for spellID,o in pairs(cache) do
+			spellName = app.SpellIDToSpellName[spellID];
+		end
+		if dirty then
+			dirty = false;
+			return rawget(t, key);
+		end
+	end
+});
 app.BaseSpell = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3477,6 +3518,7 @@ app.BaseSpell = {
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
 end
+end)();
 
 -- Filtering
 function app.Filter()
@@ -4621,7 +4663,7 @@ local function RowOnEnter(self)
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], tostring(GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0))); end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0) or "???"); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
@@ -5181,6 +5223,17 @@ function app:GetDataCache()
 		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
 		db.text = "Flight Paths";
 		table.insert(g, db);
+		
+		-- Professions
+		if app.Categories.Professions then
+			db = {};
+			db.expanded = false;
+			db.text = TRADE_SKILLS;
+			db.icon = "Interface\\ICONS\\INV_Scroll_04";
+			db.g = app.Categories.Professions;
+			db.collectible = false;
+			table.insert(g, db);
+		end
 		
 		-- NPCs (Dynamic)
 		--[[
@@ -6519,6 +6572,288 @@ app:GetWindow("Random", UIParent, function(self)
 		UpdateWindow(self, true);
 	end
 end);
+app:GetWindow("Tradeskills", UIParent, function(self, ...)
+	if not self.initialized then
+		self.initialized = true;
+		self:SetMovable(false);
+		self:SetUserPlaced(false);
+		self:SetClampedToScreen(false);
+		self:RegisterEvent("TRADE_SKILL_SHOW");
+		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
+		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("NEW_RECIPE_LEARNED");
+		self.wait = 5;
+		self.data = {
+			['text'] = "Profession List",
+			['icon'] = "Interface\\Icons\\INV_Scroll_04", 
+			["description"] = "Open your professions to cache them.",
+			['visible'] = true, 
+			['expanded'] = true,
+			["indent"] = 0,
+			['back'] = 1,
+			['g'] = { },
+		};
+		self.CacheRecipes = function(self)
+			-- Cache Learned Spells
+			local skillCache = fieldCache["spellID"];
+			if skillCache then
+				local tradeSkillID = L.TRADESKILL_TEXT_TO_SPELL_ID[GetTradeSkillLine()];
+				if not tradeSkillID then
+					app.print("Could not find spellID for", GetTradeSkillLine(), GetLocale(), "! Please report this to the ATT Discord!");
+					return;
+				end
+				
+				-- Cache learned recipes
+				local learned = 0;
+				local numTradeSkills = GetNumTradeSkills();
+				local reagentCache = app.GetDataMember("Reagents", {});
+				for skillIndex = 1,numTradeSkills do
+					local skillName, skillType, numAvailable, isExpanded, altVerb, numSkillUps, indentLevel, showProgressBar, currentRank, maxRank, startingRank = GetTradeSkillInfo(skillIndex);
+					if skillType ~= "header" then
+						local itemLink = GetTradeSkillItemLink(skillIndex);
+						if itemLink then
+							local spellID = app.SpellNameToSpellID[skillName];
+							if spellID then
+								SetTempDataSubMember("CollectedSpells", spellID, 1);
+								if not GetDataSubMember("CollectedSpells", spellID) then
+									SetDataSubMember("CollectedSpells", spellID, 1);
+									learned = learned + 1;
+								end
+								if not skillCache[spellID] then
+									app.print("Missing " .. (itemLink or "[??]") .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
+									skillCache[spellID] = { {} };
+								end
+							else
+								app.print("Missing " .. (itemLink or "[??]") .. " spellID in ATT Database. Please report it!");
+							end
+							
+							-- Cache the Reagents used to make this item.
+							local craftedItemID = GetItemInfoInstant(itemLink);
+							for i=1,GetTradeSkillNumReagents(skillIndex) do
+								local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
+								local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
+								
+								-- Make sure a cache table exists for this item.
+								-- Index 1: The Recipe Skill IDs
+								-- Index 2: The Crafted Item IDs
+								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
+								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+							end
+						end
+					end
+				end
+				
+				-- Open the Tradeskill list for this Profession
+				if self.tradeSkillID ~= tradeSkillID then
+					self.tradeSkillID = tradeSkillID;
+					if app.Categories.Professions then
+						for i,group in ipairs(app.Categories.Professions) do
+							if group.requireSkill == tradeSkillID then
+								self.data = CloneData(group);
+								self.data.indent = 0;
+								self.data.visible = true;
+								BuildGroups(self.data, self.data.g);
+								app.UpdateGroups(self.data, self.data.g);
+								if not self.data.expanded then
+									self.data.expanded = true;
+									ExpandGroupsRecursively(self.data, true);
+								end
+								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+									self:SetVisible(true);
+								end
+							end
+						end
+					end
+				end
+			
+				-- If something new was "learned", then refresh the data.
+				if learned > 0 then
+					app:RefreshData(false, true);
+					app.print("Cached " .. learned .. " known recipes!");
+					wipe(searchCache);
+				end
+			end
+		end
+		self.RefreshRecipes = function(self)
+			if app.CollectibleRecipes then
+				self.wait = 5;
+				StartCoroutine("RefreshingRecipes", function()
+					while self.wait > 0 do
+						self.wait = self.wait - 1;
+						coroutine.yield();
+					end
+					self:CacheRecipes();
+				end);
+			end
+		end
+		
+		-- TSM Shenanigans
+		self.TSMCraftingVisible = nil;
+		self.SetTSMCraftingVisible = function(self, visible)
+			visible = not not visible;
+			if visible == self.TSMCraftingVisible then
+				return;
+			end
+			self.TSMCraftingVisible = visible;
+			self:SetMovable(true);
+			self:ClearAllPoints();
+			if visible and self.cachedTSMFrame then
+				if self.cachedTSMFrame.queue and self.cachedTSMFrame.queue:IsShown() then
+					self:SetPoint("TOPLEFT", self.cachedTSMFrame.queue, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame.queue, "BOTTOMRIGHT", 0, 0);
+				else
+					self:SetPoint("TOPLEFT", self.cachedTSMFrame, "TOPRIGHT", 0, 0);
+					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
+				end
+				self:SetMovable(false);
+			elseif TradeSkillFrame then
+				-- Default Alignment on the WoW UI.
+				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", -37, -11);
+				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", -37, 72);
+				self:SetMovable(false);
+			else
+				self:SetMovable(false);
+				StartCoroutine("TSMWHY", function()
+					while InCombatLockdown() or not TradeSkillFrame do coroutine.yield(); end
+					StartCoroutine("TSMWHYPT2", function()
+						local thing = self.TSMCraftingVisible;
+						self.TSMCraftingVisible = nil;
+						self:SetTSMCraftingVisible(thing);
+					end);
+				end);
+				return;
+			end
+			StartCoroutine("UpdateTradeSkills", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				coroutine.yield();
+				self:Update();
+			end);
+		end
+		-- Setup Event Handlers and register for events
+		self:SetScript("OnEvent", function(self, e, ...)
+			if e == "TRADE_SKILL_LIST_UPDATE" then
+				self:RefreshRecipes();
+				self:Update();
+			elseif e == "TRADE_SKILL_SHOW" then
+				if self.TSMCraftingVisible == nil then
+					self:SetTSMCraftingVisible(false);
+				end
+				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+					self:SetVisible(true);
+				end
+				self:RefreshRecipes();
+			elseif e == "NEW_RECIPE_LEARNED" then
+				local spellID = ...;
+				if spellID then
+					local previousState = GetDataSubMember("CollectedSpells", spellID);
+					SetDataSubMember("CollectedSpells", spellID, 1);
+					if not GetTempDataSubMember("CollectedSpells", spellID) then
+						SetTempDataSubMember("CollectedSpells", spellID, 1);
+						app:RefreshData(true, true);
+						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
+							app:PlayFanfare();
+						end
+						wipe(searchCache);
+					end
+				end
+			elseif e == "TRADE_SKILL_CLOSE" then
+				self:SetVisible(false);
+			end
+		end);
+		return;
+	end
+	if self:IsVisible() then
+		if TSM_API then
+			if not self.cachedTSMFrame then
+				for i,f in ipairs({UIParent:GetChildren()}) do
+					if f.headerBgCenter then
+						self.cachedTSMFrame = f;
+						local oldSetVisible = f.SetVisible;
+						local oldShow = f.Show;
+						local oldHide = f.Hide;
+						f.SetVisible = function(s, visible)
+							oldSetVisible(s, visible);
+							self:SetTSMCraftingVisible(visible);
+						end
+						f.Hide = function(s)
+							oldHide(s);
+							self:SetTSMCraftingVisible(false);
+						end
+						f.Show = function(s)
+							oldShow(s);
+							self:SetTSMCraftingVisible(true);
+						end
+						if self.gettinMadAtDumbNamingConventions then
+							TSMAPI_FOUR.UI.NewElement = self.OldNewElement;
+							self.gettinMadAtDumbNamingConventions = nil;
+							self.OldNewElement = nil;
+						end
+						self:SetTSMCraftingVisible(f:IsShown());
+						return;
+					end
+				end
+				if not self.gettinMadAtDumbNamingConventions then
+					self.gettinMadAtDumbNamingConventions = true;
+					self.OldNewElement = TSMAPI_FOUR.UI.NewElement;
+					TSMAPI_FOUR.UI.NewElement = function(...)
+						StartCoroutine("UpdateTradeSkills", function()
+							while InCombatLockdown() do coroutine.yield(); end
+							coroutine.yield();
+							self:Update();
+						end);
+						return self.OldNewElement(...);
+					end
+				end
+			end
+		elseif TSMCraftingTradeSkillFrame then
+			if not self.cachedTSMFrame then
+				local f = TSMCraftingTradeSkillFrame;
+				self.cachedTSMFrame = f;
+				local oldSetVisible = f.SetVisible;
+				local oldShow = f.Show;
+				local oldHide = f.Hide;
+				f.SetVisible = function(s, visible)
+					oldSetVisible(s, visible);
+					self:SetTSMCraftingVisible(visible);
+				end
+				f.Hide = function(s)
+					oldHide(s);
+					self:SetTSMCraftingVisible(false);
+				end
+				f.Show = function(s)
+					oldShow(s);
+					self:SetTSMCraftingVisible(true);
+				end
+				if f.queueBtn then
+					local setScript = f.queueBtn.SetScript;
+					f.queueBtn.SetScript = function(s, e, callback)
+						if e == "OnClick" then
+							setScript(s, e, function(...)
+								if callback then callback(...); end
+								
+								local thing = self.TSMCraftingVisible;
+								self.TSMCraftingVisible = nil;
+								self:SetTSMCraftingVisible(thing);
+							end);
+						else
+							setScript(s, e, callback);
+						end
+					end
+					f.queueBtn:SetScript("OnClick", f.queueBtn:GetScript("OnClick"));
+				end
+				self:SetTSMCraftingVisible(f:IsShown());
+				return;
+			end
+		end
+		
+		-- Update the window and all of its row data
+		self.data.progress = 0;
+		self.data.total = 0;
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, ...);
+	end
+end);
 GameTooltip:HookScript("OnTooltipSetQuest", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetItem", AttachTooltip);
 GameTooltip:HookScript("OnTooltipSetUnit", AttachTooltip);
@@ -6793,7 +7128,6 @@ app.events.VARIABLES_LOADED = function()
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
-		"Categories",
 		"Characters",
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
@@ -6829,17 +7163,6 @@ end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
 	app.CurrentMapID = app.GetCurrentMapID();
-	local reagentCache = app.GetDataMember("Reagents");
-	if reagentCache then
-		local craftedItem = { {}, {[31890] = 1} };	-- Blessings Deck
-		for i,itemID in ipairs({ 31882, 31889, 31888, 31885, 31884, 31887, 31886, 31883 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31907] = 1} };	-- Furies Deck
-		for i,itemID in ipairs({ 31901, 31909, 31908, 31904, 31903, 31906, 31905, 31902 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31914] = 1} };	-- Lunacy Deck
-		for i,itemID in ipairs({ 31910, 31918, 31917, 31913, 31912, 31916, 31915, 31911 }) do reagentCache[itemID] = craftedItem; end
-		craftedItem = { {}, {[31891] = 1} };	-- Storms Deck
-		for i,itemID in ipairs({ 31892, 31900, 31899, 31895, 31894, 31898, 31896, 31893 }) do reagentCache[itemID] = craftedItem; end
-	end
 	app:GetDataCache();
 	
 	-- Mark all previously completed quests.

@@ -19,6 +19,14 @@ L.ZONE_TEXT_TO_MAP_ID["통곡의 동굴"] = 279;	-- WC
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["썬더 블러프"] = 88;	-- Thunder Bluff
 
+-- Professions
+L.TRADESKILL_TEXT_TO_SPELL_ID["기계공학"] = 4036;	-- Engineering
+L.TRADESKILL_TEXT_TO_SPELL_ID["고블린 기계공학"] = 4036;	-- Goblin Engineer
+L.TRADESKILL_TEXT_TO_SPELL_ID["노움 기계공학"] = 4036;	-- Gnome Engineer
+L.TRADESKILL_TEXT_TO_SPELL_ID["응급치료"] = 3273;	-- First Aid
+L.TRADESKILL_TEXT_TO_SPELL_ID["채광"] = 2656;	-- Mining
+L.TRADESKILL_TEXT_TO_SPELL_ID["제련술"] = 2656;	-- Smelting
+
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
