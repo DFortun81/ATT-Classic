@@ -6601,6 +6601,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				if not tradeSkillID then
 					app.print("Could not find spellID for", GetTradeSkillLine(), GetLocale(), "! Please report this to the ATT Discord!");
 					return;
+				elseif tradeSkillID == 2656 then	-- Smelting, point this to Mining.
+					tradeSkillID = 2575;
 				end
 				
 				-- Cache learned recipes
@@ -6645,24 +6647,23 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				end
 				
 				-- Open the Tradeskill list for this Profession
-				if self.tradeSkillID ~= tradeSkillID then
+				if self.tradeSkillID ~= tradeSkillID and app.Categories.Professions then
 					self.tradeSkillID = tradeSkillID;
-					if app.Categories.Professions then
-						for i,group in ipairs(app.Categories.Professions) do
-							if group.requireSkill == tradeSkillID then
-								self.data = CloneData(group);
-								self.data.indent = 0;
-								self.data.visible = true;
-								BuildGroups(self.data, self.data.g);
-								app.UpdateGroups(self.data, self.data.g);
-								if not self.data.expanded then
-									self.data.expanded = true;
-									ExpandGroupsRecursively(self.data, true);
-								end
-								if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-									self:SetVisible(true);
-								end
+					for i,group in ipairs(app.Categories.Professions) do
+						if group.spellID == tradeSkillID then
+							self.data = CloneData(group);
+							self.data.indent = 0;
+							self.data.visible = true;
+							BuildGroups(self.data, self.data.g);
+							app.UpdateGroups(self.data, self.data.g);
+							if not self.data.expanded then
+								self.data.expanded = true;
+								ExpandGroupsRecursively(self.data, true);
 							end
+							if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
+								self:SetVisible(true);
+							end
+							break;
 						end
 					end
 				end

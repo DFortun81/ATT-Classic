@@ -54,14 +54,6 @@ _.Zones =
 						i(5810),	-- Fresh Carcass
 					},
 				}),
-				q(768, {	-- Gathering Leather
-					["lvl"] = 4,
-					["qg"] = 3050,	-- Veren Tallstrider
-					["g"] = {
-						i(5936),	-- Animal Skin Belt
-						i(4962),	-- Double-layered Gloves
-					},
-				}),
 				q(1065, {	-- Journey to Tarren Mill
 					["lvl"] = 13,
 					["races"] = HORDE_ONLY,

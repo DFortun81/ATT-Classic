@@ -5,7 +5,7 @@ profession(182, {	-- Herbalism
 			["questID"] = 866,	-- Root Samples
 			["qg"] = 3446,	-- Mebok Mizzyrix
 			["requireSkill"] = 182,	-- Herbalism
-			["coord"] = { 67.8, 71.6, THE_BARRENS },
+			["coord"] = { 62.4, 37.6, THE_BARRENS },
 			["maps"] = { THE_BARRENS },
 			["lvl"] = 9,
 			["g"] = {
