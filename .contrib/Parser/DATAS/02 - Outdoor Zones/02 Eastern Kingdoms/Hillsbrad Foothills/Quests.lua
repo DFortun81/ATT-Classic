@@ -316,6 +316,7 @@ _.Zones =
 				}),
 				q(566, {	-- WANTED: Baron Vardus
 					["lvl"] = 35,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(2231),	-- Inferno Robe
 					},
