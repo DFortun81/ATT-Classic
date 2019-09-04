@@ -5235,6 +5235,17 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Skills
+		if app.Categories.Skills then
+			db = {};
+			db.expanded = false;
+			db.text = SKILLS;
+			db.icon = "Interface\\ICONS\\SPELL_NATURE_THUNDERCLAP";
+			db.g = app.Categories.Skills;
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
 		-- NPCs (Dynamic)
 		--[[
 		db = {};
