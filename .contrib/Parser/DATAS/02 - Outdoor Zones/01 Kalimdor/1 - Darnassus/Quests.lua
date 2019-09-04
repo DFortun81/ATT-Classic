@@ -81,7 +81,9 @@ _.Zones =
 				}),
 				q(6344, {	-- Nessa Shadowsong
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						4,	-- Night Elf
+					},
 					["qg"] = 4265,	-- Nyoma
 				}),
 				q(6762, {	-- Rabine Saturna

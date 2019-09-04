@@ -60,7 +60,9 @@ _.Zones =
 				}),
 				q(854, {	-- Journey to the Crossroads
 					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						6,	-- Tauren
+					},
 				}),
 				q(766, {	-- Mazzranache
 					["lvl"] = 5,
@@ -72,7 +74,9 @@ _.Zones =
 				}),
 				q(748, {	-- Poison Water
 					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 2948,	-- Mull Thunderhorn
 				}),
 				q(757, {	-- Rite of Strength
@@ -114,6 +118,7 @@ _.Zones =
 				}),
 				q(776, {	-- Rites of the Earthmother
 					["lvl"] = 3,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4909),	-- Kodo Hunter's Leggings
 					},
@@ -194,7 +199,9 @@ _.Zones =
 				}),
 				q(756, {	-- Thunderhorn Totem
 					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 2948,	-- Mull Thunderhorn
 				}),
 				q(5844, {	-- Welcome!
@@ -206,6 +213,9 @@ _.Zones =
 				}),
 				q(760, {	-- Wildmane Cleansing
 					["lvl"] = 4,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["g"] = {
 						i(3443),	-- Ceremonial Tomahawk
 						i(4961),	-- Dreamwatcher Staff
@@ -213,8 +223,9 @@ _.Zones =
 				}),
 				q(759, {	-- Wildmane Totem
 					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
-				}),
+					["races"] = {
+						6,	-- Tauren
+					},				}),
 				q(754, {	-- Winterhoof Cleansing
 					["lvl"] = 4,
 					["qg"] = 2948,	-- Mull Thunderhorn

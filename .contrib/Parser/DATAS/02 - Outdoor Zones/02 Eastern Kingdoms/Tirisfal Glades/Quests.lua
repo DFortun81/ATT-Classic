@@ -190,7 +190,9 @@ _.Zones =
 					["qg"] = 1495,	-- Deathguard Linnea
 				}),
 				q(363, {	-- Rude Awakening
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						5,	-- Undead
+					},
 					["qg"] = 1568,	-- Undertaker Mordo
 				}),
 				q(3902, {	-- Scavenging Deathknell
