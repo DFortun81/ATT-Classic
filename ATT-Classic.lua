@@ -4692,7 +4692,7 @@ local function RowOnEnter(self)
 		if reference.minReputation and reference.maxReputation then
 			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
 			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
-			local factionName = GetFactionInfoByID(reference.minReputation[1]);
+			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = "Requires a standing between"
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
 			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. " and"
