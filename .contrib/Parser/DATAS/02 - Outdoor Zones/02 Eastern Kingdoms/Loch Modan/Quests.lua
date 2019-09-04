@@ -120,12 +120,18 @@ _.Zones =
 				}),
 				q(6388, {	-- Gryth Thurden
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
 				q(6387, {	-- Honor Students
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 					["qgs"] = {
 						1681,	-- Brock Stoneseeker
 						1699,	-- Gremlock Pilsnor
@@ -221,12 +227,18 @@ _.Zones =
 				}),
 				q(6392, {	-- Return to Brock
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 					["qg"] = 1573,	-- Gryth Thurden
 				}),
 				q(6391, {	-- Ride to Ironforge
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
 					["qg"] = 1572,	-- Thorgrum Borrelson
 				}),
 				q(912, {	-- Stonesplinter Trogg Disguise

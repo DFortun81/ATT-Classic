@@ -8,7 +8,9 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(6181, {	-- A Swift Message
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						1,	-- Human
+					},
 					["qg"] = 491,	-- Quartermaster Lewis
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure
@@ -37,12 +39,16 @@ _.Zones =
 				}),
 				q(6281, {	-- Continue to Stormwind
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						1,	-- Human
+					},
 					["qg"] = 523,	-- Thor
 				}),
 				q(6261, {	-- Dungar Longdrink
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						1,	-- Human
+					},
 					["qg"] = 1323,	-- Osric Strang
 				}),
 				q(184, {	-- Furlbrow's Deed
@@ -103,7 +109,9 @@ _.Zones =
 				}),
 				q(6285, {	-- Return to Lewis
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						1,	-- Human
+					},
 					["qg"] = 352,	-- Dungar Longdrink
 				}),
 				q(50, {	-- Sweet Amber

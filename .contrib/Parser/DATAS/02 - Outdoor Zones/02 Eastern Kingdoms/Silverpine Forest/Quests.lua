@@ -134,7 +134,9 @@ _.Zones =
 				}),
 				q(6322, {	-- Michael Garrett
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						5,	-- Undead
+					},
 					["qg"] = 4556,	-- Gordon Wendham
 				}),
 				q(421, {	-- Prove Your Worth
@@ -171,7 +173,9 @@ _.Zones =
 				}),
 				q(6324, {	-- Return to Podrig
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						5,	-- Undead
+					},
 					["qg"] = 4551,	-- Michael Garrett
 				}),
 				q(430, {	-- Return to Quinn
@@ -181,7 +185,9 @@ _.Zones =
 				}),
 				q(6323, {	-- Ride to the Undercity
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						5,	-- Undead
+					},
 					["qg"] = 2226,	-- Karos Razok
 				}),
 				q(439, {	-- Rot Hide Clues
@@ -206,7 +212,9 @@ _.Zones =
 				}),
 				q(6321, {	-- Supplying the Sepulcher
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						5,	-- Undead
+					},
 					["qgs"] = {
 						1745,	-- Deathguard Morris
 						6389,	-- Deathguard Podrig

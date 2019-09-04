@@ -155,7 +155,9 @@ _.Zones =
 				}),
 				q(6342, {	-- Flight to Auberdine
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						4,	-- Night Elf
+					},
 					["qgs"] = {
 						3838,	-- Vesprystus
 						7316,	-- Sister Aquinne
@@ -239,7 +241,9 @@ _.Zones =
 				}),
 				q(6343, {	-- Return to Nessa
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						4,	-- Night Elf
+					},
 					["qg"] = 4200,	-- Laird
 				}),
 				q(950, {	-- Return to Onu
@@ -304,7 +308,9 @@ _.Zones =
 				}),
 				q(6341, {	-- The Bounty of Teldrassil
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = {
+						4,	-- Night Elf
+					},
 					["qg"] = 10118,	-- Nessa Shadowsong
 				}),
 				q(4762, {	-- The Cliffspring River

@@ -8,7 +8,9 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(6361, {	-- A Bundle of Hides
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 3079,	-- Varg Windwhisper
 				}),
 				q(1153, {	-- A New Ore Sample
@@ -134,7 +136,10 @@ _.Zones =
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						2,	-- Orc
+						8,  -- Troll
+					},
 					["qg"] = 6929,	-- Innkeeper Gryshka
 				}),
 				q(881, {	-- Echeyakee
@@ -272,7 +277,10 @@ _.Zones =
 				}),
 				q(6365, {	-- Meats to Orgrimmar
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						2,	-- Orc
+						8,  -- Troll
+					},
 					["qgs"] = {
 						3489,	-- Zargh
 						3881,	-- Grimtak
@@ -344,11 +352,17 @@ _.Zones =
 				}),
 				q(6364, {	-- Return to Jahan
 					["lvl"] = 10,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 2995,	-- Tal
 				}),
 				q(6386, {	-- Return to the Crossroads.
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						2,	-- Orc
+						8,  -- Troll
+					},
 					["qg"] = 3310,	-- Doras
 				}),
 				q(849, {	-- Revenge of Gann
@@ -366,12 +380,17 @@ _.Zones =
 				}),
 				q(6384, {	-- Ride to Orgrimmar
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						2,	-- Orc
+						8,  -- Troll
+					},
 					["qg"] = 3615,	-- Devrak
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 3615,	-- Devrak
 				}),
 				q(3923, {	-- Rilli Greasygob
@@ -472,6 +491,9 @@ _.Zones =
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
 					["lvl"] = 10,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 8359,	-- Ahanu
 				}),
 				q(905, {	-- The Angry Scytheclaws
