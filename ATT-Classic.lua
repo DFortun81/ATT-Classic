@@ -3402,7 +3402,8 @@ app.BaseRecipe = {
 		elseif key == "filterID" then
 			return 200;
 		elseif key == "text" then
-			return t.link;
+			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "icon" then
 			local icon = t.baseicon;
 			if icon and icon ~= 136235 and icon ~= 136192 then
@@ -3414,7 +3415,7 @@ app.BaseRecipe = {
 			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
 		elseif key == "link" then
 			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
-			return select(1, GetSpellLink(t.spellID));
+			return "spell:" .. t.spellID;
 		elseif key == "collectible" then
 			return app.CollectibleRecipes;
 		elseif key == "collected" then
@@ -3480,7 +3481,15 @@ app.BaseSpell = {
 		if key == "key" then
 			return "spellID";
 		elseif key == "text" then
-			return t.link;
+			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
+				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
+				if link then
+					t.link = link;
+					t.icon = icon;
+					return link;
+				end
+			end
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "link" then
@@ -3492,7 +3501,7 @@ app.BaseSpell = {
 					return link;
 				end
 			end
-			return select(1, GetSpellLink(t.spellID));
+			return "spell:" .. t.spellID;
 		elseif key == "collectible" then
 			return false;
 		elseif key == "collected" then
