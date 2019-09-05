@@ -1221,6 +1221,13 @@ app.L = {
 		[10] = "Interface\\Icons\\INV_Misc_Food_12",	-- Everyday Cooking
 		[11] = "Interface\\Icons\\INV_Misc_Food_62",	-- Holiday Cooking
 		[12] = "Interface\\Icons\\INV_Helmet_66",	-- Unusual Delights
+		[13] = "Interface\\Icons\\INV_Cask_02",	-- Materials
+		[14] = "Interface\\Icons\\INV_Potion_51",	-- Potions
+		[15] = "Interface\\Icons\\INV_Potion_56",	-- Elixirs
+		[16] = "Interface\\Icons\\INV_Potion_41",	-- Flasks
+		[17] = "Interface\\Icons\\Spell_Fire_Volcano",	-- Transmutes
+		[18] = "Interface\\Icons\\INV_Misc_Orb_01",	-- Trinkets
+		[19] = "Interface\\Icons\\INV_Drink_12",	-- Oils
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		[1] = "Bullets",	-- Bullets
@@ -1235,6 +1242,14 @@ app.L = {
 		[10] = "Everyday Cooking",	-- Everyday Cooking
 		[11] = "Holiday Cooking",	-- Holiday Cooking
 		[12] = "Unusual Delights",	-- Unusual Delights
+		[13] = "Materials",	-- Materials
+		[14] = "Potions",	-- Potions
+		[15] = "Elixirs",	-- Elixirs
+		[16] = "Flasks",	-- Flasks
+		[17] = "Transmutes",	-- Transmutes
+		[18] = "Trinkets",	-- Trinkets
+		[19] = "Oils",	-- Oils
+		[20] = "",	-- 
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
