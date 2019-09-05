@@ -1261,6 +1261,20 @@ app.L = {
 		[43] = "Interface\\Icons\\INV_Wand_06",	-- Wands
 		[44] = "Interface\\Icons\\Inv_poison_mindnumbing",	-- Oils
 		[45] = "Interface\\Icons\\inv_misc_gem_bloodstone_01",	-- Trinket
+		
+		-- Leatherworking
+		[46] = "Interface\\Icons\\INV_Misc_LeatherScrap_03",	-- Materials
+		[47] = "Interface\\Icons\\INV_Misc_ArmorKit_17",	-- Armor Kits
+		[48] = "Interface\\Icons\\INV_Misc_Bag_07",	-- Bags
+		[49] = "Interface\\Icons\\INV_Helmet_08",	-- Helms
+		[50] = "Interface\\Icons\\INV_Shoulder_01",	-- Shoulders
+		[51] = "Interface\\Icons\\INV_Chest_Chain_13",	-- Chest
+		[52] = "Interface\\Icons\\INV_Bracer_08",	-- Bracers
+		[53] = "Interface\\Icons\\INV_Gauntlets_05",	-- Gloves
+		[54] = "Interface\\Icons\\INV_Belt_24",	-- Belts
+		[55] = "Interface\\Icons\\INV_Pants_12",	-- Pants
+		[56] = "Interface\\Icons\\INV_Boots_Chain_01",	-- Boots
+		[57] = "Interface\\Icons\\INV_Misc_Cape_03",	-- Cloaks
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1318,10 +1332,19 @@ app.L = {
 		[44] = "Oils",	-- Oils
 		[45] = "Trinket",	-- Trinket
 		
-		--[46] = "",	-- 
-		--[47] = "",	-- 
-		--[48] = "",	-- 
-		--[49] = "",	-- 
+		-- Leatherworking
+		[46] = "Materials",	-- Materials
+		[47] = "Armor Kits",	-- Armor Kits
+		[48] = "Bags",	-- Bags
+		[49] = "Helms",	-- Helms
+		[50] = "Shoulders",	-- Shoulders
+		[51] = "Chest",	-- Chest
+		[52] = "Bracers",	-- Bracers
+		[53] = "Gloves",	-- Gloves
+		[54] = "Belts",	-- Belts
+		[55] = "Pants",	-- Pants
+		[56] = "Boots",	-- Boots
+		[57] = "Cloaks",	-- Cloaks
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
