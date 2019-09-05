@@ -1275,6 +1275,20 @@ app.L = {
 		[55] = "Interface\\Icons\\INV_Pants_12",	-- Pants
 		[56] = "Interface\\Icons\\INV_Boots_Chain_01",	-- Boots
 		[57] = "Interface\\Icons\\INV_Misc_Cape_03",	-- Cloaks
+		
+		-- Tailoring
+		[58] = "Interface\\Icons\\inv_fabric_silk_03",	-- Materials
+		[59] = "Interface\\Icons\\inv_misc_bag_19",	-- Bags
+		[60] = "Interface\\Icons\\inv_helmet_31",	-- Hats & Hoods
+		[61] = "Interface\\Icons\\inv_shoulder_02",	-- Shoulders
+		[62] = "Interface\\Icons\\inv_chest_cloth_18",	-- Robes & Tunics
+		[63] = "Interface\\Icons\\inv_bracer_07",	-- Bracers
+		[64] = "Interface\\Icons\\inv_belt_14",	-- Belts
+		[65] = "Interface\\Icons\\inv_gauntlets_06",	-- Gloves
+		[66] = "Interface\\Icons\\inv_pants_06",	-- Pants
+		[67] = "Interface\\Icons\\inv_boots_05",	-- Boots
+		[68] = "Interface\\Icons\\inv_misc_cape_16",	-- Cloaks
+		[69] = "Interface\\Icons\\inv_shirt_red_01",	-- Shirts
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1345,6 +1359,20 @@ app.L = {
 		[55] = "Pants",	-- Pants
 		[56] = "Boots",	-- Boots
 		[57] = "Cloaks",	-- Cloaks
+		
+		-- Tailoring
+		[58] = "Materials",	-- Materials
+		[59] = "Bags",	-- Bags
+		[60] = "Hats & Hoods",	-- Hats & Hoods
+		[61] = "Shoulders",	-- Shoulders
+		[62] = "Robes & Tunics",	-- Robes & Tunics
+		[63] = "Bracers",	-- Bracers
+		[64] = "Belts",	-- Belts
+		[65] = "Gloves",	-- Gloves
+		[66] = "Pants",	-- Pants
+		[67] = "Boots",	-- Boots
+		[68] = "Cloaks",	-- Cloaks
+		[69] = "Shirts",	-- Shirts
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
