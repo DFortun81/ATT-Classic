@@ -22,14 +22,20 @@ _.Zones =
 					},
 				}),
 				q(5043, {	-- Agamaggan's Agility
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(5042, {	-- Agamaggan's Strength
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(880, {	-- Altered Beings
 					["lvl"] = 10,
@@ -341,9 +347,12 @@ _.Zones =
 					["qg"] = 3464,	-- Gazrog
 				}),
 				q(5046, {	-- Razorhide
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(6541, {	-- Report to Kadrak
 					["lvl"] = 17,
@@ -399,9 +408,12 @@ _.Zones =
 					["qg"] = 9316,	-- Wenikee Boltbucket
 				}),
 				q(5045, {	-- Rising Spirit
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(901, {	-- Samophlange
 					["lvl"] = 10,
@@ -462,9 +474,12 @@ _.Zones =
 					},
 				}),
 				q(889, {	-- Spirit of the Wind
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(888, {	-- Stolen Booty
 					["lvl"] = 9,
@@ -629,9 +644,12 @@ _.Zones =
 					["qg"] = 3390,	-- Apothecary Helbrim
 				}),
 				q(5044, {	-- Wisdom of Agamaggan
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["maps"] = { THE_BARRENS },
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
+					["repeatable"] = true,
 				}),
 				q(1483, {	-- Ziz Fizziks
 					["lvl"] = 16,
