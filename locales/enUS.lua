@@ -1209,6 +1209,7 @@ app.L = {
 	};
 	
 	["TRADESKILL_CATEGORY_ICONS"] = {
+		-- Engineering
 		[1] = "Interface\\Icons\\INV_Ammo_Bullet_01",	-- Bullets
 		[2] = "Interface\\Icons\\INV_Crate_06",	-- Devices
 		[3] = "Interface\\Icons\\INV_Misc_Bomb_03",	-- Explosives
@@ -1221,6 +1222,8 @@ app.L = {
 		[10] = "Interface\\Icons\\INV_Misc_Food_12",	-- Everyday Cooking
 		[11] = "Interface\\Icons\\INV_Misc_Food_62",	-- Holiday Cooking
 		[12] = "Interface\\Icons\\INV_Helmet_66",	-- Unusual Delights
+		
+		-- Alchemy
 		[13] = "Interface\\Icons\\INV_Cask_02",	-- Materials
 		[14] = "Interface\\Icons\\INV_Potion_51",	-- Potions
 		[15] = "Interface\\Icons\\INV_Potion_56",	-- Elixirs
@@ -1228,8 +1231,25 @@ app.L = {
 		[17] = "Interface\\Icons\\Spell_Fire_Volcano",	-- Transmutes
 		[18] = "Interface\\Icons\\INV_Misc_Orb_01",	-- Trinkets
 		[19] = "Interface\\Icons\\INV_Drink_12",	-- Oils
+		
+		-- Blacksmithing
+		[20] = "Interface\\Icons\\inv_stone_grindingstone_05",	-- Materials
+		[21] = "Interface\\Icons\\inv_stone_sharpeningstone_03",	-- Weapon Mods
+		[22] = "Interface\\Icons\\Inv_misc_armorkit_02",	-- Armor Mods
+		[23] = "Interface\\Icons\\INV_Helmet_25",	-- Helms
+		[24] = "Interface\\Icons\\INV_Shoulder_22",	-- Shoulders
+		[25] = "Interface\\Icons\\INV_Chest_Chain",	-- Chest
+		[26] = "Interface\\Icons\\INV_Gauntlets_04",	-- Gauntlets
+		[27] = "Interface\\Icons\\INV_Bracer_17",	-- Bracers
+		[28] = "Interface\\Icons\\INV_Belt_27",	-- Belts
+		[29] = "Interface\\Icons\\INV_Pants_04",	-- Legs
+		[30] = "Interface\\Icons\\INV_Boots_01",	-- Boots
+		[31] = "Interface\\Icons\\INV_Shield_06",	-- Shields
+		[32] = "Interface\\Icons\\INV_Weapon_Halberd_10",	-- Weapons
+		[33] = "Interface\\Icons\\INV_Misc_Key_11",	-- Skeleton Keys
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
+		-- Engineering
 		[1] = "Bullets",	-- Bullets
 		[2] = "Devices",	-- Devices
 		[3] = "Explosives",	-- Explosives
@@ -1239,9 +1259,13 @@ app.L = {
 		[7] = "Parts",	-- Parts
 		[8] = "Scopes",	-- Scopes
 		[9] = "Tools",	-- Tools
+		
+		-- Cooking
 		[10] = "Everyday Cooking",	-- Everyday Cooking
 		[11] = "Holiday Cooking",	-- Holiday Cooking
 		[12] = "Unusual Delights",	-- Unusual Delights
+		
+		-- Alchemy
 		[13] = "Materials",	-- Materials
 		[14] = "Potions",	-- Potions
 		[15] = "Elixirs",	-- Elixirs
@@ -1249,7 +1273,22 @@ app.L = {
 		[17] = "Transmutes",	-- Transmutes
 		[18] = "Trinkets",	-- Trinkets
 		[19] = "Oils",	-- Oils
-		[20] = "",	-- 
+		
+		-- Blacksmithing
+		[20] = "Materials",	-- Materials
+		[21] = "Weapon Mods",	-- Weapon Mods
+		[22] = "Armor Mods",	-- Armor Mods
+		[23] = "Helms",	-- Helms
+		[24] = "Shoulders",	-- Shoulders
+		[25] = "Chest",	-- Chest
+		[26] = "Gauntlets",	-- Gauntlets
+		[27] = "Bracers",	-- Bracers
+		[28] = "Belts",	-- Belts
+		[29] = "Legs",	-- Legs
+		[30] = "Boots",	-- Boots
+		[31] = "Shields",	-- Shields
+		[32] = "Weapons",	-- Weapons
+		[33] = "Skeleton Keys",	-- Skeleton Keys
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
