@@ -1247,6 +1247,20 @@ app.L = {
 		[31] = "Interface\\Icons\\INV_Shield_06",	-- Shields
 		[32] = "Interface\\Icons\\INV_Weapon_Halberd_10",	-- Weapons
 		[33] = "Interface\\Icons\\INV_Misc_Key_11",	-- Skeleton Keys
+		
+		-- Enchanting
+		[34] = "Interface\\Icons\\INV_Staff_01",	-- Rods
+		[35] = "Interface\\Icons\\Inv_ingot_eternium",	-- Reagents
+		[36] = "Interface\\Icons\\INV_Boots_01",	-- Boot Enchantments
+		[37] = "Interface\\Icons\\INV_Bracer_17",	-- Bracer Enchantments
+		[38] = "Interface\\Icons\\INV_Chest_Chain",	-- Chest Enchantments
+		[39] = "Interface\\Icons\\INV_Misc_Cape_18",	-- Cloak Enchantments
+		[40] = "Interface\\Icons\\INV_Gauntlets_04",	-- Glove Enchantments
+		[41] = "Interface\\Icons\\Spell_Fire_EnchantWeapon",	-- Weapon Enchantments
+		[42] = "Interface\\Icons\\INV_Shield_05",	-- Shield Enchantments
+		[43] = "Interface\\Icons\\INV_Wand_06",	-- Wands
+		[44] = "Interface\\Icons\\Inv_poison_mindnumbing",	-- Oils
+		[45] = "Interface\\Icons\\inv_misc_gem_bloodstone_01",	-- Trinket
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1289,6 +1303,25 @@ app.L = {
 		[31] = "Shields",	-- Shields
 		[32] = "Weapons",	-- Weapons
 		[33] = "Skeleton Keys",	-- Skeleton Keys
+		
+		-- Enchanting
+		[34] = "Rods",	-- Rods
+		[35] = "Reagents",	-- Reagents
+		[36] = "Boot Enchantments",	-- Boot Enchantments
+		[37] = "Bracer Enchantments",	-- Bracer Enchantments
+		[38] = "Chest Enchantments",	-- Chest Enchantments
+		[39] = "Cloak Enchantments",	-- Cloak Enchantments
+		[40] = "Glove Enchantments",	-- Glove Enchantments
+		[41] = "Weapon Enchantments",	-- Weapon Enchantments
+		[42] = "Shield Enchantments",	-- Shield Enchantments
+		[43] = "Wands",	-- Wands
+		[44] = "Oils",	-- Oils
+		[45] = "Trinket",	-- Trinket
+		
+		--[46] = "",	-- 
+		--[47] = "",	-- 
+		--[48] = "",	-- 
+		--[49] = "",	-- 
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

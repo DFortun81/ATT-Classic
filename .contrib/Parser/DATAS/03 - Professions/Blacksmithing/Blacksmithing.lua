@@ -4,12 +4,20 @@ profession(164, {	-- Blacksmithing
 		["categoryID"] = 20,
 		["g"] = {
 			{
+				["name"] = "Arcanite Rod",
+				["recipeID"] = 16206
+			},
+			{
 				["name"] = "Coarse Grinding Stone",
 				["recipeID"] = 3326
 			},
 			{
 				["name"] = "Dense Grinding Stone",
 				["recipeID"] = 16639
+			},
+			{
+				["name"] = "Golden Rod",
+				["recipeID"] = 11128
 			},
 			{
 				["name"] = "Heavy Grinding Stone",
@@ -28,9 +36,17 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 3320
 			},
 			{
+				["name"] = "Silver Rod",
+				["recipeID"] = 6338
+			},
+			{
 				["name"] = "Solid Grinding Stone",
 				["recipeID"] = 9920
-			}
+			},
+			{
+				["name"] = "Truesilver Rod",
+				["recipeID"] = 11144
+			},
 		}
 	},
 	{
