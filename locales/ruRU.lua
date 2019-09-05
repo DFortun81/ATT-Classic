@@ -18,14 +18,7 @@ L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
 
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["Громовой Утес"] = 88;	-- Thunder Bluff
-
--- Professions
-L.TRADESKILL_TEXT_TO_SPELL_ID["Инженерное дело"] = 4036;	-- Engineering
-L.TRADESKILL_TEXT_TO_SPELL_ID["Гоблинский механик"] = 4036;	-- Goblin Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Гномский механик"] = 4036;	-- Gnome Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Первая помощь"] = 3273;	-- First Aid
-L.TRADESKILL_TEXT_TO_SPELL_ID["Горное дело"] = 2656;	-- Mining
-L.TRADESKILL_TEXT_TO_SPELL_ID["Выплавка металлов"] = 2656;	-- Smelting
+L.ZONE_TEXT_TO_MAP_ID["Громовой Утес"] = 88;	-- Thunder Bluff
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({

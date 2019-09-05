@@ -1218,6 +1218,9 @@ app.L = {
 		[7] = "Interface\\Icons\\INV_Gizmo_BronzeFramework_01",	-- Parts
 		[8] = "Interface\\Icons\\INV_Misc_Spyglass_03",	-- Scopes
 		[9] = "Interface\\Icons\\INV_Misc_Wrench_01",	-- Tools
+		[10] = "Interface\\Icons\\INV_Misc_Food_12",	-- Everyday Cooking
+		[11] = "Interface\\Icons\\INV_Misc_Food_62",	-- Holiday Cooking
+		[12] = "Interface\\Icons\\INV_Helmet_66",	-- Unusual Delights
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		[1] = "Bullets",	-- Bullets
@@ -1229,14 +1232,9 @@ app.L = {
 		[7] = "Parts",	-- Parts
 		[8] = "Scopes",	-- Scopes
 		[9] = "Tools",	-- Tools
-	},
-	["TRADESKILL_TEXT_TO_SPELL_ID"] = {
-		["Engineering"] = 4036,
-		["Gnomish Engineer"] = 4036,
-		["Goblin Engineer"] = 4036,
-		["First Aid"] = 3273,
-		["Mining"] = 2656,
-		["Smelting"] = 2656,
+		[10] = "Everyday Cooking",	-- Everyday Cooking
+		[11] = "Holiday Cooking",	-- Holiday Cooking
+		[12] = "Unusual Delights",	-- Unusual Delights
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

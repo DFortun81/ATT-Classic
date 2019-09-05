@@ -29,14 +29,6 @@ L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["Thunder Bluff"] = 88;	-- Thunder Bluff
 
--- Professions
-L.TRADESKILL_TEXT_TO_SPELL_ID["Ingenieurskunst"] = 4036;	-- Engineering
-L.TRADESKILL_TEXT_TO_SPELL_ID["Goblin-Ingenieur"] = 4036;	-- Goblin Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Gnomen-Ingenieur"] = 4036;	-- Gnome Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Erste Hilfe"] = 3273;	-- First Aid
-L.TRADESKILL_TEXT_TO_SPELL_ID["Bergbau"] = 2656;	-- Mining
-L.TRADESKILL_TEXT_TO_SPELL_ID["Verhüttung"] = 2656;	-- Smelting
-
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	[-1] = "Gemeinsame Bossbeute",										-- Common Boss Drop

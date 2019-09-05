@@ -19,14 +19,6 @@ L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["Penhasco do Trovão"] = 88;	-- Thunder Bluff
 
--- Professions
-L.TRADESKILL_TEXT_TO_SPELL_ID["Engenharia"] = 4036;	-- Engineering
-L.TRADESKILL_TEXT_TO_SPELL_ID["Engenheiro Goblin"] = 4036;	-- Goblin Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Engenheiro Gnômico"] = 4036;	-- Gnome Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["Primeiros Socorros"] = 3273;	-- First Aid
-L.TRADESKILL_TEXT_TO_SPELL_ID["Mineração"] = 2656;	-- Mining
-L.TRADESKILL_TEXT_TO_SPELL_ID["Fundição"] = 2656;	-- Smelting
-
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here

@@ -3278,7 +3278,7 @@ app.CreateObject = function(id, t)
 end
 
 -- Profession Lib
-local SkillIDToSpellID = setmetatable({
+app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
@@ -3303,7 +3303,7 @@ app.BaseProfession = {
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "spellID" then
-			return SkillIDToSpellID[t.requireSkill];
+			return app.SkillIDToSpellID[t.requireSkill];
 		elseif key == "skillID" then
 			return t.requireSkill;
 		else
@@ -3405,7 +3405,7 @@ app.BaseRecipe = {
 			return t.link;
 		elseif key == "icon" then
 			local icon = t.baseicon;
-			if icon and icon ~= 136235 then
+			if icon and icon ~= 136235 and icon ~= 136192 then
 				return icon;
 			end
 			return "Interface\\ICONS\\INV_Scroll_04";
@@ -3464,6 +3464,9 @@ app.SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
 		local cache, spellName = fieldCache["spellID"];
 		for spellID,o in pairs(cache) do
+			spellName = app.SpellIDToSpellName[spellID];
+		end
+		for skillID,spellID in pairs(app.SkillIDToSpellID) do
 			spellName = app.SpellIDToSpellName[spellID];
 		end
 		if dirty then
@@ -4388,7 +4391,7 @@ local function StartMovingOrSizing(self, fromChild)
 		StopMovingOrSizing(self);
 	else
 		self.isMoving = true;
-		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
+		if not self:IsMovable() or ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
 			Push(self, "StartMovingOrSizing (Sizing)", function()
 				if self.isMoving then
@@ -4663,7 +4666,7 @@ local function RowOnEnter(self)
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(SkillIDToSpellID[reference.requireSkill] or 0) or "???"); end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or "???"); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
@@ -6608,7 +6611,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
-				local tradeSkillID = L.TRADESKILL_TEXT_TO_SPELL_ID[GetTradeSkillLine()];
+				local tradeSkillID = app.SpellNameToSpellID[GetTradeSkillLine()];
 				if not tradeSkillID then
 					app.print("Could not find spellID for", GetTradeSkillLine(), GetLocale(), "! Please report this to the ATT Discord!");
 					return;
@@ -7165,7 +7168,7 @@ app.events.VARIABLES_LOADED = function()
 	for key,value in pairs(oldsettings) do
 		ATTClassicAD[key] = value;
 	end
-
+	
 	-- Tooltip Settings
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);

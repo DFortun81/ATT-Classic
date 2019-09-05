@@ -19,12 +19,6 @@ L.ZONE_TEXT_TO_MAP_ID["哀嚎洞穴"] = 279;	-- WC
 -- Cities
 L.ZONE_TEXT_TO_MAP_ID["雷霆崖"] = 88;	-- Thunder Bluff
 
--- Professions
-L.TRADESKILL_TEXT_TO_SPELL_ID["工程学"] = 4036;	-- Engineering
-L.TRADESKILL_TEXT_TO_SPELL_ID["地精工程师"] = 4036;	-- Goblin Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["侏儒工程学"] = 4036;	-- Gnome Engineer
-L.TRADESKILL_TEXT_TO_SPELL_ID["急救"] = 3273;	-- First Aid
-
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
