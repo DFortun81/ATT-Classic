@@ -180,9 +180,9 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter Only!
 					["lvl"] = 10,
 					["groups"] = {
-						spell(883),		-- Call Pet
-						spell(2641),	-- Dismiss Pet
-						spell(1515),	-- Tame Beast
+						recipe(883),		-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
 					},
 				}),
 				q(6103, {	-- Taming the Beast
@@ -193,9 +193,8 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter Only!
 					["lvl"] = 10,
 					["groups"] = {
-						spell(261),		-- Beast Training
-						spell(6991),	-- Feed Pet
-						spell(982),		-- Revive Pet
+						recipe(6991),		-- Feed Pet
+						recipe(982),		-- Revive Pet
 					},
 				}),
 				q(940, {	-- Teldrassil
