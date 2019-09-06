@@ -599,6 +599,7 @@ _.Zones =
 					["lvl"] = 17,
 					["races"] = HORDE_ONLY,
 					["qg"] = 8582,	-- Kadrak
+					["sourceQuests"] = { 6542, 6541 },	-- Report to Kadrak
 				}),
 				q(845, {	-- The Zhevra
 					["lvl"] = 10,

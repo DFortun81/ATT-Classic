@@ -38,25 +38,29 @@ _.Zones =
 		["races"] = HORDE_ONLY,
 		["lvl"] = 12,
 	}),
-				q(6461, {	-- Blood Feeders
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
-					["qg"] = 12816,	-- Xen'Zilla
-				}),
-				q(6283, {	-- Bloodfury Bloodline
-					["lvl"] = 18,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11860,	-- Maggran Earthbinder
-					["g"] = {
-						i(16990),	-- Spritekin Cloak
-						i(16987),	-- Screecher Belt
-					},
-				}),
-				q(6421, {	-- Boulderslide Ravine
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11861,	-- Mor'rogal
-				}),
+	q(6461, {	-- Blood Feeders
+		["qg"] = 12816,	-- Xen'Zilla
+		["coord"] = { 71.25, 95.00, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 13,
+	}),
+	q(6283, {	-- Bloodfury Bloodline
+		["qg"] = 11860,	-- Maggran Earthbinder
+		["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 18,
+		["g"] = {
+			i(16990),	-- Spritekin Cloak
+			i(16987),	-- Screecher Belt
+		},
+		["sourceQuest"] = 6282,	-- Harpies Threaten
+	}),
+	q(6421, {	-- Boulderslide Ravine
+		["qg"] = 11861,	-- Mor'rogal
+		["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 14,
+	}),
 	q(5881, {	-- Calling in the Reserves
 		["qg"] = 11860,	-- Maggran Earthbinder
 		["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
@@ -100,11 +104,12 @@ _.Zones =
 						i(1306),	-- Wolfmane Wristguards
 					},
 				}),
-				q(6393, {	-- Elemental War
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11862,	-- Tsunaman
-				}),
+	q(6393, {	-- Elemental War
+		["qg"] = 11862,	-- Tsunaman
+		["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
+		["lvl"] = 19,
+		["races"] = HORDE_ONLY,
+	}),
 				q(1083, {	-- Enraged Spirits
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
@@ -135,17 +140,19 @@ _.Zones =
 			i(6668),	-- Draftsman Boots
 		},
 	}),
-				q(1090, {	-- Gerenzo's Orders
-					["lvl"] = 17,
-					["qg"] = 4276,	-- Piznik
-				}),
-				q(1092, {	-- Gerenzo's Orders
-					["lvl"] = 17,
-					["qg"] = 4276,	-- Piznik
-					["g"] = {
-						i(6666),	-- Dredge Boots
-					},
-				}),
+	q(1090, {	-- Gerenzo's Orders
+		["qg"] = 4276,	-- Piznik
+		["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+		["lvl"] = 17,
+	}),
+	q(1092, {	-- Gerenzo's Orders
+		["qg"] = 4276,	-- Piznik
+		["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+		["lvl"] = 17,
+		["g"] = {
+			i(6666),	-- Dredge Boots
+		},
+	}),
 	q(1062, {	-- Goblin Invaders
 		["qg"] = 4049,	-- Seereth Stonebreak
 		["coord"] = { 35.28, 27.84, THE_BARRENS },
@@ -207,12 +214,13 @@ _.Zones =
 		},
 		["sourceQuest"] = 6301,	-- Cycle of Rebirth
 	}),
-				q(1088, {	-- Ordanus
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4198,	-- Braelyn Firehand
-					["sourceQuest"] = 1087,	-- Cenarius' Legacy
-				}),
+	q(1088, {	-- Ordanus
+		["qg"] = 4198,	-- Braelyn Firehand
+		["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 20,
+		["sourceQuest"] = 1087,	-- Cenarius' Legacy
+	}),
 	q(6523, {	-- Protect Kaya
 		["qg"] = 11856,	-- Kaya Flathoof
 		["coord"] = { 73.51, 85.68, STONETALON_MOUNTAINS },
@@ -244,11 +252,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3994,	-- Keeper Albagorm
 				}),
-				q(6542, {	-- Report to Kadrak
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11821,	-- Darn Talongrip
-				}),
+	q(6542, {	-- Report to Kadrak
+		["qg"] = 11821,	-- Darn Talongrip
+		["coord"] = { 73.23, 94.91, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 17,
+		["isBreadcrumb"] = true,
+	}),
 				q(1078, {	-- Retrieval for Mauren
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
