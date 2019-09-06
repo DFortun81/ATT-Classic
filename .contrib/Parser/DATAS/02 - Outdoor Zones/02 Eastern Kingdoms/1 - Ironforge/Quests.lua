@@ -443,8 +443,18 @@ _.Zones =
 					},
 				}),
 				q(6721, {	-- The Hunter's Path
+					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
+					["coord"] = { 69.87, 82.89, IRONFORGE },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						-- 6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1019, {	-- The New Frontier
 					["lvl"] = 54,

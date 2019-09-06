@@ -265,7 +265,7 @@ _.Zones =
 						1745,	-- Deathguard Morris
 						6389,	-- Deathguard Podrig
 					},
-					["coord"] = {
+					["coords"] = {
 						{ 43.4, 41.6, SILVERPINE_FOREST },
 						{ 60.2, 52.2, TIRISFAL_GLADES },
 					},

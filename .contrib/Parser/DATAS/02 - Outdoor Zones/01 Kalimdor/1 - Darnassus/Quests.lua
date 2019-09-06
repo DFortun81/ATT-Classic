@@ -103,6 +103,36 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
 				}),
+				q(6071, {	-- The Hunter's Path
+					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
+					["coord"] = { 25.6, 48.72, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						-- 6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
+				}),
+				q(6073, {	-- The Hunter's Path
+					["qg"] = 4205,	-- Dorion <Hunter Trainer>
+					["coord"] = { 25.98, 48.45, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						-- 6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
+				}),
 				q(3791, {	-- The Mystery of Morrowgrain
 					["lvl"] = 47,
 					["g"] = {
