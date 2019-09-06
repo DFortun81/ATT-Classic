@@ -190,10 +190,11 @@ _.Zones =
 					["qg"] = 1495,	-- Deathguard Linnea
 				}),
 				q(363, {	-- Rude Awakening
+					["qg"] = 1568,	-- Undertaker Mordo
+					["coord"] = { 30.2, 71.6, TIRISFAL_GLADES },
 					["races"] = {
 						5,	-- Undead
 					},
-					["qg"] = 1568,	-- Undertaker Mordo
 				}),
 				q(3902, {	-- Scavenging Deathknell
 					["lvl"] = 2,
@@ -256,8 +257,10 @@ _.Zones =
 					},
 				}),
 				q(364, {	-- The Mindless Ones
-					["races"] = HORDE_ONLY,
 					["qg"] = 1569,	-- Shadow Priest Sarvis
+					["sourceQuest"] = 363,	-- Rude Awakening
+					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(3275),	-- Flax Gloves
 						i(11847),	-- Battered Cloak
@@ -285,9 +288,9 @@ _.Zones =
 					},
 				}),
 				q(381, {	-- The Scarlet Crusade
-					["lvl"] = 2,
-					["races"] = HORDE_ONLY,
 					["qg"] = 1570,	-- Executor Arren
+					["races"] = HORDE_ONLY,
+					["lvl"] = 2,
 					["g"] = {
 						i(3268),	-- Forsaken Dagger
 						i(3269),	-- Forsaken Maul
@@ -297,9 +300,9 @@ _.Zones =
 					},
 				}),
 				q(383, {	-- Vital Intelligence
-					["lvl"] = 2,
-					["races"] = HORDE_ONLY,
 					["qg"] = 1570,	-- Executor Arren
+					["races"] = HORDE_ONLY,
+					["lvl"] = 2,
 				}),
 				q(398, {	-- Wanted: Maggot Eye
 					["lvl"] = 6,
@@ -311,10 +314,11 @@ _.Zones =
 					},
 				}),
 				q(5847, {	-- Welcome!
+					["u"] = 2,
 					["g"] = {
-						i(13584),	-- Diablo Stone
-						i(13583),	-- Panda Collar
-						i(13582),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 			}),
