@@ -6,9 +6,6 @@ _.Zones =
 	m(KALIMDOR, {	-- Kalimdor
 		m(ASHENVALE, {	-- Ashenvale
 			n(-17, {	-- Quests
-				q(908, {	-- Amongst the Ruins
-					["lvl"] = 25,
-				}),
 				q(1025, {	-- An Aggressive Defense
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
