@@ -2417,7 +2417,7 @@ local function AttachTooltip(self)
 						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
 						-- print(target, type, npc_id);
 						if type == "Player" then
-							if target == "Player-76-0895E23B" then
+							if target == "Player-4372-0000390A" then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then
 									leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
