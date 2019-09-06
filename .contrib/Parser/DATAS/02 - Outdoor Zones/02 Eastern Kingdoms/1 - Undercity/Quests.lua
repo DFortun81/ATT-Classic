@@ -13,8 +13,10 @@ _.Zones =
 					},
 				}),
 				q(7817, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7818, {	-- A Donation of Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
@@ -23,12 +25,16 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7814, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7813, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4293, {	-- A Sample of Slime...
 					["lvl"] = 48,

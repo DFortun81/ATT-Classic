@@ -7,8 +7,10 @@ _.Zones =
 		m(THUNDER_BLUFF, {	-- Thunder Bluff
 			n(-17, {	-- Quests
 				q(7822, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7823, {	-- A Donation of Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider
@@ -17,12 +19,16 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7821, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7820, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(2968, {	-- A Future Task
 					["lvl"] = 45,

@@ -11,12 +11,16 @@ _.Zones =
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
 				q(7809, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7804, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7811, {	-- A Donation of Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
@@ -31,20 +35,28 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7808, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7803, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7802, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(7807, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(2964, {	-- A Future Task
 					["lvl"] = 45,

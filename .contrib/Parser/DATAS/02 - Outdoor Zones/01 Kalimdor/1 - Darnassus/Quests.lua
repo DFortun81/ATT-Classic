@@ -11,8 +11,10 @@ _.Zones =
 					["qg"] = 10878,	-- Herald Moonstalker
 				}),
 				q(7799, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7800, {	-- A Donation of Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -21,9 +23,15 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7798, {	-- A Donation of Silk
+					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
 				q(7792, {	-- A Donation of Wool
+					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(7801, {	-- Additional Runecloth
