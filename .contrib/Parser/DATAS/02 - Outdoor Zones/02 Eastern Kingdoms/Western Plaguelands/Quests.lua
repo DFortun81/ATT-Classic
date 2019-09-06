@@ -8,14 +8,17 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(5095, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10879,	-- Harbinger Balthazad
 				}),
 				q(4971, {	-- A Matter of Time
@@ -49,6 +52,7 @@ _.Zones =
 				}),
 				q(105, {	-- Alas, Andorhal
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(17759),	-- Mark of Resolution
 					},
@@ -120,6 +124,7 @@ _.Zones =
 				q(5406, {	-- Corruptor's Scourgestones
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["qg"] = 10839,	-- Argent Officer Garush
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -127,6 +132,9 @@ _.Zones =
 				}),
 				q(5404, {	-- Corruptor's Scourgestones
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["qg"] = 10840,	-- Argent Officer Pureheart
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
@@ -193,6 +201,7 @@ _.Zones =
 				q(5407, {	-- Invader's Scourgestones
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["qg"] = 10839,	-- Argent Officer Garush
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -200,6 +209,9 @@ _.Zones =
 				}),
 				q(5403, {	-- Invader's Scourgestones
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["qg"] = 10840,	-- Argent Officer Pureheart
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
@@ -232,6 +244,7 @@ _.Zones =
 				q(5408, {	-- Minion's Scourgestones
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["qg"] = 10839,	-- Argent Officer Garush
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -239,6 +252,9 @@ _.Zones =
 				}),
 				q(5402, {	-- Minion's Scourgestones
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["qg"] = 10840,	-- Argent Officer Pureheart
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
