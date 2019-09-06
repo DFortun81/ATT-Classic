@@ -16,9 +16,6 @@ L.ZONE_TEXT_TO_MAP_ID["그림자송곳니 성채"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["울다만"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["통곡의 동굴"] = 279;	-- WC
 
--- Cities
-L.ZONE_TEXT_TO_MAP_ID["썬더 블러프"] = 88;	-- Thunder Bluff
-
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here

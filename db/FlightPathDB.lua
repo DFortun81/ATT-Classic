@@ -126,6 +126,7 @@ select(2, ...).FlightPathDB = {
 		name="Crossroads, The Barrens",
 		faction=1,
 		mapID=1413,
+		coord={ 51.50, 30.34, 1413 },
 	},
 	[26] = {
 		name="Auberdine, Darkshore",
@@ -146,6 +147,7 @@ select(2, ...).FlightPathDB = {
 		name="Sun Rock Retreat, Stonetalon Mountains",
 		faction=1,
 		mapID=1442,
+		coord={ 45.13, 59.85, 1442 },
 	},
 	[30] = {
 		name="Freewind Post, Thousand Needles",
@@ -164,7 +166,7 @@ select(2, ...).FlightPathDB = {
 	},
 	[33] = {
 		name="Stonetalon Peak, Stonetalon Mountains",
-		faction=1,
+		faction=2,
 		mapID=1442,
 	},
 	[34] = {
@@ -293,6 +295,8 @@ select(2, ...).FlightPathDB = {
 		faction=1,
 		mapID=1440,
 	},
+	[59] = {},	-- lookup function terminates when index+1 is missing
+	[60] = {},	-- lookup function terminates when index+1 is missing
 	[61] = {
 		name="Splintertree Post, Ashenvale",
 		faction=1,
@@ -377,6 +381,7 @@ select(2, ...).FlightPathDB = {
 		name="Camp Taurajo, The Barrens",
 		faction=1,
 		mapID=1413,
+		coord={ 44.45, 59.15, 1413 },
 	},
 	[78] = {
 		name="Naxxramas",
@@ -392,7 +397,11 @@ select(2, ...).FlightPathDB = {
 		name="Ratchet, The Barrens",
 		faction=0,
 		mapID=1413,
+		coord={ 63.09, 37.16, 1413 },
 	},
+	[81] = {},	-- lookup function terminates when index+1 is missing
+	[82] = {},	-- lookup function terminates when index+1 is missing
+	[83] = {},	-- lookup function terminates when index+1 is missing
 	[84] = {
 		name="Plaguewood Tower, Eastern Plaguelands",
 		faction=0,

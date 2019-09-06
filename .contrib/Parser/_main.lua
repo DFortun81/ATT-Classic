@@ -53,7 +53,7 @@ TANARIS = 1446;	-- Confirmed!
 TELDRASSIL = 1438;	-- Confirmed!
 THE_BARRENS = 1413;	-- Confirmed!
 THOUSAND_NEEDLES = 1441;	-- Confirmed!
-THUNDER_BLUFF = 88;
+THUNDER_BLUFF = 1456;	-- Confirmed!
 UNGORO_CRATER = 1449;	-- Confirmed!
 WINTERSPRING = 1452;	-- Confirmed!
 

@@ -51,9 +51,11 @@ _.Zones =
 					["qg"] = 2216,	-- Apothecary Lydon
 				}),
 				q(1064, {	-- Forsaken Aid
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4046,	-- Magatha Grimtotem
+					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
+					["sourceQuest"] = 1063,	-- The Elder Crone
 				}),
 				q(1136, {	-- Frostmaw
 					["lvl"] = 26,
@@ -65,9 +67,11 @@ _.Zones =
 					},
 				}),
 				q(1065, {	-- Journey to Tarren Mill
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3419,	-- Apothecary Zamah
+					["coord"] = { 22.83, 20.92, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
+					["sourceQuest"] = 1064,	-- Forsaken Aid
 				}),
 				q(769, {	-- Kodo Hide Bag
 					["lvl"] = 4,
