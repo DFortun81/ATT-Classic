@@ -61,6 +61,16 @@ _.Zones =
 						i(15703),	-- Chemist's Smock
 					},
 				}),
+				q(6322, {	-- Michael Garrett
+					["qg"] = 4556,	-- Gordon Wendham
+					["sourceQuest"] = 6323,	-- Ride to the Undercity
+					["coord"] = { 61.6, 41.8, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = {
+						5,	-- Undead
+					},
+					["lvl"] = 10,
+				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["lvl"] = 38,
 					["g"] = {
@@ -69,10 +79,23 @@ _.Zones =
 						i(11502),	-- Loreskin Shoulders
 					},
 				}),
-				q(1358, {	-- Sample for Helbrim
+				q(6324, {	-- Return to Podrig
+					["qg"] = 4551,	-- Michael Garrett
+					["sourceQuest"] = 6322,	-- Michael Garrett
+					["coord"] = { 63.4, 48.6, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = {
+						5,	-- Undead
+					},
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+				}),
+				q(1358, {	-- Sample for Helbrim
 					["qg"] = 5204,	-- Apothecary Zinge
+					["sourceQuest"] = 1358,	-- Sample for Helbrim
+					["coord"] = { 49.8, 68.2, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10637),	-- Brewer's Gloves
 						i(10638),	-- Long Draping Cape
@@ -131,11 +154,6 @@ _.Zones =
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs
 					},
-				}),
-				q(1359, {	-- Zinge's Delivery
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-					["qg"] = 1937,	-- Apothecary Renferrel
 				}),
 			}),
 		}),
