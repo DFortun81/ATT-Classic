@@ -22,6 +22,7 @@ _.Zones =
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 				}),
 	q(6284, {	-- Arachnophobia
+		["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 		--["objectID"] = 177904,	-- Wanted Poster: Besseleth
 		["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
 		["lvl"] = 15,
@@ -123,15 +124,17 @@ _.Zones =
 		["lvl"] = 16,
 		["sourceQuest"] = 1094,	-- Further Instructions
 	}),
-				q(1096, {	-- Gerenzo Wrenchwhistle
-					["lvl"] = 16,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4201,	-- Ziz Fizziks
-					["g"] = {
-						i(6667),	-- Engineer's Cloak
-						i(6668),	-- Draftsman Boots
-					},
-				}),
+	q(1096, {	-- Gerenzo Wrenchwhistle
+		["qg"] = 4201,	-- Ziz Fizziks
+		["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 16,
+		["sourceQuest"] = 1095,	-- Further Instructions
+		["g"] = {
+			i(6667),	-- Engineer's Cloak
+			i(6668),	-- Draftsman Boots
+		},
+	}),
 				q(1090, {	-- Gerenzo's Orders
 					["lvl"] = 17,
 					["qg"] = 4276,	-- Piznik
@@ -193,15 +196,17 @@ _.Zones =
 		["lvl"] = 12,
 		["sourceQuest"] = 6548,	-- Avenge My Village
 	}),
-				q(6381, {	-- New Life
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11864,	-- Tammra Windfield
-					["g"] = {
-						i(16985),	-- Windseeker Boots
-						i(16986),	-- Sandspire Gloves
-					},
-				}),
+	q(6381, {	-- New Life
+		["qg"] = 11864,	-- Tammra Windfield
+		["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
+		["races"] = HORDE_ONLY,
+		["lvl"] = 17,
+		["g"] = {
+			i(16985),	-- Windseeker Boots
+			i(16986),	-- Sandspire Gloves
+		},
+		["sourceQuest"] = 6301,	-- Cycle of Rebirth
+	}),
 				q(1088, {	-- Ordanus
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,

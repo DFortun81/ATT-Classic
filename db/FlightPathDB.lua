@@ -146,6 +146,7 @@ select(2, ...).FlightPathDB = {
 		name="Sun Rock Retreat, Stonetalon Mountains",
 		faction=1,
 		mapID=1442,
+		coord={ 45.13, 59.85, 1442 },
 	},
 	[30] = {
 		name="Freewind Post, Thousand Needles",
@@ -164,7 +165,7 @@ select(2, ...).FlightPathDB = {
 	},
 	[33] = {
 		name="Stonetalon Peak, Stonetalon Mountains",
-		faction=1,
+		faction=2,
 		mapID=1442,
 	},
 	[34] = {
