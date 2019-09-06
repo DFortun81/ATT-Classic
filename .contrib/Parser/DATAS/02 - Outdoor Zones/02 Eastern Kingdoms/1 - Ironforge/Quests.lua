@@ -19,14 +19,16 @@ _.Zones =
 					["qg"] = 14723,	-- Mistina Steelshield
 				}),
 				q(7811, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7805, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7808, {	-- A Donation of Silk
 					["lvl"] = 26,
@@ -80,12 +82,16 @@ _.Zones =
 				}),
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
+					["sourceQuest"] = 7805,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
 				q(7812, {	-- Additional Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["sourceQuest"] = 7811,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,

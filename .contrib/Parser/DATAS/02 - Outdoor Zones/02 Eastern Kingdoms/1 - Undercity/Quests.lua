@@ -17,9 +17,10 @@ _.Zones =
 					["qg"] = 14729,	-- Ralston Farnsley
 				}),
 				q(7818, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7814, {	-- A Donation of Silk
 					["lvl"] = 26,
@@ -37,6 +38,8 @@ _.Zones =
 				}),
 				q(7819, {	-- Additional Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
+					["sourceQuest"] = 7818,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,

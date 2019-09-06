@@ -15,14 +15,16 @@ _.Zones =
 					["qg"] = 14727,	-- Vehena
 				}),
 				q(7836, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14727,	-- Vehena
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7824, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14726,	-- Rashona Straglash
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7827, {	-- A Donation of Silk
 					["lvl"] = 26,
@@ -53,12 +55,16 @@ _.Zones =
 				}),
 				q(7832, {	-- Additional Runecloth
 					["qg"] = 14726,	-- Rashona Straglash
+					["sourceQuest"] = 7824,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
 				q(7837, {	-- Additional Runecloth
 					["qg"] = 14727,	-- Vehena
+					["sourceQuest"] = 7836,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,

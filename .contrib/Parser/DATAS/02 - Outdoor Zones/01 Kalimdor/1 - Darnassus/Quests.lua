@@ -15,9 +15,10 @@ _.Zones =
 					["qg"] = 14725,	-- Raedon Duskstriker
 				}),
 				q(7800, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7798, {	-- A Donation of Silk
 					["lvl"] = 26,
@@ -27,6 +28,8 @@ _.Zones =
 				}),
 				q(7801, {	-- Additional Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["sourceQuest"] = 7800,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,

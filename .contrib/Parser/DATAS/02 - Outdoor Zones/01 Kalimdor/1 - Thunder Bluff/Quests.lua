@@ -11,9 +11,10 @@ _.Zones =
 					["qg"] = 14728,	-- Rumstag Proudstrider
 				}),
 				q(7823, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7821, {	-- A Donation of Silk
 					["lvl"] = 26,
@@ -28,6 +29,8 @@ _.Zones =
 				}),
 				q(7825, {	-- Additional Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["sourceQuest"] = 7823,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
