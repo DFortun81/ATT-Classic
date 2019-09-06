@@ -11,24 +11,36 @@ _.Zones =
 					["qg"] = 10878,	-- Herald Moonstalker
 				}),
 				q(7799, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7800, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7798, {	-- A Donation of Silk
+					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
 				q(7792, {	-- A Donation of Wool
+					["qg"] = 14725,	-- Raedon Duskstriker
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(7801, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["sourceQuest"] = 7800,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
@@ -102,6 +114,36 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
+				}),
+				q(6071, {	-- The Hunter's Path
+					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
+					["coord"] = { 25.6, 48.72, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						-- 6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
+				}),
+				q(6073, {	-- The Hunter's Path
+					["qg"] = 4205,	-- Dorion <Hunter Trainer>
+					["coord"] = { 25.98, 48.45, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						-- 6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
 				}),
 				q(3791, {	-- The Mystery of Morrowgrain
 					["lvl"] = 47,

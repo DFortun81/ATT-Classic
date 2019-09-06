@@ -214,9 +214,11 @@ _.Instances = {
 				{
 					["itemID"] = 2874,	-- An Unsent Letter
 					["groups"] = {
-						["questID"] = 373,	-- The Unsent Letter
-						["qg"] = 1646,	-- Baros Alexston <City Architect>
-						["coord"] = { 49.2, 30.0, STORMWIND_CITY },
+						{
+							["questID"] = 373,	-- The Unsent Letter
+							["qg"] = 1646,	-- Baros Alexston <City Architect>
+							["coord"] = { 49.2, 30.0, STORMWIND_CITY },
+						}
 					},
 				},
 				i(3637),	-- Head of VanCleef

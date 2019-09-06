@@ -150,6 +150,53 @@ _.Zones =
 				q(5250, {	-- Starfall
 					["lvl"] = 53,
 				}),
+				q(6063, {	-- Taming the Beast
+					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
+					["sourceQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["lvl"] = 10,
+				}),
+				q(6101, {	-- Taming the Beast
+					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
+					["sourceQuest"] = 6063,	-- Taming the Beast
+					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["lvl"] = 10,
+				}),
+				q(6102, {	-- Taming the Beast
+					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
+					["sourceQuest"] = 6101,	-- Taming the Beast
+					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(883),		-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+					},
+				}),
+				q(6103, {	-- Taming the Beast
+					["qg"] = 6102,	-- Dazalar <Hunter Trainer>
+					["sourceQuest"] = 6101,	-- Taming the Beast
+					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(6991),		-- Feed Pet
+						recipe(982),		-- Revive Pet
+					},
+				}),
 				q(940, {	-- Teldrassil
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
@@ -192,6 +239,21 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 6751,	-- Strange Fruited Plant
+				}),
+				q(6072, {	-- The Hunter's Path
+					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
+					["coord"] = { 58.66, 40.45, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						-- 6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
 				}),
 				q(927, {	-- The Moss-twined Heart
 					["lvl"] = 5,
@@ -311,10 +373,12 @@ _.Zones =
 					},
 				}),
 				q(5842, {	-- Welcome!
+					["provider"] = { "i", 14648 },	-- Shadowglen Gift Voucher
+					["u"] = 2,
 					["g"] = {
-						i(13584),	-- Diablo Stone
-						i(13583),	-- Panda Collar
-						i(13582),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 				q(488, {	-- Zenn's Bidding

@@ -7,11 +7,11 @@ _.Zones =
 		m(WESTFALL, {	-- Westfall
 			n(-17, {	-- Quests
 				q(6181, {	-- A Swift Message
-					["lvl"] = 10,
+					["qg"] = 491,	-- Quartermaster Lewis
 					["races"] = {
 						1,	-- Human
 					},
-					["qg"] = 491,	-- Quartermaster Lewis
+					["lvl"] = 10,
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure
 					["lvl"] = 10,
@@ -206,9 +206,9 @@ _.Zones =
 					["qg"] = 234,	-- Gryan Stoutmantle
 				}),
 				q(14, {	-- The People's Militia
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(1566),	-- Edge of the People's Militia
 						i(1480),	-- Fist of the People's Militia
@@ -216,8 +216,9 @@ _.Zones =
 					},
 				}),
 				q(117, {	-- Thunderbrew
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(1262),	-- Keg of Thunderbrew
 					},

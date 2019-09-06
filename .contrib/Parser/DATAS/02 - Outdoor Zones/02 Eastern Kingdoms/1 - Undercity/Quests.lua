@@ -13,21 +13,28 @@ _.Zones =
 					},
 				}),
 				q(7817, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7818, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7814, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7813, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4293, {	-- A Sample of Slime...
 					["lvl"] = 48,
@@ -36,9 +43,12 @@ _.Zones =
 					},
 				}),
 				q(7819, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["sourceQuest"] = 7818,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
@@ -61,6 +71,16 @@ _.Zones =
 						i(15703),	-- Chemist's Smock
 					},
 				}),
+				q(6322, {	-- Michael Garrett
+					["qg"] = 4556,	-- Gordon Wendham
+					["sourceQuest"] = 6323,	-- Ride to the Undercity
+					["coord"] = { 61.6, 41.8, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = {
+						5,	-- Undead
+					},
+					["lvl"] = 10,
+				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["lvl"] = 38,
 					["g"] = {
@@ -69,10 +89,23 @@ _.Zones =
 						i(11502),	-- Loreskin Shoulders
 					},
 				}),
-				q(1358, {	-- Sample for Helbrim
+				q(6324, {	-- Return to Podrig
+					["qg"] = 4551,	-- Michael Garrett
+					["sourceQuest"] = 6322,	-- Michael Garrett
+					["coord"] = { 63.4, 48.6, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = {
+						5,	-- Undead
+					},
 					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
+				}),
+				q(1358, {	-- Sample for Helbrim
 					["qg"] = 5204,	-- Apothecary Zinge
+					["sourceQuest"] = 1358,	-- Sample for Helbrim
+					["coord"] = { 49.8, 68.2, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10637),	-- Brewer's Gloves
 						i(10638),	-- Long Draping Cape
@@ -107,6 +140,20 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 2227,	-- Sharlindra
 				}),
+				q(6722, {	-- The Hunter's Path
+					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
+					["coord"] = { 61.58, 15.19, STORMWIND_CITY },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						-- 6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
+				}),
 				q(5049, {	-- The Jeremiah Blues
 					["lvl"] = 50,
 				}),
@@ -131,11 +178,6 @@ _.Zones =
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs
 					},
-				}),
-				q(1359, {	-- Zinge's Delivery
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-					["qg"] = 1937,	-- Apothecary Renferrel
 				}),
 			}),
 		}),

@@ -22,9 +22,10 @@ _.Zones =
 						i(4941),	-- Really Sticky Glue
 					},
 				}),
-				q(785,  {	-- A Strategic Alliance -- low enough questID for classic, but unable to verify if it actuallyw as in vanilla
-					["lvl"] = 5,
+				q(785,  {	-- A Strategic Alliance -- low enough questID for classic, but unable to verify if it actually was in vanilla
 					["qg"] = 3216,	-- Neeru Fireblade
+					["lvl"] = 5,
+					["u"] = 1,
 				}),
 				q(815,  {	-- Break a Few Eggs
 					["lvl"] = 6,
@@ -46,10 +47,10 @@ _.Zones =
 					},
 				}),
 				q(832,  {	-- Burning Shadows
-					["itemID"] = 4903,	-- Eye of Burning Shadow
+					["provider"] = { "i", 4903 },	-- Eye of Burning Shadow
 					["cr"] = 3204,	-- Gazz'uz
-					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 4,
 				}),
 				q(791,  {	-- Carry Your Weight
 					["lvl"] = 4,
@@ -94,16 +95,18 @@ _.Zones =
 					["qg"] = 3139,	-- Gar'Thok
 				}),
 				q(813,  {	-- Finding the Antidote
-					["lvl"] = 7,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3189,	-- Kor'ghan
+					["sourceQuest"] = 812,	-- Need for a Cure
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 7,
 					["g"] = {
 						i(4904),	-- Venomtail Antidote
 					},
 				}),
 				q(926,  {	-- Flawed Power Stone
+					["provider"] = { "o", 5620 },	-- Flawed Power Stones
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 5620,	-- Flawed Power Stones
 					["g"] = {
 						i(4986),	-- Flawed Power Stone
 					},
@@ -234,7 +237,7 @@ _.Zones =
 					["sourceQuest"] = 830,	-- The Admiral's Orders
 				}),
 				q(830,  {	-- The Admiral's Orders
-					["itemID"] = 4881,	-- Aged Envelope
+					["provider"] = { "i", 4881 },	-- Aged Envelope
 					["races"] = HORDE_ONLY,
 				}),
 				q(924,  {	-- The Demon Seed
@@ -271,9 +274,9 @@ _.Zones =
 						i(5778),	-- Primitive Walking Stick
 					},
 				}),
-				q(5843, {	-- Welcome! (available only if you bought the Vanilla WoW collector's edition
-					["u"] = 40,
-					["itemID"] = 14649,	-- Valley of Trials Gift Voucher
+				q(5843, {	-- Welcome!
+					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
+					["u"] = 2,
 					["g"] = {
 						un(2, i(13584)),	-- Diablo Stone
 						un(2, i(13583)),	-- Panda Collar
