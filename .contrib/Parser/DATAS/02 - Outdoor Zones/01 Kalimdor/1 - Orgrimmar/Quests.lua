@@ -67,28 +67,20 @@ _.Zones =
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 829,	-- Neeru Fireblade
 				}),
-				q(1433, {	-- Alliance Relations
-					["lvl"] = 30,
+				q(1431, {	-- Alliance Relations
+					["qg"] = 5639,	-- Craven Drok
+					["coord"] = { 52.4, 44.6, ORGRIMMAR },
+					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
-					["qg"] = 5641,	-- Takata Steelblade
+					["lvl"] = 30,
 				}),
 				q(1432, {	-- Alliance Relations
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 5640,	-- Keldran
-				}),
-				q(1436, {	-- Alliance Relations
-					["lvl"] = 30,
+					["sourceQuest"] = 1431,	-- Alliance Relations
+					["coord"] = { 22.4, 52.8, ORGRIMMAR },
+					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(6744),	-- Gloves of Kapelan
-						i(6745),	-- Swiftrunner Cape
-					},
-				}),
-				q(1431, {	-- Alliance Relations
 					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["qg"] = 5639,	-- Craven Drok
 				}),
 				q(8914, {	-- An Earnest Proposition
 					["lvl"] = 58,
@@ -222,11 +214,6 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16033,	-- Bodley
-				}),
-				q(1434, {	-- Befouled by Satyr
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
-					["qg"] = 5641,	-- Takata Steelblade
 				}),
 				q(3506, {	-- Betrayed
 					["lvl"] = 44,
@@ -458,14 +445,6 @@ _.Zones =
 				q(235, {	-- The Ashenvale Hunt
 					["lvl"] = 20,
 					["qg"] = 10880,	-- Warcaller Gorlach
-				}),
-				q(1435, {	-- The Burning of Spirits
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4498,	-- Maurin Bonesplitter
-					["g"] = {
-						i(6766),	-- Flayed Demon Skin (old2)
-					},
 				}),
 				q(6567, {	-- The Champion of the Horde
 					["lvl"] = 55,

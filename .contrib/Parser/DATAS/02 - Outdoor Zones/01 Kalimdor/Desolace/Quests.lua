@@ -6,9 +6,39 @@ _.Zones =
 	m(KALIMDOR, {	-- Kalimdor
 		m(DESOLACE, {	-- Desolace
 			n(-17, {	-- Quests
+				q(1433, {	-- Alliance Relations
+					["qg"] = 5641,	-- Takata Steelblade
+					["sourceQuest"] = 1432,	-- Alliance Relations
+					["coord"] = { 52.6, 54.2, DESOLACE },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1436, {	-- Alliance Relations
+					["qg"] = 5641,	-- Takata Steelblade
+					["coord"] = { 52.6, 54.2, DESOLACE },
+					["sourceQuests"] = {
+						1434,	-- Befouled by Satyr
+						1435,	-- The Burning of Spirits
+					},
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
+					["g"] = {
+						i(6744),	-- Gloves of Kapelan
+						i(6745),	-- Swiftrunner Cape
+					},
+				}),
 				q(1386, {	-- Assault on the Kolkar
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(1434, {	-- Befouled by Satyr
+					["qg"] = 5641,	-- Takata Steelblade
+					["sourceQuest"] = 1432,	-- Alliance Relations
+					["coord"] = { 52.57, 54.39, DESOLACE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(5821, {	-- Bodyguard for Hire
 					["lvl"] = 30,
@@ -281,6 +311,16 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5396,	-- Captain Pentigast
+				}),
+				q(1435, {	-- The Burning of Spirits
+					["qg"] = 4498,	-- Maurin Bonesplitter
+					["sourceQuest"] = 1433,	-- Alliance Relations
+					["coord"] = { 52.2, 53.6, DESOLACE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+					["g"] = {
+						i(6766),	-- Flayed Demon Skin (old2)
+					},
 				}),
 				q(1484, {	-- The Corrupter
 					["lvl"] = 25,
