@@ -399,6 +399,9 @@ select(2, ...).FlightPathDB = {
 		mapID=1413,
 		coord={ 63.09, 37.16, 1413 },
 	},
+	[81] = {},	-- lookup function terminates when index+1 is missing
+	[82] = {},	-- lookup function terminates when index+1 is missing
+	[83] = {},	-- lookup function terminates when index+1 is missing
 	[84] = {
 		name="Plaguewood Tower, Eastern Plaguelands",
 		faction=0,
