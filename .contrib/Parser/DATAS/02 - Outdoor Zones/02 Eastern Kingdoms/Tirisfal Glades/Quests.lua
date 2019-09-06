@@ -314,6 +314,7 @@ _.Zones =
 					},
 				}),
 				q(5847, {	-- Welcome!
+					["provider"] = { "i", 14651 },	-- Deathknell Gift Voucher
 					["u"] = 2,
 					["g"] = {
 						un(2, i(13584)),	-- Diablo Stone

@@ -274,7 +274,7 @@ _.Zones =
 						i(5778),	-- Primitive Walking Stick
 					},
 				}),
-				q(5843, {	-- Welcome! (available only if you bought the Vanilla WoW collector's edition
+				q(5843, {	-- Welcome!
 					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
 					["u"] = 2,
 					["g"] = {

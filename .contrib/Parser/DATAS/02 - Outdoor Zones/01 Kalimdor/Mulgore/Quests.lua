@@ -205,10 +205,12 @@ _.Zones =
 					["qg"] = 2948,	-- Mull Thunderhorn
 				}),
 				q(5844, {	-- Welcome!
+					["provider"] = { "i", 14650 },	-- Camp Narache Gift Voucher
+					["u"] = 2,
 					["g"] = {
-						i(13584),	-- Diablo Stone
-						i(13583),	-- Panda Collar
-						i(13582),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 				q(760, {	-- Wildmane Cleansing

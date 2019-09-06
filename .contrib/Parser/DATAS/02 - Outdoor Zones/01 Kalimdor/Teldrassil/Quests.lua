@@ -311,10 +311,12 @@ _.Zones =
 					},
 				}),
 				q(5842, {	-- Welcome!
+					["provider"] = { "i", 14648 },	-- Shadowglen Gift Voucher
+					["u"] = 2,
 					["g"] = {
-						i(13584),	-- Diablo Stone
-						i(13583),	-- Panda Collar
-						i(13582),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 				q(488, {	-- Zenn's Bidding
