@@ -52,14 +52,16 @@ _.Zones =
 					["qg"] = 4485,	-- Belgrom Rockmaul
 				}),
 				q(7832, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14726,	-- Rashona Straglash
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(7837, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14727,	-- Vehena
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(809, {	-- Ak'Zeloth
 					["lvl"] = 4,

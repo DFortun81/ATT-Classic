@@ -36,9 +36,10 @@ _.Zones =
 					},
 				}),
 				q(7819, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14729,	-- Ralston Farnsley
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,

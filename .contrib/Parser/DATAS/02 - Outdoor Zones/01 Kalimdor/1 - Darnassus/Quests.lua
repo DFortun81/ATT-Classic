@@ -26,9 +26,10 @@ _.Zones =
 					["lvl"] = 12,
 				}),
 				q(7801, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14725,	-- Raedon Duskstriker
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,

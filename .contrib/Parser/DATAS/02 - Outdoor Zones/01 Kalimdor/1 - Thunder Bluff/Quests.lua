@@ -27,9 +27,10 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(7825, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14728,	-- Rumstag Proudstrider
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(3762, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,

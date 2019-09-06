@@ -79,14 +79,16 @@ _.Zones =
 					},
 				}),
 				q(7806, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(7812, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(8910, {	-- An Earnest Proposition
 					["lvl"] = 58,
