@@ -324,6 +324,21 @@ GameTooltipModel.TrySetModel = function(self, reference)
 					return true;
 				end
 			end
+		elseif reference.providers then
+			displayInfos = {}
+			local markedKeys = {}
+			for k,v in pairs(reference.providers) do
+				if v[1] == "n" and v[2] > 0 then
+					local displayID = app.NPCDisplayIDFromID[v[2]];
+					if displayID and not markedKeys[displayID] then
+						tinsert(displayInfos, displayID);
+						markedKeys[displayID] = 1;
+					end
+				end
+			end
+			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
+				return true;
+			end
 		end
 		
 		if reference.displayID then
@@ -674,6 +689,15 @@ local function GetDisplayID(data)
 		local displayID = app.NPCDisplayIDFromID[data.creatureID];
 		if displayID then
 			return displayID;
+		end
+	end
+	
+	if data.providers and #data.providers > 0 then
+		for k,v in pairs(data.providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
+			if v[1] == "n" then
+				return app.NPCDisplayIDFromID[v[2]];
+			end
 		end
 	end
 	
@@ -1881,6 +1905,18 @@ fieldConverters = {
 		_cache = rawget(fieldConverters, "creatureID");
 		for i,questGiverID in ipairs(value) do
 			_cache(group, questGiverID);
+		end
+	end,
+	["providers"] = function(group, value)
+		for k,v in pairs(value) do
+			if v[1] == "n" and v[2] > 0 then
+				_cache = rawget(fieldConverters, "creatureID");
+				_cache(group, v[2]);
+			elseif v[1] == "i" and v[2] > 0 then
+				CacheField(group, "itemID", v[2]);
+			elseif v[1] == "o" and v[2] > 0 then
+				CacheField(group, "objectID", v[2]);
+			end
 		end
 	end,
 	["altQuests"] = function(group, value)
@@ -3364,6 +3400,20 @@ app.BaseQuest = {
 			local questID = t.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and t.altQuestID or t.questID;
 			return QuestTitleFromID[questID];
 		elseif key == "icon" then
+			if t.providers then
+				for k,v in pairs(t.providers) do
+					if v[2] > 0 then
+						if v[1] == "o" then
+							return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10"
+						elseif v[1] == "i" then
+							local _,_,_,_,icon = GetItemInfoInstant(v[2]);
+							if icon then
+								return icon
+							end
+						end
+					end
+				end
+			end
 			if t.isDaily or t.isWeekly then
 				return "Interface\\GossipFrame\\DailyQuestIcon";
 			elseif t.repeatable then
@@ -4739,6 +4789,24 @@ local function RowOnEnter(self)
 			GameTooltip:AddDoubleLine("Coordinate",
 				GetNumberWithZeros(math.floor(reference.coord[1] * 10) * 0.1, 1) .. ", " .. 
 				GetNumberWithZeros(math.floor(reference.coord[2] * 10) * 0.1, 1), 1, 1, 1, 1, 1, 1);
+		end
+		if reference.providers then
+			local counter = 0;
+			for i,provider in pairs(reference.providers) do
+				local providerType = provider[1]
+				local providerID = provider[2] or 0
+				local providerString = "UNKNOWN"
+				if providerType == "o" then
+					providerString = L["OBJECT_ID_NAMES"][providerID] or 'Object #'..providerID
+				elseif providerType == "n" then
+					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
+				elseif providerType == "i" then
+					local name = GetItemInfo(providerID)
+					providerString = name or 'Item #'..providerID
+				end
+				GameTooltip:AddDoubleLine(counter == 0 and "Provider(s)" or " ", providerString .. ' (' .. providerID .. ')');
+				counter = counter + 1;
+			end
 		end
 		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if not reference.itemID then

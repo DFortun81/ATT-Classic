@@ -287,7 +287,7 @@ _.Zones =
 					["qg"] = 252,	-- Tommy Joe Stonefield
 				}),
 				q(123, {	-- The Collector
-					["itemID"] = 1307,	-- Gold Pickup Schedule
+					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
