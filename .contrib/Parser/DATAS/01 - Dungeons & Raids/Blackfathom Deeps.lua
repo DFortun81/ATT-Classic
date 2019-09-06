@@ -24,6 +24,9 @@ _.Instances = {
 				},
 				{
 					["questID"] = 6921,	-- Amongst the Ruins
+					["altQuests"] = {
+						908,	-- Amongst the Ruins
+					},
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["maps"] = { ASHENVALE },

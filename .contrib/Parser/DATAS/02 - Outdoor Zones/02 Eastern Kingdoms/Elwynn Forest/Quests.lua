@@ -89,8 +89,11 @@ _.Zones =
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 				}),
 				q(5261, {	-- Eagan Peltskinner
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 823,	-- Deputy Willem
+					["sourceQuest"] = 783,	-- A Threat Within
+					["coord"] = { 48.17, 42.94, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(37, {	-- Find the Lost Guards
 					["lvl"] = 7,
@@ -287,7 +290,7 @@ _.Zones =
 					["qg"] = 252,	-- Tommy Joe Stonefield
 				}),
 				q(123, {	-- The Collector
-					["itemID"] = 1307,	-- Gold Pickup Schedule
+					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -340,11 +343,12 @@ _.Zones =
 					},
 				}),
 				q(5805, {	-- Welcome!
+					["provider"] = { "i", 14646 },	-- Northshire Gift Voucher
 					["u"] = 2,
 					["g"] = {
-						i(13584),	-- Diablo Stone
-						i(13583),	-- Panda Collar
-						i(13582),	-- Zergling Leash
+						un(2, i(13584)),	-- Diablo Stone
+						un(2, i(13583)),	-- Panda Collar
+						un(2, i(13582)),	-- Zergling Leash
 					},
 				}),
 				q(239, {	-- Westbrook Garrison Needs Help!

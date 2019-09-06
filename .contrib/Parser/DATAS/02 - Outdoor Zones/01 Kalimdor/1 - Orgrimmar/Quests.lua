@@ -7,39 +7,52 @@ _.Zones =
 		m(ORGRIMMAR, {	-- Orgrimmar
 			n(-17, {	-- Quests
 				q(7831, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14726,	-- Rashona Straglash
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7835, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14727,	-- Vehena
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7836, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14727,	-- Vehena
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7824, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14726,	-- Rashona Straglash
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7827, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14726,	-- Rashona Straglash
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7834, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14727,	-- Vehena
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7833, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14727,	-- Vehena
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(7826, {	-- A Donation of Wool
-					["lvl"] = 12,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14726,	-- Rashona Straglash
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(7341, {	-- A Fair Trade
 					["lvl"] = 52,
@@ -52,14 +65,20 @@ _.Zones =
 					["qg"] = 4485,	-- Belgrom Rockmaul
 				}),
 				q(7832, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14726,	-- Rashona Straglash
+					["sourceQuest"] = 7824,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(7837, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 14727,	-- Vehena
+					["sourceQuest"] = 7836,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(809, {	-- Ak'Zeloth
 					["lvl"] = 4,
@@ -67,28 +86,20 @@ _.Zones =
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 829,	-- Neeru Fireblade
 				}),
-				q(1433, {	-- Alliance Relations
-					["lvl"] = 30,
+				q(1431, {	-- Alliance Relations
+					["qg"] = 5639,	-- Craven Drok
+					["coord"] = { 52.4, 44.6, ORGRIMMAR },
+					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
-					["qg"] = 5641,	-- Takata Steelblade
+					["lvl"] = 30,
 				}),
 				q(1432, {	-- Alliance Relations
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 5640,	-- Keldran
-				}),
-				q(1436, {	-- Alliance Relations
-					["lvl"] = 30,
+					["sourceQuest"] = 1431,	-- Alliance Relations
+					["coord"] = { 22.4, 52.8, ORGRIMMAR },
+					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(6744),	-- Gloves of Kapelan
-						i(6745),	-- Swiftrunner Cape
-					},
-				}),
-				q(1431, {	-- Alliance Relations
 					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["qg"] = 5639,	-- Craven Drok
 				}),
 				q(8914, {	-- An Earnest Proposition
 					["lvl"] = 58,
@@ -222,11 +233,6 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16033,	-- Bodley
-				}),
-				q(1434, {	-- Befouled by Satyr
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
-					["qg"] = 5641,	-- Takata Steelblade
 				}),
 				q(3506, {	-- Betrayed
 					["lvl"] = 44,
@@ -458,14 +464,6 @@ _.Zones =
 				q(235, {	-- The Ashenvale Hunt
 					["lvl"] = 20,
 					["qg"] = 10880,	-- Warcaller Gorlach
-				}),
-				q(1435, {	-- The Burning of Spirits
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4498,	-- Maurin Bonesplitter
-					["g"] = {
-						i(6766),	-- Flayed Demon Skin (old2)
-					},
 				}),
 				q(6567, {	-- The Champion of the Horde
 					["lvl"] = 55,

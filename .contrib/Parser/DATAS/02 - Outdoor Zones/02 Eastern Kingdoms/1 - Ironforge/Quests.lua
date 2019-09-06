@@ -11,38 +11,52 @@ _.Zones =
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
 				q(7809, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7804, {	-- A Donation of Mageweave
-					["lvl"] = 40,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7811, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7805, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(7808, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7803, {	-- A Donation of Silk
-					["lvl"] = 26,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(7802, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(7807, {	-- A Donation of Wool
-					["lvl"] = 12,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(2964, {	-- A Future Task
 					["lvl"] = 45,
@@ -79,14 +93,20 @@ _.Zones =
 					},
 				}),
 				q(7806, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14723,	-- Mistina Steelshield
+					["sourceQuest"] = 7805,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(7812, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14724,	-- Bubulo Acerbus
+					["sourceQuest"] = 7811,	-- A Donation of Runecloth
+					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(8910, {	-- An Earnest Proposition
 					["lvl"] = 58,
@@ -443,8 +463,18 @@ _.Zones =
 					},
 				}),
 				q(6721, {	-- The Hunter's Path
+					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
+					["coord"] = { 69.87, 82.89, IRONFORGE },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						-- 6721,	-- The Hunter's Path
+						6722,	-- The Hunter's Path
+					},
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1019, {	-- The New Frontier
 					["lvl"] = 54,

@@ -258,7 +258,8 @@ _.Zones =
 					},
 				}),
 				q(5841, {	-- Welcome!
-					["u"] = 40,
+					["provider"] = { "i", 14647 },	-- Coldridge Valley Gift Voucher
+					["u"] = 2,
 					["g"] = {
 						un(2, i(13584)),	-- Diablo Stone
 						un(2, i(13583)),	-- Panda Collar
