@@ -1403,7 +1403,6 @@ app.L = {
 		["Shadowfang Keep"] = 310,
 		["Temple of Ahn'Qiraj"] = 320,
 		["The Stockade"] = 225,
-		["Thunder Bluff"] = 88,
 		["Uldaman"] = 230,
 		["Wailing Caverns"] = 279,
 		["Zul'Gurub"] = 337,
