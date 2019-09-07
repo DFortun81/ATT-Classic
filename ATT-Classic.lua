@@ -2417,7 +2417,7 @@ local function AttachTooltip(self)
 						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
 						-- print(target, type, npc_id);
 						if type == "Player" then
-							if target == "Player-76-0895E23B" then
+							if target == "Player-4372-0000390A" then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then
 									leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
@@ -3078,7 +3078,7 @@ app.events.TAXIMAP_OPENED = function()
 					local node = app.FlightPathDB[id];
 					if node and node.coord then
 						-- Allow for a little bit of leeway.
-						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.05 then
+						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
 							tinsert(knownNodeIDs, id);
 						end
 					end
@@ -6150,7 +6150,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 			
 			-- If we don't have any map data on this area, report it to the chat window.
-			if not results or not results.g or #results.g < 1 then
+			if not results then
 				local mapID = self.mapID;
 				print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
 				
