@@ -3078,7 +3078,7 @@ app.events.TAXIMAP_OPENED = function()
 					local node = app.FlightPathDB[id];
 					if node and node.coord then
 						-- Allow for a little bit of leeway.
-						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.05 then
+						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
 							tinsert(knownNodeIDs, id);
 						end
 					end
