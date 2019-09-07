@@ -64,6 +64,7 @@ BADLANDS = 1418;	-- Confirmed!
 BLASTED_LANDS = 1419;	-- Confirmed!
 BURNING_STEPPES = 1428;	-- Confirmed!
 DEEPRUN_TRAM = 499;	-- Confirmed!
+DEADWIND_PASS = 1430;	-- Confirmed!
 DUN_MOROGH = 1426;	-- Confirmed!
 DUSKWOOD = 1431;	-- Confirmed!
 EASTERN_PLAGUELANDS = 1423;	-- Confirmed!

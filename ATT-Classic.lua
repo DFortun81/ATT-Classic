@@ -6150,7 +6150,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			end
 			
 			-- If we don't have any map data on this area, report it to the chat window.
-			if not results or not results.g or #results.g < 1 then
+			if not results then
 				local mapID = self.mapID;
 				print("No map found for this location ", app.GetMapName(mapID), " [", mapID, "]");
 				
