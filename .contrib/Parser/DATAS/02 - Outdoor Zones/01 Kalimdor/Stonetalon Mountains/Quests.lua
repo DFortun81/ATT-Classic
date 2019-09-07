@@ -7,26 +7,34 @@ _.Zones =
 		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
 			n(-17, {	-- Quests
 				q(1071, {	-- A Gnome's Respite
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
+					--["coord"] = { },
+					["crs"] = {
+						3989,	-- Venture Co. Logger
+						3991,	-- Venture Co. Deforester
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1075, {	-- A Scroll from Mauren
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					-- ["coord"] = ,
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4077,	-- Gaxim Rustfizzle
 				}),
 				q(1072, {	-- An Old Colleague
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					-- ["coord"] = ,
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4077,	-- Gaxim Rustfizzle
 				}),
 				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
-					--["objectID"] = 177904,	-- Wanted Poster: Besseleth
 					["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
-					["lvl"] = 15,
+					["cr"] = 11921,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(16891),	-- Claystone Shortsword
 						i(16894),	-- Clear Crystal Rod
@@ -35,25 +43,34 @@ _.Zones =
 				q(6548, {	-- Avenge My Village
 					["qg"] = 11857,	-- Makaba Flathoof
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["crs"] = {
+						11910,	-- Grimtotem Ruffian
+						11911,	-- Grimtotem Mercenary
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(6461, {	-- Blood Feeders
 					["qg"] = 12816,	-- Xen'Zilla
 					["coord"] = { 71.25, 95.00, STONETALON_MOUNTAINS },
+					["crs"] = {
+						4005,	-- Deepmoss Creeper
+						4007,	-- Deepmoss Venomspitter
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
 				q(6283, {	-- Bloodfury Bloodline
 					["qg"] = 11860,	-- Maggran Earthbinder
+					["sourceQuest"] = 6282,	-- Harpies Threaten
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["cr"] = 12579,	-- Bloodfury Ripper
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["g"] = {
 						i(16990),	-- Spritekin Cloak
 						i(16987),	-- Screecher Belt
 					},
-					["sourceQuest"] = 6282,	-- Harpies Threaten
 				}),
 				q(6421, {	-- Boulderslide Ravine
 					["qg"] = 11861,	-- Mor'rogal
@@ -64,41 +81,64 @@ _.Zones =
 				q(5881, {	-- Calling in the Reserves
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 				}),
 				q(1087, {	-- Cenarius' Legacy
 					["qg"] = 4198,	-- Braelyn Firehand
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["crs"] = {
+						4057,	-- Son of Cenarius
+						4053,	-- Daughter of Cenarius
+						4051,	-- Cenarion Botanist
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(1079, {	-- Covert Ops - Alpha
-					["lvl"] = 17,
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuests"] = {
+						1074,	-- Ineptitude + Chemicals = Fun
+						1077,	-- Special Delivery for Gaxim
+					},
+					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(5695),	-- NG-5 Explosives (Blue)
 						i(5694),	-- NG-5 Explosives (Red)
 					},
 				}),
 				q(1080, {	-- Covert Ops - Beta
-					["lvl"] = 17,
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuests"] = {
+						1074,	-- Ineptitude + Chemicals = Fun
+						1077,	-- Special Delivery for Gaxim
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6301, {	-- Cycle of Rebirth
 					["qg"] = 11864,	-- Tammra Windfield
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
-					["lvl"] = 17,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1076, {	-- Devils in Westfall
-					["lvl"] = 17,
+					["qg"] = 4078,	-- Collin Mauren
+					["sourceQuest"] = 1075,	-- A Scroll from Mauren
+					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6481, {	-- Earthen Arise
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11861,	-- Mor'rogal
+					["sourceQuest"] = 6421,	-- Boulderslide Ravine
+					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
+					["cr"] = 11920,	-- Goggeroc
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 					["g"] = {
 						i(16981),	-- Owlbeard Bracers
 						i(1306),	-- Wolfmane Wristguards
@@ -107,34 +147,46 @@ _.Zones =
 				q(6393, {	-- Elemental War
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
-					["lvl"] = 19,
+					["crs"] = {
+						4036,	-- Rogue Flame Spirit
+						4037,	-- Burning Ravager
+						4038,	-- Burning Destroyer
+					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
-							q(1083, {	-- Enraged Spirits
-								["lvl"] = 20,
-								["races"] = ALLIANCE_ONLY,
-								["qg"] = 4080,	-- Kaela Shadowspear
-							}),
+				q(1083, {	-- Enraged Spirits
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1091,	-- Kaela's Update
+					--["coord"] = { },
+					["crs"] = {
+						4036,	-- Rogue Flame Spirit
+						4037,	-- Burning Ravager
+						4038,	-- Burning Destroyer
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+				}),
 				q(1094, {	-- Further Instructions
 					["qg"] = 4201,	-- Ziz Fizziks
+					["sourceQuest"] = 1093,	-- Super Reaper 6000
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
-					["sourceQuest"] = 1093,	-- Super Reaper 6000
 				}),
 				q(1095, {	-- Further Instructions
 					["qg"] = 3442,	-- Sputtervalve
+					["sourceQuest"] = 1094,	-- Further Instructions
 					["coord"] = { 62.97, 37.19, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
-					["sourceQuest"] = 1094,	-- Further Instructions
 				}),
 				q(1096, {	-- Gerenzo Wrenchwhistle
 					["qg"] = 4201,	-- Ziz Fizziks
+					["sourceQuest"] = 1095,	-- Further Instructions
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
-					["sourceQuest"] = 1095,	-- Further Instructions
 					["g"] = {
 						i(6667),	-- Engineer's Cloak
 						i(6668),	-- Draftsman Boots
@@ -155,29 +207,54 @@ _.Zones =
 				}),
 				q(1062, {	-- Goblin Invaders
 					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
+					["cr"] = 3989,	-- Venture Co. Logger
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
-					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 				}),
 				q(6282, {	-- Harpies Threaten
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
+					["crs"] = {
+						4022,	-- Bloodfury Harpy
+						4023,	-- Bloodfury Roguefeather
+						4024,	-- Bloodfury Slayer
+						4025,	-- Bloodfury Ambusher
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 				}),
-				q(1074, {	-- Ineptitude + Chemicals = Fun
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4081,	-- Lomac Gearstrip
-				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun
-					["lvl"] = 17,
+					["qg"] = 4081,	-- Lomac Gearstrip
+					--["coord"] = { },
+					["sourceQuest"] = 1072,	-- An Old Colleague
+					["cost"] = {
+						{ "i", 2455, 4 },	-- Minor Mana Potion
+						{ "i", 2458, 2 },	-- Elixir of Minor Fortitude
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+				}),
+				q(1074, {	-- Ineptitude + Chemicals = Fun
+					["qg"] = 4081,	-- Lomac Gearstrip
+					--["coord"] = { },
+					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1058, {	-- Jin'Zil's Forest Magic
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
+					["crs"] = {
+						4020,	-- Sap Beast
+						4067,	-- Twilight Runner
+						4018,	-- Antlered Courser
+						4019,	-- Great Courser
+						4016,	-- Fey Dragon
+						4017,	-- Wily Fey Dragon
+						4066,	-- Nal'taszar
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -186,25 +263,36 @@ _.Zones =
 					},
 				}),
 				q(1091, {	-- Kaela's Update
-					["lvl"] = 17,
+					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuests"] = {
+						1079,	-- Covert Ops - Alpha
+						1080,	-- Covert Ops - Beta
+					},
+					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6401, {	-- Kaya's Alive
 					["qg"] = 11857,	-- Makaba Flathoof
+					["sourceQuest"] = 6523,	-- Protect Kaya
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
-					["sourceQuest"] = 6523,	-- Protect Kaya
 				}),
 				q(6629, {	-- Kill Grundig Darkcloud
 					["qg"] = 11857,	-- Makaba Flathoof
+					["sourceQuest"] = 6548,	-- Avenge My Village
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
+					["crs"] = {
+						11858,	-- Grundig Darkcloud
+						11912,	-- Grimtotem Brute
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
-					["sourceQuest"] = 6548,	-- Avenge My Village
 				}),
 				q(6381, {	-- New Life
 					["qg"] = 11864,	-- Tammra Windfield
+					["sourceQuest"] = 6301,	-- Cycle of Rebirth
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -212,14 +300,14 @@ _.Zones =
 						i(16985),	-- Windseeker Boots
 						i(16986),	-- Sandspire Gloves
 					},
-					["sourceQuest"] = 6301,	-- Cycle of Rebirth
 				}),
 				q(1088, {	-- Ordanus
 					["qg"] = 4198,	-- Braelyn Firehand
+					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["cr"] = 4273,	-- Keeper Ordanus
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
-					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 				}),
 				q(6523, {	-- Protect Kaya
 					["qg"] = 11856,	-- Kaya Flathoof
@@ -228,9 +316,11 @@ _.Zones =
 					["lvl"] = 12,
 				}),
 				q(1081, {	-- Reception from Tyrande
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4079,	-- Sentinel Thenysil
+					["sourceQuest"] = 1082,	-- Update for Sentinel Thenysil
+					--["coord"] = { },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(7334),	-- Efflorescent Robe
 						i(7335),	-- Grizzly Tunic
@@ -238,58 +328,83 @@ _.Zones =
 						i(6678),	-- Band of Elven Grace
 					},
 				}),
-				q(1059, {	-- Reclaiming the Charred Vale
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
+				q(1057, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
+					--["coord"] = { },
+					["crs"] = {
+						4022,	-- Bloodfury Harpy
+						4023,	-- Bloodfury Roguefeather
+						4024,	-- Bloodfury Slayer
+						4025,	-- Bloodfury Ambusher
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+				}),
+				q(1059, {	-- Reclaiming the Charred Vale
+					["qg"] = 3994,	-- Keeper Albagorm
+					["sourceQuest"] = 1057,	-- Reclaiming the Charred Vale
+					--["coord"] = { },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(6675),	-- Tempered Bracers
 						i(6676),	-- Constable Buckler
 					},
 				}),
-				q(1057, {	-- Reclaiming the Charred Vale
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3994,	-- Keeper Albagorm
-				}),
 				q(6542, {	-- Report to Kadrak
 					["qg"] = 11821,	-- Darn Talongrip
+					["isBreadcrumb"] = true,
 					["coord"] = { 73.23, 94.91, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
-					["isBreadcrumb"] = true,
 				}),
 				q(1078, {	-- Retrieval for Mauren
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4078,	-- Collin Mauren
+					--["coord"] = { },
+					["crs"] = {
+						4044,	-- Blackened Basilisk
+						4041,	-- Scorched Basilisk
+						4042,	-- Singed Basilisk
+						4147,	-- Saltstone Basilisk
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(6677),	-- Spellcrafter Wand
 					},
 				}),
 				q(1068, {	-- Shredding Machines
 					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1062,	-- Goblin Invaders
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
+					["crs"] = {
+						4073,	-- XT:4
+						4074,	-- XT:9
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
-					["sourceQuest"] = 1062,	-- Goblin Invaders
 				}),
 				q(1077, {	-- Special Delivery for Gaxim
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4078,	-- Collin Mauren
+					["sourceQuest"] = 1076,	-- Devils in Westfall
+					--["coord"] = { },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1093, {	-- Super Reaper 6000
 					["qg"] = 4201,	-- Ziz Fizziks
+					["sourceQuest"] = 1483,	-- Ziz Fizziks
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+					["cr"] = 3988,	-- Venture Co. Operator
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
-					["sourceQuest"] = 1483,	-- Ziz Fizziks
 				}),
 				q(1089, {	-- The Den
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4198,	-- Braelyn Firehand
+					["sourceQuest"] = 1088,	-- Ordanus
+					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(6669),	-- Sacred Band
 						i(5687),	-- Gatekeeper's Key
@@ -298,27 +413,39 @@ _.Zones =
 				}),
 				q(1063, {	-- The Elder Crone
 					["qg"] = 4049,	-- Seereth Stonebreak
+					["sourceQuest"] = 1062,	-- Goblin Invaders
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
-					["sourceQuest"] = 1062,	-- Goblin Invaders
 				}),
 				q(1061, {	-- The Spirits of Stonetalon
 					["qg"] = 4047,	-- Zor Lonetree
-					["maps"] = { ORGRIMMAR },
 					["coord"] = { 39.03, 38.04, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
 				q(1082, {	-- Update for Sentinel Thenysil
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuests"] = {
+						1083,	-- Enraged Spirits
+						1084,	-- Wounded Ancients
+					},
+					--["coord"] = { },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4080,	-- Kaela Shadowspear
 				}),
 				q(1084, {	-- Wounded Ancients
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1091,	-- Kaela's Update
+					--["coord"] = { },
+					["crs"] = {
+						4028,	-- Charred Ancient
+						4029,	-- Blackened Ancient
+						4030,	-- Vengeful Ancient
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 			}),
 		}),

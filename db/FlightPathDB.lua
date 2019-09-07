@@ -301,6 +301,7 @@ select(2, ...).FlightPathDB = {
 		name="Splintertree Post, Ashenvale",
 		faction=1,
 		mapID=1440,
+		coord={ 73.19, 61.59, 1440 },
 	},
 	[62] = {
 		name="Nighthaven, Moonglade",
