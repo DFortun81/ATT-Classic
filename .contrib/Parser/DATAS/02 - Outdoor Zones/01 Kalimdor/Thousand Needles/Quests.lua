@@ -7,18 +7,27 @@ _.Zones =
 		m(THOUSAND_NEEDLES, {	-- Thousand Needles
 			n(-17, {	-- Quests
 				q(1175, {	-- A Bump in the Road
-					["lvl"] = 28,
 					["qg"] = 4629,	-- Trackmaster Zherin
+					--["coord"] = { },
+					["crs"] = {
+						4147,	-- Saltstone Basilisk
+						4150,	-- Saltstone Gazer
+						4151,	-- Saltstone Crystalhide
+					},
+					["lvl"] = 28,
 				}),
 				q(4821, {	-- Alien Egg
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10539,	-- Hagar Lightninghoof
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(5088, {	-- Arikara
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4046,	-- Magatha Grimtotem
+					--["coord"] = { },
+					["cr"] = 10882,	-- Arikara
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 					["g"] = {
 						i(15464),	-- Brute Hammer
 						i(15465),	-- Stingshot Wand
@@ -26,33 +35,60 @@ _.Zones =
 					},
 				}),
 				q(4881, {	-- Assassination Plot
-					["lvl"] = 23,
+					["provider"] = { "o", 12564 },	-- Assassination Note
+					["cr"] = 10617,	-- Galak Messenger
+					["description"] = "The item that starts this quest is dropped by Galak Messengers.",
 					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(1118, {	-- Back to Booty Bay
-					["lvl"] = 35,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 35,
 				}),
 				q(1114, {	-- Delivery to the Gnomes
-					["lvl"] = 30,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 30,
 				}),
 				q(1116, {	-- Dream Dust in the Swamp
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["sourceQuest"] = 1115,	-- The Rumormonger
+					--["coord"] = { },
+					["crs"] = {
+						740,	-- Adolescent Whelp
+						741,	-- Dreaming Whelp
+						742,	-- Green Wyrmkin
+						744,	-- Green Scalebane
+						745,	-- Scalebane Captain
+						746,	-- Elder Dragonkin
+						14445,	-- Lord Captain Wyrmak
+					},
+					["lvl"] = 30,
 				}),
 				q(1107, {	-- Encrusted Tail Fins
-					["lvl"] = 28,
 					["qg"] = 4453,	-- Wizzle Brassbolts
+					--["coord"] = { },
+					["crs"] = {
+						871,	-- Saltscale Warrior
+						873,	-- Saltscale Oracle
+						875,	-- Saltscale Tide Lord
+						877,	-- Saltscale Forager
+						879,	-- Saltscale Hunter
+					},
+					["lvl"] = 28,
 				}),
 				q(5361, {	-- Family Tree
-					["lvl"] = 32,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(1394, {	-- Final Passage
+					["qg"] = 4488, 	-- Parqual Fintallas
+					["sourceQuest"] = 6628,	-- Test of Lore
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
 						i(6804),	-- Windstorm Hammer
@@ -60,20 +96,27 @@ _.Zones =
 					},
 				}),
 				q(4904, {	-- Free at Last
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10646,	-- Lakota Windsong
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(15469),	-- Windsong Cinch
 						i(15468),	-- Windsong Drape
 					},
 				}),
 				q(1120, {	-- Get the Gnomes Drunk
-					["lvl"] = 35,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
+					["isBreadcrumb"] = true,
+					--["coord"] = { },
+					["lvl"] = 35,
 				}),
 				q(1121, {	-- Get the Goblins Drunk
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
+					["isBreadcrumb"] = true,
+					--["coord"] = { },
 					["lvl"] = 35,
 				}),
 				q(1174, {	-- Gnomes Win!
@@ -81,28 +124,38 @@ _.Zones =
 						i(5857),	-- Gnome Prize Box
 					},
 				}),
-				q(1183, {	-- Goblin Sponsorship
-					["lvl"] = 29,
-					["qg"] = 2496,	-- Baron Revilgaz
-				}),
 				q(1178, {	-- Goblin Sponsorship
-					["lvl"] = 29,
 					["qg"] = 4630,	-- Pozzik
+					["sourceQuest"] = 1176,	-- Load Lightening
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1180, {	-- Goblin Sponsorship
-					["lvl"] = 29,
 					["qg"] = 3391,	-- Gazlowe
+					["sourceQuest"] = 1178,	-- Goblin Sponsorship
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1181, {	-- Goblin Sponsorship
-					["lvl"] = 29,
 					["qg"] = 4631,	-- Wharfmaster Lozgil
+					["sourceQuest"] = 1180,	-- Goblin Sponsorship
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1182, {	-- Goblin Sponsorship
-					["lvl"] = 29,
 					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 1181,	-- Goblin Sponsorship
+					--["coord"] = { },
+					["lvl"] = 29,
 					["g"] = {
 						i(5851),	-- Cozzle's Key
 					},
+				}),
+				q(1183, {	-- Goblin Sponsorship
+					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 1182,	-- Goblin Sponsorship
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1099, {	-- Goblins Win!
 					["g"] = {
@@ -110,9 +163,10 @@ _.Zones =
 					},
 				}),
 				q(5064, {	-- Grimtotem Spying
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 					["g"] = {
 						i(15457),	-- Desert Shoulders
 						i(15458),	-- Tundra Boots
@@ -120,87 +174,138 @@ _.Zones =
 					},
 				}),
 				q(1105, {	-- Hardened Shells
-					["lvl"] = 28,
 					["qg"] = 4453,	-- Wizzle Brassbolts
+					--["coord"] = { },
+					["crs"] = {
+						4142,	-- Sparkleshell Tortoise
+						4143,	-- Sparkleshell Snapper
+						4144,	-- Sparkleshell Borer
+					},
+					["lvl"] = 28,
 				}),
 				q(5762, {	-- Hemet Nesingwary
-					["lvl"] = 28,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 28,
 				}),
 				q(4770, {	-- Homeward Bound
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10427,	-- Pao'ka Swiftmountain
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(5151, {	-- Hypercapacitor Gizmo
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10941,	-- Wizlo Bearingshiner
+					--["coord"] = { },
+					["cr"] = 10992,	-- Enraged Panther
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 					["g"] = {
 						i(15467),	-- Inventor's League Ring
 					},
 				}),
 				q(1108, {	-- Indurium
-					["lvl"] = 28,
 					["qg"] = 4618,	-- Martek the Exiled
+					["sourceQuest"] = 1106,	-- Martek the Exiled
+					--["coord"] = { },
+					["crs"] = {
+						2894,	-- Stonevault Shaman
+						2893,	-- Stonevault Bonesnapper
+						6733,	-- Stonevault Basher
+					},
+					["lvl"] = 28,
 				}),
 				q(1192, {	-- Indurium Ore
 					["lvl"] = 29,
 				}),
 				q(1190, {	-- Keeping Pace
-					["lvl"] = 29,
 					["qg"] = 4630,	-- Pozzik
+					["sourceQuest"] = 1137,	-- News for Frizzle
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1176, {	-- Load Lightening
-					["lvl"] = 29,
 					["qg"] = 4630,	-- Pozzik
+					--["coord"] = { },
+					["crs"] = {
+						4154,	-- Salt Flats Scavenger
+						4158,	-- Salt Flats Vulture
+					},
+					["lvl"] = 29,
 				}),
 				q(1100, {	-- Lonebrow's Journal
-					["lvl"] = 29,
+					["provider"] = { "i", 5790 },	-- Lonebrow's Journal
+					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(1106, {	-- Martek the Exiled
-					["lvl"] = 26,
 					["qg"] = 4454,	-- Fizzle Brassbolts
+					--["coord"] = { },
+					["lvl"] = 26,
 				}),
 				q(4542, {	-- Message to Freewind Post
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10079,	-- Brave Moonhorn
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(1137, {	-- News for Fizzle
-					["lvl"] = 28,
 					["qg"] = 4618,	-- Martek the Exiled
+					["sourceQuest"] = 1108,	-- Indurium
+					--["coord"] = { },
+					["lvl"] = 28,
 					["g"] = {
 						i(6729),	-- Fizzle's Zippy Lighter
 						i(6732),	-- Gnomish Mechanic's Gloves
 					},
 				}),
 				q(4841, {	-- Pacify the Centaur
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
+					["sourceQuest"] = 4542,	-- Message to Freewind Post
+					--["coord"] = { },
+					["crs"] = {
+						4093,	-- Galak Wrangler
+						4094,	-- Galak Scout
+						4096,	-- Galak Windchaser
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(1112, {	-- Parts for Kravel
-					["lvl"] = 30,
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
+					--["coord"] = { },
+					["lvl"] = 30,
+				}),
+				q(1148, {	-- Parts of the Swarm
+					["provider"] = { "i", 5877 },	-- Cracked Silithid Carapace
+					["crs"] = {
+						4133,	-- Silithid Hive Drone
+						4130,	-- Silithid Searcher
+						4131,	-- Silithid Invader
+						4132,	-- Silithid Ravager
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(1184, {	-- Parts of the Swarm
-					["lvl"] = 28,
+					["qg"] = 3428,	-- Korran
+					["sourceQuest"] = 1148,	-- Parts of the Swarm
+					--["coord"] = { },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 28,
 					["g"] = {
 						i(6737),	-- Dryleaf Pants
 						i(6738),	-- Bleeding Crescent
 					},
 				}),
-				q(1148, {	-- Parts of the Swarm
-					["lvl"] = 28,
-					["races"] = HORDE_ONLY,
-				}),
 				q(4966, {	-- Protect Kanati Greycloud
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10638,	-- Kanati Greycloud
+					["sourceQuest"] = 4881,	-- Assassination Plot
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 					["g"] = {
 						i(15461),	-- Lightheel Boots
 						i(15462),	-- Loamflake Bracers
@@ -208,145 +313,201 @@ _.Zones =
 					},
 				}),
 				q(1187, {	-- Razzeric's Tweaking
-					["lvl"] = 29,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4706,	-- Razzeric
+					["sourceQuest"] = 1186,	-- The Eighteenth Pilot
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1122, {	-- Report Back to Fizzlebub
+					["qg"] = 4452,	-- Kravel Koalbeard
+					["sourceQuests"] = {
+						1120,	-- Get the Gnomes Drunk
+						1121,	-- Get the Goblins Drunk
+					},
+					--["coord"] = { },
 					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
-					["qg"] = 4452,	-- Kravel Koalbeard
 				}),
 				q(1194, {	-- Rizzle's Schematics
+					["provider"] = { "o", 20805 }, 	-- Rizzle's Unguarded Plans
+					["sourceQuest"] = 1190,	-- Keeping Pace
+					--["coord"] = { },
 					["lvl"] = 29,
-					--["objectID"] = 20805,	-- Rizzle's Unguarded Plans
 				}),
 				q(1110, {	-- Rocket Car Parts
-					["lvl"] = 28,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 28,
 				}),
 				q(1117, {	-- Rumors for Kravel
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["sourceQuest"] = 1116,	-- Dream Dust in the Swamp
+					--["coord"] = { },
+					["lvl"] = 30,
 				}),
 				q(5062, {	-- Sacred Fire
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10428,	-- Motega Firemane
+					["sourceQuest"] = 4865,	-- Serpent Wild
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(1188, {	-- Safety First
-					["lvl"] = 29,
 					["qg"] = 4706,	-- Razzeric
+					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1189, {	-- Safety First
-					["lvl"] = 29,
 					["qg"] = 4708,	-- Shreev
+					["sourceQuest"] = 1188,	-- Safety First
+					["lvl"] = 29,
 					["g"] = {
 						i(6726),	-- Razzeric's Customized Seatbelt
 						i(6727),	-- Razzeric's Racing Grips
 					},
 				}),
 				q(1104, {	-- Salt Flat Venom
-					["lvl"] = 28,
 					["qg"] = 4454,	-- Fizzle Brassbolts
+					--["coord"] = { },
+					["lvl"] = 28,
 				}),
 				q(4865, {	-- Serpent Wild
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10539,	-- Hagar Lightninghoof
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(1150, {	-- Test of Endurance
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2986,	-- Dorn Plainstalker
+					["sourceQuest"] = 1149,	-- Test of Faith
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(5845),	-- Flank of Meat
 					},
 				}),
 				q(1149, {	-- Test of Faith
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2986,	-- Dorn Plainstalker
-				}),
-				q(1159, {	-- Test of Lore
-					["lvl"] = 25,
+					--["coord"] = { },
 					["races"] = HORDE_ONLY,
-					["qg"] = 4489,	-- Braug Dimspirit
-				}),
-				q(6627, {	-- Test of Lore
 					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4489,	-- Braug Dimspirit
-				}),
-				q(1154, {	-- Test of Lore
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 				}),
 				q(1152, {	-- Test of Lore
+					["qg"] = 2986,	-- Dorn Plainstalker
+					["sourceQuest"] = 1151,	-- Test of Strength
+					--["coord"] = { },
 					["lvl"] = 25,
 					["races"] = HORDE_ONLY,
-					["qg"] = 2986,	-- Dorn Plainstalker
+				}),
+				q(1154, {	-- Test of Lore
+					["qg"] = 4489,	-- Braug Dimspirit
+					["sourceQuest"] = 1152,	-- Test of Lore
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				}),
+				q(6627, {	-- Test of Lore
+					["qg"] = 4489,	-- Braug Dimspirit
+					["sourceQuest"] = 1154,	-- Test of Lore
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
+				}),
+				q(1159, {	-- Test of Lore
+					["qg"] = 4489,	-- Braug Dimspirit
+					["sourceQuest"] = 6627,	-- Test of Lore
+					--["coord"] = { },
+					["lvl"] = 25,
+					["races"] = HORDE_ONLY,
 				}),
 				q(6628, {	-- Test of Lore
-					["lvl"] = 25,
+					["qg"] = 4488,	-- Parqual Fintallas
+					["sourceQuest"] = 1160,	-- Test of Lore
+					--["coord"] = { },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(1151, {	-- Test of Strength
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2986,	-- Dorn Plainstalker
-				}),
-				q(2769, {	-- The Brassbolts Brothers
-					["lvl"] = 40,
-					["qg"] = 6169,	-- Klockmort Spannerspan
+					["sourceQuest"] = 1150,	-- Test of Endurance
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(1179, {	-- The Brassbolts Brothers
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2092,	-- Pilot Longbeard
+					--["coord"] = { },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
+				}),
+				q(2769, {	-- The Brassbolts Brothers
+					["qg"] = 6169,	-- Klockmort Spannerspan
+					--["coord"] = { },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(1186, {	-- The Eighteenth Pilot
-					["lvl"] = 29,
 					["qg"] = 4630,	-- Pozzik
+					["sourceQuest"] = 1183,	-- Goblin Sponsorship
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1115, {	-- The Rumormonger
-					["lvl"] = 30,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 30,
 				}),
 				q(1147, {	-- The Swarm Grows
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4483,	-- Moktar Krin
+					["sourceQuest"] = 1146,	-- The Swarm Grows
+					--["coord"] = { },
+					["crs"] = {
+						4133,	-- Silithid Hive Drone
+						4130,	-- Silithid Searcher
+						4131,	-- Silithid Invader
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(5147, {	-- Wanted - Arnak Grimtotem
-					["lvl"] = 25,
+					["provider"] = { "o", 176115 },	-- Assassination Note
+					--["coord"] = { },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 176115,	-- Wanted Poster - Arnak Grimtotem
+					["lvl"] = 25,
 					["g"] = {
 						i(15471),	-- Brawnhide Armor
 						i(15470),	-- Plainsguard Leggings
 					},
 				}),
 				q(1111, {	-- Wharfmaster Dizzywig
-					["lvl"] = 30,
 					["qg"] = 4452,	-- Kravel Koalbeard
+					--["coord"] = { },
+					["lvl"] = 30,
 				}),
 				q(4767, {	-- Wind Rider
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10377,	-- Elu
+					--["coord"] = { },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(4265),	-- Heavy Armor Kit
 					},
 				}),
 				q(1191, {	-- Zamek's Distraction
-					["lvl"] = 29,
 					["qg"] = 4709,	-- Zamek
+					--["coord"] = { },
+					["lvl"] = 29,
 				}),
 				q(1119, {	-- Zanzil's Mixture and a Fool's Stout
-					["lvl"] = 35,
+					["qg"] = 2498,	-- Crank Fizzlebub
+					["sourceQuest"] = 1118,	-- Back to Booty Bay
+					--["coord"] = { },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 			}),
 		}),
