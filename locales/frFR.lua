@@ -20,6 +20,7 @@ L.ZONE_TEXT_TO_MAP_ID["Kraal de Tranchebauge"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Donjon d'Ombrecroc"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Cavernes des lamentations"] = 279;	-- WC
+L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({

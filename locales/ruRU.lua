@@ -15,6 +15,7 @@ L.ZONE_TEXT_TO_MAP_ID["Лабиринты Иглошкурых"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Крепость Темного Клыка"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Ульдаман"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
+L.ZONE_TEXT_TO_MAP_ID["Зул'Фаррак"] = 219;	-- ZF
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({

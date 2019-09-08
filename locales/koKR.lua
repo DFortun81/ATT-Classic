@@ -15,6 +15,7 @@ L.ZONE_TEXT_TO_MAP_ID["가시덩굴 우리"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["그림자송곳니 성채"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["울다만"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["통곡의 동굴"] = 279;	-- WC
+L.ZONE_TEXT_TO_MAP_ID["줄파락"] = 219;	-- ZF
 
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({

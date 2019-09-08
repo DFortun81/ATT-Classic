@@ -2141,18 +2141,6 @@ app.SearchForLink = SearchForLink;
 local function AddTomTomWaypoint(group, auto)
 	if TomTom and group.visible then
 		if group.coords or group.coord then
-			if auto then
-				if C_Map.GetMapInfo(app.GetCurrentMapID()).mapType ~= 3 then return end -- only set waypoints if the current map is a zone
-				local waypointFilters = GetDataMember("WaypointFilters")
-				for headerID, enabled in pairs(waypointFilters) do
-					if (UnitOnTaxi("player") and not GetDataMember("EnableTomTomWaypointsOnTaxi"))
-					   or (app.RecursiveIsDescendantOfParentWithValue(group, "npcID", headerID) and not enabled)
-					   or (GetDataMember("TomTomIgnoreCompletedObjects") and app.IsComplete(group))
-					then
-						return
-					end
-				end
-			end
 			local opt = {
 				title = group.text or group.link,
 				persistent = nil,
@@ -4633,7 +4621,9 @@ local function RowOnClick(self, button)
 		
 		-- All non-Shift Right Clicks open a mini list or the settings.
 		if button == "RightButton" then
-			if self.index > 0 then
+			if IsAltKeyDown() then
+				AddTomTomWaypoint(reference, false);
+			elseif self.index > 0 then
 				CreateMiniListForGroup(self.ref);
 			else
 				app.Settings:Open();
