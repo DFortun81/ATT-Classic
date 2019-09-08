@@ -23,6 +23,16 @@ _.Zones =
 					["questID"] = 332,	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 				},
+				q(6403, {	-- The Great Masquerade
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12580,	-- Reginald Windsor
+				}),
+				q(6501, {	-- The Dragon's Eye
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				}),
 			}),
 		}),
 	}),

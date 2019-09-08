@@ -123,6 +123,11 @@ _.Zones =
 						i(12049),	-- Splintsteel Armor
 					},
 				}),
+				q(6402, {	-- Stormwind Rendezvous
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9560,	-- Marshal Maxwell
+				}),
 				q(4296, {	-- Tablet of the Seven
 					["lvl"] = 50,
 					["qg"] = 9536,	-- Maxwort Uberglint
