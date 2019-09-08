@@ -18,13 +18,14 @@ _.Zones =
 				}),
 				q(4821, {	-- Alien Egg
 					["qg"] = 10539,	-- Hagar Lightninghoof
-					--["coord"] = { },
+					["coord"] = { 44.64, 50.29, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
 				q(5088, {	-- Arikara
 					["qg"] = 4046,	-- Magatha Grimtotem
-					--["coord"] = { },
+					["sourceQuest"] = 5062,	-- Sacred Fire
+					["coord"] = { 69.85, 30.90, THUNDER_BLUFF },
 					["cr"] = 10882,	-- Arikara
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -80,7 +81,7 @@ _.Zones =
 				}),
 				q(5361, {	-- Family Tree
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
-					--["coord"] = { },
+					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
 				}),
@@ -97,7 +98,7 @@ _.Zones =
 				}),
 				q(4904, {	-- Free at Last
 					["qg"] = 10646,	-- Lakota Windsong
-					--["coord"] = { },
+					["coord"] = { 37.99, 26.52, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
@@ -164,7 +165,8 @@ _.Zones =
 				}),
 				q(5064, {	-- Grimtotem Spying
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
-					--["coord"] = { },
+					["sourceQuest"] = 4841,	-- Pacify the Centaur
+					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["g"] = {
@@ -196,7 +198,7 @@ _.Zones =
 				}),
 				q(5151, {	-- Hypercapacitor Gizmo
 					["qg"] = 10941,	-- Wizlo Bearingshiner
-					--["coord"] = { },
+					["coord"] = { 21.44, 32.55, THOUSAND_NEEDLES },
 					["cr"] = 10992,	-- Enraged Panther
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -246,7 +248,7 @@ _.Zones =
 				}),
 				q(4542, {	-- Message to Freewind Post
 					["qg"] = 10079,	-- Brave Moonhorn
-					--["coord"] = { },
+					["coord"] = { 32.23, 22.17, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 				}),
@@ -263,7 +265,7 @@ _.Zones =
 				q(4841, {	-- Pacify the Centaur
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4542,	-- Message to Freewind Post
-					--["coord"] = { },
+					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
 					["crs"] = {
 						4093,	-- Galak Wrangler
 						4094,	-- Galak Scout
@@ -303,7 +305,7 @@ _.Zones =
 				q(4966, {	-- Protect Kanati Greycloud
 					["qg"] = 10638,	-- Kanati Greycloud
 					["sourceQuest"] = 4881,	-- Assassination Plot
-					--["coord"] = { },
+					["coord"] = { 21.27, 32.03, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 					["g"] = {
@@ -348,7 +350,7 @@ _.Zones =
 				q(5062, {	-- Sacred Fire
 					["qg"] = 10428,	-- Motega Firemane
 					["sourceQuest"] = 4865,	-- Serpent Wild
-					--["coord"] = { },
+					["coord"] = { 21.55, 32.34, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
@@ -374,14 +376,15 @@ _.Zones =
 				}),
 				q(4865, {	-- Serpent Wild
 					["qg"] = 10539,	-- Hagar Lightninghoof
-					--["coord"] = { },
+					["sourceQuest"] = 4821,	-- Alien Egg
+					["coord"] = { 44.64, 50.29, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 				}),
 				q(1150, {	-- Test of Endurance
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1149,	-- Test of Faith
-					--["coord"] = { },
+					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
@@ -390,14 +393,14 @@ _.Zones =
 				}),
 				q(1149, {	-- Test of Faith
 					["qg"] = 2986,	-- Dorn Plainstalker
-					--["coord"] = { },
+					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1152, {	-- Test of Lore
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1151,	-- Test of Strength
-					--["coord"] = { },
+					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
 					["lvl"] = 25,
 					["races"] = HORDE_ONLY,
 				}),
@@ -432,7 +435,7 @@ _.Zones =
 				q(1151, {	-- Test of Strength
 					["qg"] = 2986,	-- Dorn Plainstalker
 					["sourceQuest"] = 1150,	-- Test of Endurance
-					--["coord"] = { },
+					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -464,7 +467,7 @@ _.Zones =
 				q(1147, {	-- The Swarm Grows
 					["qg"] = 4483,	-- Moktar Krin
 					["sourceQuest"] = 1146,	-- The Swarm Grows
-					--["coord"] = { },
+					["coord"] = { 67.60, 63.93, THOUSAND_NEEDLES },
 					["crs"] = {
 						4133,	-- Silithid Hive Drone
 						4130,	-- Silithid Searcher
@@ -475,7 +478,7 @@ _.Zones =
 				}),
 				q(5147, {	-- Wanted - Arnak Grimtotem
 					["provider"] = { "o", 176115 },	-- Assassination Note
-					--["coord"] = { },
+					["coord"] = { 46.01, 50.86, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
@@ -490,7 +493,7 @@ _.Zones =
 				}),
 				q(4767, {	-- Wind Rider
 					["qg"] = 10377,	-- Elu
-					--["coord"] = { },
+					["coord"] = { 44.84, 48.97, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {

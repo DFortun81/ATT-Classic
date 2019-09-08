@@ -153,6 +153,7 @@ select(2, ...).FlightPathDB = {
 		name="Freewind Post, Thousand Needles",
 		faction=1,
 		mapID=1441,
+		coord={ 45.14, 49.10, 1441 }
 	},
 	[31] = {
 		name="Thalanaar, Feralas",
