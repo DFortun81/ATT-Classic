@@ -410,7 +410,6 @@ _.Zones =
 				}),
 				q(3444, {	-- The Stone Circle
 					["lvl"] = 46,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7771,	-- Marvon Rivetseeker
 				}),
 				q(2954, {	-- The Stone Watcher
@@ -429,6 +428,12 @@ _.Zones =
 					["g"] = {
 						i(8647),	-- Egg Crate
 					},
+				}),
+				q(2944, {	-- The Super Snapper FX
+					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 79.0, 62.0, THE_HINTERLANDS },
+					["maps"] = { THE_HINTERLANDS },
 				}),
 				q(2605, {	-- The Thirsty Goblin
 					["lvl"] = 44,

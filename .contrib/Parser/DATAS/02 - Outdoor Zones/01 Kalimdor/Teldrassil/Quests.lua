@@ -79,6 +79,10 @@ _.Zones =
 				q(3661, {	-- Favored of Elune?
 					["lvl"] = 42,
 				}),
+				q(2940, {	-- Feralas: A History
+					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(2459, {	-- Ferocitas the Dream Eater
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3567,	-- Tallonkai Swiftroot
@@ -142,6 +146,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3517,	-- Rellian Greenspyre
 				}),
+				q(2943, {	-- Return to Troyas
+					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(489, {	-- Seek Redemption!
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
@@ -196,6 +204,10 @@ _.Zones =
 						recipe(6991),		-- Feed Pet
 						recipe(982),		-- Revive Pet
 					},
+				}),
+				q(2941, {	-- The Borrower
+					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(940, {	-- Teldrassil
 					["lvl"] = 6,
