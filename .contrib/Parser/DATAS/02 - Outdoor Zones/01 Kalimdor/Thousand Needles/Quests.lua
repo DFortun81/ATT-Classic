@@ -88,7 +88,7 @@ _.Zones =
 				q(1394, {	-- Final Passage
 					["qg"] = 4488, 	-- Parqual Fintallas
 					["sourceQuest"] = 6628,	-- Test of Lore
-					--["coord"] = { },
+					["coord"] = { 57.75, 65.39, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
@@ -407,28 +407,28 @@ _.Zones =
 				q(1154, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 1152,	-- Test of Lore
-					--["coord"] = { },
+					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(6627, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 1154,	-- Test of Lore
-					--["coord"] = { },
+					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1159, {	-- Test of Lore
 					["qg"] = 4489,	-- Braug Dimspirit
 					["sourceQuest"] = 6627,	-- Test of Lore
-					--["coord"] = { },
+					["coord"] = { 78.80, 45.68, STONETALON_MOUNTAINS },
 					["lvl"] = 25,
 					["races"] = HORDE_ONLY,
 				}),
 				q(6628, {	-- Test of Lore
 					["qg"] = 4488,	-- Parqual Fintallas
 					["sourceQuest"] = 1160,	-- Test of Lore
-					--["coord"] = { },
+					["coord"] = { 57.75, 65.39, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
 				}),

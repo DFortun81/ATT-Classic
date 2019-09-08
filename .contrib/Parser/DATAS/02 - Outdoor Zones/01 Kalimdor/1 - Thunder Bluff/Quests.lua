@@ -68,7 +68,7 @@ _.Zones =
 				}),
 				q(1065, {	-- Journey to Tarren Mill
 					["qg"] = 3419,	-- Apothecary Zamah
-					["coord"] = { 22.83, 20.92, THUNDER_BLUFF },
+					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["sourceQuest"] = 1064,	-- Forsaken Aid
@@ -152,9 +152,11 @@ _.Zones =
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 				}),
 				q(1086, {	-- The Flying Machine Airport
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3419,	-- Apothecary Zamah
+					["sourceQuest"] = 1067,	-- Return to Thunder Bluff
+					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(1000, {	-- The New Frontier
 					["lvl"] = 54,
@@ -182,9 +184,10 @@ _.Zones =
 					},
 				}),
 				q(1197, {	-- The Sacred Flame
+					["qg"] = 4722,	-- Rau Cliffrunner
+					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
-					["qg"] = 4722,	-- Rau Cliffrunner
 					["g"] = {
 						i(6739),	-- Cliffrunner's Aim
 						i(6740),	-- Azure Sash
