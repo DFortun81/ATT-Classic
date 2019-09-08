@@ -8,10 +8,13 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(4023, {	-- A Taste of Flame
 					["lvl"] = 52,
+					["races"] = HORDE_ONLY,
+					["qg"] = 9459,	-- Cyrus Therepentous
 				}),
 				q(4022, {	-- A Taste of Flame
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9459,	-- Cyrus Therepentous
 				}),
 				q(4024, {	-- A Taste of Flame
 					["lvl"] = 52,
