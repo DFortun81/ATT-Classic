@@ -135,6 +135,9 @@ _.Zones =
 				q(243, {	-- Into the Field
 					["lvl"] = 38,
 				}),
+				q(3914, {	-- Linken's Sword
+					["lvl"] = 47,
+				}),
 				q(8599, {	-- Love Song for Narain
 					["lvl"] = 60,
 				}),
