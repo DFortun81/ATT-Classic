@@ -8,10 +8,12 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(2974, {	-- A Grim Discovery
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 4544,	-- Krueg Skullsplitter
 				}),
 				q(2976, {	-- A Grim Discovery
 					["lvl"] = 37,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11858),	-- Battlehard Cape
 						i(11859),	-- Jademoon Orb
@@ -19,6 +21,7 @@ _.Zones =
 				}),
 				q(4266, {	-- A Hero's Welcome
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11856),	-- Ceremonial Elven Blade
 						i(11857),	-- Sanctimonial Rod
@@ -26,6 +29,7 @@ _.Zones =
 				}),
 				q(2973, {	-- A New Cloak's Sheen
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 4544,	-- Krueg Skullsplitter
 				}),
 				q(3842, {	-- A Short Incubation
@@ -35,6 +39,7 @@ _.Zones =
 				}),
 				q(3121, {	-- A Strange Request
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(7725, {	-- Again With the Zapped Giants
@@ -42,17 +47,21 @@ _.Zones =
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
 				}),
 				q(2869, {	-- Against the Hatecrest
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3130, {	-- Against the Hatecrest
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3936,	-- Shandris Feathermoon
 				}),
 				q(2863, {	-- Alpha Strike
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 				}),
 				q(3841, {	-- An Orphan Looking For a Home
@@ -70,6 +79,7 @@ _.Zones =
 				}),
 				q(4127, {	-- Boat Wreckage
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 164909,	-- Wrecked Row Boat
 				}),
 				q(7492, {	-- Camp Mojache
@@ -86,9 +96,11 @@ _.Zones =
 				}),
 				q(2979, {	-- Dark Ceremony
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3062, {	-- Dark Heart
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7776,	-- Talo Thornhoof
 					["g"] = {
 						i(9665),	-- Wingcrest Gloves
@@ -121,18 +133,17 @@ _.Zones =
 				}),
 				q(3125, {	-- Faerie Dragon Muisek
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(7494, {	-- Feathermoon Stronghold
 					["lvl"] = 54,
+					["races"] = ALLIANCE_ONLY,
 					["qgs"] = {
 						2198,	-- Crier Goodman
 						10877,	-- Courier Hammerfall
 						10878,	-- Herald Moonstalker
 					},
-				}),
-				q(2940, {	-- Feralas: A History
-					["lvl"] = 42,
 				}),
 				q(2766, {	-- Find OOX-22/FE!
 					["lvl"] = 40,
@@ -144,9 +155,11 @@ _.Zones =
 				}),
 				q(4265, {	-- Freed from the Hive
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2969, {	-- Freedom for All Creatures
 					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7956,	-- Kindal Moonweaver
 				}),
 				q(7721, {	-- Fuel for the Zapping
@@ -158,6 +171,7 @@ _.Zones =
 				}),
 				q(2987, {	-- Gordunni Cobalt
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8021,	-- Orwin Gizzmick
 					["g"] = {
 						i(9658),	-- Boots of the Maharishi
@@ -166,15 +180,18 @@ _.Zones =
 				}),
 				q(3124, {	-- Hippogryph Muisek
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 				}),
 				q(7733, {	-- Improved Quality
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(19041),	-- Pratt's Handcrafted Tunic
 					},
 				}),
 				q(7734, {	-- Improved Quality
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7854,	-- Jangdor Swiftstrider
 					["g"] = {
 						i(19042),	-- Jangdor's Handcrafted Tunic
@@ -182,14 +199,17 @@ _.Zones =
 				}),
 				q(2939, {	-- In Search of Knowledge
 					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7764,	-- Troyas Moonbreeze
 				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(3128, {	-- Natural Materials
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(7738, {	-- Perfect Yeti Hide
@@ -200,6 +220,7 @@ _.Zones =
 				}),
 				q(4130, {	-- Psychometric Reading
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7879,	-- Quintis Jonespyre
 				}),
 				q(7726, {	-- Refuel for the Zapping
@@ -215,57 +236,64 @@ _.Zones =
 				}),
 				q(2867, {	-- Return to Feathermoon Stronghold
 					["lvl"] = 40,
-				}),
-				q(2943, {	-- Return to Troyas
-					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3122, {	-- Return to Witch Doctor Uzer'i
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 				}),
 				q(4267, {	-- Rise of the Silithid
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7731, {	-- Stinglasher
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 				}),
 				q(3123, {	-- Testing the Vessel
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(4281, {	-- Thalanaar Delivery
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2903, {	-- The Battle Plans
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					--["objectID"] = 142195,	-- Woodpaw Battle Map
 					["g"] = {
 						i(9661),	-- Earthclasp Barrier
 						i(9662),	-- Rushridge Boots
 					},
 				}),
-				q(2941, {	-- The Borrower
-					["lvl"] = 42,
-				}),
 				q(2844, {	-- The Giant Guardian
 					["lvl"] = 44,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3002, {	-- The Gordunni Orb
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(2978, {	-- The Gordunni Scroll
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(2982, {	-- The High Wilderness
 					["lvl"] = 39,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7900,	-- Angelas Moonbreeze
 				}),
 				q(4129, {	-- The Knife Revealed
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7880,	-- Ginro Hearthkindle
 				}),
 				q(2822, {	-- The Mark of Quality
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7854,	-- Jangdor Swiftstrider
 					["g"] = {
 						i(9633),	-- Jangdor's Handcrafted Boots
@@ -274,6 +302,8 @@ _.Zones =
 				}),
 				q(2821, {	-- The Mark of Quality
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7852,	-- Pratt McGrubben
 					["g"] = {
 						i(9630),	-- Pratt's Handcrafted Boots
 						i(9631),	-- Pratt's Handcrafted Gloves
@@ -281,13 +311,16 @@ _.Zones =
 				}),
 				q(4125, {	-- The Missing Courier
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4124, {	-- The Missing Courier
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
 				}),
 				q(2942, {	-- The Morrow Stone
 					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9654),	-- Cairnstone Sliver
 						i(9655),	-- Seedtime Hoop
@@ -300,31 +333,39 @@ _.Zones =
 				}),
 				q(2975, {	-- The Ogres of Feralas
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7777,	-- Rok Orhan
 				}),
 				q(2980, {	-- The Ogres of Feralas
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7777,	-- Rok Orhan
 				}),
 				q(2866, {	-- The Ruins of Solarsal
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2879, {	-- The Stave of Equinex
 					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9307),	-- A Sparkling Stone
 					},
 				}),
 				q(4120, {	-- The Strength of Corruption
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7776,	-- Talo Thornhoof
 				}),
 				q(3445, {	-- The Sunken Temple
 					["lvl"] = 46,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7900,	-- Angelas Moonbreeze
 				}),
-				q(2944, {	-- The Super Snapper FX
-					["lvl"] = 42,
+				q(3380, {	-- The Sunken Temple
+					["lvl"] = 46,
+					["races"] = HORDE_ONLY,
+					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(4041, {	-- The Videre Elixir
 					["lvl"] = 47,
@@ -334,9 +375,11 @@ _.Zones =
 				}),
 				q(4131, {	-- The Woodpaw Gnolls
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4135, {	-- The Writhing Deep
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 164953,	-- Large Leather Backpacks
 				}),
 				q(3567, {	-- To the Top
@@ -346,14 +389,17 @@ _.Zones =
 				}),
 				q(3126, {	-- Treant Muisek
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(3063, {	-- Vengeance on the Northspring
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7776,	-- Talo Thornhoof
 				}),
 				q(2845, {	-- Wandering Shay
 					["lvl"] = 44,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(9656),	-- Granite Grips
 						i(9657),	-- Vinehedge Cinch
@@ -361,10 +407,12 @@ _.Zones =
 				}),
 				q(2862, {	-- War on the Woodpaw
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 				}),
 				q(3129, {	-- Weapons of Spirit
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9684),	-- Force of the Hippogryph
 						i(9686),	-- Spirit of the Faerie Dragon
@@ -374,6 +422,7 @@ _.Zones =
 				}),
 				q(2902, {	-- Woodpaw Investigation
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 				}),
 				q(7003, {	-- Zapped Giants
@@ -385,10 +434,12 @@ _.Zones =
 				}),
 				q(7730, {	-- Zukk'ash Infestation
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 				}),
 				q(7732, {	-- Zukk'ash Report
 					["lvl"] = 39,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7875,	-- Hadoken Swiftstrider
 					["g"] = {
 						i(19038),	-- Ring of Subtlety

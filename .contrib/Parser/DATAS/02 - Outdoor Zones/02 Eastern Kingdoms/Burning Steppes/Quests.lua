@@ -8,10 +8,21 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(4023, {	-- A Taste of Flame
 					["lvl"] = 52,
+					["races"] = HORDE_ONLY,
+					["qg"] = 9459,	-- Cyrus Therepentous
 				}),
 				q(4022, {	-- A Taste of Flame
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9459,	-- Cyrus Therepentous
+				}),
+				q(4024, {	-- A Taste of Flame
+					["lvl"] = 52,
+					["g"] = {
+						i(12066),	-- Shaleskin Cape
+						i(12082),	-- Wyrmhide Spaulders
+						i(12083),	-- Valconian Sash
+					},
 				}),
 				q(4726, {	-- Broodling Essence
 					["lvl"] = 50,
@@ -34,6 +45,18 @@ _.Zones =
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9177,	-- Oralius
+				}),
+				q(4263, {	-- Incendius!
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9561,	-- Jalinda Sprig
+					["g"] = {
+						i(12113),	-- Sunborne Cape
+						i(12114),	-- Nightfall Gloves
+						i(12112),	-- Crypt Demon Bracers
+						i(12115),	-- Stalwart Clutch
+					},
+
 				}),
 				q(3822, {	-- Krom'Grul
 					["lvl"] = 48,
@@ -78,6 +101,12 @@ _.Zones =
 						i(11646),	-- Lesser Arcanum of Voracity
 					},
 				}),
+				q(4262, {	-- Overmaster Pyron
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9561,	-- Jalinda Sprig
+
+				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
 					["lvl"] = 48,
 					["g"] = {
@@ -85,8 +114,29 @@ _.Zones =
 						i(11868),	-- Choking Band
 					},
 				}),
+				q(4136, {	-- Ribbly Screwspigot
+					["lvl"] = 48 ,
+					["qg"] = 9544,	-- Yuka Screwspigot
+					["g"] = {
+						i(11865),	-- Rancor Boots
+						i(11963),	-- Penance Spaulders
+						i(12049),	-- Splintsteel Armor
+					},
+				}),
 				q(4296, {	-- Tablet of the Seven
 					["lvl"] = 50,
+					["qg"] = 9536,	-- Maxwort Uberglint
+				}),
+				q(4286, {	-- The Good Stuff
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9177,	-- Oralius
+					["g"] = {
+						i(11883),	-- A Dingy Fanny Pack
+					},
+				}),
+				q(4123, {	-- The Heart of the Mountain
+					["lvl"] = 52,
 					["qg"] = 9536,	-- Maxwort Uberglint
 				}),
 				q(4061, {	-- The Rise of the Machines

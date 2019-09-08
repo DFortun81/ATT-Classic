@@ -62,6 +62,7 @@ _.Zones =
 				}),
 				q(2981, {	-- A Threat in Feralas
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["qg"] = 4485,	-- Belgrom Rockmaul
 				}),
 				q(7832, {	-- Additional Runecloth

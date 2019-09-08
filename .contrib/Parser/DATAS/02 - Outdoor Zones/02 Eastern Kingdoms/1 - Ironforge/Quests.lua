@@ -336,6 +336,11 @@ _.Zones =
 						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
+				q(4341, {	-- Kharan Mighthammer
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
+				}),
 				q(3448, {	-- Passing the Burden
 					["lvl"] = 45,
 				}),
@@ -491,12 +496,15 @@ _.Zones =
 				}),
 				q(3701, {	-- The Smoldering Ruins of Thaurissan
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 8879,	-- Royal Historian Archesonus
 					["g"] = {
 						i(12102),	-- Ring of the Aristocrat
 					},
 				}),
 				q(3702, {	-- The Smoldering Ruins of Thaurissan
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8879,	-- Royal Historian Archesonus
 				}),
 			}),
