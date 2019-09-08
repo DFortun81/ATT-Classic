@@ -200,12 +200,15 @@ select(2, ...).FlightPathDB = {
 		name="Gadgetzan, Tanaris",
 		faction=1,
 		mapID=1446,
-		coord={ 51.60, 24.45, 1446 },
+		coord={ 51.6, 26.6, 1446 },
+		qg=7824,	-- Bulkrek Ragefist <Wind Rider Master>
 	},
 	[40] = {
 		name="Gadgetzan, Tanaris",
 		faction=2,
 		mapID=1446,
+		coord={ 51.0, 29.2, 1446 },
+		qg=7823,	-- Bera Stonehammer <Gryphon Master>
 	},
 	[41] = {
 		name="Feathermoon, Feralas",
