@@ -281,6 +281,7 @@ _.Zones =
 				}),
 				q(5538, {	-- Mold Rhymes With...
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5514, {	-- Mold Rhymes With...
 					["lvl"] = 55,
@@ -312,12 +313,15 @@ _.Zones =
 				}),
 				q(5232, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5234, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5230, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5236, {	-- Return to the Bulwark
 					["lvl"] = 50,
@@ -336,6 +340,7 @@ _.Zones =
 				}),
 				q(5533, {	-- Scholomance
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(838, {	-- Scholomance
 					["lvl"] = 55,
@@ -344,6 +349,7 @@ _.Zones =
 				}),
 				q(5537, {	-- Skeletal Fragments
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(964, {	-- Skeletal Fragments
 					["lvl"] = 55,
