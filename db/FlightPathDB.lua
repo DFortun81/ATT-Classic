@@ -49,6 +49,7 @@ select(2, ...).FlightPathDB = {
 		name="The Sepulcher, Silverpine Forest",
 		faction=1,
 		mapID=1421,
+		coord={ 45.61, 42.60, 1421 },
 	},
 	[11] = {
 		name="Undercity, Tirisfal",
@@ -153,6 +154,7 @@ select(2, ...).FlightPathDB = {
 		name="Freewind Post, Thousand Needles",
 		faction=1,
 		mapID=1441,
+		coord={ 45.14, 49.10, 1441 }
 	},
 	[31] = {
 		name="Thalanaar, Feralas",
@@ -196,12 +198,13 @@ select(2, ...).FlightPathDB = {
 	},
 	[39] = {
 		name="Gadgetzan, Tanaris",
-		faction=0,
+		faction=1,
 		mapID=1446,
+		coord={ 51.60, 24.45, 1446 },
 	},
 	[40] = {
 		name="Gadgetzan, Tanaris",
-		faction=0,
+		faction=2,
 		mapID=1446,
 	},
 	[41] = {
@@ -294,6 +297,7 @@ select(2, ...).FlightPathDB = {
 		name="Zoram'gar Outpost, Ashenvale",
 		faction=1,
 		mapID=1440,
+		coord={ 12.23, 33.80, 1440 },
 	},
 	[59] = {},	-- lookup function terminates when index+1 is missing
 	[60] = {},	-- lookup function terminates when index+1 is missing

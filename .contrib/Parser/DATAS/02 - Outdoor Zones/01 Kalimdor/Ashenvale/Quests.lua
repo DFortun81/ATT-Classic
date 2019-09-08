@@ -343,6 +343,7 @@ _.Zones =
 					["lvl"] = 23,
 					["races"] = HORDE_ONLY,
 					["qg"] = 12718,	-- Gurda Ragescar
+					["coord"] = { 70.00, 71.16, ASHENVALE},
 					["g"] = {
 						i(16740),	-- Shredder Operating Gloves
 						i(16741),	-- Oilrag Handwraps
@@ -441,6 +442,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11820,	-- Locke Okarr
+					["coord"] = { 71.40, 67.64, ASHENVALE},
 					["g"] = {
 						i(16975),	-- Warsong Sash
 						i(16977),	-- Warsong Boots
