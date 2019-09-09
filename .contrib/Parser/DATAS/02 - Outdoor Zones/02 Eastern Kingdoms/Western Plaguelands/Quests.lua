@@ -395,8 +395,18 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 				}),
+				q(6186, {	-- The Blightcaller Cometh
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
+				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["lvl"] = 57,
+				}),
+				q(6185, {	-- The Eastern Plagues
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
 					["lvl"] = 57,

@@ -23,6 +23,16 @@ _.Zones =
 					["questID"] = 332,	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 				},
+				q(6184, {	-- Flint Shadowmore
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				}),
+				q(6183, {	-- Honor the Dead
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
+				}),
 				q(1448, {	-- In Search of The Temple
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
@@ -30,13 +40,28 @@ _.Zones =
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				}),
-				q(6403, {	-- The Great Masquerade
+				q(6187, {	-- Order Must Be Restored
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["g"] = {
+						i(16996),	-- Gorewood Bow
+						i(16997),	-- Stormrager
+						i(16998),	-- Sacred Protector
+					},
+				}),
+				q(6403, {   -- The Great Masquerade
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12580,	-- Reginald Windsor
 				}),
 				q(6501, {	-- The Dragon's Eye
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				}),
+				q(6182, {	-- The First and the Last
+					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 				}),
