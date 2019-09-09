@@ -66,36 +66,42 @@ _.Zones =
 				}),
 				q(4385, {	-- Crystal Charge
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11566),	-- Crystal Charge
 					},
 				}),
 				q(4382, {	-- Crystal Force
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11563),	-- Crystal Force
 					},
 				}),
 				q(4381, {	-- Crystal Restore
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11562),	-- Crystal Restore
 					},
 				}),
 				q(4386, {	-- Crystal Spire
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11567),	-- Crystal Spire
 					},
 				}),
 				q(4383, {	-- Crystal Ward
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11564),	-- Crystal Ward
 					},
 				}),
 				q(4384, {	-- Crystal Yield
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["g"] = {
 						i(11565),	-- Crystal Yield
 					},
@@ -105,6 +111,7 @@ _.Zones =
 				}),
 				q(5150, {	-- Dadanga is Hungry!
 					["lvl"] = 47,
+					["repeatable"] = true,
 					["qg"] = 9274,	-- Dadanga
 					["g"] = {
 						i(15699),	-- Small Brown-wrapped Package
@@ -149,9 +156,6 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,
 					["qg"] = 9117,	-- J.D. Collie
-				}),
-				q(3914, {	-- Linken's Sword
-					["lvl"] = 47,
 				}),
 				q(4492, {	-- Lost!
 					["lvl"] = 50,
