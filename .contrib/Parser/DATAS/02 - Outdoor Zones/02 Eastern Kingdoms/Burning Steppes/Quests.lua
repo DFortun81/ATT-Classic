@@ -28,6 +28,10 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 10267,	-- Tinkee Steamboil
 				}),
+				q(4726, {	-- Broodling Essence
+					["lvl"] = 50,
+					["qg"] = 10267,	-- Tinkee Steamboil
+				}),
 				q(4182, {	-- Dragonkin Menace
 					["lvl"] = 48,
 				}),
@@ -39,7 +43,7 @@ _.Zones =
 				}),
 				q(4808, {	-- Felnok Steelspring
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10267,	-- Tinkee Steamboil
 				}),
 				q(3824, {	-- Gor'tesh the Brute Lord
 					["lvl"] = 48,
@@ -112,6 +116,15 @@ _.Zones =
 					["g"] = {
 						i(11867),	-- Maddening Gauntlets
 						i(11868),	-- Choking Band
+					},
+				}),
+				q(4701, {	-- Put Her Down
+					["lvl"] = 56 ,
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["g"] = {
+						i(15824),	-- Astoria Robes
+						i(15825),	-- Traphook Jerkin
+						i(15827),	-- Jadescale Breastplate
 					},
 				}),
 				q(4136, {	-- Ribbly Screwspigot
