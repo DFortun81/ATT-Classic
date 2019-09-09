@@ -45,6 +45,7 @@ _.Zones =
 				}),
 				q(1450, {	-- Gryphon Master Talonaxe
 					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7829, {	-- Hunt the Savages
 					["lvl"] = 44,
@@ -95,12 +96,15 @@ _.Zones =
 				}),
 				q(1451, {	-- Rhapsody Shindigger
 					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1452, {	-- Rhapsody's Kalimdor Kocktail
 					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1469, {	-- Rhapsody's Tale
 					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2742, {	-- Rin'ji is Trapped!
 					["lvl"] = 42,

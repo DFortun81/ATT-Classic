@@ -23,6 +23,13 @@ _.Zones =
 					["questID"] = 332,	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 				},
+				q(1448, {	-- In Search of The Temple
+					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
+					["maps"] = { SWAMP_OF_SORROWS },
+				}),
 				q(6403, {	-- The Great Masquerade
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
@@ -32,6 +39,19 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				}),
+				q(1449, {	-- To The Hinterlands
+					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+				}),
+				q(1475, {	-- Into The Temple of Atal'Hakkar
+					["lvl"] = 38,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+					["g"] = {
+						i(1490),	-- Guardian Talisman
+					},
 				}),
 			}),
 		}),
