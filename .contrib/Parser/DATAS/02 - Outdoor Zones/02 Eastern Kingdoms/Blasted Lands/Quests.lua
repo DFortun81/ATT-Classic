@@ -70,6 +70,11 @@ _.Zones =
 						i(8410),	-- R.O.I.D.S.
 					},
 				}),
+				q(4128, {	-- Ragnar Thunderbrew
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9540,	-- Enohar Thunderbrew
+				}),
 				q(2586, {	-- Salt of the Scorpok
 					["lvl"] = 45,
 					["g"] = {
