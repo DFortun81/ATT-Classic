@@ -172,9 +172,11 @@ _.Zones =
 					},
 				}),
 				q(861, {	-- The Hunter's Way
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3052,	-- Skorn Whitecloud
+					["isBreadcrumb"] = true,
+					["coord"] = { 46.76, 60.22, MULGORE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(751, {	-- The Ravaged Caravan
 					["lvl"] = 5,

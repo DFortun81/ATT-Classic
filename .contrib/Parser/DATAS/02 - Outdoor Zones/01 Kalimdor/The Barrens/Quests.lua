@@ -323,9 +323,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(844, {	-- Plainstrider Menace
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuests"] = {
+						861,	-- The Hunter's Way
+						860,	-- Sergra Darkthorn
+					},
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(903, {	-- Prowlers of the Barrens
 					["lvl"] = 10,
@@ -459,11 +464,6 @@ _.Zones =
 						i(5279),	-- Harpy Skinner
 						i(5318),	-- Zhovur Axe
 					},
-				}),
-				q(860, {	-- Sergra Darkthorn
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3441,	-- Melor Stonehoof
 				}),
 				q(887, {	-- Southsea Freebooters
 					["lvl"] = 9,

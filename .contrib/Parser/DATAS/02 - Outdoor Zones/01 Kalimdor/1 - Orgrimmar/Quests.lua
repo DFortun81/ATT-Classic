@@ -81,12 +81,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(809, {	-- Ak'Zeloth
-					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3216,	-- Neeru Fireblade
-					["sourceQuest"] = 829,	-- Neeru Fireblade
-				}),
 				q(1431, {	-- Alliance Relations
 					["qg"] = 5639,	-- Craven Drok
 					["coord"] = { 52.4, 44.6, ORGRIMMAR },
@@ -284,31 +278,10 @@ _.Zones =
 						i(18404),	-- Onyxia Tooth Pendant
 					},
 				}),
-				q(5729, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5727, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5726, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5730, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(15443),	-- Kris of Orgrimmar
-						i(15445),	-- Hammer of Orgrimmar
-						i(15424),	-- Axe of Orgrimmar
-						i(15444),	-- Staff of Orgrimmar
-					},
-				}),
+				--q(5726, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5730, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				q(8938, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
@@ -485,6 +458,7 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["qg"] = 4949,	-- Thrall
+					["coord"] = { 31.73, 37.81, ORGRIMMAR },
 					["g"] = {
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19366),	-- Master Dragonslayer's Orb
@@ -500,6 +474,17 @@ _.Zones =
 				}),
 				q(787, {	-- The New Horde
 					["qg"] = 3144,	-- Eitrigg
+				}),
+				q(1963, {
+					["qg"] = 6446,	-- Therzok
+					["sourceQuest"] = 1859,	-- Therzok
+					["coord"] = { 42.74, 53.52, ORGRIMMAR },
+					["races"] = {
+						2,	-- Orc
+						8,	-- Troll
+					},
+					["classes"] = { 4 },	-- Rogue
+					["lvl"] = 10,
 				}),
 				q(1146, {	-- The Swarm Grows
 					["lvl"] = 29,
