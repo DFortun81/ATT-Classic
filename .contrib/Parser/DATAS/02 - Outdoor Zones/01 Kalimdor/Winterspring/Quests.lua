@@ -66,6 +66,13 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 				}),
+				q(6502, {	-- Drakefire Amulet
+					["lvl"] = 50,
+					["qg"] = 10929,	-- Haleh
+					["g"] = {
+						i(16309),	-- Drakefire Amulet
+					},
+				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
 					["lvl"] = 50,
 				}),

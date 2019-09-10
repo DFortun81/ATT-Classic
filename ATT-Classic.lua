@@ -1822,11 +1822,11 @@ end
 
 -- Lua Constructor Lib
 local fieldCache = {};
-local CacheFields;
+local CacheField, CacheFields;
 local _cache;
 (function()
 local fieldCache_g,fieldCache_f, fieldConverters;
-local function CacheField(group, field, value)
+CacheField = function(group, field, value)
 	fieldCache_g = rawget(fieldCache, field);
 	fieldCache_f = rawget(fieldCache_g, value);
 	if fieldCache_f then
@@ -1973,10 +1973,6 @@ CacheFields = function(group)
 	for i=1,n,1 do
 		_cache = rawget(fieldConverters, rawget(clone, i));
 		if _cache then _cache(group, rawget(group, rawget(clone, i))); end
-	end
-	if group.mapID then
-		_cache = fieldConverters.mapID;
-		if _cache then _cache(group, group.mapID); end
 	end
 end
 end)();
@@ -3139,6 +3135,8 @@ app.BaseFlightPath = {
 			return t.info.u;
 		elseif key == "coord" then
 			return t.info.coord;
+		elseif key == "qg" then
+			return t.info.qg;
 		elseif key == "mapID" then
 			return t.info.mapID;
 		elseif key == "nmr" then
@@ -3147,7 +3145,13 @@ app.BaseFlightPath = {
 				return info.faction ~= app.FactionID;
 			end
 		elseif key == "info" then
-			return app.FlightPathDB[t.flightPathID];
+			local info = app.FlightPathDB[t.flightPathID];
+			if info then
+				rawset(t, key, info);
+				if info.mapID then CacheField(t, "mapID", info.mapID); end
+				if info.qg then CacheField(t, "creatureID", info.qg); end
+				return info;
+			end
 		elseif key == "description" then
 			return "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
 		elseif key == "icon" then

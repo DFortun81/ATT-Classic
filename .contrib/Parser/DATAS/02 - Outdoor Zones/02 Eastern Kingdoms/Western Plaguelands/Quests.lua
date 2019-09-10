@@ -31,16 +31,24 @@ _.Zones =
 				}),
 				q(6389, {	-- A Plague Upon Thee
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6390, {	-- A Plague Upon Thee
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5904, {	-- A Plague Upon Thee
 					["lvl"] = 48,
 				}),
 				q(5903, {	-- A Plague Upon Thee
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11616,	-- Nathaniel Dumah
+				}),
+				q(5153, {	-- A Strange Historian
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5152,	-- Marlene Redpath
 				}),
 				q(211, {	-- Alas, Andorhal
 					["lvl"] = 50,
@@ -63,9 +71,11 @@ _.Zones =
 				}),
 				q(5098, {	-- All Along the Watchtowers
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5803, {	-- Araj's Scarab
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5804, {	-- Araj's Scarab
 					["lvl"] = 55,
@@ -147,7 +157,7 @@ _.Zones =
 				}),
 				q(4973, {	-- Counting Out Time
 					["lvl"] = 53,
-					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(12650),	-- Attuned Dampener
 					},
@@ -281,6 +291,7 @@ _.Zones =
 				}),
 				q(5538, {	-- Mold Rhymes With...
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5514, {	-- Mold Rhymes With...
 					["lvl"] = 55,
@@ -312,12 +323,15 @@ _.Zones =
 				}),
 				q(5232, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5234, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5230, {	-- Return to the Bulwark
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5236, {	-- Return to the Bulwark
 					["lvl"] = 50,
@@ -336,6 +350,7 @@ _.Zones =
 				}),
 				q(5533, {	-- Scholomance
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(838, {	-- Scholomance
 					["lvl"] = 55,
@@ -344,6 +359,7 @@ _.Zones =
 				}),
 				q(5537, {	-- Skeletal Fragments
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(964, {	-- Skeletal Fragments
 					["lvl"] = 55,
@@ -359,6 +375,7 @@ _.Zones =
 				}),
 				q(5231, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5216, {	-- Target: Felstone Field
 					["lvl"] = 50,
@@ -367,6 +384,7 @@ _.Zones =
 				}),
 				q(5229, {	-- Target: Felstone Field
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5225, {	-- Target: Gahrron's Withering
 					["lvl"] = 50,
@@ -384,13 +402,25 @@ _.Zones =
 				}),
 				q(5233, {	-- Target: Writhing Haunt
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5154, {	-- The Annals of Darrowshire
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10667,	-- Chromie
+				}),
+				q(6186, {	-- The Blightcaller Cometh
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["lvl"] = 57,
+				}),
+				q(6185, {	-- The Eastern Plagues
+					["lvl"] = 56,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
 					["lvl"] = 57,
@@ -432,6 +462,7 @@ _.Zones =
 				}),
 				q(5228, {	-- The Scourge Cauldrons
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(4985, {	-- The Wildlife Suffers Too
 					["lvl"] = 51,

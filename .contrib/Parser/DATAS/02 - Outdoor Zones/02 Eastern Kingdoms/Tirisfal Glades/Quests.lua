@@ -44,6 +44,7 @@ _.Zones =
 				}),
 				q(5901, {	-- A Plague Upon Thee
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["qg"] = 11615,	-- Mickey Levine
 				}),
 				q(404, {	-- A Putrid Task
