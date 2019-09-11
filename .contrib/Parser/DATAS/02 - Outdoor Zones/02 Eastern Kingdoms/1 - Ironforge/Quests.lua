@@ -270,9 +270,10 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 				}),
 				q(707, {	-- Ironband Wants You!
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1356,	-- Prospector Stormpike
+					["coord"] = { 74.64, 11.74, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(8932, {	-- Just Compensation
 					["lvl"] = 58,
@@ -345,9 +346,10 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(2963, {	-- Portents of Uldum
-					["lvl"] = 45,
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 2439,	-- The Platinum Discs [Alliance - Part 3]
 					["qg"] = 5387,	-- High Explorer Magellas
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(1453, {	-- Reclaimers' Business in Desolace
 					["lvl"] = 30,
@@ -484,15 +486,6 @@ _.Zones =
 				q(1019, {	-- The New Frontier
 					["lvl"] = 54,
 					["qg"] = 10877,	-- Courier Hammerfall
-				}),
-				q(2439, {	-- The Platinum Discs
-					["lvl"] = 40,
-					["qg"] = 5387,	-- High Explorer Magellas
-					["g"] = {
-						i(3928),	-- Superior Healing Potion
-						i(6149),	-- Greater Mana Potion
-						i(9587),	-- Thawpelt Sack
-					},
 				}),
 				q(3701, {	-- The Smoldering Ruins of Thaurissan
 					["lvl"] = 50,

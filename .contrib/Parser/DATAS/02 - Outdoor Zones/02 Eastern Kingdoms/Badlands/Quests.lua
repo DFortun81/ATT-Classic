@@ -13,24 +13,80 @@ _.Zones =
 						i(4978),	-- Ryedol's Hammer
 					},
 				}),
-				q(720, {	-- A Sign of Hope
-					["lvl"] = 35,
+				{
+					["questID"] = 720,	-- A Sign of Hope
+					["provider"] = { "o", 2868 },	-- Crumpled Map
+					["coord"] = { 53.0, 33.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2868,	-- Crumpled Map
-				}),
-				q(762, {	-- An Ambassador of Evil
 					["lvl"] = 35,
-					["g"] = {
+				},
+				{
+					["questID"] = 721,	-- A Sign of Hope
+					["sourceQuest"] = 720,	-- A Sign of Hope
+					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
+					["coord"] = { 53.4, 43.4, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+				},
+				{
+					["questID"] = 722,	-- Amulet of Secrets
+					["sourceQuest"] = 721,	-- A Sign of Hope
+					["qg"] = 2909,	-- Hammertoe Grez
+					["coord"] = { 37.94, 10.53, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						{
+							["itemID"] = 4635,	-- Hammertoe's Amulet
+							["questID"] = 722,	-- Amulet of Secrets
+							["qg"] = 2932,	-- Magregan Deepshadow
+							["coord"] = { 38.0, 92.6, LOCH_MODAN },
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
+				},
+				{
+					["questID"] = 762,	-- An Ambassador of Evil
+					["sourceQuest"] = 726,	-- Passing Word of a Threat
+					["qg"] = 2916,	-- Historian Karnik
+					["cost"] = {
+						{ "i", 4621, 1 },	-- Ambassador Infernus' Bracer
+					},
+					["coord"] = { 77.5, 11.8, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
+					["groups"] = {
+						{
+							["itemID"] = 4621,	-- Ambassador Infernus' Bracer
+							["questID"] = 762,	-- An Ambassador of Evil
+							["qg"] = 2745,	-- Ambassador Infernus
+							["coord"] = { 42.1, 28.9, BADLANDS },
+							["races"] = ALLIANCE_ONLY,
+						},
 						i(4987),	-- Dwarf Captain's Sword
 					},
-				}),
+				},
 				q(2258, {	-- Badlands Reagent Run
-					["lvl"] = 36,
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["cost"] = {
+						{ "i", 7847, 5 },	-- Buzzard Gizzard
+						{ "i", 7846, 10 },	-- Crag Coyote Fang
+						{ "i", 7848, 5 },	-- Rock Elemental Shard
+					},
+					["coord"] = { 2.6, 46, BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 36,
 				}),
 				q(2203, {	-- Badlands Reagent Run II
-					["lvl"] = 40,
+					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["cost"] = {
+						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
+					},
+					["coord"] = { 2.6, 46, BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(703, {	-- Barbecued Buzzard Wings
 					["lvl"] = 33,
@@ -70,16 +126,20 @@ _.Zones =
 						i(5421),	-- Fiery Blaze Enchantment
 					},
 				}),
-				q(738, {	-- Find Agmond
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(4982),	-- Ripped Prospector Belt
-						i(2776),	-- Gold Ore
-						i(1529),	-- Jade
-					},
-				}),
 				q(737, {	-- Forbidden Knowledge
+					["sourceQuests"] = {
+						735,	-- To Ironforge for Yagyin's Digest
+						736,	-- The Star, the Hand and the Heart
+					},
+					["qgs"] = {
+						2786,	-- Gerrig Bonegrip
+						2934,	-- Keeper Bel'dugur
+					},
+					["coords"] = {
+						{ 50.8, 5.6, IRONFORGE },
+						{ 53.7, 54.5, UNDERCITY },
+					},
+					["maps"] = { IRONFORGE, UNDERCITY },
 					["lvl"] = 30,
 					["g"] = {
 						i(4984),	-- Skull of Impending Doom
@@ -90,6 +150,28 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2921,	-- Lotwil Veriatus
 				}),
+				{
+				
+					["questID"] = 1108,	-- Indurium
+					["sourceQuest"] = 1106,	-- Martek the Exiled
+					["coord"] = { 42.22, 52.69, BADLANDS },
+					["qg"] = 4618,	-- Martek the Exiled
+					["lvl"] = 28,
+					["groups"] = {
+						{
+							["itemID"] = 5797,	-- Indurium Flake
+							["questID"] = 1108,	-- Indurium
+							["crs"] = {
+								4851,	-- Stonevault Rockchewer
+								4856,	-- Stonevault Cave Hunter
+								2892,	-- Stonevault Seer
+								2893,	-- Stonevault Bonesnapper
+								2894,	-- Stonevault Shaman
+								6733,	-- Stonevault Basher
+							},
+						},
+					},
+				},
 				q(715, {	-- Liquid Stone
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
@@ -105,19 +187,33 @@ _.Zones =
 					["qg"] = 2860,	-- Sigrun Ironhew
 				}),
 				q(739, {	-- Murdaloc
-					["lvl"] = 30,
+					["provider"] = { "o", 2875 },	-- Battered Dwarven Skeleton
+					["sourceQuest"] = 738,	-- Find Agmond
+					["coord"] = { 50.89, 62.4, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2875,	-- Battered Dwarven Skeleton
+					["lvl"] = 30,
 					["g"] = {
 						i(4983),	-- Rock Pulverizer
 					},
 				}),
-				q(726, {	-- Passing Word of a Threat
+				{
+					["questID"] = 725,	-- Passing Word of a Threat
+					["sourceQuest"] = 724,	-- Prospect of Faith
+					["qg"] = 2916,	-- Historian Karnik
+					["coord"] = { 77.5, 11.8, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				}),
-				q(725, {	-- Passing Word of a Threat
+				},
+				{
+					["questID"] = 726,	-- Passing Word of a Threat
+					["sourceQuest"] = 725,	-- Passing Word of a Threat
+					["qg"] = 2918,	-- Advisor Belgrum
+					["coord"] = { 77.3, 9.7, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				}),
+				},
 				q(705, {	-- Pearl Diving
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -128,19 +224,104 @@ _.Zones =
 						i(4852),	-- Flash Bomb
 					},
 				}),
-				q(723, {	-- Prospect of Faith
+				{
+				
+					["questID"] = 2418,	-- Power Stones
+					["coord"] = { 42.39, 52.93, BADLANDS },
+					["maps"] = { ULDAMAN },
+					["qg"] = 2817,	-- Rigglefuzz
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 8052,	-- An'Alleum Power Stone
+							["questID"] = 2418,	-- Power Stones
+							["crs"] = {
+								4844,	-- Shadowforge Surveyor
+								4845,	-- Shadowforge Ruffian
+								4846,	-- Shadowforge Digger
+								4847,	-- Shadowforge Relic Hunter
+								4848,	-- Shadowforge Darkcaster
+								4849,	-- Shadowforge Archaeologist
+								7030,	-- Shadowforge Geologist
+								7290,	-- Shadowforge Sharpshooter
+								7091,	-- Shadowforge Ambusher
+							},
+						},
+						{
+							["itemID"] = 8009,	-- Dentrium Power Stone
+							["questID"] = 2418,	-- Power Stones
+							["crs"] = {
+								4844,	-- Shadowforge Surveyor
+								4845,	-- Shadowforge Ruffian
+								4846,	-- Shadowforge Digger
+								4847,	-- Shadowforge Relic Hunter
+								4848,	-- Shadowforge Darkcaster
+								4849,	-- Shadowforge Archaeologist
+								7030,	-- Shadowforge Geologist
+								7290,	-- Shadowforge Sharpshooter
+								7091,	-- Shadowforge Ambusher
+							},
+						},
+						i(9522),	-- Energized Stone Circle
+						i(10358),	-- Duracin Bracers
+						i(10359),	-- Everlast Boots
+					},
+				},
+				{
+					["questID"] = 723,	-- Prospect of Faith
+					["sourceQuest"] = 722,	-- Amulet of Secrets
+					["qg"] = 2909,	-- Hammertoe Grez
+					["coord"] = { 37.94, 10.53, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				}),
-				q(724, {	-- Prospect of Faith
+				},
+				{
+					["questID"] = 724,	-- Prospect of Faith
+					["sourceQuest"] = 723,	-- Prospect of Faith
+					["qg"] = 2909,	-- Prospector Ryedol
+					["coord"] = { 53.4, 43.2, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				}),
+				},
+				{
+					["questID"] = 1360,	-- Reclaimed Treasures
+					["qg"] = 6294,	-- Krom Stoutarm
+					["coord"] = { 74.2, 9.4, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						{
+							["itemID"] = 8027,	-- Krom Stoutarm's Treasure
+							["questID"] = 1360,	-- Reclaimed Treasures
+							["provider"] = { "o", 124389 },	-- Krom Stoutarm's Chest
+							["coord"] = { 35.2, 97.4, LOCH_MODAN },
+						},
+					},
+				},
+				{
+					["questID"] = 2342,	-- Reclaimed Treasures
+					["qg"] = 5651,	-- Patrick Garrett
+					["coord"] = { 62.3, 48.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						{
+							["itemID"] = 8026,	-- Garrett Family Treasure
+							["questID"] = 2342,	-- Reclaimed Treasures
+							["provider"] = { "o", 124388 },	-- Garrett Family Chest
+							["coord"] = { 33.9, 93.0, LOCH_MODAN },
+						},
+					},
+				},
 				q(1420, {	-- Report to Helgrum
 					["lvl"] = 30,
 				}),
 				q(733, {	-- Scrounging
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2860,	-- Sigrun Ironhew
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 					["g"] = {
 						i(4652),	-- Salbac Shield
 						i(4653),	-- Ironheel Boots
@@ -152,6 +333,20 @@ _.Zones =
 				q(779, {	-- Seal of the Earth
 					["lvl"] = 40,
 					--["objectID"] = 2933,	-- Seal of the Earth
+				}),
+				q(709, {	-- Solution to Doom
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.4, 76.9, BADLANDS },
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 4631,	-- Tablet of Ryun'eh
+							["questID"] = 709,	-- Solution to Doom
+							["provider"] = { "o", 126260 },	-- Ancient Chest
+							["coord"] = { 39.3, 18.8, BADLANDS },
+						},
+						i(4746),	-- Doomsayer's Robe
+					},
 				}),
 				q(716, {	-- Stone Is Better than Cloth
 					["lvl"] = 35,
@@ -181,10 +376,67 @@ _.Zones =
 				q(4062, {	-- The Rise of the Machines
 					["lvl"] = 52,
 				}),
-				q(735, {	-- The Star, the Hand and the Heart
+				{	-- The Star, the Hand and the Heart
+					["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+					["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
+					["sourceQuests"] = {
+						727,	-- To Ironforge for Yagyin's Digest
+						728,	-- To the Undercity for Yagyin's Digest
+					},
+					["qgs"] = {
+						2786,	-- Gerrig Bonegrip
+						2934,	-- Keeper Bel'dugur
+					},
+					["coords"] = {
+						{ 50.8, 5.6, IRONFORGE },
+						{ 53.7, 54.5, UNDERCITY },
+					},
+					["maps"] = { IRONFORGE, UNDERCITY },
+					["cost"] = {
+						{ "i", 4646, 1 },	-- Star of Xil'yeh
+					},
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-				}),
+					["groups"] = {
+						{
+							["itemID"] = 4639,	-- Enchanted Sea Kelp
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
+							["qg"] = 4363,	-- Mirefin Oracle
+						},
+						{
+							["itemID"] = 4641,	-- Hand of Dagun
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
+							["qg"] = 2937,	-- Dagun the Ravenous
+							["cost"] = {
+								{ "i", 4639, 1 },	-- Enchanted Sea Kelp
+							},
+							["coord"] = { 60.4, 12.2, DUSTWALLOW_MARSH },
+						},
+						{
+							["itemID"] = 4644,	-- The Legacy Heart
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
+							["qg"] = 1060,	-- Mogh the Undying <Skullsplitter Clan Witchdoctor>
+							["coord"] = { 47.6, 44.2, STRANGLETHORN_VALE },
+						},
+						{
+							["itemID"] = 4646,	-- Star of Xil'yeh
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
+							["qg"] = 2417,	-- Grel'borg the Miser
+							["coord"] = { 39.6, 51.8, ALTERAC_MOUNTAINS },
+						},
+						{
+							["itemID"] = 4650,	-- Bel'dugur's Note
+							["description"] = "This item is not required to complete the quest. You can safely delete it from your inventory.",
+						},
+						{
+							["itemID"] = 4649,	-- Bonegrip's Note
+							["description"] = "This item is not required to complete the quest. You can safely delete it from your inventory.",
+						},
+					},
+				},
 				q(777, {	-- This Is Going to Be Hard
 					["lvl"] = 35,
 				}),
@@ -198,12 +450,18 @@ _.Zones =
 					},
 				}),
 				q(727, {	-- To Ironforge for Yagyin's Digest
-					["lvl"] = 30,
+					["sourceQuest"] = 709,	-- Solution to Doom
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.4, 76.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(728, {	-- To the Undercity for Yagyin's Digest
-					["lvl"] = 30,
+					["sourceQuest"] = 709,	-- Solution to Doom
+					["qg"] = 2785,	-- Theldurin the Lost
+					["coord"] = { 51.4, 76.9, BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(717, {	-- Tremors of the Earth
 					["lvl"] = 40,
@@ -215,6 +473,16 @@ _.Zones =
 					},
 				}),
 				q(732, {	-- Tremors of the Earth
+					["lvl"] = 40,
+				}),
+				q(2202, {	-- Uldaman Reagent Run
+					["sourceQuest"] = 2258,	-- Badlands Reagent Run
+					["qg"] = 6868,	-- Jarkal Mossmeld
+					["cost"] = {
+						{ "i", 8047, 12 },	-- Magenta Fungus Cap
+					},
+					["coord"] = { 2.6, 46, BADLANDS },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
 			}),

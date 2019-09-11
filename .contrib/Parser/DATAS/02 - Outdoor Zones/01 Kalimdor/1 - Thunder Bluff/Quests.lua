@@ -110,9 +110,10 @@ _.Zones =
 					},
 				}),
 				q(2965, {	-- Portents of Uldum
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]
 					["qg"] = 3978,	-- Sage Truthseeker
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(744, {	-- Preparation for Ceremony
 					["lvl"] = 7,
@@ -161,14 +162,6 @@ _.Zones =
 				q(1000, {	-- The New Frontier
 					["lvl"] = 54,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
-				}),
-				q(2440, {	-- The Platinum Discs
-					["lvl"] = 40,
-					["g"] = {
-						i(3928),	-- Superior Healing Potion
-						i(6149),	-- Greater Mana Potion
-						i(9587),	-- Thawpelt Sack
-					},
 				}),
 				q(1196, {	-- The Sacred Flame
 					["lvl"] = 20,
