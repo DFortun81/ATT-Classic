@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(5091, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10878,	-- Herald Moonstalker
 				}),
 				q(7799, {	-- A Donation of Mageweave
@@ -44,10 +45,12 @@ _.Zones =
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6735,	-- Innkeeper Saelienne
 				}),
 				q(4510, {	-- Calm Before the Storm
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11870),	-- Oblivion Orb
 						i(11871),	-- Snarkshaw Spaulders
@@ -61,6 +64,7 @@ _.Zones =
 				}),
 				q(3788, {	-- Jonespyre's Request
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4493, {	-- March of the Silithid
 					["lvl"] = 50,
@@ -69,30 +73,35 @@ _.Zones =
 				}),
 				q(3781, {	-- Morrowgrain Research
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11022),	-- Packet of Tharlendris Seeds
 					},
 				}),
 				q(3785, {	-- Morrowgrain Research
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
 				}),
 				q(3803, {	-- Morrowgrain to Darnassus
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
 				}),
 				q(3792, {	-- Morrowgrain to Feathermoon Stronghold
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11022),	-- Packet of Tharlendris Seeds
 					},
 				}),
 				q(6344, {	-- Nessa Shadowsong
 					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
 					["races"] = {
 						4,	-- Night Elf
 					},
@@ -100,6 +109,7 @@ _.Zones =
 				}),
 				q(6762, {	-- Rabine Saturna
 					["lvl"] = 54,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["lvl"] = 5,
@@ -147,6 +157,7 @@ _.Zones =
 				}),
 				q(3791, {	-- The Mystery of Morrowgrain
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(11888),	-- Quintis' Research Gloves
 						i(11889),	-- Bark Iron Pauldrons
@@ -154,6 +165,7 @@ _.Zones =
 				}),
 				q(1047, {	-- The New Frontier
 					["lvl"] = 54,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10878,	-- Herald Moonstalker
 				}),
 				q(6761, {	-- The New Frontier
@@ -172,6 +184,7 @@ _.Zones =
 				}),
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
 		}),
