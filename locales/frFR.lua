@@ -14,6 +14,7 @@ L.ZONE_TEXT_TO_MAP_ID["Profondeurs de Brassenoire"] = 221;	-- BFD
 L.ZONE_TEXT_TO_MAP_ID["Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Les Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
+L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["Gouffre de Ragefeu"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Souilles de Tranchebauge"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Kraal de Tranchebauge"] = 301;	-- RFK
