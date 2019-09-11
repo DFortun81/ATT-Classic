@@ -13,6 +13,7 @@ L.ZONE_TEXT_TO_MAP_ID["Огненная пропасть"] = 213;	-- RFC
 L.ZONE_TEXT_TO_MAP_ID["Курганы Иглошкурых"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Лабиринты Иглошкурых"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Крепость Темного Клыка"] = 310;	-- SFK
+L.ZONE_TEXT_TO_MAP_ID["Монастырь Алого ордена"] = 435;	-- SM
 L.ZONE_TEXT_TO_MAP_ID["Ульдаман"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Зул'Фаррак"] = 219;	-- ZF

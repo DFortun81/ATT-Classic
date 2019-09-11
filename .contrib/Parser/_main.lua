@@ -89,41 +89,64 @@ WETLANDS = 1437;	-- Confirmed!
 -- Custom Maps
 BLACKROCK_MOUNTAIN = -3;
 
+-- CLASSES
+WARRIOR = 1;
+PALADIN = 2;
+HUNTER = 3;
+ROGUE = 4;
+PRIEST = 5;
+SHAMAN = 7;
+MAGE = 8;
+WARLOCK = 9;
+DRUID = 11;
+
+ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
+	WARRIOR,
+	PALADIN,
+	HUNTER,
+	ROGUE,
+	PRIEST,
+	SHAMAN,
+	MAGE,
+	WARLOCK,
+	DRUID,
+};
+
+-- RACES
+HUMAN = 1;
+DWARF = 3;
+NIGHTELF = 4;
+GNOME = 7;
+
+ORC = 2;
+UNDEAD = 5;
+TAUREN = 6;
+TROLL = 8;
 
 -- Helper Tables
 ALLIANCE_ONLY = {
-	1,	-- Human
-	3,	-- Dwarf
-	4,	-- Night Elf
-	7,	-- Gnome
+	HUMAN,
+	DWARF,
+	NIGHTELF,
+	GNOME,
 };
 HORDE_ONLY = {
-	2,	-- Orc
-	5,	-- Undead
-	6,	-- Tauren
-	8,	-- Troll
+	ORC,
+	UNDEAD,
+	TAUREN,
+	TROLL,
 };
 ALL_RACES = {	-- NOTE: Use this with the exclude function.
-	1,	-- Human
-	2,	-- Orc
-	3,	-- Dwarf
-	4,	-- Night Elf
-	5,	-- Undead
-	6,	-- Tauren
-	7,	-- Gnome
-	8,	-- Troll
+	ORC,
+	UNDEAD,
+	TAUREN,
+	TROLL,
+	HUMAN,
+	DWARF,
+	NIGHTELF,
+	GNOME,
 };
-ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
-	1,	-- Warrior
-	2,	-- Paladin
-	3,	-- Hunter
-	4,	-- Rogue
-	5,	-- Priest
-	7,	-- Shaman
-	8,	-- Mage
-	9,	-- Warlock
-	11,	-- Druid
-};
+
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]
