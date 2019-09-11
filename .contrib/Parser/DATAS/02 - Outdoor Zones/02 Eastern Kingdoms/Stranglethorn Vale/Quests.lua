@@ -56,6 +56,8 @@ _.Zones =
 				}),
 				q(584, {	-- Bloodscalp Clan Heads
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2497,	-- Nimboya
 				}),
 				q(189, {	-- Bloodscalp Ears
 					["lvl"] = 30,
@@ -249,15 +251,21 @@ _.Zones =
 				}),
 				q(572, {	-- Mok'thardin's Enchantment
 					["lvl"] = 33,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 				}),
 				q(573, {	-- Mok'thardin's Enchantment
 					["lvl"] = 33,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["g"] = {
 						i(4112),	-- Choker of the High Shaman
 					},
 				}),
 				q(571, {	-- Mok'thardin's Enchantment
 					["lvl"] = 33,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2465,	-- Far Seer Mok'thardin
 				}),
 				q(570, {	-- Mok'thardin's Enchantment
 					["lvl"] = 33,
@@ -335,6 +343,8 @@ _.Zones =
 				}),
 				q(592, {	-- Saving Yenniku
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2519,	-- Kin'weelay
 					["g"] = {
 						i(4134),	-- Nimboya's Mystical Staff
 						i(6723),	-- Medal of Courage
@@ -359,9 +369,11 @@ _.Zones =
 				}),
 				q(586, {	-- Speaking with Gan'zulah
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 				}),
 				q(585, {	-- Speaking with Nezzliok
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 				}),
 				q(574, {	-- Special Forces
 					["lvl"] = 30,
@@ -370,6 +382,8 @@ _.Zones =
 				}),
 				q(598, {	-- Split Bone Necklace
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 2519,	-- Kin'weelay
 					["g"] = {
 						i(4137),	-- Darkspear Shoes
 						i(4136),	-- Darkspear Boots
@@ -463,6 +477,7 @@ _.Zones =
 				}),
 				q(588, {	-- The Fate of Yenniku
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 				}),
 				q(338, {	-- The Green Hills of Stranglethorn
 					["lvl"] = 30,
@@ -488,6 +503,7 @@ _.Zones =
 				}),
 				q(591, {	-- The Mind's Eye
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 				}),
 				q(620, {	-- The Monogrammed Sash
 					["lvl"] = 35,
@@ -502,6 +518,7 @@ _.Zones =
 				}),
 				q(589, {	-- The Singing Crystals
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 				}),
 				q(329, {	-- The Spy Revealed!
 					["lvl"] = 30,

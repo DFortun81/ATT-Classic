@@ -103,6 +103,7 @@ _.Zones =
 				}),
 				q(979, {	-- Find Ranshalla
 					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
