@@ -130,12 +130,6 @@ _.Zones =
 				q(837, {	-- Encroachment
 					["qg"] = 3139,	-- Gar'Thok
 					["coord"] = { 51.95, 43.50, DUROTAR },
-					["crs"] = {
-						3111,	-- Razormane Quilboar
-						3112,	-- Razormane Scout
-						3113,	-- Razormane Dustrunner
-						3114,	-- Razormane Battleguard
-					},
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
 				}),
@@ -244,6 +238,19 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 				}),
+				q(1498, {	-- Path of Defense
+					["qg"] = 5810,	-- Uzzek
+					["sourceQuest"] = 1505,	-- Veteran Uzzek
+					["coord"] = { 61.38, 21.11, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
+					["crs"] = {
+						3130,	-- Thunder Lizard
+						3131,	-- Lightning Hide
+					},
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+				}),
 				q(817, {	-- Practical Prey
 					["qg"] = 3194,	-- Vel'rin Fang
 					["coord"] = { 55.95, 73.92, DUROTAR },
@@ -287,16 +294,20 @@ _.Zones =
 					["qg"] = 3293,	-- Rezlak
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					["coord"] = { 46.38, 22.94, DUROTAR },
-					["crs"] = {
-						3117,	-- Dustwind Savage
-						3118,	-- Dustwind Storm Witch
-					},
 					["lvl"] = 7,
 					["g"] = {
 						i(4932),	-- Harpy Wing Clipper
 						i(4931),	-- Hickory Shortbow
 						i(4938),	-- Blemished Wooden Staff
 					},
+				}),
+				q(2383, {	-- Simple Parchment
+					["qg"] = 3143,	-- Gornek
+					["sourceQuest"] = 788,	-- Cutting Teeth
+					["coord"] = { 42.06, 68.33, DUROTAR },
+					["races"] = { 2 },	-- Orc
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 1,
 				}),
 				q(827, {	-- Skull Rock
 					["qg"] = 3208,	-- Margoz
@@ -384,13 +395,15 @@ _.Zones =
 				q(784, {	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
 					["coord"] = { 51.95, 43.50, DUROTAR },
-					["crs"] = {
-						3128,	-- Kul Tiras Sailor
-						3129,	-- Kul Tiras Marine
-						3192,	-- Lieutenant Benedict
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
+				}),
+				q(1505, {	-- Veteran Uzzek
+					["qg"] = 3170,	-- Tarshaw Jaggedscar
+					["coord"] = { 54.18, 42.47, DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
@@ -429,11 +442,6 @@ _.Zones =
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 805,	-- Report to Sen'jin Village
 					["coord"] = { 55.95, 74.72, DUROTAR },
-					["crs"] = {
-						3205,	-- Zalazane
-						3206,	-- Voodoo Troll
-						3207,	-- Hexed Troll
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["g"] = {

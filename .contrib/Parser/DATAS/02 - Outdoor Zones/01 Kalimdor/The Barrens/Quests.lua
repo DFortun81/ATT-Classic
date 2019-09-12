@@ -167,6 +167,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
 				}),
+				q(1503, { -- Forged Steel
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
+					["coord"] = { 57.23, 30.34, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+				}),
 				q(898, {	-- Free From the Hold
 					["lvl"] = 13,
 					["races"] = HORDE_ONLY,
@@ -605,6 +613,14 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+				}),
+				q(1502, { -- Thun'grim Firegaze
+					["qg"] = 5810,	-- Uzzek
+					["sourceQuest"] = 1498,	-- Path of Defense
+					["coord"] = { 61.38, 21.11, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 				}),
 				q(878, {	-- Tribes at War
 					["lvl"] = 14,

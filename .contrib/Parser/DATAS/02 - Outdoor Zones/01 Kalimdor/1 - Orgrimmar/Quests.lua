@@ -14,18 +14,20 @@ _.Zones =
 				}),
 				q(7835, {	-- A Donation of Mageweave
 					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(7836, {	-- A Donation of Runecloth
-					["qg"] = 14727,	-- Vehena
+				q(7824, {	-- A Donation of Runecloth
+					["qg"] = 14726,	-- Rashona Straglash
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(7824, {	-- A Donation of Runecloth
-					["qg"] = 14726,	-- Rashona Straglash
+				q(7836, {	-- A Donation of Runecloth
+					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -38,18 +40,20 @@ _.Zones =
 				}),
 				q(7834, {	-- A Donation of Silk
 					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
-				q(7833, {	-- A Donation of Wool
-					["qg"] = 14727,	-- Vehena
+				q(7826, {	-- A Donation of Wool
+					["qg"] = 14726,	-- Rashona Straglash
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
-				q(7826, {	-- A Donation of Wool
-					["qg"] = 14726,	-- Rashona Straglash
+				q(7833, {	-- A Donation of Wool
+					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
