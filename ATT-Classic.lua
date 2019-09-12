@@ -5320,6 +5320,13 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Holidays
+		if app.Categories.Holidays then
+			db = app.CreateNPC(-3, app.Categories.Holidays);
+			db.expanded = false;
+			table.insert(g, db);
+		end
+		
 		-- NPCs (Dynamic)
 		--[[
 		db = {};
