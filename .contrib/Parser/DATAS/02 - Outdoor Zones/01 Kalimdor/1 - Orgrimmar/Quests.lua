@@ -14,18 +14,20 @@ _.Zones =
 				}),
 				q(7835, {	-- A Donation of Mageweave
 					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(7836, {	-- A Donation of Runecloth
-					["qg"] = 14727,	-- Vehena
+				q(7824, {	-- A Donation of Runecloth
+					["qg"] = 14726,	-- Rashona Straglash
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(7824, {	-- A Donation of Runecloth
-					["qg"] = 14726,	-- Rashona Straglash
+				q(7836, {	-- A Donation of Runecloth
+					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
@@ -38,18 +40,20 @@ _.Zones =
 				}),
 				q(7834, {	-- A Donation of Silk
 					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 26,
 				}),
-				q(7833, {	-- A Donation of Wool
-					["qg"] = 14727,	-- Vehena
+				q(7826, {	-- A Donation of Wool
+					["qg"] = 14726,	-- Rashona Straglash
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
-				q(7826, {	-- A Donation of Wool
-					["qg"] = 14726,	-- Rashona Straglash
+				q(7833, {	-- A Donation of Wool
+					["qg"] = 14727,	-- Vehena
+					["coord"] = { 37.72, 87.89, ORGRIMMAR },
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
@@ -81,12 +85,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
-				}),
-				q(809, {	-- Ak'Zeloth
-					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3216,	-- Neeru Fireblade
-					["sourceQuest"] = 829,	-- Neeru Fireblade
 				}),
 				q(1431, {	-- Alliance Relations
 					["qg"] = 5639,	-- Craven Drok
@@ -294,31 +292,10 @@ _.Zones =
 						i(18404),	-- Onyxia Tooth Pendant
 					},
 				}),
-				q(5729, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5727, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5726, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-				}),
-				q(5730, {	-- Hidden Enemies
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(15443),	-- Kris of Orgrimmar
-						i(15445),	-- Hammer of Orgrimmar
-						i(15424),	-- Axe of Orgrimmar
-						i(15444),	-- Staff of Orgrimmar
-					},
-				}),
+				--q(5726, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				--q(5730, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				q(8938, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
@@ -501,6 +478,7 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["qg"] = 4949,	-- Thrall
+					["coord"] = { 31.73, 37.81, ORGRIMMAR },
 					["g"] = {
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19366),	-- Master Dragonslayer's Orb
@@ -519,6 +497,17 @@ _.Zones =
 				q(787, {	-- The New Horde
 					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg
+				}),
+				q(1963, {
+					["qg"] = 6446,	-- Therzok
+					["sourceQuest"] = 1859,	-- Therzok
+					["coord"] = { 42.74, 53.52, ORGRIMMAR },
+					["races"] = {
+						2,	-- Orc
+						8,	-- Troll
+					},
+					["classes"] = { 4 },	-- Rogue
+					["lvl"] = 10,
 				}),
 				q(1146, {	-- The Swarm Grows
 					["lvl"] = 29,

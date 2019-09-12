@@ -167,6 +167,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
 				}),
+				q(1503, { -- Forged Steel
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
+					["coord"] = { 57.23, 30.34, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+				}),
 				q(898, {	-- Free From the Hold
 					["lvl"] = 13,
 					["races"] = HORDE_ONLY,
@@ -323,9 +331,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(844, {	-- Plainstrider Menace
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuests"] = {
+						861,	-- The Hunter's Way
+						860,	-- Sergra Darkthorn
+					},
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(903, {	-- Prowlers of the Barrens
 					["lvl"] = 10,
@@ -459,11 +472,6 @@ _.Zones =
 						i(5279),	-- Harpy Skinner
 						i(5318),	-- Zhovur Axe
 					},
-				}),
-				q(860, {	-- Sergra Darkthorn
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3441,	-- Melor Stonehoof
 				}),
 				q(887, {	-- Southsea Freebooters
 					["lvl"] = 9,
@@ -605,6 +613,14 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+				}),
+				q(1502, { -- Thun'grim Firegaze
+					["qg"] = 5810,	-- Uzzek
+					["sourceQuest"] = 1498,	-- Path of Defense
+					["coord"] = { 61.38, 21.11, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 				}),
 				q(878, {	-- Tribes at War
 					["lvl"] = 14,

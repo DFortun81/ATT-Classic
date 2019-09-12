@@ -146,6 +146,14 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
 				}),
+				q(860, {	-- Sergra Darkthorn
+					["qg"] = 3441,	-- Melor Stonehoof
+					["sourceQuest"] = 861,	-- The Hunter's Way
+					["isBreadcrumb"] = true,
+					["coord"] = { 61.52, 80.91, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
+				}),
 				q(1131, {	-- Steelsnap
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
