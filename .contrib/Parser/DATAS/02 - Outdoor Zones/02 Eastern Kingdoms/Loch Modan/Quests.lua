@@ -68,12 +68,41 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2057,	-- Huldar
 				}),
-				q(2500, {	-- Badlands Reagent Run
-					["lvl"] = 36,
+				{
+					["questID"] = 704,	-- Agmond's Fate
+					["sourceQuest"] = 739,	-- Murdaloc
+					["qg"] = 1344,	-- Prospector Ironband
+					["coord"] = { 65.9, 65.6, LOCH_MODAN },
+					["maps"] = { BADLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 4610,	-- Carved Stone Urn
+							["questID"] = 704,	-- Agmond's Fate
+							["description"] = "Can be found in the outdoor section of Uldaman.",
+						},
+						i(4980),	-- Prospector Gloves
+					},
+				},
+				q(2500, {	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
+					["cost"] = {
+						{ "i", 7847, 5 },	-- Buzzard Gizzard
+						{ "i", 7846, 10 },	-- Crag Coyote Fang
+						{ "i", 7848, 5 },	-- Rock Elemental Shard
+					},
+					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 36,
 				}),
 				q(2501, {	-- Badlands Reagent Run II
+					["sourceQuest"] = 17,	-- Uldaman Reagent Run
+					["cost"] = {
+						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
+					},
+					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
@@ -94,18 +123,30 @@ _.Zones =
 					},
 				}),
 				q(298, {	-- Excavation Progress Report
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1344,	-- Prospector Ironband
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(307, {	-- Filthy Paws
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(3166),	-- Ironheart Chain
 						i(3161),	-- Robe of the Keeper
 						i(3160),	-- Ironplate Buckler
+					},
+				}),
+				q(738, {	-- Find Agmond
+					["qg"] = 1344,	-- Prospector Ironband
+					["sourceQuest"] = 707,	-- Ironband Wants You!
+					["coord"] = { 65.93, 65.62, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+					["g"] = {
+						i(4982),	-- Ripped Prospector Belt
+						i(2776),	-- Gold Ore
+						i(1529),	-- Jade
 					},
 				}),
 				q(297, {	-- Gathering Idols
@@ -265,6 +306,16 @@ _.Zones =
 						i(3220),	-- Blood Sausage
 						i(3679),	-- Recipe: Blood Sausage
 					},
+				}),
+				q(17, {	-- Uldaman Reagent Run
+					["sourceQuest"] = 2500,	-- Badlands Reagent Run
+					["qg"] = 1470,	-- Ghak Healtouch
+					["cost"] = {
+						{ "i", 8047, 12 },	-- Magenta Fungus Cap
+					},
+					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(271, {	-- Vyrin's Revenge
 					["lvl"] = 15,

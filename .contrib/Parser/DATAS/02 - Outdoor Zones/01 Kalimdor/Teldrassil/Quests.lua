@@ -119,6 +119,12 @@ _.Zones =
 						i(5618),	-- Scout's Cloak
 					},
 				}),
+				q(978, {	-- Moontouched Wildkin
+					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7916,	-- Erelas Ambersky
+					["maps"] = { WINTERSPRING },
+				}),
 				q(2499, {	-- Oakenscowl
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,

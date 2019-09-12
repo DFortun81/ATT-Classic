@@ -32,6 +32,7 @@ _.Zones =
 				}),
 				q(2968, {	-- A Future Task
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(7825, {	-- Additional Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider
@@ -43,6 +44,7 @@ _.Zones =
 				}),
 				q(3762, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["qg"] = 6746,	-- Innkeeper Pala
 				}),
 				q(1066, {	-- Blood of Innocents
@@ -75,6 +77,7 @@ _.Zones =
 				}),
 				q(769, {	-- Kodo Hide Bag
 					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
 					["qg"] = 3050,	-- Veren Tallstrider
 					["g"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
@@ -110,9 +113,10 @@ _.Zones =
 					},
 				}),
 				q(2965, {	-- Portents of Uldum
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]
 					["qg"] = 3978,	-- Sage Truthseeker
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(744, {	-- Preparation for Ceremony
 					["lvl"] = 7,
@@ -125,6 +129,7 @@ _.Zones =
 				}),
 				q(1123, {	-- Rabine Saturna
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 				}),
 				q(2967, {	-- Return to Thunder Bluff
@@ -168,15 +173,8 @@ _.Zones =
 				}),
 				q(1000, {	-- The New Frontier
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
-				}),
-				q(2440, {	-- The Platinum Discs
-					["lvl"] = 40,
-					["g"] = {
-						i(3928),	-- Superior Healing Potion
-						i(6149),	-- Greater Mana Potion
-						i(9587),	-- Thawpelt Sack
-					},
 				}),
 				q(1196, {	-- The Sacred Flame
 					["lvl"] = 20,
@@ -203,6 +201,7 @@ _.Zones =
 				}),
 				q(3761, {	-- Un'Goro Soil
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 				}),
 				q(264, {	-- Until Death Do Us Part

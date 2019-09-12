@@ -60,6 +60,7 @@ _.Zones =
 				}),
 				q(7341, {	-- A Fair Trade
 					["lvl"] = 52,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(18042),	-- Thorium Headed Arrow
 					},
@@ -109,6 +110,7 @@ _.Zones =
 				}),
 				q(8919, {	-- An Earnest Proposition
 					["lvl"] = 58,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22071),	-- Deathmist Bracers
 					},
@@ -129,6 +131,7 @@ _.Zones =
 				}),
 				q(8920, {	-- An Earnest Proposition
 					["lvl"] = 58,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(21996),	-- Bracers of Heroism
 					},
@@ -149,6 +152,7 @@ _.Zones =
 				}),
 				q(8918, {	-- An Earnest Proposition
 					["lvl"] = 58,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22095),	-- Bindings of The Five Thunders
 					},
@@ -200,6 +204,7 @@ _.Zones =
 				}),
 				q(8957, {	-- Anthion's Parting Words
 					["lvl"] = 58,
+					["races"] = HORDE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22096),	-- Boots of The Five Thunders
@@ -226,6 +231,7 @@ _.Zones =
 				}),
 				q(936, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["qg"] = 6929,	-- Innkeeper Gryshka
 				}),
 				q(8998, {	-- Back to the Beginning
@@ -239,6 +245,7 @@ _.Zones =
 				}),
 				q(3504, {	-- Betrayed
 					["lvl"] = 44,
+					["races"] = HORDE_ONLY,
 					["qg"] = 4485,	-- Belgrom Rockmaul
 				}),
 				q(3505, {	-- Betrayed
@@ -256,6 +263,7 @@ _.Zones =
 				}),
 				q(4300, {	-- Bone-Bladed Weapons
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11862),	-- White Bone Band
 						i(11863),	-- White Bone Shredder
@@ -264,6 +272,7 @@ _.Zones =
 				}),
 				q(4511, {	-- Calm Before the Storm
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11870),	-- Oblivion Orb
 						i(11871),	-- Snarkshaw Spaulders
@@ -272,6 +281,7 @@ _.Zones =
 				}),
 				q(4941, {	-- Eitrigg's Wisdom
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
 				}),
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
@@ -361,13 +371,16 @@ _.Zones =
 				}),
 				q(81, {	-- Ripple Delivery
 					["lvl"] = 42,
+					["races"] = HORDE_ONLY,
 				}),
 				q(650, {	-- Ripple Recovery
 					["lvl"] = 42,
+					["races"] = HORDE_ONLY,
 					["qg"] = 6987,	-- Malton Droffers
 				}),
 				q(649, {	-- Ripple Recovery
 					["lvl"] = 42,
+					["races"] = HORDE_ONLY,
 					["qg"] = 6986,	-- Dran Droffers
 				}),
 				q(9008, {	-- Saving the Best for Last
@@ -441,13 +454,16 @@ _.Zones =
 				}),
 				q(235, {	-- The Ashenvale Hunt
 					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
 				}),
 				q(6567, {	-- The Champion of the Horde
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
 				}),
 				q(7926, {	-- The Darkmoon Faire
 					["lvl"] = 6,
+					["races"] = HORDE_ONLY,
 					["qg"] = 14843,	-- Kruban Darkblade
 					["g"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
@@ -471,12 +487,15 @@ _.Zones =
 				}),
 				q(7783, {	-- The Lord of Blackrock
 					["lvl"] = 60,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1018, {	-- The New Frontier
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
 				}),
 				q(787, {	-- The New Horde
+					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg
 				}),
 				q(1963, {
@@ -497,9 +516,11 @@ _.Zones =
 				}),
 				q(7490, {	-- Victory for the Horde
 					["lvl"] = 60,
+					["races"] = HORDE_ONLY,
 				}),
 				q(6566, {	-- What the Wind Carries
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 		}),

@@ -160,6 +160,8 @@ select(2, ...).FlightPathDB = {
 		name="Thalanaar, Feralas",
 		faction=2,
 		mapID=1444,
+		coord={ 89.4, 45.8, 1444 },
+		qg=4319,	-- Thyssiana <Hippogryph Master>
 	},
 	[32] = {
 		name="Theramore, Dustwallow Marsh",
@@ -214,11 +216,15 @@ select(2, ...).FlightPathDB = {
 		name="Feathermoon, Feralas",
 		faction=2,
 		mapID=1444,
+		coord={ 30.2, 43.2, 1444 },
+		qg=8019,	-- Fyldren Moonfeather <Hippogryph Master>
 	},
 	[42] = {
 		name="Camp Mojache, Feralas",
 		faction=1,
 		mapID=1444,
+		coord={ 75.4, 44.2, 1444 },
+		qg=8020,	-- Shyn <Hippogryph Master>
 	},
 	[43] = {
 		name="Aerie Peak, The Hinterlands",

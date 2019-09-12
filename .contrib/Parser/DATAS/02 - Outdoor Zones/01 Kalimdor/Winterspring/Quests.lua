@@ -78,10 +78,13 @@ _.Zones =
 				}),
 				q(4861, {	-- Enraged Wildkin
 					["lvl"] = 53,
-					["qg"] = 10301,	-- Jaron Stoneshaper
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
 				}),
 				q(4864, {	-- Enraged Wildkin
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
 				}),
 				q(6604, {	-- Enraged Wildkin
 					["lvl"] = 53,
@@ -89,6 +92,8 @@ _.Zones =
 				}),
 				q(4863, {	-- Enraged Wildkin
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
+					--["objectID"] = 175587,	-- Damaged Crate
 				}),
 				q(5084, {	-- Falling to Corruption
 					["lvl"] = 52,
@@ -103,6 +108,7 @@ _.Zones =
 				}),
 				q(979, {	-- Find Ranshalla
 					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
@@ -160,9 +166,6 @@ _.Zones =
 				q(969, {	-- Luck Be With You
 					["lvl"] = 55,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
-				}),
-				q(978, {	-- Moontouched Wildkin
-					["lvl"] = 52,
 				}),
 				q(5085, {	-- Mystery Goo
 					["lvl"] = 52,
@@ -240,6 +243,7 @@ _.Zones =
 				}),
 				q(5244, {	-- The Ruins of Kel'Theril
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11079,	-- Wynd Nightchaser
 				}),
 				q(5082, {	-- Threat of the Winterfall

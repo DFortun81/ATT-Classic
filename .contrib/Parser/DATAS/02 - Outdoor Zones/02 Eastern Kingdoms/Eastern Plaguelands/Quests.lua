@@ -6,10 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
-				q(5153, {	-- A Strange Historian
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-				}),
 				q(8947, {	-- Anthion's Strange Request
 					["lvl"] = 58,
 				}),
@@ -568,9 +564,6 @@ _.Zones =
 				q(9121, {	-- The Dread Citadel - Naxxramas
 					["lvl"] = 60,
 					["qg"] = 16116,	-- Archmage Angela Dosantos
-				}),
-				q(6185, {	-- The Eastern Plagues
-					["lvl"] = 56,
 				}),
 				q(9128, {	-- The Elemental Equation
 					["lvl"] = 55,

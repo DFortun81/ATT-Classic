@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(4294, {	-- ... and a Batch of Ooze
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12235),	-- Un'Goro Slime Sample
 					},
@@ -38,6 +39,7 @@ _.Zones =
 				}),
 				q(4293, {	-- A Sample of Slime...
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(12230),	-- Felwood Slime Sample
 					},
@@ -52,20 +54,25 @@ _.Zones =
 				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["qg"] = 6741,	-- Innkeeper Norman
 				}),
 				q(238, {	-- Errand for Apothecary Zinge
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(232, {	-- Errand for Apothecary Zinge
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(2995, {	-- Lines of Communication
 					["lvl"] = 42,
+					["races"] = HORDE_ONLY,
 					["qg"] = 7825,	-- Oran Snakewrithe
 				}),
 				q(4642, {	-- Melding of Influences
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(15702),	-- Chemist's Ring
 						i(15703),	-- Chemist's Smock
@@ -83,6 +90,7 @@ _.Zones =
 				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9634),	-- Skilled Handling Gloves
 						i(9635),	-- Master Apothecary Cape
@@ -113,30 +121,37 @@ _.Zones =
 				}),
 				q(3570, {	-- Seeping Corruption
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3569, {	-- Seeping Corruption
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3568, {	-- Seeping Corruption
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(4661, {	-- Testing for Corruption - Felwood
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(15103),	-- Corrupt Tested Sample
 					},
 				}),
 				q(4561, {	-- Testing for Impurities - Un'Goro Crater
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(15102),	-- Un'Goro Tested Sample
 					},
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 				}),
 				q(495, {	-- The Crown of Will
 					["lvl"] = 34,
+					["races"] = HORDE_ONLY,
 					["races"] = HORDE_ONLY,
 					["qg"] = 2227,	-- Sharlindra
 				}),
@@ -156,6 +171,7 @@ _.Zones =
 				}),
 				q(5049, {	-- The Jeremiah Blues
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(357, {	-- The Lich's Identity
 					["lvl"] = 5,
@@ -164,6 +180,7 @@ _.Zones =
 				}),
 				q(1004, {	-- The New Frontier
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10879,	-- Harbinger Balthazad
 				}),
 				q(736, {	-- The Star, the Hand and the Heart

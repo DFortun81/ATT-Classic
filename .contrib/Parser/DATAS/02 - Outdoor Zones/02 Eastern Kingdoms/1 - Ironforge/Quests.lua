@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(5090, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
 				q(7809, {	-- A Donation of Mageweave
@@ -60,6 +61,7 @@ _.Zones =
 				}),
 				q(2964, {	-- A Future Task
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(700, {	-- A King's Tribute
 					["lvl"] = 25,
@@ -81,6 +83,7 @@ _.Zones =
 				}),
 				q(4512, {	-- A Little Slime Goes a Long Way
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9616,	-- Laris Geardawdle
 				}),
 				q(4513, {	-- A Little Slime Goes a Long Way
@@ -138,6 +141,7 @@ _.Zones =
 				}),
 				q(8908, {	-- An Earnest Proposition
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22088),	-- Soulforge Bracers
 					},
@@ -165,6 +169,7 @@ _.Zones =
 				}),
 				q(3450, {	-- An Easy Pickup
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8958, {	-- Anthion's Parting Words
 					["lvl"] = 58,
@@ -240,19 +245,23 @@ _.Zones =
 				}),
 				q(3449, {	-- Arcane Runes
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(7342, {	-- Arrows Are For Sissies
 					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(18042),	-- Thorium Headed Arrow
 					},
 				}),
 				q(3790, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5111,	-- Innkeeper Firebrew
 				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5396),	-- Key to Searing Gorge
 					},
@@ -263,6 +272,7 @@ _.Zones =
 				}),
 				q(3371, {	-- Dwarven Justice
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2039, {	-- Find Bingles
 					["lvl"] = 12,
@@ -270,9 +280,10 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 				}),
 				q(707, {	-- Ironband Wants You!
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1356,	-- Prospector Stormpike
+					["coord"] = { 74.64, 11.74, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(8932, {	-- Just Compensation
 					["lvl"] = 58,
@@ -300,6 +311,7 @@ _.Zones =
 				}),
 				q(8926, {	-- Just Compensation
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
@@ -307,6 +319,7 @@ _.Zones =
 				}),
 				q(8933, {	-- Just Compensation
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22086),	-- Soulforge Belt
 						i(22090),	-- Soulforge Gauntlets
@@ -343,11 +356,13 @@ _.Zones =
 				}),
 				q(3448, {	-- Passing the Burden
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2963, {	-- Portents of Uldum
-					["lvl"] = 45,
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 2439,	-- The Platinum Discs [Alliance - Part 3]
 					["qg"] = 5387,	-- High Explorer Magellas
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(1453, {	-- Reclaimers' Business in Desolace
 					["lvl"] = 30,
@@ -360,9 +375,11 @@ _.Zones =
 				}),
 				q(2977, {	-- Return to Ironforge
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3461, {	-- Return to Tymor
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(10707),	-- Steelsmith Greaves
 						i(10708),	-- Skullspell Orb
@@ -375,6 +392,7 @@ _.Zones =
 				}),
 				q(9003, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
@@ -382,6 +400,7 @@ _.Zones =
 				}),
 				q(9001, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
@@ -389,6 +408,7 @@ _.Zones =
 				}),
 				q(8999, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
@@ -396,6 +416,7 @@ _.Zones =
 				}),
 				q(9006, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
@@ -403,6 +424,7 @@ _.Zones =
 				}),
 				q(9005, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
@@ -418,6 +440,7 @@ _.Zones =
 				}),
 				q(9004, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
@@ -425,6 +448,7 @@ _.Zones =
 				}),
 				q(9002, {	-- Saving the Best for Last
 					["lvl"] = 58,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22091),	-- Soulforge Helm
 						i(22089),	-- Soulforge Breastplate
@@ -432,6 +456,7 @@ _.Zones =
 				}),
 				q(2946, {	-- Seeing What Happens
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3483, {	-- Signal for Pickup
 					["lvl"] = 45,
@@ -441,6 +466,7 @@ _.Zones =
 				}),
 				q(3451, {	-- Signal for Pickup
 					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
@@ -462,6 +488,7 @@ _.Zones =
 				}),
 				q(7905, {	-- The Darkmoon Faire
 					["lvl"] = 6,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14842,	-- Melnan Darkstone
 					["g"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
@@ -483,16 +510,8 @@ _.Zones =
 				}),
 				q(1019, {	-- The New Frontier
 					["lvl"] = 54,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
-				}),
-				q(2439, {	-- The Platinum Discs
-					["lvl"] = 40,
-					["qg"] = 5387,	-- High Explorer Magellas
-					["g"] = {
-						i(3928),	-- Superior Healing Potion
-						i(6149),	-- Greater Mana Potion
-						i(9587),	-- Thawpelt Sack
-					},
 				}),
 				q(3701, {	-- The Smoldering Ruins of Thaurissan
 					["lvl"] = 50,
