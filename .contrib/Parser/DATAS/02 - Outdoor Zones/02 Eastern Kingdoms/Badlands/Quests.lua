@@ -98,9 +98,14 @@ _.Zones =
 					},
 				}),
 				q(782, {	-- Broken Alliances
+					["qg"] = 1068,	-- Gorn
+					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(793, {	-- Broken Alliances
+					["qg"] = 1068,	-- Gorn
+					["sourceQuest"] = 782,	-- Broken Alliances
+					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 					["g"] = {
 						i(11193),	-- Blazewind Breastplate
@@ -110,14 +115,18 @@ _.Zones =
 					},
 				}),
 				q(713, {	-- Coolant Heads Prevail
+					["qg"] = 2921,	-- Lotwil Veriatus
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2921,	-- Lotwil Veriatus
 				}),
 				q(1419, {	-- Coyote Thieves
+					["qg"] = 5394,	-- Neeka Bloodscar
+					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(3821, {	-- Dreadmaul Rock
+					["qg"] = 9082,	-- Thal'trak Proudtusk
+					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(706, {	-- Fiery Blaze Enchantments
@@ -316,6 +325,8 @@ _.Zones =
 					},
 				},
 				q(1420, {	-- Report to Helgrum
+					["qg"] = 5394,	-- Neeka Bloodscar
+					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(733, {	-- Scrounging
@@ -374,6 +385,8 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(4062, {	-- The Rise of the Machines
+					["qg"] = 9079,	-- Hierophant Theodora Mulvadania
+					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				{	-- The Star, the Hand and the Heart
