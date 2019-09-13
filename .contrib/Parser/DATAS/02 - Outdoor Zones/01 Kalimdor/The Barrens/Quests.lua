@@ -628,7 +628,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
-					["description"] = "Starting this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
 				}),
 				q(878, {	-- Tribes at War
 					["lvl"] = 14,

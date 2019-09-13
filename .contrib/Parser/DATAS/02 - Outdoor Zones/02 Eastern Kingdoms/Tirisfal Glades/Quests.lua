@@ -227,7 +227,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
-					["description"] = "Starting this quest prevents you from accepting \"Veteran Uzzek\" and \"Path of Defense\" in the Barrens.",
 				}),
 				q(1818, {	-- Speak with Dillinger
 					["qg"] = 2131,	-- Austil de Mon
@@ -236,7 +235,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
-					["description"] = "This quest becomes unavailable after accepting \"Thun'grim Firegaze\" in the Barrens.",
+					["description"] = "This quest becomes unavailable after completing \"Path of Defense\" in the Barrens.",
 				}),
 				q(355, {	-- Speak with Sevren
 					["lvl"] = 7,
@@ -341,7 +340,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
-					["description"] = "This quest becomes unavailable after accepting \"Thun'grim Firegaze\" in the Barrens.",
+					["description"] = "Completing this quest prevents you from accepting \"Veteran Uzzek\" and \"Path of Defense\" in the Barrens.\n\nThis quest becomes unavailable after completing \"Path of Defense\" in the Barrens.",
 				}),
 				q(383, {	-- Vital Intelligence
 					["qg"] = 1570,	-- Executor Arren

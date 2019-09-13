@@ -250,6 +250,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.\n\nThis quest becomes unavailable after completing \"Ulag the Cleaver\" in Silverpine Forest.",
 				}),
 				q(817, {	-- Practical Prey
 					["qg"] = 3194,	-- Vel'rin Fang
@@ -400,11 +401,17 @@ _.Zones =
 					["lvl"] = 3,
 				}),
 				q(1505, {	-- Veteran Uzzek
-					["qg"] = 3170,	-- Tarshaw Jaggedscar
+					["qgs"] = {
+						3170,	-- Tarshaw Jaggedscar
+						3354,	-- Sorek
+						3063,	-- Krang Stonehoof
+					},
 					["coord"] = { 54.18, 42.47, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["description"] = "This quest becomes unavailable after completing \"Ulag the Cleaver\" in Tirisfal Glades.",
+
 				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
