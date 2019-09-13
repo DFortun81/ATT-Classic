@@ -169,15 +169,19 @@ _.Zones =
 				}),
 				q(1388, {	-- Nothing But The Truth
 					["lvl"] = 37,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1391, {	-- Nothing But The Truth
 					["lvl"] = 37,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1372, {	-- Nothing But The Truth
 					["lvl"] = 37,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1383, {	-- Nothing But The Truth
 					["lvl"] = 37,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6832),	-- Cloak of Blight
 						i(11265),	-- Cragwood Maul
