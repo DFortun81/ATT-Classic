@@ -52,8 +52,25 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
+				q(1363, {	-- Mazen's Behest
+					["qg"] = 338,	-- Mazen Mac'Nadir
+					--["coord"] = { , , STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 37,
+				}),
+				q(1364, {	-- Mazen's Behest
+					["qg"] = 5386,	-- Acolyte Dellis
+					["sourceQuest"] = 1363,	-- Mazen's Behest
+					--["coord"] = { , , SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 37,
+					["g"] = {
+						i(10747),	-- Teacher's Sash
+						i(10748),	-- Wanderlust Boots
+					},
+				}),
 				q(1418, {	-- Neeka Bloodscar
-					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(1392, {	-- Noboru the Cudgel

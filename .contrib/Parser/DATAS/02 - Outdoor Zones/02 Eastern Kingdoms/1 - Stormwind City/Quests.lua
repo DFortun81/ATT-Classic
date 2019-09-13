@@ -6,27 +6,23 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
-				{
-					["questID"] = 333,	-- Harlan Needs a Resupply
+				q(333, {	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
-					["questID"] = 334,	-- Package for Thurman
+				}),
+				q(334, {	-- Package for Thurman
 					["qg"] = 1428,	-- Rema Schneider
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
-					["questID"] = 353,	-- Stormpike's Delivery
+				}),
+				q(353, {	-- Stormpike's Delivery
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
-				},
-				{
-					["questID"] = 332,	-- Wine Shop Advert
+				}),
+				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
-				},
+				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
