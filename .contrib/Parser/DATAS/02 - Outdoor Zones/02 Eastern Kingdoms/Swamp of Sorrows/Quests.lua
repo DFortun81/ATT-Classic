@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(1428, {	-- Continued Threat
 					["lvl"] = 35,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1425, {	-- Deliver the Shipment
 					["lvl"] = 30,
@@ -31,6 +32,7 @@ _.Zones =
 						i(9681),	-- Grilled King Crawler Legs
 						i(9682),	-- Leather Chef's Belt
 					},
+					["races"] = HORDE_ONLY,
 				}),
 				q(1393, {	-- Galen's Escape
 					["lvl"] = 30,
@@ -43,22 +45,27 @@ _.Zones =
 					["lvl"] = 48,
 				}),
 				q(699, {	-- Lack of Surplus
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(698, {	-- Lack of Surplus
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1418, {	-- Neeka Bloodscar
+					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["lvl"] = 29,
 				}),
 				q(1424, {	-- Pool of Tears
-					["lvl"] = 38,
 					["qg"] = 1443,	-- Fel'zerul
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(1429, {	-- The Atal'ai Exile
+					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(3374, {	-- The Essence of Eranikus
@@ -69,8 +76,9 @@ _.Zones =
 					["qg"] = 5476,	-- Watcher Biggs
 				}),
 				q(1423, {	-- The Lost Supplies
-					["lvl"] = 30,
+					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(6827),	-- Box of Supplies
 					},
@@ -81,17 +89,20 @@ _.Zones =
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 				}),
 				q(2623, {	-- The Swamp Talker
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7643,	-- Bengor
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(1422, {	-- Threat From the Sea
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1426, {	-- Threat From the Sea
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1427, {	-- Threat From the Sea
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["g"] = {
 						i(9680),	-- Tok'kar's Murloc Shanker
