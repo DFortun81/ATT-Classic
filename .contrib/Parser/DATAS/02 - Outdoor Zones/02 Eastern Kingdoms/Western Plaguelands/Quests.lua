@@ -39,7 +39,6 @@ _.Zones =
 				}),
 				q(5904, {	-- A Plague Upon Thee
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5903, {	-- A Plague Upon Thee
 					["lvl"] = 48,
@@ -98,7 +97,6 @@ _.Zones =
 				}),
 				q(5023, {	-- Better Late Than Never
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 				}),
 				q(5022, {	-- Better Late Than Never
 					["lvl"] = 50,
@@ -116,7 +114,6 @@ _.Zones =
 				}),
 				q(5164, {	-- Catalogue of the Wayward
 					["lvl"] = 57,
-					["races"] = HORDE_ONLY,
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
@@ -132,7 +129,6 @@ _.Zones =
 				}),
 				q(5092, {	-- Clear the Way
 					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
@@ -239,11 +235,9 @@ _.Zones =
 				}),
 				q(5059, {	-- Locked Away
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
 				}),
 				q(5060, {	-- Locked Away
 					["lvl"] = 52,
-					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13474),	-- Farmer Dalson's Shotgun
 						i(13475),	-- Dalson Family Wedding Ring
@@ -251,11 +245,10 @@ _.Zones =
 				}),
 				q(5507, {	-- Mantles of the Dawn
 					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5504, {	-- Mantles of the Dawn
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10856,	-- Argent Quartermaster Hasana
 				}),
 				q(5408, {	-- Minion's Scourgestones
@@ -347,7 +340,6 @@ _.Zones =
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
 					["g"] = {
 						i(12814),	-- Flame in a Bottle
@@ -375,7 +367,6 @@ _.Zones =
 				}),
 				q(5465, {	-- Soulbound Keepsake
 					["lvl"] = 57,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
