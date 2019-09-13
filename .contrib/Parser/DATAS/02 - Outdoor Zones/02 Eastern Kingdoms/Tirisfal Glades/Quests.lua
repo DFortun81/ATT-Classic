@@ -48,8 +48,9 @@ _.Zones =
 					["qg"] = 11615,	-- Mickey Levine
 				}),
 				q(404, {	-- A Putrid Task
-					["lvl"] = 4,
 					["qg"] = 1496,	-- Deathguard Dillinger
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["lvl"] = 4,
 				}),
 				q(590, {	-- A Rogue's Deal
 				}),
@@ -60,6 +61,16 @@ _.Zones =
 						i(4604),	-- Forest Mushroom Cap
 						i(159),	-- Refreshing Spring Water
 					},
+				}),
+				q(1821, {	-- Agamand Heirlooms
+					["qg"] = 1500,	-- Coleman Farthing
+					["sourceQuests"] = {
+						1820,	-- Speak with Coleman
+					},
+					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
 				}),
 				q(371, {	-- At War With The Scarlet Crusade
 					["lvl"] = 5,
@@ -206,6 +217,27 @@ _.Zones =
 						i(11850),	-- Short Duskbat Cape
 					},
 				}),
+				q(1820, {	-- Speak with Coleman
+					["qg"] = 1496,	-- Deathguard Dillinger
+					["sourceQuests"] = {
+						1819,	-- Ulag the Cleaver
+					},
+					["isBreadcrumb"] = true,
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["description"] = "Starting this quest prevents you from accepting \"Veteran Uzzek\" and \"Path of Defense\" in the Barrens.",
+				}),
+				q(1818, {	-- Speak with Dillinger
+					["qg"] = 2131,	-- Austil de Mon
+					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
+					["coord"] = { 61.84, 52.53, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["description"] = "This quest becomes unavailable after accepting \"Thun'grim Firegaze\" in the Barrens.",
+				}),
 				q(355, {	-- Speak with Sevren
 					["lvl"] = 7,
 					["races"] = HORDE_ONLY,
@@ -249,9 +281,10 @@ _.Zones =
 					["qg"] = 1500,	-- Coleman Farthing
 				}),
 				q(426, {	-- The Mills Overrun
+					["qg"] = 1496,	-- Deathguard Dillinger
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
-					["qg"] = 1496,	-- Deathguard Dillinger
 					["g"] = {
 						i(3447),	-- Cryptwalker Boots
 						i(3834),	-- Sturdy Cloth Trousers
@@ -299,6 +332,16 @@ _.Zones =
 						i(5779),	-- Forsaken Bastard Sword
 						i(159),	-- Refreshing Spring Water
 					},
+				}),
+				q(1819, {	-- Ulag the Cleaver
+					["qg"] = 1496,	-- Deathguard Dillinger
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
+					["sourceQuest"] = 1818,	-- Speak with Dillinger
+					["altQuests"] = { 1502 },	-- Thun'grim Firegaze
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 10,
+					["description"] = "This quest becomes unavailable after accepting \"Thun'grim Firegaze\" in the Barrens.",
 				}),
 				q(383, {	-- Vital Intelligence
 					["qg"] = 1570,	-- Executor Arren

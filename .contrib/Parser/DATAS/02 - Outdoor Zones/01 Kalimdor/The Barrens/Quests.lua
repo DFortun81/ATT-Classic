@@ -174,6 +174,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["g"] = {
+						i(7326),	-- Thun'grim's Axe
+						i(7327),	-- Thun'grim's Dagger
+						i(7328),	-- Thun'grim's Mace
+						i(7329),	-- Thun'grim's Sword
+					}
 				}),
 				q(898, {	-- Free From the Hold
 					["lvl"] = 13,
@@ -617,10 +623,12 @@ _.Zones =
 				q(1502, { -- Thun'grim Firegaze
 					["qg"] = 5810,	-- Uzzek
 					["sourceQuest"] = 1498,	-- Path of Defense
+					--["isBreadcrumb"],	-- Possible, since quest 3/4 of the UD chain is breadcrumb.
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["description"] = "Starting this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
 				}),
 				q(878, {	-- Tribes at War
 					["lvl"] = 14,

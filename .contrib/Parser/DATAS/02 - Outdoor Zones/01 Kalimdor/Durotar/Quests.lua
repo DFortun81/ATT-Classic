@@ -294,6 +294,7 @@ _.Zones =
 					["qg"] = 3293,	-- Rezlak
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,
 					["lvl"] = 7,
 					["g"] = {
 						i(4932),	-- Harpy Wing Clipper
@@ -430,6 +431,7 @@ _.Zones =
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
 					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,
 					["lvl"] = 7,
 				}),
 				q(4641, {	-- Your Place In The World
