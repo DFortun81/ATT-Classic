@@ -222,9 +222,11 @@ _.Zones =
 					},
 				}),
 				q(533, {	-- Infiltration
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 535,	-- Valik
+					--["coord"] = { , , HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29, 
 				}),
 				q(507, {	-- Lord Aliden Perenolde
 					["lvl"] = 29,

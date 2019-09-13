@@ -23,29 +23,32 @@ _.Zones =
 				}),
 				q(5043, {	-- Agamaggan's Agility
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
 				q(5042, {	-- Agamaggan's Strength
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
 				q(880, {	-- Altered Beings
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 877,	-- The Stagnant Oasis
+					["coord"] = { 52.26, 31.92, THE_BARRENS },
+					["cr"] = 3461,	-- Oasis Snapjaw
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(853, {	-- Apothecary Zamah
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3390,	-- Apothecary Helbrim
+					["sourceQuest"] = 848,	-- Fungal Spores
+					["coord"] = { 51.44, 30.15, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(2458),	-- Elixir of Minor Fortitude
 						i(2457),	-- Elixir of Minor Agility
@@ -55,23 +58,26 @@ _.Zones =
 					},
 				}),
 				q(906, {	-- Betrayal from Within
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(5316),	-- Barkshell Tunic
 						i(5317),	-- Dry Moss Tunic
 					},
 				}),
 				q(879, {	-- Betrayal from Within
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(5052, {	-- Blood Shards of Agamaggan
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(855, {	-- Centaur Bracers
 					["lvl"] = 9,
@@ -83,30 +89,38 @@ _.Zones =
 						i(5345),	-- Stonewood Hammer
 					},
 				}),
-				q(821, {	-- Chen's Empty Keg
+				q(819, {	-- Chen's Empty Keg
 					["lvl"] = 11,
 					["races"] = HORDE_ONLY,
+					["description"] = "Started by picking up one of the many kegs littered throughout the Barrens.",
+				}),
+				q(821, {	-- Chen's Empty Keg
 					["qg"] = 3292,	-- Brewmaster Drohn
+					["sourceQuest"] = 819,	-- Chen's Empty Keg
+					["coord"] = { 62.27, 38.39, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 					["g"] = {
 						i(4952),	-- Stormstout
 					},
 				}),
 				q(822, {	-- Chen's Empty Keg
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3292,	-- Brewmaster Drohn
+					["sourceQuest"] = 821,	-- Chen's Empty Keg
+					["repeatable"] = true,
+					["coord"] = { 62.27, 38.39, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 					["g"] = {
 						i(4953),	-- Trogg Brew
 					},
-				}),
-				q(819, {	-- Chen's Empty Keg
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
+					-- Quest name does not show! Maybe not part of phase 1?
 				}),
 				q(899, {	-- Consumed by Hatred
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3432,	-- Mankrik
+					["coord"] = { 51.95, 31.58, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 					["g"] = {
 						i(5314),	-- Boar Hunter's Cape
 						i(6477),	-- Grassland Sash
@@ -128,25 +142,27 @@ _.Zones =
 					},
 				}),
 				q(1069, {	-- Deepmoss Spider Eggs
-					["lvl"] = 15,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3446,	-- Mebok Mizzyrix
+					["coord"] = { 62.37, 37.32, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(871, {	-- Disrupt the Attacks
-					["lvl"] = 9,
+					["qg"] = 3429,	-- Thork
+					["coord"] = { 51.50, 30.86, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						3337,	-- Kargal Battlescar
-						3429,	-- Thork
-					},
+					["lvl"] = 9,
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
-					["lvl"] = 10,
+					["qg"] = 6929,	-- Innkeeper Gryshka
+					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
+					["coord"] = { 54.09, 68.43, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = {
 						2,	-- Orc
 						8,  -- Troll
 					},
-					["qg"] = 6929,	-- Innkeeper Gryshka
+					["lvl"] = 10,
 				}),
 				q(881, {	-- Echeyakee
 					["lvl"] = 10,
@@ -191,9 +207,10 @@ _.Zones =
 					},
 				}),
 				q(848, {	-- Fungal Spores
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3390,	-- Apothecary Helbrim
+					["coord"] = { 51.44, 30.15, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(843, {	-- Gann's Reclamation
 					["lvl"] = 17,
@@ -277,8 +294,9 @@ _.Zones =
 					["qg"] = 3389,	-- Regthar Deathgate
 				}),
 				q(883, {	-- Lakota'mani
-					["lvl"] = 10,
+					["provider"] = { "i", 5099 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(1060, {	-- Letter to Jin'Zil
 					["lvl"] = 15,
@@ -286,9 +304,10 @@ _.Zones =
 					["qg"] = 3449,	-- Darsok Swiftdagger
 				}),
 				q(4921, {	-- Lost in Battle
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3432,	-- Mankrik
+					["coord"] = { 51.95, 31.58, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(874, {	-- Mahren Skyseer
 					["lvl"] = 9,
@@ -296,32 +315,36 @@ _.Zones =
 					["qg"] = 3387,	-- Jorn Skyseer
 				}),
 				q(6365, {	-- Meats to Orgrimmar
-					["lvl"] = 10,
+					["qg"] = 3489,	-- Zargh
+					["coord"] = { 52.62, 29.84, THE_BARRENS },
 					["races"] = {
 						2,	-- Orc
 						8,  -- Troll
 					},
-					["qgs"] = {
-						3489,	-- Zargh
-						3881,	-- Grimtak
-					},
+					["lvl"] = 10,
 				}),
 				q(9267, {	-- Mending Old Wounds
-					["lvl"] = 10,
 					["qg"] = 16418,	-- Mupsi Shacklefridd
+					["repeatable"] = true,
+					["coord"] = { 61.22, 37.86, THE_BARRENS },
+					["lvl"] = 10,
+					-- Quest name does not show! Maybe not part of phase 1?
 				}),
 				q(896, {	-- Miner's Fortune
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["coord"] = { 63.35, 38.45, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(5335),	-- A Sack of Coins
 					},
 				}),
 				q(3301, {	-- Mura Runetotem
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 880,	-- Altered Beings
+					["coord"] = { 52.26, 31.92, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10820),	-- Jackseed Belt
 						i(10821),	-- Sower's Cloak
@@ -333,8 +356,9 @@ _.Zones =
 					["qg"] = 9316,	-- Wenikee Boltbucket
 				}),
 				q(884, {	-- Owatanka
-					["lvl"] = 10,
+					["provider"] = { "i", 5102 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
@@ -352,31 +376,38 @@ _.Zones =
 					["qg"] = 3338,	-- Sergra Darkthorn
 				}),
 				q(865, {	-- Raptor Horns
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3446,	-- Mebok Mizzyrix
+					["coord"] = { 62.37, 37.32, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(5342),	-- Raptor Punch
 						i(5343),	-- Barkeeper's Cloak
 					},
 				}),
 				q(869, {	-- Raptor Thieves
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3464,	-- Gazrog
+					["coord"] = { 51.93, 30.32, THE_BARRENS },
+					["crs"] = {
+						3254,	-- Sunscale Lashtail
+						3255,	-- Sunscale Screecher
+						3256,	-- Sunscale Scytheclaw
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(5046, {	-- Razorhide
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
 				q(6541, {	-- Report to Kadrak
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3429,	-- Thork
+					["coord"] = { 51.50, 30.86, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6364, {	-- Return to Jahan
 					["lvl"] = 10,
@@ -386,12 +417,15 @@ _.Zones =
 					["qg"] = 2995,	-- Tal
 				}),
 				q(6386, {	-- Return to the Crossroads.
-					["lvl"] = 10,
+					["qg"] = 3310,	-- Doras
+					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
+					["coord"] = { 45.21, 63.58, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = {
 						2,	-- Orc
 						8,  -- Troll
 					},
-					["qg"] = 3310,	-- Doras
+					["lvl"] = 10,
 				}),
 				q(849, {	-- Revenge of Gann
 					["lvl"] = 17,
@@ -407,19 +441,20 @@ _.Zones =
 					["qg"] = 3341,	-- Gann Stonespire
 				}),
 				q(6384, {	-- Ride to Orgrimmar
+					["qg"] = 3615,	-- Devrak
+					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
+					["coord"] = { 51.50, 30.34, THE_BARRENS },
 					["lvl"] = 10,
 					["races"] = {
 						2,	-- Orc
 						8,  -- Troll
 					},
-					["qg"] = 3615,	-- Devrak
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
-					["lvl"] = 10,
-					["races"] = {
-						6,	-- Tauren
-					},
 					["qg"] = 3615,	-- Devrak
+					["coord"] = { 51.50, 30.34, THE_BARRENS },
+					["races"] = { 6, },	-- Tauren
+					["lvl"] = 10,
 				}),
 				q(3923, {	-- Rilli Greasygob
 					["lvl"] = 10,
@@ -428,35 +463,41 @@ _.Zones =
 				}),
 				q(5045, {	-- Rising Spirit
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
-				q(901, {	-- Samophlange
-					["lvl"] = 10,
+				q(894, {	-- Samophlange
+					["qg"] = 3442,	-- Sputtervalve
+					["coord"] = { 62.98, 37.21, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 4141,	-- Control Console
+					["lvl"] = 10,
 				}),
 				q(900, {	-- Samophlange
-					["lvl"] = 10,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 894,	-- Samophlange
+					--["coord"] = { , , THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 4141,	-- Control Console
+					["lvl"] = 10,
+				}),
+				q(901, {	-- Samophlange
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 900,	-- Samophlange
+					--["coord"] = { , , THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(902, {	-- Samophlange
-					["lvl"] = 10,
+					["provider"] = { "o", 4141 },	-- Control Console
+					["sourceQuest"] = 901,	-- Samophlange
+					--["coord"] = { , , THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 4141,	-- Control Console
+					["lvl"] = 10,
 					["g"] = {
 						i(5324),	-- Engineer's Hammer
 						i(5325),	-- Welding Shield
 					},
-				}),
-				q(894, {	-- Samophlange
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3442,	-- Sputtervalve
 				}),
 				q(3924, {	-- Samophlange Manual
 					["lvl"] = 10,
@@ -480,43 +521,45 @@ _.Zones =
 					},
 				}),
 				q(887, {	-- Southsea Freebooters
-					["lvl"] = 9,
+					["qg"] = 3391,	-- Gazlowe
+					["coord"] = {62.68, 36.24, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						3391,	-- Gazlowe
-						3453,	-- Wharfmaster Dizzywig
-					},
+					["lvl"] = 9,
 				}),
 				q(889, {	-- Spirit of the Wind
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
 				q(888, {	-- Stolen Booty
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3391,	-- Gazlowe
+					["sourceQuest"] = 892,	-- The Missing Shipment
+					["coord"] = {62.68, 36.24, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(5337),	-- Wayfaring Gloves
 						i(5320),	-- Padded Lamellar Boots
 					},
 				}),
 				q(3281, {	-- Stolen Silver
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3464,	-- Gazrog
+					["sourceQuest"] = 869,	-- Raptor Thieves
+					["coord"] = { 51.93, 30.32, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(11853),	-- Rambling Boots
 						i(2694),	-- Settler's Leggings
 					},
 				}),
 				q(5041, {	-- Supplies for the Crossroads
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3429,	-- Thork
+					["coord"] = { 51.50, 30.86, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
 					["lvl"] = 10,
@@ -539,15 +582,19 @@ _.Zones =
 					["qg"] = 3387,	-- Jorn Skyseer
 				}),
 				q(886, {	-- The Barrens Oases
+					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
+					--["coord"] = { , , THUNDER_BLUFF },
+					["isBreadcrumb"] = true,
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(872, {	-- The Disruption Ends
-					["lvl"] = 9,
+					["qg"] = 3429,	-- Thork
+					["sourceQuest"] = 871,	-- Disrupt the Attacks
+					["coord"] = { 51.50, 30.86, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						3337,	-- Kargal Battlescar
-						3429,	-- Thork
-					},
+					["lvl"] = 9,
 					["g"] = {
 						i(5275),	-- Binding Girdle
 						i(5328),	-- Cinched Belt
@@ -563,9 +610,11 @@ _.Zones =
 					},
 				}),
 				q(870, {	-- The Forgotten Pools
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 886,	-- The Barrens Oases
+					["coord"] = { 52.26, 31.92, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(891, {	-- The Guns of Northwatch
 					["lvl"] = 13,
@@ -577,27 +626,35 @@ _.Zones =
 					},
 				}),
 				q(897, {	-- The Harvester
-					["lvl"] = 10,
+					["provider"] = { "i", 5138 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(892, {	-- The Missing Shipment
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["coord"] = { 63.35, 38.45, THE_BARRENS },
+					["sourceQuest"] = 890,	-- The Missing Shipment
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(890, {	-- The Missing Shipment
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3391,	-- Gazlowe
+					["sourceQuest"] = 887,	-- Southsea Freebooters
+					["coord"] = {62.68, 36.24, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(3513, {	-- The Runed Scroll
-					["lvl"] = 15,
+					["provider"] = { "i", 10621 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(877, {	-- The Stagnant Oasis
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 870,	-- The Forgotten Pools
+					["coord"] = { 52.26, 31.92, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(1145, {	-- The Swarm Grows
 					["lvl"] = 29,
@@ -630,9 +687,10 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(878, {	-- Tribes at War
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3430,	-- Mangletooth
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(851, {	-- Verog the Dervish
 					["lvl"] = 11,
@@ -640,13 +698,15 @@ _.Zones =
 					["qg"] = 3389,	-- Regthar Deathgate
 				}),
 				q(895, {	-- WANTED: Baron Longshore
-					["lvl"] = 11,
+					["provider"] = { "o", 3972 },
+					["coord"] = { 62.59, 37.47, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 3972,	-- WANTED
+					["lvl"] = 11,
 				}),
 				q(885, {	-- Washte Pawne
-					["lvl"] = 10,
+					["provider"] = { "i", 5103 },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(893, {	-- Weapons of Choice
 					["lvl"] = 17,
@@ -663,17 +723,18 @@ _.Zones =
 					["qg"] = 3442,	-- Sputtervalve
 				}),
 				q(1492, {	-- Wharfmaster Dizzywig
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3390,	-- Apothecary Helbrim
+					["coord"] = { 51.44, 30.15, THE_BARRENS },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(5044, {	-- Wisdom of Agamaggan
 					["qg"] = 3430,	-- Mangletooth
-					["maps"] = { THE_BARRENS },
+					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-					["repeatable"] = true,
 				}),
 				q(1483, {	-- Ziz Fizziks
 					["lvl"] = 16,
