@@ -15,8 +15,9 @@ _.Zones =
 					},
 				}),
 				q(1168, {	-- Army of the Black Dragon
-					["lvl"] = 38,
 					["qg"] = 4502,	-- Tharg
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 					["g"] = {
 						i(9705),	-- Tharg's Shoelace
 						i(9706),	-- Tharg's Disk
@@ -31,8 +32,9 @@ _.Zones =
 					["qg"] = 4947,	-- Theramore Lieutenant
 				}),
 				q(1173, {	-- Challenge Overlord Mok'Morokk
-					["lvl"] = 38,
 					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 					["g"] = {
 						i(10703),	-- Fiendish Skiv
 						i(10704),	-- Chillnail Splinter
@@ -44,8 +46,9 @@ _.Zones =
 					["qg"] = 4948,	-- Adjutant Tesoran
 				}),
 				q(1205, {	-- Deadmire
-					["lvl"] = 35,
 					["qg"] = 3441,	-- Melor Stonehoof
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(6570, {	-- Emberstrife
 					["lvl"] = 55,
@@ -143,15 +146,17 @@ _.Zones =
 					["qg"] = 4794,	-- Morgan Stern
 				}),
 				q(1166, {	-- Overlord Mok'Morokk's Concern
-					["lvl"] = 38,
 					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 					["g"] = {
 						i(10702),	-- Enormous Ogre Boots
 					},
 				}),
 				q(1273, {	-- Questioning Reethe
-					["lvl"] = 30,
 					["qg"] = 4983,	-- Ogron
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(6797),	-- Eyepoker
 						i(6798),	-- Blasting Hackbut
@@ -221,8 +226,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1276, {	-- The Black Shield
-					["lvl"] = 30,
 					["qg"] = 4926,	-- Krog
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1253, {	-- The Black Shield
 					["lvl"] = 30,
@@ -254,21 +260,26 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					--["objectID"] = 20992,	-- Black Shield
 				}),
-				q(1172, {	-- The Brood of Onyxia
-					["lvl"] = 38,
+				q(1170, {	-- The Brood of Onyxia
 					["qg"] = 4501,	-- Draz'Zilb
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(1171, {	-- The Brood of Onyxia
+					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 1170,	-- The Brood of Onyxia
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(1172, {	-- The Brood of Onyxia
+					["qg"] = 4501,	-- Draz'Zilb
+					["sourceQuest"] = 1171,	-- The Brood of Onyxia
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 					["g"] = {
 						i(10700),	-- Encarmine Boots
 						i(10701),	-- Boots of Zua'tec
 					},
-				}),
-				q(1171, {	-- The Brood of Onyxia
-					["lvl"] = 38,
-					["qg"] = 4500,	-- Overlord Mok'Morokk
-				}),
-				q(1170, {	-- The Brood of Onyxia
-					["lvl"] = 38,
-					["qg"] = 4501,	-- Draz'Zilb
 				}),
 				q(1263, {	-- The Burning Inn <CHANGE TO GOSSIP>
 					["lvl"] = 30,

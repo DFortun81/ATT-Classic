@@ -117,6 +117,7 @@ _.Zones =
 					},
 				}),
 				q(415, {	-- Rejold's New Brew
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["g"] = {
 						i(3087),	-- Mug of Shimmer Stout

@@ -8,9 +8,11 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(753, {	-- A Humble Task
 					["qg"] = 2991,	-- Greatmother Hawkwind
+					["races"] = HORDE_ONLY,
 				}),
 				q(752, {	-- A Humble Task
 					["qg"] = 2981,	-- Chief Hawkwind
+					["races"] = HORDE_ONLY,
 				}),
 				q(833, {	-- A Sacred Burial
 					["lvl"] = 7,
@@ -19,6 +21,7 @@ _.Zones =
 				}),
 				q(1656, {	-- A Task Unfinished
 					["qg"] = 6775,	-- Antur Fallow
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4540),	-- Tough Hunk of Bread
 						i(159),	-- Refreshing Spring Water
@@ -33,6 +36,7 @@ _.Zones =
 				q(3376, {	-- Break Sharptusk!
 					["lvl"] = 3,
 					["qg"] = 3209,	-- Brave Windfeather
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(10635),	-- Painted Chain Leggings
 						i(10636),	-- Nomadic Gloves
@@ -67,6 +71,7 @@ _.Zones =
 				q(766, {	-- Mazzranache
 					["lvl"] = 5,
 					["qg"] = 3055,	-- Maur Raincaller
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4972),	-- Cliff Runner Boots
 						i(4973),	-- Plains Hunter Wristguards
@@ -81,6 +86,7 @@ _.Zones =
 				}),
 				q(757, {	-- Rite of Strength
 					["qg"] = 2982,	-- Seer Graytongue
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(1382),	-- Rock Mace
 						i(1383),	-- Stone Tomahawk
@@ -92,14 +98,17 @@ _.Zones =
 				q(767, {	-- Rite of Vision
 					["lvl"] = 3,
 					["qg"] = 2993,	-- Baine Bloodhoof
+					["races"] = HORDE_ONLY,
 				}),
 				q(771, {	-- Rite of Vision
 					["lvl"] = 3,
 					["qg"] = 3054,	-- Zarlman Two-Moons
+					["races"] = HORDE_ONLY,
 				}),
 				q(772, {	-- Rite of Vision
 					["lvl"] = 3,
 					["qg"] = 3054,	-- Zarlman Two-Moons
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4906),	-- Rainwalker Boots
 						i(4958),	-- Sun-beaten Cloak
@@ -112,9 +121,11 @@ _.Zones =
 				}),
 				q(763, {	-- Rites of the Earthmother
 					["qg"] = 2981,	-- Chief Hawkwind
+					["races"] = HORDE_ONLY,
 				}),
 				q(755, {	-- Rites of the Earthmother
 					["qg"] = 2981,	-- Chief Hawkwind
+					["races"] = HORDE_ONLY,
 				}),
 				q(776, {	-- Rites of the Earthmother
 					["lvl"] = 3,
@@ -125,6 +136,7 @@ _.Zones =
 				}),
 				q(745, {	-- Sharing the Land
 					["qg"] = 2993,	-- Baine Bloodhoof
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4960),	-- Flash Pellet
 					},
@@ -140,10 +152,12 @@ _.Zones =
 				}),
 				q(761, {	-- Swoop Hunting
 					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
 					["qg"] = 2947,	-- Harken Windtotem
 				}),
 				q(780, {	-- The Battleboars
 					["qg"] = 2980,	-- Grull Hawkwind
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(6059),	-- Nomadic Vest
 						i(4540),	-- Tough Hunk of Bread
@@ -159,6 +173,7 @@ _.Zones =
 				}),
 				q(747, {	-- The Hunt Begins
 					["qg"] = 2980,	-- Grull Hawkwind
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4954),	-- Nomadic Belt
 						i(4910),	-- Painted Chain Gloves
@@ -166,6 +181,7 @@ _.Zones =
 				}),
 				q(750, {	-- The Hunt Continues
 					["qg"] = 2980,	-- Grull Hawkwind
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4908),	-- Nomadic Bracers
 						i(4913),	-- Painted Chain Belt
@@ -195,6 +211,7 @@ _.Zones =
 				}),
 				q(758, {	-- Thunderhorn Cleansing
 					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4963),	-- Thunderhorn Cloak
 					},

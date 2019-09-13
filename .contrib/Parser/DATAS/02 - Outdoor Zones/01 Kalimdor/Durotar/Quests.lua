@@ -250,6 +250,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.\n\nThis quest becomes unavailable after completing \"Ulag the Cleaver\" in Silverpine Forest.",
 				}),
 				q(817, {	-- Practical Prey
 					["qg"] = 3194,	-- Vel'rin Fang
@@ -294,6 +295,7 @@ _.Zones =
 					["qg"] = 3293,	-- Rezlak
 					["sourceQuest"] = 834,	-- Winds in the Desert
 					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,
 					["lvl"] = 7,
 					["g"] = {
 						i(4932),	-- Harpy Wing Clipper
@@ -399,11 +401,17 @@ _.Zones =
 					["lvl"] = 3,
 				}),
 				q(1505, {	-- Veteran Uzzek
-					["qg"] = 3170,	-- Tarshaw Jaggedscar
+					["qgs"] = {
+						3170,	-- Tarshaw Jaggedscar
+						3354,	-- Sorek
+						3063,	-- Krang Stonehoof
+					},
 					["coord"] = { 54.18, 42.47, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+					["description"] = "This quest becomes unavailable after completing \"Ulag the Cleaver\" in Tirisfal Glades.",
+
 				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
@@ -430,6 +438,7 @@ _.Zones =
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
 					["coord"] = { 46.38, 22.94, DUROTAR },
+					--["races"] = ALL_RACES,
 					["lvl"] = 7,
 				}),
 				q(4641, {	-- Your Place In The World

@@ -234,6 +234,7 @@ _.Zones =
 				}),
 				q(3182, {	-- Proof of Deed
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(309, {	-- Protecting the Shipment
 					["lvl"] = 10,
