@@ -2398,8 +2398,8 @@ local function AttachTooltip(self)
 					-- Yes.
 					target = UnitGUID(target);
 					if target then
-						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",target);
-						-- print(target, type, npc_id);
+						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",target);
+						-- print(target, type, npcID);
 						if type == "Player" then
 							if target == "Player-4372-0000390A" then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
@@ -2418,8 +2418,8 @@ local function AttachTooltip(self)
 								end
 							end
 						elseif type == "Creature" or type == "Vehicle" then
-							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npc_id)); end
-							AttachTooltipSearchResults(self, "creatureID:" .. npc_id, SearchForField, "creatureID", tonumber(npc_id));
+							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
+							AttachTooltipSearchResults(self, "creatureID:" .. npcID, SearchForField, "creatureID", tonumber(npcID));
 						end
 						return true;
 					end
@@ -3039,18 +3039,20 @@ app.CacheFlightPathData = function()
 		end
 	end
 end
-app.events.TAXIMAP_OPENED = function()
-	local flightMaps, knownNodeIDs = {}, {};
+app.CacheFlightPathDataForMap = function(mapID, nodes)
+	local count = 0;
+	local temp = {};
 	for nodeID,node in ipairs(app.FlightPathDB) do
-		if node.mapID == app.CurrentMapID and not node.u then
+		if node.mapID == mapID and not node.u then
 			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
-				tinsert(flightMaps, nodeID);
+				temp[nodeID] = true;
+				count = count + 1;
 			end
 		end
 	end
-	local count = #flightMaps;
 	if count > 0 then
 		if count > 1 then
+			count = 0;
 			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
 			if pos then
 				local px, py = pos:GetXY();
@@ -3058,30 +3060,89 @@ app.events.TAXIMAP_OPENED = function()
 				py = py * 100;
 				
 				-- Select the best flight path node.
-				for i,id in ipairs(flightMaps) do
-					local node = app.FlightPathDB[id];
-					if node and node.coord then
+				for nodeID,_ in pairs(temp) do
+					local node = app.FlightPathDB[nodeID];
+					if node.coord then
 						-- Allow for a little bit of leeway.
 						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
-							tinsert(knownNodeIDs, id);
+							nodes[nodeID] = true;
 						end
 					end
 				end
 			end
 		else
-			tinsert(knownNodeIDs, flightMaps[1]);
+			for nodeID,_ in pairs(temp) do
+				nodes[nodeID] = true;
+			end
 		end
 	end
-	
-	if #knownNodeIDs == 0 then
-		print("Failed to find nearest Flight Path. Please report this to the ATT Discord! MapID: ", app.CurrentMapID);
+	return count;
+end
+app.CacheFlightPathDataForTarget = function(nodes)
+	local guid = UnitGUID("npc") or UnitGUID("target");
+	if guid then
+		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+		if type == "Creature" and npcID then
+			npcID = tonumber(npcID);
+			local count = 0;
+			local searchResults = SearchForField("creatureID", npcID);
+			if searchResults and #searchResults > 0 then
+				for i,group in ipairs(searchResults) do
+					if group.flightPathID and not group.nmr and not group.nmc and not group.u then
+						nodes[group.flightPathID] = true;
+						count = count + 1;
+					end
+				end
+			end
+			return count;
+		end
+	end
+	return 0;
+end
+app.events.GOSSIP_SHOW = function()
+	local nodes = {};
+	if app.CacheFlightPathDataForTarget(nodes) > 0 then
+		if app.AccountWideFlightPaths then
+			for nodeID,_ in pairs(nodes) do
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		else
+			for nodeID,_ in pairs(nodes) do
+				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		end
+	end
+end
+app.events.TAXIMAP_OPENED = function()
+	local nodes = {};
+	if app.CacheFlightPathDataForTarget(nodes) == 0 then
+		-- Refresh the current location.
+		app.CurrentMapID = app.GetCurrentMapID();
+		if app.CacheFlightPathDataForMap(app.CurrentMapID, nodes) == 0 then
+			print("Failed to find nearest Flight Path. Please report this to the ATT Discord!");
+			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
+			if pos then
+				local px, py = pos:GetXY();
+				print(" Location: " .. (math.floor(px * 10000) * 0.01) .. ", " ..(math.floor(py * 10000) * 0.01) .. ", " .. app.CurrentMapID);
+				local target = UnitGUID("target");
+				if target then print(" Master: ", target); end
+			end
+		end
 	end
 	
 	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
 	if allNodeData then
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then
-				tinsert(knownNodeIDs, nodeData.nodeID);
+				nodes[nodeData.nodeID] = true;
 			end
 			if nodeData.name then 
 				local node = app.FlightPathDB[nodeData.nodeID];
@@ -3096,7 +3157,7 @@ app.events.TAXIMAP_OPENED = function()
 	end
 	
 	if app.AccountWideFlightPaths then
-		for i,nodeID in ipairs(knownNodeIDs) do
+		for nodeID,_ in pairs(nodes) do
 			SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
 			if not GetDataSubMember("CollectedFlightPaths", nodeID) then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
@@ -3104,7 +3165,7 @@ app.events.TAXIMAP_OPENED = function()
 			end
 		end
 	else
-		for i,nodeID in ipairs(knownNodeIDs) do
+		for nodeID,_ in pairs(nodes) do
 			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
 			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
 				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
@@ -3139,10 +3200,14 @@ app.BaseFlightPath = {
 			return t.info.qg;
 		elseif key == "mapID" then
 			return t.info.mapID;
-		elseif key == "nmr" then
-			local info = t.info;
-			if info and info.faction and info.faction > 0 then
-				return info.faction ~= app.FactionID;
+		elseif key == "races" then
+			local faction = t.info.faction;
+			if faction and faction > 0 then
+				if faction == Enum.FlightPathFaction.Horde then
+					return HORDE_ONLY;
+				else
+					return ALLIANCE_ONLY;
+				end
 			end
 		elseif key == "info" then
 			local info = app.FlightPathDB[t.flightPathID];
@@ -3153,11 +3218,17 @@ app.BaseFlightPath = {
 				return info;
 			end
 		elseif key == "description" then
-			return "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
+			local description = t.info.description;
+			if description then
+				description = description .."\n\n";
+			else
+				description = "";
+			end
+			return description .. "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
 		elseif key == "icon" then
-			local info = t.info;
-			if info and info.faction and info.faction > 0 then
-				if info.faction == Enum.FlightPathFaction.Horde then
+			local faction = t.info.faction;
+			if faction and faction > 0 then
+				if faction == Enum.FlightPathFaction.Horde then
 					return "Interface\\Addons\\ATT-Classic\\assets\\fp_horde";
 				else
 					return "Interface\\Addons\\ATT-Classic\\assets\\fp_alliance";
@@ -3166,7 +3237,7 @@ app.BaseFlightPath = {
 			return "Interface\\Addons\\ATT-Classic\\assets\\fp_neutral";
 		else
 			-- Something that isn't dynamic.
-			return table[key];
+			return rawget(t.info, key);
 		end
 	end
 };
@@ -5740,18 +5811,18 @@ app:GetWindow("Debugger", UIParent, function(self)
 			elseif e == "MERCHANT_SHOW" or e == "MERCHANT_UPDATE" then
 				C_Timer.After(0.6, function()
 					local guid = UnitGUID("npc");
-					local ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-					if guid then ty, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-					if npc_id then
-						npc_id = tonumber(npc_id);
+					local ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
+					if guid then ty, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid); end
+					if npcID then
+						npcID = tonumber(npcID);
 						
 						-- Ignore vendor mount...
-						if npc_id == 62822 then
+						if npcID == 62822 then
 							return true;
 						end
 						
 						local numItems = GetMerchantNumItems();
-						--print("MERCHANT DETAILS", ty, npc_id, numItems);
+						--print("MERCHANT DETAILS", ty, npcID, numItems);
 						
 						local rawGroups = {};
 						for i=1,numItems,1 do
@@ -5782,7 +5853,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 							end
 						end
 						
-						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npc_id };
+						local info = { [(ty == "GameObject") and "objectID" or "npcID"] = npcID };
 						info.faction = UnitFactionGroup("npc");
 						info.text = UnitName("npc");
 						info.g = rawGroups;
@@ -5792,14 +5863,14 @@ app:GetWindow("Debugger", UIParent, function(self)
 			elseif e == "GOSSIP_SHOW" then
 				local guid = UnitGUID("npc");
 				if guid then
-					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
-					if npc_id then
-						npc_id = tonumber(npc_id);
-						--print("GOSSIP_SHOW", type, npc_id);
+					local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+					if npcID then
+						npcID = tonumber(npcID);
+						--print("GOSSIP_SHOW", type, npcID);
 						if type == "GameObject" then
-							info = { ["objectID"] = npc_id, ["text"] = UnitName("npc") };
+							info = { ["objectID"] = npcID, ["text"] = UnitName("npc") };
 						else
-							info = { ["npcID"] = npc_id };
+							info = { ["npcID"] = npcID };
 							info.name = UnitName("npc");
 						end
 						info.faction = UnitFactionGroup("npc");
@@ -5816,9 +5887,9 @@ app:GetWindow("Debugger", UIParent, function(self)
 					npc = "npc";
 					guid = UnitGUID(npc);
 				end
-				local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid;
-				if guid then type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid); end
-				-- print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npc_id);
+				local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid;
+				if guid then type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid); end
+				-- print("QUEST_DETAIL", questStartItemID, " => Quest #", questID, type, npcID);
 				
 				local rawGroups = {};
 				for i=1,GetNumQuestRewards(),1 do
@@ -5842,12 +5913,12 @@ app:GetWindow("Debugger", UIParent, function(self)
 				
 				local info = { ["questID"] = questID, ["description"] = GetQuestText(), ["objectives"] = GetObjectiveText(), ["g"] = rawGroups };
 				if questStartItemID and questStartItemID > 0 then info.itemID = questStartItemID; end
-				if npc_id then
-					npc_id = tonumber(npc_id);
+				if npcID then
+					npcID = tonumber(npcID);
 					if type == "GameObject" then
-						info = { ["objectID"] = npc_id, ["text"] = UnitName(npc), ["g"] = { info } };
+						info = { ["objectID"] = npcID, ["text"] = UnitName(npc), ["g"] = { info } };
 					else
-						info.qgs = {npc_id};
+						info.qgs = {npcID};
 						info.name = UnitName(npc);
 					end
 					info.faction = UnitFactionGroup(npc);
