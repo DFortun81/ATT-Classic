@@ -339,7 +339,9 @@ select(2, ...).FlightPathDB = {
 	[66] = {
 		name="Chillwind Camp, Western Plaguelands",
 		faction=2,
-		mapID=1422,
+		mapID=1422,		
+		coord={ 42.95, 84.94, 1422 },
+		qg=12596  -- Bibilfaz Featherwhistle <Gryphon Master>
 	},
 	[67] = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
