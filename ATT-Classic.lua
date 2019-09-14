@@ -6670,12 +6670,17 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:SetMovable(false);
 		self:SetUserPlaced(false);
 		self:SetClampedToScreen(false);
+		self:RegisterEvent("CRAFT_SHOW");
+		self:RegisterEvent("CRAFT_UPDATE");
+		self:RegisterEvent("CRAFT_CLOSE");
 		self:RegisterEvent("TRADE_SKILL_SHOW");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
+		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
 		self.wait = 5;
-		self.data = {
+		self.cache = {};
+		self.header = {
 			['text'] = "Profession List",
 			['icon'] = "Interface\\Icons\\INV_Scroll_04", 
 			["description"] = "Open your professions to cache them.",
@@ -6685,27 +6690,77 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			['back'] = 1,
 			['g'] = { },
 		};
+		self.data = self.header;
 		self.CacheRecipes = function(self)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
 			if skillCache then
-				local tradeSkillID = app.SpellNameToSpellID[GetTradeSkillLine()];
-				if not tradeSkillID then
-					app.print("Could not find spellID for", GetTradeSkillLine(), GetLocale(), "! Please report this to the ATT Discord!");
-					return;
-				elseif tradeSkillID == 2656 then	-- Smelting, point this to Mining.
-					tradeSkillID = 2575;
+				-- Cache learned recipes and reagents
+				local reagentCache = app.GetDataMember("Reagents", {});
+				local learned = 0;
+				
+				-- Crafting Skills (Enchanting Only?)
+				local craftSkillName, craftSkillID, tradeSkillID, tradeSkillName = GetCraftName(), 0, 0, GetTradeSkillLine();
+				if craftSkillName ~= UNKNOWN and craftSkillName ~= "UNKNOWN" and craftSkillName ~= tradeSkillName and CraftFrame and CraftFrame:IsVisible() then	-- For some reason, "Craft" and "Tradeskill" is the same sometimes. But that's not correct!
+					craftSkillID = app.SpellNameToSpellID[craftSkillName] or 0;
+					if craftSkillID == 0 then
+						app.print("Could not find spellID for", craftSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+					end
+					
+					local numberOfCrafts = GetNumCrafts();
+					for craftIndex = 1,numberOfCrafts do
+						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
+						if craftType ~= "header" then
+							local spellID = app.SpellNameToSpellID[craftName];
+							if spellID then
+								SetTempDataSubMember("CollectedSpells", spellID, 1);
+								if not GetDataSubMember("CollectedSpells", spellID) then
+									SetDataSubMember("CollectedSpells", spellID, 1);
+									learned = learned + 1;
+								end
+								if not skillCache[spellID] then
+									app.print("Missing " .. craftName .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
+									skillCache[spellID] = { {} };
+								end
+							else
+								app.print("Missing " .. craftName .. " spellID in ATT Database. Please report it!");
+							end
+							--local itemLink, craftedItemID = GetTradeSkillItemLink(craftIndex);
+							--if itemLink then craftedItemID = GetItemInfoInstant(itemLink); end
+							
+							-- Cache the Reagents used to make this item.
+							for i=1,GetCraftNumReagents(craftIndex) do
+								local name, texturePath, reagentCount = GetCraftReagentInfo(craftIndex, i);
+								local itemID = GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
+								
+								-- Make sure a cache table exists for this item.
+								-- Index 1: The Recipe Skill IDs
+								-- Index 2: The Crafted Item IDs
+								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
+								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+							end
+						end
+					end
+				else
+					craftSkillID = 0;
 				end
 				
-				-- Cache learned recipes
-				local learned = 0;
-				local numTradeSkills = GetNumTradeSkills();
-				local reagentCache = app.GetDataMember("Reagents", {});
-				for skillIndex = 1,numTradeSkills do
-					local skillName, skillType, numAvailable, isExpanded, altVerb, numSkillUps, indentLevel, showProgressBar, currentRank, maxRank, startingRank = GetTradeSkillInfo(skillIndex);
-					if skillType ~= "header" then
-						local itemLink = GetTradeSkillItemLink(skillIndex);
-						if itemLink then
+				-- Trade Skills (Non-Enchanting)
+				if tradeSkillName ~= UNKNOWN and tradeSkillName ~= "UNKNOWN" then
+					tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
+					if tradeSkillID == 0 then
+						app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+					elseif tradeSkillID == 2656 then	-- Smelting, point this to Mining.
+						tradeSkillID = 2575;
+					end
+					
+					local numTradeSkills = GetNumTradeSkills();
+					for skillIndex = 1,numTradeSkills do
+						local skillName, skillType, numAvailable, isExpanded, altVerb, numSkillUps, indentLevel, showProgressBar, currentRank, maxRank, startingRank = GetTradeSkillInfo(skillIndex);
+						if skillType ~= "header" then
+							local itemLink, craftedItemID = GetTradeSkillItemLink(skillIndex);
+							if itemLink then craftedItemID = GetItemInfoInstant(itemLink); end
 							local spellID = app.SpellNameToSpellID[skillName];
 							if spellID then
 								SetTempDataSubMember("CollectedSpells", spellID, 1);
@@ -6714,15 +6769,14 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 									learned = learned + 1;
 								end
 								if not skillCache[spellID] then
-									app.print("Missing " .. (itemLink or "[??]") .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
+									app.print("Missing " .. (skillName or "[??]") .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
 									skillCache[spellID] = { {} };
 								end
 							else
-								app.print("Missing " .. (itemLink or "[??]") .. " spellID in ATT Database. Please report it!");
+								app.print("Missing " .. (skillName or "[??]") .. " spellID in ATT Database. Please report it!");
 							end
 							
 							-- Cache the Reagents used to make this item.
-							local craftedItemID = GetItemInfoInstant(itemLink);
 							for i=1,GetTradeSkillNumReagents(skillIndex) do
 								local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
 								local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
@@ -6736,27 +6790,42 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 					end
+				else
+					tradeSkillID = 0;
 				end
 				
 				-- Open the Tradeskill list for this Profession
-				if self.tradeSkillID ~= tradeSkillID and app.Categories.Professions then
-					self.tradeSkillID = tradeSkillID;
+				if app.Categories.Professions then
+					local g = {};
 					for i,group in ipairs(app.Categories.Professions) do
-						if group.spellID == tradeSkillID then
-							self.data = CloneData(group);
-							self.data.indent = 0;
-							self.data.visible = true;
-							BuildGroups(self.data, self.data.g);
-							app.UpdateGroups(self.data, self.data.g);
-							if not self.data.expanded then
-								self.data.expanded = true;
-								ExpandGroupsRecursively(self.data, true);
+						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
+							local cache = self.cache[group.spellID];
+							if not cache then
+								cache = CloneData(group);
+								self.cache[group.spellID] = cache;
 							end
-							if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
-								self:SetVisible(true);
-							end
-							break;
+							table.insert(g, cache);
 						end
+					end
+					if #g > 0 then
+						if #g == 1 then
+							self.data = g[1];
+						else
+							self.data = self.header;
+							self.data.g = g;
+							for i,entry in ipairs(g) do
+								entry.indent = nil;
+							end
+						end
+						self.data.indent = 0;
+						self.data.visible = true;
+						BuildGroups(self.data, self.data.g);
+						app.UpdateGroups(self.data, self.data.g);
+						if not self.data.expanded then
+							self.data.expanded = true;
+							ExpandGroupsRecursively(self.data, true);
+						end
+						self:Update();
 					end
 				end
 			
@@ -6789,9 +6858,34 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				return;
 			end
 			self.TSMCraftingVisible = visible;
+			self:UpdateFrameVisibility();
+			StartCoroutine("UpdateTradeSkills", function()
+				while InCombatLockdown() do coroutine.yield(); end
+				coroutine.yield();
+				self:Update();
+			end);
+		end
+		self.UpdateDefaultFrameVisibility = function(self)
+			if CraftFrame and CraftFrame:IsVisible() then
+				-- Default Alignment on the Craft UI.
+				self:ClearAllPoints();
+				self:SetPoint("TOPLEFT", CraftFrame, "TOPRIGHT", -37, -11);
+				self:SetPoint("BOTTOMLEFT", CraftFrame, "BOTTOMRIGHT", -37, 72);
+				self:SetMovable(false);
+				return true;
+			elseif TradeSkillFrame and TradeSkillFrame:IsVisible() then
+				-- Default Alignment on the TradeSkill UI.
+				self:ClearAllPoints();
+				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", -37, -11);
+				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", -37, 72);
+				self:SetMovable(false);
+				return true;
+			end
+		end
+		self.UpdateFrameVisibility = function(self)
 			self:SetMovable(true);
 			self:ClearAllPoints();
-			if visible and self.cachedTSMFrame then
+			if self.TSMCraftingVisible and self.cachedTSMFrame then
 				if self.cachedTSMFrame.queue and self.cachedTSMFrame.queue:IsShown() then
 					self:SetPoint("TOPLEFT", self.cachedTSMFrame.queue, "TOPRIGHT", 0, 0);
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame.queue, "BOTTOMRIGHT", 0, 0);
@@ -6800,11 +6894,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					self:SetPoint("BOTTOMLEFT", self.cachedTSMFrame, "BOTTOMRIGHT", 0, 0);
 				end
 				self:SetMovable(false);
-			elseif TradeSkillFrame then
-				-- Default Alignment on the WoW UI.
-				self:SetPoint("TOPLEFT", TradeSkillFrame, "TOPRIGHT", -37, -11);
-				self:SetPoint("BOTTOMLEFT", TradeSkillFrame, "BOTTOMRIGHT", -37, 72);
-				self:SetMovable(false);
+				return true;
+			elseif self:UpdateDefaultFrameVisibility() then
+				return true;
 			else
 				self:SetMovable(false);
 				StartCoroutine("TSMWHY", function()
@@ -6815,28 +6907,23 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						self:SetTSMCraftingVisible(thing);
 					end);
 				end);
-				return;
 			end
-			StartCoroutine("UpdateTradeSkills", function()
-				while InCombatLockdown() do coroutine.yield(); end
-				coroutine.yield();
-				self:Update();
-			end);
 		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
 			if e == "TRADE_SKILL_LIST_UPDATE" then
 				self:RefreshRecipes();
 				self:Update();
-			elseif e == "TRADE_SKILL_SHOW" then
+			elseif e == "TRADE_SKILL_SHOW" or e == "CRAFT_SHOW" then
 				if self.TSMCraftingVisible == nil then
 					self:SetTSMCraftingVisible(false);
 				end
+				self:UpdateFrameVisibility();
 				if app.Settings:GetTooltipSetting("Auto:ProfessionList") then
 					self:SetVisible(true);
 				end
 				self:RefreshRecipes();
-			elseif e == "NEW_RECIPE_LEARNED" then
+			elseif e == "NEW_RECIPE_LEARNED" or e == "LEARNED_SPELL_IN_TAB" then
 				local spellID = ...;
 				if spellID then
 					local previousState = GetDataSubMember("CollectedSpells", spellID);
@@ -6850,8 +6937,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						wipe(searchCache);
 					end
 				end
-			elseif e == "TRADE_SKILL_CLOSE" then
-				self:SetVisible(false);
+			elseif e == "TRADE_SKILL_CLOSE" or e == "CRAFT_CLOSE" then
+				self:RefreshRecipes();
+				self:Update();
+				if not self:UpdateFrameVisibility() then
+					self:SetVisible(false);
+				end
 			end
 		end);
 		return;
