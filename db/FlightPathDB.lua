@@ -61,12 +61,15 @@ select(2, ...).FlightPathDB = {
 		name="The Sepulcher, Silverpine Forest",
 		faction=1,
 		mapID=1421,
-		coord={ 45.61, 42.60, 1421 },
+		coord={ 45.6, 42.6, 1421 },
+		qg=2226,	-- Karos Razok <Bat Handler>
 	},
 	[11] = {
 		name="Undercity, Tirisfal",
 		faction=1,
 		mapID=1458,
+		coord={ 63.6, 48.6, 1458 },
+		qg=4551,	-- Michael Garrett <Bat Handler>
 	},
 	[12] = {
 		name="Darkshire, Duskwood",
@@ -79,6 +82,8 @@ select(2, ...).FlightPathDB = {
 		name="Tarren Mill, Hillsbrad",
 		faction=1,
 		mapID=1424,
+		coord={ 60.2, 18.6, 1424 },
+		qg=2389,	-- Zarise <Bat Handler>
 	},
 	[14] = {
 		name="Southshore, Hillsbrad",
@@ -88,9 +93,10 @@ select(2, ...).FlightPathDB = {
 		qg=2432,	-- Darla Harris <Gryphon Master>
 	},
 	[15] = {
-		name="Eastern Plaguelands",
+		name="Eastern Plaguelands",	-- The Unused Portal in the north of the zone.
 		faction=0,
 		mapID=1423,
+		u=1
 	},
 	[16] = {
 		name="Refuge Pointe, Arathi",
@@ -103,11 +109,15 @@ select(2, ...).FlightPathDB = {
 		name="Hammerfall, Arathi",
 		faction=1,
 		mapID=1417,
+		coord={ 73.0, 32.6, 1417 },
+		qg=2851,	-- Urda <Wind Rider Master>
 	},
 	[18] = {
 		name="Booty Bay, Stranglethorn",
 		faction=1,
 		mapID=1434,
+		coord={ 26.8, 77.0, 1434 },
+		qg=2858,	-- Gringer <Wind Rider Master>
 	},
 	[19] = {
 		name="Booty Bay, Stranglethorn",
@@ -120,21 +130,29 @@ select(2, ...).FlightPathDB = {
 		name="Grom'gol, Stranglethorn",
 		faction=1,
 		mapID=1434,
+		coord={ 32.6, 29.2, 1434},
+		qg=1387,	-- Thysta <Wind Rider Master>
 	},
 	[21] = {
 		name="Kargath, Badlands",
 		faction=1,
 		mapID=1418,
+		coord={ 4.0, 44.8, 1418},
+		qg=2861,	-- Gorrik <Wind Rider Master>
 	},
 	[22] = {
 		name="Thunder Bluff, Mulgore",
 		faction=1,
 		mapID=1456,
+		coord={46.8, 50.0, 1456},
+		qg=2995,	-- Tal <Wind Rider Master>
 	},
 	[23] = {
 		name="Orgrimmar, Durotar",
 		faction=1,
 		mapID=1454,
+		coord={ 45.2, 63.8, 1454 },
+		qg=3310,	-- Doras <Wind Rider Master>
 	},
 	[24] = {
 		name="Generic, World target for Zeppelin Paths",
@@ -145,7 +163,8 @@ select(2, ...).FlightPathDB = {
 		name="Crossroads, The Barrens",
 		faction=1,
 		mapID=1413,
-		coord={ 51.50, 30.34, 1413 },
+		coord={ 51.4, 30.2, 1413 },
+		qg=3615,	-- Devrak <Wind Rider Master>
 	},
 	[26] = {
 		name="Auberdine, Darkshore",
@@ -172,13 +191,15 @@ select(2, ...).FlightPathDB = {
 		name="Sun Rock Retreat, Stonetalon Mountains",
 		faction=1,
 		mapID=1442,
-		coord={ 45.13, 59.85, 1442 },
+		coord={ 45.2, 59.8, 1442 },
+		qg=4312,	-- Tharm <Wind Rider Master>
 	},
 	[30] = {
 		name="Freewind Post, Thousand Needles",
 		faction=1,
 		mapID=1441,
-		coord={ 45.14, 49.10, 1441 }
+		coord={ 45.0, 49.2, 1441 },
+		qg=4317,	-- Nyse <Wind Rider Master>
 	},
 	[31] = {
 		name="Thalanaar, Feralas",
@@ -227,6 +248,8 @@ select(2, ...).FlightPathDB = {
 		name="Shadowprey Village, Desolace",
 		faction=1,
 		mapID=1443,
+		coord={ 21.6, 74.0, 1443 },
+		qg=6726,	-- Thalon <Wind Rider Master>
 	},
 	[39] = {
 		name="Gadgetzan, Tanaris",
@@ -267,6 +290,8 @@ select(2, ...).FlightPathDB = {
 		name="Valormok, Azshara",
 		faction=1,
 		mapID=1447,
+		coord={ 22.0, 49.6, 1447 },
+		qg=8610,	-- Kroum <Wind Rider Master>
 	},
 	[45] = {
 		name="Nethergarde Keep, Blasted Lands",
@@ -290,6 +315,8 @@ select(2, ...).FlightPathDB = {
 		name="Bloodvenom Post, Felwood",
 		faction=1,
 		mapID=1448,
+		coord={ 34.4, 53.8, 1448},
+		qg=11900,	-- Brakkar <Wind Rider Master>
 	},
 	[49] = {
 		name="Moonglade",
@@ -312,6 +339,8 @@ select(2, ...).FlightPathDB = {
 		name="Everlook, Winterspring",
 		faction=1,
 		mapID=1452,
+		coord={ 60.4, 36.4, 1452 },
+		qg=11139,	-- Yugrek <Wind Rider Master>
 	},
 	[53] = {
 		name="Everlook, Winterspring",
@@ -329,11 +358,15 @@ select(2, ...).FlightPathDB = {
 		name="Brackenwall Village, Dustwallow Marsh",
 		faction=1,
 		mapID=1445,
+		coord={ 35.6, 31.8, 1445 },
+		qg=11899,	-- Shardi <Wind Rider Master>
 	},
 	[56] = {
 		name="Stonard, Swamp of Sorrows",
 		faction=1,
 		mapID=1435,
+		coord={ 46.0, 54.6, 1435 },
+		qg=6026,	-- Breyk <Wind Rider Master>
 	},
 	[57] = {
 		name="Fishing Village, Teldrassil",
@@ -345,7 +378,8 @@ select(2, ...).FlightPathDB = {
 		name="Zoram'gar Outpost, Ashenvale",
 		faction=1,
 		mapID=1440,
-		coord={ 12.23, 33.80, 1440 },
+		coord={ 12.2, 33.8, 1440 },
+		qg=11901,	-- Andruk <Wind Rider Master>
 	},
 	[59] = {},	-- lookup function terminates when index+1 is missing
 	[60] = {},	-- lookup function terminates when index+1 is missing
@@ -353,17 +387,24 @@ select(2, ...).FlightPathDB = {
 		name="Splintertree Post, Ashenvale",
 		faction=1,
 		mapID=1440,
-		coord={ 73.19, 61.59, 1440 },
+		coord={ 73.2, 61.6, 1440 },
+		qg=12616,	-- Vhulgra <Wind Rider Master>
 	},
 	[62] = {
 		name="Nighthaven, Moonglade",
-		faction=0,
+		faction=1,
 		mapID=1450,
+		coord={ 44.4, 45.6, 1450 },
+		qg=11798,	-- Bunthen Plainswind <Thunder Bluff Flight Master>
+		c={11},
 	},
 	[63] = {
 		name="Nighthaven, Moonglade",
-		faction=0,
+		faction=2,
 		mapID=1450,
+		coord={ 44.2, 45.2, 1450 },
+		qg=11800,	-- Silva Fil'naveth <Darnassus Flight Master>
+		c={11},
 	},
 	[64] = {
 		name="Talrendis Point, Azshara",
@@ -390,6 +431,8 @@ select(2, ...).FlightPathDB = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
 		faction=1,
 		mapID=1423,
+		coord={ 80.2, 57.0, 1423 },
+		qg=12636,	-- Georgia <Bat Handler>
 	},
 	[68] = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
@@ -400,13 +443,17 @@ select(2, ...).FlightPathDB = {
 	},
 	[69] = {
 		name="Moonglade",
-		faction=0,
+		faction=1,
 		mapID=1450,
+		coord={ 32.2, 66.6, 1450 },
+		qg=12740,	-- Faustron <Wind Rider Master>
 	},
 	[70] = {
 		name="Flame Crest, Burning Steppes",
-		faction=0,
+		faction=1,
 		mapID=1428,
+		coord={ 65.6, 24.2, 1428},
+		qg=13177,	-- Vahgruk <Wind Rider Master>
 	},
 	[71] = {
 		name="Morgan's Vigil, Burning Steppes",
@@ -419,6 +466,8 @@ select(2, ...).FlightPathDB = {
 		name="Cenarion Hold, Silithus",
 		faction=1,
 		mapID=1451,
+		coord={ 48.8, 36.6, 1451 },
+		qg=15178,	-- Runk Windtamer <Wind Rider Master>
 	},
 	[73] = {
 		name="Cenarion Hold, Silithus",
@@ -431,6 +480,8 @@ select(2, ...).FlightPathDB = {
 		name="Thorium Point, Searing Gorge",
 		faction=1,
 		mapID=1427,
+		coord={ 34.8, 30.6, 1427},
+		qg=3305,	-- Grisha <Wind Rider Master>
 	},
 	[75] = {
 		name="Thorium Point, Searing Gorge",
@@ -443,12 +494,15 @@ select(2, ...).FlightPathDB = {
 		name="Revantusk Village, The Hinterlands",
 		faction=1,
 		mapID=1425,
+		coord={ 81.6, 81.8, 1425 },
+		qg=4314,	-- Gorkas <Wind Rider Master>
 	},
 	[77] = {
 		name="Camp Taurajo, The Barrens",
 		faction=1,
 		mapID=1413,
-		coord={ 44.45, 59.15, 1413 },
+		coord={ 44.4, 59.0, 1413 },
+		qg=10378,	-- Omusa Thunderhorn <Wind Rider Master>
 	},
 	[78] = {
 		name="Naxxramas",
@@ -459,12 +513,15 @@ select(2, ...).FlightPathDB = {
 		name="Marshal's Refuge, Un'Goro Crater",
 		faction=0,
 		mapID=1449,
+		coord={ 45.2, 5.8, 1449 },
+		qg=10583,	-- Gryfe <Flight Master>
 	},
 	[80] = {
 		name="Ratchet, The Barrens",
 		faction=0,
 		mapID=1413,
-		coord={ 63.09, 37.16, 1413 },
+		coord={ 63.0, 37.0, 1413 },
+		qg=16227,	-- Bragok <Flight Master>
 	},
 	[81] = {},	-- lookup function terminates when index+1 is missing
 	[82] = {},	-- lookup function terminates when index+1 is missing
