@@ -3196,8 +3196,9 @@ app.BaseFlightPath = {
 			return t.info.u;
 		elseif key == "coord" then
 			return t.info.coord;
-		elseif key == "qg" then
-			return t.info.qg;
+		elseif key == "crs" then
+			local qg = t.info.qg;
+			if qg then return { qg }; end
 		elseif key == "mapID" then
 			return t.info.mapID;
 		elseif key == "races" then

@@ -216,6 +216,7 @@ app.L = {
 		[-19] = "Interface\\Icons\\achievement_scenario_arenaofannihilation", 				-- Arena of Annihilation
 		-- [-20] = "Silithid Royalty",														-- Silithid Royalty
 		-- [-21] = "The Twin Emperors",														-- The Twin Emperors
+		-- [-22] = "Atal'ai Defenders",														-- Atal'ai Defenders
 		[-25] = "Interface\\Icons\\Tracking_WildPet", 										-- Pet Battles
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 									-- Drop
 		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 										-- Raid Finder Bag
@@ -624,6 +625,7 @@ app.L = {
 		[-19] = DUNGEON_FLOOR_PROVINGGROUNDS1, 									-- Arena of Annihilation
 		[-20] = "Silithid Royalty",												-- Silithid Royalty
 		[-21] = "The Twin Emperors",											-- The Twin Emperors
+		[-22] = "Atal'ai Defenders",											-- Atal'ai Defenders
 		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
 		
