@@ -8,6 +8,8 @@ select(2, ...).FlightPathDB = {
 		name="Stormwind, Elwynn",
 		faction=2,
 		mapID=1453,
+		coord={ 66.2, 62.4, 1453},
+		qg=352,	-- Dungar Longdrink <Gryphon Master>
 	},
 	[3] = {
 		name="Programmer Isle",
@@ -18,32 +20,42 @@ select(2, ...).FlightPathDB = {
 		name="Sentinel Hill, Westfall",
 		faction=2,
 		mapID=1436,
+		coord={ 56.6, 52.6, 1436},
+		qg=523,	-- Thor <Gryphon Master>
 	},
 	[5] = {
 		name="Lakeshire, Redridge",
 		faction=2,
 		mapID=1433,
+		coord={ 30.6, 59.6, 1433},
+		qg=931,	-- Ariena Stormfeather <Gryphon Master>
 	},
 	[6] = {
 		name="Ironforge, Dun Morogh",
 		faction=2,
 		mapID=1455,
+		coord={ 55.6, 48.0, 1455},
+		qg=1573,	-- Gryth Thurden <Gryphon Master>
 	},
 	[7] = {
 		name="Menethil Harbor, Wetlands",
 		faction=2,
 		mapID=1437,
+		coord={ 9.6, 59.6, 1437},
+		qg=1571,	-- Shellei Brondir <Gryphon Master>
 	},
 	[8] = {
 		name="Thelsamar, Loch Modan",
 		faction=2,
 		mapID=1432,
+		coord={ 33.8, 50.8, 1432},
+		qg=1572,	-- Thorgrum Borrelson <Gryphon Master>
 	},
 	[9] = {
 		name="Booty Bay, Stranglethorn",
 		faction=0,
 		mapID=1434,
-		coord={ 27.5, 77.8, 1434 },
+		u=1
 	},
 	[10] = {
 		name="The Sepulcher, Silverpine Forest",
@@ -60,6 +72,8 @@ select(2, ...).FlightPathDB = {
 		name="Darkshire, Duskwood",
 		faction=2,
 		mapID=1431,
+		coord={ 77.6, 44.4, 1431},
+		qg=2409,	-- Felicia Maline <Gryphon Master>
 	},
 	[13] = {
 		name="Tarren Mill, Hillsbrad",
@@ -70,6 +84,8 @@ select(2, ...).FlightPathDB = {
 		name="Southshore, Hillsbrad",
 		faction=2,
 		mapID=1424,
+		coord={ 49.4, 52.4, 1424},
+		qg=2432,	-- Darla Harris <Gryphon Master>
 	},
 	[15] = {
 		name="Eastern Plaguelands",
@@ -80,6 +96,8 @@ select(2, ...).FlightPathDB = {
 		name="Refuge Pointe, Arathi",
 		faction=2,
 		mapID=1417,
+		coord={ 45.8, 46.2, 1417},
+		qg=2835,	-- Cedrik Prose <Gryphon Master>
 	},
 	[17] = {
 		name="Hammerfall, Arathi",
@@ -88,15 +106,15 @@ select(2, ...).FlightPathDB = {
 	},
 	[18] = {
 		name="Booty Bay, Stranglethorn",
-		faction=0,
+		faction=1,
 		mapID=1434,
-		coord={ 27.5, 77.8, 1434 },
 	},
 	[19] = {
 		name="Booty Bay, Stranglethorn",
-		faction=0,
+		faction=2,
 		mapID=1434,
-		coord={ 27.5, 77.8, 1434 },
+		coord={ 27.4, 77.6, 1434 },
+		qg=2859,	-- Gyll <Gryphon Master>
 	},
 	[20] = {
 		name="Grom'gol, Stranglethorn",
@@ -133,6 +151,8 @@ select(2, ...).FlightPathDB = {
 		name="Auberdine, Darkshore",
 		faction=2,
 		mapID=1439,
+		coord={ 36.4, 45.6, 1439 },
+		qg=3841,	-- Caylais Moonfeather <Hippogryph Master>
 	},
 	[27] = {
 		name="Rut'theran Village, Teldrassil",
@@ -145,6 +165,8 @@ select(2, ...).FlightPathDB = {
 		name="Astranaar, Ashenvale",
 		faction=2,
 		mapID=1440,
+		coord={ 34.4, 48.0, 1440},
+		qg=4267,	-- Daelyshia <Hippogryph Master>
 	},
 	[29] = {
 		name="Sun Rock Retreat, Stonetalon Mountains",
@@ -169,11 +191,15 @@ select(2, ...).FlightPathDB = {
 		name="Theramore, Dustwallow Marsh",
 		faction=2,
 		mapID=1445,
+		coord={ 67.4, 51.2, 1445},
+		qg=4321,	-- Baldruc <Gryphon Master>
 	},
 	[33] = {
 		name="Stonetalon Peak, Stonetalon Mountains",
 		faction=2,
 		mapID=1442,
+		coord={ 36.4, 7.2, 1442 },
+		qg=4407,	-- Teloren <Hippogryph Master>
 	},
 	[34] = {
 		name="Transport, Booty Bay - Ratchet",
@@ -194,6 +220,8 @@ select(2, ...).FlightPathDB = {
 		name="Nijel's Point, Desolace",
 		faction=2,
 		mapID=1443,
+		coord={ 64.6, 10.4, 1443},
+		qg=6706,	-- Baritanas Skyriver <Hippogryph Master>
 	},
 	[38] = {
 		name="Shadowprey Village, Desolace",
@@ -232,6 +260,8 @@ select(2, ...).FlightPathDB = {
 		name="Aerie Peak, The Hinterlands",
 		faction=2,
 		mapID=1425,
+		coord={ 11.0, 46.0, 1425},
+		qg=8018,	-- Guthrum Thunderfist <Gryphon Master>
 	},
 	[44] = {
 		name="Valormok, Azshara",
@@ -242,6 +272,8 @@ select(2, ...).FlightPathDB = {
 		name="Nethergarde Keep, Blasted Lands",
 		faction=2,
 		mapID=1419,
+		coord={ 65.6, 24.4, 1419},
+		qg=8609,	-- Alexandra Constantine <Gryphon Master>
 	},
 	[46] = {
 		name="Southshore Ferry, Hillsbrad",
@@ -261,8 +293,10 @@ select(2, ...).FlightPathDB = {
 	},
 	[49] = {
 		name="Moonglade",
-		faction=0,
+		faction=2,
 		mapID=1450,
+		coord={ 48.0, 67.2, 1450 },
+		qg=10897,	-- Sindrayl <Hippogryph Master>
 	},
 	[50] = {
 		name="Transport, Menethil Ships",
@@ -276,13 +310,15 @@ select(2, ...).FlightPathDB = {
 	},
 	[52] = {
 		name="Everlook, Winterspring",
-		faction=0,
+		faction=1,
 		mapID=1452,
 	},
 	[53] = {
 		name="Everlook, Winterspring",
-		faction=0,
+		faction=2,
 		mapID=1452,
+		coord={ 62.2, 36.6, 1452 },
+		qg=11138,	-- Maethrya <Hippogryph Master>
 	},
 	[54] = {
 		name="Transport, Feathermoon - Feralas",
@@ -331,30 +367,36 @@ select(2, ...).FlightPathDB = {
 	},
 	[64] = {
 		name="Talrendis Point, Azshara",
-		faction=1,
+		faction=2,
 		mapID=1447,
+		coord={ 11.8, 77.6, 1447 },
+		qg=12577,	-- Jarrodenus <Hippogryph Master>
 	},
 	[65] = {
 		name="Talonbranch Glade, Felwood",
 		faction=0,
 		mapID=1448,
+		coord={ 62.6, 24.2, 1448},
+		qg=12578,	-- Mishellena <Hippogryph Master>
 	},
 	[66] = {
 		name="Chillwind Camp, Western Plaguelands",
 		faction=2,
 		mapID=1422,		
-		coord={ 42.95, 84.94, 1422 },
+		coord={ 43.0, 85.0, 1422 },
 		qg=12596  -- Bibilfaz Featherwhistle <Gryphon Master>
 	},
 	[67] = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
-		faction=0,
+		faction=1,
 		mapID=1423,
 	},
 	[68] = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
-		faction=0,
+		faction=2,
 		mapID=1423,
+		coord={ 81.6, 59.2, 1423},
+		qg=12617,	-- Khaelyn Steelwing <Gryphon Master>
 	},
 	[69] = {
 		name="Moonglade",
@@ -368,28 +410,34 @@ select(2, ...).FlightPathDB = {
 	},
 	[71] = {
 		name="Morgan's Vigil, Burning Steppes",
-		faction=0,
+		faction=2,
 		mapID=1428,
+		coord={ 84.4, 68.2, 1428},
+		qg=2299,	-- Borgus Stoutarm <Gryphon Master>
 	},
 	[72] = {
 		name="Cenarion Hold, Silithus",
-		faction=0,
+		faction=1,
 		mapID=1451,
 	},
 	[73] = {
 		name="Cenarion Hold, Silithus",
-		faction=0,
+		faction=2,
 		mapID=1451,
+		coord={ 50.6, 34.4, 1451},
+		qg=15177,	-- Cloud Skydancer <Hippogryph Master>
 	},
 	[74] = {
 		name="Thorium Point, Searing Gorge",
-		faction=0,
+		faction=1,
 		mapID=1427,
 	},
 	[75] = {
 		name="Thorium Point, Searing Gorge",
-		faction=0,
+		faction=2,
 		mapID=1427,
+		coord={ 37.8, 30.6, 1427},
+		qg=2941,	-- Lanie Reed <Gryphon Master>
 	},
 	[76] = {
 		name="Revantusk Village, The Hinterlands",
@@ -425,20 +473,28 @@ select(2, ...).FlightPathDB = {
 		name="Plaguewood Tower, Eastern Plaguelands",
 		faction=0,
 		mapID=1423,
+		qg=17209,	-- William Kielar <Spectral Gryphon Master>
+		description="Your faction must capture all of the Towers to utilize this one-way flight point to any of the other towers.",
 	},
 	[85] = {
 		name="Northpass Tower, Eastern Plaguelands",
 		faction=0,
 		mapID=1423,
+		qg=17209,	-- William Kielar <Spectral Gryphon Master>
+		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
 	},
 	[86] = {
 		name="Eastwall Tower, Eastern Plaguelands",
 		faction=0,
 		mapID=1423,
+		qg=17209,	-- William Kielar <Spectral Gryphon Master>
+		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
 	},
 	[87] = {
 		name="Crown Guard Tower, Eastern Plaguelands",
 		faction=0,
 		mapID=1423,
+		qg=17209,	-- William Kielar <Spectral Gryphon Master>
+		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
 	},
 };
