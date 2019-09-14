@@ -138,6 +138,8 @@ select(2, ...).FlightPathDB = {
 		name="Rut'theran Village, Teldrassil",
 		faction=2,
 		mapID=1438,
+		coord={ 58.4, 94.0, 1438 },
+		qg=3838,	-- Vesprystus <Hippogryph Master>
 	},
 	[28] = {
 		name="Astranaar, Ashenvale",
@@ -301,6 +303,7 @@ select(2, ...).FlightPathDB = {
 		name="Fishing Village, Teldrassil",
 		faction=2,
 		mapID=1438,
+		u=1
 	},
 	[58] = {
 		name="Zoram'gar Outpost, Ashenvale",
