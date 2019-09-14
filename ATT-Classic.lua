@@ -3204,10 +3204,15 @@ app.BaseFlightPath = {
 			local faction = t.info.faction;
 			if faction and faction > 0 then
 				if faction == Enum.FlightPathFaction.Horde then
-					return HORDE_ONLY;
+					return {2,5,6,8};
 				else
-					return ALLIANCE_ONLY;
+					return {1,3,4,7};
 				end
+			end
+		elseif key == "nmr" then
+			local faction = t.info.faction;
+			if faction and faction > 0 then
+				return faction ~= app.FactionID;
 			end
 		elseif key == "info" then
 			local info = app.FlightPathDB[t.flightPathID];
