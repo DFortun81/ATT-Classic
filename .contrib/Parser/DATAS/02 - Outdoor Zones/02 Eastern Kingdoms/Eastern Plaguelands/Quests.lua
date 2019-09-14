@@ -348,9 +348,11 @@ _.Zones =
 				}),
 				q(5246, {	-- Fragments of the Past
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5247, {	-- Fragments of the Past
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6024, {	-- Hameya's Plea
 					["lvl"] = 54,

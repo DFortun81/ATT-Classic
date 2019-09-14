@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(3382, {	-- A Crew Under Fire
 					["lvl"] = 48,
+					["repeatable"] = true,
 				}),
 				q(7486, {	-- A Hero's Reward
 					["lvl"] = 55,
@@ -23,6 +24,7 @@ _.Zones =
 				}),
 				q(3381, {	-- A Meeting with the Master
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(6823, {	-- Agent of Hydraxis
 					["lvl"] = 55,
@@ -97,6 +99,7 @@ _.Zones =
 				}),
 				q(3421, {	-- Return Trip
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(5535, {	-- Spiritual Unrest
 					["lvl"] = 45,
