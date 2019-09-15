@@ -7,6 +7,7 @@ local L = app.L;
 
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Непроглядная Пучина"] = 221;	-- BFD
+L.ZONE_TEXT_TO_MAP_ID["Глубины Черной горы"] = 242;	-- BRD
 L.ZONE_TEXT_TO_MAP_ID["Мертвые копи"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Гномреган"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Мародон"] = 280;	-- Maraudon
