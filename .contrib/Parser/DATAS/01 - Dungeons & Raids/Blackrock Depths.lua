@@ -92,6 +92,9 @@ _.Instances = {
 				q(4295, {	-- Rocknot's Ale
 					["provider"] = { "n", 9503 },	-- Private Rocknot
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11325, 2 }	-- Dark Iron Ale Mug
+					},
 				}),
 				q(4136, {	-- Ribbly Screwspigot
 					["groups"] = {
@@ -137,6 +140,16 @@ _.Instances = {
 				}),
 			}),
 			n(0, {	-- Zone Drop
+				{
+					["itemID"] = 11468,	-- Dark Iron Fanny Pack
+					["questID"] = 4286,	-- The Good Stuff
+					["races"] = ALLIANCE_ONLY,
+				},
+				{
+					["itemID"] = 11129,	-- Essence of the Elements
+					["questID"] = 7201,	-- The Last Element
+					["races"] = HORDE_ONLY,
+				},
 				i(12546),	-- Aristocratic Cuffs
 				i(12555),	-- Battlechaser's Greaves
 				i(12552),	-- Blisterbane Wrap
@@ -145,6 +158,8 @@ _.Instances = {
 					["description"] = "This can only drop from Elites.",
 				}),
 				i(12549),	-- Braincage
+				i(18945),	-- Dark Iron Residue
+				i(22528),	-- Dark Iron Scraps
 				i(12535),	-- Doomforged Straightedge
 				i(12542),	-- Funeral Pyre Vestment
 				i(12547),	-- Mar Alom's Grip
@@ -172,6 +187,7 @@ _.Instances = {
 						10043,	-- Ribbly's Crony
 					},
 				}),
+				i(11078),	-- Relic Coffer Key
 				i(12527),	-- Ribsplitter
 				i(12550),	-- Runed Golem Shackles
 				i(16049, {  -- Schematic: Dark Iron Bomb
@@ -209,6 +225,7 @@ _.Instances = {
 				i(12528),	-- The Judge's Gavel
 			}),
 			n(9018, {	-- High Interrogator Gerstahn
+				i(11140),	-- Prison Cell Key
 				i(11625), 	-- Enthralled Sphere
 				i(11626), 	-- Blackveil Cape
 				i(11624), 	-- Kentic Amice
@@ -217,28 +234,35 @@ _.Instances = {
 			n(9025, {	-- Lord Roccor
 				i(11813),	-- Formula: Smoking Heart of the Mountain
 				i(11631), 	-- Stoneshell Guard
-				i(22234), 	-- Mantle of Lost Hope
-				i(22271), 	-- Leggings of Frenzied Magic
-				i(11679), 	-- Rubicund Armguards
 				i(11632), 	-- Earthslag Shoulders
+				i(22234), 	-- Mantle of Lost Hope
+				i(22397),	-- Idol of Ferocity
+				i(11630),	-- Rockshard Pellets
+			}),
+			n(9016, {	-- Bael'gar
+				i(11803), 	-- Force of Magma
+				i(11805), 	-- Rubidium Hammer
+				i(11807), 	-- Sash of the Burning Heart
+				i(11802), 	-- Lavacrest Leggings
 			}),
 			n(9319, {	-- Houndmaster Grebmar
 				i(11629), 	-- Houndmaster's Rifle
 				i(11628), 	-- Houndmaster's Bow
-				i(11627), 	-- Fleetfoot Greaves
 				i(11623), 	-- Spritecaster Cap
+				i(11627), 	-- Fleetfoot Greaves
 			}),
-			n(16059, { 		-- Theldren
+			n(16059, { 	-- Theldren
 				["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
 				["provider"] = { "o", 181074 },	-- Arena Spoils
 				["cost"] = {
 					{ "i", 21986, 1 },	-- Banner of Provocation
 				},
 				["groups"] = {
-					i(22305), 		-- Ironweave Mantle
-					i(22317), 		-- Lefty's Brass Knuckle
-					i(22318), 		-- Malgen's Long Bow
-					i(22330), 		-- Shroud of Arcane Mastery
+					i(22047),	-- Top Piece of Lord Valthalak's Amulet
+					i(22305), 	-- Ironweave Mantle
+					i(22317), 	-- Lefty's Brass Knuckle
+					i(22318), 	-- Malgen's Long Bow
+					i(22330), 	-- Shroud of Arcane Mastery
 				},
 			}),
 			n(10096, {	-- Ring of Law
@@ -246,25 +270,26 @@ _.Instances = {
 					["description"] = "This is one of the possible bosses for this event.",
 					["groups"] = {
 						i(11677), 	-- Graverot Cape
-						i(11675), 	-- Shadefiend Boots
-						i(11731), 	-- Savage Gladiator Greaves
 						i(11678), 	-- Carapace of Anub'shiah
+						i(11731), 	-- Savage Gladiator Greaves
+						i(11675), 	-- Shadefiend Boots
 					},
 				}),
 				n(9029, { 	-- Eviscerator
 					["description"] = "This is one of the possible bosses for this event.",
 					["groups"] = {
 						i(11685), 	-- Splinthide Shoulders
-						i(11686), 	-- Girdle of Beastial Fury
+						i(11679), 	-- Rubicund Armguards
 						i(11730), 	-- Savage Gladiator Grips
+						i(11686), 	-- Girdle of Beastial Fury
 					},
 				}),
 				n(9027, { 	-- Gorosh the Dervish
 					["description"] = "This is one of the possible bosses for this event.",
 					["groups"] = {
 						i(22266), 	-- Flarethorn
-						i(11662), 	-- Ban'thok Sash
 						i(11726), 	-- Savage Gladiatior Chain
+						i(22271), 	-- Leggings of Frenzied Magic
 						i(22257),	-- Bloodclot Band
 					},
 				}),
@@ -290,33 +315,12 @@ _.Instances = {
 				n(9030, { 	-- Ok'thor the Breaker
 					["description"] = "This is one of the possible bosses for this event.",
 					["groups"] = {
-						i(11662), 	-- Ban'thok Sash
 						i(11665), 	-- Ogreseer Fists
+						i(11662), 	-- Ban'thok Sash
 						i(11728), 	-- Savage Gladiator's Leggings
 						i(11824),	-- Cyclopean Band
 					},
 				}),
-			}),
-			n(9016, {	-- Bael'gar
-				i(11803), 	-- Force of Magma
-				i(11805), 	-- Rubidium Hammer
-				i(11807), 	-- Sash of the Burning Heart
-				i(11802), 	-- Lavacrest Leggings
-				i(22257),	-- Bloodclot Band
-			}),
-			n(9017, {	-- Lord Incendius
-				i(11766), 	-- Flameweave Cyffs
-				i(11764), 	-- Cinderhide Armsplints
-				i(11765), 	-- Pyremail Wristguards
-				i(11767), 	-- Emberplate Armguards
-				i(11768),	-- Incendic Bracers
-			}),
-			n(9056, {	-- Fineous Darkvire <Chief Architect>
-				i(11840), 	-- Master Builder's Shirt
-				i(11839), 	-- Chief Architect's Monocle
-				i(11841), 	-- Senior Designer's Pantaloons
-				i(11842), 	-- Land Surveyor's Mantle
-				i(22223), 	-- Foreman's Head Protector
 			}),
 			n(9024, {	-- Pyromancer Loregrain
 				i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
@@ -324,7 +328,33 @@ _.Instances = {
 				i(11748), 	-- Pyric Caduceus
 				i(11747), 	-- Flamestrider Robes
 				i(11749), 	-- Searingscale Leggings
-				i(22270), 	-- Entrenching Boots
+			}),
+			n(9017, {	-- Lord Incendius
+				{
+					["itemID"] = 21987,	-- Incendicite of Incendius
+					["questID"] = 8961,	-- Three Kings of Flame
+				},
+				{
+					["itemID"] = 11126,	-- Tablet of Kurniya
+					["questID"] = 3907,	-- Disharmony of Fire
+					["races"] = HORDE_ONLY,
+				},
+				i(11766), 	-- Flameweave Cuffs
+				i(11764), 	-- Cinderhide Armsplints
+				i(11765), 	-- Pyremail Wristguards
+				i(11767), 	-- Emberplate Armguards
+				i(11768),	-- Incendic Bracers
+			}),
+			n(9056, {	-- Fineous Darkvire <Chief Architect>
+				{
+					["itemID"] = 10999,	-- Ironfel
+					["questID"] = 3802,	-- Dark Iron Legacy
+				},
+				i(11840), 	-- Master Builder's Shirt
+				i(11839), 	-- Chief Architect's Monocle
+				i(22223), 	-- Foreman's Head Protector
+				i(11842), 	-- Land Surveyor's Mantle
+				i(11841), 	-- Senior Designer's Pantaloons
 			}),
 			n(9042, {	-- Verek
 				i(11755),	-- Verek's Collar
@@ -332,8 +362,8 @@ _.Instances = {
 			}),
 			n(9041, {	-- Warder Stilgiss
 				i(11784),	-- Arbiter's Blade
-				i(22241),	-- Dark Warder's Pauldrons
 				i(11782),	-- Boreal Mantle
+				i(22241),	-- Dark Warder's Pauldrons
 				i(11783),	-- Chillsteel Girdle
 			}),
 			n(9476, {	-- Watchman Doomgrip
@@ -347,10 +377,13 @@ _.Instances = {
 						["groups"] = {
 							i(11946),	-- Fire Opal Necklace
 							i(11945),	-- Dark Iron Ring
+							i(11938),	-- Sack of Gems
+							i(11966),	-- Small Sack of Coins
+							i(11937),	-- Fat Sack of Coins
 						},
 					}),
 					o(161495, {	-- Secret Safe
-						["description"] = "This lootable chest spawns after defeating Watchman Doomgrip.",
+						["description"] = "This lootable chest spawns after defeating Watchman Doomgrip. Additionally, these items can also drop directly from the boss. It can only be looted by one person each run.",
 						["groups"] = {
 							i(22256),	-- Mana Shaping Handwraps
 							i(22205), 	-- Black Steel Bindings
@@ -382,25 +415,41 @@ _.Instances = {
 				},
 			}),
 			n(9033, {	-- General Angerforge
+				{
+					["itemID"] = 11464,	-- Marshal Windsor's Lost Information
+					["questID"] = 4282,	-- A Shred of Hope
+					["races"] = ALLIANCE_ONLY,
+				},
 				i(11816), 	-- Angerforge's Battle Axe
-				i(11932), 	-- Guiding Stave of Wisdom
 				i(11817), 	-- Lord General's Sword
-				i(12557),	-- Ebonsteel Spaulders
 				i(11820), 	-- Royal Decorated Armor
 				i(11821), 	-- Warstrife Leggings
 				i(11810),	-- Force of Will
 			}),
 			n(8983, {	-- Golem Lord Argelmach
+				{
+					["itemID"] = 11268,	-- Head of Argelmach
+					["questID"] = 4063,	-- The Rise of the Machines
+					["races"] = HORDE_ONLY,
+				},
+				{
+					["itemID"] = 11465,	-- Marshal Windsor's Lost Information
+					["questID"] = 4282,	-- A Shred of Hope
+					["races"] = ALLIANCE_ONLY,
+				},
 				i(11823), 	-- Luminary Kilt
 				i(11822), 	-- Omnicast Boots
 				i(11669),	-- Naglering
 				i(11819),	-- Second Wind
-				i(21956),   -- Design: Dark Iron Scorpid
 			}),
 			n(9537, {	-- Hurley Blackbreath
 				["description"]	= "Break the 3 Thunderbrew Lager Kegs to start the event.",
 				["groups"] = {
-					i(11922), 		-- Blood-Etched Blade
+					{
+						["itemID"] = 11312,	-- Lost Thunderbrew Recipe
+						["allianceQuestID"] = 4126,	-- Hurley Blackbreath
+						["hordeQuestID"] = 4134,	-- Lost Thunderbrew Recipe
+					},
 					i(18044), 		-- Hurley's Tankard
 					i(11735), 		-- Ragefury Eyepatch
 					i(18043), 		-- Coal Miner Boots
@@ -410,6 +459,11 @@ _.Instances = {
 			n(9543, {	-- Ribbly Screwspigot
 				["description"]	= "Speak to him to start the event.",
 				["groups"] = {
+					{
+						["itemID"] = 11313,	-- Ribbly's Head
+						["questID"] = 4136,	-- Ribbly Screwspigot
+						["races"] = ALLIANCE_ONLY,
+					},
 					i(11612),	-- Plans: Dark Iron Plate
 					i(2663),	-- Ribbly's Bandolier
 					i(2662),	-- Ribbly's Quiver
@@ -420,6 +474,7 @@ _.Instances = {
 				n(-2, { 	-- Vendors
 					i(15759),	-- Pattern:	Black Dragonscale Breastplate
 					i(13483),	-- Recipe: Transmute Fire to Earth
+					i(11325),	-- Dark Iron Ale Mug
 				}),
 				i(12791), 	-- Barman Shanker
 				i(12793), 	-- Mixologist's Tunic
@@ -430,8 +485,8 @@ _.Instances = {
 				["groups"] = {
 					i(11744), 	-- Bloodfist
 					i(11743),	-- Rockfist
+					i(11746),	-- Golem Skull Helm
 					i(22212), 	-- Golem Fitted Pauldrons
-					i(22204), 	-- Wristguards of Renown
 					i(11745), 	-- Fists of Phalanx
 				},
 			}),
@@ -490,10 +545,10 @@ _.Instances = {
 			n(8923, { 	-- Panzor the Invincible
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					i(22245),	-- Soot Encrusted Footwear
-					i(11787),	-- Shalehusk Boots
 					i(11786),	-- Stone of the Earth
 					i(11785),	-- Rock Golem Bulwark
+					i(11787),	-- Shalehusk Boots
+					i(22245),	-- Soot Encrusted Footwear
 				},
 			}),
 			n(9037, {	-- Gloom'rel
@@ -518,6 +573,7 @@ _.Instances = {
 			n(9039, {	-- Doom'rel
 				["provider"] = { "o", 169243 },	-- Chest of The Seven
 				["groups"] = {
+					i(11922), 	-- Blood-Etched Blade
 					i(11921), 	-- Impervious Giant
 					i(11923), 	-- The Hammer of Grace
 					i(11920), 	-- Wraith Scythe
@@ -532,20 +588,28 @@ _.Instances = {
 				i(11935), 	-- Magmus Stone
 				i(11746), 	-- Golem Skull Helm
 				i(22275), 	-- Firemoss Boots
+				i(22400),	-- Libram of Truth
+				i(22395),	-- Totem of Rage
+			}),
+			n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge>
+				i(12557),	-- Ebonsteel Spaulders
+				i(12554), 	-- Hands of the Exalted Herald
+				i(12556), 	-- High Priestess Boots
+				i(12553), 	-- Swiftwalker Boots
 			}),
 			n(9019, {	-- Emperor Dagran Thaurissan
 				i(11931), 	-- Dreadforge Retaliatior
+				i(11932), 	-- Guiding Stave of Wisdom
 				i(11684), 	-- Ironfoe
 				i(11928), 	-- Thaurissan's Royal Scepter
 				i(11933),	-- Imperial Jewel
 				i(11930), 	-- The Emperor's New Cape
 				i(11924), 	-- Robes of the Royal Crown
-				i(12554), 	-- Hands of the Exalted Herald
+				i(22204), 	-- Wristguards of Renown
 				i(22207), 	-- Sash of the Grand Hunt
-				i(12556), 	-- High Priestess Boots
-				i(12553), 	-- Swiftwalker Boots
 				i(11934),	-- Emperor's Seal
 				i(11815),	-- Hand of Justice
+				i(12033),	-- Thaurissan Family Jewels
 			}),
 		},
 	}),
