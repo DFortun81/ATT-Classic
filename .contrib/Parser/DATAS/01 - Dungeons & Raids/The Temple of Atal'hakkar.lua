@@ -133,7 +133,7 @@ _.Instances = {
 				},
 				{
 					["questID"] = 1475,	-- Into The Temple of Atal'Hakkar
-					["sourceQuest"] = 1475,	-- Rhapsody's Tale
+					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.2, 20.8, STORMWIND },
 					["maps"] = { STORMWIND },
