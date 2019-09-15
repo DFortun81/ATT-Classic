@@ -15,6 +15,7 @@ L.ZONE_TEXT_TO_MAP_ID["Urzal dos Mortos"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Urzal dos Tuscos"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Bastilha da Presa Negra"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Monastério Escarlate"] = 435;	-- SM
+L.ZONE_TEXT_TO_MAP_ID["Templo de Atal'Hakkar"] = 220;	-- ST
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF

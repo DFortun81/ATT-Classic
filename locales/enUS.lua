@@ -1440,6 +1440,7 @@ app.L = {
 		["Scarlet Monastery"] = 435,
 		["Shadowfang Keep"] = 310,
 		["Temple of Ahn'Qiraj"] = 320,
+		["The Temple of Atal'hakkar"] = 220,
 		["The Stockade"] = 225,
 		["Uldaman"] = 230,
 		["Wailing Caverns"] = 279,

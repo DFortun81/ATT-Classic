@@ -16,6 +16,7 @@ L.ZONE_TEXT_TO_MAP_ID["Zahúrda Rojocieno"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Horado Rajacieno"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Castillo de Colmillo Oscuro"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Monasterio Escarlata"] = 435;	-- SM
+L.ZONE_TEXT_TO_MAP_ID["El Templo de Atal'Hakkar"] = 220;	-- ST
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Cuevas de los Lamentos"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF
