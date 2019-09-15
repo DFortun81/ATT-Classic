@@ -346,7 +346,6 @@ _.Zones =
 				}),
 				q(1126, {	-- Hive in the Tower
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13220,	-- Layo Starstrike
 					["g"] = {
 						i(17345),	-- Silithid Goo
@@ -645,7 +644,6 @@ _.Zones =
 				}),
 				q(1125, {	-- The Spirits of Southwind
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13220,	-- Layo Starstrike
 				}),
 				q(8279, {	-- The Twilight Lexicon
@@ -702,7 +700,6 @@ _.Zones =
 				}),
 				q(6844, {	-- Umber, Archivist
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13220,	-- Layo Starstrike
 				}),
 				q(8808, {	-- Uniform Supplies

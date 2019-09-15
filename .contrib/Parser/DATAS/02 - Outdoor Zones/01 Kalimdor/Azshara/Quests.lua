@@ -63,6 +63,11 @@ _.Zones =
 				q(6821, {	-- Eye of the Emberseer
 					["lvl"] = 55,
 				}),
+				q(9364, {	-- Fragmented Magic
+					["lvl"] = 60,
+					["classes"] = {8},	-- Mage
+					["qg"] = 8379,		-- Archmage Xylem
+				}),
 				q(6824, {	-- Hands of the Enemy
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
@@ -140,6 +145,11 @@ _.Zones =
 				}),
 				q(3565, {	-- Xylem's Payment to Jediga
 					["lvl"] = 45,
+				}),
+				q(9362, {	-- Warlord Krellian
+					["lvl"] = 60,
+					["classes"] = {8},	-- Mage
+					["qg"] = 8379,		-- Archmage Xylem
 				}),
 			}),
 		}),

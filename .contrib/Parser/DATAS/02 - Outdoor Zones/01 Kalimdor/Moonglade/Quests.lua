@@ -34,7 +34,6 @@ _.Zones =
 				}),
 				q(6845, {	-- Uncovering Past Secrets
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11939,	-- Umber
 					["g"] = {
 						i(18400),	-- Ring of Living Stone
