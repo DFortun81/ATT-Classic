@@ -92,10 +92,6 @@ _.Zones =
 					["lvl"] = 46,
 					["races"] = HORDE_ONLY,
 				}),
-				q(1444, {	-- Return to Fel'Zerul
-					["lvl"] = 38,
-					["races"] = HORDE_ONLY,
-				}),
 				q(7847, {	-- Return to Primal Torntusk
 					["lvl"] = 46,
 					["races"] = HORDE_ONLY,
@@ -174,10 +170,6 @@ _.Zones =
 				q(2989, {	-- The Altar of Zul
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(4787, {	-- The Ancient Egg
-					["lvl"] = 40,
-					["qg"] = 8579,	-- Yeh'kinya
 				}),
 				q(2992, {	-- The Divination
 					["lvl"] = 40,

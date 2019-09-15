@@ -411,10 +411,6 @@ _.Zones =
 					["lvl"] = 39,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 				}),
-				q(3444, {	-- The Stone Circle
-					["lvl"] = 46,
-					["qg"] = 7771,	-- Marvon Rivetseeker
-				}),
 				q(2954, {	-- The Stone Watcher
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,

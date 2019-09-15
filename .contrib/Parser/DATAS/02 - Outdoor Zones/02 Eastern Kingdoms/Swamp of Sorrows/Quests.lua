@@ -41,9 +41,6 @@ _.Zones =
 						i(6828),	-- Visionary Buckler
 					},
 				}),
-				q(3512, {	-- In Eranikus' Own Words
-					["lvl"] = 48,
-				}),
 				q(699, {	-- Lack of Surplus
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
@@ -76,18 +73,6 @@ _.Zones =
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["lvl"] = 29,
-				}),
-				q(1424, {	-- Pool of Tears
-					["qg"] = 1443,	-- Fel'zerul
-					["races"] = HORDE_ONLY,
-					["lvl"] = 38,
-				}),
-				q(1429, {	-- The Atal'ai Exile
-					["races"] = HORDE_ONLY,
-					["lvl"] = 38,
-				}),
-				q(3374, {	-- The Essence of Eranikus
-					["lvl"] = 48,
 				}),
 				q(1421, {	-- The Lost Caravan
 					["lvl"] = 30,

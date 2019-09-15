@@ -70,14 +70,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 				}),
-				q(1475, {	-- Into The Temple of Atal'Hakkar
-					["lvl"] = 38,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
-					["g"] = {
-						i(1490),	-- Guardian Talisman
-					},
-				}),
 			}),
 		}),
 	}),

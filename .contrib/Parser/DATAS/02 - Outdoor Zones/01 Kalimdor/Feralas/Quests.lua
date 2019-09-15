@@ -357,16 +357,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 7776,	-- Talo Thornhoof
 				}),
-				q(3445, {	-- The Sunken Temple
-					["lvl"] = 46,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7900,	-- Angelas Moonbreeze
-				}),
-				q(3380, {	-- The Sunken Temple
-					["lvl"] = 46,
-					["races"] = HORDE_ONLY,
-					["qg"] = 8115,	-- Witch Doctor Uzer'i
-				}),
 				q(4041, {	-- The Videre Elixir
 					["lvl"] = 47,
 					["g"] = {

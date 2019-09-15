@@ -975,6 +975,7 @@ app.L = {
 		[20992] = "Interface\\Icons\\inv_shield_04", 
 		[21042] = "Interface\\Icons\\inv_shield_05", 
 		[35251] = "Interface\\Icons\\Garrison_BronzeChest",
+		[37099] = "Interface\\Icons\\INV_Misc_StoneTablet_03",
 		[62483] = "Interface\\Icons\\INV_WorseRobot",
 		[112948] = "Interface\\Icons\\INV_Misc_Food_Lunchbox_Silver",
 		[113768] = "Interface\\Icons\\inv_egg_06",
@@ -984,6 +985,7 @@ app.L = {
 		[142195] = "Interface\\Icons\\INV_Misc_Map07",
 		[142343] = "Interface\\Icons\\inv_misc_platnumdisks",
 		[142487] = "Interface\\Icons\\INV_Engineering_Failure Detection Pylon",
+		[149036] = "Interface\\Icons\\INV_Box_01",
 		[156561] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
 		[160836] = "Interface\\Icons\\Battleground_Strongbox_Silver_Alliance",
 		[161495] = "Interface\\Icons\\Battleground_Strongbox_Silver_Alliance",
@@ -1102,6 +1104,7 @@ app.L = {
 		[20992] = "Black Shield",
 		[21042] = "Theramore Guard Badge", 
 		[35251] = "Karnitol's Chest",
+		[37099] = "Atal'ai Tablet",
 		[103821] = "Doan's Strongbox",
 		[112888] = "Dusty Shelf",
 		[112948] = "Intrepid's Locked Strongbox",
@@ -1124,6 +1127,7 @@ app.L = {
 		[144063] = "Equinex Monolith",
 		[148502] = "Step 1: Page 9",
 		[148504] = "A Conspicuous Gravestone",
+		[149036] = "Marvon's Chest",
 		[156561] = "Wanted Poster",
 		[160836] = "Relic Coffer",
 		[160845] = "Dark Coffer",
@@ -1452,6 +1456,7 @@ app.L = {
 	["UNOBTAINABLE_ITEM_REASONS"] = {
 		{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
 		{1, "|CFFFF0000This has been removed from the game.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
+		{1, "|CFFFF0000This is not available until a later Phase of Release in WoW Classic.|r", "Phased Releases (3)"}, -- No Hope -- 3
 	};
 
 };

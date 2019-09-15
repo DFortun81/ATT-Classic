@@ -125,9 +125,6 @@ _.Zones =
 					["lvl"] = 51,
 					["qg"] = 10302,	-- Krakle
 				}),
-				q(4143, {	-- Haze of Evil
-					["lvl"] = 47,
-				}),
 				q(3962, {	-- It's Dangerous to Go Alone
 					["lvl"] = 47,
 					["g"] = {
