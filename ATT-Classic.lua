@@ -3042,7 +3042,7 @@ end
 app.CacheFlightPathDataForMap = function(mapID, nodes)
 	local count = 0;
 	local temp = {};
-	for nodeID,node in ipairs(app.FlightPathDB) do
+	for nodeID,node in pairs(app.FlightPathDB) do
 		if node.mapID == mapID and not node.u then
 			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
 				temp[nodeID] = true;

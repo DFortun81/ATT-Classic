@@ -381,8 +381,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 12.2, 33.8, 1440 },
 		qg=11901,	-- Andruk <Wind Rider Master>
 	},
-	[59] = {},	-- lookup function terminates when index+1 is missing
-	[60] = {},	-- lookup function terminates when index+1 is missing
 	[61] = {
 		name="Splintertree Post, Ashenvale",
 		faction=1,
@@ -523,9 +521,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 63.0, 37.0, 1413 },
 		qg=16227,	-- Bragok <Flight Master>
 	},
-	[81] = {},	-- lookup function terminates when index+1 is missing
-	[82] = {},	-- lookup function terminates when index+1 is missing
-	[83] = {},	-- lookup function terminates when index+1 is missing
 	[84] = {
 		name="Plaguewood Tower, Eastern Plaguelands",
 		faction=0,
