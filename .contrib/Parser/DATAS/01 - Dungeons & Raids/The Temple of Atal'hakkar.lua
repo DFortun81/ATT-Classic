@@ -283,8 +283,8 @@ _.Instances = {
 							["itemID"] = 10556,	-- Stone Circle
 							["questID"] = 3444,	-- The Stone Circle
 							["provider"] = { "o", 149036 },	-- Marvon's Chest
-							["coord"] = { 52.6, 45.8, TANARIS },
-							["maps"] = { TANARIS },
+							["coord"] = { 62.5, 38.5, THE_BARRENS },
+							["maps"] = { THE_BARRENS },
 						},
 					},
 				},
