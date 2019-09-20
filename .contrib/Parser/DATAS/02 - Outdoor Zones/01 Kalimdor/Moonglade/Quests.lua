@@ -42,7 +42,6 @@ _.Zones =
 				}),
 				q(1185, {	-- Under the Chitin Was...
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11939,	-- Umber
 				}),
 				q(1124, {	-- Wasteland

@@ -59,6 +59,7 @@ _.Zones =
 				}),
 				q(308, {	-- Distracting Jarven
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["qg"] = 1373,	-- Jarven Thunderbrew
 				}),
 				q(179, {	-- Dwarven Outfitters
@@ -86,6 +87,7 @@ _.Zones =
 				}),
 				q(403, {	-- Guarded Thunderbrew Barrel
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
 				}),
 				q(4126, {	-- Hurley Blackbreath

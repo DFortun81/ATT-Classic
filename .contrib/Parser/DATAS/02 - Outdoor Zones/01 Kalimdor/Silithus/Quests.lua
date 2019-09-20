@@ -346,6 +346,7 @@ _.Zones =
 				}),
 				q(1126, {	-- Hive in the Tower
 					["lvl"] = 54,
+					["description"] = "You can delete the Silithid Goo from your inventory after completing the quest.",
 					["qg"] = 13220,	-- Layo Starstrike
 					["g"] = {
 						i(17345),	-- Silithid Goo

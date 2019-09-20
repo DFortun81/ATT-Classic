@@ -163,6 +163,7 @@ _.Zones =
 				}),
 				q(5250, {	-- Starfall
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6063, {	-- Taming the Beast
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
