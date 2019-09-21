@@ -95,12 +95,17 @@ _.Zones =
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
 				}),
-				q(5801, {	-- Fire Plume Forged
+				q(5801, {	-- Fire Plume Forged (A)
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5411,	-- Krinkle Goodsteel
+					["sourceQuest"] = 5538,	-- Mold Rhymes With...
 				}),
-				q(5802, {	-- Fire Plume Forged
+				q(5802, {	-- Fire Plume Forged (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["qg"] = 5411,	-- Krinkle Goodsteel
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["lvl"] = 38,

@@ -39,14 +39,16 @@ _.Zones =
 						i(3382),	-- Weak Troll's Blood Potion
 					},
 				}),
-				q(5902, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
-				}),
 				q(5901, {	-- A Plague Upon Thee
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11615,	-- Mickey Levine
+				}),
+				q(5902, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11615,	-- Mickey Levine
+					["sourceQuest"] = 5901,	-- A Plague Upon Thee
 				}),
 				q(404, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger

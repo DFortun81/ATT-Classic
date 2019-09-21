@@ -7,6 +7,7 @@ _.Zones =
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
 				q(8947, {	-- Anthion's Strange Request
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 				}),
 				q(5503, {	-- Argent Dawn Commission
@@ -24,6 +25,7 @@ _.Zones =
 					["qg"] = 10926,	-- Pamela Redpath
 				}),
 				q(9131, {	-- Binding the Dreadnaught
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16112,	-- Korfax, Champion of the Light
@@ -36,11 +38,13 @@ _.Zones =
 					["qg"] = 1855,	-- Tirion Fordring
 				}),
 				q(9665, {	-- Bolstering Our Defenses
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 17072,	-- Emmisary Gormok
 				}),
 				q(9127, {	-- Bone Fragments
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 16131,	-- Rohan the Assassin
 					["g"] = {
@@ -48,6 +52,7 @@ _.Zones =
 					},
 				}),
 				q(9126, {	-- Bonescythe Digs
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 16131,	-- Rohan the Assassin
 					["g"] = {
@@ -65,6 +70,7 @@ _.Zones =
 					},
 				}),
 				q(9129, {	-- Core of Elements
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
@@ -79,6 +85,7 @@ _.Zones =
 					},
 				}),
 				q(9142, {	-- Craftsman's Writ
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -86,6 +93,7 @@ _.Zones =
 					},
 				}),
 				q(9188, {	-- Craftsman's Writ - Brightcloth Pants
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -94,6 +102,7 @@ _.Zones =
 					},
 				}),
 				q(9178, {	-- Craftsman's Writ - Dense Weightstone
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -102,6 +111,7 @@ _.Zones =
 					},
 				}),
 				q(9197, {	-- Craftsman's Writ - Gnomish Battle Chicken
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -110,6 +120,7 @@ _.Zones =
 					},
 				}),
 				q(9195, {	-- Craftsman's Writ - Goblin Sapper Charge
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -118,6 +129,7 @@ _.Zones =
 					},
 				}),
 				q(9201, {	-- Craftsman's Writ - Greater Arcane Protection Potion
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -126,6 +138,7 @@ _.Zones =
 					},
 				}),
 				q(9182, {	-- Craftsman's Writ - Huge Thorium Battleaxe
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -134,6 +147,7 @@ _.Zones =
 					},
 				}),
 				q(9179, {	-- Craftsman's Writ - Imperial Plate Chest
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -142,6 +156,7 @@ _.Zones =
 					},
 				}),
 				q(9206, {	-- Craftsman's Writ - Lightning Eel
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -150,6 +165,7 @@ _.Zones =
 					},
 				}),
 				q(9202, {	-- Craftsman's Writ - Major Healing Potion
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -158,6 +174,7 @@ _.Zones =
 					},
 				}),
 				q(9200, {	-- Craftsman's Writ - Major Mana Potion
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -166,6 +183,7 @@ _.Zones =
 					},
 				}),
 				q(9205, {	-- Craftsman's Writ - Plated Armorfish
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -174,6 +192,7 @@ _.Zones =
 					},
 				}),
 				q(9203, {	-- Craftsman's Writ - Potion of Petrification
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -182,6 +201,7 @@ _.Zones =
 					},
 				}),
 				q(9183, {	-- Craftsman's Writ - Radiant Circlet
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -190,6 +210,7 @@ _.Zones =
 					},
 				}),
 				q(9185, {	-- Craftsman's Writ - Rugged Armor Kit
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
@@ -199,6 +220,7 @@ _.Zones =
 					},
 				}),
 				q(9191, {	-- Craftsman's Writ - Runecloth Bag
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -207,6 +229,7 @@ _.Zones =
 					},
 				}),
 				q(9190, {	-- Craftsman's Writ - Runecloth Boots
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -215,6 +238,7 @@ _.Zones =
 					},
 				}),
 				q(9194, {	-- Craftsman's Writ - Runecloth Robe
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -223,6 +247,7 @@ _.Zones =
 					},
 				}),
 				q(9187, {	-- Craftsman's Writ - Runic Leather Pants
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -231,6 +256,7 @@ _.Zones =
 					},
 				}),
 				q(9204, {	-- Craftsman's Writ - Stonescale Eel
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -239,6 +265,7 @@ _.Zones =
 					},
 				}),
 				q(9196, {	-- Craftsman's Writ - Thorium Grenade
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -247,6 +274,7 @@ _.Zones =
 					},
 				}),
 				q(9198, {	-- Craftsman's Writ - Thorium Tube
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -255,6 +283,7 @@ _.Zones =
 					},
 				}),
 				q(9181, {	-- Craftsman's Writ - Volcanic Hammer
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -263,6 +292,7 @@ _.Zones =
 					},
 				}),
 				q(9186, {	-- Craftsman's Writ - Wicked Leather Belt
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -271,6 +301,7 @@ _.Zones =
 					},
 				}),
 				q(9184, {	-- Craftsman's Writ - Wicked Leather Headband
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["repeatable"] = true,
 					["g"] = {
@@ -279,6 +310,7 @@ _.Zones =
 					},
 				}),
 				q(9125, {	-- Crypt Fiend Parts
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16132,	-- Huntsman Leopold
@@ -287,6 +319,7 @@ _.Zones =
 					},
 				}),
 				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 16132,	-- Huntsman Leopold
 					["g"] = {
@@ -294,6 +327,7 @@ _.Zones =
 					},
 				}),
 				q(9132, {	-- Dark Iron Scraps
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16112,	-- Korfax, Champion of the Light
@@ -319,6 +353,7 @@ _.Zones =
 					},
 				}),
 				q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
@@ -332,6 +367,7 @@ _.Zones =
 					},
 				}),
 				q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
@@ -345,6 +381,7 @@ _.Zones =
 					},
 				}),
 				q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
@@ -358,6 +395,7 @@ _.Zones =
 					},
 				}),
 				q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
@@ -371,8 +409,14 @@ _.Zones =
 					},
 				}),
 				q(9664, {	-- Establishing New Outposts
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(5861, {	-- Find Myranda
+					["lvl"] = 52,
+					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5848,	-- Of Love and Family
 				}),
 				q(5246, {	-- Fragments of the Past
 					["lvl"] = 53,
@@ -407,10 +451,12 @@ _.Zones =
 					},
 				}),
 				q(8929, {	-- In Search of Anthion
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8930, {	-- In Search of Anthion
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16012,	-- Mokvar
@@ -438,10 +484,13 @@ _.Zones =
 				}),
 				q(5206, {	-- Marauders of Darrowshire
 					["lvl"] = 50,
+					["qg"] = 11063,	-- Carlin Redpath
+					["sourcequest"] = 5181,	-- Villains of Darrowshire
 				}),
 				q(5464, {	-- Menethil's Gift
 					["lvl"] = 57,
-					--["objectID"] = 176631,	-- Menethil's Gift
+					["provider"] = { "o", 176631 },	-- Menethil's Gift
+					["sourceQuest"] = 5463,	-- Menethil's Gift
 				}),
 				q(5510, {	-- Minion's Scourgestones
 					["lvl"] = 50,
@@ -467,19 +516,13 @@ _.Zones =
 				}),
 				q(5845, {	-- Of Lost Honor
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
+					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 				}),
 				q(5846, {	-- Of Love and Family
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-				}),
-				q(6187, {	-- Order Must Be Restored
-					["lvl"] = 56,
-					["g"] = {
-						i(16996),	-- Gorewood Bow
-						i(16997),	-- Stormrager
-						i(16998),	-- Sacred Protector
-					},
+					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5845,	-- Of Lost Honor
 				}),
 				q(5149, {	-- Pamela's Doll
 					["lvl"] = 50,
@@ -489,6 +532,7 @@ _.Zones =
 					},
 				}),
 				q(8946, {	-- Proof of Life
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["qg"] = 16031,	-- Ysida Harmon
 				}),
@@ -504,14 +548,16 @@ _.Zones =
 				q(5941, {	-- Return to Chromie
 					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
+					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
 				}),
 				q(6147, {	-- Return to Nathanos
 					["lvl"] = 56,
 					["qg"] = 11898,	-- Crusader Lord Valdelmar
-					["sourcequest"] = 6146,	-- Nathanos' Ruse
+					["sourceQuest"] = 6146,	-- Nathanos' Ruse
 					["races"] = HORDE_ONLY,
 				}),
 				q(9136, {	-- Savage Flora
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16135,	-- Rayne
@@ -521,17 +567,17 @@ _.Zones =
 					},
 				}),
 				q(9137, {	-- Savage Fronds
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 						i(22524),	-- Insignia of the Crusade
 					},
 				}),
-				q(5601, {	-- Sister Pamela
-					["lvl"] = 50,
-				}),
 				q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
 						i(22681),	-- Band of Piety
 						i(22680),	-- Band of Resolution
@@ -542,7 +588,9 @@ _.Zones =
 					},
 				}),
 				q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
+					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["g"] = {
 						i(22681),	-- Band of Piety
 						i(22680),	-- Band of Resolution
@@ -553,7 +601,9 @@ _.Zones =
 					},
 				}),
 				q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
+					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["g"] = {
 						i(22681),	-- Band of Piety
 						i(22680),	-- Band of Resolution
@@ -564,7 +614,9 @@ _.Zones =
 					},
 				}),
 				q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["g"] = {
 						i(22681),	-- Band of Piety
 						i(22680),	-- Band of Resolution
@@ -607,19 +659,8 @@ _.Zones =
 						i(17004),	-- Sarah's Guide
 					},
 				}),
-				q(9122, {	-- The Dread Citadel - Naxxramas
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 16116,	-- Archmage Angela Dosantos
-				}),
-				q(9123, {	-- The Dread Citadel - Naxxramas
-					["lvl"] = 60,
-				}),
-				q(9121, {	-- The Dread Citadel - Naxxramas
-					["lvl"] = 60,
-					["qg"] = 16116,	-- Archmage Angela Dosantos
-				}),
 				q(9128, {	-- The Elemental Equation
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16116,	-- Archmage Angela Dosantos
@@ -628,6 +669,7 @@ _.Zones =
 					},
 				}),
 				q(9211, {	-- The Ice Guard
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16133,	-- Mataus the Wrathcaster
@@ -637,10 +679,17 @@ _.Zones =
 				}),
 				q(6133, {	-- The Ranger Lord's Behest
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
 				}),
 				q(5281, {	-- The Restless Souls
 					["lvl"] = 55,
 					["qg"] = 11038,	-- Caretaker Alen
+				}),
+				q(5282, {	-- The Restless Souls
+					["lvl"] = 55,
+					["qg"] = 11140,	-- Egan
+					["sourceQuest"] = 5281,	-- The Restless Souls
 				}),
 				q(6148, {	-- The Scarlet Oracle, Demetria
 					["lvl"] = 56,
@@ -654,6 +703,7 @@ _.Zones =
 					},
 				}),
 				q(9213, {	-- The Shadow Guard
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -661,6 +711,7 @@ _.Zones =
 					},
 				}),
 				q(9141, {	-- They Call Me "The Rooster"
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -669,26 +720,32 @@ _.Zones =
 				}),
 				q(6022, {	-- To Kill With Purpose
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
 					["g"] = {
 						i(15447),	-- Living Rot
 					},
 				}),
 				q(5248, {	-- Tormented By the Past
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(6042, {	-- Un-Life's Little Annoyances
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
 				}),
 				q(5241, {	-- Uncle Carlin
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10926,	-- Pamela Redpath
 				}),
 				q(5181, {	-- Villains of Darrowshire
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(6041, {	-- When Smokey Sings, I Get Violent
 					["lvl"] = 54,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16992),	-- Smokey's Explosive Launcher
 						i(16993),	-- Smokey's Fireshooter
@@ -697,6 +754,7 @@ _.Zones =
 					},
 				}),
 				q(9165, {	-- Writ of Safe Passage
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 16226,	-- Guard Didier
 					["g"] = {

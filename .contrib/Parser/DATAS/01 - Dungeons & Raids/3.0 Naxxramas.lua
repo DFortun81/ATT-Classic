@@ -192,6 +192,7 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Honored]
 					["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -210,6 +211,7 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Revered]
 					["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -226,6 +228,7 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Exalted]
 					["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },

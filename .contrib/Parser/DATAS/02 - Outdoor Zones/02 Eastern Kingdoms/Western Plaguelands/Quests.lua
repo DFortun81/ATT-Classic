@@ -29,22 +29,28 @@ _.Zones =
 						i(15813),	-- Gold Link Belt
 					},
 				}),
-				q(6389, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(6390, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
-				}),
-				q(5904, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5903, {	-- A Plague Upon Thee
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11616,	-- Nathaniel Dumah
+				}),
+				q(5904, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11616,	-- Nathaniel Dumah
+					["sourceQuest"] = 5903,	-- A Plague Upon Thee
+				}),
+				q(6389, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 177491 },	-- Termite Barrel
+					["sourceQuest"] = 5904,	-- A Plague Upon Thee
+				}),
+				q(6390, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 177491 },	-- Termite Barrel
+					["sourceQuest"] = 5902,	-- A Plague Upon Thee
 				}),
 				q(5153, {	-- A Strange Historian
 					["lvl"] = 50,
@@ -66,17 +72,23 @@ _.Zones =
 						i(17759),	-- Mark of Resolution
 					},
 				}),
-				q(5097, {	-- All Along the Watchtowers
+				q(5097, {	-- All Along the Watchtowers (A)
 					["lvl"] = 50,
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 5092,	-- Clear The Way
 				}),
-				q(5098, {	-- All Along the Watchtowers
+				q(5098, {	-- All Along the Watchtowers (H)
 					["lvl"] = 50,
+					["qg"] = 10837,	-- High Executor Derrington
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
 				}),
 				q(5803, {	-- Araj's Scarab
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5801,	-- Fire Plume Forged
 				}),
 				q(5804, {	-- Araj's Scarab
 					["lvl"] = 55,
@@ -125,12 +137,15 @@ _.Zones =
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["repeatable"] = true,	-- need to check and make sure 5521 is the first one and 5524 is the repeatable one
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				}),
 				q(5521, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
@@ -173,17 +188,17 @@ _.Zones =
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
 				q(5218, {	-- Felstone Field Cauldron
 					["lvl"] = 50,
-				}),
-				q(5861, {	-- Find Myranda
-					["lvl"] = 52,
+					["repeatable"] = true,
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
-				q(4986, {	-- Glyphed Oaken Branch
+				q(4986, {	-- Glyphed Oaken Branch (A)
 					["lvl"] = 51,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
@@ -191,7 +206,7 @@ _.Zones =
 						i(15804),	-- Cerise Drape
 					},
 				}),
-				q(4987, {	-- Glyphed Oaken Branch
+				q(4987, {	-- Glyphed Oaken Branch (H)
 					["lvl"] = 51,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
@@ -204,6 +219,7 @@ _.Zones =
 				}),
 				q(5944, {	-- In Dreams
 					["lvl"] = 52,
+					["qg"] = 1842,	-- Highlord Taelan Fordring
 					["g"] = {
 						i(15411),	-- Mark of Fordring
 						i(15413),	-- Ornate Adamantium Breastplate
@@ -296,14 +312,17 @@ _.Zones =
 						i(15799),	-- Heroic Commendation Medal
 					},
 				}),
-				q(5538, {	-- Mold Rhymes With...
+				q(5538, {	-- Mold Rhymes With... (A)
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5537,	-- Skeletal Fragments
 				}),
-				q(5514, {	-- Mold Rhymes With...
+				q(5514, {	-- Mold Rhymes With... (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 964,	-- Skeletal Fragments
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
 					["lvl"] = 52,
@@ -360,11 +379,13 @@ _.Zones =
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5097,	-- All Along The Watchtowers
 				}),
 				q(838, {	-- Scholomance
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5098,	-- All Along The Watchtowers
 				}),
 				q(5537, {	-- Skeletal Fragments
 					["lvl"] = 55,
@@ -375,6 +396,7 @@ _.Zones =
 				q(964, {	-- Skeletal Fragments
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["qg"] = 11057,	-- Apothecary Dithers
 					["sourceQuest"] = 838,	-- Scholomance
 				}),
 				q(5465, {	-- Soulbound Keepsake
@@ -430,6 +452,8 @@ _.Zones =
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["lvl"] = 57,
+					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 				}),
 				q(6185, {	-- The Eastern Plagues
 					["lvl"] = 56,
@@ -439,19 +463,23 @@ _.Zones =
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
 					["lvl"] = 57,
+					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 				}),
-				q(5505, {	-- The Key to Scholomance
+				q(5505, {	-- The Key to Scholomance (A)
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5803,	-- Araj's Scarab
 					["g"] = {
 						i(13704),	-- Skeleton Key
 					},
 				}),
-				q(5511, {	-- The Key to Scholomance
+				q(5511, {	-- The Key to Scholomance (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 5804,	-- Araj's Scarab
 					["g"] = {
 						i(13704),	-- Skeleton Key
 					},
@@ -513,6 +541,7 @@ _.Zones =
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
 			}),
 		}),

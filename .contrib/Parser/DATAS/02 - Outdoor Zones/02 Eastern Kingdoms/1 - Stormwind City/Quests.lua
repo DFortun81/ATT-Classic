@@ -55,6 +55,7 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["sourceQuest"] = 6186,	-- The Blightcaller Cometh
 					["g"] = {
 						i(16996),	-- Gorewood Bow
 						i(16997),	-- Stormrager

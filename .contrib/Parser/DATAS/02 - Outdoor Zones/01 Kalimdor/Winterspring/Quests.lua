@@ -208,6 +208,10 @@ _.Zones =
 						i(12733),	-- Sacred Frostsaber Meat
 					},
 				}),
+				q(5601, {	-- Sister Pamela
+					["lvl"] = 50,
+					["qg"] = 11629,	-- Jessica Redpath
+				}),
 				q(4842, {	-- Strange Sources
 					["lvl"] = 51,
 					["races"] = HORDE_ONLY,
