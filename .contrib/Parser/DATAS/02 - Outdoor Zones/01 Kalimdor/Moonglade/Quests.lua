@@ -156,6 +156,9 @@ _.Zones =
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["lvl"] = 60,
+					["groups"] = {
+						i(20600),	-- Malfurion's Signet Ring
+					},
 				},
 				{
 					["questID"] = 1124,	-- Wasteland
