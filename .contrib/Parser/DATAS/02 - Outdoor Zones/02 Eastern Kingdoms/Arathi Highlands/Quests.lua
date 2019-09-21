@@ -31,6 +31,7 @@ _.Zones =
 				}),
 				q(679, {	-- Call to Arms
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9520),	-- Silent Hunter
 						i(9521),	-- Skullsplitter
@@ -221,6 +222,7 @@ _.Zones =
 				}),
 				q(680, {	-- The Real Threat
 					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4976),	-- Mistspray Kilt
 						i(4977),	-- Sword of Hammerfall

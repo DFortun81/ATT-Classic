@@ -181,6 +181,7 @@ _.Zones =
 				}),
 				q(1030, {	-- Raene's Cleansing
 					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1029, {	-- Raene's Cleansing
 					["lvl"] = 18,
@@ -188,6 +189,7 @@ _.Zones =
 				}),
 				q(1045, {	-- Raene's Cleansing
 					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5388),	-- Ran Bloodtooth's Skull
 					},
@@ -225,6 +227,7 @@ _.Zones =
 				}),
 				q(1046, {	-- Raene's Cleansing
 					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(5815),	-- Glacial Stone
 						i(17046),	-- Gutterblade

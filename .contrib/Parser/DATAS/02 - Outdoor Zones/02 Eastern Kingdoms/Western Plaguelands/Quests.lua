@@ -29,26 +29,33 @@ _.Zones =
 						i(15813),	-- Gold Link Belt
 					},
 				}),
-				q(6389, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(6390, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
-				}),
-				q(5904, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-				}),
 				q(5903, {	-- A Plague Upon Thee
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11616,	-- Nathaniel Dumah
 				}),
+				q(5904, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11616,	-- Nathaniel Dumah
+					["sourceQuest"] = 5903,	-- A Plague Upon Thee
+				}),
+				q(6389, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 177491 },	-- Termite Barrel
+					["sourceQuest"] = 5904,	-- A Plague Upon Thee
+				}),
+				q(6390, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 177491 },	-- Termite Barrel
+					["sourceQuest"] = 5902,	-- A Plague Upon Thee
+				}),
 				q(5153, {	-- A Strange Historian
 					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5152,	-- Marlene Redpath
+					["qg"] = 10927,	-- Marlene Redpath
+					["sourceQuest"] = 5152,	-- Auntie Marlene
 				}),
 				q(211, {	-- Alas, Andorhal
 					["lvl"] = 50,
@@ -65,17 +72,23 @@ _.Zones =
 						i(17759),	-- Mark of Resolution
 					},
 				}),
-				q(5097, {	-- All Along the Watchtowers
+				q(5097, {	-- All Along the Watchtowers (A)
 					["lvl"] = 50,
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 5092,	-- Clear The Way
 				}),
-				q(5098, {	-- All Along the Watchtowers
+				q(5098, {	-- All Along the Watchtowers (H)
 					["lvl"] = 50,
+					["qg"] = 10837,	-- High Executor Derrington
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
 				}),
 				q(5803, {	-- Araj's Scarab
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5801,	-- Fire Plume Forged
 				}),
 				q(5804, {	-- Araj's Scarab
 					["lvl"] = 55,
@@ -97,6 +110,7 @@ _.Zones =
 				}),
 				q(5023, {	-- Better Late Than Never
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5022, {	-- Better Late Than Never
 					["lvl"] = 50,
@@ -112,23 +126,33 @@ _.Zones =
 						i(12895),	-- Breastplate of the Chromatic Flight
 					},
 				}),
+				q(5210, {	-- Brother Carlin
+					["lvl"] = 50,
+					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
+				}),
 				q(5164, {	-- Catalogue of the Wayward
 					["lvl"] = 57,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["repeatable"] = true,	-- need to check and make sure 5521 is the first one and 5524 is the repeatable one
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				}),
 				q(5521, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				}),
 				q(5092, {	-- Clear the Way
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
@@ -164,22 +188,17 @@ _.Zones =
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
 				q(5218, {	-- Felstone Field Cauldron
 					["lvl"] = 50,
-				}),
-				q(5861, {	-- Find Myranda
-					["lvl"] = 52,
-				}),
-				q(6184, {	-- Flint Shadowmore
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 332,	-- Master Mathias Shaw
+					["repeatable"] = true,
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
-				q(4986, {	-- Glyphed Oaken Branch
+				q(4986, {	-- Glyphed Oaken Branch (A)
 					["lvl"] = 51,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
@@ -187,7 +206,7 @@ _.Zones =
 						i(15804),	-- Cerise Drape
 					},
 				}),
-				q(4987, {	-- Glyphed Oaken Branch
+				q(4987, {	-- Glyphed Oaken Branch (H)
 					["lvl"] = 51,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
@@ -200,6 +219,7 @@ _.Zones =
 				}),
 				q(5944, {	-- In Dreams
 					["lvl"] = 52,
+					["qg"] = 1842,	-- Highlord Taelan Fordring
 					["g"] = {
 						i(15411),	-- Mark of Fordring
 						i(15413),	-- Ornate Adamantium Breastplate
@@ -235,9 +255,11 @@ _.Zones =
 				}),
 				q(5059, {	-- Locked Away
 					["lvl"] = 52,
+					["races"] = HORDE_ONLY,
 				}),
 				q(5060, {	-- Locked Away
 					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(13474),	-- Farmer Dalson's Shotgun
 						i(13475),	-- Dalson Family Wedding Ring
@@ -245,10 +267,11 @@ _.Zones =
 				}),
 				q(5507, {	-- Mantles of the Dawn
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5504, {	-- Mantles of the Dawn
 					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10856,	-- Argent Quartermaster Hasana
 				}),
 				q(5408, {	-- Minion's Scourgestones
@@ -289,14 +312,17 @@ _.Zones =
 						i(15799),	-- Heroic Commendation Medal
 					},
 				}),
-				q(5538, {	-- Mold Rhymes With...
+				q(5538, {	-- Mold Rhymes With... (A)
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5537,	-- Skeletal Fragments
 				}),
-				q(5514, {	-- Mold Rhymes With...
+				q(5514, {	-- Mold Rhymes With... (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 964,	-- Skeletal Fragments
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
 					["lvl"] = 52,
@@ -340,6 +366,7 @@ _.Zones =
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
 					["g"] = {
 						i(12814),	-- Flame in a Bottle
@@ -351,22 +378,30 @@ _.Zones =
 				q(5533, {	-- Scholomance
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5097,	-- All Along The Watchtowers
 				}),
 				q(838, {	-- Scholomance
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5098,	-- All Along The Watchtowers
 				}),
 				q(5537, {	-- Skeletal Fragments
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5533,	-- Scholomance
 				}),
 				q(964, {	-- Skeletal Fragments
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 838,	-- Scholomance
 				}),
 				q(5465, {	-- Soulbound Keepsake
 					["lvl"] = 57,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
@@ -406,37 +441,45 @@ _.Zones =
 				}),
 				q(5154, {	-- The Annals of Darrowshire
 					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 5153,	-- A Strange Historian
 				}),
 				q(6186, {	-- The Blightcaller Cometh
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
+					["sourceQuest"] = 6185,	-- The Eastern Plagues
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["lvl"] = 57,
+					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 				}),
 				q(6185, {	-- The Eastern Plagues
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
+					["sourceQuest"] = 6184,	-- Flint Shadowmore
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
 					["lvl"] = 57,
+					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 				}),
-				q(5505, {	-- The Key to Scholomance
+				q(5505, {	-- The Key to Scholomance (A)
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5803,	-- Araj's Scarab
 					["g"] = {
 						i(13704),	-- Skeleton Key
 					},
 				}),
-				q(5511, {	-- The Key to Scholomance
+				q(5511, {	-- The Key to Scholomance (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 5804,	-- Araj's Scarab
 					["g"] = {
 						i(13704),	-- Skeleton Key
 					},
@@ -479,20 +522,26 @@ _.Zones =
 						i(12722),	-- Good Luck Other-Half-Charm
 					},
 				}),
+				q(6004, {	-- Unfinished Business
+					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+				}),
 				q(6023, {	-- Unfinished Business
 					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+					["sourceQuest"] = 6004,	-- Unfinished Business
 				}),
 				q(6025, {	-- Unfinished Business
 					["lvl"] = 50,
-				}),
-				q(6004, {	-- Unfinished Business
-					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+					["sourceQuest"] = 6023,	-- Unfinished Business
 				}),
 				q(5162, {	-- Wrath of the Blue Flight
 					["lvl"] = 57,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
 					["lvl"] = 50,
+					["repeatable"] = true,
 				}),
 			}),
 		}),

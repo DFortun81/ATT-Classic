@@ -16,6 +16,8 @@ L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Tiefschwarze Grotte"] = 221;	-- BFD
+L.ZONE_TEXT_TO_MAP_ID["Blackrocktiefen"] = 242;	-- BRD
+L.ZONE_TEXT_TO_MAP_ID["Der Blackrock"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
@@ -25,6 +27,7 @@ L.ZONE_TEXT_TO_MAP_ID["Die Hügel von Razorfen"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Der Kral von Razorfen"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Das scharlachrote Kloster"] = 435;	-- SM
+L.ZONE_TEXT_TO_MAP_ID["Der Tempel von Atal'Hakkar"] = 220;	-- ST
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF

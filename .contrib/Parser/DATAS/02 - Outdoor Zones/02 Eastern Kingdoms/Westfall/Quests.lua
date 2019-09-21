@@ -116,21 +116,26 @@ _.Zones =
 				}),
 				q(50, {	-- Sweet Amber
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(49, {	-- Sweet Amber
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(51, {	-- Sweet Amber
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(53, {	-- Sweet Amber
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(744),	-- Thunderbrew's Boot Flask
 					},
 				}),
 				q(48, {	-- Sweet Amber
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["lvl"] = 10,

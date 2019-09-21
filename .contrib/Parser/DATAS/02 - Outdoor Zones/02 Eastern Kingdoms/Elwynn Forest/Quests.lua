@@ -289,6 +289,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 252,	-- Tommy Joe Stonefield
 				}),
+				{
+					["questID"] = 1860,	-- Speak with Jennea
+					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						1879,	-- Speak with Bink
+					},
+					["classes"] = {8},	-- Mage
+				},
 				q(123, {	-- The Collector
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite

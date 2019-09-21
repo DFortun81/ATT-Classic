@@ -442,11 +442,13 @@ _.Zones =
 						},
 						{
 							["itemID"] = 4650,	-- Bel'dugur's Note
-							["description"] = "This item is not required to complete the quest. You can safely delete it from your inventory.",
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
 						},
 						{
 							["itemID"] = 4649,	-- Bonegrip's Note
-							["description"] = "This item is not required to complete the quest. You can safely delete it from your inventory.",
+							["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
+							["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart
 						},
 					},
 				},

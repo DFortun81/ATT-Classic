@@ -57,6 +57,7 @@ _.Zones =
 				}),
 				q(506, {	-- Blackmoore's Legacy
 					["lvl"] = 29,
+					["races"] = HORDE_ONLY,
 				}),
 				q(557, {	-- Bracers of Binding
 					["lvl"] = 30,
@@ -230,6 +231,7 @@ _.Zones =
 				}),
 				q(507, {	-- Lord Aliden Perenolde
 					["lvl"] = 29,
+					["races"] = HORDE_ONLY,
 				}),
 				q(544, {	-- Prison Break In
 					["lvl"] = 30,
@@ -273,6 +275,7 @@ _.Zones =
 				}),
 				q(508, {	-- Taretha's Gift
 					["lvl"] = 29,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(3764),	-- Mantis Boots
 						i(3765),	-- Brigand's Pauldrons
@@ -280,16 +283,20 @@ _.Zones =
 				}),
 				q(518, {	-- The Crown of Will
 					["lvl"] = 34,
+					["races"] = HORDE_ONLY,
 					["qg"] = 2278,	-- Melisara
 				}),
 				q(519, {	-- The Crown of Will
 					["lvl"] = 34,
+					["races"] = HORDE_ONLY,
 				}),
 				q(520, {	-- The Crown of Will
 					["lvl"] = 34,
+					["races"] = HORDE_ONLY,
 				}),
 				q(521, {	-- The Crown of Will
 					["lvl"] = 34,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(4430),	-- Ethereal Talisman
 					},

@@ -6,10 +6,6 @@ profession(202, {	-- Engineering
 			{
 				["name"] = "Crafted Light Shot",
 				["recipeID"] = 3920,
-				["cost"] = {
-					{ "i", 4357, 1 },	-- Rough Blasting Powder
-					{ "i", 2840, 1 },	-- Copper Bar
-				},
 			},
 			{
 				["name"] = "Crafted Heavy Shot",
@@ -18,6 +14,10 @@ profession(202, {	-- Engineering
 			{
 				["name"] = "Crafted Solid Shot",
 				["recipeID"] = 3947
+			},
+			{
+				["name"] = "Hi-Impact Mithril Slugs",
+				["recipeID"] = 12596,
 			},
 			{
 				["name"] = "Mithril Gyro-Shot",

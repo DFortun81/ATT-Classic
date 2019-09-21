@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(3382, {	-- A Crew Under Fire
 					["lvl"] = 48,
+					["repeatable"] = true,
 				}),
 				q(7486, {	-- A Hero's Reward
 					["lvl"] = 55,
@@ -23,12 +24,14 @@ _.Zones =
 				}),
 				q(3381, {	-- A Meeting with the Master
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(6823, {	-- Agent of Hydraxis
 					["lvl"] = 55,
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3602, {	-- Azsharite
 					["lvl"] = 45,
@@ -47,9 +50,11 @@ _.Zones =
 				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3561, {	-- Delivery to Archmage Xylem
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3541, {	-- Delivery to Jes'rimon
 					["lvl"] = 45,
@@ -57,9 +62,15 @@ _.Zones =
 				}),
 				q(3518, {	-- Delivery to Magatha
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(6821, {	-- Eye of the Emberseer
 					["lvl"] = 55,
+				}),
+				q(9364, {	-- Fragmented Magic
+					["lvl"] = 60,
+					["classes"] = {8},	-- Mage
+					["qg"] = 8379,		-- Archmage Xylem
 				}),
 				q(6824, {	-- Hands of the Enemy
 					["lvl"] = 55,
@@ -88,6 +99,7 @@ _.Zones =
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3503, {	-- Meeting with the Master
 					["lvl"] = 45,
@@ -97,12 +109,14 @@ _.Zones =
 				}),
 				q(3421, {	-- Return Trip
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(5535, {	-- Spiritual Unrest
 					["lvl"] = 45,
 				}),
 				q(3517, {	-- Stealing Knowledge
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
 				}),
 				q(6805, {	-- Stormers and Rumblers
 					["lvl"] = 55,
@@ -137,6 +151,12 @@ _.Zones =
 				}),
 				q(3565, {	-- Xylem's Payment to Jediga
 					["lvl"] = 45,
+					["races"] = HORDE_ONLY,
+				}),
+				q(9362, {	-- Warlord Krellian
+					["lvl"] = 60,
+					["classes"] = {8},	-- Mage
+					["qg"] = 8379,		-- Archmage Xylem
 				}),
 			}),
 		}),

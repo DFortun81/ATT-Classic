@@ -249,6 +249,9 @@ _.Zones =
 					},				}),
 				q(754, {	-- Winterhoof Cleansing
 					["lvl"] = 4,
+					["races"] = {
+						6,	-- Tauren
+					},
 					["qg"] = 2948,	-- Mull Thunderhorn
 				}),
 			}),

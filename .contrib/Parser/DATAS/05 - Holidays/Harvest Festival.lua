@@ -10,6 +10,7 @@ _.Holidays =
 				i(19995),	-- Harvest Boar
 				i(19696),	-- Harvest Bread
 				i(19996),	-- Harvest Fish
+				i(19994),	-- Harvest Fruit
 				i(19997),	-- Harvest Nectar
 			},
 		}),

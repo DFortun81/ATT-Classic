@@ -430,8 +430,10 @@ settings.UpdateMode = function(self)
 	else
 		app.GroupRequirementsFilter = app.NoFilter;
 	end
+	app:UnregisterEvent("GOSSIP_SHOW");
 	app:UnregisterEvent("TAXIMAP_OPENED");
 	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
+		app:RegisterEvent("GOSSIP_SHOW");
 		app:RegisterEvent("TAXIMAP_OPENED");
 	end
 end

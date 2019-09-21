@@ -282,8 +282,24 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13635
 			},
 			{
+				["name"] = "Fire Resistance",
+				["recipeID"] = 13657
+			},
+			{
 				["name"] = "Greater Defense",
 				["recipeID"] = 13746
+			},
+			{
+				["name"] = "Greater Fire Resistance",
+				["recipeID"] = 25081
+			},
+			{
+				["name"] = "Greater Nature Resistance",
+				["recipeID"] = 25082
+			},
+			{
+				["name"] = "Greater Resistance",
+				["recipeID"] = 20014
 			},
 			{
 				["name"] = "Lesser Agility",
@@ -294,12 +310,28 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13421
 			},
 			{
+				["name"] = "Lesser Fire Resistance",
+				["recipeID"] = 7861
+			},
+			{
+				["name"] = "Lesser Shadow Resistance",
+				["recipeID"] = 13522
+			},
+			{
 				["name"] = "Minor Agility",
 				["recipeID"] = 13419
 			},
 			{
 				["name"] = "Minor Protection",
 				["recipeID"] = 7771
+			},
+			{
+				["name"] = "Minor Resistance",
+				["recipeID"] = 7454
+			},
+			{
+				["name"] = "Resistance",
+				["recipeID"] = 13794
 			},
 			{
 				["name"] = "Superior Defense",
@@ -511,6 +543,10 @@ profession(333, {	-- Enchanting
 		["name"] = "Shield Enchantments",
 		["categoryID"] = 42,
 		["g"] = {
+			{
+				["name"] = "Frost Resistance",
+				["recipeID"] = 13933
+			},
 			{
 				["name"] = "Greater Stamina",
 				["recipeID"] = 20017

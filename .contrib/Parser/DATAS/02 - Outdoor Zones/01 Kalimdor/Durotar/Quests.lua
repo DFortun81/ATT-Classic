@@ -446,6 +446,9 @@ _.Zones =
 					["coord"] = { 43.29, 68.53, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 1,
+					["altQuests"] = {
+						787,	-- The New Horde
+					},
 				}),
 				q(826, {	-- Zalazane
 					["qg"] = 3188,	-- Master Gadrin

@@ -39,20 +39,25 @@ _.Zones =
 						i(3382),	-- Weak Troll's Blood Potion
 					},
 				}),
-				q(5902, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-				}),
 				q(5901, {	-- A Plague Upon Thee
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11615,	-- Mickey Levine
 				}),
+				q(5902, {	-- A Plague Upon Thee
+					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11615,	-- Mickey Levine
+					["sourceQuest"] = 5901,	-- A Plague Upon Thee
+				}),
 				q(404, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
 				}),
 				q(590, {	-- A Rogue's Deal
+					["races"] = HORDE_ONLY,
 				}),
 				q(8, {	-- A Rogue's Deal
 					["races"] = HORDE_ONLY,
@@ -99,6 +104,7 @@ _.Zones =
 				q(431, {	-- Candles of Beckoning
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					--["objectID"] = 1586,	-- Crate of Candles
 					["g"] = {
 						i(3080),	-- Candle of Beckoning
@@ -121,6 +127,7 @@ _.Zones =
 				}),
 				q(365, {	-- Fields of Grief
 					["lvl"] = 4,
+					["races"] = HORDE_ONLY,
 					["qg"] = 1519,	-- Deathguard Simmer
 				}),
 				q(407, {	-- Fields of Grief
@@ -135,6 +142,7 @@ _.Zones =
 				}),
 				q(5481, {	-- Gordo's Task
 					["lvl"] = 5,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10666,	-- Gordo
 				}),
 				q(358, {	-- Graverobbers
@@ -148,6 +156,7 @@ _.Zones =
 				}),
 				q(6395, {	-- Marla's Last Wish
 					["lvl"] = 3,
+					["races"] = HORDE_ONLY,
 					["qg"] = 1661,	-- Novice Elreth
 					["g"] = {
 						i(16333),	-- Samuel's Remains
@@ -180,6 +189,7 @@ _.Zones =
 				}),
 				q(3901, {	-- Rattling the Rattlecages
 					["qg"] = 1569,	-- Shadow Priest Sarvis
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(3274),	-- Flax Boots
 						i(11851),	-- Scavenger Tunic
@@ -210,6 +220,7 @@ _.Zones =
 				}),
 				q(3902, {	-- Scavenging Deathknell
 					["lvl"] = 2,
+					["races"] = HORDE_ONLY,
 					["qg"] = 1740,	-- Deathguard Saltain
 					["g"] = {
 						i(11848),	-- Flax Belt
@@ -263,6 +274,7 @@ _.Zones =
 				q(410, {	-- The Dormant Shade
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					--["objectID"] = 1557,	-- Lillith's Dinner Table
 				}),
 				q(408, {	-- The Family Crypt
@@ -314,6 +326,7 @@ _.Zones =
 				}),
 				q(382, {	-- The Red Messenger
 					["lvl"] = 2,
+					["races"] = HORDE_ONLY,
 					["qg"] = 1570,	-- Executor Arren
 					["g"] = {
 						i(3277),	-- Executor Staff

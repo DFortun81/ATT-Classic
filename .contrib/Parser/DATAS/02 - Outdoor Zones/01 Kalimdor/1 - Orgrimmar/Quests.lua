@@ -497,6 +497,9 @@ _.Zones =
 				q(787, {	-- The New Horde
 					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg
+					["altQuests"] = {
+						4641,	-- Your Place In The World
+					},
 				}),
 				q(1963, {
 					["qg"] = 6446,	-- Therzok

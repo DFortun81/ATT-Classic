@@ -11,6 +11,8 @@ L.SAVED_TO_DJ_INSTANCES["Glissecroc : caverne du sanctuaire du Serpent"] = "Cav
 
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Profondeurs de Brassenoire"] = 221;	-- BFD
+L.ZONE_TEXT_TO_MAP_ID["Profondeurs de Blackrock"] = 242;	-- BRD
+L.ZONE_TEXT_TO_MAP_ID["Mont Blackrock"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Les Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
@@ -20,6 +22,7 @@ L.ZONE_TEXT_TO_MAP_ID["Souilles de Tranchebauge"] = 300;	-- RFD
 L.ZONE_TEXT_TO_MAP_ID["Kraal de Tranchebauge"] = 301;	-- RFK
 L.ZONE_TEXT_TO_MAP_ID["Donjon d'Ombrecroc"] = 310;	-- SFK
 L.ZONE_TEXT_TO_MAP_ID["Monastère écarlate"] = 435;	-- SM
+L.ZONE_TEXT_TO_MAP_ID["Le temple d'Atal'Hakkar"] = 220;	-- ST
 L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Cavernes des lamentations"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF

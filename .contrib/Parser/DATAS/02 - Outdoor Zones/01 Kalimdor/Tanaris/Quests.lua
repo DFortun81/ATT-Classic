@@ -44,6 +44,7 @@ _.Zones =
 				}),
 				q(841, {	-- Another Power Source?
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},
@@ -54,6 +55,7 @@ _.Zones =
 				}),
 				q(4509, {	-- Calm Before the Storm
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(4508, {	-- Calm Before the Storm
 					["lvl"] = 50,
@@ -93,12 +95,17 @@ _.Zones =
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
 				}),
-				q(5801, {	-- Fire Plume Forged
+				q(5801, {	-- Fire Plume Forged (A)
 					["lvl"] = 55,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5411,	-- Krinkle Goodsteel
+					["sourceQuest"] = 5538,	-- Mold Rhymes With...
 				}),
-				q(5802, {	-- Fire Plume Forged
+				q(5802, {	-- Fire Plume Forged (H)
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["qg"] = 5411,	-- Krinkle Goodsteel
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["lvl"] = 38,
@@ -134,6 +141,7 @@ _.Zones =
 				}),
 				q(243, {	-- Into the Field
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3914, {	-- Linken's Sword
 					["lvl"] = 47,
@@ -194,6 +202,7 @@ _.Zones =
 				}),
 				q(379, {	-- Slake That Thirst
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},
@@ -231,6 +240,7 @@ _.Zones =
 				}),
 				q(654, {	-- Tanaris Field Sampling
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9437),	-- Untested Basilisk Sample
 						i(9439),	-- Untested Hyena Sample
@@ -295,6 +305,10 @@ _.Zones =
 				q(8585, {	-- The Isle of Dread!
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(5065, {	-- The Lost Tablets of Mosh'aru
+					["lvl"] = 40,
+					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(8742, {	-- The Might of Kalimdor
 					["lvl"] = 60,
@@ -410,10 +424,6 @@ _.Zones =
 				q(10, {	-- The Scrimshank Redemption
 					["lvl"] = 39,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
-				}),
-				q(3444, {	-- The Stone Circle
-					["lvl"] = 46,
-					["qg"] = 7771,	-- Marvon Rivetseeker
 				}),
 				q(2954, {	-- The Stone Watcher
 					["lvl"] = 45,

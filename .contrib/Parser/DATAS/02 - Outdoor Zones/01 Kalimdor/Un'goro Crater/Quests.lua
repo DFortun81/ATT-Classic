@@ -22,6 +22,9 @@ _.Zones =
 				}),
 				q(4142, {	-- A Visit to Gregan
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9119,	-- Muigin
+					["sourceQuest"] = 4141,	-- Muigin and Larion
 				}),
 				q(3883, {	-- Alien Ecology
 					["lvl"] = 48,
@@ -43,17 +46,18 @@ _.Zones =
 				}),
 				q(4144, {	-- Bloodpetal Sprouts
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9119,	-- Muigin
+					["sourceQuest"] = 4143,	-- Haze of Evil
 				}),
 				q(4148, {	-- Bloodpetal Zapper
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
+					["qg"] = 9118,	-- Larion
+					["sourceQuest"] = 4146,	-- Zapper Fuel
 					["g"] = {
 						i(11320),	-- Bloodpetal Zapper
 					},
-				}),
-				q(4245, {	-- Chasing A-Me 01
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
-					["qg"] = 9623,	-- A-Me 01
 				}),
 				q(4243, {	-- Chasing A-Me 01
 					["lvl"] = 48,
@@ -61,8 +65,13 @@ _.Zones =
 				}),
 				q(4244, {	-- Chasing A-Me 01
 					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9623,	-- A-Me 01
+					["sourceQuest"] = 4243,	-- Chasing A-Me 01
+				}),
+				q(4245, {	-- Chasing A-Me 01
+					["lvl"] = 48,
+					["qg"] = 9623,	-- A-Me 01
+					["sourceQuest"] = 4244,	-- Chasing A-Me 01
 				}),
 				q(4385, {	-- Crystal Charge
 					["lvl"] = 47,
@@ -108,6 +117,7 @@ _.Zones =
 				}),
 				q(4284, {	-- Crystals of Power
 					["lvl"] = 47,
+					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(5150, {	-- Dadanga is Hungry!
 					["lvl"] = 47,
@@ -124,9 +134,6 @@ _.Zones =
 				q(974, {	-- Finding the Source
 					["lvl"] = 51,
 					["qg"] = 10302,	-- Krakle
-				}),
-				q(4143, {	-- Haze of Evil
-					["lvl"] = 47,
 				}),
 				q(3962, {	-- It's Dangerous to Go Alone
 					["lvl"] = 47,
@@ -148,13 +155,15 @@ _.Zones =
 				}),
 				q(4145, {	-- Larion and Muigin
 					["lvl"] = 47,
+					["qg"] = 9118,	-- Larion
+					["races"] = HORDE_ONLY,
 				}),
 				q(3961, {	-- Linken's Adventure
 					["lvl"] = 47,
+					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(3942, {	-- Linken's Memory
 					["lvl"] = 47,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(4492, {	-- Lost!
@@ -162,7 +171,6 @@ _.Zones =
 				}),
 				q(4321, {	-- Making Sense of It
 					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9117,	-- J.D. Collie
 					["g"] = {
 						i(11482),	-- Crystal Pylon User's Manual
@@ -170,12 +178,16 @@ _.Zones =
 				}),
 				q(4147, {	-- Marvon's Workshop
 					["lvl"] = 47,
+					["qg"] = 9118,	-- Larion
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 4145,	-- Larion and Muigin
 				}),
 				q(3912, {	-- Meet at the Grave
 					["lvl"] = 47,
 				}),
 				q(4141, {	-- Muigin and Larion
 					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
 				}),
 				q(3882, {	-- Roll the Bones
@@ -211,7 +223,7 @@ _.Zones =
 				}),
 				q(4287, {	-- The Eastern Pylon
 					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(4290, {	-- The Fare of Lar'korwi
 					["lvl"] = 48,
@@ -232,7 +244,7 @@ _.Zones =
 				}),
 				q(4285, {	-- The Northern Pylon
 					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(4291, {	-- The Scent of Lar'korwi
 					["lvl"] = 48,
@@ -247,7 +259,7 @@ _.Zones =
 				}),
 				q(4288, {	-- The Western Pylon
 					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(4502, {	-- Volcanic Activity
 					["lvl"] = 49,
