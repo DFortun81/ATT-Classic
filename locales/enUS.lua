@@ -1431,6 +1431,7 @@ app.L = {
 		["Blackfathom Deeps"] = 221,
 		["Blackrock Depths"] = 242,
 		["Blackwing Lair"] = 287,
+		["Blackrock Mountain"] = 35,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,

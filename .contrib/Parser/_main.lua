@@ -92,7 +92,7 @@ WESTFALL = 1436;	-- Confirmed!
 WETLANDS = 1437;	-- Confirmed!
 
 -- Custom Maps
-BLACKROCK_MOUNTAIN = -3;
+BLACKROCK_MOUNTAIN = 35;
 
 -- CLASSES
 WARRIOR = 1;
