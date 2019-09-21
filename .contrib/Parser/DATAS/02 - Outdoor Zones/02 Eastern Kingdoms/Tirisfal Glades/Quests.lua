@@ -102,6 +102,7 @@ _.Zones =
 				q(431, {	-- Candles of Beckoning
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					--["objectID"] = 1586,	-- Crate of Candles
 					["g"] = {
 						i(3080),	-- Candle of Beckoning
@@ -271,6 +272,7 @@ _.Zones =
 				q(410, {	-- The Dormant Shade
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					--["objectID"] = 1557,	-- Lillith's Dinner Table
 				}),
 				q(408, {	-- The Family Crypt
