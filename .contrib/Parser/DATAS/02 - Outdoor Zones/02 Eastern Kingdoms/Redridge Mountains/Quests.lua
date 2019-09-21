@@ -153,12 +153,6 @@ _.Zones =
 						i(2699),	-- Recipe: Redridge Goulash
 					},
 				}),
-				{
-					["questID"] = 347,	-- Rethban Ore
-					["qg"] = 341,	-- Foreman Oslow
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-				},
 				q(119, {	-- Return to Verner
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,

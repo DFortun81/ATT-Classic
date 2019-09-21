@@ -98,7 +98,6 @@ _.Zones =
 				}),
 				q(2501, {	-- Badlands Reagent Run II
 					["sourceQuest"] = 17,	-- Uldaman Reagent Run
-					["requireSkill"] = 171,	-- Alchemy
 					["cost"] = {
 						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
 					},
