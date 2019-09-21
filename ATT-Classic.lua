@@ -5810,7 +5810,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 					tinsert(self.data.g, 1, self.data.options[i]);
 				end
 				self:Update();
-			elseif e == "ZONE_CHANGED_NEW_AREA" then
+			elseif e == "ZONE_CHANGED" or e == "ZONE_CHANGED_NEW_AREA" then
 				-- Bubble Up the Maps
 				local mapInfo, info;
 				local mapID = app.GetCurrentMapID();
@@ -5956,6 +5956,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("MERCHANT_SHOW");
 		self:RegisterEvent("MERCHANT_UPDATE");
 		self:RegisterEvent("CHAT_MSG_LOOT");
@@ -6326,6 +6327,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			RefreshLocation();
 		end);
 		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
 	if self:IsVisible() then
@@ -7258,6 +7260,7 @@ app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("PLAYER_DEAD");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
+app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 
 -- Define Event Behaviours
@@ -7985,6 +7988,9 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
+end
+app.events.ZONE_CHANGED = function()
+	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.ZONE_CHANGED_NEW_AREA = function()
 	app.CurrentMapID = app.GetCurrentMapID();
