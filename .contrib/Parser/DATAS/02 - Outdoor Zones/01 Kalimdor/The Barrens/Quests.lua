@@ -237,6 +237,7 @@ _.Zones =
 				}),
 				q(3514, {	-- Horde Presence
 					["lvl"] = 15,
+					["races"] = HORDE_ONLY,
 					["qg"] = 8582,	-- Kadrak
 					["g"] = {
 						i(10653),	-- Trailblazer Boots

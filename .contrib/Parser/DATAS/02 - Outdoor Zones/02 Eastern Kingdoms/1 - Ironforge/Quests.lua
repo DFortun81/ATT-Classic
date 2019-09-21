@@ -354,6 +354,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
 				}),
+				{
+					["questID"] = 1880,	-- Mage-tastic Gizmonitor
+					["qg"] = 5144,	-- Bink <Mage Trainer>
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = {8},	-- Mage
+					["altQuests"] = {
+						1861,	-- Mirror Lake
+					},
+					["groups"] = {
+						i(7507),	-- Arcane Orb
+						i(9514),	-- Arcane Staff
+					},
+				},
 				q(3448, {	-- Passing the Burden
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,

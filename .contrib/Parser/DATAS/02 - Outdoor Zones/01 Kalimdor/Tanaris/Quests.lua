@@ -44,6 +44,7 @@ _.Zones =
 				}),
 				q(841, {	-- Another Power Source?
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},
@@ -54,6 +55,7 @@ _.Zones =
 				}),
 				q(4509, {	-- Calm Before the Storm
 					["lvl"] = 50,
+					["races"] = HORDE_ONLY,
 				}),
 				q(4508, {	-- Calm Before the Storm
 					["lvl"] = 50,
@@ -134,6 +136,7 @@ _.Zones =
 				}),
 				q(243, {	-- Into the Field
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3914, {	-- Linken's Sword
 					["lvl"] = 47,
@@ -194,6 +197,7 @@ _.Zones =
 				}),
 				q(379, {	-- Slake That Thirst
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},
@@ -231,6 +235,7 @@ _.Zones =
 				}),
 				q(654, {	-- Tanaris Field Sampling
 					["lvl"] = 38,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(9437),	-- Untested Basilisk Sample
 						i(9439),	-- Untested Hyena Sample

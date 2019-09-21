@@ -46,6 +46,7 @@ _.Zones =
 				}),
 				q(4148, {	-- Bloodpetal Zapper
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11320),	-- Bloodpetal Zapper
 					},
@@ -145,6 +146,7 @@ _.Zones =
 				}),
 				q(4145, {	-- Larion and Muigin
 					["lvl"] = 47,
+					["races"] = HORDE_ONLY,
 				}),
 				q(3961, {	-- Linken's Adventure
 					["lvl"] = 47,

@@ -88,6 +88,7 @@ _.Zones =
 				q(3803, {	-- Morrowgrain to Darnassus
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
@@ -95,6 +96,7 @@ _.Zones =
 				q(3792, {	-- Morrowgrain to Feathermoon Stronghold
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(11022),	-- Packet of Tharlendris Seeds
 					},

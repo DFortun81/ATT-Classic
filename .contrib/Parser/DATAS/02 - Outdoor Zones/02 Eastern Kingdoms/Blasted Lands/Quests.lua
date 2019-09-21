@@ -39,6 +39,7 @@ _.Zones =
 				}),
 				q(2602, {	-- Infallible Mind
 					["lvl"] = 45,
+					["repeatable"] = true,
 					["g"] = {
 						i(8423),	-- Cerebral Cortex Compound
 					},
@@ -55,6 +56,7 @@ _.Zones =
 				q(3502, {	-- One Draenei's Junk...
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["qg"] = 7363,	-- Kum'isha the Collector
 					["g"] = {
 						i(12122),	-- Kum'isha's Junk
@@ -66,6 +68,7 @@ _.Zones =
 				}),
 				q(2582, {	-- Rage of Ages
 					["lvl"] = 45,
+					["repeatable"] = true,
 					["g"] = {
 						i(8410),	-- R.O.I.D.S.
 					},

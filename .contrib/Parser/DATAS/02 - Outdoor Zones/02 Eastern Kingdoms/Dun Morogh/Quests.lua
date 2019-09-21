@@ -166,6 +166,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1374,	-- Rejold Barleybrew
 				}),
+				{
+					["questID"] = 1879,	-- Speak with Bink
+					["qg"] = 1228,	-- Magis Sparkmantle <Mage Trainer>
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						1860,	-- Speak with Jennea
+					},
+					["classes"] = {8},	-- Mage
+				},
 				q(317, {	-- Stocking Jetsteam
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
