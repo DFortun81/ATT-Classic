@@ -149,6 +149,11 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = HORDE_ONLY,
 				}),
+				q(6145, {	-- The Crimson Courier
+					["lvl"] = 56,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 6144,	-- The Call to Command
+				}),
 				q(495, {	-- The Crown of Will
 					["lvl"] = 34,
 					["races"] = HORDE_ONLY,

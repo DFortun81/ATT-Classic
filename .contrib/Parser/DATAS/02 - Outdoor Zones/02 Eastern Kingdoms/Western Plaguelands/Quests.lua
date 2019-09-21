@@ -48,8 +48,8 @@ _.Zones =
 				}),
 				q(5153, {	-- A Strange Historian
 					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5152,	-- Marlene Redpath
+					["qg"] = 10927,	-- Marlene Redpath
+					["sourceQuest"] = 5152,	-- Auntie Marlene
 				}),
 				q(211, {	-- Alas, Andorhal
 					["lvl"] = 50,
@@ -114,6 +114,11 @@ _.Zones =
 						i(12895),	-- Breastplate of the Chromatic Flight
 					},
 				}),
+				q(5210, {	-- Brother Carlin
+					["lvl"] = 50,
+					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
+				}),
 				q(5164, {	-- Catalogue of the Wayward
 					["lvl"] = 57,
 					["races"] = HORDE_ONLY,
@@ -174,11 +179,6 @@ _.Zones =
 				}),
 				q(5861, {	-- Find Myranda
 					["lvl"] = 52,
-				}),
-				q(6184, {	-- Flint Shadowmore
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 332,	-- Master Mathias Shaw
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
 					["lvl"] = 50,
@@ -359,6 +359,7 @@ _.Zones =
 				q(5533, {	-- Scholomance
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
 				}),
 				q(838, {	-- Scholomance
 					["lvl"] = 55,
@@ -368,10 +369,13 @@ _.Zones =
 				q(5537, {	-- Skeletal Fragments
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5533,	-- Scholomance
 				}),
 				q(964, {	-- Skeletal Fragments
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 838,	-- Scholomance
 				}),
 				q(5465, {	-- Soulbound Keepsake
 					["lvl"] = 57,
@@ -415,13 +419,14 @@ _.Zones =
 				}),
 				q(5154, {	-- The Annals of Darrowshire
 					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 5153,	-- A Strange Historian
 				}),
 				q(6186, {	-- The Blightcaller Cometh
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
+					["sourceQuest"] = 6185,	-- The Eastern Plagues
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["lvl"] = 57,
@@ -430,6 +435,7 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
+					["sourceQuest"] = 6184,	-- Flint Shadowmore
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
 					["lvl"] = 57,
@@ -488,14 +494,19 @@ _.Zones =
 						i(12722),	-- Good Luck Other-Half-Charm
 					},
 				}),
+				q(6004, {	-- Unfinished Business
+					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+				}),
 				q(6023, {	-- Unfinished Business
 					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+					["sourceQuest"] = 6004,	-- Unfinished Business
 				}),
 				q(6025, {	-- Unfinished Business
 					["lvl"] = 50,
-				}),
-				q(6004, {	-- Unfinished Business
-					["lvl"] = 50,
+					["qg"] = 11610,	-- Kirsta Deepshadow
+					["sourceQuest"] = 6023,	-- Unfinished Business
 				}),
 				q(5162, {	-- Wrath of the Blue Flight
 					["lvl"] = 57,

@@ -301,6 +301,10 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(5065, {	-- The Lost Tablets of Mosh'aru
+					["lvl"] = 40,
+					["qg"] = 10460,	-- Prospector Ironboot
+				}),
 				q(8742, {	-- The Might of Kalimdor
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos

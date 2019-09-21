@@ -21,7 +21,7 @@ _.Zones =
 				}),
 				q(5152, {	-- Auntie Marlene
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10926,	-- Pamela Redpath
 				}),
 				q(9131, {	-- Binding the Dreadnaught
 					["lvl"] = 55,
@@ -54,10 +54,6 @@ _.Zones =
 						i(22524),	-- Insignia of the Crusade
 					},
 				}),
-				q(5210, {	-- Brother Carlin
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-				}),
 				q(5544, {	-- Carrion Grubbage
 					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
@@ -76,6 +72,7 @@ _.Zones =
 				}),
 				q(5508, {	-- Corruptor's Scourgestones
 					["lvl"] = 50,
+					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -83,12 +80,14 @@ _.Zones =
 				}),
 				q(9142, {	-- Craftsman's Writ
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22568),	-- Sealed Craftsman's Writ
 					},
 				}),
 				q(9188, {	-- Craftsman's Writ - Brightcloth Pants
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -96,6 +95,7 @@ _.Zones =
 				}),
 				q(9178, {	-- Craftsman's Writ - Dense Weightstone
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -103,6 +103,7 @@ _.Zones =
 				}),
 				q(9197, {	-- Craftsman's Writ - Gnomish Battle Chicken
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -110,6 +111,7 @@ _.Zones =
 				}),
 				q(9195, {	-- Craftsman's Writ - Goblin Sapper Charge
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -117,6 +119,7 @@ _.Zones =
 				}),
 				q(9201, {	-- Craftsman's Writ - Greater Arcane Protection Potion
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -124,6 +127,7 @@ _.Zones =
 				}),
 				q(9182, {	-- Craftsman's Writ - Huge Thorium Battleaxe
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -131,6 +135,7 @@ _.Zones =
 				}),
 				q(9179, {	-- Craftsman's Writ - Imperial Plate Chest
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -138,6 +143,7 @@ _.Zones =
 				}),
 				q(9206, {	-- Craftsman's Writ - Lightning Eel
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -145,6 +151,7 @@ _.Zones =
 				}),
 				q(9202, {	-- Craftsman's Writ - Major Healing Potion
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -152,6 +159,7 @@ _.Zones =
 				}),
 				q(9200, {	-- Craftsman's Writ - Major Mana Potion
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -159,6 +167,7 @@ _.Zones =
 				}),
 				q(9205, {	-- Craftsman's Writ - Plated Armorfish
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -166,6 +175,7 @@ _.Zones =
 				}),
 				q(9203, {	-- Craftsman's Writ - Potion of Petrification
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -173,6 +183,7 @@ _.Zones =
 				}),
 				q(9183, {	-- Craftsman's Writ - Radiant Circlet
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -180,6 +191,7 @@ _.Zones =
 				}),
 				q(9185, {	-- Craftsman's Writ - Rugged Armor Kit
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
@@ -188,6 +200,7 @@ _.Zones =
 				}),
 				q(9191, {	-- Craftsman's Writ - Runecloth Bag
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -195,6 +208,7 @@ _.Zones =
 				}),
 				q(9190, {	-- Craftsman's Writ - Runecloth Boots
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -202,6 +216,7 @@ _.Zones =
 				}),
 				q(9194, {	-- Craftsman's Writ - Runecloth Robe
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -209,6 +224,7 @@ _.Zones =
 				}),
 				q(9187, {	-- Craftsman's Writ - Runic Leather Pants
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -216,6 +232,7 @@ _.Zones =
 				}),
 				q(9204, {	-- Craftsman's Writ - Stonescale Eel
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -223,6 +240,7 @@ _.Zones =
 				}),
 				q(9196, {	-- Craftsman's Writ - Thorium Grenade
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -230,6 +248,7 @@ _.Zones =
 				}),
 				q(9198, {	-- Craftsman's Writ - Thorium Tube
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -237,6 +256,7 @@ _.Zones =
 				}),
 				q(9181, {	-- Craftsman's Writ - Volcanic Hammer
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -244,6 +264,7 @@ _.Zones =
 				}),
 				q(9186, {	-- Craftsman's Writ - Wicked Leather Belt
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -251,6 +272,7 @@ _.Zones =
 				}),
 				q(9184, {	-- Craftsman's Writ - Wicked Leather Headband
 					["lvl"] = 55,
+					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
@@ -290,6 +312,7 @@ _.Zones =
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
 					["lvl"] = 56,
 					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
 					["g"] = {
 						i(16994),	-- Duskwing Gloves
 						i(16995),	-- Duskwing Mantle
@@ -298,6 +321,7 @@ _.Zones =
 				q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -310,6 +334,7 @@ _.Zones =
 				q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
+					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -322,6 +347,7 @@ _.Zones =
 				q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
 					["lvl"] = 55,
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
+					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -333,6 +359,8 @@ _.Zones =
 				}),
 				q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
 					["lvl"] = 55,
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -348,14 +376,19 @@ _.Zones =
 				}),
 				q(5246, {	-- Fragments of the Past
 					["lvl"] = 53,
+					["qg"] = 10304,	-- Aurora Skycaller
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 5245,	-- Troubled Spirits of Kel'Theril
 				}),
 				q(5247, {	-- Fragments of the Past
 					["lvl"] = 53,
+					["qg"] = 10304,	-- Aurora Skycaller
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 5246,	-- Fragments of the Past
 				}),
 				q(6024, {	-- Hameya's Plea
 					["lvl"] = 54,
+					["provider"] = { "o", 177667 },	-- Torn Scroll
 					["g"] = {
 						i(15814),	-- Hameya's Slayer
 						i(15815),	-- Hameya's Cloak
@@ -363,9 +396,11 @@ _.Zones =
 				}),
 				q(5168, {	-- Heroes of Darrowshire
 					["lvl"] = 50,
+					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(5942, {	-- Hidden Treasures
 					["lvl"] = 50,
+					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
 					["g"] = {
 						i(15855),	-- Ring of Protection
 						i(15856),	-- Archlight Talisman
@@ -382,6 +417,7 @@ _.Zones =
 				}),
 				q(5509, {	-- Invader's Scourgestones
 					["lvl"] = 50,
+					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -393,9 +429,12 @@ _.Zones =
 				}),
 				q(5264, {	-- Lord Maxwell Tyrosus
 					["lvl"] = 55,
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["sourceQuest"] = 5263,	-- Above and Beyond
 				}),
 				q(5513, {	-- Mantles of the Dawn
 					["lvl"] = 55,
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 				}),
 				q(5206, {	-- Marauders of Darrowshire
 					["lvl"] = 50,
@@ -406,6 +445,7 @@ _.Zones =
 				}),
 				q(5510, {	-- Minion's Scourgestones
 					["lvl"] = 50,
+					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -413,6 +453,9 @@ _.Zones =
 				}),
 				q(6146, {	-- Nathanos' Ruse
 					["lvl"] = 56,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
+					["sourcequest"] = 6145,	-- The Crimson Courier
 					["g"] = {
 						i(15875),	-- Rotten Apple
 					},
@@ -420,6 +463,7 @@ _.Zones =
 				q(5781, {	-- Of Forgotten Memories
 					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5742,	-- Redemption
 				}),
 				q(5845, {	-- Of Lost Honor
 					["lvl"] = 52,
@@ -451,12 +495,21 @@ _.Zones =
 				q(5742, {	-- Redemption
 					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuests"] = {
+						5543,	-- Blood Tinged Skies
+						5544,	-- Carrion Grubbage						
+						5542,	-- Demon Dogs
+					},
 				}),
 				q(5941, {	-- Return to Chromie
 					["lvl"] = 50,
+					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(6147, {	-- Return to Nathanos
 					["lvl"] = 56,
+					["qg"] = 11898,	-- Crusader Lord Valdelmar
+					["sourcequest"] = 6146,	-- Nathanos' Ruse
+					["races"] = HORDE_ONLY,
 				}),
 				q(9136, {	-- Savage Flora
 					["lvl"] = 55,
@@ -535,6 +588,7 @@ _.Zones =
 				}),
 				q(5721, {	-- The Battle of Darrowshire
 					["lvl"] = 55,
+					["sourceQuest"] = 5941,	-- Return to Chromie
 					["g"] = {
 						i(15723),	-- Tea with Sugar
 					},
@@ -542,6 +596,7 @@ _.Zones =
 				q(6144, {	-- The Call to Command
 					["lvl"] = 56,
 					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
 				}),
 				q(6136, {	-- The Corpulent One
 					["lvl"] = 56,
@@ -551,9 +606,6 @@ _.Zones =
 						i(17003),	-- Skullstone Hammer
 						i(17004),	-- Sarah's Guide
 					},
-				}),
-				q(6145, {	-- The Crimson Courier
-					["lvl"] = 56,
 				}),
 				q(9122, {	-- The Dread Citadel - Naxxramas
 					["lvl"] = 60,
@@ -583,9 +635,6 @@ _.Zones =
 						i(22636),	-- Ice Guard
 					},
 				}),
-				q(5065, {	-- The Lost Tablets of Mosh'aru
-					["lvl"] = 40,
-				}),
 				q(6133, {	-- The Ranger Lord's Behest
 					["lvl"] = 54,
 				}),
@@ -595,6 +644,9 @@ _.Zones =
 				}),
 				q(6148, {	-- The Scarlet Oracle, Demetria
 					["lvl"] = 56,
+					["races"] = HORDE_ONLY,
+					["qg"] = 11878,	-- Nathanos Blightcaller
+					["sourceQuest"] = 6147,	-- Return to Nathanos
 					["g"] = {
 						i(16996),	-- Gorewood Bow
 						i(16997),	-- Stormrager
