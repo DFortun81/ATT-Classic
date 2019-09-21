@@ -35,7 +35,8 @@ _.Zones =
 				}),
 				q(3602, {	-- Azsharite
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["sourceQuest"] = 3511,	-- The Name of the Beast
 					["g"] = {
 						i(10839),	-- Crystallized Note
 					},
@@ -46,7 +47,8 @@ _.Zones =
 				}),
 				q(3508, {	-- Breaking the Ward
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["sourceQuest"] = 3141,	-- Loramus
 				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["lvl"] = 45,
@@ -94,8 +96,8 @@ _.Zones =
 				}),
 				q(3141, {	-- Loramus
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7783,	-- Loramus Thalipedes
+					["sourceQuest"] = 2744,	-- The Demon Hunter
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
 					["lvl"] = 45,
@@ -123,22 +125,26 @@ _.Zones =
 				}),
 				q(3621, {	-- The Formation of Felbane
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["sourceQuest"] = 3602,	-- Azsharite
 				}),
 				q(6822, {	-- The Molten Core
 					["lvl"] = 55,
 				}),
+				q(3509, {	-- The Name of the Beast
+					["lvl"] = 45,
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["sourceQuest"] = 3508,	-- Breaking the Ward
+				}),
 				q(3510, {	-- The Name of the Beast
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 6134,	-- Lord Arkkoroc
+					["sourceQuest"] = 3509,	-- The Name of the Beast
 				}),
 				q(3511, {	-- The Name of the Beast
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
-				}),
-				q(3509, {	-- The Name of the Beast
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 6134,	-- Lord Arkkoroc
+					["sourceQuest"] = 3510,	-- The Name of the Beast
 				}),
 				q(8729, {	-- The Wrath of Neptulon
 					["lvl"] = 60,
