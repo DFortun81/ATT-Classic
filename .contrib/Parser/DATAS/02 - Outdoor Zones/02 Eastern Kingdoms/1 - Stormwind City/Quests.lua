@@ -37,6 +37,12 @@ _.Zones =
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				}),
+				q(4766, {	-- Mayara Brightwing
+					["lvl"] = 57,
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["qg"] = 2285,	-- Count Remington Ridgewell
+				}),
 				{
 					["questID"] = 1861,	-- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
@@ -78,20 +84,39 @@ _.Zones =
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(6403, {   -- The Great Masquerade
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 12580,	-- Reginald Windsor
-				}),
 				q(6501, {	-- The Dragon's Eye
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["sourceQuest"] = 6403,	-- The Great Masquerade
 				}),
 				q(6182, {	-- The First and the Last
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				}),
+				q(6403, {   -- The Great Masquerade
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 12580,	-- Reginald Windsor
+					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
+				}),
+				q(543, {	-- The Perenolde Tiara
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2285,	-- Count Remington Ridgewell
+				}),
+				q(4185, {	-- The True Masters (3/6)
+					["lvl"] = 48,
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4184,	-- The True Masters (2/6)
+				}),
+				q(4186, {	-- The True Masters (4/6)
+					["lvl"] = 48,
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4185,	-- The True Masters (3/6)
 				}),
 				q(1449, {	-- To The Hinterlands
 					["lvl"] = 38,

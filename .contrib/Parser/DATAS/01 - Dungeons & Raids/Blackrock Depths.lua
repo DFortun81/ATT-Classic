@@ -15,8 +15,20 @@ _.Instances = {
 						i(12082),	-- Wyrmhide Spaulders
 					},
 				}),
+				q(4264, {	-- A Crumpled Up Note
+					["itemID"] = 11446,	-- A Crumpled Up Note
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4242,	-- Abandoned Hope
+				}),
+				q(4282, {	-- A Shred of Hope
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9023,	-- Marshal Windsor
+					["sourceQuest"] = 4264,	-- A Crumpled Up Note
+				}),
 				q(4242, {	-- Abandoned Hope
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9023,	-- Marshal Windsor
+					["sourceQuest"] = 4241,	-- Marshal Windsor
 					["groups"] = {
 						i(12018),	-- Conservator Helm
 						i(12021),	-- Shieldplate Sabatons
@@ -25,22 +37,6 @@ _.Instances = {
 				}),
 				q(3907, {	-- Disharmony of Fire
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(12112),	-- Crypt Demon Bracers
-						i(12114),	-- Nightfall Gloves
-						i(12115),	-- Stalwart Clutch
-						i(12113),	-- Sunborne Cape
-					},
-				}),
-				q(4126, {	-- Hurley Blackbreath
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(12000),	-- Limb Cleaver
-						i(11964),	-- Swiftstrike Cudgel
-					},
-				}),
-				q(4263, {	-- Incendius!
-					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12112),	-- Crypt Demon Bracers
 						i(12114),	-- Nightfall Gloves
@@ -68,8 +64,27 @@ _.Instances = {
 					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
 					["repeatable"] = true,
 				}),
-				q(4322, {	-- Jail Break!
+				q(4126, {	-- Hurley Blackbreath
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(12000),	-- Limb Cleaver
+						i(11964),	-- Swiftstrike Cudgel
+					},
+				}),
+				q(4263, {	-- Incendius!
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(12112),	-- Crypt Demon Bracers
+						i(12114),	-- Nightfall Gloves
+						i(12115),	-- Stalwart Clutch
+						i(12113),	-- Sunborne Cape
+					},
+				}),
+				q(4322, {	-- Jail Break!
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9023,	-- Marshal Windsor
+					["sourceQuest"] = 4282,	-- A Shred of Hope
 					["groups"] = {
 						i(12061),	-- Blade of Reckoning
 						i(12062),	-- Skilled Fighting Blade
@@ -82,6 +97,12 @@ _.Instances = {
 						i(12000),	-- Limb Cleaver
 						i(11964),	-- Swiftstrike Cudgel
 					},
+				}),
+				q(4241, {	-- Marshal Windsor
+					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9560,	-- Marshal Maxwell
+					["sourceQuest"] = 4224,	-- The True Masters (6/6)
 				}),
 				q(4132, {	-- Operation: Death to Angerforge
 					["races"] = HORDE_ONLY,
@@ -404,11 +425,6 @@ _.Instances = {
 					9441,	-- Dark Keeper Zimrel
 				},
 				["groups"] = {
-					{
-						["itemID"] = 11446,	-- A Crumpled Up Note
-						["questID"] = 4264,	-- A Crumpled Up Note
-						["races"] = ALLIANCE_ONLY,
-					},
 					i(11197, {	-- Dark Keeper Key
 						["description"] = "The Dark Coffer contains one or more random world drop BoEs. Usually greens.",
 					}),
@@ -419,6 +435,7 @@ _.Instances = {
 					["itemID"] = 11464,	-- Marshal Windsor's Lost Information
 					["questID"] = 4282,	-- A Shred of Hope
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4264,	-- A Crumpled Up Note
 				},
 				i(11816), 	-- Angerforge's Battle Axe
 				i(11817), 	-- Lord General's Sword
@@ -436,6 +453,7 @@ _.Instances = {
 					["itemID"] = 11465,	-- Marshal Windsor's Lost Information
 					["questID"] = 4282,	-- A Shred of Hope
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4264,	-- A Crumpled Up Note
 				},
 				i(11823), 	-- Luminary Kilt
 				i(11822), 	-- Omnicast Boots

@@ -68,7 +68,9 @@ _.Zones =
 				}),
 				q(6502, {	-- Drakefire Amulet
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10929,	-- Haleh
+					["sourceQuest"] = 6501,	-- The Dragon's Eye
 					["g"] = {
 						i(16309),	-- Drakefire Amulet
 					},
