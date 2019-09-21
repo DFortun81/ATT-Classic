@@ -8,7 +8,7 @@ _.Zones =
 			n(-2, {	-- Vendors
 				n(12022, {	-- Lorelae Wintersong <Trade Supplies>
 					["coord"] = { 48.2, 40.1, MOONGLADE },
-					["g"] = {
+					["groups"] = {
 						i(16243),	-- Formula: Runed Arcanite Rod
 						i(16224),	-- Formula: Enchant Cloak - Superior Defense
 						i(14483),	-- Pattern: Felcloth Pants

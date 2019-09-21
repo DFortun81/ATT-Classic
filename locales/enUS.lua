@@ -1163,6 +1163,7 @@ app.L = {
 		[177964] = "Fathom Stone",
 		[179485] = "A Broken Trap",
 		[179501] = "Knot Thimblejack's Cache",
+		[179565] = "Dusty Reliquary",
 		[179832] = "Pillaclencher's Ornate Pillow",
 		[179564] = "Gordok Tribute Chest",
 		[179697] = "Arena Treasure Chest",
