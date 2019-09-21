@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
+					["sourceQuest"] = 6183,	-- Honor the Dead
 				}),
 				q(333, {	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
@@ -18,6 +19,7 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
+					["sourceQuest"] = 6182,	-- The First and the Last
 				}),
 				{
 					["questID"] = 399,	-- Humble Beginnings
