@@ -49,6 +49,10 @@ _.Zones =
 				}),
 				q(254, {	-- Digging Through the Dirt
 					["lvl"] = 20,
+					["altQuests"] = {
+						253,	-- Bride of the Embalmer
+					},
+					["description"] = "This quest auto completes when you click the dirt while having the quest 'Bride of the Embalmer'",
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 51708,	-- Eliza's Grave Dirt
 				}),
@@ -105,6 +109,10 @@ _.Zones =
 				}),
 				q(526, {	-- Lightforge Ingots
 					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						324,	-- The Lost Ingots
+					},
 				}),
 				q(321, {	-- Lightforge Iron
 					["lvl"] = 20,

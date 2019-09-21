@@ -142,6 +142,12 @@ _.Zones =
 						i(2690),	-- Latched Belt
 					},
 				}),
+				{
+					["questID"] = 345,	-- Ink Supplies
+					["qg"] = 951,	-- Brother Paxton <Librarian>
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+				},
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
@@ -254,6 +260,15 @@ _.Zones =
 						i(159),	-- Refreshing Spring Water
 					},
 				}),
+				{
+					["questID"] = 346,	-- Return to Kristoff
+					["qg"] = 951,	-- Brother Paxton <Librarian>
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(6095),	-- Wandering Boots
+					},
+				},
 				q(11, {	-- Riverpaw Gnoll Bounty
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
