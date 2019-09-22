@@ -485,7 +485,7 @@ _.Zones =
 				q(5206, {	-- Marauders of Darrowshire
 					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
-					["sourcequest"] = 5181,	-- Villains of Darrowshire
+					["sourceQuest"] = 5181,	-- Villains of Darrowshire
 				}),
 				q(5464, {	-- Menethil's Gift
 					["lvl"] = 57,
@@ -504,7 +504,7 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11878,	-- Nathanos Blightcaller
-					["sourcequest"] = 6145,	-- The Crimson Courier
+					["sourceQuest"] = 6145,	-- The Crimson Courier
 					["g"] = {
 						i(15875),	-- Rotten Apple
 					},
