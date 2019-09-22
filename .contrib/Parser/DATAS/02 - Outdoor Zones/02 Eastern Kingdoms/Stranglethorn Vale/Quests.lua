@@ -136,7 +136,8 @@ _.Zones =
 				}),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
 					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
+					["qg"] = 7802,	-- Galvan the Ancient
+					["sourceQuest"] = 3621,	-- The Formation of Felbane
 					["g"] = {
 						i(10697),	-- Enchanted Azsharite Felbane Dagger
 						i(10698),	-- Enchanted Azsharite Felbane Staff
@@ -340,6 +341,7 @@ _.Zones =
 				q(3626, {	-- Return to the Blasted Lands
 					["lvl"] = 45,
 					["qg"] = 7802,	-- Galvan the Ancient
+					["sourceQuest"] = 3625,	-- Enchanted Azsharite Fel Weaponry
 				}),
 				q(592, {	-- Saving Yenniku
 					["lvl"] = 30,
