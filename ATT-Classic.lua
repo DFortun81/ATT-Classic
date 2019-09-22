@@ -3775,6 +3775,27 @@ end
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
 UpdateGroup = function(parent, group)
+	-- If the group is a map: append quests for this map from other groups.
+	if (group.mapID and group.g) then
+		local searchResults = SearchForField("mapID", group.mapID);
+		if searchResults and #searchResults > 1 then
+			for i=1,#searchResults,1 do
+				local searchResult = searchResults[i];
+				if searchResult.questID then
+					-- add it to the 2nd level table "group.g.g"
+					-- (not sure if there is prettier LUA to do so...)
+				    for i,tab in pairs(group.g) do
+				    	for key, value in pairs(tab) do
+				    		if (key == "g") then
+				    			table.insert(value, searchResult);
+			    			end
+				        end
+				    end
+				end
+			end
+		end
+	end
+
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
@@ -3846,7 +3867,7 @@ UpdateGroup = function(parent, group)
 		-- This group doesn't meet requirements.
 		group.visible = false;
 	end
-	
+
 	if group.OnUpdate then group:OnUpdate(); end
 end
 UpdateGroups = function(parent, g)
