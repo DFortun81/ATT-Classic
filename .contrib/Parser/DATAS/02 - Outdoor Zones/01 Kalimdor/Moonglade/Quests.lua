@@ -8,6 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				{
 					["questID"] = 5527,	-- A Reliquary of Purity
+					["u"] = 3,	-- Added in later phase
 					["description"] = "This quest will become available with Phase 2.",
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
@@ -24,6 +25,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 5526,	-- Shards of the Felvine
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
 					["description"] = "This quest will become available with Phase 2.",
 					["qg"] = 11801,	-- Rabine Saturna
@@ -54,6 +56,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 8741,	-- The Champion Returns
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
 					["description"] = "This quest will become available with Phase 5.",
 					["qg"] = 11832,	-- Keeper Remulos
@@ -69,6 +72,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 8736,	-- The Nightmare Manifests
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["description"] = "This quest will become available with Phase 5.\n\nNOTE: You do NOT want to kill Eranikus or allow Remulos to die.",
 					["qg"] = 11832,	-- Keeper Remulos
@@ -82,6 +86,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 8735,	-- The Nightmare's Corruption
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8734,	-- Tyrande and Remulos
 					["qg"] = 11832,	-- Keeper Remulos
 					["description"] = "This quest will become available with Phase 5.",
@@ -150,6 +155,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 8447,	-- Waking Legends
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11832,	-- Keeper Remulos
 					["description"] = "This quest will become available with Phase 2.",
