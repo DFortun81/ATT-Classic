@@ -189,6 +189,7 @@ _.Zones =
 				}),
 				q(2881, {	-- Troll Necklace Bounty
 					["lvl"] = 40,
+					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2934, {	-- Undamaged Venom Sac

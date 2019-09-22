@@ -45,6 +45,9 @@ _.Zones =
 				}),
 				q(635, {	-- Crystal in the Mountains
 					["lvl"] = 30,
+					["altQuests"] = {
+						642,	-- The Princess Trapped
+					},
 				}),
 				q(667, {	-- Death From Below
 					["lvl"] = 35,
