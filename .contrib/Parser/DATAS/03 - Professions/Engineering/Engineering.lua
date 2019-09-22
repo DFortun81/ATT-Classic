@@ -142,6 +142,10 @@ profession(202, {	-- Engineering
 				["recipeID"] = 15628
 			},
 			{
+				["name"] = "Salt Shaker",
+				["recipeID"] = 19567
+			},
+			{
 				["name"] = "Snowmaster 9000",
 				["recipeID"] = 21940
 			},
