@@ -8,33 +8,112 @@ _.Instances = {
 		["lvl"] = 48,
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(4024, {	-- A Taste of Flame
+				{
+					["itemID"] = 18628,	-- Thorium Brotherhood Contract
+					["questID"] = 7604,	-- A Binding Contract
+					["qg"] = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
+					["requireSkill"] = 164,	-- Blacksmithing
+					["cost"] = {
+						{ "i", 17203, 1 },	-- Sulfuron Ingot
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(18592),	-- Plans: Sulfuron Hammer
+					},
+				},
+				{
+					["itemID"] = 11446,	-- A Crumpled Up Note
+					["questID"] = 4264,	-- A Crumpled Up Note
+					["sourceQuest"] = 4242,	-- Abandoned Hope
+					["description"] = "After completing the Abandoned Hope quest, kill trash until this item drops for you. If your group has not yet killed the Dark Keeper, they have a fairly high chance to drop this item as well.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4282,	-- A Shred of Hope
+					["sourceQuest"] = 4264,	-- A Crumpled Up Note
+					["qg"] = 9023,	-- Marshal Windsor
+					["cost"] = {
+						{ "i", 11464, 1 },	-- Marshal Windsor's Lost Information
+						{ "i", 11465, 1 },	-- Marshal Windsor's Lost Information
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4022,	-- A Taste of Flame
+					["qg"] = 9459,	-- Cyrus Therepentous
+					["altQuests"] = {
+						4023,	-- A Taste of Flame
+					},
+					["description"] = "If you completed the quest 'Trinkets...' in Searing Gorge, you can complete this quest immediately without having to fight the elite dragon by bringing the Black Dragonflight Molt with you.",
+					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 10575, 1 },	-- Black Dragonflight Molt
+					},
+					["lvl"] = 52,
+				},
+				{
+					["questID"] = 4023,	-- A Taste of Flame
+					["altQuests"] = {
+						4022,	-- A Taste of Flame
+					},
+					["qg"] = 9459,	-- Cyrus Therepentous
+					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 10575, 1 },	-- Black Dragonflight Molt
+					},
+					["lvl"] = 52,
+					["groups"] = {
+						{
+							["itemID"] = 10575, -- Black Dragonflight Molt
+							["questID"] = 4023,	-- A Taste of Flame
+							["qg"] = 9461, -- Frenzied Black Drake <Cyrus's Minion>
+						},
+					},
+				},
+				{
+					["questID"] = 4024,	-- A Taste of Flame
+					["sourceQuest"] = 4023,	-- A Taste of Flame
+					["qg"] = 9459,	-- Cyrus Therepentous
+					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["groups"] = {
 						i(12066),	-- Shaleskin Cape
-						i(12083),	-- Valconian Sash
 						i(12082),	-- Wyrmhide Spaulders
+						i(12083),	-- Valconian Sash
 					},
-				}),
-				q(4264, {	-- A Crumpled Up Note
-					["itemID"] = 11446,	-- A Crumpled Up Note
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 4242,	-- Abandoned Hope
-				}),
-				q(4282, {	-- A Shred of Hope
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9023,	-- Marshal Windsor
-					["sourceQuest"] = 4264,	-- A Crumpled Up Note
-				}),
-				q(4242, {	-- Abandoned Hope
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9023,	-- Marshal Windsor
+				},
+				{
+					["questID"] = 4242,	-- Abandoned Hope
 					["sourceQuest"] = 4241,	-- Marshal Windsor
+					["qg"] = 9023,	-- Marshal Windsor
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12018),	-- Conservator Helm
 						i(12021),	-- Shieldplate Sabatons
 						i(12041),	-- Windshear Leggings
 					},
-				}),
+				},
+				{
+					["questID"] = 3981,	-- Commander Gor'shak
+					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
+					["coord"] = { 5.8, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 3801,	-- Dark Iron Legacy
+					["qg"] = 8888,	-- Franclorn Forgewright
+					["maps"] = { BLACKROCK_MOUNTAIN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
 				q(3907, {	-- Disharmony of Fire
 					["races"] = HORDE_ONLY,
 					["groups"] = {
@@ -511,17 +590,6 @@ _.Instances = {
 			n(12944, { 	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 				["groups"] = {
-					i(18628, {	-- Thorium Brotherhood Contract
-						["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-						["cost"] = {
-							{ "i", 17203, 1 },	-- Sulfuron Ingot
-						},
-						["groups"] = {
-							q(7604, {	-- A Binding Contract
-								i(18592),	-- Plans: Sulfuron Hammer
-							}),
-						},
-					}),
 					i(19449),	-- Formula: Enchant Weapon - Mighty Intellect
 					i(19448),	-- Formula: Enchant Weapon - Mighty Versatility
 					i(19444),	-- Formula: Enchant Weapon - Strength

@@ -6,24 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(-17, {	-- Quests
-				q(4023, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["qg"] = 9459,	-- Cyrus Therepentous
-				}),
-				q(4022, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9459,	-- Cyrus Therepentous
-				}),
-				q(4024, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["g"] = {
-						i(12066),	-- Shaleskin Cape
-						i(12082),	-- Wyrmhide Spaulders
-						i(12083),	-- Valconian Sash
-					},
-				}),
 				q(4726, {	-- Broodling Essence
 					["lvl"] = 50,
 					["qg"] = 10267,	-- Tinkee Steamboil
