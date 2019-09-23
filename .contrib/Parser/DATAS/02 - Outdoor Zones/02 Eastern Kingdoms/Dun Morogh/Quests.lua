@@ -121,6 +121,9 @@ _.Zones =
 				q(415, {	-- Rejold's New Brew
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
+					["altQuests"] = {
+						413,	-- Shimmer Stout
+					},
 					["g"] = {
 						i(3087),	-- Mug of Shimmer Stout
 					},
