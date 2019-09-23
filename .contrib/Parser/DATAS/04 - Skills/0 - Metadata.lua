@@ -42,12 +42,14 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 23214,	-- Summon Charger
+		["u"] = 3,	-- Added in later phase
 		["classes"] = { 2 },	-- Paladin Only!
 		["races"] = { 1, 3 },	-- Human / Dwarf Only!
 		["lvl"] = 60,
 	},
 	{
 		["recipeID"] = 23161,	-- Summon Dreadsteed
+		["u"] = 3,	-- Added in later phase
 		["classes"] = { 9 },	-- Warlock Only!
 		["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 		["lvl"] = 60,

@@ -154,7 +154,12 @@ _.Zones =
 				q(3481, {	-- Trinkets...
 					["lvl"] = 40,
 					["g"] = {
-						i(10569),	-- Hoard of the Black Dragonflight
+						i(10569, {	-- Hoard of the Black Dragonflight
+							{
+								["itemID"] = 10575, -- Black Dragonflight Molt
+								["questID"] = 4023,	-- A Taste of Flame
+							},
+						}),
 					},
 				}),
 				q(7701, {	-- WANTED: Overseer Maltorius

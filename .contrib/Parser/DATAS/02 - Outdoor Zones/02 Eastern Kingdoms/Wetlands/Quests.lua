@@ -156,6 +156,7 @@ _.Zones =
 					["lvl"] = 23,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2086,	-- Valstag Ironjaw
+					["isBreadcrumb"] = true,
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["lvl"] = 19,

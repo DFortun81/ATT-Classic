@@ -9,7 +9,9 @@ profession(202, {	-- Engineering
 					{
 						["name"] = "Dimensional Ripper - Everlook",
 						["recipeID"] = 23486,
-						["description"] = "Speak to Zap Farflinger in  Winterspring at 59.6, 49.8 to learn this recipe.",
+						["description"] = "Speak to Zap Farflinger in Winterspring at 59.6, 49.8 to learn this recipe.",
+						["qg"] = 14742,	--  Zap Farflinger
+						["coord"] = { 59.6, 49.8, WINTERSPRING },
 					},
 					{
 						["name"] = "Goblin Construction Helmet",

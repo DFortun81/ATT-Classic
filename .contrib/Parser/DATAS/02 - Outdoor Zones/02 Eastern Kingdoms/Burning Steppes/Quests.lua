@@ -6,24 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(-17, {	-- Quests
-				q(4023, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["qg"] = 9459,	-- Cyrus Therepentous
-				}),
-				q(4022, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9459,	-- Cyrus Therepentous
-				}),
-				q(4024, {	-- A Taste of Flame
-					["lvl"] = 52,
-					["g"] = {
-						i(12066),	-- Shaleskin Cape
-						i(12082),	-- Wyrmhide Spaulders
-						i(12083),	-- Valconian Sash
-					},
-				}),
 				q(4726, {	-- Broodling Essence
 					["lvl"] = 50,
 					["qg"] = 10267,	-- Tinkee Steamboil
@@ -34,6 +16,7 @@ _.Zones =
 				}),
 				q(4182, {	-- Dragonkin Menace
 					["lvl"] = 48,
+					["qg"] = 9562,	-- Helendis Riverhorn
 				}),
 				q(3823, {	-- Extinguish the Firegut
 					["lvl"] = 48,
@@ -54,6 +37,7 @@ _.Zones =
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9561,	-- Jalinda Sprig
+					["sourceQuest"] = 4262,	-- Overmaster Pyron
 					["g"] = {
 						i(12113),	-- Sunborne Cape
 						i(12114),	-- Nightfall Gloves
@@ -64,39 +48,52 @@ _.Zones =
 				}),
 				q(3822, {	-- Krom'Grul
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(11869),	-- Sha'ni's Ring
 					},
 				}),
 				q(5522, {	-- Leonid Barthalomew
 					["lvl"] = 57,
+					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 4735,	-- Egg Collection
 				}),
 				q(4481, {	-- Libram of Constitution
 					["lvl"] = 50,
+					["repeatable"] = true,
+					["qg"] = 9836,	-- Mathredis Firestar
 					["g"] = {
 						i(11642),	-- Lesser Arcanum of Constitution
 					},
 				}),
 				q(4483, {	-- Libram of Resilience
 					["lvl"] = 50,
+					["repeatable"] = true,
+					["qg"] = 9836,	-- Mathredis Firestar
 					["g"] = {
 						i(11644),	-- Lesser Arcanum of Resilience
 					},
 				}),
 				q(4463, {	-- Libram of Rumination
 					["lvl"] = 50,
+					["repeatable"] = true,
+					["qg"] = 9836,	-- Mathredis Firestar
 					["g"] = {
 						i(11622),	-- Lesser Arcanum of Rumination
 					},
 				}),
 				q(4482, {	-- Libram of Tenacity
 					["lvl"] = 50,
+					["repeatable"] = true,
+					["qg"] = 9836,	-- Mathredis Firestar
 					["g"] = {
 						i(11643),	-- Lesser Arcanum of Tenacity
 					},
 				}),
 				q(4484, {	-- Libram of Voracity
 					["lvl"] = 50,
+					["repeatable"] = true,
+					["qg"] = 9836,	-- Mathredis Firestar
 					["g"] = {
 						i(11647),	-- Lesser Arcanum of Voracity
 						i(11648),	-- Lesser Arcanum of Voracity
@@ -140,6 +137,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9560,	-- Marshal Maxwell
+					["sourceQuest"] = 4322,	-- Jail Break!
 				}),
 				q(4296, {	-- Tablet of the Seven
 					["lvl"] = 50,
@@ -159,24 +157,19 @@ _.Zones =
 				}),
 				q(4061, {	-- The Rise of the Machines
 					["lvl"] = 52,
+					["races"] = HORDE_ONLY,
 				}),
-				q(4223, {	-- The True Masters
+				q(4183, {	-- The True Masters (1/6)
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["sourceQuest"] = 4182,	-- Dragonkin Menace
 				}),
-				q(4184, {	-- The True Masters
+				q(4224, {	-- The True Masters (6/6)
 					["lvl"] = 48,
-				}),
-				q(4185, {	-- The True Masters
-					["lvl"] = 48,
-				}),
-				q(4186, {	-- The True Masters
-					["lvl"] = 48,
-				}),
-				q(4224, {	-- The True Masters
-					["lvl"] = 48,
-				}),
-				q(4183, {	-- The True Masters
-					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9560,	-- Marshal Maxwell
+					["sourceQuest"] = 4223,	-- The True Masters (5/6)
 				}),
 			}),
 		}),
