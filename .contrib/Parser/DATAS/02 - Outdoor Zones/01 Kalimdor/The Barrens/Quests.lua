@@ -7,22 +7,25 @@ _.Zones =
 		m(THE_BARRENS, {	-- The Barrens
 			n(-17, {	-- Quests
 				q(6361, {	-- A Bundle of Hides
-					["lvl"] = 10,
+					["qg"] = 3079,	-- Varg Windwhisper
+					["coord"] = { 45.82, 58.69, MULGORE },
 					["races"] = {
 						6,	-- Tauren
 					},
-					["qg"] = 3079,	-- Varg Windwhisper
+					["lvl"] = 10,
 				}),
 				q(1153, {	-- A New Ore Sample
-					["lvl"] = 25,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3433,	-- Tatternack Steelforge
+					["coord"] = { 45.10, 57.69, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(6741),	-- Orcish War Sword
 					},
 				}),
 				q(5043, {	-- Agamaggan's Agility
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -30,6 +33,7 @@ _.Zones =
 				}),
 				q(5042, {	-- Agamaggan's Strength
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -57,8 +61,16 @@ _.Zones =
 						i(5340),	-- Cauldron Stirrer
 					},
 				}),
+				q(879, {	-- Betrayal from Within
+					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
+					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
+				}),
 				q(906, {	-- Betrayal from Within
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 879,	-- Betrayal from Within
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
@@ -67,22 +79,26 @@ _.Zones =
 						i(5317),	-- Dry Moss Tunic
 					},
 				}),
-				q(879, {	-- Betrayal from Within
-					["qg"] = 3430,	-- Mangletooth
-					["coord"] = { 44.55, 59.26, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 17,
-				}),
 				q(5052, {	-- Blood Shards of Agamaggan
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 878,	-- Tribes at War
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
+				q(1838, {	-- Brutal Armor
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1825,	-- Speak with Thun'grim
+					["coord"] = { 57.23, 30.34, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+				}),
 				q(855, {	-- Centaur Bracers
+					["qg"] = 3389,	-- Regthar Deathgate
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
 					["lvl"] = 9,
 					["races"] = HORDE_ONLY,
-					["qg"] = 3389,	-- Regthar Deathgate
 					["g"] = {
 						i(5346),	-- Orcish Battle Bow
 						i(5344),	-- Pointed Axe
@@ -90,8 +106,8 @@ _.Zones =
 					},
 				}),
 				q(819, {	-- Chen's Empty Keg
-					["lvl"] = 11,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 					["description"] = "Started by picking up one of the many kegs littered throughout the Barrens.",
 				}),
 				q(821, {	-- Chen's Empty Keg
@@ -127,14 +143,18 @@ _.Zones =
 					},
 				}),
 				q(4021, {	-- Counterattack!
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3389,	-- Regthar Deathgate
+					["sourceQuest"] = 852,	-- Hezrul Bloodmark
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(913, {	-- Cry of the Thunderhawk
+					["qg"] = 3387,	-- Jorn Skyseer
+					["sourceQuest"] = 907,	-- Enraged Thunder Lizards
+					["coord"] = { 44.86, 59.13, THE_BARRENS },
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
-					["qg"] = 3387,	-- Jorn Skyseer
 					["g"] = {
 						i(5302),	-- Cobalt Buckler
 						i(5306),	-- Wind Rider Staff
@@ -153,6 +173,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
+				q(862, {	-- Dig Rat Stew
+					["qg"] = 3443,	-- Grub
+					["coord"] = { 55.31, 31.79, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
+				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
@@ -165,23 +191,28 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(881, {	-- Echeyakee
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuest"] = 903,	-- Prowlers of the Barrens
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(868, {	-- Egg Hunt
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3428,	-- Korran
+					["coord"] = { 51.07, 29.62, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(6503),	-- Harlequin Robes
 						i(6502),	-- Violet Scale Armor
 					},
 				}),
 				q(907, {	-- Enraged Thunder Lizards
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
+					["sourceQuest"] = 882,	-- Ishamuhale
+					["coord"] = { 44.86, 59.13, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(1503, { -- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
@@ -198,9 +229,10 @@ _.Zones =
 					}
 				}),
 				q(898, {	-- Free From the Hold
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3465,	-- Gilthares Firebough
+					["coord"] = { 61.96, 54.97, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(5311),	-- Buckled Boots
 						i(5312),	-- Riveted Gauntlets
@@ -213,63 +245,77 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(843, {	-- Gann's Reclamation
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3341,	-- Gann Stonespire
+					["coord"] = { 46.08, 76.37, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(875, {	-- Harpy Lieutenants
-					["lvl"] = 12,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3449,	-- Darsok Swiftdagger
+					["sourceQuest"] = 867,	-- Harpy Raiders
+					["coord"] = { 51.62, 30.90, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(867, {	-- Harpy Raiders
-					["lvl"] = 12,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3449,	-- Darsok Swiftdagger
+					["coord"] = { 51.62, 30.90, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(852, {	-- Hezrul Bloodmark
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3389,	-- Regthar Deathgate
+					["sourceQuest"] = 851,	-- Verog the Dervish
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 					["g"] = {
 						i(5351),	-- Bounty Hunter's Ring
 					},
 				}),
 				q(3514, {	-- Horde Presence
-					["lvl"] = 15,
-					["races"] = HORDE_ONLY,
 					["qg"] = 8582,	-- Kadrak
+					["sourceQuest"] = 3513,	-- The Runed Scroll
+					["coord"] = { 48.12, 5.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(10653),	-- Trailblazer Boots
 						i(10654),	-- Jutebraid Gloves
 					},
 				}),
 				q(858, {	-- Ignition
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
+					["coord"] = { 56.52, 7.45, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(3370, {	-- In Nightmares
-					["lvl"] = 10,
+					["qg"] = 8418,	-- Falla Sagewind
+					["coord"] = { 48.18, 32.78, THE_BARRENS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10657),	-- Talbar Mantle
 						i(10658),	-- Quagmire Galoshes
 					},
 				}),
 				q(3369, {	-- In Nightmares
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 8418,	-- Falla Sagewind
+					["coord"] = { 48.18, 32.78, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10657),	-- Talbar Mantle
 						i(10658),	-- Quagmire Galoshes
 					},
 				}),
 				q(873, {	-- Isha Awak
+					["qg"] = 3388,	-- Mahren Skyseer
+					["sourceQuest"] = 874,	-- Mahren Skyseer
+					["coord"] = { 65.83, 43.85, THE_BARRENS },
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
-					["qg"] = 3388,	-- Mahren Skyseer
 					["g"] = {
 						i(5356),	-- Branding Rod
 						i(5357),	-- Ward of the Vale
@@ -277,22 +323,27 @@ _.Zones =
 					},
 				}),
 				q(882, {	-- Ishamuhale
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
+					["sourceQuest"] = 3261,	-- Jorn Skyseer
+					["coord"] = { 44.86, 59.13, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(10338),	-- Fresh Zhevra Carcass
 					},
 				}),
 				q(3261, {	-- Jorn Skyseer
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuest"] = 905,	-- The Angry Scytheclaws
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(850, {	-- Kolkar Leaders
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3389,	-- Regthar Deathgate
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(883, {	-- Lakota'mani
 					["provider"] = { "i", 5099 },
@@ -300,9 +351,11 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1060, {	-- Letter to Jin'Zil
-					["lvl"] = 15,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3449,	-- Darsok Swiftdagger
+					["sourceQuest"] = 876,	-- Serena Bloodfeather
+					["coord"] = { 51.62, 30.90, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(4921, {	-- Lost in Battle
 					["qg"] = 3432,	-- Mankrik
@@ -311,9 +364,11 @@ _.Zones =
 					["lvl"] = 14,
 				}),
 				q(874, {	-- Mahren Skyseer
-					["lvl"] = 9,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
+					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
+					["coord"] = { 44.86, 59.13, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(6365, {	-- Meats to Orgrimmar
 					["qg"] = 3489,	-- Zargh
@@ -352,9 +407,11 @@ _.Zones =
 					},
 				}),
 				q(3922, {	-- Nugget Slugs
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9316,	-- Wenikee Boltbucket
+					["sourceQuest"] = 3921,	-- Wenikee Boltbucket
+					["coord"] = { 49.05, 11.17, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(884, {	-- Owatanka
 					["provider"] = { "i", 5102 },
@@ -372,9 +429,11 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(903, {	-- Prowlers of the Barrens
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuest"] = 845,	-- The Zhevra
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(865, {	-- Raptor Horns
 					["qg"] = 3446,	-- Mebok Mizzyrix
@@ -399,6 +458,7 @@ _.Zones =
 				}),
 				q(5046, {	-- Razorhide
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -411,11 +471,13 @@ _.Zones =
 					["lvl"] = 17,
 				}),
 				q(6364, {	-- Return to Jahan
-					["lvl"] = 10,
+					["qg"] = 2995,	-- Tal
+					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
+					["coord"] = { 47.00, 49.84, THUNDER_BLUFF },
 					["races"] = {
 						6,	-- Tauren
 					},
-					["qg"] = 2995,	-- Tal
+					["lvl"] = 10,
 				}),
 				q(6386, {	-- Return to the Crossroads.
 					["qg"] = 3310,	-- Doras
@@ -429,17 +491,21 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(849, {	-- Revenge of Gann
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3341,	-- Gann Stonespire
+					["sourceQuest"] = 846,	-- Revenge of Gann
+					["coord"] = { 46.08, 76.37, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(5313),	-- Totemic Clan Ring
 					},
 				}),
 				q(846, {	-- Revenge of Gann
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3341,	-- Gann Stonespire
+					["sourceQuest"] = 843,	-- Gann's Reclamation
+					["coord"] = { 46.08, 76.37, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6384, {	-- Ride to Orgrimmar
 					["qg"] = 3615,	-- Devrak
@@ -453,17 +519,21 @@ _.Zones =
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
 					["qg"] = 3615,	-- Devrak
+					["sourceQuest"] = 6361,	-- A Bundle of Hides
 					["coord"] = { 51.50, 30.34, THE_BARRENS },
 					["races"] = { 6, },	-- Tauren
 					["lvl"] = 10,
 				}),
 				q(3923, {	-- Rilli Greasygob
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9316,	-- Wenikee Boltbucket
+					["sourceQuest"] = 3922,	-- Nugget Slugs
+					["coord"] = { 49.05, 11.17, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(5045, {	-- Rising Spirit
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -478,21 +548,21 @@ _.Zones =
 				q(900, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 894,	-- Samophlange
-					--["coord"] = { , , THE_BARRENS },
+					["coord"] = { 52.41, 11.60, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(901, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 900,	-- Samophlange
-					--["coord"] = { , , THE_BARRENS },
+					["coord"] = { 52.41, 11.60, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(902, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 901,	-- Samophlange
-					--["coord"] = { , , THE_BARRENS },
+					["coord"] = { 52.41, 11.60, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["g"] = {
@@ -501,9 +571,11 @@ _.Zones =
 					},
 				}),
 				q(3924, {	-- Samophlange Manual
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9317,	-- Rilli Greasygob
+					["sourceQuest"] = 3923,	-- Rilli Greasygob
+					["coord"] = { 76.49, 24.47, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(11855),	-- Tork Wrench
 						i(11854),	-- Samophlange Screwdriver
@@ -512,9 +584,11 @@ _.Zones =
 					},
 				}),
 				q(876, {	-- Serena Bloodfeather
-					["lvl"] = 12,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3449,	-- Darsok Swiftdagger
+					["sourceQuest"] = 875,	-- Harpy Lieutenants
+					["coord"] = { 51.62, 30.90, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(5321),	-- Elegant Shortsword
 						i(5279),	-- Harpy Skinner
@@ -527,8 +601,31 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
+				q(1823, {	-- Speak with Ruga
+					["qgs"] = {
+						3354,	-- Sorek
+						3041,	-- Torm Ragetotem
+					},
+					["coords"] = {
+						{ 80.36, 32.39, ORGRIMMAR },
+						{ 57.00, 89.45, THUNDER_BLUFF },
+					},
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+				}),
+				q(1825, {	-- Speak with Thun'grim
+					["qg"] = 6394,	-- Ruga Ragetotem
+					["sourceQuest"] = 1824,	-- Trial at the Field of Giants
+					["coord"] = { 44.68, 59.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+				}),
 				q(889, {	-- Spirit of the Wind
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -563,16 +660,20 @@ _.Zones =
 					["lvl"] = 9,
 				}),
 				q(6363, {	-- Tal the Wind Rider Master
-					["lvl"] = 10,
+					["qg"] = 8359,	-- Ahanu
+					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
+					["coord"] = { 45.74, 55.86, THUNDER_BLUFF },
 					["races"] = {
 						6,	-- Tauren
 					},
-					["qg"] = 8359,	-- Ahanu
+					["lvl"] = 10,
 				}),
 				q(905, {	-- The Angry Scytheclaws
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuest"] = 881,	-- Echeyakee
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(5165),	-- Sunscale Feather
 					},
@@ -581,10 +682,11 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
+					["coord"] = { 44.86, 59.13, THE_BARRENS },
 				}),
 				q(886, {	-- The Barrens Oases
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
-					--["coord"] = { , , THUNDER_BLUFF },
+					["coord"] = { 78.63, 28.56, THUNDER_BLUFF },
 					["isBreadcrumb"] = true,
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -602,9 +704,11 @@ _.Zones =
 					},
 				}),
 				q(863, {	-- The Escape
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
+					["sourceQuest"] = 858,	-- Ignition
+					["coord"] = { 56.52, 7.45, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(5326),	-- Flaring Baton
 						i(5327),	-- Greasy Tinker's Pants
@@ -618,9 +722,10 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(891, {	-- The Guns of Northwatch
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3339,	-- Captain Thalo'thas Brightsun
+					["coord"] = { 62.29, 39.03, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(5309),	-- Privateer Musket
 						i(5310),	-- Sea Dog Britches
@@ -658,25 +763,30 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1145, {	-- The Swarm Grows
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3428,	-- Korran
+					["coord"] = { 51.07, 29.62, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(857, {	-- The Tear of the Moons
-					["lvl"] = 22,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3421,	-- Feegly the Exiled
+					["coord"] = { 48.95, 86.32, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(6543, {	-- The Warsong Reports
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 8582,	-- Kadrak
 					["sourceQuests"] = { 6542, 6541 },	-- Report to Kadrak
+					["coord"] = { 48.12, 5.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(845, {	-- The Zhevra
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3338,	-- Sergra Darkthorn
+					["sourceQuest"] = 844,	-- Plainstrider Menace
+					["coord"] = { 52.23, 31.01, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(1502, { -- Thun'grim Firegaze
 					["qg"] = 5810,	-- Uzzek
@@ -687,6 +797,14 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
 				}),
+				q(1824, {	-- Trial at the Field of Giants
+					["qg"] = 6394,	-- Ruga Ragetotem
+					["sourceQuest"] = 1823,	-- Speak with Ruga
+					["coord"] = { 44.68, 59.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+				}),
 				q(878, {	-- Tribes at War
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
@@ -694,9 +812,10 @@ _.Zones =
 					["lvl"] = 14,
 				}),
 				q(851, {	-- Verog the Dervish
-					["lvl"] = 11,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3389,	-- Regthar Deathgate
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(895, {	-- WANTED: Baron Longshore
 					["provider"] = { "o", 3972 },
@@ -710,18 +829,21 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(893, {	-- Weapons of Choice
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3433,	-- Tatternack Steelforge
+					["coord"] = { 45.10, 57.69, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(5322),	-- Demolition Hammer
 						i(5323),	-- Everglow Lantern
 					},
 				}),
 				q(3921, {	-- Wenikee Boltbucket
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3442,	-- Sputtervalve
+					["sourceQuest"] = 902,	-- Samophlange
+					["coord"] = { 62.98, 37.21, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(1492, {	-- Wharfmaster Dizzywig
 					["qg"] = 3390,	-- Apothecary Helbrim
@@ -732,15 +854,17 @@ _.Zones =
 				}),
 				q(5044, {	-- Wisdom of Agamaggan
 					["qg"] = 3430,	-- Mangletooth
+					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
 					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(1483, {	-- Ziz Fizziks
-					["lvl"] = 16,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3442,	-- Sputtervalve
+					["coord"] = { 62.98, 37.21, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 16,
 				}),
 			}),
 		}),

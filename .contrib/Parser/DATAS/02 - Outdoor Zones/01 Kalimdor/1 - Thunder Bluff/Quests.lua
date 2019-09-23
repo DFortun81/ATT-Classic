@@ -155,9 +155,10 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1131, {	-- Steelsnap
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3441,	-- Melor Stonehoof
+					["coord"] = { 61.51, 80.88, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(742, {	-- The Ashenvale Hunt
 					["lvl"] = 20,
@@ -176,18 +177,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 				}),
-				q(1196, {	-- The Sacred Flame
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4721,	-- Zangen Stonehoof
-				}),
 				q(1195, {	-- The Sacred Flame
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4721,	-- Zangen Stonehoof
+					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(5867),	-- Etched Phial
 					},
+				}),
+				q(1196, {	-- The Sacred Flame
+					["qg"] = 4721,	-- Zangen Stonehoof
+					["sourceQuest"] = 1195,	-- The Sacred Flame
+					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1197, {	-- The Sacred Flame
 					["qg"] = 4722,	-- Rau Cliffrunner
@@ -205,9 +209,10 @@ _.Zones =
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 				}),
 				q(264, {	-- Until Death Do Us Part
-					["lvl"] = 12,
-					["races"] = HORDE_ONLY,
+					["coord"] = { 28.19, 25.31, THUNDER_BLUFF },
 					["qg"] = 5543,	-- Clarice Foster
+					["races"] = HORDE_ONLY,
+					["lvl"] = 12,
 				}),
 			}),
 		}),

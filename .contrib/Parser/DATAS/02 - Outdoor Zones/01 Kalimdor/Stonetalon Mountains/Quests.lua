@@ -10,10 +10,6 @@ _.Zones =
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
 					--["coord"] = { },
-					["crs"] = {
-						3989,	-- Venture Co. Logger
-						3991,	-- Venture Co. Deforester
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -32,7 +28,6 @@ _.Zones =
 				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
-					["cr"] = 11921,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 					["g"] = {
@@ -43,20 +38,12 @@ _.Zones =
 				q(6548, {	-- Avenge My Village
 					["qg"] = 11857,	-- Makaba Flathoof
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
-					["crs"] = {
-						11910,	-- Grimtotem Ruffian
-						11911,	-- Grimtotem Mercenary
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
 				q(6461, {	-- Blood Feeders
 					["qg"] = 12816,	-- Xen'Zilla
 					["coord"] = { 71.25, 95.00, STONETALON_MOUNTAINS },
-					["crs"] = {
-						4005,	-- Deepmoss Creeper
-						4007,	-- Deepmoss Venomspitter
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -64,7 +51,6 @@ _.Zones =
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["sourceQuest"] = 6282,	-- Harpies Threaten
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
-					["cr"] = 12579,	-- Bloodfury Ripper
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["g"] = {
@@ -88,11 +74,6 @@ _.Zones =
 				q(1087, {	-- Cenarius' Legacy
 					["qg"] = 4198,	-- Braelyn Firehand
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
-					["crs"] = {
-						4057,	-- Son of Cenarius
-						4053,	-- Daughter of Cenarius
-						4051,	-- Cenarion Botanist
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -136,7 +117,6 @@ _.Zones =
 					["qg"] = 11861,	-- Mor'rogal
 					["sourceQuest"] = 6421,	-- Boulderslide Ravine
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
-					["cr"] = 11920,	-- Goggeroc
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 					["g"] = {
@@ -147,11 +127,6 @@ _.Zones =
 				q(6393, {	-- Elemental War
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
-					["crs"] = {
-						4036,	-- Rogue Flame Spirit
-						4037,	-- Burning Ravager
-						4038,	-- Burning Destroyer
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 				}),
@@ -159,11 +134,6 @@ _.Zones =
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					--["coord"] = { },
-					["crs"] = {
-						4036,	-- Rogue Flame Spirit
-						4037,	-- Burning Ravager
-						4038,	-- Burning Destroyer
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -209,19 +179,12 @@ _.Zones =
 					["qg"] = 4049,	-- Seereth Stonebreak
 					["sourceQuest"] = 1061,	-- The Spirits of Stonetalon
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
-					["cr"] = 3989,	-- Venture Co. Logger
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
 				q(6282, {	-- Harpies Threaten
 					["qg"] = 11860,	-- Maggran Earthbinder
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
-					["crs"] = {
-						4022,	-- Bloodfury Harpy
-						4023,	-- Bloodfury Roguefeather
-						4024,	-- Bloodfury Slayer
-						4025,	-- Bloodfury Ambusher
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 				}),
@@ -246,15 +209,6 @@ _.Zones =
 				q(1058, {	-- Jin'Zil's Forest Magic
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
-					["crs"] = {
-						4020,	-- Sap Beast
-						4067,	-- Twilight Runner
-						4018,	-- Antlered Courser
-						4019,	-- Great Courser
-						4016,	-- Fey Dragon
-						4017,	-- Wily Fey Dragon
-						4066,	-- Nal'taszar
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -283,10 +237,6 @@ _.Zones =
 					["qg"] = 11857,	-- Makaba Flathoof
 					["sourceQuest"] = 6548,	-- Avenge My Village
 					["coord"] = { 35.23, 27.79, THE_BARRENS },
-					["crs"] = {
-						11858,	-- Grundig Darkcloud
-						11912,	-- Grimtotem Brute
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -305,7 +255,6 @@ _.Zones =
 					["qg"] = 4198,	-- Braelyn Firehand
 					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
-					["cr"] = 4273,	-- Keeper Ordanus
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -331,12 +280,6 @@ _.Zones =
 				q(1057, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
 					--["coord"] = { },
-					["crs"] = {
-						4022,	-- Bloodfury Harpy
-						4023,	-- Bloodfury Roguefeather
-						4024,	-- Bloodfury Slayer
-						4025,	-- Bloodfury Ambusher
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -361,12 +304,6 @@ _.Zones =
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
 					--["coord"] = { },
-					["crs"] = {
-						4044,	-- Blackened Basilisk
-						4041,	-- Scorched Basilisk
-						4042,	-- Singed Basilisk
-						4147,	-- Saltstone Basilisk
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["g"] = {
@@ -377,10 +314,6 @@ _.Zones =
 					["qg"] = 4049,	-- Seereth Stonebreak
 					["sourceQuest"] = 1062,	-- Goblin Invaders
 					["coord"] = { 35.28, 27.84, THE_BARRENS },
-					["crs"] = {
-						4073,	-- XT:4
-						4074,	-- XT:9
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
@@ -395,7 +328,6 @@ _.Zones =
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1483,	-- Ziz Fizziks
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["cr"] = 3988,	-- Venture Co. Operator
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 				}),
@@ -439,11 +371,6 @@ _.Zones =
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					--["coord"] = { },
-					["crs"] = {
-						4028,	-- Charred Ancient
-						4029,	-- Blackened Ancient
-						4030,	-- Vengeful Ancient
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
