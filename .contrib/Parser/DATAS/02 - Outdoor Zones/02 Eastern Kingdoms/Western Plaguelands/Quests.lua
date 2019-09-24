@@ -122,6 +122,7 @@ _.Zones =
 				q(5166, {	-- Breastplate of the Chromatic Flight
 					["lvl"] = 57,
 					--["objectID"] = 176192,	-- Catalogue of the Wayward
+					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 					["g"] = {
 						i(12895),	-- Breastplate of the Chromatic Flight
 					},
@@ -133,7 +134,8 @@ _.Zones =
 				}),
 				q(5164, {	-- Catalogue of the Wayward
 					["lvl"] = 57,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10976,	-- Jeziba
+					["sourceQuest"] = 5162,	-- Wrath of the Blue Flight
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
@@ -248,6 +250,7 @@ _.Zones =
 				}),
 				q(5167, {	-- Legplates of the Chromatic Defier
 					["lvl"] = 57,
+					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
 					["g"] = {
 						i(12903),	-- Legguards of the Chromatic Defier
 						i(12945),	-- Legplates of the Chromatic Defier
@@ -535,9 +538,6 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business
-				}),
-				q(5162, {	-- Wrath of the Blue Flight
-					["lvl"] = 57,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
 					["lvl"] = 50,

@@ -12,28 +12,41 @@ _.Zones =
 				}),
 				q(6605, {	-- A Strange One
 					["lvl"] = 49,
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["qg"] = 11755,	-- Harlo Wigglesworth
 				}),
 				q(8798, {	-- A Yeti of Your Own
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["qg"] = 10305,	-- Umi Rumplesnicker
 				}),
-				q(3783, {	-- Are We There, Yeti?
+				q(3783, {	-- Are We There, Yeti? (1/3)
 					["lvl"] = 52,
 					["qg"] = 10305,	-- Umi Rumplesnicker
 				}),
-				q(977, {	-- Are We There, Yeti?
+				q(977, {	-- Are We There, Yeti? (2/3)
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10305,	-- Umi Rumplesnicker
+					["sourceQuest"] = 3783,	-- Are We There, Yeti? (1/3)
 				}),
-				q(5163, {	-- Are We There, Yeti?
+				q(5163, {	-- Are We There, Yeti? (3/3)
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10305,	-- Umi Rumplesnicker
+					["sourceQuest"] = 977,	-- Are We There, Yeti? (2/3)
 					["g"] = {
 						i(15778),	-- Mechanical Yeti
 					},
 				}),
+				q(8469, {	-- Beads for Salfa
+					["lvl"] = 50,
+					["qg"] = 11556,	-- Salfa
+					["repeatable"] = true,
+					["sourceQuest"] = 8464,	-- Winterfall Activity
+				}),
 				q(5068, {	-- Breastplate of Bloodthirst
 					["lvl"] = 57,
+					["qg"] = 10637,	-- Malyfous Darkhammer
 					--["objectID"] = 175927,	-- Malyfous's Catalogue
 					["g"] = {
 						i(12757),	-- Breastplate of Bloodthirst
@@ -41,16 +54,22 @@ _.Zones =
 				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["lvl"] = 53,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10303,	-- Storm Shadowhoof
+					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				}),
 				q(975, {	-- Cache of Mau'ari
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["sourceQuest"] = 969,	-- Luck Be With You
 					["g"] = {
 						i(12384),	-- Cache of Mau'ari
 					},
 				}),
 				q(5063, {	-- Cap of the Scarlet Savant
 					["lvl"] = 57,
+					["qg"] = 10637,	-- Malyfous Darkhammer
 					--["objectID"] = 175927,	-- Malyfous's Catalogue
 					["g"] = {
 						i(12752),	-- Cap of the Scarlet Savant
@@ -58,13 +77,17 @@ _.Zones =
 				}),
 				q(4804, {	-- Chillwind E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12457),	-- Juju Chill
 					},
 				}),
 				q(4809, {	-- Chillwind Horns
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10468,	-- Felnok Steelspring
+					["sourceQuest"] = 4808,	-- Felnok Steelspring
 				}),
 				q(6502, {	-- Drakefire Amulet
 					["lvl"] = 50,
@@ -77,6 +100,7 @@ _.Zones =
 				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
 					["lvl"] = 50,
+					["qg"] = 10431,	-- Gregor Greystone
 				}),
 				q(4861, {	-- Enraged Wildkin
 					["lvl"] = 53,
@@ -100,26 +124,30 @@ _.Zones =
 				q(5084, {	-- Falling to Corruption
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 5083,	-- Winterfall Firewater
 				}),
 				q(5124, {	-- Fiery Plate Gauntlets
 					["lvl"] = 55,
+					["requireSkill"] = 164,	-- Blacksmithing
 					["g"] = {
 						i(12699),	-- Plans: Fiery Plate Gauntlets
 						i(12631),	-- Fiery Plate Gauntlets
 					},
 				}),
-				q(979, {	-- Find Ranshalla
-					["lvl"] = 52,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12460),	-- Juju Might
 					},
 				}),
 				q(4801, {	-- Frostsaber E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12450),	-- Juju Flurry
 					},
@@ -127,25 +155,23 @@ _.Zones =
 				q(4970, {	-- Frostsaber Provisions
 					["lvl"] = 58,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["repeatable"] = true,
 				}),
 				q(4901, {	-- Guardians of the Altar
 					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10300,	-- Ranshalla
+					["sourceQuest"] = 979,	-- Find Ranshalla
 				}),
 				q(4882, {	-- Guarding Secrets
 					["lvl"] = 52,
-				}),
-				q(4883, {	-- Guarding Secrets
-					["lvl"] = 52,
+					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(15796),	-- Seaspray Bracers
-						i(15797),	-- Shining Armplates
-					},
 				}),
 				q(5121, {	-- High Chief Winterfall
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 5087,	-- Winterfall Runners
 					["g"] = {
 						i(15784),	-- Crystal Breeze Mantle
 						i(15786),	-- Fernpulse Jerkin
@@ -154,6 +180,9 @@ _.Zones =
 				}),
 				q(4805, {	-- Ice Thistle E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12459),	-- Juju Escape
 					},
@@ -169,13 +198,11 @@ _.Zones =
 					["lvl"] = 55,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 				}),
-				q(5085, {	-- Mystery Goo
-					["lvl"] = 52,
-					--["objectID"] = 176091,	-- Deadwood Cauldron
-				}),
 				q(5057, {	-- Past Endeavors
 					["lvl"] = 53,
+					["races"] = HORDE_ONLY,
 					["qg"] = 10303,	-- Storm Shadowhoof
+					["sourceQuest"] = 5056,	-- Shy-Rotam
 					["g"] = {
 						i(15704),	-- Hunter's Insignia Medal
 					},
@@ -184,13 +211,15 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["repeatable"] = true,
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["lvl"] = 53,
 				}),
 				q(4810, {	-- Return to Tinkee
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
+					["qg"] = 10468,	-- Felnok Steelspring
+					["sourceQuest"] = 4809,	-- Chillwind Horns
 					["g"] = {
 						i(15862),	-- Blitzcleaver
 						i(15863),	-- Grave Scepter
@@ -198,12 +227,18 @@ _.Zones =
 				}),
 				q(4803, {	-- Shardtooth E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12455),	-- Juju Ember
 					},
 				}),
 				q(5056, {	-- Shy-Rotam
 					["lvl"] = 53,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10303,	-- Storm Shadowhoof
+					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
 					["g"] = {
 						i(15783),	-- Beasthunter Dagger
 						i(15782),	-- Beaststalker Blade
@@ -216,36 +251,35 @@ _.Zones =
 				}),
 				q(4842, {	-- Strange Sources
 					["lvl"] = 51,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 980,	-- The New Springs
 					["g"] = {
 						i(15789),	-- Deep River Cloak
 					},
 				}),
 				q(5253, {	-- The Crystal of Zin-Malor
 					["lvl"] = 53,
+					["sourceQuest"] = 5252,	-- Remorseful Highborne
 					["g"] = {
 						i(15791),	-- Turquoise Sash
 						i(15792),	-- Plow Wood Spaulders
 						i(15795),	-- Emerald Mist Gauntlets
 					},
 				}),
-				q(6029, {	-- The Everlook Report
+				q(6028, {	-- The Everlook Report (A)
 					["lvl"] = 50,
-				}),
-				q(6028, {	-- The Everlook Report
-					["lvl"] = 50,
+					["qg"] = 10431,	-- Gregor Greystone
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(6029, {	-- The Everlook Report (H)
+					["lvl"] = 50,
+					["qg"] = 10431,	-- Gregor Greystone
+					["races"] = HORDE_ONLY,
 				}),
 				q(5123, {	-- The Final Piece
 					["lvl"] = 52,
-				}),
-				q(8481, {	-- The Root of All Evil
-					["lvl"] = 40,
-					["qg"] = 11555,	-- Gorn One Eye
-					["g"] = {
-						i(21326),	-- Defender of the Timbermaw
-					},
+					["provider"] = { "i", 12842 },	-- Crudely-Written Log
+					["sourceQuest"] = 5121,	-- High Chief Winterfall
 				}),
 				q(5244, {	-- The Ruins of Kel'Theril
 					["lvl"] = 53,
@@ -259,9 +293,12 @@ _.Zones =
 				q(5086, {	-- Toxic Horrors
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 5085,	-- Mystery Goo
 				}),
 				q(6603, {	-- Trouble in Winterspring!
 					["lvl"] = 52,
+					["qg"] = 11754,	-- Meggi Peppinrocker
+					["isBreadcrumb"] = true,
 				}),
 				q(5245, {	-- Troubled Spirits of Kel'Theril
 					["lvl"] = 49,
@@ -270,53 +307,56 @@ _.Zones =
 				}),
 				q(5054, {	-- Ursius of the Shardtooth
 					["lvl"] = 53,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10303,	-- Storm Shadowhoof
 				}),
 				q(4807, {	-- Wildkin E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12458),	-- Juju Guile
 					},
 				}),
-				q(4902, {	-- Wildkin of Elune
-					["lvl"] = 52,
-					["g"] = {
-						i(16622),	-- Thornflinger
-						i(16623),	-- Opaline Medallion
-					},
-				}),
 				q(4802, {	-- Winterfall E'ko
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["repeatable"] = true,
 					["g"] = {
 						i(12451),	-- Juju Power
 					},
 				}),
-				q(5087, {	-- Winterfall Runners
-					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["qg"] = 9298,	-- Donova Snowden
-				}),
 				q(5083, {	-- Winterfall Firewater
 					["lvl"] = 52,
+					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 				}),
 				q(5201, {	-- Winterfall Intrusion
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["repeatable"] = true,
 				}),
-				q(8471, {	-- Winterfall Ritual Totem
-					["lvl"] = 50,
-					["g"] = {
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
-					},
+				q(5087, {	-- Winterfall Runners
+					["lvl"] = 52,
+					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 5086,	-- Toxic Horrors
 				}),
 				q(5128, {	-- Words of the High Chief
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 5123,	-- The Final Piece
 				}),
 				q(5161, {	-- Wrath of the Blue Flight
 					["lvl"] = 57,
+					["qg"] = 10929,	-- Haleh
+					["sourceQuest"] = 5160,	-- The Matron Protectorate
+				}),
+				q(5162, {	-- Wrath of the Blue Flight
+					["lvl"] = 57,
+					["qg"] = 10929,	-- Haleh
+					["sourceQuest"] = 5161,	-- Wrath of the Blue Flight
 				}),
 			}),
 		}),
