@@ -89,7 +89,8 @@ profession(185, {	-- Cooking
 			},
 			{
 				["name"] = "Dirge's Kickin' Chimaerok Chops",
-				["recipeID"] = 25659
+				["recipeID"] = 25659,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Dry Pork Ribs",
@@ -233,7 +234,8 @@ profession(185, {	-- Cooking
 			},
 			{
 				["name"] = "Runn Tum Tuber Surprise",
-				["recipeID"] = 22761
+				["recipeID"] = 22761,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Sagefish Delight",
@@ -257,7 +259,8 @@ profession(185, {	-- Cooking
 			},
 			{
 				["name"] = "Smoked Desert Dumplings",
-				["recipeID"] = 24801
+				["recipeID"] = 24801,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Smoked Sagefish",

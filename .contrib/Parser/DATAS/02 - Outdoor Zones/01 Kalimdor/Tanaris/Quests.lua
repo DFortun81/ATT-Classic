@@ -16,17 +16,21 @@ _.Zones =
 					},
 				}),
 				q(8925, {	-- A Portable Power Source
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8928, {	-- A Shifty Merchant
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 				}),
 				q(8923, {	-- A Supernatural Device
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8922, {	-- A Supernatural Device
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -61,6 +65,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8181, {	-- Confront Yeh'kinya
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -69,6 +74,7 @@ _.Zones =
 					},
 				}),
 				q(8606, {	-- Decoy!
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 				}),
 				q(2874, {	-- Deliver to MacKinley
@@ -82,6 +88,7 @@ _.Zones =
 					["lvl"] = 44,
 				}),
 				q(8586, {	-- Dirge's Kickin' Chimaerok Chops
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["g"] = {
 						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
@@ -89,6 +96,7 @@ _.Zones =
 					},
 				}),
 				q(8597, {	-- Draconic for Dummies
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -122,6 +130,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8924, {	-- Hunting for Ectoplasm
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16014,	-- Mux Manascrambler
@@ -147,6 +156,7 @@ _.Zones =
 					["lvl"] = 47,
 				}),
 				q(8599, {	-- Love Song for Narain
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 				}),
 				q(1691, {	-- More Wastewander Justice
@@ -154,6 +164,7 @@ _.Zones =
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 				}),
 				q(8584, {	-- Never Ask Me About My Business
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11811,	-- Narain Soothfancy
@@ -177,11 +188,13 @@ _.Zones =
 					["qg"] = 15165,	-- Haughty Modiste
 				}),
 				q(8598, {	-- rAnS0m
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 180652,	-- Freshly Dug Dirt
 				}),
 				q(8587, {	-- Return to Narain
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 8125,	-- Dirge Quikcleave
 				}),
@@ -221,6 +234,7 @@ _.Zones =
 					["qg"] = 7583,	-- Sprinkle
 				}),
 				q(8577, {	-- Stewvul, Ex-B.F.F.
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11811,	-- Narain Soothfancy
@@ -247,21 +261,27 @@ _.Zones =
 					},
 				}),
 				q(8766, {	-- The Changing of Paths - Conqueror No More
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
+					["repeatable"] = true,
 					["g"] = {
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
 				q(8765, {	-- The Changing of Paths - Invoker No More
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
+					["repeatable"] = true,
 					["g"] = {
 						i(21200),	-- Signet Ring of the Bronze Dragonflight
 						i(21205),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
 				q(8764, {	-- The Changing of Paths - Protector No More
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
+					["repeatable"] = true,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
 						i(21210),	-- Signet Ring of the Bronze Dragonflight
