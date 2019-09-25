@@ -475,6 +475,7 @@ _.Zones =
 				q(3483, {	-- Signal for Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
