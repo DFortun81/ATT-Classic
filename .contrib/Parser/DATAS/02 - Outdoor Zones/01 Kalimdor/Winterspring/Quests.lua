@@ -17,9 +17,10 @@ _.Zones =
 					["qg"] = 11755,	-- Harlo Wigglesworth
 				}),
 				q(8798, {	-- A Yeti of Your Own
-					["u"] = 3,	-- Added in later phase
+					["requireSkill"] = 202,	-- Engineering
 					["lvl"] = 55,
 					["qg"] = 10305,	-- Umi Rumplesnicker
+					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
 				}),
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["lvl"] = 52,
@@ -102,24 +103,28 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 10431,	-- Gregor Greystone
 				}),
-				q(4861, {	-- Enraged Wildkin
+				q(6604, {	-- Enraged Wildkin (1/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
+					["qg"] = 11755,	-- Harlo Wigglesworth
+					["isBreadcrumb"] = true,
 				}),
-				q(4864, {	-- Enraged Wildkin
+				q(4861, {	-- Enraged Wildkin (2/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
+					["qg"] = 10301,	-- Jaron Stoneshaper
 				}),
-				q(6604, {	-- Enraged Wildkin
+				q(4863, {	-- Enraged Wildkin (3/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 175587 },	-- Damaged Crate
+					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 				}),
-				q(4863, {	-- Enraged Wildkin
+				q(4864, {	-- Enraged Wildkin (4/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175587,	-- Damaged Crate
+					["provider"] = { "o", 175586 },	-- Jaron's Wagon
+					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
 				}),
 				q(5084, {	-- Falling to Corruption
 					["lvl"] = 52,
@@ -215,6 +220,7 @@ _.Zones =
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["lvl"] = 53,
+					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
 				q(4810, {	-- Return to Tinkee
 					["lvl"] = 50,
