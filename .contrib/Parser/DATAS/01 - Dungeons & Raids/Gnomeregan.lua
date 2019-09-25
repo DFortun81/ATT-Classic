@@ -10,7 +10,6 @@ _.Instances = {
 			n(-17, {	-- Quests
 				q(2904, {	-- A Fine Mess
 					["qg"] = 7850,	-- Kernobee
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(9536),	-- Fairywing Mantle
