@@ -90,6 +90,12 @@ _.Zones =
 						i(8049),	-- Gnarlpine Necklace
 					},
 				}),
+				q(979, {	-- Find Ranshalla
+					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7916,	-- Erelas Ambersky
+					["maps"] = { WINTERSPRING },
+				}),
 				q(476, {	-- Gnarlpine Corruption
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
@@ -398,6 +404,16 @@ _.Zones =
 						un(2, i(13584)),	-- Diablo Stone
 						un(2, i(13583)),	-- Panda Collar
 						un(2, i(13582)),	-- Zergling Leash
+					},
+				}),
+				q(4902, {	-- Wildkin of Elune
+					["lvl"] = 52,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7916,	-- Erelas Ambersky
+					["maps"] = { WINTERSPRING },
+					["g"] = {
+						i(16622),	-- Thornflinger
+						i(16623),	-- Opaline Medallion
 					},
 				}),
 				q(488, {	-- Zenn's Bidding

@@ -132,6 +132,11 @@ _.Zones =
 					},
 					-- Quest name does not show! Maybe not part of phase 1?
 				}),
+				q(5159, {	-- Cleansed Water Returns to Felwood
+					["lvl"] = 48,
+					["qg"] = 5901,	-- Islen Waterseer
+					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
+				}),
 				q(899, {	-- Consumed by Hatred
 					["qg"] = 3432,	-- Mankrik
 					["coord"] = { 51.95, 31.58, THE_BARRENS },
