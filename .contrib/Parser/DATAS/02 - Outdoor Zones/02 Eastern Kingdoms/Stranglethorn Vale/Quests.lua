@@ -60,8 +60,9 @@ _.Zones =
 					["qg"] = 2497,	-- Nimboya
 				}),
 				q(189, {	-- Bloodscalp Ears
-					["lvl"] = 30,
 					["qg"] = 737,	-- Kebok
+					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
+					["lvl"] = 30,
 					["g"] = {
 						i(4598),	-- Goblin Fishing Pole
 					},
@@ -169,6 +170,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 				}),
 				q(593, {	-- Filling the Soul Gem
 					["races"] = HORDE_ONLY,
@@ -193,8 +195,9 @@ _.Zones =
 					},
 				}),
 				q(213, {	-- Hostile Takeover
-					["lvl"] = 31,
 					["qg"] = 737,	-- Kebok
+					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
+					["lvl"] = 31,
 					["g"] = {
 						i(4121),	-- Gemmed Gloves
 					},
@@ -205,8 +208,9 @@ _.Zones =
 					["qg"] = 2497,	-- Nimboya
 				}),
 				q(201, {	-- Investigate the Camp
-					["lvl"] = 28,
 					["qg"] = 773,	-- Krazek
+					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(215, {	-- Jungle Secrets
 					["lvl"] = 30,
@@ -329,6 +333,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 					["g"] = {
 						i(4124),	-- Cap of Harmony
 					},
@@ -353,17 +358,20 @@ _.Zones =
 					},
 				}),
 				q(606, {	-- Scaring Shaky
-					["lvl"] = 30,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["coord"] = { 27.78, 77.07, STRANGLETHORN_VALE },
+					["lvl"] = 30,
 				}),
 				q(605, {	-- Singing Blue Shards
-					["lvl"] = 30,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["coord"] = { 27.12, 77.22, STRANGLETHORN_VALE },
+					["lvl"] = 30,
 				}),
 				q(209, {	-- Skullsplitter Tusks
 					["lvl"] = 37,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 737,	-- Kebok
+					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
 				}),
 				q(577, {	-- Some Assembly Required
 					["lvl"] = 31,
@@ -405,10 +413,12 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 				}),
 				q(575, {	-- Supply and Demand
-					["lvl"] = 26,
 					["qg"] = 2495,	-- Drizzlik
+					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
+					["lvl"] = 26,
 				}),
 				q(599, {	-- The Bloodsail Buccaneers
 					["lvl"] = 37,
@@ -494,6 +504,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
+					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
 				}),
 				q(328, {	-- The Hidden Key
 					["lvl"] = 30,

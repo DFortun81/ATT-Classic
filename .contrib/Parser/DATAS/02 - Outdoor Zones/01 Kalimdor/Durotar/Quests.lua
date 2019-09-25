@@ -19,12 +19,6 @@ _.Zones =
 				q(818, {	-- A Solvent Spirit
 					["qg"] = 3304,	-- Master Vornal
 					["coord"] = { 55.95, 74.39, DUROTAR },
-					["crs"] = {
-						3103,	-- Makrura Clacker
-						3104,	-- Makrura Shellhide
-						3106,	-- Pygmy Surf Crawler
-						3107,	-- Surf Crawler
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 					["g"] = {
@@ -81,10 +75,6 @@ _.Zones =
 				q(791, {	-- Carry Your Weight
 					["qg"] = 3147,	-- Furl Scornbrow
 					["coord"] = { 49.88, 40.39, DUROTAR },
-					["crs"] = {
-						3129,	-- Kul Tiras Marine
-						3128,	-- Kul Tiras Sailor
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["g"] = {
@@ -109,7 +99,6 @@ _.Zones =
 					["qg"] = 3143,	-- Gornek
 					["sourceQuest"] = 4641,	-- Your Place In The World
 					["coord"] = { 42.06, 68.33, DUROTAR },
-					["cr"] = 3098,	-- Mottled Boar
 					["races"] = HORDE_ONLY,
 					["lvl"] = 1,
 					["g"] = {
@@ -187,17 +176,12 @@ _.Zones =
 				q(5441, {	-- Lazy Peons
 					["qg"] = 11378,	-- Foreman Thazz'ril
 					["coord"] = { 44.62, 68.65, DUROTAR },
-					["cr"] = 10556,	-- Lazy Peon
 					["races"] = HORDE_ONLY,
 					["lvl"] = 3,
 				}),
 				q(816, {	-- Lost But Not Forgotten
 					["qg"] = 3193,	-- Misha Tor'kren
 					["coord"] = { 43.10, 30.24, DUROTAR },
-					["crs"] = {
-						3110,	-- Dreadmaw Crocolisk
-						3231,	-- Corrupted Dreadmaw Crocolisk
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 8,
 					["g"] = {
@@ -243,10 +227,6 @@ _.Zones =
 					["sourceQuest"] = 1505,	-- Veteran Uzzek
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
-					["crs"] = {
-						3130,	-- Thunder Lizard
-						3131,	-- Lightning Hide
-					},
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
@@ -255,7 +235,6 @@ _.Zones =
 				q(817, {	-- Practical Prey
 					["qg"] = 3194,	-- Vel'rin Fang
 					["coord"] = { 55.95, 73.92, DUROTAR },
-					["cr"] = 3121,	-- Durotar Tiger
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
 				}),
@@ -276,7 +255,6 @@ _.Zones =
 				q(790, {	-- Sarkoth
 					["qg"] = 3287,	-- Hana'zua
 					["coord"] = { 40.60, 62.60, DUROTAR },
-					["cr"] = 3281,	-- Sarkoth
 					["races"] = HORDE_ONLY,
 					["lvl"] = 1,
 				}),
@@ -315,13 +293,6 @@ _.Zones =
 					["qg"] = 3208,	-- Margoz
 					["sourceQuest"] = 828,	-- Margoz
 					["coord"] = { 56.41, 20.05, DUROTAR },
-					["crs"] = {
-						3195,	-- Burning Blade Thug
-						3196,	-- Burning Blade Neophyte
-						3197,	-- Burning Blade Fanatic
-						3198,	-- Burning Blade Apprentice
-						3199,	-- Burning Blade Cultist
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 4,
 					["g"] = {
@@ -416,7 +387,6 @@ _.Zones =
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
 					["coord"] = { 42.85, 69.14, DUROTAR },
-					["cr"] = 3101,	-- Vile Familiar
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
 					["g"] = {

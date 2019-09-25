@@ -346,6 +346,7 @@ _.Zones =
 					["lvl"] = 11,
 				}),
 				q(883, {	-- Lakota'mani
+					["cr"] = 3474,	-- Lakota'mani
 					["provider"] = { "i", 5099 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -414,6 +415,7 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(884, {	-- Owatanka
+					["cr"] = 3473,	-- Owatanka
 					["provider"] = { "i", 5102 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -732,6 +734,7 @@ _.Zones =
 					},
 				}),
 				q(897, {	-- The Harvester
+					["cr"] = 3253,	-- Silithid Harvester
 					["provider"] = { "i", 5138 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -751,6 +754,7 @@ _.Zones =
 					["lvl"] = 9,
 				}),
 				q(3513, {	-- The Runed Scroll
+					["cr"] = 5797,	-- Aean Swiftriver
 					["provider"] = { "i", 10621 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
@@ -824,6 +828,7 @@ _.Zones =
 					["lvl"] = 11,
 				}),
 				q(885, {	-- Washte Pawne
+					["cr"] = 3472,	-- Washte Pawne
 					["provider"] = { "i", 5103 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,

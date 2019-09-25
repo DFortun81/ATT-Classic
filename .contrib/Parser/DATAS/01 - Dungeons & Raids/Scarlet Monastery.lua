@@ -145,11 +145,8 @@ _.Instances = {
 							["cost"] = {
 								{ "i", 5535, 1},	-- Compendium of the Fallen
 							},
-							["coords"] = {
-								{ 36.8, 26.4, MULGORE },
-								{ 34.6, 47.2, THUNDER_BLUFF },
-							},
-							["maps"] = { MULGORE, THUNDER_BLUFF },
+							["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
+							["maps"] = { THUNDER_BLUFF },
 							["races"] = { ORC, TAUREN, TROLL },
 							["lvl"] = 28,
 							["groups"] = {
