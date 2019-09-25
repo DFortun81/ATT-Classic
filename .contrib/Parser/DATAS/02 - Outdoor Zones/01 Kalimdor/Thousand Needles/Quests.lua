@@ -9,11 +9,6 @@ _.Zones =
 				q(1175, {	-- A Bump in the Road
 					["qg"] = 4629,	-- Trackmaster Zherin
 					--["coord"] = { },
-					["crs"] = {
-						4147,	-- Saltstone Basilisk
-						4150,	-- Saltstone Gazer
-						4151,	-- Saltstone Crystalhide
-					},
 					["lvl"] = 28,
 				}),
 				q(4821, {	-- Alien Egg
@@ -26,7 +21,6 @@ _.Zones =
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["sourceQuest"] = 5062,	-- Sacred Fire
 					["coord"] = { 69.85, 30.90, THUNDER_BLUFF },
-					["cr"] = 10882,	-- Arikara
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["g"] = {
@@ -56,27 +50,11 @@ _.Zones =
 					["qg"] = 773,	-- Krazek
 					["sourceQuest"] = 1115,	-- The Rumormonger
 					--["coord"] = { },
-					["crs"] = {
-						740,	-- Adolescent Whelp
-						741,	-- Dreaming Whelp
-						742,	-- Green Wyrmkin
-						744,	-- Green Scalebane
-						745,	-- Scalebane Captain
-						746,	-- Elder Dragonkin
-						14445,	-- Lord Captain Wyrmak
-					},
 					["lvl"] = 30,
 				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					--["coord"] = { },
-					["crs"] = {
-						871,	-- Saltscale Warrior
-						873,	-- Saltscale Oracle
-						875,	-- Saltscale Tide Lord
-						877,	-- Saltscale Forager
-						879,	-- Saltscale Hunter
-					},
 					["lvl"] = 28,
 				}),
 				q(5361, {	-- Family Tree
@@ -178,11 +156,6 @@ _.Zones =
 				q(1105, {	-- Hardened Shells
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					--["coord"] = { },
-					["crs"] = {
-						4142,	-- Sparkleshell Tortoise
-						4143,	-- Sparkleshell Snapper
-						4144,	-- Sparkleshell Borer
-					},
 					["lvl"] = 28,
 				}),
 				q(5762, {	-- Hemet Nesingwary
@@ -199,7 +172,6 @@ _.Zones =
 				q(5151, {	-- Hypercapacitor Gizmo
 					["qg"] = 10941,	-- Wizlo Bearingshiner
 					["coord"] = { 21.44, 32.55, THOUSAND_NEEDLES },
-					["cr"] = 10992,	-- Enraged Panther
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
 					["g"] = {
@@ -210,11 +182,6 @@ _.Zones =
 					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					--["coord"] = { },
-					["crs"] = {
-						2894,	-- Stonevault Shaman
-						2893,	-- Stonevault Bonesnapper
-						6733,	-- Stonevault Basher
-					},
 					["lvl"] = 28,
 				}),
 				q(1192, {	-- Indurium Ore
@@ -229,10 +196,6 @@ _.Zones =
 				q(1176, {	-- Load Lightening
 					["qg"] = 4630,	-- Pozzik
 					--["coord"] = { },
-					["crs"] = {
-						4154,	-- Salt Flats Scavenger
-						4158,	-- Salt Flats Vulture
-					},
 					["lvl"] = 29,
 				}),
 				q(1100, {	-- Lonebrow's Journal
@@ -266,11 +229,6 @@ _.Zones =
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4542,	-- Message to Freewind Post
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
-					["crs"] = {
-						4093,	-- Galak Wrangler
-						4094,	-- Galak Scout
-						4096,	-- Galak Windchaser
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
 				}),
@@ -468,11 +426,6 @@ _.Zones =
 					["qg"] = 4483,	-- Moktar Krin
 					["sourceQuest"] = 1146,	-- The Swarm Grows
 					["coord"] = { 67.60, 63.93, THOUSAND_NEEDLES },
-					["crs"] = {
-						4133,	-- Silithid Hive Drone
-						4130,	-- Silithid Searcher
-						4131,	-- Silithid Invader
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),

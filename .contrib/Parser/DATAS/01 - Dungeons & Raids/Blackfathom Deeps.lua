@@ -38,6 +38,7 @@ _.Instances = {
 					["altQuests"] = {
 						909,	-- Baron Aquanis [Original?]
 					},
+					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {

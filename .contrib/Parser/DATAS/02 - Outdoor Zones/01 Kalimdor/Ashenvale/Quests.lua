@@ -16,6 +16,7 @@ _.Zones =
 					},
 				}),
 				q(1044, {	-- Answered Questions
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
 						i(5817),	-- Lunaris Bow
@@ -23,25 +24,10 @@ _.Zones =
 					},
 				}),
 				q(6503, {	-- Ashenvale Outrunners
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12867,	-- Kuray'bin
-				}),
-				q(909, {	-- Baron Aquanis
-					["lvl"] = 25,
+					["coord"] = { 71.11, 68.13, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(16886),	-- Outlaw Sabre
-						i(16887),	-- Witch's Finger
-					},
-				}),
-				q(6922, {	-- Baron Aquanis
-					["lvl"] = 21,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(16886),	-- Outlaw Sabre
-						i(16887),	-- Witch's Finger
-					},
+					["lvl"] = 19,
 				}),
 				q(1010, {	-- Bathran's Hair
 					["lvl"] = 20,
@@ -49,9 +35,10 @@ _.Zones =
 					["qg"] = 3847,	-- Orendil Broadleaf
 				}),
 				q(216, {	-- Between a Rock and a Thistlefur
+					["qg"] = 12757,	-- Karang Amakkar
+					["coord"] = { 11.89, 34.53, ASHENVALE },
 					["lvl"] = 21,
 					["races"] = HORDE_ONLY,
-					["qg"] = 12757,	-- Karang Amakkar
 				}),
 				q(1054, {	-- Culling the Threat
 					["lvl"] = 18,
@@ -90,9 +77,10 @@ _.Zones =
 					["qg"] = 3848,	-- Kayneth Stillwind
 				}),
 				q(6482, {	-- Freedom to Ruul
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12818,	-- Ruul Snowhoof
+					["coord"] = { 41.56, 34.47, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(1012, {	-- Insane Druids
 					["lvl"] = 24,
@@ -103,9 +91,11 @@ _.Zones =
 					},
 				}),
 				q(824, {	-- Je'neu of the Earthen Ring
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12737,	-- Mastok Wrilehiss
+					["sourceQuest"] = 1918,	-- The Befouled Element
+					["coord"] = { 73.66, 60.01, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 					["g"] = {
 						i(16659),	-- Deftkin Belt
 						i(16660),	-- Driftmire Shield
@@ -123,12 +113,10 @@ _.Zones =
 					["qg"] = 3845,	-- Shindrell Swiftfire
 				}),
 				q(6621, {	-- King of the Foulweald
-					["lvl"] = 21,
+					["qg"] = 12757,	-- Karang Amakkar
+					["coord"] = { 11.89, 34.53, ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						12696,	-- Senani Thunderheart
-						12757,	-- Karang Amakkar
-					},
+					["lvl"] = 21,
 					["g"] = {
 						i(17005),	-- Boorguard Tunic
 						i(17006),	-- Cobalt Legguards
@@ -142,9 +130,10 @@ _.Zones =
 					},
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
-					["lvl"] = 14,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12719,	-- Marukai
+					["coord"] = { 11.69, 34.90, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(1085, {	-- On Guard in Stonetalon
 					["lvl"] = 17,
@@ -162,6 +151,7 @@ _.Zones =
 					["qg"] = 3847,	-- Orendil Broadleaf
 				}),
 				q(1040, {	-- Passage to Booty Bay
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1134, {	-- Pridewings of Stonetalon
@@ -243,9 +233,10 @@ _.Zones =
 					},
 				}),
 				q(6441, {	-- Satyr Horns
-					["lvl"] = 21,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12724,	-- Pixel
+					["coord"] = { 73.06, 61.48, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 21,
 				}),
 				q(1032, {	-- Satyr Slaying!
 					["lvl"] = 26,
@@ -277,17 +268,22 @@ _.Zones =
 					},
 				}),
 				q(24, {	-- Shadumbra's Head
+					["provider"] = { "i", 16304 },	-- Shadumbra's Head
+					["cr"] = 12677,	-- Shadumbra
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 				}),
 				q(2, {	-- Sharptalon's Claw
+					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
+					["cr"] = 12676,	-- Sharptalon
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 				}),
 				q(25, {	-- Stonetalon Standstill
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12737,	-- Mastok Wrilehiss
+					["coord"] = { 73.66, 60.01, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(976, {	-- Supplies to Auberdine
 					["lvl"] = 19,
@@ -304,16 +300,20 @@ _.Zones =
 					["qg"] = 3846,	-- Talen
 				}),
 				q(6383, {	-- The Ashenvale Hunt
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12696,	-- Senani Thunderheart
+					["coord"] = { 73.78, 61.47, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1039, {	-- The Barrens Port
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1918, {	-- The Befouled Element
-					["lvl"] = 23,
+					["provider"] = { "i", 16408 },	-- Befouled Water Globe
+					["cr"] = 12759,	-- Tideress
 					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(1031, {	-- The Branch of Cenarius
 					["lvl"] = 26,
@@ -324,9 +324,11 @@ _.Zones =
 					},
 				}),
 				q(1041, {	-- The Caravan Road
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1042, {	-- The Carevin Family
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1022, {	-- The Howling Vale
@@ -335,18 +337,24 @@ _.Zones =
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 				}),
 				q(247, {	-- The Hunt Completed
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12696,	-- Senani Thunderheart
+					["sourceQuests"] = {
+						24,	-- Shadumbra's Head
+						2,	-- Sharptalon's Claw
+						23,	-- Ursangous's Paw
+					},
+					["coord"] = { 73.78, 61.47, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(16658),	-- Wildhunter Cloak
 					},
 				}),
 				q(6504, {	-- The Lost Pages
-					["lvl"] = 23,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12718,	-- Gurda Ragescar
 					["coord"] = { 70.00, 71.16, ASHENVALE},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 23,
 					["g"] = {
 						i(16740),	-- Shredder Operating Gloves
 						i(16741),	-- Oilrag Handwraps
@@ -358,6 +366,7 @@ _.Zones =
 					["qg"] = 3894,	-- Pelturas Whitemoon
 				}),
 				q(1043, {	-- The Scythe of Elune
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1008, {	-- The Zoram Strand
@@ -366,9 +375,10 @@ _.Zones =
 					["qg"] = 3845,	-- Shindrell Swiftfire
 				}),
 				q(6544, {	-- Torek's Assault
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12858,	-- Torek
+					["coord"] = { 68.34, 75.30, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(16889),	-- Polished Walking Staff
 						i(16890),	-- Slatemetal Cutlass
@@ -380,11 +390,14 @@ _.Zones =
 					["qg"] = 3694,	-- Sentinel Selarin
 				}),
 				q(6462, {	-- Troll Charm
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12721,	-- Mitsuwa
+					["coord"] = { 11.65, 34.84, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(23, {	-- Ursangous's Paw
+					["provider"] = { "i", 16303 },	-- Ursangous's Paw
+					["cr"] = 12678,	-- Ursangous
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 				}),
@@ -394,6 +407,7 @@ _.Zones =
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 				}),
 				q(1038, {	-- Velinde's Effects
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
@@ -402,50 +416,59 @@ _.Zones =
 					["qg"] = 3901,	-- Illiyana
 				}),
 				q(6641, {	-- Vorsha the Lasher
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12717,	-- Muglash
+					["coord"] = { 12.06, 34.63, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(17692),	-- Horn Ring
 					},
 				}),
 				q(6546, {	-- Warsong Outrider Update
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12864,	-- Warsong Outrider
+					["repeatable"] = true,
+					["coord"] = { 83.6, 51.4, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(16765),	-- Warsong Outrider Update
 					},
 				}),
 				q(6545, {	-- Warsong Runner Update
-					["lvl"] = 17,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12863,	-- Warsong Runner
+					["repeatable"] = true,
+					["coord"] = { 12.2, 34.2, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(16763),	-- Warsong Runner Update
 					},
 				}),
 				q(6581, {	-- Warsong Saw Blades
-					["lvl"] = 22,
-					["races"] = HORDE_ONLY,
 					["qg"] = 12724,	-- Pixel
+					["repeatable"] = true,
+					["coord"] = { 73.06, 61.48, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 22,
 					["g"] = {
 						i(16742),	-- Warsong Saw Blades
 					},
 				}),
 				q(6547, {	-- Warsong Scout Update
+					["qg"] = 12862,	-- Warsong Scout
+					["repeatable"] = true,
+					["coord"] = { 71.04, 68.22, ASHENVALE },
 					["lvl"] = 17,
 					["races"] = HORDE_ONLY,
-					["qg"] = 12862,	-- Warsong Scout
 					["g"] = {
 						i(16764),	-- Warsong Scout Update
 					},
 				}),
 				q(6571, {	-- Warsong Supplies
-					["lvl"] = 22,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11820,	-- Locke Okarr
 					["coord"] = { 71.40, 67.64, ASHENVALE},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 22,
 					["g"] = {
 						i(16975),	-- Warsong Sash
 						i(16977),	-- Warsong Boots
