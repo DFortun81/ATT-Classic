@@ -92,7 +92,7 @@ profession(356, {	-- Fishing
 			},
 			["requireSkill"] = 356,	-- Fishing
 			["description"] = "Requires 225 Fishing to start this quest.",
-			["coord"] = { 48.4, 6.4, DUSTWALLOW_MARSH },
+			["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["lvl"] = 35,
 			["cost"] = {
