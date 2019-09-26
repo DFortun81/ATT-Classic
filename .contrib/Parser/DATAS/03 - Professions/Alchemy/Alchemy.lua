@@ -154,6 +154,10 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 2332
 			},
 			{
+				["name"] = "Minor Magic Resistance Potion",
+				["recipeID"] = 3172
+			},
+			{
 				["name"] = "Nature Protection Potion",
 				["recipeID"] = 7259
 			},
