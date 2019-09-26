@@ -1,5 +1,6 @@
 profession(40, {	-- Poisons
-	{
+	{	
+		["classes"] = {4},
 		["name"] = "Consumable",
 		["categoryID"] = 70,
 		["g"] = {
