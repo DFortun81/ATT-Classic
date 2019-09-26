@@ -3324,6 +3324,7 @@ local skillIDMap = {
 	[-192] = 185, 											-- Cooking
 	[-193] = 129, 											-- First Aid
 	[-194] = 356, 											-- Fishing
+	[-211] = 70,											-- Poisons
 };
 app.BaseNPC = {
 	__index = function(t, key)
@@ -3409,6 +3410,7 @@ app.SkillIDToSpellID = setmetatable({
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
+	[40] = 2842,	-- Poison
 }, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)

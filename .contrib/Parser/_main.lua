@@ -285,6 +285,7 @@ ItemClassInfo = {
 		"Fishing", -- [9]
 		"Jewelcrafting", -- [10]
 		"Inscription", -- [11]
+		"Poisons",	-- [12]
 		[0] = "Book",
 		["class"] = "Recipe",
 	}, -- [9]

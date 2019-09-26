@@ -347,6 +347,7 @@ app.L = {
 		[-208] = "Interface\\Icons\\achievement_alliedrace_voidelf",						-- Void Elf
 		[-209] = "Interface\\Icons\\achievement_alliedrace_highmountaintauren",				-- Highmountain Tauren
 		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
+		[-211] = "Interface\\Icons\\trade_brewpoison",										-- Poisons
 		[-212] = "Interface\\WorldMap\\TreasureChest_64",									-- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
@@ -697,6 +698,7 @@ app.L = {
 		[-193] = PROFESSIONS_FIRST_AID, 										-- First Aid
 		[-194] = PROFESSIONS_FISHING, 											-- Fishing
 		
+		[-211] = GetSpellInfo(2995),											-- Rogue Poisons
 		[-212] = "Treasure Chest",												-- Treasure Chest
 		[-220] = CLASS,															-- Class
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
@@ -1330,6 +1332,9 @@ app.L = {
 		[67] = "Interface\\Icons\\inv_boots_05",	-- Boots
 		[68] = "Interface\\Icons\\inv_misc_cape_16",	-- Cloaks
 		[69] = "Interface\\Icons\\inv_shirt_red_01",	-- Shirts
+		
+		-- Poisons
+		[70] = "Interface\\Icons\\ability_creature_poison_06", -- Consumable
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1414,6 +1419,9 @@ app.L = {
 		[67] = "Boots",	-- Boots
 		[68] = "Cloaks",	-- Cloaks
 		[69] = "Shirts",	-- Shirts
+		
+		-- Poisons
+		[70] = "Consumable",	-- Consumable
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
