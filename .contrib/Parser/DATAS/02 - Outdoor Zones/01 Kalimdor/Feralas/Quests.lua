@@ -44,6 +44,7 @@ _.Zones =
 				}),
 				q(7725, {	-- Again With the Zapped Giants
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["lvl"] = 40,
@@ -225,6 +226,7 @@ _.Zones =
 				}),
 				q(7726, {	-- Refuel for the Zapping
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(2767, {	-- Rescue OOX-22/FE!
 					["lvl"] = 40,
@@ -376,6 +378,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7773,	-- Marli Wishrunner
+					["repeatable"] = true,
 				}),
 				q(3126, {	-- Treant Muisek
 					["lvl"] = 40,

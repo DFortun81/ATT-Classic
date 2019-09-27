@@ -25,6 +25,7 @@ _.Zones =
 				}),
 				q(6601, {	-- Ascension...
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1220, {	-- Captain Vimes
 					["lvl"] = 30,
@@ -52,6 +53,7 @@ _.Zones =
 				}),
 				q(6570, {	-- Emberstrife
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
 				}),
 				q(1271, {	-- Feast at the Blue Recluse
 					["lvl"] = 30,
