@@ -90,15 +90,6 @@ _.Zones =
 					["qg"] = 10468,	-- Felnok Steelspring
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
 				}),
-				q(6502, {	-- Drakefire Amulet
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 6501,	-- The Dragon's Eye
-					["g"] = {
-						i(16309),	-- Drakefire Amulet
-					},
-				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
 					["lvl"] = 50,
 					["qg"] = 10431,	-- Gregor Greystone

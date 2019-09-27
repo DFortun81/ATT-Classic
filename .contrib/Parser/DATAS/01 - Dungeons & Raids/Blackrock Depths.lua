@@ -100,7 +100,7 @@ _.Instances = {
 				},
 				{
 					["questID"] = 3981,	-- Commander Gor'shak
-					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
+					["sourceQuest"] = 3907,	-- Disharmony of Fire (2/2)
 					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 					["coord"] = { 5.8, 47.6, BADLANDS },
 					["maps"] = { BADLANDS },
@@ -108,136 +108,674 @@ _.Instances = {
 					["lvl"] = 48,
 				},
 				{
-					["questID"] = 3801,	-- Dark Iron Legacy
+					["questID"] = 3801,	-- Dark Iron Legacy (1/2)
+					["description"] = "You must be a ghost in order to interact with this quest giver. He's in the middle of Blackrock Mountain on the floating island on top of his tomb.",
 					["qg"] = 8888,	-- Franclorn Forgewright
 					["maps"] = { BLACKROCK_MOUNTAIN },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				},
-				q(3907, {	-- Disharmony of Fire
-					["races"] = HORDE_ONLY,
+				{
+					["questID"] = 3802,	-- Dark Iron Legacy (2/2)
+					["sourceQuest"] = 3801,	-- Dark Iron Legacy (1/2)
+					["qg"] = 8888,	-- Franclorn Forgewright
+					["maps"] = { BLACKROCK_MOUNTAIN },
+					["lvl"] = 48,
+					["cost"] = {
+						{ "i", 10999, 1 },	-- Ironfel
+					},
 					["groups"] = {
+						{
+							["itemID"] = 11000,	-- Shadowforge Key
+							["questID"] = 3802,	-- Dark Iron Legacy (2/2)
+						},
+					},
+				},
+				{
+					["questID"] = 3906,	-- Disharmony of Fire (1/2)
+					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
+					["coord"] = { 3.3, 48.3, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+					["crs"] = {
+						9026,	-- Overmaster Pyron
+					},
+				},
+				{
+					["questID"] = 3907,	-- Disharmony of Fire (2/2)
+					["sourceQuest"] = 3906,	-- Disharmony of Fire (1/2)
+					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
+					["coord"] = { 3.3, 48.3, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+					["crs"] = {
+						9017,	-- Lord Incendius
+					},
+					["groups"] = {
+						i(12113),	-- Sunborne Cape
 						i(12112),	-- Crypt Demon Bracers
 						i(12114),	-- Nightfall Gloves
 						i(12115),	-- Stalwart Clutch
-						i(12113),	-- Sunborne Cape
 					},
-				}),
-				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
-					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
-					["repeatable"] = true,
-				}),
-				q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
-					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
-					["repeatable"] = true,
-				}),
-				q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
-					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
-					["repeatable"] = true,
-				}),
-				q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
-					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
-					["repeatable"] = true,
-				}),
-				q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
-					["provider"] = { "n", 12944 },	-- Lokhtos Darkbargainer
-					["repeatable"] = true,
-				}),
-				q(4126, {	-- Hurley Blackbreath
+				},
+				{
+					["questID"] = 4182,	-- Dragonkin Menace
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["description"] = "You should finish this full quest chain up to Marshal Windsor before joining a Blackrock Depths group.",
+					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 6502,	-- Drakefire Amulet
+					["sourceQuest"] = 6501,	-- The Dragon's Eye
+					["qg"] = 10929,	-- Haleh
+					["coord"] = { 54.55, 51.2, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16663, 1 },	-- Blood of the Black Dragon Champion
+					},
+					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] = 16309,	-- Drakefire Amulet 
+							["allianceQuestID"] = 6502,	-- Drakefire Amulet
+							["hordeQuestID"] = 6602,	-- Blood of the Black Dragon Champion
+						},
+					},
+				},
+				{
+					["questID"] = 6646,	-- Favor Amongst the Brotherhood, Blood of the Mountain
+					["qg"] = 12944,	-- Lokhtos Darkbargainer
+					["cost"] = {
+						{ "i", 11382, 1 },	-- Blood of the Mountain
+					},
+					["repeatable"] = true,
+					["lvl"] = 60,
+				},
+				{
+					["questID"] = 6645,	-- Favor Amongst the Brotherhood, Core Leather
+					["qg"] = 12944,	-- Lokhtos Darkbargainer
+					["cost"] = {
+						{ "i", 17012, 2 },	-- Core Leather
+					},
+					["repeatable"] = true,
+					["lvl"] = 60,
+				},
+				{
+					["questID"] = 6642,	-- Favor Amongst the Brotherhood, Dark Iron Ore
+					["qg"] = 12944,	-- Lokhtos Darkbargainer
+					["cost"] = {
+						{ "i", 11370, 10 },	-- Dark Iron Ore
+					},
+					["repeatable"] = true,
+					["lvl"] = 60,
+				},
+				{
+					["questID"] = 6643,	-- Favor Amongst the Brotherhood, Fiery Core
+					["qg"] = 12944,	-- Lokhtos Darkbargainer
+					["cost"] = {
+						{ "i", 17010, 1 },	-- Fiery Core
+					},
+					["repeatable"] = true,
+					["lvl"] = 60,
+				},
+				{
+					["questID"] = 6644,	-- Favor Amongst the Brotherhood, Lava Core
+					["qg"] = 12944,	-- Lokhtos Darkbargainer
+					["cost"] = {
+						{ "i", 17011, 1 },	-- Lava Core
+					},
+					["repeatable"] = true,
+					["lvl"] = 60,
+				},
+				{
+					["questID"] = 4122,	-- Grark Lorkrub
+					["qg"] = 9080,	-- Lexlort <Kargath Expeditionary Force>
+					["coord"] = { 5.9, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 52,
+					["groups"] = {
+						{
+							["itemID"] = 11286,	-- Thorium Shackles
+							["questID"] = 4121,	-- Precarious Predicament
+						},
+					},
+				},
+				{
+					["questID"] = 4126,	-- Hurley Blackbreath
+					["sourceQuest"] = 4128,	-- Ragnar Thunderbrew
+					["qg"] = 1267,	-- Ragnar Thunderbrew
+					["coord"] = { 46.8, 52.4, DUN_MOROGH },
+					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11312, 1 },	-- Lost Thunderbrew Recipe
+					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(12000),	-- Limb Cleaver
 						i(11964),	-- Swiftstrike Cudgel
+						i(12003),	-- Dark Dwarven Lager
 					},
-				}),
-				q(4263, {	-- Incendius!
+				},
+				{
+					["questID"] = 4263,	-- Incendius!
+					["sourceQuest"] = 4262,	-- Overmaster Pyron
+					["qg"] = 9561,	-- Jalinda Sprig
+					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["crs"] = {
+						9017,	-- Lord Incendius
+					},
 					["groups"] = {
 						i(12112),	-- Crypt Demon Bracers
 						i(12114),	-- Nightfall Gloves
 						i(12115),	-- Stalwart Clutch
 						i(12113),	-- Sunborne Cape
 					},
-				}),
-				q(4322, {	-- Jail Break!
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9023,	-- Marshal Windsor
+				},
+				{
+					["questID"] = 4322,	-- Jail Break!
 					["sourceQuest"] = 4282,	-- A Shred of Hope
+					["qg"] = 9023,	-- Marshal Windsor
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 					["groups"] = {
 						i(12061),	-- Blade of Reckoning
 						i(12062),	-- Skilled Fighting Blade
 						i(12065),	-- Ward of the Elements
 					},
-				}),
-				q(4134, {	-- Lost Thunderbrew Recipe
+				},
+				{
+					["questID"] = 4341,	-- Kharan Mighthammer
+					["sourceQuest"] = 3701,	-- The Smoldering Ruins of Thaurissan (2/2)
+					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
+					["coord"] = { 39.09, 56.19, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4342,	-- Kharan's Tale
+					["sourceQuest"] = 4341,	-- Kharan Mighthammer
+					["qg"] = 9021,	-- Kharan Mighthammer
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
+					["provider"] = { "o", 164867 }, -- WANTED
+					["coord"] = { 3.9, 47.4, BADLANDS },
+					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
+					["sourceQuest"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
+					["provider"] = { "o", 164868 }, -- KILL ON SIGHT
+					["coord"] = { 3.9, 47.4, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4134,	-- Lost Thunderbrew Recipe
+					["sourceQuest"] = 4133,	-- Vivian Lagrave
+					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
+					["coord"] = { 2.9, 47.8, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11312, 1 },	-- Lost Thunderbrew Recipe
+					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(12000),	-- Limb Cleaver
 						i(11964),	-- Swiftstrike Cudgel
+						i(3928),	-- Superior Healing Potion
+						i(6149),	-- Greater Mana Potion
 					},
-				}),
-				q(4241, {	-- Marshal Windsor
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9560,	-- Marshal Maxwell
+				},
+				{
+					["questID"] = 4241,	-- Marshal Windsor
 					["sourceQuest"] = 4224,	-- The True Masters (6/6)
-				}),
-				q(4132, {	-- Operation: Death to Angerforge
+					["qg"] = 9560,	-- Marshal Maxwell
+					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4132,	-- Operation: Death to Angerforge
+					["sourceQuest"] = 4121,	-- Precarious Predicament
+					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
+					["coord"] = { 5.8, 47.5, BADLANDS },
+					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 52,
+					["crs"] = {
+						9033,	-- General Angerforge
+					},
 					["groups"] = {
 						i(12059),	-- Conqueror's Medallion
 					},
-				}),
-				q(4295, {	-- Rocknot's Ale
-					["provider"] = { "n", 9503 },	-- Private Rocknot
+				},
+				{
+					["questID"] = 4262,	-- Overmaster Pyron
+					["qg"] = 9561,	-- Jalinda Sprig
+					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["crs"] = {
+						9026,	-- Overmaster Pyron
+					},
+				},
+				{
+					["questID"] = 4121,	-- Precarious Predicament
+					["sourceQuest"] = 4122,	-- Grark Lorkrub
+					["qg"] = 9520,	-- Grark Lorkrub
+					["coord"] = { 40.2, 34.2, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 52,
+				},
+				{
+					["questID"] = 4128,	-- Ragnar Thunderbrew
+					["qg"] = 9540,	-- Enohar Thunderbrew
+					["coord"] = { 63.6, 20.6, BLASTED_LANDS },
+					["maps"] = { BLASTED_LANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4136,	-- Ribbly Screwspigot
+					["qg"] = 9544,	-- Yuka Screwspigot
+					["coord"] = { 66.1, 21.9, BLASTED_LANDS },
+					["maps"] = { BLASTED_LANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11313, 1 },	-- Ribbly's Head
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11963),	-- Penance Spaulders
+						i(12049),	-- Splintsteel Armor
+						i(11865),	-- Rancor Boots
+					},
+				},
+				{
+					["questID"] = 4295,	-- Rocknot's Ale
+					["qg"] = 9503,	-- Private Rocknot
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11325, 2 }	-- Dark Iron Ale Mug
 					},
-				}),
-				q(4136, {	-- Ribbly Screwspigot
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 6402,	-- Stormwind Rendezvous
+					["sourceQuest"] = 4322,	-- Jail Break!
+					["qg"] = 9560,	-- Marshal Maxwell
+					["coord"] = { 84.7, 69.0, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4361,	-- The Bearer of Bad News
+					["sourceQuest"] = 4342,	-- Kharan's Tale
+					["qg"] = 9021,	-- Kharan Mighthammer
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 9015,	-- The Challenge
+					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["maps"] = { DIRE_MAUL },
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["lvl"] = 58,
 					["groups"] = {
-						i(11963),	-- Penance Spaulders
-						i(11865),	-- Rancor Boots
-						i(12049),	-- Splintsteel Armor
+						{
+							["itemID"] = 21986,	-- Banner of Provocation
+							["allianceQuestID"] = 9015,	-- The Challenge
+							["hordeQuestID"] = 9018,	-- Anthion's Parting Words
+						},
 					},
-				}),
-				q(7201, {	-- The Last Element
+				},
+				{
+					["questID"] = 6501,	-- The Dragon's Eye
+					["sourceQuest"] = 6403,	-- The Great Masquerade
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78.2, 18.1, STORMWIND },
+					["maps"] = { STORMWIND },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] = 16662,	-- Fragment of the Dragon's Eye
+							["questID"] = 6501,	-- The Dragon's Eye
+							["description"] = "Take this to Haleh in Winterspring. Use the blue rune on the ground inside the cave to reach her. Don't bother going to Dustwallow Marsh.",
+						},
+					},
+				},
+				{
+					["questID"] = 4002,	-- The Eastern Kingdom
+					["sourceQuest"] = 4001,	-- What Is Going On? (2/2)
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 31.61, 37.83, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4362,	-- The Fate of the Kingdom
+					["sourceQuest"] = 4361,	-- The Bearer of Bad News
+					["qg"] = 2784,	-- King Magni Bronzebeard <Lord of Ironforge>
+					["coord"] = { 39.09, 56.19, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+					["crs"] = {
+						9019,	-- Emperor Dagran Thaurissan
+					},
+				},
+				{
+					["questID"] = 6403,	-- The Great Masquerade
+					["sourceQuest"] = 6402,	-- Stormwind Rendezvous
+					["qg"] = 12580,	-- Reginald Windsor
+					["description"] = "This quest can be solo'd. Do NOT touch anything and let Bolvar take care of the dragons. They do heavy AOE, you will likely die unless you're in a raid group of 20+.",
+					["coord"] = { 64.7, 76.8, STORMWIND },
+					["maps"] = { STORMWIND },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4286,	-- The Good Stuff
+					["qg"] = 9177,	-- Oralius
+					["coord"] = { 84.6, 68.7, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11468, 20 },	-- Dark Iron Fanny Pack
+					},
+					["lvl"] = 50,
+					["groups"] = {
+						i(11883),	-- A Dingy Fanny Pack
+					},
+				},
+				{
+					["questID"] = 4123,	-- The Heart of the Mountain
+					["qg"] = 9536,	-- Maxwort Uberglint
+					["coord"] = { 65.2, 23.9, BADLANDS },
+					["maps"] = { BADLANDS },
+					["cost"] = {
+						{ "i", 11309, 1 },	-- The Heart of the Mountain
+					},
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 7201,	-- The Last Element
+					["sourceQuest"] = 3906,	-- Disharmony of Flame
+					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
+					["coord"] = { 2.9, 47.76, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11129, 10 },	-- Essence of the Elements
+					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(12038),	-- Lagrave's Seal
 					},
-				}),
-				q(4201, {	-- The Love Potion
+				},
+				{
+					["questID"] = 4201,	-- The Love Potion
+					["qg"] = 9500,	-- Mistress Nagmara
+					["cost"] = {
+						{ "i", 8846, 4 },	-- Gromsblood
+						{ "i", 11405, 10 },	-- Giant Silver Vein
+						{ "i", 11413, 1 },	-- Nagmara's Filled Vial
+					},
+					["lvl"] = 50,
 					["groups"] = {
+						{
+							["itemID"] = 11412,	-- Nagmara's Vial
+							["questID"] = 4201,	-- The Love Potion
+						},
 						i(11962),	-- Manacle Cuffs
 						i(11866),	-- Nagmara's Whipping Belt
 					},
-				}),
-				q(4004, {	-- The Princess Saved?
+				},
+				{
+					["questID"] = 4004,	-- The Princess Saved?
+					["sourceQuest"] = 4003,	-- The Royal Rescue
+					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
 					["groups"] = {
 						i(12545),	-- Eye of Orgrimmar
 						i(12544),	-- Thrall's Resolve
 					},
-				}),
-				q(4363, {	-- The Princess's Surprise
+				},
+				{
+					["questID"] = 4363,	-- The Princess's Surprise
+					["sourceQuest"] = 4362,	-- The Fate of the Kingdom
+					["qg"] = 8929,	-- Princess Moira Bronzebeard <Princess of Ironforge>
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 					["groups"] = {
 						i(12548),	-- Magni's Will
 						i(12543),	-- Songstone of Ironforge
 					},
-				}),
-				q(4063, {	-- The Rise of the Machines
+				},
+				{
+					["questID"] = 4061,	-- The Rise of the Machines (1/3)
+					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
+					["coord"] = { 3.02, 47.81, BADLANDS },
+					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(12109),	-- Azure Moon Amice
-						i(12108),	-- Basaltscale Armor
-						i(12111),	-- Lavaplate Gauntlets
-						i(12110),	-- Raincaster Drape
+					["cost"] = {
+						{ "i", 11266, 10 },	-- Fractured Elemental Shard
 					},
-				}),
+					["lvl"] = 52,
+				},
+				{
+					["questID"] = 4062,	-- The Rise of the Machines (2/3)
+					["sourceQuest"] = 4061,	-- The Rise of the Machines (1/3)
+					["qg"] = 9079,	-- Hierophant Theodora Mulvadania <Kargath Expeditionary Force>
+					["coord"] = { 3.02, 47.81, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 52,
+					["cost"] = {
+						{ "i", 11267, 1 },	-- Elemental Shard Sample
+					},
+				},
+				{
+					["questID"] = 4063,	-- The Rise of the Machines (3/3)
+					["sourceQuest"] = 4062,	-- The Rise of the Machines (2/3)
+					["qg"] = 2921,	-- Lotwil Veriatus
+					["coord"] = { 25.95, 44.87, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11268, 1 },	-- Head of Argelmach
+						{ "i", 11269, 10 },	-- Intact Elemental Core
+					},
+					["lvl"] = 52,
+					["groups"] = {
+						i(12110),	-- Raincaster Drape
+						i(12109),	-- Azure Moon Amice
+						i(12111),	-- Lavaplate Gauntlets
+						i(12108),	-- Basaltscale Armor
+					},
+				},
+				{
+					["questID"] = 4003,	-- The Royal Rescue
+					["sourceQuest"] = 4002,	-- The Eastern Kingdom
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 31.61, 37.83, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+					["crs"] = {
+						9019,	-- Emperor Dagran Thaurissan
+					},
+				},
+				{
+					["questID"] = 3702,	-- The Smoldering Ruins of Thaurissan (1/2)
+					["qg"] = 8879,	-- Royal Historian Archesonus
+					["coord"] = { 38.37, 55.31, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 3701,	-- The Smoldering Ruins of Thaurissan (2/2)
+					["sourceQuest"] = 3702,	-- The Smoldering Ruins of Thaurissan (1/2)
+					["qg"] = 8879,	-- Royal Historian Archesonus
+					["coord"] = { 38.37, 55.31, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 4083,		-- The Spectral Chalice
+					["provider"] = { "o", 164869 },	-- The Spectral Chalice
+					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
+					["requireSkill"] = 186,	-- Mining
+					["cost"] = {
+						{ "i", 7910, 2 },	-- Star Ruby
+						{ "i", 3577, 20 },	-- Gold Bar
+						{ "i", 6037, 10 },	-- Truesilver Bar
+					},
+					["crs"] = {
+						9037,	-- Gloom'rel
+					},
+					["lvl"] = 40,
+					["groups"] = {
+						recipe(14891),		-- Smelt Dark Iron (Recipe)
+					},
+				},
+				{
+					["questID"] = 4183,	-- The True Masters (1/6)
+					["sourceQuest"] = 4182,	-- Dragonkin Menace
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						{
+							["itemID"] = 11366,	-- Helendis Riverhorn's Letter
+							["questID"] = 4183,	-- The True Masters (1/6)
+						},
+					},
+				},
+				{
+					["questID"] = 4184,	-- The True Masters (2/6)
+					["sourceQuest"] = 4183,	-- The True Masters (1/6)
+					["qg"] = 344,	-- Magistrate Solomon
+					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						{
+							["itemID"] = 11367,	-- Solomon's Plea to Bolvar
+							["questID"] = 4184,	-- The True Masters (2/6)
+						},
+					},
+				},
+				{
+					["questID"] = 4185,	-- The True Masters (3/6)
+					["sourceQuest"] = 4184,	-- The True Masters (2/6)
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4186,	-- The True Masters (4/6)
+					["sourceQuest"] = 4185,	-- The True Masters (3/6)
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						{
+							["itemID"] = 11368,	-- Bolvar's Decree
+							["questID"] = 4186,	-- The True Masters (4/6)
+						},
+					},
+				},
+				{
+					["questID"] = 4223,	-- The True Masters (5/6)
+					["sourceQuest"] = 4186,	-- The True Masters (4/6)
+					["qg"] = 344,	-- Magistrate Solomon
+					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
+					["maps"] = { REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4224,	-- The True Masters (6/6)
+					["sourceQuest"] = 4223,	-- The True Masters (5/6)
+					["qg"] = 9560,	-- Marshal Maxwell
+					["coord"] = { 84.74, 69.02, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+					["groups"] = {
+						{
+							["npcID"] = 9563,	-- Ragged John
+							["questID"] = 4224,	-- The True Masters (6/6)
+							["coord"] = { 65.0, 23.8, BURNING_STEPPES },
+						},
+					},
+				},
+				{
+					["questID"] = 4133,	-- Vivian Lagrave
+					["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
+					["coord"] = { 50.1, 68.0, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
+				},
+				{
+					["questID"] = 3982,	-- What Is Going On? (1/2)
+					["sourceQuest"] = 3981,	-- Commander Gor'shak
+					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4001,	-- What Is Going On? (2/2)
+					["sourceQuest"] = 3982,	-- What Is Going On? (1/2)
+					["qg"] = 9020,	-- Commander Gor'shak <Kargath Expeditionary Force>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
+				},
+				{
+					["questID"] = 4324,	-- Yuka Screwspigot
+					["qg"] = 9706,	-- Yorba Screwspigot
+					["coord"] = { 67.0, 24.0, TANARIS },
+					["maps"] = { TANARIS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				},
 			}),
 			n(0, {	-- Zone Drop
 				{
@@ -248,6 +786,11 @@ _.Instances = {
 				{
 					["itemID"] = 11129,	-- Essence of the Elements
 					["questID"] = 7201,	-- The Last Element
+					["races"] = HORDE_ONLY,
+				},
+				{
+					["itemID"] = 11269,	-- Intact Elemental Core
+					["questID"] = 4063,	-- The Rise of the Machines
 					["races"] = HORDE_ONLY,
 				},
 				i(12546),	-- Aristocratic Cuffs
@@ -485,6 +1028,10 @@ _.Instances = {
 					o(161495, {	-- Secret Safe
 						["description"] = "This lootable chest spawns after defeating Watchman Doomgrip. Additionally, these items can also drop directly from the boss. It can only be looted by one person each run.",
 						["groups"] = {
+							{
+								["itemID"] = 11309,	-- The Heart of the Mountain
+								["questID"] = 4123,	-- The Heart of the Mountain
+							},
 							i(22256),	-- Mana Shaping Handwraps
 							i(22205), 	-- Black Steel Bindings
 							i(22254), 	-- Wand of Eternal Light
@@ -559,7 +1106,6 @@ _.Instances = {
 					{
 						["itemID"] = 11313,	-- Ribbly's Head
 						["questID"] = 4136,	-- Ribbly Screwspigot
-						["races"] = ALLIANCE_ONLY,
 					},
 					i(11612),	-- Plans: Dark Iron Plate
 					i(2663),	-- Ribbly's Bandolier
@@ -635,25 +1181,6 @@ _.Instances = {
 					i(11785),	-- Rock Golem Bulwark
 					i(11787),	-- Shalehusk Boots
 					i(22245),	-- Soot Encrusted Footwear
-				},
-			}),
-			n(9037, {	-- Gloom'rel
-				["description"] = "If you are a miner with 230 skill, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
-				["requireSkill"] = 186,	-- Mining
-				["groups"] = {
-					{
-						["questID"] = 4083,		-- The Spectral Chalice
-						["provider"] = { "o", 164869 },	-- The Spectral Chalice
-						["lvl"] = 40,
-						["cost"] = {
-							{ "i", 7910, 2 },	-- Star Ruby
-							{ "i", 3577, 20 },	-- Gold Bar
-							{ "i", 6037, 10 },	-- Truesilver Bar
-						},
-						["groups"] = {
-							recipe(14891),		-- Smelt Dark Iron (Recipe)
-						},
-					},
 				},
 			}),
 			n(9039, {	-- Doom'rel

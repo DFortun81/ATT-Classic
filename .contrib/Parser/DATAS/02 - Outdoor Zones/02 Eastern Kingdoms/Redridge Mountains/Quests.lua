@@ -210,18 +210,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 415,	-- Verner Osgood
 				}),
-				q(4184, {	-- The True Masters (2/6)
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 344,	-- Magistrate Solomon
-					["sourceQuest"] = 4183,	-- The True Masters (1/6)
-				}),
-				q(4223, {	-- The True Masters (5/6)
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 344,	-- Magistrate Solomon
-					["sourceQuest"] = 4186,	-- The True Masters (4/6)
-				}),
 				q(178, {	-- Theocritus' Retrieval
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,

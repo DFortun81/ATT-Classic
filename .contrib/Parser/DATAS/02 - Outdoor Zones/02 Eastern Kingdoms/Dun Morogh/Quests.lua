@@ -90,15 +90,6 @@ _.Zones =
 					["repeatable"] = true,
 					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
 				}),
-				q(4126, {	-- Hurley Blackbreath
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1267,	-- Ragnar Thunderbrew
-					["g"] = {
-						i(11964),	-- Swiftstrike Cudgel
-						i(12000),	-- Limb Cleaver
-					},
-				}),
 				q(412, {	-- Operation Recombobulation
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
