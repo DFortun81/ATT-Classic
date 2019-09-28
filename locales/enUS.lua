@@ -219,7 +219,8 @@ app.L = {
 		-- [-22] = "Atal'ai Defenders",														-- Atal'ai Defenders
 		[-25] = "Interface\\Icons\\Tracking_WildPet", 										-- Pet Battles
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 									-- Drop
-		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 										-- Raid Finder Bag
+		[-27] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",						-- Lower (Blackrock Spire)
+		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
 		[-32] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK", 						-- Trading Card Game
 		[-33] = "Interface\\Icons\\trade_fishing", 											-- Fishing
@@ -629,7 +630,8 @@ app.L = {
 		[-22] = "Atal'ai Defenders",											-- Atal'ai Defenders
 		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		
+		[-27] = "Lower",														-- Lower (Blackrock Spire)
+		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
 		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 		
@@ -1442,6 +1444,7 @@ app.L = {
 		["Blackrock Depths"] = 242,
 		["Blackwing Lair"] = 287,
 		["Blackrock Mountain"] = 35,
+		["Blackrock Spire"] = 250,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,
