@@ -4983,8 +4983,11 @@ local function RowOnEnter(self)
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
-		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
-		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
+		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
+		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
+		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
+		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
+		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
