@@ -142,6 +142,9 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3692,	-- Volcor
+					["altQuests"] = {
+						995,	-- Escape Through Stealth
+					},
 					["g"] = {
 						i(5609),	-- Steadfast Cinch
 					},
@@ -149,6 +152,10 @@ _.Zones =
 				q(995, {	-- Escape Through Stealth
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3692,	-- Volcor
+					["altQuests"] = {
+						994,	-- Escape Through Force
+					},
 					["g"] = {
 						i(6659),	-- Scarab Trousers
 					},
