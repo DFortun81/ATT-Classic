@@ -41,7 +41,6 @@ _.Zones =
 						i(4793),	-- Sylvan Cloak						
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6275),	-- Pattern: Greater Adept's Robe
-						i(7114),	-- Pattern: Azure Silk Gloves
 						i(7290),	-- Pattern: Red Whelp Gloves
 					},
 				}),
@@ -68,6 +67,8 @@ _.Zones =
 						i(4832),	-- Mystic Sarong
 						i(4833),	-- Glorious Shoulders
 						i(4835),	-- Elite Shoulders
+						i(7114),	-- Pattern: Azure Silk Gloves
+						i(7290),	-- Pattern: Red Whelp Gloves
 						i(7613),	-- Pattern: Green Leather Armor
 					},
 				})
