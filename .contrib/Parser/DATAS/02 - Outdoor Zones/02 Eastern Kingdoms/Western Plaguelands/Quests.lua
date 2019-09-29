@@ -209,17 +209,6 @@ _.Zones =
 				q(5050, {	-- Good Luck Charm
 					["lvl"] = 50,
 				}),
-				q(5944, {	-- In Dreams
-					["lvl"] = 52,
-					["qg"] = 1842,	-- Highlord Taelan Fordring
-					["g"] = {
-						i(15411),	-- Mark of Fordring
-						i(15413),	-- Ornate Adamantium Breastplate
-						i(15418),	-- Shimmering Platinum Warhammer
-						i(15421),	-- Shroud of the Exile
-						i(16058),	-- Fordring's Seal
-					},
-				}),
 				q(5407, {	-- Invader's Scourgestones
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
@@ -352,9 +341,6 @@ _.Zones =
 					["g"] = {
 						i(12814),	-- Flame in a Bottle
 					},
-				}),
-				q(5862, {	-- Scarlet Subterfuge
-					["lvl"] = 52,
 				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
