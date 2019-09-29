@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8584,	-- Iverron
+					["sourceQuest"] = 4495,	-- A Good Friend
 				}),
 				q(4495, {	-- A Good Friend
 					["lvl"] = 2,
@@ -21,27 +22,30 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
 				}),
+				q(921, {	-- Crown of the Earth
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3514,	-- Tenaron Stormgrip
+					["sourceQuest"] = 920,	-- Tenaron's Summons
+				}),
 				q(928, {	-- Crown of the Earth
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3514,	-- Tenaron Stormgrip
+					["sourceQuest"] = 921,	-- Crown of the Earth
 				}),
 				q(929, {	-- Crown of the Earth
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
-				}),
-				q(921, {	-- Crown of the Earth
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3514,	-- Tenaron Stormgrip
-				}),
-				q(7383, {	-- Crown of the Earth
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3515,	-- Corithras Moonrage
-				}),
-				q(934, {	-- Crown of the Earth
+					["sourceQuest"] = 928,	-- Crown of the Earth
 				}),
 				q(933, {	-- Crown of the Earth
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
+					["sourceQuest"] = 929,	-- Crown of the Earth
+				}),
+				q(934, {	-- Crown of the Earth
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3515,	-- Corithras Moonrage
+					["sourceQuest"] = 933,	-- Crown of the Earth
 				}),
 				q(935, {	-- Crown of the Earth
 					["races"] = ALLIANCE_ONLY,
@@ -53,6 +57,10 @@ _.Zones =
 						i(5596),	-- Ashwood Bow
 						i(5595),	-- Thicket Hammer
 					},
+				}),
+				q(7383, {	-- Crown of the Earth
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3515,	-- Corithras Moonrage
 				}),
 				q(997, {	-- Denalan's Earth
 					["lvl"] = 4,
@@ -71,10 +79,18 @@ _.Zones =
 					["lvl"] = 3,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7317,	-- Oben Rageclaw
+					["sourceQuest"] = 2541,	-- The Sleeping Druid
 					["g"] = {
 						i(9598),	-- Sleeping Robes
 						i(18957),	-- Brushwood Blade
 					},
+				}),
+				q(3117, {	-- Etched Sigil
+					["lvl"] = 1,
+					["classes"] = { 3 },	-- Hunter
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2079,	-- Conservator Ilthalaine
+					["sourceQuest"] = 456,	-- The Balance of Nature
 				}),
 				q(3661, {	-- Favored of Elune?
 					["lvl"] = 42,
@@ -86,6 +102,7 @@ _.Zones =
 				q(2459, {	-- Ferocitas the Dream Eater
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3567,	-- Tallonkai Swiftroot
+					["sourceQuest"] = 2438,	-- The Emerald Dreamcatcher
 					["g"] = {
 						i(8049),	-- Gnarlpine Necklace
 					},
@@ -100,20 +117,23 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2107,	-- Gaerolas Talvethren
-				}),
-				q(3522, {	-- Iverron's Antidote
-					["lvl"] = 2,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 8583,	-- Dirania Silvershine
-					["g"] = {
-						i(10655),	-- Sedgeweed Britches
-						i(10656),	-- Barkmail Vest
-					},
+					["sourceQuest"] = 475,	-- Gnarlpine Corruption
 				}),
 				q(3521, {	-- Iverron's Antidote
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8583,	-- Dirania Silvershine
+					["sourceQuest"] = 3519,	-- A Friend in Need
+				}),
+				q(3522, {	-- Iverron's Antidote
+					["lvl"] = 2,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 8583,	-- Dirania Silvershine
+					["sourceQuest"] = 3522,	-- Iverron's Antidote
+					["g"] = {
+						i(10655),	-- Sedgeweed Britches
+						i(10656),	-- Barkmail Vest
+					},
 				}),
 				q(938, {	-- Mist
 					["lvl"] = 7,
@@ -148,10 +168,20 @@ _.Zones =
 						i(5218),	-- Cleansed Timberling Heart
 					},
 				}),
+				q(4161, {	-- Recipe of the Kaldorei
+					["lvl"] = 1,
+					["requireSkill"] = 185,	-- Cooking
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6286,	-- Zarrin
+					["g"] = {
+						i(5482),	-- Recipe: Kaldorei Spider Kabob
+					},
+				}),
 				q(922, {	-- Rellian Greenspyre
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2080,	-- Denalan
+					["sourceQuest"] = 918,	-- Timberling Seeds
 				}),
 				q(2498, {	-- Return to Denalan
 					["lvl"] = 4,
@@ -166,6 +196,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2083,	-- Syral Bladeleaf
+					["sourceQuest"] = 488,	-- Zenn's Bidding
 				}),
 				q(5250, {	-- Starfall
 					["lvl"] = 53,
@@ -230,14 +261,7 @@ _.Zones =
 				q(920, {	-- Tenaron's Summons
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2082,	-- Gilshalan Windwalker
-				}),
-				q(457, {	-- The Balance of Nature
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2079,	-- Conservator Ilthalaine
-					["g"] = {
-						i(5405),	-- Draped Cloak
-						i(6058),	-- Blackened Leather Belt
-					},
+					["sourceQuest"] = 917,	-- Webwood Egg
 				}),
 				q(456, {	-- The Balance of Nature
 					["races"] = ALLIANCE_ONLY,
@@ -245,6 +269,15 @@ _.Zones =
 					["g"] = {
 						i(5394),	-- Archery Training Gloves
 						i(11187),	-- Stemleaf Bracers
+					},
+				}),
+				q(457, {	-- The Balance of Nature
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2079,	-- Conservator Ilthalaine
+					["sourceQuest"] = 456,	-- The Balance of Nature
+					["g"] = {
+						i(5405),	-- Draped Cloak
+						i(6058),	-- Blackened Leather Belt
 					},
 				}),
 				q(2438, {	-- The Emerald Dreamcatcher
@@ -263,7 +296,7 @@ _.Zones =
 				q(930, {	-- The Glowing Fruit
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 6751,	-- Strange Fruited Plant
+					["provider"] = { "o", 6751 },	-- Strange Fruited Plant
 				}),
 				q(6072, {	-- The Hunter's Path
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
@@ -288,6 +321,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
+					["sourceQuest"] = 476,	-- Gnarlpine Corruption
 					["g"] = {
 						i(9599),	-- Barkmail Leggings
 						i(9603),	-- Gritroot Staff
@@ -316,9 +350,14 @@ _.Zones =
 						i(5205),	-- Sprouted Frond
 					},
 				}),
+				q(458, {	-- The Woodland Protector
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2077,	-- Melithar Staghelm
+				}),
 				q(459, {	-- The Woodland Protector
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1992,	-- Tarindrella
+					["sourceQuest"] = 458,	-- The Woodland Protector
 					["g"] = {
 						i(5398),	-- Canopy Leggings
 						i(5399),	-- Tracking Boots
@@ -326,14 +365,11 @@ _.Zones =
 						i(961),	-- Healing Herb
 					},
 				}),
-				q(458, {	-- The Woodland Protector
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2077,	-- Melithar Staghelm
-				}),
 				q(918, {	-- Timberling Seeds
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2080,	-- Denalan
+					["sourceQuest"] = 997,	-- Denalan's Earth
 					["g"] = {
 						i(4604),	-- Forest Mushroom Cap
 					},
@@ -342,6 +378,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2080,	-- Denalan
+					["sourceQuest"] = 997,	-- Denalan's Earth
 					["g"] = {
 						i(5606),	-- Gardening Gloves
 						i(6061),	-- Graystone Bracers
@@ -372,6 +409,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
+					["sourceQuest"] = 775,	-- The Relics of Wakening
 					["g"] = {
 						i(5459),	-- Defender Axe
 						i(5587),	-- Thornroot Club
