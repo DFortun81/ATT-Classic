@@ -89,6 +89,21 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 				}),
+				q(6722, {	-- The Hunter's Path
+					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
+					["coord"] = { 61.58, 15.19, STORMWIND_CITY },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						6071,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
+						6721,	-- The Hunter's Path
+						-- 6722,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
+				}),
 				q(543, {	-- The Perenolde Tiara
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,

@@ -157,22 +157,7 @@ _.Zones =
 				q(495, {	-- The Crown of Will
 					["lvl"] = 34,
 					["races"] = HORDE_ONLY,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2227,	-- Sharlindra
-				}),
-				q(6722, {	-- The Hunter's Path
-					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-					["coord"] = { 61.58, 15.19, STORMWIND_CITY },
-					["races"] = { 4 },	-- Night Elf Only
-					["classes"] = { 3 },	-- Hunter Only!
-					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						6721,	-- The Hunter's Path
-						-- 6722,	-- The Hunter's Path
-					},
-					["lvl"] = 10,
 				}),
 				q(5049, {	-- The Jeremiah Blues
 					["lvl"] = 50,

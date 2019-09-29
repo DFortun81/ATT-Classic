@@ -453,8 +453,10 @@ _.Zones =
 				q(2944, {	-- The Super Snapper FX
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7763,	-- Curgle Crankhop
 					["coord"] = { 79.0, 62.0, THE_HINTERLANDS },
 					["maps"] = { THE_HINTERLANDS },
+					["sourceQuest"] = 2941,	-- The Borrower
 				}),
 				q(2605, {	-- The Thirsty Goblin
 					["lvl"] = 44,

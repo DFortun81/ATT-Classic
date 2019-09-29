@@ -61,6 +61,7 @@ _.Zones =
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
+					["sourceQuest"] = 940,	-- Teldrassil
 				}),
 				q(3788, {	-- Jonespyre's Request
 					["lvl"] = 47,
@@ -107,16 +108,23 @@ _.Zones =
 					["races"] = {
 						4,	-- Night Elf
 					},
-					["qg"] = 4265,	-- Nyoma
+					["qg"] = 4241,	-- Mydrannul
 				}),
 				q(6762, {	-- Rabine Saturna
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(2498, {	-- Return to Denalan
+					["lvl"] = 4,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3517,	-- Rellian Greenspyre
+					["sourceQuest"] = 923,	-- Tumors
+				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
+					["sourceQuest"] = 1150,	-- Tears of the Moon
 					["g"] = {
 						i(9600),	-- Lace Pants
 						i(9601),	-- Cushioned Boots
@@ -126,6 +134,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
+					["sourceQuest"] = 2519,	-- The Temple of the Moon
 				}),
 				q(6071, {	-- The Hunter's Path
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
@@ -133,6 +142,7 @@ _.Zones =
 					["maps"] = { TELDRASSIL },
 					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						-- 6071,	-- The Hunter's Path
 						6072,	-- The Hunter's Path
@@ -148,6 +158,7 @@ _.Zones =
 					["maps"] = { TELDRASSIL },
 					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
 						6072,	-- The Hunter's Path
@@ -183,6 +194,15 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
+				}),
+				q(923, {	-- Tumors
+					["lvl"] = 4,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3517,	-- Rellian Greenspyre
+					["sourceQuest"] = 922,	-- Rellian Greenspyre
+					["g"] = {
+						i(5605),	-- Pruning Knife
+					},
 				}),
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,

@@ -14,7 +14,8 @@ profession(186, {	-- Mining
 	},
 	{
 		["name"] = "Smelt Enchanted Elementium",
-		["recipeID"] = 22967
+		["recipeID"] = 22967,
+		["u"] = 3,	-- Added in later phase
 	},
 	{
 		["name"] = "Smelt Gold",

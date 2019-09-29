@@ -510,6 +510,7 @@ _.Zones =
 					["coord"] = { 69.87, 82.89, IRONFORGE },
 					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
 						6072,	-- The Hunter's Path

@@ -22,45 +22,44 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
 				}),
-				q(921, {	-- Crown of the Earth
+				q(921, {	-- Crown of the Earth (1/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3514,	-- Tenaron Stormgrip
 					["sourceQuest"] = 920,	-- Tenaron's Summons
 				}),
-				q(928, {	-- Crown of the Earth
+				q(928, {	-- Crown of the Earth (2/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3514,	-- Tenaron Stormgrip
-					["sourceQuest"] = 921,	-- Crown of the Earth
+					["sourceQuest"] = 921,	-- Crown of the Earth (1/6)
 				}),
-				q(929, {	-- Crown of the Earth
+				q(929, {	-- Crown of the Earth (3/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
-					["sourceQuest"] = 928,	-- Crown of the Earth
+					["sourceQuest"] = 928,	-- Crown of the Earth (2/6)
 				}),
-				q(933, {	-- Crown of the Earth
+				q(933, {	-- Crown of the Earth (4/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
-					["sourceQuest"] = 929,	-- Crown of the Earth
+					["sourceQuest"] = 929,	-- Crown of the Earth (3/6)
 				}),
-				q(934, {	-- Crown of the Earth
+				q(7383, {	-- Crown of the Earth (5/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
-					["sourceQuest"] = 933,	-- Crown of the Earth
+					["sourceQuest"] = 933,	-- Crown of the Earth (4/6)
 				}),
-				q(935, {	-- Crown of the Earth
+				q(935, {	-- Crown of the Earth (6/6)
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						1992,	-- Tarindrella
-						3515,	-- Corithras Moonrage
-					},
+					["qg"] = 3515,	-- Corithras Moonrage
+					["sourceQuest"] = 7383,	-- Crown of the Earth (5/6)
 					["g"] = {
 						i(5596),	-- Ashwood Bow
 						i(5595),	-- Thicket Hammer
 					},
 				}),
-				q(7383, {	-- Crown of the Earth
+				q(934, {	-- Crown of the Earth (?/?) did the entire chain and never got this one yet it is marked as completed at the end
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
+					["altQuests"] = { 7383 },	-- Crown of the Earth (5/6)
 				}),
 				q(997, {	-- Denalan's Earth
 					["lvl"] = 4,
@@ -94,10 +93,14 @@ _.Zones =
 				}),
 				q(3661, {	-- Favored of Elune?
 					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7916,	-- Erelas Ambersky
+					["maps"] = { HINTERLANDS },
 				}),
 				q(2940, {	-- Feralas: A History
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 142958 },	-- Feralas: A History
 				}),
 				q(2459, {	-- Ferocitas the Dream Eater
 					["races"] = ALLIANCE_ONLY,
@@ -112,6 +115,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7916,	-- Erelas Ambersky
 					["maps"] = { WINTERSPRING },
+				}),
+				q(6342, {	-- Flight to Auberdine
+					["lvl"] = 10,
+					["races"] = {
+						4,	-- Night Elf
+					},
+					["qg"] = 3838,	-- Vesprystus
+					["sourceQuest"] = 6341,	-- The Bounty of Teldrassil
 				}),
 				q(476, {	-- Gnarlpine Corruption
 					["lvl"] = 4,
@@ -155,6 +166,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2080,	-- Denalan
+					["sourceQuest"] = 2498,	-- Return to Denalan
 					["g"] = {
 						i(5458),	-- Dirtwood Belt
 						i(5589),	-- Moss-covered Gauntlets
@@ -164,6 +176,7 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2080,	-- Denalan
+					["sourceQuest"] = 927,	-- The Moss-twined Heart
 					["g"] = {
 						i(5218),	-- Cleansed Timberling Heart
 					},
@@ -183,14 +196,11 @@ _.Zones =
 					["qg"] = 2080,	-- Denalan
 					["sourceQuest"] = 918,	-- Timberling Seeds
 				}),
-				q(2498, {	-- Return to Denalan
-					["lvl"] = 4,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3517,	-- Rellian Greenspyre
-				}),
 				q(2943, {	-- Return to Troyas
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7907,	-- Daryn Lightwind
+					["sourceQuest"] = 2944,	-- The Super Snapper FX
 				}),
 				q(489, {	-- Seek Redemption!
 					["lvl"] = 4,
@@ -232,14 +242,14 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter Only!
 					["lvl"] = 10,
 					["groups"] = {
-						recipe(883),		-- Call Pet
+						recipe(883),	-- Call Pet
 						recipe(2641),	-- Dismiss Pet
 						recipe(1515),	-- Tame Beast
 					},
 				}),
 				q(6103, {	-- Taming the Beast
 					["qg"] = 6102,	-- Dazalar <Hunter Trainer>
-					["sourceQuest"] = 6101,	-- Taming the Beast
+					["sourceQuest"] = 6102,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
 					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
@@ -252,11 +262,14 @@ _.Zones =
 				q(2941, {	-- The Borrower
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7907,	-- Daryn Lightwind
+					["sourceQuest"] = 2940,	-- Feralas: A History
 				}),
 				q(940, {	-- Teldrassil
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+					["sourceQuest"] = 937,	-- The Enchanted Glade
 				}),
 				q(920, {	-- Tenaron's Summons
 					["races"] = ALLIANCE_ONLY,
@@ -279,6 +292,14 @@ _.Zones =
 						i(5405),	-- Draped Cloak
 						i(6058),	-- Blackened Leather Belt
 					},
+				}),
+				q(6341, {	-- The Bounty of Teldrassil
+					["lvl"] = 10,
+					["races"] = {
+						4,	-- Night Elf
+					},
+					["qg"] = 10118,	-- Nessa Shadowsong
+					["sourceQuest"] = 6344,	-- Nessa Shadowsong
 				}),
 				q(2438, {	-- The Emerald Dreamcatcher
 					["races"] = ALLIANCE_ONLY,
@@ -304,6 +325,7 @@ _.Zones =
 					["maps"] = { TELDRASSIL },
 					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
 						-- 6072,	-- The Hunter's Path
@@ -316,6 +338,7 @@ _.Zones =
 				q(927, {	-- The Moss-twined Heart
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 5179 },	-- Moss-twined Heart
 				}),
 				q(483, {	-- The Relics of Wakening
 					["lvl"] = 4,
@@ -345,7 +368,7 @@ _.Zones =
 				q(2399, {	-- The Sprouted Fronds
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 7510,	-- Sprouted Frond
+					["provider"] = { "o", 7510 },	-- Sprouted Frond
 					["g"] = {
 						i(5205),	-- Sprouted Frond
 					},
@@ -382,14 +405,6 @@ _.Zones =
 					["g"] = {
 						i(5606),	-- Gardening Gloves
 						i(6061),	-- Graystone Bracers
-					},
-				}),
-				q(923, {	-- Tumors
-					["lvl"] = 4,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3517,	-- Rellian Greenspyre
-					["g"] = {
-						i(5605),	-- Pruning Knife
 					},
 				}),
 				q(932, {	-- Twisted Hatred

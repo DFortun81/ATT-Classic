@@ -160,16 +160,6 @@ _.Zones =
 						i(6659),	-- Scarab Trousers
 					},
 				}),
-				q(6342, {	-- Flight to Auberdine
-					["lvl"] = 10,
-					["races"] = {
-						4,	-- Night Elf
-					},
-					["qgs"] = {
-						3838,	-- Vesprystus
-						7316,	-- Sister Aquinne
-					},
-				}),
 				q(963, {	-- For Love Eternal
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
@@ -252,6 +242,7 @@ _.Zones =
 						4,	-- Night Elf
 					},
 					["qg"] = 4200,	-- Laird
+					["sourceQuest"] = 6342,	-- Flight to Auberdine
 				}),
 				q(950, {	-- Return to Onu
 					["lvl"] = 12,
@@ -312,13 +303,6 @@ _.Zones =
 						i(12341),	-- Blackwood Fruit Sample
 						i(12342),	-- Blackwood Grain Sample
 					},
-				}),
-				q(6341, {	-- The Bounty of Teldrassil
-					["lvl"] = 10,
-					["races"] = {
-						4,	-- Night Elf
-					},
-					["qg"] = 10118,	-- Nessa Shadowsong
 				}),
 				q(4762, {	-- The Cliffspring River
 					["lvl"] = 11,
