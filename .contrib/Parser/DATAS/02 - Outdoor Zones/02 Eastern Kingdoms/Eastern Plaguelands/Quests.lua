@@ -487,11 +487,6 @@ _.Zones =
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5181,	-- Villains of Darrowshire
 				}),
-				q(5464, {	-- Menethil's Gift
-					["lvl"] = 57,
-					["provider"] = { "o", 176631 },	-- Menethil's Gift
-					["sourceQuest"] = 5463,	-- Menethil's Gift
-				}),
 				q(5510, {	-- Minion's Scourgestones
 					["lvl"] = 50,
 					["repeatable"] = true,

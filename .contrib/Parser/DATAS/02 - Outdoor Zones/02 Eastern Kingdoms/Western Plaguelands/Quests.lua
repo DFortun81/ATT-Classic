@@ -402,10 +402,6 @@ _.Zones =
 					["qg"] = 11057,	-- Apothecary Dithers
 					["sourceQuest"] = 838,	-- Scholomance
 				}),
-				q(5465, {	-- Soulbound Keepsake
-					["lvl"] = 57,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
@@ -453,21 +449,11 @@ _.Zones =
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
 				}),
-				q(5462, {	-- The Dying, Ras Frostwhisper
-					["lvl"] = 57,
-					["qg"] = 11286,	-- Magistrate Marduke
-					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
-				}),
 				q(6185, {	-- The Eastern Plagues
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
-				}),
-				q(5461, {	-- The Human, Ras Frostwhisper
-					["lvl"] = 57,
-					["qg"] = 11286,	-- Magistrate Marduke
-					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 				}),
 				q(5505, {	-- The Key to Scholomance (A)
 					["lvl"] = 55,
@@ -485,20 +471,6 @@ _.Zones =
 					["sourceQuest"] = 5804,	-- Araj's Scarab
 					["g"] = {
 						i(13704),	-- Skeleton Key
-					},
-				}),
-				q(5344, {	-- The Last Barov
-					["lvl"] = 52,
-					["g"] = {
-						i(14023),	-- Barov Peasant Caller
-					},
-				}),
-				q(5342, {	-- The Last Barov
-					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11022,	-- Alexi Barov
-					["g"] = {
-						i(14022),	-- Barov Peasant Caller
 					},
 				}),
 				q(5215, {	-- The Scourge Cauldrons
