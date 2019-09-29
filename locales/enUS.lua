@@ -1164,6 +1164,7 @@ app.L = {
 		[176091] = "Deadwood Cauldron",
 		[176115] = "Wanted Poster - Arnak Grimtotem",
 		[176392] = "Scourge Cauldron",
+		[176631] = "Menethil's Gift",
 		[177787] = "Rackmore's Log",
 		[177904] = "Wanted Poster: Besseleth",
 		[177964] = "Fathom Stone",

@@ -16,6 +16,36 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				{
+					["questID"] = 5803,	-- Araj's Scarab (A)
+					["sourceQuest"] = 5801,	-- Fire Plume Forged (A)
+					["qg"] = 11056,	-- Alchemist Arbington
+					["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 14610, 1 },	-- Araj's Scarab
+					},
+					["crs"] = {
+						1852,	-- Araj the Summoner
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5804,	-- Araj's Scarab (H)
+					["sourceQuest"] = 5802,	-- Fire Plume Forged (H)
+					["qg"] = 11057,	-- Apothecary Dithers
+					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["cost"] = {
+						{ "i", 14610, 1 },	-- Araj's Scarab
+					},
+					["crs"] = {
+						1852,	-- Araj the Summoner
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
 					["questID"] = 5341,	-- Barov Family Fortune
 					["qg"] = 11022,	-- Alexi Barov <House of Barov>
 					["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
@@ -81,6 +111,50 @@ _.Instances = {
 						11261,	-- Doctor Theolen Krastinov <The Butcher>
 					},
 					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5801,	-- Fire Plume Forged (A)
+					["sourceQuest"] = 5538,	-- Mold Rhymes With...
+					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
+					["coord"] = { 51.5, 28.8, TANARIS },
+					["maps"] = { TANARIS },
+					["cost"] = {
+						{ "i", 14645, 1 },	-- Unfinished Skeleton Key
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 14644,	-- Skeleton Key Mold
+							["allianceQuestID"] = 5801,	-- Fire Plume Forged (A)
+							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
+							["cost"] = {
+								{ "i", 12359, 2 },	-- Thorium Bar
+							},
+						},
+					},
+				},
+				{
+					["questID"] = 5802,	-- Fire Plume Forged (H)
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
+					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
+					["coord"] = { 51.5, 28.8, TANARIS },
+					["maps"] = { TANARIS },
+					["cost"] = {
+						{ "i", 14645, 1 },	-- Unfinished Skeleton Key
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 14644,	-- Skeleton Key Mold
+							["allianceQuestID"] = 5801,	-- Fire Plume Forged (A)
+							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
+							["cost"] = {
+								{ "i", 12359, 2 },	-- Thorium Bar
+							},
+						},
+					},
 				},
 				{
 					["questID"] = 5582,	-- Healthy Dragon Scale
@@ -149,6 +223,32 @@ _.Instances = {
 					},
 				},
 				{
+					["questID"] = 5538,	-- Mold Rhymes With... (A)
+					["sourceQuest"] = 5537,	-- Skeletal Fragments (A)
+					["qg"] = 11056,	-- Alchemist Arbington
+					["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
+						{ "g", 150000 },	-- 15g
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5514,	-- Mold Rhymes With... (H)
+					["sourceQuest"] = 964,	-- Skeletal Fragments (H)
+					["qg"] = 11057,	-- Apothecary Dithers
+					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["cost"] = {
+						{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
+						{ "g", 150000 },	-- 15g
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
 					["questID"] = 5529,	-- Plagued Hatchlings
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.47, 59.66, EASTERN_PLAGUELANDS },
@@ -156,6 +256,48 @@ _.Instances = {
 					["crs"] = {
 						10678,	-- Plagued Hatchling
 					},
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5533,	-- Scholomance (A)
+					["sourceQuest"] = 5097,	-- All Along the Watchtowers (A)
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 838,	-- Scholomance (H)
+					["sourceQuest"] = 5098,	-- All Along the Watchtowers (H)
+					["qg"] = 10837,	-- High Executor Derrington
+					["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5537,	-- Skeletal Fragments (A)
+					["sourceQuest"] = 5533,	-- Scholomance (A)
+					["qg"] = 11056,	-- Alchemist Arbington
+					["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 14619, 15 },	-- Skeletal Fragments
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 964,	-- Skeletal Fragments (H)
+					["sourceQuest"] = 838,	-- Scholomance
+					["qg"] = 11057,	-- Apothecary Dithers
+					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["cost"] = {
+						{ "i", 14619, 15 },	-- Skeletal Fragments
+					},
+					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				},
 				{
@@ -213,6 +355,38 @@ _.Instances = {
 						{
 							["itemID"] = 13585,	-- Keepsake of Remembrance
 							["coord"] = { 17.9, 69.4, ARATHI_HIGHLANDS },
+						},
+					},
+				},
+				{
+					["questID"] = 5505,	-- The Key to Scholomance (A)
+					["sourceQuest"] = 5803,	-- Araj's Scarab
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 13704,	-- Skeleton Key
+							["allianceQuestID"] = 5505,	-- The Key to Scholomance (A)
+							["hordeQuestID"] = 5511,	-- The Key to Scholomance (H)
+						},
+					},
+				},
+				{
+					["questID"] = 5511,	-- The Key to Scholomance (H)
+					["sourceQuest"] = 5804,	-- Araj's Scarab
+					["qg"] = 10837,	-- High Executor Derrington
+					["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 13704,	-- Skeleton Key
+							["allianceQuestID"] = 5505,	-- The Key to Scholomance (A)
+							["hordeQuestID"] = 5511,	-- The Key to Scholomance (H)
 						},
 					},
 				},

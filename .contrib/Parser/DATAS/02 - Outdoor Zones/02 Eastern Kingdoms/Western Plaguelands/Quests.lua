@@ -84,16 +84,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5096,	-- Scarlet Diversions
 				}),
-				q(5803, {	-- Araj's Scarab
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5801,	-- Fire Plume Forged
-				}),
-				q(5804, {	-- Araj's Scarab
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
 				q(5401, {	-- Argent Dawn Commission
 					["lvl"] = 50,
 					["qg"] = 10840,	-- Argent Officer Pureheart
@@ -315,18 +305,6 @@ _.Zones =
 						i(15799),	-- Heroic Commendation Medal
 					},
 				}),
-				q(5538, {	-- Mold Rhymes With... (A)
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5537,	-- Skeletal Fragments
-				}),
-				q(5514, {	-- Mold Rhymes With... (H)
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 964,	-- Skeletal Fragments
-				}),
 				q(5058, {	-- Mrs. Dalson's Diary
 					["lvl"] = 52,
 				}),
@@ -377,30 +355,6 @@ _.Zones =
 				}),
 				q(5862, {	-- Scarlet Subterfuge
 					["lvl"] = 52,
-				}),
-				q(5533, {	-- Scholomance
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["sourceQuest"] = 5097,	-- All Along The Watchtowers
-				}),
-				q(838, {	-- Scholomance
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 10837,	-- High Executor Derrington
-					["sourceQuest"] = 5098,	-- All Along The Watchtowers
-				}),
-				q(5537, {	-- Skeletal Fragments
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5533,	-- Scholomance
-				}),
-				q(964, {	-- Skeletal Fragments
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 838,	-- Scholomance
 				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
@@ -454,24 +408,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
-				}),
-				q(5505, {	-- The Key to Scholomance (A)
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5803,	-- Araj's Scarab
-					["g"] = {
-						i(13704),	-- Skeleton Key
-					},
-				}),
-				q(5511, {	-- The Key to Scholomance (H)
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 5804,	-- Araj's Scarab
-					["g"] = {
-						i(13704),	-- Skeleton Key
-					},
 				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["lvl"] = 50,
