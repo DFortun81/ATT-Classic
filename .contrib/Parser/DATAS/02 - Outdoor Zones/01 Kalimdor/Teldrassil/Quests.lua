@@ -95,7 +95,7 @@ _.Zones =
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7916,	-- Erelas Ambersky
-					["maps"] = { HINTERLANDS },
+					["maps"] = { THE_HINTERLANDS },
 				}),
 				q(2940, {	-- Feralas: A History
 					["lvl"] = 42,

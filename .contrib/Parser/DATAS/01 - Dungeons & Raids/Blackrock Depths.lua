@@ -43,6 +43,7 @@ _.Instances = {
 				},
 				{
 					["questID"] = 4022,	-- A Taste of Flame
+					["sourceQuest"] = 3481,	-- Trinkets...
 					["qg"] = 9459,	-- Cyrus Therepentous
 					["altQuests"] = {
 						4023,	-- A Taste of Flame

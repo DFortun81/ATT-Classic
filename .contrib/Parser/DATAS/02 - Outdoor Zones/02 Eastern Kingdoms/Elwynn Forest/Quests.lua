@@ -76,6 +76,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 253,	-- William Pestle
 				}),
+				q(3101, {	-- Consecrated Letter
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+				}),
 				q(39, {	-- Deliver Thomas' Report
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -145,6 +151,7 @@ _.Zones =
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 				}),
 				q(7, {	-- Kobold Camp Cleanup
 					["races"] = ALLIANCE_ONLY,
@@ -226,6 +233,7 @@ _.Zones =
 				q(54, {	-- Report to Goldshire
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
 					["g"] = {
 						i(6078),	-- Pikeman Shield
 					},
@@ -278,6 +286,7 @@ _.Zones =
 				q(21, {	-- Skirmish at Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 15,	-- Investigate Echo Ridge
 					["g"] = {
 						i(2186),	-- Outfitter Belt
 						i(2691),	-- Outfitter Boots
@@ -370,6 +379,7 @@ _.Zones =
 				q(33, {	-- Wolves Across the Border
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 196,	-- Eagan Peltskinner
+					["sourceQuest"] = 5261,	-- Eagan Peltskinner
 					["g"] = {
 						i(80),	-- Soft Fur-lined Shoes
 						i(6070),	-- Wolfskin Bracers

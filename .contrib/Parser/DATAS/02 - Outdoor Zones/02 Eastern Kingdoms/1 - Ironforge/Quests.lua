@@ -273,6 +273,9 @@ _.Zones =
 				q(3371, {	-- Dwarven Justice
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["maps"] = { SEARING_GORGE },
+					["qg"] = 8256,	-- Curator Thorius
+					["sourceQuest"] = 3368,	-- Suntara Stones
 				}),
 				q(2039, {	-- Find Bingles
 					["lvl"] = 12,
