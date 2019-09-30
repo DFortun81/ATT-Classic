@@ -122,6 +122,10 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 24367
 			},
 			{
+				["name"] = "Magic Resistance Potion",
+				["recipeID"] = 11453
+			},
+			{
 				["name"] = "Major Healing Potion",
 				["recipeID"] = 17556
 			},
