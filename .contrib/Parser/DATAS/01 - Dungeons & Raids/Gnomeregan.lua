@@ -18,6 +18,7 @@ _.Instances = {
 				}),
 				q(2931, {	-- Castpipe's Task
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["isBreadcrumb"] = true,
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
@@ -102,8 +103,9 @@ _.Instances = {
 						i(9609),	-- Shilly Mitts
 					},
 				}),
-				q(2925, {	-- Klockmort's Essentials [TODO: Is this a breadcrumb?]
+				q(2925, {	-- Klockmort's Essentials
 					["qg"] = 6142,	-- Mathiel
+					["isBreadcrumb"] = true,
 					["coord"] = { 59.2, 45.2, DARNASSUS },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -226,6 +228,7 @@ _.Instances = {
 				}),
 				q(2923, {	-- Tinkmaster Overspark
 					["qg"] = 7917,	-- Brother Sarno
+					["isBreadcrumb"] = true,
 					["coord"] = { 40.6, 30.0, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
