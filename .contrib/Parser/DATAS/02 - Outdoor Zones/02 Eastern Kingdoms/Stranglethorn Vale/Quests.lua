@@ -181,6 +181,7 @@ _.Zones =
 				q(1127, {	-- Fool's Stout
 					["lvl"] = 35,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["repeatable"] = true,
 					["g"] = {
 						i(5806),	-- Fool's Stout
 					},
@@ -566,6 +567,12 @@ _.Zones =
 					["g"] = {
 						i(4107),	-- Tiger Hunter Gloves
 					},
+				}),
+				q(9259, {	-- Traitor to the Bloodsail
+					["lvl"] = 30,
+					["repeatable"] = true,
+					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
+					["qg"] = 16399,	-- Bloodsail Traitor
 				}),
 				q(205, {	-- Troll Witchery
 					["lvl"] = 30,

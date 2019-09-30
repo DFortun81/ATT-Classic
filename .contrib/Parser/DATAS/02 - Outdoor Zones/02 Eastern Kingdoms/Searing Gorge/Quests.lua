@@ -35,7 +35,9 @@ _.Zones =
 				}),
 				q(7737, {	-- Gaining Acceptance
 					["lvl"] = 40,
+					["repeatable"] = true,
 					["minReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood
+					["maxReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood
 					["qg"] = 14624,	-- Master Smith Burninate
 				}),
 				q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
@@ -101,18 +103,24 @@ _.Zones =
 					["lvl"] = 45,
 					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
+					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
+					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 				}),
 				q(8241, {	-- Restoring Fiery Flux Supplies via Iron
 					["lvl"] = 45,
 					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
+					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
+					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 				}),
 				q(7736, {	-- Restoring Fiery Flux Supplies via Kingsblood
 					["lvl"] = 45,
 					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
+					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
+					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 				}),
 				q(3566, {	-- Rise, Obsidion!

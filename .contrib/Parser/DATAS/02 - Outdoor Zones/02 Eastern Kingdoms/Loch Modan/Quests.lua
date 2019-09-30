@@ -97,7 +97,9 @@ _.Zones =
 					["lvl"] = 36,
 				}),
 				q(2501, {	-- Badlands Reagent Run II
-					["sourceQuest"] = 17,	-- Uldaman Reagent Run
+					["qg"] = 1470,	-- Ghak Healtouch
+					["requireSkill"] = 171,	-- Alchemy
+					["sourceQuest"] = 2500,	-- Badlands Reagent Run
 					["cost"] = {
 						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
 					},

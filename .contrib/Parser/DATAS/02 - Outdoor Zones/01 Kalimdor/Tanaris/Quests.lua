@@ -8,9 +8,13 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(2750, {	-- A Bad Egg
 					["lvl"] = 42,
+					["repeatable"] = true,
+					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 				}),
 				q(2748, {	-- A Fine Egg
 					["lvl"] = 42,
+					["repeatable"] = true,
+					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 					["g"] = {
 						i(9540),	-- Box of Spells
 					},
@@ -36,12 +40,16 @@ _.Zones =
 				}),
 				q(2747, {	-- An Extraordinary Egg
 					["lvl"] = 42,
+					["repeatable"] = true,
+					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 					["g"] = {
 						i(9541),	-- Box of Goodies
 					},
 				}),
 				q(2749, {	-- An Ordinary Egg
 					["lvl"] = 42,
+					["repeatable"] = true,
+					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 					["g"] = {
 						i(9539),	-- Box of Rations
 					},
@@ -277,6 +285,7 @@ _.Zones =
 					},
 				}),
 				q(8555, {	-- The Charge of the Dragonflights
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 				}),
@@ -289,16 +298,19 @@ _.Zones =
 					},
 				}),
 				q(8921, {	-- The Ectoplasmic Distiller
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["g"] = {
 						i(22320),	-- Mux's Quality Goods
 					},
 				}),
 				q(8728, {	-- The Good News and The Bad News
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 				}),
 				q(8761, {	-- The Grand Invoker
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -306,11 +318,13 @@ _.Zones =
 					},
 				}),
 				q(8182, {	-- The Hand of Rastakhan
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(8585, {	-- The Isle of Dread!
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -319,6 +333,7 @@ _.Zones =
 					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(8742, {	-- The Might of Kalimdor
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -326,12 +341,14 @@ _.Zones =
 					},
 				}),
 				q(8620, {	-- The Only Prescription
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["g"] = {
 						i(21517),	-- Gnomish Turban of Psychic Might
 					},
 				}),
 				q(8753, {	-- The Path of the Conqueror
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -339,6 +356,7 @@ _.Zones =
 					},
 				}),
 				q(8754, {	-- The Path of the Conqueror
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -346,6 +364,7 @@ _.Zones =
 					},
 				}),
 				q(8755, {	-- The Path of the Conqueror
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -353,6 +372,7 @@ _.Zones =
 					},
 				}),
 				q(8752, {	-- The Path of the Conqueror
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -360,6 +380,7 @@ _.Zones =
 					},
 				}),
 				q(8759, {	-- The Path of the Invoker
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -367,6 +388,7 @@ _.Zones =
 					},
 				}),
 				q(8760, {	-- The Path of the Invoker
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -374,6 +396,7 @@ _.Zones =
 					},
 				}),
 				q(8758, {	-- The Path of the Invoker
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -381,6 +404,7 @@ _.Zones =
 					},
 				}),
 				q(8757, {	-- The Path of the Invoker
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -388,6 +412,7 @@ _.Zones =
 					},
 				}),
 				q(8749, {	-- The Path of the Protector
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -395,6 +420,7 @@ _.Zones =
 					},
 				}),
 				q(8748, {	-- The Path of the Protector
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -402,6 +428,7 @@ _.Zones =
 					},
 				}),
 				q(8750, {	-- The Path of the Protector
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -409,6 +436,7 @@ _.Zones =
 					},
 				}),
 				q(8747, {	-- The Path of the Protector
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -416,6 +444,7 @@ _.Zones =
 					},
 				}),
 				q(8751, {	-- The Protector of Kalimdor
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -423,6 +452,7 @@ _.Zones =
 					},
 				}),
 				q(8756, {	-- The Qiraji Conqueror
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
 					["g"] = {
@@ -440,6 +470,8 @@ _.Zones =
 				}),
 				q(8893, {	-- The Super Egg-O-Matic
 					["lvl"] = 42,
+					["repeatable"] = true,
+					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
 					["g"] = {
 						i(8647),	-- Egg Crate
 					},
@@ -478,6 +510,7 @@ _.Zones =
 					},
 				}),
 				q(8576, {	-- Translating the Ledger
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11811,	-- Narain Soothfancy
@@ -495,22 +528,26 @@ _.Zones =
 				}),
 				q(9268, {	-- War at Sea
 					["lvl"] = 40,
+					["repeatable"] = true,
+					["maxReputation"] = { 369, NEUTRAL },	-- Gadgetzan, must be less than Neutral
 					["qg"] = 16417,	-- Rumsen Fizzlebrack
 				}),
 				q(1690, {	-- Wastewander Justice
 					["lvl"] = 40,
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 				}),
-				q(1878, {	-- Water Pouch Bounty
+				q(1707, {	-- Water Pouch Bounty
 					["lvl"] = 40,
 					["qg"] = 7408,	-- Spigot Operator Luglunket
 					["g"] = {
 						i(8484),	-- Gadgetzan Water Co. Care Package
 					},
 				}),
-				q(1707, {	-- Water Pouch Bounty
+				q(1878, {	-- Water Pouch Bounty
 					["lvl"] = 40,
 					["qg"] = 7408,	-- Spigot Operator Luglunket
+					["sourceQuest"] = 1707,	-- Water Pouch Bounty
+					["repeatable"] = true,
 					["g"] = {
 						i(8484),	-- Gadgetzan Water Co. Care Package
 					},

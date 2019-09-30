@@ -390,7 +390,7 @@ _.Zones =
 					["repeatable"] = true,
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
 					["lvl"] = 10,
-					-- Quest name does not show! Maybe not part of phase 1?
+					["maxReputation"] = { 470, NEUTRAL },	-- Ratchet, must be less than Neutral
 				}),
 				q(896, {	-- Miner's Fortune
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
