@@ -58,7 +58,11 @@ profession(202, {	-- Engineering
 					{
 						["name"] = "The Big One",
 						["recipeID"] = 12754
-					}
+					},
+					{
+						["name"] = "The Mortar: Reloaded",
+						["recipeID"] = 13240
+					},
 				}
 			},
 			{
