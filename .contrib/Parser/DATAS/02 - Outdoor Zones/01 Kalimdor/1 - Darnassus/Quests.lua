@@ -16,24 +16,28 @@ _.Zones =
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
+					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(7800, {	-- A Donation of Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(7798, {	-- A Donation of Silk
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
+					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(7792, {	-- A Donation of Wool
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
+					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(7801, {	-- Additional Runecloth
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -42,6 +46,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
+					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
