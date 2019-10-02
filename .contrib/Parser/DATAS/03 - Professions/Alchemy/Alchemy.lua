@@ -170,10 +170,6 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 3174
 			},
 			{
-				["name"] = "Potion of Petrification",
-				["recipeID"] = 17634
-			},
-			{
 				["name"] = "Purification Potion",
 				["recipeID"] = 17572
 			},
@@ -378,8 +374,16 @@ profession(171, {	-- Alchemy
 		["categoryID"] = 16,
 		["g"] = {
 			{
+				["name"] = "Flask of Chromatic Resistance",
+				["recipeID"] = 17638
+			},
+			{
 				["name"] = "Flask of Distilled Wisdom",
 				["recipeID"] = 17636
+			},
+			{
+				["name"] = "Flask of Petrification",
+				["recipeID"] = 17634
 			},
 			{
 				["name"] = "Flask of Supreme Power",
