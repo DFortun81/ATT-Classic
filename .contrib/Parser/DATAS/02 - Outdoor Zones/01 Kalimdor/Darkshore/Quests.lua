@@ -148,6 +148,7 @@ _.Zones =
 					["g"] = {
 						i(5609),	-- Steadfast Cinch
 					},
+					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
 				}),
 				q(995, {	-- Escape Through Stealth
 					["lvl"] = 10,
@@ -159,6 +160,7 @@ _.Zones =
 					["g"] = {
 						i(6659),	-- Scarab Trousers
 					},
+					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
 				}),
 				q(963, {	-- For Love Eternal
 					["lvl"] = 11,
@@ -222,14 +224,26 @@ _.Zones =
 				q(960, {	-- Onu is meditating
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
+					["repeatable"] = true,
+					["altQuests"] = {
+						949,	-- The Twilight Camp
+					},
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
+					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you pick up The Twilight Camp.",
 				}),
 				q(961, {	-- Onu is meditating
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3616,	-- Onu
+					["repeatable"] = true,
+					["altQuests"] = {
+						950,	-- Return to Onu
+					},
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
+					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you pick up Return to Onu.",
 				}),
 				q(2118, {	-- Plagued Lands
 					["lvl"] = 10,
