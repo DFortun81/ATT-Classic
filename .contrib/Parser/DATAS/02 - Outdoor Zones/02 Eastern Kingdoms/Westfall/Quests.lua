@@ -79,6 +79,15 @@ _.Zones =
 						i(1180),	-- Scroll of Stamina
 					},
 				}),
+				q(2359, {	-- Klaven's Tower
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 7024,	-- Agent Kearnen
+					["g"] = {
+						i(18160),	-- Recipe: Thistle Tea
+					},
+				}),
 				q(102, {	-- Patrolling Westfall
 					["lvl"] = 8,
 					["races"] = ALLIANCE_ONLY,

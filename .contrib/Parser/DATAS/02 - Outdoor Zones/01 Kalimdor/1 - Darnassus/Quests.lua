@@ -57,6 +57,23 @@ _.Zones =
 						i(11872),	-- Eschewal Greaves
 					},
 				}),
+				q(2242, {	-- Destiny Calls
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 4163,	-- Syurna
+					["sourceQuest"] = 2241,	-- The Apple Falls
+					["g"] = {
+						i(7298),	-- Blade of Cunning
+					},
+				}),
+				q(2260, {	-- Erion's Behest
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 4214,	-- Erion Shadewhisper
+					["sourceQuest"] = 2259,	-- Erion Shadewhisper
+				}),
 				q(952, {	-- Grove of the Ancients
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,

@@ -80,6 +80,20 @@ _.Zones =
 						i(2547),	-- Boar Handler Gloves
 					},
 				}),
+				q(3113, {	-- Encrypted Memorandum
+					["lvl"] = 1,
+					["races"] = { 7 },	-- Gnome
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 658,	-- Sten Stoutarm
+					["sourceQuest"] = 179,	-- Dwarven Outfitters
+				}),
+				q(3109, {	-- Encrypted Rune
+					["lvl"] = 1,
+					["races"] = { 3 },	-- Dwarf
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 658,	-- Sten Stoutarm
+					["sourceQuest"] = 179,	-- Dwarven Outfitters
+				}),
 				q(318, {	-- Evershine
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
@@ -98,6 +112,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
+				}),
+				q(2239, {	-- Onin's Report
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 6886,	-- Onin MacHammer
+					["sourceQuest"] = 2238,	-- Simple Subterfugin'
+					["g"] = {
+						i(7298),	-- Blade of Cunning
+					},
 				}),
 				q(412, {	-- Operation Recombobulation
 					["lvl"] = 7,
@@ -142,6 +166,12 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 270,	-- Unguarded Thunder Ale Barrel
+				}),
+				q(2218, {	-- Road to Salvation
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 1234,	-- Hogral Bakkan
 				}),
 				q(3364, {	-- Scalding Mornbrew Delivery
 					["lvl"] = 4,

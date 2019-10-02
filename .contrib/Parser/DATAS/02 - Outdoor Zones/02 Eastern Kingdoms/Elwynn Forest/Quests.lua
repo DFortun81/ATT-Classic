@@ -106,6 +106,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 514,	-- Smith Argus
 				}),
+				q(3102, {	-- Encrypted Letter
+					["lvl"] = 1,
+					["races"] = { 1 },	-- Human
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+				}),
 				q(37, {	-- Find the Lost Guards
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -292,6 +299,12 @@ _.Zones =
 						i(2238),	-- Urchin's Pants
 					},
 				}),
+				q(2205, {	-- Seek out SI:7
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 917,	-- Keryn Sylvius
+				}),
 				q(61, {	-- Shipment to Stormwind
 					["lvl"] = 3,
 					["races"] = ALLIANCE_ONLY,
@@ -302,6 +315,13 @@ _.Zones =
 						i(1177),	-- Oil of Olaf
 						i(2454),	-- Elixir of Lion's Strength
 					},
+				}),
+				q(2300, {	-- SI:7
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 917,	-- Keryn Sylvius
+					["sourceQuest"] = 2205,	-- Seek out SI:7
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["races"] = ALLIANCE_ONLY,

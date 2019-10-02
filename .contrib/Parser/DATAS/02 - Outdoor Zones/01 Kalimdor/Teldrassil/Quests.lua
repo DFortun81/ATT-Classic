@@ -84,12 +84,19 @@ _.Zones =
 						i(18957),	-- Brushwood Blade
 					},
 				}),
+				q(3118, {	-- Encrypted Sigil
+					["lvl"] = 1,
+					["races"] = { 4 },	-- Night Elf
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 2079,	-- Conservator Ilthalaine
+					["sourceQuest"] = 457,	-- The Balance of Nature
+				}),
 				q(3117, {	-- Etched Sigil
 					["lvl"] = 1,
 					["classes"] = { 3 },	-- Hunter
-					["races"] = ALLIANCE_ONLY,
+					["races"] = { 4 },	-- Night Elf
 					["qg"] = 2079,	-- Conservator Ilthalaine
-					["sourceQuest"] = 456,	-- The Balance of Nature
+					["sourceQuest"] = 457,	-- The Balance of Nature
 				}),
 				q(3661, {	-- Favored of Elune?
 					["lvl"] = 42,
@@ -247,24 +254,6 @@ _.Zones =
 						recipe(1515),	-- Tame Beast
 					},
 				}),
-				q(6103, {	-- Taming the Beast
-					["qg"] = 6102,	-- Dazalar <Hunter Trainer>
-					["sourceQuest"] = 6102,	-- Taming the Beast
-					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
-					["classes"] = { 3 },	-- Hunter Only!
-					["lvl"] = 10,
-					["groups"] = {
-						recipe(6991),		-- Feed Pet
-						recipe(982),		-- Revive Pet
-					},
-				}),
-				q(2941, {	-- The Borrower
-					["lvl"] = 42,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7907,	-- Daryn Lightwind
-					["sourceQuest"] = 2940,	-- Feralas: A History
-				}),
 				q(940, {	-- Teldrassil
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
@@ -275,6 +264,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2082,	-- Gilshalan Windwalker
 					["sourceQuest"] = 917,	-- Webwood Egg
+				}),
+				q(2241, {	-- The Apple Falls
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 3599,	-- Jannok Breezesong
 				}),
 				q(456, {	-- The Balance of Nature
 					["races"] = ALLIANCE_ONLY,
@@ -300,6 +295,12 @@ _.Zones =
 					},
 					["qg"] = 10118,	-- Nessa Shadowsong
 					["sourceQuest"] = 6344,	-- Nessa Shadowsong
+				}),
+				q(2941, {	-- The Borrower
+					["lvl"] = 42,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7907,	-- Daryn Lightwind
+					["sourceQuest"] = 2940,	-- Feralas: A History
 				}),
 				q(2438, {	-- The Emerald Dreamcatcher
 					["races"] = ALLIANCE_ONLY,
@@ -405,6 +406,18 @@ _.Zones =
 					["g"] = {
 						i(5606),	-- Gardening Gloves
 						i(6061),	-- Graystone Bracers
+					},
+				}),
+				q(6103, {	-- Training the Beast
+					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
+					["sourceQuest"] = 6102,	-- Taming the Beast
+					["coord"] = { 56.6, 59.6, TELDRASSIL },
+					["races"] = { 4 },	-- Night Elf Only
+					["classes"] = { 3 },	-- Hunter Only!
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(6991),		-- Feed Pet
+						recipe(982),		-- Revive Pet
 					},
 				}),
 				q(932, {	-- Twisted Hatred

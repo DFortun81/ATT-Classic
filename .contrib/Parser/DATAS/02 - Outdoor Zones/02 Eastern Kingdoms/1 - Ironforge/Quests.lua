@@ -352,6 +352,13 @@ _.Zones =
 						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
+				q(2298, {	-- Kingly Shakedown
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 5165,	-- Hulfdan Blackbeard
+					["sourceQuest"] = 2299, --	To Hulfdan!
+				}),
 				{
 					["questID"] = 1880,	-- Mage-tastic Gizmonitor
 					["qg"] = 5144,	-- Bink <Mage Trainer>
@@ -484,6 +491,13 @@ _.Zones =
 					["g"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
+				}),
+				q(2238, {	-- Simple Subterfugin'
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 5165,	-- Hulfdan Blackbeard
+					["sourceQuest"] = 2218,	-- Road to Salvation
 				}),
 				q(2041, {	-- Speak with Shoni
 					["lvl"] = 15,

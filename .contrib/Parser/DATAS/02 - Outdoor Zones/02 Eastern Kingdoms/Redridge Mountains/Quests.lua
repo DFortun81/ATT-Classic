@@ -21,6 +21,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 313,	-- Theocritus
 				}),
+				q(2282, {	-- Alther's Mill
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 6966,	-- Lucius
+					["sourceQuest"] = 2281,	-- Redridge Rendezvous
+					["g"] = {
+						i(7907),	-- Certificate of Thievery
+					},
+				}),
 				q(34, {	-- An Unwelcome Guest
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
