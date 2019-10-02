@@ -6,6 +6,12 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
+				q(344, {	-- Brother Paxton
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1440,	-- Milton Sheaf
+					["sourceQuest"] = 343,	-- Speaking of Fortitude
+				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,

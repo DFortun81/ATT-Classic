@@ -101,6 +101,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(1097, {	-- Elmore's Task
+					["lvl"] = 9,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 514,	-- Smith Argus
+				}),
 				q(37, {	-- Find the Lost Guards
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -147,6 +152,12 @@ _.Zones =
 						i(11475),	-- Wine-stained Cloak
 						i(2690),	-- Latched Belt
 					},
+				}),
+				q(345, {	-- Ink Supplies
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 951,	-- Brother Paxton
+					["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
 				}),
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
@@ -260,6 +271,15 @@ _.Zones =
 					["g"] = {
 						i(4656),	-- Small Pumpkin
 						i(159),	-- Refreshing Spring Water
+					},
+				}),
+				q(346, {	-- Return to Kristoff
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 951,	-- Brother Paxton
+					["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
+					["g"] = {
+						i(6095),
 					},
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty

@@ -61,6 +61,11 @@ _.Zones =
 						i(10456),	-- A Bulging Coin Purse
 					},
 				}),
+				q(1097, {	-- Elmore's Task
+					["lvl"] = 9,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 415,	-- Verner Osgood
+				}),
 				q(244, {	-- Encroaching Gnolls
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
@@ -152,6 +157,12 @@ _.Zones =
 						i(1082),	-- Redridge Goulash
 						i(2699),	-- Recipe: Redridge Goulash
 					},
+				}),
+				q(347, {	-- Rethban Ore
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 341,	-- Foreman Oslow
+					["sourceQuest"] = 345,	-- Ink Supplies (quest starts in Elwynn Forest)
 				}),
 				q(119, {	-- Return to Verner
 					["lvl"] = 13,

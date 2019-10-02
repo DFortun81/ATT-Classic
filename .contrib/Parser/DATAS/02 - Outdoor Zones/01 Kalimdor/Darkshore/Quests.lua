@@ -138,6 +138,16 @@ _.Zones =
 						i(15402),	-- Noosegrip Gauntlets
 					},
 				}),
+				q(2178, {	-- Easy Strider Living
+					["lvl"] = 9,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3702,	-- Alanndarian Nightsong
+					["requireSkill"] = 	185, -- Cooking
+					["g"] = {
+						i(5486),	-- Recipe: Strider Stew
+						i(5477),	-- Strider Stew
+					},
+				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -231,7 +241,7 @@ _.Zones =
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
-					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you pick up The Twilight Camp.",
+					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				}),
 				q(961, {	-- Onu is meditating
 					["races"] = ALLIANCE_ONLY,
@@ -243,7 +253,7 @@ _.Zones =
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
-					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you pick up Return to Onu.",
+					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 				}),
 				q(2118, {	-- Plagued Lands
 					["lvl"] = 10,

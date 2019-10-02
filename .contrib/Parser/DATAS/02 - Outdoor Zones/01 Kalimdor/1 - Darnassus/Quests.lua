@@ -72,6 +72,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7740,	-- Gracina Spiritmight
 				}),
+				q(1582, {	-- Moonglow Vest
+					["lvl"] = 8,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6034,	-- Lotherias
+					["requireSkill"] = 165,	-- Leatherworking
+					["g"] = {
+						i(6710),	-- Pattern: Moonglow Vest
+					},
+				}),
 				q(3781, {	-- Morrowgrain Research
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
