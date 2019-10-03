@@ -353,6 +353,7 @@ _.Zones =
 				q(968, {	-- The Powers Below
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(4811, {	-- The Red Crystal
 					["lvl"] = 12,
