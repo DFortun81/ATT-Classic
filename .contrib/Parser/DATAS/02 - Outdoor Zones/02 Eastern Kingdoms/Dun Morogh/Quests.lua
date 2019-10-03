@@ -39,15 +39,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1694,	-- Loslor Rudge
 				}),
-				q(384, {	-- Beer Basted Boar Ribs
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1267,	-- Ragnar Thunderbrew
-					["g"] = {
-						i(2888),
-						i(2889),
-					},
-				}),
 				q(310, {	-- Bitter Rivals
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,

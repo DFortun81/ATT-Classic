@@ -43,6 +43,13 @@ _.Zones =
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 				}),
+				q(1301, {	-- James Hyal
+					["qg"] = 5081,	-- Connor Rivers
+					["maps"] = { DUSTWALLOW_MARSH },
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
+				}),
 				q(2360, {	-- Mathias and the Defias
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,

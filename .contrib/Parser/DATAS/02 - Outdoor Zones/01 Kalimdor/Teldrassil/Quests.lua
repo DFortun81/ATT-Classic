@@ -188,15 +188,6 @@ _.Zones =
 						i(5218),	-- Cleansed Timberling Heart
 					},
 				}),
-				q(4161, {	-- Recipe of the Kaldorei
-					["lvl"] = 1,
-					["requireSkill"] = 185,	-- Cooking
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 6286,	-- Zarrin
-					["g"] = {
-						i(5482),	-- Recipe: Kaldorei Spider Kabob
-					},
-				}),
 				q(922, {	-- Rellian Greenspyre
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,

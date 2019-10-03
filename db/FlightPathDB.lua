@@ -527,6 +527,7 @@ select(2, ...).FlightPathDB = {
 		mapID=1423,
 		qg=17209,	-- William Kielar <Spectral Gryphon Master>
 		description="Your faction must capture all of the Towers to utilize this one-way flight point to any of the other towers.",
+		u=3,	-- Added in a later phase
 	},
 	[85] = {
 		name="Northpass Tower, Eastern Plaguelands",
@@ -534,6 +535,7 @@ select(2, ...).FlightPathDB = {
 		mapID=1423,
 		qg=17209,	-- William Kielar <Spectral Gryphon Master>
 		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
+		u=3,	-- Added in a later phase
 	},
 	[86] = {
 		name="Eastwall Tower, Eastern Plaguelands",
@@ -541,6 +543,7 @@ select(2, ...).FlightPathDB = {
 		mapID=1423,
 		qg=17209,	-- William Kielar <Spectral Gryphon Master>
 		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
+		u=3,	-- Added in a later phase
 	},
 	[87] = {
 		name="Crown Guard Tower, Eastern Plaguelands",
@@ -548,5 +551,6 @@ select(2, ...).FlightPathDB = {
 		mapID=1423,
 		qg=17209,	-- William Kielar <Spectral Gryphon Master>
 		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
+		u=3,	-- Added in a later phase
 	},
 };

@@ -138,16 +138,6 @@ _.Zones =
 						i(15402),	-- Noosegrip Gauntlets
 					},
 				}),
-				q(2178, {	-- Easy Strider Living
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3702,	-- Alanndarian Nightsong
-					["requireSkill"] = 	185, -- Cooking
-					["g"] = {
-						i(5486),	-- Recipe: Strider Stew
-						i(5477),	-- Strider Stew
-					},
-				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

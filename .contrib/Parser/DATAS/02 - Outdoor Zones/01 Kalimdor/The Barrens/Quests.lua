@@ -178,12 +178,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(862, {	-- Dig Rat Stew
-					["qg"] = 3443,	-- Grub
-					["coord"] = { 55.31, 31.79, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 15,
-				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
