@@ -10,11 +10,13 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(993, {	-- A Lost Master
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(4812, {	-- As Water Cascades
 					["lvl"] = 12,
@@ -64,6 +66,7 @@ _.Zones =
 				q(4723, {	-- Beached Sea Creature
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 42.0, 31.6, DARKSHORE },
 					--["objectID"] = 175233,	-- Beached Sea Creature
 				}),
 				q(4731, {	-- Beached Sea Turtle
@@ -137,6 +140,7 @@ _.Zones =
 						i(15401),	-- Welldrip Gloves
 						i(15402),	-- Noosegrip Gauntlets
 					},
+					["coord"] = { 38.1, 41.2, DARKSHORE},
 				}),
 				q(2178, {	-- Easy Strider Living
 					["lvl"] = 9,
@@ -206,11 +210,13 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(984, {	-- How Big a Threat?
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(951, {	-- Mathystra Relics
 					["lvl"] = 12,
@@ -443,6 +449,7 @@ _.Zones =
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(958, {	-- Tools of the Highborne
 					["lvl"] = 9,
