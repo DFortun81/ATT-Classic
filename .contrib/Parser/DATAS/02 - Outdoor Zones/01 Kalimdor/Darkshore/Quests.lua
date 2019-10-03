@@ -37,6 +37,7 @@ _.Zones =
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(957, {	-- Bashal'Aran
 					["lvl"] = 7,
@@ -333,11 +334,13 @@ _.Zones =
 						i(12341),	-- Blackwood Fruit Sample
 						i(12342),	-- Blackwood Grain Sample
 					},
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(4762, {	-- The Cliffspring River
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3649,	-- Thundris Windweaver
+					["qg"] = 3649,	-- Thundris Windweaver,
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
 					["lvl"] = 9,
@@ -458,6 +461,7 @@ _.Zones =
 					["g"] = {
 						i(5612),	-- Ivy Cuffs
 					},
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
 					["lvl"] = 15,
