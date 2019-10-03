@@ -70,6 +70,7 @@ _.Instances = {
 				{
 					["questID"] = 971,	-- Knowledge in the Deeps
 					["qg"] = 2786,	-- Gerrig Bonegrip
+					["sourceQuest"] = 968, -- The Powers Below
 					["coord"] = { 50.8, 5.6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

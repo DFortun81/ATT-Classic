@@ -296,6 +296,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
 				}),
+				q(455, {	-- The Algaz Gauntlet
+					["lvl"] = 19,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1342,	-- Mountaineer Rockgar
+				}),
 				q(267, {	-- The Trogg Threat
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

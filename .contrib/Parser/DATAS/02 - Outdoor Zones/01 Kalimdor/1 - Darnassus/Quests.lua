@@ -167,6 +167,12 @@ _.Zones =
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
 				}),
+				q(942, {	-- The Absent Minded Prospector
+					["lvl"] = 15,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
+					["sourceQuest"] = 741, -- The Absent Minded Prospector(Darkshore)
+				}),
 				q(6071, {	-- The Hunter's Path
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
 					["coord"] = { 25.6, 48.72, TELDRASSIL },
@@ -225,6 +231,7 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
+					["isBreadcrumb"] = true,
 				}),
 				q(923, {	-- Tumors
 					["lvl"] = 4,
