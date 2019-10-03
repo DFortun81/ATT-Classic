@@ -340,7 +340,7 @@ _.Zones =
 				q(4762, {	-- The Cliffspring River
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3649,	-- Thundris Windweaver,
+					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
