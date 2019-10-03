@@ -36,6 +36,7 @@ _.Instances = {
 				}),
 				q(378, {	-- The Fury Runs Deep
 					["qg"] = 1074,	-- Motley Garmason
+					["sourceQuest"] = 303,	-- The Dark Iron War
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 49.8, 18.2, WETLANDS },
 					["maps"] = { WETLANDS },

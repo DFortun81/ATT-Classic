@@ -19,6 +19,7 @@ _.Zones =
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2094,	-- James Halloran
+					["sourceQuest"] = 484,	-- Young Crocolisk Skins
 					["g"] = {
 						i(2545),	-- Malleable Chain Leggings
 						i(3561),	-- Resilient Poncho
@@ -29,6 +30,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
+					["sourceQuest"] = 277,	-- Fire Taboo
 					["g"] = {
 						i(3558),	-- Fen Keeper Robe
 						i(1273),	-- Forest Chain
@@ -44,6 +46,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1217,	-- Glorin Steelbrow
+					["sourceQuest"] = 292,	-- The Eye of Paleth
 					["g"] = {
 						i(2943),	-- Eye of Paleth
 					},
@@ -56,7 +59,8 @@ _.Zones =
 				q(474, {	-- Defeat Nek'rosh
 					["lvl"] = 23,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 1609,	-- Dragonmaw Catapult
+					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
+					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
 					["g"] = {
 						i(3209),	-- Ancient War Sword
 						i(6194),	-- Barreling Reaper
@@ -84,29 +88,34 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
+					["sourceQuest"] = 276,	-- Tramping Paws
 					["g"] = {
 						i(4606),	-- Spongy Morel
 					},
 				}),
-				q(306, {	-- In Search of The Excavation Team
-					["lvl"] = 21,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1076,	-- Merrin Rockweaver
-				}),
-				q(305, {	-- In Search of The Excavation Team
+				q(305, {	-- In Search of The Excavation Team (1/2)
 					["lvl"] = 21,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2096,	-- Tarrel Rockweaver
+				}),
+				q(306, {	-- In Search of The Excavation Team (2/2)
+					["lvl"] = 21,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1076,	-- Merrin Rockweaver
+					["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
 				}),
 				q(1302, {	-- James Hyal
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5082,	-- Vincent Hyal
+					["sourceQuest"] = 1301,	-- James Hyal
+					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 				}),
 				q(290, {	-- Lifting the Curse
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["sourceQuest"] = 289,	-- The Cursed Crew
 				}),
 				q(647, {	-- MacKreel's Moonshine
 					["lvl"] = 28,
@@ -117,21 +126,24 @@ _.Zones =
 					["lvl"] = 23,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2104,	-- Captain Stoutfist
+					["sourceQuest"] = 464,	-- War Banners
 				}),
-				q(295, {	-- Ormer's Revenge
+				q(294, {	-- Ormer's Revenge (1/3)
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
 				}),
-				q(294, {	-- Ormer's Revenge
+				q(295, {	-- Ormer's Revenge (2/3)
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
+					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
 				}),
-				q(296, {	-- Ormer's Revenge
+				q(296, {	-- Ormer's Revenge (3/3)
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
+					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
 					["g"] = {
 						i(3493),	-- Raptor's End
 						i(3566),	-- Raptorbane Armor
@@ -143,11 +155,13 @@ _.Zones =
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
+					["sourceQuest"] = 633,	-- The Thandol Span (3/3)
 				}),
 				q(281, {	-- Reclaiming Goods
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1242,	-- Karl Boran
+					["sourceQuest"] = 279,	-- Claws from the Deep
 					["g"] = {
 						i(929),	-- Healing Potion
 					},
@@ -161,7 +175,8 @@ _.Zones =
 				q(286, {	-- Return the Statuette
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 259,	-- Half-buried Barrel
+					["sourceQuest"] = 285,	-- Search More Hovels
+					["provider"] = { "o", 259 },	-- Half-buried Barrel
 					["g"] = {
 						i(2950),	-- Icicle Rod
 						i(2949),	-- Mariner Boots
@@ -170,7 +185,8 @@ _.Zones =
 				q(285, {	-- Search More Hovels
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 142151,	-- Sealed Barrel
+					["sourceQuest"] = 284,	-- The Search Continues
+					["provider"] = { "o", 142151 },	-- Sealed Barrel
 				}),
 				q(637, {	-- Sully Balloo's Letter
 					["lvl"] = 25,
@@ -191,6 +207,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["sourceQuest"] = 288,	-- The Third Fleet
 				}),
 				q(303, {	-- The Dark Iron War
 					["lvl"] = 25,
@@ -200,7 +217,8 @@ _.Zones =
 				q(292, {	-- The Eye of Paleth
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 112948,	-- Intrepid's Locked Strongbox
+					["sourceQuest"] = 290,	-- Lifting the Curse
+					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 				}),
 				q(463, {	-- The Greenwarden
 					["lvl"] = 20,
@@ -210,29 +228,32 @@ _.Zones =
 				q(284, {	-- The Search Continues
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 261,	-- Damaged Crate
+					["provider"] = { "o", 261 },	-- Damaged Crate
+					["sourceQuest"] = 281,	-- Reclaiming Goods
 					["g"] = {
 						i(422),	-- Dwarven Mild
 					},
 				}),
-				q(632, {	-- The Thandol Span
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2652,	-- Ebenezer Rustlocke's Corpse
-				}),
-				q(633, {	-- The Thandol Span
+				q(631, {	-- The Thandol Span (1/3)
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
+				}),
+				q(632, {	-- The Thandol Span (2/3)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2652 },	-- Ebenezer Rustlocke's Corpse
+					["sourceQuest"] = 631,	-- The Thandol Span (1/3)
+				}),
+				q(633, {	-- The Thandol Span (3/3)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1075,	-- Rhag Garmason
+					["sourceQuest"] = 632,	-- The Thandol Span (2/3)
 					["g"] = {
 						i(4504),	-- Dwarven Guard Cloak
 						i(4505),	-- Swampland Trousers
 					},
-				}),
-				q(631, {	-- The Thandol Span
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1075,	-- Rhag Garmason
 				}),
 				q(288, {	-- The Third Fleet
 					["lvl"] = 22,
@@ -243,6 +264,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
+					["sourceQuest"] = 463,	-- The Greenwarden
 				}),
 				q(299, {	-- Uncovering the Past
 					["lvl"] = 25,

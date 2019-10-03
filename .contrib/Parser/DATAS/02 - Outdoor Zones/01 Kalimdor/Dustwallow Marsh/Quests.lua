@@ -96,22 +96,6 @@ _.Zones =
 						i(9704),	-- Rustler Gloves
 					},
 				}),
-				q(1301, {	-- James Hyal
-					["qg"] = 5081,	-- Connor Rivers
-					--["coord"] = { , , STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
-				}),
-				q(1302, {	-- James Hyal
-					["qg"] = 5082,	-- Vincent Hyal
-					["sourceQuest"] = 1301,	-- James Hyal
-					--["coord"] = { , , STORMWIND_CITY },
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
-				}),
 				q(1206, {	-- Jarl Needs Eyes
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,

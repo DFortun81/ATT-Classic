@@ -150,17 +150,6 @@ _.Zones =
 					},
 					["coord"] = { 38.1, 41.2, DARKSHORE},
 				}),
-				q(2178, {	-- Easy Strider Living
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3702,	-- Alanndarian Nightsong
-					["requireSkill"] = 	185, -- Cooking
-					["g"] = {
-						i(5486),	-- Recipe: Strider Stew
-						i(5477),	-- Strider Stew
-					},
-					["coord"] = { 37.7, 40.7, DARKSHORE },
-				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

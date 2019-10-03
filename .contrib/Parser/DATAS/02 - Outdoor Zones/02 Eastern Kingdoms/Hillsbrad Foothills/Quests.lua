@@ -243,15 +243,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 				}),
-				q(555, {	-- Soothing Turtle Bisque
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2430,	-- Chef Jessen
-					["g"] = {
-						i(3737),	-- Recipe: Soothing Turtle Bisque
-						i(3729),	-- Soothing Turtle Bisque
-					},
-				}),
 				q(546, {	-- Souvenirs of Death
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,

@@ -325,6 +325,11 @@ _.Zones =
 						i(12451),	-- Juju Power
 					},
 				}),
+				q(8464, {	-- Winterfall Activity
+					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11556,	-- Salfa
+				}),
 				q(5083, {	-- Winterfall Firewater
 					["lvl"] = 52,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
