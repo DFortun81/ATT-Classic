@@ -158,11 +158,6 @@ _.Zones =
 					["qg"] = 2086,	-- Valstag Ironjaw
 					["isBreadcrumb"] = true,
 				}),
-				q(468, {	-- Report to Mountaineer Rockgar
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1340,	-- Mountaineer Kadrell
-				}),
 				q(286, {	-- Return the Statuette
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
@@ -176,6 +171,11 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 142151,	-- Sealed Barrel
+				}),
+				q(637, {	-- Sully Balloo's Letter
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 4432 },	-- Sully Balloo's Letter
 				}),
 				q(943, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
