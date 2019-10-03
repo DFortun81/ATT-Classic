@@ -28,11 +28,13 @@ _.Zones =
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3650,	-- Asterion
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(956, {	-- Bashal'Aran
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3650,	-- Asterion
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(954, {	-- Bashal'Aran
 					["lvl"] = 7,
@@ -49,6 +51,7 @@ _.Zones =
 						i(5617),	-- Vagabond Leggings
 						i(5604),	-- Elven Wand
 					},
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(4730, {	-- Beached Sea Creature
 					["lvl"] = 12,
@@ -156,6 +159,7 @@ _.Zones =
 						i(5486),	-- Recipe: Strider Stew
 						i(5477),	-- Strider Stew
 					},
+					["coord"] = { 37.7, 40.7, DARKSHORE },
 				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
