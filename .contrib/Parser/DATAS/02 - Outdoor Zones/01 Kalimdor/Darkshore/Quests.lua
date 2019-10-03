@@ -298,6 +298,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2913,	-- Archaeologist Hollee
 					["sourceQuest"] = 730, -- Trouble in Darkshore
+					["coord"] = { 37.4, 41.8, DARKSHORE },
 				}),
 				q(731, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
@@ -315,6 +316,7 @@ _.Zones =
 						i(11936),	-- Relic Hunter Belt
 					},
 					["sourceQuest"] = 731, -- The Absent Minded Prospector
+					["coord"] = { 37.4, 41.8, DARKSHORE },
 				}),
 				q(4763, {	-- The Blackwood Corrupted
 					["lvl"] = 15,
