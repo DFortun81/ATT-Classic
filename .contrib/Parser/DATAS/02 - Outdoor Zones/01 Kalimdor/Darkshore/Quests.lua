@@ -10,31 +10,37 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(993, {	-- A Lost Master
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(4812, {	-- As Water Cascades
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
+					["coord"] = { 37.7, 43.4, DARKSHORE},
 				}),
 				q(955, {	-- Bashal'Aran
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3650,	-- Asterion
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(956, {	-- Bashal'Aran
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3650,	-- Asterion
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(954, {	-- Bashal'Aran
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(957, {	-- Bashal'Aran
 					["lvl"] = 7,
@@ -45,6 +51,7 @@ _.Zones =
 						i(5617),	-- Vagabond Leggings
 						i(5604),	-- Elven Wand
 					},
+					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(4730, {	-- Beached Sea Creature
 					["lvl"] = 12,
@@ -55,6 +62,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 175226,	-- Beached Sea Creature
+					["coord"] = { 36.0, 70.8, DARKSHORE },
 				}),
 				q(4733, {	-- Beached Sea Creature
 					["lvl"] = 13,
@@ -64,6 +72,7 @@ _.Zones =
 				q(4723, {	-- Beached Sea Creature
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 42.0, 31.6, DARKSHORE },
 					--["objectID"] = 175233,	-- Beached Sea Creature
 				}),
 				q(4731, {	-- Beached Sea Turtle
@@ -75,6 +84,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176196,	-- Beached Sea Turtle
+					["coord"] = { 53.1, 18.1, DARKSHORE },
 				}),
 				q(4725, {	-- Beached Sea Turtle
 					["lvl"] = 12,
@@ -90,6 +100,7 @@ _.Zones =
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176190,	-- Beached Sea Turtle
+					["coord"] = { 37.2, 62.2, DARKSHORE },
 				}),
 				q(1002, {	-- Buzzbox 323
 					["lvl"] = 7,
@@ -109,6 +120,7 @@ _.Zones =
 						i(2082),	-- Wizbang's Gunnysack
 						i(11846),	-- Wizbang's Special Brew
 					},
+					["coord"] = { 51.3, 24.6, DARKSHORE },
 				}),
 				q(983, {	-- Buzzbox 827
 					["lvl"] = 7,
@@ -123,11 +135,13 @@ _.Zones =
 						i(5610),	-- Gustweald Cloak
 						i(4605),	-- Red-speckled Mushroom
 					},
+					["coord"] = { 37.3, 43.6, DARKSHORE},
 				}),
 				q(2138, {	-- Cleansing of the Infected
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(982, {	-- Deep Ocean, Vast Sea
 					["lvl"] = 13,
@@ -137,6 +151,7 @@ _.Zones =
 						i(15401),	-- Welldrip Gloves
 						i(15402),	-- Noosegrip Gauntlets
 					},
+					["coord"] = { 38.1, 41.2, DARKSHORE},
 				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
@@ -169,6 +184,7 @@ _.Zones =
 					["g"] = {
 						i(5611),	-- Tear of Grief
 					},
+					["coord"] = { 35.8, 43.7, DARKSHORE },
 				}),
 				q(1138, {	-- Fruit of the Sea
 					["lvl"] = 15,
@@ -178,6 +194,7 @@ _.Zones =
 						i(15405),	-- Shucking Gloves
 						i(15406),	-- Crustacean Boots
 					},
+					["coord"] = { 36.1, 44.9, DARKSHORE },
 				}),
 				q(2098, {	-- Gyromast's Retrieval
 					["lvl"] = 14,
@@ -196,11 +213,13 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(984, {	-- How Big a Threat?
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(951, {	-- Mathystra Relics
 					["lvl"] = 12,
@@ -249,6 +268,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(6343, {	-- Return to Nessa
 					["lvl"] = 10,
@@ -271,12 +291,14 @@ _.Zones =
 						i(7738),	-- Evergreen Gloves
 						i(7739),	-- Timberland Cape
 					},
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(729, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2913,	-- Archaeologist Hollee
 					["sourceQuest"] = 730, -- Trouble in Darkshore
+					["coord"] = { 37.4, 41.8, DARKSHORE },
 				}),
 				q(731, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
@@ -294,6 +316,7 @@ _.Zones =
 						i(11936),	-- Relic Hunter Belt
 					},
 					["sourceQuest"] = 731, -- The Absent Minded Prospector
+					["coord"] = { 37.4, 41.8, DARKSHORE },
 				}),
 				q(4763, {	-- The Blackwood Corrupted
 					["lvl"] = 15,
@@ -306,16 +329,20 @@ _.Zones =
 						i(12341),	-- Blackwood Fruit Sample
 						i(12342),	-- Blackwood Grain Sample
 					},
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(4762, {	-- The Cliffspring River
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
+					["coord"] = { 37.4, 40.1, DARKSHORE},
+					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall."
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3639,	-- Sentinel Tysha Moonblade
+					["coord"] = { 40.3, 59.7, DARKSHORE },
 				}),
 				q(1141, {	-- The Family and the Fishing Pole
 					["lvl"] = 10,
@@ -324,6 +351,7 @@ _.Zones =
 					["g"] = {
 						i(12225),	-- Blump Family Fishing Pole
 					},
+					["coord"] = { 36.1, 44.9, DARKSHORE },
 				}),
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
@@ -334,6 +362,7 @@ _.Zones =
 						i(15396),	-- Curvewood Dagger
 						i(15397),	-- Oakthrush Staff
 					},
+					["coord"] = { 47.4, 48.7, DARKSHORE},
 				}),
 				q(944, {	-- The Master's Glaive
 					["lvl"] = 12,
@@ -349,6 +378,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
+					["coord"] = { 37.7, 43.4, DARKSHORE},
 				}),
 				q(5321, {	-- The Sleeper Has Awakened
 					["lvl"] = 17,
@@ -364,24 +394,30 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
+					["coord"] = { 39.0, 43.6, DARKSHORE},
+					["description"] = "Quest giver is on 2nd floor.",
 				}),
 				q(966, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 965,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
+					
 				}),
 				q(967, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 966,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(1143, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 1167,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(981, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
@@ -392,6 +428,7 @@ _.Zones =
 						i(5614),	-- Seraph's Strike
 					},
 					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(949, {	-- The Twilight Camp
 					["lvl"] = 12,
@@ -407,6 +444,7 @@ _.Zones =
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
+					["coord"] = { 39.4, 43.5, DARKSHORE},
 				}),
 				q(958, {	-- Tools of the Highborne
 					["lvl"] = 9,
@@ -415,6 +453,7 @@ _.Zones =
 					["g"] = {
 						i(5612),	-- Ivy Cuffs
 					},
+					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(990, {	-- Trek to Ashenvale
 					["lvl"] = 15,
@@ -430,6 +469,8 @@ _.Zones =
 						i(15403),	-- Ridgeback Bracers
 						i(15404),	-- Breakwater Girdle
 					},
+					["coord"] = { 37.2, 44.2, DARKSHORE },
+					["description"] = "Quest given by notice board outside of the inn.",
 				}),
 				q(4681, {	-- Washed Ashore
 					["lvl"] = 11,

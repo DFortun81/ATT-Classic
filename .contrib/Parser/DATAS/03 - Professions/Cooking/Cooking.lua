@@ -396,6 +396,7 @@ profession(185, {	-- Cooking
 				i(5486),	-- Recipe: Strider Stew
 				i(5477),	-- Strider Stew
 			},
+			["coord"] = { 37.7, 40.7, DARKSHORE },
 		}),
 		q(6612, {	-- I Know A Guy...
 			["lvl"] = 35,
