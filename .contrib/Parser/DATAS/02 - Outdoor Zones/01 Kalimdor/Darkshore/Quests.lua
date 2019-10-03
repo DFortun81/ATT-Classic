@@ -128,6 +128,7 @@ _.Zones =
 						i(5610),	-- Gustweald Cloak
 						i(4605),	-- Red-speckled Mushroom
 					},
+					["coord"] = { 37.3, 43.6, DARKSHORE},
 				}),
 				q(2138, {	-- Cleansing of the Infected
 					["lvl"] = 10,
@@ -185,6 +186,7 @@ _.Zones =
 					["g"] = {
 						i(5611),	-- Tear of Grief
 					},
+					["coord"] = { 35.8, 43.7, DARKSHORE },
 				}),
 				q(1138, {	-- Fruit of the Sea
 					["lvl"] = 15,
@@ -336,6 +338,7 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3639,	-- Sentinel Tysha Moonblade
+					["coord"] = { 40.3, 59.7, DARKSHORE },
 				}),
 				q(1141, {	-- The Family and the Fishing Pole
 					["lvl"] = 10,
@@ -354,6 +357,7 @@ _.Zones =
 						i(15396),	-- Curvewood Dagger
 						i(15397),	-- Oakthrush Staff
 					},
+					["coord"] = { 47.4, 48.7, DARKSHORE},
 				}),
 				q(944, {	-- The Master's Glaive
 					["lvl"] = 12,
