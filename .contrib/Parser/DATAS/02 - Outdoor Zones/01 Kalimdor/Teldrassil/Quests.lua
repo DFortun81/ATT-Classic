@@ -442,6 +442,7 @@ _.Zones =
 						i(5459),	-- Defender Axe
 						i(5587),	-- Thornroot Club
 					},
+					["coord"] = { 55.9, 57.3, TELDRASSIL},
 				}),
 				q(917, {	-- Webwood Egg
 					["races"] = ALLIANCE_ONLY,
