@@ -62,6 +62,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 175226,	-- Beached Sea Creature
+					["coord"] = { 36.0, 70.8, DARKSHORE },
 				}),
 				q(4733, {	-- Beached Sea Creature
 					["lvl"] = 13,
@@ -99,6 +100,7 @@ _.Zones =
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176190,	-- Beached Sea Turtle
+					["coord"] = { 37.2, 62.2, DARKSHORE },
 				}),
 				q(1002, {	-- Buzzbox 323
 					["lvl"] = 7,
