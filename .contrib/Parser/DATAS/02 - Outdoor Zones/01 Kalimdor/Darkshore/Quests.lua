@@ -141,6 +141,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(982, {	-- Deep Ocean, Vast Sea
 					["lvl"] = 13,
@@ -193,6 +194,7 @@ _.Zones =
 						i(15405),	-- Shucking Gloves
 						i(15406),	-- Crustacean Boots
 					},
+					["coord"] = { 36.1, 44.9, DARKSHORE },
 				}),
 				q(2098, {	-- Gyromast's Retrieval
 					["lvl"] = 14,
@@ -266,6 +268,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(6343, {	-- Return to Nessa
 					["lvl"] = 10,
@@ -288,6 +291,7 @@ _.Zones =
 						i(7738),	-- Evergreen Gloves
 						i(7739),	-- Timberland Cape
 					},
+					["coord"] = { 38.8, 43.4, DARKSHORE },
 				}),
 				q(729, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
@@ -345,6 +349,7 @@ _.Zones =
 					["g"] = {
 						i(12225),	-- Blump Family Fishing Pole
 					},
+					["coord"] = { 36.1, 44.9, DARKSHORE },
 				}),
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
@@ -462,6 +467,8 @@ _.Zones =
 						i(15403),	-- Ridgeback Bracers
 						i(15404),	-- Breakwater Girdle
 					},
+					["coord"] = { 37.2, 44.2, DARKSHORE },
+					["description"] = "Quest given by notice board outside of the inn.",
 				}),
 				q(4681, {	-- Washed Ashore
 					["lvl"] = 11,
