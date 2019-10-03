@@ -177,10 +177,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 142151,	-- Sealed Barrel
 				}),
-				q(455, {	-- The Algaz Gauntlet
-					["lvl"] = 19,
+				q(943, {	-- The Absent Minded Prospector
+					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1342,	-- Mountaineer Rockgar
+					["qg"] = 2911,	-- Archaeologist Flagongut
+					["g"] = {
+						i(5627),	-- Relic Blade
+						i(5626),	-- Skullchipper
+					},
+					["sourceQuest"] = 942, -- The Absent Minded Prospector(Darnassus)
 				}),
 				q(289, {	-- The Cursed Crew
 					["lvl"] = 22,

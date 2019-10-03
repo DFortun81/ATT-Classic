@@ -369,6 +369,34 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
+				q(970, {	-- The Tower of Althalaxx
+					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3663,	-- Delgren the Purifier
+					["sourceQuest"] = 967,	-- The Tower of Althalaxx
+				}),
+				q(973, {	-- The Tower of Althalaxx
+					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3663,	-- Delgren the Purifier
+					["g"] = {
+						i(5622),	-- Clergy Ring
+						i(5613),	-- Staff of the Purifier
+					},
+					["sourceQuest"] = 970,	-- The Tower of Althalaxx
+				}),
+				q(1140, {	-- The Tower of Althalaxx
+					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3663,	-- Delgren the Purifier
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx
+				}),
+				q(1167, {	-- The Tower of Althalaxx
+					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3663,	-- Delgren the Purifier
+					["sourceQuest"] = 1140,	-- The Tower of Althalaxx
+				}),
 				q(1008, {	-- The Zoram Strand
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
@@ -383,11 +411,6 @@ _.Zones =
 						i(16889),	-- Polished Walking Staff
 						i(16890),	-- Slatemetal Cutlass
 					},
-				}),
-				q(990, {	-- Trek to Ashenvale
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3694,	-- Sentinel Selarin
 				}),
 				q(6462, {	-- Troll Charm
 					["qg"] = 12721,	-- Mitsuwa

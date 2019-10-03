@@ -286,6 +286,13 @@ _.Zones =
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2913,	-- Archaeologist Hollee
+					["sourceQuest"] = 730, -- Trouble in Darkshore
+				}),
+				q(731, {	-- The Absent Minded Prospector
+					["lvl"] = 15,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2917,	-- Prospector Remtravel
+					["sourceQuest"] = 729, -- The Absent Minded Prospector
 				}),
 				q(741, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
@@ -296,25 +303,7 @@ _.Zones =
 						i(5630),	-- Windfelt Gloves
 						i(11936),	-- Relic Hunter Belt
 					},
-				}),
-				q(731, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2917,	-- Prospector Remtravel
-				}),
-				q(942, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
-				}),
-				q(943, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2911,	-- Archaeologist Flagongut
-					["g"] = {
-						i(5627),	-- Relic Blade
-						i(5626),	-- Skullchipper
-					},
+					["sourceQuest"] = 731, -- The Absent Minded Prospector
 				}),
 				q(4763, {	-- The Blackwood Corrupted
 					["lvl"] = 15,
@@ -380,52 +369,38 @@ _.Zones =
 						i(15207),	-- Steelcap Shield
 					},
 				}),
-				q(966, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3661,	-- Balthule Shadowstrike
-				}),
-				q(1167, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-				}),
-				q(967, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3661,	-- Balthule Shadowstrike
-				}),
 				q(965, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
 				}),
-				q(1140, {	-- The Tower of Althalaxx
+				q(966, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3663,	-- Delgren the Purifier
+					["qg"] = 3661,	-- Balthule Shadowstrike
+					["sourceQuest"] = 965,	-- The Tower of Althalaxx
 				}),
-				q(970, {	-- The Tower of Althalaxx
+				q(967, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3663,	-- Delgren the Purifier
+					["qg"] = 3661,	-- Balthule Shadowstrike
+					["sourceQuest"] = 966,	-- The Tower of Althalaxx
 				}),
 				q(1143, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3661,	-- Balthule Shadowstrike
+					["sourceQuest"] = 1167,	-- The Tower of Althalaxx
 				}),
 				q(981, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3661,	-- Balthule Shadowstrike
 					["g"] = {
 						i(10043),	-- Pious Legwraps
 						i(5614),	-- Seraph's Strike
 					},
-				}),
-				q(973, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3663,	-- Delgren the Purifier
-					["g"] = {
-						i(5622),	-- Clergy Ring
-						i(5613),	-- Staff of the Purifier
-					},
+					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
 				}),
 				q(949, {	-- The Twilight Camp
 					["lvl"] = 12,
@@ -449,6 +424,11 @@ _.Zones =
 					["g"] = {
 						i(5612),	-- Ivy Cuffs
 					},
+				}),
+				q(990, {	-- Trek to Ashenvale
+					["lvl"] = 15,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3694,	-- Sentinel Selarin
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
 					["lvl"] = 15,
