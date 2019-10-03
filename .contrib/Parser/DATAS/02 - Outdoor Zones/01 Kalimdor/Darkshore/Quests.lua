@@ -80,6 +80,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176196,	-- Beached Sea Turtle
+					["coord"] = { 53.1, 18.1, DARKSHORE },
 				}),
 				q(4725, {	-- Beached Sea Turtle
 					["lvl"] = 12,
@@ -114,6 +115,7 @@ _.Zones =
 						i(2082),	-- Wizbang's Gunnysack
 						i(11846),	-- Wizbang's Special Brew
 					},
+					["coord"] = { 51.3, 24.6, DARKSHORE },
 				}),
 				q(983, {	-- Buzzbox 827
 					["lvl"] = 7,
@@ -333,6 +335,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
 					["coord"] = { 37.4, 40.1, DARKSHORE},
+					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall."
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
 					["lvl"] = 9,
@@ -397,18 +400,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 965,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
+					
 				}),
 				q(967, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 966,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(1143, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 1167,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(981, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
@@ -419,6 +426,7 @@ _.Zones =
 						i(5614),	-- Seraph's Strike
 					},
 					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(949, {	-- The Twilight Camp
 					["lvl"] = 12,
