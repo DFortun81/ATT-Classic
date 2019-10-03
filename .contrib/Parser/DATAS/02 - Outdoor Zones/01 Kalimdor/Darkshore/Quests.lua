@@ -22,6 +22,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
+					["coord"] = { 37.7, 43.4, DARKSHORE},
 				}),
 				q(955, {	-- Bashal'Aran
 					["lvl"] = 7,
@@ -378,6 +379,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
+					["coord"] = { 37.7, 43.4, DARKSHORE},
 				}),
 				q(5321, {	-- The Sleeper Has Awakened
 					["lvl"] = 17,
