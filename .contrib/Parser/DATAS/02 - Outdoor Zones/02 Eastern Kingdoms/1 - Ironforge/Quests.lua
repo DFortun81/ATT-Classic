@@ -63,23 +63,26 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(686, {	-- A King's Tribute (1/3)
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2784,	-- King Magni Bronzebeard
+					["sourceQuest"] = 683,	-- Sara Balloo's Plea
+				}),
+				q(689, {	-- A King's Tribute (2/3)
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2790,	-- Grand Mason Marblesten
+					["sourceQuest"] = 686,	-- A King's Tribute (1/3)
+				}),
 				q(700, {	-- A King's Tribute
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2790,	-- Grand Mason Marblesten
+					["sourceQuest"] = 689,	-- A King's Tribute (2/3)
 					["g"] = {
 						i(4535),	-- Ironforge Memorial Ring
 					},
-				}),
-				q(686, {	-- A King's Tribute
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2784,	-- King Magni Bronzebeard
-				}),
-				q(689, {	-- A King's Tribute
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2790,	-- Grand Mason Marblesten
 				}),
 				q(4512, {	-- A Little Slime Goes a Long Way
 					["lvl"] = 48,
@@ -262,11 +265,13 @@ _.Zones =
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 3182,	-- Proof of Deed
 					["g"] = {
 						i(5396),	-- Key to Searing Gorge
 					},
 				}),
 				q(8997, {	-- Back to the Beginning
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -282,6 +287,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6569,	-- Gnoarn
 				}),
+				q(6388, {	-- Gryth Thurden
+					["lvl"] = 10,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
+					["sourceQuest"] = 6387,	-- Honor Students
+					["qg"] = 4256,	-- Golnir Bouldertoe
+				}),
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
@@ -289,6 +303,8 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(8932, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -297,6 +313,8 @@ _.Zones =
 					},
 				}),
 				q(8935, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -305,6 +323,8 @@ _.Zones =
 					},
 				}),
 				q(8931, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -313,6 +333,8 @@ _.Zones =
 					},
 				}),
 				q(8926, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -321,6 +343,8 @@ _.Zones =
 					},
 				}),
 				q(8933, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -329,6 +353,8 @@ _.Zones =
 					},
 				}),
 				q(8934, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -337,6 +363,8 @@ _.Zones =
 					},
 				}),
 				q(8936, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -345,6 +373,8 @@ _.Zones =
 					},
 				}),
 				q(8937, {	-- Just Compensation
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -383,12 +413,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
+				q(302, {	-- Powder to Ironband
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1356,	-- Prospector Stormpike
+					["maps"] = { LOCH_MODAN },
+					["sourceQuest"] = 301,	-- Report to Ironforge
+				}),
 				q(1453, {	-- Reclaimers' Business in Desolace
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5637,	-- Roetten Stonehammer
 				}),
+				q(6392, {	-- Return to Brock
+					["lvl"] = 10,
+					["races"] = {
+						3,	-- Dwarf
+						7,	-- Gnome
+					},
+					["qg"] = 1573,	-- Gryth Thurden
+					["sourceQuest"] = 6388,	-- Gryth Thurden
+				}),
 				q(8977, {	-- Return to Deliana
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -408,8 +455,11 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2695,	-- Sara Balloo
+					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 				}),
 				q(9003, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -418,6 +468,8 @@ _.Zones =
 					},
 				}),
 				q(9001, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -426,6 +478,8 @@ _.Zones =
 					},
 				}),
 				q(8999, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -434,6 +488,8 @@ _.Zones =
 					},
 				}),
 				q(9006, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -442,6 +498,8 @@ _.Zones =
 					},
 				}),
 				q(9005, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -450,6 +508,8 @@ _.Zones =
 					},
 				}),
 				q(9000, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -458,6 +518,8 @@ _.Zones =
 					},
 				}),
 				q(9004, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -466,6 +528,8 @@ _.Zones =
 					},
 				}),
 				q(9002, {	-- Saving the Best for Last
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -477,17 +541,20 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(3483, {	-- Signal for Pickup
+				q(3451, {	-- Signal for Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
+					["qg"] = 8517,	-- Xiggs Fuselighter
+					["sourceQuest"] = 3450,	-- An Easy Pickup
 					["g"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
 				}),
-				q(3451, {	-- Signal for Pickup
+				q(3483, {	-- Signal for Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 8517,	-- Xiggs Fuselighter
+					["repeatable"] = true,
 					["g"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
@@ -505,16 +572,13 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["isBreadcrumb"] = true,
 				}),
-				q(637, {	-- Sully Balloo's Letter
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(8275, {	-- Taking Back Silithus
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
 				}),
 				q(7905, {	-- The Darkmoon Faire
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14842,	-- Melnan Darkstone
