@@ -397,6 +397,8 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
+					["coord"] = { 39.0, 43.6, DARKSHORE},
+					["description"] = "Quest givers in on 2nd floor.",
 				}),
 				q(1140, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
