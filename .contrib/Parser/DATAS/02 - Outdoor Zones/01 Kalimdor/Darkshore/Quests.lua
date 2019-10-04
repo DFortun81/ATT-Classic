@@ -90,6 +90,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176197,	-- Beached Sea Turtle
+					["coord"] = { 44.2, 20.7, Darkshore },
 				}),
 				q(4732, {	-- Beached Sea Turtle
 					["lvl"] = 13,
@@ -195,6 +196,7 @@ _.Zones =
 						i(15406),	-- Crustacean Boots
 					},
 					["coord"] = { 36.1, 44.9, DARKSHORE },
+					["description"] = "Look for Reef Crawlers around 45.6, 20.6.",
 				}),
 				q(2098, {	-- Gyromast's Retrieval
 					["lvl"] = 14,
@@ -229,11 +231,13 @@ _.Zones =
 						i(5757),	-- Hardwood Cudgel
 						i(5615),	-- Woodsman Sword
 					},
+					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(5713, {	-- One Shot. One Kill.
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11711,	-- Sentinel Aynasha
+					["coord"] = { 45.9, 90.3, DARKSHORE },
 				}),
 				q(948, {	-- Onu
 					["lvl"] = 12,
@@ -247,6 +251,7 @@ _.Zones =
 					["altQuests"] = {
 						949,	-- The Twilight Camp
 					},
+					["coord"] = { 43.5, 76.3, DARKSHORE},
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
@@ -263,6 +268,7 @@ _.Zones =
 						i(5251),	-- Phial of Scrying
 					},
 					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
+					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(2118, {	-- Plagued Lands
 					["lvl"] = 10,
@@ -352,6 +358,7 @@ _.Zones =
 						i(12225),	-- Blump Family Fishing Pole
 					},
 					["coord"] = { 36.1, 44.9, DARKSHORE },
+					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
 				}),
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
@@ -368,6 +375,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
+					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(968, {	-- The Powers Below
 					["lvl"] = 10,
