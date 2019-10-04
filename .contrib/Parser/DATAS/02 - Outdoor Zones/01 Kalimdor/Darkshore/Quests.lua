@@ -153,6 +153,7 @@ _.Zones =
 						i(15402),	-- Noosegrip Gauntlets
 					},
 					["coord"] = { 38.1, 41.2, DARKSHORE},
+					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
 				}),
 				q(994, {	-- Escape Through Force
 					["lvl"] = 10,
@@ -358,7 +359,7 @@ _.Zones =
 						i(12225),	-- Blump Family Fishing Pole
 					},
 					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
+					["description"] = "If you have not learn Fishing yet, talk to Gubber after accepting the quest to learn it.",
 				}),
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
