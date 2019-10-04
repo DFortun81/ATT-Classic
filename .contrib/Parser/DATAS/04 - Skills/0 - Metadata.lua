@@ -91,10 +91,10 @@ _.Skills =
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
---[[ -- BEAST TRAINING remarked out because I can't figure out how to link this to the Beast Training Craft Frame, 
-		and I also don't know why ATT keeps marking the wrong rank of the spells as learned.
+
+--[[		-- BEAST TRAINING --
 	{
-		["recipeID"] = 5149, -- Beast Training -- Skill ID 261(doesn't work, returns Summon Skeleton) -- Spell ID is 5149
+		["recipeID"] = 5149, -- Beast Training -- SkillID is 261, but that doesn't work here, returns Summon Skeleton, use SpellID 5149 instead.
 		["classes"] = {3},	-- Hunter
 		["g"] = {
 			{
@@ -246,7 +246,7 @@ _.Skills =
 				["name"] = "Bite", -- Rank 8
 				["recipeID"] = 17261,
 				["crs"] = {
-					9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)				},
+					9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
 				},
 			},
 			{
@@ -295,10 +295,11 @@ _.Skills =
 					4512,	-- Rotting Agam'ar (Boar, 28, Razorfen Kraul)
 				},
 			},
---			{
---				["name"] = "Charge", -- Rank 4
---				["recipeID"] = 26179,
---			},		-- No known source for this spell
+			{
+				["name"] = "Charge", -- Rank 4
+				["recipeID"] = 26179,
+				["u"] = 1, 	-- No Known Source
+			},
 			{
 				["name"] = "Charge", -- Rank 5
 				["recipeID"] = 26201,
@@ -714,10 +715,11 @@ _.Skills =
 				["name"] = "Growl", -- Rank 7
 				["recipeID"] = 14921,
 			},
---			{
---				["name"] = "Lightning Breath", -- Rank 1
---				["recipeID"] = 24844,				
---			},			-- No Known Source
+			{
+				["name"] = "Lightning Breath", -- Rank 1
+				["recipeID"] = 24844,
+				["u"] = 1, 	-- No Known Source
+			},
 			{
 				["name"] = "Lightning Breath", -- Rank 2
 				["recipeID"] = 25008,
@@ -759,13 +761,14 @@ _.Skills =
 					5708,	-- Spawn of Hakkar (Wind Serpent, 51, The Temple of Atal'Hakkar)
 				},
 			},
---			{
---				["name"] = "Lightning Breath", -- Rank 6
---				["recipeID"] = 25012,
---				["crs"] = {
---					11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
---				},
---			},		-- Zul'Gurub phase
+			{
+				["name"] = "Lightning Breath", -- Rank 6
+				["recipeID"] = 25012,
+				["crs"] = {
+					11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
+				},
+				["u"] = 3,	-- Not available until Zul'Gurub 
+			},		
 			{
 				["name"] = "Natural Armor", -- Rank 1
 				["recipeID"] = 24545,
@@ -979,7 +982,7 @@ _.Skills =
 					6516,	-- Un'Goro Thunderer (Gorilla, 52-53, Un'Goro Crater)
 					9622,	-- U'cha (Gorilla, 55, Un'Goro Crater)
 				},
-			},			
+			},
 		},
-	},	]]
+	},	]]--
 };
