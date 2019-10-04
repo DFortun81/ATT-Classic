@@ -382,11 +382,6 @@ _.Zones =
 					["qg"] = 3616,	-- Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
-				q(968, {	-- The Powers Below
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
 				q(4811, {	-- The Red Crystal
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
