@@ -52,6 +52,7 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6735,	-- Innkeeper Saelienne
+					["coord"] = { 67.4, 15.7, DARNASSUS },
 				}),
 				q(4510, {	-- Calm Before the Storm
 					["lvl"] = 50,
@@ -71,6 +72,8 @@ _.Zones =
 					["g"] = {
 						i(7298),	-- Blade of Cunning
 					},
+					["coord"] = { 37.0, 21.9, DARNASSUS },
+					["description"] = "Enter the base of the tree at 32.7, 16.3 to get to the quest giver.",
 				}),
 				q(2260, {	-- Erion's Behest
 					["lvl"] = 16,
@@ -241,6 +244,7 @@ _.Zones =
 					["g"] = {
 						i(5605),	-- Pruning Knife
 					},
+					["coord"] = { 38.2, 21.6, DARNASSUS },
 				}),
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,
