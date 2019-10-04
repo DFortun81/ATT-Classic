@@ -250,6 +250,20 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(1038, {	-- Velinde's Effects
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
+					["sourceQuest"] = 1037, -- Velinde Starsong (Ashenvale)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
+				q(1039, {	-- The Barrens Port
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
+					["sourceQuest"] = 1038,	-- Velinde's Effects
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 			}),
 		}),
 	}),

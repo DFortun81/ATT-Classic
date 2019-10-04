@@ -467,6 +467,13 @@ _.Zones =
 				q(8553, {	-- The Captain's Cutlass
 					["lvl"] = 35,
 				}),
+				q(1041, {	-- The Caravan Road
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 3945,	-- Caravaneer Ruzzgot
+					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 				q(611, {	-- The Curse of the Tides
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,

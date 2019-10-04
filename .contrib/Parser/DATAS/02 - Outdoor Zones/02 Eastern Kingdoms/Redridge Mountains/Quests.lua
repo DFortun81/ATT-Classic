@@ -172,7 +172,8 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 341,	-- Foreman Oslow
-					["sourceQuest"] = 345,	-- Ink Supplies (quest starts in Elwynn Forest)
+					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
+					["description"] = "This quest is part of a series that starts in Stormwind.",
 				}),
 				q(119, {	-- Return to Verner
 					["lvl"] = 13,

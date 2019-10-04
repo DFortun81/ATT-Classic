@@ -419,6 +419,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(1040, {	-- Passage to Booty Bay
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["sourceQuests"] = 1039,	-- The Barrens Port(Darnassus)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
 					["sourceQuests"] = {

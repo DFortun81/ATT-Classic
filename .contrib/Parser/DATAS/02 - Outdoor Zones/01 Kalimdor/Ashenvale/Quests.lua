@@ -14,14 +14,7 @@ _.Zones =
 						i(4542),	-- Moist Cornbread
 						i(1205),	-- Melon Juice
 					},
-				}),
-				q(1044, {	-- Answered Questions
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["g"] = {
-						i(5817),	-- Lunaris Bow
-						i(5818),	-- Moonbeam Wand
-					},
+					["sourceQuest"] = 1023, -- Raene's Cleansing (2)
 				}),
 				q(6503, {	-- Ashenvale Outrunners
 					["qg"] = 12867,	-- Kuray'bin
@@ -150,79 +143,89 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
 				}),
-				q(1040, {	-- Passage to Booty Bay
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-				}),
 				q(1134, {	-- Pridewings of Stonetalon
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 				}),
-				q(1023, {	-- Raene's Cleansing
+				q(991, {	-- Raene's Cleansing (1)
+					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3691,	-- Raene Wolfrunner
+				}),
+				q(1023, {	-- Raene's Cleansing (2)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3891,	-- Teronis' Corpse
+					["sourceQuest"] = 991,	-- Raene's Cleansing (1)
 				}),
-				q(1055, {	-- Raene's Cleansing
+				q(1024, {	-- Raene's Cleansing (3)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 19024,	-- Hidden Shrine
+					["qg"] = 3691,	-- Raene Wolfrunner
+					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
 				}),
-				q(1030, {	-- Raene's Cleansing
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(1029, {	-- Raene's Cleansing
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(1045, {	-- Raene's Cleansing
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(5388),	-- Ran Bloodtooth's Skull
-					},
-				}),
-				q(1027, {	-- Raene's Cleansing
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3916,	-- Shael'dryn
-				}),
-				q(1026, {	-- Raene's Cleansing
+				q(1026, {	-- Raene's Cleansing (4)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
 					["g"] = {
 						i(5475),	-- Wooden Key
 					},
+					["sourceQuest"] = 1024,	-- Raene's Cleansing (3)
 				}),
-				q(991, {	-- Raene's Cleansing
+				q(1027, {	-- Raene's Cleansing (5)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3691,	-- Raene Wolfrunner
+					["qg"] = 3916,	-- Shael'dryn
+					["sourceQuest"] = 1026,	-- Raene's Cleansing (4)
 				}),
-				q(1024, {	-- Raene's Cleansing
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3691,	-- Raene Wolfrunner
-				}),
-				q(1028, {	-- Raene's Cleansing
+				q(1028, {	-- Raene's Cleansing (6)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
 					["g"] = {
 						i(5462),	-- Dartol's Rod of Transformation
 					},
+					["sourceQuest"] = 1027,	-- Raene's Cleansing (5)
 				}),
-				q(1046, {	-- Raene's Cleansing
+				q(1055, {	-- Raene's Cleansing (7)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 19024 },	-- Hidden Shrine
+					["sourceQuest"] = 1028,	-- Raene's Cleansing (6)
+				}),
+				q(1029, {	-- Raene's Cleansing (8)
+					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3916,	-- Shael'dryn
+					["sourceQuest"] = 1055,	-- Raene's Cleansing (7)
+				}),
+				q(1030, {	-- Raene's Cleansing (9)
+					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3691,	-- Raene Wolfrunner
+					["sourceQuest"] = 1029,	-- Raene's Cleansing (8)
+				}),
+				q(1045, {	-- Raene's Cleansing (10)
+					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3897,	-- Krolg
+					["g"] = {
+						i(5388),	-- Ran Bloodtooth's Skull
+					},
+					["sourceQuest"] = 1030,	-- Raene's Cleansing (9)
+				}),
+				q(1046, {	-- Raene's Cleansing (11)
+					["lvl"] = 18,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3897,	-- Krolg
 					["g"] = {
 						i(5815),	-- Glacial Stone
 						i(17046),	-- Gutterblade
 						i(1116),	-- Ring of Pure Silver
 					},
+					["sourceQuest"] = 1045,	-- Raene's Cleansing (10)
 				}),
 				q(1009, {	-- Ruuzel
 					["lvl"] = 20,
@@ -305,10 +308,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(1039, {	-- The Barrens Port
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-				}),
 				q(1918, {	-- The Befouled Element
 					["provider"] = { "i", 16408 },	-- Befouled Water Globe
 					["cr"] = 12759,	-- Tideress
@@ -322,14 +321,6 @@ _.Zones =
 						i(5820),	-- Faerie Mantle
 						i(11229),	-- Brightscale Girdle
 					},
-				}),
-				q(1041, {	-- The Caravan Road
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-				}),
-				q(1042, {	-- The Carevin Family
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 				}),
 				q(1022, {	-- The Howling Vale
 					["lvl"] = 25,
@@ -364,10 +355,6 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
-				}),
-				q(1043, {	-- The Scythe of Elune
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 				}),
 				q(970, {	-- The Tower of Althalaxx
 					["lvl"] = 13,
@@ -428,10 +415,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
-				}),
-				q(1038, {	-- Velinde's Effects
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
+					["sourceQuest"] = 1022,	-- The Howling Vale
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
 					["lvl"] = 26,

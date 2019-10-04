@@ -18,6 +18,17 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(1044, {	-- Answered Questions
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["g"] = {
+						i(5817),	-- Lunaris Bow
+						i(5818),	-- Moonbeam Wand
+					},
+					["qg"] = 661,	-- Jonathan Carevin
+					["sourceQuest"] = 1043,	-- The Scythe of Elune
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 				q(325, {	-- Armed and Ready
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
@@ -252,6 +263,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
 				}),
+				q(1042, {	-- The Carevin Family
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 267,	-- Clerk Daltry
+					["sourceQuest"] = 1041,	-- The Caravan Road(Straglethorn Vale)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 				q(229, {	-- The Daughter Who Lived
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
@@ -363,6 +381,13 @@ _.Zones =
 						i(3605),	-- Quiver of the Night Watch
 						i(1729),	-- Gunnysack of the Night Watch
 					},
+				}),
+				q(1043, {	-- The Scythe of Elune
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 661,	-- Jonathan Carevin
+					["sourceQuest"] = 1042,	-- The Carevin Family
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
 				}),
 				q(262, {	-- The Shadowy Figure
 					["lvl"] = 20,

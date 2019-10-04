@@ -165,6 +165,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 951,	-- Brother Paxton
 					["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
+					["description"] = "This quest is part of a series that starts in Stormwind.",
 				}),
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
@@ -288,6 +289,7 @@ _.Zones =
 					["g"] = {
 						i(6095),
 					},
+					["description"] = "This quest is part of a series that starts in Stromwind.",
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
 					["lvl"] = 6,
