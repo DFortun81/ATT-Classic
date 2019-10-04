@@ -483,7 +483,7 @@ _.Zones =
 						i(15404),	-- Breakwater Girdle
 					},
 					["coord"] = { 37.2, 44.2, DARKSHORE },
-					["description"] = "Quest given by notice board outside of the inn.",
+					["description"] = "Quest given by notice board outside of the inn. To complete the quest, go to 36.2, 76.3. Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
 				}),
 				q(4681, {	-- Washed Ashore
 					["lvl"] = 11,
