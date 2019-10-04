@@ -101,6 +101,18 @@ _.Instances = {
 					["lvl"] = 17,
 				},
 				{
+					["questID"] = 968, -- The Powers Below
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["provider"] = { "i", 5352 },	-- Book: The Powers Below
+					["maps"] = { DARKSHORE },
+					["crs"] = {
+						2339, -- Twilight Thug
+						2338, -- Twilight Disciple
+					},
+				},
+				{
 					["questID"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
