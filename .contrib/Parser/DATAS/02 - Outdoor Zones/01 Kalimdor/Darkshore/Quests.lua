@@ -137,6 +137,7 @@ _.Zones =
 						i(4605),	-- Red-speckled Mushroom
 					},
 					["coord"] = { 37.3, 43.6, DARKSHORE},
+					["description"] = "The path up to the cave begins at 54.7, 31.6. Follow the path to the right when you enter the cave to find the Death Cap.",
 				}),
 				q(2138, {	-- Cleansing of the Infected
 					["lvl"] = 10,
@@ -244,6 +245,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3583,	-- Barithras Moonshade
+					["coord"] = { 37.3, 43.7, DARKSHORE },
 				}),
 				q(960, {	-- Onu is meditating
 					["races"] = ALLIANCE_ONLY,
@@ -299,6 +301,7 @@ _.Zones =
 						i(7739),	-- Timberland Cape
 					},
 					["coord"] = { 38.8, 43.4, DARKSHORE },
+					["description"] = "The path up to the cave begins at 52.4, 36.0.",
 				}),
 				q(729, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
@@ -337,6 +340,7 @@ _.Zones =
 						i(12342),	-- Blackwood Grain Sample
 					},
 					["coord"] = { 37.4, 40.1, DARKSHORE},
+					["description"] = "Fill the Empty Cleansing Bowl at the Moonwell in Auberdine before you leave to get the other items. Blackwood Grain Sample is located at 50.6, 35.0. Blackwood Nut Sample located at 51.8, 33.5. Blackwood Fruit Sample is located at 52.9, 33.4. Mix the ingredients next to the bonfire at 52.4, 33.4 to spawn the level 19 mob Xabraxxis.",
 				}),
 				q(4762, {	-- The Cliffspring River
 					["lvl"] = 11,
@@ -359,7 +363,7 @@ _.Zones =
 						i(12225),	-- Blump Family Fishing Pole
 					},
 					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["description"] = "If you have not learn Fishing yet, talk to Gubber after accepting the quest to learn it.",
+					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 				}),
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
