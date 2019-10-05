@@ -11,6 +11,7 @@ _.Zones =
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					},
+					["coord"] = { 11.5, 59.6, WETLANDS },
 				}),
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
 					["groups"] = {
@@ -31,7 +32,7 @@ _.Zones =
 					},
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-					["coord"] = { 8.1, 55.8, Wetlands },
+					["coord"] = { 8.1, 55.8, WETLANDS },
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt
@@ -43,9 +44,10 @@ _.Zones =
 						i(6275),	-- Pattern: Greater Adept's Robe
 						i(7290),	-- Pattern: Red Whelp Gloves
 					},
+					["description"] = "Enter the house at 8.3, 56.1 and go upstairs to access Jennabink Powerseam.",
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
-					["coord"] = { 11.3, 58.4, Wetlands },
+					["coord"] = { 11.3, 58.4, WETLANDS },
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
@@ -56,6 +58,7 @@ _.Zones =
 						i(6369),	-- Recipe: Rockscale Cod
 						i(17062),	-- Recipe: Mithril Head Trout
 					},
+					["coord"] = { 8.0, 58.3, WETLANDS },
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
 					["groups"] = {

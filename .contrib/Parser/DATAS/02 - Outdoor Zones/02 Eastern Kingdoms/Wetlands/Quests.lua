@@ -41,6 +41,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1242,	-- Karl Boran
+					["coord"] = { 8.3, 58.5, WETLANDS },
 				}),
 				q(293, {	-- Cleansing the Eye
 					["lvl"] = 22,
@@ -50,6 +51,8 @@ _.Zones =
 					["g"] = {
 						i(2943),	-- Eye of Paleth
 					},
+					["coord"] = { 10.6, 60.5, WETLANDS },
+					["description"] = "Glorin Steelbrow is located inside the Deepwater Tavern on the first floor.",
 				}),
 				q(469, {	-- Daily Delivery
 					["lvl"] = 18,
@@ -73,16 +76,20 @@ _.Zones =
 					["g"] = {
 						i(3352),	-- Ooze-covered Bag
 					},
+					["coord"] = { 11.8, 58.0, WETLANDS },
 				}),
 				q(472, {	-- Fall of Dun Modr
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2097,	-- Harlo Barnaby
+					["coord"] = { 10.8, 55.9, WETLANDS },
 				}),
 				q(1132, {	-- Fiora Longears
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4455,	-- Red Jack Flint
+					["coord"] = { 9.9, 57.9, WETLANDS },
+					["description"] = "Red Jack Flint is located inside Menethil Keep on the first floor.",
 				}),
 				q(277, {	-- Fire Taboo
 					["lvl"] = 20,
@@ -110,12 +117,15 @@ _.Zones =
 					["qg"] = 5082,	-- Vincent Hyal
 					["sourceQuest"] = 1301,	-- James Hyal
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
+					["coord"] = { 10.8, 60.4, WETLANDS },
+					["description"] = "Vincent Hyal is located inside the Deepwater Tavern on the first floor.",
 				}),
 				q(290, {	-- Lifting the Curse
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 289,	-- The Cursed Crew
+					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
 				q(647, {	-- MacKreel's Moonshine
 					["lvl"] = 28,
@@ -171,6 +181,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2086,	-- Valstag Ironjaw
 					["isBreadcrumb"] = true,
+					["coord"] = { 10.1, 56.9, WETLANDS },
+					["description"] = "Valstag Ironjaw is located in the entryway to Menethil Keep.",
 				}),
 				q(286, {	-- Return the Statuette
 					["lvl"] = 20,
@@ -202,12 +214,15 @@ _.Zones =
 						i(5626),	-- Skullchipper
 					},
 					["sourceQuest"] = 942, -- The Absent Minded Prospector(Darnassus)
+					["coord"] = { 10.8, 60.4, WETLANDS },
+					["description"] = "Archaeologist Flagongut is located in the Deepwater Tavern on the 2nd floor.",
 				}),
 				q(289, {	-- The Cursed Crew
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 288,	-- The Third Fleet
+					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
 				q(303, {	-- The Dark Iron War
 					["lvl"] = 25,
@@ -224,6 +239,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
 				q(284, {	-- The Search Continues
 					["lvl"] = 20,
@@ -259,6 +275,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
+					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
 				q(276, {	-- Tramping Paws
 					["lvl"] = 20,
@@ -283,6 +300,7 @@ _.Zones =
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2094,	-- James Halloran
+					["coord"] = { 8.5, 55.7, WETLANDS },
 				}),
 			}),
 		}),
