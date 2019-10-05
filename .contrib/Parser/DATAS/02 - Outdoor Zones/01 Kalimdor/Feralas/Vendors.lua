@@ -59,6 +59,12 @@ _.Zones =
 						i(12254),	-- Well Oiled Cloak
 					},
 				}),
+				n(14637, {	-- Zorbin Fandazzle
+					["description"] = "Must complete quests |cFFFFD700Still With The Zapped Giants|r and |cFFFFD700Even More Fuel For The Zapping|r before he will sell to you.",
+					["groups"] = {
+						i(19027),	-- Schematic: Snake Burst Firework
+					},
+				}),
 			}),	
 		}),
 	}),

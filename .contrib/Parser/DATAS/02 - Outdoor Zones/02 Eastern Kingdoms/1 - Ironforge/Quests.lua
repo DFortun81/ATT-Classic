@@ -115,6 +115,8 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8910, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -122,6 +124,8 @@ _.Zones =
 					},
 				}),
 				q(8909, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -129,6 +133,8 @@ _.Zones =
 					},
 				}),
 				q(8907, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -136,6 +142,8 @@ _.Zones =
 					},
 				}),
 				q(8912, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -143,6 +151,8 @@ _.Zones =
 					},
 				}),
 				q(8908, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -150,6 +160,8 @@ _.Zones =
 					},
 				}),
 				q(8911, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -157,6 +169,8 @@ _.Zones =
 					},
 				}),
 				q(8905, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -164,6 +178,8 @@ _.Zones =
 					},
 				}),
 				q(8906, {	-- An Earnest Proposition
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -175,6 +191,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8958, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -184,6 +202,8 @@ _.Zones =
 					},
 				}),
 				q(8953, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -193,6 +213,8 @@ _.Zones =
 					},
 				}),
 				q(8951, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -202,6 +224,8 @@ _.Zones =
 					},
 				}),
 				q(8955, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -211,6 +235,8 @@ _.Zones =
 					},
 				}),
 				q(8954, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -220,6 +246,8 @@ _.Zones =
 					},
 				}),
 				q(8952, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -229,6 +257,8 @@ _.Zones =
 					},
 				}),
 				q(8959, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -238,6 +268,8 @@ _.Zones =
 					},
 				}),
 				q(8956, {	-- Anthion's Parting Words
+					["u"] = 3,	-- Added in later phase
+					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon

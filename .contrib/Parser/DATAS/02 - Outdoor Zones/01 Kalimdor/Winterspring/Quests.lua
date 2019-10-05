@@ -21,6 +21,9 @@ _.Zones =
 					["lvl"] = 55,
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
+					["g"] = {
+						recipe(26011),	-- Tranquil Mechanical Yeti
+					},
 				}),
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["lvl"] = 52,
