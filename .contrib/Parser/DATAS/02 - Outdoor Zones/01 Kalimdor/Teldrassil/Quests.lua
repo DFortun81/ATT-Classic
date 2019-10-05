@@ -113,6 +113,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7916,	-- Erelas Ambersky
 					["maps"] = { THE_HINTERLANDS },
+					["coord"] = { 55.5, 92.1, TELDRASSIL },
 				}),
 				q(2940, {	-- Feralas: A History
 					["lvl"] = 42,
@@ -132,6 +133,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7916,	-- Erelas Ambersky
 					["maps"] = { WINTERSPRING },
+					["coord"] = { 55.5, 92.1, TELDRASSIL },
 				}),
 				q(6342, {	-- Flight to Auberdine
 					["lvl"] = 10,
@@ -178,6 +180,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7916,	-- Erelas Ambersky
 					["maps"] = { WINTERSPRING },
+					["coord"] = { 55.5, 92.1, TELDRASSIL },
 				}),
 				q(2499, {	-- Oakenscowl
 					["lvl"] = 4,
@@ -488,6 +491,7 @@ _.Zones =
 						i(16622),	-- Thornflinger
 						i(16623),	-- Opaline Medallion
 					},
+					["coord"] = { 55.5, 92.1, TELDRASSIL },
 				}),
 				q(488, {	-- Zenn's Bidding
 					["lvl"] = 4,
