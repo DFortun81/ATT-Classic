@@ -402,6 +402,8 @@ _.Zones =
 						i(15206),	-- Jadefinger Baton
 						i(15207),	-- Steelcap Shield
 					},
+					["coord"] = { 44.4, 76.4, DARKSHORE },
+					["description"] = "Make sure to pick up the Horn of Awakening from the chest next to Kerlonian Evershade.",
 				}),
 				q(965, {	-- The Tower of Althalaxx
 					["lvl"] = 13,

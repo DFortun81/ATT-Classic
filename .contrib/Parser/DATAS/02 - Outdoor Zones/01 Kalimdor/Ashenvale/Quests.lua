@@ -26,6 +26,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
+					["coord"] = { 26.4, 38.6, ASHENVALE },
 				}),
 				q(216, {	-- Between a Rock and a Thistlefur
 					["qg"] = 12757,	-- Karang Amakkar
@@ -146,6 +147,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 1010,	-- Bathran's Hair
+					["coord"] = { 26.4, 38.6, ASHENVALE },
 				}),
 				q(1134, {	-- Pridewings of Stonetalon
 					["lvl"] = 18,
@@ -309,6 +311,7 @@ _.Zones =
 						i(6721),	-- Chestplate of Kor
 					},
 					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
+					["coord"] = { 26.2, 38.9, ASHENVALE },
 				}),
 				q(1007, {	-- The Ancient Statuette
 					["lvl"] = 19,
@@ -377,6 +380,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
 					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3) (Darkshore)
+					["coord"] = { 26.2, 38.7, ASHENVALE },
 				}),
 				q(973, {	-- The Tower of Althalaxx (5)
 					["lvl"] = 13,
