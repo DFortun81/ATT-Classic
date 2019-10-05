@@ -4,7 +4,7 @@
 _.WorldDrops =
 {
 	filter(200, {	-- Recipes
-		["g"] = bubbleDown({["collectible"] = true}, {
+		["g"] = {
 			profession(171, {	-- Alchemy
 				i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
 				i(9297),	-- Recipe: Elixir of Dream Vision
@@ -39,6 +39,6 @@ _.WorldDrops =
 			profession(129, {	-- First Aid
 				i(6454),	-- Manual: Strong Anti-Venom
 			}),
-		}),
+		},
 	}),
 };
