@@ -423,6 +423,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["description"] = "Kill the Wrathtail naga along the shore around 12, 30.",
 				}),
 				q(6544, {	-- Torek's Assault
 					["qg"] = 12858,	-- Torek

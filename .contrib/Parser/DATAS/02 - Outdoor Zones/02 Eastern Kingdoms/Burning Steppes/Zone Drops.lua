@@ -12,6 +12,11 @@ _.Zones =
 						i(15774),	-- Pattern: Heavy Scorpid Shoulders
 					},
 				}),
+				n(7027, {	-- Blackrock Slayer
+					["groups"] = {
+						i(13476),	-- Recipe: Mighty Rage Potion
+					},
+				}),
 			}),
 		}),
 	}),
