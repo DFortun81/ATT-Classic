@@ -9,19 +9,19 @@ _.Zones =
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
 				q(1075, {	-- A Scroll from Mauren
 					["qg"] = 4077,	-- Gaxim Rustfizzle
-					-- ["coord"] = ,
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1072, {	-- An Old Colleague
 					["qg"] = 4077,	-- Gaxim Rustfizzle
-					-- ["coord"] = ,
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -83,7 +83,7 @@ _.Zones =
 						1074,	-- Ineptitude + Chemicals = Fun
 						1077,	-- Special Delivery for Gaxim
 					},
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["g"] = {
@@ -93,6 +93,7 @@ _.Zones =
 				}),
 				q(1080, {	-- Covert Ops - Beta
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["sourceQuests"] = {
 						1074,	-- Ineptitude + Chemicals = Fun
 						1077,	-- Special Delivery for Gaxim
@@ -222,7 +223,7 @@ _.Zones =
 						1079,	-- Covert Ops - Alpha
 						1080,	-- Covert Ops - Beta
 					},
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -250,6 +251,12 @@ _.Zones =
 						i(16985),	-- Windseeker Boots
 						i(16986),	-- Sandspire Gloves
 					},
+				}),
+				q(1085, {	-- On Guard in Stonetalon
+					["lvl"] = 17,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1070,	-- On Guard in Stonetalon(Ashenvale)
 				}),
 				q(1088, {	-- Ordanus
 					["qg"] = 4198,	-- Braelyn Firehand

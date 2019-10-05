@@ -53,6 +53,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
+					["sourceQuest"] = 1020,	-- Orendil's Cure
 				}),
 				q(1035, {	-- Fallen Sky Lake
 					["lvl"] = 20,
@@ -63,11 +64,13 @@ _.Zones =
 						i(6722),	-- Beastial Manacles
 						i(17047),	-- Luminescent Amice
 					},
+					["sourceQuest"] = 1034,	-- The Ruins of Stardust
 				}),
 				q(1011, {	-- Forsaken Diseases
 					["lvl"] = 24,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3848,	-- Kayneth Stillwind
+					["sourceQuest"] = 4581,	-- Kayneth Stillwind
 				}),
 				q(6482, {	-- Freedom to Ruul
 					["qg"] = 12818,	-- Ruul Snowhoof
@@ -82,6 +85,7 @@ _.Zones =
 					["g"] = {
 						i(5813),	-- Emil's Brand
 					},
+					["sourceQuest"] = 1011,	-- Forsaken Diseases
 				}),
 				q(824, {	-- Je'neu of the Earthen Ring
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -114,13 +118,16 @@ _.Zones =
 						i(17005),	-- Boorguard Tunic
 						i(17006),	-- Cobalt Legguards
 					},
+					["sourceQuest"] = 216,	-- Between a Rock and a Thistlefur
 				}),
 				q(1017, {	-- Mage Summoner
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3885,	-- Sentinel Velene Starstrike
 					["g"] = {
 						i(5816),	-- Light of Elune
 					},
+					["sourceQuest"] = 1016,	-- Elemental Bracers
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
@@ -128,25 +135,23 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
-				q(1085, {	-- On Guard in Stonetalon
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4080,	-- Kaela Shadowspear
-				}),
 				q(1070, {	-- On Guard in Stonetalon
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4079,	-- Sentinel Thenysil
+					["isBreadcrumb"] = true,
 				}),
 				q(1020, {	-- Orendil's Cure
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
+					["sourceQuest"] = 1010,	-- Bathran's Hair
 				}),
 				q(1134, {	-- Pridewings of Stonetalon
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
+					["sourceQuest"] = 1008,	-- The Zoram Strand
 				}),
 				q(991, {	-- Raene's Cleansing (1)
 					["lvl"] = 18,
@@ -234,6 +239,7 @@ _.Zones =
 					["g"] = {
 						i(5812),	-- Robes of Antiquity
 					},
+					["sourceQuest"] = 1007,	-- The Ancient Statuette
 				}),
 				q(6441, {	-- Satyr Horns
 					["qg"] = 12724,	-- Pixel
@@ -245,6 +251,7 @@ _.Zones =
 					["lvl"] = 26,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3901,	-- Illiyana
+					["sourceQuest"] = 1031,	-- The Branch of Cenarius
 				}),
 				q(7865, {	-- Sentinel Advanced Care Package
 					["lvl"] = 45,
@@ -253,6 +260,7 @@ _.Zones =
 					["g"] = {
 						i(19152),	-- Sentinel Advanced Care Package
 					},
+					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(7863, {	-- Sentinel Basic Care Package
 					["lvl"] = 25,
@@ -261,6 +269,7 @@ _.Zones =
 					["g"] = {
 						i(19150),	-- Sentinel Basic Care Package
 					},
+					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(7864, {	-- Sentinel Standard Care Package
 					["lvl"] = 35,
@@ -269,18 +278,21 @@ _.Zones =
 					["g"] = {
 						i(19151),	-- Sentinel Standard Care Package
 					},
+					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(24, {	-- Shadumbra's Head
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
 					["cr"] = 12677,	-- Shadumbra
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 				}),
 				q(2, {	-- Sharptalon's Claw
 					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
 					["cr"] = 12676,	-- Sharptalon
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 				}),
 				q(25, {	-- Stonetalon Standstill
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -296,6 +308,7 @@ _.Zones =
 						i(5323),	-- Everglow Lantern
 						i(6721),	-- Chestplate of Kor
 					},
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
 				}),
 				q(1007, {	-- The Ancient Statuette
 					["lvl"] = 19,
@@ -317,10 +330,12 @@ _.Zones =
 				q(1031, {	-- The Branch of Cenarius
 					["lvl"] = 26,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3920,	-- Anilia
 					["g"] = {
 						i(5820),	-- Faerie Mantle
 						i(11229),	-- Brightscale Girdle
 					},
+					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
 				}),
 				q(1022, {	-- The Howling Vale
 					["lvl"] = 25,
@@ -355,14 +370,15 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
+					["sourceQuest"] = 1033,	-- Elune's Tear
 				}),
-				q(970, {	-- The Tower of Althalaxx
+				q(970, {	-- The Tower of Althalaxx (4)
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 967,	-- The Tower of Althalaxx
+					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3) (Darkshore)
 				}),
-				q(973, {	-- The Tower of Althalaxx
+				q(973, {	-- The Tower of Althalaxx (5)
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
@@ -370,19 +386,19 @@ _.Zones =
 						i(5622),	-- Clergy Ring
 						i(5613),	-- Staff of the Purifier
 					},
-					["sourceQuest"] = 970,	-- The Tower of Althalaxx
+					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4)
 				}),
-				q(1140, {	-- The Tower of Althalaxx
+				q(1140, {	-- The Tower of Althalaxx (6)
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 973,	-- The Tower of Althalaxx
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
 				}),
-				q(1167, {	-- The Tower of Althalaxx
+				q(1167, {	-- The Tower of Althalaxx (7)
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 1140,	-- The Tower of Althalaxx
+					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6)
 				}),
 				q(1008, {	-- The Zoram Strand
 					["lvl"] = 14,
@@ -410,6 +426,7 @@ _.Zones =
 					["cr"] = 12678,	-- Ursangous
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 				}),
 				q(1037, {	-- Velinde Starsong
 					["lvl"] = 25,
