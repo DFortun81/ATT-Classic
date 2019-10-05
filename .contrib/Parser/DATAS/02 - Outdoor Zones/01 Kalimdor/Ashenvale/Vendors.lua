@@ -16,6 +16,7 @@ _.Zones =
 						i(11039),	-- Formula: Enchant Cloak - Minor Agility
 						i(11101),	-- Formula: Enchant Bracer - Lesser Strength
 					},
+					["coord"] = { 35.1, 52.1, ASHENVALE },
 				}),
 				n(3956, {	-- Harklan Moongrove <Alchemy Supplies>
 					["groups"] = {
@@ -31,6 +32,8 @@ _.Zones =
 					["groups"] = {
 						i(5973),	-- Pattern: Barbaric Leggings
 					},
+					["coord"] = { 34.8, 49.8, ASHENVALE },
+					["description"] = "On the 2nd floor of the building.",
 				}),
 				n(3955, {	-- Shandrina <Trade Goods>
 					["groups"] = {

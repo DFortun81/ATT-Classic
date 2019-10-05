@@ -15,6 +15,7 @@ _.Zones =
 						i(1205),	-- Melon Juice
 					},
 					["sourceQuest"] = 1023, -- Raene's Cleansing (2)
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(6503, {	-- Ashenvale Outrunners
 					["qg"] = 12867,	-- Kuray'bin
@@ -41,6 +42,7 @@ _.Zones =
 					["g"] = {
 						i(1970),	-- Restoring Balm
 					},
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(1016, {	-- Elemental Bracers
 					["lvl"] = 20,
@@ -104,11 +106,13 @@ _.Zones =
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
+					["coord"] = { 35.8, 49.1, ASHENVALE },
 				}),
 				q(4581, {	-- Kayneth Stillwind
 					["lvl"] = 24,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
+					["coord"] = { 34.7, 48.9, ASHENVALE },
 				}),
 				q(6621, {	-- King of the Foulweald
 					["qg"] = 12757,	-- Karang Amakkar
@@ -141,6 +145,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4079,	-- Sentinel Thenysil
 					["isBreadcrumb"] = true,
+					["coord"] = { 34.9, 49.8, ASHENVALE },
 				}),
 				q(1020, {	-- Orendil's Cure
 					["lvl"] = 20,
@@ -154,11 +159,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["sourceQuest"] = 1008,	-- The Zoram Strand
+					["coord"] = { 34.7, 48.9, ASHENVALE },
 				}),
 				q(991, {	-- Raene's Cleansing (1)
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(1023, {	-- Raene's Cleansing (2)
 					["lvl"] = 18,
@@ -171,6 +178,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(1026, {	-- Raene's Cleansing (4)
 					["lvl"] = 18,
@@ -213,6 +221,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1029,	-- Raene's Cleansing (8)
+					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(1045, {	-- Raene's Cleansing (10)
 					["lvl"] = 18,
@@ -254,6 +263,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3901,	-- Illiyana
 					["sourceQuest"] = 1031,	-- The Branch of Cenarius
+					["coord"] = { 21.7, 53.4, ASHENVALE },
 				}),
 				q(7865, {	-- Sentinel Advanced Care Package
 					["lvl"] = 45,
@@ -344,6 +354,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
+					["coord"] = { 22.2, 53.0, ASHENVALE },
 				}),
 				q(247, {	-- The Hunt Completed
 					["qg"] = 12696,	-- Senani Thunderheart
@@ -408,6 +419,7 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
+					["coord"] = { 34.7, 48.9, ASHENVALE },
 				}),
 				q(6544, {	-- Torek's Assault
 					["qg"] = 12858,	-- Torek
@@ -437,11 +449,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["sourceQuest"] = 1022,	-- The Howling Vale
+					["coord"] = { 22.2, 53.0, ASHENVALE },
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
 					["lvl"] = 26,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3901,	-- Illiyana
+					["coord"] = { 21.7, 53.4, ASHENVALE },
 				}),
 				q(6641, {	-- Vorsha the Lasher
 					["qg"] = 12717,	-- Muglash

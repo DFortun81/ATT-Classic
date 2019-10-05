@@ -171,6 +171,7 @@ _.Zones =
 						i(5609),	-- Steadfast Cinch
 					},
 					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
+					["coord"] = { 45.0, 85.4, DARKSHORE },
 				}),
 				q(995, {	-- Escape Through Stealth
 					["lvl"] = 10,
@@ -183,6 +184,7 @@ _.Zones =
 						i(6659),	-- Scarab Trousers
 					},
 					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
+					["coord"] = { 45.0, 85.4, DARKSHORE },
 				}),
 				q(963, {	-- For Love Eternal
 					["lvl"] = 11,
@@ -208,6 +210,7 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6667,	-- Gelkak Gyromast
+					["coord"] = { 56.7, 13.5, DARKSHORE },
 				}),
 				q(2078, {	-- Gyromast's Revenge
 					["lvl"] = 14,
@@ -216,6 +219,7 @@ _.Zones =
 					["g"] = {
 						i(5996),	-- Elixir of Water Breathing
 					},
+					["coord"] = { 56.7, 13.5, DARKSHORE },
 				}),
 				q(985, {	-- How Big a Threat?
 					["lvl"] = 10,
@@ -454,6 +458,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3584,	-- Therylune
+					["coord"] = { 38.6, 87.3, DARKSHORE },
 				}),
 				q(4761, {	-- Thundris Windweaver
 					["lvl"] = 11,
@@ -474,6 +479,7 @@ _.Zones =
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3694,	-- Sentinel Selarin
+					["coord"] = { 39.3, 43.5, DARKSHORE },
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
 					["lvl"] = 15,
