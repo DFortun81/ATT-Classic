@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10878,	-- Herald Moonstalker
+					["description"] = "Quest giver walks around Darnassus on the main path.",
 				}),
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
@@ -105,6 +106,8 @@ _.Zones =
 					["g"] = {
 						i(6710),	-- Pattern: Moonglow Vest
 					},
+					["coord"] = { 64.4, 22.2, DARNASSUS },
+					["description"] = "Quest giver is on the 2nd floor of the building.",
 				}),
 				q(3781, {	-- Morrowgrain Research
 					["lvl"] = 47,
@@ -220,6 +223,7 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10878,	-- Herald Moonstalker
+					["description"] = "Quest giver walks around Darnassus on the main path.",
 				}),
 				q(6761, {	-- The New Frontier
 					["lvl"] = 54,

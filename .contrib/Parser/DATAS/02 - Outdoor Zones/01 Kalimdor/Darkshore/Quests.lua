@@ -57,6 +57,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 175227,	-- Beached Sea Creature
+					["coord"] = { 32.7, 80.9, DARKSHORE },
 				}),
 				q(4728, {	-- Beached Sea Creature
 					["lvl"] = 12,
@@ -68,6 +69,7 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 175230,	-- Beached Sea Creature
+					["coord"] = { 31.2, 87.4, DARKSHORE },
 				}),
 				q(4723, {	-- Beached Sea Creature
 					["lvl"] = 11,
@@ -79,6 +81,7 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176198,	-- Beached Sea Turtle
+					["coord"] = { 31.7, 83.7, DARKSHORE },
 				}),
 				q(4727, {	-- Beached Sea Turtle
 					["lvl"] = 12,
@@ -96,6 +99,7 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 176191,	-- Beached Sea Turtle
+					["coord"] = { 31.2, 85.6, DARKSHORE },
 				}),
 				q(4722, {	-- Beached Sea Turtle
 					["lvl"] = 11,
@@ -315,6 +319,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2917,	-- Prospector Remtravel
 					["sourceQuest"] = 729, -- The Absent Minded Prospector
+					["coord"] = { 35.7, 83.7, DARKSHORE },
 				}),
 				q(741, {	-- The Absent Minded Prospector
 					["lvl"] = 15,

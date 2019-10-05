@@ -91,6 +91,14 @@ _.Zones =
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
 				}),
+				q(2259, { -- Erion Shadewhisper
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 3599,	-- Jannok Breezesong
+					["coord"] = { 56.4, 60.1, TELDRASSIL },
+					["description"] = "In Darnassus, enter the base of the tree at 32.7, 16.3 to turn in the quest.",
+				}),
 				q(3117, {	-- Etched Sigil
 					["lvl"] = 1,
 					["classes"] = { 3 },	-- Hunter
@@ -261,6 +269,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 3599,	-- Jannok Breezesong
+					["coord"] = { 56.4, 60.1, TELDRASSIL },
 				}),
 				q(456, {	-- The Balance of Nature
 					["races"] = ALLIANCE_ONLY,
