@@ -251,6 +251,7 @@ _.Zones =
 						i(5812),	-- Robes of Antiquity
 					},
 					["sourceQuest"] = 1007,	-- The Ancient Statuette
+					["coord"] = { 14.8, 31.3, ASHENVALE },
 				}),
 				q(6441, {	-- Satyr Horns
 					["qg"] = 12724,	-- Pixel
@@ -327,6 +328,7 @@ _.Zones =
 					["lvl"] = 19,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3846,	-- Talen
+					["coord"] = { 14.8, 31.3, ASHENVALE },
 				}),
 				q(6383, {	-- The Ashenvale Hunt
 					["qg"] = 12696,	-- Senani Thunderheart
@@ -392,6 +394,7 @@ _.Zones =
 					["qg"] = 3663,	-- Delgren the Purifier
 					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3) (Darkshore)
 					["coord"] = { 26.2, 38.7, ASHENVALE },
+					["description"] = "Kill the Dark Strand mobs near 32, 29.3 to get the Glowing Soul Gem.",
 				}),
 				q(973, {	-- The Tower of Althalaxx (5)
 					["lvl"] = 13,
