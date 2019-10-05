@@ -97,6 +97,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 6946,	-- Renzik "The Shiv"
+					["sourceQuests"] = {
+						2260,	-- Erion's Behest(Darnassus)
+						2298,	-- Kingly Shakedown(Ironforge)
+						2300,	-- SI:7(Elwynn Forest)
+					},
 				}),
 				q(2206, {	-- Snatch and Grab
 					["lvl"] = 10,

@@ -97,6 +97,8 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 3599,	-- Jannok Breezesong
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 2241,	-- The Apple Falls
 					["description"] = "In Darnassus, enter the base of the tree at 32.7, 16.3 to turn in the quest.",
 				}),
 				q(3117, {	-- Etched Sigil
@@ -270,6 +272,10 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 3599,	-- Jannok Breezesong
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
+					["altQuests"] = {
+						2205,	-- Seek out SI:7
+						2218,	-- Road to Salvation
+					},
 				}),
 				q(456, {	-- The Balance of Nature
 					["races"] = ALLIANCE_ONLY,

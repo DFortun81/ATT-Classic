@@ -163,6 +163,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 1234,	-- Hogral Bakkan
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						2205,	-- Seek out SI:7
+						2241,	-- The Apple Falls
+					},
 				}),
 				q(3364, {	-- Scalding Mornbrew Delivery
 					["lvl"] = 4,
@@ -288,6 +293,14 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1254,	-- Foreman Stonebrow
+				}),
+				q(2299, {	-- To Hulfdan!
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 1234,	-- Hogral Bakkan
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 2218,	-- Road to Salvation
 				}),
 				q(400, {	-- Tools for Steelgrill
 					["lvl"] = 2,

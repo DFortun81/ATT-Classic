@@ -82,6 +82,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
+					["isBreadcrumb"] = true,
 				}),
 				q(952, {	-- Grove of the Ancients
 					["lvl"] = 6,

@@ -306,6 +306,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 917,	-- Keryn Sylvius
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						2218,	-- Road to Salvation(Dun Morogh)
+						2241,	-- The Apple Falls
+					},
 				}),
 				q(61, {	-- Shipment to Stormwind
 					["lvl"] = 3,
@@ -324,6 +329,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 917,	-- Keryn Sylvius
 					["sourceQuest"] = 2205,	-- Seek out SI:7
+					["isBreadcrumb"] = true,
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["races"] = ALLIANCE_ONLY,

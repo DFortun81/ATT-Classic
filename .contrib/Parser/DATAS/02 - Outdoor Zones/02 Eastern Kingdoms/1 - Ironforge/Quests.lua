@@ -388,6 +388,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299, --	To Hulfdan!
+					["isBreadcrumb"] = true,
 				}),
 				{
 					["questID"] = 1880,	-- Mage-tastic Gizmonitor
