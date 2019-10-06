@@ -27,15 +27,13 @@ _.Zones =
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 6182,	-- The First and the Last
 				}),
-				{
-					["questID"] = 399,	-- Humble Beginnings
-					["qg"] = 1646,	-- Baros Alexston <City Architect>
+				q(399, { -- Humble Beginnings
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["coords"] = {
-							{ 36.0, 54.0, Westfall },
-					},
-				},
+					["qg"] = 1646,	-- Baros Alexston <City Architect>
+					["coord"] = { 49.1, 30.3, STORMWIND_CITY },
+					["description"] = "Daros Alexston is located in City Hall at 47.6, 31.4.",
+				});
 				q(1448, {	-- In Search of The Temple
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
@@ -112,6 +110,7 @@ _.Zones =
 					["qg"] = 1444,	-- Brother Kristoff
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 45.7, 38.3, STORMWIND_CITY },
 				},
 				q(353, {	-- Stormpike's Delivery
 					["qg"] = 1416,	-- Grimand Elmore
