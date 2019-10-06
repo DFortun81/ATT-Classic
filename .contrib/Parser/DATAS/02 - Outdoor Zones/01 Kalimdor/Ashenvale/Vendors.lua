@@ -10,6 +10,7 @@ _.Zones =
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
+					["coord"] = { 50.3, 67.2, ASHENVALE },
 				}),
 				n(3954, {	-- Dalria <Trade Goods>
 					["groups"] = {
@@ -22,6 +23,7 @@ _.Zones =
 					["groups"] = {
 						i(6054),	-- Recipe: Shadow Protection Potion
 					},
+					["coord"] = { 50.8, 67.0, ASHENVALE },
 				}),
 				n(6731, {	-- Harlown Darkweave <Leatherworking Supplies>
 					["groups"] = {
@@ -39,12 +41,14 @@ _.Zones =
 					["groups"] = {
 						i(16072),	-- Expert Cookbook
 					},
+					["coord"] = { 49.5, 67.1, ASHENVALE },
 				}),
 				n(3960, {	-- Ulthaan <Butcher>
 					["groups"] = {
 						i(3734),	-- Recipe: Big Bear Steak
 						i(5489),	-- Recipe: Lean Venison
 					},
+					["coord"] = { 50.0, 66.6, ASHENVALE },
 				}),
 				n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
 					["groups"] = {

@@ -51,6 +51,7 @@ _.Zones =
 					["g"] = {
 						i(12220),	-- Intact Elemental Bracer
 					},
+					["coord"] = { 49.8, 67.2, ASHENVALE },
 				}),
 				q(1033, {	-- Elune's Tear
 					["lvl"] = 20,
@@ -136,6 +137,7 @@ _.Zones =
 						i(5816),	-- Light of Elune
 					},
 					["sourceQuest"] = 1016,	-- Elemental Bracers
+					["coord"] = { 49.8, 67.2, ASHENVALE },
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
