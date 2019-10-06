@@ -53,6 +53,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 332,	-- Master Mathias Shaw
+					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
 				}),
 				{
 					["questID"] = 1861,	-- Mirror Lake
@@ -94,6 +95,7 @@ _.Zones =
 						2298,	-- Kingly Shakedown(Ironforge)
 						2300,	-- SI:7(Elwynn Forest)
 					},
+					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
 				}),
 				q(2206, {	-- Snatch and Grab
 					["lvl"] = 10,
