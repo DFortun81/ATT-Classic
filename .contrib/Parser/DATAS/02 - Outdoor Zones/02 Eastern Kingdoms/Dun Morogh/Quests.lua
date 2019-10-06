@@ -251,6 +251,7 @@ _.Zones =
 					["g"] = {
 						i(3151),	-- Siege Brigade Vest
 					},
+					["coord"] = { 83.8, 39.2, DUN_MOROGH },
 				}),
 				q(315, {	-- The Perfect Stout
 					["lvl"] = 5,
