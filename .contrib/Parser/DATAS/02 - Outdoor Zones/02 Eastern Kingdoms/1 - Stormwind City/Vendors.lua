@@ -18,6 +18,7 @@ _.Zones =
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore						
 					},
+					["coord"] = { 45.8, 58.5, STORMWIND_CITY },
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
 					["groups"] = {
@@ -46,6 +47,7 @@ _.Zones =
 						i(11306),	-- Sturdy Recurve
 						i(11307),	-- Massive Longbow
 					},
+					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					["groups"] = {						

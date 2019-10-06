@@ -110,9 +110,9 @@ _.Zones =
 				q(1076, {	-- Devils in Westfall
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(6481, {	-- Earthen Arise
 					["qg"] = 11861,	-- Mor'rogal
@@ -292,12 +292,12 @@ _.Zones =
 				}),
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["g"] = {
 						i(6677),	-- Spellcrafter Wand
 					},
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1068, {	-- Shredding Machines
 					["qg"] = 4049,	-- Seereth Stonebreak
@@ -309,9 +309,9 @@ _.Zones =
 				q(1077, {	-- Special Delivery for Gaxim
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1076,	-- Devils in Westfall
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1093, {	-- Super Reaper 6000
 					["qg"] = 4201,	-- Ziz Fizziks

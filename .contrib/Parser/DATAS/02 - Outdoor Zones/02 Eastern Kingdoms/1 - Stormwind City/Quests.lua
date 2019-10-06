@@ -20,6 +20,8 @@ _.Zones =
 				}),
 				q(333, {	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1427, -- Harlan Bagley
+					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
 				}),
 				q(6183, {	-- Honor the Dead
 					["lvl"] = 56,
@@ -81,9 +83,10 @@ _.Zones =
 					},
 				}),
 				q(334, {	-- Package for Thurman
+				["races"] = ALLIANCE_ONLY,
 					["qg"] = 1428,	-- Rema Schneider
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
 				}),
 				q(2281, {	-- Redridge Rendezvous
 					["lvl"] = 16,
@@ -177,6 +180,11 @@ _.Zones =
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1432, -- Renato Gallina
+					["g"] = {
+						i(2723),	-- Bottle of Dalaran Noir
+					},
+					["coord"] = { 57.0, 63.4, STORMWIND_CITY },
 				}),
 			}),
 		}),
