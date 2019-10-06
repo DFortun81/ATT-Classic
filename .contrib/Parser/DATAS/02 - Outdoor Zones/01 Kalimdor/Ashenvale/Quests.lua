@@ -191,6 +191,7 @@ _.Zones =
 						i(5475),	-- Wooden Key
 					},
 					["sourceQuest"] = 1024,	-- Raene's Cleansing (3)
+					["coord"] = { 53.5, 46.3, ASHENVALE },
 				}),
 				q(1027, {	-- Raene's Cleansing (5)
 					["lvl"] = 18,
@@ -392,6 +393,7 @@ _.Zones =
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1033,	-- Elune's Tear
 					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["description"] = "Pick up the Handful of Stardust on the island in the lake at 34, 66.7.",
 				}),
 				q(970, {	-- The Tower of Althalaxx (4)
 					["lvl"] = 13,
