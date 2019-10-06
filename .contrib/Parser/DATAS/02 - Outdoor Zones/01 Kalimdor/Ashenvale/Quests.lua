@@ -58,6 +58,7 @@ _.Zones =
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1020,	-- Orendil's Cure
 					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["description"] = "Take the path at 43.5, 45.6 up to the lake.",
 				}),
 				q(1035, {	-- Fallen Sky Lake
 					["lvl"] = 20,
