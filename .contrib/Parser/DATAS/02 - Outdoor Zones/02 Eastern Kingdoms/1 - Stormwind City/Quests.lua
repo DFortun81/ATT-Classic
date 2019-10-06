@@ -83,7 +83,7 @@ _.Zones =
 					},
 				}),
 				q(334, {	-- Package for Thurman
-				["races"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1428,	-- Rema Schneider
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
