@@ -341,6 +341,24 @@ _.Zones =
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
+				q(1073, {	-- Ineptitude + Chemicals = Fun
+					["qg"] = 4081,	-- Lomac Gearstrip
+					["sourceQuest"] = 1072,	-- An Old Colleague
+					["cost"] = {
+						{ "i", 2455, 4 },	-- Minor Mana Potion
+						{ "i", 2458, 2 },	-- Elixir of Minor Fortitude
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+					["coord"] = { 71.9, 51.9, IRONFORGE },
+				}),
+				q(1074, {	-- Ineptitude + Chemicals = Fun
+					["qg"] = 4081,	-- Lomac Gearstrip
+					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
+					["coord"] = { 71.9, 51.9, IRONFORGE },
+				}),
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
