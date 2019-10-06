@@ -58,6 +58,7 @@ _.Zones =
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2093,	-- Einar Stonegrip
+					["coord"] = { 49.8, 39.4, WETLANDS },
 				}),
 				q(474, {	-- Defeat Nek'rosh
 					["lvl"] = 23,
@@ -99,6 +100,7 @@ _.Zones =
 					["g"] = {
 						i(4606),	-- Spongy Morel
 					},
+					["coord"] = { 56.3, 40.5, WETLANDS },
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
 					["lvl"] = 21,

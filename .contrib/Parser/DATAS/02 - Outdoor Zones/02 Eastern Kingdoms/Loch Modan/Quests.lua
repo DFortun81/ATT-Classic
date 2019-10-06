@@ -146,6 +146,8 @@ _.Zones =
 						i(3161),	-- Robe of the Keeper
 						i(3160),	-- Ironplate Buckler
 					},
+					["coord"] = { 24.7, 18.3, LOCH_MODAN },
+					["description"] = "Enter the building at 23.3, 17.9 and go up the stairs to access Mountaineer Stormpike.",
 				}),
 				q(738, {	-- Find Agmond
 					["qg"] = 1344,	-- Prospector Ironband
@@ -299,11 +301,14 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1343,	-- Mountaineer Stormpike
+					["coord"] = { 24.7, 18.3, LOCH_MODAN },
+					["description"] = "Enter the building at 23.3, 17.9 and go up the stairs to access Mountaineer Stormpike.",
 				}),
 				q(455, {	-- The Algaz Gauntlet
 					["lvl"] = 19,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1342,	-- Mountaineer Rockgar
+					["coord"] = { 25.5, 10.5, LOCH_MODAN },
 				}),
 				q(267, {	-- The Trogg Threat
 					["lvl"] = 10,
