@@ -329,6 +329,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3846,	-- Talen
 					["coord"] = { 14.8, 31.3, ASHENVALE },
+					["description"] = "The Ancient Statuette is located on the beach at 14.2, 20.6.",
 				}),
 				q(6383, {	-- The Ashenvale Hunt
 					["qg"] = 12696,	-- Senani Thunderheart
