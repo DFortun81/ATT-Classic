@@ -22,6 +22,7 @@ _.Zones =
 						i(4817),	-- Blessed Claymore	
 						i(4818),	-- Executioner's Sword
 					},
+					["coord"] = { 29.1, 47.4, REDRIDGE_MOUNTAINS },
 				}),
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 					["groups"] = {	
@@ -48,12 +49,16 @@ _.Zones =
 						i(4782),	-- Solstice Robe
 						i(4786),	-- Wise Man's Belt
 					},
+					["coord"] = { 27.2, 45.4, REDRIDGE_MOUNTAINS },
+					["description"] = "Franklin Hamar is located on the 2nd floor of the Lakeshire Inn.",
 				}),
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
 					},
+					["coord"] = { 26.7, 43.6, REDRIDGE_MOUNTAINS },
+					["description"] = "Gloria Femmel is located on the first floor of the Lakeshire Inn.",
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
 					["groups"] = {

@@ -175,6 +175,8 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 266,	-- Wiley the Black
+					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
+					["description"] = "Wiley the Black is located on the 2nd floor of the Lakeshire Inn.",
 				}),
 				q(155, {	-- The Defias Brotherhood
 					["lvl"] = 14,
