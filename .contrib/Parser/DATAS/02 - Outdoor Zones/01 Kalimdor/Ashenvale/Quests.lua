@@ -57,6 +57,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1020,	-- Orendil's Cure
+					["coord"] = { 37.3, 51.8, ASHENVALE },
 				}),
 				q(1035, {	-- Fallen Sky Lake
 					["lvl"] = 20,
@@ -68,6 +69,7 @@ _.Zones =
 						i(17047),	-- Luminescent Amice
 					},
 					["sourceQuest"] = 1034,	-- The Ruins of Stardust
+					["coord"] = { 37.3, 51.8, ASHENVALE },
 				}),
 				q(1011, {	-- Forsaken Diseases
 					["lvl"] = 24,
@@ -388,6 +390,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1033,	-- Elune's Tear
+					["coord"] = { 37.3, 51.8, ASHENVALE },
 				}),
 				q(970, {	-- The Tower of Althalaxx (4)
 					["lvl"] = 13,
