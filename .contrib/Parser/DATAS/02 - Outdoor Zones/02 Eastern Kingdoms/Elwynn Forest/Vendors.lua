@@ -34,6 +34,7 @@ _.Zones =
 					["groups"] = {
 						i(11303),	-- Fine Shortbow
 					},
+					["coord"] = { 83.3, 66.1, ELWYNN_FOREST },
 				}),
 				n(66, {	-- Tharynn Bouden <Trade Supplies>
 					["groups"] = {

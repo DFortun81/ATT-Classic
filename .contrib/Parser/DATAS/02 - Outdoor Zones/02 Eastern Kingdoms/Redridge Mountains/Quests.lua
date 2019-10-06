@@ -20,6 +20,8 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 313,	-- Theocritus
+					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
+					["description"] = "This quests starts in Elwynn Forest. Go to the top of the tower located at 64.3, 68.9.",
 				}),
 				q(2282, {	-- Alther's Mill
 					["lvl"] = 16,

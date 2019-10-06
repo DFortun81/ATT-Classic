@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10616,	-- Supervisor Raelen
+					["coord"] = { 81.4, 66.2, ELWYNN_FOREST },
 				}),
 				q(40, {	-- A Fishy Peril
 					["lvl"] = 7,
@@ -105,6 +106,7 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 514,	-- Smith Argus
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 				}),
 				q(3102, {	-- Encrypted Letter
 					["lvl"] = 1,
@@ -124,6 +126,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 40,	-- A Fishy Peril
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(16, {	-- Give Gerard a Drink
 					["races"] = ALLIANCE_ONLY,
@@ -141,6 +144,7 @@ _.Zones =
 					["g"] = {
 						i(1191),	-- Bag of Marbles
 					},
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 				}),
 				q(87, {	-- Goldtooth
 					["lvl"] = 5,
@@ -199,6 +203,7 @@ _.Zones =
 						i(1360),	-- Stormwind Chain Gloves
 						i(1183),	-- Elastic Wristguards
 					},
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(3903, {	-- Milly Osworth
 					["lvl"] = 2,
@@ -248,6 +253,7 @@ _.Zones =
 						i(2575),	-- Red Linen Shirt
 						i(983),	-- Red Linen Sash
 					},
+					["coord"] = { 79.5, 68.7, ELWYNN_FOREST },
 				}),
 				q(54, {	-- Report to Goldshire
 					["races"] = ALLIANCE_ONLY,
@@ -311,6 +317,8 @@ _.Zones =
 						2218,	-- Road to Salvation(Dun Morogh)
 						2241,	-- The Apple Falls
 					},
+					["coord"] = { 43.9, 65.9, ELWYNN_FOREST },
+					["description"] = "Keryn Sylvius is located on the 2nd floor of the Lion's Pride Inn.",
 				}),
 				q(61, {	-- Shipment to Stormwind
 					["lvl"] = 3,
@@ -346,7 +354,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 252,	-- Tommy Joe Stonefield
 				}),
-				{
+				q(1860, { -- Speak with Jennea
 					["questID"] = 1860,	-- Speak with Jennea
 					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["lvl"] = 10,
@@ -355,7 +363,9 @@ _.Zones =
 						1879,	-- Speak with Bink
 					},
 					["classes"] = {8},	-- Mage
-				},
+					["coord"] = { 43.3, 66.2, ELWYNN_FOREST },
+					["description"] = "Zaldimar Wefhellt is located on the 2nd floor of the Lion's Pride Inn.",
+				}),
 				q(123, {	-- The Collector
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite
@@ -375,12 +385,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 54,	-- Report to Goldshire
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(76, {	-- The Jasperlode Mine
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,
@@ -423,6 +435,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 76,	-- The Jasperlode Mine
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(33, {	-- Wolves Across the Border
 					["races"] = ALLIANCE_ONLY,
