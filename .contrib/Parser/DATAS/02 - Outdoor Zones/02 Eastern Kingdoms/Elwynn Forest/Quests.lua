@@ -413,6 +413,8 @@ _.Zones =
 						i(6084),	-- Stormwind Guard Leggings
 						i(6215),	-- Balanced Fighting Stick
 					},
+					["coord"] = { 24.6, 78.2, ELWYNN_FOREST },
+					["description"] = "Click on the Wanted Poster to accept this quest.",
 				}),
 				q(7961, {	-- Waskily Wabbits!
 					["u"] = 1,

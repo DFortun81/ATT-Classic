@@ -12,6 +12,7 @@ _.Zones =
 						1,	-- Human
 					},
 					["lvl"] = 10,
+					["coord"] = { 56.9, 47.2, WESTFALL },
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure
 					["lvl"] = 10,
@@ -67,6 +68,7 @@ _.Zones =
 						i(724),	-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie
 					},
+					["coord"] = { 56.4, 30.6, WESTFALL },
 				}),
 				q(103, {	-- Keeper of the Flame
 					["lvl"] = 10,
@@ -96,6 +98,7 @@ _.Zones =
 						i(1154),	-- Belt of the People's Militia
 						i(710),	-- Bracers of the People's Militia
 					},
+					["coord"] = { 56.4, 47.6, WESTFALL },
 				}),
 				q(151, {	-- Poor Old Blanchy
 					["lvl"] = 9,
@@ -105,6 +108,7 @@ _.Zones =
 						i(2165),	-- Old Blanchy's Blanket
 						i(1537),	-- Old Blanchy's Feed Pouch
 					},
+					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
 				q(153, {	-- Red Leather Bandanas
 					["lvl"] = 10,
@@ -115,6 +119,7 @@ _.Zones =
 						i(5944),	-- Greaves of the People's Militia
 						i(12295),	-- Leggings of the People's Militia
 					},
+					["coord"] = { 54.0, 53.0, WESTFALL },
 				}),
 				q(6285, {	-- Return to Lewis
 					["lvl"] = 10,
@@ -170,6 +175,7 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(132, {	-- The Defias Brotherhood
 					["lvl"] = 14,
@@ -182,16 +188,19 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 467,	-- The Defias Traitor
+					["coord"] = { 55.6, 47.5, WESTFALL },
 				}),
 				q(65, {	-- The Defias Brotherhood
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(142, {	-- The Defias Brotherhood
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(64, {	-- The Forgotten Heirloom
 					["lvl"] = 9,
@@ -201,6 +210,7 @@ _.Zones =
 						i(4541),	-- Freshly Baked Bread
 						i(1179),	-- Ice Cold Milk
 					},
+					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
 				q(9, {	-- The Killing Fields
 					["lvl"] = 8,
@@ -210,16 +220,19 @@ _.Zones =
 						i(3578),	-- Harvester's Pants
 						i(1561),	-- Harvester's Robe
 					},
+					["coord"] = { 56.0, 31.2, WESTFALL },
 				}),
 				q(13, {	-- The People's Militia
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(12, {	-- The People's Militia
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(14, {	-- The People's Militia
 					["qg"] = 234,	-- Gryan Stoutmantle
@@ -230,6 +243,7 @@ _.Zones =
 						i(1480),	-- Fist of the People's Militia
 						i(12296),	-- Spark of the People's Militia
 					},
+					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(117, {	-- Thunderbrew
 					["qg"] = 239,	-- Grimbooze Thunderbrew
@@ -243,6 +257,7 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 238,	-- Verna Furlbrow
+					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
 				q(38, {	-- Westfall Stew
 					["lvl"] = 9,
@@ -254,6 +269,7 @@ _.Zones =
 						i(728),	-- Recipe: Westfall Stew
 						i(2225),	-- Sharp Kitchen Knife
 					},
+					["coord"] = { 56.4, 30.6, WESTFALL },
 				}),
 			}),
 		}),
