@@ -109,14 +109,6 @@ _.Zones =
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
 				}),
-				q(5124, {	-- Fiery Plate Gauntlets
-					["lvl"] = 55,
-					["requireSkill"] = 164,	-- Blacksmithing
-					["g"] = {
-						i(12699),	-- Plans: Fiery Plate Gauntlets
-						i(12631),	-- Fiery Plate Gauntlets
-					},
-				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
@@ -329,16 +321,6 @@ _.Zones =
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5123,	-- The Final Piece
-				}),
-				q(5161, {	-- Wrath of the Blue Flight
-					["lvl"] = 57,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 5160,	-- The Matron Protectorate
-				}),
-				q(5162, {	-- Wrath of the Blue Flight
-					["lvl"] = 57,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 5161,	-- Wrath of the Blue Flight
 				}),
 			}),
 		}),

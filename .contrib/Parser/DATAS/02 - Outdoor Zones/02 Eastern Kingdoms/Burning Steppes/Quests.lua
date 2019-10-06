@@ -87,15 +87,6 @@ _.Zones =
 						i(11868),	-- Choking Band
 					},
 				}),
-				q(4701, {	-- Put Her Down
-					["lvl"] = 56 ,
-					["qg"] = 9562,	-- Helendis Riverhorn
-					["g"] = {
-						i(15824),	-- Astoria Robes
-						i(15825),	-- Traphook Jerkin
-						i(15827),	-- Jadescale Breastplate
-					},
-				}),
 				q(4296, {	-- Tablet of the Seven
 					["lvl"] = 50,
 					["qg"] = 9536,	-- Maxwort Uberglint

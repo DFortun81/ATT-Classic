@@ -96,11 +96,28 @@ _.Instances = {
 						{ "i", 12735, 10 },	-- Frayed Abomination Stitching
 						{ "i", 12360, 5 },	-- Arcanite Bar
 						{ "i", 12753, 5 },	-- Skin of Shadow
-						{ "g", 500000 },	-- 50 Gold
+						{ "groups", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
 						i(12757), 	-- Breastplate of Bloodthirst
+					},
+				},
+				{
+					["questID"] = 5166,	-- Breastplate of the Chromatic Flight
+					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
+					["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
+					["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
+					["maps"] = { STRATHOLME, EASTERN_PLAGUELANDS, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12871, 1 },	-- Chromatic Carapace
+						{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
+						{ "i", 12735, 10 },	-- Frayed Abomination Stitching
+						{ "i", 12938, 10 },	-- Blood of Heroes
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						i(12895),	-- Breastplate of the Chromatic Flight
 					},
 				},
 				{
@@ -114,11 +131,32 @@ _.Instances = {
 						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
 						{ "i", 12363, 8 },	-- Arcanite Crystal
 						{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
-						{ "g", 500000 },	-- 50 Gold
+						{ "groups", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
 						i(12752), 	-- Cap of the Scarlet Savant
+					},
+				},
+				{
+					["questID"] = 5164,	-- Catalogue of the Wayward
+					["sourceQuest"] = 5162,	-- Wrath of the Blue Flight
+					["qg"] = 10976,	-- Jeziba
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 8181,	-- Confront Yeh'kinya
+					["sourceQuest"] = 4788,	-- The Final Tablets
+					["qg"] = 10460,	-- Prospector Ironboot
+					["coord"] = { 66.8, 24.0, TANARIS },
+					["maps"] = { TANARIS },
+					["u"] = 3,	-- Added in later phase
+					["lvl"] = 40,
+					["groups"] = {
+						i(20218),	-- Faded Hakkari Cloak
+						i(20219),	-- Tattered Hakkari Cape
 					},
 				},
 				{
@@ -141,7 +179,6 @@ _.Instances = {
 					["questID"] = 4764,	-- Doomrigger's Clasp
 					["sourceQuest"] = 4766,	-- Mayara Brightwing
 					["qg"] = 9565,	-- Mayara Brightwing
-					["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
 					["coord"] = { 84.8, 69, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
@@ -227,9 +264,28 @@ _.Instances = {
 					},
 				},
 				{
+					["questID"] = 5124,	-- Fiery Plate Gauntlets
+					["sourceQuest"] = 5103,	-- Hot Fiery Death
+					["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
+					["requireSkill"] = 164,	-- Blacksmithing
+					["coord"] = { 61.0, 38.8, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["cost"] = {
+						{ "i", 12812, 1 },	-- Unfired Plate Gauntlets
+						{ "i", 12655, 6 },	-- Enchanted Thorium Bar
+						{ "i", 7078, 2 },	-- Essence of Fire
+						{ "i", 7910, 4 },	-- Star Ruby
+					},
+					["lvl"] = 55,
+					["groups"] = {
+						i(12699),	-- Plans: Fiery Plate Gauntlets
+						i(12631),	-- Fiery Plate Gauntlets
+					},
+				},
+				{
 					["questID"] = 5047,	-- Finkle Einhorn, At Your Service!
 					["qg"] = 10776,	-- Finkle Einhorn
-					["description"] = "Kill The Beast in UBRS. Using your Finkle's Skinner (which can drop from this boss) or another Skinner, skin the boss and Finkle Einhorn will appear.",
+					["description"] = "Kill The Beast in UBRS. Using Finkle's Skinner and a 300 Skill Skinner, skin the boss and Finkle Einhorn will appear. Everyone in the raid can pick up this quest at that time.",
 					["cost"] = {
 						{ "i", 12710, 1 },	-- Glowing Hunk of the Beast's Flesh
 					},
@@ -255,48 +311,52 @@ _.Instances = {
 				{
 					["questID"] = 5103,	-- Hot Fiery Death
 					["provider"] = { "o", 176090 },	-- Human Remains
+					["description"] = "At the bottom floor of the instance near the lava.",
 					["requireSkill"] = 164,	-- Blacksmithing
-					["isBreadcrumb"] = true,
-				},
-				{
-					["questID"] = 4729,	--  Kibler's Exotic Pets
+					["lvl"] = 55,
 					["groups"] = {
-						i(12264),	-- Worg Carrier (PET!)
+						{
+							["itemID"] = 12812,	-- Unfired Plate Gauntlets
+							["questID"] = 5124,	-- Fiery Plate Gauntlets
+						},
 					},
 				},
-				q(6102, {	-- General Drakkisath's Demise
+				{
+					["questID"] = 5089,	-- General Drakkisath's Command
+					["provider"] = { "i", 12780 },	-- General Drakkisath's Command
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5102,	-- General Drakkisath's Demise
+					["sourceQuest"] = 5089,	-- General Drakkisath's Command
+					["qg"] = 9560,	-- Marshal Maxwell
+					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						10363,	-- General Drakkisath
+					},
+					["lvl"] = 55,
 					["groups"] = {
 						i(13965),	-- Blackhand's Breadth
 						i(13968),	-- Eye of the Beast
 						i(13966),	-- Mark of Tyranny
 					},
-				}),
-				q(27445, { 	-- General Drakkisath, Hand of Nefarian
-					["groups"] = {
-						i(66001), 	-- Aeyla's Staff
-						i(65934), 	-- Staff of the Second Orb
-						i(65982), 	-- Sword of Nefarian's Hand
-						i(65958), 	-- Vaelan's Claw
-					},
-				}),
-				q(5167, { 	-- Legplates of the Chromatic Defier
+				},
+				{
+					["questID"] = 4729,	--  Kibler's Exotic Pets
+					["qg"] = 10260,	-- Kibler
+					["coord"] = { 65.8, 22.0, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
-						{ "i", 12871, 1 },	-- Chromatic Carapace
+						{ "i", 12263, 1 },	-- Caged Worg Pup
 					},
+					["lvl"] = 55,
 					["groups"] = {
-						i(12903), 	-- Legguards of the Chromatic Defier
-						i(12945),	-- Legplates of the Chromatic Defier
+						i(12264),	-- Worg Carrier (PET!)
 					},
-				}),
-				q(5166, { 	-- Breastplate of the Chromatic Flight
-					["cost"] = {
-						{ "i", 12871, 1 },	-- Chromatic Carapace
-					},
-					["groups"] = {
-						i(12895), 	-- Breastplate of the Chromatic Flight
-					},
-				}),
+				},
 				{
 					["questID"] = 5067,	-- Leggings of Arcana
 					["sourceQuest"] = 5047,	-- Finkle Einhorn, At Your Service!
@@ -308,12 +368,38 @@ _.Instances = {
 						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
 						{ "i", 12360, 5 },	-- Arcanite Bar
 						{ "i", 12736, 5 },	-- Frostwhisper's Embalming Fluid
-						{ "g", 500000 },	-- 50 Gold
+						{ "groups", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
 						i(12756),	-- Leggings of Arcana
 					},
+				},
+				{
+					["questID"] = 5167,	-- Legplates of the Chromatic Defier
+					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
+					["provider"] = { "o", 176192 },	-- Catalogue of the Wayward
+					["coord"] = { 39.4, 66.7, WESTERN_PLAGUELANDS },
+					["maps"] = { SCHOLOMANCE, STRATHOLME, EASTERN_PLAGUELANDS, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12871, 1 },	-- Chromatic Carapace
+						{ "i", 12607, 10 },	-- Brilliant Chromatic Scale
+						{ "i", 12938, 10 },	-- Blood of Heroes
+						{ "i", 12753, 5 },	-- Skin of Shadow
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						i(12903), 	-- Legguards of the Chromatic Defier
+						i(12945),	-- Legplates of the Chromatic Defier
+					},
+				},
+				{
+					["questID"] = 5126,	-- Lorax's Tale
+					["qg"] = 10918,	-- Lorax
+					["coord"] = { 63.8, 73.8, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 55,
 				},
 				{
 					["questID"] = 5081,	-- Maxwell's Mission
@@ -343,6 +429,9 @@ _.Instances = {
 				{
 					["questID"] = 4766,	-- Mayara Brightwing
 					["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
+					["altQuests"] = {
+						4764,	-- Doomrigger's Clasp [NOT SURE, but this quest constantly resets to Not Complete on Blizzard's Side.]
+					},
 					["coord"] = { 74, 30, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -364,11 +453,20 @@ _.Instances = {
 						},
 					},
 				},
-				q(4866, {	-- Mother's Milk
+				{
+					["questID"] = 4866,	-- Mother's Milk
+					["qg"] = 9563,	-- Ragged John
+					["description"] = "You need to setup a coordinated group ONLY for this. If the healer or ANYONE removes the poison, you have to reset and try again.\n\nBefore the group starts, set your hearth to Stormwind or have a mage for a quick port to Stormwind after the group has gotten their bites.",
+					["coord"] = { 65, 23.6, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["crs"] = {
+						10596,	-- Mother Smolderweb
+					},
+					["lvl"] = 55,
 					["groups"] = {
 						i(15873),	-- Ragged John's Neverending Cup
 					},
-				}),
+				},
 				{
 					["questID"] = 6569,	-- Oculus Illusions
 					["sourceQuest"] = 6568,	-- The Testament of Rexxar
@@ -389,16 +487,67 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				},
-				q(8996, {	-- Return to Bodley
-					["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
-					["lvl"] = 58,
-					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
-				}),
-				q(4743, {	-- Seal of Ascension
-					["groups"] = {
-						i(12344),	-- Seal of Ascension
+				{
+					["questID"] = 4701,	-- Put Her Down
+					["qg"] = 9562,	-- Helendis Riverhorn
+					["coord"] = { 85.6, 69, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["crs"] = {
+						10220,	 -- Halycon
 					},
-				}),
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						i(15824),	-- Astoria Robes
+						i(15827),	-- Jadescale Breastplate
+						i(15825),	-- Traphook Jerkin
+					},
+				},
+				{
+					["questID"] = 4742,	-- Seal of Ascension (1/2)
+					["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
+					["description"] = "Pickup this quest by going up to the hidden ledge in LBRS and speaking to the Infiltrator.",
+					["cost"] = {
+						{ "i", 12336, 1 },	-- Gemstone of Spirestone
+						{ "i", 12335, 1 },	-- Gemstone of Smolderthorn
+						{ "i", 12337, 1 },	-- Gemstone of Bloodaxe
+						{ "i", 12219, 1 },	-- Unadorned Seal of Ascension
+					},
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 4743,	-- Seal of Ascension (2/2)
+					["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
+					["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
+					["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
+					["crs"] = {
+						10321,	-- Emberstrife
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						{
+							["itemID"] = 12339,	-- Vaelan's Gift
+							["questID"] = 4743,	-- Seal of Ascension (2/2)
+							["groups"] = {
+								{
+									["itemID"] = 12323,	-- Unforged Seal of Ascension
+									["questID"] = 4743,	-- Seal of Ascension (2/2)
+									["description"] = "Use this once the dragon reaches 10-20% health.",
+								},
+								{
+									["itemID"] = 12300,	-- Orb of Draconic Energy
+									["questID"] = 4743,	-- Seal of Ascension (2/2)
+									["description"] = "Use this once the dragon reaches 10% health. Instruct your party NOT to kill Emberstrife",
+								},
+							},
+						},
+						{
+							["itemID"] = 12344,	-- Seal of Ascension
+							["questID"] = 4743,	-- Seal of Ascension (2/2)
+							["description"] = "This item must be in your bags to open the door to UBRS.",
+						},
+					},
+				},
 				{
 					["questID"] = 6567,	-- The Champion of the Horde
 					["sourceQuest"] = 6566,	-- What the Wind Carries
@@ -408,12 +557,100 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				},
-				q(4768, {	-- The Darkstone Tablet
+				{
+					["questID"] = 4768,	-- The Darkstone Tablet
+					["sourceQuest"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
+					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
+					["coord"] = { 3, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["cost"] = {
+						{ "i", 12358, 1 },	-- Darkstone Tablet
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 57,
 					["groups"] = {
 						i(15860),	-- Blinkstrike Armguards
 						i(15861),	-- Swiftfoot Treads
 					},
-				}),
+				},
+				{
+					["questID"] = 5127,	-- The Demon Forge
+					["sourceQuest"] = 5126,	-- Lorax's Tale
+					["qg"] = 10918,	-- Lorax
+					["coord"] = { 63.8, 73.8, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["cost"] = {
+						{ "i", 12847, 1 },	-- Soul Stained Pike
+						{ "i", 12806, 1 },	-- Unforged Rune Covered Breastplate
+					},
+					["requireSkill"] = 164,	-- Blacksmithing
+					["lvl"] = 55,
+					["groups"] = {
+						i(12696),	-- Plans: Demon Forged Breastplate
+						i(9224),	-- Elixir of Demonslaying
+					},
+				},
+				{
+					["questID"] = 4788,	-- The Final Tablets
+					["sourceQuest"] = 5065,	-- The Lost Tablets of Mosh'aru
+					["qg"] = 10460,	-- Prospector Ironboot
+					["coord"] = { 66.8, 24.0, TANARIS },
+					["maps"] = { TANARIS },
+					["cost"] = {
+						{ "i", 12740, 1 },	-- Fifth Mosh'aru Tablet
+						{ "i", 12741, 1 },	-- Sixth Mosh'aru Tablet
+					},
+					["lvl"] = 40,
+				},
+				{
+					["questID"] = 5065,	-- The Lost Tablets of Mosh'aru
+					["sourceQuest"] = 3528,	-- The God Hakkar
+					["qg"] = 10460,	-- Prospector Ironboot
+					["coord"] = { 66.8, 24.0, TANARIS },
+					["maps"] = { EASTERN_PLAGUELANDS, TANARIS },
+					["cost"] = {
+						{ "i", 12411, 1 },	-- Third Mosh'aru Tablet
+						{ "i", 12412, 1 },	-- Fourth Mosh'aru Tablet
+					},
+					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 12411,	-- Third Mosh'aru Tablet
+							["questID"] = 5065,	-- The Lost Tablets of Mosh'aru
+							["coord"] = { 72.4, 13, EASTERN_PLAGUELANDS },
+						},
+						{
+							["itemID"] = 12412,	-- Fourth Mosh'aru Tablet
+							["questID"] = 5065,	-- The Lost Tablets of Mosh'aru
+							["coord"] = { 72.7, 15.7, EASTERN_PLAGUELANDS },
+						},
+					},
+				},
+				{
+					["questID"] = 5160,	-- The Matron Protectorate
+					["qg"] = 10740,	-- Awbee
+					["description"] = "Speak with Awbee in UBRS to accept this quest. Most tanks pull the group of mobs near Awbee, but if they skip it and you need it, you should mention it to them.",
+					["cost"] = {
+						{ "i", 12923, 1 },	-- Awbee's Scale
+					},
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 4724,	-- The Pack Mistress
+					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
+					["coord"] = { 5.8, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["crs"] = {
+						10220,	 -- Halycon
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						i(15824),	-- Astoria Robes
+						i(15827),	-- Jadescale Breastplate
+						i(15825),	-- Traphook Jerkin
+					},
+				},
 				{
 					["questID"] = 6585,	-- The Test of Skulls, Axtroz
 					["sourceQuests"] = {
@@ -528,7 +765,13 @@ _.Instances = {
 					["maps"] = { WINTERSPRING },
 					["lvl"] = 57,
 				},
-				q(4867, { 	-- Urok Doomhowl
+				{
+					["questID"] = 4867,	-- Urok Doomhowl
+					["qg"] = 10799,	-- Warosh <The Cursed>
+					["cost"] = {
+						{ "i", 12712, 1 },	-- Warosh's Mojo
+					},
+					["lvl"] = 55,
 					["groups"] = {
 						{
 							["itemID"] = 12730,	-- Warosh's Scroll
@@ -536,7 +779,15 @@ _.Instances = {
 						},
 						i(15867),	-- Prismcharm
 					},
-				}),
+				},
+				{
+					["questID"] = 4769,	-- Vivian Lagrave and the Darkstone Tablet
+					["qg"] = 5204,	-- Apothecary Zinge <Royal Apothecary Society>
+					["coord"] = { 49.8, 68.2, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 57,
+				},
 				{
 					["questID"] = 4903,	-- Warlord's Command
 					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
@@ -570,6 +821,22 @@ _.Instances = {
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5161,	-- Wrath of the Blue Flight (1/2)
+					["sourceQuest"] = 5160,	-- The Matron Protectorate
+					["qg"] = 10929,	-- Haleh
+					["coord"] = { 54.4, 51.2, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 5162,	-- Wrath of the Blue Flight (2/2)
+					["sourceQuest"] = 5161,	-- Wrath of the Blue Flight (1/2)
+					["qg"] = 10929,	-- Haleh
+					["coord"] = { 54.4, 51.2, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["lvl"] = 57,
 				},
 			}),
 			n(0, {	-- Zone Drop
@@ -891,6 +1158,18 @@ _.Instances = {
 					n(10264, { 	-- Solakar Flamewreath
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 						["groups"] = {
+							{
+								["itemID"] = 12358, -- Darkstone Tablet
+								["questID"] = 4768,	-- The Darkstone Tablet
+								["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
+								["races"] = HORDE_ONLY,
+							},
+							{
+								["itemID"] = 12352, -- Doomrigger's Clasp
+								["questID"] = 4764,	-- Doomrigger's Clasp
+								["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
+								["races"] = ALLIANCE_ONLY,
+							},
 							i(18657),	-- Schematic: Hyper-Radiant Flame Reflector
 							i(16695), 	-- Devout Mantle
 							i(12603),	-- Nightbrace Tunic
@@ -922,6 +1201,23 @@ _.Instances = {
 									},
 								},
 							},
+						},
+						{
+							["itemID"] = 12848,	-- Blood Stained Pike
+							["questID"] = 5127,	-- The Demon Forge
+							["requireSkill"] = 164,	-- Blacksmithing
+							["groups"] = {
+								{
+									["itemID"] = 12847,	-- Soul Stained Pike
+									["questID"] = 5127,	-- The Demon Forge
+								},
+							},
+						},
+						{
+							["itemID"] = 12848,	-- Unforged Rune Covered Breastplate
+							["questID"] = 5127,	-- The Demon Forge
+							["requireSkill"] = 164,	-- Blacksmithing
+							["description"] = "Found on the rack behind Anvilcrack in UBRS.",
 						},
 						i(12834),	-- Plans: Arcanite Champion
 						i(12728),	-- Plans: Invulnerable Mail

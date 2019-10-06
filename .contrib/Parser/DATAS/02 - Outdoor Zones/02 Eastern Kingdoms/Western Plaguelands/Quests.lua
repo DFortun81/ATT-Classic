@@ -109,23 +109,10 @@ _.Zones =
 				q(5021, {	-- Better Late Than Never
 					["lvl"] = 50,
 				}),
-				q(5166, {	-- Breastplate of the Chromatic Flight
-					["lvl"] = 57,
-					--["objectID"] = 176192,	-- Catalogue of the Wayward
-					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
-					["g"] = {
-						i(12895),	-- Breastplate of the Chromatic Flight
-					},
-				}),
 				q(5210, {	-- Brother Carlin
 					["lvl"] = 50,
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
-				}),
-				q(5164, {	-- Catalogue of the Wayward
-					["lvl"] = 57,
-					["qg"] = 10976,	-- Jeziba
-					["sourceQuest"] = 5162,	-- Wrath of the Blue Flight
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
@@ -225,14 +212,6 @@ _.Zones =
 					["qg"] = 10840,	-- Argent Officer Pureheart
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
-					},
-				}),
-				q(5167, {	-- Legplates of the Chromatic Defier
-					["lvl"] = 57,
-					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
-					["g"] = {
-						i(12903),	-- Legguards of the Chromatic Defier
-						i(12945),	-- Legplates of the Chromatic Defier
 					},
 				}),
 				q(5059, {	-- Locked Away

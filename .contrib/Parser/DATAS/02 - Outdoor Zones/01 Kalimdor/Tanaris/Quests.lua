@@ -72,15 +72,6 @@ _.Zones =
 				q(4508, {	-- Calm Before the Storm
 					["lvl"] = 50,
 				}),
-				q(8181, {	-- Confront Yeh'kinya
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(20218),	-- Faded Hakkari Cloak
-						i(20219),	-- Tattered Hakkari Cape
-					},
-				}),
 				q(8606, {	-- Decoy!
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
@@ -327,10 +318,6 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(5065, {	-- The Lost Tablets of Mosh'aru
-					["lvl"] = 40,
-					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(8742, {	-- The Might of Kalimdor
 					["u"] = 3,	-- Added in later phase
