@@ -160,6 +160,8 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["sourceQuest"] = 2607, -- The Touch of Zanzil
+					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
+					["description"] = "Doc Mixilpixil is located in the basement of the SI:7 building.",
 				}),
 				q(2609, {	-- The Touch of Zanzil
 					["lvl"] = 20,
@@ -170,7 +172,8 @@ _.Zones =
 					["g"] = {
 						i(8432),	-- Eau de Mixilpixil
 					},
-					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town.\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park.",
+					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town (64.4, 60.8).\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park (39.9, 46.3).",
+					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
 				}),
 				q(1449, {	-- To The Hinterlands
 					["lvl"] = 38,
