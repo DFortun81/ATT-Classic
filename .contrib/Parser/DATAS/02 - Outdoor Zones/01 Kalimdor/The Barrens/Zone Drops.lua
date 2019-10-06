@@ -9,6 +9,9 @@ _.Zones =
 				i(6663, {	-- Recipe: Elixir of Giant Growth
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
+				i(6661, {	-- Recipe: Savory Deviate Delight
+					["description"] = "Can drop from any mob in the Barrens.",
+				}),
 			}),
 		}),
 	}),

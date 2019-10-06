@@ -51,7 +51,8 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Greater Dreamless Sleep Potion",
-				["recipeID"] = 24366
+				["recipeID"] = 24366,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Greater Fire Protection Potion",

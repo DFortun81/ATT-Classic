@@ -14,6 +14,11 @@ _.Zones =
 						i(16054),	-- Schematic: Arcanite Dragonling
 					},
 				}),
+				n(7428, {	-- Frostmaul Giant
+					["g"] = {
+						i(13495),	-- Recipe: Greater Frost Protection Potion
+					},
+				}),
 			}),
 		}),
 	}),

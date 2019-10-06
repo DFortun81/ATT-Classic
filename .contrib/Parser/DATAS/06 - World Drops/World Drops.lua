@@ -14,8 +14,11 @@ _.WorldDrops =
 				i(2553),	-- Recipe: Elixir of Minor Agility
 				i(6211),	-- Recipe: Elixir of Ogre's Strength
 				i(3394),	-- Recipe: Elixir of Poison Resistance
+				i(13493),	-- Recipe: Greater Arcane Elixir
+				i(13490),	-- Recipe: Greater Stoneshield Potion
 				i(3395),	-- Recipe: Limited Invulnerability Potion
 				i(3831),	-- Recipe: Mighty Troll's Blood Potion
+				i(13492),	-- Recipe: Purification Potion
 				i(2555),	-- Recipe: Swiftness Potion
 				i(9293),	-- Recipe: Magic Resistance Potion
 				i(3393),	-- Recipe: Minor Magic Resistance Potion

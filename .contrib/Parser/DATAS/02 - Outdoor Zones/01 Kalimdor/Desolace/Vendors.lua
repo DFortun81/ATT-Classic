@@ -14,8 +14,8 @@ _.Zones =
 				}),
 				n(8150, {	-- Janet Hommers <Food & Drink>
 					["groups"] = {
-						i(12233),	-- Recipe: Mystery Stew
 						i(12240),	-- Recipe: Heavy Kodo Stew
+						i(12233),	-- Recipe: Mystery Stew
 					},
 				}),
 				n(9636, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
@@ -30,13 +30,23 @@ _.Zones =
 						i(10858),	-- Plans: Solid Iron Maul
 					},
 				}),
+				n(12246, {	-- Super-Seller 680
+					["groups"] = {
+						i(4609),	-- Recipe: Barbecued Buzzard Wing
+						i(3734),	-- Recipe: Big Bear Steak
+						i(12239),	-- Recipe: Dragonbreath Chili
+						i(12229),	-- Recipe: Hot Wolf Ribs
+						i(12227),	-- Recipe: Lean Wolf Steak
+						i(12233),	-- Recipe: Mystery Stew
+					},
+				}),
 				n(12033, {	-- Wulan <Cooking Supplies>
 					["groups"] = {
-						i(6369),	-- Recipe: Rockscale Cod
 						i(16072),	-- Expert Cookbook
 						i(17062),	-- Recipe: Mithril Head Trout
-						i(21099),	-- Recipe: Smoked Sagefish
+						i(6369),	-- Recipe: Rockscale Cod
 						i(21219),	-- Recipe: Sagefish Delight
+						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
 			}),	

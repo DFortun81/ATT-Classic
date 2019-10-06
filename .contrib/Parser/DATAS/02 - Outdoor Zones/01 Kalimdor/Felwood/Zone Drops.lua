@@ -4,16 +4,11 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(AZSHARA, {
+		m(FELWOOD, {
 			n(0, {	-- Zone Drops
-				n(6201, {	-- Legashi Rogue
+				n(7106, {	-- Jadefire Rogue
 					["g"] = {
 						i(13491),	-- Recipe: Elixir of the Mongoose
-					},
-				}),
-				n(6195, {	-- Spitelash Siren
-					["g"] = {
-						i(16045),	-- Schematic: Spellpower Goggles Xtreme Plus
 					},
 				}),
 			}),

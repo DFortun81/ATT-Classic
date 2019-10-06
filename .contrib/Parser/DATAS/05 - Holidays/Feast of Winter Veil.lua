@@ -8,6 +8,10 @@ _.Holidays =
 			n(-297, {	-- Mailbox
 				i(17724),	-- Pattern: Green Holiday Shirt
 			}),
+			n(-2, {	-- Vendors
+				i(17201),	-- Recipe: Egg Nog
+				i(17200),	-- Recipe: Gingerbread Cookie
+			}),
 			i(17726, {	-- Smokywood Pastures Special Gift
 				i(17725),	-- Formula: Enchant Weapon - Winter's Might
 				i(17722),	-- Pattern: Gloves of the Greatfather
