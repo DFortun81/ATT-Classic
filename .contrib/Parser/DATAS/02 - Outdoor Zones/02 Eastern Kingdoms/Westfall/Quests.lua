@@ -89,6 +89,7 @@ _.Zones =
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea
 					},
+					["coord"] = { 68.5, 70.2, WESTFALL },
 				}),
 				q(102, {	-- Patrolling Westfall
 					["lvl"] = 8,
