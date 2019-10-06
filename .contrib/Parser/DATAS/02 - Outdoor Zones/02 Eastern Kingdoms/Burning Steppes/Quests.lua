@@ -36,11 +36,6 @@ _.Zones =
 						i(11869),	-- Sha'ni's Ring
 					},
 				}),
-				q(5522, {	-- Leonid Barthalomew
-					["lvl"] = 57,
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 4735,	-- Egg Collection
-				}),
 				q(4481, {	-- Libram of Constitution
 					["lvl"] = 50,
 					["repeatable"] = true,

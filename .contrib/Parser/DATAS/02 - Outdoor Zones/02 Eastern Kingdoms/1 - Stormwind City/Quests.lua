@@ -56,12 +56,6 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 332,	-- Master Mathias Shaw
 				}),
-				q(4766, {	-- Mayara Brightwing
-					["lvl"] = 57,
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["qg"] = 2285,	-- Count Remington Ridgewell
-				}),
 				{
 					["questID"] = 1861,	-- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>

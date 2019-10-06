@@ -279,10 +279,6 @@ _.Zones =
 						i(11872),	-- Eschewal Greaves
 					},
 				}),
-				q(4941, {	-- Eitrigg's Wisdom
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
@@ -457,10 +453,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
 				}),
-				q(6567, {	-- The Champion of the Horde
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
 				q(7926, {	-- The Darkmoon Faire
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
@@ -519,10 +511,6 @@ _.Zones =
 				}),
 				q(7490, {	-- Victory for the Horde
 					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
-				}),
-				q(6566, {	-- What the Wind Carries
-					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 				}),
 			}),

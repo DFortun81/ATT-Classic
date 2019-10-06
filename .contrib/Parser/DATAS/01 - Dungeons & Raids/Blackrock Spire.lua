@@ -2,53 +2,262 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = {
-	map(250, {	-- Blackrock Spire
+	map(BLACKROCK_SPIRE, {	-- Blackrock Spire
 		["description"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
 		["lvl"] = 50,
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(27440, {	-- Trolls, Ogres, and Orcs, Oh My!
-					i(65933),	-- Highlord's Chestpiece
-					i(65957),	-- Overlord's Legplates
-					i(65981),	-- War Master's Pauldrons
-				}),
-				{	-- Human Remains
-					["objectID"] = 176090,	-- Human Remains
-					["g"] = {
-						{	-- Hot Fiery Death
-							["questID"] = 5103,	-- Hot Fiery Death
-							["requireSkill"] = 164,	-- Blacksmithing
-							["isBreadcrumb"] = true,
+				{
+					["questID"] = 6601,	-- Ascension...
+					["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
+					["qg"] = 10321,	-- Emberstrife
+					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 16888, 1 },	-- Dull Drakefire Amulet
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5001,	-- Bijou's Belongings (A)
+					["qg"] = 10257,	-- Bijou
+					["cost"] = {
+						{ "i", 12345, 1 },	-- Bijou's Belongings
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 4982,	-- Bijou's Belongings (H)
+					["sourceQuest"] = 4981,	-- Operative Bijou
+					["qg"] = 10257,	-- Bijou
+					["cost"] = {
+						{ "i", 12345, 1 },	-- Bijou's Belongings
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 4983,	-- Bijou's Reconnaissance Report
+					["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
+					["qg"] = 10257,	-- Bijou
+					["cost"] = {
+						{ "i", 12652, 1 },	-- Bijou's Reconnaissance Report
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 12652,	-- Bijou's Reconnaissance Report
+							["questID"] = 4983,	-- Bijou's Reconnaissance Report
+						},
+						i(15858),	-- Freewind Gloves
+						i(15859),	-- Seapost Girdle
+					},
+				},
+				{
+					["questID"] = 6602,	-- Blood of the Black Dragon Champion
+					["sourceQuest"] = 6601,	-- Ascension...
+					["qg"] = 10182,	-- Rexxar <Champion of the Horde>
+					["coords"] = {
+						{ 54.0, 3.2, DESOLACE },
+						{ 62.8, 22.6, DESOLACE },
+						{ 59.8, 37.6, DESOLACE },
+						{ 52.0, 39.4, DESOLACE },
+						{ 49.6, 56.4, DESOLACE },
+						{ 55.6, 66.6, DESOLACE },
+						{ 50.6, 75.2, DESOLACE },
+						{ 40.8, 78.6, DESOLACE },
+						{ 42.4, 96.8, DESOLACE },
+					},
+					["maps"] = { DESOLACE },
+					["cost"] = {
+						{ "i", 16663, 1 },	-- Blood of the Black Dragon Champion
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16309,	-- Drakefire Amulet 
+							["allianceQuestID"] = 6502,	-- Drakefire Amulet
+							["hordeQuestID"] = 6602,	-- Blood of the Black Dragon Champion
 						},
 					},
 				},
-				q(6602, {	-- Blood of the Black Dragon Champion
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(16309),	-- Drakefire Amulet
+				{
+					["questID"] = 5068,	-- Breastplate of Bloodthirst
+					["sourceQuest"] = 5047,	-- Finkle Einhorn, At Your Service!
+					["qg"] = 10637,	-- Malyfous Darkhammer
+					["coord"] = { 61, 38.8, WINTERSPRING },
+					["maps"] = { SCHOLOMANCE, STRATHOLME, WINTERSPRING },
+					["cost"] = {
+						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
+						{ "i", 12735, 10 },	-- Frayed Abomination Stitching
+						{ "i", 12360, 5 },	-- Arcanite Bar
+						{ "i", 12753, 5 },	-- Skin of Shadow
+						{ "g", 50 },	-- 50 Gold
 					},
-				}),
-				q(4765, {	-- Delivery to Ridgewell
+					["lvl"] = 57,
+					["groups"] = {
+						i(12757), 	-- Breastplate of Bloodthirst
+					},
+				},
+				{
+					["questID"] = 5063,	-- Cap of the Scarlet Savant
+					["sourceQuest"] = 5047,	-- Finkle Einhorn, At Your Service!
+					["qg"] = 10637,	-- Malyfous Darkhammer
+					["coord"] = { 61, 38.8, WINTERSPRING },
+					["maps"] = { STRATHOLME, WINTERSPRING },
+					["cost"] = {
+						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
+						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
+						{ "i", 12363, 8 },	-- Arcanite Crystal
+						{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
+						{ "g", 50 },	-- 50 Gold
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						i(12752), 	-- Cap of the Scarlet Savant
+					},
+				},
+				{
+					["questID"] = 4765,	-- Delivery to Ridgewell
+					["sourceQuest"] = 4764,	-- Doomrigger's Clasp
+					["qg"] = 9565,	-- Mayara Brightwing
+					["coord"] = { 84.8, 69, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 12437, 1 },	-- Ridgewell's Crate
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 57,
 					["groups"] = {
 						i(15860),	-- Blinkstrike Armguards
 						i(15861),	-- Swiftfoot Treads
 					},
-				}),
-				q(6502, {	-- Drakefire Amulet
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(16309),	-- Drakefire Amulet
+				},
+				{
+					["questID"] = 4764,	-- Doomrigger's Clasp
+					["sourceQuest"] = 4766,	-- Mayara Brightwing
+					["qg"] = 9565,	-- Mayara Brightwing
+					["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
+					["coord"] = { 84.8, 69, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 12352, 1 },	-- Doomrigger's Clasp
 					},
-				}),
-				q(4974, {	-- For The Horde!
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 4735,	-- Egg Collection
+					["sourceQuest"] = 4734,	-- Egg Freezing
+					["qg"] = 10267,	-- Tinkee Steamboil
+					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 12241, 8 },	-- Collected Dragon Egg
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						{
+							["itemID"] = 12287,	-- Collectronic Module
+							["questID"] = 4735,	-- Egg Collection
+						},
+					},
+				},
+				{
+					["questID"] = 4734,	-- Egg Freezing
+					["sourceQuest"] = 4907,	-- Tinkee Steamboil
+					["qg"] = 10267,	-- Tinkee Steamboil
+					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["lvl"] = 57,
+					["groups"] = {
+						{
+							["itemID"] = 12286,	-- Eggscilloscope Prototype
+							["questID"] = 4734,	-- Egg Freezing
+						},
+						{
+							["itemID"] = 12144,	-- Eggscilloscope
+							["questID"] = 4734,	-- Egg Freezing
+							["description"] = "You don't need to keep this, but it might be nice to have just in case someone doesn't quite grasp the 'don't touch the eggs' rule.",
+						},
+					},
+				},
+				{
+					["questID"] = 4941,	-- Eitrigg's Wisdom
+					["sourceQuest"] = 4903,	-- Warlord's Command
+					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
+					["coord"] = { 5.8, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 6570,	-- Emberstrife
+					["sourceQuest"] = 6569,	-- Oculus Illusions
+					["qg"] = 11872,	-- Myranda the Hag
+					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16787,	-- Amulet of Draconic Subversion
+							["questID"] = 6570,	-- Emberstrife
+						},
+					},
+				},
+				{
+					["questID"] = 4862,	-- En-Ay-Es-Tee-Why
+					["qg"] = 10260,	-- Kibler
+					["coord"] = { 65.8, 22.0, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 12530, 15 },	-- Spire Spider Egg
+					},
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 12529,	-- Smolderweb Carrier
+							["description"] = "One of the few companion pets available in Classic. Keep it in your bank!",
+						},
+					},
+				},
+				{
+					["questID"] = 5047,	-- Finkle Einhorn, At Your Service!
+					["qg"] = 10776,	-- Finkle Einhorn
+					["description"] = "Kill The Beast in UBRS. Using your Finkle's Skinner (which can drop from this boss) or another Skinner, skin the boss and Finkle Einhorn will appear.",
+					["cost"] = {
+						{ "i", 12710, 1 },	-- Glowing Hunk of the Beast's Flesh
+					},
+					["lvl"] = 57
+				},
+				{
+					["questID"] = 4974,	-- For The Horde!
+					["sourceQuest"] = 4941,	-- Eitrigg's Wisdom
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 12630, 1 },	-- Head of Rend Blackhand
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
 					["groups"] = {
 						i(13965),	-- Blackhand's Breadth
 						i(13968),	-- Eye of the Beast
 						i(13966),	-- Mark of Tyranny
 					},
-				}),
+				},
+				{
+					["questID"] = 5103,	-- Hot Fiery Death
+					["provider"] = { "o", 176090 },	-- Human Remains
+					["requireSkill"] = 164,	-- Blacksmithing
+					["isBreadcrumb"] = true,
+				},
 				{
 					["questID"] = 4729,	--  Kibler's Exotic Pets
 					["groups"] = {
@@ -88,46 +297,237 @@ _.Instances = {
 						i(12895), 	-- Breastplate of the Chromatic Flight
 					},
 				}),
-				q(5068, { 	-- Breastplate of Bloodthirst
+				{
+					["questID"] = 5067,	-- Leggings of Arcana
+					["sourceQuest"] = 5047,	-- Finkle Einhorn, At Your Service!
+					["qg"] = 10637,	-- Malyfous Darkhammer
+					["coord"] = { 61, 38.8, WINTERSPRING },
+					["maps"] = { SCHOLOMANCE, STRATHOLME, WINTERSPRING },
 					["cost"] = {
 						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
+						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
+						{ "i", 12360, 5 },	-- Arcanite Bar
+						{ "i", 12736, 5 },	-- Frostwhisper's Embalming Fluid
+						{ "g", 50 },	-- 50 Gold
 					},
-					["groups"] = {
-						i(12757), 	-- Breastplate of Bloodthirst
-					},
-				}),
-				q(5063, { 	-- Cap of the Scarlet Savant
-					["cost"] = {
-						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
-					},
-					["groups"] = {
-						i(12752), 	-- Cap of the Scarlet Savant
-					},
-				}),
-				q(5067,	{ 	-- Leggings of Arcana
-					["cost"] = {
-						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
-					},
+					["lvl"] = 57,
 					["groups"] = {
 						i(12756),	-- Leggings of Arcana
 					},
-				}),
+				},
+				{
+					["questID"] = 5081,	-- Maxwell's Mission
+					["sourceQuest"] = 5002,	-- Message to Maxwell
+					["qg"] = 9560,	-- Marshal Maxwell
+					["coord"] = { 84.6, 68.8, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["crs"] = {
+						9237,	-- War Master Voone
+						9196,	-- Highlord Omokk
+						9568,	-- Overlord Wyrmthalak
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 12770,	-- Bijou's Information
+							["questID"] = 5002,	-- Message to Maxwell
+						},
+						i(13961),	-- Halycon's Muzzle
+						i(13958),	-- Wyrmthalak's Shackles
+						i(13963),	-- Voone's Vice Grips
+						i(13959),	-- Omokk's Girth Restrainer
+						i(13962),	-- Vosh'gajin's Strand
+					},
+				},
+				{
+					["questID"] = 4766,	-- Mayara Brightwing
+					["qg"] = 2285,	-- Count Remington Ridgewell <House of Nobles>
+					["coord"] = { 74, 30, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 57,
+				},
+				{
+					["questID"] = 5002,	-- Message to Maxwell
+					["sourceQuest"] = 5001,	-- Bijou's Belongings (A)
+					["qg"] = 10257,	-- Bijou
+					["cost"] = {
+						{ "i", 12345, 1 },	-- Bijou's Belongings
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 12770,	-- Bijou's Information
+							["questID"] = 5002,	-- Message to Maxwell
+						},
+					},
+				},
 				q(4866, {	-- Mother's Milk
 					["groups"] = {
 						i(15873),	-- Ragged John's Neverending Cup
 					},
+				}),
+				{
+					["questID"] = 6569,	-- Oculus Illusions
+					["sourceQuest"] = 6568,	-- The Testament of Rexxar
+					["qg"] = 11872,	-- Myranda the Hag
+					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 16786, 20 },	-- Black Dragonspawn Eye
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 4981,	-- Operative Bijou
+					["qg"] = 9080,	-- Lexlort <Kargath Expeditionary Force>
+					["coord"] = { 5.8, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				q(8996, {	-- Return to Bodley
+					["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
+					["lvl"] = 58,
+					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
 				}),
 				q(4743, {	-- Seal of Ascension
 					["groups"] = {
 						i(12344),	-- Seal of Ascension
 					},
 				}),
+				{
+					["questID"] = 6567,	-- The Champion of the Horde
+					["sourceQuest"] = 6566,	-- What the Wind Carries
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
 				q(4768, {	-- The Darkstone Tablet
 					["groups"] = {
 						i(15860),	-- Blinkstrike Armguards
 						i(15861),	-- Swiftfoot Treads
 					},
 				}),
+				{
+					["questID"] = 6585,	-- The Test of Skulls, Axtroz
+					["sourceQuests"] = {
+						6584,	-- The Test of Skulls, Chronalis
+						6582,	-- The Test of Skulls, Scryer
+						6583,	-- The Test of Skulls, Somnus
+					},
+					["qg"] = 10321,	-- Emberstrife
+					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 16872, 1 },	-- The Skull of Axtroz
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16872,	-- The Skull of Axtroz
+							["questID"] = 6585,	-- The Test of Skulls, Axtroz
+							["coord"] = { 83.4, 49.6, WETLANDS },
+							["qg"] = 12899,	-- Axtroz
+						},
+					},
+				},
+				{
+					["questID"] = 6584,	-- The Test of Skulls, Chronalis
+					["sourceQuest"] = 6570,	-- Emberstrife
+					["qg"] = 10321,	-- Emberstrife
+					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 16871, 1 },	-- The Skull of Chronalis
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16871,	-- The Skull of Chronalis
+							["questID"] = 6584,	-- The Test of Skulls, Chronalis
+							["coord"] = { 64.4, 50.6, TANARIS },
+							["qg"] = 8197,	-- Chronalis
+						},
+					},
+				},
+				{
+					["questID"] = 6582,	-- The Test of Skulls, Scryer
+					["sourceQuest"] = 6570,	-- Emberstrife
+					["qg"] = 10321,	-- Emberstrife
+					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 16869, 1 },	-- The Skull of Scryer
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16869,	-- The Skull of Scryer
+							["questID"] = 6582,	-- The Test of Skulls, Scryer
+							["coord"] = { 53.6, 55.8, WINTERSPRING },
+							["qg"] = 10664,	-- Scryer
+						},
+					},
+				},
+				{
+					["questID"] = 6583,	-- The Test of Skulls, Somnus
+					["sourceQuest"] = 6570,	-- Emberstrife
+					["qg"] = 10321,	-- Emberstrife
+					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 16870, 1 },	-- The Skull of Somnus
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 16870,	-- The Skull of Somnus
+							["questID"] = 6583,	-- The Test of Skulls, Somnus
+							["coord"] = { 80.2, 57.2, SWAMP_OF_SORROWS },
+							["qg"] = 12900,	-- Somnus
+						},
+					},
+				},
+				{
+					["questID"] = 6568,	-- The Testament of Rexxar
+					["sourceQuest"] = 6567,	-- The Champion of the Horde
+					["qg"] = 10182,	-- Rexxar <Champion of the Horde>
+					["coords"] = {
+						{ 54.0, 3.2, DESOLACE },
+						{ 62.8, 22.6, DESOLACE },
+						{ 59.8, 37.6, DESOLACE },
+						{ 52.0, 39.4, DESOLACE },
+						{ 49.6, 56.4, DESOLACE },
+						{ 55.6, 66.6, DESOLACE },
+						{ 50.6, 75.2, DESOLACE },
+						{ 40.8, 78.6, DESOLACE },
+						{ 42.4, 96.8, DESOLACE },
+					},
+					["maps"] = { DESOLACE },
+					["cost"] = {
+						{ "i", 16785, 1 },	-- Rexxar's Testament
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
+				{
+					["questID"] = 4907,	-- Tinkee Steamboil
+					["sourceQuest"] = 4810,	-- Return to Tinkee
+					["qg"] = 10468,	-- Felnok Steelspring
+					["coord"] = { 61.6, 38.6, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["lvl"] = 57,
+				},
 				q(4867, { 	-- Urok Doomhowl
 					["groups"] = {
 						{
@@ -137,16 +537,50 @@ _.Instances = {
 						i(15867),	-- Prismcharm
 					},
 				}),
-				q(8996, {	-- Return to Bodley
-					["provider"] = { "n", 16073 },	-- Spirit of Lord Valthalak
-					["lvl"] = 58,
-					["sourceQuest"] = 8995,	-- Mea Culpa, Lord Valthalak
-				}),
+				{
+					["questID"] = 4903,	-- Warlord's Command
+					["qg"] = 9077,	-- Warlord Goretooth <Kargath Expeditionary Force>
+					["provider"] = { "i", 12563 },	-- Warlord Goretooth's Command
+					["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
+					["coord"] = { 5.8, 47.6, BADLANDS },
+					["maps"] = { BADLANDS },
+					["crs"] = {
+						9237,	-- War Master Voone
+						9196,	-- Highlord Omokk
+						9568,	-- Overlord Wyrmthalak
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						{
+							["itemID"] = 12562,	-- Important Blackrock Documents
+							["questID"] = 4903,	-- Warlord's Command
+						},
+						i(13961),	-- Halycon's Muzzle
+						i(13958),	-- Wyrmthalak's Shackles
+						i(13963),	-- Voone's Vice Grips
+						i(13959),	-- Omokk's Girth Restrainer
+						i(13962),	-- Vosh'gajin's Strand
+					},
+				},
+				{
+					["questID"] = 6566,	-- What the Wind Carries
+					["qg"] = 4949,	-- Thrall <Warchief>
+					["coord"] = { 32.0, 37.8, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+				},
 			}),
 			n(0, {	-- Zone Drop
 				{
 					["itemID"] = 22138,	-- Blackrock Bracer
 					["questID"] = 8994,	-- Final Preparations
+				},
+				{
+					["itemID"] = 16786,	-- Black Dragonspawn Eye
+					["questID"] = 6569,	-- Oculus Illusions
+					["races"] = HORDE_ONLY,
 				},
 				{
 					["itemID"] = 12219,	-- Unadorned Seal of Ascension

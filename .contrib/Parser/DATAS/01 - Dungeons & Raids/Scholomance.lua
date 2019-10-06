@@ -3,7 +3,7 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(476, { 	-- Scholomance
+	map(SCHOLOMANCE, { 	-- Scholomance
 		["description"] = "The Scholomance is housed within a series of crypts that lie beneath the ruined keep of Caer Darrow. Once owned by the noble Barov family, Caer Darrow fell to ruin following the Second War. As the wizard Kel'thuzad enlisted followers for his Cult of the Damned he would often promise immortality in exchange for serving his Lich King. The Barov family fell to Kel'thuzad's charismatic influence and donated the keep and its crypts to the Scourge. The cultists then killed the Barovs and turned the ancient crypts into a school for necromancy known as the Scholomance. Though Kel'thuzad no longer resides in the crypts, devoted cultists and instructors still remain. The powerful lich, Ras Frostwhisper, rules over the site and guards it in the Scourge's name - while the mortal necromancer, Darkmaster Gandling, serves as the school's insidious headmaster.",
 		["sourceQuests"] = {
 			5505,	-- The Key to Scholomance [Alliance]
@@ -199,6 +199,17 @@ _.Instances = {
 						10503,	-- Jandice Barov
 					},
 					["lvl"] = 55,
+				},
+				{
+					["questID"] = 5522,	-- Leonid Barthalomew
+					["sourceQuest"] = 4734,	-- Egg Freezing
+					["qg"] = 10267,	-- Tinkee Steamboil
+					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 13761, 1 },	-- Frozen Eggs
+					},
+					["lvl"] = 57,
 				},
 				{
 					["questID"] = 5463,	-- Menethil's Gift (1/2)
@@ -615,6 +626,11 @@ _.Instances = {
 				{
 					["itemID"] = 13626,	-- Human Head of Ras Frostwhisper
 					["questID"] = 5466,	-- The Lich, Ras Frostwhisper
+				},
+				{
+					["itemID"] = 12736,	-- Frostwhisper's Embalming Fluid
+					["questID"] = 5067,	-- Leggings of Arcana
+					["description"] = "Can be found inside the chemistry lab in Scholomance, check the vials.",
 				},
 				{
 					["itemID"] = 13471,	-- The Deed to Brill

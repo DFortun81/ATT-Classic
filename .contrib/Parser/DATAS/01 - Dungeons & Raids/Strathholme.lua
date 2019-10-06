@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = {
-	map(317, { 	-- Stratholme
+	map(STRATHOLME, { 	-- Stratholme
 		["description"] = "Once the jewel of northern Lordaeron, the city of Stratholme is where Prince Arthas turned against his mentor, Uther Lightbringer, and slaughtered hundreds of his own subjects who were believed to have contracted the dreaded plague of undeath. Arthas' downward spiral and ultimate surrender to the Lich King soon followed. The broken city is now inhabited by the undead Scourge -- led by the powerful lich, Kel'Thuzad. A contingent of Scarlet Crusaders, led by Grand Crusader Dathrohan, also holds a portion of the ravaged city. The two sides are locked in constant, violent combat. Those adventurers brave (or foolish) enough to enter Stratholme will be forced to contend with both factions before long. It is said that the city is guarded by three massive watchtowers, as well as powerful necromancers, banshees and abominations. There have also been reports of a malefic Death Knight riding atop an unholy steed, dispensing indiscriminate wrath on all those who venture within the realm of the Scourge.",
 		["lvl"] = 48,
 		["groups"] = {
@@ -318,6 +318,11 @@ _.Instances = {
 				{
 					["itemID"] = 13174,	-- Plagued Flesh Sample
 					["questID"] = 5212,	-- The Flesh Does Not Lie
+				},
+				{
+					["itemID"] = 12734,	-- Enchanted Scarlet Thread
+					["questID"] = 5063,	-- Cap of the Scarlet Savant
+					["description"] = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
 				},
 				{
 					["itemID"] = 12735,	-- Frayed Abomination Stitching

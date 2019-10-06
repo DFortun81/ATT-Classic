@@ -48,14 +48,6 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 8464,	-- Winterfall Activity
 				}),
-				q(5068, {	-- Breastplate of Bloodthirst
-					["lvl"] = 57,
-					["qg"] = 10637,	-- Malyfous Darkhammer
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12757),	-- Breastplate of Bloodthirst
-					},
-				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["lvl"] = 53,
 					["races"] = HORDE_ONLY,
@@ -69,14 +61,6 @@ _.Zones =
 					["sourceQuest"] = 969,	-- Luck Be With You
 					["g"] = {
 						i(12384),	-- Cache of Mau'ari
-					},
-				}),
-				q(5063, {	-- Cap of the Scarlet Savant
-					["lvl"] = 57,
-					["qg"] = 10637,	-- Malyfous Darkhammer
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12752),	-- Cap of the Scarlet Savant
 					},
 				}),
 				q(4804, {	-- Chillwind E'ko
@@ -184,13 +168,6 @@ _.Zones =
 					["repeatable"] = true,
 					["g"] = {
 						i(12459),	-- Juju Escape
-					},
-				}),
-				q(5067, {	-- Leggings of Arcana
-					["lvl"] = 57,
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12756),	-- Leggings of Arcana
 					},
 				}),
 				q(969, {	-- Luck Be With You
