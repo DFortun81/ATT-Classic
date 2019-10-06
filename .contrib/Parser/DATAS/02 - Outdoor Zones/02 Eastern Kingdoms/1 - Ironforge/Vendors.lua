@@ -24,6 +24,7 @@ _.Zones =
 						i(16042),	-- Schematic: Thorium Widget
 						i(18649),	-- Schematic: Blue Firework						
 					},
+					["coord"] = { 67.9, 42.6, IRONFORGE },
 				}),
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
 					["groups"] = {

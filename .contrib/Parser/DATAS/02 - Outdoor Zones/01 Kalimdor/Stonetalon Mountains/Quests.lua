@@ -191,7 +191,7 @@ _.Zones =
 				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun
 					["qg"] = 4081,	-- Lomac Gearstrip
-					--["coord"] = { },
+					--["coord"] = { 71.9, 51.9, IRONFORGE },
 					["sourceQuest"] = 1072,	-- An Old Colleague
 					["cost"] = {
 						{ "i", 2455, 4 },	-- Minor Mana Potion
@@ -202,7 +202,7 @@ _.Zones =
 				}),
 				q(1074, {	-- Ineptitude + Chemicals = Fun
 					["qg"] = 4081,	-- Lomac Gearstrip
-					--["coord"] = { },
+					--["coord"] = { 71.9, 51.9, IRONFORGE },
 					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,

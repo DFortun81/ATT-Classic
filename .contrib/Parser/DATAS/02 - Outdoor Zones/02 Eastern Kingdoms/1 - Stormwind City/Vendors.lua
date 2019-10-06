@@ -57,6 +57,7 @@ _.Zones =
 					["groups"] = {						
 						i(12162),	-- Plans: Hardened Iron Shortsword
 					},
+					["coord"] = { 56.3, 17.2, STORMWIND_CITY },
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
 					["groups"] = {

@@ -16,48 +16,56 @@ _.Zones =
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
+					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7804, {	-- A Donation of Mageweave
 					["qg"] = 14723,	-- Mistina Steelshield
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
+					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7811, {	-- A Donation of Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7805, {	-- A Donation of Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7808, {	-- A Donation of Silk
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
+					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7803, {	-- A Donation of Silk
 					["qg"] = 14723,	-- Mistina Steelshield
 					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
+					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7802, {	-- A Donation of Wool
 					["qg"] = 14723,	-- Mistina Steelshield
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
+					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7807, {	-- A Donation of Wool
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
+					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(2964, {	-- A Future Task
 					["lvl"] = 45,
@@ -88,6 +96,7 @@ _.Zones =
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9616,	-- Laris Geardawdle
+					["coord"] = { 75.6, 23.5, IRONFORGE },
 				}),
 				q(4513, {	-- A Little Slime Goes a Long Way
 					["lvl"] = 40,
@@ -97,6 +106,7 @@ _.Zones =
 						i(12050),	-- Hazecover Boots
 						i(12051),	-- Brazen Gauntlets
 					},
+					["coord"] = { 75.6, 23.5, IRONFORGE },
 				}),
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
@@ -105,6 +115,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
+					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7812, {	-- Additional Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
@@ -113,6 +124,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
+					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(8910, {	-- An Earnest Proposition
 					["u"] = 3,	-- Added in later phase
@@ -318,6 +330,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6569,	-- Gnoarn
+					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
 				q(6388, {	-- Gryth Thurden
 					["lvl"] = 10,
@@ -489,6 +502,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2695,	-- Sara Balloo
 					["sourceQuest"] = 637,	-- Sully Balloo's Letter
+					["coord"] = { 63.5, 67.2, IRONFORGE },
 				}),
 				q(9003, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
@@ -604,6 +618,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6569,	-- Gnoarn
 					["isBreadcrumb"] = true,
+					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
 				q(8275, {	-- Taking Back Silithus
 					["lvl"] = 54,
