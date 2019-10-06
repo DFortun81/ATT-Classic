@@ -120,7 +120,8 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Living Action Potion",
-				["recipeID"] = 24367
+				["recipeID"] = 24367,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Magic Resistance Potion",
@@ -350,11 +351,13 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Mageblood Elixir",
-				["recipeID"] = 24365
+				["recipeID"] = 24365,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Major Troll's Blood Elixir",
-				["recipeID"] = 3451
+				["recipeID"] = 3451,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Mighty Troll's Blood Elixir",

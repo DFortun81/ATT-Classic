@@ -418,16 +418,6 @@ _.Zones =
 						i(10652),	-- Will of the Mountain Giant
 					},
 				}),
-				q(2854, {	-- Wild Leather Armor
-					["qg"] = 7854,	-- Jangdor Swiftstrider
-					["requireSkill"] = 165,	-- Leatherworking
-					["coord"] = { 74.43, 42.91, FERALAS },
-					["cost"] = {
-						{ "i", 4304, 10 },	-- Thick Leather
-					},
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
 				q(2902, {	-- Woodpaw Investigation
 					["lvl"] = 39,
 					["races"] = HORDE_ONLY,

@@ -71,7 +71,12 @@ profession(202, {	-- Engineering
 				["g"] = {
 					{
 						["name"] = "Goblin Rocket Fuel Recipe",
-						["recipeID"] = 12715
+						["recipeID"] = 12715,
+						["g"] = {
+							i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+								["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+							}),
+						},
 					}
 				}
 			},

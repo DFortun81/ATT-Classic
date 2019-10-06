@@ -7,6 +7,15 @@ _.Zones =
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-2, {	-- Vendor
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Dawn>
+					i(19442, {	-- Formula: Powerful Anti-Venom
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(19328, {	-- Pattern: Dawn Treaders
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(19329, {	-- Pattern: Golden Mantle of the Dawn
+						["u"] = 3,	-- Added in later phase
+					}),
 					i(13482),	-- Recipe: Transmute Air to Fire
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>

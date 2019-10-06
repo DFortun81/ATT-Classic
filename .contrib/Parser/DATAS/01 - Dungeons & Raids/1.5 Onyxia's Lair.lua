@@ -193,7 +193,7 @@ _.Instances = {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["g"] = {
-						i(15769),	-- Onyxia Scale Cloak
+						i(15769),	-- Pattern: Onyxia Scale Cloak
 					},
 				}),
 				q(7493, {	-- The Journey Has Just Begun (H)
@@ -203,7 +203,7 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 					["g"] = {
-						i(15769),	-- Onyxia Scale Cloak
+						i(15769),	-- Pattern: Onyxia Scale Cloak
 					},
 				}),
 				{

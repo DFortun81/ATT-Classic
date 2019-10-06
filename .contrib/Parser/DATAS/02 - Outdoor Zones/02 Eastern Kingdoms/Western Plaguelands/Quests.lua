@@ -253,7 +253,7 @@ _.Zones =
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
-				q(5238, {	-- Mission Accomplished!
+				q(5237, {	-- Mission Accomplished! (A)
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
@@ -263,7 +263,7 @@ _.Zones =
 						i(15799),	-- Heroic Commendation Medal
 					},
 				}),
-				q(5237, {	-- Mission Accomplished!
+				q(5238, {	-- Mission Accomplished! (H)
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington

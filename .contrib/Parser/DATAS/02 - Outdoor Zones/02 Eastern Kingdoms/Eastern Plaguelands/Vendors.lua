@@ -13,6 +13,15 @@ _.Zones =
 				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["groups"] = {
+						i(19442, {	-- Formula: Powerful Anti-Venom
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19328, {	-- Pattern: Dawn Treaders
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19329, {	-- Pattern: Golden Mantle of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(13482),	-- Recipe: Transmute Air to Fire
 					},
 				}),				

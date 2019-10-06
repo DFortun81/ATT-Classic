@@ -6,18 +6,29 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(0, {	-- Zone Drops
-				n(7437, {	-- Cobalt Mageweaver
-					["g"] = {
-						i(18704),	-- Mature Blue Dragon Sinew
-						i(14493),	-- Pattern: Robe of Winter Night
-						i(13497),	-- Recipe: Greater Arcane Protection Potion
-						i(16054),	-- Schematic: Arcanite Dragonling
-					},
+				i(18704, {	-- Mature Blue Dragon Sinew
+					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
-				n(7428, {	-- Frostmaul Giant
-					["g"] = {
-						i(13495),	-- Recipe: Greater Frost Protection Potion
-					},
+				i(15761, {	-- Pattern: Frostsaber Gloves
+					["cr"] = 7441,	-- Winterfall Totemic
+				}),
+				i(15747, {	-- Pattern: Frostsaber Leggings
+					["cr"] = 7440,	-- Winterfall Den Watcher
+				}),
+				i(15779, {	-- Pattern: Frostsaber Tunic
+					["cr"] = 7438,	-- Winterfall Ursa
+				}),
+				i(14493, {	-- Pattern: Robe of Winter Night
+					["cr"] = 7437,	-- Cobalt Mageweaver
+				}),
+				i(13497, {	-- Recipe: Greater Arcane Protection Potion
+					["cr"] = 7437,	-- Cobalt Mageweaver
+				}),
+				i(13495, {	-- Recipe: Greater Frost Protection Potion
+					["cr"] = 7428,	-- Frostmaul Giant
+				}),
+				i(16054, {	-- Schematic: Arcanite Dragonling
+					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
 			}),
 		}),
