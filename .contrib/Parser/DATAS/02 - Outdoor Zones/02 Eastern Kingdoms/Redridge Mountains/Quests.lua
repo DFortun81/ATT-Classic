@@ -98,6 +98,7 @@ _.Zones =
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8965,	-- Shawn
+					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
 				}),
 				q(126, {	-- Howling in the Hills
 					["lvl"] = 15,
