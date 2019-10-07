@@ -106,6 +106,7 @@ _.Zones =
 					["lvl"] = 21,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2096,	-- Tarrel Rockweaver
+					["coord"] = { 11.5, 52.2, WETLANDS },
 				}),
 				q(306, {	-- In Search of The Excavation Team (2/2)
 					["lvl"] = 21,
