@@ -36,6 +36,7 @@ _.Zones =
 						i(1273),	-- Forest Chain
 						i(2263),	-- Phytoblade
 					},
+					["coord"] = { 56.3, 40.4, WETLANDS },
 				}),
 				q(279, {	-- Claws from the Deep
 					["lvl"] = 20,
@@ -100,7 +101,7 @@ _.Zones =
 					["g"] = {
 						i(4606),	-- Spongy Morel
 					},
-					["coord"] = { 56.3, 40.5, WETLANDS },
+					["coord"] = { 56.3, 40.4, WETLANDS },
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
 					["lvl"] = 21,
@@ -285,6 +286,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 463,	-- The Greenwarden
+					["coord"] = { 56.3, 40.4, WETLANDS },
 				}),
 				q(299, {	-- Uncovering the Past
 					["lvl"] = 25,

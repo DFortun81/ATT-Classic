@@ -182,6 +182,7 @@ _.Zones =
 						1681,	-- Brock Stoneseeker
 						1699,	-- Gremlock Pilsnor
 					},
+					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Brock Stoneseeker.",
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
 					["lvl"] = 10,
@@ -224,11 +225,14 @@ _.Zones =
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1105,	-- Jern Hornhelm
+					["coord"] = { 37.2, 47.4, LOCH_MODAN },
+					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Jern Hornhelm.",
 				}),
 				q(255, {	-- Mercenaries
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1139,	-- Magistrate Bluntnose
+					["coord"] = { 34.6, 44.5, LOCH_MODAN },
 				}),
 				q(1339, {	-- Mountaineer Stormpike's Task
 					["lvl"] = 9,
@@ -290,6 +294,7 @@ _.Zones =
 					},
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 1572,	-- Thorgrum Borrelson
+					["coord"] = { 33.9, 50.9, LOCH_MODAN },
 				}),
 				q(912, {	-- Stonesplinter Trogg Disguise
 					["lvl"] = 10,
@@ -323,6 +328,8 @@ _.Zones =
 						i(3220),	-- Blood Sausage
 						i(3679),	-- Recipe: Blood Sausage
 					},
+					["coord"] = { 34.8, 49.3, LOCH_MODAN },
+					["description"] = "Vidra Hearthstove is behind the bar on the first floor of the Stoutlager Inn.",
 				}),
 				q(17, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2500,	-- Badlands Reagent Run

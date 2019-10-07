@@ -18,10 +18,12 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					},
 				}),
-				n(1465, {	-- Bliztik <Alchemy Supplies>
+				n(1465, {	-- Drav Roughcut <Tradesman>
 					["groups"] = {
 						i(6892),	-- Recipe: Smoked Bear Meat
 					},
+					["coord"] = { 35.6, 49.2, LOCH_MODAN },
+					["description"] = "Drav Roughcut is located inside of the Stoutlager Inn.",
 				}),
 				n(954, {	-- Kat Sampson <Leather Armor Merchant>
 					["groups"] = {
@@ -41,6 +43,7 @@ _.Zones =
 						i(4765),	-- Enamelled Broadsword						
 						i(4766),	-- Feral Blade
 					},
+					["coord"] = { 34.0, 46.6, LOCH_MODAN },
 				}),
 				n(222, {	-- Nillen Andemar <Macecrafter>
 					["groups"] = {
@@ -53,6 +56,7 @@ _.Zones =
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6275),	-- Pattern: Greater Adept's Robe
 					},
+					["coord"] = { 36.0, 45.9, LOCH_MODAN },
 				}),
 				n(1685, {	-- Xandar Goodbeard <General Supplies>
 					["groups"] = {
