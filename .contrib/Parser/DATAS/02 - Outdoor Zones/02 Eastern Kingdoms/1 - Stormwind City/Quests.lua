@@ -6,6 +6,30 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
+				q(7794, {	-- A Donation of Mageweave
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+				}),
+				q(7795, {	-- A Donation of Runecloth
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
+				}),
+				q(7793, {	-- A Donation of Silk
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
+				}),
+				q(7791, {	-- A Donation of Wool
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
+				}),
 				q(344, {	-- Brother Paxton
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
