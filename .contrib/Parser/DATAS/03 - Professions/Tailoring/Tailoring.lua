@@ -38,6 +38,11 @@ profession(197, {	-- Tailoring
 		["categoryID"] = 59,
 		["g"] = {
 			{
+				["name"] = "Big Bag of Enchantment",
+				["recipeID"] = 27660,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
+			},
+			{
 				["name"] = "Black Silk Pack",
 				["recipeID"] = 6695
 			},
@@ -47,7 +52,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Cenarion Herb Bag",
-				["recipeID"] = 27724
+				["recipeID"] = 27724,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Core Felcloth Bag",
@@ -59,7 +65,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Enchanted Runecloth Bag",
-				["recipeID"] = 27659
+				["recipeID"] = 27659,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Felcloth Bag",
@@ -100,6 +107,11 @@ profession(197, {	-- Tailoring
 			{
 				["name"] = "Runecloth Bag",
 				["recipeID"] = 18405
+			},
+			{
+				["name"] = "Satchel of Cenarius",
+				["recipeID"] = 27730,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Small Silk Pack",
@@ -169,11 +181,13 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Stormcloth Headband",
-				["recipeID"] = 12083
+				["recipeID"] = 12083,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Sylvan Crown",
-				["recipeID"] = 28481
+				["recipeID"] = 28481,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "White Bandit Mask",
@@ -191,7 +205,8 @@ profession(197, {	-- Tailoring
 		["g"] = {
 			{
 				["name"] = "Argent Shoulders",
-				["recipeID"] = 23665
+				["recipeID"] = 23665,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Azure Shoulders",
@@ -223,7 +238,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Mantle of the Timbermaw",
-				["recipeID"] = 23663
+				["recipeID"] = 23663,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Mooncloth Shoulders",
@@ -247,11 +263,13 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Stormcloth Shoulders",
-				["recipeID"] = 12087
+				["recipeID"] = 12087,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Sylvan Shoulders",
-				["recipeID"] = 28482
+				["recipeID"] = 28482,
+				["u"] = 3,	-- Added in later phase (AQ)
 			}
 		}
 	},
@@ -370,7 +388,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Green Woolen Robe",
-				["recipeID"] = 7636
+				["recipeID"] = 7636,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Green Woolen Vest",
@@ -382,7 +401,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Mooncloth Robe",
-				["recipeID"] = 22902
+				["recipeID"] = 22902,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Mooncloth Vest",
@@ -442,11 +462,13 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Stormcloth Vest",
-				["recipeID"] = 12068
+				["recipeID"] = 12068,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Sylvan Vest",
-				["recipeID"] = 28480
+				["recipeID"] = 28480,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Truefaith Vestments",
@@ -498,7 +520,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Belt of the Archmage",
-				["recipeID"] = 22866
+				["recipeID"] = 22866,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Crimson Silk Belt",
@@ -522,7 +545,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Runed Stygian Belt",
-				["recipeID"] = 24902
+				["recipeID"] = 24902,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Spider Belt",
@@ -534,7 +558,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Wisdom of the Timbermaw",
-				["recipeID"] = 23662
+				["recipeID"] = 23662,
+				["u"] = 3,	-- Added in later phase
 			}
 		}
 	},
@@ -568,7 +593,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Felcloth Gloves",
-				["recipeID"] = 22867
+				["recipeID"] = 22867,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Flarecore Gloves",
@@ -604,11 +630,13 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Inferno Gloves",
-				["recipeID"] = 22868
+				["recipeID"] = 22868,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Mooncloth Gloves",
-				["recipeID"] = 22869
+				["recipeID"] = 22869,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Phoenix Gloves",
@@ -628,7 +656,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Stormcloth Gloves",
-				["recipeID"] = 12063
+				["recipeID"] = 12063,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Truefaith Gloves",
@@ -715,7 +744,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Runed Stygian Leggings",
-				["recipeID"] = 24901
+				["recipeID"] = 24901,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Shadoweave Pants",
@@ -731,7 +761,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Stormcloth Pants",
-				["recipeID"] = 12062
+				["recipeID"] = 12062,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Tuxedo Pants",
@@ -749,7 +780,8 @@ profession(197, {	-- Tailoring
 		["g"] = {
 			{
 				["name"] = "Argent Boots",
-				["recipeID"] = 23664
+				["recipeID"] = 23664,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Black Mageweave Boots",
@@ -762,7 +794,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Boots of Darkness",
-				["recipeID"] = 8778
+				["recipeID"] = 8778,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Boots of the Enchanter",
@@ -794,7 +827,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Runed Stygian Boots",
-				["recipeID"] = 24903
+				["recipeID"] = 24903,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Shadoweave Boots",
@@ -844,7 +878,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Cloak of Warding",
-				["recipeID"] = 22870
+				["recipeID"] = 22870,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Crimson Silk Cloak",
@@ -852,7 +887,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Gaea's Embrace",
-				["recipeID"] = 28210
+				["recipeID"] = 28210,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Heavy Woolen Cloak",
@@ -986,4 +1022,36 @@ profession(197, {	-- Tailoring
 			}
 		}
 	},
+	n(-17, {	-- Quests
+		q(3379, {	-- Shadoweaver
+			["lvl"] = 40,
+			["requireSkill"] = 197,	-- Tailoring
+			["maps"] = { SEARING_GORGE },
+			["qg"] = 8439,	-- Nilith Lokrav
+			["g"] = {
+				i(10461),	-- Shadowy Bracers
+			},
+		}),
+		q(3385, {	-- The Undermarket (1/2)
+			["lvl"] = 40,
+			["requireSkill"] = 197,	-- Tailoring
+			["maps"] = { SEARING_GORGE },
+			["qg"] = 8439,	-- Nilith Lokrav
+			["sourceQuest"] = 3379,	-- Shadoweaver
+			["g"] = {
+				i(10479),	-- Kovic's Trading Satchel
+				i(10462),	-- Shadowy Belt
+			},
+		}),
+		q(3402, {	-- The Undermarket (2/2)
+			["lvl"] = 40,
+			["requireSkill"] = 197,	-- Tailoring
+			["maps"] = { SEARING_GORGE },
+			["qg"] = 8439,	-- Nilith Lokrav
+			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
+			["g"] = {
+				i(10463),	-- Pattern: Shadoweave Mask
+			},
+		}),
+	}),
 });

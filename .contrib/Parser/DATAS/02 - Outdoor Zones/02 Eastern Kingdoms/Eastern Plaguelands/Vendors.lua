@@ -16,6 +16,12 @@ _.Zones =
 						i(19442, {	-- Formula: Powerful Anti-Venom
 							["u"] = 3,	-- Added in later phase
 						}),
+						i(19216, {	-- Pattern: Argent Boots
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19217, {	-- Pattern: Argent Shoulders
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(19328, {	-- Pattern: Dawn Treaders
 							["u"] = 3,	-- Added in later phase
 						}),

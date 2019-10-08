@@ -13,6 +13,9 @@ _.Zones =
 				}),
 				n(11557, {	-- Meilosh
 					["groups"] = {
+						i(19218, {	-- Pattern: Mantle of the Timbermaw
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(19326, {	-- Pattern: Might of the Timbermaw
 							["u"] = 3,	-- Added in later phase
 						}),
@@ -21,6 +24,9 @@ _.Zones =
 						}),
 						i(20253),	-- Pattern: Warbear Harness (15742 is also this pattern, need to find out which version is in game and put the other one in NYI)
 						i(20254),	-- Pattern: Warbear Woolies (15754 is also this pattern, need to find out which version is in game and put the other one in NYI)
+						i(19215, {	-- Pattern: Wisdom of the Timbermaw
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(13484),	-- Recipe: Transmute Earth to Water
 					},
 				}),

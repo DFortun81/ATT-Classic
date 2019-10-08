@@ -1218,6 +1218,11 @@ profession(165, {	-- Leatherworking
 			["qg"] = 7854,	-- Jangdor Swiftstrider
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["cost"] = {
+				{ "i", 8175, 2 },	-- Nightscape Tunic
+				{ "i", 8176, 2 },	-- Nightscape Headband
+				{ "i", 8153, 1 },	-- Wildvine
+			},
 			["g"] = {
 				i(8405),	-- Pattern: Wild Leather Helmet
 			},
@@ -1264,6 +1269,10 @@ profession(165, {	-- Leatherworking
 			["qg"] = 7854,	-- Jangdor Swiftstrider
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["cost"] = {
+				{ "i", 8173, 6 },	-- Thick Armor Kit
+				{ "i", 8153, 1 },	-- Wildvine
+			},
 			["g"] = {
 				i(8403),	-- Pattern: Wild Leather Shoulders
 			},
@@ -1287,6 +1296,11 @@ profession(165, {	-- Leatherworking
 			["qg"] = 7854,	-- Jangdor Swiftstrider
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["cost"] = {
+				{ "i", 8189, 2 },	-- Turtle Scale Breastplate
+				{ "i", 8187, 2 },	-- Turtle Scale Gloves
+				{ "i", 8153, 1 },	-- Wildvine
+			},
 			["g"] = {
 				i(8404),	-- Pattern: Wild Leather Vest
 			},

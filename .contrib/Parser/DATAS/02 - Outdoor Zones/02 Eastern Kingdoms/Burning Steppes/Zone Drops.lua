@@ -6,6 +6,12 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(0, {	-- Zone Drops
+				i(14482, {	-- Pattern: Cindercloth Cloak
+					["cr"] = 7037,	-- Thaurissan Firewalker
+				}),
+				i(14490, {	-- Pattern: Cindercloth Pants
+					["cr"] = 7037,	-- Thaurissan Firewalker
+				}),
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets
 					["cr"] = 7025,	-- Blackrock Soldier
 				}),

@@ -6,6 +6,12 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
 			n(0, {	-- Zone Drops
+				i(14485, {	-- Pattern: Wizardweave Leggings
+					["cr"] = 8551,	-- Dark Summoner
+				}),
+				i(14500, {	-- Pattern: Wizardweave Robe
+					["cr"] = 8526,	-- Dark Caster
+				}),
 				i(13479, {	-- Recipe: Elixir of the Sages
 					["crs"] = {
 						9451,	-- Scarlet Archmage
@@ -20,10 +26,8 @@ _.Zones =
 						8550,	-- Shadowmage
 					},
 				}),
-				n(8561, {	-- Mossflayer Shadowhunter
-					["g"] = {
-						i(16056),	-- Schematic: Flawless Arcanite Rifle
-					},
+				i(16056, {	-- Schematic: Flawless Arcanite Rifle
+					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
 			}),
 		}),

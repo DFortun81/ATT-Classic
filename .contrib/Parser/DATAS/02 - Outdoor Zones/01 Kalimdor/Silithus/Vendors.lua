@@ -38,6 +38,31 @@ _.Zones =
 						["u"] = 3,	-- Added in later phase (AQ)
 					}),
 				}),
+				n(15419, {	-- Kania <Enchanting Supplies>
+					i(22308, {	-- Pattern: Enchanted Runecloth Bag
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+				}),
+				n(15419, {	-- Mishta <Trade Supplies>
+					i(22310, {	-- Pattern: Cenarion Herb Bag
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22683, {	-- Pattern: Gaea's Embrace
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22312, {	-- Pattern: Satchel of Cenarius
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22773, {	-- Pattern: Sylvan Crown
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22772, {	-- Pattern: Sylvan Shoulders
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22774, {	-- Pattern: Sylvan Vest
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["groups"] = {
 						i(15724),	-- Pattern: Heavy Scorpid Bracers
