@@ -57,13 +57,25 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 6741,	-- Innkeeper Norman
 				}),
-				q(238, {	-- Errand for Apothecary Zinge
-					["lvl"] = 38,
-					["races"] = HORDE_ONLY,
-				}),
 				q(232, {	-- Errand for Apothecary Zinge
-					["lvl"] = 38,
+					["qg"] = 5204,	-- Apothecary Zinge
+					["coord"] = { 50.13, 67.98, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(238, {	-- Errand for Apothecary Zinge
+					["qg"] = 7683,	-- Alessandro Luca
+					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge
+					["coord"] = { 58.64, 54.73, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
+				}),
+				q(243, {	-- Into the Field
+					["qg"] = 5204,	-- Apothecary Zinge
+					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge
+					["coord"] = { 50.13, 67.98, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(2995, {	-- Lines of Communication
 					["lvl"] = 42,
@@ -155,10 +167,10 @@ _.Zones =
 					["sourceQuest"] = 6144,	-- The Call to Command
 				}),
 				q(495, {	-- The Crown of Will
-					["lvl"] = 34,
-					["races"] = HORDE_ONLY,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2227,	-- Sharlindra
+					["coord"] = { 57.60, 93.84, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
 				}),
 				q(6722, {	-- The Hunter's Path
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
@@ -200,6 +212,20 @@ _.Zones =
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs
 					},
+				}),
+				q(5658, {	-- Touch of Weakness
+					["qg"] = 4606,	-- Aelthalyste
+					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["altQuests"] = {
+						5659,
+						5660,
+						5661,
+						5662,
+						5663,
+					},
+					["class"] = PRIEST,
+					["races"] = { UNDEAD },
+					["lvl"] = 10
 				}),
 			}),
 		}),

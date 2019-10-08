@@ -52,6 +52,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 2216,	-- Apothecary Lydon
 				}),
+				q(1205, {	-- Deadmire
+					["qg"] = 3441,	-- Melor Stonehoof
+					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
+				}),
 				q(1064, {	-- Forsaken Aid
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
@@ -60,9 +66,10 @@ _.Zones =
 					["sourceQuest"] = 1063,	-- The Elder Crone
 				}),
 				q(1136, {	-- Frostmaw
-					["lvl"] = 26,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3441,	-- Melor Stonehoof
+					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 					["g"] = {
 						i(6720),	-- Spirit Hunter Headdress
 						i(5810),	-- Fresh Carcass

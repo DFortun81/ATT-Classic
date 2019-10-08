@@ -124,7 +124,7 @@ _.Zones =
 				q(535, {	-- Valik
 					["qg"] = 2333,	-- Henchman Valik
 					["isBreadcrumb"] = true,
-					--["coord"] = { , , ALTERAC_MOUNTAINS},
+					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS},
 					["cost"] = { "i", 3703 },	-- Southshore Stout
 					["cr"] = 2440,	-- Drunken Footpad
 					["races"] = HORDE_ONLY,

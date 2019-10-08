@@ -43,7 +43,6 @@ _.Zones =
 					["qg"] = 3448,	-- Tonga Runetotem
 					["sourceQuest"] = 877,	-- The Stagnant Oasis
 					["coord"] = { 52.26, 31.92, THE_BARRENS },
-					["cr"] = 3461,	-- Oasis Snapjaw
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -455,11 +454,6 @@ _.Zones =
 				q(869, {	-- Raptor Thieves
 					["qg"] = 3464,	-- Gazrog
 					["coord"] = { 51.93, 30.32, THE_BARRENS },
-					["crs"] = {
-						3254,	-- Sunscale Lashtail
-						3255,	-- Sunscale Screecher
-						3256,	-- Sunscale Scytheclaw
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),

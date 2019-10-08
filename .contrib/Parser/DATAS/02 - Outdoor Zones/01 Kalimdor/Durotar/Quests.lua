@@ -173,6 +173,28 @@ _.Zones =
 						i(11584),	-- Cactus Apple Surprise
 					},
 				}),
+				q(5648, {	-- Garments of Spirituality
+					["qg"] = 3706,	-- Tai'jin
+					["sourceQuest"] = 5649,	-- In Favor of Spirituality
+					["coord"] = { 54.2, 42.8, DUROTAR },
+					["class"] = PRIEST,
+					["races"] = { TROLL },
+					["lvl"] = 5
+				}),
+				q(3085, {	-- Hallowed Tablet
+					["qg"] = 3143,	-- Gornek
+					["coord"] = { 42.0, 68.4, DUROTAR },
+					["class"] = PRIEST,
+					["races"] = { TROLL },
+					["lvl"] = 1
+				}),
+				q(5649, {	-- In Favor of Spirituality
+					["qg"] = 3707,	-- Ken'jai
+					["coord"] = { 42.4, 68.8, DUROTAR },
+					["class"] = PRIEST,
+					["races"] = { TROLL },
+					["lvl"] = 5
+				}),
 				q(5441, {	-- Lazy Peons
 					["qg"] = 11378,	-- Foreman Thazz'ril
 					["coord"] = { 44.62, 68.65, DUROTAR },

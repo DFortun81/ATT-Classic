@@ -14,35 +14,53 @@ _.Zones =
 						i(2805),	-- Yeti Fur Cloak
 					},
 				}),
+				q(527, {	-- Battle of Hillsbrad
+					["qg"] = 2215,	-- High Executor Darthalia
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+				}),
 				q(528, {	-- Battle of Hillsbrad
+					["qg"] = 2215,	-- High Executor Darthalia
+					["sourceQuest"] = 527,	-- Battle of Hillsbrad
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 19,
 					["races"] = HORDE_ONLY,
-					["qg"] = 2215,	-- High Executor Darthalia
 				}),
 				q(529, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2215,	-- High Executor Darthalia
-				}),
-				q(539, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
+					["sourceQuest"] = 528,	-- Battle of Hillsbrad
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["qg"] = 2215,	-- High Executor Darthalia
+					["lvl"] = 19,
 				}),
 				q(532, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2215,	-- High Executor Darthalia
+					["sourceQuest"] = 529,	-- Battle of Hillsbrad
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+				}),
+				q(539, {	-- Battle of Hillsbrad
+					["qg"] = 2215,	-- High Executor Darthalia
+					["sourceQuest"] = 532,	-- Battle of Hillsbrad
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(541, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2215,	-- High Executor Darthalia
+					["sourceQuest"] = 539,	-- Battle of Hillsbrad
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(550, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2215,	-- High Executor Darthalia
+					["coord"] = { 62.32, 20.33, HILLSBRAD_FOOTHILLS },
+					["sourceQuest"] = 541,	-- Battle of Hillsbrad
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 					["g"] = {
 						i(6282),	-- Sacred Burial Trousers
 						i(3761),	-- Deadskull Shield
@@ -50,19 +68,19 @@ _.Zones =
 						i(3760),	-- Band of the Undercity
 					},
 				}),
-				q(527, {	-- Battle of Hillsbrad
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2215,	-- High Executor Darthalia
-				}),
 				q(506, {	-- Blackmoore's Legacy
-					["lvl"] = 29,
+					["qg"] = 2316,	-- Gol'dir
+					["sourceQuest"] = 503,	-- Gol'dir
+					["coord"] = { 59.96, 43.74, ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(557, {	-- Bracers of Binding
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2437,	-- Keeper Bel'varil
+					["sourceQuest"] = 556,	-- Stone Tokens
+					["coord"] = { 61.50, 20.91, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(564, {	-- Costly Menace
 					["lvl"] = 30,
@@ -76,14 +94,17 @@ _.Zones =
 					},
 				}),
 				q(545, {	-- Dalaran Patrols
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
+					["sourceQuest"] = 544,	-- Prison Break In
+					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(567, {	-- Dangerous!
+					["provider"] = { "o", 2008 }, -- Dangerous!
+					["coord"] = { 62.56, 19.69, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 19,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 2008,	-- Dangerous!
 					["g"] = {
 						i(3742),	-- Bow of Plunder
 						i(3743),	-- Sentry Buckler
@@ -96,47 +117,58 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 				}),
-				q(524, {	-- Elixir of Agony
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
-				}),
-				q(513, {	-- Elixir of Agony
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2216,	-- Apothecary Lydon
-				}),
-				q(517, {	-- Elixir of Agony
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2216,	-- Apothecary Lydon
-				}),
-				q(515, {	-- Elixir of Agony
-					["lvl"] = 24,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2055,	-- Master Apothecary Faranell
-					["g"] = {
-						i(3749),	-- High Apothecary Cloak
-						i(3747),	-- Meditative Sash
-					},
-				}),
 				q(509, {	-- Elixir of Agony
+					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 502,	-- Elixir of Pain
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 24,
 					["races"] = HORDE_ONLY,
-					["qg"] = 2216,	-- Apothecary Lydon
 					["g"] = {
 						i(2459),	-- Swiftness Potion
 						i(929),	-- Healing Potion
 					},
 				}),
-				q(502, {	-- Elixir of Pain
-					["lvl"] = 21,
-					["races"] = HORDE_ONLY,
+				q(513, {	-- Elixir of Agony
 					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 509,	-- Elixir of Agony
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
+				}),
+				q(515, {	-- Elixir of Agony
+					["qg"] = 2055,	-- Master Apothecary Faranell
+					["sourceQuest"] = 513,	-- Elixir of Agony
+					["coord"] = { 48.89, 69.21, UNDERCITY },
+					["cost"] = {
+						{ 3388, 1 },	-- Strong Troll's Blood Potion
+					},
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
+					["g"] = {
+						i(3749),	-- High Apothecary Cloak
+						i(3747),	-- Meditative Sash
+					},
+				}),
+				q(517, {	-- Elixir of Agony
+					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 515,	-- Elixir of Agony
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["lvl"] = 24,
+					["races"] = HORDE_ONLY,
+				}),
+				q(524, {	-- Elixir of Agony
+					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 517,	-- Elixir of Agony
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(501, {	-- Elixir of Pain
-					["lvl"] = 21,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 499,	-- Elixir of Suffering
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 21,
 					["g"] = {
 						i(2230),	-- Gloves of Brawn
 						i(3741),	-- Stomping Boots
@@ -144,15 +176,25 @@ _.Zones =
 						i(3735),	-- Recipe: Hot Lion Chops
 					},
 				}),
-				q(499, {	-- Elixir of Suffering
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
+				q(502, {	-- Elixir of Pain
 					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 501,	-- Elixir of Pain
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 21,
 				}),
 				q(496, {	-- Elixir of Suffering
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2216,	-- Apothecary Lydon
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
+				}),
+				q(499, {	-- Elixir of Suffering
+					["qg"] = 2216,	-- Apothecary Lydon
+					["sourceQuest"] = 496,	-- Elixir of Suffering
+					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(560, {	-- Farren's Proof
 					["lvl"] = 25,
@@ -170,19 +212,24 @@ _.Zones =
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 				}),
 				q(503, {	-- Gol'dir
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 533,	-- Infiltration
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(552, {	-- Helcular's Revenge
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2429,	-- Novice Thaivand
+					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(553, {	-- Helcular's Revenge
-					["lvl"] = 29,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2429,	-- Novice Thaivand
+					["sourceQuest"] = 552,	-- Helcular's Revenge
+					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(661, {	-- Hints of a New Plague?
 					["lvl"] = 30,
@@ -214,9 +261,10 @@ _.Zones =
 					["qg"] = 2712,	-- Quae
 				}),
 				q(547, {	-- Humbert's Sword
-					["lvl"] = 26,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2419,	-- Deathguard Humbert
+					["coord"] = { 62.74, 20.21, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 26,
 					["g"] = {
 						i(3750),	-- Ribbed Breastplate
 						i(3751),	-- Mercenary Leggings
@@ -224,19 +272,23 @@ _.Zones =
 				}),
 				q(533, {	-- Infiltration
 					["qg"] = 2229,	-- Krusk
-					["sourceQuest"] = 535,	-- Valik
-					--["coord"] = { , , HILLSBRAD_FOOTHILLS },
+					["sourceQuest"] = 498,	-- The Rescue,
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29, 
 				}),
 				q(507, {	-- Lord Aliden Perenolde
-					["lvl"] = 29,
+					["qg"] = 2229,	-- Krusk
+					["sourceQuest"] = 506,	-- Blackmoore's Legacy
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 				}),
 				q(544, {	-- Prison Break In
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
+					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(563, {	-- Reassignment
 					["lvl"] = 25,
@@ -252,18 +304,30 @@ _.Zones =
 						i(3729),	-- Soothing Turtle Bisque
 					},
 				}),
-				q(546, {	-- Souvenirs of Death
-					["lvl"] = 20,
+				q(7321, {	-- Soothing Turtle Bisque
+					["qg"] = 2393,	-- Christoph Jeffcoat
+					["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 28,
+					["g"] = {
+						i(3737),	-- Recipe: Soothing Turtle Bisque
+						i(3729),	-- Soothing Turtle Bisque
+					},
+				}),
+				q(546, {	-- Souvenirs of Death
 					["qg"] = 2418,	-- Deathguard Samsa
+					["coord"] = { 62.12, 19.72, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(3739),	-- Skull Ring
 					},
 				}),
 				q(556, {	-- Stone Tokens
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2437,	-- Keeper Bel'varil
+					["coord"] = { 61.50, 20.91, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(562, {	-- Stormwind Ho!
 					["lvl"] = 25,
@@ -274,27 +338,40 @@ _.Zones =
 					},
 				}),
 				q(508, {	-- Taretha's Gift
-					["lvl"] = 29,
+					["qg"] = 2317,	-- Elysa
+					["coord"] = { 39.30, 14.30, ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 29,
 					["g"] = {
 						i(3764),	-- Mantis Boots
 						i(3765),	-- Brigand's Pauldrons
 					},
 				}),
 				q(518, {	-- The Crown of Will
-					["lvl"] = 34,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 495,	-- The Crown of Will
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
 				}),
 				q(519, {	-- The Crown of Will
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 518,	-- The Crown of Will
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 34,
 					["races"] = HORDE_ONLY,
 				}),
 				q(520, {	-- The Crown of Will
-					["lvl"] = 34,
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 519,	-- The Crown of Will
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 34,
 				}),
 				q(521, {	-- The Crown of Will
+					["qg"] = 2278,	-- Melisara
+					["sourceQuest"] = 520,	-- The Crown of Will
+					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 34,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -302,14 +379,16 @@ _.Zones =
 					},
 				}),
 				q(676, {	-- The Hammer May Fall
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2770,	-- Tallow
+					["coord"] = { 61.86, 19.58, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(498, {	-- The Rescue
+					["qg"] = 2229,	-- Krusk
+					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 17,
 					["races"] = HORDE_ONLY,
-					["qg"] = 2229,	-- Krusk
 					["g"] = {
 						i(3752),	-- Grunt Vest
 						i(3733),	-- Orcish War Chain
@@ -319,11 +398,15 @@ _.Zones =
 					},
 				}),
 				q(494, {	-- Time To Strike
-					["lvl"] = 19,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2214,	-- Deathstalker Lesh
+					["coord"] = { 20.79, 47.41, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(566, {	-- WANTED: Baron Vardus
+					["provider"] = { "o", 1763 }, -- WANTED
+					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
+					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -331,9 +414,10 @@ _.Zones =
 					},
 				}),
 				q(549, {	-- WANTED: Syndicate Personnel
-					["lvl"] = 17,
+					["provider"] = { "o", 1763 }, -- WANTED
+					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 1763,	-- WANTED
+					["lvl"] = 17,
 				}),
 			}),
 		}),
