@@ -51,7 +51,8 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Greater Dreamless Sleep Potion",
-				["recipeID"] = 24366
+				["recipeID"] = 24366,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Greater Fire Protection Potion",
@@ -119,7 +120,12 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Living Action Potion",
-				["recipeID"] = 24367
+				["recipeID"] = 24367,
+				["u"] = 3,	-- Added in later phase (ZG)
+			},
+			{
+				["name"] = "Magic Resistance Potion",
+				["recipeID"] = 11453
 			},
 			{
 				["name"] = "Major Healing Potion",
@@ -154,16 +160,16 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 2332
 			},
 			{
+				["name"] = "Minor Magic Resistance Potion",
+				["recipeID"] = 3172
+			},
+			{
 				["name"] = "Nature Protection Potion",
 				["recipeID"] = 7259
 			},
 			{
 				["name"] = "Potion of Curing",
 				["recipeID"] = 3174
-			},
-			{
-				["name"] = "Potion of Petrification",
-				["recipeID"] = 17634
 			},
 			{
 				["name"] = "Purification Potion",
@@ -345,11 +351,13 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Mageblood Elixir",
-				["recipeID"] = 24365
+				["recipeID"] = 24365,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Major Troll's Blood Elixir",
-				["recipeID"] = 3451
+				["recipeID"] = 3451,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Mighty Troll's Blood Elixir",
@@ -370,8 +378,16 @@ profession(171, {	-- Alchemy
 		["categoryID"] = 16,
 		["g"] = {
 			{
+				["name"] = "Flask of Chromatic Resistance",
+				["recipeID"] = 17638
+			},
+			{
 				["name"] = "Flask of Distilled Wisdom",
 				["recipeID"] = 17636
+			},
+			{
+				["name"] = "Flask of Petrification",
+				["recipeID"] = 17634
 			},
 			{
 				["name"] = "Flask of Supreme Power",

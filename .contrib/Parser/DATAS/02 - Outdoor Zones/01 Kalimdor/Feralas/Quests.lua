@@ -44,6 +44,7 @@ _.Zones =
 				}),
 				q(7725, {	-- Again With the Zapped Giants
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["lvl"] = 40,
@@ -91,9 +92,6 @@ _.Zones =
 						10881,	-- Bluff Runner Windstrider
 					},
 				}),
-				q(2878, {	-- Corrupted Songflower
-					["lvl"] = 48,
-				}),
 				q(2979, {	-- Dark Ceremony
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
@@ -137,6 +135,7 @@ _.Zones =
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 				}),
 				q(7494, {	-- Feathermoon Stronghold
+					["u"] = 3,	-- Added in later phase (Dire Maul)
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 					["qgs"] = {
@@ -214,9 +213,13 @@ _.Zones =
 				}),
 				q(7738, {	-- Perfect Yeti Hide
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
 				}),
 				q(7735, {	-- Pristine Yeti Hide
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 18969 },	-- Pristine Yeti Hide
 				}),
 				q(4130, {	-- Psychometric Reading
 					["lvl"] = 40,
@@ -225,6 +228,7 @@ _.Zones =
 				}),
 				q(7726, {	-- Refuel for the Zapping
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(2767, {	-- Rescue OOX-22/FE!
 					["lvl"] = 40,
@@ -359,6 +363,9 @@ _.Zones =
 				}),
 				q(4041, {	-- The Videre Elixir
 					["lvl"] = 47,
+					["repeatable"] = true,
+					["qg"] = 7775,	-- Gregan Brewspewer
+					["sourceQuest"] = 3909,	-- The Videre Elixir
 					["g"] = {
 						i(11243),	-- Videre Elixir
 					},
@@ -376,6 +383,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7773,	-- Marli Wishrunner
+					["repeatable"] = true,
 				}),
 				q(3126, {	-- Treant Muisek
 					["lvl"] = 40,

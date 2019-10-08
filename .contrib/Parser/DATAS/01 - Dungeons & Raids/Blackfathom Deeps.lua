@@ -70,6 +70,7 @@ _.Instances = {
 				{
 					["questID"] = 971,	-- Knowledge in the Deeps
 					["qg"] = 2786,	-- Gerrig Bonegrip
+					["sourceQuest"] = 968, -- The Powers Below
 					["coord"] = { 50.8, 5.6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -98,6 +99,18 @@ _.Instances = {
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
+				},
+				{
+					["questID"] = 968, -- The Powers Below
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["provider"] = { "i", 5352 },	-- Book: The Powers Below
+					["maps"] = { DARKSHORE },
+					["crs"] = {
+						2339, -- Twilight Thug
+						2338, -- Twilight Disciple
+					},
 				},
 				{
 					["questID"] = 6562,	-- Trouble in the Deeps

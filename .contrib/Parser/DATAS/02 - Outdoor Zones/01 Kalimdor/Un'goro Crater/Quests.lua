@@ -124,7 +124,9 @@ _.Zones =
 					["repeatable"] = true,
 					["qg"] = 9274,	-- Dadanga
 					["g"] = {
-						i(15699),	-- Small Brown-wrapped Package
+						i(15699, {	-- Small Brown-wrapped Package
+							i(13481),	-- Recipe: Elixir of Brute Force
+						}),
 					},
 				}),
 				q(3881, {	-- Expedition Salvation

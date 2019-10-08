@@ -181,6 +181,7 @@ _.Zones =
 				q(1127, {	-- Fool's Stout
 					["lvl"] = 35,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["repeatable"] = true,
 					["g"] = {
 						i(5806),	-- Fool's Stout
 					},
@@ -466,6 +467,13 @@ _.Zones =
 				q(8553, {	-- The Captain's Cutlass
 					["lvl"] = 35,
 				}),
+				q(1041, {	-- The Caravan Road
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 3945,	-- Caravaneer Ruzzgot
+					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
+				}),
 				q(611, {	-- The Curse of the Tides
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
@@ -566,6 +574,12 @@ _.Zones =
 					["g"] = {
 						i(4107),	-- Tiger Hunter Gloves
 					},
+				}),
+				q(9259, {	-- Traitor to the Bloodsail
+					["lvl"] = 30,
+					["repeatable"] = true,
+					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
+					["qg"] = 16399,	-- Bloodsail Traitor
 				}),
 				q(205, {	-- Troll Witchery
 					["lvl"] = 30,

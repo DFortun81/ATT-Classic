@@ -103,7 +103,8 @@ profession(202, {	-- Engineering
 			},
 			{
 				["name"] = "Major Recombobulator",
-				["recipeID"] = 23079
+				["recipeID"] = 23079,
+				["u"] = 3,	-- Added in later phase (Dire Maul - phase 2)
 			},
 			{
 				["name"] = "Masterwork Target Dummy",
@@ -127,7 +128,8 @@ profession(202, {	-- Engineering
 			},
 			{
 				["name"] = "Mobile Alarm",
-				["recipeID"] = 12900
+				["recipeID"] = 12900,
+				["u"] = 1,	-- Never Available
 			},
 			{
 				["name"] = "Ornate Spyglass",
@@ -151,7 +153,8 @@ profession(202, {	-- Engineering
 			},
 			{
 				["name"] = "Steam Tonk Controller",
-				["recipeID"] = 28327
+				["recipeID"] = 28327,
+				["u"] = 3,	-- Added in later phase (Darkmoon Faire)
 			},
 			{
 				["name"] = "Target Dummy",
@@ -272,10 +275,6 @@ profession(202, {	-- Engineering
 				["recipeID"] = 12586
 			},
 			{
-				["name"] = "The Mortar: Reloaded",
-				["recipeID"] = 13240
-			},
-			{
 				["name"] = "Thorium Grenade",
 				["recipeID"] = 19790
 			}
@@ -365,11 +364,13 @@ profession(202, {	-- Engineering
 		["g"] = {
 			{
 				["name"] = "Bloodvine Goggles",
-				["recipeID"] = 24356
+				["recipeID"] = 24356,
+				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Bloodvine Lens",
-				["recipeID"] = 24357
+				["recipeID"] = 24357,
+				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Bright-Eye Goggles",

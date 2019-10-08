@@ -9,19 +9,19 @@ _.Zones =
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
 				q(1075, {	-- A Scroll from Mauren
 					["qg"] = 4077,	-- Gaxim Rustfizzle
-					-- ["coord"] = ,
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1072, {	-- An Old Colleague
 					["qg"] = 4077,	-- Gaxim Rustfizzle
-					-- ["coord"] = ,
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -83,7 +83,7 @@ _.Zones =
 						1074,	-- Ineptitude + Chemicals = Fun
 						1077,	-- Special Delivery for Gaxim
 					},
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["g"] = {
@@ -93,6 +93,7 @@ _.Zones =
 				}),
 				q(1080, {	-- Covert Ops - Beta
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["sourceQuests"] = {
 						1074,	-- Ineptitude + Chemicals = Fun
 						1077,	-- Special Delivery for Gaxim
@@ -109,9 +110,9 @@ _.Zones =
 				q(1076, {	-- Devils in Westfall
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(6481, {	-- Earthen Arise
 					["qg"] = 11861,	-- Mor'rogal
@@ -188,24 +189,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 				}),
-				q(1073, {	-- Ineptitude + Chemicals = Fun
-					["qg"] = 4081,	-- Lomac Gearstrip
-					--["coord"] = { },
-					["sourceQuest"] = 1072,	-- An Old Colleague
-					["cost"] = {
-						{ "i", 2455, 4 },	-- Minor Mana Potion
-						{ "i", 2458, 2 },	-- Elixir of Minor Fortitude
-					},
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
-				}),
-				q(1074, {	-- Ineptitude + Chemicals = Fun
-					["qg"] = 4081,	-- Lomac Gearstrip
-					--["coord"] = { },
-					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
-				}),
 				q(1058, {	-- Jin'Zil's Forest Magic
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
@@ -222,7 +205,7 @@ _.Zones =
 						1079,	-- Covert Ops - Alpha
 						1080,	-- Covert Ops - Beta
 					},
-					--["coord"] = { },
+					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),
@@ -250,6 +233,12 @@ _.Zones =
 						i(16985),	-- Windseeker Boots
 						i(16986),	-- Sandspire Gloves
 					},
+				}),
+				q(1085, {	-- On Guard in Stonetalon
+					["lvl"] = 17,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4080,	-- Kaela Shadowspear
+					["sourceQuest"] = 1070,	-- On Guard in Stonetalon(Ashenvale)
 				}),
 				q(1088, {	-- Ordanus
 					["qg"] = 4198,	-- Braelyn Firehand
@@ -303,12 +292,12 @@ _.Zones =
 				}),
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 					["g"] = {
 						i(6677),	-- Spellcrafter Wand
 					},
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1068, {	-- Shredding Machines
 					["qg"] = 4049,	-- Seereth Stonebreak
@@ -320,9 +309,9 @@ _.Zones =
 				q(1077, {	-- Special Delivery for Gaxim
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1076,	-- Devils in Westfall
-					--["coord"] = { },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1093, {	-- Super Reaper 6000
 					["qg"] = 4201,	-- Ziz Fizziks

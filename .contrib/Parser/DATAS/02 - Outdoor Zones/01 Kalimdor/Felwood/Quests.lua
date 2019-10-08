@@ -74,6 +74,10 @@ _.Zones =
 					["qg"] = 9996,	-- Winna Hazzard
 					["sourceQuest"] = 4504,	-- Well of Corruption
 				}),
+				q(2878, {	-- Corrupted Songflower
+					["lvl"] = 48,
+					["repeatable"] = true,
+				}),
 				q(3363, {	-- Corrupted Songflower
 					["lvl"] = 48,
 					["repeatable"] = true,

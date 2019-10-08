@@ -84,16 +84,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5096,	-- Scarlet Diversions
 				}),
-				q(5803, {	-- Araj's Scarab
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5801,	-- Fire Plume Forged
-				}),
-				q(5804, {	-- Araj's Scarab
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
 				q(5401, {	-- Argent Dawn Commission
 					["lvl"] = 50,
 					["qg"] = 10840,	-- Argent Officer Pureheart
@@ -119,23 +109,10 @@ _.Zones =
 				q(5021, {	-- Better Late Than Never
 					["lvl"] = 50,
 				}),
-				q(5166, {	-- Breastplate of the Chromatic Flight
-					["lvl"] = 57,
-					--["objectID"] = 176192,	-- Catalogue of the Wayward
-					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
-					["g"] = {
-						i(12895),	-- Breastplate of the Chromatic Flight
-					},
-				}),
 				q(5210, {	-- Brother Carlin
 					["lvl"] = 50,
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
-				}),
-				q(5164, {	-- Catalogue of the Wayward
-					["lvl"] = 57,
-					["qg"] = 10976,	-- Jeziba
-					["sourceQuest"] = 5162,	-- Wrath of the Blue Flight
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["lvl"] = 55,
@@ -219,17 +196,6 @@ _.Zones =
 				q(5050, {	-- Good Luck Charm
 					["lvl"] = 50,
 				}),
-				q(5944, {	-- In Dreams
-					["lvl"] = 52,
-					["qg"] = 1842,	-- Highlord Taelan Fordring
-					["g"] = {
-						i(15411),	-- Mark of Fordring
-						i(15413),	-- Ornate Adamantium Breastplate
-						i(15418),	-- Shimmering Platinum Warhammer
-						i(15421),	-- Shroud of the Exile
-						i(16058),	-- Fordring's Seal
-					},
-				}),
 				q(5407, {	-- Invader's Scourgestones
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
@@ -246,14 +212,6 @@ _.Zones =
 					["qg"] = 10840,	-- Argent Officer Pureheart
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
-					},
-				}),
-				q(5167, {	-- Legplates of the Chromatic Defier
-					["lvl"] = 57,
-					["sourceQuest"] = 5164,	-- Catalogue of the Wayward
-					["g"] = {
-						i(12903),	-- Legguards of the Chromatic Defier
-						i(12945),	-- Legplates of the Chromatic Defier
 					},
 				}),
 				q(5059, {	-- Locked Away
@@ -295,7 +253,7 @@ _.Zones =
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
-				q(5238, {	-- Mission Accomplished!
+				q(5237, {	-- Mission Accomplished! (A)
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
@@ -305,7 +263,7 @@ _.Zones =
 						i(15799),	-- Heroic Commendation Medal
 					},
 				}),
-				q(5237, {	-- Mission Accomplished!
+				q(5238, {	-- Mission Accomplished! (H)
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
@@ -314,18 +272,6 @@ _.Zones =
 						i(15800),	-- Intrepid Shortsword
 						i(15799),	-- Heroic Commendation Medal
 					},
-				}),
-				q(5538, {	-- Mold Rhymes With... (A)
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5537,	-- Skeletal Fragments
-				}),
-				q(5514, {	-- Mold Rhymes With... (H)
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 964,	-- Skeletal Fragments
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
 					["lvl"] = 52,
@@ -375,37 +321,6 @@ _.Zones =
 						i(12814),	-- Flame in a Bottle
 					},
 				}),
-				q(5862, {	-- Scarlet Subterfuge
-					["lvl"] = 52,
-				}),
-				q(5533, {	-- Scholomance
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["sourceQuest"] = 5097,	-- All Along The Watchtowers
-				}),
-				q(838, {	-- Scholomance
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 10837,	-- High Executor Derrington
-					["sourceQuest"] = 5098,	-- All Along The Watchtowers
-				}),
-				q(5537, {	-- Skeletal Fragments
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5533,	-- Scholomance
-				}),
-				q(964, {	-- Skeletal Fragments
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 838,	-- Scholomance
-				}),
-				q(5465, {	-- Soulbound Keepsake
-					["lvl"] = 57,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
@@ -453,53 +368,11 @@ _.Zones =
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
 				}),
-				q(5462, {	-- The Dying, Ras Frostwhisper
-					["lvl"] = 57,
-					["qg"] = 11286,	-- Magistrate Marduke
-					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
-				}),
 				q(6185, {	-- The Eastern Plagues
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
-				}),
-				q(5461, {	-- The Human, Ras Frostwhisper
-					["lvl"] = 57,
-					["qg"] = 11286,	-- Magistrate Marduke
-					["sourceQuest"] = 5384,	-- Kirtonos the Herald
-				}),
-				q(5505, {	-- The Key to Scholomance (A)
-					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11056,	-- Alchemist Arbington
-					["sourceQuest"] = 5803,	-- Araj's Scarab
-					["g"] = {
-						i(13704),	-- Skeleton Key
-					},
-				}),
-				q(5511, {	-- The Key to Scholomance (H)
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11057,	-- Apothecary Dithers
-					["sourceQuest"] = 5804,	-- Araj's Scarab
-					["g"] = {
-						i(13704),	-- Skeleton Key
-					},
-				}),
-				q(5344, {	-- The Last Barov
-					["lvl"] = 52,
-					["g"] = {
-						i(14023),	-- Barov Peasant Caller
-					},
-				}),
-				q(5342, {	-- The Last Barov
-					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["qg"] = 11022,	-- Alexi Barov
-					["g"] = {
-						i(14022),	-- Barov Peasant Caller
-					},
 				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["lvl"] = 50,

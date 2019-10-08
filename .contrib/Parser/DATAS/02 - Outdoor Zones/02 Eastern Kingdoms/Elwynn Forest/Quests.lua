@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10616,	-- Supervisor Raelen
+					["coord"] = { 81.4, 66.2, ELWYNN_FOREST },
 				}),
 				q(40, {	-- A Fishy Peril
 					["lvl"] = 7,
@@ -76,6 +77,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 253,	-- William Pestle
 				}),
+				q(3101, {	-- Consecrated Letter
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+				}),
 				q(39, {	-- Deliver Thomas' Report
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -95,6 +102,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
+				q(1097, {	-- Elmore's Task
+					["lvl"] = 9,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 514,	-- Smith Argus
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
+				}),
+				q(3102, {	-- Encrypted Letter
+					["lvl"] = 1,
+					["races"] = { 1 },	-- Human
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+				}),
 				q(37, {	-- Find the Lost Guards
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -106,6 +126,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 40,	-- A Fishy Peril
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(16, {	-- Give Gerard a Drink
 					["races"] = ALLIANCE_ONLY,
@@ -123,6 +144,7 @@ _.Zones =
 					["g"] = {
 						i(1191),	-- Bag of Marbles
 					},
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
 				}),
 				q(87, {	-- Goldtooth
 					["lvl"] = 5,
@@ -142,9 +164,17 @@ _.Zones =
 						i(2690),	-- Latched Belt
 					},
 				}),
+				q(345, {	-- Ink Supplies
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 951,	-- Brother Paxton
+					["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
+					["description"] = "This quest is part of a series that starts in Stormwind.",
+				}),
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 				}),
 				q(7, {	-- Kobold Camp Cleanup
 					["races"] = ALLIANCE_ONLY,
@@ -173,6 +203,7 @@ _.Zones =
 						i(1360),	-- Stormwind Chain Gloves
 						i(1183),	-- Elastic Wristguards
 					},
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(3903, {	-- Milly Osworth
 					["lvl"] = 2,
@@ -222,10 +253,12 @@ _.Zones =
 						i(2575),	-- Red Linen Shirt
 						i(983),	-- Red Linen Sash
 					},
+					["coord"] = { 79.5, 68.7, ELWYNN_FOREST },
 				}),
 				q(54, {	-- Report to Goldshire
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
 					["g"] = {
 						i(6078),	-- Pikeman Shield
 					},
@@ -254,6 +287,16 @@ _.Zones =
 						i(159),	-- Refreshing Spring Water
 					},
 				}),
+				q(346, {	-- Return to Kristoff
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 951,	-- Brother Paxton
+					["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
+					["g"] = {
+						i(6095),
+					},
+					["description"] = "This quest is part of a series that starts in Stromwind.",
+				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
@@ -263,6 +306,19 @@ _.Zones =
 						i(2249),	-- Militia Buckler
 						i(2238),	-- Urchin's Pants
 					},
+				}),
+				q(2205, {	-- Seek out SI:7
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 917,	-- Keryn Sylvius
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						2218,	-- Road to Salvation(Dun Morogh)
+						2241,	-- The Apple Falls
+					},
+					["coord"] = { 43.9, 65.9, ELWYNN_FOREST },
+					["description"] = "Keryn Sylvius is located on the 2nd floor of the Lion's Pride Inn.",
 				}),
 				q(61, {	-- Shipment to Stormwind
 					["lvl"] = 3,
@@ -275,9 +331,18 @@ _.Zones =
 						i(2454),	-- Elixir of Lion's Strength
 					},
 				}),
+				q(2300, {	-- SI:7
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 917,	-- Keryn Sylvius
+					["sourceQuest"] = 2205,	-- Seek out SI:7
+					["isBreadcrumb"] = true,
+				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 15,	-- Investigate Echo Ridge
 					["g"] = {
 						i(2186),	-- Outfitter Belt
 						i(2691),	-- Outfitter Boots
@@ -289,7 +354,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 252,	-- Tommy Joe Stonefield
 				}),
-				{
+				q(1860, { -- Speak with Jennea
 					["questID"] = 1860,	-- Speak with Jennea
 					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["lvl"] = 10,
@@ -298,7 +363,9 @@ _.Zones =
 						1879,	-- Speak with Bink
 					},
 					["classes"] = {8},	-- Mage
-				},
+					["coord"] = { 43.3, 66.2, ELWYNN_FOREST },
+					["description"] = "Zaldimar Wefhellt is located on the 2nd floor of the Lion's Pride Inn.",
+				}),
 				q(123, {	-- The Collector
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite
@@ -318,12 +385,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 54,	-- Report to Goldshire
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(76, {	-- The Jasperlode Mine
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,
@@ -344,6 +413,8 @@ _.Zones =
 						i(6084),	-- Stormwind Guard Leggings
 						i(6215),	-- Balanced Fighting Stick
 					},
+					["coord"] = { 24.6, 78.2, ELWYNN_FOREST },
+					["description"] = "Click on the Wanted Poster to accept this quest.",
 				}),
 				q(7961, {	-- Waskily Wabbits!
 					["u"] = 1,
@@ -366,10 +437,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 76,	-- The Jasperlode Mine
+					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
 				q(33, {	-- Wolves Across the Border
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 196,	-- Eagan Peltskinner
+					["sourceQuest"] = 5261,	-- Eagan Peltskinner
 					["g"] = {
 						i(80),	-- Soft Fur-lined Shoes
 						i(6070),	-- Wolfskin Bracers

@@ -23,9 +23,6 @@ _.Zones =
 						i(9706),	-- Tharg's Disk
 					},
 				}),
-				q(6601, {	-- Ascension...
-					["lvl"] = 55,
-				}),
 				q(1220, {	-- Captain Vimes
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -49,9 +46,6 @@ _.Zones =
 					["qg"] = 3441,	-- Melor Stonehoof
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
-				}),
-				q(6570, {	-- Emberstrife
-					["lvl"] = 55,
 				}),
 				q(1271, {	-- Feast at the Blue Recluse
 					["lvl"] = 30,
@@ -93,22 +87,6 @@ _.Zones =
 						i(9703),	-- Scorched Cape
 						i(9704),	-- Rustler Gloves
 					},
-				}),
-				q(1301, {	-- James Hyal
-					["qg"] = 5081,	-- Connor Rivers
-					--["coord"] = { , , STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
-				}),
-				q(1302, {	-- James Hyal
-					["qg"] = 5082,	-- Vincent Hyal
-					["sourceQuest"] = 1301,	-- James Hyal
-					--["coord"] = { , , STORMWIND_CITY },
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 				}),
 				q(1206, {	-- Jarl Needs Eyes
 					["lvl"] = 30,
@@ -323,22 +301,6 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
 					--["objectID"] = 20985,	-- Loose Dirt
-				}),
-				q(6585, {	-- The Test of Skulls, Axtroz
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
-				q(6584, {	-- The Test of Skulls, Chronalis
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
-				q(6582, {	-- The Test of Skulls, Scryer
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
-				}),
-				q(6583, {	-- The Test of Skulls, Somnus
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 				}),
 				q(1202, {	-- The Theramore Docks
 					["lvl"] = 30,

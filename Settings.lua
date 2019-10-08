@@ -664,9 +664,19 @@ QuestsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(false);
-	self:Disable();
-	self:SetAlpha(0.2);
+	self:SetChecked(settings:Get("AccountWide:Quests"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Quests") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Quests", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
 end);
 QuestsAccountWideCheckBox:SetPoint("TOPLEFT", QuestsCheckBox, "TOPLEFT", 220, 0);
 
@@ -1679,7 +1689,7 @@ local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nWebsite for comparing Collections coming Soon™.|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention and Crieve|r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic, so we should eventually get it all!");
+AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nIf you wish to play with us, we're on Atiesh (Alliance) in the <ATT> guild! (Currently need all!)\n\nAlso... NO, we do NOT work for the phone company.\n\nWebsite for comparing Collections coming Soon™.|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention, Avella, Mogwai, and Crieve|r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic, so we should eventually get it all!");
 AboutText:Show();
 table.insert(settings.MostRecentTab.objects, AboutText);
 end)();

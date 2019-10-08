@@ -11,5 +11,39 @@ profession(129, {	-- First Aid
 	recipe(10841),	-- Heavy Mageweave Bandage
 	recipe(18629),	-- Runecloth Bandage
 	recipe(18630),	-- Heavy Runecloth Bandage
-	recipe(23787),	-- Powerful Anti-Venom
+	recipe(23787, {	-- Powerful Anti-Venom
+		["u"] = 3,	-- Added in later phase
+	}),
+	n(-17, {	-- Quests
+		q(6625, {	-- Alliance Trauma
+			["lvl"] = 35,
+			["races"] = ALLIANCE_ONLY,
+			["requireSkill"] = 129,	-- First Aid
+			["qg"] = 5150,	-- Nissa Firestone
+			["maps"] = { IRONFORGE },
+			["isBreadcrumb"] = true,
+		}),
+		q(6625, {	-- Horde Trauma
+			["lvl"] = 35,
+			["races"] = HORDE_ONLY,
+			["requireSkill"] = 129,	-- First Aid
+			["qg"] = 3373,	-- Arnok
+			["maps"] = { ORGRIMMAR },
+			["isBreadcrumb"] = true,
+		}),
+		q(6624, {	-- Triage (A)
+			["lvl"] = 35,
+			["races"] = ALLIANCE_ONLY,
+			["requireSkill"] = 129,	-- First Aid
+			["qg"] = 12939,	-- Doctor Gustaf VanHowzen
+			["maps"] = { DUSTWALLOW_MARSH },
+		}),
+		q(6622, {	-- Triage (H)
+			["lvl"] = 35,
+			["races"] = HORDE_ONLY,
+			["requireSkill"] = 129,	-- First Aid
+			["qg"] = 12920,	-- Doctor Gregory Victor
+			["maps"] = { ARATHI_HIGHLANDS },
+		}),
+	}),
 });

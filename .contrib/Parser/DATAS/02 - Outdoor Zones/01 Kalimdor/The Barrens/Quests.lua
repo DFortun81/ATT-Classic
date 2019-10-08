@@ -177,12 +177,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(862, {	-- Dig Rat Stew
-					["qg"] = 3443,	-- Grub
-					["coord"] = { 55.31, 31.79, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 15,
-				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
@@ -389,7 +383,7 @@ _.Zones =
 					["repeatable"] = true,
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
 					["lvl"] = 10,
-					-- Quest name does not show! Maybe not part of phase 1?
+					["maxReputation"] = { 470, NEUTRAL },	-- Ratchet, must be less than Neutral
 				}),
 				q(896, {	-- Miner's Fortune
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
@@ -423,6 +417,13 @@ _.Zones =
 					["provider"] = { "i", 5102 },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(1040, {	-- Passage to Booty Bay
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 3453,	-- Wharfmaster Dizzywig
+					["sourceQuests"] = 1039,	-- The Barrens Port(Darnassus)
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
 				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn

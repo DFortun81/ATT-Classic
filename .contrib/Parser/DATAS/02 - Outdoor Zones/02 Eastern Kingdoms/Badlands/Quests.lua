@@ -384,11 +384,6 @@ _.Zones =
 				q(692, {	-- The Lost Fragments
 					["lvl"] = 30,
 				}),
-				q(4062, {	-- The Rise of the Machines
-					["qg"] = 9079,	-- Hierophant Theodora Mulvadania
-					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-				}),
 				{	-- The Star, the Hand and the Heart
 					["allianceQuestID"] = 735,	-- The Star, the Hand and the Heart
 					["hordeQuestID"] = 736,	-- The Star, the Hand and the Heart

@@ -413,11 +413,6 @@ _.Zones =
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(5861, {	-- Find Myranda
-					["lvl"] = 52,
-					["qg"] = 1855,	-- Tirion Fordring
-					["sourceQuest"] = 5848,	-- Of Love and Family
-				}),
 				q(5246, {	-- Fragments of the Past
 					["lvl"] = 53,
 					["qg"] = 10304,	-- Aurora Skycaller
@@ -473,11 +468,6 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 10927,	-- Marlene Redpath
 				}),
-				q(5264, {	-- Lord Maxwell Tyrosus
-					["lvl"] = 55,
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
-					["sourceQuest"] = 5263,	-- Above and Beyond
-				}),
 				q(5513, {	-- Mantles of the Dawn
 					["lvl"] = 55,
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
@@ -486,11 +476,6 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5181,	-- Villains of Darrowshire
-				}),
-				q(5464, {	-- Menethil's Gift
-					["lvl"] = 57,
-					["provider"] = { "o", 176631 },	-- Menethil's Gift
-					["sourceQuest"] = 5463,	-- Menethil's Gift
 				}),
 				q(5510, {	-- Minion's Scourgestones
 					["lvl"] = 50,
@@ -509,40 +494,11 @@ _.Zones =
 						i(15875),	-- Rotten Apple
 					},
 				}),
-				q(5781, {	-- Of Forgotten Memories
-					["lvl"] = 52,
-					["qg"] = 1855,	-- Tirion Fordring
-					["sourceQuest"] = 5742,	-- Redemption
-				}),
-				q(5845, {	-- Of Lost Honor
-					["lvl"] = 52,
-					["qg"] = 1855,	-- Tirion Fordring
-					["sourceQuest"] = 5781,	-- Of Forgotten Memories
-				}),
-				q(5846, {	-- Of Love and Family
-					["lvl"] = 52,
-					["qg"] = 1855,	-- Tirion Fordring
-					["sourceQuest"] = 5845,	-- Of Lost Honor
-				}),
 				q(5149, {	-- Pamela's Doll
 					["lvl"] = 50,
 					["g"] = {
 						i(12886),	-- Pamela's Doll's Head
 						i(12887),	-- Pamela's Doll's Left Side
-					},
-				}),
-				q(8946, {	-- Proof of Life
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 58,
-					["qg"] = 16031,	-- Ysida Harmon
-				}),
-				q(5742, {	-- Redemption
-					["lvl"] = 52,
-					["qg"] = 1855,	-- Tirion Fordring
-					["sourceQuests"] = {
-						5543,	-- Blood Tinged Skies
-						5544,	-- Carrion Grubbage						
-						5542,	-- Demon Dogs
 					},
 				}),
 				q(5941, {	-- Return to Chromie
@@ -630,14 +586,6 @@ _.Zones =
 					["lvl"] = 54,
 					["qg"] = 11033,	-- Smokey LaRue
 				}),
-				q(5265, {	-- The Argent Hold
-					["lvl"] = 55,
-					["g"] = {
-						i(13246),	-- Argent Avenger
-						i(13243),	-- Argent Defender
-						i(13249),	-- Argent Crusader
-					},
-				}),
 				q(5721, {	-- The Battle of Darrowshire
 					["lvl"] = 55,
 					["sourceQuest"] = 5941,	-- Return to Chromie
@@ -681,15 +629,6 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11878,	-- Nathanos Blightcaller
-				}),
-				q(5281, {	-- The Restless Souls
-					["lvl"] = 55,
-					["qg"] = 11038,	-- Caretaker Alen
-				}),
-				q(5282, {	-- The Restless Souls
-					["lvl"] = 55,
-					["qg"] = 11140,	-- Egan
-					["sourceQuest"] = 5281,	-- The Restless Souls
 				}),
 				q(6148, {	-- The Scarlet Oracle, Demetria
 					["lvl"] = 56,

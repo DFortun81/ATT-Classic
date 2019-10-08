@@ -71,6 +71,20 @@ _.Zones =
 						i(2547),	-- Boar Handler Gloves
 					},
 				}),
+				q(3113, {	-- Encrypted Memorandum
+					["lvl"] = 1,
+					["races"] = { 7 },	-- Gnome
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 658,	-- Sten Stoutarm
+					["sourceQuest"] = 179,	-- Dwarven Outfitters
+				}),
+				q(3109, {	-- Encrypted Rune
+					["lvl"] = 1,
+					["races"] = { 3 },	-- Dwarf
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 658,	-- Sten Stoutarm
+					["sourceQuest"] = 179,	-- Dwarven Outfitters
+				}),
 				q(318, {	-- Evershine
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
@@ -90,13 +104,14 @@ _.Zones =
 					["repeatable"] = true,
 					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
 				}),
-				q(4126, {	-- Hurley Blackbreath
-					["lvl"] = 50,
+				q(2239, {	-- Onin's Report
+					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1267,	-- Ragnar Thunderbrew
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 6886,	-- Onin MacHammer
+					["sourceQuest"] = 2238,	-- Simple Subterfugin'
 					["g"] = {
-						i(11964),	-- Swiftstrike Cudgel
-						i(12000),	-- Limb Cleaver
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				q(412, {	-- Operation Recombobulation
@@ -142,6 +157,17 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 270,	-- Unguarded Thunder Ale Barrel
+				}),
+				q(2218, {	-- Road to Salvation
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 1234,	-- Hogral Bakkan
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						2205,	-- Seek out SI:7
+						2241,	-- The Apple Falls
+					},
 				}),
 				q(3364, {	-- Scalding Mornbrew Delivery
 					["lvl"] = 4,
@@ -225,6 +251,7 @@ _.Zones =
 					["g"] = {
 						i(3151),	-- Siege Brigade Vest
 					},
+					["coord"] = { 83.8, 39.2, DUN_MOROGH },
 				}),
 				q(315, {	-- The Perfect Stout
 					["lvl"] = 5,
@@ -267,6 +294,14 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1254,	-- Foreman Stonebrow
+				}),
+				q(2299, {	-- To Hulfdan!
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 4 },	-- Rogue
+					["qg"] = 1234,	-- Hogral Bakkan
+					["isBreadcrumb"] = true,
+					["sourceQuest"] = 2218,	-- Road to Salvation
 				}),
 				q(400, {	-- Tools for Steelgrill
 					["lvl"] = 2,

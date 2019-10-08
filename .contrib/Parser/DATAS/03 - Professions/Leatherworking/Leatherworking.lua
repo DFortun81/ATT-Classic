@@ -127,7 +127,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Bramblewood Helm",
-				["recipeID"] = 28472
+				["recipeID"] = 28472,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Comfortable Leather Hat",
@@ -189,7 +190,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Blood Tiger Shoulders",
-				["recipeID"] = 24125
+				["recipeID"] = 24125,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Blue Dragonscale Shoulders",
@@ -205,7 +207,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Golden Mantle of the Dawn",
-				["recipeID"] = 23706
+				["recipeID"] = 23706,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Heavy Scorpid Shoulders",
@@ -271,7 +274,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Blood Tiger Breastplate",
-				["recipeID"] = 24124
+				["recipeID"] = 24124,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Blue Dragonscale Breastplate",
@@ -343,7 +347,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Icy Scale Breastplate",
-				["recipeID"] = 28222
+				["recipeID"] = 28222,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Ironfeather Breastplate",
@@ -367,15 +372,18 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Onyxia Scale Breastplate",
-				["recipeID"] = 19106
+				["recipeID"] = 19106,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Polar Tunic",
-				["recipeID"] = 28219
+				["recipeID"] = 28219,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Primal Batskin Jerkin",
-				["recipeID"] = 24121
+				["recipeID"] = 24121,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Raptor Hide Harness",
@@ -391,11 +399,13 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Sandstalker Breastplate",
-				["recipeID"] = 24851
+				["recipeID"] = 24851,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Spitfire Breastplate",
-				["recipeID"] = 24848
+				["recipeID"] = 24848,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Stormshroud Armor",
@@ -473,7 +483,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Icy Scale Bracers",
-				["recipeID"] = 28224
+				["recipeID"] = 28224,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Light Leather Bracers",
@@ -485,11 +496,13 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Polar Bracers",
-				["recipeID"] = 28221
+				["recipeID"] = 28221,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Primal Batskin Bracers",
-				["recipeID"] = 24123
+				["recipeID"] = 24123,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Runic Leather Bracers",
@@ -497,15 +510,18 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Sandstalker Bracers",
-				["recipeID"] = 24849
+				["recipeID"] = 24849,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Spitfire Bracers",
-				["recipeID"] = 24846
+				["recipeID"] = 24846,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Swift Flight Bracers",
-				["recipeID"] = 22923
+				["recipeID"] = 22923,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Tough Scorpid Bracers",
@@ -603,7 +619,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Icy Scale Gauntlets",
-				["recipeID"] = 28223
+				["recipeID"] = 28223,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Nimble Leather Gloves",
@@ -615,11 +632,13 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Polar Gloves",
-				["recipeID"] = 28220
+				["recipeID"] = 28220,
+				["u"] = 3,	-- Added in later phase (Naxx)
 			},
 			{
 				["name"] = "Primal Batskin Gloves",
-				["recipeID"] = 24122
+				["recipeID"] = 24122,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Red Whelp Gloves",
@@ -631,7 +650,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Sandstalker Gauntlets",
-				["recipeID"] = 24850
+				["recipeID"] = 24850,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Shadowskin Gloves",
@@ -639,15 +659,18 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Spitfire Gauntlets",
-				["recipeID"] = 24847
+				["recipeID"] = 24847,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Stormshroud Gloves",
-				["recipeID"] = 26279
+				["recipeID"] = 26279,
+				["u"] = 3,	-- Added in later phase (Elemental Invasion)
 			},
 			{
 				["name"] = "Timbermaw Brawlers",
-				["recipeID"] = 23704
+				["recipeID"] = 23704,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Tough Scorpid Gloves",
@@ -677,7 +700,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Bramblewood Belt",
-				["recipeID"] = 28474
+				["recipeID"] = 28474,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Corehound Belt",
@@ -705,7 +729,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Girdle of Insight",
-				["recipeID"] = 22921
+				["recipeID"] = 22921,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Green Leather Belt",
@@ -733,7 +758,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Might of the Timbermaw",
-				["recipeID"] = 23703
+				["recipeID"] = 23703,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Molten Belt",
@@ -881,7 +907,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Bramblewood Boots",
-				["recipeID"] = 28473
+				["recipeID"] = 28473,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Chimeric Boots",
@@ -897,7 +924,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Dawn Treaders",
-				["recipeID"] = 23705
+				["recipeID"] = 23705,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Dusky Boots",
@@ -921,7 +949,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Mongoose Boots",
-				["recipeID"] = 22922
+				["recipeID"] = 22922,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Nightscape Boots",
@@ -955,7 +984,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Chromatic Cloak",
-				["recipeID"] = 22926
+				["recipeID"] = 22926,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Dark Leather Cloak",
@@ -987,7 +1017,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Hide of the Wild",
-				["recipeID"] = 22927
+				["recipeID"] = 22927,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Hillman's Cloak",
@@ -995,7 +1026,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Nightscape Cloak",
-				["recipeID"] = 10550
+				["recipeID"] = 10550,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Onyxia Scale Cloak",
@@ -1003,7 +1035,8 @@ profession(165, {	-- Leatherworking
 			},
 			{
 				["name"] = "Shifting Cloak",
-				["recipeID"] = 22928
+				["recipeID"] = 22928,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Wild Leather Cloak",
@@ -1011,4 +1044,252 @@ profession(165, {	-- Leatherworking
 			}
 		}
 	},
+	n(-17, {	-- Quests
+		q(5141, {	-- Dragonscale Leatherworking (A)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { AZSHARA },
+			["races"] = ALLIANCE_ONLY,
+			["altQuests"] = {
+				5144,	-- Elemental Leatherworking
+				5143,	-- Tribal Leatherworking
+			},
+			["qg"] = 7866,	-- Peter Galen
+		}),
+		q(5145, {	-- Dragonscale Leatherworking (H)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { BADLANDS },
+			["races"] = HORDE_ONLY,
+			["altQuests"] = {
+				5146,	-- Elemental Leatherworking
+				5148,	-- Tribal Leatherworking
+			},
+			["qg"] = 7867,	-- Thorkaf Dragoneye
+		}),
+		q(5144, {	-- Elemental Leatherworking (A)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { SEARING_GORGE },
+			["races"] = ALLIANCE_ONLY,
+			["altQuests"] = {
+				5141,	-- Dragonscale Leatherworking
+				5143,	-- Tribal Leatherworking
+			},
+			["qg"] = 7868,	-- Sarah Tanner
+		}),
+		q(5146, {	-- Elemental Leatherworking (H)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { ARATHI_HIGHLANDS },
+			["races"] = HORDE_ONLY,
+			["altQuests"] = {
+				5145,	-- Dragonscale Leatherworking
+				5148,	-- Tribal Leatherworking
+			},
+			["qg"] = 7869,	-- Brumn Winterhoof
+		}),
+		q(2853, {	-- Master of the Wild Leather (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuests"] = {
+				2851,	-- Wild Leather Boots
+				2850,	-- Wild Leather Helmet
+				2852,	-- Wild Leather Leggings
+				2848,	-- Wild Leather Shoulders
+				2849,	-- Wild Leather Vest
+			},
+			["g"] = {
+				i(8408),	-- Pattern: Wild Leather Cloak
+			},
+		}),
+		q(2860, {	-- Master of the Wild Leather (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuests"] = {
+				2858,	-- Wild Leather Boots
+				2857,	-- Wild Leather Helmet
+				2859,	-- Wild Leather Leggings
+				2855,	-- Wild Leather Shoulders
+				2856,	-- Wild Leather Vest
+			},
+			["g"] = {
+				i(8408),	-- Pattern: Wild Leather Cloak
+			},
+		}),
+		q(1582, {	-- Moonglow Vest
+			["lvl"] = 8,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { DARNASSUS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 6034,	-- Lotherias
+			["coord"] = { 64.4, 22.2, DARNASSUS },
+			["description"] = "Quest giver is on the 2nd floor of the building.",
+			["g"] = {
+				i(6710),	-- Pattern: Moonglow Vest
+			},
+		}),
+		q(5143, {	-- Tribal Leatherworking (A)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["altQuests"] = {
+				5141,	-- Dragonscale Leatherworking
+				5144,	-- Elemental Leatherworking
+			},
+			["qg"] = 7870,	-- Caryssia Moonhunter
+		}),
+		q(5148, {	-- Tribal Leatherworking (H)
+			["lvl"] = 40,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { STRANGLETHORN_VALE },
+			["races"] = HORDE_ONLY,
+			["altQuests"] = {
+				5145,	-- Dragonscale Leatherworking
+				5146,	-- Elemental Leatherworking
+			},
+			["qg"] = 7871,	-- Se'Jib
+		}),
+		q(2847, {	-- Wild Leather Armor (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+		}),
+		q(2854, {	-- Wild Leather Armor (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["cost"] = {
+				{ "i", 4304, 10 },	-- Thick Leather
+			},
+		}),
+		q(2851, {	-- Wild Leather Boots (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["g"] = {
+				i(8406),	-- Pattern: Wild Leather Boots
+			},
+		}),
+		q(2858, {	-- Wild Leather Boots (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["g"] = {
+				i(8406),	-- Pattern: Wild Leather Boots
+			},
+		}),
+		q(2850, {	-- Wild Leather Helmet (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["g"] = {
+				i(8405),	-- Pattern: Wild Leather Helmet
+			},
+		}),
+		q(2857, {	-- Wild Leather Helmet (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["g"] = {
+				i(8405),	-- Pattern: Wild Leather Helmet
+			},
+		}),
+		q(2852, {	-- Wild Leather Leggings (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["g"] = {
+				i(8407),	-- Pattern: Wild Leather Leggings
+			},
+		}),
+		q(2859, {	-- Wild Leather Leggings (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["g"] = {
+				i(8407),	-- Pattern: Wild Leather Leggings
+			},
+		}),
+		q(2848, {	-- Wild Leather Shoulders (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["g"] = {
+				i(8403),	-- Pattern: Wild Leather Shoulders
+			},
+		}),
+		q(2855, {	-- Wild Leather Shoulders (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["g"] = {
+				i(8403),	-- Pattern: Wild Leather Shoulders
+			},
+		}),
+		q(2849, {	-- Wild Leather Vest (A)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7852,	-- Pratt McGrubben
+			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["g"] = {
+				i(8404),	-- Pattern: Wild Leather Vest
+			},
+		}),
+		q(2856, {	-- Wild Leather Vest (H)
+			["lvl"] = 30,
+			["requireSkill"] = 165,	-- Leatherworking
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["g"] = {
+				i(8404),	-- Pattern: Wild Leather Vest
+			},
+		}),
+	}),
 });

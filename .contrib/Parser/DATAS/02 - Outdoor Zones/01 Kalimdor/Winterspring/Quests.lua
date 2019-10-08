@@ -17,9 +17,13 @@ _.Zones =
 					["qg"] = 11755,	-- Harlo Wigglesworth
 				}),
 				q(8798, {	-- A Yeti of Your Own
-					["u"] = 3,	-- Added in later phase
+					["requireSkill"] = 202,	-- Engineering
 					["lvl"] = 55,
 					["qg"] = 10305,	-- Umi Rumplesnicker
+					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
+					["g"] = {
+						recipe(26011),	-- Tranquil Mechanical Yeti
+					},
 				}),
 				q(3783, {	-- Are We There, Yeti? (1/3)
 					["lvl"] = 52,
@@ -44,14 +48,6 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 8464,	-- Winterfall Activity
 				}),
-				q(5068, {	-- Breastplate of Bloodthirst
-					["lvl"] = 57,
-					["qg"] = 10637,	-- Malyfous Darkhammer
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12757),	-- Breastplate of Bloodthirst
-					},
-				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["lvl"] = 53,
 					["races"] = HORDE_ONLY,
@@ -65,14 +61,6 @@ _.Zones =
 					["sourceQuest"] = 969,	-- Luck Be With You
 					["g"] = {
 						i(12384),	-- Cache of Mau'ari
-					},
-				}),
-				q(5063, {	-- Cap of the Scarlet Savant
-					["lvl"] = 57,
-					["qg"] = 10637,	-- Malyfous Darkhammer
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12752),	-- Cap of the Scarlet Savant
 					},
 				}),
 				q(4804, {	-- Chillwind E'ko
@@ -89,50 +77,37 @@ _.Zones =
 					["qg"] = 10468,	-- Felnok Steelspring
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
 				}),
-				q(6502, {	-- Drakefire Amulet
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 6501,	-- The Dragon's Eye
-					["g"] = {
-						i(16309),	-- Drakefire Amulet
-					},
-				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
 					["lvl"] = 50,
 					["qg"] = 10431,	-- Gregor Greystone
 				}),
-				q(4861, {	-- Enraged Wildkin
+				q(6604, {	-- Enraged Wildkin (1/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
+					["qg"] = 11755,	-- Harlo Wigglesworth
+					["isBreadcrumb"] = true,
 				}),
-				q(4864, {	-- Enraged Wildkin
+				q(4861, {	-- Enraged Wildkin (2/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10301,	-- Jaron Stoneshaper <Explorers' League>
+					["qg"] = 10301,	-- Jaron Stoneshaper
 				}),
-				q(6604, {	-- Enraged Wildkin
+				q(4863, {	-- Enraged Wildkin (3/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 175587 },	-- Damaged Crate
+					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
 				}),
-				q(4863, {	-- Enraged Wildkin
+				q(4864, {	-- Enraged Wildkin (4/4)
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175587,	-- Damaged Crate
+					["provider"] = { "o", 175586 },	-- Jaron's Wagon
+					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
 				}),
 				q(5084, {	-- Falling to Corruption
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
-				}),
-				q(5124, {	-- Fiery Plate Gauntlets
-					["lvl"] = 55,
-					["requireSkill"] = 164,	-- Blacksmithing
-					["g"] = {
-						i(12699),	-- Plans: Fiery Plate Gauntlets
-						i(12631),	-- Fiery Plate Gauntlets
-					},
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
@@ -187,13 +162,6 @@ _.Zones =
 						i(12459),	-- Juju Escape
 					},
 				}),
-				q(5067, {	-- Leggings of Arcana
-					["lvl"] = 57,
-					--["objectID"] = 175927,	-- Malyfous's Catalogue
-					["g"] = {
-						i(12756),	-- Leggings of Arcana
-					},
-				}),
 				q(969, {	-- Luck Be With You
 					["lvl"] = 55,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -215,6 +183,7 @@ _.Zones =
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["lvl"] = 53,
+					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
 				q(4810, {	-- Return to Tinkee
 					["lvl"] = 50,
@@ -328,6 +297,11 @@ _.Zones =
 						i(12451),	-- Juju Power
 					},
 				}),
+				q(8464, {	-- Winterfall Activity
+					["lvl"] = 45,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11556,	-- Salfa
+				}),
 				q(5083, {	-- Winterfall Firewater
 					["lvl"] = 52,
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
@@ -347,16 +321,6 @@ _.Zones =
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5123,	-- The Final Piece
-				}),
-				q(5161, {	-- Wrath of the Blue Flight
-					["lvl"] = 57,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 5160,	-- The Matron Protectorate
-				}),
-				q(5162, {	-- Wrath of the Blue Flight
-					["lvl"] = 57,
-					["qg"] = 10929,	-- Haleh
-					["sourceQuest"] = 5161,	-- Wrath of the Blue Flight
 				}),
 			}),
 		}),

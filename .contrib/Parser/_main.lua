@@ -19,6 +19,7 @@ ZULGURUB = 337;
 -- Dungeons (Custom)
 BLACKFATHOM_DEEPS = 221;
 BLACKROCK_DEPTHS = 242;
+BLACKROCK_SPIRE = 250;
 DEADMINES = 291;
 DIRE_MAUL = -1;
 GNOMEREGAN = 226;
@@ -28,6 +29,8 @@ RAZORFEN_DOWNS = 300;
 RAZORFEN_KRAUL = 301;
 SCARLET_MONASTERY = 435;
 SHADOWFANG_KEEP = 310;
+SCHOLOMANCE = 476;
+STRATHOLME = 317;
 SUNKEN_TEMPLE = 220;
 TEMPLE_OF_ATALHAKKAR = 220;
 THE_STOCKADE = 225;
@@ -285,6 +288,7 @@ ItemClassInfo = {
 		"Fishing", -- [9]
 		"Jewelcrafting", -- [10]
 		"Inscription", -- [11]
+		"Poisons",	-- [12]
 		[0] = "Book",
 		["class"] = "Recipe",
 	}, -- [9]

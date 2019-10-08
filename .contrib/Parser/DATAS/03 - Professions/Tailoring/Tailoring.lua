@@ -277,7 +277,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Bloodvine Vest",
-				["recipeID"] = 24091
+				["recipeID"] = 24091,
+				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Blue Linen Robe",
@@ -649,7 +650,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Bloodvine Leggings",
-				["recipeID"] = 24092
+				["recipeID"] = 24092,
+				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Brightcloth Pants",
@@ -755,7 +757,8 @@ profession(197, {	-- Tailoring
 			},
 			{
 				["name"] = "Bloodvine Boots",
-				["recipeID"] = 24093
+				["recipeID"] = 24093,
+				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Boots of Darkness",

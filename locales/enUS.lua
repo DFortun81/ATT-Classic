@@ -219,7 +219,8 @@ app.L = {
 		-- [-22] = "Atal'ai Defenders",														-- Atal'ai Defenders
 		[-25] = "Interface\\Icons\\Tracking_WildPet", 										-- Pet Battles
 		[-26] = "Interface\\Icons\\INV_Misc_Bag_07_Green", 									-- Drop
-		[-29] = "Interface\\Icons\\Inv_misc_bag_17", 										-- Raid Finder Bag
+		[-27] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",						-- Lower (Blackrock Spire)
+		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
 		[-31] = "Interface\\Icons\\INV_Pet_BabyMurlocs_Blue",								-- Promotion
 		[-32] = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK", 						-- Trading Card Game
 		[-33] = "Interface\\Icons\\trade_fishing", 											-- Fishing
@@ -234,7 +235,7 @@ app.L = {
 		[-44] = "Interface\\Icons\\inv_chest_leather_09",									-- Leather Armor
 		[-45] = "Interface\\Icons\\inv_chest_chain_05",										-- Mail Armor
 		[-46] = "Interface\\Icons\\inv_chest_plate01",										-- Plate Armor
-		[-47] = "Interface\\Icons\\achievement_worldevent_lunar",							-- Lunar Festival
+		[-47] = "Interface\\Icons\\inv_misc_elvencoins",									-- Lunar Festival
 		[-50] = "Interface\\Icons\\achievement_worldevent_valentine",						-- Love is in the Air
 		[-51] = "Interface\\Icons\\inv_egg_09",												-- Noblegarden
 		[-52] = "Interface\\Icons\\inv_misc_toy_04",										-- Children's Week
@@ -246,7 +247,7 @@ app.L = {
 		[-58] = "Interface\\Addons\\ATT-Classic\\assets\\hallows_end",						-- Hallow's End
 		[-59] = "Interface\\Icons\\inv_misc_bone_humanskull_02",							-- Day of the Dead
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
-		[-61] = "Interface\\Icons\\achievement_worldevent_merrymaker",						-- The Feast of Winter Veil
+		[-61] = "Interface\\Icons\\inv_holiday_christmas_present_01",						-- The Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
 		[-63] = "Interface\\Calendar\\Holidays\\calendar_transmogpopularityconteststart",	-- Trial of Style
 		[-64] = "Interface\\Icons\\inv_misc_book_07",										-- Main Questline
@@ -347,6 +348,7 @@ app.L = {
 		[-208] = "Interface\\Icons\\achievement_alliedrace_voidelf",						-- Void Elf
 		[-209] = "Interface\\Icons\\achievement_alliedrace_highmountaintauren",				-- Highmountain Tauren
 		[-210] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
+		[-211] = "Interface\\Icons\\trade_brewpoison",										-- Poisons
 		[-212] = "Interface\\WorldMap\\TreasureChest_64",									-- Treasure Chest
 		[-213] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",								-- The Underbelly
 		[-214] = "Interface\\Icons\\achievement_alliedrace_nightborne",						-- Nightborne
@@ -628,7 +630,8 @@ app.L = {
 		[-22] = "Atal'ai Defenders",											-- Atal'ai Defenders
 		[-25] = SHOW_PET_BATTLES_ON_MAP_TEXT, 									-- Pet Battles
 		[-26] = BATTLE_PET_SOURCE_1,											-- Drop
-		
+		[-27] = "Lower",														-- Lower (Blackrock Spire)
+		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-31] = BATTLE_PET_SOURCE_8,											-- Promotion
 		[-32] = BATTLE_PET_SOURCE_9,											-- Trading Card Game
 		
@@ -697,6 +700,7 @@ app.L = {
 		[-193] = PROFESSIONS_FIRST_AID, 										-- First Aid
 		[-194] = PROFESSIONS_FISHING, 											-- Fishing
 		
+		[-211] = GetSpellInfo(2995),											-- Rogue Poisons
 		[-212] = "Treasure Chest",												-- Treasure Chest
 		[-220] = CLASS,															-- Class
 		[-226] = TRANSMOG_SOURCE_4,												-- World Drop
@@ -1144,6 +1148,8 @@ app.L = {
 		[161521] = "Research Equipment",
 		[161526] = "Crate of Foodstuffs",
 		[164820] = "Dark Keeper Nameplate",
+		[164867] = "WANTED",
+		[164868] = "KILL ON SIGHT",
 		[164869] = "The Spectral Chalice",
 		[164885] = "Corrupted Night Dragon",
 		[164886] = "Corrupted Songflower",
@@ -1162,6 +1168,7 @@ app.L = {
 		[176091] = "Deadwood Cauldron",
 		[176115] = "Wanted Poster - Arnak Grimtotem",
 		[176392] = "Scourge Cauldron",
+		[176631] = "Menethil's Gift",
 		[177787] = "Rackmore's Log",
 		[177904] = "Wanted Poster: Besseleth",
 		[177964] = "Fathom Stone",
@@ -1334,6 +1341,9 @@ app.L = {
 		[67] = "Interface\\Icons\\inv_boots_05",	-- Boots
 		[68] = "Interface\\Icons\\inv_misc_cape_16",	-- Cloaks
 		[69] = "Interface\\Icons\\inv_shirt_red_01",	-- Shirts
+		
+		-- Poisons
+		[70] = "Interface\\Icons\\ability_creature_poison_06", -- Consumable
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1418,6 +1428,9 @@ app.L = {
 		[67] = "Boots",	-- Boots
 		[68] = "Cloaks",	-- Cloaks
 		[69] = "Shirts",	-- Shirts
+		
+		-- Poisons
+		[70] = "Consumable",	-- Consumable
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
@@ -1436,6 +1449,7 @@ app.L = {
 		["Blackrock Depths"] = 242,
 		["Blackwing Lair"] = 287,
 		["Blackrock Mountain"] = 35,
+		["Blackrock Spire"] = 250,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,
@@ -1449,7 +1463,9 @@ app.L = {
 		["Razorfen Kraul"] = 301,
 		["Ruins of Ahn'Qiraj"] = 247,
 		["Scarlet Monastery"] = 435,
+		["Scholomance"] = 476,
 		["Shadowfang Keep"] = 310,
+		["Strathholme"] = 317,
 		["Temple of Ahn'Qiraj"] = 320,
 		["The Temple of Atal'hakkar"] = 220,
 		["The Stockade"] = 225,

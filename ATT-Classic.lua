@@ -3324,6 +3324,7 @@ local skillIDMap = {
 	[-192] = 185, 											-- Cooking
 	[-193] = 129, 											-- First Aid
 	[-194] = 356, 											-- Fishing
+	[-211] = 70,											-- Poisons
 };
 app.BaseNPC = {
 	__index = function(t, key)
@@ -3409,6 +3410,7 @@ app.SkillIDToSpellID = setmetatable({
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
+	[40] = 2842,	-- Poison
 }, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)
@@ -4068,7 +4070,7 @@ app.CreateMinimapButton = CreateMinimapButton;
 local CreateRow;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "");
+	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
 	if not popout then
 		popout = app:GetWindow(suffix);
@@ -4981,8 +4983,11 @@ local function RowOnEnter(self)
 				GameTooltip:AddDoubleLine("Races", (reference.r == 2 and ITEM_REQ_ALLIANCE) or (reference.r == 1 and ITEM_REQ_HORDE) or "Unknown");
 			end
 		end
-		if reference.isDaily then GameTooltip:AddLine("This can be completed daily."); end
-		if reference.isWeekly then GameTooltip:AddLine("This can be completed weekly."); end
+		if reference.isDaily then GameTooltip:AddLine("This can be completed daily.");
+		elseif reference.isWeekly then GameTooltip:AddLine("This can be completed weekly.");
+		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
+		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
+		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
 		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
 			GameTooltipIcon:SetSize(72,72);
 			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);

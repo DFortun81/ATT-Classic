@@ -70,7 +70,12 @@ profession(202, {	-- Engineering
 				["g"] = {
 					{
 						["name"] = "Inlaid Mithril Cylinder Plans",
-						["recipeID"] = 12895
+						["recipeID"] = 12895,
+						["g"] = {
+							i(10713, {	-- Plans: Inlaid Mithril Cylinder
+								["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+							}),
+						},
 					}
 				}
 			},
