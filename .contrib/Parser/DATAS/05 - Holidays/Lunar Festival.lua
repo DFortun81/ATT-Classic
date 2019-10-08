@@ -22,14 +22,14 @@ _.Holidays =
 				i(21726),	-- Schematic: Small Red Rocket
 			}),
 		}),
-	}),
-	n(-17, {	-- Quests
-		q(8878, {	-- Festive Recipes
-			["lvl"] = 50,
-			["g"] = {
-				i(21722),	-- Pattern: Festival Dress
-				i(21723),	-- Pattern: Festive Red Pant Suit
-			},
+		n(-17, {	-- Quests
+			q(8878, {	-- Festive Recipes
+				["lvl"] = 50,
+				["g"] = {
+					i(21722),	-- Pattern: Festival Dress
+					i(21723),	-- Pattern: Festive Red Pant Suit
+				},
+			}),
 		}),
 	}),
 };
