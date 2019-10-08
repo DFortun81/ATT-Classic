@@ -288,6 +288,20 @@ _.Zones =
 						i(18404),	-- Onyxia Tooth Pendant
 					},
 				}),
+				q(5652, {	-- Hex of Weakness
+					["qg"] = 6018,	-- Ur'kyo
+					["coord"] = { 35.60, 87.77, ORGRIMMAR },
+					["altQuests"] = {
+						5653,
+						5654,
+						5655,
+						5656,
+						5657,
+					},
+					["class"] = PRIEST,
+					["races"] = { TROLL },
+					["lvl"] = 10
+				}),
 				--q(5726, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]

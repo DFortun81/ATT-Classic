@@ -72,6 +72,26 @@ _.Zones =
 				q(4508, {	-- Calm Before the Storm
 					["lvl"] = 50,
 				}),
+				q(6610, {	-- Clamlette Surprise
+					["qg"] = 8125,	-- Dirge Quikcleave
+					["coord"] = { 52.63, 28.12, TANARIS },
+					["requireSkill"] = 185,	-- Cooking
+					["cost"] = {
+						{ "i", 12207, 12 },	-- Giant Egg
+						{ "i", 7974, 10 },	-- Zesty Clam Meat
+						{ "i", 8932, 20 },	-- Alterac Swiss
+					},
+					["lvl"] = 35,
+				}),
+				q(8181, {	-- Confront Yeh'kinya
+					["u"] = 3,	-- Added in later phase
+					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(20218),	-- Faded Hakkari Cloak
+						i(20219),	-- Tattered Hakkari Cape
+					},
+				}),
 				q(8606, {	-- Decoy!
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
@@ -133,10 +153,6 @@ _.Zones =
 				}),
 				q(113, {	-- Insect Part Analysis
 					["lvl"] = 39,
-					["races"] = HORDE_ONLY,
-				}),
-				q(243, {	-- Into the Field
-					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
 				}),
 				q(3914, {	-- Linken's Sword
@@ -201,6 +217,7 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(379, {	-- Slake That Thirst
+					["sourceQuest"] = 243,	-- Into the Field
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
 					["g"] = {

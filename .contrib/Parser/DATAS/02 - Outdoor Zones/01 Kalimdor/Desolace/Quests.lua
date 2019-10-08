@@ -271,13 +271,17 @@ _.Zones =
 					["qg"] = 5638,	-- Kreldig Ungor
 				}),
 				q(1361, {	-- Regthar Deathgate
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qgs"] = {
 						2229,	-- Krusk
 						4485,	-- Belgrom Rockmaul
 						10540,	-- Vol'jin
 					},
+					["coords"] = {
+						{ 63.24, 20.68, HILLSBRAD_FOOTHILLS },	-- Krusk
+					},
+					["maps"] = { ORGRIMMAR, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1440, {	-- Return to Vahlarriel
 					["lvl"] = 30,
@@ -373,9 +377,11 @@ _.Zones =
 					["qg"] = 5638,	-- Kreldig Ungor
 				}),
 				q(1362, {	-- The Kolkar of Desolace
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3389,	-- Regthar Deathgate
+					["sourceQuest"] = 361,	-- Regthar Deathgate
+					["coord"] = { 45.34, 28.42, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1465, {	-- Vahlarriel's Search
 					["lvl"] = 30,

@@ -20,18 +20,25 @@ _.Zones =
 					--["objectID"] = 2702,	-- Stone of Inner Binding
 				}),
 				q(677, {	-- Call to Arms
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2771,	-- Drum Fel
+					["sourceQuest"] = 676,	-- The Hammer May Fall
+					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(678, {	-- Call to Arms
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2771,	-- Drum Fel
+					["sourceQuest"] = 677,	-- Call to Arms
+					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(679, {	-- Call to Arms
-					["lvl"] = 30,
+					["qg"] = 2771,	-- Drum Fel
+					["sourceQuest"] = 678,	-- Call to Arms
+					["coord"] = { 74.24, 33.91, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(9520),	-- Silent Hunter
 						i(9521),	-- Skullsplitter
@@ -242,6 +249,13 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
+				}),
+				q(6622, {	-- Triage
+					["qg"] = 12920,	-- Doctor Gregory Victor
+					["coord"] = { 73.40, 36.89, ARATHI_HIGHLANDS },
+					["requireSkill"] = 129,	-- First Aid
+					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(645, {	-- Trol'kalar
 					["lvl"] = 32,
