@@ -134,7 +134,7 @@ _.Zones =
 				q(1083, {	-- Enraged Spirits
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
-					--["coord"] = { },
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
@@ -238,7 +238,8 @@ _.Zones =
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4080,	-- Kaela Shadowspear
-					["sourceQuest"] = 1070,	-- On Guard in Stonetalon(Ashenvale)
+					["sourceQuest"] = 1070,	-- On Guard in Stonetalon (Ashenvale)
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 				}),
 				q(1088, {	-- Ordanus
 					["qg"] = 4198,	-- Braelyn Firehand
@@ -268,14 +269,14 @@ _.Zones =
 				}),
 				q(1057, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
-					--["coord"] = { },
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(1059, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
 					["sourceQuest"] = 1057,	-- Reclaiming the Charred Vale
-					--["coord"] = { },
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -352,14 +353,14 @@ _.Zones =
 						1083,	-- Enraged Spirits
 						1084,	-- Wounded Ancients
 					},
-					--["coord"] = { },
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1084, {	-- Wounded Ancients
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1091,	-- Kaela's Update
-					--["coord"] = { },
+					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
