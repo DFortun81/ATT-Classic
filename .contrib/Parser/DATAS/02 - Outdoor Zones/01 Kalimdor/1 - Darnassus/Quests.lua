@@ -136,6 +136,7 @@ _.Zones =
 						4,	-- Night Elf
 					},
 					["qg"] = 4241,	-- Mydrannul
+					["coord"] = { 70.6, 45.3, DARNASSUS },
 				}),
 				q(6762, {	-- Rabine Saturna
 					["lvl"] = 54,

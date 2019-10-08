@@ -36,16 +36,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
 					["sourceQuest"] = 928,	-- Crown of the Earth (2/6)
+					["coord"] = { 56.2, 61.7, TELDRASSIL },
 				}),
 				q(933, {	-- Crown of the Earth (4/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
 					["sourceQuest"] = 929,	-- Crown of the Earth (3/6)
+					["coord"] = { 56.2, 61.7, TELDRASSIL },
 				}),
 				q(7383, {	-- Crown of the Earth (5/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3515,	-- Corithras Moonrage
 					["sourceQuest"] = 933,	-- Crown of the Earth (4/6)
+					["coord"] = { 56.2, 61.7, TELDRASSIL },
 				}),
 				q(935, {	-- Crown of the Earth (6/6)
 					["races"] = ALLIANCE_ONLY,
@@ -328,6 +331,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 6751 },	-- Strange Fruited Plant
+					["coord"] = { 42.6, 76.1, TELDRASSIL },
 				}),
 				q(6072, {	-- The Hunter's Path
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
