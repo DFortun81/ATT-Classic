@@ -37,6 +37,7 @@ _.Zones =
 						i(4792),	-- Spirit Cloak
 						i(4793),	-- Sylvan Cloak
 					},
+					["coord"] = { 74.5, 79.6, REDRIDGE_MOUNTAINS },
 				}),
 				n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
 					["groups"] = {
