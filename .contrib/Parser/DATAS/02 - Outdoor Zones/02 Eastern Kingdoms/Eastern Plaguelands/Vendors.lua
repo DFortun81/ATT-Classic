@@ -13,6 +13,12 @@ _.Zones =
 				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["groups"] = {
+						i(19447, {	-- Formula: Enchant Bracer - Healing
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19446, {	-- Formula: Enchant Bracer - Mana Regeneration
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(19442, {	-- Formula: Powerful Anti-Venom
 							["u"] = 3,	-- Added in later phase
 						}),

@@ -4,13 +4,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ALTERAC_MOUNTAINS, {
+		m(DEADWIND_PASS, {
 			n(0, {	-- Zone Drops
-				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
-					["cr"] = 2246,	-- Syndicate Assassin
-				}),
-				i(5775, {	-- Pattern: Black Silk Pack
-					["cr"] = 2242,	-- Syndicate Spy
+				i(16246, {	-- Formula: Enchant Bracer - Superior Strength
+					["cr"] = 7372,	-- Deadwind Warlock
 				}),
 			}),
 		}),

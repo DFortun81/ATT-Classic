@@ -26,6 +26,31 @@ _.WorldDrops =
 			profession(164, {	-- Blacksmithing
 				i(12713),	-- Plans: Radiant Leggings
 			}),
+			profession(333, {	-- Enchanting
+				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit
+				i(16245),	-- Formula: Enchant Boots - Greater Agility
+				i(16215),	-- Formula: Enchant Boots - Greater Stamina
+				i(11167),	-- Formula: Enchant Boots - Lesser Spirit
+				i(16220),	-- Formula: Enchant Boots - Spirit
+				i(11204),	-- Formula: Enchant Bracer - Greater Spirit
+				i(11225),	-- Formula: Enchant Bracer - Greater Stamina
+				i(6375),	-- Formula: Enchant Bracer - Lesser Spirit
+				i(6344),	-- Formula: Enchant Bracer - Minor Spirit
+				i(6347),	-- Formula: Enchant Bracer - Minor Strength
+				i(16218),	-- Formula: Enchant Bracer - Superior Spirit
+				i(16251),	-- Formula: Enchant Bracer - Superior Stamina
+				i(16253),	-- Formula: Enchant Chest - Greater Stats
+				i(11098),	-- Formula: Enchant Cloak - Lesser Shadow Resistance
+				i(11226),	-- Formula: Enchant Gloves - Riding Skill
+				i(11224),	-- Formula: Enchant Shield - Frost Resistance
+				i(11168),	-- Formula: Enchant Shield - Lesser Block
+				i(11081),	-- Formula: Enchant Shield - Lesser Protection
+				i(11202),	-- Formula: Enchant Shield - Stamina
+				i(11208),	-- Formula: Enchant Weapon - Demonslaying
+				i(11164),	-- Formula: Enchant Weapon - Lesser Beastslayer
+				i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
+				i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
+			}),
 			profession(202, {	-- Engineering
 				i(16055),	-- Schematic: Arcane Bomb
 				i(10601),	-- Schematic: Bright-Eye Goggles

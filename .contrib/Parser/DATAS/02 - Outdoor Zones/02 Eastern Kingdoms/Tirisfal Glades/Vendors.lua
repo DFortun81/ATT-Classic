@@ -10,6 +10,12 @@ _.Zones =
 					i(12226),	-- Recipe: Crispy Bat Wing
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
+					i(19447, {	-- Formula: Enchant Bracer - Healing
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(19446, {	-- Formula: Enchant Bracer - Mana Regeneration
+						["u"] = 3,	-- Added in later phase
+					}),
 					i(19442, {	-- Formula: Powerful Anti-Venom
 						["u"] = 3,	-- Added in later phase
 					}),

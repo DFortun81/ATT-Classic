@@ -7,6 +7,12 @@ _.Zones =
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-2, {	-- Vendor
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Dawn>
+					i(19447, {	-- Formula: Enchant Bracer - Healing
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(19446, {	-- Formula: Enchant Bracer - Mana Regeneration
+						["u"] = 3,	-- Added in later phase
+					}),
 					i(19442, {	-- Formula: Powerful Anti-Venom
 						["u"] = 3,	-- Added in later phase
 					}),
@@ -29,12 +35,12 @@ _.Zones =
 					i(15741),	-- Pattern: Stormshroud Pants
 				}),
 				n(11278, {	-- Magnus Frostwake
-						i(8030),	-- Plans: Ebon Shiv
-						i(12823), 	-- Plans: Huge Thorium Battleaxe
-						i(12819), 	-- Plans: Ornate Thorium Handaxe
-						i(12703),	-- Plans: Storm Gauntlets
-						i(13501),	-- Recipe: Major Mana Potion
-						i(13485),	-- Recipe: Transmute Water to Air
+					i(8030),	-- Plans: Ebon Shiv
+					i(12823), 	-- Plans: Huge Thorium Battleaxe
+					i(12819), 	-- Plans: Ornate Thorium Handaxe
+					i(12703),	-- Plans: Storm Gauntlets
+					i(13501),	-- Recipe: Major Mana Potion
+					i(13485),	-- Recipe: Transmute Water to Air
 				}),
 			}),
 		}),

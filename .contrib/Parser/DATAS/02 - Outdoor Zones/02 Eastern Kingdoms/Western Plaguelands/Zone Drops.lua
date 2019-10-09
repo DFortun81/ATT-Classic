@@ -6,6 +6,9 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {
 			n(0, {	-- Zone Drops
+				i(16252, {	-- Formula: Enchant Weapon - Crusader
+					["cr"] = 4494,	-- Scarlet Spellbinder
+				}),
 				i(15771, {	-- Pattern: Living Breastplate
 					["cr"] = 1813,	-- Decaying Horror
 				}),

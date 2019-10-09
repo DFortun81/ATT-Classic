@@ -6,6 +6,9 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(THE_HINTERLANDS, {
 			n(0, {	-- Zone Drops
+				i(16214, {	-- Formula: Enchant Bracer - Greater Intellect
+					["cr"] = 2642,	-- Vilebranch Shadowcaster
+				}),
 				i(15760, {	-- Pattern: Ironfeather Breastplate
 					["cr"] = 2644,	-- Vilebranch Hideskinner
 				}),

@@ -1,1 +1,17 @@
-{"items":[{"itemID":9293,"name":"Recipe: Magic Resistance Potion","equippable":false,"iLvl":42,"quality":2,"class":9,"subclass":6,"requiredSkill":2485,"spellID":11453},{"itemID":3393,"name":"Recipe: Minor Magic Resistance Potion","equippable":false,"iLvl":22,"quality":1,"class":9,"subclass":6,"requiredSkill":2485,"spellID":3172},{"itemID":16051,"name":"Schematic: Thorium Shells","equippable":false,"iLvl":57,"quality":2,"class":9,"subclass":6,"requiredSkill":2506,"spellID":19800},{"itemID":14485,"name":"Pattern: Wizardweave Leggings","equippable":false,"iLvl":55,"quality":2,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18421},{"itemID":14500,"name":"Pattern: Wizardweave Robe","equippable":false,"iLvl":60,"quality":2,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18446}]}
+{"items":[
+	{"itemID":20732,"name":"Formula: Enchant Cloak - Greater Fire Resistance","equippable":false,"iLvl":70,"quality":1,"class":9,"subclass":8,"requiredSkill":2494,"spellID":25081},
+	{"itemID":20733,"name":"Formula: Enchant Cloak - Greater Nature Resistance","equippable":false,"iLvl":70,"quality":1,"class":9,"subclass":8,"requiredSkill":2494,"spellID":25082},
+	{"itemID":16216,"name":"Formula: Enchant Cloak - Greater Resistance","equippable":false,"iLvl":53,"quality":2,"class":9,"subclass":8,"requiredSkill":2494,"spellID":20014},
+	{"itemID":11206,"name":"Formula: Enchant Cloak - Lesser Agility","equippable":false,"iLvl":45,"quality":2,"class":9,"subclass":8,"requiredSkill":2494,"spellID":13882},
+	{"itemID":11098,"name":"Formula: Enchant Cloak - Lesser Shadow Resistance","equippable":false,"iLvl":27,"quality":2,"class":9,"subclass":8,"requiredSkill":2494,"spellID":13522},
+	{"itemID":11151,"name":"Formula: Enchant Gloves - Herbalism","equippable":false,"iLvl":29,"quality":2,"class":9,"subclass":8,"requiredSkill":2494,"spellID":13617},
+	{"itemID":11224,"name":"Formula: Enchant Shield - Frost Resistance","equippable":false,"iLvl":47,"quality":2,"class":9,"subclass":8,"requiredSkill":2494,"spellID":13933},
+	{"itemID":16243,"name":"Formula: Runed Arcanite Rod","equippable":false,"iLvl":58,"quality":1,"class":9,"subclass":8,"requiredSkill":2494,"spellID":20051},
+	{"itemID":14472,"name":"Pattern: Runecloth Cloak","equippable":false,"iLvl":53,"quality":1,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18409},
+	{"itemID":14469,"name":"Pattern: Runecloth Robe","equippable":false,"iLvl":52,"quality":1,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18406},
+	{"itemID":14485,"name":"Pattern: Wizardweave Leggings","equippable":false,"iLvl":55,"quality":2,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18421},
+	{"itemID":14500,"name":"Pattern: Wizardweave Robe","equippable":false,"iLvl":60,"quality":2,"class":9,"subclass":2,"requiredSkill":2540,"spellID":18446},
+	{"itemID":9293,"name":"Recipe: Magic Resistance Potion","equippable":false,"iLvl":42,"quality":2,"class":9,"subclass":6,"requiredSkill":2485,"spellID":11453},
+	{"itemID":3393,"name":"Recipe: Minor Magic Resistance Potion","equippable":false,"iLvl":22,"quality":1,"class":9,"subclass":6,"requiredSkill":2485,"spellID":3172},
+	{"itemID":16051,"name":"Schematic: Thorium Shells","equippable":false,"iLvl":57,"quality":2,"class":9,"subclass":6,"requiredSkill":2506,"spellID":19800},
+]}

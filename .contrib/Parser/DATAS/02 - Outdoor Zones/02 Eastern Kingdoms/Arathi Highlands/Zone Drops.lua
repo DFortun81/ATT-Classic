@@ -4,13 +4,14 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ALTERAC_MOUNTAINS, {
+		m(ARATHI_HIGHLANDS, {
 			n(0, {	-- Zone Drops
-				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
-					["cr"] = 2246,	-- Syndicate Assassin
-				}),
-				i(5775, {	-- Pattern: Black Silk Pack
-					["cr"] = 2242,	-- Syndicate Spy
+				i(11166, {	-- Formula: Enchant Gloves - Skinning
+					["crs"] = {
+						2558,	-- Witherbark Berserker
+						2556,	-- Witherbark Headhunter
+						2557,	-- Witherbark Shadow Hunter
+					},
 				}),
 			}),
 		}),

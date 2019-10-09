@@ -352,6 +352,9 @@ _.Instances = {
 				i(17683, {	-- Book: Gift of the Wild Rank 2
 					["description"] = "This can only drop from Elites.",
 				}),
+				i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
+					["cr"] = 5259,	-- Atal'ai Witch Doctor
+				}),
 				i(15733),	-- Pattern: Green Dragonscale Leggings
 				i(10627),	-- Bludgeon of the Grinning Dog
 				i(10628),	-- Deathblow

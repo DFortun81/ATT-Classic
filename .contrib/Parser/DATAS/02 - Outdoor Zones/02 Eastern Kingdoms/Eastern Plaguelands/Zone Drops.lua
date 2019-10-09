@@ -6,6 +6,12 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
 			n(0, {	-- Zone Drops
+				i(16242, {	-- Formula: Enchant Chest - Major Mana
+					["cr"] = 9452,	-- Scarlet Enchanter
+				}),
+				i(16222, {	-- Formula: Enchant Chest - Superior Spirit
+					["cr"] = 9447,	-- Scarlet Warder
+				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
 					["cr"] = 8551,	-- Dark Summoner
 				}),

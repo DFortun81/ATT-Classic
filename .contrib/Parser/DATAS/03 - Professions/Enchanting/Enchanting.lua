@@ -64,7 +64,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13644
 			},
 			{
-				["name"] = "Lesser Versatility",
+				["name"] = "Lesser Spirit",
 				["recipeID"] = 13687
 			},
 			{
@@ -84,7 +84,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13836
 			},
 			{
-				["name"] = "Versatility",
+				["name"] = "Spirit",
 				["recipeID"] = 20024
 			}
 		}
@@ -93,10 +93,6 @@ profession(333, {	-- Enchanting
 		["name"] = "Bracer Enchantments",
 		["categoryID"] = 37,
 		["g"] = {
-			{
-				["name"] = "Argent Versatility",
-				["recipeID"] = 23801
-			},
 			{
 				["name"] = "Dodge",
 				["recipeID"] = 13931
@@ -114,12 +110,13 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13939
 			},
 			{
-				["name"] = "Greater Versatility",
+				["name"] = "Greater Spirit",
 				["recipeID"] = 13846
 			},
 			{
-				["name"] = "Healing Power",
-				["recipeID"] = 23802
+				["name"] = "Healing",
+				["recipeID"] = 23802,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Intellect",
@@ -142,8 +139,13 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13536
 			},
 			{
-				["name"] = "Lesser Versatility",
+				["name"] = "Lesser Spirit",
 				["recipeID"] = 7859
+			},
+			{
+				["name"] = "Mana Regeneration",
+				["recipeID"] = 23801,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Minor Agility",
@@ -166,7 +168,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 7782
 			},
 			{
-				["name"] = "Minor Versatility",
+				["name"] = "Minor Spirit",
 				["recipeID"] = 7766
 			},
 			{
@@ -186,11 +188,11 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 20010
 			},
 			{
-				["name"] = "Superior Versatility",
+				["name"] = "Superior Spirit",
 				["recipeID"] = 20009
 			},
 			{
-				["name"] = "Versatility",
+				["name"] = "Spirit",
 				["recipeID"] = 13642
 			}
 		}
@@ -291,11 +293,13 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Greater Fire Resistance",
-				["recipeID"] = 25081
+				["recipeID"] = 25081,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Greater Nature Resistance",
-				["recipeID"] = 25082
+				["recipeID"] = 25082,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Greater Resistance",
@@ -357,7 +361,8 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Fire Power",
-				["recipeID"] = 25078
+				["recipeID"] = 25078,
+				["u"]= 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Fishing",
@@ -365,7 +370,8 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Frost Power",
-				["recipeID"] = 25074
+				["recipeID"] = 25074,
+				["u"]= 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Greater Agility",
@@ -377,7 +383,8 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Healing Power",
-				["recipeID"] = 25079
+				["recipeID"] = 25079,
+				["u"]= 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Herbalism",
@@ -397,7 +404,8 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Shadow Power",
-				["recipeID"] = 25073
+				["recipeID"] = 25073,
+				["u"]= 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Skinning",
@@ -415,11 +423,13 @@ profession(333, {	-- Enchanting
 		["g"] = {
 			{
 				["name"] = "Agility",
-				["recipeID"] = 23800
+				["recipeID"] = 23800,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Agility",
-				["recipeID"] = 27837
+				["recipeID"] = 27837,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Crusader",
@@ -474,7 +484,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13503
 			},
 			{
-				["name"] = "Lesser Versatility",
+				["name"] = "Lesser Spirit",
 				["recipeID"] = 13380
 			},
 			{
@@ -486,7 +496,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 20036
 			},
 			{
-				["name"] = "Major Versatility",
+				["name"] = "Major Spirit",
 				["recipeID"] = 20035
 			},
 			{
@@ -494,7 +504,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 23804
 			},
 			{
-				["name"] = "Mighty Versatility",
+				["name"] = "Mighty Spirit",
 				["recipeID"] = 23803
 			},
 			{
@@ -552,11 +562,11 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 20017
 			},
 			{
-				["name"] = "Greater Versatility",
+				["name"] = "Greater Spirit",
 				["recipeID"] = 13905
 			},
 			{
-				["name"] = "Lesser Parry",
+				["name"] = "Lesser Block",
 				["recipeID"] = 13689
 			},
 			{
@@ -568,7 +578,7 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13631
 			},
 			{
-				["name"] = "Lesser Versatility",
+				["name"] = "Lesser Spirit",
 				["recipeID"] = 13485
 			},
 			{
@@ -580,11 +590,11 @@ profession(333, {	-- Enchanting
 				["recipeID"] = 13817
 			},
 			{
-				["name"] = "Versatility",
+				["name"] = "Spirit",
 				["recipeID"] = 13659
 			},
 			{
-				["name"] = "Vitality",
+				["name"] = "Superior Spirit",
 				["recipeID"] = 20016
 			}
 		}
@@ -617,31 +627,38 @@ profession(333, {	-- Enchanting
 		["g"] = {
 			{
 				["name"] = "Brilliant Mana Oil",
-				["recipeID"] = 25130
+				["recipeID"] = 25130,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Brilliant Wizard Oil",
-				["recipeID"] = 25129
+				["recipeID"] = 25129,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Lesser Mana Oil",
-				["recipeID"] = 25127
+				["recipeID"] = 25127,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Lesser Wizard Oil",
-				["recipeID"] = 25126
+				["recipeID"] = 25126,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Minor Mana Oil",
-				["recipeID"] = 25125
+				["recipeID"] = 25125,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Minor Wizard Oil",
-				["recipeID"] = 25124
+				["recipeID"] = 25124,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Wizard Oil",
-				["recipeID"] = 25128
+				["recipeID"] = 25128,
+				["u"] = 3,	-- Added in later phase
 			}
 		}
 	},

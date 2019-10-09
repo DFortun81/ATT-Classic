@@ -13,6 +13,12 @@ _.Zones =
 				}),
 				n(11557, {	-- Meilosh
 					["groups"] = {
+						i(22392, {	-- Formula: Enchant 2H Weapon - Agility
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19445, {	-- Formula: Enchant Weapon - Agility
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(19218, {	-- Pattern: Mantle of the Timbermaw
 							["u"] = 3,	-- Added in later phase
 						}),

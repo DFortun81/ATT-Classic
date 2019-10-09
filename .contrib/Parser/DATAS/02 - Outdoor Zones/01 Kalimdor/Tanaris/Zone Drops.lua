@@ -6,6 +6,12 @@ _.Zones =
 	m(KALIMDOR, {
 		m(TANARIS, {
 			n(0, {	-- Zone Drops
+				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
+					["crs"] = {
+						5623,	-- Wastewander Assassin
+						7805,	-- Wastewander Scofflaw
+					},
+				}),
 				i(8399, {	-- Pattern: Tough Scorpid Boots
 					["cr"] = 5615,	-- Wastewander Rogue
 				}),

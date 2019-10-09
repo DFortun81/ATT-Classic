@@ -213,7 +213,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Bloodsoul Shoulders",
-				["recipeID"] = 24137
+				["recipeID"] = 24137,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Dark Iron Shoulders",
@@ -221,7 +222,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darksoul Shoulders",
-				["recipeID"] = 24141
+				["recipeID"] = 24141,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Dawnbringer Shoulders",
@@ -279,7 +281,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Bloodsoul Breastplate",
-				["recipeID"] = 24136
+				["recipeID"] = 24136,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Copper Chain Vest",
@@ -299,7 +302,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darksoul Breastplate",
-				["recipeID"] = 24139
+				["recipeID"] = 24139,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Demon Forged Breastplate",
@@ -417,7 +421,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Bloodsoul Gauntlets",
-				["recipeID"] = 24138
+				["recipeID"] = 24138,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Dark Iron Gauntlets",
@@ -611,7 +616,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darksoul Leggings",
-				["recipeID"] = 24140
+				["recipeID"] = 24140,
+				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Enchanted Thorium Leggings",

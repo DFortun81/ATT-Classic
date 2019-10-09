@@ -124,6 +124,11 @@ profession(171, {	-- Alchemy
 				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
+				["name"] = "Mageblood Potion",
+				["recipeID"] = 24365,
+				["u"] = 3,	-- Added in later phase (ZG)
+			},
+			{
 				["name"] = "Magic Resistance Potion",
 				["recipeID"] = 11453
 			},
@@ -140,12 +145,21 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 22732
 			},
 			{
+				["name"] = "Major Troll's Blood Potion",
+				["recipeID"] = 24368,
+				["u"] = 3,	-- Added in later phase (ZG)
+			},
+			{
 				["name"] = "Mana Potion",
 				["recipeID"] = 3452
 			},
 			{
 				["name"] = "Mighty Rage Potion",
 				["recipeID"] = 17552
+			},
+			{
+				["name"] = "Mighty Troll's Blood Potion",
+				["recipeID"] = 3451
 			},
 			{
 				["name"] = "Minor Healing Potion",
@@ -188,6 +202,10 @@ profession(171, {	-- Alchemy
 				["recipeID"] = 7256
 			},
 			{
+				["name"] = "Strong Troll's Blood Potion",
+				["recipeID"] = 3176
+			},
+			{
 				["name"] = "Superior Healing Potion",
 				["recipeID"] = 11457
 			},
@@ -202,6 +220,10 @@ profession(171, {	-- Alchemy
 			{
 				["name"] = "Swim Speed Potion",
 				["recipeID"] = 7841
+			},
+			{
+				["name"] = "Weak Troll's Blood Potion",
+				["recipeID"] = 3170
 			},
 			{
 				["name"] = "Wildvine Potion",
@@ -349,28 +371,6 @@ profession(171, {	-- Alchemy
 				["name"] = "Greater Arcane Elixir",
 				["recipeID"] = 17573
 			},
-			{
-				["name"] = "Mageblood Elixir",
-				["recipeID"] = 24365,
-				["u"] = 3,	-- Added in later phase (ZG)
-			},
-			{
-				["name"] = "Major Troll's Blood Elixir",
-				["recipeID"] = 3451,
-				["u"] = 3,	-- Added in later phase (ZG)
-			},
-			{
-				["name"] = "Mighty Troll's Blood Elixir",
-				["recipeID"] = 24368
-			},
-			{
-				["name"] = "Strong Troll's Blood Elixir",
-				["recipeID"] = 3176
-			},
-			{
-				["name"] = "Weak Troll's Blood Elixir",
-				["recipeID"] = 3170
-			}
 		}
 	},
 	{
@@ -493,4 +493,13 @@ profession(171, {	-- Alchemy
 			}
 		}
 	},
+	n(-17, {	-- Quests
+		q(1581, {	-- Elixirs for the Bladeleafs
+			["lvl"] = 4,
+			["requireSkill"] = 171,	-- Alchemy
+			["maps"] = { TELDRASSIL },
+			["races"] = ALLIANCE_ONLY,
+			["qg"] = 2083,	-- Syral Bladeleaf
+		}),
+	}),
 });

@@ -39,6 +39,27 @@ _.Zones =
 					}),
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
+					i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20754, {	-- Formula: Lesser Mana Oil
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20753, {	-- Formula: Lesser Wizard Oil
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20752, {	-- Formula: Minor Mana Oil
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20758, {	-- Formula: Minor Wizard Oil
+						["u"] = 3,	-- Added in later phase
+					}),
+					i(20755, {	-- Formula: Wizard Oil
+						["u"] = 3,	-- Added in later phase
+					}),
 					i(22308, {	-- Pattern: Enchanted Runecloth Bag
 						["u"] = 3,	-- Added in later phase (AQ)
 					}),
