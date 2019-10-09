@@ -339,11 +339,13 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ironforge Breastplate",
-				["recipeID"] = 8367
+				["recipeID"] = 8367,
+				["races"] = ALLIANCE_ONLY,
 			},
 			{
 				["name"] = "Ironforge Chain",
-				["recipeID"] = 8366
+				["recipeID"] = 8366,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Ironvine Breastplate",
@@ -462,7 +464,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ironforge Gauntlets",
-				["recipeID"] = 8368
+				["recipeID"] = 8368,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Ironvine Gloves",
@@ -470,7 +473,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Mithril Scale Gloves",
-				["recipeID"] = 9942
+				["recipeID"] = 9942,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Ornate Mithril Gloves",
@@ -540,7 +544,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Rough Bronze Bracers",
-				["recipeID"] = 2671
+				["recipeID"] = 2671,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Runed Copper Bracers",
@@ -645,7 +650,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Orcish War Leggings",
-				["recipeID"] = 9957
+				["recipeID"] = 9957,
+				["races"] = HORDE_ONLY,
 			},
 			{
 				["name"] = "Ornate Mithril Pants",
@@ -1088,5 +1094,5 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 19668
 			}
 		}
-	}
+	},
 });

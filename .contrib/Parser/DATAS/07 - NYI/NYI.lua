@@ -14,6 +14,10 @@ _.NeverImplemented =
 	un(1, i(10303)),	-- Pattern: Stormcloth Pants
 	un(1, i(10322)),	-- Pattern: Stormcloth Shoulders
 	un(1, i(10313)),	-- Pattern: Stormcloth Vest
+	un(1, i(6734)),	-- Plans: Ironforge Chain
+	un(1, i(6736)),	-- Plans: Ironforge Gauntlets
+	un(1, i(7977)),	-- Plans: Mithril Scale Gloves
+	un(1, i(5577)),	-- Plans: Rough Bronze Bracers
 	un(1, i(13517)),	-- Recipe: Alchemists' Stone
 	un(1, i(5641)),	-- Recipe: Cowardly Flight Potion
 	un(1, i(2556)),	-- Recipe: Elixir of Tongues

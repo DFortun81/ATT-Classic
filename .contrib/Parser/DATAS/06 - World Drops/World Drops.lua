@@ -24,7 +24,32 @@ _.WorldDrops =
 				i(3393),	-- Recipe: Minor Magic Resistance Potion
 			}),
 			profession(164, {	-- Blacksmithing
+				i(3609),	-- Plans: Copper Chain Vest
+				i(2883),	-- Plans: Deadly Bronze Poniard
+				i(3868),	-- Plans: Frost Tiger Blade
+				i(3610),	-- Plans: Gemmed Copper Gauntlets
+				i(3867),	-- Plans: Golden Iron Destroyer
+				i(3875),	-- Plans: Golden Scale Boots
+				i(3873),	-- Plans: Golden Scale Cuirass
+				i(3872),	-- Plans: Golden Scale Leggings
+				i(3871),	-- Plans: Golden Scale Shoulders
+				i(3611),	-- Plans: Green Iron Boots
+				i(3612),	-- Plans: Green Iron Gauntlets
+				i(3870),	-- Plans: Green Iron Shoulders
+				i(7975),	-- Plans: Heavy Mithril Pants
+				i(5543),	-- Plans: Iridescent Hammer
+				i(6045),	-- Plans: Iron Counterweight
+				i(6044),	-- Plans: Iron Shield Spike
+				i(3866),	-- Plans: Jade Serpentblade
+				i(3608),	-- Plans: Mighty Iron Hammer
+				i(7976),	-- Plans: Mithril Shield Spike
+				i(3874),	-- Plans: Polished Steel Boots
 				i(12713),	-- Plans: Radiant Leggings
+				i(2881),	-- Plans: Runed Copper Breastplate
+				i(3869),	-- Plans: Shadow Crescent Axe
+				i(5578),	-- Plans: Silvered Bronze Breastplate
+				i(2882),	-- Plans: Silvered Bronze Shoulders
+				i(6046),	-- Plans: Steel Weapon Chain
 			}),
 			profession(333, {	-- Enchanting
 				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit
