@@ -161,6 +161,7 @@ _.Zones =
 					["g"] = {
 						i(16333),	-- Samuel's Remains
 					},
+					["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
 				}),
 				q(380, {	-- Night Web's Hollow
 					["lvl"] = 2,
@@ -171,6 +172,7 @@ _.Zones =
 						i(3273),	-- Rugged Mail Vest
 						i(3272),	-- Zombie Skin Leggings
 					},
+					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 				}),
 				q(374, {	-- Proof of Demise
 					["lvl"] = 5,
@@ -195,6 +197,7 @@ _.Zones =
 						i(11851),	-- Scavenger Tunic
 						i(11852),	-- Roamer's Leggings
 					},
+					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 				}),
 				q(356, {	-- Rear Guard Patrol
 					["lvl"] = 6,
@@ -227,6 +230,7 @@ _.Zones =
 						i(11849),	-- Rustmetal Bracers
 						i(11850),	-- Short Duskbat Cape
 					},
+					["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
 				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
@@ -270,6 +274,7 @@ _.Zones =
 						i(6060),	-- Flax Bracers
 						i(2173),	-- Old Leather Belt
 					},
+					["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
 				}),
 				q(410, {	-- The Dormant Shade
 					["lvl"] = 5,
@@ -332,6 +337,7 @@ _.Zones =
 						i(3277),	-- Executor Staff
 						i(3276),	-- Deathguard Buckler
 					},
+					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 				}),
 				q(381, {	-- The Scarlet Crusade
 					["qg"] = 1570,	-- Executor Arren
@@ -344,6 +350,7 @@ _.Zones =
 						i(5779),	-- Forsaken Bastard Sword
 						i(159),	-- Refreshing Spring Water
 					},
+					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 				}),
 				q(1819, {	-- Ulag the Cleaver
 					["qg"] = 1496,	-- Deathguard Dillinger
@@ -359,6 +366,7 @@ _.Zones =
 					["qg"] = 1570,	-- Executor Arren
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
+					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 				}),
 				q(398, {	-- Wanted: Maggot Eye
 					["lvl"] = 6,
