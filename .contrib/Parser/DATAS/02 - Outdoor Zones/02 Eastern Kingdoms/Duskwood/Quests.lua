@@ -83,6 +83,7 @@ _.Zones =
 					["g"] = {
 						i(3559),	-- Night Watch Gauntlets
 					},
+					["coord"] = { 45.1, 67.0, DUSKWOOD },
 				}),
 				q(453, {	-- Finding the Shadowy Figure
 					["lvl"] = 20,
@@ -256,6 +257,7 @@ _.Zones =
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
 					},
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 				}),
 				q(269, {	-- Seeking Wisdom
 					["lvl"] = 20,
