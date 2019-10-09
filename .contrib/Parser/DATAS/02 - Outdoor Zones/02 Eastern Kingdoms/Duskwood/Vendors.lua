@@ -37,6 +37,7 @@ _.Zones =
 						i(12247),	-- Broad Bladed Knife
 						i(12249),	-- Merciless Axe
 					},
+					["coord"] = { 73.7, 49.9, DUSKWOOD },
 				}),
 				n(3134, {	-- Kzixx <Rare Goods>
 					["groups"] = {
@@ -58,6 +59,7 @@ _.Zones =
 						i(4800),	-- Mighty Chain Pants
 						i(4816),	-- Legionnaire's Leggings
 					},
+					["coord"] = { 73.9, 48.9, DUSKWOOD },
 				}),
 				n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
 					["groups"] = {
