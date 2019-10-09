@@ -44,6 +44,7 @@ _.Zones =
 						i(2562),	-- Bouquet of Scarlet Begonias
 					},
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
+					["description"] = "Bellygrub spawns around 15.9, 49.6.",
 				}),
 				q(246, {	-- Assessing the Threat
 					["lvl"] = 11,
@@ -288,11 +289,13 @@ _.Zones =
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 60,	-- Wanted: Gath'Ilzogg
+					["description"] = "Pick up this quest from the wanted poster on the door of the Lakeshire Town Hall at 29.6, 46.2.",
 				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 47,	-- Wanted: Lieutenant Fangore
+					["description"] = "Pick up this quest from the wanted poster next to the door of the Lakeshire Inn at 26.7, 46.5.",
 				}),
 			}),
 		}),
