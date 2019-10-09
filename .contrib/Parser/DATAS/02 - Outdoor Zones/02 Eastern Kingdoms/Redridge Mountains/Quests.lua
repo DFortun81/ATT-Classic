@@ -288,14 +288,16 @@ _.Zones =
 				q(169, {	-- Wanted: Gath'Ilzogg
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 60 },
+					["coord"] = { 29.6, 46.2, REDRIDGE_MOUNTAINS },
 					--["objectID"] = 60,	-- Wanted: Gath'Ilzogg
-					["description"] = "Pick up this quest from the wanted poster on the door of the Lakeshire Town Hall at 29.6, 46.2.",
 				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 47,	-- Wanted: Lieutenant Fangore
-					["description"] = "Pick up this quest from the wanted poster next to the door of the Lakeshire Inn at 26.7, 46.5.",
+					["provider"] = { "o", 47 },
+					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },	
+					--["objectID"] = 47, -- Wanted: Lieutenant Fangore
 				}),
 			}),
 		}),
