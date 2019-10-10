@@ -315,6 +315,8 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1212,	-- Bishop Farthing
+					["sourceQuest"] = 269,	-- Seeking Wisdom (Duskwood)
+					["coord"] = { 39.3, 27.9, STORMWIND_CITY },
 				}),
 				q(165, {	-- The Hermit
 					["lvl"] = 17,
