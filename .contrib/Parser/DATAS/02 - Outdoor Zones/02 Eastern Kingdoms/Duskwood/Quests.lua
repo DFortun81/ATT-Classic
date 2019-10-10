@@ -107,6 +107,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
+					["coord"] = { 28.0, 31.5, DUSKWOOD },
 				}),
 				q(266, {	-- Inquire at the Inn
 					["lvl"] = 20,
@@ -195,6 +196,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
+					["coord"] = { 28.0, 31.5, DUSKWOOD },
 				}),
 				q(1388, {	-- Nothing But The Truth
 					["lvl"] = 37,
@@ -220,6 +222,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
+					["coord"] = { 28.0, 31.5, DUSKWOOD },
 				}),
 				q(323, {	-- Proving Your Worth
 					["lvl"] = 20,
@@ -277,6 +280,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
+					["coord"] = { 28.0, 31.5, DUSKWOOD },
 				}),
 				q(230, {	-- Sven's Camp
 					["lvl"] = 20,
@@ -520,6 +524,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
+					["coord"] = { 28.0, 31.5, DUSKWOOD },
 				}),
 			}),
 		}),
