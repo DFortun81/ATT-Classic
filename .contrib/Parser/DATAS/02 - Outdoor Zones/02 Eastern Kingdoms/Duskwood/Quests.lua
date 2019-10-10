@@ -331,6 +331,8 @@ _.Zones =
 				q(68, {	-- The Legend of Stalvan
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 3643 },
+					["coord"] = { 41.5, 66.7, WESTFALL },
 					--["objectID"] = 3643,	-- Old Footlocker
 				}),
 				q(79, {	-- The Legend of Stalvan
