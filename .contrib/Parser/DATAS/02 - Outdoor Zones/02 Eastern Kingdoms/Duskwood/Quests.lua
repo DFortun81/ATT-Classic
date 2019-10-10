@@ -148,6 +148,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 302,	-- Blind Mary
+					["coord"] = { 81.9, 59.1, DUSKWOOD },
 				}),
 				q(181, {	-- Look To The Stars
 					["lvl"] = 20,
@@ -240,6 +241,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 302,	-- Blind Mary
+					["coord"] = { 81.9, 59.1, DUSKWOOD },
 				}),
 				q(240, {	-- Return to Jitters
 					["lvl"] = 17,
