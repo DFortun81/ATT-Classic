@@ -356,6 +356,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 294,	-- Marshal Haggard
+					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
 				}),
 				q(69, {	-- The Legend of Stalvan
 					["lvl"] = 22,
@@ -367,11 +368,13 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 294,	-- Marshal Haggard
+					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
 				}),
 				q(72, {	-- The Legend of Stalvan
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 297,	-- Caretaker Folsom
+					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
 				}),
 				q(67, {	-- The Legend of Stalvan
 					["lvl"] = 22,
@@ -382,6 +385,8 @@ _.Zones =
 				q(74, {	-- The Legend of Stalvan
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 1561 },
+					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
 					--["objectID"] = 1561,	-- Sealed Crate
 				}),
 				q(98, {	-- The Legend of Stalvan
@@ -398,6 +403,7 @@ _.Zones =
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 295,	-- Innkeeper Farley
+					["coord"] = { 43.8, 65.9, WESTFALL },
 				}),
 				q(66, {	-- The Legend of Stalvan
 					["lvl"] = 22,
