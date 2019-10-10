@@ -26,6 +26,8 @@ _.Zones =
 					["groups"] = {
 						i(6068),	-- Recipe: Shadow Oil
 					},
+					["coord"] = { 18.0, 54.4, DUSKWOOD },
+					["description"] = "Enter the building at 18.0, 55.2 and go upstairs to find Bliztik.",
 				}),
 				n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
 					["groups"] = {
