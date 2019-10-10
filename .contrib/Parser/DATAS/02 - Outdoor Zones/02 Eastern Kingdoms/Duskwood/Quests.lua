@@ -118,6 +118,7 @@ _.Zones =
 					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 288,	-- Jitters
+					["coord"] = { 18.2, 56.3, DUSKWOOD },
 				}),
 				q(159, {	-- Juice Delivery
 					["lvl"] = 20,
@@ -247,6 +248,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 288,	-- Jitters
+					["coord"] = { 18.2, 56.3, DUSKWOOD },
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
 					["lvl"] = 18,
@@ -279,6 +281,8 @@ _.Zones =
 				q(230, {	-- Sven's Camp
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 59 },
+					["coord"] = { 49.9, 77.7, DUSKWOOD },
 					--["objectID"] = 59,	-- Mound of loose dirt
 				}),
 				q(95, {	-- Sven's Revenge
