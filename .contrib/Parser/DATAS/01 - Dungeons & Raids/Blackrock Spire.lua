@@ -96,7 +96,7 @@ _.Instances = {
 						{ "i", 12735, 10 },	-- Frayed Abomination Stitching
 						{ "i", 12360, 5 },	-- Arcanite Bar
 						{ "i", 12753, 5 },	-- Skin of Shadow
-						{ "groups", 500000 },	-- 50 Gold
+						{ "g", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
@@ -131,7 +131,7 @@ _.Instances = {
 						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
 						{ "i", 12363, 8 },	-- Arcanite Crystal
 						{ "i", 12734, 5 },	-- Enchanted Scarlet Thread
-						{ "groups", 500000 },	-- 50 Gold
+						{ "g", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
@@ -368,7 +368,7 @@ _.Instances = {
 						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
 						{ "i", 12360, 5 },	-- Arcanite Bar
 						{ "i", 12736, 5 },	-- Frostwhisper's Embalming Fluid
-						{ "groups", 500000 },	-- 50 Gold
+						{ "g", 500000 },	-- 50 Gold
 					},
 					["lvl"] = 57,
 					["groups"] = {
