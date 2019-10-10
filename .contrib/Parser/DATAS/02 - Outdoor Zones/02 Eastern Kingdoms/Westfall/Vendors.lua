@@ -45,6 +45,7 @@ _.Zones =
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
+					["coord"] = { 57.7, 53.9, WESTFALL },
 				}),
 			}),	
 		}),
