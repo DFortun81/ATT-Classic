@@ -301,6 +301,7 @@ _.Zones =
 					["g"] = {
 						i(5131),	-- Knowledge: Stonesplinter Disguise
 					},
+					["u"] = 1, -- Never Available
 				}),
 				q(1338, {	-- Stormpike's Order
 					["lvl"] = 9,
@@ -314,6 +315,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1342,	-- Mountaineer Rockgar
 					["coord"] = { 25.5, 10.5, LOCH_MODAN },
+					["sourceQuest"] = 468,	-- Report to Mountaineer Rockgar
 				}),
 				q(267, {	-- The Trogg Threat
 					["lvl"] = 10,

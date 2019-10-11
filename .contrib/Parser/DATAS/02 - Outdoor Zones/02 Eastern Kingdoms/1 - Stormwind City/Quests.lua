@@ -73,6 +73,7 @@ _.Zones =
 					["maps"] = { DUSTWALLOW_MARSH },
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 				}),
 				q(2360, {	-- Mathias and the Defias
