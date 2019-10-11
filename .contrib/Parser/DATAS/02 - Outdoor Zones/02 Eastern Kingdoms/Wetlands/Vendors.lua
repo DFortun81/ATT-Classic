@@ -30,6 +30,7 @@ _.Zones =
 						i(13309),	-- Schematic: Lovingly Crafted Boomstick
 						i(14639),	-- Schematic: Minor Recombobulator
 					},
+					["coord"] = { 26.4, 25.8, WETLANDS },
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
 					["coord"] = { 8.1, 55.8, WETLANDS },
