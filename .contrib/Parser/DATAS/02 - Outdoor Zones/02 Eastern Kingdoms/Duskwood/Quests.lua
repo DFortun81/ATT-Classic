@@ -40,6 +40,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1217,	-- Glorin Steelbrow
+					["coord"] = { 10.6, 60.5, WETLANDS },
 				}),
 				q(253, {	-- Bride of the Embalmer
 					["lvl"] = 20,
@@ -138,6 +139,7 @@ _.Zones =
 					["g"] = {
 						i(2702),	-- Lightforge Ingot
 					},
+					["coord"] = { 10.6, 60.5, WETLANDS },
 				}),
 				q(175, {	-- Look To The Stars
 					["lvl"] = 20,
