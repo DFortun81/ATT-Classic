@@ -593,10 +593,23 @@ _.Zones =
 					["lvl"] = 40,
 					["qg"] = 15191,	-- Windcaller Proudhorn
 				}),
-				q(8324, {	-- Still Believing
+				q(8324,  {	-- Still Believing
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["qg"] = 15194,	-- Hermit Ortell
+					["repeatable"] = true,
+					["sourceQuest"] = 8323,	-- True Believers
+					["description"] = "Decoded True Believer Clippings will arrive in your mailbox approximately 12 hours after this quest is turned in.",
+					["g"] = {
+						un(3, i(20469, {	-- Decoded True Believer Clippings
+							un(3, i(20547)),	-- Pattern: Runed Stygian Boots
+							un(3, i(20548)),	-- Pattern: Runed Stygian Belt
+							un(3, i(20546)),	-- Pattern: Runed Stygian Leggings
+							un(3, i(20554)),	-- Plans: Darkrune Breastplate
+							un(3, i(20553)),	-- Plans: Darkrune Gauntlets
+							un(3, i(20555)),	-- Plans: Darkrune Helm
+						})),
+					},
 				}),
 				q(8770, {	-- Target: Hive'Ashi Defenders
 					["u"] = 3,	-- Added in later phase

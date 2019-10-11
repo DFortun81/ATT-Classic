@@ -34,6 +34,12 @@ _.Zones =
 						i(19329, {	-- Pattern: Golden Mantle of the Dawn
 							["u"] = 3,	-- Added in later phase
 						}),
+						i(19203, {	-- Plans: Girdle of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19205, {	-- Plans: Gloves of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(13482),	-- Recipe: Transmute Air to Fire
 					},
 				}),				

@@ -12,6 +12,15 @@ _.Zones =
 				i(15771, {	-- Pattern: Living Breastplate
 					["cr"] = 1813,	-- Decaying Horror
 				}),
+				i(12836, {	-- Plans: Frostguard
+					["cr"] = 1844,	-- Foreman Marcrid
+				}),
+				i(12707, {	-- Plans: Runic Plate Boots
+					["cr"] = 1836,	-- Scarlet Cavalier
+				}),
+				i(12719, {	-- Plans: Runic Plate Leggings
+					["cr"] = 1885,	-- Scarlet Smith
+				}),
 				i(9296, {	-- Recipe: Gift of Arthas
 					["crs"] = {
 						1783,	-- Skeletal Flayer

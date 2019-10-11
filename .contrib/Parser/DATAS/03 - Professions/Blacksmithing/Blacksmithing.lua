@@ -143,11 +143,13 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darkrune Helm",
-				["recipeID"] = 24913
+				["recipeID"] = 24913,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Enchanted Thorium Helm",
-				["recipeID"] = 16742
+				["recipeID"] = 16742,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Golden Scale Coif",
@@ -179,7 +181,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ornate Mithril Helm",
-				["recipeID"] = 9980
+				["recipeID"] = 9980,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Radiant Circlet",
@@ -298,7 +301,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darkrune Breastplate",
-				["recipeID"] = 24914
+				["recipeID"] = 24914,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Darksoul Breastplate",
@@ -311,7 +315,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Enchanted Thorium Breastplate",
-				["recipeID"] = 16745
+				["recipeID"] = 16745,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Golden Scale Cuirass",
@@ -349,7 +354,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ironvine Breastplate",
-				["recipeID"] = 28461
+				["recipeID"] = 28461,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Obsidian Mail Tunic",
@@ -357,7 +363,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ornate Mithril Breastplate",
-				["recipeID"] = 9972
+				["recipeID"] = 9972,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Radiant Breastplate",
@@ -432,7 +439,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darkrune Gauntlets",
-				["recipeID"] = 24912
+				["recipeID"] = 24912,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Fiery Plate Gauntlets",
@@ -444,7 +452,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Gloves of the Dawn",
-				["recipeID"] = 23633
+				["recipeID"] = 23633,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Golden Scale Gauntlets",
@@ -469,7 +478,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ironvine Gloves",
-				["recipeID"] = 28462
+				["recipeID"] = 28462,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Mithril Scale Gloves",
@@ -571,15 +581,18 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Girdle of the Dawn",
-				["recipeID"] = 23632
+				["recipeID"] = 23632,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Heavy Obsidian Belt",
-				["recipeID"] = 27585
+				["recipeID"] = 27585,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Heavy Timbermaw Belt",
-				["recipeID"] = 23628
+				["recipeID"] = 23628,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Imperial Plate Belt",
@@ -587,11 +600,13 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ironvine Belt",
-				["recipeID"] = 28463
+				["recipeID"] = 28463,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Light Obsidian Belt",
-				["recipeID"] = 27588
+				["recipeID"] = 27588,
+				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Radiant Belt",
@@ -626,7 +641,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Enchanted Thorium Leggings",
-				["recipeID"] = 16744
+				["recipeID"] = 16744,
+				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Golden Scale Leggings",
@@ -717,7 +733,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Heavy Timbermaw Boots",
-				["recipeID"] = 23629
+				["recipeID"] = 23629,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Imperial Plate Boots",
@@ -725,7 +742,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Ornate Mithril Boots",
-				["recipeID"] = 9979
+				["recipeID"] = 9979,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Polished Steel Boots",
@@ -805,7 +823,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Bleakwood Hew",
-				["recipeID"] = 16965
+				["recipeID"] = 16965,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Blight",
@@ -813,7 +832,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Blood Talon",
-				["recipeID"] = 16986
+				["recipeID"] = 16986,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Blue Glittering Axe",
@@ -889,7 +909,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Darkspear",
-				["recipeID"] = 16987
+				["recipeID"] = 16987,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Dawn's Edge",
@@ -969,7 +990,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Inlaid Thorium Hammer",
-				["recipeID"] = 16967
+				["recipeID"] = 16967,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Iridescent Hammer",
@@ -1017,7 +1039,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Rune Edge",
-				["recipeID"] = 16980
+				["recipeID"] = 16980,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Runed Mithril Hammer",
@@ -1057,7 +1080,8 @@ profession(164, {	-- Blacksmithing
 			},
 			{
 				["name"] = "Thorium Greatsword",
-				["recipeID"] = 16960
+				["recipeID"] = 16960,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Truesilver Champion",

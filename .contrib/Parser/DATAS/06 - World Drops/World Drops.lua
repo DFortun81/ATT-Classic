@@ -24,7 +24,10 @@ _.WorldDrops =
 				i(3393),	-- Recipe: Minor Magic Resistance Potion
 			}),
 			profession(164, {	-- Blacksmithing
+				i(7992),	-- Plans: Blue Glittering Axe
 				i(3609),	-- Plans: Copper Chain Vest
+				i(12698),	-- Plans: Dawnbringer Shoulders
+				i(7993),	-- Plans: Dazzling Mithril Rapier
 				i(2883),	-- Plans: Deadly Bronze Poniard
 				i(3868),	-- Plans: Frost Tiger Blade
 				i(3610),	-- Plans: Gemmed Copper Gauntlets
@@ -37,19 +40,45 @@ _.WorldDrops =
 				i(3612),	-- Plans: Green Iron Gauntlets
 				i(3870),	-- Plans: Green Iron Shoulders
 				i(7975),	-- Plans: Heavy Mithril Pants
+				i(7990),	-- Plans: Heavy Mithril Helm
+				i(12716),	-- Plans: Helm of the Great Chief
 				i(5543),	-- Plans: Iridescent Hammer
 				i(6045),	-- Plans: Iron Counterweight
 				i(6044),	-- Plans: Iron Shield Spike
 				i(3866),	-- Plans: Jade Serpentblade
+				i(12717),	-- Plans: Lionheart Helm
 				i(3608),	-- Plans: Mighty Iron Hammer
+				i(7991),	-- Plans: Mithril Scale Shoulders
 				i(7976),	-- Plans: Mithril Shield Spike
+				i(7989),	-- Plans: Mithril Spurs
+				i(22390),	-- Plans: Persuader
 				i(3874),	-- Plans: Polished Steel Boots
+				i(12685),	-- Plans: Radiant Belt
+				i(12697),	-- Plans: Radiant Boots
+				i(12689),	-- Plans: Radiant Breastplate
+				i(12702),	-- Plans: Radiant Circlet
+				i(12695),	-- Plans: Radiant Gloves
 				i(12713),	-- Plans: Radiant Leggings
 				i(2881),	-- Plans: Runed Copper Breastplate
+				i(22389),	-- Plans: Sageblade
+				i(12261),	-- Plans: Searing Golden Blade
 				i(3869),	-- Plans: Shadow Crescent Axe
 				i(5578),	-- Plans: Silvered Bronze Breastplate
+				i(10424),	-- Plans: Silvered Bronze Leggings
 				i(2882),	-- Plans: Silvered Bronze Shoulders
 				i(6046),	-- Plans: Steel Weapon Chain
+				i(12720),	-- Plans: Stronghold Gauntlets
+				i(12682),	-- Plans: Thorium Armor
+				i(12683),	-- Plans: Thorium Belt
+				i(12693),	-- Plans: Thorium Boots
+				i(12684),	-- Plans: Thorium Bracers
+				i(12694),	-- Plans: Thorium Helm
+				i(12704),	-- Plans: Thorium Leggings
+				i(12692),	-- Plans: Thorium Shield Spike
+				i(22388),	-- Plans: Titanic Leggings
+				i(8029),	-- Plans: Wicked Mithril Blade
+				i(12711),	-- Plans: Whitesoul Helm
+				i(12691),	-- Plans: Wildthorn Mail
 			}),
 			profession(333, {	-- Enchanting
 				i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit

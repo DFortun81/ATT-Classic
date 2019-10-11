@@ -33,6 +33,12 @@ _.Zones =
 						i(19215, {	-- Pattern: Wisdom of the Timbermaw
 							["u"] = 3,	-- Added in later phase
 						}),
+						i(19202, {	-- Plans: Heavy Timbermaw Belt
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19204, {	-- Plans: Heavy Timbermaw Boots
+							["u"] = 3,	-- Added in later phase
+						}),
 						i(13484),	-- Recipe: Transmute Earth to Water
 					},
 				}),

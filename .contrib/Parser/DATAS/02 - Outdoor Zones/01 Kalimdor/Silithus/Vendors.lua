@@ -84,6 +84,23 @@ _.Zones =
 						["u"] = 3,	-- Added in later phase (AQ)
 					}),
 				}),
+				n(15176, {	-- Vargus <Blacksmith>
+					i(22209, {	-- Plans: Heavy Obsidian Belt
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22768, {	-- Plans: Ironvine Belt
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22766, {	-- Plans: Ironvine Breastplate
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22767, {	-- Plans: Ironvine Gloves
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+					i(22214, {	-- Plans: Light Obsidian Belt
+						["u"] = 3,	-- Added in later phase (AQ)
+					}),
+				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["groups"] = {
 						i(15724),	-- Pattern: Heavy Scorpid Bracers
