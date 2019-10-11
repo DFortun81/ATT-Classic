@@ -17,6 +17,7 @@ _.Zones =
 				q(337, {	-- An Old History Book
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 2794 },
 				}),
 				q(1044, {	-- Answered Questions
 					["races"] = ALLIANCE_ONLY,
