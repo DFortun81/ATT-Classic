@@ -23,7 +23,7 @@ profession(129, {	-- First Aid
 			["maps"] = { IRONFORGE },
 			["isBreadcrumb"] = true,
 		}),
-		q(6625, {	-- Horde Trauma
+		q(6623, {	-- Horde Trauma
 			["lvl"] = 35,
 			["races"] = HORDE_ONLY,
 			["requireSkill"] = 129,	-- First Aid

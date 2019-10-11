@@ -274,6 +274,7 @@ _.Zones =
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 				}),
 				q(402, {	-- Sirra is Busy
+					["u"] = 1,	-- Never in game
 					["lvl"] = 20,
 				}),
 				q(1395, {	-- Supplies for Nethergarde

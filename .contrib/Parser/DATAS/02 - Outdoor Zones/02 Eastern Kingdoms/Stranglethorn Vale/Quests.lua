@@ -146,6 +146,8 @@ _.Zones =
 					},
 				}),
 				q(619, {	-- Enticing Negolash
+					["provider"] = { "o", 2289 },	-- Ruined Lifeboat
+					["repeatable"] = true,
 				}),
 				q(628, {	-- Excelsior
 					["lvl"] = 31,
@@ -400,15 +402,17 @@ _.Zones =
 						i(4136),	-- Darkspear Boots
 					},
 				}),
-				q(349, {	-- Stranglethorn Fever
-					["lvl"] = 32,
-				}),
 				q(348, {	-- Stranglethorn Fever
 					["lvl"] = 40,
 					["qg"] = 2486,	-- Fin Fizracket
 					["g"] = {
 						i(4113),	-- Medicine Blanket
 					},
+				}),
+				q(349, {	-- Stranglethorn Fever
+					["lvl"] = 32,
+					["qg"] = 1449,	-- Witch Doctor Unbagwa
+					["repeatable"] = true,
 				}),
 				q(198, {	-- Supplies to Private Thorsen
 					["lvl"] = 30,
