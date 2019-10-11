@@ -35,6 +35,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1440,	-- Milton Sheaf
 					["sourceQuest"] = 343,	-- Speaking of Fortitude
+					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
 				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
