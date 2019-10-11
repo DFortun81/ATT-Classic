@@ -10,6 +10,7 @@ _.Zones =
 					["groups"] = {
 						i(13288),	-- Pattern: Raptor Hide Belt
 					},
+					["coord"] = { 45.1, 46.8, ARATHI_HIGHLANDS },
 				}),
 				n(2805, {	-- Deneb Walker <Scrolls & Potions>
 					["groups"] = {
@@ -22,17 +23,20 @@ _.Zones =
 					["groups"] = {
 						i(6056),	-- Recipe: Frost Protection Potion				
 					},
+					["coord"] = { 46.4, 47.0, ARATHI_HIGHLANDS },
 				}),
 				n(2810, {	-- Hammon Karwn <Superior Tradesman>
 					["groups"] = {
 						i(5973),	-- Pattern: Barbaric Leggings
 						i(12228),	-- Recipe: Roast Raptor
 					},
+					["coord"] = { 46.5, 47.4, ARATHI_HIGHLANDS },
 				}),
 				n(1471, {	-- Jannos Ironwill <Superior Macecrafter>
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul
 					},
+					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
 				}),
 				n(6574, {	-- Jun'ha <Tailoring Supplies>
 					["groups"] = {
@@ -56,6 +60,7 @@ _.Zones =
 					["groups"] = {
 						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					},
+					["coord"] = { 45.6, 47.6, ARATHI_HIGHLANDS },
 				}),
 				n(15126, {	-- Rutherford Twing <Defilers Supply Officer>
 					["groups"] = {
@@ -87,6 +92,7 @@ _.Zones =
 						i(20093),	-- Highlander's Chain Greaves
 						i(21119),	-- Talisman of Arathor
 					},
+					["coord"] = { 46.0, 45.3, ARATHI_HIGHLANDS },
 				}),
 				n(2819, {	-- Tunkk <Leatherworking Supplies>
 					["groups"] = {

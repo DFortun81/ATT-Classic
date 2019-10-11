@@ -14,6 +14,7 @@ _.Zones =
 						i(2916),	-- Gold Lion Shield
 						i(2917),	-- Tranquil Ring
 					},
+					["coord"] = { 49.8, 18.3, WETLANDS },
 				}),
 				q(471, {	-- Apprentice's Duties
 					["lvl"] = 18,
@@ -171,6 +172,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 633,	-- The Thandol Span (3/3)
+					["coord"] = { 49.9, 18.2, WETLANDS },
 				}),
 				q(281, {	-- Reclaiming Goods
 					["lvl"] = 20,
@@ -235,6 +237,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1074,	-- Motley Garmason
+					["coord"] = { 49.7, 18.3, WETLANDS },
 				}),
 				q(292, {	-- The Eye of Paleth
 					["lvl"] = 22,
@@ -262,6 +265,7 @@ _.Zones =
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
+					["coord"] = { 49.9, 18.2, WETLANDS },
 				}),
 				q(632, {	-- The Thandol Span (2/3)
 					["lvl"] = 28,
@@ -278,6 +282,7 @@ _.Zones =
 						i(4504),	-- Dwarven Guard Cloak
 						i(4505),	-- Swampland Trousers
 					},
+					["coord"] = { 49.9, 18.2, WETLANDS },
 				}),
 				q(288, {	-- The Third Fleet
 					["lvl"] = 22,

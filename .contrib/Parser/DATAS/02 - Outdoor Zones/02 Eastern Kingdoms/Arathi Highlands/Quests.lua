@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2788,	-- Apprentice Kryten
+					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
 				}),
 				q(696, {	-- Attack on the Tower
 					["lvl"] = 30,
@@ -145,6 +146,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2700,	-- Captain Nials
+					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },
 				}),
 				q(674, {	-- Raising Spirits
 					["lvl"] = 29,
@@ -189,6 +191,7 @@ _.Zones =
 					["g"] = {
 						i(4741),	-- Stromgarde Cavalry Leggings
 					},
+					["coord"] = { 45.9, 47.5, ARATHI_HIGHLANDS },
 				}),
 				q(656, {	-- Summoning the Princess
 					["lvl"] = 30,
@@ -251,6 +254,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 				}),
 				q(6622, {	-- Triage
 					["qg"] = 12920,	-- Doctor Gregory Victor
@@ -275,6 +279,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
+					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 				}),
 				q(684, {	-- Wanted! Marez Cowl
 					["lvl"] = 30,
@@ -297,6 +302,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2788,	-- Apprentice Kryten
+					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
 				}),
 			}),
 		}),
