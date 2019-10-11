@@ -14,19 +14,28 @@ _.Zones =
 					["lvl"] = 10,
 					["coord"] = { 56.9, 47.2, WESTFALL },
 				}),
-				q(139, {	-- Captain Sander's Hidden Treasure
+				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 36,	-- Broken Barrel
+					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
 				}),
-				q(138, {	-- Captain Sander's Hidden Treasure
+				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 35,	-- Captain's Footlocker
+					["provider"] = { "o", 35 },	-- Captain's Footlocker
+					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
 				}),
-				q(140, {	-- Captain Sander's Hidden Treasure
+				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 36 },	-- Broken Barrel
+					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
+				}),
+				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 34 },	-- Old Jug
+					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
 					["g"] = {
 						i(2842),	-- Silver Bar
 						i(3343),	-- Captain Sander's Booty Bag
@@ -34,27 +43,18 @@ _.Zones =
 						i(3344),	-- Captain Sander's Sash
 					},
 				}),
-				q(136, {	-- Captain Sander's Hidden Treasure
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(6281, {	-- Continue to Stormwind
 					["lvl"] = 10,
 					["races"] = {
 						1,	-- Human
 					},
 					["qg"] = 523,	-- Thor
-				}),
-				q(6261, {	-- Dungar Longdrink
-					["lvl"] = 10,
-					["races"] = {
-						1,	-- Human
-					},
-					["qg"] = 1323,	-- Osric Strang
+					["sourceQuest"] = 6181,	-- A Swift Message
 				}),
 				q(184, {	-- Furlbrow's Deed
 					["lvl"] = 8,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 1972 },	-- Westfall Deed
 					["g"] = {
 						i(5057),	-- Ripe Watermelon
 						i(4656),	-- Small Pumpkin
@@ -64,11 +64,11 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 235,	-- Salma Saldean
+					["coord"] = { 56.4, 30.6, WESTFALL },
 					["g"] = {
 						i(724),	-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie
 					},
-					["coord"] = { 56.4, 30.6, WESTFALL },
 				}),
 				q(103, {	-- Keeper of the Flame
 					["lvl"] = 10,
@@ -86,71 +86,74 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7024,	-- Agent Kearnen
+					["coord"] = { 68.5, 70.2, WESTFALL },
+					["sourceQuest"] = 2360,	-- Mathias and the Defias
 					["g"] = {
 						i(18160),	-- Recipe: Thistle Tea
 					},
-					["coord"] = { 68.5, 70.2, WESTFALL },
 				}),
 				q(102, {	-- Patrolling Westfall
 					["lvl"] = 8,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 821,	-- Captain Danuvin
+					["coord"] = { 56.4, 47.6, WESTFALL },
 					["g"] = {
 						i(1154),	-- Belt of the People's Militia
 						i(710),	-- Bracers of the People's Militia
 					},
-					["coord"] = { 56.4, 47.6, WESTFALL },
 				}),
 				q(151, {	-- Poor Old Blanchy
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 238,	-- Verna Furlbrow
+					["coord"] = { 60.0, 19.4, WESTFALL },
 					["g"] = {
 						i(2165),	-- Old Blanchy's Blanket
 						i(1537),	-- Old Blanchy's Feed Pouch
 					},
-					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
 				q(153, {	-- Red Leather Bandanas
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 878,	-- Scout Galiaan
+					["coord"] = { 54.0, 53.0, WESTFALL },
 					["g"] = {
 						i(3511),	-- Cloak of the People's Militia
 						i(5944),	-- Greaves of the People's Militia
 						i(12295),	-- Leggings of the People's Militia
 					},
-					["coord"] = { 54.0, 53.0, WESTFALL },
 				}),
-				q(6285, {	-- Return to Lewis
-					["lvl"] = 10,
-					["races"] = {
-						1,	-- Human
-					},
-					["qg"] = 352,	-- Dungar Longdrink
-				}),
-				q(50, {	-- Sweet Amber
+				q(48, {	-- Sweet Amber (1/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 				}),
-				q(49, {	-- Sweet Amber
+				q(49, {	-- Sweet Amber (2/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
 				}),
-				q(51, {	-- Sweet Amber
+				q(50, {	-- Sweet Amber (3/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
 				}),
-				q(53, {	-- Sweet Amber
+				q(51, {	-- Sweet Amber (4/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
+				}),
+				q(53, {	-- Sweet Amber (5/5)
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
 					["g"] = {
 						i(744),	-- Thunderbrew's Boot Flask
 					},
-				}),
-				q(48, {	-- Sweet Amber
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["lvl"] = 10,
@@ -167,110 +170,104 @@ _.Zones =
 						i(5240),	-- Torchlight Wand
 					},
 				}),
-				q(141, {	-- The Defias Brotherhood
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 332,	-- Master Mathias Shaw
-				}),
-				q(135, {	-- The Defias Brotherhood
+				q(65, {	-- The Defias Brotherhood (1/7)
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
-				q(132, {	-- The Defias Brotherhood
+				q(135, {	-- The Defias Brotherhood (3/7)
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 266,	-- Wiley the Black
-					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
-					["description"] = "Wiley the Black is located on the 2nd floor of the Lakeshire Inn.",
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
 				}),
-				q(155, {	-- The Defias Brotherhood
+				q(142, {	-- The Defias Brotherhood (5/7)
+					["lvl"] = 14,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["sourceQuest"] = 141,	-- The Defias Brotherhood (4/7)
+				}),
+				q(155, {	-- The Defias Brotherhood (6/7)
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 467,	-- The Defias Traitor
 					["coord"] = { 55.6, 47.5, WESTFALL },
-				}),
-				q(65, {	-- The Defias Brotherhood
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
-				}),
-				q(142, {	-- The Defias Brotherhood
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
+					["sourceQuest"] = 142,	-- The Defias Brotherhood (5/7)
 				}),
 				q(64, {	-- The Forgotten Heirloom
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 237,	-- Farmer Furlbrow
+					["coord"] = { 60.0, 19.4, WESTFALL },
 					["g"] = {
 						i(4541),	-- Freshly Baked Bread
 						i(1179),	-- Ice Cold Milk
 					},
-					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
 				q(9, {	-- The Killing Fields
 					["lvl"] = 8,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 233,	-- Farmer Saldean
+					["coord"] = { 56.0, 31.2, WESTFALL },
 					["g"] = {
 						i(3578),	-- Harvester's Pants
 						i(1561),	-- Harvester's Robe
 					},
-					["coord"] = { 56.0, 31.2, WESTFALL },
 				}),
-				q(13, {	-- The People's Militia
+				q(12, {	-- The People's Militia (1/3)
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
-				q(12, {	-- The People's Militia
+				q(13, {	-- The People's Militia (2/3)
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
+					["sourceQuest"] = 12,	-- The People's Militia (1/3)
 				}),
-				q(14, {	-- The People's Militia
-					["qg"] = 234,	-- Gryan Stoutmantle
-					["races"] = ALLIANCE_ONLY,
+				q(14, {	-- The People's Militia (3/3)
 					["lvl"] = 9,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["sourceQuest"] = 13,	-- The People's Militia (2/3)
 					["g"] = {
 						i(1566),	-- Edge of the People's Militia
 						i(1480),	-- Fist of the People's Militia
 						i(12296),	-- Spark of the People's Militia
 					},
-					["coord"] = { 56.3, 47.6, WESTFALL },
 				}),
 				q(117, {	-- Thunderbrew
-					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["repeatable"] = true,
 					["g"] = {
 						i(1262),	-- Keg of Thunderbrew
 					},
 				}),
-				q(36, {	-- Westfall Stew
+				q(36, {	-- Westfall Stew (1/2)
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
 				}),
-				q(38, {	-- Westfall Stew
+				q(38, {	-- Westfall Stew (2/2)
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 235,	-- Salma Saldean
+					["coord"] = { 56.4, 30.6, WESTFALL },
+					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
 					["g"] = {
 						i(733),	-- Westfall Stew
 						i(1479),	-- Salma's Oven Mitts
 						i(728),	-- Recipe: Westfall Stew
 						i(2225),	-- Sharp Kitchen Knife
 					},
-					["coord"] = { 56.4, 30.6, WESTFALL },
 				}),
 			}),
 		}),

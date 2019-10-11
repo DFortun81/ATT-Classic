@@ -237,6 +237,14 @@ _.Zones =
 					},
 					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },					
 				}),
+				q(132, {	-- The Defias Brotherhood (2/7)
+					["lvl"] = 14,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 266,	-- Wiley the Black
+					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
+					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
+					["description"] = "Wiley the Black is located on the 2nd floor of the Lakeshire Inn.",
+				}),
 				q(89, {	-- The Everstill Bridge
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,

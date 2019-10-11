@@ -37,6 +37,14 @@ _.Zones =
 					["sourceQuest"] = 343,	-- Speaking of Fortitude
 					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
 				}),
+				q(6261, {	-- Dungar Longdrink
+					["lvl"] = 10,
+					["races"] = {
+						1,	-- Human
+					},
+					["qg"] = 1323,	-- Osric Strang
+					["sourceQuest"] = 6281,	-- Continue to Stormwind
+				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
@@ -126,6 +134,14 @@ _.Zones =
 					},
 					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
 				}),
+				q(6285, {	-- Return to Lewis
+					["lvl"] = 10,
+					["races"] = {
+						1,	-- Human
+					},
+					["qg"] = 352,	-- Dungar Longdrink
+					["sourceQuest"] = 6261,	-- Dungar Longdrink
+				}),
 				q(2206, {	-- Snatch and Grab
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -147,6 +163,12 @@ _.Zones =
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(141, {	-- The Defias Brotherhood (4/7)
+					["lvl"] = 14,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 332,	-- Master Mathias Shaw
+					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
 				}),
 				q(6182, {	-- The First and the Last
 					["lvl"] = 56,
@@ -195,11 +217,11 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["sourceQuest"] = 2608, -- The Touch of Zanzil
+					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town (64.4, 60.8).\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park (39.9, 46.3).",
+					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
 					["g"] = {
 						i(8432),	-- Eau de Mixilpixil
 					},
-					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town (64.4, 60.8).\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park (39.9, 46.3).",
-					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
 				}),
 				q(1449, {	-- To The Hinterlands
 					["lvl"] = 38,
@@ -210,10 +232,10 @@ _.Zones =
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1432, -- Renato Gallina
+					["coord"] = { 57.0, 63.4, STORMWIND_CITY },
 					["g"] = {
 						i(2723),	-- Bottle of Dalaran Noir
 					},
-					["coord"] = { 57.0, 63.4, STORMWIND_CITY },
 				}),
 			}),
 		}),

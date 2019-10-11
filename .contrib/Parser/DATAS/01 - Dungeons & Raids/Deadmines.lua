@@ -32,7 +32,7 @@ _.Instances = {
 				},
 				{
 					["questID"] = 214,	-- Red Silk Bandanas
-					["sourceQuest"] = 155,	-- The Defias Brotherhood [Part 1]
+					["sourceQuest"] = 153,	-- Red Leather Bandanas
 					["qg"] = 820,	-- Scout Riell <The People's Militia>
 					["coord"] = { 56.7, 47.4, WESTFALL },
 					["maps"] = { WESTFALL },
@@ -44,8 +44,8 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 166,	-- The Defias Brotherhood [Part 2]
-					["sourceQuest"] = 155,	-- The Defias Brotherhood [Part 1]
+					["questID"] = 166,	-- The Defias Brotherhood (7/7)
+					["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 					["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
 					["coord"] = { 56.3, 47.5, WESTFALL },
 					["maps"] = { WESTFALL },
