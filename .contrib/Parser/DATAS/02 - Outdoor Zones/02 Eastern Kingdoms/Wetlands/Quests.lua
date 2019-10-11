@@ -198,12 +198,14 @@ _.Zones =
 						i(2950),	-- Icicle Rod
 						i(2949),	-- Mariner Boots
 					},
+					["coord"] = { 14.0, 34.8, WETLANDS },
 				}),
 				q(285, {	-- Search More Hovels
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 284,	-- The Search Continues
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
+					["coord"] = { 13.6, 38.2, WETLANDS },
 				}),
 				q(637, {	-- Sully Balloo's Letter
 					["lvl"] = 25,
@@ -254,6 +256,7 @@ _.Zones =
 					["g"] = {
 						i(422),	-- Dwarven Mild
 					},
+					["coord"] = { 13.5, 41.4, WETLANDS },
 				}),
 				q(631, {	-- The Thandol Span (1/3)
 					["lvl"] = 28,
