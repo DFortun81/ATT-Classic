@@ -61,6 +61,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["qg"] = 1373,	-- Jarven Thunderbrew
+					["altQuests"] = {
+						311,	-- Return to Marleth
+					},
 				}),
 				q(179, {	-- Dwarven Outfitters
 					["races"] = ALLIANCE_ONLY,
@@ -102,6 +105,9 @@ _.Zones =
 				q(403, {	-- Guarded Thunderbrew Barrel
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["altQuests"] = {
+						311,	-- Return to Marleth
+					},
 					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
 				}),
 				q(2239, {	-- Onin's Report
@@ -302,6 +308,10 @@ _.Zones =
 					["qg"] = 1234,	-- Hogral Bakkan
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 2218,	-- Road to Salvation
+					["altQuests"] = {
+						2205,	-- Seek out SI:7
+						2241,	-- The Apple Falls
+					},
 				}),
 				q(400, {	-- Tools for Steelgrill
 					["lvl"] = 2,

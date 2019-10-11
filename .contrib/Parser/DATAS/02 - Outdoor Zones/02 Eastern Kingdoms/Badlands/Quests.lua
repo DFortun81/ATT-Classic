@@ -340,10 +340,18 @@ _.Zones =
 				}),
 				q(795, {	-- Seal of the Earth
 					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["altQuests"] =	{
+						793,	-- Broken Alliances
+					},
 				}),
 				q(779, {	-- Seal of the Earth
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 2933,	-- Seal of the Earth
+					["altQuests"] =	{
+						717,	-- Tremors of the Earth
+					},
 				}),
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
