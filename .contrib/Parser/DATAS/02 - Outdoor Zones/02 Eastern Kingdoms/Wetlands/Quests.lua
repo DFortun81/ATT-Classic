@@ -25,6 +25,7 @@ _.Zones =
 						i(3561),	-- Resilient Poncho
 						i(3681),	-- Recipe: Crocolisk Gumbo
 					},
+					["coord"] = { 8.5, 55.7, WETLANDS },
 				}),
 				q(275, {	-- Blisters on The Land
 					["lvl"] = 20,
