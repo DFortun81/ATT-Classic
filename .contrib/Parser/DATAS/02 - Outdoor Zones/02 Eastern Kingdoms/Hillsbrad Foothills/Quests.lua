@@ -314,6 +314,12 @@ _.Zones =
 						i(3729),	-- Soothing Turtle Bisque
 					},
 				}),
+				q(538, { -- Southshore
+					["qg"] = 1440, -- Milton Sheaf <Librarian>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
+					["sourceQuest"] = 337, -- An Old History Book
+				}),
 				q(546, {	-- Souvenirs of Death
 					["qg"] = 2418,	-- Deathguard Samsa
 					["coord"] = { 62.12, 19.72, HILLSBRAD_FOOTHILLS },
