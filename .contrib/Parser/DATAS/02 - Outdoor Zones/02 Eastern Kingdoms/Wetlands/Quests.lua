@@ -273,6 +273,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2652 },	-- Ebenezer Rustlocke's Corpse
 					["sourceQuest"] = 631,	-- The Thandol Span (1/3)
+					["coord"] = { 51.3, 8.0, WETLANDS },
 				}),
 				q(633, {	-- The Thandol Span (3/3)
 					["lvl"] = 28,
