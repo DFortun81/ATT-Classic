@@ -68,6 +68,8 @@ _.Zones =
 				q(254, {	-- Digging Through the Dirt
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 51708 },
+					["coord"] = { 28.8, 30.8, DUSKWOOD },
 					--["objectID"] = 51708,	-- Eliza's Grave Dirt
 				}),
 				q(93, {	-- Dusky Crab Cakes
