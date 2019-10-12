@@ -163,6 +163,7 @@ _.Zones =
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["lvl"] = 14,

@@ -35,6 +35,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1416,	-- Grimand Elmore
+					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 				}),
 				q(322, {	-- Blessed Arm
 					["lvl"] = 20,
