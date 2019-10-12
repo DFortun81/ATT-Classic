@@ -244,6 +244,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 290,	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
+					["coord"] = { 14.5, 24.0, WETLANDS },
 				}),
 				q(463, {	-- The Greenwarden
 					["lvl"] = 20,
