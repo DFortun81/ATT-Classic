@@ -12,10 +12,19 @@ _.Zones =
 				i(16222, {	-- Formula: Enchant Chest - Superior Spirit
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
+				i(14477, {	-- Pattern: Ghostweave Gloves
+					["cr"] = 8538,	-- Unseen Servant
+				}),
+				i(14480, {	-- Pattern: Ghostweave Vest
+					["cr"] = 8538,	-- Unseen Servant
+				}),
 				i(14485, {	-- Pattern: Wizardweave Leggings
 					["cr"] = 8551,	-- Dark Summoner
 				}),
 				i(14500, {	-- Pattern: Wizardweave Robe
+					["cr"] = 8526,	-- Dark Caster
+				}),
+				i(14505, {	-- Pattern: Wizardweave Turban
 					["cr"] = 8526,	-- Dark Caster
 				}),
 				i(13479, {	-- Recipe: Elixir of the Sages

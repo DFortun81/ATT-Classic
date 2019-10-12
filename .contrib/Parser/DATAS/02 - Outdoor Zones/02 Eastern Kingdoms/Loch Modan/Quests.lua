@@ -103,17 +103,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 36,
 				}),
-				q(2501, {	-- Badlands Reagent Run II
-					["qg"] = 1470,	-- Ghak Healtouch
-					["requireSkill"] = 171,	-- Alchemy
-					["sourceQuest"] = 2500,	-- Badlands Reagent Run
-					["cost"] = {
-						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
-					},
-					["coord"] = { 37.07, 49.38, LOCH_MODAN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 40,
-				}),
 				q(2038, {	-- Bingles' Missing Supplies
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,

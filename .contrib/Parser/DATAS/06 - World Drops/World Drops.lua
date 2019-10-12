@@ -161,7 +161,10 @@ _.WorldDrops =
 				i(7085),	-- Pattern: Azure Shoulders
 				i(4352),	-- Pattern: Boots of the Enchanter
 				i(14510),	-- Pattern: Bottomless Bag
+				i(14484),	-- Pattern: Brightcloth Cloak
+				i(14479),	-- Pattern: Brightcloth Gloves
 				i(14494),	-- Pattern: Brightcloth Pants
+				i(14478),	-- Pattern: Brightcloth Robe
 				i(10316),	-- Pattern: Colorful Kilt
 				i(7084),	-- Pattern: Crimson Silk Shoulders
 				i(7086),	-- Pattern: Earthen Silk Belt
@@ -192,6 +195,9 @@ _.WorldDrops =
 				i(4345),	-- Pattern: Red Woolen Boots
 				i(4347),	-- Pattern: Reinforced Woolen Shoulders
 				i(4354),	-- Pattern: Rich Purple Silk Shirt
+				i(14498),	-- Pattern: Runecloth Headband
+				i(14491),	-- Pattern: Runecloth Pants
+				i(14504),	-- Pattern: Runecloth Shoulders
 				i(14470),	-- Pattern: Runecloth Tunic
 				i(4351),	-- Pattern: Shadow Hood
 				i(4353),	-- Pattern: Spider Belt

@@ -68,7 +68,8 @@ profession(171, {	-- Alchemy
 			},
 			{
 				["name"] = "Greater Holy Protection Potion",
-				["recipeID"] = 17579
+				["recipeID"] = 17579,
+				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Greater Mana Potion",
@@ -493,13 +494,4 @@ profession(171, {	-- Alchemy
 			}
 		}
 	},
-	n(-17, {	-- Quests
-		q(1581, {	-- Elixirs for the Bladeleafs
-			["lvl"] = 4,
-			["requireSkill"] = 171,	-- Alchemy
-			["maps"] = { TELDRASSIL },
-			["races"] = ALLIANCE_ONLY,
-			["qg"] = 2083,	-- Syral Bladeleaf
-		}),
-	}),
 });

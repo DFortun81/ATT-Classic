@@ -346,6 +346,11 @@ _.Instances = {
 						10398,	-- Thuzadin Shadowcaster
 					},
 				}),
+				i(14495, {	-- Pattern: Ghostweave Pants
+					["crs"] = {
+						10384, 	-- Spectral Citizen
+					},
+				}),
 				i(15777, {	-- Pattern: Runic Leather Shoulders
 					["crs"] = {
 						10425, 	-- Crimson Battle Mage

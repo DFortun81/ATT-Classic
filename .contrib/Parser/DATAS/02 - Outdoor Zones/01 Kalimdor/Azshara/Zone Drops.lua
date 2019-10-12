@@ -12,6 +12,12 @@ _.Zones =
 				i(15763, {	-- Pattern: Blue Dragonscale Shoulders
 					["cr"] = 6146,	-- Cliff Breaker
 				}),
+				i(14473, {	-- Pattern: Ghostweave Belt
+					["cr"] = 7864,	-- Lingering Highborne
+				}),
+				i(14477, {	-- Pattern: Ghostweave Gloves
+					["cr"] = 7864,	-- Lingering Highborne
+				}),
 				i(15753, {	-- Pattern: Stormshroud Armor
 					["cr"] = 6138,	-- Arkkoran Oracle
 				}),
