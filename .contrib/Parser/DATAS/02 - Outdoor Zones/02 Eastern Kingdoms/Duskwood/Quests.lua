@@ -476,6 +476,8 @@ _.Zones =
 				q(225, {	-- The Weathered Grave
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 61 },
+					["coord"] = { 17.7, 29.2, DUSKWOOD },
 					--["objectID"] = 61,	-- A Weathered Grave
 				}),
 				q(251, {	-- Translate Abercrombie's Note
