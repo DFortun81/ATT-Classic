@@ -44,6 +44,7 @@ _.Zones =
 					},
 					["qg"] = 1323,	-- Osric Strang
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
+					["coord"] = { 74.2, 47.5, STORMWIND_CITY },
 				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
@@ -287,6 +288,7 @@ _.Zones =
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
 				}),
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind

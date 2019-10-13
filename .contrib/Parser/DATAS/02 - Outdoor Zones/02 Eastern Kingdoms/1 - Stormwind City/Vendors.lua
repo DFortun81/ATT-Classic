@@ -11,6 +11,7 @@ _.Zones =
 						i(6274),	-- Pattern: Blue Overalls
 						i(10325),	-- Pattern: White Wedding Dress
 					},
+					["coord"] = { 43.3, 74.0, STORMWIND_CITY },
 				}),
 				n(5494, {	-- Catherine Leland <Fishing Supplier>
 					["groups"] = {
@@ -29,17 +30,21 @@ _.Zones =
 						i(4828),	-- Nightwind Belt
 						i(4829),	-- Dreamer's Belt
 					},
+					["coord"] = { 32.4, 79.9, STORMWIND_CITY },
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
 					["groups"] = {
 						i(18649),	-- Schematic: Blue Firework
 					},
+					["coord"] = { 29.6, 67.8, STORMWIND_CITY },
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplier>
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
 					},
+					["coord"] = { 76.0, 36.8, STORMWIND_CITY },
+					["description"] = "Erika Tate is located at the back of the Pig and Whistle Tavern.",
 				}),
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 					["groups"] = {
@@ -77,6 +82,7 @@ _.Zones =
 						i(3682),	-- Recipe: Curiously Tasty Omelet
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
+					["coord"] = { 74.6, 36.8, STORMWIND_CITY },
 				}),
 				n(8666, {	-- Lil Timmy <Boy with kittens>
 					["groups"] = {						
@@ -87,6 +93,7 @@ _.Zones =
 					["groups"] = {						
 						i(9301),	-- Recipe: Elixir of Shadow Power
 					},
+					["coord"] = { 46.6, 79.0, STORMWIND_CITY },
 				}),
 			}),	
 		}),

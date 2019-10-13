@@ -61,6 +61,7 @@ _.Zones =
 					["g"] = {
 						i(5951),	-- Moist Towelette
 					},
+					["coord"] = { 41.4, 89.3, STORMWIND_CITY },
 				}),
 				q(1272, {	-- Finding Reethe <CHANGE INTO GOSSIP>
 					["lvl"] = 30,
