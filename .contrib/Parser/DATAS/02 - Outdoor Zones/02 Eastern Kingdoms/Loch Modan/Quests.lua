@@ -167,10 +167,7 @@ _.Zones =
 						3,	-- Dwarf
 						7,	-- Gnome
 					},
-					["qgs"] = {
-						1681,	-- Brock Stoneseeker
-						1699,	-- Gremlock Pilsnor
-					},
+					["qg"] = 1681,	-- Brock Stoneseeker
 					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Brock Stoneseeker.",
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
