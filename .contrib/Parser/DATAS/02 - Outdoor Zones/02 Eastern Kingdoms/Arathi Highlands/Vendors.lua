@@ -18,6 +18,7 @@ _.Zones =
 						i(16112),	-- Manual: Heavy Silk Bandage
 						i(16113),	-- Manual: Mageweave Bandage
 					},
+					["coord"] = { 27.0, 58.8, ARATHI_HIGHLANDS },
 				}),
 				n(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>
 					["groups"] = {
