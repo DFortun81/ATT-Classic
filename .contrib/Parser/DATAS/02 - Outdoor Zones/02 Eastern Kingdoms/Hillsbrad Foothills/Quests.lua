@@ -199,22 +199,25 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 				}),
-				q(560, {	-- Farren's Proof
+				q(560, {	-- Farren's Proof (2)
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["sourceQuest"] = 559, -- Farren's Proof (1)
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
-				q(561, {	-- Farren's Proof
+				q(561, {	-- Farren's Proof (3)
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2263,	-- Marshal Redpath
+					["sourceQuest"] = 560, -- Farren's Proof (2)
 					["coord"] = { 49.5, 58.6, HILLSBRAD_FOOTHILLS },
 				}),
-				q(559, {	-- Farren's Proof
+				q(559, {	-- Farren's Proof (1)
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["sourceQuest"] = 536, -- Down the Coast
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(503, {	-- Gol'dir
@@ -301,6 +304,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["sourceQuest"] = 562, -- Stormwind Ho!
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(555, {	-- Soothing Turtle Bisque
@@ -312,6 +316,7 @@ _.Zones =
 						i(3729),	-- Soothing Turtle Bisque
 					},
 					["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
+					["description"] = "You can buy the Soothing Spices from Micha Yance at 49.0, 55.1.",
 				}),
 				q(7321, {	-- Soothing Turtle Bisque
 					["qg"] = 2393,	-- Christoph Jeffcoat
@@ -351,6 +356,7 @@ _.Zones =
 					["g"] = {
 						i(3755),	-- Fish Gutter
 					},
+					["sourceQuest"] = 561, -- Farren's Proof (3)
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(508, {	-- Taretha's Gift
