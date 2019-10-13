@@ -13,6 +13,7 @@ _.Zones =
 					["g"] = {
 						i(6801),	-- Baroque Apron
 					},
+					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
 				}),
 				q(1168, {	-- Army of the Black Dragon
 					["qg"] = 4502,	-- Tharg
@@ -27,6 +28,11 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4947,	-- Theramore Lieutenant
+					["coords"] = { 
+						{ 68.1, 48.2, DUSTWALLOW_MARSH},
+						{ 67.2, 51.0, DUSTWALLOW_MARSH},
+						{ 65.1, 47.1, DUSTWALLOW_MARSH},
+					},
 				}),
 				q(1173, {	-- Challenge Overlord Mok'Morokk
 					["qg"] = 4500,	-- Overlord Mok'Morokk
@@ -41,6 +47,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4948,	-- Adjutant Tesoran
+					["coord"] = { 68.0, 48.1, DUSTWALLOW_MARSH },
 				}),
 				q(1205, {	-- Deadmire
 					["qg"] = 3441,	-- Melor Stonehoof
@@ -68,6 +75,7 @@ _.Zones =
 					["g"] = {
 						i(6719),	-- Windborne Belt
 					},
+					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
 				}),
 				q(1177, {	-- Hungry!
 					["lvl"] = 32,
@@ -118,6 +126,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4944,	-- Captain Garran Vimes
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 				}),
 				q(1252, {	-- Lieutenant Paval Reethe
 					["lvl"] = 30,
@@ -138,6 +147,7 @@ _.Zones =
 					["lvl"] = 33,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4794,	-- Morgan Stern
+					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
 				}),
 				q(1166, {	-- Overlord Mok'Morokk's Concern
 					["qg"] = 4500,	-- Overlord Mok'Morokk
@@ -233,6 +243,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4944,	-- Captain Garran Vimes
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 				}),
 				q(1320, {	-- The Black Shield
 					["lvl"] = 30,
@@ -286,11 +297,46 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4944,	-- Captain Garran Vimes
+					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 				}),
 				q(1238, {	-- The Lost Report
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
 					--["objectID"] = 20985,	-- Loose Dirt
+				}),
+				q(1265, { -- The Missing Diplomat (14/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4964, -- Commander Samaul
+					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 68.0, 48.6, DUSTWALLOW_MARSH },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1264,
+				}),
+				q(1266, { -- The Missing Diplomat (15/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4967, -- Archmage Tervosh
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "This is part of a quest chain that begins in Stormwind City. Archmage Tervosh is located at the top of the tower.",
+					["sourceQuest"] = 1265,
+					["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
+				}),
+				q(1324, { -- The Missing Diplomat (16/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4966, -- Private Hendel
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1266,
+				}),
+				q(1267, { -- The Missing Diplomat (17/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4968, -- Lady Jaina Proudmoore
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1324,
 				}),
 				q(1219, {	-- The Orc Report
 					["lvl"] = 30,
@@ -321,6 +367,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4921,	-- Guard Byron
 					["altQuests"] = { 1301 },	-- James Hyal
+					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
 				}),
 				q(1288, {	-- Vimes's Report
 					["lvl"] = 30,

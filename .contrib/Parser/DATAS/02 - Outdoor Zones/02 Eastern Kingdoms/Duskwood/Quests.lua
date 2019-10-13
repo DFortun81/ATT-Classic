@@ -423,6 +423,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 2734,	-- Waterlogged Chest
 				}),
+				q(1244, { -- The Missing Diplomat (5/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 840, -- Watcher Backus
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "This is part of a quest chain that begins in Stormwind City. Watcher Backus patrols the road heading north from Darkshire. The Defias Docket is located at 24.0, 72.1.",
+					["sourceQuest"] = 1243,
+				}),
+				q(1245, { -- The Missing Diplomat (6/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 840, -- Watcher Backus
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "Watcher Backus patrols the road heading north from Darkshire.",
+					["sourceQuest"] = 1244,
+				}),
 				q(57, {	-- The Night Watch
 					["lvl"] = 18,
 					["races"] = ALLIANCE_ONLY,

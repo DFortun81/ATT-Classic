@@ -191,6 +191,65 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
+				q(1274, { -- The Missing Diplomat (1/17)
+					["lvl"] = 28,
+					["qg"] = 4982, -- Thomas <Altar Boy>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 39.8, 28.3, STORMWIND_CITY },
+				}),
+				q(1241, { -- The Missing Diplomat (2/17)
+					["lvl"] = 28,
+					["qg"] = 4960, -- Bishop DeLavey
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 78.4, 25.4, STORMWIND_CITY },
+					["sourceQuest"] = 1274,
+				}),
+				q(1242, { -- The Missing Diplomat (3/17)
+					["lvl"] = 28,
+					["qg"] = 4959, -- Jorgen
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.2, 78.6, STORMWIND_CITY },
+					["sourceQuest"] = 1241,
+				}),
+				q(1243, { -- The Missing Diplomat (4/17)
+					["lvl"] = 28,
+					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
+					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
+					["sourceQuest"] = 1242,
+				}),
+				q(1246, { -- The Missing Diplomat (7/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
+					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
+					["sourceQuest"] = 1245,
+				}),
+				q(1447, { -- The Missing Diplomat (8/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4961, -- Dashel Stonefist
+					["coord"] = { 70.5, 44.9, STORMWIND_CITY },
+					["description"] = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
+					["sourceQuest"] = 1246,
+				}),
+				q(1247, { -- The Missing Diplomat (9/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4961, -- Dashel Stonefist
+					["coord"] = { 70.5, 44.9, STORMWIND_CITY },
+					["sourceQuest"] = 1447,
+				}),
+				q(1248, { -- The Missing Diplomat (10/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
+					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
+					["sourceQuest"] = 1247,
+				}),
 				q(543, {	-- The Perenolde Tiara
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,

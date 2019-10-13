@@ -37,6 +37,7 @@ profession(129, {	-- First Aid
 			["requireSkill"] = 129,	-- First Aid
 			["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 			["maps"] = { DUSTWALLOW_MARSH },
+			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 		}),
 		q(6622, {	-- Triage (H)
 			["lvl"] = 35,

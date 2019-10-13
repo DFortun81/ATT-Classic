@@ -25,11 +25,13 @@ _.Zones =
 						i(12228),	-- Recipe: Roast Raptor
 						i(12239),	-- Recipe: Dragonbreath Chili
 					},
+					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 				}),
 				n(4892, {	-- Jensen Farran <Bowyer>
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
+					["coord"] = { 67.9, 49.9, DUSTWALLOW_MARSH },
 				}),
 				n(4888, {	-- Marie Holdston <Weaponsmith>
 					["groups"] = {

@@ -252,6 +252,33 @@ _.Zones =
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
+				q(1249, { -- The Missing Diplomat (11/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4963, -- Mikhail <Bartender>
+					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 10.6, 60.7, WETLANDS },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1248,
+				}),
+				q(1250, { -- The Missing Diplomat (12/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4962, -- Tapoke "Slim" Jahn
+					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 10.6, 60.3, WETLANDS },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1249,
+				}),
+				q(1264, { -- The Missing Diplomat (13/17)
+					["lvl"] = 28,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4963, -- Mikhail <Bartender>
+					["maps"] = { STORMWIND_CITY },
+					["coord"] = { 10.6, 60.7, WETLANDS },
+					["description"] = "This is part of a quest chain that begins in Stormwind City.",
+					["sourceQuest"] = 1250,
+				}),
 				q(284, {	-- The Search Continues
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
