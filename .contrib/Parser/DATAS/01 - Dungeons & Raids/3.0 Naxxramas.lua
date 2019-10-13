@@ -4,6 +4,7 @@
 
 _.Instances = {
 	map(NAXXRAMAS, { 	-- Naxxramas
+		["u"] = 3,	-- Added in later phase
 		["description"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		["isRaid"] = true,

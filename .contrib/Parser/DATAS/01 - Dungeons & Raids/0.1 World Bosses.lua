@@ -4,6 +4,7 @@
 
 _.Instances = {
 	n(-7, {	-- World Bosses
+		["u"] = 3,	-- Added in later phase
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
