@@ -288,6 +288,8 @@ _.Zones =
 					["g"] = {
 						i(4744),	-- Arcane Runed Bracers
 					},
+					["provider"] = { "o", 2713 },
+					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
 				}),
 				q(685, {	-- Wanted! Otto and Falconcrest
 					["lvl"] = 30,
@@ -297,6 +299,8 @@ _.Zones =
 						i(5247),	-- Rod of Sorrow
 						i(4745),	-- War Rider Bracers
 					},
+					["provider"] = { "o", 2713 },
+					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
 				}),
 				q(691, {	-- Worth Its Weight in Gold
 					["lvl"] = 30,

@@ -13,6 +13,7 @@ _.Zones =
 					["g"] = {
 						i(2805),	-- Yeti Fur Cloak
 					},
+					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },
 				}),
 				q(527, {	-- Battle of Hillsbrad
 					["qg"] = 2215,	-- High Executor Darthalia
@@ -92,6 +93,7 @@ _.Zones =
 						i(3736),	-- Recipe: Tasty Lion Steak
 						i(3728),	-- Tasty Lion Steak
 					},
+					["coord"] = { 52.4, 56.0, HILLSBRAD_FOOTHILLS },
 				}),
 				q(545, {	-- Dalaran Patrols
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
@@ -116,6 +118,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(509, {	-- Elixir of Agony
 					["qg"] = 2216,	-- Apothecary Lydon
@@ -200,16 +203,19 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(561, {	-- Farren's Proof
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2263,	-- Marshal Redpath
+					["coord"] = { 49.5, 58.6, HILLSBRAD_FOOTHILLS },
 				}),
 				q(559, {	-- Farren's Proof
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(503, {	-- Gol'dir
 					["qg"] = 2229,	-- Krusk
@@ -249,6 +255,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2711,	-- Phin Odelic
+					["coord"] = { 50.3, 59.0, HILLSBRAD_FOOTHILLS },
 				}),
 				q(657, {	-- Hints of a New Plague?
 					["lvl"] = 30,
@@ -294,6 +301,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(555, {	-- Soothing Turtle Bisque
 					["lvl"] = 28,
@@ -303,6 +311,7 @@ _.Zones =
 						i(3737),	-- Recipe: Soothing Turtle Bisque
 						i(3729),	-- Soothing Turtle Bisque
 					},
+					["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
 				}),
 				q(7321, {	-- Soothing Turtle Bisque
 					["qg"] = 2393,	-- Christoph Jeffcoat
@@ -342,6 +351,7 @@ _.Zones =
 					["g"] = {
 						i(3755),	-- Fish Gutter
 					},
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(508, {	-- Taretha's Gift
 					["qg"] = 2317,	-- Elysa

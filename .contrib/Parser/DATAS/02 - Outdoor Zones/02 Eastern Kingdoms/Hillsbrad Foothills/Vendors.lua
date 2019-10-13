@@ -40,6 +40,7 @@ _.Zones =
 						i(6369),	-- Recipe: Rockscale Cod
 						i(17062),	-- Recipe: Mithril Head Trout						
 					},
+					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
 				}),
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
 					["groups"] = {
@@ -55,11 +56,13 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Deligh
 					},
+					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 				}),
 				n(2380, {	-- Nandar Branson <Alchemy Supplies>
 					["groups"] = {
 						i(6055),	-- Recipe: Fire Protection Potion
 					},
+					["coord"] = { 50.9, 57.1, HILLSBRAD_FOOTHILLS },
 				}),
 				n(3539, {	-- Ott <Weaponsmith>
 					["groups"] = {
@@ -82,6 +85,7 @@ _.Zones =
 						i(4833),	-- Glorious Shoulders
 						i(4835),	-- Elite Shoulders
 					},
+					["coord"] = { 51.2, 57.0, HILLSBRAD_FOOTHILLS },
 				}),
 				n(3537, {	-- Zixil <Merchant Supreme>
 					["groups"] = {						
