@@ -45,6 +45,7 @@ _.Zones =
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 30,
+					["sourceQuest"] = 1112, -- Parts for Kravel
 				}),
 				q(1116, {	-- Dream Dust in the Swamp
 					["qg"] = 773,	-- Krazek
@@ -276,7 +277,7 @@ _.Zones =
 				q(1187, {	-- Razzeric's Tweaking
 					["qg"] = 4706,	-- Razzeric
 					["sourceQuest"] = 1186,	-- The Eighteenth Pilot
-					--["coord"] = { },
+					["coord"] = { 80.3, 76.1, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1122, {	-- Report Back to Fizzlebub
@@ -316,7 +317,7 @@ _.Zones =
 				q(1188, {	-- Safety First
 					["qg"] = 4706,	-- Razzeric
 					["sourceQuest"] = 1187,	-- Razzeric's Tweaking
-					--["coord"] = { },
+					["coord"] = { 80.3, 76.1, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1189, {	-- Safety First

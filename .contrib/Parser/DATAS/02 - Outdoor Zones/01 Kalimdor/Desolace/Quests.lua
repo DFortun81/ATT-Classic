@@ -53,6 +53,7 @@ _.Zones =
 					["g"] = {
 						i(15690),	-- Kodobone Necklace
 					},
+					["coord"] = { 62.3, 39.0, DESOLACE },
 				}),
 				q(6027, {	-- Book of the Ancients
 					["lvl"] = 30,
@@ -75,6 +76,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 11.0, DESOLACE },
 				}),
 				q(5386, {	-- Catch of the Day
 					["lvl"] = 32,
@@ -102,6 +104,7 @@ _.Zones =
 					["g"] = {
 						i(6790),	-- Ring of Calm
 					},
+					["coord"] = { 66.7, 10.9, DESOLACE },
 				}),
 				q(6161, {	-- Claim Rackmore's Treasure!
 					["lvl"] = 30,
@@ -130,6 +133,7 @@ _.Zones =
 					["lvl"] = 34,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1182,	-- Brother Anton
+					["coord"] = { 66.5, 7.9, DESOLACE },
 				}),
 				q(5421, {	-- Fish in a Bucket
 					["lvl"] = 25,
@@ -215,6 +219,7 @@ _.Zones =
 						i(15697),	-- Kodo Rustler Boots
 						i(15698),	-- Wrangling Spaulders
 					},
+					["coord"] = { 60.9, 61.9, DESOLACE },
 				}),
 				q(1367, {	-- Magram Alliance
 					["lvl"] = 30,
@@ -261,6 +266,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1466, {	-- Reagents for Reclaimers Inc.
 					["lvl"] = 30,
@@ -269,6 +275,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1361, {	-- Regthar Deathgate
 					["qgs"] = {
@@ -315,6 +322,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5396,	-- Captain Pentigast
+					["coord"] = { 66.7, 11.0, DESOLACE },
 				}),
 				q(1435, {	-- The Burning of Spirits
 					["qg"] = 4498,	-- Maurin Bonesplitter
@@ -361,6 +369,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1457, {	-- The Karnitol Shipwreck
 					["lvl"] = 30,
@@ -370,11 +379,13 @@ _.Zones =
 						i(6791),	-- Hellion Boots
 						i(6792),	-- Sanguine Pauldrons
 					},
+					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1454, {	-- The Karnitol Shipwreck
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1362, {	-- The Kolkar of Desolace
 					["qg"] = 3389,	-- Regthar Deathgate
@@ -392,11 +403,13 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
+					["coord"] = { 66.4, 11.8, DESOLACE },
 				}),
 				q(1437, {	-- Vahlarriel's Search
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5642,	-- Vahlarriel Demonslayer
+					["coord"] = { 66.4, 11.8, DESOLACE },
 				}),
 			}),
 		}),

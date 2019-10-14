@@ -52,6 +52,7 @@ _.Zones =
 						i(13948),	-- Recipe: Mightfish Steak
 						i(13949),	-- Recipe: Baked Salmon
 					},
+					["coord"] = { 31.3, 43.4, FERALAS },
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
 					["groups"] = {
@@ -64,6 +65,7 @@ _.Zones =
 					["groups"] = {
 						i(19027),	-- Schematic: Snake Burst Firework
 					},
+					["coord"] = { 44.8, 43.4, FERALAS },
 				}),
 			}),	
 		}),

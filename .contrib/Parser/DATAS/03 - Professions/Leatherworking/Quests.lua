@@ -60,6 +60,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8408),	-- Pattern: Wild Leather Cloak
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2860, {	-- Master of the Wild Leather (H)
 			["lvl"] = 30,
@@ -120,6 +121,7 @@ profession(165, {	-- Leatherworking
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2854, {	-- Wild Leather Armor (H)
 			["lvl"] = 30,
@@ -142,6 +144,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8406),	-- Pattern: Wild Leather Boots
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2858, {	-- Wild Leather Boots (H)
 			["lvl"] = 30,
@@ -165,6 +168,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8405),	-- Pattern: Wild Leather Helmet
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2857, {	-- Wild Leather Helmet (H)
 			["lvl"] = 30,
@@ -193,6 +197,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8407),	-- Pattern: Wild Leather Leggings
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2859, {	-- Wild Leather Leggings (H)
 			["lvl"] = 30,
@@ -216,6 +221,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8403),	-- Pattern: Wild Leather Shoulders
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2855, {	-- Wild Leather Shoulders (H)
 			["lvl"] = 30,
@@ -243,6 +249,7 @@ profession(165, {	-- Leatherworking
 			["g"] = {
 				i(8404),	-- Pattern: Wild Leather Vest
 			},
+			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2856, {	-- Wild Leather Vest (H)
 			["lvl"] = 30,

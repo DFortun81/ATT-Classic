@@ -51,6 +51,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
+					["coord"] = { 30.4, 46.2, FERALAS },
 				}),
 				q(2869, {	-- Against the Hatecrest
 					["lvl"] = 40,
@@ -60,6 +61,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3936,	-- Shandris Feathermoon
+					["coord"] = { 30.3, 46.2, FERALAS },
 				}),
 				q(2863, {	-- Alpha Strike
 					["lvl"] = 39,
@@ -115,6 +117,7 @@ _.Zones =
 						i(9663),	-- Dawnrider's Chestpiece
 						i(9664),	-- Sentinel's Guard
 					},
+					["coord"] = { 30.4, 46.2, FERALAS },
 				}),
 				q(2972, {	-- Doling Justice
 					["lvl"] = 38,
@@ -168,6 +171,7 @@ _.Zones =
 					["g"] = {
 						i(19039),	-- Zorbin's Water Resistant Hat
 					},
+					["coord"] = { 44.8, 43.4, FERALAS },
 				}),
 				q(2987, {	-- Gordunni Cobalt
 					["lvl"] = 38,
@@ -201,6 +205,7 @@ _.Zones =
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7764,	-- Troyas Moonbreeze
+					["coord"] = { 31.8, 45.5, FERALAS },
 				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["lvl"] = 40,
@@ -226,6 +231,8 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7879,	-- Quintis Jonespyre
+					["coord"] = { 32.5, 43.8, FERALAS },
+					["description"] = "Quintis Jonespyre is located at the top of the tower.",
 				}),
 				q(7726, {	-- Refuel for the Zapping
 					["lvl"] = 45,
@@ -290,6 +297,7 @@ _.Zones =
 					["lvl"] = 39,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7900,	-- Angelas Moonbreeze
+					["coord"] = { 31.8, 45.6, FERALAS },
 				}),
 				q(4129, {	-- The Knife Revealed
 					["lvl"] = 40,
@@ -322,6 +330,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
+					["coord"] = { 30.4, 46.2, FERALAS },
 				}),
 				q(2942, {	-- The Morrow Stone
 					["lvl"] = 42,
@@ -431,6 +440,7 @@ _.Zones =
 					["g"] = {
 						i(19040),	-- Zorbin's Mega-Slicer
 					},
+					["coord"] = { 44.8, 43.4, FERALAS },
 				}),
 				q(7730, {	-- Zukk'ash Infestation
 					["lvl"] = 39,

@@ -17,6 +17,7 @@ _.Zones =
 						i(12240),	-- Recipe: Heavy Kodo Stew
 						i(12233),	-- Recipe: Mystery Stew
 					},
+					["coord"] = { 66.2, 6.6, DESOLACE },
 				}),
 				n(9636, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
 					["groups"] = {
