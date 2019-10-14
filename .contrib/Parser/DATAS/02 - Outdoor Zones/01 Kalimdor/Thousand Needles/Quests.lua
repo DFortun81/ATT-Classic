@@ -56,6 +56,7 @@ _.Zones =
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["lvl"] = 28,
+					["sourceQuest"] = 1105,	-- Hardened Shells
 				}),
 				q(5361, {	-- Family Tree
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
@@ -112,19 +113,19 @@ _.Zones =
 				q(1180, {	-- Goblin Sponsorship
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 1178,	-- Goblin Sponsorship
-					--["coord"] = { },
+					["coord"] = { 62.68, 36.24, THE_BARRENS },
 					["lvl"] = 29,
 				}),
 				q(1181, {	-- Goblin Sponsorship
 					["qg"] = 4631,	-- Wharfmaster Lozgil
 					["sourceQuest"] = 1180,	-- Goblin Sponsorship
-					--["coord"] = { },
+					["coord"] = { 26.3, 73.6, STRANGLETHORN_VALE },
 					["lvl"] = 29,
 				}),
 				q(1182, {	-- Goblin Sponsorship
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1181,	-- Goblin Sponsorship
-					--["coord"] = { },
+					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["lvl"] = 29,
 					["g"] = {
 						i(5851),	-- Cozzle's Key
@@ -133,7 +134,7 @@ _.Zones =
 				q(1183, {	-- Goblin Sponsorship
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1182,	-- Goblin Sponsorship
-					--["coord"] = { },
+					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["lvl"] = 29,
 				}),
 				q(1099, {	-- Goblins Win!
@@ -235,7 +236,7 @@ _.Zones =
 				q(1112, {	-- Parts for Kravel
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["sourceQuest"] = 1111,	-- Wharfmaster Dizzywig
-					--["coord"] = { },
+					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["lvl"] = 30,
 				}),
 				q(1148, {	-- Parts of the Swarm
@@ -462,7 +463,7 @@ _.Zones =
 				q(1119, {	-- Zanzil's Mixture and a Fool's Stout
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["sourceQuest"] = 1118,	-- Back to Booty Bay
-					--["coord"] = { },
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),

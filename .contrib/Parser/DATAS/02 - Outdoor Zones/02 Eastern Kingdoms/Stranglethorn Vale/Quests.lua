@@ -167,6 +167,7 @@ _.Zones =
 					["g"] = {
 						i(4130),	-- Smotts' Compass
 					},
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(627, {	-- Favor for Krazek
 					["lvl"] = 32,
@@ -187,6 +188,7 @@ _.Zones =
 					["g"] = {
 						i(5806),	-- Fool's Stout
 					},
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 				q(582, {	-- Headhunting
 					["lvl"] = 30,
@@ -345,6 +347,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2502,	-- \"Shaky\" Phillipe
+					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(3626, {	-- Return to the Blasted Lands
 					["lvl"] = 45,
@@ -408,6 +411,7 @@ _.Zones =
 					["g"] = {
 						i(4113),	-- Medicine Blanket
 					},
+					["coord"] = { 27.6, 76.7, STRANGLETHORN_VALE },
 				}),
 				q(349, {	-- Stranglethorn Fever
 					["lvl"] = 32,
@@ -429,6 +433,7 @@ _.Zones =
 					["lvl"] = 37,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2490,	-- First Mate Crazz
+					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
 				}),
 				q(608, {	-- The Bloodsail Buccaneers
 					["lvl"] = 37,
@@ -457,6 +462,7 @@ _.Zones =
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(614, {	-- The Captain's Chest
 					["lvl"] = 35,
@@ -477,6 +483,7 @@ _.Zones =
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
 					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
 					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["coord"] = { 27.4, 74.1, STRANGLETHORN_VALE },
 				}),
 				q(611, {	-- The Curse of the Tides
 					["lvl"] = 32,
@@ -485,6 +492,7 @@ _.Zones =
 					["g"] = {
 						i(4120),	-- Robe of Crystal Waters
 					},
+					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 				}),
 				q(568, {	-- The Defense of Grom'gol
 					["lvl"] = 33,
@@ -554,6 +562,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
+					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 				}),
 				q(629, {	-- The Vile Reef
 					["lvl"] = 30,
@@ -599,6 +608,7 @@ _.Zones =
 					["lvl"] = 37,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2488,	-- Deeg
+					["coord"] = { 26.9, 77.3, STRANGLETHORN_VALE },
 				}),
 				q(600, {	-- Venture Company Mining
 					["lvl"] = 30,
@@ -608,16 +618,19 @@ _.Zones =
 						i(5253),	-- Goblin Igniter
 						i(4128),	-- Silver Spade
 					},
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 				q(609, {	-- Voodoo Dues
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
 				}),
 				q(601, {	-- Water Elementals
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
+					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 				}),
 				q(583, {	-- Welcome to the Jungle
 					["lvl"] = 28,
@@ -629,6 +642,7 @@ _.Zones =
 					["g"] = {
 						i(17048),	-- Rumsey Rum
 					},
+					["coord"] = { 27.1, 77.5, STRANGLETHORN_VALE },
 				}),
 				q(621, {	-- Zanzil's Secret
 					["lvl"] = 35,
@@ -636,6 +650,7 @@ _.Zones =
 					["g"] = {
 						i(4131),	-- Belt of Corruption
 					},
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 			}),
 		}),

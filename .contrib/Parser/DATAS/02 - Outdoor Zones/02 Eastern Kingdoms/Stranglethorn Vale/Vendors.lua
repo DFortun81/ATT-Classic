@@ -48,6 +48,7 @@ _.Zones =
 					["groups"] = {						
 						i(11305),	-- Dense Shortbow
 					},
+					["coord"] = { 28.3, 74.6, STRANGLETHORN_VALE },
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
 					["groups"] = {						
@@ -60,6 +61,7 @@ _.Zones =
 						i(12162),	-- Plans: Hardened Iron Shortsword
 						i(12248),	-- Daring Dirk
 					},
+					["coord"] = { 27.5, 77.5, STRANGLETHORN_VALE },
 				}),
 				n(2664, {	-- Kelsey Yance <Cook>
 					["groups"] = {
@@ -72,12 +74,14 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
 					},
+					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
 					["groups"] = {						
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace
 					},
+					["coord"] = { 28.3, 75.2, STRANGLETHORN_VALE },
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
 					["groups"] = {						
@@ -89,6 +93,7 @@ _.Zones =
 						i(13310),	-- Schematic: Accurate Scope
 						i(18651),	-- Schematic: Truesilver Transformer
 					},
+					["coord"] = { 28.5, 75.1, STRANGLETHORN_VALE },
 				}),
 				n(2663, {	-- Narkk <Pirate Supplies>
 					["groups"] = {						
@@ -96,6 +101,7 @@ _.Zones =
 						i(8496),	-- Parrot Cage (Cockatiel)
 						i(10728),	-- Pattern: Black Swashbuckler's Shirt
 					},
+					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
 					["groups"] = {						
@@ -207,6 +213,7 @@ _.Zones =
 						i(12251),	-- Big Stick
 						i(12252),	-- Staff of Protection
 					},
+					["coord"] = { 28.3, 75.5, STRANGLETHORN_VALE },
 				}),
 			}),	
 		}),

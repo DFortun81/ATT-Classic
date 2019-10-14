@@ -10,6 +10,7 @@ _.Zones =
 					["groups"] = {
 						i(18648),	-- Schematic: Green Firework				
 					},
+					["coord"] = { 62.7, 36.3, THE_BARRENS },
 				}),
 				n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 					["groups"] = {
@@ -78,6 +79,7 @@ _.Zones =
 						i(6272),	-- Pattern: Blue Linen Robe
 						i(6275),	-- Pattern: Greater Adept's Robe					
 					},
+					["coord"] = { 61.9, 38.7, THE_BARRENS },
 				}),
 				n(8307, {	-- Tarban Hearthgrain <Baker>
 					["groups"] = {

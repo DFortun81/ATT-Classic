@@ -101,6 +101,7 @@ profession(165, {	-- Leatherworking
 				5144,	-- Elemental Leatherworking
 			},
 			["qg"] = 7870,	-- Caryssia Moonhunter
+			["coord"] = { 89.4, 46.5, FERALAS },
 		}),
 		q(5148, {	-- Tribal Leatherworking (H)
 			["lvl"] = 40,

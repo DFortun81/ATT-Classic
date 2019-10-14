@@ -424,6 +424,7 @@ _.Zones =
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["sourceQuests"] = 1039,	-- The Barrens Port(Darnassus)
 					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["coord"] = { 63.35, 38.45, THE_BARRENS },
 				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
