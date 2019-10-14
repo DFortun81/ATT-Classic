@@ -14,11 +14,13 @@ _.Zones =
 						i(9305),	-- Recipe: Transmute Mithril to Truesilver
 						i(12958),	-- Recipe: Transmute Arcanite
 					},
+					["coord"] = { 50.9, 27.0, TANARIS },
 				}),
 				n(8131, {	-- Blizrik Buckshot <Gunsmith>
 					["groups"] = {
 						i(18650),	-- Schematic: EZ-Thro Dynamite II
 					},
+					["coord"] = { 50.7, 27.6, TANARIS },
 				}),
 				n(8125, {	-- Dirge Quikcleave <Butcher>
 					["groups"] = {
@@ -42,12 +44,14 @@ _.Zones =
 					["groups"] = {
 						i(6047),	-- Plans: Golden Scale Coif
 					},
+					["coord"] = { 51.5, 28.8, TANARIS },
 				}),
 				n(6568, {	-- Vizzklick <Tailoring Supplies>
 					["groups"] = {
 						i(7088),	-- Pattern: Crimson Silk Robe
 						i(21358),	-- Pattern: Soul Pouch
 					},
+					["coord"] = { 51.0, 27.3, TANARIS },
 				}),
 			}),	
 		}),

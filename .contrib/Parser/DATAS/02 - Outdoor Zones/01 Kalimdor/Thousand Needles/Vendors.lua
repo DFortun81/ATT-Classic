@@ -16,6 +16,7 @@ _.Zones =
 						i(7560),	-- Schematic: Gnomish Universal Remote
 						i(13309),	-- Schematic: Lovingly Crafted Boomstick					
 					},
+					["coord"] = { 77.7, 77.8, THOUSAND_NEEDLES },
 				}),
 				n(9551, {	-- Starn <Gunsmith & Bowyer>
 					["groups"] = {										

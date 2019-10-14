@@ -36,6 +36,7 @@ _.Zones =
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9238,	-- Quentin
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
 				}),
 				q(3121, {	-- A Strange Request
 					["lvl"] = 40,
@@ -334,6 +335,7 @@ _.Zones =
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9238,	-- Quentin
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
 				}),
 				q(2975, {	-- The Ogres of Feralas
 					["lvl"] = 38,

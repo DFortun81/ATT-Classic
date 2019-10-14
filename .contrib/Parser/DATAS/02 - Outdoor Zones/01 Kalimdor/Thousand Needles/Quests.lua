@@ -8,7 +8,7 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(1175, {	-- A Bump in the Road
 					["qg"] = 4629,	-- Trackmaster Zherin
-					--["coord"] = { },
+					["coord"] = { 81.6, 77.9, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(4821, {	-- Alien Egg
@@ -38,12 +38,12 @@ _.Zones =
 				}),
 				q(1118, {	-- Back to Booty Bay
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
 				}),
 				q(1114, {	-- Delivery to the Gnomes
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 30,
 				}),
 				q(1116, {	-- Dream Dust in the Swamp
@@ -54,7 +54,7 @@ _.Zones =
 				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts
-					--["coord"] = { },
+					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(5361, {	-- Family Tree
@@ -88,14 +88,14 @@ _.Zones =
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["isBreadcrumb"] = true,
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
 				}),
 				q(1121, {	-- Get the Goblins Drunk
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
 					["isBreadcrumb"] = true,
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
 				}),
 				q(1174, {	-- Gnomes Win!
@@ -106,7 +106,7 @@ _.Zones =
 				q(1178, {	-- Goblin Sponsorship
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1176,	-- Load Lightening
-					--["coord"] = { },
+					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1180, {	-- Goblin Sponsorship
@@ -155,12 +155,12 @@ _.Zones =
 				}),
 				q(1105, {	-- Hardened Shells
 					["qg"] = 4453,	-- Wizzle Brassbolts
-					--["coord"] = { },
+					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(5762, {	-- Hemet Nesingwary
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(4770, {	-- Homeward Bound
@@ -190,12 +190,12 @@ _.Zones =
 				q(1190, {	-- Keeping Pace
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1137,	-- News for Frizzle
-					--["coord"] = { },
+					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1176, {	-- Load Lightening
 					["qg"] = 4630,	-- Pozzik
-					--["coord"] = { },
+					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1100, {	-- Lonebrow's Journal
@@ -206,7 +206,7 @@ _.Zones =
 				}),
 				q(1106, {	-- Martek the Exiled
 					["qg"] = 4454,	-- Fizzle Brassbolts
-					--["coord"] = { },
+					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["lvl"] = 26,
 				}),
 				q(4542, {	-- Message to Freewind Post
@@ -284,7 +284,7 @@ _.Zones =
 						1120,	-- Get the Gnomes Drunk
 						1121,	-- Get the Goblins Drunk
 					},
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
 				}),
@@ -296,7 +296,7 @@ _.Zones =
 				}),
 				q(1110, {	-- Rocket Car Parts
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(1117, {	-- Rumors for Kravel
@@ -326,10 +326,11 @@ _.Zones =
 						i(6726),	-- Razzeric's Customized Seatbelt
 						i(6727),	-- Razzeric's Racing Grips
 					},
+					["coord"] = { 50.9, 27.0, TANARIS },
 				}),
 				q(1104, {	-- Salt Flat Venom
 					["qg"] = 4454,	-- Fizzle Brassbolts
-					--["coord"] = { },
+					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
 				q(4865, {	-- Serpent Wild
@@ -414,12 +415,12 @@ _.Zones =
 				q(1186, {	-- The Eighteenth Pilot
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1183,	-- Goblin Sponsorship
-					--["coord"] = { },
+					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1115, {	-- The Rumormonger
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 30,
 				}),
 				q(1147, {	-- The Swarm Grows
@@ -441,7 +442,7 @@ _.Zones =
 				}),
 				q(1111, {	-- Wharfmaster Dizzywig
 					["qg"] = 4452,	-- Kravel Koalbeard
-					--["coord"] = { },
+					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 30,
 				}),
 				q(4767, {	-- Wind Rider
@@ -455,7 +456,7 @@ _.Zones =
 				}),
 				q(1191, {	-- Zamek's Distraction
 					["qg"] = 4709,	-- Zamek
-					--["coord"] = { },
+					["coord"] = { 79.8, 77.0, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
 				q(1119, {	-- Zanzil's Mixture and a Fool's Stout

@@ -141,10 +141,12 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16014,	-- Mux Manascrambler
+					["coord"] = { 52.5, 27.3, TANARIS },
 				}),
 				q(2606, {	-- In Good Taste
 					["lvl"] = 44,
 					["qg"] = 7564,	-- Marin Noggenfogger
+					["coord"] = { 51.8, 28.6, TANARIS },
 				}),
 				q(110, {	-- Insect Part Analysis
 					["lvl"] = 39,
@@ -185,6 +187,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["coord"] = { 50.9, 27.0, TANARIS },
 				}),
 				q(8365, {	-- Pirate Hats Ahoy!
 					["lvl"] = 40,
@@ -200,6 +203,7 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["qg"] = 8125,	-- Dirge Quikcleave
+					["coord"] = { 52.63, 28.12, TANARIS },
 				}),
 				q(32, {	-- Rise of the Silithid
 					["lvl"] = 39,
@@ -236,6 +240,7 @@ _.Zones =
 					["lvl"] = 44,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7583,	-- Sprinkle
+					["coord"] = { 51.1, 26.9, TANARIS },
 				}),
 				q(8577, {	-- Stewvul, Ex-B.F.F.
 					["u"] = 3,	-- Added in later phase
@@ -500,6 +505,7 @@ _.Zones =
 					["g"] = {
 						i(8429),	-- Punctured Dew Gland
 					},
+					["coord"] = { 51.8, 28.6, TANARIS },
 				}),
 				q(3362, {	-- Thistleshrub Valley
 					["lvl"] = 45,

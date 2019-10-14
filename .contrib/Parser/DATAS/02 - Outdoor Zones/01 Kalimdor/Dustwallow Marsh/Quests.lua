@@ -85,6 +85,7 @@ _.Zones =
 						i(9518),	-- Mud's Crushers
 						i(9519),	-- Durtfeet Stompers
 					},
+					["coord"] = { 35.2, 38.3, DUSTWALLOW_MARSH },
 				}),
 				q(8970, {	-- I See Alcaz Island In Your Future...
 					["lvl"] = 58,
@@ -101,6 +102,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4792,	-- \"Swamp Eye\" Jarl
+					["coord"] = { 55.4, 26.3, DUSTWALLOW_MARSH },
 				}),
 				q(1203, {	-- Jarl Needs a Blade
 					["lvl"] = 30,
@@ -109,6 +111,7 @@ _.Zones =
 						i(9622),	-- Reedknot Ring
 						i(5016),	-- Artisan's Trousers
 					},
+					["coord"] = { 55.4, 26.3, DUSTWALLOW_MARSH },
 				}),
 				q(1281, {	-- Jim's Song <CHANGE TO GOSSIP>
 					["lvl"] = 30,
@@ -166,6 +169,7 @@ _.Zones =
 						i(6797),	-- Eyepoker
 						i(6798),	-- Blasting Hackbut
 					},
+					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
 				}),
 				q(1262, {	-- Report to Zor
 					["lvl"] = 30,
@@ -208,7 +212,9 @@ _.Zones =
 				q(1268, {	-- Suspicious Hoofprints
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "o", 21016 },
 					--["objectID"] = 21016,	-- Hoofprints
+					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
 				}),
 				q(1284, {	-- Suspicious Hoofprints
 					["lvl"] = 30,
@@ -217,6 +223,8 @@ _.Zones =
 					--["objectID"] = 21015,	-- Hoofprints
 					--["objectID"] = 21016,	-- Hoofprints
 					},
+					["provider"] = { "o", 21015 },
+					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
 				}),
 				q(9065, {	-- The "Chow" Quest (123)aa
 					["g"] = {

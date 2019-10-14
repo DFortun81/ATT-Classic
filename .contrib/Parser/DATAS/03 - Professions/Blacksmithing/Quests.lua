@@ -5,6 +5,7 @@ profession(164, {	-- Blacksmithing
 			["requireSkill"] = 164,	-- Blacksmithing
 			["maps"] = { TANARIS },
 			["qg"] = 14567,	-- Derotain Mudsipper
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(2771, {	-- A Good Head On Your Shoulders
 			["lvl"] = 40,
@@ -15,6 +16,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				recipe(9980),	-- Ornate Mithril Helm
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(2751, {	-- Barbaric Battlements
 			["lvl"] = 32,
@@ -56,6 +58,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(10418),	-- Glimmering Mithril Insignia
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7649, {	-- Enchanted Thorium Platemail: Volume I
 			["u"] = 3,	-- Added in later phase (Dire Maul)
@@ -141,6 +144,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12688),	-- Plans: Imperial Plate Belt
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7654, {	-- Imperial Plate Boots
 			["lvl"] = 50,
@@ -151,6 +155,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12700),	-- Plans: Imperial Plate Boots
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7655, {	-- Imperial Plate Bracer
 			["lvl"] = 50,
@@ -161,6 +166,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12690),	-- Plans: Imperial Plate Bracer
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7656, {	-- Imperial Plate Chest
 			["lvl"] = 50,
@@ -171,6 +177,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12705),	-- Plans: Imperial Plate Chest
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7657, {	-- Imperial Plate Helm
 			["lvl"] = 50,
@@ -181,6 +188,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12701),	-- Plans: Imperial Plate Helm
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7658, {	-- Imperial Plate Leggings
 			["lvl"] = 50,
@@ -191,6 +199,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12715),	-- Plans: Imperial Plate Leggings
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(7659, {	-- Imperial Plate Shoulders
 			["lvl"] = 50,
@@ -201,6 +210,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				i(12687),	-- Plans: Imperial Plate Shoulders
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(2759, {	-- In Search of Galvan
 			["lvl"] = 40,
@@ -315,6 +325,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				recipe(9972),	-- Ornate Mithril Breastplate
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(2760, {	-- The Mithril Order
 			["lvl"] = 40,
@@ -370,6 +381,7 @@ profession(164, {	-- Blacksmithing
 			["g"] = {
 				recipe(9979),	-- Ornate Mithril Boots
 			},
+			["coord"] = { 51.4, 28.7, TANARIS },
 		}),
 		q(2753, {	-- Trampled Under Foot
 			["lvl"] = 32,

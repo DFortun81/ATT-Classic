@@ -19,6 +19,7 @@ profession(185, {	-- Cooking
 			["g"] = {
 				i(16971),	-- Clamlette Surprise
 			},
+			["coord"] = { 52.63, 28.12, TANARIS },
 		}),
 		q(8307, {	-- Desert Recipe
 			["u"] = 3,	-- Added in later phase
