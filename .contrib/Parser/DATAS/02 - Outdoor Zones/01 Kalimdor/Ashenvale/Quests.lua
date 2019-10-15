@@ -78,6 +78,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3848,	-- Kayneth Stillwind
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
+					["coord"] = { 85.3, 44.7, ASHENVALE },
 				}),
 				q(6482, {	-- Freedom to Ruul
 					["qg"] = 12818,	-- Ruul Snowhoof
@@ -93,6 +94,7 @@ _.Zones =
 						i(5813),	-- Emil's Brand
 					},
 					["sourceQuest"] = 1011,	-- Forsaken Diseases
+					["coord"] = { 85.3, 44.7, ASHENVALE },
 				}),
 				q(824, {	-- Je'neu of the Earthen Ring
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -358,6 +360,7 @@ _.Zones =
 						i(11229),	-- Brightscale Girdle
 					},
 					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
+					["coord"] = { 78.3, 44.8, ASHENVALE },
 				}),
 				q(1022, {	-- The Howling Vale
 					["lvl"] = 25,

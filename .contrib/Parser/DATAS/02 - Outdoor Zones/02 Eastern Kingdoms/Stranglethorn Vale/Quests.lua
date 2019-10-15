@@ -45,6 +45,7 @@ _.Zones =
 						i(4140),	-- Palm Frond Mantle
 						i(4126),	-- Guerrilla Cleaver
 					},
+					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 				}),
 				q(208, {	-- Big Game Hunter
 					["lvl"] = 28,
@@ -53,6 +54,7 @@ _.Zones =
 						i(17686),	-- Master Hunter's Bow
 						i(17687),	-- Master Hunter's Rifle
 					},
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(584, {	-- Bloodscalp Clan Heads
 					["lvl"] = 30,
@@ -79,6 +81,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 469,	-- Lieutenant Doren
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				q(339, {	-- Chapter I
 					["lvl"] = 30,
@@ -86,6 +89,7 @@ _.Zones =
 					["g"] = {
 						i(2756),	-- Green Hills of Stranglethorn - Chapter I
 					},
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(340, {	-- Chapter II
 					["lvl"] = 30,
@@ -93,6 +97,7 @@ _.Zones =
 					["g"] = {
 						i(2757),	-- Green Hills of Stranglethorn - Chapter II
 					},
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(341, {	-- Chapter III
 					["lvl"] = 30,
@@ -100,6 +105,7 @@ _.Zones =
 					["g"] = {
 						i(2758),	-- Green Hills of Stranglethorn - Chapter III
 					},
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(342, {	-- Chapter IV
 					["lvl"] = 30,
@@ -107,6 +113,7 @@ _.Zones =
 					["g"] = {
 						i(2759),	-- Green Hills of Stranglethorn - Chapter IV
 					},
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(202, {	-- Colonel Kurzen
 					["lvl"] = 30,
@@ -115,6 +122,7 @@ _.Zones =
 					["g"] = {
 						i(4127),	-- Shrapnel Blaster
 					},
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				q(625, {	-- Cortello's Riddle
 					["lvl"] = 35,
@@ -234,6 +242,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 770,	-- Corporal Kaleb
+					["coord"] = { 37.7, 3.3, STRANGLETHORN_VALE },
 				}),
 				q(207, {	-- Kurzen's Mystery
 					["lvl"] = 30,
@@ -285,18 +294,22 @@ _.Zones =
 				q(191, {	-- Panther Mastery
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(192, {	-- Panther Mastery
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(190, {	-- Panther Mastery
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(193, {	-- Panther Mastery
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["g"] = {
 						i(4108),	-- Panther Hunter Leggings
 					},
@@ -305,18 +318,22 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 469,	-- Lieutenant Doren
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				q(195, {	-- Raptor Mastery
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(194, {	-- Raptor Mastery
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(196, {	-- Raptor Mastery
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(197, {	-- Raptor Mastery
 					["lvl"] = 28,
@@ -324,6 +341,7 @@ _.Zones =
 					["g"] = {
 						i(4119),	-- Raptor Hunter Tunic
 					},
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(331, {	-- Report to Doren
 					["lvl"] = 30,
@@ -333,6 +351,7 @@ _.Zones =
 						i(4139),	-- Junglewalker Sandals
 						i(4123),	-- Frost Metal Pauldrons
 					},
+					["coord"] = { 37.7, 3.4, STRANGLETHORN_VALE },
 				}),
 				q(622, {	-- Return to Corporal Kaleb
 					["lvl"] = 32,
@@ -395,6 +414,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 733,	-- Sergeant Yohwa
+					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 				}),
 				q(598, {	-- Split Bone Necklace
 					["lvl"] = 30,
@@ -519,6 +539,7 @@ _.Zones =
 						i(3928),	-- Superior Healing Potion
 						i(8173),	-- Thick Armor Kit
 					},
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(616, {	-- The Haunted Isle
 					["lvl"] = 32,
@@ -548,6 +569,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 733,	-- Sergeant Yohwa
+					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 				}),
 				q(589, {	-- The Singing Crystals
 					["lvl"] = 30,
@@ -572,14 +594,17 @@ _.Zones =
 				q(187, {	-- Tiger Mastery
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(186, {	-- Tiger Mastery
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(185, {	-- Tiger Mastery
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(188, {	-- Tiger Mastery
 					["lvl"] = 28,
@@ -587,6 +612,7 @@ _.Zones =
 					["g"] = {
 						i(4107),	-- Tiger Hunter Gloves
 					},
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
 					["lvl"] = 30,
@@ -635,6 +661,7 @@ _.Zones =
 				q(583, {	-- Welcome to the Jungle
 					["lvl"] = 28,
 					["qg"] = 716,	-- Barnil Stonepot
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(580, {	-- Whiskey Slim's Lost Grog
 					["lvl"] = 40,

@@ -17,6 +17,7 @@ _.Zones =
 						i(12228),	-- Recipe: Roast Raptor
 						i(12231),	-- Recipe: Jungle Stew
 					},
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
 					["groups"] = {
@@ -55,6 +56,7 @@ _.Zones =
 						i(12164),	-- Plans: Massive Iron Axe
 						i(12250),	-- Midnight Axe
 					},
+					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
 					["groups"] = {						
