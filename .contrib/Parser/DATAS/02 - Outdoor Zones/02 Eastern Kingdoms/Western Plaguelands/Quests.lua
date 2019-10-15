@@ -64,6 +64,7 @@ _.Zones =
 					["g"] = {
 						i(17759),	-- Mark of Resolution
 					},
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(105, {	-- Alas, Andorhal
 					["lvl"] = 50,
@@ -77,6 +78,7 @@ _.Zones =
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5092,	-- Clear The Way
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5098, {	-- All Along the Watchtowers (H)
 					["lvl"] = 50,
@@ -90,6 +92,7 @@ _.Zones =
 					["g"] = {
 						i(12846),	-- Argent Dawn Commission
 					},
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5405, {	-- Argent Dawn Commission
 					["lvl"] = 50,
@@ -133,6 +136,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
 					["lvl"] = 50,
@@ -151,6 +155,7 @@ _.Zones =
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(4972, {	-- Counting Out Time
 					["lvl"] = 53,
@@ -213,6 +218,7 @@ _.Zones =
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5059, {	-- Locked Away
 					["lvl"] = 52,
@@ -252,6 +258,7 @@ _.Zones =
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5237, {	-- Mission Accomplished! (A)
 					["lvl"] = 50,
@@ -262,6 +269,7 @@ _.Zones =
 						i(15800),	-- Intrepid Shortsword
 						i(15799),	-- Heroic Commendation Medal
 					},
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5238, {	-- Mission Accomplished! (H)
 					["lvl"] = 50,
@@ -325,6 +333,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(5231, {	-- Target: Dalson's Tears
 					["lvl"] = 50,
@@ -334,6 +343,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(5229, {	-- Target: Felstone Field
 					["lvl"] = 50,
@@ -343,6 +353,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(5235, {	-- Target: Gahrron's Withering
 					["lvl"] = 50,
@@ -352,6 +363,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(5233, {	-- Target: Writhing Haunt
 					["lvl"] = 50,
@@ -367,17 +379,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
+					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(6185, {	-- The Eastern Plagues
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
+					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
 				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5228, {	-- The Scourge Cauldrons
 					["lvl"] = 50,

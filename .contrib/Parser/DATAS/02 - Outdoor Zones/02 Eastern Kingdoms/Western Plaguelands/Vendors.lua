@@ -35,10 +35,12 @@ _.Zones =
 						["u"] = 3,	-- Added in later phase
 					}),
 					i(13482),	-- Recipe: Transmute Air to Fire
+					["coord"] = { 42.8, 83.7, WESTERN_PLAGUELANDS },
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 					i(15725),	-- Pattern: Wicked Leather Gauntlets
 					i(15741),	-- Pattern: Stormshroud Pants
+					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 				}),
 				n(11278, {	-- Magnus Frostwake
 					i(8030),	-- Plans: Ebon Shiv
