@@ -21,6 +21,7 @@ L.ZONE_TEXT_TO_MAP_ID["Der Blackrock"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Blackrockspitze"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Düsterbruch"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC

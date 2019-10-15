@@ -11,6 +11,7 @@ L.ZONE_TEXT_TO_MAP_ID["Abismo Rocha Negra"] = 242;	-- BRD
 L.ZONE_TEXT_TO_MAP_ID["Montanha Rocha Negra"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Pico da Rocha Negra"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["Minas Mortas"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Gládio Cruel"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["Cavernas Ígneas"] = 213;	-- RFC

@@ -11,6 +11,7 @@ L.ZONE_TEXT_TO_MAP_ID["검은바위 나락"] = 242;	-- BRD
 L.ZONE_TEXT_TO_MAP_ID["검은바위 산"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["검은바위 첨탑"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["죽음의 폐광"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["혈투의 전장"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["놈리건"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["마라우돈"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["성난불길 협곡"] = 213;	-- RFC

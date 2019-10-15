@@ -991,6 +991,7 @@ _.Instances = {
 				i(11765), 	-- Pyremail Wristguards
 				i(11767), 	-- Emberplate Armguards
 				i(11768),	-- Incendic Bracers
+				i(19268),	-- Ace of Elementals
 			}),
 			n(9056, {	-- Fineous Darkvire <Chief Architect>
 				{

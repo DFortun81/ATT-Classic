@@ -1450,6 +1450,7 @@ app.L = {
 		["Blackwing Lair"] = 287,
 		["Blackrock Mountain"] = 35,
 		["Blackrock Spire"] = 250,
+		["Dire Maul"] = 234,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,

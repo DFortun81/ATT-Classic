@@ -11,6 +11,7 @@ L.ZONE_TEXT_TO_MAP_ID["Глубины Черной горы"] = 242;	-- BRD
 L.ZONE_TEXT_TO_MAP_ID["Черная гора"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Вершина Черной горы"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["Мертвые копи"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Забытый Город"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["Гномреган"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Мародон"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["Огненная пропасть"] = 213;	-- RFC

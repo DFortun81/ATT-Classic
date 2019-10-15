@@ -11,6 +11,7 @@ L.ZONE_TEXT_TO_MAP_ID["Profundidades de Roca Negra"] = 242;	-- BRD
 L.ZONE_TEXT_TO_MAP_ID["Montaña Roca Negra"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Cumbre de Roca Negra"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["Minas de la Muerte"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["La Masacre"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["Las Minas de la Muerte"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon

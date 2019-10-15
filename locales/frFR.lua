@@ -16,6 +16,7 @@ L.ZONE_TEXT_TO_MAP_ID["Mont Blackrock"] = 35;	-- BRM
 L.ZONE_TEXT_TO_MAP_ID["Pic Blackrock"] = 250;	-- BRS
 L.ZONE_TEXT_TO_MAP_ID["Mortemines"] = 291;	-- DM/VC
 L.ZONE_TEXT_TO_MAP_ID["Les Mortemines"] = 291;	-- DM/VC
+L.ZONE_TEXT_TO_MAP_ID["Hache-tripes"] = 234;	-- Dire Maul
 L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
 L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
 L.ZONE_TEXT_TO_MAP_ID["Gouffre de Ragefeu"] = 213;	-- RFC
