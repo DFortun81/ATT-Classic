@@ -43,22 +43,6 @@ _.Instances = {
 						i(18469),	-- Royal Seal of Eldre'Thalas
 					},
 				}),
-				o(179501, {	-- Knot Thimblejack's Cache
-					["sourceQuest"] = 5525,	-- Free Knot!
-					["groups"] = {
-						i(18414),	-- Pattern: Belt of the Archmage
-						i(18517),	-- Pattern: Chromatic Cloak
-						i(18418),	-- Pattern: Cloak of Warding
-						i(18415),	-- Pattern: Felcloth Gloves
-						i(18514),	-- Pattern: Girdle of Insight
-						i(18518),	-- Pattern: Hide of the Wild
-						i(18416),	-- Pattern: Inferno Gloves
-						i(18515),	-- Pattern: Mongoose Boots
-						i(18417),	-- Pattern: Mooncloth Gloves
-						i(18519),	-- Pattern: Shifting Cloak
-						i(18516),	-- Pattern: Swift Flight Bracers
-					},
-				}),
 				q(7485, {	-- Libram of Protection
 					["groups"] = {
 						i(18331),	-- Arcanum of Protection
@@ -170,11 +154,6 @@ _.Instances = {
 					["groups"] = {
 						i(12726),	-- Plans: Enchanted Thorium Leggings
 					},
-				}),
-				q(7507),	-- Furor's Compendium
-				q(7508),	-- The Forging of Quel'Serrar
-				q(7509, {	-- The Forging of Quel'Serrar
-					i(18348),	-- Quel'Serrar
 				}),
 				q(7505, {	-- Frost Shock and You
 					["classes"] = { 7 },	-- Shaman
@@ -321,7 +300,7 @@ _.Instances = {
 			}),
 			n(0, {	-- Zone Drop
 				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-					["description"] = "This can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.\n",
+					["description"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.\n\nThis can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.",
 				}),
 				i(17682),	-- Book: Gift of the Wild Rank 1
 				i(17683),	-- Book: Gift of the Wild Rank 2
@@ -330,56 +309,37 @@ _.Instances = {
 				i(18333),	-- Libram of Focus
 				i(18334),	-- Libram of Protection
 				i(18332),	-- Libram of Rapidity
-				i(8384, {	-- Pattern: Comfortable Leather Hat
-					["crs"] = {
-						13197,	-- Fel Lash
-					},
-				}),
-				i(18289, {	-- Barbed Thorn Necklace
-					["crs"] = {
-						11461,	-- Warpwood Guardian
-						11462,	-- Warpwood Treant
-						13021,	-- Warpwood Crusher
-						11464,	-- Warpwood Tangler
-						11465,	-- Warpwood Stomper
-					},
-				}),
-				i(18296, {	-- Marksman Bands
-					["crs"] = {
-						11454,	-- Wildspawn Betrayer
-						11455,	-- Wildspawn Felsworn
-						11457,	-- Wildspawn Hellcaller
-						11452,	-- Wildspawn Rogue
-						11451,	-- Wildspawn Satyr
-						11456,	-- Wildspawn Shadowstalker
-					},
-				}),
-				i(18343, {	-- Petrified Band
-					["crs"] = {
-						11459,	-- Ironbark Protector
-						14303,	-- Petrified Guardian
-						11458,	-- Petrified Treant
-					},
-				}),
-				i(18295, {	-- Phasing Boots
-					["crs"] = {
-						13196,	-- Phase Lasher
-					},
-				}),
-				i(18298, {	-- Unbridled Leggings
-					["crs"] = {
-						11454,	-- Wildspawn Betrayer
-						11455,	-- Wildspawn Felsworn
-						11457,	-- Wildspawn Hellcaller
-						11452,	-- Wildspawn Rogue
-						11451,	-- Wildspawn Satyr
-						11456,	-- Wildspawn Shadowstalker
-					},
-				}),
 			}),
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",
 				["groups"] = {
+					n(0, { 	-- Zone Drop
+						i(18296, {	-- Marksman Bands
+							["crs"] = {
+								11454,	-- Wildspawn Betrayer
+								11455,	-- Wildspawn Felsworn
+								11457,	-- Wildspawn Hellcaller
+								11452,	-- Wildspawn Rogue
+								11451,	-- Wildspawn Satyr
+								11456,	-- Wildspawn Shadowstalker
+							},
+						}),
+						i(18295, {	-- Phasing Boots
+							["crs"] = {
+								13196,	-- Phase Lasher
+							},
+						}),
+						i(18298, {	-- Unbridled Leggings
+							["crs"] = {
+								11454,	-- Wildspawn Betrayer
+								11455,	-- Wildspawn Felsworn
+								11457,	-- Wildspawn Hellcaller
+								11452,	-- Wildspawn Rogue
+								11451,	-- Wildspawn Satyr
+								11456,	-- Wildspawn Shadowstalker
+							},
+						}),
+					}),
 					n(14354, {	-- Pusillin
 						["description"] = "Talk to him and then chase him. Eventually he will go up a ramp and become killable.",
 						["groups"] = {
@@ -470,7 +430,7 @@ _.Instances = {
 			n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
 				["description"] = "This part of the instance can be accessed after clearing West or entering from the northern-most portal.",
 				["groups"] = {
-					n(0, { 	-- Zone Drops
+					n(0, { 	-- Zone Drop
 						{
 							["itemID"] = 18250,	-- Gordok Shackle Key
 							["questID"] = 5525,	-- Free Knot!
@@ -504,6 +464,30 @@ _.Instances = {
 						i(18459),	-- Gallant's Wristguards
 						i(18458),	-- Modest Wristguards
 						i(18464),	-- Gordok Nose Ring
+					}),
+					o(179501, {	-- Knot Thimblejack's Cache
+						["sourceQuest"] = 5525,	-- Free Knot!
+						["groups"] = {
+							i(18414),	-- Pattern: Belt of the Archmage
+							i(18517),	-- Pattern: Chromatic Cloak
+							i(18418),	-- Pattern: Cloak of Warding
+							i(18415),	-- Pattern: Felcloth Gloves
+							i(18514),	-- Pattern: Girdle of Insight
+							i(18518),	-- Pattern: Hide of the Wild
+							i(18416),	-- Pattern: Inferno Gloves
+							i(18515),	-- Pattern: Mongoose Boots
+							i(18417),	-- Pattern: Mooncloth Gloves
+							i(18519),	-- Pattern: Shifting Cloak
+							i(18516),	-- Pattern: Swift Flight Bracers
+							i(18240),	-- Ogre Tannin
+						},
+					}),
+					o(179499, {	-- Ogre Tannin Basket
+						["description"] = "Beware! Looting the Ogre Tannin will cause a Gordok Bushwacker to spawn. Quote is homage to the movie The Silence of the Lambs.\n\n'NO! It puts the tannin in the basket, or it gets the mallet again!'",
+						["qg"] = 14351,	-- Gordok Bushwacker
+						["groups"] = {
+							i(18240),	-- Ogre Tannin
+						},
 					}),
 					n(14323, {	-- Guard Slip'kik
 						i(18498),	-- Hedgecutter
@@ -543,15 +527,13 @@ _.Instances = {
 						i(18522),	-- Band of the Ogre King
 						i(19258),	-- Ace of Warlords
 					}),
-					n(14353, {			-- Mizzle the Crafty
+					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
 						["groups"] = {
-							o(179564, {	-- Gordok Tribute Chest (No Localization)
+							o(179564, {	-- Gordok Tribute Chest
 								["description"] =  "A full Tribute Run (5 items) requires leaving all bosses alive except King Gordok, and also requires activating the Frost Trap & fooling Kromcrush with the Ogre Suit, granted by the Goblin near the trap.",
-								["model"] = 200953,
-								["modelScale"] = 3,
-								["icon"] = "Interface\\Icons\\INV_Plate_BlackrockClan_B_01Chest",
 								["groups"] = {
+									i(18655),	-- Schematic: Major Recombobulator
 									i(18499),	-- Barrier Shield
 									i(18479),	-- Carrion Scorpid Helm
 									i(18537),	-- Counterattack Lodestone
@@ -567,7 +549,6 @@ _.Instances = {
 									i(18495),	-- Redoubt Cloak
 									i(18534),	-- Rod of the Ogre Magi
 									i(18480),	-- Scarab Plate Helm
-									i(18655),	-- Schematic: Major Recombobulator
 									i(18477),	-- Shaggy Leggings
 									i(18481),	-- Skullcracking Mace
 									i(18500),	-- Tarnished Elven Ring
@@ -588,6 +569,15 @@ _.Instances = {
 						}),
 					}),
 					n(0, {	-- Zone Drop
+						i(18289, {	-- Barbed Thorn Necklace
+							["crs"] = {
+								11461,	-- Warpwood Guardian
+								11462,	-- Warpwood Treant
+								13021,	-- Warpwood Crusher
+								11464,	-- Warpwood Tangler
+								11465,	-- Warpwood Stomper
+							},
+						}),
 						i(18339, {	-- Eidolon Cloak
 							["crs"] = {
 								11471,	-- Eldreth Apparition
@@ -604,13 +594,19 @@ _.Instances = {
 								11472,	-- Eldreth Spirit
 							},
 						}),
-						i(18332),	-- Libram of Rapidity
 						i(18337, {	-- Orphic Bracers
 							["crs"] = {
 								11480,	-- Arcane Aberration
 								14399,	-- Arcane Torrent
 								11483,	-- Mana Remnant
 								11484,	-- Residual Monstrosity
+							},
+						}),
+						i(18343, {	-- Petrified Band
+							["crs"] = {
+								11459,	-- Ironbark Protector
+								14303,	-- Petrified Guardian
+								11458,	-- Petrified Treant
 							},
 						}),
 						i(18344, {	-- Stonebark Gauntlets
