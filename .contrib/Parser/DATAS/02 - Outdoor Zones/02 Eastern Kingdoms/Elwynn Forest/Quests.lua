@@ -20,6 +20,7 @@ _.Zones =
 				q(783, {	-- A Threat Within
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 823,	-- Deputy Willem
+					["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
 				}),
 				q(84, {	-- Back to Billy
 					["lvl"] = 5,
@@ -36,6 +37,7 @@ _.Zones =
 						i(60),	-- Layered Tunic
 						i(3070),	-- Ensign Cloak
 					},
+					["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
 				}),
 				q(46, {	-- Bounty on Murlocs
 					["lvl"] = 7,
@@ -82,6 +84,7 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(39, {	-- Deliver Thomas' Report
 					["lvl"] = 7,
@@ -114,6 +117,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(37, {	-- Find the Lost Guards
 					["lvl"] = 7,
@@ -171,6 +175,7 @@ _.Zones =
 						i(11475),	-- Wine-stained Cloak
 						i(2690),	-- Latched Belt
 					},
+					["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 				}),
 				q(345, {	-- Ink Supplies
 					["lvl"] = 20,
@@ -178,15 +183,18 @@ _.Zones =
 					["qg"] = 951,	-- Brother Paxton
 					["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
 					["description"] = "This quest is part of a series that starts in Stormwind.",
+					["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 				}),
 				q(15, {	-- Investigate Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(7, {	-- Kobold Camp Cleanup
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(60, {	-- Kobold Candles
 					["lvl"] = 3,
@@ -224,6 +232,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9296,	-- Milly Osworth
 					["sourceQuest"] = 3903,	-- Milly Osworth
+					["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 				}),
 				q(107, {	-- Note to William
 					["lvl"] = 5,
@@ -270,6 +279,7 @@ _.Zones =
 					["g"] = {
 						i(6078),	-- Pikeman Shield
 					},
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(109, {	-- Report to Gryan Stoutmantle
 					["lvl"] = 9,
@@ -304,6 +314,7 @@ _.Zones =
 						i(6095),
 					},
 					["description"] = "This quest is part of a series that starts in Stromwind.",
+					["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 				}),
 				q(11, {	-- Riverpaw Gnoll Bounty
 					["lvl"] = 6,
@@ -356,6 +367,7 @@ _.Zones =
 						i(2691),	-- Outfitter Boots
 						i(11192),	-- Outfitter Gloves
 					},
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(111, {	-- Speak with Gramma
 					["lvl"] = 5,
@@ -455,6 +467,7 @@ _.Zones =
 						i(80),	-- Soft Fur-lined Shoes
 						i(6070),	-- Wolfskin Bracers
 					},
+					["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
 				}),
 				q(106, {	-- Young Lovers
 					["lvl"] = 5,
