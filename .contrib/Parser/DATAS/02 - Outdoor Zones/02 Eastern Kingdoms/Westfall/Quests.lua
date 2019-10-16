@@ -15,9 +15,21 @@ _.Zones =
 					["coord"] = { 56.9, 47.2, WESTFALL },
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						126,	-- Murloc Coastrunner
+						458,	-- Murloc Hunter
+						456,	-- Murloc Minor Oracle
+						513,	-- Murloc Netter
+						517,	-- Murloc Oracle
+						515,	-- Murloc Raider
+						127,	-- Murloc Tidehunter
+						171,	-- Murloc Warrior
+						391,	-- Old Murk-Eye
+						519,	-- Slark
+					},
+					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
 					["lvl"] = 10,
