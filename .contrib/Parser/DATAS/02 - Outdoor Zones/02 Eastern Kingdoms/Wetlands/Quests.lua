@@ -133,6 +133,9 @@ _.Zones =
 					["sourceQuest"] = 289,	-- The Cursed Crew
 					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
+				q(526, {	-- Lightforge Ingots
+					["lvl"] = 20,
+				}),
 				q(647, {	-- MacKreel's Moonshine
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,

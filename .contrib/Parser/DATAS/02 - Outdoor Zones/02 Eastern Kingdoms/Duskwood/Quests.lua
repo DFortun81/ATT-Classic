@@ -66,11 +66,13 @@ _.Zones =
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
 				}),
 				q(254, {	-- Digging Through the Dirt
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 51708 },
+					["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
+					["altQuests"] = {
+						253,	-- Bride of the Embalmer
+					},
 					["coord"] = { 28.8, 30.8, DUSKWOOD },
-					--["objectID"] = 51708,	-- Eliza's Grave Dirt
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(93, {	-- Dusky Crab Cakes
 					["lvl"] = 17,
@@ -131,9 +133,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
-				}),
-				q(526, {	-- Lightforge Ingots
-					["lvl"] = 20,
 				}),
 				q(321, {	-- Lightforge Iron
 					["lvl"] = 20,

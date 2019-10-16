@@ -1116,6 +1116,7 @@ app.L = {
 		[21042] = "Theramore Guard Badge", 
 		[35251] = "Karnitol's Chest",
 		[37099] = "Atal'ai Tablet",
+		[51708] = "Eliza's Grave Dirt",
 		[103821] = "Doan's Strongbox",
 		[112888] = "Dusty Shelf",
 		[112948] = "Intrepid's Locked Strongbox",
