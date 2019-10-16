@@ -32,23 +32,38 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 35 },	-- Captain's Footlocker
 					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
+					["provider"] = { "o", 35 },	-- Captain's Footlocker
+					["coord"] = { 25.9, 47.77, WESTFALL },
+					["cost"] = {
+						{ "i", 1358, 1 },	-- A Clue to Sander's Treasure
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 36 },	-- Broken Barrel
 					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
+					["provider"] = { "o", 36 },	-- Broken Barrel
+					["coord"] = { 40.50, 47.82, WESTFALL },
+					["cost"] = {
+						{ "i", 1361, 1 },	-- Another Clue to Sander's Treasure
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 34 },	-- Old Jug
 					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
-					["g"] = {
+					["provider"] = { "o", 34 },	-- Old Jug
+					["coords"] = {
+						{ 40.62, 17.01, WESTFALL },
+						{ 25.94, 17.52, WESTFALL },
+					},
+					["cost"] = {
+						{ "i", 1362, 1 },	-- Final Clue to Sander's Treasure
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
+					["groups"] = {
 						i(2842),	-- Silver Bar
 						i(3343),	-- Captain Sander's Booty Bag
 						i(3342),	-- Captain Sander's Shirt
