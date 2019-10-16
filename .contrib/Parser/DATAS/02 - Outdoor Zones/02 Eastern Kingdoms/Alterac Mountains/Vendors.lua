@@ -15,6 +15,7 @@ _.Zones =
 					["groups"] = {
 						i(13308),	-- Schematic: Ice Deflector
 					},
+					["coord"] = { 47.3, 35.2, ALTERAC_MOUNTAINS },
 				}),
 				n(6779, {	-- Smudge Thunderwood <Poison Vendor>
 					["groups"] = {
