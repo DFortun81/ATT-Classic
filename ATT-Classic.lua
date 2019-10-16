@@ -3399,6 +3399,7 @@ end
 -- Profession Lib
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
+	[261] = 5149,	-- Beast Training
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
 	[333] = 7411,	-- Enchanting
@@ -6807,8 +6808,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					local numberOfCrafts = GetNumCrafts();
 					for craftIndex = 1,numberOfCrafts do
 						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
-						if craftType ~= "header" then
-							local spellID = app.SpellNameToSpellID[craftName];
+						if craftType ~= "header" and craftType ~= "none" then
+							local spellID = craftSubSpellName and select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName];
 							if spellID then
 								SetTempDataSubMember("CollectedSpells", spellID, 1);
 								if not GetDataSubMember("CollectedSpells", spellID) then
