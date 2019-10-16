@@ -8,11 +8,9 @@ _.Zones =
 			n(-17, {	-- Quests
 				{
 					["questID"] = 5527,	-- A Reliquary of Purity
-					["u"] = 3,	-- Added in later phase
-					["description"] = "This quest will become available with Phase 2.",
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["maps"] = { SILITHUS },
+					["maps"] = { DIRE_MAUL, SILITHUS },
 					["lvl"] = 56,
 					["groups"] = {
 						{
@@ -25,9 +23,7 @@ _.Zones =
 				},
 				{
 					["questID"] = 5526,	-- Shards of the Felvine
-					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
-					["description"] = "This quest will become available with Phase 2.",
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["maps"] = { DIRE_MAUL },
