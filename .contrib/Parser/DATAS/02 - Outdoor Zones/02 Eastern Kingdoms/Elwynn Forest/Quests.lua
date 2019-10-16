@@ -136,6 +136,14 @@ _.Zones =
 						i(4536),	-- Shiny Red Apple
 					},
 				}),
+				q(3104, { -- Glyphic Letter
+					["lvl"] = 1,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 8 }, -- Mage
+					["qg"] = 197, -- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+				}),
 				q(47, {	-- Gold Dust Exchange
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
