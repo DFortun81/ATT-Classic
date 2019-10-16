@@ -439,21 +439,6 @@ _.Instances = {
 					["lvl"] = 50,
 				},
 				{
-					["questID"] = 9015,	-- The Challenge
-					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
-					["qg"] = 16032,	-- Falrin Treeshaper
-					["maps"] = { DIRE_MAUL },
-					["u"] = 3,	-- Not available yet! Phase 2?
-					["lvl"] = 58,
-					["groups"] = {
-						{
-							["itemID"] = 21986,	-- Banner of Provocation
-							["allianceQuestID"] = 9015,	-- The Challenge
-							["hordeQuestID"] = 9018,	-- Anthion's Parting Words
-						},
-					},
-				},
-				{
 					["questID"] = 6501,	-- The Dragon's Eye
 					["sourceQuest"] = 6403,	-- The Great Masquerade
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon

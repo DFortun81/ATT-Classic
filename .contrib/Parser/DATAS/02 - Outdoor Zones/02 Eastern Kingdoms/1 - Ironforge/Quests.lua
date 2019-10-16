@@ -88,7 +88,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 689,	-- A King's Tribute (2/3)
-					["g"] = {
+					["groups"] = {
 						i(4535),	-- Ironforge Memorial Ring
 					},
 				}),
@@ -102,7 +102,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9616,	-- Laris Geardawdle
-					["g"] = {
+					["groups"] = {
 						i(12050),	-- Hazecover Boots
 						i(12051),	-- Brazen Gauntlets
 					},
@@ -126,78 +126,142 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
-				q(8910, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {4},	-- Rogue
-					["lvl"] = 58,
+				{
+					["questID"] = 8910,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16710, 1 },	-- Shadowcraft Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 4 },	-- Rogue
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				}),
-				q(8909, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {5},	-- Priest
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8909,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16697, 1 },	-- Devout Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 5 },	-- Priest
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22079),	-- Virtuous Bracers
 					},
-				}),
-				q(8907, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {8},	-- Mage
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8907,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16683, 1 },	-- Magister's Bindings
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 8 },	-- Mage
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22063),	-- Sorcerer's Bindings
 					},
-				}),
-				q(8912, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {1},	-- Warrior
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8912,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16735, 1 },	-- Bracers of Valor
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 1 },	-- Warrior
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(21996),	-- Bracers of Heroism
 					},
-				}),
-				q(8908, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {2},	-- Paladin
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8908,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16722, 1 },	-- Lightforge Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 2 },	-- Paladin
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22088),	-- Soulforge Bracers
 					},
-				}),
-				q(8911, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {9},	-- Warlock
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8911,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16703, 1 },	-- Dreadmist Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 9 },	-- Warlock
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22071),	-- Deathmist Bracers
 					},
-				}),
-				q(8905, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {11},	-- Druid
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8905,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16714, 1 },	-- Wildheart Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 11 },	-- Druid
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22108),	-- Feralheart Bracers
 					},
-				}),
-				q(8906, {	-- An Earnest Proposition
-					["u"] = 3,	-- Added in later phase
-					["classes"] = {3},	-- Hunter
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8906,	-- An Earnest Proposition
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16681, 1 },	-- Beaststalker's Bindings
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 3 },	-- Hunter
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
 					},
-				}),
+				},
 				q(3450, {	-- An Easy Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
@@ -208,7 +272,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
 					},
@@ -219,7 +283,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
 					},
@@ -230,7 +294,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
 					},
@@ -241,7 +305,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
 					},
@@ -252,7 +316,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22087),	-- Soulforge Boots
 						i(22092),	-- Soulforge Legplates
 					},
@@ -263,7 +327,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
 					},
@@ -274,7 +338,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
 					},
@@ -285,7 +349,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
-					["g"] = {
+					["groups"] = {
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
 					},
@@ -297,7 +361,7 @@ _.Zones =
 				q(7342, {	-- Arrows Are For Sissies
 					["lvl"] = 52,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(18042),	-- Thorium Headed Arrow
 					},
 				}),
@@ -310,7 +374,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 3182,	-- Proof of Deed
-					["g"] = {
+					["groups"] = {
 						i(5396),	-- Key to Searing Gorge
 					},
 				}),
@@ -370,7 +434,7 @@ _.Zones =
 					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
 					},
@@ -380,7 +444,7 @@ _.Zones =
 					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22002),	-- Darkmantle Belt
 						i(22006),	-- Darkmantle Gloves
 					},
@@ -390,7 +454,7 @@ _.Zones =
 					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
 					},
@@ -400,7 +464,7 @@ _.Zones =
 					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
 					},
@@ -410,7 +474,7 @@ _.Zones =
 					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22086),	-- Soulforge Belt
 						i(22090),	-- Soulforge Gauntlets
 					},
@@ -420,7 +484,7 @@ _.Zones =
 					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
 					},
@@ -430,7 +494,7 @@ _.Zones =
 					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
 					},
@@ -440,7 +504,7 @@ _.Zones =
 					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
 					},
@@ -510,7 +574,7 @@ _.Zones =
 				q(3461, {	-- Return to Tymor
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(10707),	-- Steelsmith Greaves
 						i(10708),	-- Skullspell Orb
 					},
@@ -527,7 +591,7 @@ _.Zones =
 					["classes"] = {5},	-- Priest
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
 					},
@@ -537,7 +601,7 @@ _.Zones =
 					["classes"] = {8},	-- Mage
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
 					},
@@ -547,7 +611,7 @@ _.Zones =
 					["classes"] = {11},	-- Druid
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
 					},
@@ -557,7 +621,7 @@ _.Zones =
 					["classes"] = {1},	-- Warrior
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
 					},
@@ -567,7 +631,7 @@ _.Zones =
 					["classes"] = {9},	-- Warlock
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
 					},
@@ -577,7 +641,7 @@ _.Zones =
 					["classes"] = {3},	-- Hunter
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
 					},
@@ -587,7 +651,7 @@ _.Zones =
 					["classes"] = {4},	-- Rogue
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
 					},
@@ -597,7 +661,7 @@ _.Zones =
 					["classes"] = {2},	-- Paladin
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["groups"] = {
 						i(22091),	-- Soulforge Helm
 						i(22089),	-- Soulforge Breastplate
 					},
@@ -611,7 +675,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8517,	-- Xiggs Fuselighter
 					["sourceQuest"] = 3450,	-- An Easy Pickup
-					["g"] = {
+					["groups"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
 				}),
@@ -620,7 +684,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8517,	-- Xiggs Fuselighter
 					["repeatable"] = true,
-					["g"] = {
+					["groups"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
 				}),
@@ -648,7 +712,7 @@ _.Zones =
 					["lvl"] = 6,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14842,	-- Melnan Darkstone
-					["g"] = {
+					["groups"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),

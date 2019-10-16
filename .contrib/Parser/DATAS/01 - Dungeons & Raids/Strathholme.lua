@@ -83,6 +83,30 @@ _.Instances = {
 					},
 				},
 				{
+					["questID"] = 8929,	-- In Search of Anthion
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.53, 52.64, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["races"] = ALLIANCE_ONLY,
+					["u"] = 3,	-- Added in later phase
+					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8930,	-- In Search of Anthion
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 34.95, 38.29, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase
+					["lvl"] = 58,
+				},
+				{
 					["questID"] = 5264,	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>

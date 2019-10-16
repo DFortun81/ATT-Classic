@@ -86,15 +86,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 164909,	-- Wrecked Row Boat
 				}),
-				q(7492, {	-- Camp Mojache
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qgs"] = {
-						10879,	-- Harbinger Balthazad
-						10880,	-- Warcaller Gorlach
-						10881,	-- Bluff Runner Windstrider
-					},
-				}),
 				q(2979, {	-- Dark Ceremony
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
@@ -137,16 +128,6 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
-				}),
-				q(7494, {	-- Feathermoon Stronghold
-					["u"] = 3,	-- Added in later phase (Dire Maul)
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						2198,	-- Crier Goodman
-						10877,	-- Courier Hammerfall
-						10878,	-- Herald Moonstalker
-					},
 				}),
 				q(2766, {	-- Find OOX-22/FE!
 					["lvl"] = 40,

@@ -6,10 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
-				q(8947, {	-- Anthion's Strange Request
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 58,
-				}),
 				q(5503, {	-- Argent Dawn Commission
 					["lvl"] = 50,
 					["g"] = {
@@ -444,17 +440,6 @@ _.Zones =
 						i(15855),	-- Ring of Protection
 						i(15856),	-- Archlight Talisman
 					},
-				}),
-				q(8929, {	-- In Search of Anthion
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(8930, {	-- In Search of Anthion
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["qg"] = 16012,	-- Mokvar
 				}),
 				q(5509, {	-- Invader's Scourgestones
 					["lvl"] = 50,

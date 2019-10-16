@@ -101,62 +101,142 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(8914, {	-- An Earnest Proposition
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22011),	-- Beastmaster's Bindings
+				{
+					["questID"] = 8917,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16710, 1 },	-- Shadowcraft Bracers
+						{ "g", 200000 },	-- 20g
 					},
-				}),
-				q(8919, {	-- An Earnest Proposition
-					["lvl"] = 58,
+					["classes"] = { 4 },	-- Rogue
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22071),	-- Deathmist Bracers
-					},
-				}),
-				q(8915, {	-- An Earnest Proposition
 					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22063),	-- Sorcerer's Bindings
-					},
-				}),
-				q(8916, {	-- An Earnest Proposition
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22079),	-- Virtuous Bracers
-					},
-				}),
-				q(8920, {	-- An Earnest Proposition
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(21996),	-- Bracers of Heroism
-					},
-				}),
-				q(8913, {	-- An Earnest Proposition
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22108),	-- Feralheart Bracers
-					},
-				}),
-				q(8917, {	-- An Earnest Proposition
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				}),
-				q(8918, {	-- An Earnest Proposition
-					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8916,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16697, 1 },	-- Devout Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 5 },	-- Priest
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(22079),	-- Virtuous Bracers
+					},
+				},
+				{
+					["questID"] = 8915,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16683, 1 },	-- Magister's Bindings
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 8 },	-- Mage
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(22063),	-- Sorcerer's Bindings
+					},
+				},
+				{
+					["questID"] = 8920,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16735, 1 },	-- Bracers of Valor
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 1 },	-- Warrior
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(21996),	-- Bracers of Heroism
+					},
+				},
+				{
+					["questID"] = 8918,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16722, 1 },	-- Lightforge Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 7 },	-- Shaman
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
 						i(22095),	-- Bindings of The Five Thunders
 					},
-				}),
+				},
+				{
+					["questID"] = 8919,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16703, 1 },	-- Dreadmist Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 9 },	-- Warlock
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(22071),	-- Deathmist Bracers
+					},
+				},
+				{
+					["questID"] = 8913,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16714, 1 },	-- Wildheart Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 11 },	-- Druid
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(22108),	-- Feralheart Bracers
+					},
+				},
+				{
+					["questID"] = 8914,	-- An Earnest Proposition
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16681, 1 },	-- Beaststalker's Bindings
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { 3 },	-- Hunter
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(22011),	-- Beastmaster's Bindings
+					},
+				},
 				q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

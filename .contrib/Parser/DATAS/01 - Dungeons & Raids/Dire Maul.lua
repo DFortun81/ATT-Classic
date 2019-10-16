@@ -7,95 +7,454 @@ _.Instances = {
 		["lvl"] = 44,
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(7499, {	-- Codex of Defense
+				{
+					["questID"] = 1193,	-- A Broken Trap
+					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 15994, 1 },	-- Thorium Widget
+						{ "i", 3829, 1 },	-- Frost Oil
+					},
+					["crs"] = {
+						14323,	-- Guard Slip'kik
+					},
+					["lvl"] = 56,
+				},
+				{
+					["questID"] = 8948,	-- Anthion's Old Friend
+					["sourceQuest"] = 8947,	-- Anthion's Strange Request
+					["qg"] = 16016,	-- Anthion Harmon
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
+					},
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["lvl"] = 58,
+				},
+				{
+					["questID"] = 8947,	-- Anthion's Strange Request
+					["sourceQuest"] = 8946,	-- Proof of Life
+					["qg"] = 16016,	-- Anthion Harmon
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 11371, 3 },	-- Dark Iron Bar
+						{ "i", 12810, 20 },	-- Enchanted Leather
+						{ "i", 14342, 3 },	-- Mooncloth
+						{ "i", 15407, 4 },	-- Cured Rugged Hide
+					},
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["lvl"] = 58,
+				},
+				{
+					["questID"] = 7463,	-- Arcane Refreshment
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 60,
+					["cost"] = {
+						{ "i", 18299, 1 },	-- Hydrospawn Essence
+					},
+					["groups"] = {
+						recipe(10140),	-- Conjure Water (Rank 7)
+					},
+				},
+				{
+					["questID"] = 7492,	-- Camp Mojache
+					["qgs"] = {
+						10879,	-- Harbinger Balthazad
+						10880,	-- Warcaller Gorlach
+						10881,	-- Bluff Runner Windstrider
+					},
+					["coord"] = { 37.46, 74.13, ORGRIMMAR },
+					["maps"] = { FERALAS, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 7492,	-- Camp Mojache
+					["qg"] = 10879,	-- Harbinger Balthazad
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 7499,	-- Codex of Defense
 					["classes"] = { 1 },	-- Warrior
+					["qg"] = 14383,	-- Lorekeeper Kildrath
 					["cost"] = {
 						{ "i", 18357, 1 },	-- Codex of Defense
 					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18466),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(8949, {	-- Falrin's Vendetta
+				},
+				{
+					["questID"] = 7481,	-- Elven Legends
+					["qg"] = 14373,	-- Sage Korolusk
+					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
+					["coord"] = { 75.3, 43.8, FERALAS },
+					["maps"] = { FERALAS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 7482,	-- Elven Legends
+					["qg"] = 14374,	-- Scholar Runethorn
+					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
+					["coord"] = { 31.2, 43.9, FERALAS },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 8949,	-- Falrin's Vendetta
+					["sourceQuest"] = 8948,	-- Anthion's Old Friend
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["lvl"] = 58,
 					["groups"] = {
 						i(22150),	-- Beads of Ogre Might
 						i(22149),	-- Beads of Ogre Mojo
 					},
-				}),
-				q(5525, {	-- Free Knot!
-					["qg"] = 14338,	-- Knott
-					["groups"] = {
-						i(18250),	-- Gordok Shackle Key
+				},
+				{
+					["questID"] = 7494,	-- Feathermoon Stronghold
+					["qgs"] = {
+						2198,	-- Crier Goodman
+						10877,	-- Courier Hammerfall
+						10878,	-- Herald Moonstalker
 					},
-				}),
-				q(7502, {	-- Harnessing Shadows
+					["coord"] = { 30.5, 66.8, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 5525,	-- Free Knot!
+					["qg"] = 14338,	-- Knot Thimblejack
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
+					["cost"] = {
+						{ "i", 18250, 1 },	-- Gordok Shackle Key
+					},
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 7429,	-- Free Knot!
+					["sourceQuest"] = 5525,	-- Free Knot!
+					["qg"] = 14338,	-- Knot Thimblejack
+					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
+					["cost"] = {
+						{ "i", 18250, 1 },	-- Gordok Shackle Key
+					},
+					["repeatable"] = true,
+					["lvl"] = 54,
+				},
+				{
+					["questID"] = 7505,	-- Frost Shock and You
+					["qg"] = 14381,	-- Lorekeeper Javon
+					["classes"] = { 7 },	-- Shaman
+					["cost"] = {
+						{ "i", 18363, 1 },	-- Frost Shock and You
+					},
+					["lvl"] = 54,
+					["groups"] = {
+						i(18471),	-- Royal Seal of Eldre'Thalas
+					},
+				},
+				{
+					["questID"] = 7498,	-- Garona: A Study on Stealth and Treachery
+					["qg"] = 14383,	-- Lorekeeper Kildrath
+					["classes"] = { 4 },	-- Rogue
+					["cost"] = {
+						{ "i", 18356, 1 },	-- Garona: A Study on Stealth and Treachery
+					},
+					["lvl"] = 54,
+					["groups"] = {
+						i(18465),	-- Royal Seal of Eldre'Thalas
+					},
+				},
+				{
+					["questID"] = 7502,	-- Harnessing Shadows
+					["qg"] = 14382,	-- Lorekeeper Mykos
 					["classes"] = { 9 },	-- Warlock
 					["cost"] = {
 						{ "i", 18360, 1 },	-- Harnessing Shadows
 					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18467),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(7504, {	-- Holy Bologna: What the Light Won't Tell You
+				},
+				{
+					["questID"] = 7502,	-- Holy Bologna: What the Light Won't Tell You
+					["qg"] = 14381,	-- Lorekeeper Javon
 					["classes"] = { 5 },	-- Priest
+					["cost"] = {
+						{ "i", 18360, 1 },	-- Holy Bologna: What the Light Won't Tell You
+					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18469),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(7485, {	-- Libram of Protection
+				},
+				{
+					["questID"] = 7489,	-- Lethtendris's Web
+					["sourceQuest"] = 7492,	-- Camp Mojache
+					["qg"] = 7776,	-- Talo Thornhoof
+					["coord"] = { 76.2, 43.8, FERALAS },
+					["maps"] = { FERALAS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 18426, 1 },	-- Lethtendris's Web
+					},
+					["lvl"] = 54,
+					["groups"] = {
+						i(18491),	-- Lorespinner
+					},
+				},
+				{
+					["questID"] = 7488,	-- Lethtendris's Web
+					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
+					["qg"] = 7877,	-- Latronicus Moonspear
+					["coord"] = { 30.4, 46.2, FERALAS },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 18426, 1 },	-- Lethtendris's Web
+					},
+					["lvl"] = 54,
+					["groups"] = {
+						i(18491),	-- Lorespinner
+					},
+				},
+				{
+					["questID"] = 7484,	-- Libram of Focus
+					["altQuests"] = {
+						7479,	-- Libram of Focus
+					},
+					["sourceQuests"] = {
+						7481,	-- Elven Legends
+						7482,	-- Elven Legends
+					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18333, 1 },	-- Libram of Focus
+						{ "i", 18335, 1 },	-- Pristine Black Diamond
+						{ "i", 14344, 4 },	-- Large Brilliant Shard
+						{ "i", 12753, 2 },	-- Skin of Shadow
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						i(18330),	-- Arcanum of Focus
+					},
+				},
+				{
+					["questID"] = 7485,	-- Libram of Protection
+					["altQuests"] = {
+						7480,	-- Libram of Protection
+					},
+					["sourceQuests"] = {
+						7481,	-- Elven Legends
+						7482,	-- Elven Legends
+					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18334, 1 },	-- Libram of Protection
+						{ "i", 18335, 1 },	-- Pristine Black Diamond
+						{ "i", 14344, 2 },	-- Large Brilliant Shard
+						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
+					},
+					["lvl"] = 57,
 					["groups"] = {
 						i(18331),	-- Arcanum of Protection
 					},
-				}),
-				q(7500, {	-- The Arcanist's Cookbook
+				},
+				{
+					["questID"] = 7483,	-- Libram of Rapidity
+					["altQuests"] = {
+						7478,	-- Libram of Rapidity
+					},
+					["sourceQuests"] = {
+						7481,	-- Elven Legends
+						7482,	-- Elven Legends
+					},
+					["qg"] = 14368,	-- Lorekeeper Lydros
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 18332, 1 },	-- Libram of Rapidity
+						{ "i", 18335, 1 },	-- Pristine Black Diamond
+						{ "i", 14344, 2 },	-- Large Brilliant Shard
+						{ "i", 12938, 2 },	-- Blood of Heroes
+					},
+					["lvl"] = 57,
+					["groups"] = {
+						i(18329),	-- Arcanum of Rapidity
+					},
+				},
+				{
+					["questID"] = 7441,	-- Pusillin and the Elder Azj'Tordin
+					["qg"] = 14355,	-- Azj'Tordin
+					["cost"] = {
+						{ "i", 18261, 1 },	-- Book of Incantations
+					},
+					["lvl"] = 54,
+					["groups"] = {
+						i(18410),	-- Sprinter's Sword
+						i(18411),	-- Spry Boots
+					},
+				},
+				{
+					["questID"] = 7500,	-- The Arcanist's Cookbook
+					["qg"] = 14383,	-- Lorekeeper Kildrath
 					["classes"] = { 8 },	-- Mage
 					["cost"] = {
 						{ "i", 18358, 1 },	-- The Arcanist's Cookbook
 					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18468),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(7506, {	-- The Emerald Dream...
+				},
+				{
+					["questID"] = 9015,	-- The Challenge
+					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["maps"] = { BLACKROCK_DEPTHS },
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["lvl"] = 58,
+					["groups"] = {
+						{
+							["itemID"] = 21986,	-- Banner of Provocation
+							["allianceQuestID"] = 9015,	-- The Challenge
+							["hordeQuestID"] = 9018,	-- Anthion's Parting Words
+						},
+					},
+				},
+				{
+					["questID"] = 7506,	-- The Emerald Dream...
+					["qg"] = 14381,	-- Lorekeeper Javon
 					["classes"] = { 11 },	-- Druid
+					["cost"] = {
+						{ "i", 18364, 1 },	-- The Emerald Dream
+					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18470),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(27119, {	-- The Gordok Ogre Suit
+				},
+				{
+					["questID"] = 27119,	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
-					["groups"] = {
-						i(18258),	-- Gordok Ogre Suit
+					["cost"] = {
+						{ "i", 14048, 4 },	-- Bolt of Runecloth
+						{ "i", 8170, 8 },	-- Rugged Leather
+						{ "i", 14341, 2 },	-- Rune Thread
+						{ "i", 18240, 1 },	-- Ogre Tannin
 					},
-				}),
-				q(27120, {	-- The Gordok Ogre Suit
+					["lvl"] = 54,
+					["groups"] = {
+						{
+							["recipeID"] = 22813,	-- Gordok Ogre Suit
+							["requireSkill"] = 197,	-- Tailoring
+						},
+						{
+							["recipeID"] = 22815,	-- Gordok Ogre Suit
+							["requireSkill"] = 165,	-- Leatherworking
+						},
+						{
+							["itemID"] = 18258,	-- Gordok Ogre Suit
+							["description"] = "Before using this, clear the trash before Captain Kromcrush. Tell your group to stay back while you talk to Kromcrush with this disguise on. If they aggro him, your group will fail the Tribute Run.",
+						},
+					},
+				},
+				{
+					["questID"] = 27120,	-- The Gordok Ogre Suit
+					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
+					["cost"] = {
+						{ "i", 14048, 4 },	-- Bolt of Runecloth
+						{ "i", 8170, 8 },	-- Rugged Leather
+						{ "i", 14341, 2 },	-- Rune Thread
+						{ "i", 18240, 1 },	-- Ogre Tannin
+					},
 					["repeatable"] = true,
+					["lvl"] = 54,
 					["groups"] = {
-						recipe(22813),	-- Gordok Ogre Suit
 						i(18258),	-- Gordok Ogre Suit
 					},
-				}),
-				q(27114, {	-- The Gordok Taste Test
-					["description"] = "Kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.",
-					["qg"] = 14322,	-- Stomper Kreeg
-				}),
-				q(7503, {	-- The Greatest Race of Hunters
+				},
+				{
+					["questID"] = 5528,	-- The Gordok Taste Test
+					["qg"] = 14322,	-- Stomper Kreeg <The Drunk>
+					["description"] = "With Stomper Kreeg left alive, kill |cFFFFD700King Gordok|r to become king, and then return to the courtyard.\n\nHe sells these items after you have completed the quest and if you are Friendly with him.",
+					["lvl"] = 56,
+					["groups"] = {
+						i(18269),	-- Gordok Green Grog
+						i(18284),	-- Kreeg's Stout Beatdown
+					},
+				},
+				{
+					["questID"] = 7503,	-- The Greatest Race of Hunters
+					["qg"] = 14382,	-- Lorekeeper Mykos
 					["classes"] = { 3 },	-- Hunter
+					["cost"] = {
+						{ "i", 18361, 1 },	-- The Greatest Race of Hunters
+					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18473),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
-				q(7501, {	-- The Light and How To Swing It
+				},
+				{
+					["questID"] = 8950,	-- The Instigator's Enchantment
+					["sourceQuest"] = 8949,	-- Falrin's Vendetta
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["u"] = 3,	-- Not available yet! Phase 2?
+					["cost"] = {
+						{ "i", 22224, 1 },	-- Jeering Spectre's Essence
+						{ "i", 20520, 4 },	-- Dark Rune
+						{ "i", 14344, 8 },	-- Large Brilliant Shard
+					},
+					["lvl"] = 58,
+				},
+				{
+					["questID"] = 7501,	-- The Light and How To Swing It
+					["qg"] = 14382,	-- Lorekeeper Mykos
 					["classes"] = { 2 },	-- Paladin
 					["cost"] = {
 						{ "i", 18359, 1 },	-- The Light and How to Swing It
 					},
+					["lvl"] = 54,
 					["groups"] = {
 						i(18472),	-- Royal Seal of Eldre'Thalas
 					},
-				}),
+				},
+				{
+					["questID"] = 7461,	-- The Madness Within
+					["qg"] = 14358,	-- Shen'dralar Ancient
+					["crs"] = {
+						11496,	-- Immol'thar
+						11486,	-- Prince Tortheldrin
+					},
+					["lvl"] = 56,
+				},
+				{
+					["questID"] = 7877,	-- The Treasure of the Shen'dralar
+					["altQuests"] = {
+						7462,	-- The Treasure of the Shen'dralar
+					},
+					["sourceQuest"] = 7461,	-- The Madness Within
+					["qg"] = 14358,	-- Shen'dralar Ancient
+					["lvl"] = 57,
+					["groups"] = {
+						i(18421),	-- Backwood Helm
+						i(18420),	-- Bonecrusher
+						i(18424),	-- Sedge Boots
+					},
+				},
 				{
 					["questID"] = 7703,	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush
@@ -114,134 +473,6 @@ _.Instances = {
 						i(18369),	-- Gordok's Handwraps
 					},
 				},
-				
-				q(7651, {	-- Enchanted Thorium Platemail: Volume III
-					["itemID"] = 18771, -- revisit. Maybe swap this with quest?
-					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
-						i(12725),	-- Plans: Enchanted Thorium Helm
-					},
-				}),
-				q(7488, {	-- Lethtendris's Web
-					["qg"] = 7877,	-- Latronicus Moonspear
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(18491),	-- Lorespinner
-					},
-				}),
-				q(7489, {	-- Lethtendris's Web
-					["qg"] = 7776,	-- Talo Thornhoof
-					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(18491),	-- Lorespinner
-					},
-				}),
-				q(7483, {	-- Libram of Rapidity
-					["qg"] = 14368,	-- Lorekeeper Lydros
-					["groups"] = {
-						i(18329),	-- Arcanum of Rapidity
-					},
-				}),
-				q(7441, {	-- Pusillin and the Elder Azj'Tordin
-					["provider"] = { "n", 14355 },	-- Azj'Tordin
-					["groups"] = {
-						i(18410),	-- Sprinter's Sword
-						i(18411),	-- Spry Boots
-					},
-				}),
-				q(7650, {	-- Enchanted Thorium Platemail: Volume II
-					["requireSkill"] = 164,	-- Blacksmithing
-					["groups"] = {
-						i(12726),	-- Plans: Enchanted Thorium Leggings
-					},
-				}),
-				q(7505, {	-- Frost Shock and You
-					["classes"] = { 7 },	-- Shaman
-					["groups"] = {
-						i(18471),	-- Royal Seal of Eldre'Thalas
-					},
-				}),
-				q(7498, {	-- Garona: A Study on Stealth and Treachery
-					["classes"] = { 4 },	-- Rogue
-					["cost"] = {
-						{ "i", 18356, 1 },	-- Garona: A Study on Stealth and Treachery
-					},
-					["lvl"] = 54,
-					["groups"] = {
-						i(18465),	-- Royal Seal of Eldre'Thalas
-					},
-				}),
-				q(7484, {	-- Libram of Focus
-					["groups"] = {
-						i(18330),	-- Arcanum of Focus
-					},
-				}),
-				q(27112,  { -- The Cursed Remains
-					["provider"] = { "n", 44991 },
-				}),
-				q(7461, {	-- The Madness Within
-					["u"] = 40,
-					["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
-				}),
-				q(27110, {	-- The Madness Within
-					["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
-				}),
-				q(27113, {	-- The Shen'dralar Ancient
-					["provider"] = { "n", 44991 },
-				}),
-				q(7462, { 	-- The Treasure of the Shen'dralar
-					["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 7461,	-- The Madness Within
-					["groups"] = {
-						i(18421),	-- Backwood Helm
-						i(18420),	-- Bonecrusher
-						i(18424),	-- Sedge Boots
-					},
-				}),
-				q(7877, { 	-- The Treasure of the Shen'dralar
-					["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
-					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 7461,	-- The Madness Within
-					["groups"] = {
-						i(18421),	-- Backwood Helm
-						i(18420),	-- Bonecrusher
-						i(18424),	-- Sedge Boots
-					},
-				}),
-				q(27111, {	-- The Treasure of Shen'dralar
-					["provider"] = { "n", 14358 },	-- Shen'dralar Ancient
-					["sourceQuest"] = 27110,	-- The Madness Within
-					["groups"] = {
-						i(65949),	-- Dire Maul
-						i(65973),	-- Fras Siabi's Cigar Cutter
-						i(65924),	-- Shen'dralar Trident
-						i(65994),	-- Staff of Athen'a
-					},
-				}),
-				q(27109, {	-- The Warped Defender
-					["provider"] = { "n", 44999 },
-				}),
-				-- Part of the Dungeon 2 Set Questline
-				q(8949, {	-- Falrin's Vendetta
-					["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-					["sourceQuest"] = 8948,	-- Anthion's Old Friend
-					["lvl"] = 58,
-					["groups"] = {
-						i(22150),	-- Beads of Ogre Might
-						i(22149),	-- Beads of Ogre Mojo
-					},
-				}),
-				q(8950, {	-- The Instigator's Enchantment
-					["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-					["sourceQuest"] = 8949,	-- Falrin's Vendetta
-					["lvl"] = 58,
-				}),
-				q(9015, {	-- The Challenge
-					["provider"] = { "n", 16032 },	-- Falrin Treeshaper
-					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
-					["lvl"] = 58,
-				}),
 			}),
 			n(-1, {	-- Common Boss Drop
 				["description"] = "The following items can drop from any boss in Dire Maul.",
@@ -434,7 +665,11 @@ _.Instances = {
 						{
 							["itemID"] = 18250,	-- Gordok Shackle Key
 							["questID"] = 5525,	-- Free Knot!
-							["description"] = "This is used to free Knot so that you can do a Tribute Run. Drops from any Gordok Ogre in Dire Maul North.",
+							["description"] = "Drops from any Gordok Ogre in Dire Maul North.\n\nNOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
+						},
+						{
+							["itemID"] = 21982,	-- Ogre Warbeads
+							["questID"] = 8949,	-- Falrin's Vendetta
 						},
 					}),
 					n(14326, {	-- Guard Mol'dar
@@ -590,6 +825,16 @@ _.Instances = {
 							["crs"] = {
 								11471,	-- Eldreth Apparition
 								11475,	-- Eldreth Phantasm
+								11473,	-- Eldreth Spectre
+								11472,	-- Eldreth Spirit
+							},
+						}),
+						i(22224, {	-- Jeering Spectre's Essence
+							["questID"] = 8950,	-- The Instigator's Enchantment
+							["crs"] = {
+								11471,	-- Eldreth Apparition
+								11475,	-- Eldreth Phantasm
+								11470,	-- Eldreth Sorcerer
 								11473,	-- Eldreth Spectre
 								11472,	-- Eldreth Spirit
 							},
