@@ -56,7 +56,7 @@ _.Zones =
 					["provider"] = { "o", 34 },	-- Old Jug
 					["coords"] = {
 						{ 40.62, 17.01, WESTFALL },
-						{ 25.94, 17.52, WESTFALL },
+						{ 25.97, 16.90, WESTFALL },
 					},
 					["cost"] = {
 						{ "i", 1362, 1 },	-- Final Clue to Sander's Treasure
