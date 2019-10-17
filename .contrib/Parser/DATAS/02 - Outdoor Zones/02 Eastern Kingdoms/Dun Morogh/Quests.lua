@@ -88,6 +88,13 @@ _.Zones =
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
+				q(3108, {	-- Etched Rune
+					["lvl"] = 1,
+					["races"] = { 3 },	-- Dwarf
+					["classes"] = { 3 },	-- Hunter
+					["qg"] = 658,	-- Sten Stoutarm
+					["sourceQuest"] = 179,	-- Dwarven Outfitters
+				}),
 				q(318, {	-- Evershine
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
