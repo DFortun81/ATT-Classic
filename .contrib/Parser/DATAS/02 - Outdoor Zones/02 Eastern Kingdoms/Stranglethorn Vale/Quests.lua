@@ -291,24 +291,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 				}),
-				q(191, {	-- Panther Mastery
+				q(190, {	-- Panther Mastery (1/4)
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(192, {	-- Panther Mastery
+				q(191, {	-- Panther Mastery (2/4)
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["sourceQuest"] = 190, -- Panther Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(190, {	-- Panther Mastery
+				q(192, {	-- Panther Mastery (3/4)
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["sourceQuest"] = 191, -- Panther Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(193, {	-- Panther Mastery
+				q(193, {	-- Panther Mastery (4/4)
 					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
+					["sourceQuest"] = 192, -- Panther Mastery (3/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["g"] = {
 						i(4108),	-- Panther Hunter Leggings
@@ -320,24 +323,27 @@ _.Zones =
 					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
-				q(195, {	-- Raptor Mastery
+				q(194, {	-- Raptor Mastery (1/4)
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
-				q(194, {	-- Raptor Mastery
+				q(195, {	-- Raptor Mastery (2/4)
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
+					["sourceQuest"] = 194, -- Raptor Mastery (1/4)
 				}),
-				q(196, {	-- Raptor Mastery
+				q(196, {	-- Raptor Mastery (3/4)
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["sourceQuest"] = 195, -- Raptor Mastery (2/4)
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
-				q(197, {	-- Raptor Mastery
+				q(197, {	-- Raptor Mastery (4/4)
 					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["sourceQuest"] = 196, -- Raptor Mastery (3/4)
 					["g"] = {
 						i(4119),	-- Raptor Hunter Tunic
 					},
@@ -490,6 +496,7 @@ _.Zones =
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(615, {	-- The Captain's Cutlass
 					["lvl"] = 35,
@@ -591,24 +598,27 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
 				}),
-				q(187, {	-- Tiger Mastery
+				q(185, {	-- Tiger Mastery (1/4)
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(186, {	-- Tiger Mastery
+				q(186, {	-- Tiger Mastery (2/4)
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["sourceQuest"] = 185, -- Tiger Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(185, {	-- Tiger Mastery
+				q(187, {	-- Tiger Mastery (3/4)
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["sourceQuest"] = 186, -- Tiger Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
-				q(188, {	-- Tiger Mastery
+				q(188, {	-- Tiger Mastery (4/4)
 					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
+					["sourceQuest"] = 187, -- Tiger Mastery (3/4)
 					["g"] = {
 						i(4107),	-- Tiger Hunter Gloves
 					},
