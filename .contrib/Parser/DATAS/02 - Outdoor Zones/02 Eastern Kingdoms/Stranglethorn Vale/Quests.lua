@@ -259,13 +259,16 @@ _.Zones =
 						i(4125),	-- Tranquil Orb
 					},
 				}),
-				q(630, {	-- Message in a Bottle
+				q(630, {	-- Message in a Bottle (2/2)
+					["sourceQuest"] = 594,	-- Message in a Bottle (1/2)
+					["qg"] = 2634,	-- Princess Poobah
 					["lvl"] = 42,
 					["g"] = {
 						i(4118),	-- Poobah's Nose Ring
 					},
 				}),
-				q(594, {	-- Message in a Bottle
+				q(594, {	-- Message in a Bottle (1/2)
+					["provider"] = { "i", 4098 },	-- Carefully Folded Note
 					["lvl"] = 45,
 				}),
 				q(572, {	-- Mok'thardin's Enchantment
