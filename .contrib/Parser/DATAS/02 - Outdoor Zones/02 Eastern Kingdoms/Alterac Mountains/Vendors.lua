@@ -10,6 +10,7 @@ _.Zones =
 					["groups"] = {
 						i(14634),	-- Recipe: Frost Oil
 					},
+					["coord"] = { 38.0, 38.0, ALTERAC_MOUNTAINS },
 				}),
 				n(2684, {	-- Rizz Loosebolt <Engineering Supplies>
 					["groups"] = {
