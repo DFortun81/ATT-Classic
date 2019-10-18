@@ -200,6 +200,7 @@ _.Zones =
 					["g"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
+					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				}),
 				q(1222, {	-- Stinky's Escape
 					["lvl"] = 30,
@@ -208,6 +209,7 @@ _.Zones =
 					["g"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
+					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				}),
 				q(1268, {	-- Suspicious Hoofprints
 					["lvl"] = 30,
