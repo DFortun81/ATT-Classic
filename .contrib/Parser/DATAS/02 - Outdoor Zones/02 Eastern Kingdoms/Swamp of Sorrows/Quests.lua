@@ -121,6 +121,7 @@ _.Zones =
 				}),
 				q(1423, {	-- The Lost Supplies
 					["repeatable"] = true,
+					["provider"] = { "i", 6172 },	-- Lost Supplies
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["g"] = {
