@@ -30,6 +30,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
+				q(3789, {	-- Assisting Arch Druid Staghelm
+					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 6740,	-- Innkeeper Allison
+				}),
 				q(344, {	-- Brother Paxton
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
