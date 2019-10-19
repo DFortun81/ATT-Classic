@@ -3,6 +3,63 @@
 -----------------------------------------------------
 _.WorldDrops =
 {
+	n(-318, {	-- Armor
+		n(-329, {	-- Legs
+			i(9756), -- Gypsy Trousers
+		}),
+		n(-320, {	-- Head
+		}),
+		n(-321, {	-- Shoulder
+		}),
+		n(-322, {	-- Back
+		}),
+		n(-323, {	-- Chest
+		}),
+		n(-326, {	-- Wrist
+		}),
+		n(-327, {	-- Hands
+		}),
+		n(-328, {	-- Waist
+		}),
+	}),
+	n(-319, {	-- Weapons		
+		n(-334, {	-- 1H Axes
+		}),
+		n(-335, {	-- 2H Axes
+		}),	
+		n(-346, {	-- Bows
+		}),
+		n(-347, {	-- Crossbows
+		}),			
+		n(-333, {	-- Daggers
+			i(2140),  -- Carving Knife
+			i(2632),  -- Curved Dagger			
+		}),
+		n(-348, {	-- Fist Weapons	
+		}),
+		n(-345, {	-- Guns
+		}),			
+		n(-331, {	-- Held in Off-hand
+		}),
+		n(-336, {	-- 1H Maces
+		}),
+		n(-337, {	-- 2H Maces
+		}),
+		n(-343, {	-- Polearms
+		}),			
+		n(-332, {	-- Shield
+		}),
+		n(-342, {	-- Staves
+		}),
+		n(-338, {	-- 1H Swords
+			i(727),  -- Notched Shortsword
+			i(15210),  -- Raider Shortsword
+		}),
+		n(-339, {	-- 2H Swords
+		}),
+		n(-341, {	-- Wands
+		}),
+	}),	
 	filter(200, {	-- Recipes
 		["g"] = {
 			profession(171, {	-- Alchemy
