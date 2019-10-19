@@ -260,6 +260,7 @@ _.Zones =
 				q(4504, {	-- Super Sticky
 					["lvl"] = 48,
 					["qg"] = 7876,	-- Tran'rek
+					["coord"] = { 51.6, 26.8, TANARIS },
 				}),
 				q(654, {	-- Tanaris Field Sampling
 					["lvl"] = 38,
@@ -510,6 +511,7 @@ _.Zones =
 				q(3362, {	-- Thistleshrub Valley
 					["lvl"] = 45,
 					["qg"] = 7876,	-- Tran'rek
+					["coord"] = { 51.6, 26.8, TANARIS },
 				}),
 				q(1560, {	-- Tooga's Quest
 					["lvl"] = 40,
