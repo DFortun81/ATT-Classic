@@ -19,6 +19,11 @@ profession(185, {	-- Cooking
 			["g"] = {
 				i(16971),	-- Clamlette Surprise
 			},
+			["cost"] = {
+				{ "i", 12207, 12 },	-- Giant Egg
+				{ "i", 7974, 10 },	-- Zesty Clam Meat
+				{ "i", 8932, 20 },	-- Alterac Swiss
+			},
 			["coord"] = { 52.63, 28.12, TANARIS },
 		}),
 		q(8307, {	-- Desert Recipe
