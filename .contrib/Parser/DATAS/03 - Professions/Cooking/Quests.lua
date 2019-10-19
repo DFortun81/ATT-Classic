@@ -60,6 +60,7 @@ profession(185, {	-- Cooking
 			["qg"] = 5159,	-- Daryl Riknussun
 			["maps"] = { IRONFORGE },
 			["isBreadcrumb"] = true,
+			["coord"] = { 60.1, 36.5, IRONFORGE },
 		}),
 		q(8317, {	-- Kitchen Assistance
 			["u"] = 3,	-- Added in later phase
