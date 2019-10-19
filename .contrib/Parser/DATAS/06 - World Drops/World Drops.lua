@@ -4,22 +4,32 @@
 _.WorldDrops =
 {
 	n(-318, {	-- Armor
-		n(-329, {	-- Legs
-			i(9756), -- Gypsy Trousers
-		}),
 		n(-320, {	-- Head
 		}),
 		n(-321, {	-- Shoulder
 		}),
 		n(-322, {	-- Back
+			i(4701),  -- Inscribed Cloak
+			i(9779),  -- Bandit Cloak
 		}),
 		n(-323, {	-- Chest
+			i(2977),  -- Veteran Armor
+		}),
+		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
 		}),
 		n(-327, {	-- Hands
+			i(14117), -- Aboriginal Gloves
 		}),
 		n(-328, {	-- Waist
+		}),
+		n(-329, {	-- Legs
+			i(9756), -- Gypsy Trousers
+		}),
+		n(-330, {	-- Feet
+			i(2983),  -- Seer's Boots
+			i(6557),  -- Bard's Boots
 		}),
 	}),
 	n(-319, {	-- Weapons		
@@ -28,6 +38,7 @@ _.WorldDrops =
 		n(-335, {	-- 2H Axes
 		}),	
 		n(-346, {	-- Bows
+			i(3036),  -- Heavy Shortbow
 		}),
 		n(-347, {	-- Crossbows
 		}),			
@@ -42,12 +53,14 @@ _.WorldDrops =
 		n(-331, {	-- Held in Off-hand
 		}),
 		n(-336, {	-- 1H Maces
+			i(4090),  -- Mug O' Hurt
 		}),
 		n(-337, {	-- 2H Maces
 		}),
 		n(-343, {	-- Polearms
 		}),			
 		n(-332, {	-- Shield
+			i(9764),  -- Cadet Shield
 		}),
 		n(-342, {	-- Staves
 		}),
