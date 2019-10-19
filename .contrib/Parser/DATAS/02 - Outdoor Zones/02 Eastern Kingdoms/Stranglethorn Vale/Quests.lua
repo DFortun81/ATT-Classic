@@ -32,6 +32,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
+					["sourceQuest"] = 603, -- Magical Analysis
 				}),
 				q(7908, {	-- Arena Master
 				}),
@@ -252,6 +253,7 @@ _.Zones =
 				q(602, {	-- Magical Analysis
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 601, -- Water Elementals
 				}),
 				q(206, {	-- Mai'Zoth
 					["lvl"] = 30,
@@ -594,6 +596,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 616, -- The Haunted Isle
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 				}),
 				q(629, {	-- The Vile Reef
@@ -632,6 +635,7 @@ _.Zones =
 					["repeatable"] = true,
 					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["qg"] = 16399,	-- Bloodsail Traitor
+					["coord"] = { 31.8, 70.9, STRANGLETHORN_VALE },
 				}),
 				q(205, {	-- Troll Witchery
 					["lvl"] = 30,
@@ -669,6 +673,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
+					["sourceQuest"] = 578, --	The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 				}),
 				q(583, {	-- Welcome to the Jungle
