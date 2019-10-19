@@ -22,6 +22,20 @@ _.Zones =
 					},
 				},
 				{
+					["questID"] = 5931,  -- Back to Darnassus
+					["qg"] = 11802,  -- Dendrite Starblaze
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["sourceQuest"] = 5929,  -- Great Bear Spirit
+				},
+				{
+					["questID"] = 5929,  -- Great Bear Spirit
+					["qg"] = 11802,  -- Dendrite Starblaze
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["sourceQuest"] = 5921,  -- Moonglade
+				},
+				{
 					["questID"] = 5526,	-- Shards of the Felvine
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna

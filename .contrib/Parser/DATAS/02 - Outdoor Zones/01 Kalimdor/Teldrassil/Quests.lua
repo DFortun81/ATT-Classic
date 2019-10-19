@@ -22,6 +22,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
 				}),
+				{
+					["questID"] = 6001,  -- Body and Heart
+					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["sourceQuest"] = 5931,  -- Back to Darnassus
+				},
 				q(921, {	-- Crown of the Earth (1/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3514,	-- Tenaron Stormgrip
@@ -152,6 +159,26 @@ _.Zones =
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["sourceQuest"] = 475,	-- Gnarlpine Corruption
 				}),
+				{
+					["questID"] = 5923,  -- Heeding the Call
+					["qg"] = 4218,  -- Denatharion <Druid Trainer>
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["altQuests"] = {
+						5924,	-- Heeding the Call
+						5925,   -- Heeding the Call
+					},
+				},
+				{
+					["questID"] = 5925,  -- Heeding the Call
+					["qg"] = 3602,  -- Kal <Druid Trainer>
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["altQuests"] = {
+						5923,	-- Heeding the Call
+						5924,   -- Heeding the Call
+					},
+				},
 				q(3521, {	-- Iverron's Antidote
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
@@ -178,6 +205,17 @@ _.Zones =
 						i(5618),	-- Scout's Cloak
 					},
 				}),
+				{
+					["questID"] = 5921,  -- Moonglade
+					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["sourceQuests"] = {
+						5923,	-- Heeding the Call
+						5924,   -- Heeding the Call
+						5925,   -- Heeding the Call
+					},
+				},
 				q(978, {	-- Moontouched Wildkin
 					["lvl"] = 52,
 					["races"] = ALLIANCE_ONLY,
@@ -342,7 +380,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
-						-- 6072,	-- The Hunter's Path
+						6072,	-- The Hunter's Path
 						6073,	-- The Hunter's Path
 						6721,	-- The Hunter's Path
 						6722,	-- The Hunter's Path
@@ -457,6 +495,11 @@ _.Zones =
 					},
 					["coord"] = { 55.9, 57.3, TELDRASSIL},
 				}),
+				{
+					["questID"] = 3120,  -- Verdant Sigil
+					["qg"] = 2079,  -- Conservator Ilthalaine
+					["classes"] = { 11 },  -- Druid
+				},
 				q(917, {	-- Webwood Egg
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2082,	-- Gilshalan Windwalker

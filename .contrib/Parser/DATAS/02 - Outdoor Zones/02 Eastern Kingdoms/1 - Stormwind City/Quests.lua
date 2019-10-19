@@ -62,6 +62,16 @@ _.Zones =
 					["qg"] = 1427, -- Harlan Bagley
 					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
 				}),
+				{
+					["questID"] = 5924,  -- Heeding the Call
+					["qg"] = 5505,  -- Theridran <Druid Trainer>
+					["races"] = { 4 },  -- Night Elf Only
+					["classes"] = { 11 },  -- Druid
+					["altQuests"] = {
+						5923,	-- Heeding the Call
+						5925,   -- Heeding the Call
+					},
+				},
 				q(6183, {	-- Honor the Dead
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
