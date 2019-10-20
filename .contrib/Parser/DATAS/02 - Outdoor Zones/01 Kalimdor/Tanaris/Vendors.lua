@@ -34,11 +34,13 @@ _.Zones =
 						i(13945),	-- Recipe: Nightfin Soup
 						i(13946),	-- Recipe: Poached Sunscale Salmon						
 					},
+					["coord"] = { 66.6, 22.1, TANARIS },
 				}),
 				n(8139, {	-- Jabbey <General Goods>
 					["groups"] = {
 						i(16767),	-- Recipe: Undermine Clam Chowder
 					},
+					["coord"] = { 67.0, 22.0, TANARIS },
 				}),
 				n(5411, {	-- Krinkle Goodsteel <Blacksmithing Supplies>
 					["groups"] = {

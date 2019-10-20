@@ -407,6 +407,7 @@ _.Zones =
 					["lvl"] = 37,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 737,	-- Kebok
+					["sourceQuest"] = 189, -- Bloodscalp Ears
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
 				}),
 				q(577, {	-- Some Assembly Required
@@ -641,6 +642,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 739,	-- Brother Nimetz
+					["sourceQuest"] = 207, -- Kurzen's Mystery
 				}),
 				q(638, {	-- Trollbane
 					["lvl"] = 32,
@@ -661,6 +663,7 @@ _.Zones =
 						i(5253),	-- Goblin Igniter
 						i(4128),	-- Silver Spade
 					},
+					["sourceQuest"] = 605, -- Singing Blue Shards
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 				q(609, {	-- Voodoo Dues

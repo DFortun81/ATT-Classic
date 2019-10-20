@@ -116,6 +116,7 @@ _.Zones =
 					["groups"] = {						
 						i(16083),	-- Expert Fishing - The Bass and You						
 					},
+					["coord"] = { 27.4, 77.1, STRANGLETHORN_VALE },
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["groups"] = {						

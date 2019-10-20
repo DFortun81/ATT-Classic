@@ -192,6 +192,7 @@ _.Zones =
 				q(8365, {	-- Pirate Hats Ahoy!
 					["lvl"] = 40,
 					["qg"] = 15165,	-- Haughty Modiste
+					["coord"] = { 66.6, 22.3, TANARIS },
 				}),
 				q(8598, {	-- rAnS0m
 					["u"] = 3,	-- Added in later phase
@@ -235,6 +236,7 @@ _.Zones =
 						i(20640),	-- Southsea Head Bucket
 						i(20641),	-- Southsea Mojo Boots
 					},
+					["coord"] = { 67.1, 23.9, TANARIS },
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
 					["lvl"] = 44,
@@ -256,6 +258,7 @@ _.Zones =
 				q(2873, {	-- Stoley's Shipment
 					["lvl"] = 40,
 					["qg"] = 7881,	-- Stoley
+					["coord"] = { 67.1, 24.0, TANARIS },
 				}),
 				q(4504, {	-- Super Sticky
 					["lvl"] = 48,
