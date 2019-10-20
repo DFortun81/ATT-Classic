@@ -33,6 +33,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
 					["sourceQuest"] = 603, -- Magical Analysis
+					["coord"] = { 18.8, 78.5, ALTERAC_MOUNTAINS },
 				}),
 				q(7908, {	-- Arena Master
 				}),
@@ -133,6 +134,7 @@ _.Zones =
 				}),
 				q(626, {	-- Cortello's Riddle
 					["lvl"] = 35,
+					["provider"] = { "o", 255 }, -- Musty Scroll
 					--["objectID"] = 2555,	-- Musty Scroll
 					["g"] = {
 						i(11324),	-- Explorer's Knapsack
@@ -143,6 +145,7 @@ _.Zones =
 					["g"] = {
 						i(4129),	-- Collection Plate
 					},
+					["sourceQuest"] = 609, -- Voodoo Dues
 				}),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
 					["lvl"] = 45,
@@ -377,6 +380,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2502,	-- \"Shaky\" Phillipe
+					["sourceQuest"] = 606, -- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(3626, {	-- Return to the Blasted Lands
@@ -670,6 +674,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["sourceQuest"] = 607, -- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
 				}),
 				q(601, {	-- Water Elementals
