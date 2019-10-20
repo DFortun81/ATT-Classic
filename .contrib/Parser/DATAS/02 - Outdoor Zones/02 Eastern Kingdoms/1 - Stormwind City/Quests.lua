@@ -30,6 +30,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
+				q(7796, {	-- Additional Runecloth
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 50,
+				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,

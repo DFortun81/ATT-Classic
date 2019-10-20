@@ -7,6 +7,7 @@ _.WorldDrops =
 		n(-320, {	-- Head
 		}),
 		n(-321, {	-- Shoulder
+			i(13103),  -- Pads of the Venom Spider
 		}),
 		n(-322, {	-- Back
 			i(4701),  -- Inscribed Cloak
@@ -21,6 +22,7 @@ _.WorldDrops =
 		}),
 		n(-327, {	-- Hands
 			i(14117), -- Aboriginal Gloves
+			i(14168),  -- Buccaneer's Gloves
 		}),
 		n(-328, {	-- Waist
 		}),
@@ -31,9 +33,13 @@ _.WorldDrops =
 			i(2983),  -- Seer's Boots
 			i(6557),  -- Bard's Boots
 		}),
+		filter(51, {	-- Neck
+			i(13087),  -- River Pride Choker
+		}),
 	}),
 	n(-319, {	-- Weapons		
 		n(-334, {	-- 1H Axes
+			i(871),  -- Flurry Axe
 		}),
 		n(-335, {	-- 2H Axes
 		}),	
@@ -43,6 +49,7 @@ _.WorldDrops =
 		n(-347, {	-- Crossbows
 		}),			
 		n(-333, {	-- Daggers
+			i(1287),  -- Giant Tarantula Fang
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger			
 		}),
@@ -61,11 +68,14 @@ _.WorldDrops =
 		}),			
 		n(-332, {	-- Shield
 			i(9764),  -- Cadet Shield
+			i(15298),  -- Grizzly Buckler
+			i(15943),  -- Imbued Shield
 		}),
 		n(-342, {	-- Staves
 		}),
 		n(-338, {	-- 1H Swords
 			i(727),  -- Notched Shortsword
+			i(2011),  -- Twisted Sabre
 			i(15210),  -- Raider Shortsword
 		}),
 		n(-339, {	-- 2H Swords
