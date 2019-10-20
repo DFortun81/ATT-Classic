@@ -14,13 +14,18 @@ _.WorldDrops =
 			i(9779),  -- Bandit Cloak
 		}),
 		n(-323, {	-- Chest
+			i(821),  -- Riverpaw Leather Vest
 			i(2977),  -- Veteran Armor
+			i(3313),  -- Ceremonial Leather Harness
 		}),
 		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
+			i(14723),  -- War Paint Bindings
 		}),
 		n(-327, {	-- Hands
+			i(1448),  -- Blackrock Gauntlets
+			i(10369),  -- Imbued Plate Gauntlets
 			i(14117), -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
 		}),
@@ -60,6 +65,7 @@ _.WorldDrops =
 		n(-331, {	-- Held in Off-hand
 		}),
 		n(-336, {	-- 1H Maces
+			i(789),  -- Stout Battlehammer
 			i(4090),  -- Mug O' Hurt
 		}),
 		n(-337, {	-- 2H Maces
