@@ -294,6 +294,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
+				q(540, { -- Preserving Knowledge
+					["qg"] = 2277, -- Loremaster Dibbs
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
+					["sourceQuest"] = 538, -- Southshore
+				}),
 				q(544, {	-- Prison Break In
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
 					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
@@ -306,6 +313,13 @@ _.Zones =
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 					["sourceQuest"] = 562, -- Stormwind Ho!
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+				}),
+				q(542, { -- Return to Milton
+					["qg"] = 2277, -- Loremaster Dibbs
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
+					["sourceQuest"] = 540, -- Preserving Knowledge
 				}),
 				q(555, {	-- Soothing Turtle Bisque
 					["lvl"] = 28,
