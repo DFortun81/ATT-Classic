@@ -188,6 +188,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 				}),
+				{
+					["questID"] = 3765,  -- The Corruption Abroad
+					["qg"] = 4984,  -- Argos Nightwhisper
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+				},
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,

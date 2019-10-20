@@ -241,6 +241,7 @@ _.Zones =
 					["g"] = {
 						i(4114),	-- Darktide Cape
 					},
+					["coord"] = { 28.6, 75.9, STRANGLETHORN_VALE },
 				}),
 				q(210, {	-- Krazek's Cookery
 					["lvl"] = 32,
@@ -452,6 +453,7 @@ _.Zones =
 				q(349, {	-- Stranglethorn Fever
 					["lvl"] = 32,
 					["qg"] = 1449,	-- Witch Doctor Unbagwa
+					["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
 					["repeatable"] = true,
 				}),
 				q(198, {	-- Supplies to Private Thorsen
