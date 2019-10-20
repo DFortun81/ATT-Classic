@@ -33,6 +33,7 @@ _.WorldDrops =
 		}),
 		n(-329, {	-- Legs
 			i(9756), -- Gypsy Trousers
+			i(15017),  -- Lupine Leggings
 		}),
 		n(-330, {	-- Feet
 			i(2983),  -- Seer's Boots

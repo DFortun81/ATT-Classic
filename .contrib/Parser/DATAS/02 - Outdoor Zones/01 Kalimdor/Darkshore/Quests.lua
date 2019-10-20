@@ -11,6 +11,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
 					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["g"] = {
+						i(5387),  -- Enchanted Moonstalker Cloak
+					},
 				}),
 				q(993, {	-- A Lost Master
 					["lvl"] = 10,
