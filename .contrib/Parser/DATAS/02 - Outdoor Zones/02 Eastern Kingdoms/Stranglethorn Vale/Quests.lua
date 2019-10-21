@@ -470,32 +470,38 @@ _.Zones =
 					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
 					["lvl"] = 26,
 				}),
-				q(599, {	-- The Bloodsail Buccaneers
+				q(595, {	-- The Bloodsail Buccaneers (1)
 					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2490,	-- First Mate Crazz
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
 				}),
-				q(608, {	-- The Bloodsail Buccaneers
+				q(597, {	-- The Bloodsail Buccaneers (2)
 					["lvl"] = 37,
+					["coord"] = { 27.3, 69.5, STRANGLETHORN_VALE },
+					["provider"] = { "o", 2083 }, -- Bloodsail Correspondence
+					--["objectID"] = 2083,	-- Bloodsail Correspondence
+					["sourceQuest"] = 595, -- The Bloodsail Buccaneers (1)
+				}),
+				q(599, {	-- The Bloodsail Buccaneers (3)
+					["lvl"] = 37,
+					["qg"] = 2490,	-- First Mate Crazz
+					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
+					["sourceQuest"] = 597, -- The Bloodsail Buccaneers (2)
+				}),
+				q(604, {	-- The Bloodsail Buccaneers (4)
+					["lvl"] = 37,
+					["qg"] = 2487,	-- Fleet Master Seahorn
+					["sourceQuest"] = 599, -- The Bloodsail Buccaneers (3)
+					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
+				}),
+				q(608, {	-- The Bloodsail Buccaneers (5)
+					["lvl"] = 37,
+					["qg"] = 2487,	-- Fleet Master Seahorn
+					["sourceQuest"] = 604, -- The Bloodsail Buccaneers (4)
+					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
 					["g"] = {
 						i(4138),	-- Blackwater Tunic
 					},
-				}),
-				q(597, {	-- The Bloodsail Buccaneers
-					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2083,	-- Bloodsail Correspondence
-				}),
-				q(604, {	-- The Bloodsail Buccaneers
-					["lvl"] = 37,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2487,	-- Fleet Master Seahorn
-				}),
-				q(595, {	-- The Bloodsail Buccaneers
-					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2490,	-- First Mate Crazz
 				}),
 				q(8551, {	-- The Captain's Chest
 					["lvl"] = 35,
