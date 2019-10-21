@@ -9,6 +9,9 @@ _.Zones =
 				q(610, {	-- "Pretty Boy" Duncan
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2542, -- Catelyn the Blade
+					["sourceQuest"] = 603, -- Ansirem's Key
+					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 				}),
 				q(623, {	-- Akiris by the Bundle
 					["lvl"] = 38,
@@ -528,6 +531,7 @@ _.Zones =
 					["lvl"] = 32,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2542,	-- Catelyn the Blade
+					["sourceQuest"] = 610, -- "Pretty Boy" Duncan
 					["g"] = {
 						i(4120),	-- Robe of Crystal Waters
 					},
