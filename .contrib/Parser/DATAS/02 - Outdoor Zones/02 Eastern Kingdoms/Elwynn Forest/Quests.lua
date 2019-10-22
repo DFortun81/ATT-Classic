@@ -177,6 +177,14 @@ _.Zones =
 					},
 					["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 				}),
+				q(3103, { -- Hallowed Letter
+					["lvl"] = 1,
+					["races"] = 1, -- Human
+					["qg"] = 197, -- Marshal McBride
+					["classes"] = { 5 }, -- Priest
+					["sourceQuest"] = 7, -- Kobold Camp Cleanup
+					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+				}),
 				q(345, {	-- Ink Supplies
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
