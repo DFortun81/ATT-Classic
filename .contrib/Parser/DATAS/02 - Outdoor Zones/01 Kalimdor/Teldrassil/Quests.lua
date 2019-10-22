@@ -483,6 +483,7 @@ _.Zones =
 				q(8734, {	-- Tyrande and Remulos
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
+					["u"] = 3, -- Ahn'Qirij
 				}),
 				q(486, {	-- Ursal the Mauler
 					["lvl"] = 4,
