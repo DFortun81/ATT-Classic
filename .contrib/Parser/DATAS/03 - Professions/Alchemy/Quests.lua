@@ -1,4 +1,4 @@
-profession(185, {	-- Cooking
+profession(171, {	-- Alchemy
 	n(-17, {	-- Quests
 		q(2501, {	-- Badlands Reagent Run II
 			["lvl"] = 40,
