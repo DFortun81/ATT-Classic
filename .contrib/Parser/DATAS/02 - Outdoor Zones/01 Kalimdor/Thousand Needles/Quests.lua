@@ -23,7 +23,7 @@ _.Zones =
 					["coord"] = { 69.85, 30.90, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
-					["g"] = {
+					["groups"] = {
 						i(15464),	-- Brute Hammer
 						i(15465),	-- Stingshot Wand
 						i(15466),	-- Clink Shield
@@ -71,7 +71,7 @@ _.Zones =
 					["coord"] = { 57.75, 65.39, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(6804),	-- Windstorm Hammer
 						i(6806),	-- Dancing Flame
 					},
@@ -81,7 +81,7 @@ _.Zones =
 					["coord"] = { 37.99, 26.52, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(15469),	-- Windsong Cinch
 						i(15468),	-- Windsong Drape
 					},
@@ -101,7 +101,8 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(1174, {	-- Gnomes Win!
-					["g"] = {
+					["u"] = 1,	-- Never Available
+					["groups"] = {
 						i(5857),	-- Gnome Prize Box
 					},
 				}),
@@ -128,7 +129,7 @@ _.Zones =
 					["sourceQuest"] = 1181,	-- Goblin Sponsorship
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["lvl"] = 29,
-					["g"] = {
+					["groups"] = {
 						i(5851),	-- Cozzle's Key
 					},
 				}),
@@ -139,7 +140,8 @@ _.Zones =
 					["lvl"] = 29,
 				}),
 				q(1099, {	-- Goblins Win!
-					["g"] = {
+					["u"] = 1,	-- Never Available
+					["groups"] = {
 						i(5858),	-- Goblin Prize Box
 					},
 				}),
@@ -149,7 +151,7 @@ _.Zones =
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
-					["g"] = {
+					["groups"] = {
 						i(15457),	-- Desert Shoulders
 						i(15458),	-- Tundra Boots
 						i(15459),	-- Grimtoll Wristguards
@@ -176,19 +178,18 @@ _.Zones =
 					["coord"] = { 21.44, 32.55, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
-					["g"] = {
+					["groups"] = {
 						i(15467),	-- Inventor's League Ring
 					},
 				}),
-				q(1108, {	-- Indurium
-					["qg"] = 4618,	-- Martek the Exiled
-					["sourceQuest"] = 1106,	-- Martek the Exiled
-					--["coord"] = { },
-					["lvl"] = 28,
-				}),
-				q(1192, {	-- Indurium Ore
+				{
+					["questID"] = 1192,	-- Indurium Ore
+					["sourceQuest"] = 1194,	-- Rizzle's Schematics
+					["qg"] = 4630,	-- Pozzik
+					["repeatable"] = true,
+					["coord"] = { 80, 75.8, THOUSAND_NEEDLES },
 					["lvl"] = 29,
-				}),
+				},
 				q(1190, {	-- Keeping Pace
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1137,	-- News for Frizzle
@@ -222,7 +223,7 @@ _.Zones =
 					["sourceQuest"] = 1108,	-- Indurium
 					--["coord"] = { },
 					["lvl"] = 28,
-					["g"] = {
+					["groups"] = {
 						i(6729),	-- Fizzle's Zippy Lighter
 						i(6732),	-- Gnomish Mechanic's Gloves
 					},
@@ -257,7 +258,7 @@ _.Zones =
 					--["coord"] = { },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
-					["g"] = {
+					["groups"] = {
 						i(6737),	-- Dryleaf Pants
 						i(6738),	-- Bleeding Crescent
 					},
@@ -268,7 +269,7 @@ _.Zones =
 					["coord"] = { 21.27, 32.03, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						i(15461),	-- Lightheel Boots
 						i(15462),	-- Loamflake Bracers
 						i(15463),	-- Palestrider Gloves
@@ -324,7 +325,7 @@ _.Zones =
 					["qg"] = 4708,	-- Shreev
 					["sourceQuest"] = 1188,	-- Safety First
 					["lvl"] = 29,
-					["g"] = {
+					["groups"] = {
 						i(6726),	-- Razzeric's Customized Seatbelt
 						i(6727),	-- Razzeric's Racing Grips
 					},
@@ -348,7 +349,7 @@ _.Zones =
 					["coord"] = { 53.94, 41.49, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(5845),	-- Flank of Meat
 					},
 				}),
@@ -437,7 +438,7 @@ _.Zones =
 					["coord"] = { 46.01, 50.86, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(15471),	-- Brawnhide Armor
 						i(15470),	-- Plainsguard Leggings
 					},
@@ -452,7 +453,7 @@ _.Zones =
 					["coord"] = { 44.84, 48.97, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(4265),	-- Heavy Armor Kit
 					},
 				}),
