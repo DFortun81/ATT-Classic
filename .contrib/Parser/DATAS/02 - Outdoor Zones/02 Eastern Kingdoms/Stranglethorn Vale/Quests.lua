@@ -264,6 +264,9 @@ _.Zones =
 				}),
 				q(206, {	-- Mai'Zoth
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 739,	-- Brother Nimetz
+					["sourceQuest"] = 205, -- Troll Witchery
 					["g"] = {
 						i(4125),	-- Tranquil Orb
 					},
