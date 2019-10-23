@@ -79,8 +79,7 @@ _.Zones =
 					["qg"] = 1427, -- Harlan Bagley
 					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
 				}),
-				{
-					["questID"] = 5924,  -- Heeding the Call
+				q(5924, { -- Heeding the Call
 					["qg"] = 5505,  -- Theridran <Druid Trainer>
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
@@ -88,7 +87,7 @@ _.Zones =
 						5923,	-- Heeding the Call
 						5925,   -- Heeding the Call
 					},
-				},
+				}),
 				q(6183, {	-- Honor the Dead
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
@@ -129,6 +128,13 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 461, -- Demisette Cloyce
 				}),
+				q(350, { -- Look to an Old Friend
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 393, -- Shadow of the Past
+					["qg"] = 332, -- Master Mathias Shaw
+					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
+				}),
 				q(2360, {	-- Mathias and the Defias
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
@@ -136,8 +142,7 @@ _.Zones =
 					["qg"] = 332,	-- Master Mathias Shaw
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
 				}),
-				{
-					["questID"] = 1861,	-- Mirror Lake
+				q(1861, { -- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -149,7 +154,7 @@ _.Zones =
 						i(7508),	-- Ley Orb
 						i(9513),	-- Ley Staff
 					},
-				},
+				}),
 				q(6187, {	-- Order Must Be Restored
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
@@ -197,13 +202,12 @@ _.Zones =
 						i(7298),	-- Blade of Cunning
 					},
 				}),
-				{
-					["questID"] = 343,	-- Speaking of Fortitude
+				q(343, {	-- Speaking of Fortitude
 					["qg"] = 1444,	-- Brother Kristoff
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 45.7, 38.3, STORMWIND_CITY },
-				},
+				}),
 				q(353, {	-- Stormpike's Delivery
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1097,	-- Elmore's Task
@@ -230,12 +234,11 @@ _.Zones =
 					["qg"] = 6122, -- Gakin the Darkbinder
 					["sourceQuest"] = 1688, -- Surena Caledon
 				}),
-				{
-					["questID"] = 3765,  -- The Corruption Abroad
+				q(3765, {  -- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-				},
+				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
@@ -320,6 +323,11 @@ _.Zones =
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1247,
+				}),
+				q(1015, {	-- The New Frontier
+					["lvl"] = 54,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2198, -- Crier Goodman
 				}),
 				q(543, {	-- The Perenolde Tiara
 					["lvl"] = 30,

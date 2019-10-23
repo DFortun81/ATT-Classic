@@ -200,6 +200,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					--["objectID"] = 180652,	-- Freshly Dug Dirt
 				}),
+				q(648, { -- Rescue OOX-17/TN!
+					["lvl"] = 43,
+					["qg"] = 7784, -- Homing Robot OOX-17/TN
+					["sourceQuest"] = 351, -- Find OOX-17/TN!
+				}),
 				q(8587, {	-- Return to Narain
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,

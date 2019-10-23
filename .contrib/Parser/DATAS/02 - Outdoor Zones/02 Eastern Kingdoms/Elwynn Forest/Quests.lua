@@ -372,6 +372,13 @@ _.Zones =
 					["sourceQuest"] = 2205,	-- Seek out SI:7
 					["isBreadcrumb"] = true,
 				}),
+				q(3100, { --Simple Letter
+					["lvl"] = 1,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 197, -- Marshal McBride
+					["sourceQuest"] = 7, -- Kobold Camp Cleanup
+				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 197,	-- Marshal McBride

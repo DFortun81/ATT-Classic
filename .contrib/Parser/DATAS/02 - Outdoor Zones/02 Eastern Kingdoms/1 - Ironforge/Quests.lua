@@ -108,6 +108,11 @@ _.Zones =
 					},
 					["coord"] = { 75.6, 23.5, IRONFORGE },
 				}),
+				q(212, { -- A Meal Served Cold
+					["lvl"] = 35,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1141, -- Angus Stern
+				}),
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
@@ -126,8 +131,7 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
-				{
-					["questID"] = 8910,	-- An Earnest Proposition
+				q(8910, { -- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -142,9 +146,8 @@ _.Zones =
 					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				},
-				{
-					["questID"] = 8909,	-- An Earnest Proposition
+				}),
+				q(8909, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -159,9 +162,8 @@ _.Zones =
 					["groups"] = {
 						i(22079),	-- Virtuous Bracers
 					},
-				},
-				{
-					["questID"] = 8907,	-- An Earnest Proposition
+				}),
+				q(8907, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -176,9 +178,8 @@ _.Zones =
 					["groups"] = {
 						i(22063),	-- Sorcerer's Bindings
 					},
-				},
-				{
-					["questID"] = 8912,	-- An Earnest Proposition
+				}),
+				q(8912, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -193,9 +194,8 @@ _.Zones =
 					["groups"] = {
 						i(21996),	-- Bracers of Heroism
 					},
-				},
-				{
-					["questID"] = 8908,	-- An Earnest Proposition
+				}),
+				q( { -- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -210,9 +210,8 @@ _.Zones =
 					["groups"] = {
 						i(22088),	-- Soulforge Bracers
 					},
-				},
-				{
-					["questID"] = 8911,	-- An Earnest Proposition
+				}),
+				q(8911, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -227,9 +226,8 @@ _.Zones =
 					["groups"] = {
 						i(22071),	-- Deathmist Bracers
 					},
-				},
-				{
-					["questID"] = 8905,	-- An Earnest Proposition
+				}),
+				q(8905,	{ -- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -244,9 +242,8 @@ _.Zones =
 					["groups"] = {
 						i(22108),	-- Feralheart Bracers
 					},
-				},
-				{
-					["questID"] = 8906,	-- An Earnest Proposition
+				}),
+				q(8906,	{ -- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -260,8 +257,8 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
-					},
-				},
+					},					
+				}),
 				q(3450, {	-- An Easy Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
@@ -529,12 +526,11 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 5172, -- Briarthorn
 				}),
-				{
-					["questID"] = 1880,	-- Mage-tastic Gizmonitor
-					["qg"] = 5144,	-- Bink <Mage Trainer>
+				q(1880,	{ -- Mage-tastic Gizmonitor
+					["qg"] = 5144, -- Bink <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {8},	-- Mage
+					["classes"] = {8}, -- Mage
 					["altQuests"] = {
 						1861,	-- Mirror Lake
 					},
@@ -542,7 +538,7 @@ _.Zones =
 						i(7507),	-- Arcane Orb
 						i(9514),	-- Arcane Staff
 					},
-				},
+				}),
 				q(3448, {	-- Passing the Burden
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
