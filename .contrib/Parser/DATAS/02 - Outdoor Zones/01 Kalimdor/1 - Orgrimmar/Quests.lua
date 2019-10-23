@@ -101,8 +101,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
-				{
-					["questID"] = 8917,	-- An Earnest Proposition
+				q(8917,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -117,9 +116,8 @@ _.Zones =
 					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				},
-				{
-					["questID"] = 8916,	-- An Earnest Proposition
+				}),
+				q(8916, {	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -134,9 +132,8 @@ _.Zones =
 					["groups"] = {
 						i(22079),	-- Virtuous Bracers
 					},
-				},
-				{
-					["questID"] = 8915,	-- An Earnest Proposition
+				}),
+				q(8915,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -151,9 +148,8 @@ _.Zones =
 					["groups"] = {
 						i(22063),	-- Sorcerer's Bindings
 					},
-				},
-				{
-					["questID"] = 8920,	-- An Earnest Proposition
+				}),
+				q(8920,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -168,9 +164,8 @@ _.Zones =
 					["groups"] = {
 						i(21996),	-- Bracers of Heroism
 					},
-				},
-				{
-					["questID"] = 8918,	-- An Earnest Proposition
+				}),
+				q(8918,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -185,9 +180,8 @@ _.Zones =
 					["groups"] = {
 						i(22095),	-- Bindings of The Five Thunders
 					},
-				},
-				{
-					["questID"] = 8919,	-- An Earnest Proposition
+				}),
+				q(8919,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -202,9 +196,8 @@ _.Zones =
 					["groups"] = {
 						i(22071),	-- Deathmist Bracers
 					},
-				},
-				{
-					["questID"] = 8913,	-- An Earnest Proposition
+				}),
+				q(8913,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -219,9 +212,8 @@ _.Zones =
 					["groups"] = {
 						i(22108),	-- Feralheart Bracers
 					},
-				},
-				{
-					["questID"] = 8914,	-- An Earnest Proposition
+				}),
+				q(8914, {	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -236,7 +228,7 @@ _.Zones =
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
 					},
-				},
+				}),
 				q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

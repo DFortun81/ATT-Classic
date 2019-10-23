@@ -404,7 +404,6 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
 					["description"] = "This quest becomes unavailable after completing \"Ulag the Cleaver\" in Tirisfal Glades.",
-
 				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze

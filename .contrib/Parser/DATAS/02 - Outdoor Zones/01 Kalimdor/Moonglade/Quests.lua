@@ -21,20 +21,18 @@ _.Zones =
 						},
 					},
 				},
-				{
-					["questID"] = 5931,  -- Back to Darnassus
+				q(5931, { -- Back to Darnassus
 					["qg"] = 11802,  -- Dendrite Starblaze
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
 					["sourceQuest"] = 5929,  -- Great Bear Spirit
-				},
-				{
-					["questID"] = 5929,  -- Great Bear Spirit
-					["qg"] = 11802,  -- Dendrite Starblaze
+				}),
+				q(5929, { -- Great Bear Spirit
+						["qg"] = 11802,  -- Dendrite Starblaze
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
 					["sourceQuest"] = 5921,  -- Moonglade
-				},
+				}),
 				{
 					["questID"] = 5526,	-- Shards of the Felvine
 					["sourceQuest"] = 5527,	-- A Reliquary of Purity
@@ -80,9 +78,8 @@ _.Zones =
 						},
 					},
 				},
-				{
-					["questID"] = 8736,	-- The Nightmare Manifests
-					["u"] = 3,	-- Added in later phase
+				q(8736, {	-- The Nightmare Manifests
+								["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["description"] = "This quest will become available with Phase 5.\n\nNOTE: You do NOT want to kill Eranikus or allow Remulos to die.",
 					["qg"] = 11832,	-- Keeper Remulos
@@ -93,7 +90,7 @@ _.Zones =
 						i(21531),	-- Drake Tooth Necklace
 						i(21532),	-- Drudge Boots
 					},
-				},
+				}),
 				{
 					["questID"] = 8735,	-- The Nightmare's Corruption
 					["u"] = 3,	-- Added in later phase
@@ -145,8 +142,7 @@ _.Zones =
 						},
 					},
 				},
-				{
-					["questID"] = 6845,	-- Uncovering Past Secrets
+				q(6845, {	-- Uncovering Past Secrets
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber
 					["coord"] = { 44.88, 35.6, MOONGLADE },
@@ -155,16 +151,14 @@ _.Zones =
 						i(18400),	-- Ring of Living Stone
 						i(18402),	-- Glowing Crystal Ring
 					},
-				},
-				{
-					["questID"] = 1185,	-- Under the Chitin Was...
+				}),
+				q(1185, {	-- Under the Chitin Was...
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11939,	-- Umber
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 8447,	-- Waking Legends
+				}),
+				q(8447, {	-- Waking Legends
 					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11832,	-- Keeper Remulos
@@ -175,7 +169,7 @@ _.Zones =
 					["groups"] = {
 						i(20600),	-- Malfurion's Signet Ring
 					},
-				},
+				}),
 				{
 					["questID"] = 1124,	-- Wasteland
 					["sourceQuests"] = {

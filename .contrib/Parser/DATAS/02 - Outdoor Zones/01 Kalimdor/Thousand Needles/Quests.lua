@@ -182,14 +182,13 @@ _.Zones =
 						i(15467),	-- Inventor's League Ring
 					},
 				}),
-				{
-					["questID"] = 1192,	-- Indurium Ore
+				q(1192, {	-- Indurium Ore
 					["sourceQuest"] = 1194,	-- Rizzle's Schematics
 					["qg"] = 4630,	-- Pozzik
 					["repeatable"] = true,
 					["coord"] = { 80, 75.8, THOUSAND_NEEDLES },
 					["lvl"] = 29,
-				},
+				}),
 				q(1190, {	-- Keeping Pace
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1137,	-- News for Frizzle
