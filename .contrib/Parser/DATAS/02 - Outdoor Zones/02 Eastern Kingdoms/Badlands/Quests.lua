@@ -13,21 +13,19 @@ _.Zones =
 						i(4978),	-- Ryedol's Hammer
 					},
 				}),
-				{
-					["questID"] = 720,	-- A Sign of Hope
+				q(720, { -- A Sign of Hope
 					["provider"] = { "o", 2868 },	-- Crumpled Map
 					["coord"] = { 53.0, 33.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
-				{
-					["questID"] = 721,	-- A Sign of Hope
+				}),
+				q(721, { -- A Sign of Hope
 					["sourceQuest"] = 720,	-- A Sign of Hope
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
 					["coord"] = { 53.4, 43.4, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
+				}),
 				{
 					["questID"] = 722,	-- Amulet of Secrets
 					["sourceQuest"] = 721,	-- A Sign of Hope
@@ -96,6 +94,7 @@ _.Zones =
 						i(4457),	-- Barbecued Buzzard Wing
 						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					},
+					["coord"] = { 42.39, 52.93, BADLANDS },
 				}),
 				q(782, {	-- Broken Alliances
 					["qg"] = 1068,	-- Gorn
@@ -160,7 +159,6 @@ _.Zones =
 					["qg"] = 2921,	-- Lotwil Veriatus
 				}),
 				{
-				
 					["questID"] = 1108,	-- Indurium
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					["coord"] = { 42.22, 52.69, BADLANDS },
@@ -194,6 +192,7 @@ _.Zones =
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2860,	-- Sigrun Ironhew
+					["coord"] = { 53.8, 43.3, BADLANDS },
 				}),
 				q(739, {	-- Murdaloc
 					["provider"] = { "o", 2875 },	-- Battered Dwarven Skeleton
@@ -205,24 +204,22 @@ _.Zones =
 						i(4983),	-- Rock Pulverizer
 					},
 				}),
-				{
-					["questID"] = 725,	-- Passing Word of a Threat
+				q(725, { -- Passing Word of a Threat
 					["sourceQuest"] = 724,	-- Prospect of Faith
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.5, 11.8, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
-				{
-					["questID"] = 726,	-- Passing Word of a Threat
+				}),
+				q(726, { -- Passing Word of a Threat
 					["sourceQuest"] = 725,	-- Passing Word of a Threat
 					["qg"] = 2918,	-- Advisor Belgrum
 					["coord"] = { 77.3, 9.7, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
+				}),
 				q(705, {	-- Pearl Diving
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -232,9 +229,9 @@ _.Zones =
 						i(5248),	-- Flash Wand
 						i(4852),	-- Flash Bomb
 					},
+					["coord"] = { 42.39, 52.93, BADLANDS },
 				}),
 				{
-				
 					["questID"] = 2418,	-- Power Stones
 					["coord"] = { 42.39, 52.93, BADLANDS },
 					["maps"] = { ULDAMAN },
@@ -276,22 +273,20 @@ _.Zones =
 						i(10359),	-- Everlast Boots
 					},
 				},
-				{
-					["questID"] = 723,	-- Prospect of Faith
+				q(723, { -- Prospect of Faith
 					["sourceQuest"] = 722,	-- Amulet of Secrets
 					["qg"] = 2909,	-- Hammertoe Grez
 					["coord"] = { 37.94, 10.53, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
-				{
-					["questID"] = 724,	-- Prospect of Faith
+				}),
+				q(724, { -- Prospect of Faith
 					["sourceQuest"] = 723,	-- Prospect of Faith
 					["qg"] = 2909,	-- Prospector Ryedol
 					["coord"] = { 53.4, 43.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
+				}),
 				{
 					["questID"] = 1360,	-- Reclaimed Treasures
 					["qg"] = 6294,	-- Krom Stoutarm
@@ -333,10 +328,12 @@ _.Zones =
 					["qg"] = 2860,	-- Sigrun Ironhew
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
+					["sourceQuest"] = 718, -- Mirages
 					["g"] = {
 						i(4652),	-- Salbac Shield
 						i(4653),	-- Ironheel Boots
 					},
+					["coord"] = { 53.8, 43.3, BADLANDS },
 				}),
 				q(795, {	-- Seal of the Earth
 					["lvl"] = 40,
