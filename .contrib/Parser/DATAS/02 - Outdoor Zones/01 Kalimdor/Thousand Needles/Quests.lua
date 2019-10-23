@@ -413,6 +413,7 @@ _.Zones =
 					--["coord"] = { },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
 				q(1186, {	-- The Eighteenth Pilot
@@ -459,6 +460,9 @@ _.Zones =
 				}),
 				q(1191, {	-- Zamek's Distraction
 					["qg"] = 4709,	-- Zamek
+					["altQuests"] = {
+						1190,	-- Keeping Pace
+					},
 					["coord"] = { 79.8, 77.0, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
