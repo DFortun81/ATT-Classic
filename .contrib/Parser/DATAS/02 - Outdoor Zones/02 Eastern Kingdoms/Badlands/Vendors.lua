@@ -10,6 +10,7 @@ _.Zones =
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul
 					},
+					["coord"] = { 42.4, 52.5, BADLANDS },
 				}),				
 			}),	
 		}),
