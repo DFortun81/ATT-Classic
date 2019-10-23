@@ -70,12 +70,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
+				q(4739, { -- In Search of Menara Voidrender
+					["lvl"] = 31,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 4563, -- Kaal Soulreaper
+				}),
 				q(243, {	-- Into the Field
 					["qg"] = 5204,	-- Apothecary Zinge
 					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge
 					["coord"] = { 50.13, 67.98, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
+				}),
+				q(4969, { -- Knowledge of the Orb of Orahil
+					["lvl"] = 35,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 4563, -- Kaal Soulreaper
 				}),
 				q(2995, {	-- Lines of Communication
 					["lvl"] = 42,
@@ -142,6 +154,12 @@ _.Zones =
 				q(3568, {	-- Seeping Corruption
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+				}),
+				q(4489, { -- Summon Felsteed
+					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 4563, -- Kaal Soulreaper
 				}),
 				q(4661, {	-- Testing for Corruption - Felwood
 					["lvl"] = 48,

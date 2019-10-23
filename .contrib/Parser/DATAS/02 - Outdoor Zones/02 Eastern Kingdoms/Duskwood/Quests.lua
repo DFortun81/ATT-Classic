@@ -283,6 +283,9 @@ _.Zones =
 				}),
 				q(1395, {	-- Supplies for Nethergarde
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5464, -- Watchmaster Sorigal
+					["sourceQuest"] = 1477, -- Vital Supplies
 				}),
 				q(148, {	-- Supplies from Darkshire
 					["lvl"] = 20,

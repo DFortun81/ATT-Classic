@@ -30,6 +30,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
+				q(335, { -- A Noble Brew (1)
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1435, -- Zardeth of the Black Claw
+				}),
+				q(336, { -- A Noble Brew (2)
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1435, -- Zardeth of the Black Claw
+				}),
 				q(7796, {	-- Additional Runecloth
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
@@ -92,6 +102,12 @@ _.Zones =
 					["coord"] = { 49.1, 30.3, STORMWIND_CITY },
 					["description"] = "Daros Alexston is located in City Hall at 47.6, 31.4.",
 				});
+				q(4738, { -- In Search of Menara Voidrender
+					["lvl"] = 31,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 461, -- Demisette Cloyce
+				}),
 				q(1448, {	-- In Search of The Temple
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
@@ -106,6 +122,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
+				}),
+				q(4968, { -- Knowledge of the Orb of Orahil
+					["lvl"] = 35,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 461, -- Demisette Cloyce
 				}),
 				q(2360, {	-- Mathias and the Defias
 					["lvl"] = 20,
@@ -187,6 +209,26 @@ _.Zones =
 					["sourceQuest"] = 1097,	-- Elmore's Task
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
+				}),
+				q(1688, { -- Surena Caledon
+					["lvl"] = 10,
+					["races"] = { 1, 7 }, -- Human and Gnome only
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6122, -- Gakin the Darkbinder
+					["sourceQuest"] = 1685, -- Gakin's Summons
+				}),
+				q(4488, { -- Summon Felsteed
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 461, -- Demisette Cloyce
+				}),
+				q(1689, { -- The Binding
+					["lvl"] = 10,
+					["races"] = { 1, 7 }, -- Human and Gnome only
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6122, -- Gakin the Darkbinder
+					["sourceQuest"] = 1688, -- Surena Caledon
 				}),
 				{
 					["questID"] = 3765,  -- The Corruption Abroad
@@ -318,6 +360,11 @@ _.Zones =
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
 				}),
+				q(1477, { -- Vital Supplies
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5694, -- High Sorcerer Andromath
+				}),
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
@@ -326,6 +373,12 @@ _.Zones =
 					["g"] = {
 						i(2723),	-- Bottle of Dalaran Noir
 					},
+				}),
+				q(397, { -- You Have Served Us Well
+					["lvl"] = 25,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1435, -- Zardeth of the Black Claw
+					["sourceQuest"] = 336, -- A Noble Brew
 				}),
 			}),
 		}),

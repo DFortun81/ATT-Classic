@@ -386,6 +386,12 @@ _.Zones =
 				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5730, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				q(4737, { -- In Search of Menara Voidrender
+					["lvl"] = 31,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 3326, -- Zevrost
+				}),
 				q(8938, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
@@ -449,6 +455,12 @@ _.Zones =
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
 					},
+				}),
+				q(4967, { -- Knowledge of the Orb of Orahil
+					["lvl"] = 35,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 3326, -- Zevrost
 				}),
 				q(4494, {	-- March of the Silithid
 					["lvl"] = 50,
@@ -536,6 +548,12 @@ _.Zones =
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
 					},
+				}),
+				q(3631, { -- Summon Felsteed
+					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 3326, -- Zevrost
 				}),
 				q(8276, {	-- Taking Back Silithus
 					["lvl"] = 54,

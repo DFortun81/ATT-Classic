@@ -405,6 +405,12 @@ _.Zones =
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
+				q(4736, { -- In Search of Menara Voidrender
+					["lvl"] = 31,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 5172, -- Briarthorn
+				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
@@ -516,6 +522,12 @@ _.Zones =
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299, --	To Hulfdan!
 					["isBreadcrumb"] = true,
+				}),
+				q(4965, { -- Knowledge of the Orb of Orahil
+					["lvl"] = 35,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 5172, -- Briarthorn
 				}),
 				{
 					["questID"] = 1880,	-- Mage-tastic Gizmonitor
@@ -701,6 +713,12 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["isBreadcrumb"] = true,
 					["coord"] = { 69.4, 50.8, IRONFORGE },
+				}),
+				q(4487, { -- Summon Felsteed
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 5172, -- Briarthorn
 				}),
 				q(8275, {	-- Taking Back Silithus
 					["lvl"] = 54,

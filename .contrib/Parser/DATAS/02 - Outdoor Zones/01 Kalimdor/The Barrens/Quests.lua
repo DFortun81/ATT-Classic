@@ -586,6 +586,13 @@ _.Zones =
 						i(11148),	-- Samophlange Manual Page
 					},
 				}),
+				q(1685, { -- Seeking Strahad
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY, 
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6122, -- Gakin the Darkbinder
+					["maps"] = { STORMWIND_CITY },
+				}),
 				q(876, {	-- Serena Bloodfeather
 					["qg"] = 3449,	-- Darsok Swiftdagger
 					["sourceQuest"] = 875,	-- Harpy Lieutenants
@@ -655,6 +662,12 @@ _.Zones =
 						i(11853),	-- Rambling Boots
 						i(2694),	-- Settler's Leggings
 					},
+				}),
+				q(4488, { -- Summon Felsteed
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6251, -- Strahad Farsan
 				}),
 				q(5041, {	-- Supplies for the Crossroads
 					["qg"] = 3429,	-- Thork
@@ -801,6 +814,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
+				}),
+				q(1758, { -- Tome of the Cabal
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6251, -- Strahad Farsan
 				}),
 				q(1824, {	-- Trial at the Field of Giants
 					["qg"] = 6394,	-- Ruga Ragetotem

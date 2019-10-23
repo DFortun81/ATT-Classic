@@ -132,6 +132,12 @@ _.Zones =
 					["sourceQuest"] = 40,	-- A Fishy Peril
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
+				q(1685, { -- Gakin's Summons
+					["lvl"] = 10,
+					["races"] = { 1, 7 }, -- Human and Gnome only
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 6121, -- Remen Marcot
+				}),
 				q(16, {	-- Give Gerard a Drink
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 255,	-- Gerard Tiller
@@ -421,6 +427,12 @@ _.Zones =
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
+				}),
+				q(1598, { -- The Stolen Tome
+					["lvl"] = 1,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 9 }, -- Warlock
+					["qg"] = 459, -- Drusilla La Salle
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,

@@ -57,6 +57,16 @@ _.Instances = {
 					["lvl"] = 40,
 				},
 				{
+					["questID"] = 2861,	-- Tabetha's Task
+					["qgs"] = {
+						4568, -- Anastasia Hartwell
+						5144, -- Bink
+						5497, -- Jennea Cannon
+						5885, -- Deino
+					},
+					["lvl"] = 40,
+				},
+				{
 					["questID"] = 3527,	-- The Prophecy of Mosh'aru
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 					["provider"] = { "n", 8579 },	-- Yeh'kinya

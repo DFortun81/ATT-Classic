@@ -125,6 +125,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2766,	-- Lolo the Lookout
 				}),
+				q(690, {	-- Malin's Request
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2708, -- Archmage Malin
+					["maps"] = { STORMWIND },
+				}),
 				q(697, {	-- Malin's Request
 					["lvl"] = 30,
 					["g"] = {
