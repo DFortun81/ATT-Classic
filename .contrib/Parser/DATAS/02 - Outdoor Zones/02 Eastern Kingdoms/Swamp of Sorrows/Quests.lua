@@ -13,6 +13,7 @@ _.Zones =
 						2623,	-- The Swamp Talker (H)
 						2783,	-- Petty Squabbles (A)
 					},
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(1428, {	-- Continued Threat
 					["lvl"] = 35,
@@ -21,23 +22,33 @@ _.Zones =
 				q(1425, {	-- Deliver the Shipment
 					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 1398, -- Driftwood
+					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 				}),
 				q(1389, {	-- Draenethyst Crystals
 					["lvl"] = 30,
 					["qg"] = 1776,	-- Magtoor
+					["coord"] = { 26.0, 31.4, SWAMP_OF_SORROWS },
 				}),
 				q(1398, {	-- Driftwood
 					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 1421, -- The Lost Caravan
+					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 				}),
 				q(1396, {	-- Encroaching Wildlife
 					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 				}),
 				q(2784, {	-- Fall From Grace
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(1430, {	-- Fresh Meat
 					["lvl"] = 35,
@@ -53,11 +64,13 @@ _.Zones =
 					["g"] = {
 						i(6828),	-- Visionary Buckler
 					},
+					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
 				}),
 				q(2702, {	-- Heroes of Old
 					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(2701, {	-- Heroes of Old
 					["lvl"] = 45,
@@ -71,6 +84,7 @@ _.Zones =
 					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(699, {	-- Lack of Surplus
 					["races"] = HORDE_ONLY,
@@ -104,20 +118,27 @@ _.Zones =
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["lvl"] = 29,
+					["cr"] = 5477, -- Noboru the Cudgel
+					["provider"] = { "i", 6196 }, -- Noboru's Cudgel
 				}),
 				q(2744, {	-- The Demon Hunter
 					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(2621, {	-- The Disgraced One
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(1421, {	-- The Lost Caravan
 					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 1396, -- Encroaching Wildlife
+					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 				}),
 				q(1423, {	-- The Lost Supplies
 					["repeatable"] = true,
@@ -137,6 +158,7 @@ _.Zones =
 					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 				q(2623, {	-- The Swamp Talker
 					["qg"] = 7643,	-- Bengor
@@ -164,6 +186,7 @@ _.Zones =
 					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 				}),
 			}),
 		}),
