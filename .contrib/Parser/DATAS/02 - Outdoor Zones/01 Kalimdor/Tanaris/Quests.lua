@@ -98,6 +98,7 @@ _.Zones =
 				}),
 				q(2874, {	-- Deliver to MacKinley
 					["lvl"] = 40,
+					["sourceQuest"] = 2873, -- Stoley's Shipment
 					["g"] = {
 						i(9636),	-- Swashbuckler Sash
 						i(9637),	-- Shinkicker Boots
@@ -121,6 +122,7 @@ _.Zones =
 				}),
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
+					["provider"] = { "i", 8623 }, -- OOX-17/TN Distress Beacon
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["lvl"] = 38,
@@ -152,6 +154,7 @@ _.Zones =
 					["lvl"] = 39,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, TANARIS },
 				}),
 				q(113, {	-- Insect Part Analysis
 					["lvl"] = 39,
@@ -167,6 +170,8 @@ _.Zones =
 				q(1691, {	-- More Wastewander Justice
 					["lvl"] = 40,
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
+					["sourceQuest"] = 1690, -- Wastewander Justice
+					["coord"] = { 52.5, 28.5, TANARIS },
 				}),
 				q(8584, {	-- Never Ask Me About My Business
 					["u"] = 3,	-- Added in later phase
@@ -215,6 +220,7 @@ _.Zones =
 					["lvl"] = 39,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, TANARIS },
 				}),
 				q(162, {	-- Rise of the Silithid
 					["lvl"] = 39,
@@ -225,6 +231,7 @@ _.Zones =
 				}),
 				q(2876, {	-- Ship Schedules
 					["lvl"] = 40,
+					["provider"] = { "i", 9250 }, -- Ship Schedule
 				}),
 				q(379, {	-- Slake That Thirst
 					["sourceQuest"] = 243,	-- Into the Field
@@ -263,6 +270,7 @@ _.Zones =
 				q(2873, {	-- Stoley's Shipment
 					["lvl"] = 40,
 					["qg"] = 7881,	-- Stoley
+					["sourceQuest"] = 2872, -- Stoley's Debt
 					["coord"] = { 67.1, 24.0, TANARIS },
 				}),
 				q(4504, {	-- Super Sticky
@@ -480,6 +488,7 @@ _.Zones =
 				q(10, {	-- The Scrimshank Redemption
 					["lvl"] = 39,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, TANARIS },
 				}),
 				q(2954, {	-- The Stone Watcher
 					["lvl"] = 45,
@@ -537,6 +546,10 @@ _.Zones =
 				}),
 				q(2875, {	-- WANTED: Andre Firebeard
 					["lvl"] = 40,
+					["providers"] = {
+						{ "o", 142122 }, -- Wanted Poster
+						{ "o", 150075 }, -- Wanted Poster
+					},
 					["qgs"] = {
 					--["objectID"] = 142122,	-- Wanted Poster
 					--["objectID"] = 150075,	-- Wanted Poster
@@ -544,6 +557,7 @@ _.Zones =
 				}),
 				q(2781, {	-- WANTED: Caliph Scorpidsting
 					["lvl"] = 39,
+					["provider"] = { "o", 142122 }, -- Wanted Poster
 					--["objectID"] = 142122,	-- Wanted Poster
 				}),
 				q(9268, {	-- War at Sea
@@ -555,6 +569,7 @@ _.Zones =
 				q(1690, {	-- Wastewander Justice
 					["lvl"] = 40,
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
+					["coord"] = { 52.5, 28.5, TANARIS },
 				}),
 				q(1707, {	-- Water Pouch Bounty
 					["lvl"] = 40,
