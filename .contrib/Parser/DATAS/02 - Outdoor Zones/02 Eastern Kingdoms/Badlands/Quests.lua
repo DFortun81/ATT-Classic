@@ -117,6 +117,7 @@ _.Zones =
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 26.0, 44.9, BADLANDS },
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
@@ -157,6 +158,7 @@ _.Zones =
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2921,	-- Lotwil Veriatus
+					["coord"] = { 26.0, 44.9, BADLANDS },
 				}),
 				{
 					["questID"] = 1108,	-- Indurium
@@ -183,6 +185,7 @@ _.Zones =
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2920,	-- Lucien Tosselwrench
+					["coord"] = { 25.8, 44.2, BADLANDS },
 					["g"] = {
 						i(4624),	-- Recipe: Lesser Stoneshield Potion
 						i(4623),	-- Lesser Stoneshield Potion
@@ -381,6 +384,7 @@ _.Zones =
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2921,	-- Lotwil Veriatus
+					["coord"] = { 26.0, 44.9, BADLANDS },
 				}),
 				q(708, {	-- The Black Box
 					["lvl"] = 30,
@@ -480,6 +484,9 @@ _.Zones =
 				}),
 				q(717, {	-- Tremors of the Earth
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2888, -- Garek
+					["sourceQuest"] = 732, -- Tremors of the Earth
 					["g"] = {
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
@@ -489,6 +496,9 @@ _.Zones =
 				}),
 				q(732, {	-- Tremors of the Earth
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2888, -- Garek
+					["sourceQuest"] = 718, -- Mirages
 				}),
 				q(2202, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run
