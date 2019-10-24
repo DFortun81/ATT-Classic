@@ -13,56 +13,72 @@ _.Zones =
 				}),
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { 
+						{ "i", 4338, 60 }, -- Mageweave Cloth 
+					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7804, {	-- A Donation of Mageweave
 					["qg"] = 14723,	-- Mistina Steelshield
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+					["cost"] = { 
+						{ "i", 4338, 60 }, 	-- Mageweave Cloth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7811, {	-- A Donation of Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { 
+						{ "i", 14047, 60 }, -- Runecloth
+					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7805, {	-- A Donation of Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
+					["cost"] = { 
+						{ "i", 14047, 60 }, -- Runecloth
+					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7808, {	-- A Donation of Silk
 					["qg"] = 14724,	-- Bubulo Acerbus
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = {
+						{ "i", 4306, 60 }, -- Silk Cloth
+					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
 				q(7803, {	-- A Donation of Silk
 					["qg"] = 14723,	-- Mistina Steelshield
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
+					["cost"] = { 
+						{ "i", 4306, 60 }, 	-- Silk Cloth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7802, {	-- A Donation of Wool
 					["qg"] = 14723,	-- Mistina Steelshield
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { 
+						{ "i", 2592, 60 },	-- Wool Cloth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 				}),
 				q(7807, {	-- A Donation of Wool
 					["qg"] = 14724,	-- Bubulo Acerbus
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
+					["cost"] = { 
+						{ "i", 2592, 60 },	-- Wool Cloth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
@@ -116,7 +132,9 @@ _.Zones =
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = { 
+						{ "i", 14047, 20 }, 	-- Runecloth
+					},
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -125,7 +143,9 @@ _.Zones =
 				q(7812, {	-- Additional Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["sourceQuest"] = 7811,	-- A Donation of Runecloth
-					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
+					["cost"] = {
+						{ "i", 14047, 20 },	-- Runecloth 
+					},
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 50,
@@ -195,7 +215,7 @@ _.Zones =
 						i(21996),	-- Bracers of Heroism
 					},
 				}),
-				q( { -- An Earnest Proposition
+				q(8908, { -- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
