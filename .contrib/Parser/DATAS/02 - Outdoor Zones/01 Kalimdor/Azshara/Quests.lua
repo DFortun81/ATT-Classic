@@ -48,6 +48,7 @@ _.Zones =
 				q(8575, {	-- Azuregos's Magical Ledger
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
+					["u"] = 3, -- Not available yet.
 				}),
 				q(3508, {	-- Breaking the Ward
 					["lvl"] = 45,
