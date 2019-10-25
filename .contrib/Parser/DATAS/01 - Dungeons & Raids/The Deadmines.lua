@@ -19,7 +19,7 @@ _.Instances = {
 						i(2037),	-- Tunneler's Boots
 					},
 				}),
-				q(167. {	-- Oh Brother. . .
+				q(167, {	-- Oh Brother. . .
 					["qg"] = 656,	-- Wilder Thistlenettle
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
