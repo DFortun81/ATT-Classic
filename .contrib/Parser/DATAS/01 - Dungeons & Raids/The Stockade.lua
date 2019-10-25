@@ -53,6 +53,9 @@ _.Instances = {
 					["coord"] = { 39.77, 54.21, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["lvl"] = 16,
+					["cost"] = {
+						{ "i", 2926, 1 }, -- Head of Bazil Thredd
+					},
 				}),
 				q(386, { 	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton

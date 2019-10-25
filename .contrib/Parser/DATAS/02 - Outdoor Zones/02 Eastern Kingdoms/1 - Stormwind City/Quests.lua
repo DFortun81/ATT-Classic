@@ -40,6 +40,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1435, -- Zardeth of the Black Claw
 				}),
+				q(396, { -- An Audience with the King
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 395, -- Brotherhood's End
+					["qg"] = 1646, -- Baros Alexston <City Architect>
+				}),
 				q(7796, {	-- Additional Runecloth
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
@@ -52,12 +58,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6740,	-- Innkeeper Allison
 				}),
+				q(389, { -- Bazil Thredd
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1646, -- Baros Alexston
+					["sourceQuest"] = 373, -- The Unsent Letter
+				}),
 				q(344, {	-- Brother Paxton
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1440,	-- Milton Sheaf
 					["sourceQuest"] = 343,	-- Speaking of Fortitude
 					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
+				}),
+				q(395, { -- Brotherhood's End
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 394, -- The Head of the Beast
+					["qg"] = 332, -- Master Mathias Shaw <Leader of SI:7>
 				}),
 				q(6261, {	-- Dungar Longdrink
 					["lvl"] = 10,
@@ -113,6 +131,23 @@ _.Zones =
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
+				}),
+				q(2745, { -- Infiltrating the Castle
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["sourceQuest"] = 350, -- Look to an Old Friend
+					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
+				}),
+				q(2746, { -- Items of Some Consequence
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7766, -- Tyrion
+					["sourceQuest"] = 2745, -- Infiltrating the Castle
+					["cost"] = {
+						{ "i", 4306, 3 }, -- Silk Cloth
+						{ "i", 8683, 2 }, -- Clara's Fresh Apple
+					},
 				}),
 				q(1301, {	-- James Hyal
 					["qg"] = 5081,	-- Connor Rivers
@@ -192,6 +227,15 @@ _.Zones =
 					["qg"] = 352,	-- Dungar Longdrink
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
 				}),
+				q(393, { -- Shadow of the Past
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1646, -- Baros Alexston
+					["sourceQuest"] = 392, -- The Curious Visitor
+					["cost"] = {
+						{ "i", 8687, 1}, -- Sealed Description of Thredd's Visitor
+					},
+				}),
 				q(2206, {	-- Snatch and Grab
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -227,12 +271,27 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 461, -- Demisette Cloyce
 				}),
+				q(434, { -- The Attack!
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7766, -- Tyrion
+					["sourceQuest"] = 2746, -- Items of Some Consequence
+				}),
 				q(1689, { -- The Binding
 					["lvl"] = 10,
 					["races"] = { 1, 7 }, -- Human and Gnome only
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 6122, -- Gakin the Darkbinder
 					["sourceQuest"] = 1688, -- Surena Caledon
+				}),
+				q(392, { -- The Curious Visitor
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1719, -- Warden Thelwater
+					["sourceQuest"] = 391, -- The Stockage Riots
+					["cost"] = {
+						{ "i", 8687, 1}, -- Sealed Description of Thredd's Visitor
+					},
 				}),
 				q(3765, {  -- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
@@ -249,6 +308,12 @@ _.Zones =
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+				}),
+				q(394, { -- The Head of the Beast
+					["lvl"] = 16,
+					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 434, -- The Attack!
+					["qg"] = 482, -- Elling Trias <Master of Cheese>
 				}),
 				q(6722, {	-- The Hunter's Path
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
