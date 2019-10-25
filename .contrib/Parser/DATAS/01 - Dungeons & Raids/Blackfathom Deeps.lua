@@ -9,8 +9,7 @@ _.Instances = {
 		["lvl"] = 19,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 6565,	-- Allegiance to the Old Gods
+				q(6565, {	-- Allegiance to the Old Gods
 					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
@@ -21,9 +20,8 @@ _.Instances = {
 						i(17695),	-- Chestnut Mantle
 						i(17694),	-- Band of the Fist
 					},
-				},
-				{
-					["questID"] = 6921,	-- Amongst the Ruins
+				}),
+				q(6921, {	-- Amongst the Ruins
 					["altQuests"] = {
 						908,	-- Amongst the Ruins
 					},
@@ -32,9 +30,8 @@ _.Instances = {
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
-				},
-				{
-					["questID"] = 6922,	-- Baron Aquanis
+				}),
+				q(6922, {	-- Baron Aquanis
 					["altQuests"] = {
 						909,	-- Baron Aquanis [Original?]
 					},
@@ -45,7 +42,7 @@ _.Instances = {
 						i(16886),	-- Outlaw Sabre
 						i(16887),	-- Witch's Finger
 					},
-				},
+				}),
 				{
 					["allianceQuestID"] = 1200,	-- Blackfathom Villainy
 					["hordeQuestID"] = 6561,	-- Blackfathom Villainy
@@ -57,8 +54,7 @@ _.Instances = {
 						i(7001),	-- Gravestone Scepter
 					},
 				},
-				{
-					["questID"] = 1198,	-- In Search of Thaelrid
+				q(1198, {	-- In Search of Thaelrid
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
 					["coord"] = { 28.7, 52.1, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
@@ -66,9 +62,8 @@ _.Instances = {
 					-- Trying to accept the followup quest as Horde gives you "That quest is not available for your race.".
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
-				},
-				{
-					["questID"] = 971,	-- Knowledge in the Deeps
+				}),
+				q(971, {	-- Knowledge in the Deeps
 					["qg"] = 2786,	-- Gerrig Bonegrip
 					["sourceQuest"] = 968, -- The Powers Below
 					["coord"] = { 50.8, 5.6, IRONFORGE },
@@ -78,9 +73,8 @@ _.Instances = {
 					["groups"] = {
 						i(6743),	-- Sustaining Ring
 					},
-				},
-				{
-					["questID"] = 1275,	-- Researching the Corruption
+				}),
+				q(1275, {	-- Researching the Corruption
 					["qg"] = 8997,	-- Gershala Nightwhisper
 					["coord"] = { 38.3, 43.0, DARKSHORE },
 					["maps"] = { DARKSHORE },
@@ -90,18 +84,16 @@ _.Instances = {
 						i(7003),	-- Beetle Clasps
 						i(7004),	-- Prelacy Cape
 					},
-				},
-				{
-					["questID"] = 6563,	-- The Essence of Aku'Mai
+				}),
+				q(6563, {	-- The Essence of Aku'Mai
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
-				},
-				{
-					["questID"] = 968, -- The Powers Below
+				}),
+				q(968, { -- The Powers Below
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -111,18 +103,16 @@ _.Instances = {
 						2339, -- Twilight Thug
 						2338, -- Twilight Disciple
 					},
-				},
-				{
-					["questID"] = 6562,	-- Trouble in the Deeps
+				}),
+				q(6562, {	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
-				},
-				{
-					["questID"] = 1199,	-- Twilight Falls
+				}),
+				q(1199, {	-- Twilight Falls
 					["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
 					["coord"] = { 38.3, 43.0, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
@@ -132,7 +122,7 @@ _.Instances = {
 						i(7000),	-- Heartwood Girdle
 						i(6998),	-- Nimbus Boots
 					},
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(1454, {	-- Axe of the Enforcer

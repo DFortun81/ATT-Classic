@@ -9,8 +9,7 @@ _.Instances = {
 		["lvl"] = 17,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 1102,	-- A Vengeful Fate
+				q(1102, {	-- A Vengeful Fate
 					["qg"] = 4451,	-- Auld Stonespire
 					["coord"] = { 37.1, 29.0, MULGORE },
 					["maps"] = { THUNDER_BLUFF },
@@ -21,17 +20,15 @@ _.Instances = {
 						i(4197),	-- Berylline Pads
 						i(6742),	-- Stonefist Girdle
 					},
-				},
-				{
-					["questID"] = 6522,	-- An Unholy Alliance
+				}),
+				q(6522, {	-- An Unholy Alliance
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["qg"] = 2425,	-- Varimathras
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
-				},
-				{
-					["questID"] = 6521,	-- An Unholy Alliance
+				}),
+				q(6521, {	-- An Unholy Alliance
 					["sourceQuest"] = 6522,	-- An Unholy Alliance
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["maps"] = { UNDERCITY },
@@ -49,9 +46,8 @@ _.Instances = {
 						i(17042),	-- Nail Spitter
 						i(17043),	-- Zealot's Robe
 					},
-				},
-				{
-					["questID"] = 1221,	-- Blueleaf Tubers
+				}),
+				q(1221, {	-- Blueleaf Tubers
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.4, 37.6, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
@@ -65,17 +61,15 @@ _.Instances = {
 							i(6756),	-- Jewelry Box
 						}),
 					},
-				},
-				{
-					["questID"] = 1109,	-- Going, Going, Guano!
+				}),
+				q(1109, {	-- Going, Going, Guano!
 					["coord"] = { 49.0, 69.8, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-				},
-				{
-					["questID"] = 1142,	-- Mortality Wanes
+				}),
+				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
 					["coord"] = { 69.4, 67.6, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
@@ -84,9 +78,8 @@ _.Instances = {
 						i(6751),	-- Mourning Shawl
 						i(6752),	-- Lancer Boots
 					},
-				},
-				{
-					["questID"] = 1101,	-- The Crone of the Kraul
+				}),
+				q(1101, {	-- The Crone of the Kraul
 					["sourceQuest"] = 1100,	-- Lonebrow's Journal
 					["qg"] = 4048,	-- Falfindel Waywarder
 					["coord"] = { 89.6, 46.6, FERALAS },
@@ -99,8 +92,8 @@ _.Instances = {
 						i(6742),	-- Stonefist Girdle
 						i(3041),	-- "Mage-Eye" Blunderbuss
 					},
-				},
-				q(1144,  {	-- Willix the Importer
+				}),
+				q(1144, {	-- Willix the Importer
 					["qg"] = 4508,	-- Willix the Importer
 					["lvl"] = 22,
 					["groups"] = {
@@ -110,7 +103,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0,   {	-- Zone Drop
+			n(0, {	-- Zone Drop
 				{
 					["itemID"] = 5876,	-- Blueleaf Tuber
 					["description"] = "Acquired by using the Snufflenose Command Stick after releasing a gopher using the Crate With Holes.",

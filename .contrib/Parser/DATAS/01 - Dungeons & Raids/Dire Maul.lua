@@ -7,8 +7,7 @@ _.Instances = {
 		["lvl"] = 44,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 1193,	-- A Broken Trap
+				q(1193, {	-- A Broken Trap
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["repeatable"] = true,
 					["cost"] = {
@@ -19,9 +18,8 @@ _.Instances = {
 						14323,	-- Guard Slip'kik
 					},
 					["lvl"] = 56,
-				},
-				{
-					["questID"] = 8948,	-- Anthion's Old Friend
+				}),
+				q(8948, {	-- Anthion's Old Friend
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
@@ -31,9 +29,8 @@ _.Instances = {
 					},
 					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
-				},
-				{
-					["questID"] = 8947,	-- Anthion's Strange Request
+				}),
+				q(8947, {	-- Anthion's Strange Request
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
@@ -46,9 +43,8 @@ _.Instances = {
 					},
 					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
-				},
-				{
-					["questID"] = 7463,	-- Arcane Refreshment
+				}),
+				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["classes"] = { 8 },	-- Mage
 					["lvl"] = 60,
@@ -58,9 +54,8 @@ _.Instances = {
 					["groups"] = {
 						recipe(10140),	-- Conjure Water (Rank 7)
 					},
-				},
-				{
-					["questID"] = 7492,	-- Camp Mojache
+				}),
+				q(7492, {	-- Camp Mojache
 					["qgs"] = {
 						10879,	-- Harbinger Balthazad
 						10880,	-- Warcaller Gorlach
@@ -70,15 +65,13 @@ _.Instances = {
 					["maps"] = { FERALAS, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 7492,	-- Camp Mojache
+				}),
+				q(7492, {	-- Camp Mojache
 					["qg"] = 10879,	-- Harbinger Balthazad
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 7499,	-- Codex of Defense
+				}),
+				q(7499, {	-- Codex of Defense
 					["classes"] = { 1 },	-- Warrior
 					["qg"] = 14383,	-- Lorekeeper Kildrath
 					["cost"] = {
@@ -88,27 +81,24 @@ _.Instances = {
 					["groups"] = {
 						i(18466),	-- Royal Seal of Eldre'Thalas
 					},
-				},
-				{
-					["questID"] = 7481,	-- Elven Legends
+				}),
+				q(7481, {	-- Elven Legends
 					["qg"] = 14373,	-- Sage Korolusk
 					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
 					["coord"] = { 75.3, 43.8, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 7482,	-- Elven Legends
+				}),
+				q(7482, {	-- Elven Legends
 					["qg"] = 14374,	-- Scholar Runethorn
 					["description"] = "The objective is next to Lorekeeper Lydros in the Dire Maul West Library.",
 					["coord"] = { 31.2, 43.9, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 8949,	-- Falrin's Vendetta
+				}),
+				q(8949, {	-- Falrin's Vendetta
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["u"] = 3,	-- Not available yet! Phase 2?
@@ -117,9 +107,8 @@ _.Instances = {
 						i(22150),	-- Beads of Ogre Might
 						i(22149),	-- Beads of Ogre Mojo
 					},
-				},
-				{
-					["questID"] = 7494,	-- Feathermoon Stronghold
+				}),
+				q(7494, {	-- Feathermoon Stronghold
 					["qgs"] = {
 						2198,	-- Crier Goodman
 						10877,	-- Courier Hammerfall
@@ -129,18 +118,16 @@ _.Instances = {
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 5525,	-- Free Knot!
+				}),
+				q(5525, {	-- Free Knot!
 					["qg"] = 14338,	-- Knot Thimblejack
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = {
 						{ "i", 18250, 1 },	-- Gordok Shackle Key
 					},
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 7429,	-- Free Knot!
+				}),
+				q(7429, {	-- Free Knot!
 					["sourceQuest"] = 5525,	-- Free Knot!
 					["qg"] = 14338,	-- Knot Thimblejack
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
@@ -149,9 +136,8 @@ _.Instances = {
 					},
 					["repeatable"] = true,
 					["lvl"] = 54,
-				},
-				{
-					["questID"] = 7505,	-- Frost Shock and You
+				}),
+				q(7505, {	-- Frost Shock and You
 					["qg"] = 14381,	-- Lorekeeper Javon
 					["classes"] = { 7 },	-- Shaman
 					["cost"] = {
@@ -161,9 +147,8 @@ _.Instances = {
 					["groups"] = {
 						i(18471),	-- Royal Seal of Eldre'Thalas
 					},
-				},
-				{
-					["questID"] = 7498,	-- Garona: A Study on Stealth and Treachery
+				}),
+				q(7498, {	-- Garona: A Study on Stealth and Treachery
 					["qg"] = 14383,	-- Lorekeeper Kildrath
 					["classes"] = { 4 },	-- Rogue
 					["cost"] = {
@@ -173,9 +158,8 @@ _.Instances = {
 					["groups"] = {
 						i(18465),	-- Royal Seal of Eldre'Thalas
 					},
-				},
-				{
-					["questID"] = 7502,	-- Harnessing Shadows
+				}),
+				q(7502, {	-- Harnessing Shadows
 					["qg"] = 14382,	-- Lorekeeper Mykos
 					["classes"] = { 9 },	-- Warlock
 					["cost"] = {
@@ -185,9 +169,8 @@ _.Instances = {
 					["groups"] = {
 						i(18467),	-- Royal Seal of Eldre'Thalas
 					},
-				},
-				{
-					["questID"] = 7502,	-- Holy Bologna: What the Light Won't Tell You
+				}),
+				q(7504, {	-- Holy Bologna: What the Light Won't Tell You
 					["qg"] = 14381,	-- Lorekeeper Javon
 					["classes"] = { 5 },	-- Priest
 					["cost"] = {
@@ -197,9 +180,8 @@ _.Instances = {
 					["groups"] = {
 						i(18469),	-- Royal Seal of Eldre'Thalas
 					},
-				},
-				{
-					["questID"] = 7489,	-- Lethtendris's Web
+				}),
+				q(7489, {	-- Lethtendris's Web
 					["sourceQuest"] = 7492,	-- Camp Mojache
 					["qg"] = 7776,	-- Talo Thornhoof
 					["coord"] = { 76.2, 43.8, FERALAS },
@@ -212,9 +194,8 @@ _.Instances = {
 					["groups"] = {
 						i(18491),	-- Lorespinner
 					},
-				},
-				{
-					["questID"] = 7488,	-- Lethtendris's Web
+				}),
+				q(7488, {	-- Lethtendris's Web
 					["sourceQuest"] = 7494,	-- Feathermoon Stronghold
 					["qg"] = 7877,	-- Latronicus Moonspear
 					["coord"] = { 30.4, 46.2, FERALAS },
@@ -227,9 +208,8 @@ _.Instances = {
 					["groups"] = {
 						i(18491),	-- Lorespinner
 					},
-				},
-				{
-					["questID"] = 7484,	-- Libram of Focus
+				}),
+				q(7484, {	-- Libram of Focus
 					["altQuests"] = {
 						7479,	-- Libram of Focus
 					},
@@ -249,7 +229,7 @@ _.Instances = {
 					["groups"] = {
 						i(18330),	-- Arcanum of Focus
 					},
-				},
+				}),
 				{
 					["questID"] = 7485,	-- Libram of Protection
 					["altQuests"] = {

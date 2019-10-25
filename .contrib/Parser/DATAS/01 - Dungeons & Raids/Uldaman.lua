@@ -8,8 +8,7 @@ _.Instances = {
 		["lvl"] = 35,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 2200,	-- Back to Uldaman
+				q(2200, { -- Back to Uldaman
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.4, 3.6, IRONFORGE },
@@ -19,9 +18,8 @@ _.Instances = {
 					["groups"] = {
 						i(7667),	-- Talvash's Phial of Scrying
 					},
-				},
-				{
-					["questID"] = 2340,	-- Deliver the Gems
+				}),			
+				q(2340, { -- Deliver the Gems
 					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["cost"] = { 
@@ -31,9 +29,8 @@ _.Instances = {
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2201,	-- Find the Gems
+				}),
+				q(2201, { -- Find the Gems
 					["sourceQuest"] = 2200,	-- Back to Uldaman
 					["qg"] = 6912,	-- Remains of a Paladin
 					["cost"] = {
@@ -43,9 +40,8 @@ _.Instances = {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2339,	-- Find the Gems and Power Source
+				}),
+				q(2339, {	-- Find the Gems and Power Source
 					["sourceQuest"] = 2338,	-- Translating the Journal
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["cost"] = {
@@ -58,9 +54,8 @@ _.Instances = {
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2199,	-- Lore for a Price
+				}),
+				q(2199, {	-- Lore for a Price
 					["sourceQuest"] = 2198,	-- The Shattered Necklace
 					["qg"] = 6826,	-- Talvash del Kissel
 					["cost"] = {
@@ -70,9 +65,8 @@ _.Instances = {
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2283,	-- Necklace Recovery
+				}),
+				q(2283, {	-- Necklace Recovery
 					["providers"] = {
 						{ "i", 7666 },	-- Shattered Necklace
 						{ "n", 6986 },	-- Dran Droffers <Droffers and Son Salvage>
@@ -81,18 +75,16 @@ _.Instances = {
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2284,	-- Necklace Recovery, Take 2
+				}),
+				q(2284, {	-- Necklace Recovery, Take 2
 					["sourceQuest"] = 2283,	-- Necklace Recovery
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2341,	-- Necklace Recovery, Take 3
+				}),
+				q(2341, { -- Necklace Recovery, Take 3
 					["sourceQuest"] = 2340,	-- Deliver the Gems
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
@@ -102,9 +94,8 @@ _.Instances = {
 					["groups"] = {
 						i(7888),	-- Jarkal's Enhancing Necklace
 					},
-				},
-				{
-					["questID"] = 3375,	-- Replacement Phial
+				}),
+				q(3375, {	-- Replacement Phial
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
 					["cost"] = {
@@ -120,9 +111,8 @@ _.Instances = {
 					["groups"] = {
 						i(7667),	-- Talvash's Phial of Scrying
 					},
-				},
-				{
-					["questID"] = 2204,	-- Restoring the Necklace
+				}),
+				q(2204, {	-- Restoring the Necklace
 					["sourceQuest"] = 2201,	-- Find the Gems
 					["qg"] = 6912,	-- Remains of a Paladin
 					["cost"] = {
@@ -130,9 +120,8 @@ _.Instances = {
 					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2361,	-- Restoring the Necklace
+				}),
+				q(2361, {	-- Restoring the Necklace
 					["sourceQuest"] = 2204,	-- Restoring the Necklace
 					["qg"] = 6826,	-- Talvash del Kissel
 					["races"] = ALLIANCE_ONLY,
@@ -145,9 +134,8 @@ _.Instances = {
 							["description"] = "Use this item in Uldaman after gathering each of the required materials for Find the Gems & Restoring the Necklace.\n\nNOTE: You can safely delete this item if it is marked Collected after completing Restoring the Necklace.",
 						},
 					},
-				},
-				{
-					["questID"] = 2240,	-- The Hidden Chamber
+				}),
+				q(2240, {	-- The Hidden Chamber
 					["sourceQuest"] = 2398,	-- The Lost Dwarves
 					["qg"] = 6906,	-- Baelog
 					["races"] = ALLIANCE_ONLY,
@@ -156,17 +144,15 @@ _.Instances = {
 						i(9626),	-- Dwarven Charge
 						i(9627),	-- Explorers' League Lodestar
 					},
-				},
-				{
-					["questID"] = 2398,	-- The Lost Dwarves
+				}),
+				q(2398, { -- The Lost Dwarves
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
-				},
-				{
-					["questID"] = 1139,	-- The Lost Tablets of Will
+				}),
+				q(1139, { -- The Lost Tablets of Will
 					["sourceQuest"] = 762,	-- An Ambassador of Evil
 					["qg"] = 2918,	-- Advisor Belgrum
 					["cost"] = {
@@ -179,13 +165,12 @@ _.Instances = {
 					["groups"] = {
 						i(6723),	-- Medal of Courage
 					},
-				},
-				{
-					["questID"] = 2278,	-- The Platinum Discs
+				}),
+				q(2278, { -- The Platinum Discs
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
 					["lvl"] = 40,
-				},
+				}),
 				{
 					["allianceQuestID"] = 2279,	-- The Platinum Discs [Alliance]
 					["hordeQuestID"] = 2280,	-- The Platinum Discs [Horde]
@@ -194,8 +179,7 @@ _.Instances = {
 					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up this quest from The Discs of Norgannon again.",
 					["lvl"] = 40,
 				},
-				{
-					["questID"] = 2439,	-- The Platinum Discs [Alliance - Part 3]
+				q(2439, { -- The Platinum Discs [Alliance - Part 3]
 					["sourceQuest"] = 2279,	-- The Platinum Discs [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["coord"] = { 69.9, 18.6, IRONFORGE },
@@ -207,9 +191,8 @@ _.Instances = {
 						i(3928),	-- Superior Healing Potion
 						i(6149),	-- Greater Mana Potion
 					},
-				},
-				{
-					["questID"] = 2440,	-- The Platinum Discs [Horde - Part 3]
+				}),
+				q(2440, {	-- The Platinum Discs [Horde - Part 3]
 					["sourceQuest"] = 2280,	-- The Platinum Discs [Horde]
 					["qg"] = 3978,	-- Sage Truthseeker
 					["coord"] = { 36.8, 26.4, MULGORE },
@@ -221,31 +204,28 @@ _.Instances = {
 						i(3928),	-- Superior Healing Potion
 						i(6149),	-- Greater Mana Potion
 					},
-				},
-				{
-					["questID"] = 2198,	-- The Shattered Necklace
+				}),
+				q(2198, {	-- The Shattered Necklace
 					["provider"] = { "i", 7666 },	-- Shattered Necklace
 					["coord"] = { 36.4, 3.6, BADLANDS },
 					["maps"] = { BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2318,	-- Translating the Journal
+				}),
+				q(2318, {	-- Translating the Journal
 					["sourceQuest"] = 2284,	-- Necklace Recovery, Take 2
 					["qg"] = 6912,	-- Remains of a Paladin
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
-				{
-					["questID"] = 2338,	-- Translating the Journal
+				}),
+				q(2338, { -- Translating the Journal
 					["sourceQuest"] = 2318,	-- Translating the Journal
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["coord"] = { 2.6, 46, BADLANDS },
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				{

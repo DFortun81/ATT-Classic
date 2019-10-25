@@ -99,26 +99,23 @@ _.Instances = {
 						i(20517),	-- Razorsteel Shoulders
 					},
 				}),
-				{
-					["questID"] = 4143,	-- Haze of Evil
+				q(4143, {	-- Haze of Evil
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["qg"] = 7775,	-- Gregan Brewspewer
 					["coord"] = { 45.1, 25.6, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
-				},
-				{
-					["questID"] = 3512,	-- In Eranikus' Own Words
+				}),
+				q(3512, { -- In Eranikus' Own Words
 					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["qg"] = 5353,	-- Itharius
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 48,
-				},
-				{
-					["questID"] = 3446,	-- Into the Depths
+				}),
+				q(3446, { -- Into the Depths
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["qg"] = 7771,	-- Marvon Rivetseeker
 					["coord"] = { 52.6, 45.8, TANARIS },
@@ -130,9 +127,8 @@ _.Instances = {
 							["questID"] = 3446,	-- Into the Depths
 						},
 					},
-				},
-				{
-					["questID"] = 1475,	-- Into The Temple of Atal'Hakkar
+				}),
+				q(1475, { -- Into The Temple of Atal'Hakkar
 					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
@@ -142,9 +138,8 @@ _.Instances = {
 					["groups"] = {
 						i(1490),	-- Guardian Talisman
 					},
-				},
-				{
-					["questID"] = 1446,	-- Jammal'an the Prophet
+				}),
+				q(1446, {	-- Jammal'an the Prophet
 					["qg"] = 5598,	-- Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 					["maps"] = { THE_HINTERLANDS },
@@ -153,9 +148,8 @@ _.Instances = {
 						i(11124),	-- Helm of Exile
 						i(11123),	-- Rainstrider Leggings
 					},
-				},
-				{
-					["questID"] = 1424,	-- Pool of Tears
+				}),
+				q(1424, {	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
@@ -167,18 +161,16 @@ _.Instances = {
 							["questID"] = 1424,	-- Pool of Tears
 						},
 					},
-				},
-				{
-					["questID"] = 1444,	-- Return to Fel'Zerul
+				}),
+				q(1444, {	-- Return to Fel'Zerul
 					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 					["qg"] = 5598,	-- Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
-				},
-				{
-					["questID"] = 3447,	-- Secret of the Circle
+				}),
+				q(3447, {	-- Secret of the Circle
 					["sourceQuest"] = 3444,	-- The Stone Circle
 					["qg"] = 7771,	-- Marvon Rivetseeker
 					["coord"] = { 52.6, 45.8, TANARIS },
@@ -191,9 +183,8 @@ _.Instances = {
 							i(10780),	-- Mark of Hakkar
 						}),
 					},
-				},
-				{
-					["questID"] = 4787,	-- The Ancient Egg
+				}),
+				q(4787, {	-- The Ancient Egg
 					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
 					["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
@@ -205,9 +196,8 @@ _.Instances = {
 							["questID"] = 4787,	-- The Ancient Egg
 						},
 					},
-				},
-				{
-					["questID"] = 1429,	-- The Atal'ai Exile
+				}),
+				q(1429, {	-- The Atal'ai Exile
 					["sourceQuest"] = 1424,	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
@@ -221,18 +211,16 @@ _.Instances = {
 							["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 						},
 					},
-				},
-				{
-					["questID"] = 3373,	-- The Essence of Eranikus
+				}),
+				q(3373, {	-- The Essence of Eranikus
 					["provider"] = { "i", 10454 },	-- Essence of Eranikus
 					["description"] = "Interact with the Essence Font located in the back corner of the room after you defeat Eranikus to turn in this quest and loot the Essence of Eranikus.",
 					["lvl"] = 48,
 					["groups"] = {
 						i(10455),	-- Chained Essence of Eranikus
 					},
-				},
-				{
-					["questID"] = 3374,	-- The Essence of Eranikus [Part 2]
+				}),
+				q(3374, {	-- The Essence of Eranikus [Part 2]
 					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["qg"] = 5353,	-- Itharius
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
@@ -243,9 +231,8 @@ _.Instances = {
 						{ "i", 10455, 1 },	-- Chained Essence of Eranikus
 					},
 					["lvl"] = 48,
-				},
-				{
-					["questID"] = 3528,	-- The God Hakkar
+				}),
+				q(3528, {	-- The God Hakkar
 					["sourceQuest"] = 4787,	-- The Ancient Egg
 					["qg"] = 8579,	-- Yeh'kinya
 					["coord"] = { 66.8, 22.4, TANARIS },
@@ -267,9 +254,8 @@ _.Instances = {
 						i(10750),	-- Lifeforce Dirk
 						i(10751),	-- Gemburst Circlet
 					},
-				},
-				{
-					["questID"] = 3444,	-- The Stone Circle
+				}),
+				q(3444, {	-- The Stone Circle
 					["sourceQuests"] = {
 						3445,	-- The Sunken Temple
 						3380,	-- The Sunken Temple
@@ -287,25 +273,22 @@ _.Instances = {
 							["maps"] = { THE_BARRENS },
 						},
 					},
-				},
-				{
-					["questID"] = 3445,	-- The Sunken Temple
+				}),
+				q(3445, {	-- The Sunken Temple
 					["qg"] = 7900,	-- Angelas Moonbreeze
 					["coord"] = { 31.8, 45.6, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 46,
-				},
-				{
-					["questID"] = 3380,	-- The Sunken Temple
+				}),
+				q(3380, {	-- The Sunken Temple
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 					["coord"] = { 74.4, 43.4, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 46,
-				},
-				{
-					["questID"] = 1445,	-- The Temple of Atal'Hakkar
+				}),
+				q(1445, {	-- The Temple of Atal'Hakkar
 					["sourceQuest"] = 1424,	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
@@ -315,16 +298,15 @@ _.Instances = {
 					["groups"] = {
 						i(1490),	-- Guardian Talisman
 					},
-				},
-				{
-					["questID"] = 4146,	-- Zapper Fuel
+				}),
+				q(4146, {	-- Zapper Fuel
 					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["qg"] = 8496,	-- Liv Rizzlefix <Workshop Assistant>
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				{

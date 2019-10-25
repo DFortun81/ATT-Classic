@@ -9,8 +9,7 @@ _.Instances = {
 		["lvl"] = 39,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 2768,	-- Divino-matic Rod
+				q(2768, { -- Divino-matic Rod
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.5, 28.5, TANARIS },
 					["maps"] = { TANARIS },
@@ -19,9 +18,8 @@ _.Instances = {
 						i(9534),	-- Engineer's Guild Headpiece
 						i(9533),	-- Masons Fraternity Ring
 					},
-				},
-				{
-					["questID"] = 2770,	-- Gahz'rilla
+				}),
+				q(2770, { --Gahz'rilla
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
 					["maps"] = { THOUSAND_NEEDLES },
@@ -32,32 +30,28 @@ _.Instances = {
 							["description"] = "Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (which you do a lot in Classic!)",
 						},
 					},
-				},
-				{
-					["questID"] = 2991,	-- Nekrum's Medallion
+				}),
+				q(2991, { -- Nekrum's Medallion
 					["provider"] = { "n", 8022 },	-- Thadius Grimshade
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
 					["maps"] = { BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 2865,	-- Scarab Shells
+				}),
+				q(2865, { -- Scarab Shells
 					["sourceQuest"] = 2864,	-- Tran'rek
 					["provider"] = { "n", 7876 },	-- Tran'rek
 					["coord"] = { 51.6, 26.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 3520,	-- Screecher Spirits
+				}),
+				q(3520, { -- Screecher Spirits
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["maps"] = { FERALAS, TANARIS },
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 2861,	-- Tabetha's Task
+				}),
+				q(2861, { -- Tabetha's Task
 					["qgs"] = {
 						4568, -- Anastasia Hartwell
 						5144, -- Bink
@@ -65,26 +59,23 @@ _.Instances = {
 						5885, -- Deino
 					},
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 3527,	-- The Prophecy of Mosh'aru
+				}),
+				q(3527, { -- The Prophecy of Mosh'aru
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 2936,	-- The Spider God
+				}),
+				q(2936, { --The Spider God
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
 					["maps"] = { DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 2846,	-- Tiara of the Deep
+				}),
+				q(2846, { -- Tiara of the Deep
 					["provider"] = { "n", 6546 },	-- Tabetha
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH },
@@ -93,22 +84,20 @@ _.Instances = {
 						i(9527),	-- Spellshifter Rod
 						i(9531),	-- Gemshale Pauldrons
 					},
-				},
-				{
-					["questID"] = 2864,	-- Tran'rek
+				}),
+				q(2864, { -- Tran'rek
 					["provider"] = { "n", 773 },	-- Krazek
 					["coord"] = { 51.6, 26.8, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
-				},
-				{
-					["questID"] = 3042,	-- Troll Temper
+				}),
+				q(3042, { -- Troll Temper
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer <The Mithril Order>
 					["coord"] = { 51.4, 28.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
-				},
+				}),
 			}),
 			n(-77, {	-- Special
 				{

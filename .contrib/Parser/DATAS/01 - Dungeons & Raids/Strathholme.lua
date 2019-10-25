@@ -7,8 +7,7 @@ _.Instances = {
 		["lvl"] = 48,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 5263,	-- Above and Beyond
+				q(5263, {	-- Above and Beyond
 					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
@@ -17,9 +16,8 @@ _.Instances = {
 						{ "i", 13251, 1 },	-- Head of Baron Rivendare
 					},
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5125,	-- Aurius' Reckoning
+				}),
+				q(5125, {	-- Aurius' Reckoning
 					["sourceQuest"] = 5122,	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
 					["cost"] = {
@@ -29,18 +27,16 @@ _.Instances = {
 						i(17044),	-- Will of the Martyr
 						i(17045),	-- Blood of the Martyr
 					},
-				},
-				{
-					["questID"] = 8945,	-- Dead Man's Plea
+				}),
+				q(8945, {	-- Dead Man's Plea
 					["sourceQuest"] = 8929,	-- In Search of Anthion
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["u"] = 3,	-- Not yet available
 					["lvl"] = 58,
-				},
-				{
-					["questID"] = 5861,	-- Find Myranda
+				}),
+				q(5861, {	-- Find Myranda
 					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
@@ -49,9 +45,8 @@ _.Instances = {
 					["groups"] = {
 						i(14872),	-- Tirion's Gift
 					},
-				},
-				{
-					["questID"] = 5243,	-- Houses of the Holy
+				}),
+				q(5243, {	-- Houses of the Holy
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
 					["description"] = "When mousing over the crates, look for 'Requires: Disarm Trap'. If you see this, it's a trap and shouldn't be touched.\n\nIf you are a dwarf, use find treasure and on the mini map it will show a dot for the holy water in the crate. It will only show crates with items in it on the mini map and not bad crates.",
 					["coord"] = { 81.6, 57.8, EASTERN_PLAGUELANDS },
@@ -66,9 +61,8 @@ _.Instances = {
 						i(6149),	-- Greater Mana Potion
 						i(3928),	-- Superior Healing Potion
 					},
-				},
-				{
-					["questID"] = 5944,	-- In Dreams
+				}),
+				q(5944, { -- In Dreams
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
@@ -81,9 +75,8 @@ _.Instances = {
 						i(15413),	-- Ornate Adamantium Breastplate
 						i(16058),	-- Fordring's Seal
 					},
-				},
-				{
-					["questID"] = 8929,	-- In Search of Anthion
+				}),
+				q(8929, {	-- In Search of Anthion
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.53, 52.64, IRONFORGE },
 					["maps"] = { IRONFORGE },
@@ -93,9 +86,8 @@ _.Instances = {
 					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
-				},
-				{
-					["questID"] = 8930,	-- In Search of Anthion
+				}),
+				q(8930, { -- In Search of Anthion
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
@@ -105,17 +97,15 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
-				},
-				{
-					["questID"] = 5264,	-- Lord Maxwell Tyrosus
+				}),
+				q(5264, {	-- Lord Maxwell Tyrosus
 					["sourceQuest"] = 5263,	-- Above and Beyond
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5781,	-- Of Forgotten Memories
+				}),
+				q(5781, {	-- Of Forgotten Memories
 					["sourceQuest"] = 5742,	-- Redemption
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
@@ -134,9 +124,8 @@ _.Instances = {
 							},
 						},
 					},
-				},
-				{
-					["questID"] = 5845,	-- Of Lost Honor
+				}),
+				q(5845, {	-- Of Lost Honor
 					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
@@ -149,17 +138,15 @@ _.Instances = {
 							["coord"] = { 71.3, 33.9, EASTERN_PLAGUELANDS },
 						},
 					},
-				},
-				{
-					["questID"] = 5846,	-- Of Love and Family (1/2)
+				}),
+				q(5846, {	-- Of Love and Family (1/2)
 					["sourceQuest"] = 5845,	-- Of Lost Honor
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
-				},
-				{
-					["questID"] = 5848,	-- Of Love and Family (2/2)
+				}),
+				q(5848, {	-- Of Love and Family (2/2)
 					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
 					["qg"] = 11936,	-- Artist Renfray
 					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
@@ -168,9 +155,8 @@ _.Instances = {
 						{ "i", 14679, 1 },	-- Of Love and Family
 					},
 					["lvl"] = 52,
-				},
-				{
-					["questID"] = 8946,	-- Proof of Life
+				}),
+				q(8946, {	-- Proof of Life
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["qg"] = 16031,	-- Ysida Harmon
 					["u"] = 3,	-- Not yet available
@@ -181,9 +167,8 @@ _.Instances = {
 							["questID"] = 8946,	-- Proof of Life
 						},
 					},
-				},
-				{
-					["questID"] = 6163,	-- Ramstein
+				}),
+				q(6163, {	-- Ramstein
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -199,9 +184,8 @@ _.Instances = {
 						i(18022),	-- Royal Seal of Alexis
 						i(17001),	-- Elemental Circle
 					},
-				},
-				{
-					["questID"] = 5742,	-- Redemption
+				}),
+				q(5742, {	-- Redemption
 					["sourceQuests"] = {
 						5543,	-- Blood Tinged Skies
 						5544,	-- Carrion Grubbage						
@@ -211,9 +195,8 @@ _.Instances = {
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
-				},
-				{
-					["questID"] = 5862,	-- Scarlet Subterfuge
+				}),
+				q(5862, {	-- Scarlet Subterfuge
 					["sourceQuest"] = 5861,	-- Find Myranda
 					["qg"] = 11872,	-- Myranda the Hag
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
@@ -222,9 +205,8 @@ _.Instances = {
 						{ "i", 14872, 1 },	-- Tirion's Gift
 					},
 					["lvl"] = 52,
-				},
-				{
-					["questID"] = 5213,	-- The Active Agent
+				}),
+				q(5213, {	-- The Active Agent
 					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
@@ -237,9 +219,8 @@ _.Instances = {
 						i(19812),	-- Rune of the Dawn
 						i(13209),	-- Seal of the Dawn
 					},
-				},
-				{
-					["questID"] = 5251,	-- The Archivist
+				}),
+				q(5251, {	-- The Archivist
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -247,9 +228,8 @@ _.Instances = {
 						10811,	-- Archivist Galford
 					},
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5265,	-- The Argent Hold
+				}),
+				q(5265, {	-- The Argent Hold
 					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["qg"] = 11034,	-- Lord Maxwell Tyrosus <The Argent Dawn>
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
@@ -260,9 +240,8 @@ _.Instances = {
 						i(13249),	-- Argent Crusader
 						i(13243),	-- Argent Defender
 					},
-				},
-				{
-					["questID"] = 5212,	-- The Flesh Does Not Lie
+				}),
+				q(5212, {	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -270,9 +249,8 @@ _.Instances = {
 						{ "i", 13174, 20 },	-- Plagued Flesh Sample
 					},
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5214,	-- The Great Fras Siabi
+				}),
+				q(5214, {	-- The Great Fras Siabi
 					["qg"] = 11033,	-- Smokey LaRue
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -286,24 +264,21 @@ _.Instances = {
 					["groups"] = {
 						i(13171),	-- Smokey's Lighter
 					},
-				},
-				{
-					["questID"] = 5122,	-- The Medallion of Faith
+				}),
+				q(5122, {	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
 					["cost"] = {
 						{ "i", 12845, 1 },	-- Medallion of Faith
 					},
 					["repeatable"] = true,
-				},
-				{
-					["questID"] = 5281,	-- The Restless Souls (1/2)
+				}),
+				q(5281, {	-- The Restless Souls (1/2)
 					["qg"] = 11038,	-- Caretaker Alen <The Argent Dawn>
 					["coord"] = { 79.6, 63.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5282,	-- The Restless Souls (2/2)
+				}),
+				q(5282, {	-- The Restless Souls (2/2)
 					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
 					["qg"] = 11140,	-- Egan
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
@@ -321,16 +296,15 @@ _.Instances = {
 						},
 						i(13315),	-- Testament of Hope
 					},
-				},
-				{
-					["questID"] = 5262,	-- The Truth Comes Crashing Down
+				}),
+				q(5262, {	-- The Truth Comes Crashing Down
 					["sourceQuest"] = 5251,	-- The Archivist
 					["qg"] = 10813,	-- Balnazzar
 					["cost"] = {
 						{ "i", 13250, 1 },	-- Head of Balnazzar
 					},
 					["lvl"] = 55,
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(12843, {	-- Corruptor's Scourgestone

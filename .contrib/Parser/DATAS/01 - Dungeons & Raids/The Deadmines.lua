@@ -9,8 +9,7 @@ _.Instances = {
 		["lvl"] = 10,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 168,	-- Collecting Memories
+				q(168, {	-- Collecting Memories
 					["qg"] = 656,	-- Wilder Thistlenettle
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
@@ -19,9 +18,8 @@ _.Instances = {
 						i(2036),	-- Dusty Mining Gloves
 						i(2037),	-- Tunneler's Boots
 					},
-				},
-				{
-					["questID"] = 167,	-- Oh Brother. . .
+				}),
+				q(167. {	-- Oh Brother. . .
 					["qg"] = 656,	-- Wilder Thistlenettle
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
@@ -29,9 +27,8 @@ _.Instances = {
 					["groups"] = {
 						i(1893),	-- Miner's Revenge
 					},
-				},
-				{
-					["questID"] = 214,	-- Red Silk Bandanas
+				}),
+				q(214, {	-- Red Silk Bandanas
 					["sourceQuest"] = 153,	-- Red Leather Bandanas
 					["qg"] = 820,	-- Scout Riell <The People's Militia>
 					["coord"] = { 56.7, 47.4, WESTFALL },
@@ -42,9 +39,8 @@ _.Instances = {
 						i(2089),	-- Scrimshaw Dagger
 						i(2074),	-- Solid Shortblade
 					},
-				},
-				{
-					["questID"] = 166,	-- The Defias Brotherhood (7/7)
+				}),
+				q(166, {	-- The Defias Brotherhood (7/7)
 					["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 					["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
 					["coord"] = { 56.3, 47.5, WESTFALL },
@@ -55,9 +51,8 @@ _.Instances = {
 						i(2042),		-- Staff of Westfall
 						i(2041),		-- Tunic of Westfall
 					},
-				},
-				{
-					["questID"] = 2040,	-- Underground Assault
+				}),
+				q(2040, {	-- Underground Assault
 					["sourceQuest"] = 2041,	-- Speak with Shoni
 					["qg"] = 6579,	-- Shoni the Shilent
 					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
@@ -67,7 +62,7 @@ _.Instances = {
 						i(7607),		-- Sable Wand
 						i(7606),		-- Polar Gauntlets
 					},
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(10401, {	-- Blackened Defias Gloves

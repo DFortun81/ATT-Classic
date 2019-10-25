@@ -9,15 +9,13 @@ _.Instances = {
 		["lvl"] = 25,
 		["groups"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 6626,	-- A Host of Evil
+				q(6626, {	-- A Host of Evil
 					["qg"] = 12866,	-- Myriam Moonsinger
 					["coord"] = { 49,94, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
 					["lvl"] = 28,
-				},
-				{
-					["questID"] = 3341,	-- Bring the End
+				}),
+				q(3341, {	-- Bring the End
 					["qg"] = 2308,	-- Andrew Brownell
 					["coord"] = { 74, 32.8, UNDERCITY },
 					["maps"] = { UNDERCITY },
@@ -27,9 +25,8 @@ _.Instances = {
 						i(10823),	-- Vanquisher's Sword
 						i(10824),	-- Amberglow Talisman
 					},
-				},
-				{
-					["questID"] = 3636,	-- Bring the Light
+				}),
+				q(3636, {	-- Bring the Light
 					["qg"] = 1284,	-- Archbishop Benedictus
 					["coord"] = { 39.6, 27.4, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
@@ -39,9 +36,8 @@ _.Instances = {
 						i(10823),	-- Vanquisher's Sword
 						i(10824),	-- Amberglow Talisman
 					},
-				},
-				{
-					["questID"] = 3525,	-- Extinguishing the Idol
+				}),
+				q(3525, {	-- Extinguishing the Idol
 					["sourceQuest"] = 3523,	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
 					["races"] = HORDE_ONLY,
@@ -49,13 +45,12 @@ _.Instances = {
 					["groups"] = {
 						i(10710),	-- Dragonclaw Ring
 					},
-				},
-				{
-					["questID"] = 3523,	-- Scourge of the Downs
+				}),
+				q(3523, {	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
 					["races"] = HORDE_ONLY,
 					["lvl"] = 32,
-				},
+				}),
 			}),
 			n(0, {	-- Zone Drop
 				i(10573),	-- Boneslasher

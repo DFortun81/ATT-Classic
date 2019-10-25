@@ -8,8 +8,7 @@ _.Instances = {
 		["lvl"] = 25,
 		["g"] = {
 			n(-17, {	-- Quests
-				{
-					["questID"] = 1113,	-- Hearts of Zeal
+				q(1113, {	-- Hearts of Zeal
 					["sourceQuest"] = 1109,	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["cost"] = {
@@ -19,9 +18,8 @@ _.Instances = {
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-				},
-				{
-					["questID"] = 1053,	-- In the Name of the Light
+				}),
+				q(1053, {	-- In the Name of the Light
 					["qg"] = 3980,	-- Raleigh the Devout
 					["coord"] = { 51.5, 58.4, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
@@ -33,9 +31,8 @@ _.Instances = {
 						i(6829),	-- Sword of Serenity
 						i(11262),	-- Orb of Lorica
 					},
-				},
-				{
-					["questID"] = 1048,	-- Into The Scarlet Monastery
+				}),
+				q(1048, {	-- Into The Scarlet Monastery
 					["qg"] = 2425,	-- Varimathras
 					["coord"] = { 56.3, 92.2, UNDERCITY },
 					["maps"] = { UNDERCITY },
@@ -46,8 +43,7 @@ _.Instances = {
 						i(6803),	-- Prophetic Cane
 						i(10711),	-- Dragon's Blood Necklace
 					},
-				},
-				
+				}),
 			}),
 			n(0, {	-- Zone Drops
 				i(7759),	-- Archon Chestpiece
@@ -78,8 +74,7 @@ _.Instances = {
 			}),
 			n(-85, {	-- Graveyard
 				n(-17, {	-- Quests
-					{
-						["questID"] = 1051,	-- Vorrel's Revenge
+					q(1051, {	-- Vorrel's Revenge
 						["qg"] = 3981,	-- Vorrel Sengutz
 						["cost"] = {
 							{ "i", 5538, 1 },	-- Vorrel's Wedding Ring
@@ -98,7 +93,7 @@ _.Instances = {
 							i(7750),	-- Mantle of Woe
 							i(7751),	-- Vorrel's Boots
 						},
-					},
+					}),
 				}),
 				n(-16, {	-- Rares
 					n(6488, {	-- Fallen Champion
@@ -139,8 +134,7 @@ _.Instances = {
 				["lvl"] = 28,
 				["groups"] = {
 					n(-17, {	-- Quests
-						{
-							["questID"] = 1049,	-- Compendium of the Fallen
+						q(1049, {	-- Compendium of the Fallen
 							["qg"] = 3978,	-- Sage Truthseeker
 							["cost"] = {
 								{ "i", 5535, 1},	-- Compendium of the Fallen
@@ -154,9 +148,8 @@ _.Instances = {
 								i(7749),	-- Omega Orb
 								i(7747),	-- Vile Protector
 							},
-						},
-						{
-							["questID"] = 1050,	-- Mythology of the Titans
+						}),
+						q(1050, {	-- Mythology of the Titans
 							["qg"] = 3979,	-- Librarian Mae Paledust <Explorers' League>
 							["coord"] = { 75.0, 12.5, IRONFORGE },
 							["maps"] = { IRONFORGE },
@@ -165,9 +158,8 @@ _.Instances = {
 							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 28,
-						},
-						{
-							["questID"] = 1160,	-- Test of Lore
+						}),
+						q(1160, {	-- Test of Lore
 							["sourceQuest"] = 1159,	-- Test of Lore
 							["qg"] = 4488,	-- Parqual Fintallas
 							["coord"] = { 57.8, 65.4, UNDERCITY },
@@ -177,7 +169,7 @@ _.Instances = {
 							},
 							["races"] = HORDE_ONLY,
 							["lvl"] = 28,
-						},
+						}),
 					}),
 					n(3974, {	-- Houndmaster Loksey
 						i(7710),	-- Loksey's Training Stick
