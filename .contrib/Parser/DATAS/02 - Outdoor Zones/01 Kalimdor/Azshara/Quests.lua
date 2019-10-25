@@ -33,6 +33,8 @@ _.Zones =
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
 					["lvl"] = 45,
+					["qg"] = 6522, -- Andron Gant
+					["sourceQuest"] = 3542, -- Delivery to Andron Gant
 					["races"] = HORDE_ONLY,
 				}),
 				q(3602, {	-- Azsharite
@@ -54,11 +56,15 @@ _.Zones =
 				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["lvl"] = 45,
+					["qg"] = 8587, -- Jediga
+					["sourceQuest"] = 3517, -- Stealing Knowledge
 					["races"] = HORDE_ONLY,
 				}),
 				q(3561, {	-- Delivery to Archmage Xylem
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+					["qg"] = 8587, -- Jediga
+					["sourceQuest"] = 3517, -- Stealing Knowledge
 				}),
 				q(3541, {	-- Delivery to Jes'rimon
 					["lvl"] = 45,
@@ -67,6 +73,8 @@ _.Zones =
 				q(3518, {	-- Delivery to Magatha
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+					["qg"] = 8587, -- Jediga
+					["sourceQuest"] = 3517, -- Stealing Knowledge
 				}),
 				q(6821, {	-- Eye of the Emberseer
 					["lvl"] = 55,
@@ -110,6 +118,8 @@ _.Zones =
 				q(3562, {	-- Magatha's Payment to Jediga
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+					["qg"] = 4046, -- Magatha Grimtotem
+					["sourceQuest"] = 3518, -- Delivery to Magatha
 				}),
 				q(3503, {	-- Meeting with the Master
 					["lvl"] = 45,
@@ -128,6 +138,7 @@ _.Zones =
 				q(3517, {	-- Stealing Knowledge
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+					["qg"] = 8587, -- Jediga
 				}),
 				q(6805, {	-- Stormers and Rumblers
 					["lvl"] = 55,
@@ -170,6 +181,8 @@ _.Zones =
 				q(3565, {	-- Xylem's Payment to Jediga
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
+					["qg"] = 8379, -- Archmage Xylem
+					["sourceQuest"] = 3561, -- Delivery to Archmage Xylem
 				}),
 				q(9362, {	-- Warlord Krellian
 					["lvl"] = 60,
