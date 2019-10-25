@@ -140,6 +140,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 1499,	-- Magistrate Sevren
 				}),
+				q(5650, { -- Garments of Darkness
+					["lvl"] = 5,
+					["races"] = { 5 }, -- Undead
+					["classes"] = { 5 }, -- Priest
+					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
+				}),
 				q(5481, {	-- Gordo's Task
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
@@ -153,6 +159,12 @@ _.Zones =
 						i(6063),	-- Cold Steel Gauntlets
 						i(3439),	-- Zombie Skin Boots
 					},
+				}),
+				q(5651, { -- In Favor of Darkness
+					["lvl"] = 5,
+					["races"] = { 5 }, -- Undead
+					["classes"] = { 5 }, -- Priest
+					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 				}),
 				q(6395, {	-- Marla's Last Wish
 					["lvl"] = 3,

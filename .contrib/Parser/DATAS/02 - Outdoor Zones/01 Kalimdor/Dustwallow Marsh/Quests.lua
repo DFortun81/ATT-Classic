@@ -61,6 +61,11 @@ _.Zones =
 					["g"] = {
 						i(5951),	-- Moist Towelette
 					},
+					["sourceQuests"] = {
+						1258,	-- ... and Bugs
+						1222,	-- Stinky's Escape
+					},
+					["maps"] = { STORMWIND_CITY },
 					["coord"] = { 41.4, 89.3, STORMWIND_CITY },
 				}),
 				q(1272, {	-- Finding Reethe <CHANGE INTO GOSSIP>

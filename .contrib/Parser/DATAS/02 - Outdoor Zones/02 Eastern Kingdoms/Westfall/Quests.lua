@@ -154,29 +154,46 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["cost"] = {
+						{ "i", 737, 1 } -- Holy Spring Water
+					},
 				}),
 				q(49, {	-- Sweet Amber (2/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["cost"] = {
+						{ "i", 738, 1}, -- Sack of Barley
+						{ "i", 739, 1}, -- Sack of Corn
+						{ "i", 740, 1}, -- Sack of Rye
+					},
 					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
 				}),
 				q(50, {	-- Sweet Amber (3/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["cost"] = {
+						{ "i", 6037, 1 }, -- Truesilver Bar
+					},
 					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
 				}),
 				q(51, {	-- Sweet Amber (4/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["cost"] = {
+						{ "i", 742, 1 }, -- A Sycamore Branch
+					},
 					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
 				}),
 				q(53, {	-- Sweet Amber (5/5)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["cost"] = {
+						{ "i", 743, 1 }, -- Bundle of Charred Oak
+					},
 					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
 					["g"] = {
 						i(744),	-- Thunderbrew's Boot Flask

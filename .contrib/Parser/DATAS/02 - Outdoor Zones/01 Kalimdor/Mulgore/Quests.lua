@@ -211,7 +211,8 @@ _.Zones =
 				}),
 				q(758, {	-- Thunderhorn Cleansing
 					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
+					["races"] = { 6 }, -- Tauren
+					["sourceQuest"] = 5415, -- Thunderhorn Totem
 					["g"] = {
 						i(4963),	-- Thunderhorn Cloak
 					},
