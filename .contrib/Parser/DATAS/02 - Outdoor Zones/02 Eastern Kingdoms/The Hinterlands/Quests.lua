@@ -35,6 +35,7 @@ _.Zones =
 				}),
 				q(485, {	-- Find OOX-09/HL!
 					["lvl"] = 43,
+					["provider"] = { "i", 8704 }, -- OOX-09/HL Distress Beacon
 				}),
 				q(7816, {	-- Gammerita, Mon!
 					["lvl"] = 44,
@@ -91,6 +92,11 @@ _.Zones =
 				q(7846, {	-- Recover the Key!
 					["lvl"] = 46,
 					["races"] = HORDE_ONLY,
+				}),
+				q(836, { -- Rescue OOX-09/HL!
+					["lvl"] = 43,
+					["sourceQuest"] = 485, -- Find OOX-09/HL!
+					["qg"] = 7806, -- Homing Robot OOX-09/HL
 				}),
 				q(7847, {	-- Return to Primal Torntusk
 					["lvl"] = 46,
