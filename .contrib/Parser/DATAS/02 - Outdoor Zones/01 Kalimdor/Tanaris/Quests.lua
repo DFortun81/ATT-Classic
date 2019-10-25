@@ -126,6 +126,8 @@ _.Zones =
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["lvl"] = 38,
+					["qg"] = 7724, -- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, TANARIS },
 				}),
 				q(3161, {	-- Gahz'ridian
 					["lvl"] = 43,
@@ -187,6 +189,9 @@ _.Zones =
 				}),
 				q(82, {	-- Noxious Lair Investigation
 					["lvl"] = 39,
+					["qg"] = 7724, -- Senior Surveyor Fizzledowser
+					["coord"] = { 50.2, 27.5, TANARIS },
+					["sourceQuest"] = 992, -- Gadgetzan Water Survey
 				}),
 				q(4507, {	-- Pawn Captures Queen
 					["lvl"] = 50,

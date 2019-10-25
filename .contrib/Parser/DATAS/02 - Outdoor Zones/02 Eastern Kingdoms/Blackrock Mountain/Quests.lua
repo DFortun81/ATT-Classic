@@ -28,6 +28,7 @@ _.Zones =
 				}),
 				q(3906, {	-- Disharmony of Flame
 					["lvl"] = 48,
+					["races"] = HORDE_ONLY,
 				}),
 				q(8994, {	-- Final Preparations
 					["lvl"] = 58,

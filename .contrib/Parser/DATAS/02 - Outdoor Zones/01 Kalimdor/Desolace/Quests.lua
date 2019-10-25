@@ -228,6 +228,9 @@ _.Zones =
 				}),
 				q(6568, {	-- Mistress of Deception
 					["lvl"] = 55,
+					["races"] = HORDE_ONLY,
+					["qg"] = 10182, -- Rexxar <Champion of the Horde>
+					["sourceQuest"] = 6567, -- The Champion of the Horde
 				}),
 				q(1373, {	-- Ongeku
 					["lvl"] = 30,
@@ -350,6 +353,9 @@ _.Zones =
 				}),
 				q(1488, {	-- The Corrupter
 					["lvl"] = 25,
+					["races"] = HORDE_ONLY,
+					["qg"] = 5641, -- Takata Steelblade
+					["sourceQuest"] = 1484, -- The Corrupter
 					["g"] = {
 						i(6746),	-- Basalt Buckler
 						i(6747),	-- Enforcer Pauldrons

@@ -98,6 +98,11 @@ _.Zones =
 				q(1169, {	-- Identifying the Brood
 					["lvl"] = 38,
 					["qg"] = 4501,	-- Draz'Zilb
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5840, 15 }, -- Searing Tongue 
+						{ "i", 5841, 15 }, -- Searing Heart 
+					},
 					["g"] = {
 						i(9703),	-- Scorched Cape
 						i(9704),	-- Rustler Gloves

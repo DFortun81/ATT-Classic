@@ -287,9 +287,9 @@ _.Zones =
 				}),
 				q(4112, {	-- Salve via Disenchanting
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
@@ -332,9 +332,9 @@ _.Zones =
 				}),
 				q(4110, {	-- Salve via Gathering
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
@@ -347,6 +347,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
+					["sourceQuest"] = 4101, -- Cleansing Felwood
 				}),
 				q(5884, {	-- Salve via Gathering
 					["lvl"] = 48,
@@ -359,9 +360,9 @@ _.Zones =
 				}),
 				q(4108, {	-- Salve via Hunting
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
@@ -422,9 +423,9 @@ _.Zones =
 				}),
 				q(4109, {	-- Salve via Mining
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
@@ -449,9 +450,9 @@ _.Zones =
 				}),
 				q(4111, {	-- Salve via Skinning
 					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
@@ -526,6 +527,7 @@ _.Zones =
 				q(4505, {	-- Well of Corruption
 					["lvl"] = 49,
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 6605, -- A Strange One
 					["qg"] = 9996,	-- Winna Hazzard
 				}),
 				q(4521, {	-- Wild Guardians (1/3)
