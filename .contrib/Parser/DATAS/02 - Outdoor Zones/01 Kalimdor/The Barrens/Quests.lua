@@ -684,6 +684,12 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
+				q(1719, { -- The Affray
+					["lvl"] = 30,
+					["races"] = { 1 }, -- Warrior
+					["qg"] = 6236, -- Klannoc Macleod
+					["sourceQuest"] = 1718, -- The Islander
+				}),
 				q(905, {	-- The Angry Scytheclaws
 					["qg"] = 3338,	-- Sergra Darkthorn
 					["sourceQuest"] = 881,	-- Echeyakee
@@ -753,6 +759,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(1791, { -- The Windwatcher
+					["lvl"] = 30,
+					["classes"] = { 1 }, -- Warrior
+					["qgs"] = {
+						3041,	-- Torm Ragetotem
+						3354,	-- Sorek
+						4595,	-- Baltus Fowler
+						5113,	-- Kelv Sternhammer
+						5479,	-- Wu Shen
+					},
+				}),
 				q(892, {	-- The Missing Shipment
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
@@ -798,6 +815,12 @@ _.Zones =
 					["coord"] = { 48.12, 5.42, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
+				}),
+				q(1791, { -- The Windwatcher
+					["lvl"] = 30,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6236, -- Klannoc Macleod
+					["sourceQuest"] = 1719, -- The Affray
 				}),
 				q(845, {	-- The Zhevra
 					["qg"] = 3338,	-- Sergra Darkthorn

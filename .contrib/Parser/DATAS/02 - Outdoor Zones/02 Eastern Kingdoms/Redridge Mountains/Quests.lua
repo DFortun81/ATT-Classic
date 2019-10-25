@@ -270,6 +270,26 @@ _.Zones =
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 				}),
+				q(1699, { -- The Rethban Gauntlet
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6166, -- Yorus Barleybrew
+					["sourceQuest"] = 1698, -- Yorus Barleybrew
+				}),
+				q(1702, { -- 
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6166, -- Yorus Barleybrew
+					["sourceQuest"] = 1699, -- The Rethban Gauntlet
+					["cost"] = {
+						{ "i", 6843, 1 }, -- Cask of Scalder
+					},
+					["g"] = {
+						i(6970), -- Furen's Favor
+					},
+				}),
 				q(178, {	-- Theocritus' Retrieval
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
@@ -306,6 +326,19 @@ _.Zones =
 					["provider"] = { "o", 47 },
 					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },	
 					--["objectID"] = 47, -- Wanted: Lieutenant Fangore
+				}),
+				q(1698, { -- Yorus Barleybrew
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qgs"] = {
+						5479, -- Wu Shen <Warrior Trainer>
+						7315, -- Darnath Bladesigner <Warrior Trainer>
+					},
+					["maps"] = {
+						DARNASSUS, 
+						STORMWIND_CITY,
+					}
 				}),
 			}),
 		}),

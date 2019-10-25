@@ -86,6 +86,13 @@ _.Zones =
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
+				q(1667, { -- Dead-tooth Jack
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 294, -- Marshal Haggard
+					["sourceQuest"] = 1666, -- Marshal Haggard
+				}),
 				q(39, {	-- Deliver Thomas' Report
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
@@ -95,6 +102,7 @@ _.Zones =
 				q(45, {	-- Discover Rolf's Fate
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 55 }, -- A half-eaten body
 					--["objectID"] = 55,	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 				}),

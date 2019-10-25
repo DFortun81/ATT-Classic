@@ -158,6 +158,33 @@ _.Zones =
 						i(9601),	-- Cushioned Boots
 					},
 				}),
+				q(1692, { -- Smith Mathiel
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 4088, -- Elanaria
+					["classes"] = { 1 }, -- Warrior
+					["sourceQuest"] = 1686, -- The Shade of Elura
+					["cost"] = { 
+						{ "i", 6812, 1 }, -- Case of Elunite
+					},
+				}),
+				q(1710, { -- Klockmort's Creation
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6142, -- Mathiel
+					["sourceQuest"] = 1703, -- Mathiel
+				}),
+				q(1711, { -- Mathiel's Armor
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6142, -- Mathiel
+					["sourceQuest"] = 1710, -- Sunscorched Shells
+					["groups"] = {
+						i(6973), -- Fire hardened Leggings
+					},
+				}),
 				q(2518, {	-- Tears of the Moon
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
@@ -169,6 +196,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
 					["sourceQuest"] = 741, -- The Absent Minded Prospector(Darkshore)
+				}),
+				q(1039, {	-- The Barrens Port
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
+					["qg"] = 8026,	-- Thyn'tel Bladeweaver
+					["sourceQuest"] = 1038,	-- Velinde's Effects
+					["description"] = "This quest is part of a series that starts in Ashenvale.",
 				}),
 				q(6071, {	-- The Hunter's Path
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
@@ -220,6 +254,17 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 				}),
+				q(1686, { -- The Shade of Elura
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 4088, -- Elanaria
+					["sourceQuest"] = 1683, -- Vorlus Vilehoof
+					["cost"] = { 
+						{ "i", 6808, 8 }, -- Elunite Ore
+						{ "i", 6809, 1 }, -- Eluras's medallion
+					},
+				}),
 				q(2519, {	-- The Temple of the Moon
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
@@ -252,12 +297,27 @@ _.Zones =
 					["sourceQuest"] = 1037, -- Velinde Starsong (Ashenvale)
 					["description"] = "This quest is part of a series that starts in Ashenvale.",
 				}),
-				q(1039, {	-- The Barrens Port
+				q(1683, { -- Vorlus Vilehoof
+					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["qg"] = 8026,	-- Thyn'tel Bladeweaver
-					["sourceQuest"] = 1038,	-- Velinde's Effects
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["qg"] = 4088, -- Elanaria
+					["classes"] = { 1 }, -- Warrior
+					["cost"] = {
+						{ "i", 6805, 1 } -- Horn of Vorlus
+					},
+				}),
+				q(1693, { -- Weapons of Elunite
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6142, -- Mathiel
+					["sourceQuest"] = 1692, -- Smith Mathiel
+					["g"] = {
+						i(6966), -- Elunite Axe
+						i(6967), -- Elunite Sword
+						i(6968), -- Elunite Hammer
+						i(6969), -- Elunite Dagger
+					},
 				}),
 			}),
 		}),

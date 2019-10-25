@@ -413,6 +413,19 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
+				q(1682, { -- Grey Iron Weapons
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6031, -- Tormus Deepforge
+					["sourceQuest"] = 1681, -- Ironband's Compound
+					["g"] = {
+						i(6978), -- Umbral Axe
+						i(6984), -- Umbral Sword
+						i(6982), -- Umbral Mace
+						i(6981), -- Umbral Dagger
+					},
+				}),
 				q(6388, {	-- Gryth Thurden
 					["lvl"] = 10,
 					["races"] = {
@@ -446,11 +459,25 @@ _.Zones =
 					["lvl"] = 17,
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 				}),
+				q(708, { --  Iron Coral
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6169, -- Klockmort Spannerspan
+					["sourceQuest"] = 1704, -- Klockmort Spannerspan
+				}),
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(1681, { -- Ironband's Compound
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6031, -- Tormus Deepforge
+					["sourceQuest"] = 1680, -- Vejrek
 				}),
 				q(8932, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
@@ -539,6 +566,16 @@ _.Zones =
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299, --	To Hulfdan!
 					["isBreadcrumb"] = true,
+				}),
+				q(1709, { -- Klockmort's Creation
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6169, -- Klockmort Spannerspan
+					["sourceQuest"] = 1708, -- Iron Coral
+					["groups"] = {
+						i(6974), -- Fire hardened Gauntlets
+					},
 				}),
 				q(4965, { -- Knowledge of the Orb of Orahil
 					["lvl"] = 35,
@@ -769,6 +806,19 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
+				}),
+				q(1680, { -- Tormus Deepforge
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6114, -- Muren Stormpike
+					["sourceQuest"] = 1678, -- Vejrek
+				}),
+				q(1678, { -- Vejrek
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6114, -- Muren Stormpike
 				}),
 			}),
 		}),

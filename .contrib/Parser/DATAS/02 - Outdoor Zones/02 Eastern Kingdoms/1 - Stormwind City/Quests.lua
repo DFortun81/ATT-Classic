@@ -40,6 +40,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1435, -- Zardeth of the Black Claw
 				}),
+				q(1638, { -- A Warrior Training
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qgs"] = {
+						913, -- Lyria Du Lac <Warrior Trainer>
+						5480, -- Ilsa Corbin <Warrior Trainer>
+					},
+					["altQuests"] = {
+						1684, -- Elanaria
+						1679, -- Muren Stormpike
+					},
+					["description"] = "Doing this quest prevents you from completing \"Elanaria\" and \"Muren Stormpike\".",
+				}),
 				q(396, { -- An Audience with the King
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
@@ -58,11 +72,34 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6740,	-- Innkeeper Allison
 				}),
+				q(1639, { -- Bartleby the Drunk
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6089, -- Harry Burlguard
+				}),
+				q(1665, { -- Bartleby's Mug
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6090, -- Bartleby
+					["sourceQuest"] = 1640, -- Beat Bartleby
+					["cost"] = { 
+						{ "i", 6781, 1 }, -- 	Bartleby's Mug
+					},
+				}),
 				q(389, { -- Bazil Thredd
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1646, -- Baros Alexston
 					["sourceQuest"] = 373, -- The Unsent Letter
+				}),
+				q(1640, { -- Beat Bartleby
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6090, -- Bartleby
+					["sourceQuest"] = 1639, -- Bartleby the Drunk
 				}),
 				q(344, {	-- Brother Paxton
 					["lvl"] = 20,
@@ -77,6 +114,17 @@ _.Zones =
 					["sourceQuest"] = 394, -- The Head of the Beast
 					["qg"] = 332, -- Master Mathias Shaw <Leader of SI:7>
 				}),
+				q(1705, { -- Burning Blood
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 1416, -- Grimand Elmore
+					["sourceQuest"] = 1700, -- Grimand Elmore
+					["cost"] = { 
+						{ "i", 6844, 20 }, -- Burning Blood
+						{ "i", 6845, 1 }, -- Burning Rock
+					},
+				}),
 				q(6261, {	-- Dungar Longdrink
 					["lvl"] = 10,
 					["races"] = {
@@ -86,11 +134,51 @@ _.Zones =
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["coord"] = { 74.2, 47.5, STORMWIND_CITY },
 				}),
+				q(1701, { -- Fire hardened Mail
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 5413, -- Furen Longbeard
+					["sourceQuest"] = 1702, -- The Shieldsmith
+				}),
 				q(6184, {	-- Flint Shadowmore
 					["lvl"] = 56,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 6183,	-- Honor the Dead
+				}),
+				q(1782, { -- Furen's Armor
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["sourceQuest"] = 1701, -- Fire Hardened Mail
+					["qg"] = 5413, -- Furen Longbeard
+					["g"] = {
+						i(6972), -- Fire Hardened Hauberk
+					},
+				}),
+				q(5048, { -- Good Natured Emma
+					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10782, -- Royal Factor Bathrilor
+					["sourceQuest"] = 5022, -- Better Late Than Never
+				}),
+				q(1700, { -- Grimand Elmore
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["sourceQuest"] = 1701, -- Fire Hardened Mail
+					["qg"] = 5413, -- Furen Longbeard
+				}),
+				q(1706, { -- Grimand's Armor
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 }, -- Warrior
+					["sourceQuest"] = 1705, -- Burning Blood
+					["qg"] = 1416, -- Grimand Elmore
+					["g"] = {
+						i(6971), -- Fire Hardened Coif
+					},
 				}),
 				q(333, {	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
@@ -169,6 +257,13 @@ _.Zones =
 					["sourceQuest"] = 393, -- Shadow of the Past
 					["qg"] = 332, -- Master Mathias Shaw
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
+				}),
+				q(1666, { -- Marshal Haggard
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6089, -- Harry Burlguard
+					["sourceQuest"] = 1665, -- Bartleby's Mug
 				}),
 				q(2360, {	-- Mathias and the Defias
 					["lvl"] = 20,

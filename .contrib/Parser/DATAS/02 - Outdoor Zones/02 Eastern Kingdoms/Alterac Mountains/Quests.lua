@@ -40,6 +40,12 @@ _.Zones =
 						i(3763),	-- Lunar Buckler
 					},
 				}),
+				q(1712, { -- Cyclonian
+					["lvl"] = 30,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6176, -- Bath'rah the Windwatcher
+					["sourceQuest"] = 1791, -- The Windwatcher
+				}),
 				q(537, {	-- Dark Council
 					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["sourceQuest"] = 525,	-- Further Mysteries
@@ -121,6 +127,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				q(1713, { -- The Summoning
+					["lvl"] = 30,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6176, -- Bath'rah the Windwatcher
+					["sourceQuest"] = 1712, -- Cyclonian
+				}),
 				q(535, {	-- Valik
 					["qg"] = 2333,	-- Henchman Valik
 					["isBreadcrumb"] = true,
@@ -131,6 +143,17 @@ _.Zones =
 					["lvl"] = 29,
 					["g"] = {
 						i(3601),	-- Syndicate Missive
+					},
+				}),
+				q(1792, { -- Whirlwind Weapon
+					["lvl"] = 30,
+					["classes"] = { 1 }, -- Warrior
+					["qg"] = 6176, -- Bath'rah the Windwatcher
+					["sourceQuest"] = 1713, -- The Summoning
+					["groups"] = {
+						i(6975), -- Whirlwind Axe
+						i(6977), -- Whirlwind Sword
+						i(6976), -- Whirlwind Warhammer
 					},
 				}),
 			}),
