@@ -11,6 +11,7 @@ _.Zones =
 						i(5788),	-- Pattern: Thick Murloc Armor
 						i(5789),	-- Pattern: Murloc Scale Bracers
 					},
+					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
 					["groups"] = {						
@@ -209,6 +210,7 @@ _.Zones =
 						i(7087),	-- Pattern: Crimson Silk Cloak
 						i(14630),	-- Pattern: Enchanter's Cowl
 					},
+					["coord"] = { 28.7, 76.9, STRANGLETHORN_VALE },
 				}),
 				n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
 					["groups"] = {						

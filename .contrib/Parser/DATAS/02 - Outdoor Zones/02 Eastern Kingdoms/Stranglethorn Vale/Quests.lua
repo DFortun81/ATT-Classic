@@ -424,6 +424,7 @@ _.Zones =
 				q(577, {	-- Some Assembly Required
 					["lvl"] = 31,
 					["qg"] = 2495,	-- Drizzlik
+					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
 				}),
 				q(586, {	-- Speaking with Gan'zulah
 					["lvl"] = 30,

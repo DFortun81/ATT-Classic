@@ -51,17 +51,28 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
+					["sourceQuest"] = 2869, -- Against the Hatecrest (2)
 					["coord"] = { 30.4, 46.2, FERALAS },
+					["cost"] = { 
+						{ "i", 9248, 1 } -- Mysterious Relic
+					},
 				}),
-				q(2869, {	-- Against the Hatecrest
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(3130, {	-- Against the Hatecrest
+				q(3130, {	-- Against the Hatecrest (1)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3936,	-- Shandris Feathermoon
+					["sourceQuest"] = 2867, -- Return to Feathermoon Stronghold
 					["coord"] = { 30.3, 46.2, FERALAS },
+				}),
+				q(2869, {	-- Against the Hatecrest (2)
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7877, -- Latronicus Moonspear
+					["sourceQuest"] = 3130, -- Against the Hatecrest (1)
+					["coord"] = { 30.4, 46.2, FERALAS },
+					["cost"] = { 
+						{ "i", 9247, 10 } -- Hatecrest Naga Scale
+					},
 				}),
 				q(2863, {	-- Alpha Strike
 					["lvl"] = 39,
@@ -104,6 +115,10 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
+					["sourceQuest"] = 2870, -- Against Lord Shalzaru
+					["cost"] = { 
+						{ "i", 9248, 1 } -- Mysterious Relic
+					},
 					["g"] = {
 						i(9663),	-- Dawnrider's Chestpiece
 						i(9664),	-- Sentinel's Guard
@@ -230,6 +245,9 @@ _.Zones =
 				q(2867, {	-- Return to Feathermoon Stronghold
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "o", 142179 }, -- Solarsal Gazebo
+					["sourceQuest"] = 2866, -- The Ruins of Solarsal
+					["coord"] = { 26.3, 52.3, FERALAS },
 				}),
 				q(3122, {	-- Return to Witch Doctor Uzer'i
 					["lvl"] = 40,
