@@ -7,52 +7,73 @@ _.WorldDrops =
 		n(-320, {	-- Head
 		}),
 		n(-321, {	-- Shoulder
+			i(4709),  --  Forest Leather Mantle
 			i(13103),  -- Pads of the Venom Spider
 		}),
 		n(-322, {	-- Back
 			i(4701),  -- Inscribed Cloak
+			i(5751),  -- Webwing Cloak
 			i(9779),  -- Bandit Cloak
 		}),
 		n(-323, {	-- Chest
 			i(821),  -- Riverpaw Leather Vest
 			i(2977),  -- Veteran Armor
+			i(3055),  -- Forest Leather Chestpiece
 			i(3313),  -- Ceremonial Leather Harness
+			i(14175), -- Buccaneer's Vest
 		}),
 		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
+			i(3647),  -- Bright Bracers
 			i(14723),  -- War Paint Bindings
+			i(15306),  -- Feral Bindings
 		}),
 		n(-327, {	-- Hands
 			i(1448),  -- Blackrock Gauntlets
+			i(3058),  -- Forest Leather Gloves
+			i(9813),  -- Fortified Gauntlets
 			i(10369),  -- Imbued Plate Gauntlets
-			i(14117), -- Aboriginal Gloves
+			i(14117),  -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
 			i(14747),  -- Hulking Gauntlets
 		}),
 		n(-328, {	-- Waist
+			i(4708),  -- Bright Belt
+			i(6570),  -- Shimmering Sash
+			i(9801),  -- Superior Belt
 		}),
 		n(-329, {	-- Legs
-			i(9756), -- Gypsy Trousers
+			i(6587),  -- Scouting Trousers
+			i(9756),  -- Gypsy Trousers
 			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
 		}),
 		n(-330, {	-- Feet
 			i(2983),  -- Seer's Boots
+			i(3057),  -- Forest Leather Boots
 			i(6557),  -- Bard's Boots
+			i(6612),  -- Sage's Boots
 		}),
 		filter(51, {	-- Neck
 			i(13087),  -- River Pride Choker
 		}),
+		filter(52, {	-- Finger
+			i(11982),  -- Viridian Band
+		}),
 	}),
 	n(-319, {	-- Weapons		
 		n(-334, {	-- 1H Axes
+			i(790),  -- Forester's Axe
 			i(871),  -- Flurry Axe
+			i(12990),  -- Razor's Edge
 		}),
 		n(-335, {	-- 2H Axes
+			i(15269),  -- Massive Battle Axe
 		}),	
 		n(-346, {	-- Bows
 			i(3036),  -- Heavy Shortbow
+			i(8183),  -- Precision Bow
 		}),
 		n(-347, {	-- Crossbows
 		}),			
@@ -70,13 +91,17 @@ _.WorldDrops =
 		n(-336, {	-- 1H Maces
 			i(789),  -- Stout Battlehammer
 			i(4090),  -- Mug O' Hurt
+			i(15222),  -- Barbed Club
 		}),
 		n(-337, {	-- 2H Maces
+			i(15259),  -- Hefty Battlehammer
 		}),
 		n(-343, {	-- Polearms
 		}),			
 		n(-332, {	-- Shield
+			i(6383),  -- Forest Buckler
 			i(9764),  -- Cadet Shield
+			i(9790),  -- Raider's Shield
 			i(15298),  -- Grizzly Buckler
 			i(15943),  -- Imbued Shield
 		}),
