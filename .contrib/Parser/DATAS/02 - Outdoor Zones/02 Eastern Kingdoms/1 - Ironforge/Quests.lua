@@ -459,7 +459,7 @@ _.Zones =
 					["lvl"] = 17,
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 				}),
-				q(708, { --  Iron Coral
+				q(1708, { --  Iron Coral
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 }, -- Warrior

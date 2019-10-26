@@ -6,29 +6,42 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
-				q(7794, {	-- A Donation of Mageweave
-					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth
+				q(5066, { -- A Call to Arms: The Plaguelands!
+					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2198, -- Crier Goodman
+				}),
+				q(7794, {	-- A Donation of Mageweave
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = {
+						{ "i", 4338, 60 }, -- Mageweave Cloth
+					},
 				}),
 				q(7795, {	-- A Donation of Runecloth
-					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = {
+						{ "i", 14047, 60 }, -- Runecloth
+					},
 				}),
 				q(7793, {	-- A Donation of Silk
-					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 4306, 60 } },	-- Silk Cloth
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = {
+						{ "i", 4306, 60 },	-- Silk Cloth
+					},
 				}),
 				q(7791, {	-- A Donation of Wool
-					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 2592, 60 } },	-- Wool Cloth
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = {
+						{ "i", 2592, 60 },	-- Wool Cloth
+					},
 				}),
 				q(335, { -- A Noble Brew (1)
 					["lvl"] = 25,
@@ -43,7 +56,9 @@ _.Zones =
 				q(1638, { -- A Warrior Training
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
+					["classes"] = { 
+						1, -- Warrior 
+					},
 					["qgs"] = {
 						913, -- Lyria Du Lac <Warrior Trainer>
 						5480, -- Ilsa Corbin <Warrior Trainer>
@@ -61,11 +76,13 @@ _.Zones =
 					["qg"] = 1646, -- Baros Alexston <City Architect>
 				}),
 				q(7796, {	-- Additional Runecloth
-					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
-					["cost"] = { { "i", 14047, 60 } },	-- Runecloth
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["cost"] = {
+						{ "i", 14047, 60 },	-- Runecloth
+					},
+					["repeatable"] = true,
 				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,

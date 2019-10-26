@@ -83,12 +83,6 @@ _.Zones =
 					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
 					["description"] = "Barkeep Daniels is located on the first floor of the Lakeshire Inn.",
 				}),
-				q(1097, {	-- Elmore's Task
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },					
-				}),
 				q(244, {	-- Encroaching Gnolls
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
@@ -277,7 +271,7 @@ _.Zones =
 					["qg"] = 6166, -- Yorus Barleybrew
 					["sourceQuest"] = 1698, -- Yorus Barleybrew
 				}),
-				q(1702, { -- 
+				q(1702, { -- The Shieldsmith
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 }, -- Warrior

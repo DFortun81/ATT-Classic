@@ -128,6 +128,7 @@ _.Zones =
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 142958 },	-- Feralas: A History
+					["coord"] = { 55.2, 91.4, TELDRASSIL },
 				}),
 				q(2459, {	-- Ferocitas the Dream Eater
 					["races"] = ALLIANCE_ONLY,
@@ -248,6 +249,7 @@ _.Zones =
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7907,	-- Daryn Lightwind
+					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["sourceQuest"] = 2944,	-- The Super Snapper FX
 				}),
 				q(489, {	-- Seek Redemption!
@@ -346,6 +348,7 @@ _.Zones =
 					["lvl"] = 42,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7907,	-- Daryn Lightwind
+					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["sourceQuest"] = 2940,	-- Feralas: A History
 				}),
 				q(2438, {	-- The Emerald Dreamcatcher

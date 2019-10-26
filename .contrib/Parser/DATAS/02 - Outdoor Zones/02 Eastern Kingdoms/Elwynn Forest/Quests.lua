@@ -116,8 +116,17 @@ _.Zones =
 				q(1097, {	-- Elmore's Task
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 514,	-- Smith Argus
-					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
+					["qgs"] = {
+						514,	-- Smith Argus 
+						415, -- Verner Osgood
+					},
+					["maps"] = {
+						REDRIDGE_MOUNTAINS,
+					},
+					["coords"] = { 
+						{ 41.7, 65.5, ELWYNN_FOREST }, -- Smith Argus
+						{ 31.0, 47.4, REDRIDGE_MOUNTAINS }, -- Verner Osgood
+					},
 				}),
 				q(3102, {	-- Encrypted Letter
 					["lvl"] = 1,

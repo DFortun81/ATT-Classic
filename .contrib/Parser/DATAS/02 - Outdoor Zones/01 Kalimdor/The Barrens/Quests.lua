@@ -759,7 +759,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(1791, { -- The Windwatcher
+				q(1718, { -- The Islander
 					["lvl"] = 30,
 					["classes"] = { 1 }, -- Warrior
 					["qgs"] = {
