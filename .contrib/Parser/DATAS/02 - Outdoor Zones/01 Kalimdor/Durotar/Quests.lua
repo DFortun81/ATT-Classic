@@ -407,6 +407,7 @@ _.Zones =
 				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
+					["classes"] = { 1, 3, 4, 5, 7, 8, 11 }, -- All Horde classes except Warlock
 					["coord"] = { 42.85, 69.14, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
@@ -416,6 +417,13 @@ _.Zones =
 						i(4923),	-- Primitive Hatchet
 						i(5778),	-- Primitive Walking Stick
 					},
+				}),
+				q(1485, {	-- Vile Familiars (Warlocks only!)
+					["qg"] = 5765,	-- Ruzan
+					["classes"] = { 9 }, -- Warlock
+					["coord"] = { 42.6, 69.0, DUROTAR },
+					["races"] = { 2, 5 }, -- Orcs and Undead only
+					["lvl"] = 1,
 				}),
 				q(5843, {	-- Welcome!
 					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
