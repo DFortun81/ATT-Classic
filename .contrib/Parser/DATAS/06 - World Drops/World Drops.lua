@@ -28,11 +28,13 @@ _.WorldDrops =
 			i(10369),  -- Imbued Plate Gauntlets
 			i(14117), -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
+			i(14747),  -- Hulking Gauntlets
 		}),
 		n(-328, {	-- Waist
 		}),
 		n(-329, {	-- Legs
 			i(9756), -- Gypsy Trousers
+			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
 		}),
 		n(-330, {	-- Feet
@@ -86,6 +88,7 @@ _.WorldDrops =
 			i(15210),  -- Raider Shortsword
 		}),
 		n(-339, {	-- 2H Swords
+			i(4567),  -- Merc Sword
 		}),
 		n(-341, {	-- Wands
 		}),
