@@ -22,6 +22,8 @@ _.Zones =
 				q(4266, {	-- A Hero's Welcome
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7880, -- Ginro Hearthkindle
+					["sourceQuest"] = 4265, -- Freed from the Hive
 					["g"] = {
 						i(11856),	-- Ceremonial Elven Blade
 						i(11857),	-- Sanctimonial Rod
@@ -60,7 +62,7 @@ _.Zones =
 				q(3130, {	-- Against the Hatecrest (1)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3936,	-- Shandris Feathermoon
+					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
 					["sourceQuest"] = 2867, -- Return to Feathermoon Stronghold
 					["coord"] = { 30.3, 46.2, FERALAS },
 				}),
@@ -95,7 +97,10 @@ _.Zones =
 				q(4127, {	-- Boat Wreckage
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4125, -- The Missing Courier (2)
+					["provider"] = { "o", 164909 }, -- Wrecked Row Boat
 					--["objectID"] = 164909,	-- Wrecked Row Boat
+					["coord"] = { 45.4, 65.0, FERALAS },
 				}),
 				q(2979, {	-- Dark Ceremony
 					["lvl"] = 38,
@@ -155,6 +160,9 @@ _.Zones =
 				q(4265, {	-- Freed from the Hive
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4135, -- The Writhing Deep
+					["provider"] = { "o", 1645954 }, -- Zukk'ash Pod
+					["coord"] = { 72.1, 63.7, FERALAS },
 				}),
 				q(2969, {	-- Freedom for All Creatures
 					["lvl"] = 38,
@@ -185,6 +193,8 @@ _.Zones =
 				q(7733, {	-- Improved Quality
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 2821, -- The Mark of Quality
+					["coord"] = { 30.6, 42.7, FERALAS },
 					["g"] = {
 						i(19041),	-- Pratt's Handcrafted Tunic
 					},
@@ -227,6 +237,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7879,	-- Quintis Jonespyre
+					["sourceQuest"] = 4129, -- The Knife Revealed
 					["coord"] = { 32.5, 43.8, FERALAS },
 					["description"] = "Quintis Jonespyre is located at the top of the tower.",
 				}),
@@ -256,6 +267,9 @@ _.Zones =
 				q(4267, {	-- Rise of the Silithid
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3936, -- Shandris Feathermoon <General of the Sentinel Army>
+					["sourceQuest"] = 4266, -- A Hero's Welcome
+					["coord"] = { 30.3, 46.2, FERALAS },
 				}),
 				q(7731, {	-- Stinglasher
 					["lvl"] = 39,
@@ -270,6 +284,7 @@ _.Zones =
 				q(4281, {	-- Thalanaar Delivery
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 11463 }, -- Undelivered Parcel
 				}),
 				q(2903, {	-- The Battle Plans
 					["lvl"] = 39,
@@ -302,6 +317,8 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7880,	-- Ginro Hearthkindle
+					["sourceQuest"] = 4127, -- Boat Wreckage
+					["coord"] = { 31.9, 45.1, FERALAS },
 				}),
 				q(2822, {	-- The Mark of Quality
 					["lvl"] = 40,
@@ -321,15 +338,18 @@ _.Zones =
 						i(9631),	-- Pratt's Handcrafted Gloves
 					},
 				}),
-				q(4125, {	-- The Missing Courier
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(4124, {	-- The Missing Courier
+				q(4124, {	-- The Missing Courier (1)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7877,	-- Latronicus Moonspear
 					["coord"] = { 30.4, 46.2, FERALAS },
+				}),
+				q(4125, {	-- The Missing Courier (2)
+					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7880, -- Ginro Hearthkindle
+					["sourceQuest"] = 4124, -- The Missing Courier (1)
+					["coord"] = { 31.9, 45.1, FERALAS },
 				}),
 				q(2942, {	-- The Morrow Stone
 					["lvl"] = 42,
@@ -383,11 +403,17 @@ _.Zones =
 				q(4131, {	-- The Woodpaw Gnolls
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7880, -- Ginro Hearthkindle
+					["sourceQuest"] = 4129, -- Psychometric Reading
+					["coord"] = { 31.9, 45.1, FERALAS },
 				}),
 				q(4135, {	-- The Writhing Deep
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 4131, -- The Woodpaw Gnolls
+					["provider"] = { "o", 164953 }, -- Large Leather Backpacks
 					--["objectID"] = 164953,	-- Large Leather Backpacks
+					["coord"] = { 73.3, 56.3, FERALAS },
 				}),
 				q(3567, {	-- To the Top
 					["lvl"] = 25,
