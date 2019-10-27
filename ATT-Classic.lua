@@ -4078,7 +4078,8 @@ local function CreateMiniListForGroup(group)
 		popout.shouldFullRefresh = true;
 		if group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
-			if group.parent.questID == group.questID then
+			local questID = group.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.altQuestID or group.questID;
+			if (group.parent.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.parent.altQuestID or group.parent.questID) == questID then
 				group = group.parent;
 			end
 			local mainQuest = CloneData(group);
@@ -4086,8 +4087,8 @@ local function CreateMiniListForGroup(group)
 			local g = { mainQuest };
 			
 			-- Check to see if Source Quests are listed elsewhere.
-			if group.questID and not group.sourceQuests then
-				local searchResults = SearchForField("questID", group.questID);
+			if questID and not group.sourceQuests then
+				local searchResults = SearchForField("questID", questID);
 				if searchResults and #searchResults > 1 then
 					for i=1,#searchResults,1 do
 						local searchResult = searchResults[i];
@@ -4116,7 +4117,8 @@ local function CreateMiniListForGroup(group)
 							for i=1,#sourceQuest,1 do
 								-- Only care about the first search result.
 								local sq = sourceQuest[i];
-								if sq.parent and sq.parent.questID == sq.questID then
+								questID = sq.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and sq.altQuestID or sq.questID;
+								if sq.parent and sq.parent.questID == questID then
 									sq = sq.parent;
 								end
 								if sq and app.GroupFilter(sq) and not sq.isBreadcrumb then
@@ -4127,7 +4129,7 @@ local function CreateMiniListForGroup(group)
 												found = sq;
 												break;
 											end
-										elseif sq.questID == sourceQuestID then
+										elseif questID == sourceQuestID then
 											found = sq;
 											break;
 										end

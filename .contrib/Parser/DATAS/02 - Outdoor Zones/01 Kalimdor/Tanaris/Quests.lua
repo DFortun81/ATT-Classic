@@ -198,10 +198,9 @@ _.Zones =
 					["sourceQuest"] = 992, -- Gadgetzan Water Survey
 				}),
 				q(4507, {	-- Pawn Captures Queen
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 5594,	-- Alchemist Pestlezugg
 					["coord"] = { 50.9, 27.0, TANARIS },
+					["lvl"] = 50,
 				}),
 				q(8365, {	-- Pirate Hats Ahoy!
 					["lvl"] = 40,
