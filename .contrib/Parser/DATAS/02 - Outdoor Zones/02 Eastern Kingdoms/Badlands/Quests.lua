@@ -389,6 +389,7 @@ _.Zones =
 				q(708, {	-- The Black Box
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+					["u"] = 1,
 				}),
 				q(692, {	-- The Lost Fragments
 					["lvl"] = 30,

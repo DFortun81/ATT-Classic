@@ -70,9 +70,11 @@ _.Zones =
 				}),
 				q(1272, {	-- Finding Reethe <CHANGE INTO GOSSIP>
 					["lvl"] = 30,
+					["u"] = 1,
 				}),
 				q(1283, {	-- Fire at the Shady Rest <CHANGE TO GOSSIP>
 					["lvl"] = 30,
+					["u"] = 1,
 				}),
 				q(1135, {	-- Highperch Venom
 					["lvl"] = 25,
@@ -125,6 +127,7 @@ _.Zones =
 				}),
 				q(1281, {	-- Jim's Song <CHANGE TO GOSSIP>
 					["lvl"] = 30,
+					["u"] = 1,
 				}),
 				q(1133, {	-- Journey to Astranaar
 					["lvl"] = 18,
@@ -243,8 +246,10 @@ _.Zones =
 						i(159),	-- Refreshing Spring Water
 						i(118),	-- Minor Healing Potion
 					},
+					["u"] = 1,
 				}),
 				q(1, {	-- The "Chow" Quest (123)aa
+					["u"] = 1,
 				}),
 				q(1323, {	-- The Black Shield
 					["lvl"] = 30,
@@ -309,6 +314,7 @@ _.Zones =
 				}),
 				q(1263, {	-- The Burning Inn <CHANGE TO GOSSIP>
 					["lvl"] = 30,
+					["u"] = 1,
 				}),
 				q(1287, {	-- The Deserters
 					["lvl"] = 30,
@@ -392,6 +398,7 @@ _.Zones =
 				}),
 				q(1288, {	-- Vimes's Report
 					["lvl"] = 30,
+					["u"] = 1,
 				}),
 			}),
 		}),
