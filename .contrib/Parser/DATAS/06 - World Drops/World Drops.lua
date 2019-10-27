@@ -8,6 +8,7 @@ _.WorldDrops =
 		}),
 		n(-321, {	-- Shoulder
 			i(4709),  --  Forest Leather Mantle
+			i(6617),  -- Sage's Mantle
 			i(13103),  -- Pads of the Venom Spider
 		}),
 		n(-322, {	-- Back
@@ -26,12 +27,14 @@ _.WorldDrops =
 		}),
 		n(-326, {	-- Wrist
 			i(3647),  -- Bright Bracers
+			i(6613),  -- Sage's Bracers
 			i(14723),  -- War Paint Bindings
 			i(15306),  -- Feral Bindings
 		}),
 		n(-327, {	-- Hands
 			i(1448),  -- Blackrock Gauntlets
 			i(3058),  -- Forest Leather Gloves
+			i(9795),  -- Ivycloth Gloves
 			i(9813),  -- Fortified Gauntlets
 			i(10369),  -- Imbued Plate Gauntlets
 			i(14117),  -- Aboriginal Gloves
@@ -69,6 +72,7 @@ _.WorldDrops =
 			i(12990),  -- Razor's Edge
 		}),
 		n(-335, {	-- 2H Axes
+			i(2227),  -- Heavy Ogre War Axe
 			i(15269),  -- Massive Battle Axe
 		}),	
 		n(-346, {	-- Bows
@@ -80,13 +84,15 @@ _.WorldDrops =
 		n(-333, {	-- Daggers
 			i(1287),  -- Giant Tarantula Fang
 			i(2140),  -- Carving Knife
-			i(2632),  -- Curved Dagger			
+			i(2632),  -- Curved Dagger	
+			i(15242),  -- Honed Stiletto
 		}),
 		n(-348, {	-- Fist Weapons	
 		}),
 		n(-345, {	-- Guns
 		}),			
 		n(-331, {	-- Held in Off-hand
+			i(15927),  -- Bright Sphere
 		}),
 		n(-336, {	-- 1H Maces
 			i(789),  -- Stout Battlehammer
@@ -99,6 +105,7 @@ _.WorldDrops =
 		n(-343, {	-- Polearms
 		}),			
 		n(-332, {	-- Shield
+			i(1204),  -- The Green Tower
 			i(6383),  -- Forest Buckler
 			i(9764),  -- Cadet Shield
 			i(9790),  -- Raider's Shield
@@ -113,6 +120,7 @@ _.WorldDrops =
 			i(15210),  -- Raider Shortsword
 		}),
 		n(-339, {	-- 2H Swords
+			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword
 		}),
 		n(-341, {	-- Wands

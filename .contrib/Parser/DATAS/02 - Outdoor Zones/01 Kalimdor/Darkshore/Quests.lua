@@ -219,6 +219,9 @@ _.Zones =
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6667,	-- Gelkak Gyromast
+					["cost"] = {
+						{ "i", 7442, 1 },	-- Gyromast's Key
+					},
 					["g"] = {
 						i(5996),	-- Elixir of Water Breathing
 					},

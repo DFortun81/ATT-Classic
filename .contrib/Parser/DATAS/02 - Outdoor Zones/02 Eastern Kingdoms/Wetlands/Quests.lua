@@ -248,6 +248,9 @@ _.Zones =
 					["sourceQuest"] = 290,	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
 					["coord"] = { 14.5, 24.0, WETLANDS },
+					["g"] = {
+						i(2944),	-- Cursed Eye of Paleth
+					},
 				}),
 				q(463, {	-- The Greenwarden
 					["lvl"] = 20,
