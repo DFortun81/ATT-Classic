@@ -25,6 +25,7 @@ _.Zones =
 				q(3381, {	-- A Meeting with the Master
 					["lvl"] = 45,
 					["repeatable"] = true,
+					["u"] = 2,
 				}),
 				q(6823, {	-- Agent of Hydraxis
 					["lvl"] = 55,
@@ -124,6 +125,7 @@ _.Zones =
 				}),
 				q(3503, {	-- Meeting with the Master
 					["lvl"] = 45,
+					["repeatable"] = true,
 				}),
 				q(6804, {	-- Poisoned Water
 					["lvl"] = 55,
