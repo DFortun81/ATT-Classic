@@ -55,15 +55,19 @@ _.Zones =
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
 				}),
-				q(4510, {	-- Calm Before the Storm
-					["lvl"] = 50,
+				{
+					["questID"] = 4510,	-- Calm Before the Storm (2/2)
+					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
+					["qg"] = 7740,	-- Gracina Spiritmight
+					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["lvl"] = 50,
+					["groups"] = {
 						i(11870),	-- Oblivion Orb
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
-				}),
+				},
 				q(2242, {	-- Destiny Calls
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

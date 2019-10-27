@@ -342,15 +342,19 @@ _.Zones =
 						i(11864),	-- White Bone Spear
 					},
 				}),
-				q(4511, {	-- Calm Before the Storm
-					["lvl"] = 50,
+				{
+					["questID"] = 4511,	-- Calm Before the Storm (2/2)
+					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
+					["qg"] = 7010,	-- Zilzibin Drumlore
+					["coord"] = { 56.4, 46.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["lvl"] = 50,
+					["groups"] = {
 						i(11870),	-- Oblivion Orb
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
-				}),
+				},
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
