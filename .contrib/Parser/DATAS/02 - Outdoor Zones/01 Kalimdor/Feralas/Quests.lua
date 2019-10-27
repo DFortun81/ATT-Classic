@@ -151,11 +151,13 @@ _.Zones =
 				}),
 				q(2766, {	-- Find OOX-22/FE!
 					["lvl"] = 40,
+					["provider"] = { "i", 8705 }, -- OOX-22/FE Distress Beacon
 				}),
 				q(4297, {	-- Food for Baby
 					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9660,	-- Agnar Beastamer
+					["coord"] = { 14.1, 43.6, THE_HINTERLANDS },
 				}),
 				q(4265, {	-- Freed from the Hive
 					["lvl"] = 40,

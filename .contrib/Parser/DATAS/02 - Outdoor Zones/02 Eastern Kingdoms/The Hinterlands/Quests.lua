@@ -152,6 +152,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7884,	-- Fraggar Thundermantle
+					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
 				}),
 				q(7815, {	-- Snapjaws, Mon!
 					["lvl"] = 44,
@@ -172,10 +173,16 @@ _.Zones =
 				q(2990, {	-- Thadius Grimshade
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5636, -- Gryphon Master Talonaxe
+					["sourceQuest"] = 2989, -- The Altar of Zul
+					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },					
 				}),
-				q(2989, {	-- The Altar of Zul
+				q(2989, { -- The Altar of Zul
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5636, -- Gryphon Master Talonaxe
+					["sourceQuest"] = 2988, -- Witherbark Cages
+					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 				}),
 				q(2992, {	-- The Divination
 					["lvl"] = 40,
@@ -192,6 +199,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7884,	-- Fraggar Thundermantle
+					["coord"] = { 14.8, 44.6, THE_HINTERLANDS },
 				}),
 				q(2881, {	-- Troll Necklace Bounty
 					["lvl"] = 40,
@@ -232,6 +240,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 				}),
 			}),
 		}),
