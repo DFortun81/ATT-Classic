@@ -10,10 +10,16 @@ _.Zones =
 					i(15735),	-- Pattern: Ironfeather Shoulders
 				}),
 				n(8161, {	-- Harggan <Blacksmithing Supplies>
-					i(7995),	-- Plans: Mithril Scale Bracers
+					["groups"] = {
+						i(7995),	-- Plans: Mithril Scale Bracers
+					},
+					["coord"] = { 13.4, 44.1, THE_HINTERLANDS },
 				}),
 				n(8160, {	-- Nioma <Leatherworking Supplies>
-					i(8409),	-- Pattern: Nightscape Shoulders
+					["groups"] = {
+						i(8409),	-- Pattern: Nightscape Shoulders
+					},
+					["coord"] = { 13.3, 43.4, THE_HINTERLANDS },
 				}),
 				n(14738, {	-- Otho Moji'ko <Cooking Supplier>
 					i(21099),	-- Recipe: Smoked Sagefish
@@ -23,7 +29,10 @@ _.Zones =
 					i(10609),	-- Schematic: Mithril Mechanical Dragonling
 				}),
 				n(4782, {	-- Truk Wildbeard <Bartender>
-					i(18046),	-- Recipe: Tender Wolf Steak
+					["groups"] = {
+						i(18046),	-- Recipe: Tender Wolf Steak
+					},
+					["coord"] = { 14.4, 42.3, THE_HINTERLANDS },
 				}),
 			}),
 		}),

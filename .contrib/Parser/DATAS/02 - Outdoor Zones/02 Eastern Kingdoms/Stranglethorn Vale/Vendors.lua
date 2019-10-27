@@ -24,6 +24,7 @@ _.Zones =
 					["groups"] = {
 						i(10318),	-- Pattern: Admiral's Hat
 					},
+					["coord"] = { 27.0, 82.5, STRANGLETHORN_VALE },
 				}),
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
 					["groups"] = {
@@ -34,6 +35,7 @@ _.Zones =
 					["groups"] = {
 						i(12257),	-- Heavy Notched Belt
 					},
+					["coord"] = { 29.0, 75.0, STRANGLETHORN_VALE },
 				}),
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 					["groups"] = {						
