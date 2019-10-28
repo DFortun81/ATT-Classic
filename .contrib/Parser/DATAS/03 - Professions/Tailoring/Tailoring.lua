@@ -1031,6 +1031,7 @@ profession(197, {	-- Tailoring
 			["g"] = {
 				i(10461),	-- Shadowy Bracers
 			},
+			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 		}),
 		q(3385, {	-- The Undermarket (1/2)
 			["lvl"] = 40,
@@ -1042,6 +1043,7 @@ profession(197, {	-- Tailoring
 				i(10479),	-- Kovic's Trading Satchel
 				i(10462),	-- Shadowy Belt
 			},
+			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 		}),
 		q(3402, {	-- The Undermarket (2/2)
 			["lvl"] = 40,

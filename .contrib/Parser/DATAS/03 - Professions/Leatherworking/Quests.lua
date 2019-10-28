@@ -32,6 +32,7 @@ profession(165, {	-- Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
 			["qg"] = 7868,	-- Sarah Tanner
+			["coord"] = { 63.6, 76.0, SEARING_GORGE },
 		}),
 		q(5146, {	-- Elemental Leatherworking (H)
 			["lvl"] = 40,
