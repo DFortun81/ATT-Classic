@@ -96,6 +96,7 @@ _.Zones =
 				}),
 				q(8970, {	-- I See Alcaz Island In Your Future...
 					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
 				}),
 				q(1169, {	-- Identifying the Brood
 					["lvl"] = 38,
