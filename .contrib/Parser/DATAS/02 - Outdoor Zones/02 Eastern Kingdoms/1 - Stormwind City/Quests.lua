@@ -562,6 +562,7 @@ _.Zones =
 				q(397, { -- You Have Served Us Well
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 }, -- Warlock
 					["qg"] = 1435, -- Zardeth of the Black Claw
 					["sourceQuest"] = 336, -- A Noble Brew
 				}),
