@@ -182,6 +182,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 10443 },	-- Singed Letter
 					["sourceQuest"] = 3367,	-- Suntara Stones
+					["description"] = "The Signed Letter will be on the ground after you finish escorting Dorius Stonetender.",
+					["coord"] = { 74.5, 19.3, SEARING_GORGE },
 				}),
 				q(3452, {	-- The Flame's Casing
 					["lvl"] = 40,
