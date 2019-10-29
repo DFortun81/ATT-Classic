@@ -1036,7 +1036,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Shifting Cloak",
 				["recipeID"] = 22928,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Wild Leather Cloak",
