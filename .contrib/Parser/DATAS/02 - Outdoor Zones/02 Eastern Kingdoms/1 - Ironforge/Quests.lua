@@ -386,6 +386,7 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5111,	-- Innkeeper Firebrew
+					["coord"] = { 18.1, 51.5, IRONFORGE },
 				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
