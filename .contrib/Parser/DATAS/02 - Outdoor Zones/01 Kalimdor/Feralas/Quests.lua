@@ -47,7 +47,10 @@ _.Zones =
 				}),
 				q(7725, {	-- Again With the Zapped Giants
 					["lvl"] = 45,
+					["qg"] = 14637,	-- Zorbin Fandazzle
 					["repeatable"] = true,
+					["description"] = "You can delete the Zorbin's Ultra-Shrinker after completing the quest or let the timer run out.",
+					["coord"] = { 44.8, 43.4, FERALAS },
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["lvl"] = 40,
@@ -229,11 +232,15 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 18972 },	-- Perfect Yeti Hide
+					["repeatable"] = true,
+					["description"] = "This quests starts from the Perfect Yeti Hide which drops from the yetis in Rage Scar Hold.",
 				}),
 				q(7735, {	-- Pristine Yeti Hide
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 18969 },	-- Pristine Yeti Hide
+					["repeatable"] = true,
+					["description"] = "This quests starts from the Pristine Yeti Hide which drops from the yetis in Rage Scar Hold.",
 				}),
 				q(4130, {	-- Psychometric Reading
 					["lvl"] = 40,
@@ -468,6 +475,7 @@ _.Zones =
 						i(19040),	-- Zorbin's Mega-Slicer
 					},
 					["coord"] = { 44.8, 43.4, FERALAS },
+					["description"] = "You can delete the Zorbin's Ultra-Shrinker after completing the quest or let the timer run out.",
 				}),
 				q(7730, {	-- Zukk'ash Infestation
 					["lvl"] = 39,
