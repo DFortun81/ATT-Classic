@@ -61,6 +61,7 @@ _.Zones =
 				q(7341, {	-- A Fair Trade
 					["lvl"] = 52,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["g"] = {
 						i(18042),	-- Thorium Headed Arrow
 					},

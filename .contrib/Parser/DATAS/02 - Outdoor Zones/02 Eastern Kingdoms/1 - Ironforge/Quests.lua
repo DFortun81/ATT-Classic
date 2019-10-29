@@ -378,6 +378,7 @@ _.Zones =
 				q(7342, {	-- Arrows Are For Sissies
 					["lvl"] = 52,
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["groups"] = {
 						i(18042),	-- Thorium Headed Arrow
 					},
