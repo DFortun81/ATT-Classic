@@ -521,7 +521,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Swift Flight Bracers",
 				["recipeID"] = 22923,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Tough Scorpid Bracers",
@@ -730,7 +729,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Girdle of Insight",
 				["recipeID"] = 22921,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Green Leather Belt",
@@ -950,7 +948,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Mongoose Boots",
 				["recipeID"] = 22922,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Nightscape Boots",
@@ -985,7 +982,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Chromatic Cloak",
 				["recipeID"] = 22926,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Dark Leather Cloak",
@@ -1018,7 +1014,6 @@ profession(165, {	-- Leatherworking
 			{
 				["name"] = "Hide of the Wild",
 				["recipeID"] = 22927,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Hillman's Cloak",
