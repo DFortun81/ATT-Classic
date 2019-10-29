@@ -227,6 +227,9 @@ _.Zones =
 							{
 								["itemID"] = 10575, -- Black Dragonflight Molt
 								["questID"] = 4023,	-- A Taste of Flame
+								["altQuests"] = {
+									4022,	-- A Taste of Flame
+								},
 							},
 						}),
 					},
