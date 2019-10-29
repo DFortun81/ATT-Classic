@@ -423,6 +423,9 @@ _.Zones =
 				q(324, {	-- The Lost Ingots
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						526, -- -- Lightforge Ingots
+					},
 					--["objectID"] = 2734,	-- Waterlogged Chest
 				}),
 				q(1244, { -- The Missing Diplomat (5/17)

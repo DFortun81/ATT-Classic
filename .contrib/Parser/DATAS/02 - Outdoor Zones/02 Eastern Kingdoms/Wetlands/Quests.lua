@@ -135,6 +135,10 @@ _.Zones =
 				}),
 				q(526, {	-- Lightforge Ingots
 					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						324, -- The Lost Ingots
+					},
 				}),
 				q(647, {	-- MacKreel's Moonshine
 					["lvl"] = 28,
