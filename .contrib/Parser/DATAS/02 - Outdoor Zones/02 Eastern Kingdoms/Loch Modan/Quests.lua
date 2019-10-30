@@ -178,6 +178,7 @@ _.Zones =
 					["g"] = {
 						i(414),	-- Dalaran Sharp
 					},
+					["coord"] = { 22.1, 73.2, LOCH_MODAN },
 				}),
 				q(237, {	-- In Defense of the King's Lands (2/4)
 					["lvl"] = 10,
@@ -232,6 +233,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3836,	-- Mountaineer Pebblebitty
 					["sourceQuest"] = 3181,	-- The Horn of the Beast
+					["coord"] = { 18.2, 84.0, LOCH_MODAN },
 				}),
 				q(309, {	-- Protecting the Shipment
 					["lvl"] = 10,

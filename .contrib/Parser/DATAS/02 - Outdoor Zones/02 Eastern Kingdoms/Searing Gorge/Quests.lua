@@ -200,6 +200,7 @@ _.Zones =
 				q(3181, {	-- The Horn of the Beast
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["provider"] = { "i", 10005 }, -- Margol's Gigantic Horn
 				}),
 				q(4451, {	-- The Key to Freedom
 					["lvl"] = 43,

@@ -415,6 +415,7 @@ _.Zones =
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 8256, -- Curator Thorius
 					["sourceQuest"] = 3182,	-- Proof of Deed
 					["groups"] = {
 						i(5396),	-- Key to Searing Gorge
