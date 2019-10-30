@@ -307,6 +307,8 @@ _.Zones =
 				q(2844, {	-- The Giant Guardian
 					["lvl"] = 44,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7765, -- Rockbiter
+					["coord"] = { 42.4, 22.0, FERALAS },
 				}),
 				q(3002, {	-- The Gordunni Orb
 					["lvl"] = 38,
@@ -408,6 +410,7 @@ _.Zones =
 					["g"] = {
 						i(11243),	-- Videre Elixir
 					},
+					["coord"] = { 45.1, 25.6, FERALAS },
 				}),
 				q(4131, {	-- The Woodpaw Gnolls
 					["lvl"] = 40,

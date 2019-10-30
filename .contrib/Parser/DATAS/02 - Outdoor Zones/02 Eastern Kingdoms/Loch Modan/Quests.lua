@@ -75,14 +75,12 @@ _.Zones =
 					["qg"] = 2057,	-- Huldar
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
 				}),
-				{
-					["questID"] = 704,	-- Agmond's Fate
-					["sourceQuest"] = 739,	-- Murdaloc
-					["qg"] = 1344,	-- Prospector Ironband
-					["coord"] = { 65.9, 65.6, LOCH_MODAN },
-					["maps"] = { BADLANDS },
-					["races"] = ALLIANCE_ONLY,
+				q(704, { -- Agmond's Fate
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1344,	-- Prospector Ironband
+					["sourceQuest"] = 739,	-- Murdaloc
+					["maps"] = { BADLANDS },
 					["groups"] = {
 						{
 							["itemID"] = 4610,	-- Carved Stone Urn
@@ -91,7 +89,8 @@ _.Zones =
 						},
 						i(4980),	-- Prospector Gloves
 					},
-				},
+					["coord"] = { 65.9, 65.6, LOCH_MODAN },
+				}),
 				q(2500, {	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
 					["cost"] = {
@@ -122,9 +121,10 @@ _.Zones =
 					},
 				}),
 				q(298, {	-- Excavation Progress Report
-					["qg"] = 1344,	-- Prospector Ironband
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 1344,	-- Prospector Ironband
+					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 				}),
 				q(307, {	-- Filthy Paws
 					["qg"] = 1343,	-- Mountaineer Stormpike
@@ -139,16 +139,16 @@ _.Zones =
 					["description"] = "Enter the building at 23.3, 17.9 and go up the stairs to access Mountaineer Stormpike.",
 				}),
 				q(738, {	-- Find Agmond
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 707,	-- Ironband Wants You!
-					["coord"] = { 65.93, 65.62, LOCH_MODAN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
 					["g"] = {
 						i(4982),	-- Ripped Prospector Belt
 						i(2776),	-- Gold Ore
 						i(1529),	-- Jade
 					},
+					["coord"] = { 65.93, 65.62, LOCH_MODAN },
 				}),
 				q(297, {	-- Gathering Idols
 					["lvl"] = 13,
@@ -160,6 +160,7 @@ _.Zones =
 						i(6186),	-- Trogg Slicer
 						i(3154),	-- Thelsamar Axe
 					},
+					["coord"] = { 64.9, 66.7, LOCH_MODAN },
 				}),
 				q(6387, {	-- Honor Students
 					["lvl"] = 10,
