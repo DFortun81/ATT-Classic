@@ -491,6 +491,7 @@ _.Zones =
 					["g"] = {
 						i(16765),	-- Warsong Outrider Update
 					},
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6545, {	-- Warsong Runner Update
 					["qg"] = 12863,	-- Warsong Runner
@@ -501,6 +502,7 @@ _.Zones =
 					["g"] = {
 						i(16763),	-- Warsong Runner Update
 					},
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6581, {	-- Warsong Saw Blades
 					["qg"] = 12724,	-- Pixel
@@ -511,6 +513,7 @@ _.Zones =
 					["g"] = {
 						i(16742),	-- Warsong Saw Blades
 					},
+					["description"] = "This quest is repeatable, but only available when the quest \"Warsong Supplies\" (Quest #6571) is in your quest log.",
 				}),
 				q(6547, {	-- Warsong Scout Update
 					["qg"] = 12862,	-- Warsong Scout
@@ -521,6 +524,7 @@ _.Zones =
 					["g"] = {
 						i(16764),	-- Warsong Scout Update
 					},
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
