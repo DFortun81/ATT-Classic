@@ -279,10 +279,14 @@ _.Zones =
 						i(22011),	-- Beastmaster's Bindings
 					},					
 				}),
-				q(3450, {	-- An Easy Pickup
-					["lvl"] = 45,
+				{
+					["questID"] = 3450,	-- An Easy Pickup
+					["sourceQuest"] = 3448,	-- Passing the Burden
+					["qg"] = 8507,	-- Tymor
+					["coord"] = { 31.2, 4.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-				}),
+					["lvl"] = 45,
+				},
 				q(8958, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
 					["classes"] = {9},	-- Warlock
@@ -371,10 +375,29 @@ _.Zones =
 						i(22007),	-- Darkmantle Pants
 					},
 				}),
-				q(3449, {	-- Arcane Runes
-					["lvl"] = 45,
+				{
+					["questID"] = 3449,	-- Arcane Runes
+					["sourceQuest"] = 3448,	-- Passing the Burden
+					["qg"] = 8507,	-- Tymor
+					["coord"] = { 31.2, 4.6, IRONFORGE },
+					["maps"] = { AZSHARA },
+					["cost"] = {
+						{ "i", 10445, 1 },	-- Drawing Kit
+						{ "i", 10563, 1 },	-- Rubbing: Rune of Beth'Amara
+						{ "i", 10564, 1 },	-- Rubbing: Rune of Jin'yael
+						{ "i", 10565, 1 },	-- Rubbing: Rune of Markri
+						{ "i", 10566, 1 },	-- Rubbing: Rune of Sael'hai
+					},
 					["races"] = ALLIANCE_ONLY,
-				}),
+					["lvl"] = 45,
+					["groups"] = {
+						{
+							["itemID"] = 10444,	-- Standard Issue Flare Gun
+							["questID"] = 3449,	-- Arcane Runes
+							["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
+						},
+					},
+				},
 				q(7342, {	-- Arrows Are For Sissies
 					["lvl"] = 52,
 					["races"] = ALLIANCE_ONLY,
@@ -598,10 +621,13 @@ _.Zones =
 						i(9514),	-- Arcane Staff
 					},
 				}),
-				q(3448, {	-- Passing the Burden
-					["lvl"] = 45,
+				{
+					["questID"] = 3448,	-- Passing the Burden
+					["qg"] = 2916,	-- Historian Karnik
+					["coord"] = { 77.2, 11.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-				}),
+					["lvl"] = 45,
+				},
 				q(2963, {	-- Portents of Uldum
 					["sourceQuest"] = 2439,	-- The Platinum Discs [Alliance - Part 3]
 					["qg"] = 5387,	-- High Explorer Magellas
@@ -638,14 +664,19 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(3461, {	-- Return to Tymor
-					["lvl"] = 45,
+				{
+					["questID"] = 3461,	-- Return to Tymor
+					["sourceQuest"] = 3449,	-- Arcane Runes
+					["qg"] = 8392,	-- Pilot Xiggs Fuselighter
+					["coord"] = { 77.8, 91.4, AZSHARA },
+					["maps"] = { AZSHARA },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 45,
 					["groups"] = {
 						i(10707),	-- Steelsmith Greaves
 						i(10708),	-- Skullspell Orb
 					},
-				}),
+				},
 				q(683, {	-- Sara Balloo's Plea
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
@@ -737,15 +768,17 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(3451, {	-- Signal for Pickup
-					["lvl"] = 45,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 8517,	-- Xiggs Fuselighter
+				{
+					["questID"] = 3451,	-- Signal for Pickup
 					["sourceQuest"] = 3450,	-- An Easy Pickup
+					["qg"] = 8517,	-- Xiggs Fuselighter
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 45,
 					["groups"] = {
 						i(10444),	-- Standard Issue Flare Gun
 					},
-				}),
+				},
 				q(3483, {	-- Signal for Pickup
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
