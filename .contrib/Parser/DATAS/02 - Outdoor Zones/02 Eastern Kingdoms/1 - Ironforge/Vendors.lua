@@ -7,17 +7,20 @@ _.Zones =
 		m(IRONFORGE, {	-- Ironforge
 			n(-2, {	-- Vendors
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(18731),	-- Pattern: Heavy Leather Ball
 					},
 				}),
 				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
 					},
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7560),	-- Schematic: Gnomish Universal Remote
 						i(16041),	-- Schematic: Thorium Grenade
@@ -27,6 +30,7 @@ _.Zones =
 					["coord"] = { 67.9, 42.6, IRONFORGE },
 				}),
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(10314),	-- Pattern: Lavender Mageweave Shirt
 						i(10317),	-- Pattern: Pink Mageweave Shirt
@@ -36,6 +40,7 @@ _.Zones =
 					},
 				}),
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11303),	-- Fine Shortbow
 						i(11306),	-- Sturdy Recurve
@@ -43,12 +48,14 @@ _.Zones =
 					},
 				}),
 				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5642),	-- Recipe: Free Action Potion
 						i(13478),	-- Recipe: Elixir of Superior Defense
 					},
 				}),
 				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(6326),	-- Recipe: Slitherskin Mackerel
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -57,6 +64,7 @@ _.Zones =
 					},
 				}),
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect

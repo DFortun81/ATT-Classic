@@ -7,6 +7,7 @@ _.Zones =
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-2, {	-- Vendors
 				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6274),	-- Pattern: Blue Overalls
 						i(10325),	-- Pattern: White Wedding Dress
@@ -14,6 +15,7 @@ _.Zones =
 					["coord"] = { 43.3, 74.0, STORMWIND_CITY },
 				}),
 				n(5494, {	-- Catherine Leland <Fishing Supplier>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6330),	-- Recipe: Bristle Whisker Catfish
@@ -22,6 +24,7 @@ _.Zones =
 					["coord"] = { 45.8, 58.5, STORMWIND_CITY },
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4824),	-- Blurred Axe
 						i(4825),	-- Callous Axe
@@ -33,12 +36,14 @@ _.Zones =
 					["coord"] = { 32.4, 79.9, STORMWIND_CITY },
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(18649),	-- Schematic: Blue Firework
 					},
 					["coord"] = { 29.6, 67.8, STORMWIND_CITY },
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplier>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
@@ -47,6 +52,7 @@ _.Zones =
 					["description"] = "Erika Tate is located at the back of the Pig and Whistle Tavern.",
 				}),
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11303),   -- Fine Shortbow
 						i(11306),	-- Sturdy Recurve
@@ -55,18 +61,21 @@ _.Zones =
 					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
 					},
 				}),
 				n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(12162),	-- Plans: Hardened Iron Shortsword
 					},
 					["coord"] = { 56.3, 17.2, STORMWIND_CITY },
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(728),		-- Recipe: Westfall Stew
 						i(2697),	-- Recipe: Goretusk Liver Pie
@@ -85,11 +94,13 @@ _.Zones =
 					["coord"] = { 74.6, 36.8, STORMWIND_CITY },
 				}),
 				n(8666, {	-- Lil Timmy <Boy with kittens>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(8489),	-- Cat Carrier 'White Kitten'
 					},
 				}),
 				n(1313, {	-- Maria Lumere <Alchemy Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(9301),	-- Recipe: Elixir of Shadow Power
 					},
