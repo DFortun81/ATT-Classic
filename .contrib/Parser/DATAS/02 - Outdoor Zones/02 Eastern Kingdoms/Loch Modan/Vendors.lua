@@ -12,6 +12,7 @@ _.Zones =
 						i(4782),	-- Solstice Robe
 						i(4786),	-- Wise Man's Belt
 					},
+					["coord"] = { 64.8, 66.0, LOCH_MODAN },
 				}),
 				n(1687, {	-- Cliff Hadin <Bowyer>
 					["groups"] = {
