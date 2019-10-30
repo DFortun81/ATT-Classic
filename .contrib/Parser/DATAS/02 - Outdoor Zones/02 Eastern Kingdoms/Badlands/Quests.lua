@@ -344,6 +344,8 @@ _.Zones =
 					["altQuests"] =	{
 						793,	-- Broken Alliances
 					},
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable but can only be completed while \"Broken Alliances\" is in your quest log.",
 				}),
 				q(779, {	-- Seal of the Earth
 					["lvl"] = 40,
@@ -352,6 +354,8 @@ _.Zones =
 					["altQuests"] =	{
 						717,	-- Tremors of the Earth
 					},
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable but can only be completed while \"Tremors of the Earth\" is in your quest log.",					
 				}),
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost

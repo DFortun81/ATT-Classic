@@ -462,8 +462,11 @@ _.Zones =
 					["altQuests"] = {
 						1190,	-- Keeping Pace
 					},
+					["repeatable"] = true,
 					["coord"] = { 79.8, 77.0, THOUSAND_NEEDLES },
 					["lvl"] = 29,
+					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Keeping Pace\" in your quest log.",
+
 				}),
 				q(1119, {	-- Zanzil's Mixture and a Fool's Stout
 					["qg"] = 2498,	-- Crank Fizzlebub

@@ -66,13 +66,15 @@ _.Zones =
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
 				}),
 				q(254, {	-- Digging Through the Dirt
+					["lvl"] = 20,
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
 					["altQuests"] = {
 						253,	-- Bride of the Embalmer
 					},
+					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Bride of the Embalmer\" in your quest log.",
 					["coord"] = { 28.8, 30.8, DUSKWOOD },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
 				}),
 				q(93, {	-- Dusky Crab Cakes
 					["lvl"] = 17,

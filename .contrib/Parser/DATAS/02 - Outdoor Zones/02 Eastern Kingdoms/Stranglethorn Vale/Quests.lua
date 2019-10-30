@@ -163,6 +163,7 @@ _.Zones =
 				q(619, {	-- Enticing Negolash
 					["provider"] = { "o", 2289 },	-- Ruined Lifeboat
 					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 				}),
 				q(628, {	-- Excelsior
 					["lvl"] = 31,
@@ -462,6 +463,7 @@ _.Zones =
 					["qg"] = 1449,	-- Witch Doctor Unbagwa
 					["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
 					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Stranglethorn Fever\" (Quest #348) in your quest log.",
 				}),
 				q(198, {	-- Supplies to Private Thorsen
 					["lvl"] = 30,
