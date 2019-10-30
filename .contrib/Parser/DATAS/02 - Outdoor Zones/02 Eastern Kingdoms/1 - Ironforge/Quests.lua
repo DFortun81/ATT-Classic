@@ -779,6 +779,7 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
+					["u"] = 3,	-- Added in later phase
 				}),
 				q(7905, {	-- The Darkmoon Faire
 					["u"] = 3,	-- Added in later phase

@@ -556,6 +556,7 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = HORDE_ONLY,
 					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
+					["u"] = 3,	-- Added in later phase
 				}),
 				q(235, {	-- The Ashenvale Hunt
 					["lvl"] = 20,
