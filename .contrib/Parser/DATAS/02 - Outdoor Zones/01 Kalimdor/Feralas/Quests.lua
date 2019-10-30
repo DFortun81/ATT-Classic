@@ -218,6 +218,14 @@ _.Zones =
 					["qg"] = 7764,	-- Troyas Moonbreeze
 					["coord"] = { 31.8, 45.5, FERALAS },
 				}),
+				q(3788, {	-- Jonespyre's Request
+					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 7736, -- Innkeeper Shyria
+					["altQuests"] = {
+						3787, -- Jonespyre's Request
+					},
+				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,

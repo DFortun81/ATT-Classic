@@ -94,10 +94,6 @@ _.Zones =
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuest"] = 940,	-- Teldrassil
 				}),
-				q(3788, {	-- Jonespyre's Request
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(4493, {	-- March of the Silithid
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,

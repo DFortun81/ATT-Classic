@@ -262,6 +262,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 				}),
+				q(3787, {	-- Jonespyre's Request
+					["lvl"] = 47,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5566, -- Tannysa
+					["altQuests"] = {
+						3788, -- Jonespyre's Request
+					},
+				}),
 				q(4968, { -- Knowledge of the Orb of Orahil
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
