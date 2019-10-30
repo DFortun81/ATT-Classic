@@ -552,11 +552,13 @@ _.Zones =
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
 				}),
-				q(1477, { -- Vital Supplies
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
+				{
+					["questID"] = 1477,	-- Vital Supplies
 					["qg"] = 5694, -- High Sorcerer Andromath
-				}),
+					["isBreadcrumb"] = true,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+				},
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
