@@ -1471,6 +1471,7 @@ app.L = {
 		["Stratholme"] = 317,
 		["Temple of Ahn'Qiraj"] = 320,
 		["The Temple of Atal'hakkar"] = 220,
+		["The Temple of Atal'Hakkar"] = 220,
 		["The Stockade"] = 225,
 		["Uldaman"] = 230,
 		["Wailing Caverns"] = 279,
