@@ -394,7 +394,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4921,	-- Guard Byron
-					["altQuests"] = { 1301 },	-- James Hyal
+					["altQuests"] = { 1302 },	-- James Hyal
 					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
 				}),
 				q(1288, {	-- Vimes's Report

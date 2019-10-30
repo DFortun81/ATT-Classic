@@ -260,7 +260,6 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["lvl"] = 47,
