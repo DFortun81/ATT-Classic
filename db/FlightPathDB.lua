@@ -413,7 +413,7 @@ select(2, ...).FlightPathDB = {
 	},
 	[65] = {
 		name="Talonbranch Glade, Felwood",
-		faction=0,
+		faction=2,
 		mapID=1448,
 		coord={ 62.6, 24.2, 1448},
 		qg=12578,	-- Mishellena <Hippogryph Master>
