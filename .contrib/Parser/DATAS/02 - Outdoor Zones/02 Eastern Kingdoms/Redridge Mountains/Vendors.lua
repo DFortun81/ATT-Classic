@@ -7,12 +7,14 @@ _.Zones =
 		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
 			n(-2, {	-- Vendors
 				n(777, {	-- Amy Davenport <Tradeswoman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(20576),	-- Pattern: Black Whelp Tunic
 					},
 				}),
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace	
@@ -25,6 +27,7 @@ _.Zones =
 					["coord"] = { 29.1, 47.4, REDRIDGE_MOUNTAINS },
 				}),
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {	
 						i(4794),	-- Wolf Bracers
 						i(4795),	-- Bear Bracers						
@@ -40,11 +43,13 @@ _.Zones =
 					["coord"] = { 74.5, 79.6, REDRIDGE_MOUNTAINS },
 				}),
 				n(2697, {	-- Clyde Ranthal <Leatherworking Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7289),	-- Pattern: Black Whelp Cloak
 					},
 				}),
 				n(3091, {	-- Franklin Hamar <Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,				
 					["groups"] = {										
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
@@ -54,6 +59,7 @@ _.Zones =
 					["description"] = "Franklin Hamar is located on the 2nd floor of the Lakeshire Inn.",
 				}),
 				n(3085, {	-- Gloria Femmel <Cooking Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
@@ -62,6 +68,7 @@ _.Zones =
 					["description"] = "Gloria Femmel is located on the first floor of the Lakeshire Inn.",
 				}),
 				n(793, {	-- Kara Adams <Shield Crafter>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4820),	-- Guardian Buckler					
 						i(4821),	-- Bear Buckler
