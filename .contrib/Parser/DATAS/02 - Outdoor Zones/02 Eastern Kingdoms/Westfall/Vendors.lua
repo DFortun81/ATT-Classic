@@ -7,6 +7,7 @@ _.Zones =
 		m(WESTFALL, {	-- Westfall
 			n(-2, {	-- Vendors
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace	
@@ -18,6 +19,7 @@ _.Zones =
 					},
 				}),
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
 						i(4789),	-- Stable Boots
@@ -25,15 +27,17 @@ _.Zones =
 					},
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
-					["coord"] = { 57.6, 54.1, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5787),	-- Pattern: Murloc Scale Breastplate
 						i(5786),	-- Pattern: Murloc Scale Belt
 						i(5771),	-- Pattern: Red Linen Bag
 						i(6274),	-- Pattern: Blue Overalls
 					},
+					["coord"] = { 57.6, 54.1, WESTFALL },
 				}),
 				n(4305, {	-- Kriggon Talsone <Fisherman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder
 						i(6326),	-- Recipe: Slitherskin Mackerel
@@ -42,6 +46,7 @@ _.Zones =
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},

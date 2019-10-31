@@ -7,6 +7,7 @@ _.Zones =
 		m(WETLANDS, {	-- Wetlands
 			n(-2, {	-- Vendors
 				n(1441, {	-- Brak Durnad <Weaponsmith>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
@@ -14,6 +15,7 @@ _.Zones =
 					["coord"] = { 11.5, 59.6, WETLANDS },
 				}),
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4824),	-- Blurred Axe
 						i(4825),	-- Callous Axe
@@ -26,6 +28,7 @@ _.Zones =
 					},
 				}),
 				n(2682, {	-- Fradd Swiftgear <Engineering Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(13309),	-- Schematic: Lovingly Crafted Boomstick
 						i(14639),	-- Schematic: Minor Recombobulator
@@ -33,6 +36,7 @@ _.Zones =
 					["coord"] = { 26.4, 25.8, WETLANDS },
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 8.1, 55.8, WETLANDS },
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
@@ -48,12 +52,14 @@ _.Zones =
 					["description"] = "Enter the house at 8.3, 56.1 and go upstairs to access Jennabink Powerseam.",
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 11.3, 58.4, WETLANDS },
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3178, {	-- Stuart Fleming <Fisherman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6369),	-- Recipe: Rockscale Cod
@@ -62,6 +68,7 @@ _.Zones =
 					["coord"] = { 8.0, 58.3, WETLANDS },
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt

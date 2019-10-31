@@ -40,6 +40,7 @@ _.Zones =
 					},
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["groups"] = {
 						i(15725),	-- Pattern: Wicked Leather Gauntlets
@@ -47,12 +48,14 @@ _.Zones =
 					},
 				}),
 				n(11278, {	-- Magnus Frostwake
-					i(8030),	-- Plans: Ebon Shiv
-					i(12823), 	-- Plans: Huge Thorium Battleaxe
-					i(12819), 	-- Plans: Ornate Thorium Handaxe
-					i(12703),	-- Plans: Storm Gauntlets
-					i(13501),	-- Recipe: Major Mana Potion
-					i(13485),	-- Recipe: Transmute Water to Air
+					["groups"] = {
+						i(8030),	-- Plans: Ebon Shiv
+						i(12823), -- Plans: Huge Thorium Battleaxe
+						i(12819), -- Plans: Ornate Thorium Handaxe
+						i(12703),	-- Plans: Storm Gauntlets
+						i(13501),	-- Recipe: Major Mana Potion
+						i(13485),	-- Recipe: Transmute Water to Air
+					},
 				}),
 			}),
 		}),

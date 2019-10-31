@@ -7,12 +7,14 @@ _.Zones =
 		m(SILVERPINE_FOREST, {	-- Silverpine Forest
 			n(-2, {	-- Vendors
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
 						i(4789),	-- Stable Boots
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
@@ -20,6 +22,7 @@ _.Zones =
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Goods>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5787),	-- Pattern: Murloc Scale Breastplate
 						i(5786),	-- Pattern: Murloc Scale Belt
@@ -29,12 +32,14 @@ _.Zones =
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(6368),	-- Recipe: Rainbow Fin Albacoreat
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
@@ -42,6 +47,7 @@ _.Zones =
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
@@ -49,11 +55,13 @@ _.Zones =
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace

@@ -7,11 +7,13 @@ _.Zones =
 		m(DUROTAR, {	-- Durotar
 			n(-2, {	-- Vendors
 				n(3881, {	-- Grimtak <Butcher>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5483),	-- Recipe: Scorpid Surprise
 					},
 				}),
 				n(5942, {	-- Zansoa <Fishing Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6326),	-- Recipe: Slitherskin Mackerel
 						i(6368),	-- Recipe: Rainbow Fin Albacore

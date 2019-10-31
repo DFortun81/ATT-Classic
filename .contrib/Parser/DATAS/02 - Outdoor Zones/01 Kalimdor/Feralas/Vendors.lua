@@ -7,22 +7,26 @@ _.Zones =
 		m(FERALAS, {	-- Feralas
 			n(-2, {	-- Vendors
 				n(6576, {	-- Brienna Starglow <Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7089),	-- Pattern: Azure Silk Cloak
 					},
 				}),
 				n(8158, {	-- Bronk <Alchemy Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6057),	-- Recipe: Nature Protection Potion
 						i(9302),	-- Recipe: Ghost Dye
 					},
 				}),
 				n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11308),	-- Sylvan Shortbow
 					},
 				}),
 				n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7451),	-- Pattern: Green Whelp Bracers
 						i(8385),	-- Pattern: Turtle Scale Gloves
@@ -31,6 +35,7 @@ _.Zones =
 					},
 				}),
 				n(7852, {	-- Pratt McGrubben <Leatherworking Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7451),	-- Pattern: Green Whelp Bracers
 						i(8385),	-- Pattern: Turtle Scale Gloves
@@ -38,6 +43,7 @@ _.Zones =
 					},
 				}),
 				n(8145, {	-- Sheendra Tallgrass <Trade Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12229),	-- Recipe: Hot Wolf Ribs
 						i(13947),	-- Recipe: Lobster Stew
@@ -46,6 +52,7 @@ _.Zones =
 					},
 				}),
 				n(7947, {	-- Vivianna <Trade Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12229),	-- Recipe: Hot Wolf Ribs
 						i(13947),	-- Recipe: Lobster Stew
@@ -55,6 +62,7 @@ _.Zones =
 					["coord"] = { 31.3, 43.4, FERALAS },
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12253),	-- Brilliant Red Cloak
 						i(12254),	-- Well Oiled Cloak

@@ -7,12 +7,14 @@ _.Zones =
 		m(DESOLACE, {	-- Desolace
 			n(-2, {	-- Vendors
 				n(12045, {	-- Hae'Wilani <Axecrafter>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12249),	-- Merciless Axe
 						i(12250),	-- Midnight Axe
 					},
 				}),
 				n(8150, {	-- Janet Hommers <Food & Drink>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12240),	-- Recipe: Heavy Kodo Stew
 						i(12233),	-- Recipe: Mystery Stew
@@ -20,6 +22,7 @@ _.Zones =
 					["coord"] = { 66.2, 6.6, DESOLACE },
 				}),
 				n(9636, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7114),	-- Pattern: Azure Silk Gloves
 						i(12232),	-- Recipe: Carrion Surprise
@@ -27,6 +30,7 @@ _.Zones =
 					},
 				}),
 				n(8878, {	-- Muuran <Superior Macecrafter>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul
 					},
@@ -42,6 +46,7 @@ _.Zones =
 					},
 				}),
 				n(12033, {	-- Wulan <Cooking Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16072),	-- Expert Cookbook
 						i(17062),	-- Recipe: Mithril Head Trout

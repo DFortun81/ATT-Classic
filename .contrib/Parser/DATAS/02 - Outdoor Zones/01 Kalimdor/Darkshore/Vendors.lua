@@ -7,7 +7,8 @@ _.Zones =
 		m(DARKSHORE, {	-- Darkshore
 			n(-2, {	-- Vendors
 				n(4307, {	-- Heldan Galesong <Fisherman>
-					["coord"] = {37.0, 56.4, DARKSHORE},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 37.0, 56.4, DARKSHORE },
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder
 						i(6368),	-- Recipe: Rainbow Fin Albacore
@@ -16,20 +17,23 @@ _.Zones =
 					},
 				}),
 				n(4200, {	-- Laird <Fish Vendor>
-					["coord"] = {36.8, 44.3, DARKSHORE},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 36.8, 44.3, DARKSHORE },
 					["groups"] = {
 						i(5485),	-- Recipe: Fillet of Frenzy
 					},
 				}),
 				n(4186, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
-					["coord"] = {37.0, 41.2, DARKSHORE},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 37.0, 41.2, DARKSHORE },
 					["groups"] = {
 						i(5786),	-- Pattern: Murloc Scale Belt
 						i(5787),	-- Pattern: Murloc Scale Breastplate
 					},
 				}),
 				n(4189, {	-- Valdaron <Tailoring Supplies>
-					["coord"] = {38.1, 40.6, DARKSHORE},
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 38.1, 40.6, DARKSHORE },
 					["groups"] = {
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(5771),	-- Pattern: Red Linen Bag

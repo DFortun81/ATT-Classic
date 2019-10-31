@@ -7,6 +7,7 @@ _.Zones =
 		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			n(-2, {	-- Vendors
 				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16084),	-- Expert First Aid - Under Wraps
 						i(16112),	-- Manual: Heavy Silk Bandage
@@ -14,11 +15,13 @@ _.Zones =
 					},
 				}),
 				n(6567, {	-- Ghok'kah <Tailoring Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4355),	-- Pattern: Icy Cloak
 					},
 				}),
 				n(4897, {	-- Helenia Olden <Trade Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5789),	-- Pattern: Murloc Scale Bracers
 						i(12233),	-- Recipe: Mystery Stew
@@ -28,18 +31,21 @@ _.Zones =
 					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 				}),
 				n(4892, {	-- Jensen Farran <Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
 					["coord"] = { 67.9, 49.9, DUSTWALLOW_MARSH },
 				}),
 				n(4888, {	-- Marie Holdston <Weaponsmith>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12248),	-- Daring Dirk
 						i(12250),	-- Midnight Axe
 					},
 				}),
 				n(4879, {	-- Ogg'marr <Butcher>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12228),	-- Recipe: Roast Raptor
 						i(12232),	-- Recipe: Carrion Surprise
@@ -48,6 +54,7 @@ _.Zones =
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
@@ -62,11 +69,13 @@ _.Zones =
 					},
 				}),
 				n(9552, {	-- Zanara <Bowyer>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
 				}),
 				n(4884, {	-- Zulrg <Weaponsmith>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12250),	-- Midnight Axe
 						i(12251),	-- Big Stick

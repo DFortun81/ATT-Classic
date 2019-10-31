@@ -7,6 +7,7 @@ _.Zones =
 		m(FELWOOD, {	-- Felwood
 			n(-2, {	-- Vendors
 				n(2806, {	-- Bale <General Goods>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16110),	-- Recipe: Monster Omelet
 					},
@@ -43,6 +44,7 @@ _.Zones =
 					},
 				}),
 				n(2803, {	-- Malygen <General Goods>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(16110),	-- Recipe: Monster Omelet
 					},
