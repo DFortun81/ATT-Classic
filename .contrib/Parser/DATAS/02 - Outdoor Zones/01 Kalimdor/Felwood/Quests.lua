@@ -15,6 +15,7 @@ _.Zones =
 						i(15708),	-- Blight Leather Gloves
 						i(15709),	-- Gearforge Girdle
 					},
+					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(6162, {	-- A Husband's Last Battle
 					["lvl"] = 46,
@@ -39,16 +40,24 @@ _.Zones =
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9528,	-- Arathandris Silversky
+					["cost"] = {
+						{ "i", 11503, 15 }, -- Blood Amber
+					},
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(4102, {	-- Cleansing Felwood (H)
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["cost"] = {
+						{ "i", 11503, 15 }, -- Blood Amber
+					},
 				}),
 				q(5157, {	-- Collection of the Corrupt Water
 					["lvl"] = 48,
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5155,	-- Forces of Jaedenar
+					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(4447, {	-- Corrupted Night Dragon
 					["lvl"] = 48,
@@ -202,12 +211,17 @@ _.Zones =
 					["lvl"] = 48,
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5159,	-- Cleansed Water Returns to Felwood
+					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(8466, {	-- Feathers for Grazle
 					["lvl"] = 45,
 					["qg"] = 11554,	-- Grazle
 					["repeatable"] = true,
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["cost"] = {
+						{ "i", 21377, 5 }, -- Deadwood Headdress Feather
+					},
+					["coord"] = { 50.9, 85.0, FELWOOD },
 				}),
 				q(8467, {	-- Feathers for Nafien
 					["lvl"] = 45,
@@ -220,6 +234,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9116,	-- Eridan Bluewind
 					["sourceQuest"] = 939,	-- Flute of Xavaric
+					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
 				q(939, {	-- Flute of Xavaric
 					["lvl"] = 49,
@@ -230,6 +245,7 @@ _.Zones =
 				q(5155, {	-- Forces of Jaedenar
 					["lvl"] = 48,
 					["qg"] = 10922,	-- Greta Mosshoof
+					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(4906, {	-- Further Corruption
 					["lvl"] = 49,
@@ -239,6 +255,7 @@ _.Zones =
 					["g"] = {
 						i(11875),	-- Breezecloud Bracers
 					},
+					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
 				q(4883, {	-- Guarding Secrets
 					["lvl"] = 52,
@@ -275,6 +292,7 @@ _.Zones =
 					["g"] = {
 						i(13562),	-- Remains of Trey Lightforge
 					},
+					["coord"] = { 51.3, 82.0, FELWOOD },
 				}),
 				q(6031, {	-- Runecloth
 					["lvl"] = 40,
@@ -320,6 +338,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5889, {	-- Salve via Gathering
 					["lvl"] = 48,
@@ -348,6 +367,7 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 					["sourceQuest"] = 4101, -- Cleansing Felwood
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5884, {	-- Salve via Gathering
 					["lvl"] = 48,
@@ -393,6 +413,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5883, {	-- Salve via Mining
 					["lvl"] = 40,
@@ -420,6 +441,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(4109, {	-- Salve via Mining
 					["lvl"] = 48,
@@ -438,6 +460,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
+					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5890, {	-- Salve via Skinning
 					["lvl"] = 48,
@@ -470,11 +493,13 @@ _.Zones =
 					["lvl"] = 48,
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
+					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(8462, {	-- Speak to Nafien
 					["lvl"] = 45,
 					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
+					["coord"] = { 50.9, 85.0, FELWOOD },
 				}),
 				q(8465, {	-- Speak to Salfa
 					["lvl"] = 45,
@@ -485,6 +510,7 @@ _.Zones =
 					["lvl"] = 49,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9116,	-- Eridan Bluewind
+					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
 				q(5385, {	-- The Remains of Trey Lightforge
 					["lvl"] = 49,
@@ -509,6 +535,7 @@ _.Zones =
 						i(21311),	-- Earth Warder's Vest
 						i(21312),	-- Belt of the Den Watcher
 					},
+					["coord"] = { 50.9, 85.0, FELWOOD },
 				}),
 				q(6131, {	-- Timbermaw Ally
 					["lvl"] = 45,
@@ -523,6 +550,7 @@ _.Zones =
 				q(5156, {	-- Verifying the Corruption
 					["lvl"] = 48,
 					["qg"] = 10921,	-- Taronn Redfeather
+					["coord"] = { 50.9, 81.6, FELWOOD },
 				}),
 				q(4505, {	-- Well of Corruption
 					["lvl"] = 49,

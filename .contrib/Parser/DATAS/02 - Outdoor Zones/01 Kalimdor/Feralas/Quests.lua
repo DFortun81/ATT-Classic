@@ -454,10 +454,12 @@ _.Zones =
 				q(2845, {	-- Wandering Shay
 					["lvl"] = 44,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 2844, -- The Giant Guardian
 					["g"] = {
 						i(9656),	-- Granite Grips
 						i(9657),	-- Vinehedge Cinch
 					},
+					["coord"] = { 38.2, 10.3, FERALAS },
 				}),
 				q(2862, {	-- War on the Woodpaw
 					["lvl"] = 39,
