@@ -7,16 +7,19 @@ _.Zones =
 		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
 			n(-2, {	-- Vendors
 				n(9549, {	-- Borand <Bowyer>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(4083, {	-- Jeeda <Apprentice Witch Doctor>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6055),	-- Recipe: Fire Protection Potion
 					},
 				}),
 				n(12043, {	-- Kulwia <Trade Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11039),	-- Formula: Enchant Cloak - Minor Agility
 						i(11101),	-- Formula: Enchant Bracer - Lesser Strength

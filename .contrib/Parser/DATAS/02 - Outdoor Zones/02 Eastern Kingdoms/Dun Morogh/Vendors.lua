@@ -7,6 +7,7 @@ _.Zones =
 		m(DUN_MOROGH, {	-- Dun Morogh
 			n(-2, {	-- Vendors
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 					},

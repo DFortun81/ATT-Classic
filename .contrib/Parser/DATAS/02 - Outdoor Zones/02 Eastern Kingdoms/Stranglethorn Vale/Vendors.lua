@@ -14,6 +14,7 @@ _.Zones =
 					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(12228),	-- Recipe: Roast Raptor
 						i(12231),	-- Recipe: Jungle Stew
@@ -109,6 +110,7 @@ _.Zones =
 					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
+					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(3682),	-- Recipe: Curiously Tasty Omelet						
 						i(12228),	-- Recipe: Roast Raptor
@@ -196,11 +198,13 @@ _.Zones =
 					}),
 				}),
 				n(1149, {	-- Uthok <General Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(16111),	-- Recipe: Spiced Chili Crab
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
+					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(12164),	-- Plans: Massive Iron Axe						
 						i(12248),	-- Daring Dirk

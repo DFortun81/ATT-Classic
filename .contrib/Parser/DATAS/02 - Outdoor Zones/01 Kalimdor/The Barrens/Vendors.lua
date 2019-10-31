@@ -25,6 +25,7 @@ _.Zones =
 					},
 				}),
 				n(3486, {	-- Halija Whitestrider <Clothier>
+					["races"] = HORDE_ONLY,
 					["groups"] = {										
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
@@ -35,11 +36,13 @@ _.Zones =
 					},
 				}),
 				n(3490, {	-- Hula'mahi <Reagents and Herbs>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6053),	-- Recipe: Holy Protection Potion				
 					},
 				}),
 				n(3683, {	-- Kiknikle <Stylish Clothier>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
@@ -62,12 +65,14 @@ _.Zones =
 					},
 				}),
 				n(3479, {	-- Nargal Deatheye <Weaponsmith>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade						
 					},
 				}),
 				n(3684, {	-- Pizznukle <Leather Armor Merchant>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
 						i(4789),	-- Stable Boots						
@@ -82,18 +87,21 @@ _.Zones =
 					["coord"] = { 61.9, 38.7, THE_BARRENS },
 				}),
 				n(8307, {	-- Tarban Hearthgrain <Baker>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight				
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5486),	-- Recipe: Strider Stew
 						i(5488),	-- Recipe: Crispy Lizard Tail			
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow		
 					},
@@ -106,6 +114,7 @@ _.Zones =
 					},
 				}),
 				n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade
@@ -119,12 +128,14 @@ _.Zones =
 					},
 				}),
 				n(5944, {	-- Yonada <Tailoring & Leatherworking Supplies>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6274),	-- Pattern: Blue Overalls						
 					},
 				}),
 				n(3489, {	-- Zargh <Butcher>
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(3735),	-- Recipe: Hot Lion Chops					
 					},

@@ -7,7 +7,10 @@ _.Zones =
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(-2, {	-- Vendor
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
-					i(12226),	-- Recipe: Crispy Bat Wing
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(12226),	-- Recipe: Crispy Bat Wing
+					},
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					i(19447, {	-- Formula: Enchant Bracer - Healing
@@ -40,12 +43,18 @@ _.Zones =
 					i(13482),	-- Recipe: Transmute Air to Fire
 				}),
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
-					i(6325),	-- Recipe: Brilliant Smallfish
-					i(6326),	-- Recipe: Slitherskin Mackere
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(6325),	-- Recipe: Brilliant Smallfish
+						i(6326),	-- Recipe: Slitherskin Mackere
+					},
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
-					i(15725),	-- Pattern: Wicked Leather Gauntlets
-					i(15741),	-- Pattern: Stormshroud Pants
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(15725),	-- Pattern: Wicked Leather Gauntlets
+						i(15741),	-- Pattern: Stormshroud Pants
+					},
 				}),
 			}),
 		}),
