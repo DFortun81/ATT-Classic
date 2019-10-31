@@ -13,6 +13,7 @@ _.Zones =
 					},
 				}),
 				n(14301, {	-- Brinna Valanaar <Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
