@@ -7,6 +7,7 @@ _.Zones =
 		m(BLASTED_LANDS, {	-- Blasted Lands
 			n(-2, {	-- Vendors
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(9300),	-- Recipe: Elixir of Demonslaying
 					},
