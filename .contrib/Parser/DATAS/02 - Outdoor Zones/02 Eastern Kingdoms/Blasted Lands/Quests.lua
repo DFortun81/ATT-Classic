@@ -26,6 +26,7 @@ _.Zones =
 					["g"] = {
 						i(8423),	-- Cerebral Cortex Compound
 					},
+					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(2522, {	-- Kum'isha's Endeavors
 					["lvl"] = 45,
@@ -49,11 +50,13 @@ _.Zones =
 				}),
 				q(2582, {	-- Rage of Ages
 					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7505,	-- Bloodmage Drazial
+					["sourceQuest"] = 2581, -- Snickerfang Jowls
+					["repeatable"] = true,
 					["g"] = {
 						i(8410),	-- R.O.I.D.S.
 					},
+					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 				}),
 				q(4128, {	-- Ragnar Thunderbrew
 					["lvl"] = 50,
@@ -62,11 +65,13 @@ _.Zones =
 				}),
 				q(2586, {	-- Salt of the Scorpok
 					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7505,	-- Bloodmage Drazial
+					["sourceQuest"] = 2585, -- The Decisive Striker
+					["repeatable"] = true,
 					["g"] = {
 						i(8412),	-- Ground Scorpok Assay
 					},
+					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 				}),
 				q(2581, {	-- Snickerfang Jowls
 					["lvl"] = 45,
@@ -74,14 +79,17 @@ _.Zones =
 					["g"] = {
 						i(8410),	-- R.O.I.D.S.
 					},
+					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 				}),
 				q(2584, {	-- Spirit of the Boar
 					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7505,	-- Bloodmage Drazial
+					["sourceQuest"] = 2583, -- A Boar's Vitality
+					["repeatable"] = true,
 					["g"] = {
 						i(8411),	-- Lung Juice Cocktail
 					},
+					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 				}),
 				q(2604, {	-- Spiritual Domination
 					["lvl"] = 45,
@@ -90,6 +98,7 @@ _.Zones =
 					["g"] = {
 						i(8424),	-- Gizzard Gum
 					},
+					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(2601, {	-- The Basilisk's Bite
 					["lvl"] = 45,
@@ -97,6 +106,7 @@ _.Zones =
 					["g"] = {
 						i(8423),	-- Cerebral Cortex Compound
 					},
+					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(2743, {	-- The Cover of Darkness
 					["lvl"] = 45,
@@ -109,6 +119,7 @@ _.Zones =
 					["g"] = {
 						i(8412),	-- Ground Scorpok Assay
 					},
+					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 				}),
 				q(2521, {	-- To Serve Kum'isha
 					["lvl"] = 45,
@@ -124,6 +135,7 @@ _.Zones =
 					["g"] = {
 						i(8424),	-- Gizzard Gum
 					},
+					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(3628, {	-- You Are Rakh'likh, Demon
 					["lvl"] = 45,
