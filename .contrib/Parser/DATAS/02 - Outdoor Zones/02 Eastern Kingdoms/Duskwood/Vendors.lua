@@ -7,6 +7,7 @@ _.Zones =
 		m(DUSKWOOD, {	-- Duskwood
 			n(-2, {	-- Vendors
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace	
@@ -18,11 +19,13 @@ _.Zones =
 					},
 				}),
 				n(228, {	-- Avette Fellwood <Bowyer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(2481, {	-- Bliztik <Alchemy Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6068),	-- Recipe: Shadow Oil
 					},
@@ -30,11 +33,13 @@ _.Zones =
 					["description"] = "Enter the building at 18.0, 55.2 and go upstairs to find Bliztik.",
 				}),
 				n(2668, {	-- Danielle Zipstitch <Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(14627),	-- Pattern: Bright Yellow Shirt
 					},
 				}),
 				n(225, {	-- Gavin Gnarltree <Weaponsmith>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12247),	-- Broad Bladed Knife
 						i(12249),	-- Merciless Axe
@@ -54,6 +59,7 @@ _.Zones =
 					},
 				}),
 				n(226, {	-- Morg Gnarltree <Armorer>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4797),	-- Fiery Cloak					
 						i(4798),	-- Heavy Runed Cloak
@@ -64,6 +70,7 @@ _.Zones =
 					["coord"] = { 73.9, 48.9, DUSKWOOD },
 				}),
 				n(2669, {	-- Sheri Zipstitch <Tailoring Supplies>
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6401),	-- Pattern: Dark Silk Shirt				
 						i(6275),	-- Pattern: Greater Adept's Robe

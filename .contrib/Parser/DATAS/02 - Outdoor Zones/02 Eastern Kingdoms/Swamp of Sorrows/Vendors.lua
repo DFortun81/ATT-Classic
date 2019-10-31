@@ -7,12 +7,18 @@ _.Zones =
 		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
 			n(-2, {	-- Vendor
 				n(989, {	-- Banalash <Trade Goods>
-					i(11223),	-- Formula: Enchant Bracer - Deflection
-					i(12232),	-- Recipe: Carrion Surprise
-					i(16111),	-- Recipe: Spiced Chili Crab
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(11223),	-- Formula: Enchant Bracer - Deflection
+						i(12232),	-- Recipe: Carrion Surprise
+						i(16111),	-- Recipe: Spiced Chili Crab
+					},
 				}),
 				n(8176, {	-- Gharash <Blacksmithing Supplies>
-					i(7995),	-- Plans: Mithril Scale Bracers
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(7995),	-- Plans: Mithril Scale Bracers
+					},
 				}),
 				n(11874, {	-- Masat T'andr <Superior Leatherworker>
 					["groups"] = {
@@ -23,11 +29,17 @@ _.Zones =
 					["coord"] = { 26.5, 31.4, SWAMP_OF_SORROWS },
 				}),
 				n(8177, {	-- Rartar <Alchemy Supplies>
-					i(9300),	-- Recipe: Elixir of Demonslaying
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(9300),	-- Recipe: Elixir of Demonslaying
+					},
 				}),
 				n(984, {	-- Thralosh <Cloth & Leather Armor Merchant>
-					i(12255),	-- Pale Leggings
-					i(12256),	-- Cindercloth Leggings
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(12255),	-- Pale Leggings
+						i(12256),	-- Cindercloth Leggings
+					},
 				}),
 			}),
 		}),
