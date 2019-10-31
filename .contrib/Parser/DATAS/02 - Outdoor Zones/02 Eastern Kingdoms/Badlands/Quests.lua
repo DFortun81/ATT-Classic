@@ -31,6 +31,7 @@ _.Zones =
 					["sourceQuest"] = 721,	-- A Sign of Hope
 					["qg"] = 2909,	-- Hammertoe Grez
 					["coord"] = { 37.94, 10.53, BADLANDS },
+					["maps"] = { ULDAMAN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["groups"] = {
