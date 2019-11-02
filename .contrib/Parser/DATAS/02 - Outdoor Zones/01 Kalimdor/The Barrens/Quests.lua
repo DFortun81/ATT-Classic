@@ -686,7 +686,7 @@ _.Zones =
 				}),
 				q(1719, { -- The Affray
 					["lvl"] = 30,
-					["races"] = { 1 }, -- Warrior
+					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6236, -- Klannoc Macleod
 					["sourceQuest"] = 1718, -- The Islander
 				}),
