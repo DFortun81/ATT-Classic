@@ -452,6 +452,23 @@ _.Zones =
 					["sourceQuest"] = 62,	-- The Fargodeep Mine
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
 				}),
+				q(2998, { -- The Tome of Divinity
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 927, -- Brother Wilhelm
+					["altQuests"] = {
+						3681, -- The Tome of Divinity
+					},
+					["description"] = "This quest is an alternative quest to Quest #3681.",
+				}),
+				q(1787, { -- The Tome of Divinity (8)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6172, -- Henze Faulk
+					["sourceQuest"] = 1786, -- The Tome of Divinity (7)
+				}),
 				q(1598, { -- The Stolen Tome
 					["lvl"] = 1,
 					["races"] = { 1 }, -- Human

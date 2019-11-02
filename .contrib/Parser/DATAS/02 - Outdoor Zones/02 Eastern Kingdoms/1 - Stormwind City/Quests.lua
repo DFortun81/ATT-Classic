@@ -518,6 +518,69 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2285,	-- Count Remington Ridgewell
 				}),
+				q(1790, { -- The Symbol of Life
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6171, -- Duthorian Rall
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"The Tome of Divinity\" (Quest #1786) in your quest log.",
+				}),
+				q(1641, { -- The Tome of Divinity (1)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6171, -- Duthorian Rall
+				}),
+				q(1642, { -- The Tome of Divinity (2)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["provider"] = { "i", 6775 }, -- Tome of Divinity
+					["sourceQuest"] = 1641, -- The Tome of Divinity (1)
+				}),
+				q(1643, { -- The Tome of Divinity (3)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6171, -- Duthorian Rall
+					["sourceQuest"] = 1642, -- The Tome of Divinity (2)
+				}),
+				q(1644, { -- The Tome of Divinity (4)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6174, -- Stephanie Turner
+					["sourceQuest"] = 1643, -- The Tome of Divinity (3)
+				}),
+				q(1780, { -- The Tome of Divinity (5)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6174, -- Stephanie Turner
+					["sourceQuest"] = 1644, -- The Tome of Divinity (4)
+				}),
+				q(1781, { -- The Tome of Divinity (6)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6171, -- Duthorian Rall
+					["sourceQuest"] = 1644, -- The Tome of Divinity (5)
+				}),
+				q(1786, { -- The Tome of Divinity (7)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6173, -- Gazin Tenorm
+					["sourceQuest"] = 1781, -- The Tome of Divinity (6)
+				}),
+				q(1788, { -- The Tome of Divinity (9)
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 6173, -- Gazin Tenorm
+					["sourceQuest"] = 1787, -- The Tome of Divinity (8)
+				}),
 				q(2607, {	-- The Touch of Zanzil
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
@@ -552,13 +615,12 @@ _.Zones =
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
 				}),
-				{
-					["questID"] = 1477,	-- Vital Supplies
+				q(1477,	{ -- Vital Supplies
 					["qg"] = 5694, -- High Sorcerer Andromath
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
-				},
+				}),
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,

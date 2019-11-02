@@ -844,6 +844,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
+				q(3681, { -- The Tome of Divinity
+					["lvl"] = 12,
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["qg"] = 5149, -- Brandur Ironhammer
+					["altQuests"] = {
+						2998, -- The Tome of Divinity
+					},
+					["description"] = "This quest is an alternative quest to Quest #2998.",
+				}),
 				q(1680, { -- Tormus Deepforge
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
