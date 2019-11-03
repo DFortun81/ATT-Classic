@@ -235,7 +235,6 @@ profession(185, {	-- Cooking
 			{
 				["name"] = "Runn Tum Tuber Surprise",
 				["recipeID"] = 22761,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Sagefish Delight",
