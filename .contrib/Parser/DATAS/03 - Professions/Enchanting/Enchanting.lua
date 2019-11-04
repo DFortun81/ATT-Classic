@@ -501,11 +501,13 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Mighty Intellect",
-				["recipeID"] = 23804
+				["recipeID"] = 23804,
+				["u"] = 3,	-- Added in later phase (Phase 3)
 			},
 			{
 				["name"] = "Mighty Spirit",
-				["recipeID"] = 23803
+				["recipeID"] = 23803,
+				["u"] = 3,	-- Added in later phase (Phase 3)
 			},
 			{
 				["name"] = "Minor Beastslayer",
@@ -525,7 +527,8 @@ profession(333, {	-- Enchanting
 			},
 			{
 				["name"] = "Strength",
-				["recipeID"] = 23799
+				["recipeID"] = 23799,
+				["u"] = 3,	-- Added in later phase (Phase 3)
 			},
 			{
 				["name"] = "Striking",
