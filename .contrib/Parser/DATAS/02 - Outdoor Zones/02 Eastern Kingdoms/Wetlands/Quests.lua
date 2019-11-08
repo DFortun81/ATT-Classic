@@ -217,9 +217,11 @@ _.Zones =
 					["coord"] = { 13.6, 38.2, WETLANDS },
 				}),
 				q(637, {	-- Sully Balloo's Letter
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 4432 },	-- Sully Balloo's Letter
+					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(943, {	-- The Absent Minded Prospector
 					["lvl"] = 15,
