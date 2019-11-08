@@ -218,7 +218,7 @@ _.Zones =
 				}),
 				q(637, {	-- Sully Balloo's Letter
 					["provider"] = { "i", 4433 },	-- Waterlogged Envelope
-					["cost"] = { { "i", 4432 } },	-- Sully Balloo's Letter
+					["cost"] = { { "i", 4432, 1 } },	-- Sully Balloo's Letter
 					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
