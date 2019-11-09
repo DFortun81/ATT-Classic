@@ -89,11 +89,12 @@ _.Zones =
 					["coord"] = { 10.8, 55.9, WETLANDS },
 				}),
 				q(1132, {	-- Fiora Longears
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4455,	-- Red Jack Flint
-					["coord"] = { 9.9, 57.9, WETLANDS },
 					["description"] = "Red Jack Flint is located inside Menethil Keep on the first floor.",
+					["coord"] = { 9.9, 57.9, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 18,
 				}),
 				q(277, {	-- Fire Taboo
 					["lvl"] = 20,

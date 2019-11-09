@@ -131,9 +131,10 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(1133, {	-- Journey to Astranaar
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 1132,	-- Fiora Longears
 					["qg"] = 4456,	-- Fiora Longears
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(1269, {	-- Lieutenant Paval Reethe
 					["lvl"] = 30,
