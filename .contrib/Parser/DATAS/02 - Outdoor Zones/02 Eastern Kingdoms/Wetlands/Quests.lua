@@ -261,10 +261,11 @@ _.Zones =
 					},
 				}),
 				q(463, {	-- The Greenwarden
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
 				}),
 				q(1249, { -- The Missing Diplomat (11/17)
 					["lvl"] = 28,
@@ -334,11 +335,11 @@ _.Zones =
 					["coord"] = { 10.9, 59.6, WETLANDS },
 				}),
 				q(276, {	-- Tramping Paws
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 463,	-- The Greenwarden
+					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["coord"] = { 56.3, 40.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(299, {	-- Uncovering the Past
 					["lvl"] = 25,
