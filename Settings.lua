@@ -77,10 +77,12 @@ local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
 		["DebugMode"] = false,
+		["AccountWide:Deaths"] = true,
 		["AccountWide:FlightPaths"] = true,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
+		["Thing:Deaths"] = true,
 		["Thing:FlightPaths"] = true,
 		["Thing:Quests"] = true,
 		["Thing:Recipes"] = true,
@@ -605,6 +607,35 @@ ThingsLabel.OnRefresh = function(self)
 	end
 end;
 
+local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
+function(self)
+	self:SetChecked(settings:Get("Thing:Deaths"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Deaths", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+DeathsCheckBox:SetATTTooltip("Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.");
+DeathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+
+local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(true);
+	self:Disable();
+	self:SetAlpha(0.2);
+end,
+nil);
+DeathsAccountWideCheckBox:SetATTTooltip("Most people keep this setting turned on. It may be considered insane to turn it off!");
+DeathsAccountWideCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "TOPLEFT", 220, 0);
+
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
 function(self)
 	self:SetChecked(settings:Get("Thing:FlightPaths"));
@@ -622,7 +653,7 @@ function(self)
 	app:RefreshData();
 end);
 FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
-FlightPathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+FlightPathsCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)

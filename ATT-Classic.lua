@@ -2668,11 +2668,19 @@ app.BaseDeathClass = {
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\Normal";
 		elseif key == "collectible" then
-			return true;
+			return app.Settings:Get("Thing:Deaths");
 		elseif key == "progress" then
-			return math.min(1000, GetDataMember("Deaths", 0));
+			if t.collectible then
+				return math.min(1000, GetDataMember("Deaths", 0));
+			else
+				return 0;
+			end
 		elseif key == "total" then
-			return 1000;
+			if t.collectible then
+				return 1000;
+			else
+				return 0;
+			end
 		elseif key == "description" then
 			return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 		else
