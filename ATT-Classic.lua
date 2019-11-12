@@ -5351,6 +5351,15 @@ function app:GetDataCache()
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
 		end
+
+		-- Factions
+		if app.Categories.Factions then
+			db = {};
+			db.text = "Factions";
+			db.icon = "Interface/ICONS/INV_Misc_Map_01";
+			db.g = app.Categories.Factions;
+			table.insert(g, db);
+		end
 		
 		-- Items (Dynamic)
 		--[[
