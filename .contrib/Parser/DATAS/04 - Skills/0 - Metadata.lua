@@ -41,6 +41,30 @@ _.Skills =
 		["cost"] = 200000,
 	},
 	{
+		["recipeID"] = 2480,	-- Shoot Bow
+		["classes"] = { 
+			1, -- Warrior
+			3, -- Hunter
+			4, -- Rogue
+		},
+	},
+	{
+		["recipeID"] = 7919,	-- Shoot Crossbow
+		["classes"] = { 
+			1, -- Warrior
+			3, -- Hunter
+			4, -- Rogue
+		},
+	},
+	{
+		["recipeID"] = 7918,	-- Shoot Gun
+		["classes"] = { 
+			1, -- Warrior
+			3, -- Hunter
+			4, -- Rogue
+		},
+	},
+	{
 		["recipeID"] = 23214,	-- Summon Charger
 		["classes"] = { 2 },	-- Paladin Only!
 		["races"] = { 1, 3 },	-- Human / Dwarf Only!
