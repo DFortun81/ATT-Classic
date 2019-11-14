@@ -5360,6 +5360,15 @@ function app:GetDataCache()
 			db.g = app.Categories.Factions;
 			table.insert(g, db);
 		end
+
+		-- PvP
+		if app.Categories.PvP then
+			db = {};
+			db.text = "PvP";
+			db.icon = "Interface/ICONS/INV_Misc_Map_01";
+			db.g = app.Categories.PvP;
+			table.insert(g, db);
+		end
 		
 		-- Items (Dynamic)
 		--[[
