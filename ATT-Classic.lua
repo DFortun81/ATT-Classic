@@ -3565,7 +3565,7 @@ app.BaseRecipe = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) then
+			if IsSpellKnown(t.spellID) or IsPlayerSpell(t.spellID) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;

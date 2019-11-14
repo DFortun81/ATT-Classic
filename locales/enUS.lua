@@ -1346,6 +1346,9 @@ app.L = {
 		
 		-- Poisons
 		[70] = "Interface\\Icons\\ability_creature_poison_06", -- Consumable
+		
+		-- Weapon Skills
+		[71] = "Interface\\Icons\\INV_Weapon_Halberd_10", -- Weapon Skills
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1433,6 +1436,9 @@ app.L = {
 		
 		-- Poisons
 		[70] = "Consumable",	-- Consumable
+
+		-- Weapon Skills
+		[71] = "Weapon Skills", -- Weapon Skills
 	},
 	
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

@@ -1,6 +1,192 @@
 _.Skills =
 {
 	{
+		["name"] = "Weapon Skills",
+		["categoryID"] = 71,
+		["g"] = {
+			{
+				["recipeID"] = 264,	-- Bows
+				["classes"] = { 
+					HUNTER,
+					ROGUE,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
+				},
+			},
+			{
+				["recipeID"] = 5011,	-- Crossbows
+				["classes"] = { 
+					HUNTER,
+					ROGUE,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
+				},
+			},
+			{
+				["recipeID"] = 1180,	-- Daggers
+				["classes"] = { 
+					DRUID,
+					HUNTER,
+					MAGE,
+					PRIEST,
+					ROGUE,
+					SHAMAN,
+					WARLOCK,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
+					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
+					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+				},
+			},
+			{
+				["recipeID"] = 15590,	-- Fist Weapons
+				["classes"] = { 
+					DRUID,
+					HUNTER,
+					ROGUE,
+					SHAMAN,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 266,	-- Guns
+				["classes"] = { 
+					HUNTER,
+					ROGUE,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 196,	-- One-Handed Axes
+				["classes"] = { 
+					HUNTER,
+					PALADIN,
+					SHAMAN,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 198,	-- One-Handed Maces
+				["classes"] = { 
+					DRUID,
+					PALADIN,
+					PRIEST,
+					ROGUE,
+					SHAMAN,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 198,	-- One-Handed Swords
+				["classes"] = { 
+					HUNTER,
+					MAGE,
+					PALADIN,
+					ROGUE,
+					WARLOCK,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+				},
+			},
+			{
+				["recipeID"] = 200,	-- Polearms
+				["classes"] = { 
+					HUNTER,
+					PALADIN,
+					WARRIOR,
+				},
+			},
+			{
+				["recipeID"] = 227,	-- Staves
+				["classes"] = { 
+					DRUID,
+					HUNTER,
+					MAGE,
+					PRIEST,
+					SHAMAN,
+					WARLOCK,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+				},
+			},
+			{
+				["recipeID"] = 2567,	-- Thrown
+				["classes"] = { 
+					HUNTER,
+					ROGUE,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
+					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
+				},
+			},
+			{
+				["recipeID"] = 197,	-- Two-Handed Axes
+				["classes"] = { 
+					HUNTER,
+					PALADIN,
+					SHAMAN,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 199,	-- Two-Handed Maces
+				["classes"] = { 
+					DRUID,
+					PALADIN,
+					SHAMAN,
+					WARRIOR,
+				},
+				["coords"] = { 
+					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+				},
+			},
+			{
+				["recipeID"] = 202,	-- Two-Handed Swords
+				["classes"] = { 
+					HUNTER,
+					PALADIN,
+					WARRIOR,
+				},
+			},
+			{
+				["recipeID"] = 5009,	-- Wands
+				["classes"] = { 
+					MAGE,
+					PRIEST,
+					WARLOCK,
+				},
+			},
+		},
+	},
+	{
 		["recipeID"] = 824,	-- Horse Riding
 		["races"] = ALLIANCE_ONLY,
 		["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
@@ -39,30 +225,6 @@ _.Skills =
 		["description"] = "Available to Trolls without faction requirements.",
 		["lvl"] = 40,
 		["cost"] = 200000,
-	},
-	{
-		["recipeID"] = 2480,	-- Shoot Bow
-		["classes"] = { 
-			1, -- Warrior
-			3, -- Hunter
-			4, -- Rogue
-		},
-	},
-	{
-		["recipeID"] = 7919,	-- Shoot Crossbow
-		["classes"] = { 
-			1, -- Warrior
-			3, -- Hunter
-			4, -- Rogue
-		},
-	},
-	{
-		["recipeID"] = 7918,	-- Shoot Gun
-		["classes"] = { 
-			1, -- Warrior
-			3, -- Hunter
-			4, -- Rogue
-		},
 	},
 	{
 		["recipeID"] = 23214,	-- Summon Charger
