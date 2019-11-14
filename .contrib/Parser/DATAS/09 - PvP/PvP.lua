@@ -187,6 +187,362 @@ _.PvP =
       i(23290, { -- Knight-Lieutenant's Silk Handwraps
         ["classes"] = { MAGE },
       }),
+      i(23292, { -- Knight-Captain's Chain Hauberk (60)
+        ["classes"] = { HUNTER },
+      }),
+      i(16425, { -- Knight-Captain's Chain Hauberk (58)
+        ["classes"] = { HUNTER },
+      }),
+      i(23294, { -- Knight-Captain's Dragonhide Chestpiece
+        ["classes"] = { DRUID },
+      }),
+      i(16421, { -- Knight-Captain's Dragonhide Tunic
+        ["classes"] = { DRUID },
+      }),
+      i(17568, { -- Knight-Captain's Dreadweave Robe
+        ["classes"] = { WARLOCK },
+      }),
+      i(23297, { -- Knight-Captain's Dreadweave Tunic
+        ["classes"] = { WARLOCK },
+      }),
+      i(23272, { -- Knight-Captain's Lamellar Breastplate (60)
+        ["classes"] = { PALADIN },
+      }),
+      i(16433, { -- Knight-Captain's Lamellar Breastplate (58)
+        ["classes"] = { PALADIN },
+      }),
+      i(16417, { -- Knight-Captain's Leather Armor
+        ["classes"] = { ROGUE },
+      }),
+      i(23298, { -- Knight-Captain's Leather Chestpiece
+        ["classes"] = { ROGUE },
+      }),
+      i(16430, { -- Knight-Captain's Plate Chestguard
+        ["classes"] = { WARRIOR },
+      }),
+      i(23300, { -- Knight-Captain's Plate Hauberk
+        ["classes"] = { WARRIOR },
+      }),
+      i(17600, { -- Knight-Captain's Satin Robes
+        ["classes"] = { PRIEST },
+      }),
+      i(23303, { -- Knight-Captain's Satin Tunic
+        ["classes"] = { PRIEST },
+      }),
+      i(16413, { -- Knight-Captain's Silk Raiment
+        ["classes"] = { MAGE },
+      }),
+      i(23305, { -- Knight-Captain's Silk Tunic
+        ["classes"] = { MAGE },
+      }),
+      i(16426, { -- Knight-Captain's Chain Leggings
+        ["classes"] = { HUNTER },
+      }),
+      i(23293, { -- Knight-Captain's Chain Legguards
+        ["classes"] = { HUNTER },
+      }),
+      i(16422, { -- Knight-Captain's Dragonhide Leggings
+        ["classes"] = { DRUID },
+      }),
+      i(23295, { -- Knight-Captain's Dragonhide Leggings
+        ["classes"] = { DRUID },
+      }),
+      i(17567, { -- Knight-Captain's Dreadweave Leggings
+        ["classes"] = { WARLOCK },
+      }),
+      i(23296, { -- Knight-Captain's Dreadweave Legguards
+        ["classes"] = { WARLOCK },
+      }),
+      i(23273, { -- Knight-Captain's Lamellar Leggings
+        ["classes"] = { PALADIN },
+      }),
+      i(16435, { -- Knight-Captain's Lamellar Leggings
+        ["classes"] = { PALADIN },
+      }),
+      i(23299, { -- Knight-Captain's Leather Legguards
+        ["classes"] = { ROGUE },
+      }),
+      i(16419, { -- Knight-Captain's Leather Legguards
+        ["classes"] = { ROGUE },
+      }),
+      i(23301, { -- Knight-Captain's Plate Leggings
+        ["classes"] = { WARRIOR },
+      }),
+      i(16431, { -- Knight-Captain's Plate Leggings
+        ["classes"] = { WARRIOR },
+      }),
+      i(17599, { -- Knight-Captain's Satin Leggings
+        ["classes"] = { PRIEST },
+      }),
+      i(23302, { -- Knight-Captain's Satin Legguards
+        ["classes"] = { PRIEST },
+      }),
+      i(16414, { -- Knight-Captain's Silk Leggings
+        ["classes"] = { MAGE },
+      }),
+      i(23304, { -- Knight-Captain's Silk Legguards
+        ["classes"] = { MAGE },
+      }),
+      i(23306, { -- Lieutenant Commander's Chain Helm
+        ["classes"] = { HUNTER },
+      }),
+      i(16428, { -- Lieutenant Commander's Chain Helmet
+        ["classes"] = { HUNTER },
+      }),
+      i(16416, { -- Lieutenant Commander's Crown
+        ["classes"] = { MAGE },
+      }),
+      i(17598, { -- Lieutenant Commander's Diadem
+        ["classes"] = { PRIEST },
+      }),
+      i(23308, { -- Lieutenant Commander's Dragonhide Headguard
+        ["classes"] = { DRUID },
+      }),
+      i(16424, { -- Lieutenant Commander's Dragonhide Shroud
+        ["classes"] = { DRUID },
+      }),
+      i(23310, { -- Lieutenant Commander's Dreadweave Cowl
+        ["classes"] = { WARLOCK },
+      }),
+      i(17566, { -- Lieutenant Commander's Headguard
+        ["classes"] = { WARLOCK },
+      }),
+      i(23276, { -- Lieutenant Commander's Lamellar Headguard
+        ["classes"] = { PALADIN },
+      }),
+      i(16434, { -- Lieutenant Commander's Lamellar Headguard
+        ["classes"] = { PALADIN },
+      }),
+      i(23312, { -- Lieutenant Commander's Leather Helm
+        ["classes"] = { ROGUE },
+      }),
+      i(16418, { -- Lieutenant Commander's Leather Veil
+        ["classes"] = { ROGUE },
+      }),
+      i(23314, { -- Lieutenant Commander's Plate Helm
+        ["classes"] = { WARRIOR },
+      }),
+      i(16429, { -- Lieutenant Commander's Plate Helm
+        ["classes"] = { WARRIOR },
+      }),
+      i(23316, { -- Lieutenant Commander's Satin Hood
+        ["classes"] = { PRIEST },
+      }),
+      i(23318, { -- Lieutenant Commander's Silk Cowl
+        ["classes"] = { MAGE },
+      }),
+      i(16427, { -- Lieutenant Commander's Chain Pauldrons
+        ["classes"] = { HUNTER },
+      }),
+      i(23307, { -- Lieutenant Commander's Chain Shoulders
+        ["classes"] = { HUNTER },
+      }),
+      i(16423, { -- Lieutenant Commander's Dragonhide Epaulets
+        ["classes"] = { DRUID },
+      }),
+      i(23309, { -- Lieutenant Commander's Dragonhide Shoulders
+        ["classes"] = { DRUID },
+      }),
+      i(17569, { -- Lieutenant Commander's Dreadweave Mantle
+        ["classes"] = { WARLOCK },
+      }),
+      i(23311, { -- Lieutenant Commander's Dreadweave Spaulders
+        ["classes"] = { WARLOCK },
+      }),
+      i(16436, { -- Lieutenant Commander's Lamellar Shoulders
+        ["classes"] = { PALADIN },
+      }),
+      i(23277, { -- Lieutenant Commander's Lamellar Shoulders
+        ["classes"] = { PALADIN },
+      }),
+      i(23313, { -- Lieutenant Commander's Leather Shoulders
+        ["classes"] = { ROGUE },
+      }),
+      i(16420, { -- Lieutenant Commander's Leather Spaulders
+        ["classes"] = { ROGUE },
+      }),
+      i(16432, { -- Lieutenant Commander's Plate Pauldrons
+        ["classes"] = { WARRIOR },
+      }),
+      i(23315, { -- Lieutenant Commander's Plate Shoulders
+        ["classes"] = { WARRIOR },
+      }),
+      i(17601, { -- Lieutenant Commander's Satin Amice
+        ["classes"] = { PRIEST },
+      }),
+      i(23317, { -- Lieutenant Commander's Satin Mantle
+        ["classes"] = { PRIEST },
+      }),
+      i(23319, { -- Lieutenant Commander's Silk Mantle
+        ["classes"] = { MAGE },
+      }),
+      i(16415, { -- Lieutenant Commander's Silk Spaulders
+        ["classes"] = { MAGE },
+      }),
+      i(16463, { -- Marshal's Chain Grips
+        ["classes"] = { HUNTER },
+      }),
+      i(16484, { -- Marshal's Plate Gauntlets
+        ["classes"] = { WARRIOR },
+      }),
+      i(16448, { -- Marshal's Dragonhide Gauntlets
+        ["classes"] = { DRUID },
+      }),
+      i(16454, { -- Marshal's Leather Handgrips
+        ["classes"] = { ROGUE },
+      }),
+      i(16440, { -- Marshal's Silk Gloves
+        ["classes"] = { MAGE },
+      }),
+      i(17608, { -- Marshal's Satin Gloves
+        ["classes"] = { PRIEST },
+      }),
+      i(16471, { -- Marshal's Lamellar Gloves
+        ["classes"] = { PALADIN },
+      }),
+      i(17584, { -- Marshal's Dreadweave Gloves
+        ["classes"] = { WARLOCK },
+      }),
+      i(16467, { -- Marshal's Chain Legguards
+        ["classes"] = { HUNTER },
+      }),
+      i(16450, { -- Marshal's Dragonhide Legguards
+        ["classes"] = { DRUID },
+      }),
+      i(17579, { -- Marshal's Dreadweave Leggings
+        ["classes"] = { WARLOCK },
+      }),
+      i(16475, { -- Marshal's Lamellar Legplates
+        ["classes"] = { PALADIN },
+      }),
+      i(16456, { -- Marshal's Leather Leggings
+        ["classes"] = { ROGUE },
+      }),
+      i(16479, { -- Marshal's Plate Legguards
+        ["classes"] = { WARRIOR },
+      }),
+      i(17603, { -- Marshal's Satin Pants
+        ["classes"] = { PRIEST },
+      }),
+      i(16442, { -- Marshal's Silk Leggings
+        ["classes"] = { MAGE },
+      }),
+      i(16483, { -- Marshal's Plate Boots
+        ["classes"] = { WARRIOR },
+      }),
+      i(16459, { -- Marshal's Dragonhide Boots
+        ["classes"] = { DRUID },
+      }),
+      i(16437, { -- Marshal's Silk Footwraps
+        ["classes"] = { MAGE },
+      }),
+      i(16462, { -- Marshal's Chain Boots
+        ["classes"] = { HUNTER },
+      }),
+      i(16472, { -- Marshal's Lamellar Boots
+        ["classes"] = { PALADIN },
+      }),
+      i(16446, { -- Marshal's Leather Footguards
+        ["classes"] = { ROGUE },
+      }),
+      i(17583, { -- Marshal's Dreadweave Boots
+        ["classes"] = { WARLOCK },
+      }),
+      i(17607, { -- Marshal's Satin Sandals
+        ["classes"] = { PRIEST },
+      }),
+      i(16465, { -- Field Marshal's Chain Helm
+        ["classes"] = { HUNTER },
+      });
+      i(17578, { -- Field Marshal's Coronal
+        ["classes"] = { WARLOCK },
+      });
+      i(16441, { -- Field Marshal's Coronet
+        ["classes"] = { MAGE },
+      });
+      i(16451, { -- Field Marshal's Dragonhide Helmet
+        ["classes"] = { DRUID },
+      });
+      i(17602, { -- Field Marshal's Headdress
+        ["classes"] = { PRIEST },
+      });
+      i(16474, { -- Field Marshal's Lamellar Faceguard
+        ["classes"] = { PALADIN },
+      });
+      i(16455, { -- Field Marshal's Leather Mask
+        ["classes"] = { ROGUE },
+      });
+      i(16478, { -- Field Marshal's Plate Helm
+        ["classes"] = { WARRIOR },
+      });
+      i(16466, { -- Field Marshal's Chain Breastplate
+        ["classes"] = { HUNTER },
+      }),
+      i(16452, { -- Field Marshal's Dragonhide Breastplate
+        ["classes"] = { DRUID },
+      }),
+      i(17581, { -- Field Marshal's Dreadweave Robe
+        ["classes"] = { WARLOCK },
+      }),
+      i(16473, { -- Field Marshal's Lamellar Chestplate
+        ["classes"] = { PALADIN },
+      }),
+      i(16453, { -- Field Marshal's Leather Chestpiece
+        ["classes"] = { ROGUE },
+      }),
+      i(16477, { -- Field Marshal's Plate Armor
+        ["classes"] = { WARRIOR },
+      }),
+      i(17605, { -- Field Marshal's Satin Vestments
+        ["classes"] = { PRIEST },
+      }),
+      i(16443, { -- Field Marshal's Silk Vestments
+        ["classes"] = { MAGE },
+      }),
+      i(16468, { -- Field Marshal's Chain Spaulders
+        ["classes"] = { HUNTER },
+      }),
+      i(16449, { -- Field Marshal's Dragonhide Spaulders
+        ["classes"] = { DRUID },
+      }),
+      i(17580, { -- Field Marshal's Dreadweave Shoulders
+        ["classes"] = { WARLOCK },
+      }),
+      i(16476, { -- Field Marshal's Lamellar Pauldrons
+        ["classes"] = { PALADIN },
+      }),
+      i(16457, { -- Field Marshal's Leather Epaulets
+        ["classes"] = { ROGUE },
+      }),
+      i(16480, { -- Field Marshal's Plate Shoulderguards
+        ["classes"] = { WARRIOR },
+      }),
+      i(17604, { -- Field Marshal's Satin Mantle
+        ["classes"] = { PRIEST },
+      }),
+      i(16444, { -- Field Marshal's Silk Spaulders
+        ["classes"] = { MAGE },
+      }),
+      i(18867), -- Grand Marshal's Battle Hammer
+      i(18833), -- Grand Marshal's Bullseye
+      i(18876), -- Grand Marshal's Claymore
+      i(23455), -- Grand Marshal's Demolisher
+      i(18838), -- Grand Marshal's Dirk
+      i(18869), -- Grand Marshal's Glaive
+      i(18855), -- Grand Marshal's Hand Cannon
+      i(18827), -- Grand Marshal's Handaxe
+      i(18847), -- Grand Marshal's Left Hand Blade
+      i(12584), -- Grand Marshal's Longsword
+      i(23451), -- Grand Marshal's Mageblade
+      i(18865), -- Grand Marshal's Punisher
+      i(18836), -- Grand Marshal's Repeater
+      i(18843), -- Grand Marshal's Right Hand Blade
+      i(18873), -- Grand Marshal's Stave
+      i(18830), -- Grand Marshal's Sunderer
+      i(23456), -- Grand Marshal's Swiftblade
+      i(23452), -- Grand Marshal's Tome of Power
+      i(23453), -- Grand Marshal's Tome of Restoration
+      i(23454), -- Grand Marshal's Warhammer
     },
   }),
   n(-9913, { -- Horde 
@@ -366,6 +722,362 @@ _.PvP =
       i(22870, { -- Blood Guard's Silk Handwraps
         ["classes"] = { MAGE },
       }),
+      i(16525, { -- Legionnaire's Chain Breastplate
+        ["classes"] = {HUNTER },
+      }),
+      i(22874, { -- Legionnaire's Chain Hauberk
+        ["classes"] = { HUNTER },
+      }),
+      i(16504, { -- Legionnaire's Dragonhide Breastplate
+        ["classes"] = { DRUID },
+      }),
+      i(22877, { -- Legionnaire's Dragonhide Chestpiece
+        ["classes"] = { DRUID },
+      }),
+      i(17572, { -- Legionnaire's Dreadweave Robe
+        ["classes"] = { WARLOCK },
+      }),
+      i(22884, { -- Legionnaire's Dreadweave Tunic
+        ["classes"] = { WARLOCK },
+      }),
+      i(22879, { -- Legionnaire's Leather Chestpiece
+        ["classes"] = { ROGUE },
+      }),
+      i(16505, { -- Legionnaire's Leather Hauberk
+        ["classes"] = { ROGUE },
+      }),
+      i(16522, { -- Legionnaire's Mail Chestpiece
+        ["classes"] = { SHAMAN },
+      }),
+      i(22876, { -- Legionnaire's Mail Hauberk
+        ["classes"] = { SHAMAN },
+      }),
+      i(16513, { -- Legionnaire's Plate Armor
+        ["classes"] = { WARRIOR },
+      }),
+      i(22872, { -- Legionnaire's Plate Hauberk
+        ["classes"] = { WARRIOR },
+      }),
+      i(22885, { -- Legionnaire's Satin Tunic
+        ["classes"] = { PRIEST },
+      }),
+      i(17612, { -- Legionnaire's Satin Vestments
+        ["classes"] = { PRIEST },
+      }),
+      i(16491, { -- Legionnaire's Silk Robes
+        ["classes"] = { MAGE },
+      }),
+      i(22886, { -- Legionnaire's Silk Tunic
+        ["classes"] = { MAGE },
+      }),
+      i(16527, { -- Legionnaire's Chain Leggings
+        ["classes"] = { HUNTER },
+      }),
+      i(22875, { -- Legionnaire's Chain Legguards
+        ["classes"] = { HUNTER },
+      }),
+      i(22878, { -- Legionnaire's Dragonhide Leggings
+        ["classes"] = { DRUID },
+      }),
+      i(16502, { -- Legionnaire's Dragonhide Trousers
+        ["classes"] = { DRUID },
+      }),
+      i(17571, { -- Legionnaire's Dreadweave Leggings
+        ["classes"] = { WARLOCK },
+      }),
+      i(22881, { -- Legionnaire's Dreadweave Legguards
+        ["classes"] = { WARLOCK },
+      }),
+      i(16508, { -- Legionnaire's Leather Leggings
+        ["classes"] = { ROGUE },
+      }),
+      i(22880, { -- Legionnaire's Leather Legguards
+        ["classes"] = { ROGUE },
+      }),
+      i(16523, { -- Legionnaire's Mail Leggings
+        ["classes"] = { SHAMAN },
+      }),
+      i(22887, { -- Legionnaire's Mail Legguards
+        ["classes"] = { SHAMAN },
+      }),
+      i(22873, { -- Legionnaire's Plate Leggings
+        ["classes"] = { WARRIOR },
+      }),
+      i(16515, { -- Legionnaire's Plate Legguards
+        ["classes"] = { WARRIOR },
+      }),
+      i(22882, { -- Legionnaire's Satin Legguards
+        ["classes"] = { PRIEST },
+      }),
+      i(17611, { -- Legionnaire's Satin Trousers
+        ["classes"] = { PRIEST },
+      }),
+      i(22883, { -- Legionnaire's Silk Legguards
+        ["classes"] = { MAGE },
+      }),
+      i(16490, { -- Legionnaire's Silk Pants
+        ["classes"] = { MAGE },
+      }),
+      i(16526, { -- Champion's Chain Headguard
+        ["classes"] = { HUNTER },
+      }),
+      i(23251, { -- Champion's Chain Helm
+        ["classes"] = { HUNTER },
+      }),
+      i(23253, { -- Champion's Dragonhide Headguard
+        ["classes"] = { DRUID },
+      }),
+      i(16503, { -- Champion's Dragonhide Helm
+        ["classes"] = { DRUID },
+      }),
+      i(23255, { -- Champion's Dreadweave Cowl
+        ["classes"] = { WARLOCK },
+      }),
+      i(17570, { -- Champion's Dreadweave Hood
+        ["classes"] = { WARLOCK },
+      }),
+      i(16506, { -- Champion's Leather Headguard
+        ["classes"] = { ROGUE },
+      }),
+      i(23257, { -- Champion's Leather Helm
+        ["classes"] = { ROGUE },
+      }),
+      i(23259, { -- Champion's Mail Headguard
+        ["classes"] = { SHAMAN },
+      }),
+      i(16521, { -- Champion's Mail Helm
+        ["classes"] = { SHAMAN },
+      }),
+      i(16514, { -- Champion's Plate Headguard
+        ["classes"] = { WARRIOR },
+      }),
+      i(23244, { -- Champion's Plate Helm
+        ["classes"] = { WARRIOR },
+      }),
+      i(17610, { -- Champion's Satin Cowl
+        ["classes"] = { PRIEST },
+      }),
+      i(23261, { -- Champion's Satin Hood
+        ["classes"] = { PRIEST },
+      }),
+      i(23263, { -- Champion's Silk Cowl
+        ["classes"] = { MAGE },
+      }),
+      i(16489, { -- Champion's Silk Hood
+        ["classes"] = { MAGE },
+      }),
+      i(23264, { -- Champion's Silk Mantle
+        ["classes"] = { MAGE },
+      }),
+      i(23256, { -- Champion's Dreadweave Spaulders
+        ["classes"] = { WARLOCK },
+      }),
+      i(23243, { -- Champion's Plate Shoulders
+        ["classes"] = { WARRIOR },
+      }),
+      i(23258, { -- Champion's Leather Shoulders
+        ["classes"] = { ROGUE },
+      }),
+      i(17573, { -- Champion's Dreadweave Shoulders
+        ["classes"] = { WARLOCK },
+      }),
+      i(16516, { -- Champion's Plate Pauldrons
+        ["classes"] = { WARRIOR },
+      }),
+      i(16492, { -- Champion's Silk Shoulderpads
+        ["classes"] = { MAGE },
+      }),
+      i(23260, { -- Champion's Mail Pauldrons
+        ["classes"] = { SHAMAN },
+      }),
+      i(16528, { -- Champion's Chain Pauldrons
+        ["classes"] = { HUNTER },
+      }),
+      i(23254, { -- Champion's Dragonhide Shoulders
+        ["classes"] = { DRUID },
+      }),
+      i(17613, { -- Champion's Satin Shoulderpads
+        ["classes"] = { PRIEST },
+      }),
+      i(16524, { -- Champion's Mail Shoulders
+        ["classes"] = { SHAMAN },
+      }),
+      i(16507, { -- Champion's Leather Mantle
+        ["classes"] = { ROGUE },
+      }),
+      i(16501, { -- Champion's Dragonhide Spaulders
+        ["classes"] = { DRUID },
+      }),
+      i(23262, { -- Champion's Satin Mantle
+        ["classes"] = { PRIEST },
+      }),
+      i(23252, { -- Champion's Chain Shoulders
+        ["classes"] = { HUNTER },
+      }),
+      i(16571, { -- General's Chain Gloves
+        ["classes"] = { HUNTER },
+      }),
+      i(16555, { -- General's Dragonhide Gloves
+        ["classes"] = { DRUID },
+      }),
+      i(17588, { -- General's Dreadweave Gloves
+        ["classes"] = { WARLOCK },
+      }),
+      i(16560, { -- General's Leather Mitts
+        ["classes"] = { ROGUE },
+      }),
+      i(16574, { -- General's Mail Gauntlets
+        ["classes"] = { SHAMAN },
+      }),
+      i(16548, { -- General's Plate Gauntlets
+        ["classes"] = { WARRIOR },
+      }),
+      i(17620, { -- General's Satin Gloves
+        ["classes"] = { PRIEST },
+      }),
+      i(16540, { -- General's Silk Handguards
+        ["classes"] = { MAGE },
+      }),
+      i(16567, { -- General's Chain Legguards
+        ["classes"] = { HUNTER },
+      }),
+      i(16552, { -- General's Dragonhide Leggings
+        ["classes"] = { DRUID },
+      }),
+      i(17593, { -- General's Dreadweave Pants
+        ["classes"] = { WARLOCK },
+      }),
+      i(16564, { -- General's Leather Legguards
+        ["classes"] = { ROGUE },
+      }),
+      i(16579, { -- General's Mail Leggings
+        ["classes"] = { SHAMAN },
+      }),
+      i(16543, { -- General's Plate Leggings
+        ["classes"] = { WARRIOR },
+      }),
+      i(17625, { -- General's Satin Leggings
+        ["classes"] = { PRIEST },
+      }),
+      i(16534, { -- General's Silk Trousers
+        ["classes"] = { MAGE },
+      }),
+      i(16569, { -- General's Chain Boots
+        ["classes"] = { HUNTER },
+      }),
+      i(16554, { -- General's Dragonhide Boots
+        ["classes"] = { DRUID },
+      }),
+      i(17586, { -- General's Dreadweave Boots
+        ["classes"] = { WARLOCK },
+      }),
+      i(16558, { -- General's Leather Treads
+        ["classes"] = { ROGUE },
+      }),
+      i(16573, { -- General's Mail Boots
+        ["classes"] = { SHAMAN },
+      }),
+      i(16545, { -- General's Plate Boots
+        ["classes"] = { WARRIOR },
+      }),
+      i(17618, { -- General's Satin Boots
+        ["classes"] = { PRIEST },
+      }),
+      i(16539, { -- General's Silk Boots
+        ["classes"] = { MAGE },
+      }),
+      i(16566, { -- Warlord's Chain Helmet
+        ["classes"] = { HUNTER },
+      }),
+      i(16550, { -- Warlord's Dragonhide Helmet
+        ["classes"] = { DRUID },
+      }),
+      i(17591, { -- Warlord's Dreadweave Hood
+        ["classes"] = { WARLOCK },
+      }),
+      i(16561, { -- Warlord's Leather Helm
+        ["classes"] = { ROGUE },
+      }),
+      i(16578, { -- Warlord's Mail Helm
+        ["classes"] = { SHAMAN },
+      }),
+      i(16542, { -- Warlord's Plate Headpiece
+        ["classes"] = { WARRIOR },
+      }),
+      i(17623, { -- Warlord's Satin Cowl
+        ["classes"] = { PRIEST },
+      }),
+      i(16533, { -- Warlord's Silk Cowl
+        ["classes"] = { MAGE },
+      }),
+      i(16565, { -- Warlord's Chain Chestpiece
+        ["classes"] = { HUNTER },
+      }),
+      i(16549, { -- Warlord's Dragonhide Hauberk
+        ["classes"] = { DRUID },
+      }),
+      i(17592, { -- Warlord's Dreadweave Robe
+        ["classes"] = { WARLOCK },
+      }),
+      i(16563, { -- Warlord's Leather Breastplate
+        ["classes"] = { ROGUE },
+      }),
+      i(16577, { -- Warlord's Mail Armor
+        ["classes"] = { SHAMAN },
+      }),
+      i(16541, { -- Warlord's Plate Armor
+        ["classes"] = { WARRIOR },
+      }),
+      i(17624, { -- Warlord's Satin Robes
+        ["classes"] = { PRIEST },
+      }),
+      i(16535, { -- Warlord's Silk Raiment
+        ["classes"] = { MAGE },
+      }),
+      i(16568, { -- Warlord's Chain Shoulders
+        ["classes"] = { HUNTER },
+      }),
+      i(16551, { -- Warlord's Dragonhide Epaulets
+        ["classes"] = { DRUID },
+      }),
+      i(17590, { -- Warlord's Dreadweave Mantle
+        ["classes"] = { WARLOCK },
+      }),
+      i(16562, { -- Warlord's Leather Spaulders
+        ["classes"] = { ROGUE },
+      }),
+      i(16580, { -- Warlord's Mail Spaulders
+        ["classes"] = { SHAMAN },
+      }),
+      i(16544, { -- Warlord's Plate Shoulders
+        ["classes"] = { WARRIOR },
+      }),
+      i(17622, { -- Warlord's Satin Mantle
+        ["classes"] = { PRIEST },
+      }),
+      i(16536, { -- Warlord's Silk Amice
+        ["classes"] = { MAGE },
+      }),
+      i(18831), -- High Warlord's Battle Axe
+      i(23464), -- High Warlord's Battle Mace
+      i(16345), -- High Warlord's Blade
+      i(18866), -- High Warlord's Bludgeon
+      i(18828), -- High Warlord's Cleaver
+      i(18837), -- High Warlord's Crossbow
+      i(23465), -- High Warlord's Destroyer
+      i(18877), -- High Warlord's Greatsword
+      i(18848), -- High Warlord's Left Claw
+      i(18871), -- High Warlord's Pig Sticker
+      i(18868), -- High Warlord's Pulverizer
+      i(23467), -- High Warlord's Quickblade
+      i(18840), -- High Warlord's Razor
+      i(18835), -- High Warlord's Recurve
+      i(18844), -- High Warlord's Right Claw
+      i(23466), -- High Warlord's Spellblade
+      i(18860), -- High Warlord's Street Sweeper
+      i(23468), -- High Warlord's Tome of Destruction
+      i(23469), -- High Warlord's Tome of Mending
+      i(18874), -- High Warlord's War Staff
     },
   }),
 };
