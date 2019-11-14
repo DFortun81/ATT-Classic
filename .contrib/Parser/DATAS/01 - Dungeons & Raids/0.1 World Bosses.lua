@@ -4,7 +4,6 @@
 
 _.Instances = {
 	n(-7, {	-- World Bosses
-		["u"] = 3,	-- Added in later phase
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
@@ -54,6 +53,7 @@ _.Instances = {
 				},
 			}),
 			n(14889, {	-- Emeriss
+				["u"] = 3,	-- Added in later phase
 				["coord"] = { 51.2, 10.9, FERALAS },
 				["maps"] = { FERALAS },
 				["isRaid"] = true,
@@ -80,6 +80,7 @@ _.Instances = {
 				},
 			}),
 			n(14888, {	-- Lethon
+				["u"] = 3,	-- Added in later phase
 				["coord"] = { 63.3, 27.8, THE_HINTERLANDS },
 				["maps"] = { THE_HINTERLANDS },
 				["isRaid"] = true,
@@ -107,6 +108,7 @@ _.Instances = {
 				},
 			}),
 			n(14890, {	-- Taerar
+				["u"] = 3,	-- Added in later phase
 				["coord"] = { 45.4, 39.6, DUSKWOOD },
 				["maps"] = { DUSKWOOD },
 				["isRaid"] = true,
@@ -133,6 +135,7 @@ _.Instances = {
 				},
 			}),
 			n(14887, {	-- Ysondre
+				["u"] = 3,	-- Added in later phase
 				["coord"] = { 94.2, 35.7, ASHENVALE },
 				["maps"] = { ASHENVALE },
 				["isRaid"] = true,
