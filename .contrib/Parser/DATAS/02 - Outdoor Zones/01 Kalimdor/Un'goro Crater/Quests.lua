@@ -14,6 +14,7 @@ _.Zones =
 				}),
 				q(4491, {	-- A Little Help From My Friends
 					["lvl"] = 50,
+					["sourceQuest"] = 4492, -- Lost!
 					["g"] = {
 						i(11910),	-- Bejeweled Legguards
 						i(11911),	-- Treetop Leggings
@@ -25,6 +26,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
 					["sourceQuest"] = 4141,	-- Muigin and Larion
+					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 				}),
 				q(3883, {	-- Alien Ecology
 					["lvl"] = 48,
@@ -38,17 +40,20 @@ _.Zones =
 				}),
 				q(4501, {	-- Beware of Pterrordax
 					["lvl"] = 49,
+					["provider"] = { "o", 174682 }, -- Beware of Pterrordax
 					--["objectID"] = 174682,	-- Beware of Pterrordax
 					["g"] = {
 						i(11918),	-- Grotslab Gloves
 						i(11919),	-- Cragplate Greaves
 					},
+					["coord"] = { 43.6, 8.4, UNGORO_CRATER },
 				}),
 				q(4144, {	-- Bloodpetal Sprouts
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
 					["sourceQuest"] = 4143,	-- Haze of Evil
+					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 				}),
 				q(4148, {	-- Bloodpetal Zapper
 					["lvl"] = 47,
@@ -62,6 +67,7 @@ _.Zones =
 				q(4243, {	-- Chasing A-Me 01
 					["lvl"] = 48,
 					["qg"] = 9618,	-- Karna Remtravel
+					["coord"] = { 46.4, 13.5, UNGORO_CRATER },
 				}),
 				q(4244, {	-- Chasing A-Me 01
 					["lvl"] = 48,
@@ -128,10 +134,12 @@ _.Zones =
 							i(13481),	-- Recipe: Elixir of Brute Force
 						}),
 					},
+					["coord"] = { 43.6, 7.2, UNGORO_CRATER },
 				}),
 				q(3881, {	-- Expedition Salvation
 					["lvl"] = 48,
 					["qg"] = 9270,	-- Williden Marshal
+					["coord"] = { 43.9, 7.1, UNGORO_CRATER },
 				}),
 				q(974, {	-- Finding the Source
 					["lvl"] = 51,
@@ -170,6 +178,8 @@ _.Zones =
 				}),
 				q(4492, {	-- Lost!
 					["lvl"] = 50,
+					["qg"] = 9997, -- Spraggle Frock
+					["coord"] = { 43.6, 8.5, UNGORO_CRATER },
 				}),
 				q(4321, {	-- Making Sense of It
 					["lvl"] = 47,
@@ -191,9 +201,11 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
+					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
 				}),
 				q(3882, {	-- Roll the Bones
 					["lvl"] = 49,
+					["qg"] = 9272, -- Spark Nilminer
 					["g"] = {
 						i(11908),	-- Archaeologist's Quarry Boots
 						i(11909),	-- Excavator's Utility Belt
@@ -207,6 +219,7 @@ _.Zones =
 						i(11916),	-- Shizzle's Muzzle
 						i(11917),	-- Shizzle's Nozzle Wiper
 					},
+					["coord"] = { 44.2, 11.6, UNGORO_CRATER },
 				}),
 				q(4084, {	-- Silver Heart
 					["lvl"] = 47,
@@ -214,6 +227,7 @@ _.Zones =
 				q(4289, {	-- The Apes of Un'Goro
 					["lvl"] = 47,
 					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(4292, {	-- The Bait for Lar'korwi
 					["lvl"] = 48,
@@ -222,6 +236,7 @@ _.Zones =
 						i(11876),	-- Plainstalker Tunic
 						i(11882),	-- Outrider Leggings
 					},
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(4287, {	-- The Eastern Pylon
 					["lvl"] = 47,
@@ -238,6 +253,7 @@ _.Zones =
 						i(11906),	-- Beastsmasher
 						i(11907),	-- Beastslayer
 					},
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(980, {	-- The New Springs
 					["lvl"] = 51,
@@ -251,6 +267,7 @@ _.Zones =
 				q(4291, {	-- The Scent of Lar'korwi
 					["lvl"] = 48,
 					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(3909, {	-- The Videre Elixir
 					["lvl"] = 47,
@@ -269,6 +286,7 @@ _.Zones =
 				}),
 				q(3884, {	-- Williden's Journal
 					["lvl"] = 48,
+					["provider"] = { "i", 11116 }, -- A Mangled Journal
 				}),
 			}),
 		}),
