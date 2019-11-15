@@ -21,6 +21,8 @@ _.Zones =
 				}),
 				q(5536, {	-- A Land Filled with Hatred
 					["lvl"] = 45,
+					["qg"] = 11548, -- Loth'atu
+					["coord"] = { 11.4, 78.2, AZSHARA },
 				}),
 				q(3381, {	-- A Meeting with the Master
 					["lvl"] = 45,
@@ -137,6 +139,8 @@ _.Zones =
 				}),
 				q(5535, {	-- Spiritual Unrest
 					["lvl"] = 45,
+					["qg"] = 11548, -- Loth'atu
+					["coord"] = { 11.4, 78.2, AZSHARA },
 				}),
 				q(3517, {	-- Stealing Knowledge
 					["lvl"] = 45,

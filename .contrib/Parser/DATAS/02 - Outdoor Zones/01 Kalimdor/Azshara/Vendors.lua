@@ -17,6 +17,7 @@ _.Zones =
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
+					["coord"] = { 12.0, 78.4, AZSHARA },
 				}),
 				n(8678, {	-- Jubie Gadgetspring <Engineering Supplier>
 					["groups"] = {
