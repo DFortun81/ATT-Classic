@@ -289,6 +289,8 @@ _.Zones =
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
+					["qg"] = 3516, -- Arch Druid Fandral Staghelm
+					["coord"] = { 35.2, 9.0, DARNASSUS },
 				}),
 				q(1038, {	-- Velinde's Effects
 					["races"] = ALLIANCE_ONLY,
