@@ -73,11 +73,13 @@ _.Zones =
 					["lvl"] = 48,
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 4243,	-- Chasing A-Me 01
+					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 				}),
 				q(4245, {	-- Chasing A-Me 01
 					["lvl"] = 48,
 					["qg"] = 9623,	-- A-Me 01
 					["sourceQuest"] = 4244,	-- Chasing A-Me 01
+					["coord"] = { 67.6, 16.8, UNGORO_CRATER },
 				}),
 				q(4385, {	-- Crystal Charge
 					["lvl"] = 47,
@@ -140,6 +142,7 @@ _.Zones =
 					["lvl"] = 48,
 					["qg"] = 9270,	-- Williden Marshal
 					["coord"] = { 43.9, 7.1, UNGORO_CRATER },
+					["description"] = "The crate can be found at 68.5, 36.5.",
 				}),
 				q(974, {	-- Finding the Source
 					["lvl"] = 51,
