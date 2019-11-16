@@ -5,37 +5,53 @@ _.WorldDrops =
 {
 	n(-318, {	-- Armor
 		n(-320, {	-- Head
+			i(15363),  -- Trickster's Headdress
 		}),
 		n(-321, {	-- Shoulder
 			i(4709),  --  Forest Leather Mantle
 			i(6617),  -- Sage's Mantle
+			i(7432),  -- Twilight Cowl
 			i(13103),  -- Pads of the Venom Spider
+			i(15357),  -- Headhunter's Spaulders
 		}),
 		n(-322, {	-- Back
 			i(4701),  -- Inscribed Cloak
+			i(4726),  -- Chief Brigadier Cloak
 			i(5751),  -- Webwing Cloak
 			i(9779),  -- Bandit Cloak
+			i(14331),  -- Eternal Cloak
+			i(15594),  -- Steadfast Cloak
 		}),
 		n(-323, {	-- Chest
 			i(821),  -- Riverpaw Leather Vest
 			i(2977),  -- Veteran Armor
 			i(3055),  -- Forest Leather Chestpiece
 			i(3313),  -- Ceremonial Leather Harness
-			i(14175), -- Buccaneer's Vest
+			i(7353),  -- Elder's Padded Armor
+			i(7407),  -- Infiltrator Armor
+			i(14175),  -- Buccaneer's Vest
+			i(15557),  -- Pillager's Chestguard
 		}),
 		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
 			i(3647),  -- Bright Bracers
+			i(6413),  -- Chief Brigadier Bracers
 			i(6613),  -- Sage's Bracers
+			i(7461),  -- Knight's Bracers
+			i(7475),  -- Regal Cuffs
 			i(14723),  -- War Paint Bindings
+			i(15163),  -- Imposing Bracersc
 			i(15306),  -- Feral Bindings
 		}),
 		n(-327, {	-- Hands
 			i(1448),  -- Blackrock Gauntlets
 			i(3058),  -- Forest Leather Gloves
+			i(7433),  -- Twilight Gloves
+			i(9771),  -- Greenweave Gloves
 			i(9795),  -- Ivycloth Gloves
 			i(9813),  -- Fortified Gauntlets
+			i(9823),  -- Durable Gloves
 			i(10369),  -- Imbued Plate Gauntlets
 			i(14117),  -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
@@ -43,12 +59,18 @@ _.WorldDrops =
 		}),
 		n(-328, {	-- Waist
 			i(4708),  -- Bright Belt
+			i(6409),  -- Insignia Belt
 			i(6570),  -- Shimmering Sash
 			i(9801),  -- Superior Belt
+			i(15154),  -- Nocturnal Sash
 		}),
 		n(-329, {	-- Legs
+			i(6431),  -- Imperial Leather Boots
 			i(6587),  -- Scouting Trousers
+			i(7431),  -- Twilight's Pants
+			i(7455),  -- Knight's Legguards
 			i(9756),  -- Gypsy Trousers
+			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
 		}),
@@ -62,7 +84,9 @@ _.WorldDrops =
 			i(13087),  -- River Pride Choker
 		}),
 		filter(52, {	-- Finger
+			i(6757),  -- Jaina's Signet Ring
 			i(11982),  -- Viridian Band
+			i(12007),  -- Prairie RIng
 		}),
 	}),
 	n(-319, {	-- Weapons		
@@ -70,6 +94,8 @@ _.WorldDrops =
 			i(790),  -- Forester's Axe
 			i(871),  -- Flurry Axe
 			i(12990),  -- Razor's Edge
+			i(15232),  -- Hacking Cleaver
+			i(15234),  -- Greater Scythe
 		}),
 		n(-335, {	-- 2H Axes
 			i(2227),  -- Heavy Ogre War Axe
@@ -80,6 +106,7 @@ _.WorldDrops =
 			i(8183),  -- Precision Bow
 		}),
 		n(-347, {	-- Crossbows
+			i(13038),  -- Swiftwind
 		}),			
 		n(-333, {	-- Daggers
 			i(1287),  -- Giant Tarantula Fang
@@ -90,6 +117,7 @@ _.WorldDrops =
 		n(-348, {	-- Fist Weapons	
 		}),
 		n(-345, {	-- Guns
+			i(3042),  -- BKP "Sparrow" Smallbore
 		}),			
 		n(-331, {	-- Held in Off-hand
 			i(15927),  -- Bright Sphere
@@ -106,6 +134,7 @@ _.WorldDrops =
 		}),			
 		n(-332, {	-- Shield
 			i(1204),  -- The Green Tower
+			i(4065),  -- Combat Shield
 			i(6383),  -- Forest Buckler
 			i(9764),  -- Cadet Shield
 			i(9790),  -- Raider's Shield
@@ -113,6 +142,7 @@ _.WorldDrops =
 			i(15943),  -- Imbued Shield
 		}),
 		n(-342, {	-- Staves
+			i(2077),  -- Magician Staff
 		}),
 		n(-338, {	-- 1H Swords
 			i(727),  -- Notched Shortsword
