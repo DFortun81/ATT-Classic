@@ -7064,11 +7064,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					end
 				end
 			elseif e == "TRADE_SKILL_CLOSE" or e == "CRAFT_CLOSE" then
-				self:RefreshRecipes();
-				self:Update();
-				if not self:UpdateFrameVisibility() then
-					self:SetVisible(false);
-				end
+				StartCoroutine("TSMWHY3", function()
+					self:RefreshRecipes();
+					self:Update();
+					if not self:UpdateFrameVisibility() then
+						self:SetVisible(false);
+					end
+				end);
 			end
 		end);
 		return;
