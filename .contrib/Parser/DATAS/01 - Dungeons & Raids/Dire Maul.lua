@@ -174,7 +174,7 @@ _.Instances = {
 					["qg"] = 14381,	-- Lorekeeper Javon
 					["classes"] = { 5 },	-- Priest
 					["cost"] = {
-						{ "i", 18360, 1 },	-- Holy Bologna: What the Light Won't Tell You
+						{ "i", 18362, 1 },	-- Holy Bologna: What the Light Won't Tell You
 					},
 					["lvl"] = 54,
 					["groups"] = {

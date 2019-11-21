@@ -459,7 +459,7 @@ settings.title = f;
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
-f:SetText("v" .. GetAddOnMetadata("ATT-Classic", "Version"));
+f:SetText("Crieve-Atiesh\nv" .. GetAddOnMetadata("ATT-Classic", "Version"));
 f:Show();
 settings.version = f;
 
