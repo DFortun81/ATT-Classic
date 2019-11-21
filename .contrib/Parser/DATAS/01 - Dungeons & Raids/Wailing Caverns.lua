@@ -186,6 +186,9 @@ _.Instances = {
 							["questID"] = 6981,	-- The Glowing Shard
 							["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
 							["coord"] = { 63.0, 37.2, THE_BARRENS },
+							["altQuests"] = {
+								3366 -- The Glowing Shard [6981 and 3366 look identical, but WoWHead doesn't have much info on 3366]
+							},
 						},
 					},
 				},
