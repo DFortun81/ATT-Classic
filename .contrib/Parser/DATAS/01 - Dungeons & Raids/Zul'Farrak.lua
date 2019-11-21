@@ -19,10 +19,14 @@ _.Instances = {
 						i(9533),	-- Masons Fraternity Ring
 					},
 				}),
-				q(2770, { --Gahz'rilla
+				q(2770, { -- Gahz'rilla
+					["sourceQuest"] = 2769,			-- The Brassbolts Brothers
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
 					["maps"] = { THOUSAND_NEEDLES },
+					["cost"] = {
+						{ "i", 8707, 1 },	-- Gahz'rilla's Electrified Scale
+					},
 					["lvl"] = 40,
 					["groups"] = {
 						{
@@ -32,9 +36,13 @@ _.Instances = {
 					},
 				}),
 				q(2991, { -- Nekrum's Medallion
+					["sourceQuest"] = 2990,			-- Thadius Grimshade
 					["provider"] = { "n", 8022 },	-- Thadius Grimshade
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
-					["maps"] = { BLASTED_LANDS },
+					["maps"] = { BLASTED_LANDS, THE_HINTERLANDS },
+					["cost"] = {
+						{ "i", 9471, 1 },	-- Nekrum's Medallion
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),

@@ -63,6 +63,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9540,	-- Enohar Thunderbrew
 				}),
+				q(2993, {	-- Return to the Hinterlands
+					["sourceQuest"] = 2992,	-- The Divination
+					["qg"] = 8022,	-- Thadius Grimshade
+					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+				}),
 				q(2586, {	-- Salt of the Scorpok
 					["lvl"] = 45,
 					["qg"] = 7505,	-- Bloodmage Drazial
@@ -120,6 +128,14 @@ _.Zones =
 						i(8412),	-- Ground Scorpok Assay
 					},
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
+				}),
+				q(2992, {	-- The Divination
+					["sourceQuest"] = 2991,	-- Nekrum's Medallion
+					["provider"] = { "n", 8022 },	-- Thadius Grimshade
+					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(2521, {	-- To Serve Kum'isha
 					["lvl"] = 45,

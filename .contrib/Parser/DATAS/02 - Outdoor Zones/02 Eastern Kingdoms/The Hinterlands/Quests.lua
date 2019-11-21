@@ -93,7 +93,7 @@ _.Zones =
 					["lvl"] = 46,
 					["races"] = HORDE_ONLY,
 				}),
-				q(836, { -- Rescue OOX-09/HL!
+				q(836, { 	-- Rescue OOX-09/HL!
 					["lvl"] = 43,
 					["sourceQuest"] = 485, -- Find OOX-09/HL!
 					["qg"] = 7806, -- Homing Robot OOX-09/HL
@@ -105,11 +105,6 @@ _.Zones =
 						i(19114),	-- Highland Bow
 						i(19115),	-- Flask of Forest Mojo
 					},
-				}),
-				q(2993, {	-- Return to the Hinterlands
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 8022,	-- Thadius Grimshade
 				}),
 				q(1451, {	-- Rhapsody Shindigger
 					["lvl"] = 38,
@@ -132,8 +127,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(2994, {	-- Saving Sharpbeak
-					["lvl"] = 40,
+					["sourceQuest"] = 2993,	-- Return to the Hinterlands
+					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 					["g"] = {
 						i(9651),	-- Gryphon Rider's Stormhammer
 						i(9652),	-- Gryphon Rider's Leggings
@@ -171,22 +169,21 @@ _.Zones =
 					["qg"] = 3188,	-- Master Gadrin
 				}),
 				q(2990, {	-- Thadius Grimshade
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5636, -- Gryphon Master Talonaxe
 					["sourceQuest"] = 2989, -- The Altar of Zul
-					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },					
-				}),
-				q(2989, { -- The Altar of Zul
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5636, -- Gryphon Master Talonaxe
-					["sourceQuest"] = 2988, -- Witherbark Cages
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
+					["cost"] = {
+						{ "i", 9468, 1 },	-- Sharpbeak's Feather
+					},
+					["races"] = ALLIANCE_ONLY,	
+					["lvl"] = 40,			
 				}),
-				q(2992, {	-- The Divination
-					["lvl"] = 40,
+				q(2989, { 	-- The Altar of Zul
+					["sourceQuest"] = 2988, -- Witherbark Cages
+					["qg"] = 5636, -- Gryphon Master Talonaxe
+					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(7843, {	-- The Final Message to the Wildhammer
 					["lvl"] = 44,
@@ -237,10 +234,10 @@ _.Zones =
 					},
 				}),
 				q(2988, {	-- Witherbark Cages
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5636,	-- Gryphon Master Talonaxe
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 			}),
 		}),
