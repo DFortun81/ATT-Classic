@@ -268,6 +268,7 @@ _.Zones =
 					["altQuests"] = {
 						3788, -- Jonespyre's Request
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(4968, { -- Knowledge of the Orb of Orahil
 					["lvl"] = 35,

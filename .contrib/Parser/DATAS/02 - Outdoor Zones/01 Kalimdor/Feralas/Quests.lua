@@ -225,6 +225,7 @@ _.Zones =
 					["altQuests"] = {
 						3787, -- Jonespyre's Request
 					},
+					["isBreadcrumb"] = true,
 				}),
 				q(3127, {	-- Mountain Giant Muisek
 					["lvl"] = 40,
