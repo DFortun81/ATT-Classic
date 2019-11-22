@@ -326,7 +326,7 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 27119,	-- The Gordok Ogre Suit
+					["questID"] = 5518,	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
@@ -351,8 +351,8 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 27120,	-- The Gordok Ogre Suit
-					["sourceQuest"] = 27119,	-- The Gordok Ogre Suit
+					["questID"] = 5519,	-- The Gordok Ogre Suit
+					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["cost"] = {
 						{ "i", 14048, 4 },	-- Bolt of Runecloth
