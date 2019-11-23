@@ -168,7 +168,6 @@ _.Zones =
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 15,
 				}),
 				q(871, {	-- Disrupt the Attacks

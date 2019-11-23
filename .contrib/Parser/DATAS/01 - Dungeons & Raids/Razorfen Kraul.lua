@@ -51,7 +51,6 @@ _.Instances = {
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.4, 37.6, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 					["groups"] = {
 						i(5880),	-- Crate With Holes
