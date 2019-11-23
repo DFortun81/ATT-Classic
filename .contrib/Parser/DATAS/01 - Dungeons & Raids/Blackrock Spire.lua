@@ -843,6 +843,7 @@ _.Instances = {
 				{
 					["itemID"] = 22138,	-- Blackrock Bracer
 					["questID"] = 8994,	-- Final Preparations
+					["u"] = 3,	-- Added in later phase
 				},
 				{
 					["itemID"] = 16786,	-- Black Dragonspawn Eye
@@ -1147,6 +1148,7 @@ _.Instances = {
 						{
 							["itemID"] = 21988,	-- Ember of Emberseer
 							["questID"] = 8961,	-- Three Kings of Flame
+							["u"] = 3,	-- Added in later phase
 						},
 						i(12929),	-- Emberfury Talisman
 						i(12905), 	-- Wildfire Cape

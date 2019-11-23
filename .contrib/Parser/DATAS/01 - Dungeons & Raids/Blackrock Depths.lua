@@ -965,6 +965,7 @@ _.Instances = {
 				{
 					["itemID"] = 21987,	-- Incendicite of Incendius
 					["questID"] = 8961,	-- Three Kings of Flame
+					["u"] = 3,	-- Added in later phase
 				},
 				{
 					["itemID"] = 11126,	-- Tablet of Kurniya

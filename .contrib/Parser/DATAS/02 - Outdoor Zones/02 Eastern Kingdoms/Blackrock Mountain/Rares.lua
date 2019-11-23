@@ -15,6 +15,7 @@ _.Zones =
 						{
 							["itemID"] = 18987,	-- Blackhand's Command
 							["questID"] = 7761,	-- Blackhand's Command
+							["u"] = 3,	-- Added in later phase
 						},
 						i(12219),	-- Unadorned Seal of Ascension
 						i(13248),	-- Burstshot Harquebus

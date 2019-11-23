@@ -334,7 +334,7 @@ _.Instances = {
 						{ "i", 14341, 2 },	-- Rune Thread
 						{ "i", 18240, 1 },	-- Ogre Tannin
 					},
-					["lvl"] = 54,
+					["lvl"] = 56,
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
@@ -361,7 +361,7 @@ _.Instances = {
 						{ "i", 18240, 1 },	-- Ogre Tannin
 					},
 					["repeatable"] = true,
-					["lvl"] = 54,
+					["lvl"] = 56,
 					["groups"] = {
 						i(18258),	-- Gordok Ogre Suit
 					},
@@ -585,6 +585,7 @@ _.Instances = {
 						{
 							["itemID"] = 18299,	-- Hydrospawn Essence
 							["questID"] = 7463,	-- Arcane Refreshment
+							["classes"] = { 8 },	-- Mage Only
 						},
 						i(18324),	-- Waveslicer
 						i(18317),	-- Tempest Talisman
@@ -650,6 +651,7 @@ _.Instances = {
 						{
 							["itemID"] = 21982,	-- Ogre Warbeads
 							["questID"] = 8949,	-- Falrin's Vendetta
+							["u"] = 3,	-- Not available yet! Phase 2?
 						},
 					}),
 					n(14326, {	-- Guard Mol'dar
@@ -811,6 +813,7 @@ _.Instances = {
 						}),
 						i(22224, {	-- Jeering Spectre's Essence
 							["questID"] = 8950,	-- The Instigator's Enchantment
+							["u"] = 3,	-- Not available yet! Phase 2?
 							["crs"] = {
 								11471,	-- Eldreth Apparition
 								11475,	-- Eldreth Phantasm
