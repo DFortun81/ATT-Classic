@@ -233,6 +233,7 @@ _.Instances = {
 					["itemID"] = 21108,	-- Draconic for Dummies
 					["questID"] = 8620,		-- The Only Prescription
 					["description"] = "This item only drops while on the quest 'The Only Prescription'.",
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 				},
 				i(17966),	-- Onyxia Hide Backpack (Bag)

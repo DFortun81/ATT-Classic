@@ -41,9 +41,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3602, {	-- Azsharite
-					["lvl"] = 45,
-					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3511,	-- The Name of the Beast
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["cost"] = {
+						{ "i", 10714, 20 },	-- Crystallized Azsharite
+					},
+					["lvl"] = 45,
 					["g"] = {
 						i(10839),	-- Crystallized Note
 					},
@@ -152,9 +155,12 @@ _.Zones =
 					["qg"] = 13278,	-- Duke Hydraxis
 				}),
 				q(3621, {	-- The Formation of Felbane
-					["lvl"] = 45,
-					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3602,	-- Azsharite
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["cost"] = {
+						{ "i", 10738, 1 },	-- Shipment to Galvan
+					},
+					["lvl"] = 45,
 				}),
 				q(6822, {	-- The Molten Core
 					["lvl"] = 55,
@@ -162,19 +168,27 @@ _.Zones =
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 				}),
 				q(3509, {	-- The Name of the Beast
-					["lvl"] = 45,
-					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3508,	-- Breaking the Ward
+					["qg"] = 7783,	-- Loramus Thalipedes
+					["lvl"] = 45,
 				}),
 				q(3510, {	-- The Name of the Beast
-					["lvl"] = 45,
-					["qg"] = 6134,	-- Lord Arkkoroc
 					["sourceQuest"] = 3509,	-- The Name of the Beast
+					["qg"] = 6134,	-- Lord Arkkoroc
+					["cost"] = {
+						{ "i", 10599, 1 },	-- Hetaera's Beaten Head
+						{ "i", 10598, 1 },	-- Hetaera's Bloodied Head
+						{ "i", 10600, 1 },	-- Hetaera's Bruised Head
+					},
+					["lvl"] = 45,
 				}),
 				q(3511, {	-- The Name of the Beast
-					["lvl"] = 45,
-					["qg"] = 6134,	-- Lord Arkkoroc
 					["sourceQuest"] = 3510,	-- The Name of the Beast
+					["qg"] = 6134,	-- Lord Arkkoroc
+					["cost"] = {
+						{ "i", 10610, 1 },	-- Hetaera's Blood
+					},
+					["lvl"] = 45,
 				}),
 				q(8729, {	-- The Wrath of Neptulon
 					["lvl"] = 60,

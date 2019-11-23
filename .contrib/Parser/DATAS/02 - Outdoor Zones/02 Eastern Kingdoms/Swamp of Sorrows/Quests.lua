@@ -155,10 +155,11 @@ _.Zones =
 					["qg"] = 7623,	-- Dispatch Commander Ruag
 				}),
 				q(2681, {	-- The Stones That Bind Us
-					["lvl"] = 45,
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["maps"] = { BLASTED_LANDS },
+					["lvl"] = 45,
 				}),
 				q(2623, {	-- The Swamp Talker
 					["qg"] = 7643,	-- Bengor
@@ -183,10 +184,36 @@ _.Zones =
 					},
 				}),
 				q(3627, {	-- Uniting the Shattered Amulet
-					["lvl"] = 45,
-					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3626,	-- Return to the Blasted Lands
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["cost"] = {
+						{ "i", 10755, 1 },	-- Amulet of Allistarj
+						{ "i", 10753, 1 },	-- Amulet of Grol
+						{ "i", 10754, 1 },	-- Amulet of Sevine
+					},
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["maps"] = { BLASTED_LANDS },
+					["lvl"] = 45,
+					["groups"] = {
+						{
+							["itemID"] = 10755,	-- Amulet of Allistarj
+							["cr"] = 7666,	-- Archmage Allistarj
+							["questID"] = 3627,	-- Uniting the Shattered Amulet
+							["coord"] = { 66.8, 29.6, BLASTED_LANDS },
+						},
+						{
+							["itemID"] = 10753,	-- Amulet of Grol
+							["cr"] = 7665,	-- Grol the Destroyer
+							["questID"] = 3627,	-- Uniting the Shattered Amulet
+							["coord"] = { 43.0, 12.8, BLASTED_LANDS },
+						},
+						{
+							["itemID"] = 10754,	-- Amulet of Sevine
+							["cr"] = 7667,	-- Lady Sevine
+							["questID"] = 3627,	-- Uniting the Shattered Amulet
+							["coord"] = { 40.6, 30.2, BLASTED_LANDS },
+						},
+					},
 				}),
 			}),
 		}),

@@ -13,8 +13,11 @@ _.Zones =
 					},
 				}),
 				q(3501, {	-- Everything Counts In Large Amounts
-					["lvl"] = 45,
 					["qg"] = 7363,	-- Kum'isha the Collector
+					["lvl"] = 45,
+					["cost"] = {
+						{ "i", 10593, 1 },	-- Imperfect Draenethyst Fragment
+					},
 					["g"] = {
 						i(12122),	-- Kum'isha's Junk
 					},
@@ -29,17 +32,25 @@ _.Zones =
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(2522, {	-- Kum'isha's Endeavors
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7363,	-- Kum'isha the Collector
+					["sourceQuest"] = 2521,	-- To Serve Kum'isha
+					["cost"] = {
+						{ "i", 8244, 1 },	-- Flawless Draenethyst Sphere
+					},
+					["repeatable"] = true,
+					["lvl"] = 45,
 					["g"] = {
 						i(10752),	-- Emerald Encrusted Chest
 					},
 				}),
 				q(3502, {	-- One Draenei's Junk...
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7363,	-- Kum'isha the Collector
+					["sourceQuest"] = 3501,	-- Everything Counts In Large Amounts
+					["cost"] = {
+						{ "i", 10593, 1 },	-- Imperfect Draenethyst Fragment
+					},
+					["repeatable"] = true,
+					["lvl"] = 45,
 					["g"] = {
 						i(12122),	-- Kum'isha's Junk
 					},
@@ -138,9 +149,11 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(2521, {	-- To Serve Kum'isha
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 7363,	-- Kum'isha the Collector
+					["cost"] = {
+						{ "i", 8244, 1 },	-- Flawless Draenethyst Sphere
+					},
+					["lvl"] = 45,
 					["g"] = {
 						i(10752),	-- Emerald Encrusted Chest
 					},

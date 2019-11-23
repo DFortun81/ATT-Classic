@@ -763,6 +763,7 @@ _.Instances = {
 					["qg"] = 10468,	-- Felnok Steelspring
 					["coord"] = { 61.6, 38.6, WINTERSPRING },
 					["maps"] = { WINTERSPRING },
+					["isBreadcrumb"] = true,
 					["lvl"] = 57,
 				},
 				{
