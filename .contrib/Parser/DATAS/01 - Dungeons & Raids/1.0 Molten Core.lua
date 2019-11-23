@@ -110,6 +110,7 @@ _.Instances = {
 				i(20951, {	-- Narain's Scrying Goggles
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					["questID"] = 8578,	-- Scrying Goggles? No Problem!
+					["u"] = 3,	-- Not available yet.
 				}),
 				i(16802, {	-- Arcanist Belt (Mage)
 					["crs"] = {

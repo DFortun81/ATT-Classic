@@ -504,14 +504,22 @@ _.Zones =
 					--["objectID"] = 142343,	-- Uldum Pedestal
 				}),
 				q(8893, {	-- The Super Egg-O-Matic
-					["lvl"] = 42,
-					["repeatable"] = true,
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["repeatable"] = true,
+					["maps"] = { FERALAS },
+					["cost"] = {
+						{ "i", 8564, 1 },	-- Hippogryph Egg
+					},
+					["lvl"] = 42,
 					["g"] = {
 						i(8647),	-- Egg Crate
 					},
 				}),
 				q(2741, {	-- The Super Egg-O-Matic
+					["maps"] = { FERALAS },
+					["cost"] = {
+						{ "i", 8564, 1 },	-- Hippogryph Egg
+					},
 					["lvl"] = 42,
 					["g"] = {
 						i(8647),	-- Egg Crate
