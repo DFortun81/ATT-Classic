@@ -168,6 +168,7 @@ _.Zones =
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
+					["maps"] = { STONETALON_MOUNTAINS },
 					["lvl"] = 15,
 				}),
 				q(871, {	-- Disrupt the Attacks
@@ -820,6 +821,7 @@ _.Zones =
 					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6236, -- Klannoc Macleod
 					["sourceQuest"] = 1719, -- The Affray
+					["isBreadcrumb"] = true,
 				}),
 				q(845, {	-- The Zhevra
 					["qg"] = 3338,	-- Sergra Darkthorn
