@@ -17,7 +17,6 @@ _.Zones =
 							["questID"] = 7761,	-- Blackhand's Command
 							["u"] = 3,	-- Added in later phase
 						},
-						i(12219),	-- Unadorned Seal of Ascension
 						i(13248),	-- Burstshot Harquebus
 						i(13254),	-- Astral Guard
 					},
