@@ -146,6 +146,12 @@ _.Zones =
 					["classes"] = { 5 }, -- Priest
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
 				}),
+				q(3098, { -- Glyphic Scroll
+					["lvl"] = 1,
+					["races"] = { UNDEAD },
+					["classes"] = { MAGE },
+					["qg"] = 1569, -- Shadow Priest Sarvis
+				}),
 				q(5481, {	-- Gordo's Task
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
@@ -165,11 +171,13 @@ _.Zones =
 					["races"] = { 5 }, -- Undead
 					["classes"] = { 5 }, -- Priest
 					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
+					["coord"] = { 31.1, 66.0, TIRISFAL_GLADES },
 				}),
 				q(6395, {	-- Marla's Last Wish
 					["lvl"] = 3,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1661,	-- Novice Elreth
+					["sourceQuest"] = 376, -- The Damned
 					["g"] = {
 						i(16333),	-- Samuel's Remains
 					},
@@ -179,6 +187,7 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1570,	-- Executor Arren
+					["sourceQuest"] = 376, -- The Damned
 					["g"] = {
 						i(3270),	-- Flax Vest
 						i(3273),	-- Rugged Mail Vest
@@ -204,6 +213,7 @@ _.Zones =
 				q(3901, {	-- Rattling the Rattlecages
 					["qg"] = 1569,	-- Shadow Priest Sarvis
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 364, -- The Mindless Ones
 					["g"] = {
 						i(3274),	-- Flax Boots
 						i(11851),	-- Scavenger Tunic
@@ -237,6 +247,7 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1740,	-- Deathguard Saltain
+					["sourceQuest"] = 376, -- The Damned
 					["g"] = {
 						i(11848),	-- Flax Belt
 						i(11849),	-- Rustmetal Bracers
@@ -345,6 +356,7 @@ _.Zones =
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1570,	-- Executor Arren
+					["sourceQuest"] = 381, -- The Scarlet Crusade
 					["g"] = {
 						i(3277),	-- Executor Staff
 						i(3276),	-- Deathguard Buckler
@@ -354,6 +366,7 @@ _.Zones =
 				q(381, {	-- The Scarlet Crusade
 					["qg"] = 1570,	-- Executor Arren
 					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 380, -- Night Web's Hollow
 					["lvl"] = 2,
 					["g"] = {
 						i(3268),	-- Forsaken Dagger
@@ -375,9 +388,10 @@ _.Zones =
 					["description"] = "Completing this quest prevents you from accepting \"Veteran Uzzek\" and \"Path of Defense\" in the Barrens.\n\nThis quest becomes unavailable after completing \"Path of Defense\" in the Barrens.",
 				}),
 				q(383, {	-- Vital Intelligence
-					["qg"] = 1570,	-- Executor Arren
-					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
+					["races"] = HORDE_ONLY,
+					["qg"] = 1570,	-- Executor Arren
+					["sourceQuest"] = 382, -- The Red Messenger
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 				}),
 				q(398, {	-- Wanted: Maggot Eye
