@@ -14,6 +14,7 @@ _.Zones =
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1518,	-- Apothecary Johaan
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(369, {	-- A New Plague
 					["lvl"] = 6,
@@ -22,6 +23,7 @@ _.Zones =
 					["g"] = {
 						i(3442),	-- Apprentice Sash
 					},
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(368, {	-- A New Plague
 					["lvl"] = 6,
@@ -30,6 +32,7 @@ _.Zones =
 					["g"] = {
 						i(3434),	-- Slumber Sand
 					},
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(367, {	-- A New Plague
 					["lvl"] = 6,
@@ -38,6 +41,7 @@ _.Zones =
 					["g"] = {
 						i(3382),	-- Weak Troll's Blood Potion
 					},
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(5901, {	-- A Plague Upon Thee
 					["lvl"] = 48,
@@ -51,10 +55,10 @@ _.Zones =
 					["sourceQuest"] = 5901,	-- A Plague Upon Thee
 				}),
 				q(404, {	-- A Putrid Task
-					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
+					["qg"] = 1496,	-- Deathguard Dillinger
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 				}),
 				q(590, {	-- A Rogue's Deal
 					["races"] = HORDE_ONLY,
@@ -66,6 +70,7 @@ _.Zones =
 						i(4604),	-- Forest Mushroom Cap
 						i(159),	-- Refreshing Spring Water
 					},
+					["coord"] = { 38.2, 56.8, TIRISFAL_GLADES },
 				}),
 				q(1821, {	-- Agamand Heirlooms
 					["qg"] = 1500,	-- Coleman Farthing
@@ -81,11 +86,13 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1515,	-- Executor Zygand
+					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
 				}),
 				q(370, {	-- At War With The Scarlet Crusade
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1515,	-- Executor Zygand
+					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
 				}),
 				q(372, {	-- At War With The Scarlet Crusade
 					["lvl"] = 5,
@@ -95,11 +102,13 @@ _.Zones =
 						i(3445),	-- Ceremonial Knife
 						i(3071),	-- Striking Hatchet
 					},
+					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
 				}),
 				q(427, {	-- At War With The Scarlet Crusade
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1515,	-- Executor Zygand
+					["coord"] = { 60.6, 51.8, TIRISFAL_GLADES },
 				}),
 				q(431, {	-- Candles of Beckoning
 					["lvl"] = 5,
@@ -119,32 +128,38 @@ _.Zones =
 					["lvl"] = 9,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1518,	-- Apothecary Johaan
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(5482, {	-- Doom Weed
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10665,	-- Junior Apothecary Holland
+					["sourceQuest"] = 5481, -- Gordo's Task
 				}),
 				q(365, {	-- Fields of Grief
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1519,	-- Deathguard Simmer
+					["coord"] = { 40.9, 54.2, TIRISFAL_GLADES },
 				}),
 				q(407, {	-- Fields of Grief
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1518,	-- Apothecary Johaan
+					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 				}),
 				q(359, {	-- Forsaken Duties
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1499,	-- Magistrate Sevren
+					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 				}),
 				q(5650, { -- Garments of Darkness
 					["lvl"] = 5,
 					["races"] = { 5 }, -- Undead
 					["classes"] = { 5 }, -- Priest
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
+					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
 				}),
 				q(3098, { -- Glyphic Scroll
 					["lvl"] = 1,
@@ -165,6 +180,7 @@ _.Zones =
 						i(6063),	-- Cold Steel Gauntlets
 						i(3439),	-- Zombie Skin Boots
 					},
+					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 				}),
 				q(5651, { -- In Favor of Darkness
 					["lvl"] = 5,
@@ -256,15 +272,15 @@ _.Zones =
 					["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
 				}),
 				q(1820, {	-- Speak with Coleman
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuests"] = {
 						1819,	-- Ulag the Cleaver
 					},
 					["isBreadcrumb"] = true,
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 10,
 				}),
 				q(1818, {	-- Speak with Dillinger
 					["qg"] = 2131,	-- Austil de Mon
@@ -288,6 +304,7 @@ _.Zones =
 						i(3833),	-- Adept's Cloak
 						i(5939),	-- Sewing Gloves
 					},
+					["coord"] = { 61.9, 52.7, TIRISFAL_GLADES },
 				}),
 				q(376, {	-- The Damned
 					["lvl"] = 2,
@@ -313,6 +330,7 @@ _.Zones =
 						i(3446),	-- Darkwood Staff
 						i(3440),	-- Bonecracker
 					},
+					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 				}),
 				q(362, {	-- The Haunted Mills
 					["lvl"] = 7,
@@ -320,10 +338,10 @@ _.Zones =
 					["qg"] = 1500,	-- Coleman Farthing
 				}),
 				q(426, {	-- The Mills Overrun
-					["qg"] = 1496,	-- Deathguard Dillinger
-					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
+					["qg"] = 1496,	-- Deathguard Dillinger
+					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["g"] = {
 						i(3447),	-- Cryptwalker Boots
 						i(3834),	-- Sturdy Cloth Trousers
@@ -343,6 +361,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 1499,	-- Magistrate Sevren
+					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 				}),
 				q(411, {	-- The Prodigal Lich Returns
 					["lvl"] = 5,
@@ -397,11 +416,13 @@ _.Zones =
 				q(398, {	-- Wanted: Maggot Eye
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
+					["provider"] = { "i", 711 }, -- Wanted!
 					--["objectID"] = 711,	-- Wanted!
 					["g"] = {
 						i(5941),	-- Brass Scale Pants
 						i(3444),	-- Tiller's Vest
 					},
+					["coord"] = { 60.7, 51.5, TIRISFAL_GLADES },
 				}),
 				q(5847, {	-- Welcome!
 					["provider"] = { "i", 14651 },	-- Deathknell Gift Voucher
