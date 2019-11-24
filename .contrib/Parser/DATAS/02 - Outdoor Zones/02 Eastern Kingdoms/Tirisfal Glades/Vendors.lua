@@ -11,6 +11,7 @@ _.Zones =
 					["groups"] = {
 						i(12226),	-- Recipe: Crispy Bat Wing
 					},
+					["coord"] = { 61.0, 52.4, TIRISFAL_GLADES },
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					i(19447, {	-- Formula: Enchant Bracer - Healing
