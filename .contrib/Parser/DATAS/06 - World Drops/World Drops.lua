@@ -5,10 +5,13 @@ _.WorldDrops =
 {
 	n(-318, {	-- Armor
 		n(-320, {	-- Head
+			i(7529),  -- Cabalist Helm111
+			i(14944),  -- Warbringer's Crown
 			i(15363),  -- Trickster's Headdress
 		}),
 		n(-321, {	-- Shoulder
 			i(4709),  --  Forest Leather Mantle
+			i(4718),  -- Nightsky Mantle
 			i(6617),  -- Sage's Mantle
 			i(7432),  -- Twilight Cowl
 			i(13103),  -- Pads of the Venom Spider
@@ -18,6 +21,8 @@ _.WorldDrops =
 			i(4701),  -- Inscribed Cloak
 			i(4726),  -- Chief Brigadier Cloak
 			i(5751),  -- Webwing Cloak
+			i(6417),  -- Aurora Cloak
+			i(6432),  -- Imperial Cloak
 			i(9779),  -- Bandit Cloak
 			i(14331),  -- Eternal Cloak
 			i(15594),  -- Steadfast Cloak
@@ -27,8 +32,11 @@ _.WorldDrops =
 			i(2977),  -- Veteran Armor
 			i(3055),  -- Forest Leather Chestpiece
 			i(3313),  -- Ceremonial Leather Harness
+			i(4074),  -- Mail Combat Armor
 			i(7353),  -- Elder's Padded Armor
 			i(7407),  -- Infiltrator Armor
+			i(7477),  -- Ranger Tunic
+			i(9884),  -- Sorcerer Robe
 			i(14175),  -- Buccaneer's Vest
 			i(15557),  -- Pillager's Chestguard
 		}),
@@ -40,6 +48,8 @@ _.WorldDrops =
 			i(6613),  -- Sage's Bracers
 			i(7461),  -- Knight's Bracers
 			i(7475),  -- Regal Cuffs
+			i(7525),  -- Gossamer BRacers
+			i(9821),  -- Durable Bracers
 			i(14723),  -- War Paint Bindings
 			i(15163),  -- Imposing Bracersc
 			i(15306),  -- Feral Bindings
@@ -60,8 +70,11 @@ _.WorldDrops =
 		n(-328, {	-- Waist
 			i(4708),  -- Bright Belt
 			i(6409),  -- Insignia Belt
+			i(6418),  -- Aurora Sash
 			i(6570),  -- Shimmering Sash
 			i(9801),  -- Superior Belt
+			i(9891),  -- Huntsman's Belt
+			i(9906),  -- Royal Sash
 			i(15154),  -- Nocturnal Sash
 		}),
 		n(-329, {	-- Legs
@@ -70,6 +83,7 @@ _.WorldDrops =
 			i(7431),  -- Twilight's Pants
 			i(7455),  -- Knight's Legguards
 			i(9756),  -- Gypsy Trousers
+			i(9862),  -- Archer's Trousers
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
@@ -96,6 +110,8 @@ _.WorldDrops =
 			i(12990),  -- Razor's Edge
 			i(15232),  -- Hacking Cleaver
 			i(15234),  -- Greater Scythe
+			i(15233),  -- Savage Axe
+			i(15235),  -- Crescent Edge
 		}),
 		n(-335, {	-- 2H Axes
 			i(2227),  -- Heavy Ogre War Axe
@@ -103,6 +119,7 @@ _.WorldDrops =
 		}),	
 		n(-346, {	-- Bows
 			i(3036),  -- Heavy Shortbow
+			i(4087),  -- Trueshot Bow
 			i(8183),  -- Precision Bow
 		}),
 		n(-347, {	-- Crossbows
@@ -110,6 +127,7 @@ _.WorldDrops =
 		}),			
 		n(-333, {	-- Daggers
 			i(1287),  -- Giant Tarantula Fang
+			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger	
 			i(15242),  -- Honed Stiletto
@@ -118,9 +136,12 @@ _.WorldDrops =
 		}),
 		n(-345, {	-- Guns
 			i(3042),  -- BKP "Sparrow" Smallbore
+			i(8188),  -- Explosive Shotgun
 		}),			
 		n(-331, {	-- Held in Off-hand
+			i(7555),  -- Regal Star
 			i(15927),  -- Bright Sphere
+			i(15929),  -- Nightsky Orb
 		}),
 		n(-336, {	-- 1H Maces
 			i(789),  -- Stout Battlehammer
@@ -136,24 +157,31 @@ _.WorldDrops =
 			i(1204),  -- The Green Tower
 			i(4065),  -- Combat Shield
 			i(6383),  -- Forest Buckler
+			i(7331),  -- Phalanax Shield
 			i(9764),  -- Cadet Shield
 			i(9790),  -- Raider's Shield
+			i(14947),  -- Warbringer's Shield
 			i(15298),  -- Grizzly Buckler
 			i(15943),  -- Imbued Shield
 		}),
 		n(-342, {	-- Staves
+			i(866),  -- Monk's Staff
+			i(943),  -- Warden Staff
 			i(2077),  -- Magician Staff
 		}),
 		n(-338, {	-- 1H Swords
 			i(727),  -- Notched Shortsword
+			i(864),  -- Knigthly Longsword
 			i(2011),  -- Twisted Sabre
 			i(15210),  -- Raider Shortsword
 		}),
 		n(-339, {	-- 2H Swords
 			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword
+			i(15251),  -- Headstriker Sword
 		}),
 		n(-341, {	-- Wands
+			i(5213),  -- Scorching Wand
 		}),
 	}),	
 	filter(200, {	-- Recipes
