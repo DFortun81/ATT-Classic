@@ -25,8 +25,13 @@ _.Zones =
 					},
 				}),
 				q(3721, {	-- An OOX of Your Own
-					["lvl"] = 30,
 					["qg"] = 7406,	-- Oglethorpe Obnoticus
+					["sourceQuests"] = {
+						2767,	-- Rescue OOX-22/FE!
+						648,	-- Rescue OOX-17/TN!
+						836,	-- Rescue OOX-09/HL!
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(10398),	-- Mechanical Chicken
 					},

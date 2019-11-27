@@ -34,8 +34,12 @@ _.Zones =
 					},
 				}),
 				q(485, {	-- Find OOX-09/HL!
-					["lvl"] = 43,
 					["provider"] = { "i", 8704 }, -- OOX-09/HL Distress Beacon
+					["lvl"] = 43,
+					["groups"] = {
+						i(9645),	-- Gnomish Inventor Boots
+						i(9646),	-- Gnomish Water Winking Device
+					},
 				}),
 				q(7816, {	-- Gammerita, Mon!
 					["lvl"] = 44,
