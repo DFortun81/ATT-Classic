@@ -118,16 +118,29 @@ _.Zones =
 					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
-					["lvl"] = 55,
+					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
+					["sourceQuest"] = 5504,	-- Mantles of the Dawn
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-					["repeatable"] = true,	-- need to check and make sure 5521 is the first one and 5524 is the repeatable one
+					["cost"] = {
+						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				}),
 				q(5521, {	-- Chromatic Mantle of the Dawn
-					["lvl"] = 55,
+					["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
+					["sourceQuest"] = 5507,	-- Mantles of the Dawn
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
@@ -233,13 +246,24 @@ _.Zones =
 					},
 				}),
 				q(5507, {	-- Mantles of the Dawn
-					["lvl"] = 55,
+					["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 55,
 				}),
 				q(5504, {	-- Mantles of the Dawn
-					["lvl"] = 55,
+					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
-					["qg"] = 10856,	-- Argent Quartermaster Hasana
+					["lvl"] = 55,
 				}),
 				q(5408, {	-- Minion's Scourgestones
 					["lvl"] = 50,

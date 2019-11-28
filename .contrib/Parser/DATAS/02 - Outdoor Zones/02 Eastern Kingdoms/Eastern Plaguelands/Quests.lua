@@ -60,6 +60,13 @@ _.Zones =
 					["qg"] = 1855,	-- Tirion Fordring
 				}),
 				q(5517, {	-- Chromatic Mantle of the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["sourceQuest"] = 5513,	-- Mantles of the Dawn
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -454,8 +461,13 @@ _.Zones =
 					["qg"] = 10927,	-- Marlene Redpath
 				}),
 				q(5513, {	-- Mantles of the Dawn
-					["lvl"] = 55,
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["cost"] = {
+						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
+					},
+					["coord"] = { 81.6, 60, EASTERN_PLAGUELANDS },
+					["lvl"] = 55,
 				}),
 				q(5206, {	-- Marauders of Darrowshire
 					["lvl"] = 50,
