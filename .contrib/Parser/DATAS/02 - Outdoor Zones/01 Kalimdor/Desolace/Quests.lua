@@ -64,8 +64,13 @@ _.Zones =
 					},
 				}),
 				q(1369, {	-- Broken Tears
+					["qg"] = 5398,	-- Warug
+					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["cost"] = {
+						{ "i", 6083, 3 },	-- Broken Tears
+					},
+					["coord"] = { 74.8, 68, DESOLACE },
 					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 				}),
 				q(6141, {	-- Brother Anton
 					["lvl"] = 34,
@@ -171,14 +176,20 @@ _.Zones =
 					},
 				}),
 				q(1371, {	-- Gizmo for Warug
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 5398,	-- Warug
+					["sourceQuest"] = 1369,	-- Broken Tears
+					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["cost"] = {
+						{ "i", 4392, 1 },	-- Advanced Target Dummy
+					},
+					["coord"] = { 74.8, 68, DESOLACE },
+					["lvl"] = 30,
 				}),
 				q(5381, {	-- Hand of Iruxos
-					["lvl"] = 32,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11624,	-- Taiga Wisemane
+					["coord"] = { 25.8, 68.2, DESOLACE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(5763, {	-- Hunting in Stranglethorn
 					["lvl"] = 28,
@@ -191,6 +202,17 @@ _.Zones =
 					["qg"] = 5395,	-- Felgur Twocuts
 				}),
 				q(1381, {	-- Khan Hratha
+					["qg"] = 5398,	-- Warug
+					["sourceQuest"] = 1375,	-- Gizmo for Warug
+					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["cr"] = 5402,	-- Khan Hratha
+					["cost"] = {
+						{ "i", 6077, 1 },	-- Maraudine Key Fragment
+					},
+					["coords"] = {
+						{ 74.8, 68, DESOLACE },
+						{ 29.8, 52.8, DESOLACE },
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(6788),	-- Magram Hunter's Belt
@@ -199,6 +221,11 @@ _.Zones =
 					},
 				}),
 				q(1380, {	-- Khan Hratha
+					["qg"] = 5397,	-- Uthek the Wise
+					["sourceQuest"] = 1374,	-- Khan Jehn
+					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["cr"] = 5402,	-- Khan Hratha
+					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
 					["g"] = {
 						i(6773),	-- Gelkis Marauder Chain
@@ -207,9 +234,24 @@ _.Zones =
 					},
 				}),
 				q(1374, {	-- Khan Jehn
+					["qg"] = 5397,	-- Uthek the Wise
+					["sourceQuest"] = 1373,	-- Ongeku
+					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
 				}),
 				q(1375, {	-- Khan Shaka
+					["qg"] = 5398,	-- Warug
+					["sourceQuest"] = 1371,	-- Gizmo for Warug
+					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["cr"] = 5602,	-- Khan Shaka
+					["cost"] = {
+						{ "i", 6073, 1 },	-- Khan Shaka's Head
+					},
+					["coords"] = {
+						{ 74.8, 68, DESOLACE },
+						{ 40.6, 95.6, DESOLACE },
+					},
 					["lvl"] = 30,
 				}),
 				q(5561, {	-- Kodo Roundup
@@ -233,9 +275,11 @@ _.Zones =
 					["sourceQuest"] = 6567, -- The Champion of the Horde
 				}),
 				q(1373, {	-- Ongeku
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5397,	-- Uthek the Wise
+					["sourceQuest"] = 1370,	-- Stealing Supplies
+					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["coord"] = { 36.2, 79.2, DESOLACE },
+					["lvl"] = 30,
 				}),
 				q(6143, {	-- Other Fish to Fry
 					["lvl"] = 32,
@@ -243,8 +287,9 @@ _.Zones =
 					["qg"] = 12340,	-- Drulzegar Skraghook
 				}),
 				q(5581, {	-- Portals of the Legion
-					["lvl"] = 32,
+					["sourceQuest"] = 5381,	-- Hand of Iruxos
 					["races"] = HORDE_ONLY,
+					["lvl"] = 32,
 					["qgs"] = {
 						5395,	-- Felgur Twocuts
 						11624,	-- Taiga Wisemane
@@ -255,8 +300,12 @@ _.Zones =
 					},
 				}),
 				q(1384, {	-- Raid on the Kolkar
+					["qg"] = 5397,	-- Uthek the Wise
+					["cost"] = {
+						{ "i", 6079, 10 },	-- Crude Charm
+					},
+					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1467, {	-- Reagents for Reclaimers Inc.
 					["lvl"] = 30,
@@ -314,6 +363,9 @@ _.Zones =
 					["qg"] = 5644,	-- Dalinda Malem
 				}),
 				q(1370, {	-- Stealing Supplies
+					["qg"] = 5397,	-- Uthek the Wise
+					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
 					["g"] = {
 						i(3463),	-- Silver Star

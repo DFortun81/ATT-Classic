@@ -85,9 +85,9 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
-				i(9326, {	-- Grime-Encrusted Ring
-					["questID"] = 2945,	-- Grime-Encrusted Ring
-					["crs"] = { 6212 },	-- Dark Iron Agent
+				q(2945, {	-- Grime-Encrusted Ring
+					["provider"] = { "i", 9326 },	-- Grime-Encrusted Ring
+					["cr"] = 6212,	-- Dark Iron Agent
 					["groups"] = {
 						i(9362),	-- Brilliant Gold Ring
 					},
