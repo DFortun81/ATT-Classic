@@ -171,17 +171,22 @@ _.Instances = {
 					["groups"] = {
 						{
 							["itemID"] = 18489,	-- Unfired Ancient Blade
-							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown and the phase is not about to transition in order to avoid dying.",
+							["questID"] = 7509,	-- The Forging of Quel'Serrar
+							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
+							["classes"] = { 1, 2 },	-- Warrior, Paladin
+						},
+						{
+							["itemID"] = 18488,	-- Heated Ancient Blade
+							["questID"] = 7509,	-- The Forging of Quel'Serrar
+							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
+							["classes"] = { 1, 2 },	-- Warrior, Paladin
+						},
+						{
+							["itemID"] = 18492,	-- Treated Ancient Blade
+							["questID"] = 7509,	-- The Forging of Quel'Serrar
+							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse during The Forging of Quel'Serrar quest.",
 							["classes"] = { 1, 2 },	-- Warrior, Paladin
 							["crs"] = { 10184 },	-- Onyxia
-							["groups"] = {
-								{
-									["itemID"] = 18492,	-- Treated Ancient Blade
-									["questID"] = 7509,	-- The Forging of Quel'Serrar
-									["description"] = "Only drops from Onyxia when you use the Unfired Ancient Blade during The Forging of Quel'Serrar quest.",
-									["classes"] = { 1, 2 },	-- Warrior, Paladin
-								},
-							},
 						},
 						i(18348),	-- Quel'Serrar
 					},
@@ -207,9 +212,14 @@ _.Instances = {
 					},
 				}),
 				{
-					["allianceQuestID"] = 7495,	-- Victory for the Alliance
-					["hordeQuestID"] = 7490,	-- Victory for the Horde
-					["description"] = "This quest is started by looting the Head of Onyxia.",
+					["questID"] = 7495,	-- Victory for the Alliance
+					["provider"] = { "i", 18423 },	-- Head of Onyxia (A)
+					["races"] = ALLIANCE_ONLY,
+				},
+				{
+					["questID"] = 7490,	-- Victory for the Horde
+					["provider"] = { "i", 18422 },	-- Head of Onyxia (H)
+					["races"] = HORDE_ONLY,
 				},
 			}),
 			n(10184, {	-- Onyxia
