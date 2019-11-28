@@ -78,10 +78,11 @@ _.Zones =
 					["qg"] = 12336,	-- Brother Crowley
 				}),
 				q(1385, {	-- Brutal Politics
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5396,	-- Captain Pentigast
+					["description"] = "Once you complete 'Khan Hratha' for the Gelkis Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
 					["coord"] = { 66.7, 11.0, DESOLACE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(5386, {	-- Catch of the Day
 					["lvl"] = 32,
@@ -374,10 +375,11 @@ _.Zones =
 					},
 				}),
 				q(1382, {	-- Strange Alliance
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5396,	-- Captain Pentigast
 					["coord"] = { 66.7, 11.0, DESOLACE },
+					["description"] = "Once you complete 'Khan Hratha' for the Magram Clan, you can accept and start working on this quest. Bare in mind that it is quite-the-grind to get back to Friendly. Best of luck to you!",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1435, {	-- The Burning of Spirits
 					["qg"] = 4498,	-- Maurin Bonesplitter
