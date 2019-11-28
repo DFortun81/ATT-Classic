@@ -165,30 +165,46 @@ _.Zones =
 						i(10696),	-- Enchanted Azsharite Felbane Sword
 					},
 				}),
-				q(619, {	-- Enticing Negolash
-					["provider"] = { "o", 2289 },	-- Ruined Lifeboat
-					["repeatable"] = true,
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
-				}),
 				q(628, {	-- Excelsior
 					["lvl"] = 31,
 					["g"] = {
 						i(4109),	-- Excelsior Boots
 					},
 				}),
-				q(618, {	-- Facing Negolash
-					["lvl"] = 35,
-					["g"] = {
-						i(4130),	-- Smotts' Compass
-					},
-				}),
 				q(8554, {	-- Facing Negolash
-					["lvl"] = 35,
 					["qg"] = 2594,	-- Sprogger
+					["sourceQuest"] = 8553,	-- The Captain's Cutlass
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3935, 1 },	-- Smotts' Cutlass
+					},
+					["altQuests"] = {
+						618,	-- Facing Negolash
+					},
+					["lvl"] = 35,
 					["g"] = {
+						q(619, {	-- Enticing Negolash
+							["provider"] = { "o", 2289 },	-- Ruined Lifeboat
+							["cost"] = {
+								{ "i", 4457, 10 },	-- Barbecued Buzzard Wing
+								{ "i", 4595, 5 },	-- Junglevine Wine
+							},
+							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
+							["repeatable"] = true,
+							["groups"] = {
+								n(1494, {	-- Negolash
+									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
+									["groups"] = {
+										{
+											["itemID"] = 3935,	-- Smotts' Cutlass
+											["questID"] = 8554,	-- Facing Negolash
+										},
+									}
+								}),
+							},
+						}),
 						i(4130),	-- Smotts' Compass
 					},
-					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(627, {	-- Favor for Krazek
 					["lvl"] = 32,
@@ -456,25 +472,25 @@ _.Zones =
 					},
 				}),
 				q(348, {	-- Stranglethorn Fever
-					["lvl"] = 40,
 					["qg"] = 2486,	-- Fin Fizracket
+					["coord"] = { 27.6, 76.7, STRANGLETHORN_VALE },
+					["lvl"] = 40,
 					["g"] = {
 						i(4113),	-- Medicine Blanket
 					},
-					["coord"] = { 27.6, 76.7, STRANGLETHORN_VALE },
 				}),
 				q(349, {	-- Stranglethorn Fever
-					["lvl"] = 32,
 					["qg"] = 1449,	-- Witch Doctor Unbagwa
 					["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
+					["lvl"] = 32,
 					["repeatable"] = true,
 					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Stranglethorn Fever\" (Quest #348) in your quest log.",
 				}),
 				q(198, {	-- Supplies to Private Thorsen
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(575, {	-- Supply and Demand
 					["qg"] = 2495,	-- Drizzlik
@@ -482,110 +498,112 @@ _.Zones =
 					["lvl"] = 26,
 				}),
 				q(595, {	-- The Bloodsail Buccaneers (1)
-					["lvl"] = 37,
 					["qg"] = 2490,	-- First Mate Crazz
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
+					["lvl"] = 37,
 				}),
 				q(597, {	-- The Bloodsail Buccaneers (2)
-					["lvl"] = 37,
-					["coord"] = { 27.3, 69.5, STRANGLETHORN_VALE },
-					["provider"] = { "o", 2083 }, -- Bloodsail Correspondence
-					--["objectID"] = 2083,	-- Bloodsail Correspondence
 					["sourceQuest"] = 595, -- The Bloodsail Buccaneers (1)
+					["provider"] = { "o", 2083 }, -- Bloodsail Correspondence
+					["coord"] = { 27.3, 69.5, STRANGLETHORN_VALE },
+					["lvl"] = 37,
 				}),
 				q(599, {	-- The Bloodsail Buccaneers (3)
-					["lvl"] = 37,
+					["sourceQuest"] = 597, -- The Bloodsail Buccaneers (2)
 					["qg"] = 2490,	-- First Mate Crazz
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
-					["sourceQuest"] = 597, -- The Bloodsail Buccaneers (2)
+					["lvl"] = 37,
 				}),
 				q(604, {	-- The Bloodsail Buccaneers (4)
-					["lvl"] = 37,
-					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 599, -- The Bloodsail Buccaneers (3)
+					["qg"] = 2487,	-- Fleet Master Seahorn
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
+					["lvl"] = 37,
 				}),
 				q(608, {	-- The Bloodsail Buccaneers (5)
-					["lvl"] = 37,
-					["qg"] = 2487,	-- Fleet Master Seahorn
 					["sourceQuest"] = 604, -- The Bloodsail Buccaneers (4)
+					["qg"] = 2487,	-- Fleet Master Seahorn
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
+					["lvl"] = 37,
 					["g"] = {
 						i(4138),	-- Blackwater Tunic
 					},
 				}),
 				q(8551, {	-- The Captain's Chest
-					["lvl"] = 35,
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
+					["lvl"] = 35,
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
-					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
 				}),
 				q(614, {	-- The Captain's Chest
-					["lvl"] = 35,
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
+					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
+					["lvl"] = 35,
 					["g"] = {
 						i(11469),	-- Bloodband Bracers
 					},
-					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
-				}),
-				q(615, {	-- The Captain's Cutlass
-					["lvl"] = 35,
 				}),
 				q(8553, {	-- The Captain's Cutlass
+					["qg"]	= 2500,	-- Captain Hecklebury Smotts
+					["sourceQuest"] = 8552,	-- The Monogrammed Sash
+					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },
+					["altQuests"] = {
+						615,	-- The Captain's Cutlass
+					},
 					["lvl"] = 35,
 				}),
 				q(1041, {	-- The Caravan Road
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
-					["qg"] = 3945,	-- Caravaneer Ruzzgot
 					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
+					["qg"] = 3945,	-- Caravaneer Ruzzgot
 					["description"] = "This quest is part of a series that starts in Ashenvale.",
 					["coord"] = { 27.4, 74.1, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(611, {	-- The Curse of the Tides
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2542,	-- Catelyn the Blade
 					["sourceQuest"] = 610, -- "Pretty Boy" Duncan
+					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 					["g"] = {
 						i(4120),	-- Robe of Crystal Waters
 					},
-					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 				}),
 				q(568, {	-- The Defense of Grom'gol
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2464,	-- Commander Aggro'gosh
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
 				}),
 				q(569, {	-- The Defense of Grom'gol
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2464,	-- Commander Aggro'gosh
+					["races"] = HORDE_ONLY,
+					["lvl"] = 33,
 					["g"] = {
 						i(4115),	-- Grom'gol Buckler
 					},
 				}),
 				q(588, {	-- The Fate of Yenniku
-					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(338, {	-- The Green Hills of Stranglethorn
-					["lvl"] = 30,
 					["qg"] = 716,	-- Barnil Stonepot
+					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["lvl"] = 30,
 					["g"] = {
 						i(17688),	-- Jungle Boots
 						i(3928),	-- Superior Healing Potion
 						i(8173),	-- Thick Armor Kit
 					},
-					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
 				}),
 				q(616, {	-- The Haunted Isle
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(328, {	-- The Hidden Key
 					["lvl"] = 30,
@@ -599,10 +617,13 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
 				}),
-				q(620, {	-- The Monogrammed Sash
-					["lvl"] = 35,
-				}),
 				q(8552, {	-- The Monogrammed Sash
+					["provider"] = { "i", 3985, 1 },	-- Monogrammed Sash
+					["cr"] = 1493,	-- Mok'rash
+					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
+					["altQuests"] = {
+						620,	-- The Monogrammed Sash
+					},
 					["lvl"] = 35,
 				}),
 				q(203, {	-- The Second Rebellion
