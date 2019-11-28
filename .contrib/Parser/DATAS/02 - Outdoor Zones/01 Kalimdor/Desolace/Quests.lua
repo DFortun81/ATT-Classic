@@ -279,8 +279,23 @@ _.Zones =
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1370,	-- Stealing Supplies
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["cost"] = {
+						{ "i", 6190, 1 },	-- Draenethyst Shard
+					},
 					["coord"] = { 36.2, 79.2, DESOLACE },
+					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
+					["groups"] = {
+						n(5622, {	-- Ongeku
+							["coord"] = { 65, 21, SWAMP_OF_SORROWS },
+							["groups"] = {
+								{
+									["itemID"] = 6190,	-- Draenethyst Shard
+									["questID"] = 1373,	-- Ongeku
+								},
+							},
+						}),
+					},
 				}),
 				q(6143, {	-- Other Fish to Fry
 					["lvl"] = 32,
