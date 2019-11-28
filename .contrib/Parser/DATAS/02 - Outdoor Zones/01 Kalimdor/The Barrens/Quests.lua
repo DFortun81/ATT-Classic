@@ -167,6 +167,9 @@ _.Zones =
 				}),
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
+					["cost"] = {
+						{ "i", 5570, 15 },	-- Deepmoss Egg
+					},
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
 					["maps"] = { STONETALON_MOUNTAINS },
 					["lvl"] = 15,
