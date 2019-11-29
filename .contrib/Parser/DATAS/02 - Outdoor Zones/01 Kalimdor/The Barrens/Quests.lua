@@ -136,6 +136,35 @@ _.Zones =
 					["qg"] = 5901,	-- Islen Waterseer
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 				}),
+				q(1796, { -- Components for the Enchanted Gold Bloodrobe (1/5)
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["cost"] = {
+						{ "i", 5770 } -- 	Robes of Arcana
+					},
+				}),
+				q(4781, { -- Components for the Enchanted Gold Bloodrobe (2/5)
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuest"] = 1796, -- Components for the Enchanted Gold Bloodrobe (1/5)
+					["cost"] = {
+						{ "i", 3577 } -- Gold Bar
+					},
+				}),
+				q(4783, { -- Components for the Enchanted Gold Bloodrobe (4/5)
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuest"] = 4782, -- Components for the Enchanted Gold Bloodrobe (3/5)
+				}),
+				q(4784, { -- Components for the Enchanted Gold Bloodrobe (5/5)
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuest"] = 4783, -- Components for the Enchanted Gold Bloodrobe (4/5)
+				}),
 				q(899, {	-- Consumed by Hatred
 					["qg"] = 3432,	-- Mankrik
 					["coord"] = { 51.95, 31.58, THE_BARRENS },
@@ -179,6 +208,13 @@ _.Zones =
 					["coord"] = { 51.50, 30.86, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
+				}),
+				q(1515, { --Dogran's Captivity
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5911, -- Grunt Logmar
+					["sourceQuest"] = 1511, -- Ken'zigla's Draught
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
@@ -228,6 +264,11 @@ _.Zones =
 						i(7328),	-- Thun'grim's Mace
 						i(7329),	-- Thun'grim's Sword
 					}
+				}),
+				q(1799, { -- Fragments of the Orb of Orahil
+					["lvl"] = 35,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
 				}),
 				q(898, {	-- Free From the Hold
 					["qg"] = 3465,	-- Gilthares Firebough
@@ -365,6 +406,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
+				q(1512, { -- Love's Gift
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5908, -- Grunt Dogran
+					["sourceQuest"] = 1515, -- Dogran's Captivity
+				}),
 				q(874, {	-- Mahren Skyseer
 					["qg"] = 3387,	-- Jorn Skyseer
 					["sourceQuest"] = 913,	-- Cry of the Thunderhawk
@@ -407,6 +455,13 @@ _.Zones =
 						i(10820),	-- Jackseed Belt
 						i(10821),	-- Sower's Cloak
 					},
+				}),
+				q(1510, { -- News of Dogran (2/2)
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 3464, -- Gazrog
+					["sourceQuest"] = 1509, -- News of Dogran (1/2)
 				}),
 				q(3922, {	-- Nugget Slugs
 					["qg"] = 9316,	-- Wenikee Boltbucket
@@ -608,6 +663,11 @@ _.Zones =
 						i(5318),	-- Zhovur Axe
 					},
 				}),
+				q(4962, { -- Shard of a Felhound
+					["lvl"] = 35,
+					["classes"] = { WARLOCK },
+					["qg"] = 6254, -- Acolyte Wytula
+				}),
 				q(887, {	-- Southsea Freebooters
 					["qg"] = 3391,	-- Gazlowe
 					["coord"] = {62.68, 36.24, THE_BARRENS },
@@ -669,7 +729,12 @@ _.Zones =
 				q(4488, { -- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
+					["qg"] = 6251, -- Strahad Farsan
+				}),
+				q(4490, { -- Summon Felsteed
+					["lvl"] = 40,
+					["classes"] = { WARLOCK },
 					["qg"] = 6251, -- Strahad Farsan
 				}),
 				q(5041, {	-- Supplies for the Crossroads
@@ -716,6 +781,29 @@ _.Zones =
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(1795, { -- The Binding (Felhunter)
+					["lvl"] = 30,
+					["classes"] = { WARLOCK },
+					["qg"] = 6251, -- Strahad Farsan
+					["g"] = {
+						i(22244), -- Box of Souls
+					},
+				}),
+				q(4964, { -- The Completed Orb of Dar'Orahil
+					["lvl"] = 35,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
+				}),
+				q(4786, { -- The Completed Robe
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuest"] = 4784, -- Components for the Enchanted Gold Bloodrobe (5/5)
+					["g"] = {
+						i(6900), -- Enchanted Gold Bloodrobe
+					},
 				}),
 				q(872, {	-- The Disruption Ends
 					["qg"] = 3429,	-- Thork
@@ -842,10 +930,16 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 10,
 				}),
-				q(1758, { -- Tome of the Cabal
+				q(1758, { -- Tome of the Cabal (1/3 Alliance)
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["qg"] = 6251, -- Strahad Farsan
+				}),
+				q(1801, { -- Tome of the Cabal (1/3 Horde)
+					["lvl"] = 30,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
 					["qg"] = 6251, -- Strahad Farsan
 				}),
 				q(1824, {	-- Trial at the Field of Giants

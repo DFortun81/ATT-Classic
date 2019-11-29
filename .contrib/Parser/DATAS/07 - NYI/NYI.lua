@@ -35,4 +35,5 @@ _.NeverImplemented =
 	un(1, i(6891)),	-- Recipe: Herb Baked Egg (this is taught by trainer when you learn cooking; recipe item was never in game)
 	un(1, q(6842)), -- "<UNUSED>" quest
 	un(1, q(7069)), -- "<UNUSED>" quest
+	un(1, q(55296)), -- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 };

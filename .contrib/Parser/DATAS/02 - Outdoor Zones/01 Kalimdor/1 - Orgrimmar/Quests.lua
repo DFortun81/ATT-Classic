@@ -334,6 +334,12 @@ _.Zones =
 						i(11120),	-- Belgrom's Hammer
 					},
 				}),
+				q(1508, { -- Blind Cazul
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5909, -- Cazul
+				}),
 				q(4300, {	-- Bone-Bladed Weapons
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
@@ -343,8 +349,7 @@ _.Zones =
 						i(11864),	-- White Bone Spear
 					},
 				}),
-				{
-					["questID"] = 4511,	-- Calm Before the Storm (2/2)
+				q(4511, { -- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
 					["qg"] = 7010,	-- Zilzibin Drumlore
 					["coord"] = { 56.4, 46.6, ORGRIMMAR },
@@ -355,13 +360,20 @@ _.Zones =
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
-				},
+				}),
 				q(1501, { -- Creature of the Void
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["qg"] = 5875, -- Gan'rul Bloodeye
 					["sourceQuest"] = 1506, -- Gan'rul's Summons
+				}),
+				q(1507, { -- Devourer of Souls
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5875, -- Dan'rul Bloodeye
+					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
 				}),
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
@@ -470,6 +482,13 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 7010,	-- Zilzibin Drumlore
+				}),
+				q(1509, { --News of Dogran (1/2)
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5910, -- Zankaja
+					["sourceQuest"] = 1508, -- Blind Cazul
 				}),
 				q(8978, {	-- Return to Mokvar
 					["lvl"] = 58,
@@ -583,6 +602,16 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5875, -- Gan'rul Bloodeye
 					["sourceQuest"] = 1501, -- Creature of the Void
+				}),
+				q(1513, { -- The Binding (Succubus)
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5875, -- Gan'rul Bloodeye
+					["sourceQuest"] = 1512, -- Love's Gift
+					["g"] = {
+						i(22243), -- Small Soul Pouch
+					},
 				}),
 				q(7926, {	-- The Darkmoon Faire
 					["lvl"] = 6,

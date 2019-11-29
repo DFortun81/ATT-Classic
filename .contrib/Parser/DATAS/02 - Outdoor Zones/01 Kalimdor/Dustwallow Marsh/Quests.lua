@@ -43,6 +43,12 @@ _.Zones =
 						i(10704),	-- Chillnail Splinter
 					},
 				}),
+				q(4961, { -- Cleansing of the Orb of Orahil
+					["lvl"] = 40,
+					["classes"] = { WARLOCK },
+					["qg"] = 6546, -- Tabetha
+					["sourceQuest"] = 1799, -- Fragments of the Orb of Orahil
+				}),
 				q(1285, {	-- Daelin's Men
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -190,6 +196,12 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
 					["qg"] = 4791,	-- Nazeer Bloodpike
+				}),
+				q(4976, { -- Returning the Cleansed Orb
+					["lvl"] = 40,
+					["classes"] = { WARLOCK },
+					["qg"] = 6546, -- Tabetha
+					["sourceQuest"] = 4961, -- Cleansing of the Orb of Orahil
 				}),
 				q(7541, {	-- Service to the Horde
 					["lvl"] = 30,

@@ -260,6 +260,20 @@ _.Zones =
 						i(2032),	-- Gallan Cuffs
 					},
 				}),
+				q(1803, { -- Tome of the Cabal (2/3 Horde)
+					["lvl"] = 30,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 6293, -- Jorah Annison
+					["sourceQuest"] = 1801, -- Tome of the Cabal (1/3 Horde)
+				}),
+				q(1805, { -- Tome of the Cabal (3/3 Horde)
+					["lvl"] = 30,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 6293, -- Jorah Annison
+					["sourceQuest"] = 1803, -- Tome of the Cabal (2/3 Horde)
+				}),
 				q(5658, {	-- Touch of Weakness
 					["qg"] = 4606,	-- Aelthalyste
 					["coord"] = { 49.01, 18.32, UNDERCITY },

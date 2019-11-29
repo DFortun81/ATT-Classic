@@ -134,6 +134,12 @@ _.Zones =
 					},
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
+				q(4782, { -- Components for the Enchanted Gold Bloodrobe (3/5)
+					["lvl"] = 31,
+					["classes"] = { WARLOCK },
+					["qg"] = 2670, -- Xizk Goodstitch
+					["sourceQuest"] = 4781, -- Components for the Enchanted Gold Bloodrobe (2/5)
+				}),
 				q(625, {	-- Cortello's Riddle
 					["lvl"] = 35,
 				}),
