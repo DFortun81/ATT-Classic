@@ -14,6 +14,7 @@ _.Zones =
 				}),
 				q(696, {	-- Attack on the Tower
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(652, {	-- Breaking the Keystone
 					["lvl"] = 30,
