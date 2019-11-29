@@ -520,6 +520,9 @@ _.Instances = {
 						{ "i", 11129, 10 },	-- Essence of the Elements
 					},
 					["lvl"] = 50,
+					["altQuests"] = {
+						3911, -- The Last Element [7201 and 3911 look identical, but WoWHead doesn't have much info on 3911]
+					},
 					["groups"] = {
 						i(12038),	-- Lagrave's Seal
 					},

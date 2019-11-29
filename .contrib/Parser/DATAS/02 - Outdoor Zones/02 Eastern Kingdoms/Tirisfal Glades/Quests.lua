@@ -308,6 +308,14 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 1500,	-- Coleman Farthing
 				}),
+				q(3099, { -- Tainted Scroll
+					["lvl"] = 1,
+					["races"] = { UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 1569, -- Shadow Priest Sarvis
+					["sourceQuest"] = 364, -- The Mindless Ones
+					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
+				}),
 				q(375, {	-- The Chill of Death
 					["lvl"] = 7,
 					["races"] = HORDE_ONLY,

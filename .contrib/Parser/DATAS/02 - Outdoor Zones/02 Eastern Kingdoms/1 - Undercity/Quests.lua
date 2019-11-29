@@ -63,6 +63,13 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5675, -- Carendin Halgar
 				}),
+				q(1472, { -- Devourer of Souls
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["qg"] = 5675, -- Carendin Halgar
+					["description"] = "Completing this quest (1472) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1507).",
+				}),
 				q(232, {	-- Errand for Apothecary Zinge
 					["qg"] = 5204,	-- Apothecary Zinge
 					["coord"] = { 50.13, 67.98, UNDERCITY },
@@ -75,6 +82,16 @@ _.Zones =
 					["coord"] = { 58.64, 54.73, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
+				}),
+				q(1476, { -- Hearts of the Pure
+					["lvl"] = 20,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5693, -- Godrick Farsan
+					["cost"] = {
+						{ "i", 6312 }, -- Dalin's Heart
+						{ "i", 6313 }, -- Comar's Heart
+					},
 				}),
 				q(4739, { -- In Search of Menara Voidrender
 					["lvl"] = 31,
@@ -149,6 +166,13 @@ _.Zones =
 						i(10638),	-- Long Draping Cape
 					},
 				}),
+				q(3001, { -- Seeking Strahad
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5675, -- Carendin Halgar
+					["isBreadcrumb"] = true,
+				}),
 				q(3570, {	-- Seeping Corruption
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
@@ -186,6 +210,13 @@ _.Zones =
 					["races"] = { UNDEAD },
 					["classes"] = { WARLOCK },
 					["qg"] = 5675, -- Carendin Halgar
+				}),
+				q(1474, { -- The Binding (Succubus)
+					["lvl"] = 20,
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["qg"] = 5675, -- Carendin Halgar
+					["sourceQuest"] = 1476, -- Hearts of the Pure
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["lvl"] = 54,

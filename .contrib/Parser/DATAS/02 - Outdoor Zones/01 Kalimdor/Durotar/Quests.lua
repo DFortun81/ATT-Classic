@@ -173,13 +173,19 @@ _.Zones =
 						i(11584),	-- Cactus Apple Surprise
 					},
 				}),
+				q(1506, { -- Gan'rul's Summons
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 3294, -- Ophek
+				}),
 				q(5648, {	-- Garments of Spirituality
 					["qg"] = 3706,	-- Tai'jin
 					["sourceQuest"] = 5649,	-- In Favor of Spirituality
 					["coord"] = { 54.2, 42.8, DUROTAR },
 					["class"] = PRIEST,
 					["races"] = { TROLL },
-					["lvl"] = 5
+					["lvl"] = 5,
 				}),
 				q(3085, {	-- Hallowed Tablet
 					["qg"] = 3143,	-- Gornek
@@ -418,7 +424,14 @@ _.Zones =
 						i(5778),	-- Primitive Walking Stick
 					},
 				}),
-				q(1485, {	-- Vile Familiars (Warlocks only!)
+				q(1485, {	-- Vile Familiars (Part 1 - Warlocks only!)
+					["qg"] = 5765,	-- Ruzan
+					["classes"] = { 9 }, -- Warlock
+					["coord"] = { 42.6, 69.0, DUROTAR },
+					["races"] = { 2, 5 }, -- Orcs and Undead only
+					["lvl"] = 1,
+				}),
+				q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
 					["qg"] = 5765,	-- Ruzan
 					["classes"] = { 9 }, -- Warlock
 					["coord"] = { 42.6, 69.0, DUROTAR },

@@ -356,6 +356,13 @@ _.Zones =
 						i(11872),	-- Eschewal Greaves
 					},
 				},
+				q(1501, { -- Creature of the Void
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5875, -- Gan'rul Bloodeye
+					["sourceQuest"] = 1506, -- Gan'rul's Summons
+				}),
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
@@ -546,6 +553,13 @@ _.Zones =
 						i(21997),	-- Breastplate of Heroism
 					},
 				}),
+				q(2996, { -- Seeking Strahad
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5875, -- Gan'rul Bloodeye
+					["isBreadcrumb"] = true,
+				}),
 				q(3631, { -- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
@@ -562,6 +576,13 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
+				}),
+				q(1504, { -- The Binding
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5875, -- Gan'rul Bloodeye
+					["sourceQuest"] = 1501, -- Creature of the Void
 				}),
 				q(7926, {	-- The Darkmoon Faire
 					["lvl"] = 6,
