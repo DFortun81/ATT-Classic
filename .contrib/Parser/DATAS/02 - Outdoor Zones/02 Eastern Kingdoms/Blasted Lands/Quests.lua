@@ -167,11 +167,14 @@ _.Zones =
 					["coord"] = { 50.6, 14.3, BLASTED_LANDS },
 				}),
 				q(3628, {	-- You Are Rakh'likh, Demon
-					["lvl"] = 45,
+					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 3627,	-- Uniting the Shattered Amulet
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["lvl"] = 45,
 					["g"] = {
 						i(10778),	-- Necklace of Sanctuary
 						i(10779),	-- Demon's Blood
+						i(10959),	-- Demon Hide Sack
 					},
 				}),
 			}),
