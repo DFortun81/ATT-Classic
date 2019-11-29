@@ -182,6 +182,12 @@ _.Zones =
 					},
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 				}),
+				q(1478, { -- Halgar's Summons
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5724, -- Ageron Kargal
+				}),
 				q(5651, { -- In Favor of Darkness
 					["lvl"] = 5,
 					["races"] = { 5 }, -- Undead
@@ -210,6 +216,12 @@ _.Zones =
 						i(3272),	-- Zombie Skin Leggings
 					},
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
+				}),
+				q(1470, { -- Piercing the Veil
+					["lvl"] = 1,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5667, -- Venya Marthand
 				}),
 				q(374, {	-- Proof of Demise
 					["lvl"] = 5,

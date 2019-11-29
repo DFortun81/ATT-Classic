@@ -57,6 +57,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 6741,	-- Innkeeper Norman
 				}),
+				q(1473, { -- Creature of the Void
+					["lvl"] = 10,
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5675, -- Carendin Halgar
+				}),
 				q(232, {	-- Errand for Apothecary Zinge
 					["qg"] = 5204,	-- Apothecary Zinge
 					["coord"] = { 50.13, 67.98, UNDERCITY },
@@ -174,6 +180,12 @@ _.Zones =
 					["g"] = {
 						i(15102),	-- Un'Goro Tested Sample
 					},
+				}),
+				q(1471, { -- The Binding (Voidwalker)
+					["lvl"] = 10,
+					["races"] = { UNDEAD },
+					["classes"] = { WARLOCK },
+					["qg"] = 5675, -- Carendin Halgar
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["lvl"] = 54,
