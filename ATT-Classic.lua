@@ -5370,6 +5370,17 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 		
+		-- Craftables
+		if app.Categories.Craftables then
+			db = {};
+			db.expanded = false;
+			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
+			db.icon = "Interface\\ICONS\\ability_repair";
+			db.g = app.Categories.Craftables;
+			db.collectible = false;
+			table.insert(g, db);
+		end
+		
 		-- Items (Dynamic)
 		--[[
 		db = {};
