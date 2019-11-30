@@ -99,7 +99,6 @@ _.Zones =
 				}),
 				q(103, {	-- Keeper of the Flame
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 392,	-- Captain Grayson
 					["g"] = {
 						i(2455),	-- Minor Mana Potion
@@ -201,12 +200,10 @@ _.Zones =
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 392,	-- Captain Grayson
 				}),
 				q(104, {	-- The Coastal Menace
 					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 392,	-- Captain Grayson
 					["g"] = {
 						i(1172),	-- Grayson's Torch
