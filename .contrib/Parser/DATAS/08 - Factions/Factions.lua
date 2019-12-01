@@ -78,9 +78,15 @@ _.Factions =
 	faction(909, { -- Darkmoon Faire
 		["u"] = 3,	-- Added in later phase
 	}),
-	faction(92),	-- Gelkis Clan Centaur
+	faction(92, { -- Gelkis Clan Centaur
+		["u"] = 1,
+		["description"] = "You are not able to reach exalted with this faction.",
+	}),
 	faction(749),	-- Hydraxian Waterlords
-	faction(93),	-- Magram Clan Centaur
+	faction(93, {	-- Magram Clan Centaur
+		["u"] = 1,
+		["description"] = "You are not able to reach exalted with this faction.",
+	}),
 	faction(349), -- Ravenholdt
 	faction(809),	-- Shen'dralar
 	faction(169, { 	-- Steamwheedle Cartel
