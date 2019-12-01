@@ -6,6 +6,10 @@ _.WorldDrops =
 	n(-318, {	-- Armor
 		n(-320, {	-- Head
 			i(7529),  -- Cabalist Helm111
+			i(10061),  -- Duskwoven Turban
+			i(10219),  -- Elegant Circlet
+			i(10175),  -- Mystical Headwrap
+			i(14421),  -- Silksand Circlet
 			i(14944),  -- Warbringer's Crown
 			i(15363),  -- Trickster's Headdress
 		}),
@@ -24,6 +28,7 @@ _.WorldDrops =
 			i(6417),  -- Aurora Cloak
 			i(6432),  -- Imperial Cloak
 			i(9779),  -- Bandit Cloak
+			i(10212),  -- Elegant Cloak
 			i(14331),  -- Eternal Cloak
 			i(15594),  -- Steadfast Cloak
 		}),
@@ -37,6 +42,8 @@ _.WorldDrops =
 			i(7407),  -- Infiltrator Armor
 			i(7477),  -- Ranger Tunic
 			i(9884),  -- Sorcerer Robe
+			i(10077),  -- Lord's Breastplate
+			i(10070),  -- Righteous Armor
 			i(14175),  -- Buccaneer's Vest
 			i(15557),  -- Pillager's Chestguard
 		}),
@@ -48,7 +55,8 @@ _.WorldDrops =
 			i(6613),  -- Sage's Bracers
 			i(7461),  -- Knight's Bracers
 			i(7475),  -- Regal Cuffs
-			i(7525),  -- Gossamer BRacers
+			i(7525),  -- Gossamer Bracers
+			i(8257),  -- Serpentskin Bracers
 			i(9821),  -- Durable Bracers
 			i(14723),  -- War Paint Bindings
 			i(15163),  -- Imposing Bracersc
@@ -75,6 +83,7 @@ _.WorldDrops =
 			i(9801),  -- Superior Belt
 			i(9891),  -- Huntsman's Belt
 			i(9906),  -- Royal Sash
+			i(10166),  -- Templar Girdle
 			i(15154),  -- Nocturnal Sash
 		}),
 		n(-329, {	-- Legs
@@ -84,6 +93,7 @@ _.WorldDrops =
 			i(7455),  -- Knight's Legguards
 			i(9756),  -- Gypsy Trousers
 			i(9862),  -- Archer's Trousers
+			i(10169),  -- Templar Legplates
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
@@ -93,6 +103,7 @@ _.WorldDrops =
 			i(3057),  -- Forest Leather Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
+			i(13070),  -- Sapphiron's Scale Boots
 		}),
 		filter(51, {	-- Neck
 			i(13087),  -- River Pride Choker
@@ -131,12 +142,14 @@ _.WorldDrops =
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger	
 			i(15242),  -- Honed Stiletto
+			i(15243),  -- Deadly Kris
 		}),
 		n(-348, {	-- Fist Weapons	
 		}),
 		n(-345, {	-- Guns
 			i(3042),  -- BKP "Sparrow" Smallbore
 			i(8188),  -- Explosive Shotgun
+			i(15323),  -- Percussion Shotgun
 		}),			
 		n(-331, {	-- Held in Off-hand
 			i(7555),  -- Regal Star
@@ -147,6 +160,7 @@ _.WorldDrops =
 			i(789),  -- Stout Battlehammer
 			i(4090),  -- Mug O' Hurt
 			i(15222),  -- Barbed Club
+			i(15229),  -- Blesswind Hammer
 		}),
 		n(-337, {	-- 2H Maces
 			i(15259),  -- Hefty Battlehammer
@@ -160,6 +174,7 @@ _.WorldDrops =
 			i(7331),  -- Phalanax Shield
 			i(9764),  -- Cadet Shield
 			i(9790),  -- Raider's Shield
+			i(9958),  -- Warmonger's Buckler
 			i(14947),  -- Warbringer's Shield
 			i(15298),  -- Grizzly Buckler
 			i(15943),  -- Imbued Shield
@@ -182,6 +197,7 @@ _.WorldDrops =
 		}),
 		n(-341, {	-- Wands
 			i(5213),  -- Scorching Wand
+			i(5216),  -- Umbral Wand
 		}),
 	}),	
 	filter(200, {	-- Recipes
