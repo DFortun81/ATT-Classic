@@ -202,7 +202,7 @@ _.Zones =
 				}),
 				q(3103, { -- Hallowed Letter
 					["lvl"] = 1,
-					["races"] = 1, -- Human
+					["races"] = { HUMAN },
 					["qg"] = 197, -- Marshal McBride
 					["classes"] = { 5 }, -- Priest
 					["sourceQuest"] = 7, -- Kobold Camp Cleanup
