@@ -9,6 +9,8 @@ _.WorldDrops =
 			i(10061),  -- Duskwoven Turban
 			i(10219),  -- Elegant Circlet
 			i(10175),  -- Mystical Headwrap
+			i(10187),  -- Swashbuckler's Eyepatch
+			i(10261),  -- Adventurer's Bandana
 			i(14421),  -- Silksand Circlet
 			i(14944),  -- Warbringer's Crown
 			i(15363),  -- Trickster's Headdress
@@ -31,6 +33,7 @@ _.WorldDrops =
 			i(10212),  -- Elegant Cloak
 			i(14331),  -- Eternal Cloak
 			i(15594),  -- Steadfast Cloak
+			i(15661),  -- Impenetrable Cloak
 		}),
 		n(-323, {	-- Chest
 			i(821),  -- Riverpaw Leather Vest
@@ -91,6 +94,7 @@ _.WorldDrops =
 			i(6587),  -- Scouting Trousers
 			i(7431),  -- Twilight's Pants
 			i(7455),  -- Knight's Legguards
+			i(8309),  -- Hero's Leggins
 			i(9756),  -- Gypsy Trousers
 			i(9862),  -- Archer's Trousers
 			i(10169),  -- Templar Legplates
@@ -103,6 +107,8 @@ _.WorldDrops =
 			i(3057),  -- Forest Leather Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
+			i(10146),  -- Mighty Boots
+			i(10179),  -- Mystical Boots
 			i(13070),  -- Sapphiron's Scale Boots
 		}),
 		filter(51, {	-- Neck
