@@ -188,6 +188,13 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5724, -- Ageron Kargal
 				}),
+				q(1822, {
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["qg"] = 1500, -- Coleman Farthing
+					["sourceQuest"] = 1821, -- Agamand Heirlooms
+				}),
 				q(5651, { -- In Favor of Darkness
 					["lvl"] = 5,
 					["races"] = { 5 }, -- Undead
