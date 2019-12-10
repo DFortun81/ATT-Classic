@@ -622,6 +622,15 @@ _.Zones =
 						i(9514),	-- Arcane Staff
 					},
 				}),
+				q(7562, { -- Mor'zul Bloodbringer
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["maps"] = {
+						ORGRIMMAR,
+						STORMWIND,
+						UNDERCITY,
+					},
+				}),
 				{
 					["questID"] = 3448,	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik

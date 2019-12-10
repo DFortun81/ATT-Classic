@@ -122,9 +122,24 @@ _.Zones =
 						i(11868),	-- Choking Band
 					},
 				}),
+				q(7563, { -- Rage of Blood
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["sourceQuest"] = 7562, -- Mor'zul Bloodbringer
+					["cost"] = {
+						{ "i", 18590, 30 }, -- Raging Beast's Blood
+					},
+				}),
 				q(4296, {	-- Tablet of the Seven
 					["lvl"] = 50,
 					["qg"] = 9536,	-- Maxwort Uberglint
+				}),
+				q(7564, { -- Wildeyes
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["sourceQuest"] = 7563, -- Rage of Blood
 				}),
 			}),
 		}),
