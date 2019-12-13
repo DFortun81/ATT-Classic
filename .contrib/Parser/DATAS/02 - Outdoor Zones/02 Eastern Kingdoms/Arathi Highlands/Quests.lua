@@ -134,6 +134,9 @@ _.Zones =
 				}),
 				q(697, {	-- Malin's Request
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2789, -- Skuerto
+					["sourceQuest"] = 696, -- Attack on the Tower
 					["g"] = {
 						i(4975),	-- Vigilant Buckler
 						i(15104),	-- Wingborne Boots

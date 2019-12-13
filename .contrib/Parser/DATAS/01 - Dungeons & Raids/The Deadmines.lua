@@ -211,6 +211,7 @@ _.Instances = {
 					["groups"] = {
 						{
 							["questID"] = 373,	-- The Unsent Letter
+							["races"] = ALLIANCE_ONLY,
 							["qg"] = 1646,	-- Baros Alexston <City Architect>
 							["coord"] = { 49.2, 30.0, STORMWIND_CITY },
 						}

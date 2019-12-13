@@ -57,6 +57,8 @@ _.Zones =
 				q(841, {	-- Another Power Source?
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
+					["qg"] = 7407, -- Chief Engineer Bilgewhizzle
+					["repeatable"] = true,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},

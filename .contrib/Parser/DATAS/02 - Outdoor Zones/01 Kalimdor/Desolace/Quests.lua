@@ -145,6 +145,7 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11317,	-- Jinar'Zillen
+					["repeatable"] = true,
 					["g"] = {
 						i(13546),	-- Bloodbelly Fish
 					},
@@ -323,27 +324,36 @@ _.Zones =
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
 				}),
-				q(1467, {	-- Reagents for Reclaimers Inc.
+				q(1458, {	-- Reagents for Reclaimers Inc. (1/4)
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5638,	-- Kreldig Ungor
+					["coord"] = { 66.2, 9.6, DESOLACE },
+				}),
+				q(1459, {	-- Reagents for Reclaimers Inc. (2/4)
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5638,	-- Kreldig Ungor
+					["sourceQuest"] = 1458, -- Reagents for Reclaimers Inc. (1/4)
+					["coord"] = { 66.2, 9.6, DESOLACE },
+				}),
+				q(1466, {	-- Reagents for Reclaimers Inc. (3/4)
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5638,	-- Kreldig Ungor
+					["sourceQuest"] = 1459, -- Reagents for Reclaimers Inc. (2/4)
+					["coord"] = { 66.2, 9.6, DESOLACE },
+				}),
+				q(1467, {	-- Reagents for Reclaimers Inc. (4/4)
+					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 5638,	-- Kreldig Ungor
+					["sourceQuest"] = 1466, -- Reagents for Reclaimers Inc. (3/4)
+					["coord"] = { 66.2, 9.6, DESOLACE },
 					["g"] = {
 						i(6793),	-- Auric Bracers
 						i(6794),	-- Stormfire Gauntlets
 					},
-				}),
-				q(1458, {	-- Reagents for Reclaimers Inc.
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5638,	-- Kreldig Ungor
-					["coord"] = { 66.2, 9.6, DESOLACE },
-				}),
-				q(1466, {	-- Reagents for Reclaimers Inc.
-					["lvl"] = 30,
-				}),
-				q(1459, {	-- Reagents for Reclaimers Inc.
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5638,	-- Kreldig Ungor
-					["coord"] = { 66.2, 9.6, DESOLACE },
 				}),
 				q(1361, {	-- Regthar Deathgate
 					["qgs"] = {

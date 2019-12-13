@@ -9,6 +9,7 @@ _.Zones =
 				q(6606, {	-- A Little Luck
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
+					["u"] = 1,	-- Never Available
 				}),
 				q(6605, {	-- A Strange One
 					["lvl"] = 49,
@@ -183,6 +184,8 @@ _.Zones =
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 10684, -- Remorseful Highborne
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
 				q(4810, {	-- Return to Tinkee
@@ -228,6 +231,8 @@ _.Zones =
 				}),
 				q(5253, {	-- The Crystal of Zin-Malor
 					["lvl"] = 53,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 11079, -- Wynd Nightchaser
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
 					["g"] = {
 						i(15791),	-- Turquoise Sash

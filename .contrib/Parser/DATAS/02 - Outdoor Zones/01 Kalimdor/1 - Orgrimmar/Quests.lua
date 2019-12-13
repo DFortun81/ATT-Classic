@@ -640,6 +640,7 @@ _.Zones =
 				q(7783, {	-- The Lord of Blackrock
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase
 				}),
 				q(1018, {	-- The New Frontier
 					["lvl"] = 54,

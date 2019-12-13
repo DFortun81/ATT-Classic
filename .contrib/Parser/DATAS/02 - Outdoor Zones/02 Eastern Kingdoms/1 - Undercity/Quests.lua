@@ -194,6 +194,8 @@ _.Zones =
 				q(4661, {	-- Testing for Corruption - Felwood
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but you must have the quest \"A Sample of Slime...\" (quest #4293) in your quest log to complete it.",
 					["g"] = {
 						i(15103),	-- Corrupt Tested Sample
 					},
@@ -201,6 +203,8 @@ _.Zones =
 				q(4561, {	-- Testing for Impurities - Un'Goro Crater
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but you must have the quest \"... and a Batch of Ooze\" (quest #4294) in your quest log to complete it.",
 					["g"] = {
 						i(15102),	-- Un'Goro Tested Sample
 					},

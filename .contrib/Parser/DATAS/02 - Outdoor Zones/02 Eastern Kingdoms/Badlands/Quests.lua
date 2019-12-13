@@ -86,6 +86,7 @@ _.Zones =
 					["coord"] = { 2.6, 46, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
+					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(703, {	-- Barbecued Buzzard Wings
 					["lvl"] = 33,
@@ -132,6 +133,8 @@ _.Zones =
 				}),
 				q(706, {	-- Fiery Blaze Enchantments
 					["lvl"] = 40,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2860, -- Sigrun Ironhew
 					["g"] = {
 						i(5421),	-- Fiery Blaze Enchantment
 					},

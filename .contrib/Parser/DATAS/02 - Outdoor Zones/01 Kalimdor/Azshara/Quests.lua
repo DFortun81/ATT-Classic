@@ -194,6 +194,7 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["qg"] = 11811,	-- Narain Soothfancy
+					["u"] = 3, -- Added in a later phase
 					["g"] = {
 						i(21526),	-- Band of Icy Depths
 						i(21527),	-- Darkwater Robes

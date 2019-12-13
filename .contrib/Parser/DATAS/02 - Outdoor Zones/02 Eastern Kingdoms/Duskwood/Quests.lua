@@ -426,7 +426,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = {
-						526, -- -- Lightforge Ingots
+						526, -- Lightforge Ingots
 					},
 					--["objectID"] = 2734,	-- Waterlogged Chest
 				}),

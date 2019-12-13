@@ -220,6 +220,8 @@ _.Zones =
 				}),
 				q(593, {	-- Filling the Soul Gem
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["description"] = "This quest is repeatable, but can only be completed while the quest \"Saving Yenniku\" (quest #592) is in your quest log.",
 					["g"] = {
 						i(3913),	-- Filled Soul Gem
 					},

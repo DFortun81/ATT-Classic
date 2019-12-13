@@ -86,6 +86,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3050,	-- Veren Tallstrider
+					["requireSkill"] = 165,	-- Leatherworking
 					["g"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
@@ -115,6 +116,7 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,
 					["qg"] = 9087,	-- Bashana Runetotem
+					["repeatable"] = true,
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
