@@ -45,6 +45,8 @@ _.Holidays =
 				}),
 				q(8763, { -- The Hero of the Day
 					["lvl"] = 40,
+					["requireSkill"] = 185,	-- Cooking
+					["description"] = 'Requires Cooking Skill Level 300',
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
 					["g"] = {
