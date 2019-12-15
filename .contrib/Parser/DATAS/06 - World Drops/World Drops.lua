@@ -62,6 +62,7 @@ _.WorldDrops =
 		n(-326, {	-- Wrist
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
+			i(6563),  -- Shimmering Bracers
 			i(6613),  -- Sage's Bracers
 			i(7461),  -- Knight's Bracers
 			i(7475),  -- Regal Cuffs
@@ -71,6 +72,7 @@ _.WorldDrops =
 			i(10096),  -- Councillor's Cuffs
 			i(10213),  -- Elegant Bracers
 			i(10223),  -- Nigthshade Armguards
+			i(14561),  -- Prospector's Cuffs
 			i(14723),  -- War Paint Bindings
 			i(15163),  -- Imposing Bracersc
 			i(15306),  -- Feral Bindings
@@ -94,14 +96,17 @@ _.WorldDrops =
 			i(6409),  -- Insignia Belt
 			i(6418),  -- Aurora Sash
 			i(6570),  -- Shimmering Sash
+			i(9775),  -- Bandit Cinch
 			i(9801),  -- Superior Belt
 			i(9891),  -- Huntsman's Belt
 			i(9906),  -- Royal Sash
 			i(10166),  -- Templar Girdle
 			i(14465),  -- Elunarian Belt
+			i(15011),  -- Lupine Cord
 			i(15154),  -- Nocturnal Sash
 		}),
 		n(-329, {	-- Legs
+			i(3303),  -- Barbaric Loincloth
 			i(6431),  -- Imperial Leather Boots
 			i(6587),  -- Scouting Trousers
 			i(7431),  -- Twilight's Pants
@@ -115,10 +120,12 @@ _.WorldDrops =
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
 			i(15017),  -- Lupine Leggings
+			i(15303),  -- Grizzly Pants
 		}),
 		n(-330, {	-- Feet
 			i(2983),  -- Seer's Boots
 			i(3057),  -- Forest Leather Boots
+			i(3307),  -- Barbaric Cloth Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
 			i(10095),  -- Councillor's Boots
@@ -141,6 +148,7 @@ _.WorldDrops =
 		n(-334, {	-- 1H Axes
 			i(790),  -- Forester's Axe
 			i(871),  -- Flurry Axe
+			i(2073),  -- Dwarven Hatchet
 			i(4561),  -- Scalping Tomahawk
 			i(12990),  -- Razor's Edge
 			i(15230),  -- Ridge Cleaver
@@ -223,6 +231,7 @@ _.WorldDrops =
 			i(15251),  -- Headstriker Sword
 		}),
 		n(-341, {	-- Wands
+			i(5212),  -- Blazing Wand
 			i(5213),  -- Scorching Wand
 			i(5216),  -- Umbral Wand
 		}),
