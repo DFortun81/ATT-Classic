@@ -53,6 +53,7 @@ profession(356, {	-- Fishing
 			["questID"] = 1579,	-- Gaffer Jacks
 			["qg"] = 3666,	-- Wizbang Cranktoggle
 			["requireSkill"] = 356,	-- Fishing
+			["description"] = 'Requires fishing skill level 30',
 			["coord"] = { 37.0, 44.0, DARKSHORE },
 			["maps"] = { DARKSHORE },
 			["lvl"] = 10,

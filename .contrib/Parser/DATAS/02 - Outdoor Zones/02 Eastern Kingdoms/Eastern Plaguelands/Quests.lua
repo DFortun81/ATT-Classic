@@ -444,8 +444,9 @@ _.Zones =
 					["lvl"] = 50,
 					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
 					["g"] = {
-						i(15855),	-- Ring of Protection
-						i(15856),	-- Archlight Talisman
+						i(15855),  -- Ring of Protection
+						i(15856),  -- Archlight Talisman
+						i(15857),  -- Magebane Scion
 					},
 				}),
 				q(5509, {	-- Invader's Scourgestones
