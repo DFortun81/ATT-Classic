@@ -61,7 +61,13 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13444, -- Greatfather Winter
 					["g"] = {
-						i(17727),  -- Smokywood Pastures Gift Pack
+						i(17727, {	-- Smokywood Pastures Special Gift
+							i(17725),	-- Formula: Enchant Weapon - Winter's Might							
+							i(17722),	-- Pattern: Gloves of the Greatfather
+							i(17706),	-- Plans: Edge of Winter
+							i(17709),	-- Recipe: Elixir of Frost Power
+							i(17720),	-- Schematic: Snowmaster 9000
+						}),
 					},
 				}),
 				q(7043, { -- You're a Mean One...
