@@ -20,6 +20,11 @@ _.Holidays =
 						}),
 					},
 				}),
+				q(6961, { -- Greatfather Winter is Here!
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+				}),
 				q(7022, { -- Greatfather Winter is Here!
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -38,6 +43,11 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
 				}),
+				q(7061, { -- The Feast of Winter Veil
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13417, -- Sagorne Creststrider <Shaman Trainer>
+				}),
 				q(7063, { -- The Feast of Winter Veil
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -53,7 +63,12 @@ _.Holidays =
 						i(21213),  -- Preserved Holly
 					},
 				}),
-				q(7062, { -- The Reason for the Season
+				q(6964, { -- The Reason for the Season (Horde)
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 1365, -- Goli Krumn
+				}),
+				q(7062, { -- The Reason for the Season (Alliance)
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1365, -- Goli Krumn
