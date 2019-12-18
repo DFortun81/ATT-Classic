@@ -6,6 +6,12 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(-17, {	-- Quests
+				q(7626, { -- Bell of Dethmoora
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["sourceQuest"] = 7564, -- Wildeyes
+				}),
 				q(4726, {	-- Broodling Essence
 					["lvl"] = 50,
 					["qg"] = 10267,	-- Tinkee Steamboil
@@ -114,6 +120,12 @@ _.Zones =
 						{ "i", 11563, 4 }, -- Crystal Force
 						{ "g", 300000 },   -- 30g
 					},
+				}),
+				q(7623, { -- Lord Banehollow
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["sourceQuest"] = 7564, -- Wildeyes
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
 					["lvl"] = 48,

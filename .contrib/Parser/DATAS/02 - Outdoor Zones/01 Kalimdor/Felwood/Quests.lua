@@ -547,6 +547,12 @@ _.Zones =
 					["qg"] = 10924,	-- Ivy Leafrunner
 					["isBreadcrumb"] = true,
 				}),
+				q(7624, { -- Ulathek the Traitor
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 9516, -- Lord Banehollow
+					["sourceQuest"] = 7623, -- Lord Banehollow
+				}),
 				q(5156, {	-- Verifying the Corruption
 					["lvl"] = 48,
 					["qg"] = 10921,	-- Taronn Redfeather
@@ -583,6 +589,12 @@ _.Zones =
 						i(13446),	-- Major Healing Potion
 						i(13444),	-- Major Mana Potion
 					},
+				}),
+				q(7625, { -- Xorothian Stardust
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 9516, -- Lord Banehollow
+					["sourceQuest"] = 7624, -- Ulathek the Traitor
 				}),
 			}),
 		}),
