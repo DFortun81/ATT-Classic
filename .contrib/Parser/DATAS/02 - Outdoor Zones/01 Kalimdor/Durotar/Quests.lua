@@ -183,21 +183,21 @@ _.Zones =
 					["qg"] = 3706,	-- Tai'jin
 					["sourceQuest"] = 5649,	-- In Favor of Spirituality
 					["coord"] = { 54.2, 42.8, DUROTAR },
-					["class"] = PRIEST,
+					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 5,
 				}),
 				q(3085, {	-- Hallowed Tablet
 					["qg"] = 3143,	-- Gornek
 					["coord"] = { 42.0, 68.4, DUROTAR },
-					["class"] = PRIEST,
+					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 1
 				}),
 				q(5649, {	-- In Favor of Spirituality
 					["qg"] = 3707,	-- Ken'jai
 					["coord"] = { 42.4, 68.8, DUROTAR },
-					["class"] = PRIEST,
+					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 5
 				}),

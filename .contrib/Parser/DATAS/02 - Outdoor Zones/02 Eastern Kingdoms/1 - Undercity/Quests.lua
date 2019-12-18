@@ -288,7 +288,7 @@ _.Zones =
 						5662,
 						5663,
 					},
-					["class"] = PRIEST,
+					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
 					["lvl"] = 10
 				}),

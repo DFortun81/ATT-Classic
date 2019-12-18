@@ -394,7 +394,7 @@ _.Zones =
 						5656,
 						5657,
 					},
-					["class"] = PRIEST,
+					["classes"] = { PRIEST },
 					["races"] = { TROLL },
 					["lvl"] = 10
 				}),
