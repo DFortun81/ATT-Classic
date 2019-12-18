@@ -6,7 +6,15 @@ _.Holidays =
 	n(-61, {	-- Feast of Winter Veil
 		["g"] = {
 			n(-17, {	-- Quests
-				q(7045, { -- A Smokywood Pastures' Thank You!
+				q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
+					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["g"] = {
+						i(17726), -- Smokywood Pastures Special Gift
+					},
+				}),
+				q(7045, { -- A Smokywood Pastures' Thank You! (Alliance)
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
@@ -30,7 +38,15 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
 				}),
-				q(8762, { -- Metzen the Reindeer
+				q(8746, { -- Metzen the Reindeer (Horde)
+					["lvl"] = 40,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["g"] = {
+						i(21213),  -- Preserved Holly
+					},
+				}),
+				q(8762, { -- Metzen the Reindeer (Alliance)
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
@@ -38,7 +54,12 @@ _.Holidays =
 						i(21213),  -- Preserved Holly
 					},
 				}),
-				q(7042, { -- Stolen Winter Veil Treats
+				q(6963, { -- Stolen Winter Veil Treats (Horde)
+					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+				}),
+				q(7042, { -- Stolen Winter Veil Treats (Alliance)
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
@@ -73,7 +94,15 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1365, -- Goli Krumn
 				}),
-				q(7025, { -- Treats for Greatfather Winter
+				q(6962, { -- Treats for Greatfather Winter (Horde)
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13445, -- Great-father Winter
+					["g"] = {
+						i(17727), -- Smokywood Pastures Special Gift
+					},
+				}),
+				q(7025, { -- Treats for Greatfather Winter (Alliance)
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13444, -- Greatfather Winter
@@ -87,7 +116,13 @@ _.Holidays =
 						}),
 					},
 				}),
-				q(7043, { -- You're a Mean One...
+				q(6983, { -- You're a Mean One... (Horde)
+					["lvl"] = 30,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13636, -- Strange Snowman
+					["sourceQuest"] = 6963, -- Stolen Winter Veil Treats (Horde)
+				}),
+				q(7043, { -- You're a Mean One... (Alliance)
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13636, -- Strange Snowman
