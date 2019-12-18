@@ -143,6 +143,7 @@ _.Instances = {
 							["maps"] = { THUNDER_BLUFF },
 							["races"] = { ORC, TAUREN, TROLL },
 							["lvl"] = 28,
+							["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
 							["groups"] = {
 								i(17508),	-- Forcestone Buckler
 								i(7749),	-- Omega Orb
@@ -192,7 +193,7 @@ _.Instances = {
 						["itemID"] = 5535,	-- Compendium of the Fallen
 						["questID"] = 1049,	-- Compendium of the Fallen
 						["description"] = "On one of the shelves on the left as you enter the final hallway leading to Doan.",
-						["races"] = HORDE_ONLY,
+						["races"] = { ORC, TAUREN, TROLL },
 					},
 					n(6487, {	-- Arcanist Doan
 						i(7714),	-- Hypnotic Blade
