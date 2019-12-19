@@ -1,7 +1,7 @@
 _.PvP = 
 {
   n(-304, { -- Battlegrounds
-    m(91, { -- Alterac Valley
+    m(1459, { -- Alterac Valley
       ["maps"] = { HILLSBRAD_FOOTHILLS },
       ["description"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
       ["g"] = {
