@@ -15,6 +15,22 @@ _.PvP =
                 ["races"] = HORDE_ONLY,
                 ["qg"] = 13154, -- Commander Louis Philips
               }),
+              q(7124, { -- Capture a Mine
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qgs"] = {
+                  12097, -- Frostwolf Quartermaster
+                  13776, -- Corporal Teeka Bloodsnarl
+                }, 
+              }),
+              q(7165, { -- Rise and Be Recognized
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13840, -- Warmaster Laggrond
+                ["g"] = {
+                  i(17906), -- Frostwolf Insignia Rank 3
+                },
+              }),
               q(7224, { -- Enemy Booty
                 ["lvl"] = 51,
                 ["races"] = HORDE_ONLY,
@@ -32,6 +48,14 @@ _.PvP =
                   i(19108), -- Wand of Biting Cold
                 },
               }),
+              q(7163, { -- Rise and Be Recognized
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13840, -- Warmaster Laggrond
+                ["g"] = {
+                  i(17905), -- Frostwolf Insignia Rank 2
+                },
+              }),
               q(8369, { -- Invaders of Alterac Valley
                 ["lvl"] = 51,
                 ["races"] = HORDE_ONLY,
@@ -43,7 +67,37 @@ _.PvP =
                 ["qg"] = 13176, -- Smith Regzar
                 ["repeatable"] = true,
               }),
+              q(7161, { -- Proving Grounds
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13840, -- Warmaster Laggrond
+              }),
+              q(7163, { -- Rise and Be Recognized
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13840, -- Warmaster Laggrond
+                ["sourceQuest"] = 7161, -- Proving Grounds
+                ["g"] = {
+                  i(17690), -- Frostwolf Insignia Rank 1
+                },
+              }),
+              q(7123, { -- Speak with our Quartermaster
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13798, -- Jotek
+              }),
+              q(7142, { -- The Battle for Alterac
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13817, -- Voggah Deathgrip
+                ["sourceQuest"] = 7222, -- Speak with Voggah Deathgrip
+              }),
               q(7082, { -- The Graveyards of Alterac
+                ["lvl"] = 51,
+                ["races"] = HORDE_ONLY,
+                ["qg"] = 13776, -- Corporal Teeka Bloodsnarl
+              }),
+              q(7101, { -- Towers and Bunkers
                 ["lvl"] = 51,
                 ["races"] = HORDE_ONLY,
                 ["qg"] = 13776, -- Corporal Teeka Bloodsnarl
@@ -65,6 +119,35 @@ _.PvP =
                 ["lvl"] = 51,
                 ["races"] = ALLIANCE_ONLY,
                 ["qg"] = 13320, -- Commander Karl Philips
+              }),
+              q(7170, { -- Earned Reverence
+                ["lvl"] = 51,
+                ["races"] = ALLIANCE_ONLY,
+                ["qg"] = 13841, -- Lieutenant Haggerdin
+                ["g"] = {
+                  i(17901), -- Stormpike Insignia Rank 3
+                },
+              }),
+              q(7165, { -- Honored Amongst the Guard
+                ["lvl"] = 51,
+                ["races"] = ALLIANCE_ONLY,
+                ["qg"] = 13841, -- Lieutenant Haggerdin
+                ["g"] = {
+                  i(17900), -- Stormpike Insignia Rank 2
+                },
+              }),
+              q(7165, { -- Rise and Be Recognized (Alliance)
+                ["lvl"] = 51,
+                ["races"] = ALLIANCE_ONLY,
+                ["qg"] = 13841, -- Lieutenant Haggerdin
+                ["g"] = {
+                  i(17691), -- Stormpike Insignia Rank 1
+                },
+              }),
+              q(7102, { -- Towers and Bunkers
+                ["lvl"] = 51,
+                ["races"] = ALLIANCE_ONLY,
+                ["qg"] = 13777, -- Sergeant Durgen Stormpike
               }),
             }),
           },
