@@ -236,6 +236,12 @@ _.Zones =
 					["sourceQuest"] = 939,	-- Flute of Xavaric
 					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
+				q(7602, {	-- Flawless Fel Essence
+					["lvl"] = 50,
+					["races"] = { WARLOCK },
+					["qg"] = 14470, -- Impsy
+					["sourceQuest"] = 7601, -- What Niby Commands
+				}),
 				q(939, {	-- Flute of Xavaric
 					["lvl"] = 49,
 					["races"] = ALLIANCE_ONLY,
@@ -266,6 +272,12 @@ _.Zones =
 						i(15796),	-- Seaspray Bracers
 						i(15797),	-- Shining Armplates
 					},
+				}),
+				q(7603, {	-- Kroshius' Infernal Core
+					["lvl"] = 50,
+					["races"] = { WARLOCK },
+					["qg"] = 14470, -- Impsy
+					["sourceQuest"] = 7602, -- Flawless Fel Essence
 				}),
 				q(5085, {	-- Mystery Goo
 					["lvl"] = 52,
@@ -563,6 +575,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6605, -- A Strange One
 					["qg"] = 9996,	-- Winna Hazzard
+				}),
+				q(7601, {	-- What Niby Commands
+					["lvl"] = 50,
+					["races"] = { WARLOCK },
+					["qg"] = 14469, -- Niby the Almighty
 				}),
 				q(4521, {	-- Wild Guardians (1/3)
 					["lvl"] = 52,
