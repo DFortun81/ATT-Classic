@@ -23,11 +23,9 @@ _.Factions =
 			n(-304, { -- Battlegrounds
 				faction(890, { -- Silverwing Sentinels
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 				faction(730, { -- Stormpike Guard
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 				faction(509, { -- The League of Arathor
 					["races"] = ALLIANCE_ONLY,
@@ -56,7 +54,6 @@ _.Factions =
 			n(-304, { -- Battlegrounds
 				faction(729, { -- Frostwolf Clan
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 				faction(510, { -- The Defilers
 					["races"] = HORDE_ONLY,
@@ -64,7 +61,6 @@ _.Factions =
 				}),
 				faction(889, { -- Warsong Outriders
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 			}),
 		},
