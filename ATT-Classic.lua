@@ -3698,6 +3698,7 @@ function app.FilterItemClass(item)
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
+			and app.RequiredSkillFilter(item.requireSkill)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item);
 	end
@@ -3722,6 +3723,13 @@ end
 function app.FilterItemClass_RequireBinding(item)
 	if item.b and (item.b == 2 or item.b == 3) then
 		return false;
+	else
+		return true;
+	end
+end
+function app.FilterItemClass_RequiredSkill(requireSkill)
+	if requireSkill then
+		return GetTempDataMember("Professions")[requireSkill];
 	else
 		return true;
 	end
@@ -3751,6 +3759,7 @@ app.CollectedItemVisibilityFilter = app.NoFilter;
 app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
+app.RequiredSkillFilter = app.NoFilter;
 app.SeasonalItemFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 app.ShowIncompleteThings = app.Filter;
@@ -6936,6 +6945,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					local g = {};
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
+							-- Mark this as a profession used by this character.
+							GetTempDataMember("Professions")[group.requireSkill] = true;
+							
 							local cache = self.cache[group.spellID];
 							if not cache then
 								cache = CloneData(group);
@@ -7368,6 +7380,15 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("lockouts", myLockouts);
 	end
 	
+	-- Cache your character's professions.
+	local professions = GetDataMember("ProfessionsPerCharacter", {});
+	local myProfessions = GetTempDataMember("Professions", professions[app.GUID]);
+	if not myProfessions then
+		myProfessions = {};
+		professions[app.GUID] = myProfessions;
+		SetTempDataMember("Professions", myProfessions);
+	end
+	
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
 	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
@@ -7465,6 +7486,7 @@ app.events.VARIABLES_LOADED = function()
 		"DeathsPerCharacter",
 		"lockouts",
 		"Position",
+		"ProfessionsPerCharacter",
 		"RandomSearchFilter",
 		"Reagents",
 		"WaypointFilters",

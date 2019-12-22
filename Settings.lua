@@ -389,10 +389,12 @@ settings.UpdateMode = function(self)
 		app.ItemTypeFilter = app.NoFilter;
 		app.ClassRequirementFilter = app.NoFilter;
 		app.RaceRequirementFilter = app.NoFilter;
+		app.RequiredSkillFilter = app.NoFilter;
 	else
 		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
 		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
