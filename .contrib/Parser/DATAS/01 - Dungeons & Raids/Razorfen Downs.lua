@@ -77,7 +77,10 @@ _.Instances = {
 			n(8696,  {	-- Henry Stern
 				["description"] = "The only source of acquiring Goldthorn Tea.",
 				["groups"] = {
-					recipe(13028),	-- Goldthorn Tea
+					{
+						["recipeID"] = 13028,	-- Goldthorn Tea
+						["requireSkill"] = 185,	-- Cooking
+					},
 				},
 			}),
 			n(7357, {	-- Mordresh Fire Eye

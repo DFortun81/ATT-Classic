@@ -653,7 +653,10 @@ _.Instances = {
 					},
 					["lvl"] = 40,
 					["groups"] = {
-						recipe(14891),		-- Smelt Dark Iron (Recipe)
+						{
+							["recipeID"] = 14891,	-- Smelt Dark Iron (Recipe)
+							["requireSkill"] = 186,	-- Mining
+						},
 					},
 				},
 				{

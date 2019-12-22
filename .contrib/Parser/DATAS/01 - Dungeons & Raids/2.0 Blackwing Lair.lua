@@ -200,7 +200,10 @@ _.Instances = {
 			n(14401, {	-- Master Elemental Shaper Krixix
 				["description"] = "When Krixix is mind controlled, one of the abilities available to the priest will be to teach a friendly target to Smelt Elementium.",
 				["groups"] = {
-					recipe(22967),	-- Smelt Elementium
+					{
+						["recipeID"] = 22967,	-- Smelt Elementium
+						["requireSkill"] = 186,	-- Mining
+					},
 					i(18562),	-- Elementium Ingot
 				},
 			}),
