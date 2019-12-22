@@ -3420,6 +3420,14 @@ app.SkillIDToSpellID = setmetatable({
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
 	[40] = 2842,	-- Poison
+	
+	-- Specializations
+	[20219] = 20219,	-- Gnomish Engineering
+	[20222] = 20222,	-- Goblin Engineering
+}, {__index = function(t,k) return k; end})
+app.SpecializationSpellIDs = setmetatable({
+	[20219] = 20219,	-- Gnomish Engineering
+	[20222] = 20222,	-- Goblin Engineering
 }, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)
@@ -6938,6 +6946,14 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					end
 				else
 					tradeSkillID = 0;
+				end
+				
+				-- Check for Specializations
+				for specializationID,spellID in pairs(app.SpecializationSpellIDs) do
+					if IsSpellKnown(spellID) then
+						-- Mark this as a profession used by this character.
+						GetTempDataMember("Professions")[spellID] = true;
+					end
 				end
 				
 				-- Open the Tradeskill list for this Profession
