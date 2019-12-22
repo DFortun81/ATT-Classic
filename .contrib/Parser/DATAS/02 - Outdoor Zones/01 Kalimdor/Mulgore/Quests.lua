@@ -68,6 +68,7 @@ _.Zones =
 					["qg"] = 2994,	-- Ancestral Spirit
 				}),
 				q(854, {	-- Journey to the Crossroads
+					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["races"] = {
 						6,	-- Tauren
@@ -84,7 +85,7 @@ _.Zones =
 				}),
 				q(748, {	-- Poison Water
 					["lvl"] = 4,
-					["races"] = { Tauren },
+					["races"] = { TAUREN },
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.5, 60.4, MULGORE },
 				}),
@@ -228,7 +229,7 @@ _.Zones =
 				}),
 				q(758, {	-- Thunderhorn Cleansing
 					["lvl"] = 4,
-					["races"] = { 6 }, -- Tauren
+					["races"] = { TAUREN },
 					["sourceQuest"] = 5415, -- Thunderhorn Totem
 					["g"] = {
 						i(4963),	-- Thunderhorn Cloak
@@ -236,11 +237,11 @@ _.Zones =
 				}),
 				q(756, {	-- Thunderhorn Totem
 					["lvl"] = 4,
-					["races"] = {	Tauren },
+					["races"] = { TAUREN },
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.5, 60.4, MULGORE },
 				}),
-				q(3094, { -- Verdant Note
+				q(3094, { 	-- Verdant Note
 					["qg"] = 2980,	-- Grull Hawkwind
 					["races"] = { TAUREN },
 					["classes"] = { DRUID },
@@ -249,6 +250,7 @@ _.Zones =
 				}),
 				q(5844, {	-- Welcome!
 					["provider"] = { "i", 14650 },	-- Camp Narache Gift Voucher
+					["races"] = HORDE_ONLY,
 					["u"] = 2,
 					["g"] = {
 						un(2, i(13584)),	-- Diablo Stone
@@ -258,9 +260,7 @@ _.Zones =
 				}),
 				q(760, {	-- Wildmane Cleansing
 					["lvl"] = 4,
-					["races"] = {
-						6,	-- Tauren
-					},
+					["races"] = { TAUREN },
 					["g"] = {
 						i(3443),	-- Ceremonial Tomahawk
 						i(4961),	-- Dreamwatcher Staff
@@ -268,12 +268,11 @@ _.Zones =
 				}),
 				q(759, {	-- Wildmane Totem
 					["lvl"] = 4,
-					["races"] = {
-						6,	-- Tauren
-					},				}),
+					["races"] = { TAUREN },
+				}),
 				q(754, {	-- Winterhoof Cleansing
 					["lvl"] = 4,
-					["races"] = { Tauren },
+					["races"] = { TAUREN },
 					["qg"] = 2948,	-- Mull Thunderhorn
 					["coord"] = { 48.5, 60.4, MULGORE },
 				}),
