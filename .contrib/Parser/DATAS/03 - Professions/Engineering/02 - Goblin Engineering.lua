@@ -1,6 +1,7 @@
 profession(202, {	-- Engineering
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
+		["sourceQuest"] = 3639,	-- Show Your Work
 		["groups"] = {
 			{
 				["name"] = "Devices",

@@ -1,6 +1,10 @@
 profession(202, {	-- Engineering
 	prof(20219, {	-- Gnomish Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
+		["sourceQuests"] = {
+			3641,	-- Show Your Work
+			3643,	-- Show Your Work
+		},
 		["groups"] = {
 			{
 				["name"] = "Devices",

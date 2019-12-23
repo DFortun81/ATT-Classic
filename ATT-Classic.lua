@@ -4104,11 +4104,13 @@ local function CreateMiniListForGroup(group)
 		if group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			local questID = group.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.altQuestID or group.questID;
-			if (group.parent.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.parent.altQuestID or group.parent.questID) == questID then
-				group = group.parent;
+			if questID then
+				if (group.parent.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.parent.altQuestID or group.parent.questID) == questID then
+					group = group.parent;
+				end
 			end
 			local mainQuest = CloneData(group);
-			mainQuest.collectible = true;
+			if questID then mainQuest.collectible = true; end
 			local g = { mainQuest };
 			
 			-- Check to see if Source Quests are listed elsewhere.
