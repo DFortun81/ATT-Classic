@@ -45,6 +45,7 @@ profession(202, {	-- Engineering
 					},
 					{
 						["name"] = "Lil' Smoky",
+						["description"] = "While this recipe does not have a requirement for Gnomish Engineering, you cannot learn this recipe without Gnomish Engineering and switching to Gnomish from Goblin is not possible in Classic.",
 						["recipeID"] = 15633
 					},
 					{
@@ -83,6 +84,16 @@ profession(202, {	-- Engineering
 					}
 				}
 			},
+			n(-17, {	-- Quests
+				i(11423, {	-- Gnome Engineer's Renewal Gift
+					["description"] = "If you destroy your Gnomish Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+					["groups"] = {
+						i(10603),	-- Schematic: Catseye Ultra Goggles
+						i(11827),	-- Schematic: Lil' Smoky
+						i(10606),	-- Schematic: Parachute Cloak
+					},
+				}),
+			}),
 		},
 	});
 });

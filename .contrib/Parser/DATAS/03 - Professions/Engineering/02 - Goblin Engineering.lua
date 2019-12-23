@@ -2,6 +2,9 @@ profession(202, {	-- Engineering
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuest"] = 3639,	-- Show Your Work
+		["cost"] = {
+			{ "i", 10791, 1 },	-- Goblin Engineer Membership Card
+		},
 		["groups"] = {
 			{
 				["name"] = "Devices",
@@ -33,7 +36,12 @@ profession(202, {	-- Engineering
 					{
 						["name"] = "Goblin Rocket Helmet",
 						["recipeID"] = 12758
-					}
+					},
+					{
+						["name"] = "Pet Bombling",
+						["description"] = "While this recipe does not have a requirement for Goblin Engineering, you cannot learn this recipe without Goblin Engineering and switching to Goblin from Gnomish is not possible in Classic.",
+						["recipeID"] = 15628
+					},
 				}
 			},
 			{
@@ -81,6 +89,16 @@ profession(202, {	-- Engineering
 					}
 				}
 			},
+			n(-17, {	-- Quests
+				i(11422, {	-- Goblin Engineer's Renewal Gift
+					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+					["groups"] = {
+						i(4417),	-- Schematic: Large Seaforium Charge
+						i(11828),	-- Schematic: Pet Bombling
+						i(4416),	-- Schematic: Goblin Land Mine
+					},
+				}),
+			}),
 		},
 	});
 });

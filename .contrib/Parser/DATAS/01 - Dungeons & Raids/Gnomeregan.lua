@@ -371,13 +371,6 @@ _.Instances = {
 						6230,	-- Peacekeeper Security Suit
 					},
 				}),
-				i(11827, {	-- Schematic: Lil' Smoky
-					["crs"] = {
-						6232,	-- Arcane Nullifier X-21
-						6229,	-- Crowd Pummeler 9-60
-						6230,	-- Peacekeeper Security Suit
-					},
-				}),
 				i(9486, {	-- Supercharger Battle Axe
 					["crs"] = {
 						6232,	-- Arcane Nullifier X-21
@@ -462,7 +455,6 @@ _.Instances = {
 				i(4417),	-- Schematic: Large Seaforium Charge
 				i(4408),	-- Schematic: Mechanical Squirrel Box
 				i(4412),	-- Schematic: Moonsight Rifle
-				i(11828), 	-- Schematic: Pet Bombling
 				i(4414),	-- Schematic: Portable Bronze Mortar
 				i(4410),	-- Schematic: Shadow Goggles
 				i(4409),	-- Schematic: Small Seaforium Charge

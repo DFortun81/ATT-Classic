@@ -140,10 +140,6 @@ profession(202, {	-- Engineering
 				["recipeID"] = 12616
 			},
 			{
-				["name"] = "Pet Bombling",
-				["recipeID"] = 15628
-			},
-			{
 				["name"] = "Salt Shaker",
 				["recipeID"] = 19567
 			},
