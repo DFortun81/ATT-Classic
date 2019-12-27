@@ -74,6 +74,7 @@ _.Zones =
 				}),
 				q(4262, {	-- Overmaster Pyron
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8996, {	-- Return to Bodley
 					["lvl"] = 58,

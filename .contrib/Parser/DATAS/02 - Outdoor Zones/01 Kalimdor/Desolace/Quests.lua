@@ -323,6 +323,7 @@ _.Zones =
 					},
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["lvl"] = 30,
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1458, {	-- Reagents for Reclaimers Inc. (1/4)
 					["lvl"] = 30,

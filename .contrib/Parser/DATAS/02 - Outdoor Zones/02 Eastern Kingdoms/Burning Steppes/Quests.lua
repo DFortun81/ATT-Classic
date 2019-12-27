@@ -22,9 +22,15 @@ _.Zones =
 				}),
 				q(3823, {	-- Extinguish the Firegut
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9177,	-- Oralius
+					["coords"] = { 84.6, 68.8, BURNING_STEPPES },
 				}),
 				q(4283, {	-- FIFTY! YEP!
 					["lvl"] = 50,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9177,	-- Oralius
+					["coords"] = { 84.6, 68.8, BURNING_STEPPES },
 				}),
 				q(4808, {	-- Felnok Steelspring
 					["lvl"] = 50,
@@ -129,6 +135,9 @@ _.Zones =
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
 					["lvl"] = 48,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 9177,	-- Oralius
+					["coords"] = { 84.6, 68.8, BURNING_STEPPES },
 					["g"] = {
 						i(11867),	-- Maddening Gauntlets
 						i(11868),	-- Choking Band

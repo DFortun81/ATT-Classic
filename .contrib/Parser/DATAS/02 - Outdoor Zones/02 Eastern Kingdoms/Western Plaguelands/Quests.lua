@@ -10,16 +10,19 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
+					["isBreadcrumb"] = true,
 				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
+					["isBreadcrumb"] = true,
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10879,	-- Harbinger Balthazad
+					["isBreadcrumb"] = true,
 				}),
 				q(4971, {	-- A Matter of Time
 					["lvl"] = 53,

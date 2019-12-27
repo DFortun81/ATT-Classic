@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2198, -- Crier Goodman
+					["isBreadcrumb"] = true,
 				}),
 				q(7794, {	-- A Donation of Mageweave
 					["lvl"] = 40,

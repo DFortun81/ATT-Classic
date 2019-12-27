@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10878,	-- Herald Moonstalker
+					["isBreadcrumb"] = true,
 					["description"] = "Quest giver walks around Darnassus on the main path.",
 				}),
 				q(7799, {	-- A Donation of Mageweave

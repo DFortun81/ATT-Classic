@@ -38,6 +38,7 @@ _.WorldDrops =
 			i(6381),  -- Bright Cloak
 			i(6417),  -- Aurora Cloak
 			i(6432),  -- Imperial Cloak
+			i(6575),  -- Defender Cloak
 			i(7492),  -- Captain's Cloak
 			i(9779),  -- Bandit Cloak
 			i(10212),  -- Elegant Cloak
@@ -55,6 +56,7 @@ _.WorldDrops =
 			i(2965),  -- Warrior's Tunic
 			i(2977),  -- Veteran Armor
 			i(3055),  -- Forest Leather Chestpiece
+			i(3288),  -- Tribal Vest
 			i(3313),  -- Ceremonial Leather Harness
 			i(4074),  -- Mail Combat Armor
 			i(6266),  -- Disciple's Vest
@@ -148,6 +150,7 @@ _.WorldDrops =
 		n(-329, {	-- Legs
 			i(2962),  -- Burnt Leather
 			i(2966),  -- Warrior's Pants
+			i(3282),  -- Battle Chain Pants
 			i(3303),  -- Barbaric Loincloth
 			i(6267),  -- Disciple's Pants
 			i(6337),  -- Infantry Leggings
@@ -165,6 +168,7 @@ _.WorldDrops =
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
 			i(10554),  -- Foreman Pants
+			i(14090),  -- Beaded Britches
 			i(14207),  -- Vital Leggings
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies

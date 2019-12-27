@@ -10,6 +10,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
+					["isBreadcrumb"] = true,
 				}),
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
