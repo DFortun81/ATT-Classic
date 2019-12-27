@@ -353,6 +353,7 @@ _.Zones =
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
+					["isBreadcrumb"] = true,
 				}),
 				q(1082, {	-- Update for Sentinel Thenysil
 					["qg"] = 4080,	-- Kaela Shadowspear

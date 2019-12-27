@@ -435,6 +435,16 @@ _.Instances = {
 						i(18424),	-- Sedge Boots
 					},
 				},
+				q(7631, {	-- Dreadsteed of Xoroth
+					["sourceQuest"] = 7629,	-- Imp Delivery
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
+					["maps"] = { BURNING_STEPPES },
+					["lvl"] = 60,
+					["group"] = {
+						recipe(23161),	-- Summon Dreadsteed
+					},
+				}),
 				{
 					["questID"] = 7703,	-- Unfinished Gordok Business
 					["qg"] = 14325,	-- Captain Kromcrush

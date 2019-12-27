@@ -32,11 +32,38 @@ _.Holidays =
 					["lvl"] = 10,
 					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["altQuests"] = { 
+						7021,  -- Greatfather Winter is Here! 
+						7124,  -- Greatfather Winter is Here! 
+					},
+				}),
+				q(7021, { -- Greatfather Winter is Here!
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13431, -- Whulwert Copperpinch <Smokywood Pastures>
+					["altQuests"] = { 
+						6961,  -- Greatfather Winter is Here! 
+						7124,  -- Greatfather Winter is Here! 
+					},
+				}),
+				q(7024, { -- Greatfather Winter is Here!
+					["lvl"] = 10,
+					["races"] = HORDE_ONLY,
+					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["altQuests"] = { 
+						6961,  -- Greatfather Winter is Here! 
+						7021,  -- Greatfather Winter is Here! 
+					},
 				}),
 				q(7022, { -- Greatfather Winter is Here!
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+				}),
+				q(7023, { -- Greatfather Winter is Here!
+					["lvl"] = 10,
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 13435, -- Khole Jinglepocket <Smokywood Pastures>
 				}),
 				q(8746, { -- Metzen the Reindeer (Horde)
 					["lvl"] = 40,

@@ -57,6 +57,7 @@ _.WorldDrops =
 			i(2977),  -- Veteran Armor
 			i(3055),  -- Forest Leather Chestpiece
 			i(3288),  -- Tribal Vest
+			i(3310),  -- Barbaric Cloth Vest
 			i(3313),  -- Ceremonial Leather Harness
 			i(4074),  -- Mail Combat Armor
 			i(6266),  -- Disciple's Vest
@@ -103,6 +104,7 @@ _.WorldDrops =
 			i(1448),  -- Blackrock Gauntlets
 			i(2976),  -- Hunting Gloves
 			i(3058),  -- Forest Leather Gloves
+			i(6541),  -- Willow Gloves
 			i(6547),  -- Soldier's Gauntlets
 			i(6554),  -- Bard's Gloves
 			i(6605),  -- Dervish Gloves
@@ -116,6 +118,7 @@ _.WorldDrops =
 			i(10380),  -- Commander's Gauntlets
 			i(14117),  -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
+			i(14367),  -- Mystic's Gloves
 			i(14747),  -- Hulking Gauntlets
 			i(15538),  -- Wicked Chain Gauntlets
 		}),
@@ -222,6 +225,7 @@ _.WorldDrops =
 		}),
 		n(-335, {	-- 2H Axes
 			i(2227),  -- Heavy Ogre War Axe
+			i(3195),  -- Barbaric Battle Axe
 			i(3199),  -- Battle Slayer
 			i(4562),  -- Severing Axe
 			i(15269),  -- Massive Battle Axe
@@ -242,6 +246,7 @@ _.WorldDrops =
 			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger
+			i(3184),  -- Hook Dagger
 			i(4571),  -- War Knife
 			i(15242),  -- Honed Stiletto
 			i(15243),  -- Deadly Kris
@@ -294,6 +299,7 @@ _.WorldDrops =
 			i(943),  -- Warden Staff
 			i(1405),  -- Foamspittle Staff
 			i(2077),  -- Magician Staff
+			i(4566),  -- Sturdy Quarterstaff
 			i(4575),  -- Medicine Staff
 		}),
 		n(-338, {	-- 1H Swords

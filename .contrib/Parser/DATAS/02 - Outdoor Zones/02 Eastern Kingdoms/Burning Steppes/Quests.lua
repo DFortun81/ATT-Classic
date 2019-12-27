@@ -6,10 +6,25 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(-17, {	-- Quests
+				q(7626, { -- Arcanite
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
+					["sourceQuests"] = {
+						7626, -- Bell of Dethmoora
+						7627, -- Wheel of the Black March
+						7628, -- Doomsday Candle
+					},
+					["cost"] = {
+						{ "i", 12360, 3 }, -- Arcanite Bar
+					},
+				}),
 				q(7626, { -- Bell of Dethmoora
 					["lvl"] = 60,
 					["classes"] = { WARLOCK },
 					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
 					["sourceQuest"] = 7564, -- Wildeyes
 				}),
 				q(4726, {	-- Broodling Essence
@@ -19,6 +34,16 @@ _.Zones =
 				q(4726, {	-- Broodling Essence
 					["lvl"] = 50,
 					["qg"] = 10267,	-- Tinkee Steamboil
+				}),
+				q(7628, { -- Doomsday Candle
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
+					["sourceQuest"] = 7564, -- Wildeyes
+					["cost"] = {
+						{ "i", 15416, 30 }, -- Black Dragonscale
+					},
 				}),
 				q(3823, {	-- Extinguish the Firegut
 					["lvl"] = 48,
@@ -40,6 +65,19 @@ _.Zones =
 					["lvl"] = 48,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9177,	-- Oralius
+				}),
+				q(7629, { -- Imp Delivery
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
+					["sourceQuests"] = {
+						7625, -- Xorothian Stardust
+						7630, -- Arcanite
+					},
+					["cost"] = {
+						{ "i", 15416, 30 }, -- Black Dragonscale
+					},
 				}),
 				q(3822, {	-- Krom'Grul
 					["lvl"] = 48,
@@ -131,6 +169,7 @@ _.Zones =
 					["lvl"] = 60,
 					["classes"] = { WARLOCK },
 					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
 					["sourceQuest"] = 7564, -- Wildeyes
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
@@ -156,10 +195,17 @@ _.Zones =
 					["lvl"] = 50,
 					["qg"] = 9536,	-- Maxwort Uberglint
 				}),
+				q(7627, { -- Wheel of the Black March
+					["lvl"] = 60,
+					["classes"] = { WARLOCK },
+					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["sourceQuest"] = 7564, -- Wildeyes
+				}),
 				q(7564, { -- Wildeyes
 					["lvl"] = 60,
 					["classes"] = { WARLOCK },
 					["qg"] = 14436, -- Mor'zul Bloodbringer
+					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
 					["sourceQuest"] = 7563, -- Rage of Blood
 				}),
 			}),

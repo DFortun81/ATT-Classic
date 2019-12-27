@@ -563,6 +563,7 @@ _.Zones =
 					["lvl"] = 60,
 					["classes"] = { WARLOCK },
 					["qg"] = 9516, -- Lord Banehollow
+					["coords"] = { 36.0, 44.6, FELLWOOD },
 					["sourceQuest"] = 7623, -- Lord Banehollow
 				}),
 				q(5156, {	-- Verifying the Corruption
@@ -611,6 +612,7 @@ _.Zones =
 					["lvl"] = 60,
 					["classes"] = { WARLOCK },
 					["qg"] = 9516, -- Lord Banehollow
+					["coords"] = { 36.0, 44.6, FELLWOOD },
 					["sourceQuest"] = 7624, -- Ulathek the Traitor
 				}),
 			}),
