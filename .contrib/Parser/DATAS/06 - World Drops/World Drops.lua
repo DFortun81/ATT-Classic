@@ -5,7 +5,9 @@ _.WorldDrops =
 {
 	n(-318, {	-- Armor
 		n(-320, {	-- Head
-			i(7529),  -- Cabalist Helm111
+			i(4039),  -- Nightsky Cowl
+			i(7529),  -- Cabalist Helm
+			i(9953),  -- Chieftain's Headdress
 			i(10061),  -- Duskwoven Turban
 			i(10111),  -- Wanderer's Hat
 			i(10175),  -- Mystical Headwrap
@@ -15,6 +17,7 @@ _.WorldDrops =
 			i(14421),  -- Silksand Circlet
 			i(14944),  -- Warbringer's Crown
 			i(15363),  -- Trickster's Headdress
+			i(15391),  -- Jadefire Cap
 		}),
 		n(-321, {	-- Shoulder
 			i(4709),  --  Forest Leather Mantle
@@ -32,24 +35,35 @@ _.WorldDrops =
 			i(4726),  -- Chief Brigadier Cloak
 			i(5111),  -- Rathorian's Cape
 			i(5751),  -- Webwing Cloak
+			i(6381),  -- Bright Cloak
 			i(6417),  -- Aurora Cloak
 			i(6432),  -- Imperial Cloak
+			i(7492),  -- Captain's Cloak
 			i(9779),  -- Bandit Cloak
 			i(10212),  -- Elegant Cloak
+			i(10258),  -- Adventurer's Cape
 			i(14331),  -- Eternal Cloak
+			i(14571),  -- Bristlebark Cape
+			i(15114),  -- Rigid Cape
+			i(15501),  -- Outrunner's Cloak
 			i(15594),  -- Steadfast Cloak
 			i(15661),  -- Impenetrable Cloak
 		}),
 		n(-323, {	-- Chest
 			i(821),  -- Riverpaw Leather Vest
+			i(2957),  -- Journeyman's Vest
+			i(2965),  -- Warrior's Tunic
 			i(2977),  -- Veteran Armor
 			i(3055),  -- Forest Leather Chestpiece
 			i(3313),  -- Ceremonial Leather Harness
 			i(4074),  -- Mail Combat Armor
+			i(6266),  -- Disciple's Vest
 			i(7353),  -- Elder's Padded Armor
 			i(7407),  -- Infiltrator Armor
 			i(7477),  -- Ranger Tunic
+			i(9783),  -- Raider's Chestpiece
 			i(9884),  -- Sorcerer Robe
+			i(9928),  -- Brigade Breastplate
 			i(10065),  -- Duskwoven Robe
 			i(10070),  -- Righteous Armor
 			i(10077),  -- Lord's Breastplate
@@ -60,18 +74,24 @@ _.WorldDrops =
 		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
+			i(3211),  -- Burnished Bracers
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
+			i(6550),  -- Soldier's Wristguards
 			i(6563),  -- Shimmering Bracers
+			i(6583),  -- Scouting Bracers
 			i(6613),  -- Sage's Bracers
 			i(7461),  -- Knight's Bracers
 			i(7475),  -- Regal Cuffs
 			i(7525),  -- Gossamer Bracers
 			i(8257),  -- Serpentskin Bracers
 			i(9821),  -- Durable Bracers
+			i(9909),  -- Royal Bands
 			i(10096),  -- Councillor's Cuffs
 			i(10213),  -- Elegant Bracers
 			i(10223),  -- Nigthshade Armguards
+			i(14122),  -- Ritual Bands
+			i(14429),  -- Windchaser Cuffs
 			i(14561),  -- Prospector's Cuffs
 			i(14723),  -- War Paint Bindings
 			i(15163),  -- Imposing Bracersc
@@ -79,9 +99,14 @@ _.WorldDrops =
 		}),
 		n(-327, {	-- Hands
 			i(1448),  -- Blackrock Gauntlets
+			i(2976),  -- Hunting Gloves
 			i(3058),  -- Forest Leather Gloves
+			i(6547),  -- Soldier's Gauntlets
+			i(6554),  -- Bard's Gloves
+			i(6605),  -- Dervish Gloves
 			i(7433),  -- Twilight Gloves
 			i(9771),  -- Greenweave Gloves
+			i(9780),  -- Bandit Gloves
 			i(9795),  -- Ivycloth Gloves
 			i(9813),  -- Fortified Gauntlets
 			i(9823),  -- Durable Gloves
@@ -90,32 +115,56 @@ _.WorldDrops =
 			i(14117),  -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
 			i(14747),  -- Hulking Gauntlets
+			i(15538),  -- Wicked Chain Gauntlets
 		}),
 		n(-328, {	-- Waist
+			i(4697),  -- Burnished Girdle
 			i(4708),  -- Bright Belt
+			i(4738),  -- Imperial Leather Belt
 			i(6409),  -- Insignia Belt
 			i(6418),  -- Aurora Sash
 			i(6570),  -- Shimmering Sash
+			i(7462),  -- Knight's Girdle
 			i(9775),  -- Bandit Cinch
 			i(9801),  -- Superior Belt
 			i(9891),  -- Huntsman's Belt
 			i(9906),  -- Royal Sash
+			i(10098),  -- Councillor's Cloak
+			i(10103),  -- Councillor's Sash
 			i(10166),  -- Templar Girdle
+			i(10221),  -- Nightshade Girdle
+			i(10269),  -- Masterwork Girdle
+			i(14131),  -- Ritual Belt
+			i(14167),  -- Buccaneer's Cape
+			i(14235),  -- Embersilk Cord
 			i(14465),  -- Elunarian Belt
+			i(14559),  -- Prospector's Sash
 			i(15011),  -- Lupine Cord
 			i(15154),  -- Nocturnal Sash
+			i(15382),  -- Rageclaw Cloak
+			i(15497),  -- Outrunner's Cord
+			i(15510),  -- Grunt's Belt
 		}),
 		n(-329, {	-- Legs
+			i(2962),  -- Burnt Leather
+			i(2966),  -- Warrior's Pants
 			i(3303),  -- Barbaric Loincloth
+			i(6267),  -- Disciple's Pants
+			i(6337),  -- Infantry Leggings
 			i(6431),  -- Imperial Leather Boots
 			i(6587),  -- Scouting Trousers
 			i(7431),  -- Twilight's Pants
 			i(7455),  -- Knight's Legguards
 			i(8309),  -- Hero's Leggins
+			i(9291),  -- Field Plate Leggings
+			i(9747),  -- Simple Britches
 			i(9756),  -- Gypsy Trousers
+			i(9789),  -- Raider's Legguards
 			i(9862),  -- Archer's Trousers
+			i(10091),  -- Gothic Plate Leggings
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
+			i(10554),  -- Foreman Pants
 			i(14207),  -- Vital Leggings
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
@@ -126,27 +175,37 @@ _.WorldDrops =
 			i(2983),  -- Seer's Boots
 			i(3057),  -- Forest Leather Boots
 			i(3307),  -- Barbaric Cloth Boots
+			i(6412),  -- Chief Brigadier Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
+			i(9917),  -- Tracker's Boots
 			i(10095),  -- Councillor's Boots
 			i(10146),  -- Mighty Boots
 			i(10179),  -- Mystical Boots
 			i(10222),  -- Nightshade Boots
 			i(13070),  -- Sapphiron's Scale Boots
 			i(14195),  -- Raincaller Boots
+			i(15305),  -- Feral Shoes
 		}),
 		filter(51, {	-- Neck
+			i(4614),  -- Pendant of Myzrael
 			i(13087),  -- River Pride Choker
 		}),
 		filter(52, {	-- Finger
 			i(6757),  -- Jaina's Signet Ring
+			i(7552),  -- Falcon's Hook
+			i(11965),  -- Quartz Ring
+			i(11971),  -- Amethyst Band
+			i(11981),  -- Lead Band
 			i(11982),  -- Viridian Band
+			i(11993),  -- Clay Ring
 			i(12007),  -- Prairie RIng
 		}),
 	}),
 	n(-319, {	-- Weapons		
 		n(-334, {	-- 1H Axes
 			i(790),  -- Forester's Axe
+			i(863),  -- Gloom Reaper
 			i(871),  -- Flurry Axe
 			i(2073),  -- Dwarven Hatchet
 			i(4561),  -- Scalping Tomahawk
@@ -159,23 +218,30 @@ _.WorldDrops =
 		}),
 		n(-335, {	-- 2H Axes
 			i(2227),  -- Heavy Ogre War Axe
+			i(3199),  -- Battle Slayer
+			i(4562),  -- Severing Axe
 			i(15269),  -- Massive Battle Axe
+			i(15271),  -- Colossal Great Axe
 		}),	
 		n(-346, {	-- Bows
 			i(3036),  -- Heavy Shortbow
 			i(4087),  -- Trueshot Bow
+			i(8180),  -- Hunting Bow
 			i(8183),  -- Precision Bow
 		}),
 		n(-347, {	-- Crossbows
 			i(13038),  -- Swiftwind
 		}),			
 		n(-333, {	-- Daggers
+			i(816),  -- Small Hand Blade
 			i(1287),  -- Giant Tarantula Fang
 			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
-			i(2632),  -- Curved Dagger	
+			i(2632),  -- Curved Dagger
+			i(4571),  -- War Knife
 			i(15242),  -- Honed Stiletto
 			i(15243),  -- Deadly Kris
+			i(15244),  -- Razor Blade
 		}),
 		n(-348, {	-- Fist Weapons	
 		}),
@@ -191,12 +257,16 @@ _.WorldDrops =
 		}),
 		n(-336, {	-- 1H Maces
 			i(789),  -- Stout Battlehammer
+			i(2075),  -- Priest's Mace
+			i(2079),  -- Sergeant's Warhammer
 			i(4090),  -- Mug O' Hurt
 			i(15222),  -- Barbed Club
 			i(15229),  -- Blesswind Hammer
 		}),
 		n(-337, {	-- 2H Maces
+			i(3193),  -- Oak Mallet
 			i(15259),  -- Hefty Battlehammer
+			i(15261),  -- Sequoaia Branch
 			i(15263),  -- Royal Mallet
 		}),
 		n(-343, {	-- Polearms
@@ -207,6 +277,7 @@ _.WorldDrops =
 			i(6383),  -- Forest Buckler
 			i(7331),  -- Phalanax Shield
 			i(8320),  -- Alabaster Shield
+			i(9753),  -- Gypsy Buckler
 			i(9764),  -- Cadet Shield
 			i(9790),  -- Raider's Shield
 			i(9958),  -- Warmonger's Buckler
@@ -217,20 +288,29 @@ _.WorldDrops =
 		n(-342, {	-- Staves
 			i(866),  -- Monk's Staff
 			i(943),  -- Warden Staff
+			i(1405),  -- Foamspittle Staff
 			i(2077),  -- Magician Staff
+			i(4575),  -- Medicine Staff
 		}),
 		n(-338, {	-- 1H Swords
 			i(727),  -- Notched Shortsword
 			i(864),  -- Knigthly Longsword
 			i(2011),  -- Twisted Sabre
+			i(2078),  -- Northern Shortsword
 			i(15210),  -- Raider Shortsword
+			i(15211),  -- Militant Shortsword
 		}),
 		n(-339, {	-- 2H Swords
+			i(647),  -- Destiny
+			i(2822),  -- Mo'Grosh Toothpick
+			i(3196),  -- Edged Bastard Sword
 			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword
+			i(8178),  -- Training Sword
 			i(15251),  -- Headstriker Sword
 		}),
 		n(-341, {	-- Wands
+			i(5069),  -- Fire Wand
 			i(5212),  -- Blazing Wand
 			i(5213),  -- Scorching Wand
 			i(5216),  -- Umbral Wand

@@ -127,6 +127,10 @@ _.Holidays =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13636, -- Strange Snowman
 				}),
+				q(8827, { -- Winter's Presents
+					["lvl"] = 1,
+					["races"] = ALLIANCE_ONLY,
+				}),
 			}),
 		},
 	}),

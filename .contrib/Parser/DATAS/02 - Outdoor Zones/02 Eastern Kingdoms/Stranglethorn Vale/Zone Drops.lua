@@ -12,6 +12,9 @@ _.Zones =
 				i(9294, {	-- Recipe: Wildvine Potion
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
+				i(1986, {  -- Gutrender
+					["cr"] = 709,	-- Mosh'Ogg Warmonger
+				}),
 			}),
 		}),
 	}),

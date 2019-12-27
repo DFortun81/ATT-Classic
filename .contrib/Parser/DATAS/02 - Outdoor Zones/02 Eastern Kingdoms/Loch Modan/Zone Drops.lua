@@ -4,10 +4,10 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
-		m(WESTFALL, {	-- Westfall
+		m(LOCH_MODAN, {	-- Loch Modan
 			n(0, {	-- Zone Drop
-				i(1405, {  -- Foamspittle Staff
-					["cr"] = 517,	-- Murloc Oracle
+				i(2822,  { -- Mo'grosh Toothpick
+					["crs"] = 1178,  -- Mo'grosh Ogre
 				}),
 			}),	
 		}),

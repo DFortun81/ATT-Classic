@@ -4,12 +4,14 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
-		m(WESTFALL, {	-- Westfall
-			n(0, {	-- Zone Drop
-				i(1405, {  -- Foamspittle Staff
-					["cr"] = 517,	-- Murloc Oracle
+		m(BURNING_STEPPES, {	-- Burning Steppes
+			n(-16, {	-- Rares
+				n(10119, {  -- Volchan
+					["g"] = {
+						i(12828),	-- Plans: Volcanic Hammer
+					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

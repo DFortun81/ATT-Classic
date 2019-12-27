@@ -4,12 +4,15 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
-		m(WESTFALL, {	-- Westfall
-			n(0, {	-- Zone Drop
-				i(1405, {  -- Foamspittle Staff
-					["cr"] = 517,	-- Murloc Oracle
+		m(LOCH_MODAN, {	-- Loch Modan
+			n(-16, {	-- Rares
+				n(1425, {	-- Grizlak
+					["groups"] = {
+						i(2284), -- Rat Cloth Cloak
+						i(6195),  -- Wax-polished Armor
+					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

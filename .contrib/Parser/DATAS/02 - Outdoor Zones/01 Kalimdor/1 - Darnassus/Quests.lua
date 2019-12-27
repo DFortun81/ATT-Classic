@@ -212,7 +212,7 @@ _.Zones =
 					["classes"] = { 3 },	-- Hunter Only!
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
-						-- 6071,	-- The Hunter's Path
+						6071,	-- The Hunter's Path
 						6072,	-- The Hunter's Path
 						6073,	-- The Hunter's Path
 						6721,	-- The Hunter's Path
@@ -225,12 +225,12 @@ _.Zones =
 					["coord"] = { 25.98, 48.45, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
 					["races"] = { 4 },	-- Night Elf Only
-					["classes"] = { 3 },	-- Hunter Only!
+					["classes"] = { 3 },	-- Hunter Only
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
 						6072,	-- The Hunter's Path
-						-- 6073,	-- The Hunter's Path
+						6073,	-- The Hunter's Path
 						6721,	-- The Hunter's Path
 						6722,	-- The Hunter's Path
 					},

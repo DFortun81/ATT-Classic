@@ -83,14 +83,14 @@ _.Zones =
 				}),
 				q(3109, {	-- Encrypted Rune
 					["lvl"] = 1,
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3108, {	-- Etched Rune
 					["lvl"] = 1,
-					["races"] = { 3 },	-- Dwarf
+					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
@@ -243,6 +243,47 @@ _.Zones =
 						i(159),	-- Refreshing Spring Water
 					},
 				}),
+				q(6064, {	-- Taming the Beast
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+					["sourceQuests"] = {
+						6074,	-- The Hunter's Path
+						6075,	-- The Hunter's Path
+						6076,	-- The Hunter's Path
+					},
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 10,
+				}),
+				q(6084, {	-- Taming the Beast
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+					["sourceQuest"] = 6064,  -- Taming the Beast
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 10,
+				}),
+				q(6085, {	-- Taming the Beast
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+					["sourceQuest"] = 6084,  -- Taming the Beast
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 10,
+				}),
+				q(6085, {	-- Taming the Beast
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+					["sourceQuest"] = 6085,  -- Taming the Beast
+					["coord"] = { 45.8, 53.0, DUN_MOROGH },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(883),	-- Call Pet
+						recipe(2641),	-- Dismiss Pet
+						recipe(1515),	-- Tame Beast
+					},
+				}),
 				q(183, {	-- The Boar Hunter
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 714,	-- Talin Keeneye
@@ -255,6 +296,18 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1377,	-- Pilot Stonegear
+				}),
+				q(6075, {	-- The Hunter's Path
+					["qg"] = 11807,	-- Tristane Shadowstone
+					["coord"] = { 30.6, 45.4, DUN_MOROGH },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						6074,	-- The Hunter's Path
+						6076,	-- The Hunter's Path
+					},
+					["lvl"] = 10,
 				}),
 				q(419, {	-- The Lost Pilot
 					["lvl"] = 8,

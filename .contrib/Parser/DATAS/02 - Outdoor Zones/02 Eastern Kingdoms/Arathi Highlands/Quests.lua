@@ -56,6 +56,7 @@ _.Zones =
 				}),
 				q(635, {	-- Crystal in the Mountains
 					["lvl"] = 30,
+					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
 					["altQuests"] = {
 						642,	-- The Princess Trapped
 					},

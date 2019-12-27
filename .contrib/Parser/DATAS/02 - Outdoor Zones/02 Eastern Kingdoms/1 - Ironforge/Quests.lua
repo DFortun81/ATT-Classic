@@ -833,18 +833,15 @@ _.Zones =
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(6721, {	-- The Hunter's Path
-					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
-					["coord"] = { 69.87, 82.89, IRONFORGE },
-					["races"] = { 4 },	-- Night Elf Only
-					["classes"] = { 3 },	-- Hunter Only!
+				q(6074, {	-- The Hunter's Path
+					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
+					["coord"] = { 70, 84.6, IRONFORGE },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						-- 6721,	-- The Hunter's Path
-						6722,	-- The Hunter's Path
+						6075,	-- The Hunter's Path
+						6076,	-- The Hunter's Path
 					},
 					["lvl"] = 10,
 				}),

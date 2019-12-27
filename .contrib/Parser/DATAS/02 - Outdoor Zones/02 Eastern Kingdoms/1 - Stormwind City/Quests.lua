@@ -74,6 +74,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 395, -- Brotherhood's End
 					["qg"] = 1646, -- Baros Alexston <City Architect>
+					["g"] = {
+						i(2933), -- Seal of Wrynn
+					},
 				}),
 				q(7796, {	-- Additional Runecloth
 					["lvl"] = 50,
@@ -435,18 +438,15 @@ _.Zones =
 					["sourceQuest"] = 434, -- The Attack!
 					["qg"] = 482, -- Elling Trias <Master of Cheese>
 				}),
-				q(6722, {	-- The Hunter's Path
+				q(6076, {	-- The Hunter's Path
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-					["coord"] = { 61.58, 15.19, STORMWIND_CITY },
-					["races"] = { 4 },	-- Night Elf Only
-					["classes"] = { 3 },	-- Hunter Only!
+					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
+					["races"] = { 3 },	-- Dwarf Only
+					["classes"] = { 3 },	-- Hunter Only
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						6721,	-- The Hunter's Path
-						-- 6722,	-- The Hunter's Path
+						6074,	-- The Hunter's Path
+						6075,	-- The Hunter's Path
 					},
 					["lvl"] = 10,
 				}),
