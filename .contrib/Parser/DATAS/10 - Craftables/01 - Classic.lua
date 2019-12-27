@@ -48,14 +48,14 @@ _.Craftables =
 			i(3491),	-- Heavy Bronze Mace
 			i(5541),	-- Iridescent Hammer
 			i(12794, {	-- Masterwork Stormhammer
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3492),	-- Mighty Iron Hammer
 			i(22384),	-- Persuader
 			i(7946),	-- Runed Mithril Hammer
 			i(12781),	-- Serenity
 			i(7954, {	-- The Shatterer
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12792),	-- Volcanic Hammer
 		}),
@@ -63,7 +63,7 @@ _.Craftables =
 			i(7956),	-- Bronze Warhammer
 			i(11608),	-- Dark Iron Pulverizer
 			i(12776, {	-- Enchanted Battlehammer
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3852),	-- Golden Iron Destroyer
 			i(12796),	-- Hammer of the Titans
@@ -104,7 +104,7 @@ _.Craftables =
 			i(3487),	-- Heavy Copper Broadsword
 			i(3853),	-- Moonsteel Broadsword
 			i(7960, {	-- Truesilver Champion
-				["u"] = 8,
+				["u"] = 3,
 			}),
 		}),
 		filter(29, {	-- Polearms
@@ -131,7 +131,7 @@ _.Craftables =
 			i(19148),	-- Dark Iron Helm
 			i(20551),	-- Darkrune Helm
 			i(12620, {	-- Enchanted Thorium Helm
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3837),	-- Golden Scale Coif
 			i(3836),	-- Green Iron Helm
@@ -141,7 +141,7 @@ _.Craftables =
 			i(12640),	-- Lionheart Helm
 			i(7931),	-- Mithril Coif
 			i(7937, {	-- Ornate Mithril Helm
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12417),	-- Radiant Circlet
 			i(12612),	-- Runic Plate Helm
@@ -156,7 +156,7 @@ _.Craftables =
 			}),
 			i(11605),	-- Dark Iron Shoulders
 			i(19695, {	-- Darksoul Shoulders
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12625),	-- Dawnbringer Shoulders
 			i(16988),	-- Fiery Chain Shoulders
@@ -165,9 +165,7 @@ _.Craftables =
 			i(7918),	-- Heavy Mithril Shoulder
 			i(12428),	-- Imperial Plate Shoulders
 			i(7932),	-- Mithril Scale Shoulders
-			i(7928, {	-- Ornate Mithril Shoulder
-				["u"] = 8,
-			}),
+			i(7928),	-- Ornate Mithril Shoulder
 			i(3480),	-- Rough Bronze Shoulders
 			i(12610),	-- Runic Plate Shoulders
 			i(3481),	-- Silvered Bronze Shoulders
@@ -175,26 +173,26 @@ _.Craftables =
 		n(-323, {		-- Chest
 			i(7914),	-- Barbaric Iron Breastplate
 			i(19690, {	-- Bloodsoul Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3471),	-- Copper Chain Vest
 			i(11604),	-- Dark Iron Plate
 			i(11606),	-- Dark Iron Plate
 			i(20550),	-- Darkrune Breastplate
 			i(19693, {	-- Darksoul Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12628, {	-- Demon Forged Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12618, {	-- Enchanted Thorium Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3845),	-- Golden Scale Cuirass
 			i(3844),	-- Green Iron Hauberk
 			i(7930),	-- Heavy Mithril Breastplate
 			i(22669, {	-- Icebane Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12422),	-- Imperial Plate Chest
 			i(12641),	-- Invulnerable Mail
@@ -202,13 +200,13 @@ _.Craftables =
 			i(22762),	-- Ironvine Breastplate
 			i(22191),	-- Obsidian Plate Tunic
 			i(7935, {	-- Ornate Mithril Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12415),	-- Radiant Breastplate
 			i(2866),	-- Rough Bronze Cuirass
 			i(2864),	-- Runed Copper Breastplate
 			i(12613, {	-- Runic Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(2870),	-- Shining Silver Breastplate
 			i(2869),	-- Silvered Bronze Breastplate
@@ -216,7 +214,7 @@ _.Craftables =
 			i(22196),	-- Thick Obsidian Breastplate
 			i(12405),	-- Thorium Armor
 			i(7939, {	-- Truesilver Breastplate
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12624),	-- Wildthorn Mail
 		}),
@@ -224,34 +222,32 @@ _.Craftables =
 			i(7917),	-- Barbaric Iron Gloves
 			i(22194),	-- Black Grasp of the Destroyer
 			i(19692, {	-- Bloodsoul Gauntlets
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(19164),	-- Dark Iron Gauntlets
 			i(20549),	-- Darkrune Gauntlets
 			i(12631, {	-- Fiery Plate Gauntlets
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3474),	-- Gemmed Copper Gauntlets
 			i(19057),	-- Gloves of the Dawn
 			i(9366, {	-- Golden Scale Gauntlets
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3485),	-- Green Iron Gauntlets
 			i(7919),	-- Heavy Mithril Gauntlet
 			i(22670, {	-- Icebane Gauntlets
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(22763),	-- Ironvine Gloves
-			i(7927, {	-- Ornate Mithril Gloves
-				["u"] = 8,
-			}),
+			i(7927),	-- Ornate Mithril Gloves
 			i(12418),	-- Radiant Gloves
 			i(3472),	-- Runed Copper Gauntlets
 			i(3483),	-- Silvered Bronze Gauntlets
 			i(12632),	-- Storm Gauntlets
 			i(12639),	-- Stronghold Gauntlets
 			i(7938, {	-- Truesilver Gauntlets
-				["u"] = 8,
+				["u"] = 3,
 			}),
 		}),
 		n(-326, {		-- Wrist
@@ -259,7 +255,7 @@ _.Craftables =
 			i(6040),	-- Golden Scale Bracers
 			i(3835),	-- Green Iron Bracers
 			i(22671, {	-- Icebane Bracers
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12425),	-- Imperial Plate Bracers
 			i(7924),	-- Mithril Scale Bracers
@@ -282,10 +278,10 @@ _.Craftables =
 		n(-329, {		-- Legs
 			i(17013),	-- Dark Iron Leggings
 			i(19694, {	-- Darksoul Leggings
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(12619, {	-- Enchanted Thorium Leggings
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3843),	-- Golden Scale Leggings
 			i(3842),	-- Green Iron Leggings
@@ -293,11 +289,9 @@ _.Craftables =
 			i(12429),	-- Imperial Plate Leggings
 			i(7920),	-- Mithril Scale Pants
 			i(7929, {	-- Orcish War Leggings
-				["u"] = 8,
+				["u"] = 3,
 			}),
-			i(7926, {	-- Ornate Mithril Pants
-				["u"] = 8,
-			}),
+			i(7926),	-- Ornate Mithril Pants
 			i(12420),	-- Radiant Leggings
 			i(2865),	-- Rough Bronze Leggings
 			i(3473),	-- Runed Copper Pants
@@ -315,7 +309,7 @@ _.Craftables =
 			i(19048),	-- Heavy Timbermaw Boots
 			i(12426),	-- Imperial Plate Boots
 			i(7936, {	-- Ornate Mithril Boots
-				["u"] = 8,
+				["u"] = 3,
 			}),
 			i(3846),	-- Polished Steel Boots
 			i(12419),	-- Radiant Boots
