@@ -24,7 +24,7 @@ _.NeverImplemented =
 	un(1, i(7994)),	-- Plans: Orcish War Leggings (learned from quest 2756 (horde) but recipe item is not in game)
 	un(1, i(7986)),	-- Plans: Ornate Mithril Breastplate
 	un(1, i(7987)),	-- Plans: Ornate Mithril Helm
-	un(1, i(7988)),	-- Plans: Ornate Mithril Boots
+	un(1, i(7988)),	-- Plans: Ornate Mithril Boots (learned from quest 2772 but recipe item is not in game)
 	un(1, i(5577)),	-- Plans: Rough Bronze Bracers
 	un(1, i(12826)),	-- Plans: Rune Edge
 	un(1, i(12816)),	-- Plans: Thorium Greatsword

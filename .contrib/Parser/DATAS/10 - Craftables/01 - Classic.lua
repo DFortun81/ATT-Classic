@@ -308,9 +308,7 @@ _.Craftables =
 			i(7933),	-- Heavy Mithril Boots
 			i(19048),	-- Heavy Timbermaw Boots
 			i(12426),	-- Imperial Plate Boots
-			i(7936, {	-- Ornate Mithril Boots
-				["u"] = 3,
-			}),
+			i(7936),	-- Ornate Mithril Boots
 			i(3846),	-- Polished Steel Boots
 			i(12419),	-- Radiant Boots
 			i(6350),	-- Rough Bronze Boots
