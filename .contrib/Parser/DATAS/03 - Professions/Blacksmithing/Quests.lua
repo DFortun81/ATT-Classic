@@ -62,7 +62,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(7649, {	-- Enchanted Thorium Platemail: Volume I
 			["u"] = 3,	-- Added in later phase (Dire Maul)
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL },
 			["provider"] = { "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
 			["g"] = {
@@ -72,7 +72,7 @@ profession(164, {	-- Blacksmithing
 		q(7650, {	-- Enchanted Thorium Platemail: Volume II
 			["u"] = 3,	-- Added in later phase (Dire Maul)
 			["lvl"] = 50,
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL },
 			["provider"] = { "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
 			["g"] = {
@@ -82,7 +82,7 @@ profession(164, {	-- Blacksmithing
 		q(7651, {	-- Enchanted Thorium Platemail: Volume III
 			["u"] = 3,	-- Added in later phase (Dire Maul)
 			["lvl"] = 50,
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL },
 			["provider"] = { "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
 			["g"] = {

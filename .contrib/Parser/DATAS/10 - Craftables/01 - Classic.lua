@@ -103,9 +103,7 @@ _.Craftables =
 			i(3854),	-- Frost Tiger Blade
 			i(3487),	-- Heavy Copper Broadsword
 			i(3853),	-- Moonsteel Broadsword
-			i(7960, {	-- Truesilver Champion
-				["u"] = 3,
-			}),
+			i(7960),	-- Truesilver Champion
 		}),
 		filter(29, {	-- Polearms
 			i(19167),	-- Blackfury

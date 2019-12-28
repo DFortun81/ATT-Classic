@@ -138,18 +138,9 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 9814
 			},
 			{
-				["name"] = "Dark Iron Helm",
-				["recipeID"] = 23636
-			},
-			{
 				["name"] = "Darkrune Helm",
 				["recipeID"] = 24913,
 				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
-				["name"] = "Enchanted Thorium Helm",
-				["recipeID"] = 16742,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Golden Scale Coif",
@@ -164,16 +155,8 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 9970
 			},
 			{
-				["name"] = "Helm of the Great Chief",
-				["recipeID"] = 16728
-			},
-			{
 				["name"] = "Imperial Plate Helm",
 				["recipeID"] = 16658
-			},
-			{
-				["name"] = "Lionheart Helm",
-				["recipeID"] = 16729
 			},
 			{
 				["name"] = "Mithril Coif",
@@ -200,10 +183,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Thorium Helm",
 				["recipeID"] = 16653
 			},
-			{
-				["name"] = "Whitesoul Helm",
-				["recipeID"] = 16724
-			}
 		}
 	},
 	{
@@ -227,14 +206,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Darksoul Shoulders",
 				["recipeID"] = 24141,
 				["u"] = 3,	-- Added in later phase (ZG)
-			},
-			{
-				["name"] = "Dawnbringer Shoulders",
-				["recipeID"] = 16660
-			},
-			{
-				["name"] = "Fiery Chain Shoulders",
-				["recipeID"] = 20873
 			},
 			{
 				["name"] = "Golden Scale Shoulders",
@@ -275,6 +246,137 @@ profession(164, {	-- Blacksmithing
 		}
 	},
 	{
+		["name"] = "Bracers",
+		["categoryID"] = 27,
+		["g"] = {
+			{
+				["name"] = "Copper Bracers",
+				["recipeID"] = 2663
+			},
+			{
+				["name"] = "Dark Iron Bracers",
+				["recipeID"] = 20874
+			},
+			{
+				["name"] = "Golden Scale Bracers",
+				["recipeID"] = 7223
+			},
+			{
+				["name"] = "Green Iron Bracers",
+				["recipeID"] = 3501
+			},
+			{
+				["name"] = "Icebane Bracers",
+				["recipeID"] = 28244
+			},
+			{
+				["name"] = "Imperial Plate Bracers",
+				["recipeID"] = 16649
+			},
+			{
+				["name"] = "Mithril Scale Bracers",
+				["recipeID"] = 9937
+			},
+			{
+				["name"] = "Patterned Bronze Bracers",
+				["recipeID"] = 2672
+			},
+			{
+				["name"] = "Rough Bronze Bracers",
+				["recipeID"] = 2671,
+				["u"] = 1,	-- Never in game
+			},
+			{
+				["name"] = "Runed Copper Bracers",
+				["recipeID"] = 2664
+			},
+			{
+				["name"] = "Thorium Bracers",
+				["recipeID"] = 16644
+			}
+		}
+	},
+	{
+		["name"] = "Gauntlets",
+		["categoryID"] = 26,
+		["g"] = {
+			{
+				["name"] = "Barbaric Iron Gloves",
+				["recipeID"] = 9820
+			},
+			{
+				["name"] = "Black Grasp of the Destroyer",
+				["recipeID"] = 27589
+			},
+			{
+				["name"] = "Bloodsoul Gauntlets",
+				["recipeID"] = 24138,
+				["u"] = 3,	-- Added in later phase (ZG)
+			},
+			{
+				["name"] = "Darkrune Gauntlets",
+				["recipeID"] = 24912,
+				["u"] = 3,	-- Added in later phase (AQ)
+			},
+			{
+				["name"] = "Gemmed Copper Gauntlets",
+				["recipeID"] = 3325
+			},
+			{
+				["name"] = "Gloves of the Dawn",
+				["recipeID"] = 23633,
+				["u"] = 3,	-- Added in later phase
+			},
+			{
+				["name"] = "Golden Scale Gauntlets",
+				["recipeID"] = 11643
+			},
+			{
+				["name"] = "Green Iron Gauntlets",
+				["recipeID"] = 3336
+			},
+			{
+				["name"] = "Heavy Mithril Gauntlet",
+				["recipeID"] = 9928
+			},
+			{
+				["name"] = "Icebane Gauntlets",
+				["recipeID"] = 28243
+			},
+			{
+				["name"] = "Ironforge Gauntlets",
+				["recipeID"] = 8368,
+				["u"] = 1,	-- Never in game
+			},
+			{
+				["name"] = "Ironvine Gloves",
+				["recipeID"] = 28462,
+				["u"] = 3,	-- Added in later phase (AQ)
+			},
+			{
+				["name"] = "Mithril Scale Gloves",
+				["recipeID"] = 9942,
+				["u"] = 1,	-- Never in game
+			},
+			{
+				["name"] = "Ornate Mithril Gloves",
+				["recipeID"] = 9950
+			},
+			{
+				["name"] = "Radiant Gloves",
+				["recipeID"] = 16654
+			},
+			{
+				["name"] = "Runed Copper Gauntlets",
+				["recipeID"] = 3323
+			},
+			{
+				["name"] = "Silvered Bronze Gauntlets",
+				["recipeID"] = 3333
+			},
+		}
+	},
+	{
 		["name"] = "Chest",
 		["categoryID"] = 25,
 		["g"] = {
@@ -296,10 +398,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 15293
 			},
 			{
-				["name"] = "Dark Iron Plate",
-				["recipeID"] = 15296
-			},
-			{
 				["name"] = "Darkrune Breastplate",
 				["recipeID"] = 24914,
 				["u"] = 3,	-- Added in later phase (AQ)
@@ -308,15 +406,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Darksoul Breastplate",
 				["recipeID"] = 24139,
 				["u"] = 3,	-- Added in later phase (ZG)
-			},
-			{
-				["name"] = "Demon Forged Breastplate",
-				["recipeID"] = 16667
-			},
-			{
-				["name"] = "Enchanted Thorium Breastplate",
-				["recipeID"] = 16745,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Golden Scale Cuirass",
@@ -337,10 +426,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Imperial Plate Chest",
 				["recipeID"] = 16663
-			},
-			{
-				["name"] = "Invulnerable Mail",
-				["recipeID"] = 16746
 			},
 			{
 				["name"] = "Ironforge Breastplate",
@@ -406,157 +491,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Thorium Armor",
 				["recipeID"] = 16642
 			},
-			{
-				["name"] = "Wildthorn Mail",
-				["recipeID"] = 16650
-			}
-		}
-	},
-	{
-		["name"] = "Gauntlets",
-		["categoryID"] = 26,
-		["g"] = {
-			{
-				["name"] = "Barbaric Iron Gloves",
-				["recipeID"] = 9820
-			},
-			{
-				["name"] = "Black Grasp of the Destroyer",
-				["recipeID"] = 27589
-			},
-			{
-				["name"] = "Bloodsoul Gauntlets",
-				["recipeID"] = 24138,
-				["u"] = 3,	-- Added in later phase (ZG)
-			},
-			{
-				["name"] = "Dark Iron Gauntlets",
-				["recipeID"] = 23637
-			},
-			{
-				["name"] = "Darkrune Gauntlets",
-				["recipeID"] = 24912,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
-				["name"] = "Fiery Plate Gauntlets",
-				["recipeID"] = 16655
-			},
-			{
-				["name"] = "Gemmed Copper Gauntlets",
-				["recipeID"] = 3325
-			},
-			{
-				["name"] = "Gloves of the Dawn",
-				["recipeID"] = 23633,
-				["u"] = 3,	-- Added in later phase
-			},
-			{
-				["name"] = "Golden Scale Gauntlets",
-				["recipeID"] = 11643
-			},
-			{
-				["name"] = "Green Iron Gauntlets",
-				["recipeID"] = 3336
-			},
-			{
-				["name"] = "Heavy Mithril Gauntlet",
-				["recipeID"] = 9928
-			},
-			{
-				["name"] = "Icebane Gauntlets",
-				["recipeID"] = 28243
-			},
-			{
-				["name"] = "Ironforge Gauntlets",
-				["recipeID"] = 8368,
-				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Ironvine Gloves",
-				["recipeID"] = 28462,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
-				["name"] = "Mithril Scale Gloves",
-				["recipeID"] = 9942,
-				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Ornate Mithril Gloves",
-				["recipeID"] = 9950
-			},
-			{
-				["name"] = "Radiant Gloves",
-				["recipeID"] = 16654
-			},
-			{
-				["name"] = "Runed Copper Gauntlets",
-				["recipeID"] = 3323
-			},
-			{
-				["name"] = "Silvered Bronze Gauntlets",
-				["recipeID"] = 3333
-			},
-			{
-				["name"] = "Storm Gauntlets",
-				["recipeID"] = 16661
-			},
-			{
-				["name"] = "Stronghold Gauntlets",
-				["recipeID"] = 16741
-			},
-		}
-	},
-	{
-		["name"] = "Bracers",
-		["categoryID"] = 27,
-		["g"] = {
-			{
-				["name"] = "Copper Bracers",
-				["recipeID"] = 2663
-			},
-			{
-				["name"] = "Dark Iron Bracers",
-				["recipeID"] = 20874
-			},
-			{
-				["name"] = "Golden Scale Bracers",
-				["recipeID"] = 7223
-			},
-			{
-				["name"] = "Green Iron Bracers",
-				["recipeID"] = 3501
-			},
-			{
-				["name"] = "Icebane Bracers",
-				["recipeID"] = 28244
-			},
-			{
-				["name"] = "Imperial Plate Bracers",
-				["recipeID"] = 16649
-			},
-			{
-				["name"] = "Mithril Scale Bracers",
-				["recipeID"] = 9937
-			},
-			{
-				["name"] = "Patterned Bronze Bracers",
-				["recipeID"] = 2672
-			},
-			{
-				["name"] = "Rough Bronze Bracers",
-				["recipeID"] = 2671,
-				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Runed Copper Bracers",
-				["recipeID"] = 2664
-			},
-			{
-				["name"] = "Thorium Bracers",
-				["recipeID"] = 16644
-			}
 		}
 	},
 	{
@@ -566,10 +500,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Copper Chain Belt",
 				["recipeID"] = 2661
-			},
-			{
-				["name"] = "Fiery Chain Girdle",
-				["recipeID"] = 20872
 			},
 			{
 				["name"] = "Girdle of the Dawn",
@@ -632,11 +562,6 @@ profession(164, {	-- Blacksmithing
 				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
-				["name"] = "Enchanted Thorium Leggings",
-				["recipeID"] = 16744,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
-			},
-			{
 				["name"] = "Golden Scale Leggings",
 				["recipeID"] = 3507
 			},
@@ -689,10 +614,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Thorium Leggings",
 				["recipeID"] = 16662
 			},
-			{
-				["name"] = "Titanic Leggings",
-				["recipeID"] = 27829
-			}
 		}
 	},
 	{
@@ -735,7 +656,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Ornate Mithril Boots",
 				["recipeID"] = 9979,
-				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Polished Steel Boots",
@@ -778,50 +698,12 @@ profession(164, {	-- Blacksmithing
 		["categoryID"] = 32,
 		["g"] = {
 			{
-				["name"] = "Annihilator",
-				["recipeID"] = 16991
-			},
-			{
-				["name"] = "Arcanite Champion",
-				["recipeID"] = 16990
-			},
-			{
-				["name"] = "Arcanite Reaper",
-				["recipeID"] = 16994
-			},
-			{
 				["name"] = "Big Black Mace",
 				["recipeID"] = 10001
 			},
 			{
 				["name"] = "Big Bronze Knife",
 				["recipeID"] = 3491
-			},
-			{
-				["name"] = "Black Amnesty",
-				["recipeID"] = 23638
-			},
-			{
-				["name"] = "Blackfury",
-				["recipeID"] = 23639
-			},
-			{
-				["name"] = "Blackguard",
-				["recipeID"] = 23652
-			},
-			{
-				["name"] = "Blazing Rapier",
-				["recipeID"] = 16978
-			},
-			{
-				["name"] = "Bleakwood Hew",
-				["recipeID"] = 16965,
-				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Blood Talon",
-				["recipeID"] = 16986,
-				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Blue Glittering Axe",
@@ -876,45 +758,12 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 2739
 			},
 			{
-				["name"] = "Corruption",
-				["recipeID"] = 16985
-			},
-			{
-				["name"] = "Dark Iron Destroyer",
-				["recipeID"] = 20897
-			},
-			{
-				["name"] = "Dark Iron Pulverizer",
-				["recipeID"] = 15292
-			},
-			{
-				["name"] = "Dark Iron Reaver",
-				["recipeID"] = 20890
-			},
-			{
-				["name"] = "Dark Iron Sunderer",
-				["recipeID"] = 15294
-			},
-			{
-				["name"] = "Darkspear",
-				["recipeID"] = 16987,
-				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Dawn's Edge",
-				["recipeID"] = 16970
-			},
-			{
 				["name"] = "Dazzling Mithril Rapier",
 				["recipeID"] = 10005
 			},
 			{
 				["name"] = "Deadly Bronze Poniard",
 				["recipeID"] = 3295
-			},
-			{
-				["name"] = "Ebon Hand",
-				["recipeID"] = 23650
 			},
 			{
 				["name"] = "Ebon Shiv",
@@ -925,16 +774,8 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 21913
 			},
 			{
-				["name"] = "Enchanted Battlehammer",
-				["recipeID"] = 16973
-			},
-			{
 				["name"] = "Frost Tiger Blade",
 				["recipeID"] = 3497
-			},
-			{
-				["name"] = "Frostguard",
-				["recipeID"] = 16992
 			},
 			{
 				["name"] = "Glinting Steel Dagger",
@@ -945,16 +786,8 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 3495
 			},
 			{
-				["name"] = "Hammer of the Titans",
-				["recipeID"] = 16988
-			},
-			{
 				["name"] = "Hardened Iron Shortsword",
 				["recipeID"] = 3492
-			},
-			{
-				["name"] = "Heartseeker",
-				["recipeID"] = 16995
 			},
 			{
 				["name"] = "Heavy Bronze Mace",
@@ -994,10 +827,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 3498
 			},
 			{
-				["name"] = "Masterwork Stormhammer",
-				["recipeID"] = 16993
-			},
-			{
 				["name"] = "Mighty Iron Hammer",
 				["recipeID"] = 3297
 			},
@@ -1006,20 +835,12 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 3496
 			},
 			{
-				["name"] = "Nightfall",
-				["recipeID"] = 23653
-			},
-			{
 				["name"] = "Ornate Thorium Handaxe",
 				["recipeID"] = 16969
 			},
 			{
 				["name"] = "Pearl-handled Dagger",
 				["recipeID"] = 6517
-			},
-			{
-				["name"] = "Persuader",
-				["recipeID"] = 27830
 			},
 			{
 				["name"] = "Rune Edge",
@@ -1031,16 +852,8 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 10009
 			},
 			{
-				["name"] = "Sageblade",
-				["recipeID"] = 27832
-			},
-			{
 				["name"] = "Searing Golden Blade",
 				["recipeID"] = 15973
-			},
-			{
-				["name"] = "Serenity",
-				["recipeID"] = 16983
 			},
 			{
 				["name"] = "Shadow Crescent Axe",
