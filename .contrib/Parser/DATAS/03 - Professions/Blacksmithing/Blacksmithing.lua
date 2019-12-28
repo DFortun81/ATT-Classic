@@ -407,10 +407,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 16642
 			},
 			{
-				["name"] = "Truesilver Breastplate",
-				["recipeID"] = 9974
-			},
-			{
 				["name"] = "Wildthorn Mail",
 				["recipeID"] = 16650
 			}
@@ -510,10 +506,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Stronghold Gauntlets",
 				["recipeID"] = 16741
 			},
-			{
-				["name"] = "Truesilver Gauntlets",
-				["recipeID"] = 9954
-			}
 		}
 	},
 	{
@@ -827,10 +819,6 @@ profession(164, {	-- Blacksmithing
 				["u"] = 1,	-- Never in game
 			},
 			{
-				["name"] = "Blight",
-				["recipeID"] = 10011
-			},
-			{
 				["name"] = "Blood Talon",
 				["recipeID"] = 16986,
 				["u"] = 1,	-- Never in game
@@ -1034,10 +1022,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 27830
 			},
 			{
-				["name"] = "Phantom Blade",
-				["recipeID"] = 10007
-			},
-			{
 				["name"] = "Rune Edge",
 				["recipeID"] = 16980,
 				["u"] = 1,	-- Never in game
@@ -1071,10 +1055,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 21161
 			},
 			{
-				["name"] = "The Shatterer",
-				["recipeID"] = 10003
-			},
-			{
 				["name"] = "Thick War Axe",
 				["recipeID"] = 3294
 			},
@@ -1082,10 +1062,6 @@ profession(164, {	-- Blacksmithing
 				["name"] = "Thorium Greatsword",
 				["recipeID"] = 16960,
 				["u"] = 1,	-- Never in game
-			},
-			{
-				["name"] = "Truesilver Champion",
-				["recipeID"] = 10015
 			},
 			{
 				["name"] = "Volcanic Hammer",

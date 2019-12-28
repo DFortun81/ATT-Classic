@@ -1919,12 +1919,6 @@ fieldConverters = {
 			end
 		end
 	end,
-	["altQuests"] = function(group, value)
-		_cache = rawget(fieldConverters, "questID");
-		for i,questID in ipairs(value) do
-			_cache(group, questID);
-		end
-	end,
 	["maps"] = function(group, value)
 		_cache = rawget(fieldConverters, "mapID");
 		for i,mapID in ipairs(value) do
@@ -3424,10 +3418,14 @@ app.SkillIDToSpellID = setmetatable({
 	-- Specializations
 	[20219] = 20219,	-- Gnomish Engineering
 	[20222] = 20222,	-- Goblin Engineering
+	[9788] = 9788,		-- Armorsmith
+	[9787] = 9787,		-- Weaponsmith
 }, {__index = function(t,k) return k; end})
 app.SpecializationSpellIDs = setmetatable({
 	[20219] = 20219,	-- Gnomish Engineering
 	[20222] = 20222,	-- Goblin Engineering
+	[9788] = 9788,		-- Armorsmith
+	[9787] = 9787,		-- Weaponsmith
 }, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)
@@ -5075,10 +5073,12 @@ local function RowOnEnter(self)
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
 						local sq = sqs[1];
-						if sq and sq.isBreadcrumb then
-							table.insert(bc, sqs[1]);
-						else
-							table.insert(prereqs, sqs[1]);
+						if sq and app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq) then
+							if sq.isBreadcrumb then
+								table.insert(bc, sqs[1]);
+							else
+								table.insert(prereqs, sqs[1]);
+							end
 						end
 					else
 						table.insert(prereqs, {questID = sourceQuestID});
