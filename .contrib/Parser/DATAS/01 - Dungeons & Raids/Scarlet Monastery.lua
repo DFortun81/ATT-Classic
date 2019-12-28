@@ -159,6 +159,9 @@ _.Instances = {
 							},
 							["races"] = ALLIANCE_ONLY,
 							["lvl"] = 28,
+							["groups"] = {
+								i(7746),	-- Explorers' League Commendation
+							},
 						}),
 						q(1160, {	-- Test of Lore
 							["sourceQuest"] = 1159,	-- Test of Lore
