@@ -551,7 +551,11 @@ _.Instances = {
 					["itemID"] = 13873,	-- Viewing Room Key
 					["description"] = "You must use this item on the door prior to Vectus and Marduk.",
 				},
-				i(18782),	-- Top Half of Advanced Armorsmithing: Volume II
+				{
+					["itemID"] = 18782,	-- Top Half of Advanced Armorsmithing: Volume II
+					["questID"] = 7650,	-- Enchanted Thorium Platemail: Volume II
+					["requireSkill"] = 9788,	-- Armorsmith
+				},
 				i(14531),	-- Frightskull Shaft
 				i(14528),	-- Rattlecage Buckler
 				i(14539),	-- Bone Ring Helm

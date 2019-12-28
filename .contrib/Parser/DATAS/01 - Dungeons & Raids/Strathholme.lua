@@ -469,14 +469,17 @@ _.Instances = {
 						["description"] = "Loot the Blacksmithing Plans on the ground to spawn this mob.",
 						["groups"] = {
 							{
-								["itemID"] = 13351,	-- Crimson Hammersmith's Apron
-								["questID"] = 8869,	-- Sweet Serenity
-								["requireSkill"] = 164,	-- Blacksmithing
+								["itemID"] = 18781,	-- Bottom Half of Advanced Armorsmithing: Volume II
+								["questID"] = 7650,	-- Enchanted Thorium Platemail: Volume II
+								["requireSkill"] = 9788,	-- Armorsmith
 							},
-							i(18781),	-- Bottom Half of Advanced Armorsmithing: Volume II
+							{
+								["itemID"] = 13351,	-- Crimson Hammersmith's Apron
+								["questID"] = 5305,	-- Sweet Serenity
+								["requireSkill"] = 9787,	-- Weaponsmith
+							},
 							i(12827, {	-- Plans: Serenity
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["requireSkill"] = 164,	-- Blacksmithing
 							}),
 						},
 					}),
@@ -615,14 +618,17 @@ _.Instances = {
 						["description"] = "Loot the Blacksmithing Plans on the ground to spawn this mob.",
 						["groups"] = {
 							{
+								["itemID"] = 18783,	-- Bottom Half of Advanced Armorsmithing: Volume III
+								["questID"] = 7651,	-- Enchanted Thorium Platemail: Volume III
+								["requireSkill"] = 9788,	-- Armorsmith
+							},
+							{
 								["itemID"] = 13350,	-- Insignia of the Black Guard
 								["questID"] = 5307,	-- Corruption
 								["requireSkill"] = 164,	-- Blacksmithing
 							},
-							i(18783),	-- Bottom Half of Advanced Armorsmithing: Volume III
 							i(12830, {	-- Plans: Corruption
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
-								["requireSkill"] = 164,	-- Blacksmithing
 							}),
 						},
 					}),

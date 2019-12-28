@@ -47,24 +47,18 @@ _.Craftables =
 			i(19170),	-- Ebon Hand
 			i(3491),	-- Heavy Bronze Mace
 			i(5541),	-- Iridescent Hammer
-			i(12794, {	-- Masterwork Stormhammer
-				["u"] = 3,
-			}),
+			i(12794),	-- Masterwork Stormhammer
 			i(3492),	-- Mighty Iron Hammer
 			i(22384),	-- Persuader
 			i(7946),	-- Runed Mithril Hammer
 			i(12781),	-- Serenity
-			i(7954, {	-- The Shatterer
-				["u"] = 3,
-			}),
+			i(7954),	-- The Shatterer
 			i(12792),	-- Volcanic Hammer
 		}),
 		filter(24, {	-- 2H Maces
 			i(7956),	-- Bronze Warhammer
 			i(11608),	-- Dark Iron Pulverizer
-			i(12776, {	-- Enchanted Battlehammer
-				["u"] = 3,
-			}),
+			i(12776),	-- Enchanted Battlehammer
 			i(3852),	-- Golden Iron Destroyer
 			i(12796),	-- Hammer of the Titans
 			i(6214),	-- Heavy Copper Maul
@@ -178,9 +172,7 @@ _.Craftables =
 			i(19693, {	-- Darksoul Breastplate
 				["u"] = 3,
 			}),
-			i(12628, {	-- Demon Forged Breastplate
-				["u"] = 3,
-			}),
+			i(12628),	-- Demon Forged Breastplate
 			i(12618, {	-- Enchanted Thorium Breastplate
 				["u"] = 3,
 			}),
@@ -220,9 +212,7 @@ _.Craftables =
 			}),
 			i(19164),	-- Dark Iron Gauntlets
 			i(20549),	-- Darkrune Gauntlets
-			i(12631, {	-- Fiery Plate Gauntlets
-				["u"] = 3,
-			}),
+			i(12631),	-- Fiery Plate Gauntlets
 			i(3474),	-- Gemmed Copper Gauntlets
 			i(19057),	-- Gloves of the Dawn
 			i(9366, {	-- Golden Scale Gauntlets
@@ -282,9 +272,7 @@ _.Craftables =
 			i(7921),	-- Heavy Mithril Pants
 			i(12429),	-- Imperial Plate Leggings
 			i(7920),	-- Mithril Scale Pants
-			i(7929, {	-- Orcish War Leggings
-				["u"] = 3,
-			}),
+			i(7929),	-- Orcish War Leggings
 			i(7926),	-- Ornate Mithril Pants
 			i(12420),	-- Radiant Leggings
 			i(2865),	-- Rough Bronze Leggings

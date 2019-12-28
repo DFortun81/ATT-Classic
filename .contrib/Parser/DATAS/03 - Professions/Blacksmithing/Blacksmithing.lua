@@ -425,7 +425,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Ironforge Breastplate",
 				["recipeID"] = 8367,
-				["races"] = ALLIANCE_ONLY,
 			},
 			{
 				["name"] = "Ironforge Chain",

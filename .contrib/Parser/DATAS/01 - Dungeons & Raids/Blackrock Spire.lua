@@ -264,25 +264,6 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 5124,	-- Fiery Plate Gauntlets
-					["sourceQuest"] = 5103,	-- Hot Fiery Death
-					["qg"] = 10637,	-- Malyfous Darkhammer <The Thorium Brotherhood>
-					["requireSkill"] = 164,	-- Blacksmithing
-					["coord"] = { 61.0, 38.8, WINTERSPRING },
-					["maps"] = { WINTERSPRING },
-					["cost"] = {
-						{ "i", 12812, 1 },	-- Unfired Plate Gauntlets
-						{ "i", 12655, 6 },	-- Enchanted Thorium Bar
-						{ "i", 7078, 2 },	-- Essence of Fire
-						{ "i", 7910, 4 },	-- Star Ruby
-					},
-					["lvl"] = 55,
-					["groups"] = {
-						i(12699),	-- Plans: Fiery Plate Gauntlets
-						i(12631),	-- Fiery Plate Gauntlets
-					},
-				},
-				{
 					["questID"] = 5047,	-- Finkle Einhorn, At Your Service!
 					["qg"] = 10776,	-- Finkle Einhorn
 					["description"] = "Kill The Beast in UBRS. Using Finkle's Skinner and a 300 Skill Skinner, skin the boss and Finkle Einhorn will appear. Everyone in the raid can pick up this quest at that time.",
@@ -306,19 +287,6 @@ _.Instances = {
 						i(13965),	-- Blackhand's Breadth
 						i(13968),	-- Eye of the Beast
 						i(13966),	-- Mark of Tyranny
-					},
-				},
-				{
-					["questID"] = 5103,	-- Hot Fiery Death
-					["provider"] = { "o", 176090 },	-- Human Remains
-					["description"] = "At the bottom floor of the instance near the lava.",
-					["requireSkill"] = 164,	-- Blacksmithing
-					["lvl"] = 55,
-					["groups"] = {
-						{
-							["itemID"] = 12812,	-- Unfired Plate Gauntlets
-							["questID"] = 5124,	-- Fiery Plate Gauntlets
-						},
 					},
 				},
 				{
@@ -971,7 +939,7 @@ _.Instances = {
 					{
 						["itemID"] = 13352,	-- Vosh'gajin's Snakestone
 						["questID"] = 5306,	-- Snakestone of the Shadow Huntress
-						["requireSkill"] = 164,	-- Blacksmithing
+						["requireSkill"] = 9787,	-- Weaponsmith
 					},
 					i(12651),	-- Blackcrow
 					i(12653),	-- Riphook
@@ -1055,7 +1023,11 @@ _.Instances = {
 							["itemID"] = 12712,	-- Warosh's Mojo
 							["questID"] = 4867,	-- Urok Doomhowl
 						},
-						i(18784),	-- Top Half of Advanced Armorsmithing: Volume III
+						{
+							["itemID"] = 18784,	-- Top Half of Advanced Armorsmithing: Volume III
+							["questID"] = 7651,	-- Enchanted Thorium Platemail: Volume III
+							["requireSkill"] = 9788,	-- Armorsmith
+						},
 						i(13258),	-- Slaghide Gauntlets
 						i(22232),	-- Marksman's Girdle
 						i(16670),	-- Boots of Elements
@@ -1191,19 +1163,9 @@ _.Instances = {
 					}),
 					n(10899, {	-- Goraluk Anvilcrack
 						{
-							["itemID"] = 18779,	-- Bottom Half of Advanced Armorsmithing: Volume 1
+							["itemID"] = 18779,	-- Bottom Half of Advanced Armorsmithing: Volume I
 							["questID"] = 7649,	-- Enchanted Thorium Platemail: Volume I
-							["requireSkill"] = 164,	-- Blacksmithing
-							["groups"] = {
-								-- TODO: Move this
-								{
-									["itemID"] = 18769,	-- Enchanted Thorium Platemail
-									["questID"] = 7649,	-- Enchanted Thorium Platemail: Volume I
-									["groups"] = {
-										i(12727),	-- Plans: Enchanted Thorium Breastplate
-									},
-								},
-							},
+							["requireSkill"] = 9788,	-- Armorsmith
 						},
 						{
 							["itemID"] = 12848,	-- Blood Stained Pike
