@@ -542,23 +542,6 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 5127,	-- The Demon Forge
-					["sourceQuest"] = 5126,	-- Lorax's Tale
-					["qg"] = 10918,	-- Lorax
-					["coord"] = { 63.8, 73.8, WINTERSPRING },
-					["maps"] = { WINTERSPRING },
-					["cost"] = {
-						{ "i", 12847, 1 },	-- Soul Stained Pike
-						{ "i", 12806, 1 },	-- Unforged Rune Covered Breastplate
-					},
-					["requireSkill"] = 164,	-- Blacksmithing
-					["lvl"] = 55,
-					["groups"] = {
-						i(12696),	-- Plans: Demon Forged Breastplate
-						i(9224),	-- Elixir of Demonslaying
-					},
-				},
-				{
 					["questID"] = 4788,	-- The Final Tablets
 					["sourceQuest"] = 5065,	-- The Lost Tablets of Mosh'aru
 					["qg"] = 10460,	-- Prospector Ironboot
@@ -1170,7 +1153,8 @@ _.Instances = {
 						{
 							["itemID"] = 12848,	-- Blood Stained Pike
 							["questID"] = 5127,	-- The Demon Forge
-							["requireSkill"] = 164,	-- Blacksmithing
+							["requireSkill"] = 9788,	-- Armorsmith
+							["description"] = "Use this on Goraluk Anvilcrack's corpse.",
 							["groups"] = {
 								{
 									["itemID"] = 12847,	-- Soul Stained Pike
@@ -1181,8 +1165,8 @@ _.Instances = {
 						{
 							["itemID"] = 12848,	-- Unforged Rune Covered Breastplate
 							["questID"] = 5127,	-- The Demon Forge
-							["requireSkill"] = 164,	-- Blacksmithing
-							["description"] = "Found on the rack behind Anvilcrack in UBRS.",
+							["requireSkill"] = 9788,	-- Armorsmith
+							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
 						},
 						i(12834),	-- Plans: Arcanite Champion
 						i(12728),	-- Plans: Invulnerable Mail

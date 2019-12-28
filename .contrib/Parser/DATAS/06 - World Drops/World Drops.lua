@@ -8,6 +8,7 @@ _.WorldDrops =
 			i(4039),  -- Nightsky Cowl
 			i(7529),  -- Cabalist Helm
 			i(9953),  -- Chieftain's Headdress
+			i(10379),	-- Commander's Helm
 			i(10061),  -- Duskwoven Turban
 			i(10111),  -- Wanderer's Hat
 			i(10175),  -- Mystical Headwrap
@@ -20,6 +21,7 @@ _.WorldDrops =
 			i(15391),  -- Jadefire Cap
 		}),
 		n(-321, {	-- Shoulder
+			i(10383),	-- Commander's Pauldrons
 			i(4709),  --  Forest Leather Mantle
 			i(4718),  -- Nightsky Mantle
 			i(6617),  -- Sage's Mantle
@@ -51,6 +53,7 @@ _.WorldDrops =
 			i(15661),  -- Impenetrable Cloak
 		}),
 		n(-323, {	-- Chest
+			i(10378),	-- Commander's Armor
 			i(821),  -- Riverpaw Leather Vest
 			i(2957),  -- Journeyman's Vest
 			i(2965),  -- Warrior's Tunic
@@ -81,6 +84,7 @@ _.WorldDrops =
 			i(3211),  -- Burnished Bracers
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
+			i(10377),	-- Commander's Vambraces
 			i(6550),  -- Soldier's Wristguards
 			i(6563),  -- Shimmering Bracers
 			i(6583),  -- Scouting Bracers
@@ -127,6 +131,7 @@ _.WorldDrops =
 			i(4697),  -- Burnished Girdle
 			i(4699),  -- Seer's Belt
 			i(4708),  -- Bright Belt
+			i(10381),	-- Commander's Girdle
 			i(4738),  -- Imperial Leather Belt
 			i(6409),  -- Insignia Belt
 			i(6418),  -- Aurora Sash
@@ -158,6 +163,7 @@ _.WorldDrops =
 			i(2966),  -- Warrior's Pants
 			i(3282),  -- Battle Chain Pants
 			i(3303),  -- Barbaric Loincloth
+			i(10382),	-- Commander's Leggings
 			i(6267),  -- Disciple's Pants
 			i(6337),  -- Infantry Leggings
 			i(6431),  -- Imperial Leather Boots
@@ -186,6 +192,7 @@ _.WorldDrops =
 			i(3057),  -- Forest Leather Boots
 			i(3307),  -- Barbaric Cloth Boots
 			i(6412),  -- Chief Brigadier Boots
+			i(10376),	-- Commander's Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
 			i(9917),  -- Tracker's Boots

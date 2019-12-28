@@ -481,6 +481,34 @@ profession(164, {	-- Blacksmithing
 				i(7985),	-- Plans: Ornate Mithril Shoulder
 			},
 		}),
+		q(5127, {	-- The Demon Forge
+			["qg"] = 10918,	-- Lorax
+			["sourceQuest"] = 5126,	-- Lorax's Tale
+			["requireSkill"] = 9788,	-- Armorsmith
+			["coord"] = { 63.8, 73.8, WINTERSPRING },
+			["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
+			["cost"] = {
+				{ "i", 12848, 1 },	-- Blood Stained Pike
+				{ "i", 12847, 1 },	-- Soul Stained Pike
+				{ "i", 12806, 1 },	-- Unforged Rune Covered Breastplate
+			},
+			["crs"] = { 10899 },	-- Goraluk Anvilcrack
+			["lvl"] = 55,
+			["groups"] = {
+				i(12696),	-- Plans: Demon Forged Breastplate
+				i(9224),	-- Elixir of Demonslaying
+				i(12849, {	-- Demon Kissed Sack
+					i(10379),	-- Commander's Helm
+					i(10383),	-- Commander's Pauldrons
+					i(10377),	-- Commander's Vambraces
+					i(10380),	-- Commander's Gauntlets
+					i(10378),	-- Commander's Armor
+					i(10381),	-- Commander's Girdle
+					i(10382),	-- Commander's Leggings
+					i(10376),	-- Commander's Boots
+				}),
+			},
+		}),
 		q(2762, {	-- The Great Silver Deceiver
 			["qg"] = 7802,	-- Galvan the Ancient
 			["sourceQuest"] = 2760,	-- The Mithril Order
