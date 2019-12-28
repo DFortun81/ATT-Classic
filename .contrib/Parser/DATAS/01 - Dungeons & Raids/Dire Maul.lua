@@ -436,6 +436,7 @@ _.Instances = {
 					},
 				},
 				q(7631, {	-- Dreadsteed of Xoroth
+					["classes"] = { WARLOCK },
 					["sourceQuest"] = 7629,	-- Imp Delivery
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },

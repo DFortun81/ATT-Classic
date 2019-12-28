@@ -64,6 +64,7 @@ _.WorldDrops =
 			i(7353),  -- Elder's Padded Armor
 			i(7407),  -- Infiltrator Armor
 			i(7477),  -- Ranger Tunic
+			i(9749),  -- Simple Blouse
 			i(9783),  -- Raider's Chestpiece
 			i(9884),  -- Sorcerer Robe
 			i(9928),  -- Brigade Breastplate
@@ -124,10 +125,12 @@ _.WorldDrops =
 		}),
 		n(-328, {	-- Waist
 			i(4697),  -- Burnished Girdle
+			i(4699),  -- Seer's Belt
 			i(4708),  -- Bright Belt
 			i(4738),  -- Imperial Leather Belt
 			i(6409),  -- Insignia Belt
 			i(6418),  -- Aurora Sash
+			i(6558),  -- Bard's Belt
 			i(6570),  -- Shimmering Sash
 			i(7462),  -- Knight's Girdle
 			i(9775),  -- Bandit Cinch
@@ -312,7 +315,6 @@ _.WorldDrops =
 		}),
 		n(-339, {	-- 2H Swords
 			i(647),  -- Destiny
-			i(2822),  -- Mo'Grosh Toothpick
 			i(3196),  -- Edged Bastard Sword
 			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword

@@ -96,7 +96,7 @@ _.Skills =
 				},
 			},
 			{
-				["recipeID"] = 198,	-- One-Handed Swords
+				["recipeID"] = 201,	-- One-Handed Swords
 				["classes"] = { 
 					HUNTER,
 					MAGE,
