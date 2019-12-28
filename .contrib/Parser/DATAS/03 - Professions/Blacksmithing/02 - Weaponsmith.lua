@@ -113,7 +113,7 @@ profession(164, {	-- Blacksmithing
 			}),
 			{
 				["name"] = "Weapons",
-				["description"] = "These items can only be crafted by any Weaponsmith.",
+				["description"] = "These can be crafted by any Weaponsmith.",
 				["categoryID"] = 32,
 				["g"] = {
 					{

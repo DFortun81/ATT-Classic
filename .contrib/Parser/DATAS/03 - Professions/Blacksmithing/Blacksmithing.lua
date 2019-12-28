@@ -253,10 +253,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 2663
 			},
 			{
-				["name"] = "Dark Iron Bracers",
-				["recipeID"] = 20874
-			},
-			{
 				["name"] = "Golden Scale Bracers",
 				["recipeID"] = 7223
 			},
@@ -551,10 +547,6 @@ profession(164, {	-- Blacksmithing
 				["recipeID"] = 2662
 			},
 			{
-				["name"] = "Dark Iron Leggings",
-				["recipeID"] = 20876
-			},
-			{
 				["name"] = "Darksoul Leggings",
 				["recipeID"] = 24140,
 				["u"] = 3,	-- Added in later phase (ZG)
@@ -625,10 +617,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Copper Chain Boots",
 				["recipeID"] = 3319
-			},
-			{
-				["name"] = "Dark Iron Boots",
-				["recipeID"] = 24399
 			},
 			{
 				["name"] = "Golden Scale Boots",
