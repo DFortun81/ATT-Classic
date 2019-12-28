@@ -100,7 +100,9 @@ profession(164, {	-- Blacksmithing
 				2762,	-- The Great Silver Deceiver
 			},
 			["g"] = {
-				i(8703),	-- Signet of Expertise
+				i(8703,	{	-- Signet of Expertise
+					i(8708),	-- Hammer of Expertise
+				}),
 			},
 		}),
 		q(2764, {	-- Galvan's Finest Pupil

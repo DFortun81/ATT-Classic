@@ -165,7 +165,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Ornate Mithril Helm",
 				["recipeID"] = 9980,
-				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Radiant Circlet",
@@ -449,7 +448,6 @@ profession(164, {	-- Blacksmithing
 			{
 				["name"] = "Ornate Mithril Breastplate",
 				["recipeID"] = 9972,
-				["u"] = 1,	-- Never in game
 			},
 			{
 				["name"] = "Radiant Breastplate",

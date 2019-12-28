@@ -138,9 +138,7 @@ _.Craftables =
 			i(12427),	-- Imperial Plate Helm
 			i(12640),	-- Lionheart Helm
 			i(7931),	-- Mithril Coif
-			i(7937, {	-- Ornate Mithril Helm
-				["u"] = 3,
-			}),
+			i(7937),	-- Ornate Mithril Helm
 			i(12417),	-- Radiant Circlet
 			i(12612),	-- Runic Plate Helm
 			i(7922),	-- Steel Plate Helm
@@ -197,9 +195,7 @@ _.Craftables =
 			i(6731),	-- Ironforge Breastplate
 			i(22762),	-- Ironvine Breastplate
 			i(22191),	-- Obsidian Plate Tunic
-			i(7935, {	-- Ornate Mithril Breastplate
-				["u"] = 3,
-			}),
+			i(7935),	-- Ornate Mithril Breastplate
 			i(12415),	-- Radiant Breastplate
 			i(2866),	-- Rough Bronze Cuirass
 			i(2864),	-- Runed Copper Breastplate
