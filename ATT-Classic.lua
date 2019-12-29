@@ -2652,6 +2652,8 @@ app.BaseUnit = {
 			return t.unit;
 		elseif key == "name" then
 			return UnitName(t.unit);
+		elseif key == "guid" then
+			return UnitGUID(t.unit);
 		elseif key == "title" then
 			if IsInGroup() then
 				if rawget(t, "isML") then return MASTER_LOOTER; end
@@ -2669,6 +2671,84 @@ app.BaseUnit = {
 };
 app.CreateUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
+end
+app.BaseSoftReserveUnit = {
+	__index = function(t, key)
+		if key == "key" then
+			return "unit";
+		elseif key == "text" then
+			local name = UnitName(t.unit);
+			if name then
+				rawset(t, "name", name);
+				local className, classFile, classID = UnitClass(t.unit);
+				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+				if t.itemID then
+					local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(t.itemID);
+					if itemLink then
+						name = name .. " - " .. (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink;
+					else
+						name = name .. " - " .. RETRIEVING_DATA;
+					end
+				else
+					name = name .. " - No Soft Reserve Selected";
+				end
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+				return name;
+			end
+			return t.unit;
+		elseif key == "name" then
+			return UnitName(t.unit);
+		elseif key == "guid" then
+			return UnitGUID(t.unit);
+		elseif key == "description" then
+			return LEVEL .. " " .. (UnitLevel(t.unit) or "??") .. " " .. (UnitRace(t.unit) or "??") .. " " .. (UnitClass(t.unit) or "??");
+		elseif key == "icon" then
+			if t.classID then return classIcons[t.classID]; end
+		elseif key == "visible" then
+			return true;
+		elseif key == "itemID" then
+			local guid = t.guid;
+			if guid then
+				return rawget(GetDataMember("SoftReserves"), guid);
+			end
+		elseif key == "preview" then
+			return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		elseif key == "link" then
+			if t.itemID then
+				return select(2, GetItemInfo(t.itemID));
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateSoftReserveUnit = function(unit, t)
+	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
+end
+app.ParseSoftReserve = function(app, guid, cmd)
+	cmd = cmd:match("^%s*(.+)$");
+	if cmd == "clear" then
+		app:UpdateSoftReserve(guid, nil);
+		return;
+	end
+	
+	-- Search for the Link in the database
+	local group = SearchForLink(not tonumber(cmd) and cmd or ("itemid:" .. cmd));
+	if group and #group > 0 then
+		for i,g in ipairs(group) do
+			if g.itemID then
+				app:UpdateSoftReserve(guid, g.itemID);
+				break;
+			end
+		end
+	end
+end
+app.UpdateSoftReserve = function(app, guid, itemID)
+	GetDataMember("SoftReserves")[guid] = itemID;
+	app:GetWindow("SoftReserves"):Update(true);
 end
 end)();
 
@@ -7108,9 +7188,93 @@ app:GetWindow("Random", UIParent, function(self)
 		self.data.progress = 0;
 		self.data.total = 0;
 		self.data.indent = 0;
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		BuildGroups(self.data, self.data.g);
 		UpdateGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
+	end
+end);
+app:GetWindow("SoftReserves", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			
+			-- Soft Reserves
+			local softReserves = {
+				['text'] = "Soft Reserves",
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
+				["description"] = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have ATT-Classic installed. If not, this feature will not function.\n\nML: Members of your raid without ATT-Classic installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['OnUpdate'] = function(data)
+					data.g = {};
+					if data.options then
+						for i,option in ipairs(data.options) do
+							table.insert(data.g, option);
+						end
+					end
+					local count = GetNumGroupMembers();
+					if count > 0 then
+						for raidIndex = 1, 40, 1 do
+							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
+							if name then
+								table.insert(data.g, app.CreateSoftReserveUnit(name));
+							end
+						end
+					end
+				end,
+				['g'] = {},
+				['options'] = {
+					app.CreateLootMethod("group", {
+						['title'] = LOOT_METHOD,
+						['description'] = "If you are seeing this option, you are the group leader and have not setup Master Looter yet.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							SetLootMethod("master", UnitName("player"));
+							self:Reset();
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsInGroup() and UnitIsGroupLeader("player");
+							if data.visible then
+								data.id = GetLootMethod();
+								data.visible = data.id ~= "master";
+							end
+						end,
+						['back'] = 0.5,
+					}),
+				}
+			};
+			
+			self.Reset = function()
+				self.data = softReserves;
+			end
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:RegisterEvent("CHAT_MSG_SYSTEM");
+			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+			self:RegisterEvent("GROUP_ROSTER_UPDATE");
+			self:Reset();
+		end
+		
+		-- Update the window and all of its row data
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		for i,g in ipairs(self.data.g) do
+			if g.OnUpdate then g.OnUpdate(g, self); end
+		end
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		BuildGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("Tradeskills", UIParent, function(self, ...)
@@ -7546,6 +7710,9 @@ SlashCmdList["ATTC"] = function(cmd)
 		elseif cmd == "ran" or cmd == "rand" or cmd == "random" then
 			app:GetWindow("Random"):Toggle();
 			return true;
+		elseif cmd == "sr" then
+			app:GetWindow("SoftReserves"):Toggle();
+			return true;
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
 			return true;
@@ -7592,6 +7759,22 @@ SlashCmdList["ATTCRAN"] = function(cmd)
 	app:GetWindow("Random"):Toggle();
 end
 
+SLASH_ATTCSR1 = "/attsr";
+SLASH_ATTCSR2 = "/attsoft";
+SLASH_ATTCSR3 = "/attsoftreserve";
+SLASH_ATTCSR4 = "/attsoftreserves";
+SLASH_ATTCSR5 = "/sr";
+SLASH_ATTCSR6 = "/softreserve";
+SLASH_ATTCSR7 = "/softreserves";
+SlashCmdList["ATTCSR"] = function(cmd)
+	if cmd and cmd ~= "" then
+		app:ParseSoftReserve(UnitGUID("player"), cmd);
+	else
+		-- Default command
+		app:GetWindow("SoftReserves"):Toggle();
+	end
+end
+
 SLASH_ATTUNED1 = "/attuned";
 SlashCmdList["ATTUNED"] = function(cmd)
 	if IsInRaid() or (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) or IsInGroup(LE_PARTY_CATEGORY_HOME) then
@@ -7627,6 +7810,7 @@ end
 app:RegisterEvent("ADDON_LOADED");
 app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
+app:RegisterEvent("CHAT_MSG_WHISPER")
 app:RegisterEvent("PLAYER_DEAD");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
@@ -7658,8 +7842,9 @@ app.events.VARIABLES_LOADED = function()
 	app.Race = race;
 	app.RaceIndex = raceIndex;
 	local name, realm = UnitName("player");
+	if not realm then realm = GetRealmName(); end
 	app.GUID = UnitGUID("player");
-	app.Me = "|c" .. (RAID_CLASS_COLORS[classInfo.classFile].colorStr or "ff1eff00") .. name .. "-" .. (realm or GetRealmName()) .. "|r";
+	app.Me = "|c" .. (RAID_CLASS_COLORS[classInfo.classFile].colorStr or "ff1eff00") .. name .. "-" .. realm .. "|r";
 	app.Faction = UnitFactionGroup("player");
 	if app.Faction == "Horde" then
 		app.FactionID = Enum.FlightPathFaction.Horde;
@@ -7675,6 +7860,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
+	GetDataMember("SoftReserves", {});
 	GetDataMember("WaypointFilters", {});
 	
 	-- Cache your character's deaths.
@@ -7800,6 +7986,7 @@ app.events.VARIABLES_LOADED = function()
 		"ProfessionsPerCharacter",
 		"RandomSearchFilter",
 		"Reagents",
+		"SoftReserves",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
 		"TomTomIgnoreCompletedObjects"
@@ -8344,7 +8531,17 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 				if myName == name and (not server or GetRealmName() == server) then
 					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
 				end
+			elseif cmd == "sr" then -- Soft Reserve Command
+				app:ParseSoftReserve(UnitGUID(target), a);
 			end
+		end
+	end
+end
+app.events.CHAT_MSG_WHISPER = function(text, playerName, _, _, _, _, _, _, _, _, _, guid)
+	text = text:match("^%s*(.+)$") or "";
+	if strsub(text, 1, 1) == '!' then
+		if strsub(text, 2, 3) == "sr" then
+			app:ParseSoftReserve(guid, strsub(text, 4));
 		end
 	end
 end
