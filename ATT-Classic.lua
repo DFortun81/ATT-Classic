@@ -3023,6 +3023,95 @@ app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 
+-- Loot Method + Threshold Lib
+(function()
+local lootMethodIcons = {
+	freeforall = "Interface\\Icons\\Ability_Rogue_Sprint",
+	group = "Interface\\Icons\\INV_Misc_Coin_01",
+	master = "Interface\\Icons\\Ability_Warrior_BattleShout",
+	needbeforegreed = "Interface\\Icons\\Ability_Rogue_Eviscerate",
+	roundrobin = "Interface\\Icons\\INV_Misc_Coin_01",
+};
+local lootThresholdIcons = {
+	"Interface\\Icons\\inv_sword_04",	-- Common
+	"Interface\\Icons\\inv_sword_24",	-- Uncommon
+	"Interface\\Icons\\inv_sword_42",	-- Rare
+	"Interface\\Icons\\inv_sword_62",	-- Epic
+	"Interface\\Icons\\inv_hammer_unique_sulfuras",	-- Legendary
+	[0] = "Interface\\Icons\\inv_sword_04",	-- Poor
+};
+local setLootMethod = function(self, button)
+	if IsInGroup() then
+		if self.ref.id == "master" then
+			SetLootMethod(self.ref.id, UnitName("player"));
+		else
+			SetLootMethod(self.ref.id);
+		end
+	end
+	if self then self:GetParent():GetParent():Reset(); end
+	return true;
+end;
+local setLootThreshold = function(self, button)
+	if IsInGroup() then
+		SetLootThreshold(self.ref.id);
+	end
+	if self then self:GetParent():GetParent():Reset(); end
+	return true;
+end;
+app.BaseLootMethod = {
+	__index = function(t, key)
+		if key == "key" then
+			return "id";
+		elseif key == "text" then
+			return UnitLootMethod[t.id].text;
+		elseif key == "description" then
+			return UnitLootMethod[t.id].tooltipText;
+		elseif key == "icon" then
+			return lootMethodIcons[t.id];
+		elseif key == "visible" then
+			return true;
+		elseif key == "back" then
+			return 0.5;
+		elseif key == "OnClick" then
+			return setLootMethod;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateLootMethod = function(id, t)
+	return setmetatable(constructor(id, t, "id"), app.BaseLootMethod);
+end
+app.BaseLootThreshold = {
+	__index = function(t, key)
+		if key == "key" then
+			return "id";
+		elseif key == "text" then
+			return ITEM_QUALITY_COLORS[t.id].hex .. t.name .. "|r";
+		elseif key == "name" then
+			return _G["ITEM_QUALITY" .. t.id .. "_DESC"];
+		elseif key == "description" then
+			return NEWBIE_TOOLTIP_UNIT_LOOT_THRESHOLD;
+		elseif key == "icon" then
+			return lootThresholdIcons[t.id];
+		elseif key == "visible" then
+			return true;
+		elseif key == "back" then
+			return 0.5;
+		elseif key == "OnClick" then
+			return setLootThreshold;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateLootThreshold = function(id, t)
+	return setmetatable(constructor(id, t, "id"), app.BaseLootThreshold);
+end
+end)();
+
 -- Map Lib
 (function()
 local arrOfNodes = {
@@ -6459,21 +6548,10 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			self.initialized = true;
 			
 			-- Loot Method Switching
-			local lootmethod, lootmasters, raidassistant;
-			local setLootMethod = function(self, meth, player)
-				if IsInGroup() then
-					self.data = raidassistant;
-					if meth == "master" then
-						SetLootMethod(meth, player or UnitName("player"));
-					else
-						SetLootMethod(meth);
-					end
-					self:Update(true);
-				end
-			end
+			local lootmethod, lootmasters, lootthreshold, raidassistant;
 			lootmethod = {
 				['text'] = LOOT_METHOD,
-				['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+				['icon'] = "Interface\\Icons\\INV_Misc_Coin_01.blp",
 				["description"] = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
@@ -6483,72 +6561,22 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['visible'] = true, 
 				['expanded'] = true,
 				['back'] = 1,
-				['g'] = {
-					{
-						['text'] = UnitLootMethod["freeforall"].text,
-						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-						['description'] = UnitLootMethod["freeforall"].tooltipText,
-						['id'] = "freeforall",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, row.ref.id);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-					{
-						['text'] = UnitLootMethod["group"].text,
-						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-						['description'] = UnitLootMethod["group"].tooltipText,
-						['id'] = "group",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, row.ref.id);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-					{
-						['text'] = UnitLootMethod["master"].text,
-						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-						['description'] = UnitLootMethod["master"].tooltipText,
-						['id'] = "master",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, row.ref.id);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-					{
-						['text'] = UnitLootMethod["needbeforegreed"].text,
-						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-						['description'] = UnitLootMethod["needbeforegreed"].tooltipText,
-						['id'] = "needbeforegreed",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, row.ref.id);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-					{
-						['text'] = UnitLootMethod["roundrobin"].text,
-						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
-						['description'] = UnitLootMethod["roundrobin"].tooltipText,
-						['id'] = "roundrobin",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, row.ref.id);
-							return true;
-						end,
-						['back'] = 0.5,
-					},
-				},
+				['g'] = {},
+				['OnUpdate'] = function(data)
+					data.g = {};
+					if data.options then
+						for i,option in ipairs(data.options) do
+							table.insert(data.g, option);
+						end
+					end
+					for key,value in pairs(UnitLootMethod) do
+						table.insert(data.g, app.CreateLootMethod(key));
+					end
+				end,
 			};
 			lootmasters = {
 				['text'] = MASTER_LOOTER,
-				['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+				['icon'] = "Interface\\Icons\\INV_Misc_Coin_01.blp",
 				["description"] = "This setting allows you to select a new Master Looter.",
 				['OnClick'] = function(row, button)
 					self.data = raidassistant;
@@ -6557,9 +6585,6 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				end,
 				['OnUpdate'] = function(data)
 					data.g = {};
-					for i,option in ipairs(data.options) do
-						table.insert(data.g, option);
-					end
 					local count = GetNumGroupMembers();
 					if count > 0 then
 						for raidIndex = 1, 40, 1 do
@@ -6570,7 +6595,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 									['name'] = name,
 									['visible'] = true,
 									['OnClick'] = function(row, button)
-										setLootMethod(self, "master", row.ref.name);
+										SetLootMethod("master", row.ref.name);
+										self:Reset();
 										return true;
 									end,
 									['back'] = 0.5,
@@ -6583,15 +6609,23 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {},
-				['options'] = {
-					app.CreateUnit("player", {
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							setLootMethod(self, "master");
-							return true;
-						end,
-						['back'] = 0.5,
-					}),
+			};
+			lootthreshold = {
+				['text'] = LOOT_TRESHOLD,
+				['icon'] = "Interface\\Icons\\INV_Misc_Coin_01.blp",
+				["description"] = "Select a new loot threshold.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					app.CreateLootThreshold(2),
+					app.CreateLootThreshold(3),
+					app.CreateLootThreshold(4)
 				},
 			};
 			
@@ -6604,11 +6638,8 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
-					{
-						['text'] = LOOT_GROUP_LOOT, 
+					app.CreateLootMethod("group", {
 						['title'] = LOOT_METHOD,
-						["description"] = "The loot method dictates what kind of loot will drop and how much. You must be in a party to utilize Loot Method switching.",
-						['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							if UnitIsGroupLeader("player") then
@@ -6620,18 +6651,11 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['OnUpdate'] = function(data)
 							data.visible = IsInGroup();
 							if data.visible then
-								local lootMethod = GetLootMethod();
-								if lootMethod then
-									local method = UnitLootMethod[lootMethod];
-									if method then
-										data.text = method.text or lootMethod;
-										data.description = method.tooltipText;
-									end
-								end
+								data.id = GetLootMethod();
 							end
 						end,
 						['back'] = 0.5,
-					},
+					}),
 					app.CreateUnit("player", {
 						['title'] = MASTER_LOOTER,
 						["description"] = "This player is currently the Master Looter.",
@@ -6662,6 +6686,24 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								end
 							else
 								data.visible = false;
+							end
+						end,
+						['back'] = 0.5,
+					}),
+					app.CreateLootThreshold(2, {
+						['title'] = LOOT_TRESHOLD,
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							if UnitIsGroupLeader("player") then
+								self.data = lootthreshold;
+								self:Update(true);
+							end
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsInGroup();
+							if data.visible then
+								data.id = GetLootThreshold();
 							end
 						end,
 						['back'] = 0.5,
@@ -6699,7 +6741,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							LeaveParty();
-							self.data = raidassistant;
+							self:Reset();
 							UpdateWindow(self, true);
 							return true;
 						end,
@@ -6709,19 +6751,22 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					},
 				}
 			};
-			self.data = raidassistant;
+			self.Reset = function()
+				self.data = raidassistant;
+			end
 			
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
 			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
+			self:Reset();
 		end
 		
 		-- Update the window and all of its row data
-		if self.data.OnUpdate then self.data.OnUpdate(self.data); end
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
 		for i,g in ipairs(self.data.g) do
-			if g.OnUpdate then g.OnUpdate(g); end
+			if g.OnUpdate then g.OnUpdate(g, self); end
 		end
 		
 		-- Update the groups without forcing Debug Mode.
