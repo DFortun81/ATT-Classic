@@ -41,8 +41,10 @@ _.WorldDrops =
 			i(6417),  -- Aurora Cloak
 			i(6432),  -- Imperial Cloak
 			i(6575),  -- Defender Cloak
+			i(6604),  -- Dervish Cape
 			i(7492),  -- Captain's Cloak
 			i(9779),  -- Bandit Cloak
+			i(9786),  -- Raider's Cloak
 			i(10212),  -- Elegant Cloak
 			i(10258),  -- Adventurer's Cape
 			i(14331),  -- Eternal Cloak
@@ -68,6 +70,7 @@ _.WorldDrops =
 			i(7407),  -- Infiltrator Armor
 			i(7477),  -- Ranger Tunic
 			i(9749),  -- Simple Blouse
+			i(9757),  -- Gypsy Tunic
 			i(9783),  -- Raider's Chestpiece
 			i(9884),  -- Sorcerer Robe
 			i(9928),  -- Brigade Breastplate
@@ -108,7 +111,9 @@ _.WorldDrops =
 		n(-327, {	-- Hands
 			i(1448),  -- Blackrock Gauntlets
 			i(2976),  -- Hunting Gloves
+			i(2992),  -- Burnished Gloves
 			i(3058),  -- Forest Leather Gloves
+			i(3066),  -- Bright Gloves
 			i(6541),  -- Willow Gloves
 			i(6547),  -- Soldier's Gauntlets
 			i(6554),  -- Bard's Gloves
@@ -137,6 +142,7 @@ _.WorldDrops =
 			i(6418),  -- Aurora Sash
 			i(6558),  -- Bard's Belt
 			i(6570),  -- Shimmering Sash
+			i(6581),  -- Scouting Belt
 			i(7462),  -- Knight's Girdle
 			i(9775),  -- Bandit Cinch
 			i(9801),  -- Superior Belt
@@ -149,6 +155,7 @@ _.WorldDrops =
 			i(10269),  -- Masterwork Girdle
 			i(14131),  -- Ritual Belt
 			i(14167),  -- Buccaneer's Cape
+			i(14173),  -- Buccaneer's Cord
 			i(14235),  -- Embersilk Cord
 			i(14465),  -- Elunarian Belt
 			i(14559),  -- Prospector's Sash
@@ -161,9 +168,10 @@ _.WorldDrops =
 		n(-329, {	-- Legs
 			i(2962),  -- Burnt Leather
 			i(2966),  -- Warrior's Pants
+			i(2970),  -- Spellbinder Pants
+			i(2986),  -- Inscribed Leather Pants
 			i(3282),  -- Battle Chain Pants
 			i(3303),  -- Barbaric Loincloth
-			i(10382),	-- Commander's Leggings
 			i(6267),  -- Disciple's Pants
 			i(6337),  -- Infantry Leggings
 			i(6431),  -- Imperial Leather Boots
@@ -180,10 +188,12 @@ _.WorldDrops =
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
 			i(10554),  -- Foreman Pants
+			i(10382),  -- Commander's Leggings
 			i(14090),  -- Beaded Britches
 			i(14207),  -- Vital Leggings
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
+			i(14565),  -- Prospector's Woolies
 			i(15017),  -- Lupine Leggings
 			i(15303),  -- Grizzly Pants
 		}),
@@ -192,7 +202,6 @@ _.WorldDrops =
 			i(3057),  -- Forest Leather Boots
 			i(3307),  -- Barbaric Cloth Boots
 			i(6412),  -- Chief Brigadier Boots
-			i(10376),	-- Commander's Boots
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
 			i(9917),  -- Tracker's Boots
@@ -200,6 +209,7 @@ _.WorldDrops =
 			i(10146),  -- Mighty Boots
 			i(10179),  -- Mystical Boots
 			i(10222),  -- Nightshade Boots
+			i(10376),  -- Commander's Boots
 			i(13070),  -- Sapphiron's Scale Boots
 			i(14195),  -- Raincaller Boots
 			i(15305),  -- Feral Shoes

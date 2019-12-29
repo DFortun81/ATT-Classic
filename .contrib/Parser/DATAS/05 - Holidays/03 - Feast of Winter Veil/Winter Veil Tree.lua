@@ -30,6 +30,7 @@ _.Holidays =
 			["lvl"] = 20,
 			["groups"] = {
 				i(21310, {  -- Gaily Wrapped Present
+					i(21301),  -- Green Helper Box
 					i(21309),  -- Snowman Kit
 				}),
 			},

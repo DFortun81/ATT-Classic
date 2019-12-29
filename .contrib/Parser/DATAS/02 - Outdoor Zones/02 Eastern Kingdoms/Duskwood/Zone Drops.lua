@@ -9,6 +9,9 @@ _.Zones =
 				i(5773, {	-- Pattern: Robes of Arcana
 					["cr"] = 910,	-- Defias Enchanter
 				}),
+				i(2020, {  -- Hollowfang Blade
+					["cr"] = 539,	-- Pygmy Venom Web Spider
+				}),
 			}),
 		}),
 	}),
