@@ -2595,15 +2595,15 @@ local classNames = {
 	[11] = "Druid",
 };
 local classIcons = {
-	[1] = "Interface\\Icons\\ClassIcon_Warrior",
-	[2] = "Interface\\Icons\\ClassIcon_Paladin",
-	[3] = "Interface\\Icons\\ClassIcon_Hunter",
-	[4] = "Interface\\Icons\\ClassIcon_Rogue",
-	[5] = "Interface\\Icons\\ClassIcon_Priest",
-	[7] = "Interface\\Icons\\ClassIcon_Shaman",
-	[8] = "Interface\\Icons\\ClassIcon_Mage",
-	[9] = "Interface\\Icons\\ClassIcon_Warlock",
-	[11] = "Interface\\Icons\\ClassIcon_Druid",
+	[1] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warrior",
+	[2] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Paladin",
+	[3] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Hunter",
+	[4] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Rogue",
+	[5] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Priest",
+	[7] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Shaman",
+	[8] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Mage",
+	[9] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warlock",
+	[11] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Druid",
 };
 app.BaseCharacterClass = {
 	__index = function(t, key)
@@ -2631,6 +2631,44 @@ app.BaseCharacterClass = {
 };
 app.CreateCharacterClass = function(id, t)
 	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
+end
+app.BaseUnit = {
+	__index = function(t, key)
+		if key == "key" then
+			return "unit";
+		elseif key == "text" then
+			local name = UnitName(t.unit);
+			if name then
+				rawset(t, "name", name);
+				local className, classFile, classID = UnitClass(t.unit);
+				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+				if rawget(t, "isML") then name = name .. " |cFFFFFFFF(" .. MASTER_LOOTER .. ")|r"; end
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+				rawset(t, "text", name);
+				return name;
+			end
+			return t.unit;
+		elseif key == "name" then
+			return UnitName(t.unit);
+		elseif key == "title" then
+			if IsInGroup() then
+				if rawget(t, "isML") then return MASTER_LOOTER; end
+				if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
+			end
+		elseif key == "description" then
+			return LEVEL .. " " .. (UnitLevel(t.unit) or "??") .. " " .. (UnitRace(t.unit) or "??") .. " " .. (UnitClass(t.unit) or "??");
+		elseif key == "icon" then
+			if t.classID then return classIcons[t.classID]; end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateUnit = function(unit, t)
+	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
 end)();
 
@@ -6420,8 +6458,145 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			
+			-- Loot Method Switching
+			local lootmethod, lootmasters, raidassistant;
+			local setLootMethod = function(self, meth, player)
+				if IsInGroup() then
+					self.data = raidassistant;
+					if meth == "master" then
+						SetLootMethod(meth, player or UnitName("player"));
+					else
+						SetLootMethod(meth);
+					end
+					self:Update(true);
+				end
+			end
+			lootmethod = {
+				['text'] = LOOT_METHOD,
+				['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+				["description"] = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {
+					{
+						['text'] = UnitLootMethod["freeforall"].text,
+						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+						['description'] = UnitLootMethod["freeforall"].tooltipText,
+						['id'] = "freeforall",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, row.ref.id);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = UnitLootMethod["group"].text,
+						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+						['description'] = UnitLootMethod["group"].tooltipText,
+						['id'] = "group",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, row.ref.id);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = UnitLootMethod["master"].text,
+						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+						['description'] = UnitLootMethod["master"].tooltipText,
+						['id'] = "master",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, row.ref.id);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = UnitLootMethod["needbeforegreed"].text,
+						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+						['description'] = UnitLootMethod["needbeforegreed"].tooltipText,
+						['id'] = "needbeforegreed",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, row.ref.id);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+					{
+						['text'] = UnitLootMethod["roundrobin"].text,
+						['icon'] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",
+						['description'] = UnitLootMethod["roundrobin"].tooltipText,
+						['id'] = "roundrobin",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, row.ref.id);
+							return true;
+						end,
+						['back'] = 0.5,
+					},
+				},
+			};
+			lootmasters = {
+				['text'] = MASTER_LOOTER,
+				['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+				["description"] = "This setting allows you to select a new Master Looter.",
+				['OnClick'] = function(row, button)
+					self.data = raidassistant;
+					self:Update(true);
+					return true;
+				end,
+				['OnUpdate'] = function(data)
+					data.g = {};
+					for i,option in ipairs(data.options) do
+						table.insert(data.g, option);
+					end
+					local count = GetNumGroupMembers();
+					if count > 0 then
+						for raidIndex = 1, 40, 1 do
+							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
+							if name then
+								table.insert(data.g, app.CreateUnit(name, {
+									['isML'] = isML,
+									['name'] = name,
+									['visible'] = true,
+									['OnClick'] = function(row, button)
+										setLootMethod(self, "master", row.ref.name);
+										return true;
+									end,
+									['back'] = 0.5,
+								}));
+							end
+						end
+					end
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {},
+				['options'] = {
+					app.CreateUnit("player", {
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							setLootMethod(self, "master");
+							return true;
+						end,
+						['back'] = 0.5,
+					}),
+				},
+			};
+			
 			-- Raid Assistant
-			local raidassistant = {
+			raidassistant = {
 				['text'] = "Raid Assistant",
 				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider", 
 				["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
@@ -6429,6 +6604,68 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['g'] = {
+					{
+						['text'] = LOOT_GROUP_LOOT, 
+						['title'] = LOOT_METHOD,
+						["description"] = "The loot method dictates what kind of loot will drop and how much. You must be in a party to utilize Loot Method switching.",
+						['icon'] = "Interface\\Icons\\Inv_legion_chest_Valajar.blp",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							if UnitIsGroupLeader("player") then
+								self.data = lootmethod;
+								self:Update(true);
+							end
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							data.visible = IsInGroup();
+							if data.visible then
+								local lootMethod = GetLootMethod();
+								if lootMethod then
+									local method = UnitLootMethod[lootMethod];
+									if method then
+										data.text = method.text or lootMethod;
+										data.description = method.tooltipText;
+									end
+								end
+							end
+						end,
+						['back'] = 0.5,
+					},
+					app.CreateUnit("player", {
+						['title'] = MASTER_LOOTER,
+						["description"] = "This player is currently the Master Looter.",
+						['visible'] = true,
+						['isML'] = true,
+						['OnClick'] = function(row, button)
+							if UnitIsGroupLeader("player") then
+								self.data = lootmasters;
+								self:Update(true);
+							end
+							return true;
+						end,
+						['OnUpdate'] = function(data)
+							if IsInGroup() then
+								local lootMethod, partyIndex, raidIndex = GetLootMethod();
+								if lootMethod == "master" then
+									if raidIndex then
+										data.unit = GetRaidRosterInfo(raidIndex);
+									elseif partyIndex == 0 then
+										data.unit = "player";
+									else
+										data.unit = UnitName("party" .. partyIndex);
+									end
+									data.text = nil;
+									data.visible = true;
+								else
+									data.visible = false;
+								end
+							else
+								data.visible = false;
+							end
+						end,
+						['back'] = 0.5,
+					}),
 					{
 						['text'] = "Reset Instances",
 						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Ability_Priest_VoidShift",
@@ -6486,8 +6723,13 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 		for i,g in ipairs(self.data.g) do
 			if g.OnUpdate then g.OnUpdate(g); end
 		end
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		BuildGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("Random", UIParent, function(self)
