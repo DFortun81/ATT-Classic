@@ -277,6 +277,8 @@ _.Instances = {
 				{
 					["questID"] = 7441,	-- Pusillin and the Elder Azj'Tordin
 					["qg"] = 14355,	-- Azj'Tordin
+					["coord"] = { 76.7, 37.2, FERALAS },
+					["maps"] = { FERALAS },
 					["cost"] = {
 						{ "i", 18261, 1 },	-- Book of Incantations
 					},
