@@ -5815,7 +5815,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self.initialized = true;
 		self.data = {
 			['text'] = "Session History",
-			['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+			['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider.blp", 
 			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 			['visible'] = true, 
 			['expanded'] = true,
@@ -6423,7 +6423,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			-- Raid Assistant
 			local raidassistant = {
 				['text'] = "Raid Assistant",
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider.blp", 
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider", 
 				["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -6431,7 +6431,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['g'] = {
 					{
 						['text'] = "Reset Instances",
-						['icon'] = "Interface\\Icons\\Ability_Priest_VoidShift",
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Ability_Priest_VoidShift",
 						['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -6619,7 +6619,7 @@ app:GetWindow("Random", UIParent, function(self)
 			local mainHeader, filterHeader;
 			local rerollOption = {
 				['text'] = "Reroll",
-				['icon'] = "Interface\\Icons\\ability_monk_roll",
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\ability_monk_roll",
 				['description'] = "Click this button to reroll using the active filter.",
 				['visible'] = true,
 				['OnClick'] = function(row, button)
@@ -6632,7 +6632,7 @@ app:GetWindow("Random", UIParent, function(self)
 			};
 			filterHeader = {
 				['text'] = "Apply a Search Filter",
-				['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\TRADE_ARCHAEOLOGY.blp", 
 				["description"] = "Please select a search filter option.",
 				['visible'] = true,
 				['expanded'] = true,
@@ -6675,7 +6675,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Instance",
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
 						['description'] = "Click this button to select a random instance based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -6690,7 +6690,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Dungeon",
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheHERO",
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheHERO",
 						['description'] = "Click this button to select a random dungeon based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -6705,7 +6705,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Raid",
-						['icon'] = "Interface\\Icons\\Achievement_Dungeon_GloryoftheRaider",
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider",
 						['description'] = "Click this button to select a random raid based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -6737,7 +6737,7 @@ app:GetWindow("Random", UIParent, function(self)
 			};
 			mainHeader = {
 				['text'] = "Random - Go Get 'Em!",
-				['icon'] = "Interface\\Icons\\Ability_Rogue_RolltheBones.blp", 
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Ability_Rogue_RolltheBones.blp", 
 				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -6749,7 +6749,7 @@ app:GetWindow("Random", UIParent, function(self)
 				['options'] = {
 					{
 						['text'] = "Change Search Filter",
-						['icon'] = "Interface\\Icons\\TRADE_ARCHAEOLOGY.blp", 
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\TRADE_ARCHAEOLOGY.blp", 
 						["description"] = "Click this to change your search filter.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)

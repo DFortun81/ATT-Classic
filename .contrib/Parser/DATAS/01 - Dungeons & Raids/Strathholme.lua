@@ -625,7 +625,7 @@ _.Instances = {
 							{
 								["itemID"] = 13350,	-- Insignia of the Black Guard
 								["questID"] = 5307,	-- Corruption
-								["requireSkill"] = 164,	-- Blacksmithing
+								["requireSkill"] = 9787,	-- Weaponsmith
 							},
 							i(12830, {	-- Plans: Corruption
 								["description"] = "You must be a Blacksmith in order to loot this from the Plans on the floor.",
