@@ -5736,7 +5736,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 			self.initialized = true;
 			self.data = {
 				['text'] = "Cosmic Infuser",
-				['icon'] = "Interface\\Icons\\INV_Misc_Celestial Map.blp", 
+				['icon'] = "Interface/ICONS/INV_Misc_Map_01", 
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true, 
 				['expanded'] = true,
