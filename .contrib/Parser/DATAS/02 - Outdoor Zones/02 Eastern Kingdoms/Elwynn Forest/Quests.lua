@@ -116,6 +116,7 @@ _.Zones =
 				q(1097, {	-- Elmore's Task
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["qgs"] = {
 						514,	-- Smith Argus 
 						415, -- Verner Osgood
