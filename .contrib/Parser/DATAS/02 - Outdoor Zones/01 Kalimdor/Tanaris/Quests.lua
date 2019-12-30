@@ -90,9 +90,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(8181, {	-- Confront Yeh'kinya
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(20218),	-- Faded Hakkari Cloak
 						i(20219),	-- Tattered Hakkari Cape
