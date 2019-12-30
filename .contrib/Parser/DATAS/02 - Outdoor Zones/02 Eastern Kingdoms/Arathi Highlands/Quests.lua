@@ -57,6 +57,7 @@ _.Zones =
 				q(635, {	-- Crystal in the Mountains
 					["lvl"] = 30,
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
+					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						642,	-- The Princess Trapped
 					},
@@ -132,6 +133,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2708, -- Archmage Malin
 					["maps"] = { STORMWIND },
+					["isBreadcrumb"] = true,
 				}),
 				q(697, {	-- Malin's Request
 					["lvl"] = 30,

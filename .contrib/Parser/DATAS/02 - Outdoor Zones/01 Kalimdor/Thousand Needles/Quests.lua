@@ -89,16 +89,20 @@ _.Zones =
 				q(1120, {	-- Get the Gnomes Drunk
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
-					["isBreadcrumb"] = true,
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
+					["altQuests"] = {
+						1121,	-- Get the Goblins Drunk
+					},
 				}),
 				q(1121, {	-- Get the Goblins Drunk
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["sourceQuest"] = 1119,	-- Zanzil's Mixture and a Fool's Stout
-					["isBreadcrumb"] = true,
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
+					["altQuests"] = {
+						1120,	-- Get the Goblins Drunk
+					},
 				}),
 				q(1174, {	-- Gnomes Win!
 					["u"] = 1,	-- Never Available
@@ -288,7 +292,6 @@ _.Zones =
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
-					["races"] = HORDE_ONLY,
 				}),
 				q(1194, {	-- Rizzle's Schematics
 					["provider"] = { "o", 20805 }, 	-- Rizzle's Unguarded Plans
@@ -472,7 +475,6 @@ _.Zones =
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["sourceQuest"] = 1118,	-- Back to Booty Bay
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),
 			}),

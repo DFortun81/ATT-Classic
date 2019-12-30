@@ -168,11 +168,19 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13777, -- Sergeant Durgen Stormpike
 						["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 					}),
 					q(7282, { -- Brotherly Love
 						["lvl"] = 51,
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13320, -- Commander Karl Philips
+					}),
+					q(7122, { -- Capture a Mine
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 13777, -- Sergeant Durgen Stormpike
+						["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 					}),
 					q(7170, { -- Earned Reverence
 						["lvl"] = 51,
@@ -197,6 +205,7 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13841, -- Lieutenant Haggerdin
 						["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 						["minReputation"] = { 730, HONORED },  -- Stormpike Guard, Honored
 						["cost"] = {
 							{ "i", 17900, 1 },	-- Stormpike Insignia Rank 2
@@ -210,6 +219,7 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13841, -- Lieutenant Haggerdin
 						["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 						["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, Exalted
 						["cost"] = {
 							{ "i", 17902, 1 },	-- Stormpike Insignia Rank 4
@@ -221,11 +231,31 @@ _.PvP =
 					q(7162, { -- Proving Grounds
 						["lvl"] = 51,
 						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 7261, -- The Sovereign Imperative
 						["qg"] = 13841, -- Lieutenant Haggerdin
 						["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 						["g"] = {
 							i(17691), -- Stormpike Insignia Rank 1
 							i(19484), -- The Frostwolf Artichoke
+						},
+					}),
+					q(8375, { -- Remember Alterac Valley!
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 15351, -- Alliance Brigadier General
+						["cost"] = {
+							{ "i", 20560, 3 },	-- Alterac Valey Mark of Honor
+						},
+					}),
+					q(8383, { -- Remember Alterac Valley!
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 8375, -- Remember Alterac Valley!
+						["repeatable"] = true,
+						["qg"] = 15351, -- Alliance Brigadier General
+						["cost"] = {
+							{ "i", 20560, 3 },	-- Alterac Valey Mark of Honor
 						},
 					}),
 					q(7168, { -- Rise and Be Recognized (Alliance)
@@ -233,6 +263,7 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13841, -- Lieutenant Haggerdin
 						["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 						["minReputation"] = { 730, FRIENDLY },  -- Stormpike Guard, Friendly
 						["cost"] = {
 							{ "i", 17691, 1 },	-- Stormpike Insignia Rank 1
@@ -241,11 +272,25 @@ _.PvP =
 							i(17900), -- Stormpike Insignia Rank 2
 						},
 					}),
+					q(7121, { -- The Quartermaster
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["qg"] = 13797, -- Mountaineer Boombellow
+					}),
+					q(7261, { -- The Sovereign Imperative
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+						["qg"] = 13843, -- Lieutenant Rotimer <Stormpike Guard Recruitment Officer>
+						["coords"] = { 32.8, 64.6, IRONFORGE },
+						["maps"] = { IRONFORGE },
+					}),
 					q(7172, { -- The Eye of Command
 						["lvl"] = 51,
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13841, -- Lieutenant Haggerdin
 						["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 						["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, 999/1000 Exalted
 						["cost"] = {
 							{ "i", 17903, 1 },	-- Stormpike Insignia Rank 5
@@ -259,6 +304,7 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13777, -- Sergeant Durgen Stormpike
 						["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 					}),
 				}),
 			},

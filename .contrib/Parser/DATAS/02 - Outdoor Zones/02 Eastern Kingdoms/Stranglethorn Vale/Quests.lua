@@ -177,6 +177,14 @@ _.Zones =
 						i(4109),	-- Excelsior Boots
 					},
 				}),
+				q(618, { -- Facing Negolash
+					["cost"] = {
+						{ "i", 3935, 1 },	-- Smotts' Cutlass
+					},
+					["altQuests"] = {
+						8554,	-- Facing Negolash
+					},
+				}),
 				q(8554, {	-- Facing Negolash
 					["qg"] = 2594,	-- Sprogger
 					["sourceQuest"] = 8553,	-- The Captain's Cutlass

@@ -225,6 +225,7 @@ _.Zones =
 				q(467, {	-- Stonegear's Search
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["qgs"] = {
 						1340,	-- Mountaineer Kadrell
 						2092,	-- Pilot Longbeard

@@ -21,14 +21,17 @@ _.WorldDrops =
 			i(15391),  -- Jadefire Cap
 		}),
 		n(-321, {	-- Shoulder
-			i(10383),	-- Commander's Pauldrons
+			
 			i(4709),  --  Forest Leather Mantle
 			i(4718),  -- Nightsky Mantle
 			i(6617),  -- Sage's Mantle
 			i(7432),  -- Twilight Cowl
+			i(9923),  -- Tracker's Shoulderpads
 			i(10172),  -- Mystical Mantle
 			i(10237),  -- Engraved Pauldrons
+			i(10274),  -- Masterwork Pauldrons
 			i(10281),  -- Emerald Pauldrons
+			i(10383),  -- Commander's Pauldrons
 			i(13103),  -- Pads of the Venom Spider
 			i(15357),  -- Headhunter's Spaulders
 		}),
@@ -187,6 +190,7 @@ _.WorldDrops =
 			i(10091),  -- Gothic Plate Leggings
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
+			i(10227),  -- Nightshade Leggings
 			i(10554),  -- Foreman Pants
 			i(10382),  -- Commander's Leggings
 			i(14090),  -- Beaded Britches
@@ -227,6 +231,7 @@ _.WorldDrops =
 			i(11982),  -- Viridian Band
 			i(11993),  -- Clay Ring
 			i(12007),  -- Prairie RIng
+			i(12056),  -- Ring of the Heavens
 		}),
 	}),
 	n(-319, {	-- Weapons		
@@ -327,6 +332,7 @@ _.WorldDrops =
 			i(864),  -- Knigthly Longsword
 			i(2011),  -- Twisted Sabre
 			i(2078),  -- Northern Shortsword
+			i(8196),  -- Ebon Scimitar
 			i(15210),  -- Raider Shortsword
 			i(15211),  -- Militant Shortsword
 		}),
