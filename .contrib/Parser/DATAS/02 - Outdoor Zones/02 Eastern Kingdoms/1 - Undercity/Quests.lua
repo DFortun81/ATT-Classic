@@ -56,6 +56,10 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,
 					["qg"] = 6741,	-- Innkeeper Norman
+					["altQuests"] = {
+						936,	-- Assisting Arch Druid Runetotem
+						3762, 	-- Assisting Arch Druid Runetotem
+					},
 				}),
 				q(1473, { -- Creature of the Void
 					["lvl"] = 10,

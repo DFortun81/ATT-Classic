@@ -46,6 +46,10 @@ _.Zones =
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,
 					["qg"] = 6746,	-- Innkeeper Pala
+					["altQuests"] = {
+						936,	-- Assisting Arch Druid Runetotem
+						3784, 	-- Assisting Arch Druid Runetotem
+					},
 				}),
 				q(1066, {	-- Blood of Innocents
 					["lvl"] = 13,

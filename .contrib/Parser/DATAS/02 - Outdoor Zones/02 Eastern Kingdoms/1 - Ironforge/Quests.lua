@@ -437,6 +437,7 @@ _.Zones =
 				q(2039, {	-- Find Bingles
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),

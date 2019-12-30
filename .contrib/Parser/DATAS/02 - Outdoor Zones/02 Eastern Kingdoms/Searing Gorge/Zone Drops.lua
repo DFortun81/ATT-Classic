@@ -13,6 +13,7 @@ _.Zones =
 					["cr"] = 5861,	-- Twilight Fire Guard
 				}),
 				i(21547, {	-- Recipe: Elixir of Greater Firepower
+					["u"] = 3, -- Added in phase 5
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster
