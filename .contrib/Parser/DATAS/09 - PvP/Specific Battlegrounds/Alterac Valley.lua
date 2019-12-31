@@ -200,6 +200,20 @@ _.PvP =
 						["races"] = ALLIANCE_ONLY,
 						["qg"] = 13319, -- Commander Duffy
 					}),
+					q(8271, { -- Hero of the Stormpike
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 7141, -- The Battle of Alterac
+						["qg"] = 13816, -- Prospector Stonehewer
+						["coords"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
+						["g"] = {
+							i(19106), -- Ice Barbed Spear
+							i(19107), -- Bloodseeker
+							i(19108), -- Wand of Biting Cold
+							i(20648), -- Cold Forged Hammer
+						},
+					}),
 					q(7169, { -- Honored Amongst the Guard
 						["lvl"] = 51,
 						["races"] = ALLIANCE_ONLY,
@@ -271,6 +285,19 @@ _.PvP =
 						["g"] = {
 							i(17900), -- Stormpike Insignia Rank 2
 						},
+					}),
+					q(7221, { -- Speak with Prospector Stonehewer
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(7141, { -- The Battle of Alterac
+						["lvl"] = 51,
+						["races"] = ALLIANCE_ONLY,
+						["sourceQuest"] = 7221, -- Speak with Prospector Stonehewer
+						["qg"] = 13816, -- Prospector Stonehewer
+						["coords"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
+						["maps"] = { ALTERAC_MOUNTAINS },
 					}),
 					q(7121, { -- The Quartermaster
 						["lvl"] = 51,

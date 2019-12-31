@@ -570,6 +570,12 @@ _.Zones =
 					},
 					["lvl"] = 35,
 				}),
+				q(615, {	-- The Captain's Cutlass
+					["altQuests"] = {
+						8553,	-- The Captain's Cutlass
+					},
+					["lvl"] = 35,
+				}),
 				q(1041, {	-- The Caravan Road
 					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
@@ -639,6 +645,14 @@ _.Zones =
 					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
 					["altQuests"] = {
 						620,	-- The Monogrammed Sash
+					},
+					["lvl"] = 35,
+				}),
+				q(620, {	-- The Monogrammed Sash
+					["provider"] = { "i", 3985, 1 },	-- Monogrammed Sash
+					["cr"] = 1493,	-- Mok'rash
+					["altQuests"] = {
+						8552,	-- The Monogrammed Sash
 					},
 					["lvl"] = 35,
 				}),

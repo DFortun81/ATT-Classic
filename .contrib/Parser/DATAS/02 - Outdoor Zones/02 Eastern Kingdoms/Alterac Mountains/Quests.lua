@@ -117,6 +117,11 @@ _.Zones =
 						i(3759),	-- Insulated Sage Gloves
 					},
 				}),
+				q(6701, {	-- Syndicate Emblems
+					["lvl"] = 24,
+					["classes"] = { 4 },	-- Rogue
+					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
+				}),
 				q(551, {	-- The Ensorcelled Parchment
 					["providers"] = {
 						{ "i", 3706 },	-- Ensorcelled Parchment
@@ -126,6 +131,10 @@ _.Zones =
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(6681, {	-- The Manor, Ravenholdt
+					["lvl"] = 24,
+					["classes"] = { 4 },	-- Rogue
 				}),
 				q(1713, { -- The Summoning
 					["lvl"] = 30,

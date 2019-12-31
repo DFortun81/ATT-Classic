@@ -38,7 +38,9 @@ _.Holidays =
 		q(8767, { 	-- A Gently Shaken Gift
 			["isYearly"] = true,
 			["lvl"] = 1,
-			["races"] = HORDE_ONLY,
+			["altQuests"] = {
+				8788, 	-- A Gently Shaken Gift
+			},
 			["groups"] = {
 				i(21270, {  -- Gently Shaken Gift
 					i(21235),  -- Winter Veil Roast
@@ -48,7 +50,9 @@ _.Holidays =
 		q(8788, { 	-- A Gently Shaken Gift
 			["isYearly"] = true,
 			["lvl"] = 1,
-			["races"] = ALLIANCE_ONLY,
+			["altQuests"] = {
+				8767, 	-- A Gently Shaken Gift
+			},
 			["groups"] = {
 				i(21270, {  -- Gently Shaken Gift
 					i(21235),  -- Winter Veil Roast

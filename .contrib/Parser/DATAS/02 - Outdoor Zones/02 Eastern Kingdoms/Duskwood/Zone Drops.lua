@@ -12,6 +12,9 @@ _.Zones =
 				i(2020, {  -- Hollowfang Blade
 					["cr"] = 539,	-- Pygmy Venom Web Spider
 				}),
+				i(880, {  -- Staff of Horrors
+					["cr"] = 202,	-- Skeletal Horror
+				}),
 			}),
 		}),
 	}),
