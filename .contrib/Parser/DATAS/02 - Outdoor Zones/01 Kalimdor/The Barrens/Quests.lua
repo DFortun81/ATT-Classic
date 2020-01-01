@@ -451,6 +451,9 @@ _.Zones =
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
 					["sourceQuest"] = 2458, -- Deep Cover
+					["g"] = {
+						i(18160), -- Recipe: Thistle Tea
+					}
 				}),
 				q(3301, {	-- Mura Runetotem
 					["qg"] = 3448,	-- Tonga Runetotem
