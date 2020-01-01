@@ -115,6 +115,7 @@ _.Zones =
 				q(1418, {	-- Neeka Bloodscar
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
+					["isBreadcrumb"] = true,
 				}),
 				q(1392, {	-- Noboru the Cudgel
 					["lvl"] = 29,
