@@ -233,6 +233,7 @@ _.Zones =
 				q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22107),	-- Feralheart Boots
@@ -242,6 +243,7 @@ _.Zones =
 				q(9019, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22084),	-- Virtuous Sandals
@@ -251,6 +253,7 @@ _.Zones =
 				q(9017, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22061),	-- Beastmaster's Boots
@@ -260,6 +263,7 @@ _.Zones =
 				q(9021, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22076),	-- Deathmist Sandals
@@ -269,6 +273,7 @@ _.Zones =
 				q(9018, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22064),	-- Sorcerer's Boots
@@ -278,6 +283,7 @@ _.Zones =
 				q(8957, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22096),	-- Boots of The Five Thunders
@@ -287,6 +293,7 @@ _.Zones =
 				q(9020, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22003),	-- Darkmantle Boots
@@ -296,6 +303,7 @@ _.Zones =
 				q(9022, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(21995),	-- Boots of Heroism
@@ -315,6 +323,7 @@ _.Zones =
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16033,	-- Bodley
+					["u"] = 3,	-- Added in later phase (Phase 5)
 				}),
 				q(3506, {	-- Betrayed
 					["lvl"] = 44,
@@ -429,6 +438,7 @@ _.Zones =
 				q(8938, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
@@ -437,6 +447,7 @@ _.Zones =
 				q(8942, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22098),	-- Cord of The Five Thunders
 						i(22099),	-- Gauntlets of The Five Thunders
@@ -445,6 +456,7 @@ _.Zones =
 				q(8943, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
@@ -453,6 +465,7 @@ _.Zones =
 				q(8939, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
@@ -461,6 +474,7 @@ _.Zones =
 				q(8941, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22006),	-- Darkmantle Gloves
 						i(22002),	-- Darkmantle Belt
@@ -469,6 +483,7 @@ _.Zones =
 				q(8940, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
@@ -477,6 +492,7 @@ _.Zones =
 				q(8927, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
@@ -485,6 +501,7 @@ _.Zones =
 				q(8944, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
@@ -511,6 +528,7 @@ _.Zones =
 				q(8978, {	-- Return to Mokvar
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 				}),
 				q(81, {	-- Ripple Delivery
 					["lvl"] = 42,
@@ -529,6 +547,7 @@ _.Zones =
 				q(9008, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
@@ -537,6 +556,7 @@ _.Zones =
 				q(9010, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
@@ -545,6 +565,7 @@ _.Zones =
 				q(9012, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
@@ -553,6 +574,7 @@ _.Zones =
 				q(9007, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
@@ -561,6 +583,7 @@ _.Zones =
 				q(9014, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
@@ -569,6 +592,7 @@ _.Zones =
 				q(9009, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
@@ -577,6 +601,7 @@ _.Zones =
 				q(9011, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22097),	-- Coif of The Five Thunders
 						i(22102),	-- Vest of The Five Thunders
@@ -585,6 +610,7 @@ _.Zones =
 				q(9013, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
+					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
