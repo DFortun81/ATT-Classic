@@ -373,7 +373,7 @@ _.Zones =
 					["sourceQuest"] = 1506, -- Gan'rul's Summons
 				}),
 				q(2458, { -- Deep Cover
-					["lvl"] = 16,
+					["lvl"] = 20,
 					["qg"] = 3401, -- Shenthul
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
@@ -672,6 +672,12 @@ _.Zones =
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
+				}),
+				q(2460, { -- The Shattered Salute
+					["lvl"] = 20,
+					["qg"] = 3401, -- Shenthul
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
 				}),
 				q(1146, {	-- The Swarm Grows
 					["lvl"] = 29,
