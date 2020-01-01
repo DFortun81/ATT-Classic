@@ -1476,28 +1476,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				if app.Settings:GetTooltipSetting("itemID") then tinsert(info, { left = L["ITEM_ID"], right = tostring(itemID) }); end
-				if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-					local specs = GetItemSpecInfo(itemID);
-					if specs then
-						if #specs > 0 then
-							table.sort(specs);
-							local spec_label = "";
-							local atleastone = false;
-							for key, specID in ipairs(specs) do
-								local id, name, description, icon, role, class = GetSpecializationInfoByID(specID);
-								if class == app.Class then
-									spec_label = spec_label .. "  |T" .. icon .. ":0|t " .. name;
-									atleastone = true;
-								end
-							end
-							if atleastone then
-								tinsert(info, { right = spec_label });
-							else
-								tinsert(info, { right = "Not available in Personal Loot." });
-							end
-						else
-							tinsert(info, { right = "Not available in Personal Loot." });
-						end
+				
+				-- Show Reservations
+				local reservesForItem = GetTempDataMember("SoftReservesByItemID")[itemID];
+				if reservesForItem then
+					local left = "Soft Reserves";
+					for i,guid in ipairs(reservesForItem) do
+						local name = app.CreateSoftReserveUnit(guid).tooltipText;
+						tinsert(info, { left = left, right = name });
+						left = " ";
 					end
 				end
 				
@@ -2576,28 +2563,6 @@ end
 
 -- Character Class Lib
 (function()
-local classKeys = {
-	[1] = "WARRIOR",
-	[2] = "PALADIN",
-	[3] = "HUNTER",
-	[4] = "ROGUE",
-	[5] = "PRIEST",
-	[7] = "SHAMAN",
-	[8] = "MAGE",
-	[9] = "WARLOCK",
-	[11] = "DRUID",
-};
-local classNames = {
-	[1] = "Warrior",
-	[2] = "Paladin",
-	[3] = "Hunter",
-	[4] = "Rogue",
-	[5] = "Priest",
-	[7] = "Shaman",
-	[8] = "Mage",
-	[9] = "Warlock",
-	[11] = "Druid",
-};
 local classIcons = {
 	[1] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warrior",
 	[2] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Paladin",
@@ -2609,6 +2574,13 @@ local classIcons = {
 	[9] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warlock",
 	[11] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Druid",
 };
+app.GetClassIDFromClassFile = function(classFile)
+	for i,icon in pairs(classIcons) do
+		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
+			return i;
+		end
+	end
+end
 app.BaseCharacterClass = {
 	__index = function(t, key)
 		if key == "key" then
@@ -2618,7 +2590,7 @@ app.BaseCharacterClass = {
 			rawset(t, "text", text);
 			return text;
 		elseif key == "name" then
-			return classNames[t.classID];
+			return C_CreatureInfo.GetClassInfo(t.classID).className;
 		elseif key == "icon" then
 			return classIcons[t.classID];
 		elseif key == "c" then
@@ -2626,7 +2598,7 @@ app.BaseCharacterClass = {
 			rawset(t, "c", c);
 			return c;
 		elseif key == "classColors" then
-			return RAID_CLASS_COLORS[classKeys[t.classID]];
+			return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2680,14 +2652,31 @@ app.BaseSoftReserveUnit = {
 	__index = function(t, key)
 		if key == "key" then
 			return "unit";
-		elseif key == "text" then
-			local name = UnitName(t.unit);
+		elseif key == "unitText" then
+			local name, className, classFile, classID = UnitName(t.unit);
+			if name then
+				className, classFile, classID = UnitClass(t.unit);
+			elseif #{strsplit("-", t.unit)} > 1 then
+				-- It's a GUID.
+				rawset(t, "guid", t.unit);
+				className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
+				classID = app.GetClassIDFromClassFile(classFile);
+			end
 			if name then
 				rawset(t, "name", name);
-				local className, classFile, classID = UnitClass(t.unit);
 				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-				if t.itemID then
-					local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(t.itemID);
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+				return name;
+			end
+			return t.unit;
+		elseif key == "text" then
+			local name = t.unitText;
+			if name then
+				local itemID = t.itemID;
+				if itemID then
+					local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
 					if itemLink then
 						name = name .. " - " .. (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink;
 					else
@@ -2696,9 +2685,6 @@ app.BaseSoftReserveUnit = {
 				else
 					name = name .. " - No Soft Reserve Selected";
 				end
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
 				return name;
 			end
 			return t.unit;
@@ -2716,7 +2702,9 @@ app.BaseSoftReserveUnit = {
 			local guid = t.guid;
 			if guid then
 				local reserve = rawget(GetDataMember("SoftReserves"), guid);
-				return type(reserve) == 'number' and reserve or reserve[1];
+				if reserve then
+					return type(reserve) == 'number' and reserve or reserve[1];
+				end
 			end
 		elseif key == "preview" then
 			return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -2724,6 +2712,15 @@ app.BaseSoftReserveUnit = {
 			if t.itemID then
 				return select(2, GetItemInfo(t.itemID));
 			end
+		elseif key == "tooltipText" then
+			local text = t.unitText;
+			local guid = t.guid;
+			local icon = t.icon;
+			if icon then text = "|T" .. icon .. ":0|t " .. text; end
+			if guid and not IsGUIDInGroup(guid) then
+				text = text .. " |CFFFFFFFF(Not in Group)|r";
+			end
+			return text;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -2736,7 +2733,6 @@ end
 app.ParseSoftReserve = function(app, guid, cmd)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
-		print("'" .. cmd .. "'")
 		cmd = cmd:match("^%s*(.+)$");
 		if cmd == "clear" then
 			app:UpdateSoftReserve(guid, nil);
@@ -2762,14 +2758,58 @@ app.ParseSoftReserve = function(app, guid, cmd)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
-app.UpdateSoftReserve = function(app, guid, itemID)
+app.UpdateSoftReserveInternal = function(app, guid, itemID)
 	local reserves = GetDataMember("SoftReserves");
-	if reserves[guid] and true then
+	local reservesByItemID = GetTempDataMember("SoftReservesByItemID");
+	
+	-- Check the Old Reserve against the new one.
+	local oldreserve = reserves[guid];
+	if oldreserve then
+		-- If there was an old reservation...
+		local oldItemID = oldreserve[1];
+		if oldItemID then
+			if oldItemID == itemID then
+				return true;
+			end
+			
+			-- Uncache the reserve
+			local reservesForItem = reservesByItemID[oldItemID];
+			if reservesForItem then
+				for i,value in ipairs(reservesForItem) do
+					if value == guid then
+						table.remove(reservesForItem, i);
+						break;
+					end
+				end
+			end
+		end
+	end
+	
+	-- Update the Reservation
+	wipe(searchCache);
+	reserves[guid] = { itemID, time() };
+	local reservesForItem = reservesByItemID[itemID];
+	if not reservesForItem then
+		reservesByItemID[itemID] = { guid };
+	else
+		table.insert(reservesForItem, guid);
+	end
+end
+app.UpdateSoftReserve = function(app, guid, itemID)
+	if GetDataMember("SoftReserves")[guid] and false then
 		SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
 	else
 		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
-		reserves[guid] = { itemID, time() };
+		app:UpdateSoftReserveInternal(guid, itemID);
 		app:GetWindow("SoftReserves"):Update(true);
+		if itemID then
+			local searchResults = SearchForLink("itemid:" .. itemID);
+			if searchResults and #searchResults > 0 then
+				SendGUIDWhisper("SR: Updated to " .. searchResults[1].link, guid);
+			end
+		else
+			SendGUIDWhisper("SR: Cleared.", guid);
+		end
 	end
 end
 end)();
@@ -7886,9 +7926,17 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Check the format of the Soft Reserve Cache
 	local reserves = GetDataMember("SoftReserves", {});
+	local reservesByItemID = GetTempDataMember("SoftReservesByItemID", {});
 	for guid,reserve in pairs(reserves) do
 		if type(reserve) == 'number' then
-			reserves[guid] = { reserve, time() };
+			reserve = { reserve, time() };
+			reserves[guid] = reserve;
+		end
+		local itemID = reserve[1];
+		if not reservesByItemID[itemID] then
+			reservesByItemID[itemID] = { guid };
+		else
+			table.insert(reservesByItemID[itemID], guid);
 		end
 	end
 	
