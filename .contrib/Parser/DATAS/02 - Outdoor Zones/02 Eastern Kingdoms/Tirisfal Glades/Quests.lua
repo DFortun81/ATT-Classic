@@ -212,6 +212,12 @@ _.Zones =
 					},
 					["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
 				}),
+				q(1885, { -- Mennet Carkad
+					["lvl"] = 10,
+					["qg"] = 2130, -- Marion Call
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+				}),
 				q(380, {	-- Night Web's Hollow
 					["lvl"] = 2,
 					["races"] = HORDE_ONLY,
@@ -342,6 +348,37 @@ _.Zones =
 						i(2173),	-- Old Leather Belt
 					},
 					["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
+				}),
+				q(1886, { -- The Deathstalkers (1/4)
+					["lvl"] = 10,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 1885, -- Mennet Carkad
+				}),
+				q(1898, { -- The Deathstalkers (2/4)
+					["lvl"] = 10,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 1886, -- The Deathstalkers (1/4)
+				}),
+				q(1899, { -- The Deathstalkers (3/4)
+					["lvl"] = 10,
+					["qg"] = 6522, -- Andron Gant
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 1898, -- The Deathstalkers (2/4)
+				}),
+				q(1978, { -- The Deathstalkers (4/4)
+					["lvl"] = 10,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 1899, -- The Deathstalkers (3/4)
+					["g"] = {
+						i(7298), -- Blade of Cunning
+					},
 				}),
 				q(410, {	-- The Dormant Shade
 					["lvl"] = 5,
