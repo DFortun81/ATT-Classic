@@ -90,8 +90,8 @@ _.WorldDrops =
 			i(3211),  -- Burnished Bracers
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
-			i(10377),	-- Commander's Vambraces
 			i(6550),  -- Soldier's Wristguards
+			i(6556),  -- Bard's Bracers
 			i(6563),  -- Shimmering Bracers
 			i(6583),  -- Scouting Bracers
 			i(6613),  -- Sage's Bracers
@@ -104,6 +104,7 @@ _.WorldDrops =
 			i(10096),  -- Councillor's Cuffs
 			i(10213),  -- Elegant Bracers
 			i(10223),  -- Nigthshade Armguards
+			i(10377),	-- Commander's Vambraces
 			i(14122),  -- Ritual Bands
 			i(14429),  -- Windchaser Cuffs
 			i(14561),  -- Prospector's Cuffs
@@ -252,6 +253,7 @@ _.WorldDrops =
 			i(2227),  -- Heavy Ogre War Axe
 			i(3195),  -- Barbaric Battle Axe
 			i(3199),  -- Battle Slayer
+			i(3201),  -- Barbarian War Axe
 			i(4562),  -- Severing Axe
 			i(15269),  -- Massive Battle Axe
 			i(15271),  -- Colossal Great Axe
@@ -282,6 +284,7 @@ _.WorldDrops =
 		n(-345, {	-- Guns
 			i(3042),  -- BKP "Sparrow" Smallbore
 			i(8188),  -- Explosive Shotgun
+			i(13136),  -- Lil Timmi's Peashooter
 			i(15323),  -- Percussion Shotgun
 		}),			
 		n(-331, {	-- Held in Off-hand
@@ -342,6 +345,7 @@ _.WorldDrops =
 			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword
 			i(8178),  -- Training Sword
+			i(15248),  -- Gleaming Claymore
 			i(15251),  -- Headstriker Sword
 		}),
 		n(-341, {	-- Wands
