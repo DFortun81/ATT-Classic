@@ -372,6 +372,13 @@ _.Zones =
 					["qg"] = 5875, -- Gan'rul Bloodeye
 					["sourceQuest"] = 1506, -- Gan'rul's Summons
 				}),
+				q(2458, { -- Deep Cover
+					["lvl"] = 16,
+					["qg"] = 3401, -- Shenthul
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 2460, -- The Shattered Salute
+				}),
 				q(1507, { -- Devourer of Souls
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
