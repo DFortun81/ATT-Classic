@@ -1819,6 +1819,10 @@ local function SendResponseMessage(msg, player)
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", player);
 	end
 end
+local function SendGUIDWhisper(msg, guid)
+	local name = select(6, GetPlayerInfoByGUID(guid));
+	if name then SendChatMessage(msg, "WHISPER", nil, name); end
+end
 
 -- Lua Constructor Lib
 local fieldCache = {};
@@ -2711,7 +2715,8 @@ app.BaseSoftReserveUnit = {
 		elseif key == "itemID" then
 			local guid = t.guid;
 			if guid then
-				return rawget(GetDataMember("SoftReserves"), guid);
+				local reserve = rawget(GetDataMember("SoftReserves"), guid);
+				return type(reserve) == 'number' and reserve or reserve[1];
 			end
 		elseif key == "preview" then
 			return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
@@ -2729,26 +2734,43 @@ app.CreateSoftReserveUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
 end
 app.ParseSoftReserve = function(app, guid, cmd)
-	cmd = cmd:match("^%s*(.+)$");
-	if cmd == "clear" then
-		app:UpdateSoftReserve(guid, nil);
-		return;
-	end
-	
-	-- Search for the Link in the database
-	local group = SearchForLink(not tonumber(cmd) and cmd or ("itemid:" .. cmd));
-	if group and #group > 0 then
-		for i,g in ipairs(group) do
-			if g.itemID then
-				app:UpdateSoftReserve(guid, g.itemID);
-				break;
+	-- Attempt to parse the command.
+	if cmd and cmd ~= "" then
+		print("'" .. cmd .. "'")
+		cmd = cmd:match("^%s*(.+)$");
+		if cmd == "clear" then
+			app:UpdateSoftReserve(guid, nil);
+			return;
+		end
+		
+		-- Parse out the itemID if possible.
+		local itemID = tonumber(cmd) or GetItemInfoInstant(cmd);
+		if itemID then cmd = "itemid:" .. itemID; end
+		
+		-- Search for the Link in the database
+		local group = SearchForLink(cmd);
+		if group and #group > 0 then
+			for i,g in ipairs(group) do
+				if g.itemID then
+					app:UpdateSoftReserve(guid, g.itemID);
+					return true;
+				end
 			end
 		end
 	end
+	
+	-- Send back an error message.
+	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
 app.UpdateSoftReserve = function(app, guid, itemID)
-	GetDataMember("SoftReserves")[guid] = itemID;
-	app:GetWindow("SoftReserves"):Update(true);
+	local reserves = GetDataMember("SoftReserves");
+	if reserves[guid] and true then
+		SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
+	else
+		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
+		reserves[guid] = { itemID, time() };
+		app:GetWindow("SoftReserves"):Update(true);
+	end
 end
 end)();
 
@@ -7860,8 +7882,15 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
-	GetDataMember("SoftReserves", {});
 	GetDataMember("WaypointFilters", {});
+	
+	-- Check the format of the Soft Reserve Cache
+	local reserves = GetDataMember("SoftReserves", {});
+	for guid,reserve in pairs(reserves) do
+		if type(reserve) == 'number' then
+			reserves[guid] = { reserve, time() };
+		end
+	end
 	
 	-- Cache your character's deaths.
 	local totalDeaths = GetDataMember("Deaths", 0);
@@ -8540,7 +8569,8 @@ end
 app.events.CHAT_MSG_WHISPER = function(text, playerName, _, _, _, _, _, _, _, _, _, guid)
 	text = text:match("^%s*(.+)$") or "";
 	if strsub(text, 1, 1) == '!' then
-		if strsub(text, 2, 3) == "sr" then
+		local lowercased = string.lower(text);
+		if strsub(lowercased, 2, 3) == "sr" then
 			app:ParseSoftReserve(guid, strsub(text, 4));
 		end
 	end
