@@ -240,6 +240,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
+				q(2480, { -- Hinott's Assistance
+					["lvl"] = 20,
+					["qg"] = 2391, -- Serge Hinott
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 2479, -- Hinott's Assistance
+				}),
 				q(661, {	-- Hints of a New Plague?
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,

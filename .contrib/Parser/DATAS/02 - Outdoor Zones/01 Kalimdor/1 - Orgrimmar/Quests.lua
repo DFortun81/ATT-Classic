@@ -413,6 +413,13 @@ _.Zones =
 				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
 				--q(5730, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
+				q(2479, { -- Hinott's Assistance
+					["lvl"] = 20,
+					["qg"] = 3401, -- Shenthul
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 2478, -- Mission: Possible But Not Probable
+				}),
 				q(4737, { -- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = HORDE_ONLY,

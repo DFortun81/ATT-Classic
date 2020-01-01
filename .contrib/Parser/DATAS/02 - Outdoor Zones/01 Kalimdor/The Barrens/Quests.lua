@@ -445,6 +445,13 @@ _.Zones =
 						i(5335),	-- A Sack of Coins
 					},
 				}),
+				q(2478, { -- Mission: Possible But Not Probable
+					["lvl"] = 20,
+					["qg"] = 7233, -- Taskmaster Fizzule
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 2458, -- Deep Cover
+				}),
 				q(3301, {	-- Mura Runetotem
 					["qg"] = 3448,	-- Tonga Runetotem
 					["sourceQuest"] = 880,	-- Altered Beings
