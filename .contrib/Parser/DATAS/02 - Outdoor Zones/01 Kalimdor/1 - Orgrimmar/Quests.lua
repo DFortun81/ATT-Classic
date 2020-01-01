@@ -635,6 +635,7 @@ _.Zones =
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
 					["qg"] = 14843,	-- Kruban Darkblade
+					["u"] = 3,	-- Added in later phase (Phase 3)
 					["g"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
@@ -649,6 +650,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 4949,	-- Thrall
 					["coord"] = { 31.73, 37.81, ORGRIMMAR },
+					["u"] = 3,	-- Added in later phase (Phase 3)
 					["g"] = {
 						i(19383),	-- Master Dragonslayer's Medallion
 						i(19366),	-- Master Dragonslayer's Orb
