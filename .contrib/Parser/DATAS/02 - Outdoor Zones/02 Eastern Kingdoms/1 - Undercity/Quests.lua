@@ -87,6 +87,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
+				q(2378, { -- Find the Shattered Hand
+					["lvl"] = 16,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+				}),
 				q(1476, { -- Hearts of the Pure
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },

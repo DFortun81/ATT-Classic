@@ -494,6 +494,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(2381, { -- Plundering the Plunderers
+					["lvl"] = 16,
+					["qg"] = 7161, -- Wrenix the Wretched
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+				}),
 				q(903, {	-- Prowlers of the Barrens
 					["qg"] = 3338,	-- Sergra Darkthorn
 					["sourceQuest"] = 845,	-- The Zhevra

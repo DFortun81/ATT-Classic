@@ -678,6 +678,18 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 				}),
+				q(2382, { -- Wrenix of Ratchet
+					["lvl"] = 16,
+					["qg"] = 3402, -- Zando'zan
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+				}),
+				q(2379, { -- Zando'zan
+					["lvl"] = 16,
+					["qg"] = 3401, -- Shenthul
+					["races"] = { ORC, UNDEAD, TROLL },
+					["classes"] = { ROGUE },
+				}),
 			}),
 		}),
 	}),
