@@ -665,15 +665,12 @@ _.Zones =
 						4641,	-- Your Place In The World
 					},
 				}),
-				q(1963, {
+				q(1963, { -- The Shattered Hand
 					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1859,	-- Therzok
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
-					["races"] = {
-						2,	-- Orc
-						8,	-- Troll
-					},
-					["classes"] = { 4 },	-- Rogue
+					["races"] = { ORC, TROLL },
+					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
 				q(1146, {	-- The Swarm Grows
