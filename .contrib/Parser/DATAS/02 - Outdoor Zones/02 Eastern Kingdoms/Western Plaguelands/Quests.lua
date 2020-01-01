@@ -239,6 +239,7 @@ _.Zones =
 				q(5059, {	-- Locked Away
 					["lvl"] = 52,
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 				}),
 				q(5060, {	-- Locked Away
 					["lvl"] = 52,
