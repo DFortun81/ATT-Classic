@@ -71,6 +71,11 @@ _.PvP =
 							i(17906),  -- Frostwolf Insignia Rank 3
 						},
 					}),
+					q(7241, { -- In Defense of Frostwolf
+						["races"] = HORDE_ONLY,
+						["lvl"] = 51,
+						["qg"] = 13842, -- Frostwolf Ambassador Rokhstrom
+					}),
 					q(8369, { -- Invaders of Alterac Valley
 						["lvl"] = 51,
 						["races"] = HORDE_ONLY,
