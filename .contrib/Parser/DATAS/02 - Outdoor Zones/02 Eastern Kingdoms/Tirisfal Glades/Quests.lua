@@ -136,6 +136,12 @@ _.Zones =
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuest"] = 5481, -- Gordo's Task
 				}),
+				q(3096, { -- Encrypted Scroll
+					["lvl"] = 1,
+					["qg"] = 1569, -- Shadow Priest Sarvis
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+				}),
 				q(365, {	-- Fields of Grief
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,

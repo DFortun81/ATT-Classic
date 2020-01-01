@@ -87,6 +87,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
+				q(1998, { -- Fenwick Thatros
+					["lvl"] = 16,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+				}),
 				q(2378, { -- Find the Shattered Hand
 					["lvl"] = 16,
 					["qg"] = 6467, -- Mennet Carkad
@@ -273,6 +279,13 @@ _.Zones =
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs
 					},
+				}),
+				q(1999, { -- Tools of the Trade
+					["lvl"] = 16,
+					["qg"] = 6467, -- Mennet Carkad
+					["races"] = { UNDEAD },
+					["classes"] = { ROGUE },
+					["sourceQuest"] = 1998, -- Fenwick Thatros
 				}),
 				q(1803, { -- Tome of the Cabal (2/3 Horde)
 					["lvl"] = 30,
