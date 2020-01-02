@@ -1484,7 +1484,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for i,guid in ipairs(reservesForItem) do
 						local name = app.CreateSoftReserveUnit(guid).tooltipText;
 						tinsert(info, { left = left, right = name });
-						left = " ";
+						left = nil;
 					end
 				end
 				
@@ -2790,10 +2790,10 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID)
 	reserves[guid] = { itemID, time() };
 	local reservesForItem = reservesByItemID[itemID];
 	if not reservesForItem then
-		reservesByItemID[itemID] = { guid };
-	else
-		table.insert(reservesForItem, guid);
+		reservesForItem = {};
+		reservesByItemID[itemID] = reservesForItem;
 	end
+	table.insert(reservesForItem, guid);
 end
 app.UpdateSoftReserve = function(app, guid, itemID)
 	if GetDataMember("SoftReserves")[guid] and false then
@@ -7959,11 +7959,12 @@ app.events.VARIABLES_LOADED = function()
 			reserves[guid] = reserve;
 		end
 		local itemID = reserve[1];
-		if not reservesByItemID[itemID] then
-			reservesByItemID[itemID] = { guid };
-		else
-			table.insert(reservesByItemID[itemID], guid);
+		local reservesForItem = reservesByItemID[itemID];
+		if not reservesForItem then
+			reservesForItem = {};
+			reservesByItemID[itemID] = reservesForItem;
 		end
+		table.insert(reservesForItem, guid);
 	end
 	
 	-- Cache your character's deaths.
