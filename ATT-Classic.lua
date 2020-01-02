@@ -2805,7 +2805,7 @@ app.UpdateSoftReserve = function(app, guid, itemID)
 		if itemID then
 			local searchResults = SearchForLink("itemid:" .. itemID);
 			if searchResults and #searchResults > 0 then
-				SendGUIDWhisper("SR: Updated to " .. searchResults[1].link, guid);
+				SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)), guid);
 			end
 		else
 			SendGUIDWhisper("SR: Cleared.", guid);

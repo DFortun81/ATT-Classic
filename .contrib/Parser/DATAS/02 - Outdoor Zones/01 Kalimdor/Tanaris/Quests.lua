@@ -96,6 +96,16 @@ _.Zones =
 						i(20219),	-- Tattered Hakkari Cape
 					},
 				}),
+				q(2882, {	-- Cuergo's Gold
+					["coord"] = { 55.4, 92.2, TANARIS },
+					["cost"] = {
+						{ "i", 9254, 1 },	-- Cuergo's Treasure Map
+						{ "i", 9251, 1 },	-- Upper Map Fragment
+						{ "i", 9253, 1 },	-- Middle Map Fragment
+						{ "i", 9252, 1 },	-- Lower Map Fragment
+					},
+					["lvl"] = 40,
+				}),
 				q(8606, {	-- Decoy!
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
@@ -242,8 +252,8 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(2876, {	-- Ship Schedules
-					["lvl"] = 40,
 					["provider"] = { "i", 9250 }, -- Ship Schedule
+					["lvl"] = 40,
 				}),
 				q(379, {	-- Slake That Thirst
 					["sourceQuest"] = 243,	-- Into the Field

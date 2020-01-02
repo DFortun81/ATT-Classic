@@ -41,6 +41,37 @@ _.Zones =
 						7805,	-- Wastewander Scofflaw
 					},
 				}),
+				i(9276, {	-- Pirate's Footlocker
+					["crs"] = {
+						15685,	-- Southsea Kidnapper
+						7856,	-- Southsea Freebooter
+						7857,	-- Southsea Dock Worker
+						7858,	-- Southsea Swashbuckler
+						7855,	-- Southsea Pirate
+					},
+					["groups"] = {
+						i(9359),	-- Wirt's Third Leg
+						i(9250, {	-- Ship Schedule
+							["questID"] = 2876,	-- Ship Schedules
+						}),
+						i(9251, {	-- Upper Map Fragment
+							["questID"] = 2882,	-- Cuergo's Gold
+						}),
+						i(9253, {	-- Middle Map Fragment
+							["questID"] = 2882,	-- Cuergo's Gold
+						}),
+						i(9252, {	-- Lower Map Fragment
+							["questID"] = 2882,	-- Cuergo's Gold
+						}),
+						i(9249, {	-- Captain's Key
+							["description"] = "Unlocks the Captain's Chest located in the ship at the docks.",
+							["coord"] = { 76.5, 45.8, TANARIS },
+							["groups"] = {
+								i(9359),	-- Wirt's Third Leg
+							},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),
