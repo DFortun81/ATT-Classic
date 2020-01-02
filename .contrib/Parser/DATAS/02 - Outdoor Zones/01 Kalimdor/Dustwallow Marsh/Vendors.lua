@@ -20,6 +20,19 @@ _.Zones =
 						i(4355),	-- Pattern: Icy Cloak
 					},
 				}),
+				n(4885, {	-- Gregor MacVince <Horse Breeder>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH, },
+					["maps"] = { DUSTWALLOW_MARSH, },
+					["groups"] = {
+						i(2414),	-- Pinto Bridle
+						i(5655),	-- Chestnut Mare Bridle
+						i(5656),	-- Brown Horse Bridle
+						i(18776),	-- Swift Palomino
+						i(18777),	-- Swift Brown Steed
+						i(18778),	-- Swift White Steed
+					},
+				}),
 				n(4897, {	-- Helenia Olden <Trade Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

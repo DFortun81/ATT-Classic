@@ -27,6 +27,19 @@ _.Zones =
 						i(8488),	-- Cat Carrier (Silver Tabby)
 					},
 				}),
+				n(384, {	-- Katie Hunter <Horse Breeder>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
+					["groups"] = {
+						i(2414),	-- Pinto Bridle
+						i(5655),	-- Chestnut Mare Bridle
+						i(5656),	-- Brown Horse Bridle
+						i(18776),	-- Swift Palomino
+						i(18777),	-- Swift Brown Steed
+						i(18778),	-- Swift White Steed
+					},
+				}),
 				n(1250, {	-- Drake Lindgren <General & Trade Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

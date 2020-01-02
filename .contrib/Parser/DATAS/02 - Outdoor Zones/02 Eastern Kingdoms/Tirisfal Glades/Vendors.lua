@@ -57,6 +57,18 @@ _.Zones =
 						i(15741),	-- Pattern: Stormshroud Pants
 					},
 				}),
+				n(4731, {	-- Zachariah Post <Undead Horse Merchant>
+					["races"] = HORDE_ONLY,
+					["coord"] = { 59.8, 52.6, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["groups"] = {
+						i(13331),	-- Red Skeletal Horse
+						i(13332),	-- Blue Skeletal Horse
+						i(13333),	-- Brown Skeletal Horse
+						i(13334),	-- Green Skeletal Warhorse
+						i(18791),	-- Purple Skeletal Warhorse
+					},
+				}),
 			}),
 		}),
 	}),

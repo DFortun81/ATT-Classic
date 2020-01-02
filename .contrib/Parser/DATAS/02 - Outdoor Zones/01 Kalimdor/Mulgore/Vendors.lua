@@ -19,6 +19,18 @@ _.Zones =
 						i(5484),	-- Recipe: Roasted Kodo Mea
 					},
 				}),
+				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
+					["races"] = HORDE_ONLY,
+					["coord"] = { 47.6, 58.4, MULGORE },
+					["maps"] = { MULGORE },
+					["groups"] = {
+						i(15277),	-- Gray Kodo
+						i(15290),	-- Brown Kodo
+						i(18793),	-- Great White Kodo
+						i(18794),	-- Great Brown Kodo
+						i(18795),	-- Great Gray Kodo
+					},
+				}),
 			}),	
 		}),
 	}),

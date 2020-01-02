@@ -295,6 +295,7 @@ _.Zones =
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
+					["isBreadcrumb"] = true,
 				}),
 				q(2873, {	-- Stoley's Shipment
 					["lvl"] = 40,

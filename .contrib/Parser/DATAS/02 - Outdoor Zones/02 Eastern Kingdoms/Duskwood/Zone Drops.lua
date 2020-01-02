@@ -15,6 +15,9 @@ _.Zones =
 				i(880, {  -- Staff of Horrors
 					["cr"] = 202,	-- Skeletal Horror
 				}),
+				i(899, {  -- Venom Web Fang
+					["cr"] = 217,	-- Venom Web Spider
+				}),
 			}),
 		}),
 	}),

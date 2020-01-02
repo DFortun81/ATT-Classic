@@ -67,6 +67,17 @@ _.Zones =
 					},
 					["coord"] = { 8.0, 58.3, WETLANDS },
 				}),
+				n(1460, {	-- Unger Statforth <Horse Breeder>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 8.6, 54.4, WETLANDS },
+					["maps"] = { WETLANDS },
+					["groups"] = {
+						i(2411),	-- Black Stallion Bridle
+						i(2414),	-- Pinto Bridle
+						i(5655),	-- Chestnut Mare Bridle
+						i(5656),	-- Brown Horse Bridle
+					},
+				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

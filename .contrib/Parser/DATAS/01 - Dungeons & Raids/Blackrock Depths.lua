@@ -766,6 +766,7 @@ _.Instances = {
 					["coord"] = { 67.0, 24.0, TANARIS },
 					["maps"] = { TANARIS },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				},
 			}),
@@ -1161,7 +1162,9 @@ _.Instances = {
 					i(17049),  	-- Plans: Fiery Chain Girdle
 					i(17053),  	-- Plans: Fiery Chain Shoulders
 					i(19212),  	-- Plans: Nightfall
-					i(20761),	-- Recipe: Transmute Elemental Fire
+					i(20761, {	-- Recipe: Transmute Elemental Fire
+						["u"] = 3,	-- Added in phase 5
+					}),
 				},
 			}),
 			n(9156, {	-- Ambassador Flamelash

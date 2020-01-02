@@ -53,6 +53,19 @@ _.Zones =
 						i(6401),	-- Pattern: Dark Silk Shirt						
 					},
 				}),
+				n(2357, {	-- Merideth Carlson <Horse Breeder>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["groups"] = {
+						i(2414),	-- Pinto Bridle
+						i(5655),	-- Chestnut Mare Bridle
+						i(5656),	-- Brown Horse Bridle
+						i(18776),	-- Swift Palomino
+						i(18777),	-- Swift Brown Steed
+						i(18778),	-- Swift White Steed
+					},
+				}),
 				n(2381, {	-- Micha Yance <Trade Goods>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

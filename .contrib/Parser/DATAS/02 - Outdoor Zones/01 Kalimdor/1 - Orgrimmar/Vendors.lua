@@ -54,6 +54,19 @@ _.Zones =
 						i(17062),	-- Recipe: Mithril Head Trout
 					},
 				}),
+				n(3362, {	-- Ogunaro Wolfrunner <Kennel Master>
+					["races"] = HORDE_ONLY,
+					["coord"] = { 69.4, 12.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["groups"] = {
+						i(1132),	-- Horn of the Timber Wolf
+						i(5665),	-- Horn of the Dire Wolf
+						i(5668),	-- Horn of the Brown Wolf
+						i(18796),	-- Horn of the Swift Brown Wolf
+						i(18797),	-- Horn of the Swift Timber Wolf
+						i(18798),	-- Horn of the Swift Gray Wolf
+					},
+				}),
 				n(3413, {	-- Sovik <Engineering Supplies>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

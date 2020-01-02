@@ -39,6 +39,18 @@ _.Zones =
 						i(11308),	-- Sylvan Shortbow
 					},
 				}),
+				n(4730, {	-- Lelanai <Saber Handler>
+					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 38.3, 15.3, DARNASSUS},
+					["groups"] = {
+						i(8629),	-- Reins of the Striped Nightsaber
+						i(8631),	-- Reins of the Striped Frostsaber
+						i(8632),	-- Reins of the Spotted Frostsaber
+						i(18766),	-- Reins of the Swift Frostsaber
+						i(18767),	-- Reins of the Swift Mistsaber
+						i(18902),	-- Reins of the Swift Stormsaber
+					},
+				}),
 				n(4229, {	-- Mythrin'dir <General Trade Supplier>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 61.0, 17.7, DARNASSUS },
