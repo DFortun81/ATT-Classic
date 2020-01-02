@@ -105,6 +105,13 @@ _.Zones =
 						{ "i", 9252, 1 },	-- Lower Map Fragment
 					},
 					["lvl"] = 40,
+					["groups"] = {
+						i(9265, {	-- Cuergo's Hidden Treasure
+							i(9360),	-- Cuergo's Gold
+							i(9361),	-- Cuergo's Gold with Worm
+							i(9359),	-- Wirt's Third Leg
+						}),
+					},
 				}),
 				q(8606, {	-- Decoy!
 					["u"] = 3,	-- Added in later phase
