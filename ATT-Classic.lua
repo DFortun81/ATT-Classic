@@ -7275,42 +7275,68 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['back'] = 1,
 				['OnUpdate'] = function(data)
 					data.g = {};
-					if data.options then
-						for i,option in ipairs(data.options) do
-							table.insert(data.g, option);
-						end
-					end
+					table.insert(data.g, data.lootMethodReminder);
+					local groupMembers = {};
 					local count = GetNumGroupMembers();
 					if count > 0 then
 						for raidIndex = 1, 40, 1 do
 							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
 							if name then
-								table.insert(data.g, app.CreateSoftReserveUnit(name));
+								local unit = app.CreateSoftReserveUnit(name);
+								local guid = unit.guid;
+								if guid then groupMembers[guid] = true; end
+								table.insert(data.g, unit);
 							end
 						end
 					end
+					
+					-- Show non-group members.
+					local nonGroupMembers = {};
+					local softReserves = GetDataMember("SoftReserves");
+					for guid,reserve in pairs(softReserves) do
+						if not groupMembers[guid] then
+							groupMembers[guid] = true;
+							table.insert(nonGroupMembers, app.CreateSoftReserveUnit(guid));
+						end
+					end
+					if #nonGroupMembers > 0 then
+						data.nonGroupMembersHeader.g = nonGroupMembers;
+						table.sort(nonGroupMembers, function(a, b)
+							return a.text > b.text;
+						end);
+						table.insert(data.g, data.nonGroupMembersHeader);
+					end
 				end,
 				['g'] = {},
-				['options'] = {
-					app.CreateLootMethod("group", {
-						['title'] = LOOT_METHOD,
-						['description'] = "If you are seeing this option, you are the group leader and have not setup Master Looter yet.",
-						['visible'] = true,
-						['OnClick'] = function(row, button)
-							SetLootMethod("master", UnitName("player"));
-							self:Reset();
-							return true;
-						end,
-						['OnUpdate'] = function(data)
-							data.visible = IsInGroup() and UnitIsGroupLeader("player");
-							if data.visible then
-								data.id = GetLootMethod();
-								data.visible = data.id ~= "master";
-							end
-						end,
-						['back'] = 0.5,
-					}),
-				}
+				['lootMethodReminder'] = app.CreateLootMethod("group", {
+					['title'] = LOOT_METHOD,
+					['description'] = "If you are seeing this option, you are the group leader and have not setup Master Looter yet.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						SetLootMethod("master", UnitName("player"));
+						self:Reset();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsInGroup() and UnitIsGroupLeader("player");
+						if data.visible then
+							data.id = GetLootMethod();
+							data.visible = data.id ~= "master";
+						end
+					end,
+					['back'] = 0.5,
+				}),
+				['nonGroupMembersHeader'] = {
+					['text'] = "Non-Group Members",
+					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['description'] = "These are players that have Soft Reserved something in your raid, but are not currently in your raid.",
+					['visible'] = true,
+					['g'] = {},
+					['OnUpdate'] = function(data)
+						data.visible = #data.g > 0;
+					end,
+					['back'] = 0.5,
+				},
 			};
 			
 			self.Reset = function()
