@@ -88,51 +88,83 @@ _.Zones =
 					},
 				}),
 				q(200, {	-- Bookie Herod
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(339, {	-- Chapter I
-					["lvl"] = 30,
 					["qg"] = 716,	-- Barnil Stonepot
-					["g"] = {
-						i(2756),	-- Green Hills of Stranglethorn - Chapter I
-					},
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					
+					["lvl"] = 30,
+					["g"] = {
+						i(2756, {	-- Green Hills of Stranglethorn - Chapter I
+							["questID"] = 339,	-- Chapter I
+							["cost"] = {
+								{ "i", 2725, 1 },	-- Green Hills of Stranglethorn - Page 1
+								{ "i", 2728, 1 },	-- Green Hills of Stranglethorn - Page 4
+								{ "i", 2730, 1 },	-- Green Hills of Stranglethorn - Page 6
+								{ "i", 2732, 1 },	-- Green Hills of Stranglethorn - Page 8
+							},
+						}),
+					},
 				}),
 				q(340, {	-- Chapter II
-					["lvl"] = 30,
 					["qg"] = 716,	-- Barnil Stonepot
-					["g"] = {
-						i(2757),	-- Green Hills of Stranglethorn - Chapter II
-					},
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["lvl"] = 30,
+					["g"] = {
+						i(2757, {	-- Green Hills of Stranglethorn - Chapter II
+							["questID"] = 340,	-- Chapter II
+							["cost"] = {
+								{ "i", 2734, 1 },	-- Green Hills of Stranglethorn - Page 10
+								{ "i", 2735, 1 },	-- Green Hills of Stranglethorn - Page 11
+								{ "i", 2738, 1 },	-- Green Hills of Stranglethorn - Page 14
+								{ "i", 2740, 1 },	-- Green Hills of Stranglethorn - Page 16
+							},
+						}),
+					},
 				}),
 				q(341, {	-- Chapter III
-					["lvl"] = 30,
 					["qg"] = 716,	-- Barnil Stonepot
-					["g"] = {
-						i(2758),	-- Green Hills of Stranglethorn - Chapter III
-					},
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["lvl"] = 30,
+					["g"] = {
+						i(2758, {	-- Green Hills of Stranglethorn - Chapter III
+							["questID"] = 341,	-- Chapter III
+							["cost"] = {
+								{ "i", 2742, 1 },	-- Green Hills of Stranglethorn - Page 18
+								{ "i", 2744, 1 },	-- Green Hills of Stranglethorn - Page 20
+								{ "i", 2745, 1 },	-- Green Hills of Stranglethorn - Page 21
+								{ "i", 2748, 1 },	-- Green Hills of Stranglethorn - Page 24
+							},
+						}),
+					},
 				}),
 				q(342, {	-- Chapter IV
-					["lvl"] = 30,
 					["qg"] = 716,	-- Barnil Stonepot
-					["g"] = {
-						i(2759),	-- Green Hills of Stranglethorn - Chapter IV
-					},
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["lvl"] = 30,
+					["g"] = {
+						i(2759, {	-- Green Hills of Stranglethorn - Chapter IV
+							["questID"] = 342,	-- Chapter IV
+							["cost"] = {
+								{ "i", 2749, 1 },	-- Green Hills of Stranglethorn - Page 25
+								{ "i", 2750, 1 },	-- Green Hills of Stranglethorn - Page 26
+								{ "i", 2751, 1 },	-- Green Hills of Stranglethorn - Page 27
+							},
+						}),
+					},
 				}),
 				q(202, {	-- Colonel Kurzen
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 469,	-- Lieutenant Doren
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(4127),	-- Shrapnel Blaster
 					},
-					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				q(4782, { -- Components for the Enchanted Gold Bloodrobe (3/5)
 					["lvl"] = 31,
@@ -614,6 +646,12 @@ _.Zones =
 				q(338, {	-- The Green Hills of Stranglethorn
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 2756, 1 },	-- Green Hills of Stranglethorn - Chapter I
+						{ "i", 2757, 1 },	-- Green Hills of Stranglethorn - Chapter II
+						{ "i", 2758, 1 },	-- Green Hills of Stranglethorn - Chapter III
+						{ "i", 2759, 1 },	-- Green Hills of Stranglethorn - Chapter IV
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(17688),	-- Jungle Boots
