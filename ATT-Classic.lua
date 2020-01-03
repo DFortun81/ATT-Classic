@@ -7274,21 +7274,31 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = function(data)
-					data.g = {};
-					table.insert(data.g, data.lootMethodReminder);
+					local g = {};
 					local groupMembers = {};
 					local count = GetNumGroupMembers();
 					if count > 0 then
-						for raidIndex = 1, 40, 1 do
+						for raidIndex = 2, 40, 1 do
 							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
 							if name then
 								local unit = app.CreateSoftReserveUnit(name);
 								local guid = unit.guid;
 								if guid then groupMembers[guid] = true; end
-								table.insert(data.g, unit);
+								table.insert(g, unit);
 							end
 						end
 					end
+					
+					-- Sort Member List
+					table.sort(g, data.Sort);
+					
+					-- Insert Control Methods
+					local unit = app.CreateSoftReserveUnit("player");
+					local guid = unit.guid;
+					if guid then groupMembers[guid] = true; end
+					table.insert(g, 1, unit);
+					table.insert(g, 1, data.lootMethodReminder);
+					data.g = g;
 					
 					-- Show non-group members.
 					local nonGroupMembers = {};
@@ -7301,9 +7311,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end
 					if #nonGroupMembers > 0 then
 						data.nonGroupMembersHeader.g = nonGroupMembers;
-						table.sort(nonGroupMembers, function(a, b)
-							return a.text > b.text;
-						end);
+						table.sort(nonGroupMembers, data.Sort);
 						table.insert(data.g, data.nonGroupMembersHeader);
 					end
 				end,
@@ -7337,6 +7345,9 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end,
 					['back'] = 0.5,
 				},
+				['Sort'] = function(a, b)
+					return b.text > a.text;
+				end,
 			};
 			
 			self.Reset = function()
