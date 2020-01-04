@@ -194,19 +194,82 @@ _.Instances = {
 						}),
 						i(9308, {	-- Grime-Encrusted Object
 							{
-								["questID"] = 4602,	-- The Sparklematic 5200!
-								["altQuests"] = {
-									2951,	-- The Sparklematic 5200!
-									4601,	-- The Sparklematic 5200!
+								["questID"] = 2951,	-- The Sparklematic 5200!
+								["groups"] = {
+									i(9363),	-- Sparklematic-Wrapped Box
 								},
+							},
+							{
+								["questID"] = 2952,	-- The Sparklematic 5200!
+								["sourceQuest"] = 2951,	-- The Sparklematic 5200!
+								["groups"] = {
+									i(9363),	-- Sparklematic-Wrapped Box
+								},
+							},
+							{
+								["questID"] = 2953,	-- More Sparklematic Action
+								["sourceQuest"] = 2952,	-- The Sparklematic 5200!
+								["repeatable"] = true,
+								["groups"] = {
+									i(9363),	-- Sparklematic-Wrapped Box
+								},
+							},
+						}),
+					},
+				}),
+				o(15084, {	-- The Sparklematic 5200
+					["description"] = "Bring any Grime-Encrusted items that you find here to be cleaned.\n\nGrime-Encrusted Objects become Sparklematic-Wrapped Boxes.",
+					["model"] = "World\\Goober\\G_Gnomesparklematic.m2",
+					["groups"] = {
+						i(9363, {	-- Sparklematic-Wrapped Box
+							["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
+							["groups"] = {
+								i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+								i(10299),	-- Gnomeregan Amulet
+								i(10298),	-- Gnomeregan Band
+							},
+						}),
+						i(9308, {	-- Grime-Encrusted Object
+							{
+								["questID"] = 4601,	-- The Sparklematic 5200!
+							},
+							{
+								["questID"] = 4605,	-- The Sparklematic 5200!
+								["sourceQuest"] = 4601,	-- The Sparklematic 5200!
+								["groups"] = {
+									i(9363),	-- Sparklematic-Wrapped Box
+								},
+							},
+							{
+								["questID"] = 4603,	-- More Sparklematic Action
+								["sourceQuest"] = 4605,	-- The Sparklematic 5200!
+								["repeatable"] = true,
+								["groups"] = {
+									i(9363),	-- Sparklematic-Wrapped Box
+								},
+							},
+						}),
+					},
+				}),
+				o(15085, {	-- The Sparklematic 5200
+					["description"] = "Bring any Grime-Encrusted items that you find here to be cleaned.\n\nGrime-Encrusted Objects become Sparklematic-Wrapped Boxes.",
+					["model"] = "World\\Goober\\G_Gnomesparklematic.m2",
+					["groups"] = {
+						i(9363, {	-- Sparklematic-Wrapped Box
+							["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
+							["groups"] = {
+								i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
+								i(10299),	-- Gnomeregan Amulet
+								i(10298),	-- Gnomeregan Band
+							},
+						}),
+						i(9308, {	-- Grime-Encrusted Object
+							{
+								["questID"] = 4602,	-- The Sparklematic 5200!
 							},
 							{
 								["questID"] = 4606,	-- The Sparklematic 5200!
 								["sourceQuest"] = 4602,	-- The Sparklematic 5200!
-								["altQuests"] = {
-									2952,	-- The Sparklematic 5200!
-									4605,	-- The Sparklematic 5200!
-								},
 								["groups"] = {
 									i(9363),	-- Sparklematic-Wrapped Box
 								},
@@ -214,10 +277,6 @@ _.Instances = {
 							{
 								["questID"] = 4604,	-- More Sparklematic Action
 								["sourceQuest"] = 4606,	-- The Sparklematic 5200!
-								["altQuests"] = {
-									2953,	-- More Sparklematic Action
-									4603,	-- More Sparklematic Action
-								},
 								["repeatable"] = true,
 								["groups"] = {
 									i(9363),	-- Sparklematic-Wrapped Box

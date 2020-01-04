@@ -150,6 +150,7 @@ _.Instances = {
 					["coord"] = { 74.64, 11.74, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
 				q(1139, { -- The Lost Tablets of Will

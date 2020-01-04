@@ -496,6 +496,7 @@ _.Zones =
 				}),
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
+					["isBreadcrumb"] = true,
 					["coord"] = { 74.64, 11.74, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,

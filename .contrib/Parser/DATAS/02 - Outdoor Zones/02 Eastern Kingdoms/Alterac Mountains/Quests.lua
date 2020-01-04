@@ -82,6 +82,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				q(8249, {	-- Junkboxes Needed
+					["lvl"] = 50,
+					["classes"] = { 4 },	-- Rogue
+					["repeatable"] = true,
+				}),
 				q(514, {	-- Letter to Stormpike
 					["qg"] = 2277,	-- Loremaster Dibbs
 					["sourceQuest"] = 511,	-- Encrypted Letter
@@ -120,6 +125,7 @@ _.Zones =
 				q(6701, {	-- Syndicate Emblems
 					["lvl"] = 24,
 					["classes"] = { 4 },	-- Rogue
+					["repeatable"] = true,
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 				}),
 				q(551, {	-- The Ensorcelled Parchment
