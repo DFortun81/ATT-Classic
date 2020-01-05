@@ -2796,7 +2796,7 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID)
 	table.insert(reservesForItem, guid);
 end
 app.UpdateSoftReserve = function(app, guid, itemID)
-	if GetDataMember("SoftReserves")[guid] and false then
+	if GetDataMember("SoftReserves")[guid] and app.Settings:GetTooltipSetting("SoftReservesLocked") then
 		SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
 	else
 		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
@@ -7297,6 +7297,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					local guid = unit.guid;
 					if guid then groupMembers[guid] = true; end
 					table.insert(g, 1, unit);
+					table.insert(g, 1, data.lockSoftReserves);
 					table.insert(g, 1, data.lootMethodReminder);
 					data.g = g;
 					
@@ -7316,6 +7317,35 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end
 				end,
 				['g'] = {},
+				['lockSoftReserves'] = setmetatable({
+					['text'] = "Lock All Soft Reserves",
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_13",
+					['description'] = "Click to toggle locking the Soft Reserves. You must click this again to turn it back off.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						app.Settings:SetTooltipSetting("SoftReservesLocked", not app.Settings:GetTooltipSetting("SoftReservesLocked"));
+						wipe(searchCache);
+						self:Update();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
+					end,
+				}, {
+					__index = function(t, key)
+						if key == "title" then
+							if t.saved then return "Locked"; end
+						elseif key == "saved" then
+							if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+								return 1;
+							end
+						elseif key == "trackable" then
+							return true;
+						else
+							return table[key];
+						end
+					end
+				}),
 				['lootMethodReminder'] = app.CreateLootMethod("group", {
 					['title'] = LOOT_METHOD,
 					['description'] = "If you are seeing this option, you are the group leader and have not setup Master Looter yet.",
