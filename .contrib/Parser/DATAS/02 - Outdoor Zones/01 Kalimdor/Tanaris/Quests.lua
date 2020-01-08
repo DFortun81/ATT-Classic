@@ -101,6 +101,9 @@ _.Zones =
 					["provider"] = { "i", 9254 }, -- Cuergo's Treasure Map
 					["cost"] = {
 						{ "i", 9275, 1 },	-- Cuergo's Key
+						{ "i", 9251, 1 },	-- Upper Map Fragment
+						{ "i", 9253, 1 },	-- Middle Map Fragment
+						{ "i", 9252, 1 },	-- Lower Map Fragment
 					},
 					["lvl"] = 40,
 					["groups"] = {
