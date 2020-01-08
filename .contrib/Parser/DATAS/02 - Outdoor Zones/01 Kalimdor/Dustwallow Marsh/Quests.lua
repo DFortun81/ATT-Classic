@@ -166,6 +166,7 @@ _.Zones =
 				q(1260, {	-- Morgan Stern
 					["lvl"] = 33,
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["qg"] = 1141,	-- Angus Stern
 				}),
 				q(1204, {	-- Mudrock Soup and Bugs

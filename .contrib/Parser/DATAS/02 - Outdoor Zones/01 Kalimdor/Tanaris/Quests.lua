@@ -98,11 +98,9 @@ _.Zones =
 				}),
 				q(2882, {	-- Cuergo's Gold
 					["coord"] = { 55.4, 92.2, TANARIS },
+					["provider"] = { "i", 9254 }, -- Cuergo's Treasure Map
 					["cost"] = {
-						{ "i", 9254, 1 },	-- Cuergo's Treasure Map
-						{ "i", 9251, 1 },	-- Upper Map Fragment
-						{ "i", 9253, 1 },	-- Middle Map Fragment
-						{ "i", 9252, 1 },	-- Lower Map Fragment
+						{ "i", 9275, 1 },	-- Cuergo's Key
 					},
 					["lvl"] = 40,
 					["groups"] = {

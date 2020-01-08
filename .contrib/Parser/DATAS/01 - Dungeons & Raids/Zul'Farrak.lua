@@ -66,6 +66,7 @@ _.Instances = {
 						5497, -- Jennea Cannon
 						5885, -- Deino
 					},
+					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
 				q(3527, { -- The Prophecy of Mosh'aru
