@@ -57,6 +57,13 @@ _.Instances = {
 					},
 				},
 				{
+					["questID"] = 7761,	-- Blackhand's Command
+					["qg"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
+					["provider"] = { "i", 18987 },	-- Blackhand's Command
+					["coord"] = { 34.9, 27.9, BURNING_STEPPES },
+					["maps"] = { BLACKROCK_MOUNTAIN },
+				},
+				{
 					["questID"] = 6602,	-- Blood of the Black Dragon Champion
 					["sourceQuest"] = 6601,	-- Ascension...
 					["qg"] = 10182,	-- Rexxar <Champion of the Horde>

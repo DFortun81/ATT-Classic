@@ -12,17 +12,6 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				{
-					["questID"] = 7761,	-- Blackhand's Command
-					["qg"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
-					["coord"] = { 34.9, 27.9, BURNING_STEPPES },
-					["u"] = 3,	-- Not available yet.
-					["maps"] = {
-						BLACKROCK_MOUNTAIN,
-						BURNING_STEPPES,
-						BLACKROCK_SPIRE,
-					},
-				},
-				{
 					["allianceQuestID"] = 7781,	-- The Lord of Blackrock [Alliance]
 					["hordeQuestID"] = 7783,	-- The Lord of Blackrock [Horde]
 					["description"] = "This quest is started by looting the Head of Nefarian.",
