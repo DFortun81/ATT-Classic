@@ -310,6 +310,13 @@ _.Zones =
 						i(22000),	-- Legplates of Heroism
 					},
 				}),
+				q(8233, {	-- A Simple Request
+					["qg"] = 3328,	-- Ormok <Rogue Trainer>
+					["coord"] = { 44.0, 54.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = {4},	-- Rogue
+					["lvl"] = 50,
+				}),
 				q(936, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,

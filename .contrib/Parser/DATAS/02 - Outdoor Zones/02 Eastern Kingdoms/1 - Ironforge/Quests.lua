@@ -407,6 +407,15 @@ _.Zones =
 						i(18042),	-- Thorium Headed Arrow
 					},
 				}),
+				q(8233, {	-- A Simple Request
+					["qgs"] = {
+						5165,	-- Hulfdan Blackbeard <Rogue Trainer>
+						5167,	-- Fenthwick <Rogue Trainer>
+					},
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = {4},	-- Rogue
+					["lvl"] = 50,
+				}),
 				q(3790, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,

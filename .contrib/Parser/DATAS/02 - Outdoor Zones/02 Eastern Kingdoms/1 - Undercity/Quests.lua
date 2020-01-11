@@ -59,6 +59,13 @@ _.Zones =
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 50,
 				}),
+				q(8233, {	-- A Simple Request
+					["qg"] = 4583,	-- Miles Dexter <Rogue Trainer>
+					["coord"] = { 85.0, 75.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = {4},	-- Rogue
+					["lvl"] = 50,
+				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,

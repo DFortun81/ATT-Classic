@@ -88,6 +88,15 @@ _.Zones =
 					},
 					["repeatable"] = true,
 				}),
+				q(8233, {	-- A Simple Request
+					["qgs"] = {
+						13283,	-- Lord Tony Romano <Rogue Trainer>
+						918,	-- Osborne the Night Man <Rogue Trainer>
+					},
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = {4},	-- Rogue
+					["lvl"] = 50,
+				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
@@ -95,7 +104,7 @@ _.Zones =
 				}),
 				q(8417, {	-- A Troubled Spirit
 					["qg"] = 5479,	-- Wu Shen <Warrior Trainer>
-					["coord"] = { 78.8, 45.6, IRONFORGE },
+					["coord"] = { 78.8, 45.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 50,

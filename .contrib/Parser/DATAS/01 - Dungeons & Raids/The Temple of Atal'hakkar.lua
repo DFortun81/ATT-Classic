@@ -74,16 +74,6 @@ _.Instances = {
 						i(20620),	-- Holy Mightstone
 					},
 				}),
-				q(8236, {	-- The Azure Key
-					["provider"] = { "n", 8379 },	-- Archmage Xylem
-					["classes"] = { 4 },	-- Rogue
-					["u"] = 3,
-					["groups"] = {
-						i(19982),	-- Duskbat Drape
-						i(19984),	-- Ebon Mask
-						i(20255),	-- Whisperwalk Boots
-					},
-				}),
 				q(8422, {	-- Trolls of a Feather
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { 9 },	-- Warlock
@@ -205,6 +195,21 @@ _.Instances = {
 							["questID"] = 1429,	-- The Atal'ai Exile
 							["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 						},
+					},
+				}),
+				q(8236, {	-- The Azure Key
+					["qg"] = 8379,	-- Archmage Xylem
+					["coord"] = { 29.6, 40.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["classes"] = { 4 },	-- Rogue
+					["sourceQuest"] = 8235, -- Encoded Fragments
+					["cost"] = {
+						{ "i", 20022, 1 },	-- Azure Key
+					},
+					["groups"] = {
+						i(19982),	-- Duskbat Drape
+						i(19984),	-- Ebon Mask
+						i(20255),	-- Whisperwalk Boots
 					},
 				}),
 				q(3373, {	-- The Essence of Eranikus

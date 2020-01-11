@@ -93,6 +93,16 @@ _.Zones =
 					["qg"] = 8587, -- Jediga
 					["sourceQuest"] = 3517, -- Stealing Knowledge
 				}),
+				q(8235, {	-- Encoded Fragments
+					["qg"] = 8379,	-- Archmage Xylem
+					["coord"] = { 29.6, 40.6, AZSHARA },
+					["classes"] = {4},	-- Rogue
+					["sourceQuest"] = 8234, -- Sealed Azure Bag
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20023, 10 },	-- Encoded Fragment
+					},
+				}),
 				q(6821, {	-- Eye of the Emberseer
 					["lvl"] = 55,
 					["qg"] = 13278,	-- Duke Hydraxis
