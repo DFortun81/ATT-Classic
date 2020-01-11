@@ -1482,9 +1482,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if reservesForItem then
 					local left = "Soft Reserves";
 					for i,guid in ipairs(reservesForItem) do
-						local name = app.CreateSoftReserveUnit(guid).tooltipText;
-						tinsert(info, { left = left, right = name });
-						left = nil;
+						local unit = app.CreateSoftReserveUnit(guid);
+						if unit.guid and IsGUIDInGroup(unit.guid) then
+							tinsert(info, { left = left, right = unit.tooltipText });
+							left = nil;
+						end
 					end
 				end
 				
@@ -2692,8 +2694,6 @@ app.BaseSoftReserveUnit = {
 			return UnitName(t.unit);
 		elseif key == "guid" then
 			return UnitGUID(t.unit);
-		elseif key == "description" then
-			return LEVEL .. " " .. (UnitLevel(t.unit) or "??") .. " " .. (UnitRace(t.unit) or "??") .. " " .. (UnitClass(t.unit) or "??");
 		elseif key == "icon" then
 			if t.classID then return classIcons[t.classID]; end
 		elseif key == "visible" then
@@ -2811,6 +2811,84 @@ app.UpdateSoftReserve = function(app, guid, itemID)
 			SendGUIDWhisper("SR: Cleared.", guid);
 		end
 	end
+end
+app.BaseQuestUnit = {
+	__index = function(t, key)
+		if key == "key" then
+			return "unit";
+		elseif key == "unitText" then
+			local name, className, classFile, classID = UnitName(t.unit);
+			if name then
+				className, classFile, classID = UnitClass(t.unit);
+			elseif #{strsplit("-", t.unit)} > 1 then
+				-- It's a GUID.
+				rawset(t, "guid", t.unit);
+				className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
+				classID = app.GetClassIDFromClassFile(classFile);
+			end
+			if name then
+				rawset(t, "name", name);
+				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+				return name;
+			end
+			return t.unit;
+		elseif key == "text" then
+			return t.unitText;
+		elseif key == "name" then
+			local name = UnitName(t.unit);
+			if name then
+				rawset(t, "name", name);
+				return name;
+			elseif #{strsplit("-", t.unit)} > 1 then
+				-- It's a GUID.
+				rawset(t, "guid", t.unit);
+				local className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
+				if name then
+					rawset(t, "name", name);
+					return name;
+				end
+			end
+		elseif key == "guid" then
+			return UnitGUID(t.unit);
+		elseif key == "icon" then
+			if t.classID then return classIcons[t.classID]; end
+		elseif key == "visible" then
+			return true;
+		elseif key == "collectible" then
+			return true;
+		elseif key == "trackable" then
+			return true;
+		elseif key == "collected" then
+			return t.saved;
+		elseif key == "saved" then
+			local questID = t.parent.parent.questID;
+			if questID then
+				local guid = t.guid;
+				if guid and questID then
+					if guid == app.GUID then
+						return IsQuestFlaggedCompleted(questID);
+					else
+						local questsForGUID = GetDataMember("GroupQuestsByGUID")[guid] or GetDataMember("CollectedQuestsPerCharacter")[guid];
+						return questsForGUID and questsForGUID[questID];
+					end
+				end
+			end
+		elseif key == "tooltipText" then
+			local text = t.unitText;
+			local icon = t.icon;
+			if icon then text = "|T" .. icon .. ":0|t " .. text; end
+			return text;
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateQuestUnit = function(unit, t)
+	return setmetatable(constructor(unit, t, "unit"), app.BaseQuestUnit);
 end
 end)();
 
@@ -5999,6 +6077,152 @@ end
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
 app:GetWindow("Unsorted");
+app:GetWindow("Attuned", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			
+			-- Soft Reserves
+			local attunements = {
+				['text'] = "Attunements",
+				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
+				["description"] = "This list shows you all of the players you have encountered that are Attuned to raids.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['OnUpdate'] = function(data)
+					data.progress = 0;
+					data.total = 0;
+					data.indent = 0;
+					data.back = 1;
+					local nameToGUID = {};
+					local groupMembers = data.groupMembersHeader.g;
+					local guildMembers = data.guildMembersHeader.g;
+					wipe(groupMembers);
+					wipe(guildMembers);
+					local count = GetNumGroupMembers();
+					if count > 0 then
+						for raidIndex = 2, 40, 1 do
+							local name = GetRaidRosterInfo(raidIndex);
+							if name then
+								local unit = app.CreateQuestUnit(name);
+								local guid = unit.guid;
+								if guid then nameToGUID[name] = guid; end
+								table.insert(groupMembers, unit);
+							end
+						end
+					end
+					
+					local count = GetNumGuildMembers();
+					if count > 0 then
+						for guildIndex = 1, count, 1 do
+							local guid = select(17, GetGuildRosterInfo(guildIndex));
+							if guid then
+								local unit = app.CreateQuestUnit(guid);
+								local name = unit.name;
+								if name then nameToGUID[name] = guid; end
+								table.insert(guildMembers, unit);
+							end
+						end
+					end
+					
+					-- Process Addon Messages
+					local addonMessages = GetDataMember("AddonMessageProcessor");
+					if addonMessages and #addonMessages > 0 then
+						local unprocessedMessages = {};
+						for i,message in ipairs(addonMessages) do
+							local guid = nameToGUID[message[1]];
+							if guid then
+								-- Attempt to process a quest message.
+								if message[2] == 'q' then
+									GetDataSubMember("GroupQuestsByGUID", guid, {})[message[3]] = 1;
+								else
+									table.insert(unprocessedMessages, message);
+								end
+							else
+								table.insert(unprocessedMessages, message);
+							end
+						end
+						SetDataMember("AddonMessageProcessor", unprocessedMessages);
+					end
+					
+					-- Sort Member List
+					table.sort(guildMembers, data.Sort);
+					table.sort(groupMembers, data.Sort);
+					table.insert(groupMembers, app.CreateQuestUnit("player"));
+					
+					local g = {};
+					table.insert(g, data.MoltenCore);
+					wipe(data.MoltenCore.g);
+					table.insert(data.MoltenCore.g, data.groupMembersHeader);
+					table.insert(data.MoltenCore.g, data.guildMembersHeader);
+					data.g = g;
+				end,
+				['g'] = {},
+				['MoltenCore'] = app.CreateMap(232, {	-- Molten Core
+					['icon'] = "Interface\\Icons\\Spell_Fire_Immolation",
+					['description'] = "These are players attuned to Molten Core.\n\nPeople can whisper you '!mc' to mark themselves attuned.",
+					['questID'] = 7848,	-- Attunement to the Core
+					['total'] = 0,
+					['progress'] = 0,
+					['visible'] = true,
+					["isRaid"] = true,
+					['g'] = {},
+					['back'] = 0.5,
+				}),
+				['guildMembersHeader'] = {
+					['text'] = "Guild Members",
+					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['description'] = "These players are in your guild.",
+					['visible'] = true,
+					['g'] = {},
+					['OnUpdate'] = function(data)
+						data.visible = #data.g > 0;
+					end,
+				},
+				['groupMembersHeader'] = {
+					['text'] = "Group Members",
+					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['description'] = "These players are currently in your group.",
+					['visible'] = true,
+					['g'] = {},
+					['OnUpdate'] = function(data)
+						data.visible = #data.g > 0;
+					end,
+				},
+				['Sort'] = function(a, b)
+					return b.text > a.text;
+				end,
+			};
+			
+			self.Reset = function()
+				self.data = attunements;
+			end
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:RegisterEvent("CHAT_MSG_SYSTEM");
+			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+			self:RegisterEvent("GUILD_ROSTER_UPDATE");
+			self:RegisterEvent("GROUP_ROSTER_UPDATE");
+			self:Reset();
+		end
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter, groupFilter = app.VisibilityFilter, app.GroupFilter;
+		app.GroupFilter = app.ObjectVisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		BuildGroups(self.data, self.data.g);
+		for i,g in ipairs(self.data.g) do
+			if g.OnUpdate then g.OnUpdate(g, self); end
+		end
+		UpdateGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+		app.GroupFilter = groupFilter;
+		app.VisibilityFilter = visibilityFilter;
+	end
+end);
 app:GetWindow("CosmicInfuser", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
@@ -7990,6 +8214,8 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("CollectedQuests", {});
 	GetDataMember("CollectedSpells", {});
 	GetDataMember("WaypointFilters", {});
+	GetDataMember("GroupQuestsByGUID", {});
+	GetDataMember("AddonMessageProcessor", {});
 	
 	-- Check the format of the Soft Reserve Cache
 	local reserves = GetDataMember("SoftReserves", {});
@@ -8115,6 +8341,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
+		"AddonMessageProcessor",
 		"Characters",
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
@@ -8126,6 +8353,7 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedSpellsPerCharacter",
 		"Deaths",
 		"DeathsPerCharacter",
+		"GroupQuestsByGUID",
 		"lockouts",
 		"Position",
 		"ProfessionsPerCharacter",
@@ -8634,9 +8862,9 @@ app.events.ADDON_LOADED = function(addonName)
 		end);
 	end
 end
-app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
 	if prefix == "ATTC" then
-		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID)
+		-- print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
 		local args = { strsplit("\t", text) };
 		local cmd = args[1];
 		if cmd then
@@ -8658,16 +8886,18 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 				if response then SendResponseMessage("!\t" .. response, sender); end
 			elseif cmd == "!" then	-- Query Response
 				if a == "ATTC" then
-					print(sender .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
+					print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 				else
 					if a == "q" then
 						local response = " ";
+						local processor = GetDataMember("AddonMessageProcessor");
 						for i=3,#args,2 do
 							local b = tonumber(args[i]);
 							local c = tonumber(args[i + 1]);
+							if c == 1 then table.insert(processor, { target, "q", b }); end
 							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
-						print(response .. sender);
+						print(response .. target);
 					end
 				end
 			elseif cmd == "to" then	-- To Command
