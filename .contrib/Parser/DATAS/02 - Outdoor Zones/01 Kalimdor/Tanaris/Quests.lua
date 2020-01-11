@@ -99,6 +99,7 @@ _.Zones =
 				q(2882, {	-- Cuergo's Gold
 					["coord"] = { 55.4, 92.2, TANARIS },
 					["provider"] = { "i", 9254 }, -- Cuergo's Treasure Map
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 9275, 1 },	-- Cuergo's Key
 						{ "i", 9251, 1 },	-- Upper Map Fragment

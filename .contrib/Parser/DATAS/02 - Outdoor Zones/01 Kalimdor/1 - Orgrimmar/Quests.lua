@@ -319,6 +319,13 @@ _.Zones =
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 3354,	-- Sorek <Warrior Trainer>
+					["coord"] = { 80.2, 32.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				q(8998, {	-- Back to the Beginning
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
@@ -665,6 +672,16 @@ _.Zones =
 					["g"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
+				}),
+				q(8151, {	-- The Hunter's Charm
+					["qgs"] = {
+						3352,	-- Ormak Grimshot <Hunter Trainer>
+						3406,	-- Xor'juul <Hunter Trainer>
+					},
+					["coord"] = { 66.2, 18.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
 				}),
 				q(7493, {	-- The Journey Has Just Begun
 					["lvl"] = 60,

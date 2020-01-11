@@ -61,6 +61,16 @@ _.Zones =
 					["qg"] = 7783,	-- Loramus Thalipedes
 					["sourceQuest"] = 3141,	-- Loramus
 				}),
+				q(8153, {	-- Courser Antlers
+					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8151,	-- The Hunter's Charm
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20017, 2 },	-- Perfect Courser Antler
+					},
+				}),
 				q(3542, {	-- Delivery to Andron Gant
 					["lvl"] = 45,
 					["qg"] = 8587, -- Jediga
@@ -210,6 +220,16 @@ _.Zones =
 					["lvl"] = 60,
 					["classes"] = {8},	-- Mage
 					["qg"] = 8379,		-- Archmage Xylem
+				}),
+				q(8231, {	-- Wavethrashing
+					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8153,	-- Courser Antlers
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20087, 2 },	-- Wavethrasher Scales
+					},
 				}),
 			}),
 		}),

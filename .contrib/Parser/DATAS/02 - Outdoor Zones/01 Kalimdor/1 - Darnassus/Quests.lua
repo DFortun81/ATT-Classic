@@ -56,6 +56,13 @@ _.Zones =
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 7315,	-- Darnath Bladesinger <Warrior Trainer>
+					["coord"] = { 58.6, 35.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				{
 					["questID"] = 4510,	-- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
@@ -220,6 +227,13 @@ _.Zones =
 						6722,	-- The Hunter's Path
 					},
 					["lvl"] = 10,
+				}),
+				q(8151, {	-- The Hunter's Charm
+					["qg"] = 4205,	-- Dorion <Hunter Trainer>
+					["coord"] = { 42.2, 7.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
 				}),
 				q(6073, {	-- The Hunter's Path
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>

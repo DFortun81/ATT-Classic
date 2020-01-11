@@ -12,6 +12,12 @@ _.Zones =
 						i(5423),  -- Boahn's Fang
 					},
 				}),
+				n(3470, { -- Rathorian
+					["groups"] = {
+						i(5111),  -- Rathorian's Cape
+						i(5112),  -- Ritual Blade
+					},
+				}),
 			}),
 		}),
 	}),

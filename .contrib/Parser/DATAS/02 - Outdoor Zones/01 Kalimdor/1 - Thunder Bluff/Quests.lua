@@ -51,6 +51,13 @@ _.Zones =
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 3041,	-- Torm Ragetotem <Warrior Trainer>
+					["coord"] = { 57.6, 87.2, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				q(1066, {	-- Blood of Innocents
 					["lvl"] = 13,
 					["races"] = HORDE_ONLY,
@@ -184,6 +191,13 @@ _.Zones =
 					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
+				}),
+				q(8151, {	-- The Hunter's Charm
+					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
+					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
 				}),
 				q(1000, {	-- The New Frontier
 					["lvl"] = 54,

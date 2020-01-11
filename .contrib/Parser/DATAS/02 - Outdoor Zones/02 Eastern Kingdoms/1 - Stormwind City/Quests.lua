@@ -93,6 +93,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6740,	-- Innkeeper Allison
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 5479,	-- Wu Shen <Warrior Trainer>
+					["coord"] = { 78.8, 45.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				q(1639, { -- Bartleby the Drunk
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -145,6 +152,13 @@ _.Zones =
 						{ "i", 6844, 20 }, -- Burning Blood
 						{ "i", 6845, 1 }, -- Burning Rock
 					},
+				}),
+				q(8415, {	-- Chillwind Camp
+					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["lvl"] = 50,
 				}),
 				q(6261, {	-- Dungar Longdrink
 					["lvl"] = 10,
@@ -438,6 +452,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 434, -- The Attack!
 					["qg"] = 482, -- Elling Trias <Master of Cheese>
+				}),
+				q(8151, {	-- The Hunter's Charm
+					["qg"] = 5516,	-- Ulfir Ironbeard <Hunter Trainer>
+					["coord"] = { 62.0, 15.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
 				}),
 				q(6076, {	-- The Hunter's Path
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>

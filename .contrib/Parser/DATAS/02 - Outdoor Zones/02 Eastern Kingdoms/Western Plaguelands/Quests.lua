@@ -190,6 +190,17 @@ _.Zones =
 					["lvl"] = 50,
 					["repeatable"] = true,
 				}),
+				q(8414, {	-- Dispelling Evil
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 8415,	-- Chillwind Camp
+					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 12840, 20 },	-- Minion's Scourgestone
+					},
+				}),
 				q(5218, {	-- Felstone Field Cauldron
 					["lvl"] = 50,
 					["repeatable"] = true,
@@ -215,6 +226,14 @@ _.Zones =
 					},
 				}),
 				q(5050, {	-- Good Luck Charm
+					["lvl"] = 50,
+				}),
+				q(8416, {	-- Inert Scourgestones
+					["qg"] = 1854,	-- High Priest Thel'danis
+					["sourceQuest"] = 8414,	-- Dispelling Evil
+					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 50,
 				}),
 				q(5407, {	-- Invader's Scourgestones

@@ -52,6 +52,13 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 4593,	-- Christoph Walker <Warrior Trainer>
+					["coord"] = { 47.8, 14.8, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,

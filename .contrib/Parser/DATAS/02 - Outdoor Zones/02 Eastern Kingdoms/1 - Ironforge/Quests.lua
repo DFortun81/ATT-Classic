@@ -413,6 +413,13 @@ _.Zones =
 					["qg"] = 5111,	-- Innkeeper Firebrew
 					["coord"] = { 18.1, 51.5, IRONFORGE },
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qg"] = 5113,	-- Kelv Sternhammer <Warrior Trainer>
+					["coord"] = { 70.6, 90.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -426,6 +433,13 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(8415, {	-- Chillwind Camp
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.6, 6.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 2 },	-- Paladin
+					["lvl"] = 50,
 				}),
 				q(3371, {	-- Dwarven Justice
 					["lvl"] = 40,
@@ -835,6 +849,13 @@ _.Zones =
 					["groups"] = {
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
+				}),
+				q(8151, {	-- The Hunter's Charm
+					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
+					["coord"] = { 70.6, 83.8, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 3 },	-- Hunter Only
+					["lvl"] = 50,
 				}),
 				q(6074, {	-- The Hunter's Path
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>

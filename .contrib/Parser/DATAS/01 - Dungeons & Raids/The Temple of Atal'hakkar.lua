@@ -48,15 +48,41 @@ _.Instances = {
 						i(20035),	-- Glacial Spike
 					},
 				}),
+				q(8425, {	-- Voodoo Feathers
+					["sourceQuest"] = 8424,	-- War on the Shadowsworn
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20606, 2 },	-- Amber Voodoo Feather
+						{ "i", 20607, 1 },	-- Blue Voodoo Feather
+						{ "i", 20608, 1 },	-- Green Voodoo Feather
+					},
+					["groups"] = {
+						i(20130),	-- Diamond Flask
+						i(20517),	-- Razorsteel Shoulders
+						i(20521),	-- Fury Visor
+					},
+				}),
 				q(8418, {	-- Forging the Mightstone
-					["provider"] = { "n", 10838 },	-- Commander Ashlam Valorfist
+					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 8416,	-- Inert Scourgestones
+					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
-					["u"] = 3,
+					["cost"] = {
+						{ "i", 20606, 2 },	-- Amber Voodoo Feather
+						{ "i", 20607, 2 },	-- Blue Voodoo Feather
+						{ "i", 20608, 2 },	-- Green Voodoo Feather
+					},
 					["groups"] = {
-						i(20505),	-- Chivalrous Signet
 						i(20504),	-- Lightforged Blade
+						i(20505),	-- Chivalrous Signet
 						i(20512),	-- Sanctified Orb
+						i(20620),	-- Holy Mightstone
 					},
 				}),
 				q(8236, {	-- The Azure Key
@@ -69,16 +95,6 @@ _.Instances = {
 						i(20255),	-- Whisperwalk Boots
 					},
 				}),
-				q(8232, {	-- The Green Drake
-					["provider"] = { "n", 8405 },	-- Ogtinc
-					["classes"] = { 3 },	-- Hunter
-					["u"] = 3,
-					["groups"] = {
-						i(19991),	-- Devilsaur Eye
-						i(19992),	-- Devilsaur Tooth
-						i(20083),	-- Hunting Spear
-					},
-				}),
 				q(8422, {	-- Trolls of a Feather
 					["provider"] = { "n", 14470 },	-- Impsy
 					["classes"] = { 9 },	-- Warlock
@@ -87,16 +103,6 @@ _.Instances = {
 						i(20534),	-- Abyss Shard
 						i(20530),	-- Robes of Servitude
 						i(20536),	-- Soul Harvester
-					},
-				}),
-				q(8425, {	-- Voodoo Feathers
-					["provider"] = { "n", 7572 },	-- Fallen Hero of the Horde
-					["classes"] = { 1 },	-- Warrior
-					["u"] = 3,
-					["groups"] = {
-						i(20130),	-- Diamond Flask
-						i(20521),	-- Fury Visor
-						i(20517),	-- Razorsteel Shoulders
 					},
 				}),
 				q(4143, {	-- Haze of Evil
@@ -255,6 +261,21 @@ _.Instances = {
 						i(10751),	-- Gemburst Circlet
 					},
 				}),
+				q(8232, {	-- The Green Drake
+					["qg"] = 8405,	-- Ogtinc
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["sourceQuest"] = 8231,	-- Wavethrashing
+					["classes"] = { 3 },	-- Hunter
+					["cost"] = {
+						{ "i", 20019, 1 },	-- Tooth of Morphaz
+					},
+					["groups"] = {
+						i(19991),	-- Devilsaur Eye
+						i(19992),	-- Devilsaur Tooth
+						i(20083),	-- Hunting Spear
+					},
+				}),
 				q(3444, {	-- The Stone Circle
 					["sourceQuests"] = {
 						3445,	-- The Sunken Temple
@@ -297,6 +318,24 @@ _.Instances = {
 					["lvl"] = 38,
 					["groups"] = {
 						i(1490),	-- Guardian Talisman
+					},
+				}),
+				q(8425, {	-- Voodoo Feathers
+					["sourceQuest"] = 8424,	-- War on the Shadowsworn
+					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["classes"] = { 1 },	-- Warrior
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20606, 2 },	-- Amber Voodoo Feather
+						{ "i", 20607, 2 },	-- Blue Voodoo Feather
+						{ "i", 20608, 2 },	-- Green Voodoo Feather
+					},
+					["groups"] = {
+						i(20130),	-- Diamond Flask
+						i(20517),	-- Razorsteel Shoulders
+						i(20521),	-- Fury Visor
 					},
 				}),
 				q(4146, {	-- Zapper Fuel
