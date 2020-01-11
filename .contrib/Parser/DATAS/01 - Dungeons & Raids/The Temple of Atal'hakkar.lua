@@ -29,9 +29,16 @@ _.Instances = {
 					},
 				}),
 				q(8413, {	-- Da Voodoo
-					["provider"] = { "n", 6176 },	-- Bath'rah the Windwatcher
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["maps"] = { ALTERAC_MOUNTAINS },
 					["classes"] = { 7 },	-- Shaman
-					["u"] = 3,
+					["sourceQuest"] = 8412,	-- Spirit Totem
+					["cost"] = {
+						{ "i", 20606, 2 },	-- Amber Voodoo Feather
+						{ "i", 20607, 2 },	-- Blue Voodoo Feather
+						{ "i", 20608, 2 },	-- Green Voodoo Feather
+					},
 					["groups"] = {
 						i(20369),	-- Azurite Fists
 						i(20503),	-- Enamored Water Spirit
@@ -46,24 +53,6 @@ _.Instances = {
 						i(20037),	-- Arcane Crystal Pendant
 						i(20036),	-- Fire Ruby
 						i(20035),	-- Glacial Spike
-					},
-				}),
-				q(8425, {	-- Voodoo Feathers
-					["sourceQuest"] = 8424,	-- War on the Shadowsworn
-					["qg"] = 7572,	-- Fallen Hero of the Horde
-					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["maps"] = { SWAMP_OF_SORROWS },
-					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 50,
-					["cost"] = {
-						{ "i", 20606, 2 },	-- Amber Voodoo Feather
-						{ "i", 20607, 1 },	-- Blue Voodoo Feather
-						{ "i", 20608, 1 },	-- Green Voodoo Feather
-					},
-					["groups"] = {
-						i(20130),	-- Diamond Flask
-						i(20517),	-- Razorsteel Shoulders
-						i(20521),	-- Fury Visor
 					},
 				}),
 				q(8418, {	-- Forging the Mightstone

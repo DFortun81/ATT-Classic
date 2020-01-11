@@ -103,6 +103,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
 				}),
+				q(8412, {	-- Spirit Totem
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["races"] = HORDE_ONLY,
+					["classes"] = {7},	-- Shaman
+					["sourceQuest"] = 8410,	-- Elemental Mastery
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20610, 8 },	-- Bloodshot Spider Eye
+						{ "i", 20611, 8 },	-- Thick Black Claw
+					},
+				}),
 				q(554, {	-- Stormpike's Deciphering
 					["qg"] = 2277,	-- Loremaster Dibbs
 					["sourceQuest"] = 551,	-- The Ensorcelled Parchment

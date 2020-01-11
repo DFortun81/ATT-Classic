@@ -402,6 +402,19 @@ _.Zones =
 					["qg"] = 5875, -- Dan'rul Bloodeye
 					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
 				}),
+				q(8410, {	-- Elemental Mastery
+					["qg"] = 5892,	-- Searn Firewarder
+					["coord"] = { 38.0, 37.8, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = {7},	-- Shaman
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 7067, 1 },	-- Elemental Earth
+						{ "i", 7068, 1 },	-- Elemental Fire
+						{ "i", 7069, 1 },	-- Elemental Air
+						{ "i", 7070, 1 },	-- Elemental Water
+					},
+				}),
 				q(7491, {	-- For All To See
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
