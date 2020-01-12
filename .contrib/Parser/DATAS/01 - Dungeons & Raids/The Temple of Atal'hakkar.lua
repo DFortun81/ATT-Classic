@@ -91,16 +91,6 @@ _.Instances = {
 						i(20620),	-- Holy Mightstone
 					},
 				}),
-				q(8422, {	-- Trolls of a Feather
-					["provider"] = { "n", 14470 },	-- Impsy
-					["classes"] = { 9 },	-- Warlock
-					["u"] = 3,
-					["groups"] = {
-						i(20534),	-- Abyss Shard
-						i(20530),	-- Robes of Servitude
-						i(20536),	-- Soul Harvester
-					},
-				}),
 				q(4143, {	-- Haze of Evil
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["qg"] = 7775,	-- Gregan Brewspewer
@@ -329,6 +319,24 @@ _.Instances = {
 					["lvl"] = 38,
 					["groups"] = {
 						i(1490),	-- Guardian Talisman
+					},
+				}),
+				q(8422, {	-- Trolls of a Feather
+					["qg"] = 14470,	-- Impsy <Niby's Minion>
+					["coord"] = { 41.6, 45.0, FELWOOD },
+					["maps"] = { FELWOOD },
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 50,
+					["sourceQuest"] = 8421,	-- The Wrong Stuff
+					["cost"] = {
+						{ "i", 20606, 2 },	-- Amber Voodoo Feather
+						{ "i", 20607, 2 },	-- Blue Voodoo Feather
+						{ "i", 20608, 2 },	-- Green Voodoo Feather
+					},
+					["groups"] = {
+						i(20534),	-- Abyss Shard
+						i(20530),	-- Robes of Servitude
+						i(20536),	-- Soul Harvester
 					},
 				}),
 				q(8425, {	-- Voodoo Feathers

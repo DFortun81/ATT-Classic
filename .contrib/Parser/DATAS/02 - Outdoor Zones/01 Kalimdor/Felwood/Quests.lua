@@ -273,6 +273,18 @@ _.Zones =
 						i(15797),	-- Shining Armplates
 					},
 				}),
+				q(8420, {	-- Hot and Itchy
+					["qg"] = 14470,	-- Impsy <Niby's Minion>
+					["coord"] = { 41.6, 45.0, FELWOOD },
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 50,
+					["altQuests"] = {
+						8419,	-- An Imp's Request
+					},
+					["cost"] = {
+						{ "i", 14256, 1 },	-- Felcloth
+					},
+				}),
 				q(7603, {	-- Kroshius' Infernal Core
 					["lvl"] = 50,
 					["races"] = { WARLOCK },
@@ -538,6 +550,17 @@ _.Zones =
 					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold
 					["g"] = {
 						i(21326),	-- Defender of the Timbermaw
+					},
+				}),
+				q(8421, {	-- The Wrong Stuff
+					["qg"] = 14470,	-- Impsy <Niby's Minion>
+					["coord"] = { 41.6, 45.0, FELWOOD },
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 50,
+					["sourceQuest"] = 8420,	-- Hot and Itchy
+					["cost"] = {
+						{ "i", 20613, 1 },	-- Rotting Wood
+						{ "i", 20614, 1 },	-- Bloodvenom Essence
 					},
 				}),
 				q(8460, {	-- Timbermaw Ally

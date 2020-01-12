@@ -288,6 +288,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				},
+				q(8419, {	-- An Imp's Request
+					["qg"] = 5172,	-- Briarthorn <Warlock Trainer>
+					["coord"] = { 50.2, 6.0, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 9 },	-- Warlock
+					["lvl"] = 50,
+					["altQuests"] = {
+						8420,	-- Hot and Itchy
+					},
+					["cost"] = {
+						{ "i", 14256, 1 },	-- Felcloth
+					},
+				}),
 				q(8958, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
 					["classes"] = {9},	-- Warlock
