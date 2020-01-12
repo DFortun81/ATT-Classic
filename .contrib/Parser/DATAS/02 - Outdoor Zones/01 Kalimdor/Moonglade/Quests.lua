@@ -142,6 +142,12 @@ _.Zones =
 						},
 					},
 				},
+				q(9063, {	-- Torwa Pathfinder
+					["qg"] = 12042,	-- Loganaar <Druid Trainer>
+					["coord"] = { 52.4, 40.6, MOONGLADE },
+					["classes"] = { 11 },	-- Druid
+					["lvl"] = 50,
+				}),
 				q(6845, {	-- Uncovering Past Secrets
 					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber

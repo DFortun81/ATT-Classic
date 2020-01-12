@@ -230,6 +230,13 @@ _.Zones =
 						i(6740),	-- Azure Sash
 					},
 				}),
+				q(9063, {	-- Torwa Pathfinder
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
+					["coord"] = { 76.6, 27.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 11 },	-- Druid
+					["lvl"] = 50,
+				}),
 				q(3761, {	-- Un'Goro Soil
 					["lvl"] = 47,
 					["races"] = HORDE_ONLY,

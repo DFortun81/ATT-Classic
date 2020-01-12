@@ -292,6 +292,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7316,	-- Sister Aquinne
 				}),
+				q(9063, {	-- Torwa Pathfinder
+					["qg"] = 4218,	-- Denatharion <Druid Trainer>
+					["coord"] = { 34.8, 8.6, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 11 },	-- Druid
+					["lvl"] = 50,
+				}),
 				q(730, {	-- Trouble In Darkshore?
 					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,

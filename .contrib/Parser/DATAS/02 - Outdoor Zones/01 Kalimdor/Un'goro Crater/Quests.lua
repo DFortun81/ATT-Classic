@@ -48,6 +48,17 @@ _.Zones =
 					},
 					["coord"] = { 43.6, 8.4, UNGORO_CRATER },
 				}),
+				q(9052, {	-- Bloodpetal Poison
+					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["sourceQuest"] = 9063,  -- Torwa Pathfinder
+					["classes"] = { 11 },	-- Druid
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 22434, 8 },	-- Bloodcap
+						{ "i", 22435, 8 },	-- Gorishi Sting
+					},
+				}),
 				q(4144, {	-- Bloodpetal Sprouts
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
@@ -282,6 +293,13 @@ _.Zones =
 				q(4288, {	-- The Western Pylon
 					["lvl"] = 47,
 					["qg"] = 9117,	-- J.D. Collie
+				}),
+				q(9051, {	-- Toxic Test
+					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["sourceQuest"] = 9052,  -- Bloodpetal Poison
+					["classes"] = { 11 },	-- Druid
+					["lvl"] = 50,
 				}),
 				q(4502, {	-- Volcanic Activity
 					["lvl"] = 49,

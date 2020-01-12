@@ -9,9 +9,14 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(9053, {	-- A Better Ingredient
-					["provider"] = { "n", 9619 },	-- Torwa Pathfinder
+					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["maps"] = { UNGORO_CRATER },
+					["sourceQuest"] = 9051,  -- Toxic Test
 					["classes"] = { 11 },	-- Druid
-					["u"] = 3,
+					["cost"] = {
+						{ "i", 22444, 1 },	-- Putrid Vine
+					},
 					["groups"] = {
 						i(22272),	-- Forest's Embrace
 						i(22274),	-- Grizzled Pelt
