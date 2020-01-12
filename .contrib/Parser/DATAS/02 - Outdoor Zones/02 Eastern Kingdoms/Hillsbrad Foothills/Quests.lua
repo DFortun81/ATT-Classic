@@ -329,6 +329,7 @@ _.Zones =
 					["sourceQuest"] = 540, -- Preserving Knowledge
 				}),
 				q(8234, {	-- Sealed Azure Bag
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
 					["coord"] = { 86.0, 79.0, HILLSBRAD_FOOTHILLS },
 					["classes"] = {4},	-- Rogue

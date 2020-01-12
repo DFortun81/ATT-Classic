@@ -274,6 +274,7 @@ _.Zones =
 					},
 				}),
 				q(8420, {	-- Hot and Itchy
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["classes"] = { 9 },	-- Warlock
@@ -553,6 +554,7 @@ _.Zones =
 					},
 				}),
 				q(8421, {	-- The Wrong Stuff
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["classes"] = { 9 },	-- Warlock

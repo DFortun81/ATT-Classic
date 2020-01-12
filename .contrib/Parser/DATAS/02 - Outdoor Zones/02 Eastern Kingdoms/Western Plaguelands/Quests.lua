@@ -191,6 +191,7 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(8414, {	-- Dispelling Evil
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
@@ -229,6 +230,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8416, {	-- Inert Scourgestones
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 1854,	-- High Priest Thel'danis
 					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },

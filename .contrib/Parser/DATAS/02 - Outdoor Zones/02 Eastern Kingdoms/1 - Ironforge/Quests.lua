@@ -289,6 +289,7 @@ _.Zones =
 					["lvl"] = 45,
 				},
 				q(8419, {	-- An Imp's Request
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5172,	-- Briarthorn <Warlock Trainer>
 					["coord"] = { 50.2, 6.0, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -421,6 +422,7 @@ _.Zones =
 					},
 				}),
 				q(8233, {	-- A Simple Request
+					["u"] = 3,	-- Added in later phase
 					["qgs"] = {
 						5165,	-- Hulfdan Blackbeard <Rogue Trainer>
 						5167,	-- Fenthwick <Rogue Trainer>
@@ -436,6 +438,7 @@ _.Zones =
 					["coord"] = { 18.1, 51.5, IRONFORGE },
 				}),
 				q(8417, {	-- A Troubled Spirit
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5113,	-- Kelv Sternhammer <Warrior Trainer>
 					["coord"] = { 70.6, 90.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -649,6 +652,7 @@ _.Zones =
 					["qg"] = 5172, -- Briarthorn
 				}),
 				q(8250, {	-- Magecraft
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 7312,	-- Dink <Mage Trainer>
 					["coord"] = { 26.8, 8.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -880,6 +884,7 @@ _.Zones =
 					},
 				}),
 				q(8151, {	-- The Hunter's Charm
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70.6, 83.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,

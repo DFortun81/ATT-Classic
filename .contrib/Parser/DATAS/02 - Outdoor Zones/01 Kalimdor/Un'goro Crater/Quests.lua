@@ -49,6 +49,7 @@ _.Zones =
 					["coord"] = { 43.6, 8.4, UNGORO_CRATER },
 				}),
 				q(9052, {	-- Bloodpetal Poison
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["sourceQuest"] = 9063,  -- Torwa Pathfinder
@@ -295,6 +296,7 @@ _.Zones =
 					["qg"] = 9117,	-- J.D. Collie
 				}),
 				q(9051, {	-- Toxic Test
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["sourceQuest"] = 9052,  -- Bloodpetal Poison

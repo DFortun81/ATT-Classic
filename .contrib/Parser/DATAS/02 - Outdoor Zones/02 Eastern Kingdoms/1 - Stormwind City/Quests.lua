@@ -89,6 +89,7 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(8419, {	-- An Imp's Request
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
 					["coord"] = { 28.4, 78.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -102,6 +103,7 @@ _.Zones =
 					},
 				}),
 				q(8233, {	-- A Simple Request
+					["u"] = 3,	-- Added in later phase
 					["qgs"] = {
 						13283,	-- Lord Tony Romano <Rogue Trainer>
 						918,	-- Osborne the Night Man <Rogue Trainer>
@@ -116,6 +118,7 @@ _.Zones =
 					["qg"] = 6740,	-- Innkeeper Allison
 				}),
 				q(8417, {	-- A Troubled Spirit
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5479,	-- Wu Shen <Warrior Trainer>
 					["coord"] = { 78.8, 45.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -176,6 +179,7 @@ _.Zones =
 					},
 				}),
 				q(8254, {	-- Cenarion Aid
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
 					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -331,6 +335,7 @@ _.Zones =
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
 				}),
 				q(8250, {	-- Magecraft
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 331,	-- Maginor Dumas <Master Mage>
 					["coord"] = { 38.2, 81.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -490,6 +495,7 @@ _.Zones =
 					["qg"] = 482, -- Elling Trias <Master of Cheese>
 				}),
 				q(8151, {	-- The Hunter's Charm
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 5516,	-- Ulfir Ironbeard <Hunter Trainer>
 					["coord"] = { 62.0, 15.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

@@ -52,6 +52,7 @@ _.Zones =
 					},
 				}),
 				q(8417, {	-- A Troubled Spirit
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 3041,	-- Torm Ragetotem <Warrior Trainer>
 					["coord"] = { 57.6, 87.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -103,6 +104,7 @@ _.Zones =
 					},
 				}),
 				q(8250, {	-- Magecraft
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 3047,	-- Archmage Shymm <Mage Trainer>
 					["coord"] = { 22.6, 14.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -200,6 +202,7 @@ _.Zones =
 					["lvl"] = 13,
 				}),
 				q(8151, {	-- The Hunter's Charm
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
 					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -238,6 +241,7 @@ _.Zones =
 					},
 				}),
 				q(9063, {	-- Torwa Pathfinder
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.6, 27.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,

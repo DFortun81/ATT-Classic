@@ -104,6 +104,7 @@ _.Zones =
 					["lvl"] = 26,
 				}),
 				q(8412, {	-- Spirit Totem
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["races"] = HORDE_ONLY,

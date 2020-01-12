@@ -62,6 +62,7 @@ _.Zones =
 					["sourceQuest"] = 3141,	-- Loramus
 				}),
 				q(8153, {	-- Courser Antlers
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8151,	-- The Hunter's Charm
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -94,6 +95,7 @@ _.Zones =
 					["sourceQuest"] = 3517, -- Stealing Knowledge
 				}),
 				q(8235, {	-- Encoded Fragments
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["classes"] = {4},	-- Rogue
@@ -149,6 +151,7 @@ _.Zones =
 					["sourceQuest"] = 3518, -- Delivery to Magatha
 				}),
 				q(8251, {	-- Magic Dust
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["sourceQuest"] = 8250,	-- Magecraft
@@ -163,6 +166,7 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(8255, {	-- Of Coursers We Know
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8254,	-- Cenarion Aid
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -203,6 +207,7 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(8256, {	-- The Ichor of Undeath
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -241,6 +246,7 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(8252, {	-- The Siren's Coral
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["sourceQuest"] = 8251,	-- Magic Dust
@@ -272,6 +278,7 @@ _.Zones =
 					["qg"] = 8379,		-- Archmage Xylem
 				}),
 				q(8231, {	-- Wavethrashing
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8153,	-- Courser Antlers
 					["coord"] = { 42.2, 42.6, AZSHARA },

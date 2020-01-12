@@ -9,6 +9,7 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(9053, {	-- A Better Ingredient
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["maps"] = { UNGORO_CRATER },
@@ -24,6 +25,7 @@ _.Instances = {
 					},
 				}),
 				q(8257, {	-- Blood of Morphaz
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["coord"] = { 42.2, 42.6, AZSHARA },
@@ -40,6 +42,7 @@ _.Instances = {
 					},
 				}),
 				q(8413, {	-- Da Voodoo
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ALTERAC_MOUNTAINS },
@@ -57,6 +60,7 @@ _.Instances = {
 					},
 				}),
 				q(8253, {	-- Destroy Morphaz
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["maps"] = { AZSHARA },
@@ -73,6 +77,7 @@ _.Instances = {
 					},
 				}),
 				q(8418, {	-- Forging the Mightstone
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
@@ -205,6 +210,7 @@ _.Instances = {
 					},
 				}),
 				q(8236, {	-- The Azure Key
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8379,	-- Archmage Xylem
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["maps"] = { AZSHARA },
@@ -263,6 +269,7 @@ _.Instances = {
 					},
 				}),
 				q(8232, {	-- The Green Drake
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 8405,	-- Ogtinc
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["maps"] = { AZSHARA },
@@ -322,6 +329,7 @@ _.Instances = {
 					},
 				}),
 				q(8422, {	-- Trolls of a Feather
+					["u"] = 3,	-- Added in later phase
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["maps"] = { FELWOOD },
@@ -340,6 +348,7 @@ _.Instances = {
 					},
 				}),
 				q(8425, {	-- Voodoo Feathers
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
