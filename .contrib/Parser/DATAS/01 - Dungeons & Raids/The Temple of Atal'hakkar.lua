@@ -57,13 +57,19 @@ _.Instances = {
 					},
 				}),
 				q(8253, {	-- Destroy Morphaz
-					["provider"] = { "n", 8379 },	-- Archmage Xylem
+					["qg"] = 8379,	-- Archmage Xylem
+					["coord"] = { 29.6, 40.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["classes"] = { 8 },	-- Mage
-					["u"] = 3,
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20085, 1 },	--Arcane Shard
+					},
 					["groups"] = {
-						i(20037),	-- Arcane Crystal Pendant
-						i(20036),	-- Fire Ruby
 						i(20035),	-- Glacial Spike
+						i(20036),	-- Fire Ruby
+						i(20037),	-- Arcane Crystal Pendant
 					},
 				}),
 				q(8418, {	-- Forging the Mightstone

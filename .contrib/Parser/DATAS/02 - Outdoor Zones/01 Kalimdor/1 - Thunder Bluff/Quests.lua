@@ -102,6 +102,13 @@ _.Zones =
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},
 				}),
+				q(8250, {	-- Magecraft
+					["qg"] = 3047,	-- Archmage Shymm <Mage Trainer>
+					["coord"] = { 22.6, 14.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
+				}),
 				q(1130, {	-- Melor Sends Word
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,

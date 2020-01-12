@@ -413,7 +413,7 @@ _.Zones =
 						5167,	-- Fenthwick <Rogue Trainer>
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {4},	-- Rogue
+					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 50,
 				}),
 				q(3790, {	-- Assisting Arch Druid Staghelm
@@ -634,6 +634,13 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 5172, -- Briarthorn
+				}),
+				q(8250, {	-- Magecraft
+					["qg"] = 7312,	-- Dink <Mage Trainer>
+					["coord"] = { 26.8, 8.6, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
 				}),
 				q(1880,	{ -- Mage-tastic Gizmonitor
 					["qg"] = 5144, -- Bink <Mage Trainer>

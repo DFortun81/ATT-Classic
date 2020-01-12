@@ -547,6 +547,13 @@ _.Zones =
 					["classes"] = { 9 },	-- Warlock
 					["qg"] = 3326, -- Zevrost
 				}),
+				q(8250, {	-- Magecraft
+					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
+					["coord"] = { 39.0, 86.0, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
+				}),
 				q(4494, {	-- March of the Silithid
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,

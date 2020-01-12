@@ -317,6 +317,13 @@ _.Zones =
 					["qg"] = 332, -- Master Mathias Shaw
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
 				}),
+				q(8250, {	-- Magecraft
+					["qg"] = 331,	-- Maginor Dumas <Master Mage>
+					["coord"] = { 38.2, 81.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
+				}),
 				q(1666, { -- Marshal Haggard
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

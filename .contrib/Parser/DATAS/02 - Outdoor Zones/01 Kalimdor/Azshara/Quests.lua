@@ -148,6 +148,16 @@ _.Zones =
 					["qg"] = 4046, -- Magatha Grimtotem
 					["sourceQuest"] = 3518, -- Delivery to Magatha
 				}),
+				q(8251, {	-- Magic Dust
+					["qg"] = 8379,	-- Archmage Xylem
+					["coord"] = { 29.6, 40.6, AZSHARA },
+					["sourceQuest"] = 8250,	-- Magecraft
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20028, 10 },	-- Glittering Dust
+					},
+				}),
 				q(3503, {	-- Meeting with the Master
 					["lvl"] = 45,
 					["repeatable"] = true,
@@ -229,6 +239,16 @@ _.Zones =
 						{ "i", 10610, 1 },	-- Hetaera's Blood
 					},
 					["lvl"] = 45,
+				}),
+				q(8252, {	-- The Siren's Coral
+					["qg"] = 8379,	-- Archmage Xylem
+					["coord"] = { 29.6, 40.6, AZSHARA },
+					["sourceQuest"] = 8251,	-- Magic Dust
+					["classes"] = { 8 },	-- Mage
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20029, 6 },	-- Enchanted Coral
+					},
 				}),
 				q(8729, {	-- The Wrath of Neptulon
 					["lvl"] = 60,
