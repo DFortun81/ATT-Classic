@@ -19,9 +19,15 @@ _.Instances = {
 					},
 				}),
 				q(8257, {	-- Blood of Morphaz
-					["provider"] = { "n", 8405 },	-- Ogtinc
+					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8256,	-- The Ichor of Undeath
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["maps"] = { AZSHARA },
 					["classes"] = { 5 },	-- Priest
-					["u"] = 3,
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20025, 1 },	-- Blood of Morphaz
+					},
 					["groups"] = {
 						i(19990),	-- Blessed Prayer Beads
 						i(20006),	-- Circle of Hope

@@ -152,6 +152,16 @@ _.Zones =
 					["lvl"] = 45,
 					["repeatable"] = true,
 				}),
+				q(8255, {	-- Of Coursers We Know
+					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8254,	-- Cenarion Aid
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 20027, 4 },	-- Healthy Courser Gland
+					},
+				}),
 				q(6804, {	-- Poisoned Water
 					["lvl"] = 55,
 					["qg"] = 13278,	-- Duke Hydraxis
@@ -181,6 +191,16 @@ _.Zones =
 						{ "i", 10738, 1 },	-- Shipment to Galvan
 					},
 					["lvl"] = 45,
+				}),
+				q(8256, {	-- The Ichor of Undeath
+					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8255,	-- Of Coursers We Know
+					["coord"] = { 42.2, 42.6, AZSHARA },
+					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 7972, 1 },	-- Ichor of Undeath
+					},
 				}),
 				q(6822, {	-- The Molten Core
 					["lvl"] = 55,

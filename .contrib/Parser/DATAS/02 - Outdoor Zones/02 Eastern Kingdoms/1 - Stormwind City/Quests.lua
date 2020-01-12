@@ -94,7 +94,7 @@ _.Zones =
 						918,	-- Osborne the Night Man <Rogue Trainer>
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {4},	-- Rogue
+					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 50,
 				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
@@ -161,6 +161,13 @@ _.Zones =
 						{ "i", 6844, 20 }, -- Burning Blood
 						{ "i", 6845, 1 }, -- Burning Rock
 					},
+				}),
+				q(8254, {	-- Cenarion Aid
+					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
+					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
 				}),
 				q(8415, {	-- Chillwind Camp
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>

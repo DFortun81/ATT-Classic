@@ -314,7 +314,7 @@ _.Zones =
 					["qg"] = 3328,	-- Ormok <Rogue Trainer>
 					["coord"] = { 44.0, 54.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = {4},	-- Rogue
+					["classes"] = { 4 },	-- Rogue
 					["lvl"] = 50,
 				}),
 				q(936, {	-- Assisting Arch Druid Runetotem
@@ -387,6 +387,13 @@ _.Zones =
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
+				}),
+				q(8254, {	-- Cenarion Aid
+					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
+					["coord"] = { 35.6, 87.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { 5 },	-- Priest
+					["lvl"] = 50,
 				}),
 				q(1501, { -- Creature of the Void
 					["lvl"] = 10,
