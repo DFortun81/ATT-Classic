@@ -56,12 +56,15 @@ _.Zones =
 						}),
 						i(9251, {	-- Upper Map Fragment
 							["questID"] = 2882,	-- Cuergo's Gold
+							["repeatable"] = true,
 						}),
 						i(9253, {	-- Middle Map Fragment
 							["questID"] = 2882,	-- Cuergo's Gold
+							["repeatable"] = true,
 						}),
 						i(9252, {	-- Lower Map Fragment
 							["questID"] = 2882,	-- Cuergo's Gold
+							["repeatable"] = true,
 						}),
 						i(9249, {	-- Captain's Key
 							["description"] = "Unlocks the Captain's Chest located in the ship at the docks.",
