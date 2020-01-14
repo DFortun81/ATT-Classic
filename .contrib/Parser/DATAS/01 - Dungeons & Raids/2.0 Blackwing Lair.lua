@@ -12,9 +12,14 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				{
-					["allianceQuestID"] = 7781,	-- The Lord of Blackrock [Alliance]
-					["hordeQuestID"] = 7783,	-- The Lord of Blackrock [Horde]
-					["description"] = "This quest is started by looting the Head of Nefarian.",
+					["questID"] = 7783,	-- The Lord of Blackrock [Horde]
+					["provider"] = { "i", 19002 },	-- Head of Nefarian
+					["races"] = HORDE_ONLY,
+				},
+				{
+					["questID"] = 7781,	-- The Lord of Blackrock [Alliance]
+					["provider"] = { "i", 19003 },	-- Head of Nefarian
+					["races"] = ALLIANCE_ONLY,
 				},
 				{
 					["questID"] = 7782,	-- The Lord of Blackrock
@@ -271,17 +276,11 @@ _.Instances = {
 					["itemID"] = 19003,	-- Head of Nefarian [Alliance]
 					["questID"] = 7781,	-- The Lord of Blackrock [Alliance]
 					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = {
-						7783,	-- The Lord of Blackrock [Horde]
-					},
 				},
 				{
 					["itemID"] = 19002,	-- Head of Nefarian
 					["questID"] = 7783,	-- The Lord of Blackrock [Horde]
 					["races"] = HORDE_ONLY,
-					["altQuests"] = {
-						7781,	-- The Lord of Blackrock [Horde]
-					},
 				},
 				i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 				i(19356),	-- Staff of the Shadow Flame
