@@ -149,7 +149,7 @@ _.Instances = {
 				i(19340),	-- Rune of Metamorphosis
 			}),
 			n(12017, {	-- Broodlord Lashlayer
-				i(20383),	-- Head of the Broodlord Lashlayer
+				un(3, i(20383)),	-- Head of the Broodlord Lashlayer
 				i(19351),	-- Maladath, Runed Blade of the Black Flight
 				i(19350),	-- Heartstriker
 				i(19373),	-- Black Brood Pauldrons
@@ -282,6 +282,7 @@ _.Instances = {
 					["questID"] = 7783,	-- The Lord of Blackrock [Horde]
 					["races"] = HORDE_ONLY,
 				},
+				un(3, i(21138)),	-- Red Scepter Shard
 				i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 				i(19356),	-- Staff of the Shadow Flame
 				i(19363),	-- Crul'shorukh, Edge of Chaos
