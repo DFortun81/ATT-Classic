@@ -1482,9 +1482,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				if reservesForItem then
 					local left = "Soft Reserves";
 					for i,guid in ipairs(reservesForItem) do
-						local unit = app.CreateSoftReserveUnit(guid);
-						if unit.guid and IsGUIDInGroup(unit.guid) then
-							tinsert(info, { left = left, right = unit.tooltipText });
+						local name = app.CreateSoftReserveUnit(guid).tooltipText;
+						if guid and IsGUIDInGroup(guid) then
+							tinsert(info, { left = left, right = name });
 							left = nil;
 						end
 					end
