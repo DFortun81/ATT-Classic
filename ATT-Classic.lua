@@ -2758,7 +2758,7 @@ app.ParseSoftReserve = function(app, guid, cmd)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
-app.UpdateSoftReserveInternal = function(app, guid, itemID)
+app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp)
 	local reserves = GetDataMember("SoftReserves");
 	local reservesByItemID = GetTempDataMember("SoftReservesByItemID");
 	
@@ -2787,7 +2787,7 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID)
 	
 	-- Update the Reservation
 	wipe(searchCache);
-	reserves[guid] = { itemID, time() };
+	reserves[guid] = { itemID, timeStamp or time() };
 	local reservesForItem = reservesByItemID[itemID];
 	if not reservesForItem then
 		reservesForItem = {};
@@ -2795,20 +2795,24 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID)
 	end
 	table.insert(reservesForItem, guid);
 end
-app.UpdateSoftReserve = function(app, guid, itemID)
+app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode)
 	if GetDataMember("SoftReserves")[guid] and app.Settings:GetTooltipSetting("SoftReservesLocked") then
-		SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
+		if not silentMode then
+			SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
+		end
 	else
 		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
 		app:UpdateSoftReserveInternal(guid, itemID);
 		app:GetWindow("SoftReserves"):Update(true);
-		if itemID then
-			local searchResults = SearchForLink("itemid:" .. itemID);
-			if searchResults and #searchResults > 0 then
-				SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)), guid);
+		if not silentMode then
+			if itemID then
+				local searchResults = SearchForLink("itemid:" .. itemID);
+				if searchResults and #searchResults > 0 then
+					SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)), guid);
+				end
+			else
+				SendGUIDWhisper("SR: Cleared.", guid);
 			end
-		else
-			SendGUIDWhisper("SR: Cleared.", guid);
 		end
 	end
 end
@@ -7500,15 +7504,18 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['OnUpdate'] = function(data)
 					local g = {};
 					local groupMembers = {};
+					groupMembers[app.GUID] = true;	-- Prevent the player's 
 					local count = GetNumGroupMembers();
 					if count > 0 then
-						for raidIndex = 2, 40, 1 do
+						for raidIndex = 1, 40, 1 do
 							local name, rank, subgroup, level, class, fileName, zone, online, isDead, role, isML = GetRaidRosterInfo(raidIndex);
 							if name then
 								local unit = app.CreateSoftReserveUnit(name);
 								local guid = unit.guid;
-								if guid then groupMembers[guid] = true; end
-								table.insert(g, unit);
+								if guid and not groupMembers[guid]then
+									groupMembers[guid] = true;
+									table.insert(g, unit);
+								end
 							end
 						end
 					end
@@ -7517,10 +7524,9 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					table.sort(g, data.Sort);
 					
 					-- Insert Control Methods
-					local unit = app.CreateSoftReserveUnit("player");
-					local guid = unit.guid;
-					if guid then groupMembers[guid] = true; end
-					table.insert(g, 1, unit);
+					table.insert(g, 1, app.CreateSoftReserveUnit(app.GUID));
+					table.insert(g, 1, data.queryGuildMembers);
+					table.insert(g, 1, data.queryGroupMembers);
 					table.insert(g, 1, data.lockSoftReserves);
 					table.insert(g, 1, data.lootMethodReminder);
 					data.g = g;
@@ -7596,6 +7602,38 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['g'] = {},
 					['OnUpdate'] = function(data)
 						data.visible = #data.g > 0;
+					end,
+					['back'] = 0.5,
+				},
+				['queryGroupMembers'] = {
+					['text'] = "Query Group Members",
+					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['description'] = "Press this button to send an addon message to your Group Members to update their Soft Reserves.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						SendGroupMessage("?\tsr");
+						self:Reset();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = IsInGroup() and not app.Settings:GetTooltipSetting("SoftReservesLocked");
+					end,
+					['back'] = 0.5,
+				},
+				['queryGuildMembers'] = {
+					['text'] = "Query Guild Members",
+					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['description'] = "Press this button to send an addon message to your Guild Members to update their Soft Reserves.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						SendGuildMessage("?\tsr");
+						self:Reset();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = not app.Settings:GetTooltipSetting("SoftReservesLocked");
 					end,
 					['back'] = 0.5,
 				},
@@ -8864,7 +8902,7 @@ app.events.ADDON_LOADED = function(addonName)
 end
 app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
 	if prefix == "ATTC" then
-		-- print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
+		--print(prefix, text, channel, sender, target, zoneChannelID, localID, name, instanceID, ...)
 		local args = { strsplit("\t", text) };
 		local cmd = args[1];
 		if cmd then
@@ -8877,6 +8915,13 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						for i=3,#args,1 do
 							local b = tonumber(args[i]);
 							response = response .. "\t" .. b .. "\t" .. (IsQuestFlaggedCompleted(b) and 1 or 0);
+						end
+					elseif a == "sr" then
+						if target == UnitName("player") then
+							return false;
+						else
+							local softReserve = GetDataMember("SoftReserves")[app.GUID];
+							response = "sr" .. "\t" .. app.GUID .. "\t" .. (softReserve and ((softReserve[1] or 0) .. "\t" .. (softReserve[2] or 0)) or "0\t0");
 						end
 					end
 				else
@@ -8898,6 +8943,8 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
 						print(response .. target);
+					elseif a == "sr" then
+						app:UpdateSoftReserve(args[3], tonumber(args[4]), tonumber(args[5]), true);
 					end
 				end
 			elseif cmd == "to" then	-- To Command
