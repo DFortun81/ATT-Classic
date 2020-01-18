@@ -230,7 +230,7 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 180652,	-- Freshly Dug Dirt
+					["provider"] = { "o", 180652 },	-- Freshly Dug Dirt
 				}),
 				q(648, { -- Rescue OOX-17/TN!
 					["lvl"] = 43,
@@ -525,7 +525,7 @@ _.Zones =
 				q(2954, {	-- The Stone Watcher
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 142343,	-- Uldum Pedestal
+					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 				}),
 				q(8893, {	-- The Super Egg-O-Matic
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
@@ -590,15 +590,10 @@ _.Zones =
 						{ "o", 142122 }, -- Wanted Poster
 						{ "o", 150075 }, -- Wanted Poster
 					},
-					["qgs"] = {
-					--["objectID"] = 142122,	-- Wanted Poster
-					--["objectID"] = 150075,	-- Wanted Poster
-					},
 				}),
 				q(2781, {	-- WANTED: Caliph Scorpidsting
 					["lvl"] = 39,
 					["provider"] = { "o", 142122 }, -- Wanted Poster
-					--["objectID"] = 142122,	-- Wanted Poster
 				}),
 				q(9268, {	-- War at Sea
 					["lvl"] = 40,

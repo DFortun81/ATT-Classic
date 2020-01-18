@@ -145,7 +145,7 @@ _.Zones =
 				q(1269, {	-- Lieutenant Paval Reethe
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 21042,	-- Theramore Guard Badge
+					["provider"] = { "o", 21042 }, -- Theramore Guard Badge
 				}),
 				q(1259, {	-- Lieutenant Paval Reethe
 					["lvl"] = 30,
@@ -156,12 +156,12 @@ _.Zones =
 				q(1252, {	-- Lieutenant Paval Reethe
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 21042,	-- Theramore Guard Badge
+					["provider"] = { "o", 21042 }, -- Theramore Guard Badge
 				}),
 				q(1261, {	-- Marg Speaks
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 2076,	-- Bubbling Cauldron
+					["provider"] = { "o", 2076 }, -- Bubbling Cauldron
 				}),
 				q(1260, {	-- Morgan Stern
 					["lvl"] = 33,
@@ -242,18 +242,16 @@ _.Zones =
 				q(1268, {	-- Suspicious Hoofprints
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 21016 },
-					--["objectID"] = 21016,	-- Hoofprints
+					["provider"] = { "o", 21016 },	-- Hoofprints
 					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
 				}),
 				q(1284, {	-- Suspicious Hoofprints
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-					--["objectID"] = 21015,	-- Hoofprints
-					--["objectID"] = 21016,	-- Hoofprints
+					["providers"] = { 
+						{ "o", 21015 },	-- Hoofprints
+						{ "o", 21016 },	-- Hoofprints
 					},
-					["provider"] = { "o", 21015 },
 					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
 				}),
 				q(9065, {	-- The "Chow" Quest (123)aa
@@ -278,7 +276,7 @@ _.Zones =
 				q(1253, {	-- The Black Shield
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 20992,	-- Black Shield
+					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
 				q(1319, {	-- The Black Shield
 					["lvl"] = 30,
@@ -304,7 +302,7 @@ _.Zones =
 				q(1251, {	-- The Black Shield
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 20992,	-- Black Shield
+					["provider"] = { "o", 20992 },	-- Black Shield
 				}),
 				q(1170, {	-- The Brood of Onyxia
 					["qg"] = 4501,	-- Draz'Zilb
@@ -344,7 +342,7 @@ _.Zones =
 				q(1238, {	-- The Lost Report
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 20985,	-- Loose Dirt
+					["provider"] = { "o", 20985 },	-- Loose Dirt
 				}),
 				q(1265, { -- The Missing Diplomat (14/17)
 					["lvl"] = 28,
@@ -383,12 +381,12 @@ _.Zones =
 				q(1219, {	-- The Orc Report
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 20985,	-- Loose Dirt
+					["provider"] = { "o", 20985 },	-- Loose Dirt
 				}),
 				q(1239, {	-- The Severed Head
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 20985,	-- Loose Dirt
+					["provider"] = { "o", 20985 },	-- Loose Dirt
 				}),
 				q(1202, {	-- The Theramore Docks
 					["lvl"] = 30,

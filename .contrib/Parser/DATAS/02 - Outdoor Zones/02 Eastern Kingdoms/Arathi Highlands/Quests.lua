@@ -11,15 +11,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2788,	-- Apprentice Kryten
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
+					["sourceQuest"] = 694,	-- Trelane's Defenses
 				}),
 				q(696, {	-- Attack on the Tower
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
 				}),
 				q(652, {	-- Breaking the Keystone
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2702,	-- Stone of Inner Binding
+					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 				}),
 				q(677, {	-- Call to Arms
 					["qg"] = 2771,	-- Drum Fel
@@ -148,12 +150,12 @@ _.Zones =
 				q(653, {	-- Myzrael's Allies
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2688,	-- Keystone
+					["provider"] = { "o", 2688 },	-- Keystone
 				}),
 				q(688, {	-- Myzrael's Allies
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 2688,	-- Keystone
+					["provider"] = { "o", 2688 },	-- Keystone
 				}),
 				q(681, {	-- Northfold Manor
 					["lvl"] = 30,
@@ -195,7 +197,7 @@ _.Zones =
 				}),
 				q(651, {	-- Stones of Binding
 					["lvl"] = 30,
-					--["objectID"] = 2701,	-- Iridescent Shards
+					["provider"] = { "o", 2701 },	-- Iridescent Shards
 				}),
 				q(682, {	-- Stromgarde Badges
 					["lvl"] = 30,
@@ -246,7 +248,7 @@ _.Zones =
 				}),
 				q(642, {	-- The Princess Trapped
 					["lvl"] = 30,
-					--["objectID"] = 138492,	-- Shards of Myzrael
+					["provider"] = { "o", 138492 },	-- Shards of Myzrael
 				}),
 				q(680, {	-- The Real Threat
 					["lvl"] = 30,
@@ -268,6 +270,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
+					["sourceQuest"] = 693, -- Wand over Fist
 				}),
 				q(6622, {	-- Triage
 					["qg"] = 12920,	-- Doctor Gregory Victor
@@ -293,11 +296,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
+					["sourceQuest"] = 691, -- Worth Its Weight in Gold
 				}),
 				q(684, {	-- Wanted! Marez Cowl
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2713,	-- Wanted Board
+					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
 						i(4744),	-- Arcane Runed Bracers
 					},
@@ -307,7 +311,7 @@ _.Zones =
 				q(685, {	-- Wanted! Otto and Falconcrest
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2713,	-- Wanted Board
+					["provider"] = { "o", 2713 },	-- Wanted Board
 					["g"] = {
 						i(5247),	-- Rod of Sorrow
 						i(4745),	-- War Rider Bracers

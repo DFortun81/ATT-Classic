@@ -164,7 +164,7 @@ _.Zones =
 				q(2967, {	-- Return to Thunder Bluff
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 142343,	-- Uldum Pedestal
+					["provider"] = { "o", 142343 },	-- Uldum Pedestal
 				}),
 				q(1067, {	-- Return to Thunder Bluff
 					["lvl"] = 13,

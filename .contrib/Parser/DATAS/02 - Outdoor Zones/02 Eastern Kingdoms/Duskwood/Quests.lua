@@ -298,9 +298,8 @@ _.Zones =
 				q(230, {	-- Sven's Camp
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 59 },
+					["provider"] = { "o", 59 },	-- Mound of loose dirt
 					["coord"] = { 49.9, 77.7, DUSKWOOD },
-					--["objectID"] = 59,	-- Mound of loose dirt
 				}),
 				q(95, {	-- Sven's Revenge
 					["lvl"] = 20,
@@ -344,9 +343,8 @@ _.Zones =
 				q(68, {	-- The Legend of Stalvan
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 3643 },
+					["provider"] = { "o", 3643 },	-- Old Footlocker
 					["coord"] = { 41.5, 66.7, WESTFALL },
-					--["objectID"] = 3643,	-- Old Footlocker
 				}),
 				q(79, {	-- The Legend of Stalvan
 					["lvl"] = 22,
@@ -396,9 +394,8 @@ _.Zones =
 				q(74, {	-- The Legend of Stalvan
 					["lvl"] = 22,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 1561 },
+					["provider"] = { "o", 1561 },	-- Sealed Crate
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
-					--["objectID"] = 1561,	-- Sealed Crate
 				}),
 				q(98, {	-- The Legend of Stalvan
 					["lvl"] = 22,
@@ -428,7 +425,7 @@ _.Zones =
 					["altQuests"] = {
 						526, -- Lightforge Ingots
 					},
-					--["objectID"] = 2734,	-- Waterlogged Chest
+					["provider"] = { "o", 2734 },	-- Waterlogged Chest
 				}),
 				q(1244, { -- The Missing Diplomat (5/17)
 					["lvl"] = 28,
@@ -501,9 +498,9 @@ _.Zones =
 				q(225, {	-- The Weathered Grave
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 61 },
+					["provider"] = { "o", 61 },	-- A Weathered Grave
 					["coord"] = { 17.7, 29.2, DUSKWOOD },
-					--["objectID"] = 61,	-- A Weathered Grave
+
 				}),
 				q(251, {	-- Translate Abercrombie's Note
 					["lvl"] = 20,

@@ -41,7 +41,6 @@ _.Zones =
 				q(4501, {	-- Beware of Pterrordax
 					["lvl"] = 49,
 					["provider"] = { "o", 174682 }, -- Beware of Pterrordax
-					--["objectID"] = 174682,	-- Beware of Pterrordax
 					["g"] = {
 						i(11918),	-- Grotslab Gloves
 						i(11919),	-- Cragplate Greaves

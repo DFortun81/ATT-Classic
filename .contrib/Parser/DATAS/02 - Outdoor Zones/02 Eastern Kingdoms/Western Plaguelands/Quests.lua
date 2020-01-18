@@ -336,22 +336,22 @@ _.Zones =
 				q(5223, {	-- Return to Chillwind Camp
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176393,	-- Scourge Cauldron
+					["provider"] = { "o", 176393 },	--  Scourge Cauldron
 				}),
 				q(5217, {	-- Return to Chillwind Camp
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176361,	-- Scourge Cauldron
+					["provider"] = { "o", 176361 },	--  Scourge Cauldron
 				}),
 				q(5220, {	-- Return to Chillwind Camp
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 177289,	-- Scourge Cauldron
+					["provider"] = { "o", 177289 },	--  Scourge Cauldron
 				}),
 				q(5226, {	-- Return to Chillwind Camp
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176392,	-- Scourge Cauldron
+					["provider"] = { "o", 176392 },	--  Scourge Cauldron
 				}),
 				q(5232, {	-- Return to the Bulwark
 					["lvl"] = 50,
@@ -368,7 +368,7 @@ _.Zones =
 				q(5236, {	-- Return to the Bulwark
 					["lvl"] = 50,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 176392,	-- Scourge Cauldron
+					["provider"] = { "o", 176392 },	--  Scourge Cauldron
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["lvl"] = 50,

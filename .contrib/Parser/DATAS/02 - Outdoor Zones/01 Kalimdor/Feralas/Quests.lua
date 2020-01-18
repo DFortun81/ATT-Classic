@@ -102,7 +102,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4125, -- The Missing Courier (2)
 					["provider"] = { "o", 164909 }, -- Wrecked Row Boat
-					--["objectID"] = 164909,	-- Wrecked Row Boat
 					["coord"] = { 45.4, 65.0, FERALAS },
 				}),
 				q(2979, {	-- Dark Ceremony
@@ -307,7 +306,7 @@ _.Zones =
 				q(2903, {	-- The Battle Plans
 					["lvl"] = 39,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 142195,	-- Woodpaw Battle Map
+					["provider"] = { "o", 142195 },	-- Woodpaw Battle Map
 					["g"] = {
 						i(9661),	-- Earthclasp Barrier
 						i(9662),	-- Rushridge Boots
@@ -433,7 +432,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 4131, -- The Woodpaw Gnolls
 					["provider"] = { "o", 164953 }, -- Large Leather Backpacks
-					--["objectID"] = 164953,	-- Large Leather Backpacks
 					["coord"] = { 73.3, 56.3, FERALAS },
 				}),
 				q(3567, {	-- To the Top

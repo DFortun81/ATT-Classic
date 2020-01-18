@@ -181,7 +181,6 @@ _.Zones =
 				q(626, {	-- Cortello's Riddle
 					["lvl"] = 35,
 					["provider"] = { "o", 255 }, -- Musty Scroll
-					--["objectID"] = 2555,	-- Musty Scroll
 					["g"] = {
 						i(11324),	-- Explorer's Knapsack
 					},
@@ -668,7 +667,7 @@ _.Zones =
 				q(328, {	-- The Hidden Key
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 287,	-- Bookie Herod's Records
+					["provider"] = { "o", 287 },	--  Bookie Herod's Records
 					["g"] = {
 						i(4122),	-- Bookmaker's Scepter
 					},
@@ -707,7 +706,7 @@ _.Zones =
 				q(329, {	-- The Spy Revealed!
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 288,	-- Bookie Herod's Strongbox
+					["provider"] = { "o", 288 },	--  Bookie Herod's Strongbox
 				}),
 				q(578, {	-- The Stone of the Tides
 					["lvl"] = 32,

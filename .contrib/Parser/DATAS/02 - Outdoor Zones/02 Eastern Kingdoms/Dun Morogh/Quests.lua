@@ -23,7 +23,7 @@ _.Zones =
 				q(417, {	-- A Pilot's Revenge
 					["lvl"] = 8,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2059,	-- A Dwarven Corpse
+					["provider"] = { "o", 2059 },	-- A Dwarven Corpse
 					["g"] = {
 						i(2218),	-- Craftsman's Dagger
 						i(1009),	-- Compact Hammer
@@ -115,7 +115,7 @@ _.Zones =
 					["altQuests"] = {
 						311,	-- Return to Marleth
 					},
-					--["objectID"] = 269,	-- Guarded Thunder Ale Barrel
+					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
 				}),
 				q(2239, {	-- Onin's Report
 					["lvl"] = 10,
@@ -169,7 +169,7 @@ _.Zones =
 				q(311, {	-- Return to Marleth
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 270,	-- Unguarded Thunder Ale Barrel
+					["provider"] = { "o", 270 },	-- Unguarded Thunder Ale Barrel
 				}),
 				q(2218, {	-- Road to Salvation
 					["lvl"] = 10,

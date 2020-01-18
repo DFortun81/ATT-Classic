@@ -215,7 +215,7 @@ _.Zones =
 				q(751, {	-- The Ravaged Caravan
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
-					--["objectID"] = 2908,	-- Sealed Supply Crate
+					["provider"] = { "o", 2908 },	-- Sealed Supply Crate
 				}),
 				q(749, {	-- The Ravaged Caravan
 					["lvl"] = 5,

@@ -107,7 +107,7 @@ _.Zones =
 				q(248, {	-- Looking Further
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 31,	-- Old Lion Statue
+					["provider"] = { "o", 31 },	-- Old Lion Statue
 				}),
 				q(146, {	-- Messenger to Darkshire
 					["lvl"] = 18,
@@ -158,10 +158,7 @@ _.Zones =
 				q(249, {	-- Morganth
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-						313,	-- Theocritus
-					--["objectID"] = 31,	-- Old Lion Statue
-					},
+					["provider"] = { "o", 31 },	-- Old Lion Statue
 					["g"] = {
 						i(5274),	-- Rose Mantle
 					},
@@ -309,16 +306,14 @@ _.Zones =
 				q(169, {	-- Wanted: Gath'Ilzogg
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 60 },
+					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
 					["coord"] = { 29.6, 46.2, REDRIDGE_MOUNTAINS },
-					--["objectID"] = 60,	-- Wanted: Gath'Ilzogg
 				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 47 },
+					["provider"] = { "o", 47 },	-- Wanted: Lieutenant Fangore
 					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },	
-					--["objectID"] = 47, -- Wanted: Lieutenant Fangore
 				}),
 				q(1698, { -- Yorus Barleybrew
 					["lvl"] = 20,

@@ -103,7 +103,6 @@ _.Zones =
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 55 }, -- A half-eaten body
-					--["objectID"] = 55,	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 				}),
 				q(5261, {	-- Eagan Peltskinner
@@ -326,7 +325,7 @@ _.Zones =
 				q(71, {	-- Report to Thomas
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 56,	-- Rolf's corpse
+					["provider"] = { "o", 56 },	-- Rolf's corpse
 					["sourceQuest"] = 45,	-- Discover Rolf's Fate
 				}),
 				q(2158, {	-- Rest and Relaxation
@@ -485,9 +484,9 @@ _.Zones =
 				q(176, {	-- Wanted: "Hogger"
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
-					["qgs"] = {
-					--["objectID"] = 68,	-- Wanted Poster
-					--["objectID"] = 156561,	-- Wanted Poster
+					["providers"] = {
+						{ "o", 68 },	-- Wanted Poster
+						{ "o", 156561 },	-- Wanted Poster
 					},
 					["sourceQuest"] = 239,	-- Westbrook Garrison Needs Help!
 					["g"] = {

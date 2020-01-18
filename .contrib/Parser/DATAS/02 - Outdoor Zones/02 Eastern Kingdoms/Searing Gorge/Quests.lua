@@ -148,7 +148,6 @@ _.Zones =
 				q(7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["lvl"] = 45,
 					["provider"] = { "o", 179827 },	-- Wanted\/Missing\/Lost & Found
-					--["objectID"] = 179827,	-- Wanted\/Missing\/Lost & Found
 					["g"] = {
 						i(19124),	-- Slagplate Leggings
 						i(19123),	-- Everwarm Handwraps
@@ -240,7 +239,6 @@ _.Zones =
 				q(7701, {	-- WANTED: Overseer Maltorius
 					["lvl"] = 45,
 					["provider"] = { "o", 179827 },	-- Wanted\/Missing\/Lost & Found
-					--["objectID"] = 179827,	-- Wanted\/Missing\/Lost & Found
 					["g"] = {
 						i(19128),	-- Seared Mail Vest
 						i(19127),	-- Charred Leather Tunic

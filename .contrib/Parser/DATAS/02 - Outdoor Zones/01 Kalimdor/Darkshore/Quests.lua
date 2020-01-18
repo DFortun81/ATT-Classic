@@ -59,71 +59,71 @@ _.Zones =
 				q(4730, {	-- Beached Sea Creature
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175227,	-- Beached Sea Creature
+					["provider"] = { "o", 175227 },	-- Beached Sea Creature
 					["coord"] = { 32.7, 80.9, DARKSHORE },
 				}),
 				q(4728, {	-- Beached Sea Creature
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175226,	-- Beached Sea Creature
+					["provider"] = { "o", 175226 },	-- Beached Sea Creature
 					["coord"] = { 36.0, 70.8, DARKSHORE },
 				}),
 				q(4733, {	-- Beached Sea Creature
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175230,	-- Beached Sea Creature
+					["provider"] = { "o", 175230 },	-- Beached Sea Creature
 					["coord"] = { 31.2, 87.4, DARKSHORE },
 				}),
 				q(4723, {	-- Beached Sea Creature
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 42.0, 31.6, DARKSHORE },
-					--["objectID"] = 175233,	-- Beached Sea Creature
+					["provider"] = { "o", 175233 },	-- Beached Sea Creature
 				}),
 				q(4731, {	-- Beached Sea Turtle
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176198,	-- Beached Sea Turtle
+					["provider"] = { "o", 176198 },	-- Beached Sea Creature
 					["coord"] = { 31.7, 83.7, DARKSHORE },
 				}),
 				q(4727, {	-- Beached Sea Turtle
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176196,	-- Beached Sea Turtle
+					["provider"] = { "o", 176196 },	-- Beached Sea Creature
 					["coord"] = { 53.1, 18.1, DARKSHORE },
 				}),
 				q(4725, {	-- Beached Sea Turtle
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176197,	-- Beached Sea Turtle
+					["provider"] = { "o", 176197 },	-- Beached Sea Creature
 					["coord"] = { 44.2, 20.7, Darkshore },
 				}),
 				q(4732, {	-- Beached Sea Turtle
 					["lvl"] = 13,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176191,	-- Beached Sea Turtle
+					["provider"] = { "o", 176191 },	-- Beached Sea Creature
 					["coord"] = { 31.2, 85.6, DARKSHORE },
 				}),
 				q(4722, {	-- Beached Sea Turtle
 					["lvl"] = 11,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 176190,	-- Beached Sea Turtle
+					["provider"] = { "o", 176190 },	-- Beached Sea Creature
 					["coord"] = { 37.2, 62.2, DARKSHORE },
 				}),
 				q(1002, {	-- Buzzbox 323
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 17183,	-- Buzzbox 411
+					["provider"] = { "o", 17183 },	-- Buzzbox 411
 				}),
 				q(1001, {	-- Buzzbox 411
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 17182,	-- Buzzbox 827
+					["provider"] = { "o", 17182 },	-- Buzzbox 827
 				}),
 				q(1003, {	-- Buzzbox 525
 					["lvl"] = 7,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 17184,	-- Buzzbox 323
+					["provider"] = { "o", 17184 },	-- Buzzbox 323
 					["g"] = {
 						i(2082),	-- Wizbang's Gunnysack
 						i(11846),	-- Wizbang's Special Brew
@@ -304,7 +304,7 @@ _.Zones =
 				q(950, {	-- Return to Onu
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 12666,	-- Twilight Tome
+					["provider"] = { "o", 12666 },	-- Twilight Tome
 				}),
 				q(2139, {	-- Tharnariun's Hope
 					["lvl"] = 10,
@@ -383,7 +383,7 @@ _.Zones =
 				q(4813, {	-- The Fragments Within
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175524,	-- Mysterious Red Crystal
+					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal
 					["g"] = {
 						i(15335),	-- Briarsteel Shortsword
 						i(15396),	-- Curvewood Dagger
@@ -458,7 +458,7 @@ _.Zones =
 				q(949, {	-- The Twilight Camp
 					["lvl"] = 12,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 10076,	-- Scrying Bowl
+					["provider"] = { "o", 10076 },	-- Scrying Bowl
 				}),
 				q(945, {	-- Therylune's Escape
 					["lvl"] = 10,
@@ -490,7 +490,7 @@ _.Zones =
 				q(4740, {	-- WANTED: Murkdeep!
 					["lvl"] = 15,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 175320,	-- WANTED: Murkdeep!
+					["provider"] = { "o", 175320 }, -- WANTED: Murkdeep!
 					["g"] = {
 						i(5315),	-- Timberland Armguards
 						i(15403),	-- Ridgeback Bracers

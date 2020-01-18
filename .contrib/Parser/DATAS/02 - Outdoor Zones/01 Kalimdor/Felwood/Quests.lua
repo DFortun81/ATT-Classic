@@ -62,7 +62,7 @@ _.Zones =
 				q(4447, {	-- Corrupted Night Dragon
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164885,	-- Corrupted Night Dragon
+					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
 				}),
 				q(4448, {	-- Corrupted Night Dragon
 					["lvl"] = 48,
@@ -75,7 +75,7 @@ _.Zones =
 				q(4119, {	-- Corrupted Night Dragon
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164885,	-- Corrupted Night Dragon
+					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
 				}),
 				q(4506, {	-- Corrupted Sabers
 					["lvl"] = 49,
@@ -90,7 +90,7 @@ _.Zones =
 				q(3363, {	-- Corrupted Songflower
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164886,	-- Corrupted Songflower
+					["provider"] = { "o", 164886 },	-- Corrupted Songflower
 				}),
 				q(4401, {	-- Corrupted Songflower
 					["lvl"] = 48,
@@ -123,7 +123,7 @@ _.Zones =
 				q(2523, {	-- Corrupted Songflower
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164886,	-- Corrupted Songflower
+					["provider"] = { "o", 164886 },	-- Corrupted Songflower
 				}),
 				q(4461, {	-- Corrupted Whipper Root
 					["lvl"] = 48,
@@ -140,7 +140,7 @@ _.Zones =
 				q(4443, {	-- Corrupted Whipper Root
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164888,	-- Corrupted Whipper Root
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 				}),
 				q(4445, {	-- Corrupted Whipper Root
 					["lvl"] = 48,
@@ -149,7 +149,7 @@ _.Zones =
 				q(4117, {	-- Corrupted Whipper Root
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164888,	-- Corrupted Whipper Root
+					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
 				}),
 				q(4222, {	-- Corrupted Windblossom
 					["lvl"] = 48,
@@ -166,7 +166,7 @@ _.Zones =
 				q(4221, {	-- Corrupted Windblossom
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 174604,	-- Corrupted Windblossom
+					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
 				}),
 				q(4467, {	-- Corrupted Windblossom
 					["lvl"] = 48,
@@ -187,12 +187,12 @@ _.Zones =
 				q(998, {	-- Corrupted Windblossom
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164887,	-- Corrupted Windblossom
+					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
 				}),
 				q(996, {	-- Corrupted Windblossom
 					["lvl"] = 48,
 					["repeatable"] = true,
-					--["objectID"] = 164887,	-- Corrupted Windblossom
+					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
 				}),
 				q(8461, {	-- Deadwood of the North
 					["lvl"] = 45,

@@ -365,7 +365,7 @@ _.Zones =
 				q(779, {	-- Seal of the Earth
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 2933,	-- Seal of the Earth
+					["provider"] = { "o", 2933 },	-- Seal of the Earth
 					["altQuests"] =	{
 						717,	-- Tremors of the Earth
 					},

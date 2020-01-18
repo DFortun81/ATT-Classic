@@ -114,7 +114,7 @@ _.Zones =
 				}),
 				q(6161, {	-- Claim Rackmore's Treasure!
 					["lvl"] = 30,
-					--["objectID"] = 177787,	-- Rackmore's Log
+					["provider"] = { "o", 177787 }, -- Rackmore's Log
 					["g"] = {
 						i(16788),	-- Captain Rackmore's Wheel
 						i(16789),	-- Captain Rackmore's Tiller
@@ -449,7 +449,7 @@ _.Zones =
 				q(1455, {	-- The Karnitol Shipwreck
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 35251,	-- Karnitol's Chest
+					["provider"] = { "o", 35251 }, -- Karnitol's Chest
 				}),
 				q(1456, {	-- The Karnitol Shipwreck
 					["lvl"] = 30,
@@ -483,7 +483,7 @@ _.Zones =
 				q(1465, {	-- Vahlarriel's Search
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 50961,	-- Malem Chest
+					["provider"] = { "o", 50961 }, -- Malem Chest
 				}),
 				q(1438, {	-- Vahlarriel's Search
 					["lvl"] = 30,

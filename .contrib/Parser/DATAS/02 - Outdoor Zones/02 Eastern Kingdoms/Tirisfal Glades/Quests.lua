@@ -114,7 +114,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					--["objectID"] = 1586,	-- Crate of Candles
+					["provider"] = { "o", 1586 },	--  Crate of Candles
 					["g"] = {
 						i(3080),	-- Candle of Beckoning
 					},
@@ -390,7 +390,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					--["objectID"] = 1557,	-- Lillith's Dinner Table
+					["provider"] = { "o", 1557 },	--  Lillith's Dinner Table
 				}),
 				q(408, {	-- The Family Crypt
 					["lvl"] = 7,
@@ -487,7 +487,6 @@ _.Zones =
 					["lvl"] = 6,
 					["races"] = HORDE_ONLY,
 					["provider"] = { "i", 711 }, -- Wanted!
-					--["objectID"] = 711,	-- Wanted!
 					["g"] = {
 						i(5941),	-- Brass Scale Pants
 						i(3444),	-- Tiller's Vest

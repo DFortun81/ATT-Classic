@@ -409,7 +409,7 @@ _.Zones =
 				q(931, {	-- The Shimmering Frond
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
-					--["objectID"] = 6752,	-- Strange Fronded Plant
+					["provider"] = { "o", 6752 },	-- Strange Fronded Plant
 				}),
 				q(2541, {	-- The Sleeping Druid
 					["lvl"] = 3,

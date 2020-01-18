@@ -196,7 +196,7 @@ _.Zones =
 				q(8743, {	-- Bang a Gong!
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
-					--["objectID"] = 180717,	-- The Scarab Gong
+					["provider"] = { "o", 180717 },	-- The Scarab Gong
 					["g"] = {
 						i(21176),	-- Black Qiraji Resonating Crystal
 					},
@@ -883,7 +883,7 @@ _.Zones =
 				q(8283, {	-- Wanted - Deathclasp, Terror of the Sands
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 54,
-					--["objectID"] = 180448,	-- Wanted Poster: Deathclasp
+					["provider"] = { "o", 180448 },	-- Wanted Poster: Deathclasp
 					["g"] = {
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
