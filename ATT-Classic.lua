@@ -2734,7 +2734,7 @@ app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
 		cmd = cmd:match("^%s*(.+)$");
-		if cmd == "clear" then
+		if cmd == "clear" or cmd == '0' then
 			app:UpdateSoftReserve(guid, nil, time(), isSilentMode, isCurrentPlayer);
 			return;
 		end
@@ -2869,7 +2869,7 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp)
 	
 	-- Update the Reservation
 	wipe(searchCache);
-	if itemID then
+	if itemID and itemID > 0 then
 		reserves[guid] = { itemID, timeStamp or time() };
 		local reservesForItem = reservesByItemID[itemID];
 		if not reservesForItem then
@@ -9050,8 +9050,18 @@ app.events.CHAT_MSG_WHISPER = function(text, playerName, _, _, _, _, _, _, _, _,
 	local action = strsub(text, 1, 1);
 	if action == '!' then	-- Send
 		local lowercased = string.lower(text);
-		if strsub(lowercased, 2, 3) == "sr" then
+		local cmd = strsub(lowercased, 2, 3);
+		if cmd == "sr" then
 			app:ParseSoftReserve(guid, strsub(text, 4));
+		elseif cmd == "mc" then
+			GetDataSubMember("GroupQuestsByGUID", guid, {})[7848] = 1;
+		else
+			cmd = strsub(lowercased, 2, 4);
+			if cmd == "ony" then
+				GetDataSubMember("GroupQuestsByGUID", guid, {})[app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502] = 1;
+			elseif cmd == "bwl" then
+				GetDataSubMember("GroupQuestsByGUID", guid, {})[7761] = 1;
+			end
 		end
 	elseif action == '?' then	-- Request
 		local lowercased = string.lower(text);
