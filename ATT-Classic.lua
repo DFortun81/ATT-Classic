@@ -2730,12 +2730,12 @@ app.BaseSoftReserveUnit = {
 app.CreateSoftReserveUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
 end
-app.ParseSoftReserve = function(app, guid, cmd)
+app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
 		cmd = cmd:match("^%s*(.+)$");
 		if cmd == "clear" then
-			app:UpdateSoftReserve(guid, nil);
+			app:UpdateSoftReserve(guid, nil, time(), isSilentMode, isCurrentPlayer);
 			return;
 		end
 		
@@ -2748,10 +2748,92 @@ app.ParseSoftReserve = function(app, guid, cmd)
 		if group and #group > 0 then
 			for i,g in ipairs(group) do
 				if g.itemID then
-					app:UpdateSoftReserve(guid, g.itemID);
+					app:UpdateSoftReserve(guid, g.itemID, time(), isSilentMode, isCurrentPlayer);
 					return true;
 				end
 			end
+		end
+	end
+	
+	-- Send back an error message.
+	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
+end
+app.QuerySoftReserve = function(app, guid, cmd, isCurrentPlayer)
+	-- Attempt to parse the command.
+	if cmd and cmd ~= "" then
+		local all = not IsInGroup() or not IsGUIDInGroup(guid);
+		cmd = cmd:match("^%s*(.+)$");
+		if strsub(cmd, 1, 3) == "all" then
+			cmd = strsub(cmd, 4):match("^%s*(.+)$");
+			all = true;
+		end
+		
+		-- Parse out the itemID if possible.
+		local itemID = tonumber(cmd) or GetItemInfoInstant(cmd);
+		if itemID then cmd = "itemid:" .. itemID; end
+		
+		-- Search for the Link in the database
+		local group = SearchForLink(cmd);
+		if group and #group > 0 then
+			for i,g in ipairs(group) do
+				if g.itemID then
+					local link = g.link;
+					if not link or link == RETRIEVING_DATA or strsub(link, 1, 4) == "item" then
+						link = "item:" .. g.itemID;
+					end
+					local sr = {};
+					local message = link .. " ";
+					local reservesForItem = GetTempDataMember("SoftReservesByItemID")[g.itemID];
+					if reservesForItem then
+						for i,guid in ipairs(reservesForItem) do
+							if guid and (all or IsGUIDInGroup(guid)) then
+								local unit = app.CreateSoftReserveUnit(guid);
+								table.insert(sr, unit.unitText and unit.name or guid);
+							end
+						end
+					end
+					if #sr == 0 then
+						if all then
+							message = message .. "Not Soft Reserved by anyone.";
+						else
+							message = message .. "Not Soft Reserved by anyone in our group.";
+						end
+					else
+						for i,name in ipairs(sr) do
+							if i > 1 then message = message .. ", "; end
+							message = message .. name;
+						end
+					end
+					SendGUIDWhisper(message, guid);
+					return true;
+				end
+			end
+		end
+	else
+		local reserve = rawget(GetDataMember("SoftReserves"), guid);
+		if reserve then
+			-- Parse out the itemID if possible.
+			local itemID = type(reserve) == 'number' and reserve or reserve[1];
+			if itemID then itemID = "itemid:" .. itemID; end
+			print(itemID);
+			
+			-- Search for the Link in the database
+			local group = SearchForLink(itemID);
+			if group and #group > 0 then
+				for i,g in ipairs(group) do
+					if g.itemID then
+						local link = g.link;
+						if not link or link == RETRIEVING_DATA or strsub(link, 1, 4) == "item" then
+							link = "item:" .. g.itemID;
+						end
+						SendGUIDWhisper("You have " .. link .. " Soft Reserved.", guid);
+						return true;
+					end
+				end
+			end
+		else
+			SendGUIDWhisper("You have nothing Soft Reserved.", guid);
+			return true;
 		end
 	end
 	
@@ -2787,16 +2869,20 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp)
 	
 	-- Update the Reservation
 	wipe(searchCache);
-	reserves[guid] = { itemID, timeStamp or time() };
-	local reservesForItem = reservesByItemID[itemID];
-	if not reservesForItem then
-		reservesForItem = {};
-		reservesByItemID[itemID] = reservesForItem;
+	if itemID then
+		reserves[guid] = { itemID, timeStamp or time() };
+		local reservesForItem = reservesByItemID[itemID];
+		if not reservesForItem then
+			reservesForItem = {};
+			reservesByItemID[itemID] = reservesForItem;
+		end
+		table.insert(reservesForItem, guid);
+	else
+		reserves[guid] = nil;
 	end
-	table.insert(reservesForItem, guid);
 end
-app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode)
-	if GetDataMember("SoftReserves")[guid] and app.Settings:GetTooltipSetting("SoftReservesLocked") then
+app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCurrentPlayer)
+	if IsInGroup() and GetDataMember("SoftReserves")[guid] and app.Settings:GetTooltipSetting("SoftReservesLocked") then
 		if not silentMode then
 			SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
 		end
@@ -8159,7 +8245,7 @@ SLASH_ATTCSR6 = "/softreserve";
 SLASH_ATTCSR7 = "/softreserves";
 SlashCmdList["ATTCSR"] = function(cmd)
 	if cmd and cmd ~= "" then
-		app:ParseSoftReserve(UnitGUID("player"), cmd);
+		app:ParseSoftReserve(UnitGUID("player"), cmd, true, true);
 	else
 		-- Default command
 		app:GetWindow("SoftReserves"):Toggle();
@@ -8954,17 +9040,33 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 					app.events.CHAT_MSG_ADDON(prefix, strsub(text, 5 + strlen(a)), "WHISPER", sender);
 				end
 			elseif cmd == "sr" then -- Soft Reserve Command
-				app:ParseSoftReserve(UnitGUID(target), a);
+				app:ParseSoftReserve(UnitGUID(target), a, true);
 			end
 		end
 	end
 end
 app.events.CHAT_MSG_WHISPER = function(text, playerName, _, _, _, _, _, _, _, _, _, guid)
 	text = text:match("^%s*(.+)$") or "";
-	if strsub(text, 1, 1) == '!' then
+	local action = strsub(text, 1, 1);
+	if action == '!' then	-- Send
 		local lowercased = string.lower(text);
 		if strsub(lowercased, 2, 3) == "sr" then
 			app:ParseSoftReserve(guid, strsub(text, 4));
+		end
+	elseif action == '?' then	-- Request
+		local lowercased = string.lower(text);
+		if strsub(lowercased, 2, 3) == "sr" then
+			-- Turn off the AskPrice addon message if it's a Soft Reserve.
+			if AucAdvanced and AucAdvanced.Settings then
+				local oldSetting = AucAdvanced.Settings.GetSetting('util.askprice.activated');
+				if oldSetting then
+					AucAdvanced.Settings.SetSetting("util.askprice.activated", false);
+					C_Timer.After(0.01, function()
+						AucAdvanced.Settings.SetSetting("util.askprice.activated", true);
+					end);
+				end
+			end
+			app:QuerySoftReserve(guid, strsub(text, 4));
 		end
 	end
 end
