@@ -2576,6 +2576,21 @@ local classIcons = {
 	[9] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warlock",
 	[11] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Druid",
 };
+local SoftReserveUnitOnClick = function(self, button)
+	if button == "RightButton" then
+		app:ShowPopupDialog((self.ref.text or "??") .. "\n \nAre you sure you want to delete this entry?",
+		function()
+			local guid = self.ref.guid;
+			if guid then
+				app:UpdateSoftReserveInternal(guid, nil);
+				app:GetWindow("SoftReserves"):Update(true);
+			end
+		end);
+	else
+		
+	end
+	return true;
+end
 app.GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
 		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
@@ -2721,6 +2736,8 @@ app.BaseSoftReserveUnit = {
 				text = text .. " |CFFFFFFFF(Not in Group)|r";
 			end
 			return text;
+		elseif key == "OnClick" then
+			return SoftReserveUnitOnClick;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
