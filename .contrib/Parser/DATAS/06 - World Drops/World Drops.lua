@@ -120,6 +120,7 @@ _.WorldDrops =
 			i(2992),  -- Burnished Gloves
 			i(3058),  -- Forest Leather Gloves
 			i(3066),  -- Bright Gloves
+			i(6428),  -- Mistcape Gloves
 			i(6541),  -- Willow Gloves
 			i(6547),  -- Soldier's Gauntlets
 			i(6554),  -- Bard's Gloves
