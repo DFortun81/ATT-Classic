@@ -2774,7 +2774,7 @@ app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
-app.QuerySoftReserve = function(app, guid, cmd, isCurrentPlayer)
+app.QuerySoftReserve = function(app, guid, cmd, target)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
 		local all = not IsInGroup() or not IsGUIDInGroup(guid);
@@ -2782,6 +2782,48 @@ app.QuerySoftReserve = function(app, guid, cmd, isCurrentPlayer)
 		if strsub(cmd, 1, 3) == "all" then
 			cmd = strsub(cmd, 4):match("^%s*(.+)$");
 			all = true;
+		elseif cmd == "srml" then
+			if IsInGroup() then
+				-- If the requester is in the group, then you've gotta be the Master Looter to respond.
+				if IsGUIDInGroup(guid) then
+					local lootMethod, partyIndex, raidIndex = GetLootMethod();
+					if lootMethod == "master" then
+						local visible = true;
+						if raidIndex then
+							if UnitName("player") ~= GetRaidRosterInfo(raidIndex) then
+								return true;
+							end
+						elseif partyIndex ~= 0 then
+							if UnitName("player") ~= UnitName("party" .. partyIndex) then
+								return true;
+							end
+						end
+					end
+				end
+				
+				local reserves = GetDataMember("SoftReserves");
+				if reserves then
+					local count, length, msg, s = 7, 0, "!\tsrml";
+					for gu,reserve in pairs(reserves) do
+						if gu and IsGUIDInGroup(gu) then
+							s = "\t" .. gu .. "\t" .. reserve[1];
+							length = string.len(s);
+							if count + length >= 255 then
+								C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", target);
+								count = 7;
+								msg = "!\tsrml";
+							else
+								count = count + length;
+								msg = msg .. s;
+							end
+						end
+					end
+					if count > 5 then
+						C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", target);
+					end
+				end
+			end
+			return true;
 		end
 		
 		-- Parse out the itemID if possible.
@@ -7626,6 +7668,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					
 					-- Insert Control Methods
 					table.insert(g, 1, app.CreateSoftReserveUnit(app.GUID));
+					table.insert(g, 1, data.queryMasterLooter);
 					table.insert(g, 1, data.queryGuildMembers);
 					table.insert(g, 1, data.queryGroupMembers);
 					table.insert(g, 1, data.lockSoftReserves);
@@ -7735,6 +7778,38 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end,
 					['OnUpdate'] = function(data)
 						data.visible = not app.Settings:GetTooltipSetting("SoftReservesLocked");
+					end,
+					['back'] = 0.5,
+				},
+				['queryMasterLooter'] = {
+					['text'] = "Query Master Looter",
+					['icon'] = "Interface\\Icons\\INV_Wand_06",
+					['description'] = "Press this button to send an addon message to the Master Looter for a list of all the Soft Reserves in the raid.",
+					['visible'] = true,
+					['cooldown'] = 0,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						SendGroupMessage("?\tsrml");
+						self:Reset();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						if IsInGroup() then
+							local lootMethod, partyIndex, raidIndex = GetLootMethod();
+							if lootMethod == "master" then
+								if raidIndex then
+									data.visible = UnitName("player") ~= GetRaidRosterInfo(raidIndex);
+								elseif partyIndex == 0 then
+									data.visible = false;
+								else
+									data.visible = UnitName("player") ~= UnitName("party" .. partyIndex);
+								end
+							else
+								data.visible = false;
+							end
+						else
+							data.visible = false;
+						end
 					end,
 					['back'] = 0.5,
 				},
@@ -9024,6 +9099,8 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							local softReserve = GetDataMember("SoftReserves")[app.GUID];
 							response = "sr" .. "\t" .. app.GUID .. "\t" .. (softReserve and ((softReserve[1] or 0) .. "\t" .. (softReserve[2] or 0)) or "0\t0");
 						end
+					elseif a == "srml" then -- Soft Reserve (Master Looter) Command
+						app:QuerySoftReserve(UnitGUID(target), a, target);
 					end
 				else
 					local data = app:GetWindow("Prime").data;
@@ -9043,9 +9120,13 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							if c == 1 then table.insert(processor, { target, "q", b }); end
 							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
-						print(response .. target);
 					elseif a == "sr" then
 						app:UpdateSoftReserve(args[3], tonumber(args[4]), tonumber(args[5]), true);
+					elseif a == "srml" then
+						for i=3,#args,2 do
+							app:UpdateSoftReserveInternal(args[i], tonumber(args[i + 1]));
+						end
+						app:GetWindow("SoftReserves"):Update(true);
 					end
 				end
 			elseif cmd == "to" then	-- To Command
