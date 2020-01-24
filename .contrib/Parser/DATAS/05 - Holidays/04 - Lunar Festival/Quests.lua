@@ -100,7 +100,13 @@ _.Holidays =
 				},
 				["g"] = {
 					i(21640),	-- Lunar Festival Fireworks Pack
-					i(21741),	-- Cluster Rocket Recipes
+					i(21741, {	-- Cluster Rocket Recipes
+						["g"] = {
+							i(21730),	-- Schematic: Blue Rocket Cluster
+							i(21731),	-- Schematic: Green Rocket Cluster
+							i(21732),	-- Schematic: Red Rocket Cluster
+						},
+					}),
 				},
 			}),
 			q(8648, {	-- Darkcore the Elder
@@ -192,7 +198,7 @@ _.Holidays =
 				},
 			}),
 			q(8864, {	-- Festive Lunar Dresses
-				["isYearly"] = true,
+				["repeatable"] = true,
 				["lvl"] = 1,
 				["qg"] = 15864,  -- Valadar Starsong
 				["coord"] = { 53.7, 35.2, MOONGLADE },
@@ -334,7 +340,13 @@ _.Holidays =
 				},
 				["g"] = {
 					i(21640),	-- Lunar Festival Fireworks Pack
-					i(21743),	-- Large Cluster Rocket Recipes
+					i(21743, {	-- Large Cluster Rocket Recipes
+						["g"] = {
+							i(21733),	-- Schematic: Large Blue Rocket Cluster
+							i(21734),	-- Schematic: Large Green Rocket Cluster
+							i(21735),	-- Schematic: Large Red Rocket Cluster
+						},
+					}),
 				},
 			}),
 			q(8879, {	-- Large Rockets
@@ -348,7 +360,13 @@ _.Holidays =
 				},
 				["g"] = {
 					i(21640),	-- Lunar Festival Fireworks Pack
-					i(21742),	-- Large Rocket Recipes
+					i(21742, {	-- Large Rocket Recipes
+						["g"] = {
+							i(21727),	-- Schematic: Large Blue Rocket
+							i(21728),	-- Schematic: Large Green Rocket
+							i(21729),	-- Schematic: Large Red Rocket
+						},
+					}),
 				},
 			}),
 			q(8867, {	-- Lunar Fireworks
@@ -548,7 +566,13 @@ _.Holidays =
 				},
 				["g"] = {
 					i(21640),	-- Lunar Festival Fireworks Pack
-					i(21740),	-- Small Rocket Recipes
+					i(21740, {	-- Small Rocket Recipes
+						["g"] = {
+							i(21724),	-- Schematic: Small Blue Rocket
+							i(21725),	-- Schematic: Small Green Rocket
+							i(21726),	-- Schematic: Small Red Rocket
+						},
+					}),
 				},
 			}),
 			q(8650, {	-- Snowcrown the Elder
