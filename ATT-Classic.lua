@@ -1479,12 +1479,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				
 				-- Show Reservations
 				local reservesForItem = GetTempDataMember("SoftReservesByItemID")[itemID];
-				if reservesForItem then
+				if reservesForItem and app.Settings:GetTooltipSetting("SoftReserves") then
 					local left = "Soft Reserves";
 					for i,guid in ipairs(reservesForItem) do
-						local name = app.CreateSoftReserveUnit(guid).tooltipText;
 						if guid and IsGUIDInGroup(guid) then
-							tinsert(info, { left = left, right = name });
+							tinsert(info, { left = left, right = app.CreateSoftReserveUnit(guid).tooltipText });
 							left = nil;
 						end
 					end
@@ -7710,7 +7709,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				},
 				['queryGroupMembers'] = {
 					['text'] = "Query Group Members",
-					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['icon'] = "Interface\\Icons\\INV_Wand_05",
 					['description'] = "Press this button to send an addon message to your Group Members to update their Soft Reserves.",
 					['visible'] = true,
 					['g'] = {},
@@ -7726,7 +7725,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				},
 				['queryGuildMembers'] = {
 					['text'] = "Query Guild Members",
-					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['icon'] = "Interface\\Icons\\INV_Wand_04",
 					['description'] = "Press this button to send an addon message to your Guild Members to update their Soft Reserves.",
 					['visible'] = true,
 					['g'] = {},

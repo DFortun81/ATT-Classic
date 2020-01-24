@@ -121,6 +121,7 @@ local TooltipSettingsBase = {
 		["Report:Collected"] = true,
 		["ShowIconOnly"] = false,
 		["Show:Remaining"] = false,
+		["SoftReserves"] = true,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
@@ -1275,6 +1276,7 @@ function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
 	if not settings:GetTooltipSetting("Enabled") then
 		self:Disable();
+		self:Disable();
 		self:SetAlpha(0.2);
 	else
 		self:Enable();
@@ -1355,6 +1357,23 @@ end);
 ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
 ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowSoftReservesCheckBox = settings:CreateCheckBox("Show Soft Reserves",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SoftReserves"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SoftReserves", self:GetChecked());
+end);
+ShowSoftReservesCheckBox:SetATTTooltip("Enable this option if you want to see Soft Reserves made by your Raid Members within the ATT database in the tooltip.");
+ShowSoftReservesCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Show Source Locations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
@@ -1370,7 +1389,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
 ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
-ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowSoftReservesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed Sources",
 function(self)
