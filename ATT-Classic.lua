@@ -2831,7 +2831,6 @@ app.QuerySoftReserve = function(app, guid, cmd, isCurrentPlayer)
 			-- Parse out the itemID if possible.
 			local itemID = type(reserve) == 'number' and reserve or reserve[1];
 			if itemID then itemID = "itemid:" .. itemID; end
-			print(itemID);
 			
 			-- Search for the Link in the database
 			local group = SearchForLink(itemID);
