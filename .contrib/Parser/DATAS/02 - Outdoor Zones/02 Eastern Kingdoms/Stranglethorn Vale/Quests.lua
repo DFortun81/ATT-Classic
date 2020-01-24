@@ -256,6 +256,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4278, 4 },	-- Lesser Bloodstone Ore
+					},
 				}),
 				q(593, {	-- Filling the Soul Gem
 					["races"] = HORDE_ONLY,

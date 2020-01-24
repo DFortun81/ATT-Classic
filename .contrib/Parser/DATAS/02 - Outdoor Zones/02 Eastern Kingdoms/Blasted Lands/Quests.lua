@@ -73,6 +73,7 @@ _.Zones =
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9540,	-- Enohar Thunderbrew
+					["isBreadcrumb"] = true,
 				}),
 				q(2993, {	-- Return to the Hinterlands
 					["sourceQuest"] = 2992,	-- The Divination

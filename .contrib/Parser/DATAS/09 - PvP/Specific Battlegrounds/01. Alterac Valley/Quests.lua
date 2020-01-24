@@ -308,6 +308,7 @@ _.PvP =
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
 								["qg"] = 13797, -- Mountaineer Boombellow
+								["isBreadcrumb"] = true,
 							}),
 							q(7261, { -- The Sovereign Imperative
 								["lvl"] = 51,

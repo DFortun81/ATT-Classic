@@ -53,6 +53,7 @@ _.Zones =
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+					["cost"] = { "i", 3672 },	-- Head of Nagaz
 				}),
 				q(511, {	-- Encrypted Letter
 					["providers"] = {

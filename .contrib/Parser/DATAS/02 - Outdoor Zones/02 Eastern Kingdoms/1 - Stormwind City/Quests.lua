@@ -476,6 +476,7 @@ _.Zones =
 					["qg"] = 4984,  -- Argos Nightwhisper
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
+					["isBreadcrumb"] = true,
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["lvl"] = 14,

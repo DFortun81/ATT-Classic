@@ -53,6 +53,7 @@ _.WorldDrops =
 			i(14331),  -- Eternal Cloak
 			i(14571),  -- Bristlebark Cape
 			i(15114),  -- Rigid Cape
+			i(15147),  -- Ghostwalker Cloak
 			i(15501),  -- Outrunner's Cloak
 			i(15594),  -- Steadfast Cloak
 			i(15661),  -- Impenetrable Cloak
@@ -87,6 +88,7 @@ _.WorldDrops =
 		n(-324, {	-- Shirt
 		}),
 		n(-326, {	-- Wrist
+			i(3202),  -- Forest Leather Bracers
 			i(3211),  -- Burnished Bracers
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
@@ -140,7 +142,6 @@ _.WorldDrops =
 			i(4697),  -- Burnished Girdle
 			i(4699),  -- Seer's Belt
 			i(4708),  -- Bright Belt
-			i(10381),	-- Commander's Girdle
 			i(4738),  -- Imperial Leather Belt
 			i(6409),  -- Insignia Belt
 			i(6418),  -- Aurora Sash
@@ -152,11 +153,13 @@ _.WorldDrops =
 			i(9801),  -- Superior Belt
 			i(9891),  -- Huntsman's Belt
 			i(9906),  -- Royal Sash
+			i(9968),  -- Embossed Plate Girdle
 			i(10098),  -- Councillor's Cloak
 			i(10103),  -- Councillor's Sash
 			i(10166),  -- Templar Girdle
 			i(10221),  -- Nightshade Girdle
 			i(10269),  -- Masterwork Girdle
+			i(10381),	-- Commander's Girdle
 			i(14131),  -- Ritual Belt
 			i(14167),  -- Buccaneer's Cape
 			i(14173),  -- Buccaneer's Cord
@@ -207,6 +210,7 @@ _.WorldDrops =
 			i(3057),  -- Forest Leather Boots
 			i(3307),  -- Barbaric Cloth Boots
 			i(6412),  -- Chief Brigadier Boots
+			i(6423),  -- Blackforge Greaves
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
 			i(9917),  -- Tracker's Boots
@@ -221,6 +225,7 @@ _.WorldDrops =
 		}),
 		filter(51, {	-- Neck
 			i(4614),  -- Pendant of Myzrael
+			i(5003),  -- Crystal Starfire Medallion
 			i(13087),  -- River Pride Choker
 		}),
 		filter(52, {	-- Finger
@@ -232,6 +237,7 @@ _.WorldDrops =
 			i(11982),  -- Viridian Band
 			i(11993),  -- Clay Ring
 			i(12007),  -- Prairie RIng
+			i(12009),  -- Tundra Ring
 			i(12056),  -- Ring of the Heavens
 		}),
 	}),
@@ -283,6 +289,7 @@ _.WorldDrops =
 		}),
 		n(-345, {	-- Guns
 			i(3042),  -- BKP "Sparrow" Smallbore
+			i(3430),  -- Sniper Rifle
 			i(8188),  -- Explosive Shotgun
 			i(13136),  -- Lil Timmi's Peashooter
 			i(15323),  -- Percussion Shotgun
@@ -342,6 +349,7 @@ _.WorldDrops =
 		n(-339, {	-- 2H Swords
 			i(647),  -- Destiny
 			i(3196),  -- Edged Bastard Sword
+			i(3197),  -- Stonecutter Claymore
 			i(3206),  -- Cavalier Two-Hander
 			i(4567),  -- Merc Sword
 			i(8178),  -- Training Sword

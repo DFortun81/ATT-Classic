@@ -294,6 +294,7 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7316,	-- Sister Aquinne
+					["isBreadcrumb"] = true,
 				}),
 				q(9063, {	-- Torwa Pathfinder
 					["u"] = 3,	-- Added in later phase
