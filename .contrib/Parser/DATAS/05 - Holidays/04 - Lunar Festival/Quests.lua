@@ -490,7 +490,7 @@ _.Holidays =
 				["lvl"] = 1,
 				["qg"] = 15605,	-- Elder Riversong
 				["maps"] = { ASHENVALE },
-				["coord"] = { 34.6, 48.8, ASHENVALE },
+				["coord"] = { 35.53, 48.91, ASHENVALE },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
 				},
@@ -605,10 +605,11 @@ _.Holidays =
 				},
 			}),
 			q(8713, {	-- Starsong the Elder
+				["qg"] = 15593,	-- Elder Starsong
+				["description"] = "Inside of Sunken Temple. From the entrance, take a left up the spiral staircase. You will need to fight and kill the first dragon pack. Continue down the hallway and hang left into the room with all the dragonkin and then again into the alcove.",
+				["maps"] = { SUNKEN_TEMPLE },
 				["isYearly"] = true,
 				["lvl"] = 1,
-				["qg"] = 15593,	-- Elder Starsong
-				["maps"] = { SUNKEN_TEMPLE },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
 				},
