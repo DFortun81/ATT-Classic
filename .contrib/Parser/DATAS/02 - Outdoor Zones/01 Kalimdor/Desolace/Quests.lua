@@ -161,8 +161,12 @@ _.Zones =
 				}),
 				q(6134, {	-- Ghost-o-plasm Round Up
 					["lvl"] = 34,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6019,	-- Hornizz Brimbuzzle
+					["coord"] = { 47.8, 61.8, DESOLACE },
+					["cost"] = {
+						{ "i", 15848, 1 },	-- Crate of Ghost Magnets
+						{ "i", 15849, 8 },	-- Ghost-o-plasm
+					},
 					["g"] = {
 						i(15864),	-- Condor Bracers
 						i(15865),	-- Anchorhold Buckler
