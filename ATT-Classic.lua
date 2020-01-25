@@ -2585,10 +2585,8 @@ local SoftReserveUnitOnClick = function(self, button)
 				app:GetWindow("SoftReserves"):Update(true);
 			end
 		end);
-	else
-		
+		return true;
 	end
-	return true;
 end
 app.GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
