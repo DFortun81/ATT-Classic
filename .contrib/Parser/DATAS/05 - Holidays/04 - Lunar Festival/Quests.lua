@@ -293,7 +293,7 @@ _.Holidays =
 				["lvl"] = 1,
 				["races"] = ALLIANCE_ONLY,
 				["qg"] = 15562,  -- Elder Hammershout
-				["coord"] = { 54.3, 66.3, STORMWIND_CITY },
+				["coord"] = { 21.40, 53.87, STORMWIND_CITY },
 				["maps"] = { STORMWIND_CITY },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
@@ -401,7 +401,7 @@ _.Holidays =
 				["lvl"] = 1,
 				["qg"] = 15594,	-- Elder Moonstrike
 				["maps"] = { WESTERN_PLAGUELANDS },
-				["coord"] = { 52.7, 26.4, WESTERN_PLAGUELANDS },
+				["coord"] = { 69, 73, WESTERN_PLAGUELANDS },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
 				},
@@ -588,7 +588,7 @@ _.Holidays =
 			q(8635, {	-- Splitrock the Elder
 				["isYearly"] = true,
 				["lvl"] = 1,
-				["provider"] = 15556,	-- Elder Splitrock
+				["qg"] = 15556,	-- Elder Splitrock
 				["maps"] = { MARAUDON },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
@@ -597,9 +597,9 @@ _.Holidays =
 			q(8716, {	-- Starglade the Elder
 				["isYearly"] = true,
 				["lvl"] = 1,
-				["provider"] = 15596,	-- Elder Starglade
+				["qg"] = 15596,	-- Elder Starglade
 				["maps"] = { STRANGLETHORN_VALE },
-				["coord"] = { 53.1, 18.5, STRANGLETHORN_VALE },
+				["coord"] = { 53.11, 18.46, STRANGLETHORN_VALE },
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
 				},
@@ -769,7 +769,7 @@ _.Holidays =
 			q(8674, {	-- Winterhoof the Elder
 				["isYearly"] = true,
 				["lvl"] = 1,
-				["provider"] = 15576,	-- Elder Winterhoof
+				["qg"] = 15576,	-- Elder Winterhoof
 				["maps"] = { STRANGLETHORN_VALE },
 				["coord"] = { 27.6, 74.2, STRANGLETHORN_VALE },
 				["g"] = {
