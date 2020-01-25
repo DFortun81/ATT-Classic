@@ -582,7 +582,7 @@ _.Holidays =
 				},
 			}),
 			q(8644, {	-- Stonefort the Elder
-				["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge."
+				["description"] = "Located in Lower Blackrock Spire in Hordemar City. He can be found on the left as you cross the first wooden bridge.",
 				["isYearly"] = true,
 				["qg"] = 15560,	-- Elder Stonefort
 				["maps"] = { BLACKROCK_SPIRE },
