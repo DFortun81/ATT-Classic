@@ -25,11 +25,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1398, -- Driftwood
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["cost"] = {
+						{ "i", 6178, 1 },	-- Shipment to Nethergarde
+					},
 				}),
 				q(1389, {	-- Draenethyst Crystals
 					["lvl"] = 30,
 					["qg"] = 1776,	-- Magtoor
 					["coord"] = { 26.0, 31.4, SWAMP_OF_SORROWS },
+					["cost"] = {
+					{ "i", 6071, 6 },	-- Draenethyst Crystal
+				},
 				}),
 				q(1398, {	-- Driftwood
 					["lvl"] = 30,
@@ -37,6 +43,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1421, -- The Lost Caravan
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["cost"] = {
+						{ "i", 6146, 8 },	-- Wizards' Reagents
+					},
 				}),
 				q(1396, {	-- Encroaching Wildlife
 					["lvl"] = 30,
@@ -61,10 +70,10 @@ _.Zones =
 				q(1393, {	-- Galen's Escape
 					["lvl"] = 30,
 					["qg"] = 5391,	-- Galen Goodward
+					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
 					["g"] = {
 						i(6828),	-- Visionary Buckler
 					},
-					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
 				}),
 				q(2702, {	-- Heroes of Old
 					["lvl"] = 45,
@@ -121,6 +130,9 @@ _.Zones =
 					["lvl"] = 29,
 					["cr"] = 5477, -- Noboru the Cudgel
 					["provider"] = { "i", 6196 }, -- Noboru's Cudgel
+					["cost"] = {
+						{ "i", 6196, 1 },	-- Noboru's Cudgel
+					},
 				}),
 				q(2744, {	-- The Demon Hunter
 					["lvl"] = 45,
@@ -140,12 +152,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1396, -- Encroaching Wildlife
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["cost"] = {
+						{ "i", 6170, 1 },	-- Wizards' Reagents
+					},
 				}),
 				q(1423, {	-- The Lost Supplies
 					["repeatable"] = true,
 					["provider"] = { "i", 6172 },	-- Lost Supplies
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+					["cost"] = {
+						{ "i", 6172, 1 },	-- Lost Supplies
+					},
 					["g"] = {
 						i(6827),	-- Box of Supplies
 					},

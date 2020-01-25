@@ -528,7 +528,7 @@ _.Holidays =
 			q(8675, {	-- Skychaser the Elder
 				["isYearly"] = true,
 				["lvl"] = 1,
-				["provider"] = { "n", 15577 },	-- Elder Skychaser
+				["qg"] = 15577,	-- Elder Skychaser
 				["maps"] = { WESTFALL },
 				["coord"] = { 56.7, 47.1, WESTFALL },
 				["g"] = {
