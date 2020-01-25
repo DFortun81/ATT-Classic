@@ -497,6 +497,7 @@ _.Zones =
 				}),
 				q(3120, {  -- Verdant Sigil
 					["qg"] = 2079,  -- Conservator Ilthalaine
+					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 11 },  -- Druid
 				}),
 				q(917, {	-- Webwood Egg
