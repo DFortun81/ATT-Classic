@@ -333,26 +333,39 @@ _.Zones =
 					["lvl"] = 38,
 				}),
 				q(271, {	-- Vyrin's Revenge (1/2)
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(531, {	-- Vyrin's Revenge (2/2)
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 2713,	-- Ol' Sooty's Head
+							["questID"] = 531,	-- Vyrin's Revenge (2/2)
+							["cr"] = 1225,	-- Ol' Sooty
+							["coord"] = { 37.6, 62.6, LOCH_MODAN },
+						},
 						i(3574),	-- Hunting Ammo Sack
 						i(3573),	-- Hunting Quiver
 					},
 				}),
 				q(256, {	-- WANTED: Chok'sul
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 256 },	-- WANTED
+					["coord"] = { 37.2, 46.4, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
+						{
+							["itemID"] = 2561,	-- Chok'sul's Head
+							["questID"] = 256,	-- WANTED: Chok'sul
+							["cr"] = 1210,	-- Chok'sul
+							["coord"] = { 79.6, 14.2, LOCH_MODAN },
+						},
 						i(6189),	-- Durable Chain Shoulders
 						i(6191),	-- Kimbra Boots
 						i(1449),	-- Minor Channeling Ring
