@@ -437,6 +437,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 				}),
+				q(579, {	-- Stormwind Library
+					["races"] = ALLIANCE_ONLY,
+					["qg"] = 2504,	-- Donyal Tovald <Librarian>
+					["coord"] = { 71.6, 7.6, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 3898, 1 }, -- Library Scrip
+					},
+				}),
 				q(1688, { -- Surena Caledon
 					["lvl"] = 10,
 					["races"] = { 1, 7 }, -- Human and Gnome only

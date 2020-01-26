@@ -165,6 +165,9 @@ _.Zones =
 					},
 					["maps"] = { IRONFORGE, UNDERCITY },
 					["lvl"] = 30,
+					["cost"] = {
+						{ "i", 4647, 1 },	-- Yagyin's Digest
+					},
 					["g"] = {
 						i(4984),	-- Skull of Impending Doom
 					},

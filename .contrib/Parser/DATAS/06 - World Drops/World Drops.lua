@@ -6,7 +6,9 @@ _.WorldDrops =
 	n(-318, {	-- Armor
 		n(-320, {	-- Head
 			i(4039),  -- Nightsky Cowl
+			i(7419),  -- Ranger Helm
 			i(7529),  -- Cabalist Helm
+			i(9932),  -- Brigade Circlet
 			i(9953),  -- Chieftain's Headdress
 			i(10379),	-- Commander's Helm
 			i(10061),  -- Duskwoven Turban
@@ -24,8 +26,12 @@ _.WorldDrops =
 			
 			i(4709),  --  Forest Leather Mantle
 			i(4718),  -- Nightsky Mantle
+			i(6395),  -- Silver-thread Amice
 			i(6617),  -- Sage's Mantle
+			i(7408),  -- Infiltrator Shoulders
 			i(7432),  -- Twilight Cowl
+			i(7459),  -- Knight's Pauldrons
+			i(9796),  -- Ivycloth Mantle
 			i(9923),  -- Tracker's Shoulderpads
 			i(10172),  -- Mystical Mantle
 			i(10237),  -- Engraved Pauldrons
@@ -34,6 +40,7 @@ _.WorldDrops =
 			i(10383),  -- Commander's Pauldrons
 			i(13103),  -- Pads of the Venom Spider
 			i(15357),  -- Headhunter's Spaulders
+			i(15531),  -- Sentry's Shoulderguards
 		}),
 		n(-322, {	-- Back
 			i(4701),  -- Inscribed Cloak
@@ -45,11 +52,13 @@ _.WorldDrops =
 			i(6432),  -- Imperial Cloak
 			i(6575),  -- Defender Cloak
 			i(6604),  -- Dervish Cape
+			i(6614),  -- Sage's Cloak
 			i(7492),  -- Captain's Cloak
 			i(9779),  -- Bandit Cloak
 			i(9786),  -- Raider's Cloak
 			i(10212),  -- Elegant Cloak
 			i(10258),  -- Adventurer's Cape
+			i(13121),  -- Wing of the Whelpling
 			i(14331),  -- Eternal Cloak
 			i(14571),  -- Bristlebark Cape
 			i(15114),  -- Rigid Cape
@@ -59,7 +68,7 @@ _.WorldDrops =
 			i(15661),  -- Impenetrable Cloak
 		}),
 		n(-323, {	-- Chest
-			i(10378),	-- Commander's Armor
+			
 			i(821),  -- Riverpaw Leather Vest
 			i(2957),  -- Journeyman's Vest
 			i(2965),  -- Warrior's Tunic
@@ -76,13 +85,18 @@ _.WorldDrops =
 			i(9749),  -- Simple Blouse
 			i(9757),  -- Gypsy Tunic
 			i(9783),  -- Raider's Chestpiece
+			i(9866),  -- Renegade Chestguard
 			i(9884),  -- Sorcerer Robe
 			i(9928),  -- Brigade Breastplate
 			i(10065),  -- Duskwoven Robe
 			i(10070),  -- Righteous Armor
 			i(10077),  -- Lord's Breastplate
-			i(10118),  -- Ornate Breastplate			
+			i(10118),  -- Ornate Breastplate
+			i(10378),  -- Commander's Armor
 			i(14175),  -- Buccaneer's Vest
+			i(14405),  -- Resilient Robe
+			i(15479),  -- Charger's Armor
+			i(15487),  -- War Torn Tunic
 			i(15557),  -- Pillager's Chestguard
 		}),
 		n(-324, {	-- Shirt
@@ -90,6 +104,7 @@ _.WorldDrops =
 		n(-326, {	-- Wrist
 			i(3202),  -- Forest Leather Bracers
 			i(3211),  -- Burnished Bracers
+			i(3212),  -- Lambent Scale Bracers
 			i(3647),  -- Bright Bracers
 			i(6413),  -- Chief Brigadier Bracers
 			i(6550),  -- Soldier's Wristguards
@@ -101,6 +116,7 @@ _.WorldDrops =
 			i(7475),  -- Regal Cuffs
 			i(7525),  -- Gossamer Bracers
 			i(8257),  -- Serpentskin Bracers
+			i(9777),  -- Bandit Bracers
 			i(9821),  -- Durable Bracers
 			i(9909),  -- Royal Bands
 			i(10096),  -- Councillor's Cuffs
@@ -125,14 +141,18 @@ _.WorldDrops =
 			i(6547),  -- Soldier's Gauntlets
 			i(6554),  -- Bard's Gloves
 			i(6605),  -- Dervish Gloves
+			i(7421),  -- Phalanx Gauntlets
 			i(7433),  -- Twilight Gloves
+			i(7480),  -- Ranger Gloves
 			i(9771),  -- Greenweave Gloves
 			i(9780),  -- Bandit Gloves
 			i(9795),  -- Ivycloth Gloves
 			i(9813),  -- Fortified Gauntlets
 			i(9823),  -- Durable Gloves
+			i(9848),  -- Conjurer's Gloves
 			i(10369),  -- Imbued Plate Gauntlets
 			i(10380),  -- Commander's Gauntlets
+			i(10242),  -- Heavy Lamellar Gauntlets
 			i(14117),  -- Aboriginal Gloves
 			i(14168),  -- Buccaneer's Gloves
 			i(14367),  -- Mystic's Gloves
@@ -152,6 +172,7 @@ _.WorldDrops =
 			i(7462),  -- Knight's Girdle
 			i(9775),  -- Bandit Cinch
 			i(9801),  -- Superior Belt
+			i(9853),  -- Conjurer's Cinch
 			i(9891),  -- Huntsman's Belt
 			i(9906),  -- Royal Sash
 			i(9968),  -- Embossed Plate Girdle
@@ -160,7 +181,8 @@ _.WorldDrops =
 			i(10166),  -- Templar Girdle
 			i(10221),  -- Nightshade Girdle
 			i(10269),  -- Masterwork Girdle
-			i(10381),	-- Commander's Girdle
+			i(10381),  -- Commander's Girdle
+			i(14025),  -- Mystic's Belt
 			i(14131),  -- Ritual Belt
 			i(14167),  -- Buccaneer's Cape
 			i(14173),  -- Buccaneer's Cord
@@ -180,18 +202,23 @@ _.WorldDrops =
 			i(2986),  -- Inscribed Leather Pants
 			i(3282),  -- Battle Chain Pants
 			i(3303),  -- Barbaric Loincloth
+			i(4054),  -- Insignia Leggings
 			i(6267),  -- Disciple's Pants
 			i(6337),  -- Infantry Leggings
 			i(6431),  -- Imperial Leather Boots
+			i(6553),  -- Bard's Trousers
 			i(6587),  -- Scouting Trousers
 			i(7431),  -- Twilight's Pants
 			i(7455),  -- Knight's Legguards
+			i(8162),  -- Jouster's Legplates
 			i(8309),  -- Hero's Leggins
 			i(9291),  -- Field Plate Leggings
 			i(9747),  -- Simple Britches
 			i(9756),  -- Gypsy Trousers
+			i(9781),  -- Bandit Pants
 			i(9789),  -- Raider's Legguards
 			i(9862),  -- Archer's Trousers
+			i(9883),  -- Sorcerer Pants
 			i(10091),  -- Gothic Plate Leggings
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
@@ -199,21 +226,26 @@ _.WorldDrops =
 			i(10554),  -- Foreman Pants
 			i(10382),  -- Commander's Leggings
 			i(14090),  -- Beaded Britches
+			i(14097),  -- Native Pants
 			i(14207),  -- Vital Leggings
 			i(14324),  -- Resplendent Sarong
 			i(14370),  -- Mystic's Woolies
 			i(14565),  -- Prospector's Woolies
 			i(15017),  -- Lupine Leggings
 			i(15303),  -- Grizzly Pants
+			i(15485),  -- War Torn Pants
 		}),
 		n(-330, {	-- Feet
 			i(2983),  -- Seer's Boots
 			i(3057),  -- Forest Leather Boots
 			i(3307),  -- Barbaric Cloth Boots
+			i(4047),  -- Mistscape Boots
+			i(6406),  -- Nightsky Boots
 			i(6412),  -- Chief Brigadier Boots
 			i(6423),  -- Blackforge Greaves
 			i(6557),  -- Bard's Boots
 			i(6612),  -- Sage's Boots
+			i(9856),  -- Archer's Boots
 			i(9917),  -- Tracker's Boots
 			i(10095),  -- Councillor's Boots
 			i(10146),  -- Mighty Boots
@@ -230,6 +262,7 @@ _.WorldDrops =
 			i(13087),  -- River Pride Choker
 		}),
 		filter(52, {	-- Finger
+			i(1993),  -- Ogremind Ring
 			i(6757),  -- Jaina's Signet Ring
 			i(7552),  -- Falcon's Hook
 			i(11965),  -- Quartz Ring
@@ -280,7 +313,9 @@ _.WorldDrops =
 			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger
+			i(2819),  -- Cross Dagger
 			i(3184),  -- Hook Dagger
+			i(3187),  -- Sacrificial Kris
 			i(4571),  -- War Knife
 			i(15242),  -- Honed Stiletto
 			i(15243),  -- Deadly Kris
@@ -305,10 +340,13 @@ _.WorldDrops =
 			i(2075),  -- Priest's Mace
 			i(2079),  -- Sergeant's Warhammer
 			i(4090),  -- Mug O' Hurt
+			i(4569),  -- Stauch Hammer
 			i(15222),  -- Barbed Club
 			i(15229),  -- Blesswind Hammer
+			i(15962),  -- Satyr's Rod
 		}),
 		n(-337, {	-- 2H Maces
+			i(1990),  -- Ballast Maul
 			i(3193),  -- Oak Mallet
 			i(15259),  -- Hefty Battlehammer
 			i(15261),  -- Sequoaia Branch
@@ -320,6 +358,7 @@ _.WorldDrops =
 			i(1204),  -- The Green Tower
 			i(4065),  -- Combat Shield
 			i(6383),  -- Forest Buckler
+			i(7330),  -- Infiltrator Buckler
 			i(7331),  -- Phalanax Shield
 			i(8320),  -- Alabaster Shield
 			i(9753),  -- Gypsy Buckler
@@ -349,6 +388,7 @@ _.WorldDrops =
 		}),
 		n(-339, {	-- 2H Swords
 			i(647),  -- Destiny
+			i(3192),  -- Short Bastard Sword
 			i(3196),  -- Edged Bastard Sword
 			i(3197),  -- Stonecutter Claymore
 			i(3206),  -- Cavalier Two-Hander
