@@ -2579,7 +2579,7 @@ local SoftReserveUnitOnClick = function(self, button)
 	if button == "RightButton" then
 		app:ShowPopupDialog((self.ref.text or "??") .. "\n \nAre you sure you want to delete this entry?",
 		function()
-			local guid = self.ref.guid;
+			local guid = self.ref.guid or self.ref.unit;
 			if guid then
 				app:UpdateSoftReserveInternal(guid, nil);
 				app:GetWindow("SoftReserves"):Update(true);
@@ -2895,7 +2895,7 @@ app.QuerySoftReserve = function(app, guid, cmd, target)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
-app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp)
+app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp, isCurrentPlayer)
 	local reserves = GetDataMember("SoftReserves");
 	local reservesByItemID = GetTempDataMember("SoftReservesByItemID");
 	
@@ -2933,7 +2933,14 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp)
 		end
 		table.insert(reservesForItem, guid);
 	else
+		itemID = 0;
 		reserves[guid] = nil;
+	end
+	if isCurrentPlayer then
+		itemID = "!\tsr\t" .. guid .. "\t" .. itemID;
+		if timeStamp then itemID = itemID .. "\t" .. timeStamp; end
+		SendGuildMessage(itemID);
+		if IsInGroup() then SendGroupMessage(itemID); end
 	end
 end
 app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCurrentPlayer)
@@ -2943,7 +2950,7 @@ app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCur
 		end
 	else
 		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
-		app:UpdateSoftReserveInternal(guid, itemID);
+		app:UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlayer);
 		app:GetWindow("SoftReserves"):Update(true);
 		if not silentMode then
 			if itemID then
