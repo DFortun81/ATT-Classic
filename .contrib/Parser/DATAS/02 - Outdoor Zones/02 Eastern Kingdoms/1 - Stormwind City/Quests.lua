@@ -438,11 +438,16 @@ _.Zones =
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 				}),
 				q(579, {	-- Stormwind Library
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2504,	-- Donyal Tovald <Librarian>
 					["coord"] = { 71.6, 7.6, STORMWIND_CITY },
+					["repeatable"] = true,
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3898, 1 }, -- Library Scrip
+					},
+					["groups"] = {
+						i(3899),	-- Legends of the Gurubashi, Volume 3
+						i(2154),	-- The Story of Morgan Ladimore
 					},
 				}),
 				q(1688, { -- Surena Caledon
