@@ -91,6 +91,7 @@ _.Zones =
 				}),
 				q(3741, {	-- Hilary's Necklace
 					["lvl"] = 12,
+					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
 				}),
