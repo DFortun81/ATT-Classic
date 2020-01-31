@@ -199,9 +199,7 @@ _.Craftables =
 			i(7963),	-- Steel Breastplate
 			i(22196),	-- Thick Obsidian Breastplate
 			i(12405),	-- Thorium Armor
-			i(7939, {	-- Truesilver Breastplate
-				["u"] = 3,
-			}),
+			i(7939),	-- Truesilver Breastplate
 			i(12624),	-- Wildthorn Mail
 		}),
 		n(-327, {		-- Hands
@@ -215,9 +213,7 @@ _.Craftables =
 			i(12631),	-- Fiery Plate Gauntlets
 			i(3474),	-- Gemmed Copper Gauntlets
 			i(19057),	-- Gloves of the Dawn
-			i(9366, {	-- Golden Scale Gauntlets
-				["u"] = 3,
-			}),
+			i(9366),	-- Golden Scale Gauntlets
 			i(3485),	-- Green Iron Gauntlets
 			i(7919),	-- Heavy Mithril Gauntlet
 			i(22670, {	-- Icebane Gauntlets
@@ -230,9 +226,7 @@ _.Craftables =
 			i(3483),	-- Silvered Bronze Gauntlets
 			i(12632),	-- Storm Gauntlets
 			i(12639),	-- Stronghold Gauntlets
-			i(7938, {	-- Truesilver Gauntlets
-				["u"] = 3,
-			}),
+			i(7938),	-- Truesilver Gauntlets
 		}),
 		n(-326, {		-- Wrist
 			i(17014),	-- Dark Iron Bracers
