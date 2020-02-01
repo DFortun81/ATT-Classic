@@ -37,14 +37,19 @@ _.Zones =
 					},
 				}),
 				q(34, {	-- An Unwelcome Guest
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 342,	-- Martie Jainrose
+					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 					["g"] = {
+						{
+							["itemID"] = 3631,	-- Bellygrub's Tusk
+							["questID"] = 34,	-- An Unwelcome Guest
+							["cr"] = 345,	-- Bellygrub
+							["coord"] = { 16.6, 49.8, REDRIDGE_MOUNTAINS },	
+						},
 						i(2562),	-- Bouquet of Scarlet Begonias
 					},
-					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
-					["description"] = "Bellygrub spawns around 15.9, 49.6.",
 				}),
 				q(246, {	-- Assessing the Threat
 					["lvl"] = 11,
@@ -58,10 +63,13 @@ _.Zones =
 					["coord"] = { 31.5, 58.0, REDRIDGE_MOUNTAINS },
 				}),
 				q(20, {	-- Blackrock Menace
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 382,	-- Marshal Marris
 					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3014, 10 },	-- Battleworn Axe
+					},
+					["lvl"] = 18,
 				}),
 				q(131, {	-- Delivering Daffodils
 					["lvl"] = 12,
@@ -73,15 +81,15 @@ _.Zones =
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
 				}),
 				q(116, {	-- Dry Times
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 346,	-- Barkeep Daniels
+					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
+					["description"] = "Barkeep Daniels is located on the first floor of the Lakeshire Inn.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(1270),	-- Finely Woven Cloak
 						i(10456),	-- A Bulging Coin Purse
 					},
-					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
-					["description"] = "Barkeep Daniels is located on the first floor of the Lakeshire Inn.",
 				}),
 				q(244, {	-- Encroaching Gnolls
 					["lvl"] = 11,
@@ -95,14 +103,23 @@ _.Zones =
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
 				}),
 				q(126, {	-- Howling in the Hills
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 415,	-- Verner Osgood
+					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },	
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3614, 1},	-- Yowler's Paw
+					},
+					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 3614,	-- Yowler's Paw
+							["questID"] = 126,	-- Howling in the Hills
+							["cr"] = 518,	-- Yowler
+							["coord"] = { 28.8, 23.2, REDRIDGE_MOUNTAINS },	
+						},
 						i(1319),	-- Ring of Iron Will
 						i(2910),	-- Gold Militia Boots
-					},
-					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },					
+					},				
 				}),
 				q(248, {	-- Looking Further
 					["lvl"] = 20,
@@ -156,38 +173,58 @@ _.Zones =
 					},
 				}),
 				q(249, {	-- Morganth
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 31 },	-- Old Lion Statue
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3617, 1 },	-- Pendant of Shadow
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 3617,	-- Pendant of Shadow
+							["questID"] = 249,	-- Morganth
+							["cr"] = 397,	-- Morganth
+							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },	
+						},
 						i(5274),	-- Rose Mantle
 					},
 				}),
 				q(150, {	-- Murloc Poachers
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 381,	-- Dockmaster Baren
+					["coord"] = { 27.7, 47.3, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1468, 8 },	-- Murloc Fin
+					},
+					["lvl"] = 20,
 					["g"] = {
 						i(3567),	-- Dwarven Fishing Pole
 					},
-					["coord"] = { 27.7, 47.3, REDRIDGE_MOUNTAINS },
 				}),
 				q(92, {	-- Redridge Goulash
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 343,	-- Chef Breanna
+					["coord"] = { 22.7, 44.0, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2296, 5 },	-- Great Goretusk Snout
+						{ "i", 1080, 5 },	-- Tough Condor Meat
+						{ "i", 1081, 5 },	-- Crisp Spider Meat
+					},
+					["lvl"] = 15,
 					["g"] = {
 						i(1082),	-- Redridge Goulash
 						i(2699),	-- Recipe: Redridge Goulash
 					},
-					["coord"] = { 22.7, 44.0, REDRIDGE_MOUNTAINS },
 				}),
 				q(347, {	-- Rethban Ore
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 341,	-- Foreman Oslow
 					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
 					["description"] = "This quest is part of a series that starts in Stormwind.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2798, 5 },	-- Rethban Ore
+					},
+					["lvl"] = 20,
 				}),
 				q(119, {	-- Return to Verner
 					["lvl"] = 13,
@@ -205,27 +242,40 @@ _.Zones =
 					},
 				}),
 				q(115, {	-- Shadow Magic
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 382,	-- Marshal Marris
-					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },					
+					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(91, {	-- Solomon's Law
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 29.6, 44.3, REDRIDGE_MOUNTAINS },
 					["description"] = "Bailiff Conacher is located inside the Lakeshire Town Hall.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1075, 10 },	-- Shadowhide Pendant
+					},
+					["lvl"] = 17,
 				}),
 				q(19, {	-- Tharil'zun
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 382,	-- Marshal Marris
+					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1260, 1},	-- Tharil'zun's Head
+					},
+					["lvl"] = 18,
 					["g"] = {
+						{
+							["itemID"] = 1260,	-- Tharil'zun's Head
+							["questID"] = 19,	-- Tharil'zun
+							["cr"] = 486,	-- Tharil'zun
+							["coord"] = { 68.4, 58.8, REDRIDGE_MOUNTAINS },	
+						},
 						i(1276),	-- Fire Hardened Buckler
 						i(6093),	-- Orc Crusher
-					},
-					["coord"] = { 33.4, 49.0, REDRIDGE_MOUNTAINS },					
+					},				
 				}),
 				q(132, {	-- The Defias Brotherhood (2/7)
 					["lvl"] = 14,
@@ -236,9 +286,13 @@ _.Zones =
 					["description"] = "Wiley the Black is located on the 2nd floor of the Lakeshire Inn.",
 				}),
 				q(89, {	-- The Everstill Bridge
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 341,	-- Foreman Oslow
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2856, 5 },	-- Iron Pike
+						{ "i", 1013, 5 },	-- Iron Rivet
+					},
+					["lvl"] = 15,
 					["g"] = {
 						i(1310),	-- Smith's Trousers
 						i(1303),	-- Bridgeworker's Gloves
@@ -281,21 +335,25 @@ _.Zones =
 					},
 				}),
 				q(178, {	-- Theocritus' Retrieval
-					["lvl"] = 15,
+					["provider"] = { "i", 1962 },	-- Glowing Shadowhide Pendant
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(1970),	-- Restoring Balm
 					},
 				}),
 				q(122, {	-- Underbelly Scales
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 415,	-- Verner Osgood
+					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1221, 6},	-- Underbelly Whelp Scale
+					},
+					["lvl"] = 14,
 					["g"] = {
 						i(6092),	-- Black Whelp Boots
 						i(1302),	-- Black Whelp Gloves
 					},
-					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },					
 				}),
 				q(130, {	-- Visit the Herbalist
 					["lvl"] = 12,
@@ -304,16 +362,38 @@ _.Zones =
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
 				}),
 				q(169, {	-- Wanted: Gath'Ilzogg
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
 					["coord"] = { 29.6, 46.2, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3633, 1 },	-- Head of Gath'Ilzogg
+					},
+					["lvl"] = 15,
+					["groups"] = {
+						{
+							["itemID"] = 3633,	-- Head of Gath'Ilzogg
+							["questID"] = 169,	-- Wanted: Gath'Ilzogg
+							["cr"] = 334,	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
+							["coord"] = { 69.6, 55.8, REDRIDGE_MOUNTAINS },	
+						},
+					},
 				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 47 },	-- Wanted: Lieutenant Fangore
 					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },	
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3632, 1 },	-- Fangore's Paw
+					},
+					["lvl"] = 15,
+					["groups"] = {
+						{
+							["itemID"] = 3632,	-- Fangore's Paw
+							["questID"] = 180,	-- Wanted: Lieutenant Fangore
+							["cr"] = 703,	-- Lieutenant Fangore
+							["coord"] = { 80.0, 39.0, REDRIDGE_MOUNTAINS },	
+						},
+					},
 				}),
 				q(1698, { -- Yorus Barleybrew
 					["lvl"] = 20,

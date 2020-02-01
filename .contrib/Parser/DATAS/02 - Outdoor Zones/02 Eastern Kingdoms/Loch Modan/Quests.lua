@@ -312,15 +312,20 @@ _.Zones =
 					["qg"] = 1092,	-- Captain Rugelfuss
 				}),
 				q(418, {	-- Thelsamar Blood Sausages
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1963,	-- Vidra Hearthstove
+					["description"] = "Vidra Hearthstove is behind the bar on the first floor of the Stoutlager Inn.",
+					["coord"] = { 34.8, 49.3, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3172, 3 },	-- Boar Intestines
+						{ "i", 3173, 3 },	-- Bear Meat
+						{ "i", 3174, 3 },	-- Spider Ichor
+					},
+					["lvl"] = 7,
 					["g"] = {
 						i(3220),	-- Blood Sausage
 						i(3679),	-- Recipe: Blood Sausage
 					},
-					["coord"] = { 34.8, 49.3, LOCH_MODAN },
-					["description"] = "Vidra Hearthstove is behind the bar on the first floor of the Stoutlager Inn.",
 				}),
 				q(17, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2500,	-- Badlands Reagent Run

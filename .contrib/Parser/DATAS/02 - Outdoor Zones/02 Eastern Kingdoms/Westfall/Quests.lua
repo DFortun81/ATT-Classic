@@ -92,6 +92,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 235,	-- Salma Saldean
 					["coord"] = { 56.4, 30.6, WESTFALL },
+					["cost"] = {
+						{ "i", 723, 8 },	-- Goretusk Liver
+					},
 					["g"] = {
 						i(724),	-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie
@@ -292,17 +295,23 @@ _.Zones =
 					},
 				}),
 				q(36, {	-- Westfall Stew (1/2)
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(38, {	-- Westfall Stew (2/2)
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 235,	-- Salma Saldean
-					["coord"] = { 56.4, 30.6, WESTFALL },
 					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
+					["coord"] = { 56.4, 30.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 729, 3 },	-- Stringy Vulture Meat
+						{ "i", 730, 3 },	-- Murloc Eye
+						{ "i", 731, 3 },	-- Goretusk Snout
+						{ "i", 732, 3 },	-- Okra
+					},
+					["lvl"] = 9,
 					["g"] = {
 						i(733),	-- Westfall Stew
 						i(1479),	-- Salma's Oven Mitts

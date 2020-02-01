@@ -131,7 +131,6 @@ _.WorldDrops =
 			i(15306),  -- Feral Bindings
 		}),
 		n(-327, {	-- Hands
-			i(1448),  -- Blackrock Gauntlets
 			i(2976),  -- Hunting Gloves
 			i(2992),  -- Burnished Gloves
 			i(3058),  -- Forest Leather Gloves
@@ -223,7 +222,6 @@ _.WorldDrops =
 			i(10169),  -- Templar Legplates
 			i(10177),  -- Mystical Leggins
 			i(10227),  -- Nightshade Leggings
-			i(10554),  -- Foreman Pants
 			i(10382),  -- Commander's Leggings
 			i(14090),  -- Beaded Britches
 			i(14097),  -- Native Pants
@@ -309,7 +307,6 @@ _.WorldDrops =
 		}),			
 		n(-333, {	-- Daggers
 			i(816),  -- Small Hand Blade
-			i(1287),  -- Giant Tarantula Fang
 			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger
