@@ -7,13 +7,19 @@ _.Zones =
 		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
 			n(-17, {	-- Quests
 				q(565, {	-- Bartolo's Yeti Fur Cloak
-					["lvl"] = 29,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2438,	-- Bartolo Ginsetti
+					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2997, 1 },	-- Bolt of Woolen Cloth
+						{ "i", 2321, 1 },	-- Fine Thread
+						{ "i", 3719, 1 },	-- Hillman's Cloak
+						{ "i", 3720, 10 },	-- Yeti Fur
+					},
+					["lvl"] = 29,
 					["g"] = {
 						i(2805),	-- Yeti Fur Cloak
 					},
-					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },
 				}),
 				q(527, {	-- Battle of Hillsbrad
 					["qg"] = 2215,	-- High Executor Darthalia
@@ -143,7 +149,7 @@ _.Zones =
 					["sourceQuest"] = 513,	-- Elixir of Agony
 					["coord"] = { 48.89, 69.21, UNDERCITY },
 					["cost"] = {
-						{ 3388, 1 },	-- Strong Troll's Blood Potion
+						{ "i", 3388, 1 },	-- Strong Troll's Blood Potion
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -171,6 +177,9 @@ _.Zones =
 					["sourceQuest"] = 499,	-- Elixir of Suffering
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3496, 10 },	-- Mountain Lion Blood
+					},
 					["lvl"] = 21,
 					["g"] = {
 						i(2230),	-- Gloves of Brawn
@@ -190,6 +199,10 @@ _.Zones =
 					["qg"] = 2216,	-- Apothecary Lydon
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3476, 10 },	-- Gray Bear Tongue
+						{ "i", 3477, 1 },	-- Creeper Ichor
+					},
 					["lvl"] = 19,
 				}),
 				q(499, {	-- Elixir of Suffering
@@ -226,11 +239,22 @@ _.Zones =
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
+					["groups"] = {
+						{
+							["itemID"] = 3704,	-- Rusted Iron Key
+							["questID"] = 503,	-- Gol'dir
+							["cr"] = 2431,	-- Jailor Borhuin
+							["coord"] = { 61.8, 40.6, ALTERAC_MOUNTAINS },
+						},
+					},
 				}),
 				q(552, {	-- Helcular's Revenge
 					["qg"] = 2429,	-- Novice Thaivand
 					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = { 
+						{ "i", 3708, 1 },	-- Helcular's Rod
+					},
 					["lvl"] = 29,
 				}),
 				q(553, {	-- Helcular's Revenge
@@ -303,16 +327,31 @@ _.Zones =
 				}),
 				q(540, { -- Preserving Knowledge
 					["qg"] = 2277, -- Loremaster Dibbs
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
-					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
 					["sourceQuest"] = 538, -- Southshore
+					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3658, 5 },	-- Recovered Tome
+						{ "i", 3659, 1 },	-- Worn Leather Book
+					},
+					["lvl"] = 20,
 				}),
 				q(544, {	-- Prison Break In
 					["qg"] = 2410,	-- Magus Wordeen Voidglare
 					["coord"] = { 61.60, 20.85, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3688, 1 },	-- Bloodstone Oval
+					},
 					["lvl"] = 30,
+					["g"] = {
+						{
+							["itemID"] = 3688,	-- Bloodstone Oval
+							["questID"] = 544,	-- Prison Break In
+							["cr"] = 2414,	-- Kegan Darkmar
+							["coord"] = { 18.0, 83.6, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(563, {	-- Reassignment
 					["lvl"] = 25,
@@ -323,10 +362,10 @@ _.Zones =
 				}),
 				q(542, { -- Return to Milton
 					["qg"] = 2277, -- Loremaster Dibbs
+					["sourceQuest"] = 540, -- Preserving Knowledge
+					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
-					["sourceQuest"] = 540, -- Preserving Knowledge
 				}),
 				q(8234, {	-- Sealed Azure Bag
 					["u"] = 3,	-- Added in later phase
@@ -379,6 +418,9 @@ _.Zones =
 					["qg"] = 2437,	-- Keeper Bel'varil
 					["coord"] = { 61.50, 20.91, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3714, 10 },	-- Worn Stone Token
+					},
 					["lvl"] = 30,
 				}),
 				q(562, {	-- Stormwind Ho!
@@ -412,22 +454,62 @@ _.Zones =
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 518,	-- The Crown of Will
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 34,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3552, 1 },	-- Glommus's Head
+						{ "i", 3551, 1 },	-- Muckrake's Head
+						{ "i", 3550, 1 },	-- Targ's Head
+					},
+					["lvl"] = 34,
+					["groups"] = {
+						{
+							["itemID"] = 3552,	-- Glommus's Head
+							["questID"] = 519,	-- The Crown of Will
+							["cr"] = 2422,	-- Glommus
+							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },	
+						},
+						{
+							["itemID"] = 3551,	-- Muckrake's Head
+							["questID"] = 519,	-- The Crown of Will
+							["cr"] = 2421,	-- Muckrake
+							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },	
+						},
+						{
+							["itemID"] = 3550,	-- Targ's Head
+							["questID"] = 519,	-- The Crown of Will
+							["cr"] = 2420,	-- Targ
+							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(520, {	-- The Crown of Will
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 519,	-- The Crown of Will
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3554, 1 },	-- Crown of Will
+						{ "i", 3553, 1 },	-- Mug'thol's Head
+					},
 					["lvl"] = 34,
+					["groups"] = {
+						{
+							["itemID"] = 3553,	-- Mug'thol's Head
+							["questID"] = 520,	-- The Crown of Will
+							["cr"] = 2257,	-- Mug'thol
+							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(521, {	-- The Crown of Will
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 520,	-- The Crown of Will
 					["coord"] = { 62.61, 20.64, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 34,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3554, 1 },	-- Crown of Will
+					},
+					["lvl"] = 34,
 					["g"] = {
 						i(4430),	-- Ethereal Talisman
 					},
@@ -461,9 +543,18 @@ _.Zones =
 					["provider"] = { "o", 1763 }, -- WANTED
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
 					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3626, 1 },	-- Head of Baron Vardus
+					},
+					["lvl"] = 35,
 					["g"] = {
+						{
+							["itemID"] = 3626,	-- Head of Baron Vardus
+							["questID"] = 566,	-- WANTED: Baron Vardus
+							["cr"] = 2306,	-- Baron Vardus
+							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },	
+						},
 						i(2231),	-- Inferno Robe
 					},
 				}),

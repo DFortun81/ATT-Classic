@@ -27,6 +27,9 @@ _.Zones =
 					["coord"] = { 49.6, 58.6, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2843, 9 },	-- Dirty Knucklebones
+					},
 					["lvl"] = 30,
 				}),
 				q(504, {	-- Crushridge Warmongers
@@ -52,8 +55,18 @@ _.Zones =
 					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3672, 1 },	-- Head of Nagaz
+					},
 					["lvl"] = 30,
-					["cost"] = { "i", 3672 },	-- Head of Nagaz
+					["g"] = {
+						{
+							["itemID"] = 3672,	-- Head of Nagaz
+							["questID"] = 537,	-- Dark Council
+							["cr"] = 2320,	-- Nagaz
+							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(511, {	-- Encrypted Letter
 					["providers"] = {
@@ -100,8 +113,11 @@ _.Zones =
 					["qg"] = 2276,	-- Magistrate Henry Maleb
 					["sourceQuest"] = 510,	-- Foreboding Plans
 					["coord"] = { 48.2, 59.4, HILLSBRAD_FOOTHILLS },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { HILLSBRAD_FOOTHILLS, ALTERAC_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3505, 7 },	-- Alterac Signet Ring
+					},
 					["lvl"] = 26,
 				}),
 				q(8412, {	-- Spirit Totem
@@ -137,10 +153,13 @@ _.Zones =
 					},
 				}),
 				q(6701, {	-- Syndicate Emblems
-					["lvl"] = 24,
+					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["classes"] = { 4 },	-- Rogue
 					["repeatable"] = true,
-					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
+					["cost"] = {
+						{ "i", 17124, 1 },	-- Syndicate Emblem
+					},
+					["lvl"] = 24,
 				}),
 				q(551, {	-- The Ensorcelled Parchment
 					["providers"] = {
@@ -157,17 +176,28 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 				}),
 				q(1713, { -- The Summoning
-					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6176, -- Bath'rah the Windwatcher
 					["sourceQuest"] = 1712, -- Cyclonian
+					["classes"] = { 1 }, -- Warrior
+					["cost"] = {
+						{ "i", 6894, 1 },	-- Whirlwind Heart
+					},
+					["lvl"] = 30,
+					["g"] = {
+						{
+							["itemID"] = 6894,	-- Whirlwind Heart
+							["questID"] = 1713,	-- The Summoning
+							["cr"] = 6239,	-- Cyclonian
+							["coord"] = { 80.6, 62.6, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(535, {	-- Valik
 					["qg"] = 2333,	-- Henchman Valik
-					["isBreadcrumb"] = true,
 					["coord"] = { 57.15, 69.50, ALTERAC_MOUNTAINS},
 					["cost"] = { "i", 3703 },	-- Southshore Stout
 					["cr"] = 2440,	-- Drunken Footpad
+					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 					["g"] = {
@@ -175,10 +205,10 @@ _.Zones =
 					},
 				}),
 				q(1792, { -- Whirlwind Weapon
-					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6176, -- Bath'rah the Windwatcher
 					["sourceQuest"] = 1713, -- The Summoning
+					["classes"] = { 1 }, -- Warrior
+					["lvl"] = 30,
 					["groups"] = {
 						i(6975), -- Whirlwind Axe
 						i(6977), -- Whirlwind Sword

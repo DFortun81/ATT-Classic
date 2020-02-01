@@ -13,6 +13,12 @@ _.Zones =
 						2557,	-- Witherbark Shadow Hunter
 					},
 				}),
+				i(1993, {	-- Ogremind Ring
+					["crs"] = {
+						2570,	-- Boulderfist Shaman
+						2567,	-- Boulderfist Magus
+					},
+				}),
 			}),
 		}),
 	}),

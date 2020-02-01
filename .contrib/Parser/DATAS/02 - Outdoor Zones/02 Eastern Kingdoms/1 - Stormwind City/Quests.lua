@@ -593,9 +593,22 @@ _.Zones =
 					["qg"] = 2198, -- Crier Goodman
 				}),
 				q(543, {	-- The Perenolde Tiara
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2285,	-- Count Remington Ridgewell
+					["coord"] = { 74, 30, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY, ALTERAC_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3684, 1 },	-- Perenolde Tiara
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 3684,	-- Perenolde Tiara
+							["questID"] = 543,	-- The Perenolde Tiara
+							["cr"] = 2417,	-- Grel'borg the Miser
+							["coord"] = { 39.6, 52.8, ALTERAC_MOUNTAINS },	
+						},
+					},
 				}),
 				q(1790, { -- The Symbol of Life
 					["lvl"] = 12,

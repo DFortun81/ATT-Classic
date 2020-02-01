@@ -82,14 +82,14 @@ _.Holidays =
 					},
 				}),
 				q(6963, { -- Stolen Winter Veil Treats (Horde)
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(7042, { -- Stolen Winter Veil Treats (Alliance)
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(7061, { -- The Feast of Winter Veil
 					["lvl"] = 10,
@@ -143,17 +143,28 @@ _.Holidays =
 						}),
 					},
 				}),
-				q(6983, { -- You're a Mean One... (Horde)
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
+				{ -- You're a Mean One...
 					["qg"] = 13636, -- Strange Snowman
-					["sourceQuest"] = 6963, -- Stolen Winter Veil Treats (Horde)
-				}),
-				q(7043, { -- You're a Mean One... (Alliance)
+					["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
+					["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
+					["sourceQuests"] = {
+						7042,	-- Stolen Winter Veil Treats (Alliance)
+						6963, -- Stolen Winter Veil Treats (Horde)
+					},
+					["coord"] = { 35.4, 72.6, ALTERAC_MOUNTAINS },
+					["cost"] = {
+						{ "i", 17662, 1 },	-- Stolen Treats
+					},
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 13636, -- Strange Snowman
-				}),
+					["groups"] = {
+						{
+							["itemID"] = 17662,	-- Stolen Treats
+							["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
+							["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
+							["cr"] = 13602,	-- The Abominable Greench
+						},
+					},
+				},
 				q(8827, { -- Winter's Presents
 					["lvl"] = 1,
 					["races"] = ALLIANCE_ONLY,

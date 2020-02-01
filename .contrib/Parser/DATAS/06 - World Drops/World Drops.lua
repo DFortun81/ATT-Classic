@@ -260,7 +260,6 @@ _.WorldDrops =
 			i(13087),  -- River Pride Choker
 		}),
 		filter(52, {	-- Finger
-			i(1993),  -- Ogremind Ring
 			i(6757),  -- Jaina's Signet Ring
 			i(7552),  -- Falcon's Hook
 			i(11965),  -- Quartz Ring
