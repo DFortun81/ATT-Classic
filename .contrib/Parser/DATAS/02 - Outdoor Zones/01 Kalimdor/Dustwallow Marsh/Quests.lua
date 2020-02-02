@@ -117,6 +117,20 @@ _.Zones =
 						i(9704),	-- Rustler Gloves
 					},
 				}),
+				q(1169, {	-- Items of Power
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1951,	-- Rituals of Power
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["maps"] = { ARATHI_HIGHLANDS, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7272, 1 }, -- Bolt Charged Bramble
+						{ "i", 1529, 1 }, -- Jade
+						{ "i", 7516, 1 }, -- Tabetha's Instructions
+						{ "i", 7273, 10 }, -- Witherbark Totem Stick
+					},
+					["lvl"] = 30,
+				}),
 				q(1206, {	-- Jarl Needs Eyes
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -157,6 +171,18 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 21042 }, -- Theramore Guard Badge
+				}),
+				q(1169, {	-- Items of Power
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1169,	-- Items of Power
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["lvl"] = 30,
+					["groups"] = {
+						i(7514),	-- Icefury Wand
+						i(11263),	-- Nether Force Wand
+						i(7513),	-- Ragefire Wand
+					},
 				}),
 				q(1261, {	-- Marg Speaks
 					["lvl"] = 30,

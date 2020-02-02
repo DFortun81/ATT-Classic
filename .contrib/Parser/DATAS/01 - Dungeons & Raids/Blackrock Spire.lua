@@ -62,6 +62,7 @@ _.Instances = {
 					["provider"] = { "i", 18987 },	-- Blackhand's Command
 					["coord"] = { 34.9, 27.9, BURNING_STEPPES },
 					["maps"] = { BLACKROCK_MOUNTAIN },
+					["lvl"] = 55,
 				},
 				{
 					["questID"] = 6602,	-- Blood of the Black Dragon Champion

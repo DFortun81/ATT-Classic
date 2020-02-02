@@ -320,10 +320,15 @@ _.Zones =
 					["coord"] = { 46.0, 47.7, ARATHI_HIGHLANDS },
 				}),
 				q(691, {	-- Worth Its Weight in Gold
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2788,	-- Apprentice Kryten
 					["coord"] = { 46.2, 47.8, ARATHI_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4503, 10 },	-- Witherbark Tusk
+						{ "i", 4522, 4 },	-- Witherbark Medicine Pouch
+						{ "i", 5040, 1 },	-- Shadow Hunter Knife
+					},
+					["lvl"] = 30,
 				}),
 			}),
 		}),
