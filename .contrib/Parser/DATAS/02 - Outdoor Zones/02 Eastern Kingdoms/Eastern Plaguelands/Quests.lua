@@ -584,6 +584,24 @@ _.Zones =
 					["lvl"] = 54,
 					["qg"] = 11033,	-- Smokey LaRue
 				}),
+				q(7622, {	-- The Balance of Light and Shadow
+					["qg"] = 14494,	-- Eris Havenfire
+					["coord"] = { 20.8, 18.4, EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST },
+					["lvl"] = 60,
+					["g"] = {
+						i(18659, {	-- Splinter of Nordrassil
+							["cost"] = {
+								{ "i", 18646, 1 },	-- The Eye of Divinity
+								{ "i", 18665, 1 },	-- The Eye of Shadow
+							},
+							["groups"] = {
+								i(18609),	-- Anathema
+								i(18608),	-- Benediction
+							},
+						}),
+					},
+				}),
 				q(5721, {	-- The Battle of Darrowshire
 					["lvl"] = 55,
 					["sourceQuest"] = 5941,	-- Return to Chromie

@@ -750,13 +750,13 @@ _.Instances = {
 				{
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },	-- Hunter
 					["lvl"] = 60,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
 					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
-					["classes"] = { 5 },
+					["classes"] = { PRIEST },
 				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
