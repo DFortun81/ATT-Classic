@@ -553,6 +553,19 @@ _.Instances = {
 								13196,	-- Phase Lasher
 							},
 						}),
+						i(18603, {	-- Satyr Blood
+							["questID"] = 7581,	-- The Prison's Bindings
+							["classes"] = { WARLOCK },
+							["crs"] = {
+								11454,	-- Wildspawn Betrayer
+								11455,	-- Wildspawn Felsworn
+								11457,	-- Wildspawn Hellcaller
+								11452,	-- Wildspawn Rogue
+								11451,	-- Wildspawn Satyr
+								11456,	-- Wildspawn Shadowstalker
+								11453,	-- Wildspawn Trickster
+							},
+						}),
 						i(18298, {	-- Unbridled Leggings
 							["crs"] = {
 								11454,	-- Wildspawn Betrayer

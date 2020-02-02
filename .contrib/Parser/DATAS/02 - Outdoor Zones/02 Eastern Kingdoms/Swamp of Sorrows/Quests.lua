@@ -7,93 +7,93 @@ _.Zones =
 		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
 			n(-17, {	-- Quests
 				q(2801, {	-- A Tale of Sorrow
-					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuests"] = {
 						2623,	-- The Swamp Talker (H)
 						2783,	-- Petty Squabbles (A)
 					},
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["lvl"] = 45,
 				}),
 				q(1428, {	-- Continued Threat
-					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(1425, {	-- Deliver the Shipment
-					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1398, -- Driftwood
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 6178, 1 },	-- Shipment to Nethergarde
 					},
+					["lvl"] = 30,
 				}),
 				q(1389, {	-- Draenethyst Crystals
-					["lvl"] = 30,
 					["qg"] = 1776,	-- Magtoor
 					["coord"] = { 26.0, 31.4, SWAMP_OF_SORROWS },
 					["cost"] = {
-					{ "i", 6071, 6 },	-- Draenethyst Crystal
-				},
+						{ "i", 6071, 6 },	-- Draenethyst Crystal
+					},
+					["lvl"] = 30,
 				}),
 				q(1398, {	-- Driftwood
-					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1421, -- The Lost Caravan
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 6146, 8 },	-- Wizards' Reagents
 					},
+					["lvl"] = 30,
 				}),
 				q(1396, {	-- Encroaching Wildlife
-					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(2784, {	-- Fall From Grace
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(1430, {	-- Fresh Meat
+					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 					["g"] = {
 						i(9681),	-- Grilled King Crawler Legs
 						i(9682),	-- Leather Chef's Belt
 					},
-					["races"] = HORDE_ONLY,
 				}),
 				q(1393, {	-- Galen's Escape
-					["lvl"] = 30,
 					["qg"] = 5391,	-- Galen Goodward
 					["coord"] = { 65.4, 18.1, SWAMP_OF_SORROWS },
+					["lvl"] = 30,
 					["g"] = {
 						i(6828),	-- Visionary Buckler
 					},
 				}),
 				q(2702, {	-- Heroes of Old
-					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2681,	-- The Stones That Bind Us
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["lvl"] = 45,
 				}),
 				q(2701, {	-- Heroes of Old
-					["lvl"] = 45,
 					["qg"] = 7750,	-- Corporal Thund Splithoof
 					["sourceQuest"] = 2702,	-- Heroes of Old
+					["lvl"] = 45,
 					["g"] = {
 						i(10659),	-- Shard of Afrasa
 					},
 				}),
 				q(2721, {	-- Kirith
-					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["lvl"] = 45,
 				}),
 				q(699, {	-- Lack of Surplus
 					["races"] = HORDE_ONLY,
@@ -105,7 +105,7 @@ _.Zones =
 				}),
 				q(1363, {	-- Mazen's Behest
 					["qg"] = 338,	-- Mazen Mac'Nadir
-					--["coord"] = { , , STORMWIND_CITY },
+					["coord"] = { 41.4, 64.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 37,
@@ -113,8 +113,12 @@ _.Zones =
 				q(1364, {	-- Mazen's Behest
 					["qg"] = 5386,	-- Acolyte Dellis
 					["sourceQuest"] = 1363,	-- Mazen's Behest
-					--["coord"] = { , , SWAMP_OF_SORROWS },
+					["coord"] = { 40.8, 64, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 6065, 1 },	-- Khadgar's Essays on Dimensional Convergence
+					},
 					["lvl"] = 37,
 					["g"] = {
 						i(10747),	-- Teacher's Sash
@@ -123,55 +127,55 @@ _.Zones =
 				}),
 				q(1418, {	-- Neeka Bloodscar
 					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
 					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(1392, {	-- Noboru the Cudgel
-					["lvl"] = 29,
 					["cr"] = 5477, -- Noboru the Cudgel
 					["provider"] = { "i", 6196 }, -- Noboru's Cudgel
 					["cost"] = {
 						{ "i", 6196, 1 },	-- Noboru's Cudgel
 					},
+					["lvl"] = 29,
 				}),
 				q(2744, {	-- The Demon Hunter
-					["lvl"] = 45,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2743,	-- The Cover of Darkness
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["lvl"] = 45,
 				}),
 				q(2621, {	-- The Disgraced One
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(1421, {	-- The Lost Caravan
-					["lvl"] = 30,
 					["qg"] = 5476,	-- Watcher Biggs
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 1396, -- Encroaching Wildlife
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 6170, 1 },	-- Wizards' Reagents
 					},
+					["lvl"] = 30,
 				}),
 				q(1423, {	-- The Lost Supplies
-					["repeatable"] = true,
 					["provider"] = { "i", 6172 },	-- Lost Supplies
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 6172, 1 },	-- Lost Supplies
 					},
+					["lvl"] = 30,
 					["g"] = {
 						i(6827),	-- Box of Supplies
 					},
 				}),
 				q(2622, {	-- The Missing Orders
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
 				}),
 				q(2681, {	-- The Stones That Bind Us
 					["sourceQuest"] = 2801,	-- A Tale of Sorrow
@@ -236,16 +240,16 @@ _.Zones =
 				}),
 				q(8424, {	-- War on the Shadowsworn
 					["u"] = 3,	-- Added in later phase
-					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 50,
 				}),
 				q(8423, {	-- Warrior Kinship
 					["u"] = 3,	-- Added in later phase
-					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 50,

@@ -48,6 +48,12 @@ _.Zones =
 					["sourceQuest"] = 1791, -- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["classes"] = { 1 }, -- Warrior
+					["cost"] = {
+						{ "i", 6929, 1 },	-- Bath'rah's Parchment
+						{ "i", 3357, 8 },	-- Liferoot
+						{ "i", 3901, 30 },	-- Bloodscalp Tusk
+						{ "i", 6851, 1 },	-- Essence of the Exile
+					},
 					["lvl"] = 30,
 				}),
 				q(537, {	-- Dark Council
@@ -85,12 +91,18 @@ _.Zones =
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["classes"] = { 1 }, -- Warrior
+					["altQuests"] = {
+						1712,	-- Cyclonian
+					},
 					["cost"] = {
 						{ "i", 4479, 8 },	-- Burning Charm
 						{ "i", 4481, 8 },	-- Cresting Charm
 						{ "i", 4480, 8 },	-- Thundering Charm
 					},
 					["lvl"] = 30,
+					["groups"] = {
+						i(6851),	-- Essence of the Exile
+					},
 				}),
 				q(510, {	-- Foreboding Plans
 					["providers"] = {

@@ -124,18 +124,6 @@ _.Zones =
 					},
 					["lvl"] = 40,
 					["g"] = {
-						{
-							["itemID"] = 4615,	-- Blacklash's Bindings
-							["questID"] = 793,	-- Broken Alliances
-							["cr"] = 2757,	-- Blacklash
-							["coord"] = { 82.6, 48.8, BADLANDS },
-						},
-						{
-							["itemID"] = 4645,	-- Chains of Hematus
-							["questID"] = 793,	-- Broken Alliances
-							["cr"] = 2759,	-- Hematus
-							["coord"] = { 81.4, 50.6, BADLANDS },
-						},
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
 						i(11195),	-- Warforged Chestplate
@@ -545,18 +533,6 @@ _.Zones =
 					},
 					["lvl"] = 40,
 					["g"] = {
-						{
-							["itemID"] = 4615,	-- Blacklash's Bindings
-							["questID"] = 793,	-- Broken Alliances
-							["cr"] = 2757,	-- Blacklash
-							["coord"] = { 82.6, 48.8, BADLANDS },
-						},
-						{
-							["itemID"] = 4645,	-- Chains of Hematus
-							["questID"] = 793,	-- Broken Alliances
-							["cr"] = 2759,	-- Hematus
-							["coord"] = { 81.4, 50.6, BADLANDS },
-						},
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
 						i(11195),	-- Warforged Chestplate

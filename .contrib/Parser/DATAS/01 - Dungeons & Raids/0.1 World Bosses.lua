@@ -33,13 +33,6 @@ _.Instances = {
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
-					i(18665, {	-- The Eye of Shadow
-						["classes"] = { 5 },
-						["groups"] = {
-							i(18609),	-- Anathema
-							i(18608),	-- Benediction
-						},
-					}),
 					i(17113),	-- Amberseal Keeper
 					i(17112),	-- Empyrean Demolisher
 					i(18546),	-- Infernal Headcage

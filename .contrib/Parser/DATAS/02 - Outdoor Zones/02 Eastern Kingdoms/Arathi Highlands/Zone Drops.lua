@@ -23,6 +23,9 @@ _.Zones =
 				i(4479, {	-- Burning Charm
 					["questID"] = 1714,	-- Essence of the Exile
 					["classes"] = { WARRIOR },
+					["altQuests"] = {
+						1712,	-- Cyclonian
+					},
 					["crs"] = {
 						2760,	-- Burning Exile
 						2574,	-- Drywhisker Digger
@@ -36,6 +39,9 @@ _.Zones =
 				i(4481, {	-- Cresting Charm
 					["questID"] = 1714,	-- Essence of the Exile
 					["classes"] = { WARRIOR },
+					["altQuests"] = {
+						1712,	-- Cyclonian
+					},
 					["crs"] = {
 						2761,	-- Cresting Exile
 						2574,	-- Drywhisker Digger
@@ -162,6 +168,9 @@ _.Zones =
 				i(4480, {	-- Thundering Charm
 					["questID"] = 1714,	-- Essence of the Exile
 					["classes"] = { WARRIOR },
+					["altQuests"] = {
+						1712,	-- Cyclonian
+					},
 					["crs"] = {
 						2762,	-- Thundering Exile
 						2574,	-- Drywhisker Digger
