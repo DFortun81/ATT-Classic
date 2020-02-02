@@ -18,6 +18,9 @@ _.Zones =
 					["cr"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
 					["u"] = 2,
 				}),
+				i(11603, {	-- Vilerend Slicer
+					["cr"] = 8924,	-- The Behemoth
+				}),
 			}),
 		}),
 	}),

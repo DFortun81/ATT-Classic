@@ -132,10 +132,10 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 3906,	-- Disharmony of Fire (1/2)
+					["questID"] = 3906,	-- Disharmony of Flame
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
-					["maps"] = { BADLANDS },
+					["maps"] = { BLACKROCK_MOUNTAIN, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 					["crs"] = {
@@ -143,8 +143,8 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 3907,	-- Disharmony of Fire (2/2)
-					["sourceQuest"] = 3906,	-- Disharmony of Fire (1/2)
+					["questID"] = 3907,	-- Disharmony of Fire
+					["sourceQuest"] = 3906,	-- Disharmony of Flame
 					["qg"] = 9084,	-- Thunderheart <Kargath Expeditionary Force>
 					["coord"] = { 3.3, 48.3, BADLANDS },
 					["maps"] = { BADLANDS },
@@ -373,7 +373,7 @@ _.Instances = {
 					["questID"] = 4262,	-- Overmaster Pyron
 					["qg"] = 9561,	-- Jalinda Sprig
 					["coord"] = { 85.4, 70.1, BURNING_STEPPES },
-					["maps"] = { BURNING_STEPPES },
+					["maps"] = { BLACKROCK_MOUNTAIN, BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 48,
 					["crs"] = {

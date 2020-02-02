@@ -32,10 +32,6 @@ _.Zones =
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
 				}),
-				q(3906, {	-- Disharmony of Flame
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
-				}),
 				q(8994, {	-- Final Preparations
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -71,10 +67,6 @@ _.Zones =
 						i(22193),	-- Bloodkelp Elixir of Resistance
 					},
 					["u"] = 3,	-- Added in later phase
-				}),
-				q(4262, {	-- Overmaster Pyron
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8996, {	-- Return to Bodley
 					["lvl"] = 58,
