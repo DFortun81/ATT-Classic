@@ -297,9 +297,21 @@ _.Zones =
 					["qg"] = 2712,	-- Quae
 				}),
 				q(658, {	-- Hints of a New Plague?
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2712,	-- Quae
+					["maps"] = { ARATHI_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4482, 1 },	-- Sealed Folder
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 4482,	-- Sealed Folder
+							["questID"] = 658,	-- Hints of a New Plague?
+							["cr"] = 2714,	-- Forsaken Courier
+							["coord"] = { 52.6, 61.6, ARATHI_HIGHLANDS },	
+						},
+					},
 				}),
 				q(547, {	-- Humbert's Sword
 					["qg"] = 2419,	-- Deathguard Humbert

@@ -44,10 +44,11 @@ _.Zones =
 					},
 				}),
 				q(1712, { -- Cyclonian
-					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6176, -- Bath'rah the Windwatcher
 					["sourceQuest"] = 1791, -- The Windwatcher
+					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["classes"] = { 1 }, -- Warrior
+					["lvl"] = 30,
 				}),
 				q(537, {	-- Dark Council
 					["qg"] = 2276,	-- Magistrate Henry Maleb
@@ -76,6 +77,19 @@ _.Zones =
 					["coords"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1714, { -- Essence of the Exile
+					["qg"] = 6176, -- Bath'rah the Windwatcher
+					["sourceQuest"] = 1791, -- The Windwatcher
+					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["classes"] = { 1 }, -- Warrior
+					["cost"] = {
+						{ "i", 4479, 8 },	-- Burning Charm
+						{ "i", 4481, 8 },	-- Cresting Charm
+						{ "i", 4480, 8 },	-- Thundering Charm
+					},
 					["lvl"] = 30,
 				}),
 				q(510, {	-- Foreboding Plans
@@ -178,6 +192,7 @@ _.Zones =
 				q(1713, { -- The Summoning
 					["qg"] = 6176, -- Bath'rah the Windwatcher
 					["sourceQuest"] = 1712, -- Cyclonian
+					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["classes"] = { 1 }, -- Warrior
 					["cost"] = {
 						{ "i", 6894, 1 },	-- Whirlwind Heart

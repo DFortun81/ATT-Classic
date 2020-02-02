@@ -310,10 +310,35 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1164, {	-- To Steal From Thieves
-					["lvl"] = 27,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4486,	-- Genavie Callow
+					["coord"] = { 64.8, 49.6, UNDERCITY },
+					["maps"] = { ARATHI_HIGHLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5831, 1 },	-- Fardel's Head
+						{ "i", 5830, 1 },	-- Kenata's Head
+						{ "i", 5832, 1 },	-- Marcel's Head
+					},
+					["lvl"] = 27,
 					["g"] = {
+						{
+							["itemID"] = 5831,	-- Fardel's Head
+							["questID"] = 1164,	-- To Steal From Thieves
+							["cr"] = 4479,	-- Fardel Dabyrie
+							["coord"] = { 55.0, 40.0, ARATHI_HIGHLANDS },	
+						},
+						{
+							["itemID"] = 5830,	-- Kenata's Head
+							["questID"] = 1164,	-- To Steal From Thieves
+							["cr"] = 4480,	-- Kenata Dabyrie
+							["coord"] = { 56.2, 36.0, ARATHI_HIGHLANDS },	
+						},
+						{
+							["itemID"] = 5832,	-- Marcel's Head
+							["questID"] = 1164,	-- To Steal From Thieves
+							["cr"] = 4481,	-- Marcel Dabyrie
+							["coord"] = { 54.5, 38.6, ARATHI_HIGHLANDS },	
+						},
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs
 					},

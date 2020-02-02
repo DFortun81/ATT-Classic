@@ -160,10 +160,16 @@ _.Zones =
 					["sourceQuest"] = 4782, -- Components for the Enchanted Gold Bloodrobe (3/5)
 				}),
 				q(4784, { -- Components for the Enchanted Gold Bloodrobe (5/5)
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 4783, -- Components for the Enchanted Gold Bloodrobe (4/5)
+					["maps"] = { ARATHI_HIGHLANDS },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 12293, 1 },	-- Fine Gold Thread
+						{ "i", 6991, 2 },	-- Smoldering Coal
+						{ "i", 6265, 1 },	-- Soul Shard
+					},
+					["lvl"] = 31,
 				}),
 				q(899, {	-- Consumed by Hatred
 					["qg"] = 3432,	-- Mankrik
