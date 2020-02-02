@@ -7,8 +7,13 @@ _.Zones =
 		m(BADLANDS, {	-- Badlands
 			n(-17, {	-- Quests
 				q(719, {	-- A Dwarf and His Tools
-					["lvl"] = 35,
+					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
+					["coord"] = { 53.4, 43.2, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4616, 1 },	-- Ryedol's Lucky Pick
+					},
+					["lvl"] = 35,
 					["g"] = {
 						i(4978),	-- Ryedol's Hammer
 					},
@@ -68,47 +73,69 @@ _.Zones =
 				},
 				q(2258, {	-- Badlands Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
+					["coord"] = { 2.6, 46, BADLANDS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 7847, 5 },	-- Buzzard Gizzard
 						{ "i", 7846, 10 },	-- Crag Coyote Fang
 						{ "i", 7848, 5 },	-- Rock Elemental Shard
 					},
-					["coord"] = { 2.6, 46, BADLANDS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 36,
 				}),
 				q(2203, {	-- Badlands Reagent Run II
-					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["qg"] = 6868,	-- Jarkal Mossmeld
+					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
+					["coord"] = { 2.6, 46, BADLANDS },
+					["requireSkill"] = 171,	-- Alchemy
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
 					},
-					["coord"] = { 2.6, 46, BADLANDS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
-					["requireSkill"] = 171,	-- Alchemy
 				}),
 				q(703, {	-- Barbecued Buzzard Wings
-					["lvl"] = 33,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2817,	-- Rigglefuzz
+					["coord"] = { 42.39, 52.93, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3404, 4 },	-- Buzzard Wing
+					},
+					["lvl"] = 33,
 					["g"] = {
 						i(4457),	-- Barbecued Buzzard Wing
 						i(4609),	-- Recipe: Barbecued Buzzard Wing
 					},
-					["coord"] = { 42.39, 52.93, BADLANDS },
 				}),
 				q(782, {	-- Broken Alliances
 					["qg"] = 1068,	-- Gorn
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4640, 1 },	-- Sign of the Earth
+					},
 					["lvl"] = 40,
 				}),
 				q(793, {	-- Broken Alliances
 					["qg"] = 1068,	-- Gorn
 					["sourceQuest"] = 782,	-- Broken Alliances
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 4615, 1 },	-- Blacklash's Bindings
+						{ "i", 4645, 1 },	-- Chains of Hematus
+					},
 					["lvl"] = 40,
 					["g"] = {
+						{
+							["itemID"] = 4615,	-- Blacklash's Bindings
+							["questID"] = 793,	-- Broken Alliances
+							["cr"] = 2757,	-- Blacklash
+							["coord"] = { 82.6, 48.8, BADLANDS },
+						},
+						{
+							["itemID"] = 4645,	-- Chains of Hematus
+							["questID"] = 793,	-- Broken Alliances
+							["cr"] = 2759,	-- Hematus
+							["coord"] = { 81.4, 50.6, BADLANDS },
+						},
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
 						i(11195),	-- Warforged Chestplate
@@ -117,13 +144,16 @@ _.Zones =
 				}),
 				q(713, {	-- Coolant Heads Prevail
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 26.0, 44.9, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(1419, {	-- Coyote Thieves
 					["qg"] = 5394,	-- Neeka Bloodscar
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6166, 30 },	-- Coyote Jawbone
+					},
 					["lvl"] = 30,
 				}),
 				q(3821, {	-- Dreadmaul Rock
@@ -132,9 +162,12 @@ _.Zones =
 					["lvl"] = 48,
 				}),
 				q(706, {	-- Fiery Blaze Enchantments
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2860, -- Sigrun Ironhew
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4612, 1 },	-- Black Drake's Heart
+					},
+					["lvl"] = 40,
 					["g"] = {
 						i(5421),	-- Fiery Blaze Enchantment
 					},
@@ -178,27 +211,15 @@ _.Zones =
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 26.0, 44.9, BADLANDS },
 				}),
-				{
-					["questID"] = 1108,	-- Indurium
+				q(1108, {	-- Indurium
+					["qg"] = 4618,	-- Martek the Exiled
 					["sourceQuest"] = 1106,	-- Martek the Exiled
 					["coord"] = { 42.22, 52.69, BADLANDS },
-					["qg"] = 4618,	-- Martek the Exiled
-					["lvl"] = 28,
-					["groups"] = {
-						{
-							["itemID"] = 5797,	-- Indurium Flake
-							["questID"] = 1108,	-- Indurium
-							["crs"] = {
-								4851,	-- Stonevault Rockchewer
-								4856,	-- Stonevault Cave Hunter
-								2892,	-- Stonevault Seer
-								2893,	-- Stonevault Bonesnapper
-								2894,	-- Stonevault Shaman
-								6733,	-- Stonevault Basher
-							},
-						},
+					["cost"] = {
+						{ "i", 5797, 10 },	-- Indurium Flake
 					},
-				},
+					["lvl"] = 28,
+				}),
 				q(715, {	-- Liquid Stone
 					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
@@ -252,48 +273,21 @@ _.Zones =
 						i(4852),	-- Flash Bomb
 					},
 				}),
-				{
-					["questID"] = 2418,	-- Power Stones
+				q(2418, {	-- Power Stones
+					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
 					["maps"] = { ULDAMAN },
-					["qg"] = 2817,	-- Rigglefuzz
+					["cost"] = {
+						{ "i", 8052, 8 },	-- An'Alleum Power Stone
+						{ "i", 8009, 8 },	-- Dentrium Power Stone
+					},
 					["lvl"] = 30,
 					["groups"] = {
-						{
-							["itemID"] = 8052,	-- An'Alleum Power Stone
-							["questID"] = 2418,	-- Power Stones
-							["crs"] = {
-								4844,	-- Shadowforge Surveyor
-								4845,	-- Shadowforge Ruffian
-								4846,	-- Shadowforge Digger
-								4847,	-- Shadowforge Relic Hunter
-								4848,	-- Shadowforge Darkcaster
-								4849,	-- Shadowforge Archaeologist
-								7030,	-- Shadowforge Geologist
-								7290,	-- Shadowforge Sharpshooter
-								7091,	-- Shadowforge Ambusher
-							},
-						},
-						{
-							["itemID"] = 8009,	-- Dentrium Power Stone
-							["questID"] = 2418,	-- Power Stones
-							["crs"] = {
-								4844,	-- Shadowforge Surveyor
-								4845,	-- Shadowforge Ruffian
-								4846,	-- Shadowforge Digger
-								4847,	-- Shadowforge Relic Hunter
-								4848,	-- Shadowforge Darkcaster
-								4849,	-- Shadowforge Archaeologist
-								7030,	-- Shadowforge Geologist
-								7290,	-- Shadowforge Sharpshooter
-								7091,	-- Shadowforge Ambusher
-							},
-						},
 						i(9522),	-- Energized Stone Circle
 						i(10358),	-- Duracin Bracers
 						i(10359),	-- Everlast Boots
 					},
-				},
+				}),
 				q(723, { -- Prospect of Faith
 					["sourceQuest"] = 722,	-- Amulet of Secrets
 					["qg"] = 2909,	-- Hammertoe Grez
@@ -347,14 +341,17 @@ _.Zones =
 				}),
 				q(733, {	-- Scrounging
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 35,
 					["sourceQuest"] = 718, -- Mirages
+					["coord"] = { 53.8, 43.3, BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4630, 7 },	-- Scrap Metal
+					},
+					["lvl"] = 35,
 					["g"] = {
 						i(4652),	-- Salbac Shield
 						i(4653),	-- Ironheel Boots
 					},
-					["coord"] = { 53.8, 43.3, BADLANDS },
 				}),
 				q(795, {	-- Seal of the Earth
 					["lvl"] = 40,
@@ -396,21 +393,34 @@ _.Zones =
 					},
 				}),
 				q(712, {	-- Study of the Elements: Rock
+					["qg"] = 2921,	-- Lotwil Veriatus
+					["sourceQuest"] = 711,	-- Study of the Elements: Rock
+					["coord"] = { 25.8, 45, BADLANDS },
+					["cost"] = {
+						{ "i", 4628, 5 },	-- Bracers of Rock Binding
+					},
 					["lvl"] = 35,
 				}),
 				q(711, {	-- Study of the Elements: Rock
+					["qg"] = 2921,	-- Lotwil Veriatus
+					["sourceQuest"] = 710,	-- Study of the Elements: Rock
+					["coord"] = { 25.8, 45, BADLANDS },
+					["cost"] = {
+						{ "i", 4627, 3 },	-- Large Stone Slab
+					},
 					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(710, {	-- Study of the Elements: Rock
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2921,	-- Lotwil Veriatus
-					["coord"] = { 26.0, 44.9, BADLANDS },
+					["coord"] = { 25.8, 45, BADLANDS },
+					["cost"] = {
+						{ "i", 4626, 10 },	-- Small Stone Shard
+					},
+					["lvl"] = 35,
 				}),
 				q(708, {	-- The Black Box
-					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["u"] = 1,
 				}),
 				q(692, {	-- The Lost Fragments
@@ -480,14 +490,34 @@ _.Zones =
 					},
 				},
 				q(777, {	-- This Is Going to Be Hard
+					["qg"] = 2920,	-- Lucien Tosselwrench
+					["sourceQuest"] = 734,	-- This Is Going to Be Hard
+					["coord"] = { 25.8, 44.4, BADLANDS },
+					["cost"] = {
+						{ "i", 4846, 1 },	-- Cog #5
+					},
 					["lvl"] = 35,
 				}),
 				q(734, {	-- This Is Going to Be Hard
+					["qg"] = 2921,	-- Lotwil Veriatus
+					["coord"] = { 25.8, 45, BADLANDS },
 					["lvl"] = 35,
 				}),
 				q(778, {	-- This Is Going to Be Hard
+					["qg"] = 2921,	-- Lotwil Veriatus
+					["sourceQuest"] = 777,	-- This Is Going to Be Hard
+					["coord"] = { 25.8, 45, BADLANDS },
+					["cost"] = {
+						{ "i", 4847, 1 }	-- Lotwil's Shackles of Elemental Binding
+					},
 					["lvl"] = 35,
 					["g"] = {
+						{
+							["itemID"] = 4847,	-- Lotwil's Shackles of Elemental Binding
+							["questID"] = 778,	-- This Is Going to Be Hard
+							["cr"] = 2919,	-- Fam'retor Guardian
+							["coord"] = { 26.0, 46.6, BADLANDS },
+						},
 						i(2820),	-- Nifty Stopwatch
 					},
 				}),
@@ -506,11 +536,27 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(717, {	-- Tremors of the Earth
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2888, -- Garek
 					["sourceQuest"] = 732, -- Tremors of the Earth
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4615, 1 },	-- Blacklash's Bindings
+						{ "i", 4645, 1 },	-- Chains of Hematus
+					},
+					["lvl"] = 40,
 					["g"] = {
+						{
+							["itemID"] = 4615,	-- Blacklash's Bindings
+							["questID"] = 793,	-- Broken Alliances
+							["cr"] = 2757,	-- Blacklash
+							["coord"] = { 82.6, 48.8, BADLANDS },
+						},
+						{
+							["itemID"] = 4645,	-- Chains of Hematus
+							["questID"] = 793,	-- Broken Alliances
+							["cr"] = 2759,	-- Hematus
+							["coord"] = { 81.4, 50.6, BADLANDS },
+						},
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
 						i(11195),	-- Warforged Chestplate
@@ -518,10 +564,13 @@ _.Zones =
 					},
 				}),
 				q(732, {	-- Tremors of the Earth
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2888, -- Garek
 					["sourceQuest"] = 718, -- Mirages
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4640, 1 },	-- Sign of the Earth
+					},
+					["lvl"] = 40,
 				}),
 				q(2202, {	-- Uldaman Reagent Run
 					["sourceQuest"] = 2258,	-- Badlands Reagent Run

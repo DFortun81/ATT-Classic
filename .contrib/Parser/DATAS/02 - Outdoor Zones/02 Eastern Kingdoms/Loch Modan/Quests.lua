@@ -76,11 +76,12 @@ _.Zones =
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
 				}),
 				q(704, { -- Agmond's Fate
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 739,	-- Murdaloc
+					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 					["maps"] = { BADLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["groups"] = {
 						{
 							["itemID"] = 4610,	-- Carved Stone Urn
@@ -89,17 +90,16 @@ _.Zones =
 						},
 						i(4980),	-- Prospector Gloves
 					},
-					["coord"] = { 65.9, 65.6, LOCH_MODAN },
 				}),
 				q(2500, {	-- Badlands Reagent Run
 					["qg"] = 1470,	-- Ghak Healtouch
+					["coord"] = { 37.07, 49.38, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 7847, 5 },	-- Buzzard Gizzard
 						{ "i", 7846, 10 },	-- Crag Coyote Fang
 						{ "i", 7848, 5 },	-- Rock Elemental Shard
 					},
-					["coord"] = { 37.07, 49.38, LOCH_MODAN },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 36,
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
