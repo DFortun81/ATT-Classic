@@ -287,7 +287,6 @@ _.WorldDrops =
 			i(15235),  -- Crescent Edge
 		}),
 		n(-335, {	-- 2H Axes
-			i(2227),  -- Heavy Ogre War Axe
 			i(3195),  -- Barbaric Battle Axe
 			i(3199),  -- Battle Slayer
 			i(3201),  -- Barbarian War Axe

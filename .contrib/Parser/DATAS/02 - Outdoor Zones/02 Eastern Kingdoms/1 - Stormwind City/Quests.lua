@@ -168,15 +168,16 @@ _.Zones =
 					["qg"] = 332, -- Master Mathias Shaw <Leader of SI:7>
 				}),
 				q(1705, { -- Burning Blood
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 1416, -- Grimand Elmore
 					["sourceQuest"] = 1700, -- Grimand Elmore
+					["maps"] = { DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 					["cost"] = { 
 						{ "i", 6844, 20 }, -- Burning Blood
 						{ "i", 6845, 1 }, -- Burning Rock
 					},
+					["lvl"] = 20,
 				}),
 				q(8254, {	-- Cenarion Aid
 					["u"] = 3,	-- Added in later phase
@@ -261,6 +262,13 @@ _.Zones =
 						5923,	-- Heeding the Call
 						5925,   -- Heeding the Call
 					},
+				}),
+				q(1939, { -- High Sorcerer Andromath
+					["qg"] = 5497, -- Jennea Cannon <Mage Trainer>
+					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["lvl"] = 26,
 				}),
 				q(6183, {	-- Honor the Dead
 					["lvl"] = 56,
@@ -391,6 +399,18 @@ _.Zones =
 					["qg"] = 1428,	-- Rema Schneider
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
+				}),
+				q(1940, { -- Pristine Spider Silk
+					["qg"] = 5694, -- High Sorcerer Andromath
+					["sourceQuest"] = 1938, -- Ur's Treatise on Shadow Magic
+					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
+					["maps"] = { DUSKWOOD },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7267, 8 }, -- Pristine Spider Silk
+					},
+					["lvl"] = 26,
 				}),
 				q(2281, {	-- Redridge Rendezvous
 					["lvl"] = 16,
@@ -712,6 +732,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
+				}),
+				q(1938, { -- Ur's Treatise on Shadow Magic
+					["qg"] = 5694, -- High Sorcerer Andromath
+					["sourceQuest"] = 1939, -- High Sorcerer Andromath
+					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7266, 1 }, -- Ur's Treatise on Shadow Magic
+					},
+					["lvl"] = 26,
+					["groups"] = {
+						{
+							["itemID"] = 7266,	-- Ur's Treatise on Shadow Magic
+							["coord"] = { 79.0, 37.6, REDRIDGE_MOUNTAINS },
+							["description"] = "Located in one of the bookshelves at the top of the tower.",
+						},
+					},
 				}),
 				q(1477,	{ -- Vital Supplies
 					["qg"] = 5694, -- High Sorcerer Andromath

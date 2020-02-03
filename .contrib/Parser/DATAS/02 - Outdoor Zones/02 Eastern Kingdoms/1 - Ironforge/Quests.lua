@@ -502,6 +502,13 @@ _.Zones =
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
+				q(1939, { -- High Sorcerer Andromath
+					["qg"] = 5144, -- Bink <Mage Trainer>
+					["coord"] = { 27.0, 8.2, IRONFORGE },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["lvl"] = 26,
+				}),
 				q(4736, { -- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = ALLIANCE_ONLY,

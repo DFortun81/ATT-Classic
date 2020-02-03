@@ -7,17 +7,19 @@ _.Zones =
 		m(DUSKWOOD, {	-- Duskwood
 			n(-17, {	-- Quests
 				q(231, {	-- A Daughter's Love
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 576,	-- Watcher Ladimore
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 					["g"] = {
 						i(2000),	-- Archeus
 					},
 				}),
 				q(337, {	-- An Old History Book
-					["lvl"] = 20,
+					["provider"] = { "i", 2794 },
+					["maps"] = { STORMWIND_CITY },
+					["description"] = "The item that starts this quest can drop from most of the mobs in the zone, but seem to drop more often from the Worgen.",
 					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 2794 },
+					["lvl"] = 20,
 				}),
 				q(1044, {	-- Answered Questions
 					["races"] = ALLIANCE_ONLY,
@@ -44,14 +46,23 @@ _.Zones =
 					["coord"] = { 10.6, 60.5, WETLANDS },
 				}),
 				q(253, {	-- Bride of the Embalmer
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 263,	-- Lord Ello Ebonlocke
+					["coord"] = { 71.9, 46.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2382, 1 },	-- The Embalmer's Heart
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 2382,	-- The Embalmer's Heart
+							["questID"] = 253,	-- Bride of the Embalmer
+							["cr"] = 314,	-- Eliza <Bride of the Embalmer>
+							["coord"] = { 28.8, 31.2, DUSKWOOD },
+						},
 						i(3560),	-- Mantle of Honor
 						i(6223),	-- Crest of Darkshire
 					},
-					["coord"] = { 71.9, 46.5, DUSKWOOD },
 				}),
 				q(157, {	-- Deliver the Thread
 					["lvl"] = 20,
@@ -101,10 +112,13 @@ _.Zones =
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 				}),
 				q(156, {	-- Gather Rot Blossoms
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1598, 8 },	-- Rot Blossom
+					},
+					["lvl"] = 20,
 				}),
 				q(149, {	-- Ghost Hair Thread
 					["lvl"] = 20,
@@ -113,10 +127,13 @@ _.Zones =
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 				}),
 				q(133, {	-- Ghoulish Effigy
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 884, 7 },	-- Ghoul Rib
+					},
+					["lvl"] = 20,
 				}),
 				q(266, {	-- Inquire at the Inn
 					["lvl"] = 20,
@@ -145,39 +162,76 @@ _.Zones =
 					},
 					["coord"] = { 10.6, 60.5, WETLANDS },
 				}),
-				q(175, {	-- Look To The Stars
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
+				q(174, {	-- Look To The Stars
 					["qg"] = 276,	-- Viktori Prism'Antras
 					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4371, 1 },	-- Bronze Tube
+					},
+					["lvl"] = 20,
+				}),
+				q(175, {	-- Look To The Stars
+					["qg"] = 276,	-- Viktori Prism'Antras
+					["sourceQuest"] = 174,	-- Look To The Stars
+					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(177, {	-- Look To The Stars
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 302,	-- Blind Mary
+					["sourceQuest"] = 175,	-- Look To The Stars
 					["coord"] = { 81.9, 59.1, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1946, 1 },	-- Mary's Looking Glass
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						{
+							["itemID"] = 1946,	-- Mary's Looking Glass
+							["questID"] = 177,	-- Look To The Stars
+							["cr"] = 511,	-- Insane Ghoul
+							["coord"] = { 80.8, 71.6, DUSKWOOD },
+						},
+					},
 				}),
 				q(181, {	-- Look To The Stars
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 276,	-- Viktori Prism'Antras
+					["sourceQuest"] = 177,	-- Look To The Stars
+					["coord"] = { 79.8, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1968, 1 },	-- Ogre's Monocle
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 1968,	-- Ogre's Monocle
+							["questID"] = 181,	-- Look To The Stars
+							["cr"] = 300,	-- Zzarc' Vul
+							["coord"] = { 37.0, 82.4, DUSKWOOD },
+						},
 						i(7106),	-- Zodiac Gloves
 						i(7107),	-- Belt of the Stars
 					},
-					["coord"] = { 79.8, 48.0, DUSKWOOD },
-				}),
-				q(174, {	-- Look To The Stars
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 276,	-- Viktori Prism'Antras
-					["coord"] = { 79.8, 48.0, DUSKWOOD },
 				}),
 				q(228, {	-- Mor'Ladim
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["cost"] = {
+						{ "i", 3514, 1 },	-- Mor'Ladim's Skull
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
+					["groups"] = {
+						{
+							["itemID"] = 3514,	-- Mor'Ladim's Skull
+							["questID"] = 228,	-- Mor'Ladim
+							["cr"] = 522,	-- Mor'Ladim
+							["coord"] = { 19.4, 34.6, DUSKWOOD },
+						},
+					},
 				}),
 				q(55, {	-- Morbent Fel
 					["lvl"] = 20,
@@ -192,35 +246,35 @@ _.Zones =
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 				}),
 				q(227, {	-- Morgan Ladimore
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 268,	-- Sirra Von'Indi
+					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 					["g"] = {
 						i(2154),	-- The Story of Morgan Ladimore
 					},
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
 				}),
 				q(160, {	-- Note to the Mayor
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1388, {	-- Nothing But The Truth
-					["lvl"] = 37,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 37,
 				}),
 				q(1391, {	-- Nothing But The Truth
-					["lvl"] = 37,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 37,
 				}),
 				q(1372, {	-- Nothing But The Truth
 					["lvl"] = 37,
 					["races"] = HORDE_ONLY,
 				}),
 				q(1383, {	-- Nothing But The Truth
-					["lvl"] = 37,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 37,
 					["g"] = {
 						i(6832),	-- Cloak of Blight
 						i(11265),	-- Cragwood Maul
@@ -263,15 +317,19 @@ _.Zones =
 					["coord"] = { 18.2, 56.3, DUSKWOOD },
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 272,	-- Chef Grual
+					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1015, 10 },	-- Lean Wolf Flank
+						{ "i", 2665, 1 },	-- Stormwind Seasoning Herbs
+					},
+					["lvl"] = 18,
 					["g"] = {
 						i(1017),	-- Seasoned Wolf Kabob
 						i(2701),	-- Recipe: Seasoned Wolf Kabob
 					},
-					["coord"] = { 73.8, 43.5, DUSKWOOD },
-					["description"] = "Buy the Stormwind Seasoning Herbs from Felicia Gump in Stormwind at 64.3, 60.5.",
 				}),
 				q(269, {	-- Seeking Wisdom
 					["lvl"] = 20,
@@ -398,14 +456,23 @@ _.Zones =
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
 				}),
 				q(98, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3629, 1 },	-- Mistmantle Family Ring
+					},
+					["lvl"] = 22,
 					["g"] = {
+						{
+							["itemID"] = 3629,	-- Mistmantle Family Ring
+							["questID"] = 98,	-- The Legend of Stalvan
+							["cr"] = 315,	-- Stalvan Mistmantle
+							["coord"] = { 77.6, 34.8, DUSKWOOD },
+						},
 						i(2044),	-- Crescent of Forlorn Spirits
 						i(2043),	-- Ring of Forlorn Spirits
 					},
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
 				}),
 				q(70, {	-- The Legend of Stalvan
 					["lvl"] = 22,
@@ -487,13 +554,18 @@ _.Zones =
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 				}),
 				q(101, {	-- The Totem of Infliction
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
+					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1129, 10 },	-- Ghoul Fang
+						{ "i", 2378, 10 },	-- Skeleton Finger
+						{ "i", 1130, 5 },	-- Vial of Spider Venom
+					},
+					["lvl"] = 18,
 					["g"] = {
 						i(1131),	-- Totem of Infliction
 					},
-					["coord"] = { 75.8, 45.3, DUSKWOOD },
 				}),
 				q(225, {	-- The Weathered Grave
 					["lvl"] = 28,
