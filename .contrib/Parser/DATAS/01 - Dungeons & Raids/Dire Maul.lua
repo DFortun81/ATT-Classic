@@ -438,11 +438,14 @@ _.Instances = {
 					},
 				},
 				q(7631, {	-- Dreadsteed of Xoroth
-					["classes"] = { WARLOCK },
-					["sourceQuest"] = 7629,	-- Imp Delivery
 					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7629,	-- Imp Delivery
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 18818, 1 },	-- Mor'zul's Instructions
+					},
 					["lvl"] = 60,
 					["group"] = {
 						recipe(23161),	-- Summon Dreadsteed

@@ -77,9 +77,9 @@ _.Zones =
 					},
 				}),
 				q(4809, {	-- Chillwind Horns
-					["lvl"] = 50,
 					["qg"] = 10468,	-- Felnok Steelspring
 					["sourceQuest"] = 4808,	-- Felnok Steelspring
+					["lvl"] = 50,
 				}),
 				q(6030, {	-- Duke Nicholas Zverenhoff
 					["lvl"] = 50,
@@ -192,9 +192,12 @@ _.Zones =
 					["sourceQuest"] = 5248,	-- Tormented By the Past
 				}),
 				q(4810, {	-- Return to Tinkee
-					["lvl"] = 50,
 					["qg"] = 10468,	-- Felnok Steelspring
 					["sourceQuest"] = 4809,	-- Chillwind Horns
+					["cost"] = {
+						{ "i", 12445, 1 },	-- Felnok's Package
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(15862),	-- Blitzcleaver
 						i(15863),	-- Grave Scepter

@@ -360,8 +360,16 @@ _.Zones =
 					},
 				}),
 				q(8921, {	-- The Ectoplasmic Distiller
-					["u"] = 3,	-- Added in later phase
+					["coord"] = { 52.4, 27.2, TANARIS },
+					["cost"] = {
+						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
+						{ "i", 16203, 4 },	-- Greater Eternal Essence
+						{ "i", 13423, 10 },	-- Stonescale Oil
+						{ "i", 22338, 25 },	-- Volcanic Ash
+						{ "g", 400000 },
+					},
 					["lvl"] = 58,
+					["u"] = 3,	-- Added in later phase
 					["g"] = {
 						i(22320),	-- Mux's Quality Goods
 					},

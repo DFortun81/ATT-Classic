@@ -189,6 +189,12 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
+				q(7562, { -- Mor'zul Bloodbringer
+					["qg"] = 5753,	-- Martha Strain <Demon Trainer>
+					["coord"] = { 85.8, 15.8, UNDERCITY },
+					["classes"] = { WARLOCK },
+					["lvl"] = 60,
+				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,

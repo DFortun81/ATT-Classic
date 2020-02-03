@@ -68,13 +68,6 @@ _.Instances = {
 						{ "i", 10575, 1 },	-- Black Dragonflight Molt
 					},
 					["lvl"] = 52,
-					["groups"] = {
-						{
-							["itemID"] = 10575, -- Black Dragonflight Molt
-							["questID"] = 4023,	-- A Taste of Flame
-							["qg"] = 9461, -- Frenzied Black Drake <Cyrus's Minion>
-						},
-					},
 				},
 				{
 					["questID"] = 4024,	-- A Taste of Flame
@@ -82,6 +75,11 @@ _.Instances = {
 					["qg"] = 9459,	-- Cyrus Therepentous
 					["coord"] = { 95.09, 31.56, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
+					["cr"] = 9016,	-- Bael'Gar
+					["cost"] = {
+						{ "i", 11231, 1 },	-- Altered Black Dragonflight Molt
+						{ "i", 11230, 1 },	-- Encased Fiery Essence
+					},
 					["groups"] = {
 						i(12066),	-- Shaleskin Cape
 						i(12082),	-- Wyrmhide Spaulders
@@ -239,13 +237,10 @@ _.Instances = {
 					["coord"] = { 5.9, 47.6, BADLANDS },
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 52,
-					["groups"] = {
-						{
-							["itemID"] = 11286,	-- Thorium Shackles
-							["questID"] = 4121,	-- Precarious Predicament
-						},
+					["cost"] = {
+						{ "i", 11286, 1 },	-- Thorium Shackles
 					},
+					["lvl"] = 52,
 				},
 				{
 					["questID"] = 4126,	-- Hurley Blackbreath
@@ -386,6 +381,9 @@ _.Instances = {
 					["qg"] = 9520,	-- Grark Lorkrub
 					["coord"] = { 40.2, 34.2, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 11286, 1 },	-- Thorium Shackles
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				},
@@ -666,13 +664,10 @@ _.Instances = {
 					["coord"] = { 85.8, 69.0, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
-						{
-							["itemID"] = 11366,	-- Helendis Riverhorn's Letter
-							["questID"] = 4183,	-- The True Masters (1/6)
-						},
+					["cost"] = {
+						{ "i", 11366, 1 },	-- Helendis Riverhorn's Letter
 					},
+					["lvl"] = 48,
 				},
 				{
 					["questID"] = 4184,	-- The True Masters (2/6)
@@ -681,13 +676,10 @@ _.Instances = {
 					["coord"] = { 30.0, 44.5, REDRIDGE_MOUNTAINS },
 					["maps"] = { REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
-						{
-							["itemID"] = 11367,	-- Solomon's Plea to Bolvar
-							["questID"] = 4184,	-- The True Masters (2/6)
-						},
+					["cost"] = {
+						{ "i", 11367, 1 },	-- Solomon's Plea to Bolvar
 					},
+					["lvl"] = 48,
 				},
 				{
 					["questID"] = 4185,	-- The True Masters (3/6)
@@ -705,13 +697,10 @@ _.Instances = {
 					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 48,
-					["groups"] = {
-						{
-							["itemID"] = 11368,	-- Bolvar's Decree
-							["questID"] = 4186,	-- The True Masters (4/6)
-						},
+					["cost"] = {
+						{ "i", 11368, 1 },	-- Bolvar's Decree
 					},
+					["lvl"] = 48,
 				},
 				{
 					["questID"] = 4223,	-- The True Masters (5/6)

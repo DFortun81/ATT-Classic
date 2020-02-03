@@ -146,6 +146,7 @@ _.Zones =
 				}),
 				q(3821, {	-- Dreadmaul Rock
 					["qg"] = 9082,	-- Thal'trak Proudtusk
+					["coord"] = { 3.4, 48, BADLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),

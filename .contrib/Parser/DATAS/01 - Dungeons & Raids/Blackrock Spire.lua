@@ -202,15 +202,10 @@ _.Instances = {
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
+						{ "i", 12287, 1 },	-- Collectronic Module
 						{ "i", 12241, 8 },	-- Collected Dragon Egg
 					},
 					["lvl"] = 57,
-					["groups"] = {
-						{
-							["itemID"] = 12287,	-- Collectronic Module
-							["questID"] = 4735,	-- Egg Collection
-						},
-					},
 				},
 				{
 					["questID"] = 4734,	-- Egg Freezing
@@ -218,12 +213,11 @@ _.Instances = {
 					["qg"] = 10267,	-- Tinkee Steamboil
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
+					["cost"] = {
+						{ "i", 12286, 1 },	-- Eggscilloscope Prototype
+					},
 					["lvl"] = 57,
 					["groups"] = {
-						{
-							["itemID"] = 12286,	-- Eggscilloscope Prototype
-							["questID"] = 4734,	-- Egg Freezing
-						},
 						{
 							["itemID"] = 12144,	-- Eggscilloscope
 							["questID"] = 4734,	-- Egg Freezing
@@ -326,6 +320,7 @@ _.Instances = {
 					["coord"] = { 65.8, 22.0, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
+						{ "i", 12262, 1 },	-- Empty Worg Pup Cage
 						{ "i", 12263, 1 },	-- Caged Worg Pup
 					},
 					["lvl"] = 55,

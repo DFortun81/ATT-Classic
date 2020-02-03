@@ -673,13 +673,10 @@ _.Zones =
 					},
 				}),
 				q(7562, { -- Mor'zul Bloodbringer
-					["lvl"] = 60,
+					["qg"] = 6382,	-- Jubahl Corpseseeker <Demon Trainer>
+					["coord"] = { 52.8, 6.0, IRONFORGE },
 					["classes"] = { WARLOCK },
-					["maps"] = {
-						ORGRIMMAR,
-						STORMWIND,
-						UNDERCITY,
-					},
+					["lvl"] = 60,
 				}),
 				{
 					["questID"] = 3448,	-- Passing the Burden

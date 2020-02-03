@@ -634,11 +634,14 @@ _.Zones =
 					},
 				}),
 				q(7625, { -- Xorothian Stardust
-					["lvl"] = 60,
-					["classes"] = { WARLOCK },
 					["qg"] = 9516, -- Lord Banehollow
-					["coords"] = { 36.0, 44.6, FELLWOOD },
 					["sourceQuest"] = 7624, -- Ulathek the Traitor
+					["coords"] = { 36.0, 44.6, FELLWOOD },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 18687, 1 }, -- Xorothian Stardust
+					},
+					["lvl"] = 60,
 				}),
 			}),
 		}),

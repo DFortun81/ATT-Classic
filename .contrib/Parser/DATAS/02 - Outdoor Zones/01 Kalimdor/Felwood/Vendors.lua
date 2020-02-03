@@ -49,6 +49,17 @@ _.Zones =
 						i(16110),	-- Recipe: Monster Omelet
 					},
 				}),
+				n(14522, {	-- Ur'dan
+					["coord"] = { 36.2, 44.6, FELWOOD },
+					["classes"] = { WARLOCK },
+					["groups"] = {
+						i(18687, {	-- Xorothian Stardust
+							["cost"] = {
+								{ "g", 1500000 },
+							},
+						}),
+					},
+				}),
 			}),	
 		}),
 	}),
