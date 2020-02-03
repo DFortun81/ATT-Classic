@@ -457,10 +457,13 @@ _.Instances = {
 					},
 				}),
 				i(12843, {	-- Corruptor's Scourgestone
-					["description"] = "Can drop from any Undead boss in Scholomance and Stratholme so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(12841, {	-- Invader's Scourgestone
-					["description"] = "Can drop from any Undead mobs in Scholomance and Stratholme so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
+				i(12840, {	-- Minion's Scourgestone
+					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(20520),	-- Dark Rune
 				i(12753),	-- Skin of Shadow

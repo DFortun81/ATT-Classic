@@ -287,9 +287,19 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(6145, {	-- The Crimson Courier
-					["lvl"] = 56,
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6144,	-- The Call to Command
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15868, 1 },	-- The Grand Crusader's Command
+					},
+					["lvl"] = 56,
+					["groups"] = {
+						{
+							["itemID"] = 15868,	-- The Grand Crusader's Command
+							["questID"] = 6145,	-- The Crimson Courier
+							["cr"] = 12337,	-- Crimson Courier
+						},
+					},
 				}),
 				q(495, {	-- The Crown of Will
 					["qg"] = 2227,	-- Sharlindra

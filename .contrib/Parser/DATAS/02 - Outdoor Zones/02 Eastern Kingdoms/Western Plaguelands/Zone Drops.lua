@@ -6,6 +6,15 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {
 			n(0, {	-- Zone Drops
+				i(12843, {	-- Corruptor's Scourgestone
+					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
+				i(12841, {	-- Invader's Scourgestone
+					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
+				i(12840, {	-- Minion's Scourgestone
+					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
 				i(16252, {	-- Formula: Enchant Weapon - Crusader
 					["cr"] = 4494,	-- Scarlet Spellbinder
 				}),
@@ -32,6 +41,10 @@ _.Zones =
 						1813,	-- Decaying Horror
 						1812,	-- Rotting Behemoth
 					},
+				}),
+				i(12811, {	-- Righteous Orb
+					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
+					["cr"] = 12128,	-- Crimson Elite
 				}),
 			}),
 		}),

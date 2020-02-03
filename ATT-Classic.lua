@@ -5428,18 +5428,17 @@ local function RowOnEnter(self)
 			end
 		end
 		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
-		if not reference.itemID then
-			if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
-				local found = false;
-				for i=1,GameTooltip:NumLines() do
-					if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
-						found = true;
-						break;
-					end
+		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
+			local found = false;
+			for i=1,GameTooltip:NumLines() do
+				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
+					found = true;
+					break;
 				end
-				if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
 			end
-			
+			if not found then GameTooltip:AddLine(reference.description, 0.4, 0.8, 1, 1); end
+		end
+		if not reference.itemID then
 			if reference.questID then
 				local objectified = false;
 				local questLogIndex = GetQuestLogIndexByID(reference.questID);

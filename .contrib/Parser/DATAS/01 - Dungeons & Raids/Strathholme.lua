@@ -119,9 +119,7 @@ _.Instances = {
 							["itemID"] = 14613,	-- Taelan's Hammer
 							["questID"] = 5781,	-- Of Forgotten Memories
 							["coord"] = { 29.8, 85.6, EASTERN_PLAGUELANDS },
-							["crs"] = {
-								11886,	-- Mercutio Filthgorger
-							},
+							["cr"] = 11886,	-- Mercutio Filthgorger
 						},
 					},
 				}),
@@ -308,10 +306,16 @@ _.Instances = {
 			}),
 			n(0, {	-- Zone Drop
 				i(12843, {	-- Corruptor's Scourgestone
-					["description"] = "Can drop from any Undead boss in Scholomance and Stratholme so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
 				i(12841, {	-- Invader's Scourgestone
-					["description"] = "Can drop from any Undead mobs in Scholomance and Stratholme so long as you are equipped with one of the Argent Dawn trinkets.",
+					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
+				i(12840, {	-- Minion's Scourgestone
+					["description"] = "Can drop from weak Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
+				}),
+				i(12811, {	-- Righteous Orb
+					["description"] = "Can drop from any Scarlet Crusade member in Stratholme in addition to the Scarlet Oracle and the Crimson Elite in the Plaguelands.",
 				}),
 				{
 					["itemID"] = 13174,	-- Plagued Flesh Sample
@@ -509,7 +513,6 @@ _.Instances = {
 						i(16692),	-- Devout Gloves
 						i(13387),	-- Foresight Girdle
 						i(18716),	-- Ash Covered Boots
-						i(12811),	-- Righteous Orb
 					}),
 					n(10813, { 	-- Balnazzar
 						["crs"] = {

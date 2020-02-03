@@ -56,8 +56,11 @@ _.Zones =
 					},
 				}),
 				q(5544, {	-- Carrion Grubbage
-					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
+					["cost"] = {
+						{ "i", 13853, 1 },	-- Slab of Carrion Worm Meat
+					},
+					["lvl"] = 52,
 				}),
 				q(5517, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
@@ -80,9 +83,12 @@ _.Zones =
 					},
 				}),
 				q(5508, {	-- Corruptor's Scourgestones
-					["lvl"] = 50,
-					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
@@ -347,9 +353,13 @@ _.Zones =
 					["qg"] = 1855,	-- Tirion Fordring
 				}),
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
-					["lvl"] = 56,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11878,	-- Nathanos Blightcaller
+					["races"] = HORDE_ONLY,
+					["cr"] = 11897,	-- Duskwing
+					["cost"] = {
+						{ "i", 15850, 1 },	-- Patch of Duskwing's Fur
+					},
+					["lvl"] = 56,
 					["g"] = {
 						i(16994),	-- Duskwing Gloves
 						i(16995),	-- Duskwing Mantle
@@ -429,9 +439,18 @@ _.Zones =
 					["sourceQuest"] = 5246,	-- Fragments of the Past
 				}),
 				q(6024, {	-- Hameya's Plea
-					["lvl"] = 54,
 					["provider"] = { "o", 177667 },	-- Torn Scroll
+					["cost"] = {
+						{ "i", 15767, 1 },	-- Hameya's Key
+					},
+					["lvl"] = 54,
 					["g"] = {
+						{
+							["itemID"] = 15767,	-- Hameya's Key
+							["questID"] = 6024,	-- Hameya's Plea
+							["cr"] = 12248,	-- Infiltrator Hameya
+							["coord"] = { 70.6, 18.8, EASTERN_PLAGUELANDS },
+						},
 						i(15814),	-- Hameya's Slayer
 						i(15815),	-- Hameya's Cloak
 					},
@@ -450,9 +469,12 @@ _.Zones =
 					},
 				}),
 				q(5509, {	-- Invader's Scourgestones
-					["lvl"] = 50,
-					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 12841, 10 },	-- Invader's Scourgestones
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
@@ -471,14 +493,35 @@ _.Zones =
 					["lvl"] = 55,
 				}),
 				q(5206, {	-- Marauders of Darrowshire
-					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5181,	-- Villains of Darrowshire
+					["cost"] = {
+						{ "i", 13155, 5 },	-- Resonating Skull
+					},
+					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] = 13156,	-- Mystic Crystal
+							["cost"] = {
+								{ "i", 13157, 1 },	-- Fetid Skull
+							},
+							["groups"] = {
+								{
+									["itemID"] = 13155,	-- Resonating Skull
+									["questID"] = 5206,	-- Marauders of Darrowshire
+									["cr"] = 8529,	-- Scourge Champion
+								},
+							},
+						},
+					},
 				}),
 				q(5510, {	-- Minion's Scourgestones
-					["lvl"] = 50,
-					["repeatable"] = true,
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 12840, 20 },	-- Minion's Scourgestone
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
@@ -674,11 +717,24 @@ _.Zones =
 					},
 				}),
 				q(6022, {	-- To Kill With Purpose
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["qg"] = 11878,	-- Nathanos Blightcaller
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15448, 1 },	-- Coagulated Rot
+					},
+					["lvl"] = 54,
 					["g"] = {
-						i(15447),	-- Living Rot
+						i(15454, {	-- Mortar and Pestle
+							["cost"] = {
+								{ "i", 15447, 7 },	-- Living Rot
+							},
+							["groups"] = {
+								{
+									["itemID"] = 15448,	-- Coagulated Rot
+									["questID"] = 6022,	-- To Kill With Purpose
+								},
+							},
+						}),
 					},
 				}),
 				q(5248, {	-- Tormented By the Past
@@ -718,8 +774,19 @@ _.Zones =
 					},
 				}),
 				q(6021, {	-- Zaeldarr the Outcast
-					["lvl"] = 50,
 					["qg"] = 11038,	-- Caretaker Alen
+					["cost"] = {
+						{ "i", 15785, 1 },	-- Zaeldarr's Head
+					},
+					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] = 15785,	-- Zaeldarr's Head
+							["questID"] = 6021,	-- Zaeldarr the Outcast
+							["cr"] = 12250,	-- Zaeldarr the Outcast
+							["coord"] = { 27.6, 85.2, EASTERN_PLAGUELANDS },
+						},
+					},
 				}),
 			}),
 		}),

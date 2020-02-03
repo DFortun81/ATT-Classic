@@ -155,23 +155,29 @@ _.Zones =
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
-					["lvl"] = 50,
+					["qg"] = 10839,	-- Argent Officer Garush
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 10839,	-- Argent Officer Garush
+					["cost"] = {
+						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
 				q(5404, {	-- Corruptor's Scourgestones
-					["lvl"] = 50,
+					["qg"] = 10840,	-- Argent Officer Pureheart
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 10840,	-- Argent Officer Pureheart
+					["cost"] = {
+						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(4972, {	-- Counting Out Time
 					["lvl"] = 53,
@@ -197,10 +203,10 @@ _.Zones =
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
-					["lvl"] = 50,
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
 					},
+					["lvl"] = 50,
 				}),
 				q(5218, {	-- Felstone Field Cauldron
 					["lvl"] = 50,
@@ -239,23 +245,29 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5407, {	-- Invader's Scourgestones
-					["lvl"] = 50,
+					["qg"] = 10839,	-- Argent Officer Garush
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 10839,	-- Argent Officer Garush
+					["cost"] = {
+						{ "i", 12841, 10 },	-- Invader's Scourgestones
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
 				q(5403, {	-- Invader's Scourgestones
-					["lvl"] = 50,
+					["qg"] = 10840,	-- Argent Officer Pureheart
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 10840,	-- Argent Officer Pureheart
+					["cost"] = {
+						{ "i", 12841, 10 },	-- Invader's Scourgestones
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5059, {	-- Locked Away
 					["lvl"] = 52,
@@ -291,23 +303,29 @@ _.Zones =
 					["lvl"] = 55,
 				}),
 				q(5408, {	-- Minion's Scourgestones
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["qg"] = 10839,	-- Argent Officer Garush
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12840, 20 },	-- Minion's Scourgestone
+					},
+					["repeatable"] = true,
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
 				q(5402, {	-- Minion's Scourgestones
-					["lvl"] = 50,
+					["qg"] = 10840,	-- Argent Officer Pureheart
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 10840,	-- Argent Officer Pureheart
+					["cost"] = {
+						{ "i", 12840, 20 },	-- Minion's Scourgestone
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5237, {	-- Mission Accomplished! (A)
 					["lvl"] = 50,

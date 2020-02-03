@@ -177,8 +177,12 @@ _.Zones =
 					},
 				}),
 				q(6804, {	-- Poisoned Water
-					["lvl"] = 55,
 					["qg"] = 13278,	-- Duke Hydraxis
+					["cost"] = {
+						{ "i", 17310, 1 },	-- Aspect of Neptulon
+						{ "i", 17309, 12 },	-- Discordant Bracers
+					},
+					["lvl"] = 55,
 				}),
 				q(3421, {	-- Return Trip
 					["lvl"] = 45,
