@@ -294,9 +294,12 @@ _.Zones =
 					},
 				}),
 				q(313, {	-- The Grizzled Den
-					["lvl"] = 4,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1377,	-- Pilot Stonegear
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2671, 8 },	-- Wendigo Mane
+					},
+					["lvl"] = 4,
 				}),
 				q(6075, {	-- The Hunter's Path
 					["qg"] = 11807,	-- Tristane Shadowstone

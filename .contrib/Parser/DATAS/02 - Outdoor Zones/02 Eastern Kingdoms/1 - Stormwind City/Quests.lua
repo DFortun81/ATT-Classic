@@ -477,11 +477,23 @@ _.Zones =
 					},
 				}),
 				q(1688, { -- Surena Caledon
-					["lvl"] = 10,
-					["races"] = { 1, 7 }, -- Human and Gnome only
-					["classes"] = { 9 },	-- Warlock
 					["qg"] = 6122, -- Gakin the Darkbinder
 					["sourceQuest"] = 1685, -- Gakin's Summons
+					["races"] = { 1, 7 }, -- Human and Gnome only
+					["classes"] = { 9 },	-- Warlock
+					["maps"] = { ELWYNN_FOREST },
+					["cost"] = {
+						{ "i", 6810, 1 },	 -- Surena's Choker
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 6810,	-- Surena's Choker
+							["questID"] = 1688,	-- Surena Caledon
+							["cr"] = 881,	-- Surena Caledon
+							["coord"] = { 71.0, 80.6, ELWYNN_FOREST },
+						},
+					},
 				}),
 				q(4488, { -- Summon Felsteed
 					["lvl"] = 40,

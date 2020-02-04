@@ -79,9 +79,10 @@ _.Zones =
 					["sourceQuest"] = 6181,	-- A Swift Message
 				}),
 				q(184, {	-- Furlbrow's Deed
-					["lvl"] = 8,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 1972 },	-- Westfall Deed
+					["races"] = ALLIANCE_ONLY,
+					["maps"] = { ELWYNN_FOREST },
+					["lvl"] = 8,
 					["g"] = {
 						i(5057),	-- Ripe Watermelon
 						i(4656),	-- Small Pumpkin
