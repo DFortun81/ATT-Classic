@@ -1024,33 +1024,42 @@ profession(197, {	-- Tailoring
 	},
 	n(-17, {	-- Quests
 		q(3379, {	-- Shadoweaver
-			["lvl"] = 40,
-			["requireSkill"] = 197,	-- Tailoring
-			["maps"] = { SEARING_GORGE },
 			["qg"] = 8439,	-- Nilith Lokrav
+			["requireSkill"] = 197,	-- Tailoring
+			["coord"] = { 41.0, 75.0, SEARING_GORGE },
+			["maps"] = { SEARING_GORGE },
+			["lvl"] = 40,
 			["g"] = {
 				i(10461),	-- Shadowy Bracers
 			},
-			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 		}),
 		q(3385, {	-- The Undermarket (1/2)
-			["lvl"] = 40,
-			["requireSkill"] = 197,	-- Tailoring
-			["maps"] = { SEARING_GORGE },
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3379,	-- Shadoweaver
+			["requireSkill"] = 197,	-- Tailoring
+			["coord"] = { 41.0, 75.0, SEARING_GORGE },
+			["maps"] = { SEARING_GORGE },
+			["cost"] = {
+				{ "i", 10467, 1 },	-- Trader's Satchel
+			},
+			["lvl"] = 40,
 			["g"] = {
+				{
+					["itemID"] = 10467,	-- Trader's Satchel
+					["questID"] = 3385,	-- The Undermarket (1/2)
+					["cr"] = 8444,	-- Trade Master Kovic <The Undermarket>
+					["coord"] = { 35.8, 52.6, SEARING_GORGE },
+				},
 				i(10479),	-- Kovic's Trading Satchel
 				i(10462),	-- Shadowy Belt
 			},
-			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 		}),
 		q(3402, {	-- The Undermarket (2/2)
-			["lvl"] = 40,
-			["requireSkill"] = 197,	-- Tailoring
-			["maps"] = { SEARING_GORGE },
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
+			["requireSkill"] = 197,	-- Tailoring
+			["maps"] = { SEARING_GORGE },
+			["lvl"] = 40,
 			["g"] = {
 				i(10463),	-- Pattern: Shadoweave Mask
 			},

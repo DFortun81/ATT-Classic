@@ -7,223 +7,277 @@ _.Zones =
 		m(SEARING_GORGE, {	-- Searing Gorge
 			n(-17, {	-- Quests
 				q(4449, {	-- Caught!
-					["lvl"] = 43,
 					["provider"] = { "o", 173265 },	-- Wooden Outhouse
+					["lvl"] = 43,
 				}),
 				q(7723, {	-- Curse These Fat Fingers
-					["lvl"] = 45,
 					["qg"] = 14627,	-- Hansel Heavyhands
+					["coord"] = { 38.6, 27.8, SEARING_GORGE },
+					["lvl"] = 45,
 					["g"] = {
 						i(19126),	-- Slagplate Gauntlets
 					},
-					["coord"] = { 38.6, 27.8, SEARING_GORGE },
 				}),
 				q(3441, {	-- Divine Retribution
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["lvl"] = 40,
 				}),
 				q(7724, {	-- Fiery Menace!
-					["lvl"] = 45,
 					["qg"] = 14627,	-- Hansel Heavyhands
+					["coord"] = { 38.6, 27.8, SEARING_GORGE },
+					["lvl"] = 45,
 					["g"] = {
 						i(19125),	-- Seared Mail Girdle
 					},
-					["coord"] = { 38.6, 27.8, SEARING_GORGE },
 				}),
 				q(3443, {	-- Forging the Shaft
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3442,	-- The Flawless Flame
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 10551, 8 },	-- Thorium Plated Dagger
+					},
+					["lvl"] = 40,
 				}),
 				q(7737, {	-- Gaining Acceptance
-					["lvl"] = 40,
-					["repeatable"] = true,
+					["qg"] = 14624,	-- Master Smith Burninate
 					["minReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood
 					["maxReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood
-					["qg"] = 14624,	-- Master Smith Burninate
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["repeatable"] = true,
+					["lvl"] = 40,
 				}),
 				q(7727, {	-- Incendosaurs? Whateverosaur is More Like It
-					["lvl"] = 45,
 					["qg"] = 14627,	-- Hansel Heavyhands
+					["coord"] = { 38.6, 27.8, SEARING_GORGE },
+					["lvl"] = 45,
 					["g"] = {
 						i(19141),	-- Luffa
 					},
-					["coord"] = { 38.6, 27.8, SEARING_GORGE },
 				}),
 				q(7729, {	-- JOB OPPORTUNITY: Culling the Competition
-					["lvl"] = 45,
 					["provider"] = { "o", 179827 },	-- Wanted\/Missing\/Lost & Found
 					["coord"] = { 37.7, 26.5, SEARING_GORGE },
+					["lvl"] = 45,
 				}),
 				q(7702, {	-- Kill 'Em With Sleep Deprivation
+					["qg"] = 14628,	-- Evonice Sootsmoker
+					["coord"] = { 38.4, 27.7, SEARING_GORGE },
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 14628,	-- Evonice Sootsmoker
 					["g"] = {
 						i(19129),	-- Everglowing Robe
 					},
-					["coord"] = { 38.4, 27.7, SEARING_GORGE },
 				}),
 				q(4450, {	-- Ledger from Tanaris
-					["lvl"] = 43,
 					["provider"] = { "o", 173265 },	-- Wooden Outhouse
 					["sourceQuest"] = 4449,	-- Caught!
+					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
+					["cost"] = {
+						{ "i", 11727, 1 },	-- Goodsteel Ledger
+						{ "i", 11725, 20 },	-- Solid Crystal Leg Shaft
+						{ "i", 11724, 1 },	-- Overdue Package
+						{ "i", 11723, 1 },	-- Goodsteel's Balanced Flameberge
+					},
+					["lvl"] = 43,
 					["g"] = {
+						{
+							["itemID"] = 11724,	-- Overdue Package
+							["questID"] = 4450,	-- Ledger from Tanaris
+							["coord"] = { 54.1, 55.8, DUSTWALLOW_MARSH },
+						},
+						{
+							["itemID"] = 11723,	-- Goodsteel's Balanced Flameberge
+							["questID"] = 4450,	-- Ledger from Tanaris
+							["cr"] = 9916,	-- Jarquia
+							["coords"] = {
+								{ 94.4, 51.8, SWAMP_OF_SORROWS },
+								{ 92.6, 65.6, SWAMP_OF_SORROWS },
+							},
+						},
 						i(11860),	-- Charged Lightning Rod
 						i(11861),	-- Girdle of Reprisal
 					},
 				}),
 				q(7704, {	-- Look at the Size of It!
+					["provider"] = { "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 45,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
 					["g"] = {
 						i(18951),	-- Evonice's Landin' Pilla
 					},
 				}),
 				q(3377, {	-- Prayer to Elune
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8436,	-- Zamael Lunthistle
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(3378, {	-- Prayer to Elune
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8436,	-- Zamael Lunthistle
 					["sourceQuest"] = 3377,	-- Prayer to Elune
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10458, 1 },	-- Prayer to Elune
+					},
+					["lvl"] = 40,
 					["g"] = {
 						i(10745),	-- Kaylari Shoulders
 						i(10746),	-- Runesteel Vambraces
 					},
 				}),
 				q(3372, {	-- Release Them
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8417,	-- Dying Archaeologist
 					["sourceQuest"] = 3371,	-- Dwarven Justice
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(8242, {	-- Restoring Fiery Flux Supplies via Heavy Leather
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
 					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["repeatable"] = true,
+					["lvl"] = 45,
 				}),
 				q(8241, {	-- Restoring Fiery Flux Supplies via Iron
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
 					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["repeatable"] = true,
+					["lvl"] = 45,
 				}),
 				q(7736, {	-- Restoring Fiery Flux Supplies via Kingsblood
-					["lvl"] = 45,
-					["repeatable"] = true,
 					["qg"] = 14624,	-- Master Smith Burninate
 					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["repeatable"] = true,
+					["lvl"] = 45,
 				}),
 				q(3566, {	-- Rise, Obsidion!
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8417,	-- Dying Archaeologist
 					["sourceQuest"] = 3372,	-- Release Them
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10447, 1 },	-- Head of Lathoric the Black
+						{ "i", 10446, 1 },	-- Heart of Obsidion
+					},
+					["lvl"] = 40,
 					["g"] = {
+						{
+							["itemID"] = 10447,	-- Head of Lathoric the Black
+							["questID"] = 3566,	-- Rise, Obsidion!
+							["cr"] = 8391,	-- Lathoric the Black
+							["coord"] = { 41.6, 26.6, SEARING_GORGE },
+						},
+						{
+							["itemID"] = 10446,	-- Heart of Obsidion
+							["questID"] = 3566,	-- Rise, Obsidion!
+							["cr"] = 8400,	-- Obsidion
+							["coord"] = { 42.6, 27.0, SEARING_GORGE },
+						},
 						i(10740),	-- Centurion Legplates
 						i(10741),	-- Lordrec Helmet
 						i(10739),	-- Ring of Fortitude
 					},
 				}),
 				q(7728, {	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
-					["lvl"] = 45,
 					["provider"] = { "o", 179827 },	-- Wanted\/Missing\/Lost & Found
+					["coord"] = { 37.7, 26.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18960, 1 },	-- Lookout's Spyglass
+						{ "i", 18959, 1 },	-- Smithing Tuyere
+					},
+					["lvl"] = 45,
 					["g"] = {
 						i(19124),	-- Slagplate Leggings
 						i(19123),	-- Everwarm Handwraps
 					},
-					["coord"] = { 37.7, 26.5, SEARING_GORGE },
 				}),
 				q(3463, {	-- Set Them Ablaze!
-					["lvl"] = 40,
 					["qg"] = 8509,	-- Squire Maltrake
 					["sourceQuest"] = 3462,	-- Squire Maltrake
+					["coord"] = { 39.1, 39.1, SEARING_GORGE },
+					["lvl"] = 40,
 					["g"] = {
 						i(10742),	-- Dragonflight Leggings
 						i(10743),	-- Drakefire Headguard
 						i(10744),	-- Axe of the Ebon Drake
 					},
-					["coord"] = { 39.1, 39.1, SEARING_GORGE },
 				}),
 				q(3462, {	-- Squire Maltrake
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3454,	-- The Torch of Retribution
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["lvl"] = 40,
 				}),
 				q(3367, {	-- Suntara Stones
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 8284,	-- Dorius Stonetender
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(3368, {	-- Suntara Stones
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 10443 },	-- Singed Letter
 					["sourceQuest"] = 3367,	-- Suntara Stones
 					["description"] = "The Signed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					["coord"] = { 74.5, 19.3, SEARING_GORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(3452, {	-- The Flame's Casing
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3443,	-- Forging the Shaft
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 10552, 1 },	-- Symbol of Ragnaros
+					},
+					["lvl"] = 40,
 				}),
 				q(3442, {	-- The Flawless Flame
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3441,	-- Divine Retribution
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 10511, 4 },	-- Golem Oil
+						{ "i", 10509, 4 },	-- Heart of Flame
+					},
+					["lvl"] = 40,
 				}),
 				q(3181, {	-- The Horn of the Beast
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 10005 }, -- Margol's Gigantic Horn
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom
-					["lvl"] = 43,
 					["provider"] = { "i", 11818 }, -- Grimesilt Outhouse Key
+					["lvl"] = 43,
 				}),
 				q(3453, {	-- The Torch of Retribution
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3452,	-- The Flame's Casing
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["lvl"] = 40,
 				}),
 				q(3454, {	-- The Torch of Retribution
-					["lvl"] = 40,
 					["qg"] = 8479,	-- Kalaran Windblade
 					["sourceQuest"] = 3453,	-- The Torch of Retribution
+					["coord"] = { 39.1, 39.0, SEARING_GORGE },
+					["lvl"] = 40,
 					["g"] = {
 						i(10515),	-- Torch of Retribution
 					},
-					["coord"] = { 39.1, 39.0, SEARING_GORGE },
 				}),
 				q(3481, {	-- Trinkets...
-					["lvl"] = 40,
 					["provider"] = { "o", 149502 },	-- Hoard of the Black Dragonflight
 					["sourceQuest"] = 3463,	-- Set Them Ablaze!
+					["lvl"] = 40,
 					["g"] = {
 						i(10569, {	-- Hoard of the Black Dragonflight
 							{
@@ -237,18 +291,37 @@ _.Zones =
 					},
 				}),
 				q(7701, {	-- WANTED: Overseer Maltorius
-					["lvl"] = 45,
 					["provider"] = { "o", 179827 },	-- Wanted\/Missing\/Lost & Found
+					["coord"] = { 37.7, 26.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18946, 1 },	-- Head of Overseer Maltorius
+					},
+					["lvl"] = 45,
 					["g"] = {
+						{
+							["itemID"] = 18946,	-- Head of Overseer Maltorius
+							["questID"] = 7701,	-- WANTED: Overseer Maltorius
+							["cr"] = 14621,	-- Overseer Maltorius
+							["coord"] = { 41.8, 35.4, SEARING_GORGE },
+						},
 						i(19128),	-- Seared Mail Vest
 						i(19127),	-- Charred Leather Tunic
 					},
-					["coord"] = { 37.7, 26.5, SEARING_GORGE },
 				}),
 				q(7722, {	-- What the Flux?
-					["lvl"] = 45,
 					["qg"] = 14624,	-- Master Smith Burninate
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18922, 1 },	-- Secret Plans: Fiery Flux
+					},
+					["lvl"] = 45,
+					["g"] = {
+						{
+							["itemID"] = 18922,	-- Secret Plans: Fiery Flux
+							["questID"] = 7722,	-- What the Flux?
+							["coord"] = { 40.6, 35.7, SEARING_GORGE },
+						},
+					},
 				}),
 			}),
 		}),
