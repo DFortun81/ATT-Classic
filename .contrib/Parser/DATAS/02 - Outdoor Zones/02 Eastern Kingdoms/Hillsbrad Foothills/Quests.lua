@@ -130,9 +130,17 @@ _.Zones =
 					["qg"] = 2216,	-- Apothecary Lydon
 					["sourceQuest"] = 502,	-- Elixir of Pain
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 24,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3502, 6 },	-- Mudsnout Blossoms
+					},
+					["lvl"] = 24,
 					["g"] = {
+						{
+							["itemID"] = 3502,	-- Mudsnout Blossoms
+							["questID"] = 509,	-- Elixir of Agony
+							["coord"] = { 64.2, 62.5, HILLSBRAD_FOOTHILLS },
+						},
 						i(2459),	-- Swiftness Potion
 						i(929),	-- Healing Potion
 					},
@@ -148,8 +156,12 @@ _.Zones =
 					["qg"] = 2055,	-- Master Apothecary Faranell
 					["sourceQuest"] = 513,	-- Elixir of Agony
 					["coord"] = { 48.89, 69.21, UNDERCITY },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["cost"] = {
+						{ "i", 3508, 1 },	-- Mudsnout Mixture
 						{ "i", 3388, 1 },	-- Strong Troll's Blood Potion
+						{ "i", 3509, 5 },	-- Daggerspine Scale
+						{ "i", 3510, 5 },	-- Torn Fin Eye
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 24,
@@ -162,8 +174,18 @@ _.Zones =
 					["qg"] = 2216,	-- Apothecary Lydon
 					["sourceQuest"] = 515,	-- Elixir of Agony
 					["coord"] = { 61.45, 19.05, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 24,
+					["cost"] = {
+						{ "i", 3517, 1 },	-- Keg of Shindigger Stout
+					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = 24,
+					["groups"] = {
+						{
+							["itemID"] = 3517,	-- Keg of Shindigger Stout
+							["questID"] = 517,	-- Elixir of Agony
+							["coord"] = { 72.7, 80.0, HILLSBRAD_FOOTHILLS },
+						},
+					},
 				}),
 				q(524, {	-- Elixir of Agony
 					["qg"] = 2216,	-- Apothecary Lydon
@@ -227,11 +249,14 @@ _.Zones =
 					["coord"] = { 49.5, 58.6, HILLSBRAD_FOOTHILLS },
 				}),
 				q(559, {	-- Farren's Proof (1)
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 					["sourceQuest"] = 536, -- Down the Coast
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3716, 10 },	-- Murloc Head
+					},
+					["lvl"] = 25,
 				}),
 				q(503, {	-- Gol'dir
 					["qg"] = 2229,	-- Krusk
@@ -317,6 +342,9 @@ _.Zones =
 					["qg"] = 2419,	-- Deathguard Humbert
 					["coord"] = { 62.74, 20.21, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3693, 1 },	-- Humbert's Sword
+					},
 					["lvl"] = 26,
 					["g"] = {
 						i(3750),	-- Ribbed Breastplate
@@ -421,6 +449,9 @@ _.Zones =
 					["qg"] = 2418,	-- Deathguard Samsa
 					["coord"] = { 62.12, 19.72, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3692, 30 },	-- Hillsbrad Human Skull
+					},
 					["lvl"] = 20,
 					["g"] = {
 						i(3739),	-- Skull Ring
@@ -436,14 +467,14 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(562, {	-- Stormwind Ho!
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
+					["sourceQuest"] = 561, -- Farren's Proof (3)
+					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(3755),	-- Fish Gutter
 					},
-					["sourceQuest"] = 561, -- Farren's Proof (3)
-					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(508, {	-- Taretha's Gift
 					["qg"] = 2317,	-- Elysa
@@ -535,14 +566,31 @@ _.Zones =
 				q(498, {	-- The Rescue
 					["qg"] = 2229,	-- Krusk
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
-					["lvl"] = 17,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3499, 1 },	-- Burnished Gold Key
+						{ "i", 3467, 1 },	-- Dull Iron Key
+					},
+					["lvl"] = 17,
 					["g"] = {
+						{
+							["itemID"] = 3499,	-- Burnished Gold Key
+							["questID"] = 498,	-- The Rescue
+							["cr"] = 2428,	-- Jailor Marlgen
+							["coord"] = { 79.6, 40.6, HILLSBRAD_FOOTHILLS },
+						},
+						{
+							["itemID"] = 3467,	-- Dull Iron Key
+							["questID"] = 498,	-- The Rescue
+							["cr"] = 2427,	-- Jailor Eston
+							["coords"] = {
+								{ 75.6, 42.6, HILLSBRAD_FOOTHILLS },
+								{ 79.6, 42.0, HILLSBRAD_FOOTHILLS },
+							},
+						},
 						i(3752),	-- Grunt Vest
 						i(3733),	-- Orcish War Chain
 						i(3734),	-- Recipe: Big Bear Steak
-						i(3467),	-- Dull Iron Key
-						i(3499),	-- Burnished Gold Key
 					},
 				}),
 				q(494, {	-- Time To Strike

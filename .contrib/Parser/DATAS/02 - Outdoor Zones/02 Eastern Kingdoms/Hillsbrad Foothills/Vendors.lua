@@ -14,6 +14,7 @@ _.Zones =
 					},
 				}),
 				n(2397, {	-- Derak Nightfall <Cook>
+					["coord"] = { 63.0, 19.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(6330),	-- Recipe: Bristle Whisker Catfish
@@ -38,15 +39,16 @@ _.Zones =
 					},
 				}),
 				n(2383, {	-- Lindea Rabonne <Tackle and Bait>
+					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6369),	-- Recipe: Rockscale Cod
 						i(17062),	-- Recipe: Mithril Head Trout						
 					},
-					["coord"] = { 50.6, 61.0, HILLSBRAD_FOOTHILLS },
 				}),
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
+					["coord"] = { 62.0, 21.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6274),	-- Pattern: Blue Overalls
@@ -54,9 +56,8 @@ _.Zones =
 					},
 				}),
 				n(2357, {	-- Merideth Carlson <Horse Breeder>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2414),	-- Pinto Bridle
 						i(5655),	-- Chestnut Mare Bridle
@@ -67,39 +68,41 @@ _.Zones =
 					},
 				}),
 				n(2381, {	-- Micha Yance <Trade Goods>
+					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(11163),	-- Formula: Enchant Bracer - Lesser Deflection
 						i(4355),	-- Pattern: Icy Cloak
 						i(5788),	-- Pattern: Thick Murloc Armor
-						i(11163),	-- Formula: Enchant Bracer - Lesser Deflection
-						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Deligh
+						i(21099),	-- Recipe: Smoked Sagefish
 					},
-					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 				}),
 				n(2380, {	-- Nandar Branson <Alchemy Supplies>
+					["coord"] = { 50.9, 57.1, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6055),	-- Recipe: Fire Protection Potion
 					},
-					["coord"] = { 50.9, 57.1, HILLSBRAD_FOOTHILLS },
 				}),
 				n(3539, {	-- Ott <Weaponsmith>
+					["coord"] = { 60.4, 26.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4818),	-- Executioner's Sword
 						i(4817),	-- Blessed Claymore
 						i(4824),	-- Blurred Axe
-						i(4825),	-- Callous Axe						
+						i(4825),	-- Callous Axe
 						i(4826),	-- Marauder Axe
 						i(12247),	-- Broad Bladed Knife
 						i(12249),	-- Merciless Axe
 					},
 				}),
 				n(3543, {	-- Robert Aebischer <Superior Armorsmith>
+					["coord"] = { 51.2, 57.0, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4797),	-- Fiery Cloak					
+						i(4797),	-- Fiery Cloak
 						i(4798),	-- Heavy Runed Cloak
 						i(4799),	-- Antiquated Cloak
 						i(4800),	-- Mighty Chain Pants
@@ -107,7 +110,6 @@ _.Zones =
 						i(4833),	-- Glorious Shoulders
 						i(4835),	-- Elite Shoulders
 					},
-					["coord"] = { 51.2, 57.0, HILLSBRAD_FOOTHILLS },
 				}),
 				n(3537, {	-- Zixil <Merchant Supreme>
 					["groups"] = {						

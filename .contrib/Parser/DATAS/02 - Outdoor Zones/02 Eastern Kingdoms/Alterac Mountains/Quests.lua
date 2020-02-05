@@ -8,7 +8,6 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
-					["cr"] = 2434,	-- Shadowy Assassin
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,

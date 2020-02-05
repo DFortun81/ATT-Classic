@@ -60,9 +60,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(1066, {	-- Blood of Innocents
-					["lvl"] = 13,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2216,	-- Apothecary Lydon
+					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5620, 5 },	-- Vial of Innocent Blood
+					},
+					["lvl"] = 13,
 				}),
 				q(1205, {	-- Deadmire
 					["qg"] = 3441,	-- Melor Stonehoof
