@@ -381,12 +381,15 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 13469, 1 },	-- Head of Weldon Barov
 					},
-					["crs"] = {
-						11023,	-- Weldon Barov <House of Barov>
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
+						{
+							["itemID"] = 13469,	-- Head of Weldon Barov
+							["questID"] = 5342,	-- The Last Barov
+							["cr"] = 11023,	-- Weldon Barov <House of Barov>
+							["coord"] = { 43.4, 83.6, WESTERN_PLAGUELANDS },
+						},
 						i(14023),	-- Barov Peasant Caller
 					},
 				}),
@@ -398,12 +401,15 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 13470, 1 },	-- Head of Alexi Barov
 					},
-					["crs"] = {
-						11022,	-- Alexi Barov <House of Barov>
-					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
+						{
+							["itemID"] = 13470,	-- Head of Alexi Barov
+							["questID"] = 5344,	-- The Last Barov
+							["cr"] = 11022,	-- Alexi Barov <House of Barov>
+							["coord"] = { 83.0, 71.6, TIRISFAL_GLADES },
+						},
 						i(14023),	-- Barov Peasant Caller
 					},
 				}),

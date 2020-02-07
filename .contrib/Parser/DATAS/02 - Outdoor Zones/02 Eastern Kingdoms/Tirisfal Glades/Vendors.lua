@@ -7,11 +7,11 @@ _.Zones =
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(-2, {	-- Vendor
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
+					["coord"] = { 61.0, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12226),	-- Recipe: Crispy Bat Wing
 					},
-					["coord"] = { 61.0, 52.4, TIRISFAL_GLADES },
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					i(19447, {	-- Formula: Enchant Bracer - Healing
@@ -44,6 +44,7 @@ _.Zones =
 					i(13482),	-- Recipe: Transmute Air to Fire
 				}),
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
+					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -51,6 +52,7 @@ _.Zones =
 					},
 				}),
 				n(12943, {	-- Werg Thickblade <Leatherworking Supplies>
+					["coord"] = { 83.2, 69.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15725),	-- Pattern: Wicked Leather Gauntlets
@@ -58,9 +60,8 @@ _.Zones =
 					},
 				}),
 				n(4731, {	-- Zachariah Post <Undead Horse Merchant>
-					["races"] = HORDE_ONLY,
 					["coord"] = { 59.8, 52.6, TIRISFAL_GLADES },
-					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(13331),	-- Red Skeletal Horse
 						i(13332),	-- Blue Skeletal Horse

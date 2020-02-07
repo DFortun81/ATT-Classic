@@ -55,6 +55,11 @@ _.Instances = {
 				i(7736),	-- Fight Club
 				i(7755),	-- Flintrock Shoulders
 				i(7754),	-- Harbinger Boots
+				{
+					["itemID"] = 5805,	-- Heart of Zeal
+					["questID"] = 1113,	-- Hearts of Zeal
+					["races"] = HORDE_ONLY,
+				},
 				i(2262),	-- Mark of Kern
 				i(7787),	-- Resplendent Guardian
 				i(7758),	-- Ruthless Shiv
