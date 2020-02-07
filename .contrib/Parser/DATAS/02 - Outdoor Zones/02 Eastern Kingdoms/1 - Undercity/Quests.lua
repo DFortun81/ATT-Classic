@@ -118,16 +118,42 @@ _.Zones =
 					["lvl"] = 38,
 				}),
 				q(1998, { -- Fenwick Thatros
-					["lvl"] = 16,
 					["qg"] = 6467, -- Mennet Carkad
+					["coord"] = { 83.6, 67.6, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 7306, 1 },	-- Fenwick's Head
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 7306,	-- Fenwick's Head
+							["questID"] = 1998,	-- Fenwick Thatros
+							["cr"] = 6570,	-- Fenwick Thatros
+							["coord"] = { 59.6, 34.2, SILVERPINE_FOREST },
+						},
+					},
 				}),
 				q(2378, { -- Find the Shattered Hand
 					["lvl"] = 16,
 					["qg"] = 6467, -- Mennet Carkad
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
+				}),
+				q(1961, {	-- Gathering Materials
+					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
+					["sourceQuest"] = 1960,	-- Investigate the Alchemist Shop
+					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["maps"] = { SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },	-- Mage
+					["cost"] = {
+						{ "i", 7293, 6 },	-- Dalaran Mana Gem
+						{ "i", 2589, 10 },	-- Linen Cloth
+					},
+					["lvl"] = 15,
 				}),
 				q(1476, { -- Hearts of the Pure
 					["lvl"] = 20,
@@ -151,6 +177,19 @@ _.Zones =
 					["coord"] = { 50.13, 67.98, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
+				}),
+				q(1960, {	-- Investigate the Alchemist Shop
+					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
+					["sourceQuest"] = 1959,	-- Report to Anastasia
+					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },	-- Mage
+					["cost"] = {
+						{ "i", 7308, 1 },	-- Cantation of Manifestation
+						{ "i", 7247, 1 },	-- Chest of Containment Coffers
+						{ "i", 7292, 3 },	-- Filled Containment Coffer
+					},
+					["lvl"] = 15,
 				}),
 				q(4969, { -- Knowledge of the Orb of Orahil
 					["lvl"] = 35,

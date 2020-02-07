@@ -12,8 +12,17 @@ _.Zones =
 					["coord"] = { 62, 43, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3613, 1 },	-- Valdred's Hands
+					},
 					["lvl"] = 10,
 					["g"] = {
+						{
+							["itemID"] = 3613,	-- Valdred's Hands
+							["questID"] = 530,	-- A Husband's Revenge
+							["cr"] = 2332,	-- Valdred Moray
+							["coord"] = { 46.4, 84.6, SILVERPINE_FOREST },
+						},
 						i(3235),	-- Ring of Scorn
 					},
 				}),
@@ -21,6 +30,10 @@ _.Zones =
 					["qg"] = 1937,	-- Apothecary Renferrel
 					["coord"] = { 42.8, 40.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3253, 6 },	-- Grizzled Bear Heart
+						{ "i", 3254, 6 },	-- Skittering Blood
+					},
 					["lvl"] = 9,
 					["g"] = {
 						i(3448),	-- Senggin Root
@@ -39,6 +52,11 @@ _.Zones =
 					["sourceQuest"] = 450,	-- A Recipe For Death
 					["coord"] = { 42.8, 40.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3257, 6 },	-- Lake Creeper Moss
+						{ "i", 3256, 6 },	-- Lake Skulker Moss
+						{ "i", 3258, 1 },	-- Hardened Tumor
+					},
 					["lvl"] = 9,
 					["g"] = {
 						i(3451),	-- Nightglow Concoction
@@ -51,6 +69,9 @@ _.Zones =
 					["qg"] = 2121,	-- Shadow Priest Allister
 					["sourceQuest"] = 482,	-- Dalaran's Intentions
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
+					["cost"] = {
+						{ "i", 3354, 8 },	-- Dalaran Pendant
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
@@ -59,13 +80,27 @@ _.Zones =
 					["sourceQuest"] = 421,	-- Prove Your Worth
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3155, 1 },	-- Remedy of Arugal
+					},
 					["lvl"] = 9,
+					["groups"] = {
+						{
+							["itemID"] = 3155,	-- Remedy of Arugal
+							["questID"] = 422,	-- Arugal's Folly
+							["coord"] = { 52.8, 28.4, SILVERPINE_FOREST },
+						},
+					},
 				}),
 				q(423, {	-- Arugal's Folly
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 422,	-- Arugal's Folly
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3157, 3 },	-- Darksoul Shackle
+						{ "i", 3156, 6 },	-- Glutton Shackle
+					},
 					["lvl"] = 9,
 				}),
 				q(424, {	-- Arugal's Folly
@@ -73,13 +108,27 @@ _.Zones =
 					["sourceQuest"] = 423,	-- Arugal's Folly
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3634, 1 },	-- Head of Grimson
+					},
 					["lvl"] = 9,
+					["groups"] = {
+						{
+							["itemID"] = 3634,	-- Head of Grimson
+							["questID"] = 424,	-- Arugal's Folly
+							["cr"] = 1972,	-- Grimson the Pale
+							["coord"] = { 58.6, 44.8, SILVERPINE_FOREST },
+						},
+					},
 				}),
 				q(99, {	-- Arugal's Folly
 					["qg"] = 1938,	-- Dalar Dawnweaver
 					["sourceQuest"] = 424,	-- Arugal's Folly
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3218, 6 },	-- Pyrewood Shackle
+					},
 					["lvl"] = 9,
 					["g"] = {
 						i(3586),	-- Logsplitter
@@ -92,8 +141,17 @@ _.Zones =
 					["sourceQuest"] = 448,	-- Report to Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3623, 1 },	-- Thule's Head
+					},
 					["lvl"] = 10,
 					["g"] = {
+						{
+							["itemID"] = 3623,	-- Thule's Head
+							["questID"] = 442,	-- Assault on Fenris Isle
+							["cr"] = 1947,	-- Thule Ravenclaw
+							["coord"] = { 65.6, 24.6, SILVERPINE_FOREST },
+						},
 						i(3461),	-- High Robe of the Adjudicator
 						i(3462),	-- Talonstrike
 					},
@@ -140,8 +198,17 @@ _.Zones =
 					["qg"] = 1950,	-- Rane Yorick
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3621, 1 },	-- Ivar's Head
+					},
 					["lvl"] = 10,
 					["g"] = {
+						{
+							["itemID"] = 3621,	-- Ivar's Head
+							["questID"] = 425,	-- Ivar the Foul
+							["cr"] = 1971,	-- Ivar the Foul
+							["coord"] = { 51.8, 13.8, SILVERPINE_FOREST },
+						},
 						i(3453),	-- Quilted Bracers
 						i(3583),	-- Weathered Belt
 					},
@@ -207,12 +274,6 @@ _.Zones =
 				q(460, {	-- Resting in Pieces
 					["provider"] = { "i", 3317 },	-- A Talking Head
 					["coord"] = { 65.2, 32.8, SILVERPINE_FOREST },
-					["crs"] = {
-						1942,	-- Rot Hide Savage
-						1940,	-- Rot Hide Plague Weaver
-						1939,	-- Rot Hide Brute
-						1943,	-- Raging Rot Hide
-					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -244,6 +305,9 @@ _.Zones =
 					["sourceQuest"] = 439,	-- Rot Hide Clues
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3236, 8 },	-- Rot Hide Ichor
+					},
 					["lvl"] = 10,
 				}),
 				q(444, {	-- Rot Hide Origins
@@ -279,8 +343,17 @@ _.Zones =
 					["qg"] = 1952,	-- High Executor Hadrec
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3622, 1 },	-- Essence of Nightlash
+					},
 					["lvl"] = 10,
 					["g"] = {
+						{
+							["itemID"] = 3622,	-- Essence of Nightlash
+							["questID"] = 437,	-- The Dead Fields
+							["cr"] = 1983,	-- Nightlash
+							["coord"] = { 45.8, 20.4, SILVERPINE_FOREST },
+						},
 						i(3454),	-- Reconnaissance Boots
 					},
 				}),
@@ -310,12 +383,18 @@ _.Zones =
 					["sourceQuest"] = 460,	-- Resting in Pieces
 					["coord"] = { 67.8, 24.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3318, 1 },	-- Alaric's Remains
+					},
 					["lvl"] = 12,
 				}),
 				q(480, {	-- The Weaver
 					["qg"] = 2121,	-- Shadow Priest Allister
 					["coord"] = { 44, 41, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3515, 1 },	-- Ataeric's Staff
+					},
 					["lvl"] = 10,
 					["g"] = {
 						i(3452),	-- Ceranium Rod
@@ -337,6 +416,9 @@ _.Zones =
 					["sourceQuest"] = 461,	-- The Hidden Niche
 					["coord"] = { 65.3, 24.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3425, 1 },	-- Woven Wand
+					},
 					["lvl"] = 12,
 					["g"] = {
 						i(3457),	-- Stamped Trousers
@@ -349,6 +431,9 @@ _.Zones =
 					["sourceQuest"] = 428,	-- Lost Deathstalkers
 					["coord"] = { 53.4, 13.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3164, 6 },	-- Discolored Worg Heart
+					},
 					["lvl"] = 10,
 					["g"] = {
 						i(4597),	-- Recipe: Discolored Healing Potion

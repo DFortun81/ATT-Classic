@@ -591,6 +591,13 @@ _.Zones =
 					["qg"] = 5910, -- Zankaja
 					["sourceQuest"] = 1508, -- Blind Cazul
 				}),
+				q(1959, {	-- Report to Anastasia
+					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
+					["coord"] = { 39.0, 86.0, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },	-- Mage
+					["lvl"] = 15,
+				}),
 				q(8978, {	-- Return to Mokvar
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

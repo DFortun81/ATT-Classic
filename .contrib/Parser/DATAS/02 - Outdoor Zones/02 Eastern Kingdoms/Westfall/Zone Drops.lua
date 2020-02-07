@@ -9,6 +9,9 @@ _.Zones =
 				i(1405, {  -- Foamspittle Staff
 					["cr"] = 517,	-- Murloc Oracle
 				}),
+				i(5771, {	-- Pattern: Red Linen Bag
+					["cr"] = 590,	-- Defias Looter
+				}),
 				i(5772, {	-- Pattern: Red Woolen Bag
 					["cr"] = 450,	-- Defias Renegade Mage
 				}),

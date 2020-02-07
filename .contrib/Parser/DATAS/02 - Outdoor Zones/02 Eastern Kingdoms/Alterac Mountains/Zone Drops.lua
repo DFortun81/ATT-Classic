@@ -31,7 +31,6 @@ _.Zones =
 				i(8491, {	-- Cat Carrier (Black Tabby)
 					["crs"] = {
 						2271,	-- Dalaran Shield Guard
-						1920,	-- Dalaran Spellscribe
 						2358,	-- Dalaran Summoner
 						2272,	-- Dalaran Theurgist
 					},

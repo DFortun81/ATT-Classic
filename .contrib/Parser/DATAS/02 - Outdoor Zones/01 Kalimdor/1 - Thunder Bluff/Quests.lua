@@ -166,6 +166,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
 				}),
+				q(1959, {	-- Report to Anastasia
+					["qg"] = 3049,	-- Thurston Xane <Mage Trainer>
+					["coord"] = { 25, 20.6, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },	-- Mage
+					["lvl"] = 15,
+				}),
 				q(2967, {	-- Return to Thunder Bluff
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
