@@ -367,7 +367,6 @@ _.WorldDrops =
 		n(-342, {	-- Staves
 			i(866),  -- Monk's Staff
 			i(943),  -- Warden Staff
-			i(1405),  -- Foamspittle Staff
 			i(2077),  -- Magician Staff
 			i(4566),  -- Sturdy Quarterstaff
 			i(4575),  -- Medicine Staff
