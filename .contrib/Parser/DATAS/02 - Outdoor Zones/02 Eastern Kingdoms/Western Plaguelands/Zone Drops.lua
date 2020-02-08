@@ -12,6 +12,12 @@ _.Zones =
 					["cr"] = 1852,	-- Araj the Summoner
 					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 				}),
+				i(14610, {  -- Araj's Scarab
+					["allianceQuestID"] = 5803,	-- Araj's Scarab (A)
+					["hordeQuestID"] = 5804,	-- Araj's Scarab (H)
+					["cr"] = 1852,	-- Araj the Summoner
+					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
+				}),
 				i(12843, {	-- Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),

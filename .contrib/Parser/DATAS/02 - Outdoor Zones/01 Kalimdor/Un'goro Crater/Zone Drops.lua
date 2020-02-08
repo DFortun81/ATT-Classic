@@ -24,6 +24,20 @@ _.Zones =
 						6557,	-- Primal Ooze
 					},
 				}),
+				{
+					["itemID"] = 14644,	-- Skeleton Key Mold
+					["coord"] = { 49.6, 47.6, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 12359, 2 },	-- Thorium Bar
+					},
+					["groups"] = {
+						{
+							["itemID"] = 14645,	-- Unfinished Skeleton Key
+							["allianceQuestID"] = 5801,	-- Fire Plume Forged (A)
+							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
+						},
+					},
+				},
 			}),
 		}),
 	}),

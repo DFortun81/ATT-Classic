@@ -7,12 +7,56 @@ _.Zones =
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-2, {	-- Vendors
 				n(12941, {	-- Jase Farlane <Trade Supplies>
+					["coord"] = { 80.6, 57.6, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(15756),	-- Pattern: Runic Leather Headband
 					},
 				}),
 				n(11536, {	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["groups"] = {
+						i(18182, {	-- Chromatic Mantle of the Dawn
+							["sourceQuests"] = {
+								5517,	-- Chromatic Mantle of the Dawn
+								5521,	-- Chromatic Mantle of the Dawn
+								5524,	-- Chromatic Mantle of the Dawn
+							},
+						}),
+						i(18171, {	-- Arcane Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18169, {	-- Flame Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18170, {	-- Frost Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18172, {	-- Nature Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18173, {	-- Shadow Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
 						i(19447, {	-- Formula: Enchant Bracer - Healing
 							["u"] = 3,	-- Added in later phase
 						}),

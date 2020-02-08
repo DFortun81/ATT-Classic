@@ -59,17 +59,6 @@ _.Zones =
 					},
 					["lvl"] = 6,
 				}),
-				q(5901, {	-- A Plague Upon Thee
-					["qg"] = 11615,	-- Mickey Levine
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-				}),
-				q(5902, {	-- A Plague Upon Thee
-					["qg"] = 11615,	-- Mickey Levine
-					["sourceQuest"] = 5901,	-- A Plague Upon Thee
-					["races"] = HORDE_ONLY,
-					["lvl"] = 48,
-				}),
 				q(404, {	-- A Putrid Task
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },

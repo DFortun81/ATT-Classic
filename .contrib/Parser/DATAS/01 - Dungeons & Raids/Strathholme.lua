@@ -8,8 +8,8 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(5263, {	-- Above and Beyond
-					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["sourceQuest"] = 5262,	-- The Truth Comes Crashing Down
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
@@ -18,8 +18,8 @@ _.Instances = {
 					["lvl"] = 55,
 				}),
 				q(5125, {	-- Aurius' Reckoning
-					["sourceQuest"] = 5122,	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
+					["sourceQuest"] = 5122,	-- The Medallion of Faith
 					["cost"] = {
 						{ "i", 12845, 1 },	-- Medallion of Faith
 					},
@@ -29,22 +29,22 @@ _.Instances = {
 					},
 				}),
 				q(8945, {	-- Dead Man's Plea
-					["sourceQuest"] = 8929,	-- In Search of Anthion
 					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 8929,	-- In Search of Anthion
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["u"] = 3,	-- Not yet available
 					["lvl"] = 58,
 				}),
 				q(5861, {	-- Find Myranda
-					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
-					["lvl"] = 52,
-					["groups"] = {
-						i(14872),	-- Tirion's Gift
+					["cost"] = {
+						{ "i", 14872, 1 },	-- Tirion's Gift
 					},
+					["lvl"] = 52,
 				}),
 				q(5243, {	-- Houses of the Holy
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
@@ -63,8 +63,8 @@ _.Instances = {
 					},
 				}),
 				q(5944, { -- In Dreams
-					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
+					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["lvl"] = 52,
@@ -80,10 +80,10 @@ _.Instances = {
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.53, 52.64, IRONFORGE },
 					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
-					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 				}),
@@ -91,23 +91,23 @@ _.Instances = {
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
-					["races"] = HORDE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 				}),
 				q(5264, {	-- Lord Maxwell Tyrosus
-					["sourceQuest"] = 5263,	-- Above and Beyond
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["sourceQuest"] = 5263,	-- Above and Beyond
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 				}),
 				q(5781, {	-- Of Forgotten Memories
-					["sourceQuest"] = 5742,	-- Redemption
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5742,	-- Redemption
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
@@ -124,8 +124,8 @@ _.Instances = {
 					},
 				}),
 				q(5845, {	-- Of Lost Honor
-					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
@@ -138,15 +138,15 @@ _.Instances = {
 					},
 				}),
 				q(5846, {	-- Of Love and Family (1/2)
-					["sourceQuest"] = 5845,	-- Of Lost Honor
 					["qg"] = 1855,	-- Tirion Fordring
+					["sourceQuest"] = 5845,	-- Of Lost Honor
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
 				}),
 				q(5848, {	-- Of Love and Family (2/2)
-					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
 					["qg"] = 11936,	-- Artist Renfray
+					["sourceQuest"] = 5846,	-- Of Love and Family (1/2)
 					["coord"] = { 65.6, 75.4, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["cost"] = {
@@ -155,8 +155,8 @@ _.Instances = {
 					["lvl"] = 52,
 				}),
 				q(8946, {	-- Proof of Life
-					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["qg"] = 16031,	-- Ysida Harmon
+					["sourceQuest"] = 8945,	-- Dead Man's Plea
 					["u"] = 3,	-- Not yet available
 					["lvl"] = 58,
 					["groups"] = {
@@ -170,13 +170,11 @@ _.Instances = {
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["cr"] = 10439,	-- Ramstein the Gorger
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 15880, 1 },	-- Head of Ramstein the Gorger
 					},
-					["crs"] = {
-						10439,	-- Ramstein the Gorger
-					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						i(18022),	-- Royal Seal of Alexis
@@ -184,19 +182,19 @@ _.Instances = {
 					},
 				}),
 				q(5742, {	-- Redemption
+					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuests"] = {
 						5543,	-- Blood Tinged Skies
 						5544,	-- Carrion Grubbage						
 						5542,	-- Demon Dogs
 					},
-					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
 				}),
 				q(5862, {	-- Scarlet Subterfuge
-					["sourceQuest"] = 5861,	-- Find Myranda
 					["qg"] = 11872,	-- Myranda the Hag
+					["sourceQuest"] = 5861,	-- Find Myranda
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["cost"] = {
@@ -205,8 +203,8 @@ _.Instances = {
 					["lvl"] = 52,
 				}),
 				q(5213, {	-- The Active Agent
-					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
+					["sourceQuest"] = 5212,	-- The Flesh Does Not Lie
 					["coord"] = { 81.4, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
@@ -222,9 +220,7 @@ _.Instances = {
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
-					["crs"] = {
-						10811,	-- Archivist Galford
-					},
+					["cr"] = 10811,	-- Archivist Galford
 					["lvl"] = 55,
 				}),
 				q(5265, {	-- The Argent Hold
@@ -252,11 +248,9 @@ _.Instances = {
 					["qg"] = 11033,	-- Smokey LaRue
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["cr"] = 11058,	-- Fras Siabi
 					["cost"] = {
 						{ "i", 13172, 1 },	-- Siabi's Premium Tobacco
-					},
-					["crs"] = {
-						11058,	-- Fras Siabi
 					},
 					["lvl"] = 55,
 					["groups"] = {
@@ -265,10 +259,10 @@ _.Instances = {
 				}),
 				q(5122, {	-- The Medallion of Faith
 					["qg"] = 10917,	-- Aurius
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12845, 1 },	-- Medallion of Faith
 					},
-					["repeatable"] = true,
 				}),
 				q(5281, {	-- The Restless Souls (1/2)
 					["qg"] = 11038,	-- Caretaker Alen <The Argent Dawn>
@@ -277,10 +271,13 @@ _.Instances = {
 					["lvl"] = 55,
 				}),
 				q(5282, {	-- The Restless Souls (2/2)
-					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
 					["qg"] = 11140,	-- Egan
+					["sourceQuest"] = 5281,	-- The Restless Souls (1/2)
 					["coord"] = { 14.4, 33.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13289, 1 },	-- Egan's Blaster
+					},
 					["crs"] = {
 						10385,	-- Ghostly Citizen
 						10384,	-- Spectral Citizen
@@ -288,16 +285,12 @@ _.Instances = {
 					},
 					["lvl"] = 55,
 					["groups"] = {
-						{
-							["itemID"] = 13289,	-- Egan's Blaster
-							["questID"] = 5282,	-- The Restless Souls (2/2)
-						},
 						i(13315),	-- Testament of Hope
 					},
 				}),
 				q(5262, {	-- The Truth Comes Crashing Down
-					["sourceQuest"] = 5251,	-- The Archivist
 					["qg"] = 10813,	-- Balnazzar
+					["sourceQuest"] = 5251,	-- The Archivist
 					["cost"] = {
 						{ "i", 13250, 1 },	-- Head of Balnazzar
 					},

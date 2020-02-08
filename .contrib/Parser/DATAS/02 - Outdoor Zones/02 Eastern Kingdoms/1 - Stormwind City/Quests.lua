@@ -6,12 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
-				q(5066, { -- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2198, -- Crier Goodman
-					["isBreadcrumb"] = true,
-				}),
 				q(7794, {	-- A Donation of Mageweave
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -228,10 +222,11 @@ _.Zones =
 					["sourceQuest"] = 1702, -- The Shieldsmith
 				}),
 				q(6184, {	-- Flint Shadowmore
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["sourceQuest"] = 6183,	-- Honor the Dead
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
 				}),
 				q(1782, { -- Furen's Armor
 					["lvl"] = 20,
@@ -292,10 +287,11 @@ _.Zones =
 					["lvl"] = 26,
 				}),
 				q(6183, {	-- Honor the Dead
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 6182,	-- The First and the Last
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
 				}),
 				q(399, { -- Humble Beginnings
 					["lvl"] = 10,
@@ -405,10 +401,13 @@ _.Zones =
 					["lvl"] = 60,
 				}),
 				q(6187, {	-- Order Must Be Restored
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 6186,	-- The Blightcaller Cometh
+					["coord"] = { 78, 18, STORMWIND },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
+					["lvl"] = 56,
 					["g"] = {
 						i(16996),	-- Gorewood Bow
 						i(16997),	-- Stormrager
@@ -557,9 +556,10 @@ _.Zones =
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
 				}),
 				q(6182, {	-- The First and the Last
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["coord"] = { 78, 18, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
 				}),
 				q(394, { -- The Head of the Beast
 					["lvl"] = 16,

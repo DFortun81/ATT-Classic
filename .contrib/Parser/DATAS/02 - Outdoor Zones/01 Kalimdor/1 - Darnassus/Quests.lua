@@ -6,13 +6,6 @@ _.Zones =
 	m(KALIMDOR, {	-- Kalimdor
 		m(DARNASSUS, {	-- Darnassus
 			n(-17, {	-- Quests
-				q(5091, {	-- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10878,	-- Herald Moonstalker
-					["isBreadcrumb"] = true,
-					["description"] = "Quest giver walks around Darnassus on the main path.",
-				}),
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth

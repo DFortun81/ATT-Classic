@@ -6,26 +6,60 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-17, {	-- Quests
-				q(5095, {	-- A Call to Arms: The Plaguelands!
-					["qg"] = 10881,	-- Bluff Runner Windstrider
-					["races"] = HORDE_ONLY,
+				q(5066, {	-- A Call to Arms: The Plaguelands!
+					["qg"] = 2198, -- Crier Goodman
+					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 50,
+				}),
+				q(5090, {	-- A Call to Arms: The Plaguelands!
+					["qg"] = 10877,	-- Courier Hammerfall
+					["coord"] = { 31.6, 67, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 50,
+				}),
+				q(5091, {	-- A Call to Arms: The Plaguelands!
+					["qg"] = 10878,	-- Herald Moonstalker
+					["coord"] = { 36.4, 39.8, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands!
 					["qg"] = 10880,	-- Warcaller Gorlach
+					["coord"] = { 46.6, 64.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
 					["qg"] = 10879,	-- Harbinger Balthazad
+					["coord"] = { 64, 44, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 50,
+				}),
+				q(5095, {	-- A Call to Arms: The Plaguelands!
+					["qg"] = 10881,	-- Bluff Runner Windstrider
+					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 50,
 				}),
 				q(4971, {	-- A Matter of Time
 					["qg"] = 10667,	-- Chromie
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12627, 1 },	-- Temporal Displacer
+					},
 					["lvl"] = 53,
 					["g"] = {
 						i(15812),	-- Orchid Amice
@@ -34,34 +68,73 @@ _.Zones =
 				}),
 				q(5903, {	-- A Plague Upon Thee
 					["qg"] = 11616,	-- Nathaniel Dumah
+					["coord"] = { 43.4, 84.8, WESTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 15042, 1 },	-- Empty Termite Jar
+						{ "i", 15043, 100 },	-- Plagueland Termites
+					},
 					["lvl"] = 48,
 				}),
 				q(5904, {	-- A Plague Upon Thee
 					["qg"] = 11616,	-- Nathaniel Dumah
 					["sourceQuest"] = 5903,	-- A Plague Upon Thee
+					["coord"] = { 43.4, 84.8, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 15044, 1 },	-- Barrel of Plagueland Termites
+					},
 					["lvl"] = 48,
 				}),
 				q(6389, {	-- A Plague Upon Thee
 					["provider"] = { "o", 177491 },	-- Termite Barrel
 					["sourceQuest"] = 5904,	-- A Plague Upon Thee
+					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
+				}),
+				q(5901, {	-- A Plague Upon Thee
+					["qg"] = 11615,	-- Mickey Levine
+					["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
+					["maps"] = { EASTERN_PLAGUELANDS, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15042, 1 },	-- Empty Termite Jar
+						{ "i", 15043, 100 },	-- Plagueland Termites
+					},
+					["lvl"] = 48,
+				}),
+				q(5902, {	-- A Plague Upon Thee
+					["qg"] = 11615,	-- Mickey Levine
+					["sourceQuest"] = 5901,	-- A Plague Upon Thee
+					["coord"] = { 83.2, 72.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15044, 1 },	-- Barrel of Plagueland Termites
+					},
 					["lvl"] = 48,
 				}),
 				q(6390, {	-- A Plague Upon Thee
 					["provider"] = { "o", 177491 },	-- Termite Barrel
 					["sourceQuest"] = 5902,	-- A Plague Upon Thee
+					["coord"] = { 48.4, 31.9, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 48,
 				}),
 				q(5153, {	-- A Strange Historian
 					["qg"] = 10927,	-- Marlene Redpath
 					["sourceQuest"] = 5152,	-- Auntie Marlene
+					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12894, 1 },	-- Joseph's Wedding Ring
+					},
 					["lvl"] = 50,
 				}),
 				q(211, {	-- Alas, Andorhal
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5097,	-- All Along the Watchtowers
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -74,7 +147,9 @@ _.Zones =
 				}),
 				q(105, {	-- Alas, Andorhal
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83.0, 69.0, WESTERN_PLAGUELANDS },
+					["sourceQuest"] = 5098,	-- All Along the Watchtowers
+					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 17114, 1 },	-- Araj's Phylactery Shard
@@ -89,12 +164,20 @@ _.Zones =
 					["sourceQuest"] = 5092,	-- Clear The Way
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12815, 1 },	-- Beacon Torch
+					},
 					["lvl"] = 50,
 				}),
 				q(5098, {	-- All Along the Watchtowers (H)
 					["qg"] = 10837,	-- High Executor Derrington
 					["sourceQuest"] = 5096,	-- Scarlet Diversions
+					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12815, 1 },	-- Beacon Torch
+					},
 					["lvl"] = 50,
 				}),
 				q(5401, {	-- Argent Dawn Commission
@@ -107,6 +190,8 @@ _.Zones =
 				}),
 				q(5405, {	-- Argent Dawn Commission
 					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["lvl"] = 50,
 					["g"] = {
 						i(12846),	-- Argent Dawn Commission
@@ -139,18 +224,26 @@ _.Zones =
 				}),
 				q(5210, {	-- Brother Carlin
 					["qg"] = 10667,	-- Chromie
-					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
+					["sourceQuests"] = {
+						5154,	-- The Annals of Darrowshire
+						5168,	-- Heroes of Darrowshire
+					},
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13202, 1 },	-- Extended Annals of Darrowshire
+					},
 					["lvl"] = 50,
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["sourceQuest"] = 5504,	-- Mantles of the Dawn
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -160,11 +253,11 @@ _.Zones =
 					["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
 					["sourceQuest"] = 5507,	-- Mantles of the Dawn
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -172,21 +265,14 @@ _.Zones =
 				}),
 				q(5092, {	-- Clear the Way
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuests"] = {
+						5066,	-- A Call to Arms: The Plaguelands!
+						5090,	-- A Call to Arms: The Plaguelands!
+						5091,	-- A Call to Arms: The Plaguelands!
+					},
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
-				}),
-				q(5406, {	-- Corruptor's Scourgestones
-					["qg"] = 10839,	-- Argent Officer Garush
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
-					},
-					["lvl"] = 50,
-					["g"] = {
-						i(12844),	-- Argent Dawn Valor Token
-					},
 				}),
 				q(5404, {	-- Corruptor's Scourgestones
 					["qg"] = 10840,	-- Argent Officer Pureheart
@@ -201,14 +287,40 @@ _.Zones =
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
+				q(5406, {	-- Corruptor's Scourgestones
+					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
+					},
+					["lvl"] = 50,
+					["g"] = {
+						i(12844),	-- Argent Dawn Valor Token
+					},
+				}),
 				q(4972, {	-- Counting Out Time
+					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 4971,	-- A Matter of Time
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12638, 5 },	-- Andorhal Watch
+					},
 					["lvl"] = 53,
 					["g"] = {
 						i(12650),	-- Attuned Dampener
 					},
 				}),
 				q(4973, {	-- Counting Out Time
+					["qg"] = 10667,	-- Chromie
+					["sourceQuest"] = 4972,	-- Counting Out Time
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 12638, 5 },	-- Andorhal Watch
+					},
 					["lvl"] = 53,
 					["g"] = {
 						i(12650),	-- Attuned Dampener
@@ -273,7 +385,12 @@ _.Zones =
 				}),
 				q(4986, {	-- Glyphed Oaken Branch (A)
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["sourceQuest"] = 4985,	-- The Wildlife Suffers Too
+					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12663, 1 },	-- Glyphed Oaken Branch
+					},
 					["lvl"] = 51,
 					["g"] = {
 						i(15804),	-- Cerise Drape
@@ -281,7 +398,12 @@ _.Zones =
 				}),
 				q(4987, {	-- Glyphed Oaken Branch (H)
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["sourceQuest"] = 4985,	-- The Wildlife Suffers Too
+					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12663, 1 },	-- Glyphed Oaken Branch
+					},
 					["lvl"] = 51,
 					["g"] = {
 						i(15804),	-- Cerise Drape
@@ -317,6 +439,8 @@ _.Zones =
 				}),
 				q(5407, {	-- Invader's Scourgestones
 					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["cost"] = {
@@ -339,6 +463,11 @@ _.Zones =
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
 					},
+				}),
+				q(5142, {	-- Little Pamela
+					["qg"] = 10927,	-- Marlene Redpath
+					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
+					["lvl"] = 50,
 				}),
 				q(5059, {	-- Locked Away
 					["provider"] = { "o", 175925 },	-- Outhouse
@@ -389,6 +518,7 @@ _.Zones =
 					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
@@ -397,6 +527,8 @@ _.Zones =
 				}),
 				q(5408, {	-- Minion's Scourgestones
 					["qg"] = 10839,	-- Argent Officer Garush
+					["coord"] = { 83.2, 68.4, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["cost"] = {
@@ -433,6 +565,8 @@ _.Zones =
 				}),
 				q(5238, {	-- Mission Accomplished! (H)
 					["qg"] = 10837,	-- High Executor Derrington
+					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["g"] = {
@@ -526,6 +660,13 @@ _.Zones =
 				}),
 				q(5096, {	-- Scarlet Diversions
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuests"] = {
+						5093,	-- A Call to Arms: The Plaguelands!
+						5094,	-- A Call to Arms: The Plaguelands!
+						5095,	-- A Call to Arms: The Plaguelands!
+					},
+					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 					["g"] = {
@@ -622,6 +763,7 @@ _.Zones =
 				}),
 				q(5154, {	-- The Annals of Darrowshire
 					["qg"] = 10667,	-- Chromie
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 5153,	-- A Strange Historian
 					["lvl"] = 50,
 				}),
@@ -636,8 +778,31 @@ _.Zones =
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16001, 1 },	-- SI:7 Insignia (Fredo)
+						{ "i", 16003, 1 },	-- SI:7 Insignia (Rutger)
+						{ "i", 16002, 1 },	-- SI:7 Insignia (Turyen)
+					},
 					["lvl"] = 56,
+					["groups"] = {
+						{
+							["itemID"] = 16001,	-- SI:7 Insignia (Fredo)
+							["questID"] = 6185,	-- The Eastern Plagues
+							["coord"] = { 27.3, 75.0, EASTERN_PLAGUELANDS },
+						},
+						{
+							["itemID"] = 16003,	-- SI:7 Insignia (Rutger)
+							["questID"] = 6185,	-- The Eastern Plagues
+							["coord"] = { 28.8, 79.8, EASTERN_PLAGUELANDS },
+						},
+						{
+							["itemID"] = 16002,	-- SI:7 Insignia (Turyen)
+							["questID"] = 6185,	-- The Eastern Plagues
+							["coord"] = { 28.8, 74.9, EASTERN_PLAGUELANDS },
+						},
+					},
 				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
@@ -647,16 +812,20 @@ _.Zones =
 				}),
 				q(5228, {	-- The Scourge Cauldrons
 					["qg"] = 10837,	-- High Executor Derrington
-					["coord"] = { 83, 69, TIRISFAL_GLADES },
+					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
+					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
 				}),
-				q(4985, {	-- The Wildlife Suffers Too
-					["races"] = HORDE_ONLY,
-					["lvl"] = 51,
-				}),
 				q(4984, {	-- The Wildlife Suffers Too
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
+					["lvl"] = 51,
+				}),
+				q(4985, {	-- The Wildlife Suffers Too
+					["qg"] = 10739,	-- Mulgris Deepriver
+					["sourceQuest"] = 4984,	-- The Wildlife Suffers Too
+					["coord"] = { 53.6, 64.6, WESTERN_PLAGUELANDS },
 					["lvl"] = 51,
 				}),
 				q(5051, {	-- Two Halves Become One

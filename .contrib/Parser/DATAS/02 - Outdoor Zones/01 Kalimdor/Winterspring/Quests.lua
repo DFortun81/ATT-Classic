@@ -224,8 +224,9 @@ _.Zones =
 					},
 				}),
 				q(5601, {	-- Sister Pamela
-					["lvl"] = 50,
 					["qg"] = 11629,	-- Jessica Redpath
+					["coord"] = { 61.2, 39, WINTERSPRING },
+					["lvl"] = 50,
 				}),
 				q(4842, {	-- Strange Sources
 					["lvl"] = 51,

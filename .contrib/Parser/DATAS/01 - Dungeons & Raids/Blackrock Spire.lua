@@ -241,13 +241,10 @@ _.Instances = {
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 55,
-					["groups"] = {
-						{
-							["itemID"] = 16787,	-- Amulet of Draconic Subversion
-							["questID"] = 6570,	-- Emberstrife
-						},
+					["cost"] = {
+						{ "i", 16787, 1 },	-- Amulet of Draconic Subversion
 					},
+					["lvl"] = 55,
 				},
 				{
 					["questID"] = 4862,	-- En-Ay-Es-Tee-Why

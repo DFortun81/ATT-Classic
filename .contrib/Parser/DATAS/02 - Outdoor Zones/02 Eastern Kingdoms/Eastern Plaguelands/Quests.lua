@@ -7,6 +7,8 @@ _.Zones =
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-17, {	-- Quests
 				q(5503, {	-- Argent Dawn Commission
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 					["g"] = {
 						i(12846),	-- Argent Dawn Commission
@@ -17,8 +19,10 @@ _.Zones =
 					["qg"] = 12384,	-- Augustus the Touched
 				}),
 				q(5152, {	-- Auntie Marlene
-					["lvl"] = 50,
 					["qg"] = 10926,	-- Pamela Redpath
+					["sourceQuest"] = 5149,	-- Pamela's Doll
+					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					["lvl"] = 50,
 				}),
 				q(9131, {	-- Binding the Dreadnaught
 					["u"] = 3,	-- Added in later phase
@@ -30,8 +34,9 @@ _.Zones =
 					},
 				}),
 				q(5543, {	-- Blood Tinged Skies
-					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
+					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					["lvl"] = 52,
 				}),
 				q(9665, {	-- Bolstering Our Defenses
 					["u"] = 3,	-- Added in later phase
@@ -65,19 +70,20 @@ _.Zones =
 				}),
 				q(5544, {	-- Carrion Grubbage
 					["qg"] = 1855,	-- Tirion Fordring
+					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					["cost"] = {
-						{ "i", 13853, 1 },	-- Slab of Carrion Worm Meat
+						{ "i", 13853, 15 },	-- Slab of Carrion Worm Meat
 					},
 					["lvl"] = 52,
 				}),
 				q(5517, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["sourceQuest"] = 5513,	-- Mantles of the Dawn
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 					["g"] = {
 						i(18182),	-- Chromatic Mantle of the Dawn
@@ -91,7 +97,8 @@ _.Zones =
 					},
 				}),
 				q(5508, {	-- Corruptor's Scourgestones
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12843, 1 },	-- Corruptor's Scourgestone
@@ -102,252 +109,252 @@ _.Zones =
 					},
 				}),
 				q(9142, {	-- Craftsman's Writ
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22568),	-- Sealed Craftsman's Writ
 					},
 				}),
 				q(9188, {	-- Craftsman's Writ - Brightcloth Pants
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9178, {	-- Craftsman's Writ - Dense Weightstone
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9197, {	-- Craftsman's Writ - Gnomish Battle Chicken
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9195, {	-- Craftsman's Writ - Goblin Sapper Charge
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9201, {	-- Craftsman's Writ - Greater Arcane Protection Potion
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9182, {	-- Craftsman's Writ - Huge Thorium Battleaxe
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9179, {	-- Craftsman's Writ - Imperial Plate Chest
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9206, {	-- Craftsman's Writ - Lightning Eel
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9202, {	-- Craftsman's Writ - Major Healing Potion
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9200, {	-- Craftsman's Writ - Major Mana Potion
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9205, {	-- Craftsman's Writ - Plated Armorfish
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9203, {	-- Craftsman's Writ - Potion of Petrification
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9183, {	-- Craftsman's Writ - Radiant Circlet
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9185, {	-- Craftsman's Writ - Rugged Armor Kit
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9191, {	-- Craftsman's Writ - Runecloth Bag
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9190, {	-- Craftsman's Writ - Runecloth Boots
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9194, {	-- Craftsman's Writ - Runecloth Robe
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9187, {	-- Craftsman's Writ - Runic Leather Pants
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9204, {	-- Craftsman's Writ - Stonescale Eel
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9196, {	-- Craftsman's Writ - Thorium Grenade
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9198, {	-- Craftsman's Writ - Thorium Tube
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9181, {	-- Craftsman's Writ - Volcanic Hammer
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9186, {	-- Craftsman's Writ - Wicked Leather Belt
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9184, {	-- Craftsman's Writ - Wicked Leather Headband
+					["repeatable"] = true,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["repeatable"] = true,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
 				}),
 				q(9125, {	-- Crypt Fiend Parts
+					["qg"] = 16132,	-- Huntsman Leopold
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 16132,	-- Huntsman Leopold
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
 				}),
 				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
+					["qg"] = 16132,	-- Huntsman Leopold
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["qg"] = 16132,	-- Huntsman Leopold
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
 				}),
 				q(9132, {	-- Dark Iron Scraps
+					["qg"] = 16112,	-- Korfax, Champion of the Light
+					["races"] = ALLIANCE_ONLY,
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 					},
@@ -357,8 +364,9 @@ _.Zones =
 					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(5542, {	-- Demon Dogs
-					["lvl"] = 52,
 					["qg"] = 1855,	-- Tirion Fordring
+					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
+					["lvl"] = 52,
 				}),
 				q(6135, {	-- Duskwing, Oh How I Hate Thee...
 					["qg"] = 11878,	-- Nathanos Blightcaller
@@ -374,10 +382,11 @@ _.Zones =
 					},
 				}),
 				q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -388,10 +397,11 @@ _.Zones =
 					},
 				}),
 				q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
-					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -402,10 +412,11 @@ _.Zones =
 					},
 				}),
 				q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
-					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -416,10 +427,11 @@ _.Zones =
 					},
 				}),
 				q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
-					["qg"] = 11536,	-- Quartermaster Miranda Breechlock
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
 						i(22667),	-- Bracers of Hope
@@ -477,7 +489,8 @@ _.Zones =
 					},
 				}),
 				q(5509, {	-- Invader's Scourgestones
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12841, 10 },	-- Invader's Scourgestones
@@ -487,17 +500,13 @@ _.Zones =
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
-				q(5142, {	-- Little Pamela
-					["lvl"] = 50,
-					["qg"] = 10927,	-- Marlene Redpath
-				}),
 				q(5513, {	-- Mantles of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
+					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["cost"] = {
 						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 81.6, 60, EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
 				}),
 				q(5206, {	-- Marauders of Darrowshire
@@ -524,7 +533,8 @@ _.Zones =
 					},
 				}),
 				q(5510, {	-- Minion's Scourgestones
-					["qg"] = 11039,	-- Duke Nicholas Zverenhoff
+					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
+					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
@@ -544,10 +554,47 @@ _.Zones =
 					},
 				}),
 				q(5149, {	-- Pamela's Doll
+					["qg"] = 10926,	-- Pamela Redpath
+					["sourceQuests"] = {
+						5142,	-- Little Pamela
+						5601,	-- Sister Pamela
+					},
+					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12886, 1 },	-- Pamela's Doll's Head
+						{ "i", 12887, 1 },	-- Pamela's Doll's Left Side
+						{ "i", 12888, 1 },	-- Pamela's Doll's Right Side
+						{ "i", 12885, 1 },	-- Pamela's Doll
+					},
 					["lvl"] = 50,
 					["g"] = {
-						i(12886),	-- Pamela's Doll's Head
-						i(12887),	-- Pamela's Doll's Left Side
+						{
+							["itemID"] = 12886,	-- Pamela's Doll's Head
+							["questID"] = 5149,	-- Pamela's Doll
+							["coords"] = {
+								{ 39.6, 90.1, EASTERN_PLAGUELANDS },
+								{ 38.1, 92.5, EASTERN_PLAGUELANDS },
+								{ 39.6, 92.5, EASTERN_PLAGUELANDS },
+							},
+						},
+						{
+							["itemID"] = 12887,	-- Pamela's Doll's Left Side
+							["questID"] = 5149,	-- Pamela's Doll
+							["coords"] = {
+								{ 38.2, 92.1, EASTERN_PLAGUELANDS },
+								{ 29.6, 90.2, EASTERN_PLAGUELANDS },
+								{ 39.6, 92.7, EASTERN_PLAGUELANDS },
+							},
+						},
+						{
+							["itemID"] = 12888,	-- Pamela's Doll's Right Side
+							["questID"] = 5149,	-- Pamela's Doll
+							["coords"] = {
+								{ 38.6, 92.7, EASTERN_PLAGUELANDS },
+								{ 39.5, 92.5, EASTERN_PLAGUELANDS },
+								{ 39.6, 90.0, EASTERN_PLAGUELANDS },
+							},
+						},
 					},
 				}),
 				q(5941, {	-- Return to Chromie
@@ -755,8 +802,10 @@ _.Zones =
 					["qg"] = 11878,	-- Nathanos Blightcaller
 				}),
 				q(5241, {	-- Uncle Carlin
-					["lvl"] = 50,
 					["qg"] = 10926,	-- Pamela Redpath
+					["sourceQuest"] = 5149,	-- Pamela's Doll
+					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					["lvl"] = 50,
 				}),
 				q(5181, {	-- Villains of Darrowshire
 					["lvl"] = 50,

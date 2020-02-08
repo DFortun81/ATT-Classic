@@ -6,12 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(IRONFORGE, {	-- Ironforge
 			n(-17, {	-- Quests
-				q(5090, {	-- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10877,	-- Courier Hammerfall
-					["isBreadcrumb"] = true,
-				}),
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { 

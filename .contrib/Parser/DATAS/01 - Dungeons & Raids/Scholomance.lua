@@ -16,62 +16,56 @@ _.Instances = {
 		["groups"] = {
 			n(-17, {	-- Quests
 				q(5803, { -- Araj's Scarab (A)
-					["sourceQuest"] = 5801,	-- Fire Plume Forged (A)
 					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5801,	-- Fire Plume Forged (A)
 					["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14610, 1 },	-- Araj's Scarab
 					},
-					["crs"] = {
-						1852,	-- Araj the Summoner
-					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5804, {	-- Araj's Scarab (H)
-					["sourceQuest"] = 5802,	-- Fire Plume Forged (H)
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 5802,	-- Fire Plume Forged (H)
 					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 14610, 1 },	-- Araj's Scarab
 					},
-					["crs"] = {
-						1852,	-- Araj the Summoner
-					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5341, {	-- Barov Family Fortune
 					["qg"] = 11022,	-- Alexi Barov <House of Barov>
 					["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 13471, 1 },	-- The Deed to Brill
 						{ "i", 13448, 1 },	-- The Deed to Caer Darrow
 						{ "i", 13450, 1 },	-- The Deed to Southshore
 						{ "i", 13451, 1 },	-- The Deed to Tarren Mill
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(5343, {	-- Barov Family Fortune
 					["qg"] = 11023,	-- Weldon Barov <House of Barov>
 					["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 13471, 1 },	-- The Deed to Brill
 						{ "i", 13448, 1 },	-- The Deed to Caer Darrow
 						{ "i", 13450, 1 },	-- The Deed to Southshore
 						{ "i", 13451, 1 },	-- The Deed to Tarren Mill
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 				}),
 				q(5531, {	-- Betina Bigglezink
-					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+					["sourceQuest"] = 5522,	-- Leonid Barthalomew
 					["coord"] = { 81.73, 57.83, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["cost"] = {
@@ -80,8 +74,8 @@ _.Instances = {
 					["lvl"] = 57,
 				}),
 				q(4771, {	-- Dawn's Gambit
-					["sourceQuest"] = 5531,	-- Betina Bigglezink
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
+					["sourceQuest"] = 5531,	-- Betina Bigglezink
 					["coord"] = { 81.5, 59.7, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 57,
@@ -100,73 +94,49 @@ _.Instances = {
 					["description"] = "Talk to Eva until she offers the quest.",
 					["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
-					["crs"] = {
-						11261,	-- Doctor Theolen Krastinov <The Butcher>
-					},
+					["cr"] = 11261,	-- Doctor Theolen Krastinov <The Butcher>
 					["lvl"] = 55,
 				}),
 				q(5801, {	-- Fire Plume Forged (A)
-					["sourceQuest"] = 5538,	-- Mold Rhymes With...
 					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
+					["sourceQuest"] = 5538,	-- Mold Rhymes With...
 					["coord"] = { 51.5, 28.8, TANARIS },
 					["maps"] = { TANARIS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14645, 1 },	-- Unfinished Skeleton Key
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
-					["groups"] = {
-						{
-							["itemID"] = 14644,	-- Skeleton Key Mold
-							["allianceQuestID"] = 5801,	-- Fire Plume Forged (A)
-							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
-							["cost"] = {
-								{ "i", 12359, 2 },	-- Thorium Bar
-							},
-						},
-					},
 				}),
 				q(5802, {	-- Fire Plume Forged (H)
-					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
+					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 					["coord"] = { 51.5, 28.8, TANARIS },
 					["maps"] = { TANARIS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 14645, 1 },	-- Unfinished Skeleton Key
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
-					["groups"] = {
-						{
-							["itemID"] = 14644,	-- Skeleton Key Mold
-							["allianceQuestID"] = 5801,	-- Fire Plume Forged (A)
-							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
-							["cost"] = {
-								{ "i", 12359, 2 },	-- Thorium Bar
-							},
-						},
-					},
 				}),
 				q(5582, {	-- Healthy Dragon Scale
-					["sourceQuest"] = 5529,	-- Plagued Hatchlings
 					["qg"] = 10678,	-- Plagued Hatchling
+					["sourceQuest"] = 5529,	-- Plagued Hatchlings
 					["description"] = "This item can only drop from the Hatchlings after you have completed the Plagued Hatchlings quest.",
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 13920, 1 },	-- Healthy Dragon Scale
 					},
-					["repeatable"] = true,
 					["lvl"] = 55,
 				}),
 				q(5384, {	-- Kirtonos the Herald
-					["sourceQuest"] = 5515,	-- Krastinov's Bag of Horrors
 					["qg"] = 11216,	-- Eva Sarkhoff
+					["sourceQuest"] = 5515,	-- Krastinov's Bag of Horrors
 					["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["cr"] = 10506,	-- Kirtonos the Herald
 					["cost"] = {
 						{ "i", 13523, 1 },	-- Blood of Innocents
-					},
-					["crs"] = {
-						10506,	-- Kirtonos the Herald
 					},
 					["lvl"] = 55,
 					["groups"] = {
@@ -176,21 +146,19 @@ _.Instances = {
 					},
 				}),
 				q(5515, { -- Krastinov's Bag of Horrors
-					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 					["qg"] = 11216,	-- Eva Sarkhoff
+					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 					["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["cr"] = 10503,	-- Jandice Barov
 					["cost"] = {
 						{ "i", 13725, 1 },	-- Krastinov's Bag of Horrors
-					},
-					["crs"] = {
-						10503,	-- Jandice Barov
 					},
 					["lvl"] = 55,
 				}),
 				q(5522, {	-- Leonid Barthalomew
-					["sourceQuest"] = 4734,	-- Egg Freezing
 					["qg"] = 10267,	-- Tinkee Steamboil
+					["sourceQuest"] = 4734,	-- Egg Freezing
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
@@ -199,8 +167,8 @@ _.Instances = {
 					["lvl"] = 57,
 				}),
 				q(5463, {	-- Menethil's Gift (1/2)
-					["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+					["sourceQuest"] = 5462,	-- The Dying, Ras Frostwhisper
 					["description"] = "This is the symbol on the floor in Baron Rivendare's room in Stratholme.",
 					["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -210,8 +178,8 @@ _.Instances = {
 					["lvl"] = 57,
 				}),
 				q(5464, {	-- Menethil's Gift (2/2)
-					["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
 					["provider"] = { "o", 176631 },	-- Menethil's Gift
+					["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
 					["maps"] = { STRATHOLME },
 					["lvl"] = 57,
 					["groups"] = {
@@ -219,99 +187,95 @@ _.Instances = {
 					},
 				}),
 				q(5538, { -- Mold Rhymes With... (A)
-					["sourceQuest"] = 5537,	-- Skeletal Fragments (A)
 					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5537,	-- Skeletal Fragments (A)
 					["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
 						{ "g", 150000 },	-- 15g
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5514, {	-- Mold Rhymes With... (H)
-					["sourceQuest"] = 964,	-- Skeletal Fragments (H)
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 964,	-- Skeletal Fragments (H)
 					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 14628, 1 },	-- Imbued Skeletal Fragments
 						{ "g", 150000 },	-- 15g
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5529, {	-- Plagued Hatchlings
 					["qg"] = 11035,	-- Betina Bigglezink <The Argent Dawn>
 					["coord"] = { 81.47, 59.66, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
-					["crs"] = {
-						10678,	-- Plagued Hatchling
-					},
+					["cr"] = 10678,	-- Plagued Hatchling
 					["lvl"] = 55,
 				}),
 				q(5533, {	-- Scholomance (A)
-					["sourceQuest"] = 5097,	-- All Along the Watchtowers (A)
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5097,	-- All Along the Watchtowers (A)
 					["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(838, {	-- Scholomance (H)
-					["sourceQuest"] = 5098,	-- All Along the Watchtowers (H)
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5098,	-- All Along the Watchtowers (H)
 					["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5537, {	-- Skeletal Fragments (A)
-					["sourceQuest"] = 5533,	-- Scholomance (A)
 					["qg"] = 11056,	-- Alchemist Arbington
+					["sourceQuest"] = 5533,	-- Scholomance (A)
 					["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14619, 15 },	-- Skeletal Fragments
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(964, {	-- Skeletal Fragments (H)
-					["sourceQuest"] = 838,	-- Scholomance
 					["qg"] = 11057,	-- Apothecary Dithers
+					["sourceQuest"] = 838,	-- Scholomance
 					["coord"] = { 83.3, 69.2, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 14619, 15 },	-- Skeletal Fragments
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5465, {	-- Soulbound Keepsake
-					["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 					["qg"] = 11036,	-- Leonid Barthalomew the Revered <The Argent Dawn>
+					["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 					["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 57,
 				}),
 				q(8258, {	-- The Darkreaver Menace
+					["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+					["sourceQuest"] = 7667,	-- Material Assistance
 					["altQuests"] = {
 						7668,	-- The Darkreaver Menace (Original)
 					},
-					["sourceQuest"] = 7667,	-- Material Assistance
-					["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+					["cr"] = 14516,	-- Death Knight Darkreaver
 					["coord"] = { 38.7, 35.9, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
+					["classes"] = { 7 },	-- Shaman Only!
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 18880, 1 },	-- Darkreaver's Head
 					},
-					["crs"] = {
-						14516,	-- Death Knight Darkreaver
-					},
-					["classes"] = { 7 },	-- Shaman Only!
-					["races"] = HORDE_ONLY,
 					["u"] = 3,	-- Not available yet.
 					["lvl"] = 55,
 					["groups"] = {
@@ -324,15 +288,15 @@ _.Instances = {
 					},
 				}),
 				q(5462, {	-- The Dying, Ras Frostwhisper
-					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 					["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["lvl"] = 57,
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
-					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5384,	-- Kirtonos the Herald
 					["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["cost"] = {
@@ -349,8 +313,8 @@ _.Instances = {
 					},
 				}),
 				q(5505, {	-- The Key to Scholomance (A)
-					["sourceQuest"] = 5803,	-- Araj's Scarab
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5803,	-- Araj's Scarab
 					["coord"] = { 42.7, 84.0, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -364,8 +328,8 @@ _.Instances = {
 					},
 				}),
 				q(5511, {	-- The Key to Scholomance (H)
-					["sourceQuest"] = 5804,	-- Araj's Scarab
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5804,	-- Araj's Scarab
 					["coord"] = { 83.1, 68.9, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
@@ -379,14 +343,14 @@ _.Instances = {
 					},
 				}),
 				q(5342, {	-- The Last Barov
-					["sourceQuest"] = 5341,	-- Barov Family Fortune
 					["qg"] = 11022,	-- Alexi Barov <House of Barov>
+					["sourceQuest"] = 5341,	-- Barov Family Fortune
 					["coord"] = { 83.06, 71.6, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 13469, 1 },	-- Head of Weldon Barov
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
 						{
@@ -399,14 +363,14 @@ _.Instances = {
 					},
 				}),
 				q(5344, {	-- The Last Barov
-					["sourceQuest"] = 5343,	-- Barov Family Fortune
 					["qg"] = 11023,	-- Weldon Barov <House of Barov>
+					["sourceQuest"] = 5343,	-- Barov Family Fortune
 					["coord"] = { 43.5, 83.7, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 13470, 1 },	-- Head of Alexi Barov
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 52,
 					["groups"] = {
 						{
@@ -419,15 +383,13 @@ _.Instances = {
 					},
 				}),
 				q(5466, {	-- The Lich, Ras Frostwhisper
-					["sourceQuest"] = 5465,	-- Soulbound Keepsake
 					["qg"] = 11286,	-- Magistrate Marduke
+					["sourceQuest"] = 5465,	-- Soulbound Keepsake
 					["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["cr"] = 10508,	-- Ras Frostwhisper
 					["cost"] = {
 						{ "i", 13626, 1 },	-- Human Head of Ras Frostwhisper
-					},
-					["crs"] = {
-						10508,	-- Ras Frostwhisper
 					},
 					["lvl"] = 57,
 					["groups"] = {

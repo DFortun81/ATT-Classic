@@ -17,6 +17,48 @@ _.Zones =
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Dawn>
 					["coord"] = { 42.8, 83.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
+						i(18182, {	-- Chromatic Mantle of the Dawn
+							["sourceQuests"] = {
+								5517,	-- Chromatic Mantle of the Dawn
+								5521,	-- Chromatic Mantle of the Dawn
+								5524,	-- Chromatic Mantle of the Dawn
+							},
+						}),
+						i(18171, {	-- Arcane Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18169, {	-- Flame Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18170, {	-- Frost Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18172, {	-- Nature Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
+						i(18173, {	-- Shadow Mantle of the Dawn
+							["sourceQuests"] = {
+								5504,	-- Mantles of the Dawn
+								5507,	-- Mantles of the Dawn
+								5513,	-- Mantles of the Dawn
+							},
+						}),
 						i(19447, {	-- Formula: Enchant Bracer - Healing
 							["u"] = 3,	-- Added in later phase
 						}),
