@@ -18,6 +18,9 @@ _.Zones =
 				i(9294, {	-- Recipe: Wildvine Potion
 					["description"] = "Can drop from any troll in Hinterlands or Stranglethorn Vale.",
 				}),
+				i(8153, {	-- Wildvine
+					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
+				}),
 			}),
 		}),
 	}),

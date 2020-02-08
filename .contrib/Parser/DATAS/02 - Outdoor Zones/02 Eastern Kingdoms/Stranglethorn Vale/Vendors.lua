@@ -7,25 +7,25 @@ _.Zones =
 		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
 			n(-2, {	-- Vendors
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
+					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(5788),	-- Pattern: Thick Murloc Armor
 						i(5789),	-- Pattern: Murloc Scale Bracers
 					},
-					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 				}),
 				n(734, {	-- Corporal Bluth <Camp Trader>
+					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(12228),	-- Recipe: Roast Raptor
 						i(12231),	-- Recipe: Jungle Stew
 					},
-					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 				}),
 				n(2672, {	-- Cowardly Crosby <Tailoring Supplies>
+					["coord"] = { 27.0, 82.5, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(10318),	-- Pattern: Admiral's Hat
 					},
-					["coord"] = { 27.0, 82.5, STRANGLETHORN_VALE },
 				}),
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
 					["groups"] = {
@@ -33,10 +33,10 @@ _.Zones =
 					},
 				}),
 				n(2845, {	-- Fargon Mortalak <Superior Armorer>
+					["coord"] = { 29.0, 75.0, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(12257),	-- Heavy Notched Belt
 					},
-					["coord"] = { 29.0, 75.0, STRANGLETHORN_VALE },
 				}),
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
 					["groups"] = {						
@@ -50,10 +50,10 @@ _.Zones =
 					},
 				}),
 				n(2839, {	-- Haren Kanmae <Superior Bowyer>
+					["coord"] = { 28.3, 74.6, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(11305),	-- Dense Shortbow
 					},
-					["coord"] = { 28.3, 74.6, STRANGLETHORN_VALE },
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
 					["groups"] = {						
@@ -63,13 +63,14 @@ _.Zones =
 					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
+					["coord"] = { 27.5, 77.5, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(12162),	-- Plans: Hardened Iron Shortsword
 						i(12248),	-- Daring Dirk
 					},
-					["coord"] = { 27.5, 77.5, STRANGLETHORN_VALE },
 				}),
 				n(2664, {	-- Kelsey Yance <Cook>
+					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(6039),	-- Recipe: Giant Clam Scorcho
 						i(6369),	-- Recipe: Rockscale Cod
@@ -80,14 +81,13 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
 					},
-					["coord"] = { 28.2, 74.4, STRANGLETHORN_VALE },
 				}),
 				n(2840, {	-- Kizz Bluntstrike <Macecrafter>
+					["coord"] = { 28.3, 75.2, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace
 					},
-					["coord"] = { 28.3, 75.2, STRANGLETHORN_VALE },
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
 					["groups"] = {						
@@ -95,19 +95,19 @@ _.Zones =
 					},
 				}),
 				n(2685, {	-- Mazk Snipeshot <Engineering Supplies>
+					["coord"] = { 28.5, 75.1, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(13310),	-- Schematic: Accurate Scope
 						i(18651),	-- Schematic: Truesilver Transformer
 					},
-					["coord"] = { 28.5, 75.1, STRANGLETHORN_VALE },
 				}),
 				n(2663, {	-- Narkk <Pirate Supplies>
+					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(8495),	-- Parrot Cage (Senegal)
 						i(8496),	-- Parrot Cage (Cockatiel)
 						i(10728),	-- Pattern: Black Swashbuckler's Shirt
 					},
-					["coord"] = { 28.1, 74.4, STRANGLETHORN_VALE },
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
 					["races"] = HORDE_ONLY,
@@ -118,10 +118,10 @@ _.Zones =
 					},
 				}),
 				n(2626, {	-- Old Man Heming <Fisherman>
+					["coord"] = { 27.4, 77.1, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(16083),	-- Expert Fishing - The Bass and You						
 					},
-					["coord"] = { 27.4, 77.1, STRANGLETHORN_VALE },
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
 					["groups"] = {						
@@ -212,19 +212,19 @@ _.Zones =
 					},
 				}),
 				n(2670, {	-- Xizk Goodstitch <Tailoring Supplies>
+					["coord"] = { 28.7, 76.9, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(7087),	-- Pattern: Crimson Silk Cloak
 						i(14630),	-- Pattern: Enchanter's Cowl
 					},
-					["coord"] = { 28.7, 76.9, STRANGLETHORN_VALE },
 				}),
 				n(2482, {	-- Zarena Cromwind <Superior Weaponsmith>
+					["coord"] = { 28.3, 75.5, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(12163),	-- Plans: Moonsteel Broadsword						
 						i(12251),	-- Big Stick
 						i(12252),	-- Staff of Protection
 					},
-					["coord"] = { 28.3, 75.5, STRANGLETHORN_VALE },
 				}),
 			}),	
 		}),

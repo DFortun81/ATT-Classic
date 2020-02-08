@@ -254,7 +254,11 @@ _.Zones =
 				q(705, {	-- Pearl Diving
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
+					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4611, 9 },	-- Blue Pearl
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(4086),	-- Flash Rifle

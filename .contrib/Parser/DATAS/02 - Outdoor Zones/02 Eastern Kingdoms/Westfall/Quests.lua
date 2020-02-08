@@ -154,57 +154,63 @@ _.Zones =
 					},
 				}),
 				q(48, {	-- Sweet Amber (1/5)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["maps"] = { STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 737, 1 } -- Holy Spring Water
 					},
+					["lvl"] = 40,
 				}),
 				q(49, {	-- Sweet Amber (2/5)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 738, 1}, -- Sack of Barley
 						{ "i", 739, 1}, -- Sack of Corn
 						{ "i", 740, 1}, -- Sack of Rye
 					},
-					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
+					["lvl"] = 40,
 				}),
 				q(50, {	-- Sweet Amber (3/5)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 6037, 1 }, -- Truesilver Bar
 					},
-					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
+					["lvl"] = 40,
 				}),
 				q(51, {	-- Sweet Amber (4/5)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 742, 1 }, -- A Sycamore Branch
 					},
-					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
+					["lvl"] = 40,
 				}),
 				q(53, {	-- Sweet Amber (5/5)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 743, 1 }, -- Bundle of Charred Oak
 					},
-					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
+					["lvl"] = 40,
 					["g"] = {
 						i(744),	-- Thunderbrew's Boot Flask
 					},
 				}),
 				q(152, {	-- The Coast Isn't Clear
-					["lvl"] = 10,
 					["qg"] = 392,	-- Captain Grayson
+					["lvl"] = 10,
 				}),
 				q(104, {	-- The Coastal Menace
 					["lvl"] = 15,

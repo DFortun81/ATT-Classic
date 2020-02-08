@@ -55,9 +55,13 @@ _.Zones =
 				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts
-					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
-					["lvl"] = 28,
 					["sourceQuest"] = 1105,	-- Hardened Shells
+					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
+					["maps"] = { STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 5796, 10 },	-- Encrusted Tail Fin
+					},
+					["lvl"] = 28,
 				}),
 				q(5361, {	-- Family Tree
 					["qg"] = 10537,	-- Cliffwatcher Longhorn

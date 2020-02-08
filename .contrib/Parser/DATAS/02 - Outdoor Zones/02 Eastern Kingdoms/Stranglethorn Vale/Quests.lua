@@ -7,22 +7,40 @@ _.Zones =
 		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
 			n(-17, {	-- Quests
 				q(610, {	-- "Pretty Boy" Duncan
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2542, -- Catelyn the Blade
 					["sourceQuest"] = 603, -- Ansirem's Key
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
-				}),
-				q(623, {	-- Akiris by the Bundle
-					["lvl"] = 38,
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4027, 1 },	-- Catelyn's Blade
+					},
+					["lvl"] = 32,
+					["groups"] = {
+						{
+							["itemID"] = 4027,	-- Catelyn's Blade
+							["questID"] = 610,	-- "Pretty Boy" Duncan
+							["coord"] = { 27.6, 69.6, STRANGLETHORN_VALE },
+						},
+					},
 				}),
 				q(617, {	-- Akiris by the Bundle
-					["lvl"] = 38,
 					["qg"] = 2494,	-- Privateer Bloads
+					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4029, 10 },	-- Akiris Reed
+					},
+					["lvl"] = 38,
 					["g"] = {
 						i(4117),	-- Scorching Sash
 					},
+				}),
+				q(623, {	-- Akiris by the Bundle
+					["qg"] = 2494,	-- Privateer Bloads
+					["sourceQuest"] = 617, 	-- Akiris by the Bundle
+					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(3721, {	-- An OOX of Your Own
 					["qg"] = 7406,	-- Oglethorpe Obnoticus
@@ -37,52 +55,101 @@ _.Zones =
 					},
 				}),
 				q(603, {	-- Ansirem's Key
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
 					["sourceQuest"] = 603, -- Magical Analysis
 					["coord"] = { 18.8, 78.5, ALTERAC_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(7908, {	-- Arena Master
 				}),
 				q(7810, {	-- Arena Master
 				}),
 				q(204, {	-- Bad Medicine
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 733,	-- Sergeant Yohwa
+					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2633, 7 },	-- Jungle Remedy
+						{ "i", 2634, 1 },	-- Venom Fern Extract
+					},
+					["lvl"] = 30,
 					["g"] = {
+						{
+							["itemID"] = 2634,	-- Venom Fern Extract
+							["questID"] = 204,	-- Bad Medicine
+							["coord"] = { 44.5, 9.8, STRANGLETHORN_VALE },
+						},
 						i(4140),	-- Palm Frond Mantle
 						i(4126),	-- Guerrilla Cleaver
 					},
-					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
 				}),
 				q(208, {	-- Big Game Hunter
-					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
+					["sourceQuests"] = {
+						193,	-- Panther Mastery
+						197,	-- Raptor Mastery
+						188,	-- Tiger Mastery
+					},
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3880, 1 },	-- Head of Bangalash
+					},
+					["lvl"] = 28,
 					["g"] = {
+						{
+							["itemID"] = 3880,	-- Head of Bangalash
+							["questID"] = 208,	-- Big Game Hunter
+							["cr"] = 731,	-- King Bangalash
+							["coord"] = { 38.6, 35.6, STRANGLETHORN_VALE },
+						},
 						i(17686),	-- Master Hunter's Bow
 						i(17687),	-- Master Hunter's Rifle
 					},
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(584, {	-- Bloodscalp Clan Heads
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2497,	-- Nimboya
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3904, 1 },	-- Gan'zulah's Head
+						{ "i", 3905, 1 },	-- Nezzliok's Head
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 3904,	-- Gan'zulah's Head
+							["questID"] = 584,	-- Bloodscalp Clan Heads
+							["cr"] = 1061,	-- Gan'zulah <Bloodscalp Chief>
+							["coord"] = { 23.8, 8.6, STRANGLETHORN_VALE },
+						},
+						{
+							["itemID"] = 3905,	-- Nezzliok's Head
+							["questID"] = 584,	-- Bloodscalp Clan Heads
+							["cr"] = 1062,	-- Nezzliok the Dire <Bloodscalp Clan Witchdoctor>
+							["coord"] = { 23.6, 9.6, STRANGLETHORN_VALE },
+						},
+					},
 				}),
 				q(189, {	-- Bloodscalp Ears
 					["qg"] = 737,	-- Kebok
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 1519, 15 },	-- Bloodscalp Ear
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(4598),	-- Goblin Fishing Pole
 					},
 				}),
 				q(596, {	-- Bloody Bone Necklaces
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3915, 25 },	-- Bloody Bone Necklace
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(4135),	-- Bloodbone Band
 					},
@@ -96,7 +163,6 @@ _.Zones =
 				q(339, {	-- Chapter I
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
-					
 					["lvl"] = 30,
 					["g"] = {
 						i(2756, {	-- Green Hills of Stranglethorn - Chapter I
@@ -161,16 +227,25 @@ _.Zones =
 					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3615, 1 },	-- Kurzen's Head
+					},
 					["lvl"] = 30,
 					["g"] = {
+						{
+							["itemID"] = 3615,	-- Kurzen's Head
+							["questID"] = 202,	-- Colonel Kurzen
+							["cr"] = 813,	-- Colonel Kurzen
+							["coord"] = { 49.6, 4.0, STRANGLETHORN_VALE },
+						},
 						i(4127),	-- Shrapnel Blaster
 					},
 				}),
-				q(4782, { -- Components for the Enchanted Gold Bloodrobe (3/5)
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
+				q(4782, { 	-- Components for the Enchanted Gold Bloodrobe (3/5)
 					["qg"] = 2670, -- Xizk Goodstitch
 					["sourceQuest"] = 4781, -- Components for the Enchanted Gold Bloodrobe (2/5)
+					["classes"] = { WARLOCK },
+					["lvl"] = 31,
 				}),
 				q(625, {	-- Cortello's Riddle
 					["lvl"] = 35,
@@ -179,23 +254,23 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(626, {	-- Cortello's Riddle
-					["lvl"] = 35,
 					["provider"] = { "o", 255 }, -- Musty Scroll
+					["lvl"] = 35,
 					["g"] = {
 						i(11324),	-- Explorer's Knapsack
 					},
 				}),
 				q(613, {	-- Cracking Maury's Foot
+					["sourceQuest"] = 609, -- Voodoo Dues
 					["lvl"] = 30,
 					["g"] = {
 						i(4129),	-- Collection Plate
 					},
-					["sourceQuest"] = 609, -- Voodoo Dues
 				}),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
-					["lvl"] = 45,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3621,	-- The Formation of Felbane
+					["lvl"] = 45,
 					["g"] = {
 						i(10697),	-- Enchanted Azsharite Felbane Dagger
 						i(10698),	-- Enchanted Azsharite Felbane Staff
@@ -203,17 +278,15 @@ _.Zones =
 					},
 				}),
 				q(628, {	-- Excelsior
+					["qg"] = 2495,	-- Drizzlik
+					["sourceQuest"] = 577,	-- Some Assembly Required
+					["coord"] = { 28.2, 77.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4105, 1 },	-- Elder Crocolisk Skin
+					},
 					["lvl"] = 31,
 					["g"] = {
 						i(4109),	-- Excelsior Boots
-					},
-				}),
-				q(618, { -- Facing Negolash
-					["cost"] = {
-						{ "i", 3935, 1 },	-- Smotts' Cutlass
-					},
-					["altQuests"] = {
-						8554,	-- Facing Negolash
 					},
 				}),
 				q(8554, {	-- Facing Negolash
@@ -237,50 +310,44 @@ _.Zones =
 							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Facing Negolash\" in your quest log.",
 							["repeatable"] = true,
 							["groups"] = {
-								n(1494, {	-- Negolash
+								{
+									["itemID"] = 3935,	-- Smotts' Cutlass
+									["questID"] = 8554,	-- Facing Negolash
+									["cr"] = 1494,	-- Negolash
 									["coord"] = { 32.5, 81.9, STRANGLETHORN_VALE },
-									["groups"] = {
-										{
-											["itemID"] = 3935,	-- Smotts' Cutlass
-											["questID"] = 8554,	-- Facing Negolash
-										},
-									}
-								}),
+								}
 							},
 						}),
 						i(4130),	-- Smotts' Compass
 					},
 				}),
 				q(627, {	-- Favor for Krazek
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4278, 4 },	-- Lesser Bloodstone Ore
 					},
-				}),
-				q(593, {	-- Filling the Soul Gem
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["description"] = "This quest is repeatable, but can only be completed while the quest \"Saving Yenniku\" (quest #592) is in your quest log.",
-					["g"] = {
-						i(3913),	-- Filled Soul Gem
-					},
+					["lvl"] = 32,
 				}),
 				q(1127, {	-- Fool's Stout
-					["lvl"] = 35,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 					["repeatable"] = true,
+					["lvl"] = 35,
 					["g"] = {
 						i(5806),	-- Fool's Stout
 					},
-					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 				q(582, {	-- Headhunting
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2497,	-- Nimboya
+					["sourceQuest"] = 581,	-- Hunt for Yenniku
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 1532, 20 },	-- Shrunken Head
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(4133),	-- Darkspear Cuffs
 						i(4132),	-- Darkspear Armsplints
@@ -295,9 +362,13 @@ _.Zones =
 					},
 				}),
 				q(581, {	-- Hunt for Yenniku
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2497,	-- Nimboya
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3901, 9 },	-- Bloodscalp Tusk
+					},
+					["lvl"] = 30,
 				}),
 				q(201, {	-- Investigate the Camp
 					["qg"] = 773,	-- Krazek
@@ -305,40 +376,46 @@ _.Zones =
 					["lvl"] = 28,
 				}),
 				q(215, {	-- Jungle Secrets
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 738,	-- Private Thorsen
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(576, {	-- Keep An Eye Out
-					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2493,	-- Dizzy One-Eye
+					["coord"] = { 28.6, 75.9, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3897, 1 },	-- Dizzy's Eye
+					},
+					["lvl"] = 37,
 					["g"] = {
 						i(4114),	-- Darktide Cape
 					},
-					["coord"] = { 28.6, 75.9, STRANGLETHORN_VALE },
 				}),
 				q(210, {	-- Krazek's Cookery
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 770,	-- Corporal Kaleb
 					["coord"] = { 37.7, 3.3, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(207, {	-- Kurzen's Mystery
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 739,	-- Brother Nimetz
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(602, {	-- Magical Analysis
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 601, -- Water Elementals
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(206, {	-- Mai'Zoth
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 205, -- Troll Witchery
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3616, 1 },	-- Mind's Eye
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(4125),	-- Tranquil Orb
 					},
@@ -355,123 +432,186 @@ _.Zones =
 					["provider"] = { "i", 4098 },	-- Carefully Folded Note
 					["lvl"] = 45,
 				}),
-				q(572, {	-- Mok'thardin's Enchantment
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
+				q(570, {	-- Mok'thardin's Enchantment
 					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3838, 8 },	-- Shadowmaw Claw
+						{ "i", 3839, 1 },	-- Pristine Tigress Fang
+					},
+					["lvl"] = 33,
+				}),
+				q(572, {	-- Mok'thardin's Enchantment
+					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["sourceQuest"] = 570,	-- Mok'thardin's Enchantment
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3863, 10 },	-- Jungle Stalker Feather
+					},
+					["lvl"] = 33,
+				}),
+				q(571, {	-- Mok'thardin's Enchantment
+					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["sourceQuest"] = 572,	-- Mok'thardin's Enchantment
+					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3862, 1 },	-- Aged Gorilla Sinew
+					},
+					["lvl"] = 33,
 				}),
 				q(573, {	-- Mok'thardin's Enchantment
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2465,	-- Far Seer Mok'thardin
+					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment
+					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 737, 1 },	-- Holy Spring Water
+					},
+					["lvl"] = 33,
 					["g"] = {
 						i(4112),	-- Choker of the High Shaman
 					},
 				}),
-				q(571, {	-- Mok'thardin's Enchantment
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2465,	-- Far Seer Mok'thardin
-				}),
-				q(570, {	-- Mok'thardin's Enchantment
-					["lvl"] = 33,
-					["races"] = HORDE_ONLY,
-					["qg"] = 2465,	-- Far Seer Mok'thardin
-				}),
 				q(190, {	-- Panther Mastery (1/4)
-					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(191, {	-- Panther Mastery (2/4)
-					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 190, -- Panther Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(192, {	-- Panther Mastery (3/4)
-					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 191, -- Panther Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(193, {	-- Panther Mastery (4/4)
-					["lvl"] = 28,
 					["qg"] = 718,	-- Sir S. J. Erlgadin
 					["sourceQuest"] = 192, -- Panther Mastery (3/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3876, 1 },	-- Fang of Bhag'thera
+					},
+					["lvl"] = 28,
 					["g"] = {
+						{
+							["itemID"] = 3876,	-- Fang of Bhag'thera
+							["questID"] = 193,	-- Panther Mastery (4/4)
+							["cr"] = 728,	-- Bhag'thera
+							["coords"] = {
+								{ 49.0, 20.6, STRANGLETHORN_VALE },
+								{ 49.8, 24.6, STRANGLETHORN_VALE },
+								{ 47.8, 28.0, STRANGLETHORN_VALE },
+							},
+						},
 						i(4108),	-- Panther Hunter Leggings
 					},
 				}),
 				q(330, {	-- Patrol Schedules
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 469,	-- Lieutenant Doren
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(194, {	-- Raptor Mastery (1/4)
-					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(195, {	-- Raptor Mastery (2/4)
-					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 					["sourceQuest"] = 194, -- Raptor Mastery (1/4)
+					["lvl"] = 28,
 				}),
 				q(196, {	-- Raptor Mastery (3/4)
-					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["sourceQuest"] = 195, -- Raptor Mastery (2/4)
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(197, {	-- Raptor Mastery (4/4)
-					["lvl"] = 28,
 					["qg"] = 715,	-- Hemet Nesingwary
 					["sourceQuest"] = 196, -- Raptor Mastery (3/4)
+					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3877, 1 },	-- Talon of Tethis
+					},
+					["lvl"] = 28,
 					["g"] = {
+						{
+							["itemID"] = 3877,	-- Talon of Tethis
+							["questID"] = 197,	-- Raptor Mastery (4/4)
+							["cr"] = 730,	-- Tethis
+							["coord"] = { 29.6, 44.8, STRANGLETHORN_VALE },
+						},
 						i(4119),	-- Raptor Hunter Tunic
 					},
-					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 				}),
 				q(331, {	-- Report to Doren
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1422,	-- Corporal Sethman
+					["coord"] = { 37.7, 3.4, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(4139),	-- Junglewalker Sandals
 						i(4123),	-- Frost Metal Pauldrons
 					},
-					["coord"] = { 37.7, 3.4, STRANGLETHORN_VALE },
 				}),
 				q(622, {	-- Return to Corporal Kaleb
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 773,	-- Krazek
 					["coord"] = { 26.95, 77.21, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 					["g"] = {
 						i(4124),	-- Cap of Harmony
 					},
 				}),
 				q(607, {	-- Return to MacKinley
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2502,	-- \"Shaky\" Phillipe
 					["sourceQuest"] = 606, -- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3919, 5 },	-- Mistvale Giblets
+					},
+					["lvl"] = 30,
 				}),
 				q(3626, {	-- Return to the Blasted Lands
-					["lvl"] = 45,
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3625,	-- Enchanted Azsharite Fel Weaponry
+					["lvl"] = 45,
 				}),
 				q(592, {	-- Saving Yenniku
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3913, 1 },	-- Filled Soul Gem
+					},
+					["lvl"] = 30,
 					["g"] = {
+						{
+							["itemID"] = 3912,	-- Soul Gem
+							["questID"] = 593,	-- Filling the Soul Gem
+							["description"] = "This quest is repeatable, but can only be completed while the quest \"Saving Yenniku\" (quest #592) is in your quest log.",
+							["qg"] = 2530,	-- Yenniku <Darkspear Hostage>
+							["coord"] = { 39, 58.2, STRANGLETHORN_VALE },
+							["races"] = HORDE_ONLY,
+							["repeatable"] = true,
+							["groups"] = {
+								{
+									["itemID"] = 3913,	-- Filled Soul Gem
+									["questID"] = 592,	-- Saving Yenniku
+								},
+							},
+						},
 						i(4134),	-- Nimboya's Mystical Staff
 						i(6723),	-- Medal of Courage
 					},
@@ -484,38 +624,61 @@ _.Zones =
 				q(605, {	-- Singing Blue Shards
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["coord"] = { 27.12, 77.22, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3918, 10 },	-- Singing Crystal Shard
+					},
 					["lvl"] = 30,
 				}),
 				q(209, {	-- Skullsplitter Tusks
-					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 737,	-- Kebok
 					["sourceQuest"] = 189, -- Bloodscalp Ears
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 1524, 18 },	-- Skullsplitter Tusk
+					},
+					["lvl"] = 37,
 				}),
 				q(577, {	-- Some Assembly Required
-					["lvl"] = 31,
 					["qg"] = 2495,	-- Drizzlik
-					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
+					["coord"] = { 28.2, 77.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4104, 5 },	-- Snapjaw Crocolisk Skin
+					},
+					["lvl"] = 31,
 				}),
 				q(586, {	-- Speaking with Gan'zulah
-					["lvl"] = 30,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
+					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3909, 1 },	-- Broken Armor of Ana'thek
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 3909,	-- Broken Armor of Ana'thek
+							["questID"] = 586,	-- Speaking with Gan'zulah
+							["cr"] = 1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
+							["coord"] = { 44.6, 44.2, STRANGLETHORN_VALE },
+						},
+					},
 				}),
 				q(585, {	-- Speaking with Nezzliok
-					["lvl"] = 30,
+					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
+					["coord"] = { 32.2, 27.7, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(574, {	-- Special Forces
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(598, {	-- Split Bone Necklace
-					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
+					["lvl"] = 30,
 					["g"] = {
 						i(4137),	-- Darkspear Shoes
 						i(4136),	-- Darkspear Boots
@@ -524,17 +687,31 @@ _.Zones =
 				q(348, {	-- Stranglethorn Fever
 					["qg"] = 2486,	-- Fin Fizracket
 					["coord"] = { 27.6, 76.7, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 2797, 1 },	-- Heart of Mokk
+					},
 					["lvl"] = 40,
 					["g"] = {
+						q(349, {	-- Stranglethorn Fever
+							["qg"] = 1449,	-- Witch Doctor Unbagwa
+							["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
+							["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Stranglethorn Fever\" (Quest #348) in your quest log.",
+							["cost"] = {
+								{ "i", 2799, 10 },	-- Gorilla Fang
+							},
+							["repeatable"] = true,
+							["lvl"] = 32,
+							["groups"] = {
+								{
+									["itemID"] = 2797,	-- Heart of Mokk
+									["questID"] = 348,	-- Stranglethorn Fever
+									["cr"] = 1514,	-- Mokk the Savage
+									["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
+								},
+							},
+						}),
 						i(4113),	-- Medicine Blanket
 					},
-				}),
-				q(349, {	-- Stranglethorn Fever
-					["qg"] = 1449,	-- Witch Doctor Unbagwa
-					["coord"] = { 35.2, 60.4, STRANGLETHORN_VALE },
-					["lvl"] = 32,
-					["repeatable"] = true,
-					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Stranglethorn Fever\" (Quest #348) in your quest log.",
 				}),
 				q(198, {	-- Supplies to Private Thorsen
 					["qg"] = 773,	-- Krazek
@@ -545,6 +722,9 @@ _.Zones =
 				q(575, {	-- Supply and Demand
 					["qg"] = 2495,	-- Drizzlik
 					["coord"] = { 28.29, 77.59, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4053, 2 },	-- Large River Crocolisk Skin
+					},
 					["lvl"] = 26,
 				}),
 				q(595, {	-- The Bloodsail Buccaneers (1)
@@ -582,16 +762,23 @@ _.Zones =
 				q(8551, {	-- The Captain's Chest
 					["qg"] = 2500,	-- Captain Hecklebury Smotts
 					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
-					["lvl"] = 35,
-					["g"] = {
-						i(11469),	-- Bloodband Bracers
+					["altQuests"] = {
+						614,	-- The Captain's Chest [Old]
 					},
-				}),
-				q(614, {	-- The Captain's Chest
-					["qg"] = 2500,	-- Captain Hecklebury Smotts
-					["coord"] = { 26.7, 73.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3932, 1 },	-- Smotts' Chest
+					},
 					["lvl"] = 35,
 					["g"] = {
+						{
+							["itemID"] = 3932,	-- Smotts' Chest
+							["questID"] = 8551,	-- The Captain's Chest
+							["altQuests"] = {
+								614,	-- The Captain's Chest [Old]
+							},
+							["cr"] = 1492,	-- Gorlash
+							["coord"] = { 36.6, 69.6, STRANGLETHORN_VALE },
+						},
 						i(11469),	-- Bloodband Bracers
 					},
 				}),
@@ -601,12 +788,6 @@ _.Zones =
 					["coord"] = { 26.6, 73.6, STRANGLETHORN_VALE },
 					["altQuests"] = {
 						615,	-- The Captain's Cutlass
-					},
-					["lvl"] = 35,
-				}),
-				q(615, {	-- The Captain's Cutlass
-					["altQuests"] = {
-						8553,	-- The Captain's Cutlass
 					},
 					["lvl"] = 35,
 				}),
@@ -623,8 +804,22 @@ _.Zones =
 					["sourceQuest"] = 610, -- "Pretty Boy" Duncan
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4034, 1 },	-- Stone of the Tides
+					},
 					["lvl"] = 32,
 					["g"] = {
+						{
+							["itemID"] = 4027,	-- Catelyn's Blade
+							["coord"] = { 25, 23.6, STRANGLETHORN_VALE },
+							["cr"] = 2624,	-- Gazban
+							["groups"] = {
+								{
+									["itemID"] = 4034,	-- Stone of the Tides
+									["questID"] = 611,	-- The Curse of the Tides
+								},
+							},
+						},
 						i(4120),	-- Robe of Crystal Waters
 					},
 				}),
@@ -668,156 +863,204 @@ _.Zones =
 					["lvl"] = 32,
 				}),
 				q(328, {	-- The Hidden Key
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 287 },	--  Bookie Herod's Records
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(4122),	-- Bookmaker's Scepter
 					},
 				}),
 				q(591, {	-- The Mind's Eye
-					["lvl"] = 30,
+					["qg"] = 2519,	-- Kin'weelay
+					["sourceQuest"] = 589,	-- The Singing Crystals
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3616, 1 },	-- Mind's Eye
+					},
+					["lvl"] = 30,
 				}),
 				q(8552, {	-- The Monogrammed Sash
 					["provider"] = { "i", 3985, 1 },	-- Monogrammed Sash
-					["cr"] = 1493,	-- Mok'rash
 					["coord"] = { 23.0, 71.4, STRANGLETHORN_VALE },
+					["cr"] = 1493,	-- Mok'rash
 					["altQuests"] = {
 						620,	-- The Monogrammed Sash
 					},
 					["lvl"] = 35,
 				}),
-				q(620, {	-- The Monogrammed Sash
-					["provider"] = { "i", 3985, 1 },	-- Monogrammed Sash
-					["cr"] = 1493,	-- Mok'rash
-					["altQuests"] = {
-						8552,	-- The Monogrammed Sash
-					},
-					["lvl"] = 35,
-				}),
 				q(203, {	-- The Second Rebellion
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 733,	-- Sergeant Yohwa
 					["coord"] = { 38.0, 3.3, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(589, {	-- The Singing Crystals
-					["lvl"] = 30,
+					["qg"] = 2519,	-- Kin'weelay
+					["sourceQuest"] = 588,	-- The Fate of Yenniku
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3911, 1 },	-- Pulsing Blue Shard
+					},
+					["lvl"] = 30,
 				}),
 				q(329, {	-- The Spy Revealed!
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 288 },	--  Bookie Herod's Strongbox
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(578, {	-- The Stone of the Tides
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 616, -- The Haunted Isle
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(629, {	-- The Vile Reef
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(185, {	-- Tiger Mastery (1/4)
-					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(186, {	-- Tiger Mastery (2/4)
-					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 185, -- Tiger Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(187, {	-- Tiger Mastery (3/4)
-					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 186, -- Tiger Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(188, {	-- Tiger Mastery (4/4)
-					["lvl"] = 28,
 					["qg"] = 717,	-- Ajeck Rouack
 					["sourceQuest"] = 187, -- Tiger Mastery (3/4)
+					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3879, 1 },	-- Paw of Sin'Dall
+					},
+					["lvl"] = 28,
 					["g"] = {
+						{
+							["itemID"] = 3879,	-- Paw of Sin'Dall
+							["questID"] = 188,	-- Tiger Mastery (4/4)
+							["cr"] = 729,	-- Sin'Dall
+							["coord"] = { 32.6, 17.2, STRANGLETHORN_VALE },
+						},
 						i(4107),	-- Tiger Hunter Gloves
 					},
-					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
-					["lvl"] = 30,
-					["repeatable"] = true,
-					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["qg"] = 16399,	-- Bloodsail Traitor
+					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["coord"] = { 31.8, 70.9, STRANGLETHORN_VALE },
+					["repeatable"] = true,
+					["lvl"] = 30,
 				}),
 				q(205, {	-- Troll Witchery
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 739,	-- Brother Nimetz
 					["sourceQuest"] = 207, -- Kurzen's Mystery
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2466, 4 },	-- Skullsplitter Fetish
+					},
+					["lvl"] = 30,
 				}),
 				q(638, {	-- Trollbane
-					["lvl"] = 32,
-					["races"] = HORDE_ONLY,
 					["qg"] = 2497,	-- Nimboya
+					["races"] = HORDE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(587, {	-- Up to Snuff
-					["lvl"] = 37,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2488,	-- Deeg
 					["coord"] = { 26.9, 77.3, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3910, 15 },	-- Snuff
+					},
+					["lvl"] = 37,
 				}),
 				q(600, {	-- Venture Company Mining
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["sourceQuest"] = 605, -- Singing Blue Shards
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3917, 10 },	-- Singing Blue Crystal
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(5253),	-- Goblin Igniter
 						i(4128),	-- Silver Spade
 					},
-					["sourceQuest"] = 605, -- Singing Blue Shards
-					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 				q(609, {	-- Voodoo Dues
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["sourceQuest"] = 607, -- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3926, 1 },	-- Chucky's Huge Ring
+						{ "i", 3925, 1 },	-- Jon-Jon's Golden Spyglass
+						{ "i", 3924, 1 },	-- Maury's Clubbed Foot
+					},
+					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 3926,	-- Chucky's Huge Ring
+							["questID"] = 609,	-- Voodoo Dues
+							["cr"] = 2537,	-- Chucky "Ten Thumbs"
+							["coord"] = { 40.2, 58.6, STRANGLETHORN_VALE },
+						},
+						{
+							["itemID"] = 3925,	-- Jon-Jon's Golden Spyglass
+							["questID"] = 609,	-- Voodoo Dues
+							["cr"] = 2536,	-- Jon-Jon the Crow
+							["coord"] = { 34.8, 51.8, STRANGLETHORN_VALE },
+						},
+						{
+							["itemID"] = 3924,	-- Maury's Clubbed Foot
+							["questID"] = 609,	-- Voodoo Dues
+							["cr"] = 2535,	-- Maury "Club Foot" Wilkins
+							["coord"] = { 35.2, 51.0, STRANGLETHORN_VALE },
+						},
+					},
 				}),
 				q(601, {	-- Water Elementals
-					["lvl"] = 32,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 578, --	The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 32,
 				}),
 				q(583, {	-- Welcome to the Jungle
-					["lvl"] = 28,
 					["qg"] = 716,	-- Barnil Stonepot
 					["coord"] = { 35.7, 10.5, STRANGLETHORN_VALE },
+					["lvl"] = 28,
 				}),
 				q(580, {	-- Whiskey Slim's Lost Grog
-					["lvl"] = 40,
 					["qg"] = 2491,	-- Whiskey Slim
+					["coord"] = { 27.1, 77.5, STRANGLETHORN_VALE },
+					["lvl"] = 40,
 					["g"] = {
 						i(17048),	-- Rumsey Rum
 					},
-					["coord"] = { 27.1, 77.5, STRANGLETHORN_VALE },
 				}),
 				q(621, {	-- Zanzil's Secret
-					["lvl"] = 35,
 					["qg"] = 2498,	-- Crank Fizzlebub
+					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4016, 12 },	-- Zanzil's Mixture
+					},
+					["lvl"] = 35,
 					["g"] = {
 						i(4131),	-- Belt of Corruption
 					},
-					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 				}),
 			}),
 		}),
