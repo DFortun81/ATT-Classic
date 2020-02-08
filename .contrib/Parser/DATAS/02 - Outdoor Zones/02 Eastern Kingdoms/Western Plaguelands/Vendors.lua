@@ -6,6 +6,14 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-2, {	-- Vendor
+				n(11056, {	-- Alchemist Arbington
+					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(13320),	-- Arcane Quickener
+						i(13370),	-- Vitreous Focuser
+					},
+				}),
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Dawn>
 					["coord"] = { 42.8, 83.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
@@ -40,18 +48,22 @@ _.Zones =
 					},
 				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(15725),	-- Pattern: Wicked Leather Gauntlets
 						i(15741),	-- Pattern: Stormshroud Pants
 					},
 				}),
 				n(11278, {	-- Magnus Frostwake
+					["coord"] = { 68.0, 77.6, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13544, 1 },	-- Spectral Essence
+					},
 					["groups"] = {
 						i(8030),	-- Plans: Ebon Shiv
-						i(12823), -- Plans: Huge Thorium Battleaxe
-						i(12819), -- Plans: Ornate Thorium Handaxe
+						i(12823),	-- Plans: Huge Thorium Battleaxe
+						i(12819),	-- Plans: Ornate Thorium Handaxe
 						i(12703),	-- Plans: Storm Gauntlets
 						i(13501),	-- Recipe: Major Mana Potion
 						i(13485),	-- Recipe: Transmute Water to Air

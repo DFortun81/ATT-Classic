@@ -358,8 +358,14 @@ _.Zones =
 					["lvl"] = 34,
 				}),
 				q(5049, {	-- The Jeremiah Blues
-					["lvl"] = 50,
+					["qg"] = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
+					["sourceQuest"] = 5023,	-- Better Late Than Never
+					["coord"] = { 69.6, 43.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12724, 1 },	-- Janice's Parcel
+					},
+					["lvl"] = 50,
 				}),
 				q(357, {	-- The Lich's Identity
 					["lvl"] = 5,

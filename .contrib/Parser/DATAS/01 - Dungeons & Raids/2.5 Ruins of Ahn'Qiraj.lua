@@ -84,6 +84,12 @@ _.Instances = {
 						15462,	-- Spitting Scarab
 					},
 				},
+				i(20768, {	-- Oozing Bag
+					["cr"] = 15335,	-- Flesh Hunter
+					["groups"] = {
+						i(20769),	-- Disgusting Oozeling
+					},
+				}),
 				{	-- Polished Obsidian Pauldrons
 					["itemID"] = 21805,	-- Polished Obsidian Pauldrons
 					["crs"] = {
@@ -582,11 +588,6 @@ _.Instances = {
 					i(21497),	-- Boots of the Qiraji General
 					i(21493),	-- Boots of the Vanguard
 				},
-			}),
-			n(15335, {	-- Flesh Hunter
-				i(20768, {	-- Oozing Bag
-					i(20769),	-- Disgusting Oozeling
-				}),
 			}),
 			n(15370, { 	-- Buru the Gorger
 				i(21485),	-- Buru's Skull Fragment

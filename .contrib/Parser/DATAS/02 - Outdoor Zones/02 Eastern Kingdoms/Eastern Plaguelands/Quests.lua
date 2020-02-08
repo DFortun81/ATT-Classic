@@ -40,17 +40,25 @@ _.Zones =
 					["qg"] = 17072,	-- Emmisary Gormok
 				}),
 				q(9127, {	-- Bone Fragments
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 55,
 					["qg"] = 16131,	-- Rohan the Assassin
+					["sourceQuest"] = 9126,	-- Bonescythe Digs
+					["repeatable"] = true,
+					["u"] = 3,	-- Added in later phase
+					["cost"] = {
+						{ "i", 22526, 30 },	-- Bone Fragments
+					},
+					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
 				}),
 				q(9126, {	-- Bonescythe Digs
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 55,
 					["qg"] = 16131,	-- Rohan the Assassin
+					["u"] = 3,	-- Added in later phase
+					["cost"] = {
+						{ "i", 22526, 30 },	-- Bone Fragments
+					},
+					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},

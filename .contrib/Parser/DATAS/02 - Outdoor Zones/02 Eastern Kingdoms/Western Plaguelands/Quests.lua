@@ -7,118 +7,140 @@ _.Zones =
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-17, {	-- Quests
 				q(5095, {	-- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 50,
 				}),
 				q(5093, {	-- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 50,
 				}),
 				q(5094, {	-- A Call to Arms: The Plaguelands!
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10879,	-- Harbinger Balthazad
+					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 50,
 				}),
 				q(4971, {	-- A Matter of Time
-					["lvl"] = 53,
 					["qg"] = 10667,	-- Chromie
+					["lvl"] = 53,
 					["g"] = {
 						i(15812),	-- Orchid Amice
 						i(15813),	-- Gold Link Belt
 					},
 				}),
 				q(5903, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11616,	-- Nathaniel Dumah
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
 				}),
 				q(5904, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11616,	-- Nathaniel Dumah
 					["sourceQuest"] = 5903,	-- A Plague Upon Thee
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
 				}),
 				q(6389, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 177491 },	-- Termite Barrel
 					["sourceQuest"] = 5904,	-- A Plague Upon Thee
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 48,
 				}),
 				q(6390, {	-- A Plague Upon Thee
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 177491 },	-- Termite Barrel
 					["sourceQuest"] = 5902,	-- A Plague Upon Thee
+					["races"] = HORDE_ONLY,
+					["lvl"] = 48,
 				}),
 				q(5153, {	-- A Strange Historian
-					["lvl"] = 50,
 					["qg"] = 10927,	-- Marlene Redpath
 					["sourceQuest"] = 5152,	-- Auntie Marlene
+					["lvl"] = 50,
 				}),
 				q(211, {	-- Alas, Andorhal
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 17114, 1 },	-- Araj's Phylactery Shard
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(17759),	-- Mark of Resolution
 					},
-					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(105, {	-- Alas, Andorhal
-					["lvl"] = 50,
+					["qg"] = 10837,	-- High Executor Derrington
+					["coord"] = { 83.0, 69.0, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 17114, 1 },	-- Araj's Phylactery Shard
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(17759),	-- Mark of Resolution
 					},
 				}),
 				q(5097, {	-- All Along the Watchtowers (A)
-					["lvl"] = 50,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5092,	-- Clear The Way
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(5098, {	-- All Along the Watchtowers (H)
-					["lvl"] = 50,
 					["qg"] = 10837,	-- High Executor Derrington
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 5096,	-- Scarlet Diversions
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(5401, {	-- Argent Dawn Commission
-					["lvl"] = 50,
 					["qg"] = 10840,	-- Argent Officer Pureheart
+					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
+					["lvl"] = 50,
 					["g"] = {
 						i(12846),	-- Argent Dawn Commission
 					},
-					["coord"] = { 43.0, 83.6, WESTERN_PLAGUELANDS },
 				}),
 				q(5405, {	-- Argent Dawn Commission
-					["lvl"] = 50,
 					["qg"] = 10839,	-- Argent Officer Garush
+					["lvl"] = 50,
 					["g"] = {
 						i(12846),	-- Argent Dawn Commission
 					},
 				}),
-				q(5023, {	-- Better Late Than Never
+				q(5021, {	-- Better Late Than Never
+					["qg"] = 10778,	-- Janice Felstone
+					["coord"] = { 38.4, 54.0, WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
+				}),
+				q(5023, {	-- Better Late Than Never
+					["provider"] = { "o", 175894 },	-- Janice's Parcel
+					["sourceQuest"] = 5021,	-- Better Late Than Never
+					["coord"] = { 38.8, 55.2, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12724, 1 },	-- Janice's Parcel
+					},
+					["lvl"] = 50,
 				}),
 				q(5022, {	-- Better Late Than Never
-					["lvl"] = 50,
+					["provider"] = { "o", 175894 },	-- Janice's Parcel
+					["sourceQuest"] = 5021,	-- Better Late Than Never
+					["coord"] = { 38.8, 55.2, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
-				}),
-				q(5021, {	-- Better Late Than Never
+					["cost"] = {
+						{ "i", 12724, 1 },	-- Janice's Parcel
+					},
 					["lvl"] = 50,
 				}),
 				q(5210, {	-- Brother Carlin
-					["lvl"] = 50,
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5154,	-- The Annals of Darrowshire
+					["lvl"] = 50,
 				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
@@ -149,10 +171,10 @@ _.Zones =
 					},
 				}),
 				q(5092, {	-- Clear the Way
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(5406, {	-- Corruptor's Scourgestones
 					["qg"] = 10839,	-- Argent Officer Garush
@@ -186,62 +208,111 @@ _.Zones =
 					},
 				}),
 				q(4973, {	-- Counting Out Time
-					["lvl"] = 53,
 					["repeatable"] = true,
+					["lvl"] = 53,
 					["g"] = {
 						i(12650),	-- Attuned Dampener
 					},
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
-					["lvl"] = 50,
+					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["sourceQuests"] = {
+						5219,	-- Target: Dalson's Tears
+						5231,	-- Target: Dalson's Tears
+					},
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 13320, 1 },	-- Arcane Quickener
+						{ "i", 13356, 5 },	-- Somatic Intensifier
+						{ "i", 14047, 4 },	-- Runecloth
+					},
+					["lvl"] = 50,
 				}),
 				q(8414, {	-- Dispelling Evil
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8415,	-- Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
+					["u"] = 3,	-- Added in later phase
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
 					},
 					["lvl"] = 50,
 				}),
 				q(5218, {	-- Felstone Field Cauldron
-					["lvl"] = 50,
+					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
+					["sourceQuests"] = {
+						5216,	-- Target: Felstone Field
+						5229,	-- Target: Felstone Field
+					},
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 13320, 1 },	-- Arcane Quickener
+						{ "i", 13357, 6 },	-- Osseous Agitator
+						{ "i", 14047, 4 },	-- Runecloth
+					},
+					["lvl"] = 50,
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
-					["lvl"] = 50,
+					["provider"] = { "o", 176392 },	--  Scourge Cauldron
+					["sourceQuests"] = {
+						5225,	-- Target: Gahrron's Withering
+						5235,	-- Target: Gahrron's Withering
+					},
+					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 13320, 1 },	-- Arcane Quickener
+						{ "i", 13354, 4 },	-- Ectoplasmic Resonator
+						{ "i", 14047, 4 },	-- Runecloth
+					},
+					["lvl"] = 50,
 				}),
 				q(4986, {	-- Glyphed Oaken Branch (A)
-					["lvl"] = 51,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 51,
 					["g"] = {
 						i(15804),	-- Cerise Drape
 					},
 				}),
 				q(4987, {	-- Glyphed Oaken Branch (H)
-					["lvl"] = 51,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["races"] = HORDE_ONLY,
+					["lvl"] = 51,
 					["g"] = {
 						i(15804),	-- Cerise Drape
 					},
 				}),
 				q(5050, {	-- Good Luck Charm
+					["qgs"] = {
+						8403,	-- Jeremiah Payson <Cockroach Vendor>
+						3520,	-- Ol' Emma
+					},
+					["sourceQuests"] = {
+						5048,	-- Good Natured Emma
+						5049,	-- The Jeremiah Blues
+					},
+					["coords"] = {
+						{ 67.4, 43.8, UNDERCITY },
+						{ 52.4, 41.8, STORMWIND_CITY },
+					},
+					["maps"] = { STORMWIND_CITY, UNDERCITY },
+					["cost"] = {
+						{ "i", 12721, 1 },	-- Good Luck Half-Charm
+					},
 					["lvl"] = 50,
 				}),
 				q(8416, {	-- Inert Scourgestones
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 1854,	-- High Priest Thel'danis
 					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
+					["u"] = 3,	-- Added in later phase
 					["lvl"] = 50,
 				}),
 				q(5407, {	-- Invader's Scourgestones
@@ -270,13 +341,35 @@ _.Zones =
 					},
 				}),
 				q(5059, {	-- Locked Away
+					["provider"] = { "o", 175925 },	-- Outhouse
+					["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12738, 1 },	-- Dalson Outhouse Key
+					},
 					["lvl"] = 52,
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
+					["groups"] = {
+						{
+							["itemID"] = 12738,	-- Dalson Outhouse Key
+							["questID"] = 5059,	-- Locked Away
+							["cr"] = 10816,	-- Wandering Skeleton
+							["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
+						},
+						{
+							["itemID"] = 12739,	-- Dalson Cabinet Key
+							["questID"] = 5060,	-- Locked Away
+							["cr"] = 10836,	-- Farmer Dalson
+							["coord"] = { 48.2, 49.6, WESTERN_PLAGUELANDS },
+						},
+					},
 				}),
 				q(5060, {	-- Locked Away
-					["lvl"] = 52,
+					["provider"] = { "o", 175924 },	-- Locked Cabinet
+					["coord"] = { 47.4, 49.7, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12739, 1 },	-- Dalson Cabinet Key
+					},
+					["lvl"] = 52,
 					["g"] = {
 						i(13474),	-- Farmer Dalson's Shotgun
 						i(13475),	-- Dalson Family Wedding Ring
@@ -285,30 +378,30 @@ _.Zones =
 				q(5507, {	-- Mantles of the Dawn
 					["qg"] = 10857,	-- Argent Quartermaster Lightspark <The Argent Dawn>
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5504, {	-- Mantles of the Dawn
 					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 12844, 10 },	-- Argent Dawn Valor Token
 					},
-					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				}),
 				q(5408, {	-- Minion's Scourgestones
 					["qg"] = 10839,	-- Argent Officer Garush
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
 					},
-					["repeatable"] = true,
 					["lvl"] = 50,
 					["g"] = {
 						i(12844),	-- Argent Dawn Valor Token
@@ -328,20 +421,20 @@ _.Zones =
 					},
 				}),
 				q(5237, {	-- Mission Accomplished! (A)
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 					["g"] = {
 						i(15801),	-- Valiant Shortsword
 						i(15800),	-- Intrepid Shortsword
 						i(15799),	-- Heroic Commendation Medal
 					},
-					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 				}),
 				q(5238, {	-- Mission Accomplished! (H)
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 					["g"] = {
 						i(15801),	-- Valiant Shortsword
 						i(15800),	-- Intrepid Shortsword
@@ -351,152 +444,275 @@ _.Zones =
 				q(5058, {	-- Mrs. Dalson's Diary
 					["lvl"] = 52,
 				}),
-				q(5223, {	-- Return to Chillwind Camp
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 176393 },	--  Scourge Cauldron
-				}),
 				q(5217, {	-- Return to Chillwind Camp
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["sourceQuest"] = 5216,	-- Target: Felstone Field
+					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13190, 1 },	-- Filled Felstone Field Bottle
+					},
+					["lvl"] = 50,
 				}),
 				q(5220, {	-- Return to Chillwind Camp
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["sourceQuest"] = 5219,	-- Target: Dalson's Tears
+					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13191, 1 },	-- Filled Dalson's Tears Bottle
+					},
+					["lvl"] = 50,
+				}),
+				q(5223, {	-- Return to Chillwind Camp
+					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["sourceQuest"] = 5222,	-- Target: Writhing Haunt
+					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13192, 1 },	-- Filled Writhing Haunt Bottle
+					},
+					["lvl"] = 50,
 				}),
 				q(5226, {	-- Return to Chillwind Camp
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176392 },	--  Scourge Cauldron
-				}),
-				q(5232, {	-- Return to the Bulwark
+					["sourceQuest"] = 5225,	-- Target: Gahrron's Withering
+					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13193, 1 },	-- Filled Gahrron's Withering Bottle
+					},
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
-				}),
-				q(5234, {	-- Return to the Bulwark
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 				}),
 				q(5230, {	-- Return to the Bulwark
-					["lvl"] = 50,
+					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["sourceQuest"] = 5229,	-- Target: Felstone Field
+					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13190, 1 },	-- Filled Felstone Field Bottle
+					},
+					["lvl"] = 50,
+				}),
+				q(5232, {	-- Return to the Bulwark
+					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["sourceQuest"] = 5231, 	-- Target: Dalson's Tears
+					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13191, 1 },	-- Filled Dalson's Tears Bottle
+					},
+					["lvl"] = 50,
+				}),
+				q(5234, {	-- Return to the Bulwark
+					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["sourceQuest"] = 5233,	-- Target: Writhing Haunt
+					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13192, 1 },	-- Filled Writhing Haunt Bottle
+					},
+					["lvl"] = 50,
 				}),
 				q(5236, {	-- Return to the Bulwark
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 176392 },	--  Scourge Cauldron
+					["sourceQuest"] = 5235,	-- Target: Gahrron's Withering
+					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13193, 1 },	-- Filled Gahrron's Withering Bottle
+					},
+					["lvl"] = 50,
 				}),
 				q(5096, {	-- Scarlet Diversions
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10837,	-- High Executor Derrington
+					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 					["g"] = {
 						i(12814),	-- Flame in a Bottle
 					},
 				}),
 				q(5219, {	-- Target: Dalson's Tears
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["sourceQuest"] = 5217,	-- Return to Chillwind Camp
 					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13187, 1 },	-- Empty Dalson's Tears Bottle
+						{ "i", 13195, 1 },	-- Dalson's Tears Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5231, {	-- Target: Dalson's Tears
-					["lvl"] = 50,
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5230,	-- Return to the Bulwark
+					["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13187, 1 },	-- Empty Dalson's Tears Bottle
+						{ "i", 13195, 1 },	-- Dalson's Tears Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5216, {	-- Target: Felstone Field
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["sourceQuest"] = 5215,	-- The Scourge Cauldrons
 					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13186, 1 },	-- Empty Felstone Field Bottle
+						{ "i", 13194, 1 },	-- Felstone Field Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5229, {	-- Target: Felstone Field
-					["lvl"] = 50,
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5228,	-- The Scourge Cauldrons
+					["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13186, 1 },	-- Empty Felstone Field Bottle
+						{ "i", 13194, 1 },	-- Felstone Field Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5225, {	-- Target: Gahrron's Withering
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["sourceQuest"] = 5223,	-- Return to Chillwind Camp
 					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13189, 1 },	-- Empty Gahrron's Withering Bottle
+						{ "i", 13196, 1 },	-- Gahrron's Withering Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5235, {	-- Target: Gahrron's Withering
-					["lvl"] = 50,
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5234,	-- Return to the Bulwark
+					["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13189, 1 },	-- Empty Gahrron's Withering Bottle
+						{ "i", 13196, 1 },	-- Gahrron's Withering Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5222, {	-- Target: Writhing Haunt
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11053,	-- High Priestess MacDonnell
+					["sourceQuest"] = 5220,	-- Return to Chillwind Camp
 					["coord"] = { 43.0, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13188, 1 },	-- Empty Writhing Haunt Bottle
+						{ "i", 13197, 1 },	-- Writhing Haunt Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5233, {	-- Target: Writhing Haunt
-					["lvl"] = 50,
+					["qg"] = 11055,	-- Shadow Priestess Vandis
+					["sourceQuest"] = 5232,	-- Return to the Bulwark
+					["coord"] = { 83.0, 71.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13188, 1 },	-- Empty Writhing Haunt Bottle
+						{ "i", 13197, 1 },	-- Writhing Haunt Cauldron Key
+					},
+					["lvl"] = 50,
 				}),
 				q(5154, {	-- The Annals of Darrowshire
-					["lvl"] = 50,
 					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5153,	-- A Strange Historian
+					["lvl"] = 50,
 				}),
 				q(6186, {	-- The Blightcaller Cometh
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6185,	-- The Eastern Plagues
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
 				}),
 				q(6185, {	-- The Eastern Plagues
-					["lvl"] = 56,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
 					["sourceQuest"] = 6184,	-- Flint Shadowmore
 					["coord"] = { 43.6, 84.5, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 56,
 				}),
 				q(5215, {	-- The Scourge Cauldrons
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(5228, {	-- The Scourge Cauldrons
-					["lvl"] = 50,
+					["qg"] = 10837,	-- High Executor Derrington
+					["coord"] = { 83, 69, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 50,
 				}),
 				q(4985, {	-- The Wildlife Suffers Too
-					["lvl"] = 51,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 51,
 				}),
 				q(4984, {	-- The Wildlife Suffers Too
-					["lvl"] = 51,
 					["qg"] = 10739,	-- Mulgris Deepriver
+					["lvl"] = 51,
 				}),
 				q(5051, {	-- Two Halves Become One
+					["qg"] = 10778,	-- Janice Felstone
+					["sourceQuest"] = 5050,	-- Good Luck Charm
+					["coord"] = { 38.4, 54.0, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12723, 1 },	-- Good Luck Charm
+					},
 					["lvl"] = 50,
 					["g"] = {
+						{
+							["itemID"] = 12722,	-- Good Luck Other-Half-Charm
+							["cr"] = 10801,	-- Jabbering Ghoul
+							["coord"] = { 38.6, 56.2, WESTERN_PLAGUELANDS },
+							["cost"] = {
+								{ "i", 12721, 1 },	-- Good Luck Half-Charm
+							},
+							["groups"] = {
+								{
+									["itemID"] = 12723,	-- Good Luck Charm
+									["questID"] = 5051,	-- Two Halves Become One
+								},
+							},
+						},
 						i(13473),	-- Felstone Good Luck Charm
-						i(12722),	-- Good Luck Other-Half-Charm
 					},
 				}),
 				q(6004, {	-- Unfinished Business
-					["lvl"] = 50,
 					["qg"] = 11610,	-- Kirsta Deepshadow
+					["lvl"] = 50,
 				}),
 				q(6023, {	-- Unfinished Business
-					["lvl"] = 50,
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6004,	-- Unfinished Business
+					["lvl"] = 50,
 				}),
 				q(6025, {	-- Unfinished Business
-					["lvl"] = 50,
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business
+					["lvl"] = 50,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
-					["lvl"] = 50,
+					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
+					["sourceQuests"] = {
+						5222,	-- Target: Writhing Haunt
+						5233,	-- Target: Writhing Haunt
+					},
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 13320, 1 },	-- Arcane Quickener
+						{ "i", 13356, 5 },	-- Somatic Intensifier
+						{ "i", 14047, 4 },	-- Runecloth
+					},
+					["lvl"] = 50,
 				}),
 			}),
 		}),

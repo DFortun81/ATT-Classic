@@ -13,6 +13,14 @@ _.Zones =
 						i(12226),	-- Recipe: Crispy Bat Wing
 					},
 				}),
+				n(11057, {	-- Apothecary Dithers
+					["coord"] = { 83.2, 69.2, TIRISFAL_GLADES },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(13320),	-- Arcane Quickener
+						i(13370),	-- Vitreous Focuser
+					},
+				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					i(19447, {	-- Formula: Enchant Bracer - Healing
 						["u"] = 3,	-- Added in later phase

@@ -244,10 +244,14 @@ _.Zones =
 					},
 				}),
 				q(5048, { -- Good Natured Emma
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10782, -- Royal Factor Bathrilor
+					["qg"] = 10782, -- Royal Factor Bathrilor <Stormwind Census>
 					["sourceQuest"] = 5022, -- Better Late Than Never
+					["coord"] = { 48.6, 30.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12724, 1 },	-- Janice's Parcel
+					},
+					["lvl"] = 50,
 				}),
 				q(1700, { -- Grimand Elmore
 					["lvl"] = 20,

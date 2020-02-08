@@ -335,10 +335,15 @@ _.Instances = {
 					["qg"] = 11286,	-- Magistrate Marduke
 					["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13544, 1 },	-- Spectral Essence
+						{ "i", 13585, 1 },	-- Keepsake of Remembrance
+					},
 					["lvl"] = 57,
 					["groups"] = {
 						{
 							["itemID"] = 13585,	-- Keepsake of Remembrance
+							["questID"] = 5461,	-- The Human, Ras Frostwhisper
 							["coord"] = { 17.9, 69.4, ARATHI_HIGHLANDS },
 						},
 					},
