@@ -60,7 +60,12 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(1430, {	-- Fresh Meat
+					["qg"] = 5591,	-- Dar
+					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6184, 10 },	-- 6184
+					},
 					["lvl"] = 35,
 					["g"] = {
 						i(9681),	-- Grilled King Crawler Legs
@@ -95,12 +100,23 @@ _.Zones =
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["lvl"] = 45,
 				}),
-				q(699, {	-- Lack of Surplus
+				q(698, {	-- Lack of Surplus
+					["qg"] = 5591,	-- Dar
+					["coord"] = { 44.8, 57.2, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6169, 8 },	-- Unprepared Sawtooth Flank
+					},
 					["lvl"] = 35,
 				}),
-				q(698, {	-- Lack of Surplus
+				q(699, {	-- Lack of Surplus
+					["qg"] = 5592,	-- Tok'Kar
+					["coord"] = { 81.4, 80.8, SWAMP_OF_SORROWS },
+					["sourceQuest"] = 698,	-- Lack of Surplus
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6168, 6 },	-- Sawtooth Snapper Claw
+					},
 					["lvl"] = 35,
 				}),
 				q(1363, {	-- Mazen's Behest
@@ -131,11 +147,8 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(1392, {	-- Noboru the Cudgel
-					["cr"] = 5477, -- Noboru the Cudgel
 					["provider"] = { "i", 6196 }, -- Noboru's Cudgel
-					["cost"] = {
-						{ "i", 6196, 1 },	-- Noboru's Cudgel
-					},
+					["cr"] = 5477, -- Noboru the Cudgel
 					["lvl"] = 29,
 				}),
 				q(2744, {	-- The Demon Hunter
@@ -146,6 +159,7 @@ _.Zones =
 				}),
 				q(2621, {	-- The Disgraced One
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 2784,	-- Fall From Grace
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
@@ -174,6 +188,7 @@ _.Zones =
 				}),
 				q(2622, {	-- The Missing Orders
 					["qg"] = 7623,	-- Dispatch Commander Ruag
+					["coord"] = { 47.8, 55, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -186,8 +201,21 @@ _.Zones =
 				}),
 				q(2623, {	-- The Swamp Talker
 					["qg"] = 7643,	-- Bengor
+					["sourceQuest"] = 2622,	-- The Missing Orders
+					["coord"] = { 45, 57.2, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8463, 1 },	-- Warchief's Orders
+					},
 					["lvl"] = 45,
+					["groups"] = {
+						{
+							["itemID"] = 8463,	-- Warchief's Orders
+							["questID"] = 2623,	-- The Swamp Talker
+							["cr"] = 950,	-- Swamp Talker
+							["coord"] = { 63.8, 83.6, SWAMP_OF_SORROWS },
+						},
+					},
 				}),
 				q(1422, {	-- Threat From the Sea
 					["races"] = HORDE_ONLY,

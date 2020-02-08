@@ -291,15 +291,12 @@ _.Zones =
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 30,
 					["groups"] = {
-						n(5622, {	-- Ongeku
+						{
+							["itemID"] = 6190,	-- Draenethyst Shard
+							["questID"] = 1373,	-- Ongeku
+							["cr"] = 5622,	-- Ongeku
 							["coord"] = { 65, 21, SWAMP_OF_SORROWS },
-							["groups"] = {
-								{
-									["itemID"] = 6190,	-- Draenethyst Shard
-									["questID"] = 1373,	-- Ongeku
-								},
-							},
-						}),
+						},
 					},
 				}),
 				q(6143, {	-- Other Fish to Fry

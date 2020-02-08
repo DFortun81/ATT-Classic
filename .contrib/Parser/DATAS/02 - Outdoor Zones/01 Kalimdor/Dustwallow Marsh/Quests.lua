@@ -7,13 +7,17 @@ _.Zones =
 		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			n(-17, {	-- Quests
 				q(1258, {	-- ... and Bugs
-					["lvl"] = 33,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4794,	-- Morgan Stern
+					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5938, 12 },	-- Pristine Crawler Leg
+					},
+					["lvl"] = 33,
 					["g"] = {
 						i(6801),	-- Baroque Apron
 					},
-					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
 				}),
 				q(1168, {	-- Army of the Black Dragon
 					["qg"] = 4502,	-- Tharg

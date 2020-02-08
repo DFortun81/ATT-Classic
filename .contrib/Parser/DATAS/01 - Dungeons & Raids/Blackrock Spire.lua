@@ -614,7 +614,7 @@ _.Instances = {
 					},
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH, WETLANDS },
 					["cost"] = {
 						{ "i", 16872, 1 },	-- The Skull of Axtroz
 					},
@@ -634,7 +634,7 @@ _.Instances = {
 					["sourceQuest"] = 6570,	-- Emberstrife
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH, TANARIS },
 					["cost"] = {
 						{ "i", 16871, 1 },	-- The Skull of Chronalis
 					},
@@ -654,7 +654,7 @@ _.Instances = {
 					["sourceQuest"] = 6570,	-- Emberstrife
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH, WINTERSPRING },
 					["cost"] = {
 						{ "i", 16869, 1 },	-- The Skull of Scryer
 					},
@@ -674,7 +674,7 @@ _.Instances = {
 					["sourceQuest"] = 6570,	-- Emberstrife
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
 					["cost"] = {
 						{ "i", 16870, 1 },	-- The Skull of Somnus
 					},

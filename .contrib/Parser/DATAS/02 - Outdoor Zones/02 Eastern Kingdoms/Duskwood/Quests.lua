@@ -260,25 +260,48 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(1388, {	-- Nothing But The Truth
-					["races"] = HORDE_ONLY,
-					["lvl"] = 37,
-				}),
-				q(1391, {	-- Nothing But The Truth
-					["races"] = HORDE_ONLY,
-					["lvl"] = 37,
-				}),
 				q(1372, {	-- Nothing But The Truth
-					["lvl"] = 37,
+					["qg"] = 5418,	-- Deathstalker Zraedus
+					["coord"] = { 87.6, 35.6, DUSKWOOD },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 37,
 				}),
 				q(1383, {	-- Nothing But The Truth
+					["qg"] = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
+					["sourceQuest"] = 1372,	-- Nothing But The Truth
+					["coord"] = { 87.4, 35.4, DUSKWOOD },
+					["maps"] = { DESOLACE, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6080, 5 },	-- Shadow Panther Heart
+						{ "i", 6081, 1 },	-- Mire Lord Fungus
+						{ "i", 6082, 1 },	-- Deepstrider Tumor
+					},
 					["lvl"] = 37,
 					["g"] = {
 						i(6832),	-- Cloak of Blight
 						i(11265),	-- Cragwood Maul
 					},
+				}),
+				q(1388, {	-- Nothing But The Truth
+					["qg"] = 5414,	-- Apothecary Faustin <Royal Apothecary Society>
+					["sourceQuest"] = 1383,	-- Nothing But The Truth
+					["coord"] = { 87.4, 35.4, DUSKWOOD },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6086, 1 },	-- Faustin's Truth Serum
+					},
+					["lvl"] = 37,
+				}),
+				q(1391, {	-- Nothing But The Truth
+					["qg"] = 5418,	-- Deathstalker Zraedus
+					["sourceQuest"] = 1388,	-- Nothing But The Truth
+					["coord"] = { 87.6, 35.6, DUSKWOOD },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6089, 1 },	-- Zraedus's Brew
+					},
+					["lvl"] = 37,
 				}),
 				q(134, {	-- Ogre Thieves
 					["lvl"] = 20,

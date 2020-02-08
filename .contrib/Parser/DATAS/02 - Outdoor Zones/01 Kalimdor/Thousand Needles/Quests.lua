@@ -47,12 +47,6 @@ _.Zones =
 					["lvl"] = 30,
 					["sourceQuest"] = 1112, -- Parts for Kravel
 				}),
-				q(1116, {	-- Dream Dust in the Swamp
-					["qg"] = 773,	-- Krazek
-					["sourceQuest"] = 1115,	-- The Rumormonger
-					--["coord"] = { },
-					["lvl"] = 30,
-				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts
 					["sourceQuest"] = 1105,	-- Hardened Shells

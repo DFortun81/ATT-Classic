@@ -285,6 +285,16 @@ _.Zones =
 						i(4129),	-- Collection Plate
 					},
 				}),
+				q(1116, {	-- Dream Dust in the Swamp
+					["qg"] = 773,	-- Krazek
+					["sourceQuest"] = 1115,	-- The Rumormonger
+					["coord"] = { 27, 77.2, STRANGLETHORN_VALE },
+					["maps"] = { SWAMP_OF_SORROWS },
+					["cost"] = {
+						{ "i", 5803, 10 },	-- Speck of Dream Dust
+					},
+					["lvl"] = 30,
+				}),
 				q(3625, {	-- Enchanted Azsharite Fel Weaponry
 					["qg"] = 7802,	-- Galvan the Ancient
 					["sourceQuest"] = 3621,	-- The Formation of Felbane
