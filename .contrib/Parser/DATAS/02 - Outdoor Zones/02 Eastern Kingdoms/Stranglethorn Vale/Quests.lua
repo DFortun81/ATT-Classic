@@ -260,17 +260,34 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
-				q(625, {	-- Cortello's Riddle
+				q(624, {	-- Cortello's Riddle
+					["provider"] = { "i", 4056 }, -- Cortello's Riddle
+					["coords"] = {
+						{ 29.5, 89.3, STRANGLETHORN_VALE },
+						{ 33.6, 88.3, STRANGLETHORN_VALE },
+					},
+					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
-				q(624, {	-- Cortello's Riddle
+				q(625, {	-- Cortello's Riddle
+					["provider"] = { "o", 2553 }, -- A Soggy Scroll
+					["sourceQuest"] = 624,	-- Cortello's Riddle
+					["coord"] = { 22.8, 48.1, SWAMP_OF_SORROWS },
+					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
 				q(626, {	-- Cortello's Riddle
 					["provider"] = { "o", 255 }, -- Musty Scroll
+					["sourceQuest"] = 625,	-- Cortello's Riddle
+					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH, THE_HINTERLANDS },
 					["lvl"] = 35,
 					["g"] = {
-						i(11324),	-- Explorer's Knapsack
+						{
+							["itemID"] = 11324,	-- Explorer's Knapsack
+							["questID"] = 626,	-- Cortello's Riddle
+							["coord"] = { 80.8, 46.8, THE_HINTERLANDS },
+						},
 					},
 				}),
 				q(613, {	-- Cracking Maury's Foot
@@ -365,6 +382,31 @@ _.Zones =
 					["lvl"] = 35,
 					["g"] = {
 						i(5806),	-- Fool's Stout
+					},
+				}),
+				q(2932, {	-- Grim Message
+					["qg"] = 2497,	-- Nimboya
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 9319, 1 },	-- Nimboya's Laden Pike
+					},
+					["lvl"] = 35,
+					["g"] = {
+						{
+							["itemID"] = 15002,	-- Nimboya's Pike
+							["cost"] = {
+								{ "i", 9320, 20 },	-- Witherbark Skull
+							},
+							["groups"] = {
+								{
+									["itemID"] = 9319,	-- Nimboya's Laden Pike
+									["questID"] = 2932,	-- Grim Message
+									["coord"] = { 32, 58, THE_HINTERLANDS },
+								},
+							},
+						},
 					},
 				}),
 				q(582, {	-- Headhunting
@@ -1095,8 +1137,23 @@ _.Zones =
 				q(580, {	-- Whiskey Slim's Lost Grog
 					["qg"] = 2491,	-- Whiskey Slim
 					["coord"] = { 27.1, 77.5, STRANGLETHORN_VALE },
+					["maps"] = { THE_HINTERLANDS },
+					["cost"] = {
+						 { "i", 3900, 12 },	-- Pupellyverbos Port
+					},
 					["lvl"] = 40,
 					["g"] = {
+						{
+							["itemID"] = 3900,	-- Pupellyverbos Port
+							["questID"] = 580,	-- Whiskey Slim's Lost Grog
+							["coords"] = {
+								{ 81.7, 49.3, THE_HINTERLANDS },
+								{ 80.0, 59.8, THE_HINTERLANDS },
+								{ 79.4, 70.4, THE_HINTERLANDS },
+								{ 79.6, 81.5, THE_HINTERLANDS },
+								{ 73.3, 96.9, THE_HINTERLANDS },
+							},
+						},
 						i(17048),	-- Rumsey Rum
 					},
 				}),

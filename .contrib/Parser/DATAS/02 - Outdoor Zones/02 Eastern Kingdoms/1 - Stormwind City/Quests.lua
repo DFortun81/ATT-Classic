@@ -307,11 +307,11 @@ _.Zones =
 					["qg"] = 461, -- Demisette Cloyce
 				}),
 				q(1448, {	-- In Search of The Temple
-					["lvl"] = 38,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(2745, { -- Infiltrating the Castle
 					["lvl"] = 16,
@@ -757,10 +757,12 @@ _.Zones =
 					},
 				}),
 				q(1449, {	-- To The Hinterlands
-					["lvl"] = 38,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+					["sourceQuest"] = 1448,	-- In Search of The Temple
 					["coord"] = { 64.3, 20.7, STORMWIND_CITY },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 38,
 				}),
 				q(1938, { -- Ur's Treatise on Shadow Magic
 					["qg"] = 5694, -- High Sorcerer Andromath

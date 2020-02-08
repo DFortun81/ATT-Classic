@@ -70,17 +70,17 @@ _.Instances = {
 					["lvl"] = 40,
 				}),
 				q(3527, { -- The Prophecy of Mosh'aru
+					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
-					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
 				}),
-				q(2936, { --The Spider God
+				q(2936, { -- The Spider God
+					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
-					["provider"] = { "n", 3188 },	-- Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
-					["maps"] = { DUROTAR },
+					["maps"] = { DUROTAR, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -129,8 +129,8 @@ _.Instances = {
 					["itemID"] = 9372, 	-- Sul'thraze the Lasher
 					["description"] = "You must take both of the swords and combine them to form this weapon.\n\nDPS: Be mindful that both of these appear to be tanking weapons, so you should probably let the tank know that you intend to Need Roll on them to get Sul'thraze later on. The best thing to do in this situation is to be the Tank, collect both of the tanking weapons, and then switch to DPS once you get this monster to avoid unnecessary drama.",
 					["cost"] = {
-						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 						{ "i", 11086, 1 },	-- Jan'thraze the Protector
+						{ "i", 9379, 1 },	-- Sang'thraze the Deflector
 					},
 					["crs"] = {
 						8127,	-- Antu'sul

@@ -75,6 +75,15 @@ _.Zones =
 						}),
 					},
 				}),
+				i(6257, {	-- Roc Gizzard
+					["questID"] = 1452,	-- Rhapsody's Kalimdor Kocktail
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						5429,	-- Fire Roc
+						5428,	-- Roc
+						5430,	-- Searing Roc
+					},
+				}),
 			}),
 		}),
 	}),

@@ -599,6 +599,29 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 19,
 				}),
+				q(2934, {	-- Undamaged Venom Sac
+					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
+					["sourceQuest"] = 2933,	-- Venom Bottles
+					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 9322, 1 },	-- Undamaged Venom Sac
+					},
+					["lvl"] = 40,
+				}),
+				q(2938, {	-- Venom to the Undercity
+					["qg"] = 2216,	-- Apothecary Lydon <Royal Apothecary Society>
+					["sourceQuest"] = 2934,	-- Undamaged Venom Sac
+					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
+					["g"] = {
+						i(9649),	-- Royal Highmark Vestments
+						i(9650),	-- Honorguard Chestpiece
+						i(10686),	-- Aegis of Battle
+					},
+				}),
 				q(566, {	-- WANTED: Baron Vardus
 					["provider"] = { "o", 1763 }, -- WANTED
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel

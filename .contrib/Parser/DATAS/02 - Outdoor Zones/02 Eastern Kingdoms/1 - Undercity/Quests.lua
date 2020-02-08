@@ -234,6 +234,17 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
+				q(8273, {	-- Oran's Gratitude
+					["qg"] = 7825,	-- Oran Snakewrithe
+					["sourceQuest"] = 2782,	-- Rin'ji's Secret
+					["coord"] = { 73.4, 32.4, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 42,
+					["g"] = {
+						i(20643),	-- Undercity Reservist's Cap
+						i(20642),	-- Antiquated Nobleman's Tunic
+					},
+				}),
 				q(864, {	-- Return to Apothecary Zinge
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,

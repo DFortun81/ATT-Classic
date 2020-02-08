@@ -603,19 +603,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["u"] = 3,	-- Added in later phase (Phase 5)
 				}),
-				q(81, {	-- Ripple Delivery
-					["lvl"] = 42,
+				q(649, {	-- Ripple Recovery
+					["qg"] = 6986,	-- Dran Droffers
+					["coord"] = { 59.4, 36.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 42,
 				}),
 				q(650, {	-- Ripple Recovery
-					["lvl"] = 42,
-					["races"] = HORDE_ONLY,
 					["qg"] = 6987,	-- Malton Droffers
-				}),
-				q(649, {	-- Ripple Recovery
-					["lvl"] = 42,
+					["sourceQuest"] = 649,	-- Ripple Recovery
+					["coord"] = { 59.4, 36.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["qg"] = 6986,	-- Dran Droffers
+					["lvl"] = 42,
 				}),
 				q(9008, {	-- Saving the Best for Last
 					["lvl"] = 58,

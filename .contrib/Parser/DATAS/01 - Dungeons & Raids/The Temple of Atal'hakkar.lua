@@ -126,11 +126,14 @@ _.Instances = {
 					},
 				}),
 				q(1475, { -- Into The Temple of Atal'Hakkar
-					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
+					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 6288, 10 },	-- Atal'ai Tablet
+					},
 					["lvl"] = 38,
 					["groups"] = {
 						i(1490),	-- Guardian Talisman
@@ -140,6 +143,10 @@ _.Instances = {
 					["qg"] = 5598,	-- Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 					["maps"] = { THE_HINTERLANDS },
+					["cr"] = 5710,	-- Jammal'an the Prophet
+					["cost"] = {
+						{ "i", 6212, 1 },	-- Head of Jammal'an
+					},
 					["lvl"] = 38,
 					["groups"] = {
 						i(11124),	-- Helm of Exile
@@ -182,23 +189,27 @@ _.Instances = {
 					},
 				}),
 				q(4787, {	-- The Ancient Egg
-					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
-					["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
-					["maps"] = { THE_HINTERLANDS },
+					["sourceQuest"] = 3527,	-- The Prophecy of Mosh'aru
+					["coord"] = { 67, 22.4, TANARIS },
+					["maps"] = { TANARIS, THE_HINTERLANDS },
+					["cost"] = {
+						{ "i", 12402, 1 },	-- Ancient Egg
+					},
 					["lvl"] = 40,
 					["groups"] = {
 						{
 							["itemID"] = 12402,	-- Ancient Egg
 							["questID"] = 4787,	-- The Ancient Egg
+							["coord"] = { 57.5, 86.7, THE_HINTERLANDS },
 						},
 					},
 				}),
 				q(1429, {	-- The Atal'ai Exile
-					["sourceQuest"] = 1424,	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
+					["sourceQuest"] = 1424,	-- Pool of Tears
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
-					["maps"] = { SWAMP_OF_SORROWS },
+					["maps"] = { SWAMP_OF_SORROWS, THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["groups"] = {
