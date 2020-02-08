@@ -441,10 +441,10 @@ _.Instances = {
 					["qg"] = 11872,	-- Myranda the Hag
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16786, 20 },	-- Black Dragonspawn Eye
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				},
 				{
@@ -460,9 +460,7 @@ _.Instances = {
 					["qg"] = 9562,	-- Helendis Riverhorn
 					["coord"] = { 85.6, 69, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
-					["crs"] = {
-						10220,	 -- Halycon
-					},
+					["cr"] = 10220,	 -- Halycon
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -488,9 +486,7 @@ _.Instances = {
 					["sourceQuest"] = 4742,	-- Seal of Ascension (1/2)
 					["qg"] = 10299,	-- Scarshield Infiltrator <Scarshield Legion>
 					["description"] = "Ask your party to come with you to Dustwallow Marsh. You will not be able to solo this quest.\n\nOnly one person can complete this quest per Emberstrife cooldown. Your party will need to kill Emberstrife to reset the cooldown. (Respawn is about 5 minutes.)",
-					["crs"] = {
-						10321,	-- Emberstrife
-					},
+					["cr"] = 10321,	-- Emberstrife
 					["lvl"] = 57,
 					["groups"] = {
 						{
@@ -531,10 +527,10 @@ _.Instances = {
 					["qg"] = 9078,	-- Shadowmage Vivian Lagrave <Kargath Expeditionary Force>
 					["coord"] = { 3, 47.6, BADLANDS },
 					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 12358, 1 },	-- Darkstone Tablet
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 57,
 					["groups"] = {
 						i(15860),	-- Blinkstrike Armguards
@@ -591,9 +587,7 @@ _.Instances = {
 					["qg"] = 9081,	-- Galamav the Marksman <Kargath Expeditionary Force>
 					["coord"] = { 5.8, 47.6, BADLANDS },
 					["maps"] = { BADLANDS },
-					["crs"] = {
-						10220,	 -- Halycon
-					},
+					["cr"] = 10220,	 -- Halycon
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
@@ -612,10 +606,10 @@ _.Instances = {
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, WETLANDS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16872, 1 },	-- The Skull of Axtroz
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{
@@ -632,10 +626,10 @@ _.Instances = {
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, TANARIS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16871, 1 },	-- The Skull of Chronalis
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{
@@ -652,10 +646,10 @@ _.Instances = {
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, WINTERSPRING },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16869, 1 },	-- The Skull of Scryer
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{
@@ -672,10 +666,10 @@ _.Instances = {
 					["qg"] = 10321,	-- Emberstrife
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16870, 1 },	-- The Skull of Somnus
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{
@@ -701,11 +695,11 @@ _.Instances = {
 						{ 40.8, 78.6, DESOLACE },
 						{ 42.4, 96.8, DESOLACE },
 					},
-					["maps"] = { DESOLACE },
+					["maps"] = { DESOLACE, WESTERN_PLAGUELANDS },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16785, 1 },	-- Rexxar's Testament
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 				},
 				{
@@ -747,12 +741,12 @@ _.Instances = {
 					["description"] = "Talk to Warlord Goretooth and read through his full dialog for the item that starts the quest to be given to you.",
 					["coord"] = { 5.8, 47.6, BADLANDS },
 					["maps"] = { BADLANDS },
+					["races"] = HORDE_ONLY,
 					["crs"] = {
 						9237,	-- War Master Voone
 						9196,	-- Highlord Omokk
 						9568,	-- Overlord Wyrmthalak
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{
@@ -787,7 +781,7 @@ _.Instances = {
 					["sourceQuest"] = 5161,	-- Wrath of the Blue Flight (1/2)
 					["qg"] = 10929,	-- Haleh
 					["coord"] = { 54.4, 51.2, WINTERSPRING },
-					["maps"] = { WINTERSPRING },
+					["maps"] = { WINTERSPRING, WESTERN_PLAGUELANDS },
 					["lvl"] = 57,
 				},
 			}),

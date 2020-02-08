@@ -248,14 +248,22 @@ _.Zones =
 					},
 				}),
 				q(6028, {	-- The Everlook Report (A)
-					["lvl"] = 50,
 					["qg"] = 10431,	-- Gregor Greystone
+					["coord"] = { 61.2, 38.8, WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 15788, 1 },	-- Everlook Report
+					},
+					["lvl"] = 50,
 				}),
 				q(6029, {	-- The Everlook Report (H)
-					["lvl"] = 50,
 					["qg"] = 10431,	-- Gregor Greystone
+					["coord"] = { 61.2, 38.8, WINTERSPRING },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15788, 1 },	-- Everlook Report
+					},
+					["lvl"] = 50,
 				}),
 				q(5123, {	-- The Final Piece
 					["lvl"] = 52,

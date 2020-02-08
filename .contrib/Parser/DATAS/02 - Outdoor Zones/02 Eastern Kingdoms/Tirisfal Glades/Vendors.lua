@@ -22,7 +22,9 @@ _.Zones =
 					},
 				}),
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
-					i(18182, {	-- Chromatic Mantle of the Dawn
+					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
+					["groups"] = {
+						i(18182, {	-- Chromatic Mantle of the Dawn
 							["sourceQuests"] = {
 								5517,	-- Chromatic Mantle of the Dawn
 								5521,	-- Chromatic Mantle of the Dawn
@@ -64,34 +66,35 @@ _.Zones =
 								5513,	-- Mantles of the Dawn
 							},
 						}),
-					i(19447, {	-- Formula: Enchant Bracer - Healing
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19446, {	-- Formula: Enchant Bracer - Mana Regeneration
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19442, {	-- Formula: Powerful Anti-Venom
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19216, {	-- Pattern: Argent Boots
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19217, {	-- Pattern: Argent Shoulders
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19328, {	-- Pattern: Dawn Treaders
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19329, {	-- Pattern: Golden Mantle of the Dawn
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19203, {	-- Plans: Girdle of the Dawn
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(19205, {	-- Plans: Gloves of the Dawn
-						["u"] = 3,	-- Added in later phase
-					}),
-					i(13482),	-- Recipe: Transmute Air to Fire
+						i(19447, {	-- Formula: Enchant Bracer - Healing
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19446, {	-- Formula: Enchant Bracer - Mana Regeneration
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19442, {	-- Formula: Powerful Anti-Venom
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19216, {	-- Pattern: Argent Boots
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19217, {	-- Pattern: Argent Shoulders
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19328, {	-- Pattern: Dawn Treaders
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19329, {	-- Pattern: Golden Mantle of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19203, {	-- Plans: Girdle of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(19205, {	-- Plans: Gloves of the Dawn
+							["u"] = 3,	-- Added in later phase
+						}),
+						i(13482),	-- Recipe: Transmute Air to Fire
+					},
 				}),
 				n(3550, {	-- Martine Tramblay <Fishing Supplies>
 					["coord"] = { 65.8, 59.6, TIRISFAL_GLADES },

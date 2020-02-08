@@ -554,6 +554,7 @@ _.Zones =
 				}),
 				q(5237, {	-- Mission Accomplished! (A)
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5226,	-- Return to Chillwind Camp
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -565,6 +566,7 @@ _.Zones =
 				}),
 				q(5238, {	-- Mission Accomplished! (H)
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5236,	-- Return to the Bulwark
 					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
@@ -576,6 +578,8 @@ _.Zones =
 					},
 				}),
 				q(5058, {	-- Mrs. Dalson's Diary
+					["provider"] = { "o", 175926 },	-- Mrs. Dalson's Diary
+					["coord"] = { 47.8, 50.7, WESTERN_PLAGUELANDS },
 					["lvl"] = 52,
 				}),
 				q(5217, {	-- Return to Chillwind Camp
@@ -668,10 +672,11 @@ _.Zones =
 					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 50,
-					["g"] = {
-						i(12814),	-- Flame in a Bottle
+					["cost"] = {
+						{ "i", 12814, 1 },	-- Flame in a Bottle
+						{ "i", 12807, 1 },	-- Scourge Banner
 					},
+					["lvl"] = 50,
 				}),
 				q(5219, {	-- Target: Dalson's Tears
 					["qg"] = 11053,	-- High Priestess MacDonnell
@@ -763,9 +768,20 @@ _.Zones =
 				}),
 				q(5154, {	-- The Annals of Darrowshire
 					["qg"] = 10667,	-- Chromie
-					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
 					["sourceQuest"] = 5153,	-- A Strange Historian
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 12900, 1 },	-- Annals of Darrowshire
+					},
 					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] = 12900,	-- Annals of Darrowshire
+							["questID"] = 5154,	-- The Annals of Darrowshire
+							["description"] = "The Musty Tome you are looking for has a faint X on its binding. If none of the books have this marking, you may have to interact with a few to despawn them.\n\nWARNING: The ghosts that spawn can be a pain.",
+							["coord"] = { 43.4, 69.7, WESTERN_PLAGUELANDS },
+						},
+					},
 				}),
 				q(6186, {	-- The Blightcaller Cometh
 					["qg"] = 12425,	-- Flint Shadowmore <SI:7>
@@ -806,12 +822,14 @@ _.Zones =
 				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
+					["sourceQuest"] = 5092,	-- Clear the Way
 					["coord"] = { 42.7, 84.1, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
 				}),
 				q(5228, {	-- The Scourge Cauldrons
 					["qg"] = 10837,	-- High Executor Derrington
+					["sourceQuest"] = 5096,	-- Scarlet Diversions
 					["coord"] = { 83.0, 69.0, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
@@ -856,16 +874,19 @@ _.Zones =
 				}),
 				q(6004, {	-- Unfinished Business
 					["qg"] = 11610,	-- Kirsta Deepshadow
+					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(6023, {	-- Unfinished Business
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6004,	-- Unfinished Business
+					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(6025, {	-- Unfinished Business
 					["qg"] = 11610,	-- Kirsta Deepshadow
 					["sourceQuest"] = 6023,	-- Unfinished Business
+					["coord"] = { 52, 28, WESTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron

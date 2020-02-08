@@ -182,9 +182,6 @@ _.Instances = {
 					["sourceQuest"] = 5463,	-- Menethil's Gift (1/2)
 					["maps"] = { STRATHOLME },
 					["lvl"] = 57,
-					["groups"] = {
-						i(13624),	-- Soulbound Keepsake
-					},
 				}),
 				q(5538, { -- Mold Rhymes With... (A)
 					["qg"] = 11056,	-- Alchemist Arbington
@@ -260,6 +257,9 @@ _.Instances = {
 					["sourceQuest"] = 5464,	-- Menethil's Gift (2/2)
 					["coord"] = { 81.7, 57.8, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13624, 1 },	-- Soulbound Keepsake
+					},
 					["lvl"] = 57,
 				}),
 				q(8258, {	-- The Darkreaver Menace
@@ -292,6 +292,9 @@ _.Instances = {
 					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
 					["coord"] = { 70.6, 74.1, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 13585, 1 },	-- Keepsake of Remembrance
+					},
 					["lvl"] = 57,
 				}),
 				q(5461, {	-- The Human, Ras Frostwhisper
@@ -389,14 +392,11 @@ _.Instances = {
 					["maps"] = { WESTERN_PLAGUELANDS },
 					["cr"] = 10508,	-- Ras Frostwhisper
 					["cost"] = {
+						{ "i", 13752, 1 },	-- Soulbound Keepsake
 						{ "i", 13626, 1 },	-- Human Head of Ras Frostwhisper
 					},
 					["lvl"] = 57,
 					["groups"] = {
-						{
-							["itemID"] = 13752,	-- Soulbound Keepsake
-							["questID"] = 5466,	-- The Lich, Ras Frostwhisper
-						},
 						i(14002), 	-- Darrowshire Strongguard
 						i(13984), 	-- Darrowspike
 						i(13982), 	-- Warblade of Caer Darrow

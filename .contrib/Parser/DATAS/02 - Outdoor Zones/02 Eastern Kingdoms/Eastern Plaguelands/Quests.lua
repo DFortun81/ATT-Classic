@@ -480,8 +480,13 @@ _.Zones =
 					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(5942, {	-- Hidden Treasures
-					["lvl"] = 50,
+					["qg"] = 10926,	-- Pamela Redpath
 					["sourceQuest"] = 5721,	-- The Battle of Darrowshire
+					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 15328, 1 },	-- Joseph's Key
+					},
+					["lvl"] = 50,
 					["g"] = {
 						i(15855),  -- Ring of Protection
 						i(15856),  -- Archlight Talisman
@@ -598,9 +603,12 @@ _.Zones =
 					},
 				}),
 				q(5941, {	-- Return to Chromie
-					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
 					["sourceQuest"] = 5206,	-- Marauders of Darrowshire
+					["cost"] = {
+						{ "i", 15314, 1 },	-- Bundle of Relics
+					},
+					["lvl"] = 50,
 				}),
 				q(6147, {	-- Return to Nathanos
 					["lvl"] = 56,
@@ -701,8 +709,14 @@ _.Zones =
 					},
 				}),
 				q(5721, {	-- The Battle of Darrowshire
-					["lvl"] = 55,
+					["qg"] = 10667,	-- Chromie
 					["sourceQuest"] = 5941,	-- Return to Chromie
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["maps"] = { WESTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 15209, 1 },	-- Relic Bundle
+					},
+					["lvl"] = 55,
 					["g"] = {
 						i(15723),	-- Tea with Sugar
 					},
