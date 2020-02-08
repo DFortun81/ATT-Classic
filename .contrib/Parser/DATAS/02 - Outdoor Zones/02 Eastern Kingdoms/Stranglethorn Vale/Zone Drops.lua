@@ -150,6 +150,7 @@ _.Zones =
 				i(3863, {  -- Jungle Stalker Feather
 					["questID"] = 572,	-- Mok'thardin's Enchantment
 					["cr"] = 687,	-- Jungle Stalker
+					["races"] = HORDE_ONLY,
 				}),
 				i(1679, {  -- Korg Bat
 					["cr"] = 1142,	-- Mosh'Ogg Brute
@@ -157,6 +158,17 @@ _.Zones =
 				i(4053, {  -- Large River Crocolisk Skin
 					["questID"] = 575,	-- Supply and Demand
 					["cr"] = 1150,	-- River Crocolisk
+				}),
+				i(3930, {  -- Maury's Key
+					["questID"] = 613,	-- Cracking Maury's Foot
+					["crs"] = {
+						723,	-- Mosh'Ogg Butcher
+						680,	-- Mosh'Ogg Lord
+						678,	-- Mosh'Ogg Mauler
+						679,	-- Mosh'Ogg Shaman
+						710,	-- Mosh'Ogg Spellcrafter
+						709,	-- Mosh'Ogg Warmonger
+					},
 				}),
 				i(3616, {  -- Mind's Eye
 					["allianceQuestID"] = 206,	-- Mai'Zoth
@@ -220,8 +232,6 @@ _.Zones =
 					["questID"] = 205,	-- Troll Witchery
 					["crs"] = {
 						1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
-						1061,	-- Gan'zulah <Bloodscalp Chief>
-						1062,	-- Nezzliok the Dire <Bloodscalp Clan Witchdoctor>
 						696,	-- Skullsplitter Axe Thrower
 						784,	-- Skullsplitter Beastmaster
 						783,	-- Skullsplitter Berserker
@@ -295,6 +305,23 @@ _.Zones =
 				i(1664, {  -- Spellforce Rod
 					["cr"] = 676,	-- Venture Co. Surveyor
 				}),
+				i(3916, {  -- Split Bone Necklace
+					["questID"] = 598,	-- Split Bone Necklace
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
+						696,	-- Skullsplitter Axe Thrower
+						784,	-- Skullsplitter Beastmaster
+						783,	-- Skullsplitter Berserker
+						781,	-- Skullsplitter Headhunter
+						669,	-- Skullsplitter Hunter
+						780,	-- Skullsplitter Mystic
+						782,	-- Skullsplitter Scout
+						672,	-- Skullsplitter Spiritchaser
+						667,	-- Skullsplitter Warrior
+						670,	-- Skullsplitter Witch Doctor
+					},
+				}),
 				i(1652, {  -- Sturdy Lunchbox
 					["crs"] = {
 						675,	-- Venture Co. Foreman
@@ -303,6 +330,11 @@ _.Zones =
 				}),
 				i(1996, {  -- Voodoo Band
 					["cr"] = 660,	-- Bloodscalp Witch Doctor
+				}),
+				i(3923, {  -- Water Elemental Bracers
+					["questID"] = 601,	-- Water Elementals
+					["cr"] = 691,	-- Lesser Water Elemental
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",

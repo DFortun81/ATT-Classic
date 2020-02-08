@@ -136,9 +136,22 @@ _.Zones =
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1181,	-- Goblin Sponsorship
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 5852, 1 },	-- Fuel Regulator Blueprints
+					},
 					["lvl"] = 29,
 					["groups"] = {
-						i(5851),	-- Cozzle's Key
+						{
+							["itemID"] = 5851,	-- Cozzle's Key
+							["cr"] = 4723,	-- Foreman Cozzle
+							["coord"] = { 42.6, 18.6, STRANGLETHORN_VALE },
+							["groups"] = {
+								{
+									["itemID"] = 5852,	-- Fuel Regulator Blueprints
+									["questID"] = 1182,	-- Goblin Sponsorship
+								},
+							},
+						},
 					},
 				}),
 				q(1183, {	-- Goblin Sponsorship

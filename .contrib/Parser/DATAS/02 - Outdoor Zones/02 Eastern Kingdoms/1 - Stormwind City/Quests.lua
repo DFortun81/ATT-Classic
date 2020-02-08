@@ -44,6 +44,23 @@ _.Zones =
 						{ "i", 2592, 60 },	-- Wool Cloth
 					},
 				}),
+				q(212, { -- A Meal Served Cold
+					["qg"] = 1141, -- Angus Stern
+					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
+					["maps"] = { STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2476, 1 },	-- Chilled Basilisk Haunch
+					},
+					["lvl"] = 35,
+					["groups"] = {
+						{
+							["itemID"] = 2476,	-- Chilled Basilisk Haunch
+							["questID"] = 212,	-- A Meal Served Cold
+							["cr"] = 690,	-- Cold Eye Basilisk
+						},
+					},
+				}),
 				q(335, { -- A Noble Brew (1)
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,

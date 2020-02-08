@@ -61,9 +61,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
-				q(7908, {	-- Arena Master
-				}),
 				q(7810, {	-- Arena Master
+					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
+					["coord"] = { 30.4, 47.8, STRANGLETHORN_VALE },
+					["altQuests"] = {
+						7908,	-- Arena Master
+					},
+				}),
+				q(7838, {	-- Arena Grandmaster
+					["qg"] = 14508,	-- Short John Mithril
+					["coord"] = { 29.6, 47.4, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 18706, 12 },	-- Arena Master (trinket)
+					},
+					["groups"] = {
+						i(19024),	-- Arena Grand Master
+					},
 				}),
 				q(204, {	-- Bad Medicine
 					["qg"] = 733,	-- Sergeant Yohwa
@@ -261,7 +274,12 @@ _.Zones =
 					},
 				}),
 				q(613, {	-- Cracking Maury's Foot
+					["qg"] = 2501,	-- "Sea Wolf" MacKinley
 					["sourceQuest"] = 609, -- Voodoo Dues
+					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3930, 1 },	-- Maury's Key
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(4129),	-- Collection Plate
@@ -404,8 +422,13 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(602, {	-- Magical Analysis
+					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 601, -- Water Elementals
+					["coord"] = { 27.2, 76.8, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3960, 1 },	-- Bag of Water Elemental Bracers
+					},
 					["lvl"] = 32,
 				}),
 				q(206, {	-- Mai'Zoth
@@ -420,17 +443,27 @@ _.Zones =
 						i(4125),	-- Tranquil Orb
 					},
 				}),
-				q(630, {	-- Message in a Bottle (2/2)
-					["sourceQuest"] = 594,	-- Message in a Bottle (1/2)
-					["qg"] = 2634,	-- Princess Poobah
-					["lvl"] = 42,
-					["g"] = {
-						i(4118),	-- Poobah's Nose Ring
-					},
-				}),
 				q(594, {	-- Message in a Bottle (1/2)
 					["provider"] = { "i", 4098 },	-- Carefully Folded Note
 					["lvl"] = 45,
+				}),
+				q(630, {	-- Message in a Bottle (2/2)
+					["qg"] = 2634,	-- Princess Poobah
+					["sourceQuest"] = 594,	-- Message in a Bottle (1/2)
+					["coord"] = { 38.4, 80.6, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4103, 1 },	-- 	Shackle Key
+					},
+					["lvl"] = 42,
+					["g"] = {
+						{
+							["itemID"] = 4103,	-- Shackle Key
+							["questID"] = 630,	-- Message in a Bottle (2/2)
+							["cr"] = 1559,	-- King Mukla
+							["coord"] = { 40.8, 83.2, STRANGLETHORN_VALE },
+						},
+						i(4118),	-- Poobah's Nose Ring
+					},
 				}),
 				q(570, {	-- Mok'thardin's Enchantment
 					["qg"] = 2465,	-- Far Seer Mok'thardin
@@ -676,8 +709,12 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(598, {	-- Split Bone Necklace
-					["races"] = HORDE_ONLY,
 					["qg"] = 2519,	-- Kin'weelay
+					["coord"] = { 32.2, 27.8, STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3916, 25 },	-- Split Bone Necklace
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(4137),	-- Darkspear Shoes
@@ -1003,7 +1040,6 @@ _.Zones =
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["sourceQuest"] = 607, -- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3926, 1 },	-- Chucky's Huge Ring
 						{ "i", 3925, 1 },	-- Jon-Jon's Golden Spyglass
@@ -1036,6 +1072,9 @@ _.Zones =
 					["sourceQuest"] = 578, --	The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3923, 6 },	-- Water Elemental Bracers
+					},
 					["lvl"] = 32,
 				}),
 				q(583, {	-- Welcome to the Jungle

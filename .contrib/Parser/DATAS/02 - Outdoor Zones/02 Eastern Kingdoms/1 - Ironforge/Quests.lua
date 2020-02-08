@@ -125,11 +125,6 @@ _.Zones =
 					},
 					["coord"] = { 75.6, 23.5, IRONFORGE },
 				}),
-				q(212, { -- A Meal Served Cold
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1141, -- Angus Stern
-				}),
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth

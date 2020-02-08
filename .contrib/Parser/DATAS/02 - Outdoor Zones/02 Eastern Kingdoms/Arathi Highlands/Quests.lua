@@ -160,7 +160,7 @@ _.Zones =
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2708, -- Archmage Malin
-					["maps"] = { STORMWIND },
+					["maps"] = { STORMWIND_CITY },
 					["isBreadcrumb"] = true,
 				}),
 				q(697, {	-- Malin's Request
