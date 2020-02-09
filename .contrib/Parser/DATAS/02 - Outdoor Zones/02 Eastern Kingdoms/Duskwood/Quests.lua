@@ -34,16 +34,27 @@ _.Zones =
 					["coord"] = { 75.3, 49.2, DUSKWOOD },
 				}),
 				q(325, {	-- Armed and Ready
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1416,	-- Grimand Elmore
+					["sourceQuest"] = 325,	-- Armed and Ready
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7297, 1 },	-- Morbent's Bane
+					},
+					["lvl"] = 20,
 				}),
 				q(322, {	-- Blessed Arm
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1217,	-- Glorin Steelbrow
+					["sourceQuests"] = {
+						526,	-- Lightforge Ingots
+						324,	-- The Lost Ingots
+					},
 					["coord"] = { 10.6, 60.5, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2712, 1 },	-- Crate of Lightforge Ingots
+					},
+					["lvl"] = 20,
 				}),
 				q(253, {	-- Bride of the Embalmer
 					["qg"] = 263,	-- Lord Ello Ebonlocke
@@ -154,13 +165,13 @@ _.Zones =
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 				}),
 				q(321, {	-- Lightforge Iron
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1217,	-- Glorin Steelbrow
+					["coord"] = { 10.6, 60.5, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(2702),	-- Lightforge Ingot
 					},
-					["coord"] = { 10.6, 60.5, WETLANDS },
 				}),
 				q(174, {	-- Look To The Stars
 					["qg"] = 276,	-- Viktori Prism'Antras
@@ -234,16 +245,21 @@ _.Zones =
 					},
 				}),
 				q(55, {	-- Morbent Fel
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
+					["sourceQuest"] = 325,	-- Armed and Ready
+					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["cr"] = 1200,	-- Morbent Fel
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7297, 1 },	-- Morbent's Bane
+					},
+					["lvl"] = 20,
 					["g"] = {
 						i(2954),	-- Night Watch Pantaloons
 						i(2953),	-- Watch Master's Cloak
 						i(1282),	-- Sparkmetal Coif
 						i(7344),	-- Torch of Holy Flame
 					},
-					["coord"] = { 7.8, 34.0, DUSKWOOD },
 				}),
 				q(227, {	-- Morgan Ladimore
 					["qg"] = 268,	-- Sirra Von'Indi
@@ -510,12 +526,15 @@ _.Zones =
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 				}),
 				q(324, {	-- The Lost Ingots
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = {
-						526, -- Lightforge Ingots
-					},
 					["provider"] = { "o", 2734 },	-- Waterlogged Chest
+					["altQuests"] = { 526 },	-- Lightforge Ingots
+					["sourceQuest"] = 321,	-- Lightforge Iron
+					["coord"] = { 12.1, 64.1, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2702, 5 },	-- Lightforge Ingot
+					},
+					["lvl"] = 20,
 				}),
 				q(1244, { -- The Missing Diplomat (5/17)
 					["lvl"] = 28,

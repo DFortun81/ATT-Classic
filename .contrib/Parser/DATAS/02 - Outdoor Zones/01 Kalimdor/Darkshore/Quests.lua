@@ -318,30 +318,33 @@ _.Zones =
 					["description"] = "The path up to the cave begins at 52.4, 36.0.",
 				}),
 				q(729, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2913,	-- Archaeologist Hollee
 					["sourceQuest"] = 730, -- Trouble in Darkshore
 					["coord"] = { 37.4, 41.8, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(731, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2917,	-- Prospector Remtravel
 					["sourceQuest"] = 729, -- The Absent Minded Prospector
 					["coord"] = { 35.7, 83.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(741, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2913,	-- Archaeologist Hollee
+					["sourceQuest"] = 731, -- The Absent Minded Prospector
+					["coord"] = { 37.4, 41.8, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
+					["cost"] = {
+						{ "i", 4654, 1 },	-- Mysterious Fossil
+					},
 					["g"] = {
 						i(5629),	-- Hammerfist Gloves
 						i(5630),	-- Windfelt Gloves
 						i(11936),	-- Relic Hunter Belt
 					},
-					["sourceQuest"] = 731, -- The Absent Minded Prospector
-					["coord"] = { 37.4, 41.8, DARKSHORE },
 				}),
 				q(4763, {	-- The Blackwood Corrupted
 					["lvl"] = 15,

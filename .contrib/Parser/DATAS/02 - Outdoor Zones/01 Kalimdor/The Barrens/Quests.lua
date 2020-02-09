@@ -806,10 +806,19 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1795, { -- The Binding (Felhunter)
-					["lvl"] = 30,
-					["classes"] = { WARLOCK },
 					["qg"] = 6251, -- Strahad Farsan
+					["sourceQuests"] = {
+						1804,	-- Tome of the Cabal (3/3 Alliance)
+						1805,	-- Tome of the Cabal (3/3 Horde)
+					},
+					["coord"] = { 62.6, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6999, 1 },	-- Tome of the Cabal
+					},
+					["lvl"] = 30,
 					["g"] = {
+						recipe(691),	-- Summon Felhunter
 						i(22244), -- Box of Souls
 					},
 				}),
@@ -954,16 +963,16 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1758, { -- Tome of the Cabal (1/3 Alliance)
-					["lvl"] = 30,
+					["qg"] = 6251, -- Strahad Farsan
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
-					["qg"] = 6251, -- Strahad Farsan
+					["lvl"] = 30,
 				}),
 				q(1801, { -- Tome of the Cabal (1/3 Horde)
-					["lvl"] = 30,
+					["qg"] = 6251, -- Strahad Farsan
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 6251, -- Strahad Farsan
+					["lvl"] = 30,
 				}),
 				q(1824, {	-- Trial at the Field of Giants
 					["qg"] = 6394,	-- Ruga Ragetotem

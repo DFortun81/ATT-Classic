@@ -7,36 +7,36 @@ _.Zones =
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
 				q(7794, {	-- A Donation of Mageweave
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4338, 60 }, -- Mageweave Cloth
 					},
+					["lvl"] = 40,
 				}),
 				q(7795, {	-- A Donation of Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14047, 60 }, -- Runecloth
 					},
+					["lvl"] = 50,
 				}),
 				q(7793, {	-- A Donation of Silk
-					["lvl"] = 26,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4306, 60 },	-- Silk Cloth
 					},
+					["lvl"] = 26,
 				}),
 				q(7791, {	-- A Donation of Wool
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2592, 60 },	-- Wool Cloth
 					},
+					["lvl"] = 12,
 				}),
 				q(212, { -- A Meal Served Cold
 					["qg"] = 1141, -- Angus Stern
@@ -56,21 +56,16 @@ _.Zones =
 					},
 				}),
 				q(335, { -- A Noble Brew (1)
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1435, -- Zardeth of the Black Claw
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(336, { -- A Noble Brew (2)
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1435, -- Zardeth of the Black Claw
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(1638, { -- A Warrior Training
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 
-						1, -- Warrior 
-					},
 					["qgs"] = {
 						913, -- Lyria Du Lac <Warrior Trainer>
 						5480, -- Ilsa Corbin <Warrior Trainer>
@@ -80,31 +75,34 @@ _.Zones =
 						1679, -- Muren Stormpike
 					},
 					["description"] = "Doing this quest prevents you from completing \"Elanaria\" and \"Muren Stormpike\".",
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 10,
 				}),
 				q(396, { -- An Audience with the King
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 395, -- Brotherhood's End
 					["qg"] = 1646, -- Baros Alexston <City Architect>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 					["g"] = {
 						i(2933), -- Seal of Wrynn
 					},
 				}),
 				q(7796, {	-- Additional Runecloth
-					["lvl"] = 50,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 14047, 60 },	-- Runecloth
 					},
-					["repeatable"] = true,
+					["lvl"] = 50,
 				}),
 				q(8419, {	-- An Imp's Request
 					["u"] = 3,	-- Added in later phase
 					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
 					["coord"] = { 28.4, 78.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 50,
 					["altQuests"] = {
 						8420,	-- Hot and Itchy
@@ -120,20 +118,20 @@ _.Zones =
 						918,	-- Osborne the Night Man <Rogue Trainer>
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6740,	-- Innkeeper Allison
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 47,
 				}),
 				q(8417, {	-- A Troubled Spirit
 					["u"] = 3,	-- Added in later phase
 					["qg"] = 5479,	-- Wu Shen <Warrior Trainer>
 					["coord"] = { 78.8, 45.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(1639, { -- Bartleby the Drunk
@@ -143,20 +141,20 @@ _.Zones =
 					["qg"] = 6089, -- Harry Burlguard
 				}),
 				q(1665, { -- Bartleby's Mug
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6090, -- Bartleby
 					["sourceQuest"] = 1640, -- Beat Bartleby
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 					["cost"] = { 
-						{ "i", 6781, 1 }, -- 	Bartleby's Mug
+						{ "i", 6781, 1 },	-- Bartleby's Mug
 					},
+					["lvl"] = 10,
 				}),
 				q(389, { -- Bazil Thredd
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1646, -- Baros Alexston
 					["sourceQuest"] = 373, -- The Unsent Letter
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 				}),
 				q(1640, { -- Beat Bartleby
 					["lvl"] = 10,
@@ -166,11 +164,11 @@ _.Zones =
 					["sourceQuest"] = 1639, -- Bartleby the Drunk
 				}),
 				q(344, {	-- Brother Paxton
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1440,	-- Milton Sheaf
 					["sourceQuest"] = 343,	-- Speaking of Fortitude
 					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(395, { -- Brotherhood's End
 					["sourceQuest"] = 394, -- The Head of the Beast
@@ -196,14 +194,14 @@ _.Zones =
 					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
 					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(8415, {	-- Chillwind Camp
 					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
 					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(6261, {	-- Dungar Longdrink
@@ -216,12 +214,21 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(1701, { -- Fire hardened Mail
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
+				q(1701, { -- Fire Hardened Mail
 					["qg"] = 5413, -- Furen Longbeard
 					["sourceQuest"] = 1702, -- The Shieldsmith
+					["coord"] = { 58.0, 16.8, STORMWIND_CITY },
+					["maps"] = { RAZORFEN_KRAUL, WETLANDS, STONETALON_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 6842, 1 },	-- Furen's Instructions
+						{ "i", 6838, 50 },	-- Scorched Spider Fang
+						{ "i", 6839, 12 },	-- Charred Horn
+						{ "i", 6840, 1 },	-- Galvanized Horn
+						{ "i", 6841, 1 },	-- Vial of Phlogiston
+					},
+					["lvl"] = 20,
 				}),
 				q(6184, {	-- Flint Shadowmore
 					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
@@ -231,11 +238,11 @@ _.Zones =
 					["lvl"] = 56,
 				}),
 				q(1782, { -- Furen's Armor
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["sourceQuest"] = 1701, -- Fire Hardened Mail
 					["qg"] = 5413, -- Furen Longbeard
+					["sourceQuest"] = 1701, -- Fire Hardened Mail
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 					["g"] = {
 						i(6972), -- Fire Hardened Hauberk
 					},

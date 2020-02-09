@@ -131,7 +131,15 @@ _.Instances = {
 				}),
 			}),
 			n(6168, {	-- Roogug
-				i(6841),	-- Vial of Phlogiston
+				["description"] = "Warriors will need to kill this boss for their Fire Hardened Mail class quest. If you are the leader of the group, don't be surprised if they ask to kill this boss first.",
+				["groups"] = {
+					{
+						["itemID"] = 6841,	-- Vial of Phlogiston
+						["questID"] = 1701,	-- Fire Hardened Mail
+						["races"] = ALLIANCE_ONLY,
+						["classes"] = { WARRIOR },
+					},
+				},
 			}),
 			n(4424, {	-- Aggem Thorncurse <Death's Head Prophet>
 				i(6681),	-- Thornspike

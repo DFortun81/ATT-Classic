@@ -19,6 +19,7 @@ _.Zones =
 					},
 				}),
 				n(1669, {	-- Defias Profiteer <Free Wheeling Merchant>
+					["coord"] = { 43.4, 66.8, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
@@ -37,6 +38,7 @@ _.Zones =
 					},
 				}),
 				n(4305, {	-- Kriggon Talsone <Fisherman>
+					["coord"] = { 36.2, 90.0, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5528),	-- Recipe: Clam Chowder

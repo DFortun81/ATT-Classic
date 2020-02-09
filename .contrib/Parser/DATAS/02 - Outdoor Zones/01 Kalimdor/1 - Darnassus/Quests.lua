@@ -202,10 +202,13 @@ _.Zones =
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
 				}),
 				q(942, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
 					["sourceQuest"] = 741, -- The Absent Minded Prospector(Darkshore)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4654, 1 },	-- Mysterious Fossil
+					},
+					["lvl"] = 15,
 				}),
 				q(1039, {	-- The Barrens Port
 					["races"] = ALLIANCE_ONLY,

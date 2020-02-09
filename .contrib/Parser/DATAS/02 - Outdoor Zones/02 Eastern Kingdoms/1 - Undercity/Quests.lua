@@ -423,18 +423,29 @@ _.Zones =
 					["sourceQuest"] = 1998, -- Fenwick Thatros
 				}),
 				q(1803, { -- Tome of the Cabal (2/3 Horde)
-					["lvl"] = 30,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 6293, -- Jorah Annison
 					["sourceQuest"] = 1801, -- Tome of the Cabal (1/3 Horde)
-				}),
-				q(1805, { -- Tome of the Cabal (3/3 Horde)
-					["lvl"] = 30,
+					["coord"] = { 76.6, 36.8, UNDERCITY },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6931, 1 },	-- Moldy Tome
+						{ "i", 6997, 1 },	-- Tattered Manuscript
+					},
+					["lvl"] = 30,
+				}),
+				q(1805, { -- Tome of the Cabal (3/3 Horde)
 					["qg"] = 6293, -- Jorah Annison
 					["sourceQuest"] = 1803, -- Tome of the Cabal (2/3 Horde)
+					["coord"] = { 76.6, 36.8, UNDERCITY },
+					["maps"] = { WETLANDS },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 7006, 1 },	-- Reconstructed Tome
+						{ "i", 6930, 3 },	-- Rod of Channeling
+					},
+					["lvl"] = 30,
 				}),
 				q(5658, {	-- Touch of Weakness
 					["qg"] = 4606,	-- Aelthalyste

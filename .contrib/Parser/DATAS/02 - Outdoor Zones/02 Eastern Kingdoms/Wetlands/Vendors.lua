@@ -7,14 +7,15 @@ _.Zones =
 		m(WETLANDS, {	-- Wetlands
 			n(-2, {	-- Vendors
 				n(1441, {	-- Brak Durnad <Weaponsmith>
+					["coord"] = { 11.5, 59.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					},
-					["coord"] = { 11.5, 59.6, WETLANDS },
 				}),
 				n(3180, {	-- Dark Iron Entrepreneur <Speciality Goods>
+					["coord"] = { 46.6, 18.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4824),	-- Blurred Axe
@@ -28,16 +29,17 @@ _.Zones =
 					},
 				}),
 				n(2682, {	-- Fradd Swiftgear <Engineering Supplies>
+					["coord"] = { 26.4, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(13309),	-- Schematic: Lovingly Crafted Boomstick
 						i(14639),	-- Schematic: Minor Recombobulator
 					},
-					["coord"] = { 26.4, 25.8, WETLANDS },
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-					["races"] = ALLIANCE_ONLY,
+					["description"] = "Enter the house at 8.3, 56.1 and go upstairs to access Jennabink Powerseam.",
 					["coord"] = { 8.1, 55.8, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt
@@ -49,28 +51,27 @@ _.Zones =
 						i(6275),	-- Pattern: Greater Adept's Robe
 						i(7290),	-- Pattern: Red Whelp Gloves
 					},
-					["description"] = "Enter the house at 8.3, 56.1 and go upstairs to access Jennabink Powerseam.",
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 11.3, 58.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3178, {	-- Stuart Fleming <Fisherman>
+					["coord"] = { 8.0, 58.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(6369),	-- Recipe: Rockscale Cod
 						i(17062),	-- Recipe: Mithril Head Trout
 					},
-					["coord"] = { 8.0, 58.3, WETLANDS },
 				}),
 				n(1460, {	-- Unger Statforth <Horse Breeder>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 8.6, 54.4, WETLANDS },
 					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2411),	-- Black Stallion Bridle
 						i(2414),	-- Pinto Bridle
@@ -79,6 +80,7 @@ _.Zones =
 					},
 				}),
 				n(2679, {	-- Wenna Silkbeard <Special Goods Dealer>
+					["coord"] = { 25.6, 25.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4827),	-- Wizard's Belt

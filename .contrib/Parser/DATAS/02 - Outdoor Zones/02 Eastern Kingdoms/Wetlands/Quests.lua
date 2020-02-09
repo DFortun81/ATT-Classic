@@ -7,168 +7,231 @@ _.Zones =
 		m(WETLANDS, {	-- Wetlands
 			n(-17, {	-- Quests
 				q(304, {	-- A Grim Task
-					["lvl"] = 26,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1071,	-- Longbraid the Grim
+					["coord"] = { 49.8, 18.3, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3639, 1 },	-- Ear of Balgaras
+					},
+					["lvl"] = 26,
 					["g"] = {
+						{
+							["itemID"] = 3639,	-- Ear of Balgaras
+							["questID"] = 304,	-- A Grim Task
+							["cr"] = 1364,	-- Balgaras the Foul
+							["coords"] = {
+								{ 47.4, 15.0, WETLANDS },
+								{ 46.6, 18.6, WETLANDS },
+								{ 61.8, 31.0, WETLANDS },
+							},
+						},
 						i(2916),	-- Gold Lion Shield
 						i(2917),	-- Tranquil Ring
 					},
-					["coord"] = { 49.8, 18.3, WETLANDS },
 				}),
 				q(471, {	-- Apprentice's Duties
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2094,	-- James Halloran
 					["sourceQuest"] = 484,	-- Young Crocolisk Skins
+					["coord"] = { 8.5, 55.7, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3348, 6 },	-- Giant Crocolisk Skin
+					},
+					["lvl"] = 18,
 					["g"] = {
 						i(2545),	-- Malleable Chain Leggings
 						i(3561),	-- Resilient Poncho
 						i(3681),	-- Recipe: Crocolisk Gumbo
 					},
-					["coord"] = { 8.5, 55.7, WETLANDS },
 				}),
 				q(275, {	-- Blisters on The Land
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 277,	-- Fire Taboo
+					["coord"] = { 56.3, 40.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(3558),	-- Fen Keeper Robe
 						i(1273),	-- Forest Chain
 						i(2263),	-- Phytoblade
 					},
-					["coord"] = { 56.3, 40.4, WETLANDS },
 				}),
 				q(279, {	-- Claws from the Deep
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1242,	-- Karl Boran
 					["coord"] = { 8.3, 58.5, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3618, 1 },	-- Gobbler's Head
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						{
+							["itemID"] = 3618,	-- Gobbler's Head
+							["questID"] = 279,	-- Claws from the Deep
+							["cr"] = 1259,	-- Gobbler
+							["coord"] = { 17.4, 40.4, WETLANDS },
+						},
+					},
 				}),
 				q(293, {	-- Cleansing the Eye
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1217,	-- Glorin Steelbrow
 					["sourceQuest"] = 292,	-- The Eye of Paleth
+					["coord"] = { 10.6, 60.5, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 					["g"] = {
 						i(2943),	-- Eye of Paleth
 					},
-					["coord"] = { 10.6, 60.5, WETLANDS },
-					["description"] = "Glorin Steelbrow is located inside the Deepwater Tavern on the first floor.",
 				}),
 				q(469, {	-- Daily Delivery
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2093,	-- Einar Stonegrip
 					["coord"] = { 49.8, 39.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(474, {	-- Defeat Nek'rosh
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
 					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
+					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3625, 1 },	-- Nek'rosh's Head
+					},
+					["lvl"] = 23,
 					["g"] = {
+						{
+							["itemID"] = 3625,	-- Nek'rosh's Head
+							["questID"] = 474,	-- Defeat Nek'rosh
+							["cr"] = 2091,	-- Chieftain Nek'rosh
+							["coord"] = { 54.2, 54.2, WETLANDS },
+						},
 						i(3209),	-- Ancient War Sword
 						i(6194),	-- Barreling Reaper
 					},
 				}),
 				q(470, {	-- Digging Through the Ooze
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2111,	-- Sida
+					["coord"] = { 11.8, 58.0, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3349, 1 },	-- Sida's Bag
+					},
+					["lvl"] = 19,
 					["g"] = {
 						i(3352),	-- Ooze-covered Bag
 					},
-					["coord"] = { 11.8, 58.0, WETLANDS },
 				}),
 				q(472, {	-- Fall of Dun Modr
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2097,	-- Harlo Barnaby
 					["coord"] = { 10.8, 55.9, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(1132, {	-- Fiora Longears
 					["qg"] = 4455,	-- Red Jack Flint
-					["description"] = "Red Jack Flint is located inside Menethil Keep on the first floor.",
 					["coord"] = { 9.9, 57.9, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,
 				}),
 				q(277, {	-- Fire Taboo
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1244,	-- Rethiel the Greenwarden
 					["sourceQuest"] = 276,	-- Tramping Paws
+					["coord"] = { 56.3, 40.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2611, 9 },	-- Crude Flint
+					},
+					["lvl"] = 20,
 					["g"] = {
 						i(4606),	-- Spongy Morel
 					},
-					["coord"] = { 56.3, 40.4, WETLANDS },
 				}),
 				q(305, {	-- In Search of The Excavation Team (1/2)
-					["lvl"] = 21,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2096,	-- Tarrel Rockweaver
 					["coord"] = { 11.5, 52.2, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 21,
 				}),
 				q(306, {	-- In Search of The Excavation Team (2/2)
-					["lvl"] = 21,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1076,	-- Merrin Rockweaver
 					["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 21,
 				}),
 				q(1302, {	-- James Hyal
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5082,	-- Vincent Hyal
 					["sourceQuest"] = 1301,	-- James Hyal
 					["altQuests"] = { 1282 },	-- They Call Him Smiling Jim
 					["coord"] = { 10.8, 60.4, WETLANDS },
-					["description"] = "Vincent Hyal is located inside the Deepwater Tavern on the first floor.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(290, {	-- Lifting the Curse
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 289,	-- The Cursed Crew
 					["coord"] = { 10.9, 59.6, WETLANDS },
-				}),
-				q(526, {	-- Lightforge Ingots
-					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["altQuests"] = {
-						324, -- The Lost Ingots
+					["cost"] = {
+						{ "i", 2629, 1 },	-- Intrepid Strongbox Key
+					},
+					["lvl"] = 22,
+					["groups"] = {
+						{
+							["itemID"] = 2629,	-- Intrepid Strongbox Key
+							["questID"] = 290,	-- Lifting the Curse
+							["cr"] = 1160,	-- Captain Halyndor
+							["coord"] = { 15.6, 23.4, WETLANDS },
+						},
 					},
 				}),
-				q(647, {	-- MacKreel's Moonshine
-					["lvl"] = 28,
+				q(526, {	-- Lightforge Ingots
+					["qg"] = 1217,	-- Glorin Steelbrow
+					["altQuests"] = { 324 },	-- The Lost Ingots
+					["sourceQuest"] = 321,	-- Lightforge Iron
+					["coord"] = { 10.6, 60.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2702, 5 },	-- Lightforge Ingot
+					},
+					["lvl"] = 20,
+				}),
+				q(647, {	-- MacKreel's Moonshine
 					["qg"] = 2696,	-- Foggy MacKreel
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(465, {	-- Nek'rosh's Gambit
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2104,	-- Captain Stoutfist
 					["sourceQuest"] = 464,	-- War Banners
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(294, {	-- Ormer's Revenge (1/3)
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(295, {	-- Ormer's Revenge (2/3)
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(296, {	-- Ormer's Revenge (3/3)
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3638, 1 },	-- Sarltooth's Talon
+					},
+					["lvl"] = 22,
 					["g"] = {
+						{
+							["itemID"] = 3638,	-- Sarltooth's Talon
+							["questID"] = 296,	-- Ormer's Revenge (3/3)
+							["cr"] = 1353,	-- Sarltooth
+							["coord"] = { 33.0, 51.4, WETLANDS },
+						},
 						i(3493),	-- Raptor's End
 						i(3566),	-- Raptorbane Armor
 						i(5246),	-- Excavation Rod
@@ -176,39 +239,38 @@ _.Zones =
 					},
 				}),
 				q(634, {	-- Plea To The Alliance
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 633,	-- The Thandol Span (3/3)
 					["coord"] = { 49.9, 18.2, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(281, {	-- Reclaiming Goods
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1242,	-- Karl Boran
 					["sourceQuest"] = 279,	-- Claws from the Deep
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(929),	-- Healing Potion
 					},
 				}),
 				q(473, {	-- Report to Captain Stoutfist
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2086,	-- Valstag Ironjaw
-					["isBreadcrumb"] = true,
 					["coord"] = { 10.1, 56.9, WETLANDS },
-					["description"] = "Valstag Ironjaw is located in the entryway to Menethil Keep.",
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 23,
 				}),
 				q(286, {	-- Return the Statuette
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 285,	-- Search More Hovels
 					["provider"] = { "o", 259 },	-- Half-buried Barrel
+					["sourceQuest"] = 285,	-- Search More Hovels
+					["coord"] = { 14.0, 34.8, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(2950),	-- Icicle Rod
 						i(2949),	-- Mariner Boots
 					},
-					["coord"] = { 14.0, 34.8, WETLANDS },
 				}),
 				q(285, {	-- Search More Hovels
 					["lvl"] = 20,
@@ -226,36 +288,55 @@ _.Zones =
 					["lvl"] = 25,
 				}),
 				q(943, {	-- The Absent Minded Prospector
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2911,	-- Archaeologist Flagongut
+					["sourceQuest"] = 942, -- The Absent Minded Prospector(Darnassus)
+					["coord"] = { 10.8, 60.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5234, 1 },	-- Flagongut's Fossil
+						{ "i", 5233, 1 },	-- Stone of Relu
+					},
+					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 5234,	-- Flagongut's Fossil
+							["questID"] = 943,	-- The Absent Minded Prospector
+							["coord"] = { 38.8, 52.2, WETLANDS },
+						},
 						i(5627),	-- Relic Blade
 						i(5626),	-- Skullchipper
 					},
-					["sourceQuest"] = 942, -- The Absent Minded Prospector(Darnassus)
-					["coord"] = { 10.8, 60.4, WETLANDS },
-					["description"] = "Archaeologist Flagongut is located in the Deepwater Tavern on the 2nd floor.",
 				}),
 				q(289, {	-- The Cursed Crew
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["sourceQuest"] = 288,	-- The Third Fleet
 					["coord"] = { 10.9, 59.6, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3619, 1 },	-- Snellig's Snuffbox
+					},
+					["lvl"] = 22,
+					["groups"] = {
+						{
+							["itemID"] = 3619,	-- Snellig's Snuffbox
+							["questID"] = 289,	-- The Cursed Crew
+							["cr"] = 1159,	-- First Mate Snellig
+							["coord"] = { 14.0, 30.6, WETLANDS },
+						},
+					},
 				}),
 				q(303, {	-- The Dark Iron War
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1074,	-- Motley Garmason
 					["coord"] = { 49.7, 18.3, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(292, {	-- The Eye of Paleth
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 290,	-- Lifting the Curse
 					["provider"] = { "o", 112948 },	-- Intrepid's Locked Strongbox
+					["sourceQuest"] = 290,	-- Lifting the Curse
 					["coord"] = { 14.5, 24.0, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 					["g"] = {
 						i(2944),	-- Cursed Eye of Paleth
 					},
@@ -268,97 +349,100 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1249, { -- The Missing Diplomat (11/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4963, -- Mikhail <Bartender>
-					["maps"] = { STORMWIND_CITY },
+					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["description"] = "This is part of a quest chain that begins in Stormwind City.",
-					["sourceQuest"] = 1248,
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(1250, { -- The Missing Diplomat (12/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4962, -- Tapoke "Slim" Jahn
-					["maps"] = { STORMWIND_CITY },
+					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
 					["coord"] = { 10.6, 60.3, WETLANDS },
-					["description"] = "This is part of a quest chain that begins in Stormwind City.",
-					["sourceQuest"] = 1249,
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(1264, { -- The Missing Diplomat (13/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4963, -- Mikhail <Bartender>
-					["maps"] = { STORMWIND_CITY },
+					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["description"] = "This is part of a quest chain that begins in Stormwind City.",
-					["sourceQuest"] = 1250,
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(284, {	-- The Search Continues
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 261 },	-- Damaged Crate
 					["sourceQuest"] = 281,	-- Reclaiming Goods
+					["coord"] = { 13.5, 41.4, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(422),	-- Dwarven Mild
 					},
-					["coord"] = { 13.5, 41.4, WETLANDS },
 				}),
 				q(631, {	-- The Thandol Span (1/3)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
 					["coord"] = { 49.9, 18.2, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(632, {	-- The Thandol Span (2/3)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 2652 },	-- Ebenezer Rustlocke's Corpse
 					["sourceQuest"] = 631,	-- The Thandol Span (1/3)
 					["coord"] = { 51.3, 8.0, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(633, {	-- The Thandol Span (3/3)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 632,	-- The Thandol Span (2/3)
+					["coord"] = { 49.9, 18.2, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 					["g"] = {
 						i(4504),	-- Dwarven Guard Cloak
 						i(4505),	-- Swampland Trousers
 					},
-					["coord"] = { 49.9, 18.2, WETLANDS },
 				}),
 				q(288, {	-- The Third Fleet
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(276, {	-- Tramping Paws
-					["sourceQuest"] = 463,	-- The Greenwarden
 					["qg"] = 1244,	-- Rethiel the Greenwarden
+					["sourceQuest"] = 463,	-- The Greenwarden
 					["coord"] = { 56.3, 40.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(299, {	-- Uncovering the Past
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1077,	-- Prospector Whelgar
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(2913),	-- Silk Mantle of Gamn
 					},
 				}),
 				q(464, {	-- War Banners
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2104,	-- Captain Stoutfist
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3337, 8 },	-- Dragonmaw War Banner
+					},
+					["lvl"] = 23,
 				}),
 				q(484, {	-- Young Crocolisk Skins
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2094,	-- James Halloran
 					["coord"] = { 8.5, 55.7, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3397, 4 },	-- Young Crocolisk Skin
+					},
+					["lvl"] = 18,
 				}),
 			}),
 		}),

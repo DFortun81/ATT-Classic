@@ -911,6 +911,31 @@ _.Zones =
 					["classes"] = { 2 }, -- Paladin
 					["lvl"] = 12,
 				}),
+				q(1802, { -- Tome of the Cabal (2/3 Alliance)
+					["qg"] = 6294, -- Krom Stoutarm
+					["sourceQuest"] = 1758, -- Tome of the Cabal (1/3 Alliance)
+					["coord"] = { 74.4, 9.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6931, 1 },	-- Moldy Tome
+						{ "i", 6997, 1 },	-- Tattered Manuscript
+					},
+					["lvl"] = 30,
+				}),
+				q(1804, { -- Tome of the Cabal (3/3 Alliance)
+					["qg"] = 6294, -- Krom Stoutarm
+					["sourceQuest"] = 1802, -- Tome of the Cabal (2/3 Alliance)
+					["coord"] = { 74.4, 9.4, IRONFORGE },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 7006, 1 },	-- Reconstructed Tome
+						{ "i", 6930, 3 },	-- Rod of Channeling
+					},
+					["lvl"] = 30,
+				}),
 				q(1680, { -- Tormus Deepforge
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
