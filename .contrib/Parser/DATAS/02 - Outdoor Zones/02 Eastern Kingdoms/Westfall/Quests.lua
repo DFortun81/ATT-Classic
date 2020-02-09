@@ -8,60 +8,46 @@ _.Zones =
 			n(-17, {	-- Quests
 				q(6181, {	-- A Swift Message
 					["qg"] = 491,	-- Quartermaster Lewis
-					["races"] = {
-						1,	-- Human
-					},
-					["lvl"] = 10,
 					["coord"] = { 56.9, 47.2, WESTFALL },
+					["races"] = { HUMAN },
+					["lvl"] = 10,
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
 					["races"] = ALLIANCE_ONLY,
-					["crs"] = {
-						126,	-- Murloc Coastrunner
-						458,	-- Murloc Hunter
-						456,	-- Murloc Minor Oracle
-						513,	-- Murloc Netter
-						517,	-- Murloc Oracle
-						515,	-- Murloc Raider
-						127,	-- Murloc Tidehunter
-						171,	-- Murloc Warrior
-						391,	-- Old Murk-Eye
-						519,	-- Slark
-					},
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
-					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "o", 35 },	-- Captain's Footlocker
+					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
 					["coord"] = { 25.9, 47.77, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1358, 1 },	-- A Clue to Sander's Treasure
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(139, {	-- Captain Sander's Hidden Treasure (3/4)
-					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
 					["provider"] = { "o", 36 },	-- Broken Barrel
+					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
 					["coord"] = { 40.50, 47.82, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1361, 1 },	-- Another Clue to Sander's Treasure
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(140, {	-- Captain Sander's Hidden Treasure (4/4)
-					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
 					["provider"] = { "o", 34 },	-- Old Jug
+					["sourceQuest"] = 139,	-- Captain Sander's Hidden Treasure (3/4)
 					["coords"] = {
 						{ 40.62, 17.01, WESTFALL },
 						{ 25.97, 16.90, WESTFALL },
 					},
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1362, 1 },	-- Final Clue to Sander's Treasure
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
 						i(2842),	-- Silver Bar
@@ -71,17 +57,15 @@ _.Zones =
 					},
 				}),
 				q(6281, {	-- Continue to Stormwind
-					["lvl"] = 10,
-					["races"] = {
-						1,	-- Human
-					},
 					["qg"] = 523,	-- Thor
 					["sourceQuest"] = 6181,	-- A Swift Message
+					["races"] = { HUMAN },
+					["lvl"] = 10,
 				}),
 				q(184, {	-- Furlbrow's Deed
 					["provider"] = { "i", 1972 },	-- Westfall Deed
-					["races"] = ALLIANCE_ONLY,
 					["maps"] = { ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 8,
 					["g"] = {
 						i(5057),	-- Ripe Watermelon
@@ -89,21 +73,25 @@ _.Zones =
 					},
 				}),
 				q(22, {	-- Goretusk Liver Pie
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 235,	-- Salma Saldean
 					["coord"] = { 56.4, 30.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 723, 8 },	-- Goretusk Liver
 					},
+					["lvl"] = 9,
 					["g"] = {
 						i(724),	-- Goretusk Liver Pie
 						i(2697),	-- Recipe: Goretusk Liver Pie
 					},
 				}),
 				q(103, {	-- Keeper of the Flame
-					["lvl"] = 10,
 					["qg"] = 392,	-- Captain Grayson
+					["coord"] = { 30, 86, WESTFALL },
+					["cost"] = {
+						{ "i", 814, 5 },	-- Flask of Oil
+					},
+					["lvl"] = 10,
 					["g"] = {
 						i(2455),	-- Minor Mana Potion
 						i(118),	-- Minor Healing Potion
@@ -112,41 +100,64 @@ _.Zones =
 					},
 				}),
 				q(2359, {	-- Klaven's Tower
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7024,	-- Agent Kearnen
-					["coord"] = { 68.5, 70.2, WESTFALL },
 					["sourceQuest"] = 2360,	-- Mathias and the Defias
+					["coord"] = { 68.5, 70.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 8046, 1 },	-- Kearnen's Journal
+						{ "i", 7923, 1 },	-- Defias Tower Key
+						{ "i", 7908, 1 },	-- Klaven Mortwake's Journal
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 7923,	-- Defias Tower Key
+							["questID"] = 2359,	-- Klaven's Tower
+							["cr"] = 7051,	-- Malformed Defias Drone
+							["coord"] = { 68.6, 72.2, WESTFALL },
+						},
+						{
+							["itemID"] = 7908,	-- Klaven Mortwake's Journal
+							["questID"] = 2359,	-- Klaven's Tower
+							["cr"] = 7053,	-- Klaven Mortwake
+							["coord"] = { 71.0, 74.6, WESTFALL },
+						},
 						i(18160),	-- Recipe: Thistle Tea
 					},
 				}),
 				q(102, {	-- Patrolling Westfall
-					["lvl"] = 8,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 821,	-- Captain Danuvin
 					["coord"] = { 56.4, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 725, 8 },	-- Gnoll Paw
+					},
+					["lvl"] = 8,
 					["g"] = {
 						i(1154),	-- Belt of the People's Militia
 						i(710),	-- Bracers of the People's Militia
 					},
 				}),
 				q(151, {	-- Poor Old Blanchy
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(2165),	-- Old Blanchy's Blanket
 						i(1537),	-- Old Blanchy's Feed Pouch
 					},
 				}),
 				q(153, {	-- Red Leather Bandanas
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 878,	-- Scout Galiaan
 					["coord"] = { 54.0, 53.0, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 829, 15 },	-- Red Leather Bandana
+					},
+					["lvl"] = 10,
 					["g"] = {
 						i(3511),	-- Cloak of the People's Militia
 						i(5944),	-- Greaves of the People's Militia
@@ -210,83 +221,105 @@ _.Zones =
 				}),
 				q(152, {	-- The Coast Isn't Clear
 					["qg"] = 392,	-- Captain Grayson
+					["coord"] = { 30, 86, WESTFALL },
 					["lvl"] = 10,
 				}),
 				q(104, {	-- The Coastal Menace
-					["lvl"] = 15,
 					["qg"] = 392,	-- Captain Grayson
+					["coord"] = { 30, 86, WESTFALL },
+					["cost"] = {
+						{ "i", 3636, 1 },	-- Scale of Old Murk-Eye
+					},
+					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 3636,	-- Scale of Old Murk-Eye
+							["questID"] = 104,	-- The Coastal Menace
+							["cr"] = 391,	-- Old Murk-Eye
+							["coord"] = { 34.4, 84.6, WESTFALL },
+						},
 						i(1172),	-- Grayson's Torch
 						i(1557),	-- Buckler of the Seas
 						i(5240),	-- Torchlight Wand
 					},
 				}),
 				q(65, {	-- The Defias Brotherhood (1/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(135, {	-- The Defias Brotherhood (3/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
 					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(142, {	-- The Defias Brotherhood (5/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
 					["sourceQuest"] = 141,	-- The Defias Brotherhood (4/7)
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1381, 1 },	-- A Mysterious Message
+					},
+					["lvl"] = 14,
+					["groups"] = {
+						{
+							["itemID"] = 1381,	-- A Mysterious Message
+							["questID"] = 142,	-- The Defias Brotherhood (5/7)
+							["cr"] = 550, 	-- Defias Messenger
+							["coord"] = { 45.6, 68.6, WESTFALL },
+						},
+					},
 				}),
 				q(155, {	-- The Defias Brotherhood (6/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 467,	-- The Defias Traitor
-					["coord"] = { 55.6, 47.5, WESTFALL },
 					["sourceQuest"] = 142,	-- The Defias Brotherhood (5/7)
+					["coord"] = { 55.6, 47.5, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(64, {	-- The Forgotten Heirloom
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 237,	-- Farmer Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(4541),	-- Freshly Baked Bread
 						i(1179),	-- Ice Cold Milk
 					},
 				}),
 				q(9, {	-- The Killing Fields
-					["lvl"] = 8,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 233,	-- Farmer Saldean
 					["coord"] = { 56.0, 31.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 8,
 					["g"] = {
 						i(3578),	-- Harvester's Pants
 						i(1561),	-- Harvester's Robe
 					},
 				}),
 				q(12, {	-- The People's Militia (1/3)
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(13, {	-- The People's Militia (2/3)
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
 					["sourceQuest"] = 12,	-- The People's Militia (1/3)
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(14, {	-- The People's Militia (3/3)
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 234,	-- Gryan Stoutmantle
-					["coord"] = { 56.3, 47.6, WESTFALL },
 					["sourceQuest"] = 13,	-- The People's Militia (2/3)
+					["coord"] = { 56.3, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(1566),	-- Edge of the People's Militia
 						i(1480),	-- Fist of the People's Militia
@@ -294,9 +327,13 @@ _.Zones =
 					},
 				}),
 				q(117, {	-- Thunderbrew
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 239,	-- Grimbooze Thunderbrew
+					["coord"] = { 44.6, 80.2, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 1274, 5 },	-- Hops
+					},
 					["g"] = {
 						i(1262),	-- Keg of Thunderbrew
 					},

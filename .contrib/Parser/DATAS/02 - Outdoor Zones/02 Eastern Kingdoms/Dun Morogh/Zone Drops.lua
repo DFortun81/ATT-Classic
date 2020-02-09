@@ -45,6 +45,9 @@ _.Zones =
 				i(2546, {	-- Royal Frostmane Girdle
 					["cr"] = 1260,	-- Great Father Arctikus
 				}),
+				i(2066, {	-- Skull Hatchet
+					["cr"] = 1115,	-- Rockjaw Skullthumper
+				}),
 				i(3224, {	-- Silver-lined Bracers
 					["cr"] = 1132,	-- Timber
 				}),

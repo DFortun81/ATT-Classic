@@ -29,11 +29,14 @@ _.Instances = {
 					},
 				}),
 				q(214, {	-- Red Silk Bandanas
-					["sourceQuest"] = 153,	-- Red Leather Bandanas
 					["qg"] = 820,	-- Scout Riell <The People's Militia>
+					["sourceQuest"] = 153,	-- Red Leather Bandanas
 					["coord"] = { 56.7, 47.4, WESTFALL },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 915, 10 },	-- Red Silk Bandana
+					},
 					["groups"] = {
 						i(6094),	-- Piercing Axe
 						i(2089),	-- Scrimshaw Dagger
@@ -41,8 +44,8 @@ _.Instances = {
 					},
 				}),
 				q(166, {	-- The Defias Brotherhood (7/7)
-					["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 					["qg"] = 234,	-- Gryan Stoutmantle <The People's Militia>
+					["sourceQuest"] = 155,	-- The Defias Brotherhood (6/7)
 					["coord"] = { 56.3, 47.5, WESTFALL },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
@@ -53,8 +56,8 @@ _.Instances = {
 					},
 				}),
 				q(2040, {	-- Underground Assault
-					["sourceQuest"] = 2041,	-- Speak with Shoni
 					["qg"] = 6579,	-- Shoni the Shilent
+					["sourceQuest"] = 2041,	-- Speak with Shoni
 					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -78,9 +81,7 @@ _.Instances = {
 					},
 				}),
 				i(10402, {	-- Blackened Defias Boots
-					["crs"] = {
-						4416,	-- Defias Strip Miner
-					},
+					["cr"] = 4416,	-- Defias Strip Miner
 				}),
 				i(1951, {	-- Blackwater Cutlass
 					["crs"] = {
@@ -89,32 +90,27 @@ _.Instances = {
 					},
 				}),
 				i(1925, {	-- Defias Rapier
-					["crs"] = {
-						1725,	-- Defias Watchman
-					},
+					["cr"] = 1725,	-- Defias Watchman
 				}),
 				i(1943, {	-- Goblin Mail Leggings
-					["crs"] = {
-						3947,	--  Goblin Shipbuilder
-					},
+					["cr"] = 3947,	-- Goblin Shipbuilder
 				}),
 				i(1936, {	-- Goblin Screwdriver
-					["crs"] = {
-						622,	-- Goblin Engineer
-					},
+					["cr"] = 622,	-- Goblin Engineer
 				}),
 				i(1944, {	-- Metalworking Gloves
-					["crs"] = {
-						1731,	-- Goblin Craftsman
-					},
+					["cr"] = 1731,	-- Goblin Craftsman
 				}),
 				i(8492, {	-- Parrot Cage
-					["crs"] = {
-						657,	-- Defias Pirate
-					},
+					["cr"] = 657,	-- Defias Pirate
 				}),
 				i(7997, {	-- Red Defias Mask
 					["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
+				}),
+				i(915, {	-- Red Silk Bandana
+					["questID"] = 214,	-- Red Silk Bandanas
+					["description"] = "Can also drop from any Defias mob in the Deadmines.",
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(1929, {	-- Silk-threaded Trousers
 					["crs"] = {
@@ -123,24 +119,16 @@ _.Instances = {
 					},
 				}),
 				i(1930, {	-- Stonemason Cloak
-					["crs"] = {
-						598,	-- Defias Miner
-					},
+					["cr"] = 598,	-- Defias Miner
 				}),
 				i(1926, {	-- Weighted Sap
-					["crs"] = {
-						824,	-- Defias Digger
-					},
+					["cr"] = 824,	-- Defias Digger
 				}),
 				i(6994, {	-- Whitestone Oak Lumber
-					["crs"] = {
-						641,	-- Goblin Woodcarver
-					},
+					["cr"] = 641,	-- Goblin Woodcarver
 				}),
 				i(1945, {	-- Woodworking Gloves
-					["crs"] = {
-						641,	-- Goblin Woodcarver
-					},
+					["cr"] = 641,	-- Goblin Woodcarver
 				}),
 			}),
 			n(599, {	-- Marisa du'Paige

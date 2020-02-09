@@ -110,9 +110,12 @@ _.Zones =
 				q(1076, {	-- Devils in Westfall
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5669, 1 },	-- Dust Devil Debris
+					},
+					["lvl"] = 17,
 				}),
 				q(6481, {	-- Earthen Arise
 					["qg"] = 11861,	-- Mor'rogal

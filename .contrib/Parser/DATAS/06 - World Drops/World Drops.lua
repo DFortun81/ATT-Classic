@@ -68,8 +68,6 @@ _.WorldDrops =
 			i(15661),  -- Impenetrable Cloak
 		}),
 		n(-323, {	-- Chest
-			
-			i(821),  -- Riverpaw Leather Vest
 			i(2957),  -- Journeyman's Vest
 			i(2965),  -- Warrior's Tunic
 			i(2977),  -- Veteran Armor
@@ -304,7 +302,6 @@ _.WorldDrops =
 			i(13038),  -- Swiftwind
 		}),			
 		n(-333, {	-- Daggers
-			i(816),  -- Small Hand Blade
 			i(1465),  -- Tigerbane
 			i(2140),  -- Carving Knife
 			i(2632),  -- Curved Dagger
