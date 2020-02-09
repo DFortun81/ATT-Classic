@@ -10,6 +10,9 @@ _.Zones =
 					["qg"] = 491,	-- Quartermaster Lewis
 					["coord"] = { 56.9, 47.2, WESTFALL },
 					["races"] = { HUMAN },
+					["cost"] = {
+						{ "i", 15998, 1 },	-- Lewis' Note
+					},
 					["lvl"] = 10,
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
@@ -59,20 +62,27 @@ _.Zones =
 				q(6281, {	-- Continue to Stormwind
 					["qg"] = 523,	-- Thor
 					["sourceQuest"] = 6181,	-- A Swift Message
+					["coord"] = { 56.4, 52.6, WESTFALL },
 					["races"] = { HUMAN },
+					["cost"] = {
+						{ "i", 15998, 1 },	-- Lewis' Note
+					},
 					["lvl"] = 10,
 				}),
 				q(184, {	-- Furlbrow's Deed
 					["provider"] = { "i", 1972 },	-- Westfall Deed
 					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1971, 1 },	-- Furlbrow's Deed
+					},
 					["lvl"] = 8,
 					["g"] = {
 						i(5057),	-- Ripe Watermelon
 						i(4656),	-- Small Pumpkin
 					},
 				}),
-				q(22, {	-- Goretusk Liver Pie
+				q(22, {		-- Goretusk Liver Pie
 					["qg"] = 235,	-- Salma Saldean
 					["coord"] = { 56.4, 30.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
@@ -144,6 +154,9 @@ _.Zones =
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1528, 8 },	-- Handful of Oats
+					},
 					["lvl"] = 9,
 					["g"] = {
 						i(2165),	-- Old Blanchy's Blanket
@@ -164,7 +177,7 @@ _.Zones =
 						i(12295),	-- Leggings of the People's Militia
 					},
 				}),
-				q(48, {	-- Sweet Amber (1/5)
+				q(48, {		-- Sweet Amber (1/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["maps"] = { STRANGLETHORN_VALE },
@@ -174,10 +187,11 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(49, {	-- Sweet Amber (2/5)
+				q(49, {		-- Sweet Amber (2/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 48,	-- Sweet Amber (1/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
+					["maps"] = { THE_HINTERLANDS, TANARIS, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 738, 1}, -- Sack of Barley
@@ -185,8 +199,25 @@ _.Zones =
 						{ "i", 740, 1}, -- Sack of Rye
 					},
 					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 738,	-- Sack of Barley
+							["questID"] = 49,	-- Sweet Amber (2/5)
+							["coord"] = { 62.5, 23.3, SWAMP_OF_SORROWS },
+						},
+						{
+							["itemID"] = 739,	-- Sack of Corn
+							["questID"] = 49,	-- Sweet Amber (2/5)
+							["coord"] = { 65.8, 36.7, TANARIS },
+						},
+						{
+							["itemID"] = 740,	-- Sack of Rye
+							["questID"] = 49,	-- Sweet Amber (2/5)
+							["coord"] = { 39.9, 66.2, THE_HINTERLANDS },
+						},
+					},
 				}),
-				q(50, {	-- Sweet Amber (3/5)
+				q(50, {		-- Sweet Amber (3/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 49,	-- Sweet Amber (2/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
@@ -196,26 +227,41 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(51, {	-- Sweet Amber (4/5)
+				q(51, {		-- Sweet Amber (4/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 50,	-- Sweet Amber (3/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
+					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 742, 1 }, -- A Sycamore Branch
 					},
 					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 742,	-- A Sycamore Branch
+							["questID"] = 51,	-- Sweet Amber (4/5)
+							["cr"] = 5881,	-- Cursed Sycamore
+							["coord"] = { 54.8, 70.4, FERALAS },
+						},
+					},
 				}),
-				q(53, {	-- Sweet Amber (5/5)
+				q(53, {		-- Sweet Amber (5/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
 					["sourceQuest"] = 51,	-- Sweet Amber (4/5)
 					["coord"] = { 44.6, 80.2, WESTFALL },
+					["maps"] = { SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 743, 1 }, -- Bundle of Charred Oak
 					},
 					["lvl"] = 40,
 					["g"] = {
+						{
+							["itemID"] = 743,	-- Bundle of Charred Oak
+							["questID"] = 53,	-- Sweet Amber (5/5)
+							["coord"] = { 54.6, 50.7, SEARING_GORGE },
+						},
 						i(744),	-- Thunderbrew's Boot Flask
 					},
 				}),
@@ -243,7 +289,7 @@ _.Zones =
 						i(5240),	-- Torchlight Wand
 					},
 				}),
-				q(65, {	-- The Defias Brotherhood (1/7)
+				q(65, {		-- The Defias Brotherhood (1/7)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
@@ -254,6 +300,9 @@ _.Zones =
 					["sourceQuest"] = 132,	-- The Defias Brotherhood (2/7)
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1327, 1 },	-- Wiley's Note
+					},
 					["lvl"] = 14,
 				}),
 				q(142, {	-- The Defias Brotherhood (5/7)
@@ -281,17 +330,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
-				q(64, {	-- The Forgotten Heirloom
+				q(64, {		-- The Forgotten Heirloom
 					["qg"] = 237,	-- Farmer Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 841, 1 },	-- Furlbrow's Pocket Watch
+					},
 					["lvl"] = 9,
 					["g"] = {
 						i(4541),	-- Freshly Baked Bread
 						i(1179),	-- Ice Cold Milk
 					},
 				}),
-				q(9, {	-- The Killing Fields
+				q(9, {		-- The Killing Fields
 					["qg"] = 233,	-- Farmer Saldean
 					["coord"] = { 56.0, 31.2, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
@@ -301,20 +353,20 @@ _.Zones =
 						i(1561),	-- Harvester's Robe
 					},
 				}),
-				q(12, {	-- The People's Militia (1/3)
+				q(12, {		-- The People's Militia (1/3)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(13, {	-- The People's Militia (2/3)
+				q(13, {		-- The People's Militia (2/3)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 12,	-- The People's Militia (1/3)
 					["coord"] = { 56.3, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(14, {	-- The People's Militia (3/3)
+				q(14, {		-- The People's Militia (3/3)
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 13,	-- The People's Militia (2/3)
 					["coord"] = { 56.3, 47.6, WESTFALL },
@@ -338,13 +390,16 @@ _.Zones =
 						i(1262),	-- Keg of Thunderbrew
 					},
 				}),
-				q(36, {	-- Westfall Stew (1/2)
+				q(36, {		-- Westfall Stew (1/2)
 					["qg"] = 238,	-- Verna Furlbrow
 					["coord"] = { 60.0, 19.4, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2832, 1 },	-- Verna's Westfall Stew Recipe
+					},
 					["lvl"] = 9,
 				}),
-				q(38, {	-- Westfall Stew (2/2)
+				q(38, {		-- Westfall Stew (2/2)
 					["qg"] = 235,	-- Salma Saldean
 					["sourceQuest"] = 36,	-- Westfall Stew (1/2)
 					["coord"] = { 56.4, 30.6, WESTFALL },

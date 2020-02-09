@@ -27,6 +27,7 @@ _.Zones =
 					},
 				}),
 				n(843, {	-- Gina MacGregor <Trade Supplies>
+					["coord"] = { 57.6, 54.1, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5787),	-- Pattern: Murloc Scale Breastplate
@@ -34,7 +35,6 @@ _.Zones =
 						i(5771),	-- Pattern: Red Linen Bag
 						i(6274),	-- Pattern: Blue Overalls
 					},
-					["coord"] = { 57.6, 54.1, WESTFALL },
 				}),
 				n(4305, {	-- Kriggon Talsone <Fisherman>
 					["races"] = ALLIANCE_ONLY,
@@ -46,11 +46,11 @@ _.Zones =
 					},
 				}),
 				n(1668, {	-- William MacGregor <Bowyer>
+					["coord"] = { 57.7, 53.9, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
-					["coord"] = { 57.7, 53.9, WESTFALL },
 				}),
 			}),	
 		}),

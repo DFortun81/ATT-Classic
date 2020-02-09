@@ -173,10 +173,11 @@ _.Zones =
 					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
 				}),
 				q(395, { -- Brotherhood's End
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 394, -- The Head of the Beast
 					["qg"] = 332, -- Master Mathias Shaw <Leader of SI:7>
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 				}),
 				q(1705, { -- Burning Blood
 					["qg"] = 1416, -- Grimand Elmore
@@ -206,13 +207,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(6261, {	-- Dungar Longdrink
-					["lvl"] = 10,
-					["races"] = {
-						1,	-- Human
-					},
 					["qg"] = 1323,	-- Osric Strang
 					["sourceQuest"] = 6281,	-- Continue to Stormwind
 					["coord"] = { 74.2, 47.5, STORMWIND_CITY },
+					["races"] = { HUMAN },
+					["cost"] = {
+						{ "i", 16115, 1 },	-- Osric's Crate
+					},
+					["lvl"] = 10,
 				}),
 				q(1701, { -- Fire hardened Mail
 					["lvl"] = 20,
@@ -375,11 +377,11 @@ _.Zones =
 					["sourceQuest"] = 1665, -- Bartleby's Mug
 				}),
 				q(2360, {	-- Mathias and the Defias
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 332,	-- Master Mathias Shaw
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
 				}),
 				q(1861, { -- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
@@ -445,12 +447,13 @@ _.Zones =
 					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
 				}),
 				q(6285, {	-- Return to Lewis
-					["lvl"] = 10,
-					["races"] = {
-						1,	-- Human
-					},
 					["qg"] = 352,	-- Dungar Longdrink
 					["sourceQuest"] = 6261,	-- Dungar Longdrink
+					["races"] = { HUMAN },
+					["cost"] = {
+						{ "i", 16115, 1 },	-- Osric's Crate
+					},
+					["lvl"] = 10,
 				}),
 				q(393, { -- Shadow of the Past
 					["lvl"] = 16,
@@ -467,6 +470,7 @@ _.Zones =
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 332,	-- Master Mathias Shaw
 					["sourceQuest"] = 2205,	-- Seek out SI:7
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["g"] = {
 						i(7298),	-- Blade of Cunning
 					},
@@ -550,10 +554,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 332,	-- Master Mathias Shaw
 					["sourceQuest"] = 135,	-- The Defias Brotherhood (3/7)
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1353, 1 },	-- Shaw's Report
+					},
+					["lvl"] = 14,
 				}),
 				q(6182, {	-- The First and the Last
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
@@ -733,30 +741,42 @@ _.Zones =
 					["sourceQuest"] = 1787, -- The Tome of Divinity (8)
 				}),
 				q(2607, {	-- The Touch of Zanzil
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 332,	-- Master Mathias Shaw
 					["sourceQuest"] = 2359, -- Klaven's Tower
+					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
 				}),
 				q(2608, {	-- The Touch of Zanzil
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["sourceQuest"] = 2607, -- The Touch of Zanzil
 					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
-					["description"] = "Doc Mixilpixil is located in the basement of the SI:7 building.",
+					["description"] = "Doc Mixilpixil is located in the basement of the SI:7 building.\n\nType /lay to lie down for the operation.",
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 20,
 				}),
 				q(2609, {	-- The Touch of Zanzil
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 7207,	-- Doc Mixilpixil
 					["sourceQuest"] = 2608, -- The Touch of Zanzil
 					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town (64.4, 60.8).\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park (39.9, 46.3).",
 					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 3421, 1 },	-- Simple Wildflowers
+						{ "i", 3372, 1 },	-- Leaded Vial
+						{ "i", 4371, 1 },	-- Bronze Tube
+						{ "i", 8431, 1 },	-- Spool of Light Chartreuse Silk Thread
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 8431,	-- Spool of Light Chartreuse Silk Thread
+							["questID"] = 2609,	-- The Touch of Zanzil
+							["coord"] = { 39.9, 46.3, STORMWIND_CITY },
+						},
 						i(8432),	-- Eau de Mixilpixil
 					},
 				}),

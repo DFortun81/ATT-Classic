@@ -7,31 +7,30 @@ _.Zones =
 		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
 			n(-17, {	-- Quests
 				q(124, {	-- A Baying of Gnolls
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },					
+					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(129, {	-- A Free Lunch
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 379,	-- Darcy
 					["coord"] = { 26.7, 44.3, REDRIDGE_MOUNTAINS },
-					["description"] = "Darcy is located on the first floor of the Lakeshire Inn.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(94, {	-- A Watchful Eye
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 313,	-- Theocritus
 					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
 					["description"] = "This quests starts in Elwynn Forest. Go to the top of the tower located at 64.3, 68.9.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(2282, {	-- Alther's Mill
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
 					["qg"] = 6966,	-- Lucius
 					["sourceQuest"] = 2281,	-- Redridge Rendezvous
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 16,
 					["g"] = {
 						i(7907),	-- Certificate of Thievery
 					},
@@ -52,15 +51,15 @@ _.Zones =
 					},
 				}),
 				q(246, {	-- Assessing the Threat
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1070,	-- Deputy Feldon
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(128, {	-- Blackrock Bounty
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 903,	-- Guard Howe
 					["coord"] = { 31.5, 58.0, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(20, {	-- Blackrock Menace
 					["qg"] = 382,	-- Marshal Marris
@@ -72,18 +71,17 @@ _.Zones =
 					["lvl"] = 18,
 				}),
 				q(131, {	-- Delivering Daffodils
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 342,	-- Martie Jainrose
+					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(1326),	-- Sauteed Sunfish
 					},
-					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
 				}),
 				q(116, {	-- Dry Times
 					["qg"] = 346,	-- Barkeep Daniels
 					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
-					["description"] = "Barkeep Daniels is located on the first floor of the Lakeshire Inn.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["g"] = {
@@ -92,15 +90,15 @@ _.Zones =
 					},
 				}),
 				q(244, {	-- Encroaching Gnolls
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 464,	-- Guard Parker
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(3741, {	-- Hilary's Necklace
-					["lvl"] = 12,
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
+					["lvl"] = 12,
 				}),
 				q(126, {	-- Howling in the Hills
 					["qg"] = 415,	-- Verner Osgood
@@ -122,50 +120,55 @@ _.Zones =
 					},				
 				}),
 				q(248, {	-- Looking Further
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 31 },	-- Old Lion Statue
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(146, {	-- Messenger to Darkshire
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 263,	-- Lord Ello Ebonlocke
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(145, {	-- Messenger to Darkshire
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["description"] = "Magistrate Solomon is located inside the Lakeshire Town Hall.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(121, {	-- Messenger to Stormwind
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 466,	-- General Marcus Jonathan
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(120, {	-- Messenger to Stormwind
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["description"] = "Magistrate Solomon is located inside the Lakeshire Town Hall.",
-				}),
-				q(144, {	-- Messenger to Westfall
-					["lvl"] = 14,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 234,	-- Gryan Stoutmantle
+					["lvl"] = 14,
 				}),
 				q(143, {	-- Messenger to Westfall
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
-					["description"] = "Magistrate Solomon is located inside the Lakeshire Town Hall.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1407, 1 },	-- Solomon's Plea to Westfall
+					},
+					["lvl"] = 14,
+				}),
+				q(144, {	-- Messenger to Westfall
+					["qg"] = 234,	-- Gryan Stoutmantle
+					["sourceQuest"] = 143,	-- Messenger to Westfall
+					["coord"] = { 56.2, 47.6, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1408, 1 },	-- Stoutmantle's Response to Solomon
+					},
+					["lvl"] = 14,
 				}),
 				q(219, {	-- Missing In Action
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 349,	-- Corporal Keeshan
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 19,
 					["g"] = {
 						i(3555),	-- Robe of Solomon
 						i(1275),	-- Deputy Chain Coat
@@ -219,7 +222,6 @@ _.Zones =
 				q(347, {	-- Rethban Ore
 					["qg"] = 341,	-- Foreman Oslow
 					["sourceQuest"] = 345,	-- Ink Supplies (Elwynn Forest)
-					["description"] = "This quest is part of a series that starts in Stormwind.",
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2798, 5 },	-- Rethban Ore
@@ -227,14 +229,14 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(119, {	-- Return to Verner
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 514,	-- Smith Argus
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(127, {	-- Selling Fish
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 381,	-- Dockmaster Baren
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 					["g"] = {
 						i(3663),	-- Murloc Fin Soup
 						i(1322),	-- Fishliver Oil
@@ -250,7 +252,6 @@ _.Zones =
 				q(91, {	-- Solomon's Law
 					["qg"] = 900,	-- Bailiff Conacher
 					["coord"] = { 29.6, 44.3, REDRIDGE_MOUNTAINS },
-					["description"] = "Bailiff Conacher is located inside the Lakeshire Town Hall.",
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1075, 10 },	-- Shadowhide Pendant
@@ -278,12 +279,14 @@ _.Zones =
 					},				
 				}),
 				q(132, {	-- The Defias Brotherhood (2/7)
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 266,	-- Wiley the Black
-					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
 					["sourceQuest"] = 65,	-- The Defias Brotherhood (1/7)
-					["description"] = "Wiley the Black is located on the 2nd floor of the Lakeshire Inn.",
+					["coord"] = { 26.6, 45.3, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1327, 1 },	-- Wiley's Note
+					},
+					["lvl"] = 14,
 				}),
 				q(89, {	-- The Everstill Bridge
 					["qg"] = 341,	-- Foreman Oslow
@@ -300,36 +303,36 @@ _.Zones =
 					},
 				}),
 				q(125, {	-- The Lost Tools
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 341,	-- Foreman Oslow
+					["coord"] = { 32.2, 48.7, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(2313),	-- Medium Armor Kit
 					},
-					["coord"] = { 32.2, 48.7, REDRIDGE_MOUNTAINS },
 				}),
 				q(118, {	-- The Price of Shoes
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 14,
 				}),
 				q(1699, { -- The Rethban Gauntlet
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6166, -- Yorus Barleybrew
 					["sourceQuest"] = 1698, -- Yorus Barleybrew
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(1702, { -- The Shieldsmith
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6166, -- Yorus Barleybrew
 					["sourceQuest"] = 1699, -- The Rethban Gauntlet
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 6843, 1 }, -- Cask of Scalder
 					},
+					["lvl"] = 20,
 					["g"] = {
 						i(6970), -- Furen's Favor
 					},
@@ -356,10 +359,10 @@ _.Zones =
 					},
 				}),
 				q(130, {	-- Visit the Herbalist
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 464,	-- Guard Parker
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(169, {	-- Wanted: Gath'Ilzogg
 					["provider"] = { "o", 60 },	-- Wanted: Gath'Ilzogg
@@ -396,17 +399,14 @@ _.Zones =
 					},
 				}),
 				q(1698, { -- Yorus Barleybrew
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qgs"] = {
 						5479, -- Wu Shen <Warrior Trainer>
 						7315, -- Darnath Bladesigner <Warrior Trainer>
 					},
-					["maps"] = {
-						DARNASSUS, 
-						STORMWIND_CITY,
-					}
+					["maps"] = { DARNASSUS, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 			}),
 		}),

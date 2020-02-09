@@ -49,6 +49,9 @@ _.Instances = {
 					["coord"] = { 56.3, 47.5, WESTFALL },
 					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3637, 1 },	-- Head of VanCleef
+					},
 					["groups"] = {
 						i(6087),		-- Chausses of Westfall
 						i(2042),		-- Staff of Westfall

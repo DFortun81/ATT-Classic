@@ -360,14 +360,15 @@ _.Zones =
 					},
 				}),
 				q(109, {	-- Report to Gryan Stoutmantle
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 9,
 					["qgs"] = {
 						237,	-- Farmer Furlbrow
 						240,	-- Marshal Dughan
 						261,	-- Guard Thomas
 						963,	-- Deputy Rainer
 					},
+					["maps"] = { WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(71, {	-- Report to Thomas
 					["provider"] = { "o", 56 },	-- Rolf's corpse
