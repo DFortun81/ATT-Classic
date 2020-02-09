@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(KALIMDOR, {	-- Kalimdor
 		m(FERALAS, {	-- Feralas
 			n(0, {	-- Zone Drops
 				i(9589, {	-- Encrusted Minerals

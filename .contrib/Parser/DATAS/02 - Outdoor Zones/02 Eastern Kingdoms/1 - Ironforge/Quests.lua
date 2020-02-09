@@ -902,14 +902,14 @@ _.Zones =
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
 				q(3681, { -- The Tome of Divinity
-					["lvl"] = 12,
-					["races"] = { 1 }, -- Human
-					["classes"] = { 2 }, -- Paladin
 					["qg"] = 5149, -- Brandur Ironhammer
 					["altQuests"] = {
-						2998, -- The Tome of Divinity
+						2998, 	-- The Tome of Divinity
+						1787,	-- The Tome of Divinity (8)
 					},
-					["description"] = "This quest is an alternative quest to Quest #2998.",
+					["races"] = { 1 }, -- Human
+					["classes"] = { 2 }, -- Paladin
+					["lvl"] = 12,
 				}),
 				q(1680, { -- Tormus Deepforge
 					["lvl"] = 10,

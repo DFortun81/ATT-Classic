@@ -53,18 +53,24 @@ _.Instances = {
 				}),
 				q(1794, {	-- The Tome of Valor [Dwarf]
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 3 },	-- Dwarf
 					["coord"] = { 23.6, 6.4, IRONFORGE },
 					["maps"] = { IRONFORGE },
+					["classes"] = { PALADIN },
+					["races"] = { DWARF },
+					["altQuests"] = {
+						1652,	-- The Tome of Valor [Pt 4]
+					},
 					["lvl"] = 20,
 				}),
 				q(1793, {	-- The Tome of Valor [Human]
 					["qg"] = 6171,	-- Duthorian Rall
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1 },	-- Human
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["classes"] = { PALADIN },
+					["races"] = { HUMAN },
+					["altQuests"] = {
+						1652,	-- The Tome of Valor [Pt 4]
+					},
 					["lvl"] = 20,
 				}),
 				q(1649, {	-- The Tome of Valor [Pt 1]
@@ -73,38 +79,40 @@ _.Instances = {
 						1794,	-- The Tome of Valor [Dwarf]
 						1793,	-- The Tome of Valor [Human]
 					},
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
-					["itemID"] = 6776,	-- Tome of Valor
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["cost"] = {
+						{ "i", 6776, 1 },	-- Tome of Valor
+					},
 					["lvl"] = 20,
 				}),
 				q(1650, {	-- The Tome of Valor [Pt 2]
 					["qg"] = 6171,	-- Duthorian Rall
 					["sourceQuest"] = 1649,	-- The Tome of Valor [Pt 1]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1651, {	-- The Tome of Valor [Pt 3]
 					["qg"] = 6182,	-- Daphne Stilwell
 					["sourceQuest"] = 1650,	-- The Tome of Valor [Pt 2]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 42.4, 88.4, WESTFALL },
 					["maps"] = { WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1652, {	-- The Tome of Valor [Pt 4]
 					["qg"] = 6171,	-- Duthorian Rall
 					["sourceQuest"] = 1651,	-- The Tome of Valor [Pt 3]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
 						spell(5502),	-- Sense Undead
@@ -114,28 +122,28 @@ _.Instances = {
 				q(1653, {	-- The Test of Righteousness [Pt 1]
 					["qg"] = 6171,	-- Duthorian Rall
 					["sourceQuest"] = 1652,	-- The Tome of Valor [Pt 2]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 39.8, 30.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1654, {	-- The Test of Righteousness [Pt 2]
 					["qg"] = 6181,	-- Jordan Stilwell
 					["sourceQuest"] = 1653,	-- The Test of Righteousness [Pt 1]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 				}),
 				q(1806, {	-- The Test of Righteousness [Pt 3]
 					["qg"] = 6181,	-- Jordan Stilwell
 					["sourceQuest"] = 1654,	-- The Test of Righteousness [Pt 2]
-					["classes"] = { 2 },	-- Paladin Only
-					["races"] = { 1, 3 },	-- Human/Dwarf
 					["coord"] = { 52.6, 36.8, DUN_MOROGH },
 					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
 						i(6953),	-- Verigan's Fist

@@ -506,9 +506,9 @@ _.Zones =
 				q(2998, { -- The Tome of Divinity
 					["qg"] = 927, -- Brother Wilhelm
 					["altQuests"] = {
-						3681, -- The Tome of Divinity
+						3681,	-- The Tome of Divinity
+						1787,	-- The Tome of Divinity (8)
 					},
-					["description"] = "This quest is an alternative quest to Quest #3681.",
 					["races"] = { 1 }, -- Human
 					["classes"] = { 2 }, -- Paladin
 					["lvl"] = 12,
@@ -516,9 +516,9 @@ _.Zones =
 				q(1787, { -- The Tome of Divinity (8)
 					["qg"] = 6172, -- Henze Faulk
 					["sourceQuest"] = 1786, -- The Tome of Divinity (7)
-					["races"] = { 1 }, -- Human
-					["classes"] = { 2 }, -- Paladin
 					["cr"] = 474,	-- Defias Rogue Wizard
+					["races"] = { HUMAN },
+					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 6846, 1 },	-- Defias Script
 					},

@@ -59,6 +59,18 @@ _.Zones =
 						i(3344),	-- Captain Sander's Sash
 					},
 				}),
+				q(3861, {	-- CLUCK!
+					["qg"] = 620,	-- Chicken
+					["description"] = "Simply target any Chicken and spam /chicken at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
+					["maps"] = { TIRISFALL_GLADES, DUSKWOOD, ELWYNN_FOREST, DUSTWALLOW_MARSH, WESTFALL, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11109, 1 },	-- Special Chicken Feed
+					},
+					["groups"] = {
+						i(11110),	-- Chicken Egg
+					},
+				}),
 				q(6281, {	-- Continue to Stormwind
 					["qg"] = 523,	-- Thor
 					["sourceQuest"] = 6181,	-- A Swift Message
