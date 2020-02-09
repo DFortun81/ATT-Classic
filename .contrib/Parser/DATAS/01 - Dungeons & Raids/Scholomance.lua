@@ -542,7 +542,6 @@ _.Instances = {
 			}),
 			n(14516, {	-- Death Knight Darkreaver
 				["description"] = "Part of the Paladin's Epic Mount quest chain.",
-				["u"] = 3,	-- Not Yet Available
 				["groups"] = {
 					{
 						["itemID"] = 18749,	-- Charger's Lost Soul
@@ -558,6 +557,7 @@ _.Instances = {
 						["itemID"] = 18880,	-- Charger's Redeemed Soul
 						["questID"] = 8258,	-- The Darkreaver Menace
 						["classes"] = { 7 },	-- Shaman Only
+						["u"] = 3,	-- Not available yet.
 						["races"] = HORDE_ONLY,
 					},
 					i(18759),	-- Malicious Axe

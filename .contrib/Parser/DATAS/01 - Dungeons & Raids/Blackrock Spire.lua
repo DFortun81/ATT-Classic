@@ -160,7 +160,6 @@ _.Instances = {
 					["qg"] = 10460,	-- Prospector Ironboot
 					["coord"] = { 66.8, 24.0, TANARIS },
 					["maps"] = { TANARIS },
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["groups"] = {
 						i(20218),	-- Faded Hakkari Cloak

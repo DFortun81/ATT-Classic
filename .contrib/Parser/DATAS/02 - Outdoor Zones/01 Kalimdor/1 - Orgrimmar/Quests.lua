@@ -754,23 +754,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 14392,	-- Overlord Runthak
 				}),
-				q(7784, {	-- The Lord of Blackrock
-					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4949,	-- Thrall
-					["coord"] = { 31.73, 37.81, ORGRIMMAR },
-					["u"] = 3,	-- Added in later phase (Phase 3)
-					["g"] = {
-						i(19383),	-- Master Dragonslayer's Medallion
-						i(19366),	-- Master Dragonslayer's Orb
-						i(19384),	-- Master Dragonslayer's Ring
-					},
-				}),
-				q(7783, {	-- The Lord of Blackrock
-					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase
-				}),
 				q(1018, {	-- The New Frontier
 					["lvl"] = 54,
 					["races"] = HORDE_ONLY,

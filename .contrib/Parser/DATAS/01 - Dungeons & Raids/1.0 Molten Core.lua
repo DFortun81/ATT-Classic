@@ -42,7 +42,6 @@ _.Instances = {
 					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase (Phase 3)
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
@@ -62,7 +61,6 @@ _.Instances = {
 					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase (Phase 3)
 					["groups"] = {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
@@ -89,7 +87,6 @@ _.Instances = {
 					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
 					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase (Phase 3)
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
