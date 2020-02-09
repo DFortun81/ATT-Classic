@@ -9,12 +9,19 @@ _.Instances = {
 		["lvl"] = 19,
 		["groups"] = {
 			n(-17, {	-- Quests
-				q(6565, {	-- Allegiance to the Old Gods
-					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods
+				q(6564, {	-- Allegiance to the Old Gods (1/2)
+					["provider"] = { "i", 16790 },	-- Damp Note
+					["maps"] = { ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 17,
+				}),
+				q(6565, {	-- Allegiance to the Old Gods (2/2)
+					["sourceQuest"] = 6564,	-- Allegiance to the Old Gods (1/2)
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cr"] = 12902,	-- Lorgus Jett
 					["lvl"] = 17,
 					["groups"] = {
 						i(17695),	-- Chestnut Mantle
@@ -22,20 +29,23 @@ _.Instances = {
 					},
 				}),
 				q(6921, {	-- Amongst the Ruins
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["altQuests"] = {
 						908,	-- Amongst the Ruins
 					},
-					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16762, 1 },	-- Fathom Core
+					},
 					["lvl"] = 21,
 				}),
 				q(6922, {	-- Baron Aquanis
+					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["altQuests"] = {
 						909,	-- Baron Aquanis [Original?]
 					},
-					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
 					["groups"] = {
@@ -46,8 +56,11 @@ _.Instances = {
 				{
 					["allianceQuestID"] = 1200,	-- Blackfathom Villainy
 					["hordeQuestID"] = 6561,	-- Blackfathom Villainy
-					["sourceQuest"] = 1198,	-- In Search of Thaelrid
 					["qg"] = 4787,	-- Argent Guard Thaelrid <The Argent Dawn>
+					["sourceQuest"] = 1198,	-- In Search of Thaelrid
+					["cost"] = {
+						{ "i", 5881, 1 },	-- Head of Kelris
+					},
 					["lvl"] = 18,
 					["groups"] = {
 						i(7002),	-- Arctic Buckler
@@ -69,6 +82,9 @@ _.Instances = {
 					["coord"] = { 50.8, 5.6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5359, 1 },	-- Lorgalis Manuscript
+					},
 					["lvl"] = 10,
 					["groups"] = {
 						i(6743),	-- Sustaining Ring
@@ -79,6 +95,9 @@ _.Instances = {
 					["coord"] = { 38.3, 43.0, DARKSHORE },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5952, 8 },	-- Corrupted Brain Stem
+					},
 					["lvl"] = 18,
 					["groups"] = {
 						i(7003),	-- Beetle Clasps
@@ -86,23 +105,15 @@ _.Instances = {
 					},
 				}),
 				q(6563, {	-- The Essence of Aku'Mai
-					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["sourceQuest"] = 6562,	-- Trouble in the Deeps
 					["coord"] = { 11.6, 34.3, ASHENVALE },
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 17,
-				}),
-				q(968, { -- The Powers Below
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["provider"] = { "i", 5352 },	-- Book: The Powers Below
-					["maps"] = { DARKSHORE },
-					["crs"] = {
-						2339, -- Twilight Thug
-						2338, -- Twilight Disciple
+					["cost"] = {
+						{ "i", 16784, 20 },	-- Sapphire of Aku'Mai
 					},
+					["lvl"] = 17,
 				}),
 				q(6562, {	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
@@ -117,6 +128,9 @@ _.Instances = {
 					["coord"] = { 38.3, 43.0, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5879, 10 },	-- Twilight Pendant
+					},
 					["lvl"] = 20,
 					["groups"] = {
 						i(7000),	-- Heartwood Girdle
@@ -145,7 +159,21 @@ _.Instances = {
 						4813,	-- Twilight Shadowmage
 					},
 				}),
-				i(5952),	-- Corrupted Brain Stem
+				i(5952, {	-- Corrupted Brain Stem
+					["questID"] = 1275,	-- Researching the Corruption
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						4807,	-- Blackfathom Myrmidon
+						4803,	-- Blackfathom Oracle
+						4805,	-- Blackfathom Sea Witch
+						4802,	-- Blackfathom Tide Priestess
+						4799,	-- Fallenroot Hellcaller
+						4789,	-- Fallenroot Rogue
+						4788,	-- Fallenroot Satyr
+						4798,	-- Fallenroot Shadowstalker
+						4831,	-- Lady Sarevess
+					},
+				}),
 				i(3414, {	-- Crested Scepter
 					["crs"] = {
 						4978,	-- Aku'mai Servant
@@ -167,18 +195,9 @@ _.Instances = {
 					},
 				}),
 				i(16790, {	-- Damp Note
-					["crs"] = { 4802 },	-- Blackfathom Tide Priestess
-					["coord"] = { 14.0, 11.1, ASHENVALE },
+					["questID"] = 6564,	-- Allegiance to the Old Gods (1/2)
+					["cr"] = 4802,	-- Blackfathom Tide Priestess
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						{
-							["questID"] = 6564,	-- Allegiance to the Old Gods
-							["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-							["coord"] = { 11.6, 34.3, ASHENVALE },
-							["maps"] = { ASHENVALE },
-							["races"] = HORDE_ONLY,
-						},
-					},
 				}),
 				i(3413, {	-- Doomspike
 					["crs"] = {
@@ -262,6 +281,8 @@ _.Instances = {
 				}),
 				i(5359, {	-- Lorgalis Manuscript
 					["description"] = "Guarded by a few Naga in the underwater room directly to the right of Ghamoo-ra.",
+					["questID"] = 971,	-- Knowledge in the Deeps
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(3416, {	-- Martyr's Chain
 					["crs"] = {
@@ -350,9 +371,9 @@ _.Instances = {
 					},
 				}),
 				i(6914, {	-- Soran'ruk Fragment
-					["crs"] = {
-						4809,	-- Twilight Acolyte
-					},
+					["questID"] = 1740,	-- The Orb of Soran'ruk
+					["classes"] = { WARLOCK },
+					["cr"] = 4809,	-- Twilight Acolyte
 				}),
 				i(2271, {	-- Staff of the Blessed Seer
 					["crs"] = {
@@ -444,6 +465,8 @@ _.Instances = {
 					},
 				}),
 				i(5879, {	-- Twilight Pendant
+					["questID"] = 1199,	-- Twilight Falls
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						4809,	-- Twilight Acolyte
 						4811,	-- Twilight Aquamancer
@@ -472,7 +495,11 @@ _.Instances = {
 				["sourceQuest"] = 6921,	-- Amongst the Ruins
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					i(16762),	-- Fathom Core
+					{
+						["itemID"] = 16762,	-- Fathom Core
+						["questID"] = 6921,	-- Amongst the Ruins
+						["races"] = HORDE_ONLY,
+					},
 					n(12876, {	-- Baron Aquanis
 						["description"] = "This boss can only be summoned by Horde players on the Amongst the Ruins quest.",
 						["races"] = HORDE_ONLY,
@@ -494,7 +521,11 @@ _.Instances = {
 				i(6901),	-- Glowing Thresher Cape
 			}),
 			n(4832, {	-- Twilight Lord Kelris
-				i(5881),	-- Head of Kelris
+				{
+					["itemID"] = 5881,	-- Head of Kelris
+					["allianceQuestID"] = 1200,	-- Blackfathom Villainy
+					["hordeQuestID"] = 6561,	-- Blackfathom Villainy
+				},
 				i(1155),	-- Rod of the Sleepwalker
 				i(6903),	-- Gaze Dreamer Pants
 			}),

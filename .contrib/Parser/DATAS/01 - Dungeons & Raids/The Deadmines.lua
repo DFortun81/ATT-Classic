@@ -14,6 +14,9 @@ _.Instances = {
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1894, 4 },	-- Miners' Union Card
+					},
 					["groups"] = {
 						i(2036),	-- Dusty Mining Gloves
 						i(2037),	-- Tunneler's Boots
@@ -24,6 +27,9 @@ _.Instances = {
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1875, 1 },	-- Thistlenettle's Badge
+					},
 					["groups"] = {
 						i(1893),	-- Miner's Revenge
 					},
@@ -58,12 +64,22 @@ _.Instances = {
 						i(2041),		-- Tunic of Westfall
 					},
 				}),
+				q(373, {	-- The Unsent Letter
+					["provider"] = { "i", 2874 },	-- An Unsent Letter
+					["description"] = "Drops from VanCleef. Deliver it to Baros Alexston in Stormwind City.",
+					["qg"] = 1646,	-- Baros Alexston <City Architect>
+					["coord"] = { 49.2, 30.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+				}),
 				q(2040, {	-- Underground Assault
 					["qg"] = 6579,	-- Shoni the Shilent
 					["sourceQuest"] = 2041,	-- Speak with Shoni
 					["coord"] = { 55.5, 12.5, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7365, 1 },	-- Gnoam Sprecklesprocket
+					},
 					["groups"] = {
 						i(7607),		-- Sable Wand
 						i(7606),		-- Polar Gauntlets
@@ -103,6 +119,15 @@ _.Instances = {
 				}),
 				i(1944, {	-- Metalworking Gloves
 					["cr"] = 1731,	-- Goblin Craftsman
+				}),
+				i(1894, {	-- Miners' Union Card
+					["questID"] = 168,	-- Collecting Memories
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						623,	-- Skeletal Miner
+						625,	-- Undead Dynamiter
+						624,	-- Undead Excavator
+					},
 				}),
 				i(8492, {	-- Parrot Cage
 					["cr"] = 657,	-- Defias Pirate
@@ -154,7 +179,11 @@ _.Instances = {
 				["description"] = "This is a rare that is not always present.\n\nLocated in the cavern before the instance.",
 				["coord"] = { 42.2, 82.6, 1436 },	-- The Deadmines, Westfall
 				["groups"] = {
-					i(1875), 	-- Thistlenettle's Badge
+					{
+						["itemID"] = 1875,	-- Thistlenettle's Badge
+						["questID"] = 167,	-- Oh Brother. . .
+						["races"] = ALLIANCE_ONLY,
+					},
 					i(2167), 	-- Foreman's Gloves
 					i(2166), 	-- Foreman's Leggings
 					i(2168), 	-- Foreman's Boots
@@ -174,7 +203,11 @@ _.Instances = {
 				},
 			}),
 			n(642, {	-- Sneed's Shredder <Lumbermaster>
-				i(7365),	-- Gnoam Sprecklesprocket
+				{
+					["itemID"] = 7365,	-- Gnoam Sprecklesprocket
+					["questID"] = 2040,	-- Underground Assault
+					["races"] = ALLIANCE_ONLY,
+				},
 				i(2169),	-- Buzzer Blade
 				i(1937),	-- Buzz Saw
 			}),
@@ -199,16 +232,14 @@ _.Instances = {
 			n(639, {	-- Edwin VanCleef <Defias Kingpin>
 				{
 					["itemID"] = 2874,	-- An Unsent Letter
-					["groups"] = {
-						{
-							["questID"] = 373,	-- The Unsent Letter
-							["races"] = ALLIANCE_ONLY,
-							["qg"] = 1646,	-- Baros Alexston <City Architect>
-							["coord"] = { 49.2, 30.0, STORMWIND_CITY },
-						}
-					},
+					["questID"] = 373,	-- The Unsent Letter
+					["races"] = ALLIANCE_ONLY,
 				},
-				i(3637),	-- Head of VanCleef
+				{
+					["itemID"] = 3637,	-- Head of VanCleef
+					["questID"] = 166,	-- The Defias Brotherhood (7/7)
+					["races"] = ALLIANCE_ONLY,
+				},
 				i(5191),	-- Cruel Barb
 				i(5193),	-- Cape of the Brotherhood
 				i(10399),	-- Blackened Defias Armor

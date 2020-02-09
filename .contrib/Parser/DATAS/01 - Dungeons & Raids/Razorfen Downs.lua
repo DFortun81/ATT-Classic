@@ -15,11 +15,36 @@ _.Instances = {
 					["maps"] = { THE_BARRENS },
 					["lvl"] = 28,
 				}),
+				q(6521, {	-- An Unholy Alliance
+					["sourceQuest"] = 6522,	-- An Unholy Alliance
+					["qg"] = 2425,	-- Varimathras
+					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["maps"] = { THE_BARRENS, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 17009, 1 },	-- Ambassador Malcin's Head
+					},	
+					["lvl"] = 28,
+					["groups"] = {
+						{
+							["itemID"] = 17009,	-- Ambassador Malcin's Head
+							["questID"] = 6521,	-- An Unholy Alliance
+							["cr"] = 12865,	-- Ambassador Malcin
+							["coord"] = { 48.6, 95.6, THE_BARRENS },
+						},
+						i(17039),	-- Skullbreaker
+						i(17042),	-- Nail Spitter
+						i(17043),	-- Zealot's Robe
+					},
+				}),
 				q(3341, {	-- Bring the End
 					["qg"] = 2308,	-- Andrew Brownell
 					["coord"] = { 74, 32.8, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 10420, 1 },	-- Skull of the Coldbringer
+					},
 					["lvl"] = 37,
 					["groups"] = {
 						i(10823),	-- Vanquisher's Sword
@@ -49,6 +74,9 @@ _.Instances = {
 				q(3523, {	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 10682, 1 },	-- Belnistrasz's Oathstone
+					},
 					["lvl"] = 32,
 				}),
 			}),

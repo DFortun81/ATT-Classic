@@ -11,9 +11,12 @@ _.Instances = {
 			n(-17, { 		-- Quests
 				q(1014, {	-- Arugal Must Die
 					["qg"] = 1938,	-- Dalar Dawnweaver
-					["races"] = HORDE_ONLY,
 					["coord"] = { 44.2, 39.8, SILVERPINE_FOREST },
 					["maps"] = { SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5442, 1 },	-- Head of Arugal
+					},
 					["lvl"] = 18,
 					["g"] = {
 						i(6414),	-- Seal of Sylvanas
@@ -21,9 +24,9 @@ _.Instances = {
 				}),
 				q(1098, {	-- Deathstalkers in Shadowfang
 					["qg"] = 1952,	-- High Executor Hadrec
-					["races"] = HORDE_ONLY,
 					["coord"] = { 43.4, 40.8, SILVERPINE_FOREST },
 					["maps"] = { SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 18,
 					["g"] = {
 						i(3324),	-- Ghostly Mantle
@@ -31,24 +34,17 @@ _.Instances = {
 				}),
 				q(1013, {	-- The Book of Ur
 					["qg"]	= 2934,	-- Keeper Bel'dugur
-					["races"] = HORDE_ONLY,
 					["coord"] = { 54, 54.6, UNDERCITY },
+					["description"] = "Can be found on a bookshelf in the circular room with Fenrus.",
 					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6283, 1 },	-- The Book of Ur
+					},
 					["lvl"] = 16,
 					["g"] = {
 						i(4534),	-- Steel-Clasped Bracers
 						i(6335),	-- Grizzled Boots
-					},
-				}),
-				q(1740, {	-- The Orb of Soran'ruk
-					["qg"] = 6247,	-- Doan Karhan
-					["classes"] = { 9 },
-					["coord"] = { 49.2, 57.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["lvl"] = 20,
-					["g"] = {
-						i(6898),	-- Orb of Soran'ruk
-						i(15109),	-- Staff of Soran'ruk
 					},
 				}),
 				q(1794, {	-- The Tome of Valor [Dwarf]
@@ -157,6 +153,11 @@ _.Instances = {
 				i(1483),	-- Face Smasher
 				i(1489),	-- Gloomshroud Armor
 				i(2807),	-- Guillotine Axe
+				i(6915, {	-- Large Soran'ruk Fragment
+					["questID"] = 1740,	-- The Orb of Soran'ruk
+					["classes"] = { WARLOCK },
+					["cr"] = 3855,	-- Shadowfang Darksoul
+				}),
 				i(1974),	-- Mindthrust Bracers
 				i(2292),	-- Necrology Robes
 				i(1318),	-- Night Reaver
@@ -214,7 +215,11 @@ _.Instances = {
 				i(6314),	-- Wolfmaster Cape
 			}),
 			n(4275, {	-- Archmage Arugal
-				i(5442),	-- Head of Arugal
+				{
+					["itemID"] = 5442,	-- Head of Arugal
+					["questID"] = 1014,	-- Arugal Must Die
+					["races"] = HORDE_ONLY,
+				},
 				i(6220),	-- Meteor Shard
 				i(6324), 	-- Robes of Arugal
 				i(6392),	-- Belt of Arugal

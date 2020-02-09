@@ -28,6 +28,9 @@ _.Instances = {
 						["qg"] = 5767,	-- Nalpak <Disciple of Naralex>
 						["coord"] = { 46.0, 35.7, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
+						["cost"] = {
+							{ "i", 6443, 20 },	-- Deviate Hide
+						},
 						["lvl"] = 13,
 						["g"] = {
 							i(6480),	-- Slick Deviate Leggings
@@ -36,8 +39,8 @@ _.Instances = {
 					},
 					{
 						["questID"] = 1489,	-- Hamuul Runetotem
-						["sourceQuest"] = 880,	-- Altered Beings
 						["qg"] = 3448,	-- Tonga Runetotem
+						["sourceQuest"] = 880,	-- Altered Beings
 						["coord"] = { 52.3, 31.9, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
 						["races"] = HORDE_ONLY,
@@ -46,8 +49,8 @@ _.Instances = {
 					{
 						["allianceQuestID"] = 3370,	-- In Nightmares
 						["hordeQuestID"] = 3369,	-- In Nightmares
-						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["qg"] = 8418,	-- Falla Sagewind
+						["sourceQuest"] = 6981,	-- The Glowing Shard
 						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
@@ -59,14 +62,20 @@ _.Instances = {
 					},
 					{
 						["questID"] = 914,	-- Leaders of the Fang
-						["sourceQuest"] = 1490,	-- Nara Wildmane
 						["qg"] = 5770,	-- Nara Wildmane
+						["sourceQuest"] = 1490,	-- Nara Wildmane
 						["coords"] = {
 							{ 45.2, 23.3, MULGORE },
 							{ 75, 31, THUNDER_BLUFF },
 						},
 						["maps"] = { MULGORE, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 9739, 1 },	-- Gem of Anacondra
+							{ "i", 9738, 1 },	-- Gem of Cobrahn
+							{ "i", 9740, 1 },	-- Gem of Pythas
+							{ "i", 9741, 1 },	-- Gem of Serpentis
+						},
 						["lvl"] = 10,
 						["g"] = {
 							i(6505),	-- Crescent Staff
@@ -91,6 +100,9 @@ _.Instances = {
 						["coord"] = { 34.4, 21.1, MULGORE },
 						["maps"] = { MULGORE, THUNDER_BLUFF },
 						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 5339, 10 },	-- Serpentbloom
+						},
 						["lvl"] = 14,
 						["groups"] = {
 							i(10919),	-- Apothecary Gloves
@@ -102,18 +114,28 @@ _.Instances = {
 						["qg"] = 3446,	-- Mebok Mizzyrix
 						["coord"] = { 62.4, 37.6, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
+						["cost"] = {
+							{ "i", 6464, 6 },	-- Wailing Essence
+						},
 						["lvl"] = 13,
 					},
 					{
 						["questID"] = 959,	-- Trouble at the Docks
 						["qg"] = 3665,	-- Crane Operator Bigglefuzz
-						["coords"] = {
-							{ 63.1, 37.6, THE_BARRENS },
-							{ 45.7, 33.6, THE_BARRENS },
-						},
+						["coord"] = { 63.1, 37.6, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
-						["crs"] = { 3655 },	-- Mad Magglish
+						["cost"] = {
+							{ "i", 5334, 1 },	-- 99-Year-Old Port
+						},
 						["lvl"] = 14,
+						["groups"] = {
+							{
+								["itemID"] = 5334,	-- 99-Year-Old Port
+								["questID"] = 959,	-- Trouble at the Docks
+								["cr"] = 3655,	-- Mad Magglish
+								["coord"] = { 45, 35.2, THE_BARRENS },
+							},
+						},
 					},
 				},
 			}),
@@ -128,14 +150,27 @@ _.Instances = {
 				}),
 			}),
 			n(0, {	-- Zone Drop
+				i(6443, {	-- Deviate Hide
+					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
+					["questID"] = 1486,	-- Deviate Hides
+				}),
 				i(10413, {	-- Gloves of the Fang
+					["cr"] = 3840,	-- Druid of the Fang
+				}),
+				i(6464, {	-- Wailing Essence
+					["questID"] = 1491,	-- Smart Drinks
 					["crs"] = {
-						3840,	-- Druid of the Fang
+						3638,	-- Devouring Ectoplasm
+						3640,	-- Evolving Ectoplasm
+						5763,	-- Nightmare Ectoplasm
 					},
 				}),
 			}),
 			n(3671, { 	-- Lady Anacondra
-				i(9739),	-- Gem of Anacondra
+				{
+					["itemID"] = 9739,	-- Gem of Anacondra
+					["questID"] = 914,	-- Leaders of the Fang
+				},
 				i(5404), 	-- Serpent's Shoulders
 				i(10412), 	-- Belt of the Fang
 				i(6446),	-- Snakeskin Bag
@@ -145,12 +180,18 @@ _.Instances = {
 				i(6447), 	-- Worn Turtle Shell Shield
 			}),
 			n(3670, { 	-- Lord Pythas
-				i(9740),	-- Gem of Pythas
+				{
+					["itemID"] = 9740,	-- Gem of Pythas
+					["questID"] = 914,	-- Leaders of the Fang
+				},
 				i(6472), 	-- Stinging Viper
 				i(6473), 	-- Armor of the Fang
 			}),
 			n(3669, { 	-- Lord Cobrahn
-				i(9738),	-- Gem of Cobrahn
+				{
+					["itemID"] = 9738,	-- Gem of Cobrahn
+					["questID"] = 914,	-- Leaders of the Fang
+				},
 				i(6465), 	-- Robe of the Moccasin
 				i(6460), 	-- Cobrahn's Grasp
 				i(10410), 	-- Leggings of the Fang
@@ -167,7 +208,10 @@ _.Instances = {
 				},
 			}),
 			n(3673, { 	-- Lord Serpentis
-				i(9741),	-- Gem of Serpentis
+				{
+					["itemID"] = 9741,	-- Gem of Serpentis
+					["questID"] = 914,	-- Leaders of the Fang
+				},
 				i(6469), 	-- Venomstrike
 				i(5970), 	-- Serpent Gloves
 				i(10411), 	-- Footpads of the Fang

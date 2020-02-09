@@ -14,6 +14,9 @@ _.Instances = {
 					["coord"] = { 37.1, 29.0, MULGORE },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5793, 1 },	-- Razorflank's Heart
+					},
 					["lvl"] = 29,
 					["groups"] = {
 						i(6725),	-- Marbled Buckler
@@ -22,56 +25,45 @@ _.Instances = {
 					},
 				}),
 				q(6522, {	-- An Unholy Alliance
-					["coord"] = { 56.3, 92.2, UNDERCITY },
+					["provider"] = { "i", 17008 },	-- Small Scroll
 					["maps"] = { UNDERCITY },
-					["qg"] = 2425,	-- Varimathras
 					["races"] = HORDE_ONLY,
 					["lvl"] = 28,
-				}),
-				q(6521, {	-- An Unholy Alliance
-					["sourceQuest"] = 6522,	-- An Unholy Alliance
-					["coord"] = { 56.3, 92.2, UNDERCITY },
-					["maps"] = { UNDERCITY },
-					["qg"] = 2425,	-- Varimathras
-					["races"] = HORDE_ONLY,
-					["lvl"] = 28,
-					["groups"] = {
-						n(12865, {	-- Ambassador Malcin
-							["coord"] = { 48.6, 95.6, THE_BARRENS },
-							["groups"] = {
-								i(17009),	-- Ambassador Malcin's Head
-							},
-						}),
-						i(17039),	-- Skullbreaker
-						i(17042),	-- Nail Spitter
-						i(17043),	-- Zealot's Robe
-					},
 				}),
 				q(1221, {	-- Blueleaf Tubers
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.4, 37.6, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
+					["cost"] = {
+						{ "i", 5880, 1 },	-- Crate With Holes
+						{ "i", 5897, 1 },	-- Snufflenose Owner's Manual
+						{ "i", 6684, 1 },	-- Snufflenose Command Stick
+						{ "i", 5876, 6 },	-- Blueleaf Tuber
+					},
 					["lvl"] = 20,
 					["groups"] = {
-						i(5880),	-- Crate With Holes
-						i(5897),	-- Snufflenose Owner's Manual
-						i(6684),	-- Snufflenose Command Stick
 						i(6755, {	-- A Small Container of Gems
 							i(6756),	-- Jewelry Box
 						}),
 					},
 				}),
 				q(1109, {	-- Going, Going, Guano!
+					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["coord"] = { 49.0, 69.8, UNDERCITY },
 					["maps"] = { UNDERCITY },
-					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5801, 1 },	-- Kraul Guano
+					},
 					["lvl"] = 30,
 				}),
 				q(1142, {	-- Mortality Wanes
 					["qg"] = 4510,	-- Heralath Fallowbrook
 					["coord"] = { 69.4, 67.6, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5825, 1 },	-- Treshala's Pendant
+					},
 					["lvl"] = 25,
 					["groups"] = {
 						i(6751),	-- Mourning Shawl
@@ -103,17 +95,31 @@ _.Instances = {
 				}),
 			}),
 			n(0, {	-- Zone Drop
-				{
-					["itemID"] = 5876,	-- Blueleaf Tuber
-					["description"] = "Acquired by using the Snufflenose Command Stick after releasing a gopher using the Crate With Holes.",
-					["races"] = HORDE_ONLY,
-				},
+				i(5880, {	-- Crate With Holes
+					["cr"] = 4781,	-- Snufflenose Gopher
+					["cost"] = {
+						{ "i", 6684, 1 },	-- Snufflenose Command Stick
+					},
+					["groups"] = {
+						{
+							["itemID"] = 5876,	-- Blueleaf Tuber
+							["questID"] = 1221,	-- Blueleaf Tubers
+						},
+					},
+				}),
 				{
 					["itemID"] = 5801,	-- Kraul Guano
+					["questID"] = 1109,	-- Going, Going, Guano!
 					["races"] = HORDE_ONLY,
+					["crs"] = {
+						4539,	-- Greater Kraul Bat
+						4538,	-- Kraul Bat
+					},
 				},
 				{
 					["itemID"] = 5825,	-- Treshala's Pendant
+					["questID"] = 1142,	-- Mortality Wanes
+					["description"] = "Drops from any mob in the Kraul.",
 					["races"] = ALLIANCE_ONLY,
 				},
 				i(1488),	-- Avenger's Armor
@@ -127,7 +133,7 @@ _.Instances = {
 				i(776),		-- Vendetta
 				i(1978),	-- Wolfclaw Gloves
 				i(3569, {	-- Vicar's Robe
-					["crs"] = { 4517 },	-- Death's Head Priest
+					["cr"] = 4517,	-- Death's Head Priest
 				}),
 			}),
 			n(6168, {	-- Roogug
@@ -176,7 +182,11 @@ _.Instances = {
 				i(6690),	-- Ferine Leggings
 			}),
 			n(4421, {
-				i(5793),	-- Razorflank's Heart
+				{
+					["itemID"] = 5793,	-- Razorflank's Heart
+					["questID"] = 1102,	-- A Vengeful Fate
+					["races"] = HORDE_ONLY,
+				},
 				{
 					["itemID"] = 5792,	-- Razorflank's Medallion
 					["questID"] = 1101,	-- The Crone of the Kraul

@@ -907,6 +907,21 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
+				q(1740, {	-- The Orb of Soran'ruk
+					["qg"] = 6247,	-- Doan Karhan
+					["coord"] = { 49.2, 57.2, THE_BARRENS },
+					["maps"] = { BLACKFATHOM_DEEPS, SHADOWFANG_KEEP },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6914, 3 },	-- Soran'ruk Fragment
+						{ "i", 6915, 1 },	-- Large Soran'ruk Fragment
+					},
+					["lvl"] = 20,
+					["g"] = {
+						i(6898),	-- Orb of Soran'ruk
+						i(15109),	-- Staff of Soran'ruk
+					},
+				}),
 				q(3513, {	-- The Runed Scroll
 					["cr"] = 5797,	-- Aean Swiftriver
 					["provider"] = { "i", 10621 },

@@ -38,6 +38,9 @@ _.Instances = {
 					["coord"] = { 70.2, 48.4, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9316, 1 },	-- Prismatic Punch Card
+					},
 					["lvl"] = 25,
 					["groups"] = {
 						i(9604),	-- Mechanic's Pipehammer
@@ -50,6 +53,9 @@ _.Instances = {
 					["coord"] = { 68.2, 46.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9278, 12 },	-- Essential Artificial
+					},
 					["lvl"] = 24,
 				}),
 				q(2926, { 	-- Gnogaine
@@ -58,6 +64,10 @@ _.Instances = {
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9283, 1 },	-- Empty Leaden Collection Phial
+						{ "i", 9284, 1 },	-- Full Leaden Collection Phial
+					},
 					["lvl"] = 20,
 				}),
 				q(2948, {	-- Gnome Improvement
@@ -66,13 +76,13 @@ _.Instances = {
 					["coord"] = { 36.2, 3.8, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"]	= 28,
 					["cost"] = {
 						{ "i", 9362, 1 },	-- Brilliant Gold Ring
 						{ "i", 2842, 1 },	-- Silver Bar
 						{ "i", 1206, 1 },	-- Moss Agate
 						{ "g", 3000 },	-- 30s
 					},
+					["lvl"]	= 28,
 					["groups"] = {
 						i(9538),	-- Talvash's Gold Ring
 					},
@@ -97,6 +107,9 @@ _.Instances = {
 					["coord"] = { 55.6, 12.8, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9309, 24 },	-- Robo-mechanical Guts
+					},
 					["lvl"] = 20,
 					["groups"] = {
 						i(9608),	-- Shoni's Disarming Tool
@@ -105,10 +118,10 @@ _.Instances = {
 				}),
 				q(2925, {	-- Klockmort's Essentials
 					["qg"] = 6142,	-- Mathiel
-					["isBreadcrumb"] = true,
 					["coord"] = { 59.2, 45.2, DARNASSUS },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 24,
 				}),
 				q(2950, {	-- Nogg's Ring Redo
@@ -138,6 +151,10 @@ _.Instances = {
 					["coord"] = { 75.8, 25.2, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 9153, 1 },	-- Rig Blueprints
+						{ "i", 9299, 1 },	-- Thermaplugg's Safe Combination
+					},
 					["lvl"]	= 25,
 					["groups"] = {
 						i(9623),	-- Civinad Robes
@@ -146,11 +163,14 @@ _.Instances = {
 					},
 				}),
 				q(2922, {	-- Save Techbot's Brain!
-					["sourceQuest"] = 2923,	-- Tinkmaster Overspark
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["sourceQuest"] = 2923,	-- Tinkmaster Overspark
 					["coord"] = { 70.4, 49.4, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9277, 1 },	-- Techbot's Memory Core
+					},
 					["lvl"] = 20,
 				}),
 				q(2927, {	-- The Day After
@@ -178,6 +198,10 @@ _.Instances = {
 					["coord"] = { 45.8, 49.2, DUN_MOROGH },
 					["maps"] = { DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9364, 1 },	-- Heavy Leaden Collection Phial
+						{ "i", 9365, 1 },	-- High Potency Radioactive Fallout
+					},
 					["lvl"] = 20,
 				}),
 				o(142487, {	-- The Sparklematic 5200
@@ -187,7 +211,6 @@ _.Instances = {
 						i(9363, {	-- Sparklematic-Wrapped Box
 							["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
 							["groups"] = {
-								i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 								i(10299),	-- Gnomeregan Amulet
 								i(10298),	-- Gnomeregan Band
 							},
@@ -224,7 +247,6 @@ _.Instances = {
 						i(9363, {	-- Sparklematic-Wrapped Box
 							["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
 							["groups"] = {
-								i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 								i(10299),	-- Gnomeregan Amulet
 								i(10298),	-- Gnomeregan Band
 							},
@@ -258,7 +280,6 @@ _.Instances = {
 						i(9363, {	-- Sparklematic-Wrapped Box
 							["description"] = "Kill mobs for [Grime-Encrusted Object], clean them at the Sparklematic 5200.",
 							["groups"] = {
-								i(9280),	-- Yellow Punch Card (lets hunters tame a pet in Gnomeregan)
 								i(10299),	-- Gnomeregan Amulet
 								i(10298),	-- Gnomeregan Band
 							},
@@ -287,39 +308,64 @@ _.Instances = {
 				}),
 				q(2923, {	-- Tinkmaster Overspark
 					["qg"] = 7917,	-- Brother Sarno
-					["isBreadcrumb"] = true,
 					["coord"] = { 40.6, 30.0, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
 			}),
 			n(0, {	-- Zone Drop
-				{
-					["itemID"] = 9153,	-- Rig Blueprints
-					["description"] = "In a small chest behind the 3rd pillar from the right after defeating Thermaplugg.",
-					["races"] = HORDE_ONLY,
-				},
-				i(9309),	-- Robo-mechanical Guts
-				i(9281, {	-- Red Punch Card
-					["requireSkill"] = 202,	-- Engineering
+				i(9282, {	-- Blue Punch Card
+					["description"] = "Use this at the terminal closest to the dormitories.",
 					["groups"] = {
-						i(9327, {	-- Security DELTA Data Access Card
-							i(4413),  	-- Schematic: Discombobulator Ray
-						}),
+						i(9281),	-- Red Punch Card
+					},
+				}),
+				i(9278, {	-- Essential Artificial
+					["questID"] = 2924,	-- Essential Artificials
+					["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
+				}),
+				i(9309, {	-- Robo-mechanical Guts
+					["description"] = "These can drop from any mechanical unit in Gnomeregan.",
+					["questID"] = 2928,	-- Gyrodrillmatic Excavationators
+					["races"] = ALLIANCE_ONLY,
+				}),
+				i(9281, {	-- Red Punch Card
+					["description"] = "Use this at the terminal in the room with the Crowd Pummeller. You can also learn a schematic if you are an Engineer AND you have the Security DELTA Data Access Card.",
+					["groups"] = {
+						{
+							["itemID"] = 9327,	-- Security DELTA Data Access Card
+							["requireSkill"] = 202,	-- Engineering
+							["groups"] = {
+								i(4413),  	-- Schematic: Discombobulator Ray
+							},
+						},
+						{
+							["itemID"] = 9316,	-- Prismatic Punch Card
+							["questID"] = 2930,	-- Data Rescue
+							["races"] = ALLIANCE_ONLY,
+						},
 					},
 				}),
 				i(9280, {	-- Yellow Punch Card
-					["requireSkill"] = 202,  	-- Engineering
-					["description"] = "Head down to the Matrix Punchograph 3005-B and there you learn the schematic.",
+					["description"] = "Use this at the terminal closest to the dormitories. You can also learn a schematic if you are an Engineer.",
 					["groups"] = {
+						i(9282),	-- Blue Punch Card
 						i(14639),  	-- Schematic: Minor Recombobulator
 					},
 				}),
-				{
-					["itemID"] = 9277,	-- Techbot's Memory Core
-					["crs"] = { 6231 },	-- Techbot
-				},
+				i(9279, {	-- White Punch Card
+					["description"] = "Use this at the terminal outside of the instance to upgrade to a Yellow Punch Card.",
+					["groups"] = {
+						i(9280),	-- Yellow Punch Card
+					},
+				}),
+				i(9277, {	-- Techbot's Memory Core
+					["questID"] = 2922,	-- Save Techbot's Brain!
+					["races"] = ALLIANCE_ONLY,
+					["cr"] = 6231,	-- Techbot
+				}),
 				i(9308),	-- Grime-Encrusted Object
 				i(9510, {	-- Caverndeep Trudgers
 					["crs"] = {
@@ -497,7 +543,17 @@ _.Instances = {
 				},
 			}),
 			n(7800, {	-- Mekgineer Thermaplugg
-				i(9299),	-- Thermaplugg's Safe Combination
+				{
+					["itemID"] = 9153,	-- Rig Blueprints
+					["questID"] = 2841,	-- Rig Wars
+					["description"] = "In a small chest behind the 3rd pillar from the right after defeating Thermaplugg.",
+					["races"] = HORDE_ONLY,
+				},
+				{
+					["itemID"] = 9299,	-- Thermaplugg's Safe Combination
+					["questID"] = 2841,	-- Rig Wars
+					["races"] = HORDE_ONLY,
+				},
 				i(9459),	-- Thermaplugg's Left Arm
 				i(9458),	-- Thermaplugg's Central Core
 				i(9492),	-- Electromagnetic Gigaflux Reactivator

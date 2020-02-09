@@ -12,8 +12,11 @@ _.Instances = {
 				q(5726, {	-- Hidden Enemies [Pt 1]
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { DUROTAR, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 14544, 1 },	-- Lieutenant's Insignia
+					},
 					["lvl"] = 9,
 				}),
 				q(5727, {	-- Hidden Enemies [Pt 2]
@@ -58,6 +61,9 @@ _.Instances = {
 					["qg"] = 11834,	-- Maur Grimtotem
 					["sourceQuest"] = 5722,	-- Searching for the Lost Satchel
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 14381, 1 },	-- Grimtotem Satchel
+					},
 					["lvl"] = 9,
 					["groups"] = {
 						i(15452),	-- Featherbead Bracers
@@ -77,6 +83,9 @@ _.Instances = {
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 14540, 1 },	-- Taragaman the Hungerer's Heart
+					},
 					["lvl"] = 9,
 				}),
 				q(5723, {	-- Testing an Enemy's Strength
@@ -91,6 +100,10 @@ _.Instances = {
 					["coord"] = { 56.2, 91.8, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 14396, 1 },	-- Incantations from the Nether
+						{ "i", 14395, 1 },	-- Spells of Shadow
+					},
 					["lvl"] = 9,
 					["groups"] = {
 						i(15450),	-- Dredgemire Leggings
@@ -99,11 +112,38 @@ _.Instances = {
 					},
 				}),
 			}),
+			n(0, {	-- Zone Drop
+				i(14396, {	-- Incantations from the Nether
+					["questID"] = 5725,	-- The Power to Destroy...
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						11322,	-- Searing Blade Cultist
+						11324,	-- Searing Blade Warlock
+					},
+				}),
+				i(14395, {	-- Spells of Shadow
+					["questID"] = 5725,	-- The Power to Destroy...
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						11322,	-- Searing Blade Cultist
+						11324,	-- Searing Blade Warlock
+					},
+				}),
+			}),
 			n(11517, {	-- Oggleflint <Ragefire Chieftain>
-				i(2589),	-- Linen Cloth
+				{
+					["itemID"] = 14381,	-- Grimtotem Satchel
+					["questID"] = 5724,	-- Returning the Lost Satchel
+					["description"] = "Found on the tauren corpse in front of this boss.",
+					["races"] = HORDE_ONLY,
+				},
 			}),
 			n(11520, {	-- Taragaman the Hungerer
-				i(14540),	-- Taragaman the Hungerer's Heart
+				{
+					["itemID"] = 14540,	-- Taragaman the Hungerer's Heart
+					["questID"] = 5761,	-- Slaying the Beast
+					["races"] = HORDE_ONLY,
+				},
 				i(14145),	-- Cursed Felblade
 				i(14149),	-- Subterranean Cape
 				i(14148),	-- Crystalline Cuffs
