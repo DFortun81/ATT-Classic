@@ -78,6 +78,9 @@ _.Zones =
 					["sourceQuest"] = 292,	-- The Eye of Paleth
 					["coord"] = { 10.6, 60.5, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2944, 1 },	-- Cursed Eye of Paleth
+					},
 					["lvl"] = 22,
 					["g"] = {
 						i(2943),	-- Eye of Paleth
@@ -87,11 +90,15 @@ _.Zones =
 					["qg"] = 2093,	-- Einar Stonegrip
 					["coord"] = { 49.8, 39.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3347, 1 },	-- Bundle of Crocolisk Skins
+					},
 					["lvl"] = 18,
 				}),
 				q(474, {	-- Defeat Nek'rosh
 					["provider"] = { "o", 1609 },	-- Dragonmaw Catapult
 					["sourceQuest"] = 465,	-- Nek'rosh's Gambit
+					["coord"] = { 47.5, 46.9, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3625, 1 },	-- Nek'rosh's Head
@@ -155,7 +162,11 @@ _.Zones =
 				q(306, {	-- In Search of The Excavation Team (2/2)
 					["qg"] = 1076,	-- Merrin Rockweaver
 					["sourceQuest"] = 305,	-- In Search of The Excavation Team (1/2)
+					["coord"] = { 38.8, 52.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2639, 1 },	-- Merrin's Letter
+					},
 					["lvl"] = 21,
 				}),
 				q(1302, {	-- James Hyal
@@ -184,10 +195,19 @@ _.Zones =
 						},
 					},
 				}),
+				q(321, {	-- Lightforge Iron
+					["qg"] = 1217,	-- Glorin Steelbrow
+					["coord"] = { 10.6, 60.5, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
+					["g"] = {
+						i(2702),	-- Lightforge Ingot
+					},
+				}),
 				q(526, {	-- Lightforge Ingots
 					["qg"] = 1217,	-- Glorin Steelbrow
-					["altQuests"] = { 324 },	-- The Lost Ingots
 					["sourceQuest"] = 321,	-- Lightforge Iron
+					["altQuests"] = { 324 },	-- The Lost Ingots
 					["coord"] = { 10.6, 60.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -195,31 +215,33 @@ _.Zones =
 					},
 					["lvl"] = 20,
 				}),
-				q(647, {	-- MacKreel's Moonshine
-					["qg"] = 2696,	-- Foggy MacKreel
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 28,
-				}),
 				q(465, {	-- Nek'rosh's Gambit
 					["qg"] = 2104,	-- Captain Stoutfist
 					["sourceQuest"] = 464,	-- War Banners
+					["coord"] = { 9.8, 57.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3339, 1 },	-- Dwarven Tinder
+					},
 					["lvl"] = 23,
 				}),
 				q(294, {	-- Ormer's Revenge (1/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
+					["coord"] = { 38, 51.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(295, {	-- Ormer's Revenge (2/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 294,	-- Ormer's Revenge (1/3)
+					["coord"] = { 38, 51.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(296, {	-- Ormer's Revenge (3/3)
 					["qg"] = 1078,	-- Ormer Ironbraid
 					["sourceQuest"] = 295,	-- Ormer's Revenge (2/3)
+					["coord"] = { 38, 51.2, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3638, 1 },	-- Sarltooth's Talon
@@ -248,6 +270,7 @@ _.Zones =
 				q(281, {	-- Reclaiming Goods
 					["qg"] = 1242,	-- Karl Boran
 					["sourceQuest"] = 279,	-- Claws from the Deep
+					["coord"] = { 8.4, 58.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -266,6 +289,9 @@ _.Zones =
 					["sourceQuest"] = 285,	-- Search More Hovels
 					["coord"] = { 14.0, 34.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2625, 1 },	-- Menethil Statuette
+					},
 					["lvl"] = 20,
 					["g"] = {
 						i(2950),	-- Icicle Rod
@@ -273,19 +299,11 @@ _.Zones =
 					},
 				}),
 				q(285, {	-- Search More Hovels
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 284,	-- The Search Continues
 					["provider"] = { "o", 142151 },	-- Sealed Barrel
+					["sourceQuest"] = 284,	-- The Search Continues
 					["coord"] = { 13.6, 38.2, WETLANDS },
-				}),
-				q(637, {	-- Sully Balloo's Letter
-					["provider"] = { "i", 4433 },	-- Waterlogged Envelope
-					["cost"] = { { "i", 4432, 1 } },	-- Sully Balloo's Letter
-					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
-					["maps"] = { ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
+					["lvl"] = 20,
 				}),
 				q(943, {	-- The Absent Minded Prospector
 					["qg"] = 2911,	-- Archaeologist Flagongut
@@ -336,6 +354,9 @@ _.Zones =
 					["sourceQuest"] = 290,	-- Lifting the Curse
 					["coord"] = { 14.5, 24.0, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2944, 1 },	-- Cursed Eye of Paleth
+					},
 					["lvl"] = 22,
 					["g"] = {
 						i(2944),	-- Cursed Eye of Paleth
@@ -348,7 +369,18 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
-				q(1249, { -- The Missing Diplomat (11/17)
+				q(324, {	-- The Lost Ingots
+					["provider"] = { "o", 2734 },	-- Waterlogged Chest
+					["altQuests"] = { 526 },	-- Lightforge Ingots
+					["sourceQuest"] = 321,	-- Lightforge Iron
+					["coord"] = { 12.1, 64.1, WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2702, 5 },	-- Lightforge Ingot
+					},
+					["lvl"] = 20,
+				}),
+				q(1249, {	-- The Missing Diplomat (11/17)
 					["qg"] = 4963, -- Mikhail <Bartender>
 					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
@@ -356,7 +388,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
-				q(1250, { -- The Missing Diplomat (12/17)
+				q(1250, {	-- The Missing Diplomat (12/17)
 					["qg"] = 4962, -- Tapoke "Slim" Jahn
 					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
 					["coord"] = { 10.6, 60.3, WETLANDS },
@@ -364,7 +396,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
-				q(1264, { -- The Missing Diplomat (13/17)
+				q(1264, {	-- The Missing Diplomat (13/17)
 					["qg"] = 4963, -- Mikhail <Bartender>
 					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
@@ -378,9 +410,6 @@ _.Zones =
 					["coord"] = { 13.5, 41.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
-						i(422),	-- Dwarven Mild
-					},
 				}),
 				q(631, {	-- The Thandol Span (1/3)
 					["qg"] = 1075,	-- Rhag Garmason
@@ -392,6 +421,9 @@ _.Zones =
 					["provider"] = { "o", 2652 },	-- Ebenezer Rustlocke's Corpse
 					["sourceQuest"] = 631,	-- The Thandol Span (1/3)
 					["coord"] = { 51.3, 8.0, WETLANDS },
+					["cost"] = {
+						{ "i", 4429, 1 },	-- 	Deepfury's Orders
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -399,6 +431,7 @@ _.Zones =
 					["qg"] = 1075,	-- Rhag Garmason
 					["sourceQuest"] = 632,	-- The Thandol Span (2/3)
 					["coord"] = { 49.9, 18.2, WETLANDS },
+					["maps"] = { ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 					["g"] = {
@@ -410,6 +443,9 @@ _.Zones =
 					["qg"] = 1239,	-- First Mate Fitzsimmons
 					["coord"] = { 10.9, 59.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2594, 1 },	-- Flagon of Dwarven Honeymead
+					},
 					["lvl"] = 22,
 				}),
 				q(276, {	-- Tramping Paws
@@ -421,7 +457,15 @@ _.Zones =
 				}),
 				q(299, {	-- Uncovering the Past
 					["qg"] = 1077,	-- Prospector Whelgar
+					["coord"] = { 38.8, 52.2, WETLANDS },
+					["description"] = "The quest items spawn randomly in the dig site below.",
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2658, 1 },	-- Ados Fragment
+						{ "i", 2660, 1 },	-- Golm Fragment
+						{ "i", 2659, 1 },	-- Modr Fragment
+						{ "i", 2661, 1 },	-- Neru Fragment
+					},
 					["lvl"] = 25,
 					["g"] = {
 						i(2913),	-- Silk Mantle of Gamn
@@ -429,6 +473,8 @@ _.Zones =
 				}),
 				q(464, {	-- War Banners
 					["qg"] = 2104,	-- Captain Stoutfist
+					["sourceQuest"] = 473,	-- Report to Captain Stoutfist
+					["coord"] = { 9.8, 57.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3337, 8 },	-- Dragonmaw War Banner

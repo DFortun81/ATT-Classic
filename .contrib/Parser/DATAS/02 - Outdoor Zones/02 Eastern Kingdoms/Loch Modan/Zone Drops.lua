@@ -12,14 +12,44 @@ _.Zones =
 				i(1938,  { -- Block Mallet
 					["cr"] = 1398,  -- Boss Galgosh <Stonesplinter Chieftain>
 				}),
+				i(2939, {	-- Crocolisk Tear
+					["questID"] = 278,	-- A Dark Threat Looms
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						2476,	-- Large Loch Crocolisk
+						1693,	-- Loch Crocolisk
+					},
+				}),
 				i(2241,  { -- Desperado Cape
 					["cr"] = 1399,  -- Magosh <Stonesplinter Tribal Shaman>
 				}),
 				i(6197,  { -- Loch Croc Hide Vest
 					["cr"] = 2476,  -- Large Loch Crocolisk
 				}),
+				i(2606, {	-- Lurker Venom
+					["questID"] = 278,	-- A Dark Threat Looms
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1184,	-- Cliff Lurker
+						1195,	-- Forest Lurker
+						14266,	-- Shanda the Spinner
+						1185,	-- Wood Lurker
+					},
+				}),
 				i(2823,  { -- Mo'grosh Can Opener
 					["cr"] = 1180,  -- Mo'grosh Brute
+				}),
+				i(2607, {	-- Mo'grosh Crystal
+					["questID"] = 278,	-- A Dark Threat Looms
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						14267,	-- Emogg the Crusher
+						1180,	-- Mo'grosh Brute
+						1179,	-- Mo'grosh Enforcer
+						1183,	-- Mo'grosh Mystic
+						1178,	-- Mo'grosh Ogre
+						1181,	-- Mo'grosh Shaman
+					},
 				}),
 				i(2821,  { -- Mo'grosh Masher
 					["crs"] = {

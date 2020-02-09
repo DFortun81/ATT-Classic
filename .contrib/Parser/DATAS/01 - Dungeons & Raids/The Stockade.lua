@@ -11,9 +11,12 @@ _.Instances = {
 			n(-17, {	-- Quests
 				q(377, {	-- Crime and Punishment
 					["qg"] = 270,	-- Councilman Millstipe
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.0, 46.8, DUSKWOOD },
 					["maps"] = { DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3628, 1 },	-- Hand of Dextren Ward
+					},
 					["lvl"] = 26,
 					["g"] = {
 						i(2906),	-- Darkshire Mail Leggings
@@ -22,24 +25,30 @@ _.Instances = {
 				}),
 				q(387, {	-- Quell The Uprising
 					["qg"] = 1719,	-- Warden Thelwater
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 39.77, 54.21, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 22,
 				}),
 				q(388, {	-- The Color of Blood
 					["qg"] = 1721,	-- Nikova Raskol
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.2, 55.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2909, 10 },	-- Red Wool Bandana
+					},
 					["lvl"] = 22,
 				}),
 				q(378, {	-- The Fury Runs Deep
 					["qg"] = 1074,	-- Motley Garmason
 					["sourceQuest"] = 303,	-- The Dark Iron War
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 49.8, 18.2, WETLANDS },
 					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3640, 1 },	-- Head of Deepfury
+					},
 					["lvl"] = 25,
 					["g"] = {
 						i(1264),	-- Headbasher
@@ -49,9 +58,12 @@ _.Instances = {
 				q(391, {	-- The Stockade Riots
 					["qg"] = 1719,	-- Warden Thelwater
 					["sourceQuest"] = 389,	-- Bazil Thredd
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 39.77, 54.21, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2926, 1 },	-- Head of Bazil Thredd
+					},
 					["lvl"] = 16,
 					["cost"] = {
 						{ "i", 2926, 1 }, -- Head of Bazil Thredd
@@ -59,9 +71,12 @@ _.Instances = {
 				}),
 				q(386, { 	-- What Comes Around...
 					["qg"] = 859,	-- Guard Berton
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 26, 43, REDRIDGE_MOUNTAINS },
 					["maps"] = { REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3630, 1 },	-- Head of Targorr
+					},
 					["lvl"] = 22,
 					["g"] = {
 						i(1317),	-- Hardened Root Staff
@@ -71,6 +86,21 @@ _.Instances = {
 			}),
 			n(0, {	-- Zone Drop
 				i(1076),	-- Defias Renegade Ring
+				{
+					["itemID"] = 2909,	-- Red Wool Bandana
+					["questID"] = 388,	-- The Color of Blood
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1716,	-- Bazil Thredd
+						1720,	-- Bruegal Ironknuckle
+						1707,	-- Defias Captive
+						1711,	-- Defias Convict
+						1708,	-- Defias Inmate
+						1715,	-- Defias Insurgent
+						1706,	-- Defias Prisoner
+						1663,	-- Dextren Ward
+					},
+				},
 			}),
 			n(1720, {	-- Bruegal Ironknuckle
 				["description"] = "This is a rare that was not always present.",
@@ -78,30 +108,37 @@ _.Instances = {
 					i(2942),	-- Iron Knuckles
 					i(3228),	-- Jimmied Handcuffs
 					i(2941),	-- Prison Shank
-					i(4306),	-- Silk Cloth
 				},
 			}),
 			n(1666, { 	-- Kam Deepfury
-				i(3640),	-- Head of Deepfury
+				{
+					["itemID"] = 3640,	-- Head of Deepfury
+					["questID"] = 378,	-- The Fury Runs Deep
+					["races"] = ALLIANCE_ONLY,
+				},
 				i(2280),	-- Kam's Walking Stick
-				i(4306),	-- Silk Cloth
 			}),
 			n(1663, {	-- Dextren Ward
-				i(3628),	-- Hand of Dextren Ward
-				i(2909),	-- Red Wool Bandana
-				i(4306),	-- Silk Cloth
+				{
+					["itemID"] = 3628,	-- Hand of Dextren Ward
+					["questID"] = 377,	-- Crime and Punishment
+					["races"] = ALLIANCE_ONLY,
+				},
 			}),
-			n(1717, {	-- Hamhock
-				i(4306),	-- Silk Cloth
-			}),
+			n(1717),	-- Hamhock
 			n(1696, {	-- Targorr the Dread
-				i(3630),	-- Head of Targorr
-				i(2592),	-- Wool Cloth
+				{
+					["itemID"] = 3630,	-- Head of Targorr
+					["questID"] = 386,	-- What Comes Around...
+					["races"] = ALLIANCE_ONLY,
+				},
 			}),
 			n(1716, {	-- Bazil Thredd
-				i(2926),	-- Head of Bazil Thredd
-				i(2909),	-- Red Wool Bandana
-				i(4306),	-- Silk Cloth
+				{
+					["itemID"] = 2926,	-- Head of Bazil Thredd
+					["questID"] = 391,	-- The Stockade Riots
+					["races"] = ALLIANCE_ONLY,
+				},
 			}),
 		},
 	}),

@@ -7,44 +7,70 @@ _.Zones =
 		m(LOCH_MODAN, {	-- Loch Modan
 			n(-17, {	-- Quests
 				q(250, {	-- A Dark Threat Looms (1/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
+					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 				}),
 				q(199, {	-- A Dark Threat Looms (2/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 257 },	-- Suspicious Barrel
 					["sourceQuest"] = 250,	-- A Dark Threat Looms (1/7)
+					["coord"] = { 56.1, 13.3, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2563, 1 },	-- Strange Smelling Powder
+					},
+					["lvl"] = 16,
 				}),
 				q(161, {	-- A Dark Threat Looms (3/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["sourceQuest"] = 199,	-- A Dark Threat Looms (2/7)
+					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2563, 1 },	-- Strange Smelling Powder
+					},
+					["lvl"] = 16,
 				}),
 				q(274, {	-- A Dark Threat Looms (4/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1073,	-- Ashlan Stonesmirk
 					["sourceQuest"] = 161,	-- A Dark Threat Looms (3/7)
+					["coord"] = { 50, 18.2, WETLANDS },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2609, 1 },	-- Disarming Colloid
+					},
+					["lvl"] = 16,
 				}),
 				q(278, {	-- A Dark Threat Looms (5/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["sourceQuest"] = 274,	-- A Dark Threat Looms (4/7)
+					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2606, 1 },	-- Lurker Venom
+						{ "i", 2607, 1 },	-- Mo'grosh Crystal
+						{ "i", 2939, 1 },	-- Crocolisk Tear
+					},
+					["lvl"] = 16,
 				}),
 				q(280, {	-- A Dark Threat Looms (6/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["sourceQuest"] = 278,	-- A Dark Threat Looms (5/7)
+					["coord"] = { 46, 13.6, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2610, 1 },	-- Disarming Mixture
+					},
+					["lvl"] = 16,
 				}),
 				q(283, {	-- A Dark Threat Looms (7/7)
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 1585 },	-- Explosive Charge
+					["coord"] = { 50.6, 14.4, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 16,
 					["g"] = {
 						i(2907),	-- Dwarven Tree Chopper
 						i(2908),	-- Thornblade
@@ -264,10 +290,11 @@ _.Zones =
 					["sourceQuest"] = 298,	-- Excavation Progress Report
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1340,	-- Mountaineer Kadrell
+					["coord"] = { 34.8, 47, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 19,
 				}),
 				q(273, {	-- Resupplying the Excavation
 					["lvl"] = 10,
@@ -300,11 +327,12 @@ _.Zones =
 					["description"] = "Enter the building at 23.3, 17.9 and go up the stairs to access Mountaineer Stormpike.",
 				}),
 				q(455, {	-- The Algaz Gauntlet
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1342,	-- Mountaineer Rockgar
-					["coord"] = { 25.5, 10.5, LOCH_MODAN },
 					["sourceQuest"] = 468,	-- Report to Mountaineer Rockgar
+					["coord"] = { 25.5, 10.5, LOCH_MODAN },
+					["maps"] = { WETLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(267, {	-- The Trogg Threat
 					["lvl"] = 10,

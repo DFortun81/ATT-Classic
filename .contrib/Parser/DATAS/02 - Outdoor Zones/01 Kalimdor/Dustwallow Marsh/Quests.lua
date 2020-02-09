@@ -155,8 +155,9 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(1133, {	-- Journey to Astranaar
-					["sourceQuest"] = 1132,	-- Fiora Longears
 					["qg"] = 4456,	-- Fiora Longears
+					["sourceQuest"] = 1132,	-- Fiora Longears
+					["coord"] = { 66.4, 45.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),

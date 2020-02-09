@@ -156,6 +156,16 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2766,	-- Lolo the Lookout
 				}),
+				q(647, {	-- MacKreel's Moonshine
+					["qg"] = 2696,	-- Foggy MacKreel
+					["coord"] = { 43.2, 92.6, ARATHI_HIGHLANDS },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4441, 1 },	-- MacKreel's Moonshine
+					},
+					["lvl"] = 28,
+				}),
 				q(690, {	-- Malin's Request
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -287,6 +297,13 @@ _.Zones =
 					["g"] = {
 						i(4741),	-- Stromgarde Cavalry Leggings
 					},
+				}),
+				q(637, {	-- Sully Balloo's Letter
+					["provider"] = { "i", 4433 },	-- Waterlogged Envelope
+					["cost"] = { { "i", 4432, 1 } },	-- Sully Balloo's Letter
+					["coord"] = { 44.3, 92.9, ARATHI_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(656, {	-- Summoning the Princess
 					["qg"] = 2785,	-- Theldurin the Lost

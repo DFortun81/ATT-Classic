@@ -341,10 +341,11 @@ _.Zones =
 				}),
 				q(1301, {	-- James Hyal
 					["qg"] = 5081,	-- Connor Rivers
+					["coord"] = { 40.4, 91.6, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH },
-					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["lvl"] = 47,

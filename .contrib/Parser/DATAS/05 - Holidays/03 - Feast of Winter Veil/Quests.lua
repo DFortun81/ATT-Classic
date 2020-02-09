@@ -7,17 +7,17 @@ _.Holidays =
 		["g"] = {
 			n(-17, {	-- Quests
 				q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(17726), -- Smokywood Pastures Special Gift
 					},
 				}),
 				q(7045, { -- A Smokywood Pastures' Thank You! (Alliance)
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(17726, {	-- Smokywood Pastures Special Gift
 							i(17725),	-- Formula: Enchant Weapon - Winter's Might							
@@ -29,54 +29,54 @@ _.Holidays =
 					},
 				}),
 				q(6961, { -- Greatfather Winter is Here!
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["altQuests"] = { 
 						7021,  -- Greatfather Winter is Here! 
 						7124,  -- Greatfather Winter is Here! 
 					},
 				}),
 				q(7021, { -- Greatfather Winter is Here!
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13431, -- Whulwert Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["altQuests"] = { 
 						6961,  -- Greatfather Winter is Here! 
 						7124,  -- Greatfather Winter is Here! 
 					},
 				}),
 				q(7024, { -- Greatfather Winter is Here!
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["altQuests"] = { 
 						6961,  -- Greatfather Winter is Here! 
 						7021,  -- Greatfather Winter is Here! 
 					},
 				}),
 				q(7022, { -- Greatfather Winter is Here!
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(7023, { -- Greatfather Winter is Here!
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13435, -- Khole Jinglepocket <Smokywood Pastures>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(8746, { -- Metzen the Reindeer (Horde)
-					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 40,
 					["g"] = {
 						i(21213),  -- Preserved Holly
 					},
 				}),
 				q(8762, { -- Metzen the Reindeer (Alliance)
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 					["g"] = {
 						i(21213),  -- Preserved Holly
 					},
@@ -92,47 +92,47 @@ _.Holidays =
 					["lvl"] = 30,
 				}),
 				q(7061, { -- The Feast of Winter Veil
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13417, -- Sagorne Creststrider <Shaman Trainer>
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(7063, { -- The Feast of Winter Veil
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2916, -- Historian Karnik
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(8763, { -- The Hero of the Day
-					["lvl"] = 40,
-					["requireSkill"] = 185,	-- Cooking
-					["description"] = 'Requires Cooking Skill Level 300',
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13433, -- Wulmort Jinglepocket <Smokywood Pastures>
+					["description"] = 'Requires Cooking Skill Level 300',
+					["requireSkill"] = 185,	-- Cooking
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 					["g"] = {
 						i(21213),  -- Preserved Holly
 					},
 				}),
 				q(6964, { -- The Reason for the Season (Horde)
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 1365, -- Goli Krumn
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(7062, { -- The Reason for the Season (Alliance)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1365, -- Goli Krumn
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(6962, { -- Treats for Greatfather Winter (Horde)
-					["lvl"] = 10,
-					["races"] = HORDE_ONLY,
 					["qg"] = 13445, -- Great-father Winter
+					["races"] = HORDE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(17727), -- Smokywood Pastures Special Gift
 					},
 				}),
 				q(7025, { -- Treats for Greatfather Winter (Alliance)
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 13444, -- Greatfather Winter
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(17727, {	-- Smokywood Pastures Special Gift
 							i(17725),	-- Formula: Enchant Weapon - Winter's Might							
@@ -165,10 +165,11 @@ _.Holidays =
 						},
 					},
 				},
-				q(8827, { -- Winter's Presents
-					["lvl"] = 1,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				{
+					["allianceQuestID"] = 8827,	-- Winter's Presents (Alliance)
+					["hordeQuestID"] = 8828,	-- Winter's Presents (Horde)
+					["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
+				},
 			}),
 		},
 	}),

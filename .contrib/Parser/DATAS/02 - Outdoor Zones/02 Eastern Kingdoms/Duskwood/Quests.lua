@@ -50,6 +50,7 @@ _.Zones =
 						324,	-- The Lost Ingots
 					},
 					["coord"] = { 10.6, 60.5, WETLANDS },
+					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2712, 1 },	-- Crate of Lightforge Ingots
@@ -163,15 +164,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
-				}),
-				q(321, {	-- Lightforge Iron
-					["qg"] = 1217,	-- Glorin Steelbrow
-					["coord"] = { 10.6, 60.5, WETLANDS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
-					["g"] = {
-						i(2702),	-- Lightforge Ingot
-					},
 				}),
 				q(174, {	-- Look To The Stars
 					["qg"] = 276,	-- Viktori Prism'Antras
@@ -419,11 +411,11 @@ _.Zones =
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
 				}),
 				q(270, {	-- The Doomed Fleet
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1212,	-- Bishop Farthing
 					["sourceQuest"] = 269,	-- Seeking Wisdom (Duskwood)
 					["coord"] = { 39.3, 27.9, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(165, {	-- The Hermit
 					["lvl"] = 17,
@@ -524,17 +516,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
-				}),
-				q(324, {	-- The Lost Ingots
-					["provider"] = { "o", 2734 },	-- Waterlogged Chest
-					["altQuests"] = { 526 },	-- Lightforge Ingots
-					["sourceQuest"] = 321,	-- Lightforge Iron
-					["coord"] = { 12.1, 64.1, WETLANDS },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 2702, 5 },	-- Lightforge Ingot
-					},
-					["lvl"] = 20,
 				}),
 				q(1244, { -- The Missing Diplomat (5/17)
 					["lvl"] = 28,
