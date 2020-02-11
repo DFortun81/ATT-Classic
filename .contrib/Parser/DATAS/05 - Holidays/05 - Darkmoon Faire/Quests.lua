@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	m(407, {	-- Darkmoon Faire
+	faction(909, {	-- Darkmoon Faire
 		n(-17, {	-- Quests
 			q(7885,  {	-- Armor Kits
 				["lvl"] = 40,

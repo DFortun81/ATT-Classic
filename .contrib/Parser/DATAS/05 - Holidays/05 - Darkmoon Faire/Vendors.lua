@@ -3,7 +3,7 @@
 --------------------------------------------
 _.Holidays =
 {
-	m(407, {	-- Darkmoon Island
+	faction(909, {	-- Darkmoon Faire
 		n(-2, {		-- Vendors
 			["groups"] = {
 				n(14860, { -- Flik
