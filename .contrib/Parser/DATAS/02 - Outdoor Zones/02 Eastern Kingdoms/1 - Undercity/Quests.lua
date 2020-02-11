@@ -53,12 +53,11 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8419, {	-- An Imp's Request
-					["u"] = 3,	-- Added in later phase
+					["lvl"] = 50,
 					["qg"] = 4563,	-- Kaal Soulreaper <Warlock Trainer>
 					["coord"] = { 86.0, 15.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["lvl"] = 50,
 					["altQuests"] = {
 						8420,	-- Hot and Itchy
 					},
@@ -67,7 +66,6 @@ _.Zones =
 					},
 				}),
 				q(8417, {	-- A Troubled Spirit
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4593,	-- Christoph Walker <Warrior Trainer>
 					["coord"] = { 47.8, 14.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -75,7 +73,6 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8233, {	-- A Simple Request
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4583,	-- Miles Dexter <Rogue Trainer>
 					["coord"] = { 85.0, 75.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -203,7 +200,6 @@ _.Zones =
 					["qg"] = 7825,	-- Oran Snakewrithe
 				}),
 				q(8250, {	-- Magecraft
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4567,	-- Pierce Shackleton <Mage Trainer>
 					["coord"] = { 85.6, 14.0, UNDERCITY },
 					["races"] = HORDE_ONLY,

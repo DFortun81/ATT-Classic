@@ -231,12 +231,11 @@ _.Zones =
 					},
 				}),
 				q(8419, {	-- An Imp's Request
-					["u"] = 3,	-- Added in later phase
+					["lvl"] = 50,
 					["qg"] = 3326,	-- Zevrost <Warlock Trainer>
 					["coord"] = { 48.4, 45.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["lvl"] = 50,
 					["altQuests"] = {
 						8420,	-- Hot and Itchy
 					},
@@ -325,7 +324,6 @@ _.Zones =
 					},
 				}),
 				q(8233, {	-- A Simple Request
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 3328,	-- Ormok <Rogue Trainer>
 					["coord"] = { 44.0, 54.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -342,7 +340,6 @@ _.Zones =
 					},
 				}),
 				q(8417, {	-- A Troubled Spirit
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 3354,	-- Sorek <Warrior Trainer>
 					["coord"] = { 80.2, 32.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -434,11 +431,10 @@ _.Zones =
 					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
 				}),
 				q(8410, {	-- Elemental Mastery
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 5892,	-- Searn Firewarder
 					["coord"] = { 38.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = {7},	-- Shaman
+					["classes"] = { 7 },	-- Shaman
 					["lvl"] = 50,
 					["cost"] = {
 						{ "i", 7067, 1 },	-- Elemental Earth
@@ -566,7 +562,6 @@ _.Zones =
 					["qg"] = 3326, -- Zevrost
 				}),
 				q(8250, {	-- Magecraft
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
@@ -739,7 +734,6 @@ _.Zones =
 					},
 				}),
 				q(8151, {	-- The Hunter's Charm
-					["u"] = 3,	-- Added in later phase
 					["qgs"] = {
 						3352,	-- Ormak Grimshot <Hunter Trainer>
 						3406,	-- Xor'juul <Hunter Trainer>

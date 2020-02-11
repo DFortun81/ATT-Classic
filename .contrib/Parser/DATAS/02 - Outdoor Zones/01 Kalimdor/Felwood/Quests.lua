@@ -274,11 +274,10 @@ _.Zones =
 					},
 				}),
 				q(8420, {	-- Hot and Itchy
-					["u"] = 3,	-- Added in later phase
+					["lvl"] = 50,
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["classes"] = { 9 },	-- Warlock
-					["lvl"] = 50,
 					["altQuests"] = {
 						8419,	-- An Imp's Request
 					},
@@ -554,11 +553,10 @@ _.Zones =
 					},
 				}),
 				q(8421, {	-- The Wrong Stuff
-					["u"] = 3,	-- Added in later phase
+					["lvl"] = 50,
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["classes"] = { 9 },	-- Warlock
-					["lvl"] = 50,
 					["sourceQuest"] = 8420,	-- Hot and Itchy
 					["cost"] = {
 						{ "i", 20613, 1 },	-- Rotting Wood

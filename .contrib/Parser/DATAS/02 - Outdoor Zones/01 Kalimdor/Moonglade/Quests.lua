@@ -143,7 +143,6 @@ _.Zones =
 					},
 				},
 				q(9063, {	-- Torwa Pathfinder
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.4, 40.6, MOONGLADE },
 					["classes"] = { 11 },	-- Druid

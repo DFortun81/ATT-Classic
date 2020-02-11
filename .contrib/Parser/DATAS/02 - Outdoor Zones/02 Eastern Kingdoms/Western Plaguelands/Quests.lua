@@ -347,7 +347,6 @@ _.Zones =
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
-					["u"] = 3,	-- Added in later phase
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
 					},
@@ -434,7 +433,6 @@ _.Zones =
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 2 },	-- Paladin
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 50,
 				}),
 				q(5407, {	-- Invader's Scourgestones

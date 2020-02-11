@@ -267,7 +267,6 @@ _.Zones =
 					},
 				}),
 				q(8424, {	-- War on the Shadowsworn
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
@@ -275,7 +274,6 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8423, {	-- Warrior Kinship
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },

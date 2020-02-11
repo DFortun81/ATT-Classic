@@ -44,7 +44,6 @@ _.Zones =
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(8233, {	-- A Simple Request
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4163,	-- Syurna <Rogue Trainer>
 					["coord"] = { 36.8, 21.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -58,7 +57,6 @@ _.Zones =
 					["coord"] = { 67.4, 15.7, DARNASSUS },
 				}),
 				q(8417, {	-- A Troubled Spirit
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 7315,	-- Darnath Bladesinger <Warrior Trainer>
 					["coord"] = { 58.6, 35.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -234,7 +232,6 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(8151, {	-- The Hunter's Charm
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
 					["coord"] = { 42.2, 7.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
@@ -293,7 +290,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(9063, {	-- Torwa Pathfinder
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 4218,	-- Denatharion <Druid Trainer>
 					["coord"] = { 34.8, 8.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
