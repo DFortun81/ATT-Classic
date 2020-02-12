@@ -92,13 +92,16 @@ app.L = {
 
 	["ABBREVIATIONS"] = {
 		["ALL THE THINGS"] = "ATT",
-		["ATT-Classic"] = "ATT",
+		["ATT%-Classic"] = "ATT",
 		["Expansion Pre"] = "Pre",
 		["Dungeons & Raids"] = "D&R",
 		["Player vs Player"] = STAT_CATEGORY_PVP,
 		["Player vs. Player"] = STAT_CATEGORY_PVP,
-		["Outdoor Zones"] = LFG_TYPE_ZONE,
-		["Zone Drop"] = LFG_TYPE_ZONE,
+		["Outdoor Zones"] = LFG_TYPE_ZONE
+	};
+	["ABBREVIATIONS_POST"] = {
+		--[" %-%> " .. LFG_TYPE_ZONE] = "",
+		[TRACKER_HEADER_QUESTS] = BATTLE_PET_SOURCE_2,
 	};
 	["FILTER_ID_TYPES"] = {
 		-- "Armor Types"

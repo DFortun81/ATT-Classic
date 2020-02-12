@@ -627,15 +627,28 @@ local function BuildGroups(parent, g)
 end
 local function BuildSourceText(group, l)
 	if group.parent then
+		if not group.itemID and (group.parent.npcID or (group.parent.spellID and group.categoryID)) and ((group.parent.npcID == -2 or group.parent.npcID == -17 or group.parent.npcID == -7) or (group.parent.parent and group.parent.parent.parent)) then --  
+			return BuildSourceText(group.parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (group.parent.text or RETRIEVING_DATA) .. ")";
+		end
+		if group.npcID then
+			if group.npcID == 0 then
+				if group.crs and #group.crs == 1 then
+					return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
+				end
+				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+			if group.parent.parent then
+				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			end
+		end
 		if l < 1 then
 			if group.dr then
 				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
 			else
 				return BuildSourceText(group.parent, l + 1);
 			end
-		else
-			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
+		return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or RETRIEVING_DATA);
 	end
 	return group.text or RETRIEVING_DATA;
 end
@@ -1509,12 +1522,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local temp = {};
 			local unfiltered = {};
 			local abbrevs = L["ABBREVIATIONS"];
+			local abbrevs_post = L["ABBREVIATIONS_POST"];
+			if not abbrevs_post[" true "] then
+				abbrevs_post[" %-%> " .. app.GetMapName(947)] = "";
+				abbrevs_post[" %-%> " .. app.GetMapName(1415)] = "";
+				abbrevs_post[" %-%> " .. app.GetMapName(1414)] = "";
+				abbrevs_post[" false "] = " 0 ";
+				abbrevs_post[" true "] = " 1 ";
+			end
 			for i,j in ipairs(group.g or group) do
 				if j.parent and not j.parent.hideText and j.parent.parent
 					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
 					for source,replacement in pairs(abbrevs) do
-						text = string.gsub(text, source,replacement);
+						text = string.gsub(text, source, replacement);
+					end
+					for source,replacement in pairs(abbrevs_post) do
+						text = string.gsub(text, source, replacement);
 					end
 					if j.u then
 						tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][j.u][1]] .. ":0|t");
@@ -1539,18 +1563,45 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				for i,j in ipairs(temp) do
 					if not contains(listing, j) then
 						tinsert(listing, 1, j);
+						if string.find(j, RETRIEVING_DATA) then working = true; end
 					end
 				end
-				local count = #listing;
-				if count > maximum + 1 then
-					for i=count,maximum + 1,-1 do
-						table.remove(listing, 1);
-					end
-					tinsert(listing, 1, "And " .. (count - maximum) .. " other sources...");
-				end
+				local count, splitCounts, splitCount = 0, { };
 				for i,text in ipairs(listing) do
 					local left, right = strsplit(DESCRIPTION_SEPARATOR, text);
-					tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+					splitCount = splitCounts[left];
+					if not splitCount then
+						splitCount = { count = 0,variants ={} };
+						splitCounts[left] = splitCount;
+					end
+					if right then
+						table.insert(splitCount.variants, right);
+						if string.find(right, BATTLE_PET_SOURCE_2) then
+							splitCount.count = splitCount.count + 1;
+						end
+					end
+				end
+				for left,splitCount in pairs(splitCounts) do
+					if splitCount.count < 5 then
+						if #splitCount.variants < 1 then
+							tinsert(info, 1, { left = left, right = nil, wrap = not string.find(left, " -> ") });
+							count = count + 1;
+						else
+							for i,right in ipairs(splitCount.variants) do
+								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+								count = count + 1;
+							end
+						end
+					else
+						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " -> ") });
+						count = count + 1;
+					end
+				end
+				if count > maximum + 1 then
+					for i=count,maximum + 1,-1 do
+						table.remove(info, 1);
+					end
+					tinsert(info, 1, "And " .. (count - maximum) .. " other sources...");
 				end
 			end
 		end
@@ -1762,13 +1813,17 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- If there was any informational text generated, then attach that info.
 		if #info > 0 then
-			local uniques, dupes = {}, {};
+			local uniques, dupes, _ = {}, {};
 			for i,item in ipairs(info) do
-				if not item.left then
+				_ = item.left;
+				if not _ then
 					tinsert(uniques, item);
-				elseif not dupes[item.left] then
-					dupes[item.left] = true;
-					tinsert(uniques, item);
+				else
+					if item.right then _ = _ .. item.right; end
+					if not dupes[_] then
+						dupes[_] = true;
+						tinsert(uniques, item);
+					end
 				end
 			end
 			
@@ -5546,18 +5601,21 @@ local function RowOnEnter(self)
 				local _, name, icon, amount;
 				for k,v in pairs(reference.cost) do
 					_ = v[1];
-					if _ == "i" then
-						_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
-						amount = "x" .. v[3];
-					elseif _ == "c" then
-						name,_,icon = GetCurrencyInfo(v[2])
-						amount = "x" .. v[3];
-					elseif _ == "g" then
-						name = "";
-						icon = nil;
-						amount = GetCoinTextureString(v[2]);
+					if _ == "g" then
+						GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", GetCoinTextureString(v[2]));
+					else
+						if _ == "i" then
+							_,name,_,_,_,_,_,_,_,icon = GetItemInfo(v[2]);
+						elseif _ == "c" then
+							name,_,icon = GetCurrencyInfo(v[2])
+						end
+						name = (icon and ("|T" .. icon .. ":0|t") or "") .. (name or RETRIEVING_DATA);
+						_ = (v[3] or 1);
+						if _ > 1 then
+							name = _ .. "x  " .. name;
+						end
+						GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", name);
 					end
-					GameTooltip:AddDoubleLine(k == 1 and "Cost" or " ", (icon and ("|T" .. icon .. ":0|t") or "") .. (name or "???") .. " " .. amount);
 				end
 			else
 				GameTooltip:AddDoubleLine("Cost", GetCoinTextureString(reference.cost));
