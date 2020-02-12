@@ -4,6 +4,7 @@
 _.Factions = 
 {
 	faction(909, {	-- Darkmoon Faire
+		["icon"] = "Interface\\Addons\\ATT-Classic\\assets\\dmf",
 		["maps"] = { ELWYNN_FOREST, MULGORE },
 	}),
 };
