@@ -863,15 +863,6 @@ _.Zones =
 					["qg"] = 15187,	-- Cenarion Emissary Jademoon
 					["u"] = 3,	-- Added in later phase
 				}),
-				q(7905, {	-- The Darkmoon Faire
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 6,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 14842,	-- Melnan Darkstone
-					["groups"] = {
-						i(19182),	-- Darkmoon Faire Prize Ticket
-					},
-				}),
 				q(8151, {	-- The Hunter's Charm
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70.6, 83.8, IRONFORGE },

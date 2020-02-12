@@ -65,7 +65,7 @@ _.PvP =
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, HONORED },    -- Frostwolf Clan, Honored
 								["cost"] = {
-									{ "i", 17695, 1 },	-- Frostwolf Insignia Rank 2
+									{ "i", 17905, 1 },	-- Frostwolf Insignia Rank 2
 								},
 								["g"] = {
 									i(17906),  -- Frostwolf Insignia Rank 3

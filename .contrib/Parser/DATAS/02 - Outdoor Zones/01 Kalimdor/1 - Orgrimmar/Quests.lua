@@ -724,15 +724,6 @@ _.Zones =
 						i(22243), -- Small Soul Pouch
 					},
 				}),
-				q(7926, {	-- The Darkmoon Faire
-					["lvl"] = 6,
-					["races"] = HORDE_ONLY,
-					["qg"] = 14843,	-- Kruban Darkblade
-					["u"] = 3,	-- Added in later phase (Phase 3)
-					["g"] = {
-						i(19182),	-- Darkmoon Faire Prize Ticket
-					},
-				}),
 				q(8151, {	-- The Hunter's Charm
 					["qgs"] = {
 						3352,	-- Ormak Grimshot <Hunter Trainer>

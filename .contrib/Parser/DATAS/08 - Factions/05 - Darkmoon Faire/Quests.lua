@@ -281,6 +281,23 @@ _.Factions =
 					}),
 				},
 			}),
+			q(7905, {	-- The Darkmoon Faire
+				["maps"] = { STORMWIND_CITY },
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 6,
+				["groups"] = {
+					i(19182),	-- Darkmoon Faire Prize Ticket
+				},
+			}),
+			q(7926, {	-- The Darkmoon Faire
+				["qg"] = 14843,	-- Kruban Darkblade
+				["maps"] = { ORGRIMMAR },
+				["races"] = HORDE_ONLY,
+				["lvl"] = 6,
+				["g"] = {
+					i(19182),	-- Darkmoon Faire Prize Ticket
+				},
+			}),
 			q(7883,  {	-- The World's Largest Gnome!
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				["repeatable"] = true,
@@ -336,7 +353,7 @@ _.Factions =
 				},
 			}),
 			q(7937,  {	-- Your Fortune Awaits You...
-				["provider"] = { "i", 19423 },  -- Sayge's Fortune #23
+				["qg"] = 14822,	-- Sayge
 				["cost"] = {
 					{ "i", 19423, 1 },	-- Sayge's Fortune #23
 				},
@@ -346,7 +363,7 @@ _.Factions =
 				},
 			}),
 			q(7938,  {	-- Your Fortune Awaits You...
-				["provider"] = { "i", 19424 },  -- Sayge's Fortune #24
+				["qg"] = 14822,	-- Sayge
 				["cost"] = {
 					{ "i", 19424, 1 },	-- Sayge's Fortune #24
 				},
@@ -356,7 +373,7 @@ _.Factions =
 				},
 			}),
 			q(7944,  {	-- Your Fortune Awaits You...
-				["provider"] = { "i", 19443 },  -- Sayge's Fortune #25
+				["qg"] = 14822,	-- Sayge
 				["cost"] = {
 					{ "i", 19443, 1 },	-- Sayge's Fortune #25
 				},
@@ -366,7 +383,7 @@ _.Factions =
 				},
 			}),
 			q(7945,  {	-- Your Fortune Awaits You...
-				["provider"] = { "i", 19452 },  -- Sayge's Fortune #27
+				["qg"] = 14822,	-- Sayge
 				["cost"] = {
 					{ "i", 19452, 1 },	-- Sayge's Fortune #27
 				},
