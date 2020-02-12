@@ -592,7 +592,6 @@ _.Instances = {
 			n(11982, {	-- Magmadar
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
-				i(18202),	-- Eskhandar's Left Claw
 				i(18203),	-- Eskhandar's Right Claw
 				i(17069),	-- Striker's Mark
 				i(19142),	-- Fire Runed Grimoire
