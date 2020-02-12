@@ -6,8 +6,8 @@ _.Factions =
 	faction(909, {	-- Darkmoon Faire
 		n(-17, {	-- Quests
 			q(7885,  {	-- Armor Kits
-				["lvl"] = 40,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["lvl"] = 40,
 				["cost"] = {
 					{ "i", 15564, 8 },	-- Rugged Armor Kit
 				},
@@ -16,19 +16,19 @@ _.Factions =
 				},
 			}),
 			q(7892,  {	-- Big Black Mace
-				["lvl"] = 30,
-				["repeatable"] = true,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 7945, 1 },	-- Big Black Mace
 				},
+				["lvl"] = 30,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7881,  {	-- Carnival Boots
-				["repeatable"] = true,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 2309, 3 },	-- Embossed Leather Boots
 				},
@@ -37,19 +37,19 @@ _.Factions =
 				},
 			}),
 			q(7882,  {	-- Carnival Jerkins
-				["lvl"] = 10,
-				["repeatable"] = true,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 2314, 3 },	-- Toughened Leather Armor
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7889,  {	-- Coarse Weightstone
-				["repeatable"] = true,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3240, 10 },	-- Coarse Weightstone
 				},
@@ -58,8 +58,8 @@ _.Factions =
 				},
 			}),
 			q(7894,  {	-- Copper Modulator
-				["repeatable"] = true,
 				["qg"] = 14841,  -- Rinling
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4363, 5 },	-- Copper Modulator
 				},
@@ -68,12 +68,12 @@ _.Factions =
 				},
 			}),
 			q(7884,  {	-- Crocolisk Boy and the Bearded Murloc
-				["lvl"] = 30,
-				["repeatable"] = true,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 8185, 1 },	-- Turtle Scale Leggings
 				},
+				["lvl"] = 30,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
@@ -115,141 +115,141 @@ _.Factions =
 				},
 			}),
 			q(7903,  {	-- Evil Bat Eyes
-				["lvl"] = 40,
 				["qg"] = 14829,  -- Yebb Neblegear
 				["cost"] = {
 					{ "i", 11404, 10 },	-- Evil Bat Eye
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(8222,  {	-- Glowing Scorpid Blood
-				["lvl"] = 40,
 				["qg"] = 14829,  -- Yebb Neblegear
 				["cost"] = {
 					{ "i", 19933, 10 },	-- Glowing Scorpid Blood
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7896,  {	-- Green Fireworks
-				["lvl"] = 20,
-				["repeatable"] = true,
 				["qg"] = 14841,  -- Rinling
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 9313, 36 },	-- Green Firework
 				},
+				["lvl"] = 20,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7891,  {	-- Green Iron Bracers
-				["lvl"] = 20,
-				["repeatable"] = true,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3835, 3 },	-- Green Iron Bracers
 				},
+				["lvl"] = 20,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7890,  {	-- Heavy Grinding Stone
-				["lvl"] = 10,
-				["repeatable"] = true,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3486, 7 },	-- Heavy Grinding Stone
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7897,  {	-- Mechanical Repair Kits
-				["lvl"] = 30,
-				["repeatable"] = true,
 				["qg"] = 14841,  -- Rinling
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11590, 6 },	-- Mechanical Repair Kit
 				},
+				["lvl"] = 30,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7941,  {	-- More Armor Kits
-				["lvl"] = 40,
-				["repeatable"] = true,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				["sourceQuest"] = 7885,	-- Armor Kits
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 15564, 8 },	-- Rugged Armor Kit
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7943,  {	-- More Bat Eyes
-				["lvl"] = 40,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11404, 10 },	-- Evil Bat Eye
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7939,  {	-- More Dense Grinding Stones
-				["lvl"] = 40,
-				["repeatable"] = true,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 				["sourceQuest"] = 7893,	-- Rituals of Strength
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 12644, 8 },	-- Dense Grinding Stone
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(8223,  {	-- More Glowing Scorpid Blood
-				["lvl"] = 40,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
 				["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19933, 10 },	-- Glowing Scorpid Blood
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7942,  {	-- More Thorium Widgets
-				["lvl"] = 40,
-				["repeatable"] = true,
 				["qg"] = 14841,  -- Rinling
 				["sourceQuest"] = 7898,	-- Thorium Widget
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 15994, 6 },	-- Thorium Widget
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7893,  {	-- Rituals of Strength
-				["lvl"] = 40,
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 				["cost"] = {
 					{ "i", 12644, 8 },	-- Dense Grinding Stone
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7899,  {	-- Small Furry Paws
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5134, 5 },	-- Small Furry Paw
 				},
@@ -258,116 +258,119 @@ _.Factions =
 				},
 			}),
 			q(7901,  {	-- Soft Bushy Tails
-				["lvl"] = 20,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4582, 5 },	-- Soft Bushy Tail
 				},
+				["lvl"] = 20,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7946,  {	-- Spawn of Jubjub
-				["lvl"] = 10,
 				["qg"] = 14871,  -- Morja
+				["description"] = "You need to throw down a Dark Iron Ale mug near her and wait for the jubling to come hopping to it, then she'll offer this quest.",
 				["cost"] = {
 					{ "i", 11325, 2 },	-- Dark Iron Ale Mug
 				},
+				["lvl"] = 10,
 				["g"] = {
-					i(19462),	-- Unhatched Jubling Egg
+					i(19462, {	-- Unhatched Jubling Egg
+						i(19450),	-- A Jubling's Tiny Home
+					}),
 				},
 			}),
 			q(7883,  {	-- The World's Largest Gnome!
-				["lvl"] = 20,
-				["repeatable"] = true,
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5739, 3 },	-- Barbaric Harness
 				},
+				["lvl"] = 20,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7898,  {	-- Thorium Widgets
-				["lvl"] = 40,
 				["qg"] = 14841,  -- Rinling
 				["cost"] = {
 					{ "i", 15994, 6 },	-- Thorium Widget
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7900,  {	-- Torn Bear Pelts
-				["lvl"] = 10,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11407, 5 },	-- Torn Bear Pelt
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7902,  {	-- Vibrant Plumes
-				["lvl"] = 30,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5117, 5 },	-- Vibrant Plume
 				},
+				["lvl"] = 30,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7895,  {	-- Whirring Bronze Gizmo
-				["lvl"] = 10,
-				["repeatable"] = true,
 				["qg"] = 14829,  -- Yebb Neblegear
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4375, 7 },	-- Whirring Bronze Gizmo
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7937,  {	-- Your Fortune Awaits You...
-				["lvl"] = 10,
 				["provider"] = { "i", 19423 },  -- Sayge's Fortune #23
 				["cost"] = {
 					{ "i", 19423, 1 },	-- Sayge's Fortune #23
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7938,  {	-- Your Fortune Awaits You...
-				["lvl"] = 10,
 				["provider"] = { "i", 19424 },  -- Sayge's Fortune #24
 				["cost"] = {
 					{ "i", 19424, 1 },	-- Sayge's Fortune #24
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7944,  {	-- Your Fortune Awaits You...
-				["lvl"] = 10,
 				["provider"] = { "i", 19443 },  -- Sayge's Fortune #25
 				["cost"] = {
 					{ "i", 19443, 1 },	-- Sayge's Fortune #25
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7945,  {	-- Your Fortune Awaits You...
-				["lvl"] = 10,
 				["provider"] = { "i", 19452 },  -- Sayge's Fortune #27
 				["cost"] = {
 					{ "i", 19452, 1 },	-- Sayge's Fortune #27
 				},
+				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
