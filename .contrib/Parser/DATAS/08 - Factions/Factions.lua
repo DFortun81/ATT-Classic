@@ -71,9 +71,6 @@ _.Factions =
 		["u"] = 3,	-- Added in later phase
 	}),
 	faction(609), -- Cenarion Circle
-	faction(909, { -- Darkmoon Faire
-		["u"] = 3,	-- Added in later phase
-	}),
 	faction(92, { -- Gelkis Clan Centaur
 		["u"] = 1,
 		["description"] = "You are not able to reach exalted with this faction.",
@@ -96,10 +93,8 @@ _.Factions =
 		},
 	}),
 	faction(59), 	-- Thorium Brotherhood
-	faction(576), -- Timbermaw Hold
-	faction(589, {	-- Wintersaber Trainers
-		["races"] = ALLIANCE_ONLY,
-	}),
+	faction(576),	-- Timbermaw Hold
+	faction(589),	-- Wintersaber Trainers
 	faction(270, { -- Zandalar Tribe
 		["u"] = 3,	-- Added in later phase
 	}),
