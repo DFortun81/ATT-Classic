@@ -637,7 +637,7 @@ local function BuildSourceText(group, l)
 			return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or "*");
 		end
 	end
-	return group.text or "*";
+	return group.text or RETRIEVING_DATA;
 end
 local function BuildSourceTextForChat(group, l)
 	if group.parent then
@@ -2577,7 +2577,7 @@ local classIcons = {
 };
 local SoftReserveUnitOnClick = function(self, button)
 	if button == "RightButton" then
-		app:ShowPopupDialog((self.ref.text or "??") .. "\n \nAre you sure you want to delete this entry?",
+		app:ShowPopupDialog((self.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this entry?",
 		function()
 			local guid = self.ref.guid or self.ref.unit;
 			if guid then
@@ -2650,7 +2650,7 @@ app.BaseUnit = {
 				if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
 			end
 		elseif key == "description" then
-			return LEVEL .. " " .. (UnitLevel(t.unit) or "??") .. " " .. (UnitRace(t.unit) or "??") .. " " .. (UnitClass(t.unit) or "??");
+			return LEVEL .. " " .. (UnitLevel(t.unit) or RETRIEVING_DATA) .. " " .. (UnitRace(t.unit) or RETRIEVING_DATA) .. " " .. (UnitClass(t.unit) or RETRIEVING_DATA);
 		elseif key == "icon" then
 			if t.classID then return classIcons[t.classID]; end
 		else
@@ -5344,7 +5344,7 @@ local function RowOnEnter(self)
 		local lvl = reference.lvl or 0;
 		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
-		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or "???"); end
+		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
@@ -5458,7 +5458,11 @@ local function RowOnEnter(self)
 							GameTooltip:AddLine(QUEST_OBJECTIVES, 1, 1, 1, 1);
 						end
 						for i,objective in ipairs(objectives) do
-							GameTooltip:AddDoubleLine("  " .. (objective.text or "???"), GetCompletionIcon(objective.finished), 1, 1, 1, 1);
+							local _ = objective.text;
+							if not _ or _:sub(1, 1) == " " then
+								_ = RETRIEVING_DATA;
+							end
+							GameTooltip:AddDoubleLine("  " .. _, GetCompletionIcon(objective.finished), 1, 1, 1, 1);
 						end
 					end
 				end
@@ -8873,7 +8877,7 @@ app.events.ADDON_LOADED = function(addonName)
 						end
 						filterData[key] = entry;
 					else
-						print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or "???") .. " is missing a filterID?");
+						print("Spell " .. entry.spellID .. " (Item ID #" .. (entry.itemID or RETRIEVING_DATA) .. " is missing a filterID?");
 					end
 				end
 				
