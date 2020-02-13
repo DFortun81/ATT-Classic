@@ -170,6 +170,7 @@ _.Instances = {
 				{
 					["itemID"] = 9739,	-- Gem of Anacondra
 					["questID"] = 914,	-- Leaders of the Fang
+					["races"] = HORDE_ONLY,
 				},
 				i(5404), 	-- Serpent's Shoulders
 				i(10412), 	-- Belt of the Fang
@@ -183,6 +184,7 @@ _.Instances = {
 				{
 					["itemID"] = 9740,	-- Gem of Pythas
 					["questID"] = 914,	-- Leaders of the Fang
+					["races"] = HORDE_ONLY,
 				},
 				i(6472), 	-- Stinging Viper
 				i(6473), 	-- Armor of the Fang
@@ -191,6 +193,7 @@ _.Instances = {
 				{
 					["itemID"] = 9738,	-- Gem of Cobrahn
 					["questID"] = 914,	-- Leaders of the Fang
+					["races"] = HORDE_ONLY,
 				},
 				i(6465), 	-- Robe of the Moccasin
 				i(6460), 	-- Cobrahn's Grasp
@@ -211,6 +214,7 @@ _.Instances = {
 				{
 					["itemID"] = 9741,	-- Gem of Serpentis
 					["questID"] = 914,	-- Leaders of the Fang
+					["races"] = HORDE_ONLY,
 				},
 				i(6469), 	-- Venomstrike
 				i(5970), 	-- Serpent Gloves
