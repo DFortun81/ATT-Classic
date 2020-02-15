@@ -100,6 +100,7 @@ _.Zones =
 				i(6930, {	-- Rod of Channeling
 					["allianceQuestID"] = 1804,	-- Tome of the Cabal
 					["hordeQuestID"] = 1805,	-- Tome of the Cabal
+					["classes"] = { WARLOCK },
 					["crs"] = {
 						1057,	-- Dragonmaw Bonewarder
 						1038,	-- Dragonmaw Shadowwarder
