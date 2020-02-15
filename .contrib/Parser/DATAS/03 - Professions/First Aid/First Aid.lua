@@ -11,9 +11,7 @@ profession(129, {	-- First Aid
 	recipe(10841),	-- Heavy Mageweave Bandage
 	recipe(18629),	-- Runecloth Bandage
 	recipe(18630),	-- Heavy Runecloth Bandage
-	recipe(23787, {	-- Powerful Anti-Venom
-		["u"] = 3,	-- Added in later phase
-	}),
+	recipe(23787),	-- Powerful Anti-Venom
 	n(-17, {	-- Quests
 		q(6625, {	-- Alliance Trauma
 			["lvl"] = 35,
