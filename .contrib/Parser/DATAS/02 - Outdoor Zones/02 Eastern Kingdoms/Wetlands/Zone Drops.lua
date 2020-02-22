@@ -3,9 +3,9 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {		-- Eastern Kingdoms
-		m(WETLANDS, {	-- Wetlands
-			n(0, {	-- Zone Drops
+	m(EASTERN_KINGDOMS, {
+		m(WETLANDS, {
+			n(ZONEDROPS, {
 				i(3022, {	-- Bluegill Breeches
 					["cr"] = 1028,	-- Bluegill Muckdweller
 				}),

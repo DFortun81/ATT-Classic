@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(UNDERCITY, {	-- Undercity
-			n(-17, {	-- Quests
+		m(UNDERCITY, {
+			n(QUESTS, {
 				q(4294, {	-- ... and a Batch of Ooze
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,

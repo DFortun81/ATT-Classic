@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(WAILING_CAVERNS, { 	-- Wailing Caverns
+	map(WAILING_CAVERNS, {
 		["description"] = "Recently, a night elf druid named Naralex discovered a network of underground caverns within the heart of the Barrens. Dubbed the 'Wailing Caverns', these natural caves were filled with steam fissures which produced long, mournful wails as they vented. Naralex believed he could use the caverns' underground springs to restore lushness and fertility to the Barrens - but to do so would require siphoning the energies of the fabled Emerald Dream.\n\nOnce connected to the Dream, however, the druid's vision somehow became a nightmare. Soon the Wailing Caverns began to change - the waters turned foul and the once-docile creatures inside metamorphosed into vicious, deadly predators. It is said that Naralex himself still resides somewhere inside the heart of the labyrinth, trapped beyond the edges of the Emerald Dream. Even his former acolytes have been corrupted by their master's waking nightmare - transformed into the wicked Druids of the Fang.",
 		["coord"] = { 45.9, 35.7, THE_BARRENS },
 		["lvl"] = 10,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				["description"] = "To get to the quest giver hub outside the instance:\n\nWhen facing the mouth of the cave, you should see that the entrance looks like a skull. The questgivers are in the left eye. To get there, climb up the mountain, drop onto the head, drop onto the brow, drop onto the nose, face the instance, and go into the eye on the left",
 				["groups"] = {
 					{
@@ -139,7 +139,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				n(5783, {	-- Kalldan Felmoon <Specialist Leatherworking Supplies>
 					["coord"] = { 45.9, 35.7, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
@@ -149,7 +149,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(6443, {	-- Deviate Hide
 					["description"] = "Drops from Deviate creatures in the Wailing Caverns.",
 					["questID"] = 1486,	-- Deviate Hides

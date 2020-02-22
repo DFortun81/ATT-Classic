@@ -1,5 +1,5 @@
 profession(393, {	-- Skinning
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		{
 			["questID"] = 768,	-- Gathering Leather
 			["qg"] = 3050,	-- Veren Tallstrider

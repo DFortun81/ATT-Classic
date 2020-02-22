@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ALTERAC_MOUNTAINS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(3505, {	-- Alterac Signet Ring
 					["questID"] = 512,	-- Noble Deaths
 					["races"] = ALLIANCE_ONLY,

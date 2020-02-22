@@ -1,5 +1,5 @@
 profession(165, {	-- Leatherworking
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(5141, {	-- Dragonscale Leatherworking (A)
 			["lvl"] = 40,
 			["requireSkill"] = 165,	-- Leatherworking

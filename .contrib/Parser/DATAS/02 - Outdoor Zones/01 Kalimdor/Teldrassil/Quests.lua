@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TELDRASSIL, {	-- Teldrassil
-			n(-17, {	-- Quests
+		m(TELDRASSIL, {
+			n(QUESTS, {
 				q(3519, {	-- A Friend in Need
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,

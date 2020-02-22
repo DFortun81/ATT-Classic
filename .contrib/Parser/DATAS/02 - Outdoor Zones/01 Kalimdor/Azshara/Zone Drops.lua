@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(AZSHARA, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(16219, {	-- Formula: Enchant Gloves - Greater Agility
 					["cr"] = 6201,	-- Legashi Rogue
 				}),

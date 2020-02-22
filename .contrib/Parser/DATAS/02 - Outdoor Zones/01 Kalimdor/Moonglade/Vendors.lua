@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MOONGLADE, {	-- Moonglade
-			n(-2, {	-- Vendors
+		m(MOONGLADE, {
+			n(VENDORS, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
 					["groups"] = {
 						i(14469),	-- Pattern: Runecloth Robe

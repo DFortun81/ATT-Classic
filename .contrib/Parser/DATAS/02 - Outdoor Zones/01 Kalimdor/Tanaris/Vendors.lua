@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TANARIS, {	-- Tanaris
-			n(-2, {	-- Vendors
+		m(TANARIS, {
+			n(VENDORS, {
 				n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["groups"] = {
 						i(6057),	-- Recipe: Nature Protection Potion

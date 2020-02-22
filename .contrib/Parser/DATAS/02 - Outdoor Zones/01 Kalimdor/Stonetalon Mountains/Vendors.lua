@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
-			n(-2, {	-- Vendors
+		m(STONETALON_MOUNTAINS, {
+			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

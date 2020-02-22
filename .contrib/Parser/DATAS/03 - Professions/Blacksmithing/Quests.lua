@@ -1,5 +1,5 @@
 profession(164, {	-- Blacksmithing
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(7652, {	-- A Blue Light Bargain
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["requireSkill"] = 164,	-- Blacksmithing

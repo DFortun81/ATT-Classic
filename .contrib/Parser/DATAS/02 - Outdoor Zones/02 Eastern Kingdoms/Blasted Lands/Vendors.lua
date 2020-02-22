@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BLASTED_LANDS, {	-- Blasted Lands
-			n(-2, {	-- Vendors
+		m(BLASTED_LANDS, {
+			n(VENDORS, {
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

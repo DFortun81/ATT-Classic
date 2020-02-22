@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(SWAMP_OF_SORROWS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(11205, {	-- Formula: Enchant Gloves - Advanced Herbalism
 					["crs"] = {
 						1081,	-- Mire Lord

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(FERALAS, {	-- Feralas
-			n(0, {	-- Zone Drops
+		m(FERALAS, {
+			n(ZONEDROPS, {
 				i(9589, {	-- Encrusted Minerals
 					["questID"] = 3128,	-- Natural Materials
 					["races"] = HORDE_ONLY,

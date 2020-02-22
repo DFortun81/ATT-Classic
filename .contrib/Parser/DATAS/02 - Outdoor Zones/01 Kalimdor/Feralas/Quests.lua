@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(FERALAS, {	-- Feralas
-			n(-17, {	-- Quests
+		m(FERALAS, {
+			n(QUESTS, {
 				q(2974, {	-- A Grim Discovery
 					["qg"] = 4544,	-- Krueg Skullsplitter
 					["races"] = HORDE_ONLY,

@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ALTERAC_MOUNTAINS, {	-- Alterac Mountains
+		m(ALTERAC_MOUNTAINS, {
 		}),
 	}),
 };

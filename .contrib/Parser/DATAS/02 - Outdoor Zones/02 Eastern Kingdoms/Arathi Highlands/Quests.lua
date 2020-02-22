@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ARATHI_HIGHLANDS, {	-- Arathi Highlands
-			n(-17, {	-- Quests
+		m(ARATHI_HIGHLANDS, {
+			n(QUESTS, {
 				q(695, {	-- An Apprentice's Enchantment
 					["qg"] = 2788,	-- Apprentice Kryten
 					["sourceQuest"] = 694,	-- Trelane's Defenses

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(STORMWIND_CITY, {	-- Stormwind City
-			n(-2, {	-- Vendors
+		m(STORMWIND_CITY, {
+			n(VENDORS, {
 				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

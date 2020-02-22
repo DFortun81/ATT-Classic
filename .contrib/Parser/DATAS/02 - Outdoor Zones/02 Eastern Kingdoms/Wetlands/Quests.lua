@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WETLANDS, {	-- Wetlands
-			n(-17, {	-- Quests
+		m(WETLANDS, {
+			n(QUESTS, {
 				q(304, {	-- A Grim Task
 					["qg"] = 1071,	-- Longbraid the Grim
 					["coord"] = { 49.8, 18.3, WETLANDS },

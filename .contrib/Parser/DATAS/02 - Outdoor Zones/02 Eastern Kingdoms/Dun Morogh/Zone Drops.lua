@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUN_MOROGH, {	-- Dun Morogh
-			n(0, {	-- Zone Drops
+		m(DUN_MOROGH, {
+			n(ZONEDROPS, {
 				i(2069, {	-- Black Bear Hide Vest
 					["cr"] = 1130,	-- Bjarn
 				}),

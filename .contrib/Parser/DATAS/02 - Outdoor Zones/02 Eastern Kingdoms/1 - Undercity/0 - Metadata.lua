@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(UNDERCITY, {	-- Undercity
+		m(UNDERCITY, {
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

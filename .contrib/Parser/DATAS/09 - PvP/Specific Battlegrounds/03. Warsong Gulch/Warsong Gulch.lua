@@ -41,7 +41,7 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendor
+						n(VENDORS, {
 							n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
 								["coord"] = { 61.6, 83.8, ASHENVALE },
 								["groups"] = {
@@ -114,7 +114,7 @@ _.PvP =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(8372, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
@@ -267,7 +267,7 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendor
+						n(VENDORS, {
 							n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["groups"] = {
@@ -340,7 +340,7 @@ _.PvP =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(8368, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,

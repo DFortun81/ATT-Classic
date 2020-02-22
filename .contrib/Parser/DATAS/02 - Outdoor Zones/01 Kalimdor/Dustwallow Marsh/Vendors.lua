@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
-			n(-2, {	-- Vendors
+		m(DUSTWALLOW_MARSH, {
+			n(VENDORS, {
 				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

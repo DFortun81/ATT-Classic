@@ -3,11 +3,11 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(ULDAMAN, { 	-- Uldaman
+	map(ULDAMAN, {
 		["description"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
 		["lvl"] = 35,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(2200, { -- Back to Uldaman
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
@@ -228,7 +228,7 @@ _.Instances = {
 					["lvl"] = 37,
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				{
 					["itemID"] = 7733,	-- Staff of Prehistoria
 					["cost"] = {

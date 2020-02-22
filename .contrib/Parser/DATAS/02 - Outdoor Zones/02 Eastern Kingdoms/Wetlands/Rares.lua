@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WETLANDS, {	-- Wetlands
-			n(-16, {	-- Rares
+		m(WETLANDS, {
+			n(RARES, {
 				n(2108, {	-- Garneg Charskull
 					["coords"] = {
 						{ 38.6, 46.2, WETLANDS },

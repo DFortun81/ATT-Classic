@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SILVERPINE_FOREST, {	-- Silverpine Forest
-			n(-2, {	-- Vendors
+		m(SILVERPINE_FOREST, {
+			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

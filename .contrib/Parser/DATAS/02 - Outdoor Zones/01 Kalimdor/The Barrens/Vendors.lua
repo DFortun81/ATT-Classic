@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THE_BARRENS, {	-- The Barrens
-			n(-2, {	-- Vendors
+		m(THE_BARRENS, {
+			n(VENDORS, {
 				n(3495, {	-- Gagsprocket <Engineering Goods>
 					["groups"] = {
 						i(18648),	-- Schematic: Green Firework				

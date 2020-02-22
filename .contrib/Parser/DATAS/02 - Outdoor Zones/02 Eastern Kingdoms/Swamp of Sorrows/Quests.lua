@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
-			n(-17, {	-- Quests
+		m(SWAMP_OF_SORROWS, {
+			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuests"] = {

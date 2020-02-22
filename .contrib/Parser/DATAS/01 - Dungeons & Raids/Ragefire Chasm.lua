@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(RAGEFIRE_CHASM, { 	-- Ragefire Chasm
+	map(RAGEFIRE_CHASM, {
 		["description"] = "Ragefire Chasm consists of a network of volcanic caverns that lie below the orcs' new capital city of Orgrimmar. Recently, rumors have spread that a cult loyal to the demonic Shadow Council has taken up residence within the Chasm's fiery depths. This cult, known as the Burning Blade, threatens the very sovereignty of Durotar. Many believe that the orc Warchief, Thrall, is aware of the Blade's existence and has chosen not to destroy it in the hopes that its members might lead him straight to the Shadow Council. Either way, the dark powers emanating from Ragefire Chasm could undo all that the orcs have fought to attain",
 		["coord"] = { 50.6, 51.6, ORGRIMMAR },
 		["lvl"] = 13,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(5726, {	-- Hidden Enemies [Pt 1]
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
@@ -112,7 +112,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(14396, {	-- Incantations from the Nether
 					["questID"] = 5725,	-- The Power to Destroy...
 					["races"] = HORDE_ONLY,

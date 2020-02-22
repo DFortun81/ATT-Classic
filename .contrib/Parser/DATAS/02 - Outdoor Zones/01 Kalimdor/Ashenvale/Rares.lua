@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ASHENVALE, {
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(3773, {	-- Akkrilus
 					["coords"] = {
 						{ 25.4, 60.8, ASHENVALE },

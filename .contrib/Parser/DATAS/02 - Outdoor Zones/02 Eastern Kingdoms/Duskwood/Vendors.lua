@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUSKWOOD, {	-- Duskwood
-			n(-2, {	-- Vendors
+		m(DUSKWOOD, {
+			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(LOCH_MODAN, {	-- Loch Modan
-			n(0, {	-- Zone Drop
+		m(LOCH_MODAN, {
+			n(ZONEDROPS, {
 				i(5319,  { -- Bashing Pauldrons
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 				}),

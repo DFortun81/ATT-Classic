@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SILVERPINE_FOREST, {	-- Silverpine Forest
-			n(-17, {	-- Quests
+		m(SILVERPINE_FOREST, {
+			n(QUESTS, {
 				q(530, {	-- A Husband's Revenge
 					["qg"] = 2050,	-- Raleigh Andrean
 					["sourceQuest"] = 441,	-- Raleigh and the Undercity

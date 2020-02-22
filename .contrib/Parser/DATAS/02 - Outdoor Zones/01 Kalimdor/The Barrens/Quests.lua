@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THE_BARRENS, {	-- The Barrens
-			n(-17, {	-- Quests
+		m(THE_BARRENS, {
+			n(QUESTS, {
 				q(6361, {	-- A Bundle of Hides
 					["qg"] = 3079,	-- Varg Windwhisper
 					["coord"] = { 45.82, 58.69, MULGORE },

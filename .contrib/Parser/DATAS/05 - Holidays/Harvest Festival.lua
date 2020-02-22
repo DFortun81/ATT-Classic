@@ -14,7 +14,7 @@ _.Holidays =
 				i(19997),	-- Harvest Nectar
 			},
 		}),
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			{
 				["questID"] = 8150,	-- Honoring a Hero
 				["qg"] = 15012,	-- Javnir Nashak
@@ -52,7 +52,7 @@ _.Holidays =
 				},
 			},
 		}),
-		n(-2, {	-- Vendor
+		n(VENDORS, {
 			["crs"] = {
 				15012,	-- Javnir Nashak
 				15011,	-- Wagner Hammerstrike

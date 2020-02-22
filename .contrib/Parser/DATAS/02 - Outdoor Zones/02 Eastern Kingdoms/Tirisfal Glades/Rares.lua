@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
-			n(-16, {	-- Rares
+		m(TIRISFAL_GLADES, {
+			n(RARES, {
 				n(1911, {	-- Deeb
 					["coord"] = { 58.8, 27.2, TIRISFAL_GLADES },
 					["groups"] = {

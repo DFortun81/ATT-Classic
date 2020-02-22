@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
-			n(-17, {	-- Quests
+		m(BLACKROCK_MOUNTAIN, {
+			n(QUESTS, {
 				q(9032, {	-- Bodley's Unfortunate Fate
 					["lvl"] = 58,
 					["qg"] = 16012,	-- Mokvar

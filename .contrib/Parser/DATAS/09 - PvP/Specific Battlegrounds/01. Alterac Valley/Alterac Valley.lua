@@ -9,7 +9,7 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["races"] = HORDE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(13218, {	-- Grunnda Wolfheart <Frostwolf Supply Officer>
 								["g"] = {
 									i(19099),	-- Glacial Blade
@@ -91,7 +91,7 @@ _.PvP =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(7281, {	-- Brotherly Love (Horde)
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
@@ -249,7 +249,7 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
-						n(-2, {	-- Vendors
+						n(VENDORS, {
 							n(13216, {	-- Gaelden Hammersmith <Stormpike Supply Officer>
 								["g"] = {
 									i(19100),	-- Electrified Dagger
@@ -331,7 +331,7 @@ _.PvP =
 								},
 							}),
 						}),
-						n(-17, {	-- Quests
+						n(QUESTS, {
 							q(7081, {	-- Alterac Valley Graveyards
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,

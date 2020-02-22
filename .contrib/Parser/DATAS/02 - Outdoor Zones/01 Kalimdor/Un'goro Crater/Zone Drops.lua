@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(UNGORO_CRATER, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
 						9477,	-- Cloned Ooze

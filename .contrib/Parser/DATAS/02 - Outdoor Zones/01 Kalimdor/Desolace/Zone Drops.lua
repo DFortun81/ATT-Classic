@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DESOLACE, {	-- Desolace
-			n(0, {	-- Zone Drops
+		m(DESOLACE, {
+			n(ZONEDROPS, {
 				i(2620, {	-- Augural Shroud
 					["cr"] = 4684,	-- Nether Sorceress
 				}),

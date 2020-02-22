@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BURNING_STEPPES, {	-- Blasted Lands
-			n(-2, {	-- Vendors
+		m(BURNING_STEPPES, {
+			n(VENDORS, {
 				n(9544, {	-- Yuka Screwspigot
 					["coord"] = { 66.0, 22.0, BURNING_STEPPES },
 					["groups"] = {

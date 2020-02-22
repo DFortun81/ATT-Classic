@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(BLACKFATHOM_DEEPS, { 	-- Blackfathom Deeps
+	map(BLACKFATHOM_DEEPS, {
 		["description"] = "Situated along the Zoram Strand of Ashenvale, Blackfathom Deeps was once a glorious temple dedicated to the night elves' moon-goddess, Elune. However, the great Sundering shattered the temple - sinking it beneath the waves of the Veiled Sea. There it remained untouched - until, drawn by its ancient power - the naga and satyr emerged to plumb its secrets. Legends hold that the ancient beast, Aku'mai, has taken up residence within the temple's ruins. Aku'mai, a favored pet of the primordial Old Gods, has preyed upon the area ever since. Drawn to Aku'mai's presence, the cult known as the Twilight's Hammer has also come to bask in the Old Gods' evil presence.",
 		["coord"] = { 14.0, 11.1, ASHENVALE },
 		["lvl"] = 19,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(6564, {	-- Allegiance to the Old Gods (1/2)
 					["provider"] = { "i", 16790 },	-- Damp Note
 					["maps"] = { ASHENVALE },
@@ -138,7 +138,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(1454, {	-- Axe of the Enforcer
 					["crs"] = {
 						4825,	-- Aku'mai Snapjaw

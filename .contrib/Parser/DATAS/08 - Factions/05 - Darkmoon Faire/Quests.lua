@@ -4,7 +4,7 @@
 _.Factions = 
 {
 	faction(909, {	-- Darkmoon Faire
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			q(7885,  {	-- Armor Kits
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 				["lvl"] = 40,

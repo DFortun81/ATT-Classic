@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(ASHENVALE, {	-- Ashenvale
-			n(-17, {	-- Quests
+		m(ASHENVALE, {
+			n(QUESTS, {
 				q(1025, {	-- An Aggressive Defense
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1023, -- Raene's Cleansing (2)

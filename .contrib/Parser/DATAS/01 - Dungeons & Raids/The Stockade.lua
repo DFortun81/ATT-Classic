@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(THE_STOCKADE, {	-- The Stockade
+	map(THE_STOCKADE, {
 		["description"] = "The Stockade is a high-security prison complex, hidden beneath the canal district of Stormwind city. Presided over by Warden Thelwater, the Stockade is home to petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land. Recently, a prisoner-led revolt has resulted in a state of pandemonium within the stockade - where the guards have been driven out and the convicts roam free. Warden Thelwater has managed to escape the holding area and is currently enlisting brave thrill-seekers to venture into the prison and kill the uprising's mastermind - the cunning felon, Bazil Thredd.",
 		["coord"] = { 39.77, 54.21, STORMWIND_CITY },
 		["lvl"] = 15,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(377, {	-- Crime and Punishment
 					["qg"] = 270,	-- Councilman Millstipe
 					["coord"] = { 72.0, 46.8, DUSKWOOD },
@@ -84,7 +84,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(1076),	-- Defias Renegade Ring
 				{
 					["itemID"] = 2909,	-- Red Wool Bandana

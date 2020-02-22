@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DARNASSUS, {	-- Darnassus
-			n(-2, {	-- Vendor
+		m(DARNASSUS, {
+			n(VENDORS, {
 				n(4168, {	-- Elynna <Tailoring Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 64.6, 21.6, DARNASSUS },

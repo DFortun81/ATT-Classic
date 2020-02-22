@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BURNING_STEPPES, {	-- Burning Steppes
-			n(-17, {	-- Quests
+		m(BURNING_STEPPES, {
+			n(QUESTS, {
 				q(7630, {	-- Arcanite
 					["qg"] = 14437, -- Gorzeeki Wildeyes
 					["sourceQuests"] = {

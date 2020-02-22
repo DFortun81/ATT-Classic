@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THOUSAND_NEEDLES, {	-- Thousand Needles
-			n(-17, {	-- Quests
+		m(THOUSAND_NEEDLES, {
+			n(QUESTS, {
 				q(1175, {	-- A Bump in the Road
 					["qg"] = 4629,	-- Trackmaster Zherin
 					["coord"] = { 81.6, 77.9, THOUSAND_NEEDLES },

@@ -3,10 +3,10 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(DIRE_MAUL, { 	-- Dire Maul
+	map(DIRE_MAUL, {
 		["lvl"] = 44,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",
 					["repeatable"] = true,
@@ -470,7 +470,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				["description"] = "The following items can drop from any boss in Dire Maul.",
 				["groups"] = {
 					{
@@ -525,7 +525,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
 					["description"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.\n\nThis can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.",
 				}),
@@ -540,7 +540,7 @@ _.Instances = {
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",
 				["groups"] = {
-					n(0, { 	-- Zone Drop
+					n(ZONEDROPS, {
 						i(18296, {	-- Marksman Bands
 							["crs"] = {
 								11454,	-- Wildspawn Betrayer
@@ -671,7 +671,7 @@ _.Instances = {
 			n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
 				["description"] = "This part of the instance can be accessed after clearing West or entering from the northern-most portal.",
 				["groups"] = {
-					n(0, { 	-- Zone Drop
+					n(ZONEDROPS, {
 						{
 							["itemID"] = 18250,	-- Gordok Shackle Key
 							["questID"] = 5525,	-- Free Knot!
@@ -814,12 +814,12 @@ _.Instances = {
 			n(-14, {	-- Capital Gardens [West - Elves] [Left Side]
 				["description"] = "This part of the instance can be accessed from the western-most portal. (left side)",
 				["groups"] = {
-					n(-2, {	-- Vendors
+					n(VENDORS, {
 						n(14371, {	-- Shen'dralar Provisioner
 							i(18487),	-- Pattern: Mooncloth Robe
 						}),
 					}),
-					n(0, {	-- Zone Drop
+					n(ZONEDROPS, {
 						i(18289, {	-- Barbed Thorn Necklace
 							["crs"] = {
 								11461,	-- Warpwood Guardian

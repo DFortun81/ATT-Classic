@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(UNDERCITY, {	-- Undercity
-			n(-2, {	-- Vendors
+		m(UNDERCITY, {
+			n(VENDORS, {
 				n(4604, {	-- Abigail Sawyer <Bow Merchant>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUSKWOOD, {	-- Duskwood
-			n(-16, {	-- Rares
+		m(DUSKWOOD, {
+			n(RARES, {
 				n(771, {  -- Commander Felstrom
 					["description"] = "Spawns in the Dawning Wood Catacombs",
 					["coords"] = {

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(UNGORO_CRATER, {	-- Un'Goro Crater
-			n(-17, {	-- Quests
+		m(UNGORO_CRATER, {
+			n(QUESTS, {
 				q(3941, {	-- A Gnome's Assistance
 					["qg"] = 8737,	-- Linken
 					["sourceQuest"] = 3914,	-- Linken's Sword

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THUNDER_BLUFF, {	-- Thunder Bluff
-			n(-17, {	-- Quests
+		m(THUNDER_BLUFF, {
+			n(QUESTS, {
 				q(7822, {	-- A Donation of Mageweave
 					["qg"] = 14728,	-- Rumstag Proudstrider
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth

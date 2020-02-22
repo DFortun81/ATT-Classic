@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(THE_HINTERLANDS, {	-- The Hinterlands
-			n(-2, {	-- Vendor
+		m(THE_HINTERLANDS, {
+			n(VENDORS, {
 				n(12958, {	-- Gigget Zipcoil <Trade Supplies>
 					["coord"] = { 34.6, 38.6, THE_HINTERLANDS },
 					["groups"] = {

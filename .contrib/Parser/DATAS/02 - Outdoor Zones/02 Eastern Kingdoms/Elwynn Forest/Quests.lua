@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ELWYNN_FOREST, {	-- Elwynn Forest
-			n(-17, {	-- Quests
+		m(ELWYNN_FOREST, {
+			n(QUESTS, {
 				q(5545, {	-- A Bundle of Trouble
 					["lvl"] = 5,
 					["races"] = ALLIANCE_ONLY,

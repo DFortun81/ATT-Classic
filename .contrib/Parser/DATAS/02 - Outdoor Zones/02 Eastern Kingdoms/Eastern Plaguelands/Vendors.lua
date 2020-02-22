@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
-			n(-2, {	-- Vendors
+		m(EASTERN_PLAGUELANDS, {
+			n(VENDORS, {
 				n(12941, {	-- Jase Farlane <Trade Supplies>
 					["coord"] = { 80.6, 57.6, EASTERN_PLAGUELANDS },
 					["groups"] = {

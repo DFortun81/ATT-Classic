@@ -3,11 +3,11 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(SCARLET_MONASTERY, { 	-- Scarlet Monastery
+	map(SCARLET_MONASTERY, {
 		["description"] = "The Monastery was once a proud bastion of Lordaeron's priesthood - a center for learning and enlightenment. With the rise of the undead Scourge during the Third War, the peaceful Monastery was converted into a stronghold of the fanatical Scarlet Crusade. The Crusaders are intolerant of all non-human races, regardless of alliance or affiliation. They believe that any and all outsiders are potential carriers of the undead plague - and must be destroyed. Reports indicate that adventurers who enter the monastery are forced to contend with Scarlet Commander Mograine - who commands a large garrison of fanatically devoted warriors. However, the monastery's true master is High Inquisitor Whitemane - a fearsome priestess who possesses the ability to resurrect fallen warriors to do battle in her name.",
 		["lvl"] = 25,
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(1113, {	-- Hearts of Zeal
 					["sourceQuest"] = 1109,	-- Going, Going, Guano!
 					["qg"] = 2055,	-- Master Apothecary Faranell <Royal Apothecary Society>
@@ -45,7 +45,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(7759),	-- Archon Chestpiece
 				i(7728),	-- Beguiler Robes
 				i(7753),	-- Bloodspiller
@@ -78,7 +78,7 @@ _.Instances = {
 				i(7757),	-- Windweaver Staff
 			}),
 			n(-85, {	-- Graveyard
-				n(-17, {	-- Quests
+				n(QUESTS, {
 					q(1051, {	-- Vorrel's Revenge
 						["qg"] = 3981,	-- Vorrel Sengutz
 						["cost"] = {
@@ -100,7 +100,7 @@ _.Instances = {
 						},
 					}),
 				}),
-				n(-16, {	-- Rares
+				n(RARES, {
 					n(6488, {	-- Fallen Champion
 						i(7690),	-- Ebon Vise
 						i(7691),	-- Embalmed Shroud
@@ -138,7 +138,7 @@ _.Instances = {
 			n(-86, {	-- Library
 				["lvl"] = 28,
 				["groups"] = {
-					n(-17, {	-- Quests
+					n(QUESTS, {
 						q(1049, {	-- Compendium of the Fallen
 							["qg"] = 3978,	-- Sage Truthseeker
 							["cost"] = {

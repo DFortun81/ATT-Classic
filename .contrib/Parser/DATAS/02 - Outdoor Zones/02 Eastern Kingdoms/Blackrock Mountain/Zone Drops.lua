@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
-			n(0, {	-- Zone Drops
+		m(BLACKROCK_MOUNTAIN, {
+			n(ZONEDROPS, {
 				i(13254, {	-- Astral Guard
 					["cr"] = 9046,	-- Scarshield Quartermaster <Scarshield Legion>
 					["u"] = 2,

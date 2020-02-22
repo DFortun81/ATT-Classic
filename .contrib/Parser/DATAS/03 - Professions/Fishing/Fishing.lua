@@ -1,5 +1,5 @@
 profession(356, {	-- Fishing
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		{
 			["questID"] = 8194,	-- Apprentice Angler
 			["qg"] = 15078,	-- Jang <Fishmaster Apprentice>

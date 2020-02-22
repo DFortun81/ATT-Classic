@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
-			n(-16, {	-- Rares
+		m(STRANGLETHORN_VALE, {
+			n(RARES, {
 				n(2541, {	-- Lord Sakrasis
 					["coord"] = { 28.6, 62.2, STRANGLETHORN_VALE },
 					["groups"] = {

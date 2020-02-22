@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THUNDER_BLUFF, {	-- Thunder Bluff
-			n(-2, {	-- Vendors
+		m(THUNDER_BLUFF, {
+			n(VENDORS, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

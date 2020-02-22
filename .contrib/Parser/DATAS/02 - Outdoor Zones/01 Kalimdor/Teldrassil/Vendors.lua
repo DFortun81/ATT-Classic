@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TELDRASSIL, {	-- Teldrassil
-			n(-2, {	-- Vendors
+		m(TELDRASSIL, {
+			n(VENDORS, {
 				n(10118, {	-- Nessa Shadowsong <Fishing Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

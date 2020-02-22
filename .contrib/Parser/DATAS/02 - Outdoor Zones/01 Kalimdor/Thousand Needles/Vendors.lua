@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THOUSAND_NEEDLES, {	-- Thousand Needles
-			n(-2, {	-- Vendors
+		m(THOUSAND_NEEDLES, {
+			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

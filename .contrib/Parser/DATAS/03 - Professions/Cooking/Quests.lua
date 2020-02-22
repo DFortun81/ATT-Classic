@@ -1,5 +1,5 @@
 profession(185, {	-- Cooking
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(384, {	-- Beer Basted Boar Ribs
 			["lvl"] = 5,
 			["requireSkill"] = 185,	-- Cooking

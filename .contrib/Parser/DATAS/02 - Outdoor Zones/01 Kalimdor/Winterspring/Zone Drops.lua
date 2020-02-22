@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
 					["cr"] = 7524,	-- Anguished Highborne
 				}),

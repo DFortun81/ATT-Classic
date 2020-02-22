@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(WINTERSPRING, {	-- Winterspring
-			n(-2, {	-- Vendors
+		m(WINTERSPRING, {
+			n(VENDORS, {
 				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
 					["groups"] = {
 						i(13480),	-- Recipe: Major Healing Potion		

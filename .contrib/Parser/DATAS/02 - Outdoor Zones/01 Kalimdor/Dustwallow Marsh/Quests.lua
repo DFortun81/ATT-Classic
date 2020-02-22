@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
-			n(-17, {	-- Quests
+		m(DUSTWALLOW_MARSH, {
+			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
 					["qg"] = 4794,	-- Morgan Stern
 					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },

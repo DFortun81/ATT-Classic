@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ASHENVALE, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(16408, {	-- Befouled Water Globe
 					["questID"] = 1918,	-- The Befouled Element
 					["coord"] = { 50.8, 71.6, ASHENVALE },

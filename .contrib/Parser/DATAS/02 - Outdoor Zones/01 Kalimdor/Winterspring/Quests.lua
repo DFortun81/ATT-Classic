@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(WINTERSPRING, {	-- Winterspring
-			n(-17, {	-- Quests
+		m(WINTERSPRING, {
+			n(QUESTS, {
 				q(6606, {	-- A Little Luck
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,

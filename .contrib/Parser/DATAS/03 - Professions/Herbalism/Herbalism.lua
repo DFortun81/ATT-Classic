@@ -1,6 +1,6 @@
 profession(182, {	-- Herbalism
 	recipe(2383),	-- Find Herbs
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		{
 			["questID"] = 866,	-- Root Samples
 			["qg"] = 3446,	-- Mebok Mizzyrix

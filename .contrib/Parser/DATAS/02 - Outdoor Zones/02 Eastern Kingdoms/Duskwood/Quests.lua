@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUSKWOOD, {	-- Duskwood
-			n(-17, {	-- Quests
+		m(DUSKWOOD, {
+			n(QUESTS, {
 				q(231, {	-- A Daughter's Love
 					["qg"] = 576,	-- Watcher Ladimore
 					["races"] = ALLIANCE_ONLY,

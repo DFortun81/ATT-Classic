@@ -12,7 +12,7 @@ profession(129, {	-- First Aid
 	recipe(18629),	-- Runecloth Bandage
 	recipe(18630),	-- Heavy Runecloth Bandage
 	recipe(23787),	-- Powerful Anti-Venom
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(6625, {	-- Alliance Trauma
 			["lvl"] = 35,
 			["races"] = ALLIANCE_ONLY,

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
-			n(-2, {	-- Vendor
+		m(WESTERN_PLAGUELANDS, {
+			n(VENDORS, {
 				n(11056, {	-- Alchemist Arbington
 					["coord"] = { 42.6, 83.8, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,

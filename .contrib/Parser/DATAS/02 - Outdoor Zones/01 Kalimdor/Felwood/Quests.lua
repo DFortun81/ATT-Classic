@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(FELWOOD, {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(5242, {	-- A Final Blow
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,

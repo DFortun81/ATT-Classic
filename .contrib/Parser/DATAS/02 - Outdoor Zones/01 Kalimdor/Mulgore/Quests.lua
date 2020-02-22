@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MULGORE, {	-- Mulgore
-			n(-17, {	-- Quests
+		m(MULGORE, {
+			n(QUESTS, {
 				q(752, {	-- A Humble Task (1/2)
 					["qg"] = 2981,	-- Chief Hawkwind
 					["races"] = HORDE_ONLY,

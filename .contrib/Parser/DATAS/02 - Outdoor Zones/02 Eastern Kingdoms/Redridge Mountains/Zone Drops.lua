@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
-			n(0, {	-- Zone Drops
+		m(REDRIDGE_MOUNTAINS, {
+			n(ZONEDROPS, {
 				i(3014, {	-- Battleworn Axe
 					["questID"] = 20,	-- Blackrock Menace
 					["races"] = ALLIANCE_ONLY,

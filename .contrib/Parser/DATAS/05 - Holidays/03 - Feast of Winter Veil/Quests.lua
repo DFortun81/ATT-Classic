@@ -5,7 +5,7 @@ _.Holidays =
 {
 	n(-61, {	-- Feast of Winter Veil
 		["g"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(6984, { -- A Smokywood Pastures' Thank You! (Horde)
 					["qg"] = 13418, -- Kaymard Copperpinch <Smokywood Pastures>
 					["races"] = HORDE_ONLY,

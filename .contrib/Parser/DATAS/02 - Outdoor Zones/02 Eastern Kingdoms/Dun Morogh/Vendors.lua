@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUN_MOROGH, {	-- Dun Morogh
-			n(-2, {	-- Vendors
+		m(DUN_MOROGH, {
+			n(VENDORS, {
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

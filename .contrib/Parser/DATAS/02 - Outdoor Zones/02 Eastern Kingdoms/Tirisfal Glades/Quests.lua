@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
-			n(-17, {	-- Quests
+		m(TIRISFAL_GLADES, {
+			n(QUESTS, {
 				q(361, {	-- A Letter Undelivered
 					["provider"] = { "i", 2839 },	-- A Letter to Yvette
 					["races"] = HORDE_ONLY,

@@ -84,7 +84,7 @@ profession(202, {	-- Engineering
 					}
 				}
 			},
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				i(11423, {	-- Gnome Engineer's Renewal Gift
 					["description"] = "If you destroy your Gnomish Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
 					["groups"] = {

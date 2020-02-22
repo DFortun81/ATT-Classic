@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
-			n(-17, {	-- Quests
+		m(IRONFORGE, {
+			n(QUESTS, {
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { 

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
-			n(-17, {	-- Quests
+		m(WESTERN_PLAGUELANDS, {
+			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands!
 					["qg"] = 2198, -- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },

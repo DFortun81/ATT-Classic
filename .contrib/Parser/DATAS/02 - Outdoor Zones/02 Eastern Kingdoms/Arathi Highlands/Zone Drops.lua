@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(4527, {	-- Azure Agate
 					["questID"] = 694,	-- Trelane's Defenses
 					["cr"] = 2570,	-- Boulderfist Shaman

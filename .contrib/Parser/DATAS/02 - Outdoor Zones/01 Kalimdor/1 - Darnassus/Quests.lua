@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DARNASSUS, {	-- Darnassus
-			n(-17, {	-- Quests
+		m(DARNASSUS, {
+			n(QUESTS, {
 				q(7799, {	-- A Donation of Mageweave
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth

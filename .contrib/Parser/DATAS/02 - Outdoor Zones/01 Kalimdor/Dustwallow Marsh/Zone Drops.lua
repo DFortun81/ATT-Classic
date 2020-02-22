@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(5775, {	-- Pattern: Black Silk Pack
 					["cr"] = 4834,	-- Theramore Infiltrator
 				}),

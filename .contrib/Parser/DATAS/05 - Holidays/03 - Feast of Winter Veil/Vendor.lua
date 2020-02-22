@@ -5,7 +5,7 @@ _.Holidays =
 {
 	n(-61, {	-- Feast of Winter Veil
 		["g"] = {
-			n(-2, {	-- Vendors
+			n(VENDORS, {
 				["groups"] = {
 					n(13433, { -- Wulmort Jinglepocket <Smokywood Pastures>
 						["races"] = ALLIANCE_ONLY,

@@ -3,13 +3,13 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(TEMPLE_OF_AHNQIRAJ, { 	-- Temple of Ahn'Qiraj
+	map(TEMPLE_OF_AHNQIRAJ, {
 		["u"] = 3,	-- Added in later phase
 		["description"] = "Dark whispers ride on the winds of Silithus desert. An old god stirs in his wretched lair and the entire world shall soon be the target of his wrath.\n\nAfter thousands of years of slumber, the old god, C'thun has awakened and is quickly regenerating his power. Once he has reached full potential nothing will be able to stop him. The dragons that so humbly sacrificed themselves so long ago to imprison C'thun are weakened or enslaved in the temple, so the charge of protecting the land falls to other heroes.\n\nHeroes must enter Temple of Ahn'Qiraj, challenge C'thun's most wicked servants, and slay a god. The road will not be easy and it is wrought with peril at every turn. Will the heroes turn back now or face C'thun in his mighty lair and put an end to him once and for all?",
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				faction(910, { 	-- Quests / Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 				}),
@@ -416,7 +416,7 @@ _.Instances = {
 					}),
 				}),
 			}),
-			n(-1, {	-- Common Boss Drops
+			n(COMMON_BOSS_DROPS, {
 				i(20736, {	-- Formula: Enchant Cloak - Dodge
 					["crs"] = {
 						15516,	-- Battleguard Sartura
@@ -568,7 +568,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(21218, {	-- Blue Qiraji Resonating Crystal
 					["crs"] = {
 						15277,	-- Anubisath Defender
@@ -745,7 +745,7 @@ _.Instances = {
 			n(-20, {	-- Silithid Royalty
 				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
 				["groups"] = {
-					n(-1, {	-- Common Boss Drops
+					n(COMMON_BOSS_DROPS, {
 						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings",
 						["crs"] = {
 							15511,	-- Lord Kri

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(17114, {	-- Araj's Phylactery Shard
 					["allianceQuestID"] = 211,	-- Alas, Andorhal
 					["hordeQuestID"] = 105,	-- Alas, Andorhal

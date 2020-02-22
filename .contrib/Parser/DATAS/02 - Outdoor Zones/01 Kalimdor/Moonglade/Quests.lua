@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MOONGLADE, {	-- Moonglade
-			n(-17, {	-- Quests
+		m(MOONGLADE, {
+			n(QUESTS, {
 				{
 					["questID"] = 5527,	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DUROTAR, {	-- Durotar
-			n(-2, {	-- Vendors
+		m(DUROTAR, {
+			n(VENDORS, {
 				n(3881, {	-- Grimtak <Butcher>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

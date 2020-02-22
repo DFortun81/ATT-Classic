@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(SILITHUS, {	-- Silithus
-			n(-2, {	-- Vendors
+		m(SILITHUS, {
+			n(VENDORS, {
 				n(15293, {	-- Aendel Windspear
 					i(22769, {	-- Pattern: Bramblewood Belt
 						["u"] = 3,	-- Added in later phase (AQ)

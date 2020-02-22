@@ -3,12 +3,12 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(DEADMINES, { 	-- Deadmines
+	map(DEADMINES, {
 		["description"] = "Once the greatest gold production center in the human lands, the Dead Mines were abandoned when the Horde razed Stormwind city during the First War. Now the Defias Brotherhood has taken up residence and turned the dark tunnels into their private sanctum. It is rumored that the thieves have conscripted the clever goblins to help them build something terrible at the bottom of the mines - but what that may be is still uncertain. Rumor has it that the way into the Deadmines lies through the quiet, unassuming village of Moonbrook.",
 		["coord"] = { 42.2, 82.6, WESTFALL },
 		["lvl"] = 10,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				q(168, {	-- Collecting Memories
 					["qg"] = 656,	-- Wilder Thistlenettle
 					["coord"] = { 65.4, 21.2, STORMWIND_CITY },
@@ -86,7 +86,7 @@ _.Instances = {
 					},
 				}),
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(10401, {	-- Blackened Defias Gloves
 					["crs"] = {
 						634,	-- Defias Overseer

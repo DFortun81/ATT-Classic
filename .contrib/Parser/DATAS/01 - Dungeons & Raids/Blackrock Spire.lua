@@ -2,11 +2,11 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 _.Instances = {
-	map(BLACKROCK_SPIRE, {	-- Blackrock Spire
+	map(BLACKROCK_SPIRE, {
 		["description"] = "The mighty fortress carved within the fiery bowels of Blackrock Mountain was designed by the master dwarf-mason, Franclorn Forgewright. Intended to be the symbol of Dark Iron power, the fortress was held by the sinister dwarves for centuries. However, Nefarian - the cunning son of the dragon, Deathwing - had other plans for the great keep. He and his draconic minions took control of the upper Spire and made war on the dwarves' holdings in the mountain's volcanic depths. Realizing that the dwarves were led by the mighty fire elemental, Ragnaros - Nefarian vowed to crush his enemies and claim the whole of Blackrock mountain for himself.",
 		["lvl"] = 50,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["questID"] = 6601,	-- Ascension...
 					["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
@@ -784,7 +784,7 @@ _.Instances = {
 					["lvl"] = 57,
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				{
 					["itemID"] = 22138,	-- Blackrock Bracer
 					["questID"] = 8994,	-- Final Preparations

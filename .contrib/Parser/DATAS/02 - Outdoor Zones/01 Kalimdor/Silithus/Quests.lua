@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(SILITHUS, {	-- Silithus
-			n(-17, {	-- Quests
+		m(SILITHUS, {
+			n(QUESTS, {
 				q(9248, {	-- A Humble Offering
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 54,

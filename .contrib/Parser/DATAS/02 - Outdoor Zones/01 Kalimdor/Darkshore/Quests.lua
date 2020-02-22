@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DARKSHORE, {	-- Darkshore
-			n(-17, {	-- Quests
+		m(DARKSHORE, {
+			n(QUESTS, {
 				q(986, {	-- A Lost Master
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(LOCH_MODAN, {	-- Loch Modan
-			n(-17, {	-- Quests
+		m(LOCH_MODAN, {
+			n(QUESTS, {
 				q(250, {	-- A Dark Threat Looms (1/7)
 					["qg"] = 1093,	-- Chief Engineer Hinderweir VII
 					["coord"] = { 46, 13.6, LOCH_MODAN },

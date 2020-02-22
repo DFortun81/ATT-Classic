@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ELWYNN_FOREST, {	-- Elwynn Forest
-			n(-16, {	-- Rares
+		m(ELWYNN_FOREST, {
+			n(RARES, {
 				n(472, {	-- Fedfennel
 					["coord"] = { 68.0, 40.6, ELWYNN_FOREST },
 					["groups"] = {

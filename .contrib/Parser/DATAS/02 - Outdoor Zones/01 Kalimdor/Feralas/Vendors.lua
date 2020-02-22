@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(FERALAS, {	-- Feralas
-			n(-2, {	-- Vendors
+		m(FERALAS, {
+			n(VENDORS, {
 				n(6576, {	-- Brienna Starglow <Tailoring Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

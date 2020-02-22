@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(SILITHUS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(20546, {	-- Pattern: Runed Stygian Leggings
 					["u"] = 3,	-- Added in later phase (AQ)
 					["cr"] = 11881,	-- Twilight Geolord

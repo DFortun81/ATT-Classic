@@ -4,7 +4,7 @@
 _.Holidays =
 {
 	n(-47, {	-- Lunar Festival
-		n(-17, {	-- Quests
+		n(QUESTS, {
 			q(8647, {	-- Bellowrage the Elder
 				["isYearly"] = true,
 				["qg"] = 15563,	-- Elder Bellowrage

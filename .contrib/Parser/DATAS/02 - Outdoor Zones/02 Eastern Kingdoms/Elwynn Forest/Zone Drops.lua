@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ELWYNN_FOREST, {	-- Elwynn Forest
-			n(0, {	-- Zone Drops
+		m(ELWYNN_FOREST, {
+			n(ZONEDROPS, {
 				i(1256, {	-- Crystal Kelp Frond
 					["questID"] = 112,	-- Collecting Kelp
 					["races"] = ALLIANCE_ONLY,

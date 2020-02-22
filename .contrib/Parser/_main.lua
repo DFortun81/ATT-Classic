@@ -131,6 +131,13 @@ UNDEAD = 5;
 TAUREN = 6;
 TROLL = 8;
 
+-- Common Custom NPCs used for headers
+COMMON_BOSS_DROPS = -1;
+QUESTS = -17;
+RARES = -16;
+VENDORS = -2;
+ZONEDROPS = 0;
+
 -- Helper Tables
 ALLIANCE_ONLY = {
 	HUMAN,

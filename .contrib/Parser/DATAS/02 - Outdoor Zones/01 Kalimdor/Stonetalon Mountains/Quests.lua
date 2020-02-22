@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
-			n(-17, {	-- Quests
+		m(STONETALON_MOUNTAINS, {
+			n(QUESTS, {
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuest"] = 1085,	-- On Guard in Stonetalon

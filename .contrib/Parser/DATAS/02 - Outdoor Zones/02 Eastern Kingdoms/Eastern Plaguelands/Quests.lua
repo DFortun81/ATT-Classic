@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
-			n(-17, {	-- Quests
+		m(EASTERN_PLAGUELANDS, {
+			n(QUESTS, {
 				q(5503, {	-- Argent Dawn Commission
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },

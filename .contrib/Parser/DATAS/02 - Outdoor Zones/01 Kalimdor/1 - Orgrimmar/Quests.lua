@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(ORGRIMMAR, {	-- Orgrimmar
-			n(-17, {	-- Quests
+		m(ORGRIMMAR, {
+			n(QUESTS, {
 				q(7831, {	-- A Donation of Mageweave
 					["qg"] = 14726,	-- Rashona Straglash
 					["cost"] = { { "i", 4338, 60 } },	-- Mageweave Cloth

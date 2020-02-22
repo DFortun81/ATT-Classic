@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
-			n(0, {	-- Zone Drops
+		m(TIRISFAL_GLADES, {
+			n(ZONEDROPS, {
 				i(2839, {	-- A Letter to Yvette
 					["questID"] = 361,	-- A Letter Undelivered
 					["races"] = HORDE_ONLY,

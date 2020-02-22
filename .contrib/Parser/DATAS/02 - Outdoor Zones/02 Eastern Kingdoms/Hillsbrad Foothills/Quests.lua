@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
-			n(-17, {	-- Quests
+		m(HILLSBRAD_FOOTHILLS, {
+			n(QUESTS, {
 				q(565, {	-- Bartolo's Yeti Fur Cloak
 					["qg"] = 2438,	-- Bartolo Ginsetti
 					["coord"] = { 49.4, 55.5, HILLSBRAD_FOOTHILLS },

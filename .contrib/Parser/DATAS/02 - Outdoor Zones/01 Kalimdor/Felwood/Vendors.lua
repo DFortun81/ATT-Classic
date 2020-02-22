@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(FELWOOD, {	-- Felwood
-			n(-2, {	-- Vendors
+		m(FELWOOD, {
+			n(VENDORS, {
 				n(2806, {	-- Bale <General Goods>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

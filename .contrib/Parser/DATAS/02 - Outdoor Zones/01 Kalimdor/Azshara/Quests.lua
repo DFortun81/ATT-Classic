@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(AZSHARA, {	-- Azshara
-			n(-17, {	-- Quests
+		m(AZSHARA, {
+			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
 					["lvl"] = 48,
 					["repeatable"] = true,

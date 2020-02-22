@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(THE_HINTERLANDS, {	-- The Hinterlands
-			n(-17, {	-- Quests
+		m(THE_HINTERLANDS, {
+			n(QUESTS, {
 				q(77, {	-- A Sticky Situation
 					["qg"] = 7801,	-- Gilveradin Sunchaser
 					["sourceQuest"] = 650,	-- Ripple Recovery

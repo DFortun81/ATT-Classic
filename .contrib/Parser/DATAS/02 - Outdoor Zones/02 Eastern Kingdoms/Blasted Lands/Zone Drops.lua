@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(BLASTED_LANDS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(8394, {	-- Basilisk Brain
 					["crs"] = {
 						8302,	-- Deatheye

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SILVERPINE_FOREST, {	-- Silverpine Forest
-			n(-16, {	-- Rares
+		m(SILVERPINE_FOREST, {
+			n(RARES, {
 				n(2283, {	-- Ravenclaw Regent
 					["coord"] = { 57.6, 69.8, SILVERPINE_FOREST },
 					["groups"] = {

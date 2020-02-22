@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
+		m(IRONFORGE, {
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 			["isRaid"] = true,

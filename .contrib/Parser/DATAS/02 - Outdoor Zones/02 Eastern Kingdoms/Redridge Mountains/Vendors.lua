@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
-			n(-2, {	-- Vendors
+		m(REDRIDGE_MOUNTAINS, {
+			n(VENDORS, {
 				n(777, {	-- Amy Davenport <Tradeswoman>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

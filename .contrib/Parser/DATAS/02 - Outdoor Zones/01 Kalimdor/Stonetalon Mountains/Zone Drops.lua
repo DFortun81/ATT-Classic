@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(STONETALON_MOUNTAINS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(6839, {	-- Charred Horn
 					["questID"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,

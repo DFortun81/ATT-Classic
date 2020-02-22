@@ -1022,7 +1022,7 @@ profession(197, {	-- Tailoring
 			}
 		}
 	},
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
 			["requireSkill"] = 197,	-- Tailoring

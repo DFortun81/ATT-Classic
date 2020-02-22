@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WESTFALL, {	-- Westfall
-			n(-16, {	-- Rares
+		m(WESTFALL, {
+			n(RARES, {
 				n(520, {	-- Brack
 					["coords"] = {
 						{ 55.2, 13.4, WESTFALL },

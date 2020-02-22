@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SILVERPINE_FOREST, {	-- Silverpine Forest
-			n(0, {	-- Zone Drops
+		m(SILVERPINE_FOREST, {
+			n(ZONEDROPS, {
 				i(3317, {	-- A Talking Head
 					["questID"] = 460,	-- Resting in Pieces
 					["races"] = HORDE_ONLY,

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(THE_HINTERLANDS, {	-- The Hinterlands
-			n(-16, {	-- Rares
+		m(THE_HINTERLANDS, {
+			n(RARES, {
 				n(8217, {	-- Mith'rethis the Enchanter
 					["coords"] = {
 						{ 58.8, 71.2, THE_HINTERLANDS },

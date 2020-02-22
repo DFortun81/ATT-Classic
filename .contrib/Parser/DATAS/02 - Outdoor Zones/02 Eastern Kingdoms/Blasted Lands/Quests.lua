@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BLASTED_LANDS, {	-- Blasted Lands
-			n(-17, {	-- Quests
+		m(BLASTED_LANDS, {
+			n(QUESTS, {
 				q(2583, {	-- A Boar's Vitality
 					["qg"] = 7505,	-- Bloodmage Drazial
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },

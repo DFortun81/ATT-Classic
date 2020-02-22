@@ -3,11 +3,11 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(BLACKROCK_DEPTHS, { 	-- Blackrock Depths
+	map(BLACKROCK_DEPTHS, {
 		["description"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		["lvl"] = 48,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["itemID"] = 18628,	-- Thorium Brotherhood Contract
 					["questID"] = 7604,	-- A Binding Contract
@@ -759,7 +759,7 @@ _.Instances = {
 					["lvl"] = 48,
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				{
 					["itemID"] = 11468,	-- Dark Iron Fanny Pack
 					["questID"] = 4286,	-- The Good Stuff

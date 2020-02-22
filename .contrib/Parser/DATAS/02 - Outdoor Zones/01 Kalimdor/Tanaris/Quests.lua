@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TANARIS, {	-- Tanaris
-			n(-17, {	-- Quests
+		m(TANARIS, {
+			n(QUESTS, {
 				q(2750, {	-- A Bad Egg
 					["lvl"] = 42,
 					["repeatable"] = true,

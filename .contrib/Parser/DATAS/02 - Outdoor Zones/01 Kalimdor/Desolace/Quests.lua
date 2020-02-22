@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DESOLACE, {	-- Desolace
-			n(-17, {	-- Quests
+		m(DESOLACE, {
+			n(QUESTS, {
 				q(1433, {	-- Alliance Relations
 					["qg"] = 5641,	-- Takata Steelblade
 					["sourceQuest"] = 1432,	-- Alliance Relations

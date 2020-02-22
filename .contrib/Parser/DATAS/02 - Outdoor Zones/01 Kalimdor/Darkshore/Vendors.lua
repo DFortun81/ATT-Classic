@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DARKSHORE, {	-- Darkshore
-			n(-2, {	-- Vendors
+		m(DARKSHORE, {
+			n(VENDORS, {
 				n(4307, {	-- Heldan Galesong <Fisherman>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 37.0, 56.4, DARKSHORE },

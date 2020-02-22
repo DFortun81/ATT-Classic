@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(FELWOOD, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
 						7092,	-- Tainted Ooze

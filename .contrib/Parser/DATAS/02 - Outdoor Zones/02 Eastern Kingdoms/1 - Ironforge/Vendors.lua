@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(IRONFORGE, {	-- Ironforge
-			n(-2, {	-- Vendors
+		m(IRONFORGE, {
+			n(VENDORS, {
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

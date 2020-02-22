@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(TANARIS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
 					["crs"] = {
 						5623,	-- Wastewander Assassin

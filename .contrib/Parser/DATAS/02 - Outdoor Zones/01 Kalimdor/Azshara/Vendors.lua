@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(AZSHARA, {	-- Azshara
-			n(-2, {	-- Vendor
+		m(AZSHARA, {
+			n(VENDORS, {
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplier>
 					["coord"] = { 45.2, 90.8, AZSHARA },
 					["groups"] = {

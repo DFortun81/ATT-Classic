@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MULGORE, {	-- Mulgore
-			n(-2, {	-- Vendors
+		m(MULGORE, {
+			n(VENDORS, {
 				n(5940, {	-- Harn Longcast <Fishing Supplies>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(6663, {	-- Recipe: Elixir of Giant Growth
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),

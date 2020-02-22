@@ -3,13 +3,13 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(ZULGURUB, { 	-- Zul'Gurub
+	map(ZULGURUB, {
 		["u"] = 3,	-- Added in later phase
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["itemID"] = 18330,	-- Arcanum of Focus
 					["groups"] = {
@@ -421,7 +421,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(0, {		-- Zone Drop
+			n(ZONEDROPS, {
 				i(19727),	-- Blood Scythe
 				i(19708),	-- Blue Hakkari Bijou
 				i(19713),	-- Bronze Hakkari Bijou

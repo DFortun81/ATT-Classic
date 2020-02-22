@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ALTERAC_MOUNTAINS, {	-- Alterac Mountains
-			n(-17, {	-- Quests
+		m(ALTERAC_MOUNTAINS, {
+			n(QUESTS, {
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
 					["coord"] = { 50.8, 58.8, HILLSBRAD_FOOTHILLS },

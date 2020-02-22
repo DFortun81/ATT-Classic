@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(ASHENVALE, {	-- Ashenvale
-			n(-2, {	-- Vendor
+		m(ASHENVALE, {
+			n(VENDORS, {
 				n(3951, {	-- Bhaldaran Ravenshade <Bowyer>
 					["coord"] = { 50.3, 67.2, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,

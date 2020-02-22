@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(STRANGLETHORN_VALE, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(3862, {  -- Aged Gorilla Sinew
 					["questID"] = 571,	-- Mok'thardin's Enchantment
 					["cr"] = 1557,	-- Elder Mistvale Gorilla

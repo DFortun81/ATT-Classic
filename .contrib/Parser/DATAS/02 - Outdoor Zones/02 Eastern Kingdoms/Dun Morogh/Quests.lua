@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(DUN_MOROGH, {	-- Dun Morogh
-			n(-17, {	-- Quests
+		m(DUN_MOROGH, {
+			n(QUESTS, {
 				q(319, {	-- A Favor for Evershine
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,

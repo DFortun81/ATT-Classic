@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(STORMWIND_CITY, {	-- Stormwind City
-			n(-17, {	-- Quests
+		m(STORMWIND_CITY, {
+			n(QUESTS, {
 				q(7794, {	-- A Donation of Mageweave
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["races"] = ALLIANCE_ONLY,

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BADLANDS, {	-- Badlands
-			n(-17, {	-- Quests
+		m(BADLANDS, {
+			n(QUESTS, {
 				q(719, {	-- A Dwarf and His Tools
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
 					["coord"] = { 53.4, 43.2, BADLANDS },

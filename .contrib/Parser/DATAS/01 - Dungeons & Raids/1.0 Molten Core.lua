@@ -3,15 +3,14 @@
 -----------------------------------------------------
 
 _.Instances = {
-	map(MOLTEN_CORE, { 	-- Molten Core
+	map(MOLTEN_CORE, {
 		["description"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
-		--["coord"] = { , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
 		["lvl"] = 50,
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["isRaid"] = true,
 		["groups"] = {
-			n(-17, {	-- Quests
+			n(QUESTS, {
 				{
 					["questID"] = 7633,	-- An Introduction
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
@@ -26,11 +25,10 @@ _.Instances = {
 						7487,	-- Attunement to the Core [Original??]
 					},
 					["qg"] = 14387,	-- Lothos Riftwaker
-					--["coord"] = { , BLACKROCK_MOUNTAIN },	-- TODO: Blackrock Mountain MapID and location
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.\n\nNOTE: This is mandatory in most raiding guilds.",
 					["lvl"] = 55,
 					["maps"] = {
-						BLACKROCK_DEPTHS,	-- TODO: Blackrock Depths MapID
+						BLACKROCK_DEPTHS,
 						BLACKROCK_MOUNTAIN,
 					},
 				},
@@ -106,7 +104,7 @@ _.Instances = {
 					},
 				},
 			}),
-			n(0, {	-- Zone Drop
+			n(ZONEDROPS, {
 				i(20951, {	-- Narain's Scrying Goggles
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					["questID"] = 8578,	-- Scrying Goggles? No Problem!
@@ -131,7 +129,7 @@ _.Instances = {
 				i(16825),	-- Nightslayer Bracelets (Rogue)
 				i(16819),	-- Vambraces of Prophecy (Priest)
 			}),
-			n(-1, {	-- Common Boss Drop
+			n(COMMON_BOSS_DROPS, {
 				i(18260, {	-- Formula: Enchant Weapon - Healing Power
 					["crs"]	= {
 						12118,	-- Lucifron

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(BURNING_STEPPES, {	-- Burning Steppes
-			n(0, {	-- Zone Drops
+		m(BURNING_STEPPES, {
+			n(ZONEDROPS, {
 				i(11467, {	-- Blackrock Medallion
 					["questID"] = 4283,	-- FIFTY! YEP!
 					["races"] = ALLIANCE_ONLY,

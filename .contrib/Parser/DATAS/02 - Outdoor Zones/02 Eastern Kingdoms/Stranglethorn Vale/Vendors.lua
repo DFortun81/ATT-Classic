@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
-			n(-2, {	-- Vendors
+		m(STRANGLETHORN_VALE, {
+			n(VENDORS, {
 				n(2846, {	-- Blixrez Goodstitch <Leatherworking Supplies>
 					["coord"] = { 28.2, 77.5, STRANGLETHORN_VALE },
 					["groups"] = {

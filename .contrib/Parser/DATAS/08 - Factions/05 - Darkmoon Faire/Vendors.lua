@@ -4,7 +4,7 @@
 _.Factions = 
 {
 	faction(909, {	-- Darkmoon Faire
-		n(-2, {		-- Vendors
+		n(VENDORS, {
 			n(14860, { -- Flik
 				["coords"] = {
 					{ 36.4, 36.0, MULGORE },

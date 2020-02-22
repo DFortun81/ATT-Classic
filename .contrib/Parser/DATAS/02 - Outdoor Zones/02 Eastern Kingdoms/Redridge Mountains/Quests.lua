@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
-			n(-17, {	-- Quests
+		m(REDRIDGE_MOUNTAINS, {
+			n(QUESTS, {
 				q(124, {	-- A Baying of Gnolls
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },

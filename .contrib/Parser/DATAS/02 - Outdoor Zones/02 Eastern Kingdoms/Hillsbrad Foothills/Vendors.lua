@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
-			n(-2, {	-- Vendors
+		m(HILLSBRAD_FOOTHILLS, {
+			n(VENDORS, {
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>
 					["races"] = HORDE_ONLY,
 					["groups"] = {						

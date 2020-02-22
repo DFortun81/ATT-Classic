@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
-			n(-17, {	-- Quests
+		m(STRANGLETHORN_VALE, {
+			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan
 					["qg"] = 2542, -- Catelyn the Blade
 					["sourceQuest"] = 603, -- Ansirem's Key

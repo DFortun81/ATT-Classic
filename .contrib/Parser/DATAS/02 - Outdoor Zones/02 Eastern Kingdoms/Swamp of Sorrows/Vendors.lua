@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
-			n(-2, {	-- Vendor
+		m(SWAMP_OF_SORROWS, {
+			n(VENDORS, {
 				n(989, {	-- Banalash <Trade Goods>
 					["coord"] = { 44.6, 56.8, SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,

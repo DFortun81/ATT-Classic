@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
-			n(0, {	-- Zone Drops
+			n(ZONEDROPS, {
 				i(12843, {	-- Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),

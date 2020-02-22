@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WESTFALL, {	-- Westfall
-			n(-17, {	-- Quests
+		m(WESTFALL, {
+			n(QUESTS, {
 				q(6181, {	-- A Swift Message
 					["qg"] = 491,	-- Quartermaster Lewis
 					["coord"] = { 56.9, 47.2, WESTFALL },

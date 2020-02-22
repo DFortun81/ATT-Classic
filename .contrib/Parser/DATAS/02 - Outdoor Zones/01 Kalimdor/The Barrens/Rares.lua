@@ -5,7 +5,7 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
-			n(-16, {	-- Rares
+			n(RARES, {
 				n(3672, { -- Boahn <Druid of the Fang>
 					["groups"] = {
 						i(5422),  -- Brambleweed Leggings

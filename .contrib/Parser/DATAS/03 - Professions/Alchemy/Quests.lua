@@ -1,5 +1,5 @@
 profession(171, {	-- Alchemy
-	n(-17, {	-- Quests
+	n(QUESTS, {
 		q(2501, {	-- Badlands Reagent Run II
 			["lvl"] = 40,
 			["requireSkill"] = 171,	-- Alchemy

@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
-			n(-2, {	-- Vendor
+		m(TIRISFAL_GLADES, {
+			n(VENDORS, {
 				n(2118, {	-- Abigail Shiel <Trade Supplies>
 					["coord"] = { 61.0, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,

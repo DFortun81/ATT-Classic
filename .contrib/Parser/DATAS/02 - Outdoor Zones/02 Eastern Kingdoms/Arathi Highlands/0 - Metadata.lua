@@ -4,7 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ARATHI_HIGHLANDS, {	-- Arathi Highlands
+		m(ARATHI_HIGHLANDS, {
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,
 		}),

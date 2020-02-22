@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(ORGRIMMAR, {	-- Orgrimmar
-			n(-2, {	-- Vendors
+		m(ORGRIMMAR, {
+			n(VENDORS, {
 				n(3364, {	-- Borya <Tailoring Supplies>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

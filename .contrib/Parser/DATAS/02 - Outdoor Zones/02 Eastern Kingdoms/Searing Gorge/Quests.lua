@@ -4,8 +4,8 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SEARING_GORGE, {	-- Searing Gorge
-			n(-17, {	-- Quests
+		m(SEARING_GORGE, {
+			n(QUESTS, {
 				q(4449, {	-- Caught!
 					["provider"] = { "o", 173265 },	-- Wooden Outhouse
 					["lvl"] = 43,
