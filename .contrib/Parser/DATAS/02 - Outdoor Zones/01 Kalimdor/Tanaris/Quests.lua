@@ -186,6 +186,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(3914, {	-- Linken's Sword
+					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
+					["sourceQuest"] = 3913,	-- A Grave Situation
+					["coord"] = { 53.9, 29.0, TANARIS },
+					["cost"] = {
+						{ "i", 11162, 1 },	-- Linken's Superior Sword
+					},
 					["lvl"] = 47,
 				}),
 				q(8599, {	-- Love Song for Narain

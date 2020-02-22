@@ -17,6 +17,10 @@ _.Zones =
 						5276,	-- Sprite Dragon
 					},
 				}),
+				i(11242, {	-- Evoroot
+					["questID"] = 3909,	-- The Videre Elixir
+					["coord"] = { 44, 11, FERALAS },
+				}),
 				i(6259, {	-- Groddoc Liver
 					["questID"] = 1452,	-- Rhapsody's Kalimdor Kocktail
 					["races"] = ALLIANCE_ONLY,

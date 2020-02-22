@@ -24,6 +24,22 @@ _.Zones =
 						6557,	-- Primal Ooze
 					},
 				}),
+				i(11107, {	-- A Small Pack
+					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
+					["groups"] = {
+						i(11106, {	-- Lion-headed Key
+							["questID"] = 3845,	-- It's a Secret to Everybody
+						}),
+						i(11105, {	-- Curled Map Parchment
+							["questID"] = 3845,	-- It's a Secret to Everybody
+						}),
+						i(11104, {	-- Large Compass
+							["questID"] = 3845,	-- It's a Secret to Everybody
+						}),
+						i(11108), -- Faded Photograph
+						i(3108), -- Heavy Throwing Dagger
+					},
+				}),
 				{
 					["itemID"] = 14644,	-- Skeleton Key Mold
 					["coord"] = { 49.6, 47.6, UNGORO_CRATER },

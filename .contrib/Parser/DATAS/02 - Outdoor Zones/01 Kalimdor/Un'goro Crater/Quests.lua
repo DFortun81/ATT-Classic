@@ -7,9 +7,19 @@ _.Zones =
 		m(UNGORO_CRATER, {	-- Un'Goro Crater
 			n(-17, {	-- Quests
 				q(3941, {	-- A Gnome's Assistance
+					["qg"] = 8737,	-- Linken
+					["sourceQuest"] = 3914,	-- Linken's Sword
+					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
 					["lvl"] = 47,
 				}),
 				q(3913, {	-- A Grave Situation
+					["qg"] = 9299,	-- Gaeriyan
+					["sourceQuest"] = 3912,	-- Meet at the Grave
+					["coord"] = { 54.0, 23.4, TANARIS },
+					["maps"] = { TANARIS },
+					["cost"] = {
+						{ "i", 11136, 1 },	-- Linken's Tempered Sword
+					},
 					["lvl"] = 47,
 				}),
 				q(4491, {	-- A Little Help From My Friends
@@ -166,14 +176,29 @@ _.Zones =
 						i(11905),	-- Linken's Boomerang
 					},
 				}),
-				q(3908, {	-- It's a Secret to Everybody
+				q(3844, {	-- It's a Secret to Everybody
+					["provider"] = { "o", 161505 },	-- A Wrecked Raft
+					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
 					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(3845, {	-- It's a Secret to Everybody
-					["lvl"] = 47,
+					["provider"] = { "o", 161504 },	-- A Small Pack
+					["sourceQuest"] = 3844,	-- It's a Secret to Everybody
+					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11106, 1 },	-- Lion-headed Key
+						{ "i", 11105, 1 },	-- Curled Map Parchment
+						{ "i", 11104, 1 },	-- Large Compass
+					},
+					["lvl"] = 30,
 				}),
-				q(3844, {	-- It's a Secret to Everybody
+				q(3908, {	-- It's a Secret to Everybody
+					["qg"] = 8737,	-- Linken
+					["sourceQuest"] = 3845,	-- It's a Secret to Everybody
+					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11133, 1 },	-- Linken's Training Sword
+					},
 					["lvl"] = 47,
 				}),
 				q(4145, {	-- Larion and Muigin
@@ -208,6 +233,14 @@ _.Zones =
 					["sourceQuest"] = 4145,	-- Larion and Muigin
 				}),
 				q(3912, {	-- Meet at the Grave
+					["qg"] = 9298,	-- Donova Snowden
+					["sourceQuest"] = 3909,	-- The Videre Elixir
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["cost"] = {
+						{ "i", 11243, 1 },	-- Videre Elixir
+						{ "i", 11136, 1 },	-- Linken's Tempered Sword
+					},
 					["lvl"] = 47,
 				}),
 				q(4141, {	-- Muigin and Larion
@@ -283,11 +316,18 @@ _.Zones =
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(3909, {	-- The Videre Elixir
-					["lvl"] = 47,
 					["qg"] = 9298,	-- Donova Snowden
-					["g"] = {
-						i(11242),	-- Evoroot
+					["sourceQuest"] = 3908,	-- It's a Secret to Everybody
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["maps"] = { WINTERSPRING },
+					["cost"] = {
+						{ "i", 11141, 1 },	-- Bait
+						{ "i", 11242, 1 },	-- Evoroot
 					},
+					["g"] = {
+						i(11243),	-- Videre Elixir
+					},
+					["lvl"] = 47,
 				}),
 				q(4288, {	-- The Western Pylon
 					["lvl"] = 47,
