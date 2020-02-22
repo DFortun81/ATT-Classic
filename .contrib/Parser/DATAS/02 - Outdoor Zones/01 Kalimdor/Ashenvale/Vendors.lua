@@ -29,6 +29,7 @@ _.Zones =
 					},
 				}),
 				n(6731, {	-- Harlown Darkweave <Leatherworking Supplies>
+					["coord"] = { 18.2, 60.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7361),	-- Pattern: Herbalist's Gloves
@@ -57,6 +58,7 @@ _.Zones =
 					},
 				}),
 				n(12962, {	-- Wik'Tar <Fish Merchant & Supplies>
+					["coord"] = { 11.8, 34.0, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6369),	-- Recipe: Rockscale Cod

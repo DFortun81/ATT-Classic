@@ -36,22 +36,45 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(1054, {	-- Culling the Threat
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5544, 1 },	-- Dal Bloodclaw's Skull
+					},
+					["lvl"] = 18,
 					["g"] = {
+						{
+							["itemID"] = 5544,	-- Dal Bloodclaw's Skull
+							["questID"] = 1054,	-- Culling the Threat
+							["cr"] = 3987,	-- Dal Bloodclaw
+							["coord"] = { 37.6, 35.4, ASHENVALE },
+						},
 						i(1970),	-- Restoring Balm
 					},
-					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(1016, {	-- Elemental Bracers
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
-					["g"] = {
-						i(12220),	-- Intact Elemental Bracer
-					},
 					["coord"] = { 49.8, 67.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5455, 1 },	-- Divined Scroll
+					},
+					["lvl"] = 20,
+					["g"] = {
+						{
+							["itemID"] = 5456,	-- Divining Scroll
+							["cost"] = {
+								{ "i", 12220, 5 },	-- Intact Elemental Bracer
+							},
+							["groups"] = {
+								{
+									["itemID"] = 5455,	-- Divined Scroll
+									["questID"] = 1016,	-- Elemental Bracers
+								},
+							},
+						},
+					},
 				}),
 				q(1033, {	-- Elune's Tear
 					["lvl"] = 20,
@@ -62,16 +85,25 @@ _.Zones =
 					["description"] = "Take the path at 43.5, 45.6 up to the lake.",
 				}),
 				q(1035, {	-- Fallen Sky Lake
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
+					["sourceQuest"] = 1034,	-- The Ruins of Stardust
+					["coord"] = { 37.3, 51.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5508, 1 },	-- Fallen Moonstone
+					},
+					["lvl"] = 20,
 					["g"] = {
+						{
+							["itemID"] = 5508,	-- Fallen Moonstone
+							["questID"] = 1035,	-- Fallen Sky Lake
+							["cr"] = 3931,	-- Shadethicket Oracle
+							["coord"] = { 66.6, 82.0, ASHENVALE },
+						},
 						i(5814),	-- Snapbrook Armor
 						i(6722),	-- Beastial Manacles
 						i(17047),	-- Luminescent Amice
 					},
-					["sourceQuest"] = 1034,	-- The Ruins of Stardust
-					["coord"] = { 37.3, 51.8, ASHENVALE },
 				}),
 				q(1011, {	-- Forsaken Diseases
 					["lvl"] = 24,
@@ -145,6 +177,9 @@ _.Zones =
 					["qg"] = 12719,	-- Marukai
 					["coord"] = { 11.69, 34.90, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5490, 20 },	-- Wrathtail Head
+					},
 					["lvl"] = 14,
 				}),
 				q(1070, {	-- On Guard in Stonetalon
@@ -169,48 +204,78 @@ _.Zones =
 					["coord"] = { 34.7, 48.9, ASHENVALE },
 				}),
 				q(991, {	-- Raene's Cleansing (1)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(1023, {	-- Raene's Cleansing (2)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3891,	-- Teronis' Corpse
 					["sourceQuest"] = 991,	-- Raene's Cleansing (1)
+					["coord"] = { 20.2, 42.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5505, 1 },	-- Teronis' Journal
+						{ "i", 5463, 1 },	-- Glowing Gem
+					},
+					["lvl"] = 18,
 				}),
 				q(1024, {	-- Raene's Cleansing (3)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
 					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5463, 1 },	-- Glowing Gem
+					},
+					["lvl"] = 18,
 				}),
 				q(1026, {	-- Raene's Cleansing (4)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
-					["g"] = {
-						i(5475),	-- Wooden Key
-					},
 					["sourceQuest"] = 1024,	-- Raene's Cleansing (3)
 					["coord"] = { 53.5, 46.3, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5464, 1 },	-- Iron Shaft
+					},
+					["lvl"] = 18,
+					["groups"] = {
+						{
+							["itemID"] = 5464,	-- Iron Shaft
+							["questID"] = 1026,	-- Raene's Cleansing (4)
+							["provider"] = { "o", 19022 },	-- Worn Chest
+							["coord"] = { 54.4, 35.3, ASHENVALE },
+						},
+					},
 				}),
 				q(1027, {	-- Raene's Cleansing (5)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1026,	-- Raene's Cleansing (4)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5519, 1 },	-- Iron Pommel
+					},
+					["lvl"] = 18,
+					["groups"] = {
+						{
+							["itemID"] = 5519,	-- Iron Pommel
+							["questID"] = 1027,	-- Raene's Cleansing (5)
+							["cr"] = 3928,	-- Rotting Slime
+							["description"] = "When you kill a slime, it can drop a Rusty Chest which can contain this item.",
+						},
+					},
 				}),
 				q(1028, {	-- Raene's Cleansing (6)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
+					["sourceQuest"] = 1027,	-- Raene's Cleansing (5)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5547, 1 },	-- Reconstructed Rod
+					},
+					["lvl"] = 18,
 					["g"] = {
 						i(5462),	-- Dartol's Rod of Transformation
 					},
-					["sourceQuest"] = 1027,	-- Raene's Cleansing (5)
 				}),
 				q(1055, {	-- Raene's Cleansing (7)
 					["lvl"] = 18,
@@ -219,60 +284,97 @@ _.Zones =
 					["sourceQuest"] = 1028,	-- Raene's Cleansing (6)
 				}),
 				q(1029, {	-- Raene's Cleansing (8)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3916,	-- Shael'dryn
 					["sourceQuest"] = 1055,	-- Raene's Cleansing (7)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
+					},
+					["lvl"] = 18,
 				}),
 				q(1030, {	-- Raene's Cleansing (9)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1029,	-- Raene's Cleansing (8)
 					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
+					},
+					["lvl"] = 18,
 				}),
 				q(1045, {	-- Raene's Cleansing (10)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3897,	-- Krolg
-					["g"] = {
-						i(5388),	-- Ran Bloodtooth's Skull
-					},
 					["sourceQuest"] = 1030,	-- Raene's Cleansing (9)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
+					},
+					["lvl"] = 18,
+					["g"] = {
+						{
+							["itemID"] = 5388,	-- Ran Bloodtooth's Skull
+							["questID"] = 1045,	-- Raene's Cleansing (10)
+							["cr"] = 3696, 	-- Ran Bloodtooth
+							["coord"] = { 54.6, 79.4, ASHENVALE },
+						},
+					},
 				}),
 				q(1046, {	-- Raene's Cleansing (11)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3897,	-- Krolg
+					["sourceQuest"] = 1045,	-- Raene's Cleansing (10)
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5388, 1 },	-- Ran Bloodtooth's Skull
+						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
+					},
+					["lvl"] = 18,
 					["g"] = {
+						{
+							["itemID"] = 5462,	-- Dartol's Rod of Transformation
+							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
+						},
 						i(5815),	-- Glacial Stone
 						i(17046),	-- Gutterblade
 						i(1116),	-- Ring of Pure Silver
 					},
-					["sourceQuest"] = 1045,	-- Raene's Cleansing (10)
 				}),
 				q(1009, {	-- Ruuzel
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3846,	-- Talen
-					["g"] = {
-						i(5812),	-- Robes of Antiquity
-					},
 					["sourceQuest"] = 1007,	-- The Ancient Statuette
 					["coord"] = { 14.8, 31.3, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5445, 1 },	-- Ring of Zoram
+					},
+					["lvl"] = 20,
+					["g"] = {
+						{
+							["itemID"] = 5445,	-- Ring of Zoram
+							["questID"] = 1009,	-- Ruuzel
+							["cr"] = 3943,	-- Ruuzel
+							["coord"] = { 7.6, 13.6, ASHENVALE },
+						},
+						i(5812),	-- Robes of Antiquity
+					},
 				}),
 				q(6441, {	-- Satyr Horns
 					["qg"] = 12724,	-- Pixel
 					["coord"] = { 73.06, 61.48, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5481, 16 },	-- Satyr Horns
+					},
 					["lvl"] = 21,
 				}),
 				q(1032, {	-- Satyr Slaying!
-					["lvl"] = 26,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3901,	-- Illiyana
 					["sourceQuest"] = 1031,	-- The Branch of Cenarius
 					["coord"] = { 21.7, 53.4, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5481, 16 },	-- Satyr Horns
+					},
+					["lvl"] = 26,
 				}),
 				q(7865, {	-- Sentinel Advanced Care Package
 					["lvl"] = 45,
@@ -303,17 +405,19 @@ _.Zones =
 				}),
 				q(24, {	-- Shadumbra's Head
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
-					["cr"] = 12677,	-- Shadumbra
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
+					["coord"] = { 59.8, 54.6, ASHENVALE },
+					["cr"] = 12677,	-- Shadumbra
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(2, {	-- Sharptalon's Claw
 					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
-					["cr"] = 12676,	-- Sharptalon
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
+					["coord"] = { 75.8, 69.6, ASHENVALE },
+					["cr"] = 12676,	-- Sharptalon
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(25, {	-- Stonetalon Standstill
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -352,15 +456,24 @@ _.Zones =
 					["lvl"] = 23,
 				}),
 				q(1031, {	-- The Branch of Cenarius
-					["lvl"] = 26,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3920,	-- Anilia
+					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
+					["coord"] = { 78.3, 44.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5461, 1 },	-- Branch of Cenarius
+					},
+					["lvl"] = 26,
 					["g"] = {
+						{
+							["itemID"] = 5461,	-- Branch of Cenarius
+							["questID"] = 1031,	-- The Branch of Cenarius
+							["cr"] = 4619,	-- Geltharis
+							["coord"] = { 78.6, 42.8, ASHENVALE },
+						},
 						i(5820),	-- Faerie Mantle
 						i(11229),	-- Brightscale Girdle
 					},
-					["sourceQuest"] = 1021,	-- Vile Satyr! Dryads in Danger!
-					["coord"] = { 78.3, 44.8, ASHENVALE },
 				}),
 				q(1022, {	-- The Howling Vale
 					["lvl"] = 25,
@@ -441,14 +554,24 @@ _.Zones =
 					["description"] = "Kill the Dark Strand mobs near 32, 29.3 to get the Glowing Soul Gem.",
 				}),
 				q(973, {	-- The Tower of Althalaxx (5)
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
+					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4)
+					["coord"] = { 26.2, 38.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5533, 1 },	-- Ilkrud Magthrull's Tome
+					},
+					["lvl"] = 13,
 					["g"] = {
+						{
+							["itemID"] = 5533,	-- Ilkrud Magthrull's Tome
+							["questID"] = 973,	-- The Tower of Althalaxx (5)
+							["cr"] = 3664,	-- Ilkrud Magthrull
+							["coord"] = { 25.2, 60.6, ASHENVALE },
+						},
 						i(5622),	-- Clergy Ring
 						i(5613),	-- Staff of the Purifier
 					},
-					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4)
 				}),
 				q(1140, {	-- The Tower of Althalaxx (6)
 					["lvl"] = 13,
@@ -463,11 +586,13 @@ _.Zones =
 					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6)
 				}),
 				q(1008, {	-- The Zoram Strand
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 34.7, 48.9, ASHENVALE },
-					["description"] = "Kill the Wrathtail naga along the shore around 12, 30.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5490, 20 },	-- Wrathtail Head
+					},
+					["lvl"] = 14,
 				}),
 				q(6544, {	-- Torek's Assault
 					["qg"] = 12858,	-- Torek
@@ -487,23 +612,24 @@ _.Zones =
 				}),
 				q(23, {	-- Ursangous's Paw
 					["provider"] = { "i", 16303 },	-- Ursangous's Paw
-					["cr"] = 12678,	-- Ursangous
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
+					["coord"] = { 41.6, 66.8, ASHENVALE },
+					["cr"] = 12678,	-- Ursangous
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1037, {	-- Velinde Starsong
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["sourceQuest"] = 1022,	-- The Howling Vale
 					["coord"] = { 22.2, 53.0, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(1021, {	-- Vile Satyr! Dryads in Danger!
-					["lvl"] = 26,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3901,	-- Illiyana
 					["coord"] = { 21.7, 53.4, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 26,
 				}),
 				q(6641, {	-- Vorsha the Lasher
 					["qg"] = 12717,	-- Muglash
@@ -516,54 +642,78 @@ _.Zones =
 				}),
 				q(6546, {	-- Warsong Outrider Update
 					["qg"] = 12864,	-- Warsong Outrider
-					["repeatable"] = true,
 					["coord"] = { 83.6, 51.4, ASHENVALE },
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = 17,
 					["g"] = {
 						i(16765),	-- Warsong Outrider Update
 					},
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6545, {	-- Warsong Runner Update
 					["qg"] = 12863,	-- Warsong Runner
-					["repeatable"] = true,
 					["coord"] = { 12.2, 34.2, ASHENVALE },
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = 17,
 					["g"] = {
 						i(16763),	-- Warsong Runner Update
 					},
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6581, {	-- Warsong Saw Blades
 					["qg"] = 12724,	-- Pixel
-					["repeatable"] = true,
 					["coord"] = { 73.06, 61.48, ASHENVALE },
+					["description"] = "This quest is repeatable, but only available when the quest \"Warsong Supplies\" (Quest #6571) is in your quest log.",
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
 					["lvl"] = 22,
 					["g"] = {
-						i(16742),	-- Warsong Saw Blades
+						{
+							["itemID"] = 16742,	-- Warsong Saw Blades
+							["questID"] = 6571,	-- Warsong Supplies
+						},
 					},
-					["description"] = "This quest is repeatable, but only available when the quest \"Warsong Supplies\" (Quest #6571) is in your quest log.",
 				}),
 				q(6547, {	-- Warsong Scout Update
 					["qg"] = 12862,	-- Warsong Scout
-					["repeatable"] = true,
 					["coord"] = { 71.04, 68.22, ASHENVALE },
-					["lvl"] = 17,
+					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 17,
 					["g"] = {
 						i(16764),	-- Warsong Scout Update
 					},
-					["description"] = "This quest is repeatable, but only available when the quest \"The Warsong Reports\" (Quest #6543) is in your quest log.",
 				}),
 				q(6571, {	-- Warsong Supplies
 					["qg"] = 11820,	-- Locke Okarr
-					["coord"] = { 71.40, 67.64, ASHENVALE},
+					["coord"] = { 71.40, 67.64, ASHENVALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16743, 1 },	-- Logging Rope
+						{ "i", 16745, 1 },	-- Warsong Axe Shipment
+						{ "i", 16744, 1 },	-- Warsong Oil
+						{ "i", 16742, 1 },	-- Warsong Saw Blades
+					},
 					["lvl"] = 22,
 					["g"] = {
+						{
+							["itemID"] = 16745,	-- Warsong Axe Shipment
+							["questID"] = 6571,	-- Warsong Supplies
+							["coord"] = { 66.5, 56.9, STRANGLETHORN_VALE },
+						},
+						{
+							["itemID"] = 16744,	-- Warsong Oil
+							["questID"] = 6571,	-- Warsong Supplies
+							["coords"] = {
+								{ 66.5, 56.9, ASHENVALE },
+								{ 79.1, 45.5, ASHENVALE },
+								{ 80.7, 49.7, ASHENVALE },
+							},
+						},
 						i(16975),	-- Warsong Sash
 						i(16977),	-- Warsong Boots
 						i(16978),	-- Warsong Gauntlets

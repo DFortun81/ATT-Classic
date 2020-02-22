@@ -226,24 +226,33 @@ _.Zones =
 				q(1195, {	-- The Sacred Flame
 					["qg"] = 4721,	-- Zangen Stonehoof
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 20,
-					["g"] = {
-						i(5867),	-- Etched Phial
+					["cost"] = {
+						{ "i", 5868, 1 },	-- Filled Etched Phial
 					},
+					["lvl"] = 20,
 				}),
 				q(1196, {	-- The Sacred Flame
 					["qg"] = 4721,	-- Zangen Stonehoof
 					["sourceQuest"] = 1195,	-- The Sacred Flame
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5868, 1 },	-- Filled Etched Phial
+					},
 					["lvl"] = 20,
 				}),
 				q(1197, {	-- The Sacred Flame
 					["qg"] = 4722,	-- Rau Cliffrunner
 					["coord"] = { 46.13, 51.69, THOUSAND_NEEDLES },
-					["lvl"] = 20,
+					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5868, 1 },	-- Filled Etched Phial
+						{ "i", 5869, 1 },	-- Cloven Hoof
+					},
+					["lvl"] = 20,
 					["g"] = {
 						i(6739),	-- Cliffrunner's Aim
 						i(6740),	-- Azure Sash

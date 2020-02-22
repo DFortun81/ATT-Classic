@@ -255,8 +255,20 @@ _.Zones =
 					["qg"] = 4198,	-- Braelyn Firehand
 					["sourceQuest"] = 1087,	-- Cenarius' Legacy
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5686, 1 },	-- Ordanus' Head
+					},
 					["lvl"] = 20,
+					["groups"] = {
+						{
+							["itemID"] = 5686,	-- Ordanus' Head
+							["questID"] = 1088,	-- Ordanus
+							["cr"] = 4273,	-- Keeper Ordanus
+							["coord"] = { 62.0, 51.2, ASHENVALE },
+						},
+					},
 				}),
 				q(6523, {	-- Protect Kaya
 					["qg"] = 11856,	-- Kaya Flathoof
