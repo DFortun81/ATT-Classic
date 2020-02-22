@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(DUN_MOROGH, {	-- Dun Morogh
 			n(0, {	-- Zone Drops
 				i(2069, {	-- Black Bear Hide Vest

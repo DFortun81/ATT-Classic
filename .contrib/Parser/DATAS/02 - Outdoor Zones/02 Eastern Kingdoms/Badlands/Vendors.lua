@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BADLANDS, {	-- Badlands
 			n(-2, {	-- Vendors
 				n(9179, {	-- Jazzrik <Blacksmithing Supplies>

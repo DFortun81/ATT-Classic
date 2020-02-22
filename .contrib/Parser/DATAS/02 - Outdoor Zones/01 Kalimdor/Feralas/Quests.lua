@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(FERALAS, {	-- Feralas
 			n(-17, {	-- Quests
 				q(2974, {	-- A Grim Discovery

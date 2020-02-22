@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(SEARING_GORGE, {	-- Searing Gorge
 			n(-17, {	-- Quests
 				q(4449, {	-- Caught!

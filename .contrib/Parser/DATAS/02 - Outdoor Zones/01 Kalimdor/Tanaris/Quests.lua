@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(TANARIS, {	-- Tanaris
 			n(-17, {	-- Quests
 				q(2750, {	-- A Bad Egg

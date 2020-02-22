@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DESOLACE, {	-- Desolace
 			n(0, {	-- Zone Drops
 				i(2620, {	-- Augural Shroud

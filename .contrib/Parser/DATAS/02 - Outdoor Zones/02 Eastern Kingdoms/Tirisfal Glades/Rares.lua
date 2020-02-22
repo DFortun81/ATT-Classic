@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(-16, {	-- Rares
 				n(1911, {	-- Deeb

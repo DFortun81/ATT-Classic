@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THUNDER_BLUFF, {	-- Thunder Bluff
 			n(-2, {	-- Vendors
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>

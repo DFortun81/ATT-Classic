@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DARNASSUS, {	-- Darnassus
 			n(-2, {	-- Vendor
 				n(4168, {	-- Elynna <Tailoring Supplies>

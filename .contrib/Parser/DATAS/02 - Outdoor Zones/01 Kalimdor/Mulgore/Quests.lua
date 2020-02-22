@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(MULGORE, {	-- Mulgore
 			n(-17, {	-- Quests
 				q(752, {	-- A Humble Task (1/2)

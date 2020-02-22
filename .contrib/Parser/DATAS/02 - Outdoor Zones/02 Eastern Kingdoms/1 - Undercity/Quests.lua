@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(UNDERCITY, {	-- Undercity
 			n(-17, {	-- Quests
 				q(4294, {	-- ... and a Batch of Ooze

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
 			n(-17, {	-- Quests
 				q(1071, {	-- A Gnome's Respite

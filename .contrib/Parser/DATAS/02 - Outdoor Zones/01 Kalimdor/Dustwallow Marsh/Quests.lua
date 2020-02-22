@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			n(-17, {	-- Quests
 				q(1258, {	-- ... and Bugs

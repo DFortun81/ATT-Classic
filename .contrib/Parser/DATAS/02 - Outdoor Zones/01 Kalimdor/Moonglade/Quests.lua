@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(MOONGLADE, {	-- Moonglade
 			n(-17, {	-- Quests
 				{

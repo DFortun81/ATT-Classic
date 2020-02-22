@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BURNING_STEPPES, {	-- Blasted Lands
 			n(-2, {	-- Vendors
 				n(9544, {	-- Yuka Screwspigot

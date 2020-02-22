@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-17, {	-- Quests
 				q(7794, {	-- A Donation of Mageweave

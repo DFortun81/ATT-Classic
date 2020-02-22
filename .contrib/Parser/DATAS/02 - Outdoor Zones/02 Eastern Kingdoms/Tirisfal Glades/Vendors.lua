@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(-2, {	-- Vendor
 				n(2118, {	-- Abigail Shiel <Trade Supplies>

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(LOCH_MODAN, {	-- Loch Modan
 			n(0, {	-- Zone Drop
 				i(5319,  { -- Bashing Pauldrons

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(DUSKWOOD, {	-- Duskwood
 			n(-16, {	-- Rares
 				n(771, {  -- Commander Felstrom

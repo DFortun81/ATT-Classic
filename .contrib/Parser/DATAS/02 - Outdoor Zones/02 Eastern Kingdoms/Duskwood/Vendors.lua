@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(DUSKWOOD, {	-- Duskwood
 			n(-2, {	-- Vendors
 				n(844, {	-- Antonio Perelli <Traveling Salesman>

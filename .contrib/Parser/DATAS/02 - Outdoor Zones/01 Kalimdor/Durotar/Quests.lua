@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DUROTAR, {	-- Durotar
 			n(-17, {	-- Quests
 				q(2161, {	-- A Peon's Burden

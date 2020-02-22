@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-17, {	-- Quests
 				q(5066, {	-- A Call to Arms: The Plaguelands!

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(UNDERCITY, {	-- Undercity
 			n(-2, {	-- Vendors
 				n(4604, {	-- Abigail Sawyer <Bow Merchant>

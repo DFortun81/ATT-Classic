@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DESOLACE, {	-- Desolace
 			n(-17, {	-- Quests
 				q(1433, {	-- Alliance Relations

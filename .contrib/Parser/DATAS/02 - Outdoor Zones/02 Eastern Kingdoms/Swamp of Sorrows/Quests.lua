@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
 			n(-17, {	-- Quests
 				q(2801, {	-- A Tale of Sorrow

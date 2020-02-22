@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DUROTAR, {	-- Durotar
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,

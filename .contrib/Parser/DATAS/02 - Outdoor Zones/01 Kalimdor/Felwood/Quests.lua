@@ -3,8 +3,8 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
-		m(FELWOOD, {	-- Felwood
+	m(KALIMDOR, {
+		m(FELWOOD, {
 			n(-17, {	-- Quests
 				q(5242, {	-- A Final Blow
 					["lvl"] = 48,

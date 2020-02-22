@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(SILITHUS, {	-- Silithus
 			n(-17, {	-- Quests
 				q(9248, {	-- A Humble Offering

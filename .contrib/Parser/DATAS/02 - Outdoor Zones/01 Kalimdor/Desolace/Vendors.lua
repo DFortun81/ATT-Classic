@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DESOLACE, {	-- Desolace
 			n(-2, {	-- Vendors
 				n(12045, {	-- Hae'Wilani <Axecrafter>

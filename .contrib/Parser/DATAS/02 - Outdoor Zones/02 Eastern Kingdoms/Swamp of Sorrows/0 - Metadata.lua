@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(SWAMP_OF_SORROWS, {	-- Swamp of Sorrows
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(ARATHI_HIGHLANDS, {	-- Arathi Highlands
 			n(-2, {	-- Vendors
 				n(2816, {	-- Androd Fadran <Leatherworking Supplies>

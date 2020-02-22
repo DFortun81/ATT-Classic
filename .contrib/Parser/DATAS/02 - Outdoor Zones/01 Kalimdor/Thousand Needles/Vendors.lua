@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THOUSAND_NEEDLES, {	-- Thousand Needles
 			n(-2, {	-- Vendors
 				n(4877, {	-- Jandia <Trade Supplies>

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(-17, {	-- Quests
 				q(361, {	-- A Letter Undelivered

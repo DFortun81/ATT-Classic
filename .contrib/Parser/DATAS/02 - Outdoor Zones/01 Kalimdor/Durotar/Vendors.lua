@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DUROTAR, {	-- Durotar
 			n(-2, {	-- Vendors
 				n(3881, {	-- Grimtak <Butcher>

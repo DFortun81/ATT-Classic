@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(ORGRIMMAR, {	-- Orgrimmar
 			n(-2, {	-- Vendors
 				n(3364, {	-- Borya <Tailoring Supplies>

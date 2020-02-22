@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(THE_HINTERLANDS, {	-- The Hinterlands
 			n(-17, {	-- Quests
 				q(77, {	-- A Sticky Situation

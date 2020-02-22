@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(WINTERSPRING, {	-- Winterspring
 			n(-2, {	-- Vendors
 				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>

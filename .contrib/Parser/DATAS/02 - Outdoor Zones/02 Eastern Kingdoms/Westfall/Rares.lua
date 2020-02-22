@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(WESTFALL, {	-- Westfall
 			n(-16, {	-- Rares
 				n(520, {	-- Brack

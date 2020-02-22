@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {	-- Eastern Plaguelands
 			n(-2, {	-- Vendors
 				n(12941, {	-- Jase Farlane <Trade Supplies>

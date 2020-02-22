@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(SILITHUS, {	-- Silithus
 			n(-2, {	-- Vendors
 				n(15293, {	-- Aendel Windspear

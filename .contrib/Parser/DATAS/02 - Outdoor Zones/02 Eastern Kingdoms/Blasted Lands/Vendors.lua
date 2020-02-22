@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BLASTED_LANDS, {	-- Blasted Lands
 			n(-2, {	-- Vendors
 				n(8178, {	-- Nina Lightbrew <Alchemy Supplies>

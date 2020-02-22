@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(ASHENVALE, {	-- Ashenvale
 			n(-17, {	-- Quests
 				q(1025, {	-- An Aggressive Defense

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_BARRENS, {	-- The Barrens
 			n(-2, {	-- Vendors
 				n(3495, {	-- Gagsprocket <Engineering Goods>

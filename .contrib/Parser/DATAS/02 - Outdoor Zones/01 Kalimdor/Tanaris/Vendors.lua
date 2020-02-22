@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(TANARIS, {	-- Tanaris
 			n(-2, {	-- Vendors
 				n(5594, {	-- Alchemist Pestlezugg <Alchemy Supplies>

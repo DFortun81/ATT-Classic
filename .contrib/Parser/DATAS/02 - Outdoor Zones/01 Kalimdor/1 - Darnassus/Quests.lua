@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DARNASSUS, {	-- Darnassus
 			n(-17, {	-- Quests
 				q(7799, {	-- A Donation of Mageweave

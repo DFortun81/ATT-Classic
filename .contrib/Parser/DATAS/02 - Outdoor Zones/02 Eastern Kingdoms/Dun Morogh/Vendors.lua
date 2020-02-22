@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(DUN_MOROGH, {	-- Dun Morogh
 			n(-2, {	-- Vendors
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>

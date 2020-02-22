@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(WESTFALL, {	-- Westfall
 			n(0, {	-- Zone Drop
 				i(826, {  -- Brutish Riverpaw Axe

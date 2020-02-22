@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
 			n(-2, {	-- Vendors
 				n(777, {	-- Amy Davenport <Tradeswoman>

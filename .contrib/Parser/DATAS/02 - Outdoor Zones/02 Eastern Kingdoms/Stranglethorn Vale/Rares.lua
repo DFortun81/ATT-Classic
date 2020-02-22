@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(STRANGLETHORN_VALE, {	-- Stranglethorn Vale
 			n(-16, {	-- Rares
 				n(2541, {	-- Lord Sakrasis

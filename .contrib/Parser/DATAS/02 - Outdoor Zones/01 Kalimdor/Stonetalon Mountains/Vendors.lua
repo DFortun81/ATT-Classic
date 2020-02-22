@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
 			n(-2, {	-- Vendors
 				n(9549, {	-- Borand <Bowyer>

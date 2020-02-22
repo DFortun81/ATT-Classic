@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
 			n(-2, {	-- Vendors
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>

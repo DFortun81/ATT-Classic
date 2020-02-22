@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BURNING_STEPPES, {	-- Burning Steppes
 			n(-17, {	-- Quests
 				q(7630, {	-- Arcanite

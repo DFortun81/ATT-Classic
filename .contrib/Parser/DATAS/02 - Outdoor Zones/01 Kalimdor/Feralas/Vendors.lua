@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(FERALAS, {	-- Feralas
 			n(-2, {	-- Vendors
 				n(6576, {	-- Brienna Starglow <Tailoring Supplies>

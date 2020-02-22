@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZSHARA, {	-- Azshara
 			n(-17, {	-- Quests
 				q(3382, {	-- A Crew Under Fire

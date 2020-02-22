@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(MULGORE, {	-- Mulgore
 			n(-2, {	-- Vendors
 				n(5940, {	-- Harn Longcast <Fishing Supplies>

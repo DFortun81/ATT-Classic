@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(SILVERPINE_FOREST, {	-- Silverpine Forest
 			n(0, {	-- Zone Drops
 				i(3317, {	-- A Talking Head

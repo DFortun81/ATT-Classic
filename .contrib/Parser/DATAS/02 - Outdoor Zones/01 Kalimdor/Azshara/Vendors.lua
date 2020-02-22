@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(AZSHARA, {	-- Azshara
 			n(-2, {	-- Vendor
 				n(12957, {	-- Blimo Gadgetspring <Trade Supplier>

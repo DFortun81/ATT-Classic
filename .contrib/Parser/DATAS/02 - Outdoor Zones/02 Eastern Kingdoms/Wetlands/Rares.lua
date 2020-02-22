@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(WETLANDS, {	-- Wetlands
 			n(-16, {	-- Rares
 				n(2108, {	-- Garneg Charskull

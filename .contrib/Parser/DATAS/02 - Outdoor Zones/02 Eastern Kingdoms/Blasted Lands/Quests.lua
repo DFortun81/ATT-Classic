@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BLASTED_LANDS, {	-- Blasted Lands
 			n(-17, {	-- Quests
 				q(2583, {	-- A Boar's Vitality

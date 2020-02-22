@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_BARRENS, {	-- The Barrens
 			n(-17, {	-- Quests
 				q(6361, {	-- A Bundle of Hides

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THUNDER_BLUFF, {	-- Thunder Bluff
 			n(-17, {	-- Quests
 				q(7822, {	-- A Donation of Mageweave

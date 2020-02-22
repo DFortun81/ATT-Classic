@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THE_BARRENS, {	-- The Barrens
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,

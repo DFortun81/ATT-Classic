@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DARKSHORE, {	-- Darkshore
 			n(-2, {	-- Vendors
 				n(4307, {	-- Heldan Galesong <Fisherman>

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(THOUSAND_NEEDLES, {	-- Thousand Needles
 			n(-17, {	-- Quests
 				q(1175, {	-- A Bump in the Road

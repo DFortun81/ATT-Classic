@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(WINTERSPRING, {	-- Winterspring
 			n(-17, {	-- Quests
 				q(6606, {	-- A Little Luck

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(FELWOOD, {	-- Felwood
 			n(-2, {	-- Vendors
 				n(2806, {	-- Bale <General Goods>

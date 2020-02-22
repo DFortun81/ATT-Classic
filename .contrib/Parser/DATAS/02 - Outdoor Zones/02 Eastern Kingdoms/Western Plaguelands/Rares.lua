@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
 			n(-16, {	-- Rares
 				n(1844, {  -- Foreman Marcrid

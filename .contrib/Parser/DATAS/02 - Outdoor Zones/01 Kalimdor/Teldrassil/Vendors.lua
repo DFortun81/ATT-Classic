@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(TELDRASSIL, {	-- Teldrassil
 			n(-2, {	-- Vendors
 				n(10118, {	-- Nessa Shadowsong <Fishing Supplies>

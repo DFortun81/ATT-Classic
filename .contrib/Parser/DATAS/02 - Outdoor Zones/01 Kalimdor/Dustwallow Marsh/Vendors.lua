@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
 			n(-2, {	-- Vendors
 				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>

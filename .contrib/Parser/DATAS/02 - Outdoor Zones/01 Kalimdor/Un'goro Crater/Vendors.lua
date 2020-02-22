@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(UNGORO_CRATER, {	-- Un'Goro Crater
 			n(-2, {	-- Vendors
 				n(12959, {	-- Nergal <General Goods Vendor>

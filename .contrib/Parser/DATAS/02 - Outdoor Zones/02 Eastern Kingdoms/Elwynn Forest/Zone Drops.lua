@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(ELWYNN_FOREST, {	-- Elwynn Forest
 			n(0, {	-- Zone Drops
 				i(1256, {	-- Crystal Kelp Frond

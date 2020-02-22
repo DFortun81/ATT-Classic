@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(ALTERAC_MOUNTAINS, {	-- Alterac Mountains
 			n(-2, {	-- Vendors
 				n(2480, {	-- Bro'kin <Alchemy Supplies>

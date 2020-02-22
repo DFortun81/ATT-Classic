@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(TELDRASSIL, {	-- Teldrassil
 			n(-17, {	-- Quests
 				q(3519, {	-- A Friend in Need

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(ASHENVALE, {	-- Ashenvale
 			n(-2, {	-- Vendor
 				n(3951, {	-- Bhaldaran Ravenshade <Bowyer>

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(STORMWIND_CITY, {	-- Stormwind City
 			n(-2, {	-- Vendors
 				n(1347, {	-- Alexandra Bolero <Tailoring Supplies>

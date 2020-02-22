@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(BLACKROCK_MOUNTAIN, {	-- Blackrock Mountain
 			n(0, {	-- Zone Drops
 				i(13254, {	-- Astral Guard

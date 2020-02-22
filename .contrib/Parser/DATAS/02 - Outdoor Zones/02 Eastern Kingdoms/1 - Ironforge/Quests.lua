@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(IRONFORGE, {	-- Ironforge
 			n(-17, {	-- Quests
 				q(7809, {	-- A Donation of Mageweave

@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			["description"] = "|cff66ccff |r",
 			["lvl"] = 1,

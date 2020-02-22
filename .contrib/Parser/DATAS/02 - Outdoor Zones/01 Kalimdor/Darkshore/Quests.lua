@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(KALIMDOR, {	-- Kalimdor
+	m(KALIMDOR, {
 		m(DARKSHORE, {	-- Darkshore
 			n(-17, {	-- Quests
 				q(986, {	-- A Lost Master

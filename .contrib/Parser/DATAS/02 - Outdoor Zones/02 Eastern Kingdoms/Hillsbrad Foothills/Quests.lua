@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
 			n(-17, {	-- Quests
 				q(565, {	-- Bartolo's Yeti Fur Cloak

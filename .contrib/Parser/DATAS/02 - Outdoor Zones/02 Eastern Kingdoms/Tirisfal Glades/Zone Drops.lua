@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {	-- Eastern Kingdoms
+	m(EASTERN_KINGDOMS, {
 		m(TIRISFAL_GLADES, {	-- Tirisfal Glades
 			n(0, {	-- Zone Drops
 				i(2839, {	-- A Letter to Yvette
