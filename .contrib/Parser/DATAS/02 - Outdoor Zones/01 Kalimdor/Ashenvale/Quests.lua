@@ -7,15 +7,15 @@ _.Zones =
 		m(ASHENVALE, {	-- Ashenvale
 			n(-17, {	-- Quests
 				q(1025, {	-- An Aggressive Defense
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3691,	-- Raene Wolfrunner
+					["sourceQuest"] = 1023, -- Raene's Cleansing (2)
+					["coord"] = { 36.6, 49.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 					["g"] = {
 						i(4542),	-- Moist Cornbread
 						i(1205),	-- Melon Juice
 					},
-					["sourceQuest"] = 1023, -- Raene's Cleansing (2)
-					["coord"] = { 36.6, 49.6, ASHENVALE },
 				}),
 				q(6503, {	-- Ashenvale Outrunners
 					["qg"] = 12867,	-- Kuray'bin
@@ -24,16 +24,16 @@ _.Zones =
 					["lvl"] = 19,
 				}),
 				q(1010, {	-- Bathran's Hair
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["coord"] = { 26.4, 38.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(216, {	-- Between a Rock and a Thistlefur
 					["qg"] = 12757,	-- Karang Amakkar
 					["coord"] = { 11.89, 34.53, ASHENVALE },
-					["lvl"] = 21,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 21,
 				}),
 				q(1054, {	-- Culling the Threat
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -77,12 +77,11 @@ _.Zones =
 					},
 				}),
 				q(1033, {	-- Elune's Tear
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1020,	-- Orendil's Cure
 					["coord"] = { 37.3, 51.8, ASHENVALE },
-					["description"] = "Take the path at 43.5, 45.6 up to the lake.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1035, {	-- Fallen Sky Lake
 					["qg"] = 3894,	-- Pelturas Whitemoon
@@ -106,11 +105,11 @@ _.Zones =
 					},
 				}),
 				q(1011, {	-- Forsaken Diseases
-					["lvl"] = 24,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3848,	-- Kayneth Stillwind
 					["sourceQuest"] = 4581,	-- Kayneth Stillwind
 					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(6482, {	-- Freedom to Ruul
 					["qg"] = 12818,	-- Ruul Snowhoof
@@ -119,14 +118,14 @@ _.Zones =
 					["lvl"] = 19,
 				}),
 				q(1012, {	-- Insane Druids
-					["lvl"] = 24,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3848,	-- Kayneth Stillwind
+					["sourceQuest"] = 1011,	-- Forsaken Diseases
+					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 24,
 					["g"] = {
 						i(5813),	-- Emil's Brand
 					},
-					["sourceQuest"] = 1011,	-- Forsaken Diseases
-					["coord"] = { 85.3, 44.7, ASHENVALE },
 				}),
 				q(824, {	-- Je'neu of the Earthen Ring
 					["qg"] = 12737,	-- Mastok Wrilehiss
@@ -141,19 +140,20 @@ _.Zones =
 					},
 				}),
 				q(1056, {	-- Journey to Stonetalon Peak
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3996,	-- Faldreas Goeth'Shael
 					["coord"] = { 35.8, 49.1, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(4581, {	-- Kayneth Stillwind
-					["lvl"] = 24,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 24,
 				}),
 				q(6621, {	-- King of the Foulweald
 					["qg"] = 12757,	-- Karang Amakkar
+					["sourceQuest"] = 216,	-- Between a Rock and a Thistlefur
 					["coord"] = { 11.89, 34.53, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 21,
@@ -161,17 +161,16 @@ _.Zones =
 						i(17005),	-- Boorguard Tunic
 						i(17006),	-- Cobalt Legguards
 					},
-					["sourceQuest"] = 216,	-- Between a Rock and a Thistlefur
 				}),
 				q(1017, {	-- Mage Summoner
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
+					["sourceQuest"] = 1016,	-- Elemental Bracers
+					["coord"] = { 49.8, 67.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(5816),	-- Light of Elune
 					},
-					["sourceQuest"] = 1016,	-- Elemental Bracers
-					["coord"] = { 49.8, 67.2, ASHENVALE },
 				}),
 				q(6442, {	-- Naga at the Zoram Strand
 					["qg"] = 12719,	-- Marukai
@@ -183,25 +182,25 @@ _.Zones =
 					["lvl"] = 14,
 				}),
 				q(1070, {	-- On Guard in Stonetalon
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4079,	-- Sentinel Thenysil
-					["isBreadcrumb"] = true,
 					["coord"] = { 34.9, 49.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
 				}),
 				q(1020, {	-- Orendil's Cure
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3847,	-- Orendil Broadleaf
 					["sourceQuest"] = 1010,	-- Bathran's Hair
 					["coord"] = { 26.4, 38.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1134, {	-- Pridewings of Stonetalon
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3845,	-- Shindrell Swiftfire
 					["sourceQuest"] = 1008,	-- The Zoram Strand
 					["coord"] = { 34.7, 48.9, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(991, {	-- Raene's Cleansing (1)
 					["qg"] = 3691,	-- Raene Wolfrunner
@@ -278,10 +277,10 @@ _.Zones =
 					},
 				}),
 				q(1055, {	-- Raene's Cleansing (7)
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 19024 },	-- Hidden Shrine
 					["sourceQuest"] = 1028,	-- Raene's Cleansing (6)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(1029, {	-- Raene's Cleansing (8)
 					["qg"] = 3916,	-- Shael'dryn
@@ -377,31 +376,28 @@ _.Zones =
 					["lvl"] = 26,
 				}),
 				q(7865, {	-- Sentinel Advanced Care Package
-					["lvl"] = 45,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14753,	-- Illiyana Moonblaze
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 45,
 					["g"] = {
 						i(19152),	-- Sentinel Advanced Care Package
 					},
-					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(7863, {	-- Sentinel Basic Care Package
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14753,	-- Illiyana Moonblaze
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(19150),	-- Sentinel Basic Care Package
 					},
-					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(7864, {	-- Sentinel Standard Care Package
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 14753,	-- Illiyana Moonblaze
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 					["g"] = {
 						i(19151),	-- Sentinel Standard Care Package
 					},
-					["u"] = 3 -- Not Availble until Battlegrounds
 				}),
 				q(24, {	-- Shadumbra's Head
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
@@ -426,22 +422,21 @@ _.Zones =
 					["lvl"] = 23,
 				}),
 				q(976, {	-- Supplies to Auberdine
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4484,	-- Feero Ironhand
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
+					["coord"] = { 26.2, 38.9, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 19,
 					["g"] = {
 						i(5323),	-- Everglow Lantern
 						i(6721),	-- Chestplate of Kor
 					},
-					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
-					["coord"] = { 26.2, 38.9, ASHENVALE },
 				}),
 				q(1007, {	-- The Ancient Statuette
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3846,	-- Talen
 					["coord"] = { 14.8, 31.3, ASHENVALE },
-					["description"] = "The Ancient Statuette is located on the beach at 14.2, 20.6.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 19,
 				}),
 				q(6383, {	-- The Ashenvale Hunt
 					["qg"] = 12696,	-- Senani Thunderheart
@@ -476,10 +471,10 @@ _.Zones =
 					},
 				}),
 				q(1022, {	-- The Howling Vale
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3880,	-- Sentinel Melyria Frostshadow
 					["coord"] = { 22.2, 53.0, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(247, {	-- The Hunt Completed
 					["qg"] = 12696,	-- Senani Thunderheart
@@ -538,20 +533,18 @@ _.Zones =
 					},
 				}),
 				q(1034, {	-- The Ruins of Stardust
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3894,	-- Pelturas Whitemoon
 					["sourceQuest"] = 1033,	-- Elune's Tear
 					["coord"] = { 37.3, 51.8, ASHENVALE },
-					["description"] = "Pick up the Handful of Stardust on the island in the lake at 34, 66.7.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(970, {	-- The Tower of Althalaxx (4)
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
 					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3) (Darkshore)
 					["coord"] = { 26.2, 38.7, ASHENVALE },
-					["description"] = "Kill the Dark Strand mobs near 32, 29.3 to get the Glowing Soul Gem.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(973, {	-- The Tower of Althalaxx (5)
 					["qg"] = 3663,	-- Delgren the Purifier
@@ -574,16 +567,16 @@ _.Zones =
 					},
 				}),
 				q(1140, {	-- The Tower of Althalaxx (6)
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
 					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(1167, {	-- The Tower of Althalaxx (7)
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3663,	-- Delgren the Purifier
 					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6)
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(1008, {	-- The Zoram Strand
 					["qg"] = 3845,	-- Shindrell Swiftfire
