@@ -27,10 +27,11 @@ _.Zones =
 					["provider"] = { "i", 13140 },	-- Blood Red Key
 				}),
 				q(4261, {	-- Ancient Spirit
-					["lvl"] = 49,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9598,	-- Arei
 					["sourceQuest"] = 4442,	-- Purified!
+					["coord"] = { 49.4, 14.4, FELWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 49,
 					["g"] = {
 						i(11873),	-- Ethereal Mist Cape
 						i(11874),	-- Clouddrift Mantle

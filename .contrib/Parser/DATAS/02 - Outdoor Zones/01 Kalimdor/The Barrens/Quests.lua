@@ -494,12 +494,12 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(1040, {	-- Passage to Booty Bay
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["sourceQuests"] = 1039,	-- The Barrens Port(Darnassus)
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
+					["maps"] = { STRANGLETHORN_VALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
@@ -792,10 +792,13 @@ _.Zones =
 					},
 				}),
 				q(6382, {	-- The Ashenvale Hunt
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
 					["coord"] = { 44.86, 59.13, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						6383,	-- The Ashenvale Hunt
+					},
+					["lvl"] = 20,
 				}),
 				q(886, {	-- The Barrens Oases
 					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
@@ -951,7 +954,14 @@ _.Zones =
 					["qg"] = 8582,	-- Kadrak
 					["sourceQuests"] = { 6542, 6541 },	-- Report to Kadrak
 					["coord"] = { 48.12, 5.42, THE_BARRENS },
+					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16783, 1 },	-- Bundle of Reports
+						{ "i", 16765, 1 },	-- Warsong Outrider Update
+						{ "i", 16763, 1 },	-- Warsong Runner Update
+						{ "i", 16764, 1 },	-- Warsong Scout Update
+					},
 					["lvl"] = 17,
 				}),
 				q(1791, { -- The Windwatcher

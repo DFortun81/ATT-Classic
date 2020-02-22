@@ -881,9 +881,8 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(1041, {	-- The Caravan Road
-					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
 					["qg"] = 3945,	-- Caravaneer Ruzzgot
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["sourceQuest"] = 1040,	-- Passage to Booty Bay(The Barrens)
 					["coord"] = { 27.4, 74.1, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,

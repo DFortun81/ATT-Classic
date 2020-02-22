@@ -703,9 +703,13 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 				}),
 				q(235, {	-- The Ashenvale Hunt
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10880,	-- Warcaller Gorlach
+					["coord"] = { 46.6, 64.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						6383,	-- The Ashenvale Hunt
+					},
+					["lvl"] = 20,
 				}),
 				q(1504, { -- The Binding
 					["lvl"] = 10,

@@ -118,7 +118,7 @@ _.Instances = {
 				q(6562, {	-- Trouble in the Deeps
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.3, 64.4, STONETALON_MOUNTAINS },
-					["maps"] = { STONETALON_MOUNTAINS },
+					["maps"] = { ASHENVALE, STONETALON_MOUNTAINS },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,

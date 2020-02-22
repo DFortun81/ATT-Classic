@@ -22,16 +22,15 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1044, {	-- Answered Questions
+					["qg"] = 661,	-- Jonathan Carevin
+					["sourceQuest"] = 1043,	-- The Scythe of Elune
+					["coord"] = { 75.3, 49.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 					["g"] = {
 						i(5817),	-- Lunaris Bow
 						i(5818),	-- Moonbeam Wand
 					},
-					["qg"] = 661,	-- Jonathan Carevin
-					["sourceQuest"] = 1043,	-- The Scythe of Elune
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
-					["coord"] = { 75.3, 49.2, DUSKWOOD },
 				}),
 				q(325, {	-- Armed and Ready
 					["qg"] = 1416,	-- Grimand Elmore
@@ -397,12 +396,11 @@ _.Zones =
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 				}),
 				q(1042, {	-- The Carevin Family
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 					["qg"] = 267,	-- Clerk Daltry
 					["sourceQuest"] = 1041,	-- The Caravan Road (Straglethorn Vale)
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(229, {	-- The Daughter Who Lived
 					["lvl"] = 28,
@@ -557,12 +555,11 @@ _.Zones =
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
 				}),
 				q(1043, {	-- The Scythe of Elune
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 					["qg"] = 661,	-- Jonathan Carevin
 					["sourceQuest"] = 1042,	-- The Carevin Family
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
 					["coord"] = { 75.3, 49.2, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(262, {	-- The Shadowy Figure
 					["lvl"] = 20,

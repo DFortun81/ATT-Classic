@@ -136,6 +136,7 @@ _.Zones =
 				q(1132, {	-- Fiora Longears
 					["qg"] = 4455,	-- Red Jack Flint
 					["coord"] = { 9.9, 57.9, WETLANDS },
+					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 18,

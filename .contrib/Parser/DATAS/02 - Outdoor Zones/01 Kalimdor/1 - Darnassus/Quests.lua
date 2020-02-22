@@ -209,11 +209,11 @@ _.Zones =
 					["lvl"] = 15,
 				}),
 				q(1039, {	-- The Barrens Port
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1038,	-- Velinde's Effects
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["coord"] = { 61.8, 39.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 				}),
 				q(6071, {	-- The Hunter's Path
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
@@ -319,11 +319,23 @@ _.Zones =
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 				}),
 				q(1038, {	-- Velinde's Effects
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 25,
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
 					["sourceQuest"] = 1037, -- Velinde Starsong (Ashenvale)
-					["description"] = "This quest is part of a series that starts in Ashenvale.",
+					["coord"] = { 61.8, 39.4, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5521, 1 },	-- Velinde's Key
+						{ "i", 5520, 1 },	-- Velinde's Journal
+					},
+					["lvl"] = 25,
+					["groups"] = {
+						{
+							["itemID"] = 5520,	-- Velinde's Journal
+							["questID"] = 1038,	-- Velinde's Effects
+							["provider"] = { "o", 19877 },	-- Velinde's Locker
+							["coord"] = { 62.5, 83.1, DARNASSUS },
+						},
+					},
 				}),
 				q(1683, { -- Vorlus Vilehoof
 					["lvl"] = 10,

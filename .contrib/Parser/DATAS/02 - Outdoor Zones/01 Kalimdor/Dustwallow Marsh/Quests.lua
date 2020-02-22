@@ -158,6 +158,7 @@ _.Zones =
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
 					["coord"] = { 66.4, 45.2, DUSTWALLOW_MARSH },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),

@@ -250,10 +250,10 @@ _.Zones =
 					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(5713, {	-- One Shot. One Kill.
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11711,	-- Sentinel Aynasha
 					["coord"] = { 45.9, 90.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(948, {	-- Onu
 					["lvl"] = 12,
@@ -417,67 +417,85 @@ _.Zones =
 					["coord"] = { 37.7, 43.4, DARKSHORE},
 				}),
 				q(5321, {	-- The Sleeper Has Awakened
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11218,	-- Kerlonian Evershade
+					["coord"] = { 44.4, 76.4, DARKSHORE },
+					["description"] = "Make sure to pick up the Horn of Awakening from the chest next to Kerlonian Evershade.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13536, 1 },	-- Horn of Awakening
+					},
+					["lvl"] = 17,
 					["g"] = {
 						i(15205),	-- Owlsight Rifle
 						i(15206),	-- Jadefinger Baton
 						i(15207),	-- Steelcap Shield
 					},
-					["coord"] = { 44.4, 76.4, DARKSHORE },
-					["description"] = "Make sure to pick up the Horn of Awakening from the chest next to Kerlonian Evershade.",
 				}),
 				q(965, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
-					["coord"] = { 39.0, 43.6, DARKSHORE},
-					["description"] = "Quest giver is on 2nd floor.",
+					["coord"] = { 39.0, 43.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(966, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 965,	-- The Tower of Althalaxx
-					["coord"] = { 55.0, 24.9, DARKSHORE},
+					["coord"] = { 55.0, 24.9, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 					
 				}),
 				q(967, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 966,	-- The Tower of Althalaxx
-					["coord"] = { 55.0, 24.9, DARKSHORE},
+					["coord"] = { 55.0, 24.9, DARKSHORE },
+					["maps"] = { ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5354, 1 },	-- Letter to Delgren
+					},
+					["lvl"] = 13,
 				}),
 				q(1143, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
 					["sourceQuest"] = 1167,	-- The Tower of Althalaxx
-					["coord"] = { 55.0, 24.9, DARKSHORE},
+					["coord"] = { 55.0, 24.9, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5383, 1 },	-- Athrikus Narassin's Head
+					},
+					["lvl"] = 13,
+					["groups"] = {
+						{
+							["itemID"] = 5383,	-- Athrikus Narassin's Head
+							["questID"] = 1143,	-- The Tower of Althalaxx
+							["cr"] = 3660,	-- Athrikus Narassin <Cult of the Dark Strand>
+							["coord"] = { 56.0, 26.0, DARKSHORE },
+						},
+					},
 				}),
 				q(981, {	-- The Tower of Althalaxx
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3661,	-- Balthule Shadowstrike
+					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
+					["coord"] = { 55.0, 24.9, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(10043),	-- Pious Legwraps
 						i(5614),	-- Seraph's Strike
 					},
-					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
-					["coord"] = { 55.0, 24.9, DARKSHORE},
 				}),
 				q(949, {	-- The Twilight Camp
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 10076 },	-- Scrying Bowl
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(945, {	-- Therylune's Escape
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3584,	-- Therylune
 					["coord"] = { 38.6, 87.3, DARKSHORE },
+					["maps"] = { ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(4761, {	-- Thundris Windweaver
 					["lvl"] = 11,
@@ -495,10 +513,15 @@ _.Zones =
 					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(990, {	-- Trek to Ashenvale
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3694,	-- Sentinel Selarin
+					["sourceQuests"] = {
+						994,	-- Escape Through Force
+						995,	-- Escape Through Stealth
+					},
 					["coord"] = { 39.3, 43.5, DARKSHORE },
+					["maps"] = { ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
 					["lvl"] = 15,

@@ -245,11 +245,11 @@ _.Zones =
 					},
 				}),
 				q(1085, {	-- On Guard in Stonetalon
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4080,	-- Kaela Shadowspear
 					["sourceQuest"] = 1070,	-- On Guard in Stonetalon (Ashenvale)
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1088, {	-- Ordanus
 					["qg"] = 4198,	-- Braelyn Firehand
@@ -275,19 +275,6 @@ _.Zones =
 					["coord"] = { 73.51, 85.68, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
-				}),
-				q(1081, {	-- Reception from Tyrande
-					["qg"] = 4079,	-- Sentinel Thenysil
-					["sourceQuest"] = 1082,	-- Update for Sentinel Thenysil
-					--["coord"] = { },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
-					["g"] = {
-						i(7334),	-- Efflorescent Robe
-						i(7335),	-- Grizzly Tunic
-						i(7336),	-- Wildwood Chain
-						i(6678),	-- Band of Elven Grace
-					},
 				}),
 				q(1057, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
@@ -377,8 +364,8 @@ _.Zones =
 						1084,	-- Wounded Ancients
 					},
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
-					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1084, {	-- Wounded Ancients
 					["qg"] = 4080,	-- Kaela Shadowspear

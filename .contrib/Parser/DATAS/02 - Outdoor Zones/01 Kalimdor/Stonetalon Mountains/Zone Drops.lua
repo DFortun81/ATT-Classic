@@ -28,6 +28,18 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["cr"] = 6167,	-- Chimaera Matriarch
 				}),
+				i(5808, {	-- Pridewing Venom Sac
+					["questID"] = 1134,	-- Pridewings of Stonetalon
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						4014,	-- Pridewing Consort
+						4015,	-- Pridewing Patriarch
+						4013,	-- Pridewing Skyhunter
+						4012,	-- Pridewing Wyvern
+						5928,	-- Sorrow Wing
+						4011,	-- Young Pridewing
+					},
+				}),
 			}),
 		}),
 	}),

@@ -200,9 +200,13 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(742, {	-- The Ashenvale Hunt
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10881,	-- Bluff Runner Windstrider
+					["coord"] = { 41.4, 54.2, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						6383,	-- The Ashenvale Hunt
+					},
+					["lvl"] = 20,
 				}),
 				q(1086, {	-- The Flying Machine Airport
 					["qg"] = 3419,	-- Apothecary Zamah
