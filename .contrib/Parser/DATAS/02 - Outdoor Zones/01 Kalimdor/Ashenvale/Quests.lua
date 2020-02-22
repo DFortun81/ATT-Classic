@@ -384,10 +384,42 @@ _.Zones =
 				}),
 				q(6504, {	-- The Lost Pages
 					["qg"] = 12718,	-- Gurda Ragescar
-					["coord"] = { 70.00, 71.16, ASHENVALE},
+					["coord"] = { 70.00, 71.16, ASHENVALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16642, 1 },	-- Shredder Operating Manual - Chapter 1
+						{ "i", 16643, 1 },	-- Shredder Operating Manual - Chapter 2
+						{ "i", 16644, 1 },	-- Shredder Operating Manual - Chapter 3
+					},
 					["lvl"] = 23,
 					["g"] = {
+						i(16642, {	-- Shredder Operating Manual - Chapter 1
+							["questID"] = 6504,	-- The Lost Pages
+							["cost"] = {
+								{ "i", 16645, 1 },	-- Shredder Operating Manual - Page 1
+								{ "i", 16646, 1 },	-- Shredder Operating Manual - Page 2
+								{ "i", 16647, 1 },	-- Shredder Operating Manual - Page 3
+								{ "i", 16648, 1 },	-- Shredder Operating Manual - Page 4
+							},
+						}),
+						i(16643, {	-- Shredder Operating Manual - Chapter 2
+							["questID"] = 6504,	-- The Lost Pages
+							["cost"] = {
+								{ "i", 16649, 1 },	-- Shredder Operating Manual - Page 5
+								{ "i", 16650, 1 },	-- Shredder Operating Manual - Page 6
+								{ "i", 16651, 1 },	-- Shredder Operating Manual - Page 7
+								{ "i", 16652, 1 },	-- Shredder Operating Manual - Page 8
+							},
+						}),
+						i(16644, {	-- Shredder Operating Manual - Chapter 3
+							["questID"] = 6504,	-- The Lost Pages
+							["cost"] = {
+								{ "i", 16653, 1 },	-- Shredder Operating Manual - Page 9
+								{ "i", 16654, 1 },	-- Shredder Operating Manual - Page 10
+								{ "i", 16655, 1 },	-- Shredder Operating Manual - Page 11
+								{ "i", 16656, 1 },	-- Shredder Operating Manual - Page 12
+							},
+						}),
 						i(16740),	-- Shredder Operating Gloves
 						i(16741),	-- Oilrag Handwraps
 					},
