@@ -40,6 +40,26 @@ _.Zones =
 						i(3108), -- Heavy Throwing Dagger
 					},
 				}),
+				i(11316, {	-- Dinosaur Bone
+					["questID"] = 4141,	-- Muigin and Larion
+					["crs"] = {
+						6510,	-- Bloodpetal Flayer
+						6511,	-- Bloodpetal Thresher
+						6509,	-- Bloodpetal Lasher
+						6512,	-- Bloodpetal Trapper
+					},
+				}),
+				i(11114, {	-- Dinosaur Bone
+					["questID"] = 3845,	-- It's a Secret to Everybody
+					["crs"] = {
+						9162,	-- Young Diemetradon
+						9163,	-- Diemetradon
+						9164,	-- Elder Diemetradon
+						6502,	-- Plated Stegodon
+						6501,	-- Stegodon
+						6504,	-- Thunderstomp Stegodon
+					},
+				}),
 				{
 					["itemID"] = 14644,	-- Skeleton Key Mold
 					["coord"] = { 49.6, 47.6, UNGORO_CRATER },
@@ -54,6 +74,22 @@ _.Zones =
 						},
 					},
 				},
+				i(11830, {	-- Webbed Diemetradon Scale
+					["questID"] = 4503,	-- Shizzle's Flyer
+					["crs"] = {
+						9162,	-- Young Diemetradon
+						9163,	-- Diemetradon
+						9164,	-- Elder Diemetradon
+					},
+				}),
+				i(11831, {	-- Webbed Pterrordax Scale
+					["questID"] = 4503,	-- Shizzle's Flyer
+					["crs"] = {
+						9165,	-- Fledgling Pterrordax
+						9166,	-- Pterrordax
+						9167,	-- Frenzied Pterrordax
+					},
+				}),
 			}),
 		}),
 	}),

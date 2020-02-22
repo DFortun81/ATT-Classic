@@ -37,6 +37,9 @@ _.Zones =
 					["qg"] = 9119,	-- Muigin
 					["sourceQuest"] = 4141,	-- Muigin and Larion
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11316, 1 },	-- Bloodpetal
+					},
 				}),
 				q(3883, {	-- Alien Ecology
 					["lvl"] = 48,
@@ -202,9 +205,10 @@ _.Zones =
 					["lvl"] = 47,
 				}),
 				q(4145, {	-- Larion and Muigin
-					["lvl"] = 47,
 					["qg"] = 9118,	-- Larion
+					["coord"] = { 45.6, 8.6, UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 47,
 				}),
 				q(3961, {	-- Linken's Adventure
 					["lvl"] = 47,
@@ -244,28 +248,39 @@ _.Zones =
 					["lvl"] = 47,
 				}),
 				q(4141, {	-- Muigin and Larion
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11316, 15 },	-- Bloodpetal
+					},
+					["lvl"] = 47,
 				}),
 				q(3882, {	-- Roll the Bones
 					["lvl"] = 49,
 					["qg"] = 9272, -- Spark Nilminer
+					["coord"] = { 43.6, 7.4, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11114, 8 },	-- Dinosaur Bone
+					},
 					["g"] = {
 						i(11908),	-- Archaeologist's Quarry Boots
 						i(11909),	-- Excavator's Utility Belt
 					},
 				}),
 				q(4503, {	-- Shizzle's Flyer
-					["lvl"] = 49,
 					["qg"] = 9998,	-- Shizzle
+					["coord"] = { 44.2, 11.6, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11830, 8 },	-- Webbed Diemetradon Scale
+						{ "i", 11831, 8 },	-- Webbed Pterrordax Scale
+					},
 					["g"] = {
 						i(11915),	-- Shizzle's Drizzle Blocker
 						i(11916),	-- Shizzle's Muzzle
 						i(11917),	-- Shizzle's Nozzle Wiper
 					},
-					["coord"] = { 44.2, 11.6, UNGORO_CRATER },
+					["lvl"] = 49,
 				}),
 				q(4084, {	-- Silver Heart
 					["lvl"] = 47,

@@ -100,6 +100,9 @@ _.Instances = {
 					["coord"] = { 45.1, 25.6, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11318, 5 },	-- Atal'ai Haze
+					},
 					["lvl"] = 47,
 				}),
 				q(3512, { -- In Eranikus' Own Words
