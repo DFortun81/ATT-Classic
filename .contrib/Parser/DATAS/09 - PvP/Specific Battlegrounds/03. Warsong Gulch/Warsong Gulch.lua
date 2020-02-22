@@ -32,8 +32,8 @@ local HORDE_BATTLE_FOR_WSG_TIER_2 = {	-- Repeatables
 };
 _.PvP = 
 {
-	n(-304, { -- Battlegrounds
-		m(1460, { -- Warsong Gulch
+	n(-304, {	-- Battlegrounds
+		m(1460, {	-- Warsong Gulch
 			["maps"] = { ASHENVALE, THE_BARRENS },
 			["g"] = {
 				faction(890, {	-- Silverwing Sentinels
@@ -41,8 +41,81 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
+						n(-2, {	-- Vendor
+							n(14753, {	-- Illiyana Moonblaze <Silverwing Supply Officer>
+								["coord"] = { 61.6, 83.8, ASHENVALE },
+								["groups"] = {
+									i(19506),	-- Silverwing Battle Tabard
+									i(19578),	-- Berserker Bracers
+									i(19580),	-- Berserker Bracers
+									i(19581),	-- Berserker Bracers
+									i(19530),	-- Caretaker's Cape
+									i(19531),	-- Caretaker's Cape
+									i(19532),	-- Caretaker's Cape
+									i(19533),	-- Caretaker's Cape
+									i(20428),	-- Caretaker's Cape
+									i(19595),	-- Dryad's Wrist Bindings
+									i(19596),	-- Dryad's Wrist Bindings
+									i(19597),	-- Dryad's Wrist Bindings
+									i(19587),	-- Forest Stalker's Bracers
+									i(19589),	-- Forest Stalker's Bracers
+									i(19590),	-- Forest Stalker's Bracers
+									i(19522),	-- Lorekeeper's Ring
+									i(19523),	-- Lorekeeper's Ring
+									i(19524),	-- Lorekeeper's Ring
+									i(19525),	-- Lorekeeper's Ring
+									i(20431),	-- Lorekeeper's Ring
+									i(19570),	-- Lorekeeper's Staff
+									i(19571),	-- Lorekeeper's Staff
+									i(19572),	-- Lorekeeper's Staff
+									i(19573),	-- Lorekeeper's Staff
+									i(20434),	-- Lorekeeper's Staff
+									i(19562),	-- Outrunner's Bow
+									i(19563),	-- Outrunner's Bow
+									i(19564),	-- Outrunner's Bow
+									i(19565),	-- Outrunner's Bow
+									i(20438),	-- Outrunner's Bow
+									i(19514),	-- Protector's Band
+									i(19516),	-- Protector's Band
+									i(19515),	-- Protector's Band
+									i(19517),	-- Protector's Band
+									i(20439),	-- Protector's Band
+									i(19554),	-- Protector's Sword
+									i(19555),	-- Protector's Sword
+									i(19556),	-- Protector's Sword
+									i(19557),	-- Protector's Sword
+									i(20440),	-- Protector's Sword
+									i(20443),	-- Sentinel's Blade
+									i(19546),	-- Sentinel's Blade
+									i(19547),	-- Sentinel's Blade
+									i(19548),	-- Sentinel's Blade
+									i(19549),	-- Sentinel's Blade
+									i(19538),	-- Sentinel's Medallion
+									i(19539),	-- Sentinel's Medallion
+									i(19540),	-- Sentinel's Medallion
+									i(19541),	-- Sentinel's Medallion
+									i(20444),	-- Sentinel's Medallion
+									i(19582),	-- Windtalker's Wristguards
+									i(19583),	-- Windtalker's Wristguards
+									i(19584),	-- Windtalker's Wristguards
+									
+									-- Not Available Until Phase 6
+									un(3, i(21567)),	-- Rune of Duty
+									un(3, i(21568)),	-- Rune of Duty
+									un(3, i(21565)),	-- Rune of Perfection
+									un(3, i(21566)),	-- Rune of Perfection
+									un(3, i(22748)),	-- Sentinel's Chain Leggings
+									un(3, i(30497)),	-- Sentinel's Mail Leggings
+									un(3, i(22753)),	-- Sentinel's Lamellar Legguards
+									un(3, i(22749)),	-- Sentinel's Leather Pants
+									un(3, i(22750)),	-- Sentinel's Lizardhide Pants
+									un(3, i(22672)),	-- Sentinel's Plate Legguards
+									un(3, i(22752)),	-- Sentinel's Silk Leggings
+								},
+							}),
+						}),
 						n(-17, {	-- Quests
-							q(8372, { -- Fight for Warsong Gulch
+							q(8372, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -51,7 +124,7 @@ _.PvP =
 								},
 								["lvl"] = 10,
 							}),
-							q(8399, { -- Fight for Warsong Gulch
+							q(8399, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -60,7 +133,7 @@ _.PvP =
 								},
 								["lvl"] = 20,
 							}),
-							q(8400, { -- Fight for Warsong Gulch
+							q(8400, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -69,7 +142,7 @@ _.PvP =
 								},
 								["lvl"] = 30,
 							}),
-							q(8401, { -- Fight for Warsong Gulch
+							q(8401, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -78,7 +151,7 @@ _.PvP =
 								},
 								["lvl"] = 40,
 							}),
-							q(8402, { -- Fight for Warsong Gulch
+							q(8402, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -87,7 +160,7 @@ _.PvP =
 								},
 								["lvl"] = 50,
 							}),
-							q(8403, { -- Fight for Warsong Gulch
+							q(8403, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
@@ -96,7 +169,7 @@ _.PvP =
 								},
 								["lvl"] = 60,
 							}),
-							q(8386, { -- Fight for Warsong Gulch
+							q(8386, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8372, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -107,7 +180,7 @@ _.PvP =
 								},
 								["lvl"] = 10,
 							}),
-							q(8404, { -- Fight for Warsong Gulch
+							q(8404, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8399, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -118,7 +191,7 @@ _.PvP =
 								},
 								["lvl"] = 20,
 							}),
-							q(8405, { -- Fight for Warsong Gulch
+							q(8405, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8400, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -129,7 +202,7 @@ _.PvP =
 								},
 								["lvl"] = 30,
 							}),
-							q(8406, { -- Fight for Warsong Gulch
+							q(8406, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8401, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -140,7 +213,7 @@ _.PvP =
 								},
 								["lvl"] = 40,
 							}),
-							q(8407, { -- Fight for Warsong Gulch
+							q(8407, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8402, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -151,7 +224,7 @@ _.PvP =
 								},
 								["lvl"] = 50,
 							}),
-							q(8408, { -- Fight for Warsong Gulch
+							q(8408, {	-- Fight for Warsong Gulch
 								["qg"] = 15351, -- Alliance Brigadier General
 								["sourceQuest"] = 8403, -- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
@@ -162,6 +235,30 @@ _.PvP =
 								},
 								["lvl"] = 60,
 							}),
+							q(7865, {	-- Sentinel Advanced Care Package
+								["qg"] = 14753,	-- Illiyana Moonblaze
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 45,
+								["g"] = {
+									i(19152),	-- Sentinel Advanced Care Package
+								},
+							}),
+							q(7863, {	-- Sentinel Basic Care Package
+								["qg"] = 14753,	-- Illiyana Moonblaze
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 25,
+								["g"] = {
+									i(19150),	-- Sentinel Basic Care Package
+								},
+							}),
+							q(7864, {	-- Sentinel Standard Care Package
+								["qg"] = 14753,	-- Illiyana Moonblaze
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 35,
+								["g"] = {
+									i(19151),	-- Sentinel Standard Care Package
+								},
+							}),
 						}),
 					},
 				}),
@@ -170,8 +267,81 @@ _.PvP =
 					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
 					["races"] = HORDE_ONLY,
 					["g"] = {
+						n(-2, {	-- Vendor
+							n(14754, {	-- Kelm Hargunth <Warsong Supply Officer>
+								["coord"] = { 46.6, 8.4, THE_BARRENS },
+								["groups"] = {
+									i(19505),	-- Warsong Battle Tabard
+									i(19518),	-- Advisor's Ring
+									i(19519),	-- Advisor's Ring
+									i(19520),	-- Advisor's Ring
+									i(19521),	-- Advisor's Ring
+									i(20426),	-- Advisor's Ring
+									i(19566),	-- Advisor's Gnarled Staff
+									i(19567),	-- Advisor's Gnarled Staff
+									i(19568),	-- Advisor's Gnarled Staff
+									i(19569),	-- Advisor's Gnarled Staff
+									i(20425),	-- Advisor's Gnarled Staff
+									i(19526),	-- Battle Healer's Cloak
+									i(19527),	-- Battle Healer's Cloak
+									i(19528),	-- Battle Healer's Cloak
+									i(19529),	-- Battle Healer's Cloak
+									i(20427),	-- Battle Healer's Cloak
+									i(19578),	-- Berserker Bracers
+									i(19580),	-- Berserker Bracers
+									i(19581),	-- Berserker Bracers
+									i(19595),	-- Dryad's Wrist Bindings
+									i(19596),	-- Dryad's Wrist Bindings
+									i(19597),	-- Dryad's Wrist Bindings
+									i(19587),	-- Forest Stalker's Bracers
+									i(19589),	-- Forest Stalker's Bracers
+									i(19590),	-- Forest Stalker's Bracers
+									i(19510),	-- Legionnaire's Band
+									i(19511),	-- Legionnaire's Band
+									i(19512),	-- Legionnaire's Band
+									i(19513),	-- Legionnaire's Band
+									i(20429),	-- Legionnaire's Band
+									i(19550),	-- Legionnaire's Sword
+									i(19551),	-- Legionnaire's Sword
+									i(19552),	-- Legionnaire's Sword
+									i(19553),	-- Legionnaire's Sword
+									i(20430),	-- Legionnaire's Sword
+									i(19558),	-- Outrider's Bow
+									i(19559),	-- Outrider's Bow
+									i(19560),	-- Outrider's Bow
+									i(19561),	-- Outrider's Bow
+									i(20437),	-- Outrider's Bow
+									i(19542),	-- Scout's Blade
+									i(19543),	-- Scout's Blade
+									i(19544),	-- Scout's Blade
+									i(19545),	-- Scout's Blade
+									i(20441),	-- Scout's Blade
+									i(19534),	-- Scout's Medallion
+									i(19535),	-- Scout's Medallion
+									i(19536),	-- Scout's Medallion
+									i(19537),	-- Scout's Medallion
+									i(20442),	-- Scout's Medallion
+									i(19582),	-- Windtalker's Wristguards
+									i(19583),	-- Windtalker's Wristguards
+									i(19584),	-- Windtalker's Wristguards
+									
+									-- Not Available Until Phase 6
+									un(3, i(21567)),	-- Rune of Duty
+									un(3, i(21568)),	-- Rune of Duty
+									un(3, i(21565)),	-- Rune of Perfection
+									un(3, i(21566)),	-- Rune of Perfection
+									un(3, i(22673)),	-- Outrider's Chain Leggings
+									un(3, i(30498)),	-- Outrider's Lamellar Legguards
+									un(3, i(22740)),	-- Outrider's Leather Pants
+									un(3, i(22741)),	-- Outrider's Lizardhide Pants
+									un(3, i(22676)),	-- Outrider's Mail Leggings
+									un(3, i(22651)),	-- Outrider's Plate Legguards
+									un(3, i(22747)),	-- Outrider's Silk Leggings
+								},
+							}),
+						}),
 						n(-17, {	-- Quests
-							q(8368, { -- Battle of Warsong Gulch
+							q(8368, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -180,7 +350,7 @@ _.PvP =
 								},
 								["lvl"] = 10,
 							}),
-							q(8426, { -- Battle of Warsong Gulch
+							q(8426, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -189,7 +359,7 @@ _.PvP =
 								},
 								["lvl"] = 20,
 							}),
-							q(8427, { -- Battle of Warsong Gulch
+							q(8427, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -198,7 +368,7 @@ _.PvP =
 								},
 								["lvl"] = 30,
 							}),
-							q(8428, { -- Battle of Warsong Gulch
+							q(8428, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -207,7 +377,7 @@ _.PvP =
 								},
 								["lvl"] = 40,
 							}),
-							q(8429, { -- Battle of Warsong Gulch
+							q(8429, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -216,7 +386,7 @@ _.PvP =
 								},
 								["lvl"] = 50,
 							}),
-							q(8430, { -- Battle of Warsong Gulch
+							q(8430, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
@@ -225,7 +395,7 @@ _.PvP =
 								},
 								["lvl"] = 60,
 							}),
-							q(8389, { -- Battle of Warsong Gulch
+							q(8389, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8368, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -236,7 +406,7 @@ _.PvP =
 								},
 								["lvl"] = 10,
 							}),
-							q(8431, { -- Battle of Warsong Gulch
+							q(8431, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8426, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -247,7 +417,7 @@ _.PvP =
 								},
 								["lvl"] = 20,
 							}),
-							q(8432, { -- Battle of Warsong Gulch
+							q(8432, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8427, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -258,7 +428,7 @@ _.PvP =
 								},
 								["lvl"] = 30,
 							}),
-							q(8433, { -- Battle of Warsong Gulch
+							q(8433, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8428, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -269,7 +439,7 @@ _.PvP =
 								},
 								["lvl"] = 40,
 							}),
-							q(8434, { -- Battle of Warsong Gulch
+							q(8434, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8429, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -280,7 +450,7 @@ _.PvP =
 								},
 								["lvl"] = 50,
 							}),
-							q(8435, { -- Battle of Warsong Gulch
+							q(8435, {	-- Battle of Warsong Gulch
 								["qg"] = 15350, -- Horde Warbringer
 								["sourceQuest"] = 8430, -- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
@@ -290,6 +460,33 @@ _.PvP =
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
 								["lvl"] = 60,
+							}),
+							q(7868, {	-- Outrider Advanced Care Package
+								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["coord"] = { 46.6, 8.4, THE_BARRENS },
+								["races"] = HORDE_ONLY,
+								["lvl"] = 45,
+								["g"] = {
+									i(19153),	-- Outrider Advanced Care Package
+								},
+							}),
+							q(7866, {	-- Outrider Basic Care Package
+								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["coord"] = { 46.6, 8.4, THE_BARRENS },
+								["races"] = HORDE_ONLY,
+								["lvl"] = 25,
+								["g"] = {
+									i(19154),	-- Outrider Basic Care Package
+								},
+							}),
+							q(7867, {	-- Outrider Standard Care Package
+								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["coord"] = { 46.6, 8.4, THE_BARRENS },
+								["races"] = HORDE_ONLY,
+								["lvl"] = 35,
+								["g"] = {
+									i(19155),	-- Outrider Standard Care Package
+								},
 							}),
 						}),
 					},
