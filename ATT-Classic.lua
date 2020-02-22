@@ -251,9 +251,9 @@ GameTooltipModel.SetCreatureID = function(self, creatureID)
 	end
 	self:Show();
 end
-GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
-	if displayInfos then
-		local count = #displayInfos;
+GameTooltipModel.TrySetDisplayInfo = function(self, reference, displayInfo)
+	if displayInfo then
+		local count = #displayInfo;
 		if count > 0 then
 			local rotation = reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
 			local scale = reference.modelScale or 1;
@@ -263,7 +263,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 				if count < 3 then
 					for i=1,count do
 						model = self.Models[i];
-						model:SetDisplayInfo(displayInfos[i]);
+						model:SetDisplayInfo(displayInfo[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
@@ -273,7 +273,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 					scale = (1 + (ratio * 0.5)) * scale;
 					for i=1,count do
 						model = self.Models[i];
-						model:SetDisplayInfo(displayInfos[i]);
+						model:SetDisplayInfo(displayInfo[i]);
 						model:SetCamDistanceScale(scale);
 						model:SetFacing(rotation);
 						fi = math.floor(i / 2);
@@ -284,7 +284,7 @@ GameTooltipModel.TrySetDisplayInfos = function(self, reference, displayInfos)
 			else
 				self.Model:SetFacing(rotation);
 				self.Model:SetCamDistanceScale(scale);
-				self.Model:SetDisplayInfo(displayInfos[1]);
+				self.Model:SetDisplayInfo(displayInfo[1]);
 				self.Model:Show();
 			end
 			self:Show();
@@ -296,21 +296,18 @@ GameTooltipModel.TrySetModel = function(self, reference)
 	GameTooltipModel.HideAllModels(self);
 	if app.Settings:GetTooltipSetting("Models") then
 		self.lastModel = reference;
-		local displayInfos = reference.displayInfo;
-		if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
-			return true;
-		elseif reference.qgs then
+		if reference.qgs then
 			if #reference.qgs > 1 then
-				displayInfos = {};
+				local displayInfo = {};
 				local markedKeys = {};
 				for i,creatureID in ipairs(reference.qgs) do
 					local displayID = app.NPCDisplayIDFromID[creatureID];
 					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfos, displayID);
+						tinsert(displayInfo, displayID);
 						markedKeys[displayID] = 1;
 					end
 				end
-				if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
+				if GameTooltipModel.TrySetDisplayInfo(self, reference, displayInfo) then
 					return true;
 				end
 			else
@@ -325,18 +322,18 @@ GameTooltipModel.TrySetModel = function(self, reference)
 				end
 			end
 		elseif reference.providers then
-			displayInfos = {}
+			local displayInfo = {}
 			local markedKeys = {}
 			for k,v in pairs(reference.providers) do
 				if v[1] == "n" and v[2] > 0 then
 					local displayID = app.NPCDisplayIDFromID[v[2]];
 					if displayID and not markedKeys[displayID] then
-						tinsert(displayInfos, displayID);
+						tinsert(displayInfo, displayID);
 						markedKeys[displayID] = 1;
 					end
 				end
 			end
-			if GameTooltipModel.TrySetDisplayInfos(self, reference, displayInfos) then
+			if GameTooltipModel.TrySetDisplayInfo(self, reference, displayInfo) then
 				return true;
 			end
 		end
