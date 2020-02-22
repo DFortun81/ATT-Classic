@@ -5,8 +5,6 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(AZSHARA, {
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
 		}),
 	}),
 };

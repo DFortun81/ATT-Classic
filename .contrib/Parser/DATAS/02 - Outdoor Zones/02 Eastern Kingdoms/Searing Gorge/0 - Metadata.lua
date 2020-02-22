@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SEARING_GORGE, {	-- Searing Gorge
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(SEARING_GORGE, {
 		}),
 	}),
 };

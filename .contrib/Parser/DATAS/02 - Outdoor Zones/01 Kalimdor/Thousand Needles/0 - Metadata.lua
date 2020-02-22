@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THOUSAND_NEEDLES, {	-- Thousand Needles
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(THOUSAND_NEEDLES, {
 		}),
 	}),
 };

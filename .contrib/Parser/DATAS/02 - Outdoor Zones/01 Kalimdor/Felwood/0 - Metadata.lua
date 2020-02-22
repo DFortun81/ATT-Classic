@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(FELWOOD, {	-- Felwood
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(FELWOOD, {
 		}),
 	}),
 };

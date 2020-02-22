@@ -94,7 +94,6 @@ _.Zones =
 					},
 				}),
 				q(3118, {	-- Encrypted Sigil
-					["lvl"] = 1,
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 2079,	-- Conservator Ilthalaine
@@ -111,7 +110,6 @@ _.Zones =
 					["description"] = "In Darnassus, enter the base of the tree at 32.7, 16.3 to turn in the quest.",
 				}),
 				q(3117, {	-- Etched Sigil
-					["lvl"] = 1,
 					["classes"] = { 3 },	-- Hunter
 					["races"] = { 4 },	-- Night Elf
 					["qg"] = 2079,	-- Conservator Ilthalaine

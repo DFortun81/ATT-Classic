@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(SILITHUS, {	-- Silithus
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(SILITHUS, {
 		}),
 	}),
 };

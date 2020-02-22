@@ -155,7 +155,6 @@ _.Zones =
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 					["races"] = { 1 },	-- Human
 					["classes"] = { 4 },	-- Rogue
-					["lvl"] = 1,
 				}),
 				q(37, {	-- Find the Lost Guards
 					["qg"] = 261,	-- Guard Thomas
@@ -190,7 +189,6 @@ _.Zones =
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 					["races"] = { 1 }, -- Human
 					["classes"] = { 8 }, -- Mage
-					["lvl"] = 1,
 				}),
 				q(47, {	-- Gold Dust Exchange
 					["qg"] = 241,	-- Remy "Two Times"
@@ -233,7 +231,6 @@ _.Zones =
 					},
 				}),
 				q(3103, { -- Hallowed Letter
-					["lvl"] = 1,
 					["races"] = { HUMAN },
 					["qg"] = 197, -- Marshal McBride
 					["classes"] = { 5 }, -- Priest
@@ -445,7 +442,6 @@ _.Zones =
 					["sourceQuest"] = 7, -- Kobold Camp Cleanup
 					["races"] = { 1 }, -- Human
 					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 1,
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["qg"] = 197,	-- Marshal McBride
@@ -528,7 +524,6 @@ _.Zones =
 					["qg"] = 459, -- Drusilla La Salle
 					["races"] = { 1 }, -- Human
 					["classes"] = { 9 }, -- Warlock
-					["lvl"] = 1,
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,

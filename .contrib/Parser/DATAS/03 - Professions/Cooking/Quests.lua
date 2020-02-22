@@ -76,7 +76,6 @@ profession(185, {	-- Cooking
 			["sourceQuest"] = 8313,	-- Sharing the Knowledge
 		}),
 		q(4161, {	-- Recipe of the Kaldorei
-			["lvl"] = 1,
 			["requireSkill"] = 185,	-- Cooking
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 6286,	-- Zarrin

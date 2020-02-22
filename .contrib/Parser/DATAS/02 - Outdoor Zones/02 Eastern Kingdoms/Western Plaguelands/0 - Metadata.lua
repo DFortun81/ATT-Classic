@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(WESTERN_PLAGUELANDS, {	-- Western Plaguelands
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(WESTERN_PLAGUELANDS, {
 		}),
 	}),
 };

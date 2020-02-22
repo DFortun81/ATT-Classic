@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(THE_BARRENS, {	-- The Barrens
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(THE_BARRENS, {
 		}),
 	}),
 };

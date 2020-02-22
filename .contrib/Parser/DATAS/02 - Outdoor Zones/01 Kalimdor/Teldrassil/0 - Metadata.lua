@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TELDRASSIL, {	-- Teldrassil
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(TELDRASSIL, {
 		}),
 	}),
 };

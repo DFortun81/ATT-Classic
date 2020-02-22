@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(STONETALON_MOUNTAINS, {	-- Stonetalon Mountains
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(STONETALON_MOUNTAINS, {
 		}),
 	}),
 };

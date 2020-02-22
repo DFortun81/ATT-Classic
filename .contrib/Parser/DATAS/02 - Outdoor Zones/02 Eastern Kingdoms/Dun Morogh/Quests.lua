@@ -75,21 +75,18 @@ _.Zones =
 					},
 				}),
 				q(3113, {	-- Encrypted Memorandum
-					["lvl"] = 1,
 					["races"] = { 7 },	-- Gnome
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3109, {	-- Encrypted Rune
-					["lvl"] = 1,
 					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3108, {	-- Etched Rune
-					["lvl"] = 1,
 					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter
 					["qg"] = 658,	-- Sten Stoutarm

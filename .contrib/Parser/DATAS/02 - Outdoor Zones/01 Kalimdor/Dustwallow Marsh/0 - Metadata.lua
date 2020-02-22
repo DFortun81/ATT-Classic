@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(DUSTWALLOW_MARSH, {	-- Dustwallow Marsh
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(DUSTWALLOW_MARSH, {
 		}),
 	}),
 };

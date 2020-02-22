@@ -5,8 +5,6 @@ _.Zones =
 {
 	m(KALIMDOR, {
 		m(ORGRIMMAR, {
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
 			["isRaid"] = true,
 		}),
 	}),

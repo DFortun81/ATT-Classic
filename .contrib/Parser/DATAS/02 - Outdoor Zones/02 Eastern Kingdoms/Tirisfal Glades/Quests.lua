@@ -171,7 +171,6 @@ _.Zones =
 					["qg"] = 1569, -- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
-					["lvl"] = 1,
 				}),
 				q(365, {	-- Fields of Grief
 					["qg"] = 1519,	-- Deathguard Simmer
@@ -202,7 +201,6 @@ _.Zones =
 					["qg"] = 1569, -- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { MAGE },
-					["lvl"] = 1,
 				}),
 				q(5481, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
@@ -285,7 +283,6 @@ _.Zones =
 					["cost"] = {
 						{ "i", 6281, 3 },	-- Rattlecage Skull
 					},
-					["lvl"] = 1,
 				}),
 				q(374, {	-- Proof of Demise
 					["qg"] = 1652,	-- Deathguard Burgess
@@ -377,7 +374,6 @@ _.Zones =
 					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
 					["classes"] = { WARLOCK },
-					["lvl"] = 1,
 				}),
 				q(375, {	-- The Chill of Death
 					["qg"] = 1521,	-- Gretchen Dedmar

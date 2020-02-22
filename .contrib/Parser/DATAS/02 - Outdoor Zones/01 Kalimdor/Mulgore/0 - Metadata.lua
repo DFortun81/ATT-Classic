@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MULGORE, {	-- Mulgore
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(MULGORE, {
 		}),
 	}),
 };

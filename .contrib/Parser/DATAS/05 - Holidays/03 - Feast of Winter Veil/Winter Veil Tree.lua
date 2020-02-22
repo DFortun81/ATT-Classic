@@ -7,7 +7,6 @@ _.Holidays =
 		q(8744, { 	-- A Carefully Wrapped Present
 			["isYearly"] = true,
 			["races"] = ALLIANCE_ONLY,
-			["lvl"] = 1,
 			["groups"] = {
 				i(21191, {  -- Carefully Wrapped Present
 					i(21254),  -- Winter Veil Cookie
@@ -37,7 +36,6 @@ _.Holidays =
 		}),
 		q(8767, { 	-- A Gently Shaken Gift
 			["isYearly"] = true,
-			["lvl"] = 1,
 			["altQuests"] = {
 				8788, 	-- A Gently Shaken Gift
 			},
@@ -49,7 +47,6 @@ _.Holidays =
 		}),
 		q(8788, { 	-- A Gently Shaken Gift
 			["isYearly"] = true,
-			["lvl"] = 1,
 			["altQuests"] = {
 				8767, 	-- A Gently Shaken Gift
 			},

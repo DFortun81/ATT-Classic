@@ -10,7 +10,6 @@ _.Zones =
 					["qg"] = 6786,	-- Ukor
 					["coord"] = { 52.05, 68.31, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4540),	-- Tough Hunk of Bread
 						i(159),	-- Refreshing Spring Water
@@ -57,7 +56,6 @@ _.Zones =
 					["coord"] = { 42.85, 69.14, DUROTAR },
 					["sourceQuest"] = 792,	-- Vile Familiars
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4921),	-- Dust-covered Leggings
 						i(4922),	-- Jagged Chain Vest
@@ -100,7 +98,6 @@ _.Zones =
 					["sourceQuest"] = 4641,	-- Your Place In The World
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4915),	-- Soft Wool Boots
 						i(4914),	-- Battleworn Leather Gloves
@@ -128,7 +125,6 @@ _.Zones =
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { 2 },	-- Orc
 					["classes"] = { 4 },	-- Rogue
-					["lvl"] = 1,
 				}),
 				q(813, {	-- Finding the Antidote
 					["qg"] = 3189,	-- Kor'ghan
@@ -146,7 +142,6 @@ _.Zones =
 					["repeatable"] = true,
 					["coord"] = { 62.34, 20.03, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4986),	-- Flawed Power Stone
 					},
@@ -168,7 +163,6 @@ _.Zones =
 					["sourceQuest"] = 788,	-- Cutting Teeth
 					["coord"] = { 42.73, 67.23, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(11584),	-- Cactus Apple Surprise
 					},
@@ -192,7 +186,6 @@ _.Zones =
 					["coord"] = { 42.0, 68.4, DUROTAR },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["lvl"] = 1
 				}),
 				q(5649, {	-- In Favor of Spirituality
 					["qg"] = 3707,	-- Ken'jai
@@ -278,20 +271,17 @@ _.Zones =
 					["sourceQuest"] = 794,	-- Burning Blade Medallion
 					["coord"] = { 42.85, 69.14, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 				}),
 				q(790, {	-- Sarkoth
 					["qg"] = 3287,	-- Hana'zua
 					["coord"] = { 40.60, 62.60, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 				}),
 				q(804, {	-- Sarkoth
 					["qg"] = 3287,	-- Hana'zua
 					["sourceQuest"] = 790,	-- Sarkoth
 					["coord"] = { 40.60, 62.60, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4916),	-- Soft Wool Vest
 						i(4917),	-- Battleworn Chain Leggings
@@ -315,7 +305,6 @@ _.Zones =
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { 2 },	-- Orc
 					["classes"] = { 1 },	-- Warrior
-					["lvl"] = 1,
 				}),
 				q(827, {	-- Skull Rock
 					["qg"] = 3208,	-- Margoz
@@ -334,7 +323,6 @@ _.Zones =
 					["sourceQuest"] = 788,	-- Cutting Teeth
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["g"] = {
 						i(4919),	-- Soft Wool Belt
 						i(4920),	-- Battleworn Cape
@@ -351,14 +339,12 @@ _.Zones =
 					["provider"] = { "i", 4881 },	-- Aged Envelope
 					["coord"] = { 59.26, 57.65, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 				}),
 				q(831, {	-- The Admiral's Orders
 					["qg"] = 3139,	-- Gar'Thok
 					["sourceQuest"] = 830,	-- The Admiral's Orders
 					["coord"] = { 51.95, 43.50, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 				}),
 				q(924, {	-- The Demon Seed
 					["qg"] = 3521,	-- Ak'Zeloth
@@ -429,14 +415,12 @@ _.Zones =
 					["classes"] = { 9 }, -- Warlock
 					["coord"] = { 42.6, 69.0, DUROTAR },
 					["races"] = { 2, 5 }, -- Orcs and Undead only
-					["lvl"] = 1,
 				}),
 				q(1499, {	-- Vile Familiars (Part 2 - Warlocks only!)
 					["qg"] = 5765,	-- Ruzan
 					["classes"] = { 9 }, -- Warlock
 					["coord"] = { 42.6, 69.0, DUROTAR },
 					["races"] = { 2, 5 }, -- Orcs and Undead only
-					["lvl"] = 1,
 				}),
 				q(5843, {	-- Welcome!
 					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
@@ -457,7 +441,6 @@ _.Zones =
 					["qg"] = 10176,	-- Kaltunk
 					["coord"] = { 43.29, 68.53, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 1,
 					["altQuests"] = {
 						787,	-- The New Horde
 					},

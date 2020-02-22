@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(HILLSBRAD_FOOTHILLS, {	-- Hillsbrad Foothills
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(HILLSBRAD_FOOTHILLS, {
 		}),
 	}),
 };

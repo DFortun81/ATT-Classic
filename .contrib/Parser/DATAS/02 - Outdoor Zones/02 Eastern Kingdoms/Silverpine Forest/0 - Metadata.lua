@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(SILVERPINE_FOREST, {	-- Silverpine Forest
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(SILVERPINE_FOREST, {
 		}),
 	}),
 };

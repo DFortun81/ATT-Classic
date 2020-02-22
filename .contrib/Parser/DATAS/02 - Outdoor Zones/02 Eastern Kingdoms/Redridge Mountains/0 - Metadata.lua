@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(REDRIDGE_MOUNTAINS, {	-- Redridge Mountains
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(REDRIDGE_MOUNTAINS, {
 		}),
 	}),
 };

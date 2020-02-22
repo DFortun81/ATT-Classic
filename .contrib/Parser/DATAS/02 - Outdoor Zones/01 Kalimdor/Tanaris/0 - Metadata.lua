@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(TANARIS, {	-- Tanaris
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(TANARIS, {
 		}),
 	}),
 };

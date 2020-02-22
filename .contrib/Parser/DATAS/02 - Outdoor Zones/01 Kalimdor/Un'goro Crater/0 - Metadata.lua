@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(UNGORO_CRATER, {	-- Un'Goro Crater
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(UNGORO_CRATER, {
 		}),
 	}),
 };

@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(KALIMDOR, {
-		m(MOONGLADE, {	-- Moonglade
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(MOONGLADE, {
 		}),
 	}),
 };

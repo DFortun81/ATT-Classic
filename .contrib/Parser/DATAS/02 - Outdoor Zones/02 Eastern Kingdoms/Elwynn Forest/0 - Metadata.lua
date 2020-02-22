@@ -4,9 +4,7 @@
 _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
-		m(ELWYNN_FOREST, {	-- Elwynn Forest
-			["description"] = "|cff66ccff |r",
-			["lvl"] = 1,
+		m(ELWYNN_FOREST, {
 		}),
 	}),
 };
