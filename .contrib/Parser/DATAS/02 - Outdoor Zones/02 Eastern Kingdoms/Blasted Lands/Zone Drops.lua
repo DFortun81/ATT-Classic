@@ -76,9 +76,6 @@ _.Zones =
 						8718,	-- Manahound
 					},
 				}),
-				i(19260, {	-- Three of Warlords
-					["cr"] = 8298,	-- Akubar the Seer
-				}),
 				i(8396, {	-- Vulture Gizzard
 					["crs"] = {
 						5982,	-- Black Slayer
