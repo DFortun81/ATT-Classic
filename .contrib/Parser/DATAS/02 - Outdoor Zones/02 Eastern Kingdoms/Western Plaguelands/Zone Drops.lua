@@ -18,9 +18,6 @@ _.Zones =
 					["cr"] = 1852,	-- Araj the Summoner
 					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 				}),
-				i(12843, {	-- Corruptor's Scourgestone
-					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-				}),
 				i(12841, {	-- Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
@@ -75,9 +72,6 @@ _.Zones =
 				}),
 				i(12707, {	-- Plans: Runic Plate Boots
 					["cr"] = 1836,	-- Scarlet Cavalier
-				}),
-				i(12719, {	-- Plans: Runic Plate Leggings
-					["cr"] = 1885,	-- Scarlet Smith
 				}),
 				i(9296, {	-- Recipe: Gift of Arthas
 					["crs"] = {

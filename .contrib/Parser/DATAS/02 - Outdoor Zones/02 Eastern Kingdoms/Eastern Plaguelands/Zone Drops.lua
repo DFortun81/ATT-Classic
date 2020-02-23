@@ -6,9 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(EASTERN_PLAGUELANDS, {
 			n(ZONEDROPS, {
-				i(12843, {	-- Corruptor's Scourgestone
-					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
-				}),
 				i(12841, {	-- Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),
@@ -109,9 +106,6 @@ _.Zones =
 						8605,	-- Carrion Devourer
 						8603,	-- Carrion Grub
 					},
-				}),
-				i(16039, {	-- Ta'Kierthan Songblade
-					["cr"] = 10826,	-- Lord Darkscythe
 				}),
 			}),
 		}),
