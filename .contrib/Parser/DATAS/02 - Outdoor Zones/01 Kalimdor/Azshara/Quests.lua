@@ -434,7 +434,7 @@ _.Zones =
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["classes"] = { HUNTER },
 					["cost"] = {
-						{ "i", 20087, 2 },	-- Wavethrasher Scales
+						{ "i", 20087, 6 },	-- Wavethrasher Scales
 					},
 					["lvl"] = 50,
 				}),

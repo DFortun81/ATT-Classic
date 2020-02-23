@@ -91,9 +91,6 @@ _.Zones =
 					},
 				}),
 				i(10450, {	-- Undamaged Hippogryph Feather
-					["questID"] = 3381,	-- A Meeting with the Master
-					["repeatable"] = true,
-					["u"] = 2,
 					["crs"] = {
 						6648,	-- Antilos
 						6380,	-- Thunderhead Consort
