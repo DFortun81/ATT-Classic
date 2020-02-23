@@ -269,14 +269,13 @@ _.Zones =
 						i(22011),	-- Beastmaster's Bindings
 					},					
 				}),
-				{
-					["questID"] = 3450,	-- An Easy Pickup
-					["sourceQuest"] = 3448,	-- Passing the Burden
+				q(3450, {	-- An Easy Pickup
 					["qg"] = 8507,	-- Tymor
+					["sourceQuest"] = 3448,	-- Passing the Burden
 					["coord"] = { 31.2, 4.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-				},
+				}),
 				q(8419, {	-- An Imp's Request
 					["lvl"] = 50,
 					["qg"] = 5172,	-- Briarthorn <Warlock Trainer>
@@ -378,12 +377,12 @@ _.Zones =
 						i(22007),	-- Darkmantle Pants
 					},
 				}),
-				{
-					["questID"] = 3449,	-- Arcane Runes
-					["sourceQuest"] = 3448,	-- Passing the Burden
+				q(3449, {	-- Arcane Runes
 					["qg"] = 8507,	-- Tymor
+					["sourceQuest"] = 3448,	-- Passing the Burden
 					["coord"] = { 31.2, 4.6, IRONFORGE },
 					["maps"] = { AZSHARA },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 10445, 1 },	-- Drawing Kit
 						{ "i", 10563, 1 },	-- Rubbing: Rune of Beth'Amara
@@ -391,7 +390,6 @@ _.Zones =
 						{ "i", 10565, 1 },	-- Rubbing: Rune of Markri
 						{ "i", 10566, 1 },	-- Rubbing: Rune of Sael'hai
 					},
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 					["groups"] = {
 						{
@@ -400,7 +398,7 @@ _.Zones =
 							["description"] = "DO NOT LEAVE IRONFORGE WITHOUT THIS.\n - Crieve",
 						},
 					},
-				},
+				}),
 				q(7342, {	-- Arrows Are For Sissies
 					["lvl"] = 52,
 					["races"] = ALLIANCE_ONLY,
@@ -415,7 +413,7 @@ _.Zones =
 						5167,	-- Fenthwick <Rogue Trainer>
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(3790, {	-- Assisting Arch Druid Staghelm
@@ -648,7 +646,7 @@ _.Zones =
 					["qg"] = 7312,	-- Dink <Mage Trainer>
 					["coord"] = { 26.8, 8.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(1880,	{ -- Mage-tastic Gizmonitor
@@ -670,13 +668,12 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
-				{
-					["questID"] = 3448,	-- Passing the Burden
+				q(3448, {	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.2, 11.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
-				},
+				}),
 				q(2963, {	-- Portents of Uldum
 					["sourceQuest"] = 2439,	-- The Platinum Discs [Alliance - Part 3]
 					["qg"] = 5387,	-- High Explorer Magellas
@@ -713,19 +710,21 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				{
-					["questID"] = 3461,	-- Return to Tymor
-					["sourceQuest"] = 3449,	-- Arcane Runes
+				q(3461, {	-- Return to Tymor
 					["qg"] = 8392,	-- Pilot Xiggs Fuselighter
+					["sourceQuest"] = 3449,	-- Arcane Runes
 					["coord"] = { 77.8, 91.4, AZSHARA },
 					["maps"] = { AZSHARA },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10445, 1 },	-- Drawing Kit
+					},
 					["lvl"] = 45,
 					["groups"] = {
 						i(10707),	-- Steelsmith Greaves
 						i(10708),	-- Skullspell Orb
 					},
-				},
+				}),
 				q(683, {	-- Sara Balloo's Plea
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,

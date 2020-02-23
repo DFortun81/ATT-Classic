@@ -1,26 +1,33 @@
 profession(165, {	-- Leatherworking
 	n(QUESTS, {
 		q(5141, {	-- Dragonscale Leatherworking (A)
-			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
-			["maps"] = { AZSHARA },
-			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7866,	-- Peter Galen
 			["altQuests"] = {
 				5144,	-- Elemental Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
-			["qg"] = 7866,	-- Peter Galen
+			["requireSkill"] = 165,	-- Leatherworking
+			["coord"] = { 37.4, 65.4, AZSHARA },
+			["maps"] = { AZSHARA },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
+				{ "i", 8204, 2 },	-- Tough Scorpid Gloves
+				{ "i", 8165, 10 },	-- Worn Dragonscale
+			},
+			["lvl"] = 40,
 		}),
 		q(5145, {	-- Dragonscale Leatherworking (H)
-			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
-			["maps"] = { BADLANDS },
-			["races"] = HORDE_ONLY,
+			["qg"] = 7867,	-- Thorkaf Dragoneye
 			["altQuests"] = {
 				5146,	-- Elemental Leatherworking
 				5148,	-- Tribal Leatherworking
 			},
-			["qg"] = 7867,	-- Thorkaf Dragoneye
+			["requireSkill"] = 165,	-- Leatherworking
+			["coord"] = { 62.6, 57.4, BADLANDS },
+			["maps"] = { BADLANDS },
+			["races"] = HORDE_ONLY,
+			["lvl"] = 40,
 		}),
 		q(5144, {	-- Elemental Leatherworking (A)
 			["lvl"] = 40,

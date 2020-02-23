@@ -6,6 +6,11 @@ _.Zones =
 	m(KALIMDOR, {
 		m(AZSHARA, {
 			n(ZONEDROPS, {
+				i(20029, {	-- Enchanted Coral
+					["questID"] = 8252,	-- The Siren's Coral
+					["classes"] = { MAGE },
+					["cr"] = 6195,	-- Spitelash Siren
+				}),
 				i(20023, {	-- Encoded Fragment
 					["questID"] = 8235,	-- Encoded Fragments
 					["classes"] = { ROGUE },

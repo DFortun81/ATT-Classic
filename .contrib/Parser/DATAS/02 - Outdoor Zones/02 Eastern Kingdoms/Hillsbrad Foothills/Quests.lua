@@ -409,13 +409,13 @@ _.Zones =
 				}),
 				q(8234, {	-- Sealed Azure Bag
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
-					["coord"] = { 86.0, 79.0, HILLSBRAD_FOOTHILLS },
-					["classes"] = { 4 },	-- Rogue
 					["sourceQuest"] = 8233, -- A Simple Request
-					["lvl"] = 50,
+					["coord"] = { 86.0, 79.0, HILLSBRAD_FOOTHILLS },
+					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 19775, 1 },	-- Sealed Azure Bag
 					},
+					["lvl"] = 50,
 				}),
 				q(555, {	-- Soothing Turtle Bisque
 					["lvl"] = 28,

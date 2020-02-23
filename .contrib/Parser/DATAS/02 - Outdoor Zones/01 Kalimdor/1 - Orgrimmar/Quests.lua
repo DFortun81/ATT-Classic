@@ -327,7 +327,7 @@ _.Zones =
 					["qg"] = 3328,	-- Ormok <Rogue Trainer>
 					["coord"] = { 44.0, 54.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(936, {	-- Assisting Arch Druid Runetotem
@@ -351,55 +351,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 16033,	-- Bodley
 					["u"] = 3,	-- Added in later phase (Phase 5)
-				}),
-				q(3504, {	-- Betrayed (1/4)
-					["qg"] = 4485,	-- Belgrom Rockmaul
-					["coord"] = { 75, 34.2, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 10643, 1 },	-- Sealed Letter to Ag'tor
-					},
-					["lvl"] = 44,
-				}),
-				q(3505, {	-- Betrayed (2/4)
-					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["sourceQuest"] = 3504,	-- Betrayed (1/4)
-					["coord"] = { 22.2, 51.4, AZSHARA },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 44,
-				}),
-				q(3506, {	-- Betrayed (3/4)
-					["provider"] = { "o", 151286 },	-- Kaldorei Tome of Summoning
-					["sourceQuest"] = 3505,	-- Betrayed (2/4)
-					["coord"] = { 59.5, 31.3, AZSHARA },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 10597, 1 },	-- Head of Magus Rimtori
-					},
-					["lvl"] = 44,
-					["groups"] = {
-						{
-							["itemID"] = 10597,	-- Head of Magus Rimtori
-							["questID"] = 3506,	-- Betrayed (3/4)
-							["cr"] = 8578,	-- Magus Rimtori
-							["coord"] = { 59.6, 31.4, AZSHARA },
-						},
-					},
-				}),
-				q(3507, {	-- Betrayed (4/4)
-					["qg"] = 8576,	-- Ag'tor Bloodfist
-					["sourceQuest"] = 3506,	-- Betrayed (3/4)
-					["coord"] = { 22.2, 51.4, AZSHARA },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 10597, 1 },	-- Head of Magus Rimtori
-					},
-					["lvl"] = 44,
-					["g"] = {
-						i(10709),	-- Pyrestone Orb
-						i(11120),	-- Belgrom's Hammer
-					},
 				}),
 				q(1508, { -- Blind Cazul
 					["lvl"] = 20,
@@ -429,11 +380,10 @@ _.Zones =
 					},
 				}),
 				q(8254, {	-- Cenarion Aid
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 6018,	-- Ur'kyo <Priest Trainer>
 					["coord"] = { 35.6, 87.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(1501, { -- Creature of the Void
@@ -592,7 +542,7 @@ _.Zones =
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(4494, {	-- March of the Silithid

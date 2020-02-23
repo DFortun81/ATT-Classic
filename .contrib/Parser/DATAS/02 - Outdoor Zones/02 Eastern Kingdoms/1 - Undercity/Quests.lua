@@ -76,7 +76,7 @@ _.Zones =
 					["qg"] = 4583,	-- Miles Dexter <Rogue Trainer>
 					["coord"] = { 85.0, 75.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
@@ -203,7 +203,7 @@ _.Zones =
 					["qg"] = 4567,	-- Pierce Shackleton <Mage Trainer>
 					["coord"] = { 85.6, 14.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(4642, {	-- Melding of Influences

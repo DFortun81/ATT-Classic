@@ -47,7 +47,7 @@ _.Zones =
 					["qg"] = 4163,	-- Syurna <Rogue Trainer>
 					["coord"] = { 36.8, 21.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm

@@ -116,7 +116,7 @@ _.Zones =
 						918,	-- Osborne the Night Man <Rogue Trainer>
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 50,
 				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
@@ -190,7 +190,7 @@ _.Zones =
 					["qg"] = 5489,	-- Brother Joshua <Priest Trainer>
 					["coord"] = { 38.8, 26.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
 				q(8415, {	-- Chillwind Camp
@@ -369,7 +369,7 @@ _.Zones =
 					["qg"] = 331,	-- Maginor Dumas <Master Mage>
 					["coord"] = { 38.2, 81.4, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(1666, { -- Marshal Haggard

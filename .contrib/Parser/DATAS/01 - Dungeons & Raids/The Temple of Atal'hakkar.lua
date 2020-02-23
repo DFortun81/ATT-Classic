@@ -9,15 +9,15 @@ _.Instances = {
 		["groups"] = {
 			n(QUESTS, {
 				q(9053, {	-- A Better Ingredient
-					["lvl"] = 50,
 					["qg"] = 9619,	-- Torwa Pathfinder
+					["sourceQuest"] = 9051,  -- Toxic Test
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["maps"] = { UNGORO_CRATER },
-					["sourceQuest"] = 9051,  -- Toxic Test
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 22444, 1 },	-- Putrid Vine
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(22272),	-- Forest's Embrace
 						i(22274),	-- Grizzled Pelt
@@ -25,15 +25,15 @@ _.Instances = {
 					},
 				}),
 				q(8257, {	-- Blood of Morphaz
-					["lvl"] = 50,
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8256,	-- The Ichor of Undeath
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["maps"] = { AZSHARA },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 20025, 1 },	-- Blood of Morphaz
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(19990),	-- Blessed Prayer Beads
 						i(20006),	-- Circle of Hope
@@ -41,17 +41,17 @@ _.Instances = {
 					},
 				}),
 				q(8413, {	-- Da Voodoo
-					["lvl"] = 50,
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["sourceQuest"] = 8412,	-- Spirit Totem
 					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ALTERAC_MOUNTAINS },
-					["classes"] = { 7 },	-- Shaman
-					["sourceQuest"] = 8412,	-- Spirit Totem
+					["classes"] = { SHAMAN },	-- Shaman
 					["cost"] = {
 						{ "i", 20606, 2 },	-- Amber Voodoo Feather
 						{ "i", 20607, 2 },	-- Blue Voodoo Feather
 						{ "i", 20608, 2 },	-- Green Voodoo Feather
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(20369),	-- Azurite Fists
 						i(20503),	-- Enamored Water Spirit
@@ -59,15 +59,15 @@ _.Instances = {
 					},
 				}),
 				q(8253, {	-- Destroy Morphaz
-					["lvl"] = 50,
 					["qg"] = 8379,	-- Archmage Xylem
+					["sourceQuest"] = 8252,	-- The Siren's Coral
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["maps"] = { AZSHARA },
-					["sourceQuest"] = 8252,	-- The Siren's Coral
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 20085, 1 },	--Arcane Shard
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(20035),	-- Glacial Spike
 						i(20036),	-- Fire Ruby
@@ -75,18 +75,17 @@ _.Instances = {
 					},
 				}),
 				q(8418, {	-- Forging the Mightstone
-					["lvl"] = 50,
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 8416,	-- Inert Scourgestones
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["maps"] = { WESTERN_PLAGUELANDS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 20606, 2 },	-- Amber Voodoo Feather
 						{ "i", 20607, 2 },	-- Blue Voodoo Feather
 						{ "i", 20608, 2 },	-- Green Voodoo Feather
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(20504),	-- Lightforged Blade
 						i(20505),	-- Chivalrous Signet
@@ -95,8 +94,8 @@ _.Instances = {
 					},
 				}),
 				q(4143, {	-- Haze of Evil
-					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["qg"] = 7775,	-- Gregan Brewspewer
+					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["coord"] = { 45.1, 25.6, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
@@ -105,17 +104,17 @@ _.Instances = {
 					},
 					["lvl"] = 47,
 				}),
-				q(3512, { -- In Eranikus' Own Words
-					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
+				q(3512, {	-- In Eranikus' Own Words
 					["qg"] = 5353,	-- Itharius
+					["sourceQuest"] = 3374,	-- The Essence of Eranikus [Part 2]
 					["description"] = "This quest chain seems to be an incomplete one as there is no follow-up. Still an interesting quest chain as most people do not know about it. It essentially details how Eranikus is not actually dead and likely prepares the player for the Opening of AQ quest chain that does involve Eranikus once again.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 48,
 				}),
-				q(3446, { -- Into the Depths
-					["sourceQuest"] = 3444,	-- The Stone Circle
+				q(3446, {	-- Into the Depths
 					["qg"] = 7771,	-- Marvon Rivetseeker
+					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 46,
@@ -126,7 +125,7 @@ _.Instances = {
 						},
 					},
 				}),
-				q(1475, { -- Into The Temple of Atal'Hakkar
+				q(1475, {	-- Into The Temple of Atal'Hakkar
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["sourceQuest"] = 1469,	-- Rhapsody's Tale
 					["coord"] = { 64.2, 20.8, STORMWIND_CITY },
@@ -168,16 +167,16 @@ _.Instances = {
 					},
 				}),
 				q(1444, {	-- Return to Fel'Zerul
-					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 					["qg"] = 5598,	-- Atal'ai Exile
+					["sourceQuest"] = 1429,	-- The Atal'ai Exile
 					["coord"] = { 33.6, 75.2, THE_HINTERLANDS },
 					["maps"] = { THE_HINTERLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
 				q(3447, {	-- Secret of the Circle
-					["sourceQuest"] = 3444,	-- The Stone Circle
 					["qg"] = 7771,	-- Marvon Rivetseeker
+					["sourceQuest"] = 3444,	-- The Stone Circle
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 46,
@@ -222,15 +221,15 @@ _.Instances = {
 					},
 				}),
 				q(8236, {	-- The Azure Key
-					["lvl"] = 50,
 					["qg"] = 8379,	-- Archmage Xylem
+					["sourceQuest"] = 8235, -- Encoded Fragments
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["maps"] = { AZSHARA },
-					["classes"] = { 4 },	-- Rogue
-					["sourceQuest"] = 8235, -- Encoded Fragments
+					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 20022, 1 },	-- Azure Key
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(19982),	-- Duskbat Drape
 						i(19984),	-- Ebon Mask
@@ -246,8 +245,8 @@ _.Instances = {
 					},
 				}),
 				q(3374, {	-- The Essence of Eranikus [Part 2]
-					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["qg"] = 5353,	-- Itharius
+					["sourceQuest"] = 3373,	-- The Essence of Eranikus
 					["provider"] = { "i", 10589 },	-- Oathstone of Ysera's Dragonflight
 					["description"] = "You get the Oathstone by talking to Itharius, at the cave in the SW part of Swamp of Sorrows. You must have the Chained Essence first.",
 					["coord"] = { 13.67, 71.72, SWAMP_OF_SORROWS },
@@ -258,8 +257,8 @@ _.Instances = {
 					["lvl"] = 48,
 				}),
 				q(3528, {	-- The God Hakkar
-					["sourceQuest"] = 4787,	-- The Ancient Egg
 					["qg"] = 8579,	-- Yeh'kinya
+					["sourceQuest"] = 4787,	-- The Ancient Egg
 					["coord"] = { 66.8, 22.4, TANARIS },
 					["maps"] = { TANARIS },
 					["cost"] = {
@@ -281,15 +280,15 @@ _.Instances = {
 					},
 				}),
 				q(8232, {	-- The Green Drake
-					["lvl"] = 50,
 					["qg"] = 8405,	-- Ogtinc
+					["sourceQuest"] = 8231,	-- Wavethrashing
 					["coord"] = { 42.2, 42.6, AZSHARA },
 					["maps"] = { AZSHARA },
-					["sourceQuest"] = 8231,	-- Wavethrashing
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 20019, 1 },	-- Tooth of Morphaz
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(19991),	-- Devilsaur Eye
 						i(19992),	-- Devilsaur Tooth
@@ -297,11 +296,11 @@ _.Instances = {
 					},
 				}),
 				q(3444, {	-- The Stone Circle
+					["qg"] = 7771,	-- Marvon Rivetseeker
 					["sourceQuests"] = {
 						3445,	-- The Sunken Temple
 						3380,	-- The Sunken Temple
 					},
-					["qg"] = 7771,	-- Marvon Rivetseeker
 					["coord"] = { 52.6, 45.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 46,
@@ -330,8 +329,8 @@ _.Instances = {
 					["lvl"] = 46,
 				}),
 				q(1445, {	-- The Temple of Atal'Hakkar
-					["sourceQuest"] = 1424,	-- Pool of Tears
 					["qg"] = 1443,	-- Fel'zerul
+					["sourceQuest"] = 1424,	-- Pool of Tears
 					["coord"] = { 64.2, 20.8, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["races"] = HORDE_ONLY,
@@ -341,17 +340,17 @@ _.Instances = {
 					},
 				}),
 				q(8422, {	-- Trolls of a Feather
-					["lvl"] = 50,
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
+					["sourceQuest"] = 8421,	-- The Wrong Stuff
 					["coord"] = { 41.6, 45.0, FELWOOD },
 					["maps"] = { FELWOOD },
-					["classes"] = { 9 },	-- Warlock
-					["sourceQuest"] = 8421,	-- The Wrong Stuff
+					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 20606, 2 },	-- Amber Voodoo Feather
 						{ "i", 20607, 2 },	-- Blue Voodoo Feather
 						{ "i", 20608, 2 },	-- Green Voodoo Feather
 					},
+					["lvl"] = 50,
 					["groups"] = {
 						i(20534),	-- Abyss Shard
 						i(20530),	-- Robes of Servitude
@@ -359,12 +358,12 @@ _.Instances = {
 					},
 				}),
 				q(8425, {	-- Voodoo Feathers
-					["lvl"] = 50,
-					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["qg"] = 7572,	-- Fallen Hero of the Horde
+					["sourceQuest"] = 8424,	-- War on the Shadowsworn
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["maps"] = { SWAMP_OF_SORROWS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
+					["lvl"] = 50,
 					["cost"] = {
 						{ "i", 20606, 2 },	-- Amber Voodoo Feather
 						{ "i", 20607, 2 },	-- Blue Voodoo Feather
@@ -377,8 +376,8 @@ _.Instances = {
 					},
 				}),
 				q(4146, {	-- Zapper Fuel
-					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["qg"] = 8496,	-- Liv Rizzlefix <Workshop Assistant>
+					["sourceQuest"] = 4147,	-- Marvon's Workshop
 					["coord"] = { 62.5, 38.7, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -507,7 +506,7 @@ _.Instances = {
 					i(10795),	-- Drakeclaw Band
 				},
 			}),
-			n(5709, { -- Shade of Erankikus
+			n(5709, {	-- Shade of Erankikus
 				{
 					["itemID"] = 10454,	-- Essence of Eranikus
 					["questID"] = 3373,	-- The Essence of Eranikus
@@ -520,7 +519,7 @@ _.Instances = {
 				i(10833),	-- Horns of Eranikus
 				i(10829),	-- Dragon's Eye
 			}),
-			n(8443, { -- Avatar of Hakkar
+			n(8443, {	-- Avatar of Hakkar
 				["description"] = "Requires the use of the Egg of Hakkar or Yeh'kinya's Scroll.\n\nOnce you start the fight, the room will fill with a variety of mobs. You need to kill the 4 Wind Serpents that appear, and loot the blood off of them, and use it to douse one of the fires in each corner of the room.\n\nEvery time you douse a fire, a dragonkin will walk in and start channeling a spell on Hakkar. Do not let them complete this channel.\n\nThe boss spawns after all 4 flames are doused.",
 				["cost"] = {
 					{ "i", 10465, 1 },	-- Egg of Hakkar

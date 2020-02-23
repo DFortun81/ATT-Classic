@@ -111,7 +111,7 @@ _.Zones =
 					["qg"] = 3047,	-- Archmage Shymm <Mage Trainer>
 					["coord"] = { 22.6, 14.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
 				q(1130, {	-- Melor Sends Word
