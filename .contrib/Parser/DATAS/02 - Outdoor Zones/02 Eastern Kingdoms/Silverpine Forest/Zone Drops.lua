@@ -23,12 +23,6 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["cr"] = 6497,	-- Astor Hadren
 				}),
-				i(8491, {	-- Cat Carrier (Black Tabby)
-					["cr"] = 1920,	-- Dalaran Spellscribe
-				}),
-				i(4437, {	-- Channeler's Staff
-					["cr"] = 1920,	-- Dalaran Spellscribe
-				}),
 				i(4767, {	-- Coppercloth Gloves
 					["cr"] = 3578,	-- Dalaran Miner
 				}),
@@ -124,9 +118,6 @@ _.Zones =
 						1958,	-- Vile Fin Tidecaller
 						1768,	-- Vile Fin Tidehunter
 					},
-				}),
-				i(4436, {	-- Jewel-encrusted Sash
-					["cr"] = 1920,	-- Dalaran Spellscribe
 				}),
 				i(3257, {	-- Lake Creeper Moss
 					["questID"] = 451,	-- A Recipe For Death
