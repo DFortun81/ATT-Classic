@@ -123,9 +123,6 @@ _.Zones =
 				i(1986, {  -- Gutrender
 					["cr"] = 709,	-- Mosh'Ogg Warmonger
 				}),
-				i(1680, {  -- Headchopper
-					["cr"] = 723,	-- Mosh'Ogg Butcher
-				}),
 				i(1522, {  -- Headhunting Spear
 					["cr"] = 671,	-- Bloodscalp Headhunter
 				}),
