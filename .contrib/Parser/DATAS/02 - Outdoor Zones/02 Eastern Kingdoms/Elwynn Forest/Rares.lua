@@ -13,6 +13,9 @@ _.Zones =
 						i(5744),	-- Pale Skinner
 					},
 				}),
+				n(100, {	-- Gruff Swiftbite
+					["coord"] = { 27.6, 88.4, ELWYNN_FOREST },
+				}),
 				n(99, {	-- Morgaine the Sly
 					["coord"] = { 31.8, 65.6, ELWYNN_FOREST },
 					["groups"] = {
