@@ -22,12 +22,6 @@ _.Zones =
 				i(3711, {	-- Belamoore's Research Journal
 					["cr"] = 2415,	-- Warden Belamoore
 				}),
-				i(4810, {	-- Boulder Pads
-					["cr"] = 2453,	-- Lo'Grosh
-				}),
-				i(1678, {	-- Black Ogre Kickers
-					["cr"] = 2453,	-- Lo'Grosh
-				}),
 				i(8491, {	-- Cat Carrier (Black Tabby)
 					["crs"] = {
 						2271,	-- Dalaran Shield Guard
@@ -51,9 +45,6 @@ _.Zones =
 						2287,	-- Crushridge Warmonger
 					},
 				}),
-				i(3011, {	-- Feathered Headdress
-					["cr"] = 2452,	-- Skhowl
-				}),
 				i(11206, {	-- Formula: Enchant Cloak - Lesser Agility
 					["cr"] = 2246,	-- Syndicate Assassin
 				}),
@@ -64,9 +55,6 @@ _.Zones =
 						2251,	-- Giant Yeti
 						2250,	-- Mountain Yeti
 					},
-				}),
-				i(6331, {	-- Howling Blade
-					["cr"] = 2452,	-- Skhowl
 				}),
 				i(1993, {	-- Ogremind Ring
 					["cr"] = 2255,	-- Crushridge Mage
@@ -103,9 +91,6 @@ _.Zones =
 				}),
 				i(5245, {	-- Summoner's Wand
 					["cr"] = 2358,	-- Dalaran Summoner
-				}),
-				i(6327, {	-- The Pacifier
-					["cr"] = 2453,	-- Lo'Grosh
 				}),
 				i(3659, {	-- Worn Leather Book
 					["questID"] = 540,	-- Preserving Knowledge
