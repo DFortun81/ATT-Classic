@@ -49,9 +49,6 @@ _.Zones =
 						2573,	-- Drywhisker Surveyor
 					},
 				}),
-				i(5257, {	-- Dark Hooded Cape
-					["cr"] = 2606,	-- Nimar the Slayer <Warband Leader>
-				}),
 				i(11166, {	-- Formula: Enchant Gloves - Skinning
 					["crs"] = {
 						2606,	-- Nimar the Slayer <Warband Leader>
@@ -81,9 +78,6 @@ _.Zones =
 						2781,	-- Caretaker Weston
 					},
 				}),
-				i(5256, {	-- Kovork's Rattle
-					["cr"] = 2603,	-- Kovork
-				}),
 				i(4435, {	-- Mote of Myzrael
 					["questID"] = 642,	-- The Princess Trapped
 					["crs"] = {
@@ -91,12 +85,6 @@ _.Zones =
 						2572,	-- Drywhisker Kobold
 						2573,	-- Drywhisker Surveyor
 					},
-				}),
-				i(5180, {	-- Necklace of Harmony
-					["cr"] = 2600,	-- Singer
-				}),
-				i(2622, {	-- Nimar's Tribal Headdress
-					["cr"] = 2606,	-- Nimar the Slayer <Warband Leader>
 				}),
 				i(1993, {	-- Ogremind Ring
 					["crs"] = {
@@ -177,12 +165,6 @@ _.Zones =
 						2572,	-- Drywhisker Kobold
 						2573,	-- Drywhisker Surveyor
 					},
-				}),
-				i(1404, {	-- Tidal Charm
-					["cr"] = 2779,	-- Prince Nazjak
-				}),
-				i(5181, {	-- Vibrant Silk Cape
-					["cr"] = 2600,	-- Singer
 				}),
 				i(4522, {	-- Witherbark Medicine Pouch
 					["questID"] = 691,	-- Worth Its Weight in Gold
