@@ -55,9 +55,6 @@ _.Zones =
 				i(15732, {	-- Pattern: Volcanic Leggings
 					["cr"] = 7035,	-- Firegut Brute
 				}),
-				i(12828, {	-- Plans: Volcanic Hammer
-					["cr"] = 10119,	-- Volchan
-				}),
 				i(13476, {	-- Recipe: Mighty Rage Potion
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
