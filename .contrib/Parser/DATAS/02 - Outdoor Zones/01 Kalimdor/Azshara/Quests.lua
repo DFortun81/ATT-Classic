@@ -7,17 +7,10 @@ _.Zones =
 		m(AZSHARA, {
 			n(QUESTS, {
 				q(3382, {	-- A Crew Under Fire
+					["qg"] = 8380,	-- Captain Vanessa Beltis
+					["coord"] = { 53.0, 87.8, AZSHARA },
 					["repeatable"] = true,
 					["lvl"] = 48,
-				}),
-				q(7486, {	-- A Hero's Reward
-					["qg"] = 13278,	-- Duke Hydraxis
-					["sourceQuest"] = 6824,	-- Hands of the Enemy
-					["lvl"] = 55,
-					["g"] = {
-						i(18399),	-- Ocean's Breeze
-						i(18398),	-- Tidal Loop
-					},
 				}),
 				q(5536, {	-- A Land Filled with Hatred
 					["qg"] = 11548, -- Loth'atu
@@ -30,11 +23,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 45,
 					["u"] = 2,
-				}),
-				q(6823, {	-- Agent of Hydraxis
-					["qg"] = 13278,	-- Duke Hydraxis
-					["sourceQuest"] = 6822,	-- The Molten Core
-					["lvl"] = 55,
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
 					["qg"] = 6522, -- Andron Gant
@@ -107,14 +95,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(6821, {	-- Eye of the Emberseer
-					["qg"] = 13278,	-- Duke Hydraxis
-					["sourceQuests"] = {
-						6804,	-- Poisoned Water
-						6805,	-- Stormers and Rumblers
-					},
-					["lvl"] = 55,
-				}),
 				q(9364, {	-- Fragmented Magic
 					["qg"] = 8379,		-- Archmage Xylem
 					["classes"] = { MAGE },
@@ -129,11 +109,6 @@ _.Zones =
 							["classes"] = { MAGE },
 						},
 					},
-				}),
-				q(6824, {	-- Hands of the Enemy
-					["qg"] = 13278,	-- Duke Hydraxis
-					["sourceQuest"] = 6823,	-- Agent of Hydraxis
-					["lvl"] = 55,
 				}),
 				q(3563, {	-- Jes'rimon's Payment to Jediga
 					["qg"] = 8659,	-- Jes'rimon
@@ -187,14 +162,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(6804, {	-- Poisoned Water
-					["qg"] = 13278,	-- Duke Hydraxis
-					["cost"] = {
-						{ "i", 17310, 1 },	-- Aspect of Neptulon
-						{ "i", 17309, 12 },	-- Discordant Bracers
-					},
-					["lvl"] = 55,
-				}),
 				q(3421, {	-- Return Trip
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -208,10 +175,6 @@ _.Zones =
 					["qg"] = 8587, -- Jediga
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
-				}),
-				q(6805, {	-- Stormers and Rumblers
-					["qg"] = 13278,	-- Duke Hydraxis
-					["lvl"] = 55,
 				}),
 				q(3621, {	-- The Formation of Felbane
 					["qg"] = 7783,	-- Loramus Thalipedes
@@ -230,11 +193,6 @@ _.Zones =
 						{ "i", 7972, 1 },	-- Ichor of Undeath
 					},
 					["lvl"] = 50,
-				}),
-				q(6822, {	-- The Molten Core
-					["qg"] = 13278,	-- Duke Hydraxis
-					["sourceQuest"] = 6821,	-- Eye of the Emberseer
-					["lvl"] = 55,
 				}),
 				q(3509, {	-- The Name of the Beast
 					["qg"] = 7783,	-- Loramus Thalipedes

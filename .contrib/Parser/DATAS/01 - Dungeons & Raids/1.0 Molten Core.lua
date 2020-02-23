@@ -10,21 +10,94 @@ _.Instances = {
 		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["isRaid"] = true,
 		["groups"] = {
+			faction(749, { 	-- Hydraxian Waterlords
+				["qg"] = 13278,	-- Duke Hydraxis
+				["coord"] = { 79.2, 73.6, AZSHARA },
+				["maps"] = { AZSHARA },
+				["groups"] = {
+					q(7486, {	-- A Hero's Reward
+						["qg"] = 13278,	-- Duke Hydraxis
+						["sourceQuest"] = 6824,	-- Hands of the Enemy
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["lvl"] = 55,
+						["g"] = {
+							i(18399),	-- Ocean's Breeze
+							i(18398),	-- Tidal Loop
+						},
+					}),
+					q(6823, {	-- Agent of Hydraxis
+						["qg"] = 13278,	-- Duke Hydraxis
+						["sourceQuest"] = 6822,	-- The Molten Core
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+						["lvl"] = 55,
+					}),
+					q(6821, {	-- Eye of the Emberseer
+						["qg"] = 13278,	-- Duke Hydraxis
+						["sourceQuests"] = {
+							6804,	-- Poisoned Water
+							6805,	-- Stormers and Rumblers
+						},
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["maps"] = { BLACKROCK_SPIRE },
+						["cost"] = {
+							{ "i", 17322, 1 },	-- Eye of the Emberseer
+						},
+						["lvl"] = 55,
+					}),
+					q(6824, {	-- Hands of the Enemy
+						["qg"] = 13278,	-- Duke Hydraxis
+						["sourceQuest"] = 6823,	-- Agent of Hydraxis
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["cost"] = {
+							{ "i", 17331, 1 },	-- Hand of Gehennas
+							{ "i", 17329, 1 },	-- Hand of Lucifron
+							{ "i", 17332, 1 },	-- Hand of Shazzrah
+							{ "i", 17330, 1 },	-- Hand of Sulfuron
+						},
+						["lvl"] = 55,
+					}),
+					q(6804, {	-- Poisoned Water
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["maps"] = { EASTERN_PLAGUELANDS },
+						["cost"] = {
+							{ "i", 17310, 1 },	-- Aspect of Neptulon
+							{ "i", 17309, 12 },	-- Discordant Bracers
+						},
+						["lvl"] = 55,
+					}),
+					
+					q(6805, {	-- Stormers and Rumblers
+						["qg"] = 13278,	-- Duke Hydraxis
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["maps"] = { SILITHUS },
+						["lvl"] = 55,
+					}),
+					q(6822, {	-- The Molten Core
+						["qg"] = 13278,	-- Duke Hydraxis
+						["sourceQuest"] = 6821,	-- Eye of the Emberseer
+						["coord"] = { 79.2, 73.6, AZSHARA },
+						["lvl"] = 55,
+					}),
+				},
+			}),
 			n(QUESTS, {
 				{
 					["questID"] = 7633,	-- An Introduction
-					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
+					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { 3 },	-- Hunter
+					["maps"] = { FELWOOD },
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				},
 				{
 					["questID"] = 7848,	-- Attunement to the Core
+					["qg"] = 14387,	-- Lothos Riftwaker
 					["altQuests"] = {
 						7487,	-- Attunement to the Core [Original??]
 					},
-					["qg"] = 14387,	-- Lothos Riftwaker
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.\n\nNOTE: This is mandatory in most raiding guilds.",
 					["lvl"] = 55,
 					["maps"] = {
@@ -53,8 +126,8 @@ _.Instances = {
 				},
 				{
 					["questID"] = 7787,	-- Rise, Thunderfury!
-					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
+					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
@@ -68,7 +141,8 @@ _.Instances = {
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { 3 },	-- Hunter
+					["maps"] = { FELWOOD },
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
@@ -76,24 +150,24 @@ _.Instances = {
 				},
 				{
 					["questID"] = 7786,	-- Thunderaan the Windseeker
+					["qg"] = 14347,	-- Highlord Demitrian
 					["altQuests"] = {
 						7521,	-- Thunderaan the Windseeker [Original?]
 					},
 					["sourceQuest"] = 7785,	-- Examine the Vessel
-					["qg"] = 14347,	-- Highlord Demitrian
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
 					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
-					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 						{ "i", 19017, 1 },	-- Essence of the Firelord
 					},
+					["lvl"] = 60,
 					["groups"] = {
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-							["description"] = "This is a 40 man raid boss. He will drop as many Dormant Wind Kissed Blade as there are people with the quest.\n\nWARNING: Do not have Master Looter turned on, the item will only drop in Group Loot.",
+							["description"] = "This is a 40 man raid boss.",
 							["groups"] = {
 								{
 									["itemID"] = 19018,	-- Dormant Wind Kissed Blade
@@ -242,6 +316,10 @@ _.Instances = {
 				}),
 			}),
 			n(12118, {	-- Lucifron
+				{
+					["itemID"] = 17329,	-- Hand of Lucifron
+					["questID"] = 6824,	-- Hands of the Enemy
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -259,8 +337,8 @@ _.Instances = {
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-				i(16665, {
-					["classes"] = { HUNTER }, -- Tome of Tranquilizing Shot
+				i(16665, {	-- Tome of Tranquilizing Shot
+					["classes"] = { HUNTER },
 				}),
 			}),
 			n(11982, {	-- Magmadar
@@ -290,6 +368,10 @@ _.Instances = {
 				i(18820),	-- Talisman of Ephemeral Power
 			}),
 			n(12259, {	-- Gehennas
+				{
+					["itemID"] = 17331,	-- Hand of Gehennas
+					["questID"] = 6824,	-- Hands of the Enemy
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -335,6 +417,10 @@ _.Instances = {
 				i(18820),	-- Talisman of Ephemeral Power
 			}),
 			n(12264, {	-- Shazzrah
+				{
+					["itemID"] = 17332,	-- Hand of Shazzrah
+					["questID"] = 6824,	-- Hands of the Enemy
+				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
 				i(18870),	-- Helm of the Lifegiver
@@ -373,6 +459,10 @@ _.Instances = {
 				i(18820),	-- Talisman of Ephemeral Power
 			}),
 			n(12098, {	-- Sulfuron Harbinger
+				{
+					["itemID"] = 17330,	-- Hand of Sulfuron
+					["questID"] = 6824,	-- Hands of the Enemy
+				},
 				i(17074),	-- Shadowstrike
 				i(17223),	-- Thunderstrike
 				i(18878),	-- Sorcerous Dagger
