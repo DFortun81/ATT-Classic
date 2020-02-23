@@ -50,15 +50,6 @@ _.Zones =
 						4462,	-- Blackrock Hunter
 					},
 				}),
-				i(4446, {	-- Blackvenom Blade
-					["cr"] = 947,	-- Rohh the Silent
-				}),
-				i(4447, {	-- Cloak of Night
-					["cr"] = 947,	-- Rohh the Silent
-				}),
-				i(3231, {	-- Cutthroat Pauldrons
-					["cr"] = 584,	-- Kazon
-				}),
 				i(1287, {	-- Giant Tarantula Fang
 					["cr"] = 442,	-- Tarantula
 				}),
@@ -124,9 +115,6 @@ _.Zones =
 						430,	-- Redridge Mystic
 						14271,	-- Ribchaser
 					},
-				}),
-				i(2058, {	-- Kazon's Maul
-					["cr"] = 584,	-- Kazon
 				}),
 				i(1299, {	-- Lesser Belt of the Spire
 					["cr"] = 436,	-- Blackrock Shadowcaster
@@ -195,9 +183,6 @@ _.Zones =
 				}),
 				i(1461, {	-- Slayer's Battle Axe
 					["cr"] = 431,	-- Shadowhide Slayer
-				}),
-				i(3229, {	-- Tarantula Silk Sash
-					["cr"] = 616,	-- Chatter
 				}),
 				i(1080, {	-- Tough Condor Meat
 					["questID"] = 92,	-- Redridge Goulash
