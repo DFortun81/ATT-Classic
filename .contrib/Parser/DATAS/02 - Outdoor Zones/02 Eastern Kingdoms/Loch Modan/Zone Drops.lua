@@ -9,9 +9,6 @@ _.Zones =
 				i(5319,  { -- Bashing Pauldrons
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 				}),
-				i(1938,  { -- Block Mallet
-					["cr"] = 1398,  -- Boss Galgosh <Stonesplinter Chieftain>
-				}),
 				i(2939, {	-- Crocolisk Tear
 					["questID"] = 278,	-- A Dark Threat Looms
 					["races"] = ALLIANCE_ONLY,
@@ -19,12 +16,6 @@ _.Zones =
 						2476,	-- Large Loch Crocolisk
 						1693,	-- Loch Crocolisk
 					},
-				}),
-				i(2241,  { -- Desperado Cape
-					["cr"] = 1399,  -- Magosh <Stonesplinter Tribal Shaman>
-				}),
-				i(6197,  { -- Loch Croc Hide Vest
-					["cr"] = 2476,  -- Large Loch Crocolisk
 				}),
 				i(2606, {	-- Lurker Venom
 					["questID"] = 278,	-- A Dark Threat Looms
@@ -66,9 +57,6 @@ _.Zones =
 				i(2283,  { -- Rat Cloth Belt
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
 				}),
-				i(2284,  { -- Rat Cloth Cloak
-					["cr"] = 1425,  -- Grizlak
-				}),
 				i(2281,  { -- Rodentia Flint Axe
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
@@ -83,9 +71,6 @@ _.Zones =
 				}),
 				i(2274,  { -- Sapper's Gloves
 					["cr"] = 1222,  -- Dark Iron Sapper
-				}),
-				i(3563,  { -- Seafarer's Pantaloons
-					["cr"] = 2476,  -- Large Loch Crocolisk
 				}),
 				i(2265,  { -- Stonesplinter Axe
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
@@ -103,15 +88,6 @@ _.Zones =
 					["cr"] = 1197,  -- Stonesplinter Shaman
 				}),
 				i(5109),	-- Stonesplinter Rags
-				i(1215,  { -- Support Girdle
-					["cr"] = 1398,  -- Boss Galgosh <Stonesplinter Chieftain>
-				}),
-				i(3571,  { -- Trogg Beater
-					["cr"] = 1399,  -- Magosh <Stonesplinter Tribal Shaman>
-				}),
-				i(6195,  { -- Wax-polished Armor
-					["cr"] = 1425,  -- Grizlak
-				}),
 			}),	
 		}),
 	}),
