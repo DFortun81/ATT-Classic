@@ -238,10 +238,17 @@ _.Zones =
 					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
 				q(7602, {	-- Flawless Fel Essence
-					["lvl"] = 50,
-					["races"] = { WARLOCK },
-					["qg"] = 14470, -- Impsy
+					["qg"] = 14470, -- Impsy <Niby's Minion>
 					["sourceQuest"] = 7601, -- What Niby Commands
+					["coord"] = { 41.6, 44.8, FELWOOD },
+					["maps"] = { AZSHARA, BLASTED_LANDS },
+					["races"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 18624, 1 },	-- Flawless Fel Essence (Azshara)
+						{ "i", 18623, 1 },	-- Flawless Fel Essence (Dark Portal)
+						{ "i", 18622, 1 },	-- Flawless Fel Essence (Jaedenar)
+					},
+					["lvl"] = 50,
 				}),
 				q(939, {	-- Flute of Xavaric
 					["lvl"] = 49,
@@ -602,9 +609,10 @@ _.Zones =
 					["qg"] = 9996,	-- Winna Hazzard
 				}),
 				q(7601, {	-- What Niby Commands
-					["lvl"] = 50,
-					["races"] = { WARLOCK },
 					["qg"] = 14469, -- Niby the Almighty
+					["coord"] = { 41.4, 44.8, FELWOOD },
+					["races"] = { WARLOCK },
+					["lvl"] = 50,
 				}),
 				q(4521, {	-- Wild Guardians (1/3)
 					["lvl"] = 52,

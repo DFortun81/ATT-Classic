@@ -6,6 +6,11 @@ _.Zones =
 	m(KALIMDOR, {
 		m(FELWOOD, {
 			n(ZONEDROPS, {
+				i(18622, {	-- Flawless Fel Essence (Jaedenar)
+					["questID"] = 7602,	-- Flawless Fel Essence
+					["cr"] = 9862,	-- Jaedenar Legionnaire
+					["classes"] = { WARLOCK },
+				}),
 				i(20768, {	-- Oozing Bag
 					["crs"] = {
 						7092,	-- Tainted Ooze

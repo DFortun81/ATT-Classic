@@ -352,23 +352,50 @@ _.Zones =
 					["qg"] = 16033,	-- Bodley
 					["u"] = 3,	-- Added in later phase (Phase 5)
 				}),
-				q(3506, {	-- Betrayed
-					["lvl"] = 44,
-					["races"] = HORDE_ONLY,
-				}),
-				q(3504, {	-- Betrayed
-					["lvl"] = 44,
-					["races"] = HORDE_ONLY,
+				q(3504, {	-- Betrayed (1/4)
 					["qg"] = 4485,	-- Belgrom Rockmaul
-				}),
-				q(3505, {	-- Betrayed
-					["lvl"] = 44,
+					["coord"] = { 75, 34.2, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 10643, 1 },	-- Sealed Letter to Ag'tor
+					},
+					["lvl"] = 44,
+				}),
+				q(3505, {	-- Betrayed (2/4)
 					["qg"] = 8576,	-- Ag'tor Bloodfist
-				}),
-				q(3507, {	-- Betrayed
-					["lvl"] = 44,
+					["sourceQuest"] = 3504,	-- Betrayed (1/4)
+					["coord"] = { 22.2, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 44,
+				}),
+				q(3506, {	-- Betrayed (3/4)
+					["provider"] = { "o", 151286 },	-- Kaldorei Tome of Summoning
+					["sourceQuest"] = 3505,	-- Betrayed (2/4)
+					["coord"] = { 59.5, 31.3, AZSHARA },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 10597, 1 },	-- Head of Magus Rimtori
+					},
+					["lvl"] = 44,
+					["groups"] = {
+						{
+							["itemID"] = 10597,	-- Head of Magus Rimtori
+							["questID"] = 3506,	-- Betrayed (3/4)
+							["cr"] = 8578,	-- Magus Rimtori
+							["coord"] = { 59.6, 31.4, AZSHARA },
+						},
+					},
+				}),
+				q(3507, {	-- Betrayed (4/4)
+					["qg"] = 8576,	-- Ag'tor Bloodfist
+					["sourceQuest"] = 3506,	-- Betrayed (3/4)
+					["coord"] = { 22.2, 51.4, AZSHARA },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 10597, 1 },	-- Head of Magus Rimtori
+					},
+					["lvl"] = 44,
 					["g"] = {
 						i(10709),	-- Pyrestone Orb
 						i(11120),	-- Belgrom's Hammer
@@ -735,7 +762,7 @@ _.Zones =
 					},
 					["coord"] = { 66.2, 18.6, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter Only
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(7493, {	-- The Journey Has Just Begun

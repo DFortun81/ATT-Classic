@@ -578,6 +578,8 @@ _.WorldDrops =
 			i(15765),	-- Pattern: Runic Leather Pants
 			i(7288),	-- Pattern: Rugged Leather Pants
 			i(7453),	-- Pattern: Swift Boots
+			i(15742),	-- Pattern: Warbear Harness
+			i(15754),	-- Pattern: Warbear Woolies
 			i(2407),	-- Pattern: White Leather Jerkin
 			i(15757),	-- Pattern: Wicked Leather Pants
 		}),

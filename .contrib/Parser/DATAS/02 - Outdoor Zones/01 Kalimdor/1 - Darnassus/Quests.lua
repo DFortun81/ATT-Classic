@@ -235,7 +235,7 @@ _.Zones =
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
 					["coord"] = { 42.2, 7.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter Only
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(6073, {	-- The Hunter's Path

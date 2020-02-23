@@ -528,6 +528,7 @@ _.Instances = {
 				{
 					["questID"] = 4201,	-- The Love Potion
 					["qg"] = 9500,	-- Mistress Nagmara
+					["maps"] = { AZSHARA, UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 8846, 4 },	-- Gromsblood
 						{ "i", 11405, 10 },	-- Giant Silver Vein

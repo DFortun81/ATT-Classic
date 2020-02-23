@@ -582,7 +582,7 @@ _.Zones =
 					["qg"] = 5516,	-- Ulfir Ironbeard <Hunter Trainer>
 					["coord"] = { 62.0, 15.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter Only
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(6076, {	-- The Hunter's Path

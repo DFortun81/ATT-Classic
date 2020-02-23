@@ -219,7 +219,7 @@ _.Zones =
 					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
 					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 3 },	-- Hunter Only
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(1000, {	-- The New Frontier

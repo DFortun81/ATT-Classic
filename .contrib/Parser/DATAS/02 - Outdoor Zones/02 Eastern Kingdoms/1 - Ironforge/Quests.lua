@@ -867,7 +867,7 @@ _.Zones =
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70.6, 83.8, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 3 },	-- Hunter Only
+					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
 				q(6074, {	-- The Hunter's Path
