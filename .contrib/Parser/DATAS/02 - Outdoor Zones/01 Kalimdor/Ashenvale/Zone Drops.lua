@@ -32,7 +32,7 @@ _.Zones =
 					},
 				}),
 				i(5366, {	-- Glowing Soul Gem
-					["questID"] = 970,	-- The Tower of Althalaxx (4)
+					["questID"] = 970,	-- The Tower of Althalaxx (4/9)
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						3728,	-- Dark Strand Adept

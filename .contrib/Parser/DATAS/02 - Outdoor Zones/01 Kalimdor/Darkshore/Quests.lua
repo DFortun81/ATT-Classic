@@ -7,247 +7,294 @@ _.Zones =
 		m(DARKSHORE, {
 			n(QUESTS, {
 				q(986, {	-- A Lost Master
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
-					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["coord"] = { 39.4, 43.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5386, 5 },	-- Fine Moonstalker Pelt
+					},
+					["lvl"] = 10,
 					["g"] = {
 						i(5387),  -- Enchanted Moonstalker Cloak
 					},
 				}),
 				q(993, {	-- A Lost Master
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
-					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["coord"] = { 39.4, 43.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(4812, {	-- As Water Cascades
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
-					["coord"] = { 37.7, 43.4, DARKSHORE},
-				}),
-				q(955, {	-- Bashal'Aran
-					["lvl"] = 7,
+					["coord"] = { 37.7, 43.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3650,	-- Asterion
-					["coord"] = { 44.2, 36.3, DARKSHORE },
+					["lvl"] = 12,
 				}),
-				q(956, {	-- Bashal'Aran
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3650,	-- Asterion
-					["coord"] = { 44.2, 36.3, DARKSHORE },
-				}),
-				q(954, {	-- Bashal'Aran
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
+				q(954, {	-- Bashal'Aran (1/4)
 					["qg"] = 3649,	-- Thundris Windweaver
-					["coord"] = { 37.4, 40.1, DARKSHORE},
-				}),
-				q(957, {	-- Bashal'Aran
-					["lvl"] = 7,
+					["coord"] = { 37.4, 40.1, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 7,
+				}),
+				q(955, {	-- Bashal'Aran (2/4)
 					["qg"] = 3650,	-- Asterion
+					["sourceQuest"] = 954,	-- Bashal'Aran (1/4)
+					["coord"] = { 44.2, 36.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5336, 8 },	-- Grell Earring
+					},
+					["lvl"] = 7,
+				}),
+				q(956, {	-- Bashal'Aran (3/4)
+					["qg"] = 3650,	-- Asterion
+					["sourceQuest"] = 955,	-- Bashal'Aran (2/4)
+					["coord"] = { 44.2, 36.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5338, 1 },	-- Ancient Moonstone Seal
+					},
+					["lvl"] = 7,
+				}),
+				q(957, {	-- Bashal'Aran (4/4)
+					["qg"] = 3650,	-- Asterion
+					["sourceQuest"] = 956,	-- Bashal'Aran (3/4)
+					["coord"] = { 44.2, 36.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5338, 1 },	-- Ancient Moonstone Seal
+					},
+					["lvl"] = 7,
 					["g"] = {
 						i(7229),	-- Explorer's Vest
 						i(5617),	-- Vagabond Leggings
 						i(5604),	-- Elven Wand
 					},
-					["coord"] = { 44.2, 36.3, DARKSHORE },
 				}),
 				q(4730, {	-- Beached Sea Creature
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175227 },	-- Beached Sea Creature
 					["coord"] = { 32.7, 80.9, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4728, {	-- Beached Sea Creature
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175226 },	-- Beached Sea Creature
 					["coord"] = { 36.0, 70.8, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4733, {	-- Beached Sea Creature
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175230 },	-- Beached Sea Creature
 					["coord"] = { 31.2, 87.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(4723, {	-- Beached Sea Creature
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 42.0, 31.6, DARKSHORE },
 					["provider"] = { "o", 175233 },	-- Beached Sea Creature
+					["coord"] = { 42.0, 31.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(4731, {	-- Beached Sea Turtle
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176198 },	-- Beached Sea Creature
 					["coord"] = { 31.7, 83.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(4727, {	-- Beached Sea Turtle
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176196 },	-- Beached Sea Creature
 					["coord"] = { 53.1, 18.1, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4725, {	-- Beached Sea Turtle
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176197 },	-- Beached Sea Creature
 					["coord"] = { 44.2, 20.7, Darkshore },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(4732, {	-- Beached Sea Turtle
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176191 },	-- Beached Sea Creature
 					["coord"] = { 31.2, 85.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 				}),
 				q(4722, {	-- Beached Sea Turtle
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 176190 },	-- Beached Sea Creature
 					["coord"] = { 37.2, 62.2, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(1002, {	-- Buzzbox 323
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 17183 },	-- Buzzbox 411
+					["sourceQuest"] = 1001,	-- Buzzbox 411
+					["coord"] = { 42, 28.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5413, 6 },	-- Moonstalker Fang
+					},
+					["lvl"] = 7,
 				}),
 				q(1001, {	-- Buzzbox 411
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 17182 },	-- Buzzbox 827
+					["sourceQuest"] = 983,	-- Buzzbox 827
+					["coord"] = { 36.7, 46.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5412, 3 },	-- Thresher Eye
+					},
+					["lvl"] = 7,
 				}),
 				q(1003, {	-- Buzzbox 525
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 17184 },	-- Buzzbox 323
+					["sourceQuest"] = 1002,	-- Buzzbox 323
+					["coord"] = { 51.3, 24.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5414, 4 },	-- Grizzled Scalp
+					},
+					["lvl"] = 7,
 					["g"] = {
 						i(2082),	-- Wizbang's Gunnysack
 						i(11846),	-- Wizbang's Special Brew
 					},
-					["coord"] = { 51.3, 24.6, DARKSHORE },
 				}),
 				q(983, {	-- Buzzbox 827
-					["lvl"] = 7,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3666,	-- Wizbang Cranktoggle
+					["coord"] = { 37, 44, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5385, 6 },	-- Crawler Leg
+					},
+					["lvl"] = 7,
 				}),
 				q(947, {	-- Cave Mushrooms
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3583,	-- Barithras Moonshade
+					["coord"] = { 37.3, 43.6, DARKSHORE },
+					["description"] = "The path up to the cave begins at 54.7, 31.6. Follow the path to the right when you enter the cave to find the Death Cap.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(5610),	-- Gustweald Cloak
 						i(4605),	-- Red-speckled Mushroom
 					},
-					["coord"] = { 37.3, 43.6, DARKSHORE},
-					["description"] = "The path up to the cave begins at 54.7, 31.6. Follow the path to the right when you enter the cave to find the Death Cap.",
 				}),
 				q(2138, {	-- Cleansing of the Infected
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["coord"] = { 38.8, 43.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(982, {	-- Deep Ocean, Vast Sea
-					["lvl"] = 13,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6301,	-- Gorbold Steelhand
+					["coord"] = { 38.1, 41.2, DARKSHORE },
+					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 13,
 					["g"] = {
 						i(15401),	-- Welldrip Gloves
 						i(15402),	-- Noosegrip Gauntlets
 					},
-					["coord"] = { 38.1, 41.2, DARKSHORE},
-					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
 				}),
 				q(994, {	-- Escape Through Force
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3692,	-- Volcor
-					["altQuests"] = {
-						995,	-- Escape Through Stealth
-					},
+					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
+					["altQuests"] = { 995 },	-- Escape Through Stealth
+					["coord"] = { 45.0, 85.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(5609),	-- Steadfast Cinch
 					},
-					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
-					["coord"] = { 45.0, 85.4, DARKSHORE },
 				}),
 				q(995, {	-- Escape Through Stealth
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3692,	-- Volcor
-					["altQuests"] = {
-						994,	-- Escape Through Force
-					},
+					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
+					["altQuests"] = { 994 },	-- Escape Through Force
+					["coord"] = { 45.0, 85.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(6659),	-- Scarab Trousers
 					},
-					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
-					["coord"] = { 45.0, 85.4, DARKSHORE },
 				}),
 				q(963, {	-- For Love Eternal
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3644,	-- Cerellean Whiteclaw
+					["coord"] = { 35.8, 43.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5382, 1 },	-- Anaya's Pendant
+					},
+					["lvl"] = 11,
 					["g"] = {
+						{
+							["itemID"] = 5382,	-- Anaya's Pendant
+							["questID"] = 963,	-- For Love Eternal
+							["coord"] = { 43.2, 59.8, DARKSHORE },
+							["cr"] = 3667,	-- Anaya Dawnrunner
+						},
 						i(5611),	-- Tear of Grief
 					},
-					["coord"] = { 35.8, 43.7, DARKSHORE },
 				}),
 				q(1138, {	-- Fruit of the Sea
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10216,	-- Gubber Blump
+					["coord"] = { 36.1, 44.9, DARKSHORE },
+					["description"] = "Look for Reef Crawlers around 45.6, 20.6.",
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12237, 6 },	-- Fine Crab Chunks
+					},
+					["lvl"] = 15,
 					["g"] = {
 						i(15405),	-- Shucking Gloves
 						i(15406),	-- Crustacean Boots
 					},
-					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["description"] = "Look for Reef Crawlers around 45.6, 20.6.",
 				}),
 				q(2098, {	-- Gyromast's Retrieval
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6667,	-- Gelkak Gyromast
 					["coord"] = { 56.7, 13.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7500, 1 },	-- Bottom of Gelkak's Key
+						{ "i", 7499, 1 },	-- Middle of Gelkak's Key
+						{ "i", 7498, 1 },	-- Top of Gelkak's Key
+					},
+					["lvl"] = 14,
 				}),
 				q(2078, {	-- Gyromast's Revenge
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6667,	-- Gelkak Gyromast
+					["sourceQuest"] = 2098,	-- Gyromast's Retrieval
+					["coord"] = { 56.7, 13.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 7442, 1 },	-- Gyromast's Key
 					},
+					["lvl"] = 14,
 					["g"] = {
 						i(5996),	-- Elixir of Water Breathing
 					},
-					["coord"] = { 56.7, 13.5, DARKSHORE },
 				}),
 				q(985, {	-- How Big a Threat?
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
-					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["coord"] = { 39.4, 43.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(984, {	-- How Big a Threat?
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
-					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["coord"] = { 39.4, 43.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(951, {	-- Mathystra Relics
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
+					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(5757),	-- Hardwood Cudgel
 						i(5615),	-- Woodsman Sword
 					},
-					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(5713, {	-- One Shot. One Kill.
 					["qg"] = 11711,	-- Sentinel Aynasha
@@ -256,27 +303,29 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(948, {	-- Onu
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3583,	-- Barithras Moonshade
 					["coord"] = { 37.3, 43.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(960, {	-- Onu is meditating
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
+					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
+					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["altQuests"] = {
 						949,	-- The Twilight Camp
 					},
-					["coord"] = { 43.5, 76.3, DARKSHORE},
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
-					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 				}),
 				q(961, {	-- Onu is meditating
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
+					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
+					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["altQuests"] = {
 						950,	-- Return to Onu
@@ -284,38 +333,34 @@ _.Zones =
 					["g"] = {
 						i(5251),	-- Phial of Scrying
 					},
-					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
-					["coord"] = { 43.5, 76.3, DARKSHORE},
 				}),
 				q(2118, {	-- Plagued Lands
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["coord"] = { 38.8, 43.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 				}),
 				q(6343, {	-- Return to Nessa
-					["lvl"] = 10,
-					["races"] = {
-						4,	-- Night Elf
-					},
 					["qg"] = 4200,	-- Laird
 					["sourceQuest"] = 6342,	-- Flight to Auberdine
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
 				}),
 				q(950, {	-- Return to Onu
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 12666 },	-- Twilight Tome
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(2139, {	-- Tharnariun's Hope
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["description"] = "The path up to the cave begins at 52.4, 36.0.",
+					["coord"] = { 38.8, 43.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(7738),	-- Evergreen Gloves
 						i(7739),	-- Timberland Cape
 					},
-					["coord"] = { 38.8, 43.4, DARKSHORE },
-					["description"] = "The path up to the cave begins at 52.4, 36.0.",
 				}),
 				q(729, {	-- The Absent Minded Prospector
 					["qg"] = 2913,	-- Archaeologist Hollee
@@ -347,9 +392,11 @@ _.Zones =
 					},
 				}),
 				q(4763, {	-- The Blackwood Corrupted
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
+					["description"] = "Fill the Empty Cleansing Bowl at the Moonwell in Auberdine before you leave to get the other items. Blackwood Grain Sample is located at 50.6, 35.0. Blackwood Nut Sample located at 51.8, 33.5. Blackwood Fruit Sample is located at 52.9, 33.4. Mix the ingredients next to the bonfire at 52.4, 33.4 to spawn the level 19 mob Xabraxxis.",
+					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(15204),	-- Moonstone Wand
 						i(15202),	-- Wildkeeper Leggings
@@ -357,48 +404,46 @@ _.Zones =
 						i(12341),	-- Blackwood Fruit Sample
 						i(12342),	-- Blackwood Grain Sample
 					},
-					["coord"] = { 37.4, 40.1, DARKSHORE},
-					["description"] = "Fill the Empty Cleansing Bowl at the Moonwell in Auberdine before you leave to get the other items. Blackwood Grain Sample is located at 50.6, 35.0. Blackwood Nut Sample located at 51.8, 33.5. Blackwood Fruit Sample is located at 52.9, 33.4. Mix the ingredients next to the bonfire at 52.4, 33.4 to spawn the level 19 mob Xabraxxis.",
 				}),
 				q(4762, {	-- The Cliffspring River
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
-					["coord"] = { 37.4, 40.1, DARKSHORE},
-					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall."
+					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall.",
+					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3639,	-- Sentinel Tysha Moonblade
 					["coord"] = { 40.3, 59.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 9,
 				}),
 				q(1141, {	-- The Family and the Fishing Pole
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10216,	-- Gubber Blump
+					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
+					["coord"] = { 36.1, 44.9, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
 					["g"] = {
 						i(12225),	-- Blump Family Fishing Pole
 					},
-					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
 				}),
 				q(4813, {	-- The Fragments Within
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal
+					["coord"] = { 47.4, 48.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(15335),	-- Briarsteel Shortsword
 						i(15396),	-- Curvewood Dagger
 						i(15397),	-- Oakthrush Staff
 					},
-					["coord"] = { 47.4, 48.7, DARKSHORE},
 				}),
 				q(944, {	-- The Master's Glaive
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3616,	-- Onu
-					["coord"] = { 43.5, 76.3, DARKSHORE},
+					["coord"] = { 43.5, 76.3, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(968, { 	-- The Powers Below
 					["provider"] = { "i", 5352 },	-- Book: The Powers Below
@@ -411,10 +456,10 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(4811, {	-- The Red Crystal
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
-					["coord"] = { 37.7, 43.4, DARKSHORE},
+					["coord"] = { 37.7, 43.4, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 				}),
 				q(5321, {	-- The Sleeper Has Awakened
 					["qg"] = 11218,	-- Kerlonian Evershade
@@ -431,23 +476,25 @@ _.Zones =
 						i(15207),	-- Steelcap Shield
 					},
 				}),
-				q(965, {	-- The Tower of Althalaxx
+				q(965, {	-- The Tower of Althalaxx (1/9)
 					["qg"] = 3657,	-- Sentinel Elissa Starbreeze
 					["coord"] = { 39.0, 43.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
-				q(966, {	-- The Tower of Althalaxx
+				q(966, {	-- The Tower of Althalaxx (2/9)
 					["qg"] = 3661,	-- Balthule Shadowstrike
-					["sourceQuest"] = 965,	-- The Tower of Althalaxx
+					["sourceQuest"] = 965,	-- The Tower of Althalaxx (1/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5348, 4 },	-- Worn Parchment
+					},
 					["lvl"] = 13,
-					
 				}),
-				q(967, {	-- The Tower of Althalaxx
+				q(967, {	-- The Tower of Althalaxx (3/9)
 					["qg"] = 3661,	-- Balthule Shadowstrike
-					["sourceQuest"] = 966,	-- The Tower of Althalaxx
+					["sourceQuest"] = 966,	-- The Tower of Althalaxx (2/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
@@ -456,9 +503,9 @@ _.Zones =
 					},
 					["lvl"] = 13,
 				}),
-				q(1143, {	-- The Tower of Althalaxx
+				q(1143, {	-- The Tower of Althalaxx (8/9)
 					["qg"] = 3661,	-- Balthule Shadowstrike
-					["sourceQuest"] = 1167,	-- The Tower of Althalaxx
+					["sourceQuest"] = 1167,	-- The Tower of Althalaxx (7/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -474,9 +521,9 @@ _.Zones =
 						},
 					},
 				}),
-				q(981, {	-- The Tower of Althalaxx
+				q(981, {	-- The Tower of Althalaxx (9/9)
 					["qg"] = 3661,	-- Balthule Shadowstrike
-					["sourceQuest"] = 1143,	-- The Tower of Althalaxx
+					["sourceQuest"] = 1143,	-- The Tower of Althalaxx (8/9)
 					["coord"] = { 55.0, 24.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
@@ -498,19 +545,22 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(4761, {	-- Thundris Windweaver
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3693,	-- Terenthis
-					["coord"] = { 39.4, 43.5, DARKSHORE},
+					["coord"] = { 39.4, 43.5, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 				q(958, {	-- Tools of the Highborne
-					["lvl"] = 9,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3649,	-- Thundris Windweaver
+					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5360, 7 },	-- Highborne Relic
+					},
+					["lvl"] = 9,
 					["g"] = {
 						i(5612),	-- Ivy Cuffs
 					},
-					["coord"] = { 37.4, 40.1, DARKSHORE},
 				}),
 				q(990, {	-- Trek to Ashenvale
 					["qg"] = 3694,	-- Sentinel Selarin
@@ -524,21 +574,21 @@ _.Zones =
 					["lvl"] = 15,
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
-					["lvl"] = 15,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175320 }, -- WANTED: Murkdeep!
+					["description"] = "Quest given by notice board outside of the inn. To complete the quest, go to 36.2, 76.3. Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
+					["coord"] = { 37.2, 44.2, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 15,
 					["g"] = {
 						i(5315),	-- Timberland Armguards
 						i(15403),	-- Ridgeback Bracers
 						i(15404),	-- Breakwater Girdle
 					},
-					["coord"] = { 37.2, 44.2, DARKSHORE },
-					["description"] = "Quest given by notice board outside of the inn. To complete the quest, go to 36.2, 76.3. Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
 				}),
 				q(4681, {	-- Washed Ashore
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 					["g"] = {
 						i(15398),	-- Sandcomber Boots
 						i(15399),	-- Dryweed Belt
@@ -546,9 +596,9 @@ _.Zones =
 					},
 				}),
 				q(3524, {	-- Washed Ashore
-					["lvl"] = 11,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
 				}),
 			}),
 		}),

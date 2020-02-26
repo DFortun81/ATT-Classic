@@ -487,7 +487,7 @@ _.Zones =
 				}),
 				q(976, {	-- Supplies to Auberdine
 					["qg"] = 4484,	-- Feero Ironhand
-					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5/9)
 					["coord"] = { 26.2, 38.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
@@ -628,9 +628,9 @@ _.Zones =
 						},
 					},
 				}),
-				q(970, {	-- The Tower of Althalaxx (4)
+				q(970, {	-- The Tower of Althalaxx (4/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3) (Darkshore)
+					["sourceQuest"] = 967,	-- The Tower of Althalaxx (3/9) (Darkshore)
 					["coord"] = { 26.2, 38.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -638,9 +638,9 @@ _.Zones =
 					},
 					["lvl"] = 13,
 				}),
-				q(973, {	-- The Tower of Althalaxx (5)
+				q(973, {	-- The Tower of Althalaxx (5/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4)
+					["sourceQuest"] = 970,	-- The Tower of Althalaxx (4/9)
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -650,7 +650,7 @@ _.Zones =
 					["g"] = {
 						{
 							["itemID"] = 5533,	-- Ilkrud Magthrull's Tome
-							["questID"] = 973,	-- The Tower of Althalaxx (5)
+							["questID"] = 973,	-- The Tower of Althalaxx (5/9)
 							["cr"] = 3664,	-- Ilkrud Magthrull
 							["coord"] = { 25.2, 60.6, ASHENVALE },
 						},
@@ -658,16 +658,16 @@ _.Zones =
 						i(5613),	-- Staff of the Purifier
 					},
 				}),
-				q(1140, {	-- The Tower of Althalaxx (6)
+				q(1140, {	-- The Tower of Althalaxx (6/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5)
+					["sourceQuest"] = 973,	-- The Tower of Althalaxx (5/9)
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,
 				}),
-				q(1167, {	-- The Tower of Althalaxx (7)
+				q(1167, {	-- The Tower of Althalaxx (7/9)
 					["qg"] = 3663,	-- Delgren the Purifier
-					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6)
+					["sourceQuest"] = 1140,	-- The Tower of Althalaxx (6/9)
 					["coord"] = { 26.2, 38.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 13,

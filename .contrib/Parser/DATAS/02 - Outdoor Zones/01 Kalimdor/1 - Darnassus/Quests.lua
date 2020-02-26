@@ -273,14 +273,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1686, { -- The Shade of Elura
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 4088, -- Elanaria
 					["sourceQuest"] = 1683, -- Vorlus Vilehoof
+					["coord"] = { 57.8, 34.4, DARNASSUS },
+					["maps"] = { DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
 					["cost"] = { 
 						{ "i", 6808, 8 }, -- Elunite Ore
-						{ "i", 6809, 1 }, -- Eluras's medallion
+						{ "i", 6809, 1 }, -- Elura's Medallion
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 6809,	-- Elura's Medallion
+							["questID"] = 1686,	-- The Shade of Elura
+							["coord"] = { 31.6, 44.8, DARKSHORE },
+							["cr"] = 6133,	-- Shade of Elura
+						},
 					},
 				}),
 				q(2519, {	-- The Temple of the Moon
