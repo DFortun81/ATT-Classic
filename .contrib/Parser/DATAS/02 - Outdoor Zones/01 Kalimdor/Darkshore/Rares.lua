@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(EASTERN_KINGDOMS, {
+	m(KALIMDOR, {
 		m(DARKSHORE, {
 			n(RARES, {
 				
