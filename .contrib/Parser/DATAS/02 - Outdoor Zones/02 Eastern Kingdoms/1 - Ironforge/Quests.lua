@@ -922,11 +922,11 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(1680, { -- Tormus Deepforge
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
 					["qg"] = 6114, -- Muren Stormpike
 					["sourceQuest"] = 1678, -- Vejrek
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 10,
 				}),
 				q(1678, { -- Vejrek
 					["lvl"] = 10,

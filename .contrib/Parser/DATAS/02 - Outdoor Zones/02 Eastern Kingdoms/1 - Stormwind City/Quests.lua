@@ -65,16 +65,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
-				q(1638, { -- A Warrior Training
+				q(1638, {	-- A Warrior's Training
 					["qgs"] = {
-						913, -- Lyria Du Lac <Warrior Trainer>
-						5480, -- Ilsa Corbin <Warrior Trainer>
+						913,	-- Lyria Du Lac <Warrior Trainer>
+						5480,	-- Ilsa Corbin <Warrior Trainer>
 					},
 					["altQuests"] = {
-						1684, -- Elanaria
-						1679, -- Muren Stormpike
+						1684,	-- Elanaria
+						1679,	-- Muren Stormpike
 					},
-					["description"] = "Doing this quest prevents you from completing \"Elanaria\" and \"Muren Stormpike\".",
+					["coords"] = {
+						{ 78.6, 45.6, STORMWIND_CITY },
+						{ 41, 65.8, ELWYNN_FOREST },
+					},
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -552,9 +556,10 @@ _.Zones =
 				}),
 				q(3765, {  -- The Corruption Abroad
 					["qg"] = 4984,  -- Argos Nightwhisper
+					["coord"] = { 21.6, 55.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 20,
 					["isBreadcrumb"] = true,
+					["lvl"] = 20,
 				}),
 				q(141, {	-- The Defias Brotherhood (4/7)
 					["qg"] = 332,	-- Master Mathias Shaw

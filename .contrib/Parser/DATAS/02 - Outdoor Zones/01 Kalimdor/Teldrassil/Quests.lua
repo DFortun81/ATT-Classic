@@ -93,6 +93,25 @@ _.Zones =
 						i(18957),	-- Brushwood Blade
 					},
 				}),
+				q(1684, { -- Elanaria
+					["qgs"] = {
+						3657,	-- Sentinel Elissa Starbreeze [Darkshore]
+						3598,	-- Kyra Windblade <Warrior Trainer> [Teldrassil]
+						2151,	-- Moon Priestess Amara [Teldrassil]
+					},
+					["altQuests"] = {
+						1638,	-- A Warrior's Training
+						1679,	-- Muren Stormpike
+					},
+					["coords"] = {
+						{ 39.0, 43.4, DARKSHORE },
+						{ 56.2, 59.2, TELDRASSIL },
+					},
+					["maps"] = { DARKSHORE, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 10,
+				}),
 				q(3118, {	-- Encrypted Sigil
 					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 4 },	-- Rogue
@@ -144,12 +163,14 @@ _.Zones =
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
 				}),
 				q(6342, {	-- Flight to Auberdine
-					["lvl"] = 10,
-					["races"] = {
-						4,	-- Night Elf
-					},
 					["qg"] = 3838,	-- Vesprystus
 					["sourceQuest"] = 6341,	-- The Bounty of Teldrassil
+					["coord"] = { 58.4, 94, TELDRASSIL },
+					["races"] = { NIGHTELF },
+					["cost"] = {
+						{ "i", 16262, 1 },	-- Nessa's Collection
+					},
+					["lvl"] = 10,
 				}),
 				q(476, {	-- Gnarlpine Corruption
 					["lvl"] = 4,
@@ -296,10 +317,13 @@ _.Zones =
 					},
 				}),
 				q(940, {	-- Teldrassil
-					["lvl"] = 6,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
 					["sourceQuest"] = 937,	-- The Enchanted Glade
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5219, 1 },	-- Inscribed Bark
+					},
+					["lvl"] = 6,
 				}),
 				q(920, {	-- Tenaron's Summons
 					["races"] = ALLIANCE_ONLY,
@@ -335,12 +359,14 @@ _.Zones =
 					},
 				}),
 				q(6341, {	-- The Bounty of Teldrassil
-					["lvl"] = 10,
-					["races"] = {
-						4,	-- Night Elf
-					},
 					["qg"] = 10118,	-- Nessa Shadowsong
 					["sourceQuest"] = 6344,	-- Nessa Shadowsong
+					["coord"] = { 56.2, 92.4, TELDRASSIL },
+					["races"] = { NIGHTELF },
+					["cost"] = {
+						{ "i", 16262, 1 },	-- Nessa's Collection
+					},
+					["lvl"] = 10,
 				}),
 				q(2941, {	-- The Borrower
 					["lvl"] = 42,
@@ -354,9 +380,9 @@ _.Zones =
 					["qg"] = 3567,	-- Tallonkai Swiftroot
 				}),
 				q(937, {	-- The Enchanted Glade
-					["lvl"] = 6,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3519,	-- Sentinel Arynia Cloudsbreak
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 6,
 					["g"] = {
 						i(5592),	-- Shackled Girdle
 						i(5591),	-- Rain-spotted Cape

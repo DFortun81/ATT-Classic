@@ -337,7 +337,6 @@ _.Zones =
 				q(1138, {	-- Fruit of the Sea
 					["qg"] = 10216,	-- Gubber Blump
 					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["description"] = "Look for Reef Crawlers around 45.6, 20.6.",
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 12237, 6 },	-- Fine Crab Chunks
@@ -384,14 +383,15 @@ _.Zones =
 						i(5996),	-- Elixir of Water Breathing
 					},
 				}),
-				q(985, {	-- How Big a Threat?
+				q(984, {	-- How Big a Threat? (1/2)
 					["qg"] = 3693,	-- Terenthis
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(984, {	-- How Big a Threat?
+				q(985, {	-- How Big a Threat? (2/2)
 					["qg"] = 3693,	-- Terenthis
+					["sourceQuest"] = 984,	-- How Big a Threat? (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -430,6 +430,7 @@ _.Zones =
 				}),
 				q(960, {	-- Onu is meditating
 					["qg"] = 3616,	-- Onu
+					["sourceQuest"] = 944,	-- The Master's Glaive
 					["description"] = "To complete this quest you must return to Onu after you complete The Master's Glaive, but before you turn in The Twilight Camp.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -443,6 +444,7 @@ _.Zones =
 				}),
 				q(961, {	-- Onu is meditating
 					["qg"] = 3616,	-- Onu
+					["sourceQuest"] = 949,	-- The Twilight Camp
 					["description"] = "To complete this quest you must return to Onu after you complete The Twilight Camp, but before you turn in Return to Onu.",
 					["coord"] = { 43.5, 76.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -466,7 +468,11 @@ _.Zones =
 				q(6343, {	-- Return to Nessa
 					["qg"] = 4200,	-- Laird
 					["sourceQuest"] = 6342,	-- Flight to Auberdine
+					["coord"] = { 36.8, 44.2, DARKSHORE },
 					["races"] = { NIGHTELF },
+					["cost"] = {
+						{ "i", 16263, 1 },	-- Laird's Response
+					},
 					["lvl"] = 10,
 				}),
 				q(950, {	-- Return to Onu
@@ -491,23 +497,23 @@ _.Zones =
 						i(7739),	-- Timberland Cape
 					},
 				}),
-				q(729, {	-- The Absent Minded Prospector
+				q(729, {	-- The Absent Minded Prospector (1/5)
 					["qg"] = 2913,	-- Archaeologist Hollee
-					["sourceQuest"] = 730, -- Trouble in Darkshore
+					["sourceQuest"] = 730, -- Trouble in Darkshore?
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
-				q(731, {	-- The Absent Minded Prospector
+				q(731, {	-- The Absent Minded Prospector (2/5)
 					["qg"] = 2917,	-- Prospector Remtravel
-					["sourceQuest"] = 729, -- The Absent Minded Prospector
+					["sourceQuest"] = 729, -- The Absent Minded Prospector (1/5)
 					["coord"] = { 35.7, 83.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
-				q(741, {	-- The Absent Minded Prospector
+				q(741, {	-- The Absent Minded Prospector (3/5)
 					["qg"] = 2913,	-- Archaeologist Hollee
-					["sourceQuest"] = 731, -- The Absent Minded Prospector
+					["sourceQuest"] = 731, -- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -525,8 +531,49 @@ _.Zones =
 					["description"] = "Fill the Empty Cleansing Bowl at the Moonwell in Auberdine before you leave to get the other items. Blackwood Grain Sample is located at 50.6, 35.0. Blackwood Nut Sample located at 51.8, 33.5. Blackwood Fruit Sample is located at 52.9, 33.4. Mix the ingredients next to the bonfire at 52.4, 33.4 to spawn the level 19 mob Xabraxxis.",
 					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12355, 1 },	-- Talisman of Corruption
+					},
 					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 12346,	-- Empty Cleansing Bowl
+							["coord"] = { 37.76, 44.02, DARKSHORE },
+							["groups"] = {
+								{
+									["itemID"] = 12347,	-- Filled Cleansing Bowl
+									["coord"] = { 52.30, 33.39, DARKSHORE },
+									["cost"] = {
+										{ "i", 12341, 1 },	-- Blackwood Fruit Sample
+										{ "i", 12342, 1 },	-- Blackwood Grain Sample
+										{ "i", 12343, 1 },	-- Blackwood Nut Sample
+									},
+									["groups"] = {
+										{
+											["itemID"] = 12355,	-- Talisman of Corruption
+											["questID"] = 4763,	-- The Blackwood Corrupted
+											["coord"] = { 52.5, 33.5, DARKSHORE },
+											["cr"] = 10373,	-- Xabraxxis
+										},
+									},
+								},
+							},
+						},
+						{
+							["itemID"] = 12341,	-- Blackwood Fruit Sample
+							["questID"] = 4763,	-- The Blackwood Corrupted
+							["coord"] = { 52.91, 33.38, DARKSHORE },
+						},
+						{
+							["itemID"] = 12342,	-- Blackwood Grain Sample
+							["questID"] = 4763,	-- The Blackwood Corrupted
+							["coord"] = { 50.63, 35.05, DARKSHORE },
+						},
+						{
+							["itemID"] = 12343,	-- Blackwood Nut Sample
+							["questID"] = 4763,	-- The Blackwood Corrupted
+							["coord"] = { 51.81, 33.43, DARKSHORE },
+						},
 						i(15204),	-- Moonstone Wand
 						i(15202),	-- Wildkeeper Leggings
 						i(15203),	-- Guststorm Legguards
@@ -536,26 +583,28 @@ _.Zones =
 				}),
 				q(4762, {	-- The Cliffspring River
 					["qg"] = 3649,	-- Thundris Windweaver
+					["sourceQuest"] = 4761,	-- Thundris Windweaver
 					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall.",
 					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12349, 1 },	-- Cliffspring River Sample
+					},
 					["lvl"] = 11,
+					["groups"] = {
+						{
+							["itemID"] = 12350,	-- Empty Sampling Tube
+							["questID"] = 4762,	-- The Cliffspring River
+							["coord"] = { 50.76, 25.56, DARKSHORE },
+							["description"] = "The item text doesn't have an 'On use', but you do need to right click it when you're under the waterfall.",
+						},
+					},
 				}),
 				q(953, {	-- The Fall of Ameth'Aran
 					["qg"] = 3639,	-- Sentinel Tysha Moonblade
 					["coord"] = { 40.3, 59.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 9,
-				}),
-				q(1141, {	-- The Family and the Fishing Pole
-					["qg"] = 10216,	-- Gubber Blump
-					["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
-					["coord"] = { 36.1, 44.9, DARKSHORE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 10,
-					["g"] = {
-						i(12225),	-- Blump Family Fishing Pole
-					},
 				}),
 				q(4813, {	-- The Fragments Within
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal
@@ -682,6 +731,7 @@ _.Zones =
 				}),
 				q(4761, {	-- Thundris Windweaver
 					["qg"] = 3693,	-- Terenthis
+					["sourceQuest"] = 984,	-- How Big a Threat? (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
@@ -714,6 +764,7 @@ _.Zones =
 					["description"] = "Quest given by notice board outside of the inn. To complete the quest, go to 36.2, 76.3. Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
 					["coord"] = { 37.2, 44.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 10323,	-- Murkdeep
 					["lvl"] = 15,
 					["g"] = {
 						i(5315),	-- Timberland Armguards
@@ -723,13 +774,21 @@ _.Zones =
 				}),
 				q(3524, {	-- Washed Ashore (1/2)
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["coord"] = { 36.6, 45.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12242, 1 },	-- Sea Creature Bones
+					},
 					["lvl"] = 11,
 				}),
 				q(4681, {	-- Washed Ashore (2/2)
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
 					["sourceQuest"] = 3524,	-- Washed Ashore (1/2)
+					["coord"] = { 36.6, 45.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12289, 1 },	-- Sea Turtle Remains
+					},
 					["lvl"] = 11,
 					["g"] = {
 						i(15398),	-- Sandcomber Boots

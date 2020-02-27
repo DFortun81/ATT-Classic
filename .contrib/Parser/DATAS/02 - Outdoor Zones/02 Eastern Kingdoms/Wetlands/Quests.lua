@@ -306,9 +306,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(943, {	-- The Absent Minded Prospector
+				q(943, {	-- The Absent Minded Prospector (5/5)
 					["qg"] = 2911,	-- Archaeologist Flagongut
-					["sourceQuest"] = 942, -- The Absent Minded Prospector(Darnassus)
+					["sourceQuest"] = 942, -- The Absent Minded Prospector (4/5) (Darnassus)
 					["coord"] = { 10.8, 60.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -319,7 +319,7 @@ _.Zones =
 					["g"] = {
 						{
 							["itemID"] = 5234,	-- Flagongut's Fossil
-							["questID"] = 943,	-- The Absent Minded Prospector
+							["questID"] = 943,	-- The Absent Minded Prospector (5/5)
 							["coord"] = { 38.8, 52.2, WETLANDS },
 						},
 						i(5627),	-- Relic Blade

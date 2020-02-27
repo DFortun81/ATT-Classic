@@ -104,6 +104,24 @@ _.Instances = {
 						i(7004),	-- Prelacy Cape
 					},
 				}),
+				q(1442, {	-- Seeking the Kor Gem
+					["qg"] = 3649,	-- Thundris Windweaver
+					["sourceQuest"] = 1653,	-- The Test of Righteousness (1/3)
+					["coord"] = { 37.4, 40.2, DARKSHORE },
+					["maps"] = { DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["cost"] = {
+						{ "i", 6995, 1 },	-- Corrupted Kor Gem
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						{
+							["itemID"] = 7083,	-- Purified Kor Gem
+							["questID"] = 1654,	-- The Test of Righteousness (2/3)
+						},
+					},
+				}),
 				q(6563, {	-- The Essence of Aku'Mai
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["sourceQuest"] = 6562,	-- Trouble in the Deeps

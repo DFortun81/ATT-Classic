@@ -1,7 +1,6 @@
 profession(356, {	-- Fishing
 	n(QUESTS, {
-		{
-			["questID"] = 8194,	-- Apprentice Angler
+		q(8194, {	-- Apprentice Angler
 			["qg"] = 15078,	-- Jang <Fishmaster Apprentice>
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
@@ -10,9 +9,8 @@ profession(356, {	-- Fishing
 			["cost"] = {
 				{ "i", 19807, 5 },	-- Speckled Tastyfish
 			},
-		},
-		{
-			["questID"] = 8229,	-- Could I get a Fishing Flier?
+		}),
+		q(8229, {	-- Could I get a Fishing Flier?
 			["qg"] = 15116,	-- Grinkle <Fishing Promoter>
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 53.25, 70.65, ORGRIMMAR },
@@ -23,45 +21,55 @@ profession(356, {	-- Fishing
 			["groups"] = {
 				i(19978),	-- Fishing Tournament!
 			},
-		},
-		{
-			["questID"] = 8228,	-- Could I get a Fishing Flier?
+		}),
+		q(8228, {	-- Could I get a Fishing Flier?
 			["qg"] = 15119,	-- Barrus <Fishing Promoter>
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 54.8, 63.1, STORMWIND_CITY },
 			["maps"] = { STORMWIND_CITY },
-			["repeatable"] = true,
 			["races"] = ALLIANCE_ONLY,
+			["repeatable"] = true,
 			["lvl"] = 35,
 			["groups"] = {
 				i(19978),	-- Fishing Tournament!
 			},
-		},
-		{
-			["questID"] = 1580,	-- Electropellers
-			["sourceQuest"] = 1579,	-- Gaffer Jacks
+		}),
+		q(1580, {	-- Electropellers
 			["qg"] = 3666,	-- Wizbang Cranktoggle
-			["races"] = ALLIANCE_ONLY,
+			["sourceQuest"] = 1579,	-- Gaffer Jacks
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 37.0, 44.0, DARKSHORE },
 			["maps"] = { DARKSHORE },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 6718, 12 },	-- Electropeller
+			},
 			["lvl"] = 10,
 			["groups"] = {
+				{
+					["itemID"] = 6718,	-- Electropeller
+					["questID"] = 1580,	-- Electropellers
+					["coords"] = {
+						{ 52.0, 28.9, DARKSHORE },
+						{ 41.5, 73.4, DARKSHORE },
+					},
+				},
 				i(6811),	-- Aquadynamic Fish Lens
 			},
-		},
-		{
-			["questID"] = 1579,	-- Gaffer Jacks
+		}),
+		q(1579, {	-- Gaffer Jacks
 			["qg"] = 3666,	-- Wizbang Cranktoggle
-			["races"] = ALLIANCE_ONLY,
 			["requireSkill"] = 356,	-- Fishing
 			["description"] = 'Requires fishing skill level 30',
 			["coord"] = { 37.0, 44.0, DARKSHORE },
 			["maps"] = { DARKSHORE },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 6717, 8 },	-- Gaffer Jack
+			},
 			["lvl"] = 10,
-		},
-		{
-			["questID"] = 6609,	-- I Got Nothin' Left!
+		}),
+		q(6609, {	-- I Got Nothin' Left!
 			["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
 			["requireSkill"] = 356,	-- Fishing
 			["description"] = "Requires 225 Fishing to start this quest.",
@@ -70,9 +78,8 @@ profession(356, {	-- Fishing
 			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = 35,
-		},
-		{
-			["questID"] = 8193,	-- Master Angler
+		}),
+		q(8193, {	-- Master Angler
 			["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
@@ -85,9 +92,8 @@ profession(356, {	-- Fishing
 				i(19970),	-- Arcanite Fishing Pole
 				i(19979),	-- Hook of the Master Angler
 			},
-		},
-		{
-			["questID"] = 6607,	-- Nat Pagle, Angler Extreme
+		}),
+		q(6607, {	-- Nat Pagle, Angler Extreme
 			["qg"] = 12919,	-- Nat Pagle
 			["sourceQuests"] = {
 				6609,	-- I Got Nothin' Left!
@@ -107,9 +113,8 @@ profession(356, {	-- Fishing
 			["groups"] = {
 				recipe(18248),	-- Fishing (Artisan)
 			},
-		},
-		{
-			["questID"] = 8225,	-- Rare Fish - Brownell's Blue Striped Racer
+		}),
+		q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
 			["qg"] = 15079,	-- Fishbot 5000
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
@@ -121,9 +126,8 @@ profession(356, {	-- Fishing
 			["g"] = {
 				i(19969),	-- Nat Pagle's Extreme Anglin' Boots
 			},
-		},
-		{
-			["questID"] = 8224,	-- Rare Fish - Dezian Angelfish
+		}),
+		q(8224, {	-- Rare Fish - Dezian Angelfish
 			["qg"] = 15079,	-- Fishbot 5000
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
@@ -135,9 +139,8 @@ profession(356, {	-- Fishing
 			["g"] = {
 				i(19971),	-- High Test Eternium Fishing Line
 			},
-		},
-		{
-			["questID"] = 8221,	-- Rare Fish - Keefer's Angelfish
+		}),
+		q(8221, {	-- Rare Fish - Keefer's Angelfish
 			["qg"] = 15079,	-- Fishbot 5000
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
@@ -149,24 +152,36 @@ profession(356, {	-- Fishing
 			["g"] = {
 				i(19972),	-- Lucky Fishing Hat
 			},
-		},
-		{
-			["questID"] = 8226,	-- Rare Fish - Pale Ghoulfish
+		}),
+		q(8226, {	-- Rare Fish - Pale Ghoulfish
 			["qg"] = 15079,	-- Fishbot 5000
 			["requireSkill"] = 356,	-- Fishing
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
-			["u"] = 1,
 			["cost"] = {
 				{ "i", 19804, 1 },	-- Pale Ghoulfish
 			},
+			["u"] = 1,
 			["g"] = {
 				i(7996),	-- Worn Fishing Hat
 			},
-		},
-		{
-			["questID"] = 6608,	-- You Too Good.
+		}),
+		q(1141, {	-- The Family and the Fishing Pole
+			["qg"] = 10216,	-- Gubber Blump
+			["description"] = "Talk to Gubber Blump after accepting the quest to learn Fishing. Buy a Fishing Pole for 23c and a Shiny Bauble for 50c from Gubber Blump. Start fishing next to Gubber Blump to catch the fish required for the quest.",
+			["coord"] = { 36.1, 44.9, DARKSHORE },
+			["maps"] = { DARKSHORE },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 12238, 6 },	-- Darkshore Grouper
+			},
+			["lvl"] = 10,
+			["g"] = {
+				i(12225),	-- Blump Family Fishing Pole
+			},
+		}),
+		q(6608, {	-- You Too Good.
 			["qg"] = 3332,	-- Lumak <Fishing Trainer>
 			["requireSkill"] = 356,	-- Fishing
 			["description"] = "Requires 225 Fishing to start this quest.",
@@ -175,6 +190,6 @@ profession(356, {	-- Fishing
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
 			["lvl"] = 35,
-		},
+		}),
 	}),
 });

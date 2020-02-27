@@ -97,10 +97,14 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(952, {	-- Grove of the Ancients
-					["lvl"] = 6,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuest"] = 940,	-- Teldrassil
+					["coord"] = { 34.8, 8.8, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5390, 1 },	-- Fandral's Message
+					},
+					["lvl"] = 6,
 				}),
 				q(6121, {	-- Lessons Anew
 					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
@@ -146,13 +150,10 @@ _.Zones =
 					},
 				}),
 				q(6344, {	-- Nessa Shadowsong
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["races"] = {
-						4,	-- Night Elf
-					},
 					["qg"] = 4241,	-- Mydrannul
 					["coord"] = { 70.6, 45.3, DARNASSUS },
+					["races"] = { NIGHTELF },
+					["lvl"] = 10,
 				}),
 				q(6762, {	-- Rabine Saturna
 					["lvl"] = 54,
@@ -207,9 +208,9 @@ _.Zones =
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
 				}),
-				q(942, {	-- The Absent Minded Prospector
+				q(942, {	-- The Absent Minded Prospector (4/5)
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
-					["sourceQuest"] = 741, -- The Absent Minded Prospector(Darkshore)
+					["sourceQuest"] = 741, -- The Absent Minded Prospector (3/5) (Darkshore)
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4654, 1 },	-- Mysterious Fossil
@@ -315,10 +316,11 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(730, {	-- Trouble In Darkshore?
-					["lvl"] = 14,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
+					["coord"] = { 31.2, 84.2, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 14,
 				}),
 				q(923, {	-- Tumors
 					["lvl"] = 4,

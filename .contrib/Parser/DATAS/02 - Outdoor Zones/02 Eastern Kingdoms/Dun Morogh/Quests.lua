@@ -114,6 +114,17 @@ _.Zones =
 					},
 					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
 				}),
+				q(1679, {	-- Muren Stormpike
+					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>
+					["altQuests"] = {
+						1684,	-- Elanaria
+						1638,	-- A Warrior's Training
+					},
+					["coord"] = { 47.2, 52.6, DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 10,
+				}),
 				q(2239, {	-- Onin's Report
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,

@@ -140,7 +140,7 @@ _.Zones =
 					["cr"] = 6523,	-- Dark Iron Rifleman
 				}),
 				i(5233, {	-- Stone of Relu
-					["questID"] = 943,	-- The Absent Minded Prospector
+					["questID"] = 943,	-- The Absent Minded Prospector (5/5)
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						1020,	-- Mottled Raptor
