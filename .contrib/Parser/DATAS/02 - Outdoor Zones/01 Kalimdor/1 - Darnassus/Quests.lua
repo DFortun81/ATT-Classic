@@ -102,6 +102,14 @@ _.Zones =
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["sourceQuest"] = 940,	-- Teldrassil
 				}),
+				q(6121, {	-- Lessons Anew
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["maps"] = { DARKSHORE, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 14,
+				}),
 				q(4493, {	-- March of the Silithid
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,

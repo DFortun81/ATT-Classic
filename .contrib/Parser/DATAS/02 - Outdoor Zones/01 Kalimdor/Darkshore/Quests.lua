@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(DARKSHORE, {
 			n(QUESTS, {
-				q(986, {	-- A Lost Master
+				q(986, {	-- A Lost Master (1/2)
 					["qg"] = 3693,	-- Terenthis
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
@@ -14,25 +14,45 @@ _.Zones =
 						{ "i", 5386, 5 },	-- Fine Moonstalker Pelt
 					},
 					["lvl"] = 10,
-					["g"] = {
+					["groups"] = {
 						i(5387),  -- Enchanted Moonstalker Cloak
 					},
 				}),
-				q(993, {	-- A Lost Master
+				q(993, {	-- A Lost Master (2/2)
 					["qg"] = 3693,	-- Terenthis
+					["sourceQuest"] = 986,	-- A Lost Master (1/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5386, 1 },	-- Fine Moonstalker Pelt
+					},
 					["lvl"] = 10,
 				}),
 				q(4812, {	-- As Water Cascades
 					["qg"] = 2930,	-- Sentinel Glynda Nal'Shea
+					["sourceQuest"] = 4811,	-- The Red Crystal
 					["coord"] = { 37.7, 43.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 14339, 1 },	-- Moonwell Water Tube
+					},
 					["lvl"] = 12,
+					["groups"] = {
+						{
+							["itemID"] = 14338,	-- Empty Water Tube
+							["coord"] = { 37, 43, DARKSHORE },
+							["groups"] = {
+								{
+									["itemID"] = 14339,	-- Moonwell Water Tube
+									["questID"] = 4812,	-- As Water Cascades
+								},
+							},
+						},
+					},
 				}),
 				q(954, {	-- Bashal'Aran (1/4)
 					["qg"] = 3649,	-- Thundris Windweaver
-					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
@@ -71,59 +91,95 @@ _.Zones =
 						i(5604),	-- Elven Wand
 					},
 				}),
-				q(4730, {	-- Beached Sea Creature
-					["provider"] = { "o", 175227 },	-- Beached Sea Creature
-					["coord"] = { 32.7, 80.9, DARKSHORE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
-				}),
-				q(4728, {	-- Beached Sea Creature
-					["provider"] = { "o", 175226 },	-- Beached Sea Creature
-					["coord"] = { 36.0, 70.8, DARKSHORE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 12,
-				}),
-				q(4733, {	-- Beached Sea Creature
-					["provider"] = { "o", 175230 },	-- Beached Sea Creature
-					["coord"] = { 31.2, 87.4, DARKSHORE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 13,
-				}),
-				q(4723, {	-- Beached Sea Creature
+				q(4723, {	-- Beached Sea Creature (1/4)
 					["provider"] = { "o", 175233 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 42.0, 31.6, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12242, 1 },	-- Sea Creature Bones
+					},
 					["lvl"] = 11,
 				}),
-				q(4731, {	-- Beached Sea Turtle
-					["provider"] = { "o", 176198 },	-- Beached Sea Creature
-					["coord"] = { 31.7, 83.7, DARKSHORE },
+				q(4728, {	-- Beached Sea Creature (2/4)
+					["provider"] = { "o", 175226 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 36.0, 70.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 13,
-				}),
-				q(4727, {	-- Beached Sea Turtle
-					["provider"] = { "o", 176196 },	-- Beached Sea Creature
-					["coord"] = { 53.1, 18.1, DARKSHORE },
-					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12242, 1 },	-- Sea Creature Bones
+					},
 					["lvl"] = 12,
 				}),
-				q(4725, {	-- Beached Sea Turtle
-					["provider"] = { "o", 176197 },	-- Beached Sea Creature
-					["coord"] = { 44.2, 20.7, Darkshore },
+				q(4730, {	-- Beached Sea Creature (3/4)
+					["provider"] = { "o", 175227 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 32.7, 80.9, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12242, 1 },	-- Sea Creature Bones
+					},
 					["lvl"] = 12,
 				}),
-				q(4732, {	-- Beached Sea Turtle
-					["provider"] = { "o", 176191 },	-- Beached Sea Creature
-					["coord"] = { 31.2, 85.6, DARKSHORE },
+				q(4733, {	-- Beached Sea Creature (4/4)
+					["provider"] = { "o", 175230 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 31.2, 87.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12242, 1 },	-- Sea Creature Bones
+					},
 					["lvl"] = 13,
 				}),
-				q(4722, {	-- Beached Sea Turtle
+				q(4722, {	-- Beached Sea Turtle (1/5)
 					["provider"] = { "o", 176190 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
 					["coord"] = { 37.2, 62.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12289, 1 },	-- Sea Turtle Remains
+					},
 					["lvl"] = 11,
+				}),
+				q(4725, {	-- Beached Sea Turtle (2/5)
+					["provider"] = { "o", 176197 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 44.2, 20.7, Darkshore },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12292, 1 },	-- Strangely Marked Box
+					},
+					["lvl"] = 12,
+				}),
+				q(4727, {	-- Beached Sea Turtle (3/5)
+					["provider"] = { "o", 176196 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 53.1, 18.1, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12289, 1 },	-- Sea Turtle Remains
+					},
+					["lvl"] = 12,
+				}),
+				q(4731, {	-- Beached Sea Turtle (4/5)
+					["provider"] = { "o", 176198 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 31.7, 83.7, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12292, 1 },	-- Strangely Marked Box
+					},
+					["lvl"] = 13,
+				}),
+				q(4732, {	-- Beached Sea Turtle (5/5)
+					["provider"] = { "o", 176191 },	-- Beached Sea Creature
+					["sourceQuest"] = 4681,	-- Washed Ashore (2/2)
+					["coord"] = { 31.2, 85.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12289, 1 },	-- Sea Turtle Remains
+					},
+					["lvl"] = 13,
 				}),
 				q(1002, {	-- Buzzbox 323
 					["provider"] = { "o", 17183 },	-- Buzzbox 411
@@ -171,27 +227,69 @@ _.Zones =
 				q(947, {	-- Cave Mushrooms
 					["qg"] = 3583,	-- Barithras Moonshade
 					["coord"] = { 37.3, 43.6, DARKSHORE },
-					["description"] = "The path up to the cave begins at 54.7, 31.6. Follow the path to the right when you enter the cave to find the Death Cap.",
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5271, 5 },	-- Scaber Stalk
+						{ "i", 5270, 1 },	-- Death Cap
+					},
 					["lvl"] = 12,
 					["g"] = {
+						{
+							["itemID"] = 5270,	-- Death Cap
+							["questID"] = 947,	-- Cave Mushrooms
+							["coord"] = { 55.4, 36.4, DARKSHORE },
+						},
+						{
+							["itemID"] = 5271,	-- Scaber Stalk
+							["questID"] = 947,	-- Cave Mushrooms
+							["coord"] = { 55.1, 34.6, DARKSHORE },
+						},
 						i(5610),	-- Gustweald Cloak
 						i(4605),	-- Red-speckled Mushroom
 					},
 				}),
 				q(2138, {	-- Cleansing of the Infected
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["sourceQuest"] = 2118,	-- Plagued Lands
 					["coord"] = { 38.8, 43.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(6124, {	-- Curing the Sick
+					["qg"] = 3702,	-- Alanndarian Nightsong
+					["sourceQuest"] = 6123,	-- Gathering the Cure
+					["coord"] = { 37.6, 40.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15826, 1 },	-- Curative Animal Salve
+					},
+					["lvl"] = 14,
+					["groups"] = {
+						i(15866),	-- Veildust Medicine Bag
+					},
 				}),
 				q(982, {	-- Deep Ocean, Vast Sea
 					["qg"] = 6301,	-- Gorbold Steelhand
 					["coord"] = { 38.1, 41.2, DARKSHORE },
 					["description"] = "The Silver Dawning's Lockbox is located at the bottom of the ship at 38.2, 28.8. The Mist Veil's Lockbox is located at the bottom of the ship at 39.6, 27.5.",
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12192, 1 },	-- Mist Veil's Lockbox
+						{ "i", 12191, 1 },	-- Silver Dawning's Lockbox
+					},
 					["lvl"] = 13,
 					["g"] = {
+						{
+							["itemID"] = 12192,	-- Mist Veil's Lockbox
+							["questID"] = 982,	-- Deep Ocean, Vast Sea
+							["coord"] = { 39.7, 27.4, DARKSHORE },
+						},
+						{
+							["itemID"] = 12191,	-- Silver Dawning's Lockbox
+							["questID"] = 982,	-- Deep Ocean, Vast Sea
+							["coord"] = { 38.3, 28.8, DARKSHORE },
+						},
 						i(15401),	-- Welldrip Gloves
 						i(15402),	-- Noosegrip Gauntlets
 					},
@@ -250,6 +348,18 @@ _.Zones =
 						i(15406),	-- Crustacean Boots
 					},
 				}),
+				q(6123, {	-- Gathering the Cure
+					["qg"] = 3702,	-- Alanndarian Nightsong
+					["sourceQuest"] = 6122,	-- The Principal Source
+					["coord"] = { 37.6, 40.6, DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 2449, 5 },	-- Earthroot
+						{ "i", 15851, 12 },	-- Lunar Fungus
+					},
+					["lvl"] = 14,
+				}),
 				q(2098, {	-- Gyromast's Retrieval
 					["qg"] = 6667,	-- Gelkak Gyromast
 					["coord"] = { 56.7, 13.5, DARKSHORE },
@@ -288,10 +398,19 @@ _.Zones =
 				}),
 				q(951, {	-- Mathystra Relics
 					["qg"] = 3616,	-- Onu
+					["sourceQuest"] = 950,	-- Return to Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5273, 6 },	-- Mathystra Relic
+					},
 					["lvl"] = 12,
 					["g"] = {
+						{
+							["itemID"] = 5273,	-- Mathystra Relic
+							["questID"] = 951,	-- Mathystra Relics
+							["coord"] = { 59, 21.8, DARKSHORE },
+						},
 						i(5757),	-- Hardwood Cudgel
 						i(5615),	-- Woodsman Sword
 					},
@@ -304,6 +423,7 @@ _.Zones =
 				}),
 				q(948, {	-- Onu
 					["qg"] = 3583,	-- Barithras Moonshade
+					["sourceQuest"] = 947,	-- Cave Mushrooms
 					["coord"] = { 37.3, 43.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
@@ -338,6 +458,9 @@ _.Zones =
 					["qg"] = 3701,	-- Tharnariun Treetender
 					["coord"] = { 38.8, 43.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 7586, 1 },	-- Tharnariun's Hope
+					},
 					["lvl"] = 10,
 				}),
 				q(6343, {	-- Return to Nessa
@@ -348,14 +471,20 @@ _.Zones =
 				}),
 				q(950, {	-- Return to Onu
 					["provider"] = { "o", 12666 },	-- Twilight Tome
+					["sourceQuest"] = 949,	-- The Twilight Camp
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5272, 1 },	-- Insane Scribbles
+					},
 					["lvl"] = 12,
 				}),
 				q(2139, {	-- Tharnariun's Hope
 					["qg"] = 3701,	-- Tharnariun Treetender
+					["sourceQuest"] = 2138,	-- Cleansing of the Infected
 					["description"] = "The path up to the cave begins at 52.4, 36.0.",
 					["coord"] = { 38.8, 43.4, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 6788,	-- Den Mother
 					["lvl"] = 10,
 					["g"] = {
 						i(7738),	-- Evergreen Gloves
@@ -394,7 +523,7 @@ _.Zones =
 				q(4763, {	-- The Blackwood Corrupted
 					["qg"] = 3649,	-- Thundris Windweaver
 					["description"] = "Fill the Empty Cleansing Bowl at the Moonwell in Auberdine before you leave to get the other items. Blackwood Grain Sample is located at 50.6, 35.0. Blackwood Nut Sample located at 51.8, 33.5. Blackwood Fruit Sample is located at 52.9, 33.4. Mix the ingredients next to the bonfire at 52.4, 33.4 to spawn the level 19 mob Xabraxxis.",
-					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 					["g"] = {
@@ -408,7 +537,7 @@ _.Zones =
 				q(4762, {	-- The Cliffspring River
 					["qg"] = 3649,	-- Thundris Windweaver
 					["description"] = "Collect the sample at 50.9, 25.6 at the bottom of the waterfall.",
-					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 				}),
@@ -430,7 +559,8 @@ _.Zones =
 				}),
 				q(4813, {	-- The Fragments Within
 					["provider"] = { "o", 175524 },	-- Mysterious Red Crystal
-					["coord"] = { 47.4, 48.7, DARKSHORE },
+					["sourceQuest"] = 4812,	-- As Water Cascades
+					["coord"] = { 47.3, 48.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 					["g"] = {
@@ -441,8 +571,12 @@ _.Zones =
 				}),
 				q(944, {	-- The Master's Glaive
 					["qg"] = 3616,	-- Onu
+					["sourceQuest"] = 948,	-- Onu
 					["coord"] = { 43.5, 76.3, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5251, 1 },	-- Phial of Scrying
+					},
 					["lvl"] = 12,
 				}),
 				q(968, { 	-- The Powers Below
@@ -534,6 +668,8 @@ _.Zones =
 				}),
 				q(949, {	-- The Twilight Camp
 					["provider"] = { "o", 10076 },	-- Scrying Bowl
+					["sourceQuest"] = 944,	-- The Master's Glaive
+					["coord"] = { 38.6, 86.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
@@ -552,7 +688,7 @@ _.Zones =
 				}),
 				q(958, {	-- Tools of the Highborne
 					["qg"] = 3649,	-- Thundris Windweaver
-					["coord"] = { 37.4, 40.1, DARKSHORE },
+					["coord"] = { 37.4, 40.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 5360, 7 },	-- Highborne Relic
@@ -585,8 +721,14 @@ _.Zones =
 						i(15404),	-- Breakwater Girdle
 					},
 				}),
-				q(4681, {	-- Washed Ashore
+				q(3524, {	-- Washed Ashore (1/2)
 					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 11,
+				}),
+				q(4681, {	-- Washed Ashore (2/2)
+					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
+					["sourceQuest"] = 3524,	-- Washed Ashore (1/2)
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 11,
 					["g"] = {
@@ -594,11 +736,6 @@ _.Zones =
 						i(15399),	-- Dryweed Belt
 						i(15400),	-- Clamshell Bracers
 					},
-				}),
-				q(3524, {	-- Washed Ashore
-					["qg"] = 10219,	-- Gwennyth Bly'Leggonde
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 11,
 				}),
 			}),
 		}),

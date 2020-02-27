@@ -27,8 +27,20 @@ _.Zones =
 					["classes"] = { 11 },  -- Druid
 					["sourceQuest"] = 5929,  -- Great Bear Spirit
 				}),
+				q(6125, {	-- Power over Poison
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 6124,	-- Curing the Sick
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["maps"] = { DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 14,
+					["groups"] = {
+						recipe(8946),	-- Cure Poison
+					},
+				}),
 				q(5929, { -- Great Bear Spirit
-						["qg"] = 11802,  -- Dendrite Starblaze
+					["qg"] = 11802,  -- Dendrite Starblaze
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
 					["sourceQuest"] = 5921,  -- Moonglade
@@ -79,7 +91,7 @@ _.Zones =
 					},
 				},
 				q(8736, {	-- The Nightmare Manifests
-								["u"] = 3,	-- Added in later phase
+					["u"] = 3,	-- Added in later phase
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["description"] = "This quest will become available with Phase 5.\n\nNOTE: You do NOT want to kill Eranikus or allow Remulos to die.",
 					["qg"] = 11832,	-- Keeper Remulos
@@ -142,6 +154,30 @@ _.Zones =
 						},
 					},
 				},
+				q(6122, {	-- The Principal Source
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 6121,	-- Lessons Anew
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["maps"] = { DARKSHORE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15845, 1 },	-- Filled Cliffspring Falls Sampler
+					},
+					["lvl"] = 14,
+					["groups"] = {
+						{
+							["itemID"] = 15844,	-- Empty Cliffspring Falls Sampler
+							["coord"] = { 54.9 , 33.3, DARKSHORE },
+							["groups"] = {
+								{
+									["itemID"] = 15845,	-- Filled Cliffspring Falls Sampler
+									["questID"] = 6122,	-- The Principal Source
+								},
+							},
+						},
+					},
+				}),
 				q(9063, {	-- Torwa Pathfinder
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.4, 40.6, MOONGLADE },
