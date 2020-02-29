@@ -37,4 +37,18 @@ _.NeverImplemented =
 	un(1, q(7069)), -- "<UNUSED>" quest
 	un(1, q(55296)), -- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 	un(1, q(3366)), -- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
+	
+	-- Dustwallow Marsh Quests that were never added.
+	un(1, q(1)),	-- The "Chow" Quest (123)aa
+	un(1, q(9065)),	-- The "Chow" Quest (123)aa
+	un(1, q(1272)),	-- Finding Reethe <CHANGE INTO GOSSIP>
+	un(1, q(1283)),	-- Fire at the Shady Rest <CHANGE TO GOSSIP>
+	un(1, q(1281)),	-- Jim's Song <CHANGE TO GOSSIP>
+	un(1, q(1263)),	-- The Burning Inn <CHANGE TO GOSSIP>
+	un(1, q(1288, {	-- Vimes's Report
+		["cost"] = {
+			{ "i", 6075, 1 },	-- Vimes's Report
+		},
+	})),
+	un(1, q(1288)),	-- <nyi> Vimes's Report (followup, never implemented)
 };

@@ -29,9 +29,9 @@ _.Zones =
 					},
 				}),
 				q(1220, {	-- Captain Vimes
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4947,	-- Theramore Lieutenant
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["coords"] = { 
 						{ 68.1, 48.2, DUSTWALLOW_MARSH},
 						{ 67.2, 51.0, DUSTWALLOW_MARSH},
@@ -48,10 +48,10 @@ _.Zones =
 					},
 				}),
 				q(4961, {	-- Cleansing of the Orb of Orahil
-					["lvl"] = 40,
-					["classes"] = { WARLOCK },
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1799,	-- Fragments of the Orb of Orahil
+					["classes"] = { WARLOCK },
+					["lvl"] = 40,
 				}),
 				q(1285, {	-- Daelin's Men
 					["qg"] = 4948,	-- Adjutant Tesoran
@@ -78,35 +78,27 @@ _.Zones =
 					},
 				}),
 				q(1271, {	-- Feast at the Blue Recluse
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1141,	-- Angus Stern
-					["g"] = {
-						i(5951),	-- Moist Towelette
-					},
 					["sourceQuests"] = {
 						1258,	-- ... and Bugs
 						1222,	-- Stinky's Escape
 					},
-					["maps"] = { STORMWIND_CITY },
 					["coord"] = { 41.4, 89.3, STORMWIND_CITY },
-				}),
-				q(1272, {	-- Finding Reethe <CHANGE INTO GOSSIP>
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["u"] = 1,
-				}),
-				q(1283, {	-- Fire at the Shady Rest <CHANGE TO GOSSIP>
-					["lvl"] = 30,
-					["u"] = 1,
+					["g"] = {
+						i(5951),	-- Moist Towelette
+					},
 				}),
 				q(1135, {	-- Highperch Venom
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4456,	-- Fiora Longears
+					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 25,
 					["g"] = {
 						i(6719),	-- Windborne Belt
 					},
-					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
 				}),
 				q(1177, {	-- Hungry!
 					["qg"] = 4503,	-- Mudcrush Durtfeet
@@ -172,10 +164,6 @@ _.Zones =
 						i(5016),	-- Artisan's Trousers
 					},
 				}),
-				q(1281, {	-- Jim's Song <CHANGE TO GOSSIP>
-					["lvl"] = 30,
-					["u"] = 1,
-				}),
 				q(1133, {	-- Journey to Astranaar
 					["qg"] = 4456,	-- Fiora Longears
 					["sourceQuest"] = 1132,	-- Fiora Longears
@@ -185,20 +173,20 @@ _.Zones =
 					["lvl"] = 18,
 				}),
 				q(1269, {	-- Lieutenant Paval Reethe
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1259, {	-- Lieutenant Paval Reethe
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1252, {	-- Lieutenant Paval Reethe
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1169, {	-- Items of Power
 					["qg"] = 6546,	-- Tabetha
@@ -224,10 +212,10 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(1260, {	-- Morgan Stern
-					["lvl"] = 33,
+					["qg"] = 1141,	-- Angus Stern
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
-					["qg"] = 1141,	-- Angus Stern
+					["lvl"] = 33,
 				}),
 				q(1204, {	-- Mudrock Soup and Bugs
 					["qg"] = 4794,	-- Morgan Stern
@@ -248,84 +236,74 @@ _.Zones =
 				}),
 				q(1273, {	-- Questioning Reethe
 					["qg"] = 4983,	-- Ogron
+					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["g"] = {
 						i(6797),	-- Eyepoker
 						i(6798),	-- Blasting Hackbut
 					},
-					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
 				}),
 				q(1262, {	-- Report to Zor
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4791,	-- Nazeer Bloodpike
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(4976, {	-- Returning the Cleansed Orb
-					["lvl"] = 40,
-					["classes"] = { WARLOCK },
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 4961,	-- Cleansing of the Orb of Orahil
+					["classes"] = { WARLOCK },
+					["lvl"] = 40,
 				}),
 				q(7541, {	-- Service to the Horde
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["qg"] = 4047,	-- Zor Lonetree
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(18585),	-- Band of Allegiance
 						i(18586),	-- Lonetree's Circle
 					},
 				}),
 				q(1218, {	-- Soothing Spices
-					["lvl"] = 30,
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4792,	-- \"Swamp Eye\" Jarl
+					["lvl"] = 30,
 					["g"] = {
 						i(6807),	-- Frog Leg Stew
 					},
 				}),
 				q(1270, {	-- Stinky's Escape
-					["lvl"] = 30,
+					["qg"] = 4880,	-- "Stinky" Ignatz
+					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
-					["qg"] = 4880,	-- \"Stinky\" Ignatz
+					["lvl"] = 30,
 					["g"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
-					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				}),
 				q(1222, {	-- Stinky's Escape
-					["lvl"] = 30,
+					["qg"] = 4880,	-- "Stinky" Ignatz
+					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4880,	-- \"Stinky\" Ignatz
+					["lvl"] = 30,
 					["g"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
-					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 				}),
 				q(1268, {	-- Suspicious Hoofprints
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 21016 },	-- Hoofprints
 					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1284, {	-- Suspicious Hoofprints
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["providers"] = { 
 						{ "o", 21015 },	-- Hoofprints
 						{ "o", 21016 },	-- Hoofprints
 					},
 					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
-				}),
-				q(9065, {	-- The "Chow" Quest (123)aa
-					["g"] = {
-						i(159),	-- Refreshing Spring Water
-						i(118),	-- Minor Healing Potion
-					},
-					["u"] = 1,
-				}),
-				q(1, {	-- The "Chow" Quest (123)aa
-					["u"] = 1,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1253, {	-- The Black Shield (1/3)
 					["provider"] = { "o", 20992 },	-- Black Shield
@@ -420,19 +398,15 @@ _.Zones =
 						i(10701),	-- Boots of Zua'tec
 					},
 				}),
-				q(1263, {	-- The Burning Inn <CHANGE TO GOSSIP>
-					["lvl"] = 30,
-					["u"] = 1,
-				}),
 				q(1287, {	-- The Deserters
-					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1286, {	-- The Deserters
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1954, {	-- The Infernal Orb
 					["qg"] = 6546,	-- Tabetha
@@ -447,38 +421,33 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(1238, {	-- The Lost Report
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["races"] = HORDE_ONLY,
+					["lvl"] = 30,
 				}),
 				q(1265, {	-- The Missing Diplomat (14/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4964,	-- Commander Samaul
-					["maps"] = { STORMWIND_CITY },
-					["coord"] = { 68.0, 48.6, DUSTWALLOW_MARSH },
-					["description"] = "This is part of a quest chain that begins in Stormwind City.",
 					["sourceQuest"] = 1264,
+					["coord"] = { 68.0, 48.6, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(1266, {	-- The Missing Diplomat (15/17)
 					["qg"] = 4967,	-- Archmage Tervosh
 					["sourceQuest"] = 1265,
 					["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1324, {	-- The Missing Diplomat (16/17)
 					["qg"] = 4966,	-- Private Hendel
 					["sourceQuest"] = 1266,
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1267, {	-- The Missing Diplomat (17/17)
 					["qg"] = 4968,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 1324,	-- The Missing Diplomat (16/17)
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -525,10 +494,6 @@ _.Zones =
 					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-				}),
-				q(1288, {	-- Vimes's Report
-					["lvl"] = 30,
-					["u"] = 1,
 				}),
 			}),
 		}),
