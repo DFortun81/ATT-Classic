@@ -9,7 +9,7 @@ _.Instances = {
 		["lvl"] = 13,
 		["groups"] = {
 			n(QUESTS, {
-				q(5726, {	-- Hidden Enemies [Pt 1]
+				q(5726, {	-- Hidden Enemies (1/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["maps"] = { DUROTAR, ORGRIMMAR },
@@ -19,33 +19,33 @@ _.Instances = {
 					},
 					["lvl"] = 9,
 				}),
-				q(5727, {	-- Hidden Enemies [Pt 2]
+				q(5727, {	-- Hidden Enemies (2/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["sourceQuest"] = 5726,	-- Hidden Enemies [Pt 1]
+					["sourceQuest"] = 5726,	-- Hidden Enemies (1/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(5728, {	-- Hidden Enemies [Pt 3]
+				q(5728, {	-- Hidden Enemies (3/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["sourceQuest"] = 5727,	-- Hidden Enemies [Pt 2]
+					["sourceQuest"] = 5727,	-- Hidden Enemies (2/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(5729, {	-- Hidden Enemies [Pt 4]
+				q(5729, {	-- Hidden Enemies (4/5)
 					["qg"] = 4949,	-- Thrall <Warchief>
-					["sourceQuest"] = 5728,	-- Hidden Enemies [Pt 3]
+					["sourceQuest"] = 5728,	-- Hidden Enemies (3/5)
 					["coord"] = { 32.0, 37.8, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(5730, {	-- Hidden Enemies [Pt 5]
+				q(5730, {	-- Hidden Enemies (5/5)
 					["qg"] = 3216,	-- Neeru Fireblade
-					["sourceQuest"] = 5729,	-- Hidden Enemies [Pt 4]
+					["sourceQuest"] = 5729,	-- Hidden Enemies (4/5)
 					["coord"] = { 49.6, 50.6, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,

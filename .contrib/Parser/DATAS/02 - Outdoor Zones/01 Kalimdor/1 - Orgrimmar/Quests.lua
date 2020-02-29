@@ -87,7 +87,7 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(8917,	{ -- An Earnest Proposition
+				q(8917,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -119,7 +119,7 @@ _.Zones =
 						i(22079),	-- Virtuous Bracers
 					},
 				}),
-				q(8915,	{ -- An Earnest Proposition
+				q(8915,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -135,7 +135,7 @@ _.Zones =
 						i(22063),	-- Sorcerer's Bindings
 					},
 				}),
-				q(8920,	{ -- An Earnest Proposition
+				q(8920,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -151,7 +151,7 @@ _.Zones =
 						i(21996),	-- Bracers of Heroism
 					},
 				}),
-				q(8918,	{ -- An Earnest Proposition
+				q(8918,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -167,7 +167,7 @@ _.Zones =
 						i(22095),	-- Bindings of The Five Thunders
 					},
 				}),
-				q(8919,	{ -- An Earnest Proposition
+				q(8919,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -183,7 +183,7 @@ _.Zones =
 						i(22071),	-- Deathmist Bracers
 					},
 				}),
-				q(8913,	{ -- An Earnest Proposition
+				q(8913,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -337,11 +337,11 @@ _.Zones =
 					["qg"] = 16033,	-- Bodley
 					["u"] = 3,	-- Added in later phase (Phase 5)
 				}),
-				q(1508, { -- Blind Cazul
+				q(1508, {	-- Blind Cazul
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5909, -- Cazul
+					["qg"] = 5909,	-- Cazul
 				}),
 				q(4300, {	-- Bone-Bladed Weapons
 					["lvl"] = 48,
@@ -352,7 +352,7 @@ _.Zones =
 						i(11864),	-- White Bone Spear
 					},
 				}),
-				q(4511, { -- Calm Before the Storm (2/2)
+				q(4511, {	-- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4509,	-- Calm Before the Storm (1/2)
 					["qg"] = 7010,	-- Zilzibin Drumlore
 					["coord"] = { 56.4, 46.6, ORGRIMMAR },
@@ -371,25 +371,37 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
-				q(1501, { -- Creature of the Void
-					["lvl"] = 10,
-					["races"] = { ORC, UNDEAD },
+				q(1501, {	-- Creature of the Void
+					["qg"] = 5875,	-- Gan'rul Bloodeye
+					["sourceQuest"] = 1506,	-- Gan'rul's Summons
+					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["maps"] = { DUROTAR },
+					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875, -- Gan'rul Bloodeye
-					["sourceQuest"] = 1506, -- Gan'rul's Summons
+					["cost"] = {
+						{ "i", 6535, 1 },	-- Tablet of Verga
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 6535,	-- Tablet of Verga
+							["questID"] = 1501,	-- Creature of the Void
+							["coord"] = { 51.6, 9.7, DUROTAR },
+						},
+					},
 				}),
-				q(2458, { -- Deep Cover
+				q(2458, {	-- Deep Cover
 					["lvl"] = 20,
-					["qg"] = 3401, -- Shenthul
+					["qg"] = 3401,	-- Shenthul
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
-					["sourceQuest"] = 2460, -- The Shattered Salute
+					["sourceQuest"] = 2460,	-- The Shattered Salute
 				}),
-				q(1507, { -- Devourer of Souls
+				q(1507, {	-- Devourer of Souls
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875, -- Dan'rul Bloodeye
+					["qg"] = 5875,	-- Dan'rul Bloodeye
 					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
 				}),
 				q(8410, {	-- Elemental Mastery
@@ -415,35 +427,43 @@ _.Zones =
 					},
 				}),
 				q(5652, {	-- Hex of Weakness
-					["qg"] = 6018,	-- Ur'kyo
-					["coord"] = { 35.60, 87.77, ORGRIMMAR },
-					["altQuests"] = {
-						5653,
-						5654,
-						5655,
-						5656,
-						5657,
+					["qgs"] = {
+						3706,	-- Tai'jin <Priest Trainer>
+						4606,	-- Aelthalyste
+						6018,	-- Ur'kyo <Priest Trainer>
 					},
+					["coords"] = {
+						{ 54.2, 42.8, DUROTAR },
+						{ 49.01, 18.32, UNDERCITY },
+						{ 35.6, 87.6, ORGRIMMAR },
+					},
+					["altQuests"] = {
+						5653,	-- Hex of Weakness (NYI)
+						5654,	-- Hex of Weakness (Durotar, unused)
+						5655,	-- Hex of Weakness (Durotar)
+						5656,	-- Hex of Weakness (Undercity)
+						5657,	-- Hex of Weakness (Orgrimmar, unused)
+					},
+					["maps"] = { DUROTAR, UNDERCITY },
 					["classes"] = { PRIEST },
 					["races"] = { TROLL },
-					["lvl"] = 10
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(9035),	-- Hex of Weakness
+					},
 				}),
-				--q(5726, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
-				--q(5727, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
-				--q(5729, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
-				--q(5730, {}),	-- Hidden Enemies [Ragefire Chasm.lua]
-				q(2479, { -- Hinott's Assistance
+				q(2479, {	-- Hinott's Assistance
 					["lvl"] = 20,
-					["qg"] = 3401, -- Shenthul
+					["qg"] = 3401,	-- Shenthul
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
-					["sourceQuest"] = 2478, -- Mission: Possible But Not Probable
+					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
 				}),
-				q(4737, { -- In Search of Menara Voidrender
+				q(4737, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 3326, -- Zevrost
+					["qg"] = 3326,	-- Zevrost
 				}),
 				q(8938, {	-- Just Compensation
 					["lvl"] = 58,
@@ -517,11 +537,11 @@ _.Zones =
 						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
-				q(4967, { -- Knowledge of the Orb of Orahil
+				q(4967, {	-- Knowledge of the Orb of Orahil
 					["lvl"] = 35,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 3326, -- Zevrost
+					["qg"] = 3326,	-- Zevrost
 				}),
 				q(8250, {	-- Magecraft
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
@@ -535,18 +555,18 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 7010,	-- Zilzibin Drumlore
 				}),
-				q(7562, { -- Mor'zul Bloodbringer
+				q(7562, {	-- Mor'zul Bloodbringer
 					["qg"] = 5815,	-- Kurgul <Demon Trainer>
 					["coord"] = { 47.6, 46.8, ORGRIMMAR },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
-				q(1509, { --News of Dogran (1/2)
+				q(1509, {	--News of Dogran (1/2)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5910, -- Zankaja
-					["sourceQuest"] = 1508, -- Blind Cazul
+					["qg"] = 5910,	-- Zankaja
+					["sourceQuest"] = 1508,	-- Blind Cazul
 				}),
 				q(1959, {	-- Report to Anastasia
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
@@ -645,18 +665,18 @@ _.Zones =
 						i(21997),	-- Breastplate of Heroism
 					},
 				}),
-				q(2996, { -- Seeking Strahad
+				q(2996, {	-- Seeking Strahad
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875, -- Gan'rul Bloodeye
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["isBreadcrumb"] = true,
 				}),
-				q(3631, { -- Summon Felsteed
+				q(3631, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 3326, -- Zevrost
+					["qg"] = 3326,	-- Zevrost
 				}),
 				q(8276, {	-- Taking Back Silithus
 					["lvl"] = 54,
@@ -673,21 +693,29 @@ _.Zones =
 					},
 					["lvl"] = 20,
 				}),
-				q(1504, { -- The Binding
-					["lvl"] = 10,
-					["races"] = { ORC, UNDEAD },
+				q(1504, {	-- The Binding
+					["qg"] = 5875,	-- Gan'rul Bloodeye
+					["sourceQuest"] = 1501,	-- Creature of the Void
+					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875, -- Gan'rul Bloodeye
-					["sourceQuest"] = 1501, -- Creature of the Void
+					["cr"] = 5676,	-- Summoned Voidwalker
+					["cost"] = {
+						{ "i", 7464, 1 },	-- Glyphs of Summoning
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(697),	-- Summon Voidwalker
+					},
 				}),
-				q(1513, { -- The Binding (Succubus)
+				q(1513, {	-- The Binding (Succubus)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875, -- Gan'rul Bloodeye
-					["sourceQuest"] = 1512, -- Love's Gift
+					["qg"] = 5875,	-- Gan'rul Bloodeye
+					["sourceQuest"] = 1512,	-- Love's Gift
 					["g"] = {
-						i(22243), -- Small Soul Pouch
+						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				q(8151, {	-- The Hunter's Charm
@@ -717,7 +745,7 @@ _.Zones =
 						4641,	-- Your Place In The World
 					},
 				}),
-				q(1963, { -- The Shattered Hand
+				q(1963, {	-- The Shattered Hand
 					["qg"] = 6446,	-- Therzok
 					["sourceQuest"] = 1859,	-- Therzok
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
@@ -725,9 +753,9 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
-				q(2460, { -- The Shattered Salute
+				q(2460, {	-- The Shattered Salute
 					["lvl"] = 20,
-					["qg"] = 3401, -- Shenthul
+					["qg"] = 3401,	-- Shenthul
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
 				}),
@@ -740,17 +768,23 @@ _.Zones =
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 				}),
-				q(2382, { -- Wrenix of Ratchet
-					["lvl"] = 16,
-					["qg"] = 3402, -- Zando'zan
-					["races"] = { ORC, UNDEAD, TROLL },
+				q(2382, {	-- Wrenix of Ratchet
+					["qg"] = 3402,	-- Zando'zan
+					["sourceQuest"] = 2379,	-- Zando'zan
+					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
+					["lvl"] = 16,
 				}),
-				q(2379, { -- Zando'zan
-					["lvl"] = 16,
-					["qg"] = 3401, -- Shenthul
-					["races"] = { ORC, UNDEAD, TROLL },
+				q(2379, {	-- Zando'zan
+					["qg"] = 3401,	-- Shenthul
+					["sourceQuests"] = {
+						2378,	-- Find the Shattered Hand
+						2380,	-- To Orgrimmar!
+					},
+					["coord"] = { 43, 53.4, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
+					["lvl"] = 16,
 				}),
 			}),
 		}),

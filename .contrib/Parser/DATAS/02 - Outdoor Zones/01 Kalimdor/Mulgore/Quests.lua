@@ -45,6 +45,46 @@ _.Zones =
 						i(10636),	-- Nomadic Gloves
 					},
 				}),
+				q(1519, {	-- Call of Earth (1/3)
+					["qg"] = 5888,	-- Seer Ravenfeather
+					["coord"] = { 44.8, 76.2, MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6634, 2 },	-- Ritual Salve
+					},
+					["lvl"] = 4,
+				}),
+				q(1520, {	-- Call of Earth (2/3)
+					["qg"] = 5888,	-- Seer Ravenfeather
+					["sourceQuest"] = 1519,	-- Call of Earth (1/3)
+					["coord"] = { 44.8, 76.2, MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6635, 1 },	-- Earth Sapta
+					},
+					["lvl"] = 4,
+				}),
+				q(1521, {	-- Call of Earth (3/3)
+					["qg"] = 5891,	-- Minor Manifestation of Earth
+					["sourceQuest"] = 1520,	-- Call of Earth (2/3)
+					["coord"] = { 53.8, 80.4, MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6656, 1 },	-- Rough Quartz
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						recipe(8071),	-- Stoneskin Totem
+						{
+							["itemID"] = 5175,	-- Earth Totem
+							["questID"] = 1521,	-- Call of Earth (3/3)
+							["description"] = "You must keep this in your bags forever.",
+						},
+					},
+				}),
 				q(743, {	-- Dangers of the Windfury
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
@@ -60,6 +100,24 @@ _.Zones =
 						i(4969),	-- Fortified Bindings
 						i(4970),	-- Rough-hewn Kodo Leggings
 						i(4702),	-- Prospector's Pick
+					},
+				}),
+				q(1462, {	-- Earth Sapta
+					["qg"] = 5888,	-- Seer Ravenfeather
+					["sourceQuest"] = 1519,	-- Call of Earth (1/3)
+					["coord"] = { 44.8, 76.2, MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 6635, 1 },	-- Earth Sapta
+					},
+					["lvl"] = 4,
+					["groups"] = {
+						{
+							["itemID"] = 6635,	-- Earth Sapta
+							["questID"] = 1521,	-- Call of Earth (3/3)
+						},
 					},
 				}),
 				q(775, {	-- Journey into Thunder Bluff

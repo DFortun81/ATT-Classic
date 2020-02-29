@@ -134,10 +134,11 @@ _.Zones =
 					},
 				}),
 				q(2378, { -- Find the Shattered Hand
-					["lvl"] = 16,
 					["qg"] = 6467, -- Mennet Carkad
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 16,
 				}),
 				q(1961, {	-- Gathering Materials
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
@@ -444,18 +445,30 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(5658, {	-- Touch of Weakness
-					["qg"] = 4606,	-- Aelthalyste
-					["coord"] = { 49.01, 18.32, UNDERCITY },
+					["qgs"] = {
+						3706,	-- Tai'jin <Priest Trainer>
+						4606,	-- Aelthalyste
+						6018,	-- Ur'kyo <Priest Trainer>
+					},
+					["coords"] = {
+						{ 54.2, 42.8, DUROTAR },
+						{ 49.01, 18.32, UNDERCITY },
+						{ 35.6, 87.6, ORGRIMMAR },
+					},
+					["maps"] = { DUROTAR, ORGRIMMAR },
 					["altQuests"] = {
-						5659,
-						5660,
-						5661,
-						5662,
-						5663,
+						5659,	-- Touch of Weakness (NYI)
+						5660,	-- Touch of Weakness (Durotar)
+						5661,	-- Touch of Weakness (Brill, unused)
+						5662,	-- Touch of Weakness (Orgrimmar)
+						5663,	-- Touch of Weakness (Undercity, unused)
 					},
 					["classes"] = { PRIEST },
 					["races"] = { UNDEAD },
-					["lvl"] = 10
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(2652),	-- Touch of Weakness
+					},
 				}),
 			}),
 		}),

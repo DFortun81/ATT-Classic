@@ -94,6 +94,122 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 				}),
+				q(1522, {	-- Call of Fire (1/5) (Orgrimmar)
+					["qg"] = 5892,	-- Searn Firewarder
+					["coord"] = { 37.8, 37.4, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(1523, {	-- Call of Fire (1/5) (Thunder Bluff)
+					["qg"] = 5906,	-- Xanis Flameweaver
+					["coord"] = { 25.2, 21, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(2983, {	-- Call of Fire (1/5) (Durotar)
+					["qg"] = 3173,	-- Swart <Shaman Trainer>
+					["coord"] = { 54.4, 42.6, DUROTAR },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(2984, {	-- Call of Fire (1/5) (Mulgore)
+					["qg"] = 3066,	-- Narm Skychaser <Shaman Trainer>
+					["coord"] = { 48.4, 59.2, MULGORE },
+					["maps"] = { MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(1524, {	-- Call of Fire (2/5)
+					["qg"] = 5907,	-- Kranal Fiss
+					["sourceQuests"] = {
+						1522,	-- Call of Fire (1/5) (Orgrimmar)
+						1523,	-- Call of Fire (1/5) (Thunder Bluff)
+						2983,	-- Call of Fire (1/5) (Durotar)
+						2984,	-- Call of Fire (1/5) (Mulgore)
+					},
+					["coord"] = { 55.8, 20, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6653, 1 },	-- Torch of the Dormant Flame
+					},
+					["lvl"] = 10,
+				}),
+				q(1525, {	-- Call of Fire (3/5)
+					["qg"] = 5900,	-- Telf Joolam
+					["sourceQuest"] = 1524,	-- Call of Fire (2/5)
+					["coord"] = { 38.6, 58.8, DUROTAR },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 5026, 1 },	-- Fire Tar
+						{ "i", 6652, 1 },	-- Reagent Pouch
+					},
+					["lvl"] = 10,
+					["g"] = {
+						{
+							["itemID"] = 6636,	-- Fire Sapta
+							["questID"] = 1526,	-- Call of Fire (4/5)
+						},
+					},
+				}),
+				q(1526, {	-- Call of Fire (4/5)
+					["qg"] = 5900,	-- Telf Joolam
+					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
+					["coord"] = { 38.6, 58.8, DUROTAR },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6655, 1 },	-- Glowing Ember
+					},
+					["lvl"] = 10,
+					["g"] = {
+						{
+							["itemID"] = 6636,	-- Fire Sapta
+							["cr"] = 5893,	-- Minor Manifestation of Fire
+							["coord"] = { 38.6, 58.2, DUROTAR },
+							["groups"] = {
+								{
+									["itemID"] = 6655,	-- Glowing Ember
+									["questID"] = 1526,	-- Call of Fire (4/5)
+								},
+							},
+						},
+					},
+				}),
+				q(1527, {	-- Call of Fire (5/5)
+					["provider"] = { "o", 61934 },	-- Brazier of the Dormant Flame
+					["sourceQuest"] = 1526,	-- Call of Fire (4/5)
+					["coord"] = { 38.9, 58.2, DUROTAR },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["cost"] = {
+						{ "i", 6654, 1 },	-- Torch of the Eternal Flame
+					},
+					["lvl"] = 10,
+					["g"] = {
+						recipe(3599),	-- Searing Totem
+						{
+							["itemID"] = 5176,	-- Fire Totem
+							["questID"] = 1527,	-- Call of Fire
+							["description"] = "You must keep this in your bags forever.",
+						},
+					},
+				}),
 				q(855, {	-- Centaur Bracers
 					["qg"] = 3389,	-- Regthar Deathgate
 					["coord"] = { 45.34, 28.42, THE_BARRENS },
@@ -224,7 +340,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(1515, { --Dogran's Captivity
+				q(1515, { -- Dogran's Captivity
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -266,14 +382,38 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(1464, {	-- Fire Sapta
+					["qg"] = 5900,	-- Telf Joolam
+					["sourceQuest"] = 1525,	-- Call of Fire (3/5)
+					["coord"] = { 38.6, 58.8, DUROTAR },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { SHAMAN },
+					["repeatable"] = true,
+					["lvl"] = 10,
+					["g"] = {
+						{
+							["itemID"] = 6636,	-- Fire Sapta
+							["questID"] = 1526,	-- Call of Fire (4/5)
+						},
+					},
+				}),
 				q(1503, { -- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
 					["coord"] = { 57.23, 30.34, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 6534, 1 },	-- Forged Steel Bars
+					},
 					["lvl"] = 10,
 					["g"] = {
+						{
+							["itemID"] = 6534,	-- Forged Steel Bars
+							["questID"] = 1503,	-- Forged Steel
+							["coord"] = { 55.0, 26.6, THE_BARRENS },
+						},
 						i(7326),	-- Thun'grim's Axe
 						i(7327),	-- Thun'grim's Dagger
 						i(7328),	-- Thun'grim's Mace
@@ -515,6 +655,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
+				q(1498, {	-- Path of Defense
+					["qg"] = 5810,	-- Uzzek
+					["sourceQuest"] = 1505,	-- Veteran Uzzek
+					["coord"] = { 61.38, 21.11, THE_BARRENS },
+					["description"] = "Completing this quest prevents you from accepting \"Speak with Dillinger\" and \"Ulag the Cleaver\" in Silverpine Forest.",
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 6486, 5 },	-- Singed Scale
+					},
+					["lvl"] = 10,
+				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
 					["sourceQuests"] = {
@@ -526,10 +679,24 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(2381, { -- Plundering the Plunderers
-					["lvl"] = 16,
 					["qg"] = 7161, -- Wrenix the Wretched
-					["races"] = { ORC, UNDEAD, TROLL },
+					["sourceQuest"] = 2382,	-- Wrenix of Ratchet
+					["coord"] = { 63, 36.4, THE_BARRENS },
+					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 7968, 1 },	-- Southsea Treasure
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 7968,	-- Southsea Treasure
+							["questID"] = 2381,	-- Plundering the Plunderers
+							["cr"] = 7168,	-- Polly
+							["coord"] = { 64.8, 45.4, THE_BARRENS },
+						},
+						i(7676),	-- Thistle Tea
+					},
 				}),
 				q(903, {	-- Prowlers of the Barrens
 					["qg"] = 3338,	-- Sergra Darkthorn
@@ -997,10 +1164,9 @@ _.Zones =
 				q(1502, { -- Thun'grim Firegaze
 					["qg"] = 5810,	-- Uzzek
 					["sourceQuest"] = 1498,	-- Path of Defense
-					--["isBreadcrumb"],	-- Possible, since quest 3/4 of the UD chain is breadcrumb.
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
 				q(1758, { -- Tome of the Cabal (1/3 Alliance)
@@ -1028,6 +1194,14 @@ _.Zones =
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
+				}),
+				q(1839, {	-- Ula'elek and the Brutal Gauntlets
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(851, {	-- Verog the Dervish
 					["qg"] = 3389,	-- Regthar Deathgate
