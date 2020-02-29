@@ -106,6 +106,14 @@ _.Zones =
 						1120,	-- Get the Goblins Drunk
 					},
 				}),
+				q(1950, {	-- Get the Scoop
+					["qg"] = 6548,	-- Magus Tirth
+					["sourceQuest"] = 1949,	-- Hidden Secrets
+					["coord"] = { 478.2, 75.8, THOUSAND_NEEDLES },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["lvl"] = 30,
+				}),
 				q(1174, {	-- Gnomes Win!
 					["u"] = 1,	-- Never Available
 					["groups"] = {

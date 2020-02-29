@@ -8,7 +8,7 @@ _.Instances = {
 		["lvl"] = 35,
 		["groups"] = {
 			n(QUESTS, {
-				q(2200, { -- Back to Uldaman
+				q(2200, {	-- Back to Uldaman
 					["sourceQuest"] = 2199,	-- Lore for a Price
 					["qg"] = 6826,	-- Talvash del Kissel
 					["coord"] = { 36.4, 3.6, IRONFORGE },
@@ -19,7 +19,7 @@ _.Instances = {
 						i(7667),	-- Talvash's Phial of Scrying
 					},
 				}),			
-				q(2340, { -- Deliver the Gems
+				q(2340, {	-- Deliver the Gems
 					["sourceQuest"] = 2339,	-- Find the Gems and Power Source
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["cost"] = { 
@@ -30,7 +30,7 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
-				q(2201, { -- Find the Gems
+				q(2201, {	-- Find the Gems
 					["sourceQuest"] = 2200,	-- Back to Uldaman
 					["qg"] = 6912,	-- Remains of a Paladin
 					["cost"] = {
@@ -84,7 +84,7 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
-				q(2341, { -- Necklace Recovery, Take 3
+				q(2341, {	-- Necklace Recovery, Take 3
 					["sourceQuest"] = 2340,	-- Deliver the Gems
 					["qg"] = 6986,	-- Dran Droffers <Droffers and Son Salvage>
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
@@ -94,6 +94,17 @@ _.Instances = {
 					["groups"] = {
 						i(7888),	-- Jarkal's Enhancing Necklace
 					},
+				}),
+				q(1956, {	-- Power in Uldaman
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1955,	-- The Exorcism
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["maps"] = { DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 8053, 1 },	-- Obsidian Power Source
+					},
+					["lvl"] = 35,
 				}),
 				q(3375, {	-- Replacement Phial
 					["sourceQuest"] = 2199,	-- Lore for a Price
@@ -145,7 +156,7 @@ _.Instances = {
 						i(9627),	-- Explorers' League Lodestar
 					},
 				}),
-				q(2398, { -- The Lost Dwarves
+				q(2398, {	-- The Lost Dwarves
 					["qg"] = 1356,	-- Prospector Stormpike
 					["coord"] = { 74.64, 11.74, IRONFORGE },
 					["maps"] = { IRONFORGE },
@@ -153,7 +164,7 @@ _.Instances = {
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
-				q(1139, { -- The Lost Tablets of Will
+				q(1139, {	-- The Lost Tablets of Will
 					["sourceQuest"] = 762,	-- An Ambassador of Evil
 					["qg"] = 2918,	-- Advisor Belgrum
 					["cost"] = {
@@ -167,7 +178,7 @@ _.Instances = {
 						i(6723),	-- Medal of Courage
 					},
 				}),
-				q(2278, { -- The Platinum Discs
+				q(2278, {	-- The Platinum Discs
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["description"] = "Right click on The Discs of Norgannon after defeating Archaedas to start this quest.",
 					["lvl"] = 40,
@@ -180,7 +191,7 @@ _.Instances = {
 					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up this quest from The Discs of Norgannon again.",
 					["lvl"] = 40,
 				},
-				q(2439, { -- The Platinum Discs [Alliance - Part 3]
+				q(2439, {	-- The Platinum Discs [Alliance - Part 3]
 					["sourceQuest"] = 2279,	-- The Platinum Discs [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
 					["coord"] = { 69.9, 18.6, IRONFORGE },
@@ -219,7 +230,7 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 37,
 				}),
-				q(2338, { -- Translating the Journal
+				q(2338, {	-- Translating the Journal
 					["sourceQuest"] = 2318,	-- Translating the Journal
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["coord"] = { 2.6, 46, BADLANDS },
@@ -345,7 +356,11 @@ _.Instances = {
 				},
 			}),
 			n(7023, {	-- Obsidian Sentinel
-				i(8053),	-- Obsidian Power Source
+				{
+					["itemID"] = 8053, -- Obsidian Power Source
+					["questID"] = 1956,	-- Power in Uldaman
+					["classes"] = { MAGE },
+				},
 			}),
 			n(7206, {	-- Ancient Stone Keeper
 				i(9411),	-- Rockshard Pauldrons

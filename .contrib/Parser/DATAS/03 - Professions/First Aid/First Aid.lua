@@ -14,35 +14,46 @@ profession(129, {	-- First Aid
 	recipe(23787),	-- Powerful Anti-Venom
 	n(QUESTS, {
 		q(6625, {	-- Alliance Trauma
-			["lvl"] = 35,
-			["races"] = ALLIANCE_ONLY,
-			["requireSkill"] = 129,	-- First Aid
 			["qg"] = 5150,	-- Nissa Firestone
+			["requireSkill"] = 129,	-- First Aid
+			["coord"] = { 54.8, 58.6, IRONFORGE },
 			["maps"] = { IRONFORGE },
+			["races"] = ALLIANCE_ONLY,
 			["isBreadcrumb"] = true,
+			["lvl"] = 35,
 		}),
 		q(6623, {	-- Horde Trauma
-			["lvl"] = 35,
-			["races"] = HORDE_ONLY,
-			["requireSkill"] = 129,	-- First Aid
 			["qg"] = 3373,	-- Arnok
+			["requireSkill"] = 129,	-- First Aid
+			["coord"] = { 34, 84.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
+			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,
+			["lvl"] = 35,
 		}),
 		q(6624, {	-- Triage (A)
-			["lvl"] = 35,
-			["races"] = ALLIANCE_ONLY,
-			["requireSkill"] = 129,	-- First Aid
 			["qg"] = 12939,	-- Doctor Gustaf VanHowzen
-			["maps"] = { DUSTWALLOW_MARSH },
+			["sourceQuest"] = 6625,	-- Alliance Trauma
+			["requireSkill"] = 129,	-- First Aid
 			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
+			["maps"] = { DUSTWALLOW_MARSH },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 16991, 1 },	-- Triage Bandage
+			},
+			["lvl"] = 35,
 		}),
 		q(6622, {	-- Triage (H)
-			["lvl"] = 35,
-			["races"] = HORDE_ONLY,
-			["requireSkill"] = 129,	-- First Aid
 			["qg"] = 12920,	-- Doctor Gregory Victor
+			["sourceQuest"] = 6623,	-- Horde Trauma
+			["requireSkill"] = 129,	-- First Aid
+			["coord"] = { 73.4, 36.8, ARATHI_HIGHLANDS },
 			["maps"] = { ARATHI_HIGHLANDS },
+			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 16991, 1 },	-- Triage Bandage
+			},
+			["lvl"] = 35,
 		}),
 	}),
 });

@@ -8,6 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
 					["qg"] = 4794,	-- Morgan Stern
+					["sourceQuest"] = 1204,	-- Mudrock Soup and Bugs
 					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
 					["maps"] = { SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
@@ -21,25 +22,43 @@ _.Zones =
 				}),
 				q(1168, {	-- Army of the Black Dragon
 					["qg"] = 4502,	-- Tharg
+					["coord"] = { 37.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["g"] = {
-						i(9705),	-- Tharg's Shoelace
 						i(9706),	-- Tharg's Disk
+						i(9705),	-- Tharg's Shoelace
 					},
 				}),
 				q(1220, {	-- Captain Vimes
 					["qg"] = 4947,	-- Theramore Lieutenant
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
+					["sourceQuest"] = 1219,	-- The Orc Report
 					["coords"] = { 
-						{ 68.1, 48.2, DUSTWALLOW_MARSH},
-						{ 67.2, 51.0, DUSTWALLOW_MARSH},
-						{ 65.1, 47.1, DUSTWALLOW_MARSH},
+						{ 68.1, 48.2, DUSTWALLOW_MARSH },
+						{ 67.2, 51.0, DUSTWALLOW_MARSH },
+						{ 65.1, 47.1, DUSTWALLOW_MARSH },
+					},
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5917, 1 },	-- Spy's Report
+					},
+					["lvl"] = 30,
+				}),
+				q(1958, {	-- Celestial Power
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1957,	-- Mana Surges
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["lvl"] = 35,
+					["groups"] = {
+						i(7515),	-- Celestial Orb
+						i(9517),	-- Celestial Stave
 					},
 				}),
 				q(1173, {	-- Challenge Overlord Mok'Morokk
 					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["sourceQuest"] = 1172,	-- The Brood of Onyxia (3/3)
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["g"] = {
@@ -50,11 +69,17 @@ _.Zones =
 				q(4961, {	-- Cleansing of the Orb of Orahil
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1799,	-- Fragments of the Orb of Orahil
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["classes"] = { WARLOCK },
+					["cr"] = 6549,	-- Demon of the Orb
+					["cost"] = {
+						{ "i", 12642, 1 },	-- Cleansed Infernal Orb
+					},
 					["lvl"] = 40,
 				}),
 				q(1285, {	-- Daelin's Men
 					["qg"] = 4948,	-- Adjutant Tesoran
+					["sourceQuest"] = 1259,	-- Lieutenant Paval Reethe (2/2)
 					["coord"] = { 68.0, 48.1, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -83,7 +108,8 @@ _.Zones =
 						1258,	-- ... and Bugs
 						1222,	-- Stinky's Escape
 					},
-					["coord"] = { 41.4, 89.3, STORMWIND_CITY },
+					["description"] = "Don't forget to loot all the food and drinks off the tables.",
+					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
@@ -91,10 +117,21 @@ _.Zones =
 						i(5951),	-- Moist Towelette
 					},
 				}),
+				q(1949, {	-- Hidden Secrets
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1947,	-- Journey to the Marsh
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["lvl"] = 30,
+				}),
 				q(1135, {	-- Highperch Venom
 					["qg"] = 4456,	-- Fiora Longears
 					["coord"] = { 66.5, 45.2, DUSTWALLOW_MARSH },
+					["maps"] = { THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5809, 10 },	-- Highperch Venom Sac
+					},
 					["lvl"] = 25,
 					["g"] = {
 						i(6719),	-- Windborne Belt
@@ -121,6 +158,7 @@ _.Zones =
 				}),
 				q(1169, {	-- Identifying the Brood
 					["qg"] = 4501,	-- Draz'Zilb
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 5840, 15 },	-- Searing Tongue 
@@ -135,34 +173,62 @@ _.Zones =
 				q(1169, {	-- Items of Power
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1951,	-- Rituals of Power
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["maps"] = { ARATHI_HIGHLANDS, DUSTWALLOW_MARSH },
 					["classes"] = { MAGE },
 					["cost"] = {
+						{ "i", 7516, 1 },	-- Tabetha's Instructions
 						{ "i", 7272, 1 },	-- Bolt Charged Bramble
 						{ "i", 1529, 1 },	-- Jade
-						{ "i", 7516, 1 },	-- Tabetha's Instructions
-						{ "i", 7273, 10 },	-- Witherbark Totem Stick
 					},
 					["lvl"] = 30,
-				}),
-				q(1206, {	-- Jarl Needs Eyes
-					["qg"] = 4792,	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.3, DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 5884, 40 },	-- Unpopped Darkmist Eye
+					["groups"] = {
+						i(7273, {	-- Witherbark Totem Stick
+							["classes"] = { MAGE },
+							["cost"] = {
+								{ "i", 7273, 10 },	-- Witherbark Totem Stick
+							},
+							["crs"] = {
+								2554,	-- Witherbark Axe Thrower
+								2558,	-- Witherbark Berserker
+								2556,	-- Witherbark Headhunter
+								2557,	-- Witherbark Shadow Hunter
+								2553,	-- Witherbark Shadowcaster
+								2552,	-- Witherbark Troll
+								2555,	-- Witherbark Witch Doctor
+								2605,	-- Zalas Witherbark <Warband Leader>
+							},
+							["groups"] = {
+								{
+									["itemID"] = 7272,	-- Bolt Charged Bramble
+									["questID"] = 1948,	-- Items of Power
+									["coord"] = { 52, 51, ARATHI_HIGHLANDS },
+								},
+							},
+						}),
 					},
-					["lvl"] = 30,
 				}),
 				q(1203, {	-- Jarl Needs a Blade
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
-					["coord"] = { 55.4, 26.3, DUSTWALLOW_MARSH },
+					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 3853, 1 },	-- Moonsteel Broadsword
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(9622),	-- Reedknot Ring
 						i(5016),	-- Artisan's Trousers
 					},
+				}),
+				q(1206, {	-- Jarl Needs Eyes
+					["qg"] = 4792,	-- "Swamp Eye" Jarl
+					["sourceQuest"] = 1218,	-- Soothing Spices
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 5884, 40 },	-- Unpopped Darkmist Eye
+					},
+					["lvl"] = 30,
 				}),
 				q(1133, {	-- Journey to Astranaar
 					["qg"] = 4456,	-- Fiora Longears
@@ -172,23 +238,52 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
-				q(1269, {	-- Lieutenant Paval Reethe
-					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
-					["races"] = HORDE_ONLY,
+				q(1947, {	-- Journey to the Marsh
+					["qgs"] = {
+						5885,	-- Deino <Mage Trainer>
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+						3048,	-- Ursyn Ghull <Mage Trainer>
+						4568,	-- Anastasia Hartwell <Mage Trainer>
+					},
+					["coords"] = {
+						{ 38.4, 86, ORGRIMMAR },
+						{ 27, 8.2, IRONFORGE },
+						{ 38.6, 79.4, STORMWIND_CITY },
+						{ 25.8, 14.4, THUNDER_BLUFF },
+						{ 85, 10.2, UNDERCITY },
+					},
+					["maps"] = { ORGRIMMAR, IRONFORGE, STORMWIND_CITY, THUNDER_BLUFF, UNDERCITY },
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
-				q(1259, {	-- Lieutenant Paval Reethe
+				q(1269, {	-- Lieutenant Paval Reethe
+					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5950, 1 },	-- Reethe's Badge
+					},
+					["lvl"] = 30,
+				}),
+				q(1252, {	-- Lieutenant Paval Reethe (1/2)
+					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
+					["coord"] = { 29.8, 48.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5950, 1 },	-- Reethe's Badge
+					},
+					["lvl"] = 30,
+				}),
+				q(1259, {	-- Lieutenant Paval Reethe (2/2)
 					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1252,	-- Lieutenant Paval Reethe (1/2)
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(1252, {	-- Lieutenant Paval Reethe
-					["provider"] = { "o", 21042 },	-- Theramore Guard Badge
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(1169, {	-- Items of Power
+				q(1952, {	-- Mage's Wand
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1169,	-- Items of Power
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
@@ -199,6 +294,14 @@ _.Zones =
 						i(11263),	-- Nether Force Wand
 						i(7513),	-- Ragefire Wand
 					},
+				}),
+				q(1957, {	-- Mana Surges
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1956,	-- Power in Uldaman
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["cr"] = 6550,	-- Mana Surge
+					["lvl"] = 35,
 				}),
 				q(1261, {	-- Marg Speaks
 					["provider"] = { "o", 2076 },	-- Bubbling Cauldron
@@ -213,12 +316,15 @@ _.Zones =
 				}),
 				q(1260, {	-- Morgan Stern
 					["qg"] = 1141,	-- Angus Stern
+					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 33,
 				}),
 				q(1204, {	-- Mudrock Soup and Bugs
 					["qg"] = 4794,	-- Morgan Stern
+					["sourceQuest"] = 1260,	-- Morgan Stern
 					["coord"] = { 66.4, 45.5, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -228,15 +334,37 @@ _.Zones =
 				}),
 				q(1166, {	-- Overlord Mok'Morokk's Concern
 					["qg"] = 4500,	-- Overlord Mok'Morokk
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5835, 1 },	-- Mok'Morokk's Grog
+						{ "i", 5834, 1 },	-- Mok'Morokk's Snuff
+						{ "i", 5836, 1 },	-- Mok'Morokk's Strongbox
+					},
 					["lvl"] = 38,
 					["g"] = {
+						{
+							["itemID"] = 5835,	-- Mok'Morokk's Grog
+							["questID"] = 1166,	-- Overlord Mok'Morokk's Concern
+							["coord"] = { 38.6, 65.4, DUSTWALLOW_MARSH },
+						},
+						{
+							["itemID"] = 5834,	-- Mok'Morokk's Snuff
+							["questID"] = 1166,	-- Overlord Mok'Morokk's Concern
+							["coord"] = { 44.4, 66, DUSTWALLOW_MARSH },
+						},
+						{
+							["itemID"] = 5836,	-- Mok'Morokk's Strongbox
+							["questID"] = 1166,	-- Overlord Mok'Morokk's Concern
+							["coord"] = { 36.6, 69.4, DUSTWALLOW_MARSH },
+						},
 						i(10702),	-- Enormous Ogre Boots
 					},
 				}),
 				q(1273, {	-- Questioning Reethe
 					["qg"] = 4983,	-- Ogron
-					["coord"] = { 40.9, 36.6, DUSTWALLOW_MARSH },
+					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
+					["coord"] = { 40.8, 36.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["g"] = {
@@ -246,17 +374,49 @@ _.Zones =
 				}),
 				q(1262, {	-- Report to Zor
 					["qg"] = 4791,	-- Nazeer Bloodpike
+					["sourceQuest"] = 1261,	-- Marg Speaks
+					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5942, 1 },	-- Jeweled Pendant
+					},
 					["lvl"] = 30,
+				}),
+				q(1953, {	-- Return to the Marsh
+					["qgs"] = {
+						5885,	-- Deino <Mage Trainer>
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+						3048,	-- Ursyn Ghull <Mage Trainer>
+						4568,	-- Anastasia Hartwell <Mage Trainer>
+					},
+					["coords"] = {
+						{ 38.4, 86, ORGRIMMAR },
+						{ 27, 8.2, IRONFORGE },
+						{ 38.6, 79.4, STORMWIND_CITY },
+						{ 25.8, 14.4, THUNDER_BLUFF },
+						{ 85, 10.2, UNDERCITY },
+					},
+					["maps"] = { ORGRIMMAR, IRONFORGE, STORMWIND_CITY, THUNDER_BLUFF, UNDERCITY },
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
 				}),
 				q(4976, {	-- Returning the Cleansed Orb
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 4961,	-- Cleansing of the Orb of Orahil
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 12642, 1 },	-- Cleansed Infernal Orb
+					},
 					["lvl"] = 40,
 				}),
 				q(7541, {	-- Service to the Horde
 					["qg"] = 4047,	-- Zor Lonetree
+					["sourceQuest"] = 1262,	-- Report to Zor
+					["coord"] = { 39, 38, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["g"] = {
@@ -266,7 +426,10 @@ _.Zones =
 				}),
 				q(1218, {	-- Soothing Spices
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 3713, 3 },	-- Soothing Spices
+					},
 					["lvl"] = 30,
 					["g"] = {
 						i(6807),	-- Frog Leg Stew
@@ -291,8 +454,11 @@ _.Zones =
 					},
 				}),
 				q(1268, {	-- Suspicious Hoofprints
-					["provider"] = { "o", 21016 },	-- Hoofprints
-					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
+					["providers"] = { 
+						{ "o", 21015 },	-- Hoofprints
+						{ "o", 21016 },	-- Hoofprints
+					},
+					["coord"] = { 29.7, 47.7, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -301,7 +467,7 @@ _.Zones =
 						{ "o", 21015 },	-- Hoofprints
 						{ "o", 21016 },	-- Hoofprints
 					},
-					["coord"] = { 29.7, 47.6, DUSTWALLOW_MARSH },
+					["coord"] = { 29.7, 47.7, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
@@ -377,20 +543,24 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
-				q(1170, {	-- The Brood of Onyxia
+				q(1170, {	-- The Brood of Onyxia (1/3)
 					["qg"] = 4501,	-- Draz'Zilb
+					["sourceQuest"] = 1169,	-- Identifying the Brood
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(1171, {	-- The Brood of Onyxia
+				q(1171, {	-- The Brood of Onyxia (2/3)
 					["qg"] = 4500,	-- Overlord Mok'Morokk
-					["sourceQuest"] = 1170,	-- The Brood of Onyxia
+					["sourceQuest"] = 1170,	-- The Brood of Onyxia (1/3)
+					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(1172, {	-- The Brood of Onyxia
+				q(1172, {	-- The Brood of Onyxia (3/3)
 					["qg"] = 4501,	-- Draz'Zilb
-					["sourceQuest"] = 1171,	-- The Brood of Onyxia
+					["sourceQuest"] = 1171,	-- The Brood of Onyxia (2/3)
+					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 					["g"] = {
@@ -398,20 +568,32 @@ _.Zones =
 						i(10701),	-- Boots of Zua'tec
 					},
 				}),
-				q(1287, {	-- The Deserters
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(1286, {	-- The Deserters
+				q(1286, {	-- The Deserters (1/2)
 					["qg"] = 4944,	-- Captain Garran Vimes
+					["sourceQuest"] = 1285,	-- Daelin's Men
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				q(1287, {	-- The Deserters (2/2)
+					["qg"] = 5089,	-- Balos Jacken
+					["sourceQuest"] = 1286,	-- The Deserters (1/2)
+					["coord"] = { 36, 54.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
+				}),
+				q(1955, {	-- The Exorcism
+					["qg"] = 6546,	-- Tabetha
+					["sourceQuest"] = 1954,	-- The Infernal Orb
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
+					["classes"] = { MAGE },
+					["cr"] = 6549,	-- Demon of the Orb
+					["lvl"] = 35,
+				}),
 				q(1954, {	-- The Infernal Orb
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1953,	-- Return to the Marsh
-					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["coord"] = { 46, 57, DUSTWALLOW_MARSH },
 					["maps"] = { DESOLACE },
 					["classes"] = { MAGE },
 					["cr"] = 4668,	-- Burning Blade Summoner
@@ -422,43 +604,61 @@ _.Zones =
 				}),
 				q(1238, {	-- The Lost Report
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5917, 1 },	-- Spy's Report
+					},
 					["lvl"] = 30,
 				}),
 				q(1265, {	-- The Missing Diplomat (14/17)
 					["qg"] = 4964,	-- Commander Samaul
-					["sourceQuest"] = 1264,
+					["sourceQuest"] = 1264,	-- The Missing Diplomat (13/17)
 					["coord"] = { 68.0, 48.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1266, {	-- The Missing Diplomat (15/17)
 					["qg"] = 4967,	-- Archmage Tervosh
-					["sourceQuest"] = 1265,
+					["sourceQuest"] = 1265,	-- The Missing Diplomat (14/17)
 					["coord"] = { 66.4, 49.3, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1324, {	-- The Missing Diplomat (16/17)
 					["qg"] = 4966,	-- Private Hendel
-					["sourceQuest"] = 1266,
+					["sourceQuest"] = 1266,	-- The Missing Diplomat (15/17)
+					["coord"] = { 45.2, 24.6, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1267, {	-- The Missing Diplomat (17/17)
 					["qg"] = 4968,	-- Lady Jaina Proudmoore
 					["sourceQuest"] = 1324,	-- The Missing Diplomat (16/17)
+					["coord"] = { 45.2, 24.2, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
+					["groups"] = {
+						i(6757),	-- Jaina's Signet Ring
+					},
 				}),
 				q(1219, {	-- The Orc Report
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5917, 1 },	-- Spy's Report
+					},
 					["lvl"] = 30,
 				}),
 				q(1239, {	-- The Severed Head
 					["provider"] = { "o", 20985 },	-- Loose Dirt
+					["sourceQuest"] = 1238,	-- The Lost Report
+					["coord"] = { 55.4, 26, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5918, 1 },	-- Defiant Orc Head
+					},
 					["lvl"] = 30,
 				}),
 				q(1202, {	-- The Theramore Docks
@@ -479,7 +679,14 @@ _.Zones =
 					},
 				}),
 				q(1240, {	-- The Troll Witchdoctor
+					["qg"] = 4791,	-- Nazeer Bloodpike
+					["sourceQuest"] = 1239,	-- The Severed Head
+					["coord"] = { 35.2, 30.6, DUSTWALLOW_MARSH },
+					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5918, 1 },	-- Defiant Orc Head
+					},
 					["lvl"] = 30,
 				}),
 				q(1201, {	-- Theramore Spies
@@ -491,7 +698,7 @@ _.Zones =
 				q(1282, {	-- They Call Him Smiling Jim
 					["qg"] = 4921,	-- Guard Byron
 					["altQuests"] = { 1302 },	-- James Hyal
-					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
+					["coord"] = { 66, 46, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),

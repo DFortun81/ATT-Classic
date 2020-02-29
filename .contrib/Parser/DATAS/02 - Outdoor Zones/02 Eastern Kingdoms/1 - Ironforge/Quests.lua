@@ -636,12 +636,6 @@ _.Zones =
 						i(6974), -- Fire hardened Gauntlets
 					},
 				}),
-				q(4965, { -- Knowledge of the Orb of Orahil
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["qg"] = 5172, -- Briarthorn
-				}),
 				q(8250, {	-- Magecraft
 					["qg"] = 7312,	-- Dink <Mage Trainer>
 					["coord"] = { 26.8, 8.6, IRONFORGE },

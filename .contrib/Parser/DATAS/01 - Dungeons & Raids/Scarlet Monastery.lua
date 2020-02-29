@@ -169,6 +169,17 @@ _.Instances = {
 								i(7746),	-- Explorers' League Commendation
 							},
 						}),
+						q(1951, {	-- Rituals of Power
+							["qg"] = 6548,	-- Magus Tirth
+							["sourceQuest"] = 1950,	-- Get the Scoop
+							["coord"] = { 478.2, 75.8, THOUSAND_NEEDLES },
+							["maps"] = { DUSTWALLOW_MARSH, THOUSAND_NEEDLES },
+							["classes"] = { MAGE },
+							["cost"] = {
+								{ "i", 7274, 1 },	-- Rituals of Power
+							},
+							["lvl"] = 30,
+						}),
 						q(1160, {	-- Test of Lore
 							["sourceQuest"] = 1159,	-- Test of Lore
 							["qg"] = 4488,	-- Parqual Fintallas

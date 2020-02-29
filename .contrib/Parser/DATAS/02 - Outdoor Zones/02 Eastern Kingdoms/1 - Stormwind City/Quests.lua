@@ -339,14 +339,6 @@ _.Zones =
 						{ "i", 8683, 2 }, -- Clara's Fresh Apple
 					},
 				}),
-				q(1301, {	-- James Hyal
-					["qg"] = 5081,	-- Connor Rivers
-					["coord"] = { 40.4, 91.6, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["lvl"] = 30,
-				}),
 				q(3787, {	-- Jonespyre's Request
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
@@ -355,12 +347,6 @@ _.Zones =
 						3788, -- Jonespyre's Request
 					},
 					["isBreadcrumb"] = true,
-				}),
-				q(4968, { -- Knowledge of the Orb of Orahil
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["qg"] = 461, -- Demisette Cloyce
 				}),
 				q(350, { -- Look to an Old Friend
 					["lvl"] = 16,

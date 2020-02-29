@@ -235,7 +235,7 @@ _.Instances = {
 					["sourceQuest"] = 6569,	-- Oculus Illusions
 					["qg"] = 11872,	-- Myranda the Hag
 					["coord"] = { 50.8, 77.8, WESTERN_PLAGUELANDS },
-					["maps"] = { WESTERN_PLAGUELANDS },
+					["maps"] = { DUSTWALLOW_MARSH, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16787, 1 },	-- Amulet of Draconic Subversion

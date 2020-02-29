@@ -170,6 +170,14 @@ _.Zones =
 					},
 					["lvl"] = 21,
 				}),
+				q(1301, {	-- James Hyal
+					["qg"] = 5081,	-- Connor Rivers
+					["coord"] = { 40.4, 91.6, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
 				q(1302, {	-- James Hyal
 					["qg"] = 5082,	-- Vincent Hyal
 					["sourceQuest"] = 1301,	-- James Hyal
@@ -385,7 +393,6 @@ _.Zones =
 					["qg"] = 4963, -- Mikhail <Bartender>
 					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -393,7 +400,6 @@ _.Zones =
 					["qg"] = 4962, -- Tapoke "Slim" Jahn
 					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
 					["coord"] = { 10.6, 60.3, WETLANDS },
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
@@ -401,7 +407,6 @@ _.Zones =
 					["qg"] = 4963, -- Mikhail <Bartender>
 					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
-					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),

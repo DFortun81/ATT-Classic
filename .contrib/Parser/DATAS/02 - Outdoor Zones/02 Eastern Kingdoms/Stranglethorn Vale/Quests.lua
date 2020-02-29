@@ -23,10 +23,9 @@ _.Zones =
 						},
 					},
 				}),
-				q(617, {	-- Akiris by the Bundle
+				q(617, {	-- Akiris by the Bundle (1/2)
 					["qg"] = 2494,	-- Privateer Bloads
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4029, 10 },	-- Akiris Reed
 					},
@@ -35,11 +34,15 @@ _.Zones =
 						i(4117),	-- Scorching Sash
 					},
 				}),
-				q(623, {	-- Akiris by the Bundle
+				q(623, {	-- Akiris by the Bundle (2/2)
 					["qg"] = 2494,	-- Privateer Bloads
-					["sourceQuest"] = 617, 	-- Akiris by the Bundle
+					["sourceQuest"] = 617, 	-- Akiris by the Bundle (1/2)
 					["coord"] = { 27.4, 76.8, STRANGLETHORN_VALE },
+					["maps"] = { DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4028, 1 },	-- Bundle of Akiris Reeds
+					},
 					["lvl"] = 38,
 				}),
 				q(3721, {	-- An OOX of Your Own
@@ -260,7 +263,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
-				q(624, {	-- Cortello's Riddle
+				q(624, {	-- Cortello's Riddle (1/3)
 					["provider"] = { "i", 4056 }, -- Cortello's Riddle
 					["coords"] = {
 						{ 29.5, 89.3, STRANGLETHORN_VALE },
@@ -269,16 +272,16 @@ _.Zones =
 					["maps"] = { SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
-				q(625, {	-- Cortello's Riddle
+				q(625, {	-- Cortello's Riddle (2/3)
 					["provider"] = { "o", 2553 }, -- A Soggy Scroll
-					["sourceQuest"] = 624,	-- Cortello's Riddle
+					["sourceQuest"] = 624,	-- Cortello's Riddle (1/3)
 					["coord"] = { 22.8, 48.1, SWAMP_OF_SORROWS },
 					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
-				q(626, {	-- Cortello's Riddle
+				q(626, {	-- Cortello's Riddle (3/3)
 					["provider"] = { "o", 255 }, -- Musty Scroll
-					["sourceQuest"] = 625,	-- Cortello's Riddle
+					["sourceQuest"] = 625,	-- Cortello's Riddle (2/3)
 					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, THE_HINTERLANDS },
 					["lvl"] = 35,

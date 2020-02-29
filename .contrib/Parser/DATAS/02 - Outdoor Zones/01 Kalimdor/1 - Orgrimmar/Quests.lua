@@ -537,12 +537,6 @@ _.Zones =
 						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
-				q(4967, {	-- Knowledge of the Orb of Orahil
-					["lvl"] = 35,
-					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["qg"] = 3326,	-- Zevrost
-				}),
 				q(8250, {	-- Magecraft
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },

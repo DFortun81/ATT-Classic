@@ -422,8 +422,14 @@ _.Zones =
 				}),
 				q(1799, { -- Fragments of the Orb of Orahil
 					["qg"] = 6266, -- Menara Voidrender
+					["sourceQuests"] = {
+						4965,	-- Knowledge of the Orb of Orahil [Ironforge]
+						4967,	-- Knowledge of the Orb of Orahil [Orgrimmar]
+						4968,	-- Knowledge of the Orb of Orahil [Stormwind]
+						4969,	-- Knowledge of the Orb of Orahil [Undercity]
+					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
-					["maps"] = { DESOLACE },
+					["maps"] = { DESOLACE, DUSTWALLOW_MARSH },
 					["classes"] = { WARLOCK },
 					["cr"] = 4668,	-- Burning Blade Summoner
 					["cost"] = {
@@ -541,6 +547,42 @@ _.Zones =
 					["coord"] = { 52.23, 31.01, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(4967, {	-- Knowledge of the Orb of Orahil
+					["qg"] = 3326,	-- Zevrost
+					["coord"] = { 48.4, 45.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(4965, {	-- Knowledge of the Orb of Orahil
+					["qg"] = 5172, -- Briarthorn
+					["coord"] = { 50.2, 6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(4968, {	-- Knowledge of the Orb of Orahil
+					["qg"] = 461, -- Demisette Cloyce
+					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
+				}),
+				q(4969, {	-- Knowledge of the Orb of Orahil
+					["qg"] = 4563, -- Kaal Soulreaper
+					["coord"] = { 86, 15.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 35,
 				}),
 				q(850, {	-- Kolkar Leaders
 					["qg"] = 3389,	-- Regthar Deathgate
@@ -1008,10 +1050,27 @@ _.Zones =
 				}),
 				q(4964, { -- The Completed Orb of Dar'Orahil
 					["qg"] = 6266, -- Menara Voidrender
+					["altQuests"] = { 4975 },	-- The Completed Orb of Noh'Orahil
 					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
+					["groups"] = {
+						i(15108),	-- Orb of Dar'Orahil
+						i(15106),	-- Staff of Dar'Orahil
+					},
+				}),
+				q(4975, { -- The Completed Orb of Noh'Orahil
+					["qg"] = 6266, -- Menara Voidrender
+					["altQuests"] = { 4964 },	-- The Completed Orb of Dar'Orahil
+					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["lvl"] = 35,
+					["groups"] = {
+						i(15107),	-- Orb of Noh'Orahil
+						i(15105),	-- Staff of Noh'Orahil
+					},
 				}),
 				q(4786, { -- The Completed Robe
 					["qg"] = 6266, -- Menara Voidrender

@@ -189,12 +189,6 @@ _.Zones =
 					},
 					["lvl"] = 15,
 				}),
-				q(4969, { -- Knowledge of the Orb of Orahil
-					["lvl"] = 35,
-					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["qg"] = 4563, -- Kaal Soulreaper
-				}),
 				q(2995, {	-- Lines of Communication
 					["lvl"] = 42,
 					["races"] = HORDE_ONLY,

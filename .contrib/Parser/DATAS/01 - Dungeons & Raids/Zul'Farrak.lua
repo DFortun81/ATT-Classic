@@ -9,7 +9,7 @@ _.Instances = {
 		["lvl"] = 39,
 		["groups"] = {
 			n(QUESTS, {
-				q(2768, { -- Divino-matic Rod
+				q(2768, {	-- Divino-matic Rod
 					["provider"] = { "n", 7407 },	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
 					["coord"] = { 52.5, 28.5, TANARIS },
 					["maps"] = { TANARIS },
@@ -19,7 +19,7 @@ _.Instances = {
 						i(9533),	-- Masons Fraternity Ring
 					},
 				}),
-				q(2770, { -- Gahz'rilla
+				q(2770, {	-- Gahz'rilla
 					["sourceQuest"] = 2769,			-- The Brassbolts Brothers
 					["provider"] = { "n", 4453 },	-- Wizzle Brassbolts
 					["coord"] = { 78.0, 77.0, THOUSAND_NEEDLES },
@@ -35,7 +35,7 @@ _.Instances = {
 						},
 					},
 				}),
-				q(2991, { -- Nekrum's Medallion
+				q(2991, {	-- Nekrum's Medallion
 					["sourceQuest"] = 2990,			-- Thadius Grimshade
 					["provider"] = { "n", 8022 },	-- Thadius Grimshade
 					["coord"] = { 67.0, 19.4, BLASTED_LANDS },
@@ -46,37 +46,50 @@ _.Instances = {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(2865, { -- Scarab Shells
+				q(2865, {	-- Scarab Shells
 					["sourceQuest"] = 2864,	-- Tran'rek
 					["provider"] = { "n", 7876 },	-- Tran'rek
 					["coord"] = { 51.6, 26.8, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
 				}),
-				q(3520, { -- Screecher Spirits
+				q(3520, {	-- Screecher Spirits
 					["provider"] = { "n", 8579 },	-- Yeh'kinya
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["maps"] = { FERALAS, TANARIS },
 					["lvl"] = 40,
 				}),
-				q(2861, { -- Tabetha's Task
+				q(2861, {	-- Tabetha's Task
 					["qgs"] = {
 						4568, -- Anastasia Hartwell
 						5144, -- Bink
 						5497, -- Jennea Cannon
 						5885, -- Deino
 					},
+					["qgs"] = {
+						5885,	-- Deino <Mage Trainer>
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+						4568,	-- Anastasia Hartwell <Mage Trainer>
+					},
+					["coords"] = {
+						{ 38.4, 86, ORGRIMMAR },
+						{ 27, 8.2, IRONFORGE },
+						{ 38.6, 79.4, STORMWIND_CITY },
+						{ 85, 10.2, UNDERCITY },
+					},
+					["maps"] = { ORGRIMMAR, IRONFORGE, STORMWIND_CITY, UNDERCITY },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
-				q(3527, { -- The Prophecy of Mosh'aru
+				q(3527, {	-- The Prophecy of Mosh'aru
 					["qg"] = 8579,	-- Yeh'kinya
 					["sourceQuest"] = 3520,	-- Screecher Spirits
 					["coord"] = { 67.0, 22.4, TANARIS },
 					["maps"] = { TANARIS },
 					["lvl"] = 40,
 				}),
-				q(2936, { -- The Spider God
+				q(2936, {	-- The Spider God
 					["qg"] = 3188,	-- Master Gadrin
 					["sourceQuest"] = 2935,	-- Consult Master Gadrin
 					["coord"] = { 56.0, 74.6, DUROTAR },
@@ -84,24 +97,28 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(2846, { -- Tiara of the Deep
+				q(2846, {	-- Tiara of the Deep
 					["provider"] = { "n", 6546 },	-- Tabetha
+					["sourceQuest"] = 2861,	-- Tabetha's Task
 					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH },
+					["cost"] = {
+						{ "i", 9234, 1 },	-- Tiara of the Deep
+					},
 					["lvl"] = 40,
 					["groups"] = {
 						i(9527),	-- Spellshifter Rod
 						i(9531),	-- Gemshale Pauldrons
 					},
 				}),
-				q(2864, { -- Tran'rek
+				q(2864, {	-- Tran'rek
 					["provider"] = { "n", 773 },	-- Krazek
 					["coord"] = { 51.6, 26.8, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
-				q(3042, { -- Troll Temper
+				q(3042, {	-- Troll Temper
 					["provider"] = { "n", 7804 },	-- Trenton Lighthammer <The Mithril Order>
 					["coord"] = { 51.4, 28.8, TANARIS },
 					["maps"] = { TANARIS },
