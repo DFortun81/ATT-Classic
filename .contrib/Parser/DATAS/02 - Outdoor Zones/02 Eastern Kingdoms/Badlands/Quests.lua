@@ -434,7 +434,7 @@ _.Zones =
 						{ 50.8, 5.6, IRONFORGE },
 						{ 53.7, 54.5, UNDERCITY },
 					},
-					["maps"] = { IRONFORGE, UNDERCITY },
+					["maps"] = { IRONFORGE, UNDERCITY, ALTERAC_MOUNTAINS, DUSTWALLOW_MARSH, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 4646, 1 },	-- Star of Xil'yeh
 					},

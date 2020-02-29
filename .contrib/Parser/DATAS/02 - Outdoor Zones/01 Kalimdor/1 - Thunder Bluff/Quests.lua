@@ -68,12 +68,6 @@ _.Zones =
 					},
 					["lvl"] = 13,
 				}),
-				q(1205, {	-- Deadmire
-					["qg"] = 3441,	-- Melor Stonehoof
-					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 35,
-				}),
 				q(1064, {	-- Forsaken Aid
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
