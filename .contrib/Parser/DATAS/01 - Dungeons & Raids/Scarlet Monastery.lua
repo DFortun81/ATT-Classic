@@ -21,6 +21,7 @@ _.Instances = {
 				}),
 				q(1053, {	-- In the Name of the Light
 					["qg"] = 3980,	-- Raleigh the Devout
+					["sourceQuest"] = 1052,	-- Down the Scarlet Path (2/2)
 					["coord"] = { 51.5, 58.4, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,

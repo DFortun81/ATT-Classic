@@ -19,9 +19,7 @@ _.Instances = {
 						{ 63.8, 10.6, DESOLACE },
 						{ 26.9, 77.7, DESOLACE },
 					},
-					["crs"] = {
-						12201,	-- Princess Theradras
-					},
+					["cr"] = 12201,	-- Princess Theradras
 					["lvl"] = 45,
 					["groups"] = {
 						i(17705), 	-- Thrash Blade
@@ -31,12 +29,12 @@ _.Instances = {
 				},
 				q(7046, {	-- Legends of Maraudon
 					["qg"] = 13697,	-- Cavindra
+					["coord"] = { 32.1, 64.0, DESOLACE },
+					["maps"] = { DESOLACE },
 					["cost"] = {
 						{ "i", 17703, 1 },	-- Celebrian Diamond
 						{ "i", 17702, 1 },	-- Celebrian Rod
 					},
-					["coord"] = { 32.1, 64.0, DESOLACE },
-					["maps"] = { DESOLACE },
 					["lvl"] = 41,
 				}),
 				q(7066, {	-- Seed of Life
@@ -76,10 +74,10 @@ _.Instances = {
 				},
 				q(7067, {	-- The Pariah's Instructions
 					["qg"] = 13717,	-- Centaur Pariah
+					["coord"] = { 50.5, 86.7, DESOLACE },
 					["cost"] = {
 						{ "i", 17758, 1 },	-- Amulet of Union
 					},
-					["coord"] = { 50.5, 86.7, DESOLACE },
 					["groups"] = {
 						{
 							["itemID"] = 17781,	-- The Pariah's Instructions
@@ -156,8 +154,8 @@ _.Instances = {
 					},
 				}),
 				q(7046, {	-- The Scepter of Celebras
-					["sourceQuest"] = 7046,	-- Legends of Maraudon
 					["qg"] = 13716,	-- Celebras the Redeemed
+					["sourceQuest"] = 7046,	-- Legends of Maraudon
 					["groups"] = {
 						{
 							["itemID"] = 17191,	-- Scepter of Celebras
@@ -167,11 +165,11 @@ _.Instances = {
 				}),
 				q(7028, {	-- Twisted Evils
 					["qg"] = 13656,	-- Willow <Twilight's Hammer>
+					["coord"] = { 62.2, 39.63, DESOLACE },
+					["maps"] = { DESOLACE },
 					["cost"] = {
 						{ "i", 17684, 15 },	-- Theradric Crystal Carving
 					},
-					["coord"] = { 62.2, 39.63, DESOLACE },
-					["maps"] = { DESOLACE },
 					["lvl"] = 41,
 					["groups"] = {
 						i(17776),	-- Sprightring Helm

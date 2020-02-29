@@ -87,21 +87,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(1431, {	-- Alliance Relations
-					["qg"] = 5639,	-- Craven Drok
-					["coord"] = { 52.4, 44.6, ORGRIMMAR },
-					["maps"] = { DESOLACE },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
-				q(1432, {	-- Alliance Relations
-					["qg"] = 5640,	-- Keldran
-					["sourceQuest"] = 1431,	-- Alliance Relations
-					["coord"] = { 22.4, 52.8, ORGRIMMAR },
-					["maps"] = { DESOLACE },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 30,
-				}),
 				q(8917,	{ -- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },

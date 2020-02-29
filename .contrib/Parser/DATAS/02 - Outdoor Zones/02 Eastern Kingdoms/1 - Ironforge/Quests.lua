@@ -687,11 +687,6 @@ _.Zones =
 					["maps"] = { LOCH_MODAN },
 					["sourceQuest"] = 301,	-- Report to Ironforge
 				}),
-				q(1453, {	-- Reclaimers' Business in Desolace
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5637,	-- Roetten Stonehammer
-				}),
 				q(6392, {	-- Return to Brock
 					["lvl"] = 10,
 					["races"] = {

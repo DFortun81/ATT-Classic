@@ -130,7 +130,6 @@ _.Zones =
 					["g"] = {
 						i(4953),	-- Trogg Brew
 					},
-					-- Quest name does not show! Maybe not part of phase 1?
 				}),
 				q(5159, {	-- Cleansed Water Returns to Felwood
 					["lvl"] = 48,
@@ -138,31 +137,40 @@ _.Zones =
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 				}),
 				q(1796, { -- Components for the Enchanted Gold Bloodrobe (1/5)
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 5770 } -- 	Robes of Arcana
+						{ "i", 5770, 1 },	-- Robes of Arcana
 					},
+					["lvl"] = 31,
 				}),
 				q(4781, { -- Components for the Enchanted Gold Bloodrobe (2/5)
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 1796, -- Components for the Enchanted Gold Bloodrobe (1/5)
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 3577 } -- Gold Bar
+						{ "i", 3577, 1 },	-- Gold Bar
 					},
+					["lvl"] = 31,
 				}),
 				q(4783, { -- Components for the Enchanted Gold Bloodrobe (4/5)
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 4782, -- Components for the Enchanted Gold Bloodrobe (3/5)
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["maps"] = { DESOLACE },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6989, 10 },	-- Vial of Hatefury Blood
+						{ "i", 6990, 1 },	-- Lesser Infernal Stone
+					},
+					["lvl"] = 31,
 				}),
 				q(4784, { -- Components for the Enchanted Gold Bloodrobe (5/5)
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 4783, -- Components for the Enchanted Gold Bloodrobe (4/5)
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -263,7 +271,7 @@ _.Zones =
 					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
 					["coord"] = { 57.23, 30.34, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 					["g"] = {
 						i(7326),	-- Thun'grim's Axe
@@ -273,9 +281,15 @@ _.Zones =
 					}
 				}),
 				q(1799, { -- Fragments of the Orb of Orahil
-					["lvl"] = 35,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["maps"] = { DESOLACE },
+					["classes"] = { WARLOCK },
+					["cr"] = 4668,	-- Burning Blade Summoner
+					["cost"] = {
+						{ "i", 7291, 1 },	-- 	Infernal Orb
+					},
+					["lvl"] = 35,
 				}),
 				q(898, {	-- Free From the Hold
 					["qg"] = 3465,	-- Gilthares Firebough
@@ -826,16 +840,18 @@ _.Zones =
 					},
 				}),
 				q(4964, { -- The Completed Orb of Dar'Orahil
-					["lvl"] = 35,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["lvl"] = 35,
 				}),
 				q(4786, { -- The Completed Robe
-					["lvl"] = 31,
-					["classes"] = { WARLOCK },
 					["qg"] = 6266, -- Menara Voidrender
 					["sourceQuest"] = 4784, -- Components for the Enchanted Gold Bloodrobe (5/5)
+					["coord"] = { 62.4, 35.4, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["lvl"] = 31,
 					["g"] = {
 						i(6900), -- Enchanted Gold Bloodrobe
 					},

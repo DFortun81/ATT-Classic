@@ -7,37 +7,34 @@ _.Instances = {
 		["lvl"] = 50,
 		["groups"] = {
 			n(QUESTS, {
-				{
-					["questID"] = 6601,	-- Ascension...
-					["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
+				q(6601, {	-- Ascension...
 					["qg"] = 10321,	-- Emberstrife
+					["sourceQuest"] = 6585,	-- The Test of Skulls, Axtroz
 					["coord"] = { 56.8, 87.4, DUSTWALLOW_MARSH },
-					["maps"] = { DUSTWALLOW_MARSH },
+					["maps"] = { DESOLACE, DUSTWALLOW_MARSH },
 					["cost"] = {
 						{ "i", 16888, 1 },	-- Dull Drakefire Amulet
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
-				},
-				{
-					["questID"] = 5001,	-- Bijou's Belongings (A)
+				}),
+				q(5001, {	-- Bijou's Belongings (A)
 					["qg"] = 10257,	-- Bijou
-					["cost"] = {
-						{ "i", 12345, 1 },	-- Bijou's Belongings
-					},
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 55,
-				},
-				{
-					["questID"] = 4982,	-- Bijou's Belongings (H)
-					["sourceQuest"] = 4981,	-- Operative Bijou
-					["qg"] = 10257,	-- Bijou
 					["cost"] = {
 						{ "i", 12345, 1 },	-- Bijou's Belongings
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
-				},
+				}),
+				q(4982, {	-- Bijou's Belongings (H)
+					["qg"] = 10257,	-- Bijou
+					["sourceQuest"] = 4981,	-- Operative Bijou
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12345, 1 },	-- Bijou's Belongings
+					},
+					["lvl"] = 55,
+				}),
 				{
 					["questID"] = 4983,	-- Bijou's Reconnaissance Report
 					["sourceQuest"] = 4982,	-- Bijou's Belongings (H)
@@ -80,10 +77,10 @@ _.Instances = {
 						{ 42.4, 96.8, DESOLACE },
 					},
 					["maps"] = { DESOLACE },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 16663, 1 },	-- Blood of the Black Dragon Champion
 					},
-					["races"] = HORDE_ONLY,
 					["lvl"] = 55,
 					["groups"] = {
 						{

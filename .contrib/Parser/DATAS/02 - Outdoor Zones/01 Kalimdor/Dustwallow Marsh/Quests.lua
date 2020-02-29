@@ -371,6 +371,18 @@ _.Zones =
 					["qg"] = 4944,	-- Captain Garran Vimes
 					["coord"] = { 68.2, 48.6, DUSTWALLOW_MARSH },
 				}),
+				q(1954, { -- The Infernal Orb
+					["qg"] = 6546, -- Tabetha
+					["sourceQuest"] = 1953,	-- Return to the Marsh
+					["coord"] = { 46.0, 57.0, DUSTWALLOW_MARSH },
+					["maps"] = { DESOLACE },
+					["classes"] = { MAGE },
+					["cr"] = 4668,	-- Burning Blade Summoner
+					["cost"] = {
+						{ "i", 7291, 1 },	-- 	Infernal Orb
+					},
+					["lvl"] = 35,
+				}),
 				q(1238, {	-- The Lost Report
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,

@@ -60,7 +60,11 @@ _.Zones =
 				q(5361, {	-- Family Tree
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["coord"] = { 45.65, 50.80, THOUSAND_NEEDLES },
+					["maps"] = { DESOLACE },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13507, 1 },	-- Cliffwatcher Longhorn Report
+					},
 					["lvl"] = 32,
 				}),
 				q(1394, {	-- Final Passage
