@@ -153,7 +153,7 @@ _.Zones =
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 4 },	-- Rogue
 				}),
 				q(37, {	-- Find the Lost Guards
@@ -187,7 +187,7 @@ _.Zones =
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 8 },	-- Mage
 				}),
 				q(47, {	-- Gold Dust Exchange
@@ -440,7 +440,7 @@ _.Zones =
 				q(3100, {	-- Simple Letter
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 1 },	-- Warrior
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
@@ -505,7 +505,7 @@ _.Zones =
 						3681,	-- The Tome of Divinity
 						1787,	-- The Tome of Divinity (8)
 					},
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 12,
 				}),
@@ -522,7 +522,7 @@ _.Zones =
 				}),
 				q(1598, {	-- The Stolen Tome
 					["qg"] = 459,	-- Drusilla La Salle
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 9 },	-- Warlock
 				}),
 				q(7962, {	-- Wabbit Pelts

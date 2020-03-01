@@ -868,7 +868,7 @@ _.Zones =
 						2998, 	-- The Tome of Divinity
 						1787,	-- The Tome of Divinity (8)
 					},
-					["races"] = { 1 },	-- Human
+					["races"] = { HUMAN },
 					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 12,
 				}),
