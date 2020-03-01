@@ -271,7 +271,7 @@ _.Instances = {
 					["cr"] = 14516,	-- Death Knight Darkreaver
 					["coord"] = { 38.7, 35.9, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
-					["classes"] = { 7 },	-- Shaman Only!
+					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 18880, 1 },	-- Darkreaver's Head
@@ -556,7 +556,7 @@ _.Instances = {
 					{
 						["itemID"] = 18880,	-- Charger's Redeemed Soul
 						["questID"] = 8258,	-- The Darkreaver Menace
-						["classes"] = { 7 },	-- Shaman Only
+						["classes"] = { SHAMAN },
 						["u"] = 3,	-- Not available yet.
 						["races"] = HORDE_ONLY,
 					},

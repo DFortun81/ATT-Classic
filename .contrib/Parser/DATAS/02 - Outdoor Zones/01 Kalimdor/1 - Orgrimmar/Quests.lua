@@ -159,7 +159,7 @@ _.Zones =
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -395,7 +395,7 @@ _.Zones =
 					["qg"] = 5892,	-- Searn Firewarder
 					["coord"] = { 38.0, 37.8, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["lvl"] = 50,
 					["cost"] = {
 						{ "i", 7067, 1 },	-- Elemental Earth

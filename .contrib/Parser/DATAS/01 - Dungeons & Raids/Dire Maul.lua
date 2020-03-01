@@ -140,7 +140,7 @@ _.Instances = {
 				}),
 				q(7505, {	-- Frost Shock and You
 					["qg"] = 14381,	-- Lorekeeper Javon
-					["classes"] = { 7 },	-- Shaman
+					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 18363, 1 },	-- Frost Shock and You
 					},
@@ -492,7 +492,7 @@ _.Instances = {
 					{
 						["itemID"] = 18363,	-- Frost Shock and You
 						["questID"] = 7505,	-- Frost Shock and You
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 					},
 					{
 						["itemID"] = 18356,	-- Garona: A Study on Stealth and Treachery
@@ -648,7 +648,7 @@ _.Instances = {
 							},
 							{
 								["itemID"] = 22345,	-- Totem of Rebirth
-								["classes"] = { 7 },	-- Shaman
+								["classes"] = { SHAMAN },
 							},
 						},
 					}),

@@ -265,7 +265,7 @@ _.Instances = {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
@@ -375,7 +375,7 @@ _.Instances = {
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
@@ -449,7 +449,7 @@ _.Instances = {
 						q(8698, {	-- Ring of the Gathering Storm
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21399),	-- Ring of the Gathering Storm
 							},
@@ -559,7 +559,7 @@ _.Instances = {
 						q(8690, {	-- Cloak of the Gathering Storm
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 7 },	-- Shaman
+							["classes"] = { SHAMAN },
 							["groups"] = {
 								i(21400),	-- Cloak of the Gathering Storm
 							},
@@ -663,7 +663,7 @@ _.Instances = {
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
@@ -689,7 +689,7 @@ _.Instances = {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
@@ -799,7 +799,7 @@ _.Instances = {
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
@@ -927,7 +927,7 @@ _.Instances = {
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
@@ -953,7 +953,7 @@ _.Instances = {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
@@ -1063,7 +1063,7 @@ _.Instances = {
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21400),	-- Cloak of the Gathering Storm
 						},
@@ -1174,7 +1174,7 @@ _.Instances = {
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
@@ -1200,7 +1200,7 @@ _.Instances = {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
@@ -1341,7 +1341,7 @@ _.Instances = {
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21398),	-- Hammer of the Gathering Storm
 						},
@@ -1367,7 +1367,7 @@ _.Instances = {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 7 },	-- Shaman
+						["classes"] = { SHAMAN },
 						["groups"] = {
 							i(21399),	-- Ring of the Gathering Storm
 						},
