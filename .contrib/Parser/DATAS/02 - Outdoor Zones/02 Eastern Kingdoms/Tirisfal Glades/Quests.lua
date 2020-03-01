@@ -193,7 +193,7 @@ _.Zones =
 				q(5650, {	-- Garments of Darkness
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
 					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 5,
 				}),
@@ -236,7 +236,7 @@ _.Zones =
 				q(5651, {	-- In Favor of Darkness
 					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 					["coord"] = { 31.1, 66.0, TIRISFAL_GLADES },
-					["races"] = { 5 },	-- Undead
+					["races"] = { UNDEAD },
 					["classes"] = { 5 },	-- Priest
 					["lvl"] = 5,
 				}),
