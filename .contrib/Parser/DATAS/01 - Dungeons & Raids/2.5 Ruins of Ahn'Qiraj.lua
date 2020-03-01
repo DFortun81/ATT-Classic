@@ -249,7 +249,7 @@ _.Instances = {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
@@ -325,7 +325,7 @@ _.Instances = {
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
@@ -433,7 +433,7 @@ _.Instances = {
 						q(8556, {	-- Signet of Unyielding Strength
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 1 },	-- Warrior
+							["classes"] = { WARRIOR },
 							["groups"] = {
 								i(21393),	-- Signet of Unyielding Strength
 							},
@@ -509,7 +509,7 @@ _.Instances = {
 						q(8557, {	-- Drape of Unyielding Strength
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 1 },	-- Warrior
+							["classes"] = { WARRIOR },
 							["groups"] = {
 								i(21394),	-- Drape of Unyielding Strength
 							},
@@ -631,7 +631,7 @@ _.Instances = {
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
@@ -673,7 +673,7 @@ _.Instances = {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
@@ -749,7 +749,7 @@ _.Instances = {
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
@@ -895,7 +895,7 @@ _.Instances = {
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
@@ -937,7 +937,7 @@ _.Instances = {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
@@ -1013,7 +1013,7 @@ _.Instances = {
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21394),	-- Drape of Unyielding Strength
 						},
@@ -1142,7 +1142,7 @@ _.Instances = {
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
@@ -1184,7 +1184,7 @@ _.Instances = {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},
@@ -1309,7 +1309,7 @@ _.Instances = {
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21392),	-- Sickle of Unyielding Strength
 						},
@@ -1351,7 +1351,7 @@ _.Instances = {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 						["groups"] = {
 							i(21393),	-- Signet of Unyielding Strength
 						},

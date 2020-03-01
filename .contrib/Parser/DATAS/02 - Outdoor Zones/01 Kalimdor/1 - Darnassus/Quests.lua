@@ -60,7 +60,7 @@ _.Zones =
 					["qg"] = 7315,	-- Darnath Bladesinger <Warrior Trainer>
 					["coord"] = { 58.6, 35.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				{
@@ -179,7 +179,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4088,	-- Elanaria
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["cost"] = { 
 						{ "i", 6812, 1 },	-- Case of Elunite
@@ -188,14 +188,14 @@ _.Zones =
 				q(1710, {	-- Klockmort's Creation
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1703,	-- Mathiel
 				}),
 				q(1711, {	-- Mathiel's Armor
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1710,	-- Sunscorched Shells
 					["groups"] = {
@@ -361,7 +361,7 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 4088,	-- Elanaria
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 6805, 1 } -- Horn of Vorlus
 					},
@@ -369,7 +369,7 @@ _.Zones =
 				q(1693, {	-- Weapons of Elunite
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1692,	-- Smith Mathiel
 					["g"] = {

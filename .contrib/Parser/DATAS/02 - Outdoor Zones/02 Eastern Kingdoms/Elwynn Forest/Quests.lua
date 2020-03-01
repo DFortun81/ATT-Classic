@@ -104,7 +104,7 @@ _.Zones =
 				q(1667, {	-- Dead-tooth Jack
 					["qg"] = 294,	-- Marshal Haggard
 					["sourceQuest"] = 1666,	-- Marshal Haggard
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 					["groups"] = {
@@ -441,7 +441,7 @@ _.Zones =
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["races"] = { HUMAN },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
 					["qg"] = 197,	-- Marshal McBride

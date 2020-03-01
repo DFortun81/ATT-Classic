@@ -46,7 +46,7 @@ _.Zones =
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 1791,	-- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 6929, 1 },	-- Bath'rah's Parchment
 						{ "i", 3357, 8 },	-- Liferoot
@@ -89,7 +89,7 @@ _.Zones =
 					["sourceQuest"] = 1791,	-- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ARATHI_HIGHLANDS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["altQuests"] = {
 						1712,	-- Cyclonian
 					},
@@ -203,7 +203,7 @@ _.Zones =
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 1712,	-- Cyclonian
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 6894, 1 },	-- Whirlwind Heart
 					},
@@ -232,7 +232,7 @@ _.Zones =
 				q(1792, {	-- Whirlwind Weapon
 					["qg"] = 6176,	-- Bath'rah the Windwatcher
 					["sourceQuest"] = 1713,	-- The Summoning
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 30,
 					["groups"] = {
 						i(6975),	-- Whirlwind Axe

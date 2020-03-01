@@ -55,7 +55,7 @@ _.Zones =
 					["qg"] = 3041,	-- Torm Ragetotem <Warrior Trainer>
 					["coord"] = { 57.6, 87.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(1066, {	-- Blood of Innocents

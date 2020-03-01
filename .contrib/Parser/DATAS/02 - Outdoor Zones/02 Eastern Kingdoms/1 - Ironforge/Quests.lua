@@ -197,7 +197,7 @@ _.Zones =
 						{ "i", 16735, 1 },	-- Bracers of Valor
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -413,7 +413,7 @@ _.Zones =
 					["qg"] = 5113,	-- Kelv Sternhammer <Warrior Trainer>
 					["coord"] = { 70.6, 90.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(3201, {	-- At Last!
@@ -454,7 +454,7 @@ _.Zones =
 				q(1682, {	-- Grey Iron Weapons
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1681,	-- Ironband's Compound
 					["g"] = {
@@ -507,7 +507,7 @@ _.Zones =
 				q(1708, {	-- Iron Coral
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
 				}),
@@ -521,7 +521,7 @@ _.Zones =
 				q(1681, {	-- Ironband's Compound
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1680,	-- Vejrek
 				}),
@@ -616,7 +616,7 @@ _.Zones =
 				q(1709, {	-- Klockmort's Creation
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6169,	-- Klockmort Spannerspan
 					["sourceQuest"] = 1708,	-- Iron Coral
 					["groups"] = {
@@ -907,7 +907,7 @@ _.Zones =
 				q(1678, {	-- Vejrek
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6114,	-- Muren Stormpike
 				}),
 			}),

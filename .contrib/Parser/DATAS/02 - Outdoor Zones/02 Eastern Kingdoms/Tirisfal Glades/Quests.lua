@@ -85,7 +85,7 @@ _.Zones =
 					["sourceQuest"] = 1820,	-- Speak with Coleman
 					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
 				q(371, {	-- At War With The Scarlet Crusade
@@ -351,7 +351,7 @@ _.Zones =
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
 				q(1818, {	-- Speak with Dillinger
@@ -360,7 +360,7 @@ _.Zones =
 					["coord"] = { 61.84, 52.53, TIRISFAL_GLADES },
 					["description"] = "This quest becomes unavailable after completing \"Path of Defense\" in the Barrens.",
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
 				q(355, {	-- Speak with Sevren
@@ -545,7 +545,7 @@ _.Zones =
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["description"] = "Completing this quest prevents you from accepting \"Veteran Uzzek\" and \"Path of Defense\" in the Barrens.\n\nThis quest becomes unavailable after completing \"Path of Defense\" in the Barrens.",
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
 				q(383, {	-- Vital Intelligence

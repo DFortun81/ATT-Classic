@@ -56,7 +56,7 @@ _.Zones =
 					["qg"] = 4593,	-- Christoph Walker <Warrior Trainer>
 					["coord"] = { 47.8, 14.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(8233, {	-- A Simple Request

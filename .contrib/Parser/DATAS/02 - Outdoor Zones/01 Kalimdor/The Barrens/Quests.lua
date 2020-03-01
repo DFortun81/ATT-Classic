@@ -995,7 +995,7 @@ _.Zones =
 				}),
 				q(1719, {	-- The Affray
 					["lvl"] = 30,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6236,	-- Klannoc Macleod
 					["sourceQuest"] = 1718,	-- The Islander
 				}),
@@ -1124,7 +1124,7 @@ _.Zones =
 				}),
 				q(1718, {	-- The Islander
 					["lvl"] = 30,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qgs"] = {
 						3041,	-- Torm Ragetotem
 						3354,	-- Sorek
@@ -1203,7 +1203,7 @@ _.Zones =
 				}),
 				q(1791, {	-- The Windwatcher
 					["lvl"] = 30,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6236,	-- Klannoc Macleod
 					["sourceQuest"] = 1719,	-- The Affray
 					["isBreadcrumb"] = true,

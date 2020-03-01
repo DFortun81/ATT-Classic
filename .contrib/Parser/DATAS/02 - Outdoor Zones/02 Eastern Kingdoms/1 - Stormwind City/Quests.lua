@@ -125,7 +125,7 @@ _.Zones =
 				q(1639, {	-- Bartleby the Drunk
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6089,	-- Harry Burlguard
 				}),
 				q(1665, {	-- Bartleby's Mug
@@ -147,7 +147,7 @@ _.Zones =
 				q(1640, {	-- Beat Bartleby
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6090,	-- Bartleby
 					["sourceQuest"] = 1639,	-- Bartleby the Drunk
 				}),
@@ -247,14 +247,14 @@ _.Zones =
 				q(1700, {	-- Grimand Elmore
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["qg"] = 5413,	-- Furen Longbeard
 				}),
 				q(1706, {	-- Grimand's Armor
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["sourceQuest"] = 1705,	-- Burning Blood
 					["qg"] = 1416,	-- Grimand Elmore
 					["g"] = {
@@ -352,7 +352,7 @@ _.Zones =
 				q(1666, {	-- Marshal Haggard
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 6089,	-- Harry Burlguard
 					["sourceQuest"] = 1665,	-- Bartleby's Mug
 				}),

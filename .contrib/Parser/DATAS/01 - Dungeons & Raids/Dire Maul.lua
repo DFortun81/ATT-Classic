@@ -73,7 +73,7 @@ _.Instances = {
 					["lvl"] = 54,
 				}),
 				q(7499, {	-- Codex of Defense
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["qg"] = 14383,	-- Lorekeeper Kildrath
 					["cost"] = {
 						{ "i", 18357, 1 },	-- Codex of Defense
@@ -477,7 +477,7 @@ _.Instances = {
 					{
 						["itemID"] = 18357,	-- Codex of Defense
 						["questID"] = 7499,	-- Codex of Defense
-						["classes"] = { 1 },	-- Warrior
+						["classes"] = { WARRIOR },
 					},
 					{
 						["itemID"] = 18360,	-- Harnessing Shadows

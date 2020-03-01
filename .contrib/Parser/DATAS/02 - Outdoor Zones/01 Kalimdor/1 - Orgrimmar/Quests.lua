@@ -143,7 +143,7 @@ _.Zones =
 						{ "i", 16735, 1 },	-- Bracers of Valor
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -315,7 +315,7 @@ _.Zones =
 					["qg"] = 3354,	-- Sorek <Warrior Trainer>
 					["coord"] = { 80.2, 32.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(8998, {	-- Back to the Beginning

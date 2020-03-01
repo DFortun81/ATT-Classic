@@ -270,14 +270,14 @@ _.Zones =
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8423,	-- Warrior Kinship
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 				q(8423, {	-- Warrior Kinship
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 8417,	-- A Troubled Spirit
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
-					["classes"] = { 1 },	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
 			}),
