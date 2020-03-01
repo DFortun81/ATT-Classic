@@ -848,8 +848,8 @@ _.Zones =
 				q(6074, {	-- The Hunter's Path
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70, 84.6, IRONFORGE },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6075,	-- The Hunter's Path

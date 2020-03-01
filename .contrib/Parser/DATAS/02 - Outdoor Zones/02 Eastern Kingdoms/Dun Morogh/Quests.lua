@@ -81,14 +81,14 @@ _.Zones =
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3109, {	-- Encrypted Rune
-					["races"] = { 3 },	-- Dwarf Only
+					["races"] = { DWARF },
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3108, {	-- Etched Rune
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter
+					["races"] = { DWARF },
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
@@ -260,32 +260,32 @@ _.Zones =
 						6076,	-- The Hunter's Path
 					},
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["lvl"] = 10,
 				}),
 				q(6084, {	-- Taming the Beast
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6064,  -- Taming the Beast
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["lvl"] = 10,
 				}),
 				q(6085, {	-- Taming the Beast
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6084,  -- Taming the Beast
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["lvl"] = 10,
 				}),
 				q(6085, {	-- Taming the Beast
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6085,  -- Taming the Beast
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(883),	-- Call Pet
@@ -312,8 +312,8 @@ _.Zones =
 				q(6075, {	-- The Hunter's Path
 					["qg"] = 11807,	-- Tristane Shadowstone
 					["coord"] = { 30.6, 45.4, DUN_MOROGH },
-					["races"] = { 3 },	-- Dwarf Only
 					["classes"] = { 3 },	-- Hunter Only
+					["races"] = { DWARF },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6074,	-- The Hunter's Path
