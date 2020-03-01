@@ -88,17 +88,17 @@ _.Zones =
 						3762, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
-				q(1473, { -- Creature of the Void
+				q(1473, {	-- Creature of the Void
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5675, -- Carendin Halgar
+					["qg"] = 5675,	-- Carendin Halgar
 				}),
-				q(1472, { -- Devourer of Souls
+				q(1472, {	-- Devourer of Souls
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["qg"] = 5675, -- Carendin Halgar
+					["qg"] = 5675,	-- Carendin Halgar
 					["description"] = "Completing this quest (1472) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1507).",
 				}),
 				q(232, {	-- Errand for Apothecary Zinge
@@ -114,8 +114,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(1998, { -- Fenwick Thatros
-					["qg"] = 6467, -- Mennet Carkad
+				q(1998, {	-- Fenwick Thatros
+					["qg"] = 6467,	-- Mennet Carkad
 					["coord"] = { 83.6, 67.6, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
@@ -133,8 +133,8 @@ _.Zones =
 						},
 					},
 				}),
-				q(2378, { -- Find the Shattered Hand
-					["qg"] = 6467, -- Mennet Carkad
+				q(2378, {	-- Find the Shattered Hand
+					["qg"] = 6467,	-- Mennet Carkad
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
@@ -153,21 +153,21 @@ _.Zones =
 					},
 					["lvl"] = 15,
 				}),
-				q(1476, { -- Hearts of the Pure
+				q(1476, {	-- Hearts of the Pure
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5693, -- Godrick Farsan
+					["qg"] = 5693,	-- Godrick Farsan
 					["cost"] = {
-						{ "i", 6312 }, -- Dalin's Heart
-						{ "i", 6313 }, -- Comar's Heart
+						{ "i", 6312 },	-- Dalin's Heart
+						{ "i", 6313 },	-- Comar's Heart
 					},
 				}),
-				q(4739, { -- In Search of Menara Voidrender
+				q(4739, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 4563, -- Kaal Soulreaper
+					["qg"] = 4563,	-- Kaal Soulreaper
 				}),
 				q(243, {	-- Into the Field
 					["qg"] = 5204,	-- Apothecary Zinge
@@ -219,7 +219,7 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(7562, { -- Mor'zul Bloodbringer
+				q(7562, {	-- Mor'zul Bloodbringer
 					["qg"] = 5753,	-- Martha Strain <Demon Trainer>
 					["coord"] = { 85.8, 15.8, UNDERCITY },
 					["classes"] = { WARLOCK },
@@ -267,11 +267,11 @@ _.Zones =
 						i(10638),	-- Long Draping Cape
 					},
 				}),
-				q(3001, { -- Seeking Strahad
+				q(3001, {	-- Seeking Strahad
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5675, -- Carendin Halgar
+					["qg"] = 5675,	-- Carendin Halgar
 					["isBreadcrumb"] = true,
 				}),
 				q(3570, {	-- Seeping Corruption
@@ -286,11 +286,11 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
 				}),
-				q(4489, { -- Summon Felsteed
+				q(4489, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 4563, -- Kaal Soulreaper
+					["qg"] = 4563,	-- Kaal Soulreaper
 				}),
 				q(4661, {	-- Testing for Corruption - Felwood
 					["lvl"] = 48,
@@ -310,18 +310,18 @@ _.Zones =
 						i(15102),	-- Un'Goro Tested Sample
 					},
 				}),
-				q(1471, { -- The Binding (Voidwalker)
+				q(1471, {	-- The Binding (Voidwalker)
 					["lvl"] = 10,
 					["races"] = { UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5675, -- Carendin Halgar
+					["qg"] = 5675,	-- Carendin Halgar
 				}),
-				q(1474, { -- The Binding (Succubus)
+				q(1474, {	-- The Binding (Succubus)
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARLOCK },
-					["qg"] = 5675, -- Carendin Halgar
-					["sourceQuest"] = 1476, -- Hearts of the Pure
+					["qg"] = 5675,	-- Carendin Halgar
+					["sourceQuest"] = 1476,	-- Hearts of the Pure
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["lvl"] = 54,
@@ -406,16 +406,16 @@ _.Zones =
 						i(2032),	-- Gallan Cuffs
 					},
 				}),
-				q(1999, { -- Tools of the Trade
+				q(1999, {	-- Tools of the Trade
 					["lvl"] = 16,
-					["qg"] = 6467, -- Mennet Carkad
+					["qg"] = 6467,	-- Mennet Carkad
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
-					["sourceQuest"] = 1998, -- Fenwick Thatros
+					["sourceQuest"] = 1998,	-- Fenwick Thatros
 				}),
-				q(1803, { -- Tome of the Cabal (2/3 Horde)
-					["qg"] = 6293, -- Jorah Annison
-					["sourceQuest"] = 1801, -- Tome of the Cabal (1/3 Horde)
+				q(1803, {	-- Tome of the Cabal (2/3 Horde)
+					["qg"] = 6293,	-- Jorah Annison
+					["sourceQuest"] = 1801,	-- Tome of the Cabal (1/3 Horde)
 					["coord"] = { 76.6, 36.8, UNDERCITY },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -425,9 +425,9 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
-				q(1805, { -- Tome of the Cabal (3/3 Horde)
-					["qg"] = 6293, -- Jorah Annison
-					["sourceQuest"] = 1803, -- Tome of the Cabal (2/3 Horde)
+				q(1805, {	-- Tome of the Cabal (3/3 Horde)
+					["qg"] = 6293,	-- Jorah Annison
+					["sourceQuest"] = 1803,	-- Tome of the Cabal (2/3 Horde)
 					["coord"] = { 76.6, 36.8, UNDERCITY },
 					["maps"] = { WETLANDS },
 					["races"] = { ORC, UNDEAD },

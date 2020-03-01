@@ -8,7 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				q(1025, {	-- An Aggressive Defense
 					["qg"] = 3691,	-- Raene Wolfrunner
-					["sourceQuest"] = 1023, -- Raene's Cleansing (2)
+					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
 					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,

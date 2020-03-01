@@ -252,8 +252,8 @@ _.Zones =
 					["qg"] = 5901,	-- Islen Waterseer
 					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
 				}),
-				q(1796, { -- Components for the Enchanted Gold Bloodrobe (1/5)
-					["qg"] = 6266, -- Menara Voidrender
+				q(1796, {	-- Components for the Enchanted Gold Bloodrobe (1/5)
+					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -261,9 +261,9 @@ _.Zones =
 					},
 					["lvl"] = 31,
 				}),
-				q(4781, { -- Components for the Enchanted Gold Bloodrobe (2/5)
-					["qg"] = 6266, -- Menara Voidrender
-					["sourceQuest"] = 1796, -- Components for the Enchanted Gold Bloodrobe (1/5)
+				q(4781, {	-- Components for the Enchanted Gold Bloodrobe (2/5)
+					["qg"] = 6266,	-- Menara Voidrender
+					["sourceQuest"] = 1796,	-- Components for the Enchanted Gold Bloodrobe (1/5)
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -271,9 +271,9 @@ _.Zones =
 					},
 					["lvl"] = 31,
 				}),
-				q(4783, { -- Components for the Enchanted Gold Bloodrobe (4/5)
-					["qg"] = 6266, -- Menara Voidrender
-					["sourceQuest"] = 4782, -- Components for the Enchanted Gold Bloodrobe (3/5)
+				q(4783, {	-- Components for the Enchanted Gold Bloodrobe (4/5)
+					["qg"] = 6266,	-- Menara Voidrender
+					["sourceQuest"] = 4782,	-- Components for the Enchanted Gold Bloodrobe (3/5)
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["maps"] = { DESOLACE },
 					["classes"] = { WARLOCK },
@@ -283,9 +283,9 @@ _.Zones =
 					},
 					["lvl"] = 31,
 				}),
-				q(4784, { -- Components for the Enchanted Gold Bloodrobe (5/5)
-					["qg"] = 6266, -- Menara Voidrender
-					["sourceQuest"] = 4783, -- Components for the Enchanted Gold Bloodrobe (4/5)
+				q(4784, {	-- Components for the Enchanted Gold Bloodrobe (5/5)
+					["qg"] = 6266,	-- Menara Voidrender
+					["sourceQuest"] = 4783,	-- Components for the Enchanted Gold Bloodrobe (4/5)
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["maps"] = { ARATHI_HIGHLANDS },
 					["classes"] = { WARLOCK },
@@ -340,12 +340,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
-				q(1515, { -- Dogran's Captivity
+				q(1515, {	-- Dogran's Captivity
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5911, -- Grunt Logmar
-					["sourceQuest"] = 1511, -- Ken'zigla's Draught
+					["qg"] = 5911,	-- Grunt Logmar
+					["sourceQuest"] = 1511,	-- Ken'zigla's Draught
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
@@ -398,7 +398,7 @@ _.Zones =
 						},
 					},
 				}),
-				q(1503, { -- Forged Steel
+				q(1503, {	-- Forged Steel
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1502,	-- Thun'grim Firegaze
 					["coord"] = { 57.23, 30.34, THE_BARRENS },
@@ -420,8 +420,8 @@ _.Zones =
 						i(7329),	-- Thun'grim's Sword
 					}
 				}),
-				q(1799, { -- Fragments of the Orb of Orahil
-					["qg"] = 6266, -- Menara Voidrender
+				q(1799, {	-- Fragments of the Orb of Orahil
+					["qg"] = 6266,	-- Menara Voidrender
 					["sourceQuests"] = {
 						4965,	-- Knowledge of the Orb of Orahil [Ironforge]
 						4967,	-- Knowledge of the Orb of Orahil [Orgrimmar]
@@ -558,7 +558,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(4965, {	-- Knowledge of the Orb of Orahil
-					["qg"] = 5172, -- Briarthorn
+					["qg"] = 5172,	-- Briarthorn
 					["coord"] = { 50.2, 6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -567,7 +567,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(4968, {	-- Knowledge of the Orb of Orahil
-					["qg"] = 461, -- Demisette Cloyce
+					["qg"] = 461,	-- Demisette Cloyce
 					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -576,7 +576,7 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(4969, {	-- Knowledge of the Orb of Orahil
-					["qg"] = 4563, -- Kaal Soulreaper
+					["qg"] = 4563,	-- Kaal Soulreaper
 					["coord"] = { 86, 15.6, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -609,12 +609,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
-				q(1512, { -- Love's Gift
+				q(1512, {	-- Love's Gift
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5908, -- Grunt Dogran
-					["sourceQuest"] = 1515, -- Dogran's Captivity
+					["qg"] = 5908,	-- Grunt Dogran
+					["sourceQuest"] = 1515,	-- Dogran's Captivity
 				}),
 				q(874, {	-- Mahren Skyseer
 					["qg"] = 3387,	-- Jorn Skyseer
@@ -648,14 +648,14 @@ _.Zones =
 						i(5335),	-- A Sack of Coins
 					},
 				}),
-				q(2478, { -- Mission: Possible But Not Probable
+				q(2478, {	-- Mission: Possible But Not Probable
 					["lvl"] = 20,
-					["qg"] = 7233, -- Taskmaster Fizzule
+					["qg"] = 7233,	-- Taskmaster Fizzule
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
-					["sourceQuest"] = 2458, -- Deep Cover
+					["sourceQuest"] = 2458,	-- Deep Cover
 					["g"] = {
-						i(18160), -- Recipe: Thistle Tea
+						i(18160),	-- Recipe: Thistle Tea
 					}
 				}),
 				q(3301, {	-- Mura Runetotem
@@ -669,12 +669,12 @@ _.Zones =
 						i(10821),	-- Sower's Cloak
 					},
 				}),
-				q(1510, { -- News of Dogran (2/2)
+				q(1510, {	-- News of Dogran (2/2)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 3464, -- Gazrog
-					["sourceQuest"] = 1509, -- News of Dogran (1/2)
+					["qg"] = 3464,	-- Gazrog
+					["sourceQuest"] = 1509,	-- News of Dogran (1/2)
 				}),
 				q(3922, {	-- Nugget Slugs
 					["qg"] = 9316,	-- Wenikee Boltbucket
@@ -720,8 +720,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(2381, { -- Plundering the Plunderers
-					["qg"] = 7161, -- Wrenix the Wretched
+				q(2381, {	-- Plundering the Plunderers
+					["qg"] = 7161,	-- Wrenix the Wretched
 					["sourceQuest"] = 2382,	-- Wrenix of Ratchet
 					["coord"] = { 63, 36.4, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -890,11 +890,11 @@ _.Zones =
 						i(11148),	-- Samophlange Manual Page
 					},
 				}),
-				q(1685, { -- Seeking Strahad
+				q(1685, {	-- Seeking Strahad
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY, 
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 6122, -- Gakin the Darkbinder
+					["qg"] = 6122,	-- Gakin the Darkbinder
 					["maps"] = { STORMWIND_CITY },
 				}),
 				q(876, {	-- Serena Bloodfeather
@@ -909,10 +909,10 @@ _.Zones =
 						i(5318),	-- Zhovur Axe
 					},
 				}),
-				q(4962, { -- Shard of a Felhound
+				q(4962, {	-- Shard of a Felhound
 					["lvl"] = 35,
 					["classes"] = { WARLOCK },
-					["qg"] = 6254, -- Acolyte Wytula
+					["qg"] = 6254,	-- Acolyte Wytula
 				}),
 				q(887, {	-- Southsea Freebooters
 					["qg"] = 3391,	-- Gazlowe
@@ -972,16 +972,16 @@ _.Zones =
 						i(2694),	-- Settler's Leggings
 					},
 				}),
-				q(4488, { -- Summon Felsteed
+				q(4488, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["qg"] = 6251, -- Strahad Farsan
+					["qg"] = 6251,	-- Strahad Farsan
 				}),
-				q(4490, { -- Summon Felsteed
+				q(4490, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["classes"] = { WARLOCK },
-					["qg"] = 6251, -- Strahad Farsan
+					["qg"] = 6251,	-- Strahad Farsan
 				}),
 				q(5041, {	-- Supplies for the Crossroads
 					["qg"] = 3429,	-- Thork
@@ -998,11 +998,11 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(1719, { -- The Affray
+				q(1719, {	-- The Affray
 					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6236, -- Klannoc Macleod
-					["sourceQuest"] = 1718, -- The Islander
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6236,	-- Klannoc Macleod
+					["sourceQuest"] = 1718,	-- The Islander
 				}),
 				q(905, {	-- The Angry Scytheclaws
 					["qg"] = 3338,	-- Sergra Darkthorn
@@ -1031,8 +1031,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(1795, { -- The Binding (Felhunter)
-					["qg"] = 6251, -- Strahad Farsan
+				q(1795, {	-- The Binding (Felhunter)
+					["qg"] = 6251,	-- Strahad Farsan
 					["sourceQuests"] = {
 						1804,	-- Tome of the Cabal (3/3 Alliance)
 						1805,	-- Tome of the Cabal (3/3 Horde)
@@ -1045,13 +1045,13 @@ _.Zones =
 					["lvl"] = 30,
 					["g"] = {
 						recipe(691),	-- Summon Felhunter
-						i(22244), -- Box of Souls
+						i(22244),	-- Box of Souls
 					},
 				}),
-				q(4964, { -- The Completed Orb of Dar'Orahil
-					["qg"] = 6266, -- Menara Voidrender
+				q(4964, {	-- The Completed Orb of Dar'Orahil
+					["qg"] = 6266,	-- Menara Voidrender
 					["altQuests"] = { 4975 },	-- The Completed Orb of Noh'Orahil
-					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
+					["sourceQuest"] = 4976,	-- Returning the Cleansed Orb
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -1060,10 +1060,10 @@ _.Zones =
 						i(15106),	-- Staff of Dar'Orahil
 					},
 				}),
-				q(4975, { -- The Completed Orb of Noh'Orahil
-					["qg"] = 6266, -- Menara Voidrender
+				q(4975, {	-- The Completed Orb of Noh'Orahil
+					["qg"] = 6266,	-- Menara Voidrender
 					["altQuests"] = { 4964 },	-- The Completed Orb of Dar'Orahil
-					["sourceQuest"] = 4976, -- Returning the Cleansed Orb
+					["sourceQuest"] = 4976,	-- Returning the Cleansed Orb
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 35,
@@ -1072,14 +1072,14 @@ _.Zones =
 						i(15105),	-- Staff of Noh'Orahil
 					},
 				}),
-				q(4786, { -- The Completed Robe
-					["qg"] = 6266, -- Menara Voidrender
-					["sourceQuest"] = 4784, -- Components for the Enchanted Gold Bloodrobe (5/5)
+				q(4786, {	-- The Completed Robe
+					["qg"] = 6266,	-- Menara Voidrender
+					["sourceQuest"] = 4784,	-- Components for the Enchanted Gold Bloodrobe (5/5)
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 					["g"] = {
-						i(6900), -- Enchanted Gold Bloodrobe
+						i(6900),	-- Enchanted Gold Bloodrobe
 					},
 				}),
 				q(872, {	-- The Disruption Ends
@@ -1127,9 +1127,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(1718, { -- The Islander
+				q(1718, {	-- The Islander
 					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
+					["classes"] = { 1 },	-- Warrior
 					["qgs"] = {
 						3041,	-- Torm Ragetotem
 						3354,	-- Sorek
@@ -1206,11 +1206,11 @@ _.Zones =
 					},
 					["lvl"] = 17,
 				}),
-				q(1791, { -- The Windwatcher
+				q(1791, {	-- The Windwatcher
 					["lvl"] = 30,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6236, -- Klannoc Macleod
-					["sourceQuest"] = 1719, -- The Affray
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6236,	-- Klannoc Macleod
+					["sourceQuest"] = 1719,	-- The Affray
 					["isBreadcrumb"] = true,
 				}),
 				q(845, {	-- The Zhevra
@@ -1220,7 +1220,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(1502, { -- Thun'grim Firegaze
+				q(1502, {	-- Thun'grim Firegaze
 					["qg"] = 5810,	-- Uzzek
 					["sourceQuest"] = 1498,	-- Path of Defense
 					["coord"] = { 61.38, 21.11, THE_BARRENS },
@@ -1228,14 +1228,14 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
-				q(1758, { -- Tome of the Cabal (1/3 Alliance)
-					["qg"] = 6251, -- Strahad Farsan
+				q(1758, {	-- Tome of the Cabal (1/3 Alliance)
+					["qg"] = 6251,	-- Strahad Farsan
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
 				}),
-				q(1801, { -- Tome of the Cabal (1/3 Horde)
-					["qg"] = 6251, -- Strahad Farsan
+				q(1801, {	-- Tome of the Cabal (1/3 Horde)
+					["qg"] = 6251,	-- Strahad Farsan
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,

@@ -357,7 +357,7 @@ _.Instances = {
 			}),
 			n(7023, {	-- Obsidian Sentinel
 				{
-					["itemID"] = 8053, -- Obsidian Power Source
+					["itemID"] = 8053,	-- Obsidian Power Source
 					["questID"] = 1956,	-- Power in Uldaman
 					["classes"] = { MAGE },
 				},

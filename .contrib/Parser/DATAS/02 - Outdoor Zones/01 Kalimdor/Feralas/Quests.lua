@@ -20,8 +20,8 @@ _.Zones =
 					},
 				}),
 				q(4266, {	-- A Hero's Welcome
-					["qg"] = 7880, -- Ginro Hearthkindle
-					["sourceQuest"] = 4265, -- Freed from the Hive
+					["qg"] = 7880,	-- Ginro Hearthkindle
+					["sourceQuest"] = 4265,	-- Freed from the Hive
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["g"] = {
@@ -58,7 +58,7 @@ _.Zones =
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["sourceQuest"] = 2869, -- Against the Hatecrest (2)
+					["sourceQuest"] = 2869,	-- Against the Hatecrest (2)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { 
@@ -68,14 +68,14 @@ _.Zones =
 				}),
 				q(3130, {	-- Against the Hatecrest (1)
 					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
-					["sourceQuest"] = 2867, -- Return to Feathermoon Stronghold
+					["sourceQuest"] = 2867,	-- Return to Feathermoon Stronghold
 					["coord"] = { 30.3, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(2869, {	-- Against the Hatecrest (2)
-					["qg"] = 7877, -- Latronicus Moonspear
-					["sourceQuest"] = 3130, -- Against the Hatecrest (1)
+					["qg"] = 7877,	-- Latronicus Moonspear
+					["sourceQuest"] = 3130,	-- Against the Hatecrest (1)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { 
@@ -99,8 +99,8 @@ _.Zones =
 					["lvl"] = 38,
 				}),
 				q(4127, {	-- Boat Wreckage
-					["provider"] = { "o", 164909 }, -- Wrecked Row Boat
-					["sourceQuest"] = 4125, -- The Missing Courier (2)
+					["provider"] = { "o", 164909 },	-- Wrecked Row Boat
+					["sourceQuest"] = 4125,	-- The Missing Courier (2)
 					["coord"] = { 45.4, 65.0, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -121,7 +121,7 @@ _.Zones =
 				}),
 				q(2871, {	-- Delivering the Relic
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["sourceQuest"] = 2870, -- Against Lord Shalzaru
+					["sourceQuest"] = 2870,	-- Against Lord Shalzaru
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { 
@@ -160,12 +160,12 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(2766, {	-- Find OOX-22/FE!
-					["provider"] = { "i", 8705 }, -- OOX-22/FE Distress Beacon
+					["provider"] = { "i", 8705 },	-- OOX-22/FE Distress Beacon
 					["lvl"] = 40,
 				}),
 				q(4265, {	-- Freed from the Hive
-					["provider"] = { "o", 1645954 }, -- Zukk'ash Pod
-					["sourceQuest"] = 4135, -- The Writhing Deep
+					["provider"] = { "o", 1645954 },	-- Zukk'ash Pod
+					["sourceQuest"] = 4135,	-- The Writhing Deep
 					["coord"] = { 72.1, 63.7, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -201,7 +201,7 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(7733, {	-- Improved Quality
-					["sourceQuest"] = 2821, -- The Mark of Quality
+					["sourceQuest"] = 2821,	-- The Mark of Quality
 					["coord"] = { 30.6, 42.7, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -224,9 +224,9 @@ _.Zones =
 					["lvl"] = 42,
 				}),
 				q(3788, {	-- Jonespyre's Request
-					["qg"] = 7736, -- Innkeeper Shyria
+					["qg"] = 7736,	-- Innkeeper Shyria
 					["altQuests"] = {
-						3787, -- Jonespyre's Request
+						3787,	-- Jonespyre's Request
 					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -267,7 +267,7 @@ _.Zones =
 				}),
 				q(4130, {	-- Psychometric Reading
 					["qg"] = 7879,	-- Quintis Jonespyre
-					["sourceQuest"] = 4129, -- The Knife Revealed
+					["sourceQuest"] = 4129,	-- The Knife Revealed
 					["coord"] = { 32.5, 43.8, FERALAS },
 					["description"] = "Quintis Jonespyre is located at the top of the tower.",
 					["races"] = ALLIANCE_ONLY,
@@ -288,8 +288,8 @@ _.Zones =
 					},
 				}),
 				q(2867, {	-- Return to Feathermoon Stronghold
-					["provider"] = { "o", 142179 }, -- Solarsal Gazebo
-					["sourceQuest"] = 2866, -- The Ruins of Solarsal
+					["provider"] = { "o", 142179 },	-- Solarsal Gazebo
+					["sourceQuest"] = 2866,	-- The Ruins of Solarsal
 					["coord"] = { 26.3, 52.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -299,8 +299,8 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(4267, {	-- Rise of the Silithid
-					["qg"] = 3936, -- Shandris Feathermoon <General of the Sentinel Army>
-					["sourceQuest"] = 4266, -- A Hero's Welcome
+					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
+					["sourceQuest"] = 4266,	-- A Hero's Welcome
 					["coord"] = { 30.3, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -316,7 +316,7 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(4281, {	-- Thalanaar Delivery
-					["provider"] = { "i", 11463 }, -- Undelivered Parcel
+					["provider"] = { "i", 11463 },	-- Undelivered Parcel
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
@@ -330,7 +330,7 @@ _.Zones =
 					},
 				}),
 				q(2844, {	-- The Giant Guardian
-					["qg"] = 7765, -- Rockbiter
+					["qg"] = 7765,	-- Rockbiter
 					["coord"] = { 42.4, 22.0, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,
@@ -351,7 +351,7 @@ _.Zones =
 				}),
 				q(4129, {	-- The Knife Revealed
 					["qg"] = 7880,	-- Ginro Hearthkindle
-					["sourceQuest"] = 4127, -- Boat Wreckage
+					["sourceQuest"] = 4127,	-- Boat Wreckage
 					["coord"] = { 31.9, 45.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -381,8 +381,8 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(4125, {	-- The Missing Courier (2)
-					["qg"] = 7880, -- Ginro Hearthkindle
-					["sourceQuest"] = 4124, -- The Missing Courier (1)
+					["qg"] = 7880,	-- Ginro Hearthkindle
+					["sourceQuest"] = 4124,	-- The Missing Courier (1)
 					["coord"] = { 31.9, 45.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -442,15 +442,15 @@ _.Zones =
 					},
 				}),
 				q(4131, {	-- The Woodpaw Gnolls
-					["qg"] = 7880, -- Ginro Hearthkindle
-					["sourceQuest"] = 4129, -- Psychometric Reading
+					["qg"] = 7880,	-- Ginro Hearthkindle
+					["sourceQuest"] = 4129,	-- Psychometric Reading
 					["coord"] = { 31.9, 45.1, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(4135, {	-- The Writhing Deep
-					["sourceQuest"] = 4131, -- The Woodpaw Gnolls
-					["provider"] = { "o", 164953 }, -- Large Leather Backpacks
+					["sourceQuest"] = 4131,	-- The Woodpaw Gnolls
+					["provider"] = { "o", 164953 },	-- Large Leather Backpacks
 					["coord"] = { 73.3, 56.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -472,7 +472,7 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(2845, {	-- Wandering Shay
-					["sourceQuest"] = 2844, -- The Giant Guardian
+					["sourceQuest"] = 2844,	-- The Giant Guardian
 					["coord"] = { 38.2, 10.3, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 44,

@@ -5,7 +5,7 @@ _.Factions =
 {
 	faction(909, {	-- Darkmoon Faire
 		n(VENDORS, {
-			n(14860, { -- Flik
+			n(14860, {	-- Flik
 				["coords"] = {
 					{ 36.4, 36.0, MULGORE },
 					{ 37.6, 39.6, MULGORE },
@@ -16,7 +16,7 @@ _.Factions =
 					i(11027),	-- Wood Frog Box
 				},
 			}),
-			n(14828, { -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+			n(14828, {	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
 				["coords"] = {
 					{ 37.3, 37.7, MULGORE },
 				},

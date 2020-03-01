@@ -7,26 +7,26 @@ _.Zones =
 		m(BURNING_STEPPES, {
 			n(QUESTS, {
 				q(7630, {	-- Arcanite
-					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["sourceQuests"] = {
-						7626, -- Bell of Dethmoora
-						7627, -- Wheel of the Black March
-						7628, -- Doomsday Candle
+						7626,	-- Bell of Dethmoora
+						7627,	-- Wheel of the Black March
+						7628,	-- Doomsday Candle
 					},
 					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 12360, 3 }, -- Arcanite Bar
+						{ "i", 12360, 3 },	-- Arcanite Bar
 					},
 					["lvl"] = 60,
 				}),
 				q(7626, {	-- Bell of Dethmoora
-					["qg"] = 14436, -- Mor'zul Bloodbringer
-					["sourceQuest"] = 7564, -- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7564,	-- Wildeyes
 					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 9264, 10 }, -- Elixir of Shadow Power
+						{ "i", 9264, 10 },	-- Elixir of Shadow Power
 					},
 					["lvl"] = 60,
 				}),
@@ -43,12 +43,12 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7628, {	-- Doomsday Candle
-					["qg"] = 14436, -- Mor'zul Bloodbringer
-					["sourceQuest"] = 7564, -- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7564,	-- Wildeyes
 					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 15416, 35 }, -- Black Dragonscale
+						{ "i", 15416, 35 },	-- Black Dragonscale
 					},
 					["lvl"] = 60,
 				}),
@@ -94,16 +94,16 @@ _.Zones =
 					},
 				}),
 				q(7629, {	-- Imp Delivery
-					["qg"] = 14437, -- Gorzeeki Wildeyes
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["sourceQuests"] = {
-						7625, -- Xorothian Stardust
-						7630, -- Arcanite
+						7625,	-- Xorothian Stardust
+						7630,	-- Arcanite
 					},
 					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
 					["maps"] = { SCHOLOMANCE },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 18688, 1 }, -- Imp in a Jar
+						{ "i", 18688, 1 },	-- Imp in a Jar
 					},
 					["lvl"] = 60,
 				}),
@@ -125,10 +125,10 @@ _.Zones =
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 11754, 1 }, -- Black Diamond
+						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 8411, 1 },  -- Lung Juice Cocktail
-						{ "i", 11733, 1 }, -- Libram of Constitution
-						{ "i", 11952, 4 }, -- Night Dragon's Breath
+						{ "i", 11733, 1 },	-- Libram of Constitution
+						{ "i", 11952, 4 },	-- Night Dragon's Breath
 						{ "g", 300000 },   -- 30g
 					},
 					["lvl"] = 50,
@@ -141,10 +141,10 @@ _.Zones =
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 11754, 1 }, -- Black Diamond
-						{ "i", 11567, 4 }, -- Crystal Spire
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11567, 4 },	-- Crystal Spire
 						{ "i", 11751, 1 },  -- Bruning Essence
-						{ "i", 11736, 1 }, -- Libram of Resilience
+						{ "i", 11736, 1 },	-- Libram of Resilience
 						{ "g", 300000 },   -- 30g
 					},
 					["lvl"] = 50,
@@ -157,10 +157,10 @@ _.Zones =
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 11754, 1 }, -- Black Diamond
-						{ "i", 11752, 1 }, -- Black Blood of the Tormented
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11752, 1 },	-- Black Blood of the Tormented
 						{ "i", 8424, 1 },  -- Gizzard Gum
-						{ "i", 11732, 1 }, -- Libram of Rumination
+						{ "i", 11732, 1 },	-- Libram of Rumination
 						{ "g", 300000 },   -- 30g
 					},
 					["lvl"] = 50,
@@ -173,10 +173,10 @@ _.Zones =
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 11754, 1 }, -- Black Diamond
-						{ "i", 11734, 1 }, -- Libram of Tenacity
-						{ "i", 11564, 4 }, -- Crystal Ward 
-						{ "i", 11753, 1 }, -- Eye of Kajal
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11734, 1 },	-- Libram of Tenacity
+						{ "i", 11564, 4 },	-- Crystal Ward 
+						{ "i", 11753, 1 },	-- Eye of Kajal
 						{ "g", 300000 },   -- 30g
 					},
 					["lvl"] = 50,
@@ -189,10 +189,10 @@ _.Zones =
 					["coord"] = { 65, 23.6, BURNING_STEPPES },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 11754, 1 }, -- Black Diamond
-						{ "i", 11737, 1 }, -- Libram of Voracity
-						{ "i", 11951, 4 }, -- Whipper Root Tuber
-						{ "i", 11563, 4 }, -- Crystal Force
+						{ "i", 11754, 1 },	-- Black Diamond
+						{ "i", 11737, 1 },	-- Libram of Voracity
+						{ "i", 11951, 4 },	-- Whipper Root Tuber
+						{ "i", 11563, 4 },	-- Crystal Force
 						{ "g", 300000 },   -- 30g
 					},
 					["lvl"] = 50,
@@ -205,8 +205,8 @@ _.Zones =
 					},
 				}),
 				q(7623, {	-- Lord Banehollow
-					["qg"] = 14437, -- Gorzeeki Wildeyes
-					["sourceQuest"] = 7564, -- Wildeyes
+					["qg"] = 14437,	-- Gorzeeki Wildeyes
+					["sourceQuest"] = 7564,	-- Wildeyes
 					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
@@ -226,11 +226,11 @@ _.Zones =
 					},
 				}),
 				q(7563, {	-- Rage of Blood
-					["qg"] = 14436, -- Mor'zul Bloodbringer
-					["sourceQuest"] = 7562, -- Mor'zul Bloodbringer
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7562,	-- Mor'zul Bloodbringer
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 18590, 30 }, -- Raging Beast's Blood
+						{ "i", 18590, 30 },	-- Raging Beast's Blood
 					},
 					["lvl"] = 60,
 				}),
@@ -243,22 +243,22 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(7627, {	-- Wheel of the Black March
-					["qg"] = 14436, -- Mor'zul Bloodbringer
-					["sourceQuest"] = 7564, -- Wildeyes
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7564,	-- Wildeyes
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 14344, 6 }, -- Large Brilliant Shard
-						{ "i", 11370, 25 }, -- Dark Iron Ore
+						{ "i", 14344, 6 },	-- Large Brilliant Shard
+						{ "i", 11370, 25 },	-- Dark Iron Ore
 					},
 					["lvl"] = 60,
 				}),
 				q(7564, {	-- Wildeyes
-					["qg"] = 14436, -- Mor'zul Bloodbringer
-					["sourceQuest"] = 7563, -- Rage of Blood
+					["qg"] = 14436,	-- Mor'zul Bloodbringer
+					["sourceQuest"] = 7563,	-- Rage of Blood
 					["coords"] = { 12.6, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 18591, 1 }, -- Case of Blood
+						{ "i", 18591, 1 },	-- Case of Blood
 					},
 					["lvl"] = 60,
 				}),

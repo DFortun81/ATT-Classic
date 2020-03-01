@@ -61,10 +61,10 @@ _.Instances = {
 				}),
 				q(2861, {	-- Tabetha's Task
 					["qgs"] = {
-						4568, -- Anastasia Hartwell
-						5144, -- Bink
-						5497, -- Jennea Cannon
-						5885, -- Deino
+						4568,	-- Anastasia Hartwell
+						5144,	-- Bink
+						5497,	-- Jennea Cannon
+						5885,	-- Deino
 					},
 					["qgs"] = {
 						5885,	-- Deino <Mage Trainer>

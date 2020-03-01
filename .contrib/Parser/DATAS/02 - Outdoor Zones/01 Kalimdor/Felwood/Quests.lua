@@ -71,7 +71,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9528,	-- Arathandris Silversky
 					["cost"] = {
-						{ "i", 11503, 15 }, -- Blood Amber
+						{ "i", 11503, 15 },	-- Blood Amber
 					},
 					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
@@ -80,7 +80,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["cost"] = {
-						{ "i", 11503, 15 }, -- Blood Amber
+						{ "i", 11503, 15 },	-- Blood Amber
 					},
 				}),
 				q(5157, {	-- Collection of the Corrupt Water
@@ -250,7 +250,7 @@ _.Zones =
 					["repeatable"] = true,
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["cost"] = {
-						{ "i", 21377, 5 }, -- Deadwood Headdress Feather
+						{ "i", 21377, 5 },	-- Deadwood Headdress Feather
 					},
 					["coord"] = { 50.9, 85.0, FELWOOD },
 				}),
@@ -268,8 +268,8 @@ _.Zones =
 					["coord"] = { 51.4, 81.5, FELWOOD },
 				}),
 				q(7602, {	-- Flawless Fel Essence
-					["qg"] = 14470, -- Impsy <Niby's Minion>
-					["sourceQuest"] = 7601, -- What Niby Commands
+					["qg"] = 14470,	-- Impsy <Niby's Minion>
+					["sourceQuest"] = 7601,	-- What Niby Commands
 					["coord"] = { 41.6, 44.8, FELWOOD },
 					["maps"] = { AZSHARA, BLASTED_LANDS },
 					["races"] = { WARLOCK },
@@ -328,8 +328,8 @@ _.Zones =
 				q(7603, {	-- Kroshius' Infernal Core
 					["lvl"] = 50,
 					["races"] = { WARLOCK },
-					["qg"] = 14470, -- Impsy
-					["sourceQuest"] = 7602, -- Flawless Fel Essence
+					["qg"] = 14470,	-- Impsy
+					["sourceQuest"] = 7602,	-- Flawless Fel Essence
 				}),
 				q(5085, {	-- Mystery Goo
 					["lvl"] = 52,
@@ -430,7 +430,7 @@ _.Zones =
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
-					["sourceQuest"] = 4101, -- Cleansing Felwood
+					["sourceQuest"] = 4101,	-- Cleansing Felwood
 					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5884, {	-- Salve via Gathering
@@ -619,9 +619,9 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 53,
 				}),
-				q(7624, { -- Ulathek the Traitor
-					["qg"] = 9516, -- Lord Banehollow
-					["sourceQuest"] = 7623, -- Lord Banehollow
+				q(7624, {	-- Ulathek the Traitor
+					["qg"] = 9516,	-- Lord Banehollow
+					["sourceQuest"] = 7623,	-- Lord Banehollow
 					["coords"] = { 36.0, 44.6, FELWOOD },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -645,11 +645,11 @@ _.Zones =
 				q(4505, {	-- Well of Corruption
 					["lvl"] = 49,
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 6605, -- A Strange One
+					["sourceQuest"] = 6605,	-- A Strange One
 					["qg"] = 9996,	-- Winna Hazzard
 				}),
 				q(7601, {	-- What Niby Commands
-					["qg"] = 14469, -- Niby the Almighty
+					["qg"] = 14469,	-- Niby the Almighty
 					["coord"] = { 41.4, 44.8, FELWOOD },
 					["races"] = { WARLOCK },
 					["lvl"] = 50,
@@ -685,13 +685,13 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(7625, { -- Xorothian Stardust
-					["qg"] = 9516, -- Lord Banehollow
-					["sourceQuest"] = 7624, -- Ulathek the Traitor
+				q(7625, {	-- Xorothian Stardust
+					["qg"] = 9516,	-- Lord Banehollow
+					["sourceQuest"] = 7624,	-- Ulathek the Traitor
 					["coords"] = { 36.0, 44.6, FELWOOD },
 					["classes"] = { WARLOCK },
 					["cost"] = {
-						{ "i", 18687, 1 }, -- Xorothian Stardust
+						{ "i", 18687, 1 },	-- Xorothian Stardust
 					},
 					["lvl"] = 60,
 				}),

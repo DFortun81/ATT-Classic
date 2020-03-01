@@ -7,8 +7,8 @@ _.Zones =
 		m(STRANGLETHORN_VALE, {
 			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan
-					["qg"] = 2542, -- Catelyn the Blade
-					["sourceQuest"] = 603, -- Ansirem's Key
+					["qg"] = 2542,	-- Catelyn the Blade
+					["sourceQuest"] = 603,	-- Ansirem's Key
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -59,7 +59,7 @@ _.Zones =
 				}),
 				q(603, {	-- Ansirem's Key
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
-					["sourceQuest"] = 603, -- Magical Analysis
+					["sourceQuest"] = 603,	-- Magical Analysis
 					["coord"] = { 18.8, 78.5, ALTERAC_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
@@ -258,13 +258,13 @@ _.Zones =
 					},
 				}),
 				q(4782, { 	-- Components for the Enchanted Gold Bloodrobe (3/5)
-					["qg"] = 2670, -- Xizk Goodstitch
-					["sourceQuest"] = 4781, -- Components for the Enchanted Gold Bloodrobe (2/5)
+					["qg"] = 2670,	-- Xizk Goodstitch
+					["sourceQuest"] = 4781,	-- Components for the Enchanted Gold Bloodrobe (2/5)
 					["classes"] = { WARLOCK },
 					["lvl"] = 31,
 				}),
 				q(624, {	-- Cortello's Riddle (1/3)
-					["provider"] = { "i", 4056 }, -- Cortello's Riddle
+					["provider"] = { "i", 4056 },	-- Cortello's Riddle
 					["coords"] = {
 						{ 29.5, 89.3, STRANGLETHORN_VALE },
 						{ 33.6, 88.3, STRANGLETHORN_VALE },
@@ -273,14 +273,14 @@ _.Zones =
 					["lvl"] = 35,
 				}),
 				q(625, {	-- Cortello's Riddle (2/3)
-					["provider"] = { "o", 2553 }, -- A Soggy Scroll
+					["provider"] = { "o", 2553 },	-- A Soggy Scroll
 					["sourceQuest"] = 624,	-- Cortello's Riddle (1/3)
 					["coord"] = { 22.8, 48.1, SWAMP_OF_SORROWS },
 					["maps"] = { DUSTWALLOW_MARSH, SWAMP_OF_SORROWS },
 					["lvl"] = 35,
 				}),
 				q(626, {	-- Cortello's Riddle (3/3)
-					["provider"] = { "o", 255 }, -- Musty Scroll
+					["provider"] = { "o", 255 },	-- Musty Scroll
 					["sourceQuest"] = 625,	-- Cortello's Riddle (2/3)
 					["coord"] = { 31.1, 66.1, DUSTWALLOW_MARSH },
 					["maps"] = { DUSTWALLOW_MARSH, THE_HINTERLANDS },
@@ -295,7 +295,7 @@ _.Zones =
 				}),
 				q(613, {	-- Cracking Maury's Foot
 					["qg"] = 2501,	-- "Sea Wolf" MacKinley
-					["sourceQuest"] = 609, -- Voodoo Dues
+					["sourceQuest"] = 609,	-- Voodoo Dues
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3930, 1 },	-- Maury's Key
@@ -478,7 +478,7 @@ _.Zones =
 				}),
 				q(602, {	-- Magical Analysis
 					["qg"] = 2496,	-- Baron Revilgaz
-					["sourceQuest"] = 601, -- Water Elementals
+					["sourceQuest"] = 601,	-- Water Elementals
 					["coord"] = { 27.2, 76.8, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -488,7 +488,7 @@ _.Zones =
 				}),
 				q(206, {	-- Mai'Zoth
 					["qg"] = 739,	-- Brother Nimetz
-					["sourceQuest"] = 205, -- Troll Witchery
+					["sourceQuest"] = 205,	-- Troll Witchery
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3616, 1 },	-- Mind's Eye
@@ -570,19 +570,19 @@ _.Zones =
 				}),
 				q(191, {	-- Panther Mastery (2/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
-					["sourceQuest"] = 190, -- Panther Mastery (1/4)
+					["sourceQuest"] = 190,	-- Panther Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(192, {	-- Panther Mastery (3/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
-					["sourceQuest"] = 191, -- Panther Mastery (2/4)
+					["sourceQuest"] = 191,	-- Panther Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(193, {	-- Panther Mastery (4/4)
 					["qg"] = 718,	-- Sir S. J. Erlgadin
-					["sourceQuest"] = 192, -- Panther Mastery (3/4)
+					["sourceQuest"] = 192,	-- Panther Mastery (3/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3876, 1 },	-- Fang of Bhag'thera
@@ -616,18 +616,18 @@ _.Zones =
 				q(195, {	-- Raptor Mastery (2/4)
 					["qg"] = 715,	-- Hemet Nesingwary
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
-					["sourceQuest"] = 194, -- Raptor Mastery (1/4)
+					["sourceQuest"] = 194,	-- Raptor Mastery (1/4)
 					["lvl"] = 28,
 				}),
 				q(196, {	-- Raptor Mastery (3/4)
 					["qg"] = 715,	-- Hemet Nesingwary
-					["sourceQuest"] = 195, -- Raptor Mastery (2/4)
+					["sourceQuest"] = 195,	-- Raptor Mastery (2/4)
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(197, {	-- Raptor Mastery (4/4)
 					["qg"] = 715,	-- Hemet Nesingwary
-					["sourceQuest"] = 196, -- Raptor Mastery (3/4)
+					["sourceQuest"] = 196,	-- Raptor Mastery (3/4)
 					["coord"] = { 35.7, 10.8, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3877, 1 },	-- Talon of Tethis
@@ -664,7 +664,7 @@ _.Zones =
 				}),
 				q(607, {	-- Return to MacKinley
 					["qg"] = 2502,	-- \"Shaky\" Phillipe
-					["sourceQuest"] = 606, -- Scaring Shaky
+					["sourceQuest"] = 606,	-- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -719,7 +719,7 @@ _.Zones =
 				}),
 				q(209, {	-- Skullsplitter Tusks
 					["qg"] = 737,	-- Kebok
-					["sourceQuest"] = 189, -- Bloodscalp Ears
+					["sourceQuest"] = 189,	-- Bloodscalp Ears
 					["coord"] = { 27.00, 77.13, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 1524, 18 },	-- Skullsplitter Tusk
@@ -825,25 +825,25 @@ _.Zones =
 					["lvl"] = 37,
 				}),
 				q(597, {	-- The Bloodsail Buccaneers (2)
-					["sourceQuest"] = 595, -- The Bloodsail Buccaneers (1)
-					["provider"] = { "o", 2083 }, -- Bloodsail Correspondence
+					["sourceQuest"] = 595,	-- The Bloodsail Buccaneers (1)
+					["provider"] = { "o", 2083 },	-- Bloodsail Correspondence
 					["coord"] = { 27.3, 69.5, STRANGLETHORN_VALE },
 					["lvl"] = 37,
 				}),
 				q(599, {	-- The Bloodsail Buccaneers (3)
-					["sourceQuest"] = 597, -- The Bloodsail Buccaneers (2)
+					["sourceQuest"] = 597,	-- The Bloodsail Buccaneers (2)
 					["qg"] = 2490,	-- First Mate Crazz
 					["coord"] = { 28.1, 76.2, STRANGLETHORN_VALE },
 					["lvl"] = 37,
 				}),
 				q(604, {	-- The Bloodsail Buccaneers (4)
-					["sourceQuest"] = 599, -- The Bloodsail Buccaneers (3)
+					["sourceQuest"] = 599,	-- The Bloodsail Buccaneers (3)
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
 					["lvl"] = 37,
 				}),
 				q(608, {	-- The Bloodsail Buccaneers (5)
-					["sourceQuest"] = 604, -- The Bloodsail Buccaneers (4)
+					["sourceQuest"] = 604,	-- The Bloodsail Buccaneers (4)
 					["qg"] = 2487,	-- Fleet Master Seahorn
 					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
 					["lvl"] = 37,
@@ -892,7 +892,7 @@ _.Zones =
 				}),
 				q(611, {	-- The Curse of the Tides
 					["qg"] = 2542,	-- Catelyn the Blade
-					["sourceQuest"] = 610, -- "Pretty Boy" Duncan
+					["sourceQuest"] = 610,	-- "Pretty Boy" Duncan
 					["coord"] = { 27.3, 77.5, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -954,7 +954,7 @@ _.Zones =
 					["lvl"] = 32,
 				}),
 				q(328, {	-- The Hidden Key
-					["provider"] = { "o", 287 },	--  Bookie Herod's Records
+					["provider"] = { "o", 287 },	-- Bookie Herod's Records
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 					["g"] = {
@@ -997,13 +997,13 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(329, {	-- The Spy Revealed!
-					["provider"] = { "o", 288 },	--  Bookie Herod's Strongbox
+					["provider"] = { "o", 288 },	-- Bookie Herod's Strongbox
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
 				q(578, {	-- The Stone of the Tides
 					["qg"] = 2496,	-- Baron Revilgaz
-					["sourceQuest"] = 616, -- The Haunted Isle
+					["sourceQuest"] = 616,	-- The Haunted Isle
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
@@ -1020,19 +1020,19 @@ _.Zones =
 				}),
 				q(186, {	-- Tiger Mastery (2/4)
 					["qg"] = 717,	-- Ajeck Rouack
-					["sourceQuest"] = 185, -- Tiger Mastery (1/4)
+					["sourceQuest"] = 185,	-- Tiger Mastery (1/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(187, {	-- Tiger Mastery (3/4)
 					["qg"] = 717,	-- Ajeck Rouack
-					["sourceQuest"] = 186, -- Tiger Mastery (2/4)
+					["sourceQuest"] = 186,	-- Tiger Mastery (2/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["lvl"] = 28,
 				}),
 				q(188, {	-- Tiger Mastery (4/4)
 					["qg"] = 717,	-- Ajeck Rouack
-					["sourceQuest"] = 187, -- Tiger Mastery (3/4)
+					["sourceQuest"] = 187,	-- Tiger Mastery (3/4)
 					["coord"] = { 35.6, 10.6, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3879, 1 },	-- Paw of Sin'Dall
@@ -1057,7 +1057,7 @@ _.Zones =
 				}),
 				q(205, {	-- Troll Witchery
 					["qg"] = 739,	-- Brother Nimetz
-					["sourceQuest"] = 207, -- Kurzen's Mystery
+					["sourceQuest"] = 207,	-- Kurzen's Mystery
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2466, 4 },	-- Skullsplitter Fetish
@@ -1079,7 +1079,7 @@ _.Zones =
 				}),
 				q(600, {	-- Venture Company Mining
 					["qg"] = 2498,	-- Crank Fizzlebub
-					["sourceQuest"] = 605, -- Singing Blue Shards
+					["sourceQuest"] = 605,	-- Singing Blue Shards
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3917, 10 },	-- Singing Blue Crystal
@@ -1092,7 +1092,7 @@ _.Zones =
 				}),
 				q(609, {	-- Voodoo Dues
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
-					["sourceQuest"] = 607, -- Return to MacKinley
+					["sourceQuest"] = 607,	-- Return to MacKinley
 					["coord"] = { 27.8, 77.1, STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 3926, 1 },	-- Chucky's Huge Ring
@@ -1123,7 +1123,7 @@ _.Zones =
 				}),
 				q(601, {	-- Water Elementals
 					["qg"] = 2496,	-- Baron Revilgaz
-					["sourceQuest"] = 578, --	The Stone of the Tides
+					["sourceQuest"] = 578,	-- 	The Stone of the Tides
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {

@@ -6,13 +6,13 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
 			n(RARES, {
-				n(3672, { -- Boahn <Druid of the Fang>
+				n(3672, {	-- Boahn <Druid of the Fang>
 					["groups"] = {
 						i(5422),  -- Brambleweed Leggings
 						i(5423),  -- Boahn's Fang
 					},
 				}),
-				n(3470, { -- Rathorian
+				n(3470, {	-- Rathorian
 					["groups"] = {
 						i(5111),  -- Rathorian's Cape
 						i(5112),  -- Ritual Blade

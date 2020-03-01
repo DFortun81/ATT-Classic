@@ -18,13 +18,13 @@ _.Zones =
 						i(4978),	-- Ryedol's Hammer
 					},
 				}),
-				q(720, { -- A Sign of Hope
+				q(720, {	-- A Sign of Hope
 					["provider"] = { "o", 2868 },	-- Crumpled Map
 					["coord"] = { 53.0, 33.9, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
-				q(721, { -- A Sign of Hope
+				q(721, {	-- A Sign of Hope
 					["sourceQuest"] = 720,	-- A Sign of Hope
 					["qg"] = 2910,	-- Prospector Ryedol <Explorers' League>
 					["coord"] = { 53.4, 43.4, BADLANDS },
@@ -151,7 +151,7 @@ _.Zones =
 					["lvl"] = 48,
 				}),
 				q(706, {	-- Fiery Blaze Enchantments
-					["qg"] = 2860, -- Sigrun Ironhew
+					["qg"] = 2860,	-- Sigrun Ironhew
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4612, 1 },	-- Black Drake's Heart
@@ -235,7 +235,7 @@ _.Zones =
 						i(4983),	-- Rock Pulverizer
 					},
 				}),
-				q(725, { -- Passing Word of a Threat
+				q(725, {	-- Passing Word of a Threat
 					["sourceQuest"] = 724,	-- Prospect of Faith
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.5, 11.8, IRONFORGE },
@@ -243,7 +243,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
-				q(726, { -- Passing Word of a Threat
+				q(726, {	-- Passing Word of a Threat
 					["sourceQuest"] = 725,	-- Passing Word of a Threat
 					["qg"] = 2918,	-- Advisor Belgrum
 					["coord"] = { 77.3, 9.7, IRONFORGE },
@@ -281,14 +281,14 @@ _.Zones =
 						i(10359),	-- Everlast Boots
 					},
 				}),
-				q(723, { -- Prospect of Faith
+				q(723, {	-- Prospect of Faith
 					["sourceQuest"] = 722,	-- Amulet of Secrets
 					["qg"] = 2909,	-- Hammertoe Grez
 					["coord"] = { 37.94, 10.53, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
-				q(724, { -- Prospect of Faith
+				q(724, {	-- Prospect of Faith
 					["sourceQuest"] = 723,	-- Prospect of Faith
 					["qg"] = 2909,	-- Prospector Ryedol
 					["coord"] = { 53.4, 43.2, BADLANDS },
@@ -334,7 +334,7 @@ _.Zones =
 				}),
 				q(733, {	-- Scrounging
 					["qg"] = 2860,	-- Sigrun Ironhew
-					["sourceQuest"] = 718, -- Mirages
+					["sourceQuest"] = 718,	-- Mirages
 					["coord"] = { 53.8, 43.3, BADLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -529,8 +529,8 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(717, {	-- Tremors of the Earth
-					["qg"] = 2888, -- Garek
-					["sourceQuest"] = 732, -- Tremors of the Earth
+					["qg"] = 2888,	-- Garek
+					["sourceQuest"] = 732,	-- Tremors of the Earth
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4615, 1 },	-- Blacklash's Bindings
@@ -545,8 +545,8 @@ _.Zones =
 					},
 				}),
 				q(732, {	-- Tremors of the Earth
-					["qg"] = 2888, -- Garek
-					["sourceQuest"] = 718, -- Mirages
+					["qg"] = 2888,	-- Garek
+					["sourceQuest"] = 718,	-- Mirages
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4640, 1 },	-- Sign of the Earth

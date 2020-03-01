@@ -10,7 +10,7 @@ _.Zones =
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 4338, 60 }, -- Mageweave Cloth
+						{ "i", 4338, 60 },	-- Mageweave Cloth
 					},
 					["lvl"] = 40,
 				}),
@@ -18,7 +18,7 @@ _.Zones =
 					["qg"] = 14722,	-- Clavicus Knavingham <Alliance Cloth Quartermaster>
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 14047, 60 }, -- Runecloth
+						{ "i", 14047, 60 },	-- Runecloth
 					},
 					["lvl"] = 50,
 				}),
@@ -38,8 +38,8 @@ _.Zones =
 					},
 					["lvl"] = 12,
 				}),
-				q(212, { -- A Meal Served Cold
-					["qg"] = 1141, -- Angus Stern
+				q(212, {	-- A Meal Served Cold
+					["qg"] = 1141,	-- Angus Stern
 					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
@@ -55,13 +55,13 @@ _.Zones =
 						},
 					},
 				}),
-				q(335, { -- A Noble Brew (1)
-					["qg"] = 1435, -- Zardeth of the Black Claw
+				q(335, {	-- A Noble Brew (1)
+					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
-				q(336, { -- A Noble Brew (2)
-					["qg"] = 1435, -- Zardeth of the Black Claw
+				q(336, {	-- A Noble Brew (2)
+					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
@@ -83,13 +83,13 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
-				q(396, { -- An Audience with the King
-					["sourceQuest"] = 395, -- Brotherhood's End
-					["qg"] = 1646, -- Baros Alexston <City Architect>
+				q(396, {	-- An Audience with the King
+					["sourceQuest"] = 395,	-- Brotherhood's End
+					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 					["g"] = {
-						i(2933), -- Seal of Wrynn
+						i(2933),	-- Seal of Wrynn
 					},
 				}),
 				q(7796, {	-- Additional Runecloth
@@ -135,15 +135,15 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
-				q(1639, { -- Bartleby the Drunk
+				q(1639, {	-- Bartleby the Drunk
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6089, -- Harry Burlguard
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6089,	-- Harry Burlguard
 				}),
-				q(1665, { -- Bartleby's Mug
-					["qg"] = 6090, -- Bartleby
-					["sourceQuest"] = 1640, -- Beat Bartleby
+				q(1665, {	-- Bartleby's Mug
+					["qg"] = 6090,	-- Bartleby
+					["sourceQuest"] = 1640,	-- Beat Bartleby
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["cost"] = { 
@@ -151,18 +151,18 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(389, { -- Bazil Thredd
-					["qg"] = 1646, -- Baros Alexston
-					["sourceQuest"] = 373, -- The Unsent Letter
+				q(389, {	-- Bazil Thredd
+					["qg"] = 1646,	-- Baros Alexston
+					["sourceQuest"] = 373,	-- The Unsent Letter
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
-				q(1640, { -- Beat Bartleby
+				q(1640, {	-- Beat Bartleby
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6090, -- Bartleby
-					["sourceQuest"] = 1639, -- Bartleby the Drunk
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6090,	-- Bartleby
+					["sourceQuest"] = 1639,	-- Bartleby the Drunk
 				}),
 				q(344, {	-- Brother Paxton
 					["qg"] = 1440,	-- Milton Sheaf
@@ -171,22 +171,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(395, { -- Brotherhood's End
-					["sourceQuest"] = 394, -- The Head of the Beast
-					["qg"] = 332, -- Master Mathias Shaw <Leader of SI:7>
+				q(395, {	-- Brotherhood's End
+					["sourceQuest"] = 394,	-- The Head of the Beast
+					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 16,
 				}),
-				q(1705, { -- Burning Blood
-					["qg"] = 1416, -- Grimand Elmore
-					["sourceQuest"] = 1700, -- Grimand Elmore
+				q(1705, {	-- Burning Blood
+					["qg"] = 1416,	-- Grimand Elmore
+					["sourceQuest"] = 1700,	-- Grimand Elmore
 					["maps"] = { DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["cost"] = { 
-						{ "i", 6844, 20 }, -- Burning Blood
-						{ "i", 6845, 1 }, -- Burning Rock
+						{ "i", 6844, 20 },	-- Burning Blood
+						{ "i", 6845, 1 },	-- Burning Rock
 					},
 					["lvl"] = 20,
 				}),
@@ -214,9 +214,9 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(1701, { -- Fire Hardened Mail
-					["qg"] = 5413, -- Furen Longbeard
-					["sourceQuest"] = 1702, -- The Shieldsmith
+				q(1701, {	-- Fire Hardened Mail
+					["qg"] = 5413,	-- Furen Longbeard
+					["sourceQuest"] = 1702,	-- The Shieldsmith
 					["coord"] = { 58.0, 16.8, STORMWIND_CITY },
 					["maps"] = { RAZORFEN_KRAUL, WETLANDS, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
@@ -237,19 +237,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
-				q(1782, { -- Furen's Armor
-					["qg"] = 5413, -- Furen Longbeard
-					["sourceQuest"] = 1701, -- Fire Hardened Mail
+				q(1782, {	-- Furen's Armor
+					["qg"] = 5413,	-- Furen Longbeard
+					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 					["g"] = {
-						i(6972), -- Fire Hardened Hauberk
+						i(6972),	-- Fire Hardened Hauberk
 					},
 				}),
-				q(5048, { -- Good Natured Emma
-					["qg"] = 10782, -- Royal Factor Bathrilor <Stormwind Census>
-					["sourceQuest"] = 5022, -- Better Late Than Never
+				q(5048, {	-- Good Natured Emma
+					["qg"] = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
+					["sourceQuest"] = 5022,	-- Better Late Than Never
 					["coord"] = { 48.6, 30.6, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -257,29 +257,29 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(1700, { -- Grimand Elmore
+				q(1700, {	-- Grimand Elmore
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["sourceQuest"] = 1701, -- Fire Hardened Mail
-					["qg"] = 5413, -- Furen Longbeard
+					["classes"] = { 1 },	-- Warrior
+					["sourceQuest"] = 1701,	-- Fire Hardened Mail
+					["qg"] = 5413,	-- Furen Longbeard
 				}),
-				q(1706, { -- Grimand's Armor
+				q(1706, {	-- Grimand's Armor
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["sourceQuest"] = 1705, -- Burning Blood
-					["qg"] = 1416, -- Grimand Elmore
+					["classes"] = { 1 },	-- Warrior
+					["sourceQuest"] = 1705,	-- Burning Blood
+					["qg"] = 1416,	-- Grimand Elmore
 					["g"] = {
-						i(6971), -- Fire Hardened Coif
+						i(6971),	-- Fire Hardened Coif
 					},
 				}),
 				q(333, {	-- Harlan Needs a Resupply
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1427, -- Harlan Bagley
+					["qg"] = 1427,	-- Harlan Bagley
 					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
 				}),
-				q(5924, { -- Heeding the Call
+				q(5924, {	-- Heeding the Call
 					["qg"] = 5505,  -- Theridran <Druid Trainer>
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
@@ -288,8 +288,8 @@ _.Zones =
 						5925,   -- Heeding the Call
 					},
 				}),
-				q(1939, { -- High Sorcerer Andromath
-					["qg"] = 5497, -- Jennea Cannon <Mage Trainer>
+				q(1939, {	-- High Sorcerer Andromath
+					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
@@ -302,18 +302,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
-				q(399, { -- Humble Beginnings
+				q(399, {	-- Humble Beginnings
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["coord"] = { 49.1, 30.3, STORMWIND_CITY },
 					["description"] = "Daros Alexston is located in City Hall at 47.6, 31.4.",
 				});
-				q(4738, { -- In Search of Menara Voidrender
+				q(4738, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 461, -- Demisette Cloyce
+					["qg"] = 461,	-- Demisette Cloyce
 				}),
 				q(1448, {	-- In Search of The Temple
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
@@ -322,37 +322,37 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(2745, { -- Infiltrating the Castle
+				q(2745, {	-- Infiltrating the Castle
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 482, -- Elling Trias <Master of Cheese>
-					["sourceQuest"] = 350, -- Look to an Old Friend
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
+					["sourceQuest"] = 350,	-- Look to an Old Friend
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 				}),
-				q(2746, { -- Items of Some Consequence
+				q(2746, {	-- Items of Some Consequence
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7766, -- Tyrion
-					["sourceQuest"] = 2745, -- Infiltrating the Castle
+					["qg"] = 7766,	-- Tyrion
+					["sourceQuest"] = 2745,	-- Infiltrating the Castle
 					["cost"] = {
-						{ "i", 4306, 3 }, -- Silk Cloth
-						{ "i", 8683, 2 }, -- Clara's Fresh Apple
+						{ "i", 4306, 3 },	-- Silk Cloth
+						{ "i", 8683, 2 },	-- Clara's Fresh Apple
 					},
 				}),
 				q(3787, {	-- Jonespyre's Request
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5566, -- Tannysa
+					["qg"] = 5566,	-- Tannysa
 					["altQuests"] = {
-						3788, -- Jonespyre's Request
+						3788,	-- Jonespyre's Request
 					},
 					["isBreadcrumb"] = true,
 				}),
-				q(350, { -- Look to an Old Friend
+				q(350, {	-- Look to an Old Friend
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 393, -- Shadow of the Past
-					["qg"] = 332, -- Master Mathias Shaw
+					["sourceQuest"] = 393,	-- Shadow of the Past
+					["qg"] = 332,	-- Master Mathias Shaw
 					["coord"] = { 76.0, 60.1, STORMWIND_CITY },
 				}),
 				q(8250, {	-- Magecraft
@@ -362,12 +362,12 @@ _.Zones =
 					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
-				q(1666, { -- Marshal Haggard
+				q(1666, {	-- Marshal Haggard
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 1 },	-- Warrior
-					["qg"] = 6089, -- Harry Burlguard
-					["sourceQuest"] = 1665, -- Bartleby's Mug
+					["qg"] = 6089,	-- Harry Burlguard
+					["sourceQuest"] = 1665,	-- Bartleby's Mug
 				}),
 				q(2360, {	-- Mathias and the Defias
 					["qg"] = 332,	-- Master Mathias Shaw
@@ -376,7 +376,7 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["lvl"] = 20,
 				}),
-				q(1861, { -- Mirror Lake
+				q(1861, {	-- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -389,7 +389,7 @@ _.Zones =
 						i(9513),	-- Ley Staff
 					},
 				}),
-				q(7562, { -- Mor'zul Bloodbringer
+				q(7562, {	-- Mor'zul Bloodbringer
 					["qg"] = 5520,	-- Spackle Thornberry <Demon Trainer>
 					["coord"] = { 25.8, 77.6, STORMWIND_CITY },
 					["classes"] = { WARLOCK },
@@ -415,15 +415,15 @@ _.Zones =
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
 				}),
-				q(1940, { -- Pristine Spider Silk
-					["qg"] = 5694, -- High Sorcerer Andromath
-					["sourceQuest"] = 1938, -- Ur's Treatise on Shadow Magic
+				q(1940, {	-- Pristine Spider Silk
+					["qg"] = 5694,	-- High Sorcerer Andromath
+					["sourceQuest"] = 1938,	-- Ur's Treatise on Shadow Magic
 					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
 					["maps"] = { DUSKWOOD },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["cost"] = {
-						{ "i", 7267, 8 }, -- Pristine Spider Silk
+						{ "i", 7267, 8 },	-- Pristine Spider Silk
 					},
 					["lvl"] = 26,
 				}),
@@ -448,13 +448,13 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(393, { -- Shadow of the Past
+				q(393, {	-- Shadow of the Past
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1646, -- Baros Alexston
-					["sourceQuest"] = 392, -- The Curious Visitor
+					["qg"] = 1646,	-- Baros Alexston
+					["sourceQuest"] = 392,	-- The Curious Visitor
 					["cost"] = {
-						{ "i", 8687, 1}, -- Sealed Description of Thredd's Visitor
+						{ "i", 8687, 1},	-- Sealed Description of Thredd's Visitor
 					},
 				}),
 				q(2206, {	-- Snatch and Grab
@@ -486,17 +486,17 @@ _.Zones =
 					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 3898, 1 }, -- Library Scrip
+						{ "i", 3898, 1 },	-- Library Scrip
 					},
 					["groups"] = {
 						i(3899),	-- Legends of the Gurubashi, Volume 3
 						i(2154),	-- The Story of Morgan Ladimore
 					},
 				}),
-				q(1688, { -- Surena Caledon
-					["qg"] = 6122, -- Gakin the Darkbinder
-					["sourceQuest"] = 1685, -- Gakin's Summons
-					["races"] = { 1, 7 }, -- Human and Gnome only
+				q(1688, {	-- Surena Caledon
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1685,	-- Gakin's Summons
+					["races"] = { 1, 7 },	-- Human and Gnome only
 					["classes"] = { 9 },	-- Warlock
 					["maps"] = { ELWYNN_FOREST },
 					["cost"] = {
@@ -512,32 +512,32 @@ _.Zones =
 						},
 					},
 				}),
-				q(4488, { -- Summon Felsteed
+				q(4488, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 461, -- Demisette Cloyce
+					["qg"] = 461,	-- Demisette Cloyce
 				}),
-				q(434, { -- The Attack!
+				q(434, {	-- The Attack!
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7766, -- Tyrion
-					["sourceQuest"] = 2746, -- Items of Some Consequence
+					["qg"] = 7766,	-- Tyrion
+					["sourceQuest"] = 2746,	-- Items of Some Consequence
 				}),
-				q(1689, { -- The Binding
+				q(1689, {	-- The Binding
 					["lvl"] = 10,
-					["races"] = { 1, 7 }, -- Human and Gnome only
+					["races"] = { 1, 7 },	-- Human and Gnome only
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 6122, -- Gakin the Darkbinder
-					["sourceQuest"] = 1688, -- Surena Caledon
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1688,	-- Surena Caledon
 				}),
-				q(392, { -- The Curious Visitor
+				q(392, {	-- The Curious Visitor
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1719, -- Warden Thelwater
-					["sourceQuest"] = 391, -- The Stockage Riots
+					["qg"] = 1719,	-- Warden Thelwater
+					["sourceQuest"] = 391,	-- The Stockage Riots
 					["cost"] = {
-						{ "i", 8687, 1}, -- Sealed Description of Thredd's Visitor
+						{ "i", 8687, 1},	-- Sealed Description of Thredd's Visitor
 					},
 				}),
 				q(3765, {  -- The Corruption Abroad
@@ -563,11 +563,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 56,
 				}),
-				q(394, { -- The Head of the Beast
+				q(394, {	-- The Head of the Beast
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["sourceQuest"] = 434, -- The Attack!
-					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["sourceQuest"] = 434,	-- The Attack!
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 				}),
 				q(8151, {	-- The Hunter's Charm
 					["qg"] = 5516,	-- Ulfir Ironbeard <Hunter Trainer>
@@ -588,61 +588,61 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(1274, { -- The Missing Diplomat (1/17)
+				q(1274, {	-- The Missing Diplomat (1/17)
 					["lvl"] = 28,
-					["qg"] = 4982, -- Thomas <Altar Boy>
+					["qg"] = 4982,	-- Thomas <Altar Boy>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 39.8, 28.3, STORMWIND_CITY },
 				}),
-				q(1241, { -- The Missing Diplomat (2/17)
+				q(1241, {	-- The Missing Diplomat (2/17)
 					["lvl"] = 28,
-					["qg"] = 4960, -- Bishop DeLavey
+					["qg"] = 4960,	-- Bishop DeLavey
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 78.4, 25.4, STORMWIND_CITY },
 					["sourceQuest"] = 1274,
 				}),
-				q(1242, { -- The Missing Diplomat (3/17)
+				q(1242, {	-- The Missing Diplomat (3/17)
 					["lvl"] = 28,
-					["qg"] = 4959, -- Jorgen
+					["qg"] = 4959,	-- Jorgen
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.2, 78.6, STORMWIND_CITY },
 					["sourceQuest"] = 1241,
 				}),
-				q(1243, { -- The Missing Diplomat (4/17)
+				q(1243, {	-- The Missing Diplomat (4/17)
 					["lvl"] = 28,
-					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1242,
 				}),
-				q(1246, { -- The Missing Diplomat (7/17)
+				q(1246, {	-- The Missing Diplomat (7/17)
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1245,
 				}),
-				q(1447, { -- The Missing Diplomat (8/17)
+				q(1447, {	-- The Missing Diplomat (8/17)
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4961, -- Dashel Stonefist
+					["qg"] = 4961,	-- Dashel Stonefist
 					["coord"] = { 70.5, 44.9, STORMWIND_CITY },
 					["description"] = "Dashel Stonefist will spawn 2 level 26 adds to fight alongside him.",
 					["sourceQuest"] = 1246,
 				}),
-				q(1247, { -- The Missing Diplomat (9/17)
+				q(1247, {	-- The Missing Diplomat (9/17)
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4961, -- Dashel Stonefist
+					["qg"] = 4961,	-- Dashel Stonefist
 					["coord"] = { 70.5, 44.9, STORMWIND_CITY },
 					["sourceQuest"] = 1447,
 				}),
-				q(1248, { -- The Missing Diplomat (10/17)
+				q(1248, {	-- The Missing Diplomat (10/17)
 					["lvl"] = 28,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 482, -- Elling Trias <Master of Cheese>
+					["qg"] = 482,	-- Elling Trias <Master of Cheese>
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1247,
@@ -650,7 +650,7 @@ _.Zones =
 				q(1015, {	-- The New Frontier
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2198, -- Crier Goodman
+					["qg"] = 2198,	-- Crier Goodman
 				}),
 				q(543, {	-- The Perenolde Tiara
 					["qg"] = 2285,	-- Count Remington Ridgewell
@@ -670,16 +670,16 @@ _.Zones =
 						},
 					},
 				}),
-				q(1790, { -- The Symbol of Life
-					["qg"] = 6171, -- Duthorian Rall
+				q(1790, {	-- The Symbol of Life
+					["qg"] = 6171,	-- Duthorian Rall
 					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"The Tome of Divinity\" (Quest #1786) in your quest log.",
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["repeatable"] = true,
 					["lvl"] = 12,
 				}),
-				q(1641, { -- The Tome of Divinity (1)
-					["qg"] = 6171, -- Duthorian Rall
+				q(1641, {	-- The Tome of Divinity (1)
+					["qg"] = 6171,	-- Duthorian Rall
 					["altQuests"] = {
 						2998,	-- The Tome of Divinity
 						3681,	-- The Tome of Divinity
@@ -689,58 +689,58 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1642, { -- The Tome of Divinity (2)
-					["provider"] = { "i", 6775 }, -- Tome of Divinity
-					["sourceQuest"] = 1641, -- The Tome of Divinity (1)
+				q(1642, {	-- The Tome of Divinity (2)
+					["provider"] = { "i", 6775 },	-- Tome of Divinity
+					["sourceQuest"] = 1641,	-- The Tome of Divinity (1)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1643, { -- The Tome of Divinity (3)
-					["qg"] = 6171, -- Duthorian Rall
-					["sourceQuest"] = 1642, -- The Tome of Divinity (2)
+				q(1643, {	-- The Tome of Divinity (3)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1642,	-- The Tome of Divinity (2)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1644, { -- The Tome of Divinity (4)
-					["qg"] = 6174, -- Stephanie Turner
-					["sourceQuest"] = 1643, -- The Tome of Divinity (3)
+				q(1644, {	-- The Tome of Divinity (4)
+					["qg"] = 6174,	-- Stephanie Turner
+					["sourceQuest"] = 1643,	-- The Tome of Divinity (3)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1780, { -- The Tome of Divinity (5)
-					["qg"] = 6174, -- Stephanie Turner
-					["sourceQuest"] = 1644, -- The Tome of Divinity (4)
+				q(1780, {	-- The Tome of Divinity (5)
+					["qg"] = 6174,	-- Stephanie Turner
+					["sourceQuest"] = 1644,	-- The Tome of Divinity (4)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1781, { -- The Tome of Divinity (6)
-					["qg"] = 6171, -- Duthorian Rall
-					["sourceQuest"] = 1644, -- The Tome of Divinity (5)
+				q(1781, {	-- The Tome of Divinity (6)
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuest"] = 1644,	-- The Tome of Divinity (5)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1786, { -- The Tome of Divinity (7)
-					["qg"] = 6173, -- Gazin Tenorm
-					["sourceQuest"] = 1781, -- The Tome of Divinity (6)
+				q(1786, {	-- The Tome of Divinity (7)
+					["qg"] = 6173,	-- Gazin Tenorm
+					["sourceQuest"] = 1781,	-- The Tome of Divinity (6)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
-				q(1788, { -- The Tome of Divinity (9)
-					["qg"] = 6173, -- Gazin Tenorm
-					["sourceQuest"] = 1787, -- The Tome of Divinity (8)
+				q(1788, {	-- The Tome of Divinity (9)
+					["qg"] = 6173,	-- Gazin Tenorm
+					["sourceQuest"] = 1787,	-- The Tome of Divinity (8)
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
 				q(2607, {	-- The Touch of Zanzil
 					["qg"] = 332,	-- Master Mathias Shaw
-					["sourceQuest"] = 2359, -- Klaven's Tower
+					["sourceQuest"] = 2359,	-- Klaven's Tower
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -748,7 +748,7 @@ _.Zones =
 				}),
 				q(2608, {	-- The Touch of Zanzil
 					["qg"] = 7207,	-- Doc Mixilpixil
-					["sourceQuest"] = 2607, -- The Touch of Zanzil
+					["sourceQuest"] = 2607,	-- The Touch of Zanzil
 					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
 					["description"] = "Doc Mixilpixil is located in the basement of the SI:7 building.\n\nType /lay to lie down for the operation.",
 					["races"] = ALLIANCE_ONLY,
@@ -757,7 +757,7 @@ _.Zones =
 				}),
 				q(2609, {	-- The Touch of Zanzil
 					["qg"] = 7207,	-- Doc Mixilpixil
-					["sourceQuest"] = 2608, -- The Touch of Zanzil
+					["sourceQuest"] = 2608,	-- The Touch of Zanzil
 					["description"] = "Simple Wildflowers are sold by Florist Gump on the Trade District side of the Canal near Old Town (64.4, 60.8).\nLeaded Vial can by purchased from any Trade Goods Vendor.\nBronze Tube can be purchased in limited supply from Engineering Vendors, or you can get an Engineer to craft you one.\nA Spool of Chartruese Thread is on the floor of the Finest Thread, which is on the Cathedral Square side of the Canal near The Park (39.9, 46.3).",
 					["coord"] = { 78.0, 59.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -786,14 +786,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(1938, { -- Ur's Treatise on Shadow Magic
-					["qg"] = 5694, -- High Sorcerer Andromath
-					["sourceQuest"] = 1939, -- High Sorcerer Andromath
+				q(1938, {	-- Ur's Treatise on Shadow Magic
+					["qg"] = 5694,	-- High Sorcerer Andromath
+					["sourceQuest"] = 1939,	-- High Sorcerer Andromath
 					["coord"] = { 37.6, 81.6, STORMWIND_CITY },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["cost"] = {
-						{ "i", 7266, 1 }, -- Ur's Treatise on Shadow Magic
+						{ "i", 7266, 1 },	-- Ur's Treatise on Shadow Magic
 					},
 					["lvl"] = 26,
 					["groups"] = {
@@ -804,8 +804,8 @@ _.Zones =
 						},
 					},
 				}),
-				q(1477,	{ -- Vital Supplies
-					["qg"] = 5694, -- High Sorcerer Andromath
+				q(1477,	{	-- Vital Supplies
+					["qg"] = 5694,	-- High Sorcerer Andromath
 					["isBreadcrumb"] = true,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -813,18 +813,18 @@ _.Zones =
 				q(332, {	-- Wine Shop Advert
 					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 1432, -- Renato Gallina
+					["qg"] = 1432,	-- Renato Gallina
 					["coord"] = { 57.0, 63.4, STORMWIND_CITY },
 					["g"] = {
 						i(2723),	-- Bottle of Dalaran Noir
 					},
 				}),
-				q(397, { -- You Have Served Us Well
+				q(397, {	-- You Have Served Us Well
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 }, -- Warlock
-					["qg"] = 1435, -- Zardeth of the Black Claw
-					["sourceQuest"] = 336, -- A Noble Brew
+					["classes"] = { 9 },	-- Warlock
+					["qg"] = 1435,	-- Zardeth of the Black Claw
+					["sourceQuest"] = 336,	-- A Noble Brew
 				}),
 			}),
 		}),

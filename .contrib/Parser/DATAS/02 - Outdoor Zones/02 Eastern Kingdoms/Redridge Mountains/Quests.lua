@@ -317,24 +317,24 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 14,
 				}),
-				q(1699, { -- The Rethban Gauntlet
-					["qg"] = 6166, -- Yorus Barleybrew
-					["sourceQuest"] = 1698, -- Yorus Barleybrew
+				q(1699, {	-- The Rethban Gauntlet
+					["qg"] = 6166,	-- Yorus Barleybrew
+					["sourceQuest"] = 1698,	-- Yorus Barleybrew
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
 				}),
-				q(1702, { -- The Shieldsmith
-					["qg"] = 6166, -- Yorus Barleybrew
-					["sourceQuest"] = 1699, -- The Rethban Gauntlet
+				q(1702, {	-- The Shieldsmith
+					["qg"] = 6166,	-- Yorus Barleybrew
+					["sourceQuest"] = 1699,	-- The Rethban Gauntlet
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["cost"] = {
-						{ "i", 6843, 1 }, -- Cask of Scalder
+						{ "i", 6843, 1 },	-- Cask of Scalder
 					},
 					["lvl"] = 20,
 					["g"] = {
-						i(6970), -- Furen's Favor
+						i(6970),	-- Furen's Favor
 					},
 				}),
 				q(178, {	-- Theocritus' Retrieval
@@ -398,10 +398,10 @@ _.Zones =
 						},
 					},
 				}),
-				q(1698, { -- Yorus Barleybrew
+				q(1698, {	-- Yorus Barleybrew
 					["qgs"] = {
-						5479, -- Wu Shen <Warrior Trainer>
-						7315, -- Darnath Bladesigner <Warrior Trainer>
+						5479,	-- Wu Shen <Warrior Trainer>
+						7315,	-- Darnath Bladesigner <Warrior Trainer>
 					},
 					["maps"] = { DARNASSUS, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

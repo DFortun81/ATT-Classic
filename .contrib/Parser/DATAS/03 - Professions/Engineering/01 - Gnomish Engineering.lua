@@ -190,12 +190,12 @@ profession(202, {	-- Engineering
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
-					["sourceQuest"] = 3643, -- Show Your Work
+					["sourceQuest"] = 3643,	-- Show Your Work
 					["altQuests"] = {
 						3647,	-- Membership Card Renewal
 					},
 					["g"] = {
-						i(10790), -- Gnome Engineer Membership Card
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3647, {	-- Membership Card Renewal
@@ -207,12 +207,12 @@ profession(202, {	-- Engineering
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
-					["sourceQuest"] = 3641, -- Show Your Work
+					["sourceQuest"] = 3641,	-- Show Your Work
 					["altQuests"] = {
 						3645,	-- Membership Card Renewal
 					},
 					["g"] = {
-						i(10790), -- Gnome Engineer Membership Card
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3640, {	-- The Pledge of Secrecy
@@ -224,9 +224,9 @@ profession(202, {	-- Engineering
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["sourceQuests"] = {
-						3630, -- Gnome Engineering
-						3630, -- Gnome Engineering
-						3630, -- Gnome Engineering
+						3630,	-- Gnome Engineering
+						3630,	-- Gnome Engineering
+						3630,	-- Gnome Engineering
 					},
 					["altQuests"] = {
 						3638,	-- The Pledge of Secrecy
@@ -243,7 +243,7 @@ profession(202, {	-- Engineering
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
-					["sourceQuest"] = 3640, -- The Pledge of Secrecy
+					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
 					["altQuests"] = {
 						3639,	-- Show Your Work
 					},
@@ -253,7 +253,7 @@ profession(202, {	-- Engineering
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
 					["g"] = {
-						i(10790), -- Gnome Engineer Membership Card
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3642, {	-- The Pledge of Secrecy
@@ -265,8 +265,8 @@ profession(202, {	-- Engineering
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
 					["sourceQuests"] = {
-						3635, -- Gnome Engineering
-						3637, -- Gnome Engineering
+						3635,	-- Gnome Engineering
+						3637,	-- Gnome Engineering
 					},
 					["altQuests"] = {
 						3638,	-- The Pledge of Secrecy
@@ -283,7 +283,7 @@ profession(202, {	-- Engineering
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
-					["sourceQuest"] = 3642, -- The Pledge of Secrecy
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = {
 						3639,	-- The Pledge of Secrecy
 					},
@@ -293,7 +293,7 @@ profession(202, {	-- Engineering
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
 					["g"] = {
-						i(10790), -- Gnome Engineer Membership Card
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 			}),

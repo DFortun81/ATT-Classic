@@ -308,7 +308,7 @@ _.Instances = {
 					},
 				},
 				{
-					["questID"] = 4729,	--  Kibler's Exotic Pets
+					["questID"] = 4729,	-- Kibler's Exotic Pets
 					["qg"] = 10260,	-- Kibler
 					["coord"] = { 65.8, 22.0, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
@@ -1107,13 +1107,13 @@ _.Instances = {
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
 						["groups"] = {
 							{
-								["itemID"] = 12358, -- Darkstone Tablet
+								["itemID"] = 12358,	-- Darkstone Tablet
 								["questID"] = 4768,	-- The Darkstone Tablet
 								["description"] = "This is the white tablet leaning up against the wall in the Whelp Room.",
 								["races"] = HORDE_ONLY,
 							},
 							{
-								["itemID"] = 12352, -- Doomrigger's Clasp
+								["itemID"] = 12352,	-- Doomrigger's Clasp
 								["questID"] = 4764,	-- Doomrigger's Clasp
 								["description"] = "Can be found in a coffer in the Whelp Room behind a fallen column to the left of the ramp leading to the next room.\nNOTE: Most groups skip this room, so ask your group to clear to the column.",
 								["races"] = ALLIANCE_ONLY,

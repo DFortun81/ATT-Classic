@@ -206,9 +206,9 @@ _.Zones =
 					["maps"] = { THE_HINTERLANDS, TANARIS, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 738, 1}, -- Sack of Barley
-						{ "i", 739, 1}, -- Sack of Corn
-						{ "i", 740, 1}, -- Sack of Rye
+						{ "i", 738, 1},	-- Sack of Barley
+						{ "i", 739, 1},	-- Sack of Corn
+						{ "i", 740, 1},	-- Sack of Rye
 					},
 					["lvl"] = 40,
 					["groups"] = {
@@ -235,7 +235,7 @@ _.Zones =
 					["coord"] = { 44.6, 80.2, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 6037, 1 }, -- Truesilver Bar
+						{ "i", 6037, 1 },	-- Truesilver Bar
 					},
 					["lvl"] = 40,
 				}),
@@ -246,7 +246,7 @@ _.Zones =
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 742, 1 }, -- A Sycamore Branch
+						{ "i", 742, 1 },	-- A Sycamore Branch
 					},
 					["lvl"] = 40,
 					["groups"] = {
@@ -265,7 +265,7 @@ _.Zones =
 					["maps"] = { SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 743, 1 }, -- Bundle of Charred Oak
+						{ "i", 743, 1 },	-- Bundle of Charred Oak
 					},
 					["lvl"] = 40,
 					["g"] = {

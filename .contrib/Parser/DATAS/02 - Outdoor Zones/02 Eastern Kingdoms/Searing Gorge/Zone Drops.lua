@@ -7,7 +7,7 @@ _.Zones =
 		m(SEARING_GORGE, {
 			n(ZONEDROPS, {
 				i(10511, {	-- Golem Oil
-					["questID"] = 3442, -- The Flawless Flame
+					["questID"] = 3442,	-- The Flawless Flame
 					["crs"] = {
 						5854,	-- Heavy War Golem
 						5855,	-- Magma Elemental
@@ -15,7 +15,7 @@ _.Zones =
 					},
 				}),
 				i(11818, {	-- Grimesilt Outhouse Key
-					["questID"] = 4451, -- The Key to Freedom
+					["questID"] = 4451,	-- The Key to Freedom
 					["crs"] = {
 						15692,	-- Dark Iron Kidnapper
 						8566,	-- Dark Iron Lookout
@@ -26,7 +26,7 @@ _.Zones =
 					},
 				}),
 				i(10509, {	-- Heart of Flame
-					["questID"] = 3442, -- The Flawless Flame
+					["questID"] = 3442,	-- The Flawless Flame
 					["crs"] = {
 						5850,	-- Blazing Elemental
 						5852,	-- Inferno Elemental
@@ -38,11 +38,11 @@ _.Zones =
 					["cr"] = 9318,	-- Incendosaur
 				}),
 				i(18960, {	-- Lookout's Spyglass
-					["questID"] = 7728, -- STOLEN: Smithing Tuyere and Lookout's Spyglass
+					["questID"] = 7728,	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["cr"] = 8566,	-- Dark Iron Lookout
 				}),
 				i(10000, {	-- Margol's Horn
-					["questID"] = 3181, -- The Horn of the Beast
+					["questID"] = 3181,	-- The Horn of the Beast
 					["cr"] = 5833,	-- Margol the Rager
 					["coord"] = { 73.6, 82.6, SEARING_GORGE },
 				}),
@@ -53,7 +53,7 @@ _.Zones =
 					["cr"] = 5861,	-- Twilight Fire Guard
 				}),
 				i(10458, {	-- Prayer to Elune
-					["questID"] = 3378, -- Prayer to Elune
+					["questID"] = 3378,	-- Prayer to Elune
 					["crs"] = {
 						5860,	-- Twilight Dark Shaman
 						5861,	-- Twilight Fire Guard
@@ -62,7 +62,7 @@ _.Zones =
 					},
 				}),
 				i(21547, {	-- Recipe: Elixir of Greater Firepower
-					["u"] = 3, -- Added in phase 5
+					["u"] = 3,	-- Added in phase 5
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster
@@ -70,15 +70,15 @@ _.Zones =
 					},
 				}),
 				i(18959, {	-- Smithing Tuyere
-					["questID"] = 7728, -- STOLEN: Smithing Tuyere and Lookout's Spyglass
+					["questID"] = 7728,	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["cr"] = 5840,	-- Dark Iron Steamsmith
 				}),
 				i(11725, {	-- Solid Crystal Leg Shaft
-					["questID"] = 4450, -- Ledger from Tanaris
+					["questID"] = 4450,	-- Ledger from Tanaris
 					["cr"] = 5856,	-- Glassweb Spider
 				}),
 				i(10552, {	-- Symbol of Ragnaros
-					["questID"] = 3452, -- The Flame's Casing
+					["questID"] = 3452,	-- The Flame's Casing
 					["crs"] = {
 						5860,	-- Twilight Dark Shaman
 						5861,	-- Twilight Fire Guard
@@ -87,7 +87,7 @@ _.Zones =
 					},
 				}),
 				i(10551, {	-- Thorium Plated Dagger
-					["questID"] = 3443, -- Forging the Shaft
+					["questID"] = 3443,	-- Forging the Shaft
 					["crs"] = {
 						5839,	-- Dark Iron Geologist
 						15692,	-- Dark Iron Kidnapper

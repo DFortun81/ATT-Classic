@@ -7,7 +7,7 @@ _.Holidays =
 		["g"] = {
 			n(VENDORS, {
 				["groups"] = {
-					n(13433, { -- Wulmort Jinglepocket <Smokywood Pastures>
+					n(13433, {	-- Wulmort Jinglepocket <Smokywood Pastures>
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
 							i(17201),	-- Recipe: Egg Nog

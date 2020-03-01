@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				i(10575, {	-- Black Dragonflight Molt
 					["questID"] = 4023,	-- A Taste of Flame
-					["cr"] = 9461, -- Frenzied Black Drake <Cyrus's Minion>
+					["cr"] = 9461,	-- Frenzied Black Drake <Cyrus's Minion>
 					["coord"] = { 93.2, 32.6, BURNING_STEPPES },
 				}),
 				i(11266, {	-- Fractured Elemental Shard
@@ -60,7 +60,7 @@ _.Zones =
 				}),
 				i(22338, {	-- Volcanic Ash
 					["questID"] = 8921,	-- The Ectoplasmic Distiller
-					["cr"] = 10078, -- Terrorspark
+					["cr"] = 10078,	-- Terrorspark
 					["u"] = 3,	-- Not available yet.
 				}),
 			}),

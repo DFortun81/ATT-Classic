@@ -307,7 +307,7 @@ _.Instances = {
 				},
 				{
 					["questID"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
-					["provider"] = { "o", 164867 }, -- WANTED
+					["provider"] = { "o", 164867 },	-- WANTED
 					["coord"] = { 3.9, 47.4, BADLANDS },
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
@@ -316,7 +316,7 @@ _.Instances = {
 				{
 					["questID"] = 4082,	-- KILL ON SIGHT: High Ranking Dark Iron Officials
 					["sourceQuest"] = 4081,	-- KILL ON SIGHT: Dark Iron Dwarves
-					["provider"] = { "o", 164868 }, -- KILL ON SIGHT
+					["provider"] = { "o", 164868 },	-- KILL ON SIGHT
 					["coord"] = { 3.9, 47.4, BADLANDS },
 					["maps"] = { BADLANDS },
 					["races"] = HORDE_ONLY,
@@ -519,7 +519,7 @@ _.Instances = {
 					},
 					["lvl"] = 50,
 					["altQuests"] = {
-						3911, -- The Last Element [7201 and 3911 look identical, but WoWHead doesn't have much info on 3911]
+						3911,	-- The Last Element [7201 and 3911 look identical, but WoWHead doesn't have much info on 3911]
 					},
 					["groups"] = {
 						i(12038),	-- Lagrave's Seal

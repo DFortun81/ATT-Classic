@@ -42,11 +42,11 @@ _.Zones =
 						i(3763),	-- Lunar Buckler
 					},
 				}),
-				q(1712, { -- Cyclonian
-					["qg"] = 6176, -- Bath'rah the Windwatcher
-					["sourceQuest"] = 1791, -- The Windwatcher
+				q(1712, {	-- Cyclonian
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["sourceQuest"] = 1791,	-- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["classes"] = { 1 }, -- Warrior
+					["classes"] = { 1 },	-- Warrior
 					["cost"] = {
 						{ "i", 6929, 1 },	-- Bath'rah's Parchment
 						{ "i", 3357, 8 },	-- Liferoot
@@ -84,12 +84,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(1714, { -- Essence of the Exile
-					["qg"] = 6176, -- Bath'rah the Windwatcher
-					["sourceQuest"] = 1791, -- The Windwatcher
+				q(1714, {	-- Essence of the Exile
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["sourceQuest"] = 1791,	-- The Windwatcher
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ARATHI_HIGHLANDS },
-					["classes"] = { 1 }, -- Warrior
+					["classes"] = { 1 },	-- Warrior
 					["altQuests"] = {
 						1712,	-- Cyclonian
 					},
@@ -199,11 +199,11 @@ _.Zones =
 					["lvl"] = 24,
 					["classes"] = { 4 },	-- Rogue
 				}),
-				q(1713, { -- The Summoning
-					["qg"] = 6176, -- Bath'rah the Windwatcher
-					["sourceQuest"] = 1712, -- Cyclonian
+				q(1713, {	-- The Summoning
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["sourceQuest"] = 1712,	-- Cyclonian
 					["coord"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
-					["classes"] = { 1 }, -- Warrior
+					["classes"] = { 1 },	-- Warrior
 					["cost"] = {
 						{ "i", 6894, 1 },	-- Whirlwind Heart
 					},
@@ -229,15 +229,15 @@ _.Zones =
 						i(3601),	-- Syndicate Missive
 					},
 				}),
-				q(1792, { -- Whirlwind Weapon
-					["qg"] = 6176, -- Bath'rah the Windwatcher
-					["sourceQuest"] = 1713, -- The Summoning
-					["classes"] = { 1 }, -- Warrior
+				q(1792, {	-- Whirlwind Weapon
+					["qg"] = 6176,	-- Bath'rah the Windwatcher
+					["sourceQuest"] = 1713,	-- The Summoning
+					["classes"] = { 1 },	-- Warrior
 					["lvl"] = 30,
 					["groups"] = {
-						i(6975), -- Whirlwind Axe
-						i(6977), -- Whirlwind Sword
-						i(6976), -- Whirlwind Warhammer
+						i(6975),	-- Whirlwind Axe
+						i(6977),	-- Whirlwind Sword
+						i(6976),	-- Whirlwind Warhammer
 					},
 				}),
 			}),

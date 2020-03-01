@@ -6,7 +6,7 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(LOCH_MODAN, {
 			n(ZONEDROPS, {
-				i(5319,  { -- Bashing Pauldrons
+				i(5319,  {	-- Bashing Pauldrons
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 				}),
 				i(2939, {	-- Crocolisk Tear
@@ -27,7 +27,7 @@ _.Zones =
 						1185,	-- Wood Lurker
 					},
 				}),
-				i(2823,  { -- Mo'grosh Can Opener
+				i(2823,  {	-- Mo'grosh Can Opener
 					["cr"] = 1180,  -- Mo'grosh Brute
 				}),
 				i(2607, {	-- Mo'grosh Crystal
@@ -42,49 +42,49 @@ _.Zones =
 						1181,	-- Mo'grosh Shaman
 					},
 				}),
-				i(2821,  { -- Mo'grosh Masher
+				i(2821,  {	-- Mo'grosh Masher
 					["crs"] = {
 						14267,  -- Emogg the Crusher
 						1179,  -- Mo'grosh Enforcer
 					},
 				}),
-				i(2822,  { -- Mo'grosh Toothpick
+				i(2822,  {	-- Mo'grosh Toothpick
 					["cr"] = 1178,  -- Mo'grosh Ogre
 				}),
-				i(4949,  { -- Orcish Cleaver
+				i(4949,  {	-- Orcish Cleaver
 					["cr"] = 7170,  -- Thragomm <Horde Runner>
 				}),
-				i(2283,  { -- Rat Cloth Belt
+				i(2283,  {	-- Rat Cloth Belt
 					["cr"] = 1177,  -- Tunnel Rat Surveyor
 				}),
-				i(2281,  { -- Rodentia Flint Axe
+				i(2281,  {	-- Rodentia Flint Axe
 					["crs"] = {
 						1176,  -- Tunnel Rat Forager
 						1202,  -- Tunnel Rat Kobold
 					},
 				}),
-				i(2282,  { -- Rodentia Shortsword
+				i(2282,  {	-- Rodentia Shortsword
 					["crs"] = {
 						1173,  -- Tunnel Rat Scout
 						1172,  -- Tunnel Rat Vermin
 					},
 				}),
-				i(2274,  { -- Sapper's Gloves
+				i(2274,  {	-- Sapper's Gloves
 					["cr"] = 1222,  -- Dark Iron Sapper
 				}),
-				i(2265,  { -- Stonesplinter Axe
+				i(2265,  {	-- Stonesplinter Axe
 					["cr"] = 1163,  -- Stonesplinter Skullthumper
 				}),
-				i(2268,  { -- Stonesplinter Blade
+				i(2268,  {	-- Stonesplinter Blade
 					["crs"] = {
 						1162,  -- Stonesplinter Scout
 						1161,  -- Stonesplinter Trogg
 					},
 				}),
-				i(2266,  { -- Stonesplinter Dagger
+				i(2266,  {	-- Stonesplinter Dagger
 					["cr"] = 1166,  -- Stonesplinter Seer
 				}),
-				i(2267,  { -- Stonesplinter Mace
+				i(2267,  {	-- Stonesplinter Mace
 					["cr"] = 1197,  -- Stonesplinter Shaman
 				}),
 				i(5109),	-- Stonesplinter Rags

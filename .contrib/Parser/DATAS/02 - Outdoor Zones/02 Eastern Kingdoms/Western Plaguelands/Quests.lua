@@ -7,7 +7,7 @@ _.Zones =
 		m(WESTERN_PLAGUELANDS, {
 			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands!
-					["qg"] = 2198, -- Crier Goodman
+					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -327,7 +327,7 @@ _.Zones =
 					},
 				}),
 				q(5221, {	-- Dalson's Tears Cauldron
-					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = {
 						5219,	-- Target: Dalson's Tears
@@ -353,7 +353,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5218, {	-- Felstone Field Cauldron
-					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = {
 						5216,	-- Target: Felstone Field
@@ -368,7 +368,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5227, {	-- Gahrron's Withering Cauldron
-					["provider"] = { "o", 176392 },	--  Scourge Cauldron
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuests"] = {
 						5225,	-- Target: Gahrron's Withering
 						5235,	-- Target: Gahrron's Withering
@@ -581,7 +581,7 @@ _.Zones =
 					["lvl"] = 52,
 				}),
 				q(5217, {	-- Return to Chillwind Camp
-					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 					["sourceQuest"] = 5216,	-- Target: Felstone Field
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -591,7 +591,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5220, {	-- Return to Chillwind Camp
-					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["sourceQuest"] = 5219,	-- Target: Dalson's Tears
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -601,7 +601,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5223, {	-- Return to Chillwind Camp
-					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["sourceQuest"] = 5222,	-- Target: Writhing Haunt
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -611,7 +611,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5226, {	-- Return to Chillwind Camp
-					["provider"] = { "o", 176392 },	--  Scourge Cauldron
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 5225,	-- Target: Gahrron's Withering
 					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -621,7 +621,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5230, {	-- Return to the Bulwark
-					["provider"] = { "o", 176361 },	--  Scourge Cauldron
+					["provider"] = { "o", 176361 },	-- Scourge Cauldron
 					["sourceQuest"] = 5229,	-- Target: Felstone Field
 					["coord"] = { 37.2, 56.9, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
@@ -631,7 +631,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5232, {	-- Return to the Bulwark
-					["provider"] = { "o", 177289 },	--  Scourge Cauldron
+					["provider"] = { "o", 177289 },	-- Scourge Cauldron
 					["sourceQuest"] = 5231, 	-- Target: Dalson's Tears
 					["coord"] = { 46.2, 52, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
@@ -641,7 +641,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5234, {	-- Return to the Bulwark
-					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["sourceQuest"] = 5233,	-- Target: Writhing Haunt
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
@@ -651,7 +651,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5236, {	-- Return to the Bulwark
-					["provider"] = { "o", 176392 },	--  Scourge Cauldron
+					["provider"] = { "o", 176392 },	-- Scourge Cauldron
 					["sourceQuest"] = 5235,	-- Target: Gahrron's Withering
 					["coord"] = { 62.5, 58.6, WESTERN_PLAGUELANDS },
 					["races"] = HORDE_ONLY,
@@ -888,7 +888,7 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5224, {	-- Writhing Haunt Cauldron
-					["provider"] = { "o", 176393 },	--  Scourge Cauldron
+					["provider"] = { "o", 176393 },	-- Scourge Cauldron
 					["coord"] = { 53, 65.7, WESTERN_PLAGUELANDS },
 					["sourceQuests"] = {
 						5222,	-- Target: Writhing Haunt

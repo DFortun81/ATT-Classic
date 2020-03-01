@@ -36,8 +36,8 @@ _.Zones =
 						i(11104, {	-- Large Compass
 							["questID"] = 3845,	-- It's a Secret to Everybody
 						}),
-						i(11108), -- Faded Photograph
-						i(3108), -- Heavy Throwing Dagger
+						i(11108),	-- Faded Photograph
+						i(3108),	-- Heavy Throwing Dagger
 					},
 				}),
 				i(11316, {	-- Dinosaur Bone

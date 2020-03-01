@@ -101,7 +101,7 @@ _.Zones =
 					["qg"] = 2057,	-- Huldar
 					["sourceQuest"] = 273,	-- Resupplying the Excavation
 				}),
-				q(704, { -- Agmond's Fate
+				q(704, {	-- Agmond's Fate
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 739,	-- Murdaloc
 					["coord"] = { 65.9, 65.6, LOCH_MODAN },
@@ -317,7 +317,7 @@ _.Zones =
 					["g"] = {
 						i(5131),	-- Knowledge: Stonesplinter Disguise
 					},
-					["u"] = 1, -- Never Available
+					["u"] = 1,	-- Never Available
 				}),
 				q(1338, {	-- Stormpike's Order
 					["lvl"] = 9,

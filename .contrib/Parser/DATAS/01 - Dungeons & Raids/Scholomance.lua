@@ -15,7 +15,7 @@ _.Instances = {
 		["lvl"] = 58,
 		["groups"] = {
 			n(QUESTS, {
-				q(5803, { -- Araj's Scarab (A)
+				q(5803, {	-- Araj's Scarab (A)
 					["qg"] = 11056,	-- Alchemist Arbington
 					["sourceQuest"] = 5801,	-- Fire Plume Forged (A)
 					["coord"] = { 42.7, 83.8, WESTERN_PLAGUELANDS },
@@ -145,7 +145,7 @@ _.Instances = {
 						i(13544),	-- Spectral Essence
 					},
 				}),
-				q(5515, { -- Krastinov's Bag of Horrors
+				q(5515, {	-- Krastinov's Bag of Horrors
 					["qg"] = 11216,	-- Eva Sarkhoff
 					["sourceQuest"] = 5382,	-- Doctor Theolen Krastinov, the Butcher
 					["coord"] = { 70.2, 73.7, WESTERN_PLAGUELANDS },
@@ -183,7 +183,7 @@ _.Instances = {
 					["maps"] = { STRATHOLME },
 					["lvl"] = 57,
 				}),
-				q(5538, { -- Mold Rhymes With... (A)
+				q(5538, {	-- Mold Rhymes With... (A)
 					["qg"] = 11056,	-- Alchemist Arbington
 					["sourceQuest"] = 5537,	-- Skeletal Fragments (A)
 					["coord"] = { 42.66, 83.77, WESTERN_PLAGUELANDS },

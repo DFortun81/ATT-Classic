@@ -74,7 +74,7 @@ _.Zones =
 				}),
 				q(2582, {	-- Rage of Ages
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["sourceQuest"] = 2581, -- Snickerfang Jowls
+					["sourceQuest"] = 2581,	-- Snickerfang Jowls
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -103,7 +103,7 @@ _.Zones =
 				}),
 				q(2586, {	-- Salt of the Scorpok
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["sourceQuest"] = 2585, -- The Decisive Striker
+					["sourceQuest"] = 2585,	-- The Decisive Striker
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -131,7 +131,7 @@ _.Zones =
 				}),
 				q(2584, {	-- Spirit of the Boar
 					["qg"] = 7505,	-- Bloodmage Drazial
-					["sourceQuest"] = 2583, -- A Boar's Vitality
+					["sourceQuest"] = 2583,	-- A Boar's Vitality
 					["coord"] = { 50.6, 14.2, BLASTED_LANDS },
 					["repeatable"] = true,
 					["cost"] = {

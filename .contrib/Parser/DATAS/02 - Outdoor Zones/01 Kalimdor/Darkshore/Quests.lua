@@ -499,21 +499,21 @@ _.Zones =
 				}),
 				q(729, {	-- The Absent Minded Prospector (1/5)
 					["qg"] = 2913,	-- Archaeologist Hollee
-					["sourceQuest"] = 730, -- Trouble in Darkshore?
+					["sourceQuest"] = 730,	-- Trouble in Darkshore?
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
 				q(731, {	-- The Absent Minded Prospector (2/5)
 					["qg"] = 2917,	-- Prospector Remtravel
-					["sourceQuest"] = 729, -- The Absent Minded Prospector (1/5)
+					["sourceQuest"] = 729,	-- The Absent Minded Prospector (1/5)
 					["coord"] = { 35.7, 83.7, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
 				}),
 				q(741, {	-- The Absent Minded Prospector (3/5)
 					["qg"] = 2913,	-- Archaeologist Hollee
-					["sourceQuest"] = 731, -- The Absent Minded Prospector (2/5)
+					["sourceQuest"] = 731,	-- The Absent Minded Prospector (2/5)
 					["coord"] = { 37.4, 41.8, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 15,
@@ -633,8 +633,8 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["crs"] = {
-						2339, -- Twilight Thug
-						2338, -- Twilight Disciple
+						2339,	-- Twilight Thug
+						2338,	-- Twilight Disciple
 					},
 					["lvl"] = 10,
 				}),
@@ -760,7 +760,7 @@ _.Zones =
 					["lvl"] = 15,
 				}),
 				q(4740, {	-- WANTED: Murkdeep!
-					["provider"] = { "o", 175320 }, -- WANTED: Murkdeep!
+					["provider"] = { "o", 175320 },	-- WANTED: Murkdeep!
 					["description"] = "Quest given by notice board outside of the inn. To complete the quest, go to 36.2, 76.3. Kill the murlocs at the camp and then a few waves of murlocs before Murkblood and a friend show up.",
 					["coord"] = { 37.2, 44.2, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,

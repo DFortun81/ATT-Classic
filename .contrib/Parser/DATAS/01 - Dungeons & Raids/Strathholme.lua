@@ -62,7 +62,7 @@ _.Instances = {
 						i(3928),	-- Superior Healing Potion
 					},
 				}),
-				q(5944, { -- In Dreams
+				q(5944, {	-- In Dreams
 					["qg"] = 1842,	-- Highlord Taelan Fordring <Highlord of the Scarlet Crusade>
 					["sourceQuest"] = 5862,	-- Scarlet Subterfuge
 					["coord"] = { 42, 14.8, WESTERN_PLAGUELANDS },
@@ -87,7 +87,7 @@ _.Instances = {
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
 				}),
-				q(8930, { -- In Search of Anthion
+				q(8930, {	-- In Search of Anthion
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
@@ -356,12 +356,12 @@ _.Instances = {
 						10406, 	-- Ghoul Ravener
 					},
 				}),
-				i(18658,  { -- Schematic: Ultra-Flash Shadow Reflector
+				i(18658,  {	-- Schematic: Ultra-Flash Shadow Reflector
 					["crs"] = {
 						10426,  -- Crimson Inquisitor
 					},
 				}),
-				i(16052,  { -- Schematic: Voice Amplification Modulator
+				i(16052,  {	-- Schematic: Voice Amplification Modulator
 					["crs"] = {
 						10426,  -- Crimson Inquisitor
 					},

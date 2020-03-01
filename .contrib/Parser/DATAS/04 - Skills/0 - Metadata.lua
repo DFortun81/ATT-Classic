@@ -12,7 +12,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
+					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
 				},
 			},
 			{
@@ -23,7 +23,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
+					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
 				},
 			},
 			{
@@ -39,9 +39,9 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
-					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
-					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
+					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
+					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
 				},
 			},
 			{
@@ -54,8 +54,8 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
@@ -66,7 +66,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
@@ -78,7 +78,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
@@ -92,7 +92,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
@@ -106,7 +106,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
 				},
 			},
 			{
@@ -129,7 +129,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.1, 57.7, STORMWIND_CITY }, -- Woo Ping
+					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
 				},
 			},
 			{
@@ -140,8 +140,8 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 57.5, 46.8, DARNASSUS }, -- Ilyenia Moonfire
-					{ 62.2, 89.6, IRONFORGE }, -- Bixi Wobblebonk
+					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
+					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
 				},
 			},
 			{
@@ -153,7 +153,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
@@ -165,7 +165,7 @@ _.Skills =
 					WARRIOR,
 				},
 				["coords"] = { 
-					{ 61.2, 89.5, IRONFORGE }, -- Buliwyf Stonehand
+					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{

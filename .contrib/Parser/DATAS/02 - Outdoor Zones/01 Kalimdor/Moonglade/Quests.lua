@@ -21,7 +21,7 @@ _.Zones =
 						},
 					},
 				},
-				q(5931, { -- Back to Darnassus
+				q(5931, {	-- Back to Darnassus
 					["qg"] = 11802,  -- Dendrite Starblaze
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
@@ -39,7 +39,7 @@ _.Zones =
 						recipe(8946),	-- Cure Poison
 					},
 				}),
-				q(5929, { -- Great Bear Spirit
+				q(5929, {	-- Great Bear Spirit
 					["qg"] = 11802,  -- Dendrite Starblaze
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid

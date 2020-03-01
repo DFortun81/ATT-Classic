@@ -95,55 +95,55 @@ _.PvP =
 							q(7281, {	-- Brotherly Love (Horde)
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13154, -- Commander Louis Philips
+								["qg"] = 13154,	-- Commander Louis Philips
 							}),
 							q(7124, {	-- Capture a Mine
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
 								["qgs"] = {
-									12097, -- Frostwolf Quartermaster
-									13776, -- Corporal Teeka Bloodsnarl
+									12097,	-- Frostwolf Quartermaster
+									13776,	-- Corporal Teeka Bloodsnarl
 								}, 
 							}),
 							q(7165, {	-- Earned Reverence
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, REVERED },    -- Frostwolf Clan, Revered
 								["cost"] = {
 									{ "i", 17906, 1 },	-- Frostwolf Insignia Rank 3
 								},
 								["g"] = {
-									i(17907), -- Frostwolf Insignia Rank 4
+									i(17907),	-- Frostwolf Insignia Rank 4
 								},
 							}),
 							q(7224, {	-- Enemy Booty
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13176, -- Smith Regzar
+								["qg"] = 13176,	-- Smith Regzar
 							}),
 							q(7302, {	-- Fallen Sky Lords
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13153, -- Commander Mulfort
+								["qg"] = 13153,	-- Commander Mulfort
 							}),
 							q(8272, {	-- Hero of the Frostwolf
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13817, -- Voggah Deathgrip
-								["sourceQuest"] = 7142, -- The Battle for Alterac
+								["qg"] = 13817,	-- Voggah Deathgrip
+								["sourceQuest"] = 7142,	-- The Battle for Alterac
 								["g"] = {
-									i(19107), -- Bloodseeker
-									i(20648), -- Cold Forged Hamme
-									i(19106), -- Ice Barbed Spear
-									i(19108), -- Wand of Biting Cold
+									i(19107),	-- Bloodseeker
+									i(20648),	-- Cold Forged Hamme
+									i(19106),	-- Ice Barbed Spear
+									i(19108),	-- Wand of Biting Cold
 								},
 							}),
 							q(7164, {	-- Honored Amongst the Clan
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, HONORED },    -- Frostwolf Clan, Honored
 								["cost"] = {
@@ -156,20 +156,20 @@ _.PvP =
 							q(7241, {	-- In Defense of Frostwolf
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
-								["qg"] = 13842, -- Frostwolf Ambassador Rokhstrom
+								["qg"] = 13842,	-- Frostwolf Ambassador Rokhstrom
 							}),
 							q(8369, {	-- Invaders of Alterac Valley
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 							}),
 							q(7166, {	-- Legendary Heroes
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, EXALTED },    -- Frostwolf Clan, Exalted
-								["sourceQuest"] = 7165, -- Earned Reverence
+								["sourceQuest"] = 7165,	-- Earned Reverence
 								["cost"] = {
 									{ "i", 17907, 1 },	-- Frostwolf Insignia Rank 4
 								},
@@ -180,13 +180,13 @@ _.PvP =
 							q(6741, {	-- More Booty!
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13176, -- Smith Regzar
+								["qg"] = 13176,	-- Smith Regzar
 								["repeatable"] = true,
 							}),
 							q(7161, {	-- Proving Grounds
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["g"] = {
 									i(17690),  -- Frostwolf Insignia Rank 1
@@ -196,10 +196,10 @@ _.PvP =
 							q(7163, {	-- Rise and Be Recognized
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, FRIENDLY },    -- Frostwolf Clan, Friendly
-								["sourceQuest"] = 7161, -- Proving Grounds
+								["sourceQuest"] = 7161,	-- Proving Grounds
 								["cost"] = {
 									{ "i", 17690, 1 },	-- Frostwolf Insignia Rank 1
 								},
@@ -210,21 +210,21 @@ _.PvP =
 							q(7123, {	-- Speak with our Quartermaster
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13798, -- Jotek
+								["qg"] = 13798,	-- Jotek
 							}),
 							q(7142, {	-- The Battle for Alterac
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13817, -- Voggah Deathgrip
-								["sourceQuest"] = 7222, -- Speak with Voggah Deathgrip
+								["qg"] = 13817,	-- Voggah Deathgrip
+								["sourceQuest"] = 7222,	-- Speak with Voggah Deathgrip
 							}),
 							q(7167, {	-- The Eye of Command
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13840, -- Warmaster Laggrond
+								["qg"] = 13840,	-- Warmaster Laggrond
 								["coords"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, EXALTED },    -- Frostwolf Clan, 999/1000 Exalted
-								["sourceQuest"] = 7166, -- Legendary Heroes
+								["sourceQuest"] = 7166,	-- Legendary Heroes
 								["cost"] = {
 									{ "i", 17908, 1 },	-- Frostwolf Insignia Rank 5
 								},
@@ -235,12 +235,12 @@ _.PvP =
 							q(7082, {	-- The Graveyards of Alterac
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13776, -- Corporal Teeka Bloodsnarl
+								["qg"] = 13776,	-- Corporal Teeka Bloodsnarl
 							}),
 							q(7101, {	-- Towers and Bunkers
 								["lvl"] = 51,
 								["races"] = HORDE_ONLY,
-								["qg"] = 13776, -- Corporal Teeka Bloodsnarl
+								["qg"] = 13776,	-- Corporal Teeka Bloodsnarl
 							}),
 						}),
 					}, 
@@ -335,58 +335,58 @@ _.PvP =
 							q(7081, {	-- Alterac Valley Graveyards
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13777, -- Sergeant Durgen Stormpike
+								["qg"] = 13777,	-- Sergeant Durgen Stormpike
 								["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 							}),
 							q(7282, {	-- Brotherly Love
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13320, -- Commander Karl Philips
+								["qg"] = 13320,	-- Commander Karl Philips
 							}),
 							q(7122, {	-- Capture a Mine
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13777, -- Sergeant Durgen Stormpike
+								["qg"] = 13777,	-- Sergeant Durgen Stormpike
 								["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 							}),
 							q(7170, {	-- Earned Reverence
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 730, REVERED },  -- Stormpike Guard, Revered
 								["cost"] = {
 									{ "i", 17901, 1 },	-- Stormpike Insignia Rank 3
 								},
 								["g"] = {
-									i(17902), -- Stormpike Insignia Rank 4
+									i(17902),	-- Stormpike Insignia Rank 4
 								},
 							}),
 							q(7301, {	-- Fallen Sky Lords
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13319, -- Commander Duffy
+								["qg"] = 13319,	-- Commander Duffy
 							}),
 							q(8271, {	-- Hero of the Stormpike
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 7141, -- The Battle of Alterac
-								["qg"] = 13816, -- Prospector Stonehewer
+								["sourceQuest"] = 7141,	-- The Battle of Alterac
+								["qg"] = 13816,	-- Prospector Stonehewer
 								["coords"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["g"] = {
-									i(19106), -- Ice Barbed Spear
-									i(19107), -- Bloodseeker
-									i(19108), -- Wand of Biting Cold
-									i(20648), -- Cold Forged Hammer
+									i(19106),	-- Ice Barbed Spear
+									i(19107),	-- Bloodseeker
+									i(19108),	-- Wand of Biting Cold
+									i(20648),	-- Cold Forged Hammer
 								},
 							}),
 							q(7169, {	-- Honored Amongst the Guard
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["minReputation"] = { 730, HONORED },  -- Stormpike Guard, Honored
@@ -394,13 +394,13 @@ _.PvP =
 									{ "i", 17900, 1 },	-- Stormpike Insignia Rank 2
 								},
 								["g"] = {
-									i(17901), -- Stormpike Insignia Rank 3
+									i(17901),	-- Stormpike Insignia Rank 3
 								},
 							}),
 							q(7171, {	-- Legendary Heroes
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, Exalted
@@ -408,23 +408,23 @@ _.PvP =
 									{ "i", 17902, 1 },	-- Stormpike Insignia Rank 4
 								},
 								["g"] = {
-									i(17903), -- Stormpike Insignia Rank 5
+									i(17903),	-- Stormpike Insignia Rank 5
 								},
 							}),
 							q(7162, {	-- Proving Grounds
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 7261, -- The Sovereign Imperative
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["sourceQuest"] = 7261,	-- The Sovereign Imperative
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["g"] = {
-									i(17691), -- Stormpike Insignia Rank 1
-									i(19484), -- The Frostwolf Artichoke
+									i(17691),	-- Stormpike Insignia Rank 1
+									i(19484),	-- The Frostwolf Artichoke
 								},
 							}),
 							q(8375, {	-- Remember Alterac Valley!
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
 									{ "i", 20560, 3 },	-- Alterac Valey Mark of Honor
@@ -432,8 +432,8 @@ _.PvP =
 								["lvl"] = 51,
 							}),
 							q(8383, {	-- Remember Alterac Valley!
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8375, -- Remember Alterac Valley!
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8375,	-- Remember Alterac Valley!
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
 								["cost"] = {
@@ -444,7 +444,7 @@ _.PvP =
 							q(7168, {	-- Rise and Be Recognized (Alliance)
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["minReputation"] = { 730, FRIENDLY },  -- Stormpike Guard, Friendly
@@ -452,7 +452,7 @@ _.PvP =
 									{ "i", 17691, 1 },	-- Stormpike Insignia Rank 1
 								},
 								["g"] = {
-									i(17900), -- Stormpike Insignia Rank 2
+									i(17900),	-- Stormpike Insignia Rank 2
 								},
 							}),
 							q(7221, {	-- Speak with Prospector Stonehewer
@@ -463,29 +463,29 @@ _.PvP =
 							q(7141, {	-- The Battle of Alterac
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["sourceQuest"] = 7221, -- Speak with Prospector Stonehewer
-								["qg"] = 13816, -- Prospector Stonehewer
+								["sourceQuest"] = 7221,	-- Speak with Prospector Stonehewer
+								["qg"] = 13816,	-- Prospector Stonehewer
 								["coords"] = { 41.0, 79.6, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 							}),
 							q(7121, {	-- The Quartermaster
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13797, -- Mountaineer Boombellow
+								["qg"] = 13797,	-- Mountaineer Boombellow
 								["isBreadcrumb"] = true,
 							}),
 							q(7261, {	-- The Sovereign Imperative
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
 								["isBreadcrumb"] = true,
-								["qg"] = 13843, -- Lieutenant Rotimer <Stormpike Guard Recruitment Officer>
+								["qg"] = 13843,	-- Lieutenant Rotimer <Stormpike Guard Recruitment Officer>
 								["coords"] = { 32.8, 64.6, IRONFORGE },
 								["maps"] = { IRONFORGE },
 							}),
 							q(7172, {	-- The Eye of Command
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13841, -- Lieutenant Haggerdin
+								["qg"] = 13841,	-- Lieutenant Haggerdin
 								["coords"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 								["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, 999/1000 Exalted
@@ -493,13 +493,13 @@ _.PvP =
 									{ "i", 17903, 1 },	-- Stormpike Insignia Rank 5
 								},
 								["g"] = {
-									i(17904), -- Stormpike Insignia Rank 6
+									i(17904),	-- Stormpike Insignia Rank 6
 								},
 							}),
 							q(7102, {	-- Towers and Bunkers
 								["lvl"] = 51,
 								["races"] = ALLIANCE_ONLY,
-								["qg"] = 13777, -- Sergeant Durgen Stormpike
+								["qg"] = 13777,	-- Sergeant Durgen Stormpike
 								["coords"] = { 36.8, 77.2, ALTERAC_MOUNTAINS },
 								["maps"] = { ALTERAC_MOUNTAINS },
 							}),

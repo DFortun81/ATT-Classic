@@ -33,10 +33,10 @@ _.NeverImplemented =
 	un(1, i(2556)),	-- Recipe: Elixir of Tongues
 	un(1, i(13500)),	-- Recipe: Greater Holy Protection Potion
 	un(1, i(6891)),	-- Recipe: Herb Baked Egg (this is taught by trainer when you learn cooking; recipe item was never in game)
-	un(1, q(6842)), -- "<UNUSED>" quest
-	un(1, q(7069)), -- "<UNUSED>" quest
-	un(1, q(55296)), -- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
-	un(1, q(3366)), -- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
+	un(1, q(6842)),	-- "<UNUSED>" quest
+	un(1, q(7069)),	-- "<UNUSED>" quest
+	un(1, q(55296)),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
+	un(1, q(3366)),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
 	-- Dustwallow Marsh Quests that were never added.
 	un(1, q(1293)),	-- <nyi> <TXT> Centaur Hoofprints

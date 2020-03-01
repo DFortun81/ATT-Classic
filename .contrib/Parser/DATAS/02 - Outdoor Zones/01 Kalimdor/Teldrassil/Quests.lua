@@ -93,7 +93,7 @@ _.Zones =
 						i(18957),	-- Brushwood Blade
 					},
 				}),
-				q(1684, { -- Elanaria
+				q(1684, {	-- Elanaria
 					["qgs"] = {
 						3657,	-- Sentinel Elissa Starbreeze [Darkshore]
 						3598,	-- Kyra Windblade <Warrior Trainer> [Teldrassil]
@@ -118,7 +118,7 @@ _.Zones =
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
 				}),
-				q(2259, { -- Erion Shadewhisper
+				q(2259, {	-- Erion Shadewhisper
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
@@ -178,7 +178,7 @@ _.Zones =
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["sourceQuest"] = 475,	-- Gnarlpine Corruption
 				}),
-				q(5923, { -- Heeding the Call
+				q(5923, {	-- Heeding the Call
 					["qg"] = 4218,  -- Denatharion <Druid Trainer>
 					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
@@ -506,7 +506,7 @@ _.Zones =
 				q(8734, {	-- Tyrande and Remulos
 					["lvl"] = 60,
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3, -- Ahn'Qirij
+					["u"] = 3,	-- Ahn'Qirij
 				}),
 				q(486, {	-- Ursal the Mauler
 					["lvl"] = 4,

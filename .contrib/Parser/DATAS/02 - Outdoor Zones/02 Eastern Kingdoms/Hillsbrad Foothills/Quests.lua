@@ -109,7 +109,7 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(567, {	-- Dangerous!
-					["provider"] = { "o", 2008 }, -- Dangerous!
+					["provider"] = { "o", 2008 },	-- Dangerous!
 					["coord"] = { 62.56, 19.69, HILLSBRAD_FOOTHILLS },
 					["lvl"] = 19,
 					["races"] = HORDE_ONLY,
@@ -238,19 +238,19 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["sourceQuest"] = 559, -- Farren's Proof (1)
+					["sourceQuest"] = 559,	-- Farren's Proof (1)
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
 				q(561, {	-- Farren's Proof (3)
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2263,	-- Marshal Redpath
-					["sourceQuest"] = 560, -- Farren's Proof (2)
+					["sourceQuest"] = 560,	-- Farren's Proof (2)
 					["coord"] = { 49.5, 58.6, HILLSBRAD_FOOTHILLS },
 				}),
 				q(559, {	-- Farren's Proof (1)
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["sourceQuest"] = 536, -- Down the Coast
+					["sourceQuest"] = 536,	-- Down the Coast
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -289,12 +289,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
-				q(2480, { -- Hinott's Assistance
+				q(2480, {	-- Hinott's Assistance
 					["lvl"] = 20,
-					["qg"] = 2391, -- Serge Hinott
+					["qg"] = 2391,	-- Serge Hinott
 					["races"] = { ORC, UNDEAD, TROLL },
 					["classes"] = { ROGUE },
-					["sourceQuest"] = 2479, -- Hinott's Assistance
+					["sourceQuest"] = 2479,	-- Hinott's Assistance
 				}),
 				q(661, {	-- Hints of a New Plague?
 					["lvl"] = 30,
@@ -365,9 +365,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 29,
 				}),
-				q(540, { -- Preserving Knowledge
-					["qg"] = 2277, -- Loremaster Dibbs
-					["sourceQuest"] = 538, -- Southshore
+				q(540, {	-- Preserving Knowledge
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["sourceQuest"] = 538,	-- Southshore
 					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -397,19 +397,19 @@ _.Zones =
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["sourceQuest"] = 562, -- Stormwind Ho!
+					["sourceQuest"] = 562,	-- Stormwind Ho!
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 				}),
-				q(542, { -- Return to Milton
-					["qg"] = 2277, -- Loremaster Dibbs
-					["sourceQuest"] = 540, -- Preserving Knowledge
+				q(542, {	-- Return to Milton
+					["qg"] = 2277,	-- Loremaster Dibbs
+					["sourceQuest"] = 540,	-- Preserving Knowledge
 					["coord"] = { 50.6, 57.1, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(8234, {	-- Sealed Azure Bag
 					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
-					["sourceQuest"] = 8233, -- A Simple Request
+					["sourceQuest"] = 8233,	-- A Simple Request
 					["coord"] = { 86.0, 79.0, HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -438,11 +438,11 @@ _.Zones =
 						i(3729),	-- Soothing Turtle Bisque
 					},
 				}),
-				q(538, { -- Southshore
-					["qg"] = 1440, -- Milton Sheaf <Librarian>
+				q(538, {	-- Southshore
+					["qg"] = 1440,	-- Milton Sheaf <Librarian>
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 74.2, 7.5, STORMWIND_CITY },
-					["sourceQuest"] = 337, -- An Old History Book
+					["sourceQuest"] = 337,	-- An Old History Book
 				}),
 				q(546, {	-- Souvenirs of Death
 					["qg"] = 2418,	-- Deathguard Samsa
@@ -467,7 +467,7 @@ _.Zones =
 				}),
 				q(562, {	-- Stormwind Ho!
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
-					["sourceQuest"] = 561, -- Farren's Proof (3)
+					["sourceQuest"] = 561,	-- Farren's Proof (3)
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
@@ -622,7 +622,7 @@ _.Zones =
 					},
 				}),
 				q(566, {	-- WANTED: Baron Vardus
-					["provider"] = { "o", 1763 }, -- WANTED
+					["provider"] = { "o", 1763 },	-- WANTED
 					["sourceQuest"] = 549,	-- WANTED: Syndicate Personnel
 					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
@@ -641,7 +641,7 @@ _.Zones =
 					},
 				}),
 				q(549, {	-- WANTED: Syndicate Personnel
-					["provider"] = { "o", 1763 }, -- WANTED
+					["provider"] = { "o", 1763 },	-- WANTED
 					["coord"] = { 62.61, 20.76, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,

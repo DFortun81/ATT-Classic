@@ -13,7 +13,7 @@ _.Zones =
 					["lvl"] = 48,
 				}),
 				q(5536, {	-- A Land Filled with Hatred
-					["qg"] = 11548, -- Loth'atu
+					["qg"] = 11548,	-- Loth'atu
 					["coord"] = { 11.4, 78.2, AZSHARA },
 					["lvl"] = 45,
 				}),
@@ -25,8 +25,8 @@ _.Zones =
 					["u"] = 2,
 				}),
 				q(3564, {	-- Andron's Payment to Jediga
-					["qg"] = 6522, -- Andron Gant
-					["sourceQuest"] = 3542, -- Delivery to Andron Gant
+					["qg"] = 6522,	-- Andron Gant
+					["sourceQuest"] = 3542,	-- Delivery to Andron Gant
 					["coord"] = { 54.6, 75.6, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
@@ -66,7 +66,7 @@ _.Zones =
 					["qg"] = 15481,	-- Spirit of Azuregos
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
-					["u"] = 3, -- Not available yet.
+					["u"] = 3,	-- Not available yet.
 				}),
 				q(3504, {	-- Betrayed (1/4)
 					["qg"] = 4485,	-- Belgrom Rockmaul
@@ -134,8 +134,8 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(3542, {	-- Delivery to Andron Gant
-					["qg"] = 8587, -- Jediga
-					["sourceQuest"] = 3517, -- Stealing Knowledge
+					["qg"] = 8587,	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -144,8 +144,8 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(3561, {	-- Delivery to Archmage Xylem
-					["qg"] = 8587, -- Jediga
-					["sourceQuest"] = 3517, -- Stealing Knowledge
+					["qg"] = 8587,	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -154,8 +154,8 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(3541, {	-- Delivery to Jes'rimon
-					["qg"] = 8587, -- Jediga
-					["sourceQuest"] = 3517, -- Stealing Knowledge
+					["qg"] = 8587,	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -164,8 +164,8 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(3518, {	-- Delivery to Magatha
-					["qg"] = 8587, -- Jediga
-					["sourceQuest"] = 3517, -- Stealing Knowledge
+					["qg"] = 8587,	-- Jediga
+					["sourceQuest"] = 3517,	-- Stealing Knowledge
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -175,7 +175,7 @@ _.Zones =
 				}),
 				q(8235, {	-- Encoded Fragments
 					["qg"] = 8379,	-- Archmage Xylem
-					["sourceQuest"] = 8234, -- Sealed Azure Bag
+					["sourceQuest"] = 8234,	-- Sealed Azure Bag
 					["coord"] = { 29.6, 40.6, AZSHARA },
 					["classes"] = { ROGUE },
 					["cost"] = {
@@ -237,8 +237,8 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(3562, {	-- Magatha's Payment to Jediga
-					["qg"] = 4046, -- Magatha Grimtotem
-					["sourceQuest"] = 3518, -- Delivery to Magatha
+					["qg"] = 4046,	-- Magatha Grimtotem
+					["sourceQuest"] = 3518,	-- Delivery to Magatha
 					["coord"] = { 70.2, 30.8, THUNDER_BLUFF },
 					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
@@ -280,12 +280,12 @@ _.Zones =
 					["lvl"] = 45,
 				}),
 				q(5535, {	-- Spiritual Unrest
-					["qg"] = 11548, -- Loth'atu
+					["qg"] = 11548,	-- Loth'atu
 					["coord"] = { 11.4, 78.2, AZSHARA },
 					["lvl"] = 45,
 				}),
 				q(3517, {	-- Stealing Knowledge
-					["qg"] = 8587, -- Jediga
+					["qg"] = 8587,	-- Jediga
 					["coord"] = { 22.4, 51.4, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -383,7 +383,7 @@ _.Zones =
 						{ "i", 21137, 1 },	-- Blue Scepter Shard
 					},
 					["lvl"] = 60,
-					["u"] = 3, -- Added in a later phase
+					["u"] = 3,	-- Added in a later phase
 					["g"] = {
 						{
 							["itemID"] = 21136,	-- Arcanite Buoy
@@ -402,8 +402,8 @@ _.Zones =
 					},
 				}),
 				q(3565, {	-- Xylem's Payment to Jediga
-					["qg"] = 8379, -- Archmage Xylem
-					["sourceQuest"] = 3561, -- Delivery to Archmage Xylem
+					["qg"] = 8379,	-- Archmage Xylem
+					["sourceQuest"] = 3561,	-- Delivery to Archmage Xylem
 					["coord"] = { 29.2, 40.2, AZSHARA },
 					["races"] = HORDE_ONLY,
 					["cost"] = {

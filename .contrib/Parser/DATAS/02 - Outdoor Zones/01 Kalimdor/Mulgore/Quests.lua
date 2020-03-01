@@ -229,7 +229,7 @@ _.Zones =
 				q(780, {	-- The Battleboars
 					["qg"] = 2980,	-- Grull Hawkwind
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 750, -- The Hunt Continues
+					["sourceQuest"] = 750,	-- The Hunt Continues
 					["coord"] = { 44.9, 77.1, MULGORE },
 					["g"] = {
 						i(6059),	-- Nomadic Vest
@@ -256,7 +256,7 @@ _.Zones =
 				q(750, {	-- The Hunt Continues
 					["qg"] = 2980,	-- Grull Hawkwind
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 747, -- The Hunt Begins
+					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
 					["g"] = {
 						i(4908),	-- Nomadic Bracers
@@ -288,7 +288,7 @@ _.Zones =
 				q(758, {	-- Thunderhorn Cleansing
 					["lvl"] = 4,
 					["races"] = { TAUREN },
-					["sourceQuest"] = 5415, -- Thunderhorn Totem
+					["sourceQuest"] = 5415,	-- Thunderhorn Totem
 					["g"] = {
 						i(4963),	-- Thunderhorn Cloak
 					},
@@ -303,7 +303,7 @@ _.Zones =
 					["qg"] = 2980,	-- Grull Hawkwind
 					["races"] = { TAUREN },
 					["classes"] = { DRUID },
-					["sourceQuest"] = 747, -- The Hunt Begins
+					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
 				}),
 				q(5844, {	-- Welcome!

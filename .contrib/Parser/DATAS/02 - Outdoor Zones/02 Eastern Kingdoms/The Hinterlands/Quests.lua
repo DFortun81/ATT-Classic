@@ -88,7 +88,7 @@ _.Zones =
 					},
 				}),
 				q(485, {	-- Find OOX-09/HL!
-					["provider"] = { "i", 8704 }, -- OOX-09/HL Distress Beacon
+					["provider"] = { "i", 8704 },	-- OOX-09/HL Distress Beacon
 					["lvl"] = 43,
 					["groups"] = {
 						i(9645),	-- Gnomish Inventor Boots
@@ -199,8 +199,8 @@ _.Zones =
 					},
 				}),
 				q(836, { 	-- Rescue OOX-09/HL!
-					["qg"] = 7806, -- Homing Robot OOX-09/HL
-					["sourceQuest"] = 485, -- Find OOX-09/HL!
+					["qg"] = 7806,	-- Homing Robot OOX-09/HL
+					["sourceQuest"] = 485,	-- Find OOX-09/HL!
 					["coord"] = { 49.4, 37.6, THE_HINTERLANDS },
 					["lvl"] = 43,
 				}),
@@ -358,8 +358,8 @@ _.Zones =
 					},
 				}),
 				q(2990, {	-- Thadius Grimshade
-					["qg"] = 5636, -- Gryphon Master Talonaxe
-					["sourceQuest"] = 2989, -- The Altar of Zul
+					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["sourceQuest"] = 2989,	-- The Altar of Zul
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 					["cost"] = {
 						{ "i", 9468, 1 },	-- Sharpbeak's Feather
@@ -368,8 +368,8 @@ _.Zones =
 					["lvl"] = 40,			
 				}),
 				q(2989, { 	-- The Altar of Zul
-					["qg"] = 5636, -- Gryphon Master Talonaxe
-					["sourceQuest"] = 2988, -- Witherbark Cages
+					["qg"] = 5636,	-- Gryphon Master Talonaxe
+					["sourceQuest"] = 2988,	-- Witherbark Cages
 					["coord"] = { 9.8, 44.5, THE_HINTERLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,

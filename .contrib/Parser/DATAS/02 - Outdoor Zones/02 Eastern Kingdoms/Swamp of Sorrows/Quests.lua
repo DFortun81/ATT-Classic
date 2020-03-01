@@ -21,7 +21,7 @@ _.Zones =
 				}),
 				q(1425, {	-- Deliver the Shipment
 					["qg"] = 5476,	-- Watcher Biggs
-					["sourceQuest"] = 1398, -- Driftwood
+					["sourceQuest"] = 1398,	-- Driftwood
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -39,7 +39,7 @@ _.Zones =
 				}),
 				q(1398, {	-- Driftwood
 					["qg"] = 5476,	-- Watcher Biggs
-					["sourceQuest"] = 1421, -- The Lost Caravan
+					["sourceQuest"] = 1421,	-- The Lost Caravan
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -147,8 +147,8 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(1392, {	-- Noboru the Cudgel
-					["provider"] = { "i", 6196 }, -- Noboru's Cudgel
-					["cr"] = 5477, -- Noboru the Cudgel
+					["provider"] = { "i", 6196 },	-- Noboru's Cudgel
+					["cr"] = 5477,	-- Noboru the Cudgel
 					["lvl"] = 29,
 				}),
 				q(2744, {	-- The Demon Hunter
@@ -166,7 +166,7 @@ _.Zones =
 				}),
 				q(1421, {	-- The Lost Caravan
 					["qg"] = 5476,	-- Watcher Biggs
-					["sourceQuest"] = 1396, -- Encroaching Wildlife
+					["sourceQuest"] = 1396,	-- Encroaching Wildlife
 					["coord"] = { 26.8, 59.8, SWAMP_OF_SORROWS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {

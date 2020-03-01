@@ -219,12 +219,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
-				q(1511, { -- Ken'zigla's Draught
+				q(1511, {	-- Ken'zigla's Draught
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 4197, -- Ken'zigla
-					["sourceQuest"] = 1510, -- News of Dogran (2/2)
+					["qg"] = 4197,	-- Ken'zigla
+					["sourceQuest"] = 1510,	-- News of Dogran (2/2)
 				}),
 				q(6629, {	-- Kill Grundig Darkcloud
 					["qg"] = 11857,	-- Makaba Flathoof

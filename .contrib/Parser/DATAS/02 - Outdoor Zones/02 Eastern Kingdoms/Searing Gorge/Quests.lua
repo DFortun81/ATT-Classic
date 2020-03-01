@@ -251,12 +251,12 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(3181, {	-- The Horn of the Beast
-					["provider"] = { "i", 10005 }, -- Margol's Gigantic Horn
+					["provider"] = { "i", 10005 },	-- Margol's Gigantic Horn
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom
-					["provider"] = { "i", 11818 }, -- Grimesilt Outhouse Key
+					["provider"] = { "i", 11818 },	-- Grimesilt Outhouse Key
 					["lvl"] = 43,
 				}),
 				q(3453, {	-- The Torch of Retribution
@@ -281,7 +281,7 @@ _.Zones =
 					["g"] = {
 						i(10569, {	-- Hoard of the Black Dragonflight
 							{
-								["itemID"] = 10575, -- Black Dragonflight Molt
+								["itemID"] = 10575,	-- Black Dragonflight Molt
 								["questID"] = 4023,	-- A Taste of Flame
 								["altQuests"] = {
 									4022,	-- A Taste of Flame

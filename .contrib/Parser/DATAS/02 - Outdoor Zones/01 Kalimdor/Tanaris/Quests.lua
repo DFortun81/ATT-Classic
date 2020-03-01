@@ -57,7 +57,7 @@ _.Zones =
 				q(841, {	-- Another Power Source?
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
-					["qg"] = 7407, -- Chief Engineer Bilgewhizzle
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["repeatable"] = true,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
@@ -98,7 +98,7 @@ _.Zones =
 				}),
 				q(2882, {	-- Cuergo's Gold
 					["coord"] = { 55.4, 92.2, TANARIS },
-					["provider"] = { "i", 9254 }, -- Cuergo's Treasure Map
+					["provider"] = { "i", 9254 },	-- Cuergo's Treasure Map
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 9275, 1 },	-- Cuergo's Key
@@ -121,7 +121,7 @@ _.Zones =
 				}),
 				q(2874, {	-- Deliver to MacKinley
 					["lvl"] = 40,
-					["sourceQuest"] = 2873, -- Stoley's Shipment
+					["sourceQuest"] = 2873,	-- Stoley's Shipment
 					["g"] = {
 						i(9636),	-- Swashbuckler Sash
 						i(9637),	-- Shinkicker Boots
@@ -145,11 +145,11 @@ _.Zones =
 				}),
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
-					["provider"] = { "i", 8623 }, -- OOX-17/TN Distress Beacon
+					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
 				q(992, {	-- Gadgetzan Water Survey
 					["lvl"] = 38,
-					["qg"] = 7724, -- Senior Surveyor Fizzledowser
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
 				}),
 				q(3161, {	-- Gahz'ridian
@@ -201,7 +201,7 @@ _.Zones =
 				q(1691, {	-- More Wastewander Justice
 					["lvl"] = 40,
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
-					["sourceQuest"] = 1690, -- Wastewander Justice
+					["sourceQuest"] = 1690,	-- Wastewander Justice
 					["coord"] = { 52.5, 28.5, TANARIS },
 				}),
 				q(8584, {	-- Never Ask Me About My Business
@@ -218,9 +218,9 @@ _.Zones =
 				}),
 				q(82, {	-- Noxious Lair Investigation
 					["lvl"] = 39,
-					["qg"] = 7724, -- Senior Surveyor Fizzledowser
+					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
-					["sourceQuest"] = 992, -- Gadgetzan Water Survey
+					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
 				}),
 				q(4507, {	-- Pawn Captures Queen
 					["qg"] = 5594,	-- Alchemist Pestlezugg
@@ -238,10 +238,10 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 180652 },	-- Freshly Dug Dirt
 				}),
-				q(648, { -- Rescue OOX-17/TN!
+				q(648, {	-- Rescue OOX-17/TN!
 					["lvl"] = 43,
-					["qg"] = 7784, -- Homing Robot OOX-17/TN
-					["sourceQuest"] = 351, -- Find OOX-17/TN!
+					["qg"] = 7784,	-- Homing Robot OOX-17/TN
+					["sourceQuest"] = 351,	-- Find OOX-17/TN!
 					["g"] = {
 						i(9643),	-- Optomatic Deflector
 						i(9644),	-- Thermotastic Egg Timer
@@ -267,7 +267,7 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(2876, {	-- Ship Schedules
-					["provider"] = { "i", 9250 }, -- Ship Schedule
+					["provider"] = { "i", 9250 },	-- Ship Schedule
 					["lvl"] = 40,
 				}),
 				q(379, {	-- Slake That Thirst
@@ -308,7 +308,7 @@ _.Zones =
 				q(2873, {	-- Stoley's Shipment
 					["lvl"] = 40,
 					["qg"] = 7881,	-- Stoley
-					["sourceQuest"] = 2872, -- Stoley's Debt
+					["sourceQuest"] = 2872,	-- Stoley's Debt
 					["coord"] = { 67.1, 24.0, TANARIS },
 				}),
 				q(4504, {	-- Super Sticky
@@ -601,13 +601,13 @@ _.Zones =
 				q(2875, {	-- WANTED: Andre Firebeard
 					["lvl"] = 40,
 					["providers"] = {
-						{ "o", 142122 }, -- Wanted Poster
-						{ "o", 150075 }, -- Wanted Poster
+						{ "o", 142122 },	-- Wanted Poster
+						{ "o", 150075 },	-- Wanted Poster
 					},
 				}),
 				q(2781, {	-- WANTED: Caliph Scorpidsting
 					["lvl"] = 39,
-					["provider"] = { "o", 142122 }, -- Wanted Poster
+					["provider"] = { "o", 142122 },	-- Wanted Poster
 				}),
 				q(9268, {	-- War at Sea
 					["lvl"] = 40,

@@ -169,15 +169,15 @@ _.Zones =
 				q(690, {	-- Malin's Request
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2708, -- Archmage Malin
+					["qg"] = 2708,	-- Archmage Malin
 					["maps"] = { STORMWIND_CITY },
 					["isBreadcrumb"] = true,
 				}),
 				q(697, {	-- Malin's Request
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2789, -- Skuerto
-					["sourceQuest"] = 696, -- Attack on the Tower
+					["qg"] = 2789,	-- Skuerto
+					["sourceQuest"] = 696,	-- Attack on the Tower
 					["g"] = {
 						i(4975),	-- Vigilant Buckler
 						i(15104),	-- Wingborne Boots
@@ -394,7 +394,7 @@ _.Zones =
 				}),
 				q(694, {	-- Trelane's Defenses
 					["qg"] = 2789,	-- Skuerto
-					["sourceQuest"] = 693, -- Wand over Fist
+					["sourceQuest"] = 693,	-- Wand over Fist
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -423,7 +423,7 @@ _.Zones =
 				}),
 				q(693, {	-- Wand over Fist
 					["qg"] = 2789,	-- Skuerto
-					["sourceQuest"] = 691, -- Worth Its Weight in Gold
+					["sourceQuest"] = 691,	-- Worth Its Weight in Gold
 					["coord"] = { 46.6, 47.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,

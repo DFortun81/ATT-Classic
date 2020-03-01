@@ -116,7 +116,7 @@ _.PvP =
 						}),
 						n(QUESTS, {
 							q(8372, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -125,7 +125,7 @@ _.PvP =
 								["lvl"] = 10,
 							}),
 							q(8399, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -134,7 +134,7 @@ _.PvP =
 								["lvl"] = 20,
 							}),
 							q(8400, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -143,7 +143,7 @@ _.PvP =
 								["lvl"] = 30,
 							}),
 							q(8401, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -152,7 +152,7 @@ _.PvP =
 								["lvl"] = 40,
 							}),
 							q(8402, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -161,7 +161,7 @@ _.PvP =
 								["lvl"] = 50,
 							}),
 							q(8403, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
+								["qg"] = 15351,	-- Alliance Brigadier General
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_1,
 								["races"] = ALLIANCE_ONLY,
 								["cost"] = {
@@ -170,8 +170,8 @@ _.PvP =
 								["lvl"] = 60,
 							}),
 							q(8386, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8372, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8372,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -181,8 +181,8 @@ _.PvP =
 								["lvl"] = 10,
 							}),
 							q(8404, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8399, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8399,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -192,8 +192,8 @@ _.PvP =
 								["lvl"] = 20,
 							}),
 							q(8405, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8400, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8400,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -203,8 +203,8 @@ _.PvP =
 								["lvl"] = 30,
 							}),
 							q(8406, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8401, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8401,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -214,8 +214,8 @@ _.PvP =
 								["lvl"] = 40,
 							}),
 							q(8407, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8402, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8402,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -225,8 +225,8 @@ _.PvP =
 								["lvl"] = 50,
 							}),
 							q(8408, {	-- Fight for Warsong Gulch
-								["qg"] = 15351, -- Alliance Brigadier General
-								["sourceQuest"] = 8403, -- Fight for Warsong Gulch
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["sourceQuest"] = 8403,	-- Fight for Warsong Gulch
 								["altQuests"] = ALLIANCE_FIGHT_FOR_WSG_TIER_2,
 								["races"] = ALLIANCE_ONLY,
 								["repeatable"] = true,
@@ -342,7 +342,7 @@ _.PvP =
 						}),
 						n(QUESTS, {
 							q(8368, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -351,7 +351,7 @@ _.PvP =
 								["lvl"] = 10,
 							}),
 							q(8426, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -360,7 +360,7 @@ _.PvP =
 								["lvl"] = 20,
 							}),
 							q(8427, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -369,7 +369,7 @@ _.PvP =
 								["lvl"] = 30,
 							}),
 							q(8428, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -378,7 +378,7 @@ _.PvP =
 								["lvl"] = 40,
 							}),
 							q(8429, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -387,7 +387,7 @@ _.PvP =
 								["lvl"] = 50,
 							}),
 							q(8430, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
+								["qg"] = 15350,	-- Horde Warbringer
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_1,
 								["races"] = HORDE_ONLY,
 								["cost"] = {
@@ -396,8 +396,8 @@ _.PvP =
 								["lvl"] = 60,
 							}),
 							q(8389, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8368, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8368,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
@@ -407,8 +407,8 @@ _.PvP =
 								["lvl"] = 10,
 							}),
 							q(8431, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8426, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8426,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
@@ -418,8 +418,8 @@ _.PvP =
 								["lvl"] = 20,
 							}),
 							q(8432, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8427, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8427,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
@@ -429,8 +429,8 @@ _.PvP =
 								["lvl"] = 30,
 							}),
 							q(8433, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8428, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8428,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
@@ -440,8 +440,8 @@ _.PvP =
 								["lvl"] = 40,
 							}),
 							q(8434, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8429, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8429,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,
@@ -451,8 +451,8 @@ _.PvP =
 								["lvl"] = 50,
 							}),
 							q(8435, {	-- Battle of Warsong Gulch
-								["qg"] = 15350, -- Horde Warbringer
-								["sourceQuest"] = 8430, -- Battle of Warsong Gulch
+								["qg"] = 15350,	-- Horde Warbringer
+								["sourceQuest"] = 8430,	-- Battle of Warsong Gulch
 								["altQuests"] = HORDE_BATTLE_FOR_WSG_TIER_2,
 								["repeatable"] = true,
 								["races"] = HORDE_ONLY,

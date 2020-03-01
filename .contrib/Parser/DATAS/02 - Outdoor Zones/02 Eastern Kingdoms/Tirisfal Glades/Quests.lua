@@ -117,7 +117,7 @@ _.Zones =
 					["lvl"] = 5,
 				}),
 				q(431, {	-- Candles of Beckoning
-					["provider"] = { "o", 1586 },	--  Crate of Candles
+					["provider"] = { "o", 1586 },	-- Crate of Candles
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 5,
@@ -165,10 +165,10 @@ _.Zones =
 					["lvl"] = 5,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10665,	-- Junior Apothecary Holland
-					["sourceQuest"] = 5481, -- Gordo's Task
+					["sourceQuest"] = 5481,	-- Gordo's Task
 				}),
-				q(3096, { -- Encrypted Scroll
-					["qg"] = 1569, -- Shadow Priest Sarvis
+				q(3096, {	-- Encrypted Scroll
+					["qg"] = 1569,	-- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 				}),
@@ -190,15 +190,15 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 6,
 				}),
-				q(5650, { -- Garments of Darkness
+				q(5650, {	-- Garments of Darkness
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
 					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
-					["races"] = { 5 }, -- Undead
-					["classes"] = { 5 }, -- Priest
+					["races"] = { 5 },	-- Undead
+					["classes"] = { 5 },	-- Priest
 					["lvl"] = 5,
 				}),
-				q(3098, { -- Glyphic Scroll
-					["qg"] = 1569, -- Shadow Priest Sarvis
+				q(3098, {	-- Glyphic Scroll
+					["qg"] = 1569,	-- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { MAGE },
 				}),
@@ -220,29 +220,29 @@ _.Zones =
 						i(3439),	-- Zombie Skin Boots
 					},
 				}),
-				q(1478, { -- Halgar's Summons
-					["qg"] = 5724, -- Ageron Kargal
+				q(1478, {	-- Halgar's Summons
+					["qg"] = 5724,	-- Ageron Kargal
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 				}),
 				q(1822, {
-					["qg"] = 1500, -- Coleman Farthing
-					["sourceQuest"] = 1821, -- Agamand Heirlooms
+					["qg"] = 1500,	-- Coleman Farthing
+					["sourceQuest"] = 1821,	-- Agamand Heirlooms
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
-				q(5651, { -- In Favor of Darkness
+				q(5651, {	-- In Favor of Darkness
 					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 					["coord"] = { 31.1, 66.0, TIRISFAL_GLADES },
-					["races"] = { 5 }, -- Undead
-					["classes"] = { 5 }, -- Priest
+					["races"] = { 5 },	-- Undead
+					["classes"] = { 5 },	-- Priest
 					["lvl"] = 5,
 				}),
 				q(6395, {	-- Marla's Last Wish
 					["qg"] = 1661,	-- Novice Elreth
-					["sourceQuest"] = 376, -- The Damned
+					["sourceQuest"] = 376,	-- The Damned
 					["coord"] = { 30.9, 66.1, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -258,15 +258,15 @@ _.Zones =
 						},
 					},
 				}),
-				q(1885, { -- Mennet Carkad
-					["qg"] = 2130, -- Marion Call
+				q(1885, {	-- Mennet Carkad
+					["qg"] = 2130,	-- Marion Call
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
 				q(380, {	-- Night Web's Hollow
 					["qg"] = 1570,	-- Executor Arren
-					["sourceQuest"] = 376, -- The Damned
+					["sourceQuest"] = 376,	-- The Damned
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
@@ -276,8 +276,8 @@ _.Zones =
 						i(3272),	-- Zombie Skin Leggings
 					},
 				}),
-				q(1470, { -- Piercing the Veil
-					["qg"] = 5667, -- Venya Marthand
+				q(1470, {	-- Piercing the Veil
+					["qg"] = 5667,	-- Venya Marthand
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -304,7 +304,7 @@ _.Zones =
 				}),
 				q(3901, {	-- Rattling the Rattlecages
 					["qg"] = 1569,	-- Shadow Priest Sarvis
-					["sourceQuest"] = 364, -- The Mindless Ones
+					["sourceQuest"] = 364,	-- The Mindless Ones
 					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["g"] = {
@@ -335,7 +335,7 @@ _.Zones =
 				}),
 				q(3902, {	-- Scavenging Deathknell
 					["qg"] = 1740,	-- Deathguard Saltain
-					["sourceQuest"] = 376, -- The Damned
+					["sourceQuest"] = 376,	-- The Damned
 					["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
@@ -368,9 +368,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 				}),
-				q(3099, { -- Tainted Scroll
-					["qg"] = 1569, -- Shadow Priest Sarvis
-					["sourceQuest"] = 364, -- The Mindless Ones
+				q(3099, {	-- Tainted Scroll
+					["qg"] = 1569,	-- Shadow Priest Sarvis
+					["sourceQuest"] = 364,	-- The Mindless Ones
 					["coord"] = { 30.8, 66.2, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
 					["classes"] = { WARLOCK },
@@ -403,39 +403,39 @@ _.Zones =
 						i(2173),	-- Old Leather Belt
 					},
 				}),
-				q(1886, { -- The Deathstalkers (1/4)
-					["qg"] = 6467, -- Mennet Carkad
-					["sourceQuest"] = 1885, -- Mennet Carkad
+				q(1886, {	-- The Deathstalkers (1/4)
+					["qg"] = 6467,	-- Mennet Carkad
+					["sourceQuest"] = 1885,	-- Mennet Carkad
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
-				q(1898, { -- The Deathstalkers (2/4)
-					["qg"] = 6467, -- Mennet Carkad
-					["sourceQuest"] = 1886, -- The Deathstalkers (1/4)
+				q(1898, {	-- The Deathstalkers (2/4)
+					["qg"] = 6467,	-- Mennet Carkad
+					["sourceQuest"] = 1886,	-- The Deathstalkers (1/4)
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
-				q(1899, { -- The Deathstalkers (3/4)
-					["qg"] = 6522, -- Andron Gant
-					["sourceQuest"] = 1898, -- The Deathstalkers (2/4)
+				q(1899, {	-- The Deathstalkers (3/4)
+					["qg"] = 6522,	-- Andron Gant
+					["sourceQuest"] = 1898,	-- The Deathstalkers (2/4)
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
-				q(1978, { -- The Deathstalkers (4/4)
-					["qg"] = 6467, -- Mennet Carkad
-					["sourceQuest"] = 1899, -- The Deathstalkers (3/4)
+				q(1978, {	-- The Deathstalkers (4/4)
+					["qg"] = 6467,	-- Mennet Carkad
+					["sourceQuest"] = 1899,	-- The Deathstalkers (3/4)
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["lvl"] = 10,
 					["g"] = {
-						i(7298), -- Blade of Cunning
+						i(7298),	-- Blade of Cunning
 					},
 				}),
 				q(410, {	-- The Dormant Shade
-					["provider"] = { "o", 1557 },	--  Lillith's Dinner Table
+					["provider"] = { "o", 1557 },	-- Lillith's Dinner Table
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 5,
@@ -504,7 +504,7 @@ _.Zones =
 				}),
 				q(382, {	-- The Red Messenger
 					["qg"] = 1570,	-- Executor Arren
-					["sourceQuest"] = 381, -- The Scarlet Crusade
+					["sourceQuest"] = 381,	-- The Scarlet Crusade
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -524,7 +524,7 @@ _.Zones =
 				}),
 				q(381, {	-- The Scarlet Crusade
 					["qg"] = 1570,	-- Executor Arren
-					["sourceQuest"] = 380, -- Night Web's Hollow
+					["sourceQuest"] = 380,	-- Night Web's Hollow
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -550,13 +550,13 @@ _.Zones =
 				}),
 				q(383, {	-- Vital Intelligence
 					["qg"] = 1570,	-- Executor Arren
-					["sourceQuest"] = 382, -- The Red Messenger
+					["sourceQuest"] = 382,	-- The Red Messenger
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 2,
 				}),
 				q(398, {	-- Wanted: Maggot Eye
-					["provider"] = { "o", 711 }, -- Wanted!
+					["provider"] = { "o", 711 },	-- Wanted!
 					["coord"] = { 60.7, 51.5, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {

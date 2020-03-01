@@ -14,7 +14,7 @@ profession(202, {	-- Engineering
 						["name"] = "Dimensional Ripper - Everlook",
 						["recipeID"] = 23486,
 						["description"] = "Speak to Zap Farflinger in Winterspring at 59.6, 49.8 to learn this recipe.",
-						["qg"] = 14742,	--  Zap Farflinger
+						["qg"] = 14742,	-- Zap Farflinger
 						["coord"] = { 59.6, 49.8, WINTERSPRING },
 					},
 					{
@@ -176,13 +176,13 @@ profession(202, {	-- Engineering
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },
-					["sourceQuest"] = 3639, -- Show Your Work
+					["sourceQuest"] = 3639,	-- Show Your Work
 					["altQuests"] = {
 						3645,	-- Membership Card Renewal
 						3647,	-- Membership Card Renewal
 					},
 					["g"] = {
-						i(10790), -- Gnome Engineer Membership Card
+						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3639, {	-- Show Your Work
@@ -192,7 +192,7 @@ profession(202, {	-- Engineering
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },
-					["sourceQuest"] = 3638, -- The Pledge of Secrecy
+					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
 					["altQuests"] = {
 						3641,	-- Show Your Work
 						3643,	-- Show Your Work
@@ -211,10 +211,10 @@ profession(202, {	-- Engineering
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },
 					["sourceQuests"] = {
-						3526, -- Goblin Engineering
-						3629, -- Goblin Engineering
-						3633, -- Goblin Engineering
-						4181, -- Goblin Engineering
+						3526,	-- Goblin Engineering
+						3629,	-- Goblin Engineering
+						3633,	-- Goblin Engineering
+						4181,	-- Goblin Engineering
 					},
 					["altQuests"] = {
 						3640,	-- The Pledge of Secrecy

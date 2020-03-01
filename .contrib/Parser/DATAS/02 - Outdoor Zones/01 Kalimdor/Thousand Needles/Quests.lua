@@ -45,7 +45,7 @@ _.Zones =
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 30,
-					["sourceQuest"] = 1112, -- Parts for Kravel
+					["sourceQuest"] = 1112,	-- Parts for Kravel
 				}),
 				q(1107, {	-- Encrusted Tail Fins
 					["qg"] = 4453,	-- Wizzle Brassbolts

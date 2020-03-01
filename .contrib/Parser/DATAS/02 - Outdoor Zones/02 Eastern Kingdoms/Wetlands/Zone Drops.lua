@@ -91,7 +91,7 @@ _.Zones =
 					["cr"] = 1418,	-- Bluegill Raider
 					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = {
-						324, -- The Lost Ingots
+						324,	-- The Lost Ingots
 					},
 				}),
 				i(5788, {	-- Pattern: Thick Murloc Armor

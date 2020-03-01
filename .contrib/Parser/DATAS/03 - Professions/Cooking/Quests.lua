@@ -48,7 +48,7 @@ profession(185, {	-- Cooking
 		}),
 		q(2178, {	-- Easy Strider Living
 			["qg"] = 3702,	-- Alanndarian Nightsong
-			["requireSkill"] = 	185, -- Cooking
+			["requireSkill"] = 	185,	-- Cooking
 			["coord"] = { 37.7, 40.7, DARKSHORE },
 			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,

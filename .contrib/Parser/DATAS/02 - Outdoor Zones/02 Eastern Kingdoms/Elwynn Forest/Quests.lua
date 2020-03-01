@@ -101,9 +101,9 @@ _.Zones =
 					["classes"] = { 2 },	-- Paladin
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1667, { -- Dead-tooth Jack
-					["qg"] = 294, -- Marshal Haggard
-					["sourceQuest"] = 1666, -- Marshal Haggard
+				q(1667, {	-- Dead-tooth Jack
+					["qg"] = 294,	-- Marshal Haggard
+					["sourceQuest"] = 1666,	-- Marshal Haggard
 					["classes"] = { 1 },	-- Warrior
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
@@ -123,7 +123,7 @@ _.Zones =
 					["lvl"] = 7,
 				}),
 				q(45, {	-- Discover Rolf's Fate
-					["provider"] = { "o", 55 }, -- A half-eaten body
+					["provider"] = { "o", 55 },	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
@@ -142,8 +142,8 @@ _.Zones =
 					},
 					["maps"] = { REDRIDGE_MOUNTAINS, },
 					["coords"] = { 
-						{ 41.7, 65.5, ELWYNN_FOREST }, -- Smith Argus
-						{ 31.0, 47.4, REDRIDGE_MOUNTAINS }, -- Verner Osgood
+						{ 41.7, 65.5, ELWYNN_FOREST },	-- Smith Argus
+						{ 31.0, 47.4, REDRIDGE_MOUNTAINS },	-- Verner Osgood
 					},
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
@@ -169,9 +169,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
-				q(1685, { -- Gakin's Summons
-					["qg"] = 6121, -- Remen Marcot
-					["races"] = { 1, 7 }, -- Human and Gnome only
+				q(1685, {	-- Gakin's Summons
+					["qg"] = 6121,	-- Remen Marcot
+					["races"] = { 1, 7 },	-- Human and Gnome only
 					["classes"] = { 9 },	-- Warlock
 					["lvl"] = 10,
 				}),
@@ -183,12 +183,12 @@ _.Zones =
 						i(4536),	-- Shiny Red Apple
 					},
 				}),
-				q(3104, { -- Glyphic Letter
-					["qg"] = 197, -- Marshal McBride
+				q(3104, {	-- Glyphic Letter
+					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-					["races"] = { 1 }, -- Human
-					["classes"] = { 8 }, -- Mage
+					["races"] = { 1 },	-- Human
+					["classes"] = { 8 },	-- Mage
 				}),
 				q(47, {	-- Gold Dust Exchange
 					["qg"] = 241,	-- Remy "Two Times"
@@ -230,11 +230,11 @@ _.Zones =
 						i(2690),	-- Latched Belt
 					},
 				}),
-				q(3103, { -- Hallowed Letter
+				q(3103, {	-- Hallowed Letter
 					["races"] = { HUMAN },
-					["qg"] = 197, -- Marshal McBride
-					["classes"] = { 5 }, -- Priest
-					["sourceQuest"] = 7, -- Kobold Camp Cleanup
+					["qg"] = 197,	-- Marshal McBride
+					["classes"] = { 5 },	-- Priest
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),
 				q(345, {	-- Ink Supplies
@@ -437,10 +437,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),
-				q(3100, { -- Simple Letter
-					["qg"] = 197, -- Marshal McBride
-					["sourceQuest"] = 7, -- Kobold Camp Cleanup
-					["races"] = { 1 }, -- Human
+				q(3100, {	-- Simple Letter
+					["qg"] = 197,	-- Marshal McBride
+					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
+					["races"] = { 1 },	-- Human
 					["classes"] = { 1 },	-- Warrior
 				}),
 				q(21, {	-- Skirmish at Echo Ridge
@@ -459,7 +459,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
 				}),
-				q(1860, { -- Speak with Jennea
+				q(1860, {	-- Speak with Jennea
 					["questID"] = 1860,	-- Speak with Jennea
 					["qg"] = 328,	-- Zaldimar Wefhellt <Mage Trainer>
 					["coord"] = { 43.3, 66.2, ELWYNN_FOREST },
@@ -499,19 +499,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 4,
 				}),
-				q(2998, { -- The Tome of Divinity
-					["qg"] = 927, -- Brother Wilhelm
+				q(2998, {	-- The Tome of Divinity
+					["qg"] = 927,	-- Brother Wilhelm
 					["altQuests"] = {
 						3681,	-- The Tome of Divinity
 						1787,	-- The Tome of Divinity (8)
 					},
-					["races"] = { 1 }, -- Human
-					["classes"] = { 2 }, -- Paladin
+					["races"] = { 1 },	-- Human
+					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 12,
 				}),
-				q(1787, { -- The Tome of Divinity (8)
-					["qg"] = 6172, -- Henze Faulk
-					["sourceQuest"] = 1786, -- The Tome of Divinity (7)
+				q(1787, {	-- The Tome of Divinity (8)
+					["qg"] = 6172,	-- Henze Faulk
+					["sourceQuest"] = 1786,	-- The Tome of Divinity (7)
 					["cr"] = 474,	-- Defias Rogue Wizard
 					["races"] = { HUMAN },
 					["classes"] = { PALADIN },
@@ -520,10 +520,10 @@ _.Zones =
 					},
 					["lvl"] = 12,
 				}),
-				q(1598, { -- The Stolen Tome
-					["qg"] = 459, -- Drusilla La Salle
-					["races"] = { 1 }, -- Human
-					["classes"] = { 9 }, -- Warlock
+				q(1598, {	-- The Stolen Tome
+					["qg"] = 459,	-- Drusilla La Salle
+					["races"] = { 1 },	-- Human
+					["classes"] = { 9 },	-- Warlock
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,

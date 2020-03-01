@@ -316,7 +316,7 @@ _.Zones =
 				}),
 				q(943, {	-- The Absent Minded Prospector (5/5)
 					["qg"] = 2911,	-- Archaeologist Flagongut
-					["sourceQuest"] = 942, -- The Absent Minded Prospector (4/5) (Darnassus)
+					["sourceQuest"] = 942,	-- The Absent Minded Prospector (4/5) (Darnassus)
 					["coord"] = { 10.8, 60.4, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -390,21 +390,21 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(1249, {	-- The Missing Diplomat (11/17)
-					["qg"] = 4963, -- Mikhail <Bartender>
+					["qg"] = 4963,	-- Mikhail <Bartender>
 					["sourceQuest"] = 1248,	-- The Missing Diplomat (10/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1250, {	-- The Missing Diplomat (12/17)
-					["qg"] = 4962, -- Tapoke "Slim" Jahn
+					["qg"] = 4962,	-- Tapoke "Slim" Jahn
 					["sourceQuest"] = 1249,		-- The Missing Diplomat (11/17)
 					["coord"] = { 10.6, 60.3, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
 				}),
 				q(1264, {	-- The Missing Diplomat (13/17)
-					["qg"] = 4963, -- Mikhail <Bartender>
+					["qg"] = 4963,	-- Mikhail <Bartender>
 					["sourceQuest"] = 1250,	-- The Missing Diplomat (12/17)
 					["coord"] = { 10.6, 60.7, WETLANDS },
 					["races"] = ALLIANCE_ONLY,

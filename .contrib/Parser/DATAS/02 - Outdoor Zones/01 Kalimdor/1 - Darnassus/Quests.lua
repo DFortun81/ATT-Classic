@@ -175,31 +175,31 @@ _.Zones =
 						i(9601),	-- Cushioned Boots
 					},
 				}),
-				q(1692, { -- Smith Mathiel
+				q(1692, {	-- Smith Mathiel
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4088, -- Elanaria
-					["classes"] = { 1 }, -- Warrior
-					["sourceQuest"] = 1686, -- The Shade of Elura
+					["qg"] = 4088,	-- Elanaria
+					["classes"] = { 1 },	-- Warrior
+					["sourceQuest"] = 1686,	-- The Shade of Elura
 					["cost"] = { 
-						{ "i", 6812, 1 }, -- Case of Elunite
+						{ "i", 6812, 1 },	-- Case of Elunite
 					},
 				}),
-				q(1710, { -- Klockmort's Creation
+				q(1710, {	-- Klockmort's Creation
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6142, -- Mathiel
-					["sourceQuest"] = 1703, -- Mathiel
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6142,	-- Mathiel
+					["sourceQuest"] = 1703,	-- Mathiel
 				}),
-				q(1711, { -- Mathiel's Armor
+				q(1711, {	-- Mathiel's Armor
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6142, -- Mathiel
-					["sourceQuest"] = 1710, -- Sunscorched Shells
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6142,	-- Mathiel
+					["sourceQuest"] = 1710,	-- Sunscorched Shells
 					["groups"] = {
-						i(6973), -- Fire hardened Leggings
+						i(6973),	-- Fire hardened Leggings
 					},
 				}),
 				q(2518, {	-- Tears of the Moon
@@ -210,7 +210,7 @@ _.Zones =
 				}),
 				q(942, {	-- The Absent Minded Prospector (4/5)
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
-					["sourceQuest"] = 741, -- The Absent Minded Prospector (3/5) (Darkshore)
+					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4654, 1 },	-- Mysterious Fossil
@@ -281,16 +281,16 @@ _.Zones =
 					["lvl"] = 54,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(1686, { -- The Shade of Elura
-					["qg"] = 4088, -- Elanaria
-					["sourceQuest"] = 1683, -- Vorlus Vilehoof
+				q(1686, {	-- The Shade of Elura
+					["qg"] = 4088,	-- Elanaria
+					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
 					["coord"] = { 57.8, 34.4, DARNASSUS },
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["cost"] = { 
-						{ "i", 6808, 8 }, -- Elunite Ore
-						{ "i", 6809, 1 }, -- Elura's Medallion
+						{ "i", 6808, 8 },	-- Elunite Ore
+						{ "i", 6809, 1 },	-- Elura's Medallion
 					},
 					["lvl"] = 10,
 					["groups"] = {
@@ -335,12 +335,12 @@ _.Zones =
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3516, -- Arch Druid Fandral Staghelm
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
 					["coord"] = { 35.2, 9.0, DARNASSUS },
 				}),
 				q(1038, {	-- Velinde's Effects
 					["qg"] = 8026,	-- Thyn'tel Bladeweaver
-					["sourceQuest"] = 1037, -- Velinde Starsong (Ashenvale)
+					["sourceQuest"] = 1037,	-- Velinde Starsong (Ashenvale)
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -357,26 +357,26 @@ _.Zones =
 						},
 					},
 				}),
-				q(1683, { -- Vorlus Vilehoof
+				q(1683, {	-- Vorlus Vilehoof
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 4088, -- Elanaria
-					["classes"] = { 1 }, -- Warrior
+					["qg"] = 4088,	-- Elanaria
+					["classes"] = { 1 },	-- Warrior
 					["cost"] = {
 						{ "i", 6805, 1 } -- Horn of Vorlus
 					},
 				}),
-				q(1693, { -- Weapons of Elunite
+				q(1693, {	-- Weapons of Elunite
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6142, -- Mathiel
-					["sourceQuest"] = 1692, -- Smith Mathiel
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6142,	-- Mathiel
+					["sourceQuest"] = 1692,	-- Smith Mathiel
 					["g"] = {
-						i(6966), -- Elunite Axe
-						i(6967), -- Elunite Sword
-						i(6968), -- Elunite Hammer
-						i(6969), -- Elunite Dagger
+						i(6966),	-- Elunite Axe
+						i(6967),	-- Elunite Sword
+						i(6968),	-- Elunite Hammer
+						i(6969),	-- Elunite Dagger
 					},
 				}),
 			}),

@@ -66,7 +66,7 @@ _.Instances = {
 					},
 					["lvl"] = 16,
 					["cost"] = {
-						{ "i", 2926, 1 }, -- Head of Bazil Thredd
+						{ "i", 2926, 1 },	-- Head of Bazil Thredd
 					},
 				}),
 				q(386, { 	-- What Comes Around...

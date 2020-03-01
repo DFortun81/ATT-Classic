@@ -24,7 +24,7 @@ _.Zones =
 				}),
 				q(4491, {	-- A Little Help From My Friends
 					["lvl"] = 50,
-					["sourceQuest"] = 4492, -- Lost!
+					["sourceQuest"] = 4492,	-- Lost!
 					["g"] = {
 						i(11910),	-- Bejeweled Legguards
 						i(11911),	-- Treetop Leggings
@@ -53,7 +53,7 @@ _.Zones =
 				}),
 				q(4501, {	-- Beware of Pterrordax
 					["lvl"] = 49,
-					["provider"] = { "o", 174682 }, -- Beware of Pterrordax
+					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
 					["g"] = {
 						i(11918),	-- Grotslab Gloves
 						i(11919),	-- Cragplate Greaves
@@ -220,7 +220,7 @@ _.Zones =
 				}),
 				q(4492, {	-- Lost!
 					["lvl"] = 50,
-					["qg"] = 9997, -- Spraggle Frock
+					["qg"] = 9997,	-- Spraggle Frock
 					["coord"] = { 43.6, 8.5, UNGORO_CRATER },
 				}),
 				q(4321, {	-- Making Sense of It
@@ -258,7 +258,7 @@ _.Zones =
 				}),
 				q(3882, {	-- Roll the Bones
 					["lvl"] = 49,
-					["qg"] = 9272, -- Spark Nilminer
+					["qg"] = 9272,	-- Spark Nilminer
 					["coord"] = { 43.6, 7.4, UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 11114, 8 },	-- Dinosaur Bone
@@ -361,7 +361,7 @@ _.Zones =
 				}),
 				q(3884, {	-- Williden's Journal
 					["lvl"] = 48,
-					["provider"] = { "i", 11116 }, -- A Mangled Journal
+					["provider"] = { "i", 11116 },	-- A Mangled Journal
 				}),
 			}),
 		}),

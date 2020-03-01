@@ -9,7 +9,7 @@ _.Zones =
 				q(7809, {	-- A Donation of Mageweave
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { 
-						{ "i", 4338, 60 }, -- Mageweave Cloth 
+						{ "i", 4338, 60 },	-- Mageweave Cloth 
 					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
@@ -27,7 +27,7 @@ _.Zones =
 				q(7811, {	-- A Donation of Runecloth
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = { 
-						{ "i", 14047, 60 }, -- Runecloth
+						{ "i", 14047, 60 },	-- Runecloth
 					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -36,7 +36,7 @@ _.Zones =
 				q(7805, {	-- A Donation of Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield
 					["cost"] = { 
-						{ "i", 14047, 60 }, -- Runecloth
+						{ "i", 14047, 60 },	-- Runecloth
 					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
@@ -45,7 +45,7 @@ _.Zones =
 				q(7808, {	-- A Donation of Silk
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["cost"] = {
-						{ "i", 4306, 60 }, -- Silk Cloth
+						{ "i", 4306, 60 },	-- Silk Cloth
 					},	
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 26,
@@ -141,7 +141,7 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
-				q(8910, { -- An Earnest Proposition
+				q(8910, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -205,7 +205,7 @@ _.Zones =
 						i(21996),	-- Bracers of Heroism
 					},
 				}),
-				q(8908, { -- An Earnest Proposition
+				q(8908, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -237,7 +237,7 @@ _.Zones =
 						i(22071),	-- Deathmist Bracers
 					},
 				}),
-				q(8905,	{ -- An Earnest Proposition
+				q(8905,	{	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -253,7 +253,7 @@ _.Zones =
 						i(22108),	-- Feralheart Bracers
 					},
 				}),
-				q(8906,	{ -- An Earnest Proposition
+				q(8906,	{	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -432,7 +432,7 @@ _.Zones =
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 8256, -- Curator Thorius
+					["qg"] = 8256,	-- Curator Thorius
 					["sourceQuest"] = 3182,	-- Proof of Deed
 					["groups"] = {
 						i(5396),	-- Key to Searing Gorge
@@ -464,17 +464,17 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
-				q(1682, { -- Grey Iron Weapons
+				q(1682, {	-- Grey Iron Weapons
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6031, -- Tormus Deepforge
-					["sourceQuest"] = 1681, -- Ironband's Compound
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6031,	-- Tormus Deepforge
+					["sourceQuest"] = 1681,	-- Ironband's Compound
 					["g"] = {
-						i(6978), -- Umbral Axe
-						i(6984), -- Umbral Sword
-						i(6982), -- Umbral Mace
-						i(6981), -- Umbral Dagger
+						i(6978),	-- Umbral Axe
+						i(6984),	-- Umbral Sword
+						i(6982),	-- Umbral Mace
+						i(6981),	-- Umbral Dagger
 					},
 				}),
 				q(6388, {	-- Gryth Thurden
@@ -486,18 +486,18 @@ _.Zones =
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
-				q(1939, { -- High Sorcerer Andromath
-					["qg"] = 5144, -- Bink <Mage Trainer>
+				q(1939, {	-- High Sorcerer Andromath
+					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["coord"] = { 27.0, 8.2, IRONFORGE },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["lvl"] = 26,
 				}),
-				q(4736, { -- In Search of Menara Voidrender
+				q(4736, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 5172, -- Briarthorn
+					["qg"] = 5172,	-- Briarthorn
 				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun
 					["qg"] = 4081,	-- Lomac Gearstrip
@@ -517,12 +517,12 @@ _.Zones =
 					["lvl"] = 17,
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 				}),
-				q(1708, { --  Iron Coral
+				q(1708, {	-- Iron Coral
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6169, -- Klockmort Spannerspan
-					["sourceQuest"] = 1704, -- Klockmort Spannerspan
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6169,	-- Klockmort Spannerspan
+					["sourceQuest"] = 1704,	-- Klockmort Spannerspan
 				}),
 				q(707, {	-- Ironband Wants You!
 					["qg"] = 1356,	-- Prospector Stormpike
@@ -531,12 +531,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(1681, { -- Ironband's Compound
+				q(1681, {	-- Ironband's Compound
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6031, -- Tormus Deepforge
-					["sourceQuest"] = 1680, -- Vejrek
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6031,	-- Tormus Deepforge
+					["sourceQuest"] = 1680,	-- Vejrek
 				}),
 				q(8932, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
@@ -623,17 +623,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 5165,	-- Hulfdan Blackbeard
-					["sourceQuest"] = 2299, --	To Hulfdan!
+					["sourceQuest"] = 2299,	-- 	To Hulfdan!
 					["isBreadcrumb"] = true,
 				}),
-				q(1709, { -- Klockmort's Creation
+				q(1709, {	-- Klockmort's Creation
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6169, -- Klockmort Spannerspan
-					["sourceQuest"] = 1708, -- Iron Coral
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6169,	-- Klockmort Spannerspan
+					["sourceQuest"] = 1708,	-- Iron Coral
 					["groups"] = {
-						i(6974), -- Fire hardened Gauntlets
+						i(6974),	-- Fire hardened Gauntlets
 					},
 				}),
 				q(8250, {	-- Magecraft
@@ -643,11 +643,11 @@ _.Zones =
 					["classes"] = { MAGE },
 					["lvl"] = 50,
 				}),
-				q(1880,	{ -- Mage-tastic Gizmonitor
-					["qg"] = 5144, -- Bink <Mage Trainer>
+				q(1880,	{	-- Mage-tastic Gizmonitor
+					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {8}, -- Mage
+					["classes"] = {8},	-- Mage
 					["altQuests"] = {
 						1861,	-- Mirror Lake
 					},
@@ -656,7 +656,7 @@ _.Zones =
 						i(9514),	-- Arcane Staff
 					},
 				}),
-				q(7562, { -- Mor'zul Bloodbringer
+				q(7562, {	-- Mor'zul Bloodbringer
 					["qg"] = 6382,	-- Jubahl Corpseseeker <Demon Trainer>
 					["coord"] = { 52.8, 6.0, IRONFORGE },
 					["classes"] = { WARLOCK },
@@ -839,11 +839,11 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
-				q(4487, { -- Summon Felsteed
+				q(4487, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { 9 },	-- Warlock
-					["qg"] = 5172, -- Briarthorn
+					["qg"] = 5172,	-- Briarthorn
 				}),
 				q(8275, {	-- Taking Back Silithus
 					["lvl"] = 54,
@@ -875,19 +875,19 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10877,	-- Courier Hammerfall
 				}),
-				q(3681, { -- The Tome of Divinity
-					["qg"] = 5149, -- Brandur Ironhammer
+				q(3681, {	-- The Tome of Divinity
+					["qg"] = 5149,	-- Brandur Ironhammer
 					["altQuests"] = {
 						2998, 	-- The Tome of Divinity
 						1787,	-- The Tome of Divinity (8)
 					},
-					["races"] = { 1 }, -- Human
-					["classes"] = { 2 }, -- Paladin
+					["races"] = { 1 },	-- Human
+					["classes"] = { 2 },	-- Paladin
 					["lvl"] = 12,
 				}),
-				q(1802, { -- Tome of the Cabal (2/3 Alliance)
-					["qg"] = 6294, -- Krom Stoutarm
-					["sourceQuest"] = 1758, -- Tome of the Cabal (1/3 Alliance)
+				q(1802, {	-- Tome of the Cabal (2/3 Alliance)
+					["qg"] = 6294,	-- Krom Stoutarm
+					["sourceQuest"] = 1758,	-- Tome of the Cabal (1/3 Alliance)
 					["coord"] = { 74.4, 9.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
@@ -897,9 +897,9 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
-				q(1804, { -- Tome of the Cabal (3/3 Alliance)
-					["qg"] = 6294, -- Krom Stoutarm
-					["sourceQuest"] = 1802, -- Tome of the Cabal (2/3 Alliance)
+				q(1804, {	-- Tome of the Cabal (3/3 Alliance)
+					["qg"] = 6294,	-- Krom Stoutarm
+					["sourceQuest"] = 1802,	-- Tome of the Cabal (2/3 Alliance)
 					["coord"] = { 74.4, 9.4, IRONFORGE },
 					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -910,18 +910,18 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
-				q(1680, { -- Tormus Deepforge
-					["qg"] = 6114, -- Muren Stormpike
-					["sourceQuest"] = 1678, -- Vejrek
+				q(1680, {	-- Tormus Deepforge
+					["qg"] = 6114,	-- Muren Stormpike
+					["sourceQuest"] = 1678,	-- Vejrek
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
-				q(1678, { -- Vejrek
+				q(1678, {	-- Vejrek
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 1 }, -- Warrior
-					["qg"] = 6114, -- Muren Stormpike
+					["classes"] = { 1 },	-- Warrior
+					["qg"] = 6114,	-- Muren Stormpike
 				}),
 			}),
 		}),
