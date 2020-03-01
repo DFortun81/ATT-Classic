@@ -75,7 +75,7 @@ _.Zones =
 					},
 				}),
 				q(3113, {	-- Encrypted Memorandum
-					["races"] = { 7 },	-- Gnome
+					["races"] = { GNOME },
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
