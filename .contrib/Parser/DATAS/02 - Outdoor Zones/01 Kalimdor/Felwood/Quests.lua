@@ -169,140 +169,345 @@ _.Zones =
 						},
 					},
 				}),
-				q(4447, {	-- Corrupted Night Dragon
-					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4448, {	-- Corrupted Night Dragon
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4462, {	-- Corrupted Night Dragon
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
 				q(4119, {	-- Corrupted Night Dragon
 					["provider"] = { "o", 164885 },	-- Corrupted Night Dragon
+					["coord"] = { 40.7, 78.3, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 4 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11952),	-- Night Dragon's Breath
+					},
+				}),
+				q(4447, {	-- Corrupted Night Dragon
+					["provider"] = { "o", 173324 },	-- Corrupted Night Dragon
+					["coord"] = { 50.6, 30.4, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 4 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11952),	-- Night Dragon's Breath
+					},
+				}),
+				q(4448, {	-- Corrupted Night Dragon
+					["provider"] = { "o", 174608 },	-- Corrupted Night Dragon
+					["coord"] = { 42.5, 13.9, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 4 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11952),	-- Night Dragon's Breath
+					},
+				}),
+				q(4462, {	-- Corrupted Night Dragon
+					["provider"] = { "o", 174684 },	-- Corrupted Night Dragon
+					["coord"] = { 35.1, 59, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 4 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11952),	-- Night Dragon's Breath
+					},
 				}),
 				q(4506, {	-- Corrupted Sabers
 					["qg"] = 9996,	-- Winna Hazzard
 					["sourceQuest"] = 4504,	-- Well of Corruption
+					["coord"] = { 34.2, 52.4, FELWOOD },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12565, 1 },	-- Winna's Kitten Carrier
+					},
 					["lvl"] = 49,
 				}),
-				q(2878, {	-- Corrupted Songflower
+				q(2523, {	-- Corrupted Songflower
+					["provider"] = { "o", 171942 },	-- Corrupted Songflower
+					["coord"] = { 48.3, 75.6, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+				}),
+				q(2878, {	-- Corrupted Songflower
+					["provider"] = { "o", 174594 },	-- Corrupted Songflower
+					["coord"] = { 63.3, 22.6, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
 				q(3363, {	-- Corrupted Songflower
-					["provider"] = { "o", 164886 },	-- Corrupted Songflower
+					["provider"] = { "o", 174595 },	-- Corrupted Songflower
+					["coord"] = { 63.9, 6.1, FELWOOD },
 					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4401, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4465, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4464, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4116, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4118, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(4114, {	-- Corrupted Songflower
-					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
 				q(4113, {	-- Corrupted Songflower
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(2523, {	-- Corrupted Songflower
 					["provider"] = { "o", 164886 },	-- Corrupted Songflower
+					["coord"] = { 52.9, 87.8, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
-				q(4461, {	-- Corrupted Whipper Root
+				q(4114, {	-- Corrupted Songflower
+					["provider"] = { "o", 174596 },	-- Corrupted Songflower
+					["coord"] = { 55.8, 10.5, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
-				q(4446, {	-- Corrupted Whipper Root
+				q(4116, {	-- Corrupted Songflower
+					["provider"] = { "o", 174597 },	-- Corrupted Songflower
+					["coord"] = { 50.6, 13.9, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
-				q(4444, {	-- Corrupted Whipper Root
+				q(4118, {	-- Corrupted Songflower
+					["provider"] = { "o", 174598 },	-- Corrupted Songflower
+					["coord"] = { 34.4, 52.2, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
-				q(4443, {	-- Corrupted Whipper Root
-					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+				q(4401, {	-- Corrupted Songflower
+					["provider"] = { "o", 171939 },	-- Corrupted Songflower
+					["coord"] = { 46, 85.2, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
-				q(4445, {	-- Corrupted Whipper Root
+				q(4464, {	-- Corrupted Songflower
+					["provider"] = { "o", 174712 },	-- Corrupted Songflower
+					["coord"] = { 40.2, 56.6, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+				}),
+				q(4465, {	-- Corrupted Songflower
+					["provider"] = { "o", 174713 },	-- Corrupted Songflower
+					["coord"] = { 40.1, 44.4, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
 				}),
 				q(4117, {	-- Corrupted Whipper Root
 					["provider"] = { "o", 164888 },	-- Corrupted Whipper Root
+					["coord"] = { 40.2, 85.2, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
 				}),
-				q(4222, {	-- Corrupted Windblossom
+				q(4443, {	-- Corrupted Whipper Root
+					["provider"] = { "o", 173284 },	-- Corrupted Whipper Root
+					["coord"] = { 50.6, 18.2, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
+				}),
+				q(4444, {	-- Corrupted Whipper Root
+					["provider"] = { "o", 174605 },	-- Corrupted Whipper Root
+					["coord"] = { 49.4, 12.2, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
+				}),
+				q(4445, {	-- Corrupted Whipper Root
+					["provider"] = { "o", 174606 },	-- Corrupted Whipper Root
+					["coord"] = { 40.7, 19.2, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
+				}),
+				q(4446, {	-- Corrupted Whipper Root
+					["provider"] = { "o", 174607 },	-- Corrupted Whipper Root
+					["coord"] = { 43, 46.9, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
+				}),
+				q(4461, {	-- Corrupted Whipper Root
+					["provider"] = { "o", 174686 },	-- Corrupted Whipper Root
+					["coord"] = { 34.1, 60.3, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 3 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11951),	-- Whipper Root Tuber
+					},
+				}),
+				q(996, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174600 },	-- Corrupted Windblossom
+					["coord"] = { 57.5, 20, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
+				}),
+				q(998, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174599 },	-- Corrupted Windblossom
+					["coord"] = { 55.8, 7, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
+				}),
+				q(1514, {	-- Corrupted Windblossom
+					["provider"] = { "o", 173327 },	-- Corrupted Windblossom
+					["coord"] = { 55.2, 23.5, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
 				q(4115, {	-- Corrupted Windblossom
+					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
+					["coord"] = { 50, 80, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
-				}),
-				q(4343, {	-- Corrupted Windblossom
-					["repeatable"] = true,
-					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
 				q(4221, {	-- Corrupted Windblossom
 					["provider"] = { "o", 174604 },	-- Corrupted Windblossom
+					["coord"] = { 39, 59.1, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
-				q(4467, {	-- Corrupted Windblossom
+				q(4222, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174603 },	-- Corrupted Windblossom
+					["coord"] = { 34.4, 48.8, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
+				}),
+				q(4343, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174602 },	-- Corrupted Windblossom
+					["coord"] = { 38.8, 21.9, FELWOOD },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
+					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
 				q(4403, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174601 },	-- Corrupted Windblossom
+					["coord"] = { 45.4, 18.3, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
 				q(4466, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174708 },	-- Corrupted Windblossom
+					["coord"] = { 36.5, 61.9, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
-				q(1514, {	-- Corrupted Windblossom
+				q(4467, {	-- Corrupted Windblossom
+					["provider"] = { "o", 174709 },	-- Corrupted Windblossom
+					["coord"] = { 44.8, 41.7, FELWOOD },
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11516, 2 },	-- Cenarion Plant Salve
+					},
 					["lvl"] = 48,
-				}),
-				q(998, {	-- Corrupted Windblossom
-					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
-					["repeatable"] = true,
-					["lvl"] = 48,
-				}),
-				q(996, {	-- Corrupted Windblossom
-					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
-					["repeatable"] = true,
-					["lvl"] = 48,
+					["groups"] = {
+						i(11950),	-- Windblossom Berries
+					},
 				}),
 				q(8461, {	-- Deadwood of the North
 					["qg"] = 15395,	-- Nafien
