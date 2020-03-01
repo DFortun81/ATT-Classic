@@ -153,7 +153,7 @@ _.Zones =
 				q(4739, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 4563,	-- Kaal Soulreaper
 				}),
 				q(243, {	-- Into the Field
@@ -276,7 +276,7 @@ _.Zones =
 				q(4489, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 4563,	-- Kaal Soulreaper
 				}),
 				q(4661, {	-- Testing for Corruption - Felwood

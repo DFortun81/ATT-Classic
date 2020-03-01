@@ -299,7 +299,7 @@ _.Zones =
 				q(4738, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 461,	-- Demisette Cloyce
 				}),
 				q(1448, {	-- In Search of The Temple
@@ -484,7 +484,7 @@ _.Zones =
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1685,	-- Gakin's Summons
 					["races"] = { 1, 7 },	-- Human and Gnome only
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["maps"] = { ELWYNN_FOREST },
 					["cost"] = {
 						{ "i", 6810, 1 },	 -- Surena's Choker
@@ -502,7 +502,7 @@ _.Zones =
 				q(4488, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 461,	-- Demisette Cloyce
 				}),
 				q(434, {	-- The Attack!
@@ -514,7 +514,7 @@ _.Zones =
 				q(1689, {	-- The Binding
 					["lvl"] = 10,
 					["races"] = { 1, 7 },	-- Human and Gnome only
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1688,	-- Surena Caledon
 				}),
@@ -809,7 +809,7 @@ _.Zones =
 				q(397, {	-- You Have Served Us Well
 					["lvl"] = 25,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["sourceQuest"] = 336,	-- A Noble Brew
 				}),

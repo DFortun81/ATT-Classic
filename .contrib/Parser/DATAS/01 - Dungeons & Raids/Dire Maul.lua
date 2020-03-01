@@ -162,7 +162,7 @@ _.Instances = {
 				}),
 				q(7502, {	-- Harnessing Shadows
 					["qg"] = 14382,	-- Lorekeeper Mykos
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 18360, 1 },	-- Harnessing Shadows
 					},
@@ -482,7 +482,7 @@ _.Instances = {
 					{
 						["itemID"] = 18360,	-- Harnessing Shadows
 						["questID"] = 7502,	-- Harnessing Shadows
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 					},
 					{
 						["itemID"] = 18401,	-- Foror's Compendium of Dragon Slaying
@@ -597,7 +597,7 @@ _.Instances = {
 					}),
 					n(14349, {	-- Pimgib
 						i(18354, {	-- Pimgib's Collar
-							["classes"] = { 9 },	-- Warlock
+							["classes"] = { WARLOCK },
 						}),
 					}),
 					n(14327, {	-- Lethtendris

@@ -888,7 +888,7 @@ _.Zones =
 				q(1685, {	-- Seeking Strahad
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY, 
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["maps"] = { STORMWIND_CITY },
 				}),

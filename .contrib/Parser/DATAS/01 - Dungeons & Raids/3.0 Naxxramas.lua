@@ -52,7 +52,7 @@ _.Instances = {
 					{
 						["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["qg"] = 15192,	-- Anachronos
 						["groups"] = {
 							i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)

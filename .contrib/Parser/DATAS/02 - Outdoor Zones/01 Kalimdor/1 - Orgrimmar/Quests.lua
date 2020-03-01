@@ -175,7 +175,7 @@ _.Zones =
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -449,7 +449,7 @@ _.Zones =
 				q(4737, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 3326,	-- Zevrost
 				}),
 				q(8938, {	-- Just Compensation
@@ -656,7 +656,7 @@ _.Zones =
 				q(3631, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 3326,	-- Zevrost
 				}),
 				q(8276, {	-- Taking Back Silithus

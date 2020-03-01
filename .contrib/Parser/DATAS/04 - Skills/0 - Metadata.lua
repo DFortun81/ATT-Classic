@@ -234,13 +234,13 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 23161,	-- Summon Dreadsteed
-		["classes"] = { 9 },	-- Warlock Only!
+		["classes"] = { WARLOCK },
 		["sourceQuest"] = 7631,	-- Dreadsteed of Xoroth
 		["lvl"] = 60,
 	},
 	{
 		["recipeID"] = 5784,	-- Summon Felsteed
-		["classes"] = { 9 },	-- Warlock Only!
+		["classes"] = { WARLOCK },
 		["sourceQuest"] = 4490,	-- Summon Felsteed
 		["lvl"] = 40,
 	},

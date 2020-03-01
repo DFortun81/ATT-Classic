@@ -172,7 +172,7 @@ _.Zones =
 				q(1685, {	-- Gakin's Summons
 					["qg"] = 6121,	-- Remen Marcot
 					["races"] = { 1, 7 },	-- Human and Gnome only
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 				}),
 				q(16, {	-- Give Gerard a Drink
@@ -523,7 +523,7 @@ _.Zones =
 				q(1598, {	-- The Stolen Tome
 					["qg"] = 459,	-- Drusilla La Salle
 					["races"] = { HUMAN },
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 				}),
 				q(7962, {	-- Wabbit Pelts
 					["u"] = 1,

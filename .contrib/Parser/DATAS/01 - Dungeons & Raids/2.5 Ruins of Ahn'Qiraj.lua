@@ -315,7 +315,7 @@ _.Instances = {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
@@ -383,7 +383,7 @@ _.Instances = {
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
@@ -499,7 +499,7 @@ _.Instances = {
 						q(8702, {	-- Ring of Unspoken Names
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 9 },	-- Warlock
+							["classes"] = { WARLOCK },
 							["groups"] = {
 								i(21417),	-- Ring of Unspoken Names
 							},
@@ -567,7 +567,7 @@ _.Instances = {
 						q(8694, {	-- Shroud of Unspoken Names
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 9 },	-- Warlock
+							["classes"] = { WARLOCK },
 							["groups"] = {
 								i(21418),	-- Shroud of Unspoken Names
 							},
@@ -613,7 +613,7 @@ _.Instances = {
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
@@ -739,7 +739,7 @@ _.Instances = {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
@@ -807,7 +807,7 @@ _.Instances = {
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
@@ -877,7 +877,7 @@ _.Instances = {
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
@@ -1003,7 +1003,7 @@ _.Instances = {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
@@ -1071,7 +1071,7 @@ _.Instances = {
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21418),	-- Shroud of Unspoken Names
 						},
@@ -1124,7 +1124,7 @@ _.Instances = {
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
@@ -1250,7 +1250,7 @@ _.Instances = {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},
@@ -1291,7 +1291,7 @@ _.Instances = {
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21416),	-- Kris of Unspoken Names
 						},
@@ -1417,7 +1417,7 @@ _.Instances = {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 9 },	-- Warlock
+						["classes"] = { WARLOCK },
 						["groups"] = {
 							i(21417),	-- Ring of Unspoken Names
 						},

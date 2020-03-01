@@ -229,7 +229,7 @@ _.Zones =
 						{ "i", 16703, 1 },	-- Dreadmist Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -483,7 +483,7 @@ _.Zones =
 				q(4736, {	-- In Search of Menara Voidrender
 					["lvl"] = 31,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 5172,	-- Briarthorn
 				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun
@@ -829,7 +829,7 @@ _.Zones =
 				q(4487, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
+					["classes"] = { WARLOCK },
 					["qg"] = 5172,	-- Briarthorn
 				}),
 				q(8275, {	-- Taking Back Silithus
