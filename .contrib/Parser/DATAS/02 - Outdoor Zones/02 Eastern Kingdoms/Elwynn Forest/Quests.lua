@@ -171,7 +171,7 @@ _.Zones =
 				}),
 				q(1685, {	-- Gakin's Summons
 					["qg"] = 6121,	-- Remen Marcot
-					["races"] = { 1, 7 },	-- Human and Gnome only
+					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 				}),

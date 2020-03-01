@@ -133,7 +133,7 @@ _.Zones =
 					["coord"] = { 85.0, 10.2, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },	-- Mage
+					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 7293, 6 },	-- Dalaran Mana Gem
 						{ "i", 2589, 10 },	-- Linen Cloth
@@ -168,7 +168,7 @@ _.Zones =
 					["sourceQuest"] = 1959,	-- Report to Anastasia
 					["coord"] = { 85.0, 10.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },	-- Mage
+					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 7308, 1 },	-- Cantation of Manifestation
 						{ "i", 7247, 1 },	-- Chest of Containment Coffers
@@ -201,9 +201,7 @@ _.Zones =
 					["sourceQuest"] = 6323,	-- Ride to the Undercity
 					["coord"] = { 61.6, 41.8, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
-					["races"] = {
-						5,	-- Undead
-					},
+					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				q(7562, {	-- Mor'zul Bloodbringer
@@ -237,9 +235,7 @@ _.Zones =
 					["sourceQuest"] = 6322,	-- Michael Garrett
 					["coord"] = { 63.4, 48.6, UNDERCITY },
 					["maps"] = { SILVERPINE_FOREST },
-					["races"] = {
-						5,	-- Undead
-					},
+					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				q(1358, {	-- Sample for Helbrim

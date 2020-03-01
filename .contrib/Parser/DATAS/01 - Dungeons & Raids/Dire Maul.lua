@@ -487,7 +487,7 @@ _.Instances = {
 					{
 						["itemID"] = 18401,	-- Foror's Compendium of Dragon Slaying
 						["questID"] = 7507,	-- Foror's Compendium
-						["classes"] = { 1, 2 },	-- Warrior / Paladin
+						["classes"] = { WARRIOR, PALADIN },
 					},
 					{
 						["itemID"] = 18363,	-- Frost Shock and You

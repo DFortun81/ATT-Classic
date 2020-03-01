@@ -553,7 +553,7 @@ _.Zones =
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 15,
 				}),
 				q(8978, {	-- Return to Mokvar

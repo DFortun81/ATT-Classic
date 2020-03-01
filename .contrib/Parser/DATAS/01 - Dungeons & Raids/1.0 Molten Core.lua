@@ -111,7 +111,7 @@ _.Instances = {
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -130,7 +130,7 @@ _.Instances = {
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["lvl"] = 60,
 					["groups"] = {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
@@ -157,7 +157,7 @@ _.Instances = {
 					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { 3, 2, 4, 1 },	-- Hunter / Paladin / Rogue / Warrior
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -510,7 +510,7 @@ _.Instances = {
 				{
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
-					["classes"] = { HUNTER },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				},
 				i(18646, {	-- The Eye of Divinity

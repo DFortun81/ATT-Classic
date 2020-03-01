@@ -128,9 +128,7 @@ _.Zones =
 				q(854, {	-- Journey to the Crossroads
 					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
-					["races"] = {
-						6,	-- Tauren
-					},
+					["races"] = { TAUREN },
 				}),
 				q(766, {	-- Mazzranache
 					["lvl"] = 5,

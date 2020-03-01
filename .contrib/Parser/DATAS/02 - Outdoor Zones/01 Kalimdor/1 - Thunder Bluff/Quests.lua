@@ -162,7 +162,7 @@ _.Zones =
 					["qg"] = 3049,	-- Thurston Xane <Mage Trainer>
 					["coord"] = { 25, 20.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 15,
 				}),
 				q(2967, {	-- Return to Thunder Bluff

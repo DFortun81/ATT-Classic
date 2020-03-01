@@ -190,10 +190,7 @@ _.Zones =
 				}),
 				q(6387, {	-- Honor Students
 					["lvl"] = 10,
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME },
 					["qg"] = 1681,	-- Brock Stoneseeker
 					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Brock Stoneseeker.",
 				}),
@@ -304,10 +301,7 @@ _.Zones =
 				}),
 				q(6391, {	-- Ride to Ironforge
 					["lvl"] = 10,
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME },
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 1572,	-- Thorgrum Borrelson
 					["coord"] = { 33.9, 50.9, LOCH_MODAN },

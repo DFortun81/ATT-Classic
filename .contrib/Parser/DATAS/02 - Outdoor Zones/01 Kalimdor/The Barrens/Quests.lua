@@ -9,9 +9,7 @@ _.Zones =
 				q(6361, {	-- A Bundle of Hides
 					["qg"] = 3079,	-- Varg Windwhisper
 					["coord"] = { 45.82, 58.69, MULGORE },
-					["races"] = {
-						6,	-- Tauren
-					},
+					["races"] = { TAUREN },
 					["lvl"] = 10,
 				}),
 				q(1153, {	-- A New Ore Sample
@@ -347,10 +345,7 @@ _.Zones =
 					["sourceQuest"] = 6384,	-- Ride to Orgrimmar
 					["coord"] = { 54.09, 68.43, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
-					["races"] = {
-						2,	-- Orc
-						8,  -- Troll
-					},
+					["races"] = { ORC, TROLL },
 					["lvl"] = 10,
 				}),
 				q(881, {	-- Echeyakee
@@ -621,10 +616,7 @@ _.Zones =
 				q(6365, {	-- Meats to Orgrimmar
 					["qg"] = 3489,	-- Zargh
 					["coord"] = { 52.62, 29.84, THE_BARRENS },
-					["races"] = {
-						2,	-- Orc
-						8,  -- Troll
-					},
+					["races"] = { ORC, TROLL },
 					["lvl"] = 10,
 				}),
 				q(9267, {	-- Mending Old Wounds
@@ -776,9 +768,7 @@ _.Zones =
 					["qg"] = 2995,	-- Tal
 					["sourceQuest"] = 6363,	-- Tal the Wind Rider Master
 					["coord"] = { 47.00, 49.84, THUNDER_BLUFF },
-					["races"] = {
-						6,	-- Tauren
-					},
+					["races"] = { TAUREN },
 					["lvl"] = 10,
 				}),
 				q(6386, {	-- Return to the Crossroads.
@@ -786,10 +776,7 @@ _.Zones =
 					["sourceQuest"] = 6385,	-- Doras the Wind Rider Master
 					["coord"] = { 45.21, 63.58, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
-					["races"] = {
-						2,	-- Orc
-						8,  -- Troll
-					},
+					["races"] = { ORC, TROLL },
 					["lvl"] = 10,
 				}),
 				q(849, {	-- Revenge of Gann
@@ -814,16 +801,13 @@ _.Zones =
 					["sourceQuest"] = 6365,	-- Meats to Orgrimmar
 					["coord"] = { 51.50, 30.34, THE_BARRENS },
 					["lvl"] = 10,
-					["races"] = {
-						2,	-- Orc
-						8,  -- Troll
-					},
+					["races"] = { ORC, TROLL },
 				}),
 				q(6362, {	-- Ride to Thunder Bluff
 					["qg"] = 3615,	-- Devrak
 					["sourceQuest"] = 6361,	-- A Bundle of Hides
 					["coord"] = { 51.50, 30.34, THE_BARRENS },
-					["races"] = { 6, },	-- Tauren
+					["races"] = { TAUREN },
 					["lvl"] = 10,
 				}),
 				q(3923, {	-- Rilli Greasygob
@@ -988,9 +972,7 @@ _.Zones =
 					["qg"] = 8359,	-- Ahanu
 					["sourceQuest"] = 6362,	-- Ride to Thunder Bluff
 					["coord"] = { 45.74, 55.86, THUNDER_BLUFF },
-					["races"] = {
-						6,	-- Tauren
-					},
+					["races"] = { TAUREN },
 					["lvl"] = 10,
 				}),
 				q(1719, {	-- The Affray

@@ -483,7 +483,7 @@ _.Zones =
 				q(1688, {	-- Surena Caledon
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1685,	-- Gakin's Summons
-					["races"] = { 1, 7 },	-- Human and Gnome only
+					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["maps"] = { ELWYNN_FOREST },
 					["cost"] = {
@@ -513,7 +513,7 @@ _.Zones =
 				}),
 				q(1689, {	-- The Binding
 					["lvl"] = 10,
-					["races"] = { 1, 7 },	-- Human and Gnome only
+					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1688,	-- Surena Caledon

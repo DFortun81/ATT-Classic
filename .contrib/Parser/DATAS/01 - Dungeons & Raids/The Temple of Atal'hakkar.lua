@@ -45,7 +45,7 @@ _.Instances = {
 					["sourceQuest"] = 8412,	-- Spirit Totem
 					["coords"] = { 80.4, 66.8, ALTERAC_MOUNTAINS },
 					["maps"] = { ALTERAC_MOUNTAINS },
-					["classes"] = { SHAMAN },	-- Shaman
+					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 20606, 2 },	-- Amber Voodoo Feather
 						{ "i", 20607, 2 },	-- Blue Voodoo Feather

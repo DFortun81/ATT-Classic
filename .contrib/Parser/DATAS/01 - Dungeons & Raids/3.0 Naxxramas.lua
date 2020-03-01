@@ -11,7 +11,7 @@ _.Instances = {
 		["lvl"] = 60,
 		["groups"] = {
 			n(-10066, {	-- Legendary Questline
-				["classes"] = { 5, 8, 9, 11 },    -- Priest, Mage, Warlock, Druid
+				["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 				["title"] = "Atiesh, Greatstaff of the Guardian",
 				["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
 				["isRaid"] = true,

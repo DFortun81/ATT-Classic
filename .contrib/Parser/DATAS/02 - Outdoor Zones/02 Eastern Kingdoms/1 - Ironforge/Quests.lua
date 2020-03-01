@@ -466,10 +466,7 @@ _.Zones =
 				}),
 				q(6388, {	-- Gryth Thurden
 					["lvl"] = 10,
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME },
 					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 4256,	-- Golnir Bouldertoe
 				}),
@@ -670,10 +667,7 @@ _.Zones =
 				}),
 				q(6392, {	-- Return to Brock
 					["lvl"] = 10,
-					["races"] = {
-						3,	-- Dwarf
-						7,	-- Gnome
-					},
+					["races"] = { DWARF, GNOME},
 					["qg"] = 1573,	-- Gryth Thurden
 					["sourceQuest"] = 6388,	-- Gryth Thurden
 				}),

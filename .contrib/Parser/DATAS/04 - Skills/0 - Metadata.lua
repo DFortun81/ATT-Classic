@@ -229,7 +229,7 @@ _.Skills =
 	{
 		["recipeID"] = 23214,	-- Summon Charger
 		["classes"] = { PALADIN },
-		["races"] = { 1, 3 },	-- Human / Dwarf Only!
+		["races"] = { HUMAN, DWARF },
 		["lvl"] = 60,
 	},
 	{
@@ -247,7 +247,7 @@ _.Skills =
 	{
 		["recipeID"] = 13819,	-- Summon Warhorse
 		["classes"] = { PALADIN },
-		["races"] = { 1, 3 },	-- Human / Dwarf Only!
+		["races"] = { HUMAN, DWARF },
 		["sourceQuest"] = 1661,	-- The Tome of Nobility
 		["lvl"] = 40,
 	},

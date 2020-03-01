@@ -288,9 +288,7 @@ _.Zones =
 					["qg"] = 2226,	-- Karos Razok
 					["sourceQuest"] = 6321,	-- Supplying the Sepulcher
 					["coord"] = { 45.6, 42.4, SILVERPINE_FOREST },
-					["races"] = {
-						5,	-- Undead
-					},
+					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				q(439, {	-- Rot Hide Clues
@@ -334,9 +332,7 @@ _.Zones =
 						{ 60.2, 52.2, TIRISFAL_GLADES },
 					},
 					["maps"] = { TIRISFAL_GLADES },
-					["races"] = {
-						5,	-- Undead
-					},
+					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
 				q(437, {	-- The Dead Fields
