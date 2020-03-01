@@ -339,9 +339,20 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(5087, {	-- Winterfall Runners
-					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors
+					["cost"] = {
+						{ "i", 12829, 1 },	-- Winterfall Crate
+					},
+					["lvl"] = 52,
+					["groups"] = {
+						{
+							["itemID"] = 12829,	-- Winterfall Crate
+							["questID"] = 5087,	-- Winterfall Runners
+							["cr"] = 10916,	-- Winterfall Runner
+							["coord"] = { 28.4, 37.8, WINTERSPRING },
+						},
+					},
 				}),
 				q(5128, {	-- Words of the High Chief
 					["lvl"] = 52,

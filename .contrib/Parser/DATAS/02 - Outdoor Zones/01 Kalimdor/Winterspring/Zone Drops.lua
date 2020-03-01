@@ -49,6 +49,40 @@ _.Zones =
 						7463,	-- Hederine Slayer
 					},
 				}),
+				i(12431, {	-- Winterfall E'ko
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+				}),
+				i(12820, {	-- Winterfall Firewater
+					["crs"] = {
+						10199,	-- Grizzle Snowpaw
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+				}),
+				i(21383, {	-- Winterfall Spirit Beads
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+				}),
 			}),
 		}),
 	}),

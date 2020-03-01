@@ -7,24 +7,53 @@ _.Zones =
 		m(FELWOOD, {
 			n(QUESTS, {
 				q(5242, {	-- A Final Blow
-					["lvl"] = 48,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10922,	-- Greta Mosshoof
+					["coord"] = { 51.2, 82.2, FELWOOD },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13207, 1 },	-- Shadow Lord Fel'dan's Head
+					},
+					["lvl"] = 48,
 					["g"] = {
+						{
+							["itemID"] = 13207,	-- Shadow Lord Fel'dan's Head
+							["questID"] = 5242,	-- A Final Blow
+							["cr"] = 9517,	-- Shadow Lord Fel'dan
+							["coord"] = { 38.8, 46.8, FELWOOD },
+						},
 						i(15707),	-- Brantwood Sash
 						i(15708),	-- Blight Leather Gloves
 						i(15709),	-- Gearforge Girdle
 					},
-					["coord"] = { 51.2, 82.2, FELWOOD },
 				}),
 				q(6162, {	-- A Husband's Last Battle
-					["lvl"] = 46,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9620,	-- Dreka'Sur
+					["coord"] = { 34.8, 52.6, FELWOOD },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15879, 1 },	-- Overlord Ror's Claw
+					},
+					["lvl"] = 46,
+					["groups"] = {
+						{
+							["itemID"] = 15879,	-- Overlord Ror's Claw
+							["questID"] = 6162,	-- A Husband's Last Battle
+							["cr"] = 9464,	-- Overlord Ror
+							["coord"] = { 48.6, 93.6, FELWOOD },
+						},
+					},
 				}),
 				q(5202, {	-- A Strange Red Key
-					["lvl"] = 49,
 					["provider"] = { "i", 13140 },	-- Blood Red Key
+					["crs"] = {
+						7118,	-- Jaedenar Darkweaver
+						7114,	-- Jaedenar Enforcer
+						9862,	-- Jaedenar Legionnaire
+						7120,	-- Jaedenar Warlock
+						14523,	-- Ulathek
+						14522,	-- Ur'dan
+					},
+					["lvl"] = 49,
 				}),
 				q(4261, {	-- Ancient Spirit
 					["qg"] = 9598,	-- Arei
@@ -196,17 +225,18 @@ _.Zones =
 					["provider"] = { "o", 164887 },	-- Corrupted Windblossom
 				}),
 				q(8461, {	-- Deadwood of the North
-					["lvl"] = 45,
 					["qg"] = 15395,	-- Nafien
+					["lvl"] = 45,
 				}),
 				q(8470, {	-- Deadwood Ritual Totem
-					["lvl"] = 45,
 					["provider"] = { "i", 20741 },	-- Deadwood Ritual Totem
 					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
-					["g"] = {
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
+					["crs"] = {
+						7157,	-- Deadwood Avenger
+						7156,	-- Deadwood Den Watcher
+						7158,	-- Deadwood Shaman
 					},
+					["lvl"] = 45,
 				}),
 				q(5165, {	-- Dousing the Flames of Protection
 					["lvl"] = 48,
@@ -251,10 +281,12 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(939, {	-- Flute of Xavaric
-					["lvl"] = 49,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 11668 },	-- Flute of Xavaric
 					["sourceQuest"] = 4906,	-- Further Corruption
+					["coord"] = { 39.6, 22.2, FELWOOD },
+					["cr"] = 10648,	-- Xavaric
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 49,
 				}),
 				q(5155, {	-- Forces of Jaedenar
 					["lvl"] = 48,
@@ -476,126 +508,134 @@ _.Zones =
 					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(4109, {	-- Salve via Mining
-					["lvl"] = 48,
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4106, {	-- Salve via Skinning
-					["lvl"] = 48,
+					["qg"] = 9528,	-- Arathandris Silversky
+					["coord"] = { 54.2, 86.7, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9528,	-- Arathandris Silversky
+					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
-					["coord"] = { 54.2, 86.7, FELWOOD },
 				}),
 				q(5890, {	-- Salve via Skinning
-					["lvl"] = 48,
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(4111, {	-- Salve via Skinning
-					["lvl"] = 48,
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5885, {	-- Salve via Skinning
-					["lvl"] = 48,
+					["qg"] = 9529,	-- Maybess Riverbreeze
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
 				q(5158, {	-- Seeking Spiritual Aid
-					["lvl"] = 48,
 					["qg"] = 10922,	-- Greta Mosshoof
 					["sourceQuest"] = 5157,	-- Collection of the Corrupt Water
 					["coord"] = { 51.2, 82.2, FELWOOD },
+					["lvl"] = 48,
 				}),
 				q(8462, {	-- Speak to Nafien
-					["lvl"] = 45,
 					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 8460,	-- Timbermaw Ally
 					["coord"] = { 50.9, 85.0, FELWOOD },
+					["lvl"] = 45,
 				}),
 				q(8465, {	-- Speak to Salfa
-					["lvl"] = 45,
 					["qg"] = 15395,	-- Nafien
 					["sourceQuest"] = 8461,	-- Deadwood of the North
+					["lvl"] = 45,
 				}),
 				q(4421, {	-- The Corruption of the Jadefire
-					["lvl"] = 49,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9116,	-- Eridan Bluewind
 					["coord"] = { 51.4, 81.5, FELWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 49,
 				}),
 				q(5385, {	-- The Remains of Trey Lightforge
-					["lvl"] = 49,
 					["sourceQuest"] = 5204,	-- Retribution of the Light
+					["lvl"] = 49,
 					["g"] = {
 						i(15706),	-- Hunt Tracker Blade
 						i(15705),	-- Tidecrest Blade
 					},
 				}),
 				q(8481, {	-- The Root of All Evil
-					["lvl"] = 40,
 					["qg"] = 11555,	-- Gorn One Eye
 					["minReputation"] = { 576, EXALTED },	-- Timbermaw Hold
+					["lvl"] = 40,
 					["g"] = {
 						i(21326),	-- Defender of the Timbermaw
 					},
 				}),
 				q(8421, {	-- The Wrong Stuff
-					["lvl"] = 50,
 					["qg"] = 14470,	-- Impsy <Niby's Minion>
-					["coord"] = { 41.6, 45.0, FELWOOD },
-					["classes"] = { 9 },	-- Warlock
 					["sourceQuest"] = 8420,	-- Hot and Itchy
+					["coord"] = { 41.6, 45.0, FELWOOD },
+					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 20613, 1 },	-- Rotting Wood
 						{ "i", 20614, 1 },	-- Bloodvenom Essence
 					},
+					["lvl"] = 50,
 				}),
 				q(8460, {	-- Timbermaw Ally
-					["lvl"] = 45,
 					["qg"] = 11554,	-- Grazle
+					["altQuests"] = { 6131 },	-- Timbermaw Ally (old version, deprecated)
+					["coord"] = { 50.9, 85.0, FELWOOD },
+					["lvl"] = 45,
 					["g"] = {
 						i(21311),	-- Earth Warder's Vest
 						i(21312),	-- Belt of the Den Watcher
 					},
-					["coord"] = { 50.9, 85.0, FELWOOD },
-				}),
-				q(6131, {	-- Timbermaw Ally
-					["lvl"] = 45,
-					["u"] = 1,	-- Not available in classic (8460 is available)
 				}),
 				q(5249, {	-- To Winterspring!
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10924,	-- Ivy Leafrunner
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 53,
 				}),
 				q(7624, { -- Ulathek the Traitor
-					["lvl"] = 60,
-					["classes"] = { WARLOCK },
 					["qg"] = 9516, -- Lord Banehollow
-					["coords"] = { 36.0, 44.6, FELLWOOD },
 					["sourceQuest"] = 7623, -- Lord Banehollow
+					["coords"] = { 36.0, 44.6, FELWOOD },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 18719, 1 },	-- The Traitor's Heart
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						{
+							["itemID"] = 18719,	-- The Traitor's Heart
+							["questID"] = 7624,	-- Ulathek the Traitor
+							["cr"] = 14523,	-- Ulathek
+							["coord"] = { 40.6, 48.4, FELWOOD },
+						},
+					},
 				}),
 				q(5156, {	-- Verifying the Corruption
 					["lvl"] = 48,
@@ -632,18 +672,23 @@ _.Zones =
 					["sourceQuest"] = 4741,	-- Wild Guardians (2/3)
 				}),
 				q(8471, {	-- Winterfall Ritual Totem
-					["lvl"] = 50,
 					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
 					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
-					["g"] = {
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
 					},
+					["lvl"] = 50,
 				}),
 				q(7625, { -- Xorothian Stardust
 					["qg"] = 9516, -- Lord Banehollow
 					["sourceQuest"] = 7624, -- Ulathek the Traitor
-					["coords"] = { 36.0, 44.6, FELLWOOD },
+					["coords"] = { 36.0, 44.6, FELWOOD },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 18687, 1 }, -- Xorothian Stardust
