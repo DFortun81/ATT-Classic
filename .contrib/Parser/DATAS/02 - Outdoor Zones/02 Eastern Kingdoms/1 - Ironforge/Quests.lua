@@ -213,7 +213,7 @@ _.Zones =
 						{ "i", 16722, 1 },	-- Lightforge Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -434,7 +434,7 @@ _.Zones =
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.6, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(3371, {	-- Dwarven Justice
@@ -869,7 +869,7 @@ _.Zones =
 						1787,	-- The Tome of Divinity (8)
 					},
 					["races"] = { HUMAN },
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
 				q(1802, {	-- Tome of the Cabal (2/3 Alliance)

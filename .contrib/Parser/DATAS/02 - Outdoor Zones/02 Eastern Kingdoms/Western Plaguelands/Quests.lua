@@ -346,7 +346,7 @@ _.Zones =
 					["sourceQuest"] = 8415,	-- Chillwind Camp
 					["coord"] = { 42.8, 84.0, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 12840, 20 },	-- Minion's Scourgestone
 					},
@@ -432,7 +432,7 @@ _.Zones =
 					["sourceQuest"] = 8414,	-- Dispelling Evil
 					["coord"] = { 52.2, 83.6, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
 				q(5407, {	-- Invader's Scourgestones

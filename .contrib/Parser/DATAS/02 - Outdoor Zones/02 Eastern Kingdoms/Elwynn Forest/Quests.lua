@@ -98,7 +98,7 @@ _.Zones =
 					["qg"] = 197,	-- Marshal McBride
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(1667, {	-- Dead-tooth Jack
@@ -506,7 +506,7 @@ _.Zones =
 						1787,	-- The Tome of Divinity (8)
 					},
 					["races"] = { HUMAN },
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
 				q(1787, {	-- The Tome of Divinity (8)

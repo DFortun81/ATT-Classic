@@ -257,7 +257,7 @@ _.Instances = {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
@@ -359,7 +359,7 @@ _.Instances = {
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
@@ -441,7 +441,7 @@ _.Instances = {
 						q(8703, {	-- Ring of Eternal Justice
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 2 },	-- Paladin
+							["classes"] = { PALADIN },
 							["groups"] = {
 								i(21396),	-- Ring of Eternal Justice
 							},
@@ -543,7 +543,7 @@ _.Instances = {
 						q(8695, {	-- Cape of Eternal Justice
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 2 },	-- Paladin
+							["classes"] = { PALADIN },
 							["groups"] = {
 								i(21397),	-- Cape of Eternal Justice
 							},
@@ -639,7 +639,7 @@ _.Instances = {
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
@@ -681,7 +681,7 @@ _.Instances = {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
@@ -783,7 +783,7 @@ _.Instances = {
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
@@ -903,7 +903,7 @@ _.Instances = {
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
@@ -945,7 +945,7 @@ _.Instances = {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
@@ -1047,7 +1047,7 @@ _.Instances = {
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21397),	-- Cape of Eternal Justice
 						},
@@ -1150,7 +1150,7 @@ _.Instances = {
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
@@ -1192,7 +1192,7 @@ _.Instances = {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},
@@ -1317,7 +1317,7 @@ _.Instances = {
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21395),	-- Blade of Eternal Justice
 						},
@@ -1359,7 +1359,7 @@ _.Instances = {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 						["groups"] = {
 							i(21396),	-- Ring of Eternal Justice
 						},

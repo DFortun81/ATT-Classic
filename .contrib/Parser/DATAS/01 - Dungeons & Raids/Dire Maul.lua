@@ -406,7 +406,7 @@ _.Instances = {
 				{
 					["questID"] = 7501,	-- The Light and How To Swing It
 					["qg"] = 14382,	-- Lorekeeper Mykos
-					["classes"] = { 2 },	-- Paladin
+					["classes"] = { PALADIN },
 					["cost"] = {
 						{ "i", 18359, 1 },	-- The Light and How to Swing It
 					},
@@ -522,7 +522,7 @@ _.Instances = {
 					{
 						["itemID"] = 18359,	-- The Light and How to Swing It
 						["questID"] = 7501,	-- The Light and How to Swing It
-						["classes"] = { 2 },	-- Paladin
+						["classes"] = { PALADIN },
 					},
 				},
 			}),
@@ -644,7 +644,7 @@ _.Instances = {
 							i(22472), 	-- Boots of Ferocity
 							{
 								["itemID"] = 22401,	-- Libram of Hope
-								["classes"] = { 2 },	-- Paladin
+								["classes"] = { PALADIN },
 							},
 							{
 								["itemID"] = 22345,	-- Totem of Rebirth

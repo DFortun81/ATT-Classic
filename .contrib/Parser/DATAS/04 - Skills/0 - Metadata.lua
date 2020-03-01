@@ -228,7 +228,7 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 23214,	-- Summon Charger
-		["classes"] = { 2 },	-- Paladin Only!
+		["classes"] = { PALADIN },
 		["races"] = { 1, 3 },	-- Human / Dwarf Only!
 		["lvl"] = 60,
 	},
@@ -246,7 +246,7 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 13819,	-- Summon Warhorse
-		["classes"] = { 2 },	-- Paladin Only!
+		["classes"] = { PALADIN },
 		["races"] = { 1, 3 },	-- Human / Dwarf Only!
 		["sourceQuest"] = 1661,	-- The Tome of Nobility
 		["lvl"] = 40,

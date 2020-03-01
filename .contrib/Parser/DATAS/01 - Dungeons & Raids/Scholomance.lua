@@ -545,7 +545,7 @@ _.Instances = {
 				["groups"] = {
 					{
 						["itemID"] = 18749,	-- Charger's Lost Soul
-						["classes"] = { 2 },	-- Paladin Only!
+						["classes"] = { PALADIN },
 						["groups"] = {
 							{
 								["itemID"] = 18799,	-- Charger's Redeemed Soul
