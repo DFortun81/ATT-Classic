@@ -1,4 +1,4 @@
-profession(164, {	-- Blacksmithing
+profession(BLACKSMITHING, {
 	prof(9788, {	-- Armorsmith
 		["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",
 		["sourceQuests"] = {

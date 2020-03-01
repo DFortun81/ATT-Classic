@@ -1,4 +1,4 @@
-profession(333, {	-- Enchanting
+profession(ENCHANTING, {
 	{
 		["name"] = "Rods",
 		["categoryID"] = 34,

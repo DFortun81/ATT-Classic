@@ -19,7 +19,7 @@ _.Instances = {
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14525,	-- Stoma the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18705, 1 },	-- Mature Black Dragon Sinew
@@ -33,7 +33,7 @@ _.Instances = {
 					["sourceQuest"] = 7633,	-- An Introduction
 					["qg"] = 14526,	-- Hastat the Ancient
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["crs"] = {
 						6109,	-- Azuregos
 						7435,	-- Cobalt Wyrmkin
@@ -75,7 +75,7 @@ _.Instances = {
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maps"] = { DIRE_MAUL },
 					["description"] = "You get this quest by looting Foror's Compendium from bosses in Dire Maul.\n\nYou can also buy it on the Auction House for a hefty price!",
-					["classes"] = { 1, 2 },	-- Warrior, Paladin
+					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = 60,
 					["groups"] = {
 						i(18513),	-- A Dull and Flat Elven Blade
@@ -86,9 +86,10 @@ _.Instances = {
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 					["cost"] = {
+						{ "i", 18708, 1 },	-- Petrified Bark
 						{ "i", 18955, 1 },	-- Artorius's Head
 						{ "i", 18953, 1 },	-- Klinfran's Head
 						{ "i", 18952, 1 },	-- Simone's Head
@@ -138,7 +139,7 @@ _.Instances = {
 						},
 						i(18715, {	-- Lok'delar, Stave of the Ancient Keepers
 							["description"] = "Go back to Felwood after having completed all the quests and a chat icon will become available, allowing you to interact with one of the ancients. Speak to him and he will give you the staff.",
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 							["sourceQuests"] = {
 								7634,	-- Ancient Sinew Wrapped Lamina
 								7635,	-- A Proper String
@@ -152,7 +153,7 @@ _.Instances = {
 					["sourceQuest"] = 7507,	-- Foror's Compendium
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maps"] = { DIRE_MAUL },
-					["classes"] = { 1, 2 },	-- Warrior, Paladin
+					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18513, 1 },	-- A Dull and Flat Elven Blade
@@ -163,7 +164,7 @@ _.Instances = {
 					["sourceQuest"] = 7508,	-- The Forging of Quel'Serrar
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["maps"] = { DIRE_MAUL },
-					["classes"] = { 1, 2 },	-- Warrior, Paladin
+					["classes"] = { WARRIOR, PALADIN },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18492, 1 },	-- Treated Ancient Blade
@@ -173,19 +174,19 @@ _.Instances = {
 							["itemID"] = 18489,	-- Unfired Ancient Blade
 							["questID"] = 7509,	-- The Forging of Quel'Serrar
 							["description"] = "Place this in front of Onyxia's Breath attack during The Forging of Quel'Serrar quest.\n\nYou may want to delay placing this item on the ground until the breath goes on cooldown during Phase 3.\n\nAs a note you can heat the blade in Phase 1 or 3. The Heated Ancient Blade has a deteriation time of 20 minutes. This is NOT a cooldown. Once the time runs out it will not change back into the Unfired Ancient Blade. It will instead disappear from your inventory and you will have to get a replacement for it by returning to DM, abandoning the quest, and reaccepting.",
-							["classes"] = { 1, 2 },	-- Warrior, Paladin
+							["classes"] = { WARRIOR, PALADIN },
 						},
 						{
 							["itemID"] = 18488,	-- Heated Ancient Blade
 							["questID"] = 7509,	-- The Forging of Quel'Serrar
 							["description"] = "Once the boss uses her Breath attack on your Unfired Ancient Blade, loot this item from the ground and then impale the corpse of Onyxia once you defeat her.",
-							["classes"] = { 1, 2 },	-- Warrior, Paladin
+							["classes"] = { WARRIOR, PALADIN },
 						},
 						{
 							["itemID"] = 18492,	-- Treated Ancient Blade
 							["questID"] = 7509,	-- The Forging of Quel'Serrar
 							["description"] = "Drops from Onyxia when you use the Heated Ancient Blade on her corpse during The Forging of Quel'Serrar quest.",
-							["classes"] = { 1, 2 },	-- Warrior, Paladin
+							["classes"] = { WARRIOR, PALADIN },
 							["crs"] = { 10184 },	-- Onyxia
 						},
 						i(18348),	-- Quel'Serrar
@@ -236,7 +237,7 @@ _.Instances = {
 				{
 					["itemID"] = 18705,	-- Mature Black Dragon Sinew
 					["questID"] = 7635,	-- A Proper String
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				},
 				{

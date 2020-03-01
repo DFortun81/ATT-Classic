@@ -3,7 +3,7 @@ _.Craftables =
 	prof(171, {	-- Alchemy
 		i(9149),	-- Philosopher's Stone
 	}),
-	prof(164, {	-- Blacksmithing
+	prof(BLACKSMITHING, {
 		filter(20, {	-- Daggers
 			i(3848),	-- Big Bronze Knife
 			i(19166),	-- Black Amnesty

@@ -13,7 +13,7 @@ _.Instances = {
 					["questID"] = 7604,	-- A Binding Contract
 					["qg"] = 12944,	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					["description"] = "With a Sulfuron Ingot in your bags, speak with Lokhtos and click on the new chat option to obtain a Thorium Brotherhood Contract.",
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["cost"] = {
 						{ "i", 17203, 1 },	-- Sulfuron Ingot
 					},

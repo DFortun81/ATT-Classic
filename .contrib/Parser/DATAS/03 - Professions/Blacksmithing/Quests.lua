@@ -1,8 +1,8 @@
-profession(164, {	-- Blacksmithing
+profession(BLACKSMITHING, {
 	n(QUESTS, {
 		q(7652, {	-- A Blue Light Bargain
 			["qg"] = 14567,	-- Derotain Mudsipper
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["description"] = "You need 265 Blacksmithing. Does not require a specialization.",
@@ -11,7 +11,7 @@ profession(164, {	-- Blacksmithing
 		q(2771, {	-- A Good Head On Your Shoulders
 			["qg"] = 7804,	-- Trenton Lighthammer
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -25,7 +25,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(2751, {	-- Barbaric Battlements
 			["qg"] = 7790,	-- Orokk Omosh
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 79.4, 22.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -44,7 +44,7 @@ profession(164, {	-- Blacksmithing
 		q(2757, {	-- Booty Bay or Bust!
 			["qg"] = 7793,	-- Ox
 			["sourceQuest"] = 2756,	-- The Old Ways
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 80.4, 23.2, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -90,7 +90,7 @@ profession(164, {	-- Blacksmithing
 				2773,	-- The Mithril Kid
 				2772,	-- The World At Your Feet
 			},
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["lvl"] = 40,
@@ -143,7 +143,7 @@ profession(164, {	-- Blacksmithing
 				2763,	-- The Art of the Imbue
 				2762,	-- The Great Silver Deceiver
 			},
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["lvl"] = 40,
@@ -178,14 +178,14 @@ profession(164, {	-- Blacksmithing
 				2763,	-- The Art of the Imbue
 				2762,	-- The Great Silver Deceiver
 			},
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["lvl"] = 40,
 		}),
 		q(1618, {	-- Gearing Redridge
 			["qg"] = 6031,	-- Tormus Deepforge
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 48.6, 43, IRONFORGE },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
@@ -202,7 +202,7 @@ profession(164, {	-- Blacksmithing
 		q(2754, {	-- Horns of Frenzy
 			["qg"] = 7790,	-- Orokk Omosh
 			["sourceQuest"] = 2753,	-- Trampled Under Foot
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 79.4, 22.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -235,7 +235,7 @@ profession(164, {	-- Blacksmithing
 		q(7653, {	-- Imperial Plate Belt
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -249,7 +249,7 @@ profession(164, {	-- Blacksmithing
 		q(7654, {	-- Imperial Plate Boots
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -263,7 +263,7 @@ profession(164, {	-- Blacksmithing
 		q(7655, {	-- Imperial Plate Bracer
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -277,7 +277,7 @@ profession(164, {	-- Blacksmithing
 		q(7656, {	-- Imperial Plate Chest
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -291,7 +291,7 @@ profession(164, {	-- Blacksmithing
 		q(7657, {	-- Imperial Plate Helm
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -305,7 +305,7 @@ profession(164, {	-- Blacksmithing
 		q(7658, {	-- Imperial Plate Leggings
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -319,7 +319,7 @@ profession(164, {	-- Blacksmithing
 		q(7659, {	-- Imperial Plate Shoulders
 			["qg"] = 14567,	-- Derotain Mudsipper
 			["sourceQuest"] = 7652,	-- A Blue Light Bargain
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -333,7 +333,7 @@ profession(164, {	-- Blacksmithing
 		q(2759, {	-- In Search of Galvan
 			["qg"] = 7798,	-- Hank the Hammer
 			["sourceQuest"] = 2758,	-- The Origins of Smithing
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 56, 16, STORMWIND_CITY },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -345,7 +345,7 @@ profession(164, {	-- Blacksmithing
 		q(2755, {	-- Joys of Omosh
 			["qg"] = 7790,	-- Orokk Omosh
 			["sourceQuest"] = 2754,	-- Horns of Frenzy
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 79.4, 22.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -359,7 +359,7 @@ profession(164, {	-- Blacksmithing
 		q(2752, {	-- On Iron Pauldrons
 			["qg"] = 7790,	-- Orokk Omosh
 			["sourceQuest"] = 2751,	-- Barbaric Battlements
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 79.4, 22.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -377,7 +377,7 @@ profession(164, {	-- Blacksmithing
 		q(2761, {	-- Smelt On, Smelt Off
 			["qg"] = 7802,	-- Galvan the Ancient
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["cost"] = {
@@ -409,7 +409,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(1578, {	-- Supplying the Front
 			["qg"] = 6031,	-- Tormus Deepforge
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 48.5, 43, IRONFORGE },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
@@ -442,7 +442,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(5283, {	-- The Art of the Armorsmith (A)
 			["qg"] = 5164,	-- Grumnus Steelshaper
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 			["coord"] = { 50.2, 42.6, IRONFORGE },
 			["maps"] = { IRONFORGE },
@@ -461,7 +461,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(5301, {	-- The Art of the Armorsmith (H)
 			["qg"] = 11177,	-- Okothos Ironrager
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["description"] = "Upon finishing this quest, you will become a Armorsmith and be locked out of becoming a Weaponsmith.",
 			["coord"] = { 79.8, 23.8, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
@@ -481,7 +481,7 @@ profession(164, {	-- Blacksmithing
 		q(2763, {	-- The Art of the Imbue
 			["qg"] = 7802,	-- Galvan the Ancient
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["cost"] = {
@@ -524,7 +524,7 @@ profession(164, {	-- Blacksmithing
 		q(2762, {	-- The Great Silver Deceiver
 			["qg"] = 7802,	-- Galvan the Ancient
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 50.6, 20.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["cost"] = {
@@ -539,7 +539,7 @@ profession(164, {	-- Blacksmithing
 		q(2773, {	-- The Mithril Kid
 			["qg"] = 7804,	-- Trenton Lighthammer
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["lvl"] = 40,
@@ -557,7 +557,7 @@ profession(164, {	-- Blacksmithing
 				2757,	-- Booty Bay or Bust!
 				2759,	-- In Search of Galvan
 			},
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 28.8, 75.4, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["cost"] = {
@@ -567,7 +567,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(2756, {	-- The Old Ways
 			["qg"] = 7792,	-- Aturk the Anvil
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 80.6, 23.2, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -582,7 +582,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(2758, {	-- The Origins of Smithing
 			["qg"] = 7798,	-- Hank the Hammer
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 56, 16, STORMWIND_CITY },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -598,7 +598,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(5284, {	-- The Way of the Weaponsmith (A)
 			["qg"] = 11146,	-- Ironus Coldsteel
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 			["coord"] = { 49.8, 45, IRONFORGE },
 			["maps"] = { IRONFORGE },
@@ -617,7 +617,7 @@ profession(164, {	-- Blacksmithing
 		}),
 		q(5302, {	-- The Way of the Weaponsmith (H)
 			["qg"] = 11178,	-- Borgosh Corebender
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 			["coord"] = { 79.6, 23.6, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
@@ -638,7 +638,7 @@ profession(164, {	-- Blacksmithing
 		q(2772, {	-- The World At Your Feet
 			["qg"] = 7804,	-- Trenton Lighthammer
 			["sourceQuest"] = 2760,	-- The Mithril Order
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -653,7 +653,7 @@ profession(164, {	-- Blacksmithing
 		q(2753, {	-- Trampled Under Foot
 			["qg"] = 7790,	-- Orokk Omosh
 			["sourceQuest"] = 2752,	-- On Iron Pauldrons
-			["requireSkill"] = 164,	-- Blacksmithing
+			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 79.4, 22.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,

@@ -1,4 +1,4 @@
-profession(197, {	-- Tailoring
+profession(TAILORING, {
 	{
 		["name"] = "Materials",
 		["categoryID"] = 58,

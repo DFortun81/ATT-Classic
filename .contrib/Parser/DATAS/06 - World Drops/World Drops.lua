@@ -446,7 +446,7 @@ _.WorldDrops =
 			i(9293),	-- Recipe: Magic Resistance Potion
 			i(3393),	-- Recipe: Minor Magic Resistance Potion
 		}),
-		profession(164, {	-- Blacksmithing
+		profession(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe
 			i(3609),	-- Plans: Copper Chain Vest
 			i(12698),	-- Plans: Dawnbringer Shoulders

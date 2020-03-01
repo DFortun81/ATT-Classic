@@ -362,7 +362,7 @@ _.Instances = {
 					["qg"] = 10918,	-- Lorax
 					["coord"] = { 63.8, 73.8, WINTERSPRING },
 					["maps"] = { WINTERSPRING },
-					["requireSkill"] = 164,	-- Blacksmithing
+					["requireSkill"] = BLACKSMITHING,
 					["lvl"] = 55,
 				},
 				{
