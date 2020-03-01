@@ -1,4 +1,4 @@
-profession(165, {	-- Leatherworking
+profession(LEATHERWORKING, {
 	n(QUESTS, {
 		q(5141, {	-- Dragonscale Leatherworking (A)
 			["qg"] = 7866,	-- Peter Galen
@@ -6,7 +6,7 @@ profession(165, {	-- Leatherworking
 				5144,	-- Elemental Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["coord"] = { 37.4, 65.4, AZSHARA },
 			["maps"] = { AZSHARA },
 			["races"] = ALLIANCE_ONLY,
@@ -23,7 +23,7 @@ profession(165, {	-- Leatherworking
 				5146,	-- Elemental Leatherworking
 				5148,	-- Tribal Leatherworking
 			},
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["coord"] = { 62.6, 57.4, BADLANDS },
 			["maps"] = { BADLANDS },
 			["races"] = HORDE_ONLY,
@@ -31,7 +31,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(5144, {	-- Elemental Leatherworking (A)
 			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { SEARING_GORGE },
 			["races"] = ALLIANCE_ONLY,
 			["altQuests"] = {
@@ -43,7 +43,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(5146, {	-- Elemental Leatherworking (H)
 			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { ARATHI_HIGHLANDS },
 			["races"] = HORDE_ONLY,
 			["altQuests"] = {
@@ -54,7 +54,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2853, {	-- Master of the Wild Leather (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -72,7 +72,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2860, {	-- Master of the Wild Leather (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -90,7 +90,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(1582, {	-- Moonglow Vest
 			["lvl"] = 8,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 6034,	-- Lotherias
@@ -102,7 +102,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(5143, {	-- Tribal Leatherworking (A)
 			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["altQuests"] = {
@@ -114,7 +114,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(5148, {	-- Tribal Leatherworking (H)
 			["lvl"] = 40,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { STRANGLETHORN_VALE },
 			["races"] = HORDE_ONLY,
 			["altQuests"] = {
@@ -125,7 +125,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2847, {	-- Wild Leather Armor (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -133,7 +133,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2854, {	-- Wild Leather Armor (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -144,7 +144,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2851, {	-- Wild Leather Boots (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -156,7 +156,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2858, {	-- Wild Leather Boots (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -168,7 +168,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2850, {	-- Wild Leather Helmet (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -180,7 +180,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2857, {	-- Wild Leather Helmet (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -197,7 +197,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2852, {	-- Wild Leather Leggings (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -209,7 +209,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2859, {	-- Wild Leather Leggings (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -221,7 +221,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2848, {	-- Wild Leather Shoulders (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -233,7 +233,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2855, {	-- Wild Leather Shoulders (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider
@@ -249,7 +249,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2849, {	-- Wild Leather Vest (A)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -261,7 +261,7 @@ profession(165, {	-- Leatherworking
 		}),
 		q(2856, {	-- Wild Leather Vest (H)
 			["lvl"] = 30,
-			["requireSkill"] = 165,	-- Leatherworking
+			["requireSkill"] = LEATHERWORKING,
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
 			["qg"] = 7854,	-- Jangdor Swiftstrider

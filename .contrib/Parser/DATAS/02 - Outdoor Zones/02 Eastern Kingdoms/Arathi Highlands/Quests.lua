@@ -405,7 +405,7 @@ _.Zones =
 				q(6622, {	-- Triage
 					["qg"] = 12920,	-- Doctor Gregory Victor
 					["coord"] = { 73.40, 36.89, ARATHI_HIGHLANDS },
-					["requireSkill"] = 129,	-- First Aid
+					["requireSkill"] = FIRST_AID,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
 				}),

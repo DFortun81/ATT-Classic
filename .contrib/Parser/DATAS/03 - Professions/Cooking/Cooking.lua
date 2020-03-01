@@ -1,4 +1,4 @@
-profession(185, {	-- Cooking
+profession(COOKING, {
 	{
 		["name"] = "Everyday Cooking",
 		["categoryID"] = 10,

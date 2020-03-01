@@ -96,7 +96,7 @@ _.Zones =
 					["lvl"] = 4,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3050,	-- Veren Tallstrider
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["g"] = {
 						i(5083),	-- Pattern: Kodo Hide Bag
 					},

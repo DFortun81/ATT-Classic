@@ -1,4 +1,4 @@
-profession(186, {	-- Mining
+profession(MINING, {
 	recipe(2580),	-- Find Minerals
 	{
 		["name"] = "Smelt Bronze",

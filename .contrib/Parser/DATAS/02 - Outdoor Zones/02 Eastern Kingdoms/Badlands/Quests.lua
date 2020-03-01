@@ -86,7 +86,7 @@ _.Zones =
 					["qg"] = 6868,	-- Jarkal Mossmeld
 					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
 					["coord"] = { 2.6, 46, BADLANDS },
-					["requireSkill"] = 171,	-- Alchemy
+					["requireSkill"] = ALCHEMY,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
@@ -166,7 +166,7 @@ _.Zones =
 					["sourceQuest"] = 705,	-- Pearl Diving
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["lvl"] = 30,
 					["groups"] = {
 						i(6672),	-- Schematic: Flash Bomb

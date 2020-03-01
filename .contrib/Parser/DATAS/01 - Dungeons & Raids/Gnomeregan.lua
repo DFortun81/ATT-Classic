@@ -336,7 +336,7 @@ _.Instances = {
 					["groups"] = {
 						{
 							["itemID"] = 9327,	-- Security DELTA Data Access Card
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 							["groups"] = {
 								i(4413),  	-- Schematic: Discombobulator Ray
 							},

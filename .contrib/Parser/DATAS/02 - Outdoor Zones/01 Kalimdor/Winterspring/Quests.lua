@@ -19,14 +19,14 @@ _.Zones =
 					["lvl"] = 49,
 				}),
 				q(8798, {	-- A Yeti of Your Own
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["lvl"] = 55,
 					["qg"] = 10305,	-- Umi Rumplesnicker
 					["sourceQuest"] = 5163,	-- Are We There, Yeti? (3/3)
 					["g"] = {
 						{
 							["recipeID"] = 26011,	-- Tranquil Mechanical Yeti
-							["requireSkill"] = 202,	-- Engineering
+							["requireSkill"] = ENGINEERING,
 						},
 					},
 				}),

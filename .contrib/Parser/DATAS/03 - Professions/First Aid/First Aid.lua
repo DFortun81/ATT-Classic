@@ -1,4 +1,4 @@
-profession(129, {	-- First Aid
+profession(FIRST_AID, {
 	recipe(3275),	-- Linen Bandage
 	recipe(3276),	-- Heavy Linen Bandage
 	recipe(7934),	-- Anti-Venom
@@ -15,7 +15,7 @@ profession(129, {	-- First Aid
 	n(QUESTS, {
 		q(6625, {	-- Alliance Trauma
 			["qg"] = 5150,	-- Nissa Firestone
-			["requireSkill"] = 129,	-- First Aid
+			["requireSkill"] = FIRST_AID,
 			["coord"] = { 54.8, 58.6, IRONFORGE },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
@@ -24,7 +24,7 @@ profession(129, {	-- First Aid
 		}),
 		q(6623, {	-- Horde Trauma
 			["qg"] = 3373,	-- Arnok
-			["requireSkill"] = 129,	-- First Aid
+			["requireSkill"] = FIRST_AID,
 			["coord"] = { 34, 84.4, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
@@ -34,7 +34,7 @@ profession(129, {	-- First Aid
 		q(6624, {	-- Triage (A)
 			["qg"] = 12939,	-- Doctor Gustaf VanHowzen
 			["sourceQuest"] = 6625,	-- Alliance Trauma
-			["requireSkill"] = 129,	-- First Aid
+			["requireSkill"] = FIRST_AID,
 			["coord"] = { 67.7, 48.9, DUSTWALLOW_MARSH },
 			["maps"] = { DUSTWALLOW_MARSH },
 			["races"] = ALLIANCE_ONLY,
@@ -46,7 +46,7 @@ profession(129, {	-- First Aid
 		q(6622, {	-- Triage (H)
 			["qg"] = 12920,	-- Doctor Gregory Victor
 			["sourceQuest"] = 6623,	-- Horde Trauma
-			["requireSkill"] = 129,	-- First Aid
+			["requireSkill"] = FIRST_AID,
 			["coord"] = { 73.4, 36.8, ARATHI_HIGHLANDS },
 			["maps"] = { ARATHI_HIGHLANDS },
 			["races"] = HORDE_ONLY,

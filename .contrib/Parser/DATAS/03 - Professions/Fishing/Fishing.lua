@@ -1,8 +1,8 @@
-profession(356, {	-- Fishing
+profession(FISHING, {
 	n(QUESTS, {
 		q(8194, {	-- Apprentice Angler
 			["qg"] = 15078,	-- Jang <Fishmaster Apprentice>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -12,7 +12,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8229, {	-- Could I get a Fishing Flier?
 			["qg"] = 15116,	-- Grinkle <Fishing Promoter>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 53.25, 70.65, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },
 			["repeatable"] = true,
@@ -24,7 +24,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8228, {	-- Could I get a Fishing Flier?
 			["qg"] = 15119,	-- Barrus <Fishing Promoter>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 54.8, 63.1, STORMWIND_CITY },
 			["maps"] = { STORMWIND_CITY },
 			["races"] = ALLIANCE_ONLY,
@@ -37,7 +37,7 @@ profession(356, {	-- Fishing
 		q(1580, {	-- Electropellers
 			["qg"] = 3666,	-- Wizbang Cranktoggle
 			["sourceQuest"] = 1579,	-- Gaffer Jacks
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 37.0, 44.0, DARKSHORE },
 			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
@@ -59,7 +59,7 @@ profession(356, {	-- Fishing
 		}),
 		q(1579, {	-- Gaffer Jacks
 			["qg"] = 3666,	-- Wizbang Cranktoggle
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["description"] = 'Requires fishing skill level 30',
 			["coord"] = { 37.0, 44.0, DARKSHORE },
 			["maps"] = { DARKSHORE },
@@ -71,7 +71,7 @@ profession(356, {	-- Fishing
 		}),
 		q(6609, {	-- I Got Nothin' Left!
 			["qg"] = 5161,	-- Grimnur Stonebrand <Fishing Trainer>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["description"] = "Requires 225 Fishing to start this quest.",
 			["coord"] = { 48.4, 6.4, IRONFORGE },
 			["maps"] = { IRONFORGE },
@@ -81,7 +81,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8193, {	-- Master Angler
 			["qg"] = 15077,	-- Riggle Bassbait <Fishmaster>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -99,7 +99,7 @@ profession(356, {	-- Fishing
 				6609,	-- I Got Nothin' Left!
 				6608,	-- You Too Good.
 			},
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["description"] = "Requires 225 Fishing to start this quest.",
 			["coord"] = { 58.6, 60.0, DUSTWALLOW_MARSH },
 			["maps"] = { DUSTWALLOW_MARSH },
@@ -116,7 +116,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
 			["qg"] = 15079,	-- Fishbot 5000
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -129,7 +129,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8224, {	-- Rare Fish - Dezian Angelfish
 			["qg"] = 15079,	-- Fishbot 5000
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -142,7 +142,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8221, {	-- Rare Fish - Keefer's Angelfish
 			["qg"] = 15079,	-- Fishbot 5000
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -155,7 +155,7 @@ profession(356, {	-- Fishing
 		}),
 		q(8226, {	-- Rare Fish - Pale Ghoulfish
 			["qg"] = 15079,	-- Fishbot 5000
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["coord"] = { 27.4, 76.9, STRANGLETHORN_VALE },
 			["maps"] = { STRANGLETHORN_VALE },
 			["repeatable"] = true,
@@ -183,7 +183,7 @@ profession(356, {	-- Fishing
 		}),
 		q(6608, {	-- You Too Good.
 			["qg"] = 3332,	-- Lumak <Fishing Trainer>
-			["requireSkill"] = 356,	-- Fishing
+			["requireSkill"] = FISHING,
 			["description"] = "Requires 225 Fishing to start this quest.",
 			["coord"] = { 69.8, 29.6, ORGRIMMAR },
 			["maps"] = { ORGRIMMAR },

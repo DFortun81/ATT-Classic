@@ -1,8 +1,8 @@
-profession(185, {	-- Cooking
+profession(COOKING, {
 	n(QUESTS, {
 		q(384, {	-- Beer Basted Boar Ribs
 			["qg"] = 1267,	-- Ragnar Thunderbrew
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { DUN_MOROGH },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 5,
@@ -13,7 +13,7 @@ profession(185, {	-- Cooking
 		}),
 		q(6610, {	-- Clamlette Surprise
 			["qg"] = 8125,	-- Dirge Quikcleave
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["coord"] = { 52.63, 28.12, TANARIS },
 			["maps"] = { TANARIS },
 			["cost"] = {
@@ -28,14 +28,14 @@ profession(185, {	-- Cooking
 		}),
 		q(8307, {	-- Desert Recipe
 			["qg"] = 15174,	-- Calandrath
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { SILITHUS },
 			["lvl"] = 40,
 			["u"] = 3,	-- Added in later phase
 		}),
 		q(862, {	-- Dig Rat Stew
 			["qg"] = 3443,	-- Grub
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["coord"] = { 55.31, 31.79, THE_BARRENS },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
@@ -48,7 +48,7 @@ profession(185, {	-- Cooking
 		}),
 		q(2178, {	-- Easy Strider Living
 			["qg"] = 3702,	-- Alanndarian Nightsong
-			["requireSkill"] = 	185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["coord"] = { 37.7, 40.7, DARKSHORE },
 			["maps"] = { DARKSHORE },
 			["races"] = ALLIANCE_ONLY,
@@ -63,7 +63,7 @@ profession(185, {	-- Cooking
 		}),
 		q(6612, {	-- I Know A Guy...
 			["qg"] = 5159,	-- Daryl Riknussun
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["coord"] = { 60.1, 36.5, IRONFORGE },
 			["maps"] = { IRONFORGE },
 			["races"] = ALLIANCE_ONLY,
@@ -73,14 +73,14 @@ profession(185, {	-- Cooking
 		q(8317, {	-- Kitchen Assistance
 			["provider"] = { "o", 180503 },	-- Sandy Cookbook
 			["sourceQuest"] = 8313,	-- Sharing the Knowledge
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { SILITHUS },
 			["lvl"] = 40,
 			["u"] = 3,	-- Added in later phase
 		}),
 		q(4161, {	-- Recipe of the Kaldorei
 			["qg"] = 6286,	-- Zarrin
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
@@ -90,14 +90,14 @@ profession(185, {	-- Cooking
 		q(8313, {	-- Sharing the Knowledge
 			["provider"] = { "o", 180503 },	-- Sandy Cookbook
 			["sourceQuest"] = 8307,	-- Desert Recipe
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { SILITHUS },
 			["lvl"] = 40,
 			["u"] = 3,	-- Added in later phase
 		}),
 		q(555, {	-- Soothing Turtle Bisque (A)
 			["qg"] = 2430,	-- Chef Jessen
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 28,
@@ -108,7 +108,7 @@ profession(185, {	-- Cooking
 		}),
 		q(7321, {	-- Soothing Turtle Bisque (H)
 			["qg"] = 2393,	-- Christoph Jeffcoat
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["races"] = HORDE_ONLY,
 			["lvl"] = 28,
@@ -119,7 +119,7 @@ profession(185, {	-- Cooking
 		}),
 		q(6611, {	-- To Gadgetzan You Go!
 			["qg"] = 3399,	-- Zamja
-			["requireSkill"] = 185,	-- Cooking
+			["requireSkill"] = COOKING,
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,
 			["isBreadcrumb"] = true,

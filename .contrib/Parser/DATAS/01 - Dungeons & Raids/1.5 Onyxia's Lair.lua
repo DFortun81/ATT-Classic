@@ -195,7 +195,7 @@ _.Instances = {
 				q(7497, {	-- The Journey Has Just Begun
 					["qg"] = 14394,	-- Major Mattingly
 					["sourceQuest"] = 7496,	-- Celebrating Good Times
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 60,
 					["g"] = {
@@ -205,7 +205,7 @@ _.Instances = {
 				q(7493, {	-- The Journey Has Just Begun (H)
 					["qg"] = 14392,		-- Overlord Runthak
 					["sourceQuest"] = 7491,	-- For All To See
-					["requireSkill"] = 165,	-- Leatherworking
+					["requireSkill"] = LEATHERWORKING,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 60,
 					["g"] = {

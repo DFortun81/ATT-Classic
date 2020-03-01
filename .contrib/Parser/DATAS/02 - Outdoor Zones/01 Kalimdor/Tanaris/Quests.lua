@@ -81,7 +81,7 @@ _.Zones =
 				q(6610, {	-- Clamlette Surprise
 					["qg"] = 8125,	-- Dirge Quikcleave
 					["coord"] = { 52.63, 28.12, TANARIS },
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["cost"] = {
 						{ "i", 12207, 12 },	-- Giant Egg
 						{ "i", 7974, 10 },	-- Zesty Clam Meat

@@ -195,7 +195,7 @@ _.Instances = {
 				["groups"] = {
 					{
 						["recipeID"] = 22967,	-- Smelt Elementium
-						["requireSkill"] = 186,	-- Mining
+						["requireSkill"] = MINING,
 					},
 					i(18562),	-- Elementium Ingot
 				},

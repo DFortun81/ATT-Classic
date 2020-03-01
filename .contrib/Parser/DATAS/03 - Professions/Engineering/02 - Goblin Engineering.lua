@@ -1,4 +1,4 @@
-profession(202, {	-- Engineering
+profession(ENGINEERING, {
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuest"] = 3639,	-- Show Your Work
@@ -102,7 +102,7 @@ profession(202, {	-- Engineering
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 4586,	-- Graham Van Talen <Journeyman Engineer>
 					["coord"] = { 75.6, 74.6, UNDERCITY },
 					["maps"] = { UNDERCITY },
@@ -119,7 +119,7 @@ profession(202, {	-- Engineering
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
 					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
@@ -137,7 +137,7 @@ profession(202, {	-- Engineering
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
@@ -154,7 +154,7 @@ profession(202, {	-- Engineering
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
 					["coord"] = { 68.8, 45.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
@@ -172,7 +172,7 @@ profession(202, {	-- Engineering
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["repeatable"] = true,
 					["lvl"] = 30,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },
@@ -188,7 +188,7 @@ profession(202, {	-- Engineering
 				q(3639, {	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },
@@ -206,7 +206,7 @@ profession(202, {	-- Engineering
 				q(3638, {	-- The Pledge of Secrecy
 					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["maps"] = { TANARIS },

@@ -1,4 +1,4 @@
-profession(165, {	-- Leatherworking
+profession(LEATHERWORKING, {
 	{
 		["name"] = "Materials",
 		["categoryID"] = 46,

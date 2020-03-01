@@ -1025,7 +1025,7 @@ profession(TAILORING, {
 	n(QUESTS, {
 		q(3379, {	-- Shadoweaver
 			["qg"] = 8439,	-- Nilith Lokrav
-			["requireSkill"] = 197,	-- Tailoring
+			["requireSkill"] = TAILORING,
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 			["maps"] = { SEARING_GORGE },
 			["lvl"] = 40,
@@ -1036,7 +1036,7 @@ profession(TAILORING, {
 		q(3385, {	-- The Undermarket (1/2)
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3379,	-- Shadoweaver
-			["requireSkill"] = 197,	-- Tailoring
+			["requireSkill"] = TAILORING,
 			["coord"] = { 41.0, 75.0, SEARING_GORGE },
 			["maps"] = { SEARING_GORGE },
 			["cost"] = {
@@ -1057,7 +1057,7 @@ profession(TAILORING, {
 		q(3402, {	-- The Undermarket (2/2)
 			["qg"] = 8439,	-- Nilith Lokrav
 			["sourceQuest"] = 3385,	-- The Undermarket (1/2)
-			["requireSkill"] = 197,	-- Tailoring
+			["requireSkill"] = TAILORING,
 			["maps"] = { SEARING_GORGE },
 			["lvl"] = 40,
 			["g"] = {

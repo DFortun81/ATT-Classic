@@ -107,7 +107,7 @@ _.Instances = {
 				["groups"] = {
 					{
 						["recipeID"] = 13028,	-- Goldthorn Tea
-						["requireSkill"] = 185,	-- Cooking
+						["requireSkill"] = COOKING,
 					},
 				},
 			}),

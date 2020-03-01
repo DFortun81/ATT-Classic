@@ -341,11 +341,11 @@ _.Instances = {
 					["groups"] = {
 						{
 							["recipeID"] = 22813,	-- Gordok Ogre Suit
-							["requireSkill"] = 197,	-- Tailoring
+							["requireSkill"] = TAILORING,
 						},
 						{
 							["recipeID"] = 22815,	-- Gordok Ogre Suit
-							["requireSkill"] = 165,	-- Leatherworking
+							["requireSkill"] = LEATHERWORKING,
 						},
 						{
 							["itemID"] = 18258,	-- Gordok Ogre Suit

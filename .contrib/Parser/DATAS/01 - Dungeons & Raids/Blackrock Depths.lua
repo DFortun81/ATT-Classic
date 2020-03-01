@@ -641,7 +641,7 @@ _.Instances = {
 					["questID"] = 4083,		-- The Spectral Chalice
 					["provider"] = { "o", 164869 },	-- The Spectral Chalice
 					["description"] = "If you are a miner with 230 skill, speak with Gloom'rel so he will summon the Spectral Chalice to learn to smelt Dark Iron Ore.\nThe quest requires 2x Star Ruby, 20x Gold Bar, and 10x Truesilver Bar to complete.",
-					["requireSkill"] = 186,	-- Mining
+					["requireSkill"] = MINING,
 					["cost"] = {
 						{ "i", 7910, 2 },	-- Star Ruby
 						{ "i", 3577, 20 },	-- Gold Bar
@@ -654,7 +654,7 @@ _.Instances = {
 					["groups"] = {
 						{
 							["recipeID"] = 14891,	-- Smelt Dark Iron (Recipe)
-							["requireSkill"] = 186,	-- Mining
+							["requireSkill"] = MINING,
 						},
 					},
 				},
@@ -830,7 +830,7 @@ _.Instances = {
 					},
 				}),
 				i(18235, {	-- Schematic: Field Repair Bot 74A
-					["requireSkill"] = 202,	-- Engineering
+					["requireSkill"] = ENGINEERING,
 					["description"] = "On the floor next to Golem Lord Argelmach",
 				}),
 				i(18654, {	-- Schematic: Gnomish Alarm-o-Bot

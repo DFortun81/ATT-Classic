@@ -509,7 +509,7 @@ _.Instances = {
 					["groups"] = {
 						{
 							["recipeID"] = 26086,	-- Felcloth Bag
-							["requireSkill"] = 197,	-- Tailoring
+							["requireSkill"] = TAILORING,
 						},
 					},
 				}),

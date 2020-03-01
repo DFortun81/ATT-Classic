@@ -104,7 +104,7 @@ _.Holidays =
 				q(8763, {	-- The Hero of the Day
 					["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 					["description"] = 'Requires Cooking Skill Level 300',
-					["requireSkill"] = 185,	-- Cooking
+					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 					["g"] = {
