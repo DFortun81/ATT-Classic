@@ -523,11 +523,11 @@ _.Zones =
 					},
 				}),
 				q(5886, {	-- Salve via Disenchanting (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 54.2, 86.7, FELWOOD },
 					["requireSkill"] = ENCHANTING,
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 11174, 1 },	-- Lesser Nether Essence
 					},
@@ -581,12 +581,11 @@ _.Zones =
 					},
 				}),
 				q(5884, {	-- Salve via Gathering (1/2)
-					["qg"] = 9529,	-- Maybess Riverbreeze
+					["qg"] = 9528,	-- Arathandris Silversky
 					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
-					["coord"] = { 46.8, 83, FELWOOD },
+					["coord"] = { 54.2, 86.7, FELWOOD },
 					["requireSkill"] = HERBALISM,
 					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11514, 4 },	-- Fel Creep
 					},
@@ -610,8 +609,9 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(5889, {	-- Salve via Gathering
+				q(5889, {	-- Salve via Gathering (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
@@ -624,8 +624,9 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4110, {	-- Salve via Gathering
+				q(4110, {	-- Salve via Gathering (2/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 5889,	-- Salve via Gathering (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
 					["requireSkill"] = HERBALISM,
 					["races"] = HORDE_ONLY,
@@ -638,121 +639,171 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4108, {	-- Salve via Hunting
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
-					},
-				}),
-				q(5887, {	-- Salve via Hunting
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 48,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
-					},
-				}),
-				q(5882, {	-- Salve via Hunting
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 40,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
-					},
-				}),
-				q(4103, {	-- Salve via Hunting
+				q(5882, {	-- Salve via Hunting (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
+					["coord"] = { 54.2, 86.7, FELWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11515, 6 },	-- Corrupted Soul Shard
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(4103, {	-- Salve via Hunting (2/2)
+					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 5882,	-- Salve via Hunting (1/2)
 					["coord"] = { 54.2, 86.7, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["lvl"] = 40,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
+					["cost"] = {
+						{ "i", 11515, 6 },	-- Corrupted Soul Shard
 					},
-				}),
-				q(5883, {	-- Salve via Mining
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
-					["lvl"] = 40,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
-					},
-				}),
-				q(5888, {	-- Salve via Mining
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4104, {	-- Salve via Mining
+				q(5887, {	-- Salve via Hunting (1/2)
+					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
+					["coord"] = { 46.8, 83, FELWOOD },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11515, 6 },	-- Corrupted Soul Shard
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(4108, {	-- Salve via Hunting (2/2)
+					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 5887,	-- Salve via Hunting (1/2)
+					["coord"] = { 46.8, 83, FELWOOD },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11515, 6 },	-- Corrupted Soul Shard
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(5883, {	-- Salve via Mining (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
+					["requireSkill"] = MINING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11513, 4 },	-- Tainted Vitriol
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(4104, {	-- Salve via Mining (2/2)
+					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 5883,	-- Salve via Mining (1/2)
+					["coord"] = { 54.2, 86.7, FELWOOD },
+					["requireSkill"] = MINING,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11513, 4 },	-- Tainted Vitriol
+					},
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4109, {	-- Salve via Mining
+				q(5888, {	-- Salve via Mining (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
+					["requireSkill"] = MINING,
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11513, 4 },	-- Tainted Vitriol
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(4109, {	-- Salve via Mining (2/2)
+					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 5888,	-- Salve via Mining (1/2)
+					["coord"] = { 46.8, 83, FELWOOD },
+					["requireSkill"] = MINING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11513, 4 },	-- Tainted Vitriol
+					},
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4106, {	-- Salve via Skinning
+				q(5885, {	-- Salve via Skinning (1/2)
 					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 4101,	-- Cleansing Felwood (A)
 					["coord"] = { 54.2, 86.7, FELWOOD },
+					["requireSkill"] = SKINNING,
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11512, 5 },	-- Patch of Tainted Skin
+					},
+					["lvl"] = 48,
+					["g"] = {
+						i(11516),	-- Cenarion Plant Salve
+					},
+				}),
+				q(4106, {	-- Salve via Skinning (2/2)
+					["qg"] = 9528,	-- Arathandris Silversky
+					["sourceQuest"] = 5885,	-- Salve via Skinning (1/2)
+					["coord"] = { 54.2, 86.7, FELWOOD },
+					["requireSkill"] = SKINNING,
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11512, 5 },	-- Patch of Tainted Skin
+					},
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(5890, {	-- Salve via Skinning
+				q(5890, {	-- Salve via Skinning (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
+					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 11512, 5 },	-- Patch of Tainted Skin
+					},
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4111, {	-- Salve via Skinning
+				q(4111, {	-- Salve via Skinning (2/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
+					["sourceQuest"] = 5890,	-- Salve via Skinning (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },
+					["requireSkill"] = SKINNING,
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["lvl"] = 48,
-					["g"] = {
-						i(11516),	-- Cenarion Plant Salve
+					["cost"] = {
+						{ "i", 11512, 5 },	-- Patch of Tainted Skin
 					},
-				}),
-				q(5885, {	-- Salve via Skinning
-					["qg"] = 9529,	-- Maybess Riverbreeze
-					["coord"] = { 46.8, 83, FELWOOD },
-					["races"] = HORDE_ONLY,
-					["repeatable"] = true,
 					["lvl"] = 48,
 					["g"] = {
 						i(11516),	-- Cenarion Plant Salve
