@@ -340,7 +340,7 @@ profession(COOKING, {
 			{
 				["name"] = "Thistle Tea",
 				["recipeID"] = 9513,
-				["classes"] = { 4 },
+				["classes"] = { ROGUE },
 				["description"] = "Only the BoP version of this recipe is available in WoW Classic. You must have a Rogue on your Account to learn this recipe.",
 			}
 		}

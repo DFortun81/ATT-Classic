@@ -79,7 +79,7 @@ _.Zones =
 				q(2242, {	-- Destiny Calls
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
 					["g"] = {
@@ -91,7 +91,7 @@ _.Zones =
 				q(2260, {	-- Erion's Behest
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
 					["isBreadcrumb"] = true,

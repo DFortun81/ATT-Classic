@@ -123,7 +123,7 @@ _.Zones =
 				}),
 				q(8249, {	-- Junkboxes Needed
 					["lvl"] = 50,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["repeatable"] = true,
 				}),
 				q(514, {	-- Letter to Stormpike
@@ -178,7 +178,7 @@ _.Zones =
 				}),
 				q(6701, {	-- Syndicate Emblems
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 17124, 1 },	-- Syndicate Emblem
@@ -197,7 +197,7 @@ _.Zones =
 				}),
 				q(6681, {	-- The Manor, Ravenholdt
 					["lvl"] = 24,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 				}),
 				q(1713, {	-- The Summoning
 					["qg"] = 6176,	-- Bath'rah the Windwatcher

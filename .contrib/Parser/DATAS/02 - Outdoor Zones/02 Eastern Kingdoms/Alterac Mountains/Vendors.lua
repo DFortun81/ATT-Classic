@@ -19,7 +19,7 @@ _.Zones =
 					["coord"] = { 47.3, 35.2, ALTERAC_MOUNTAINS },
 				}),
 				n(6779, {	-- Smudge Thunderwood <Poison Vendor>
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["groups"] = {
 						i(18160),	-- Recipe: Thistle Tea
 					},

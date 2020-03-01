@@ -299,7 +299,7 @@ _.Instances = {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
@@ -333,7 +333,7 @@ _.Instances = {
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
@@ -483,7 +483,7 @@ _.Instances = {
 						q(8701, {	-- Band of Veiled Shadows
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["groups"] = {
 								i(21405),	-- Band of Veiled Shadows
 							},
@@ -517,7 +517,7 @@ _.Instances = {
 						q(8693, {	-- Cloak of Veiled Shadows
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 4 },	-- Rogue
+							["classes"] = { ROGUE },
 							["groups"] = {
 								i(21406),	-- Cloak of Veiled Shadows
 							},
@@ -655,7 +655,7 @@ _.Instances = {
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
@@ -723,7 +723,7 @@ _.Instances = {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
@@ -757,7 +757,7 @@ _.Instances = {
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
@@ -919,7 +919,7 @@ _.Instances = {
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
@@ -987,7 +987,7 @@ _.Instances = {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
@@ -1021,7 +1021,7 @@ _.Instances = {
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21406),	-- Cloak of Veiled Shadows
 						},
@@ -1166,7 +1166,7 @@ _.Instances = {
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
@@ -1234,7 +1234,7 @@ _.Instances = {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},
@@ -1333,7 +1333,7 @@ _.Instances = {
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21404),	-- Dagger of Veiled Shadows
 						},
@@ -1401,7 +1401,7 @@ _.Instances = {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 						["groups"] = {
 							i(21405),	-- Band of Veiled Shadows
 						},

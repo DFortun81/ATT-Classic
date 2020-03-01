@@ -417,7 +417,7 @@ _.Zones =
 				q(2281, {	-- Redridge Rendezvous
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 6946,	-- Renzik "The Shiv"
 					["sourceQuests"] = {
 						2260,	-- Erion's Behest(Darnassus)
@@ -447,7 +447,7 @@ _.Zones =
 				q(2206, {	-- Snatch and Grab
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 332,	-- Master Mathias Shaw
 					["sourceQuest"] = 2205,	-- Seek out SI:7
 					["coord"] = { 75.8, 59.8, STORMWIND_CITY },

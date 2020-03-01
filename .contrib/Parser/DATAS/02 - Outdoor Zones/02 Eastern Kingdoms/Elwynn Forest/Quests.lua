@@ -154,7 +154,7 @@ _.Zones =
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 					["races"] = { HUMAN },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 				}),
 				q(37, {	-- Find the Lost Guards
 					["qg"] = 261,	-- Guard Thomas
@@ -415,7 +415,7 @@ _.Zones =
 					["coord"] = { 43.9, 65.9, ELWYNN_FOREST },
 					["description"] = "Keryn Sylvius is located on the 2nd floor of the Lion's Pride Inn.",
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 10,
 				}),
 				q(61, {	-- Shipment to Stormwind
@@ -433,7 +433,7 @@ _.Zones =
 					["qg"] = 917,	-- Keryn Sylvius
 					["sourceQuest"] = 2205,	-- Seek out SI:7
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),

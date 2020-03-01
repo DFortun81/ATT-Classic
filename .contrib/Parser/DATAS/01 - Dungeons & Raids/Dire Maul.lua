@@ -151,7 +151,7 @@ _.Instances = {
 				}),
 				q(7498, {	-- Garona: A Study on Stealth and Treachery
 					["qg"] = 14383,	-- Lorekeeper Kildrath
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 18356, 1 },	-- Garona: A Study on Stealth and Treachery
 					},
@@ -497,7 +497,7 @@ _.Instances = {
 					{
 						["itemID"] = 18356,	-- Garona: A Study on Stealth and Treachery
 						["questID"] = 7498,	-- Garona: A Study on Stealth and Treachery
-						["classes"] = { 4 },	-- Rogue
+						["classes"] = { ROGUE },
 					},
 					{
 						["itemID"] = 18362,	-- Holy Bologna: What the Light Won't Tell You

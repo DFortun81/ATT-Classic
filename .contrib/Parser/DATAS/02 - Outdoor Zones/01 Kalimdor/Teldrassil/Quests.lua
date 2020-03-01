@@ -114,14 +114,14 @@ _.Zones =
 				}),
 				q(3118, {	-- Encrypted Sigil
 					["races"] = { NIGHTELF },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
 				}),
 				q(2259, {	-- Erion Shadewhisper
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 3599,	-- Jannok Breezesong
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
 					["isBreadcrumb"] = true,
@@ -333,7 +333,7 @@ _.Zones =
 				q(2241, {	-- The Apple Falls
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 3599,	-- Jannok Breezesong
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
 					["altQuests"] = {

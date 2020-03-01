@@ -95,7 +95,7 @@ _.Zones =
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase

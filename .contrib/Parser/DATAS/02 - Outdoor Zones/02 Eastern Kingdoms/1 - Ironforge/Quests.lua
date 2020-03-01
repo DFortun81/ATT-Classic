@@ -149,7 +149,7 @@ _.Zones =
 						{ "i", 16710, 1 },	-- Shadowcraft Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -608,7 +608,7 @@ _.Zones =
 				q(2298, {	-- Kingly Shakedown
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299,	-- 	To Hulfdan!
 					["isBreadcrumb"] = true,
@@ -815,7 +815,7 @@ _.Zones =
 				q(2238, {	-- Simple Subterfugin'
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2218,	-- Road to Salvation
 				}),

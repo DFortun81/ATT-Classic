@@ -76,13 +76,13 @@ _.Zones =
 				}),
 				q(3113, {	-- Encrypted Memorandum
 					["races"] = { GNOME },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
 				q(3109, {	-- Encrypted Rune
 					["races"] = { DWARF },
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 				}),
@@ -128,7 +128,7 @@ _.Zones =
 				q(2239, {	-- Onin's Report
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 6886,	-- Onin MacHammer
 					["sourceQuest"] = 2238,	-- Simple Subterfugin'
 					["g"] = {
@@ -182,7 +182,7 @@ _.Zones =
 				q(2218, {	-- Road to Salvation
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 1234,	-- Hogral Bakkan
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
@@ -375,7 +375,7 @@ _.Zones =
 				q(2299, {	-- To Hulfdan!
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 4 },	-- Rogue
+					["classes"] = { ROGUE },
 					["qg"] = 1234,	-- Hogral Bakkan
 					["isBreadcrumb"] = true,
 					["sourceQuest"] = 2218,	-- Road to Salvation
