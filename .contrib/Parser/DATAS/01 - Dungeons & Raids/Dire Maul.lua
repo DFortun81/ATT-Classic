@@ -47,7 +47,7 @@ _.Instances = {
 				}),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18299, 1 },	-- Hydrospawn Essence
@@ -292,7 +292,7 @@ _.Instances = {
 				{
 					["questID"] = 7500,	-- The Arcanist's Cookbook
 					["qg"] = 14383,	-- Lorekeeper Kildrath
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["cost"] = {
 						{ "i", 18358, 1 },	-- The Arcanist's Cookbook
 					},
@@ -507,7 +507,7 @@ _.Instances = {
 					{
 						["itemID"] = 18358,	-- The Arcanist's Cookbook
 						["questID"] = 7500,	-- The Arcanist's Cookbook
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 					},
 					{
 						["itemID"] = 18364,	-- The Emerald Dream
@@ -615,7 +615,7 @@ _.Instances = {
 						{
 							["itemID"] = 18299,	-- Hydrospawn Essence
 							["questID"] = 7463,	-- Arcane Refreshment
-							["classes"] = { 8 },	-- Mage Only
+							["classes"] = { MAGE },
 						},
 						i(18324),	-- Waveslicer
 						i(18317),	-- Tempest Talisman

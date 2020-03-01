@@ -127,7 +127,7 @@ _.Zones =
 						{ "i", 16683, 1 },	-- Magister's Bindings
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 8 },	-- Mage
+					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase

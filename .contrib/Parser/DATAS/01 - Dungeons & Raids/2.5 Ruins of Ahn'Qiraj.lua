@@ -273,7 +273,7 @@ _.Instances = {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
@@ -349,7 +349,7 @@ _.Instances = {
 					q(8691, {	-- Drape of Vaulted Secretsh
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
@@ -457,7 +457,7 @@ _.Instances = {
 						q(8699, {	-- Band of Vaulted Secrets
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["groups"] = {
 								i(21414),	-- Band of Vaulted Secrets
 							},
@@ -533,7 +533,7 @@ _.Instances = {
 						q(8691, {	-- Drape of Vaulted Secretsh
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 8 },	-- Mage
+							["classes"] = { MAGE },
 							["groups"] = {
 								i(21415),	-- Drape of Vaulted Secrets
 							},
@@ -605,7 +605,7 @@ _.Instances = {
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
@@ -697,7 +697,7 @@ _.Instances = {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
@@ -773,7 +773,7 @@ _.Instances = {
 					q(8691, {	-- Drape of Vaulted Secretsh
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
@@ -869,7 +869,7 @@ _.Instances = {
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
@@ -961,7 +961,7 @@ _.Instances = {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
@@ -1037,7 +1037,7 @@ _.Instances = {
 					q(8691, {	-- Drape of Vaulted Secretsh
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21415),	-- Drape of Vaulted Secrets
 						},
@@ -1116,7 +1116,7 @@ _.Instances = {
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
@@ -1208,7 +1208,7 @@ _.Instances = {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
@@ -1283,7 +1283,7 @@ _.Instances = {
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21413),	-- Blade of Vaulted Secrets
 						},
@@ -1375,7 +1375,7 @@ _.Instances = {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 8 },	-- Mage
+						["classes"] = { MAGE },
 						["groups"] = {
 							i(21414),	-- Band of Vaulted Secrets
 						},
