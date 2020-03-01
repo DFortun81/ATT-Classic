@@ -228,8 +228,8 @@ _.Zones =
 					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
 					["coord"] = { 25.6, 48.72, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
@@ -251,8 +251,8 @@ _.Zones =
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
 					["coord"] = { 25.98, 48.45, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path

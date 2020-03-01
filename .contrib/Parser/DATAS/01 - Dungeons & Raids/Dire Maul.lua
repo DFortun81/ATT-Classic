@@ -382,7 +382,7 @@ _.Instances = {
 				{
 					["questID"] = 7503,	-- The Greatest Race of Hunters
 					["qg"] = 14382,	-- Lorekeeper Mykos
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 18361, 1 },	-- The Greatest Race of Hunters
 					},
@@ -517,7 +517,7 @@ _.Instances = {
 					{
 						["itemID"] = 18361,	-- The Greatest Race of Hunters
 						["questID"] = 7503,	-- The Greatest Race of Hunters
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 					},
 					{
 						["itemID"] = 18359,	-- The Light and How to Swing It

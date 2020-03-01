@@ -207,7 +207,7 @@ _.Zones =
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase

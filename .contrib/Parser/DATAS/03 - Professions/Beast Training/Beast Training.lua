@@ -1,5 +1,5 @@
 profession(261, {	-- Beast Training
-	["classes"] = { 3 },	-- Hunter
+	["classes"] = { HUNTER },
 	["lvl"] = 10,
 	["groups"] = {
 		{

@@ -291,7 +291,7 @@ _.Instances = {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
@@ -367,7 +367,7 @@ _.Instances = {
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
@@ -475,7 +475,7 @@ _.Instances = {
 						q(8704, {	-- Signet of the Unseen Path
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 							["groups"] = {
 								i(21402),	-- Signet of the Unseen Path
 							},
@@ -551,7 +551,7 @@ _.Instances = {
 						q(8696, {	-- Cloak of the Unseen Path
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 3 },	-- Hunter
+							["classes"] = { HUNTER },
 							["groups"] = {
 								i(21403),	-- Cloak of the Unseen Path
 							},
@@ -647,7 +647,7 @@ _.Instances = {
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
@@ -715,7 +715,7 @@ _.Instances = {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
@@ -791,7 +791,7 @@ _.Instances = {
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
@@ -911,7 +911,7 @@ _.Instances = {
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
@@ -979,7 +979,7 @@ _.Instances = {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
@@ -1055,7 +1055,7 @@ _.Instances = {
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21403),	-- Cloak of the Unseen Path
 						},
@@ -1158,7 +1158,7 @@ _.Instances = {
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
@@ -1226,7 +1226,7 @@ _.Instances = {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},
@@ -1325,7 +1325,7 @@ _.Instances = {
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21401),	-- Scythe of the Unseen Path
 						},
@@ -1393,7 +1393,7 @@ _.Instances = {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 3 },	-- Hunter
+						["classes"] = { HUNTER },
 						["groups"] = {
 							i(21402),	-- Signet of the Unseen Path
 						},

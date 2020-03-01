@@ -129,7 +129,7 @@ _.Zones =
 					["description"] = "In Darnassus, enter the base of the tree at 32.7, 16.3 to turn in the quest.",
 				}),
 				q(3117, {	-- Etched Sigil
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["races"] = { NIGHTELF },
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
@@ -291,24 +291,24 @@ _.Zones =
 						6722,	-- The Hunter's Path
 					},
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["lvl"] = 10,
 				}),
 				q(6101, {	-- Taming the Beast
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6063,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["lvl"] = 10,
 				}),
 				q(6102, {	-- Taming the Beast
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6101,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(883),	-- Call Pet
@@ -398,8 +398,8 @@ _.Zones =
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
 					["coord"] = { 58.66, 40.45, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
@@ -486,8 +486,8 @@ _.Zones =
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6102,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["classes"] = { 3 },	-- Hunter Only!
 					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(6991),		-- Feed Pet

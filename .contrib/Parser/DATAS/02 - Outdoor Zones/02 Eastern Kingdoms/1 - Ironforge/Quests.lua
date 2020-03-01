@@ -261,7 +261,7 @@ _.Zones =
 						{ "i", 16681, 1 },	-- Beaststalker's Bindings
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 3 },	-- Hunter
+					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase
@@ -848,8 +848,8 @@ _.Zones =
 				q(6074, {	-- The Hunter's Path
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70, 84.6, IRONFORGE },
-					["classes"] = { 3 },	-- Hunter Only
 					["races"] = { DWARF },
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6075,	-- The Hunter's Path

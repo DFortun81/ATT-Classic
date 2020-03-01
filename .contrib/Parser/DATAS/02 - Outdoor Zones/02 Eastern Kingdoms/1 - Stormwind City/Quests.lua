@@ -566,8 +566,8 @@ _.Zones =
 				q(6076, {	-- The Hunter's Path
 					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
 					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
-					["classes"] = { 3 },	-- Hunter Only
 					["races"] = { DWARF },
+					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6074,	-- The Hunter's Path
