@@ -233,7 +233,7 @@ _.Zones =
 				q(3103, {	-- Hallowed Letter
 					["races"] = { HUMAN },
 					["qg"] = 197,	-- Marshal McBride
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 				}),

@@ -194,7 +194,7 @@ _.Zones =
 					["qg"] = 2129,	-- Dark Cleric Beryl <Priest Trainer>
 					["coord"] = { 61.6, 52.2, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 5,
 				}),
 				q(3098, {	-- Glyphic Scroll
@@ -237,7 +237,7 @@ _.Zones =
 					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>
 					["coord"] = { 31.1, 66.0, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 5,
 				}),
 				q(6395, {	-- Marla's Last Wish

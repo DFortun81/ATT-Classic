@@ -111,7 +111,7 @@ _.Zones =
 						{ "i", 16697, 1 },	-- Devout Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase

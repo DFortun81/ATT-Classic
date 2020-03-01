@@ -34,7 +34,7 @@ _.Instances = {
 					{
 						["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["qg"] = 15192,	-- Anachronos
 						["groups"] = {
 							i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)

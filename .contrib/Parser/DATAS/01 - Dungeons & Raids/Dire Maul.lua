@@ -173,7 +173,7 @@ _.Instances = {
 				}),
 				q(7504, {	-- Holy Bologna: What the Light Won't Tell You
 					["qg"] = 14381,	-- Lorekeeper Javon
-					["classes"] = { 5 },	-- Priest
+					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 18362, 1 },	-- Holy Bologna: What the Light Won't Tell You
 					},
@@ -502,7 +502,7 @@ _.Instances = {
 					{
 						["itemID"] = 18362,	-- Holy Bologna: What the Light Won't Tell You
 						["questID"] = 7504,	-- Holy Bologna: What the Light Won't Tell You
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 					},
 					{
 						["itemID"] = 18358,	-- The Arcanist's Cookbook

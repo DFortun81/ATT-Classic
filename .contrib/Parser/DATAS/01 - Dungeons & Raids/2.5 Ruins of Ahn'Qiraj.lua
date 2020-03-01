@@ -307,7 +307,7 @@ _.Instances = {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
@@ -341,7 +341,7 @@ _.Instances = {
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21412),	-- Shroud of Infinite Wisdom
 						},
@@ -491,7 +491,7 @@ _.Instances = {
 						q(8697, {	-- Ring of Infinite Wisdom
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { PRIEST },
 							["groups"] = {
 								i(21411),	-- Ring of Infinite Wisdom
 							},
@@ -525,7 +525,7 @@ _.Instances = {
 						q(8689, {	-- Shroud of Infinite Wisdom
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 5 },	-- Priest
+							["classes"] = { PRIEST },
 							["groups"] = {
 								i(21412),	-- Shroud of Infinite Wisdom
 							},
@@ -597,7 +597,7 @@ _.Instances = {
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
@@ -731,7 +731,7 @@ _.Instances = {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
@@ -765,7 +765,7 @@ _.Instances = {
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21412),	-- Shroud of Infinite Wisdom
 						},
@@ -861,7 +861,7 @@ _.Instances = {
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
@@ -995,7 +995,7 @@ _.Instances = {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
@@ -1029,7 +1029,7 @@ _.Instances = {
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21412),	-- Shroud of Infinite Wisdom
 						},
@@ -1108,7 +1108,7 @@ _.Instances = {
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
@@ -1242,7 +1242,7 @@ _.Instances = {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
@@ -1275,7 +1275,7 @@ _.Instances = {
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21410),	-- Gavel of Infinite Wisdom
 						},
@@ -1409,7 +1409,7 @@ _.Instances = {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 5 },	-- Priest
+						["classes"] = { PRIEST },
 						["groups"] = {
 							i(21411),	-- Ring of Infinite Wisdom
 						},
