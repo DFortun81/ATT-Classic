@@ -268,8 +268,8 @@ _.Zones =
 				}),
 				q(5924, {	-- Heeding the Call
 					["qg"] = 5505,  -- Theridran <Druid Trainer>
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["altQuests"] = {
 						5923,	-- Heeding the Call
 						5925,   -- Heeding the Call

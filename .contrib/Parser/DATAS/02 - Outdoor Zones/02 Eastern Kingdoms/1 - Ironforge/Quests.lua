@@ -245,7 +245,7 @@ _.Zones =
 						{ "i", 16714, 1 },	-- Wildheart Bracers
 						{ "g", 200000 },	-- 20g
 					},
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
 					["u"] = 3,	-- Added in later phase

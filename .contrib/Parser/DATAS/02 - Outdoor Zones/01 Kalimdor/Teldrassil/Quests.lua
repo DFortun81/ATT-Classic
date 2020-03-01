@@ -24,8 +24,8 @@ _.Zones =
 				}),
 				q(6001, {  -- Body and Heart
 					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["sourceQuest"] = 5931,  -- Back to Darnassus
 				}),
 				q(921, {	-- Crown of the Earth (1/6)
@@ -180,8 +180,8 @@ _.Zones =
 				}),
 				q(5923, {	-- Heeding the Call
 					["qg"] = 4218,  -- Denatharion <Druid Trainer>
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["altQuests"] = {
 						5924,	-- Heeding the Call
 						5925,   -- Heeding the Call
@@ -189,8 +189,8 @@ _.Zones =
 				}),
 				q(5925, {  -- Heeding the Call
 						["qg"] = 3602,  -- Kal <Druid Trainer>
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["altQuests"] = {
 						5923,	-- Heeding the Call
 						5924,   -- Heeding the Call
@@ -224,8 +224,8 @@ _.Zones =
 				}),
 				q(5921, {  -- Moonglade
 					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call
 						5924,   -- Heeding the Call
@@ -521,8 +521,8 @@ _.Zones =
 				}),
 				q(3120, {  -- Verdant Sigil
 					["qg"] = 2079,  -- Conservator Ilthalaine
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 				}),
 				q(917, {	-- Webwood Egg
 					["races"] = ALLIANCE_ONLY,

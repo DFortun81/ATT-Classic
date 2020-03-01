@@ -260,7 +260,7 @@ _.Zones =
 					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
 					["coord"] = { 76.6, 27.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(3761, {	-- Un'Goro Soil

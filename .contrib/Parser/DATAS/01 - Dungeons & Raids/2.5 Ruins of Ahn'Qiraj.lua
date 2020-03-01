@@ -281,7 +281,7 @@ _.Instances = {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
@@ -391,7 +391,7 @@ _.Instances = {
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
@@ -465,7 +465,7 @@ _.Instances = {
 						q(8700, {	-- Band of Unending Life
 							["qg"] = 15498,	-- Windcaller Yessendra
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 11 },	-- Druid
+							["classes"] = { DRUID },
 							["groups"] = {
 								i(21408),	-- Band of Unending Life
 							},
@@ -575,7 +575,7 @@ _.Instances = {
 						q(8692, {	-- Cloak of Unending Life
 							["qg"] = 15500,	-- Keyl Swiftclaw
 							["coord"] = { 59.4, 14.0, 327 },
-							["classes"] = { 11 },	-- Druid
+							["classes"] = { DRUID },
 							["groups"] = {
 								i(21409),	-- Cloak of Unending Life
 							},
@@ -621,7 +621,7 @@ _.Instances = {
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
@@ -705,7 +705,7 @@ _.Instances = {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
@@ -815,7 +815,7 @@ _.Instances = {
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
@@ -885,7 +885,7 @@ _.Instances = {
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
@@ -969,7 +969,7 @@ _.Instances = {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
@@ -1079,7 +1079,7 @@ _.Instances = {
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21409),	-- Cloak of Unending Life
 						},
@@ -1132,7 +1132,7 @@ _.Instances = {
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
@@ -1216,7 +1216,7 @@ _.Instances = {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},
@@ -1299,7 +1299,7 @@ _.Instances = {
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21407),	-- Mace of Unending Life
 						},
@@ -1383,7 +1383,7 @@ _.Instances = {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },
-						["classes"] = { 11 },	-- Druid
+						["classes"] = { DRUID },
 						["groups"] = {
 							i(21408),	-- Band of Unending Life
 						},

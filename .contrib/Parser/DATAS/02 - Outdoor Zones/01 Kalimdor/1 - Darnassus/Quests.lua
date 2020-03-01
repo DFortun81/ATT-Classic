@@ -312,7 +312,7 @@ _.Zones =
 					["qg"] = 4218,	-- Denatharion <Druid Trainer>
 					["coord"] = { 34.8, 8.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(730, {	-- Trouble In Darkshore?

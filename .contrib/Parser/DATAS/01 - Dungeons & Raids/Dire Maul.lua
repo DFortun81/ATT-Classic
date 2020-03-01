@@ -319,7 +319,7 @@ _.Instances = {
 				{
 					["questID"] = 7506,	-- The Emerald Dream...
 					["qg"] = 14381,	-- Lorekeeper Javon
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 18364, 1 },	-- The Emerald Dream
 					},
@@ -512,7 +512,7 @@ _.Instances = {
 					{
 						["itemID"] = 18364,	-- The Emerald Dream
 						["questID"] = 7506,	-- The Emerald Dream...
-						["classes"] = { 11 },	-- 
+						["classes"] = { DRUID },
 					},
 					{
 						["itemID"] = 18361,	-- The Greatest Race of Hunters

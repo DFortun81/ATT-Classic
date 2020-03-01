@@ -23,8 +23,8 @@ _.Zones =
 				},
 				q(5931, {	-- Back to Darnassus
 					["qg"] = 11802,  -- Dendrite Starblaze
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["sourceQuest"] = 5929,  -- Great Bear Spirit
 				}),
 				q(6125, {	-- Power over Poison
@@ -41,8 +41,8 @@ _.Zones =
 				}),
 				q(5929, {	-- Great Bear Spirit
 					["qg"] = 11802,  -- Dendrite Starblaze
-					["classes"] = { 11 },  -- Druid
 					["races"] = { NIGHTELF },
+					["classes"] = { DRUID },
 					["sourceQuest"] = 5921,  -- Moonglade
 				}),
 				{
@@ -181,7 +181,7 @@ _.Zones =
 				q(9063, {	-- Torwa Pathfinder
 					["qg"] = 12042,	-- Loganaar <Druid Trainer>
 					["coord"] = { 52.4, 40.6, MOONGLADE },
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(6845, {	-- Uncovering Past Secrets

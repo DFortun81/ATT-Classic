@@ -58,7 +58,7 @@ _.Zones =
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["sourceQuest"] = 9063,  -- Torwa Pathfinder
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 					["cost"] = {
 						{ "i", 22434, 8 },	-- Bloodcap
@@ -364,7 +364,7 @@ _.Zones =
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 					["sourceQuest"] = 9052,  -- Bloodpetal Poison
-					["classes"] = { 11 },	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 50,
 				}),
 				q(4502, {	-- Volcanic Activity
