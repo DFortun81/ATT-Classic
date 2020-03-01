@@ -23,8 +23,8 @@ _.Zones =
 				},
 				q(5931, {	-- Back to Darnassus
 					["qg"] = 11802,  -- Dendrite Starblaze
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["sourceQuest"] = 5929,  -- Great Bear Spirit
 				}),
 				q(6125, {	-- Power over Poison
@@ -41,8 +41,8 @@ _.Zones =
 				}),
 				q(5929, {	-- Great Bear Spirit
 					["qg"] = 11802,  -- Dendrite Starblaze
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["sourceQuest"] = 5921,  -- Moonglade
 				}),
 				{

@@ -24,8 +24,8 @@ _.Zones =
 				}),
 				q(6001, {  -- Body and Heart
 					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["sourceQuest"] = 5931,  -- Back to Darnassus
 				}),
 				q(921, {	-- Crown of the Earth (1/6)
@@ -113,7 +113,7 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(3118, {	-- Encrypted Sigil
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["classes"] = { 4 },	-- Rogue
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
@@ -130,7 +130,7 @@ _.Zones =
 				}),
 				q(3117, {	-- Etched Sigil
 					["classes"] = { 3 },	-- Hunter
-					["races"] = { 4 },	-- Night Elf
+					["races"] = { NIGHTELF },
 					["qg"] = 2079,	-- Conservator Ilthalaine
 					["sourceQuest"] = 457,	-- The Balance of Nature
 				}),
@@ -180,8 +180,8 @@ _.Zones =
 				}),
 				q(5923, {	-- Heeding the Call
 					["qg"] = 4218,  -- Denatharion <Druid Trainer>
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["altQuests"] = {
 						5924,	-- Heeding the Call
 						5925,   -- Heeding the Call
@@ -189,8 +189,8 @@ _.Zones =
 				}),
 				q(5925, {  -- Heeding the Call
 						["qg"] = 3602,  -- Kal <Druid Trainer>
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["altQuests"] = {
 						5923,	-- Heeding the Call
 						5924,   -- Heeding the Call
@@ -224,8 +224,8 @@ _.Zones =
 				}),
 				q(5921, {  -- Moonglade
 					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["races"] = { 4 },  -- Night Elf Only
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 					["sourceQuests"] = {
 						5923,	-- Heeding the Call
 						5924,   -- Heeding the Call
@@ -291,24 +291,24 @@ _.Zones =
 						6722,	-- The Hunter's Path
 					},
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
 				q(6101, {	-- Taming the Beast
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6063,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 				}),
 				q(6102, {	-- Taming the Beast
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6101,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(883),	-- Call Pet
@@ -398,8 +398,8 @@ _.Zones =
 					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
 					["coord"] = { 58.66, 40.45, TELDRASSIL },
 					["maps"] = { TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["races"] = { NIGHTELF },
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						6071,	-- The Hunter's Path
@@ -486,8 +486,8 @@ _.Zones =
 					["qg"] = 3601,	-- Dazalar <Hunter Trainer>
 					["sourceQuest"] = 6102,	-- Taming the Beast
 					["coord"] = { 56.6, 59.6, TELDRASSIL },
-					["races"] = { 4 },	-- Night Elf Only
 					["classes"] = { 3 },	-- Hunter Only!
+					["races"] = { NIGHTELF },
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(6991),		-- Feed Pet
@@ -521,8 +521,8 @@ _.Zones =
 				}),
 				q(3120, {  -- Verdant Sigil
 					["qg"] = 2079,  -- Conservator Ilthalaine
-					["races"] = { 4 },	-- Night Elf
 					["classes"] = { 11 },  -- Druid
+					["races"] = { NIGHTELF },
 				}),
 				q(917, {	-- Webwood Egg
 					["races"] = ALLIANCE_ONLY,
