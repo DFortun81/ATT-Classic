@@ -215,19 +215,6 @@ _.Zones =
 						i(22011),	-- Beastmaster's Bindings
 					},
 				}),
-				q(8419, {	-- An Imp's Request
-					["lvl"] = 50,
-					["qg"] = 3326,	-- Zevrost <Warlock Trainer>
-					["coord"] = { 48.4, 45.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["altQuests"] = {
-						8420,	-- Hot and Itchy
-					},
-					["cost"] = {
-						{ "i", 14256, 1 },	-- Felcloth
-					},
-				}),
 				q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

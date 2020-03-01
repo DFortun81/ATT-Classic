@@ -59,4 +59,12 @@ _.NeverImplemented =
 			{ "i", 6075, 1 },	-- Vimes's Report
 		},
 	})),
+	
+	-- Felwood Quests that were never added.
+	un(1, q(5208)),	-- <NYI> <TXT> The Blessing of Evil
+	un(1, q(5207)),	-- <NYI> <TXT> The True Summoner
+	un(1, q(5209)),	-- <UNUSED>
+	un(1, q(7741, {	-- Praise from the Emerald Circle <NYI> <TXT>
+		un(1, i(19065)),	-- Emerald Circle
+	})),
 };

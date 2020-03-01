@@ -101,19 +101,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(8419, {	-- An Imp's Request
-					["lvl"] = 50,
-					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
-					["coord"] = { 28.4, 78.2, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["altQuests"] = {
-						8420,	-- Hot and Itchy
-					},
-					["cost"] = {
-						{ "i", 14256, 1 },	-- Felcloth
-					},
-				}),
 				q(8233, {	-- A Simple Request
 					["qgs"] = {
 						13283,	-- Lord Tony Romano <Rogue Trainer>

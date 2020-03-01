@@ -247,11 +247,6 @@ _.Zones =
 						i(4953),	-- Trogg Brew
 					},
 				}),
-				q(5159, {	-- Cleansed Water Returns to Felwood
-					["lvl"] = 48,
-					["qg"] = 5901,	-- Islen Waterseer
-					["sourceQuest"] = 5158,	-- Seeking Spiritual Aid
-				}),
 				q(1796, {	-- Components for the Enchanted Gold Bloodrobe (1/5)
 					["qg"] = 6266,	-- Menara Voidrender
 					["coord"] = { 62.4, 35.4, THE_BARRENS },

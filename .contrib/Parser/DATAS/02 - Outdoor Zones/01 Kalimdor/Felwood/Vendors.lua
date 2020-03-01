@@ -46,6 +46,7 @@ _.Zones =
 					},
 				}),
 				n(14522, {	-- Ur'dan
+					["sourceQuest"] = 7625, 	-- Xorothian Stardust
 					["coord"] = { 36.2, 44.6, FELWOOD },
 					["classes"] = { WARLOCK },
 					["groups"] = {

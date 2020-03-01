@@ -12,10 +12,11 @@ _.Zones =
 					["u"] = 1,	-- Never Available
 				}),
 				q(6605, {	-- A Strange One
-					["lvl"] = 49,
+					["qg"] = 11755,	-- Harlo Wigglesworth
+					["coord"] = { 61, 38.4, WINTERSPRING },
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
-					["qg"] = 11755,	-- Harlo Wigglesworth
+					["lvl"] = 49,
 				}),
 				q(8798, {	-- A Yeti of Your Own
 					["requireSkill"] = 202,	-- Engineering
@@ -47,10 +48,14 @@ _.Zones =
 					},
 				}),
 				q(8469, {	-- Beads for Salfa
-					["lvl"] = 50,
 					["qg"] = 11556,	-- Salfa
-					["repeatable"] = true,
 					["sourceQuest"] = 8464,	-- Winterfall Activity
+					["coord"] = { 27.8, 34.6, WINTERSPRING },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 21383, 5 },	-- Winterfall Spirit Beads
+					},
+					["lvl"] = 50,
 				}),
 				q(5055, {	-- Brumeran of the Chillwind
 					["lvl"] = 53,
@@ -109,9 +114,11 @@ _.Zones =
 					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
 				}),
 				q(5084, {	-- Falling to Corruption
-					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5083,	-- Winterfall Firewater
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["maps"] = { FELWOOD },
+					["lvl"] = 52,
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
@@ -142,15 +149,22 @@ _.Zones =
 					["qg"] = 10300,	-- Ranshalla
 					["sourceQuest"] = 979,	-- Find Ranshalla
 				}),
-				q(4882, {	-- Guarding Secrets
-					["lvl"] = 52,
+				q(4882, {	-- Guarding Secrets (1/2)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
+					["maps"] = { FELWOOD },
+					["crs"] = {
+						7454,	-- Berserk Owlbeast
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+					},
 					["races"] = HORDE_ONLY,
+					["lvl"] = 52,
 				}),
 				q(5121, {	-- High Chief Winterfall
 					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5087,	-- Winterfall Runners
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["g"] = {
 						i(15784),	-- Crystal Breeze Mantle
 						i(15786),	-- Fernpulse Jerkin
@@ -232,6 +246,7 @@ _.Zones =
 					["lvl"] = 51,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 980,	-- The New Springs
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["g"] = {
 						i(15789),	-- Deep River Cloak
 					},
@@ -266,9 +281,11 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5123, {	-- The Final Piece
-					["lvl"] = 52,
 					["provider"] = { "i", 12842 },	-- Crudely-Written Log
 					["sourceQuest"] = 5121,	-- High Chief Winterfall
+					["coord"] = { 69.6, 38.2, WINTERSPRING },
+					["cr"] = 10738,	-- High Chief Winterfall
+					["lvl"] = 52,
 				}),
 				q(5244, {	-- The Ruins of Kel'Theril
 					["lvl"] = 53,
@@ -276,13 +293,19 @@ _.Zones =
 					["qg"] = 11079,	-- Wynd Nightchaser
 				}),
 				q(5082, {	-- Threat of the Winterfall
-					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["lvl"] = 52,
 				}),
 				q(5086, {	-- Toxic Horrors
-					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5085,	-- Mystery Goo
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["maps"] = { FELWOOD },
+					["cost"] = {
+						{ "i", 12822, 3 },	-- Toxic Horror Droplet
+					},
+					["lvl"] = 52,
 				}),
 				q(6603, {	-- Trouble in Winterspring!
 					["lvl"] = 52,
@@ -338,9 +361,24 @@ _.Zones =
 					["qg"] = 10618,	-- Rivern Frostwind
 					["repeatable"] = true,
 				}),
+				q(8471, {	-- Winterfall Ritual Totem
+					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem
+					["minReputation"] = { 576, NEUTRAL },	-- Timbermaw Hold
+					["crs"] = {
+						10738,	-- High Chief Winterfall
+						7440,	-- Winterfall Den Watcher
+						7442,	-- Winterfall Pathfinder
+						10916,	-- Winterfall Runner
+						7439,	-- Winterfall Shaman
+						7441,	-- Winterfall Totemic
+						7438,	-- Winterfall Ursa
+					},
+					["lvl"] = 50,
+				}),
 				q(5087, {	-- Winterfall Runners
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5086,	-- Toxic Horrors
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["cost"] = {
 						{ "i", 12829, 1 },	-- Winterfall Crate
 					},
@@ -355,9 +393,11 @@ _.Zones =
 					},
 				}),
 				q(5128, {	-- Words of the High Chief
-					["lvl"] = 52,
 					["qg"] = 9298,	-- Donova Snowden
 					["sourceQuest"] = 5123,	-- The Final Piece
+					["coord"] = { 31.2, 45.2, WINTERSPRING },
+					["maps"] = { FELWOOD },
+					["lvl"] = 52,
 				}),
 			}),
 		}),

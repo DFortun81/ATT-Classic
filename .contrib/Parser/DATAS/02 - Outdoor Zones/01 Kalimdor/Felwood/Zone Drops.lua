@@ -23,8 +23,8 @@ _.Zones =
 				i(11511, {	-- Cenarion Beacon
 					["description"] = "You must keep this in your bags for the Fel Creep, Patch of Tainted Skin, Tainted Vitriol, and Corrupted Soul Shards to drop from the various means of gathering.",
 					["sourceQuests"] = {
-						4101,	-- Cleansing Felwood
-						4102,	-- Cleansing Felwood
+						4101,	-- Cleansing Felwood (A)
+						4102,	-- Cleansing Felwood (H)
 					},
 				}),
 				i(11515, {	-- Corrupted Soul Shard

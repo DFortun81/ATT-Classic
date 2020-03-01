@@ -52,19 +52,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(8419, {	-- An Imp's Request
-					["lvl"] = 50,
-					["qg"] = 4563,	-- Kaal Soulreaper <Warlock Trainer>
-					["coord"] = { 86.0, 15.6, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["classes"] = { 9 },	-- Warlock
-					["altQuests"] = {
-						8420,	-- Hot and Itchy
-					},
-					["cost"] = {
-						{ "i", 14256, 1 },	-- Felcloth
-					},
-				}),
 				q(8417, {	-- A Troubled Spirit
 					["qg"] = 4593,	-- Christoph Walker <Warrior Trainer>
 					["coord"] = { 47.8, 14.8, UNDERCITY },

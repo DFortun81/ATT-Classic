@@ -207,8 +207,13 @@ _.Zones =
 				q(7623, {	-- Lord Banehollow
 					["qg"] = 14437,	-- Gorzeeki Wildeyes
 					["sourceQuest"] = 7564,	-- Wildeyes
+					["description"] = "Do not leave the Blasted Lands without purchasing a Shadowy Potion or two.",
 					["coords"] = { 12.4, 31.6, BURNING_STEPPES },
+					["maps"] = { FELWOOD },
 					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 18802, 1 },	-- Shadowy Potion
+					},
 					["lvl"] = 60,
 				}),
 				q(3825, {	-- Ogre Head On A Stick = Party

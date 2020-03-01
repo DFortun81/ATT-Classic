@@ -143,10 +143,10 @@ _.Instances = {
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
-					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
+					["lvl"] = 60,
 				},
 				{
 					["questID"] = 7786,	-- Thunderaan the Windseeker

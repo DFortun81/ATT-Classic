@@ -45,12 +45,6 @@ _.Zones =
 					["lvl"] = 48,
 					["qg"] = 9271,	-- Hol'anyee Marshal
 				}),
-				q(4005, {	-- Aquementas
-					["lvl"] = 47,
-					["g"] = {
-						i(11172),	-- Silvery Claws
-					},
-				}),
 				q(4501, {	-- Beware of Pterrordax
 					["lvl"] = 49,
 					["provider"] = { "o", 174682 },	-- Beware of Pterrordax
@@ -172,11 +166,25 @@ _.Zones =
 					["qg"] = 10302,	-- Krakle
 				}),
 				q(3962, {	-- It's Dangerous to Go Alone
+					["qg"] = 8737,	-- Linken
+					["sourceQuest"] = 3961,	-- Linken's Adventure
+					["description"] = "Use the Silter Totem of Aquementas on Blazerunner to remove his protective barrier.",
+					["coord"] = { 44.6, 8.2, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11522, 1 },	-- Silver Totem of Aquementas
+						{ "i", 11179, 1 },	-- Golden Flame
+					},
 					["lvl"] = 47,
 					["g"] = {
+						{
+							["itemID"] = 11179,	-- Golden Flame
+							["questID"] = 3962,	-- It's Dangerous to Go Alone
+							["cr"] = 9376,	-- Blazerunner
+							["coord"] = { 49.6, 49.6, UNGORO_CRATER },
+						},
+						i(11905),	-- Linken's Boomerang
 						i(11902),	-- Linken's Sword of Mastery
 						i(11904),	-- Spirit of Aquementas
-						i(11905),	-- Linken's Boomerang
 					},
 				}),
 				q(3844, {	-- It's a Secret to Everybody
@@ -211,12 +219,19 @@ _.Zones =
 					["lvl"] = 47,
 				}),
 				q(3961, {	-- Linken's Adventure
-					["lvl"] = 47,
 					["qg"] = 9117,	-- J.D. Collie
+					["sourceQuest"] = 4005,	-- Aquementas
+					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11522, 1 },	-- Silver Totem of Aquementas
+					},
+					["lvl"] = 47,
 				}),
 				q(3942, {	-- Linken's Memory
-					["lvl"] = 47,
 					["qg"] = 9117,	-- J.D. Collie
+					["coord"] = { 41.8, 2.6, UNGORO_CRATER },
+					["maps"] = { FELWOOD },
+					["lvl"] = 47,
 				}),
 				q(4492, {	-- Lost!
 					["lvl"] = 50,
@@ -281,9 +296,6 @@ _.Zones =
 						i(11917),	-- Shizzle's Nozzle Wiper
 					},
 					["lvl"] = 49,
-				}),
-				q(4084, {	-- Silver Heart
-					["lvl"] = 47,
 				}),
 				q(4289, {	-- The Apes of Un'Goro
 					["lvl"] = 47,
