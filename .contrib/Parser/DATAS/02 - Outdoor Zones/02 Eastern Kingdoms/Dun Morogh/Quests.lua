@@ -309,16 +309,30 @@ _.Zones =
 					},
 					["lvl"] = 4,
 				}),
+				q(6074, {	-- The Hunter's Path
+					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
+					["coord"] = { 70, 84.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = { DWARF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
 				q(6075, {	-- The Hunter's Path
 					["qg"] = 11807,	-- Tristane Shadowstone
 					["coord"] = { 30.6, 45.4, DUN_MOROGH },
 					["races"] = { DWARF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6074,	-- The Hunter's Path
-						6076,	-- The Hunter's Path
-					},
+					["lvl"] = 10,
+				}),
+				q(6076, {	-- The Hunter's Path
+					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
+					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = { DWARF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(419, {	-- The Lost Pilot

@@ -839,18 +839,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
-				q(6074, {	-- The Hunter's Path
-					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
-					["coord"] = { 70, 84.6, IRONFORGE },
-					["races"] = { DWARF },
-					["classes"] = { HUNTER },
-					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6075,	-- The Hunter's Path
-						6076,	-- The Hunter's Path
-					},
-					["lvl"] = 10,
-				}),
 				q(3681, {	-- The Tome of Divinity
 					["qg"] = 5149,	-- Brandur Ironhammer
 					["altQuests"] = {

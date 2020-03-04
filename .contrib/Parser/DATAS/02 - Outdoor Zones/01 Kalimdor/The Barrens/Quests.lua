@@ -568,6 +568,12 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
+				q(854, {	-- Journey to the Crossroads
+					["qg"] = 3418,	-- Kirge Sternhorn
+					["coord"] = { 44.8, 58.6, THE_BARRENS },
+					["races"] = { TAUREN },
+					["lvl"] = 9,
+				}),
 				q(4967, {	-- Knowledge of the Orb of Orahil
 					["qg"] = 3326,	-- Zevrost
 					["coord"] = { 48.4, 45.6, ORGRIMMAR },
@@ -729,10 +735,7 @@ _.Zones =
 				}),
 				q(844, {	-- Plainstrider Menace
 					["qg"] = 3338,	-- Sergra Darkthorn
-					["sourceQuests"] = {
-						861,	-- The Hunter's Way
-						860,	-- Sergra Darkthorn
-					},
+					["sourceQuest"] = 860,	-- Sergra Darkthorn
 					["coord"] = { 52.23, 31.01, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
@@ -1274,6 +1277,27 @@ _.Zones =
 					["coord"] = { 45.34, 28.42, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
+				}),
+				q(1505, {	-- Veteran Uzzek
+					["qgs"] = {
+						3170,	-- Tarshaw Jaggedscar
+						3354,	-- Sorek
+						3063,	-- Krang Stonehoof
+					},
+					["coords"] = {
+						{ 54.18, 42.47, DUROTAR },
+						{ 49.4, 60.4, MULGORE },
+						{ 80.3, 32.4, ORGRIMMAR },
+					},
+					["maps"] = {
+						DUROTAR,
+						MULGORE,
+						ORGRIMMAR,
+					},
+					["description"] = "This quest becomes unavailable after completing \"Ulag the Cleaver\" in Tirisfal Glades.",
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 10,
 				}),
 				q(895, {	-- WANTED: Baron Longshore
 					["provider"] = { "o", 3972 },

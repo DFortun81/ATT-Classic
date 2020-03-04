@@ -776,28 +776,6 @@ _.Zones =
 					["cr"] = 3192,	-- Lieutenant Benedict
 					["lvl"] = 3,
 				}),
-				q(1505, {	-- Veteran Uzzek
-					["qgs"] = {
-						3170,	-- Tarshaw Jaggedscar
-						3354,	-- Sorek
-						3063,	-- Krang Stonehoof
-					},
-					["coords"] = {
-						{ 54.18, 42.47, DUROTAR },
-						{ 49.4, 60.4, MULGORE },
-						{ 80.3, 32.4, ORGRIMMAR },
-					},
-					["maps"] = {
-						DUROTAR,
-						MULGORE,
-						ORGRIMMAR,
-						THE_BARRENS,
-					},
-					["description"] = "This quest becomes unavailable after completing \"Ulag the Cleaver\" in Tirisfal Glades.",
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 10,
-				}),
 				q(792, {	-- Vile Familiars
 					["qg"] = 3145,	-- Zureetha Fargaze
 					["coord"] = { 42.85, 69.14, DUROTAR },

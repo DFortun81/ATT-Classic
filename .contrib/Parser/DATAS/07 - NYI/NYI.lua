@@ -67,4 +67,7 @@ _.NeverImplemented =
 	un(1, q(7741, {	-- Praise from the Emerald Circle <NYI> <TXT>
 		un(1, i(19065)),	-- Emerald Circle
 	})),
+	
+	-- Mulgore
+	un(1, q(774)),	-- <UNUSED>
 };

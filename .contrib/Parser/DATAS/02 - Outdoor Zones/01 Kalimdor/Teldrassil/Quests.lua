@@ -360,20 +360,48 @@ _.Zones =
 					["provider"] = { "o", 6751 },	-- Strange Fruited Plant
 					["coord"] = { 42.6, 76.1, TELDRASSIL },
 				}),
-				q(6072, {	-- The Hunter's Path
-					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
-					["coord"] = { 58.66, 40.45, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
+				q(6071, {	-- The Hunter's Path
+					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
+					["coord"] = { 40.2, 8.8, DARNASSUS },
+					["maps"] = { DARNASSUS },
 					["races"] = { NIGHTELF },
 					["classes"] = { HUNTER },
 					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						6721,	-- The Hunter's Path
-						6722,	-- The Hunter's Path
-					},
+					["lvl"] = 10,
+				}),
+				q(6072, {	-- The Hunter's Path
+					["qg"] = 3596,	-- Ayanna Everstride <Hunter Trainer>
+					["coord"] = { 58.66, 40.45, TELDRASSIL },
+					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(6073, {	-- The Hunter's Path
+					["qg"] = 4205,	-- Dorion <Hunter Trainer>
+					["coord"] = { 42.2, 7.6, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(6721, {	-- The Hunter's Path
+					["qg"] = 5117,	-- Regnus Thundergranite <Hunter Trainer>
+					["coord"] = { 69.8, 83.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(6722, {	-- The Hunter's Path
+					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
+					["coord"] = { 45.8, 53, DUN_MOROGH },
+					["maps"] = { DUN_MOROGH },
+					["races"] = { NIGHTELF },
+					["classes"] = { HUNTER },
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(927, {	-- The Moss-twined Heart

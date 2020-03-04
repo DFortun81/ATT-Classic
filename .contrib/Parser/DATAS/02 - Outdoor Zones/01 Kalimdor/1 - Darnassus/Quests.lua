@@ -212,44 +212,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
-				q(6071, {	-- The Hunter's Path
-					["qg"] = 4146,	-- Jocaste <Hunter Trainer>
-					["coord"] = { 25.6, 48.72, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
-					["races"] = { NIGHTELF },
-					["classes"] = { HUNTER },
-					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						6721,	-- The Hunter's Path
-						6722,	-- The Hunter's Path
-					},
-					["lvl"] = 10,
-				}),
 				q(8151, {	-- The Hunter's Charm
 					["qg"] = 4205,	-- Dorion <Hunter Trainer>
 					["coord"] = { 42.2, 7.6, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
-				}),
-				q(6073, {	-- The Hunter's Path
-					["qg"] = 4205,	-- Dorion <Hunter Trainer>
-					["coord"] = { 25.98, 48.45, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
-					["races"] = { NIGHTELF },
-					["classes"] = { HUNTER },
-					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6071,	-- The Hunter's Path
-						6072,	-- The Hunter's Path
-						6073,	-- The Hunter's Path
-						6721,	-- The Hunter's Path
-						6722,	-- The Hunter's Path
-					},
-					["lvl"] = 10,
 				}),
 				q(3791, {	-- The Mystery of Morrowgrain
 					["lvl"] = 47,
