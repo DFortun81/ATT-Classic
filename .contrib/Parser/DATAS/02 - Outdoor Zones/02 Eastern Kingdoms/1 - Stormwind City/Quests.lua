@@ -554,18 +554,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
-				q(6076, {	-- The Hunter's Path
-					["qg"] = 5515,	-- Einris Brightspear <Hunter Trainer>
-					["coord"] = { 61.6, 15.4, STORMWIND_CITY },
-					["races"] = { DWARF },
-					["classes"] = { HUNTER },
-					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						6074,	-- The Hunter's Path
-						6075,	-- The Hunter's Path
-					},
-					["lvl"] = 10,
-				}),
 				q(1274, {	-- The Missing Diplomat (1/17)
 					["lvl"] = 28,
 					["qg"] = 4982,	-- Thomas <Altar Boy>
