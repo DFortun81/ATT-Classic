@@ -318,6 +318,20 @@ _.Zones =
 						i(5299),	-- Gloves of the Moon
 					},
 				}),
+				q(6129, {	-- Curing the Sick
+					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 6128,	-- Gathering the Cure
+					["coord"] = { 52.2, 31.8, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15826, 1 },	-- Curative Animal Salve
+					},
+					["lvl"] = 14,
+					["groups"] = {
+						i(15866),	-- Veildust Medicine Bag
+					},
+				}),
 				q(1069, {	-- Deepmoss Spider Eggs
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["cost"] = {
@@ -448,6 +462,22 @@ _.Zones =
 					["coord"] = { 46.08, 76.37, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 17,
+				}),
+				q(6128, {	-- Gathering the Cure
+					["qg"] = 3448,	-- Tonga Runetotem
+					["sourceQuest"] = 6127,	-- The Principal Source
+					["coord"] = { 52.2, 31.8, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 2449, 5 },	-- Earthroot
+						{ "i", 15852, 5 },	-- Kodo Horn
+					},
+					["crs"] = {
+						3236,	-- Barrens Kodo
+						3234,	-- Lost Barrens Kodo
+					},
+					["lvl"] = 14,
 				}),
 				q(875, {	-- Harpy Lieutenants
 					["qg"] = 3449,	-- Darsok Swiftdagger

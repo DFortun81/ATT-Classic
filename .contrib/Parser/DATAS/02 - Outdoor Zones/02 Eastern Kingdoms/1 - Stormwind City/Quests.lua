@@ -266,15 +266,6 @@ _.Zones =
 					["qg"] = 1427,	-- Harlan Bagley
 					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
 				}),
-				q(5924, {	-- Heeding the Call
-					["qg"] = 5505,  -- Theridran <Druid Trainer>
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
-					["altQuests"] = {
-						5923,	-- Heeding the Call
-						5925,   -- Heeding the Call
-					},
-				}),
 				q(1939, {	-- High Sorcerer Andromath
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
@@ -633,11 +624,6 @@ _.Zones =
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1247,
-				}),
-				q(1015, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2198,	-- Crier Goodman
 				}),
 				q(543, {	-- The Perenolde Tiara
 					["qg"] = 2285,	-- Count Remington Ridgewell

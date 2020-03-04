@@ -22,12 +22,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2078,	-- Athridas Bearmantle
 				}),
-				q(6001, {  -- Body and Heart
-					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
-					["sourceQuest"] = 5931,  -- Back to Darnassus
-				}),
 				q(921, {	-- Crown of the Earth (1/6)
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3514,	-- Tenaron Stormgrip
@@ -178,24 +172,6 @@ _.Zones =
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["sourceQuest"] = 475,	-- Gnarlpine Corruption
 				}),
-				q(5923, {	-- Heeding the Call
-					["qg"] = 4218,  -- Denatharion <Druid Trainer>
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
-					["altQuests"] = {
-						5924,	-- Heeding the Call
-						5925,   -- Heeding the Call
-					},
-				}),
-				q(5925, {  -- Heeding the Call
-						["qg"] = 3602,  -- Kal <Druid Trainer>
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
-					["altQuests"] = {
-						5923,	-- Heeding the Call
-						5924,   -- Heeding the Call
-					},
-				}),
 				q(3521, {	-- Iverron's Antidote
 					["lvl"] = 2,
 					["races"] = ALLIANCE_ONLY,
@@ -220,16 +196,6 @@ _.Zones =
 						i(5590),	-- Cord Bracers
 						i(5593),	-- Crag Buckler
 						i(5618),	-- Scout's Cloak
-					},
-				}),
-				q(5921, {  -- Moonglade
-					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
-					["sourceQuests"] = {
-						5923,	-- Heeding the Call
-						5924,   -- Heeding the Call
-						5925,   -- Heeding the Call
 					},
 				}),
 				q(978, {	-- Moontouched Wildkin
@@ -502,11 +468,6 @@ _.Zones =
 						i(5419),	-- Feral Bracers
 						i(2571),	-- Viny Wrappings
 					},
-				}),
-				q(8734, {	-- Tyrande and Remulos
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Ahn'Qirij
 				}),
 				q(486, {	-- Ursal the Mauler
 					["lvl"] = 4,

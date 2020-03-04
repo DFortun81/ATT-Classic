@@ -360,6 +360,21 @@ _.Zones =
 					["lvl"] = 47,
 					["qg"] = 9117,	-- J.D. Collie
 				}),
+				q(9063, {	-- Torwa Pathfinder
+					["qgs"] = {
+						4218,	-- Denatharion <Druid Trainer>
+						12042,	-- Loganaar <Druid Trainer>
+						3033,	-- Turak Runetotem <Druid Trainer>
+					},
+					["coords"] = {
+						{ 34.8, 8.6, DARNASSUS },
+						{ 52.4, 40.6, MOONGLADE },
+						{ 76.6, 27.6, THUNDER_BLUFF },
+					},
+					["maps"] = { DARNASSUS, MOONGLADE, THUNDER_BLUFF },
+					["classes"] = { DRUID },
+					["lvl"] = 50,
+				}),
 				q(9051, {	-- Toxic Test
 					["qg"] = 9619,	-- Torwa Pathfinder
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },

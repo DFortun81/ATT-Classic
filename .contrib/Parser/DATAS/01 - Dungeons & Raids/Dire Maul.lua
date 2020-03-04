@@ -656,6 +656,11 @@ _.Instances = {
 						["description"] = "Talk to him for him to break down the door.",
 					}),
 					n(11492, {	-- Alzzin the Wildshaper
+						{
+							["itemID"] = 18501,	-- Felvine Shard
+							["questID"] = 5526,	-- Shards of the Felvine
+							["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
+						},
 						i(18321),	-- Energetic Rod
 						i(18310),	-- Fiendish Machete
 						i(18328),	-- Shadewood Cloak

@@ -153,11 +153,6 @@ _.Zones =
 						i(4967),	-- Tribal Warrior's Shield
 					},
 				}),
-				q(1123, {	-- Rabine Saturna
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
-				}),
 				q(1959, {	-- Report to Anastasia
 					["qg"] = 3049,	-- Thurston Xane <Mage Trainer>
 					["coord"] = { 25, 20.6, THUNDER_BLUFF },
@@ -216,11 +211,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
-				q(1000, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qg"] = 10881,	-- Bluff Runner Windstrider
-				}),
 				q(1195, {	-- The Sacred Flame
 					["qg"] = 4721,	-- Zangen Stonehoof
 					["coord"] = { 54.97, 51.32, THUNDER_BLUFF },
@@ -255,13 +245,6 @@ _.Zones =
 						i(6739),	-- Cliffrunner's Aim
 						i(6740),	-- Azure Sash
 					},
-				}),
-				q(9063, {	-- Torwa Pathfinder
-					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
-					["coord"] = { 76.6, 27.6, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 50,
 				}),
 				q(3761, {	-- Un'Goro Soil
 					["lvl"] = 47,

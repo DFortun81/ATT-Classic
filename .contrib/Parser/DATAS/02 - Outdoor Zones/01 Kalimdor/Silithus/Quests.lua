@@ -398,12 +398,27 @@ _.Zones =
 					},
 				}),
 				q(1126, {	-- Hive in the Tower
-					["lvl"] = 54,
-					["description"] = "You can delete the Silithid Goo from your inventory after completing the quest.",
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
-					["g"] = {
-						i(17345),	-- Silithid Goo
+					["coord"] = { 81.8, 18.8, SILITHUS },
+					["cost"] = {
+						{ "i", 17346, 1 },	-- Encrusted Silithid Object
+					},
+					["cr"] = 13301,	-- Hive'Ashi Ambusher
+					["lvl"] = 54,
+					["groups"] = {
+						{
+							["provider"] = { "o", 178553 },	-- Hive'Ashi Pod
+							["itemID"] = 17345,	-- Silithid Goo
+							["coord"] = { 60.3, 52.6, SILITHUS },	
+							["groups"] = {
+								{
+									["itemID"] = 17346,	-- Encrusted Silithid Object
+									["questID"] = 1126,	-- Hive in the Tower
+									["cr"] = 13301,	-- Hive'Ashi Ambusher
+								},
+							},
+						},
 					},
 				}),
 				q(8739, {	-- Hive'Ashi Scout Report
@@ -759,8 +774,10 @@ _.Zones =
 					},
 				}),
 				q(1125, {	-- The Spirits of Southwind
-					["lvl"] = 54,
 					["qg"] = 13220,	-- Layo Starstrike
+					["sourceQuest"] = 1124,	-- Wasteland
+					["coord"] = { 81.8, 18.8, SILITHUS },
+					["lvl"] = 54,
 				}),
 				q(8279, {	-- The Twilight Lexicon
 					["u"] = 3,	-- Added in later phase
@@ -824,9 +841,14 @@ _.Zones =
 					},
 				}),
 				q(6844, {	-- Umber, Archivist
-					["lvl"] = 54,
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1126,	-- Hive in the Tower
+					["coord"] = { 81.8, 18.8, SILITHUS },
+					["maps"] = { MOONGLADE },
+					["cost"] = {
+						{ "i", 17346, 1 },	-- Encrusted Silithid Object
+					},
+					["lvl"] = 54,
 				}),
 				q(8808, {	-- Uniform Supplies
 					["u"] = 3,	-- Added in later phase

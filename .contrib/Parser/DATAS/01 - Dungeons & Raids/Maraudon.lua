@@ -40,12 +40,10 @@ _.Instances = {
 				q(7066, {	-- Seed of Life
 					["qg"] = 12238,	-- Zaetar's Spirit
 					["description"] = "This quest becomes available after you defeat Princess Theradras",
-					["groups"] = {
-						{
-							["itemID"] = 17760,	-- Seed of Life
-							["questID"] = 7066,	-- Seed of Life
-						},
+					["cost"] = {
+						{ "i", 17760, 1 },	-- Seed of Life
 					},
+					["lvl"] = 39,
 				}),
 				{	-- Shadowshard Fragments
 					["allianceQuestID"] = 7070,	-- Shadowshard Fragments
@@ -78,6 +76,7 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 17758, 1 },	-- Amulet of Union
 					},
+					["lvl"] = 39,
 					["groups"] = {
 						{
 							["itemID"] = 17781,	-- The Pariah's Instructions
@@ -156,6 +155,7 @@ _.Instances = {
 				q(7046, {	-- The Scepter of Celebras
 					["qg"] = 13716,	-- Celebras the Redeemed
 					["sourceQuest"] = 7046,	-- Legends of Maraudon
+					["lvl"] = 41,
 					["groups"] = {
 						{
 							["itemID"] = 17191,	-- Scepter of Celebras

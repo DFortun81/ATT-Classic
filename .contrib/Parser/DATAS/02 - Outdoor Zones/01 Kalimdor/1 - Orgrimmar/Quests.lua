@@ -714,11 +714,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 14392,	-- Overlord Runthak
 				}),
-				q(1018, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qg"] = 10880,	-- Warcaller Gorlach
-				}),
 				q(787, {	-- The New Horde
 					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg

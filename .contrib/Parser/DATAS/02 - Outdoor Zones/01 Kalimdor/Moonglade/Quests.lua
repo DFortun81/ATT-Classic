@@ -6,32 +6,248 @@ _.Zones =
 	m(KALIMDOR, {
 		m(MOONGLADE, {
 			n(QUESTS, {
-				{
-					["questID"] = 5527,	-- A Reliquary of Purity
+				q(26, {	-- A Lesson to Learn
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+					["coord"] = { 35.2, 8, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 16,
+				}),
+				q(27, {	-- A Lesson to Learn
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
+					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 16,
+				}),
+				q(5527, {	-- A Reliquary of Purity
 					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["maps"] = { DIRE_MAUL, SILITHUS },
+					["cost"] = {
+						{ "i", 22201, 1 },	-- Reliquary of Purity
+					},
 					["lvl"] = 56,
 					["groups"] = {
 						{
+							["provider"] = { "o", 179565 },	-- Dusty Reliquary
 							["itemID"] = 22201,	-- Reliquary of Purity
 							["questID"] = 5527,	-- A Reliquary of Purity
-							["provider"] = { "o", 179565 },	-- Dusty Reliquary
 							["coord"] = { 63.2, 55.4, SILITHUS },
 						},
 					},
-				},
+				}),
+				q(5061, {	-- Aquatic Form
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 272,	-- Trial of the Sea Lion
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15885, 1 },	-- Pendant of the Sea Lion
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						recipe(1066),	-- Aquatic Form
+						i(16608),	-- Aquarius Belt
+					},
+				}),
+				q(31, {	-- Aquatic Form
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 30,	-- Trial of the Sea Lion
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15885, 1 },	-- Pendant of the Sea Lion
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						recipe(1066),	-- Aquatic Form
+						i(16608),	-- Aquarius Belt
+					},
+				}),
 				q(5931, {	-- Back to Darnassus
 					["qg"] = 11802,  -- Dendrite Starblaze
-					["races"] = { NIGHTELF },
-					["classes"] = { DRUID },
 					["sourceQuest"] = 5929,  -- Great Bear Spirit
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+				}),
+				q(5932, {	-- Back to Thunder Bluff
+					["qg"] = 11802,  -- Dendrite Starblaze
+					["sourceQuest"] = 5930,  -- Great Bear Spirit
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+				}),
+				q(6001, {	-- Body and Heart
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+					["sourceQuest"] = 5931,	-- Back to Darnassus
+					["coord"] = { 35.2, 8, DARNASSUS },
+					["maps"] = { DARKSHORE, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 15208,	-- Cenarion Moondust
+							["questID"] = 6001,	-- Body and Heart
+							["coord"] = { 43, 45, DARKSHORE },
+						},
+						recipe(5487),	-- Bear Form
+						recipe(6795),	-- Growl
+						recipe(6807),	-- Maul
+					},
+				}),
+				q(6002, {	-- Body and Heart
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
+					["sourceQuest"] = 5932,	-- Back to Thunder Bluff
+					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["maps"] = { THE_BARRENS, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 15710,	-- Cenarion Lunardust
+							["questID"] = 6002,	-- Body and Heart
+							["coord"] = { 42, 60, THE_BARRENS },
+						},
+						recipe(5487),	-- Bear Form
+						recipe(6795),	-- Growl
+						recipe(6807),	-- Maul
+					},
+				}),
+				q(5929, {	-- Great Bear Spirit
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 5921,	-- Moonglade
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+				}),
+				q(5930, {	-- Great Bear Spirit
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 5922,	-- Moonglade
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 10,
+				}),
+				q(5923, {	-- Heeding the Call
+					["qg"] = 4218,	-- Denatharion <Druid Trainer>
+					["coord"] = { 34.8, 7.8, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(5924, {	-- Heeding the Call
+					["qg"] = 5505,	-- Theridran <Druid Trainer>
+					["coord"] = { 21.4, 51.4, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(5925, {	-- Heeding the Call
+					["qg"] = 3602,	-- Kal <Druid Trainer>
+					["coord"] = { 56, 61.6, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(5926, {	-- Heeding the Call
+					["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
+					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(5927, {	-- Heeding the Call
+					["qg"] = 3060,	-- Gart Mistrunner <Druid Trainer>
+					["coord"] = { 45.1, 75.9, MULGORE },
+					["maps"] = { MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(5928, {	-- Heeding the Call
+					["qg"] = 3064,	-- Gennia Runetotem <Druid Trainer>
+					["coord"] = { 48.4, 59.6, MULGORE },
+					["maps"] = { MULGORE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["isBreadcrumb"] = true,
+					["lvl"] = 10,
+				}),
+				q(6121, {	-- Lessons Anew
+					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
+					["sourceQuests"] = {
+						5923,	-- Heeding the Call
+						5924,   -- Heeding the Call
+						5925,   -- Heeding the Call
+					},
+					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 14,
+				}),
+				q(6126, {	-- Lessons Anew
+					["qg"] = 3033,	-- Turak Runetotem <Druid Trainer>
+					["sourceQuests"] = {
+						5926,	-- Heeding the Call
+						5927,   -- Heeding the Call
+						5928,   -- Heeding the Call
+					},
+					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["lvl"] = 14,
+				}),
+				q(5921, {	-- Moonglade
+					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
+					["sourceQuests"] = {
+						5923,	-- Heeding the Call
+						5924,   -- Heeding the Call
+						5925,   -- Heeding the Call
+					},
+					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+				}),
+				q(5922, {	-- Moonglade
+					["qg"] = 3033,  -- Turak Runetotem <Druid Trainer>
+					["sourceQuests"] = {
+						5926,	-- Heeding the Call
+						5927,   -- Heeding the Call
+						5928,   -- Heeding the Call
+					},
+					["coord"] = { 76.4, 27.6, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
 				}),
 				q(6125, {	-- Power over Poison
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6124,	-- Curing the Sick
 					["coord"] = { 56.2, 30.4, MOONGLADE },
-					["maps"] = { DARKSHORE },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { DRUID },
 					["lvl"] = 14,
@@ -39,79 +255,159 @@ _.Zones =
 						recipe(8946),	-- Cure Poison
 					},
 				}),
-				q(5929, {	-- Great Bear Spirit
-					["qg"] = 11802,  -- Dendrite Starblaze
-					["races"] = { NIGHTELF },
+				q(6130, {	-- Power over Poison
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 6129,	-- Curing the Sick
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
-					["sourceQuest"] = 5921,  -- Moonglade
+					["lvl"] = 14,
+					["groups"] = {
+						recipe(8946),	-- Cure Poison
+					},
 				}),
-				{
-					["questID"] = 5526,	-- Shards of the Felvine
-					["sourceQuest"] = 5527,	-- A Reliquary of Purity
+				q(6762, {	-- Rabine Saturna
+					["qg"] = 4217,  -- Mathrengyl Bearwalker <Druid Trainer>
+					["sourceQuest"] = 6761,	-- The New Frontier
+					["coord"] = { 35.2, 8.0, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1123, {	-- Rabine Saturna
+					["qg"] = 5769,	-- Arch Druid Hamuul Runetotem
+					["sourceQuests"] = {
+						1000,	-- The New Frontier [Thunder Bluff]
+						1004,   -- The New Frontier [Undercity]
+						1018,   -- The New Frontier [Orgrimmar]
+					},
+					["coord"] = { 78.4, 28.4, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(5526, {	-- Shards of the Felvine
 					["qg"] = 11801,	-- Rabine Saturna
+					["sourceQuest"] = 5527,	-- A Reliquary of Purity
 					["coord"] = { 51.7, 45.1, MOONGLADE },
 					["maps"] = { DIRE_MAUL },
+					["cost"] = {
+						{ "i", 18540, 1 },	-- Sealed Reliquary of Purity
+					},
 					["lvl"] = 56,
 					["groups"] = {
 						{
 							["itemID"] = 18539,	-- Reliquary of Purity
-							["questID"] = 5526,	-- Shards of the Felvine
-						},
-						{
-							["itemID"] = 18501,	-- Felvine Shard
-							["questID"] = 5526,	-- Shards of the Felvine
-							["description"] = "Looted from the Felvine Shard object that spawns under the vines near the last boss in Dire Maul East.",
-						},
-						{
-							["itemID"] = 18540,	-- Sealed Reliquary of Purity
-							["questID"] = 5526,	-- Shards of the Felvine
+							["coord"] = { 63.2, 55.4, SILITHUS },
 							["cost"] = {
-								{ "i", 18539, 1 },	-- Reliquary of Purity
 								{ "i", 18501, 1 },	-- Felvine Shard
+							},
+							["groups"] = {
+								{
+									["itemID"] = 18540,	-- Sealed Reliquary of Purity
+									["questID"] = 5526,	-- Shards of the Felvine
+									
+								},
 							},
 						},
 						i(18535),	-- Milli's Shield
 						i(18536),	-- Milli's Lexicon
 					},
-				},
-				{
-					["questID"] = 8741,	-- The Champion Returns
-					["u"] = 3,	-- Added in later phase
+				}),
+				q(8741, {	-- The Champion Returns
+					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 8736,	-- The Nightmare Manifests
 					["description"] = "This quest will become available with Phase 5.",
-					["qg"] = 11832,	-- Keeper Remulos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["lvl"] = 60,
-					["groups"] = {
-						{
-							["itemID"] = 21139,	-- Green Scepter Shard
-							["questID"] = 8741,	-- The Champion Returns
-						},
+					["cost"] = {
+						{ "i", 21139, 1 },	-- Green Scepter Shard
 					},
-				},
-				q(8736, {	-- The Nightmare Manifests
+					["lvl"] = 60,
 					["u"] = 3,	-- Added in later phase
+				}),
+				q(1015, {	-- The New Frontier
+					["qg"] = 2198,	-- Crier Goodman
+					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
+					["maps"] = { DARNASSUS, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1019, {	-- The New Frontier
+					["qg"] = 10877,	-- Courier Hammerfall
+					["coord"] = { 31.6, 67, IRONFORGE },
+					["maps"] = { DARNASSUS, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1047, {	-- The New Frontier
+					["qg"] = 10878,	-- Herald Moonstalker
+					["coord"] = { 36.4, 39.8, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(6761, {	-- The New Frontier
+					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
+					["coord"] = { 34.8, 8.8, DARNASSUS },
+					["maps"] = { DARNASSUS },
+					["sourceQuests"] = {
+						1015,	-- The New Frontier [Stormwind City]
+						1019,   -- The New Frontier [Ironforge]
+						1047,   -- The New Frontier [Darnassus]
+					},
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1000, {	-- The New Frontier
+					["qg"] = 10881,	-- Bluff Runner Windstrider
+					["coords"] = { 41.4, 54.2, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1004, {	-- The New Frontier
+					["qg"] = 10879,	-- Harbinger Balthazad
+					["coords"] = { 68.8, 48.4, UNDERCITY },
+					["maps"] = { THUNDER_BLUFF, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(1018, {	-- The New Frontier
+					["qg"] = 10880,	-- Warcaller Gorlach
+					["coords"] = { 46.6, 64.6, ORGRIMMAR },
+					["maps"] = { THUNDER_BLUFF, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 54,
+				}),
+				q(8736, {	-- The Nightmare Manifests
+					["qg"] = 11832,	-- Keeper Remulos
 					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
 					["description"] = "This quest will become available with Phase 5.\n\nNOTE: You do NOT want to kill Eranikus or allow Remulos to die.",
-					["qg"] = 11832,	-- Keeper Remulos
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["lvl"] = 60,
+					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(21531),	-- Drake Tooth Necklace
 						i(21532),	-- Drudge Boots
 					},
 				}),
-				{
-					["questID"] = 8735,	-- The Nightmare's Corruption
-					["u"] = 3,	-- Added in later phase
-					["sourceQuest"] = 8734,	-- Tyrande and Remulos
+				q(8735, {	-- The Nightmare's Corruption
 					["qg"] = 11832,	-- Keeper Remulos
+					["sourceQuest"] = 8734,	-- Tyrande and Remulos
 					["description"] = "This quest will become available with Phase 5.",
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
+					["cost"] = {
+						{ "i", 21147, 1 },	-- Fragment of the Nightmare's Corruption
+						{ "i", 21149, 1 },	-- Fragment of the Nightmare's Corruption
+						{ "i", 21148, 1 },	-- Fragment of the Nightmare's Corruption
+						{ "i", 21146, 1 },	-- Fragment of the Nightmare's Corruption
+					},
 					["lvl"] = 60,
+					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						{
 							["itemID"] = 21147,	-- Fragment of the Nightmare's Corruption
@@ -153,7 +449,7 @@ _.Zones =
 							},
 						},
 					},
-				},
+				}),
 				q(6122, {	-- The Principal Source
 					["qg"] = 11802,	-- Dendrite Starblaze
 					["sourceQuest"] = 6121,	-- Lessons Anew
@@ -178,15 +474,148 @@ _.Zones =
 						},
 					},
 				}),
-				q(9063, {	-- Torwa Pathfinder
-					["qg"] = 12042,	-- Loganaar <Druid Trainer>
-					["coord"] = { 52.4, 40.6, MOONGLADE },
+				q(6127, {	-- The Principal Source
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 6121,	-- Lessons Anew
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["maps"] = { THE_BARRENS },
+					["races"] = HORDE_ONLY,
 					["classes"] = { DRUID },
-					["lvl"] = 50,
+					["cost"] = {
+						{ "i", 15843, 1 },	-- Filled Dreadmist Falls Sampler
+					},
+					["lvl"] = 14,
+					["groups"] = {
+						{
+							["itemID"] = 15842,	-- Empty Dreadmist Falls Sampler
+							["coord"] = { 47, 18, THE_BARRENS },
+							["groups"] = {
+								{
+									["itemID"] = 15843,	-- Filled Dreadmist Falls Sampler
+									["questID"] = 6127,	-- The Principal Source
+								},
+							},
+						},
+					},
+				}),
+				q(29, {	-- Trial of the Lake
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 26,	-- A Lesson to Learn
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15877, 1 },	-- Shrine Bauble
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 15877,	-- Shrine Bauble
+							["questID"] = 29,	-- Trial of the Lake
+							["coords"] = {
+								{ 54.1, 50.1, MOONGLADE },
+								{ 36.4, 40.2, MOONGLADE },
+							},
+						},
+					},
+				}),
+				q(28, {	-- Trial of the Lake
+					["qg"] = 11802,	-- Dendrite Starblaze
+					["sourceQuest"] = 27,	-- A Lesson to Learn
+					["coord"] = { 56.2, 30.4, MOONGLADE },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15877, 1 },	-- Shrine Bauble
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 15877,	-- Shrine Bauble
+							["questID"] = 28,	-- Trial of the Lake
+							["coords"] = {
+								{ 54.1, 50.1, MOONGLADE },
+								{ 36.4, 40.2, MOONGLADE },
+							},
+						},
+					},
+				}),
+				q(272, {	-- Trial of the Sea Lion
+					["qg"] = 11799,	-- Tajarri
+					["sourceQuest"] = 29,	-- Trial of the Lake
+					["coord"] = { 36.4, 40.2, MOONGLADE },
+					["maps"] = { DARKSHORE, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15885, 1 },	-- Pendant of the Sea Lion
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
+							["questID"] = 272,	-- Trial of the Sea Lion
+							["coord"] = { 17.9, 33.0, WESTFALL },
+						},
+						{
+							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
+							["coord"] = { 48.9, 11.3, DARKSHORE },
+							["cost"] = {
+								{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
+							},
+							["groups"] = {
+								{
+									["itemID"] = 15885,	-- Pendant of the Sea Lion
+									["questID"] = 272,	-- Trial of the Sea Lion
+								},
+							},
+						},
+					},
+				}),
+				q(30, {	-- Trial of the Sea Lion
+					["qg"] = 11799,	-- Tajarri
+					["sourceQuest"] = 28,	-- Trial of the Lake
+					["coord"] = { 36.4, 40.2, MOONGLADE },
+					["maps"] = { THE_BARRENS, SILVERPINE_FOREST },
+					["races"] = HORDE_ONLY,
+					["classes"] = { DRUID },
+					["cost"] = {
+						{ "i", 15885, 1 },	-- Pendant of the Sea Lion
+					},
+					["lvl"] = 16,
+					["groups"] = {
+						{
+							["itemID"] = 15882,	-- Half Pendant of Aquatic Endurance
+							["questID"] = 30,	-- Trial of the Sea Lion
+							["coord"] = { 29.6, 29.5, SILVERPINE_FOREST },
+						},
+						{
+							["itemID"] = 15883,	-- Half Pendant of Aquatic Agility
+							["coord"] = { 56.7, 8.3, THE_BARRENS },
+							["cost"] = {
+								{ "i", 15882, 1 },	-- Half Pendant of Aquatic Endurance
+							},
+							["groups"] = {
+								{
+									["itemID"] = 15885,	-- Pendant of the Sea Lion
+									["questID"] = 30,	-- Trial of the Sea Lion
+								},
+							},
+						},
+					},
+				}),
+				q(8734, {	-- Tyrande and Remulos
+					["qg"] = 15624,	-- Forest Wisp
+					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
+					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
+					["coord"] = { 37.5, 47.9, TELDRASSIL },
+					["maps"] = { TELDRASSIL },
+					["lvl"] = 60,
+					["u"] = 3,	-- Ahn'Qirij
 				}),
 				q(6845, {	-- Uncovering Past Secrets
-					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["qg"] = 11939,	-- Umber
+					["sourceQuest"] = 6844,	-- Umber, Archivist
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["lvl"] = 54,
 					["groups"] = {
@@ -195,39 +624,34 @@ _.Zones =
 					},
 				}),
 				q(1185, {	-- Under the Chitin Was...
-					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11939,	-- Umber
+					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["lvl"] = 54,
 				}),
 				q(8447, {	-- Waking Legends
-					["u"] = 3,	-- Added in later phase
-					["sourceQuest"] = 6845,	-- Uncovering Past Secrets
 					["qg"] = 11832,	-- Keeper Remulos
-					["description"] = "This quest will become available with Phase 2.",
+					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
 					["coord"] = { 36.18, 41.79, MOONGLADE },
 					["lvl"] = 60,
+					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(20600),	-- Malfurion's Signet Ring
 					},
 				}),
-				{
-					["questID"] = 1124,	-- Wasteland
+				q(1124, {	-- Wasteland
+					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuests"] = {
 						1123,	-- Rabine Saturna
 						6762,	-- Rabine Saturna
 					},
-					["qg"] = 11801,	-- Rabine Saturna
 					["coord"] = { 51.7, 45.1, MOONGLADE },
-					["lvl"] = 54,
-					["groups"] = {
-						{
-							["itemID"] = 17355,	-- Rabine's Letter
-							["questID"] = 1124,	-- Wasteland
-						},
+					["cost"] = {
+						{ "i", 17355, 1 },	-- Rabine's Letter
 					},
-				},
+					["lvl"] = 54,
+				}),
 			}),
 		}),
 	}),

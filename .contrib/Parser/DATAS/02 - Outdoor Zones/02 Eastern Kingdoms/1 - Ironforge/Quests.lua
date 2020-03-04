@@ -851,11 +851,6 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
-				q(1019, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10877,	-- Courier Hammerfall
-				}),
 				q(3681, {	-- The Tome of Divinity
 					["qg"] = 5149,	-- Brandur Ironhammer
 					["altQuests"] = {

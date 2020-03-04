@@ -346,11 +346,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 1498,	-- Bethor Iceshard
 				}),
-				q(1004, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qg"] = 10879,	-- Harbinger Balthazad
-				}),
 				q(736, {	-- The Star, the Hand and the Heart
 					["lvl"] = 30,
 					["races"] = HORDE_ONLY,

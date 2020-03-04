@@ -106,14 +106,6 @@ _.Zones =
 					},
 					["lvl"] = 6,
 				}),
-				q(6121, {	-- Lessons Anew
-					["qg"] = 4217,	-- Mathrengyl Bearwalker <Druid Trainer>
-					["coord"] = { 35.2, 8.0, DARNASSUS },
-					["maps"] = { DARKSHORE, MOONGLADE },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 14,
-				}),
 				q(4493, {	-- March of the Silithid
 					["lvl"] = 50,
 					["races"] = ALLIANCE_ONLY,
@@ -154,10 +146,6 @@ _.Zones =
 					["coord"] = { 70.6, 45.3, DARNASSUS },
 					["races"] = { NIGHTELF },
 					["lvl"] = 10,
-				}),
-				q(6762, {	-- Rabine Saturna
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2498, {	-- Return to Denalan
 					["lvl"] = 4,
@@ -271,16 +259,6 @@ _.Zones =
 						i(11889),	-- Bark Iron Pauldrons
 					},
 				}),
-				q(1047, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 10878,	-- Herald Moonstalker
-					["description"] = "Quest giver walks around Darnassus on the main path.",
-				}),
-				q(6761, {	-- The New Frontier
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(1686, {	-- The Shade of Elura
 					["qg"] = 4088,	-- Elanaria
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
@@ -307,13 +285,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7316,	-- Sister Aquinne
 					["isBreadcrumb"] = true,
-				}),
-				q(9063, {	-- Torwa Pathfinder
-					["qg"] = 4218,	-- Denatharion <Druid Trainer>
-					["coord"] = { 34.8, 8.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { DRUID },
-					["lvl"] = 50,
 				}),
 				q(730, {	-- Trouble In Darkshore?
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
