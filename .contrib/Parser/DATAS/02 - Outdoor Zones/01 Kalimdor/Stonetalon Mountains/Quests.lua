@@ -29,8 +29,17 @@ _.Zones =
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
 					["coord"] = { 59.09, 75.76, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16192, 1 },	-- Besseleth's Fang
+					},
 					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 16192,	-- Besseleth's Fang
+							["questID"] = 6284,	-- Arachnophobia
+							["cr"] = 11921,	-- Besseleth
+							["coord"] = { 52.8, 72.6, STONETALON_MOUNTAINS },
+						},
 						i(16891),	-- Claystone Shortsword
 						i(16894),	-- Clear Crystal Rod
 					},
@@ -52,8 +61,17 @@ _.Zones =
 					["sourceQuest"] = 6282,	-- Harpies Threaten
 					["coord"] = { 47.17, 61.08, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16190, 1 },	-- Bloodfury Ripper's Remains
+					},
 					["lvl"] = 18,
 					["g"] = {
+						{
+							["itemID"] = 16190,	-- Bloodfury Ripper's Remains
+							["questID"] = 6283,	-- Bloodfury Bloodline
+							["cr"] = 12579,	-- Bloodfury Ripper
+							["coord"] = { 31.8, 62.6, STONETALON_MOUNTAINS },
+						},
 						i(16990),	-- Spritekin Cloak
 						i(16987),	-- Screecher Belt
 					},
@@ -62,6 +80,9 @@ _.Zones =
 					["qg"] = 11861,	-- Mor'rogal
 					["coord"] = { 47.17, 64.10, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16581, 10 },	-- Resonite Crystal
+					},
 					["lvl"] = 14,
 				}),
 				q(5881, {	-- Calling in the Reserves
@@ -132,6 +153,9 @@ _.Zones =
 					["qg"] = 11862,	-- Tsunaman
 					["coord"] = { 47.28, 64.31, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16312, 10 },	-- Incendrites
+					},
 					["lvl"] = 19,
 				}),
 				q(1083, {	-- Enraged Spirits
@@ -139,29 +163,38 @@ _.Zones =
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5659, 8 },	-- Smoldering Embers
+					},
 					["lvl"] = 20,
 				}),
-				q(1094, {	-- Further Instructions
+				q(1094, {	-- Further Instructions (1/2)
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 				}),
-				q(1095, {	-- Further Instructions
+				q(1095, {	-- Further Instructions (2/2)
 					["qg"] = 3442,	-- Sputtervalve
-					["sourceQuest"] = 1094,	-- Further Instructions
+					["sourceQuest"] = 1094,	-- Further Instructions (1/2)
 					["coord"] = { 62.97, 37.19, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 				}),
 				q(1096, {	-- Gerenzo Wrenchwhistle
 					["qg"] = 4201,	-- Ziz Fizziks
-					["sourceQuest"] = 1095,	-- Further Instructions
+					["sourceQuest"] = 1095,	-- Further Instructions (2/2)
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5736, 1 },	-- Gerenzo's Mechanical Arm
+					},
 					["lvl"] = 16,
 					["g"] = {
+						{
+							["itemID"] = 5736,	-- Gerenzo's Mechanical Arm
+							["questID"] = 1096,	-- Gerenzo Wrenchwhistle
+							["cr"] = 1096,	-- Gerenzo Wrenchwhistle
+							["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
+						},
 						i(6667),	-- Engineer's Cloak
 						i(6668),	-- Draftsman Boots
 					},
@@ -196,6 +229,12 @@ _.Zones =
 					["qg"] = 3995,	-- Witch Doctor Jin'Zil
 					["coord"] = { 74.54, 97.84, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5585, 30 },	-- Courser Eye
+						{ "i", 5583, 1 },	-- Fey Dragon Scale
+						{ "i", 5582, 5 },	-- Stonetalon Sap
+						{ "i", 5584, 5 },	-- Twilight Whisker
+					},
 					["lvl"] = 20,
 					["g"] = {
 						i(6664),	-- Voodoo Mantle
@@ -302,12 +341,16 @@ _.Zones =
 				}),
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5675, 8 },	-- Crystalized Scales
+					},
 					["lvl"] = 17,
 					["g"] = {
 						i(6677),	-- Spellcrafter Wand
 					},
-					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1068, {	-- Shredding Machines
 					["qg"] = 4049,	-- Seereth Stonebreak
@@ -327,7 +370,9 @@ _.Zones =
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1483,	-- Ziz Fizziks
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
-					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5734, 1 },	-- Super Reaper 6000 Blueprints
+					},
 					["lvl"] = 16,
 				}),
 				q(1089, {	-- The Den
@@ -372,7 +417,16 @@ _.Zones =
 					["sourceQuest"] = 1091,	-- Kaela's Update
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5664, 1 },	-- Corroded Shrapnel
+					},
 					["lvl"] = 22,
+				}),
+				q(1483, {	-- Ziz Fizziks
+					["qg"] = 3442,	-- Sputtervalve
+					["coord"] = { 62.98, 37.21, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
+					["lvl"] = 16,
 				}),
 			}),
 		}),

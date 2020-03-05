@@ -87,9 +87,16 @@ _.Zones =
 					["qg"] = 5878,	-- Thun'grim Firegaze
 					["sourceQuest"] = 1825,	-- Speak with Thun'grim
 					["coord"] = { 57.23, 30.34, THE_BARRENS },
-					["maps"] = { HILLSBRAD_FOOTHILLS },
+					["maps"] = { HILLSBRAD_FOOTHILLS, RAZORFEN_KRAUL, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 7587, 1 },	-- Thun'grim's Instructions
+						{ "i", 3575, 10 },	-- Iron Bar
+						{ "i", 7127, 10 },	-- Powdered Azurite
+						{ "i", 7126, 15 },	-- Smoky Iron Ingot
+						{ "i", 6841, 1 },	-- Vial of Phlogiston
+					},
 					["lvl"] = 20,
 				}),
 				q(1522, {	-- Call of Fire (1/5) (Orgrimmar)
@@ -1342,12 +1349,6 @@ _.Zones =
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-				}),
-				q(1483, {	-- Ziz Fizziks
-					["qg"] = 3442,	-- Sputtervalve
-					["coord"] = { 62.98, 37.21, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 16,
 				}),
 			}),
 		}),
