@@ -29,6 +29,21 @@ _.Zones =
 						5262,	-- Groddoc Thunderer
 					},
 				}),
+				i(9247, {	-- Hatecrest Naga Scale
+					["questID"] = 2869,	-- Against the Hatecrest (2/2)
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						5334,	-- Hatecrest Myrmidon
+						5335,	-- Hatecrest Screamer
+						5333,	-- Hatecrest Serpent Guard
+						5337,	-- Hatecrest Siren
+						5336,	-- Hatecrest Sorceress
+						5331,	-- Hatecrest Warrior
+						5332,	-- Hatecrest Wave Rider
+						5343,	-- Lady Szallah
+						8136,	-- Lord Shalzaru
+					},
+				}),
 				i(6258, {	-- Ironfur Liver
 					["questID"] = 1452,	-- Rhapsody's Kalimdor Kocktail
 					["races"] = ALLIANCE_ONLY,
@@ -68,6 +83,17 @@ _.Zones =
 					["questID"] = 3128,	-- Natural Materials
 					["cr"] = 7584,	-- Wandering Forest Walker
 					["races"] = HORDE_ONLY,
+				}),
+				i(8973, {	-- Thick Yeti Hide
+					["allianceQuestID"] = 2821,	-- The Mark of Quality
+					["hordeQuestID"] = 2822,	-- The Mark of Quality
+					["crs"] = {
+						5346,	-- Bloodroar the Stalker
+						5295,	-- Enraged Feral Scar
+						5292,	-- Feral Scar Yeti
+						5293,	-- Hulking Feral Scar
+						7848,	-- Lurking Feral Scar
+					},
 				}),
 			}),
 		}),

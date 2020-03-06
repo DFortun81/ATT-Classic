@@ -58,7 +58,7 @@ _.Zones =
 				}),
 				q(2870, {	-- Against Lord Shalzaru
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["sourceQuest"] = 2869,	-- Against the Hatecrest (2)
+					["sourceQuest"] = 2869,	-- Against the Hatecrest (2/2)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { 
@@ -66,20 +66,20 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(3130, {	-- Against the Hatecrest (1)
+				q(3130, {	-- Against the Hatecrest (1/2)
 					["qg"] = 3936,	-- Shandris Feathermoon <General of the Sentinel Army>
 					["sourceQuest"] = 2867,	-- Return to Feathermoon Stronghold
 					["coord"] = { 30.3, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(2869, {	-- Against the Hatecrest (2)
+				q(2869, {	-- Against the Hatecrest (2/2)
 					["qg"] = 7877,	-- Latronicus Moonspear
-					["sourceQuest"] = 3130,	-- Against the Hatecrest (1)
+					["sourceQuest"] = 3130,	-- Against the Hatecrest (1/2)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = { 
-						{ "i", 9247, 10 } -- Hatecrest Naga Scale
+						{ "i", 9247, 10 },	-- Hatecrest Naga Scale
 					},
 					["lvl"] = 40,
 				}),
@@ -359,6 +359,9 @@ _.Zones =
 				q(2822, {	-- The Mark of Quality
 					["qg"] = 7854,	-- Jangdor Swiftstrider
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						 { "i", 8973, 10 },	-- Thick Yeti Hide
+					},
 					["lvl"] = 40,
 					["g"] = {
 						i(9633),	-- Jangdor's Handcrafted Boots
@@ -368,6 +371,9 @@ _.Zones =
 				q(2821, {	-- The Mark of Quality
 					["qg"] = 7852,	-- Pratt McGrubben
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						 { "i", 8973, 10 },	-- Thick Yeti Hide
+					},
 					["lvl"] = 40,
 					["g"] = {
 						i(9630),	-- Pratt's Handcrafted Boots
