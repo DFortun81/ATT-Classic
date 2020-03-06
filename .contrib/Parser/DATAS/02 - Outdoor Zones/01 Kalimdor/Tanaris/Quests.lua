@@ -115,10 +115,6 @@ _.Zones =
 						}),
 					},
 				}),
-				q(8606, {	-- Decoy!
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-				}),
 				q(2874, {	-- Deliver to MacKinley
 					["lvl"] = 40,
 					["sourceQuest"] = 2873,	-- Stoley's Shipment
@@ -137,11 +133,6 @@ _.Zones =
 						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
 						i(21023),	-- Dirge's Kickin' Chimaerok Chops
 					},
-				}),
-				q(8597, {	-- Draconic for Dummies
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
 				}),
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
@@ -194,21 +185,11 @@ _.Zones =
 					},
 					["lvl"] = 47,
 				}),
-				q(8599, {	-- Love Song for Narain
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-				}),
 				q(1691, {	-- More Wastewander Justice
 					["lvl"] = 40,
 					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle
 					["sourceQuest"] = 1690,	-- Wastewander Justice
 					["coord"] = { 52.5, 28.5, TANARIS },
-				}),
-				q(8584, {	-- Never Ask Me About My Business
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11811,	-- Narain Soothfancy
 				}),
 				q(2662, {	-- Noggenfogger Elixir
 					["lvl"] = 44,
@@ -232,12 +213,6 @@ _.Zones =
 					["qg"] = 15165,	-- Haughty Modiste
 					["coord"] = { 66.6, 22.3, TANARIS },
 				}),
-				q(8598, {	-- rAnS0m
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 180652 },	-- Freshly Dug Dirt
-				}),
 				q(648, {	-- Rescue OOX-17/TN!
 					["lvl"] = 43,
 					["qg"] = 7784,	-- Homing Robot OOX-17/TN
@@ -246,12 +221,6 @@ _.Zones =
 						i(9643),	-- Optomatic Deflector
 						i(9644),	-- Thermotastic Egg Timer
 					},
-				}),
-				q(8587, {	-- Return to Narain
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 8125,	-- Dirge Quikcleave
-					["coord"] = { 52.63, 28.12, TANARIS },
 				}),
 				q(32, {	-- Rise of the Silithid
 					["lvl"] = 39,
@@ -293,12 +262,6 @@ _.Zones =
 					["qg"] = 7583,	-- Sprinkle
 					["coord"] = { 51.1, 26.9, TANARIS },
 				}),
-				q(8577, {	-- Stewvul, Ex-B.F.F.
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11811,	-- Narain Soothfancy
-				}),
 				q(2872, {	-- Stoley's Debt
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
@@ -324,39 +287,6 @@ _.Zones =
 						i(9439),	-- Untested Hyena Sample
 					},
 				}),
-				q(8766, {	-- The Changing of Paths - Conqueror No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8765, {	-- The Changing of Paths - Invoker No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8764, {	-- The Changing of Paths - Protector No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8555, {	-- The Charge of the Dragonflights
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-				}),
 				q(5863, {	-- The Dunemaul Compound
 					["lvl"] = 44,
 					["qg"] = 11758,	-- Andi Lynn
@@ -380,156 +310,11 @@ _.Zones =
 						i(22320),	-- Mux's Quality Goods
 					},
 				}),
-				q(8728, {	-- The Good News and The Bad News
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
-				}),
-				q(8761, {	-- The Grand Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
 				q(8182, {	-- The Hand of Rastakhan
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
 					["qg"] = 10460,	-- Prospector Ironboot
-				}),
-				q(8585, {	-- The Isle of Dread!
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-				}),
-				q(8742, {	-- The Might of Kalimdor
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21175),	-- The Scepter of the Shifting Sands
-					},
-				}),
-				q(8620, {	-- The Only Prescription
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["g"] = {
-						i(21517),	-- Gnomish Turban of Psychic Might
-					},
-				}),
-				q(8753, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21202),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8754, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21203),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8755, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21204),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8752, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21201),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8759, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21208),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8760, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21209),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8758, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21207),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8757, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21206),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8749, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21198),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8748, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21197),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8750, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21199),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8747, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21196),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8751, {	-- The Protector of Kalimdor
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8756, {	-- The Qiraji Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
 				}),
 				q(10, {	-- The Scrimshank Redemption
 					["lvl"] = 39,
@@ -591,12 +376,6 @@ _.Zones =
 						i(9638),	-- Chelonian Cuffs
 						i(9642),	-- Band of the Great Tortoise
 					},
-				}),
-				q(8576, {	-- Translating the Ledger
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 11811,	-- Narain Soothfancy
 				}),
 				q(2875, {	-- WANTED: Andre Firebeard
 					["lvl"] = 40,

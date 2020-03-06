@@ -426,6 +426,7 @@ _.Zones =
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
 					["maps"] = { THE_BARRENS },
+					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),
 			}),

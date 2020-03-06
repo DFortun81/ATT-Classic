@@ -1478,6 +1478,7 @@ app.L = {
 		["Blackwing Lair"] = 287,
 		["Blackrock Mountain"] = 35,
 		["Blackrock Spire"] = 250,
+		[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 		["Dire Maul"] = 234,
 		["Deadmines"] = 291,
 		["The Deadmines"] = 291,

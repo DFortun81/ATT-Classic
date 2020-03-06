@@ -96,6 +96,7 @@ WETLANDS = 1437;	-- Confirmed!
 
 -- Custom Maps
 BLACKROCK_MOUNTAIN = 35;
+CAVERNS_OF_TIME = 75;
 
 -- CLASSES
 WARRIOR = 1;
