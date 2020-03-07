@@ -1,6 +1,6 @@
 _.Craftables =
 {
-	prof(171, {	-- Alchemy
+	prof(ALCHEMY, {
 		i(9149),	-- Philosopher's Stone
 	}),
 	prof(BLACKSMITHING, {
@@ -293,7 +293,7 @@ _.Craftables =
 			i(12409),	-- Thorium Boots
 		}),
 	}),
-	prof(333, {	-- Enchanting
+	prof(ENCHANTING, {
 		filter(27, {	-- Wands
 			i(11288),	-- Greater Magic Wand
 			i(11290),	-- Greater Mystic Wand
@@ -304,7 +304,7 @@ _.Craftables =
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
 	}),
-	prof(202, {	-- Engineering
+	prof(ENGINEERING, {
 		filter(200, {	-- Recipes
 			i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
 				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
@@ -314,12 +314,18 @@ _.Craftables =
 			}),
 		}),
 		filter(50, {	-- Miscellaneous
+			i(4407),	-- Accurate Scope
+			i(18283),	-- Biznicks 247x128 Accurascope
+			i(4405),	-- Crude Scope
+			i(10546),	-- Deadly Scope
 			i(15996),	-- Lifelike Mechanical Toad*
 			i(11826),	-- Lil' Smoky*
 			i(4401),	-- Mechanical Squirrel Box*
 			i(11825),	-- Pet Bombling*
 			i(21277),	-- Tranquil Mechanical Yeti*
+			i(10548),	-- Sniper Scope
 			i(17716),	-- Snowmaster 9000*
+			i(4406),	-- Standard Scope
 			i(18660),	-- World Enlarger*
 		}),
 		filter(53, {	-- Trinkets
@@ -389,7 +395,7 @@ _.Craftables =
 			i(7189),	-- Goblin Rocket Boots*
 		}),
 	}),
-	prof(165, {	-- Leatherworking
+	prof(LEATHERWORKING, {
 		n(-322, {	-- Cloak
 			i(18509),	-- Chromatic Cloak
 			i(6466),	-- Deviate Scale Cloak
@@ -638,7 +644,7 @@ _.Craftables =
 			}),
 		}),
 	}),
-	prof(197, {	-- Tailoring
+	prof(TAILORING, {
 		filter(113, {	-- Bags
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
