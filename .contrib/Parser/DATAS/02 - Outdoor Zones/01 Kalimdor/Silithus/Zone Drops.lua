@@ -114,6 +114,7 @@ _.Zones =
 					un(3, i(20696)),	-- Crystal Spiked Maul
 					un(3, i(20697)),	-- Crystalline Threaded Cape
 					un(3, i(20698)),	-- Elemental Attuned Blade
+					un(3, i(20694)),	-- Glowing Black Orb
 					un(3, i(20693)),	-- Weighted Cloak
 				})),
 				

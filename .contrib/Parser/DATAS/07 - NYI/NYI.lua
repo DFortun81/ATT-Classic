@@ -267,6 +267,9 @@ _.NeverImplemented =
 	i(10038),	-- Stormcloth Shoulders
 	i(10020),	-- Stormcloth Vest
 	
+	-- 1H Axes
+	i(5255),	-- Quilboar Tomahawk
+	
 	-- Bind Type 3
 	
 	-- Bind Type 4

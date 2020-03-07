@@ -276,6 +276,16 @@ _.Instances = {
 				i(9391),	-- The Shoveler
 				i(9428),	-- Unearthed Bands
 			}),
+			n(RARES, {
+				n(7057, {	-- Digmaster Shovelphlange
+					["description"] = "This guy spawns outside of the instance in the cave leading to the instance.",
+					["groups"] = {
+						i(9378),	-- Shovelphlange's Mining Axe
+						i(9375),	-- Expert Goldminer's Helmet
+						i(9382),	-- Tromping Miner's Boots
+					},
+				}),
+			}),
 			o(125477, {	-- Conspicuous Urn
 				["description"] = "In the room with the Lost Dwarves next to the sealed door opposite to the dwarves on top fo the stairs. You will need to kill some stealthed Troggs to get there.",
 				["groups"] = {

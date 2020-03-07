@@ -249,6 +249,13 @@ _.Zones =
 						{ 48.0, 80.8, THE_BARRENS },
 					},
 				}),
+				n(3652, {	-- Trigore the Lasher
+					["description"] = "Inside the pool of water outside the Wailing Caverns dungeon portal.",
+					["g"] = {
+						i(5425),	-- Runescale Girdle
+						i(5426),	-- Serpent's Kiss
+					},
+				}), 
 			}),
 		}),
 	}),
