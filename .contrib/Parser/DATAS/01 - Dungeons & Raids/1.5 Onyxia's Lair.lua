@@ -264,6 +264,7 @@ _.Instances = {
 				i(17078),	-- Sapphiron Drape
 				i(18813),	-- Ring of Binding
 				i(17064),	-- Shard of the Scale
+				i(15410),	-- Scale of Onyxia
 			}),
 		},
 	}),

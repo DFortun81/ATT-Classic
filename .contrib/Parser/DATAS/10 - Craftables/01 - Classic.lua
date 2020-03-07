@@ -292,6 +292,16 @@ _.Craftables =
 			i(3482),	-- Silvered Bronze Boots
 			i(12409),	-- Thorium Boots
 		}),
+		filter(50, {	-- Miscellaneous
+			i(15872),	-- Arcanite Skeleton Key
+			i(18262),	-- Elemental Sharpening Stone
+			i(15870),	-- Golden Skeleton Key
+			i(7967),	-- Mithril Shield Spike
+			i(7969),	-- Mithril Spurs
+			i(15869),	-- Silver Skeleton Key
+			i(12645),	-- Thorium Shield Spike
+			i(15871),	-- Truesilver Skeleton Key
+		}),
 	}),
 	prof(ENCHANTING, {
 		filter(27, {	-- Wands
@@ -300,51 +310,11 @@ _.Craftables =
 			i(11287),	-- Lesser Magic Wand
 			i(11289),	-- Lesser Mystic Wand
 		}),
-		filter(53, {	-- Trinket
+		filter(53, {	-- Trinkets
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
 	}),
 	prof(ENGINEERING, {
-		filter(200, {	-- Recipes
-			i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
-				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
-			i(10713, {	-- Plans: Inlaid Mithril Cylinder
-				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
-		}),
-		filter(50, {	-- Miscellaneous
-			i(4407),	-- Accurate Scope
-			i(18283),	-- Biznicks 247x128 Accurascope
-			i(4405),	-- Crude Scope
-			i(10546),	-- Deadly Scope
-			i(15996),	-- Lifelike Mechanical Toad*
-			i(11826),	-- Lil' Smoky*
-			i(4401),	-- Mechanical Squirrel Box*
-			i(11825),	-- Pet Bombling*
-			i(21277),	-- Tranquil Mechanical Yeti*
-			i(10548),	-- Sniper Scope
-			i(17716),	-- Snowmaster 9000*
-			i(4406),	-- Standard Scope
-			i(18660),	-- World Enlarger*
-		}),
-		filter(53, {	-- Trinkets
-			i(18984),	-- Dimensional Ripper - Everlook*
-			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
-			i(16022),	-- Arcanite Dragonling*
-			i(4397),	-- Gnomish Cloaking Device*
-			i(10720),	-- Gnomish Net-o-Matic Projector*
-			i(10716),	-- Gnomish Shrink Ray*
-			i(7506),	-- Gnomish Universal Remote*
-			i(10577),	-- Goblin Mortar*
-			i(18634),	-- Gyrofreeze Ice Reflector*
-			i(18638),	-- Hyper-Radiant Flame Reflector
-			i(18637),	-- Major Recombobulator*
-			i(4396),	-- Mechanical Dragonling*
-			i(4381),	-- Minor Recombobulator*
-			i(10576),	-- Mithril Mechanical Dragonling*
-			i(18639),	-- Ultra-Flash Shadow Reflector*
-		}),
 		n(-319, {	-- Weapons
 			-- Guns
 			i(18282),	-- Core Marksman Rifle*
@@ -394,8 +364,54 @@ _.Craftables =
 			i(10724),	-- Gnomish Rocket Boots*
 			i(7189),	-- Goblin Rocket Boots*
 		}),
+		filter(200, {	-- Recipes
+			i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+			}),
+			i(10713, {	-- Plans: Inlaid Mithril Cylinder
+				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
+			}),
+		}),
+		filter(50, {	-- Miscellaneous
+			i(4407),	-- Accurate Scope
+			i(18283),	-- Biznicks 247x128 Accurascope
+			i(4405),	-- Crude Scope
+			i(10546),	-- Deadly Scope
+			i(15996),	-- Lifelike Mechanical Toad*
+			i(11826),	-- Lil' Smoky*
+			i(4401),	-- Mechanical Squirrel Box*
+			i(11825),	-- Pet Bombling*
+			i(21277),	-- Tranquil Mechanical Yeti*
+			i(10548),	-- Sniper Scope
+			i(17716),	-- Snowmaster 9000*
+			i(4406),	-- Standard Scope
+			i(18660),	-- World Enlarger*
+		}),
+		filter(53, {	-- Trinkets
+			i(18984),	-- Dimensional Ripper - Everlook*
+			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
+			i(16022),	-- Arcanite Dragonling*
+			i(4397),	-- Gnomish Cloaking Device*
+			i(10720),	-- Gnomish Net-o-Matic Projector*
+			i(10716),	-- Gnomish Shrink Ray*
+			i(7506),	-- Gnomish Universal Remote*
+			i(10577),	-- Goblin Mortar*
+			i(18634),	-- Gyrofreeze Ice Reflector*
+			i(18638),	-- Hyper-Radiant Flame Reflector
+			i(18637),	-- Major Recombobulator*
+			i(4396),	-- Mechanical Dragonling*
+			i(4381),	-- Minor Recombobulator*
+			i(10576),	-- Mithril Mechanical Dragonling*
+			i(18639),	-- Ultra-Flash Shadow Reflector*
+		}),
 	}),
 	prof(LEATHERWORKING, {
+		filter(113, {	-- Bags
+			i(7372),	-- Heavy Leather Ammo Pouch
+			i(7371),	-- Heavy Quiver
+			i(8217),	-- Quickdraw Quiver
+			i(8218),	-- Thick Leather Ammo Pouch
+		}),
 		n(-322, {	-- Cloak
 			i(18509),	-- Chromatic Cloak
 			i(6466),	-- Deviate Scale Cloak
@@ -643,15 +659,23 @@ _.Craftables =
 				i(8209),	-- Tough Scorpid Boots
 			}),
 		}),
+		filter(50, {	-- Miscellaneous
+			i(18251),	-- Core Armor Kit
+		}),
+	}),
+	prof(MINING, {
+		
 	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags
+			i(22249),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			i(22251),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
 			i(22248),	-- Enchanted Runecloth Bag
+			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
 			i(4238),	-- Linen Bag
@@ -661,6 +685,7 @@ _.Craftables =
 			i(10051),	-- Red Mageweave Bag
 			i(5763),	-- Red Woolen Bag
 			i(14046),	-- Runecloth Bag
+			un(3, i(22252)),	-- Satchel of Cenarius [Not available yet.]
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
