@@ -192,4 +192,7 @@ profession(FISHING, {
 			["lvl"] = 35,
 		}),
 	}),
+	filter(52, {	-- Finger
+		i(8350),	-- The 1 Ring
+	}),
 });

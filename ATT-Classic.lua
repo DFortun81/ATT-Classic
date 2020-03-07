@@ -6039,7 +6039,14 @@ function app:GetDataCache()
 		
 		-- Holidays
 		if app.Categories.Holidays then
-			db = app.CreateNPC(-3, app.Categories.Holidays);
+			db = app.CreateNPC(-5, app.Categories.Holidays);
+			db.expanded = false;
+			table.insert(g, db);
+		end
+		
+		-- World Events
+		if app.Categories.WorldEvents then
+			db = app.CreateNPC(-3, app.Categories.WorldEvents);
 			db.expanded = false;
 			table.insert(g, db);
 		end
@@ -6833,7 +6840,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					group = clone;
 					
 					-- If this is relative to a holiday, let's do something special
-					if GetRelativeField(group, "npcID", -3) then
+					if GetRelativeField(group, "npcID", -5) then
 						if group.achievementID then
 							if group.criteriaID then
 								if group.parent.achievementID then
@@ -6913,7 +6920,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						else
 							-- Attempt to scan for the main holiday header.
 							local done = false;
-							for j,o in ipairs(SearchForField("npcID", -3)) do
+							for j,o in ipairs(SearchForField("npcID", -5)) do
 								if o.g and #o.g > 5 and o.g[1].holidayID then
 									for k,group in ipairs(o.g) do
 										if group.holidayID and group.u == u then
@@ -6932,7 +6939,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 					end
 					
-					tinsert(groups, 1, app.CreateNPC(-3, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
+					tinsert(groups, 1, app.CreateNPC(-5, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
 				
 				-- Check for timewalking difficulty objects

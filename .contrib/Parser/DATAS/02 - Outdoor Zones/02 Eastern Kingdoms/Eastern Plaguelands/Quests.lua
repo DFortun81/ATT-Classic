@@ -807,8 +807,14 @@ _.Zones =
 					},
 				}),
 				q(5248, {	-- Tormented By the Past
-					["lvl"] = 53,
+					["qg"] = 10304,	-- Aurora Skycaller
+					["sourceQuest"] = 5247,	-- Fragments of the Past
+					["coord"] = { 53.4, 22, EASTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13347, 1 },	-- Crystal of Zin-Malor (Provided)
+					},
+					["lvl"] = 53,
 				}),
 				q(6042, {	-- Un-Life's Little Annoyances
 					["lvl"] = 54,

@@ -6,24 +6,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(UNGORO_CRATER, {
 			n(ZONEDROPS, {
-				i(20768, {	-- Oozing Bag
-					["crs"] = {
-						9477,	-- Cloned Ooze
-						6559,	-- Glutinous Ooze
-						6557,	-- Primal Ooze
-					},
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
-					},
-				}),
-				i(15772, {	-- Pattern: Devilsaur Leggings
-					["crs"] = {
-						9477,	-- Cloned Ooze
-						6559,	-- Glutinous Ooze
-						6556,	-- Muculent Ooze
-						6557,	-- Primal Ooze
-					},
-				}),
 				i(11107, {	-- A Small Pack
 					["coord"] = { 63.1, 68.5, UNGORO_CRATER },
 					["groups"] = {
@@ -60,8 +42,28 @@ _.Zones =
 						6504,	-- Thunderstomp Stegodon
 					},
 				}),
-				{
-					["itemID"] = 14644,	-- Skeleton Key Mold
+				i(12809, {	-- Guardian Stone
+					["cr"] = 6560,	-- Stone Guardian
+				}),
+				i(20768, {	-- Oozing Bag
+					["crs"] = {
+						9477,	-- Cloned Ooze
+						6559,	-- Glutinous Ooze
+						6557,	-- Primal Ooze
+					},
+					["groups"] = {
+						i(20769),	-- Disgusting Oozeling
+					},
+				}),
+				i(15772, {	-- Pattern: Devilsaur Leggings
+					["crs"] = {
+						9477,	-- Cloned Ooze
+						6559,	-- Glutinous Ooze
+						6556,	-- Muculent Ooze
+						6557,	-- Primal Ooze
+					},
+				}),
+				i(14644, {	-- Skeleton Key Mold
 					["coord"] = { 49.6, 47.6, UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 12359, 2 },	-- Thorium Bar
@@ -73,7 +75,7 @@ _.Zones =
 							["hordeQuestID"] = 5802,	-- Fire Plume Forged (H)
 						},
 					},
-				},
+				}),
 				i(11830, {	-- Webbed Diemetradon Scale
 					["questID"] = 4503,	-- Shizzle's Flyer
 					["crs"] = {

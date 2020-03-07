@@ -200,10 +200,14 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(5252, {	-- Remorseful Highborne
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10684,	-- Remorseful Highborne
 					["sourceQuest"] = 5248,	-- Tormented By the Past
+					["coord"] = { 56.2, 44.4, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13347, 1 },	-- Crystal of Zin-Malor (Provided)
+					},
+					["lvl"] = 53,
 				}),
 				q(4810, {	-- Return to Tinkee
 					["qg"] = 10468,	-- Felnok Steelspring
@@ -252,10 +256,13 @@ _.Zones =
 					},
 				}),
 				q(5253, {	-- The Crystal of Zin-Malor
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11079,	-- Wynd Nightchaser
 					["sourceQuest"] = 5252,	-- Remorseful Highborne
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13347, 1 },	-- Crystal of Zin-Malor (Provided)
+					},
+					["lvl"] = 53,
 					["g"] = {
 						i(15791),	-- Turquoise Sash
 						i(15792),	-- Plow Wood Spaulders
