@@ -405,9 +405,9 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(927, {	-- The Moss-twined Heart
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "i", 5179 },	-- Moss-twined Heart
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 5,
 				}),
 				q(483, {	-- The Relics of Wakening
 					["lvl"] = 4,

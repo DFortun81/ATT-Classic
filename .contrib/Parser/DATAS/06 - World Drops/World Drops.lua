@@ -45,8 +45,6 @@ _.WorldDrops =
 		n(-322, {	-- Back
 			i(4701),  -- Inscribed Cloak
 			i(4726),  -- Chief Brigadier Cloak
-			i(5111),  -- Rathorian's Cape
-			i(5751),  -- Webwing Cloak
 			i(6381),  -- Bright Cloak
 			i(6417),  -- Aurora Cloak
 			i(6432),  -- Imperial Cloak

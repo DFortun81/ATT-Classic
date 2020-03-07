@@ -17,11 +17,29 @@ _.Zones =
 						3267,	-- Razormane Water Seeker
 					},
 				}),
+				i(5055, {	-- Intact Raptor Horn
+					["questID"] = 865,	-- Raptor Horns
+					["crs"] = {
+						3257,	-- Ishamuhale
+						3256,	-- Sunscale Scytheclaw
+						5842,	-- Takk the Leaper
+					},
+				}),
 				i(6663, {	-- Recipe: Elixir of Giant Growth
 					["description"] = "Can drop from any mob in the Barrens.",
 				}),
 				i(6661, {	-- Recipe: Savory Deviate Delight
 					["description"] = "Can drop from any mob in the Barrens.",
+				}),
+				i(5086, {	-- Zhevra Hooves
+					["questID"] = 845,	-- The Zhevra
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						5831,	-- Swiftmane
+						3426,	-- Zhevra Charger
+						3466,	-- Zhevra Courser
+						3242,	-- Zhevra Runner
+					},
 				}),
 			}),
 		}),

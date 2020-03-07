@@ -43,11 +43,11 @@ _.Zones =
 				}),
 				i(9276, {	-- Pirate's Footlocker
 					["crs"] = {
-						15685,	-- Southsea Kidnapper
-						7856,	-- Southsea Freebooter
 						7857,	-- Southsea Dock Worker
-						7858,	-- Southsea Swashbuckler
+						7856,	-- Southsea Freebooter
+						15685,	-- Southsea Kidnapper
 						7855,	-- Southsea Pirate
+						7858,	-- Southsea Swashbuckler
 					},
 					["groups"] = {
 						i(9359),	-- Wirt's Third Leg
@@ -82,6 +82,71 @@ _.Zones =
 						5429,	-- Fire Roc
 						5428,	-- Roc
 						5430,	-- Searing Roc
+					},
+				}),
+				i(20519, {	-- Southsea Pirate Hat
+					["questID"] = 8365,	-- Pirate Hats Ahoy!
+					["crs"] = {
+						7883,	-- Andre Firebeard
+						8203,	-- Kregg Keelhaul
+						7857,	-- Southsea Dock Worker
+						7856,	-- Southsea Freebooter
+						15685,	-- Southsea Kidnapper
+						7855,	-- Southsea Pirate
+						7858,	-- Southsea Swashbuckler
+					},
+				}),
+				i(9437, {	-- Untested Basilisk Sample
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8523, 1 },	-- Field Testing Kit
+					},
+					["crs"] = {
+						5419,	-- Glasshide Basilisk
+						5420,	-- Glasshide Gazer
+						5421,	-- Glasshide Petrifier
+					},
+					["groups"] = {
+						{
+							["itemID"] = 9440,	-- Acceptable Basilisk Sample
+							["questID"] = 654,	-- Tanaris Field Sampling
+						},
+					},
+				}),
+				i(9439, {	-- Untested Hyena Sample
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8523, 1 },	-- Field Testing Kit
+					},
+					["crs"] = {
+						5426,	-- Blisterpaw Hyena
+						8208,	-- Murderous Blisterpaw
+						5427,	-- Rabid Blisterpaw
+						5425,	-- Starving Blisterpaw
+					},
+					["groups"] = {
+						{
+							["itemID"] = 9441,	-- Acceptable Hyena Sample
+							["questID"] = 654,	-- Tanaris Field Sampling
+						},
+					},
+				}),
+				i(9442, {	-- Untested Scorpid Sample
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8523, 1 },	-- Field Testing Kit
+					},
+					["crs"] = {
+						7803,	-- Scorpid Duneburrower
+						5424,	-- Scorpid Dunestalker
+						5422,	-- Scorpid Hunter
+						5423,	-- Scorpid Tail Lasher
+					},
+					["groups"] = {
+						{
+							["itemID"] = 9438,	-- Acceptable Scorpid Sample
+							["questID"] = 654,	-- Tanaris Field Sampling
+						},
 					},
 				}),
 			}),

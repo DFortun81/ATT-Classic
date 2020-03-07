@@ -209,9 +209,12 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(8365, {	-- Pirate Hats Ahoy!
-					["lvl"] = 40,
 					["qg"] = 15165,	-- Haughty Modiste
 					["coord"] = { 66.6, 22.3, TANARIS },
+					["cost"] = {
+						{ "i", 20519, 20 },	-- Southsea Pirate Hat
+					},
+					["lvl"] = 40,
 				}),
 				q(648, {	-- Rescue OOX-17/TN!
 					["lvl"] = 43,
@@ -280,8 +283,19 @@ _.Zones =
 					["coord"] = { 51.6, 26.8, TANARIS },
 				}),
 				q(654, {	-- Tanaris Field Sampling
-					["lvl"] = 38,
+					["provider"] = { "i", 8524 },	-- Model 4711-FTZ Power Source
+					["sourceQuests"] = {
+						379,	-- Slake That Thirst
+						841,	-- Another Power Source?
+					},
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8523, 1 },	-- Field Testing Kit
+						{ "i", 9440, 8 },	-- Acceptable Basilisk Sample
+						{ "i", 9441, 8 },	-- Acceptable Hyena Sample
+						{ "i", 9438, 8 },	-- Acceptable Scorpid Sample
+					},
+					["lvl"] = 38,
 					["g"] = {
 						i(9437),	-- Untested Basilisk Sample
 						i(9439),	-- Untested Hyena Sample

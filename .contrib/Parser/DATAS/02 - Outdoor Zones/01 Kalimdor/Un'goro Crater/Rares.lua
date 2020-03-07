@@ -24,6 +24,39 @@ _.Zones =
 						i(19268),	-- Ace of Elementals
 					},
 				}),
+				n(6582, {	-- Clutchmother Zavas
+					["coords"] = {
+						{ 44.6, 81.6, UNGORO_CRATER },
+						{ 46.8, 86.0, UNGORO_CRATER },
+						{ 49.2, 85.6, UNGORO_CRATER },
+						{ 49.6, 83.6, UNGORO_CRATER },
+					},
+				}),
+				n(6583, {	-- Gruff
+					["coords"] = {
+						{ 36.6, 66.6, UNGORO_CRATER },
+						{ 37.8, 75.0, UNGORO_CRATER },
+						{ 31.8, 72.2, UNGORO_CRATER },
+						{ 31.6, 79.6, UNGORO_CRATER },
+					},
+				}),
+				n(6584, {	-- King Mosh
+					["coords"] = {
+						{ 27.8, 45.0, UNGORO_CRATER },
+						{ 30.8, 47.6, UNGORO_CRATER },
+						{ 28.8, 34.4, UNGORO_CRATER },
+						{ 29.8, 31.6, UNGORO_CRATER },
+						{ 35.3, 36.0, UNGORO_CRATER },
+						{ 35.1, 30.3, UNGORO_CRATER },
+						{ 37.9, 43.5, UNGORO_CRATER },
+					},
+				}),
+				n(6581, {	-- Ravasaur Matriarch
+					["coord"] = { 62.4, 66.0, UNGORO_CRATER },
+				}),
+				n(6585, {	-- Uhk'loc
+					["coord"] = { 68.5, 12.7, UNGORO_CRATER },
+				}),
 			}),
 		}),
 	}),

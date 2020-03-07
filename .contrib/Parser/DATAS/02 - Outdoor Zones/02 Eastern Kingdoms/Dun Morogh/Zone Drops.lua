@@ -6,6 +6,9 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(DUN_MOROGH, {
 			n(ZONEDROPS, {
+				i(2067, {	-- Frostbit Staff
+					["cr"] = 1117,	-- Rockjaw Bonesnapper
+				}),
 				i(2259, {	-- Frostmane Club
 					["cr"] = 1121,	-- Frostmane Snowstrider
 				}),
