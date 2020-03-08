@@ -1366,7 +1366,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
 				end);
 				for i,j in ipairs(group) do
-					if j.g and not (j.achievementID and j.parent.difficultyID) and j.npcID ~= 0 then
+					if j.g and j.npcID ~= 0 then
 						for k,l in ipairs(j.g) do
 							tinsert(subgroup, l);
 						end
@@ -1376,52 +1376,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				group = subgroup;
 			end
-		elseif paramA == "achievementID" then
-			-- Don't do anything for things linked to maps.
-			local regroup = {};
-			local criteriaID = ...;
-			if app.Settings:Get("AccountMode") then
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
-						end
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if j.criteriaID == criteriaID and app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
-						if j.mapID or j.parent == nil or j.parent.parent == nil then
-							tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-						else
-							tinsert(regroup, j);
-						end
-					end
-				end
-			end
-			
-			group = regroup;
 		elseif paramA == "titleID" then
-			-- Don't do anything
-			local regroup = {};
-			if app.Settings:Get("AccountMode") then
-				for i,j in ipairs(group) do
-					if app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			else
-				for i,j in ipairs(group) do
-					if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) then
-						tinsert(regroup, setmetatable({["g"] = {}}, { __index = j }));
-					end
-				end
-			end
-			
-			group = regroup;
-		elseif paramA == "followerID" then
 			-- Don't do anything
 			local regroup = {};
 			if app.Settings:Get("AccountMode") then
@@ -1446,7 +1401,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				local itemString = string.match(paramA, "item[%-?%d:]+");
 				if itemString then
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
-					local _, itemID2, enchantId, gemId1, gemId2, gemId3, gemId4, suffixId, uniqueId, linkLevel, specializationID, upgradeId, difficultyID, numBonusIds = strsplit(":", itemString);
+					local itemID2 = select(2, strsplit(":", itemString));
 					if itemID2 then
 						itemID = tonumber(itemID2); 
 						paramA = "itemID";
@@ -1465,9 +1420,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						paramB = id;
 					elseif kind == "creatureid" or kind == "npcid" then
 						paramA = "creatureID";
-						paramB = id;
-					elseif kind == "achievementid" then
-						paramA = "achievementID";
 						paramB = id;
 					end
 				end
@@ -1665,15 +1617,6 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		end
 		
 		if group.g and #group.g > 0 then
-			--[[
-			if app.Settings:GetTooltipSetting("Descriptions") and not (paramA == "achievementID" or paramA == "titleID") then
-				for i,j in ipairs(group.g) do
-					if j.description and ((j[paramA] and j[paramA] == paramB) or (paramA == "itemID" and group.key == j.key)) then
-						tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-					end
-				end
-			end
-			]]--
 			if app.Settings:GetTooltipSetting("SummarizeThings") then
 				local entries, left, right = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
@@ -2663,6 +2606,8 @@ app.BaseCharacterClass = {
 			local c = { t.classID };
 			rawset(t, "c", c);
 			return c;
+		elseif key == "nmc" then
+			return t.classID ~= app.ClassIndex;
 		elseif key == "classColors" then
 			return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
 		else
@@ -6841,23 +6786,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					
 					-- If this is relative to a holiday, let's do something special
 					if GetRelativeField(group, "npcID", -5) then
-						if group.achievementID then
-							if group.criteriaID then
-								if group.parent.achievementID then
-									group = app.CreateAchievement(group.parent.achievementID, 
-										{ g = { group }, total = group.total, progress = group.progress, 
-											u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-								else
-									group = app.CreateAchievement(group.achievementID,
-										{ g = { group }, total = group.total, progress = group.progress,
-											u = group.u, races = group.races, r = group.r, c = group.c, nmc = group.nmc, nmr = group.nmr });
-								end
-							end
-						elseif group.criteriaID and group.parent.achievementID then
-							group = app.CreateAchievement(group.parent.achievementID, { g = { group }, total = group.total, progress = group.progress, 
-								u = group.parent.u, races = group.parent.races, r = group.r, c = group.parent.c, nmc = group.parent.nmc, nmr = group.parent.nmr });
-						end
-						
 						local holidayID = GetRelativeValue(group, "holidayID");
 						local u = group.u or GetRelativeValue(group, "u");
 						if group.key == "npcID" then
@@ -6873,7 +6801,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
 						MergeObject(holiday, group);
-					elseif group.key == "mapID" or group.key == "classID" then
+					elseif group.key == "mapID" then
 						header.key = group.key;
 						header[group.key] = group[group.key];
 						MergeObject({header}, group);
@@ -6940,39 +6868,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					end
 					
 					tinsert(groups, 1, app.CreateNPC(-5, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
-				end
-				
-				-- Check for timewalking difficulty objects
-				for i, group in ipairs(groups) do
-					if group.difficultyID and group.difficultyID == 24 and group.g then
-						-- Look for a Common Boss Drop header.
-						local cbdIndex = -1;
-						for j, subgroup in ipairs(group.g) do
-							if subgroup.npcID and subgroup.npcID == -1 then
-								cbdIndex = j;
-								break;
-							end
-						end
-						
-						-- Push the Common Boss Drop header to the top.
-						if cbdIndex > -1 then
-							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-						end
-						
-						-- Look for a Zone Drop header.
-						cbdIndex = -1;
-						for j, subgroup in ipairs(group.g) do
-							if subgroup.npcID and subgroup.npcID == 0 then
-								cbdIndex = j;
-								break;
-							end
-						end
-						
-						-- Push the Zone Drop header to the top.
-						if cbdIndex > -1 then
-							table.insert(group.g, 1, table.remove(group.g, cbdIndex));
-						end
-					end
 				end
 				
 				-- Swap out the map data for the header.
