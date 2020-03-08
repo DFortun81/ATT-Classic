@@ -131,10 +131,10 @@ _.PvP =
 								["qg"] = 13153,	-- Commander Mulfort
 							}),
 							q(8272, {	-- Hero of the Frostwolf
-								["lvl"] = 51,
-								["races"] = HORDE_ONLY,
 								["qg"] = 13817,	-- Voggah Deathgrip
 								["sourceQuest"] = 7142,	-- The Battle for Alterac
+								["races"] = HORDE_ONLY,
+								["lvl"] = 51,
 								["g"] = {
 									i(19107),	-- Bloodseeker
 									i(20648),	-- Cold Forged Hamme

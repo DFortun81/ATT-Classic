@@ -123,6 +123,15 @@ _.NeverImplemented =
 	q(8268),	-- Ribbons of Sacrifice
 	q(8269),	-- Ribbons of Sacrifice
 	
+	-- Alterac Valley
+	q(7202),	-- Korrak the Bloodrager
+	i(18150),	-- Rune of Recall
+	i(18149),	-- Rune of Recall
+	q(7381),	-- The Return of Korrak
+	i(17384),	-- Zinfizzlex's Portable Shredder Unit
+	i(17410),	-- Zinfizzlex's Portable Shredder Unit
+	q(6861),	-- Zinfizzlex's Portable Shredder Unit
+	q(6862),	-- Zinfizzlex's Portable Shredder Unit
 	
 	-- Arathi Basin
 	i(19725),	-- Arathi Resource Crate

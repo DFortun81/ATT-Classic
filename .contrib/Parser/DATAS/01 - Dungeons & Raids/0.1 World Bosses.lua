@@ -70,6 +70,9 @@ _.Instances = {
 					i(20619),	-- Acid Inscribed Greaves
 					i(20621),	-- Boots of the Endless Moor
 					i(20624),	-- Ring of the Unliving
+					prof(SKINNING, {
+						i(20381),	-- Dreamscale
+					}),
 				},
 			}),
 			n(14888, {	-- Lethon
@@ -98,6 +101,9 @@ _.Instances = {
 					i(20627),	-- Dark Heart Pants
 					i(20619),	-- Acid Inscribed Greaves
 					i(20629),	-- Malignant Footguards
+					prof(SKINNING, {
+						i(20381),	-- Dreamscale
+					}),
 				},
 			}),
 			n(14890, {	-- Taerar
@@ -125,6 +131,9 @@ _.Instances = {
 					i(20634),	-- Boots of Fright
 					i(20631),	-- Mendicant's Slippers
 					i(20632),	-- Mindtear Band
+					prof(SKINNING, {
+						i(20381),	-- Dreamscale
+					}),
 				},
 			}),
 			n(14887, {	-- Ysondre
@@ -153,6 +162,9 @@ _.Instances = {
 					i(20639),	-- Strangley Glyphed Legplates
 					i(20619),	-- Acid Inscribed Greaves
 					i(20636),	-- Hibernation Crystal
+					prof(SKINNING, {
+						i(20381),	-- Dreamscale
+					}),
 				},
 			}),
 		},

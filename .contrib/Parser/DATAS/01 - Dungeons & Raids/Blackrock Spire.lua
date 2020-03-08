@@ -1189,9 +1189,6 @@ _.Instances = {
 					}),
 					n(10430, { 	-- The Beast
 						i(24101),	-- Book of Ferocious Bite V
-						i(12731, {	-- Pristine Hide of the Beast
-							["description"] = "This can be skinned from The Beast with 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Finkle's Skinner.",
-						}),
 						i(12709),	-- Finkle's Skinner
 						i(12969), 	-- Seeping Willow
 						i(12967),	-- Bloodmoon Cloak
@@ -1203,6 +1200,12 @@ _.Instances = {
 						i(12964),	-- Tristam Legguards
 						i(22311),	-- Ironweave Boots
 						i(19227),	-- Ace of Beasts
+						prof(SKINNING, {
+							["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Finkle's Skinner.",
+							["groups"] = {
+								i(12731),	-- Pristine Hide of the Beast
+							},
+						}),
 					}),
 					n(16042, { 	-- Lord Valthalak
 						["description"] = "This boss could be summoned using the Brazier of Beckoning.",
