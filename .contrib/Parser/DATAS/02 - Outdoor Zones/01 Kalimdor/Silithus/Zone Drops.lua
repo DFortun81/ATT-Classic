@@ -11,6 +11,52 @@ _.Zones =
 				})),
 				
 				un(3, i(20402)),	-- Agent of Nozdormu
+				un(3, i(21246)),	-- Combat Task Briefing I
+				un(3, i(21749)),	-- Combat Task Briefing I
+				un(3, i(21750)),	-- Combat Task Briefing II
+				un(3, i(21247)),	-- Combat Task Briefing II
+				un(3, i(20942)),	-- Combat Task Briefing III
+				un(3, i(21248)),	-- Combat Task Briefing IV
+				un(3, i(21253)),	-- Combat Task Briefing IX
+				un(3, i(21249)),	-- Combat Task Briefing V
+				un(3, i(21250)),	-- Combat Task Briefing VI
+				un(3, i(21251)),	-- Combat Task Briefing VII
+				un(3, i(21252)),	-- Combat Task Briefing VIII
+				un(3, i(21255)),	-- Combat Task Briefing X
+				un(3, i(21256)),	-- Combat Task Briefing XI
+				un(3, i(20941)),	-- Combat Task Briefing XII
+				un(3, i(21378)),	-- Logistics Task Briefing I
+				un(3, i(20807)),	-- Logistics Task Briefing I
+				un(3, i(20939)),	-- Logistics Task Briefing II
+				un(3, i(21379)),	-- Logistics Task Briefing II
+				un(3, i(21380)),	-- Logistics Task Briefing III
+				un(3, i(20940)),	-- Logistics Task Briefing III
+				un(3, i(21257)),	-- Logistics Task Briefing IV
+				un(3, i(21258)),	-- Logistics Task Briefing IV
+				un(3, i(21265)),	-- Logistics Task Briefing IX
+				un(3, i(21381)),	-- Logistics Task Briefing IX
+				un(3, i(21259)),	-- Logistics Task Briefing V
+				un(3, i(21382)),	-- Logistics Task Briefing V
+				un(3, i(21260)),	-- Logistics Task Briefing VI
+				un(3, i(21261)),	-- Logistics Task Briefing VI
+				un(3, i(21263)),	-- Logistics Task Briefing VII
+				un(3, i(21264)),	-- Logistics Task Briefing VII
+				un(3, i(21384)),	-- Logistics Task Briefing VIII
+				un(3, i(21262)),	-- Logistics Task Briefing VIII
+				un(3, i(21385)),	-- Logistics Task Briefing X
+				un(3, i(20806)),	-- Logistics Task Briefing X
+				un(3, i(21514)),	-- Logistics Task Briefing XI
+				un(3, i(21245)),	-- Tactical Task Briefing I
+				un(3, i(20945)),	-- Tactical Task Briefing II
+				un(3, i(21751)),	-- Tactical Task Briefing III
+				un(3, i(20946)),	-- Tactical Task Briefing III
+				un(3, i(20947)),	-- Tactical Task Briefing IV
+				un(3, i(20944)),	-- Tactical Task Briefing IX
+				un(3, i(20948)),	-- Tactical Task Briefing V
+				un(3, i(21165)),	-- Tactical Task Briefing VI
+				un(3, i(21166)),	-- Tactical Task Briefing VII
+				un(3, i(21167)),	-- Tactical Task Briefing VIII
+				un(3, i(20943)),	-- Tactical Task Briefing X
 				
 				-- <Abyssal Templar> Drops
 				un(3, i(20513, {	-- Abyssal Crest

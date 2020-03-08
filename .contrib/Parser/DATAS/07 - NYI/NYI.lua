@@ -44,6 +44,7 @@ _.NeverImplemented =
 	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
 	-- Argent Dawn Quests
+	q(5530),	-- <NYI> <TXT> Necklace of the Dawn
 	q(5532),	-- <NYI> <TXT> Ring of the Dawn
 	
 	-- Dustwallow Marsh Quests that were never added.
@@ -91,6 +92,53 @@ _.NeverImplemented =
 	q(9297),	-- reuse
 	q(9298),	-- reuse
 	
+	-- Silithus Quests (Unused Quests)
+	q(1155),	-- <NYI> <TXT> bug crystal side quest
+	
+	-- Retired PVP Battleground Quests
+	-- Warsong Gulch
+	i(19213),	-- Silverwing Talisman of Merit
+	q(8567),	-- Past Victories in Warsong Gulch
+	q(8292),	-- Talismans of Merit [lvl 60]
+	q(7886),	-- Talismans of Merit [lvl 50]
+	q(7888),	-- Talismans of Merit [lvl 40]
+	q(7887),	-- Talismans of Merit [lvl 30]
+	q(7921),	-- Talismans of Merit [lvl 20]
+	q(8289),	-- Talismans of Merit [lvl 10]
+	q(8001),	-- Warsong Outriders <NYI> <TXT>
+	i(19322),	-- Warsong Mark of Honor
+	q(8293),	-- Mark of Honor [lvl 60]
+	q(7922),	-- Mark of Honor [lvl 50]
+	q(7923),	-- Mark of Honor [lvl 40]
+	q(7924),	-- Mark of Honor [lvl 30]
+	q(7925),	-- Mark of Honor [lvl 20]
+	q(8296),	-- Mark of Honor [lvl 10]
+	q(8568),	-- Past Victories in Warsong Gulch
+	q(8002),	-- Silverwing Sentinels <NYI> <TXT>
+	i(20256),	-- Warsong Gulch Ribbon of Sacrifice
+	q(8569),	-- Past Efforts in Warsong Gulch
+	q(8570),	-- Past Efforts in Warsong Gulch
+	q(8266),	-- Ribbons of Sacrifice
+	q(8267),	-- Ribbons of Sacrifice
+	q(8268),	-- Ribbons of Sacrifice
+	q(8269),	-- Ribbons of Sacrifice
+	
+	
+	-- Arathi Basin
+	i(19725),	-- Arathi Resource Crate
+	q(8158),	-- More Resource Crates [lvl 20] (A)
+	q(8165),	-- More Resource Crates [lvl 20] (H)
+	q(8159),	-- More Resource Crates [lvl 30] (A)
+	q(8164),	-- More Resource Crates [lvl 30] (H)
+	q(8157),	-- More Resource Crates [lvl 40] (A)
+	q(8163),	-- More Resource Crates [lvl 40] (H)
+	q(8081),	-- More Resource Crates [lvl 50] (A)
+	q(8124),	-- More Resource Crates [lvl 50] (H)
+	q(8298),	-- More Resource Crates [lvl 60] (A)
+	q(8300),	-- More Resource Crates [lvl 60] (H)
+	q(8565),	-- Past Victories in Arathi
+	q(8566),	-- Past Victories in Arathi
+	
 	-- Mount Upgrade Quests
 	q(7674),	-- Black Ram Exchange
 	q(7673),	-- Frost Ram Exchange
@@ -121,6 +169,10 @@ _.NeverImplemented =
 	i(17967),	-- Refined Scale of Onyxia
 	i(3895),	-- TEST Legendary
 	i(22316),	-- Test Relic
+	
+	-- Shirts
+	i(6130),	-- Trapper's Shirt (deprecated)
+	
 	
 	-- Mounts
 	i(13328),	-- Black Ram
@@ -297,6 +349,7 @@ _.NeverImplemented =
 	i(11667),	-- PH Greater Arcane Amalgamation (STR/FR)
 	i(11683),	-- PH Legendary Arcane Amalgamation (Caster)
 	i(11676),	-- PH Legendary Arcane Amalgamation (Melee)
+	i(17409),	-- Encrusted Crystal Fragment
 	i(17347),	-- Syndicate Man Tracker (MURP)
 	i(18593),	-- Thorium Brotherhood Contract (OLD)
 	i(18157),	-- Black Moro'gai Gem
@@ -312,6 +365,7 @@ _.NeverImplemented =
 	i(21195),	-- D'Sak's Sacktastic
 	i(21313),	-- D'Sak's Small bag
 	i(21857),	-- Test Herb Bag
+	i(22233),	-- Zigris' Footlocker
 	
 	-- Recipe
 	i(5688),	-- Test Language Item
@@ -418,6 +472,7 @@ _.NeverImplemented =
 	i(21588),	-- Wristguards of Elemental Fury
 	
 	-- Plate
+	i(12106),	-- Boulderskin Breastplate
 	i(16546),	-- General's Plate Armguards
 	i(16547),	-- General's Plate Girdle
 	i(16412),	-- Knight-Captain's Lamellar Armsplints
@@ -426,6 +481,7 @@ _.NeverImplemented =
 	i(16470),	-- Marshal's Lamellar Belt
 	i(16481),	-- Marshal's Plate Bracers
 	i(16482),	-- Marshal's Plate Girdle
+	i(21587),	-- Wristguards of Castigation
 	
 	-- Dagger
 	i(17142),	-- Shard of the Defiler
@@ -433,6 +489,10 @@ _.NeverImplemented =
 	-- Shield
 	i(20502),	-- Ironbark Shield
 	i(18303),	-- Nimble Buckler
+	
+	-- Neck
+	i(23058),	-- Life Channeling Necklace
+	i(13811),	-- Necklace of the Dawn
 	
 	-- Ring
 	i(17000),	-- Band of the Wraith
@@ -480,6 +540,10 @@ _.NeverImplemented =
 	i(20596),	-- Sturdy Male Tauren Mask
 	i(20597),	-- Sturdy Male Troll Mask
 	i(20598),	-- Sturdy Male Undead Mask
+	i(20936),	-- Qiraji Blessed Jewel
+	i(20937),	-- Qiraji Encased Jewel
+	i(20887),	-- Qiraji Engraved Jewel
+	i(20883),	-- Qiraji Glyphed Jewel
 	
 	-- Cloak
 	i(8195),	-- Nightscape Cloak
@@ -532,10 +596,6 @@ _.NeverImplemented =
 	i(5743),	-- Prismstone Ring
 	i(5008),	-- Quicksilver Ring
 	i(7466),	-- Vermilion Band
-	
-	-- Bind Type 3
-	
-	-- Bind Type 4
 };
 i = oldI;
 q = oldQ;

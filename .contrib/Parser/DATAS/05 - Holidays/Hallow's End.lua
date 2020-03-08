@@ -43,5 +43,8 @@ _.Holidays =
 				["repeatable"] = true,
 			}),
 		}),
+		n(ZONEDROPS, {
+			i(20400),	-- Pumpkin Bag
+		}),
 	}),
 };

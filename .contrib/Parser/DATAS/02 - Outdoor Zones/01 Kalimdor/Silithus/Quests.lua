@@ -22,6 +22,11 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
 					["qg"] = 15194,	-- Hermit Ortell
+					["groups"] = {
+						i(20645, {	-- Nature's Whisper
+							["description"] = "This is a reward is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
+						}),
+					},
 				}),
 				q(8361, {	-- Abyssal Contacts
 					["u"] = 3,	-- Added in later phase

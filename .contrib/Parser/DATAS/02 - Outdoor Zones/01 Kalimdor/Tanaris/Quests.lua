@@ -327,7 +327,6 @@ _.Zones =
 				q(8182, {	-- The Hand of Rastakhan
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(10, {	-- The Scrimshank Redemption
