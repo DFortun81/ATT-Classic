@@ -1224,7 +1224,7 @@ _.WorldDrops =
 		i(15337),	-- Wrangler's Wraps
 		i(15331),	-- Wrangler's Wristbands
 	}),
-	filter(6, {	-- Mail [Needs to be Verified]
+	filter(6, {	-- Mail
 		i(15606),	-- Ancient Belt
 		i(15601),	-- Ancient Chestpiece
 		i(15602),	-- Ancient Crown
@@ -1346,7 +1346,6 @@ _.WorldDrops =
 		i(13133),	-- Drakesfire Epaulets
 		i(13010),	-- Dreamsinger Legguards
 		i(13123),	-- Dreamwalker Armor
-		i(2016),	-- Dusty Chain Armor
 		i(8265),	-- Ebonhold Armor
 		i(8269),	-- Ebonhold Boots
 		i(8267),	-- Ebonhold Gauntlets
@@ -1414,7 +1413,6 @@ _.WorldDrops =
 		i(15626),	-- Gryphon Mail Greaves
 		i(15627),	-- Gryphon Mail Legguards
 		i(15628),	-- Gryphon Mail Pauldrons
-		i(2273),	-- Guerrilla Armor
 		i(2245),	-- Helm of Narv
 		i(8308),	-- Hero's Band
 		i(8306),	-- Hero's Belt
@@ -1443,8 +1441,6 @@ _.WorldDrops =
 		i(15658),	-- Impenetrable Sabatons
 		i(6337),	-- Infantry Leggings
 		i(6336),	-- Infantry Tunic
-		i(6730),	-- Ironforge Chain
-		i(6733),	-- Ironforge Gauntlets
 		i(15641),	-- Ironhide Belt
 		i(15639),	-- Ironhide Bracers
 		i(15640),	-- Ironhide Breastplate
@@ -1541,7 +1537,6 @@ _.WorldDrops =
 		i(10155),	-- Mercurial Greaves
 		i(10162),	-- Mercurial Legguards
 		i(10163),	-- Mercurial Pauldrons
-		i(7925),	-- Mithril Scale Gloves
 		i(8125),	-- Myrmidon's Bracers
 		i(8126),	-- Myrmidon's Breastplate
 		i(8128),	-- Myrmidon's Gauntlets
@@ -1613,11 +1608,6 @@ _.WorldDrops =
 		i(9871),	-- Renegade Leggings
 		i(9872),	-- Renegade Pauldrons
 		i(9435),	-- Reticulated Bone Gauntlets
-		i(2867),	-- Rough Bronze Bracers
-		i(5425),	-- Runescale Girdle
-		i(12616),	-- Savage Mail Boots
-		i(12617),	-- Savage Mail Shoulders
-		i(12615),	-- Savage Mail Tunic
 		i(15532),	-- Sentry's Armsplints
 		i(15527),	-- Sentry's Gloves
 		i(15533),	-- Sentry's Headdress
@@ -1626,7 +1616,6 @@ _.WorldDrops =
 		i(15531),	-- Sentry's Shoulderguards
 		i(15525),	-- Sentry's Slippers
 		i(15524),	-- Sentry's Surcoat
-		i(12258),	-- Serpent Clasp Belt
 		i(12982),	-- Silver-linked Footguards
 		i(13132),	-- Skeletal Shoulders
 		i(14750),	-- Slayer's Cuffs

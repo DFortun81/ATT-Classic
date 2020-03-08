@@ -259,6 +259,17 @@ _.NeverImplemented =
 	i(7187),	-- VanCleef's Boots
 	
 	-- Mail
+	i(2016),	-- Dusty Chain Armor
+	i(2273),	-- Guerrilla Armor
+	i(6730),	-- Ironforge Chain
+	i(6733),	-- Ironforge Gauntlets
+	i(7925),	-- Mithril Scale Gloves
+	i(16664),	-- Ornate Bracers
+	i(2867),	-- Rough Bronze Bracers
+	i(12616),	-- Savage Mail Boots
+	i(12617),	-- Savage Mail Shoulders
+	i(12615),	-- Savage Mail Tunic
+	i(12258),	-- Serpent Clasp Belt
 	i(16157),	-- Test Arcane Res Feet Mail
 	i(16164),	-- Test Arcane Res Hands Mail
 	i(16159),	-- Test Arcane Res Head Mail
