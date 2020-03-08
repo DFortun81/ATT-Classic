@@ -68,6 +68,29 @@ _.Zones =
 					},
 					["lvl"] = 13,
 				}),
+				q(1845, {	-- Brutal Helm
+					["qg"] = 6410,	-- Orm Stonehoof
+					["sourceQuest"] = 1844,	-- Chimaeric Horn
+					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+					["groups"] = {
+						i(7130),	-- Brutal Helm
+					},
+				}),
+				q(1844, {	-- Chimaeric Horn
+					["qg"] = 6410,	-- Orm Stonehoof
+					["sourceQuest"] = 1840,	-- Orm Stonehoof and the Brutal Helm
+					["coord"] = { 39, 55.8, THUNDER_BLUFF },
+					["maps"] = { STONETALON_MOUNTAINS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 6840, 1 },	-- Galvanized Horn
+					},
+					["lvl"] = 20,
+				}),
 				q(1064, {	-- Forsaken Aid
 					["qg"] = 4046,	-- Magatha Grimtotem
 					["coord"] = { 69.85, 30.91, THUNDER_BLUFF },
@@ -137,6 +160,15 @@ _.Zones =
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
+				}),
+				q(1840, {	-- Orm Stonehoof and the Brutal Helm
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(2965, {	-- Portents of Uldum
 					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]

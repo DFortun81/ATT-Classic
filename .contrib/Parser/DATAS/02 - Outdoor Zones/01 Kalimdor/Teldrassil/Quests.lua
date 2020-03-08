@@ -166,11 +166,29 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
+				q(5621, {	-- Garments of the Moon
+					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
+					["sourceQuest"] = 5622,	-- In Favor of Elune
+					["coord"] = { 55.6, 56.8, TELDRASSIL },
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
+					["groups"] = {
+						i(16604),	-- Moon Robes of Elune
+					},
+				}),
 				q(476, {	-- Gnarlpine Corruption
 					["lvl"] = 4,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2107,	-- Gaerolas Talvethren
 					["sourceQuest"] = 475,	-- Gnarlpine Corruption
+				}),
+				q(5622, {	-- In Favor of Elune
+					["qg"] = 3595,	-- Shanda <Priest Trainer>
+					["coord"] = { 59.2, 40.6, TELDRASSIL },
+					["races"] = { NIGHTELF },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
 				}),
 				q(3521, {	-- Iverron's Antidote
 					["lvl"] = 2,

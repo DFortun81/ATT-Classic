@@ -25,6 +25,7 @@ _.PvP =
 									i(19323),	-- The Unstoppable Force
 									i(19324),	-- The Lobotomizer
 									i(19325),	-- Don Julio's Band
+									un(3, i(21563)),	-- Don Rodrigo's Band
 									i(19029),	-- Horn of the Frostwolf Howler
 									i(19083),	-- Frostwolf Legionnaire's Cloak
 									i(19085),	-- Frostwolf Advisor's Cloak
@@ -66,6 +67,7 @@ _.PvP =
 									i(19323),	-- The Unstoppable Force
 									i(19324),	-- The Lobotomizer
 									i(19325),	-- Don Julio's Band
+									un(3, i(21563)),	-- Don Rodrigo's Band
 									i(19029),	-- Horn of the Frostwolf Howler
 									i(19083),	-- Frostwolf Legionnaire's Cloak
 									i(19085),	-- Frostwolf Advisor's Cloak
@@ -243,6 +245,50 @@ _.PvP =
 								["qg"] = 13776,	-- Corporal Teeka Bloodsnarl
 							}),
 						}),
+						n(13419, {	-- Ivus the Forest Lord
+							i(19110, {	-- Cold Forged Blade
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19105, {	-- Frost Runed Headdress
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19111, {	-- Winteraxe Epaulets
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19112, {	-- Frozen Steel Vambraces
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19113, {	-- Yeti Hide Bracers
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19109, {	-- Deep Rooted Ring
+								["u"] = 3,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+						}),
 					}, 
 				}),
 				faction(730, {	-- Stormpike Guard
@@ -265,6 +311,7 @@ _.PvP =
 									i(19323),	-- The Unstoppable Force
 									i(19324),	-- The Lobotomizer
 									i(19325),	-- Don Julio's Band
+									un(3, i(21563)),	-- Don Rodrigo's Band
 									i(19030),	-- Stormpike Battle Charger
 									i(19084),	-- Stormpike Soldier's Cloak
 									i(19086),	-- Stormpike Sage's Cloak
@@ -306,6 +353,7 @@ _.PvP =
 									i(19323),	-- The Unstoppable Force
 									i(19324),	-- The Lobotomizer
 									i(19325),	-- Don Julio's Band
+									un(3, i(21563)),	-- Don Rodrigo's Band
 									i(19030),	-- Stormpike Battle Charger
 									i(19084),	-- Stormpike Soldier's Cloak
 									i(19086),	-- Stormpike Sage's Cloak
@@ -504,7 +552,65 @@ _.PvP =
 								["maps"] = { ALTERAC_MOUNTAINS },
 							}),
 						}),
+						n(13256, {	-- Lokholar the Ice Lord
+							i(19110, {	-- Cold Forged Blade
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19105, {	-- Frost Runed Headdress
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19111, {	-- Winteraxe Epaulets
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19112, {	-- Frozen Steel Vambraces
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19113, {	-- Yeti Hide Bracers
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+							i(19109, {	-- Deep Rooted Ring
+								["u"] = 2,
+								["timeline"] = {
+									"added 1.5.0.4442",
+									"removed 1.6.0.4500",
+								},
+							}),
+						}),
 					},
+				}),
+				n(ZONEDROPS, {
+					i(17422),	-- Armor Scraps
+					i(18228),	-- Autographed Picture of Foror & Tigule
+					i(18206),	-- Dwarf Spine
+					i(17504),	-- Frostwolf Commander's Medal
+					i(17503),	-- Frostwolf Lieutenant's Medal
+					i(17502),	-- Frostwolf Soldier's Medal
+					i(17423),	-- Storm Crystal
+					i(17328),	-- Stormpike Commander's Flesh
+					i(17327),	-- Stormpike Lieutenant's Flesh
+					i(17306),	-- Stormpike Soldier's Blood
+					i(17326),	-- Stormpike Soldier's Flesh
+					i(18231),	-- Sleeveless T-Shirt
 				}),
 			},
 		}),

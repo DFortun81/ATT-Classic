@@ -1,3 +1,7 @@
+-- TODO: Crieve NOTE: This file looks awful.
+-- Add Vendors
+-- https://classic.wowhead.com/npc=12783/lieutenant-karter
+-- https://classic.wowhead.com/npc=12796/raider-bork
 _.PvP = 
 {
   n(-9914, {	-- Alliance 
@@ -409,6 +413,10 @@ _.PvP =
         }),
       }),
       n(-8011, {	-- Commander
+		i(18241),	-- Black War Steed Bridle
+		i(18244),	-- Black War Ram
+		i(18243),	-- Black Battlestrider
+		i(18242),	-- Reins of the Black War Tiger
       }),
       n(-8012, {	-- Marshal
         i(16463, {	-- Marshal's Chain Grips
@@ -559,6 +567,7 @@ _.PvP =
         }),
       }),
       n(-8014, {	-- Grand Marshal
+		i(18825),	-- Grand Marshal's Aegis
         i(18867),	-- Grand Marshal's Battle Hammer
         i(18833),	-- Grand Marshal's Bullseye
         i(18876),	-- Grand Marshal's Claymore
@@ -971,6 +980,10 @@ _.PvP =
         }),
       }),
       n(-8025, {	-- Lieutenant General
+		i(18247),	-- Black War Kodo
+		i(18245),	-- Horn of the Black War Wolf
+		i(18248),	-- Red Skeletal Warhorse
+		i(18246),	-- Whistle of the Black War Raptor
       }),
       n(-8026, {	-- General
         i(16571, {	-- General's Chain Gloves
@@ -1136,6 +1149,7 @@ _.PvP =
         i(18840),	-- High Warlord's Razor
         i(18835),	-- High Warlord's Recurve
         i(18844),	-- High Warlord's Right Claw
+		i(18826),	-- High Warlord's Shield Wall
         i(23466),	-- High Warlord's Spellblade
         i(18860),	-- High Warlord's Street Sweeper
         i(23468),	-- High Warlord's Tome of Destruction

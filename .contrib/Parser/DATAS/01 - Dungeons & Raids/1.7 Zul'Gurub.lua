@@ -10,6 +10,30 @@ _.Instances = {
 		["lvl"] = 60,
 		["groups"] = {
 			n(QUESTS, {
+				q(8201, {	-- A Collection of Heads
+					["cost"] = {
+						{ "i", 19880, 1 },	-- Gurubashi Head Collection
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						{
+							["itemID"] = 19883,	-- Sacred Cord
+							["cost"] = {
+								{ "i", 19881, 5 },	-- Channeler's Head
+							},
+							["groups"] = {
+								{
+									["itemID"] = 19880,	-- Gurubashi Head Collection
+									["questID"] = 8201,	-- A Collection of Heads
+								},
+							},
+						},
+						i(20216),	-- Belt of Preserved Heads
+						i(20215),	-- Belt of Shriveled Heads
+						i(20213),	-- Belt of Shrunken Heads
+						i(20217),	-- Belt of Tiny Heads
+					},
+				}),
 				{
 					["itemID"] = 18330,	-- Arcanum of Focus
 					["groups"] = {
@@ -420,6 +444,20 @@ _.Instances = {
 						},
 					},
 				},
+				q(8243, {	-- Zanza's Potent Potables
+					["minReputation"] = { 270, REVERED },	-- Zandalari Tribe
+					["cost"] = {
+						{ "i", 19858, 1 },	-- Zandalar Honor Token
+					},
+					["groups"] = {
+						i(20080),	-- Sheen of Zanza
+						i(20079),	-- Spirit of Zanza
+						i(20081),	-- Swiftness of Zanza
+					},
+				}),
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(19881),	-- Channeler's Head
 			}),
 			n(ZONEDROPS, {
 				i(19727),	-- Blood Scythe
@@ -456,6 +494,12 @@ _.Instances = {
 				i(19820),	-- Punctured Voodoo Doll [Priest]
 				i(19815),	-- Punctured Voodoo Doll [Paladin]
 				i(19817),	-- Punctured Voodoo Doll [Shaman]
+			}),
+			prof(HERBALISM, {
+				i(19726),	-- Bloodvine
+			}),
+			prof(MINING, {
+				i(19774),	-- Souldarite
 			}),
 			n(14517, {	-- High Priestess Jeklik
 				i(19918),	-- Jeklik's Crusher

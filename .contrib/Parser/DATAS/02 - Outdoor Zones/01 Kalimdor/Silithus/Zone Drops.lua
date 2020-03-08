@@ -10,6 +10,8 @@ _.Zones =
 					["cr"] = 11881,	-- Twilight Geolord
 				})),
 				
+				un(3, i(20402)),	-- Agent of Nozdormu
+				
 				-- <Abyssal Templar> Drops
 				un(3, i(20513, {	-- Abyssal Crest
 					["crs"] = {
@@ -109,13 +111,21 @@ _.Zones =
 				})),
 				
 				-- Reward from Signet of the Dukes (8348) and Abyssal Signets (8363)
+				un(3, i(20603, { 	-- Bag of Spoils
+					un(3, i(20694)), 	-- Glowing Black Orb
+					un(3, i(20693)), 	-- Weighted Cloak
+					un(3, i(20692)),	-- Multicolored Band
+				})),
 				un(3, i(20601, {	-- Sack of Spoils
 					un(3, i(20695)),	-- Abyssal War Beads
 					un(3, i(20696)),	-- Crystal Spiked Maul
 					un(3, i(20697)),	-- Crystalline Threaded Cape
 					un(3, i(20698)),	-- Elemental Attuned Blade
-					un(3, i(20694)),	-- Glowing Black Orb
-					un(3, i(20693)),	-- Weighted Cloak
+				})),
+				un(3, i(20602, { 	-- Chest of Spoils
+					un(3, i(20721)),	-- Band of the Cultist
+					un(3, i(20722)), 	-- Crystal Slugthrower
+					un(3, i(20720)), 	-- Dark Whisper Blade
 				})),
 				
 				un(3, i(20654, {	-- Amethyst War Staff

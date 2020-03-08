@@ -32,6 +32,21 @@ _.Factions =
 					i(19426),	-- Orb of the Darkmoon
 				},
 			}),
+			n(14846, {	-- Lhara <Darkmoon Faire Exotic Goods>
+				["coords"] = {
+					{ 36.4, 38.0, MULGORE },
+				},
+				["groups"] = {
+					i(12251),	-- Big Stick
+					i(12248),	-- Daring Dirk
+					i(19303),	-- Darkmoon Necklace
+					i(19302),	-- Darkmoon Ring
+					i(11305),	-- Dense Shortbow
+					i(11303),	-- Fine Shortbow
+					i(11306),	-- Sturdy Recurve
+					i(11308),	-- Sylvan Shortbow
+				},
+			}),
 		}),
 	}),
 };

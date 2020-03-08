@@ -108,6 +108,9 @@ _.Instances = {
 						1732,	-- Defias Squallshaper
 					},
 				}),
+				i(1959, {	-- Cold Iron Pick
+					["cr"] = 623,	-- Skeletal Miner
+				}),
 				i(1925, {	-- Defias Rapier
 					["cr"] = 1725,	-- Defias Watchman
 				}),
@@ -146,8 +149,14 @@ _.Instances = {
 						4418,	-- Defias Wizard
 					},
 				}),
+				i(4676, {	-- Skeletal Gauntlets
+					["cr"] = 624,	-- Undead Excavator
+				}),
 				i(1930, {	-- Stonemason Cloak
 					["cr"] = 598,	-- Defias Miner
+				}),
+				i(1934, {	-- Stonemason Trousers
+					["cr"] = 636,	-- Defias Blackguard
 				}),
 				i(1926, {	-- Weighted Sap
 					["cr"] = 824,	-- Defias Digger

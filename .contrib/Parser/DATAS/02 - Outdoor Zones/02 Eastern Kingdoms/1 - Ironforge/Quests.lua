@@ -285,6 +285,7 @@ _.Zones =
 					["groups"] = {
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
+						i(22073),	-- Deathmist Mantle
 					},
 				}),
 				q(8953, {	-- Anthion's Parting Words
@@ -296,6 +297,7 @@ _.Zones =
 					["groups"] = {
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
+						i(22068),	-- Sorcerer's Mantle
 					},
 				}),
 				q(8951, {	-- Anthion's Parting Words
@@ -307,6 +309,7 @@ _.Zones =
 					["groups"] = {
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
+						i(22112),	-- Feralheart Spaulders
 					},
 				}),
 				q(8955, {	-- Anthion's Parting Words
@@ -318,6 +321,7 @@ _.Zones =
 					["groups"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
+						i(22082),	-- Virtuous Mantle
 					},
 				}),
 				q(8954, {	-- Anthion's Parting Words
@@ -329,6 +333,7 @@ _.Zones =
 					["groups"] = {
 						i(22087),	-- Soulforge Boots
 						i(22092),	-- Soulforge Legplates
+						i(22093),	-- Soulforge Spaulders
 					},
 				}),
 				q(8952, {	-- Anthion's Parting Words
@@ -340,6 +345,7 @@ _.Zones =
 					["groups"] = {
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
+						i(22016),	-- Beastmaster's Mantle
 					},
 				}),
 				q(8959, {	-- Anthion's Parting Words
@@ -351,6 +357,7 @@ _.Zones =
 					["groups"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
+						i(22001),	-- Spaulders of Heroism
 					},
 				}),
 				q(8956, {	-- Anthion's Parting Words
@@ -362,6 +369,7 @@ _.Zones =
 					["groups"] = {
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
+						i(22008),	-- Darkmantle Spaulders
 					},
 				}),
 				q(3449, {	-- Arcane Runes

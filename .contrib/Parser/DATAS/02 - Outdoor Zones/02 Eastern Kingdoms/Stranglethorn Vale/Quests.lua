@@ -64,6 +64,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
 				}),
+				q(4621, {	-- Avast Ye, Admiral!
+					["qg"] = 2546,	-- Fleet Master Firallon
+					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
+					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
+					["lvl"] = 55,
+					["groups"] = {
+						i(12185),	-- Bloodsail Admiral's Hat
+					},
+				}),
+				q(1036, {	-- Avast Ye, Scallywag
+					["qg"] = 2545,	-- "Pretty Boy" Duncan
+					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["coord"] = { 27.4, 69.4, STRANGLETHORN_VALE },
+					["lvl"] = 55,
+				}),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
 					["coord"] = { 30.4, 47.8, STRANGLETHORN_VALE },

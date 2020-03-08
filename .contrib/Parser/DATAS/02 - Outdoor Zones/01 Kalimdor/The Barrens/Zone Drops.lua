@@ -6,6 +6,14 @@ _.Zones =
 	m(KALIMDOR, {
 		m(THE_BARRENS, {
 			n(ZONEDROPS, {
+				i(5107, {	-- Deckhand's Shirt
+					["crs"] = {
+						3381,	-- Southsea Brigand
+						3382,	-- Southsea Cannoneer
+						3383,	-- Southsea Cutthroat
+						3384,	-- Southsea Privateer
+					},
+				}),
 				i(5026, {	-- Fire Tar
 					["questID"] = 1525,	-- Call of Fire (3/5)
 					["races"] = HORDE_ONLY,

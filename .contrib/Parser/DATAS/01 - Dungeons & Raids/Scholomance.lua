@@ -362,7 +362,7 @@ _.Instances = {
 							["cr"] = 11023,	-- Weldon Barov <House of Barov>
 							["coord"] = { 43.4, 83.6, WESTERN_PLAGUELANDS },
 						},
-						i(14023),	-- Barov Peasant Caller
+						i(14022),	-- Barov Peasant Caller
 					},
 				}),
 				q(5344, {	-- The Last Barov

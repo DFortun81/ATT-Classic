@@ -281,7 +281,17 @@ _.Instances = {
 					["questID"] = 7783,	-- The Lord of Blackrock [Horde]
 					["races"] = HORDE_ONLY,
 				},
-				un(3, i(21138)),	-- Red Scepter Shard
+				{
+					["itemID"] = 21142,	-- From the Desk of Lord Victor Nefarius
+					["questID"] = 8730,	-- Nefarius's Corruption
+					["description"] = "You get this if you don't manage to kill Nefarian in time after starting the quest from Vaelastrasz.",
+					["u"] = 3,	-- Not available yet.
+				},
+				{
+					["itemID"] = 21138,	-- Red Scepter Shard
+					["questID"] = 8730,	-- Nefarius's Corruption
+					["u"] = 3,	-- Not available yet.
+				},
 				i(19364),	-- Ashkandi, Greatsword of the Brotherhood
 				i(19356),	-- Staff of the Shadow Flame
 				i(19363),	-- Crul'shorukh, Edge of Chaos

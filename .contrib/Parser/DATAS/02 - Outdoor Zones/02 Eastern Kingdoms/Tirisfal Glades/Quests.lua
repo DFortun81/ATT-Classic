@@ -196,6 +196,9 @@ _.Zones =
 					["races"] = { UNDEAD },
 					["classes"] = { PRIEST },
 					["lvl"] = 5,
+					["groups"] = {
+						i(16607),	-- Acolyte's Sacrificial Robes
+					},
 				}),
 				q(3098, {	-- Glyphic Scroll
 					["qg"] = 1569,	-- Shadow Priest Sarvis
@@ -226,12 +229,18 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
 				}),
-				q(1822, {
+				q(1822,  {	-- Heirloom Weapon
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 1821,	-- Agamand Heirlooms
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
+					["g"] = {
+						i(7115),	-- Heirloom Axe
+						i(7117),	-- Heirloom Hammer
+						i(7116),	-- Heirloom Dagger
+						i(7118),	-- Heirloom Sword
+					},
 				}),
 				q(5651, {	-- In Favor of Darkness
 					["qg"] = 2123,	-- Dark Cleric Duesten <Priest Trainer>

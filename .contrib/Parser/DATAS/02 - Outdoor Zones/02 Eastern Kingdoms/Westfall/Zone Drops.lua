@@ -103,6 +103,9 @@ _.Zones =
 				i(1190, {  -- Overseer's Cloak
 					["cr"] = 125,	-- Riverpaw Overseer
 				}),
+				i(1189, {  -- Overseer's Ring
+					["cr"] = 125,	-- Riverpaw Overseer
+				}),
 				i(5771, {	-- Pattern: Red Linen Bag
 					["cr"] = 590,	-- Defias Looter
 				}),

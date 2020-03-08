@@ -114,6 +114,10 @@ _.Zones =
 							["cr"] = 6093,	-- Dead-Tooth Jack
 							["coord"] = { 89.2, 80.6, ELWYNN_FOREST },
 						},
+						i(6979),	-- Haggard's Axe
+						i(6980),	-- Haggard's Dagger
+						i(6983),	-- Haggard's Hammer
+						i(6985),	-- Haggard's Sword
 					},
 				}),
 				q(39, {	-- Deliver Thomas' Report
@@ -174,6 +178,17 @@ _.Zones =
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,
+				}),
+				q(5624, {	-- Garments of the Light
+					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
+					["sourceQuest"] = 5623,	-- In Favor of the Light
+					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
+					["groups"] = {
+						i(16605),	-- Friar's Robes of the Light
+					},
 				}),
 				q(16, {	-- Give Gerard a Drink
 					["qg"] = 255,	-- Gerard Tiller
@@ -236,6 +251,13 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
+				}),
+				q(5623, {	-- In Favor of the Light
+					["qg"] = 375,	-- Priestess Anetta <Priest Trainer>
+					["coord"] = { 49.8, 39.6, ELWYNN_FOREST },
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
 				}),
 				q(345, {	-- Ink Supplies
 					["lvl"] = 20,

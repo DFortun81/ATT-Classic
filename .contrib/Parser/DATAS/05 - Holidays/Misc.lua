@@ -12,5 +12,8 @@ _.Holidays =
 				{ "i", 21545, 1 },	-- Smokywood Supplies
 			},
 		},
+		
+		-- TODO: Valentine's Day Holiday
+		i(22206),	-- Bouquet of Red Roses
 	}),
 };

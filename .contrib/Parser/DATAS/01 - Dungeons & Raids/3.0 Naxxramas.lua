@@ -27,42 +27,58 @@ _.Instances = {
 						},
 					},
 					{
+						["qg"] = 15192,	-- Anachronos
 						["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["sourceQuest"] = 9250,	-- Frame of Atiesh
-						["qg"] = 15192,	-- Anachronos
+						["cost"] = {
+							{ "i", 22734, 1 },	-- Base of Atiesh
+							{ "i", 22733, 1 },	-- Staff Head of Atiesh
+						},
 					},
 					{
+						["qg"] = 15192,	-- Anachronos
 						["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["classes"] = { PRIEST },
-						["qg"] = 15192,	-- Anachronos
+						["cost"] = {
+							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+						},
 						["groups"] = {
 							i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
 						},
 					},
 					{
+						["qg"] = 15192,	-- Anachronos
 						["questID"] = 9270,	-- Atiesh, Greatstaff of the Guardian [Mage]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["classes"] = { MAGE },
-						["qg"] = 15192,	-- Anachronos
+						["cost"] = {
+							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+						},
 						["groups"] = {
 							i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
 						},
 					},
 					{
+						["qg"] = 15192,	-- Anachronos
 						["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["classes"] = { WARLOCK },
-						["qg"] = 15192,	-- Anachronos
+						["cost"] = {
+							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+						},
 						["groups"] = {
 							i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
 						},
 					},
 					{
+						["qg"] = 15192,	-- Anachronos
 						["questID"] = 9269,	-- Atiesh, Greatstaff of the Guardian [Druid]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["classes"] = { DRUID },
-						["qg"] = 15192,	-- Anachronos
+						["cost"] = {
+							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
+						},
 						["groups"] = {
 							i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
 						},
@@ -922,6 +938,33 @@ _.Instances = {
 					},
 				}),
 			}),
+			n(COMMON_BOSS_DROPS, {
+				i(22682),	-- Frozen Rune
+				i(22370),	-- Desecrated Belt
+				i(22369),	-- Desecrated Bindings
+				i(22365),	-- Desecrated Boots
+				i(22355),	-- Desecrated Bracers
+				i(22349),	-- Desecrated Breastplate
+				i(22367),	-- Desecrated Circlet
+				i(22357),	-- Desecrated Gauntlets
+				i(22363),	-- Desecrated Girdle
+				i(22371),	-- Desecrated Gloves
+				i(22364),	-- Desecrated Handguards
+				i(22360),	-- Desecrated Headpiece
+				i(22353),	-- Desecrated Helmet
+				i(22366),	-- Desecrated Leggings
+				i(22359),	-- Desecrated Legguards
+				i(22352),	-- Desecrated Legplates
+				i(22354),	-- Desecrated Pauldrons
+				i(22351),	-- Desecrated Robe
+				i(22358),	-- Desecrated Sabatons
+				i(22372),	-- Desecrated Sandals
+				i(22368),	-- Desecrated Shoulderpads
+				i(22361),	-- Desecrated Spaulders
+				i(22350),	-- Desecrated Tunic
+				i(22356),	-- Desecrated Waistguard
+				i(22362),	-- Desecrated Wristguards
+			}),
 			n(ZONEDROPS, {
 				i(23221),	-- Misplaced Servo Arm
 				i(23044),	-- Harbinger of Doom
@@ -935,6 +978,10 @@ _.Instances = {
 				i(23665),	-- Leggings of Elemental Fury
 				i(23668),	-- Leggings of the Grand Crusader
 				i(23237),	-- Ring of the Eternal Flame
+				i(22374),	-- Wartorn Chain Scrap
+				i(22376),	-- Wartorn Cloth Scrap
+				i(22373),	-- Wartorn Leather Scrap
+				i(22375),	-- Wartorn Plate Scrap
 			}),
 			n(-368, { 	-- The Arachnid Quarter
 				["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
@@ -971,6 +1018,8 @@ _.Instances = {
 						i(23030),	-- Cloak of the Scourge
 						i(23028),	-- Hailstone Band
 						i(23031),	-- Band of the Inevitable
+						i(23005),	-- Totem of Flowing Water
+						i(23006),	-- Libram of Light
 					}),
 					n(15936, {	-- Heigan the Unclean
 						i(23019),	-- Icebane Helmet
@@ -1019,6 +1068,7 @@ _.Instances = {
 						i(23017),	-- Veil of Eclipse
 						i(23219),	-- Girdle of the Mentor
 						i(23018),	-- Signet of the Fallen Defender
+						i(23004),	-- Idol of Longevity
 					}),
 					n(16060, {	-- Gothik the Harvester
 						i(23032),	-- Glacial Headdress

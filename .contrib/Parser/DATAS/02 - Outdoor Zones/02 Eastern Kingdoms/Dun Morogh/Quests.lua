@@ -106,6 +106,17 @@ _.Zones =
 						i(2900),	-- Stone Buckler
 					},
 				}),
+				q(5625, {	-- Garments of the Light
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["sourceQuest"] = 5626,	-- In Favor of the Light
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["races"] = { DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
+					["groups"] = {
+						i(16605),	-- Friar's Robes of the Light
+					},
+				}),
 				q(403, {	-- Guarded Thunderbrew Barrel
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -113,6 +124,13 @@ _.Zones =
 						311,	-- Return to Marleth
 					},
 					["provider"] = { "o", 269 },	-- Guarded Thunder Ale Barrel
+				}),
+				q(5626, {	-- In Favor of the Light
+					["qg"] = 837,	-- Branstock Khalder <Priest Trainer>
+					["coord"] = { 28.6, 66.4, DUN_MOROGH },
+					["races"] = { DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 5,
 				}),
 				q(1679, {	-- Muren Stormpike
 					["qg"] = 1229,	-- Granis Swiftaxe <Warrior Trainer>

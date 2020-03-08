@@ -797,34 +797,26 @@ _.Instances = {
 					["questID"] = 4742,	-- Seal of Ascension
 				},
 				i(16247, {	-- Formula: Enchant 2H Weapon - Superior Impact
-					["crs"] = {
-						10317,	-- Blackhand Elite <Blackhand Legion>
-					},
+					["cr"] = 10317,	-- Blackhand Elite <Blackhand Legion>
 				}),
 				i(16244, {	-- Formula: Enchant Gloves - Greater Strength
-					["crs"] = {
-						9198,	-- Spirestone Mystic
-					},
+					["cr"] = 9198,	-- Spirestone Mystic
 				}),
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking
-					["crs"] = {
-						9216,	-- Spirestone Warlord
-					},
+					["cr"] = 9216,	-- Spirestone Warlord
+				}),
+				i(24102, {	-- Manual of Eviscerate IX
+					["u"] = 6,	-- Not available yet. [Phase 6]
+					["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 				}),
 				i(14513, {	-- Pattern: Robe of the Archmage
-					["crs"] = {
-						9264,	-- Firebrand Pyromancer
-					},
+					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
 				i(15749, {	-- Pattern: Volcanic Breastplate
-					["crs"] = {
-						9259,	-- Firebrand Grunt
-					},
+					["cr"] = 9259,	-- Firebrand Grunt
 				}),
 				i(15775, {	-- Pattern: Volcanic Shoulders
-					["crs"] = {
-						9260,	-- Firebrand Legionnaire
-					},
+					["cr"] = 9260,	-- Firebrand Legionnaire
 				}),
 				i(13494, {	-- Recipe: Greater Fire Protection Potion
 					["crs"] = {

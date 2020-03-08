@@ -636,6 +636,9 @@ _.Instances = {
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["groups"] = {
+						i(12102),	-- Ring of the Aristocrat
+					},
 				},
 				{
 					["questID"] = 4083,		-- The Spectral Chalice
@@ -886,12 +889,13 @@ _.Instances = {
 				["cost"] = {
 					{ "i", 21986, 1 },	-- Banner of Provocation
 				},
+				["u"] = 3,	-- Not Released Yet.
 				["groups"] = {
-					i(22047),	-- Top Piece of Lord Valthalak's Amulet
-					i(22305), 	-- Ironweave Mantle
-					i(22317), 	-- Lefty's Brass Knuckle
-					i(22318), 	-- Malgen's Long Bow
-					i(22330), 	-- Shroud of Arcane Mastery
+					un(3, i(22047)),	-- Top Piece of Lord Valthalak's Amulet
+					un(3, i(22305)), 	-- Ironweave Mantle
+					un(3, i(22317)), 	-- Lefty's Brass Knuckle
+					un(3, i(22318)), 	-- Malgen's Long Bow
+					un(3, i(22330)), 	-- Shroud of Arcane Mastery
 				},
 			}),
 			n(10096, {	-- Ring of Law

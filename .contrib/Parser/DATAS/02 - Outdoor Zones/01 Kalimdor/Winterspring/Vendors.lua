@@ -16,6 +16,14 @@ _.Zones =
 						i(16110),	-- Recipe: Monster Omelet	
 					},
 				}),
+				n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
+					["minReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
+					["coord"] = { 49.8, 9.8, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(13086), 	-- Reins of the Winterspring Frostsaber (MOUNT!)
+					},
+				}),
 				n(11189, {	-- Qia <Trade Goods Supplies>
 					["groups"] = {
 						i(14468),	-- Pattern: Runecloth Bag

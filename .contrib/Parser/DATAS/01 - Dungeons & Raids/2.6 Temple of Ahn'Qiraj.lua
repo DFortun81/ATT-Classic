@@ -818,6 +818,8 @@ _.Instances = {
 				i(21651),	-- Scaled Sand Reaver Leggings
 				i(21645),	-- Hive Tunneler's Boots
 				i(21647),	-- Fetish of the Sand Reaver
+				i(22402),	-- Libram of Grace
+				i(22396),	-- Totem of Life
 			}),
 			n(15299, {	-- Viscidus
 				["description"] = "This boss requires 20 frost hits to freeze. Once frozen, you need 30 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
@@ -995,6 +997,7 @@ _.Instances = {
 					i(21626),	-- Slime-Coated Leggings
 					i(21677),	-- Ring of Qiraji Fury
 					i(21625),	-- Scarab Brooch
+					i(22399),	-- Idol of Health
 				},
 			}),
 			n(15509, {	-- Princess Huhuran

@@ -99,6 +99,17 @@ _.Zones =
 					},
 					["lvl"] = 20,
 				}),
+				q(1848, {	-- Brutal Hauberk
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.23, 30.34, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+					["groups"] = {
+						i(7133),	-- Brutal Hauberk
+					},
+				}),
 				q(1522, {	-- Call of Fire (1/5) (Orgrimmar)
 					["qg"] = 5892,	-- Searn Firewarder
 					["coord"] = { 37.8, 37.4, ORGRIMMAR },
@@ -699,6 +710,18 @@ _.Zones =
 						i(10821),	-- Sower's Cloak
 					},
 				}),
+				q(1946, {	-- Nether-lace Garment
+					["qg"] = 3484,	-- Kil'hala <Journeyman Tailor>
+					["sourceQuest"] = 1945,	-- Laughing Sisters
+					["coord"] = { 52.2, 31.6, THE_BARRENS },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["lvl"] = 26,
+					["groups"] = {
+						i(7512),	-- Nether-lace Robe
+						i(9515),	-- Nether-lace Tunic
+					},
+				}),
 				q(1510, {	-- News of Dogran (2/2)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
@@ -1263,21 +1286,19 @@ _.Zones =
 					["coord"] = { 44.68, 59.42, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 7119, 5 },	-- Twitching Antenna
+					},
 					["lvl"] = 20,
+					["groups"] = {
+						i(7120),	-- Ruga's Bulwark
+					},
 				}),
 				q(878, {	-- Tribes at War
 					["qg"] = 3430,	-- Mangletooth
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
-				}),
-				q(1839, {	-- Ula'elek and the Brutal Gauntlets
-					["qg"] = 5878,	-- Thun'grim Firegaze
-					["sourceQuest"] = 1838,	-- Brutal Armor
-					["coord"] = { 57.2, 30.2, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
 				}),
 				q(851, {	-- Verog the Dervish
 					["qg"] = 3389,	-- Regthar Deathgate

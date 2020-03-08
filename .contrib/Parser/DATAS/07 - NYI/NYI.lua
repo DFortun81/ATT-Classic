@@ -43,6 +43,9 @@ _.NeverImplemented =
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
+	-- Argent Dawn Quests
+	q(5532),	-- <NYI> <TXT> Ring of the Dawn
+	
 	-- Dustwallow Marsh Quests that were never added.
 	q(1293),	-- <nyi> <TXT> Centaur Hoofprints
 	q(1295),	-- <nyi> <TXT> Course of Action
@@ -76,17 +79,74 @@ _.NeverImplemented =
 	-- Mulgore
 	q(774),	-- <UNUSED>
 	
+	-- Recipe Learning Quests
+	q(912),	-- Stonesplinter Trogg Disguise
+	q(9411),	-- <UNUSED>Infused Bandages
+	q(9414),	-- <UNUSED>Infused Bandages
+	q(9412),	-- <UNUSED>Crystal Flake Throat Lozenge
+	q(9413),	-- <UNUSED>Crystal Flake Throat Lozenge
+	
 	-- Scourge Invasion (Unused Quests)
 	q(9296),	-- reuse
 	q(9297),	-- reuse
 	q(9298),	-- reuse
 	
+	-- Mount Upgrade Quests
+	q(7674),	-- Black Ram Exchange
+	q(7673),	-- Frost Ram Exchange
+	q(7671),	-- Frostsaber Replacement
+	q(7675),	-- Icy Blue Mechanostrider Replacement
+	q(7664),	-- Ivory Raptor Replacement
+	q(7678),	-- Palomino Exchange
+	q(7663),	-- New Kodo - Green
+	q(7662),	-- New Kodo - Teal
+	q(7672),	-- Nightsaber Replacement
+	q(7665),	-- Red Raptor Replacement
+	q(7676),	-- White Mechanostrider Replacement
+	q(7677),	-- White Stallion Exchange
+	q(7660),	-- Wolf Swapping - Arctic Wolf
+	q(7661),	-- Wolf Swapping - Red Wolf
+	
 	-- Bind Type 0
 	-- Invalid (Filter Type 0)
+	i(8502),	-- Bronze Lotterybox
 	i(17968),	-- Charged Scale of Onyxia
+	i(8503),	-- Heavy Bronze Lotterybox
+	i(8505),	-- Heavy Iron Lotterybox
+	i(8507),	-- Heavy Mithril Lotterybox
+	i(20367),	-- Hunting Gear
+	i(8504),	-- Iron Lotterybox
+	i(8506),	-- Mithril Lotterybox
+	i(20834),	-- Ornate Spyglass XT
 	i(17967),	-- Refined Scale of Onyxia
 	i(3895),	-- TEST Legendary
 	i(22316),	-- Test Relic
+	
+	-- Mounts
+	i(13328),	-- Black Ram
+	i(20221),	-- Foror's Fabled Steed
+	i(13325),	-- Fluorescent Green Mechanostrider
+	i(13329),	-- Frost Ram
+	i(15292),	-- Green Kodo
+	i(12351),	-- Horn of the Arctic Wolf
+	i(12330),	-- Horn of the Red Wolf
+	i(13327),	-- Icy Blue Mechanostrider Mod A
+	i(12354),	-- Palomino Bridle
+	i(13323),	-- Purple Mechanostrider
+	i(13324),	-- Red & Blue Mechanostrider
+	i(12302),	-- Reins of the Frostsaber
+	i(12327),	-- Reins of the Golden Sabercat
+	i(12303),	-- Reins of the Nightsaber
+	i(12325),	-- Reins of the Primal Leopard
+	i(18768),	-- Reins of the Swift Dawnsaber
+	i(12326),	-- Reins of the Tawny Sabercat
+	i(21736),	-- Riding Gryphon Reins
+	i(23193),	-- Skeletal Steed Reins
+	i(15293),	-- Teal Kodo
+	i(13317),	-- Whistle of the Ivory Raptor
+	i(8586),	-- Whistle of the Mottled Red Raptor
+	i(13326),	-- White Mechanostrider Mod A
+	i(12353),	-- White Stallion Bridle
 	
 	-- Cloak
 	i(16116),	-- Test Nature Res Cloak Cloth
@@ -221,6 +281,7 @@ _.NeverImplemented =
 	i(18970),	-- Ring of Critical Testing 2
 	i(18971),	-- Ring of Critical Testing 3
 	i(18982),	-- Ring of Critical Testing 4
+	i(13812),	-- Ring of the Dawn
 	i(20445),	-- Test Defense Ring +120
 	i(20446),	-- Test Defense Ring +80
 	i(16067),	-- Test Fire Res Ring
@@ -238,6 +299,12 @@ _.NeverImplemented =
 	i(11676),	-- PH Legendary Arcane Amalgamation (Melee)
 	i(17347),	-- Syndicate Man Tracker (MURP)
 	i(18593),	-- Thorium Brotherhood Contract (OLD)
+	i(18157),	-- Black Moro'gai Gem
+	i(18155),	-- Blue Moro'gai Gem
+	i(18158),	-- Gold Moro'gai Gem
+	i(18156),	-- Green Moro'gai Gem
+	i(18153),	-- Red Moro'gai Gem
+	i(18159),	-- White Moro'gai Gem
 	
 	-- Bag
 	i(21194),	-- D'Sak's Big Sack
@@ -249,10 +316,171 @@ _.NeverImplemented =
 	-- Recipe
 	i(5688),	-- Test Language Item
 	
-	
 	-- Bind Type 1
+	-- Invalid
+	i(18595),	-- Blood Opal
+	i(23794),	-- Permanent Sheen of Zanza
+	i(23795),	-- Permanent Spirit of Zanza
+	i(23796),	-- Permanent Swiftness of Zanza
+	
+	-- Held in Off Hand
+	i(18316),	-- Obsidian Bauble
+	i(19989),	-- Tome of Devouring Shadows
+	
+	-- Axes
+	i(12779),	-- Rune Edge
+	
+	-- Cloak
+	i(22230),	-- Frightmaw Hide
+	i(16315),	-- Sergeant Major's Cape
+	i(16336),	-- Sergeant Major's Cape
+	i(16337),	-- Sergeant Major's Cape
+	
+	-- Cloth
+	i(20706),	-- Cenarion Reservist's Pants
+	i(17589),	-- General's Dreadweave Belt
+	i(17587),	-- General's Dreadweave Bracers
+	i(17619),	-- General's Satin Bracers
+	i(17621),	-- General's Satin Cinch
+	i(16538),	-- General's Silk Cuffs
+	i(16537),	-- General's Silk Sash
+	i(17565),	-- Knight-Captain's Dreadweave Belt
+	i(17563),	-- Knight-Captain's Dreadweave Bracers
+	i(17597),	-- Knight-Captain's Satin Cord
+	i(17595),	-- Knight-Captain's Satin Cuffs
+	i(16370),	-- Knight-Captain's Silk Cuffs
+	i(16367),	-- Knight-Captain's Silk Sash
+	i(17574),	-- Legionnaire's Dreadweave Belt
+	i(17575),	-- Legionnaire's Dreadweave Bracers
+	i(17615),	-- Legionnaire's Satin Cuffs
+	i(17614),	-- Legionnaire's Satin Sash
+	i(16488),	-- Legionnaire's Silk Belt
+	i(4989),	-- Mage Dragon Robe
+	i(17582),	-- Marshal's Dreadweave Cuffs
+	i(17585),	-- Marshal's Dreadweave Sash
+	i(17606),	-- Marshal's Satin Bracers
+	i(17609),	-- Marshal's Satin Sash
+	i(16438),	-- Marshal's Silk Bracers
+	i(16439),	-- Marshal's Silk Sash
+	i(6478),	-- Rat Stompers
+	i(4990),	-- Scorched Bands
+	i(12107),	-- Whispersilk Leggings
+	i(13080),	-- Widow's Clutch
+	
+	-- Leather
+	i(7950),	-- Armor of Thero-shan
+	i(7952),	-- Boots of Thero-shan
+	i(12104),	-- Brindlethorn Tunic
+	i(5821),	-- Darkstalker Boots
+	i(16556),	-- General's Dragonhide Belt
+	i(16553),	-- General's Dragonhide Bracers
+	i(16559),	-- General's Leather Armsplints
+	i(16557),	-- General's Leather Girdle
+	i(7948),	-- Girdle of Thero-shan
+	i(7951),	-- Hands of Thero-shan
+	i(16395),	-- Knight-Captain's Dragonhide Armsplints
+	i(16399),	-- Knight-Captain's Dragonhide Girdle
+	i(16398),	-- Knight-Captain's Leather Belt
+	i(16394),	-- Knight-Captain's Leather Bracers
+	i(16493),	-- Legionnaire's Dragonhide Armguards
+	i(16495),	-- Legionnaire's Dragonhide Waistband
+	i(16500),	-- Legionnaire's Leather Girdle
+	i(7949),	-- Leggings of Thero-shan
+	i(7953),	-- Mask of Thero-shan
+	i(16445),	-- Marshal's Dragonhide Bracers
+	i(16447),	-- Marshal's Dragonhide Waistguard
+	i(16460),	-- Marshal's Leather Armsplints
+	i(16458),	-- Marshal's Leather Cinch
+	i(22273),	-- Moonshadow Hood
+	i(19986),	-- Pirate's Eye Patch
+	i(20524),	-- Shadowhide Leggings
+	i(21613),	-- Wormhide Boots
+	i(21614),	-- Wormhide Protector
+	
+	-- Mail
+	i(21584),	-- Bracers of Eternal Reckoning
+	i(13090),	-- Breastplate of the Chosen
+	i(18320),	-- Demonheart Spaulders
+	i(16572),	-- General's Chain Girdle
+	i(16570),	-- General's Chain Wristguards
+	i(16576),	-- General's Mail Bracers
+	i(16575),	-- General's Mail Waistband
+	i(18304),	-- Greenroot Mail
+	i(5822),	-- Hedgeseed Gauntlets
+	i(16402),	-- Knight-Captain's Chain Armguards
+	i(16400),	-- Knight-Captain's Chain Girdle
+	i(16517),	-- Legionnaire's Chain Bracers
+	i(16529),	-- Legionnaire's Chain Girdle
+	i(16461),	-- Marshal's Chain Bracers
+	i(16464),	-- Marshal's Chain Girdle
+	i(12105),	-- Pridemail Leggings
+	i(21612),	-- Wormscale Stompers
+	i(21588),	-- Wristguards of Elemental Fury
+	
+	-- Plate
+	i(16546),	-- General's Plate Armguards
+	i(16547),	-- General's Plate Girdle
+	i(16412),	-- Knight-Captain's Lamellar Armsplints
+	i(16411),	-- Knight-Captain's Lamellar Cinch
+	i(16469),	-- Marshal's Lamellar Armguards
+	i(16470),	-- Marshal's Lamellar Belt
+	i(16481),	-- Marshal's Plate Bracers
+	i(16482),	-- Marshal's Plate Girdle
+	
+	-- Dagger
+	i(17142),	-- Shard of the Defiler
+	
+	-- Shield
+	i(20502),	-- Ironbark Shield
+	i(18303),	-- Nimble Buckler
+	
+	-- Ring
+	i(17000),	-- Band of the Wraith
+	i(4988),	-- Burning Obsidian Band
+	i(17108),	-- Mark of Deflection
+	
+	-- Trinket
+	i(13503),	-- Alchemists' Stone
+	i(20525),	-- Earthen Sigil
+	i(18355),	-- Ferra's Collar
+	i(20084),	-- Hunting Net
+	i(12805),	-- Orb of Fire
+	i(18438),	-- Sergeant's Mark
+	
+	-- Recipe
+	i(16073),	-- Artisan Cookbook
+	i(16085),	-- Artisan First Aid - Heal Thyself
+	i(16082),	-- Artisan Fishing - The Way of the Lure
+	i(5130),	-- Knowledge: Dalaran Wizard Disguise
+	i(5129),	-- Knowledge: Dark Iron Dwarf Disguise
+	i(5126),	-- Knowledge: Defias Disguise
+	i(5127),	-- Knowledge: South Seas Pirate Disguise
+	i(5132),	-- Knowledge: Syndicate Disguise
+	i(23689),	-- Manual: Crystal Infused Bandage
+	i(23690),	-- Recipe: Crystal Flake Throat Lozenge
+	i(5657),	-- Recipe: Instant Toxin
+	i(1164),	-- Sam's Tome
+	i(4144),	-- Tome of Polymorph: Cow
 	
 	-- Bind Type 2
+	-- Invalid
+	i(20583),	-- Sturdy Female Dwarf Mask
+	i(20584),	-- Sturdy Female Gnome Mask
+	i(20585),	-- Sturdy Female Human Mask
+	i(20586),	-- Sturdy Female Nightelf Mask
+	i(20587),	-- Sturdy Female Orc Mask
+	i(20588),	-- Sturdy Female Tauren Mask
+	i(20589),	-- Sturdy Female Troll Mask
+	i(20590),	-- Sturdy Female Undead Mask
+	i(20591),	-- Sturdy Male Dwarf Mask
+	i(20592),	-- Sturdy Male Gnome Mask
+	i(20593),	-- Sturdy Male Human Mask
+	i(20594),	-- Sturdy Male Nightelf Mask
+	i(20595),	-- Sturdy Male Orc Mask
+	i(20596),	-- Sturdy Male Tauren Mask
+	i(20597),	-- Sturdy Male Troll Mask
+	i(20598),	-- Sturdy Male Undead Mask
+	
 	-- Cloak
 	i(8195),	-- Nightscape Cloak
 	
@@ -267,8 +495,43 @@ _.NeverImplemented =
 	i(10038),	-- Stormcloth Shoulders
 	i(10020),	-- Stormcloth Vest
 	
-	-- 1H Axes
+	-- One Handed Axes
 	i(5255),	-- Quilboar Tomahawk
+	
+	-- One Handed Sword
+	i(19110),	-- Cold Forged Blade
+	i(4116),	-- Olmann Sewar
+	
+	-- Fist Weapons
+	i(12795),	-- Blood Talon
+	i(20005),	-- Devilsaur Claws
+	i(20003),	-- Devilsaur Claws
+	
+	-- Staff
+	i(3738),	-- Brewing Rod
+	i(20522),	-- Feral Staff
+	
+	-- Two Handed Sword
+	i(12469),	-- Mutilator
+	
+	-- Neck
+	i(18023),	-- Blood Ruby Pendant
+	i(7427),	-- Cerulean Talisman
+	i(5005),	-- Emberspark Pendant
+	i(5004),	-- Mark of the Kirin Tor
+	i(7548),	-- Onyx Choker
+	i(7467),	-- Vermilion Necklace
+	i(7550),	-- Warrior's Honor
+	
+	-- Finger [NOTE: A number of these have new item ids and the old versions were removed.]
+	i(7426),	-- Cerulean Ring
+	i(5000),	-- Coral Band
+	i(5010),	-- Inscribed Gold Ring
+	i(7497),	-- Ivory Band
+	i(7547),	-- Onyx Ring
+	i(5743),	-- Prismstone Ring
+	i(5008),	-- Quicksilver Ring
+	i(7466),	-- Vermilion Band
 	
 	-- Bind Type 3
 	

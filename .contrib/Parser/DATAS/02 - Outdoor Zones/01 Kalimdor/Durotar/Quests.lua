@@ -769,6 +769,15 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
 				}),
+				q(1839, {	-- Ula'elek and the Brutal Gauntlets
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+				}),
 				q(784, {	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok
 					["coord"] = { 52, 43.4, DUROTAR },

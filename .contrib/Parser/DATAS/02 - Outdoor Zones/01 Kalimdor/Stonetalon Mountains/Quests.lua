@@ -380,11 +380,17 @@ _.Zones =
 					["sourceQuest"] = 1088,	-- Ordanus
 					["coord"] = { 45.91, 60.35, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 5687, 1 },	-- Gatekeeper's Key
+						{ "i", 5691, 1 },	-- Barrow Key
+						{ "i", 5690, 1 },	-- Claw Key
+						{ "i", 5689, 1 },	-- Sleepers' Key
+					},
 					["lvl"] = 20,
 					["g"] = {
-						i(6669),	-- Sacred Band
-						i(5687),	-- Gatekeeper's Key
+						i(6671),	-- Juggernaut Leggings
 						i(6670),	-- Panther Armor
+						i(6669),	-- Sacred Band
 					},
 				}),
 				q(1063, {	-- The Elder Crone

@@ -380,6 +380,7 @@ _.Craftables =
 			i(15996),	-- Lifelike Mechanical Toad*
 			i(11826),	-- Lil' Smoky*
 			i(4401),	-- Mechanical Squirrel Box*
+			i(5507),	-- Ornate Spyglass
 			i(11825),	-- Pet Bombling*
 			i(21277),	-- Tranquil Mechanical Yeti*
 			i(10548),	-- Sniper Scope

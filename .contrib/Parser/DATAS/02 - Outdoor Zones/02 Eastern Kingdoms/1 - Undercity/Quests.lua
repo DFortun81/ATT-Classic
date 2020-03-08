@@ -75,6 +75,17 @@ _.Zones =
 						3762, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
+				q(1847, {	-- Brutal Legguards
+					["qg"] = 6411,	-- Velora Nitely
+					["sourceQuest"] = 1846,	-- Dragonmaw Shinbones
+					["coord"] = { 62.4, 39.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
+					["groups"] = {
+						i(7132),	-- Brutal Legguards
+					},
+				}),
 				q(1473, {	-- Creature of the Void
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },
@@ -87,6 +98,17 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5675,	-- Carendin Halgar
 					["description"] = "Completing this quest (1472) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1507).",
+				}),
+				q(1846, {	-- Dragonmaw Shinbones
+					["qg"] = 6411,	-- Velora Nitely
+					["sourceQuest"] = 1841,	-- Velora Nitely and the Brutal Legguards
+					["coord"] = { 62.4, 39.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["cost"] = {
+						{ "i", 7134, 8 },	-- Sturdy Dragonmaw Shinbone
+					},
+					["lvl"] = 20,
 				}),
 				q(232, {	-- Errand for Apothecary Zinge
 					["qg"] = 5204,	-- Apothecary Zinge
@@ -269,6 +291,17 @@ _.Zones =
 					["lvl"] = 45,
 					["races"] = HORDE_ONLY,
 				}),
+				q(1962, {	-- Spellfire Robes
+					["qg"] = 11049,	-- Rhiannon Davis <Expert Tailor>
+					["sourceQuest"] = 1961,	-- Gathering Materials
+					["coord"] = { 70.2, 30.2, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["classes"] = { MAGE },
+					["lvl"] = 15,
+					["groups"] = {
+						i(7510),	-- Lesser Spellfire Robes
+					},
+				}),
 				q(4489, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
@@ -441,6 +474,15 @@ _.Zones =
 					["groups"] = {
 						recipe(2652),	-- Touch of Weakness
 					},
+				}),
+				q(1841, {	-- Velora Nitely and the Brutal Legguards
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 18382,	-- Brutal Armor
+					["coord"] = { 257.2, 30.2, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 			}),
 		}),

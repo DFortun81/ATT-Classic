@@ -107,7 +107,7 @@ app.L = {
 		-- "Armor Types"
 		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
 		[2] = GetItemSubClassInfo(4,5),							-- Cosmetic
-		[3] = GetItemSubClassInfo(8,3),							-- Cloaks
+		[3] = INVTYPE_CLOAK,									-- Cloaks
 		[4] = GetItemSubClassInfo(4,1),							-- Cloth
 		[5] = GetItemSubClassInfo(4,2),							-- Leather
 		[6] = GetItemSubClassInfo(4,3),							-- Mail
@@ -136,7 +136,7 @@ app.L = {
 		[34] = GetItemSubClassInfo(2,13),						-- Fist Weapons
 
 		-- PADDING for extra types, if necessary
-		[50] = MISCELLANOUS,									-- Miscellaneous
+		[50] = AUCTION_CATEGORY_MISCELLANEOUS,					-- Miscellaneous
 		[51] = INVTYPE_NECK,									-- Neck
 		[52] = INVTYPE_FINGER,									-- Finger
 		[53] = INVTYPE_TRINKET,									-- Trinket

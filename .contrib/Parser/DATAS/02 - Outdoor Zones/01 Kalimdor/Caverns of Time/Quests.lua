@@ -19,6 +19,17 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 				}),
+				q(8730, {	-- Nefarius's Corruption
+					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
+					["cost"] = {
+						{ "i", 21138, 1 },	-- Red Scepter Shard
+					},
+					["u"] = 3,	-- Added in later phase
+					["groups"] = {
+						i(21529),	-- Amulet of Shadow Shielding
+						i(21530),	-- Onyx Embedded Leggings
+					},
+				}),
 				q(8584, {	-- Never Ask Me About My Business
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,

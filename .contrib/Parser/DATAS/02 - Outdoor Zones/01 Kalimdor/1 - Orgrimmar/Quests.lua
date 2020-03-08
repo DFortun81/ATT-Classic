@@ -223,6 +223,7 @@ _.Zones =
 					["g"] = {
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
+						i(22112),	-- Feralheart Spaulders
 					},
 				}),
 				q(9019, {	-- Anthion's Parting Words
@@ -233,6 +234,7 @@ _.Zones =
 					["g"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
+						i(22082),	-- Virtuous Mantle
 					},
 				}),
 				q(9017, {	-- Anthion's Parting Words
@@ -243,6 +245,7 @@ _.Zones =
 					["g"] = {
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
+						i(22016),	-- Beastmaster's Mantle
 					},
 				}),
 				q(9021, {	-- Anthion's Parting Words
@@ -253,6 +256,7 @@ _.Zones =
 					["g"] = {
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
+						i(22073),	-- Deathmist Mantle
 					},
 				}),
 				q(9018, {	-- Anthion's Parting Words
@@ -263,6 +267,7 @@ _.Zones =
 					["g"] = {
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
+						i(22068),	-- Sorcerer's Mantle
 					},
 				}),
 				q(8957, {	-- Anthion's Parting Words
@@ -273,6 +278,7 @@ _.Zones =
 					["g"] = {
 						i(22096),	-- Boots of The Five Thunders
 						i(22100),	-- Kilt of The Five Thunders
+						i(22101),	-- Pauldrons of The Five Thunders
 					},
 				}),
 				q(9020, {	-- Anthion's Parting Words
@@ -283,6 +289,7 @@ _.Zones =
 					["g"] = {
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
+						i(22008),	-- Darkmantle Spaulders
 					},
 				}),
 				q(9022, {	-- Anthion's Parting Words
@@ -293,6 +300,7 @@ _.Zones =
 					["g"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
+						i(22001),	-- Spaulders of Heroism
 					},
 				}),
 				q(8233, {	-- A Simple Request
@@ -524,6 +532,18 @@ _.Zones =
 						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
+				q(1945, {	-- Laughing Sisters
+					["qg"] = 5885,	-- Deino <Mage Trainer>
+					["sourceQuest"] = 1944,	-- Waters of Xavian
+					["coord"] = { 38.6, 86.0, ORGRIMMAR },
+					["maps"] = { ASHENVALE },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7270, 12 },	-- Laughing Sister's Hair
+					},
+					["lvl"] = 15,
+				}),
 				q(8250, {	-- Magecraft
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },
@@ -542,7 +562,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["lvl"] = 60,
 				}),
-				q(1509, {	--News of Dogran (1/2)
+				q(1509, {	-- News of Dogran (1/2)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
@@ -653,6 +673,14 @@ _.Zones =
 					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["isBreadcrumb"] = true,
 				}),
+				q(1943, {	-- Speak with Deino
+					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
+					["coord"] = { 85, 10.2, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["lvl"] = 26,
+				}),
 				q(3631, {	-- Summon Felsteed
 					["lvl"] = 40,
 					["races"] = HORDE_ONLY,
@@ -743,6 +771,30 @@ _.Zones =
 				q(7490, {	-- Victory for the Horde
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
+				}),
+				q(1944, {	-- Waters of Xavian
+					["qg"] = 5885,	-- Deino <Mage Trainer>
+					["sourceQuest"] = 1943,	-- Speak with Deino
+					["coord"] = { 38.6, 86.0, ORGRIMMAR },
+					["maps"] = { ASHENVALE },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7268, 1 },	-- Xavian Water Sample
+					},
+					["lvl"] = 26,
+					["groups"] = {
+						{
+							["itemID"] = 7269,	-- Deino's Flask
+							["coord"] = { 76, 41, ASHENVALE },
+							["groups"] = {
+								{
+									["itemID"] = 7268,	-- Xavian Water Sample
+									["questID"] = 1944,	-- Waters of Xavian
+								},
+							},
+						},
+					},
 				}),
 				q(2382, {	-- Wrenix of Ratchet
 					["qg"] = 3402,	-- Zando'zan

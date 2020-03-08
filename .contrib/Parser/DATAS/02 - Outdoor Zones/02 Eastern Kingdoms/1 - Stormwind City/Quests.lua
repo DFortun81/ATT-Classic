@@ -122,6 +122,18 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
 				}),
+				q(1942, {	-- Astral Knot Garment
+					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
+					["sourceQuest"] = 1940,	-- Pristine Spider Silk
+					["coord"] = { 41.8, 76.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { MAGE },
+					["lvl"] = 26,
+					["groups"] = {
+						i(9516),	-- Astral Knot Blouse
+						i(7511),	-- Astral Knot Robe
+					},
+				}),
 				q(1639, {	-- Bartleby the Drunk
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -234,6 +246,19 @@ _.Zones =
 						i(6972),	-- Fire Hardened Hauberk
 					},
 				}),
+				q(1921, {	-- Gathering Materials
+					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
+					["sourceQuest"] = 1920,	-- Investigate the Blue Recluse
+					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
+					["maps"] = { LOCH_MODAN },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 2589, 10 },	-- Linen Cloth
+						{ "i", 7249, 6 },	-- Charged Rift Gem
+					},
+					["lvl"] = 15,
+				}),
 				q(5048, {	-- Good Natured Emma
 					["qg"] = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
 					["sourceQuest"] = 5022,	-- Better Late Than Never
@@ -317,6 +342,30 @@ _.Zones =
 						{ "i", 8683, 2 },	-- Clara's Fresh Apple
 					},
 				}),
+				q(1920, {	-- Investigate the Blue Recluse
+					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
+					["sourceQuest"] = 1919,	-- Report to Jennea
+					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 7308, 1 },	-- Cantation of Manifestation
+						{ "i", 7292, 3 },	-- Filled Containment Coffer
+					},
+					["lvl"] = 15,
+					["groups"] = {
+						{
+							["itemID"] = 7247,	-- Chest of Containment Coffers
+							["coord"] = { 39.4, 83.3, STORMWIND_CITY },
+							["groups"] = {
+								{
+									["itemID"] = 7292,	-- Filled Containment Coffer
+									["questID"] = 1920,	-- Investigate the Blue Recluse
+								},
+							},
+						},
+					},
+				}),
 				q(3787, {	-- Jonespyre's Request
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
@@ -339,6 +388,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { MAGE },
 					["lvl"] = 50,
+				}),
+				q(1941, {	-- Manaweave Robe
+					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
+					["sourceQuest"] = 1921,	-- Gathering Materials
+					["coord"] = { 41.8, 76.4, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["lvl"] = 15,
+					["groups"] = {
+						i(7509),	-- Manaweave Robe
+					},
 				}),
 				q(1666, {	-- Marshal Haggard
 					["lvl"] = 10,
@@ -416,6 +476,14 @@ _.Zones =
 						2300,	-- SI:7(Elwynn Forest)
 					},
 					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
+				}),
+				q(1919, {	-- Report to Jennea
+					["qg"] = 7312,	-- Dink <Mage Trainer>
+					["coord"] = { 26.8, 8.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { MAGE },
+					["lvl"] = 15,
 				}),
 				q(6285, {	-- Return to Lewis
 					["qg"] = 352,	-- Dungar Longdrink
@@ -781,11 +849,14 @@ _.Zones =
 					},
 				}),
 				q(397, {	-- You Have Served Us Well
-					["lvl"] = 25,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["sourceQuest"] = 336,	-- A Noble Brew
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { WARLOCK },
+					["lvl"] = 25,
+					["groups"] = {
+						i(3556),	-- Dread Mage Hat
+					},
 				}),
 			}),
 		}),
