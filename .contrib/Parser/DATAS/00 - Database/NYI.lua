@@ -241,6 +241,7 @@ _.NeverImplemented =
 	i(16145),	-- Test Shadow Res Waist Cloth
 	
 	-- Leather
+	i(14550),	-- Bladebane Armguards
 	i(21594),	-- Bracers of the Fallen Son
 	i(19743),	-- Cloaked Hood TEST
 	i(19742),	-- Earthborn Kilt TEST
@@ -255,6 +256,7 @@ _.NeverImplemented =
 	i(16132),	-- Test Nature Res Wrist Mail
 	i(16148),	-- Test Shadow Res Shoulders Leather
 	i(16150),	-- Test Shadow Res Waist Leather
+	i(7187),	-- VanCleef's Boots
 	
 	-- Mail
 	i(16157),	-- Test Arcane Res Feet Mail

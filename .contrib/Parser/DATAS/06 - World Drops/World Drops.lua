@@ -735,7 +735,7 @@ _.WorldDrops =
 		i(14427),	-- Windchaser Wraps
 		i(13101),	-- Wolfrunner Shoes
 	}),
-	filter(5, {	-- Leather [Needs to be Verified]
+	filter(5, {	-- Leather
 		i(10261),	-- Adventurer's Bandana
 		i(10259),	-- Adventurer's Belt
 		i(10257),	-- Adventurer's Boots
@@ -765,8 +765,7 @@ _.WorldDrops =
 		i(6553),	-- Bard's Trousers
 		i(6552),	-- Bard's Tunic
 		i(1718),	-- Basilisk Hide Pants
-		i(14550),	-- Bladebane Armguards
-		i(720),	-- Brawler Gloves
+		i(720),		-- Brawler Gloves
 		i(14573),	-- Bristlebark Amice
 		i(14567),	-- Bristlebark Belt
 		i(14569),	-- Bristlebark Bindings
@@ -857,7 +856,7 @@ _.WorldDrops =
 		i(15151),	-- Ghostwalker Legguards
 		i(15150),	-- Ghostwalker Pads
 		i(15144),	-- Ghostwalker Rags
-		i(867),	-- Gloves of Holy Might
+		i(867),		-- Gloves of Holy Might
 		i(6421),	-- Glyphed Belt
 		i(6420),	-- Glyphed Boots
 		i(4059),	-- Glyphed Bracers
@@ -1191,7 +1190,6 @@ _.WorldDrops =
 		i(15361),	-- Trickster's Sash
 		i(15359),	-- Trickster's Vest
 		i(13114),	-- Troll's Bane Leggings
-		i(7187),	-- VanCleef's Boots
 		i(10105),	-- Wanderer's Armor
 		i(10109),	-- Wanderer's Belt
 		i(10106),	-- Wanderer's Boots
