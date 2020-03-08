@@ -1964,7 +1964,7 @@ _.WorldDrops =
 		i(14868),	-- Warleader's Shoulders
 		i(13066),	-- Wyrmslayer Spaulders
 	}),
-	n(-319, {	-- Weapons [Needs to be Verified]
+	n(-319, {	-- Weapons
 		n(-334, {	-- 1H Axes
 			i(13014),	-- Axe of Rin'ji
 			i(811),		-- Axe of the Deep Woods
@@ -2077,11 +2077,10 @@ _.WorldDrops =
 			i(4571),	-- War Knife
 			i(4091),	-- Widowmaker
 		}),
-		n(-345, {	-- Guns [Needs to be Verified]
+		n(-345, {	-- Guns
 			i(3042),	-- BKP "Sparrow" Smallbore
 			i(15324),	-- Burnside Rifle
 			i(4577),	-- Compact Shotgun
-			i(20722),	-- Crystal Slugthrower
 			i(2098),	-- Double-barreled Shotgun
 			i(2099),	-- Dwarven Hand Cannon
 			i(8188),	-- Explosive Shotgun
@@ -2098,8 +2097,8 @@ _.WorldDrops =
 			i(3430),	-- Sniper Rifle
 			i(13138),	-- The Silencer
 		}),
-		n(-336, {	-- 1H Maces [Needs to be Verified]
-			i(868),	-- Ardent Custodian
+		n(-336, {	-- 1H Maces
+			i(868),		-- Ardent Custodian
 			i(15222),	-- Barbed Club
 			i(15224),	-- Battlesmasher
 			i(13024),	-- Beazel's Basher
@@ -2111,30 +2110,27 @@ _.WorldDrops =
 			i(15227),	-- Diamond-Tip Bludgeon
 			i(15226),	-- Giant Club
 			i(8194),	-- Goblin Nutcracker
-			i(810),	-- Hammer of the Northern Wind
+			i(810),		-- Hammer of the Northern Wind
 			i(2243),	-- Hand of Edward the Odd
 			i(13026),	-- Heaven's Light
 			i(15223),	-- Jagged Star
-			i(865),	-- Leaden Mace
+			i(865),		-- Leaden Mace
 			i(13048),	-- Looming Gavel
 			i(13006),	-- Mass of McGowan
-			i(936),	-- Midnight Mace
+			i(936),		-- Midnight Mace
 			i(4090),	-- Mug O' Hurt
 			i(1207),	-- Murphstar
-			i(1958),	-- Petrified Shinbone
 			i(2075),	-- Priest's Mace
-			i(19808),	-- Rockhide Strongfish
 			i(15225),	-- Sequoia Hammer
 			i(2079),	-- Sergeant's Warhammer
 			i(2256),	-- Skeletal Club
 			i(1608),	-- Skullcrusher Mace
 			i(15228),	-- Smashing Star
 			i(4569),	-- Staunch Hammer
-			i(6360),	-- Steelscale Crushfish
-			i(789),	-- Stout Battlehammer
+			i(789),		-- Stout Battlehammer
 			i(1721),	-- Viking Warhammer
 		}),
-		n(-337, {	-- 2H Maces [Needs to be Verified]
+		n(-337, {	-- 2H Maces
 			i(15264),	-- Backbreaker
 			i(1990),	-- Ballast Maul
 			i(3198),	-- Battering Hammer
@@ -2146,7 +2142,6 @@ _.WorldDrops =
 			i(15266),	-- Fierce Mauler
 			i(15262),	-- Greater Maul
 			i(15259),	-- Hefty Battlehammer
-			i(12772),	-- Inlaid Thorium Hammer
 			i(3193),	-- Oak Mallet
 			i(15265),	-- Painbringer
 			i(12983),	-- Rakzur Club

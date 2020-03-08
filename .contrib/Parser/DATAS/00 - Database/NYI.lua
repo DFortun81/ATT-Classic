@@ -309,9 +309,11 @@ _.NeverImplemented =
 	
 	-- One Handed Mace
 	i(21127),	-- Ahn'Qiraj Mace PH
+	i(16792),	-- Giant Club
 	i(18800),	-- TEST 1H Amberseal Keeper
 	
 	-- Two Handed Mace
+	i(12772),	-- Inlaid Thorium Hammer
 	i(18881),	-- TEST Ragnaros Hammer
 	i(19158),	-- TEST Sulfuras, Hand of Ragnaros
 	

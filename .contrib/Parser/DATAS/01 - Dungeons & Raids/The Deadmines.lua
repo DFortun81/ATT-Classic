@@ -138,6 +138,9 @@ _.Instances = {
 				i(8492, {	-- Parrot Cage
 					["cr"] = 657,	-- Defias Pirate
 				}),
+				i(1958, {	-- Petrified Shinbone
+					["cr"] = 625,	-- Undead Dynamiter
+				}),
 				i(7997, {	-- Red Defias Mask
 					["description"] = "Can drop in Westfall and The Deadmines. Rogues typically keep this mask for appearance sets.",
 				}),

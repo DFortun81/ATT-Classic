@@ -192,6 +192,10 @@ profession(FISHING, {
 			["lvl"] = 35,
 		}),
 	}),
+	filter(23, {	-- 1H Maces
+		i(19808),	-- Rockhide Strongfish
+		i(6360),	-- Steelscale Crushfish
+	}),
 	filter(52, {	-- Finger
 		i(8350),	-- The 1 Ring
 	}),
