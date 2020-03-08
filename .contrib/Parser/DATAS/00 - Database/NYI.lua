@@ -298,6 +298,9 @@ _.NeverImplemented =
 	i(138),	-- Deprecated War Harness
 	i(3148),	-- Deprecated Work Shirt
 	
+	-- Shield
+	i(18342),	-- Quel'dorai Guard
+	
 	-- Dagger
 	i(24071),	-- Bland Dagger
 	

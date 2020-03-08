@@ -1715,7 +1715,7 @@ _.WorldDrops =
 		i(13130),	-- Windrunner Legguards
 		i(13012),	-- Yorgen Bracers
 	}),
-	filter(7, {	-- Plate [Needs to be Verified]
+	filter(7, {	-- Plate
 		i(8312),	-- Alabaster Breastplate
 		i(8314),	-- Alabaster Plate Gauntlets
 		i(8315),	-- Alabaster Plate Girdle
@@ -2299,7 +2299,7 @@ _.WorldDrops =
 			i(15280),	-- Wizard's Hand
 		}),
 	}),
-	filter(8, {	-- Shield [Needs to be Verified]
+	filter(8, {	-- Shield
 		i(1203),	-- Aegis of Stormwind
 		i(8320),	-- Alabaster Shield
 		i(15604),	-- Ancient Defender
@@ -2394,7 +2394,6 @@ _.WorldDrops =
 		i(15563),	-- Pillager's Shield
 		i(15893),	-- Prospector's Buckler
 		i(14790),	-- Protector Buckler
-		i(18342),	-- Quel'dorai Guard
 		i(9790),	-- Raider's Shield
 		i(14777),	-- Ravager's Shield
 		i(12997),	-- Redbeard Crest
