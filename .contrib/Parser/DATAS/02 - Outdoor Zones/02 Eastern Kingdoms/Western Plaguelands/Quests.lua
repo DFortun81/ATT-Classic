@@ -473,11 +473,12 @@ _.Zones =
 					["cost"] = {
 						{ "i", 12738, 1 },	-- Dalson Outhouse Key
 					},
+					["altQuests"] = { 5060 },	-- Locked Away
 					["lvl"] = 52,
 					["groups"] = {
 						{
 							["itemID"] = 12738,	-- Dalson Outhouse Key
-							["questID"] = 5059,	-- Locked Away
+							["questID"] = 5060,	-- Locked Away
 							["cr"] = 10816,	-- Wandering Skeleton
 							["coord"] = { 48.0, 49.8, WESTERN_PLAGUELANDS },
 						},
