@@ -303,6 +303,9 @@ _.NeverImplemented =
 	
 	-- Dagger
 	i(24071),	-- Bland Dagger
+	i(5742),	-- Gemstone Dagger
+	i(2664),	-- Spinner Fang
+	i(3222),	-- Wicked Dagger
 	
 	-- One Handed Mace
 	i(21127),	-- Ahn'Qiraj Mace PH
@@ -317,8 +320,10 @@ _.NeverImplemented =
 	i(18582),	-- The Twin Blades of Azzinoth
 
 	-- Two Handed Sword
+	i(913),		-- Huge Ogre Sword
 	i(22814),	-- Naxxramas Sword 2H 2 PH
 	i(18882),	-- TEST Level 80 Epic
+	i(12764),	-- Thorium Greatsword
 
 	-- Wand
 	i(21124),	-- Ahn'Qiraj Wand PH
@@ -337,7 +342,10 @@ _.NeverImplemented =
 
 	-- Polearm
 	i(22817),	-- Naxxramas Polearm PH
-
+	
+	-- Bows
+	i(5748),	-- Centaur Longbow
+	
 	-- Gun
 	i(6255),	-- Fishing Pole (JEFFTEST)
 	i(18763),	-- TEST GUN Alliance20 

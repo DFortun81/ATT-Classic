@@ -111,6 +111,9 @@ _.Instances = {
 				i(1959, {	-- Cold Iron Pick
 					["cr"] = 623,	-- Skeletal Miner
 				}),
+				i(1928, {	-- Defias Mage Staff
+					["cr"] = 1726,	-- Defias Magician
+				}),
 				i(1925, {	-- Defias Rapier
 					["cr"] = 1725,	-- Defias Watchman
 				}),

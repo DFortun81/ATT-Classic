@@ -75,6 +75,7 @@ _.Instances = {
 				i(5819),	-- Sunblaze Coif
 				i(1992),	-- Swampchill Fetish
 				i(8225),	-- Tainted Pierce
+				i(8226),	-- The Butcher
 				i(7760),	-- Warchief Kilt
 				i(7727),	-- Watchman Pauldrons
 				i(7757),	-- Windweaver Staff

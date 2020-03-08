@@ -1993,7 +1993,7 @@ _.WorldDrops =
 			i(934),		-- Stalvan's Reaper
 			i(15238),	-- Warlord's Axe
 		}),
-		n(-335, {	-- 2H Axes [Needs to be Verified]
+		n(-335, {	-- 2H Axes
 			i(3201),	-- Barbarian War Axe
 			i(3195),	-- Barbaric Battle Axe
 			i(3199),	-- Battle Slayer
@@ -2003,7 +2003,7 @@ _.WorldDrops =
 			i(15271),	-- Colossal Great Axe
 			i(15273),	-- Death Striker
 			i(13018),	-- Executioner's Cleaver
-			i(870),	-- Fiery War Axe
+			i(870),		-- Fiery War Axe
 			i(15270),	-- Gigantic War Axe
 			i(1639),	-- Grinning Axe
 			i(13017),	-- Hellslayer Battle Axe
@@ -2017,12 +2017,11 @@ _.WorldDrops =
 			i(4562),	-- Severing Axe
 			i(15268),	-- Twin-bladed Axe
 		}),
-		n(-346, {	-- Bows [Needs to be Verified]
+		n(-346, {	-- Bows
 			i(15285),	-- Archer's Longbow
 			i(15289),	-- Archstrike Bow
 			i(15288),	-- Blasthorn Bow
 			i(2825),	-- Bow of Searing Arrows
-			i(5748),	-- Centaur Longbow
 			i(15287),	-- Crusader Bow
 			i(13023),	-- Eaglehorn Long Bow
 			i(13022),	-- Gryphonwing Long Bow
@@ -2045,13 +2044,13 @@ _.WorldDrops =
 			i(4087),	-- Trueshot Bow
 			i(3037),	-- Whipwood Recurve Bow
 		}),
-		n(-347, {	-- Crossbows [Needs to be Verified]
+		n(-347, {	-- Crossbows
 			i(13037),	-- Crystalpine Stinger
 			i(13040),	-- Heartseeking Crossbow
 			i(13039),	-- Skull Splitting Crossbow
 			i(13038),	-- Swiftwind
 		}),
-		n(-333, {	-- Daggers [Needs to be Verified]
+		n(-333, {	-- Daggers
 			i(14555),	-- Alcor's Sunrazor
 			i(15241),	-- Battle Knife
 			i(2236),	-- Blackfang
@@ -2060,11 +2059,9 @@ _.WorldDrops =
 			i(2912),	-- Claw of the Shadowmancer
 			i(2819),	-- Cross Dagger
 			i(2632),	-- Curved Dagger
-			i(20720),	-- Dark Whisper Blade
 			i(15243),	-- Deadly Kris
 			i(15246),	-- Demon Blade
 			i(4088),	-- Dreadblade
-			i(5742),	-- Gemstone Dagger
 			i(2164),	-- Gut Ripper
 			i(15242),	-- Honed Stiletto
 			i(3184),	-- Hook Dagger
@@ -2073,13 +2070,11 @@ _.WorldDrops =
 			i(3187),	-- Sacrificial Kris
 			i(5267),	-- Scarlet Kris
 			i(2163),	-- Shadowblade
-			i(2664),	-- Spinner Fang
 			i(24222),	-- The Shadowfoot Stabber
 			i(8006),	-- The Ziggler
 			i(1465),	-- Tigerbane
 			i(15245),	-- Vorpal Dagger
 			i(4571),	-- War Knife
-			i(3222),	-- Wicked Dagger
 			i(4091),	-- Widowmaker
 		}),
 		n(-345, {	-- Guns [Needs to be Verified]
@@ -2164,7 +2159,7 @@ _.WorldDrops =
 			i(13047),	-- Twig of the World Tree
 			i(13045),	-- Viscous Hammer
 		}),
-		n(-343, {	-- Polearms [Needs to be Verified]
+		n(-343, {	-- Polearms
 			i(13057),	-- Bloodpike
 			i(13055),	-- Bonechewer
 			i(13056),	-- Frenzied Striker
@@ -2175,70 +2170,67 @@ _.WorldDrops =
 			i(13059),	-- Stoneraven
 			i(13060),	-- The Needler
 		}),
-		n(-342, {	-- Staves [Needs to be Verified]
+		n(-342, {	-- Staves
 			i(3185),	-- Acrobatic Staff
-			i(937),	-- Black Duskwood Staff
-			i(1928),	-- Defias Mage Staff
+			i(937),		-- Black Duskwood Staff
 			i(15274),	-- Diviner Long Staff
 			i(2072),	-- Dwarven Magestaff
-			i(944),	-- Elemental Mage Staff
-			i(812),	-- Glowing Brightwood Staff
-			i(791),	-- Gnarled Ash Staff
+			i(944),		-- Elemental Mage Staff
+			i(812),		-- Glowing Brightwood Staff
+			i(791),		-- Gnarled Ash Staff
 			i(2077),	-- Magician Staff
 			i(15276),	-- Magus Long Staff
 			i(4575),	-- Medicine Staff
-			i(866),	-- Monk's Staff
+			i(866),		-- Monk's Staff
 			i(15278),	-- Solstice Staff
 			i(1607),	-- Soulkeeper
 			i(1613),	-- Spiritchaser Staff
 			i(13000),	-- Staff of Hale Magefire
-			i(873),	-- Staff of Jordan
+			i(873),		-- Staff of Jordan
 			i(4566),	-- Sturdy Quarterstaff
 			i(1720),	-- Tanglewood Staff
 			i(15275),	-- Thaumaturgist Staff
-			i(890),	-- Twisted Chanter's Staff
-			i(943),	-- Warden Staff
+			i(890),		-- Twisted Chanter's Staff
+			i(943),		-- Warden Staff
 		}),
-		n(-338, {	-- 1H Swords [Needs to be Verified]
+		n(-338, {	-- 1H Swords
 			i(13036),	-- Assassination Blade
 			i(15220),	-- Battlefell Sabre
-			i(809),	-- Bloodrazor
+			i(809),		-- Bloodrazor
 			i(15218),	-- Crystal Sword
-			i(869),	-- Dazzling Longsword
+			i(869),		-- Dazzling Longsword
 			i(3740),	-- Decapitating Sword
 			i(15219),	-- Dimensional Blade
 			i(8196),	-- Ebon Scimitar
 			i(15212),	-- Fighter Broadsword
 			i(15215),	-- Furious Falchion
 			i(8190),	-- Hanzo Sword
-			i(1493),	-- Heavy Marauder Scimitar
 			i(15221),	-- Holy War Sword
 			i(12976),	-- Ironpatch Blade
-			i(864),	-- Knightly Longsword
+			i(864),		-- Knightly Longsword
 			i(2244),	-- Krol Blade
 			i(15213),	-- Mercenary Blade
 			i(15211),	-- Militant Shortsword
-			i(935),	-- Night Watch Shortsword
+			i(935),		-- Night Watch Shortsword
 			i(15214),	-- Nobles Brand
 			i(2078),	-- Northern Shortsword
-			i(727),	-- Notched Shortsword
+			i(727),		-- Notched Shortsword
 			i(15210),	-- Raider Shortsword
 			i(15216),	-- Rune Sword
 			i(1265),	-- Scorpion Sting
 			i(13035),	-- Serpent Slicer
-			i(754),	-- Shortsword of Vengeance
+			i(754),		-- Shortsword of Vengeance
 			i(13034),	-- Speedsteel Rapier
 			i(13032),	-- Sword of Corruption
 			i(6622),	-- Sword of Zeal
 			i(1728),	-- Teebu's Blazing Longsword
 			i(12974),	-- The Black Knight
-			i(8226),	-- The Butcher
 			i(2011),	-- Twisted Sabre
 			i(3186),	-- Viking Sword
 			i(15217),	-- Widow Blade
 			i(13033),	-- Zealot Blade
 		}),
-		n(-339, {	-- 2H Swords [Needs to be Verified]
+		n(-339, {	-- 2H Swords
 			i(9385),	-- Archaic Defender
 			i(8199),	-- Battlefield Destroyer
 			i(15253),	-- Beheading Blade
@@ -2249,7 +2241,7 @@ _.WorldDrops =
 			i(15254),	-- Dark Espadon
 			i(13049),	-- Deanship Claymore
 			i(13044),	-- Demonslayer
-			i(647),	-- Destiny
+			i(647),		-- Destiny
 			i(15258),	-- Divine Warblade
 			i(13053),	-- Doombringer
 			i(3196),	-- Edged Bastard Sword
@@ -2259,7 +2251,6 @@ _.WorldDrops =
 			i(15250),	-- Glimmering Flamberge
 			i(13041),	-- Guardian Blade
 			i(15251),	-- Headstriker Sword
-			i(913),	-- Huge Ogre Sword
 			i(15256),	-- Massacre Sword
 			i(4567),	-- Merc Sword
 			i(1982),	-- Nightblade
@@ -2269,13 +2260,12 @@ _.WorldDrops =
 			i(3192),	-- Short Bastard Sword
 			i(3197),	-- Stonecutter Claymore
 			i(13042),	-- Sword of the Magistrate
-			i(12764),	-- Thorium Greatsword
 			i(8178),	-- Training Sword
 			i(15252),	-- Tusker Sword
 			i(13052),	-- Warmonger
 			i(13051),	-- Witchfury
 		}),
-		n(-341, {	-- Wands [Needs to be Verified]
+		n(-341, {	-- Wands
 			i(5212),	-- Blazing Wand
 			i(8186),	-- Dire Wand
 			i(15282),	-- Dragon Finger
