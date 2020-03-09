@@ -2434,48 +2434,8 @@ local function AttachTooltip(self)
 				local link = select(2, self:GetItem());
 				if link then AttachTooltipSearchResults(self, link, SearchForLink, link); end
 				
-				-- Does the tooltip have an owner?
-				if owner then
-					-- If the owner has a ref, it's an ATT row. Ignore it.
-					if owner.ref then return true; end
-					
-					--[[--
-					-- Debug all of the available fields on the owner.
-					self:AddDoubleLine("GetOwner", tostring(owner:GetName()));
-					for i,j in pairs(owner) do
-						self:AddDoubleLine(tostring(i), tostring(j));
-					end
-					self:Show();
-					--]]--
-					
-					local gf;
-					if owner.lastNumMountsNeedingFanfare then
-						-- Collections
-						gf = app:GetWindow("Prime").data;
-					elseif owner.NewAdventureNotice then
-						-- Adventure Guide
-						gf = app:GetWindow("Prime").data.g[1];
-					elseif owner.tooltipText then
-						if type(owner.tooltipText) == "string" then 
-							if owner.tooltipText == DUNGEONS_BUTTON then
-								-- Group Finder
-								gf = app:GetWindow("Prime").data.g[4];
-							elseif owner.tooltipText == BLIZZARD_STORE then
-								-- Shop
-								gf = app:GetWindow("Prime").data.g[15];
-							elseif string.sub(owner.tooltipText, 1, string.len(ACHIEVEMENT_BUTTON)) == ACHIEVEMENT_BUTTON then
-								-- Achievements
-								gf = app:GetWindow("Prime").data.g[5];
-							end
-						end
-					end
-					if gf then
-						app.noDepth = true;
-						AttachTooltipSearchResults(self, owner:GetName(), (function() return gf; end), owner:GetName(), 1);
-						app.noDepth = nil;
-						self:Show();
-					end
-				end
+				-- If the owner has a ref, it's an ATT row. Ignore it.
+				if owner and owner.ref then return true; end
 				
 				-- Addons Menu?
 				if numLines == 2 then
