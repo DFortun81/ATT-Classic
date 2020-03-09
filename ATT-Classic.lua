@@ -1267,7 +1267,7 @@ end
 end)();
 local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 	for i,group in ipairs(groups) do
-		if true or app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
+		if app.GroupRequirementsFilter(group) and app.GroupFilter(group) then
 			local right = nil;
 			if group.total and (group.total > 1 or (group.total > 0 and not group.collectible)) then
 				if (group.progress / group.total) < 1 or app.Settings:Get("Show:CompletedGroups") then
