@@ -57,6 +57,14 @@ _.Zones =
 						i(12250),	-- Midnight Axe
 					},
 				}),
+				n(12919, {	-- Nat Pagle
+					["sourceQuest"] = 8227,	-- Nat's Measuring Tape
+					["coord"] = { 58.6, 60.1, DUSTWALLOW_MARSH },
+					["description"] = "He will only sell you the Mudskunk Lures once you have turned in Nat's Measuring Tape.",
+					["groups"] = {
+						i(19974),	-- Mudskunk Lure
+					},
+				}),
 				n(4879, {	-- Ogg'marr <Butcher>
 					["races"] = HORDE_ONLY,
 					["groups"] = {

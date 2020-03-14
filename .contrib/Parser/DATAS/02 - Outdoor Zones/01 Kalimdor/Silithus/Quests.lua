@@ -766,9 +766,10 @@ _.Zones =
 					},
 				}),
 				q(9023, {	-- The Perfect Poison
+					["qg"] = 16091,	-- Dirk Thunderwood
+					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
-					["qg"] = 16091,	-- Dirk Thunderwood
 					["g"] = {
 						i(22378),	-- Ravenholdt Slicer
 						i(22379),	-- Shivsprocket's Shiv

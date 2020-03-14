@@ -1,12 +1,12 @@
 ## Author: Crieve-Sargeras
-## Interface: 11303
+## Interface: 11304
 ## X-Curse-Project-ID: 267285
 ## Title: ATT-Classic
 ## Name: ATT-Classic
 ## SavedVariables: ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
 ## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 0.1.7
+## Version: 0.1.7a
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
