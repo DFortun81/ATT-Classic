@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = bubbleDown({ ["u"] = 3 }, {		-- Added in later phase
+_.Instances = {
 	map(ZULGURUB, {
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["isRaid"] = true,
@@ -959,6 +959,7 @@ _.Instances = bubbleDown({ ["u"] = 3 }, {		-- Added in later phase
 					},
 				}),
 				i(19881, {	-- Channeler's Head
+					["questID"] = 8201,	-- A Collection of Heads
 					["crs"] = {
 						14509,	-- High Priest Thekal
 						14507,	-- High Priest Venoxis
@@ -1314,6 +1315,7 @@ _.Instances = bubbleDown({ ["u"] = 3 }, {		-- Added in later phase
 				{
 					["itemID"] = 22216,	-- Venoxis's Venom Sac
 					["questID"] = 9023,	-- The Perfect Poison
+					["u"] = 3, 	-- Not available until AQ.
 				},
 				i(19903),	-- Fang of Venoxis
 				i(19900),	-- Zulian Stone Axe
@@ -1416,6 +1418,11 @@ _.Instances = bubbleDown({ ["u"] = 3 }, {		-- Added in later phase
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
 					i(22739),	-- Tome of Polymorph: Turtle
+					{
+						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
+						["recipeID"] = 28271,	-- Polymorph (Turtle)
+						["classes"] = { MAGE },
+					},
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
@@ -1463,4 +1470,4 @@ _.Instances = bubbleDown({ ["u"] = 3 }, {		-- Added in later phase
 			}),
 		},
 	}),
-});
+};
