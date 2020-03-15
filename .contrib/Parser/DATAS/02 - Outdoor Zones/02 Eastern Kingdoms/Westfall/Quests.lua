@@ -64,6 +64,7 @@ _.Zones =
 					["description"] = "Simply target any Chicken and spam /chicken at it until it emotes at you. This will take about 100 emotes. (make a macro!)\n\nOnce it does, type /cheer with it targetted.\n\nThe Chicken will never turn friendly for a Horde player, even if they get the emote.",
 					["maps"] = { TIRISFALL_GLADES, DUSKWOOD, ELWYNN_FOREST, DUSTWALLOW_MARSH, WESTFALL, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11109, 1 },	-- Special Chicken Feed
 					},
