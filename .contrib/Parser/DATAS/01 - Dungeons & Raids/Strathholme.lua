@@ -318,6 +318,7 @@ _.Instances = {
 					["itemID"] = 12734,	-- Enchanted Scarlet Thread
 					["questID"] = 5063,	-- Cap of the Scarlet Savant
 					["description"] = "These can be found in 4 places in the Scarlet Enclave.\n\n1&2: Malor's Room on the Table\n3: In the next room before you split to Cannon Master or Archivist.\n4: In Archivist's room on a box in the back.",
+					["repeatable"] = true,
 				},
 				{
 					["itemID"] = 12735,	-- Frayed Abomination Stitching

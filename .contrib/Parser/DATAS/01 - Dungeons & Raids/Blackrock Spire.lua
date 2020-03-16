@@ -131,6 +131,7 @@ _.Instances = {
 					["qg"] = 10637,	-- Malyfous Darkhammer
 					["coord"] = { 61, 38.8, WINTERSPRING },
 					["maps"] = { STRATHOLME, WINTERSPRING },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12731, 1 },	-- Pristine Hide of the Beast
 						{ "i", 12735, 5 },	-- Frayed Abomination Stitching
