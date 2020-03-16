@@ -410,24 +410,16 @@ _.Instances = {
 					["description"] = "This can only drop from Elites."
 				}),
 				i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit
-					["crs"] = {
-						10469,	-- Scholomance Adept
-					},
+					["cr"] = 10469,	-- Scholomance Adept
 				}),
 				i(16254, {	-- Formula: Enchant Weapon - Lifestealing
-					["crs"] = {
-						10499,	-- Spectral Researcher
-					},
+					["cr"] = 10499,	-- Spectral Researcher
 				}),
 				i(15776, {	-- Pattern: Runic Leather Armor
-					["crs"] = {
-						11582,	-- Scholomance Dark Summoner
-					},
+					["cr"] = 11582,	-- Scholomance Dark Summoner
 				}),
 				i(15773, {	-- Pattern: Wicked Leather Armor
-					["crs"] = {
-						10499,	-- Spectral Researcher
-					},
+					["cr"] = 10499,	-- Spectral Researcher
 				}),
 				i(12843, {	-- Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
