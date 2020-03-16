@@ -583,6 +583,7 @@ _.Instances = {
 					["itemID"] = 12736,	-- Frostwhisper's Embalming Fluid
 					["questID"] = 5067,	-- Leggings of Arcana
 					["description"] = "Can be found inside the chemistry lab in Scholomance, check the vials.",
+					["repeatable"] = true,
 				},
 				{
 					["itemID"] = 13471,	-- The Deed to Brill
