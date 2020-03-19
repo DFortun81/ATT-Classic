@@ -9,6 +9,23 @@ _.Zones =
 				i(5319,  {	-- Bashing Pauldrons
 					["cr"] = 2478,  -- Haren Swifthoof <Horde Runner>
 				}),
+				i(2924, {	-- Crocolisk Meat
+					["questID"] = 385,	-- Crocolisk Hunting
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						5053,	-- Deviate Crocolisk
+						2476,	-- Large Loch Crocolisk
+						1693,	-- Loch Crocolisk
+					},
+				}),
+				i(2925, {	-- Crocolisk Skin
+					["questID"] = 385,	-- Crocolisk Hunting
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						2476,	-- Large Loch Crocolisk
+						1693,	-- Loch Crocolisk
+					},
+				}),
 				i(2939, {	-- Crocolisk Tear
 					["questID"] = 278,	-- A Dark Threat Looms
 					["races"] = ALLIANCE_ONLY,

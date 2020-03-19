@@ -138,9 +138,13 @@ _.Zones =
 					},
 				}),
 				q(385, {	-- Crocolisk Hunting
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1154,	-- Marek Ironheart
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2924, 5 },	-- Crocolisk Meat
+						{ "i", 2925, 6 },	-- Crocolisk Skin
+					},
+					["lvl"] = 10,
 					["g"] = {
 						i(3678),	-- Recipe: Crocolisk Steak
 						i(2240),	-- Rugged Cape
