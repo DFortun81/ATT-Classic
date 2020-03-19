@@ -23,6 +23,7 @@ _.Zones =
 							["itemID"] = 5179,	-- Moss-twined Heart
 							["questID"] = 927,	-- The Moss-twined Heart
 							["description"] = "This is one of the only drops from a rare spawn in the game that start a quest. Good luck!",
+							["races"] = ALLIANCE_ONLY,
 						},
 					},
 				}),
