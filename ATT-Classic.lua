@@ -13,6 +13,7 @@ local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDispla
 local GetFactionInfoByID = _G["GetFactionInfoByID"];
 local GetItemInfo = _G["GetItemInfo"];
 local GetItemInfoInstant = _G["GetItemInfoInstant"];
+local GetItemStats = _G["GetItemStats"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
@@ -2310,6 +2311,23 @@ app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 
+-- Item Stat Lib
+local itemStats = {};
+local function GetBestSuffixID(itemID)
+	-- TODO: Calculate the Best SuffixID from a table of valid Suffixes for each ItemID.
+	-- NOTE: This needs to be included in the Database, sadly. (Unless it doesn't?)
+	-- return 2040;
+end
+local function GetItemWeights(itemLink)
+	table.wipe(itemStats);
+	GetItemStats(itemLink, itemStats);
+	print(itemLink, "stats:");
+	for key,value in pairs(itemStats) do
+		print(key, value);
+	end
+end
+app.GetItemWeights = GetItemWeights;
+
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
@@ -3311,7 +3329,9 @@ app.BaseItem = {
 		elseif key == "icon" then
 			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 		elseif key == "link" then
-			local link = select(2, GetItemInfo(t.itemID));
+			local itemID = t.itemID;
+			local suffixID = GetBestSuffixID(itemID);
+			local link = select(2, GetItemInfo(suffixID and string.format("item:%d:0:0:0:0:0:%d", itemID, suffixID) or itemID));
 			if link then
 				t.link = link;
 				t.retries = nil;
@@ -3320,7 +3340,7 @@ app.BaseItem = {
 				if t.retries then
 					t.retries = t.retries + 1;
 					if t.retries > app.MaximumItemInfoRetries then
-						local itemName = "Item #" .. t.itemID .. "*";
+						local itemName = "Item #" .. itemID .. "*";
 						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
 						t.link = "";
 						t.text = itemName;

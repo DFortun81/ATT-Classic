@@ -319,14 +319,13 @@ _.Zones =
 					["lvl"] = 48,
 				}),
 				q(4301, {	-- The Mighty U'cha
-					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["lvl"] = 50,
 					["g"] = {
 						i(11906),	-- Beastsmasher
 						i(11907),	-- Beastslayer
 					},
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(980, {	-- The New Springs
 					["lvl"] = 51,
