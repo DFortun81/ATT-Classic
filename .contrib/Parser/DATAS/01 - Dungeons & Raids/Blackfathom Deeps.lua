@@ -111,6 +111,7 @@ _.Instances = {
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { PALADIN },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 6995, 1 },	-- Corrupted Kor Gem
 					},
