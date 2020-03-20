@@ -876,7 +876,6 @@ local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
 		local hash = key .. (rawget(t, key) or t[key]);
-		if key == "criteriaID" and t.achID then hash = hash .. ":" .. t.achID; end
 		rawset(t, "hash", hash);
 		return hash;
 	end
@@ -5166,7 +5165,7 @@ local function RowOnClick(self, button)
 							end
 							TSMAPI_FOUR.Groups.AppendOperation(groupPath, "Shopping", operation)
 							for i,group in ipairs(missingItems) do
-								if (not group.spellID and not group.achID) or group.itemID then
+								if not group.spellID or group.itemID then
 									itemString = group.tsm;
 									if itemString then
 										groupPath = BuildSourceTextForTSM(group, 0);
