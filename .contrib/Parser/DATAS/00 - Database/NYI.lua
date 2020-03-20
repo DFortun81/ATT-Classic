@@ -124,9 +124,33 @@ _.NeverImplemented =
 	q(8269),	-- Ribbons of Sacrifice
 	
 	-- Alterac Valley
+	q(7362),	-- Ally of the Tauren
+	q(6846),	-- Begin the Attack!
+	q(7421),	-- Darkspear Defense
+	q(7368),	-- Defusing the Threat
+	q(7367),	-- Defusing the Threat
+	q(7361),	-- Favor Amongst the Darkspear
+	q(7364),	-- Gnomeregan Bounty
 	q(7202),	-- Korrak the Bloodrager
+	q(7382),	-- Korrak the Everliving
+	q(6901),	-- Launch the Attack!
+	q(7423),	-- I've Got A Fever For More Bone Chips
+	q(6847),	-- Master Ryson's All Seeing Eye
+	q(6848),	-- Master Ryson's All Seeing Eye
+	q(7426),	-- One Man's Love
+	q(7425),	-- Staghelm's Mojo Jamboree
+	q(7365),	-- Staghelm's Requiem
+	q(7366),	-- The Archbishop's Mercy
+	q(7363),	-- The Human Condition
+	q(7422),	-- Tuft it Out
+	q(7427),	-- Wanted: MORE DWARVES!
+	q(7428),	-- Wanted: MORE ORCS!
+	q(7424),	-- What the Hoof?
 	i(18150),	-- Rune of Recall
 	i(18149),	-- Rune of Recall
+	q(7221),	-- Speak with Prospector Stonehewer
+	q(7222),	-- Speak with Voggah Deathgrip
+	q(7181),	-- The Legend of Korrak
 	q(7381),	-- The Return of Korrak
 	i(17384),	-- Zinfizzlex's Portable Shredder Unit
 	i(17410),	-- Zinfizzlex's Portable Shredder Unit

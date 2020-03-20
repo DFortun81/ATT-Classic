@@ -38,6 +38,9 @@ ULDAMAN = 230;
 WAILING_CAVERNS = 279;
 ZULFARRAK = 219;
 
+-- Battlegrounds
+ALTERAC_VALLEY = 1459;
+
 -- Continents
 COSMIC = 947;	-- Confirmed!
 EASTERN_KINGDOMS = 1415;	-- Confirmed!
