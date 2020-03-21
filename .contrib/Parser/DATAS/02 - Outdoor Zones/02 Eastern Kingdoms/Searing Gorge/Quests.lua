@@ -205,6 +205,9 @@ _.Zones =
 					["qg"] = 8509,	-- Squire Maltrake
 					["sourceQuest"] = 3462,	-- Squire Maltrake
 					["coord"] = { 39.1, 39.1, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 10515, 1 },	-- Torch of Retribution
+					},
 					["lvl"] = 40,
 					["g"] = {
 						i(10742),	-- Dragonflight Leggings
