@@ -1366,10 +1366,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					table.sort(regroup, function(a, b)
 						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
 					end);
-					group = regroup;
-				else
-					group = nil;
 				end
+				group = regroup;
 			end
 		elseif paramA == "titleID" then
 			-- Don't do anything
