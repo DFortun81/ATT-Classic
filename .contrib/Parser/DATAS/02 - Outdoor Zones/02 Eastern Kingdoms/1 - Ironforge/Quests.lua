@@ -103,21 +103,68 @@ _.Zones =
 						i(4535),	-- Ironforge Memorial Ring
 					},
 				}),
-				q(4512, {	-- A Little Slime Goes a Long Way
-					["lvl"] = 48,
-					["races"] = ALLIANCE_ONLY,
+				q(4512, {	-- A Little Slime Goes a Long Way (1/2)
 					["qg"] = 9616,	-- Laris Geardawdle
 					["coord"] = { 75.6, 23.5, IRONFORGE },
-				}),
-				q(4513, {	-- A Little Slime Goes a Long Way
-					["lvl"] = 40,
+					["maps"] = { FELWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 9616,	-- Laris Geardawdle
+					["cost"] = {
+						{ "i", 11912, 1 },	-- Package of Empty Ooze Containers
+						{ "i", 11947, 6 },	-- Filled Cursed Ooze Jar
+						{ "i", 11949, 6 },	-- Filled Tainted Ooze Jar
+					},
+					["lvl"] = 48,
 					["groups"] = {
+						{
+							["itemID"] = 11914,	-- Empty Cursed Ooze Jar
+							["cr"] = 7086,	-- Cursed Ooze
+							["groups"] = {
+								{
+									["itemID"] = 11947,	-- Filled Cursed Ooze Jar
+									["questID"] = 4512,	-- A Little Slime Goes a Long Way (1/2)
+								},
+							},
+						},
+						{
+							["itemID"] = 11948,	-- Empty Tainted Ooze Jar
+							["cr"] = 7092,	-- Tainted Ooze
+							["groups"] = {
+								{
+									["itemID"] = 11949,	-- Filled Tainted Ooze Jar
+									["questID"] = 4512,	-- A Little Slime Goes a Long Way (1/2)
+								},
+							},
+						},
+					},
+				}),
+				q(4513, {	-- A Little Slime Goes a Long Way (2/2)
+					["qg"] = 9616,	-- Laris Geardawdle
+					["sourceQuest"] = 4512,	-- A Little Slime Goes a Long Way (1/2)
+					["coord"] = { 75.6, 23.5, IRONFORGE },
+					["maps"] = { UNGORO_CRATER },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11955, 1 },	-- Bag of Empty Ooze Containers
+						{ "i", 11954, 10 },	-- Filled Pure Sample Jar
+					},
+					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 11953,	-- Empty Pure Sample Jar
+							["crs"] = {
+								6556,	-- Muculent Slime
+								6557,	-- Primal Ooze
+							},
+							["groups"] = {
+								{
+									["itemID"] = 11954,	-- Filled Pure Sample Jar
+									["questID"] = 4513,	-- A Little Slime Goes a Long Way (2/2)
+								},
+							},
+						},
 						i(12050),	-- Hazecover Boots
 						i(12051),	-- Brazen Gauntlets
 					},
-					["coord"] = { 75.6, 23.5, IRONFORGE },
 				}),
 				q(7806, {	-- Additional Runecloth
 					["qg"] = 14723,	-- Mistina Steelshield

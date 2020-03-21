@@ -367,20 +367,28 @@ _.Zones =
 					["qg"] = 1156,	-- Vyrin Swiftwind
 					["sourceQuest"] = 258,	-- A Hunter's Challenge
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2713, 1 },	-- Ol' Sooty's Head
+					},
 					["lvl"] = 15,
+					["g"] = {
+						{
+							["itemID"] = 2713,	-- Ol' Sooty's Head
+							["questID"] = 271,	-- Vyrin's Revenge (1/2)
+							["cr"] = 1225,	-- Ol' Sooty
+							["coord"] = { 37.6, 62.6, LOCH_MODAN },
+						},
+					},
 				}),
 				q(531, {	-- Vyrin's Revenge (2/2)
 					["qg"] = 1187,	-- Daryl the Youngling
 					["sourceQuest"] = 271,	-- Vyrin's Revenge (1/2)
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2713, 1 },	-- Ol' Sooty's Head
+					},
 					["lvl"] = 15,
 					["g"] = {
-						{
-							["itemID"] = 2713,	-- Ol' Sooty's Head
-							["questID"] = 531,	-- Vyrin's Revenge (2/2)
-							["cr"] = 1225,	-- Ol' Sooty
-							["coord"] = { 37.6, 62.6, LOCH_MODAN },
-						},
 						i(3574),	-- Hunting Ammo Sack
 						i(3573),	-- Hunting Quiver
 					},

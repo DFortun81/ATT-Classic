@@ -405,6 +405,9 @@ _.Zones =
 					["coord"] = { 31.2, 45.2, WINTERSPRING },
 					["maps"] = { FELWOOD },
 					["lvl"] = 52,
+					["groups"] = {
+						i(13158),	-- Words of the High Chief
+					},
 				}),
 			}),
 		}),
