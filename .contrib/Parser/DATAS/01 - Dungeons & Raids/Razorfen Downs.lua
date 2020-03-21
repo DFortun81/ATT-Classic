@@ -63,9 +63,8 @@ _.Instances = {
 					},
 				}),
 				q(3525, {	-- Extinguishing the Idol
-					["sourceQuest"] = 3523,	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
-					["races"] = HORDE_ONLY,
+					["sourceQuest"] = 3523,	-- Scourge of the Downs
 					["lvl"] = 32,
 					["groups"] = {
 						i(10710),	-- Dragonclaw Ring
@@ -73,7 +72,6 @@ _.Instances = {
 				}),
 				q(3523, {	-- Scourge of the Downs
 					["qg"] = 8516,	-- Belnistrasz
-					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 10682, 1 },	-- Belnistrasz's Oathstone
 					},
