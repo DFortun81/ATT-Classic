@@ -737,11 +737,6 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
-				q(7493, {	-- The Journey Has Just Begun
-					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
-					["qg"] = 14392,	-- Overlord Runthak
-				}),
 				q(787, {	-- The New Horde
 					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg
@@ -767,10 +762,6 @@ _.Zones =
 					["lvl"] = 29,
 					["races"] = HORDE_ONLY,
 					["qg"] = 4485,	-- Belgrom Rockmaul
-				}),
-				q(7490, {	-- Victory for the Horde
-					["lvl"] = 60,
-					["races"] = HORDE_ONLY,
 				}),
 				q(1944, {	-- Waters of Xavian
 					["qg"] = 5885,	-- Deino <Mage Trainer>

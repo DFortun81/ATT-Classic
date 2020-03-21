@@ -1275,9 +1275,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				end
 			elseif paramA and paramB and (not group[paramA] or (group[paramA] and group[paramA] ~= paramB)) then
 				if group.collectible then
-					if group.collected or (group.trackable and group.saved) then
+					if group.collected then
 						if app.Settings:Get("Show:CollectedThings") then
-							right = L["COLLECTED_ICON"];
+							right = GetCollectionIcon(group.collected);
 						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
@@ -1334,47 +1334,42 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
 		if paramA == "creatureID" then
-			if not app.Settings:Get("DebugMode") then
+			if group and #group > 0 then
 				local regroup = {};
-				if app.Settings:Get("AccountMode") then
+				if app.Settings:Get("DebugMode") then
 					for i,j in ipairs(group) do
-						if app.RecursiveUnobtainableFilter(j) then
-							tinsert(regroup, j);
-						end
+						tinsert(regroup, j);
 					end
 				else
-					for i,j in ipairs(group) do
-						if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-							tinsert(regroup, j);
-						end
-					end
-				end
-				
-				group = regroup;
-			end
-			
-			if group and #group > 0 then
-				if app.Settings:GetTooltipSetting("Descriptions") then
-					for i,j in ipairs(group) do
-						if j.description and j[paramA] and j[paramA] == paramB then
-							tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
-						end
-					end
-				end
-				local subgroup = {};
-				table.sort(group, function(a, b)
-					return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
-				end);
-				for i,j in ipairs(group) do
-					if j.g and j.npcID ~= 0 then
-						for k,l in ipairs(j.g) do
-							tinsert(subgroup, l);
+					if app.Settings:Get("AccountMode") then
+						for i,j in ipairs(group) do
+							if app.RecursiveUnobtainableFilter(j) then
+								tinsert(regroup, j);
+							end
 						end
 					else
-						tinsert(subgroup, j);
+						for i,j in ipairs(group) do
+							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
+								tinsert(regroup, j);
+							end
+						end
 					end
 				end
-				group = subgroup;
+				if #regroup > 0 then
+					if app.Settings:GetTooltipSetting("Descriptions") then
+						for i,j in ipairs(regroup) do
+							if j.description and j[paramA] and j[paramA] == paramB then
+								tinsert(info, 1, { left = j.description, wrap = true, color = "ff66ccff" });
+							end
+						end
+					end
+					table.sort(regroup, function(a, b)
+						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+					end);
+					group = regroup;
+				else
+					group = nil;
+				end
 			end
 		elseif paramA == "titleID" then
 			-- Don't do anything
@@ -1597,8 +1592,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group.g = merged;
 			end
 			
-			group.total = (group.total or 0);
-			group.progress = (group.progress or 0);
+			group.total = 0;
+			group.progress = 0;
 			app.UpdateGroups(group, group.g);
 			if group.collectible then
 				group.total = group.total + 1;
