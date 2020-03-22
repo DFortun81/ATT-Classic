@@ -282,8 +282,13 @@ _.Factions =
 				},
 			}),
 			q(7905, {	-- The Darkmoon Faire
-				["maps"] = { STORMWIND_CITY },
+				["qg"] = 14842,	-- Melnan Darkstone <Darkmoon Faire Barker>
+				["coord"] = { 29.2, 68.4, IRONFORGE },
+				["maps"] = { IRONFORGE },
 				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 19338, 1 },	-- Free Ticket Voucher
+				},
 				["lvl"] = 6,
 				["groups"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
@@ -291,8 +296,12 @@ _.Factions =
 			}),
 			q(7926, {	-- The Darkmoon Faire
 				["qg"] = 14843,	-- Kruban Darkblade
+				["coord"] = { 52.2, 66, ORGRIMMAR },
 				["maps"] = { ORGRIMMAR },
 				["races"] = HORDE_ONLY,
+				["cost"] = {
+					{ "i", 19338, 1 },	-- Free Ticket Voucher
+				},
 				["lvl"] = 6,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
