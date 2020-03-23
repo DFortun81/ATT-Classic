@@ -132,6 +132,7 @@ _.Zones =
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1075,	-- A Scroll from Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 5669, 1 },	-- Dust Devil Debris

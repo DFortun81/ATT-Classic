@@ -126,12 +126,6 @@ _.Zones =
 				i(1522, {  -- Headhunting Spear
 					["cr"] = 671,	-- Bloodscalp Headhunter
 				}),
-				{
-					["itemID"] = 737,	-- Holy Spring Water
-					["allianceQuestID"] = 48,	-- Sweet Amber
-					["hordeQuestID"] = 573,	-- Mok'thardin's Enchantment
-					["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
-				},
 				i(1523, {  -- Huge Stone Club
 					["cr"] = 597,	-- Bloodscalp Berserker
 				}),

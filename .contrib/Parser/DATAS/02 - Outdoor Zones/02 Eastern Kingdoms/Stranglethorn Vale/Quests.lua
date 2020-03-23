@@ -576,6 +576,12 @@ _.Zones =
 					},
 					["lvl"] = 33,
 					["g"] = {
+						{
+							["itemID"] = 737,	-- Holy Spring Water
+							["questID"] = 573,	-- Mok'thardin's Enchantment
+							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
+							["races"] = HORDE_ONLY,
+						},
 						i(4112),	-- Choker of the High Shaman
 					},
 				}),

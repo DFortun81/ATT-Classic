@@ -199,6 +199,14 @@ _.Zones =
 						{ "i", 737, 1 } -- Holy Spring Water
 					},
 					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 737,	-- Holy Spring Water
+							["questID"] = 48,	-- Sweet Amber
+							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
 				}),
 				q(49, {		-- Sweet Amber (2/5)
 					["qg"] = 239,	-- Grimbooze Thunderbrew
