@@ -683,7 +683,6 @@ _.Zones =
 				q(896, {	-- Miner's Fortune
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["g"] = {
 						i(5335),	-- A Sack of Coins
@@ -744,7 +743,7 @@ _.Zones =
 				}),
 				q(1040, {	-- Passage to Booty Bay
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
-					["sourceQuests"] = 1039,	-- The Barrens Port(Darnassus)
+					["sourceQuest"] = 1039,	-- The Barrens Port(Darnassus)
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
