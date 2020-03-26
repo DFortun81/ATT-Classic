@@ -4896,6 +4896,7 @@ local function SetRowData(self, row, data)
 			row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known_circle");
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
+		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.isDaily then
 				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known");
