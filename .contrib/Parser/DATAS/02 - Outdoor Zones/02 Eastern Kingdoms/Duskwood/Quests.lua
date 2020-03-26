@@ -76,51 +76,53 @@ _.Zones =
 					},
 				}),
 				q(157, {	-- Deliver the Thread
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(164, {	-- Deliveries to Sven
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 633,	-- Elaine Carevin
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["cost"] = {
+						{ "i", 1922, 1 },	-- Supplies for Sven
+					},
+					["lvl"] = 17,
 				}),
 				q(254, {	-- Digging Through the Dirt
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
 					["provider"] = { "o", 51708 },	-- Eliza's Grave Dirt
-					["altQuests"] = {
-						253,	-- Bride of the Embalmer
-					},
+					["altQuests"] = { 253 },	-- Bride of the Embalmer
 					["description"] = "This quest is repeatable, but can only be completed while you have the quest \"Bride of the Embalmer\" in your quest log.",
 					["coord"] = { 28.8, 30.8, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["lvl"] = 20,
 				}),
 				q(93, {	-- Dusky Crab Cakes
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 272,	-- Chef Grual
+					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(3683),	-- Recipe: Gooey Spider Cake
 					},
-					["coord"] = { 73.8, 43.5, DUSKWOOD },
 				}),
 				q(245, {	-- Eight-Legged Menaces
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 888,	-- Watcher Dodds
+					["coord"] = { 45.1, 67.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 					["g"] = {
 						i(3559),	-- Night Watch Gauntlets
 					},
-					["coord"] = { 45.1, 67.0, DUSKWOOD },
 				}),
 				q(453, {	-- Finding the Shadowy Figure
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(156, {	-- Gather Rot Blossoms
 					["qg"] = 273,	-- Tavernkeep Smitts
@@ -132,10 +134,10 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(149, {	-- Ghost Hair Thread
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(133, {	-- Ghoulish Effigy
 					["qg"] = 289,	-- Abercrombie
@@ -147,22 +149,22 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(266, {	-- Inquire at the Inn
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(5, {	-- Jitters' Growling Gut
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 288,	-- Jitters
 					["coord"] = { 18.2, 56.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(159, {	-- Juice Delivery
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(174, {	-- Look To The Stars
 					["qg"] = 276,	-- Viktori Prism'Antras
@@ -311,40 +313,41 @@ _.Zones =
 					["lvl"] = 37,
 				}),
 				q(134, {	-- Ogre Thieves
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(323, {	-- Proving Your Worth
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(163, {	-- Raven Hill
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 633,	-- Elaine Carevin
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
 				}),
 				q(154, {	-- Return the Comb
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 302,	-- Blind Mary
 					["coord"] = { 81.9, 59.1, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(240, {	-- Return to Jitters
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(268, {	-- Return to Sven
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 288,	-- Jitters
 					["coord"] = { 18.2, 56.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(90, {	-- Seasoned Wolf Kabobs
 					["qg"] = 272,	-- Chef Grual
@@ -362,38 +365,38 @@ _.Zones =
 					},
 				}),
 				q(269, {	-- Seeking Wisdom
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(402, {	-- Sirra is Busy
 					["u"] = 1,	-- Never in game
 					["lvl"] = 20,
 				}),
 				q(1395, {	-- Supplies for Nethergarde
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5464,	-- Watchmaster Sorigal
 					["sourceQuest"] = 1477,	-- Vital Supplies
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(148, {	-- Supplies from Darkshire
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(230, {	-- Sven's Camp
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 59 },	-- Mound of loose dirt
 					["coord"] = { 49.9, 77.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(95, {	-- Sven's Revenge
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(1042, {	-- The Carevin Family
 					["qg"] = 267,	-- Clerk Daltry
@@ -403,10 +406,10 @@ _.Zones =
 					["lvl"] = 25,
 				}),
 				q(229, {	-- The Daughter Who Lived
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(270, {	-- The Doomed Fleet
 					["qg"] = 1212,	-- Bishop Farthing
@@ -416,73 +419,74 @@ _.Zones =
 					["lvl"] = 20,
 				}),
 				q(165, {	-- The Hermit
-					["lvl"] = 17,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 633,	-- Elaine Carevin
 					["coord"] = { 75.3, 48.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 17,
 				}),
 				q(80, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(68, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 3643 },	-- Old Footlocker
 					["coord"] = { 41.5, 66.7, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(79, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 273,	-- Tavernkeep Smitts
+					["coord"] = { 73.8, 44.4, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 					["g"] = {
 						i(939),	-- A Bloodstained Journal Page
 					},
-					["coord"] = { 73.8, 44.4, DUSKWOOD },
 				}),
 				q(97, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(78, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 294,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(69, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(75, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 294,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(72, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 297,	-- Caretaker Folsom
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(67, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 267,	-- Clerk Daltry
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(74, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 1561 },	-- Sealed Crate
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(98, {	-- The Legend of Stalvan
 					["qg"] = 264,	-- Commander Althea Ebonlocke
@@ -504,55 +508,55 @@ _.Zones =
 					},
 				}),
 				q(70, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 295,	-- Innkeeper Farley
 					["coord"] = { 43.8, 65.9, WESTFALL },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(66, {	-- The Legend of Stalvan
-					["lvl"] = 22,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 22,
 				}),
 				q(1244, {	-- The Missing Diplomat (5/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 840,	-- Watcher Backus
+					["sourceQuest"] = 1243,
 					["maps"] = { STORMWIND_CITY },
 					["description"] = "This is part of a quest chain that begins in Stormwind City. Watcher Backus patrols the road heading north from Darkshire. The Defias Docket is located at 24.0, 72.1.",
-					["sourceQuest"] = 1243,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(1245, {	-- The Missing Diplomat (6/17)
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 840,	-- Watcher Backus
+					["sourceQuest"] = 1244,
 					["maps"] = { STORMWIND_CITY },
 					["description"] = "Watcher Backus patrols the road heading north from Darkshire.",
-					["sourceQuest"] = 1244,
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(57, {	-- The Night Watch
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(56, {	-- The Night Watch
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 				}),
 				q(58, {	-- The Night Watch
-					["lvl"] = 18,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 264,	-- Commander Althea Ebonlocke
+					["coord"] = { 73.6, 46.9, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 18,
 					["g"] = {
 						i(3604),	-- Bandolier of the Night Watch
 						i(3605),	-- Quiver of the Night Watch
 						i(1729),	-- Gunnysack of the Night Watch
 					},
-					["coord"] = { 73.6, 46.9, DUSKWOOD },
 				}),
 				q(1043, {	-- The Scythe of Elune
 					["qg"] = 661,	-- Jonathan Carevin
@@ -562,16 +566,16 @@ _.Zones =
 					["lvl"] = 25,
 				}),
 				q(262, {	-- The Shadowy Figure
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 311,	-- Sven Yorgen
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(265, {	-- The Shadowy Search Continues
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 265,	-- Madame Eva
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(101, {	-- The Totem of Infliction
 					["qg"] = 265,	-- Madame Eva
@@ -588,76 +592,75 @@ _.Zones =
 					},
 				}),
 				q(225, {	-- The Weathered Grave
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 61 },	-- A Weathered Grave
 					["coord"] = { 17.7, 29.2, DUSKWOOD },
-
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 28,
 				}),
 				q(251, {	-- Translate Abercrombie's Note
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 263,	-- Lord Ello Ebonlocke
 					["coord"] = { 71.9, 46.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(252, {	-- Translation to Ello
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 268,	-- Sirra Von'Indi
+					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 					["g"] = {
 						i(3248),	-- Translated Letter from The Embalmer
 					},
-					["coord"] = { 72.6, 47.7, DUSKWOOD },
 				}),
 				q(401, {	-- Wait for Sirra to Finish
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 268,	-- Sirra Von'Indi
 					["coord"] = { 72.6, 47.7, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(226, {	-- Wolves at Our Heels
-					["lvl"] = 19,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 893,	-- Lars
+					["coord"] = { 7.7, 33.4, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 19,
 					["g"] = {
 						i(1127),	-- Flash Bundle
 					},
-					["coord"] = { 7.7, 33.4, DUSKWOOD },
 				}),
 				q(221, {	-- Worgen in the Woods
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 663,	-- Calor
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(222, {	-- Worgen in the Woods
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 663,	-- Calor
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(223, {	-- Worgen in the Woods
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 663,	-- Calor
+					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 23,
 					["g"] = {
 						i(2902),	-- Cloak of the Faith
 						i(1547),	-- Shield of the Faith
 						i(5244),	-- Consecrated Wand
 					},
-					["coord"] = { 75.3, 48.0, DUSKWOOD },
 				}),
 				q(173, {	-- Worgen in the Woods
-					["lvl"] = 23,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 663,	-- Calor
 					["coord"] = { 75.3, 48.0, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 23,
 				}),
 				q(158, {	-- Zombie Juice
-					["lvl"] = 20,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 289,	-- Abercrombie
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 20,
 				}),
 			}),
 		}),
