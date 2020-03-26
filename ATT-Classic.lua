@@ -5585,10 +5585,15 @@ local function RowOnEnter(self)
 					end
 				end
 			end
+
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					if prereq.maps then
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. C_Map.GetMapInfo(prereq.maps[1]).name .. ")");
+					else
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					end
 				end
 			end
 			if bc and #bc > 0 then
