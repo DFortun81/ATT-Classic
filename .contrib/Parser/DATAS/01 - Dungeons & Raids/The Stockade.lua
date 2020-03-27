@@ -17,7 +17,7 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 3628, 1 },	-- Hand of Dextren Ward
 					},
-					["lvl"] = 26,
+					["lvl"] = 24,
 					["g"] = {
 						i(2906),	-- Darkshire Mail Leggings
 						i(2033),	-- Ambassador's Boots
