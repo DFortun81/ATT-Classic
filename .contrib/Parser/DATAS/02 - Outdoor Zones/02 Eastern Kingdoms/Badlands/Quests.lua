@@ -346,25 +346,57 @@ _.Zones =
 						i(4653),	-- Ironheel Boots
 					},
 				}),
-				q(795, {	-- Seal of the Earth
-					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
+				{
+					["provider"] = { "o", 2933 },	-- Seal of the Earth
+					["allianceQuestID"] = 779,	-- Seal of the Earth
+					["hordeQuestID"] = 795,	-- Seal of the Earth
+					["description"] = "This quest is repeatable but can only be completed while \"Broken Alliances\" (H) or \"Tremors of the Earth\" (A) is in your quest log.",
 					["altQuests"] =	{
 						793,	-- Broken Alliances
-					},
-					["repeatable"] = true,
-					["description"] = "This quest is repeatable but can only be completed while \"Broken Alliances\" is in your quest log.",
-				}),
-				q(779, {	-- Seal of the Earth
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["provider"] = { "o", 2933 },	-- Seal of the Earth
-					["altQuests"] =	{
 						717,	-- Tremors of the Earth
 					},
+					["cost"] = {
+						{ "i", 4843, 1 },	-- Amethyst Runestone
+						{ "i", 4845, 1 },	-- Diamond Runestone
+						{ "i", 4844, 1 },	-- Opal Runestone
+					},
 					["repeatable"] = true,
-					["description"] = "This quest is repeatable but can only be completed while \"Tremors of the Earth\" is in your quest log.",					
-				}),
+					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 4843,	-- Amethyst Runestone
+							["allianceQuestID"] = 717,	-- Tremors of the Earth
+							["hordeQuestID"] = 793,	-- Broken Alliances
+							["coord"] = { 81, 63, BADLANDS },
+						},
+						{
+							["itemID"] = 4845,	-- Diamond Runestone
+							["allianceQuestID"] = 717,	-- Tremors of the Earth
+							["hordeQuestID"] = 793,	-- Broken Alliances
+							["coord"] = { 83.5, 32.9, BADLANDS },
+						},
+						{
+							["itemID"] = 4844,	-- Opal Runestone
+							["allianceQuestID"] = 717,	-- Tremors of the Earth
+							["hordeQuestID"] = 793,	-- Broken Alliances
+							["coord"] = { 77.3, 66.9, BADLANDS },
+						},
+						{
+							["itemID"] = 4615,	-- Blacklash's Bindings
+							["allianceQuestID"] = 717,	-- Tremors of the Earth
+							["hordeQuestID"] = 793,	-- Broken Alliances
+							["cr"] = 2757,	-- Blacklash
+							["coord"] = { 82.6, 48.8, BADLANDS },
+						},
+						{	-- 
+							["itemID"] = 4645,	-- Chains of Hematus
+							["allianceQuestID"] = 717,	-- Tremors of the Earth
+							["hordeQuestID"] = 793,	-- Broken Alliances
+							["cr"] = 2759,	-- Hematus
+							["coord"] = { 81.4, 50.6, BADLANDS },
+						},
+					},
+				},
 				q(709, {	-- Solution to Doom
 					["qg"] = 2785,	-- Theldurin the Lost
 					["coord"] = { 51.4, 76.9, BADLANDS },
@@ -538,6 +570,7 @@ _.Zones =
 					},
 					["lvl"] = 40,
 					["g"] = {
+						
 						i(11193),	-- Blazewind Breastplate
 						i(11194),	-- Prismscale Hauberk
 						i(11195),	-- Warforged Chestplate

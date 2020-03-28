@@ -29,12 +29,6 @@ _.Zones =
 						2725,	-- Scalding Whelp
 					},
 				}),
-				i(4615, {	-- Blacklash's Bindings
-					["allianceQuestID"] = 717,	-- Tremors of the Earth
-					["hordeQuestID"] = 793,	-- Broken Alliances
-					["cr"] = 2757,	-- Blacklash
-					["coord"] = { 82.6, 48.8, BADLANDS },
-				}),
 				i(4628, {	-- Bracers of Rock Binding
 					["questID"] = 712,	-- Study of the Elements: Rock
 					["cr"] = 2736,	-- Greater Rock Elemental
@@ -47,12 +41,6 @@ _.Zones =
 						2831,	-- Giant Buzzard
 						2829,	-- Starving Buzzard
 					},
-				}),
-				i(4645, {	-- Chains of Hematus
-					["allianceQuestID"] = 717,	-- Tremors of the Earth
-					["hordeQuestID"] = 793,	-- Broken Alliances
-					["cr"] = 2759,	-- Hematus
-					["coord"] = { 81.4, 50.6, BADLANDS },
 				}),
 				i(2621, {	-- Cowl of Necromancy
 					["cr"] = 2740,	-- Shadowforge Darkweaver
