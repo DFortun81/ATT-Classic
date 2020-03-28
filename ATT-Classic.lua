@@ -1735,7 +1735,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if i > 1 then desc = desc .. ", "; end
 					desc = desc .. (characters[key] or key);
 				end
-				tinsert(info, { left = desc, wrap = true, color = "ff66ccff" });
+				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 			end
 		end
 		
@@ -2244,6 +2244,24 @@ end
 local function RefreshSaves()
 	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
 end
+local function RefreshSkills()
+	-- Store Skill Data
+	local activeSkills = GetTempDataMember("ActiveSkills");
+	wipe(activeSkills);
+	for index=GetNumSkillLines(),2,-1 do
+		local skillName, header, isExpanded, skillRank, numTempPoints, skillModifier,
+			skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType,
+			skillDescription = GetSkillLineInfo(index);
+		if not header then
+			local spellID = app.SpellNameToSpellID[skillName];
+			if spellID then
+				activeSkills[spellID] = { skillRank, skillMaxRank };
+			else
+				--print(skillName, header, isExpanded, skillRank, numTempPoints, skillModifier, skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType, skillDescription);
+			end
+		end
+	end
+end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
 		while InCombatLockdown() do coroutine.yield(); end
@@ -2252,6 +2270,8 @@ local function RefreshCollections()
 		
 		-- Wait a frame before harvesting item collection status.
 		coroutine.yield();
+		
+		RefreshSkills();
 		
 		-- Harvest Item Collections that are used by the addon.
 		app:GetDataCache();
@@ -4177,7 +4197,8 @@ function app.FilterItemClass_RequireBinding(item)
 end
 function app.FilterItemClass_RequiredSkill(requireSkill)
 	if requireSkill then
-		return GetTempDataMember("Professions")[requireSkill];
+		requireSkill = app.SkillIDToSpellID[requireSkill];
+		return requireSkill and GetTempDataMember("ActiveSkills")[requireSkill];
 	else
 		return true;
 	end
@@ -5326,7 +5347,29 @@ local function RowOnEnter(self)
 			GameTooltip:AddLine(msg);
 		end
 		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
-		if reference.spellID and app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
+		if reference.spellID then
+			if app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
+			
+			-- If the item is a recipe, then show which characters know this recipe.
+			if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
+				local activeSkills, knownBy = GetDataMember("ActiveSkillsPerCharacter"), {};
+				for key,value in pairs(activeSkills) do
+					local skills = value[reference.spellID];
+					if skills then table.insert(knownBy, { key, skills[1], skills[2] }); end
+				end
+				if #knownBy > 0 then
+					table.sort(knownBy, function(a, b)
+						return a[2] > b[2];
+					end);
+					GameTooltip:AddLine("|cff66ccffKnown by:|r");
+					local characters = GetDataMember("Characters");
+					for i,data in ipairs(knownBy) do
+						GameTooltip:AddDoubleLine("  " .. string.gsub(characters[data[1]] or data[1], "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
+					end
+					
+				end
+			end
+		end
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
@@ -7886,22 +7929,11 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					tradeSkillID = 0;
 				end
 				
-				-- Check for Specializations
-				for specializationID,spellID in pairs(app.SpecializationSpellIDs) do
-					if IsSpellKnown(spellID) then
-						-- Mark this as a profession used by this character.
-						GetTempDataMember("Professions")[spellID] = true;
-					end
-				end
-				
 				-- Open the Tradeskill list for this Profession
 				if app.Categories.Professions then
 					local g = {};
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
-							-- Mark this as a profession used by this character.
-							GetTempDataMember("Professions")[group.requireSkill] = true;
-							
 							local cache = self.cache[group.spellID];
 							if not cache then
 								cache = CloneData(group);
@@ -8374,13 +8406,13 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("lockouts", myLockouts);
 	end
 	
-	-- Cache your character's professions.
-	local professions = GetDataMember("ProfessionsPerCharacter", {});
-	local myProfessions = GetTempDataMember("Professions", professions[app.GUID]);
-	if not myProfessions then
-		myProfessions = {};
-		professions[app.GUID] = myProfessions;
-		SetTempDataMember("Professions", myProfessions);
+	-- Cache your character's skill data.
+	local skills = GetDataMember("ActiveSkillsPerCharacter", {});
+	local mySkills = GetTempDataMember("ActiveSkills", skills[app.GUID]);
+	if not mySkills then
+		mySkills = {};
+		skills[app.GUID] = mySkills;
+		SetTempDataMember("ActiveSkills", mySkills);
 	end
 	
 	-- Cache your character's profession data.
@@ -8468,6 +8500,8 @@ app.events.VARIABLES_LOADED = function()
 	local oldsettings = {};
 	for i,key in ipairs({
 		"AddonMessageProcessor",
+		"ActiveSkills",
+		"ActiveSkillsPerCharacter",
 		"Characters",
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
@@ -8482,7 +8516,6 @@ app.events.VARIABLES_LOADED = function()
 		"GroupQuestsByGUID",
 		"lockouts",
 		"Position",
-		"ProfessionsPerCharacter",
 		"RandomSearchFilter",
 		"Reagents",
 		"SoftReserves",
@@ -8514,6 +8547,7 @@ app.events.PLAYER_LOGIN = function()
 	app:RegisterEvent("QUEST_LOG_UPDATE");
 	app:RegisterEvent("QUEST_ACCEPTED");
 	app:RegisterEvent("QUEST_TURNED_IN");
+	app:RegisterEvent("SKILL_LINES_CHANGED");
 	RefreshSaves();
 	app.CacheFlightPathData();
 	app:RefreshData(false);
@@ -9092,6 +9126,9 @@ app.events.PLAYER_LEVEL_UP = function(newLevel)
 	app.Level = newLevel;
 	app:UpdateWindows();
 	app.Settings:Refresh();
+end
+app.events.SKILL_LINES_CHANGED = function()
+	RefreshSkills();
 end
 app.events.BOSS_KILL = function(id, name, ...)
 	-- This is so that when you kill a boss, you can trigger 
