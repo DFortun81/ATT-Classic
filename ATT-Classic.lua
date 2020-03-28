@@ -2264,45 +2264,6 @@ local function RefreshCollections()
 		app.print("Done refreshing collection.");
 	end);
 end
-local function RefreshMountCollection()
-	StartCoroutine("RefreshMountCollection", function()
-		while InCombatLockdown() do coroutine.yield(); end
-		
-		-- Cache current counts
-		local previousProgress = app:GetDataCache().progress or 0;
-		
-		-- Refresh Mounts
-		local collectedSpells = GetDataMember("CollectedSpells", {});
-		local collectedSpellsPerCharacter = GetTempDataMember("CollectedSpells", {});
-		for i,mountID in ipairs(C_MountJournal.GetMountIDs()) do
-			local _, spellID, _, _, _, _, _, _, _, _, isCollected = C_MountJournal_GetMountInfoByID(mountID);
-			if spellID and isCollected then
-				collectedSpells[spellID] = 1;
-				collectedSpellsPerCharacter[spellID] = 1;
-			end
-		end
-		
-		-- Wait a frame before harvesting item collection status.
-		coroutine.yield();
-		
-		-- Refresh the Collection Windows!
-		app:RefreshData(false, true);
-		
-		-- Wait 2 frames before refreshing states.
-		coroutine.yield();
-		coroutine.yield();
-		
-		-- Compare progress
-		local progress = app:GetDataCache().progress or 0;
-		if progress < previousProgress then
-			app:PlayRemoveSound();
-		elseif progress > previousProgress then
-			app:PlayFanfare();
-		end
-		wipe(searchCache);
-		collectgarbage();
-	end);
-end
 app.ToggleMainList = function()
 	app:ToggleWindow("Prime");
 end
