@@ -467,6 +467,8 @@ _.Zones =
 				}),
 				q(215, {	-- Jungle Secrets
 					["qg"] = 738,	-- Private Thorsen
+					["description"] = "Every so often, Thorsen will go on patrol. If you follow him, he will be ambushed by two of Kurzen's lackeys - if he survives, he will offer you this quest.",
+					["coord"] = { 40, 8, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
