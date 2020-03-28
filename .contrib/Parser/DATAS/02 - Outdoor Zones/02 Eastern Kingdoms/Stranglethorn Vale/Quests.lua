@@ -257,6 +257,7 @@ _.Zones =
 				}),
 				q(202, {	-- Colonel Kurzen
 					["qg"] = 469,	-- Lieutenant Doren
+					["sourceQuest"] = 574,	-- Special Forces
 					["coord"] = { 38.0, 3.0, STRANGLETHORN_VALE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
