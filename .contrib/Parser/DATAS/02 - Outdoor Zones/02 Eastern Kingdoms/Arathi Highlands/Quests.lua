@@ -76,8 +76,11 @@ _.Zones =
 					},
 				}),
 				q(667, {	-- Death From Below
-					["lvl"] = 35,
+					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
+					["sourceQuest"] = 670,	-- Sunken Treasure
+					["coord"] = { 32.2, 81.6, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 					["g"] = {
 						i(4550),	-- Coldwater Ring
 						i(4549),	-- Seafire Band
@@ -183,16 +186,13 @@ _.Zones =
 						i(15104),	-- Wingborne Boots
 					},
 				}),
-				q(653, {	-- Myzrael's Allies
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
+				{
 					["provider"] = { "o", 2688 },	-- Keystone
-				}),
-				q(688, {	-- Myzrael's Allies
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 2688 },	-- Keystone
-				}),
+					["allianceQuestID"] = 653,	-- Myzrael's Allies
+					["hordeQuestID"] = 688,	-- Myzrael's Allies
+					["sourceQuest"] = 652,	-- Breaking the Keystone
+					["coord"] = { 36.1, 57.9, ARATHI_HIGHLANDS },
+				},
 				q(681, {	-- Northfold Manor
 					["lvl"] = 30,
 					["races"] = ALLIANCE_ONLY,
@@ -335,22 +335,22 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2774,	-- Doctor Draxlegauge
 				}),
-				q(670, {	-- Sunken Treasure
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-				}),
 				q(665, {	-- Sunken Treasure
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2768,	-- Professor Phizzlethorpe
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(666, {	-- Sunken Treasure
-					["lvl"] = 35,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 					["g"] = {
 						i(4547),	-- Gnomish Zapper
 						i(4548),	-- Servomechanic Sledgehammer
 					},
+				}),
+				q(670, {	-- Sunken Treasure
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 35,
 				}),
 				q(640, {	-- The Broken Sigil
 					["qg"] = 2703,	-- Zengu
@@ -386,11 +386,20 @@ _.Zones =
 					},
 				}),
 				q(687, {	-- Theldurin the Lost
-					["lvl"] = 30,
 					["qgs"] = {
 						2786,	-- Gerrig Bonegrip
 						2787,	-- Zaruk
 					},
+					["sourceQuests"] = {
+						653,	-- Myzrael's Allies
+						688,	-- Myzrael's Allies
+					},
+					["coords"] = {
+						{ 74.4, 35.6, ARATHI_HIGHLANDS },
+						{ 50.6, 6.2, IRONFORGE },
+					},
+					["maps"] = { IRONFORGE },
+					["lvl"] = 30,
 				}),
 				q(694, {	-- Trelane's Defenses
 					["qg"] = 2789,	-- Skuerto
