@@ -214,6 +214,9 @@ _.Zones =
 					["qg"] = 4630,	-- Pozzik
 					["repeatable"] = true,
 					["coord"] = { 80, 75.8, THOUSAND_NEEDLES },
+					["cost"] = {
+						{ "i", 5833, 4 },	-- Indurium Ore
+					},
 					["lvl"] = 29,
 				}),
 				q(1190, {	-- Keeping Pace
