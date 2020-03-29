@@ -320,9 +320,16 @@ _.Zones =
 					["isBreadcrumb"] = true,
 				}),
 				q(5245, {	-- Troubled Spirits of Kel'Theril
-					["lvl"] = 49,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10301,	-- Jaron Stoneshaper
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12891, 1 },	-- Jaron's Pick
+						{ "i", 12896, 1 },	-- First Relic Fragment
+						{ "i", 12897, 1 },	-- Second Relic Fragment
+						{ "i", 12898, 1 },	-- Third Relic Fragment
+						{ "i", 12899, 1 },	-- Fourth Relic Fragment
+					},
+					["lvl"] = 49,
 				}),
 				q(5054, {	-- Ursius of the Shardtooth
 					["lvl"] = 53,

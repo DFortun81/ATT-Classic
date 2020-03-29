@@ -158,6 +158,7 @@ _.Zones =
 								{
 									["itemID"] = 5852,	-- Fuel Regulator Blueprints
 									["questID"] = 1182,	-- Goblin Sponsorship
+									["coord"] = { 43.33, 20.33, STRANGLETHORN_VALE },
 								},
 							},
 						},
@@ -168,6 +169,9 @@ _.Zones =
 					["sourceQuest"] = 1182,	-- Goblin Sponsorship
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
 					["maps"] = { STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 5852, 1 },	-- Fuel Regulator Blueprints
+					},
 					["lvl"] = 29,
 				}),
 				q(1099, {	-- Goblins Win!
