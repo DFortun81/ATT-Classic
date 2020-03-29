@@ -195,10 +195,12 @@ _.Zones =
 					},
 				}),
 				q(714, {	-- Gyro... What?
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 26.0, 44.9, BADLANDS },
+					["cost"] = {
+						{ "i", 4389, 1 },	-- Gyrochronatom
+					},
+					["lvl"] = 35,
 				}),
 				q(1108, {	-- Indurium
 					["qg"] = 4618,	-- Martek the Exiled
@@ -412,6 +414,15 @@ _.Zones =
 					},
 				}),
 				q(716, {	-- Stone Is Better than Cloth
+					["qg"] = 2920,	-- Lucien Tosselwrench
+					["sourceQuests"] = {
+						714,	-- Gyro... What?
+						712,	-- Study of the Elements: Rock
+					},
+					["coord"] = { 25.8, 44.4, BADLANDS },
+					["cost"] = {
+						{ "i", 2868, 1 },	-- Patterned Bronze Bracers
+					},
 					["lvl"] = 35,
 					["g"] = {
 						i(4979),	-- Enchanted Stonecloth Bracers
