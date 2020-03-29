@@ -334,7 +334,7 @@ _.Zones =
 				q(1078, {	-- Retrieval for Mauren
 					["qg"] = 4078,	-- Collin Mauren
 					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY, THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 5675, 8 },	-- Crystalized Scales

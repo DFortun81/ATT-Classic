@@ -38,6 +38,7 @@ _.Zones =
 				}),
 				q(1118, {	-- Back to Booty Bay
 					["qg"] = 4452,	-- Kravel Koalbeard
+					["sourceQuest"] = 1117,	-- Rumors for Kravel
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["lvl"] = 35,
 				}),
@@ -243,6 +244,7 @@ _.Zones =
 						1104,	-- Salt Flat Venom
 					},
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
+					["maps"] = { BADLANDS },
 					["cost"] = {
 						{ "i", 5827, 1 },	-- Fizzle Brassbolts' Letter
 					},
@@ -253,16 +255,6 @@ _.Zones =
 					["coord"] = { 32.23, 22.17, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
-				}),
-				q(1137, {	-- News for Fizzle
-					["qg"] = 4618,	-- Martek the Exiled
-					["sourceQuest"] = 1108,	-- Indurium
-					--["coord"] = { },
-					["lvl"] = 28,
-					["groups"] = {
-						i(6729),	-- Fizzle's Zippy Lighter
-						i(6732),	-- Gnomish Mechanic's Gloves
-					},
 				}),
 				q(4841, {	-- Pacify the Centaur
 					["qg"] = 10537,	-- Cliffwatcher Longhorn

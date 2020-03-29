@@ -237,6 +237,17 @@ _.Zones =
 						i(4983),	-- Rock Pulverizer
 					},
 				}),
+				q(1137, {	-- News for Fizzle
+					["qg"] = 4618,	-- Martek the Exiled
+					["sourceQuest"] = 1108,	-- Indurium
+					["coord"] = { 42.22, 52.69, BADLANDS },
+					["maps"] = { THOUSAND_NEEDLES },
+					["lvl"] = 28,
+					["groups"] = {
+						i(6729),	-- Fizzle's Zippy Lighter
+						i(6732),	-- Gnomish Mechanic's Gloves
+					},
+				}),
 				q(725, {	-- Passing Word of a Threat
 					["sourceQuest"] = 724,	-- Prospect of Faith
 					["qg"] = 2916,	-- Historian Karnik
