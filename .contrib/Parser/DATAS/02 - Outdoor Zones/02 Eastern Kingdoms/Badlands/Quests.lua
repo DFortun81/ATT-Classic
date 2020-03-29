@@ -460,6 +460,14 @@ _.Zones =
 					["u"] = 1,
 				}),
 				q(692, {	-- The Lost Fragments
+					["qg"] = 2785,	-- Theldurin the Lost
+					["sourceQuest"] = 687,	-- Theldurin the Lost
+					["coord"] = { 51.4, 76.9, BADLANDS },
+					["cost"] = {
+						{ "i", 4519, 1 },	-- Crumpled Scroll Fragment
+						{ "i", 4520, 1 },	-- Singed Scroll Fragment
+						{ "i", 4518, 1 },	-- Torn Scroll Fragment
+					},
 					["lvl"] = 30,
 				}),
 				{	-- The Star, the Hand and the Heart
