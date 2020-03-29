@@ -7,14 +7,24 @@ _.Zones =
 		m(TANARIS, {
 			n(QUESTS, {
 				q(2750, {	-- A Bad Egg
-					["lvl"] = 42,
-					["repeatable"] = true,
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["coord"] = { 52.2, 26.8, TANARIS },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 8646, 1 },	-- Bad Egg
+					},
+					["lvl"] = 42,
 				}),
 				q(2748, {	-- A Fine Egg
-					["lvl"] = 42,
-					["repeatable"] = true,
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["coord"] = { 52.2, 26.8, TANARIS },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 8644, 1 },	-- Fine Egg
+					},
+					["lvl"] = 42,
 					["g"] = {
 						i(9540),	-- Box of Spells
 					},
@@ -39,17 +49,27 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(2747, {	-- An Extraordinary Egg
-					["lvl"] = 42,
-					["repeatable"] = true,
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["coord"] = { 52.2, 26.8, TANARIS },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 8643, 1 },	-- Extraordinary Egg
+					},
+					["lvl"] = 42,
 					["g"] = {
 						i(9541),	-- Box of Goodies
 					},
 				}),
 				q(2749, {	-- An Ordinary Egg
-					["lvl"] = 42,
-					["repeatable"] = true,
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
+					["coord"] = { 52.2, 26.8, TANARIS },
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 8645, 1 },	-- Ordinary Egg
+					},
+					["lvl"] = 42,
 					["g"] = {
 						i(9539),	-- Box of Rations
 					},
@@ -139,9 +159,9 @@ _.Zones =
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
 				}),
 				q(992, {	-- Gadgetzan Water Survey
-					["lvl"] = 38,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["coord"] = { 50.2, 27.5, TANARIS },
+					["lvl"] = 38,
 				}),
 				q(3161, {	-- Gahz'ridian
 					["lvl"] = 43,
@@ -151,8 +171,13 @@ _.Zones =
 					},
 				}),
 				q(3022, {	-- Handle With Care
-					["lvl"] = 42,
+					["qg"] = 7763,	-- Curgle Cranklehop
+					["coord"] = { 52.2, 26.8, TANARIS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9507, 1 },	-- A Carefully-packed Crate
+					},
+					["lvl"] = 42,
 				}),
 				q(8924, {	-- Hunting for Ectoplasm
 					["u"] = 3,	-- Added in later phase
@@ -166,15 +191,20 @@ _.Zones =
 					["qg"] = 7564,	-- Marin Noggenfogger
 					["coord"] = { 51.8, 28.6, TANARIS },
 				}),
-				q(110, {	-- Insect Part Analysis
-					["lvl"] = 39,
-					["races"] = HORDE_ONLY,
+				q(110, {	-- Insect Part Analysis (1/2)
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["sourceQuest"] = 10,	-- The Scrimshank Redemption
 					["coord"] = { 50.2, 27.5, TANARIS },
-				}),
-				q(113, {	-- Insect Part Analysis
 					["lvl"] = 39,
-					["races"] = HORDE_ONLY,
+				}),
+				q(113, {	-- Insect Part Analysis (2/2)
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["sourceQuest"] = 110,	-- Insect Part Analysis (1/2)
+					["coord"] = { 50.9, 27.0, TANARIS },
+					["cost"] = {
+						{ "i", 8594, 1 },	-- Insect Analysis Report
+					},
+					["lvl"] = 39,
 				}),
 				q(3914, {	-- Linken's Sword
 					["provider"] = { "o", 148504 },	-- A Conspicuous Gravestone
@@ -198,13 +228,13 @@ _.Zones =
 					},
 				}),
 				q(82, {	-- Noxious Lair Investigation
-					["lvl"] = 39,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
-					["coord"] = { 50.2, 27.5, TANARIS },
 					["sourceQuest"] = 992,	-- Gadgetzan Water Survey
+					["coord"] = { 50.2, 27.5, TANARIS },
+					["lvl"] = 39,
 				}),
 				q(4507, {	-- Pawn Captures Queen
-					["qg"] = 5594,	-- Alchemist Pestlezugg
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["lvl"] = 50,
 				}),
@@ -225,16 +255,18 @@ _.Zones =
 						i(9644),	-- Thermotastic Egg Timer
 					},
 				}),
-				q(32, {	-- Rise of the Silithid
-					["lvl"] = 39,
-					["races"] = HORDE_ONLY,
+				{
+					["allianceQuestID"] = 162,	-- Rise of the Silithid
+					["hordeQuestID"] = 32,	-- Rise of the Silithid
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["sourceQuest"] = 113,	-- Insect Part Analysis (2/2)
 					["coord"] = { 50.2, 27.5, TANARIS },
-				}),
-				q(162, {	-- Rise of the Silithid
+					["maps"] = { ORGRIMMAR, DARNASSUS },
+					["cost"] = {
+						{ "i", 8594, 1 },	-- Insect Analysis Report
+					},
 					["lvl"] = 39,
-					["races"] = ALLIANCE_ONLY,
-				}),
+				},
 				q(3520, {	-- Screecher Spirits
 					["lvl"] = 40,
 				}),
@@ -330,9 +362,20 @@ _.Zones =
 					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(10, {	-- The Scrimshank Redemption
-					["lvl"] = 39,
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
+					["sourceQuest"] = 82,	-- Noxious Lair Investigation
 					["coord"] = { 50.2, 27.5, TANARIS },
+					["cost"] = {
+						{ "i", 8593, 1 },	-- Scrimshank's Surveying Gear
+					},
+					["lvl"] = 39,
+					["groups"] = {
+						{
+							["itemID"] = 8593,	-- Scrimshank's Surveying Gear
+							["questID"] = 10,	-- The Scrimshank Redemption
+							["coord"] = { 56, 71, TANARIS },
+						},
+					},
 				}),
 				q(2954, {	-- The Stone Watcher
 					["lvl"] = 45,
@@ -362,12 +405,25 @@ _.Zones =
 					},
 				}),
 				q(2944, {	-- The Super Snapper FX
-					["lvl"] = 42,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 7763,	-- Curgle Crankhop
-					["coord"] = { 79.0, 62.0, THE_HINTERLANDS },
-					["maps"] = { THE_HINTERLANDS },
+					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2941,	-- The Borrower
+					["coord"] = { 52.2, 26.8, TANARIS },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 42,
+					["groups"] = {
+						{
+							["itemID"] = 9328,	-- Super Snapper FX
+							["coord"] = { 79.0, 62.0, THE_HINTERLANDS },
+							["groups"] = {
+								{
+									["itemID"] = 9330,	-- Snapshot of Gammerita
+									["questID"] = 2944,	-- The Super Snapper FX
+									["cr"] = 7977,	-- Gammerita
+								},
+							},
+						},
+					},
 				}),
 				q(2605, {	-- The Thirsty Goblin
 					["lvl"] = 44,

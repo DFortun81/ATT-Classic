@@ -4621,16 +4621,19 @@ local function CreateMiniListForGroup(group)
 										-- Alt Quest IDs are always Horde.
 										if app.FactionID == Enum.FlightPathFaction.Horde then
 											if sq.altQuestID == sourceQuestID then
-												found = sq;
-												break;
+												if not found or (not found.sourceQuests and sq.sourceQuests) then
+													found = sq;
+												end
 											end
 										elseif questID == sourceQuestID then
-											found = sq;
-											break;
+											if not found or (not found.sourceQuests and sq.sourceQuests) then
+												found = sq;
+											end
 										end
 									elseif app.RecursiveClassAndRaceFilter(sq) then
-										found = sq;
-										break;
+										if not found or (not found.sourceQuests and sq.sourceQuests) then
+											found = sq;
+										end
 									end
 								end
 							end

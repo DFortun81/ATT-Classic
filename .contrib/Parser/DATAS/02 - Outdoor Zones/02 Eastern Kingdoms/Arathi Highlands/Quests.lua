@@ -77,7 +77,7 @@ _.Zones =
 				}),
 				q(667, {	-- Death From Below
 					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
-					["sourceQuest"] = 670,	-- Sunken Treasure
+					["sourceQuest"] = 670,	-- Sunken Treasure (5/5)
 					["coord"] = { 32.2, 81.6, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
@@ -170,17 +170,23 @@ _.Zones =
 					["lvl"] = 28,
 				}),
 				q(690, {	-- Malin's Request
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2708,	-- Archmage Malin
+					["coord"] = { 39.8, 81.2, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(697, {	-- Malin's Request
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 696,	-- Attack on the Tower
+					["coord"] = { 46.6, 47, ARATHI_HIGHLANDS },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4533, 1 },	-- Sealed Letter to Archmage Malin
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(4975),	-- Vigilant Buckler
 						i(15104),	-- Wingborne Boots
@@ -325,31 +331,51 @@ _.Zones =
 						i(4743),	-- Pulsating Crystalline Shard
 					},
 				}),
-				q(669, {	-- Sunken Treasure
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2610,	-- Shakes O'Breen
-				}),
-				q(668, {	-- Sunken Treasure
-					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2774,	-- Doctor Draxlegauge
-				}),
-				q(665, {	-- Sunken Treasure
+				q(665, {	-- Sunken Treasure (1/5)
 					["qg"] = 2768,	-- Professor Phizzlethorpe
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 33.8, 80.6, ARATHI_HIGHLANDS },
 					["lvl"] = 35,
 				}),
-				q(666, {	-- Sunken Treasure
-					["races"] = ALLIANCE_ONLY,
+				q(666, {	-- Sunken Treasure (2/5)
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["sourceQuest"] = 665,	-- Sunken Treasure (1/5)
+					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
+					["cost"] = {
+						{ "i", 4491, 1 },	-- Goggles of Gem Hunting
+						{ "i", 4492, 10 },	-- Elven Gem
+					},
 					["lvl"] = 35,
 					["g"] = {
 						i(4547),	-- Gnomish Zapper
 						i(4548),	-- Servomechanic Sledgehammer
 					},
 				}),
-				q(670, {	-- Sunken Treasure
-					["races"] = ALLIANCE_ONLY,
+				q(668, {	-- Sunken Treasure (3/5)
+					["qg"] = 2774,	-- Doctor Draxlegauge
+					["sourceQuest"] = 666,	-- Sunken Treasure (2/5)
+					["coord"] = { 33.8, 80.4, ARATHI_HIGHLANDS },
+					["cost"] = {
+						{ "i", 4493, 1 },	-- Elven Gems
+					},
+					["lvl"] = 35,
+				}),
+				q(669, {	-- Sunken Treasure (4/5)
+					["qg"] = 2610,	-- Shakes O'Breen
+					["sourceQuest"] = 668,	-- Sunken Treasure (3/5)
+					["coord"] = { 32.2, 81.4, ARATHI_HIGHLANDS },
+					["cost"] = {
+						{ "i", 4502, 1 },	-- Sample Elven Gem
+					},
+					["lvl"] = 35,
+				}),
+				q(670, {	-- Sunken Treasure (5/5)
+					["qg"] = 2487,	-- Fleet Master Seahorn <Blackwater Raiders>
+					["sourceQuest"] = 669,	-- Sunken Treasure (4/5)
+					["coord"] = { 27.2, 77.0, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 4494, 1 },	-- Seahorn's Sealed Letter
+					},
 					["lvl"] = 35,
 				}),
 				q(640, {	-- The Broken Sigil
@@ -398,7 +424,7 @@ _.Zones =
 						{ 74.4, 35.6, ARATHI_HIGHLANDS },
 						{ 50.6, 6.2, IRONFORGE },
 					},
-					["maps"] = { IRONFORGE },
+					["maps"] = { IRONFORGE, BADLANDS },
 					["lvl"] = 30,
 				}),
 				q(694, {	-- Trelane's Defenses

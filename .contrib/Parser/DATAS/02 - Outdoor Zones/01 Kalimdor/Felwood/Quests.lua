@@ -95,7 +95,7 @@ _.Zones =
 					["qg"] = 9116,	-- Eridan Bluewind <Emerald Circle>
 					["sourceQuest"] = 4084,	-- Silver Heart
 					["coord"] = { 51.2, 81.6, FELWOOD },
-					["maps"] = { TANARIS },
+					["maps"] = { TANARIS, UNGORO_CRATER },
 					["cost"] = {
 						{ "i", 11522, 1 },	-- Silver Totem of Aquementas
 					},

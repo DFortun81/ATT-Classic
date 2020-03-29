@@ -15,15 +15,17 @@ _.Zones =
 				}),
 				q(1075, {	-- A Scroll from Mauren
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(1072, {	-- An Old Colleague
 					["qg"] = 4077,	-- Gaxim Rustfizzle
+					["sourceQuest"] = 1071,	-- A Gnome's Respite
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
-					["lvl"] = 17,
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 17,
 				}),
 				q(6284, {	-- Arachnophobia
 					["provider"] = { "o", 177904 },	-- Wanted Poster: Besseleth
@@ -126,17 +128,6 @@ _.Zones =
 					["qg"] = 11864,	-- Tammra Windfield
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 17,
-				}),
-				q(1076, {	-- Devils in Westfall
-					["qg"] = 4078,	-- Collin Mauren
-					["sourceQuest"] = 1075,	-- A Scroll from Mauren
-					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
-					["maps"] = { WESTFALL },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 5669, 1 },	-- Dust Devil Debris
-					},
 					["lvl"] = 17,
 				}),
 				q(6481, {	-- Earthen Arise

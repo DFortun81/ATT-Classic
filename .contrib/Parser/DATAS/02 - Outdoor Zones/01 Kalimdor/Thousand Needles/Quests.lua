@@ -238,7 +238,14 @@ _.Zones =
 				}),
 				q(1106, {	-- Martek the Exiled
 					["qg"] = 4454,	-- Fizzle Brassbolts
+					["sourceQuests"] = {
+						1105,	-- Hardened Shells
+						1104,	-- Salt Flat Venom
+					},
 					["coord"] = { 78.1, 77.1, THOUSAND_NEEDLES },
+					["cost"] = {
+						{ "i", 5827, 1 },	-- Fizzle Brassbolts' Letter
+					},
 					["lvl"] = 26,
 				}),
 				q(4542, {	-- Message to Freewind Post

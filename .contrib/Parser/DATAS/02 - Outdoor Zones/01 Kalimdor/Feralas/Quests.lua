@@ -303,6 +303,9 @@ _.Zones =
 					["sourceQuest"] = 4266,	-- A Hero's Welcome
 					["coord"] = { 30.3, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11466, 1 },	-- Raschal's Report
+					},
 					["lvl"] = 40,
 				}),
 				q(7731, {	-- Stinglasher

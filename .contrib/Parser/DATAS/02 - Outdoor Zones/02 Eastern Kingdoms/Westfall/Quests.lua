@@ -82,6 +82,17 @@ _.Zones =
 					},
 					["lvl"] = 10,
 				}),
+				q(1076, {	-- Devils in Westfall
+					["qg"] = 4078,	-- Collin Mauren
+					["sourceQuest"] = 1075,	-- A Scroll from Mauren
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5669, 1 },	-- Dust Devil Debris
+					},
+					["lvl"] = 17,
+				}),
 				q(184, {	-- Furlbrow's Deed
 					["provider"] = { "i", 1972 },	-- Westfall Deed
 					["maps"] = { ELWYNN_FOREST },
