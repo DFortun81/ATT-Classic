@@ -137,12 +137,14 @@ _.Zones =
 					["qg"] = 4631,	-- Wharfmaster Lozgil
 					["sourceQuest"] = 1180,	-- Goblin Sponsorship
 					["coord"] = { 26.3, 73.6, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 29,
 				}),
 				q(1182, {	-- Goblin Sponsorship
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1181,	-- Goblin Sponsorship
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["cost"] = {
 						{ "i", 5852, 1 },	-- Fuel Regulator Blueprints
 					},
@@ -165,6 +167,7 @@ _.Zones =
 					["qg"] = 2496,	-- Baron Revilgaz
 					["sourceQuest"] = 1182,	-- Goblin Sponsorship
 					["coord"] = { 27.2, 76.9, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 29,
 				}),
 				q(1099, {	-- Goblins Win!
