@@ -98,6 +98,7 @@ _.Zones =
 					["qg"] = 7572,	-- Fallen Hero of the Horde
 					["sourceQuest"] = 2701,	-- Heroes of Old
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
+					["maps"] = { BLASTED_LANDS },
 					["lvl"] = 45,
 				}),
 				q(698, {	-- Lack of Surplus

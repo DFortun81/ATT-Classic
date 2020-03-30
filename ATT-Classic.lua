@@ -1350,7 +1350,21 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					else
 						for i,j in ipairs(group) do
 							if app.RecursiveClassAndRaceFilter(j) and app.RecursiveUnobtainableFilter(j) and app.RecursiveGroupRequirementsFilter(j) then
-								tinsert(regroup, j);
+								if j.questID and j.itemID then
+									if not j.saved then
+										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
+										if C_QuestLog.IsOnQuest(j.questID) then
+											if not IsQuestComplete(j.questID) then
+												tinsert(regroup, j);
+											end
+										elseif j.providers then
+											tinsert(regroup, j);
+										end
+									end
+								else
+									tinsert(regroup, j);
+								end
+								
 							end
 						end
 					end
@@ -9161,7 +9175,7 @@ app.events.UPDATE_INSTANCE_INFO = function()
 	RefreshSaves();
 end
 app.events.QUEST_ACCEPTED = function(questID)
-	
+	wipe(searchCache);
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	CompletedQuests[questID] = true;
@@ -9169,6 +9183,7 @@ app.events.QUEST_TURNED_IN = function(questID)
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
+	wipe(searchCache);
 end
 app.events.QUEST_LOG_UPDATE = function()
 	GetQuestsCompleted(CompletedQuests);
@@ -9176,5 +9191,6 @@ app.events.QUEST_LOG_UPDATE = function()
 		app.QuestCompletionHelper(tonumber(questID));
 	end
 	wipe(DirtyQuests);
+	wipe(searchCache);
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
 end
