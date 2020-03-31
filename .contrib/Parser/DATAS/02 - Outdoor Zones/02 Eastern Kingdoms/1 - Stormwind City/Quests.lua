@@ -115,13 +115,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 5479,	-- Wu Shen <Warrior Trainer>
-					["coord"] = { 78.8, 45.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(1942, {	-- Astral Knot Garment
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
 					["sourceQuest"] = 1940,	-- Pristine Spider Silk

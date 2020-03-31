@@ -52,13 +52,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 4593,	-- Christoph Walker <Warrior Trainer>
-					["coord"] = { 47.8, 14.8, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(8233, {	-- A Simple Request
 					["qg"] = 4583,	-- Miles Dexter <Rogue Trainer>
 					["coord"] = { 85.0, 75.2, UNDERCITY },

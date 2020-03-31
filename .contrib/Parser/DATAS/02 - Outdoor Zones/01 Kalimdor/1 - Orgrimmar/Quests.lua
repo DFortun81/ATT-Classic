@@ -319,13 +319,6 @@ _.Zones =
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 3354,	-- Sorek <Warrior Trainer>
-					["coord"] = { 80.2, 32.4, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(8998, {	-- Back to the Beginning
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,

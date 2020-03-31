@@ -56,13 +56,6 @@ _.Zones =
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 7315,	-- Darnath Bladesinger <Warrior Trainer>
-					["coord"] = { 58.6, 35.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				{
 					["questID"] = 4510,	-- Calm Before the Storm (2/2)
 					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)

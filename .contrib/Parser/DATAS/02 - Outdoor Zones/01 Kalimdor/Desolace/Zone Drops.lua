@@ -25,7 +25,7 @@ _.Zones =
 				}),
 				i(6079, {	-- Crude Charm
 					["questID"] = 1384,	-- Raid on the Kolkar
-					["races"] = HORDE_ONLY,
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						12977,	-- Kolkar Ambusher
 						4636,	-- Kolkar Battle Lord

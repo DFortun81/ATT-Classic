@@ -798,6 +798,28 @@ end
 
 -- Quest Completion Lib
 local DirtyQuests = {};
+local IgnoreErrorQuests = {
+	[555]=1,	-- Soothing Turtle Bisque (A)
+	[7321]=1,	-- Soothing Turtle Bisque (H)
+	[3630]=1,	-- Gnome Engineering [A]
+	[3632]=1,	-- Gnome Engineering [A]
+	[3634]=1,	-- Gnome Engineering [H]
+	[3635]=1,	-- Gnome Engineering [H]
+	[3637]=1,	-- Gnome Engineering [H]
+	[3526]=1,	-- Goblin Engineering [H]
+	[3629]=1,	-- Goblin Engineering [A]
+	[3633]=1,	-- Goblin Engineering [H]
+	[4181]=1,	-- Goblin Engineering [A]
+	[5504]=1,	-- Mantles of the Dawn
+	[5507]=1,	-- Mantles of the Dawn
+	[5513]=1,	-- Mantles of the Dawn
+	[8870]=1,	-- The Lunar Festival
+	[8871]=1,	-- The Lunar Festival
+	[8872]=1,	-- The Lunar Festival
+	[8873]=1,	-- The Lunar Festival
+	[8874]=1,	-- The Lunar Festival
+	[8875]=1,	-- The Lunar Festival
+};
 local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
 		rawset(t, key, value);
@@ -809,7 +831,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 			if searchResults and #searchResults > 0 then
 				local questID, nmr, nmc = key, false, false;
 				for i,searchResult in ipairs(searchResults) do
-					if searchResult.questID == questID and not searchResult.requireSkill then	-- Note: Cooking quests are shared Horde/Alliance
+					if searchResult.questID == questID and not IgnoreErrorQuests[questID] then
 						if searchResult.nmr then
 							if not nmr then
 								nmr = true;

@@ -464,13 +464,6 @@ _.Zones =
 					["qg"] = 5111,	-- Innkeeper Firebrew
 					["coord"] = { 18.1, 51.5, IRONFORGE },
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 5113,	-- Kelv Sternhammer <Warrior Trainer>
-					["coord"] = { 70.6, 90.6, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,

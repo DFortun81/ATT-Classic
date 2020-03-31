@@ -833,7 +833,6 @@ _.Zones =
 				}),
 				q(6041, {	-- When Smokey Sings, I Get Violent
 					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(16992),	-- Smokey's Explosive Launcher
 						i(16993),	-- Smokey's Fireshooter

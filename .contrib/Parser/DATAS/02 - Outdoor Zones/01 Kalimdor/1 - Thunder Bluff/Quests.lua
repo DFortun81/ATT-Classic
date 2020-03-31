@@ -51,13 +51,6 @@ _.Zones =
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
 				}),
-				q(8417, {	-- A Troubled Spirit
-					["qg"] = 3041,	-- Torm Ragetotem <Warrior Trainer>
-					["coord"] = { 57.6, 87.2, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 50,
-				}),
 				q(1066, {	-- Blood of Innocents
 					["qg"] = 2216,	-- Apothecary Lydon
 					["coord"] = { 61.4, 19.2, HILLSBRAD_FOOTHILLS },

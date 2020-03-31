@@ -15,6 +15,34 @@ _.Zones =
 					["coord"] = { 34.3, 66.2, SWAMP_OF_SORROWS },
 					["lvl"] = 45,
 				}),
+				q(8417, {	-- A Troubled Spirit
+					["qgs"] = {
+						7315,	-- Darnath Bladesinger <Warrior Trainer> (Darnassus)
+						3354,	-- Sorek <Warrior Trainer> (Orgrimmar)
+						3041,	-- Torm Ragetotem <Warrior Trainer> (Thunder Bluff)
+						5113,	-- Kelv Sternhammer <Warrior Trainer> (Ironforge)
+						5479,	-- Wu Shen <Warrior Trainer> (Stormwind City)
+						4593,	-- Christoph Walker <Warrior Trainer> (Undercity)
+					},
+					["coords"] = {
+						{ 58.6, 35.6, DARNASSUS },
+						{ 80.2, 32.4, ORGRIMMAR },
+						{ 57.6, 87.2, THUNDER_BLUFF },
+						{ 70.6, 90.6, IRONFORGE },
+						{ 78.8, 45.6, STORMWIND_CITY },
+						{ 47.8, 14.8, UNDERCITY },
+					},
+					["maps"] = {
+						DARNASSUS,
+						ORGRIMMAR,
+						THUNDER_BLUFF,
+						IRONFORGE,
+						STORMWIND_CITY,
+						UNDERCITY,
+					},
+					["classes"] = { WARRIOR },
+					["lvl"] = 50,
+				}),
 				q(1428, {	-- Continued Threat
 					["races"] = HORDE_ONLY,
 					["lvl"] = 35,
