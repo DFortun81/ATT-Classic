@@ -34,16 +34,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
 				}),
-				q(3842, {	-- A Short Incubation
-					["qg"] = 9238,	-- Quentin
-					["sourceQuest"] = 3841,	-- An Orphan Looking For a Home
-					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 3825, 2 },	-- Elixir of Fortitude
-					},
-					["lvl"] = 38,
-				}),
 				q(3121, {	-- A Strange Request
 					["qg"] = 8115,	-- Witch Doctor Uzer'i
 					["races"] = HORDE_ONLY,
@@ -403,16 +393,6 @@ _.Zones =
 						i(9654),	-- Cairnstone Sliver
 						i(9655),	-- Seedtime Hoop
 					},
-				}),
-				q(3843, {	-- The Newest Member of the Family
-					["qg"] = 9238,	-- Quentin
-					["sourceQuest"] = 3842,	-- A Short Incubation
-					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 11471, 1 },	-- Fragile Sprite Darter Egg
-					},
-					["lvl"] = 38,
 				}),
 				q(2975, {	-- The Ogres of Feralas
 					["qg"] = 7777,	-- Rok Orhan

@@ -11,6 +11,16 @@ _.Zones =
 					["coord"] = { 81.6, 77.9, THOUSAND_NEEDLES },
 					["lvl"] = 28,
 				}),
+				q(3842, {	-- A Short Incubation
+					["qg"] = 9238,	-- Quentin
+					["sourceQuest"] = 3841,	-- An Orphan Looking For a Home
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3825, 2 },	-- Elixir of Fortitude
+					},
+					["lvl"] = 38,
+				}),
 				q(4821, {	-- Alien Egg
 					["qg"] = 10539,	-- Hagar Lightninghoof
 					["coord"] = { 44.64, 50.29, THOUSAND_NEEDLES },
@@ -323,6 +333,7 @@ _.Zones =
 						1121,	-- Get the Goblins Drunk
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
+					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
 				q(1194, {	-- Rizzle's Schematics
@@ -456,6 +467,17 @@ _.Zones =
 					["coord"] = { 80.2, 75.9, THOUSAND_NEEDLES },
 					["lvl"] = 29,
 				}),
+				q(3843, {	-- The Newest Member of the Family
+					["qg"] = 9238,	-- Quentin
+					["sourceQuest"] = 3842,	-- A Short Incubation
+					["coord"] = { 78.4, 74.7, THOUSAND_NEEDLES },
+					["maps"] = { THE_HINTERLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11471, 1 },	-- Fragile Sprite Darter Egg
+					},
+					["lvl"] = 38,
+				}),
 				q(1115, {	-- The Rumormonger
 					["qg"] = 4452,	-- Kravel Koalbeard
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
@@ -507,6 +529,7 @@ _.Zones =
 					["qg"] = 2498,	-- Crank Fizzlebub
 					["sourceQuest"] = 1118,	-- Back to Booty Bay
 					["coord"] = { 27.1, 77.2, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["lvl"] = 35,
 				}),
 			}),
