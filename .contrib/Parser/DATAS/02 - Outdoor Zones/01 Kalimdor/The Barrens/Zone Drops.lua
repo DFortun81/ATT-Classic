@@ -33,12 +33,8 @@ _.Zones =
 						5842,	-- Takk the Leaper
 					},
 				}),
-				i(6663, {	-- Recipe: Elixir of Giant Growth
-					["description"] = "Can drop from any mob in the Barrens.",
-				}),
-				i(6661, {	-- Recipe: Savory Deviate Delight
-					["description"] = "Can drop from any mob in the Barrens.",
-				}),
+				i(6663),	-- Recipe: Elixir of Giant Growth
+				i(6661),	-- Recipe: Savory Deviate Delight
 				i(5086, {	-- Zhevra Hooves
 					["questID"] = 845,	-- The Zhevra
 					["races"] = HORDE_ONLY,
