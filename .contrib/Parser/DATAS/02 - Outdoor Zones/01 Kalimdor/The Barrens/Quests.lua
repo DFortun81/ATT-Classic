@@ -536,32 +536,6 @@ _.Zones =
 					["coord"] = { 56.52, 7.45, THE_BARRENS },
 					["lvl"] = 13,
 				}),
-				q(3370, {	-- In Nightmares
-					["qg"] = 8418,	-- Falla Sagewind
-					["coord"] = { 48.18, 32.78, THE_BARRENS },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 10649, 1 },	-- Nightmare Shard
-					},
-					["lvl"] = 10,
-					["g"] = {
-						i(10657),	-- Talbar Mantle
-						i(10658),	-- Quagmire Galoshes
-					},
-				}),
-				q(3369, {	-- In Nightmares
-					["qg"] = 8418,	-- Falla Sagewind
-					["coord"] = { 48.18, 32.78, THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 10649, 1 },	-- Nightmare Shard
-					},
-					["lvl"] = 10,
-					["g"] = {
-						i(10657),	-- Talbar Mantle
-						i(10658),	-- Quagmire Galoshes
-					},
-				}),
 				q(873, {	-- Isha Awak
 					["qg"] = 3388,	-- Mahren Skyseer
 					["sourceQuest"] = 874,	-- Mahren Skyseer

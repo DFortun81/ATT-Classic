@@ -54,6 +54,9 @@ _.Instances = {
 						["description"] = "She lives in a house on top of the mountain.",
 						["coord"] = { 48.2, 32.8, THE_BARRENS },
 						["maps"] = { THE_BARRENS },
+						["cost"] = {
+							{ "i", 10649, 1 },	-- Nightmare Shard
+						},
 						["lvl"] = 15,
 						["groups"] = {
 							i(10657),	-- Talbar Mantle
