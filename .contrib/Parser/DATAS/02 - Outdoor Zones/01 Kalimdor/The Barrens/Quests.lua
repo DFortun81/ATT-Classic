@@ -995,7 +995,6 @@ _.Zones =
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 892,	-- The Missing Shipment
 					["coord"] = {62.68, 36.24, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 					["g"] = {
 						i(5337),	-- Wayfaring Gloves
@@ -1181,14 +1180,12 @@ _.Zones =
 					["qg"] = 3453,	-- Wharfmaster Dizzywig
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["sourceQuest"] = 890,	-- The Missing Shipment
-					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(890, {	-- The Missing Shipment
 					["qg"] = 3391,	-- Gazlowe
 					["sourceQuest"] = 887,	-- Southsea Freebooters
 					["coord"] = {62.68, 36.24, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(1740, {	-- The Orb of Soran'ruk
@@ -1329,7 +1326,6 @@ _.Zones =
 				q(895, {	-- WANTED: Baron Longshore
 					["provider"] = { "o", 3972 },
 					["coord"] = { 62.59, 37.47, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
 				}),
 				q(885, {	-- Washte Pawne
