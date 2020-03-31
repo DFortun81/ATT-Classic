@@ -120,6 +120,16 @@ _.Instances = {
 						["lvl"] = 13,
 					},
 					{
+						["provider"] = { "i", 10441 },	-- Glowing Shard
+						["questID"] = 6981,	-- The Glowing Shard
+						["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
+						["coord"] = { 63.0, 37.2, THE_BARRENS },
+						["maps"] = { THE_BARRENS },
+						["altQuests"] = {
+							3366 -- The Glowing Shard [6981 and 3366 look identical, but WoWHead doesn't have much info on 3366]
+						},
+					},
+					{
 						["questID"] = 959,	-- Trouble at the Docks
 						["qg"] = 3665,	-- Crane Operator Bigglefuzz
 						["coord"] = { 63.1, 37.6, THE_BARRENS },
@@ -229,16 +239,7 @@ _.Instances = {
 			n(3654, { 	-- Mutanus the Devourer
 				{
 					["itemID"] = 10441,	-- Glowing Shard
-					["groups"] = {
-						{
-							["questID"] = 6981,	-- The Glowing Shard
-							["qg"] = 3442,	-- Sputtervalve <Tinkers' Union>
-							["coord"] = { 63.0, 37.2, THE_BARRENS },
-							["altQuests"] = {
-								3366 -- The Glowing Shard [6981 and 3366 look identical, but WoWHead doesn't have much info on 3366]
-							},
-						},
-					},
+					["questID"] = 6981,	-- The Glowing Shard
 				},
 				i(6461), 	-- Slime-Encrusted Pads
 				i(6627), 	-- Mutant Breastplate
