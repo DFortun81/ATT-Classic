@@ -262,7 +262,8 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Icebane Bracers",
-				["recipeID"] = 28244
+				["recipeID"] = 28244,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Imperial Plate Bracers",
@@ -301,7 +302,8 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Black Grasp of the Destroyer",
-				["recipeID"] = 27589
+				["recipeID"] = 27589,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Bloodsoul Gauntlets",
@@ -336,7 +338,8 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Icebane Gauntlets",
-				["recipeID"] = 28243
+				["recipeID"] = 28243,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Ironforge Gauntlets",
@@ -416,7 +419,8 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Icebane Breastplate",
-				["recipeID"] = 28242
+				["recipeID"] = 28242,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Imperial Plate Chest",
@@ -438,11 +442,13 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Obsidian Mail Tunic",
-				["recipeID"] = 27590
+				["recipeID"] = 27590,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Ornate Mithril Breastplate",
 				["recipeID"] = 9972,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Radiant Breastplate",
@@ -478,7 +484,8 @@ profession(BLACKSMITHING, {
 			},
 			{
 				["name"] = "Thick Obsidian Breastplate",
-				["recipeID"] = 27587
+				["recipeID"] = 27587,
+				["u"] = 3,
 			},
 			{
 				["name"] = "Thorium Armor",
@@ -497,7 +504,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Girdle of the Dawn",
 				["recipeID"] = 23632,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Heavy Obsidian Belt",
@@ -674,7 +680,8 @@ profession(BLACKSMITHING, {
 		["g"] = {
 			{
 				["name"] = "Jagged Obsidian Shield",
-				["recipeID"] = 27586
+				["recipeID"] = 27586,
+				["u"] = 3,
 			},
 		}
 	},
