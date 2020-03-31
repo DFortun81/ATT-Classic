@@ -602,6 +602,7 @@ profession(BLACKSMITHING, {
 			["description"] = "Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",
 			["coord"] = { 49.8, 45, IRONFORGE },
 			["maps"] = { IRONFORGE },
+			["races"] = ALLIANCE_ONLY,
 			["altQuests"] = {
 				5283,	-- The Art of the Armorsmith (A)
 				5301,	-- The Art of the Armorsmith (H)

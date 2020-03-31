@@ -534,7 +534,6 @@ _.Zones =
 				q(858, {	-- Ignition
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
 					["coord"] = { 56.52, 7.45, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 				}),
 				q(3370, {	-- In Nightmares
@@ -685,7 +684,9 @@ _.Zones =
 					["coord"] = { 63.35, 38.45, THE_BARRENS },
 					["lvl"] = 13,
 					["g"] = {
-						i(5335),	-- A Sack of Coins
+						i(5335, {	-- A Sack of Coins
+							i(4957),	-- Old Moneybag
+						}),
 					},
 				}),
 				q(2478, {	-- Mission: Possible But Not Probable
@@ -799,7 +800,6 @@ _.Zones =
 				q(865, {	-- Raptor Horns
 					["qg"] = 3446,	-- Mebok Mizzyrix
 					["coord"] = { 62.37, 37.32, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["g"] = {
 						i(5342),	-- Raptor Punch
@@ -890,28 +890,24 @@ _.Zones =
 				q(894, {	-- Samophlange
 					["qg"] = 3442,	-- Sputtervalve
 					["coord"] = { 62.98, 37.21, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(900, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 894,	-- Samophlange
 					["coord"] = { 52.41, 11.60, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(901, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 900,	-- Samophlange
 					["coord"] = { 52.41, 11.60, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(902, {	-- Samophlange
 					["provider"] = { "o", 4141 },	-- Control Console
 					["sourceQuest"] = 901,	-- Samophlange
 					["coord"] = { 52.41, 11.60, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
 					["g"] = {
 						i(5324),	-- Engineer's Hammer
@@ -958,7 +954,6 @@ _.Zones =
 				q(887, {	-- Southsea Freebooters
 					["qg"] = 3391,	-- Gazlowe
 					["coord"] = {62.68, 36.24, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 9,
 				}),
 				q(1823, {	-- Speak with Ruga
@@ -1135,7 +1130,6 @@ _.Zones =
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
 					["sourceQuest"] = 858,	-- Ignition
 					["coord"] = { 56.52, 7.45, THE_BARRENS },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
 					["g"] = {
 						i(5326),	-- Flaring Baton

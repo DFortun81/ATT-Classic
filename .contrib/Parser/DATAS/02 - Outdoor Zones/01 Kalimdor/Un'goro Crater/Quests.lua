@@ -328,9 +328,8 @@ _.Zones =
 					},
 				}),
 				q(980, {	-- The New Springs
-					["lvl"] = 51,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10302,	-- Krakle
+					["lvl"] = 51,
 				}),
 				q(4285, {	-- The Northern Pylon
 					["lvl"] = 47,

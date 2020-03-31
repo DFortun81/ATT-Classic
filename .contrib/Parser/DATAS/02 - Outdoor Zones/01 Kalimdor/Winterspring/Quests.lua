@@ -64,10 +64,9 @@ _.Zones =
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
 				}),
 				q(975, {	-- Cache of Mau'ari
-					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["sourceQuest"] = 969,	-- Luck Be With You
+					["lvl"] = 55,
 					["g"] = {
 						i(12384),	-- Cache of Mau'ari
 					},

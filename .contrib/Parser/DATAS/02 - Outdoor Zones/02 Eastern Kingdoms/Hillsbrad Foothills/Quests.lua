@@ -417,27 +417,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(555, {	-- Soothing Turtle Bisque
-					["lvl"] = 28,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 2430,	-- Chef Jessen
-					["g"] = {
-						i(3737),	-- Recipe: Soothing Turtle Bisque
-						i(3729),	-- Soothing Turtle Bisque
-					},
-					["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
-					["description"] = "You can buy the Soothing Spices from Micha Yance at 49.0, 55.1.",
-				}),
-				q(7321, {	-- Soothing Turtle Bisque
-					["qg"] = 2393,	-- Christoph Jeffcoat
-					["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 28,
-					["g"] = {
-						i(3737),	-- Recipe: Soothing Turtle Bisque
-						i(3729),	-- Soothing Turtle Bisque
-					},
-				}),
 				q(538, {	-- Southshore
 					["qg"] = 1440,	-- Milton Sheaf <Librarian>
 					["races"] = ALLIANCE_ONLY,

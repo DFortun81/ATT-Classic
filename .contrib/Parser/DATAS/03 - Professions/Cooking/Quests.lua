@@ -97,8 +97,9 @@ profession(COOKING, {
 		}),
 		q(555, {	-- Soothing Turtle Bisque (A)
 			["qg"] = 2430,	-- Chef Jessen
-			["requireSkill"] = COOKING,
+			["coord"] = { 51.8, 58.7, HILLSBRAD_FOOTHILLS },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
+			["requireSkill"] = COOKING,
 			["races"] = ALLIANCE_ONLY,
 			["lvl"] = 28,
 			["g"] = {
@@ -108,8 +109,9 @@ profession(COOKING, {
 		}),
 		q(7321, {	-- Soothing Turtle Bisque (H)
 			["qg"] = 2393,	-- Christoph Jeffcoat
-			["requireSkill"] = COOKING,
+			["coord"] = { 62.30, 19.05, HILLSBRAD_FOOTHILLS },
 			["maps"] = { HILLSBRAD_FOOTHILLS },
+			["requireSkill"] = COOKING,
 			["races"] = HORDE_ONLY,
 			["lvl"] = 28,
 			["g"] = {

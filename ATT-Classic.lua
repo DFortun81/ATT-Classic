@@ -807,18 +807,20 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			local searchResults = app.SearchForField("questID", key);
 			if searchResults and #searchResults > 0 then
-				local nmr, nmc = false, false;
+				local questID, nmr, nmc = key, false, false;
 				for i,searchResult in ipairs(searchResults) do
-					if searchResult.nmr then
-						if not nmr then
-							nmr = true;
-							key = key .. " [WRONG RACES]";
+					if searchResult.questID == questID and not searchResult.requireSkill then	-- Note: Cooking quests are shared Horde/Alliance
+						if searchResult.nmr then
+							if not nmr then
+								nmr = true;
+								key = key .. " [WRONG RACES]";
+							end
 						end
-					end
-					if searchResult.nmc then
-						if not nmc then
-							nmc = true;
-							key = key .. " [WRONG CLASSES]";
+						if searchResult.nmc then
+							if not nmc then
+								nmc = true;
+								key = key .. " [WRONG CLASSES]";
+							end
 						end
 					end
 				end

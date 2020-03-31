@@ -85,7 +85,6 @@ _.Zones =
 				}),
 				q(4496, {	-- Bungle in the Jungle
 					["lvl"] = 50,
-					["races"] = HORDE_ONLY,
 				}),
 				{
 					["allianceQuestID"] = 4508,	-- Calm Before the Storm (1/2)
@@ -292,10 +291,9 @@ _.Zones =
 					["coord"] = { 67.1, 23.9, TANARIS },
 				}),
 				q(2641, {	-- Sprinkle's Secret Ingredient
-					["lvl"] = 44,
-					["races"] = HORDE_ONLY,
 					["qg"] = 7583,	-- Sprinkle
 					["coord"] = { 51.1, 26.9, TANARIS },
+					["lvl"] = 44,
 				}),
 				q(2872, {	-- Stoley's Debt
 					["lvl"] = 40,
@@ -378,9 +376,8 @@ _.Zones =
 					},
 				}),
 				q(2954, {	-- The Stone Watcher
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
 					["provider"] = { "o", 142343 },	-- Uldum Pedestal
+					["lvl"] = 45,
 				}),
 				q(8893, {	-- The Super Egg-O-Matic
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
