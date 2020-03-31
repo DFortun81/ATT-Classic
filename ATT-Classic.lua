@@ -807,11 +807,26 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			local searchResults = app.SearchForField("questID", key);
 			if searchResults and #searchResults > 0 then
-				if app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+				local nmr, nmc = false, false;
+				for i,searchResult in ipairs(searchResults) do
+					if searchResult.nmr then
+						if not nmr then
+							nmr = true;
+							key = key .. " [WRONG RACES]";
+						end
+					end
+					if searchResult.nmc then
+						if not nmc then
+							nmc = true;
+							key = key .. " [WRONG CLASSES]";
+						end
+					end
+				end
+				if not (nmr or nmc) and app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 					return true;
 				end
 			else
-				key = key .. " (Missing in ATT)";
+				key = key .. " [MISSING]";
 			end
 			print("Completed Quest ID #" .. key);
 		end
