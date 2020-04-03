@@ -8,6 +8,7 @@ _.Zones =
 			n(QUESTS, {
 				q(986, {	-- A Lost Master (1/2)
 					["qg"] = 3693,	-- Terenthis
+					["sourceQuest"] = 985,	-- How Big a Threat? (2/2)
 					["coord"] = { 39.4, 43.5, DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {

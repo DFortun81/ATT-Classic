@@ -3734,6 +3734,14 @@ app.BaseFlightPath = {
 					return {1,3,4,7};
 				end
 			end
+		elseif key == "nmc" then
+			local c = t.info.c;
+			if c and not containsValue(c, app.ClassIndex) then
+				rawset(t, "nmc", true); -- "Not My Class"
+				return true;
+			end
+			rawset(t, "nmc", false); -- "My Class"
+			return false;
 		elseif key == "nmr" then
 			local faction = t.info.faction;
 			if faction and faction > 0 then

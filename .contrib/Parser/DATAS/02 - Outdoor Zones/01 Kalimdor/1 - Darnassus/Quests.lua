@@ -188,10 +188,12 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
+					["maps"] = { TELDRASSIL },
 				}),
 				q(942, {	-- The Absent Minded Prospector (4/5)
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
 					["sourceQuest"] = 741,	-- The Absent Minded Prospector (3/5) (Darkshore)
+					["maps"] = { WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4654, 1 },	-- Mysterious Fossil
