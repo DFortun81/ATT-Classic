@@ -297,6 +297,7 @@ _.Zones =
 				}),
 				q(994, {	-- Escape Through Force
 					["qg"] = 3692,	-- Volcor
+					["sourceQuest"] = 993,	-- A Lost Master
 					["description"] = "This quest becomes unavailable if you complete Escape Through Stealth",
 					["altQuests"] = { 995 },	-- Escape Through Stealth
 					["coord"] = { 45.0, 85.4, DARKSHORE },
@@ -308,6 +309,7 @@ _.Zones =
 				}),
 				q(995, {	-- Escape Through Stealth
 					["qg"] = 3692,	-- Volcor
+					["sourceQuest"] = 993,	-- A Lost Master
 					["description"] = "This quest becomes unavailable if you complete Escape Through Force",
 					["altQuests"] = { 994 },	-- Escape Through Force
 					["coord"] = { 45.0, 85.4, DARKSHORE },
