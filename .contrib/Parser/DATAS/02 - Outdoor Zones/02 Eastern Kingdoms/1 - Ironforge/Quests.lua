@@ -531,7 +531,7 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5172,	-- Briarthorn
 				}),
-				q(1073, {	-- Ineptitude + Chemicals = Fun
+				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
 					["cost"] = {
@@ -542,12 +542,15 @@ _.Zones =
 					["lvl"] = 17,
 					["coord"] = { 71.9, 51.9, IRONFORGE },
 				}),
-				q(1074, {	-- Ineptitude + Chemicals = Fun
+				q(1074, {	-- Ineptitude + Chemicals = Fun (2/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
-					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 17,
+					["sourceQuest"] = 1073,	-- Ineptitude + Chemicals = Fun (1/2)
 					["coord"] = { 71.9, 51.9, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5732, 1 },	-- NG-5
+					},
+					["lvl"] = 17,
 				}),
 				q(1708, {	-- Iron Coral
 					["lvl"] = 20,

@@ -151,6 +151,7 @@ _.Zones =
 				}),
 				q(979, {	-- Find Ranshalla
 					["qg"] = 7916,	-- Erelas Ambersky
+					["sourceQuest"] = 978,	-- Moontouched Wildkin
 					["coord"] = { 55.5, 92.1, TELDRASSIL },
 					["maps"] = { WINTERSPRING },
 					["races"] = ALLIANCE_ONLY,

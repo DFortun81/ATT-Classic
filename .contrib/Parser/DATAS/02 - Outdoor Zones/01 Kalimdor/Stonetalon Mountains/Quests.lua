@@ -103,7 +103,7 @@ _.Zones =
 				q(1079, {	-- Covert Ops - Alpha
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["sourceQuests"] = {
-						1074,	-- Ineptitude + Chemicals = Fun
+						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
@@ -118,7 +118,7 @@ _.Zones =
 					["qg"] = 4077,	-- Gaxim Rustfizzle
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["sourceQuests"] = {
-						1074,	-- Ineptitude + Chemicals = Fun
+						1074,	-- Ineptitude + Chemicals = Fun (2/2)
 						1077,	-- Special Delivery for Gaxim
 					},
 					["races"] = ALLIANCE_ONLY,
@@ -170,6 +170,7 @@ _.Zones =
 					["qg"] = 3442,	-- Sputtervalve
 					["sourceQuest"] = 1094,	-- Further Instructions (1/2)
 					["coord"] = { 62.97, 37.19, THE_BARRENS },
+					["maps"] = { THE_BARRENS },
 					["lvl"] = 16,
 				}),
 				q(1096, {	-- Gerenzo Wrenchwhistle
@@ -309,14 +310,15 @@ _.Zones =
 				}),
 				q(1057, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
-					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS},
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
 				q(1059, {	-- Reclaiming the Charred Vale
 					["qg"] = 3994,	-- Keeper Albagorm
 					["sourceQuest"] = 1057,	-- Reclaiming the Charred Vale
-					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS},
+					["coord"] = { 37.1, 8.1, STONETALON_MOUNTAINS },
+					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 					["g"] = {
@@ -354,9 +356,10 @@ _.Zones =
 				q(1077, {	-- Special Delivery for Gaxim
 					["qg"] = 4078,	-- Collin Mauren
 					["sourceQuest"] = 1076,	-- Devils in Westfall
+					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["coord"] = { 43.1, 80.3, STORMWIND_CITY },
 				}),
 				q(1093, {	-- Super Reaper 6000
 					["qg"] = 4201,	-- Ziz Fizziks
@@ -407,6 +410,7 @@ _.Zones =
 						1084,	-- Wounded Ancients
 					},
 					["coord"] = { 59.9, 66.8, STONETALON_MOUNTAINS },
+					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
 				}),

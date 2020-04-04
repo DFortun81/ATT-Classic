@@ -143,10 +143,10 @@ _.Zones =
 					["repeatable"] = true,
 				}),
 				q(4901, {	-- Guardians of the Altar
-					["lvl"] = 52,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10300,	-- Ranshalla
 					["sourceQuest"] = 979,	-- Find Ranshalla
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 52,
 				}),
 				q(4882, {	-- Guarding Secrets (1/2)
 					["provider"] = { "i", 12558 },	-- Blue-feathered Necklace
