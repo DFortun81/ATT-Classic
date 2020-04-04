@@ -108,13 +108,6 @@ _.Zones =
 					},
 					["lvl"] = 35,
 				}),
-				q(8181, {	-- Confront Yeh'kinya
-					["lvl"] = 40,
-					["g"] = {
-						i(20218),	-- Faded Hakkari Cloak
-						i(20219),	-- Tattered Hakkari Cape
-					},
-				}),
 				q(2882, {	-- Cuergo's Gold
 					["coord"] = { 55.4, 92.2, TANARIS },
 					["provider"] = { "i", 9254 },	-- Cuergo's Treasure Map
