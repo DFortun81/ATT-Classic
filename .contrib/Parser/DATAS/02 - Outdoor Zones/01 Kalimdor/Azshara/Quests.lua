@@ -58,6 +58,7 @@ _.Zones =
 							},
 						},
 						i(10839),	-- Crystallized Note
+						i(10840),	-- Crystallized Note
 					},
 				}),
 				q(8575, {	-- Azuregos's Magical Ledger

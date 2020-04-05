@@ -97,7 +97,7 @@ _.Instances = {
 					["qg"] = 7775,	-- Gregan Brewspewer
 					["sourceQuest"] = 4142,	-- A Visit to Gregan
 					["coord"] = { 45.1, 25.6, FERALAS },
-					["maps"] = { FERALAS },
+					["maps"] = { FERALAS, UNGORO_CRATER },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 11318, 5 },	-- Atal'ai Haze
@@ -427,6 +427,65 @@ _.Instances = {
 				i(10629),	-- Mistwalker Boots
 				i(10634),	-- Mindseye Circle
 			}),
+			n(COMMON_BOSS_DROPS, {
+				{
+					["itemID"] = 20606,	-- Amber Voodoo Feather
+					["questID"] = 8413,	-- Da Voodoo [Shaman]
+					["altQuests"] = {
+						8418,	-- Forging the Mightstone [Paladin]
+						8422,	-- Trolls of a Feather [Warlock]
+						8425,	-- Voodoo Feathers [Warrior]
+					},
+					["classes"] = {
+						SHAMAN,
+						PALADIN,
+						WARLOCK,
+						WARRIOR
+					},
+					["crs"] = {
+						5713,	-- Gasher
+						5716,	-- Zul'Lor
+					},
+				},
+				{
+					["itemID"] = 20607,	-- Blue Voodoo Feather
+					["questID"] = 8413,	-- Da Voodoo [Shaman]
+					["altQuests"] = {
+						8418,	-- Forging the Mightstone [Paladin]
+						8422,	-- Trolls of a Feather [Warlock]
+						8425,	-- Voodoo Feathers [Warrior]
+					},
+					["classes"] = {
+						SHAMAN,
+						PALADIN,
+						WARLOCK,
+						WARRIOR
+					},
+					["crs"] = {
+						5715,	-- Hukku
+						5717,	-- Mijan
+					},
+				},
+				{
+					["itemID"] = 20608,	-- Green Voodoo Feather
+					["questID"] = 8413,	-- Da Voodoo [Shaman]
+					["altQuests"] = {
+						8418,	-- Forging the Mightstone [Paladin]
+						8422,	-- Trolls of a Feather [Warlock]
+						8425,	-- Voodoo Feathers [Warrior]
+					},
+					["classes"] = {
+						SHAMAN,
+						PALADIN,
+						WARLOCK,
+						WARRIOR
+					},
+					["crs"] = {
+						5714,	-- Loro
+						5712,	-- Zolo
+					},
+				},
+			}),
 			n(5708, {	-- Spawn of Hakkar
 				i(10801),	-- Slitherscale Boots
 				i(10802),	-- Wingveil Cloak
@@ -450,22 +509,6 @@ _.Instances = {
 					{ "n", 5716 },	-- Zul'Lor
 				},
 				["groups"] = {
-					{
-						["itemID"] = 20606,	-- Amber Voodoo Feather
-						["questID"] = 8413,	-- Da Voodoo [Shaman]
-						["u"] = 3,
-						["altQuests"] = {
-							8418,	-- Forging the Mightstone [Paladin]
-							8422,	-- Trolls of a Feather [Warlock]
-							8425,	-- Voodoo Feathers [Warrior]
-						},
-						["classes"] = {
-							SHAMAN,
-							PALADIN,
-							WARLOCK,
-							WARRIOR
-						},
-					},
 					i(10783),	-- Atal'ai Spaulders
 					i(10787),	-- Atal'ai Gloves
 					i(10784),	-- Atal'ai Breastplate

@@ -38,11 +38,13 @@ _.Zones =
 					["lvl"] = 12,
 				}),
 				q(4293, {	-- A Sample of Slime...
-					["lvl"] = 48,
+					["qg"] = 10136,	-- Chemist Fuely
+					["coord"] = { 47.6, 73.0, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(12230),	-- Felwood Slime Sample
+					["cost"] = {
+						{ "i", 12234, 5 },	-- Corrupted Felwood Sample
 					},
+					["lvl"] = 48,
 				}),
 				q(7819, {	-- Additional Runecloth
 					["qg"] = 14729,	-- Ralston Farnsley
@@ -302,12 +304,32 @@ _.Zones =
 					["qg"] = 4563,	-- Kaal Soulreaper
 				}),
 				q(4661, {	-- Testing for Corruption - Felwood
-					["lvl"] = 48,
+					["provider"] = { "o", 174848 },	-- Testing Equipment
+					["description"] = "This quest is repeatable, but you must have the quest \"A Sample of Slime...\" (quest #4293) in your quest log to complete it.",
+					["coord"] = { 47.8, 73.3, UNDERCITY },
+					["maps"] = { FELWOOD },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["description"] = "This quest is repeatable, but you must have the quest \"A Sample of Slime...\" (quest #4293) in your quest log to complete it.",
+					["cost"] = {
+						{ "i", 12230, 1 },	-- Felwood Slime Sample
+					},
+					["crs"] = {
+						7086,	-- Cursed Ooze
+						7092,	-- Tainted Ooze
+						14345,	-- The Ongar
+					},
+					["lvl"] = 48,
 					["g"] = {
-						i(15103),	-- Corrupt Tested Sample
+						{
+							["itemID"] = 15103,	-- Corrupt Tested Sample
+							["description"] = "This can contain a whole lot of nothing. Bring ~30 slime samples with you.",
+							["groups"] = {
+								{
+									["itemID"] = 12234,	-- Corrupted Felwood Sample
+									["questID"] = 4293,	-- A Sample of Slime...
+								},
+							},
+						},
 					},
 				}),
 				q(4561, {	-- Testing for Impurities - Un'Goro Crater
