@@ -373,12 +373,6 @@ _.Zones =
 						},
 					},
 				}),
-				q(495, {	-- The Crown of Will
-					["qg"] = 2227,	-- Sharlindra
-					["coord"] = { 57.60, 93.84, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 34,
-				}),
 				q(5049, {	-- The Jeremiah Blues
 					["qg"] = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
 					["sourceQuest"] = 5023,	-- Better Late Than Never

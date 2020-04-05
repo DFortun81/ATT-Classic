@@ -464,6 +464,14 @@ _.Zones =
 						i(3765),	-- Brigand's Pauldrons
 					},
 				}),
+				q(495, {	-- The Crown of Will
+					["qg"] = 2227,	-- Sharlindra
+					["coord"] = { 57.60, 93.84, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 34,
+				}),
 				q(518, {	-- The Crown of Will
 					["qg"] = 2278,	-- Melisara
 					["sourceQuest"] = 495,	-- The Crown of Will
