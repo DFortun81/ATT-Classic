@@ -546,6 +546,7 @@ _.Zones =
 				q(676, {	-- The Hammer May Fall
 					["qg"] = 2770,	-- Tallow
 					["coord"] = { 61.86, 19.58, HILLSBRAD_FOOTHILLS },
+					["maps"] = { ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 				}),

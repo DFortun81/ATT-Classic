@@ -254,8 +254,11 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(3181, {	-- The Horn of the Beast
-					["provider"] = { "i", 10005 },	-- Margol's Gigantic Horn
+					["provider"] = { "i", 10000 },	-- Margol's Horn
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10005, 1 },	-- Margol's Gigantic Horn
+					},
 					["lvl"] = 40,
 				}),
 				q(4451, {	-- The Key to Freedom

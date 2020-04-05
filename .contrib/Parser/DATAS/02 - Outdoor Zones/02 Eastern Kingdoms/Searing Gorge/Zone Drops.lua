@@ -43,8 +43,9 @@ _.Zones =
 				}),
 				i(10000, {	-- Margol's Horn
 					["questID"] = 3181,	-- The Horn of the Beast
-					["cr"] = 5833,	-- Margol the Rager
 					["coord"] = { 73.6, 82.6, SEARING_GORGE },
+					["cr"] = 5833,	-- Margol the Rager
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(14476, {	-- Pattern: Cindercloth Gloves
 					["cr"] = 5861,	-- Twilight Fire Guard
