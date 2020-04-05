@@ -55,6 +55,7 @@ _.Zones =
 				}),
 				i(10458, {	-- Prayer to Elune
 					["questID"] = 3378,	-- Prayer to Elune
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						5860,	-- Twilight Dark Shaman
 						5861,	-- Twilight Fire Guard

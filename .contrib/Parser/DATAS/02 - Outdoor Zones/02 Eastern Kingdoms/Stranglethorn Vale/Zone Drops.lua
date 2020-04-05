@@ -221,6 +221,7 @@ _.Zones =
 				}),
 				i(2466, {  -- Skullsplitter Fetish
 					["questID"] = 205,	-- Troll Witchery
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
 						696,	-- Skullsplitter Axe Thrower

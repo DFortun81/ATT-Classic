@@ -325,6 +325,7 @@ _.Instances = {
 				i(9278, {	-- Essential Artificial
 					["questID"] = 2924,	-- Essential Artificials
 					["description"] = "These are scattered throughout the instance. They are loud mechanical mailboxes.",
+					["races"] = ALLIANCE_ONLY,
 				}),
 				i(9309, {	-- Robo-mechanical Guts
 					["description"] = "These can drop from any mechanical unit in Gnomeregan.",
