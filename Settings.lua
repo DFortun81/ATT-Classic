@@ -123,6 +123,7 @@ local TooltipSettingsBase = {
 		["Show:CraftedItems"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
+		["Show:SpellRanks"] = true,
 		["SoftReserves"] = true,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
@@ -1272,6 +1273,23 @@ end);
 ShowRecipesCheckBox:SetATTTooltip("Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.");
 ShowRecipesCheckBox:SetPoint("TOPLEFT", ShowCraftedItemsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowSpellRanksCheckBox = settings:CreateCheckBox("Show Spell Ranks",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:SpellRanks"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:SpellRanks", self:GetChecked());
+end);
+ShowSpellRanksCheckBox:SetATTTooltip("Enable this option if you want to see the best spell rank of triviality for any unleveled related profession for a reagent in its tooltip.\n\nSpell Ranks of 'trivial' or lesser will not be displayed.\nWhile on Account or Debug Mode, this will show for all of your characters that you have cached in ATT.");
+ShowSpellRanksCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowCoordinatesCheckBox = settings:CreateCheckBox("Show Coordinates",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("Coordinates"));
@@ -1287,7 +1305,7 @@ function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked());
 end);
 ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
-ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", -8, 4);
+ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", -8, 4);
 
 local ShowDescriptionsCheckBox = settings:CreateCheckBox("Show Descriptions",
 function(self)

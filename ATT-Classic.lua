@@ -1774,6 +1774,56 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 				end
+				if app.Settings:GetTooltipSetting("Show:SpellRanks") then
+					if app.Settings:Get("AccountMode") or app.Settings:Get("DebugMode") then
+						-- Show all characters
+					else
+						-- Show only the current character
+						local nonTrivialRecipes = {};
+						for i, o in pairs(recipes) do
+							local craftTypeID = GetTempDataSubMember("SpellRanks", o.spellID);
+							if craftTypeID and craftTypeID > 0 then
+								o.craftTypeID = craftTypeID;
+								tinsert(nonTrivialRecipes, o);
+							end
+						end
+						local entries, left, right = {};
+						BuildContainsInfo(nonTrivialRecipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+						if #entries > 0 then
+							tinsert(info, { left = "Available Skill Ups:" });
+							if #entries < 25 then
+								table.sort(entries, function(a, b)
+									if a.group.craftTypeID == b.group.craftTypeID then
+										if a.group.name then
+											if b.group.name then
+												return a.group.name <= b.group.name;
+											end
+											return true;
+										end
+										return false;
+									end
+									return a.group.craftTypeID > b.group.craftTypeID;
+								end);
+								for i,item in ipairs(entries) do
+									left = item.group.text or RETRIEVING_DATA;
+									if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(info, { left = item.prefix .. left, right = item.right });
+								end
+							else
+								for i=1,math.min(25, #entries) do
+									local item = entries[i];
+									left = item.group.text or RETRIEVING_DATA;
+									if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+									tinsert(info, { left = item.prefix .. left, right = item.right });
+								end
+								local more = #entries - 25;
+								if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+							end
+						end
+					end
+				end
 			end
 		end
 		
@@ -4078,9 +4128,12 @@ app.BaseRecipe = {
 			return "spellID";
 		elseif key == "filterID" then
 			return 200;
+		elseif key == "name" then
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "text" then
 			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
-			return select(1, GetSpellLink(t.spellID));
+			if t.craftTypeID then return Colorize(t.name, app.CraftTypeIDToColor(t.craftTypeID)); end
+			return t.name;
 		elseif key == "icon" then
 			local icon = t.baseicon;
 			if icon and icon ~= 136235 and icon ~= 136192 then
@@ -4104,8 +4157,8 @@ app.BaseRecipe = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
-		elseif key == "name" then
-			return select(1, GetSpellLink(t.spellID));
+		elseif key == "craftTypeID" then
+			return GetTempDataSubMember("SpellRanks", t.spellID);
 		elseif key == "tsm" then
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
@@ -4127,6 +4180,44 @@ end
 -- Spell Lib
 (function()
 local dirty = false;
+app.CraftTypeToCraftTypeID = function(craftType)
+	if craftType then
+		if craftType == "optimal" then
+			return 3;
+		elseif craftType == "medium" then
+			return 2;
+		elseif craftType == "easy" then
+			return 1;
+		elseif craftType == "trivial" then
+			return 0;
+		end
+	end
+	return nil;
+end
+app.CraftTypeIDToCraftType = function(craftTypeID)
+	if craftTypeID then
+		if craftTypeID == 3 then
+			return "optimal";
+		elseif craftTypeID == 2 then
+			return "medium";
+		elseif craftTypeID == 1 then
+			return "easy";
+		elseif craftTypeID == 0 then
+			return "trivial";
+		end
+	end
+	return nil;
+end
+app.CraftTypeIDToColor = function(craftTypeID)
+	local craftType = app.CraftTypeIDToCraftType(craftTypeID);
+	if craftType then
+		local c = CraftTypeColor[craftType];
+		if c then
+			return RGBToHex(c.r * 255, c.g * 255, c.b * 255);
+		end
+	end
+	return nil;
+end
 app.SpellIDToSpellName = setmetatable({}, {
 	__index = function(t, spellID)
 		local spellName = GetSpellInfo(spellID);
@@ -4157,6 +4248,8 @@ app.BaseSpell = {
 	__index = function(t, key)
 		if key == "key" then
 			return "spellID";
+		elseif key == "name" then
+			return select(1, GetSpellLink(t.spellID)) or RETRIEVING_DATA;
 		elseif key == "text" then
 			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
 				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
@@ -4166,7 +4259,8 @@ app.BaseSpell = {
 					return link;
 				end
 			end
-			return select(1, GetSpellLink(t.spellID));
+			if t.craftTypeID then return Colorize(t.name, app.CraftTypeIDToColor(t.craftTypeID)); end
+			return t.name;
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "link" then
@@ -4190,8 +4284,8 @@ app.BaseSpell = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
-		elseif key == "name" then
-			return select(1, GetSpellLink(t.spellID));
+		elseif key == "craftTypeID" then
+			return GetTempDataSubMember("SpellRanks", t.spellID);
 		elseif key == "tsm" then
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
@@ -7882,6 +7976,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:RegisterEvent("TRADE_SKILL_CLOSE");
 		self:RegisterEvent("LEARNED_SPELL_IN_TAB");
 		self:RegisterEvent("NEW_RECIPE_LEARNED");
+		self:RegisterEvent("SKILL_LINES_CHANGED");
 		self.wait = 5;
 		self.cache = {};
 		self.header = {
@@ -7901,11 +7996,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = app.GetDataMember("Reagents", {});
-				local learned = 0;
+				local activeSkills = GetTempDataMember("ActiveSkills");
+				local learned, craftSkillID, tradeSkillID = 0, 0, 0;
 				
 				-- Crafting Skills (Enchanting Only?)
-				local craftSkillName, craftSkillID, tradeSkillID, tradeSkillName = GetCraftName(), 0, 0, GetTradeSkillLine();
-				if craftSkillName ~= UNKNOWN and craftSkillName ~= "UNKNOWN" and craftSkillName ~= tradeSkillName and CraftFrame and CraftFrame:IsVisible() then	-- For some reason, "Craft" and "Tradeskill" is the same sometimes. But that's not correct!
+				local craftSkillName, craftSkillLevel, craftSkillMaxLevel = GetCraftDisplaySkillLine();
+				if craftSkillName and craftSkillName ~= "UNKNOWN" then
+					local shouldShowSpellRanks = craftSkillLevel and craftSkillLevel ~= math.max(300, craftSkillMaxLevel);
 					craftSkillID = app.SpellNameToSpellID[craftSkillName] or 0;
 					if craftSkillID == 0 then
 						app.print("Could not find spellID for", craftSkillName, GetLocale(), "! Please report this to the ATT Discord!");
@@ -7917,6 +8014,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						if craftType ~= "header" and craftType ~= "none" then
 							local spellID = craftSubSpellName and select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName];
 							if spellID then
+								SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil);
 								SetTempDataSubMember("CollectedSpells", spellID, 1);
 								if not GetDataSubMember("CollectedSpells", spellID) then
 									SetDataSubMember("CollectedSpells", spellID, 1);
@@ -7952,7 +8050,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				end
 				
 				-- Trade Skills (Non-Enchanting)
-				if tradeSkillName ~= UNKNOWN and tradeSkillName ~= "UNKNOWN" then
+				local tradeSkillName, tradeSkillLevel, tradeSkillMaxLevel = GetTradeSkillLine();
+				if tradeSkillName and tradeSkillName ~= "UNKNOWN" then
+					local shouldShowSpellRanks = tradeSkillLevel and tradeSkillLevel ~= math.max(300, tradeSkillMaxLevel);
 					tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
 					if tradeSkillID == 0 then
 						app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
@@ -7967,6 +8067,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
 							local spellID = app.SpellNameToSpellID[skillName];
 							if spellID then
+								SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil);
 								SetTempDataSubMember("CollectedSpells", spellID, 1);
 								if not GetDataSubMember("CollectedSpells", spellID) then
 									SetDataSubMember("CollectedSpells", spellID, 1);
@@ -8115,9 +8216,10 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		end
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
-			if e == "TRADE_SKILL_LIST_UPDATE" then
+			if e == "TRADE_SKILL_LIST_UPDATE" or e == "SKILL_LINES_CHANGED" then
 				self:RefreshRecipes();
 				self:Update();
+				wipe(searchCache);
 			elseif e == "TRADE_SKILL_SHOW" or e == "CRAFT_SHOW" then
 				if self.TSMCraftingVisible == nil then
 					self:SetTSMCraftingVisible(false);
@@ -8138,8 +8240,10 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
 						end
-						wipe(searchCache);
 					end
+					self:RefreshRecipes();
+					self:Update();
+					wipe(searchCache);
 				end
 			elseif e == "TRADE_SKILL_CLOSE" or e == "CRAFT_CLOSE" then
 				StartCoroutine("TSMWHY3", function()
@@ -8484,6 +8588,15 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("ActiveSkills", mySkills);
 	end
 	
+	-- Cache your character's spell ranks. (triviality of their recipes)
+	local spellRanks = GetDataMember("SpellRanksPerCharacter", {});
+	local mySpellRanks = GetTempDataMember("SpellRanks", spellRanks[app.GUID]);
+	if not mySpellRanks then
+		mySpellRanks = {};
+		spellRanks[app.GUID] = mySpellRanks;
+		SetTempDataMember("SpellRanks", mySpellRanks);
+	end
+	
 	-- Cache your character's profession data.
 	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
 	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
@@ -8588,6 +8701,7 @@ app.events.VARIABLES_LOADED = function()
 		"RandomSearchFilter",
 		"Reagents",
 		"SoftReserves",
+		"SpellRanksPerCharacter",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
 		"TomTomIgnoreCompletedObjects"
