@@ -1361,7 +1361,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- Determine if this tooltip needs more work the next time it refreshes.
 		if not paramA then paramA = ""; end
-		local working, info, crafted = false, {}, {};
+		local working, info, crafted, recipes = false, {}, {}, {};
 		cache = { now, 100000000 };
 		searchCache[search] = cache;
 		
@@ -1503,6 +1503,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				
 				local reagentCache = app.GetDataSubMember("Reagents", itemID);
 				if reagentCache then
+					for spellID,count in pairs(reagentCache[1]) do
+						MergeObject(recipes, CreateObject({ ["spellID"] = spellID, ["collectible"] = false, ["count"] = count }));
+					end
 					for craftedItemID,count in pairs(reagentCache[2]) do
 						MergeObject(crafted, CreateObject({ ["itemID"] = craftedItemID, ["count"] = count }));
 						local searchResults = app.SearchForField("itemID", craftedItemID);
@@ -1704,6 +1707,44 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
 					tinsert(info, { left = "Used to Craft:" });
+					if #entries < 25 then
+						table.sort(entries, function(a, b)
+							if a.group.name then
+								if b.group.name then
+									return a.group.name <= b.group.name;
+								end
+								return true;
+							end
+							return false;
+						end);
+						for i,item in ipairs(entries) do
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(info, { left = item.prefix .. left, right = item.right });
+						end
+					else
+						for i=1,math.min(25, #entries) do
+							local item = entries[i];
+							left = item.group.text or RETRIEVING_DATA;
+							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
+							tinsert(info, { left = item.prefix .. left, right = item.right });
+						end
+						local more = #entries - 25;
+						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
+					end
+				end
+			end
+		end
+		
+		-- Recipes
+		if recipes and #recipes > 0 then
+			if app.Settings:GetTooltipSetting("SummarizeThings") then
+				local entries, left, right = {};
+				BuildContainsInfo(recipes, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
+				if #entries > 0 then
+					tinsert(info, { left = "Used in Recipes:" });
 					if #entries < 25 then
 						table.sort(entries, function(a, b)
 							if a.group.name then
