@@ -4063,7 +4063,7 @@ app.BaseRecipe = {
 				return 1;
 			end
 		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "tsm" then
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
@@ -4149,7 +4149,7 @@ app.BaseSpell = {
 				return 1;
 			end
 		elseif key == "name" then
-			return t.itemID and GetItemInfo(t.itemID);
+			return select(1, GetSpellLink(t.spellID));
 		elseif key == "tsm" then
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
