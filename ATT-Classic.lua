@@ -7928,6 +7928,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							else
 								app.print("Missing " .. craftName .. " spellID in ATT Database. Please report it!");
 							end
+							NPCHarvester:SetCraftSpell(craftIndex);
+							local link, craftedItemID = select(2, NPCHarvester:GetItem());
+							if link then craftedItemID = GetItemInfoInstant(link); end
 							
 							-- Cache the Reagents used to make this item.
 							for i=1,GetCraftNumReagents(craftIndex) do
@@ -7939,6 +7942,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								-- Index 2: The Crafted Item IDs
 								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
 								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
+								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 							end
 						end
 					end
