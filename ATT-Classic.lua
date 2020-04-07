@@ -1346,8 +1346,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
-				if layer < 2 and group.g and paramA == "creatureID" and #group.g > 0 and not group.symbolized then
-					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. " ", layer + 1);
+				if layer < 2 and group.g and #group.g > 0 and not group.symbolized then
+					BuildContainsInfo(group.g, entries, paramA, paramB, indent .. "  ", layer + 1);
 				end
 			end
 		end
@@ -1367,7 +1367,11 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- Call to the method to search the database.
 		local group, a, b = method(paramA, paramB, ...);
-		if not group then group = {}; end
+		if not group then
+			group = {};
+		elseif group.g then
+			group = group.g;
+		end
 		if a then paramA = a; end
 		if b then paramB = b; end
 		
@@ -1475,7 +1479,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			
 			if itemID then
 				-- Show the unobtainable source text
-				for i,j in ipairs(group.g or group) do
+				for i,j in ipairs(group) do
 					if j.itemID == itemID then
 						if j.u and (not j.crs or paramA == "itemID") then
 							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
@@ -1504,7 +1508,12 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local searchResults = app.SearchForField("itemID", itemID);
 						if searchResults and #searchResults > 0 then
 							for i,o in ipairs(searchResults) do
-								MergeObject(crafted, CreateObject(o));
+								if not o.itemID and o.cost then
+									-- Reagent for something that crafts a thing required for something else.
+									MergeObject(group, CreateObject({ ["itemID"] = itemID, ["count"] = count, ["g"] = { CreateObject(o) } })); 
+								else
+									MergeObject(crafted, CreateObject(o));
+								end
 							end
 						end
 					end
@@ -1525,7 +1534,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				abbrevs_post[" false "] = " 0 ";
 				abbrevs_post[" true "] = " 1 ";
 			end
-			for i,j in ipairs(group.g or group) do
+			for i,j in ipairs(group) do
 				if j.parent and not j.parent.hideText and j.parent.parent
 					and (app.Settings:GetTooltipSetting("SourceLocations:Completed") or not app.IsComplete(j)) then
 					local text = BuildSourceText(paramA ~= "itemID" and j.parent or j, paramA ~= "itemID" and 1 or 0);
@@ -7912,7 +7921,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					
 					local numTradeSkills = GetNumTradeSkills();
 					for skillIndex = 1,numTradeSkills do
-						local skillName, skillType, numAvailable, isExpanded, altVerb, numSkillUps, indentLevel, showProgressBar, currentRank, maxRank, startingRank = GetTradeSkillInfo(skillIndex);
+						local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
 						if skillType ~= "header" then
 							local itemLink, craftedItemID = GetTradeSkillItemLink(skillIndex);
 							if itemLink then craftedItemID = GetItemInfoInstant(itemLink); end
