@@ -1503,16 +1503,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				
 				local reagentCache = app.GetDataSubMember("Reagents", itemID);
 				if reagentCache then
-					for itemID,count in pairs(reagentCache[2]) do
-						MergeObject(crafted, CreateObject({ ["itemID"] = itemID, ["count"] = count }));
-						local searchResults = app.SearchForField("itemID", itemID);
+					for craftedItemID,count in pairs(reagentCache[2]) do
+						MergeObject(crafted, CreateObject({ ["itemID"] = craftedItemID, ["count"] = count }));
+						local searchResults = app.SearchForField("itemID", craftedItemID);
 						if searchResults and #searchResults > 0 then
 							for i,o in ipairs(searchResults) do
 								if not o.itemID and o.cost then
 									-- Reagent for something that crafts a thing required for something else.
-									MergeObject(group, CreateObject({ ["itemID"] = itemID, ["count"] = count, ["g"] = { CreateObject(o) } })); 
-								else
-									MergeObject(crafted, CreateObject(o));
+									MergeObject(group, CreateObject({ ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CreateObject(o) } })); 
 								end
 							end
 						end
@@ -7889,8 +7887,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							else
 								app.print("Missing " .. craftName .. " spellID in ATT Database. Please report it!");
 							end
-							--local itemLink, craftedItemID = GetTradeSkillItemLink(craftIndex);
-							--if itemLink then craftedItemID = GetItemInfoInstant(itemLink); end
 							
 							-- Cache the Reagents used to make this item.
 							for i=1,GetCraftNumReagents(craftIndex) do
@@ -7902,7 +7898,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								-- Index 2: The Crafted Item IDs
 								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
 								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
 							end
 						end
 					end
@@ -7923,8 +7918,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					for skillIndex = 1,numTradeSkills do
 						local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
 						if skillType ~= "header" then
-							local itemLink, craftedItemID = GetTradeSkillItemLink(skillIndex);
-							if itemLink then craftedItemID = GetItemInfoInstant(itemLink); end
+							local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
 							local spellID = app.SpellNameToSpellID[skillName];
 							if spellID then
 								SetTempDataSubMember("CollectedSpells", spellID, 1);
