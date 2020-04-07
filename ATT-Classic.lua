@@ -1673,18 +1673,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								table.sort(specs);
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
 					else
 						for i=1,math.min(25, #entries) do
@@ -1692,18 +1681,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								table.sort(specs);
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
 						local more = #entries - 25;
 						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
@@ -1733,18 +1711,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								table.sort(specs);
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
 					else
 						for i=1,math.min(25, #entries) do
@@ -1752,18 +1719,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
-							
-							-- If this group has specialization requirements, let's attempt to show the specialization icons.
-							right = item.right;
-							local specs = item.group.specs;
-							if specs and #specs > 0 then
-								table.sort(specs);
-								for i,spec in ipairs(specs) do
-									local id, name, description, icon, role, class = GetSpecializationInfoByID(spec);
-									if class == app.Class then right = "|T" .. icon .. ":0|t " .. right; end
-								end
-							end
-							tinsert(info, { left = item.prefix .. left, right = right });
+							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
 						local more = #entries - 25;
 						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
