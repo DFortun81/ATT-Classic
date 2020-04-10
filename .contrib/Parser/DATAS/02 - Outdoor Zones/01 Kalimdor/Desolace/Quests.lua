@@ -207,6 +207,7 @@ _.Zones =
 					["qg"] = 1182,	-- Brother Anton <Scarlet Crusade Emissary>
 					["sourceQuest"] = 261,	-- Down the Scarlet Path (1/2)
 					["coord"] = { 66.5, 7.9, DESOLACE },
+					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 5539, 1 },	-- Letter of Commendation

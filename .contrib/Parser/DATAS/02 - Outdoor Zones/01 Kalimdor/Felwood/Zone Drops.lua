@@ -53,7 +53,7 @@ _.Zones =
 					},
 				}),
 				i(12230, {	-- Felwood Slime Sample
-					["questID"] = 4661,	-- Testing for Corruption - Felwood
+					["questID"] = 4293,	-- A Sample of Slime...
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						7086,	-- Cursed Ooze

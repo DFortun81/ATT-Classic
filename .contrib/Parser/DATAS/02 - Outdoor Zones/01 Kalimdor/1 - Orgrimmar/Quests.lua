@@ -70,6 +70,7 @@ _.Zones =
 					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
 					["qg"] = 4485,	-- Belgrom Rockmaul
+					["isBreadcrumb"] = true,
 				}),
 				q(7832, {	-- Additional Runecloth
 					["qg"] = 14726,	-- Rashona Straglash
@@ -567,6 +568,7 @@ _.Zones =
 					["coord"] = { 39.0, 86.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
 				q(8978, {	-- Return to Mokvar

@@ -183,6 +183,7 @@ _.Zones =
 					["coord"] = { 25, 20.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
 				q(2967, {	-- Return to Thunder Bluff

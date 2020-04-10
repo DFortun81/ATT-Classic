@@ -94,7 +94,9 @@ _.Factions =
 	}),
 	faction(59), 	-- Thorium Brotherhood
 	faction(576),	-- Timbermaw Hold
-	faction(589),	-- Wintersaber Trainers
+	faction(589, {	-- Wintersaber Trainers
+		["races"] = ALLIANCE_ONLY,
+	}),
 	faction(270, {	-- Zandalar Tribe
 		["u"] = 3,	-- Added in later phase
 	}),

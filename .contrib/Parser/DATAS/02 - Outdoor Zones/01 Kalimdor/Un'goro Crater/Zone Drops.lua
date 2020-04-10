@@ -22,8 +22,9 @@ _.Zones =
 						i(3108),	-- Heavy Throwing Dagger
 					},
 				}),
-				i(11316, {	-- Dinosaur Bone
+				i(11316, {	-- Bloodpetal
 					["questID"] = 4141,	-- Muigin and Larion
+					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						6510,	-- Bloodpetal Flayer
 						6511,	-- Bloodpetal Thresher

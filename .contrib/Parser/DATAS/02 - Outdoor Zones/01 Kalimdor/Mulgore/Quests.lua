@@ -487,6 +487,10 @@ _.Zones =
 					["cost"] = {
 						{ "i", 5203, 4 },	-- Flatland Prowler Claw
 					},
+					["altQuests"] = {
+						860,	-- Sergra Darkthorn
+						844,	-- Plainstrider Menace
+					},
 					["lvl"] = 10,
 				}),
 				q(749, {	-- The Ravaged Caravan (1/2)
