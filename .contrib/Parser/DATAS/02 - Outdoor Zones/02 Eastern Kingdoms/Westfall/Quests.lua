@@ -17,14 +17,12 @@ _.Zones =
 				}),
 				q(136, {	-- Captain Sander's Hidden Treasure (1/4)
 					["provider"] = { "i", 1357 },	-- Captain Sander's Treasure Map
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
 				q(138, {	-- Captain Sander's Hidden Treasure (2/4)
 					["provider"] = { "o", 35 },	-- Captain's Footlocker
 					["sourceQuest"] = 136,	-- Captain Sander's Hidden Treasure (1/4)
 					["coord"] = { 25.9, 47.77, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1358, 1 },	-- A Clue to Sander's Treasure
 					},
@@ -34,7 +32,6 @@ _.Zones =
 					["provider"] = { "o", 36 },	-- Broken Barrel
 					["sourceQuest"] = 138,	-- Captain Sander's Hidden Treasure (2/4)
 					["coord"] = { 40.50, 47.82, WESTFALL },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1361, 1 },	-- Another Clue to Sander's Treasure
 					},
@@ -47,7 +44,6 @@ _.Zones =
 						{ 40.62, 17.01, WESTFALL },
 						{ 25.97, 16.90, WESTFALL },
 					},
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1362, 1 },	-- Final Clue to Sander's Treasure
 					},
