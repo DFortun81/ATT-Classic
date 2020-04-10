@@ -475,7 +475,6 @@ _.Zones =
 				q(576, {	-- Keep An Eye Out
 					["qg"] = 2493,	-- Dizzy One-Eye
 					["coord"] = { 28.6, 75.9, STRANGLETHORN_VALE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3897, 1 },	-- Dizzy's Eye
 					},
@@ -691,7 +690,6 @@ _.Zones =
 					["qg"] = 2502,	-- \"Shaky\" Phillipe
 					["sourceQuest"] = 606,	-- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3919, 5 },	-- Mistvale Giblets
 					},

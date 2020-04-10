@@ -96,7 +96,6 @@ _.Zones =
 				q(703, {	-- Barbecued Buzzard Wings
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3404, 4 },	-- Buzzard Wing
 					},
@@ -133,7 +132,6 @@ _.Zones =
 				q(713, {	-- Coolant Heads Prevail
 					["qg"] = 2921,	-- Lotwil Veriatus
 					["coord"] = { 26.0, 44.9, BADLANDS },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 				}),
 				q(1419, {	-- Coyote Thieves
@@ -213,7 +211,6 @@ _.Zones =
 				}),
 				q(715, {	-- Liquid Stone
 					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2920,	-- Lucien Tosselwrench
 					["coord"] = { 25.8, 44.2, BADLANDS },
 					["g"] = {
@@ -268,7 +265,6 @@ _.Zones =
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },
 					["maps"] = { STRANGLETHORN_VALE },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4611, 9 },	-- Blue Pearl
 					},

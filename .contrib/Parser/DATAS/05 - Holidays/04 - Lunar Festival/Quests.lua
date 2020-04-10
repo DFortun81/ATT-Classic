@@ -273,7 +273,6 @@ _.Holidays =
 			}),
 			q(8646, {	-- Hammershout the Elder
 				["isYearly"] = true,
-				["races"] = ALLIANCE_ONLY,
 				["qg"] = 15562,  -- Elder Hammershout
 				["coord"] = { 21.40, 53.87, STORMWIND_CITY },
 				["maps"] = { STORMWIND_CITY },
@@ -350,7 +349,6 @@ _.Holidays =
 			}),
 			q(8867, {	-- Lunar Fireworks
 				["isYearly"] = true,
-				["races"] = ALLIANCE_ONLY,
 				["qg"] = 15895,  -- Lunar Festival Harbinger
 			}),
 			q(8722, {	-- Meadowrun the Elder

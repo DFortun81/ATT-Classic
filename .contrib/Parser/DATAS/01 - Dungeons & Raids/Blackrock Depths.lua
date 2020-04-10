@@ -758,7 +758,6 @@ _.Instances = {
 					["qg"] = 9706,	-- Yorba Screwspigot
 					["coord"] = { 67.0, 24.0, TANARIS },
 					["maps"] = { TANARIS },
-					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				},

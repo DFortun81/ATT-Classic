@@ -493,7 +493,6 @@ _.Zones =
 				q(5060, {	-- Locked Away
 					["provider"] = { "o", 175924 },	-- Locked Cabinet
 					["coord"] = { 47.4, 49.7, WESTERN_PLAGUELANDS },
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 12739, 1 },	-- Dalson Cabinet Key
 					},

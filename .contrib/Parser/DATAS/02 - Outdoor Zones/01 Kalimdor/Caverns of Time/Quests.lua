@@ -56,7 +56,6 @@ _.Zones =
 				}),
 				q(2872, {	-- Stoley's Debt
 					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["isBreadcrumb"] = true,
 				}),

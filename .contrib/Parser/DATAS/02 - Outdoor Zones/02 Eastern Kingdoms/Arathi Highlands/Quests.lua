@@ -21,7 +21,6 @@ _.Zones =
 				q(652, {	-- Breaking the Keystone
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
 					["sourceQuest"] = 651,	-- Stones of Binding
-					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 4469, 1 },	-- Rod of Order
 					},
@@ -79,7 +78,6 @@ _.Zones =
 					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
 					["sourceQuest"] = 670,	-- Sunken Treasure (5/5)
 					["coord"] = { 32.2, 81.6, ARATHI_HIGHLANDS },
-					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 35,
 					["g"] = {
 						i(4550),	-- Coldwater Ring
@@ -88,7 +86,6 @@ _.Zones =
 				}),
 				q(662, {	-- Deep Sea Salvage
 					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2767,	-- First Mate Nilzlix
 					["g"] = {
 						i(4511),	-- Black Water Hammer
@@ -96,7 +93,6 @@ _.Zones =
 				}),
 				q(664, {	-- Drowned Sorrows
 					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2769,	-- Captain Steelgut
 					["g"] = {
 						i(4509),	-- Seawolf Gloves
