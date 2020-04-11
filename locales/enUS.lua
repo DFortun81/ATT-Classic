@@ -188,8 +188,6 @@ app.L = {
 		[-4] = "Interface\\Icons\\INV_Misc_Food_62", 										-- Free Festival Food
 		[-5] = "Interface\\Icons\\INV_Misc_Food_62", 										-- Holiday
 		[-7] = "Interface\\Addons\\ATT-Classic\\assets\\Inv_offhand_1h_artifactskulloferedar_d_05",	-- World Bosses
-		[-8] = "Interface\\Icons\\ability_monk_dragonkick",									-- PvE
-		[-9] = "Interface\\Icons\\Achievement_PVP_Legion08",								-- PvP
 		[-12] = "Interface\\Icons\\Spell_Shadow_SummonImp", 								-- East entrance demons
 		[-13] = "Interface\\Icons\\inv_axe_10", 											-- North entrance ogres
 		[-14] = "Interface\\Icons\\INV_Misc_Head_Elf_02", 									-- West entrace elves
@@ -252,7 +250,6 @@ app.L = {
 		[-4] = "Free Festival Food", 											-- Free Festival Food
 		[-5] = "Holiday", 														-- Holiday
 		[-7] = WORLD.." "..RAID_BOSSES, 										-- World Bosses
-		[-9] = GDAPI_REALMTYPE_PVP,												-- PvP
 		[-12] = DUNGEON_FLOOR_DIREMAUL5.." (East)",								-- Warpwood Quarter
 		[-13] = DUNGEON_FLOOR_DIREMAUL1.." (North)",							-- Gordok Commons
 		[-14] = DUNGEON_FLOOR_DIREMAUL2.." (West)",								-- Capital Gardens
@@ -314,41 +311,6 @@ app.L = {
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-9913] = FACTION_HORDE, 													-- Horde
 		[-9914] = FACTION_ALLIANCE, 												-- Alliance
-		
--- PVP Ranks
-	-- Alliance
-		[-8001] = PVP_RANK_5_1, -- Private
-		[-8002] = PVP_RANK_6_1, -- Corporal
-		[-8003] = PVP_RANK_7_1, -- Sergeant
-		[-8004] = PVP_RANK_8_1, -- Master Sergeant
-		[-8005] = PVP_RANK_9_1, -- Sergeant Major
-		[-8006] = PVP_RANK_10_1, -- Knight
-		[-8007] = PVP_RANK_11_1, -- Knight-Lieutenant
-		[-8008] = PVP_RANK_12_1, -- Knight-Captain
-		[-8009] = PVP_RANK_13_1, -- Knight-Champion
-		[-8010] = PVP_RANK_14_1, -- Lieutenant Commander
-		[-8011] = PVP_RANK_15_1, -- Commander
-		[-8012] = PVP_RANK_16_1, -- Marshal
-		[-8013] = PVP_RANK_17_1, -- Field Marshal
-		[-8014] = PVP_RANK_18_1, -- Grand Marshal
-
-	-- Horde
-		[-8015] = PVP_RANK_0_0, -- Scout
-		[-8016] = PVP_RANK_6_0, -- Grunt
-		[-8017] = PVP_RANK_7_0, -- Sergeant
-		[-8018] = PVP_RANK_8_0, -- Senior Sergeant
-		[-8019] = PVP_RANK_9_0, -- First Sergeant
-		[-8020] = PVP_RANK_10_0, -- Stone Guard
-		[-8021] = PVP_RANK_11_0, -- Blood Guard
-		[-8022] = PVP_RANK_12_0, -- Legionnaire
-		[-8023] = PVP_RANK_13_0, -- Centurion
-		[-8024] = PVP_RANK_14_0, -- Champion
-		[-8025] = PVP_RANK_15_0, -- Lieutenant General
-		[-8026] = PVP_RANK_16_0, -- General
-		[-8027] = PVP_RANK_17_0, -- Warlord
-		[-8028] = PVP_RANK_18_0, -- High Warlord
-
-
 		[-10066] = "Legendary",
 	},
 
