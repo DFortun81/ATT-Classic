@@ -313,6 +313,28 @@ _.Craftables =
 		filter(53, {	-- Trinkets
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
+		{
+			["categoryID"] = 44,	-- Oils
+			["groups"] = {
+				i(20748),	-- Brilliant Mana Oil
+				i(20749),	-- Brilliant Wizard Oil
+				i(20747, {	-- Lesser Mana Oil
+					["u"] = 3,	-- Added later
+				}),
+				i(20746, {	-- Lesser Wizard Oil
+					["u"] = 3,	-- Added later
+				}),
+				i(20745, {	-- Minor Mana Oil
+					["u"] = 3,	-- Added later
+				}),
+				i(20744, {	-- Minor Wizard Oil
+					["u"] = 3,	-- Added later
+				}),
+				i(20750, {	-- Wizard Oil
+					["u"] = 3,	-- Added later
+				}),
+			},
+		},
 	}),
 	prof(ENGINEERING, {
 		n(-319, {	-- Weapons
