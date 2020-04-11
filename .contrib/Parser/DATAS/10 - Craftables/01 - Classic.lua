@@ -316,6 +316,7 @@ _.Craftables =
 	}),
 	prof(ENGINEERING, {
 		n(-319, {	-- Weapons
+			i(6219),	-- Arclight Spanner
 			-- Guns
 			i(18282),	-- Core Marksman Rifle*
 			i(16004),	-- Dark Iron Rifle*
@@ -374,9 +375,13 @@ _.Craftables =
 		}),
 		filter(50, {	-- Miscellaneous
 			i(4407),	-- Accurate Scope
+			i(4392),	-- Advanced Target Dummy
+			i(6533),	-- Aquadynamic Fish Attractor
+			i(16040),	-- Arcane Bomb
 			i(18283),	-- Biznicks 247x128 Accurascope
 			i(4405),	-- Crude Scope
 			i(10546),	-- Deadly Scope
+			i(18645),	-- Gnomish Alarm-O-Bot
 			i(15996),	-- Lifelike Mechanical Toad*
 			i(11826),	-- Lil' Smoky*
 			i(4401),	-- Mechanical Squirrel Box*
@@ -389,9 +394,8 @@ _.Craftables =
 			i(18660),	-- World Enlarger*
 		}),
 		filter(53, {	-- Trinkets
-			i(18984),	-- Dimensional Ripper - Everlook*
-			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 			i(16022),	-- Arcanite Dragonling*
+			i(18984),	-- Dimensional Ripper - Everlook*
 			i(4397),	-- Gnomish Cloaking Device*
 			i(10720),	-- Gnomish Net-o-Matic Projector*
 			i(10716),	-- Gnomish Shrink Ray*
@@ -404,6 +408,7 @@ _.Craftables =
 			i(4381),	-- Minor Recombobulator*
 			i(10576),	-- Mithril Mechanical Dragonling*
 			i(18639),	-- Ultra-Flash Shadow Reflector*
+			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 		}),
 	}),
 	prof(LEATHERWORKING, {
