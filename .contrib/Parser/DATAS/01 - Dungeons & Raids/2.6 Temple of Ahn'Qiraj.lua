@@ -508,7 +508,7 @@ _.Instances = {
 						15299,	-- Viscidus
 					},
 				}),
-				i(76402, {	-- Greater Scarab Coffer Key
+				i(21762, {	-- Greater Scarab Coffer Key
 					o(180690, {	-- Large Scarab Coffe
 						i(21156, {	-- Scarab Bag
 							i(20861),	-- Bronze Scarab

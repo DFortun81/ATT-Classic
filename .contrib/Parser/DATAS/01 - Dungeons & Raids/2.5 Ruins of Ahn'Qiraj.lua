@@ -183,7 +183,7 @@ _.Instances = {
 					i(20736),	-- Formula: Enchant Cloak - Dodge
 					i(20734),	-- Formula: Encant Cloak - Stealth
 					-- Key
-					i(76401, {	-- Scarab Coffer Key
+					i(21761, {	-- Scarab Coffer Key
 						o(180691, {	-- Scarab Coffer
 							i(21156, {	-- Scarab Bag
 								i(20861),	-- Bronze Scarab
@@ -414,9 +414,8 @@ _.Instances = {
 				["description"] = "Speak with Lieutenant General Andorov before starting this encounter if you need to interact with the vendor.",
 				["groups"] = {
 					{	-- General	Note!! This is the Captain/Major and Colonel that spawn prior to fight
-						["npcID"] = -9955,	-- General
-						["icon"] = "Interface\\Icons\\achievement_pvp_h_12",
-						["crs"] = {
+						["npcID"] = -21,
+						["qgs"] = {
 							15390, 	-- Captain Xurrem
 							15391, 	-- Captain Qeez
 							15389, 	-- Captain Drenn

@@ -1965,7 +1965,7 @@ _.WorldDrops =
 		i(13066),	-- Wyrmslayer Spaulders
 	}),
 	n(-319, {	-- Weapons
-		n(-334, {	-- 1H Axes
+		filter(21, {	-- 1H Axes
 			i(13014),	-- Axe of Rin'ji
 			i(811),		-- Axe of the Deep Woods
 			i(2878),	-- Bearded Boneaxe
@@ -1993,7 +1993,7 @@ _.WorldDrops =
 			i(934),		-- Stalvan's Reaper
 			i(15238),	-- Warlord's Axe
 		}),
-		n(-335, {	-- 2H Axes
+		filter(22, {	-- 2H Axes
 			i(3201),	-- Barbarian War Axe
 			i(3195),	-- Barbaric Battle Axe
 			i(3199),	-- Battle Slayer
@@ -2017,7 +2017,7 @@ _.WorldDrops =
 			i(4562),	-- Severing Axe
 			i(15268),	-- Twin-bladed Axe
 		}),
-		n(-346, {	-- Bows
+		filter(32, {	-- Bows
 			i(15285),	-- Archer's Longbow
 			i(15289),	-- Archstrike Bow
 			i(15288),	-- Blasthorn Bow
@@ -2044,13 +2044,13 @@ _.WorldDrops =
 			i(4087),	-- Trueshot Bow
 			i(3037),	-- Whipwood Recurve Bow
 		}),
-		n(-347, {	-- Crossbows
+		filter(33, {	-- Crossbows
 			i(13037),	-- Crystalpine Stinger
 			i(13040),	-- Heartseeking Crossbow
 			i(13039),	-- Skull Splitting Crossbow
 			i(13038),	-- Swiftwind
 		}),
-		n(-333, {	-- Daggers
+		filter(20, {	-- Daggers
 			i(14555),	-- Alcor's Sunrazor
 			i(15241),	-- Battle Knife
 			i(2236),	-- Blackfang
@@ -2077,7 +2077,7 @@ _.WorldDrops =
 			i(4571),	-- War Knife
 			i(4091),	-- Widowmaker
 		}),
-		n(-345, {	-- Guns
+		filter(31, {	-- Guns
 			i(3042),	-- BKP "Sparrow" Smallbore
 			i(15324),	-- Burnside Rifle
 			i(4577),	-- Compact Shotgun
@@ -2097,7 +2097,7 @@ _.WorldDrops =
 			i(3430),	-- Sniper Rifle
 			i(13138),	-- The Silencer
 		}),
-		n(-336, {	-- 1H Maces
+		filter(23, {	-- 1H Maces
 			i(868),		-- Ardent Custodian
 			i(15222),	-- Barbed Club
 			i(15224),	-- Battlesmasher
@@ -2130,7 +2130,7 @@ _.WorldDrops =
 			i(789),		-- Stout Battlehammer
 			i(1721),	-- Viking Warhammer
 		}),
-		n(-337, {	-- 2H Maces
+		filter(24, {	-- 2H Maces
 			i(15264),	-- Backbreaker
 			i(1990),	-- Ballast Maul
 			i(3198),	-- Battering Hammer
@@ -2154,7 +2154,7 @@ _.WorldDrops =
 			i(13047),	-- Twig of the World Tree
 			i(13045),	-- Viscous Hammer
 		}),
-		n(-343, {	-- Polearms
+		filter(29, {	-- Polearms
 			i(13057),	-- Bloodpike
 			i(13055),	-- Bonechewer
 			i(13056),	-- Frenzied Striker
@@ -2165,7 +2165,7 @@ _.WorldDrops =
 			i(13059),	-- Stoneraven
 			i(13060),	-- The Needler
 		}),
-		n(-342, {	-- Staves
+		filter(28, {	-- Staves
 			i(3185),	-- Acrobatic Staff
 			i(937),		-- Black Duskwood Staff
 			i(15274),	-- Diviner Long Staff
@@ -2188,7 +2188,7 @@ _.WorldDrops =
 			i(890),		-- Twisted Chanter's Staff
 			i(943),		-- Warden Staff
 		}),
-		n(-338, {	-- 1H Swords
+		filter(25, {	-- 1H Swords
 			i(13036),	-- Assassination Blade
 			i(15220),	-- Battlefell Sabre
 			i(809),		-- Bloodrazor
@@ -2225,7 +2225,7 @@ _.WorldDrops =
 			i(15217),	-- Widow Blade
 			i(13033),	-- Zealot Blade
 		}),
-		n(-339, {	-- 2H Swords
+		filter(26, {	-- 2H Swords
 			i(9385),	-- Archaic Defender
 			i(8199),	-- Battlefield Destroyer
 			i(15253),	-- Beheading Blade
@@ -2260,7 +2260,7 @@ _.WorldDrops =
 			i(13052),	-- Warmonger
 			i(13051),	-- Witchfury
 		}),
-		n(-341, {	-- Wands
+		filter(27, {	-- Wands
 			i(5212),	-- Blazing Wand
 			i(8186),	-- Dire Wand
 			i(15282),	-- Dragon Finger

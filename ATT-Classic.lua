@@ -3883,23 +3883,6 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 app.NPCDisplayIDFromID = NPCDisplayIDFromID;
-local skillIDMap = {
-	[-178] = 20222, 										-- Goblin Engineering
-	[-179] = 20219, 										-- Gnomish Engineering
-	[-180] = 171,				 							-- Alchemy
-	[-181] = 164,				 							-- Blacksmithing
-	[-182] = 333,				 							-- Enchanting
-	[-183] = 202,				 							-- Engineering
-	[-184] = 182,				 							-- Herbalism
-	[-187] = 165,				 							-- Leatherworking
-	[-188] = 186,				 							-- Mining
-	[-189] = 393,				 							-- Skinning
-	[-190] = 197,				 							-- Tailoring
-	[-192] = 185, 											-- Cooking
-	[-193] = 129, 											-- First Aid
-	[-194] = 356, 											-- Fishing
-	[-211] = 70,											-- Poisons
-};
 app.BaseNPC = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3923,8 +3906,6 @@ app.BaseNPC = {
 			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "spellID" then
-			return skillIDMap[t.npcID];
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then

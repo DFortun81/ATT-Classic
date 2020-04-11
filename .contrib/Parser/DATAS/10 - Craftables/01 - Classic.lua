@@ -413,7 +413,7 @@ _.Craftables =
 			i(8217),	-- Quickdraw Quiver
 			i(8218),	-- Thick Leather Ammo Pouch
 		}),
-		n(-322, {	-- Cloak
+		filter(3, {	-- Cloak
 			i(18509),	-- Chromatic Cloak
 			i(6466),	-- Deviate Scale Cloak
 			i(18510),	-- Hide of the Wild
@@ -429,7 +429,7 @@ _.Craftables =
 			i(3719),	-- Hillman's Cloak
 			i(15138),	-- Onyxia Scale Cloak
 		}),
-		n(-44, { 	-- Leather
+		filter(5, {	-- Leather
 			n(-320, {	-- Head
 				i(22759),	-- Bramblewood Helm
 				i(16983),	-- Molten Helm
@@ -596,7 +596,7 @@ _.Craftables =
 				i(2309),	-- Embossed Leather Boots
 			}),
 		}),
-		n(-45, {	-- Mail
+		filter(6, {	-- Mail
 			n(-320, {	-- Head
 				i(15080),	-- Heavy Scorpid Helm
 				i(8208),	-- Tough Scorpid Helm
