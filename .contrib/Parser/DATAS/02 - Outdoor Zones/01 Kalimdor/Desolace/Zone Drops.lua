@@ -146,6 +146,17 @@ _.Zones =
 						11563,	-- Drysnap Pincer
 					},
 				}),
+				o(176582, {	-- Shellfish Trap
+					["coords"] = {
+						{ 20.3, 71.3, DESOLACE },
+						{ 23.4, 77.1, DESOLACE },
+						{ 18.1, 86.5, DESOLACE },
+					},
+					["groups"] = {
+						i(6367),	-- Big Iron Fishing Pole
+						i(13545),	-- Shellfish
+					},
+				}),
 				i(15874, {	-- Soft-shelled Clam
 					["cr"] = 12347,	-- Enraged Reef Crawler
 					["races"] = HORDE_ONLY,
