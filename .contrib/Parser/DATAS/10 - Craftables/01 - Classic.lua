@@ -840,7 +840,7 @@ _.Craftables =
 			i(10047),	-- Simple Kilt
 			i(14132),	-- Wizardweave Leggings
 		}),
-		n(-324, {	-- Shirts
+		filter(10, {	-- Shirts
 			i(4336),	-- Black Swashbuckler's Shirt
 			i(2577),	-- Blue Linen Shirt
 			i(4332),	-- Bright Yellow Shirt

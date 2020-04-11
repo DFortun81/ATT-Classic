@@ -4010,6 +4010,30 @@ app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
 end
 
+-- PVP Ranks
+app.BasePVPRank = {
+	__index = function(t, key)
+		if key == "key" then
+			return "pvpRankID";
+		elseif key == "text" then
+			return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.s or 0)];
+		elseif key == "icon" then
+			return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
+		elseif key == "description" then
+			return "Opposite faction equivalent: " .. _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.s == 1 and 0 or 1))];
+		elseif key == "title" then
+			return RANK .. " " .. t.pvpRankID;
+		elseif key == "r" then
+			return t.parent.r or app.FactionID;
+		elseif key == "s" then
+			return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
+		end
+	end
+};
+app.CreatePVPRank = function(id, t)
+	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
+end
+
 -- Quest Lib
 (function()
 -- Quest Name Harvesting Lib
@@ -6025,7 +6049,7 @@ function app:GetDataCache()
 		-- PvP
 		if app.Categories.PvP then
 			db = {};
-			db.text = "PvP";
+			db.text = PVP;
 			db.icon = "Interface/ICONS/INV_Misc_Map_01";
 			db.g = app.Categories.PvP;
 			table.insert(g, db);
@@ -6125,7 +6149,10 @@ function app:GetDataCache()
 		
 		-- World Events
 		if app.Categories.WorldEvents then
-			db = app.CreateNPC(-3, app.Categories.WorldEvents);
+			db = {};
+			db.text = BATTLE_PET_SOURCE_7;
+			db.icon = "Interface\\Icons\\Spell_arcane_portalstormwind";
+			db.g = app.Categories.WorldEvents;
 			db.expanded = false;
 			table.insert(g, db);
 		end

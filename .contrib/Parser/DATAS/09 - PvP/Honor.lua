@@ -7,14 +7,14 @@ _.PvP =
   n(-9914, {	-- Alliance 
     ["races"] = ALLIANCE_ONLY,
     ["g"] = {
-      n(-8001, {	-- Private
+      pvprank(1, {	-- Private
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {
             i(15196),	-- Private's Tabard
           },
         }),
       }),
-      n(-8002, {	-- Corporal
+      pvprank(2, {	-- Corporal
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {
             i(18854, {	-- Insignia of the Alliance
@@ -44,7 +44,7 @@ _.PvP =
           },
         }),
       }),
-      n(-8003, {	-- Sergeant
+      pvprank(3, {	-- Sergeant
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {
             i(16342),	-- Sergeant's Cape (58)
@@ -53,7 +53,7 @@ _.PvP =
           },
         }),
       }),
-      n(-8004, {	-- Master Sergeant
+      pvprank(4, {	-- Master Sergeant
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {
             i(18443),	-- Master Sergeant's Insignia (58)
@@ -62,7 +62,7 @@ _.PvP =
           },
         }),
       }),
-      n(-8005, {	-- Sergeant Major
+      pvprank(5, {	-- Sergeant Major
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {
             i(18449, {	-- Sergeant Major's Chain Armguards (45)
@@ -112,10 +112,10 @@ _.PvP =
           },
         }),
       }),
-      n(-8006, {	-- Knight
+      pvprank(6, {	-- Knight
         i(15198),	-- Knight's Colors
       }),
-      n(-8007, {	-- Knight-Lieutenant
+      pvprank(7, {	-- Knight-Lieutenant
         i(23291, {	-- Knight-Lieutenant's Silk Walkers
           ["classes"] = { MAGE },
         }),
@@ -213,7 +213,7 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8008, {	-- Knight-Captain
+      pvprank(8, {	-- Knight-Captain
         i(23292, {	-- Knight-Captain's Chain Hauberk (60)
           ["classes"] = { HUNTER },
         }),
@@ -311,10 +311,10 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8009, {	-- Knight-Champion
+      pvprank(9, {	-- Knight-Champion
         i(18606),	-- Alliance Battle Standard
       }),
-      n(-8010, {	-- Lieutenant Commander
+      pvprank(10, {	-- Lieutenant Commander
         i(23306, {	-- Lieutenant Commander's Chain Helm
           ["classes"] = { HUNTER },
         }),
@@ -412,13 +412,13 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8011, {	-- Commander
+      pvprank(11, {	-- Commander
 		i(18241),	-- Black War Steed Bridle
 		i(18244),	-- Black War Ram
 		i(18243),	-- Black Battlestrider
 		i(18242),	-- Reins of the Black War Tiger
       }),
-      n(-8012, {	-- Marshal
+      pvprank(12, {	-- Marshal
         i(16463, {	-- Marshal's Chain Grips
           ["classes"] = { HUNTER },
         }),
@@ -492,7 +492,7 @@ _.PvP =
           ["classes"] = { PRIEST },
         }),
       }),
-      n(-8013, {	-- Field Marshal
+      pvprank(13, {	-- Field Marshal
         i(16465, {	-- Field Marshal's Chain Helm
           ["classes"] = { HUNTER },
         });
@@ -566,7 +566,7 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8014, {	-- Grand Marshal
+      pvprank(14, {	-- Grand Marshal
 		i(18825),	-- Grand Marshal's Aegis
         i(18867),	-- Grand Marshal's Battle Hammer
         i(18833),	-- Grand Marshal's Bullseye
@@ -594,10 +594,10 @@ _.PvP =
   n(-9913, {	-- Horde 
     ["races"] = HORDE_ONLY,
     ["g"] = {
-      n(-8015, {	-- Scout
+      pvprank(1, {	-- Scout
         i(15197),	-- Scout's Tabard
       }),
-      n(-8016, {	-- Grunt
+      pvprank(2, {	-- Grunt
         i(18834, {	-- Insignia of the Horde
           ["classes"] = { WARRIOR },
         }),
@@ -623,17 +623,17 @@ _.PvP =
           ["classes"] = { SHAMAN },
         }),
       }),
-      n(-8017, {	-- Sergeant
+      pvprank(3, {	-- Sergeant
         i(18461),	-- Sergeant's Cloak (58)
         i(16341),	-- Sergeant's Cloak (45)
         i(18427),	-- Sergeant's Cloak (30)
       }),
-      n(-8018, {	-- Senior Sergeant
+      pvprank(4, {	-- Senior Sergeant
         i(16335),	-- Senior Sergeant's Insignia (58)
         i(18428),	-- Senior Sergeant's Insignia (45)
         i(15200),	-- Senior Sergeant's Insignia (30)
       }),
-      n(-8019, {	-- First Sergeant
+      pvprank(5, {	-- First Sergeant
         i(16486, {	-- First Sergeant's Silk Cuffs (58)
           ["classes"] = { 
             MAGE,
@@ -679,10 +679,10 @@ _.PvP =
           ["classes"] = { ROGUE },
         }),
       }),
-      n(-8020, {	-- Stone Guard
+      pvprank(6, {	-- Stone Guard
         i(15199),	-- Stone Guard's Herald
       }),
-      n(-8021, {	-- Blood Guard
+      pvprank(7, {	-- Blood Guard
         i(22860, {	-- Blood Guard's Silk Walkers (60)
           ["classes"] = { MAGE },
         }),
@@ -780,7 +780,7 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8022, {	-- Legionnaire
+      pvprank(8, {	-- Legionnaire
         i(16525, {	-- Legionnaire's Chain Breastplate
           ["classes"] = {HUNTER },
         }),
@@ -878,10 +878,10 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8023, {	-- Centurion
+      pvprank(9, {	-- Centurion
         i(18607),	-- Horde Battle Standard
       }),
-      n(-8024, {	-- Champion
+      pvprank(10, {	-- Champion
         i(16526, {	-- Champion's Chain Headguard
           ["classes"] = { HUNTER },
         }),
@@ -979,13 +979,13 @@ _.PvP =
           ["classes"] = { HUNTER },
         }),
       }),
-      n(-8025, {	-- Lieutenant General
+      pvprank(11, {	-- Lieutenant General
 		i(18247),	-- Black War Kodo
 		i(18245),	-- Horn of the Black War Wolf
 		i(18248),	-- Red Skeletal Warhorse
 		i(18246),	-- Whistle of the Black War Raptor
       }),
-      n(-8026, {	-- General
+      pvprank(12, {	-- General
         i(16571, {	-- General's Chain Gloves
           ["classes"] = { HUNTER },
         }),
@@ -1059,7 +1059,7 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8027, {	-- Warlord
+      pvprank(13, {	-- Warlord
         i(16566, {	-- Warlord's Chain Helmet
           ["classes"] = { HUNTER },
         }),
@@ -1133,7 +1133,7 @@ _.PvP =
           ["classes"] = { MAGE },
         }),
       }),
-      n(-8028, {	-- High Warlord
+      pvprank(14, {	-- High Warlord
         i(18831),	-- High Warlord's Battle Axe
         i(23464),	-- High Warlord's Battle Mace
         i(16345),	-- High Warlord's Blade

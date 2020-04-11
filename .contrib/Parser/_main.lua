@@ -562,6 +562,9 @@ profession = function(skillID, t)						-- Create a PROFESSION Container. (NOTE: 
 	_.Professions = { p };
 	return p;
 end
+pvprank = function(id, t)								-- Create a PVP Rank Object.
+	return struct("pvpRankID", id, t);
+end
 quest = function(id, t)									-- Create a QUEST Object
 	return struct("questID", id, t);
 end
