@@ -743,52 +743,47 @@ _.Instances = {
 				i(21707),	-- Ring of Swarming Thought
 			}),
 			n(-20, {	-- Silithid Royalty
-				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.",
+				["description"] = "This can be a fairly -buggy- encounter if you don't do it right. Kill 1 boss at a time and allow it to get consumed. Then kill the next one and allow it to also get consumed. The last boss you leave alive determines the loot that can drop.\n\nThese items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings.",
+				["providers"] = {
+					{ "n", 15511 },	-- Lord Kri
+					{ "n", 15543 },	-- Princess Yauj
+					{ "n", 15544 },	-- Vem
+				},
 				["groups"] = {
-					n(COMMON_BOSS_DROPS, {
-						["description"] = "These items can drop from killing the Silithid Royalty bosses regardless of order. For the other items, refer to their individual listings",
-						["crs"] = {
-							15511,	-- Lord Kri
-							15543,	-- Princess Yauj
-							15544,	-- Vem
-						},
-						["groups"] = {
-							i(21693),	-- Guise of the Devourer
-							i(21694),	-- Ternary Mantle
-							i(21697),	-- Cape of the Trinity
-							i(21696),	-- Robes of the Triumvirate
-							i(21692),	-- Triad Girdle
-							i(21695),	-- Angelista's Touch
-						},
-					}),
-					n(15511, {	-- Lord Kri
-						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
-							i(21603),	-- Wand of Qiraji Nobility
-							i(21680),	-- Vest of Swift Execution
-							i(21681),	-- Ring of the Devoured
-							i(21685),	-- Petrified Scarab
-						},
-					}),
-					n(15543, {	-- Princess Yauj
-						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
-							i(21683),	-- Mantle of the Desert Crusade
-							i(21684),	-- Mantle of the Desert's Fury
-							i(21686),	-- Mantle of Phrenic Power
-							i(21682),	-- Bile-Covered Gauntlets
-							i(21687),	-- Ukko's Ring of Darkness
-						},
-					}),
-					n(15544, {	-- Vem
-						["description"] = "Killing this boss last can drop the following items.",
-						["groups"] = {
-							i(21690),	-- Angelista's Charm
-							i(21689),	-- Gloves of Ebru
-							i(21691),	-- Ooze-Ridden Gauntlets
-							i(21688),	-- Boots of the Fallen Hero
-						},
-					}),
+					i(21693),	-- Guise of the Devourer
+					i(21694),	-- Ternary Mantle
+					i(21697),	-- Cape of the Trinity
+					i(21696),	-- Robes of the Triumvirate
+					i(21692),	-- Triad Girdle
+					i(21695),	-- Angelista's Touch
+				},
+			}),
+			n(15511, {	-- Lord Kri
+				["description"] = "Killing this boss last can drop the following items.",
+				["groups"] = {
+					i(21603),	-- Wand of Qiraji Nobility
+					i(21680),	-- Vest of Swift Execution
+					i(21681),	-- Ring of the Devoured
+					i(21685),	-- Petrified Scarab
+				},
+			}),
+			n(15543, {	-- Princess Yauj
+				["description"] = "Killing this boss last can drop the following items.",
+				["groups"] = {
+					i(21683),	-- Mantle of the Desert Crusade
+					i(21684),	-- Mantle of the Desert's Fury
+					i(21686),	-- Mantle of Phrenic Power
+					i(21682),	-- Bile-Covered Gauntlets
+					i(21687),	-- Ukko's Ring of Darkness
+				},
+			}),
+			n(15544, {	-- Vem
+				["description"] = "Killing this boss last can drop the following items.",
+				["groups"] = {
+					i(21690),	-- Angelista's Charm
+					i(21689),	-- Gloves of Ebru
+					i(21691),	-- Ooze-Ridden Gauntlets
+					i(21688),	-- Boots of the Fallen Hero
 				},
 			}),
 			n(15516, {	-- Battleguard Sartura
@@ -1174,114 +1169,109 @@ _.Instances = {
 				i(21617),	-- Wasphide Gauntlets
 				i(21620),	-- Ring of the Martyr
 			}),
-			n(-21, {	-- The Twin Emperors
-				["description"] = "The clever brothers Vek'lor and Vek'nilash are known as the Twin Emperors. They rule over the qiraji from the sanctuary of their temple.\n\nIn this area, Qiraji Scarabs and Qiraji Scorpions are scattered all around the floor, and if killed, they constantly respawn throughout the fight. They are initially neutral, but turn hostile when hit by any sort of area of effect spell or when mutated by Emperor Vek'nilash.",
-				["groups"] = {
-					n(15276, {	-- Emperor Vek'lor
-						i(20930, {	-- Vek'lor's Diadem
-							{
-								["questID"] = 8628,	-- Avenger's Crown (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {2},	-- Paladin
-								["groups"] = {
-									i(21387),	-- Avenger's Crown
-								},
-							},
-							{
-								["questID"] = 8639,	-- Deathdealer's Helm (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {4},	-- Rogue
-								["groups"] = {
-									i(21360),	-- Deathdealer's Helm
-								},
-							},
-							{
-								["questID"] = 8667,	-- Genesis Helm (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {11},	-- Druid
-								["groups"] = {
-									i(21353),	-- Genesis Helm
-								},
-							},
-							{
-								["questID"] = 8623,	-- Stormcaller's Diadem (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {7},	-- Shaman
-								["groups"] = {
-									i(21372),	-- Stormcaller's Diadem
-								},
-							},
-							{
-								["questID"] = 8657,	-- Striker's Diadem (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {3},	-- Hunter
-								["groups"] = {
-									i(21366),	-- Striker's Diadem
-								},
-							},
-						}),
-						i(20735),	-- Formula: Enchant Cloak - Subtlety
-						i(21597), 	-- Royal Scepter of Vek'lor
-						i(21602), 	-- Qiraji Execution Bracers
-						i(21599), 	-- Vek'lor's Gloves of Devastation
-						i(21598), 	-- Royal Qiraji Belt
-						i(21600), 	-- Boots of Epiphany
-						i(21601),	-- Ring of Emperor Vek'lor
-					}),
-					n(15275, {	-- Emperor Vek'nilash
-						i(20926, {	-- Vek'nilash's Circlet
-							{
-								["questID"] = 8561,	-- Conqueror's Crown (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {1},	-- Warrior
-								["groups"] = {
-									i(21329),	-- Conqueror's Crown
-								},
-							},
-							{
-								["questID"] = 8662,	-- Doomcaller's Circlet (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {9},	-- Warlock
-								["groups"] = {
-									i(21337),	-- Doomcaller's Circlet
-								},
-							},
-							{
-								["questID"] = 8632,	-- Enigma Circlet (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {8},	-- Mage
-								["groups"] = {
-									i(21347),	-- Enigma Circlet
-								},
-							},
-							{
-								["questID"] = 8592,	-- Tiara of the Oracle (Quest)
-								["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
-								["repeatable"] = true,
-								["classes"] = {5},	-- Priest
-								["groups"] = {
-									i(21348),	-- Tiara of the Oracle
-								},
-							},
-						}),
-						i(20726),	-- Formula: Enchant Gloves - Threat
-						i(21679), 	-- Kalimdor's Revenge
-						i(21608),	-- Amulet of Vek'nilash
-						i(21604), 	-- Bracelets of Royal Redemption
-						i(21605), 	-- Gloves of the Hidden Temple
-						i(21606), 	-- Belt of the Fallen Emperor
-						i(21607), 	-- Grasp of the Fallen Emperor
-						i(21609), 	-- Regenerating Belt of Vek'nilash
-					}),
-				},
+			n(15276, {	-- Emperor Vek'lor
+				i(20930, {	-- Vek'lor's Diadem
+					{
+						["questID"] = 8628,	-- Avenger's Crown (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {2},	-- Paladin
+						["groups"] = {
+							i(21387),	-- Avenger's Crown
+						},
+					},
+					{
+						["questID"] = 8639,	-- Deathdealer's Helm (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {4},	-- Rogue
+						["groups"] = {
+							i(21360),	-- Deathdealer's Helm
+						},
+					},
+					{
+						["questID"] = 8667,	-- Genesis Helm (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {11},	-- Druid
+						["groups"] = {
+							i(21353),	-- Genesis Helm
+						},
+					},
+					{
+						["questID"] = 8623,	-- Stormcaller's Diadem (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {7},	-- Shaman
+						["groups"] = {
+							i(21372),	-- Stormcaller's Diadem
+						},
+					},
+					{
+						["questID"] = 8657,	-- Striker's Diadem (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {3},	-- Hunter
+						["groups"] = {
+							i(21366),	-- Striker's Diadem
+						},
+					},
+				}),
+				i(20735),	-- Formula: Enchant Cloak - Subtlety
+				i(21597), 	-- Royal Scepter of Vek'lor
+				i(21602), 	-- Qiraji Execution Bracers
+				i(21599), 	-- Vek'lor's Gloves of Devastation
+				i(21598), 	-- Royal Qiraji Belt
+				i(21600), 	-- Boots of Epiphany
+				i(21601),	-- Ring of Emperor Vek'lor
+			}),
+			n(15275, {	-- Emperor Vek'nilash
+				i(20926, {	-- Vek'nilash's Circlet
+					{
+						["questID"] = 8561,	-- Conqueror's Crown (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {1},	-- Warrior
+						["groups"] = {
+							i(21329),	-- Conqueror's Crown
+						},
+					},
+					{
+						["questID"] = 8662,	-- Doomcaller's Circlet (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {9},	-- Warlock
+						["groups"] = {
+							i(21337),	-- Doomcaller's Circlet
+						},
+					},
+					{
+						["questID"] = 8632,	-- Enigma Circlet (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {8},	-- Mage
+						["groups"] = {
+							i(21347),	-- Enigma Circlet
+						},
+					},
+					{
+						["questID"] = 8592,	-- Tiara of the Oracle (Quest)
+						["qg"] = 15502,		-- Quest Giver: Andorgos <Brood of Malygos>
+						["repeatable"] = true,
+						["classes"] = {5},	-- Priest
+						["groups"] = {
+							i(21348),	-- Tiara of the Oracle
+						},
+					},
+				}),
+				i(20726),	-- Formula: Enchant Gloves - Threat
+				i(21679), 	-- Kalimdor's Revenge
+				i(21608),	-- Amulet of Vek'nilash
+				i(21604), 	-- Bracelets of Royal Redemption
+				i(21605), 	-- Gloves of the Hidden Temple
+				i(21606), 	-- Belt of the Fallen Emperor
+				i(21607), 	-- Grasp of the Fallen Emperor
+				i(21609), 	-- Regenerating Belt of Vek'nilash
 			}),
 			n(15517, { 	-- Ouro
 				i(20927, {	-- Ouro's Intact Hide
