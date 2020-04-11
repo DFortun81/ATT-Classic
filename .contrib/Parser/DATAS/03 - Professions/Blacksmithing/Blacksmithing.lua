@@ -195,7 +195,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Bloodsoul Shoulders",
 				["recipeID"] = 24137,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Dark Iron Shoulders",
@@ -204,7 +203,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darksoul Shoulders",
 				["recipeID"] = 24141,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Golden Scale Shoulders",
@@ -308,7 +306,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Bloodsoul Gauntlets",
 				["recipeID"] = 24138,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Darkrune Gauntlets",
@@ -322,7 +319,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Gloves of the Dawn",
 				["recipeID"] = 23633,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Golden Scale Gauntlets",
@@ -385,7 +381,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Bloodsoul Breastplate",
 				["recipeID"] = 24136,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Copper Chain Vest",
@@ -403,7 +398,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darksoul Breastplate",
 				["recipeID"] = 24139,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Golden Scale Cuirass",
@@ -513,7 +507,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Heavy Timbermaw Belt",
 				["recipeID"] = 23628,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Imperial Plate Belt",
@@ -554,7 +547,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darksoul Leggings",
 				["recipeID"] = 24140,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Golden Scale Leggings",
@@ -638,7 +630,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Heavy Timbermaw Boots",
 				["recipeID"] = 23629,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Imperial Plate Boots",

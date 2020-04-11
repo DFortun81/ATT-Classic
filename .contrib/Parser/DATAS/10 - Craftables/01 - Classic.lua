@@ -116,15 +116,13 @@ _.Craftables =
 			}),
 		}),
 		filter(8, {		-- Shield
-			i(22198),	-- Jagged Obsidian Shield
+			un(3, i(22198)),	-- Jagged Obsidian Shield (AQ)
 		}),
 		n(-320, {		-- Head
 			i(7915),	-- Barbaric Iron Helm
 			i(19148),	-- Dark Iron Helm
 			i(20551),	-- Darkrune Helm
-			i(12620, {	-- Enchanted Thorium Helm
-				["u"] = 3,
-			}),
+			i(12620),	-- Enchanted Thorium Helm
 			i(3837),	-- Golden Scale Coif
 			i(3836),	-- Green Iron Helm
 			i(7934),	-- Heavy Mithril Helm
@@ -141,13 +139,9 @@ _.Craftables =
 		}),
 		n(-321, {		-- Shoulders
 			i(7913),	-- Barbaric Iron Shoulders
-			i(19691, {	-- Bloodsoul Shoulders
-				["u"]= 8,
-			}),
+			i(19691),	-- Bloodsoul Shoulders
 			i(11605),	-- Dark Iron Shoulders
-			i(19695, {	-- Darksoul Shoulders
-				["u"] = 3,
-			}),
+			i(19695),	-- Darksoul Shoulders
 			i(12625),	-- Dawnbringer Shoulders
 			i(16988),	-- Fiery Chain Shoulders
 			i(3841),	-- Golden Scale Shoulders
@@ -162,20 +156,14 @@ _.Craftables =
 		}),
 		n(-323, {		-- Chest
 			i(7914),	-- Barbaric Iron Breastplate
-			i(19690, {	-- Bloodsoul Breastplate
-				["u"] = 3,
-			}),
+			i(19690),	-- Bloodsoul Breastplate
 			i(3471),	-- Copper Chain Vest
 			i(11604),	-- Dark Iron Plate
 			i(11606),	-- Dark Iron Plate
 			i(20550),	-- Darkrune Breastplate
-			i(19693, {	-- Darksoul Breastplate
-				["u"] = 3,
-			}),
+			i(19693),	-- Darksoul Breastplate
 			i(12628),	-- Demon Forged Breastplate
-			i(12618, {	-- Enchanted Thorium Breastplate
-				["u"] = 3,
-			}),
+			i(12618),	-- Enchanted Thorium Breastplate
 			i(3845),	-- Golden Scale Cuirass
 			i(3844),	-- Green Iron Hauberk
 			i(7930),	-- Heavy Mithril Breastplate
@@ -191,9 +179,7 @@ _.Craftables =
 			i(12415),	-- Radiant Breastplate
 			i(2866),	-- Rough Bronze Cuirass
 			i(2864),	-- Runed Copper Breastplate
-			i(12613, {	-- Runic Breastplate
-				["u"] = 3,
-			}),
+			i(12613),	-- Runic Breastplate
 			i(2870),	-- Shining Silver Breastplate
 			i(2869),	-- Silvered Bronze Breastplate
 			i(7963),	-- Steel Breastplate
@@ -205,9 +191,7 @@ _.Craftables =
 		n(-327, {		-- Hands
 			i(7917),	-- Barbaric Iron Gloves
 			i(22194),	-- Black Grasp of the Destroyer
-			i(19692, {	-- Bloodsoul Gauntlets
-				["u"] = 3,
-			}),
+			i(19692),	-- Bloodsoul Gauntlets
 			i(19164),	-- Dark Iron Gauntlets
 			i(20549),	-- Darkrune Gauntlets
 			i(12631),	-- Fiery Plate Gauntlets
@@ -255,12 +239,8 @@ _.Craftables =
 		}),
 		n(-329, {		-- Legs
 			i(17013),	-- Dark Iron Leggings
-			i(19694, {	-- Darksoul Leggings
-				["u"] = 3,
-			}),
-			i(12619, {	-- Enchanted Thorium Leggings
-				["u"] = 3,
-			}),
+			i(19694),	-- Darksoul Leggings
+			i(12619),	-- Enchanted Thorium Leggings
 			i(3843),	-- Golden Scale Leggings
 			i(3842),	-- Green Iron Leggings
 			i(7921),	-- Heavy Mithril Pants
@@ -477,7 +457,7 @@ _.Craftables =
 				i(15061),	-- Living Shoulders
 				i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
 				i(15067),	-- Ironfeather Shoulders
-				i(8210),		-- Wild Leather Shoulders
+				i(8210),	-- Wild Leather Shoulders
 				i(8192),	-- Nightscape Shoulders
 				i(5964),	-- Barbaric Shoulders
 				i(4252),	-- Dark Leather Shoulders

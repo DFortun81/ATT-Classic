@@ -52,7 +52,6 @@ profession(ALCHEMY, {
 			{
 				["name"] = "Greater Dreamless Sleep Potion",
 				["recipeID"] = 24366,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Greater Fire Protection Potion",
@@ -122,12 +121,10 @@ profession(ALCHEMY, {
 			{
 				["name"] = "Living Action Potion",
 				["recipeID"] = 24367,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Mageblood Potion",
 				["recipeID"] = 24365,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Magic Resistance Potion",
@@ -148,7 +145,6 @@ profession(ALCHEMY, {
 			{
 				["name"] = "Major Troll's Blood Potion",
 				["recipeID"] = 24368,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Mana Potion",

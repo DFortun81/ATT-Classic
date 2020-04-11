@@ -40,7 +40,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Big Bag of Enchantment",
 				["recipeID"] = 27660,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Black Silk Pack",
@@ -206,7 +205,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Argent Shoulders",
 				["recipeID"] = 23665,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Azure Shoulders",
@@ -239,7 +237,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Mantle of the Timbermaw",
 				["recipeID"] = 23663,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Mooncloth Shoulders",
@@ -296,7 +293,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Bloodvine Vest",
 				["recipeID"] = 24091,
-				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Blue Linen Robe",
@@ -402,7 +398,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Mooncloth Robe",
 				["recipeID"] = 22902,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Mooncloth Vest",
@@ -521,7 +516,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Belt of the Archmage",
 				["recipeID"] = 22866,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Crimson Silk Belt",
@@ -559,7 +553,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Wisdom of the Timbermaw",
 				["recipeID"] = 23662,
-				["u"] = 3,	-- Added in later phase
 			}
 		}
 	},
@@ -594,7 +587,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Felcloth Gloves",
 				["recipeID"] = 22867,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Flarecore Gloves",
@@ -631,12 +623,10 @@ profession(TAILORING, {
 			{
 				["name"] = "Inferno Gloves",
 				["recipeID"] = 22868,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Mooncloth Gloves",
 				["recipeID"] = 22869,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Phoenix Gloves",
@@ -680,7 +670,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Bloodvine Leggings",
 				["recipeID"] = 24092,
-				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Brightcloth Pants",
@@ -781,7 +770,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Argent Boots",
 				["recipeID"] = 23664,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Black Mageweave Boots",
@@ -790,7 +778,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Bloodvine Boots",
 				["recipeID"] = 24093,
-				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Boots of Darkness",
@@ -879,7 +866,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Cloak of Warding",
 				["recipeID"] = 22870,
-				["u"] = 3,	-- Added in later phase (Dire Maul)
 			},
 			{
 				["name"] = "Crimson Silk Cloak",

@@ -191,7 +191,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Blood Tiger Shoulders",
 				["recipeID"] = 24125,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Blue Dragonscale Shoulders",
@@ -208,7 +207,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Golden Mantle of the Dawn",
 				["recipeID"] = 23706,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Heavy Scorpid Shoulders",
@@ -275,7 +273,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Blood Tiger Breastplate",
 				["recipeID"] = 24124,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Blue Dragonscale Breastplate",
@@ -383,7 +380,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Primal Batskin Jerkin",
 				["recipeID"] = 24121,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Raptor Hide Harness",
@@ -502,7 +498,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Primal Batskin Bracers",
 				["recipeID"] = 24123,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Runic Leather Bracers",
@@ -637,7 +632,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Primal Batskin Gloves",
 				["recipeID"] = 24122,
-				["u"] = 3,	-- Added in later phase (ZG)
 			},
 			{
 				["name"] = "Red Whelp Gloves",
@@ -664,12 +658,10 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Stormshroud Gloves",
 				["recipeID"] = 26279,
-				["u"] = 3,	-- Added in later phase (Elemental Invasion)
 			},
 			{
 				["name"] = "Timbermaw Brawlers",
 				["recipeID"] = 23704,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Tough Scorpid Gloves",
@@ -757,7 +749,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Might of the Timbermaw",
 				["recipeID"] = 23703,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Molten Belt",
@@ -923,7 +914,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Dawn Treaders",
 				["recipeID"] = 23705,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Dusky Boots",

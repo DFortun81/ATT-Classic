@@ -361,12 +361,10 @@ profession(ENGINEERING, {
 			{
 				["name"] = "Bloodvine Goggles",
 				["recipeID"] = 24356,
-				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Bloodvine Lens",
 				["recipeID"] = 24357,
-				["u"] = 3,	-- Added in later phase (ZG - phase 4)
 			},
 			{
 				["name"] = "Bright-Eye Goggles",
