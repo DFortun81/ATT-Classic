@@ -4228,6 +4228,12 @@ end
 -- Spell Lib
 (function()
 local dirty = false;
+local colors = {
+	optimal=RGBToHex(255,128,64),
+	medium=RGBToHex(255,255,0),
+	easy=RGBToHex(64,192,64),
+	trivial=RGBToHex(128, 128, 128),
+};
 app.CraftTypeToCraftTypeID = function(craftType)
 	if craftType then
 		if craftType == "optimal" then
@@ -4258,12 +4264,7 @@ app.CraftTypeIDToCraftType = function(craftTypeID)
 end
 app.CraftTypeIDToColor = function(craftTypeID)
 	local craftType = app.CraftTypeIDToCraftType(craftTypeID);
-	if craftType then
-		local c = CraftTypeColor[craftType];
-		if c then
-			return RGBToHex(c.r * 255, c.g * 255, c.b * 255);
-		end
-	end
+	if craftType then return colors[craftType]; end
 	return nil;
 end
 app.SpellIDToSpellName = setmetatable({}, {
