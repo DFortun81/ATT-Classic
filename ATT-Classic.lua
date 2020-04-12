@@ -2129,9 +2129,29 @@ local function SearchForLink(link)
 		-- Parse the link and get the itemID and bonus ids.
 		local itemString = string.match(link, "item[%-?%d:]+") or link;
 		if itemString then
-			local itemID = select(2, strsplit(":", link));
+			-- Cache the Item ID and the Suffix ID.
+			local _, itemID, _, _, _, _, _, suffixID = strsplit(":", itemString);
 			if itemID then
-				return SearchForField("itemID", tonumber(itemID) or 0);
+				-- Ensure that the itemID and suffixID are properly formatted.
+				itemID = tonumber(itemID) or 0;
+				if itemID > 0 then
+					if suffixID and suffixID ~= "" then
+						suffixID = tonumber(suffixID) or 0;
+						if suffixID > 0 then
+							-- Record the Suffix as valid for this itemID.
+							local suffixes = GetDataSubMember("ValidSuffixesPerItemID", itemID);
+							if not suffixes then
+								suffixes = {};
+								GetDataSubMember("ValidSuffixesPerItemID", itemID, suffixes);
+							end
+							if not suffixes[suffixID] then
+								suffixes[suffixID] = 1;
+								app.ClearItemCache();
+							end
+						end
+					end
+					return SearchForField("itemID", itemID);
+				end
 			end
 		end
 	else
@@ -2398,23 +2418,6 @@ end
 app.RefreshCollections = RefreshCollections;
 app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
-
--- Item Stat Lib
-local itemStats = {};
-local function GetBestSuffixID(itemID)
-	-- TODO: Calculate the Best SuffixID from a table of valid Suffixes for each ItemID.
-	-- NOTE: This needs to be included in the Database, sadly. (Unless it doesn't?)
-	-- return 2040;
-end
-local function GetItemWeights(itemLink)
-	table.wipe(itemStats);
-	GetItemStats(itemLink, itemStats);
-	print(itemLink, "stats:");
-	for key,value in pairs(itemStats) do
-		print(key, value);
-	end
-end
-app.GetItemWeights = GetItemWeights;
 
 -- Tooltip Functions
 local function AttachTooltipRawSearchResults(self, group)
@@ -3386,13 +3389,65 @@ end
 end)();
 
 -- Item Lib
+(function()
+local itemStats = {};
+local function GetItemWeight(itemLink)
+	wipe(itemStats);
+	GetItemStats(itemLink, itemStats);
+	for key,value in pairs(itemStats) do
+		--print(_G[key], value);
+		return 1;
+	end
+end
+app.GetItemWeight = GetItemWeight;
+local BestSuffixPerItemID = setmetatable({}, { __index = function(t, id)
+	local suffixes = GetDataSubMember("ValidSuffixesPerItemID", id);
+	if suffixes then
+		for suffixID,_ in pairs(suffixes) do
+			rawset(t, id, suffixID);
+			return suffixID;
+		end
+	else
+		-- No valid suffixes
+		rawset(t, id, 0);
+		return 0;
+	end
+end });
+local TotalRetriesPerItemID = setmetatable({}, { __index = function(t, id)
+	return 0;
+end });
+local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
+	local suffixID = BestSuffixPerItemID[id];
+	local link = select(2, GetItemInfo(suffixID > 0 and string.format("item:%d:0:0:0:0:0:%d", id, suffixID) or id));
+	if link then
+		rawset(t, id, link);
+		return link;
+	end
+end });
+local BestWeightPerItemID = setmetatable({}, { __index = function(t, id)
+	local weight = GetItemWeight(string.format("item:%d:0:0:0:0:0:%d", id, BestSuffixPerItemID[id]));
+	if weight then
+		rawset(t, id, weight);
+		return weight;
+	end
+end });
+app.ClearItemCache = function()
+	wipe(BestSuffixPerItemID);
+	wipe(BestItemLinkPerItemID);
+	wipe(BestWeightPerItemID);
+end
 app.BaseItem = {
 	__index = function(t, key)
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests) or (t.factionID and app.CollectibleReputations);
+			return (t.questID and app.CollectibleQuests and not t.repeatable and not t.isBreadcrumb) or (t.factionID and app.CollectibleReputations); -- (t.weight and t.weight > 0) or 
 		elseif key == "collected" then
+			--[[
+			if t.weight and t.weight > 0 then
+				return false;
+			end
+			]]--
 			if t.factionID then
 				-- This is used by reputation tokens. (turn in items)
 				if app.AccountWideReputations then
@@ -3417,27 +3472,7 @@ app.BaseItem = {
 		elseif key == "icon" then
 			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 		elseif key == "link" then
-			local itemID = t.itemID;
-			local suffixID = GetBestSuffixID(itemID);
-			local link = select(2, GetItemInfo(suffixID and string.format("item:%d:0:0:0:0:0:%d", itemID, suffixID) or itemID));
-			if link then
-				t.link = link;
-				t.retries = nil;
-				return link;
-			else
-				if t.retries then
-					t.retries = t.retries + 1;
-					if t.retries > app.MaximumItemInfoRetries then
-						local itemName = "Item #" .. itemID .. "*";
-						t.title = "Failed to acquire item information. The item made be invalid or may not have been cached on your server yet.";
-						t.link = "";
-						t.text = itemName;
-						return itemName;
-					end
-				else
-					t.retries = 1;
-				end
-			end
+			return BestItemLinkPerItemID[t.itemID];
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "repeatable" then
@@ -3448,6 +3483,8 @@ app.BaseItem = {
 			return t.link and GetItemInfo(t.link);
 		elseif key == "tsm" then
 			return string.format("i:%d", t.itemID);
+		elseif key == "weight" then
+			return BestWeightPerItemID[t.itemID];
 		elseif key == "b" then
 			return 2;
 		else
@@ -3459,6 +3496,7 @@ app.BaseItem = {
 app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
+end)();
 
 -- Loot Method + Threshold Lib
 (function()
@@ -6625,7 +6663,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 end);
 
 -- Uncomment this section if you need to enable Debugger:
---[[]]--
+--[[
 app:GetWindow("Debugger", UIParent, function(self)
 	if not self.initialized then
 		self.initialized = true;
@@ -6860,7 +6898,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 	BuildGroups(self.data, self.data.g);
 	UpdateWindow(self, true);
 end);
---[[]]--
+]]--
 app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 	if not self.initialized then
 		self.initialized = true;
@@ -8551,6 +8589,7 @@ app.events.VARIABLES_LOADED = function()
 	GetDataMember("WaypointFilters", {});
 	GetDataMember("GroupQuestsByGUID", {});
 	GetDataMember("AddonMessageProcessor", {});
+	GetDataMember("ValidSuffixesPerItemID", {});
 	
 	-- Check the format of the Soft Reserve Cache
 	local reserves = GetDataMember("SoftReserves", {});
@@ -8708,7 +8747,8 @@ app.events.VARIABLES_LOADED = function()
 		"SpellRanksPerCharacter",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
-		"TomTomIgnoreCompletedObjects"
+		"TomTomIgnoreCompletedObjects",
+		"ValidSuffixesPerItemID"
 	}) do
 		oldsettings[key] = ATTClassicAD[key];
 	end
@@ -8716,6 +8756,10 @@ app.events.VARIABLES_LOADED = function()
 	for key,value in pairs(oldsettings) do
 		ATTClassicAD[key] = value;
 	end
+	
+	-- Wipe the Debugger Data
+	ATTClassicDebugData = nil;
+	ATTClassicAuctionData = nil;
 	
 	-- Tooltip Settings
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
