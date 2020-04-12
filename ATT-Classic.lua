@@ -393,6 +393,7 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
+app.AlwaysShowUpdate = function(data) data.visible = true; end
 app.yell = function(msg)
 	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
 	app:PlayRemoveSound();
@@ -3081,8 +3082,12 @@ app.BaseQuestUnit = {
 			return true;
 		elseif key == "collected" then
 			return t.saved;
+		elseif key == "OnClick" then
+			return app.NoFilter;
+		elseif key == "OnUpdate" then
+			return app.AlwaysShowUpdate;
 		elseif key == "saved" then
-			local questID = t.parent.parent.questID;
+			local questID = GetRelativeValue(t, "questID");
 			if questID then
 				local guid = t.guid;
 				if guid and questID then
@@ -3103,7 +3108,7 @@ app.BaseQuestUnit = {
 			-- Something that isn't dynamic.
 			return table[key];
 		end
-	end
+	end,
 };
 app.CreateQuestUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseQuestUnit);
@@ -4775,7 +4780,7 @@ local function CreateMiniListForGroup(group)
 		if group.questID or group.sourceQuests then
 			-- This is a quest object. Let's show prereqs and breadcrumbs.
 			local questID = group.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.altQuestID or group.questID;
-			if questID then
+			if questID and group.parent and group.parent.parent then
 				if (group.parent.altQuestID and app.FactionID == Enum.FlightPathFaction.Horde and group.parent.altQuestID or group.parent.questID) == questID then
 					group = group.parent;
 				end
@@ -6392,6 +6397,17 @@ function app:GetWindow(suffix, parent, onUpdate)
 			wipe(self.data.g);
 			self:Update();
 		end
+		local function DelayedUpdateCoroutine()
+			while window.delayRemaining > 0 do
+				coroutine.yield();
+				window.delayRemaining = window.delayRemaining - 1;
+			end
+			window:Update(true);
+		end
+		window.DelayedUpdate = function(self)
+			window.delayRemaining = 180;
+			StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
+		end
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
 		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
@@ -6444,7 +6460,113 @@ app:GetWindow("Attuned", UIParent, function(self)
 			self.initialized = true;
 			
 			-- Soft Reserves
-			local attunements = {
+			local instances, instanceSelector, selectedInstance, attunements;
+			instances = {
+				['text'] = 'Instances',
+				['icon'] = "Interface\\Icons\\Spell_Fire_Immolation",
+				["description"] = "This setting allows you to change which instance's attunement data is displayed or queried for.\n\nClick this row to go back to the Attunements List.",
+				['OnClick'] = function(row, button)
+					self.data = attunements;
+					self:Update(true);
+					return true;
+				end,
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['g'] = {},
+				['OnUpdate'] = function(data)
+					data.g = {};
+					if data.options then
+						for i,option in ipairs(data.options) do
+							table.insert(data.g, option);
+						end
+					end
+				end,
+				['options'] = {
+					app.CreateMap(250, {	-- Upper Blackrock Spire
+						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",
+						['description'] = "These are players attuned to Upper Blackrock Spire.\n\nYou only need one person in your group that is attuned in order to enter the instance.",
+						['questID'] = 4743,
+						['visible'] = true,
+						['back'] = 0.5,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							selectedInstance = row.ref;
+							self:Reset();
+							return true;
+						end
+					}),
+					app.CreateMap(232, {	-- Molten Core
+						['icon'] = "Interface\\Icons\\Spell_Fire_Immolation",
+						['description'] = "These are players attuned to Molten Core.\n\nPeople can whisper you '!mc' to mark themselves attuned.",
+						['questID'] = 7848,
+						['visible'] = true,
+						["isRaid"] = true,
+						['back'] = 0.5,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							selectedInstance = row.ref;
+							self:Reset();
+							return true;
+						end
+					}),
+					app.CreateMap(248, {	-- Onyxia's Lair
+						['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+						['description'] = "These are players attuned to Onyxia's Lair.\n\nPeople can whisper you '!ony' to mark themselves attuned.",
+						['questID'] = app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502,
+						['visible'] = true,
+						["isRaid"] = true,
+						['back'] = 0.5,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							selectedInstance = row.ref;
+							self:Reset();
+							return true;
+						end
+					}),
+					app.CreateMap(287, {	-- Blackwing Lair
+						['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+						['description'] = "These are players attuned to Blackwing Lair.\n\nPeople can whisper you '!bwl' to mark themselves attuned.",
+						['questID'] = 7761,
+						['visible'] = true,
+						["isRaid"] = true,
+						['back'] = 0.5,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							selectedInstance = row.ref;
+							self:Reset();
+							return true;
+						end
+					}),
+					app.CreateMap(162, {	-- Naxxramas
+						['icon'] = "Interface\\Icons\\INV_Trinket_Naxxramas03",
+						['description'] = "These are players attuned to Naxxramas.\n\nPeople can whisper you '!naxx' to mark themselves attuned.",
+						['questID'] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+						['visible'] = true,
+						["isRaid"] = true,
+						['back'] = 0.5,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+						['OnClick'] = function(row, button)
+							selectedInstance = row.ref;
+							self:Reset();
+							return true;
+						end
+					}),
+				},
+			};
+			selectedInstance = instances.options[2];
+			selectedQuest = app.CreateQuest(971);
+			instanceSelector = app.CreateMap(1455, {
+				['visible'] = true,
+				['back'] = 0.5,
+				['OnUpdate'] = app.AlwaysShowUpdate,
+				['OnClick'] = function(row, button)
+					self.data = instances;
+					self:Update(true);
+					return true;
+				end,
+			});
+			attunements = {
 				['text'] = "Attunements",
 				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
 				["description"] = "This list shows you all of the players you have encountered that are Attuned to raids.",
@@ -6456,11 +6578,33 @@ app:GetWindow("Attuned", UIParent, function(self)
 					data.total = 0;
 					data.indent = 0;
 					data.back = 1;
+					wipe(data.g);
+					
+					-- Assign the Selected Instance.
+					instanceSelector.mapID = selectedInstance.mapID;
+					instanceSelector.icon = selectedInstance.icon;
+					instanceSelector.text = selectedInstance.text;
+					instanceSelector.description = selectedInstance.description;
+					instanceSelector.questID = selectedInstance.questID;
+					selectedQuest.questID = selectedInstance.questID;
+					data.questID = selectedInstance.questID;
+					table.insert(data.g, data.queryGroupMembers);
+					table.insert(data.g, data.queryGuildMembers);
+					table.insert(data.g, instanceSelector);
+					table.insert(data.g, selectedQuest);
+					local searchResults = SearchForField("questID", data.questID);
+					if searchResults and #searchResults > 0 then
+						wipe(selectedQuest);
+						for i,questData in ipairs(searchResults) do
+							for key,value in pairs(questData) do
+								selectedQuest[key] = value;
+							end
+						end
+						selectedQuest.OnUpdate = app.AlwaysShowUpdate;
+					end
+					
 					local nameToGUID = {};
-					local groupMembers = data.groupMembersHeader.g;
-					local guildMembers = data.guildMembersHeader.g;
-					wipe(groupMembers);
-					wipe(guildMembers);
+					local groupMembers = {};
 					local count = GetNumGroupMembers();
 					if count > 0 then
 						for raidIndex = 2, 40, 1 do
@@ -6474,6 +6618,15 @@ app:GetWindow("Attuned", UIParent, function(self)
 						end
 					end
 					
+					-- Sort Member List
+					table.sort(groupMembers, data.Sort);
+					for i,unit in ipairs(groupMembers) do
+						table.insert(data.g, unit);
+					end
+					
+					-- Insert Guild Members
+					local guildMembers = data.guildMembersHeader.g;
+					wipe(guildMembers);
 					local count = GetNumGuildMembers();
 					if count > 0 then
 						for guildIndex = 1, count, 1 do
@@ -6482,8 +6635,14 @@ app:GetWindow("Attuned", UIParent, function(self)
 								local unit = app.CreateQuestUnit(guid);
 								local name = unit.name;
 								if name then nameToGUID[name] = guid; end
-								table.insert(guildMembers, unit);
+								if not (UnitInParty(name) or UnitInRaid(name)) then
+									table.insert(guildMembers, unit);
+								end
 							end
+						end
+						if #guildMembers > 0 then
+							table.sort(guildMembers, data.Sort);
+							table.insert(data.g, data.guildMembersHeader);
 						end
 					end
 					
@@ -6506,50 +6665,44 @@ app:GetWindow("Attuned", UIParent, function(self)
 						end
 						SetDataMember("AddonMessageProcessor", unprocessedMessages);
 					end
-					
-					-- Sort Member List
-					table.sort(guildMembers, data.Sort);
-					table.sort(groupMembers, data.Sort);
-					table.insert(groupMembers, app.CreateQuestUnit("player"));
-					
-					local g = {};
-					table.insert(g, data.MoltenCore);
-					wipe(data.MoltenCore.g);
-					table.insert(data.MoltenCore.g, data.groupMembersHeader);
-					table.insert(data.MoltenCore.g, data.guildMembersHeader);
-					data.g = g;
 				end,
 				['g'] = {},
-				['MoltenCore'] = app.CreateMap(232, {	-- Molten Core
-					['icon'] = "Interface\\Icons\\Spell_Fire_Immolation",
-					['description'] = "These are players attuned to Molten Core.\n\nPeople can whisper you '!mc' to mark themselves attuned.",
-					['questID'] = 7848,	-- Attunement to the Core
-					['total'] = 0,
-					['progress'] = 0,
-					['visible'] = true,
-					["isRaid"] = true,
-					['g'] = {},
-					['back'] = 0.5,
-				}),
 				['guildMembersHeader'] = {
 					['text'] = "Guild Members",
-					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+					['icon'] = "Interface\\Icons\\Ability_Warrior_BattleShout",
 					['description'] = "These players are in your guild.",
 					['visible'] = true,
 					['g'] = {},
+				},
+				['queryGroupMembers'] = {
+					['text'] = "Query Group Members",
+					['icon'] = "Interface\\Icons\\INV_Wand_05",
+					['description'] = "Press this button to send an addon message to your Group Members if they are attuned for this instance.",
+					['visible'] = true,
+					['back'] = 0.5,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						SendGroupMessage("?\tq\t" .. selectedQuest.questID);
+						self:Reset();
+						return true;
+					end,
 					['OnUpdate'] = function(data)
-						data.visible = #data.g > 0;
+						data.visible = IsInGroup();
 					end,
 				},
-				['groupMembersHeader'] = {
-					['text'] = "Group Members",
-					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
-					['description'] = "These players are currently in your group.",
+				['queryGuildMembers'] = {
+					['text'] = "Query Guild Members",
+					['icon'] = "Interface\\Icons\\INV_Wand_04",
+					['description'] = "Press this button to send an addon message to your Guild Members if they are attuned for this instance.",
 					['visible'] = true,
+					['back'] = 0.5,
 					['g'] = {},
-					['OnUpdate'] = function(data)
-						data.visible = #data.g > 0;
+					['OnClick'] = function(row, button)
+						SendGuildMessage("?\tq\t" .. selectedQuest.questID);
+						self:Reset();
+						return true;
 					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 				['Sort'] = function(a, b)
 					return b.text > a.text;
@@ -6558,6 +6711,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 			
 			self.Reset = function()
 				self.data = attunements;
+				self:Update(true);
 			end
 			
 			-- Setup Event Handlers and register for events
@@ -6594,9 +6748,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true, 
 				['expanded'] = true,
-				['OnUpdate'] = function(data) 
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
 						['text'] = "Check for missing maps now!",
@@ -6606,9 +6758,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 							Push(self, "Rebuild", self.Rebuild);
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -7586,9 +7736,7 @@ app:GetWindow("Random", UIParent, function(self)
 					self:Reroll();
 					return true;
 				end,
-				['OnUpdate'] = function(data) 
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 			};
 			filterHeader = {
 				['text'] = "Apply a Search Filter",
@@ -7596,9 +7744,7 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = "Please select a search filter option.",
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = function(data) 
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
@@ -7610,9 +7756,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					}, { __index = function(t, key)
 						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
 							return app:GetWindow("Prime").data[key];
@@ -7629,9 +7773,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = "Instance",
@@ -7644,9 +7786,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = "Dungeon",
@@ -7659,9 +7799,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = "Raid",
@@ -7674,9 +7812,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					{
 						['text'] = "Zone",
@@ -7689,9 +7825,7 @@ app:GetWindow("Random", UIParent, function(self)
 							self:Reroll();
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 				},
 			};
@@ -7701,9 +7835,7 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
-				['OnUpdate'] = function(data) 
-					data.visible = true;
-				end,
+				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
 				['options'] = {
@@ -7717,9 +7849,7 @@ app:GetWindow("Random", UIParent, function(self)
 							UpdateWindow(self, true);
 							return true;
 						end,
-						['OnUpdate'] = function(data) 
-							data.visible = true;
-						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
 					},
 					rerollOption,
 				},
@@ -8503,25 +8633,7 @@ end
 
 SLASH_ATTUNED1 = "/attuned";
 SlashCmdList["ATTUNED"] = function(cmd)
-	if IsInRaid() or (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) or IsInGroup(LE_PARTY_CATEGORY_HOME) then
-		SlashCmdList["ATTUNEDRAID"]();
-	else
-		SlashCmdList["ATTUNEDGUILD"]();
-	end
-end
-
-SLASH_ATTUNEDGUILD1 = "/attunedguild";
-SLASH_ATTUNEDGUILD2 = "/attunedg";
-SlashCmdList["ATTUNEDGUILD"] = function()
-	print("MC - ONY - BWL - NAXX - PLAYER");
-	SendGuildMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502) .. "\t7761\t9121");
-end
-
-SLASH_ATTUNEDRAID1 = "/attunedraid";
-SLASH_ATTUNEDRAID2 = "/attunedr";
-SlashCmdList["ATTUNEDRAID"] = function()
-	print("MC - ONY - BWL - NAXX - PLAYER");
-	SendGroupMessage("?\tq\t7848\t" .. (app.FactionID == Enum.FlightPathFaction.Horde and 6602 or 6502) .. "\t7761\t9121");
+	app:GetWindow("Attuned"):Toggle();
 end
 
 SLASH_ATTCU1 = "/attu";
@@ -8847,9 +8959,7 @@ app.events.ADDON_LOADED = function(addonName)
 							QueryAuctionItems("", nil, nil, 0, nil, nil, true, false, nil);
 						end
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 				{
 					["text"] = "Toggle Debug Mode",
@@ -9289,15 +9399,13 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 					print(target .. ": " .. GetProgressColorText(tonumber(args[3]), tonumber(args[4])) .. " " .. args[5]);
 				else
 					if a == "q" then
-						local response = " ";
 						local processor = GetDataMember("AddonMessageProcessor");
 						for i=3,#args,2 do
 							local b = tonumber(args[i]);
 							local c = tonumber(args[i + 1]);
 							if c == 1 then table.insert(processor, { target, "q", b }); end
-							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
-						print(response .. sender);
+						app:GetWindow("Attuned"):DelayedUpdate();
 					elseif a == "sr" then
 						app:UpdateSoftReserve(args[3], tonumber(args[4]), tonumber(args[5]), true);
 					elseif a == "srml" then
