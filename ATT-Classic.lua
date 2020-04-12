@@ -9297,6 +9297,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							if c == 1 then table.insert(processor, { target, "q", b }); end
 							response = response .. b .. ": " .. GetCompletionIcon(c == 1) .. " - ";
 						end
+						print(response .. sender);
 					elseif a == "sr" then
 						app:UpdateSoftReserve(args[3], tonumber(args[4]), tonumber(args[5]), true);
 					elseif a == "srml" then
