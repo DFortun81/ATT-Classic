@@ -629,17 +629,6 @@ _.Zones =
 					["coord"] = { 44.88, 35.6, MOONGLADE },
 					["lvl"] = 54,
 				}),
-				q(8447, {	-- Waking Legends
-					["qg"] = 11832,	-- Keeper Remulos
-					["sourceQuest"] = 8446,	-- Shrouded in Nightmare
-					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(20600),	-- Malfurion's Signet Ring
-					},
-				}),
 				q(1124, {	-- Wasteland
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuests"] = {
