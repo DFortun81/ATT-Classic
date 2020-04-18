@@ -140,7 +140,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darkrune Helm",
 				["recipeID"] = 24913,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Golden Scale Coif",
@@ -310,7 +309,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darkrune Gauntlets",
 				["recipeID"] = 24912,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Gemmed Copper Gauntlets",
@@ -393,7 +391,6 @@ profession(BLACKSMITHING, {
 			{
 				["name"] = "Darkrune Breastplate",
 				["recipeID"] = 24914,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Darksoul Breastplate",

@@ -877,12 +877,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 5172,	-- Briarthorn
 				}),
-				q(8275, {	-- Taking Back Silithus
-					["lvl"] = 54,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 15187,	-- Cenarion Emissary Jademoon
-					["u"] = 3,	-- Added in later phase
-				}),
 				q(8151, {	-- The Hunter's Charm
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>
 					["coord"] = { 70.6, 83.8, IRONFORGE },

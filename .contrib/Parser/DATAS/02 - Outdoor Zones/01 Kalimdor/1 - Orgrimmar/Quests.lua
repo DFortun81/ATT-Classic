@@ -682,12 +682,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 3326,	-- Zevrost
 				}),
-				q(8276, {	-- Taking Back Silithus
-					["lvl"] = 54,
-					["races"] = HORDE_ONLY,
-					["qg"] = 15188,	-- Cenarion Emissary Blackhoof
-					["u"] = 3,	-- Added in later phase
-				}),
 				q(235, {	-- The Ashenvale Hunt
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coord"] = { 46.6, 64.6, ORGRIMMAR },

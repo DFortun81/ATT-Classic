@@ -38,7 +38,6 @@ _.NeverImplemented =
 	i(13500),	-- Recipe: Greater Holy Protection Potion
 	i(6891),	-- Recipe: Herb Baked Egg (this is taught by trainer when you learn cooking; recipe item was never in game)
 	i(22729),	-- Schematic: Steam Tonk Controller
-	q(6842),	-- "<UNUSED>" quest
 	q(7069),	-- "<UNUSED>" quest
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
@@ -94,6 +93,18 @@ _.NeverImplemented =
 	
 	-- Silithus Quests (Unused Quests)
 	q(1155),	-- <NYI> <TXT> bug crystal side quest
+	q(1161),	-- <NYI> <TXT> gossip shade of ambermoon
+	q(8444),	-- <NYI> <TXT> gossip shade of ambermoon
+	q(8445),	-- <NYI> <TXT> gossip shade of ambermoon
+	q(1156),	-- <NYI> <TXT> speak to alchemist pestlezugg
+	q(1162),	-- <NYI> <TXT> speak to hamuul runetotem
+	q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind
+	q(6842),	-- <UNUSED>
+	i(20946),	-- Tactical Task Briefing III [unused]
+	i(21246),	-- Combat Task Briefing I [unused]
+	i(21247),	-- Combat Task Briefing II [unused]
+	q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED
+	q(8340),	-- Twilight Signet Ring <NYI> <TXT>
 	
 	-- Retired PVP Battleground Quests
 	-- Warsong Gulch

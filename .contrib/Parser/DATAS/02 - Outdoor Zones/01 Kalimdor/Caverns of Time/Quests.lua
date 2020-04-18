@@ -111,9 +111,14 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(8742, {	-- The Might of Kalimdor
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
 					["qg"] = 15192,	-- Anachronos
+					["sourceQuests"] = {
+						8729,	-- The Wrath of Neptulon
+						8730,	-- Nefarius's Corruption
+						8741,	-- The Champion Returns
+					},
+					["lvl"] = 60,
+					["u"] = 3,	-- Added in later phase
 					["g"] = {
 						i(21175),	-- The Scepter of the Shifting Sands
 					},

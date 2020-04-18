@@ -247,6 +247,11 @@ _.Instances = {
 				i(21498),	-- Qiraji Sacrificial Dagger
 				i(21499),	-- Vestments of the Shifting Sands
 				i(20884, {	-- Qiraji Magisterial Ring
+					{
+						["itemID"] = 22217,	-- Kurinnaxx's Venom Sac
+						["questID"] = 9023,	-- The Perfect Poison
+						["u"] = 3, 	-- Not available until AQ.
+					},
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["coord"] = { 59.4, 14.0, 327 },

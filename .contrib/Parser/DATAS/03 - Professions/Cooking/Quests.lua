@@ -27,11 +27,11 @@ profession(COOKING, {
 			},
 		}),
 		q(8307, {	-- Desert Recipe
-			["qg"] = 15174,	-- Calandrath
+			["qg"] = 15174,	-- Calandrath <Innkeeper>
 			["requireSkill"] = COOKING,
+			["coord"] = { 51.8, 39, SILITHUS },
 			["maps"] = { SILITHUS },
 			["lvl"] = 40,
-			["u"] = 3,	-- Added in later phase
 		}),
 		q(862, {	-- Dig Rat Stew
 			["qg"] = 3443,	-- Grub
@@ -71,12 +71,15 @@ profession(COOKING, {
 			["lvl"] = 35,
 		}),
 		q(8317, {	-- Kitchen Assistance
-			["provider"] = { "o", 180503 },	-- Sandy Cookbook
+			["qg"] = 15174,	-- Calandrath <Innkeeper>
 			["sourceQuest"] = 8313,	-- Sharing the Knowledge
 			["requireSkill"] = COOKING,
+			["coord"] = { 51.8, 39, SILITHUS },
 			["maps"] = { SILITHUS },
+			["cost"] = {
+				{ "i", 20452, 10 },	-- Smoked Desert Dumplings
+			},
 			["lvl"] = 40,
-			["u"] = 3,	-- Added in later phase
 		}),
 		q(4161, {	-- Recipe of the Kaldorei
 			["qg"] = 6286,	-- Zarrin
@@ -91,9 +94,15 @@ profession(COOKING, {
 			["provider"] = { "o", 180503 },	-- Sandy Cookbook
 			["sourceQuest"] = 8307,	-- Desert Recipe
 			["requireSkill"] = COOKING,
+			["coord"] = { 37.9, 45.3, SILITHUS },
 			["maps"] = { SILITHUS },
+			["cost"] = {
+				{ "i", 20467, 1 },	-- Torn Recipe Page
+			},
 			["lvl"] = 40,
-			["u"] = 3,	-- Added in later phase
+			["groups"] = {
+				recipe(24801),	-- Smoked Desert Dumplings
+			},
 		}),
 		q(555, {	-- Soothing Turtle Bisque (A)
 			["qg"] = 2430,	-- Chef Jessen

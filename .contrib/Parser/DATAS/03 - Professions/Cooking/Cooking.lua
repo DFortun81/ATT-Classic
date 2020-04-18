@@ -259,7 +259,6 @@ profession(COOKING, {
 			{
 				["name"] = "Smoked Desert Dumplings",
 				["recipeID"] = 24801,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Smoked Sagefish",

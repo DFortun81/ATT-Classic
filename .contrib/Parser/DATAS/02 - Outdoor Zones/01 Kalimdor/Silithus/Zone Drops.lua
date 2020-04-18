@@ -6,216 +6,240 @@ _.Zones =
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			n(ZONEDROPS, {
-				un(3, i(20546, {	-- Pattern: Runed Stygian Leggings
+				i(20461, {	-- Brann Bronzebeard's Lost Letter
+					["questID"] = 8308,	-- Brann Bronzebeard's Lost Letter
+					["crs"] = {
+						13301,	-- Hive'Ashi Ambusher
+						11722,	-- Hive'Ashi Defender
+						13136,	-- Hive'Ashi Drone
+						11723,	-- Hive'Ashi Sandstalker
+						11698,	-- Hive'Ashi Stinger
+						11724,	-- Hive'Ashi Swarmer
+						11721,	-- Hive'Ashi Worker
+						11730,	-- Hive'Regal Ambusher
+						11731,	-- Hive'Regal Burrower
+						11734,	-- Hive'Regal Hive Lord
+						11733,	-- Hive'Regal Slavemaker
+						11732,	-- Hive'Regal Spitfire
+						11729,	-- Hive'Zora Hive Sister
+						11728,	-- Hive'Zora Reaver
+						11726,	-- Hive'Zora Tunneler
+						11727,	-- Hive'Zora Wasp
+						11725,	-- Hive'Zora Waywatcher
+					},
+				}),
+				i(20404, {	-- Encrypted Twilight Text
+					["questID"] = 8323,	-- True Believers
+					["crs"] = {
+						15308,	-- Twilight Prophet <Twilight's Hammer>
+						15541,	-- Twilight Marauder Morna <Twilight's Hammer>
+						11880,	-- Twilight Avenger <Twilight's Hammer>
+						15201,	-- Twilight Flamereaver
+						11881,	-- Twilight Geolord <Twilight's Hammer>
+						11804,	-- Twilight Keeper Havunth <Twilight's Hammer>
+						14479,	-- Twilight Lord Everun <Twilight's Hammer>
+						15542,	-- Twilight Marauder <Twilight's Hammer>
+						11883,	-- Twilight Master <Twilight's Hammer>
+						15213,	-- Twilight Overlord <Twilight's Hammer>
+						11882,	-- Twilight Stonecaller <Twilight's Hammer>
+					},
+				}),
+				i(20457, {	-- Hive'Ashi Silithid Brain
+					["questID"] = 8310,	-- Breaking the Code
+					["crs"] = {
+						13301,	-- Hive'Ashi Ambusher
+						11722,	-- Hive'Ashi Defender
+						13136,	-- Hive'Ashi Drone
+						11723,	-- Hive'Ashi Sandstalker
+						11698,	-- Hive'Ashi Stinger
+						11724,	-- Hive'Ashi Swarmer
+						11721,	-- Hive'Ashi Worker
+					},
+				}),
+				i(20459, {	-- Hive'Regal Silithid Brain
+					["questID"] = 8310,	-- Breaking the Code
+					["crs"] = {
+						11730,	-- Hive'Regal Ambusher
+						11731,	-- Hive'Regal Burrower
+						11734,	-- Hive'Regal Hive Lord
+						11733,	-- Hive'Regal Slavemaker
+						11732,	-- Hive'Regal Spitfire
+					},
+				}),
+				i(20458, {	-- Hive'Zora Silithid Brain
+					["questID"] = 8310,	-- Breaking the Code
+					["crs"] = {
+						11729,	-- Hive'Zora Hive Sister
+						11728,	-- Hive'Zora Reaver
+						11726,	-- Hive'Zora Tunneler
+						11727,	-- Hive'Zora Wasp
+						11725,	-- Hive'Zora Waywatcher
+					},
+				}),
+				i(20546, {	-- Pattern: Runed Stygian Leggings
 					["cr"] = 11881,	-- Twilight Geolord
-				})),
-				
-				un(3, i(20402)),	-- Agent of Nozdormu
-				un(3, i(21246)),	-- Combat Task Briefing I
-				un(3, i(21749)),	-- Combat Task Briefing I
-				un(3, i(21750)),	-- Combat Task Briefing II
-				un(3, i(21247)),	-- Combat Task Briefing II
-				un(3, i(20942)),	-- Combat Task Briefing III
-				un(3, i(21248)),	-- Combat Task Briefing IV
-				un(3, i(21253)),	-- Combat Task Briefing IX
-				un(3, i(21249)),	-- Combat Task Briefing V
-				un(3, i(21250)),	-- Combat Task Briefing VI
-				un(3, i(21251)),	-- Combat Task Briefing VII
-				un(3, i(21252)),	-- Combat Task Briefing VIII
-				un(3, i(21255)),	-- Combat Task Briefing X
-				un(3, i(21256)),	-- Combat Task Briefing XI
-				un(3, i(20941)),	-- Combat Task Briefing XII
-				un(3, i(21378)),	-- Logistics Task Briefing I
-				un(3, i(20807)),	-- Logistics Task Briefing I
-				un(3, i(20939)),	-- Logistics Task Briefing II
-				un(3, i(21379)),	-- Logistics Task Briefing II
-				un(3, i(21380)),	-- Logistics Task Briefing III
-				un(3, i(20940)),	-- Logistics Task Briefing III
-				un(3, i(21257)),	-- Logistics Task Briefing IV
-				un(3, i(21258)),	-- Logistics Task Briefing IV
-				un(3, i(21265)),	-- Logistics Task Briefing IX
-				un(3, i(21381)),	-- Logistics Task Briefing IX
-				un(3, i(21259)),	-- Logistics Task Briefing V
-				un(3, i(21382)),	-- Logistics Task Briefing V
-				un(3, i(21260)),	-- Logistics Task Briefing VI
-				un(3, i(21261)),	-- Logistics Task Briefing VI
-				un(3, i(21263)),	-- Logistics Task Briefing VII
-				un(3, i(21264)),	-- Logistics Task Briefing VII
-				un(3, i(21384)),	-- Logistics Task Briefing VIII
-				un(3, i(21262)),	-- Logistics Task Briefing VIII
-				un(3, i(21385)),	-- Logistics Task Briefing X
-				un(3, i(20806)),	-- Logistics Task Briefing X
-				un(3, i(21514)),	-- Logistics Task Briefing XI
-				un(3, i(21245)),	-- Tactical Task Briefing I
-				un(3, i(20945)),	-- Tactical Task Briefing II
-				un(3, i(21751)),	-- Tactical Task Briefing III
-				un(3, i(20946)),	-- Tactical Task Briefing III
-				un(3, i(20947)),	-- Tactical Task Briefing IV
-				un(3, i(20944)),	-- Tactical Task Briefing IX
-				un(3, i(20948)),	-- Tactical Task Briefing V
-				un(3, i(21165)),	-- Tactical Task Briefing VI
-				un(3, i(21166)),	-- Tactical Task Briefing VII
-				un(3, i(21167)),	-- Tactical Task Briefing VIII
-				un(3, i(20943)),	-- Tactical Task Briefing X
+				}),
+				i(20377, {	-- Rock Stalker Fang
+					["questID"] = 8278,	-- Noggle's Last Hope
+					["cr"] = 11739,	-- Rock Stalker
+				}),
+				i(20376, {	-- Sand Skitterer Fang
+					["questID"] = 8277,	-- Deadly Desert Venom
+					["cr"] = 11738,	-- Sand Skitterer
+				}),
+				i(20375, {	-- Stonelash Flayer Stinger
+					["questID"] = 8278,	-- Noggle's Last Hope
+					["cr"] = 11737,	-- Stonelash Flayer
+				}),
+				i(20374, {	-- Stonelash Pincer Stinger
+					["questID"] = 8278,	-- Noggle's Last Hope
+					["cr"] = 11736,	-- Stonelash Pincer
+				}),
+				i(20373, {	-- Stonelash Scorpid Stinger
+					["questID"] = 8277,	-- Deadly Desert Venom
+					["cr"] = 11735,	-- Stonelash Scorpid
+				}),
 				
 				-- <Abyssal Templar> Drops
-				un(3, i(20513, {	-- Abyssal Crest
+				i(20513, {	-- Abyssal Crest
 					["crs"] = {
 						15211,	-- Azure Templar <Abyssal Council>
 						15209,	-- Crimson Templar <Abyssal Council>
 						15307,	-- Earthen Templar <Abyssal Council>
 						15212,	-- Hoary Templar <Abyssal Council>
 					},
-				})),
-				un(3, i(20515, {	-- Abyssal Scepter
+				}),
+				i(20515, {	-- Abyssal Scepter
 					["crs"] = {
 						15205,	-- Baron Kazum <Abyssal High Council>
 						15204,	-- High Marshal Whirlaxis <Abyssal High Council>
 						15305,	-- Lord Skwol <Abyssal High Council>
 						15203,	-- Prince Skaldrenox <Abyssal High Council>
 					},
-				})),
-				un(3, i(20514, {	-- Abyssal Signet
+				}),
+				i(20514, {	-- Abyssal Signet
 					["crs"] = {
 						15206,	-- The Duke of Cynders <Abyssal Council>
 						15207,	-- The Duke of Fathoms <Abyssal Council>
 						15208,	-- The Duke of Shards <Abyssal Council>
 						15220,	-- The Duke of Zephyrs <Abyssal Council>
 					},
-				})),
-				un(3, i(20686, {	-- Abyssal Cloth Amice
+				}),
+				i(20686, {	-- Abyssal Cloth Amice
 					["cr"] = 15205,	-- Baron Kazum <Abyssal High Council>
-				})),
-				un(3, i(20655, {	-- Abyssal Cloth Handwraps
+				}),
+				i(20655, {	-- Abyssal Cloth Handwraps
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
-				})),
-				un(3, i(20674, {	-- Abyssal Cloth Pants
+				}),
+				i(20674, {	-- Abyssal Cloth Pants
 					["cr"] = 15220,	-- The Duke of Zephyrs <Abyssal Council>
-				})),
-				un(3, i(20664, {	-- Abyssal Cloth Sash
+				}),
+				i(20664, {	-- Abyssal Cloth Sash
 					["cr"] = 15206,	-- The Duke of Cynders <Abyssal Council>
-				})),
-				un(3, i(20652, {	-- Abyssal Cloth Slippers
+				}),
+				i(20652, {	-- Abyssal Cloth Slippers
 					["cr"] = 15211,	-- Azure Templar <Abyssal Council>
-				})),
-				un(3, i(20690, {	-- Abyssal Cloth Wristbands
+				}),
+				i(20690, {	-- Abyssal Cloth Wristbands
 					["cr"] = 15204,	-- High Marshal Whirlaxis <Abyssal High Council>
-				})),
-				un(3, i(20667, {	-- Abyssal Leather Belt
+				}),
+				i(20667, {	-- Abyssal Leather Belt
 					["cr"] = 15207,	-- The Duke of Fathoms <Abyssal Council>
-				})),
-				un(3, i(20658, {	-- Abyssal Leather Boots
+				}),
+				i(20658, {	-- Abyssal Leather Boots
 					["cr"] = 15212,	-- Hoary Templar <Abyssal Council>
-				})),
-				un(3, i(20681, {	-- Abyssal Leather Bracers
+				}),
+				i(20681, {	-- Abyssal Leather Bracers
 					["cr"] = 15203,	-- Prince Skaldrenox <Abyssal High Council>
-				})),
-				un(3, i(20661, {	-- Abyssal Leather Gloves
+				}),
+				i(20661, {	-- Abyssal Leather Gloves
 					["cr"] = 15307,	-- Earthen Templar <Abyssal Council>
-				})),
-				un(3, i(20665, {	-- Abyssal Leather Leggings
+				}),
+				i(20665, {	-- Abyssal Leather Leggings
 					["cr"] = 15206,	-- The Duke of Cynders <Abyssal Council>
-				})),
-				un(3, i(20689, {	-- Abyssal Leather Shoulders
+				}),
+				i(20689, {	-- Abyssal Leather Shoulders
 					["cr"] = 15204,	-- High Marshal Whirlaxis <Abyssal High Council>
-				})),
-				un(3, i(20684, {	-- Abyssal Mail Armguards
+				}),
+				i(20684, {	-- Abyssal Mail Armguards
 					["cr"] = 15305,	-- Lord Skwol <Abyssal High Council>
-				})),
-				un(3, i(20670, {	-- Abyssal Mail Clutch
+				}),
+				i(20670, {	-- Abyssal Mail Clutch
 					["cr"] = 15208,	-- The Duke of Shards <Abyssal Council>
-				})),
-				un(3, i(20659, {	-- Abyssal Mail Handguards
+				}),
+				i(20659, {	-- Abyssal Mail Handguards
 					["cr"] = 15212,	-- Hoary Templar <Abyssal Council>
-				})),
-				un(3, i(20668, {	-- Abyssal Mail Legguards
+				}),
+				i(20668, {	-- Abyssal Mail Legguards
 					["cr"] = 15207,	-- The Duke of Fathoms <Abyssal Council>
-				})),
-				un(3, i(20680, {	-- Abyssal Mail Pauldrons
+				}),
+				i(20680, {	-- Abyssal Mail Pauldrons
 					["cr"] = 15203,	-- Prince Skaldrenox <Abyssal High Council>
-				})),
-				un(3, i(20656, {	-- Abyssal Mail Sabatons
+				}),
+				i(20656, {	-- Abyssal Mail Sabatons
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
-				})),
-				un(3, i(20683, {	-- Abyssal Plate Epaulets
+				}),
+				i(20683, {	-- Abyssal Plate Epaulets
 					["cr"] = 15305,	-- Lord Skwol <Abyssal High Council>
-				})),
-				un(3, i(20653, {	-- Abyssal Plate Gauntlets
+				}),
+				i(20653, {	-- Abyssal Plate Gauntlets
 					["cr"] = 15211,	-- Azure Templar <Abyssal Council>
-				})),
-				un(3, i(20673, {	-- Abyssal Plate Girdle
+				}),
+				i(20673, {	-- Abyssal Plate Girdle
 					["cr"] = 15220,	-- The Duke of Zephyrs <Abyssal Council>
-				})),
-				un(3, i(20662, {	-- Abyssal Plate Greaves
+				}),
+				i(20662, {	-- Abyssal Plate Greaves
 					["cr"] = 15307,	-- Earthen Templar <Abyssal Council>
-				})),
-				un(3, i(20671, {	-- Abyssal Plate Legplates
+				}),
+				i(20671, {	-- Abyssal Plate Legplates
 					["cr"] = 15208,	-- The Duke of Shards <Abyssal Council>
-				})),
-				un(3, i(20687, {	-- Abyssal Plate Vambraces
+				}),
+				i(20687, {	-- Abyssal Plate Vambraces
 					["cr"] = 15205,	-- Baron Kazum <Abyssal High Council>
-				})),
+				}),
 				
-				-- Reward from Signet of the Dukes (8348) and Abyssal Signets (8363)
-				un(3, i(20603, { 	-- Bag of Spoils
-					un(3, i(20694)), 	-- Glowing Black Orb
-					un(3, i(20693)), 	-- Weighted Cloak
-					un(3, i(20692)),	-- Multicolored Band
-				})),
-				un(3, i(20601, {	-- Sack of Spoils
-					un(3, i(20695)),	-- Abyssal War Beads
-					un(3, i(20696)),	-- Crystal Spiked Maul
-					un(3, i(20697)),	-- Crystalline Threaded Cape
-					un(3, i(20698)),	-- Elemental Attuned Blade
-				})),
-				un(3, i(20602, { 	-- Chest of Spoils
-					un(3, i(20721)),	-- Band of the Cultist
-					un(3, i(20722)), 	-- Crystal Slugthrower
-					un(3, i(20720)), 	-- Dark Whisper Blade
-				})),
-				
-				un(3, i(20654, {	-- Amethyst War Staff
+				i(20654, {	-- Amethyst War Staff
 					["cr"] = 15211,	-- Azure Templar <Abyssal Council>
-				})),
-				un(3, i(20657, {	-- Crystal Tipped Stiletto
+				}),
+				i(20657, {	-- Crystal Tipped Stiletto
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
-				})),
-				un(3, i(20669, {	-- Darkstone Claymore
+				}),
+				i(20669, {	-- Darkstone Claymore
 					["cr"] = 15207,	-- The Duke of Fathoms <Abyssal Council>
-				})),
-				un(3, i(20663, {	-- Deep Strike Bow
+				}),
+				i(20663, {	-- Deep Strike Bow
 					["cr"] = 15307,	-- Earthen Templar <Abyssal Council>
-				})),
-				un(3, i(20688, {	-- Earthen Guard
+				}),
+				i(20688, {	-- Earthen Guard
 					["cr"] = 15205,	-- Baron Kazum <Abyssal High Council>
-				})),
-				un(3, i(20682, {	-- Elemental Focus Band
+				}),
+				i(20682, {	-- Elemental Focus Band
 					["cr"] = 15203,	-- Prince Skaldrenox <Abyssal High Council>
-				})),
-				un(3, i(20666, {	-- Hardened Steel Warhammer
+				}),
+				i(20666, {	-- Hardened Steel Warhammer
 					["cr"] = 15206,	-- The Duke of Cynders <Abyssal Council>
-				})),
-				un(3, i(20675, {	-- Soulrender
+				}),
+				i(20675, {	-- Soulrender
 					["cr"] = 15220,	-- The Duke of Zephyrs <Abyssal Council>
-				})),
-				un(3, i(20672, {	-- Sparkling Crystal Wand
+				}),
+				i(20672, {	-- Sparkling Crystal Wand
 					["cr"] = 15208,	-- The Duke of Shards <Abyssal Council>
-				})),
-				un(3, i(20660, {	-- Stonecutting Glaive
+				}),
+				i(20660, {	-- Stonecutting Glaive
 					["cr"] = 15212,	-- Hoary Templar <Abyssal Council>
-				})),
+				}),
 				
 				-- Twilight Cultist Drops
-				un(3, i(20408)),	-- Twilight Cultist Cowl
-				un(3, i(20406)),	-- Twilight Cultist Mantle
-				un(3, i(20407)),	-- Twilight Cultist Robe
+				i(20408),	-- Twilight Cultist Cowl
+				i(20406),	-- Twilight Cultist Mantle
+				i(20407),	-- Twilight Cultist Robe
 				
-				un(3, i(20685, {	-- Wavefront Necklace
+				i(20685, {	-- Wavefront Necklace
 					["cr"] = 15305,	-- Lord Skwol <Abyssal High Council>
-				})),
-				un(3, i(20691, {	-- Windshear Cape
+				}),
+				i(20691, {	-- Windshear Cape
 					["cr"] = 15204,	-- High Marshal Whirlaxis <Abyssal High Council>
-				})),
+				}),
 			}),
 		}),
 	}),

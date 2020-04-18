@@ -137,6 +137,7 @@ TROLL = 8;
 
 -- Common Custom NPCs used for headers
 COMMON_BOSS_DROPS = -1;
+REWARDS = -18;
 QUESTS = -17;
 RARES = -16;
 VENDORS = -2;
