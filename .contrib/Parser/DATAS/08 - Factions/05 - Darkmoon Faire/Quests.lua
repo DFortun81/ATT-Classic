@@ -7,16 +7,25 @@ _.Factions =
 		n(QUESTS, {
 			q(7885,  {	-- Armor Kits
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
-				["lvl"] = 40,
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 15564, 8 },	-- Rugged Armor Kit
 				},
+				["lvl"] = 40,
 				["g"] = {
 					i(19182),	-- Darkmoon Faire Prize Ticket
 				},
 			}),
 			q(7892,  {	-- Big Black Mace
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 7945, 1 },	-- Big Black Mace
@@ -28,6 +37,10 @@ _.Factions =
 			}),
 			q(7881,  {	-- Carnival Boots
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 2309, 3 },	-- Embossed Leather Boots
@@ -38,6 +51,10 @@ _.Factions =
 			}),
 			q(7882,  {	-- Carnival Jerkins
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 2314, 3 },	-- Toughened Leather Armor
@@ -49,6 +66,10 @@ _.Factions =
 			}),
 			q(7889,  {	-- Coarse Weightstone
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3240, 10 },	-- Coarse Weightstone
@@ -59,6 +80,10 @@ _.Factions =
 			}),
 			q(7894,  {	-- Copper Modulator
 				["qg"] = 14841,  -- Rinling
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4363, 5 },	-- Copper Modulator
@@ -69,6 +94,10 @@ _.Factions =
 			}),
 			q(7884,  {	-- Crocolisk Boy and the Bearded Murloc
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 8185, 1 },	-- Turtle Scale Leggings
@@ -80,6 +109,7 @@ _.Factions =
 			}),
 			q(7907,  {	-- Darkmoon Beast Deck
 				["provider"] = { "i", 19228 },  -- Beasts Deck
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19228, 1 },	-- Beasts Deck
 				},
@@ -89,6 +119,7 @@ _.Factions =
 			}),
 			q(7929,  {	-- Darkmoon Elementals Deck
 				["provider"] = { "i", 19267 },  -- Elementals Deck
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19267, 1 },	-- Elementals Deck
 				},
@@ -98,6 +129,7 @@ _.Factions =
 			}),
 			q(7927,  {	-- Darkmoon Portals Deck
 				["provider"] = { "i", 19277 },  -- Portals Deck
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19277, 1 },	-- Portals Deck
 				},
@@ -107,6 +139,7 @@ _.Factions =
 			}),
 			q(7928,  {	-- Darkmoon Warlords Deck
 				["provider"] = { "i", 19257 },  -- Warlords Deck
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19257, 1 },	-- Warlords Deck
 				},
@@ -116,6 +149,11 @@ _.Factions =
 			}),
 			q(7903,  {	-- Evil Bat Eyes
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11404, 10 },	-- Evil Bat Eye
 				},
@@ -126,6 +164,11 @@ _.Factions =
 			}),
 			q(8222,  {	-- Glowing Scorpid Blood
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19933, 10 },	-- Glowing Scorpid Blood
 				},
@@ -136,6 +179,10 @@ _.Factions =
 			}),
 			q(7896,  {	-- Green Fireworks
 				["qg"] = 14841,  -- Rinling
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 9313, 36 },	-- Green Firework
@@ -147,6 +194,10 @@ _.Factions =
 			}),
 			q(7891,  {	-- Green Iron Bracers
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3835, 3 },	-- Green Iron Bracers
@@ -158,6 +209,10 @@ _.Factions =
 			}),
 			q(7890,  {	-- Heavy Grinding Stone
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 3486, 7 },	-- Heavy Grinding Stone
@@ -169,6 +224,10 @@ _.Factions =
 			}),
 			q(7897,  {	-- Mechanical Repair Kits
 				["qg"] = 14841,  -- Rinling
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11590, 6 },	-- Mechanical Repair Kit
@@ -180,6 +239,10 @@ _.Factions =
 			}),
 			q(7941,  {	-- More Armor Kits
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
 				["sourceQuest"] = 7885,	-- Armor Kits
 				["repeatable"] = true,
 				["cost"] = {
@@ -192,6 +255,10 @@ _.Factions =
 			}),
 			q(7943,  {	-- More Bat Eyes
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11404, 10 },	-- Evil Bat Eye
@@ -204,6 +271,10 @@ _.Factions =
 			q(7939,  {	-- More Dense Grinding Stones
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 				["sourceQuest"] = 7893,	-- Rituals of Strength
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 12644, 8 },	-- Dense Grinding Stone
@@ -216,6 +287,10 @@ _.Factions =
 			q(8223,  {	-- More Glowing Scorpid Blood
 				["qg"] = 14829,  -- Yebb Neblegear
 				["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 19933, 10 },	-- Glowing Scorpid Blood
@@ -228,6 +303,10 @@ _.Factions =
 			q(7942,  {	-- More Thorium Widgets
 				["qg"] = 14841,  -- Rinling
 				["sourceQuest"] = 7898,	-- Thorium Widget
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 15994, 6 },	-- Thorium Widget
@@ -239,6 +318,11 @@ _.Factions =
 			}),
 			q(7893,  {	-- Rituals of Strength
 				["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
+				["coords"] = {
+					{ 40.5, 69.9, ELWYNN_FOREST },
+					{ 37.8, 39.8, MULGORE },
+				},
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 12644, 8 },	-- Dense Grinding Stone
 				},
@@ -249,6 +333,10 @@ _.Factions =
 			}),
 			q(7899,  {	-- Small Furry Paws
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5134, 5 },	-- Small Furry Paw
@@ -259,6 +347,10 @@ _.Factions =
 			}),
 			q(7901,  {	-- Soft Bushy Tails
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4582, 5 },	-- Soft Bushy Tail
@@ -309,6 +401,10 @@ _.Factions =
 			}),
 			q(7883,  {	-- The World's Largest Gnome!
 				["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
+				["coords"] = {
+					{ 43.5, 71.1, ELWYNN_FOREST },
+					{ 36.2, 35.2, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5739, 3 },	-- Barbaric Harness
@@ -320,6 +416,11 @@ _.Factions =
 			}),
 			q(7898,  {	-- Thorium Widgets
 				["qg"] = 14841,  -- Rinling
+				["coords"] = {
+					{ 41.7, 70.7, ELWYNN_FOREST },
+					{ 37.1, 37.2, MULGORE },
+				},
+				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 15994, 6 },	-- Thorium Widget
 				},
@@ -330,6 +431,10 @@ _.Factions =
 			}),
 			q(7900,  {	-- Torn Bear Pelts
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 11407, 5 },	-- Torn Bear Pelt
@@ -341,6 +446,10 @@ _.Factions =
 			}),
 			q(7902,  {	-- Vibrant Plumes
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 5117, 5 },	-- Vibrant Plume
@@ -352,6 +461,10 @@ _.Factions =
 			}),
 			q(7895,  {	-- Whirring Bronze Gizmo
 				["qg"] = 14829,  -- Yebb Neblegear
+				["coords"] = {
+					{ 40.2, 69.7, ELWYNN_FOREST },
+					{ 37.5, 39.6, MULGORE },
+				},
 				["repeatable"] = true,
 				["cost"] = {
 					{ "i", 4375, 7 },	-- Whirring Bronze Gizmo
@@ -362,40 +475,32 @@ _.Factions =
 				},
 			}),
 			q(7937,  {	-- Your Fortune Awaits You...
-				["qg"] = 14822,	-- Sayge
-				["cost"] = {
-					{ "i", 19423, 1 },	-- Sayge's Fortune #23
-				},
+				["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
+				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7938,  {	-- Your Fortune Awaits You...
-				["qg"] = 14822,	-- Sayge
-				["cost"] = {
-					{ "i", 19424, 1 },	-- Sayge's Fortune #24
-				},
+				["provider"] = { "i", 19424 },	-- Sayge's Fortune #24
+				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7944,  {	-- Your Fortune Awaits You...
-				["qg"] = 14822,	-- Sayge
-				["cost"] = {
-					{ "i", 19443, 1 },	-- Sayge's Fortune #25
-				},
+				["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
+				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
 				},
 			}),
 			q(7945,  {	-- Your Fortune Awaits You...
-				["qg"] = 14822,	-- Sayge
-				["cost"] = {
-					{ "i", 19452, 1 },	-- Sayge's Fortune #27
-				},
+				["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
+				["cr"] = 14822,	-- Sayge
 				["lvl"] = 10,
 				["g"] = {
 					i(19425),	-- Mysterious Lockbox
