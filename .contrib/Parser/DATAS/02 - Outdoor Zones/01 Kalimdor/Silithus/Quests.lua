@@ -14,6 +14,7 @@ _.Zones =
 						{ "i", 20515, 1 },	-- Abyssal Scepter
 					},
 					["lvl"] = 58,
+					["u"] = 3,	-- Not available yet.
 					["groups"] = {
 						i(22725),	-- Band of Cenarius
 					},
