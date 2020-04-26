@@ -7,6 +7,7 @@ _.Zones =
 		m(DUSTWALLOW_MARSH, {
 			n(VENDORS, {
 				n(13476, {	-- Balai Lok'Wein <Potions, Scrolls and Reagents>
+					["coord"] = { 36.4, 30.4, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16084),	-- Expert First Aid - Under Wraps
@@ -15,15 +16,15 @@ _.Zones =
 					},
 				}),
 				n(6567, {	-- Ghok'kah <Tailoring Supplies>
+					["coord"] = { 35.2, 30.8, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4355),	-- Pattern: Icy Cloak
 					},
 				}),
 				n(4885, {	-- Gregor MacVince <Horse Breeder>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH, },
-					["maps"] = { DUSTWALLOW_MARSH, },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(2414),	-- Pinto Bridle
 						i(5655),	-- Chestnut Mare Bridle
@@ -34,6 +35,7 @@ _.Zones =
 					},
 				}),
 				n(4897, {	-- Helenia Olden <Trade Supplies>
+					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5789),	-- Pattern: Murloc Scale Bracers
@@ -41,16 +43,16 @@ _.Zones =
 						i(12228),	-- Recipe: Roast Raptor
 						i(12239),	-- Recipe: Dragonbreath Chili
 					},
-					["coord"] = { 66.4, 51.4, DUSTWALLOW_MARSH },
 				}),
 				n(4892, {	-- Jensen Farran <Bowyer>
+					["coord"] = { 67.9, 49.9, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
-					["coord"] = { 67.9, 49.9, DUSTWALLOW_MARSH },
 				}),
 				n(4888, {	-- Marie Holdston <Weaponsmith>
+					["coord"] = { 64.6, 50.0, DUSTWALLOW_MARSH, },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12248),	-- Daring Dirk
@@ -66,6 +68,7 @@ _.Zones =
 					},
 				}),
 				n(4879, {	-- Ogg'marr <Butcher>
+					["coord"] = { 36.6, 31.0, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12228),	-- Recipe: Roast Raptor
@@ -75,6 +78,7 @@ _.Zones =
 					},
 				}),
 				n(4890, {	-- Piter Verance <Weaponsmith & Armorer>
+					["coord"] = { 67.4, 47.8, DUSTWALLOW_MARSH, },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817),	-- Blessed Claymore
@@ -90,12 +94,14 @@ _.Zones =
 					},
 				}),
 				n(9552, {	-- Zanara <Bowyer>
+					["coord"] = { 35.6, 30.2, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11305),	-- Dense Shortbow
 					},
 				}),
 				n(4884, {	-- Zulrg <Weaponsmith>
+					["coord"] = { 36.2, 31.6, DUSTWALLOW_MARSH, },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12250),	-- Midnight Axe

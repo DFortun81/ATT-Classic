@@ -214,6 +214,15 @@ _.PvP =
 									i(20123),	-- Highlander's Mail Greaves
 
 									-- Mail
+									i(20055),	-- Highlander's Chain Pauldrons
+									i(20088),	-- Highlander's Chain Girdle
+									i(20089),	-- Highlander's Chain Girdle
+									i(20043),	-- Highlander's Chain Girdle
+									i(20090),	-- Highlander's Chain Girdle
+									i(20091),	-- Highlander's Chain Greaves
+									i(20050),	-- Highlander's Chain Greaves
+									i(20092),	-- Highlander's Chain Greaves
+									i(20093),	-- Highlander's Chain Greaves
 									i(20108),	-- Highlander's Lamellar Girdle
 									i(20111),	-- Highlander's Lamellar Greaves
 									i(20044),	-- Highlander's Mail Girdle

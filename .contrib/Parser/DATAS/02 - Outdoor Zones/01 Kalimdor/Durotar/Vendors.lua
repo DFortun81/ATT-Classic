@@ -7,12 +7,14 @@ _.Zones =
 		m(DUROTAR, {
 			n(VENDORS, {
 				n(3881, {	-- Grimtak <Butcher>
+					["coord"] = { 51.2, 42.6, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5483),	-- Recipe: Scorpid Surprise
 					},
 				}),
 				n(5942, {	-- Zansoa <Fishing Supplies>
+					["coord"] = { 56.0, 73.4, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6326),	-- Recipe: Slitherskin Mackerel
@@ -20,9 +22,8 @@ _.Zones =
 					},
 				}),
 				n(7952, {	-- Zjolnir <Raptor Handler>
-					["races"] = HORDE_ONLY,
 					["coord"] = { 55.2, 75.6, DUROTAR },
-					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(8588),	-- Whistle of the Emerald Raptor
 						i(8591),	-- Whistle of the Turquoise Raptor

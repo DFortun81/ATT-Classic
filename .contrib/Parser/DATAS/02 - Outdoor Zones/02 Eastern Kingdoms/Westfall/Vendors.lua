@@ -7,6 +7,10 @@ _.Zones =
 		m(WESTFALL, {
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["coords"] = {
+						{ 57.4, 52.2, WESTFALL },
+						{ 57.8, 65.0, WESTFALL },
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul

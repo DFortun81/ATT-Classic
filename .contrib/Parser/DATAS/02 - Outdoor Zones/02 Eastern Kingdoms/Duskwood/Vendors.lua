@@ -7,6 +7,11 @@ _.Zones =
 		m(DUSKWOOD, {
 			n(VENDORS, {
 				n(844, {	-- Antonio Perelli <Traveling Salesman>
+					["coords"] = {
+						{ 19.6, 60.6, DUSKWOOD },
+						{ 50.8, 66.6, DUSKWOOD },
+						{ 75.0, 46.4, DUSKWOOD },
+					},
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4817),	-- Blessed Claymore
@@ -38,7 +43,6 @@ _.Zones =
 				}),
 				n(2481, {	-- Bliztik <Alchemy Supplies>
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
-					["description"] = "Enter the building at 18.0, 55.2 and go upstairs to find Bliztik.",
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6068),	-- Recipe: Shadow Oil

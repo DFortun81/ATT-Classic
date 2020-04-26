@@ -7,15 +7,15 @@ _.Zones =
 		m(DUN_MOROGH, {
 			n(VENDORS, {
 				n(8508, {	-- Gretta Ganter <Fisherman Supplies>
+					["coord"] = { 31.6, 44.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 					},
 				}),	
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 49.0, 48.0, DUN_MOROGH },
-					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(8563),	-- Red Mechanostrider
 						i(8595),	-- Blue Mechanostrider
@@ -27,9 +27,8 @@ _.Zones =
 					},
 				}),	
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 63.4, 50.6, DUN_MOROGH },
-					["maps"] = { DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5864),	-- Gray Ram
 						i(5872),	-- Brown Ram

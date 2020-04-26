@@ -37,7 +37,6 @@ _.Zones =
 					},
 				}),
 				n(1454, {	-- Jennabink Powerseam <Tailoring Supplies & Specialty Goods>
-					["description"] = "Enter the house at 8.3, 56.1 and go upstairs to access Jennabink Powerseam.",
 					["coord"] = { 8.1, 55.8, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

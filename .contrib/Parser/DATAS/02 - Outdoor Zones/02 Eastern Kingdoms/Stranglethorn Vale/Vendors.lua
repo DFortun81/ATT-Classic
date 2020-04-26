@@ -28,6 +28,7 @@ _.Zones =
 					},
 				}),
 				n(2838, {	-- Crazk Sparks <Fireworks Merchant>
+					["coord"] = { 28.2, 76.6, STRANGLETHORN_VALE },
 					["groups"] = {
 						i(18648),	-- Schematic: Green Firework
 					},
@@ -39,12 +40,14 @@ _.Zones =
 					},
 				}),
 				n(2848, {	-- Glyx Brewright <Alchemy Supplies>
+					["coord"] = { 28.0, 78.0, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(6056),	-- Recipe: Frost Protection Potion
 						i(6057),	-- Recipe: Nature Protection Potion
 					},
 				}),
 				n(2687, {	-- Gnaz Blunderflame <Engineering Supplies>
+					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(13311),	-- Schematic: Mechanical Dragonling
 					},
@@ -56,11 +59,11 @@ _.Zones =
 					},
 				}),
 				n(2483, {	-- Jaquilina Dramet <Superior Axecrafter>
+					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(12164),	-- Plans: Massive Iron Axe
 						i(12250),	-- Midnight Axe
 					},
-					["coord"] = { 35.8, 10.7, STRANGLETHORN_VALE },
 				}),
 				n(2843, {	-- Jutak <Blade Trader>
 					["coord"] = { 27.5, 77.5, STRANGLETHORN_VALE },
@@ -90,6 +93,7 @@ _.Zones =
 					},
 				}),
 				n(8679, {	-- Knaz Blunderflame <Engineering Supplies>
+					["coord"] = { 51.0, 35.2, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(10602),	-- Schematic: Deadly Scope
 					},
@@ -110,6 +114,7 @@ _.Zones =
 					},
 				}),
 				n(1148, {	-- Nerrist <Trade Goods>
+					["coord"] = { 32.6, 29.2, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(3682),	-- Recipe: Curiously Tasty Omelet						
@@ -124,18 +129,21 @@ _.Zones =
 					},
 				}),
 				n(2699, {	-- Rikqiz <Leatherworking Supplies>
+					["coord"] = { 28.4, 76.0, STRANGLETHORN_VALE },
 					["groups"] = {						
 						i(14635),	-- Pattern: Gem-studded Leather Belt
 						i(18239),	-- Pattern: Shadowskin Gloves
 					},
 				}),
 				n(1149, {	-- Uthok <General Supplies>
+					["coord"] = { 31.6, 28.0, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(16111),	-- Recipe: Spiced Chili Crab
 					},
 				}),
 				n(1146, {	-- Vharr <Superior Weaponsmith>
+					["coord"] = { 32.2, 28.0, STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(12164),	-- Plans: Massive Iron Axe						

@@ -7,12 +7,14 @@ _.Zones =
 		m(IRONFORGE, {
 			n(VENDORS, {
 				n(5128, {	-- Bombus Finespindle <Leatherworking Supplies>
+					["coord"] = { 40.0, 33.4, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(18731),	-- Pattern: Heavy Leather Ball
 					},
 				}),
 				n(5160, {	-- Emrul Riknussun <Cooking Supplier>
+					["coord"] = { 60.6, 38.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -20,6 +22,7 @@ _.Zones =
 					},
 				}),
 				n(5175, {	-- Gearcutter Cogspinner <Engineering Supplies>
+					["coord"] = { 67.9, 42.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7560),	-- Schematic: Gnomish Universal Remote
@@ -27,9 +30,9 @@ _.Zones =
 						i(16042),	-- Schematic: Thorium Widget
 						i(18649),	-- Schematic: Blue Firework						
 					},
-					["coord"] = { 67.9, 42.6, IRONFORGE },
 				}),
 				n(8681, {	-- Outfitter Eric <Speciality Tailoring Supplies>
+					["coord"] = { 43.2, 29.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(10314),	-- Pattern: Lavender Mageweave Shirt
@@ -40,6 +43,7 @@ _.Zones =
 					},
 				}),
 				n(5122, {	-- Skolmin Goldfury <Bow Merchant>
+					["coord"] = { 71.6, 66.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(11303),	-- Fine Shortbow
@@ -48,6 +52,7 @@ _.Zones =
 					},
 				}),
 				n(5178, {	-- Soolie Berryfizz <Alchemy Supplies>
+					["coord"] = { 66.6, 54.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(5642),	-- Recipe: Free Action Potion
@@ -55,6 +60,7 @@ _.Zones =
 					},
 				}),
 				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
+					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(6326),	-- Recipe: Slitherskin Mackerel
@@ -64,6 +70,7 @@ _.Zones =
 					},
 				}),
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
+					["coord"] = { 60.8, 44.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana

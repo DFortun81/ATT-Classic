@@ -7,18 +7,21 @@ _.Zones =
 		m(STONETALON_MOUNTAINS, {
 			n(VENDORS, {
 				n(9549, {	-- Borand <Bowyer>
+					["coord"] = { 45.2, 59.2, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(4083, {	-- Jeeda <Apprentice Witch Doctor>
+					["coord"] = { 47.6, 61.6, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6055),	-- Recipe: Fire Protection Potion
 					},
 				}),
 				n(12043, {	-- Kulwia <Trade Supplies>
+					["coord"] = { 45.4, 59.4, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11039),	-- Formula: Enchant Cloak - Minor Agility
@@ -26,6 +29,7 @@ _.Zones =
 					},
 				}),
 				n(4085, {	-- Nizzik <Venture Armor Salesman>
+					["coord"] = { 62.6, 40.2, STONETALON_MOUNTAINS },
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt
@@ -38,6 +42,7 @@ _.Zones =
 					},
 				}),
 				n(4086, {	-- Veenix <Venture Co. Merchant>
+					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
 					["groups"] = {										
 						i(4817),	-- Orb of Power
 						i(4818),	-- Executioner's Sword

@@ -7,12 +7,14 @@ _.Zones =
 		m(THUNDER_BLUFF, {
 			n(VENDORS, {
 				n(3019, {	-- Delgo Ragetotem <Axe Merchant>
+					["coord"] = { 53.8, 57.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12249),	-- Merciless Axe
 					},
 				}),
 				n(3015, {	-- Kuna Thunderhorn <Bowyer & Fletching Goods>
+					["coord"] = { 46.8, 45.8, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11303),	-- Fine Shortbow
@@ -21,6 +23,7 @@ _.Zones =
 					},
 				}),
 				n(3005, {	-- Mahu <Leatherworking & Tailoring Supplies>
+					["coord"] = { 43.8, 44.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10325),	-- Pattern: White Wedding Dress
@@ -30,6 +33,7 @@ _.Zones =
 					},
 				}),
 				n(3027, {	-- Naal Mistrunner <Cooking Supplier>
+					["coord"] = { 51.6, 53.4, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -39,6 +43,7 @@ _.Zones =
 					},
 				}),
 				n(3012, {	-- Nata Dawnstrider <Enchanting Supplies>
+					["coord"] = { 45.2, 40.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
@@ -48,6 +53,7 @@ _.Zones =
 					},
 				}),
 				n(3029, {	-- Sewa Mistrunner <Fishing Supplier>
+					["coord"] = { 55.8, 47.6, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish

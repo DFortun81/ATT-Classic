@@ -7,6 +7,7 @@ _.Zones =
 		m(THOUSAND_NEEDLES, {
 			n(VENDORS, {
 				n(4877, {	-- Jandia <Trade Supplies>
+					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5973),	-- Pattern: Barbaric Leggings				
@@ -26,6 +27,7 @@ _.Zones =
 					},
 				}),
 				n(9551, {	-- Starn <Gunsmith & Bowyer>
+					["coord"] = { 45.0, 50.6, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {										
 						i(11304),	-- Fine Longbow

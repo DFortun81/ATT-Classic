@@ -7,6 +7,7 @@ _.Zones =
 		m(MULGORE, {
 			n(VENDORS, {
 				n(5940, {	-- Harn Longcast <Fishing Supplies>
+					["coord"] = { 47.6, 55.0, MULGORE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
@@ -14,15 +15,15 @@ _.Zones =
 					},
 				}),
 				n(3081, {	-- Wunna Darkmane <Trade Goods>
+					["coord"] = { 46.2, 58.2, MULGORE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5484),	-- Recipe: Roasted Kodo Mea
 					},
 				}),
 				n(3685, {	-- Harb Clawhoof <Kodo Mounts>
-					["races"] = HORDE_ONLY,
 					["coord"] = { 47.6, 58.4, MULGORE },
-					["maps"] = { MULGORE },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15277),	-- Gray Kodo
 						i(15290),	-- Brown Kodo

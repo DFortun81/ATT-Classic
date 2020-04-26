@@ -7,6 +7,7 @@ _.Zones =
 		m(HILLSBRAD_FOOTHILLS, {
 			n(VENDORS, {
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>
+					["coord"] = { 62.2, 19.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(5788),	-- Pattern: Thick Murloc Armor
@@ -23,12 +24,14 @@ _.Zones =
 					},
 				}),
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
+					["coord"] = { 92.0, 38.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(7613),	-- Pattern: Green Leather Armor
 					},
 				}),
 				n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
+					["coord"] = { 80.0, 39.0, HILLSBRAD_FOOTHILLS },
 					["groups"] = {	
 						i(4794),	-- Wolf Bracers
 						i(4795),	-- Bear Bracers						
@@ -112,6 +115,11 @@ _.Zones =
 					},
 				}),
 				n(3537, {	-- Zixil <Merchant Supreme>
+					["coords"] = {
+						{ 60.8, 19.8, HILLSBRAD_FOOTHILLS },
+						{ 55.6, 34.6, HILLSBRAD_FOOTHILLS },
+						{ 50.4, 50.8, HILLSBRAD_FOOTHILLS },
+					},
 					["groups"] = {						
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt

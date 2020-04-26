@@ -7,6 +7,7 @@ _.Zones =
 		m(SILVERPINE_FOREST, {
 			n(VENDORS, {
 				n(3552, {	-- Alexandre Lefevre <Leather Armor Merchant>
+					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
@@ -14,6 +15,7 @@ _.Zones =
 					},
 				}),
 				n(3554, {	-- Andrea Boynton <Clothier>
+					["coord"] = { 44.6, 39.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4781),	-- Whispering Vest
@@ -22,6 +24,7 @@ _.Zones =
 					},
 				}),
 				n(3556, {	-- Andrew Hilbert <Trade Goods>
+					["coord"] = { 43.2, 40.6, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5787),	-- Pattern: Murloc Scale Breastplate
@@ -32,6 +35,7 @@ _.Zones =
 					},
 				}),
 				n(5748, {	-- Killian Sanatha <Fisherman>
+					["coord"] = { 33.0, 17.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6328),	-- Recipe: Longjaw Mud Snapper
@@ -39,6 +43,7 @@ _.Zones =
 					},
 				}),
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
+					["coord"] = { 54.0, 82.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
@@ -47,6 +52,7 @@ _.Zones =
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
+					["coord"] = { 43.0, 50.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
@@ -55,12 +61,14 @@ _.Zones =
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
+					["coord"] = { 45.0, 39.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3534, {	-- Wallace the Blind <Weaponsmith>
+					["coord"] = { 46.4, 86.4, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul

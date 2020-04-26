@@ -9,6 +9,9 @@ _.Factions =
 				["coords"] = {
 					{ 36.4, 36.0, MULGORE },
 					{ 37.6, 39.6, MULGORE },
+					{ 42.8, 66.6, ELWYNN_FOREST },
+					{ 41.4, 69.8, ELWYNN_FOREST },
+					{ 43.6, 71.0, ELWYNN_FOREST },
 				},
 				["groups"] = {
 					i(18662),	-- Heavy Leather Ball
@@ -19,6 +22,7 @@ _.Factions =
 			n(14828, {	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
 				["coords"] = {
 					{ 37.3, 37.7, MULGORE },
+					{ 41.6, 68.8, ELWYNN_FOREST },
 				},
 				["groups"] = {
 					i(19295),	-- Darkmoon Flower
@@ -35,6 +39,7 @@ _.Factions =
 			n(14846, {	-- Lhara <Darkmoon Faire Exotic Goods>
 				["coords"] = {
 					{ 36.4, 38.0, MULGORE },
+					{ 41.2, 69.8, ELWYNN_FOREST },
 				},
 				["groups"] = {
 					i(12251),	-- Big Stick

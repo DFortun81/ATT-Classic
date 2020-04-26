@@ -7,6 +7,7 @@ _.Zones =
 		m(DESOLACE, {
 			n(VENDORS, {
 				n(12045, {	-- Hae'Wilani <Axecrafter>
+					["coord"] = { 25.8, 71.0, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12249),	-- Merciless Axe
@@ -14,14 +15,15 @@ _.Zones =
 					},
 				}),
 				n(8150, {	-- Janet Hommers <Food & Drink>
+					["coord"] = { 66.2, 6.6, DESOLACE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12240),	-- Recipe: Heavy Kodo Stew
 						i(12233),	-- Recipe: Mystery Stew
 					},
-					["coord"] = { 66.2, 6.6, DESOLACE },
 				}),
 				n(9636, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
+					["coord"] = { 37.0, 41.2, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7114),	-- Pattern: Azure Silk Gloves
@@ -30,12 +32,14 @@ _.Zones =
 					},
 				}),
 				n(8878, {	-- Muuran <Superior Macecrafter>
+					["coord"] = { 55.6, 56.6, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul
 					},
 				}),
 				n(12245, {	-- Vendor-Tron 1000
+					["coord"] = { 60.2, 38.2, DESOLACE },
 					["groups"] = {
 						i(3735),  -- Recipe: Hot Lion Chops
 						i(5489),  -- Recipe: Lean Venison
@@ -65,6 +69,7 @@ _.Zones =
 					},
 				}),
 				n(12033, {	-- Wulan <Cooking Supplies>
+					["coord"] = { 26.2, 69.8, DESOLACE },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(16072),	-- Expert Cookbook

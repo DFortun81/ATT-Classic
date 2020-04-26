@@ -7,11 +7,13 @@ _.Zones =
 		m(WINTERSPRING, {
 			n(VENDORS, {
 				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
+					["coord"] = { 60.8, 37.8, WINTERSPRING },
 					["groups"] = {
 						i(13480),	-- Recipe: Major Healing Potion		
 					},
 				}),
 				n(11187, {	-- Himmik <Food & Drink>
+					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["groups"] = {
 						i(16110),	-- Recipe: Monster Omelet	
 					},
@@ -25,6 +27,7 @@ _.Zones =
 					},
 				}),
 				n(11189, {	-- Qia <Trade Goods Supplies>
+					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					["groups"] = {
 						i(14468),	-- Pattern: Runecloth Bag
 						i(14481),	-- Pattern: Runecloth Gloves	
@@ -34,6 +37,7 @@ _.Zones =
 					},
 				}),
 				n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>
+					["coord"] = { 60.8, 38.6, WINTERSPRING },
 					["groups"] = {						
 						i(16046),	-- Schematic: Masterwork Target Dummy	
 						i(16047),	-- Schematic: Thorium Tube

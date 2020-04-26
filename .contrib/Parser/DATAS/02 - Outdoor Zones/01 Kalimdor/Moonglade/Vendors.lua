@@ -7,6 +7,7 @@ _.Zones =
 		m(MOONGLADE, {
 			n(VENDORS, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
+					["coord"] = { 51.6, 33.2, MOONGLADE },
 					["groups"] = {
 						i(14469),	-- Pattern: Runecloth Robe
 						i(14472),	-- Pattern: Runecloth Cloak
@@ -14,6 +15,7 @@ _.Zones =
 					},
 				}),
 				n(12023, {	-- Kharedon <Light Armor Merchant>
+					["coord"] = { 56.6, 29.8, MOONGLADE },
 					["groups"] = {
 						i(12254),	-- Well Oiled Cloak
 					},
@@ -27,6 +29,7 @@ _.Zones =
 					},
 				}),
 				n(12029, {	-- Narianna <Bowyer>
+					["coord"] = { 53.2, 42.6, MOONGLADE },
 					["groups"] = {
 						i(11308),	-- Sylvan Shortbow
 					},
