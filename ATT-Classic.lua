@@ -3496,7 +3496,7 @@ app.BaseItem = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "name" then
@@ -3967,7 +3967,7 @@ app.BaseNPC = {
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4170,7 +4170,7 @@ app.BaseQuest = {
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly;
+			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
 		else
