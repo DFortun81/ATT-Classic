@@ -7,12 +7,14 @@ _.Zones =
 		m(FERALAS, {
 			n(VENDORS, {
 				n(6576, {	-- Brienna Starglow <Tailoring Supplies>
+					["coord"] = { 89.0, 45.8, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7089),	-- Pattern: Azure Silk Cloak
 					},
 				}),
 				n(8158, {	-- Bronk <Alchemy Supplies>
+					["coord"] = { 76.0, 43.4, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6057),	-- Recipe: Nature Protection Potion
@@ -20,12 +22,14 @@ _.Zones =
 					},
 				}),
 				n(9548, {	-- Cawind Trueaim <Gunsmith & Bowyer>
-					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 45.6, FERALAS },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(11308),	-- Sylvan Shortbow
 					},
 				}),
 				n(7854, {	-- Jangdor Swiftstrider <Leatherworking Supplies>
+					["coord"] = { 74.4, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(7451),	-- Pattern: Green Whelp Bracers
@@ -35,6 +39,7 @@ _.Zones =
 					},
 				}),
 				n(7852, {	-- Pratt McGrubben <Leatherworking Supplies>
+					["coord"] = { 30.6, 42.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(7451),	-- Pattern: Green Whelp Bracers
@@ -43,6 +48,7 @@ _.Zones =
 					},
 				}),
 				n(8145, {	-- Sheendra Tallgrass <Trade Supplies>
+					["coord"] = { 74.6, 42.8, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12229),	-- Recipe: Hot Wolf Ribs
@@ -52,6 +58,7 @@ _.Zones =
 					},
 				}),
 				n(7947, {	-- Vivianna <Trade Supplies>
+					["coord"] = { 31.2, 43.4, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(12229),	-- Recipe: Hot Wolf Ribs
@@ -59,9 +66,9 @@ _.Zones =
 						i(13948),	-- Recipe: Mightfish Steak
 						i(13949),	-- Recipe: Baked Salmon
 					},
-					["coord"] = { 31.3, 43.4, FERALAS },
 				}),
 				n(8159, {	-- Worb Strongstitch <Light Armor Merchant>
+					["coord"] = { 74.6, 42.6, FERALAS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(12253),	-- Brilliant Red Cloak
@@ -69,11 +76,15 @@ _.Zones =
 					},
 				}),
 				n(14637, {	-- Zorbin Fandazzle
-					["description"] = "Must complete quests |cFFFFD700Still With The Zapped Giants|r and |cFFFFD700Even More Fuel For The Zapping|r before he will sell to you.",
+					["sourceQuests"] = {
+						7003,	-- Zapped Giants
+						7721,	-- Fuel for the Zapping
+					},
+					["coord"] = { 44.8, 43.4, FERALAS },
+					["description"] = "Must complete quests |cFFFFD700Zapped Giants|r and |cFFFFD700Fuel For The Zapping|r before he will sell to you.",
 					["groups"] = {
 						i(19027),	-- Schematic: Snake Burst Firework
 					},
-					["coord"] = { 44.8, 43.4, FERALAS },
 				}),
 			}),	
 		}),
