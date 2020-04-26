@@ -74,12 +74,13 @@ _.Zones =
 					},
 				}),
 				q(59, {	-- Cloth and Leather Armor
+					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 83,	-- Red Linen Goods
-					["qgs"] = {
-						240,	-- Marshal Dughan
-						261,	-- Guard Thomas
-					},
+					["coord"] = { 42.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 748, 1 },	-- Stormwind Armor Marker
+					},
 					["lvl"] = 7,
 					["g"] = {
 						i(1171),	-- Well-stitched Robe
@@ -301,7 +302,16 @@ _.Zones =
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 123,	-- The Collector
 					["coord"] = { 42.1, 65.9, ELWYNN_FOREST },
+					["cost"] = {
+						{ "i", 2239, 1 },	-- The Collector's Ring
+					},
 					["g"] = {
+						{
+							["itemID"] = 2239,	-- The Collector's Ring
+							["questID"] = 147,	-- Manhunt
+							["cr"] = 473,	-- Morgan the Collector
+							["coord"] = { 71.0, 80.6, ELWYNN_FOREST },
+						},
 						i(1360),	-- Stormwind Chain Gloves
 						i(1183),	-- Elastic Wristguards
 					},
@@ -393,6 +403,9 @@ _.Zones =
 					["provider"] = { "o", 56 },	-- Rolf's corpse
 					["sourceQuest"] = 45,	-- Discover Rolf's Fate
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 735, 1 },	-- Rolf and Malakai's Medallions
+					},
 					["lvl"] = 7,
 				}),
 				q(2158, {	-- Rest and Relaxation

@@ -77,8 +77,12 @@ _.Zones =
 				}),
 				q(157, {	-- Deliver the Thread
 					["qg"] = 265,	-- Madame Eva
+					["sourceQuest"] = 154,	-- Return the Comb
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1596, 1 },	-- Ghost Hair Thread
+					},
 					["lvl"] = 20,
 				}),
 				q(164, {	-- Deliveries to Sven
@@ -135,8 +139,12 @@ _.Zones =
 				}),
 				q(149, {	-- Ghost Hair Thread
 					["qg"] = 265,	-- Madame Eva
+					["sourceQuest"] = 148,	-- Supplies from Darkshire
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1453, 1 },	-- Spectral Comb
+					},
 					["lvl"] = 20,
 				}),
 				q(133, {	-- Ghoulish Effigy
@@ -333,8 +341,12 @@ _.Zones =
 				}),
 				q(154, {	-- Return the Comb
 					["qg"] = 302,	-- Blind Mary
+					["sourceQuest"] = 149,	-- Ghost Hair Thread
 					["coord"] = { 81.9, 59.1, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1518, 1 },	-- Ghost Hair Comb
+					},
 					["lvl"] = 20,
 				}),
 				q(240, {	-- Return to Jitters
@@ -382,6 +394,7 @@ _.Zones =
 				}),
 				q(148, {	-- Supplies from Darkshire
 					["qg"] = 289,	-- Abercrombie
+					["sourceQuest"] = 165,	-- The Hermit
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,

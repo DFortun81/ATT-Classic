@@ -16,6 +16,9 @@ _.Zones =
 					["qg"] = 379,	-- Darcy
 					["coord"] = { 26.7, 44.3, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5534, 1 },	-- Parker's Lunch
+					},
 					["lvl"] = 12,
 				}),
 				q(94, {	-- A Watchful Eye
@@ -30,8 +33,17 @@ _.Zones =
 					["sourceQuest"] = 2281,	-- Redridge Rendezvous
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 5060, 1 },	-- Thieves' Tools
+						{ "i", 7871, 1 },	-- Token of Thievery
+					},
 					["lvl"] = 16,
 					["g"] = {
+						{
+							["itemID"] = 7871,	-- Token of Thievery
+							["questID"] = 2282,	-- Alther's Mill
+							["coord"] = { 52.0, 44.8, REDRIDGE_MOUNTAINS },
+						},
 						i(7907),	-- Certificate of Thievery
 					},
 				}),
@@ -72,8 +84,12 @@ _.Zones =
 				}),
 				q(131, {	-- Delivering Daffodils
 					["qg"] = 342,	-- Martie Jainrose
+					["sourceQuest"] = 130,	-- Visit the Herbalist
 					["coord"] = { 21.9, 46.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1325, 1 },	-- Daffodil Bouquet
+					},
 					["lvl"] = 12,
 					["g"] = {
 						i(1326),	-- Sauteed Sunfish
@@ -110,6 +126,10 @@ _.Zones =
 				q(3741, {	-- Hilary's Necklace
 					["qg"] = 8965,	-- Shawn
 					["coord"] = { 29.3, 53.4, REDRIDGE_MOUNTAINS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10958, 1 },	-- Hilary's Necklace
+					},
 					["lvl"] = 12,
 				}),
 				q(126, {	-- Howling in the Hills
@@ -147,19 +167,29 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
-				q(121, {	-- Messenger to Stormwind
-					["qg"] = 466,	-- General Marcus Jonathan
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 14,
-				}),
-				q(120, {	-- Messenger to Stormwind
+				q(120, {	-- Messenger to Stormwind (1/2)
 					["qg"] = 344,	-- Magistrate Solomon
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1293, 1 },	-- The State of Lakeshire
+					},
 					["lvl"] = 14,
 				}),
-				q(143, {	-- Messenger to Westfall
+				q(121, {	-- Messenger to Stormwind (2/2)
+					["qg"] = 466,	-- General Marcus Jonathan
+					["sourceQuest"] = 120,	-- Messenger to Stormwind (1/2)
+					["coord"] = { 63.8, 75.4, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1294, 1 },	-- The General's Response
+					},
+					["lvl"] = 14,
+				}),
+				q(143, {	-- Messenger to Westfall (1/2)
 					["qg"] = 344,	-- Magistrate Solomon
+					["sourceQuest"] = 121,	-- Messenger to Stormwind (2/2)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -167,9 +197,9 @@ _.Zones =
 					},
 					["lvl"] = 14,
 				}),
-				q(144, {	-- Messenger to Westfall
+				q(144, {	-- Messenger to Westfall (2/2)
 					["qg"] = 234,	-- Gryan Stoutmantle
-					["sourceQuest"] = 143,	-- Messenger to Westfall
+					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
 					["coord"] = { 56.2, 47.6, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -242,7 +272,12 @@ _.Zones =
 				}),
 				q(119, {	-- Return to Verner
 					["qg"] = 514,	-- Smith Argus
+					["coord"] = { 41.7, 65.5, ELWYNN_FOREST },
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1284, 1 },	-- Crate of Horseshoes
+					},
 					["lvl"] = 13,
 				}),
 				q(127, {	-- Selling Fish
@@ -327,6 +362,9 @@ _.Zones =
 					["qg"] = 415,	-- Verner Osgood
 					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1283, 1 },	-- Verner's Notes
+					},
 					["lvl"] = 14,
 				}),
 				q(1699, {	-- The Rethban Gauntlet
@@ -372,6 +410,7 @@ _.Zones =
 				}),
 				q(130, {	-- Visit the Herbalist
 					["qg"] = 464,	-- Guard Parker
+					["sourceQuest"] = 129,	-- A Free Lunch
 					["coord"] = { 17.3, 69.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
