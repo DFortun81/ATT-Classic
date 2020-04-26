@@ -415,7 +415,11 @@ _.Zones =
 						{ "i", 1274, 5 },	-- Hops
 					},
 					["g"] = {
-						i(1262),	-- Keg of Thunderbrew
+						{
+							["itemID"] = 1262,	-- Keg of Thunderbrew
+							["questID"] = 116,	-- Dry Times
+							["races"] = ALLIANCE_ONLY,
+						},
 					},
 				}),
 				q(36, {		-- Westfall Stew (1/2)

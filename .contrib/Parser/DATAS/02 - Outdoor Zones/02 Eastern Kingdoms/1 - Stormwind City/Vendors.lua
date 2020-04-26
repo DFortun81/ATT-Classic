@@ -100,11 +100,22 @@ _.Zones =
 					},
 				}),
 				n(1313, {	-- Maria Lumere <Alchemy Supplies>
+					["coord"] = { 46.6, 79.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {						
 						i(9301),	-- Recipe: Elixir of Shadow Power
 					},
-					["coord"] = { 46.6, 79.0, STORMWIND_CITY },
+				}),
+				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
+					["coord"] = { 52.0, 67.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {						
+						{
+							["itemID"] = 1941,	-- Cask of Merlot
+							["questID"] = 116,	-- Dry Times
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
 				}),
 			}),	
 		}),

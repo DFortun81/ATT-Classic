@@ -82,7 +82,19 @@ _.Zones =
 				q(116, {	-- Dry Times
 					["qg"] = 346,	-- Barkeep Daniels
 					["coord"] = { 26.5, 44.2, REDRIDGE_MOUNTAINS },
+					["maps"] = {
+						DUSKWOOD,
+						ELWYNN_FOREST,
+						STORMWIND_CITY,
+						WESTFALL,
+					},
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1942, 1 },	-- Bottle of Moonshine
+						{ "i", 1941, 1 },	-- Cask of Merlot
+						{ "i", 1262, 1 },	-- Keg of Thunderbrew
+						{ "i", 1939, 1 },	-- Skin of Sweet Rum
+					},
 					["lvl"] = 12,
 					["g"] = {
 						i(1270),	-- Finely Woven Cloak

@@ -25,6 +25,17 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					},
 				}),
+				n(274, {	-- Barkeep Hann <Bartender>
+					["coord"] = { 73.8, 44.2, DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {						
+						{
+							["itemID"] = 1942,	-- Bottle of Moonshine
+							["questID"] = 116,	-- Dry Times
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
+				}),
 				n(2481, {	-- Bliztik <Alchemy Supplies>
 					["coord"] = { 18.0, 54.4, DUSKWOOD },
 					["description"] = "Enter the building at 18.0, 55.2 and go upstairs to find Bliztik.",

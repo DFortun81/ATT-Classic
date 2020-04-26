@@ -497,6 +497,9 @@ _.Zones =
 					["provider"] = { "i", 1307 },	-- Gold Pickup Schedule
 					["crs"] = { 100 },	-- Gruff Swiftbite
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2223, 1 },	-- The Collector's Schedule
+					},
 					["lvl"] = 7,
 				}),
 				q(114, {	-- The Escape

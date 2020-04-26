@@ -18,6 +18,17 @@ _.Zones =
 						i(4818),	-- Executioner's Sword
 					},
 				}),
+				n(465, {	-- Barkeep Dobbins <Bartender>
+					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {						
+						{
+							["itemID"] = 1939,	-- Skin of Sweet Rum
+							["questID"] = 116,	-- Dry Times
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
+				}),
 				n(6367, {	-- Donni Anthania <Crazy Cat Lady>
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
