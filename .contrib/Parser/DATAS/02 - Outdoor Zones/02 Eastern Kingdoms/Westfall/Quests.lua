@@ -154,6 +154,7 @@ _.Zones =
 							["cr"] = 7053,	-- Klaven Mortwake
 							["coord"] = { 71.0, 74.6, WESTFALL },
 						},
+						recipe(6947),	-- Instant Poison
 						i(18160),	-- Recipe: Thistle Tea
 					},
 				}),

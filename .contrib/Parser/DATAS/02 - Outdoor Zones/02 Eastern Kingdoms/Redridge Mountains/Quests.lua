@@ -24,8 +24,11 @@ _.Zones =
 				q(94, {	-- A Watchful Eye
 					["qg"] = 313,	-- Theocritus
 					["coord"] = { 65.2, 69.8, ELWYNN_FOREST },
-					["description"] = "This quests starts in Elwynn Forest. Go to the top of the tower located at 64.3, 68.9.",
+					["maps"] = { ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1083, 1 },	-- Glyph of Azora
+					},
 					["lvl"] = 20,
 				}),
 				q(2282, {	-- Alther's Mill
@@ -156,15 +159,25 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(146, {	-- Messenger to Darkshire
-					["qg"] = 263,	-- Lord Ello Ebonlocke
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 18,
-				}),
-				q(145, {	-- Messenger to Darkshire
+				q(145, {	-- Messenger to Darkshire (1/2)
 					["qg"] = 344,	-- Magistrate Solomon
+					["sourceQuest"] = 144,	-- Messenger to Westfall (2/2)
 					["coord"] = { 30.0, 44.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1409, 1 },	-- Solomon's Plea to Darkshire
+					},
+					["lvl"] = 18,
+				}),
+				q(146, {	-- Messenger to Darkshire (2/2)
+					["qg"] = 263,	-- Lord Ello Ebonlocke
+					["sourceQuest"] = 145,	-- Messenger to Darkshire (1/2)
+					["coord"] = { 72.0, 46.6, DUSKWOOD },
+					["maps"] = { DUSKWOOD },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1410, 1 },	-- Ebonlocke's Response to Solomon
+					},
 					["lvl"] = 18,
 				}),
 				q(120, {	-- Messenger to Stormwind (1/2)
@@ -201,6 +214,7 @@ _.Zones =
 					["qg"] = 234,	-- Gryan Stoutmantle
 					["sourceQuest"] = 143,	-- Messenger to Westfall (1/2)
 					["coord"] = { 56.2, 47.6, WESTFALL },
+					["maps"] = { WESTFALL },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1408, 1 },	-- Stoutmantle's Response to Solomon
@@ -353,8 +367,16 @@ _.Zones =
 					["qg"] = 341,	-- Foreman Oslow
 					["coord"] = { 32.2, 48.7, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1309, 1 },	-- Oslow's Toolbox
+					},
 					["lvl"] = 15,
 					["g"] = {
+						{
+							["itemID"] = 1309,	-- Oslow's Toolbox
+							["questID"] = 125,	-- The Lost Tools
+							["coord"] = { 41.4, 54.4, REDRIDGE_MOUNTAINS },
+						},
 						i(2313),	-- Medium Armor Kit
 					},
 				}),
