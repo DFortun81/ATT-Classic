@@ -1403,12 +1403,27 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 											end
 										elseif j.providers then
 											tinsert(regroup, j);
+										else
+											-- Do a quick search on the itemID.
+											local searchResults = app.SearchForField("itemID", j.itemID);
+											if searchResults and #searchResults > 0 then
+												for k,searchResult in ipairs(searchResults) do
+													if searchResult.providers then
+														for l,provider in ipairs(searchResult.providers) do
+															if provider[1] == 'i' and provider[2] == j.itemID then
+																tinsert(regroup, j);
+																break;
+															end
+														end
+														break;
+													end
+												end
+											end
 										end
 									end
 								else
 									tinsert(regroup, j);
 								end
-								
 							end
 						end
 					end
