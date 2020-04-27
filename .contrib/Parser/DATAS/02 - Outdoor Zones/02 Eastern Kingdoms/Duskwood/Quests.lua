@@ -442,6 +442,9 @@ _.Zones =
 					["qg"] = 264,	-- Commander Althea Ebonlocke
 					["coord"] = { 73.6, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 939, 1 },	-- A Bloodstained Journal Page
+					},
 					["lvl"] = 22,
 				}),
 				q(68, {	-- The Legend of Stalvan
@@ -457,6 +460,9 @@ _.Zones =
 					["qg"] = 273,	-- Tavernkeep Smitts
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 938, 1 },	-- Muddy Journal Pages
+					},
 					["lvl"] = 22,
 					["g"] = {
 						i(939),	-- A Bloodstained Journal Page
@@ -472,6 +478,9 @@ _.Zones =
 					["qg"] = 294,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 921, 1 },	-- A Faded Journal Page
+					},
 					["lvl"] = 22,
 				}),
 				q(69, {	-- The Legend of Stalvan
@@ -484,6 +493,9 @@ _.Zones =
 					["qg"] = 294,	-- Marshal Haggard
 					["coord"] = { 84.6, 69.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 921, 1 },	-- A Faded Journal Page
+					},
 					["lvl"] = 22,
 				}),
 				q(72, {	-- The Legend of Stalvan
@@ -502,6 +514,9 @@ _.Zones =
 					["provider"] = { "o", 1561 },	-- Sealed Crate
 					["coord"] = { 29.6, 61.9, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 916, 1 },	-- A Torn Journal Page
+					},
 					["lvl"] = 22,
 				}),
 				q(98, {	-- The Legend of Stalvan
@@ -525,8 +540,11 @@ _.Zones =
 				}),
 				q(70, {	-- The Legend of Stalvan
 					["qg"] = 295,	-- Innkeeper Farley
-					["coord"] = { 43.8, 65.9, WESTFALL },
+					["coord"] = { 43.8, 65.9, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 910, 1 },	-- An Undelivered Letter
+					},
 					["lvl"] = 22,
 				}),
 				q(66, {	-- The Legend of Stalvan
