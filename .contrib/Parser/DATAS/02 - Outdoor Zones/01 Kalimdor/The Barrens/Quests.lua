@@ -24,16 +24,16 @@ _.Zones =
 				q(5043, {	-- Agamaggan's Agility
 					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
-					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
 				q(5042, {	-- Agamaggan's Strength
 					["qg"] = 3430,	-- Mangletooth
 					["sourceQuest"] = 5052,	-- Blood Shards of Agamaggan
-					["repeatable"] = true,
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
 				}),
@@ -229,8 +229,8 @@ _.Zones =
 				q(855, {	-- Centaur Bracers
 					["qg"] = 3389,	-- Regthar Deathgate
 					["coord"] = { 45.34, 28.42, THE_BARRENS },
-					["lvl"] = 9,
 					["races"] = HORDE_ONLY,
+					["lvl"] = 9,
 					["g"] = {
 						i(5346),	-- Orcish Battle Bow
 						i(5344),	-- Pointed Axe
@@ -238,9 +238,9 @@ _.Zones =
 					},
 				}),
 				q(819, {	-- Chen's Empty Keg
+					["description"] = "Started by picking up one of the many kegs littered throughout the Barrens.",
 					["races"] = HORDE_ONLY,
 					["lvl"] = 11,
-					["description"] = "Started by picking up one of the many kegs littered throughout the Barrens.",
 				}),
 				q(821, {	-- Chen's Empty Keg
 					["qg"] = 3292,	-- Brewmaster Drohn

@@ -412,6 +412,9 @@ _.Zones =
 				q(178, {	-- Theocritus' Retrieval
 					["provider"] = { "i", 1962 },	-- Glowing Shadowhide Pendant
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1956, 1 },	-- Faded Shadowhide Pendant
+					},
 					["lvl"] = 15,
 					["g"] = {
 						i(1970),	-- Restoring Balm
