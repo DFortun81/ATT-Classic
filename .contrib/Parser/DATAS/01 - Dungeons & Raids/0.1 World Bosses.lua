@@ -15,12 +15,6 @@ _.Instances = {
 					14890,	-- Taerar
 					14887,	-- Ysondre
 				},
-				["maps"] = {
-					ASHENVALE,
-					DUSKWOOD,
-					FERALAS,
-					THE_HINTERLANDS,
-				},
 				["groups"] = {
 					q(8446, {	-- Shrouded in Nightmare
 						["provider"] = { "i", 20644 },

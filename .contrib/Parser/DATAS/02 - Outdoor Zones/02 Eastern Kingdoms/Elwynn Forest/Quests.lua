@@ -265,7 +265,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 951,	-- Brother Paxton
 					["sourceQuest"] = 344,	-- Brother Paxton (quest in Stormwind)
-					["description"] = "This quest is part of a series that starts in Stormwind.",
 					["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 				}),
 				q(15, {	-- Investigate Echo Ridge
@@ -419,9 +418,11 @@ _.Zones =
 				q(346, {	-- Return to Kristoff
 					["qg"] = 951,	-- Brother Paxton
 					["sourceQuest"] = 347,	-- Rethban Ore (quest in Redridge Mountains)
-					["description"] = "This quest is part of a series that starts in Stromwind.",
 					["coord"] = { 49.6, 40.4, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2795, 1 },	-- Book: Stresses of Iron
+					},
 					["lvl"] = 20,
 					["g"] = {
 						i(6095),

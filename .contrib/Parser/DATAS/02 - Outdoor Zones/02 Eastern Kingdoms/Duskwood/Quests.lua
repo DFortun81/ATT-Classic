@@ -448,6 +448,9 @@ _.Zones =
 					["provider"] = { "o", 3643 },	-- Old Footlocker
 					["coord"] = { 41.5, 66.7, WESTFALL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 889, 1 },	-- A Dusty Unsent Letter
+					},
 					["lvl"] = 22,
 				}),
 				q(79, {	-- The Legend of Stalvan
