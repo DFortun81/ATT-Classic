@@ -27,37 +27,50 @@ profession(LEATHERWORKING, {
 			["coord"] = { 62.6, 57.4, BADLANDS },
 			["maps"] = { BADLANDS },
 			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 8203, 2 },	-- Tough Scorpid Breastplate
+				{ "i", 8204, 2 },	-- Tough Scorpid Gloves
+				{ "i", 8165, 10 },	-- Worn Dragonscale
+			},
 			["lvl"] = 40,
 		}),
 		q(5144, {	-- Elemental Leatherworking (A)
-			["lvl"] = 40,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { SEARING_GORGE },
-			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7868,	-- Sarah Tanner
 			["altQuests"] = {
 				5141,	-- Dragonscale Leatherworking
 				5143,	-- Tribal Leatherworking
 			},
-			["qg"] = 7868,	-- Sarah Tanner
+			["requireSkill"] = LEATHERWORKING,
 			["coord"] = { 63.6, 76.0, SEARING_GORGE },
+			["maps"] = { SEARING_GORGE },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 7081, 2 },	-- Breath of Wind
+				{ "i", 7075, 2 },	-- Core of Earth
+				{ "i", 7079, 2 },	-- Globe of Water
+				{ "i", 7077, 2 },	-- Heart of Fire
+			},
+			["lvl"] = 40,
 		}),
 		q(5146, {	-- Elemental Leatherworking (H)
-			["lvl"] = 40,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { ARATHI_HIGHLANDS },
-			["races"] = HORDE_ONLY,
+			["qg"] = 7869,	-- Brumn Winterhoof
 			["altQuests"] = {
 				5145,	-- Dragonscale Leatherworking
 				5148,	-- Tribal Leatherworking
 			},
-			["qg"] = 7869,	-- Brumn Winterhoof
+			["requireSkill"] = LEATHERWORKING,
+			["maps"] = { ARATHI_HIGHLANDS },
+			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 7081, 2 },	-- Breath of Wind
+				{ "i", 7075, 2 },	-- Core of Earth
+				{ "i", 7079, 2 },	-- Globe of Water
+				{ "i", 7077, 2 },	-- Heart of Fire
+			},
+			["lvl"] = 40,
 		}),
 		q(2853, {	-- Master of the Wild Leather (A)
 			["qg"] = 7852,	-- Pratt McGrubben
-			["requireSkill"] = LEATHERWORKING,
-			["coord"] = { 30.6, 42.7, FERALAS },
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["sourceQuests"] = {
 				2851,	-- Wild Leather Boots
 				2850,	-- Wild Leather Helmet
@@ -65,6 +78,10 @@ profession(LEATHERWORKING, {
 				2848,	-- Wild Leather Shoulders
 				2849,	-- Wild Leather Vest
 			},
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
 				{ "i", 9235, 1 },	-- Pratt's Letter
 			},
@@ -75,10 +92,6 @@ profession(LEATHERWORKING, {
 		}),
 		q(2860, {	-- Master of the Wild Leather (H)
 			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["requireSkill"] = LEATHERWORKING,
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["maps"] = { FERALAS },
-			["races"] = HORDE_ONLY,
 			["sourceQuests"] = {
 				2858,	-- Wild Leather Boots
 				2857,	-- Wild Leather Helmet
@@ -86,6 +99,10 @@ profession(LEATHERWORKING, {
 				2855,	-- Wild Leather Shoulders
 				2856,	-- Wild Leather Vest
 			},
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
 			["cost"] = {
 				{ "i", 9236, 1 },	-- Jangdor's Letter
 			},
@@ -95,13 +112,17 @@ profession(LEATHERWORKING, {
 			},
 		}),
 		q(1582, {	-- Moonglow Vest
-			["lvl"] = 8,
+			["qg"] = 6034,	-- Lotherias
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 64.4, 22.2, DARNASSUS },
 			["maps"] = { DARNASSUS },
 			["races"] = ALLIANCE_ONLY,
-			["qg"] = 6034,	-- Lotherias
-			["coord"] = { 64.4, 22.2, DARNASSUS },
-			["description"] = "Quest giver is on the 2nd floor of the building.",
+			["cost"] = {
+				{ "i", 2309, 5 },	-- Embossed Leather Boots
+				{ "i", 2310, 5 },	-- Embossed Leather Cloak
+				{ "i", 4239, 1 },	-- Embossed Leather Gloves
+			},
+			["lvl"] = 8,
 			["g"] = {
 				i(6710),	-- Pattern: Moonglow Vest
 			},
@@ -159,9 +180,6 @@ profession(LEATHERWORKING, {
 				{ "i", 4304, 10 },	-- Thick Leather
 			},
 			["lvl"] = 30,
-			["cost"] = {
-				{ "i", 4304, 10 },	-- Thick Leather
-			},
 		}),
 		q(2851, {	-- Wild Leather Boots (A)
 			["qg"] = 7852,	-- Pratt McGrubben
@@ -170,6 +188,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8193, 2 },	-- Nightscape Pants
+				{ "i", 8197, 2 },	-- Nightscape Boots
+				{ "i", 8153, 2 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8406),	-- Pattern: Wild Leather Boots
@@ -182,6 +205,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 8193, 2 },	-- Nightscape Pants
+				{ "i", 8197, 2 },	-- Nightscape Boots
+				{ "i", 8153, 2 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8406),	-- Pattern: Wild Leather Boots
@@ -194,6 +222,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8175, 2 },	-- Nightscape Tunic
+				{ "i", 8176, 2 },	-- Nightscape Headband
+				{ "i", 8153, 1 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8405),	-- Pattern: Wild Leather Helmet
@@ -223,6 +256,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8191, 2 },	-- Turtle Scale Helm
+				{ "i", 8198, 2 },	-- Turtle Scale Bracers
+				{ "i", 8153, 2 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8407),	-- Pattern: Wild Leather Leggings
@@ -235,35 +273,44 @@ profession(LEATHERWORKING, {
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 8191, 2 },	-- Turtle Scale Helm
+				{ "i", 8198, 2 },	-- Turtle Scale Bracers
+				{ "i", 8153, 2 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8407),	-- Pattern: Wild Leather Leggings
 			},
 		}),
 		q(2848, {	-- Wild Leather Shoulders (A)
-			["lvl"] = 30,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuest"] = 2847,	-- Wild Leather Armor
-			["g"] = {
-				i(8403),	-- Pattern: Wild Leather Shoulders
-			},
-			["coord"] = { 30.6, 42.7, FERALAS },
-		}),
-		q(2855, {	-- Wild Leather Shoulders (H)
-			["lvl"] = 30,
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
-			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["races"] = ALLIANCE_ONLY,
 			["cost"] = {
 				{ "i", 8173, 6 },	-- Thick Armor Kit
 				{ "i", 8153, 1 },	-- Wildvine
 			},
+			["lvl"] = 30,
+			["g"] = {
+				i(8403),	-- Pattern: Wild Leather Shoulders
+			},
+		}),
+		q(2855, {	-- Wild Leather Shoulders (H)
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 8173, 6 },	-- Thick Armor Kit
+				{ "i", 8153, 1 },	-- Wildvine
+			},
+			["lvl"] = 30,
 			["g"] = {
 				i(8403),	-- Pattern: Wild Leather Shoulders
 			},
@@ -275,6 +322,11 @@ profession(LEATHERWORKING, {
 			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8189, 2 },	-- Turtle Scale Breastplate
+				{ "i", 8187, 2 },	-- Turtle Scale Gloves
+				{ "i", 8153, 1 },	-- Wildvine
+			},
 			["lvl"] = 30,
 			["g"] = {
 				i(8404),	-- Pattern: Wild Leather Vest
@@ -287,12 +339,12 @@ profession(LEATHERWORKING, {
 			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["lvl"] = 30,
 			["cost"] = {
 				{ "i", 8189, 2 },	-- Turtle Scale Breastplate
 				{ "i", 8187, 2 },	-- Turtle Scale Gloves
 				{ "i", 8153, 1 },	-- Wildvine
 			},
+			["lvl"] = 30,
 			["g"] = {
 				i(8404),	-- Pattern: Wild Leather Vest
 			},
