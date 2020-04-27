@@ -254,10 +254,10 @@ _.Holidays =
 				},
 			}),
 			q(8679, {	-- Grimtotem the Elder
-				["isYearly"] = true,
 				["qg"] = 15581,	-- Elder Grimtotem
-				["maps"] = { FERALAS },
 				["coord"] = { 76.7, 37.9, FERALAS },
+				["maps"] = { FERALAS },
+				["isYearly"] = true,
 				["g"] = {
 					i(21100),	-- Coin of Ancestry
 				},

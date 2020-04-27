@@ -53,11 +53,11 @@ profession(LEATHERWORKING, {
 			["qg"] = 7869,	-- Brumn Winterhoof
 		}),
 		q(2853, {	-- Master of the Wild Leather (A)
-			["lvl"] = 30,
+			["qg"] = 7852,	-- Pratt McGrubben
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
-			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuests"] = {
 				2851,	-- Wild Leather Boots
 				2850,	-- Wild Leather Helmet
@@ -65,18 +65,20 @@ profession(LEATHERWORKING, {
 				2848,	-- Wild Leather Shoulders
 				2849,	-- Wild Leather Vest
 			},
+			["cost"] = {
+				{ "i", 9235, 1 },	-- Pratt's Letter
+			},
+			["lvl"] = 30,
 			["g"] = {
 				i(8408),	-- Pattern: Wild Leather Cloak
 			},
-			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2860, {	-- Master of the Wild Leather (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
 			["sourceQuests"] = {
 				2858,	-- Wild Leather Boots
 				2857,	-- Wild Leather Helmet
@@ -84,6 +86,10 @@ profession(LEATHERWORKING, {
 				2855,	-- Wild Leather Shoulders
 				2856,	-- Wild Leather Vest
 			},
+			["cost"] = {
+				{ "i", 9236, 1 },	-- Jangdor's Letter
+			},
+			["lvl"] = 30,
 			["g"] = {
 				i(8408),	-- Pattern: Wild Leather Cloak
 			},
@@ -101,120 +107,135 @@ profession(LEATHERWORKING, {
 			},
 		}),
 		q(5143, {	-- Tribal Leatherworking (A)
-			["lvl"] = 40,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
+			["qg"] = 7870,	-- Caryssia Moonhunter
 			["altQuests"] = {
 				5141,	-- Dragonscale Leatherworking
 				5144,	-- Elemental Leatherworking
 			},
-			["qg"] = 7870,	-- Caryssia Moonhunter
+			["requireSkill"] = LEATHERWORKING,
 			["coord"] = { 89.4, 46.5, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 8214, 1 },	-- Wild Leather Helmet
+				{ "i", 8211, 1 },	-- Wild Leather Vest
+			},
+			["lvl"] = 40,
 		}),
 		q(5148, {	-- Tribal Leatherworking (H)
-			["lvl"] = 40,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { STRANGLETHORN_VALE },
-			["races"] = HORDE_ONLY,
+			["qg"] = 7871,	-- Se'Jib
 			["altQuests"] = {
 				5145,	-- Dragonscale Leatherworking
 				5146,	-- Elemental Leatherworking
 			},
-			["qg"] = 7871,	-- Se'Jib
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
+			["maps"] = { STRANGLETHORN_VALE },
+			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 8214, 1 },	-- Wild Leather Helmet
+				{ "i", 8211, 1 },	-- Wild Leather Vest
+			},
+			["lvl"] = 40,
 		}),
 		q(2847, {	-- Wild Leather Armor (A)
-			["lvl"] = 30,
+			["qg"] = 7852,	-- Pratt McGrubben
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = ALLIANCE_ONLY,
-			["qg"] = 7852,	-- Pratt McGrubben
-			["coord"] = { 30.6, 42.7, FERALAS },
+			["cost"] = {
+				{ "i", 4304, 10 },	-- Thick Leather
+			},
+			["lvl"] = 30,
 		}),
 		q(2854, {	-- Wild Leather Armor (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
+			["cost"] = {
+				{ "i", 4304, 10 },	-- Thick Leather
+			},
+			["lvl"] = 30,
 			["cost"] = {
 				{ "i", 4304, 10 },	-- Thick Leather
 			},
 		}),
 		q(2851, {	-- Wild Leather Boots (A)
-			["lvl"] = 30,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 30,
 			["g"] = {
 				i(8406),	-- Pattern: Wild Leather Boots
 			},
-			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2858, {	-- Wild Leather Boots (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["lvl"] = 30,
 			["g"] = {
 				i(8406),	-- Pattern: Wild Leather Boots
 			},
 		}),
 		q(2850, {	-- Wild Leather Helmet (A)
-			["lvl"] = 30,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 30,
 			["g"] = {
 				i(8405),	-- Pattern: Wild Leather Helmet
 			},
-			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2857, {	-- Wild Leather Helmet (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["sourceQuest"] = 2854,	-- Wild Leather Armor
 			["cost"] = {
 				{ "i", 8175, 2 },	-- Nightscape Tunic
 				{ "i", 8176, 2 },	-- Nightscape Headband
 				{ "i", 8153, 1 },	-- Wildvine
 			},
+			["lvl"] = 30,
 			["g"] = {
 				i(8405),	-- Pattern: Wild Leather Helmet
 			},
 		}),
 		q(2852, {	-- Wild Leather Leggings (A)
-			["lvl"] = 30,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 30,
 			["g"] = {
 				i(8407),	-- Pattern: Wild Leather Leggings
 			},
-			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2859, {	-- Wild Leather Leggings (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["lvl"] = 30,
 			["g"] = {
 				i(8407),	-- Pattern: Wild Leather Leggings
 			},
@@ -248,25 +269,25 @@ profession(LEATHERWORKING, {
 			},
 		}),
 		q(2849, {	-- Wild Leather Vest (A)
-			["lvl"] = 30,
-			["requireSkill"] = LEATHERWORKING,
-			["maps"] = { FERALAS },
-			["races"] = ALLIANCE_ONLY,
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuest"] = 2847,	-- Wild Leather Armor
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 30.6, 42.7, FERALAS },
+			["maps"] = { FERALAS },
+			["races"] = ALLIANCE_ONLY,
+			["lvl"] = 30,
 			["g"] = {
 				i(8404),	-- Pattern: Wild Leather Vest
 			},
-			["coord"] = { 30.6, 42.7, FERALAS },
 		}),
 		q(2856, {	-- Wild Leather Vest (H)
-			["lvl"] = 30,
+			["qg"] = 7854,	-- Jangdor Swiftstrider
+			["sourceQuest"] = 2854,	-- Wild Leather Armor
 			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 74.43, 42.91, FERALAS },
 			["maps"] = { FERALAS },
 			["races"] = HORDE_ONLY,
-			["qg"] = 7854,	-- Jangdor Swiftstrider
-			["coord"] = { 74.43, 42.91, FERALAS },
-			["sourceQuest"] = 2854,	-- Wild Leather Armor
+			["lvl"] = 30,
 			["cost"] = {
 				{ "i", 8189, 2 },	-- Turtle Scale Breastplate
 				{ "i", 8187, 2 },	-- Turtle Scale Gloves

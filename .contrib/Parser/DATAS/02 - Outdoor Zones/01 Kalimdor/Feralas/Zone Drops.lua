@@ -21,6 +21,15 @@ _.Zones =
 					["questID"] = 3909,	-- The Videre Elixir
 					["coord"] = { 44, 11, FERALAS },
 				}),
+				i(9460, {	-- Grimtotem Horn
+					["questID"] = 2974,	-- A Grim Discovery
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						7726,	-- Grimtotem Naturalist
+						7725,	-- Grimtotem Raider
+						7727,	-- Grimtotem Shaman
+					},
+				}),
 				i(6259, {	-- Groddoc Liver
 					["questID"] = 1452,	-- Rhapsody's Kalimdor Kocktail
 					["races"] = ALLIANCE_ONLY,
@@ -42,6 +51,14 @@ _.Zones =
 						5332,	-- Hatecrest Wave Rider
 						5343,	-- Lady Szallah
 						8136,	-- Lord Shalzaru
+					},
+				}),
+				i(9369, {	-- Iridescent Sprite Darter Wing
+					["questID"] = 2973,	-- A New Cloak's Sheen
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						7997,	-- Captured Sprite Darter
+						5278,	-- Sprite Darter
 					},
 				}),
 				i(6258, {	-- Ironfur Liver
@@ -66,6 +83,15 @@ _.Zones =
 						5304,	-- Frayfeather Stagwing
 						5357,	-- Land Walker
 						7584,	-- Wandering Forest Walker
+					},
+				}),
+				i(18947, {	-- Rage Scar Yeti Hide
+					["allianceQuestID"] = 7733,	-- Improved Quality
+					["hordeQuestID"] = 7734,	-- Improved Quality
+					["crs"] = {
+						5297,	-- Elder Rage Scar
+						5299,	-- Ferocious Rage Scar
+						5296,	-- Rage Scar Yeti
 					},
 				}),
 				i(9591, {	-- Resilient Sinew
@@ -93,6 +119,36 @@ _.Zones =
 						5292,	-- Feral Scar Yeti
 						5293,	-- Hulking Feral Scar
 						7848,	-- Lurking Feral Scar
+					},
+				}),
+				i(18958, {	-- Water Elemental Core
+					["questID"] = 7721,	-- Fuel for the Zapping
+					["crs"] = {
+						5461,	-- Sea Elemental
+						5462,	-- Sea Spray
+					},
+				}),
+				i(9237, {	-- Woodpaw Gnoll Mane
+					["questID"] = 2862,	-- War on the Woodpaw
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						5258,	-- Woodpaw Alpha
+						5253,	-- Woodpaw Brute
+						5249,	-- Woodpaw Mongrel
+						5254,	-- Woodpaw Mystic
+						5255,	-- Woodpaw Reaver
+						5251,	-- Woodpaw Trapper
+					},
+				}),
+				i(18961, {	-- Zukk'ash Carapace
+					["questID"] = 7730,	-- Zukk'ash Infestation
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						14661,	-- Stinglasher
+						5244,	-- Zukk'ash Stinger
+						5247,	-- Zukk'ash Tunneler
+						5245,	-- Zukk'ash Wasp
+						5246,	-- Zukk'ash Worker
 					},
 				}),
 			}),

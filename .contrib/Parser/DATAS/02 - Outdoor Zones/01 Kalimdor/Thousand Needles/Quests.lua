@@ -250,7 +250,7 @@ _.Zones =
 				}),
 				q(1100, {	-- Lonebrow's Journal
 					["provider"] = { "i", 5790 },	-- Lonebrow's Journal
-					--["coord"] = { },
+					["coord"] = { 30, 24, THOUSAND_NEEDLES },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 29,
 				}),

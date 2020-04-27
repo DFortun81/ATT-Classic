@@ -23,8 +23,8 @@ _.Zones =
 					["lvl"] = 47,
 				}),
 				q(4491, {	-- A Little Help From My Friends
-					["lvl"] = 50,
 					["sourceQuest"] = 4492,	-- Lost!
+					["lvl"] = 50,
 					["g"] = {
 						i(11910),	-- Bejeweled Legguards
 						i(11911),	-- Treetop Leggings
@@ -32,14 +32,15 @@ _.Zones =
 					},
 				}),
 				q(4142, {	-- A Visit to Gregan
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9119,	-- Muigin
 					["sourceQuest"] = 4141,	-- Muigin and Larion
 					["coord"] = { 42.9, 9.6, UNGORO_CRATER },
+					["maps"] = { FERALAS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 11316, 1 },	-- Bloodpetal
 					},
+					["lvl"] = 47,
 				}),
 				q(3883, {	-- Alien Ecology
 					["lvl"] = 48,

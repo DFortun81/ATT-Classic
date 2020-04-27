@@ -71,8 +71,8 @@ _.Instances = {
 					},
 				}),
 				q(1101, {	-- The Crone of the Kraul
-					["sourceQuest"] = 1100,	-- Lonebrow's Journal
 					["qg"] = 4048,	-- Falfindel Waywarder
+					["sourceQuest"] = 1100,	-- Lonebrow's Journal
 					["coord"] = { 89.6, 46.6, FERALAS },
 					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,

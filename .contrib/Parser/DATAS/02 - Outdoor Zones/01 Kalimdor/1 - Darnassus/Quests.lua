@@ -126,14 +126,6 @@ _.Zones =
 						i(11887),	-- Cenarion Circle Cache
 					},
 				}),
-				q(3792, {	-- Morrowgrain to Feathermoon Stronghold
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
-					["repeatable"] = true,
-					["g"] = {
-						i(11022),	-- Packet of Tharlendris Seeds
-					},
-				}),
 				q(6344, {	-- Nessa Shadowsong
 					["qg"] = 4241,	-- Mydrannul
 					["coord"] = { 70.6, 45.3, DARNASSUS },
@@ -213,14 +205,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
-				}),
-				q(3791, {	-- The Mystery of Morrowgrain
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
-					["g"] = {
-						i(11888),	-- Quintis' Research Gloves
-						i(11889),	-- Bark Iron Pauldrons
-					},
 				}),
 				q(1686, {	-- The Shade of Elura
 					["qg"] = 4088,	-- Elanaria

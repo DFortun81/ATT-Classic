@@ -62,13 +62,12 @@ _.Instances = {
 						10880,	-- Warcaller Gorlach
 						10881,	-- Bluff Runner Windstrider
 					},
-					["coord"] = { 37.46, 74.13, ORGRIMMAR },
-					["maps"] = { FERALAS, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 54,
-				}),
-				q(7492, {	-- Camp Mojache
-					["qg"] = 10879,	-- Harbinger Balthazad
+					["coords"] = {
+						{ 46.6, 64.6, ORGRIMMAR },
+						{ 41.4, 54.2, THUNDER_BLUFF },
+						{ 69.2, 49.2, UNDERCITY },
+					},
+					["maps"] = { FERALAS, ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
@@ -115,8 +114,12 @@ _.Instances = {
 						10877,	-- Courier Hammerfall
 						10878,	-- Herald Moonstalker
 					},
-					["coord"] = { 30.5, 66.8, IRONFORGE },
-					["maps"] = { IRONFORGE },
+					["coords"] = {
+						{ 39, 63.6, DARNASSUS },
+						{ 30.5, 67, IRONFORGE },
+						{ 54.8, 62.6, STORMWIND_CITY },
+					},
+					["maps"] = { FERALAS, DARNASSUS, IRONFORGE, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),

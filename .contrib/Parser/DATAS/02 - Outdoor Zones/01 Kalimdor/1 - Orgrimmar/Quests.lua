@@ -66,12 +66,6 @@ _.Zones =
 						i(18042),	-- Thorium Headed Arrow
 					},
 				}),
-				q(2981, {	-- A Threat in Feralas
-					["lvl"] = 38,
-					["races"] = HORDE_ONLY,
-					["qg"] = 4485,	-- Belgrom Rockmaul
-					["isBreadcrumb"] = true,
-				}),
 				q(7832, {	-- Additional Runecloth
 					["qg"] = 14726,	-- Rashona Straglash
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth

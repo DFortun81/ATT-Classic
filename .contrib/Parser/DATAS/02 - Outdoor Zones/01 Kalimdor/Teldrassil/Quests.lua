@@ -137,6 +137,7 @@ _.Zones =
 				}),
 				q(2940, {	-- Feralas: A History
 					["provider"] = { "o", 142958 },	-- Feralas: A History
+					["sourceQuest"] = 2939,	-- In Search of Knowledge
 					["coord"] = { 55.2, 91.4, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 42,
@@ -251,9 +252,13 @@ _.Zones =
 				}),
 				q(2943, {	-- Return to Troyas
 					["qg"] = 7907,	-- Daryn Lightwind
-					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["sourceQuest"] = 2944,	-- The Super Snapper FX
+					["coord"] = { 55.4, 92.2, TELDRASSIL },
+					["maps"] = { FERALAS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9331, 1 },	-- Feralas: A History
+					},
 					["lvl"] = 42,
 				}),
 				q(489, {	-- Seek Redemption!
@@ -358,6 +363,9 @@ _.Zones =
 					["sourceQuest"] = 2940,	-- Feralas: A History
 					["coord"] = { 55.4, 92.2, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 9329, 1 },	-- A Short Note
+					},
 					["lvl"] = 42,
 				}),
 				q(2438, {	-- The Emerald Dreamcatcher

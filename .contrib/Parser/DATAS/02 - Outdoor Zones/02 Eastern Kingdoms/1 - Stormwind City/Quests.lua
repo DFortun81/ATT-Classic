@@ -359,15 +359,6 @@ _.Zones =
 						},
 					},
 				}),
-				q(3787, {	-- Jonespyre's Request
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 5566,	-- Tannysa
-					["altQuests"] = {
-						3788,	-- Jonespyre's Request
-					},
-					["isBreadcrumb"] = true,
-				}),
 				q(350, {	-- Look to an Old Friend
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
