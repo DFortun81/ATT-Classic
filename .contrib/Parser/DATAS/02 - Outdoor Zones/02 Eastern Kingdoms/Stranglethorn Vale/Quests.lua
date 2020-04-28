@@ -90,6 +90,7 @@ _.Zones =
 				q(7838, {	-- Arena Grandmaster
 					["qg"] = 14508,	-- Short John Mithril
 					["coord"] = { 29.6, 47.4, STRANGLETHORN_VALE },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 18706, 12 },	-- Arena Master (trinket)
 					},
