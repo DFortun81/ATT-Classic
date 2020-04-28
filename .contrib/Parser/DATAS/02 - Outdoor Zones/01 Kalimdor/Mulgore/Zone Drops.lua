@@ -42,7 +42,7 @@ _.Zones =
 				}),
 				i(4802, {	-- Cougar Claws
 					["questID"] = 756,	-- Thunderhorn Totem
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["cr"] = 3035,	-- Flatland Cougar
 				}),
 				i(1388, {	-- Crooked Staff
@@ -60,6 +60,10 @@ _.Zones =
 					["questID"] = 861,	-- The Hunter's Way
 					["races"] = HORDE_ONLY,
 					["cr"] = 3566,	-- Flatland Prowler
+					["altQuests"] = {
+						860,	-- Sergra Darkthorn
+						844,	-- Plainstrider Menace
+					},
 				}),
 				i(4742, {	-- Mountain Cougar Pelt
 					["questID"] = 750,	-- The Hunt Continues
@@ -87,7 +91,7 @@ _.Zones =
 				}),
 				i(4759, {	-- Plainstrider Talon
 					["questID"] = 748,	-- Poison Water
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["crs"] = {
 						2956,	-- Adult Plainstrider
 						2957,	-- Elder Plainstrider
@@ -96,7 +100,7 @@ _.Zones =
 				}),
 				i(4803, {	-- Prairie Alpha Tooth
 					["questID"] = 759,	-- Wildmane Totem
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["cr"] = 2960,	-- Prairie Wolf Alpha
 				}),
 				i(4804, {	-- Prairie Wolf Heart
@@ -110,7 +114,7 @@ _.Zones =
 				}),
 				i(4758, {	-- Prairie Wolf Paw
 					["questID"] = 748,	-- Poison Water
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["crs"] = {
 						2959,	-- Prairie Stalker
 						2958,	-- Prairie Wolf
@@ -127,7 +131,7 @@ _.Zones =
 				}),
 				i(4801, {	-- Stalker Claws
 					["questID"] = 756,	-- Thunderhorn Totem
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["cr"] = 2959,	-- Prairie Stalker
 				}),
 				i(4807, {	-- Swoop Gizzard
