@@ -3899,9 +3899,11 @@ app.BaseMap = {
 	__index = function(t, key)
 		if key == "key" then
 			return "mapID";
-		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. app.GetMapName(t.mapID) .. "|r"; end
+		elseif key == "name" then
 			return app.GetMapName(t.mapID);
+		elseif key == "text" then
+			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
+			return t.name;
 		elseif key == "back" then
 			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
 				return 1;
@@ -3910,6 +3912,14 @@ app.BaseMap = {
 			return "Interface/ICONS/INV_Misc_Map_01";
 		elseif key == "lvl" then
 			return app.GetMapLevel(t.mapID);
+		elseif key == "saved" then
+			return t.locks;
+		elseif key == "locks" then
+			local locks = GetTempDataSubMember("lockouts", t.name);
+			if locks then
+				rawset(t, key, locks);
+				return locks;
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -5788,6 +5798,15 @@ local function RowOnEnter(self)
 			end
 		end
 		
+		-- Contains information about an Instance (Raid or Dungeon)
+		local locks = reference.locks;
+		if locks then
+			GameTooltip:AddDoubleLine("Lockout", date("%c", locks.reset));
+			for encounterIter,encounter in pairs(locks.encounters) do
+				GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
+			end
+		end
+		
 		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
 		
 		-- Show Quest Prereqs
@@ -5797,9 +5816,22 @@ local function RowOnEnter(self)
 				if sourceQuestID > 0 and not IsQuestFlaggedCompleted(sourceQuestID) then
 					local sqs = SearchForField("questID", sourceQuestID);
 					if sqs and #sqs > 0 then
-						local sq = sqs[1];
-						if sq and app.ClassRequirementFilter(sq) and app.RaceRequirementFilter(sq) then
-							if sq.isBreadcrumb then
+						local isBreadcrumb, isPrereq = false, false;
+						for j,sq in ipairs(sqs) do
+							if sq.questID == sourceQuestID then
+								if app.RecursiveClassAndRaceFilter(sq) then
+									if sq.isBreadcrumb then
+										isBreadcrumb = true;
+									else
+										isPrereq = true;
+									end
+								else
+									isPrereq = false;
+								end
+							end
+						end
+						if isPrereq then
+							if isBreadcrumb then
 								table.insert(bc, sqs[1]);
 							else
 								table.insert(prereqs, sqs[1]);
@@ -5820,18 +5852,6 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
 				for i,prereq in ipairs(bc) do
 					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
-				end
-			end
-		end
-		
-		-- Show lockout information
-		if reference.mapID and not C_Map.GetMapInfo(reference.mapID) then
-			-- Contains information about an Instance (Raid or Dungeon)
-			local locks = reference.locks;
-			if locks then
-				GameTooltip:AddDoubleLine("Lockout", date("%c", locks.shared.reset));
-				for encounterIter,encounter in pairs(locks.shared.encounters) do
-					GameTooltip:AddDoubleLine(" " .. encounter.name, GetCompletionIcon(encounter.isKilled));
 				end
 			end
 		end
