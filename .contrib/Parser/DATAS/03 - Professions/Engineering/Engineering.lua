@@ -104,7 +104,6 @@ profession(ENGINEERING, {
 			{
 				["name"] = "Major Recombobulator",
 				["recipeID"] = 23079,
-				["u"] = 3,	-- Added in later phase (Dire Maul - phase 2)
 			},
 			{
 				["name"] = "Masterwork Target Dummy",
