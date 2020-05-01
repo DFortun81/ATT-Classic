@@ -16,6 +16,7 @@ _.Instances = {
 						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 							q(8192, {	-- Animist's Caress [Druid]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19821, 1 },	-- Punctured Voodoo Doll [Druid]
@@ -96,6 +97,7 @@ _.Instances = {
 						cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
 							q(8187, {	-- Falcon's Call [Hunter]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19816, 1 },	-- Punctured Voodoo Doll [Hunter]
@@ -176,6 +178,7 @@ _.Instances = {
 						cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
 							q(8189, {	-- Presence of Sight [Mage]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19818, 1 },	-- Punctured Voodoo Doll [Mage]
@@ -256,6 +259,7 @@ _.Instances = {
 						cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 							q(8185, {	-- Syncretist's Sigil [Paladin]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19815, 1 },	-- Punctured Voodoo Doll [Paladin]
@@ -336,6 +340,7 @@ _.Instances = {
 						cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
 							q(8191, {	-- Prophetic Aura [Priest]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19820, 1 },	-- Punctured Voodoo Doll [Priest]
@@ -416,6 +421,7 @@ _.Instances = {
 						cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 							q(8186, {	-- Death's Embrace [Rogue]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19814, 1 },	-- Punctured Voodoo Doll [Rogue]
@@ -496,6 +502,7 @@ _.Instances = {
 						cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 							q(8188, {	-- Vodouisant's Vigilant Embrace [Shaman]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
@@ -576,6 +583,7 @@ _.Instances = {
 						cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
 							q(8190, {	-- Hoodoo Hex [Warlock]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19819, 1 },	-- Punctured Voodoo Doll [Warlock]
@@ -656,6 +664,7 @@ _.Instances = {
 						cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 							q(8184, {	-- Presence of Might [Warrior]
 								["qg"] = 15042,		-- Zanza the Restless
+								["repeatable"] = true,
 								["cost"] = {
 									{ "i", 22637, 1 },	-- Primal Hakkari Idol
 									{ "i", 19813, 1 },	-- Punctured Voodoo Doll [Warrior]
@@ -903,8 +912,8 @@ _.Instances = {
 						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 							["groups"] = {
-								i(20757),	-- Formula: Brilliant Mana Oil
-								i(20756),	-- Formula: Brilliant Wizard Oil
+								un(3, i(20757)),	-- Formula: Brilliant Mana Oil
+								un(3, i(20756)),	-- Formula: Brilliant Wizard Oil
 								i(19772),	-- Pattern: Blood Tiger Breastplate
 								i(19773),	-- Pattern: Blood Tiger Shoulders
 								i(19766),	-- Pattern: Bloodvine Boots

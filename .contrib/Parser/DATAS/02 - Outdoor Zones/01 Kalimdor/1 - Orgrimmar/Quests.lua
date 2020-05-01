@@ -306,13 +306,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(936, {	-- Assisting Arch Druid Runetotem
-					["lvl"] = 47,
-					["races"] = HORDE_ONLY,
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["altQuests"] = {
 						3762,	-- Assisting Arch Druid Runetotem
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 47,
 				}),
 				q(8998, {	-- Back to the Beginning
 					["lvl"] = 58,

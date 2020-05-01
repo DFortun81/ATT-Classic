@@ -62,13 +62,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
-					["lvl"] = 47,
-					["races"] = HORDE_ONLY,
 					["qg"] = 6741,	-- Innkeeper Norman
 					["altQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem
 						3762, 	-- Assisting Arch Druid Runetotem
 					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 47,
 				}),
 				q(1847, {	-- Brutal Legguards
 					["qg"] = 6411,	-- Velora Nitely

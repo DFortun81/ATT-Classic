@@ -43,13 +43,14 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(3762, {	-- Assisting Arch Druid Runetotem
-					["lvl"] = 47,
-					["races"] = HORDE_ONLY,
 					["qg"] = 6746,	-- Innkeeper Pala
 					["altQuests"] = {
 						936,	-- Assisting Arch Druid Runetotem
 						3784, 	-- Assisting Arch Druid Runetotem
 					},
+					["isBreadcrumb"] = true,
+					["races"] = HORDE_ONLY,
+					["lvl"] = 47,
 				}),
 				q(1066, {	-- Blood of Innocents
 					["qg"] = 2216,	-- Apothecary Lydon
