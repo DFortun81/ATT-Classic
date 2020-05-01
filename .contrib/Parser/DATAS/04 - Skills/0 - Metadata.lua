@@ -461,7 +461,7 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 10908,	-- Mechanostrider Piloting
-		["races"] = ALLIANCE_ONLY,
+		["races"] = { DWARF, GNOME },
 		["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 		["description"] = "Available to Gnomes without faction requirements.",
 		["lvl"] = 40,
@@ -477,7 +477,7 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 10861,	-- Raptor Riding
-		["races"] = HORDE_ONLY,
+		["races"] = { ORC, TROLL, UNDEAD },
 		["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 		["description"] = "Available to Trolls without faction requirements.",
 		["lvl"] = 40,
@@ -518,7 +518,7 @@ _.Skills =
 	},
 	{
 		["recipeID"] = 10906,	-- Undead Horsemanship
-		["races"] = HORDE_ONLY,
+		["races"] = { ORC, TROLL, UNDEAD },
 		["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 		["description"] = "Available to Undead without faction requirements.",
 		["lvl"] = 40,
