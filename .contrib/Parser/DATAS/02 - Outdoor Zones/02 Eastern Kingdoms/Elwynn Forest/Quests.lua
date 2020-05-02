@@ -176,6 +176,9 @@ _.Zones =
 				}),
 				q(1685, {	-- Gakin's Summons
 					["qg"] = 6121,	-- Remen Marcot
+					["altQuests"] = {
+						1715, -- The Slaughtered Lamb
+					},
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 10,

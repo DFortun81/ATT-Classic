@@ -178,6 +178,7 @@ _.Zones =
 					["maps"] = { STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
+					["isBreadcrumb"] = true,
 				}),
 				q(4581, {	-- Kayneth Stillwind
 					["qg"] = 3845,	-- Shindrell Swiftfire
