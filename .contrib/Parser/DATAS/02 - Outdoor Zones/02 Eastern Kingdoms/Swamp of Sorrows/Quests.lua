@@ -42,6 +42,7 @@ _.Zones =
 					},
 					["classes"] = { WARRIOR },
 					["lvl"] = 50,
+					["isBreadcrumb"] = true,
 				}),
 				q(1428, {	-- Continued Threat
 					["races"] = HORDE_ONLY,
