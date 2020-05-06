@@ -114,6 +114,11 @@ _.Zones =
 					["qg"] = 6740,	-- Innkeeper Allison
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 47,
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						3790,	-- Assisting Arch Druid Staghelm (Ironforge)
+						3763,	-- Assisting Arch Druid Staghelm (Darnassus)
+					},
 				}),
 				q(1942, {	-- Astral Knot Garment
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>

@@ -122,6 +122,7 @@ _.Instances = {
 					["maps"] = { FERALAS, DARNASSUS, IRONFORGE, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
+					["isBreadcrumb"] = true,
 				}),
 				q(5525, {	-- Free Knot!
 					["qg"] = 14338,	-- Knot Thimblejack

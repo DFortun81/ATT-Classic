@@ -5110,6 +5110,12 @@ local function SetRowData(self, row, data)
 				end
 			end
 		end
+		-- if data is quest and is currently accepted
+		if data.questID and GetQuestLogIndexByID(data.questID)>0 then
+			row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known_circle");
+			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
+			row.Indicator:Show();
+		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.isDaily then
 				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known");
@@ -5842,10 +5848,15 @@ local function RowOnEnter(self)
 					end
 				end
 			end
+
 			if prereqs and #prereqs > 0 then
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					if prereq.maps then
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. C_Map.GetMapInfo(prereq.maps[1]).name .. ")");
+					else
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					end
 				end
 			end
 			if bc and #bc > 0 then

@@ -463,6 +463,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 5111,	-- Innkeeper Firebrew
 					["coord"] = { 18.1, 51.5, IRONFORGE },
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						3763, -- Assisting Arch Druid Staghelm (Darnassus)
+						3789, -- Assisting Arch Druid Staghelm (Stormwind) 
+						},
 				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,
@@ -925,6 +930,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
+					["isBreadcrumb"] = true,
 				}),
 				q(1678, {	-- Vejrek
 					["lvl"] = 10,

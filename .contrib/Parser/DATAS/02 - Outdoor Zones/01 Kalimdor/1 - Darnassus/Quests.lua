@@ -55,6 +55,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
+					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						3790, -- Assisting Arch Druid Staghelm (Ironforge)
+						3789, -- Assisting Arch Druid Staghelm (Stormwind)		
+					},
 				}),
 				{
 					["questID"] = 4510,	-- Calm Before the Storm (2/2)

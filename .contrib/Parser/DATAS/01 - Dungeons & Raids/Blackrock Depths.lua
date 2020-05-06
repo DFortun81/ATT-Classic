@@ -394,6 +394,7 @@ _.Instances = {
 					["maps"] = { BLASTED_LANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 50,
+					["isBreadcrumb"] = true,
 				},
 				{
 					["questID"] = 4136,	-- Ribbly Screwspigot
