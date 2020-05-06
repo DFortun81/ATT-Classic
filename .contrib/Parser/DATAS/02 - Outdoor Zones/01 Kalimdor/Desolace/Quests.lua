@@ -562,6 +562,7 @@ _.Zones =
 					},
 					["maps"] = { THE_BARRENS, ORGRIMMAR, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 30,
 				}),
 				q(1440, {	-- Return to Vahlarriel
