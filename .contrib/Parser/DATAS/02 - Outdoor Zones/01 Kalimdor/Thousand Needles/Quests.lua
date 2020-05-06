@@ -272,6 +272,8 @@ _.Zones =
 					["coord"] = { 32.23, 22.17, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 23,
+					["isBreadcrumb"] = true,
+									
 				}),
 				q(4841, {	-- Pacify the Centaur
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
