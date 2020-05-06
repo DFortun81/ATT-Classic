@@ -767,6 +767,7 @@ _.Zones =
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
 					["coord"] = { 52.0, 38.2, SILITHUS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 14344, 1 },	-- Large Brilliant Shard
 						{ "i", 20513, 3 },	-- Abyssal Crest
