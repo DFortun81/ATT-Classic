@@ -739,6 +739,7 @@ _.Instances = {
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 50,
+					["isBreadcrumb"] = true,
 				},
 				{
 					["questID"] = 3982,	-- What Is Going On? (1/2)
