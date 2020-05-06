@@ -100,6 +100,9 @@ _.Zones =
 					["coord"] = { 42.4, 69.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1519, -- Call to Earth (1/3 Mulgore)
+							},
 					["cost"] = {
 						{ "i", 6640, 2 },	-- Felstalker Hoof
 					},
@@ -111,6 +114,9 @@ _.Zones =
 					["coord"] = { 42.4, 69.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1520, -- Call to Earth (2/3 Mulgore)
+							},
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
@@ -122,6 +128,9 @@ _.Zones =
 					["coord"] = { 44.0, 76.0, DUROTAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1521, -- Call to Earth (3/3 Mulgore)
+							},
 					["cost"] = {
 						{ "i", 6656, 1 },	-- Rough Quartz
 					},
@@ -203,6 +212,9 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["repeatable"] = true,
+					["altQuests"] = {
+							1462, -- Earth Sapta (Mulgore)
+							},
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
