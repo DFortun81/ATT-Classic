@@ -116,8 +116,8 @@ _.Zones =
 					["lvl"] = 47,
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
-						3790 -- Assisting Arch Druid Staghelm (Ironforge)
-						3763 -- Assisting Arch Druid Staghelm (Darnassus)
+						3790,	-- Assisting Arch Druid Staghelm (Ironforge)
+						3763,	-- Assisting Arch Druid Staghelm (Darnassus)
 					},
 				}),
 				q(1942, {	-- Astral Knot Garment
