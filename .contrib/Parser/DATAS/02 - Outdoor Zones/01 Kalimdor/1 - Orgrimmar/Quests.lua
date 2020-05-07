@@ -669,6 +669,7 @@ _.Zones =
 					["maps"] = { UNDERCITY },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 26,
 				}),
 				q(3631, {	-- Summon Felsteed

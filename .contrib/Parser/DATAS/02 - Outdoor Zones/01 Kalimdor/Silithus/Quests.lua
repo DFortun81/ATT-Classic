@@ -258,6 +258,7 @@ _.Zones =
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle
 					["coord"] = { 48.7, 37.9, SILITHUS },
 					["lvl"] = 54,
+					["isBreadcrumb"] = true,
 				}),
 				q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I

@@ -75,6 +75,9 @@ _.Zones =
 					["coord"] = { 44.8, 76.2, MULGORE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1516, -- Call of Earth (1/3 Durotar)
+							},
 					["cost"] = {
 						{ "i", 6634, 2 },	-- Ritual Salve
 					},
@@ -86,6 +89,9 @@ _.Zones =
 					["coord"] = { 44.8, 76.2, MULGORE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1517, -- Call of Earth (2/3 Durotar)
+							},
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
@@ -97,6 +103,9 @@ _.Zones =
 					["coord"] = { 53.8, 80.4, MULGORE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1518, -- Call of Earth (3/3 Durotar)
+							},
 					["cost"] = {
 						{ "i", 6656, 1 },	-- Rough Quartz
 					},
@@ -153,6 +162,9 @@ _.Zones =
 					["coord"] = { 44.8, 76.2, MULGORE },
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
+					["altQuests"] = {
+							1463, -- Earth Sapta (Durotar)
+							},
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta

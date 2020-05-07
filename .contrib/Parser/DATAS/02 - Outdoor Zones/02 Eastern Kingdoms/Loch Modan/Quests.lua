@@ -242,6 +242,7 @@ _.Zones =
 					["qg"] = 1105,	-- Jern Hornhelm
 					["coord"] = { 37.2, 47.4, LOCH_MODAN },
 					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Jern Hornhelm.",
+					["isBreadcrumb"] = true,
 				}),
 				q(255, {	-- Mercenaries
 					["lvl"] = 15,

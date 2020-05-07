@@ -79,6 +79,7 @@ _.Zones =
 					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["coord"] = { 27.4, 69.4, STRANGLETHORN_VALE },
 					["lvl"] = 55,
+					["isBreadcrumb"] = true,
 				}),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)
