@@ -129,6 +129,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
 					["qg"] = 3387,	-- Jorn Skyseer
+					["isBreadcrumb"] = true,
 				}),
 				q(3786, {	-- Morrowgrain Research
 					["lvl"] = 47,
