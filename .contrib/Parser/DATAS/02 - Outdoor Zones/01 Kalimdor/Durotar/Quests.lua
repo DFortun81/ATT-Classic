@@ -610,7 +610,7 @@ _.Zones =
 					["sourceQuest"] = 788,	-- Cutting Teeth
 					["coord"] = { 42.06, 68.33, DUROTAR },
 					["races"] = { ORC, TROLL },
-					["classes"] = { SHAMAN },
+					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 9579, 1 },	-- Tainted Parchment
 					},
