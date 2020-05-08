@@ -10,6 +10,7 @@ _.Zones =
 					["qg"] = 2981,	-- Chief Hawkwind
 					["coord"] = { 44.2, 76, MULGORE },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(753, {	-- A Humble Task (2/2)
 					["qg"] = 2991,	-- Greatmother Hawkwind

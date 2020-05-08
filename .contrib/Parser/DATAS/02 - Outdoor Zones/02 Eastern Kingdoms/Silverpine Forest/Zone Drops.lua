@@ -19,7 +19,7 @@ _.Zones =
 				}),
 				i(7231, {	-- Astor's Letter of Introduction [TODO: Move this to Class Quests Section]
 					["questID"] = 1898,	-- The Deathstalkers
-					["races"] = HORDE_ONLY,
+					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 					["cr"] = 6497,	-- Astor Hadren
 				}),

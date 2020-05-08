@@ -161,7 +161,7 @@ _.PvP =
 							}),
 							q(7165, {	-- Earned Reverence
 								["qg"] = 13840,	-- Warmaster Laggrond
-								["sourceQuest"] = 7169,	-- Honored Amongst the Guard
+								["sourceQuest"] = 7164,	-- Honored Amongst the Clan
 								["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, REVERED },    -- Frostwolf Clan, Revered
 								["races"] = HORDE_ONLY,
@@ -213,7 +213,7 @@ _.PvP =
 							}),
 							q(7164, {	-- Honored Amongst the Clan
 								["qg"] = 13840,	-- Warmaster Laggrond
-								["sourceQuest"] = 7168,	-- Rise and Be Recognized
+								["sourceQuest"] = 7163,	-- Rise and Be Recognized
 								["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 								["minReputation"] = { 729, HONORED },    -- Frostwolf Clan, Honored
 								["races"] = HORDE_ONLY,
