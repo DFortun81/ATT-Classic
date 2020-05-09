@@ -5853,7 +5853,8 @@ local function RowOnEnter(self)
 				GameTooltip:AddLine("This quest has an incomplete prerequisite quest that you need to complete first.");
 				for i,prereq in ipairs(prereqs) do
 					if prereq.maps then
-						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. C_Map.GetMapInfo(prereq.maps[1]).name .. ")");
+						local mapName = app.GetMapName(prereq.maps[1]);
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
 					else
 						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
 					end
@@ -5862,7 +5863,12 @@ local function RowOnEnter(self)
 			if bc and #bc > 0 then
 				GameTooltip:AddLine("This quest has a breadcrumb quest that you may be unable to complete after completing this one.");
 				for i,prereq in ipairs(bc) do
-					GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					if prereq.maps then
+						local mapName = app.GetMapName(prereq.maps[1]);
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
+					else
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
+					end
 				end
 			end
 		end
