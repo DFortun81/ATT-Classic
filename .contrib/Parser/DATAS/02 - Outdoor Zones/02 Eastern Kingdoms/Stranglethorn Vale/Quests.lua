@@ -59,7 +59,7 @@ _.Zones =
 				}),
 				q(603, {	-- Ansirem's Key
 					["qg"] = 2543,	-- Archmage Ansirem Runeweaver
-					["sourceQuest"] = 603,	-- Magical Analysis
+					["sourceQuest"] = 602,	-- Magical Analysis
 					["coord"] = { 18.8, 78.5, ALTERAC_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 32,
