@@ -69,6 +69,11 @@ profession(LEATHERWORKING, {
 						["requireSkill"] = 10656,
 					},
 					{
+						["name"] = "Dragonscale Gauntlets",
+						["recipeID"] = 10619,
+						["requireSkill"] = 10656,
+					},
+					{
 						["name"] = "Green Dragonscale Gauntlets",
 						["recipeID"] = 24655,
 						["requireSkill"] = 10656,

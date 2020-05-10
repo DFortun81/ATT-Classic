@@ -456,10 +456,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 7954
 			},
 			{
-				["name"] = "Dragonscale Gauntlets",
-				["recipeID"] = 10619
-			},
-			{
 				["name"] = "Embossed Leather Gloves",
 				["recipeID"] = 3756
 			},
