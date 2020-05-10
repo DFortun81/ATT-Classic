@@ -61,3 +61,16 @@ i(12830, 17039);		-- Plans: Corruption
 i(17059, 17039);		-- Plans: Dark Iron Reaver
 i(12836, 17039);		-- Plans: Frostguard
 i(22389, 17039);		-- Plans: Sageblade
+
+-- Elemental Leatherworking
+i(15771, 10658);		-- Pattern: Living Breastplate
+i(15752, 10658);		-- Pattern: Living Leggings
+i(15734, 10658);		-- Pattern: Living Shoulders
+i(19333, 10658);		-- Pattern: Molten Belt
+i(17023, 10658);		-- Pattern: Molten Helm
+i(15753, 10658);		-- Pattern: Stormshroud Armor
+i(21548, 10658);		-- Pattern: Stormshroud Gloves
+i(15741, 10658);		-- Pattern: Stormshroud Pants
+i(15764, 10658);		-- Pattern: Stormshroud Shoulders
+i(15749, 10658);		-- Pattern: Volcanic Breastplate
+i(15775, 10658);		-- Pattern: Volcanic Shoulders

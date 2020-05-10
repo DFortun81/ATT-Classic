@@ -139,14 +139,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19088
 			},
 			{
-				["name"] = "Helm of Fire",
-				["recipeID"] = 10632
-			},
-			{
-				["name"] = "Molten Helm",
-				["recipeID"] = 20854
-			},
-			{
 				["name"] = "Nightscape Headband",
 				["recipeID"] = 10507
 			},
@@ -221,10 +213,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19062
 			},
 			{
-				["name"] = "Living Shoulders",
-				["recipeID"] = 19061
-			},
-			{
 				["name"] = "Nightscape Shoulders",
 				["recipeID"] = 10516
 			},
@@ -233,16 +221,8 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19103
 			},
 			{
-				["name"] = "Stormshroud Shoulders",
-				["recipeID"] = 19090
-			},
-			{
 				["name"] = "Tough Scorpid Shoulders",
 				["recipeID"] = 10564
-			},
-			{
-				["name"] = "Volcanic Shoulders",
-				["recipeID"] = 19101
 			},
 			{
 				["name"] = "Wild Leather Shoulders",
@@ -352,10 +332,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19086
 			},
 			{
-				["name"] = "Living Breastplate",
-				["recipeID"] = 19095
-			},
-			{
 				["name"] = "Moonglow Vest",
 				["recipeID"] = 8322
 			},
@@ -404,10 +380,6 @@ profession(LEATHERWORKING, {
 				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
-				["name"] = "Stormshroud Armor",
-				["recipeID"] = 19079
-			},
-			{
 				["name"] = "Thick Murloc Armor",
 				["recipeID"] = 6704
 			},
@@ -422,10 +394,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Turtle Scale Breastplate",
 				["recipeID"] = 10511
-			},
-			{
-				["name"] = "Volcanic Breastplate",
-				["recipeID"] = 19076
 			},
 			{
 				["name"] = "Warbear Harness",
@@ -580,10 +548,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19087
 			},
 			{
-				["name"] = "Gauntlets of the Sea",
-				["recipeID"] = 10630
-			},
-			{
 				["name"] = "Gloves of the Greatfather",
 				["recipeID"] = 21943
 			},
@@ -654,10 +618,6 @@ profession(LEATHERWORKING, {
 				["name"] = "Spitfire Gauntlets",
 				["recipeID"] = 24847,
 				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
-				["name"] = "Stormshroud Gloves",
-				["recipeID"] = 26279,
 			},
 			{
 				["name"] = "Timbermaw Brawlers",
@@ -751,10 +711,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 23703,
 			},
 			{
-				["name"] = "Molten Belt",
-				["recipeID"] = 23710
-			},
-			{
 				["name"] = "Murloc Scale Belt",
 				["recipeID"] = 6702
 			},
@@ -841,10 +797,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 9068
 			},
 			{
-				["name"] = "Living Leggings",
-				["recipeID"] = 19078
-			},
-			{
 				["name"] = "Nightscape Pants",
 				["recipeID"] = 10548
 			},
@@ -857,10 +809,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19091
 			},
 			{
-				["name"] = "Stormshroud Pants",
-				["recipeID"] = 19067
-			},
-			{
 				["name"] = "Tough Scorpid Leggings",
 				["recipeID"] = 10568
 			},
@@ -871,10 +819,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Volcanic Leggings",
 				["recipeID"] = 19059
-			},
-			{
-				["name"] = "Warbear Woolies",
-				["recipeID"] = 19080
 			},
 			{
 				["name"] = "Wicked Leather Pants",
