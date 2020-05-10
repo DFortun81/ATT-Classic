@@ -756,6 +756,37 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 12,
 				}),
+				q(4485, {	-- The Tome of Nobility
+					["qg"] = 5491,	-- Arthur the Faithful <Paladin Trainer>
+					["coord"] = { 38.7, 32.9, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
+				q(4486, {	-- The Tome of Nobility
+					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
+					["coord"] = { 23.6, 6.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
+				q(1661, {	-- The Tome of Nobility
+					["qg"] = 6171,	-- Duthorian Rall
+					["sourceQuests"] = {
+						4485,	-- The Tome of Nobility
+						4486,	-- The Tome of Nobility
+					},
+					["coord"] = { 40, 29.8, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 40,
+					["groups"] = {
+						recipe(13819),	-- Summon Warhorse
+					},
+				}),
 				q(2607, {	-- The Touch of Zanzil
 					["qg"] = 332,	-- Master Mathias Shaw
 					["sourceQuest"] = 2359,	-- Klaven's Tower

@@ -448,6 +448,8 @@ _.Skills =
 		["races"] = ALLIANCE_ONLY,
 		["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
 		["description"] = "Available to Humans without faction requirements.",
+		["cr"] = 4732,	-- Randal Hunter <Horse Riding Instructor>
+		["coord"] = { 84.2, 65.0, ELWYNN_FOREST },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -456,6 +458,8 @@ _.Skills =
 		["races"] = HORDE_ONLY,
 		["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
 		["description"] = "Available to Taurens without faction requirements.",
+		["cr"] = 3690,	-- Kar Stormsinger <Kodo Riding Instructor>
+		["coord"] = { 47.6, 58.4, MULGORE },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -464,6 +468,8 @@ _.Skills =
 		["races"] = { DWARF, GNOME },
 		["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 		["description"] = "Available to Gnomes without faction requirements.",
+		["cr"] = 7954,	-- Binjy Featherwhistle <Mechanostrider Pilot>
+		["coord"] = { 49.2, 48.0, DUN_MOROGH },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -472,6 +478,8 @@ _.Skills =
 		["races"] = ALLIANCE_ONLY,
 		["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
 		["description"] = "Available to Dwarves without faction requirements.",
+		["cr"] = 4772,	-- Ultham Ironhorn <Ram Riding Instructor>
+		["coord"] = { 63.8, 50.2, DUN_MOROGH },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -480,6 +488,8 @@ _.Skills =
 		["races"] = { ORC, TROLL, UNDEAD },
 		["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
 		["description"] = "Available to Trolls without faction requirements.",
+		["coord"] = { 55.3, 75.5, DUROTAR },
+		["cr"] = 7953,	-- Xar'Ti
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -487,6 +497,7 @@ _.Skills =
 		["recipeID"] = 23214,	-- Summon Charger
 		["classes"] = { PALADIN },
 		["races"] = { HUMAN, DWARF },
+		["sourceQuest"] = 7647,	-- Judgment and Redemption
 		["lvl"] = 60,
 	},
 	{
@@ -513,6 +524,8 @@ _.Skills =
 		["races"] = ALLIANCE_ONLY,
 		["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
 		["description"] = "Available to Night Elves without faction requirements.",
+		["cr"] = 4753,	-- Jartsam <Nightsaber Riding Instructor>
+		["coord"] = { 38.6, 16.0, DARNASSUS },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -521,6 +534,8 @@ _.Skills =
 		["races"] = { ORC, TROLL, UNDEAD },
 		["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
 		["description"] = "Available to Undead without faction requirements.",
+		["cr"] = 4773,	-- Velma Warnam <Undead Horse Riding Instructor>
+		["coord"] = { 60.0, 52.6, TIRISFAL_GLADES },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
@@ -529,6 +544,8 @@ _.Skills =
 		["races"] = HORDE_ONLY,
 		["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
 		["description"] = "Available to Orcs without faction requirements.",
+		["cr"] = 4752,	-- Kildar <Wolf Riding Instructor>
+		["coord"] = { 69.2, 13.0, ORGRIMMAR },
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},

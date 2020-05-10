@@ -988,15 +988,18 @@ _.Zones =
 					},
 				}),
 				q(4488, {	-- Summon Felsteed
-					["lvl"] = 40,
+					["qg"] = 6251,	-- Strahad Farsan
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
-					["qg"] = 6251,	-- Strahad Farsan
+					["lvl"] = 40,
 				}),
 				q(4490, {	-- Summon Felsteed
-					["lvl"] = 40,
-					["classes"] = { WARLOCK },
 					["qg"] = 6251,	-- Strahad Farsan
+					["classes"] = { WARLOCK },
+					["lvl"] = 40,
+					["groups"] = {
+						recipe(5784),	-- Summon Felsteed
+					},
 				}),
 				q(5041, {	-- Supplies for the Crossroads
 					["qg"] = 3429,	-- Thork
