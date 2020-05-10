@@ -963,10 +963,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19093
 			},
 			{
-				["name"] = "Shifting Cloak",
-				["recipeID"] = 22928,
-			},
-			{
 				["name"] = "Wild Leather Cloak",
 				["recipeID"] = 10574
 			}

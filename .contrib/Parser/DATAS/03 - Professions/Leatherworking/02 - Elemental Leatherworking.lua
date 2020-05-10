@@ -112,6 +112,17 @@ profession(LEATHERWORKING, {
 					},
 				}
 			},
+			{
+				["name"] = "Cloaks",
+				["categoryID"] = 57,
+				["g"] = {
+					{
+						["name"] = "Shifting Cloak",
+						["recipeID"] = 22928,
+						["requireSkill"] = 10658,
+					},
+				}
+			},
 		},
 	}),
 });
