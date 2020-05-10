@@ -4475,7 +4475,6 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
-app.SeasonalItemFilter = app.NoFilter;
 app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 app.ShowIncompleteThings = app.Filter;
 
@@ -5867,6 +5866,9 @@ local function RowOnEnter(self)
 					if prereq.maps then
 						local mapName = app.GetMapName(prereq.maps[1]);
 						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
+					elseif prereq.coords then
+						local mapName = app.GetMapName(prereq.coords[1][3]);
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
 					else
 						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
 					end
@@ -5877,6 +5879,9 @@ local function RowOnEnter(self)
 				for i,prereq in ipairs(bc) do
 					if prereq.maps then
 						local mapName = app.GetMapName(prereq.maps[1]);
+						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
+					elseif prereq.coords then
+						local mapName = app.GetMapName(prereq.coords[1][3]);
 						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA) .. " (" .. (mapName or RETRIEVING_DATA) .. ")");
 					else
 						GameTooltip:AddLine("   " .. prereq.questID .. ": " .. (prereq.text or RETRIEVING_DATA));
