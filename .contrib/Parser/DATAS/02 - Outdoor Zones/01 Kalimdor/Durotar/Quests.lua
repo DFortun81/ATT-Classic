@@ -505,9 +505,16 @@ _.Zones =
 					["qg"] = 3287,	-- Hana'zua
 					["coord"] = { 40.60, 62.60, DUROTAR },
 					["races"] = HORDE_ONLY,
-					["cr"] = 3281,	-- Sarkoth
 					["cost"] = {
 						{ "i", 4905, 1 },	-- Sarkoth's Mangled Claw
+					},
+					["groups"] = {
+						{
+							["itemID"] = 4905,	-- Sarkoth's Mangled Claw
+							["questID"] = 790,	-- Sarkoth (1/2)
+							["cr"] = 3281,	-- Sarkoth
+							["coord"] = { 40.6, 66.6, DUROTAR },
+						},
 					},
 				}),
 				q(804, {	-- Sarkoth (2/2)
