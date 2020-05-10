@@ -68,9 +68,30 @@ i(15752, 10658);		-- Pattern: Living Leggings
 i(15734, 10658);		-- Pattern: Living Shoulders
 i(19333, 10658);		-- Pattern: Molten Belt
 i(17023, 10658);		-- Pattern: Molten Helm
+i(18519, 10658);		-- Pattern: Shifting Cloak
 i(15753, 10658);		-- Pattern: Stormshroud Armor
 i(21548, 10658);		-- Pattern: Stormshroud Gloves
 i(15741, 10658);		-- Pattern: Stormshroud Pants
 i(15764, 10658);		-- Pattern: Stormshroud Shoulders
 i(15749, 10658);		-- Pattern: Volcanic Breastplate
 i(15775, 10658);		-- Pattern: Volcanic Shoulders
+-- Tribal Leatherworking
+i(15737, 10660);		-- Pattern: Chimeric Boots
+i(15729, 10660);		-- Pattern: Chimeric Gloves
+i(15746, 10660);		-- Pattern: Chimeric Leggings
+i(15755, 10660);		-- Pattern: Chimeric Vest
+i(19332, 10660);		-- Pattern: Corehound Belt
+i(17022, 10660);		-- Pattern: Corehound Boots
+i(15758, 10660);		-- Pattern: Devilsaur Gauntlets
+i(15772, 10660);		-- Pattern: Devilsaur Leggings
+i(15740, 10660);		-- Pattern: Frostsaber Boots
+i(15761, 10660);		-- Pattern: Frostsaber Gloves
+i(15747, 10660);		-- Pattern: Frostsaber Leggings
+i(15779, 10660);		-- Pattern: Frostsaber Tunic
+i(18518, 10660);		-- Pattern: Hide of the Wild
+i(15760, 10660);		-- Pattern: Ironfeather Breastplate
+i(15735, 10660);		-- Pattern: Ironfeather Shoulders
+i(20253, 10660);		-- Pattern: Warbear Harness
+i(15742, 10660);		-- Pattern: Warbear Harness
+i(20254, 10660);		-- Pattern: Warbear Woolies
+i(15754, 10660);		-- Pattern: Warbear Woolies

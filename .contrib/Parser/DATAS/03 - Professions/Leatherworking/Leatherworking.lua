@@ -162,10 +162,6 @@ profession(LEATHERWORKING, {
 				["name"] = "Wild Leather Helmet",
 				["recipeID"] = 10546
 			},
-			{
-				["name"] = "Wolfshead Helm",
-				["recipeID"] = 10621
-			}
 		}
 	},
 	{
@@ -207,10 +203,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Hillman's Shoulders",
 				["recipeID"] = 3768
-			},
-			{
-				["name"] = "Ironfeather Shoulders",
-				["recipeID"] = 19062
 			},
 			{
 				["name"] = "Nightscape Shoulders",
@@ -259,10 +251,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 19077
 			},
 			{
-				["name"] = "Chimeric Vest",
-				["recipeID"] = 19081
-			},
-			{
 				["name"] = "Dark Leather Tunic",
 				["recipeID"] = 2169
 			},
@@ -283,16 +271,8 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 2160
 			},
 			{
-				["name"] = "Feathered Breastplate",
-				["recipeID"] = 10647
-			},
-			{
 				["name"] = "Fine Leather Tunic",
 				["recipeID"] = 3761
-			},
-			{
-				["name"] = "Frostsaber Tunic",
-				["recipeID"] = 19104
 			},
 			{
 				["name"] = "Green Dragonscale Breastplate",
@@ -326,10 +306,6 @@ profession(LEATHERWORKING, {
 				["name"] = "Icy Scale Breastplate",
 				["recipeID"] = 28222,
 				["u"] = 3,	-- Added in later phase (Naxx)
-			},
-			{
-				["name"] = "Ironfeather Breastplate",
-				["recipeID"] = 19086
 			},
 			{
 				["name"] = "Moonglow Vest",
@@ -394,10 +370,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Turtle Scale Breastplate",
 				["recipeID"] = 10511
-			},
-			{
-				["name"] = "Warbear Harness",
-				["recipeID"] = 19068
 			},
 			{
 				["name"] = "White Leather Jerkin",
@@ -508,10 +480,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 3771
 			},
 			{
-				["name"] = "Chimeric Gloves",
-				["recipeID"] = 19053
-			},
-			{
 				["name"] = "Chromatic Gauntlets",
 				["recipeID"] = 23708
 			},
@@ -522,10 +490,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Deviate Scale Gloves",
 				["recipeID"] = 7954
-			},
-			{
-				["name"] = "Devilsaur Gauntlets",
-				["recipeID"] = 19084
 			},
 			{
 				["name"] = "Dragonscale Gauntlets",
@@ -542,10 +506,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Fletcher's Gloves",
 				["recipeID"] = 9145
-			},
-			{
-				["name"] = "Frostsaber Gloves",
-				["recipeID"] = 19087
 			},
 			{
 				["name"] = "Gloves of the Greatfather",
@@ -655,10 +615,6 @@ profession(LEATHERWORKING, {
 				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
-				["name"] = "Corehound Belt",
-				["recipeID"] = 23709
-			},
-			{
 				["name"] = "Dark Leather Belt",
 				["recipeID"] = 3766
 			},
@@ -749,16 +705,8 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 24654
 			},
 			{
-				["name"] = "Chimeric Leggings",
-				["recipeID"] = 19073
-			},
-			{
 				["name"] = "Dark Leather Pants",
 				["recipeID"] = 7135
-			},
-			{
-				["name"] = "Devilsaur Leggings",
-				["recipeID"] = 19097
 			},
 			{
 				["name"] = "Dusky Leather Leggings",
@@ -771,10 +719,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Fine Leather Pants",
 				["recipeID"] = 7133
-			},
-			{
-				["name"] = "Frostsaber Leggings",
-				["recipeID"] = 19074
 			},
 			{
 				["name"] = "Green Dragonscale Leggings",
@@ -817,10 +761,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 10556
 			},
 			{
-				["name"] = "Volcanic Leggings",
-				["recipeID"] = 19059
-			},
-			{
 				["name"] = "Wicked Leather Pants",
 				["recipeID"] = 19083
 			},
@@ -844,14 +784,6 @@ profession(LEATHERWORKING, {
 				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
-				["name"] = "Chimeric Boots",
-				["recipeID"] = 19063
-			},
-			{
-				["name"] = "Corehound Boots",
-				["recipeID"] = 20853
-			},
-			{
 				["name"] = "Dark Leather Boots",
 				["recipeID"] = 2167
 			},
@@ -870,10 +802,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Fine Leather Boots",
 				["recipeID"] = 2158
-			},
-			{
-				["name"] = "Frostsaber Boots",
-				["recipeID"] = 19066
 			},
 			{
 				["name"] = "Handstitched Leather Boots",
@@ -944,10 +872,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Handstitched Leather Cloak",
 				["recipeID"] = 9058
-			},
-			{
-				["name"] = "Hide of the Wild",
-				["recipeID"] = 22927,
 			},
 			{
 				["name"] = "Hillman's Cloak",
