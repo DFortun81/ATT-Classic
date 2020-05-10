@@ -2405,6 +2405,12 @@ local function RefreshSkills()
 			end
 		end
 	end
+	
+	-- Clone the data for the specializations.
+	for specID,spellID in pairs(app.SpecializationSpellIDs) do
+		local baseSpell = activeSkills[spellID];
+		if baseSpell then activeSkills[specID] = baseSpell; end
+	end
 end
 local function RefreshCollections()
 	StartCoroutine("RefreshingCollections", function()
@@ -4044,15 +4050,21 @@ app.SkillIDToSpellID = setmetatable({
 	[17041] = 17041,	-- Master Axesmith
 	[17040] = 17040,	-- Master Hammersmith
 	[17039] = 17039,	-- Master Swordsmith
+	[10656] = 10656,	-- Dragonscale Leatherworking
+	[10658] = 10658,	-- Elemental Leatherworking
+	[10660] = 10660,	-- Tribal Leatherworking
 }, {__index = function(t,k) return k; end})
 app.SpecializationSpellIDs = setmetatable({
-	[20219] = 20219,	-- Gnomish Engineering
-	[20222] = 20222,	-- Goblin Engineering
-	[9788] = 9788,		-- Armorsmith
-	[9787] = 9787,		-- Weaponsmith
-	[17041] = 17041,	-- Master Axesmith
-	[17040] = 17040,	-- Master Hammersmith
-	[17039] = 17039,	-- Master Swordsmith
+	[20219] = 4036,	-- Gnomish Engineering
+	[20222] = 4036,	-- Goblin Engineering
+	[9788] = 2018,	-- Armorsmith
+	[9787] = 2018,	-- Weaponsmith
+	[17041] = 9787,	-- Master Axesmith
+	[17040] = 9787,	-- Master Hammersmith
+	[17039] = 9787,	-- Master Swordsmith
+	[10656] = 2108,	-- Dragonscale Leatherworking
+	[10658] = 2108,	-- Elemental Leatherworking
+	[10660] = 2108,	-- Tribal Leatherworking
 }, {__index = function(t,k) return k; end})
 app.BaseProfession = {
 	__index = function(t, key)
