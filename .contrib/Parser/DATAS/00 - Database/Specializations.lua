@@ -62,6 +62,19 @@ i(17059, 17039);		-- Plans: Dark Iron Reaver
 i(12836, 17039);		-- Plans: Frostguard
 i(22389, 17039);		-- Plans: Sageblade
 
+-- Dragonscale Leatherworking
+i(18517, 10656);		-- Pattern: Chromatic Cloak
+i(19331, 10656);		-- Pattern: Chromatic Gauntlets
+i(17025, 10656);		-- Pattern: Black Dragonscale Boots
+i(15759, 10656);		-- Pattern: Black Dragonscale Breastplate
+i(15781, 10656);		-- Pattern: Black Dragonscale Leggings
+i(15770, 10656);		-- Pattern: Black Dragonscale Shoulders
+i(15751, 10656);		-- Pattern: Blue Dragonscale Breastplate
+i(15763, 10656);		-- Pattern: Blue Dragonscale Shoulders
+i(20382, 10656);		-- Pattern: Dreamscale Breastplate
+i(15730, 10656);		-- Pattern: Red Dragonscale Breastplate
+i(15726, 10656);		-- Pattern: Green Dragonscale Breastplate
+i(15733, 10656);		-- Pattern: Green Dragonscale Leggings
 -- Elemental Leatherworking
 i(15771, 10658);		-- Pattern: Living Breastplate
 i(15752, 10658);		-- Pattern: Living Leggings

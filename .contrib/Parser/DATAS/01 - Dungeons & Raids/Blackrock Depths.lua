@@ -803,7 +803,7 @@ _.Instances = {
 						8898,	-- Anvilrage Marshal
 					},
 				}),
-				i(14486, {	-- Pattern: CLoak of Fire
+				i(14486, {	-- Pattern: Cloak of Fire
 					["cr"] = 9026,	-- Overmaster Pyron
 				}),
 				i(11614, { 	-- Plans: Dark Iron Mail
@@ -1108,7 +1108,7 @@ _.Instances = {
 			}),
 			n(9499, {	-- Plugger Spazzring
 				n(-2, { 	-- Vendors
-					i(15759),	-- Pattern:	Black Dragonscale Breastplate
+					i(15759),	-- Pattern: Black Dragonscale Breastplate
 					i(13483),	-- Recipe: Transmute Fire to Earth
 					i(11325),	-- Dark Iron Ale Mug
 				}),

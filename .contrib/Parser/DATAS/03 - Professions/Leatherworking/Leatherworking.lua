@@ -173,16 +173,8 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 7151
 			},
 			{
-				["name"] = "Black Dragonscale Shoulders",
-				["recipeID"] = 19094
-			},
-			{
 				["name"] = "Blood Tiger Shoulders",
 				["recipeID"] = 24125,
-			},
-			{
-				["name"] = "Blue Dragonscale Shoulders",
-				["recipeID"] = 19089
 			},
 			{
 				["name"] = "Dark Leather Shoulders",
@@ -235,10 +227,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 10520
 			},
 			{
-				["name"] = "Black Dragonscale Breastplate",
-				["recipeID"] = 19085
-			},
-			{
 				["name"] = "Black Whelp Tunic",
 				["recipeID"] = 24940
 			},
@@ -247,20 +235,8 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 24124,
 			},
 			{
-				["name"] = "Blue Dragonscale Breastplate",
-				["recipeID"] = 19077
-			},
-			{
 				["name"] = "Dark Leather Tunic",
 				["recipeID"] = 2169
-			},
-			{
-				["name"] = "Dragonscale Breastplate",
-				["recipeID"] = 10650
-			},
-			{
-				["name"] = "Dreamscale Breastplate",
-				["recipeID"] = 24703
 			},
 			{
 				["name"] = "Dusky Leather Armor",
@@ -273,10 +249,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Fine Leather Tunic",
 				["recipeID"] = 3761
-			},
-			{
-				["name"] = "Green Dragonscale Breastplate",
-				["recipeID"] = 19050
 			},
 			{
 				["name"] = "Green Leather Armor",
@@ -336,10 +308,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Raptor Hide Harness",
 				["recipeID"] = 4096
-			},
-			{
-				["name"] = "Red Dragonscale Breastplate",
-				["recipeID"] = 19054
 			},
 			{
 				["name"] = "Runic Leather Armor",
@@ -480,10 +448,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 3771
 			},
 			{
-				["name"] = "Chromatic Gauntlets",
-				["recipeID"] = 23708
-			},
-			{
 				["name"] = "Dark Leather Gloves",
 				["recipeID"] = 3765
 			},
@@ -510,10 +474,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Gloves of the Greatfather",
 				["recipeID"] = 21943
-			},
-			{
-				["name"] = "Green Dragonscale Gauntlets",
-				["recipeID"] = 24655
 			},
 			{
 				["name"] = "Guardian Gloves",
@@ -697,14 +657,6 @@ profession(LEATHERWORKING, {
 				["recipeID"] = 10560
 			},
 			{
-				["name"] = "Black Dragonscale Leggings",
-				["recipeID"] = 19107
-			},
-			{
-				["name"] = "Blue Dragonscale Leggings",
-				["recipeID"] = 24654
-			},
-			{
 				["name"] = "Dark Leather Pants",
 				["recipeID"] = 7135
 			},
@@ -719,10 +671,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Fine Leather Pants",
 				["recipeID"] = 7133
-			},
-			{
-				["name"] = "Green Dragonscale Leggings",
-				["recipeID"] = 19060
 			},
 			{
 				["name"] = "Guardian Pants",
@@ -774,10 +722,6 @@ profession(LEATHERWORKING, {
 		["name"] = "Boots",
 		["categoryID"] = 56,
 		["g"] = {
-			{
-				["name"] = "Black Dragonscale Boots",
-				["recipeID"] = 20855
-			},
 			{
 				["name"] = "Bramblewood Boots",
 				["recipeID"] = 28473,
@@ -840,10 +784,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Black Whelp Cloak",
 				["recipeID"] = 9070
-			},
-			{
-				["name"] = "Chromatic Cloak",
-				["recipeID"] = 22926,
 			},
 			{
 				["name"] = "Dark Leather Cloak",
