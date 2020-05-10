@@ -2409,7 +2409,7 @@ local function RefreshSkills()
 	-- Clone the data for the specializations.
 	for specID,spellID in pairs(app.SpecializationSpellIDs) do
 		local baseSpell = activeSkills[spellID];
-		if baseSpell then activeSkills[specID] = baseSpell; end
+		if baseSpell and app.GetTempDataSubMember("CollectedSpells", specID) then activeSkills[specID] = baseSpell; end
 	end
 end
 local function RefreshCollections()
