@@ -6544,6 +6544,24 @@ function app:GetWindow(suffix, parent, onUpdate)
 	end
 	return window;
 end
+function app:BuildSearchResponse(groups, field, value)
+	if groups then
+		local t;
+		for i,group in ipairs(groups) do
+			if group[field] == value then
+				if not t then t = {}; end
+				tinsert(t, CloneData(group));
+			elseif group.g then
+				local response = app:BuildSearchResponse(group.g, field, value);
+				if response then
+					if not t then t = {}; end
+					tinsert(t, setmetatable({g=response}, { __index = group }));
+				end
+			end
+		end
+		return t;
+	end
+end
 
 -- Create the Primary Collection Window (this allows you to save the size and location)
 app:GetWindow("Prime"):SetSize(425, 305);
@@ -8374,6 +8392,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if not cache then
 								cache = CloneData(group);
 								self.cache[group.spellID] = cache;
+								local requireSkill = cache.requireSkill;
+								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
+								if response then tinsert(cache.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
+								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
+								if response then tinsert(cache.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
+								if response then tinsert(cache.g, {text=TRANSMOG_SOURCE_4,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
 							end
 							table.insert(g, cache);
 						end

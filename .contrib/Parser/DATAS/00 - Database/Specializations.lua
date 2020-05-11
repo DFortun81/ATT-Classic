@@ -87,6 +87,7 @@ i(21548, 10658);		-- Pattern: Stormshroud Gloves
 i(15741, 10658);		-- Pattern: Stormshroud Pants
 i(15764, 10658);		-- Pattern: Stormshroud Shoulders
 i(15749, 10658);		-- Pattern: Volcanic Breastplate
+i(15732, 10658);		-- Pattern: Volcanic Leggings
 i(15775, 10658);		-- Pattern: Volcanic Shoulders
 -- Tribal Leatherworking
 i(15737, 10660);		-- Pattern: Chimeric Boots
