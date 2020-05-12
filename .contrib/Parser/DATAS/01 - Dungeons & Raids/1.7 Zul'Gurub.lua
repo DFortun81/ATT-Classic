@@ -1427,11 +1427,6 @@ _.Instances = {
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
 					i(22739),	-- Tome of Polymorph: Turtle
-					{
-						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
-						["recipeID"] = 28271,	-- Polymorph (Turtle)
-						["classes"] = { MAGE },
-					},
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
