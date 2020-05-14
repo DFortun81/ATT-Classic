@@ -1426,7 +1426,10 @@ _.Instances = {
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					i(22739),	-- Tome of Polymorph: Turtle
+					{
+						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
+						["classes"] = { MAGE },
+					},
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk
