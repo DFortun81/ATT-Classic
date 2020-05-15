@@ -2309,7 +2309,7 @@ end
 local function OpenMainList()
 	app:OpenWindow("Prime");
 end
-local function RefreshSavesCoroutine()
+local function RefreshSaves()
 	local waitTimer = 30;
 	while waitTimer > 0 do
 		coroutine.yield();
@@ -2385,9 +2385,6 @@ local function RefreshSavesCoroutine()
 	-- Mark that we're done now.
 	app:UpdateWindows(nil, true);
 end
-local function RefreshSaves()
-	StartCoroutine("RefreshSaves", RefreshSavesCoroutine);
-end
 local function RefreshSkills()
 	-- Store Skill Data
 	local activeSkills = GetTempDataMember("ActiveSkills");
@@ -2438,7 +2435,6 @@ app.ToggleMainList = function()
 	app:ToggleWindow("Prime");
 end
 app.RefreshCollections = RefreshCollections;
-app.RefreshSaves = RefreshSaves;
 app.OpenMainList = OpenMainList;
 
 -- Tooltip Functions
@@ -5435,14 +5431,7 @@ local function RowOnClick(self, button)
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = reference.link or reference.silentLink;
 				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
-				
-				-- If you're looking at the Profession Window, Shift Clicking will replace the search string instead.
-				if app:GetWindow("Tradeskills"):IsShown() then
-					
-				elseif button == "LeftButton" then
-					-- Default behaviour is to Refresh Collections.
-					RefreshCollections(reference);
-				end
+				if button == "LeftButton" then RefreshCollections(); end
 				return true;
 			end
 		end
@@ -9010,7 +8999,7 @@ app.events.PLAYER_LOGIN = function()
 	app:RegisterEvent("QUEST_ACCEPTED");
 	app:RegisterEvent("QUEST_TURNED_IN");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
-	RefreshSaves();
+	StartCoroutine("RefreshSaves", RefreshSaves);
 	app.CacheFlightPathData();
 	app:RefreshData(false);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
@@ -9612,9 +9601,8 @@ app.events.ZONE_CHANGED_NEW_AREA = function()
 	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
-	-- We got new information, not refresh the saves. :D
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
-	RefreshSaves();
+	StartCoroutine("RefreshSaves", RefreshSaves);
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	wipe(searchCache);
