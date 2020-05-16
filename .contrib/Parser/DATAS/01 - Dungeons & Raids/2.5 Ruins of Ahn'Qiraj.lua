@@ -701,9 +701,30 @@ _.Instances = {
 				i(21479),	-- Gauntlets of the Immovable
 				i(21484),	-- Helm of Regrowth
 				i(21480),	-- Scaled Silithid Gauntlets
-				i(21481),	-- Boots of the Desert Protector
 				i(21483),	-- Ring of the Desert Winds
-				i(21482),	-- Boots of the Fiery Sands
+				i(21481),	-- Boots of the Desert Protector
+				i(21482, {	-- Boots of the Fiery Sands
+					["timeline"] = {
+						"added 1.13.0.28211",
+						"removed 4.2.2.28211"
+					},
+				}),
+			}),
+			n(15340, { 	-- Moam
+				i(21471),	-- Talon of Furious Concentration
+				i(21455),	-- Southwind Helm
+				i(21472),	-- Dustwind Turbin
+				i(21474),	-- Chitinous Shoulderguards
+				i(21468),	-- Mantle of Maz'Nadir
+				i(21470),	-- Cloak of the Savior
+				i(21467),	-- Thick Silithis Chestguard
+				i(21469),	-- Gauntlets of Southwind
+				i(21479),	-- Gauntlets of the Immovable
+				i(21475),	-- Legplates of the Destroyer
+				i(21476),	-- Obsidian Scaled Leggings
+				i(21477),	-- Ring of Fury
+				i(21473),	-- Eye of Moam
+				i(22220),	-- Plans: Black Grasp of the Destroyer
 			}),
 			n(15339, { 	-- Ossirian the Unscarred
 				{
@@ -723,22 +744,6 @@ _.Instances = {
 				i(21463),	-- Ossirian's Binding
 				i(21461),	-- Leggings of the Black Blizzard
 				i(21453),	-- Mantle of the Horusath
-			}),
-			n(15340, { 	-- Moam
-				i(21471),	-- Talon of Furious Concentration
-				i(21455),	-- Southwind Helm
-				i(21472),	-- Dustwind Turbin
-				i(21474),	-- Chitinous Shoulderguards
-				i(21468),	-- Mantle of Maz'Nadir
-				i(21470),	-- Cloak of the Savior
-				i(21467),	-- Thick Silithis Chestguard
-				i(21469),	-- Gauntlets of Southwind
-				i(21479),	-- Gauntlets of the Immovable
-				i(21475),	-- Legplates of the Destroyer
-				i(21476),	-- Obsidian Scaled Leggings
-				i(21477),	-- Ring of Fury
-				i(21473),	-- Eye of Moam
-				i(22220),	-- Plans: Black Grasp of the Destroyer
 			}),
 		},
 	}),

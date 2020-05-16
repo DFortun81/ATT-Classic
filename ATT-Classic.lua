@@ -1608,9 +1608,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 				for left,splitCount in pairs(splitCounts) do
 					if splitCount.count < 6 then
-						for i,right in ipairs(splitCount.variants) do
-							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+						if #splitCount.variants < 1 then
+							tinsert(info, 1, { left = left, wrap = not string.find(left, " -> ") });
 							count = count + 1;
+						else
+							for i,right in ipairs(splitCount.variants) do
+								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+								count = count + 1;
+							end
 						end
 					else
 						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " -> ") });
