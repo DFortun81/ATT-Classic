@@ -2685,7 +2685,7 @@ _.WorldDrops =
 		cl(WARLOCK, {
 			un(3, i(22891)),	-- Grimoire of Shadow Ward IV [Phase 6]
 		}),
-		profession(ALCHEMY, {
+		prof(ALCHEMY, {
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
 			i(9297),	-- Recipe: Elixir of Dream Vision
 			i(3830),	-- Recipe: Elixir of Fortitude
@@ -2708,7 +2708,7 @@ _.WorldDrops =
 			i(13486),	-- Recipe: Transmute Undeath to Water
 			i(13487),	-- Recipe: Transmute Water to Undeath
 		}),
-		profession(BLACKSMITHING, {
+		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe
 			i(3609),	-- Plans: Copper Chain Vest
 			i(12698),	-- Plans: Dawnbringer Shoulders
@@ -2766,7 +2766,7 @@ _.WorldDrops =
 			i(12711),	-- Plans: Whitesoul Helm
 			i(12691),	-- Plans: Wildthorn Mail
 		}),
-		profession(ENCHANTING, {
+		prof(ENCHANTING, {
 			i(11038),	-- Formula: Enchant 2H Weapon - Lesser Spirit
 			i(16245),	-- Formula: Enchant Boots - Greater Agility
 			i(16215),	-- Formula: Enchant Boots - Greater Stamina
@@ -2791,7 +2791,7 @@ _.WorldDrops =
 			i(11165),	-- Formula: Enchant Weapon - Lesser Elemental Slayer
 			i(6348),	-- Formula: Enchant Weapon - Minor Beastslayer
 		}),
-		profession(ENGINEERING, {
+		prof(ENGINEERING, {
 			i(16055),	-- Schematic: Arcane Bomb
 			i(10601),	-- Schematic: Bright-Eye Goggles
 			i(10603),	-- Schematic: Catseye Ultra Goggles
@@ -2804,10 +2804,10 @@ _.WorldDrops =
 			i(16043),	-- Schematic: Thorium Rifle
 			i(16051),	-- Schematic: Thorium Shells
 		}),
-		profession(FIRST_AID, {
+		prof(FIRST_AID, {
 			i(6454),	-- Manual: Strong Anti-Venom
 		}),
-		profession(LEATHERWORKING, {
+		prof(LEATHERWORKING, {
 			i(4301),	-- Pattern: Barbaric Belt
 			i(4297),	-- Pattern: Barbaric Gloves
 			i(8390),	-- Pattern: Big Voodoo Cloak
@@ -2845,7 +2845,7 @@ _.WorldDrops =
 			i(2407),	-- Pattern: White Leather Jerkin
 			i(15757),	-- Pattern: Wicked Leather Pants
 		}),
-		profession(TAILORING, {
+		prof(TAILORING, {
 			i(7085),	-- Pattern: Azure Shoulders
 			i(4352),	-- Pattern: Boots of the Enchanter
 			i(14510),	-- Pattern: Bottomless Bag

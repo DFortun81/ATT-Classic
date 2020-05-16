@@ -626,7 +626,8 @@ local function BuildGroups(parent, g)
 end
 local function BuildSourceText(group, l)
 	if group.parent then
-		if not group.itemID and (group.parent.npcID or (group.parent.spellID and group.categoryID)) and ((group.parent.npcID == -2 or group.parent.npcID == -17 or group.parent.npcID == -7) or (group.parent.parent and group.parent.parent.parent)) then --  
+		if not group.itemID and (group.parent.key == "filterID" or group.parent.key == "spellID" or ((group.parent.npcID or (group.parent.spellID and group.categoryID)) 
+			and ((group.parent.npcID == -2 or group.parent.npcID == -17 or group.parent.npcID == -7) or (group.parent.parent and group.parent.parent.parent)))) then
 			return BuildSourceText(group.parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (group.parent.text or RETRIEVING_DATA) .. ")";
 		end
 		if group.npcID then
@@ -639,6 +640,9 @@ local function BuildSourceText(group, l)
 			if group.parent.parent then
 				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 			end
+		end
+		if group.key == "filterID" or group.key == "spellID" then
+			return BuildSourceText(group.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 		end
 		if l < 1 then
 			if group.dr then
@@ -1595,7 +1599,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						splitCount = { count = 0,variants ={} };
 						splitCounts[left] = splitCount;
 					end
-					if right then
+					if right and not contains(splitCount.variants, right) then
 						table.insert(splitCount.variants, right);
 						if string.find(right, BATTLE_PET_SOURCE_2) then
 							splitCount.count = splitCount.count + 1;
@@ -1603,19 +1607,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					end
 				end
 				for left,splitCount in pairs(splitCounts) do
-					if splitCount.count < 5 then
-						if #splitCount.variants < 1 then
-							tinsert(info, 1, { left = left, right = nil, wrap = not string.find(left, " -> ") });
+					if splitCount.count < 6 then
+						for i,right in ipairs(splitCount.variants) do
+							tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
 							count = count + 1;
-						else
-							for i,right in ipairs(splitCount.variants) do
-								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
-								count = count + 1;
-							end
 						end
 					else
 						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " -> ") });
 						count = count + 1;
+						for i,right in ipairs(splitCount.variants) do
+							if not string.find(right, BATTLE_PET_SOURCE_2) then
+								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+								count = count + 1;
+							end
+						end
 					end
 				end
 				if count > maximum + 1 then
@@ -6375,7 +6380,7 @@ function app:RefreshData(lazy, got, manual)
 		-- While the player is in combat, wait for combat to end.
 		while InCombatLockdown() do coroutine.yield(); end
 		
-		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay. [This should fix a lot of lag with ensembles.]
+		-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay.
 		while app.countdown > 0 do
 			app.countdown = app.countdown - 1;
 			coroutine.yield();
