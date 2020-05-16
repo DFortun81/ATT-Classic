@@ -10,6 +10,33 @@ _.Instances = {
 		["lvl"] = 50,
 		["groups"] = {
 			n(QUESTS, {
+				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
+					
+				})),
+				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
+					
+				})),
+				cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
+					
+				})),
+				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
+					
+				})),
+				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
+					
+				})),
+				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
+					
+				})),
+				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+					
+				})),
+				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
+					
+				})),
+				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
+					
+				})),
 				faction(910, { 	-- Quests / Brood of Nozdormu
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 				}),
@@ -508,27 +535,11 @@ _.Instances = {
 						15299,	-- Viscidus
 					},
 				}),
-				i(21762, {	-- Greater Scarab Coffer Key
-					o(180690, {	-- Large Scarab Coffe
-						i(21156, {	-- Scarab Bag
-							i(20861),	-- Bronze Scarab
-							i(20859),	-- Gold Scarab
-							i(20862),	-- Crystal Scarab
-							i(20865),	-- Ivory Scarab
-							i(20860),	-- Silver Scarab
-							i(20858),	-- Stone Scarab
-							i(20864),	-- Bone Scarab
-							i(20863),	-- Clay Scarab
-						}),
-						i(20876),	-- Idol of Death
-						i(20875),	-- Idol of Night
-						i(20881),	-- Idol of Strife
-						i(20877),	-- Idol of the Sage
-						i(20874),	-- Idol of the Sun
-						i(20882),	-- Idol of War
-						i(20879),	-- Idol of Life
-						i(20878),	-- Idol of Rebirth
-					}),
+				
+				i(76402, {	-- Greater Scarab Coffer Key
+					["timeline"] = {
+						"added 4.3.0.15005"
+					},
 				}),
 				{	-- Ancient Qiraji Artifact
 					["itemID"] = 21230,	-- Ancient Qiraji Artifact
@@ -569,62 +580,10 @@ _.Instances = {
 				},
 			}),
 			n(ZONEDROPS, {
-				i(21218, {	-- Blue Qiraji Resonating Crystal
-					["crs"] = {
-						15277,	-- Anubisath Defender
-						15264,	-- Anubisath Sentinel
-						15311,	-- Anubisath Warder
-						15262,	-- Obsidian Eradicator
-						15312,	-- Obsidian Nullifier
-						15247,	-- Qiraji Brainwasher
-						15252,	-- Qiraji Champion
-						15249,	-- Qiraji Lasher
-						15246,	-- Qiraji Mindslayer
-						15250,	-- Qiraji Slayer
-					},
-				}),
-				i(21323, {	-- Green Qiraji Resonating Crystal
-					["crs"] = {
-						15277,	-- Anubisath Defender
-						15264,	-- Anubisath Sentinel
-						15311,	-- Anubisath Warder
-						15262,	-- Obsidian Eradicator
-						15312,	-- Obsidian Nullifier
-						15247,	-- Qiraji Brainwasher
-						15252,	-- Qiraji Champion
-						15249,	-- Qiraji Lasher
-						15246,	-- Qiraji Mindslayer
-						15250,	-- Qiraji Slayer
-					},
-				}),
-				i(21321, {	-- Red Qiraji Resonating Crystal
-					["crs"] = {
-						15277,	-- Anubisath Defender
-						15264,	-- Anubisath Sentinel
-						15311,	-- Anubisath Warder
-						15262,	-- Obsidian Eradicator
-						15312,	-- Obsidian Nullifier
-						15247,	-- Qiraji Brainwasher
-						15252,	-- Qiraji Champion
-						15249,	-- Qiraji Lasher
-						15246,	-- Qiraji Mindslayer
-						15250,	-- Qiraji Slayer
-					},
-				}),
-				i(21324, {	-- Yellow Qiraji Resonating Crystal
-					["crs"] = {
-						15277,	-- Anubisath Defender
-						15264,	-- Anubisath Sentinel
-						15311,	-- Anubisath Warder
-						15262,	-- Obsidian Eradicator
-						15312,	-- Obsidian Nullifier
-						15247,	-- Qiraji Brainwasher
-						15252,	-- Qiraji Champion
-						15249,	-- Qiraji Lasher
-						15246,	-- Qiraji Mindslayer
-						15250,	-- Qiraji Slayer
-					},
-				}),
+				i(21218),	-- Blue Qiraji Resonating Crystal
+				i(21323),	-- Green Qiraji Resonating Crystal
+				i(21321),	-- Red Qiraji Resonating Crystal
+				i(21324),	-- Yellow Qiraji Resonating Crystal
 				i(21837, {	-- Anubisath Warhammer
 					["crs"] = {
 						15264,	-- Anubisath Sentinel
@@ -725,6 +684,48 @@ _.Instances = {
 						15240,	-- Vekniss Hive Crawler
 					},
 				}),
+				i(20876),	-- Idol of Death
+				i(20879),	-- Idol of Life
+				i(20875),	-- Idol of Night
+				i(20878),	-- Idol of Rebirth
+				i(20881),	-- Idol of Strife
+				i(20877),	-- Idol of the Sage
+				i(20874),	-- Idol of the Sun
+				i(20882),	-- Idol of War
+				i(20864),	-- Bone Scarab
+				i(20861),	-- Bronze Scarab
+				i(20863),	-- Clay Scarab
+				i(20862),	-- Crystal Scarab
+				i(20859),	-- Gold Scarab
+				i(20865),	-- Ivory Scarab
+				i(20860),	-- Silver Scarab
+				i(20858),	-- Stone Scarab
+				i(21762, {	-- Greater Scarab Coffer Key
+					["timeline"] = {
+						"added 1.13.0.28211",
+						"deleted 4.2.2.28211"
+					},
+				}),
+				i(21156, {	-- Scarab Bag
+					["description"] = "Contains a couple of random scarabs.",
+				}),
+			}),
+			o(180690, {	-- Large Scarab Coffer
+				["cost"] = {
+					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
+					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+				},
+				["groups"] = {
+					i(21156),	-- Scarab Bag
+					i(20876),	-- Idol of Death
+					i(20879),	-- Idol of Life
+					i(20875),	-- Idol of Night
+					i(20878),	-- Idol of Rebirth
+					i(20881),	-- Idol of Strife
+					i(20877),	-- Idol of the Sage
+					i(20874),	-- Idol of the Sun
+					i(20882),	-- Idol of War
+				},
 			}),
 			n(15263, {	-- The Prophet Skeram
 				i(22222),	-- Plans: Thick Obisidan Breastplate
