@@ -27,7 +27,7 @@ _.Instances = {
 						i(17753),	-- Verdant Keeper's Aim
 					},
 				},
-				q(7046, {	-- Legends of Maraudon
+				q(7044, {	-- Legends of Maraudon
 					["qg"] = 13697,	-- Cavindra
 					["coord"] = { 32.1, 64.0, DESOLACE },
 					["maps"] = { DESOLACE },
@@ -154,7 +154,7 @@ _.Instances = {
 				}),
 				q(7046, {	-- The Scepter of Celebras
 					["qg"] = 13716,	-- Celebras the Redeemed
-					["sourceQuest"] = 7046,	-- Legends of Maraudon
+					["sourceQuest"] = 7044,	-- Legends of Maraudon
 					["lvl"] = 41,
 					["groups"] = {
 						{
