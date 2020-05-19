@@ -17,6 +17,28 @@ local GetItemStats = _G["GetItemStats"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+local protectedAura = {
+	[22888]=true,	-- Rallying Cry of the Dragonslayer
+	[16609]=true,	-- Warchief's Blessing
+	[15366]=true,	-- Songflower Serenade
+	[24425]=true,	-- Spirit of Zandalar
+	[17538]=true,	-- Elixir of the Mongoose
+	[20875]=true,	-- Rumsey Rum
+};
+local origBuffButton_OnClick = _G["BuffButton_OnClick"];
+function BuffButton_OnClick(self, ...)
+	if self.unit == "player" then
+		local name, _, _, _, _, _, _, _, _, spellID = UnitAura(self.unit, self:GetID(), self.filter);
+		if spellID then
+			print(name, spellID);
+			if protectedAura[spellID] then
+				print("HOW ABOUT NOOOO");
+				return false;
+			end
+		end
+	end
+	return origBuffButton_OnClick(self, ...);
+end
 
 -- Coroutine Helper Functions
 app.RawData = {};
@@ -3247,7 +3269,7 @@ app.BaseFaction = {
 		elseif key == "filterID" then
 			return 112;
 		elseif key == "text" then
-			return app.GetFactionStandingColor(t.standing, t.name);
+			return app.ColorizeStandingText(t.standing, t.name);
 		elseif key == "trackable" or key == "collectible" then
 			return app.CollectibleReputations;
 		elseif key == "saved" or key == "collected" then
@@ -3296,10 +3318,19 @@ app.GetFactionStanding = function(reputationPoints)
 	end
 end
 app.GetFactionStandingText = function(standingID)
-	return app.GetFactionStandingColor(standingID, _G["FACTION_STANDING_LABEL" .. standingID]);
+	local text = _G["FACTION_STANDING_LABEL" .. standingID];
+	return text and app.ColorizeStandingText(standingID, text) or "|cCC222200UNKNOWN|r"
 end
-app.GetFactionStandingColor = function(standingID, text)
-	if text then 
+app.ColorizeStandingText = function(standingID, text)
+	if standingID == 1 then return "|c00CC2222" .. text .. "|r"
+	elseif standingID == 2 then return "|c00FF0000" .. text .. "|r"
+	elseif standingID == 3 then return "|c00EE6622" .. text .. "|r"
+	elseif standingID == 4 then return "|c00FFFF00" .. text .. "|r"
+	elseif standingID == 5 then return "|c0000FF00" .. text .. "|r"
+	elseif standingID == 6 then return "|c0000FF88" .. text .. "|r"
+	elseif standingID == 7 then return "|c0000FFCC" .. text .. "|r"
+	elseif standingID == 8 then return "|c0000FFFF" .. text .. "|r"
+	else
 		local rgb = FACTION_BAR_COLORS[standingID];
 		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 	end
@@ -5577,7 +5608,7 @@ local function RowOnEnter(self)
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = "Requires a minimum standing of"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. " with " .. factionName .. "."
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
@@ -5585,7 +5616,7 @@ local function RowOnEnter(self)
 			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
 			local msg = "Requires a standing lower than"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId, true) .. " with " .. factionName .. "."
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. factionName .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
@@ -5594,9 +5625,9 @@ local function RowOnEnter(self)
 			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = "Requires a standing between"
 			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId, true) .. " and"
+			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
 			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId, true) .. " with " .. factionName .. ".";
+			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. factionName .. ".";
 			GameTooltip:AddLine(msg);
 		end
 		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
@@ -7245,19 +7276,18 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					group = clone;
 					
 					-- If this is relative to a holiday, let's do something special
-					if GetRelativeField(group, "npcID", -5) then
-						local holidayID = GetRelativeValue(group, "holidayID");
-						local u = group.u or GetRelativeValue(group, "u");
+					local holidayID = GetRelativeValue(group, "holidayID");
+					if holidayID or GetRelativeField(group, "npcID", -5) then
 						if group.key == "npcID" then
 							if GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group }, u = u }); end
+								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
 							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
 							end
 						elseif group.key == "questID" then
-							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group }, u = u }); end
+							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
 						end
-						if holidayID then group = app.CreateHoliday(holidayID, { g = { group }, u = u }); end
+						if holidayID then group = app.CreateHoliday(holidayID, { g = { group } }); end
 						MergeObject(holiday, group);
 					elseif group.key == "mapID" then
 						header.key = group.key;

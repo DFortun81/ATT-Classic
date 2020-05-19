@@ -29,7 +29,6 @@ _.Factions =
 				}),
 				faction(509, {	-- The League of Arathor
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 			}),
 		},
@@ -57,7 +56,6 @@ _.Factions =
 				}),
 				faction(510, {	-- The Defilers
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase
 				}),
 				faction(889, {	-- Warsong Outriders
 					["races"] = HORDE_ONLY,
@@ -72,12 +70,12 @@ _.Factions =
 	}),
 	faction(609),	-- Cenarion Circle
 	faction(92, {	-- Gelkis Clan Centaur
-		["u"] = 1,
+		["collectible"] = false,
 		["description"] = "You are not able to reach exalted with this faction.",
 	}),
 	faction(749),	-- Hydraxian Waterlords
 	faction(93, {	-- Magram Clan Centaur
-		["u"] = 1,
+		["collectible"] = false,
 		["description"] = "You are not able to reach exalted with this faction.",
 	}),
 	faction(349),	-- Ravenholdt
@@ -97,7 +95,5 @@ _.Factions =
 	faction(589, {	-- Wintersaber Trainers
 		["races"] = ALLIANCE_ONLY,
 	}),
-	faction(270, {	-- Zandalar Tribe
-		["u"] = 3,	-- Added in later phase
-	}),
+	faction(270),	-- Zandalar Tribe
 };
