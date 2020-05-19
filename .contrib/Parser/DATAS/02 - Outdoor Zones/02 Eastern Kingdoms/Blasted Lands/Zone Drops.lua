@@ -20,15 +20,6 @@ _.Zones =
 						5993,	-- Helboar
 					},
 				}),
-				i(21104, {	-- Draconic for Dummies [Chapter II]
-					["questID"] = 8620,	-- The Only Prescription
-					["u"] = 3,	-- Not available yet.
-					["crs"] = {
-						12396,	-- Doomguard Commander
-						8716,	-- Dreadlord
-						8717,	-- Felguard Elite
-					},
-				}),
 				i(4213, {	-- Grimoire of Doom
 					["spellID"] = 18540,	-- Ritual of Doom
 					["classes"] = { WARLOCK },

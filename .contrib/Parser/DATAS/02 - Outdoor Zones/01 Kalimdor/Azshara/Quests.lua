@@ -61,14 +61,6 @@ _.Zones =
 						i(10840),	-- Crystallized Note
 					},
 				}),
-				q(8575, {	-- Azuregos's Magical Ledger
-					["provider"] = { "i", 20949 },	-- Magical Ledger
-					["sourceQuest"] = 8555,	-- The Charge of the Dragonflights
-					["qg"] = 15481,	-- Spirit of Azuregos
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 60,
-					["u"] = 3,	-- Not available yet.
-				}),
 				q(3504, {	-- Betrayed (1/4)
 					["qg"] = 4485,	-- Belgrom Rockmaul
 					["coord"] = { 75, 34.2, ORGRIMMAR },
@@ -373,34 +365,6 @@ _.Zones =
 						{ "i", 20029, 6 },	-- Enchanted Coral
 					},
 					["lvl"] = 50,
-				}),
-				q(8729, {	-- The Wrath of Neptulon
-					["qg"] = 11811,	-- Narain Soothfancy
-					["sourceQuest"] = 8728,	-- The Good News and The Bad News
-					["coord"] = { 65.2, 18.6, TANARIS },
-					["maps"] = { TANARIS },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 21137, 1 },	-- Blue Scepter Shard
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in a later phase
-					["g"] = {
-						{
-							["itemID"] = 21136,	-- Arcanite Buoy
-							["coord"] = { 65, 55, AZSHARA },
-							["cr"] = 15571,	-- Maws
-							["description"] = "This summons a 40 man raid boss.",
-							["groups"] = {
-								{
-									["itemID"] = 21137,	-- Blue Scepter Shard
-									["questID"] = 8729,	-- The Wrath of Neptulon
-								},
-							},
-						},
-						i(21526),	-- Band of Icy Depths
-						i(21527),	-- Darkwater Robes
-					},
 				}),
 				q(3565, {	-- Xylem's Payment to Jediga
 					["qg"] = 8379,	-- Archmage Xylem

@@ -138,14 +138,6 @@ _.Zones =
 				q(2661, {	-- Delivery for Marin
 					["lvl"] = 44,
 				}),
-				q(8586, {	-- Dirge's Kickin' Chimaerok Chops
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["g"] = {
-						i(21025),	-- Recipe: Dirge's Kickin' Chimaerok Chops
-						i(21023),	-- Dirge's Kickin' Chimaerok Chops
-					},
-				}),
 				q(351, {	-- Find OOX-17/TN!
 					["lvl"] = 43,
 					["provider"] = { "i", 8623 },	-- OOX-17/TN Distress Beacon
@@ -289,9 +281,9 @@ _.Zones =
 					["lvl"] = 44,
 				}),
 				q(2872, {	-- Stoley's Debt
-					["lvl"] = 40,
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["isBreadcrumb"] = true,
+					["lvl"] = 40,
 				}),
 				q(2873, {	-- Stoley's Shipment
 					["lvl"] = 40,
@@ -345,11 +337,6 @@ _.Zones =
 					["g"] = {
 						i(22320),	-- Mux's Quality Goods
 					},
-				}),
-				q(8182, {	-- The Hand of Rastakhan
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 40,
-					["qg"] = 10460,	-- Prospector Ironboot
 				}),
 				q(10, {	-- The Scrimshank Redemption
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser

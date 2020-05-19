@@ -8,7 +8,6 @@ _.Zones =
 			n(REWARDS, {
 				["description"] = "These are rewarded from multiple quests in the zone. Refer to the individual item tooltips for more information.",
 				["groups"] = {
-					un(3, i(20402)),	-- Agent of Nozdormu
 					i(20603, { 	-- Bag of Spoils
 						i(20694), 	-- Glowing Black Orb
 						i(20693), 	-- Weighted Cloak

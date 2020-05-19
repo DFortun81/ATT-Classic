@@ -76,9 +76,6 @@ _.Zones =
 						11725,	-- Hive'Zora Waywatcher
 					},
 				}),
-				i(20546, {	-- Pattern: Runed Stygian Leggings
-					["cr"] = 11881,	-- Twilight Geolord
-				}),
 				i(20377, {	-- Rock Stalker Fang
 					["questID"] = 8278,	-- Noggle's Last Hope
 					["cr"] = 11739,	-- Rock Stalker

@@ -44,13 +44,6 @@ _.Zones =
 						{ 51.6, 84.4, WINTERSPRING },
 						{ 54.6, 87.4, WINTERSPRING },
 					},
-					["groups"] = {
-						{
-							["itemID"] = 21105,	-- Draconic for Dummies
-							["questID"] = 8620,	-- The Only Prescription
-							["u"] = 3,	-- Not released yet?
-						},
-					},
 				}),
 				n(10197, {	-- Mezzir the Howler
 					["coords"] = {

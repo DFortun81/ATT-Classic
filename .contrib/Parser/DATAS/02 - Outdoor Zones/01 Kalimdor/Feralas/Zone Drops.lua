@@ -6,6 +6,14 @@ _.Zones =
 	m(KALIMDOR, {
 		m(FERALAS, {
 			n(ZONEDROPS, {
+				i(21024, {	-- Chimaerok Tenderloin
+					["crs"] = {
+						12801,	-- Arcane Chimaerok
+						12800,	-- Chimaerok
+						12802,	-- Chimaerok Devourer
+						12803,	-- Lord Lakmaeran
+					},
+				}),
 				i(9589, {	-- Encrusted Minerals
 					["questID"] = 3128,	-- Natural Materials
 					["races"] = HORDE_ONLY,

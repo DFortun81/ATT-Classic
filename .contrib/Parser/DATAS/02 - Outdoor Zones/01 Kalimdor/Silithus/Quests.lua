@@ -19,13 +19,6 @@ _.Zones =
 						i(22725),	-- Band of Cenarius
 					},
 				}),
-				q(8519, {	-- A Pawn on the Eternal Board
-					["provider"] = { "o", 180633 },	-- Crystalline Tear
-					["sourceQuest"] = 8305,	-- Long Forgotten Memories
-					["coord"] = { 28.7, 89.1, SILITHUS },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-				}),
 				q(8287, {	-- A Terrible Purpose
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
@@ -100,16 +93,6 @@ _.Zones =
 						{ "i", 20801, 1 },	-- Cenarion Tactical Badge
 					},
 					["lvl"] = 60,
-				}),
-				q(8303, {	-- Anachronos
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["sourceQuest"] = 8301,	-- The Path of the Righteous
-					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {
-						{ "i", 20415, 1 },	-- The War of the Shifting Sands
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
 				}),
 				q(8316, {	-- Armaments of War [WARRIOR]
 					["qg"] = 15183,	-- Geologist Larksbane
@@ -257,8 +240,8 @@ _.Zones =
 					["qg"] = 15270,	-- Huum Wildmane
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle
 					["coord"] = { 48.7, 37.9, SILITHUS },
-					["lvl"] = 54,
 					["isBreadcrumb"] = true,
+					["lvl"] = 54,
 				}),
 				q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I
@@ -296,19 +279,6 @@ _.Zones =
 					["groups"] = {
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
-					},
-				}),
-				q(8743, {	-- Bang a Gong!
-					["provider"] = { "o", 180717 },	-- The Scarab Gong
-					["sourceQuest"] = 8742,	-- The Might of Kalimdor
-					["coord"] = { 25.7, 90.9, SILITHUS },
-					["cost"] = {
-						{ "i", 21175, 1 },	-- The Scepter of the Shifting Sands
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(21176),	-- Black Qiraji Resonating Crystal
 					},
 				}),
 				q(8540, {	-- Boots for the Guard
@@ -743,14 +713,6 @@ _.Zones =
 						i(20724),	-- Corrupted Blackwood Staff
 					},
 				}),
-				q(8305, {	-- Long Forgotten Memories
-					["qg"] = 15192,	-- Anachronos
-					["sourceQuest"] = 8303,	-- Anachronos
-					["coord"] = { 64.9, 50.2, TANARIS },
-					["maps"] = { TANARIS },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase [AQ Opening Quest Chain]
-				}),
 				q(8341, {	-- Lords of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8343,	-- Goldleaf's Discovery
@@ -806,16 +768,6 @@ _.Zones =
 						i(13452),	-- Elixir of the Mongoose
 						i(13447),	-- Elixir of the Sages
 					},
-				}),
-				q(8288, {	-- Only One May Rise
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["sourceQuest"] = 8286,	-- What Tomorrow Brings
-					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {
-						{ "i", 20383, 1 },	-- Head of the Broodlord Lashlayer
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
 				}),
 				q(9416, {	-- Report to General Kirika
 					["qg"] = 17081,	-- Scout Bloodfist
@@ -1158,20 +1110,6 @@ _.Zones =
 						i(21508),	-- Mark of Cenarius
 					},
 				}),
-				q(8302, {	-- The Hand of the Righteous
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["sourceQuest"] = 8301,	-- The Path of the Righteous
-					["coord"] = { 49.5, 36.4, SILITHUS },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(20403),	-- Proxy of Nozdormu
-					},
-				}),
 				q(8778, {	-- The Ironforge Brigade Needs Explosives!
 					["provider"] = { "i", 21257 },	-- Logistics Task Briefing IV
 					["repeatable"] = true,
@@ -1200,20 +1138,6 @@ _.Zones =
 					["groups"] = {
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
-					},
-				}),
-				q(8301, {	-- The Path of the Righteous
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["sourceQuest"] = 8288,	-- Only One May Rise
-					["coord"] = { 49.5, 36.4, SILITHUS },
-					["cost"] = {
-						{ "i", 20402, 1 },	-- Agent of Nozdormu
-						{ "i", 20384, 200 },	-- Silithid Carapace Fragment
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(20403),	-- Proxy of Nozdormu
 					},
 				}),
 				q(9023, {	-- The Perfect Poison
@@ -1302,19 +1226,6 @@ _.Zones =
 					["lvl"] = 60,
 					["groups"] = {
 						i(21515),	-- Mark of Remulos
-					},
-				}),
-				q(8745, {	-- Treasure of the Timeless One
-					["qg"] = 15693,	-- Jonathan the Revelator
-					["sourceQuest"] = 8742,	-- The Might of Kalimdor
-					["coord"] = { 25.9, 91.0, SILITHUS },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(21523),	-- Fang of Korialstrasz
-						i(21522),	-- Shadowsong's Sorrow
-						i(21521),	-- Runesword of the Red
-						i(21520),	-- Ravencrest's Legacy
 					},
 				}),
 				q(8323, {	-- True Believers
@@ -1494,13 +1405,6 @@ _.Zones =
 						i(20646),	-- Sandstrider's Mark
 						i(20647),	-- Black Crystal Dagger
 					},
-				}),
-				q(8286, {	-- What Tomorrow Brings
-					["qg"] = 15180,	-- Baristolth of the Shifting Sands
-					["description"] = "This quest line is a prerequisite for the Ahn'Qiraj scepter line used to open the doors to Ahn'Qiraj.",
-					["coord"] = { 49.5, 36.4, SILITHUS },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
 				}),
 			}),
 		}),

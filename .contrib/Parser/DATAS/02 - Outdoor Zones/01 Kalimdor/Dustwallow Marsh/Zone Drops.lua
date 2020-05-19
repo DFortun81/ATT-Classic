@@ -32,9 +32,6 @@ _.Zones =
 				i(10822, {	-- Dark Whelpling
 					["cr"] = 4324,	-- Searing Whelp
 				}),
-				i(21103, {	-- Draconic for Dummies - Chapter I
-					["cr"] = 15552,	-- Doctor Weavil
-				}),
 				i(5883, {	-- Forked Mudrock Tongue
 					["questID"] = 1204,	-- Mudrock Soup and Bugs
 					["races"] = ALLIANCE_ONLY,

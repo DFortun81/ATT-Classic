@@ -315,18 +315,6 @@ _.Zones =
 						i(18536),	-- Milli's Lexicon
 					},
 				}),
-				q(8741, {	-- The Champion Returns
-					["qg"] = 11832,	-- Keeper Remulos
-					["sourceQuest"] = 8736,	-- The Nightmare Manifests
-					["description"] = "This quest will become available with Phase 5.",
-					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["cost"] = {
-						{ "i", 21139, 1 },	-- Green Scepter Shard
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-				}),
 				q(1015, {	-- The New Frontier
 					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
@@ -380,75 +368,6 @@ _.Zones =
 					["maps"] = { THUNDER_BLUFF, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
-				}),
-				q(8736, {	-- The Nightmare Manifests
-					["qg"] = 11832,	-- Keeper Remulos
-					["sourceQuest"] = 8735,	-- The Nightmare's Corruption
-					["description"] = "This quest will become available with Phase 5.\n\nNOTE: You do NOT want to kill Eranikus or allow Remulos to die.",
-					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						i(21531),	-- Drake Tooth Necklace
-						i(21532),	-- Drudge Boots
-					},
-				}),
-				q(8735, {	-- The Nightmare's Corruption
-					["qg"] = 11832,	-- Keeper Remulos
-					["sourceQuest"] = 8734,	-- Tyrande and Remulos
-					["description"] = "This quest will become available with Phase 5.",
-					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 36.18, 41.79, MOONGLADE },
-					["cost"] = {
-						{ "i", 21147, 1 },	-- Fragment of the Nightmare's Corruption
-						{ "i", 21149, 1 },	-- Fragment of the Nightmare's Corruption
-						{ "i", 21148, 1 },	-- Fragment of the Nightmare's Corruption
-						{ "i", 21146, 1 },	-- Fragment of the Nightmare's Corruption
-					},
-					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
-					["groups"] = {
-						{
-							["itemID"] = 21147,	-- Fragment of the Nightmare's Corruption
-							["questID"] = 8735,	-- The Nightmare's Corruption
-							["coord"] = { 91.6, 39.0, ASHENVALE },
-							["crs"] = {
-								12474,	-- Emeraldon Boughguard
-								12475,	-- Emeraldon Tree Warder
-								12476,	-- Emeraldon Oracle
-							},
-						},
-						{
-							["itemID"] = 21149,	-- Fragment of the Nightmare's Corruption
-							["questID"] = 8735,	-- The Nightmare's Corruption
-							["description"] = "It is recommended that you bring at least 30 players and they should be experienced raiders.",
-							["coord"] = { 48, 33, DUSKWOOD },
-							["crs"] = {
-								15625,	-- Twilight Corrupter
-							},
-						},
-						{
-							["itemID"] = 21148,	-- Fragment of the Nightmare's Corruption
-							["questID"] = 8735,	-- The Nightmare's Corruption
-							["coord"] = { 50.4, 15.9, FERALAS },
-							["crs"] = {
-								5320,	-- Jademir Boughguard
-								5319,	-- Jademir Tree Warder
-								5317,	-- Jademir Oracle
-							},
-						},
-						{
-							["itemID"] = 21146,	-- Fragment of the Nightmare's Corruption
-							["questID"] = 8735,	-- The Nightmare's Corruption
-							["coord"] = { 61.6, 27.7, THE_HINTERLANDS },
-							["crs"] = {
-								12477,	-- Verdantine Boughguard
-								12479,	-- Verdantine Tree Warder
-								12478,	-- Verdantine Oracle
-							},
-						},
-					},
 				}),
 				q(6122, {	-- The Principal Source
 					["qg"] = 11802,	-- Dendrite Starblaze
@@ -603,15 +522,6 @@ _.Zones =
 							},
 						},
 					},
-				}),
-				q(8734, {	-- Tyrande and Remulos
-					["qg"] = 15624,	-- Forest Wisp
-					["sourceQuest"] = 8733,	-- Eranikus, Tyrant of the Dream
-					["minReputation"] = { 910, NEUTRAL },	-- Brood of Nozdormu, Neutral
-					["coord"] = { 37.5, 47.9, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
-					["lvl"] = 60,
-					["u"] = 3,	-- Ahn'Qirij
 				}),
 				q(6845, {	-- Uncovering Past Secrets
 					["qg"] = 11939,	-- Umber
