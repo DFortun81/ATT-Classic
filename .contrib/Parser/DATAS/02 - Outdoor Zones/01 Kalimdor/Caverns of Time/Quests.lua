@@ -59,34 +59,7 @@ _.Zones =
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["isBreadcrumb"] = true,
 				}),
-				q(8766, {	-- The Changing of Paths - Conqueror No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8765, {	-- The Changing of Paths - Invoker No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8764, {	-- The Changing of Paths - Protector No More
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["repeatable"] = true,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
+				
 				q(8555, {	-- The Charge of the Dragonflights
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
@@ -96,14 +69,6 @@ _.Zones =
 					["u"] = 3,	-- Added in later phase
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
-				}),
-				q(8761, {	-- The Grand Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21210),	-- Signet Ring of the Bronze Dragonflight
-					},
 				}),
 				q(8585, {	-- The Isle of Dread!
 					["u"] = 3,	-- Added in later phase
@@ -128,118 +93,6 @@ _.Zones =
 					["lvl"] = 60,
 					["g"] = {
 						i(21517),	-- Gnomish Turban of Psychic Might
-					},
-				}),
-				q(8753, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21202),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8754, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21203),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8755, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21204),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8752, {	-- The Path of the Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21201),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8759, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21208),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8760, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21209),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8758, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21207),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8757, {	-- The Path of the Invoker
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21206),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8749, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21198),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8748, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21197),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8750, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21199),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8747, {	-- The Path of the Protector
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21196),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8751, {	-- The Protector of Kalimdor
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21200),	-- Signet Ring of the Bronze Dragonflight
-					},
-				}),
-				q(8756, {	-- The Qiraji Conqueror
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 60,
-					["qg"] = 15192,	-- Anachronos
-					["g"] = {
-						i(21205),	-- Signet Ring of the Bronze Dragonflight
 					},
 				}),
 				q(8576, {	-- Translating the Ledger
