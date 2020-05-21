@@ -239,6 +239,7 @@ app.L = {
 		[-383] = "Interface\\Icons\\inv_misc_gem_variety_02",						-- Miscellaneous
 		[-388] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",					-- Main Gate (Stratholme)
 		[-389] = "Interface\\Icons\\INV_MISC_KEY_13",								-- Service Entrance (Stratholme)
+		[-538] = "Interface\\Icons\\inv_box_01",									-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",									-- The Scepter of the Shifting Sands
 		[-540] = "Interface\\Icons\\inv_stone_02",									-- The Scourge Invasion
 		
@@ -308,6 +309,7 @@ app.L = {
 		[-389] = "Service Entrance",											-- Service Entrance (Stratholme)
 		
 -- Blizzard Events and Anniversaries
+		[-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "The Scepter of the Shifting Sands",
 		[-540] = "The Scourge Invasion",
 -- Factions / Cities

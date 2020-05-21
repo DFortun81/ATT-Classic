@@ -15,7 +15,6 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 		},
 		]]--
 		["lvl"] = 60,
-		["u"] = 3,	-- Added in later phase
 		["groups"] = {
 			n(QUESTS, {
 				q(8519, {	-- A Pawn on the Eternal Board
