@@ -3,7 +3,7 @@
 ---------------------------------------------
 _.Factions = 
 {
-	n(-9914, {	-- Alliance
+	n(-30, {	-- Alliance
 		["races"] = ALLIANCE_ONLY,
 		["g"] = {
 			n(-6014, {	-- Cities
@@ -33,7 +33,7 @@ _.Factions =
 			}),
 		},
 	});
-	n(-9913, {	-- Horde
+	n(-31, {	-- Horde
 		["races"] = HORDE_ONLY,
 		["g"] = {
 			n(-6014, {	-- Cities

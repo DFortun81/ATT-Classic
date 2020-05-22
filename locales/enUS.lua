@@ -196,6 +196,8 @@ app.L = {
 		[-18] = "Interface\\Icons\\INV_Misc_Bag_13", 										-- Rewards
 		[-27] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",	-- Lower (Blackrock Spire)
 		[-28] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",								-- Upper (Blackrock Spire)
+		[-30] = "Interface\\FriendsFrame\\PlusManz-Alliance",											-- Alliance
+		[-31] = "Interface\\FriendsFrame\\PlusManz-Horde", 											-- Horde
 		[-47] = "Interface\\Icons\\inv_misc_elvencoins",									-- Lunar Festival
 		[-50] = "Interface\\Icons\\achievement_worldevent_valentine",						-- Love is in the Air
 		[-51] = "Interface\\Icons\\inv_egg_09",												-- Noblegarden
@@ -263,6 +265,8 @@ app.L = {
 		[-22] = "Atal'ai Defenders",											-- Atal'ai Defenders
 		[-27] = "Lower",														-- Lower (Blackrock Spire)
 		[-28] = "Upper",														-- Upper (Blackrock Spire)
+		[-30] = FACTION_ALLIANCE,												-- Alliance
+		[-31] = FACTION_HORDE, 													-- Horde
 -- World Events
 		[-47] = "Lunar Festival",												-- Lunar Festival
 		[-50] = "Love is in the Air",											-- Love is in the Air
@@ -314,8 +318,6 @@ app.L = {
 		[-540] = "The Scourge Invasion",
 -- Factions / Cities
 		[-6014] = BUG_CATEGORY4,													-- Cities
-		[-9913] = FACTION_HORDE, 													-- Horde
-		[-9914] = FACTION_ALLIANCE, 												-- Alliance
 		[-10066] = "Legendary",
 	},
 

@@ -4,7 +4,7 @@
 -- https://classic.wowhead.com/npc=12796/raider-bork
 _.PvP = 
 {
-  n(-9914, {	-- Alliance 
+  n(-30, {	-- Alliance 
     ["races"] = ALLIANCE_ONLY,
     ["g"] = {
       pvprank(1, {	-- Private
@@ -591,7 +591,7 @@ _.PvP =
       }),
     },
   }),
-  n(-9913, {	-- Horde 
+  n(-31, {	-- Horde 
     ["races"] = HORDE_ONLY,
     ["g"] = {
       pvprank(1, {	-- Scout

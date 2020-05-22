@@ -10,6 +10,12 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 			IRONFORGE,
 		},
 		["groups"] = {
+			n(-30, {	-- Alliance
+				
+			}),
+			n(-31, {	-- Horde
+				
+			}),
 			n(QUESTS, {
 				q(8846, {	-- Five Signets for War Supplies
 					["qg"] = 15701,	-- Field Marshal Snowfall <War Effort Commander>
