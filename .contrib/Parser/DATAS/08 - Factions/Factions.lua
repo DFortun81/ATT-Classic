@@ -78,7 +78,6 @@ _.Factions =
 		["collectible"] = false,
 		["description"] = "You are not able to reach exalted with this faction.",
 	}),
-	faction(349),	-- Ravenholdt
 	faction(809),	-- Shen'dralar
 	faction(169, { 	-- Steamwheedle Cartel
 		["collectible"] = false,

@@ -11,6 +11,9 @@ _.Instances = {
 		["groups"] = {
 			faction(910, { 	-- Brood of Nozdormu
 				["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
+				["maps"] = {
+					CAVERNS_OF_TIME,
+				},
 				["groups"] = {
 					n(QUESTS, {
 						cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {

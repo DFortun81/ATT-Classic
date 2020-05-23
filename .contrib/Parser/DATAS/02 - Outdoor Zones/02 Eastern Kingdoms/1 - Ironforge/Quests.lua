@@ -449,15 +449,6 @@ _.Zones =
 						i(18042),	-- Thorium Headed Arrow
 					},
 				}),
-				q(8233, {	-- A Simple Request
-					["qgs"] = {
-						5165,	-- Hulfdan Blackbeard <Rogue Trainer>
-						5167,	-- Fenthwick <Rogue Trainer>
-					},
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 50,
-				}),
 				q(3790, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,
@@ -467,7 +458,7 @@ _.Zones =
 					["altQuests"] = {
 						3763, -- Assisting Arch Druid Staghelm (Darnassus)
 						3789, -- Assisting Arch Druid Staghelm (Stormwind) 
-						},
+					},
 				}),
 				q(3201, {	-- At Last!
 					["lvl"] = 40,

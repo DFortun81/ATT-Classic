@@ -54,13 +54,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(8233, {	-- A Simple Request
-					["qg"] = 4583,	-- Miles Dexter <Rogue Trainer>
-					["coord"] = { 85.0, 75.2, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 50,
-				}),
 				q(3784, {	-- Assisting Arch Druid Runetotem
 					["qg"] = 6741,	-- Innkeeper Norman
 					["altQuests"] = {

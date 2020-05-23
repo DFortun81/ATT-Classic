@@ -43,13 +43,6 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
-				q(8233, {	-- A Simple Request
-					["qg"] = 4163,	-- Syurna <Rogue Trainer>
-					["coord"] = { 36.8, 21.8, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 50,
-				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
 					["lvl"] = 47,
 					["races"] = ALLIANCE_ONLY,

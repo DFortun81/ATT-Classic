@@ -407,16 +407,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(8234, {	-- Sealed Azure Bag
-					["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
-					["sourceQuest"] = 8233,	-- A Simple Request
-					["coord"] = { 86.0, 79.0, HILLSBRAD_FOOTHILLS },
-					["classes"] = { ROGUE },
-					["cost"] = {
-						{ "i", 19775, 1 },	-- Sealed Azure Bag
-					},
-					["lvl"] = 50,
-				}),
 				q(538, {	-- Southshore
 					["qg"] = 1440,	-- Milton Sheaf <Librarian>
 					["races"] = ALLIANCE_ONLY,

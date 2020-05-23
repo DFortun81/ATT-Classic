@@ -101,15 +101,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(8233, {	-- A Simple Request
-					["qgs"] = {
-						13283,	-- Lord Tony Romano <Rogue Trainer>
-						918,	-- Osborne the Night Man <Rogue Trainer>
-					},
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
-					["lvl"] = 50,
-				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["qg"] = 6740,	-- Innkeeper Allison
 					["races"] = ALLIANCE_ONLY,

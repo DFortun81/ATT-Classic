@@ -5,6 +5,94 @@ _.Zones =
 {
 	m(EASTERN_KINGDOMS, {
 		m(ALTERAC_MOUNTAINS, {
+			faction(349, {	-- Ravenholdt
+				["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
+				["classes"] = { ROGUE },
+				["groups"] = {
+					q(8233, {	-- A Simple Request
+						["qgs"] = {
+							5165,	-- Hulfdan Blackbeard <Rogue Trainer>
+							3328,	-- Ormok <Rogue Trainer>
+							4163,	-- Syurna <Rogue Trainer>
+							918,	-- Osborne the Night Man <Rogue Trainer>
+							4583,	-- Miles Dexter <Rogue Trainer>
+						},
+						["coords"] = {
+							{ 36.8, 21.8, DARNASSUS },	-- Syurna <Rogue Trainer>
+							{ 51.6, 14.6, IRONFORGE },	-- Hulfdan Blackbeard <Rogue Trainer>
+							{ 44.0, 54.6, ORGRIMMAR },	-- Ormok <Rogue Trainer>
+							{ 74.6, 52.8, STORMWIND_CITY },	-- Osborne the Night Man <Rogue Trainer>
+							{ 85.0, 75.2, UNDERCITY },	-- Miles Dexter <Rogue Trainer>
+						},
+						["classes"] = { ROGUE },
+						["lvl"] = 50,
+					}),
+					q(8235, {	-- Encoded Fragments
+						["qg"] = 8379,	-- Archmage Xylem
+						["sourceQuest"] = 8234,	-- Sealed Azure Bag
+						["coord"] = { 29.6, 40.6, AZSHARA },
+						["maps"] = { AZSHARA },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 20023, 10 },	-- Encoded Fragment
+						},
+						["lvl"] = 50,
+					}),
+					q(8249, {	-- Junkboxes Needed
+						["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
+						["coord"] = { 84.4, 80.3, ALTERAC_MOUNTAINS },
+						["classes"] = { ROGUE },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 16885, 5 },	-- Heavy Junkbox
+						},
+						["lvl"] = 50,
+						["groups"] = {
+							i(20086),	-- Dusksteel Throwing Knife
+						},
+					}),
+					q(8234, {	-- Sealed Azure Bag
+						["qg"] = 6768,	-- Lord Jorach Ravenholdt <Lord of the Assassin's League>
+						["sourceQuest"] = 8233,	-- A Simple Request
+						["coord"] = { 86.0, 79.0, ALTERAC_MOUNTAINS },
+						["maps"] = { AZSHARA },
+						["classes"] = { ROGUE },
+						["cost"] = {
+							{ "i", 19775, 1 },	-- Sealed Azure Bag
+						},
+						["lvl"] = 50,
+						["groups"] = {
+							{
+								["itemID"] = 19775,	-- Sealed Azure Bag
+								["questID"] = 8234,	-- Sealed Azure Bag
+								["cr"] = 6188,	-- Timbermaw Shaman
+								["coord"] = { 43.5, 25.4, AZSHARA },
+							},
+						},
+					}),
+					q(6701, {	-- Syndicate Emblems
+						["qg"] = 6701,	-- Ravenholdt Guard <Assassin's League>
+						["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
+						["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
+						["description"] = "This quest will only get you to Friendly.",
+						["classes"] = { ROGUE },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 17124, 1 },	-- Syndicate Emblem
+						},
+						["lvl"] = 24,
+					}),
+					q(6681, {	-- The Manor, Ravenholdt
+						["provider"] = { "i", 17126 },
+						["classes"] = { ROGUE },
+						["description"] = "Speak with a Rogue Trainer and use select the chat option to receive the item that gives you this quest.\n\nDO NOT OPEN THE CHEST",
+						["cost"] = {
+							{ "i", 17125, 1 },	-- Seal of Ravenholdt
+						},
+						["lvl"] = 24,
+					}),
+				},
+			}),
 			n(QUESTS, {
 				q(522, {	-- Assassin's Contract
 					["provider"] = { "i", 3668 },	-- Assassin's Contract
@@ -121,11 +209,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
-				q(8249, {	-- Junkboxes Needed
-					["lvl"] = 50,
-					["classes"] = { ROGUE },
-					["repeatable"] = true,
-				}),
 				q(514, {	-- Letter to Stormpike
 					["qg"] = 2277,	-- Loremaster Dibbs
 					["sourceQuest"] = 511,	-- Encrypted Letter
@@ -176,15 +259,6 @@ _.Zones =
 						i(3759),	-- Insulated Sage Gloves
 					},
 				}),
-				q(6701, {	-- Syndicate Emblems
-					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
-					["classes"] = { ROGUE },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 17124, 1 },	-- Syndicate Emblem
-					},
-					["lvl"] = 24,
-				}),
 				q(551, {	-- The Ensorcelled Parchment
 					["providers"] = {
 						{ "i", 3706 },	-- Ensorcelled Parchment
@@ -194,10 +268,6 @@ _.Zones =
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-				}),
-				q(6681, {	-- The Manor, Ravenholdt
-					["lvl"] = 24,
-					["classes"] = { ROGUE },
 				}),
 				q(1713, {	-- The Summoning
 					["qg"] = 6176,	-- Bath'rah the Windwatcher

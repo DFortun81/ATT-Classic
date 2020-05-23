@@ -166,16 +166,6 @@ _.Zones =
 					},
 					["lvl"] = 45,
 				}),
-				q(8235, {	-- Encoded Fragments
-					["qg"] = 8379,	-- Archmage Xylem
-					["sourceQuest"] = 8234,	-- Sealed Azure Bag
-					["coord"] = { 29.6, 40.6, AZSHARA },
-					["classes"] = { ROGUE },
-					["cost"] = {
-						{ "i", 20023, 10 },	-- Encoded Fragment
-					},
-					["lvl"] = 50,
-				}),
 				q(9364, {	-- Fragmented Magic
 					["qg"] = 8379,		-- Archmage Xylem
 					["sourceQuest"] = 9362,	-- Warlord Krellian
