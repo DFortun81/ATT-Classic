@@ -71,7 +71,7 @@ _.Zones =
 						},
 					}),
 					q(6701, {	-- Syndicate Emblems
-						["qg"] = 6701,	-- Ravenholdt Guard <Assassin's League>
+						["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
 						["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 						["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
 						["description"] = "This quest will only get you to Friendly.",
