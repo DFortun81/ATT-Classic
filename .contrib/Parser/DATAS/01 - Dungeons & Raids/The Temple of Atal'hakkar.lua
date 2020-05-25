@@ -302,7 +302,7 @@ _.Instances = {
 						3380,	-- The Sunken Temple
 					},
 					["coord"] = { 52.6, 45.8, TANARIS },
-					["maps"] = { TANARIS },
+					["maps"] = { TANARIS, THE_BARRENS },
 					["lvl"] = 46,
 					["groups"] = {
 						{
@@ -310,7 +310,6 @@ _.Instances = {
 							["questID"] = 3444,	-- The Stone Circle
 							["provider"] = { "o", 149036 },	-- Marvon's Chest
 							["coord"] = { 62.5, 38.5, THE_BARRENS },
-							["maps"] = { THE_BARRENS },
 						},
 					},
 				}),
