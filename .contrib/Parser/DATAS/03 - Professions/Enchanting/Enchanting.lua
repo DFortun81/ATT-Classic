@@ -631,10 +631,12 @@ profession(ENCHANTING, {
 			{
 				["name"] = "Brilliant Mana Oil",
 				["recipeID"] = 25130,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Brilliant Wizard Oil",
 				["recipeID"] = 25129,
+				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Lesser Mana Oil",
