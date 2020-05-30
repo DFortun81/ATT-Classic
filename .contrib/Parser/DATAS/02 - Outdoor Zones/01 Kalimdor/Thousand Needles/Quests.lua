@@ -340,7 +340,10 @@ _.Zones =
 				q(1194, {	-- Rizzle's Schematics
 					["provider"] = { "o", 20805 }, 	-- Rizzle's Unguarded Plans
 					["sourceQuest"] = 1190,	-- Keeping Pace
-					--["coord"] = { },
+					["coord"] = { 77.22, 77.39, THOUSAND_NEEDLES },
+					["cost"] = {
+						{ "i", 5866, 1 },	-- Sample of Indurium Ore
+					},
 					["lvl"] = 29,
 				}),
 				q(1110, {	-- Rocket Car Parts
