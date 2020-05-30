@@ -258,6 +258,136 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
 						},
 					}),
+					q(8511, {	-- The Alliance Needs Light Leather!
+						["qg"] = 15446,	-- Bonnie Stoneflayer <Light Leather Collector>
+						["coord"] = { 58.0, 75.9, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 2318, 10 },	-- Light Leather
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8512, {	-- The Alliance Needs More Light Leather!
+						["qg"] = 15446,	-- Bonnie Stoneflayer <Light Leather Collector>
+						["sourceQuest"] = 8511,	-- The Alliance Needs Light Leather!
+						["coord"] = { 58.0, 75.9, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 2318, 10 },	-- Light Leather
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8517, {	-- The Alliance Needs Linen Bandages!
+						["qg"] = 15451,	-- Sentinel Silversky <Linen Bandage Collector>
+						["coord"] = { 55.4, 76.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 1251, 20 },	-- Linen Bandage
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8518, {	-- The Alliance Needs More Linen Bandages!
+						["qg"] = 15451,	-- Sentinel Silversky <Linen Bandage Collector>
+						["sourceQuest"] = 8517,	-- The Alliance Needs Linen Bandages!
+						["coord"] = { 55.4, 76.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 1251, 20 },	-- Linen Bandage
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8513, {	-- The Alliance Needs Medium Leather!
+						["qg"] = 15448,	-- Private Porter <Medium Leather Collector>
+						["coord"] = { 58.7, 75.0, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 2319, 10 },	-- Medium Leather
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8514, {	-- The Alliance Needs More Medium Leather!
+						["qg"] = 15448,	-- Private Porter <Medium Leather Collector>
+						["sourceQuest"] = 8513,	-- The Alliance Needs Medium Leather!
+						["coord"] = { 58.7, 75.0, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 2319, 10 },	-- Medium Leather
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8524, {	-- The Alliance Needs Rainbow Fin Albacore!
+						["qg"] = 15455,	-- Slicky Gastronome <Rainbow Fin Albacore Collector>
+						["coord"] = { 71.6, 69.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 5095, 20 },	-- Rainbow Fin Albacore
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8525, {	-- The Alliance Needs More Rainbow Fin Albacore!
+						["qg"] = 15455,	-- Slicky Gastronome <Rainbow Fin Albacore Collector>
+						["sourceQuest"] = 8524,	-- The Alliance Needs Rainbow Fin Albacore!
+						["coord"] = { 71.6, 69.2, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 5095, 20 },	-- Rainbow Fin Albacore
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8503, {	-- The Alliance Needs Stranglekelp!
+						["qg"] = 15434,	-- Private Draxlegauge <Stranglekelp Collector>
+						["coord"] = { 70.3, 74.3, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 3820, 20 },	-- Stranglekelp
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8504, {	-- The Alliance Needs More Stranglekelp!
+						["qg"] = 15434,	-- Private Draxlegauge <Stranglekelp Collector>
+						["sourceQuest"] = 8503,	-- The Alliance Needs Stranglekelp!
+						["coord"] = { 70.3, 74.3, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 3820, 20 },	-- Stranglekelp
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
 					q(8797, {	-- The Alliance Needs Your Help! [Darnassus]
 						["qg"] = 15709,	-- Master Sergeant Moonshadow <War Effort Recruiter>
 						["coord"] = { 39.1, 38.3, DARNASSUS },
@@ -284,7 +414,6 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 			n(-31, {	-- Horde
 				["races"] = HORDE_ONLY,
 				["groups"] = {
-					
 					q(8851, {	-- Five Signets for War Supplies
 						["qg"] = 15700,	-- Warlord Gorchuk <War Effort Commander>
 						["coord"] = { 30.3, 67.6, ORGRIMMAR },
