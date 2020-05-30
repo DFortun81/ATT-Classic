@@ -120,6 +120,7 @@ _.Zones =
 					["coord"] = { 42.4, 24.4, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 34,
 				}),
 				q(1385, {	-- Brutal Politics

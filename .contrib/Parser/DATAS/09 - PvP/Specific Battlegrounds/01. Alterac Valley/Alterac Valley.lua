@@ -753,6 +753,7 @@ _.PvP =
 								["qg"] = 13797,	-- Mountaineer Boombellow
 								["coord"] = { 45.6, 16.7, ALTERAC_VALLEY },
 								["races"] = ALLIANCE_ONLY,
+								["isBreadcrumb"] = true,
 								["lvl"] = 51,
 							}),
 							q(7261, {	-- The Sovereign Imperative

@@ -479,6 +479,58 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
 						},
 					}),
+					q(8532, {	-- The Horde Needs Copper Bars!
+						["qg"] = 15459,	-- Miner Cromwell <Copper Bar Collector>
+						["coord"] = { 31.1, 66.1, ORGRIMMAR },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 2840, 20 },	-- Copper Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8533, {	-- The Horde Needs More Copper Bars!
+						["qg"] = 15459,	-- Miner Cromwell <Copper Bar Collector>
+						["sourceQuest"] = 8532,	-- The Horde Needs Copper Bars!
+						["coord"] = { 31.1, 66.1, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 2840, 20 },	-- Copper Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8549, {	-- The Horde Needs Peacebloom!
+						["qg"] = 15477,	-- Herbalist Proudfeather <Peacebloom Collector>
+						["coord"] = { 33.3, 69.6, ORGRIMMAR },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 2447, 20 },	-- Peacebloom
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8550, {	-- The Horde Needs More Peacebloom!
+						["qg"] = 15477,	-- Herbalist Proudfeather <Peacebloom Collector>
+						["sourceQuest"] = 8549,	-- The Horde Needs Peacebloom!
+						["coord"] = { 33.3, 69.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 2447, 20 },	-- Peacebloom
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
 					q(8792, {	-- The Horde Needs Your Help! [Thunder Bluff]
 						["qg"] = 15702,	-- Senior Sergeant Taiga <War Effort Recruiter>
 						["coord"] = { 38.8, 52.9, THUNDER_BLUFF },
