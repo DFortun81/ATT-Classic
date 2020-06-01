@@ -101,7 +101,7 @@ _.Instances = {
 					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
 					["sourceQuest"] = 5538,	-- Mold Rhymes With...
 					["coord"] = { 51.5, 28.8, TANARIS },
-					["maps"] = { TANARIS },
+					["maps"] = { TANARIS, UNGORO_CRATER },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 14645, 1 },	-- Unfinished Skeleton Key
@@ -112,7 +112,7 @@ _.Instances = {
 					["qg"] = 5411,	-- Krinkle Goodsteel <Blacksmithing Supplies>
 					["sourceQuest"] = 5514,	-- Mold Rhymes With...
 					["coord"] = { 51.5, 28.8, TANARIS },
-					["maps"] = { TANARIS },
+					["maps"] = { TANARIS, UNGORO_CRATER },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 14645, 1 },	-- Unfinished Skeleton Key

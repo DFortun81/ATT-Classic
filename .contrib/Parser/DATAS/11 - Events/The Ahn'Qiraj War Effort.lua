@@ -258,6 +258,32 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
 						},
 					}),
+					q(8494, {	-- The Alliance Needs Iron Bars!
+						["qg"] = 15431,	-- Corporal Carnes <Iron Bar Collector>
+						["coord"] = { 65.5, 63.9, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 3575, 20 },	-- Iron Bar
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8495, {	-- The Alliance Needs More Iron Bars!
+						["qg"] = 15431,	-- Corporal Carnes <Iron Bar Collector>
+						["sourceQuest"] = 8494,	-- The Alliance Needs Iron Bars!
+						["coord"] = { 65.5, 63.9, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 3575, 20 },	-- Iron Bar
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
 					q(8511, {	-- The Alliance Needs Light Leather!
 						["qg"] = 15446,	-- Bonnie Stoneflayer <Light Leather Collector>
 						["coord"] = { 58.0, 75.9, IRONFORGE },
@@ -360,6 +386,58 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 						["groups"] = {
 							i(21436),	-- Alliance Commendation Signet
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8526, {	-- The Alliance Needs Roast Raptor!
+						["qg"] = 15456,	-- Sarah Sadwhistle <Roast Raptor Collector>
+						["coord"] = { 72.1, 69.6, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 12210, 20 },	-- Roast Raptor
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8527, {	-- The Alliance Needs More Roast Raptor!
+						["qg"] = 15456,	-- Sarah Sadwhistle <Roast Raptor Collector>
+						["sourceQuest"] = 8526,	-- The Alliance Needs Roast Raptor!
+						["coord"] = { 72.1, 69.6, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 12210, 20 },	-- Roast Raptor
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8520, {	-- The Alliance Needs Silk Bandages!
+						["qg"] = 15452,	-- Nurse Stonefield <Silk Bandage Collector>
+						["coord"] = { 57.6, 75.8, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 6450, 20 },	-- Silk Bandage
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8521, {	-- The Alliance Needs More Silk Bandages!
+						["qg"] = 15452,	-- Nurse Stonefield <Silk Bandage Collector>
+						["sourceQuest"] = 8520,	-- The Alliance Needs Silk Bandages!
+						["coord"] = { 57.6, 75.8, IRONFORGE },
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 6450, 20 },	-- Silk Bandage
+						},
+						["groups"] = {
+							i(21436),	-- Alliance Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
 						},
 					}),
 					q(8503, {	-- The Alliance Needs Stranglekelp!
@@ -482,7 +560,7 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 					q(8532, {	-- The Horde Needs Copper Bars!
 						["qg"] = 15459,	-- Miner Cromwell <Copper Bar Collector>
 						["coord"] = { 31.1, 66.1, ORGRIMMAR },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = HORDE_ONLY,
 						["cost"] = {
 							{ "i", 2840, 20 },	-- Copper Bar
 						},
@@ -505,10 +583,36 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
 						},
 					}),
+					q(8611, {	-- The Horde Needs Lean Wolf Steaks!
+						["qg"] = 15533,	-- Bloodguard Rawtar <Lean Wolf Steak Collector>
+						["coord"] = { 29.5, 68.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 12209, 20 },	-- Lean Wolf Steak
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8612, {	-- The Horde Needs More Lean Wolf Steaks!
+						["qg"] = 15533,	-- Bloodguard Rawtar <Lean Wolf Steak Collector>
+						["sourceQuest"] = 8611,	-- The Horde Needs Lean Wolf Steaks!
+						["coord"] = { 29.5, 68.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 12209, 20 },	-- Lean Wolf Steak
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
 					q(8549, {	-- The Horde Needs Peacebloom!
 						["qg"] = 15477,	-- Herbalist Proudfeather <Peacebloom Collector>
 						["coord"] = { 33.3, 69.6, ORGRIMMAR },
-						["races"] = ALLIANCE_ONLY,
+						["races"] = HORDE_ONLY,
 						["cost"] = {
 							{ "i", 2447, 20 },	-- Peacebloom
 						},
@@ -529,6 +633,58 @@ _.WorldEvents = bubbleDown({["u"] = 3 },
 						["groups"] = {
 							i(21438),	-- Horde Commendation Signet
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8542, {	-- The Horde Needs Tin Bars!
+						["qg"] = 15460,	-- Grunt Maug <Tin Bar Collector>
+						["coord"] = { 30.9, 65.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 3576, 20 },	-- Tin Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8543, {	-- The Horde Needs More Tin Bars!
+						["qg"] = 15460,	-- Grunt Maug <Tin Bar Collector>
+						["sourceQuest"] = 8542,	-- The Horde Needs Tin Bars!
+						["coord"] = { 30.9, 65.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 3576, 20 },	-- Tin Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8604, {	-- The Horde Needs Wool Bandages!
+						["qg"] = 15528,	-- Healer Longrunner <Wool Bandage Collector>
+						["coord"] = { 31.2, 74.1, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 3530, 20 },	-- Wool Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
+						},
+					}),
+					q(8605, {	-- The Horde Needs More Wool Bandages!
+						["qg"] = 15528,	-- Healer Longrunner <Wool Bandage Collector>
+						["sourceQuest"] = 8604,	-- The Horde Needs Wool Bandages!
+						["coord"] = { 31.2, 74.1, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 3530, 20 },	-- Wool Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
 						},
 					}),
 					q(8792, {	-- The Horde Needs Your Help! [Thunder Bluff]
