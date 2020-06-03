@@ -9,6 +9,10 @@ _.Instances = {
 		["u"] = 3,	-- Added in later phase
 		["lvl"] = 50,
 		["groups"] = {
+			faction(609, { 	-- Cenarion Circle
+				["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
+				["maps"] = { SILITHUS },
+			}),
 			n(QUESTS, {
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8700, {	-- Band of Unending Life

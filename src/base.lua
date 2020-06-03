@@ -7,6 +7,9 @@
 local name, app = ...;
 function app:GetName() return name; end
 _G["ATTC"] = app;
+app.asset = function(path)
+	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
+end
 
 -- Create an Event Processor.
 local events = {};
@@ -57,11 +60,11 @@ end
 checkbuttonClass.SetATTTooltip = buttonClass.SetATTTooltip;
 frameClass.SetATTTooltip = buttonClass.SetATTTooltip;
 textureClass.SetATTSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\content");
+	self:SetTexture(app.asset("content"));
 	self:SetTexCoord(x / sourceW, (x + w) / sourceW, y / sourceH, (y + h) / sourceH);
 end
 buttonClass.SetATTHighlightSprite = function(self, name, x, y, w, h, sourceW, sourceH)
-	self:SetHighlightTexture("Interface\\Addons\\ATT-Classic\\assets\\content");
+	self:SetHighlightTexture(app.asset("content"));
 	local hl = self:GetHighlightTexture();
 	hl:SetATTSprite(name, x, y, w, h, sourceW, sourceH);
 	return hl;

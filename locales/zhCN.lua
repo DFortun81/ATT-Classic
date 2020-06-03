@@ -95,10 +95,10 @@ L["SPELL_ID"] = "法术ID"
 L["iLvl"] = "物品等级"
 
 -- Icons and Collection Text
-L["COLLECTED"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known:0|t |cff15abff已收集|r" -- Acquired the colors and icon from CanIMogIt.
-L["COLLECTED_APPEARANCE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known_circle:0|t |cff15abff已收集*|r" -- Acquired the colors and icon from CanIMogIt.
-L["NOT_COLLECTED"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333未收集|r" -- Acquired the colors and icon from CanIMogIt.
-L["COMPLETE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known_green:0|t |cff6dce47已完成|r" -- Acquired the colors and icon from CanIMogIt.
-L["INCOMPLETE"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
-L["KNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known:0|t |cff15abff当前角色已知|r"
-L["UNKNOWN_ON_CHARACTER"] = "|TInterface\\Addons\\ATT-Classic\\assets\\unknown:0|t |cffff9333当前角色未知|r"
+L["COLLECTED"] = "|T" .. app.asset("known") .. ":0|t |cff15abff已收集|r" -- Acquired the colors and icon from CanIMogIt.
+L["COLLECTED_APPEARANCE"] = "|T" .. app.asset("known_circle") .. ":0|t |cff15abff已收集*|r" -- Acquired the colors and icon from CanIMogIt.
+L["NOT_COLLECTED"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未收集|r" -- Acquired the colors and icon from CanIMogIt.
+L["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r" -- Acquired the colors and icon from CanIMogIt.
+L["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
+L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已知|r"
+L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未知|r"

@@ -52,24 +52,24 @@ end
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\complete1.ogg",
+	app.asset("complete1.ogg"),
 };
 settings.AUDIO_DEATH_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\death.ogg",
+	app.asset("death.ogg"),
 };
 settings.AUDIO_FANFARE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare1.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare2.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare3.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare4.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare5.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare6.ogg",
+	app.asset("fanfare1.ogg"),
+	app.asset("fanfare2.ogg"),
+	app.asset("fanfare3.ogg"),
+	app.asset("fanfare4.ogg"),
+	app.asset("fanfare5.ogg"),
+	app.asset("fanfare6.ogg"),
 };
 settings.AUDIO_RAREFIND_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\rarefind1.ogg",
+	app.asset("rarefind1.ogg"),
 };
 settings.AUDIO_REMOVE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\remove1.ogg",
+	app.asset("remove1.ogg"),
 };
 
 -- Settings Class

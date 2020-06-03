@@ -511,6 +511,14 @@ isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 
+-- Asset Path Helper Functions
+asset = function(path)
+	return "Interface\\Addons\\ATT-Classic\\assets\\" .. path;
+end
+icon = function(path)
+	return "Interface\\Icons\\" .. path;
+end
+
 -- SHORTCUTS for Object Class Types
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);

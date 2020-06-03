@@ -2679,15 +2679,15 @@ end
 -- Character Class Lib
 (function()
 local classIcons = {
-	[1] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warrior",
-	[2] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Paladin",
-	[3] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Hunter",
-	[4] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Rogue",
-	[5] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Priest",
-	[7] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Shaman",
-	[8] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Mage",
-	[9] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Warlock",
-	[11] = "Interface\\Addons\\ATT-Classic\\assets\\ClassIcon_Druid",
+	[1] = app.asset("ClassIcon_Warrior"),
+	[2] = app.asset("ClassIcon_Paladin"),
+	[3] = app.asset("ClassIcon_Hunter"),
+	[4] = app.asset("ClassIcon_Rogue"),
+	[5] = app.asset("ClassIcon_Priest"),
+	[7] = app.asset("ClassIcon_Shaman"),
+	[8] = app.asset("ClassIcon_Mage"),
+	[9] = app.asset("ClassIcon_Warlock"),
+	[11] = app.asset("ClassIcon_Druid"),
 };
 local SoftReserveUnitOnClick = function(self, button)
 	if button == "RightButton" then
@@ -3190,7 +3190,7 @@ app.BaseDeathClass = {
 		elseif key == "text" then
 			return "Total Deaths";
 		elseif key == "icon" then
-			return "Interface\\Addons\\ATT-Classic\\assets\\Normal";
+			return app.asset("Normal");
 		elseif key == "collectible" then
 			return app.Settings:Get("Thing:Deaths");
 		elseif key == "progress" then
@@ -3923,12 +3923,12 @@ app.BaseFlightPath = {
 			local faction = t.info.faction;
 			if faction and faction > 0 then
 				if faction == Enum.FlightPathFaction.Horde then
-					return "Interface\\Addons\\ATT-Classic\\assets\\fp_horde";
+					return app.asset("fp_horde");
 				else
-					return "Interface\\Addons\\ATT-Classic\\assets\\fp_alliance";
+					return app.asset("fp_alliance");
 				end
 			end
-			return "Interface\\Addons\\ATT-Classic\\assets\\fp_neutral";
+			return app.asset("fp_neutral");
 		else
 			-- Something that isn't dynamic.
 			return rawget(t.info, key);
@@ -5143,15 +5143,15 @@ local function SetRowData(self, row, data)
 		end
 		-- if data is quest and is currently accepted
 		if data.questID and GetQuestLogIndexByID(data.questID)>0 then
-			row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known_circle");
+			row.Indicator:SetTexture(app.asset("known_circle"));
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
 		end
 		if data.saved then
 			if data.parent and data.parent.locks or data.isDaily then
-				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known");
+				row.Indicator:SetTexture(app.asset("known"));
 			else
-				row.Indicator:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\known_green");
+				row.Indicator:SetTexture(app.asset("known_green"));
 			end
 			row.Indicator:SetPoint("RIGHT", leftmost, relative, x, 0);
 			row.Indicator:Show();
@@ -6124,7 +6124,7 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\ATT-Classic\\assets\\content";
+		allData.icon = app.asset("content");
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.text = L["TITLE"];
@@ -6269,6 +6269,7 @@ function app:GetDataCache()
 		-- Holidays
 		if app.Categories.Holidays then
 			db = app.CreateNPC(-5, app.Categories.Holidays);
+			db.description = "These events occur at consistent dates around the year based on and themed around real world holiday events.";
 			db.expanded = false;
 			table.insert(g, db);
 		end
@@ -6277,6 +6278,7 @@ function app:GetDataCache()
 		if app.Categories.WorldEvents then
 			db = {};
 			db.text = BATTLE_PET_SOURCE_7;
+			db.description = "These events occur at different times in the game's timeline, typically as one time server wide events with the exception of the Darkmoon Faire, which happens once per month every month.";
 			db.icon = "Interface\\Icons\\Spell_arcane_portalstormwind";
 			db.g = app.Categories.WorldEvents;
 			db.expanded = false;
@@ -6331,7 +6333,7 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = "Interface\\Addons\\ATT-Classic\\assets\\content";
+		allData.icon = app.asset("content");
 		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
 		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
 		allData.font = "GameFontNormalLarge";
@@ -6539,7 +6541,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		
 		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
 		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture("Interface\\Addons\\ATT-Classic\\assets\\grip");
+		grip:SetTexture(app.asset("grip"));
 		grip:SetSize(16, 16);
 		grip:SetTexCoord(0,1,0,1);
 		grip:SetPoint("BOTTOMRIGHT", -5, 5);
@@ -6609,7 +6611,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 				end,
 				['options'] = {
 					app.CreateMap(250, {	-- Upper Blackrock Spire
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Boss_Overlord_Wyrmthalak",
+						['icon'] = app.asset("Achievement_Boss_Overlord_Wyrmthalak"),
 						['description'] = "These are players attuned to Upper Blackrock Spire.\n\nYou only need one person in your group that is attuned in order to enter the instance.",
 						['questID'] = 4743,
 						['visible'] = true,
@@ -6693,7 +6695,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 			});
 			attunements = {
 				['text'] = "Attunements",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
+				['icon'] = app.asset("Achievement_Dungeon_HEROIC_GloryoftheRaider"), 
 				["description"] = "This list shows you all of the players you have encountered that are Attuned to raids.",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -6944,7 +6946,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		self.initialized = true;
 		self.data = {
 			['text'] = "Session History",
-			['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider.blp", 
+			['icon'] = app.asset("Achievement_Dungeon_GloryoftheRaider.blp"), 
 			["description"] = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
 			['visible'] = true, 
 			['expanded'] = true,
@@ -7579,7 +7581,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 			-- Raid Assistant
 			raidassistant = {
 				['text'] = "Raid Assistant",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider", 
+				['icon'] = app.asset("Achievement_Dungeon_GloryoftheRaider"), 
 				["description"] = "Never enter the instance with the wrong settings again! Verify that everything is as it should be!",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -7657,7 +7659,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 					}),
 					{
 						['text'] = "Reset Instances",
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Ability_Priest_VoidShift",
+						['icon'] = app.asset("Ability_Priest_VoidShift"),
 						['description'] = "Click here to reset your instances.\n\nAlt+Click to toggle automatically resetting your instances when you leave a dungeon.\n\nWARNING: BE CAREFUL WITH THIS!",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -7853,7 +7855,7 @@ app:GetWindow("Random", UIParent, function(self)
 			local mainHeader, filterHeader;
 			local rerollOption = {
 				['text'] = "Reroll",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\ability_monk_roll",
+				['icon'] = app.asset("ability_monk_roll"),
 				['description'] = "Click this button to reroll using the active filter.",
 				['visible'] = true,
 				['OnClick'] = function(row, button)
@@ -7864,7 +7866,7 @@ app:GetWindow("Random", UIParent, function(self)
 			};
 			filterHeader = {
 				['text'] = "Apply a Search Filter",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\TRADE_ARCHAEOLOGY.blp", 
+				['icon'] = app.asset("TRADE_ARCHAEOLOGY.blp"), 
 				["description"] = "Please select a search filter option.",
 				['visible'] = true,
 				['expanded'] = true,
@@ -7901,7 +7903,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Instance",
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider",
+						['icon'] = app.asset("Achievement_Dungeon_HEROIC_GloryoftheRaider"),
 						['description'] = "Click this button to select a random instance based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -7914,7 +7916,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Dungeon",
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheHERO",
+						['icon'] = app.asset("Achievement_Dungeon_GloryoftheHERO"),
 						['description'] = "Click this button to select a random dungeon based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -7927,7 +7929,7 @@ app:GetWindow("Random", UIParent, function(self)
 					},
 					{
 						['text'] = "Raid",
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_GloryoftheRaider",
+						['icon'] = app.asset("Achievement_Dungeon_GloryoftheRaider"),
 						['description'] = "Click this button to select a random raid based on what you're missing.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -7955,7 +7957,7 @@ app:GetWindow("Random", UIParent, function(self)
 			};
 			mainHeader = {
 				['text'] = "Random - Go Get 'Em!",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Ability_Rogue_RolltheBones.blp", 
+				['icon'] = app.asset("Ability_Rogue_RolltheBones.blp"), 
 				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -7965,7 +7967,7 @@ app:GetWindow("Random", UIParent, function(self)
 				['options'] = {
 					{
 						['text'] = "Change Search Filter",
-						['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\TRADE_ARCHAEOLOGY.blp", 
+						['icon'] = app.asset("TRADE_ARCHAEOLOGY.blp"), 
 						["description"] = "Click this to change your search filter.",
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -8053,7 +8055,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 			-- Soft Reserves
 			local softReserves = {
 				['text'] = "Soft Reserves",
-				['icon'] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Dungeon_HEROIC_GloryoftheRaider", 
+				['icon'] = app.asset("Achievement_Dungeon_HEROIC_GloryoftheRaider"), 
 				["description"] = "The soft reservation list submitted by your raid group. This is managed through the Master Looter, should they have ATT-Classic installed. If not, this feature will not function.\n\nML: Members of your raid without ATT-Classic installed can whisper you '!sr <itemlink>' or '!sr <itemID>' to Soft Reserve an item.",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -9027,7 +9029,7 @@ app.events.PLAYER_LOGIN = function()
 	app:RefreshData(false);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
-		icon = "Interface\\Addons\\ATT-Classic\\assets\\logo_32x32",
+		icon = app.asset("logo_32x32"),
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
