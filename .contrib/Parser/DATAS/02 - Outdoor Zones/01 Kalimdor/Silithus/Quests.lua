@@ -29,7 +29,7 @@ _.Zones =
 					["lvl"] = 40,
 					["groups"] = {
 						i(20645, {	-- Nature's Whisper
-							["description"] = "This is a reward is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
+							["description"] = "This is a reward that is mailed to you in about a day after completing the quest A Terrible Purpose. Keep this for your Nature Resist set.",
 						}),
 					},
 				}),
