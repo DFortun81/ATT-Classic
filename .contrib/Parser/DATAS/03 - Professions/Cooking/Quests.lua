@@ -5,6 +5,10 @@ profession(COOKING, {
 			["requireSkill"] = COOKING,
 			["maps"] = { DUN_MOROGH },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 2894, 1 },	-- Rhapsody Malt
+				{ "i", 2886, 6 },	-- Crag Boar Rib
+			},
 			["lvl"] = 5,
 			["g"] = {
 				i(2888),	-- Beer Basted Boar Ribs
@@ -39,6 +43,10 @@ profession(COOKING, {
 			["coord"] = { 55.31, 31.79, THE_BARRENS },
 			["maps"] = { THE_BARRENS },
 			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 5051, 8 },	-- Dig Rat
+			},
+			["cr"] = 3444,	-- Dig Rat
 			["lvl"] = 15,
 			["g"] = {
 				i(10919),	-- Apothecary Gloves
@@ -84,8 +92,12 @@ profession(COOKING, {
 		q(4161, {	-- Recipe of the Kaldorei
 			["qg"] = 6286,	-- Zarrin
 			["requireSkill"] = COOKING,
+			["coord"] = { 57, 61.2, TELDRASSIL },
 			["maps"] = { TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 5465, 7 },	-- Small Spider Leg
+			},
 			["g"] = {
 				i(5482),	-- Recipe: Kaldorei Spider Kabob
 			},
@@ -110,6 +122,10 @@ profession(COOKING, {
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["requireSkill"] = COOKING,
 			["races"] = ALLIANCE_ONLY,
+			["cost"] = {
+				{ "i", 3712, 10 },	-- Turtle Meat
+				{ "i", 3713, 1 },	-- Soothing Spices
+			},
 			["lvl"] = 28,
 			["g"] = {
 				i(3737),	-- Recipe: Soothing Turtle Bisque
@@ -122,6 +138,10 @@ profession(COOKING, {
 			["maps"] = { HILLSBRAD_FOOTHILLS },
 			["requireSkill"] = COOKING,
 			["races"] = HORDE_ONLY,
+			["cost"] = {
+				{ "i", 3712, 10 },	-- Turtle Meat
+				{ "i", 3713, 1 },	-- Soothing Spices
+			},
 			["lvl"] = 28,
 			["g"] = {
 				i(3737),	-- Recipe: Soothing Turtle Bisque

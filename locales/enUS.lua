@@ -387,6 +387,7 @@ app.L = {
 		[177904] = "Interface\\Icons\\ability_hunter_pet_spider",
 		[179485] = "Interface\\Icons\\Ability_Hunter_TrapLauncher",
 		[179501] = "Interface\\Icons\\INV_Crate_01",
+		[179697] = "Interface\\Icons\\INV_Box_02", 
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180327] = "Interface\\Icons\\inv_poison_mindnumbing",
 		[180366] = "Interface\\Icons\\INV_Fishingpole_02",
