@@ -17,6 +17,8 @@ local GetItemStats = _G["GetItemStats"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+
+--[[
 local protectedAura = {
 	[22888]=true,	-- Rallying Cry of the Dragonslayer
 	[16609]=true,	-- Warchief's Blessing
@@ -39,6 +41,7 @@ function BuffButton_OnClick(self, ...)
 	end
 	return origBuffButton_OnClick(self, ...);
 end
+]]--
 
 -- Coroutine Helper Functions
 app.RawData = {};
