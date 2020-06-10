@@ -687,8 +687,14 @@ _.Zones =
 					},
 				}),
 				q(6026, {	-- That's Asking A Lot
-					["lvl"] = 54,
 					["qg"] = 11033,	-- Smokey LaRue
+					["cost"] = {
+						{ "i", 10562, 8 },	-- Hi-Explosive Bomb
+						{ "i", 10560, 8 },	-- Unstable Trigger
+						{ "i", 12359, 2 },	-- Thorium Bar
+						{ "i", 11128, 1 },	-- Golden Rod
+					},
+					["lvl"] = 54,
 				}),
 				q(7622, {	-- The Balance of Light and Shadow
 					["qg"] = 14494,	-- Eris Havenfire
