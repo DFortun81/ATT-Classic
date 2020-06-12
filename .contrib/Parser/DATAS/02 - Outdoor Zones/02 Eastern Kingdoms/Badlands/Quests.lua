@@ -210,9 +210,13 @@ _.Zones =
 					["lvl"] = 28,
 				}),
 				q(715, {	-- Liquid Stone
-					["lvl"] = 35,
 					["qg"] = 2920,	-- Lucien Tosselwrench
 					["coord"] = { 25.8, 44.2, BADLANDS },
+					["cost"] = {
+						{ "i", 929, 1 },	-- Healing Potion
+						{ "i", 3823, 1 },	-- Lesser Invisibility Potion
+					},
+					["lvl"] = 35,
 					["g"] = {
 						i(4624),	-- Recipe: Lesser Stoneshield Potion
 						i(4623),	-- Lesser Stoneshield Potion
@@ -376,7 +380,7 @@ _.Zones =
 							["itemID"] = 4843,	-- Amethyst Runestone
 							["allianceQuestID"] = 717,	-- Tremors of the Earth
 							["hordeQuestID"] = 793,	-- Broken Alliances
-							["coord"] = { 81, 63, BADLANDS },
+							["coord"] = { 81.27, 64.29, BADLANDS },
 						},
 						{
 							["itemID"] = 4845,	-- Diamond Runestone
@@ -388,7 +392,7 @@ _.Zones =
 							["itemID"] = 4844,	-- Opal Runestone
 							["allianceQuestID"] = 717,	-- Tremors of the Earth
 							["hordeQuestID"] = 793,	-- Broken Alliances
-							["coord"] = { 77.3, 66.9, BADLANDS },
+							["coord"] = { 72.38, 66.94, BADLANDS },
 						},
 						{
 							["itemID"] = 4615,	-- Blacklash's Bindings
