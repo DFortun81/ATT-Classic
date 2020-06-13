@@ -419,10 +419,6 @@ end
 GameTooltipModel:Hide();
 
 app.AlwaysShowUpdate = function(data) data.visible = true; end
-app.yell = function(msg)
-	UIErrorsFrame:AddMessage(msg or "nil", 1, 0, 0);
-	app:PlayRemoveSound();
-end
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
