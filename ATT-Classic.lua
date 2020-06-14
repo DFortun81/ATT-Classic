@@ -6390,6 +6390,9 @@ function app:GetDataCache()
 		end
 		]]--
 	end
+	app.GetDataCache = function()
+		return app:GetWindow("Prime").data;
+	end
 	return allData;
 end
 function app:RefreshData(lazy, got, manual)
