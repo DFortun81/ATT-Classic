@@ -2456,7 +2456,6 @@ local function RefreshCollections()
 		
 		-- Refresh the Collection Windows!
 		app:RefreshData(false, false, true);
-		collectgarbage();
 		
 		-- Report success.
 		app.print("Done refreshing collection.");
@@ -6434,7 +6433,6 @@ function app:RefreshData(lazy, got, manual)
 			app.lastMsg = msg;
 		end
 		wipe(searchCache);
-		collectgarbage();
 	end);
 end
 function app:GetWindow(suffix, parent, onUpdate)
