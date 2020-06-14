@@ -6444,6 +6444,15 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.Toggle = ToggleWindow;
 		window.Update = onUpdate or UpdateWindow;
 		window.SetVisible = SetWindowVisibility;
+		
+		if ATTClassicSettings then
+			if suffix == "Prime" then
+				window:SetScale(app.Settings:GetTooltipSetting("MainListScale"));
+			else
+				window:SetScale(app.Settings:GetTooltipSetting("MiniListScale"));
+			end
+		end
+		
 		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
 		window:SetScript("OnMouseDown", StartMovingOrSizing);
 		window:SetScript("OnMouseUp", StopMovingOrSizing);
