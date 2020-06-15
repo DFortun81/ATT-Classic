@@ -7435,6 +7435,9 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			else
 				show = true;
 			end
+			if self.mapID == id then
+				return; -- Haha JK BRO
+			end
 			
 			-- Cache that we're in the current map ID.
 			self.mapID = id;
