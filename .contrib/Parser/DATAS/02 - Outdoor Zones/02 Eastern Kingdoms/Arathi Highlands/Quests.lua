@@ -14,9 +14,33 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(696, {	-- Attack on the Tower
+					["qg"] = 2789,	-- Skuerto
 					["sourceQuest"] = 695,	-- An Apprentice's Enchantment
+					["coord"] = { 46.65, 47.0, ARATHI_HIGHLANDS },
+					["cost"] = {
+						{ "i", 4532, 1 },	-- Trelane's Ember Agate
+						{ "i", 4531, 1 },	-- Trelane's Orb
+						{ "i", 4530, 1 },	-- Trelane's Phylactery
+					},
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+					["groups"] = {
+						{
+							["itemID"] = 4532,	-- Trelane's Ember Agate
+							["questID"] = 696,	-- Attack on the Tower
+							["coord"] = { 18.0, 67.9, ARATHI_HIGHLANDS },
+						},
+						{
+							["itemID"] = 4531,	-- Trelane's Orb
+							["questID"] = 696,	-- Attack on the Tower
+							["coord"] = { 18.1, 69.1, ARATHI_HIGHLANDS },
+						},
+						{
+							["itemID"] = 4530,	-- Trelane's Phylactery
+							["questID"] = 696,	-- Attack on the Tower
+							["coord"] = { 18.2, 68.2, ARATHI_HIGHLANDS },
+						},
+					},
 				}),
 				q(652, {	-- Breaking the Keystone
 					["provider"] = { "o", 2702 },	-- Stone of Inner Binding
