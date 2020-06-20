@@ -398,7 +398,7 @@ _.Zones =
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["altQuests"] = {
 						1880,	-- Mage-tastic Gizmonitor
 					},

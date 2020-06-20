@@ -325,7 +325,7 @@ _.Zones =
 				}),
 				q(8958, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {9},	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -337,7 +337,7 @@ _.Zones =
 				}),
 				q(8953, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -349,7 +349,7 @@ _.Zones =
 				}),
 				q(8951, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {11},	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -361,7 +361,7 @@ _.Zones =
 				}),
 				q(8955, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {5},	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -373,7 +373,7 @@ _.Zones =
 				}),
 				q(8954, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {2},	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -385,7 +385,7 @@ _.Zones =
 				}),
 				q(8952, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {3},	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -397,7 +397,7 @@ _.Zones =
 				}),
 				q(8959, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {1},	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -409,7 +409,7 @@ _.Zones =
 				}),
 				q(8956, {	-- Anthion's Parting Words
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {4},	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16016,	-- Anthion Harmon
@@ -519,6 +519,7 @@ _.Zones =
 					["coord"] = { 27.0, 8.2, IRONFORGE },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 26,
 				}),
 				q(4736, {	-- In Search of Menara Voidrender
@@ -571,7 +572,7 @@ _.Zones =
 				}),
 				q(8932, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -581,7 +582,7 @@ _.Zones =
 				}),
 				q(8935, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {4},	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -591,7 +592,7 @@ _.Zones =
 				}),
 				q(8931, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {3},	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -601,7 +602,7 @@ _.Zones =
 				}),
 				q(8926, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {11},	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -611,7 +612,7 @@ _.Zones =
 				}),
 				q(8933, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {2},	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -621,7 +622,7 @@ _.Zones =
 				}),
 				q(8934, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {5},	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -631,7 +632,7 @@ _.Zones =
 				}),
 				q(8936, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {9},	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -641,7 +642,7 @@ _.Zones =
 				}),
 				q(8937, {	-- Just Compensation
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {1},	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -678,7 +679,7 @@ _.Zones =
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["altQuests"] = {
 						1861,	-- Mirror Lake
 					},
@@ -751,7 +752,7 @@ _.Zones =
 				}),
 				q(9003, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {5},	-- Priest
+					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -761,7 +762,7 @@ _.Zones =
 				}),
 				q(9001, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -771,7 +772,7 @@ _.Zones =
 				}),
 				q(8999, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {11},	-- Druid
+					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -781,7 +782,7 @@ _.Zones =
 				}),
 				q(9006, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {1},	-- Warrior
+					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -791,7 +792,7 @@ _.Zones =
 				}),
 				q(9005, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {9},	-- Warlock
+					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -801,7 +802,7 @@ _.Zones =
 				}),
 				q(9000, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {3},	-- Hunter
+					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -811,7 +812,7 @@ _.Zones =
 				}),
 				q(9004, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {4},	-- Rogue
+					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -821,7 +822,7 @@ _.Zones =
 				}),
 				q(9002, {	-- Saving the Best for Last
 					["u"] = 3,	-- Added in later phase
-					["classes"] = {2},	-- Paladin
+					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {

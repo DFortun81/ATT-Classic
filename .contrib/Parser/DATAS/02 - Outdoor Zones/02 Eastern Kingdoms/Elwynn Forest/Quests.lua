@@ -507,7 +507,7 @@ _.Zones =
 						1879,	-- Speak with Bink
 					},
 					["races"] = ALLIANCE_ONLY,
-					["classes"] = {8},	-- Mage
+					["classes"] = { MAGE },
 					["lvl"] = 10,
 				}),
 				q(123, {	-- The Collector
