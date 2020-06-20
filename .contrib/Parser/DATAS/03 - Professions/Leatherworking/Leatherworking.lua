@@ -316,12 +316,10 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Sandstalker Breastplate",
 				["recipeID"] = 24851,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Spitfire Breastplate",
 				["recipeID"] = 24848,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Thick Murloc Armor",
@@ -414,12 +412,10 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Sandstalker Bracers",
 				["recipeID"] = 24849,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Spitfire Bracers",
 				["recipeID"] = 24846,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Swift Flight Bracers",
@@ -524,7 +520,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Sandstalker Gauntlets",
 				["recipeID"] = 24850,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Shadowskin Gloves",
@@ -533,7 +528,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Spitfire Gauntlets",
 				["recipeID"] = 24847,
-				["u"] = 3,	-- Added in later phase (AQ)
 			},
 			{
 				["name"] = "Timbermaw Brawlers",

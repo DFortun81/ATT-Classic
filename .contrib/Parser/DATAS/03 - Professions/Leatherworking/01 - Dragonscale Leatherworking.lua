@@ -45,7 +45,6 @@ profession(LEATHERWORKING, {
 						["name"] = "Dreamscale Breastplate",
 						["recipeID"] = 24703,
 						["requireSkill"] = 10656,
-						["u"] = 3, 	-- Not Available Yet!
 					},
 					{
 						["name"] = "Green Dragonscale Breastplate",

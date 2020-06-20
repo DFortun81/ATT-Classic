@@ -10,6 +10,286 @@ _.PvP =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						n(QUESTS, {
+							q(8370, {	-- Conquering Arathi Basin [Level 20]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 20,
+							}),
+							q(8390, {	-- Conquering Arathi Basin [Level 20]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 20,
+							}),
+							q(8436, {	-- Conquering Arathi Basin [Level 30]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 30,
+							}),
+							q(8440, {	-- Conquering Arathi Basin [Level 30]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 30,
+							}),
+							q(8437, {	-- Conquering Arathi Basin [Level 40]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 40,
+							}),
+							q(8441, {	-- Conquering Arathi Basin [Level 40]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 40,
+							}),
+							q(8438, {	-- Conquering Arathi Basin [Level 50]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 50,
+							}),
+							q(8442, {	-- Conquering Arathi Basin [Level 50]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 50,
+							}),
+							q(8439, {	-- Conquering Arathi Basin [Level 60]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 60,
+							}),
+							q(8443, {	-- Conquering Arathi Basin [Level 60]
+								["qg"] = 15350,	-- Horde Warbringer
+								["altQuests"] = {
+									8370,	-- Conquering Arathi Basin [Level 20]
+									8390,	-- Conquering Arathi Basin [Level 20]
+									8436,	-- Conquering Arathi Basin [Level 30]
+									8440,	-- Conquering Arathi Basin [Level 30]
+									8437,	-- Conquering Arathi Basin [Level 40]
+									8441,	-- Conquering Arathi Basin [Level 40]
+									8438,	-- Conquering Arathi Basin [Level 50]
+									8442,	-- Conquering Arathi Basin [Level 50]
+									8439,	-- Conquering Arathi Basin [Level 60]
+									8443,	-- Conquering Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 63.0, 59.8, ALTERAC_MOUNTAINS },
+									{ 73.6, 29.2, ARATHI_HIGHLANDS },
+									{ 80.6, 30.6, ORGRIMMAR },
+									{ 46.6, 8.6, THE_BARRENS },
+									{ 57.8, 76.8, THUNDER_BLUFF },
+									{ 58.2, 97.6, UNDERCITY },
+								},
+								["races"] = HORDE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 60,
+							}),
 							q(8265, {	-- Defiler's Advanced Care Package
 								["qg"] = 15126,	-- Rutherford Twing
 								["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
@@ -168,6 +448,286 @@ _.PvP =
 								["groups"] = {
 									i(20236),	-- Arathor Standard Care Package
 								},
+							}),
+							q(8374, {	-- Claiming Arathi Basin [Level 20]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 20,
+							}),
+							q(8384, {	-- Claiming Arathi Basin [Level 20]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 20,
+							}),
+							q(8391, {	-- Claiming Arathi Basin [Level 30]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 30,
+							}),
+							q(8393, {	-- Claiming Arathi Basin [Level 30]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 30,
+							}),
+							q(8392, {	-- Claiming Arathi Basin [Level 40]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 40,
+							}),
+							q(8394, {	-- Claiming Arathi Basin [Level 40]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 40,
+							}),
+							q(8395, {	-- Claiming Arathi Basin [Level 50]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 50,
+							}),
+							q(8397, {	-- Claiming Arathi Basin [Level 50]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 50,
+							}),
+							q(8396, {	-- Claiming Arathi Basin [Level 60]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 60,
+							}),
+							q(8398, {	-- Claiming Arathi Basin [Level 60]
+								["qg"] = 15351,	-- Alliance Brigadier General
+								["altQuests"] = {
+									8374,	-- Claiming Arathi Basin [Level 20]
+									8384,	-- Claiming Arathi Basin [Level 20]
+									8391,	-- Claiming Arathi Basin [Level 30]
+									8393,	-- Claiming Arathi Basin [Level 30]
+									8392,	-- Claiming Arathi Basin [Level 40]
+									8394,	-- Claiming Arathi Basin [Level 40]
+									8395,	-- Claiming Arathi Basin [Level 50]
+									8397,	-- Claiming Arathi Basin [Level 50]
+									8396,	-- Claiming Arathi Basin [Level 60]
+									8398,	-- Claiming Arathi Basin [Level 60]
+								},
+								["coords"] = {
+									{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+									{ 45.6, 45.8, ARATHI_HIGHLANDS },
+									{ 61.8, 83.8, ASHENVALE },
+									{ 58.0, 34.4, DARNASSUS },
+									{ 69.8, 90.6, IRONFORGE },
+									{ 79.4, 18.0, STORMWIND_CITY },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+								},
+								["lvl"] = 60,
 							}),
 						}),
 						n(VENDORS, {

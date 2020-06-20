@@ -18,27 +18,13 @@ _.Zones =
 						i(22771, {	-- Pattern: Bramblewood Helm
 							["u"] = 3,	-- Added in later phase (AQ)
 						}),
-						i(20382, {	-- Pattern: Dreamscale Breastplate
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20509, {	-- Pattern: Sandstalker Bracers
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20511, {	-- Pattern: Sandstalker Breastplate
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20510, {	-- Pattern: Sandstalker Gauntlets
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20506, {	-- Pattern: Spitfire Bracers
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20508, {	-- Pattern: Spitfire Breastplate
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20507, {	-- Pattern: Spitfire Gauntlets
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
+						i(20382),	-- Pattern: Dreamscale Breastplate
+						i(20509),	-- Pattern: Sandstalker Bracers
+						i(20511),	-- Pattern: Sandstalker Breastplate
+						i(20510),	-- Pattern: Sandstalker Gauntlets
+						i(20506),	-- Pattern: Spitfire Bracers
+						i(20508),	-- Pattern: Spitfire Breastplate
+						i(20507),	-- Pattern: Spitfire Gauntlets
 					},
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>

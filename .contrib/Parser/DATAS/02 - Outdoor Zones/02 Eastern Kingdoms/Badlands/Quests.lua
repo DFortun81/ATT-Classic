@@ -498,7 +498,9 @@ _.Zones =
 					},
 					["maps"] = { IRONFORGE, UNDERCITY, ALTERAC_MOUNTAINS, DUSTWALLOW_MARSH, STRANGLETHORN_VALE },
 					["cost"] = {
+						{ "i", 4641, 1 },	-- Hand of Dagun
 						{ "i", 4646, 1 },	-- Star of Xil'yeh
+						{ "i", 4644, 1 },	-- The Legacy Heart
 					},
 					["lvl"] = 30,
 					["groups"] = {

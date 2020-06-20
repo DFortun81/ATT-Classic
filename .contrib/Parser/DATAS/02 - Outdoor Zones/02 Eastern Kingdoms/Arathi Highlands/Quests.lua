@@ -58,14 +58,6 @@ _.Zones =
 						i(9521),	-- Skullsplitter
 					},
 				}),
-				q(8384, {	-- Claiming Arathi Basin
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 20,
-				}),
-				q(8438, {	-- Conquering Arathi Basin
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 50,
-				}),
 				q(635, {	-- Crystal in the Mountains
 					["lvl"] = 30,
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
