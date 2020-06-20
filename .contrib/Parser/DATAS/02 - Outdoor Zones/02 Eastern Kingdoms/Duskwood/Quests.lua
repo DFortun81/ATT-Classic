@@ -34,7 +34,7 @@ _.Zones =
 				}),
 				q(325, {	-- Armed and Ready
 					["qg"] = 1416,	-- Grimand Elmore
-					["sourceQuest"] = 325,	-- Armed and Ready
+					["sourceQuest"] = 322,	-- Blessed Arm
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
