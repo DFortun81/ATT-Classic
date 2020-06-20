@@ -4061,6 +4061,7 @@ app.CreateObject = function(id, t)
 end
 
 -- Profession Lib
+(function()
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
 	[261] = 5149,	-- Beast Training
@@ -4088,7 +4089,11 @@ app.SkillIDToSpellID = setmetatable({
 	[10656] = 10656,	-- Dragonscale Leatherworking
 	[10658] = 10658,	-- Elemental Leatherworking
 	[10660] = 10660,	-- Tribal Leatherworking
-}, {__index = function(t,k) return k; end})
+}, {__index = function(t,k) return k; end});
+app.SpellIDToSkillID = {};
+for skillID,spellID in pairs(app.SkillIDToSpellID) do
+	app.SpellIDToSkillID[spellID] = skillID;
+end
 app.SpecializationSpellIDs = setmetatable({
 	[20219] = 4036,	-- Gnomish Engineering
 	[20222] = 4036,	-- Goblin Engineering
@@ -4124,6 +4129,7 @@ app.BaseProfession = {
 app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
 end
+end)();
 
 -- PVP Ranks
 app.BasePVPRank = {
@@ -6572,7 +6578,8 @@ function app:BuildSearchResponse(groups, field, value)
 	if groups then
 		local t;
 		for i,group in ipairs(groups) do
-			if group[field] == value then
+			local v = group[field];
+			if v and (v == value or (field == "requireSkill" and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value)) then
 				if not t then t = {}; end
 				tinsert(t, CloneData(group));
 			elseif group.g then
