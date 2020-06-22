@@ -32,6 +32,7 @@ _.Holidays =
 			}),
 			q(9322, {	-- Wild Fires in Kalimdor
 				["qg"] = 16788,	-- Festival Flamekeeper
+				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
 					{ 38.5, 61.1, STORMWIND_CITY}, 
 					{ 63.6, 24.7, IRONFORGE },
@@ -51,6 +52,18 @@ _.Holidays =
 				},
 				["lvl"] = 1,
 				["groups"] = {
+					objective(1, {	-- Flame of Azshara
+						["coord"] = { 41.5, 43.3, AZSHARA },
+					}),
+					objective(2, {	-- Flame of Silithus
+						["coord"] = { 81.2, 18.4, SILITHUS },
+					}),
+					objective(3, {	-- Flame of Un'Goro
+						["coord"] = { 70.1, 76.2, UNGORO_CRATER },
+					}),
+					objective(4, {	-- Flame of Winterspring
+						["coord"] = { 30.6, 43.2, WINTERSPRING },
+					}),
 					i(23379),	-- Cinder Bracers
 					i(23247),	-- Burning Blossom
 				},
@@ -224,6 +237,7 @@ _.Holidays =
 			}),
 			q(9389, {	-- Flickering Flames in Eastern Kingdoms
 				["qg"] = 16817,	-- Festival Loremaster
+				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
 					{ 38.5, 61.1, STORMWIND_CITY },
 					{ 63.6, 24.7, IRONFORGE },
@@ -244,6 +258,18 @@ _.Holidays =
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 1,
 				["groups"] = {
+					objective(1, {	-- Flame of Hillsbrad
+						["coord"] = { 54.2, 34.9, HILLSBRAD_FOOTHILLS },
+					}),
+					objective(2, {	-- Flame of Silverpine
+						["coord"] = { 54.3, 69.6, SILVERPINE_FOREST },
+					}),
+					objective(3, {	-- Flame of Westfall
+						["coord"] = { 33.2, 80.4, WESTFALL },
+					}),
+					objective(4, {	-- Flame of the Wetlands
+						["coord"] = { 51.1, 17.2, WETLANDS },
+					}),
 					i(23211),	-- Toasted Smorc
 					i(23326),	-- Midsummer Sausage
 					i(23327),	-- Fire-toasted Bun
