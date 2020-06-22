@@ -855,11 +855,11 @@ _.Zones =
 					},
 				}),
 				q(2238, {	-- Simple Subterfugin'
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2218,	-- Road to Salvation
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 10,
 				}),
 				q(2041, {	-- Speak with Shoni
 					["lvl"] = 15,

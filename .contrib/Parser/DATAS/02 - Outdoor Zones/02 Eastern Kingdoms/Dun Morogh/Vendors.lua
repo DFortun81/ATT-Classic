@@ -12,7 +12,23 @@ _.Zones =
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 					},
-				}),	
+				}),
+				n(1247, {	-- Innkeeper Belm <Innkeeper>
+					["coord"] = { 47.4, 52.6, DUN_MOROGH },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						{
+							["itemID"] = 2894,	-- Rhapsody Malt
+							["questID"] = 384,	-- Beer Basted Boar Ribs
+							["races"] = ALLIANCE_ONLY,
+						},
+						{
+							["itemID"] = 2686,	-- Thunder Ale
+							["questID"] = 310,	-- Bitter Rivals
+							["races"] = ALLIANCE_ONLY,
+						},
+					},
+				}),
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
 					["coord"] = { 49.0, 48.0, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,

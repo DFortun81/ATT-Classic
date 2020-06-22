@@ -328,7 +328,6 @@ _.Zones =
 					["lvl"] = 10,
 					["altQuests"] = {
 						2205,	-- Seek out SI:7
-						2218,	-- Road to Salvation
 					},
 				}),
 				q(456, {	-- The Balance of Nature

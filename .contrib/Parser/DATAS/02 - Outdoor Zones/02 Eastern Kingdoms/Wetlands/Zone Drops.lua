@@ -86,6 +86,10 @@ _.Zones =
 				i(892, {	-- Gnoll Casting Gloves
 					["cr"] = 1009,	-- Mosshide Mistweaver
 				}),
+				i(3340, {	-- Incendicite Ore
+					["questID"] = 466,	-- Search for Incendicite
+					["races"] = ALLIANCE_ONLY,
+				}),
 				i(2702, {	-- Lightforge Ingot
 					["questID"] = 526,	-- Lightforge Ingots
 					["cr"] = 1418,	-- Bluegill Raider

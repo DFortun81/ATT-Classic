@@ -11,11 +11,17 @@ _.Zones =
 					q(6661, {	-- Deeprun Rat Roundup
 						["qg"] = 12997,	-- Monty
 						["races"] = ALLIANCE_ONLY,
+						["cost"] = {
+							{ "i", 17117, 1 },	-- Rat Catcher's Flute
+						},
 					}),
 					q(6662, {	-- Me Brother, Nipsy
 						["qg"] = 12997,	-- Monty
+						["sourceQuest"] = 6661, -- Deeprun Rat Roundup
 						["races"] = ALLIANCE_ONLY,
-						["sourceQuests"] = { 6661 } -- Deeprun Rat Roundup
+						["cost"] = {
+							{ "i", 17118, 1 },	-- Crate of Mystery Meat
+						},
 					}),
 				}),
 			},
