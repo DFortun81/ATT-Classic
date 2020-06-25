@@ -574,6 +574,7 @@ _.Zones =
 					["qg"] = 2465,	-- Far Seer Mok'thardin
 					["sourceQuest"] = 571,	-- Mok'thardin's Enchantment
 					["coord"] = { 32, 29.2, STRANGLETHORN_VALE },
+					["maps"] = { STRANGLETHORN_VALE },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 737, 1 },	-- Holy Spring Water
@@ -584,7 +585,6 @@ _.Zones =
 							["itemID"] = 737,	-- Holy Spring Water
 							["questID"] = 573,	-- Mok'thardin's Enchantment
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
-							["races"] = HORDE_ONLY,
 						},
 						i(4112),	-- Choker of the High Shaman
 					},
