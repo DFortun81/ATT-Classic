@@ -7,7 +7,7 @@ _.Instances = {
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			n(QUESTS, {
+			un(PHASE_FOUR, n(QUESTS, {
 				["isRaid"] = true,
 				["crs"] = {
 					14889,	-- Emeriss
@@ -30,8 +30,8 @@ _.Instances = {
 						},
 					}),
 				},
-			}),
-			n(COMMON_BOSS_DROPS, {
+			})),
+			un(PHASE_FOUR, n(COMMON_BOSS_DROPS, {
 				["isRaid"] = true,
 				["crs"] = {
 					14889,	-- Emeriss
@@ -63,8 +63,8 @@ _.Instances = {
 						i(20381),	-- Dreamscale
 					}),
 				},
-			}),
-			n(6109, {	-- Azuregos
+			})),
+			un(PHASE_TWO, n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
 				["maps"] = { AZSHARA },
 				["isRaid"] = true,
@@ -82,8 +82,8 @@ _.Instances = {
 					i(19131),	-- Snowblind Shoes
 					i(18547),	-- Unmelting Ice Girdle
 				},
-			}),
-			n(12397, {	-- Lord Kazzak
+			})),
+			un(PHASE_TWO, n(12397, {	-- Lord Kazzak
 				--["coord"] = { , BLASTED_LANDS },	-- TODO: Add location
 				["description"] = "Starting in Phase 2, Lord Kazzak can spawn as a World Boss in the Tainted Scar.",
 				["maps"] = { BLASTED_LANDS },
@@ -101,8 +101,8 @@ _.Instances = {
 					i(19133),	-- Fel Infused Leggings
 					i(18543),	-- Ring of Entropy
 				},
-			}),
-			n(14889, {	-- Emeriss
+			})),
+			un(PHASE_FOUR, n(14889, {	-- Emeriss
 				["coord"] = { 51.2, 10.9, FERALAS },
 				["maps"] = { FERALAS },
 				["isRaid"] = true,
@@ -114,8 +114,8 @@ _.Instances = {
 					i(20621),	-- Boots of the Endless Moor
 					i(20624),	-- Ring of the Unliving
 				},
-			}),
-			n(14888, {	-- Lethon
+			})),
+			un(PHASE_FOUR, n(14888, {	-- Lethon
 				["coord"] = { 63.3, 27.8, THE_HINTERLANDS },
 				["maps"] = { THE_HINTERLANDS },
 				["isRaid"] = true,
@@ -128,8 +128,8 @@ _.Instances = {
 					i(20627),	-- Dark Heart Pants
 					i(20629),	-- Malignant Footguards
 				},
-			}),
-			n(14890, {	-- Taerar
+			})),
+			un(PHASE_FOUR, n(14890, {	-- Taerar
 				["coord"] = { 45.4, 39.6, DUSKWOOD },
 				["maps"] = { DUSKWOOD },
 				["isRaid"] = true,
@@ -141,8 +141,8 @@ _.Instances = {
 					i(20631),	-- Mendicant's Slippers
 					i(20632),	-- Mindtear Band
 				},
-			}),
-			n(14887, {	-- Ysondre
+			})),
+			un(PHASE_FOUR, n(14887, {	-- Ysondre
 				["coord"] = { 94.2, 35.7, ASHENVALE },
 				["maps"] = { ASHENVALE },
 				["isRaid"] = true,
@@ -155,7 +155,7 @@ _.Instances = {
 					i(20639),	-- Strangley Glyphed Legplates
 					i(20636),	-- Hibernation Crystal
 				},
-			}),
+			})),
 		},
 	}),
 };

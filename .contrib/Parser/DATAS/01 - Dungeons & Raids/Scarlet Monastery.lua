@@ -128,15 +128,14 @@ _.Instances = {
 					i(7685),	-- Orb of the Forgotten Seer
 					i(7684),	-- Bloodmage Mantle
 				}),
-				n(14693, {	-- Scorn
+				un(PHASE_SIX, n(14693, {	-- Scorn
 					["description"] = "This encounter was only available during the Scourge Invasion.",
-					["u"] = 2,
 					["g"] = {
-						un(2, i(23168)),	-- Scorn's Focal Dagger
-						un(2, i(23169)),	-- Scorn's Icy Choker
-						un(2, i(23170)),	-- The Frozen Clutch
+						i(23168),	-- Scorn's Focal Dagger
+						i(23169),	-- Scorn's Icy Choker
+						i(23170),	-- The Frozen Clutch
 					},
-				}),
+				})),
 			}),
 			n(-86, {	-- Library
 				["lvl"] = 28,

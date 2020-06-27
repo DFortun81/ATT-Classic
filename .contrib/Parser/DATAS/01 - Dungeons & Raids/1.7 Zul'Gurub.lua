@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = {
+_.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 	map(ZULGURUB, {
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["isRaid"] = true,
@@ -919,8 +919,8 @@ _.Instances = {
 						n(14921, {	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["coord"] = { 15.1, 16.0, STRANGLETHORN_VALE },
 							["groups"] = {
-								un(3, i(20757)),	-- Formula: Brilliant Mana Oil
-								un(3, i(20756)),	-- Formula: Brilliant Wizard Oil
+								un(PHASE_FIVE, i(20757)),	-- Formula: Brilliant Mana Oil
+								un(PHASE_FIVE, i(20756)),	-- Formula: Brilliant Wizard Oil
 								i(19772),	-- Pattern: Blood Tiger Breastplate
 								i(19773),	-- Pattern: Blood Tiger Shoulders
 								i(19766),	-- Pattern: Bloodvine Boots
@@ -1328,11 +1328,10 @@ _.Instances = {
 				i(19767),	-- Primal Bat Leather
 			}),
 			n(14507, {	-- High Priest Venoxis
-				{
+				un(PHASE_FIVE, {
 					["itemID"] = 22216,	-- Venoxis's Venom Sac
 					["questID"] = 9023,	-- The Perfect Poison
-					["u"] = 3, 	-- Not available until AQ.
-				},
+				}),
 				i(19903),	-- Fang of Venoxis
 				i(19900),	-- Zulian Stone Axe
 				i(19907),	-- Zulian Tigerhide Cloak
@@ -1484,4 +1483,4 @@ _.Instances = {
 			}),
 		},
 	}),
-};
+});

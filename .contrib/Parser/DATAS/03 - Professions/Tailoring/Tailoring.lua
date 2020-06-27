@@ -49,11 +49,10 @@ profession(TAILORING, {
 				["name"] = "Bottomless Bag",
 				["recipeID"] = 18455
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Cenarion Herb Bag",
 				["recipeID"] = 27724,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Core Felcloth Bag",
 				["recipeID"] = 26087
@@ -62,11 +61,10 @@ profession(TAILORING, {
 				["name"] = "Enchanted Mageweave Pouch",
 				["recipeID"] = 27658
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Enchanted Runecloth Bag",
 				["recipeID"] = 27659,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Felcloth Bag",
 				["recipeID"] = 26086
@@ -107,11 +105,10 @@ profession(TAILORING, {
 				["name"] = "Runecloth Bag",
 				["recipeID"] = 18405
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Satchel of Cenarius",
 				["recipeID"] = 27730,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Small Silk Pack",
 				["recipeID"] = 3813
@@ -178,16 +175,14 @@ profession(TAILORING, {
 				["name"] = "Silk Headband",
 				["recipeID"] = 8762
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Headband",
 				["recipeID"] = 12083,
-				["u"] = 1,	-- Never in game
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Sylvan Crown",
 				["recipeID"] = 28481,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "White Bandit Mask",
 				["recipeID"] = 12059
@@ -258,16 +253,14 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Shoulders",
 				["recipeID"] = 12076
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Shoulders",
 				["recipeID"] = 12087,
-				["u"] = 1,	-- Never in game
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Sylvan Shoulders",
 				["recipeID"] = 28482,
-				["u"] = 3,	-- Added in later phase (AQ)
-			}
+			})
 		}
 	},
 	{
@@ -382,11 +375,10 @@ profession(TAILORING, {
 				["name"] = "Green Silk Armor",
 				["recipeID"] = 8784
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Green Woolen Robe",
 				["recipeID"] = 7636,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Green Woolen Vest",
 				["recipeID"] = 2399
@@ -455,16 +447,14 @@ profession(TAILORING, {
 				["name"] = "Simple Dress",
 				["recipeID"] = 8465
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Vest",
 				["recipeID"] = 12068,
-				["u"] = 1,	-- Never in game
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Sylvan Vest",
 				["recipeID"] = 28480,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Truefaith Vestments",
 				["recipeID"] = 18456
@@ -537,11 +527,10 @@ profession(TAILORING, {
 				["name"] = "Runecloth Belt",
 				["recipeID"] = 18402
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Runed Stygian Belt",
 				["recipeID"] = 24902,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Spider Belt",
 				["recipeID"] = 3863
@@ -644,11 +633,10 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Gloves",
 				["recipeID"] = 12071
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Gloves",
 				["recipeID"] = 12063,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Truefaith Gloves",
 				["recipeID"] = 8782
@@ -731,11 +719,10 @@ profession(TAILORING, {
 				["name"] = "Runecloth Pants",
 				["recipeID"] = 18438
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Runed Stygian Leggings",
 				["recipeID"] = 24901,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Shadoweave Pants",
 				["recipeID"] = 12052
@@ -748,11 +735,10 @@ profession(TAILORING, {
 				["name"] = "Simple Linen Pants",
 				["recipeID"] = 12044
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Pants",
 				["recipeID"] = 12062,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Tuxedo Pants",
 				["recipeID"] = 12089
@@ -779,11 +765,10 @@ profession(TAILORING, {
 				["name"] = "Bloodvine Boots",
 				["recipeID"] = 24093,
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Boots of Darkness",
 				["recipeID"] = 8778,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Boots of the Enchanter",
 				["recipeID"] = 3860
@@ -812,11 +797,10 @@ profession(TAILORING, {
 				["name"] = "Runecloth Boots",
 				["recipeID"] = 18423
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Runed Stygian Boots",
 				["recipeID"] = 24903,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Shadoweave Boots",
 				["recipeID"] = 12082
@@ -871,11 +855,10 @@ profession(TAILORING, {
 				["name"] = "Crimson Silk Cloak",
 				["recipeID"] = 8789
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Gaea's Embrace",
 				["recipeID"] = 28210,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Heavy Woolen Cloak",
 				["recipeID"] = 3844

@@ -885,21 +885,20 @@ _.Instances = {
 				i(11623), 	-- Spritecaster Cap
 				i(11627), 	-- Fleetfoot Greaves
 			}),
-			n(16059, { 	-- Theldren
+			un(PHASE_FIVE, n(16059, { 	-- Theldren
 				["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
 				["provider"] = { "o", 181074 },	-- Arena Spoils
 				["cost"] = {
 					{ "i", 21986, 1 },	-- Banner of Provocation
 				},
-				["u"] = 3,	-- Not Released Yet.
-				["groups"] = {
-					un(3, i(22047)),	-- Top Piece of Lord Valthalak's Amulet
-					un(3, i(22305)), 	-- Ironweave Mantle
-					un(3, i(22317)), 	-- Lefty's Brass Knuckle
-					un(3, i(22318)), 	-- Malgen's Long Bow
-					un(3, i(22330)), 	-- Shroud of Arcane Mastery
-				},
-			}),
+				["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+					i(22047),	-- Top Piece of Lord Valthalak's Amulet
+					i(22305), 	-- Ironweave Mantle
+					i(22317), 	-- Lefty's Brass Knuckle
+					i(22318), 	-- Malgen's Long Bow
+					i(22330), 	-- Shroud of Arcane Mastery
+				}),
+			})),
 			n(10096, {	-- Ring of Law
 				n(9031, { 	-- Anub'shiah
 					["description"] = "This is one of the possible bosses for this event.",
@@ -965,11 +964,10 @@ _.Instances = {
 				i(11749), 	-- Searingscale Leggings
 			}),
 			n(9017, {	-- Lord Incendius
-				{
+				un(PHASE_FIVE, {
 					["itemID"] = 21987,	-- Incendicite of Incendius
 					["questID"] = 8961,	-- Three Kings of Flame
-					["u"] = 3,	-- Added in later phase
-				},
+				}),
 				{
 					["itemID"] = 11126,	-- Tablet of Kurniya
 					["questID"] = 3907,	-- Disharmony of Fire
@@ -1158,9 +1156,7 @@ _.Instances = {
 					i(17049),  	-- Plans: Fiery Chain Girdle
 					i(17053),  	-- Plans: Fiery Chain Shoulders
 					i(19212),  	-- Plans: Nightfall
-					i(20761, {	-- Recipe: Transmute Elemental Fire
-						["u"] = 3,	-- Added in phase 5
-					}),
+					un(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire
 				},
 			}),
 			n(9156, {	-- Ambassador Flamelash

@@ -125,12 +125,9 @@ _.Zones =
 					["classes"] = { MAGE },
 					["lvl"] = 30,
 				}),
-				q(1174, {	-- Gnomes Win!
-					["u"] = 1,	-- Never Available
-					["groups"] = {
-						i(5857),	-- Gnome Prize Box
-					},
-				}),
+				un(NEVER_IMPLEMENTED, q(1174, {	-- Gnomes Win!
+					un(NEVER_IMPLEMENTED, i(5857)),	-- Gnome Prize Box
+				})),
 				q(1178, {	-- Goblin Sponsorship
 					["qg"] = 4630,	-- Pozzik
 					["sourceQuest"] = 1176,	-- Load Lightening
@@ -184,12 +181,9 @@ _.Zones =
 					},
 					["lvl"] = 29,
 				}),
-				q(1099, {	-- Goblins Win!
-					["u"] = 1,	-- Never Available
-					["groups"] = {
-						i(5858),	-- Goblin Prize Box
-					},
-				}),
+				un(NEVER_IMPLEMENTED, q(1099, {	-- Goblins Win!
+					un(NEVER_IMPLEMENTED, i(5858)),	-- Goblin Prize Box
+				})),
 				q(5064, {	-- Grimtotem Spying
 					["qg"] = 10537,	-- Cliffwatcher Longhorn
 					["sourceQuest"] = 4841,	-- Pacify the Centaur

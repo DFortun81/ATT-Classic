@@ -2,9 +2,8 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = {
+_.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 	map(NAXXRAMAS, {
-		["u"] = 3,	-- Added in later phase
 		["description"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
 		["isRaid"] = true,
@@ -209,7 +208,6 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Honored]
 					["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -228,7 +226,6 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Revered]
 					["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -245,7 +242,6 @@ _.Instances = {
 				},
 				{	-- The Dread Citadel - Naxxramas [Exalted]
 					["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
-					["u"] = 3,	-- Added in later phase
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
@@ -1078,12 +1074,11 @@ _.Instances = {
 						i(23073),	-- Boots of Displacement
 					}),
 					n(16062, {	-- Highlord Mograine <The Ashbringer>
-						{
+						un(NEVER_IMPLEMENTED, {
 							["itemID"] = 13262,	-- Ashbringer
-							["u"] = 1,	-- Never Implemented
 							["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
 							["collectible"] = false,
-						},
+						}),
 						i(22691),	-- Corrupted Ashbringer
 						i(22809),	-- Maul of the Redeemed Crusader
 						i(22811),	-- Soulstring
@@ -1180,4 +1175,4 @@ _.Instances = {
 			}),
 		},
 	}),
-};
+});

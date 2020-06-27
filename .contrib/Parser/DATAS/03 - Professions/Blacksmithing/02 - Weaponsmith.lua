@@ -126,34 +126,31 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 23639,
 						["requireSkill"] = 9787,
 					},
-					{
+					un(NEVER_IMPLEMENTED, {
 						["name"] = "Bleakwood Hew",
 						["recipeID"] = 16965,
 						["requireSkill"] = 9787,
-						["u"] = 1,	-- Never in game
-					},
+					}),
 					{
 						["name"] = "Blight",
 						["recipeID"] = 10011,
 						["requireSkill"] = 9787,
 					},
-					{
+					un(NEVER_IMPLEMENTED, {
 						["name"] = "Blood Talon",
 						["recipeID"] = 16986,
 						["requireSkill"] = 9787,
-						["u"] = 1,	-- Never in game
-					},
+					}),
 					{
 						["name"] = "Dark Iron Pulverizer",
 						["recipeID"] = 15292,
 						["requireSkill"] = 9787,
 					},
-					{
+					un(NEVER_IMPLEMENTED, {
 						["name"] = "Darkspear",
 						["recipeID"] = 16987,
 						["requireSkill"] = 9787,
-						["u"] = 1,	-- Never in game
-					},
+					}),
 					{
 						["name"] = "Dark Iron Sunderer",
 						["recipeID"] = 15294,

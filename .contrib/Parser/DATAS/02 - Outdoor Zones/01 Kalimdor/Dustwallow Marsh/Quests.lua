@@ -149,13 +149,12 @@ _.Zones =
 						i(9519),	-- Durtfeet Stompers
 					},
 				}),
-				q(8970, {	-- I See Alcaz Island In Your Future...
+				un(PHASE_FIVE, q(8970, {	-- I See Alcaz Island In Your Future...
 					["cost"] = {
 						{ "i", 22094, 20 },	-- Bloodkelp
 					},
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
-				}),
+				})),
 				q(1169, {	-- Identifying the Brood
 					["qg"] = 4501,	-- Draz'Zilb
 					["coord"] = { 37, 33, DUSTWALLOW_MARSH },

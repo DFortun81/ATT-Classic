@@ -3,8 +3,8 @@
 ---------------------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
 local oldI, oldQ = i, q;
-i = function(...) return un(1, oldI(...)); end
-q = function(...) return un(1, oldQ(...)); end
+i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
+q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
 _.NeverImplemented =
 {
 	i(7093),	-- Pattern: Boots of Darkness
@@ -636,7 +636,6 @@ _.NeverImplemented =
 	i(5255),	-- Quilboar Tomahawk
 	
 	-- One Handed Sword
-	i(19110),	-- Cold Forged Blade
 	i(4116),	-- Olmann Sewar
 	
 	-- Fist Weapons

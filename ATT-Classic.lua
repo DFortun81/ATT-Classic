@@ -1368,7 +1368,12 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
-				if group.u then o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][group.u][1]] .. ":0|t "; end
+				if group.u then
+					local reason = L["UNOBTAINABLE_ITEM_REASONS"][group.u];
+					if reason and not reason[4] then
+						o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t ";
+					end
+				end
 				tinsert(entries, o);
 				
 				-- Only go down one more level.
@@ -1523,7 +1528,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				for i,j in ipairs(group) do
 					if j.itemID == itemID then
 						if j.u and (not j.crs or paramA == "itemID") then
-							tinsert(info, { left = L["UNOBTAINABLE_ITEM_REASONS"][j.u][2] });
+							local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
+							if reason and not reason[4] then
+								tinsert(info, { left = reason[2] });
+							end
 							break;
 						end
 					end
@@ -1586,14 +1594,23 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					for source,replacement in pairs(abbrevs_post) do
 						text = string.gsub(text, source, replacement);
 					end
+					
+					local didthing = false;
 					if j.u then
-						tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][L["UNOBTAINABLE_ITEM_REASONS"][j.u][1]] .. ":0|t");
-					elseif not app.RecursiveClassAndRaceFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
-					elseif not app.RecursiveUnobtainableFilter(j.parent) then
-						tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
-					else
-						tinsert(temp, text);
+						local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
+						if reason and not reason[4] then
+							tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t");
+							didthing = true;
+						end
+					end
+					if not didthing then
+						if not app.RecursiveClassAndRaceFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-Away:0|t");
+						elseif not app.RecursiveUnobtainableFilter(j.parent) then
+							tinsert(unfiltered, text .. " |TInterface\\FriendsFrame\\StatusIcon-DnD:0|t");
+						else
+							tinsert(temp, text);
+						end
 					end
 				end
 			end
@@ -4559,8 +4576,8 @@ function app.FilterItemClass_RequiredSkill(requireSkill)
 	end
 end
 function app.FilterItemClass_UnobtainableItem(item)
-	if item.u then
-	   return false;
+	if item.u and not ATTClassicSettings.Unobtainables[item.u] then
+		return false;
 	else
 		return true;
 	end
@@ -5203,8 +5220,8 @@ local function SetRowData(self, row, data)
 			row.Background:Show();
 		end
 		if data.u then
-			local reason = L["UNOBTAINABLE_ITEM_REASONS"][data.u or 1];
-			if reason then
+			local reason = L["UNOBTAINABLE_ITEM_REASONS"][data.u];
+			if reason and not reason[4] then
 				local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
 				if texture then
 					row.Indicator:SetTexture(texture);
@@ -5606,7 +5623,10 @@ local function RowOnEnter(self)
 					GameTooltip:SetHyperlink(link);
 				else
 					GameTooltip:AddLine("Item #" .. reference.itemID);
-					if reference and reference.u then GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, true); end
+					if reference and reference.u then
+						local d = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
+						if d and not d[4] then GameTooltip:AddLine(d[2], 1, 1, 1, true); end
+					end
 					AttachTooltipSearchResults(GameTooltip, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
 				end
 			elseif reference.currencyID then
@@ -5794,7 +5814,8 @@ local function RowOnEnter(self)
 				end
 			end
 			if reference.u then
-				GameTooltip:AddLine(L["UNOBTAINABLE_ITEM_REASONS"][reference.u][2], 1, 1, 1, 1, true);
+				local d = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
+				if d and not d[4] then GameTooltip:AddLine(d[2], 1, 1, 1, true); end
 			end
 		end
 		if reference.questID then

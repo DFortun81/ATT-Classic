@@ -33,10 +33,10 @@ profession(ENCHANTING, {
 				["name"] = "Enchanted Leather",
 				["recipeID"] = 17181
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Enchanted Thorium Bar",
 				["recipeID"] = 17180
-			}
+			})
 		}
 	},
 	{
@@ -113,11 +113,10 @@ profession(ENCHANTING, {
 				["name"] = "Greater Spirit",
 				["recipeID"] = 13846
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Healing",
 				["recipeID"] = 23802,
-				["u"] = 3,	-- Added in later phase
-			},
+			}),
 			{
 				["name"] = "Intellect",
 				["recipeID"] = 13822
@@ -142,11 +141,10 @@ profession(ENCHANTING, {
 				["name"] = "Lesser Spirit",
 				["recipeID"] = 7859
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Mana Regeneration",
 				["recipeID"] = 23801,
-				["u"] = 3,	-- Added in later phase
-			},
+			}),
 			{
 				["name"] = "Minor Agility",
 				["recipeID"] = 7779
@@ -291,16 +289,14 @@ profession(ENCHANTING, {
 				["name"] = "Greater Defense",
 				["recipeID"] = 13746
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Greater Fire Resistance",
 				["recipeID"] = 25081,
-				["u"] = 3,	-- Added in later phase
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Greater Nature Resistance",
 				["recipeID"] = 25082,
-				["u"] = 3,	-- Added in later phase
-			},
+			}),
 			{
 				["name"] = "Greater Resistance",
 				["recipeID"] = 20014
@@ -359,20 +355,18 @@ profession(ENCHANTING, {
 				["name"] = "Agility",
 				["recipeID"] = 13815
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Fire Power",
 				["recipeID"] = 25078,
-				["u"]= 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Fishing",
 				["recipeID"] = 13620
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Frost Power",
 				["recipeID"] = 25074,
-				["u"]= 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Greater Agility",
 				["recipeID"] = 20012
@@ -381,11 +375,10 @@ profession(ENCHANTING, {
 				["name"] = "Greater Strength",
 				["recipeID"] = 20013
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Healing Power",
 				["recipeID"] = 25079,
-				["u"]= 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Herbalism",
 				["recipeID"] = 13617
@@ -402,11 +395,10 @@ profession(ENCHANTING, {
 				["name"] = "Riding Skill",
 				["recipeID"] = 13947
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Shadow Power",
 				["recipeID"] = 25073,
-				["u"]= 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Skinning",
 				["recipeID"] = 13698
@@ -421,16 +413,14 @@ profession(ENCHANTING, {
 		["name"] = "Weapon Enchantments",
 		["categoryID"] = 41,
 		["g"] = {
-			{
+			un(PHASE_THREE, {
 				["name"] = "Agility",
 				["recipeID"] = 23800,
-				["u"] = 3,	-- Added in later phase
-			},
-			{
-				["name"] = "Agility",
+			}),
+			un(PHASE_FIVE, {
+				["name"] = "Agility", -- Enchant 2H Weapon
 				["recipeID"] = 27837,
-				["u"] = 3,	-- Added in later phase
-			},
+			}),
 			{
 				["name"] = "Crusader",
 				["recipeID"] = 20034
@@ -499,16 +489,14 @@ profession(ENCHANTING, {
 				["name"] = "Major Spirit",
 				["recipeID"] = 20035
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Mighty Intellect",
 				["recipeID"] = 23804,
-				["u"] = 3,	-- Added in later phase (Phase 3)
-			},
-			{
+			}),
+			un(PHASE_THREE, {
 				["name"] = "Mighty Spirit",
 				["recipeID"] = 23803,
-				["u"] = 3,	-- Added in later phase (Phase 3)
-			},
+			}),
 			{
 				["name"] = "Minor Beastslayer",
 				["recipeID"] = 7786
@@ -525,11 +513,10 @@ profession(ENCHANTING, {
 				["name"] = "Spellpower",
 				["recipeID"] = 22749
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Strength",
 				["recipeID"] = 23799,
-				["u"] = 3,	-- Added in later phase (Phase 3)
-			},
+			}),
 			{
 				["name"] = "Striking",
 				["recipeID"] = 13693
@@ -624,47 +611,40 @@ profession(ENCHANTING, {
 			}
 		}
 	},
-	{
+	un(PHASE_FIVE, {
 		["name"] = "Oils",
 		["categoryID"] = 44,
-		["g"] = {
+		["g"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 			{
 				["name"] = "Brilliant Mana Oil",
 				["recipeID"] = 25130,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Brilliant Wizard Oil",
 				["recipeID"] = 25129,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Lesser Mana Oil",
 				["recipeID"] = 25127,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Lesser Wizard Oil",
 				["recipeID"] = 25126,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Minor Mana Oil",
 				["recipeID"] = 25125,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Minor Wizard Oil",
 				["recipeID"] = 25124,
-				["u"] = 3,	-- Added in later phase
 			},
 			{
 				["name"] = "Wizard Oil",
 				["recipeID"] = 25128,
-				["u"] = 3,	-- Added in later phase
 			}
-		}
-	},
+		})
+	}),
 	{
 		["name"] = "Trinket",
 		["categoryID"] = 45,

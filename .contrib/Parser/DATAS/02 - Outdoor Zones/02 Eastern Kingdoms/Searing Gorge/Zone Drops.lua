@@ -63,14 +63,13 @@ _.Zones =
 						8419,	-- Twilight Idolater
 					},
 				}),
-				i(21547, {	-- Recipe: Elixir of Greater Firepower
-					["u"] = 3,	-- Added in phase 5
+				un(PHASE_FIVE, i(21547, {	-- Recipe: Elixir of Greater Firepower
 					["crs"] = {
 						5844,	-- Dark Iron Slaver
 						5846,	-- Dark Iron Taskmaster
 						8637,	-- Dark Iron Watchman
 					},
-				}),
+				})),
 				i(18959, {	-- Smithing Tuyere
 					["questID"] = 7728,	-- STOLEN: Smithing Tuyere and Lookout's Spyglass
 					["cr"] = 5840,	-- Dark Iron Steamsmith

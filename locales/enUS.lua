@@ -208,7 +208,7 @@ app.L = {
 		[-57] = "Interface\\Icons\\INV_Misc_Food_10", 										-- Harvest Festival
 		[-58] = "Interface\\Addons\\ATT-Classic\\assets\\hallows_end",						-- Hallow's End
 		[-60] = "Interface\\Icons\\inv_thanksgiving_turkey",								-- Pilgrim's Bounty
-		[-61] = "Interface\\Icons\\inv_holiday_christmas_present_01",						-- The Feast of Winter Veil
+		[-61] = "Interface\\Icons\\inv_holiday_christmas_present_01",						-- Feast of Winter Veil
 		[-62] = "Interface\\Icons\\inv_misc_fish_06",										-- Stranglethorn Fishing Extravaganza
 		[-69] = "Interface\\Icons\\spell_arcane_portalironforge",							-- Maraudon Purple
 		[-70] = "Interface\\Icons\\INV_Misc_Gem_Opal_01",									-- Orange
@@ -278,7 +278,7 @@ app.L = {
 		[-57] = "Harvest Festival",												-- Harvest Festival
  		[-58] = "Hallow's End",													-- Hallow's End
 		[-60] = "Pilgrim's Bounty",												-- Pilgrim's Bounty
-		[-61] = "The Feast of Winter Veil",										-- The Feast of Winter Veil
+		[-61] = "Feast of Winter Veil",											-- Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",
 		[-69] = "Maraudon Portal",												-- Maraudon Portal
 		[-70] = "Foulspore Cavern [Orange]",									-- Foulspore Cavern [Orange]
@@ -883,9 +883,31 @@ app.L = {
 		"Interface\\FriendsFrame\\StatusIcon-Online",	-- There is Hope
 	};
 	["UNOBTAINABLE_ITEM_REASONS"] = {
-		{1, "|CFFFF0000This was never available to players.|r", "Never Available (1)"}, -- No Hope -- 1
-		{1, "|CFFFF0000This has been removed from the game.|r", "BoP / BoA Item (2)"}, -- No Hope -- 2
-		{1, "|CFFFF0000This is not available until a later Phase of Release in WoW Classic.|r", "Phased Releases (3)"}, -- No Hope -- 3
+		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},
+		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"},
+		[3] = {1, "|CFFFF0000This is not available until a later Phase of Release in WoW Classic.|r", "Future Releases"}, -- No Hope -- 3
+		
+		-- Future Content Releases
+		[11] = {2, "|CFFAAFFAAThis will not be available until Phase 1 of WoW Classic.|r", "Phase 1", true },
+		[12] = {2, "|CFFAAFFAAThis will not be available until Phase 2 of WoW Classic.|r", "Phase 2", true },
+		[13] = {2, "|CFFAAFFAAThis will not be available until Phase 3 of WoW Classic.|r", "Phase 3", true },
+		[14] = {2, "|CFFAAFFAAThis will not be available until Phase 4 of WoW Classic.|r", "Phase 4", true },
+		[15] = {2, "|CFFAAFFAAThis will not be available until Phase 5 of WoW Classic.|r", "Phase 5" },
+		[16] = {2, "|CFFAAFFAAThis will not be available until Phase 6 of WoW Classic.|r", "Phase 6" },
+		
+		-- Seasonal Filters
+		[1000] = {3, "|CFFAAAAFFThis requires the Brewfest Holiday to be Active.|r", "Brewfest" },
+		[1001] = {3, "|CFFAAAAFFThis requires the Children's Week Holiday to be Active.|r", "Children's Week" },
+		[1002] = {3, "|CFFAAAAFFThis requires the Day of the Dead Holiday to be Active.|r", "Day of the Dead" },
+		[1003] = {3, "|CFFAAAAFFThis requires the Feast of Winter Veil Holiday to be Active.|r", "Feast of Winter Veil" },
+		[1004] = {3, "|CFFAAAAFFThis requires the Hallow's End Holiday to be Active.|r", "Hallow's End" },
+		[1005] = {3, "|CFFAAAAFFThis requires the Harvest Festival Holiday to be Active.|r", "Harvest Festival" },
+		[1006] = {3, "|CFFAAAAFFThis requires the Love is in the Air Holiday to be Active.|r", "Love is in the Air" },
+		[1007] = {3, "|CFFAAAAFFThis requires the Lunar Festival Holiday to be Active.|r", "Lunar Festival" },
+		[1008] = {3, "|CFFAAAAFFThis requires the Midsummer Fire Festival Holiday to be Active.|r", "Midsummer Fire Festival" },
+		[1009] = {3, "|CFFAAAAFFThis requires the New Years Holiday to be Active.|r", "New Years" },
+		[1010] = {3, "|CFFAAAAFFThis requires the Noblegarden Holiday to be Active.|r", "Noblegarden" },
+		[1011] = {3, "|CFFAAAAFFThis requires the Pirate's Day Holiday to be Active.|r", "Pirate's Day" },
+		[1012] = {3, "|CFFAAAAFFThis requires the Darkmoon Faire Holiday to be Active.|r", "Darkmoon Faire" },
 	};
-
 };

@@ -24,31 +24,28 @@ _.Zones =
 					["coord"] = { 36.4, 90.8, EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
-				q(9131, {	-- Binding the Dreadnaught
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9131, {	-- Binding the Dreadnaught
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
+				})),
 				q(5543, {	-- Blood Tinged Skies
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
 					["lvl"] = 52,
 				}),
-				q(9665, {	-- Bolstering Our Defenses
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9665, {	-- Bolstering Our Defenses
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 17072,	-- Emmisary Gormok
-				}),
-				q(9127, {	-- Bone Fragments
+				})),
+				un(PHASE_SIX, q(9127, {	-- Bone Fragments
 					["qg"] = 16131,	-- Rohan the Assassin
 					["sourceQuest"] = 9126,	-- Bonescythe Digs
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["cost"] = {
 						{ "i", 22526, 30 },	-- Bone Fragments
 					},
@@ -56,10 +53,9 @@ _.Zones =
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
-				q(9126, {	-- Bonescythe Digs
+				})),
+				un(PHASE_SIX, q(9126, {	-- Bonescythe Digs
 					["qg"] = 16131,	-- Rohan the Assassin
-					["u"] = 3,	-- Added in later phase
 					["cost"] = {
 						{ "i", 22526, 30 },	-- Bone Fragments
 					},
@@ -67,7 +63,7 @@ _.Zones =
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
+				})),
 				q(5544, {	-- Carrion Grubbage
 					["qg"] = 1855,	-- Tirion Fordring
 					["coord"] = { 7.6, 43.6, EASTERN_PLAGUELANDS },
@@ -89,13 +85,12 @@ _.Zones =
 						i(18182),	-- Chromatic Mantle of the Dawn
 					},
 				}),
-				q(9129, {	-- Core of Elements
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9129, {	-- Core of Elements
 					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
+				})),
 				q(5508, {	-- Corruptor's Scourgestones
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["coord"] = { 81.4, 59.8, EASTERN_PLAGUELANDS },
@@ -108,257 +103,229 @@ _.Zones =
 						i(12844),	-- Argent Dawn Valor Token
 					},
 				}),
-				q(9142, {	-- Craftsman's Writ
+				un(PHASE_SIX, q(9142, {	-- Craftsman's Writ
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22568),	-- Sealed Craftsman's Writ
 					},
-				}),
-				q(9188, {	-- Craftsman's Writ - Brightcloth Pants
+				})),
+				un(PHASE_SIX, q(9188, {	-- Craftsman's Writ - Brightcloth Pants
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9178, {	-- Craftsman's Writ - Dense Weightstone
+				})),
+				un(PHASE_SIX, q(9178, {	-- Craftsman's Writ - Dense Weightstone
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9197, {	-- Craftsman's Writ - Gnomish Battle Chicken
+				})),
+				un(PHASE_SIX, q(9197, {	-- Craftsman's Writ - Gnomish Battle Chicken
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9195, {	-- Craftsman's Writ - Goblin Sapper Charge
+				})),
+				un(PHASE_SIX, q(9195, {	-- Craftsman's Writ - Goblin Sapper Charge
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9201, {	-- Craftsman's Writ - Greater Arcane Protection Potion
+				})),
+				un(PHASE_SIX, q(9201, {	-- Craftsman's Writ - Greater Arcane Protection Potion
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9182, {	-- Craftsman's Writ - Huge Thorium Battleaxe
+				})),
+				un(PHASE_SIX, q(9182, {	-- Craftsman's Writ - Huge Thorium Battleaxe
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9179, {	-- Craftsman's Writ - Imperial Plate Chest
+				})),
+				un(PHASE_SIX, q(9179, {	-- Craftsman's Writ - Imperial Plate Chest
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9206, {	-- Craftsman's Writ - Lightning Eel
+				})),
+				un(PHASE_SIX, q(9206, {	-- Craftsman's Writ - Lightning Eel
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9202, {	-- Craftsman's Writ - Major Healing Potion
+				})),
+				un(PHASE_SIX, q(9202, {	-- Craftsman's Writ - Major Healing Potion
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9200, {	-- Craftsman's Writ - Major Mana Potion
+				})),
+				un(PHASE_SIX, q(9200, {	-- Craftsman's Writ - Major Mana Potion
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9205, {	-- Craftsman's Writ - Plated Armorfish
+				})),
+				un(PHASE_SIX, q(9205, {	-- Craftsman's Writ - Plated Armorfish
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9203, {	-- Craftsman's Writ - Potion of Petrification
+				})),
+				un(PHASE_SIX, q(9203, {	-- Craftsman's Writ - Potion of Petrification
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9183, {	-- Craftsman's Writ - Radiant Circlet
+				})),
+				un(PHASE_SIX, q(9183, {	-- Craftsman's Writ - Radiant Circlet
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9185, {	-- Craftsman's Writ - Rugged Armor Kit
+				})),
+				un(PHASE_SIX, q(9185, {	-- Craftsman's Writ - Rugged Armor Kit
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9191, {	-- Craftsman's Writ - Runecloth Bag
+				})),
+				un(PHASE_SIX, q(9191, {	-- Craftsman's Writ - Runecloth Bag
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9190, {	-- Craftsman's Writ - Runecloth Boots
+				})),
+				un(PHASE_SIX, q(9190, {	-- Craftsman's Writ - Runecloth Boots
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9194, {	-- Craftsman's Writ - Runecloth Robe
+				})),
+				un(PHASE_SIX, q(9194, {	-- Craftsman's Writ - Runecloth Robe
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9187, {	-- Craftsman's Writ - Runic Leather Pants
+				})),
+				un(PHASE_SIX, q(9187, {	-- Craftsman's Writ - Runic Leather Pants
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9204, {	-- Craftsman's Writ - Stonescale Eel
+				})),
+				un(PHASE_SIX, q(9204, {	-- Craftsman's Writ - Stonescale Eel
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9196, {	-- Craftsman's Writ - Thorium Grenade
+				})),
+				un(PHASE_SIX, q(9196, {	-- Craftsman's Writ - Thorium Grenade
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9198, {	-- Craftsman's Writ - Thorium Tube
+				})),
+				un(PHASE_SIX, q(9198, {	-- Craftsman's Writ - Thorium Tube
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9181, {	-- Craftsman's Writ - Volcanic Hammer
+				})),
+				un(PHASE_SIX, q(9181, {	-- Craftsman's Writ - Volcanic Hammer
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9186, {	-- Craftsman's Writ - Wicked Leather Belt
+				})),
+				un(PHASE_SIX, q(9186, {	-- Craftsman's Writ - Wicked Leather Belt
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9184, {	-- Craftsman's Writ - Wicked Leather Headband
+				})),
+				un(PHASE_SIX, q(9184, {	-- Craftsman's Writ - Wicked Leather Headband
 					["repeatable"] = true,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9125, {	-- Crypt Fiend Parts
+				})),
+				un(PHASE_SIX, q(9125, {	-- Crypt Fiend Parts
 					["qg"] = 16132,	-- Huntsman Leopold
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
-				q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
+				})),
+				un(PHASE_SIX, q(9124, {	-- Cryptstalker Armor Doesn't Make Itself...
 					["qg"] = 16132,	-- Huntsman Leopold
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
-				q(9132, {	-- Dark Iron Scraps
+				})),
+				un(PHASE_SIX, q(9132, {	-- Dark Iron Scraps
 					["qg"] = 16112,	-- Korfax, Champion of the Light
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
+				})),
 				q(5211, {	-- Defenders of Darrowshire
 					["lvl"] = 50,
 					["qg"] = 11063,	-- Carlin Redpath
@@ -381,11 +348,10 @@ _.Zones =
 						i(16995),	-- Duskwing Mantle
 					},
 				}),
-				q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
+				un(PHASE_SIX, q(9228, {	-- Epic Armaments of Battle - Exalted Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
@@ -395,12 +361,11 @@ _.Zones =
 						i(22678),	-- Talisman of Ascendance
 						i(22656),	-- The Purifier
 					},
-				}),
-				q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
+				})),
+				un(PHASE_SIX, q(9222, {	-- Epic Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
@@ -410,12 +375,11 @@ _.Zones =
 						i(22678),	-- Talisman of Ascendance
 						i(22656),	-- The Purifier
 					},
-				}),
-				q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
+				})),
+				un(PHASE_SIX, q(9224, {	-- Epic Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
@@ -425,12 +389,11 @@ _.Zones =
 						i(22678),	-- Talisman of Ascendance
 						i(22656),	-- The Purifier
 					},
-				}),
-				q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
+				})),
+				un(PHASE_SIX, q(9225, {	-- Epic Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 55,
 					["g"] = {
 						i(22657),	-- Amulet of the Dawn
@@ -440,12 +403,11 @@ _.Zones =
 						i(22678),	-- Talisman of Ascendance
 						i(22656),	-- The Purifier
 					},
-				}),
-				q(9664, {	-- Establishing New Outposts
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9664, {	-- Establishing New Outposts
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(5246, {	-- Fragments of the Past
 					["lvl"] = 53,
 					["qg"] = 10304,	-- Aurora Skycaller
@@ -616,8 +578,7 @@ _.Zones =
 					["sourceQuest"] = 6146,	-- Nathanos' Ruse
 					["races"] = HORDE_ONLY,
 				}),
-				q(9136, {	-- Savage Flora
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9136, {	-- Savage Flora
 					["lvl"] = 55,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16135,	-- Rayne
@@ -625,17 +586,15 @@ _.Zones =
 						i(22524),	-- Insignia of the Crusade
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9137, {	-- Savage Fronds
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9137, {	-- Savage Fronds
 					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
-				q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["lvl"] = 55,
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["g"] = {
@@ -646,9 +605,8 @@ _.Zones =
 						i(22690),	-- Leggings of the Plague Hunter
 						i(22689),	-- Sanctified Leather Helm
 					},
-				}),
-				q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 					["lvl"] = 55,
 					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
 					["g"] = {
@@ -659,9 +617,8 @@ _.Zones =
 						i(22690),	-- Leggings of the Plague Hunter
 						i(22689),	-- Sanctified Leather Helm
 					},
-				}),
-				q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["lvl"] = 55,
 					["minReputation"] = { 529, HONORED },	-- Argent Dawn
 					["g"] = {
@@ -672,9 +629,8 @@ _.Zones =
 						i(22690),	-- Leggings of the Plague Hunter
 						i(22689),	-- Sanctified Leather Helm
 					},
-				}),
-				q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["lvl"] = 55,
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn
 					["g"] = {
@@ -685,7 +641,7 @@ _.Zones =
 						i(22690),	-- Leggings of the Plague Hunter
 						i(22689),	-- Sanctified Leather Helm
 					},
-				}),
+				})),
 				q(6026, {	-- That's Asking A Lot
 					["qg"] = 11033,	-- Smokey LaRue
 					["cost"] = {
@@ -741,24 +697,22 @@ _.Zones =
 						i(17004),	-- Sarah's Guide
 					},
 				}),
-				q(9128, {	-- The Elemental Equation
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9128, {	-- The Elemental Equation
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 16116,	-- Archmage Angela Dosantos
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 					},
-				}),
-				q(9211, {	-- The Ice Guard
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9211, {	-- The Ice Guard
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16133,	-- Mataus the Wrathcaster
 					["g"] = {
 						i(22636),	-- Ice Guard
 					},
-				}),
+				})),
 				q(6133, {	-- The Ranger Lord's Behest
 					["lvl"] = 54,
 					["races"] = HORDE_ONLY,
@@ -775,22 +729,20 @@ _.Zones =
 						i(16998),	-- Sacred Protector
 					},
 				}),
-				q(9213, {	-- The Shadow Guard
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_SIX, q(9213, {	-- The Shadow Guard
 					["lvl"] = 60,
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						i(22638),	-- Shadow Guard
 					},
-				}),
-				q(9141, {	-- They Call Me "The Rooster"
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_SIX, q(9141, {	-- They Call Me "The Rooster"
 					["lvl"] = 55,
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(22568),	-- Sealed Craftsman's Writ
 					},
-				}),
+				})),
 				q(6022, {	-- To Kill With Purpose
 					["qg"] = 11878,	-- Nathanos Blightcaller
 					["races"] = HORDE_ONLY,
@@ -846,15 +798,14 @@ _.Zones =
 						i(17523),	-- Smokey's Drape
 					},
 				}),
-				q(9165, {	-- Writ of Safe Passage
-					["u"] = 3,	-- Added in later phase
-					["lvl"] = 55,
+				un(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
 					["qg"] = 16226,	-- Guard Didier
+					["lvl"] = 55,
 					["g"] = {
 						i(22523),	-- Insignia of the Dawn
 						i(22524),	-- Insignia of the Crusade
 					},
-				}),
+				})),
 				q(6021, {	-- Zaeldarr the Outcast
 					["qg"] = 11038,	-- Caretaker Alen
 					["cost"] = {

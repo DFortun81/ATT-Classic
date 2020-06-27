@@ -17,9 +17,8 @@ _.Zones =
 						4415,	-- Giant Darkfang Spider
 					},
 				}),
-				i(22094, {	-- Bloodkelp
+				un(PHASE_FIVE, i(22094, {	-- Bloodkelp
 					["questID"] = 8970,	-- I See Alcaz Island In Your Future...
-					["u"] = 3,	-- Added in later phase
 					["crs"] = {
 						4368,	-- Strashaz Myrmidon
 						4366,	-- Strashaz Serpent Guard
@@ -28,7 +27,7 @@ _.Zones =
 						4364,	-- Strashaz Warrior
 						16072,	-- Tidelord Rrurgaz
 					},
-				}),
+				})),
 				i(10822, {	-- Dark Whelpling
 					["cr"] = 4324,	-- Searing Whelp
 				}),

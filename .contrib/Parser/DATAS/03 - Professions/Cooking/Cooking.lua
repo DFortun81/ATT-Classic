@@ -87,11 +87,10 @@ profession(COOKING, {
 				["name"] = "Dig Rat Stew",
 				["recipeID"] = 6417
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Dirge's Kickin' Chimaerok Chops",
 				["recipeID"] = 25659,
-				["u"] = 3,	-- Added in later phase
-			},
+			}),
 			{
 				["name"] = "Dry Pork Ribs",
 				["recipeID"] = 2546

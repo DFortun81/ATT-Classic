@@ -58,11 +58,10 @@ _.Zones =
 				i(13476, {	-- Recipe: Mighty Rage Potion
 					["cr"] = 7027,	-- Blackrock Slayer
 				}),
-				i(22338, {	-- Volcanic Ash
+				un(PHASE_FIVE, i(22338, {	-- Volcanic Ash
 					["questID"] = 8921,	-- The Ectoplasmic Distiller
 					["cr"] = 10078,	-- Terrorspark
-					["u"] = 3,	-- Not available yet.
-				}),
+				})),
 			}),
 		}),
 	}),

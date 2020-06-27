@@ -188,7 +188,7 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
-				q(8910, {	-- An Earnest Proposition
+				un(PHASE_FIVE, q(8910, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -199,12 +199,11 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				}),
-				q(8909, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8909, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -215,12 +214,11 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22079),	-- Virtuous Bracers
 					},
-				}),
-				q(8907, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8907, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -231,12 +229,11 @@ _.Zones =
 					["classes"] = { MAGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22063),	-- Sorcerer's Bindings
 					},
-				}),
-				q(8912, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8912, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -247,12 +244,11 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(21996),	-- Bracers of Heroism
 					},
-				}),
-				q(8908, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8908, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -263,12 +259,11 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22088),	-- Soulforge Bracers
 					},
-				}),
-				q(8911, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8911, {	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -279,12 +274,11 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22071),	-- Deathmist Bracers
 					},
-				}),
-				q(8905,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8905,	{	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -295,12 +289,11 @@ _.Zones =
 					["classes"] = { DRUID },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22108),	-- Feralheart Bracers
 					},
-				}),
-				q(8906,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8906,	{	-- An Earnest Proposition
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["cost"] = {
@@ -311,11 +304,10 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
 					},					
-				}),
+				})),
 				q(3450, {	-- An Easy Pickup
 					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
@@ -323,8 +315,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
-				q(8958, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8958, {	-- Anthion's Parting Words
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -334,9 +325,8 @@ _.Zones =
 						i(22072),	-- Deathmist Leggings
 						i(22073),	-- Deathmist Mantle
 					},
-				}),
-				q(8953, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8953, {	-- Anthion's Parting Words
 					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -346,9 +336,8 @@ _.Zones =
 						i(22067),	-- Sorcerer's Leggings
 						i(22068),	-- Sorcerer's Mantle
 					},
-				}),
-				q(8951, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8951, {	-- Anthion's Parting Words
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -358,9 +347,8 @@ _.Zones =
 						i(22111),	-- Feralheart Kilt
 						i(22112),	-- Feralheart Spaulders
 					},
-				}),
-				q(8955, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8955, {	-- Anthion's Parting Words
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -370,9 +358,8 @@ _.Zones =
 						i(22085),	-- Virtuous Skirt
 						i(22082),	-- Virtuous Mantle
 					},
-				}),
-				q(8954, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8954, {	-- Anthion's Parting Words
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -382,9 +369,8 @@ _.Zones =
 						i(22092),	-- Soulforge Legplates
 						i(22093),	-- Soulforge Spaulders
 					},
-				}),
-				q(8952, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8952, {	-- Anthion's Parting Words
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -394,9 +380,8 @@ _.Zones =
 						i(22017),	-- Beastmaster's Pants
 						i(22016),	-- Beastmaster's Mantle
 					},
-				}),
-				q(8959, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8959, {	-- Anthion's Parting Words
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -406,9 +391,8 @@ _.Zones =
 						i(22000),	-- Legplates of Heroism
 						i(22001),	-- Spaulders of Heroism
 					},
-				}),
-				q(8956, {	-- Anthion's Parting Words
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8956, {	-- Anthion's Parting Words
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -418,7 +402,7 @@ _.Zones =
 						i(22007),	-- Darkmantle Pants
 						i(22008),	-- Darkmantle Spaulders
 					},
-				}),
+				})),
 				q(3449, {	-- Arcane Runes
 					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
@@ -469,11 +453,10 @@ _.Zones =
 						i(5396),	-- Key to Searing Gorge
 					},
 				}),
-				q(8997, {	-- Back to the Beginning
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8997, {	-- Back to the Beginning
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(8415, {	-- Chillwind Camp
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.6, 6.6, IRONFORGE },
@@ -570,8 +553,7 @@ _.Zones =
 					["qg"] = 6031,	-- Tormus Deepforge
 					["sourceQuest"] = 1680,	-- Vejrek
 				}),
-				q(8932, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8932, {	-- Just Compensation
 					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -579,9 +561,8 @@ _.Zones =
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
 					},
-				}),
-				q(8935, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8935, {	-- Just Compensation
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -589,9 +570,8 @@ _.Zones =
 						i(22002),	-- Darkmantle Belt
 						i(22006),	-- Darkmantle Gloves
 					},
-				}),
-				q(8931, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8931, {	-- Just Compensation
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -599,9 +579,8 @@ _.Zones =
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
 					},
-				}),
-				q(8926, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8926, {	-- Just Compensation
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -609,9 +588,8 @@ _.Zones =
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
 					},
-				}),
-				q(8933, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8933, {	-- Just Compensation
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -619,9 +597,8 @@ _.Zones =
 						i(22086),	-- Soulforge Belt
 						i(22090),	-- Soulforge Gauntlets
 					},
-				}),
-				q(8934, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8934, {	-- Just Compensation
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -629,9 +606,8 @@ _.Zones =
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
 					},
-				}),
-				q(8936, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8936, {	-- Just Compensation
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -639,9 +615,8 @@ _.Zones =
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
 					},
-				}),
-				q(8937, {	-- Just Compensation
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8937, {	-- Just Compensation
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -649,7 +624,7 @@ _.Zones =
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
 					},
-				}),
+				})),
 				q(2298, {	-- Kingly Shakedown
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
@@ -719,11 +694,10 @@ _.Zones =
 					["qg"] = 1573,	-- Gryth Thurden
 					["sourceQuest"] = 6388,	-- Gryth Thurden
 				}),
-				q(8977, {	-- Return to Deliana
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8977, {	-- Return to Deliana
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(2977, {	-- Return to Ironforge
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,
@@ -750,8 +724,7 @@ _.Zones =
 					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 					["coord"] = { 63.5, 67.2, IRONFORGE },
 				}),
-				q(9003, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(9003, {	-- Saving the Best for Last
 					["classes"] = { PRIEST },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -759,9 +732,8 @@ _.Zones =
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
 					},
-				}),
-				q(9001, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9001, {	-- Saving the Best for Last
 					["classes"] = { MAGE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -769,9 +741,8 @@ _.Zones =
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
 					},
-				}),
-				q(8999, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8999, {	-- Saving the Best for Last
 					["classes"] = { DRUID },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -779,9 +750,8 @@ _.Zones =
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
 					},
-				}),
-				q(9006, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9006, {	-- Saving the Best for Last
 					["classes"] = { WARRIOR },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -789,9 +759,8 @@ _.Zones =
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
 					},
-				}),
-				q(9005, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9005, {	-- Saving the Best for Last
 					["classes"] = { WARLOCK },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -799,9 +768,8 @@ _.Zones =
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
 					},
-				}),
-				q(9000, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9000, {	-- Saving the Best for Last
 					["classes"] = { HUNTER },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -809,9 +777,8 @@ _.Zones =
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
 					},
-				}),
-				q(9004, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9004, {	-- Saving the Best for Last
 					["classes"] = { ROGUE },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -819,9 +786,8 @@ _.Zones =
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
 					},
-				}),
-				q(9002, {	-- Saving the Best for Last
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(9002, {	-- Saving the Best for Last
 					["classes"] = { PALADIN },
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
@@ -829,7 +795,7 @@ _.Zones =
 						i(22091),	-- Soulforge Helm
 						i(22089),	-- Soulforge Breastplate
 					},
-				}),
+				})),
 				q(2946, {	-- Seeing What Happens
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,

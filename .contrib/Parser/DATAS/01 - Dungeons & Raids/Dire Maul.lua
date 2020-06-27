@@ -21,7 +21,7 @@ _.Instances = {
 					},
 					["lvl"] = 56,
 				}),
-				q(8948, {	-- Anthion's Old Friend
+				un(PHASE_FIVE, q(8948, {	-- Anthion's Old Friend
 					["sourceQuest"] = 8947,	-- Anthion's Strange Request
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
@@ -29,10 +29,9 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
 					},
-					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
-				}),
-				q(8947, {	-- Anthion's Strange Request
+				})),
+				un(PHASE_FIVE, q(8947, {	-- Anthion's Strange Request
 					["sourceQuest"] = 8946,	-- Proof of Life
 					["qg"] = 16016,	-- Anthion Harmon
 					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
@@ -43,9 +42,8 @@ _.Instances = {
 						{ "i", 14342, 3 },	-- Mooncloth
 						{ "i", 15407, 4 },	-- Cured Rugged Hide
 					},
-					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
-				}),
+				})),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["classes"] = { MAGE },
@@ -99,16 +97,15 @@ _.Instances = {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
-				q(8949, {	-- Falrin's Vendetta
+				un(PHASE_FIVE, q(8949, {	-- Falrin's Vendetta
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
 					["qg"] = 16032,	-- Falrin Treeshaper
-					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
 					["groups"] = {
 						i(22150),	-- Beads of Ogre Might
 						i(22149),	-- Beads of Ogre Mojo
 					},
-				}),
+				})),
 				q(7494, {	-- Feathermoon Stronghold
 					["qgs"] = {
 						2198,	-- Crier Goodman
@@ -306,12 +303,11 @@ _.Instances = {
 						i(18468),	-- Royal Seal of Eldre'Thalas
 					},
 				},
-				{
+				un(PHASE_FIVE, {
 					["questID"] = 9015,	-- The Challenge
 					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["maps"] = { BLACKROCK_DEPTHS },
-					["u"] = 3,	-- Not available yet! Phase 2?
 					["lvl"] = 58,
 					["groups"] = {
 						{
@@ -320,7 +316,7 @@ _.Instances = {
 							["hordeQuestID"] = 9018,	-- Anthion's Parting Words
 						},
 					},
-				},
+				}),
 				{
 					["questID"] = 7506,	-- The Emerald Dream...
 					["qg"] = 14381,	-- Lorekeeper Javon
@@ -396,18 +392,17 @@ _.Instances = {
 						i(18473),	-- Royal Seal of Eldre'Thalas
 					},
 				},
-				{
+				un(PHASE_FIVE, {
 					["questID"] = 8950,	-- The Instigator's Enchantment
 					["sourceQuest"] = 8949,	-- Falrin's Vendetta
 					["qg"] = 16032,	-- Falrin Treeshaper
-					["u"] = 3,	-- Not available yet! Phase 2?
 					["cost"] = {
 						{ "i", 22224, 1 },	-- Jeering Spectre's Essence
 						{ "i", 20520, 4 },	-- Dark Rune
 						{ "i", 14344, 8 },	-- Large Brilliant Shard
 					},
 					["lvl"] = 58,
-				},
+				}),
 				{
 					["questID"] = 7501,	-- The Light and How To Swing It
 					["qg"] = 14382,	-- Lorekeeper Mykos
@@ -636,13 +631,13 @@ _.Instances = {
 						i(18313),	-- Helm of Awareness
 						i(18306),	-- Gloves of Shadowy Mist
 					}),
-					n(16097, {	-- Isalien Summonable
-						["description"] = "|cff66ccffBrazier of Invocation|r |cff3399ff(Dungeon Set 2 questline)|r |cff66ccffis required to summon this boss.|r",
+					un(PHASE_FIVE, n(16097, {	-- Isalien Summonable
+						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
+							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
-						["u"] = 3,	-- Dungeon Set 2
-						["groups"] = {
+						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 							i(22315), 	-- Hammer of Revitalization
 							i(22314), 	-- Huntsman's Harpoon
 							i(22304), 	-- Ironweave Gloves
@@ -655,8 +650,8 @@ _.Instances = {
 								["itemID"] = 22345,	-- Totem of Rebirth
 								["classes"] = { SHAMAN },
 							},
-						},
-					}),
+						}),
+					})),
 					n(11491, {	-- Old Ironbark
 						["description"] = "Talk to him for him to break down the door.",
 					}),
@@ -688,11 +683,10 @@ _.Instances = {
 							["questID"] = 5525,	-- Free Knot!
 							["description"] = "Drops from any Gordok Ogre in Dire Maul North.\n\nNOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
 						},
-						{
+						un(PHASE_FIVE, {
 							["itemID"] = 21982,	-- Ogre Warbeads
 							["questID"] = 8949,	-- Falrin's Vendetta
-							["u"] = 3,	-- Not available yet! Phase 2?
-						},
+						}),
 					}),
 					n(14326, {	-- Guard Mol'dar
 						i(18498),	-- Hedgecutter
@@ -856,9 +850,8 @@ _.Instances = {
 								11472,	-- Eldreth Spirit
 							},
 						}),
-						i(22224, {	-- Jeering Spectre's Essence
+						un(PHASE_FIVE, i(22224, {	-- Jeering Spectre's Essence
 							["questID"] = 8950,	-- The Instigator's Enchantment
-							["u"] = 3,	-- Not available yet! Phase 2?
 							["crs"] = {
 								11471,	-- Eldreth Apparition
 								11475,	-- Eldreth Phantasm
@@ -866,7 +859,7 @@ _.Instances = {
 								11473,	-- Eldreth Spectre
 								11472,	-- Eldreth Spirit
 							},
-						}),
+						})),
 						i(18337, {	-- Orphic Bracers
 							["crs"] = {
 								11480,	-- Arcane Aberration
@@ -971,15 +964,14 @@ _.Instances = {
 						i(18378),	-- Silvermoon Leggings
 						i(18395),	-- Emerald Flame Ring
 					}),
-					n(14690, {	-- Revanchion
+					un(PHASE_SIX, n(14690, {	-- Revanchion
 						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
-						["u"] = 3,
-						["groups"] = {
+						["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
 							i(23127),	-- Cloak of Revanchion
 							i(23129),	-- Bracers of Mending
 							i(23128),	-- The Shadow's Grasp
-						},
-					}),
+						}),
+					})),
 				},
 			}),
 		},

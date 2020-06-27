@@ -179,11 +179,10 @@ _.Instances = {
 				},
 			}),
 			n(ZONEDROPS, {
-				i(20951, {	-- Narain's Scrying Goggles
+				un(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
 					["questID"] = 8578,	-- Scrying Goggles? No Problem!
-					["u"] = 3,	-- Not available yet.
-				}),
+				})),
 				i(16802),	-- Arcanist Belt (Mage)
 				i(16799),	-- Arcanist Bindings (Mage)
 				i(16864),	-- Belt of Might (Warrior)
@@ -577,7 +576,7 @@ _.Instances = {
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
-				un(2, i(17982)),	-- Ragnaros Core
+				un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
 			}),
 		},
 	}),

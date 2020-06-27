@@ -15,6 +15,21 @@ _.Instances = {
 		["lvl"] = 58,
 		["groups"] = {
 			n(QUESTS, {
+				un(PHASE_FOUR, q(8259, {	-- A More Fitting Reward (Post 1.7, Phase 4)
+					["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+					["sourceQuest"] = 7668,	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+					["altQuests"] = {
+						8258,	-- The Darkreaver Menace (New)
+					},
+					["coord"] = { 38.7, 35.9, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 55,
+					["groups"] = {
+						un(PHASE_FOUR, i(20134)), 	-- Skyfury Helm
+					},
+				})),
 				q(5803, {	-- Araj's Scarab (A)
 					["qg"] = 11056,	-- Alchemist Arbington
 					["sourceQuest"] = 5801,	-- Fire Plume Forged (A)
@@ -262,7 +277,24 @@ _.Instances = {
 					},
 					["lvl"] = 57,
 				}),
-				q(8258, {	-- The Darkreaver Menace
+				q(7668, {	-- The Darkreaver Menace (Original: 1.4 till 1.7 only)
+					["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
+					["sourceQuest"] = 7667,	-- Material Assistance
+					["cr"] = 14516,	-- Death Knight Darkreaver
+					["coord"] = { 38.7, 35.9, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 18880, 1 },	-- Darkreaver's Head
+						{ "i", 18746, 1 },	-- Divination Scryer
+					},
+					["lvl"] = 55,
+					["groups"] = {
+						i(18807), 	-- Helm of Latent Power
+					},
+				}),
+				un(PHASE_FOUR, q(8258, {	-- The Darkreaver Menace (Post 1.7, Phase 4)
 					["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 					["sourceQuest"] = 7667,	-- Material Assistance
 					["altQuests"] = {
@@ -275,18 +307,13 @@ _.Instances = {
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 18880, 1 },	-- Darkreaver's Head
+						{ "i", 18746, 1 },	-- Divination Scryer
 					},
-					["u"] = 3,	-- Not available yet.
 					["lvl"] = 55,
 					["groups"] = {
-						{
-							["itemID"] = 18746,	-- Divination Scryer
-							["questID"] = 8258,	-- The Darkreaver Menace
-						},
-						un(2, i(18807)), 	-- Helm of Latent Power (1.4 till 1.7 only)
-						i(20134), 	-- Skyfury Helm
+						un(PHASE_FOUR, i(20134)), 	-- Skyfury Helm
 					},
-				}),
+				})),
 				q(5462, {	-- The Dying, Ras Frostwhisper
 					["qg"] = 11286,	-- Magistrate Marduke
 					["sourceQuest"] = 5461,	-- The Human, Ras Frostwhisper
@@ -546,10 +573,9 @@ _.Instances = {
 						},
 					},
 					{
-						["itemID"] = 18880,	-- Charger's Redeemed Soul
+						["itemID"] = 18880,	-- Darkreaver's Head
 						["questID"] = 8258,	-- The Darkreaver Menace
 						["classes"] = { SHAMAN },
-						["u"] = 3,	-- Not available yet.
 						["races"] = HORDE_ONLY,
 					},
 					i(18759),	-- Malicious Axe
@@ -598,10 +624,13 @@ _.Instances = {
 				i(14522),	-- Maelstrom Leggings
 				i(18694),	-- Shadowy Mail Greaves
 			}),
-			n(16118, {	-- Kormok
-				["description"] = "This boss was summoned using the Brazier of Beckoning.",
-				["u"] = 3,	-- Not yet available.
-				["groups"] = {
+			un(PHASE_FIVE, n(16118, {	-- Kormok
+				["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+				["cost"] = {
+					{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
+					{ "i", 22057, 1 },	-- Brazier of Invocation
+				},
+				["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					{
 						["itemID"] = 21984,	-- Left Piece of Lord Valthalak's Amulet
 						["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet
@@ -615,8 +644,8 @@ _.Instances = {
 					i(22303),	-- Ironweave Pants
 					i(22326),	-- Amalgam's Band
 					i(22331),	-- Band of the Steadfast Hero
-				},
-			}),
+				}),
+			})),
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",
 				["qgs"] = {

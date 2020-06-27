@@ -707,15 +707,20 @@ _.Zones =
 						i(10550),	-- Wooly Mittens
 					},
 				}),
-				q(5841, {	-- Welcome!
+				un(REMOVED_FROM_GAME, q(5841, {	-- Welcome!
 					["provider"] = { "i", 14647 },	-- Coldridge Valley Gift Voucher
-					["u"] = 2,
-					["groups"] = {
-						un(2, i(13584)),	-- Diablo Stone
-						un(2, i(13583)),	-- Panda Collar
-						un(2, i(13582)),	-- Zergling Leash
+					["altQuests"] = {
+						5841,	-- Welcome! [Dun Morogh]
+						5805,	-- Welcome! [Elwynn Forest]
+						5842,	-- Welcome! [Teldrassil]
 					},
-				}),
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+						i(13584),	-- Diablo Stone
+						i(13583),	-- Panda Collar
+						i(13582),	-- Zergling Leash
+					}),
+				})),
 			}),
 		}),
 	}),

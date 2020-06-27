@@ -277,7 +277,7 @@ _.Instances = {
 				},
 				["groups"] = {
 					n(12203, {	-- Landslide
-						un(2, i(17733)), 	-- Fist of Stone
+						un(NEVER_IMPLEMENTED, i(17733)), 	-- Fist of Stone
 						i(17943),	-- Fist of Stone
 						i(17737),	-- Cloud Stone
 						i(17734),	-- Helm of the Mountain

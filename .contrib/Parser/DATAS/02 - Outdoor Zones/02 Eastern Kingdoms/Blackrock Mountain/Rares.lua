@@ -9,12 +9,8 @@ _.Zones =
 				n(9046, {	-- Scarshield Quartermaster <Scarshield Legion>
 					["description"] = "This mob used to simply be rare and have a limited loot table. He was later repurposed for use with the BWL Attunement Quest Chain. The two items listed below were never available in WoW Classic.",
 					["groups"] = {
-						i(13254, {	-- Astral Guard
-							["u"] = 2,
-						}),
-						i(13248, {	-- Burstshot Harquebus
-							["u"] = 2,
-						}),
+						un(NEVER_IMPLEMENTED, i(13254)),	-- Astral Guard
+						un(NEVER_IMPLEMENTED, i(13248)),	-- Burstshot Harquebus
 					},
 				}),
 				n(8924, {	-- The Behemoth

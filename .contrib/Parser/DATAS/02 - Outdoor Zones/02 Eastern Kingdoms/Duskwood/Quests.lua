@@ -382,10 +382,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(402, {	-- Sirra is Busy
-					["u"] = 1,	-- Never in game
+				un(NEVER_IMPLEMENTED, q(402, {	-- Sirra is Busy
 					["lvl"] = 20,
-				}),
+				})),
 				q(1395, {	-- Supplies for Nethergarde
 					["qg"] = 5464,	-- Watchmaster Sorigal
 					["sourceQuest"] = 1477,	-- Vital Supplies
