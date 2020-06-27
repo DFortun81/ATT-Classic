@@ -180,12 +180,12 @@ _.Instances = {
 				i(6323),	-- Baron's Scepter
 				i(6321),	-- Silverlaine's Family Seal
 			}),
-			un(2, n(14682, {	-- Sever
+			un(PHASE_SIX, n(14682, {	-- Sever
 				["description"] = "Only available during the Scourge Invasion.",
-				["groups"] = {
-					un(2, i(23171)),	-- The Axe of Severing
-					un(2, i(23173)),	-- Abomination Skin Leggings
-				},
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+					i(23171),	-- The Axe of Severing
+					i(23173),	-- Abomination Skin Leggings
+				}),
 			})),
 			n(4278, {	-- Commander Springvale
 				i(3191),	-- Arced War Axe

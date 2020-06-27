@@ -576,7 +576,7 @@ _.Instances = {
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
-				un(2, i(17982)),	-- Ragnaros Core
+				un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
 			}),
 		},
 	}),

@@ -372,48 +372,42 @@ _.PvP =
 							}),
 						}),
 						n(13419, {	-- Ivus the Forest Lord
-							i(19110, {	-- Cold Forged Blade
-								["u"] = 3,
+							un(NEVER_IMPLEMENTED, i(19110, {	-- Cold Forged Blade
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19105, {	-- Frost Runed Headdress
-								["u"] = 3,
+							})),
+							un(NEVER_IMPLEMENTED, i(19105, {	-- Frost Runed Headdress
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19111, {	-- Winteraxe Epaulets
-								["u"] = 3,
+							})),
+							un(NEVER_IMPLEMENTED, i(19111, {	-- Winteraxe Epaulets
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19112, {	-- Frozen Steel Vambraces
-								["u"] = 3,
+							})),
+							un(NEVER_IMPLEMENTED, i(19112, {	-- Frozen Steel Vambraces
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19113, {	-- Yeti Hide Bracers
-								["u"] = 3,
+							})),
+							un(NEVER_IMPLEMENTED, i(19113, {	-- Yeti Hide Bracers
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19109, {	-- Deep Rooted Ring
-								["u"] = 3,
+							})),
+							un(NEVER_IMPLEMENTED, i(19109, {	-- Deep Rooted Ring
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
+							})),
 						}),
 					}, 
 				}),
@@ -786,48 +780,42 @@ _.PvP =
 							}),
 						}),
 						n(13256, {	-- Lokholar the Ice Lord
-							i(19110, {	-- Cold Forged Blade
-								["u"] = 2,
+							un(NEVER_IMPLEMENTED, i(19110, {	-- Cold Forged Blade
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19105, {	-- Frost Runed Headdress
-								["u"] = 2,
+							})),
+							un(NEVER_IMPLEMENTED, i(19105, {	-- Frost Runed Headdress
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19111, {	-- Winteraxe Epaulets
-								["u"] = 2,
+							})),
+							un(NEVER_IMPLEMENTED, i(19111, {	-- Winteraxe Epaulets
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19112, {	-- Frozen Steel Vambraces
-								["u"] = 2,
+							})),
+							un(NEVER_IMPLEMENTED, i(19112, {	-- Frozen Steel Vambraces
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19113, {	-- Yeti Hide Bracers
-								["u"] = 2,
+							})),
+							un(NEVER_IMPLEMENTED, i(19113, {	-- Yeti Hide Bracers
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
-							i(19109, {	-- Deep Rooted Ring
-								["u"] = 2,
+							})),
+							un(NEVER_IMPLEMENTED, i(19109, {	-- Deep Rooted Ring
 								["timeline"] = {
 									"added 1.5.0.4442",
 									"removed 1.6.0.4500",
 								},
-							}),
+							})),
 						}),
 					},
 				}),

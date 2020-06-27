@@ -138,12 +138,12 @@ _.Instances = {
 				i(10762),	-- Robes of the Lich
 				i(10765),	-- Bonefingers
 			}),
-			un(2, n(14686, {	-- Lady Falther'ess
+			un(PHASE_SIX, n(14686, {	-- Lady Falther'ess
 				["description"] = "Only available during the Scourge Invasion.",
-				["groups"] = {
-					un(2, i(23177)),	-- Lady Falther'ess' Finger
-					un(2, i(23178)),	-- Mantle of Lady Falther'ess
-				},
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+					i(23177),	-- Lady Falther'ess' Finger
+					i(23178),	-- Mantle of Lady Falther'ess
+				}),
 			})),
 		},
 	}),

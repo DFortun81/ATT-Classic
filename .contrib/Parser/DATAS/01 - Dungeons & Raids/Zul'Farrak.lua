@@ -33,7 +33,7 @@ _.Instances = {
 							["itemID"] = 11122,	-- Carrot on a Stick
 							["description"] = "Do NOT vendor this item. Keep it with you always. It is best-in-slot when you are traveling long distances on your mount. (which you do a lot in Classic!)",
 						},
-						un(2, i(9653)),	-- Speedy Racer Goggles
+						un(NEVER_IMPLEMENTED, i(9653)),	-- Speedy Racer Goggles
 					},
 				}),
 				q(2991, {	-- Nekrum's Medallion

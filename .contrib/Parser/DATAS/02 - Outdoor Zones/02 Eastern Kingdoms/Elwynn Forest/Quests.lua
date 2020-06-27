@@ -601,15 +601,20 @@ _.Zones =
 					i(3300),	-- Rabbit's Foot
 					i(8497),	-- Rabbit Crate (Snowshoe)
 				})),
-				q(5805, {	-- Welcome!
+				un(REMOVED_FROM_GAME, q(5805, {	-- Welcome!
 					["provider"] = { "i", 14646 },	-- Northshire Gift Voucher
-					["u"] = 2,
-					["g"] = {
-						un(2, i(13584)),	-- Diablo Stone
-						un(2, i(13583)),	-- Panda Collar
-						un(2, i(13582)),	-- Zergling Leash
+					["altQuests"] = {
+						5841,	-- Welcome! [Dun Morogh]
+						5805,	-- Welcome! [Elwynn Forest]
+						5842,	-- Welcome! [Teldrassil]
 					},
-				}),
+					["races"] = ALLIANCE_ONLY,
+					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+						i(13584),	-- Diablo Stone
+						i(13583),	-- Panda Collar
+						i(13582),	-- Zergling Leash
+					}),
+				})),
 				q(239, {	-- Westbrook Garrison Needs Help!
 					["qg"] = 240,	-- Marshal Dughan
 					["sourceQuest"] = 76,	-- The Jasperlode Mine

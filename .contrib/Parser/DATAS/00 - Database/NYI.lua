@@ -633,7 +633,6 @@ _.NeverImplemented =
 	i(5255),	-- Quilboar Tomahawk
 	
 	-- One Handed Sword
-	i(19110),	-- Cold Forged Blade
 	i(4116),	-- Olmann Sewar
 	
 	-- Fist Weapons
