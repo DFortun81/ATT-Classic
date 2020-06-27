@@ -9,95 +9,51 @@ _.Zones =
 				n(15293, {	-- Aendel Windspear
 					["coord"] = { 62.6, 49.8, SILITHUS },
 					["groups"] = {
-						i(22769, {	-- Pattern: Bramblewood Belt
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22770, {	-- Pattern: Bramblewood Boots
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22771, {	-- Pattern: Bramblewood Helm
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(20382),	-- Pattern: Dreamscale Breastplate
-						i(20509),	-- Pattern: Sandstalker Bracers
-						i(20511),	-- Pattern: Sandstalker Breastplate
-						i(20510),	-- Pattern: Sandstalker Gauntlets
-						i(20506),	-- Pattern: Spitfire Bracers
-						i(20508),	-- Pattern: Spitfire Breastplate
-						i(20507),	-- Pattern: Spitfire Gauntlets
+						un(PHASE_FIVE, i(22769)),	-- Pattern: Bramblewood Belt
+						un(PHASE_FIVE, i(22770)),	-- Pattern: Bramblewood Boots
+						un(PHASE_FIVE, i(22771)),	-- Pattern: Bramblewood Helm
+						un(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate
+						un(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers
+						un(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate
+						un(PHASE_FOUR, i(20510)),	-- Pattern: Sandstalker Gauntlets
+						un(PHASE_FOUR, i(20506)),	-- Pattern: Spitfire Bracers
+						un(PHASE_FOUR, i(20508)),	-- Pattern: Spitfire Breastplate
+						un(PHASE_FOUR, i(20507)),	-- Pattern: Spitfire Gauntlets
 					},
 				}),
 				n(15419, {	-- Kania <Enchanting Supplies>
 					["coord"] = { 52.0, 39.7, SILITHUS },
-					["groups"] = {
-						i(20732, {	-- Formula: Enchant Cloak - Greater Fire Resistance
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20733, {	-- Formula: Enchant Cloak - Greater Nature Resistance
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20754, {	-- Formula: Lesser Mana Oil
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20753, {	-- Formula: Lesser Wizard Oil
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20752, {	-- Formula: Minor Mana Oil
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20758, {	-- Formula: Minor Wizard Oil
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(20755, {	-- Formula: Wizard Oil
-							["u"] = 3,	-- Added in later phase
-						}),
-						i(22308, {	-- Pattern: Enchanted Runecloth Bag
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-					},
+					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+						i(20732),	-- Formula: Enchant Cloak - Greater Fire Resistance
+						i(20733),	-- Formula: Enchant Cloak - Greater Nature Resistance
+						i(20754),	-- Formula: Lesser Mana Oil
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						i(20755),	-- Formula: Wizard Oil
+						i(22308),	-- Pattern: Enchanted Runecloth Bag
+					}),
 				}),
 				n(15179, {	-- Mishta <General Trade Goods Vendor>
 					["coord"] = { 49.8, 36.4, SILITHUS },
-					["groups"] = {
-						i(22310, {	-- Pattern: Cenarion Herb Bag
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22683, {	-- Pattern: Gaea's Embrace
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22312, {	-- Pattern: Satchel of Cenarius
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22773, {	-- Pattern: Sylvan Crown
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22772, {	-- Pattern: Sylvan Shoulders
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22774, {	-- Pattern: Sylvan Vest
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-					},
+					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+						i(22310),	-- Pattern: Cenarion Herb Bag
+						i(22683),	-- Pattern: Gaea's Embrace
+						i(22312),	-- Pattern: Satchel of Cenarius
+						i(22773),	-- Pattern: Sylvan Crown
+						i(22772),	-- Pattern: Sylvan Shoulders
+						i(22774),	-- Pattern: Sylvan Vest
+					}),
 				}),
 				n(15176, {	-- Vargus <Blacksmith>
 					["coord"] = { 51.2, 38.8, SILITHUS },
-					["groups"] = {
-						i(22209, {	-- Plans: Heavy Obsidian Belt
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22768, {	-- Plans: Ironvine Belt
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22766, {	-- Plans: Ironvine Breastplate
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22767, {	-- Plans: Ironvine Gloves
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-						i(22214, {	-- Plans: Light Obsidian Belt
-							["u"] = 3,	-- Added in later phase (AQ)
-						}),
-					},
+					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+						i(22209),	-- Plans: Heavy Obsidian Belt
+						i(22768),	-- Plans: Ironvine Belt
+						i(22766),	-- Plans: Ironvine Breastplate
+						i(22767),	-- Plans: Ironvine Gloves
+						i(22214),	-- Plans: Light Obsidian Belt
+					}),
 				}),
 				n(12956, {	-- Zannok Hidepiercer <Leatherworking Supplies>
 					["coord"] = { 81.8, 17.8, SILITHUS },

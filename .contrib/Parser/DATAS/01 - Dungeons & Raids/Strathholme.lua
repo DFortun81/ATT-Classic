@@ -536,20 +536,21 @@ _.Instances = {
 							i(23126),	-- Waistband of Balzaphon
 						}),
 					})),
-					n(16102, { 	-- Sothos
-						["crs"] = {
-							16101,	-- Jarien
+					un(PHASE_FIVE, n(16102, { 	-- Sothos
+						["crs"] = 16101,	-- Jarien
+						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						["cost"] = {
+							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
+							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
-						["description"] = "Sothos and Jarien are a pair of elite ghosts summoned in the Scarlet Bastion by using Brazier of Beckoning.",
-						["u"] = 3,	-- Not yet implemented.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 							i(22329),	-- Scepter of Interminable Focus
 							i(22327),	-- Amulet of the Redeemed
 							i(22301), 	-- Ironweave Robe
 							i(22328),	-- Legplates of Vigilance
 							i(22334),	-- Band of Mending
-						},
-					}),
+						}),
+					})),
 					un(PHASE_SIX, n(16387, { 	-- Atiesh <Hand of Sargeras>
 						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
 						["groups"] = {

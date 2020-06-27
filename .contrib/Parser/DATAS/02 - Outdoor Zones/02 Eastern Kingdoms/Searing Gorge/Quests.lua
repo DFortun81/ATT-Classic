@@ -61,16 +61,15 @@ _.Zones =
 					["coord"] = { 37.7, 26.5, SEARING_GORGE },
 					["lvl"] = 45,
 				}),
-				q(7702, {	-- Kill 'Em With Sleep Deprivation
+				un(NEVER_IMPLEMENTED, q(7702, {	-- Kill 'Em With Sleep Deprivation
 					["qg"] = 14628,	-- Evonice Sootsmoker
 					["coord"] = { 38.4, 27.7, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 30,
 					["g"] = {
-						i(19129),	-- Everglowing Robe
+						un(NEVER_IMPLEMENTED, i(19129)),	-- Everglowing Robe
 					},
-				}),
+				})),
 				q(4450, {	-- Ledger from Tanaris
 					["provider"] = { "o", 173265 },	-- Wooden Outhouse
 					["sourceQuest"] = 4449,	-- Caught!
@@ -101,15 +100,14 @@ _.Zones =
 						i(11861),	-- Girdle of Reprisal
 					},
 				}),
-				q(7704, {	-- Look at the Size of It!
+				un(NEVER_IMPLEMENTED, q(7704, {	-- Look at the Size of It!
 					["provider"] = { "i", 18950 },	-- Chambermaid Pillaclencher's Pillow
 					["races"] = ALLIANCE_ONLY,
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 45,
 					["g"] = {
-						i(18951),	-- Evonice's Landin' Pilla
+						un(NEVER_IMPLEMENTED, i(18951)),	-- Evonice's Landin' Pilla
 					},
-				}),
+				})),
 				q(3377, {	-- Prayer to Elune
 					["qg"] = 8436,	-- Zamael Lunthistle
 					["races"] = ALLIANCE_ONLY,

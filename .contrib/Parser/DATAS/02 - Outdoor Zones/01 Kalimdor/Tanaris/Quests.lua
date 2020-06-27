@@ -29,25 +29,21 @@ _.Zones =
 						i(9540),	-- Box of Spells
 					},
 				}),
-				q(8925, {	-- A Portable Power Source
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8925, {	-- A Portable Power Source
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-				}),
-				q(8928, {	-- A Shifty Merchant
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8928, {	-- A Shifty Merchant
 					["lvl"] = 58,
-				}),
-				q(8923, {	-- A Supernatural Device
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8923, {	-- A Supernatural Device
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-				}),
-				q(8922, {	-- A Supernatural Device
-					["u"] = 3,	-- Added in later phase
+				})),
+				un(PHASE_FIVE, q(8922, {	-- A Supernatural Device
 					["lvl"] = 58,
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 				q(2747, {	-- An Extraordinary Egg
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
@@ -163,13 +159,12 @@ _.Zones =
 					},
 					["lvl"] = 42,
 				}),
-				q(8924, {	-- Hunting for Ectoplasm
-					["u"] = 3,	-- Added in later phase
+				un(PHASE_FIVE, q(8924, {	-- Hunting for Ectoplasm
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16014,	-- Mux Manascrambler
 					["coord"] = { 52.5, 27.3, TANARIS },
-				}),
+				})),
 				q(2606, {	-- In Good Taste
 					["lvl"] = 44,
 					["qg"] = 7564,	-- Marin Noggenfogger
@@ -323,7 +318,7 @@ _.Zones =
 						i(16739),	-- Rugwood Mantle
 					},
 				}),
-				q(8921, {	-- The Ectoplasmic Distiller
+				un(PHASE_FIVE, q(8921, {	-- The Ectoplasmic Distiller
 					["coord"] = { 52.4, 27.2, TANARIS },
 					["cost"] = {
 						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
@@ -333,11 +328,10 @@ _.Zones =
 						{ "g", 400000 },
 					},
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["g"] = {
 						i(22320),	-- Mux's Quality Goods
 					},
-				}),
+				})),
 				q(10, {	-- The Scrimshank Redemption
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation

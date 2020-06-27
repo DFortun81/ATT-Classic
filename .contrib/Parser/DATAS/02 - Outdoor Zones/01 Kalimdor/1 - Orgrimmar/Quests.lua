@@ -82,7 +82,7 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(8917,	{	-- An Earnest Proposition
+				un(PHASE_FIVE, q(8917,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -93,12 +93,11 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22004),	-- Darkmantle Bracers
 					},
-				}),
-				q(8916, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8916, {	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -109,12 +108,11 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22079),	-- Virtuous Bracers
 					},
-				}),
-				q(8915,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8915,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -125,12 +123,11 @@ _.Zones =
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22063),	-- Sorcerer's Bindings
 					},
-				}),
-				q(8920,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8920,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -141,12 +138,11 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(21996),	-- Bracers of Heroism
 					},
-				}),
-				q(8918,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8918,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -157,12 +153,11 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22095),	-- Bindings of The Five Thunders
 					},
-				}),
-				q(8919,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8919,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -173,12 +168,11 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22071),	-- Deathmist Bracers
 					},
-				}),
-				q(8913,	{	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8913,	{	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -189,12 +183,11 @@ _.Zones =
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22108),	-- Feralheart Bracers
 					},
-				}),
-				q(8914, {	-- An Earnest Proposition
+				})),
+				un(PHASE_FIVE, q(8914, {	-- An Earnest Proposition
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
 					["cost"] = {
@@ -205,99 +198,90 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
 					},
-				}),
-				q(9016, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
 						i(22112),	-- Feralheart Spaulders
 					},
-				}),
-				q(9019, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9019, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
 						i(22082),	-- Virtuous Mantle
 					},
-				}),
-				q(9017, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9017, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
 						i(22016),	-- Beastmaster's Mantle
 					},
-				}),
-				q(9021, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9021, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
 						i(22073),	-- Deathmist Mantle
 					},
-				}),
-				q(9018, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9018, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
 						i(22068),	-- Sorcerer's Mantle
 					},
-				}),
-				q(8957, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(8957, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22096),	-- Boots of The Five Thunders
 						i(22100),	-- Kilt of The Five Thunders
 						i(22101),	-- Pauldrons of The Five Thunders
 					},
-				}),
-				q(9020, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9020, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
 						i(22008),	-- Darkmantle Spaulders
 					},
-				}),
-				q(9022, {	-- Anthion's Parting Words
+				})),
+				un(PHASE_FIVE, q(9022, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["qg"] = 16016,	-- Anthion Harmon
 					["g"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
 						i(22001),	-- Spaulders of Heroism
 					},
-				}),
+				})),
 				q(936, {	-- Assisting Arch Druid Runetotem
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["altQuests"] = {
@@ -308,12 +292,11 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
-				q(8998, {	-- Back to the Beginning
+				un(PHASE_FIVE, q(8998, {	-- Back to the Beginning
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
 					["qg"] = 16033,	-- Bodley
-					["u"] = 3,	-- Added in later phase (Phase 5)
-				}),
+				})),
 				q(1508, {	-- Blind Cazul
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
@@ -442,78 +425,70 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 3326,	-- Zevrost
 				}),
-				q(8938, {	-- Just Compensation
+				un(PHASE_FIVE, q(8938, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
 					},
-				}),
-				q(8942, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8942, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22098),	-- Cord of The Five Thunders
 						i(22099),	-- Gauntlets of The Five Thunders
 					},
-				}),
-				q(8943, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8943, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
 					},
-				}),
-				q(8939, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8939, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
 					},
-				}),
-				q(8941, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8941, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22006),	-- Darkmantle Gloves
 						i(22002),	-- Darkmantle Belt
 					},
-				}),
-				q(8940, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8940, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
 					},
-				}),
-				q(8927, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8927, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
 					},
-				}),
-				q(8944, {	-- Just Compensation
+				})),
+				un(PHASE_FIVE, q(8944, {	-- Just Compensation
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
 					},
-				}),
+				})),
 				q(1945, {	-- Laughing Sisters
 					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1944,	-- Waters of Xavian
@@ -559,11 +534,10 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
-				q(8978, {	-- Return to Mokvar
+				un(PHASE_FIVE, q(8978, {	-- Return to Mokvar
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
-				}),
+				})),
 				q(649, {	-- Ripple Recovery
 					["qg"] = 6986,	-- Dran Droffers
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },
@@ -577,78 +551,70 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
-				q(9008, {	-- Saving the Best for Last
+				un(PHASE_FIVE, q(9008, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
 					},
-				}),
-				q(9010, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9010, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
 					},
-				}),
-				q(9012, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9012, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
 					},
-				}),
-				q(9007, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9007, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
 					},
-				}),
-				q(9014, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9014, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
 					},
-				}),
-				q(9009, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9009, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
 					},
-				}),
-				q(9011, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9011, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(22097),	-- Coif of The Five Thunders
 						i(22102),	-- Vest of The Five Thunders
 					},
-				}),
-				q(9013, {	-- Saving the Best for Last
+				})),
+				un(PHASE_FIVE, q(9013, {	-- Saving the Best for Last
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
-					["u"] = 3,	-- Added in later phase (Phase 5)
 					["g"] = {
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
 					},
-				}),
+				})),
 				q(2996, {	-- Seeking Strahad
 					["lvl"] = 10,
 					["races"] = { ORC, UNDEAD },

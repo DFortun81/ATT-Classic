@@ -15,12 +15,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 23636,
 						["requireSkill"] = 9788,
 					},
-					{
+					un(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Helm",
 						["recipeID"] = 16742,
 						["requireSkill"] = 9788,
-						["u"] = 3,	-- Added in later phase (Dire Maul)
-					},
+					}),
 					{
 						["name"] = "Helm of the Great Chief",
 						["recipeID"] = 16728,
@@ -110,12 +109,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16667,
 						["requireSkill"] = 9788,
 					},
-					{
+					un(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Breastplate",
 						["recipeID"] = 16745,
 						["requireSkill"] = 9788,
-						["u"] = 3,	-- Added in later phase (Dire Maul)
-					},
+					}),
 					{
 						["name"] = "Invulnerable Mail",
 						["recipeID"] = 16746,
@@ -153,17 +151,16 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 20876,
 						["requireSkill"] = 9788,
 					},
-					{
+					un(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Leggings",
 						["recipeID"] = 16744,
 						["requireSkill"] = 9788,
-						["u"] = 3,	-- Added in later phase (Dire Maul)
-					},
-					{
+					}),
+					un(PHASE_FIVE, {
 						["name"] = "Titanic Leggings",
 						["recipeID"] = 27829,
 						["requireSkill"] = 9788,
-					},
+					}),
 				},
 			},
 			{

@@ -2623,7 +2623,7 @@ _.WorldDrops =
 		i(833),		-- Lifestone
 		i(1973),	-- Orb of Deception
 		i(7734),	-- Six Demon Bag
-		un(3, i(14557)),	-- The Lion Horn of Stormwind [Not available yet? It is one of the rarest items in the game]
+		i(14557),	-- The Lion Horn of Stormwind [Not available yet? It is one of the rarest items in the game]
 		i(11302),	-- Uther's Strength
 	}),
 	filter(50, {	-- Miscellaneous
@@ -2634,9 +2634,9 @@ _.WorldDrops =
 		i(17965, {	-- Yellow Sack of Gems
 			i(12363),	-- Arcane Crystal
 		}),
-		un(3, i(23197)),	-- Idol of the Moon [Phase 5/6]
-		un(3, i(23203)),	-- Libram of Fervor [Phase 5/6]
-		un(3, i(23199)),	-- Totem of the Storm [Phase 5/6]
+		un(PHASE_FIVE, i(23197)),	-- Idol of the Moon [Phase 5/6]
+		un(PHASE_FIVE, i(23203)),	-- Libram of Fervor [Phase 5/6]
+		un(PHASE_FIVE, i(23199)),	-- Totem of the Storm [Phase 5/6]
 		i(4500),	-- Traveler's Backpack
 	}),
 	n(QUESTS, {
@@ -2675,15 +2675,15 @@ _.WorldDrops =
 	filter(200, {	-- Recipes
 		cl(MAGE, {
 			i(18600),	-- Tome of Arcane Brilliance
-			un(3, i(22890)),	-- Tome of Frost Ward V [Phase 6]
+			un(PHASE_SIX, i(22890)),	-- Tome of Frost Ward V [Phase 6]
 		}),
 		cl(PRIEST, {
 			i(17413),	-- Codex: Prayer of Fortitude
 			i(17414),	-- Codex: Prayer of Fortitude II
-			un(3, i(22393)),	-- Codex: Prayer of Shadow Protection [Phase 5]
+			un(PHASE_FOUR, i(22393)),	-- Codex: Prayer of Shadow Protection [Phase 5]
 		}),
 		cl(WARLOCK, {
-			un(3, i(22891)),	-- Grimoire of Shadow Ward IV [Phase 6]
+			un(PHASE_SIX, i(22891)),	-- Grimoire of Shadow Ward IV [Phase 6]
 		}),
 		prof(ALCHEMY, {
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
@@ -2761,7 +2761,7 @@ _.WorldDrops =
 			i(12694),	-- Plans: Thorium Helm
 			i(12704),	-- Plans: Thorium Leggings
 			i(12692),	-- Plans: Thorium Shield Spike
-			i(22388),	-- Plans: Titanic Leggings
+			un(PHASE_FIVE, i(22388)),	-- Plans: Titanic Leggings
 			i(8029),	-- Plans: Wicked Mithril Blade
 			i(12711),	-- Plans: Whitesoul Helm
 			i(12691),	-- Plans: Wildthorn Mail

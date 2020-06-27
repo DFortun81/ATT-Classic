@@ -632,8 +632,9 @@ _.Instances = {
 						i(18306),	-- Gloves of Shadowy Mist
 					}),
 					un(PHASE_FIVE, n(16097, {	-- Isalien Summonable
-						["description"] = "|cff66ccffBrazier of Invocation|r |cff3399ff(Dungeon Set 2 questline)|r |cff66ccffis required to summon this boss.|r",
+						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
+							{ "i", 22050, 1 },	-- Brazier of Beckoning [Isalien]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {

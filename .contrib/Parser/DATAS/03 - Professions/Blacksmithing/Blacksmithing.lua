@@ -257,11 +257,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Green Iron Bracers",
 				["recipeID"] = 3501
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icebane Bracers",
 				["recipeID"] = 28244,
-				["u"] = 3,
-			},
+			}),
 			{
 				["name"] = "Imperial Plate Bracers",
 				["recipeID"] = 16649
@@ -296,11 +295,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Barbaric Iron Gloves",
 				["recipeID"] = 9820
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Black Grasp of the Destroyer",
 				["recipeID"] = 27589,
-				["u"] = 3,
-			},
+			}),
 			{
 				["name"] = "Bloodsoul Gauntlets",
 				["recipeID"] = 24138,
@@ -329,20 +327,18 @@ profession(BLACKSMITHING, {
 				["name"] = "Heavy Mithril Gauntlet",
 				["recipeID"] = 9928
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icebane Gauntlets",
 				["recipeID"] = 28243,
-				["u"] = 3,
-			},
+			}),
 			un(NEVER_IMPLEMENTED, {
 				["name"] = "Ironforge Gauntlets",
 				["recipeID"] = 8368,
 			}),
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Ironvine Gloves",
 				["recipeID"] = 28462,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			un(NEVER_IMPLEMENTED, {
 				["name"] = "Mithril Scale Gloves",
 				["recipeID"] = 9942,
@@ -405,11 +401,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Heavy Mithril Breastplate",
 				["recipeID"] = 9959
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icebane Breastplate",
 				["recipeID"] = 28242,
-				["u"] = 3,
-			},
+			}),
 			{
 				["name"] = "Imperial Plate Chest",
 				["recipeID"] = 16663
@@ -422,20 +417,17 @@ profession(BLACKSMITHING, {
 				["name"] = "Ironforge Chain",
 				["recipeID"] = 8366,
 			}),
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Ironvine Breastplate",
 				["recipeID"] = 28461,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Obsidian Mail Tunic",
 				["recipeID"] = 27590,
-				["u"] = 3,
-			},
+			}),
 			{
 				["name"] = "Ornate Mithril Breastplate",
 				["recipeID"] = 9972,
-				["u"] = 3,
 			},
 			{
 				["name"] = "Radiant Breastplate",
@@ -469,11 +461,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Steel Breastplate",
 				["recipeID"] = 9916
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Thick Obsidian Breastplate",
 				["recipeID"] = 27587,
-				["u"] = 3,
-			},
+			}),
 			{
 				["name"] = "Thorium Armor",
 				["recipeID"] = 16642
@@ -492,11 +483,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Girdle of the Dawn",
 				["recipeID"] = 23632,
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Heavy Obsidian Belt",
 				["recipeID"] = 27585,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Heavy Timbermaw Belt",
 				["recipeID"] = 23628,
@@ -505,16 +495,14 @@ profession(BLACKSMITHING, {
 				["name"] = "Imperial Plate Belt",
 				["recipeID"] = 16647
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Ironvine Belt",
 				["recipeID"] = 28463,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
-			{
+			}),
+			un(PHASE_FIVE, {
 				["name"] = "Light Obsidian Belt",
 				["recipeID"] = 27588,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Radiant Belt",
 				["recipeID"] = 16645
@@ -662,11 +650,10 @@ profession(BLACKSMITHING, {
 		["name"] = "Shields",
 		["categoryID"] = 31,
 		["g"] = {
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Jagged Obsidian Shield",
 				["recipeID"] = 27586,
-				["u"] = 3,
-			},
+			}),
 		}
 	},
 	{

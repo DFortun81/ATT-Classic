@@ -100,17 +100,17 @@ _.PvP =
 									i(19584),	-- Windtalker's Wristguards
 									
 									-- Not Available Until Phase 6
-									un(3, i(21567)),	-- Rune of Duty
-									un(3, i(21568)),	-- Rune of Duty
-									un(3, i(21565)),	-- Rune of Perfection
-									un(3, i(21566)),	-- Rune of Perfection
-									un(3, i(22748)),	-- Sentinel's Chain Leggings
-									un(3, i(30497)),	-- Sentinel's Mail Leggings
-									un(3, i(22753)),	-- Sentinel's Lamellar Legguards
-									un(3, i(22749)),	-- Sentinel's Leather Pants
-									un(3, i(22750)),	-- Sentinel's Lizardhide Pants
-									un(3, i(22672)),	-- Sentinel's Plate Legguards
-									un(3, i(22752)),	-- Sentinel's Silk Leggings
+									un(PHASE_SIX, i(21567)),	-- Rune of Duty
+									un(PHASE_SIX, i(21568)),	-- Rune of Duty
+									un(PHASE_SIX, i(21565)),	-- Rune of Perfection
+									un(PHASE_SIX, i(21566)),	-- Rune of Perfection
+									un(PHASE_SIX, i(22748)),	-- Sentinel's Chain Leggings
+									un(PHASE_SIX, i(30497)),	-- Sentinel's Mail Leggings
+									un(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards
+									un(PHASE_SIX, i(22749)),	-- Sentinel's Leather Pants
+									un(PHASE_SIX, i(22750)),	-- Sentinel's Lizardhide Pants
+									un(PHASE_SIX, i(22672)),	-- Sentinel's Plate Legguards
+									un(PHASE_SIX, i(22752)),	-- Sentinel's Silk Leggings
 								},
 							}),
 						}),
@@ -326,17 +326,17 @@ _.PvP =
 									i(19584),	-- Windtalker's Wristguards
 									
 									-- Not Available Until Phase 6
-									un(3, i(21567)),	-- Rune of Duty
-									un(3, i(21568)),	-- Rune of Duty
-									un(3, i(21565)),	-- Rune of Perfection
-									un(3, i(21566)),	-- Rune of Perfection
-									un(3, i(22673)),	-- Outrider's Chain Leggings
-									un(3, i(30498)),	-- Outrider's Lamellar Legguards
-									un(3, i(22740)),	-- Outrider's Leather Pants
-									un(3, i(22741)),	-- Outrider's Lizardhide Pants
-									un(3, i(22676)),	-- Outrider's Mail Leggings
-									un(3, i(22651)),	-- Outrider's Plate Legguards
-									un(3, i(22747)),	-- Outrider's Silk Leggings
+									un(PHASE_SIX, i(21567)),	-- Rune of Duty
+									un(PHASE_SIX, i(21568)),	-- Rune of Duty
+									un(PHASE_SIX, i(21565)),	-- Rune of Perfection
+									un(PHASE_SIX, i(21566)),	-- Rune of Perfection
+									un(PHASE_SIX, i(22673)),	-- Outrider's Chain Leggings
+									un(PHASE_SIX, i(30498)),	-- Outrider's Lamellar Legguards
+									un(PHASE_SIX, i(22740)),	-- Outrider's Leather Pants
+									un(PHASE_SIX, i(22741)),	-- Outrider's Lizardhide Pants
+									un(PHASE_SIX, i(22676)),	-- Outrider's Mail Leggings
+									un(PHASE_SIX, i(22651)),	-- Outrider's Plate Legguards
+									un(PHASE_SIX, i(22747)),	-- Outrider's Silk Leggings
 								},
 							}),
 						}),

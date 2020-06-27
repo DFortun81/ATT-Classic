@@ -145,11 +145,10 @@ profession(ENGINEERING, {
 				["name"] = "Snowmaster 9000",
 				["recipeID"] = 21940
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Steam Tonk Controller",
 				["recipeID"] = 28327,
-				["u"] = 3,	-- Added in later phase (Darkmoon Faire)
-			},
+			}),
 			{
 				["name"] = "Target Dummy",
 				["recipeID"] = 3932

@@ -116,13 +116,13 @@ _.Craftables =
 			}),
 		}),
 		filter(8, {		-- Shield
-			un(3, i(22198)),	-- Jagged Obsidian Shield (AQ)
+			un(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield (AQ)
 		}),
 		n(-320, {		-- Head
 			i(7915),	-- Barbaric Iron Helm
 			i(19148),	-- Dark Iron Helm
 			i(20551),	-- Darkrune Helm
-			i(12620),	-- Enchanted Thorium Helm
+			un(PHASE_THREE, i(12620)),	-- Enchanted Thorium Helm
 			i(3837),	-- Golden Scale Coif
 			i(3836),	-- Green Iron Helm
 			i(7934),	-- Heavy Mithril Helm
@@ -163,18 +163,16 @@ _.Craftables =
 			i(20550),	-- Darkrune Breastplate
 			i(19693),	-- Darksoul Breastplate
 			i(12628),	-- Demon Forged Breastplate
-			i(12618),	-- Enchanted Thorium Breastplate
+			un(PHASE_THREE, i(12618)),	-- Enchanted Thorium Breastplate
 			i(3845),	-- Golden Scale Cuirass
 			i(3844),	-- Green Iron Hauberk
 			i(7930),	-- Heavy Mithril Breastplate
-			i(22669, {	-- Icebane Breastplate
-				["u"] = 3,
-			}),
+			un(PHASE_SIX, i(22669)),	-- Icebane Breastplate
 			i(12422),	-- Imperial Plate Chest
 			i(12641),	-- Invulnerable Mail
 			i(6731),	-- Ironforge Breastplate
-			i(22762),	-- Ironvine Breastplate
-			i(22191),	-- Obsidian Plate Tunic
+			un(PHASE_FIVE, i(22762)),	-- Ironvine Breastplate
+			un(PHASE_FIVE, i(22191)),	-- Obsidian Mail Tunic
 			i(7935),	-- Ornate Mithril Breastplate
 			i(12415),	-- Radiant Breastplate
 			i(2866),	-- Rough Bronze Cuirass
@@ -183,14 +181,14 @@ _.Craftables =
 			i(2870),	-- Shining Silver Breastplate
 			i(2869),	-- Silvered Bronze Breastplate
 			i(7963),	-- Steel Breastplate
-			i(22196),	-- Thick Obsidian Breastplate
+			un(PHASE_FIVE, i(22196)),	-- Thick Obsidian Breastplate
 			i(12405),	-- Thorium Armor
 			i(7939),	-- Truesilver Breastplate
 			i(12624),	-- Wildthorn Mail
 		}),
 		n(-327, {		-- Hands
 			i(7917),	-- Barbaric Iron Gloves
-			i(22194),	-- Black Grasp of the Destroyer
+			un(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
 			i(19692),	-- Bloodsoul Gauntlets
 			i(19164),	-- Dark Iron Gauntlets
 			i(20549),	-- Darkrune Gauntlets
@@ -200,10 +198,8 @@ _.Craftables =
 			i(9366),	-- Golden Scale Gauntlets
 			i(3485),	-- Green Iron Gauntlets
 			i(7919),	-- Heavy Mithril Gauntlet
-			i(22670, {	-- Icebane Gauntlets
-				["u"] = 3,
-			}),
-			i(22763),	-- Ironvine Gloves
+			un(PHASE_SIX, i(22670)),	-- Icebane Gauntlets
+			un(PHASE_FIVE, i(22763)),	-- Ironvine Gloves
 			i(7927),	-- Ornate Mithril Gloves
 			i(12418),	-- Radiant Gloves
 			i(3472),	-- Runed Copper Gauntlets
@@ -216,9 +212,7 @@ _.Craftables =
 			i(17014),	-- Dark Iron Bracers
 			i(6040),	-- Golden Scale Bracers
 			i(3835),	-- Green Iron Bracers
-			i(22671, {	-- Icebane Bracers
-				["u"] = 3,
-			}),
+			un(PHASE_SIX, i(22671)),	-- Icebane Bracers
 			i(12425),	-- Imperial Plate Bracers
 			i(7924),	-- Mithril Scale Bracers
 			i(2868),	-- Patterned Bronze Bracers
@@ -228,11 +222,11 @@ _.Craftables =
 		n(-328, {		-- Waist
 			i(16989),	-- Fiery Chain Girdle
 			i(19051),	-- Girdle of the Dawn
-			i(22197),	-- Heavy Obsidian Belt
+			un(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
 			i(19043),	-- Heavy Timbermaw Belt
 			i(12424),	-- Imperial Plate Belt
-			i(22764),	-- Ironvine Belt
-			i(22195),	-- Light Obsidian Belt
+			un(PHASE_FIVE, i(22764)),	-- Ironvine Belt
+			un(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 			i(12416),	-- Radiant Belt
 			i(2857),	-- Runed Copper Belt
 			i(12406),	-- Thorium Belt
@@ -240,7 +234,7 @@ _.Craftables =
 		n(-329, {		-- Legs
 			i(17013),	-- Dark Iron Leggings
 			i(19694),	-- Darksoul Leggings
-			i(12619),	-- Enchanted Thorium Leggings
+			un(PHASE_THREE, i(12619)),	-- Enchanted Thorium Leggings
 			i(3843),	-- Golden Scale Leggings
 			i(3842),	-- Green Iron Leggings
 			i(7921),	-- Heavy Mithril Pants
@@ -254,7 +248,7 @@ _.Craftables =
 			i(12614),	-- Runic Plate Leggings
 			i(10423),	-- Silvered Bronze Leggings
 			i(12414),	-- Thorium Leggings
-			i(22385),	-- Titanic Leggings
+			un(PHASE_FIVE, i(22385)),	-- Titanic Leggings
 		}),
 		n(-330, {		-- Feet
 			i(7916),	-- Barbaric Iron Boots
@@ -293,28 +287,18 @@ _.Craftables =
 		filter(53, {	-- Trinkets
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
-		{
+		un(PHASE_FIVE, {
 			["categoryID"] = 44,	-- Oils
 			["groups"] = {
-				i(20748),	-- Brilliant Mana Oil
-				i(20749),	-- Brilliant Wizard Oil
-				i(20747, {	-- Lesser Mana Oil
-					["u"] = 3,	-- Added later
-				}),
-				i(20746, {	-- Lesser Wizard Oil
-					["u"] = 3,	-- Added later
-				}),
-				i(20745, {	-- Minor Mana Oil
-					["u"] = 3,	-- Added later
-				}),
-				i(20744, {	-- Minor Wizard Oil
-					["u"] = 3,	-- Added later
-				}),
-				i(20750, {	-- Wizard Oil
-					["u"] = 3,	-- Added later
-				}),
+				un(PHASE_FIVE, i(20748)),	-- Brilliant Mana Oil
+				un(PHASE_FIVE, i(20749)),	-- Brilliant Wizard Oil
+				un(PHASE_FIVE, i(20747)),	-- Lesser Mana Oil
+				un(PHASE_FIVE, i(20746)),	-- Lesser Wizard Oil
+				un(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
+				un(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
+				un(PHASE_FIVE, i(20750)),	-- Wizard Oil
 			},
-		},
+		}),
 	}),
 	prof(ENGINEERING, {
 		n(-319, {	-- Weapons
@@ -337,8 +321,8 @@ _.Craftables =
 		}),
 		n(-318, {	-- Armor
 			-- Head
-			i(19999),	-- Bloodvine Goggles
-			i(19998),	-- Bloodvine Lens
+			un(PHASE_FOUR, i(19999)),	-- Bloodvine Goggles
+			un(PHASE_FOUR, i(19998)),	-- Bloodvine Lens
 			i(10499),	-- Bright-Eye Goggles*
 			i(10501),	-- Catseye Ultra Goggles*
 			i(4393),	-- Craftsman's Monocle*
@@ -438,7 +422,7 @@ _.Craftables =
 		}),
 		filter(5, {	-- Leather
 			n(-320, {	-- Head
-				i(22759),	-- Bramblewood Helm
+				un(PHASE_FIVE, i(22759)),	-- Bramblewood Helm
 				i(16983),	-- Molten Helm
 				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
 				i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
@@ -450,7 +434,7 @@ _.Craftables =
 				i(8174),	-- Comfortable Leather Hat
 			}),
 			n(-321, {	-- Shoulder
-				i(19689),	-- Blood Tiger Shoulders
+				un(PHASE_FOUR, i(19689)),	-- Blood Tiger Shoulders
 				i(15058),	-- Stormshroud Shoulders
 				i(15055),	-- Volcanic Shoulders
 				i(19058),	-- Golden Mantle of the Dawn
@@ -465,9 +449,9 @@ _.Craftables =
 				i(4251),	-- Hillman's Shoulders
 			}),
 			n(-323, {	-- Chest
-				i(22661),	-- Polar Tunic
-				i(19688),	-- Blood Tiger Breastplate
-				i(19685),	-- Primal Batskin Jerkin
+				un(PHASE_SIX, i(22661)),	-- Polar Tunic
+				un(PHASE_FOUR, i(19688)),	-- Blood Tiger Breastplate
+				un(PHASE_FOUR, i(19685)),	-- Primal Batskin Jerkin
 				i(15059),	-- Living Breastplate
 				i(15090),	-- Runic Leather Armor (Trainable now, old Pattern id 15776 used to teach this.)
 				i(15085),	-- Wicked Leather Armor (Trainable now, old Pattern id 15773 used to teach this.)
@@ -478,7 +462,7 @@ _.Craftables =
 				i(15064),	-- Warbear Harness
 				i(15068),	-- Frostsaber Tunic
 				i(8349),	-- Feathered Breastplate
-				i(8211),		-- Wild Leather Vest
+				i(8211),	-- Wild Leather Vest
 				i(8200),	-- Big Voodoo Robe
 				i(8175),	-- Nightscape Tunic
 				i(5739),	-- Barbaric Harness
@@ -502,8 +486,8 @@ _.Craftables =
 				i(2300),	-- Embossed Leather Vest
 			}),
 			n(-326, {	-- Wrists
-				i(22663),	-- Polar Bracers
-				i(19687),	-- Primal Batskin Bracers
+				un(PHASE_SIX, i(22663)),	-- Polar Bracers
+				un(PHASE_FOUR, i(19687)),	-- Primal Batskin Bracers
 				i(15092),	-- Runic Leather Bracers (Trainable now, old Pattern id 15739 used to teach this.)
 				i(15084),	-- Wicked Leather Bracers (Trainable now, old Pattern id 15728 used to teach this.)
 				i(4260),	-- Guardian Leather Bracers
@@ -516,8 +500,8 @@ _.Craftables =
 			}),
 			n(-327, {	-- Hands
 				i(19049),	-- Timbermaw Brawlers
-				i(22662),	-- Polar Gloves
-				i(19686),	-- Primal Batskin Gloves
+				un(PHASE_SIX, i(22662)),	-- Polar Gloves
+				un(PHASE_FOUR, i(19686)),	-- Primal Batskin Gloves
 				i(15070),	-- Frostsaber Gloves
 				i(15063),	-- Devilsaur Gauntlets
 				i(21278),	-- Stormshroud Gloves
@@ -526,7 +510,7 @@ _.Craftables =
 				i(15074),	-- Chimeric Gloves
 				i(8346),	-- Gauntlets of the Sea
 				i(18238),	-- Shadowskin Gloves
-				un(29, i(17721)),	-- Gloves of the Greatfather
+				i(17721),	-- Gloves of the Greatfather
 				i(5966),	-- Guardian Gloves
 				i(4247),	-- Hillman's Leather Gloves
 				i(7359),	-- Heavy Earthen Gloves
@@ -537,15 +521,15 @@ _.Craftables =
 				i(7285),	-- Nimble Leather Gloves
 				i(7284),	-- Red Whelp Gloves
 				i(7349),	-- Herbalist's Gloves
-				i(6467),		-- Deviate Scale Gloves
+				i(6467),	-- Deviate Scale Gloves
 				i(2312),	-- Fine Leather Gloves
 				i(4239),	-- Embossed Leather Gloves
 			}),
 			n(-328, {	-- Waist
 				i(18504),	-- Girdle of Insight
-				i(22761),	-- Bramblewood Belt
+				un(PHASE_FIVE, i(22761)),	-- Bramblewood Belt
 				i(19163),	-- Molten Belt
-				i(19162),	-- Corehound Belt
+				un(PHASE_THREE, i(19162)),	-- Corehound Belt
 				i(19149),	-- Lava Belt
 				i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
 				i(19044),	-- Might of the Timbermaw
@@ -575,7 +559,7 @@ _.Craftables =
 				i(15072),	-- Chimeric Leggings
 				i(15057),	-- Stormshroud Pants
 				i(15054),	-- Volcanic Leggings
-				i(8212),		-- Wild Leather Leggings
+				i(8212),	-- Wild Leather Leggings
 				i(8202),	-- Big Voodoo Pants
 				i(8193),	-- Nightscape Pants
 				i(5963),	-- Barbaric Leggings
@@ -588,13 +572,13 @@ _.Craftables =
 				i(7280),	-- Rugged Leather Pants
 			}),
 			n(-330, {	-- Feet
-				i(22760),	-- Bramblewood Boots
+				un(PHASE_FIVE, i(22760)),	-- Bramblewood Boots
 				i(16982),	-- Corehound Boots
 				i(18506),	-- Mongoose Boots
 				i(19052),	-- Dawn Treaders
 				i(15073),	-- Chimeric Boots
 				i(15071),	-- Frostsaber Boots
-				i(8213),		-- Wild Leather Boots
+				i(8213),	-- Wild Leather Boots
 				i(8197),	-- Nightscape Boots
 				i(7391),	-- Swift Boots
 				i(7390),	-- Dusky Boots
@@ -620,7 +604,7 @@ _.Craftables =
 				i(20479),	-- Spitfire Breastplate
 				i(20478),	-- Sandstalker Breastplate
 				i(20380),	-- Dreamscale Breastplate
-				i(22664),	-- Icy Scale Breastplate
+				un(PHASE_SIX, i(22664)),	-- Icy Scale Breastplate
 				i(15047),	-- Red Dragonscale Breastplate
 				i(15048),	-- Blue Dragonscale Breastplate
 				i(15050),	-- Black Dragonscale Breastplate
@@ -631,7 +615,7 @@ _.Craftables =
 				i(8189),	-- Turtle Scale Breastplate
 			}),
 			n(-326, {	-- Wrists
-				i(22665),	-- Icy Scale Bracers
+				un(PHASE_SIX, i(22665)),	-- Icy Scale Bracers
 				i(18508),	-- Swift Flight Bracers
 				i(20481),	-- Spitfire Bracers
 				i(20476),	-- Sandstalker Bracers
@@ -641,7 +625,7 @@ _.Craftables =
 			}),
 			n(-327, {	-- Hands
 				i(19157),	-- Chromatic Gauntlets
-				i(22666),	-- Icy Scale Gauntlets
+				un(PHASE_SIX, i(22666)),	-- Icy Scale Gauntlets
 				i(20480),	-- Spitfire Gauntlets
 				i(20477),	-- Sandstalker Gauntlets
 				i(15078),	-- Heavy Scorpid Gauntlets
@@ -671,18 +655,15 @@ _.Craftables =
 			i(18251),	-- Core Armor Kit
 		}),
 	}),
-	prof(MINING, {
-		
-	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags
 			i(22249),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
-			i(22251),	-- Cenarion Herb Bag
+			un(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag
 			i(21342),	-- Core Felcloth Bag
 			i(22246),	-- Enchanted Mageweave Pouch
-			i(22248),	-- Enchanted Runecloth Bag
+			un(PHASE_FIVE, i(22248)),	-- Enchanted Runecloth Bag
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
@@ -693,14 +674,14 @@ _.Craftables =
 			i(10051),	-- Red Mageweave Bag
 			i(5763),	-- Red Woolen Bag
 			i(14046),	-- Runecloth Bag
-			un(3, i(22252)),	-- Satchel of Cenarius [Not available yet.]
+			un(PHASE_FIVE, i(22252)),	-- Satchel of Cenarius [Not available yet.]
 			i(4245),	-- Small Silk Pack
 			i(21340),	-- Soul Pouch
 			i(4240),	-- Woolen Bag
 		}),
 		n(-323, {	-- Chest
-			i(19682),	-- Bloodvine Vest
-			i(22652),	-- Glacial Vest
+			un(PHASE_FOUR, i(19682)),	-- Bloodvine Vest
+			un(PHASE_SIX, i(22652)),	-- Glacial Vest
 			i(14153),	-- Robe of the Void
 			i(4324),	-- Azure Silk Vest
 			i(2578),	-- Barbaric Linen Vest
@@ -739,20 +720,20 @@ _.Craftables =
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
 			i(10004),	-- Shadoweave Robe
-			i(22756),	-- Sylvan Vest
+			un(PHASE_FIVE, i(22756)),	-- Sylvan Vest
 			i(14154),	-- Truefaith Vestments
 			i(6241),	-- White Linen Robe
 			i(14128),	-- Wizardweave Robe
 		}),
 		n(-322, {	-- Cloaks
-			i(22658),	-- Glacial Cloak
+			un(PHASE_SIX, i(22658)),	-- Glacial Cloak
 			i(7053),	-- Azure Silk Cloak
 			i(14103),	-- Brightcloth Cloak
 			i(14044),	-- Cindercloth Cloak
 			i(14134),	-- Cloak of Fire
 			i(18413),	-- Cloak of Warding
 			i(7056),	-- Crimson Silk Cloak
-			i(22660),	-- Gaea's Embrace
+			un(PHASE_FIVE, i(22660)),	-- Gaea's Embrace
 			i(4311),	-- Heavy Woolen Cloak
 			i(4327),	-- Icy Cloak
 			i(4326),	-- Long Silken Cloak
@@ -761,7 +742,7 @@ _.Craftables =
 			i(13860),	-- Runecloth Cloak
 		}),
 		n(-330, {	-- Feet
-			i(19684),	-- Bloodvine Boots
+			un(PHASE_FOUR, i(19684)),	-- Bloodvine Boots
 			un(NEVER_IMPLEMENTED, i(7027)),		-- Boots of Darkness
 			i(19056),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
@@ -772,7 +753,7 @@ _.Craftables =
 			i(15802),	-- Mooncloth Boots
 			i(4313),	-- Red Woolen Boots
 			i(13864),	-- Runecloth Boots
-			i(20537),	-- Runed Stygian Boots
+			un(PHASE_FOUR, i(20537)),	-- Runed Stygian Boots
 			i(10031),	-- Shadoweave Boots
 			i(4312),	-- Soft-Soled Linen Boots
 			i(4321),	-- Spider Silk Slippers
@@ -780,7 +761,7 @@ _.Craftables =
 			i(2583),	-- Woolen Boots
 		}),
 		n(-327, {	-- Hands
-			i(22654),	-- Glacial Gloves
+			un(PHASE_SIX, i(22654)),	-- Glacial Gloves
 			i(4319),	-- Azure Silk Gloves
 			i(10003),	-- Black Mageweave Gloves
 			i(14101),	-- Brightcloth Gloves
@@ -815,16 +796,14 @@ _.Craftables =
 			i(10033),	-- Red Mageweave Headband
 			i(13866),	-- Runecloth Headband
 			i(4323),	-- Shadow Hood
-			i(10025, {	-- Shadoweave Mask
-				["description"] = "Required for the |cff3399ffLucid Nightmare|r riddle mount.",
-			}),
+			i(10025),	-- Shadoweave Mask
 			i(7050),	-- Silk Headband
-			i(22757),	-- Sylvan Crown
+			un(PHASE_FIVE, i(22757)),	-- Sylvan Crown
 			i(10008),	-- White Bandit Mask
 			i(14130),	-- Wizardweave Turban
 		}),
 		n(-329, {	-- Legs
-			i(19683),	-- Bloodvine Leggings
+			un(PHASE_FOUR, i(19683)),	-- Bloodvine Leggings
 			i(7046),	-- Azure Silk Pants
 			i(9999),	-- Black Mageweave Leggings
 			i(14104),	-- Brightcloth Pants
@@ -842,7 +821,7 @@ _.Craftables =
 			i(4317),	-- Phoenix Pants
 			i(10009),	-- Red Mageweave Pants
 			i(13865),	-- Runecloth Pants
-			i(20538),	-- Runed Stygian Leggings
+			un(PHASE_FOUR, i(20538)),	-- Runed Stygian Leggings
 			i(10002),	-- Shadoweave Pants
 			i(10047),	-- Simple Kilt
 			i(14132),	-- Wizardweave Leggings
@@ -886,7 +865,7 @@ _.Craftables =
 			i(4315),	-- Reinforced Woolen Shoulders
 			i(13867),	-- Runecloth Shoulders
 			i(10028),	-- Shadoweave Shoulders
-			i(22758),	-- Sylvan Shoulders
+			un(PHASE_FIVE, i(22758)),	-- Sylvan Shoulders
 		}),
 		n(-328, {	-- Waist
 			i(7052),	-- Azure Silk Belt
@@ -894,14 +873,14 @@ _.Craftables =
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
 			i(14143),	-- Ghostweave Belt
-			i(13856),	-- Runecloth Belt
+			un(PHASE_FOUR, i(13856)),	-- Runecloth Belt
 			i(20539),	-- Runed Stygian Belt
 			i(4328),	-- Spider Belt
 			i(4329),	-- Star Belt
 			i(19047),	-- Wisdom of the Timbermaw
 		}),
 		n(-326, {	-- Wrist
-			i(22655),	-- Glacial Wrists
+			un(PHASE_SIX, i(22655)),	-- Glacial Wrists
 			i(18263),	-- Flarecore Wraps
 			i(4308),	-- Green Linen Bracers
 		}),

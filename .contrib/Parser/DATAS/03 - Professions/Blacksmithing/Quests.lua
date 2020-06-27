@@ -98,7 +98,7 @@ profession(BLACKSMITHING, {
 				i(10418),	-- Glimmering Mithril Insignia
 			},
 		}),
-		q(7649, {	-- Enchanted Thorium Platemail: Volume I
+		un(PHASE_THREE, q(7649, {	-- Enchanted Thorium Platemail: Volume I
 			["provider"] = { "i", 18769 },	-- Enchanted Thorium Platemail (Volume I)
 			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL, BLACKROCK_SPIRE },
@@ -107,10 +107,10 @@ profession(BLACKSMITHING, {
 				{ "i", 18780, 1 },	-- Top Half of Advanced Armorsmithing: Volume I
 			},
 			["g"] = {
-				i(12727),	-- Plans: Enchanted Thorium Breastplate
+				un(PHASE_THREE, i(12727)),	-- Plans: Enchanted Thorium Breastplate
 			},
-		}),
-		q(7650, {	-- Enchanted Thorium Platemail: Volume II
+		})),
+		un(PHASE_THREE, q(7650, {	-- Enchanted Thorium Platemail: Volume II
 			["provider"] = { "i", 18770 },	-- Enchanted Thorium Platemail (Volume II)
 			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL, STRATHOLME, SCHOLOMANCE },
@@ -120,10 +120,10 @@ profession(BLACKSMITHING, {
 			},
 			["lvl"] = 50,
 			["g"] = {
-				i(12726),	-- Plans: Enchanted Thorium Leggings
+				un(PHASE_THREE, i(12726)),	-- Plans: Enchanted Thorium Leggings
 			},
-		}),
-		q(7651, {	-- Enchanted Thorium Platemail: Volume III
+		})),
+		un(PHASE_THREE, q(7651, {	-- Enchanted Thorium Platemail: Volume III
 			["provider"] = { "i", 18771 },	-- Enchanted Thorium Platemail (Volume III)
 			["requireSkill"] = 9788,	-- Armorsmith
 			["maps"] = { DIRE_MAUL, BLACKROCK_SPIRE, STRATHOLME },
@@ -133,9 +133,9 @@ profession(BLACKSMITHING, {
 			},
 			["lvl"] = 50,
 			["g"] = {
-				i(12725),	-- Plans: Enchanted Thorium Helm
+				un(PHASE_THREE, i(12725)),	-- Plans: Enchanted Thorium Helm
 			},
-		}),
+		})),
 		q(2765, {	-- Expert Blacksmith!
 			["qg"] = 7802,	-- Galvan the Ancient
 			["sourceQuests"] = {

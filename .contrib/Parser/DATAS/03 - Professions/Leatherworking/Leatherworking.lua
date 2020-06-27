@@ -125,11 +125,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Big Voodoo Mask",
 				["recipeID"] = 10531
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Bramblewood Helm",
 				["recipeID"] = 28472,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Comfortable Leather Hat",
 				["recipeID"] = 10490
@@ -274,11 +273,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Hillman's Leather Vest",
 				["recipeID"] = 3762
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icy Scale Breastplate",
 				["recipeID"] = 28222,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Moonglow Vest",
 				["recipeID"] = 8322
@@ -295,11 +293,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Onyxia Scale Breastplate",
 				["recipeID"] = 19106,
 			}),
-			{
+			un(PHASE_SIX, {
 				["name"] = "Polar Tunic",
 				["recipeID"] = 28219,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Primal Batskin Jerkin",
 				["recipeID"] = 24121,
@@ -382,11 +379,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Heavy Scorpid Bracers",
 				["recipeID"] = 19048
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icy Scale Bracers",
 				["recipeID"] = 28224,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Light Leather Bracers",
 				["recipeID"] = 9065
@@ -395,11 +391,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Murloc Scale Bracers",
 				["recipeID"] = 6705
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Polar Bracers",
 				["recipeID"] = 28221,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Primal Batskin Bracers",
 				["recipeID"] = 24123,
@@ -486,11 +481,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Hillman's Leather Gloves",
 				["recipeID"] = 3764
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Icy Scale Gauntlets",
 				["recipeID"] = 28223,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Nimble Leather Gloves",
 				["recipeID"] = 9074
@@ -499,11 +493,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Pilferer's Gloves",
 				["recipeID"] = 9148
 			},
-			{
+			un(PHASE_SIX, {
 				["name"] = "Polar Gloves",
 				["recipeID"] = 28220,
-				["u"] = 3,	-- Added in later phase (Naxx)
-			},
+			}),
 			{
 				["name"] = "Primal Batskin Gloves",
 				["recipeID"] = 24122,
@@ -558,11 +551,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Barbaric Belt",
 				["recipeID"] = 3779
 			},
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Bramblewood Belt",
 				["recipeID"] = 28474,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Dark Leather Belt",
 				["recipeID"] = 3766
@@ -711,11 +703,10 @@ profession(LEATHERWORKING, {
 		["name"] = "Boots",
 		["categoryID"] = 56,
 		["g"] = {
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Bramblewood Boots",
 				["recipeID"] = 28473,
-				["u"] = 3,	-- Added in later phase (AQ)
-			},
+			}),
 			{
 				["name"] = "Dark Leather Boots",
 				["recipeID"] = 2167

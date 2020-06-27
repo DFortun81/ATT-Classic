@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			n(QUESTS, {
-				q(9248, {	-- A Humble Offering
+				un(PHASE_FIVE, q(9248, {	-- A Humble Offering
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle
@@ -14,11 +14,10 @@ _.Zones =
 						{ "i", 20515, 1 },	-- Abyssal Scepter
 					},
 					["lvl"] = 58,
-					["u"] = 3,	-- Not available yet.
 					["groups"] = {
-						i(22725),	-- Band of Cenarius
+						un(PHASE_FIVE, i(22725)),	-- Band of Cenarius
 					},
-				}),
+				})),
 				q(8287, {	-- A Terrible Purpose
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
@@ -333,13 +332,12 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(8800, {	-- Cenarion Battlegear
+				un(PHASE_FIVE, q(8800, {	-- Cenarion Battlegear
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase [Phase 5]
-				}),
-				q(8573, {	-- Champion's Battlegear
+				})),
+				un(PHASE_FIVE, q(8573, {	-- Champion's Battlegear
 					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, EXALTED },	-- Cenarion Circle
@@ -351,13 +349,12 @@ _.Zones =
 						{ "i", 21508, 1 },	-- Mark of Cenarius
 					},
 					["lvl"] = 54,
-					["u"] = 3,	-- Added in later phase [Phase 5]
 					["groups"] = {
-						i(21188),	-- Fist of Cenarius
-						i(21190),	-- Wrath of Cenarius
-						i(21180),	-- Earthstrike
+						un(PHASE_FIVE, i(21188)),	-- Fist of Cenarius
+						un(PHASE_FIVE, i(21190)),	-- Wrath of Cenarius
+						un(PHASE_FIVE, i(21180)),	-- Earthstrike
 					},
-				}),
+				})),
 				q(8537, {	-- Crimson Templar
 					["provider"] = { "i", 20945 },	-- Tactical Task Briefing II
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
@@ -769,20 +766,18 @@ _.Zones =
 						i(13447),	-- Elixir of the Sages
 					},
 				}),
-				q(9416, {	-- Report to General Kirika
+				un(PHASE_FIVE, q(9416, {	-- Report to General Kirika
 					["qg"] = 17081,	-- Scout Bloodfist
 					["coord"] = { 49.0, 36.7, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 53,
-					["u"] = 3,	-- Added in later phase [AQ]
-				}),
-				q(9415, {	-- Report to Marshal Bluewall
+				})),
+				un(PHASE_FIVE, q(9415, {	-- Report to Marshal Bluewall
 					["qg"] = 17082,	-- Rifleman Torrig
 					["coord"] = { 50.7, 34.7, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
-					["u"] = 3,	-- Added in later phase [AQ]
-				}),
+				})),
 				q(8352, {	-- Scepter of the Council
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
@@ -795,30 +790,28 @@ _.Zones =
 						i(20602),	-- Chest of Spoils
 					},
 				}),
-				q(9419, {	-- Scouring the Desert [ALLIANCE]
+				un(PHASE_FIVE, q(9419, {	-- Scouring the Desert [ALLIANCE]
 					["qg"] = 17080,	-- Marshal Bluewall
 					["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
 					["coord"] = { 33.3, 51.1, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 53,
-					["u"] = 3,	-- Added in later phase [AQ]
 					["groups"] = {
 						i(13446),	-- Major Healing Potion
 						i(13444),	-- Major Mana Potion
 					},
-				}),
-				q(9422, {	-- Scouring the Desert [HORDE]
+				})),
+				un(PHASE_FIVE, q(9422, {	-- Scouring the Desert [HORDE]
 					["qg"] = 17079,	-- General Kirika
 					["sourceQuest"] = 9416,	-- Report to General Kirika
 					["coord"] = { 50.8, 69.5, SILITHUS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 53,
-					["u"] = 3,	-- Added in later phase [AQ]
 					["groups"] = {
 						i(13446),	-- Major Healing Potion
 						i(13444),	-- Major Mana Potion
 					},
-				}),
+				})),
 				q(8779, {	-- Scrying Materials
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V
 					["repeatable"] = true,
@@ -855,33 +848,30 @@ _.Zones =
 					},
 					["lvl"] = 57,
 				}),
-				q(8857, {	-- Secrets of the Colossus - Ashi
+				un(PHASE_FIVE, q(8857, {	-- Secrets of the Colossus - Ashi
 					["provider"] = { "i", 21534 },	-- Colossus of Ashi's Husk
 					["cr"] = 15742,	-- Colossus of Ashi
 					["lvl"] = 51,
-					["u"] = 3,	-- Added in later phase [AQ]
 					["groups"] = {
 						i(21528),	-- Colossal Bag of Loot
 					},
-				}),
-				q(8858, {	-- Secrets of the Colossus - Regal
+				})),
+				un(PHASE_FIVE, q(8858, {	-- Secrets of the Colossus - Regal
 					["provider"] = { "i", 21535 },	-- Colossus of Regal's Husk
 					["cr"] = 15741,	-- Colossus of Regal
 					["lvl"] = 51,
-					["u"] = 3,	-- Added in later phase [AQ]
 					["groups"] = {
 						i(21528),	-- Colossal Bag of Loot
 					},
-				}),
-				q(8859, {	-- Secrets of the Colossus - Zora
+				})),
+				un(PHASE_FIVE, q(8859, {	-- Secrets of the Colossus - Zora
 					["provider"] = { "i", 21533 },	-- Colossus of Zora's Husk
 					["cr"] = 15740,	-- Colossus of Zora
 					["lvl"] = 51,
-					["u"] = 3,	-- Added in later phase [AQ]
 					["groups"] = {
 						i(21528),	-- Colossal Bag of Loot
 					},
-				}),
+				})),
 				q(8280, {	-- Securing the Supply Lines
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuests"] = {
@@ -904,7 +894,7 @@ _.Zones =
 						i(20601),	-- Sack of Spoils
 					},
 				}),
-				q(8574, {	-- Stalwart's Battlegear
+				un(PHASE_FIVE, q(8574, {	-- Stalwart's Battlegear
 					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle
@@ -916,14 +906,13 @@ _.Zones =
 						{ "i", 21515, 1 },	-- Mark of Remulos
 					},
 					["lvl"] = 54,
-					["u"] = 3,	-- Available in a later phase [PHASE 5]
 					["groups"] = {
-						i(21184),	-- Deeprock Bracers
-						i(21185),	-- Earthcalm Orb
-						i(21186),	-- Rockfury Bracers
-						i(21189),	-- Might of Cenarius
+						un(PHASE_FIVE, i(21184)),	-- Deeprock Bracers
+						un(PHASE_FIVE, i(21185)),	-- Earthcalm Orb
+						un(PHASE_FIVE, i(21186)),	-- Rockfury Bracers
+						un(PHASE_FIVE, i(21189)),	-- Might of Cenarius
 					},
-				}),
+				})),
 				q(8281, {	-- Stepping Up Security
 					["qg"] = 15191,	-- Windcaller Proudhorn
 					["sourceQuest"] = 8280, -- Securing the Supply Lines
@@ -1140,7 +1129,7 @@ _.Zones =
 						i(21386),	-- Followup Logistics Assignment
 					},
 				}),
-				q(9023, {	-- The Perfect Poison
+				un(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, SILITHUS },
 					["maps"] = { RUINS_OF_AHNQIRAJ, ZULGURUB },
@@ -1149,7 +1138,6 @@ _.Zones =
 						{ "i", 22216, 1 },	-- Venoxis's Venom Sac
 					},
 					["lvl"] = 60,
-					["u"] = 3,	-- Added in later phase
 					["groups"] = {
 						i(22378),	-- Ravenholdt Slicer
 						i(22379),	-- Shivsprocket's Shiv
@@ -1158,7 +1146,7 @@ _.Zones =
 						i(22347),	-- Fahrad's Reloading Repeater
 						i(22380),	-- Simone's Cultivating Hammer
 					},
-				}),
+				})),
 				q(1125, {	-- The Spirits of Southwind
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1124,	-- Wasteland
@@ -1333,7 +1321,7 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(8572, {	-- Veteran's Battlegear
+				un(PHASE_FIVE, q(8572, {	-- Veteran's Battlegear
 					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle
@@ -1344,14 +1332,13 @@ _.Zones =
 						{ "i", 20801, 4 },	-- Cenarion Tactical Badge
 					},
 					["lvl"] = 54,
-					["u"] = 3,	-- Available in a later phase [PHASE 5]
 					["groups"] = {
-						i(21181),	-- Grace of Earth
-						i(21182),	-- Band of Earthen Might
-						i(21183),	-- Earthpower Vest
+						un(PHASE_FIVE, i(21181)),	-- Grace of Earth
+						un(PHASE_FIVE, i(21182)),	-- Band of Earthen Might
+						un(PHASE_FIVE, i(21183)),	-- Earthpower Vest
 					},
-				}),
-				q(8548, {	-- Volunteer's Battlegear
+				})),
+				un(PHASE_FIVE, q(8548, {	-- Volunteer's Battlegear
 					["qg"] = 15176,	-- Vargus
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle
@@ -1362,13 +1349,12 @@ _.Zones =
 						{ "i", 20801, 7 },	-- Cenarion Tactical Badge
 					},
 					["lvl"] = 54,
-					["u"] = 3,	-- Available in a later phase [PHASE 5]
 					["groups"] = {
-						i(21178),	-- Gloves of Earthen Power
-						i(21179),	-- Band of Earthen Wrath
-						i(21187),	-- Earthweave Cloak
+						un(PHASE_FIVE, i(21178)),	-- Gloves of Earthen Power
+						un(PHASE_FIVE, i(21179)),	-- Band of Earthen Wrath
+						un(PHASE_FIVE, i(21187)),	-- Earthweave Cloak
 					},
-				}),
+				})),
 				q(8321, {	-- Vyral the Vile
 					["qg"] = 15270,	-- Huum Wildmane
 					["sourceQuest"] = 8320,	-- Twilight Geolords

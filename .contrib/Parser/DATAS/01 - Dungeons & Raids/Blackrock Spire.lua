@@ -934,8 +934,9 @@ _.Instances = {
 					i(13173),	-- Flightblade Throwing Axe
 				}),
 				un(PHASE_FIVE, n(16080, {	-- Mor Grayhoof
-					["description"] = "Brazier of Invocation (Dungeon Set 2 questline) is required to summon this boss.",
+					["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
+						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor]
 						{ "i", 22057, 1 },	-- Brazier of Invocation
 					},
 					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
@@ -1207,9 +1208,10 @@ _.Instances = {
 						}),
 					}),
 					un(PHASE_FIVE, n(16042, { 	-- Lord Valthalak
-						["description"] = "This boss could be summoned using the Brazier of Beckoning.",
+						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
-							{ "i", 22056, 1 },	-- Brazier of Beckoning
+							{ "i", 22056, 1 },	-- Brazier of Beckoning [Valthalak]
+							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 							i(22336), 	-- Draconian Aegis of the Legion
