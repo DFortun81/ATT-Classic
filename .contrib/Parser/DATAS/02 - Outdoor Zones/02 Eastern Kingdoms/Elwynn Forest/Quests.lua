@@ -567,12 +567,11 @@ _.Zones =
 					["races"] = { HUMAN },
 					["classes"] = { WARLOCK },
 				}),
-				q(7962, {	-- Wabbit Pelts
-					["u"] = 1,
+				un(NEVER_IMPLEMENTED, q(7962, {	-- Wabbit Pelts
 					["g"] = {
 						i(13913),	-- 22 Pound Lobster
 					},
-				}),
+				})),
 				q(176, {	-- Wanted: "Hogger"
 					["providers"] = {
 						{ "o", 68 },	-- Wanted Poster
@@ -598,13 +597,10 @@ _.Zones =
 						i(6215),	-- Balanced Fighting Stick
 					},
 				}),
-				q(7961, {	-- Waskily Wabbits!
-					["u"] = 1,
-					["g"] = {
-						i(3300),	-- Rabbit's Foot
-						i(8497),	-- Rabbit Crate (Snowshoe)
-					},
-				}),
+				un(NEVER_IMPLEMENTED, q(7961, {	-- Waskily Wabbits!
+					i(3300),	-- Rabbit's Foot
+					i(8497),	-- Rabbit Crate (Snowshoe)
+				})),
 				q(5805, {	-- Welcome!
 					["provider"] = { "i", 14646 },	-- Northshire Gift Voucher
 					["u"] = 2,

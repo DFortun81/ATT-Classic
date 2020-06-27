@@ -465,11 +465,12 @@ _.Zones =
 					},
 					["lvl"] = 35,
 				}),
-				q(708, {	-- The Black Box
+				un(NEVER_IMPLEMENTED, q(708, {	-- The Black Box
+					["provider"] = { "i", 4613 },	-- Corroded Black Box
 					["races"] = ALLIANCE_ONLY,
+					["cr"] = 2931,	-- Zaricotl
 					["lvl"] = 30,
-					["u"] = 1,
-				}),
+				})),
 				q(692, {	-- The Lost Fragments
 					["qg"] = 2785,	-- Theldurin the Lost
 					["sourceQuest"] = 687,	-- Theldurin the Lost

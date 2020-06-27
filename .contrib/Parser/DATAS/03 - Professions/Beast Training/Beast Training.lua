@@ -202,11 +202,10 @@ profession(261, {	-- Beast Training
 				4512,	-- Rotting Agam'ar (Boar, 28, Razorfen Kraul)
 			},
 		},
-		{
+		un(NEVER_IMPLEMENTED, {
 			["recipeID"] = 26179,	-- Charge [Rank 4]
 			["lvl"] = 36,
-			["u"] = 1, 	-- No Known Source
-		},
+		}),
 		{
 			["recipeID"] = 26201,	-- Charge [Rank 5]
 			["lvl"] = 48,
@@ -631,12 +630,10 @@ profession(261, {	-- Beast Training
 			["recipeID"] = 14921,	-- Growl [Rank 7]
 			["lvl"] = 60,
 		},
-
-		{
+		un(NEVER_IMPLEMENTED, {
 			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
 			["lvl"] = 10,
-			["u"] = 1, 	-- No Known Source
-		},
+		}),
 		{
 			["recipeID"] = 25008,	-- Lightning Breath [Rank 2]
 			["lvl"] = 15,
@@ -678,14 +675,13 @@ profession(261, {	-- Beast Training
 				5708,	-- Spawn of Hakkar (Wind Serpent, 51, The Temple of Atal'Hakkar)
 			},
 		},
-		{
+		un(PHASE_FOUR, {
 			["recipeID"] = 25012,	-- Lightning Breath [Rank 6]
 			["lvl"] = 60,
 			["crs"] = {
 				11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
 			},
-			["u"] = 3,	-- Not available until Zul'Gurub 
-		},	
+		}),	
 
 		{
 			["recipeID"] = 24545,	-- Natural Armor [Rank 1]

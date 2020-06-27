@@ -65,11 +65,10 @@ profession(ALCHEMY, {
 				["name"] = "Greater Healing Potion",
 				["recipeID"] = 7181
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Greater Holy Protection Potion",
 				["recipeID"] = 17579,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Greater Mana Potion",
 				["recipeID"] = 11448

@@ -6,11 +6,10 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(QUESTS, {
-				q(6606, {	-- A Little Luck
-					["lvl"] = 55,
+				un(NEVER_IMPLEMENTED, q(6606, {	-- A Little Luck
 					["races"] = HORDE_ONLY,
-					["u"] = 1,	-- Never Available
-				}),
+					["lvl"] = 55,
+				})),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
 					["coord"] = { 61, 38.4, WINTERSPRING },

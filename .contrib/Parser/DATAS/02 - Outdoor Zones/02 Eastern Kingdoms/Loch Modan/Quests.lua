@@ -311,13 +311,12 @@ _.Zones =
 					["qg"] = 1572,	-- Thorgrum Borrelson
 					["coord"] = { 33.9, 50.9, LOCH_MODAN },
 				}),
-				q(912, {	-- Stonesplinter Trogg Disguise
+				un(NEVER_IMPLEMENTED, q(912, {	-- Stonesplinter Trogg Disguise
 					["lvl"] = 10,
 					["g"] = {
-						i(5131),	-- Knowledge: Stonesplinter Disguise
+						un(NEVER_IMPLEMENTED, i(5131)),	-- Knowledge: Stonesplinter Disguise
 					},
-					["u"] = 1,	-- Never Available
-				}),
+				})),
 				q(1338, {	-- Stormpike's Order
 					["lvl"] = 9,
 					["races"] = ALLIANCE_ONLY,

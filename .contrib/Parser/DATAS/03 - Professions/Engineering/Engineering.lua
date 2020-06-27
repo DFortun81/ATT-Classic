@@ -125,11 +125,10 @@ profession(ENGINEERING, {
 				["name"] = "Mithril Mechanical Dragonling",
 				["recipeID"] = 12624
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Mobile Alarm",
 				["recipeID"] = 12900,
-				["u"] = 1,	-- Never Available
-			},
+			}),
 			{
 				["name"] = "Ornate Spyglass",
 				["recipeID"] = 6458

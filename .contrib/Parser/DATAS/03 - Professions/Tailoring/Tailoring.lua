@@ -178,11 +178,10 @@ profession(TAILORING, {
 				["name"] = "Silk Headband",
 				["recipeID"] = 8762
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Headband",
 				["recipeID"] = 12083,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Sylvan Crown",
 				["recipeID"] = 28481,
@@ -258,11 +257,10 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Shoulders",
 				["recipeID"] = 12076
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Shoulders",
 				["recipeID"] = 12087,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Sylvan Shoulders",
 				["recipeID"] = 28482,
@@ -382,11 +380,10 @@ profession(TAILORING, {
 				["name"] = "Green Silk Armor",
 				["recipeID"] = 8784
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Green Woolen Robe",
 				["recipeID"] = 7636,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Green Woolen Vest",
 				["recipeID"] = 2399
@@ -455,11 +452,10 @@ profession(TAILORING, {
 				["name"] = "Simple Dress",
 				["recipeID"] = 8465
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Vest",
 				["recipeID"] = 12068,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Sylvan Vest",
 				["recipeID"] = 28480,
@@ -644,11 +640,10 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Gloves",
 				["recipeID"] = 12071
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Gloves",
 				["recipeID"] = 12063,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Truefaith Gloves",
 				["recipeID"] = 8782
@@ -748,11 +743,10 @@ profession(TAILORING, {
 				["name"] = "Simple Linen Pants",
 				["recipeID"] = 12044
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Stormcloth Pants",
 				["recipeID"] = 12062,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Tuxedo Pants",
 				["recipeID"] = 12089
@@ -779,11 +773,10 @@ profession(TAILORING, {
 				["name"] = "Bloodvine Boots",
 				["recipeID"] = 24093,
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Boots of Darkness",
 				["recipeID"] = 8778,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Boots of the Enchanter",
 				["recipeID"] = 3860

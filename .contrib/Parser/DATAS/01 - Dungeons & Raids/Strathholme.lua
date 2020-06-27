@@ -28,14 +28,13 @@ _.Instances = {
 						i(17045),	-- Blood of the Martyr
 					},
 				}),
-				q(8945, {	-- Dead Man's Plea
+				un(PHASE_FIVE, q(8945, {	-- Dead Man's Plea
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 8929,	-- In Search of Anthion
 					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
-					["u"] = 3,	-- Not yet available
 					["lvl"] = 58,
-				}),
+				})),
 				q(5861, {	-- Find Myranda
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
@@ -76,7 +75,7 @@ _.Instances = {
 						i(16058),	-- Fordring's Seal
 					},
 				}),
-				q(8929, {	-- In Search of Anthion
+				un(PHASE_FIVE, q(8929, {	-- In Search of Anthion
 					["qg"] = 16013,	-- Deliana
 					["coord"] = { 43.53, 52.64, IRONFORGE },
 					["maps"] = { IRONFORGE },
@@ -84,10 +83,9 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
-				}),
-				q(8930, {	-- In Search of Anthion
+				})),
+				un(PHASE_FIVE, q(8930, {	-- In Search of Anthion
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR },
@@ -95,9 +93,8 @@ _.Instances = {
 					["cost"] = {
 						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
 					},
-					["u"] = 3,	-- Added in later phase
 					["lvl"] = 58,
-				}),
+				})),
 				q(5264, {	-- Lord Maxwell Tyrosus
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5263,	-- Above and Beyond
@@ -154,18 +151,17 @@ _.Instances = {
 					},
 					["lvl"] = 52,
 				}),
-				q(8946, {	-- Proof of Life
+				un(PHASE_FIVE, q(8946, {	-- Proof of Life
 					["qg"] = 16031,	-- Ysida Harmon
 					["sourceQuest"] = 8945,	-- Dead Man's Plea
-					["u"] = 3,	-- Not yet available
 					["lvl"] = 58,
 					["groups"] = {
-						{
+						un(PHASE_FIVE, {
 							["itemID"] = 22139,	-- Ysida's Locket
 							["questID"] = 8946,	-- Proof of Life
-						},
+						}),
 					},
-				}),
+				})),
 				q(6163, {	-- Ramstein
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },
@@ -532,15 +528,14 @@ _.Instances = {
 							i(16725),	-- Lightforge Boots
 						},
 					}),
-					n(14684, { 	-- Balzaphon
+					un(PHASE_SIX, n(14684, { 	-- Balzaphon
 						["description"] = "This boss was only available during the Scourge Invasions.",
-						["u"] = 3,	-- Not yet implemented.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
 							i(23124),	-- Staff of Balzaphon
 							i(23125),	-- Chains of the Lich
 							i(23126),	-- Waistband of Balzaphon
-						},
-					}),
+						}),
+					})),
 					n(16102, { 	-- Sothos
 						["crs"] = {
 							16101,	-- Jarien
@@ -555,17 +550,15 @@ _.Instances = {
 							i(22334),	-- Band of Mending
 						},
 					}),
-					n(16387, { 	-- Atiesh <Hand of Sargeras>
+					un(PHASE_SIX, n(16387, { 	-- Atiesh <Hand of Sargeras>
 						["description"] = "Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",
-						["u"] = 3,	-- Not yet implemented.
 						["groups"] = {
-							{
+							un(PHASE_SIX, {
 								["itemID"] = 22736,	-- Andonisus, Reaper of Souls
 								["description"] = "He drops this midway through the encounter and one lucky DPS can wield this. However, it is a conjured item and will disappear after a few minutes.",
-								["u"] = 3,	-- Not yet implemented.
-							},
+							}),
 						},
-					}),
+					})),
 				},
 			}),
 			n(-389, {	-- Service Entrance

@@ -27,15 +27,14 @@ _.Zones =
 						i(4941),	-- Really Sticky Glue
 					},
 				}),
-				q(785, {	-- A Strategic Alliance
+				un(NEVER_IMPLEMENTED, q(785, {	-- A Strategic Alliance
 					-- low enough questID for classic, but unable to verify if it actually was in vanilla
 					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely. 
 					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.64, 50.31, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 5,
-					["u"] = 1,
-				}),
+				})),
 				q(809, {	-- Ak'Zeloth
 					["qg"] = 3216,	-- Neeru Fireblade
 					["sourceQuest"] = 829,	-- Neeru Fireblade
@@ -837,15 +836,20 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 				}),
-				q(5843, {	-- Welcome!
+				un(REMOVED_FROM_GAME, q(5843, {	-- Welcome!
 					["provider"] = { "i", 14649 },	-- Valley of Trials Gift Voucher
-					["u"] = 2,
-					["g"] = {
-						un(2, i(13584)),	-- Diablo Stone
-						un(2, i(13583)),	-- Panda Collar
-						un(2, i(13582)),	-- Zergling Leash
+					["altQuests"] = {
+						5843,	-- Welcome! [Durotar]
+						5844,	-- Welcome! [Mulgore]
+						5847,	-- Welcome! [Tirisfal Glades]
 					},
-				}),
+					["races"] = HORDE_ONLY,
+					["g"] = bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
+						i(13584),	-- Diablo Stone
+						i(13583),	-- Panda Collar
+						i(13582),	-- Zergling Leash
+					}),
+				})),
 				q(834, {	-- Winds in the Desert
 					["qg"] = 3293,	-- Rezlak
 					["coord"] = { 46.38, 22.94, DUROTAR },

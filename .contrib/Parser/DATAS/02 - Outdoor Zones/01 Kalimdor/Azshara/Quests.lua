@@ -17,13 +17,12 @@ _.Zones =
 					["coord"] = { 11.4, 78.2, AZSHARA },
 					["lvl"] = 45,
 				}),
-				q(3381, {	-- A Meeting with the Master
+				un(REMOVED_FROM_GAME, q(3381, {	-- A Meeting with the Master
 					["qg"] = 8399,	-- Nyrill <Xylem's Apprentice>
 					["coord"] = { 26.4, 46.2, AZSHARA },
 					["repeatable"] = true,
 					["lvl"] = 45,
-					["u"] = 2,
-				}),
+				})),
 				q(3564, {	-- Andron's Payment to Jediga
 					["qg"] = 6522,	-- Andron Gant
 					["sourceQuest"] = 3542,	-- Delivery to Andron Gant

@@ -274,11 +274,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Patterned Bronze Bracers",
 				["recipeID"] = 2672
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Rough Bronze Bracers",
 				["recipeID"] = 2671,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Runed Copper Bracers",
 				["recipeID"] = 2664
@@ -335,21 +334,19 @@ profession(BLACKSMITHING, {
 				["recipeID"] = 28243,
 				["u"] = 3,
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Ironforge Gauntlets",
 				["recipeID"] = 8368,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Ironvine Gloves",
 				["recipeID"] = 28462,
 				["u"] = 3,	-- Added in later phase (AQ)
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Mithril Scale Gloves",
 				["recipeID"] = 9942,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Ornate Mithril Gloves",
 				["recipeID"] = 9950
@@ -421,11 +418,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Ironforge Breastplate",
 				["recipeID"] = 8367,
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Ironforge Chain",
 				["recipeID"] = 8366,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Ironvine Breastplate",
 				["recipeID"] = 28461,
@@ -789,11 +785,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Huge Thorium Battleaxe",
 				["recipeID"] = 16971
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Inlaid Thorium Hammer",
 				["recipeID"] = 16967,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Iridescent Hammer",
 				["recipeID"] = 6518
@@ -822,11 +817,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Pearl-handled Dagger",
 				["recipeID"] = 6517
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Rune Edge",
 				["recipeID"] = 16980,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Runed Mithril Hammer",
 				["recipeID"] = 10009
@@ -851,11 +845,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Thick War Axe",
 				["recipeID"] = 3294
 			},
-			{
+			un(NEVER_IMPLEMENTED, {
 				["name"] = "Thorium Greatsword",
 				["recipeID"] = 16960,
-				["u"] = 1,	-- Never in game
-			},
+			}),
 			{
 				["name"] = "Volcanic Hammer",
 				["recipeID"] = 16984
