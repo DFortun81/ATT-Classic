@@ -1071,6 +1071,32 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
 						},
 					}),
+					q(8615, {	-- The Horde Needs Baked Salmon!
+						["qg"] = 15535,	-- Chief Sharpclaw <Baked Salmon Collector>
+						["coord"] = { 28.8, 67.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 13935, 20 },	-- Baked Salmon
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
+					q(8616, {	-- The Horde Needs More Baked Salmon!
+						["qg"] = 15535,	-- Chief Sharpclaw <Baked Salmon Collector>
+						["sourceQuest"] = 8615,	-- The Horde Needs Baked Salmon!
+						["coord"] = { 28.8, 67.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 13935, 20 },	-- Baked Salmon
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
 					q(8532, {	-- The Horde Needs Copper Bars!
 						["qg"] = 15459,	-- Miner Cromwell <Copper Bar Collector>
 						["coord"] = { 31.1, 66.1, ORGRIMMAR },
@@ -1095,6 +1121,58 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						["groups"] = {
 							i(21438),	-- Horde Commendation Signet
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8580, {	-- The Horde Needs Firebloom!
+						["qg"] = 15508,	-- Batrider Pele'keiki <Firebloom Collector>
+						["coord"] = { 32.8, 70.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 4625, 20 },	-- Firebloom
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8581, {	-- The Horde Needs More Firebloom!
+						["qg"] = 15508,	-- Batrider Pele'keiki <Firebloom Collector>
+						["sourceQuest"] = 8580,	-- The Horde Needs Firebloom!
+						["coord"] = { 32.8, 70.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 4625, 20 },	-- Firebloom
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8588, {	-- The Horde Needs Heavy Leather!
+						["qg"] = 15515,	-- Skinner Jamani <Heavy Leather Collector>
+						["coord"] = { 36.0, 73.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 4234, 10 },	-- Heavy Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
+						},
+					}),
+					q(8589, {	-- The Horde Needs More Heavy Leather!
+						["qg"] = 15515,	-- Skinner Jamani <Heavy Leather Collector>
+						["sourceQuest"] = 8588,	-- The Horde Needs Heavy Leather!
+						["coord"] = { 36.0, 73.4, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 4234, 10 },	-- Heavy Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21511),	-- Ahn'Qiraj War Effort Supplies [Level 30]
 						},
 					}),
 					q(8611, {	-- The Horde Needs Lean Wolf Steaks!
@@ -1123,6 +1201,58 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 							i(21510),	-- Ahn'Qiraj War Effort Supplies [Level 20]
 						},
 					}),
+					q(8607, {	-- The Horde Needs Mageweave Bandages!
+						["qg"] = 15529,	-- Lady Callow <Mageweave Bandage Collector>
+						["coord"] = { 31.3, 75.1, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 8544, 20 },	-- Mageweave Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8608, {	-- The Horde Needs More Mageweave Bandages!
+						["qg"] = 15529,	-- Lady Callow <Mageweave Bandage Collector>
+						["sourceQuest"] = 8607,	-- The Horde Needs Mageweave Bandages!
+						["coord"] = { 31.3, 75.1, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 8544, 20 },	-- Mageweave Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8545, {	-- The Horde Needs Mithril Bars!
+						["qg"] = 15469,	-- Senior Sergeant T'kelah <Mithril Bar Collector>
+						["coord"] = { 31.5, 66.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 3860, 20 },	-- Mithril Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8546, {	-- The Horde Needs More Mithril Bars!
+						["qg"] = 15469,	-- Senior Sergeant T'kelah <Mithril Bar Collector>
+						["sourceQuest"] = 8545,	-- The Horde Needs Mithril Bars!
+						["coord"] = { 31.5, 66.8, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 3860, 20 },	-- Mithril Bar
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
 					q(8549, {	-- The Horde Needs Peacebloom!
 						["qg"] = 15477,	-- Herbalist Proudfeather <Peacebloom Collector>
 						["coord"] = { 33.3, 69.6, ORGRIMMAR },
@@ -1147,6 +1277,136 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						["groups"] = {
 							i(21438),	-- Horde Commendation Signet
 							i(21509),	-- Ahn'Qiraj War Effort Supplies [Level 10]
+						},
+					}),
+					q(8582, {	-- The Horde Needs Purple Lotus!
+						["qg"] = 15512,	-- Apothecary Jezel <Purple Lotus Collector>
+						["coord"] = { 32.8, 68.7, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 8831, 20 },	-- Purple Lotus
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8583, {	-- The Horde Needs More Purple Lotus!
+						["qg"] = 15512,	-- Apothecary Jezel <Purple Lotus Collector>
+						["sourceQuest"] = 8582,	-- The Horde Needs Purple Lotus!
+						["coord"] = { 32.8, 68.7, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 8831, 20 },	-- Purple Lotus
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8600, {	-- The Horde Needs Rugged Leather!
+						["qg"] = 15525,	-- Doctor Serratus <Rugged Leather Collector>
+						["coord"] = { 35.1, 72.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 8170, 10 },	-- Rugged Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
+					q(8601, {	-- The Horde Needs More Rugged Leather!
+						["qg"] = 15525,	-- Doctor Serratus <Rugged Leather Collector>
+						["sourceQuest"] = 8600,	-- The Horde Needs Rugged Leather!
+						["coord"] = { 35.1, 72.6, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 8170, 10 },	-- Rugged Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
+					q(8609, {	-- The Horde Needs Runecloth Bandages!
+						["qg"] = 15532,	-- Stoneguard Clayhoof <Runecloth Bandage Collector>
+						["coord"] = { 32.2, 75.3, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 14529, 20 },	-- Runecloth Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
+					q(8610, {	-- The Horde Needs More Runecloth Bandages!
+						["qg"] = 15532,	-- Stoneguard Clayhoof <Runecloth Bandage Collector>
+						["sourceQuest"] = 8609,	-- The Horde Needs Runecloth Bandages!
+						["coord"] = { 32.2, 75.3, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 14529, 20 },	-- Runecloth Bandage
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21513),	-- Ahn'Qiraj War Effort Supplies [Level 50]
+						},
+					}),
+					q(8613, {	-- The Horde Needs Spotted Yellowtail!
+						["qg"] = 15534,	-- Fisherman Lin'do <Spotted Yellowtail Collector>
+						["coord"] = { 29.0, 68.5, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 6887, 20 },	-- Spotted Yellowtail
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8614, {	-- The Horde Needs More Spotted Yellowtail!
+						["qg"] = 15534,	-- Fisherman Lin'do <Spotted Yellowtail Collector>
+						["sourceQuest"] = 8613,	-- The Horde Needs Spotted Yellowtail!
+						["coord"] = { 29.0, 68.5, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 6887, 20 },	-- Spotted Yellowtail
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8590, {	-- The Horde Needs Thick Leather!
+						["qg"] = 15522,	-- Sergeant Umala <Thick Leather Collector>
+						["coord"] = { 34.0, 72.7, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["cost"] = {
+							{ "i", 4304, 10 },	-- Thick Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
+						},
+					}),
+					q(8591, {	-- The Horde Needs More Thick Leather!
+						["qg"] = 15522,	-- Sergeant Umala <Thick Leather Collector>
+						["sourceQuest"] = 8590,	-- The Horde Needs Thick Leather!
+						["coord"] = { 34.0, 72.7, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 4304, 10 },	-- Thick Leather
+						},
+						["groups"] = {
+							i(21438),	-- Horde Commendation Signet
+							i(21512),	-- Ahn'Qiraj War Effort Supplies [Level 40]
 						},
 					}),
 					q(8542, {	-- The Horde Needs Tin Bars!
