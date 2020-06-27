@@ -908,5 +908,6 @@ app.L = {
 		[1009] = {3, "|CFFAAAAFFThis requires the New Years Holiday to be Active.|r", "New Years" },
 		[1010] = {3, "|CFFAAAAFFThis requires the Noblegarden Holiday to be Active.|r", "Noblegarden" },
 		[1011] = {3, "|CFFAAAAFFThis requires the Pirate's Day Holiday to be Active.|r", "Pirate's Day" },
+		[1012] = {3, "|CFFAAAAFFThis requires the Darkmoon Faire Holiday to be Active.|r", "Darkmoon Faire" },
 	};
 };

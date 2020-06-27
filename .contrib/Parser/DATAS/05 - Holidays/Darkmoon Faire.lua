@@ -1,7 +1,16 @@
 --------------------------------------------
---       E V E N T S    M O D U L E       --
+--     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.WorldEvents = 
+-- Note: This is up here to prevent the unobtainable flag from getting put on the following items:
+local HEAVY_LEATHER_BALL = i(18662);
+local DENSE_SHORTBOW = i(11305);
+local DARING_DIRK = i(12248);
+local BIG_STICK = i(12251);
+local SLYVAN_SHORTBOW = i(11308);
+local STURDY_RECURVE = i(11306);
+local FINE_SHORTBOW = i(11303);
+
+_.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE }, 
 {
 	faction(909, {	-- Darkmoon Faire
 		["icon"] = asset("dmf"),
@@ -565,7 +574,7 @@ _.WorldEvents =
 						{ 43.6, 71.0, ELWYNN_FOREST },
 					},
 					["groups"] = {
-						i(18662),	-- Heavy Leather Ball
+						HEAVY_LEATHER_BALL,
 						i(11026),	-- Tree Frog Box
 						i(11027),	-- Wood Frog Box
 					},
@@ -593,17 +602,26 @@ _.WorldEvents =
 						{ 41.2, 69.8, ELWYNN_FOREST },
 					},
 					["groups"] = {
-						i(12251),	-- Big Stick
-						i(12248),	-- Daring Dirk
+						BIG_STICK,
+						DARING_DIRK,
 						i(19303),	-- Darkmoon Necklace
 						i(19302),	-- Darkmoon Ring
-						i(11305),	-- Dense Shortbow
-						i(11303),	-- Fine Shortbow
-						i(11306),	-- Sturdy Recurve
-						i(11308),	-- Sylvan Shortbow
+						DENSE_SHORTBOW,
+						FINE_SHORTBOW,
+						STURDY_RECURVE,
+						SLYVAN_SHORTBOW,
 					},
 				}),
 			}),
 		},
 	}),
-};
+});
+
+-- Wipe out the unobtainable states.
+HEAVY_LEATHER_BALL.u = nil;
+DENSE_SHORTBOW.u = nil;
+DARING_DIRK.u = nil;
+BIG_STICK.u = nil;
+SLYVAN_SHORTBOW.u = nil;
+STURDY_RECURVE.u = nil;
+FINE_SHORTBOW.u = nil;
