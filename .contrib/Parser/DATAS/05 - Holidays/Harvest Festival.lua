@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({ ["u"] = HARVEST_FESTIVAL }, 
 {
 	n(-57, {	-- Harvest Festival
 		n(-4, {	-- Free Festival Food
@@ -66,4 +66,4 @@ _.Holidays =
 			},
 		}),
 	}),
-};
+});

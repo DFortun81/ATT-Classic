@@ -785,11 +785,10 @@ _.Instances = {
 				},
 			}),
 			n(ZONEDROPS, {
-				{
+				un(PHASE_FIVE, {
 					["itemID"] = 22138,	-- Blackrock Bracer
 					["questID"] = 8994,	-- Final Preparations
-					["u"] = 3,	-- Added in later phase
-				},
+				}),
 				{
 					["itemID"] = 16786,	-- Black Dragonspawn Eye
 					["questID"] = 6569,	-- Oculus Illusions
@@ -808,10 +807,9 @@ _.Instances = {
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
-				i(24102, {	-- Manual of Eviscerate IX
-					["u"] = 6,	-- Not available yet. [Phase 6]
+				un(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
 					["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
-				}),
+				})),
 				i(14513, {	-- Pattern: Robe of the Archmage
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
@@ -935,13 +933,12 @@ _.Instances = {
 					i(22231),	-- Kayser's Boots of Precision
 					i(13173),	-- Flightblade Throwing Axe
 				}),
-				n(16080, {	-- Mor Grayhoof
+				un(PHASE_FIVE, n(16080, {	-- Mor Grayhoof
 					["description"] = "Brazier of Invocation (Dungeon Set 2 questline) is required to summon this boss.",
 					["cost"] = {
 						{ "i", 22057, 1 },	-- Brazier of Invocation
 					},
-					["u"] = 3,	-- Not yet available
-					["groups"] = {
+					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 						{
 							["itemID"] = 21984,	-- Left Piece of Lord Valthalak's Amulet
 							["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet
@@ -955,8 +952,8 @@ _.Instances = {
 						i(22325),	-- Belt of the Trickster
 						i(22306),	-- Ironweave Belt
 						i(22398),	-- Idol of Rejuvenation
-					},
-				}),
+					}),
+				})),
 				n(9596, {	-- Bannok Grimaxe (Rare)
 					["description"] = "This is a rare that is not always present.",
 					["groups"] = {
@@ -1086,11 +1083,10 @@ _.Instances = {
 							["itemID"] = 17322,	-- Eye of the Emberseer
 							["questID"] = 6821,	-- Eye of the Emberseer
 						},
-						{
+						un(PHASE_FIVE, {
 							["itemID"] = 21988,	-- Ember of Emberseer
 							["questID"] = 8961,	-- Three Kings of Flame
-							["u"] = 3,	-- Added in later phase
-						},
+						}),
 						i(12929),	-- Emberfury Talisman
 						i(12905), 	-- Wildfire Cape
 						i(12927),	-- Truestrike Shoulders
@@ -1210,13 +1206,12 @@ _.Instances = {
 							},
 						}),
 					}),
-					n(16042, { 	-- Lord Valthalak
+					un(PHASE_FIVE, n(16042, { 	-- Lord Valthalak
 						["description"] = "This boss could be summoned using the Brazier of Beckoning.",
 						["cost"] = {
 							{ "i", 22056, 1 },	-- Brazier of Beckoning
 						},
-						["u"] = 3,	-- Not available yet.
-						["groups"] = {
+						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
 							i(22336), 	-- Draconian Aegis of the Legion
 							i(22335), 	-- Lord Valthalak's Staff of Command
 							i(22302),	-- Ironweave Cowl
@@ -1225,8 +1220,8 @@ _.Instances = {
 							i(22343),	-- Handguards of Savagery
 							i(22342),	-- Leggings of Torment
 							i(22339),	-- Rune Band of Wizardry
-						},
-					}),
+						}),
+					})),
 					n(10363, { 	-- General Drakkisath
 						{
 							["itemID"] = 16663,	-- Blood of the Black Dragon Champion

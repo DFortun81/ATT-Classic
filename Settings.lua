@@ -133,6 +133,35 @@ local TooltipSettingsBase = {
 		["Warn:Removed"] = true,
 	},
 };
+local UnobtainableSettingsBase = {
+	__index = {
+		[1] = false,	-- Never Implemented
+		[2] = false,	-- Removed From Game
+		[3] = false,	-- Future Releases [TODO: Convert these, you dummy!]
+		
+		-- Future Content Releases
+		[11] = 2,	-- Phase 1
+		[12] = true,	-- Phase 2
+		[13] = true,	-- Phase 3
+		[14] = true,	-- Phase 4
+		[15] = false,	-- Phase 5
+		[16] = false,	-- Phase 6
+		
+		-- Seasonal Filters
+		[1000] = false,	-- Brewfest
+		[1001] = false,	-- Children's Week
+		[1002] = false,	-- Day of the Dead
+		[1003] = false,	-- Feast of Winter Veil
+		[1004] = false,	-- Hallow's End
+		[1005] = false,	-- Harvest Festival
+		[1006] = false,	-- Love is in the Air (Valentine's Day)
+		[1007] = false,	-- Lunar Festival
+		[1008] = false,	-- Midsummer Fire Festival
+		[1009] = false,	-- New Years
+		[1010] = false,	-- Noblegarden
+		[1011] = false,	-- Pirate's Day
+	},
+};
 local OnClickForTab = function(self)
 	local id = self:GetID();
 	local parent = self:GetParent();
@@ -157,8 +186,10 @@ settings.Initialize = function(self)
 	if not ATTClassicSettings then ATTClassicSettings = {}; end
 	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
 	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
+	if not ATTClassicSettings.Unobtainables then ATTClassicSettings.Unobtainables = {}; end
 	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
 	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
+	setmetatable(ATTClassicSettings.Unobtainables, UnobtainableSettingsBase);
 	
 	-- Assign the preset filters for your character class as the default states
 	if not ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = {}; end
@@ -250,6 +281,9 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return ATTClassicSettings.Tooltips[setting];
 end
+settings.GetUnobtainableFilter = function(self, u)
+	return ATTClassicSettings.Unobtainables[u];
+end
 settings.Set = function(self, setting, value)
 	ATTClassicSettings.General[setting] = value;
 	self:Refresh();
@@ -263,6 +297,11 @@ settings.SetTooltipSetting = function(self, setting, value)
 	ATTClassicSettings.Tooltips[setting] = value;
 	wipe(app.searchCache);
 	self:Refresh();
+end
+settings.SetUnobtainableFilter = function(self, u, value)
+	ATTClassicSettings.Unobtainables[u] = value;
+	self:Refresh();
+	app:RefreshData();
 end
 settings.SetPersonal = function(self, setting, value)
 	ATTClassicSettingsPerCharacter[setting] = value;
@@ -1118,20 +1157,87 @@ f.OnRefresh = function(self)
 end;
 table.insert(settings.MostRecentTab.objects, f);
 
+local UnobtainableFilterOnClick = function(self)
+	settings:SetUnobtainableFilter(self.u, self:GetChecked());
+end;
+local UnobtainableOnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	elseif UnobtainableSettingsBase.__index[self.u] ~= 2 then
+		self:SetChecked(settings:GetUnobtainableFilter(self.u));
+		self:Enable();
+		self:SetAlpha(1);
+	else
+		self:SetChecked(true);
+		self:Disable();
+		self:SetAlpha(0.2);
+	end
+end;
 local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
+LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -120, -8);
 LegacyFiltersLabel:SetJustifyH("LEFT");
-LegacyFiltersLabel:SetText("Legacy / Unobtainable Filters");
+LegacyFiltersLabel:SetText("Seasonal & Unobtainable Filters");
 LegacyFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
 
-local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
-LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
-LegacyFiltersTempLabel:SetJustifyH("LEFT");
-LegacyFiltersTempLabel:SetText("|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r");
-LegacyFiltersTempLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
+local SeasonalHolidayFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+SeasonalHolidayFiltersLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
+SeasonalHolidayFiltersLabel:SetJustifyH("LEFT");
+SeasonalHolidayFiltersLabel:SetText("|CFFAAAAFFSeasonal Holiday Filters|r");
+SeasonalHolidayFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, SeasonalHolidayFiltersLabel);
+
+-- Seasonal Filters
+yoffset = -4;
+last = SeasonalHolidayFiltersLabel;
+for i,u in ipairs({ 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011 }) do
+	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2]);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.u = u;
+	last = filter;
+	yoffset = 6;
+end
+
+local GeneralUnobtainableFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+GeneralUnobtainableFiltersLabel:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -8);
+GeneralUnobtainableFiltersLabel:SetJustifyH("LEFT");
+GeneralUnobtainableFiltersLabel:SetText("|CFFFFAAAAGeneral Unobtainable Filters|r");
+GeneralUnobtainableFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, GeneralUnobtainableFiltersLabel);
+
+-- General Unobtainable Filters
+yoffset = -4;
+last = GeneralUnobtainableFiltersLabel;
+for i,u in ipairs({ 1, 2, 3  }) do
+	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2]);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.u = u;
+	last = filter;
+	yoffset = 6;
+end
+
+local FutureContentReleasesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+FutureContentReleasesLabel:SetPoint("RIGHT", line, "RIGHT", -10, 0);
+FutureContentReleasesLabel:SetPoint("TOP", LegacyFiltersLabel, "BOTTOM", 0, -8);
+FutureContentReleasesLabel:SetJustifyH("LEFT");
+FutureContentReleasesLabel:SetText("|CFFAAFFAAFuture Content Releases|r");
+FutureContentReleasesLabel:Show();
+table.insert(settings.MostRecentTab.objects, FutureContentReleasesLabel);
+
+-- Future Content Releases
+yoffset = -4;
+last = FutureContentReleasesLabel;
+for i,u in ipairs({ 11, 12, 13, 14, 15, 16  }) do
+	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2]);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.u = u;
+	last = filter;
+	yoffset = 6;
+end
 end)();
 
 ------------------------------------------

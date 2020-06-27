@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays =
+_.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL }, 
 {
 	n(-53, {	-- Midsummer Fire Festival
 		n(QUESTS, {
@@ -434,4 +434,4 @@ _.Holidays =
 			}),
 		}),
 	}),
-};
+});
