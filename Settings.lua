@@ -31,6 +31,7 @@ local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent );
 app.Settings = settings;
 settings.name = "ATT-Classic";
 settings.MostRecentTab = nil;
+settings:Hide();
 settings.Tabs = {};
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg", 
@@ -49,6 +50,9 @@ settings.Open = function(self)
 		InterfaceOptionsFrame_OpenToCategory(self.name);
 	end
 end
+settings:SetScript("OnShow", function(self)
+	self:Refresh();
+end);
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
@@ -209,7 +213,6 @@ settings.Initialize = function(self)
 		app.Minimap:Hide();
 	end
 	OnClickForTab(self.Tabs[1]);
-	self:Refresh();
 	self:UpdateMode();
 	
 	if self:GetTooltipSetting("Auto:MainList") then
