@@ -857,36 +857,36 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 								i(19949),	-- Zandalarian Hero Medallion
 							},
 						}),
-						q(9210, {	-- The Savage Guard - Arcanum of Focus
+						un(PHASE_SIX, q(9210, {	-- The Savage Guard - Arcanum of Focus
 							["qg"] = 15042,		-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 18330, 1 },	-- Arcanum of Focus
 							},
 							["groups"] = {
-								i(22635),	-- Savage Guard
+								un(PHASE_SIX, i(22635)),	-- Savage Guard
 							},
-						}),
-						q(9208, {	-- The Savage Guard - Arcanum of Protection
+						})),
+						un(PHASE_SIX, q(9208, {	-- The Savage Guard - Arcanum of Protection
 							["qg"] = 15042,		-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 18331, 1 },	-- Arcanum of Protection
 							},
 							["groups"] = {
-								i(22635),	-- Savage Guard
+								un(PHASE_SIX, i(22635)),	-- Savage Guard
 							},
-						}),
-						q(9209, {	-- The Savage Guard - Arcanum of Rapidity
+						})),
+						un(PHASE_SIX, q(9209, {	-- The Savage Guard - Arcanum of Rapidity
 							["qg"] = 15042,	-- Zanza the Restless
 							["repeatable"] = true,
 							["cost"] = {
 								{ "i", 18329, 1 },	-- Arcanum of Rapidity
 							},
 							["groups"] = {
-								i(22635),	-- Savage Guard
+								un(PHASE_SIX, i(22635)),	-- Savage Guard
 							},
-						}),
+						})),
 						q(8243, {	-- Zanza's Potent Potables
 							["qg"] = 14921,	-- Rin'wosho the Trader <Zandalar Supplies & Repair>
 							["minReputation"] = { 270, REVERED },	-- Zandalari Tribe, Revered.
