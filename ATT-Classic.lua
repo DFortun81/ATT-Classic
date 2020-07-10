@@ -1944,6 +1944,13 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		return group;
 	end
 end
+local function SendGroupChatMessage(msg)
+	if IsInRaid() then
+		SendChatMessage(msg, "RAID", nil, nil);
+	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
+		SendChatMessage(msg, "PARTY", nil, nil);
+	end
+end
 local function SendGroupMessage(msg)
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		C_ChatInfo.SendAddonMessage("ATTC", msg, "INSTANCE_CHAT")
@@ -8221,7 +8228,10 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['description'] = "Click to toggle locking the Soft Reserves. You must click this again to turn it back off.",
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						app.Settings:SetTooltipSetting("SoftReservesLocked", not app.Settings:GetTooltipSetting("SoftReservesLocked"));
+						local locked = not app.Settings:GetTooltipSetting("SoftReservesLocked");
+						app.Settings:SetTooltipSetting("SoftReservesLocked", locked);
+						SendGroupChatMessage(locked and "Soft Reserves locked." or "Soft Reserves unlocked.");
+						if locked then Screenshot(); end
 						wipe(searchCache);
 						self:Update();
 						return true;
