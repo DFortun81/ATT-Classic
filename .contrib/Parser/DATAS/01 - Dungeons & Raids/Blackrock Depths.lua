@@ -790,7 +790,7 @@ _.Instances = {
 				}),
 				i(12549),	-- Braincage
 				i(18945),	-- Dark Iron Residue
-				i(22528),	-- Dark Iron Scraps
+				un(PHASE_FIVE, i(22528)),	-- Dark Iron Scraps
 				i(12535),	-- Doomforged Straightedge
 				i(12542),	-- Funeral Pyre Vestment
 				i(12547),	-- Mar Alom's Grip
@@ -863,14 +863,14 @@ _.Instances = {
 				i(11625), 	-- Enthralled Sphere
 				i(11626), 	-- Blackveil Cape
 				i(11624), 	-- Kentic Amice
-				i(22240), 	-- Greaves of Withering Despaire
+				un(PHASE_FIVE, i(22240)), 	-- Greaves of Withering Despaire
 			}),
 			n(9025, {	-- Lord Roccor
 				i(11813),	-- Formula: Smoking Heart of the Mountain
 				i(11631), 	-- Stoneshell Guard
 				i(11632), 	-- Earthslag Shoulders
-				i(22234), 	-- Mantle of Lost Hope
-				i(22397),	-- Idol of Ferocity
+				un(PHASE_FIVE, i(22234)), 	-- Mantle of Lost Hope
+				un(PHASE_FIVE, i(22397)),	-- Idol of Ferocity
 				i(11630),	-- Rockshard Pellets
 			}),
 			n(9016, {	-- Bael'gar
@@ -900,61 +900,47 @@ _.Instances = {
 				}),
 			})),
 			n(10096, {	-- Ring of Law
-				n(9031, { 	-- Anub'shiah
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
+				["description"] = "Approaching the center of the ring will start an event, and the High Justice will appear and approach one of the gates and release three waves of non-elite enemies, followed by one of six possible mini-bosses.",
+				["cr"] = 10096,	-- High Justice Grimstone
+				["groups"] = {
+					n(9031, { 	-- Anub'shiah
 						i(11677), 	-- Graverot Cape
 						i(11678), 	-- Carapace of Anub'shiah
-						i(11731), 	-- Savage Gladiator Greaves
 						i(11675), 	-- Shadefiend Boots
-					},
-				}),
-				n(9029, { 	-- Eviscerator
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
+					}),
+					n(9029, { 	-- Eviscerator
 						i(11685), 	-- Splinthide Shoulders
 						i(11679), 	-- Rubicund Armguards
-						i(11730), 	-- Savage Gladiator Grips
 						i(11686), 	-- Girdle of Beastial Fury
-					},
-				}),
-				n(9027, { 	-- Gorosh the Dervish
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
-						i(22266), 	-- Flarethorn
-						i(11726), 	-- Savage Gladiatior Chain
-						i(22271), 	-- Leggings of Frenzied Magic
-						i(22257),	-- Bloodclot Band
-					},
-				}),
-				n(9028, {	-- Grizzle
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
+					}),
+					n(9027, { 	-- Gorosh the Dervish
+						un(PHASE_FIVE, i(22257)),	-- Bloodclot Band
+						un(PHASE_FIVE, i(22266)), 	-- Flarethorn
+						un(PHASE_FIVE, i(22271)), 	-- Leggings of Frenzied Magic
+						i(11729), 	-- Savage Gladiator Helm
+						i(11726), 	-- Savage Gladiator Chain
+						i(11730), 	-- Savage Gladiator Grips
+						i(11728), 	-- Savage Gladiator Leggings
+						i(11731), 	-- Savage Gladiator Greaves
+					}),
+					n(9028, {	-- Grizzle
 						i(11610), 	-- Plans: Dark Iron Pulverizer
 						i(11702), 	-- Grizzle's Skinner
 						i(11722), 	-- Dregmetal Spaulders
 						i(11703), 	-- Stonewall Girdle
-						i(22270),	-- Entrenching Boots
-					},
-				}),
-				n(9032, { 	-- Hedrum the Creeper
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
+						un(PHASE_FIVE, i(22270)),	-- Entrenching Boots
+					}),
+					n(9032, { 	-- Hedrum the Creeper
 						i(11635), 	-- Hookfang Shanker
-						i(11729), 	-- Savage Gladiator Helm
 						i(11633), 	-- Spiderfang Carapace
 						i(11634), 	-- Silkweb Gloves
-					},
-				}),
-				n(9030, { 	-- Ok'thor the Breaker
-					["description"] = "This is one of the possible bosses for this event.",
-					["groups"] = {
+					}),
+					n(9030, { 	-- Ok'thor the Breaker
 						i(11665), 	-- Ogreseer Fists
 						i(11662), 	-- Ban'thok Sash
-						i(11728), 	-- Savage Gladiator's Leggings
 						i(11824),	-- Cyclopean Band
-					},
-				}),
+					}),
+				},
 			}),
 			n(9024, {	-- Pyromancer Loregrain
 				i(11207),	-- Formula: Enchant Weapon - Fiery Weapon
@@ -978,7 +964,7 @@ _.Instances = {
 				i(11765), 	-- Pyremail Wristguards
 				i(11767), 	-- Emberplate Armguards
 				i(11768),	-- Incendic Bracers
-				i(19268),	-- Ace of Elementals
+				un(PHASE_THREE, i(19268)),	-- Ace of Elementals
 			}),
 			n(9056, {	-- Fineous Darkvire <Chief Architect>
 				{
@@ -987,18 +973,18 @@ _.Instances = {
 				},
 				i(11840), 	-- Master Builder's Shirt
 				i(11839), 	-- Chief Architect's Monocle
-				i(22223), 	-- Foreman's Head Protector
+				un(PHASE_FIVE, i(22223)), 	-- Foreman's Head Protector
 				i(11842), 	-- Land Surveyor's Mantle
 				i(11841), 	-- Senior Designer's Pantaloons
 			}),
 			n(9042, {	-- Verek
 				i(11755),	-- Verek's Collar
-				i(22242),	-- Verek's Leash
+				un(PHASE_FIVE, i(22242)),	-- Verek's Leash
 			}),
 			n(9041, {	-- Warder Stilgiss
 				i(11784),	-- Arbiter's Blade
 				i(11782),	-- Boreal Mantle
-				i(22241),	-- Dark Warder's Pauldrons
+				un(PHASE_FIVE, i(22241)),	-- Dark Warder's Pauldrons
 				i(11783),	-- Chillsteel Girdle
 			}),
 			n(9476, {	-- Watchman Doomgrip
@@ -1018,16 +1004,16 @@ _.Instances = {
 						},
 					}),
 					o(161495, {	-- Secret Safe
-						["description"] = "This lootable chest spawns after defeating Watchman Doomgrip. Additionally, these items can also drop directly from the boss. It can only be looted by one person each run.",
+						["description"] = "This lootable chest spawns after defeating Watchman Doomgrip. It can only be looted by one person each run.\n\nWith Phase 1 of WoW Classic, the Secret Safe had a small loot table of 4 items that also dropped from the Chest of The Seven. This was changed in Phase 5.",
 						["groups"] = {
 							{
 								["itemID"] = 11309,	-- The Heart of the Mountain
 								["questID"] = 4123,	-- The Heart of the Mountain
 							},
-							i(22256),	-- Mana Shaping Handwraps
-							i(22205), 	-- Black Steel Bindings
-							i(22254), 	-- Wand of Eternal Light
-							i(22255),	-- Magma Forged Band
+							un(PHASE_FIVE, i(22256)),	-- Mana Shaping Handwraps
+							un(PHASE_FIVE, i(22205)), 	-- Black Steel Bindings
+							un(PHASE_FIVE, i(22254)), 	-- Wand of Eternal Light
+							un(PHASE_FIVE, i(22255)),	-- Magma Forged Band
 						},
 					}),
 				},
@@ -1089,7 +1075,7 @@ _.Instances = {
 					i(18044), 		-- Hurley's Tankard
 					i(11735), 		-- Ragefury Eyepatch
 					i(18043), 		-- Coal Miner Boots
-					i(22275), 		-- Firemoss Boots
+					un(PHASE_FIVE, i(22275)), 		-- Firemoss Boots
 				},
 			}),
 			n(9543, {	-- Ribbly Screwspigot
@@ -1121,41 +1107,41 @@ _.Instances = {
 					i(11744), 	-- Bloodfist
 					i(11743),	-- Rockfist
 					i(11746),	-- Golem Skull Helm
-					i(22212), 	-- Golem Fitted Pauldrons
+					un(PHASE_FIVE, i(22212)), 	-- Golem Fitted Pauldrons
 					i(11745), 	-- Fists of Phalanx
 				},
 			}),
 			n(12944, { 	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 				["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 				["groups"] = {
-					i(19449),	-- Formula: Enchant Weapon - Mighty Intellect
-					i(19448),	-- Formula: Enchant Weapon - Mighty Versatility
-					i(19444),	-- Formula: Enchant Weapon - Strength
+					un(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect
+					un(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Spirit
+					un(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength
 					i(17025),  	-- Pattern: Black Dragonscale Boots
-					i(19331),  	-- Pattern: Chromatic Gauntlets
-					i(19332), 	-- Pattern: Corehound Belt
+					un(PHASE_THREE, i(19331)),  	-- Pattern: Chromatic Gauntlets
+					un(PHASE_THREE, i(19332)), 	-- Pattern: Corehound Belt
 					i(17022),  	-- Pattern: Corehound Boots
 					i(17018),  	-- Pattern: Flarecore Gloves
-					i(19220),  	-- Pattern: Flarecore Leggings
+					un(PHASE_THREE, i(19220)),  	-- Pattern: Flarecore Leggings
 					i(17017),  	-- Pattern: Flarecore Mantle
-					i(19219),  	-- Pattern: Flarecore Robe
-					i(19330),  	-- Pattern: Lava Belt
-					i(19333),  	-- Pattern: Molten Belt
+					un(PHASE_THREE, i(19219)),  	-- Pattern: Flarecore Robe
+					un(PHASE_THREE, i(19330)),  	-- Pattern: Lava Belt
+					un(PHASE_THREE, i(19333)),  	-- Pattern: Molten Belt
 					i(17023),  	-- Pattern: Molten Helm
-					i(19208),  	-- Plans: Black Amnesty
-					i(19209),  	-- Plans: Blackfury
-					i(19211), 	-- Plans: Blackguard
-					i(20040),  	-- Plans: Dark Iron Boots
+					un(PHASE_THREE, i(19208)),  	-- Plans: Black Amnesty
+					un(PHASE_THREE, i(19209)),  	-- Plans: Blackfury
+					un(PHASE_THREE, i(19211)), 	-- Plans: Blackguard
+					un(PHASE_FOUR, i(20040)),  	-- Plans: Dark Iron Boots
 					i(17051),  	-- Plans: Dark Iron Bracers
 					i(17060),  	-- Plans: Dark Iron Destroyer
-					i(19207),  	-- Plans: Dark Iron Gauntlets
-					i(19206),  	-- Plans: Dark Iron Helm
+					un(PHASE_THREE, i(19207)),  	-- Plans: Dark Iron Gauntlets
+					un(PHASE_THREE, i(19206)),  	-- Plans: Dark Iron Helm
 					i(17052),  	-- Plans: Dark Iron Leggings
 					i(17059),  	-- Plans: Dark Iron Reaver
-					i(19210),  	-- Plans: Ebon Hand
+					un(PHASE_THREE, i(19210)),  	-- Plans: Ebon Hand
 					i(17049),  	-- Plans: Fiery Chain Girdle
 					i(17053),  	-- Plans: Fiery Chain Shoulders
-					i(19212),  	-- Plans: Nightfall
+					un(PHASE_THREE, i(19212)),  	-- Plans: Nightfall
 					un(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire
 				},
 			}),
@@ -1172,7 +1158,7 @@ _.Instances = {
 					i(11786),	-- Stone of the Earth
 					i(11785),	-- Rock Golem Bulwark
 					i(11787),	-- Shalehusk Boots
-					i(22245),	-- Soot Encrusted Footwear
+					un(PHASE_FIVE, i(22245)),	-- Soot Encrusted Footwear
 				},
 			}),
 			n(9039, {	-- Doom'rel
@@ -1189,12 +1175,12 @@ _.Instances = {
 				},
 			}),
 			n(9938, {	-- Magmus
-				i(22208), 	-- Lavastone Hammer
+				un(PHASE_FIVE, i(22208)), 	-- Lavastone Hammer
 				i(11935), 	-- Magmus Stone
 				i(11746), 	-- Golem Skull Helm
 				i(22275), 	-- Firemoss Boots
-				i(22400),	-- Libram of Truth
-				i(22395),	-- Totem of Rage
+				un(PHASE_FIVE, i(22400)),	-- Libram of Truth
+				un(PHASE_FIVE, i(22395)),	-- Totem of Rage
 			}),
 			n(8929, {	-- Princess Moira Bronzebeard <Princess of Ironforge>
 				i(12557),	-- Ebonsteel Spaulders
@@ -1210,8 +1196,8 @@ _.Instances = {
 				i(11933),	-- Imperial Jewel
 				i(11930), 	-- The Emperor's New Cape
 				i(11924), 	-- Robes of the Royal Crown
-				i(22204), 	-- Wristguards of Renown
-				i(22207), 	-- Sash of the Grand Hunt
+				un(PHASE_FIVE, i(22204)), 	-- Wristguards of Renown
+				un(PHASE_FIVE, i(22207)), 	-- Sash of the Grand Hunt
 				i(11934),	-- Emperor's Seal
 				i(11815),	-- Hand of Justice
 				i(12033),	-- Thaurissan Family Jewels

@@ -479,12 +479,12 @@ _.Instances = {
 					}),
 					n(10997, { 	-- Cannon Master Willey
 						i(12839),	-- Plans: Heartseeker
-						i(22406),	-- Redemption
-						i(22404),	-- Willey's Back Scratcher
+						un(PHASE_FIVE, i(22406)),	-- Redemption
+						un(PHASE_FIVE, i(22404)),	-- Willey's Back Scratcher
 						i(13380),	-- Willey's Portable Howitzer
-						i(22407),	-- Helm of the New Moon
-						i(22403),	-- Diana's Pearl Necklace
-						i(22405),	-- Mantle of the Scarlet Crusade
+						un(PHASE_FIVE, i(22407)),	-- Helm of the New Moon
+						un(PHASE_FIVE, i(22403)),	-- Diana's Pearl Necklace
+						un(PHASE_FIVE, i(22405)),	-- Mantle of the Scarlet Crusade
 						i(16708),	-- Shadowcraft Spaulders
 						i(18721),	-- Barrage Girdle
 						i(13381),	-- Master Cannoneer Boots
@@ -577,7 +577,7 @@ _.Instances = {
 							i(13376),	-- Royal Tribunal Cloak
 							i(18726),	-- Magistrate's Cuffs
 							i(18722),	-- Death Grips
-							i(23198),	-- Idol of Brutality
+							un(PHASE_SIX, i(23198)),	-- Idol of Brutality
 						},
 					}),
 					n(10809, {	-- Stonespine
@@ -673,16 +673,16 @@ _.Instances = {
 						i(13335),	-- Deathcharger's Reins (MOUNT!)
 						i(13505),	-- Runeblade of Baron Rivendare
 						i(13368),	-- Bonescraper
-						i(22408),	-- Ritssyn's Wand of Bad Mojo
+						un(PHASE_FIVE, i(22408)),	-- Ritssyn's Wand of Bad Mojo
 						i(13349),	-- Scepter of the Unholy
 						i(13361),	-- Skullforge Reaver
-						i(22411),	-- Helm of the Executioner
-						i(22412),	-- Thuzadin Mantle
+						un(PHASE_FIVE, i(22411)),	-- Helm of the Executioner
+						un(PHASE_FIVE, i(22412)),	-- Thuzadin Mantle
 						i(13340),	-- Cape of the Black Baron
 						i(13346),	-- Robes of the Exalted
-						i(22409),	-- Tunic of the Crescent Moon
+						un(PHASE_FIVE, i(22409)),	-- Tunic of the Crescent Moon
 						i(13344),	-- Dracorian Gauntlets
-						i(22410),	-- Gauntlets of Deftness
+						un(PHASE_FIVE, i(22410)),	-- Gauntlets of Deftness
 						i(16678),	-- Beaststalker's Pants
 						i(16694),	-- Devout Skirt
 						i(16699),	-- Dreadmist Leggings
