@@ -340,7 +340,7 @@ settings.CreateTab = function(self, text)
 	return tab;
 end
 settings.ShowCopyPasteDialog = function(self)
-	app:ShowPopupDialogWithEditBox(nil, self:GetText());
+	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self:GetText(), nil, 10);
 end
 
 settings.SetAccountMode = function(self, accountMode)

@@ -2712,17 +2712,79 @@ local classIcons = {
 	[11] = app.asset("ClassIcon_Druid"),
 };
 local SoftReserveUnitOnClick = function(self, button)
-	if button == "RightButton" then
-		app:ShowPopupDialog((self.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this entry?",
-		function()
-			local guid = self.ref.guid or self.ref.unit;
-			if guid then
-				app:UpdateSoftReserveInternal(guid, nil);
-				app:GetWindow("SoftReserves"):Update(true);
-			end
-		end);
+	if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+		app.print("You can't do that while the session is locked.");
 		return true;
 	end
+	local guid = self.ref.guid or self.ref.unit;
+	if guid then
+		if button == "RightButton" then
+			if self.ref.itemID then
+				if app.IsMasterLooter() then
+					-- Master Looters can do whatever they want.
+					app:ShowPopupDialog((self.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+					function()
+						if IsGUIDInGroup(guid) then
+							app:UpdateSoftReserve(guid, nil, time(), false, true);
+						else
+							app:UpdateSoftReserveInternal(guid, nil);
+						end
+						app:GetWindow("SoftReserves"):Update(true);
+					end);
+				elseif UnitGUID("player") == guid then
+					-- A player can change their own, so long as it isn't locked.
+					app:ShowPopupDialog("Your Soft Reserve is currently set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nDo you want to delete it?",
+					function()
+						app:UpdateSoftReserve(guid, nil, time(), false, true);
+						app:GetWindow("SoftReserves"):Update(true);
+					end);
+				elseif IsGUIDInGroup(guid) then
+					app.print("You must be the Master Looter to do that.");
+					return true;
+				end
+			end
+		elseif button == "LeftButton" then
+			if app.IsMasterLooter() then
+				-- Master Looters can do whatever they want.
+				if self.ref.itemID then
+					app:ShowPopupDialogWithEditBox((self.ref.unitText or RETRIEVING_DATA) .. " has their Soft Reserve set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
+						if cmd and cmd ~= "" then
+							app:ParseSoftReserve(guid, cmd);
+							app:GetWindow("SoftReserves"):Update(true);
+						end
+					end);
+				else
+					app:ShowPopupDialogWithEditBox((self.ref.unitText or RETRIEVING_DATA) .. " does not have a Soft Reserve.\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
+						if cmd and cmd ~= "" then
+							app:ParseSoftReserve(guid, cmd);
+							app:GetWindow("SoftReserves"):Update(true);
+						end
+					end);
+				end
+			elseif UnitGUID("player") == guid then
+				-- A player can change their own, so long as it isn't locked.
+				if self.ref.itemID then
+					app:ShowPopupDialogWithEditBox("Your Soft Reserve is set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
+						if cmd and cmd ~= "" then
+							app:ParseSoftReserve(UnitGUID("player"), cmd, true, true);
+							app:GetWindow("SoftReserves"):Update(true);
+						end
+					end);
+				else
+					app:ShowPopupDialogWithEditBox("You do not have a Soft Reserve yet.\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
+						if cmd and cmd ~= "" then
+							app:ParseSoftReserve(UnitGUID("player"), cmd, true, true);
+							app:GetWindow("SoftReserves"):Update(true);
+						end
+					end);
+				end
+			elseif IsGUIDInGroup(guid) then
+				app.print("You must be the Master Looter to do that.");
+				return true;
+			end
+		end
+	end
+	return true;
 end
 app.GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
@@ -2823,21 +2885,22 @@ app.BaseSoftReserveUnit = {
 				return name;
 			end
 			return t.unit;
+		elseif key == "itemText" then
+			local itemID = t.itemID;
+			if itemID then
+				local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
+				if itemLink then
+					return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink;
+				else
+					return RETRIEVING_DATA;
+				end
+			else
+				return "No Soft Reserve Selected";
+			end
 		elseif key == "text" then
 			local name = t.unitText;
 			if name then
-				local itemID = t.itemID;
-				if itemID then
-					local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
-					if itemLink then
-						name = name .. " - " .. (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink;
-					else
-						name = name .. " - " .. RETRIEVING_DATA;
-					end
-				else
-					name = name .. " - No Soft Reserve Selected";
-				end
-				return name;
+				return name .. " - " .. t.itemText;
 			end
 			return t.unit;
 		elseif key == "name" then
@@ -3129,10 +3192,20 @@ app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCur
 			if itemID then
 				local searchResults = SearchForLink("itemid:" .. itemID);
 				if searchResults and #searchResults > 0 then
-					SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)), guid);
+					if guid ~= UnitGUID("player") then
+						SendGUIDWhisper("SR: Updated to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)), guid);
+					end
+					if app.IsMasterLooter() then
+						C_ChatInfo.SendAddonMessage("ATTC", "!\tsrml\t" .. guid .. "\t" .. itemID, app.GetGroupType());
+					end
 				end
 			else
-				SendGUIDWhisper("SR: Cleared.", guid);
+				if guid ~= UnitGUID("player") then
+					SendGUIDWhisper("SR: Cleared.", guid);
+				end
+				if app.IsMasterLooter() then
+					C_ChatInfo.SendAddonMessage("ATTC", "!\tsrml\t" .. guid .. "\t0", app.GetGroupType());
+				end
 			end
 		end
 	end
@@ -5581,11 +5654,14 @@ local function RowOnClick(self, button)
 				end
 				return true;
 			else
-			
 				-- Not at the Auction House
 				-- If this reference has a link, then attempt to preview the appearance or write to the chat window.
 				local link = reference.link or reference.silentLink;
-				if (link and HandleModifiedItemClick(link)) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+				if link then
+					if HandleModifiedItemClick(link) or ChatEdit_InsertLink(link or BuildSourceTextForChat(reference, 0)) then return true; end
+					local _, dialog = StaticPopup_Visible("ALL_THE_THINGS_EDITBOX");
+					if dialog then dialog.editBox:SetText(link); return true; end
+				end
 				if button == "LeftButton" then RefreshCollections(); end
 				return true;
 			end
@@ -8341,13 +8417,13 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['visible'] = true,
 					['g'] = {},
 					['OnUpdate'] = function(data)
-						data.visible = #data.g > 0;
+						data.visible = #data.g > 0 and not app.Settings:GetTooltipSetting("SoftReservesLocked");
 					end,
 					['back'] = 0.5,
 				},
 				['pushGroupMembers'] = {
 					['text'] = "Push List to Group Members",
-					['icon'] = "Interface\\Icons\\INV_Wand_04",
+					['icon'] = "Interface\\Icons\\INV_Wand_06",
 					['description'] = "Press this button to send an addon message to your group containing all of the Soft Reserves in this session.",
 					['visible'] = true,
 					['g'] = {},
@@ -8366,7 +8442,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				},
 				['pushSoftReserve'] = {
 					['text'] = "Push Soft Reserve",
-					['icon'] = "Interface\\Icons\\INV_Wand_04",
+					['icon'] = "Interface\\Icons\\INV_Wand_06",
 					['description'] = "Press this button to send an addon message containing your Soft Reserve to your group or guild.",
 					['visible'] = true,
 					['g'] = {},
@@ -8375,7 +8451,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						if app.IsMasterLooter() then
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") or app.IsMasterLooter() then
 							data.visible = false;
 						else
 							data.visible = true;
@@ -9770,7 +9846,14 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 								app:UpdateSoftReserveInternal(args[i], tonumber(args[i + 1]));
 							end
 							app:GetWindow("SoftReserves"):Update(true);
-							app.print("Synchronized with the Master Looter.");
+						end
+					elseif a == "srlock" then
+						if target == UnitName("player") then
+							return false;
+						else
+							app.Settings:SetTooltipSetting("SoftReservesLocked", tonumber(args[3]) == 1);
+							wipe(searchCache);
+							app:GetWindow("SoftReserves"):Update(true);
 						end
 					end
 				end

@@ -98,20 +98,20 @@ function app:ShowPopupDialog(msg, callback)
 	StaticPopup_Hide ("ALL_THE_THINGS");
 	StaticPopup_Show ("ALL_THE_THINGS");
 end
-function app:ShowPopupDialogWithEditBox(msg, text, callback)
+function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	local popup = StaticPopupDialogs["ALL_THE_THINGS_EDITBOX"];
 	if not popup then
 		popup = {
 			button1 = "Okay",
-			timeout = 10,
+			timeout = timeout,
 			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,
 			enterClicksFirstButton = true,
 			hasEditBox = true,
 			OnAccept = function(self)
-				if self.callback then
-					self.callback(self.editBox:GetText());
+				if popup.callback then
+					popup.callback(self.editBox:GetText());
 				end
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
@@ -123,7 +123,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback)
 		self.editBox:SetJustifyH("CENTER");
 		self.editBox:SetWidth(240);
 	end;
-	popup.text = msg or "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
+	popup.text = msg or "";
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
