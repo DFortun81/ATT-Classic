@@ -2882,6 +2882,35 @@ app.BaseSoftReserveUnit = {
 app.CreateSoftReserveUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
 end
+app.GetGroupType = function()
+	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
+		return "INSTANCE_CHAT";
+	elseif IsInRaid() then
+		return "RAID";
+	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
+		return "PARTY";
+	end
+	return "RAID";
+end
+app.IsMasterLooter = function()
+	return app.IsUnitMasterLooter(UnitName("player"));
+end
+app.IsUnitMasterLooter = function(name)
+	if IsInGroup() then
+		-- Ensure that the player is the master looter.
+		local lootMethod, partyIndex, raidIndex = GetLootMethod();
+		if lootMethod == "master" then
+			if raidIndex then
+				return name == GetRaidRosterInfo(raidIndex);
+			elseif partyIndex == 0 then
+				-- Player is the Master Looter
+				return name == UnitName("player");
+			else
+				return name == UnitName("party" .. partyIndex);
+			end
+		end
+	end
+end
 app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
@@ -2910,6 +2939,47 @@ app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
+app.PushSoftReserve = function(ignoreZero)
+	local guid, itemID, timeStamp = UnitGUID("player");
+	local reserves = GetDataMember("SoftReserves");
+	if reserves then
+		local oldreserve = reserves[guid];
+		if oldreserve then
+			itemID = oldreserve[1];
+			timeStamp = oldreserve[2];
+		end
+	end
+	if itemID or not ignoreZero then
+		itemID = "!\tsr\t" .. guid .. "\t" .. (itemID or 0);
+		if timeStamp then itemID = itemID .. "\t" .. timeStamp; end
+		SendGuildMessage(itemID);
+		if IsInGroup() then SendGroupMessage(itemID); end
+	end
+end
+app.PushSoftReserves = function(method, target)
+	local reserves = GetDataMember("SoftReserves");
+	if reserves then
+		local count, length, msg, s = 7, 0, "!\tsrml";
+		if not method then method = app.GetGroupType(); end
+		for gu,reserve in pairs(reserves) do
+			if gu and IsGUIDInGroup(gu) then
+				s = "\t" .. gu .. "\t" .. reserve[1];
+				length = string.len(s);
+				if count + length >= 255 then
+					C_ChatInfo.SendAddonMessage("ATTC", msg, method, target);
+					count = 7;
+					msg = "!\tsrml";
+				else
+					count = count + length;
+					msg = msg .. s;
+				end
+			end
+		end
+		if count > 5 then
+			C_ChatInfo.SendAddonMessage("ATTC", msg, method, target);
+		end
+	end
+end
 app.QuerySoftReserve = function(app, guid, cmd, target)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
@@ -2919,45 +2989,9 @@ app.QuerySoftReserve = function(app, guid, cmd, target)
 			cmd = strsub(cmd, 4):match("^%s*(.+)$");
 			all = true;
 		elseif cmd == "srml" then
-			if IsInGroup() then
-				-- If the requester is in the group, then you've gotta be the Master Looter to respond.
-				if IsGUIDInGroup(guid) then
-					local lootMethod, partyIndex, raidIndex = GetLootMethod();
-					if lootMethod == "master" then
-						local visible = true;
-						if raidIndex then
-							if UnitName("player") ~= GetRaidRosterInfo(raidIndex) then
-								return true;
-							end
-						elseif partyIndex ~= 0 then
-							if UnitName("player") ~= UnitName("party" .. partyIndex) then
-								return true;
-							end
-						end
-					end
-				end
-				
-				local reserves = GetDataMember("SoftReserves");
-				if reserves then
-					local count, length, msg, s = 7, 0, "!\tsrml";
-					for gu,reserve in pairs(reserves) do
-						if gu and IsGUIDInGroup(gu) then
-							s = "\t" .. gu .. "\t" .. reserve[1];
-							length = string.len(s);
-							if count + length >= 255 then
-								C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", target);
-								count = 7;
-								msg = "!\tsrml";
-							else
-								count = count + length;
-								msg = msg .. s;
-							end
-						end
-					end
-					if count > 5 then
-						C_ChatInfo.SendAddonMessage("ATTC", msg, "WHISPER", target);
-					end
-				end
+			if app.IsMasterLooter() then
+				-- Push the Soft Reserve List to the target.
+				app.PushSoftReserves("WHISPER", target);
 			end
 			return true;
 		end
@@ -3063,7 +3097,8 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp, isCurrent
 	-- Update the Reservation
 	wipe(searchCache);
 	if itemID and itemID > 0 then
-		reserves[guid] = { itemID, timeStamp or time() };
+		if not timeStamp then timeStamp = time(); end
+		reserves[guid] = { itemID, timeStamp };
 		local reservesForItem = reservesByItemID[itemID];
 		if not reservesForItem then
 			reservesForItem = {};
@@ -6903,6 +6938,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 							end
 						end
 						SetDataMember("AddonMessageProcessor", unprocessedMessages);
+						
 					end
 				end,
 				['g'] = {},
@@ -8202,6 +8238,8 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					table.insert(g, 1, data.queryMasterLooter);
 					table.insert(g, 1, data.queryGuildMembers);
 					table.insert(g, 1, data.queryGroupMembers);
+					table.insert(g, 1, data.pushSoftReserve);
+					table.insert(g, 1, data.pushGroupMembers);
 					table.insert(g, 1, data.lockSoftReserves);
 					table.insert(g, 1, data.lootMethodReminder);
 					data.g = g;
@@ -8225,19 +8263,43 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['lockSoftReserves'] = setmetatable({
 					['text'] = "Lock All Soft Reserves",
 					['icon'] = "Interface\\Icons\\INV_MISC_KEY_13",
-					['description'] = "Click to toggle locking the Soft Reserves. You must click this again to turn it back off.",
+					['description_ML'] = "Click to toggle locking the Soft Reserves. You must click this again to turn it back off.",
+					['description_PLEB'] = "Your Master Looter controls whether the Soft Reserve list is locked or not.",
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						local locked = not app.Settings:GetTooltipSetting("SoftReservesLocked");
-						app.Settings:SetTooltipSetting("SoftReservesLocked", locked);
-						SendGroupChatMessage(locked and "Soft Reserves locked." or "Soft Reserves unlocked.");
-						if locked then Screenshot(); end
-						wipe(searchCache);
-						self:Update();
-						return true;
+						if app.IsMasterLooter() then
+							local locked = not app.Settings:GetTooltipSetting("SoftReservesLocked");
+							if locked then app.PushSoftReserves(); end
+							SendGroupMessage("!\tsrlock\t" .. (locked and 1 or 0));
+							app.Settings:SetTooltipSetting("SoftReservesLocked", locked);
+							SendGroupChatMessage(locked and "Soft Reserves locked." or "Soft Reserves unlocked.");
+							wipe(searchCache);
+							self:Update();
+							return true;
+						else
+							app.print("You must be the Master Looter to lock the soft reserves.");
+						end
 					end,
 					['OnUpdate'] = function(data)
-						data.visible = not IsInGroup() or UnitIsGroupLeader("player");
+						if IsInGroup() and GetLootMethod() == "master" then
+							data.visible = true;
+							if app.IsMasterLooter() then
+								data.description = data.description_ML;
+							else
+								data.description = data.description_PLEB;
+							end
+						else
+							data.visible = false;
+							
+							-- Automatically unlock when not in a group.
+							local locked = app.Settings:GetTooltipSetting("SoftReservesLocked");
+							if locked then
+								app.Settings:SetTooltipSetting("SoftReservesLocked", false);
+								wipe(searchCache);
+								self:Update();
+								return true;
+							end
+						end
 					end,
 				}, {
 					__index = function(t, key)
@@ -8275,11 +8337,49 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['nonGroupMembersHeader'] = {
 					['text'] = "Non-Group Members",
 					['icon'] = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
-					['description'] = "These are players that have Soft Reserved something in your raid, but are not currently in your raid.",
+					['description'] = "These are players that have Soft Reserved something in your raid, but are not currently in your group.",
 					['visible'] = true,
 					['g'] = {},
 					['OnUpdate'] = function(data)
 						data.visible = #data.g > 0;
+					end,
+					['back'] = 0.5,
+				},
+				['pushGroupMembers'] = {
+					['text'] = "Push List to Group Members",
+					['icon'] = "Interface\\Icons\\INV_Wand_04",
+					['description'] = "Press this button to send an addon message to your group containing all of the Soft Reserves in this session.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						app.PushSoftReserves();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						if app.IsMasterLooter() then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
+					end,
+					['back'] = 0.5,
+				},
+				['pushSoftReserve'] = {
+					['text'] = "Push Soft Reserve",
+					['icon'] = "Interface\\Icons\\INV_Wand_04",
+					['description'] = "Press this button to send an addon message containing your Soft Reserve to your group or guild.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						app.PushSoftReserve();
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						if app.IsMasterLooter() then
+							data.visible = false;
+						else
+							data.visible = true;
+						end
 					end,
 					['back'] = 0.5,
 				},
@@ -8295,7 +8395,13 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						data.visible = IsInGroup() and not app.Settings:GetTooltipSetting("SoftReservesLocked");
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+							data.visible = false;
+						elseif app.IsMasterLooter() then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
 					end,
 					['back'] = 0.5,
 				},
@@ -8311,7 +8417,13 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						data.visible = not app.Settings:GetTooltipSetting("SoftReservesLocked");
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+							data.visible = false;
+						elseif not IsInGroup() or app.IsMasterLooter() then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
 					end,
 					['back'] = 0.5,
 				},
@@ -8328,21 +8440,10 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						return true;
 					end,
 					['OnUpdate'] = function(data)
-						if IsInGroup() then
-							local lootMethod, partyIndex, raidIndex = GetLootMethod();
-							if lootMethod == "master" then
-								if raidIndex then
-									data.visible = UnitName("player") ~= GetRaidRosterInfo(raidIndex);
-								elseif partyIndex == 0 then
-									data.visible = false;
-								else
-									data.visible = UnitName("player") ~= UnitName("party" .. partyIndex);
-								end
-							else
-								data.visible = false;
-							end
-						else
+						if not IsInGroup() or GetLootMethod() ~= "master" or app.IsMasterLooter() then
 							data.visible = false;
+						else
+							data.visible = true;
 						end
 					end,
 					['back'] = 0.5,
@@ -8359,8 +8460,8 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 			-- Setup Event Handlers and register for events
 			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
-			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
+			self:RegisterEvent("PARTY_LOOT_METHOD_CHANGED");
 			self:Reset();
 		end
 		
@@ -8905,6 +9006,7 @@ app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("ZONE_CHANGED");
 app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
+app:RegisterEvent("PARTY_LOOT_METHOD_CHANGED");
 
 -- Define Event Behaviours
 app.events.VARIABLES_LOADED = function()
@@ -9127,6 +9229,7 @@ app.events.VARIABLES_LOADED = function()
 	-- Tooltip Settings
 	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
 	GetDataMember("TomTomIgnoreCompletedObjects", true);
+	app.PushSoftReserve(true);
 	app.Settings:Initialize();
 	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 end
@@ -9660,10 +9763,15 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 					elseif a == "sr" then
 						app:UpdateSoftReserve(args[3], tonumber(args[4]), tonumber(args[5]), true);
 					elseif a == "srml" then
-						for i=3,#args,2 do
-							app:UpdateSoftReserveInternal(args[i], tonumber(args[i + 1]));
+						if target == UnitName("player") then
+							return false;
+						else
+							for i=3,#args,2 do
+								app:UpdateSoftReserveInternal(args[i], tonumber(args[i + 1]));
+							end
+							app:GetWindow("SoftReserves"):Update(true);
+							app.print("Synchronized with the Master Looter.");
 						end
-						app:GetWindow("SoftReserves"):Update(true);
 					end
 				end
 			elseif cmd == "to" then	-- To Command
@@ -9711,6 +9819,11 @@ app.events.CHAT_MSG_WHISPER = function(text, playerName, _, _, _, _, _, _, _, _,
 			end
 			app:QuerySoftReserve(guid, strsub(text, 4));
 		end
+	end
+end
+app.events.PARTY_LOOT_METHOD_CHANGED = function()
+	if GetLootMethod() == "master" then
+		app.PushSoftReserve();
 	end
 end
 app.events.PLAYER_LEVEL_UP = function(newLevel)
