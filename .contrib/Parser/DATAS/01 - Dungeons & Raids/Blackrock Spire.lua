@@ -995,7 +995,7 @@ _.Instances = {
 							["requireSkill"] = 9788,	-- Armorsmith
 						},
 						i(13258),	-- Slaghide Gauntlets
-						i(22232),	-- Marksman's Girdle
+						un(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
 						i(16670),	-- Boots of Elements
 						i(13259),	-- Ribsteel Footguards
 						i(13178),	-- Rosewine Circle
@@ -1032,7 +1032,7 @@ _.Instances = {
 				}),
 				n(10220, {	-- Halycon
 					i(13212),	-- Halcyon's Spiked Collar
-					i(22313),	-- Ironweave Bracers
+					un(PHASE_FIVE, i(22313)),	-- Ironweave Bracers
 					i(13211),	-- Slashclaw Bracers
 					i(13210),	-- Pads of the Dread Wolf
 				}),
@@ -1070,7 +1070,7 @@ _.Instances = {
 					i(16679),	-- Beaststalker's Mantle
 					i(13143),	-- Mark of the Dragon Lord
 					i(13164),	-- Heart of the Scale
-					i(22321),	-- Heart of Wyrmthalak
+					un(PHASE_FIVE, i(22321)),	-- Heart of Wyrmthalak
 				}),
 			}),
 			n(-28, {	-- Upper
@@ -1093,7 +1093,7 @@ _.Instances = {
 						i(12927),	-- Truestrike Shoulders
 						i(16672),	-- Gauntlets of Elements
 						i(12926),	-- Flaming Band
-						i(23320),	-- Tablet of Flame Shock VI
+						un(PHASE_SIX, i(23320)),	-- Tablet of Flame Shock VI
 					}),
 					n(10264, { 	-- Solakar Flamewreath
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
@@ -1162,7 +1162,7 @@ _.Instances = {
 						i(13522),	-- Recipe: Flask of Chromatic Resistance
 						i(12871),	-- Chromatic Carapace
 						i(12953),	-- Dragoneye Coif
-						i(22225), 	-- Dragonskin Cowl
+						un(PHASE_FIVE, i(22225)), 	-- Dragonskin Cowl
 						i(12952),	-- Gyth's Skull
 						i(12960),	-- Tribal War Feathers
 						i(16669), 	-- Pauldrons of Elements
@@ -1184,11 +1184,11 @@ _.Instances = {
 						i(18104),	-- Feralsurge Girdle
 						i(12935),	-- Warmaster Legguards
 						i(18102),	-- Dragonrider Boots
-						i(22247),	-- Faith Healer's Boots
+						un(PHASE_FIVE, i(22247)),	-- Faith Healer's Boots
 						i(18103),	-- Band of Rumination
 					}),
 					n(10430, { 	-- The Beast
-						i(24101),	-- Book of Ferocious Bite V
+						un(PHASE_SIX, i(24101)),	-- Book of Ferocious Bite V
 						i(12709),	-- Finkle's Skinner
 						i(12969), 	-- Seeping Willow
 						i(12967),	-- Bloodmoon Cloak
@@ -1198,7 +1198,7 @@ _.Instances = {
 						i(12963),	-- Blademaster Leggings
 						i(12965),	-- Spiritshroud Leggings
 						i(12964),	-- Tristam Legguards
-						i(22311),	-- Ironweave Boots
+						un(PHASE_FIVE, i(22311)),	-- Ironweave Boots
 						un(PHASE_THREE, i(19227)),	-- Ace of Beasts
 						prof(SKINNING, {
 							["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Finkle's Skinner.",
@@ -1234,8 +1234,8 @@ _.Instances = {
 						i(13519),	-- Recipe: Flask of the Titans
 						i(12592),	-- Blackblade of Shahram
 						i(12602),	-- Draconian Deflector
-						i(22253),	-- Tome of the Lost
-						i(22267),	-- Spellweaver's Turban
+						un(PHASE_FIVE, i(22253)),	-- Tome of the Lost
+						un(PHASE_FIVE, i(22267)),	-- Spellweaver's Turban
 						i(13141),	-- Tooth of Gnarr
 						i(16674),	-- Beaststalker's Tunic
 						i(16730),	-- Breastplate of Valor
@@ -1246,10 +1246,10 @@ _.Instances = {
 						i(16721),	-- Shadowcraft Tunic
 						i(16666),	-- Vest of Elements
 						i(16706),	-- Wildheart Vest
-						i(22269),	-- Shadow Prowler's Cloak
+						un(PHASE_FIVE, i(22269)),	-- Shadow Prowler's Cloak
 						i(13142),	-- Brigam Girdle
 						i(13098),	-- Painweaver Band
-						i(22268),	-- Draconic Infused Emblem
+						un(PHASE_FIVE, i(22268)),	-- Draconic Infused Emblem
 					}),
 				},
 			}),
