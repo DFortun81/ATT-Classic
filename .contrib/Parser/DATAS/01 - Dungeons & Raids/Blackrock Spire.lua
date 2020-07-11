@@ -1199,7 +1199,7 @@ _.Instances = {
 						i(12965),	-- Spiritshroud Leggings
 						i(12964),	-- Tristam Legguards
 						i(22311),	-- Ironweave Boots
-						i(19227),	-- Ace of Beasts
+						un(PHASE_THREE, i(19227)),	-- Ace of Beasts
 						prof(SKINNING, {
 							["description"] = "You must have 315 Skinning skill. This can only be accomplished with the Zulian Slicer or Finkle's Skinner.",
 							["groups"] = {

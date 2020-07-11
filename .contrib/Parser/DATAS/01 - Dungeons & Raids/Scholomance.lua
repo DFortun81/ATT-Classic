@@ -503,11 +503,14 @@ _.Instances = {
 					i(13967),	-- Windreaver Greaves
 				},
 			}),
-			n(14695, {	-- Lord Blackwood
-				i(23156),	-- Blackwood's Thigh
-				i(23132),	-- Lord Blackwood's Blade
-				i(23139),	-- Lord Blackwood's Buckler
-			}),
+			un(PHASE_SIX, n(14695, {	-- Lord Blackwood
+				["description"] = "Only available during the Scourge Invasion.",
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+					i(23156),	-- Blackwood's Thigh
+					i(23132),	-- Lord Blackwood's Blade
+					i(23139),	-- Lord Blackwood's Buckler
+				}),
+			})),
 			{
 				["itemID"] = 13451,	-- The Deed to Tarren Mill
 				["allianceQuestID"] = 5343,	-- Barov Family Fortune
@@ -533,7 +536,7 @@ _.Instances = {
 					},
 				}),
 				i(14541),	-- Barovian Family Sword
-				i(22394),	-- Staff of Metanoia
+				un(PHASE_FIVE, i(22394)),	-- Staff of Metanoia
 				i(18689),	-- Phantasmal Cloak
 				i(16701),	-- Dreadmist Mantle
 				i(14548),	-- Royal Cap Spaulders
@@ -683,8 +686,8 @@ _.Instances = {
 					i(14632),	-- Necropile Leggings
 					i(14631),	-- Necropile Boots
 					i(18684),	-- Dimly Opalescent Ring
-					i(23201),	-- Libram of Divinity
-					i(23200),	-- Totem of Sustaining
+					un(PHASE_SIX, i(23201)),	-- Libram of Divinity
+					un(PHASE_SIX, i(23200)),	-- Totem of Sustaining
 				},
 			}),
 			n(10505, {	-- Instructor Malicia
@@ -735,8 +738,8 @@ _.Instances = {
 					i(13951),	-- Vigorsteel Vambraces
 					i(13950),	-- Detention Strap
 					i(13398),	-- Boots of the Shrieker
-					i(22433),	-- Don Mauricio's Band of Domination
-					i(19276),	-- Ace of Portals
+					un(PHASE_FIVE, i(22433)),	-- Don Mauricio's Band of Domination
+					un(PHASE_THREE, i(19276)),	-- Ace of Portals
 				},
 			}),
 		},

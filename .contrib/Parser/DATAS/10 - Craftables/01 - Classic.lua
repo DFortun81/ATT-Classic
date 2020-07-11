@@ -657,7 +657,7 @@ _.Craftables =
 	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags
-			i(22249),	-- Big Bag of Enchantment
+			un(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
 			un(PHASE_FIVE, i(22251)),	-- Cenarion Herb Bag

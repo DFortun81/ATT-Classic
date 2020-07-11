@@ -622,7 +622,7 @@ _.Instances = {
 						i(18305),	-- Breakwater Legguards
 						i(18307),	-- Riptide Shoes
 						i(18322),	-- Waterspout Boots
-						i(19268),	-- Ace of Elementals
+						un(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					}),
 					n(11490, {	-- Zevrim Thornhoof
 						i(18323),	-- Satyr's Bow
@@ -781,7 +781,7 @@ _.Instances = {
 						i(18524),	-- Leggings of Destruction
 						i(18521),	-- Grimy Metal Boots
 						i(18522),	-- Band of the Ogre King
-						i(19258),	-- Ace of Warlords
+						un(PHASE_THREE, i(19258)),	-- Ace of Warlords
 					}),
 					n(14353, {	-- Mizzle the Crafty
 						["description"] = "Speak with Mizzle after killing |cFFFFD700King Gordok|r to spawn the Tribute Chest.",
@@ -892,7 +892,7 @@ _.Instances = {
 						}),
 					}),
 					n(11487, {	-- Magister Kalendris
-						i(22309),	-- Pattern: Big Bag of Enchantment
+						un(PHASE_FIVE, i(22309)),	-- Pattern: Big Bag of Enchantment
 						i(18397),	-- Elder Magus Pendant
 						i(18374),	-- Flamescarred Shoulders
 						i(18350),	-- Amplifying Cloak

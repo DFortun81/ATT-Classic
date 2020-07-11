@@ -82,7 +82,7 @@ _.Zones =
 						i(18676),	-- Sash of the Windreaver
 						i(18677),	-- Zephyr Cloak
 						i(21548),	-- Pattern: Stormshroud Gloves
-						i(19268),	-- Ace of Elementals
+						un(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
 				}),
 				n(14474, {	-- Zora

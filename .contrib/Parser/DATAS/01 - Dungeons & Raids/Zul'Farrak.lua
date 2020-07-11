@@ -211,7 +211,7 @@ _.Instances = {
 			n(10081, {	-- Dustwraith
 				["description"] = "This is a rare that is not always present.",
 				["groups"] = {
-					i(12471),	-- Desertwalker Cane
+					un(PHASE_FIVE, i(12471)),	-- Desertwalker Cane
 				},
 			}),
 			n(7796, {	-- Nekrum Gutchewer

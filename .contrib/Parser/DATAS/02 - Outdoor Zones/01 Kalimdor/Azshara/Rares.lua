@@ -31,7 +31,7 @@ _.Zones =
 					["groups"] = {
 						i(18673),	-- Avalanchion's Stony Hide
 						i(18674),	-- Hardened Stone Band
-						i(19268),	-- Ace of Elementals
+						un(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
 				}),
 				n(6651, {	-- Gatekeeper Rageroar

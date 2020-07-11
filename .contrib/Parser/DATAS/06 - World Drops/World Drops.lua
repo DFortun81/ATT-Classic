@@ -2640,37 +2640,37 @@ _.WorldDrops =
 		i(4500),	-- Traveler's Backpack
 	}),
 	n(QUESTS, {
-		i(19230),	-- Two of Beasts
-		i(19231),	-- Three of Beasts
-		i(19232),	-- Four of Beasts
-		i(19233),	-- Five of Beasts
-		i(19234),	-- Six of Beasts
-		i(19235),	-- Seven of Beasts
-		i(19236),	-- Eight of Beasts
+		un(PHASE_THREE, i(19230)),	-- Two of Beasts
+		un(PHASE_THREE, i(19231)),	-- Three of Beasts
+		un(PHASE_THREE, i(19232)),	-- Four of Beasts
+		un(PHASE_THREE, i(19233)),	-- Five of Beasts
+		un(PHASE_THREE, i(19234)),	-- Six of Beasts
+		un(PHASE_THREE, i(19235)),	-- Seven of Beasts
+		un(PHASE_THREE, i(19236)),	-- Eight of Beasts
 
-		i(19259),	-- Two of Warlords
-		i(19260),	-- Three of Warlords
-		i(19261),	-- Four of Warlords
-		i(19262),	-- Five of Warlords
-		i(19263),	-- Six of Warlords
-		i(19264),	-- Seven of Warlords
-		i(19265),	-- Eight of Warlords
+		un(PHASE_THREE, i(19259)),	-- Two of Warlords
+		un(PHASE_THREE, i(19260)),	-- Three of Warlords
+		un(PHASE_THREE, i(19261)),	-- Four of Warlords
+		un(PHASE_THREE, i(19262)),	-- Five of Warlords
+		un(PHASE_THREE, i(19263)),	-- Six of Warlords
+		un(PHASE_THREE, i(19264)),	-- Seven of Warlords
+		un(PHASE_THREE, i(19265)),	-- Eight of Warlords
 
-		i(19269),	-- Two of Elementals
-		i(19270),	-- Three of Elementals
-		i(19271),	-- Four of Elementals
-		i(19272),	-- Five of Elementals
-		i(19273),	-- Six of Elementals
-		i(19274),	-- Seven of Elementals
-		i(19275),	-- Eight of Elementals
+		un(PHASE_THREE, i(19269)),	-- Two of Elementals
+		un(PHASE_THREE, i(19270)),	-- Three of Elementals
+		un(PHASE_THREE, i(19271)),	-- Four of Elementals
+		un(PHASE_THREE, i(19272)),	-- Five of Elementals
+		un(PHASE_THREE, i(19273)),	-- Six of Elementals
+		un(PHASE_THREE, i(19274)),	-- Seven of Elementals
+		un(PHASE_THREE, i(19275)),	-- Eight of Elementals
 
-		i(19278),	-- Two of Portals
-		i(19279),	-- Three of Portals
-		i(19280),	-- Four of Portals
-		i(19281),	-- Five of Portals
-		i(19282),	-- Six of Portals
-		i(19283),	-- Seven of Portals
-		i(19284),	-- Eight of Portals
+		un(PHASE_THREE, i(19278)),	-- Two of Portals
+		un(PHASE_THREE, i(19279)),	-- Three of Portals
+		un(PHASE_THREE, i(19280)),	-- Four of Portals
+		un(PHASE_THREE, i(19281)),	-- Five of Portals
+		un(PHASE_THREE, i(19282)),	-- Six of Portals
+		un(PHASE_THREE, i(19283)),	-- Seven of Portals
+		un(PHASE_THREE, i(19284)),	-- Eight of Portals
 	}),
 	filter(200, {	-- Recipes
 		cl(MAGE, {
@@ -2680,7 +2680,7 @@ _.WorldDrops =
 		cl(PRIEST, {
 			i(17413),	-- Codex: Prayer of Fortitude
 			i(17414),	-- Codex: Prayer of Fortitude II
-			un(PHASE_FOUR, i(22393)),	-- Codex: Prayer of Shadow Protection [Phase 5]
+			un(PHASE_FIVE, i(22393)),	-- Codex: Prayer of Shadow Protection [Phase 5]
 		}),
 		cl(WARLOCK, {
 			un(PHASE_SIX, i(22891)),	-- Grimoire of Shadow Ward IV [Phase 6]
@@ -2841,7 +2841,6 @@ _.WorldDrops =
 			i(7288),	-- Pattern: Rugged Leather Pants
 			i(7453),	-- Pattern: Swift Boots
 			i(15742),	-- Pattern: Warbear Harness
-			i(15754),	-- Pattern: Warbear Woolies
 			i(2407),	-- Pattern: White Leather Jerkin
 			i(15757),	-- Pattern: Wicked Leather Pants
 		}),

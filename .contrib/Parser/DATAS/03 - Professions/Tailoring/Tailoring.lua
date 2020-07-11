@@ -37,10 +37,10 @@ profession(TAILORING, {
 		["name"] = "Bags",
 		["categoryID"] = 59,
 		["g"] = {
-			{
+			un(PHASE_FIVE, {
 				["name"] = "Big Bag of Enchantment",
 				["recipeID"] = 27660,
-			},
+			}),
 			{
 				["name"] = "Black Silk Pack",
 				["recipeID"] = 6695

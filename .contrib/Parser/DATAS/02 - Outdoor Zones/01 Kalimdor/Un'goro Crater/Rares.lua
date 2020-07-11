@@ -21,7 +21,7 @@ _.Zones =
 					["groups"] = {
 						i(18671),	-- Baron Charr's Sceptre
 						i(18672),	-- Elemental Ember
-						i(19268),	-- Ace of Elementals
+						un(PHASE_THREE, i(19268)),	-- Ace of Elementals
 					},
 				}),
 				n(6582, {	-- Clutchmother Zavas
