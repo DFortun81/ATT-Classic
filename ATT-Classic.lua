@@ -8708,6 +8708,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								if response then tinsert(cache.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
 								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
 								if response then tinsert(cache.g, {text=TRANSMOG_SOURCE_4,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
+								if response then tinsert(cache.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
 							end
 							table.insert(g, cache);
 						end
