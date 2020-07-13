@@ -212,7 +212,6 @@ _.Zones =
 							["itemID"] = 737,	-- Holy Spring Water
 							["questID"] = 48,	-- Sweet Amber
 							["coord"] = { 28.9, 62.0, STRANGLETHORN_VALE },
-							["races"] = ALLIANCE_ONLY,
 						},
 					},
 				}),

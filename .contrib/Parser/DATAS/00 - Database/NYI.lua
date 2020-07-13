@@ -67,6 +67,9 @@ _.NeverImplemented =
 			{ "i", 6075, 1 },	-- Vimes's Report
 		},
 	}),
+
+	-- Desolace Quests
+	q(8458),	-- <UNUSED>
 	
 	-- Felwood Quests that were never added.
 	q(5208),	-- <NYI> <TXT> The Blessing of Evil

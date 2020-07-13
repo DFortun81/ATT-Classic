@@ -335,6 +335,20 @@ _.Zones =
 						i(15102),	-- Un'Goro Tested Sample
 					},
 				}),
+				q(1882, {	-- The Balnir Farmstead
+					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
+					["sourceQuests"] = {
+						1881,	-- Speak with Anastasia
+						1883,	-- Speak with Un'thuwa
+					},
+					["coord"] = { 85.0, 10.2, UNDERCITY },
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["lvl"] = 10,
+					["cost"] = {
+						{ "i", 7227, 1 },	-- Balnir Snapdragons
+					},
+				}),
 				q(1471, {	-- The Binding (Voidwalker)
 					["lvl"] = 10,
 					["races"] = { UNDEAD },

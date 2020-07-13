@@ -354,6 +354,17 @@ _.Zones =
 						i(11850),	-- Short Duskbat Cape
 					},
 				}),
+				q(1881, {	-- Speak with Anastasia
+					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
+					["coord"] = { 61.8, 52.4, TIRISFAL_GLADES },
+					["isBreadcrumb"] = true,
+					["races"] = { UNDEAD, TROLL },
+					["classes"] = { MAGE },
+					["lvl"] = 10,
+					["altQuests"] = {
+						1883,	-- Speak with Un'thuwa
+					},
+				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["sourceQuest"] = 1819,	-- Ulag the Cleaver

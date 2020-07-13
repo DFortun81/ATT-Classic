@@ -592,11 +592,14 @@ _.Zones =
 					},
 					["coords"] = {
 						{ 39, 86, ORGRIMMAR },
-						{ 25, 20.6, THUNDER_BLUUF },
+						{ 25, 20.6, THUNDER_BLUFF },
 					},
-					["maps"] = { ORGRIMMAR, THUNDER_BLUUF },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
+					["altQuests"] = {
+						1881,	-- Speak with Anastasia
+					},
 				}),
 				q(789, {	-- Sting of the Scorpid
 					["qg"] = 3143,	-- Gornek

@@ -168,7 +168,6 @@ _.Zones =
 				}),
 				q(663, {	-- Land Ho!
 					["lvl"] = 35,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2766,	-- Lolo the Lookout
 				}),
 				q(647, {	-- MacKreel's Moonshine
