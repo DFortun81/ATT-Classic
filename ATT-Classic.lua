@@ -3353,7 +3353,7 @@ app.CreateDeathClass = function()
 			local characterDeaths = {};
 			for guid,deaths in pairs(deathsPerCharacter) do
 				if deaths > 0 then
-					table.insert(characterDeaths, {"  " .. characters[guid], deaths});
+					table.insert(characterDeaths, {"  " .. (characters[guid] or guid), deaths or 0});
 				end
 			end
 			table.sort(characterDeaths, function(a, b)
