@@ -115,7 +115,6 @@ _.Zones =
 				q(2259, {	-- Erion Shadewhisper
 					["qg"] = 3599,	-- Jannok Breezesong
 					["sourceQuest"] = 2241,	-- The Apple Falls
-					["description"] = "In Darnassus, enter the base of the tree at 32.7, 16.3 to turn in the quest.",
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -229,8 +228,17 @@ _.Zones =
 					["qg"] = 2080,	-- Denalan
 					["sourceQuest"] = 2498,	-- Return to Denalan
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8136, 1 },	-- Gargantuan Tumor
+					},
 					["lvl"] = 4,
 					["groups"] = {
+						{
+							["itemID"] = 8136,	-- Gargantuan Tumor
+							["questID"] = 2499,	-- Oakenscowl
+							["cr"] = 2166,	-- Oakenscowl
+							["coord"] = { 53.6, 75.0, TELDRASSIL },
+						},
 						i(5458),	-- Dirtwood Belt
 						i(5589),	-- Moss-covered Gauntlets
 					},
@@ -239,6 +247,9 @@ _.Zones =
 					["qg"] = 2080,	-- Denalan
 					["sourceQuest"] = 927,	-- The Moss-twined Heart
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5217, 1 },	-- Tainted Heart
+					},
 					["lvl"] = 9,
 					["groups"] = {
 						i(5218),	-- Cleansed Timberling Heart
@@ -325,10 +336,10 @@ _.Zones =
 					["coord"] = { 56.4, 60.1, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
-					["lvl"] = 10,
-					["altQuests"] = {
-						2205,	-- Seek out SI:7
+					["cost"] = {
+						{ "i", 7735, 1 },	-- Jannok's Rose
 					},
+					["lvl"] = 10,
 				}),
 				q(456, {	-- The Balance of Nature
 					["qg"] = 2079,	-- Conservator Ilthalaine

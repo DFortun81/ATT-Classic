@@ -359,9 +359,6 @@ _.Zones =
 				}),
 				q(2218, {	-- Road to Salvation
 					["qg"] = 1234,	-- Hogral Bakkan
-					["altQuests"] = {
-						2241,	-- The Apple Falls
-					},
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
@@ -672,7 +669,6 @@ _.Zones =
 					["sourceQuest"] = 2218,	-- Road to Salvation
 					["altQuests"] = {
 						2205,	-- Seek out SI:7
-						2241,	-- The Apple Falls
 					},
 					["coord"] = { 47.6, 52.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,

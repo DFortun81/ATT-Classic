@@ -68,24 +68,34 @@ _.Zones =
 					},
 				},
 				q(2242, {	-- Destiny Calls
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls
-					["g"] = {
-						i(7298),	-- Blade of Cunning
-					},
 					["coord"] = { 37.0, 21.9, DARNASSUS },
-					["description"] = "Enter the base of the tree at 32.7, 16.3 to get to the quest giver.",
-				}),
-				q(2260, {	-- Erion's Behest
-					["lvl"] = 16,
+					["maps"] = { TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 7737, 1 },	-- Sethir's Journal
+					},
+					["lvl"] = 10,
+					["g"] = {
+						{
+							["itemID"] = 7737,	-- Sethir's Journal
+							["questID"] = 2242,	-- Destiny Calls
+							["cr"] = 6909,	-- Sethir the Ancient
+							["description"] = "This item can only be pickpocketed.",
+							["coord"] = { 37.6, 22.2, TELDRASSIL },
+						},
+						i(7298),	-- Blade of Cunning
+					},
+				}),
+				q(2260, {	-- Erion's Behest
 					["qg"] = 4214,	-- Erion Shadewhisper
 					["sourceQuest"] = 2259,	-- Erion Shadewhisper
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
+					["lvl"] = 16,
 				}),
 				q(952, {	-- Grove of the Ancients
 					["qg"] = 3516,	-- Arch Druid Fandral Staghelm
@@ -137,10 +147,14 @@ _.Zones =
 					["sourceQuest"] = 923,	-- Tumors
 				}),
 				q(2520, {	-- Sathrah's Sacrifice
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 1150,	-- Tears of the Moon
+					["coord"] = { 36.4, 86, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8155, 1 },	-- Sathrah's Sacrifice
+					},
+					["lvl"] = 5,
 					["g"] = {
 						i(9600),	-- Lace Pants
 						i(9601),	-- Cushioned Boots
@@ -174,11 +188,27 @@ _.Zones =
 					},
 				}),
 				q(2518, {	-- Tears of the Moon
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2519,	-- The Temple of the Moon
+					["coord"] = { 36.4, 86, DARNASSUS },
 					["maps"] = { TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8344, 1 },	-- Silvery Spinnerets
+					},
+					["lvl"] = 5,
+					["groups"] = {
+						{
+							["itemID"] = 8344,	-- Silvery Spinnerets
+							["questID"] = 2518,	-- Tears of the Moon
+							["cr"] = 7319,	-- Lady Sathrah
+							["coords"] = {
+								{ 38.8, 26.0, TELDRASSIL },
+								{ 42.0, 25.6, TELDRASSIL },
+								{ 48.0, 25.6, TELDRASSIL },
+							},
+						},
+					},
 				}),
 				q(942, {	-- The Absent Minded Prospector (4/5)
 					["qg"] = 2912,	-- Chief Archaeologist Greywhisker
@@ -239,14 +269,18 @@ _.Zones =
 					["lvl"] = 14,
 				}),
 				q(923, {	-- Tumors
-					["lvl"] = 4,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 3517,	-- Rellian Greenspyre
 					["sourceQuest"] = 922,	-- Rellian Greenspyre
+					["coord"] = { 38.2, 21.6, DARNASSUS },
+					["maps"] = { TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5170, 5 },	-- Mossy Tumor
+					},
+					["lvl"] = 4,
 					["g"] = {
 						i(5605),	-- Pruning Knife
 					},
-					["coord"] = { 38.2, 21.6, DARNASSUS },
 				}),
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,

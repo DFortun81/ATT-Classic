@@ -69,8 +69,8 @@ _.Instances = {
 				},
 				q(1198, {	-- In Search of Thaelrid
 					["qg"] = 4786,	-- Dawnwatcher Shaedlass <The Argent Dawn>
-					["coord"] = { 28.7, 52.1, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
+					["coord"] = { 28.7, 52.1, DARNASSUS },
+					["maps"] = { DARNASSUS },
 					-- This quest is also available to Horde, though the questgiver is a bit out of the way. (And, of course, it doesn't grant the Darnassus rep.)
 					-- Trying to accept the followup quest as Horde gives you "That quest is not available for your race.".
 					["isBreadcrumb"] = true,
@@ -144,8 +144,8 @@ _.Instances = {
 				}),
 				q(1199, {	-- Twilight Falls
 					["qg"] = 4784,	-- Argent Guard Manados <The Argent Dawn>
-					["coord"] = { 38.3, 43.0, TELDRASSIL },
-					["maps"] = { TELDRASSIL },
+					["coord"] = { 38.3, 43.0, DARNASSUS },
+					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 5879, 10 },	-- Twilight Pendant

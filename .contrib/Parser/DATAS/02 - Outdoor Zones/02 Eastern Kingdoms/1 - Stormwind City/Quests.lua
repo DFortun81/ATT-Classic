@@ -446,16 +446,16 @@ _.Zones =
 					["lvl"] = 26,
 				}),
 				q(2281, {	-- Redridge Rendezvous
-					["lvl"] = 16,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { ROGUE },
 					["qg"] = 6946,	-- Renzik "The Shiv"
+					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
 					["sourceQuests"] = {
 						2260,	-- Erion's Behest(Darnassus)
 						2298,	-- Kingly Shakedown(Ironforge)
 						2300,	-- SI:7(Elwynn Forest)
 					},
-					["coord"] = { 75.9, 60.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { ROGUE },
+					["lvl"] = 16,
 				}),
 				q(1919, {	-- Report to Jennea
 					["qg"] = 7312,	-- Dink <Mage Trainer>
