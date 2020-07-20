@@ -241,6 +241,9 @@ _.Instances = {
 						i(7718),	-- Herod's Shoulder
 						i(10330),	-- Scarlet Leggings
 					}),
+					n(6575, {	-- Scarlet Trainee
+						i(23192),	-- Tabard of the Scarlet Crusade
+					}),
 				},
 			}),
 			n(-88, {	-- Cathedral
