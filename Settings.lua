@@ -161,7 +161,6 @@ local UnobtainableSettingsBase = {
 		[1006] = false,	-- Love is in the Air (Valentine's Day)
 		[1007] = false,	-- Lunar Festival
 		[1008] = false,	-- Midsummer Fire Festival
-		[1009] = false,	-- New Years
 		[1010] = false,	-- Noblegarden
 		[1011] = false,	-- Pirate's Day
 	},
@@ -1194,7 +1193,7 @@ table.insert(settings.MostRecentTab.objects, SeasonalHolidayFiltersLabel);
 -- Seasonal Filters
 yoffset = -4;
 last = SeasonalHolidayFiltersLabel;
-for i,u in ipairs({ 1000, 1001, 1002, 1012, 1003, 1004, 1005, 1006, 1007, 1008, 1009, 1010, 1011 }) do
+for i,u in ipairs({ 1000, 1001, 1002, 1012, 1003, 1004, 1005, 1006, 1007, 1008, 1010, 1011 }) do
 	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2]);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);

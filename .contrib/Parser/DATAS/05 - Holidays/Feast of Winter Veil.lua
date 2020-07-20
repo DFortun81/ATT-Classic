@@ -170,6 +170,15 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 					i(21213),  -- Preserved Holly
 				},
 			}),
+			{
+				["allianceQuestID"] = 8860,	-- New Year Celebrations!
+				["hordeQuestID"] = 8861,	-- New Year Celebrations!
+				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
+				["isYearly"] = true,
+				["cost"] = {
+					{ "i", 21545, 1 },	-- Smokywood Supplies
+				},
+			},
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				["races"] = HORDE_ONLY,
