@@ -422,7 +422,7 @@ _.Zones =
 					["qg"] = 658,	-- Sten Stoutarm
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 					["coord"] = { 29.8, 71.2, DUN_MOROGH },
-					["races"] = { HUMAN, GNOME },
+					["races"] = { GNOME },
 					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 9544, 1 },	-- Simple Memorandum
