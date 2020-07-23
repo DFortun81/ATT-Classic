@@ -4550,8 +4550,11 @@ app.CraftTypeIDToColor = function(craftTypeID)
 end
 app.SpellIDToSpellName = setmetatable({}, {
 	__index = function(t, spellID)
-		local spellName = GetSpellInfo(spellID);
+		local spellName, rank = GetSpellInfo(spellID);
 		if spellName then
+			if rank then
+				spellName = spellName .. " (Rank " .. rank .. ")";
+			end
 			dirty = true;
 			rawset(t, spellID, spellName);
 			rawset(app.SpellNameToSpellID, spellName, spellID);

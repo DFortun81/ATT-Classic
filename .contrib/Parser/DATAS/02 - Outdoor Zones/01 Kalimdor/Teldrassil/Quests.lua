@@ -81,6 +81,9 @@ _.Zones =
 					["qg"] = 7317,	-- Oben Rageclaw
 					["sourceQuest"] = 2541,	-- The Sleeping Druid
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8149, 1 },	-- Voodoo Charm
+					},
 					["lvl"] = 3,
 					["groups"] = {
 						i(9598),	-- Sleeping Robes

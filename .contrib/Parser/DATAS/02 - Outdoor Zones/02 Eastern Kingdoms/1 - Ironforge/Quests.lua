@@ -847,6 +847,15 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 50,
 				}),
+				q(1715, {	-- The Slaughtered Lamb
+					["qg"] = 6120,	-- Lago Blackwrench
+					["altQuests"] = {
+						1685, -- Gakin's Summons
+					},
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["lvl"] = 10,
+				}),
 				q(3681, {	-- The Tome of Divinity
 					["qg"] = 5149,	-- Brandur Ironhammer
 					["altQuests"] = {

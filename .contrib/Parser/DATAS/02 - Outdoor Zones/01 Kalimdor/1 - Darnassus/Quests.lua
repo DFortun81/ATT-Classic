@@ -138,6 +138,7 @@ _.Zones =
 					["qg"] = 4241,	-- Mydrannul
 					["coord"] = { 70.6, 45.3, DARNASSUS },
 					["races"] = { NIGHTELF },
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(2498, {	-- Return to Denalan

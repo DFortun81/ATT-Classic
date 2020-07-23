@@ -224,7 +224,7 @@ _.Instances = {
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8235,	-- Encoded Fragments
 					["coord"] = { 29.6, 40.6, AZSHARA },
-					["maps"] = { AZSHARA },
+					["maps"] = { AZSHARA, HILLSBRAD_FOOTHILLS },
 					["classes"] = { ROGUE },
 					["cost"] = {
 						{ "i", 20022, 1 },	-- Azure Key
