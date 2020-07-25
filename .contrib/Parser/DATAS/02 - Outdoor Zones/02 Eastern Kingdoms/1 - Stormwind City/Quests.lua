@@ -276,9 +276,12 @@ _.Zones =
 					},
 				}),
 				q(333, {	-- Harlan Needs a Resupply
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1427,	-- Harlan Bagley
 					["coord"] = { 55.1, 56.0, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2724, 1 },	-- Cloth Request
+					},
 				}),
 				q(1939, {	-- High Sorcerer Andromath
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
@@ -428,10 +431,13 @@ _.Zones =
 					},
 				}),
 				q(334, {	-- Package for Thurman
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1428,	-- Rema Schneider
 					["sourceQuest"] = 333,	-- Harlan Needs a Resupply
 					["coord"] = { 49.5, 55.3, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2760, 1 },	-- Thurman's Sewing Kit
+					},
 				}),
 				q(1940, {	-- Pristine Spider Silk
 					["qg"] = 5694,	-- High Sorcerer Andromath
@@ -851,10 +857,13 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(332, {	-- Wine Shop Advert
-					["sourceQuest"] = 61,	-- Shipment to Stormwind
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1432,	-- Renato Gallina
+					["sourceQuest"] = 61,	-- Shipment to Stormwind
 					["coord"] = { 57.0, 63.4, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2722, 1 },	-- Wine Ticket
+					},
 					["g"] = {
 						i(2723),	-- Bottle of Dalaran Noir
 					},

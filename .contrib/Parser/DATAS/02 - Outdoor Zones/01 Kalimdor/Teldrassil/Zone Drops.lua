@@ -34,6 +34,17 @@ _.Zones =
 						2043,	-- Nightsaber Stalker
 					},
 				}),
+				i(5168, {	-- Timberling Seed
+					["questID"] = 918,	-- Timberling Seeds
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						2030,	-- Elder Timberling
+						2166,	-- Oakenscowl
+						2022,	-- Timberling
+						2025,	-- Timberling Bark Ripper
+						2027,	-- Timberling Trampler
+					},
+				}),
 			}),
 		}),
 	}),

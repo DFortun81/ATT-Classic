@@ -14,6 +14,7 @@ _.Zones =
 						["cost"] = {
 							{ "i", 17117, 1 },	-- Rat Catcher's Flute
 						},
+						["lvl"] = 10,
 					}),
 					q(6662, {	-- Me Brother, Nipsy
 						["qg"] = 12997,	-- Monty
@@ -21,6 +22,10 @@ _.Zones =
 						["races"] = ALLIANCE_ONLY,
 						["cost"] = {
 							{ "i", 17118, 1 },	-- Crate of Mystery Meat
+						},
+						["lvl"] = 10,
+						["groups"] = {
+							i(17119),	-- Deeprun Rat Kabob
 						},
 					}),
 				}),

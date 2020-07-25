@@ -92,8 +92,11 @@ _.Zones =
 				q(1599, {	-- Beginnings
 					["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
 					["coord"] = { 28.6, 66.1, DUN_MOROGH },
-					["races"] = { GNOME },
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1598,	-- The Stolen Tome
+					},
 					["cost"] = {
 						{ "i", 6753, 3 },	-- Feather Charm
 					},

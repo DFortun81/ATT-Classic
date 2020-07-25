@@ -1160,7 +1160,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(19727),	-- Blood Scythe
 				i(20263),	-- Gurubashi Helm
 				i(19908),	-- Sceptre of Smiting
 				i(20261),	-- Shadow Panther Hide Belt
@@ -1185,114 +1184,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 				i(19702),	-- Vilebranch Coin
 				i(19703),	-- Witherbark Coin
 				i(19698),	-- Zulian Coin
-				{
-					["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19955),	-- Wushoolay's Charm of Nature [Druid]
-					},
-				},
-				{
-					["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19954),	-- Renataki's Charm of Trickery [Rogue]
-					},
-				},
-				{
-					["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19953),	-- Renataki's Charm of Beasts [Hunter]
-					},
-				},
-				{
-					["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19957),	-- Hazza'rah's Charm of Destruction [Warlock]
-					},
-				},
-				{
-					["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19951),	-- Gri'lek's Charm of Might [Warrior]
-					},
-				},
-				{
-					["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19959),	-- Hazza'rah's Charm of Magic [Mage]
-					},
-				},
-				{
-					["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19958),	-- Hazza'rah's Charm of Healing [Priest]
-					},
-				},
-				{
-					["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19952),	-- Gri'lek's Charm of Valor [Paladin]
-					},
-				},
-				{
-					["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
-					["cost"] = {
-						{ "i", 19939, 1 },	-- Gri'lek's Blood
-						{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
-						{ "i", 19940, 1 },	-- Renataki's Tooth
-						{ "i", 19941, 1 },	-- Wushoolay's Mane
-					},
-					["groups"] = {
-						i(19956),	-- Wushoolay's Charm of Spirits [Shaman]
-					},
-				},
+				
 			}),
 			prof(HERBALISM, {
 				["cost"] = {
@@ -1316,6 +1208,120 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 				i(19767, {	-- Primal Bat Leather
 					["cr"] = 11368,	-- Bloodseeker Bat
 				}),
+			}),
+			o(180229, {	-- Jinxed Hoodoo Pile
+				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
+				["groups"] = {
+					i(19727),	-- Blood Scythe
+					{
+						["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19955),	-- Wushoolay's Charm of Nature [Druid]
+						},
+					},
+					{
+						["itemID"] = 19814,	-- Punctured Voodoo Doll [Rogue]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19954),	-- Renataki's Charm of Trickery [Rogue]
+						},
+					},
+					{
+						["itemID"] = 19816,	-- Punctured Voodoo Doll [Hunter]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19953),	-- Renataki's Charm of Beasts [Hunter]
+						},
+					},
+					{
+						["itemID"] = 19819,	-- Punctured Voodoo Doll [Warlock]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19957),	-- Hazza'rah's Charm of Destruction [Warlock]
+						},
+					},
+					{
+						["itemID"] = 19813,	-- Punctured Voodoo Doll [Warrior]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19951),	-- Gri'lek's Charm of Might [Warrior]
+						},
+					},
+					{
+						["itemID"] = 19818,	-- Punctured Voodoo Doll [Mage]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19959),	-- Hazza'rah's Charm of Magic [Mage]
+						},
+					},
+					{
+						["itemID"] = 19820,	-- Punctured Voodoo Doll [Priest]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19958),	-- Hazza'rah's Charm of Healing [Priest]
+						},
+					},
+					{
+						["itemID"] = 19815,	-- Punctured Voodoo Doll [Paladin]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19952),	-- Gri'lek's Charm of Valor [Paladin]
+						},
+					},
+					{
+						["itemID"] = 19817,	-- Punctured Voodoo Doll [Shaman]
+						["cost"] = {
+							{ "i", 19939, 1 },	-- Gri'lek's Blood
+							{ "i", 19942, 1 },	-- Hazza'rah's Dream Thread
+							{ "i", 19940, 1 },	-- Renataki's Tooth
+							{ "i", 19941, 1 },	-- Wushoolay's Mane
+						},
+						["groups"] = {
+							i(19956),	-- Wushoolay's Charm of Spirits [Shaman]
+						},
+					},
+				},
 			}),
 			n(14517, {	-- High Priestess Jeklik
 				i(19918),	-- Jeklik's Crusher

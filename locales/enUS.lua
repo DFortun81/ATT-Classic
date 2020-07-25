@@ -567,6 +567,7 @@ app.L = {
 		[179832] = "Pillaclencher's Ornate Pillow",
 		[179564] = "Gordok Tribute Chest",
 		[179697] = "Arena Treasure Chest",
+		[180229] = "Jinxed Hoodoo Pile",
 		[180327] = "Brazier of Madness",
 		[180366] = "Battered Tackle Box",
 		[180368] = "Tablet of Madness",

@@ -397,6 +397,42 @@ _.Craftables =
 			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
 		}),
 	}),
+	prof(HERBALISM, {
+		["description"] = "The following items can be gathered by Herbalists out in the world.",
+		["groups"] = {
+			i(8836),	-- Arthas' Tears [Herbalism 220]
+			i(13468),	-- Black Lotus [Herbalism 300]
+			i(8839),	-- Blindweed [Herbalism 235]
+			i(19726),	-- Bloodvine [Herbalism 210] [ZG Only]
+			i(2450),	-- Briarthorn [Herbalism 70]
+			i(2453),	-- Bruiseweed [Herbalism 100]
+			i(13463),	-- Dreamfoil [Herbalism 270]
+			i(2449),	-- Earthroot [Herbalism 15]
+			i(3818),	-- Fadeleaf [Herbalism 160]
+			i(4625),	-- Firebloom [Herbalism 205]
+			i(8845),	-- Ghost Mushroom [Herbalism 245]
+			i(13464),	-- Golden Sansam [Herbalism 260]
+			i(3821),	-- Goldthorn [Herbalism 170]
+			i(3369),	-- Grave Moss [Herbalism 120]
+			i(8846),	-- Gromsblood [Herbalism 250]
+			i(13467),	-- Icecap [Herbalism 290]
+			i(3358),	-- Khadgar's Whisker [Herbalism 185]
+			i(3356),	-- Kingsblood [Herbalism 125]
+			i(3357),	-- Liferoot [Herbalism 150]
+			i(785),		-- Mageroyal [Herbalism 50]
+			i(13465),	-- Mountain Silversage [Herbalism 280]
+			i(2447),	-- Peacebloom [Herbalism 1]
+			i(13466),	-- Plaguebloom [Herbalism 285]
+			i(8831),	-- Purple Lotus [Herbalism 210]
+			i(765),		-- Silverleaf [Herbalism 1]
+			i(3820),	-- Stranglekelp [Herbalism 85]
+			i(8838),	-- Sungrass [Herbalism 230]
+			i(2452),	-- Swiftthistle [Herbalism 70]
+			i(3355),	-- Wild Steelbloom [Herbalism 115]
+			i(8153),	-- Wildvine [Herbalism 210]
+			i(3819),	-- Wintersbite [Herbalism 195]
+		},
+	}),
 	prof(LEATHERWORKING, {
 		filter(113, {	-- Bags
 			i(7372),	-- Heavy Leather Ammo Pouch
@@ -654,6 +690,12 @@ _.Craftables =
 		filter(50, {	-- Miscellaneous
 			i(18251),	-- Core Armor Kit
 		}),
+	}),
+	prof(MINING, {
+		["description"] = "The following items can be gathered by Miners out in the world.",
+		["groups"] = {
+			
+		},
 	}),
 	prof(TAILORING, {
 		filter(113, {	-- Bags

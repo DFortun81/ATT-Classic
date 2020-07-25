@@ -128,6 +128,9 @@ _.Zones =
 					["qg"] = 11864,	-- Tammra Windfield
 					["coord"] = { 47.44, 58.47, STONETALON_MOUNTAINS },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 16205, 10 },	-- Gaea Seed
+					},
 					["lvl"] = 17,
 				}),
 				q(6481, {	-- Earthen Arise

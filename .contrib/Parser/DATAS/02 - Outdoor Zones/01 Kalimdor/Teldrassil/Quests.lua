@@ -262,6 +262,9 @@ _.Zones =
 					["qg"] = 2080,	-- Denalan
 					["sourceQuest"] = 918,	-- Timberling Seeds
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5168, 1 },	-- Timberling Seed
+					},
 					["lvl"] = 4,
 				}),
 				q(2943, {	-- Return to Troyas
@@ -501,6 +504,9 @@ _.Zones =
 					["qg"] = 2080,	-- Denalan
 					["sourceQuest"] = 997,	-- Denalan's Earth
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5168, 8 },	-- Timberling Seed
+					},
 					["lvl"] = 4,
 					["groups"] = {
 						i(4604),	-- Forest Mushroom Cap

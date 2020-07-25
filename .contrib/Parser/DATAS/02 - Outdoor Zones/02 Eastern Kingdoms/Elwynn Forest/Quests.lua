@@ -243,6 +243,9 @@ _.Zones =
 					["sourceQuest"] = 3904,	-- Milly's Harvest
 					["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11125, 1 },	-- Grape Manifest
+					},
 					["lvl"] = 2,
 					["g"] = {
 						i(11475),	-- Wine-stained Cloak
@@ -386,6 +389,9 @@ _.Zones =
 					["sourceQuest"] = 21,	-- Skirmish at Echo Ridge
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 745, 1 },	-- Marshal McBride's Documents
+					},
 					["g"] = {
 						i(6078),	-- Pikeman Shield
 					},
@@ -561,8 +567,11 @@ _.Zones =
 				q(1598, {	-- The Stolen Tome
 					["qg"] = 459,	-- Drusilla La Salle
 					["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
-					["races"] = { HUMAN },
+					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1599,	-- Beginnings
+					},
 					["cost"] = {
 						{ "i", 6785, 1 },	-- Powers of the Void
 					},
