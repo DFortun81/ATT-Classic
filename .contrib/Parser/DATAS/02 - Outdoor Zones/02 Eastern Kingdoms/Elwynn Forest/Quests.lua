@@ -560,8 +560,20 @@ _.Zones =
 				}),
 				q(1598, {	-- The Stolen Tome
 					["qg"] = 459,	-- Drusilla La Salle
+					["coord"] = { 49.9, 42.6, ELWYNN_FOREST },
 					["races"] = { HUMAN },
 					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6785, 1 },	-- Powers of the Void
+					},
+					["groups"] = {
+						{
+							["itemID"] = 6785,	-- Powers of the Void
+							["questID"] = 1598,	-- The Stolen Tome
+							["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
+						},
+						recipe(688),	-- Summon Imp
+					},
 				}),
 				un(NEVER_IMPLEMENTED, q(7962, {	-- Wabbit Pelts
 					["g"] = {

@@ -7,6 +7,12 @@ _.Zones =
 		m(DUN_MOROGH, {
 			n(ZONEDROPS, {
 				i(2886),	-- Crag Boar Rib
+				i(6753, {	-- Feather Charm
+					["questID"] = 1599,	-- Beginnings
+					["cr"] = 946,	-- Frostmane Novice
+					["races"] = { GNOME },
+					["classes"] = { WARLOCK },
+				}),
 				i(2067, {	-- Frostbit Staff
 					["cr"] = 1117,	-- Rockjaw Bonesnapper
 				}),

@@ -89,6 +89,18 @@ _.Zones =
 						},
 					},
 				}),
+				q(1599, {	-- Beginnings
+					["qg"] = 460,	-- Alamar Grimm <Warlock Trainer>
+					["coord"] = { 28.6, 66.1, DUN_MOROGH },
+					["races"] = { GNOME },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6753, 3 },	-- Feather Charm
+					},
+					["groups"] = {
+						recipe(688),	-- Summon Imp
+					},
+				}),
 				q(310, {	-- Bitter Rivals
 					["qg"] = 1375,	-- Marleth Barleybrew
 					["coord"] = { 30.2, 45.6, DUN_MOROGH },

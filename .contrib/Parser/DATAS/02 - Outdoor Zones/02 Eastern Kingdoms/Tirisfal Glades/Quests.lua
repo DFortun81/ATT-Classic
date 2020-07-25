@@ -287,10 +287,14 @@ _.Zones =
 				}),
 				q(1470, {	-- Piercing the Veil
 					["qg"] = 5667,	-- Venya Marthand
-					["races"] = { ORC, UNDEAD },
+					["coord"] = { 31.0, 66.4, TIRISFAL_GLADES },
+					["races"] = { UNDEAD },
 					["classes"] = { WARLOCK },
 					["cost"] = {
 						{ "i", 6281, 3 },	-- Rattlecage Skull
+					},
+					["groups"] = {
+						recipe(688),	-- Summon Imp
 					},
 				}),
 				q(374, {	-- Proof of Demise
