@@ -82,11 +82,12 @@ _.Zones =
 					["qg"] = 5675,	-- Carendin Halgar
 				}),
 				q(1472, {	-- Devourer of Souls
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
 					["qg"] = 5675,	-- Carendin Halgar
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
 					["description"] = "Completing this quest (1472) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1507).",
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
 				}),
 				q(1846, {	-- Dragonmaw Shinbones
 					["qg"] = 6411,	-- Velora Nitely
@@ -262,11 +263,11 @@ _.Zones =
 					},
 				}),
 				q(3001, {	-- Seeking Strahad
-					["lvl"] = 10,
+					["qg"] = 5675,	-- Carendin Halgar
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5675,	-- Carendin Halgar
 					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(3570, {	-- Seeping Corruption
 					["lvl"] = 45,

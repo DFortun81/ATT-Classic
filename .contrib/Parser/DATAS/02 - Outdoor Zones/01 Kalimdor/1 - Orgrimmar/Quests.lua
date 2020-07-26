@@ -358,11 +358,12 @@ _.Zones =
 					["sourceQuest"] = 2460,	-- The Shattered Salute
 				}),
 				q(1507, {	-- Devourer of Souls
-					["lvl"] = 20,
+					["qg"] = 5875,	-- Dan'rul Bloodeye
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875,	-- Dan'rul Bloodeye
 					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
 				}),
 				q(8410, {	-- Elemental Mastery
 					["qg"] = 5892,	-- Searn Firewarder
@@ -616,11 +617,11 @@ _.Zones =
 					},
 				})),
 				q(2996, {	-- Seeking Strahad
-					["lvl"] = 10,
+					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>

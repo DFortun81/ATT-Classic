@@ -192,6 +192,15 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
+				q(1716, {	-- Devourer of Souls
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1717,	-- Gakin's Summons
+					["coord"] = { 25.4, 78.6, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(6261, {	-- Dungar Longdrink
 					["qg"] = 1323,	-- Osric Strang
 					["sourceQuest"] = 6281,	-- Continue to Stormwind

@@ -478,6 +478,14 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["coord"] = { 69.4, 50.8, IRONFORGE },
 				}),
+				q(1717, {	-- Gakin's Summons
+					["qg"] = 6120,	-- Lago Blackwrench
+					["coord"] = { 47.6, 9.6, IRONFORGE },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 20,
+				}),
 				q(1682, {	-- Grey Iron Weapons
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
@@ -854,6 +862,7 @@ _.Zones =
 					},
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(3681, {	-- The Tome of Divinity

@@ -907,12 +907,13 @@ _.Zones =
 						i(11148),	-- Samophlange Manual Page
 					},
 				}),
-				q(1685, {	-- Seeking Strahad
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY, 
-					["classes"] = { WARLOCK },
+				q(1798, {	-- Seeking Strahad
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY, 
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
 				}),
 				q(876, {	-- Serena Bloodfeather
 					["qg"] = 3449,	-- Darsok Swiftdagger

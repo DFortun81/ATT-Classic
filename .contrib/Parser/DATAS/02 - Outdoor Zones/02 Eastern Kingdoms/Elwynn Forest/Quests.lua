@@ -7,10 +7,13 @@ _.Zones =
 		m(ELWYNN_FOREST, {
 			n(QUESTS, {
 				q(5545, {	-- A Bundle of Trouble
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10616,	-- Supervisor Raelen
 					["coord"] = { 81.4, 66.2, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 13872, 8 },	-- Bundle of Wood
+					},
+					["lvl"] = 5,
 				}),
 				q(40, {	-- A Fishy Peril
 					["lvl"] = 7,
@@ -89,6 +92,8 @@ _.Zones =
 				}),
 				q(112, {	-- Collecting Kelp
 					["qg"] = 253,	-- William Pestle
+					["sourceQuest"] = 107,	-- Note to William
+					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 1256, 4 },	-- Crystal Kelp Frond
@@ -176,11 +181,13 @@ _.Zones =
 				}),
 				q(1685, {	-- Gakin's Summons
 					["qg"] = 6121,	-- Remen Marcot
+					["coord"] = { 44.4, 66.2, ELWYNN_FOREST },
 					["altQuests"] = {
 						1715, -- The Slaughtered Lamb
 					},
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(5624, {	-- Garments of the Light
@@ -328,16 +335,24 @@ _.Zones =
 					["sourceQuest"] = 18,	-- Brotherhood of Thieves
 				}),
 				q(3904, {	-- Milly's Harvest
-					["lvl"] = 2,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 9296,	-- Milly Osworth
 					["sourceQuest"] = 3903,	-- Milly Osworth
 					["coord"] = { 50.7, 39.3, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11119, 8 },	-- Milly's Harvest
+					},
+					["lvl"] = 2,
 				}),
 				q(107, {	-- Note to William
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 248,	-- Gramma Stonefield
+					["sourceQuest"] = 111,	-- Speak with Gramma
+					["coord"] = { 34.8, 83.8, ELWYNN_FOREST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1252, 1 },	-- Gramma Stonefield's Note
+					},
+					["lvl"] = 5,
 				}),
 				q(86, {	-- Pie for Billy
 					["lvl"] = 5,
@@ -463,6 +478,9 @@ _.Zones =
 					["qg"] = 253,	-- William Pestle
 					["sourceQuest"] = 47,	-- Gold Dust Exchange
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 957, 1 },	-- William's Shipment
+					},
 					["lvl"] = 3,
 					["g"] = {
 						i(1178),	-- Explosive Rocket
@@ -497,6 +515,8 @@ _.Zones =
 				}),
 				q(111, {	-- Speak with Gramma
 					["qg"] = 252,	-- Tommy Joe Stonefield
+					["sourceQuest"] = 106,	-- Young Lovers
+					["coord"] = { 29.8, 86, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 5,
 				}),
@@ -523,7 +543,12 @@ _.Zones =
 				}),
 				q(114, {	-- The Escape
 					["qg"] = 253,	-- William Pestle
+					["sourceQuest"] = 112,	-- Collecting Kelp
+					["coord"] = { 43.2, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1257, 1 },	-- Invisibility Liquor
+					},
 					["lvl"] = 5,
 					["g"] = {
 						i(118),	-- Minor Healing Potion
@@ -651,7 +676,11 @@ _.Zones =
 				}),
 				q(106, {	-- Young Lovers
 					["qg"] = 251,	-- Maybell Maclure
+					["coord"] = { 43, 89.6, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1208, 1 },	-- Maybell's Love Letter
+					},
 					["lvl"] = 5,
 				}),
 			}),
