@@ -247,6 +247,13 @@ _.NeverImplemented =
 	i(13326),	-- White Mechanostrider Mod A
 	i(12353),	-- White Stallion Bridle
 	
+	-- Pets
+	i(18963),	-- Turtle Egg (Albino)
+	i(18965),	-- Turtle Egg (Hawksbill)
+	i(18966),	-- Turtle Egg (Leatherback)
+	i(18964),	-- Turtle Egg (Loggerhead)
+	i(18967),	-- Turtle Egg (Olive)
+	
 	-- Cloak
 	i(16116),	-- Test Nature Res Cloak Cloth
 	
@@ -304,6 +311,7 @@ _.NeverImplemented =
 	i(7925),	-- Mithril Scale Gloves
 	i(16664),	-- Ornate Bracers
 	i(2867),	-- Rough Bronze Bracers
+	i(17769),	-- Sagebrush Spaulders
 	i(12616),	-- Savage Mail Boots
 	i(12617),	-- Savage Mail Shoulders
 	i(12615),	-- Savage Mail Tunic
@@ -399,6 +407,8 @@ _.NeverImplemented =
 	i(16125),	-- Test Arcane Res Neck
 	i(16124),	-- Test Frost Res Neck
 	i(16123),	-- Test Nature Res Neck
+	i(17783),	-- Talisman of Binding Fragment
+	i(17782),	-- Talisman of Binding Shard
 	
 	-- Ring
 	i(24358),	-- QATest +1000 Spell Dmg Ring
@@ -410,6 +420,7 @@ _.NeverImplemented =
 	i(20445),	-- Test Defense Ring +120
 	i(20446),	-- Test Defense Ring +80
 	i(16067),	-- Test Fire Res Ring
+	i(16999),	-- Royal Seal of Alexis
 
 	-- Quest
 	i(11666),	-- PH Greater Arcane Amalgamation (AC/FR)
