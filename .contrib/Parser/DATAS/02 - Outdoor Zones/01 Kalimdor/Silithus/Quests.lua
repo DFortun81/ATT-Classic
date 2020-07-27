@@ -82,7 +82,7 @@ _.Zones =
 						i(20601),	-- Sack of Spoils
 					},
 				}),
-				q(9338, {	-- Allegiance to Cenarion Circle
+				un(PHASE_FIVE, q(9338, {	-- Allegiance to Cenarion Circle
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["repeatable"] = true,
@@ -92,7 +92,7 @@ _.Zones =
 						{ "i", 20801, 1 },	-- Cenarion Tactical Badge
 					},
 					["lvl"] = 60,
-				}),
+				})),
 				q(8316, {	-- Armaments of War [WARRIOR]
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8315,	-- The Calling
@@ -181,7 +181,7 @@ _.Zones =
 						i(20712),	-- Wastewalker's Gauntlets
 					},
 				}),
-				q(8780, {	-- Armor Kits for the Field [ALLIANCE]
+				un(PHASE_FIVE, q(8780, {	-- Armor Kits for the Field [ALLIANCE]
 					["provider"] = { "i", 21263 },	-- Logistics Task Briefing VII
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -194,8 +194,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8787, {	-- Armor Kits for the Field [HORDE]
+				})),
+				un(PHASE_FIVE, q(8787, {	-- Armor Kits for the Field [HORDE]
 					["provider"] = { "i", 21264 },	-- Logistics Task Briefing VII
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -208,8 +208,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8781, {	-- Arms for the Field [ALLIANCE]
+				})),
+				un(PHASE_FIVE, q(8781, {	-- Arms for the Field [ALLIANCE]
 					["provider"] = { "i", 21260 },	-- Logistics Task Briefing VI
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -221,8 +221,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8786, {	-- Arms for the Field [HORDE]
+				})),
+				un(PHASE_FIVE, q(8786, {	-- Arms for the Field [HORDE]
 					["provider"] = { "i", 21261 },	-- Logistics Task Briefing VI
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -234,7 +234,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
 					},
-				}),
+				})),
 				q(8331, {	-- Aurel Goldleaf
 					["qg"] = 15270,	-- Huum Wildmane
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle
@@ -242,7 +242,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
-				q(8737, {	-- Azure Templar
+				un(PHASE_FIVE, q(8737, {	-- Azure Templar
 					["provider"] = { "i", 21245 },	-- Tactical Task Briefing I
 					["cr"] = 15211,	-- Azure Templar <Abyssal Council>
 					["repeatable"] = true,
@@ -251,8 +251,8 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(21133),	-- Followup Tactical Assignment
 					},
-				}),
-				q(8496, {	-- Bandages for the Field
+				})),
+				un(PHASE_FIVE, q(8496, {	-- Bandages for the Field
 					["provider"] = { "i", 20806 },	-- Logistics Task Briefing X
 					["repeatable"] = true,
 					["cost"] = {
@@ -265,8 +265,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8810, {	-- Bandages for the Field
+				})),
+				un(PHASE_FIVE, q(8810, {	-- Bandages for the Field
 					["provider"] = { "i", 21385 },	-- Logistics Task Briefing X
 					["repeatable"] = true,
 					["cost"] = {
@@ -279,8 +279,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8540, {	-- Boots for the Guard
+				})),
+				un(PHASE_FIVE, q(8540, {	-- Boots for the Guard
 					["provider"] = { "i", 20939 },	-- Logistics Task Briefing II
 					["repeatable"] = true,
 					["cost"] = {
@@ -291,8 +291,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21132),	-- Logistics Assignment
 					},
-				}),
-				q(8805, {	-- Boots for the Guard
+				})),
+				un(PHASE_FIVE, q(8805, {	-- Boots for the Guard
 					["provider"] = { "i", 21379 },	-- Logistics Task Briefing II
 					["repeatable"] = true,
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
@@ -301,7 +301,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21266),	-- Logistics Assignment
 					},
-				}),
+				})),
 				q(8349, {	-- Bor Wildmane
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8332,	-- Dukes of the Council
@@ -355,7 +355,7 @@ _.Zones =
 						un(PHASE_FIVE, i(21180)),	-- Earthstrike
 					},
 				})),
-				q(8537, {	-- Crimson Templar
+				un(PHASE_FIVE, q(8537, {	-- Crimson Templar
 					["provider"] = { "i", 20945 },	-- Tactical Task Briefing II
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
 					["repeatable"] = true,
@@ -364,7 +364,7 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(20809),	-- Tactical Assignment
 					},
-				}),
+				})),
 				q(8277, {	-- Deadly Desert Venom
 					["qg"] = 15189,	-- Beetix Ficklespragg
 					["coord"] = { 51.6, 38.6, SILITHUS },
@@ -379,7 +379,7 @@ _.Zones =
 					["coord"] = { 49.2, 34.2, SILITHUS },
 					["lvl"] = 40,
 				}),
-				q(8804, {	-- Desert Survival Kits
+				un(PHASE_FIVE, q(8804, {	-- Desert Survival Kits
 					["provider"] = { "i", 21378 },	-- Logistics Task Briefing I
 					["repeatable"] = true,
 					["cost"] = {
@@ -392,8 +392,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21266),	-- Logistics Assignment
 					},
-				}),
-				q(8497, {	-- Desert Survival Kits
+				})),
+				un(PHASE_FIVE, q(8497, {	-- Desert Survival Kits
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I
 					["repeatable"] = true,
 					["cost"] = {
@@ -406,8 +406,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21132),	-- Logistics Assignment
 					},
-				}),
-				q(8856, {	-- Desert Survival Kits
+				})),
+				un(PHASE_FIVE, q(8856, {	-- Desert Survival Kits
 					["provider"] = { "i", 20807 },	-- Logistics Task Briefing I
 					["repeatable"] = true,
 					["cost"] = {
@@ -420,7 +420,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
+				})),
 				q(8332, {	-- Dukes of the Council
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8331,	-- Aurel Goldleaf
@@ -434,7 +434,7 @@ _.Zones =
 						i(20422),	-- Twilight Cultist Medallion of Station
 					},
 				}),
-				q(8536, {	-- Earthen Templar
+				un(PHASE_FIVE, q(8536, {	-- Earthen Templar
 					["provider"] = { "i", 21751 },	-- Tactical Task Briefing III
 					["cr"] = 15307,	-- Earthen Templar <Abyssal Council>
 					["repeatable"] = true,
@@ -443,7 +443,7 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(21133),	-- Followup Tactical Assignment
 					},
-				}),
+				})),
 				q(8319, {	-- Encrypted Twilight Texts
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8318,	-- Secret Communication
@@ -454,7 +454,7 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(8783, {	-- Extraordinary Materials
+				un(PHASE_FIVE, q(8783, {	-- Extraordinary Materials
 					["provider"] = { "i", 21265 },	-- Logistics Task Briefing IX
 					["repeatable"] = true,
 					["cost"] = {
@@ -466,8 +466,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21132),	-- Logistics Assignment
 					},
-				}),
-				q(8809, {	-- Extraordinary Materials
+				})),
+				un(PHASE_FIVE, q(8809, {	-- Extraordinary Materials
 					["provider"] = { "i", 21381 },	-- Logistics Task Briefing IX
 					["repeatable"] = true,
 					["cost"] = {
@@ -479,8 +479,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21266),	-- Logistics Assignment
 					},
-				}),
-				q(8507, {	-- Field Duty
+				})),
+				un(PHASE_FIVE, q(8507, {	-- Field Duty
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
@@ -500,8 +500,8 @@ _.Zones =
 						i(21132),	-- Logistics Assignment
 						i(20809),	-- Tactical Assignment
 					},
-				}),
-				q(8731, {	-- Field Duty
+				})),
+				un(PHASE_FIVE, q(8731, {	-- Field Duty
 					["qg"] = 15540,	-- Windcaller Kaldon
 					["coord"] = { 50.0, 36.4, SILITHUS },
 					["races"] = HORDE_ONLY,
@@ -521,8 +521,8 @@ _.Zones =
 						i(21266),	-- Logistics Assignment
 						i(20809),	-- Tactical Assignment
 					},
-				}),
-				q(8508, {	-- Field Duty Papers [ALLIANCE]
+				})),
+				un(PHASE_FIVE, q(8508, {	-- Field Duty Papers [ALLIANCE]
 					["qg"] = 15440,	-- Captain Blackanvil <Ironforge Brigade Captain>
 					["coord"] = { 33.2, 52.1, SILITHUS },
 					["races"] = ALLIANCE_ONLY,
@@ -534,8 +534,8 @@ _.Zones =
 					["groups"] = {
 						i(20810),	-- Signed Field Duty Papers
 					},
-				}),
-				q(8732, {	-- Field Duty Papers [HORDE]
+				})),
+				un(PHASE_FIVE, q(8732, {	-- Field Duty Papers [HORDE]
 					["qg"] = 15612,	-- Krug Skullsplit
 					["coord"] = { 52.2, 68.4, SILITHUS },
 					["races"] = HORDE_ONLY,
@@ -547,7 +547,7 @@ _.Zones =
 					["groups"] = {
 						i(20810),	-- Signed Field Duty Papers
 					},
-				}),
+				})),
 				q(8309, {	-- Glyph Chasing
 					["qg"] = 15170,	-- Rutgar Glyphshaper
 					["sourceQuest"] = 8304,	-- Dearest Natalia
@@ -587,7 +587,7 @@ _.Zones =
 					["coord"] = { 48.6, 37.9, SILITHUS },
 					["lvl"] = 54,
 				}),
-				q(8541, {	-- Grinding Stones for the Guard
+				un(PHASE_FIVE, q(8541, {	-- Grinding Stones for the Guard
 					["provider"] = { "i", 20940 },	-- Logistics Task Briefing III
 					["repeatable"] = true,
 					["cost"] = {
@@ -600,8 +600,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21132),	-- Logistics Assignment
 					},
-				}),
-				q(8806, {	-- Grinding Stones for the Guard
+				})),
+				un(PHASE_FIVE, q(8806, {	-- Grinding Stones for the Guard
 					["provider"] = { "i", 21380 },	-- Logistics Task Briefing III
 					["repeatable"] = true,
 					["cost"] = {
@@ -614,7 +614,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21266),	-- Logistics Assignment
 					},
-				}),
+				})),
 				q(1126, {	-- Hive in the Tower
 					["qg"] = 13220,	-- Layo Starstrike
 					["sourceQuest"] = 1125,	-- The Spirits of Southwind
@@ -639,7 +639,7 @@ _.Zones =
 						},
 					},
 				}),
-				q(8739, {	-- Hive'Ashi Scout Report
+				un(PHASE_FIVE, q(8739, {	-- Hive'Ashi Scout Report
 					["provider"] = { "i", 21167 },	-- Tactical Task Briefing VIII
 					["repeatable"] = true,
 					["cost"] = {
@@ -655,8 +655,8 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(20809),	-- Tactical Assignment
 					},
-				}),
-				q(8738, {	-- Hive'Regal Scout Report
+				})),
+				un(PHASE_FIVE, q(8738, {	-- Hive'Regal Scout Report
 					["provider"] = { "i", 21166 },	-- Tactical Task Briefing VII
 					["repeatable"] = true,
 					["cost"] = {
@@ -672,8 +672,8 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(21133),	-- Followup Tactical Assignment
 					},
-				}),
-				q(8534, {	-- Hive'Zora Scout Report
+				})),
+				un(PHASE_FIVE, q(8534, {	-- Hive'Zora Scout Report
 					["provider"] = { "i", 21165 },	-- Tactical Task Briefing VI
 					["repeatable"] = true,
 					["cost"] = {
@@ -689,8 +689,8 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(21133),	-- Followup Tactical Assignment
 					},
-				}),
-				q(8535, {	-- Hoary Templar
+				})),
+				un(PHASE_FIVE, q(8535, {	-- Hoary Templar
 					["provider"] = { "i", 20947 },	-- Tactical Task Briefing IV
 					["cr"] = 15212,	-- Hoary Templar <Abyssal Council>
 					["repeatable"] = true,
@@ -699,7 +699,7 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(20809),	-- Tactical Assignment
 					},
-				}),
+				})),
 				q(8306, {	-- Into The Maw of Madness
 					["qg"] = 15181,	-- Commander Mar'alith
 					["sourceQuest"] = 8304,	-- Dearest Natalia
@@ -812,7 +812,7 @@ _.Zones =
 						i(13444),	-- Major Mana Potion
 					},
 				})),
-				q(8779, {	-- Scrying Materials
+				un(PHASE_FIVE, q(8779, {	-- Scrying Materials
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V
 					["repeatable"] = true,
 					["cost"] = {
@@ -825,8 +825,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8807, {	-- Scrying Materials
+				})),
+				un(PHASE_FIVE, q(8807, {	-- Scrying Materials
 					["provider"] = { "i", 21382 },	-- Logistics Task Briefing V
 					["repeatable"] = true,
 					["cost"] = {
@@ -839,7 +839,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
 					},
-				}),
+				})),
 				q(8318, {	-- Secret Communication
 					["qg"] = 15306,	-- Bor Wildmane
 					["coord"] = { 48.6, 37.8, SILITHUS },
@@ -946,7 +946,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
-				q(8770, {	-- Target: Hive'Ashi Defenders
+				un(PHASE_FIVE, q(8770, {	-- Target: Hive'Ashi Defenders
 					["provider"] = { "i", 21749 },	-- Combat Task Briefing I
 					["cr"] = 11722,	-- Hive'Ashi Defender
 					["repeatable"] = true,
@@ -954,8 +954,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8771, {	-- Target: Hive'Ashi Sandstalkers
+				})),
+				un(PHASE_FIVE, q(8771, {	-- Target: Hive'Ashi Sandstalkers
 					["provider"] = { "i", 21750 },	-- Combat Task Briefing II
 					["cr"] = 11723,	-- Hive'Ashi Sandstalker
 					["repeatable"] = true,
@@ -963,8 +963,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8501, {	-- Target: Hive'Ashi Stingers
+				})),
+				un(PHASE_FIVE, q(8501, {	-- Target: Hive'Ashi Stingers
 					["provider"] = { "i", 20941 },	-- Combat Task Briefing XII
 					["cr"] = 11698,	-- Hive'Ashi Stinger
 					["repeatable"] = true,
@@ -972,8 +972,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8502, {	-- Target: Hive'Ashi Workers
+				})),
+				un(PHASE_FIVE, q(8502, {	-- Target: Hive'Ashi Workers
 					["provider"] = { "i", 20942 },	-- Combat Task Briefing III
 					["cr"] = 11721,	-- Hive'Ashi Worker
 					["repeatable"] = true,
@@ -981,8 +981,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8774, {	-- Target: Hive'Regal Ambushers
+				})),
+				un(PHASE_FIVE, q(8774, {	-- Target: Hive'Regal Ambushers
 					["provider"] = { "i", 21252 },	-- Combat Task Briefing VIII
 					["cr"] = 11730,	-- Hive'Regal Ambusher
 					["repeatable"] = true,
@@ -990,8 +990,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8777, {	-- Target: Hive'Regal Burrowers
+				})),
+				un(PHASE_FIVE, q(8777, {	-- Target: Hive'Regal Burrowers
 					["provider"] = { "i", 21256 },	-- Combat Task Briefing XI
 					["cr"] = 11731,	-- Hive'Regal Burrower
 					["repeatable"] = true,
@@ -999,8 +999,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8776, {	-- Target: Hive'Regal Slavemakers
+				})),
+				un(PHASE_FIVE, q(8776, {	-- Target: Hive'Regal Slavemakers
 					["provider"] = { "i", 21255 },	-- Combat Task Briefing X
 					["cr"] = 11733,	-- Hive'Regal Slavemaker
 					["repeatable"] = true,
@@ -1008,8 +1008,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8775, {	-- Target: Hive'Regal Spitfires
+				})),
+				un(PHASE_FIVE, q(8775, {	-- Target: Hive'Regal Spitfires
 					["provider"] = { "i", 21253 },	-- Combat Task Briefing IX
 					["cr"] = 11732,	-- Hive'Regal Spitfire
 					["repeatable"] = true,
@@ -1017,8 +1017,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8539, {	-- Target: Hive'Zora Hive Sisters
+				})),
+				un(PHASE_FIVE, q(8539, {	-- Target: Hive'Zora Hive Sisters
 					["provider"] = { "i", 21249 },	-- Combat Task Briefing V
 					["cr"] = 11729,	-- Hive'Zora Hive Sister
 					["repeatable"] = true,
@@ -1026,8 +1026,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8773, {	-- Target: Hive'Zora Reavers
+				})),
+				un(PHASE_FIVE, q(8773, {	-- Target: Hive'Zora Reavers
 					["provider"] = { "i", 21248 },	-- Combat Task Briefing IV
 					["cr"] = 11728,	-- Hive'Zora Reaver
 					["repeatable"] = true,
@@ -1035,8 +1035,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8687, {	-- Target: Hive'Zora Tunnelers
+				})),
+				un(PHASE_FIVE, q(8687, {	-- Target: Hive'Zora Tunnelers
 					["provider"] = { "i", 21251 },	-- Combat Task Briefing VII
 					["cr"] = 11726,	-- Hive'Zora Tunneler
 					["repeatable"] = true,
@@ -1044,8 +1044,8 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
-				q(8772, {	-- Target: Hive'Zora Waywatchers
+				})),
+				un(PHASE_FIVE, q(8772, {	-- Target: Hive'Zora Waywatchers
 					["provider"] = { "i", 21250 },	-- Combat Task Briefing VI
 					["cr"] = 11725,	-- Hive'Zora Waywatcher
 					["repeatable"] = true,
@@ -1053,7 +1053,7 @@ _.Zones =
 					["groups"] = {
 						i(20802),	-- Cenarion Combat Badge
 					},
-				}),
+				})),
 				q(8315, {	-- The Calling
 					["qg"] = 15183,	-- Geologist Larksbane
 					["sourceQuest"] = 8314,	-- Unraveling the Mystery
@@ -1085,7 +1085,7 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(8538, {	-- The Four Dukes
+				un(PHASE_FIVE, q(8538, {	-- The Four Dukes
 					["provider"] = { "i", 20948 },	-- Tactical Task Briefing V
 					["crs"] = {
 						15206,	-- The Duke of Cynders <Abyssal Council>
@@ -1098,8 +1098,8 @@ _.Zones =
 					["groups"] = {
 						i(21508),	-- Mark of Cenarius
 					},
-				}),
-				q(8778, {	-- The Ironforge Brigade Needs Explosives!
+				})),
+				un(PHASE_FIVE, q(8778, {	-- The Ironforge Brigade Needs Explosives!
 					["provider"] = { "i", 21257 },	-- Logistics Task Briefing IV
 					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
@@ -1113,8 +1113,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(20805),	-- Followup Logistics Assignment
 					},
-				}),
-				q(8785, {	-- The Orgrimmar Legion Needs Mojo!
+				})),
+				un(PHASE_FIVE, q(8785, {	-- The Orgrimmar Legion Needs Mojo!
 					["provider"] = { "i", 21258 },	-- Logistics Task Briefing IV
 					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
@@ -1128,7 +1128,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21386),	-- Followup Logistics Assignment
 					},
-				}),
+				})),
 				un(PHASE_FIVE, q(9023, {	-- The Perfect Poison
 					["qg"] = 16091,	-- Dirk Thunderwood
 					["coord"] = { 52.1, 39.1, SILITHUS },
@@ -1203,7 +1203,7 @@ _.Zones =
 						},
 					},
 				}),
-				q(8829, {	-- The Ultimate Deception
+				un(PHASE_FIVE, q(8829, {	-- The Ultimate Deception
 					["provider"] = { "i", 21514 },	-- Logistics Task Briefing XI
 					["repeatable"] = true,
 					["cost"] = {
@@ -1215,7 +1215,7 @@ _.Zones =
 					["groups"] = {
 						i(21515),	-- Mark of Remulos
 					},
-				}),
+				})),
 				q(8323, {	-- True Believers
 					["qg"] = 15194,	-- Hermit Ortell
 					["sourceQuest"] = 8279,	-- The Twilight Lexicon
@@ -1225,7 +1225,7 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
-				q(8498, {	-- Twilight Battle Orders
+				un(PHASE_FIVE, q(8498, {	-- Twilight Battle Orders
 					["provider"] = { "i", 20943 },	-- Tactical Task Briefing X
 					["cr"] = 15308,	-- Twilight Prophet <Twilight's Hammer>
 					["repeatable"] = true,
@@ -1237,14 +1237,14 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(20809),	-- Tactical Assignment
 					},
-				}),
+				})),
 				q(8320, {	-- Twilight Geolords
 					["qg"] = 15270,	-- Huum Wildmane
 					["coord"] = { 48.7, 37.9, SILITHUS },
 					["cr"] = 11881,	-- Twilight Geolord
 					["lvl"] = 60,
 				}),
-				q(8740, {	-- Twilight Marauders
+				un(PHASE_FIVE, q(8740, {	-- Twilight Marauders
 					["provider"] = { "i", 20944 },	-- Tactical Task Briefing IX
 					["crs"] = {
 						15541,	-- Twilight Marauder Morna <Twilight's Hammer>
@@ -1256,7 +1256,7 @@ _.Zones =
 						i(20801),	-- Cenarion Tactical Badge
 						i(21133),	-- Followup Tactical Assignment
 					},
-				}),
+				})),
 				q(8342, {	-- Twilight Ring of Lordship
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["sourceQuest"] = 8341,	-- Lords of the Council
@@ -1281,7 +1281,7 @@ _.Zones =
 					},
 					["lvl"] = 54,
 				}),
-				q(8782, {	-- Uniform Supplies
+				un(PHASE_FIVE, q(8782, {	-- Uniform Supplies
 					["provider"] = { "i", 21262 },	-- Logistics Task Briefing VIII
 					["repeatable"] = true,
 					["cost"] = {
@@ -1294,8 +1294,8 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21132),	-- Logistics Assignment
 					},
-				}),
-				q(8808, {	-- Uniform Supplies
+				})),
+				un(PHASE_FIVE, q(8808, {	-- Uniform Supplies
 					["provider"] = { "i", 21384 },	-- Logistics Task Briefing VIII
 					["repeatable"] = true,
 					["cost"] = {
@@ -1308,7 +1308,7 @@ _.Zones =
 						i(20800),	-- Cenarion Logistics Badge
 						i(21266),	-- Logistics Assignment
 					},
-				}),
+				})),
 				q(8314, {	-- Unraveling the Mystery
 					["qg"] = 15170,	-- Rutgar Glyphshaper
 					["sourceQuests"] = {

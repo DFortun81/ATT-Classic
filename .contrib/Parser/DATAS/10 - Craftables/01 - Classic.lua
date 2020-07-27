@@ -171,7 +171,7 @@ _.Craftables =
 			i(12422),	-- Imperial Plate Chest
 			i(12641),	-- Invulnerable Mail
 			i(6731),	-- Ironforge Breastplate
-			un(PHASE_FIVE, i(22762)),	-- Ironvine Breastplate
+			un(PHASE_SIX, i(22762)),	-- Ironvine Breastplate
 			un(PHASE_FIVE, i(22191)),	-- Obsidian Mail Tunic
 			i(7935),	-- Ornate Mithril Breastplate
 			i(12415),	-- Radiant Breastplate
@@ -199,7 +199,7 @@ _.Craftables =
 			i(3485),	-- Green Iron Gauntlets
 			i(7919),	-- Heavy Mithril Gauntlet
 			un(PHASE_SIX, i(22670)),	-- Icebane Gauntlets
-			un(PHASE_FIVE, i(22763)),	-- Ironvine Gloves
+			un(PHASE_SIX, i(22763)),	-- Ironvine Gloves
 			i(7927),	-- Ornate Mithril Gloves
 			i(12418),	-- Radiant Gloves
 			i(3472),	-- Runed Copper Gauntlets
@@ -225,7 +225,7 @@ _.Craftables =
 			un(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
 			i(19043),	-- Heavy Timbermaw Belt
 			i(12424),	-- Imperial Plate Belt
-			un(PHASE_FIVE, i(22764)),	-- Ironvine Belt
+			un(PHASE_SIX, i(22764)),	-- Ironvine Belt
 			un(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
 			i(12416),	-- Radiant Belt
 			i(2857),	-- Runed Copper Belt
@@ -458,7 +458,7 @@ _.Craftables =
 		}),
 		filter(5, {	-- Leather
 			n(-320, {	-- Head
-				un(PHASE_FIVE, i(22759)),	-- Bramblewood Helm
+				un(PHASE_SIX, i(22759)),	-- Bramblewood Helm
 				i(16983),	-- Molten Helm
 				i(15094),	-- Runic Leather Headband (Trainable now, old Pattern id 15756 used to teach this.)
 				i(15086),	-- Wicked Leather Headband (Trainable now, old Pattern id 15744 used to teach this.)
@@ -563,7 +563,7 @@ _.Craftables =
 			}),
 			n(-328, {	-- Waist
 				i(18504),	-- Girdle of Insight
-				un(PHASE_FIVE, i(22761)),	-- Bramblewood Belt
+				un(PHASE_SIX, i(22761)),	-- Bramblewood Belt
 				i(19163),	-- Molten Belt
 				un(PHASE_THREE, i(19162)),	-- Corehound Belt
 				i(19149),	-- Lava Belt
@@ -608,7 +608,7 @@ _.Craftables =
 				i(7280),	-- Rugged Leather Pants
 			}),
 			n(-330, {	-- Feet
-				un(PHASE_FIVE, i(22760)),	-- Bramblewood Boots
+				un(PHASE_SIX, i(22760)),	-- Bramblewood Boots
 				i(16982),	-- Corehound Boots
 				i(18506),	-- Mongoose Boots
 				i(19052),	-- Dawn Treaders
@@ -762,7 +762,7 @@ _.Craftables =
 			i(13858),	-- Runecloth Robe
 			i(13857),	-- Runecloth Tunic
 			i(10004),	-- Shadoweave Robe
-			un(PHASE_FIVE, i(22756)),	-- Sylvan Vest
+			un(PHASE_SIX, i(22756)),	-- Sylvan Vest
 			i(14154),	-- Truefaith Vestments
 			i(6241),	-- White Linen Robe
 			i(14128),	-- Wizardweave Robe
@@ -775,7 +775,7 @@ _.Craftables =
 			i(14134),	-- Cloak of Fire
 			i(18413),	-- Cloak of Warding
 			i(7056),	-- Crimson Silk Cloak
-			un(PHASE_FIVE, i(22660)),	-- Gaea's Embrace
+			un(PHASE_SIX, i(22660)),	-- Gaea's Embrace
 			i(4311),	-- Heavy Woolen Cloak
 			i(4327),	-- Icy Cloak
 			i(4326),	-- Long Silken Cloak
@@ -840,7 +840,7 @@ _.Craftables =
 			i(4323),	-- Shadow Hood
 			i(10025),	-- Shadoweave Mask
 			i(7050),	-- Silk Headband
-			un(PHASE_FIVE, i(22757)),	-- Sylvan Crown
+			un(PHASE_SIX, i(22757)),	-- Sylvan Crown
 			i(10008),	-- White Bandit Mask
 			i(14130),	-- Wizardweave Turban
 		}),
@@ -907,7 +907,7 @@ _.Craftables =
 			i(4315),	-- Reinforced Woolen Shoulders
 			i(13867),	-- Runecloth Shoulders
 			i(10028),	-- Shadoweave Shoulders
-			un(PHASE_FIVE, i(22758)),	-- Sylvan Shoulders
+			un(PHASE_SIX, i(22758)),	-- Sylvan Shoulders
 		}),
 		n(-328, {	-- Waist
 			i(7052),	-- Azure Silk Belt
