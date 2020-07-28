@@ -4612,7 +4612,7 @@ app.BaseSpell = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) or IsSpellKnown(t.spellID, true) then
+			if IsSpellKnown(t.spellID) or IsPlayerSpell(t.spellID) or IsSpellKnown(t.spellID, true) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
@@ -5831,7 +5831,7 @@ local function RowOnEnter(self)
 		end
 		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
 		if reference.spellID then
-			if app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID)); end
+			if app.Settings:GetTooltipSetting("spellID") then GameTooltip:AddDoubleLine(L["SPELL_ID"], tostring(reference.spellID) .. " (" .. (app.GetSpellName(reference.spellID, reference.rank) or "??") .. ")"); end
 			
 			-- If the item is a recipe, then show which characters know this recipe.
 			if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then

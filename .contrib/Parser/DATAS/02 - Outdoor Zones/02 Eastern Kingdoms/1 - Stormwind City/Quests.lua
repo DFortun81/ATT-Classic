@@ -518,8 +518,11 @@ _.Zones =
 				q(353, {	-- Stormpike's Delivery
 					["qg"] = 1416,	-- Grimand Elmore
 					["sourceQuest"] = 1097,	-- Elmore's Task
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 51.8, 12.1, STORMWIND_CITY },
+					["cost"] = {
+						{ "i", 2806, 1 },	-- Package for Stormpike
+					},
+					["races"] = ALLIANCE_ONLY,
 				}),
 				q(579, {	-- Stormwind Library
 					["qg"] = 2504,	-- Donyal Tovald <Librarian>
