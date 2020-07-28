@@ -148,7 +148,7 @@ local UnobtainableSettingsBase = {
 		[12] = true,	-- Phase 2
 		[13] = true,	-- Phase 3
 		[14] = true,	-- Phase 4
-		[15] = false,	-- Phase 5
+		[15] = true,	-- Phase 5
 		[16] = false,	-- Phase 6
 		
 		-- Seasonal Filters
