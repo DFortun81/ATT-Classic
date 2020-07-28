@@ -686,8 +686,8 @@ _.Instances = {
 					i(14632),	-- Necropile Leggings
 					i(14631),	-- Necropile Boots
 					i(18684),	-- Dimly Opalescent Ring
-					un(PHASE_SIX, i(23201)),	-- Libram of Divinity
-					un(PHASE_SIX, i(23200)),	-- Totem of Sustaining
+					un(PHASE_FIVE, i(23201)),	-- Libram of Divinity
+					un(PHASE_FIVE, i(23200)),	-- Totem of Sustaining
 				},
 			}),
 			n(10505, {	-- Instructor Malicia

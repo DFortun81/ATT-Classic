@@ -577,7 +577,7 @@ _.Instances = {
 							i(13376),	-- Royal Tribunal Cloak
 							i(18726),	-- Magistrate's Cuffs
 							i(18722),	-- Death Grips
-							un(PHASE_SIX, i(23198)),	-- Idol of Brutality
+							un(PHASE_FIVE, i(23198)),	-- Idol of Brutality
 						},
 					}),
 					n(10809, {	-- Stonespine
