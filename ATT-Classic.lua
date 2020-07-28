@@ -8714,6 +8714,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				local reagentCache = app.GetDataMember("Reagents", {});
 				local activeSkills = GetTempDataMember("ActiveSkills");
 				local learned, craftSkillID, tradeSkillID = 0, 0, 0;
+				rawset(app.SpellNameToSpellID, 0, nil);
+				app.GetSpellName(0);
 				
 				-- Crafting Skills (Enchanting Only?)
 				local craftSkillName, craftSkillLevel, craftSkillMaxLevel = GetCraftDisplaySkillLine();
