@@ -2444,6 +2444,8 @@ local function RefreshSkills()
 	-- Store Skill Data
 	local activeSkills = GetTempDataMember("ActiveSkills");
 	wipe(activeSkills);
+	rawset(app.SpellNameToSpellID, 0, nil);
+	app.GetSpellName(0);
 	for index=GetNumSkillLines(),2,-1 do
 		local skillName, header, isExpanded, skillRank, numTempPoints, skillModifier,
 			skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType,
@@ -2453,7 +2455,7 @@ local function RefreshSkills()
 			if spellID then
 				activeSkills[spellID] = { skillRank, skillMaxRank };
 			else
-				--print(skillName, header, isExpanded, skillRank, numTempPoints, skillModifier, skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType, skillDescription);
+				-- print(skillName, header, isExpanded, skillRank, numTempPoints, skillModifier, skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType, skillDescription);
 			end
 		end
 	end
@@ -4548,28 +4550,40 @@ app.CraftTypeIDToColor = function(craftTypeID)
 	if craftType then return colors[craftType]; end
 	return nil;
 end
-app.SpellIDToSpellName = setmetatable({}, {
-	__index = function(t, spellID)
-		local spellName, rank = GetSpellInfo(spellID);
-		if spellName then
-			if rank then
-				spellName = spellName .. " (Rank " .. rank .. ")";
-			end
-			dirty = true;
-			rawset(t, spellID, spellName);
-			rawset(app.SpellNameToSpellID, spellName, spellID);
-			return spellName;
-		end
+app.SpellIDToSpellName = {};
+app.GetSpellName = function(spellID, rank)
+	local spellName = rawget(app.SpellIDToSpellName, spellID);
+	if spellName then return spellName; end
+	if rank then
+		spellName = GetSpellInfo(spellID, rank);
+	else
+		spellName = GetSpellInfo(spellID);
 	end
-});
+	if spellName and spellName ~= "" then
+		if rank then
+			spellName = spellName .. " (Rank " .. rank .. ")";
+		end
+		dirty = true;
+		rawset(app.SpellIDToSpellName, spellID, spellName);
+		rawset(app.SpellNameToSpellID, spellName, spellID);
+		return spellName;
+	end
+end
 app.SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
-		local cache, spellName = fieldCache["spellID"];
-		for spellID,o in pairs(cache) do
-			spellName = app.SpellIDToSpellName[spellID];
+		local cache = fieldCache["spellID"];
+		for spellID,g in pairs(cache) do
+			local rank;
+			for i,o in ipairs(g) do
+				if o.rank then
+					rank = o.rank;
+					break;
+				end
+			end
+			app.GetSpellName(spellID, rank);
 		end
 		for skillID,spellID in pairs(app.SkillIDToSpellID) do
-			spellName = app.SpellIDToSpellName[spellID];
+			app.GetSpellName(spellID);
 		end
 		if dirty then
 			dirty = false;
