@@ -4483,7 +4483,7 @@ app.BaseRecipe = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) or IsPlayerSpell(t.spellID) or IsSpellKnown(t.spellID, true) then
+			if app.IsSpellKnown(t.spellID, t.rank) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
@@ -4569,6 +4569,12 @@ app.GetSpellName = function(spellID, rank)
 		return spellName;
 	end
 end
+app.IsSpellKnown = function(spellID, rank)
+	if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
+		or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
+		return true;
+	end
+end
 app.SpellNameToSpellID = setmetatable({}, {
 	__index = function(t, key)
 		local cache = fieldCache["spellID"];
@@ -4626,7 +4632,7 @@ app.BaseSpell = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if IsSpellKnown(t.spellID) or IsPlayerSpell(t.spellID) or IsSpellKnown(t.spellID, true) then
+			if app.IsSpellKnown(t.spellID, t.rank) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
