@@ -83,6 +83,19 @@ _.Zones =
 						7438,	-- Winterfall Ursa
 					},
 				}),
+				i(21928, {	-- Winterspring Blood Sample
+					["crs"] = {
+						7445,	-- Elder Shardtooth
+						7431,	-- Frostsaber
+						7430,	-- Frostsaber Cub
+						7433,	-- Frostsaber Huntress
+						7434,	-- Frostsaber Pride Watcher
+						7432,	-- Frostsaber Stalker
+						7446,	-- Rabid Shardtooth
+						7444,	-- Shardtooth Bear
+						7443,	-- Shardtooth Mauler
+					},
+				}),
 			}),
 		}),
 	}),

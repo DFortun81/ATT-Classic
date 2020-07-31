@@ -82,126 +82,6 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				un(PHASE_FIVE, q(8917,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16710, 1 },	-- Shadowcraft Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { ROGUE },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22004),	-- Darkmantle Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8916, {	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16697, 1 },	-- Devout Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { PRIEST },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22079),	-- Virtuous Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8915,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16683, 1 },	-- Magister's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { MAGE },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22063),	-- Sorcerer's Bindings
-					},
-				})),
-				un(PHASE_FIVE, q(8920,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16735, 1 },	-- Bracers of Valor
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(21996),	-- Bracers of Heroism
-					},
-				})),
-				un(PHASE_FIVE, q(8918,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16722, 1 },	-- Lightforge Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { SHAMAN },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22095),	-- Bindings of The Five Thunders
-					},
-				})),
-				un(PHASE_FIVE, q(8919,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16703, 1 },	-- Dreadmist Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARLOCK },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22071),	-- Deathmist Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8913,	{	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16714, 1 },	-- Wildheart Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { DRUID },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22108),	-- Feralheart Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8914, {	-- An Earnest Proposition
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["cost"] = {
-						{ "i", 22381, 15 },	-- Silithus Venom Sample
-						{ "i", 16681, 1 },	-- Beaststalker's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { HUNTER },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22011),	-- Beastmaster's Bindings
-					},
-				})),
 				un(PHASE_FIVE, q(9016, {	-- Anthion's Parting Words
 					["lvl"] = 58,
 					["races"] = HORDE_ONLY,
@@ -426,70 +306,6 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["qg"] = 3326,	-- Zevrost
 				}),
-				un(PHASE_FIVE, q(8938, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22010),	-- Beastmaster's Belt
-						i(22015),	-- Beastmaster's Gloves
-					},
-				})),
-				un(PHASE_FIVE, q(8942, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22098),	-- Cord of The Five Thunders
-						i(22099),	-- Gauntlets of The Five Thunders
-					},
-				})),
-				un(PHASE_FIVE, q(8943, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22070),	-- Deathmist Belt
-						i(22077),	-- Deathmist Wraps
-					},
-				})),
-				un(PHASE_FIVE, q(8939, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22062),	-- Sorcerer's Belt
-						i(22066),	-- Sorcerer's Gloves
-					},
-				})),
-				un(PHASE_FIVE, q(8941, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22006),	-- Darkmantle Gloves
-						i(22002),	-- Darkmantle Belt
-					},
-				})),
-				un(PHASE_FIVE, q(8940, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22078),	-- Virtuous Belt
-						i(22081),	-- Virtuous Gloves
-					},
-				})),
-				un(PHASE_FIVE, q(8927, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22106),	-- Feralheart Belt
-						i(22110),	-- Feralheart Gloves
-					},
-				})),
-				un(PHASE_FIVE, q(8944, {	-- Just Compensation
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(21994),	-- Belt of Heroism
-						i(21998),	-- Gauntlets of Heroism
-					},
-				})),
 				q(1945, {	-- Laughing Sisters
 					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1944,	-- Waters of Xavian
@@ -535,10 +351,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
-				un(PHASE_FIVE, q(8978, {	-- Return to Mokvar
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-				})),
 				q(649, {	-- Ripple Recovery
 					["qg"] = 6986,	-- Dran Droffers
 					["coord"] = { 59.4, 36.8, ORGRIMMAR },

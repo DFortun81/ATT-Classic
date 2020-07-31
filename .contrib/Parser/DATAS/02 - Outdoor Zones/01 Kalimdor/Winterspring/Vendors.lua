@@ -36,6 +36,18 @@ _.Zones =
 						i(16221),	-- Formula: Enchant Chest - Major Health						
 					},
 				}),
+				n(16015, {	-- Vi'el <Exotic Reagent Merchant>
+					["coord"] = { 58.9, 78.4, WINTERSPRING },
+					["groups"] = {
+						{
+							["itemID"] = 21939,	-- Fel Elemental Rod
+							["questID"] = 8928,	-- A Shifty Merchant
+							["cost"] = {
+								{ "g", 400000 },	-- 40g
+							},
+						},
+					},
+				}),
 				n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>
 					["coord"] = { 60.8, 38.6, WINTERSPRING },
 					["groups"] = {						

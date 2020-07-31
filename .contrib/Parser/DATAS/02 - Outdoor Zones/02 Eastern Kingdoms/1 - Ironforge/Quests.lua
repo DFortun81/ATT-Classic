@@ -188,126 +188,6 @@ _.Zones =
 					["lvl"] = 50,
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 				}),
-				un(PHASE_FIVE, q(8910, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16710, 1 },	-- Shadowcraft Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { ROGUE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22004),	-- Darkmantle Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8909, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16697, 1 },	-- Devout Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { PRIEST },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22079),	-- Virtuous Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8907, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16683, 1 },	-- Magister's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { MAGE },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22063),	-- Sorcerer's Bindings
-					},
-				})),
-				un(PHASE_FIVE, q(8912, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16735, 1 },	-- Bracers of Valor
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARRIOR },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(21996),	-- Bracers of Heroism
-					},
-				})),
-				un(PHASE_FIVE, q(8908, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16722, 1 },	-- Lightforge Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22088),	-- Soulforge Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8911, {	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16703, 1 },	-- Dreadmist Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { WARLOCK },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22071),	-- Deathmist Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8905,	{	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16714, 1 },	-- Wildheart Bracers
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { DRUID },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22108),	-- Feralheart Bracers
-					},
-				})),
-				un(PHASE_FIVE, q(8906,	{	-- An Earnest Proposition
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.5, 52.6, IRONFORGE },
-					["cost"] = {
-						{ "i", 21928, 15 },	-- Winterspring Blood Sample
-						{ "i", 16681, 1 },	-- Beaststalker's Bindings
-						{ "g", 200000 },	-- 20g
-					},
-					["classes"] = { HUNTER },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 58,
-					["groups"] = {
-						i(22011),	-- Beastmaster's Bindings
-					},					
-				})),
 				q(3450, {	-- An Easy Pickup
 					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
@@ -702,10 +582,6 @@ _.Zones =
 					["qg"] = 1573,	-- Gryth Thurden
 					["sourceQuest"] = 6388,	-- Gryth Thurden
 				}),
-				un(PHASE_FIVE, q(8977, {	-- Return to Deliana
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-				})),
 				q(2977, {	-- Return to Ironforge
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,

@@ -35,6 +35,16 @@ _.Zones =
 				i(16222, {	-- Formula: Enchant Chest - Superior Spirit
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
+				un(PHASE_FIVE, i(21936, {	-- Frozen Ectoplasm
+					["questID"] = 8924,	-- Hunting for Ectoplasm
+					["crs"] = {
+						7524,	-- Anguished Highborne
+						7523,	-- Suffering Highborne
+					},
+					["cost"] = {
+						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+					},
+				})),
 				i(18512, {	-- Larval Acid
 					["crs"] = {
 						8605,	-- Carrion Devourer
@@ -100,6 +110,19 @@ _.Zones =
 				i(16056, {	-- Schematic: Flawless Arcanite Rifle
 					["cr"] = 8561,	-- Mossflayer Shadowhunter
 				}),
+				un(PHASE_FIVE, i(21935, {	-- Stable Ectoplasm
+					["questID"] = 8924,	-- Hunting for Ectoplasm
+					["crs"] = {
+						8542,	-- Death Singer
+						8539,	-- Eyeless Watcher
+						8541,	-- Hate Shrieker
+						8540,	-- Torn Screamer
+						8538,	-- Unseen Servant
+					},
+					["cost"] = {
+						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+					},
+				})),
 				i(13853, {	-- Slab of Carrion Worm Meat
 					["questID"] = 5544,	-- Carrion Grubbage
 					["crs"] = {

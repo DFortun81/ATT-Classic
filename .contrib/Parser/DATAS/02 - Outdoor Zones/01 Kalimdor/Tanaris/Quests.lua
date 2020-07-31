@@ -29,21 +29,6 @@ _.Zones =
 						i(9540),	-- Box of Spells
 					},
 				}),
-				un(PHASE_FIVE, q(8925, {	-- A Portable Power Source
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-				})),
-				un(PHASE_FIVE, q(8928, {	-- A Shifty Merchant
-					["lvl"] = 58,
-				})),
-				un(PHASE_FIVE, q(8923, {	-- A Supernatural Device
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-				})),
-				un(PHASE_FIVE, q(8922, {	-- A Supernatural Device
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-				})),
 				q(2747, {	-- An Extraordinary Egg
 					["qg"] = 7763,	-- Curgle Cranklehop
 					["sourceQuest"] = 2741,	-- The Super Egg-O-Matic
@@ -159,12 +144,6 @@ _.Zones =
 					},
 					["lvl"] = 42,
 				}),
-				un(PHASE_FIVE, q(8924, {	-- Hunting for Ectoplasm
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["qg"] = 16014,	-- Mux Manascrambler
-					["coord"] = { 52.5, 27.3, TANARIS },
-				})),
 				q(2606, {	-- In Good Taste
 					["lvl"] = 44,
 					["qg"] = 7564,	-- Marin Noggenfogger
@@ -215,7 +194,24 @@ _.Zones =
 				q(4507, {	-- Pawn Captures Queen
 					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.9, 27.0, TANARIS },
+					["maps"] = { UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11835, 1 },	-- Gorishi Queen Brain
+					},
 					["lvl"] = 50,
+					["groups"] = {
+						{
+							["itemID"] =  11833,	-- Gorishi Queen Lure
+							["coord"] = { 44.6, 81.6, UNGORO_CRATER },
+							["cr"] = 10041,	-- Gorishi Hive Queen
+							["groups"] = {
+								{
+									["itemID"] = 11835,	-- Gorishi Queen Brain
+									["questID"] = 4507,	-- Pawn Captures Queen
+								},
+							},
+						},
+					},
 				}),
 				q(8365, {	-- Pirate Hats Ahoy!
 					["qg"] = 15165,	-- Haughty Modiste
@@ -318,20 +314,6 @@ _.Zones =
 						i(16739),	-- Rugwood Mantle
 					},
 				}),
-				un(PHASE_FIVE, q(8921, {	-- The Ectoplasmic Distiller
-					["coord"] = { 52.4, 27.2, TANARIS },
-					["cost"] = {
-						{ "i", 16006, 1 },	-- Delicate Arcanite Converter
-						{ "i", 16203, 4 },	-- Greater Eternal Essence
-						{ "i", 13423, 10 },	-- Stonescale Oil
-						{ "i", 22338, 25 },	-- Volcanic Ash
-						{ "g", 400000 },
-					},
-					["lvl"] = 58,
-					["g"] = {
-						i(22320),	-- Mux's Quality Goods
-					},
-				})),
 				q(10, {	-- The Scrimshank Redemption
 					["qg"] = 7724,	-- Senior Surveyor Fizzledowser
 					["sourceQuest"] = 82,	-- Noxious Lair Investigation

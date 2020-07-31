@@ -84,6 +84,25 @@ _.Zones =
 					["questID"] = 8277,	-- Deadly Desert Venom
 					["cr"] = 11738,	-- Sand Skitterer
 				}),
+				un(PHASE_FIVE, i(21937, {	-- Scorched Ectoplasm
+					["questID"] = 8924,	-- Hunting for Ectoplasm
+					["crs"] = {
+						12178,	-- Tortured Druid
+						12179,	-- Tortured Sentinel
+					},
+					["cost"] = {
+						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
+					},
+				})),
+				i(22381, {	-- Silithus Venom Sample
+					["crs"] = {
+						11739,	-- Rock Stalker
+						11738,	-- Sand Skitterer
+						11737,	-- Stonelash Flayer
+						11736,	-- Stonelash Pincer
+						11735,	-- Stonelash Scorpid
+					},
+				}),
 				i(20375, {	-- Stonelash Flayer Stinger
 					["questID"] = 8278,	-- Noggle's Last Hope
 					["cr"] = 11737,	-- Stonelash Flayer
