@@ -87,10 +87,6 @@ profession(COOKING, {
 				["name"] = "Dig Rat Stew",
 				["recipeID"] = 6417
 			},
-			un(PHASE_FIVE, {
-				["name"] = "Dirge's Kickin' Chimaerok Chops",
-				["recipeID"] = 25659,
-			}),
 			{
 				["name"] = "Dry Pork Ribs",
 				["recipeID"] = 2546
@@ -327,6 +323,10 @@ profession(COOKING, {
 		["name"] = "Unusual Delights",
 		["categoryID"] = 12,
 		["g"] = {
+			un(PHASE_FIVE, {
+				["name"] = "Dirge's Kickin' Chimaerok Chops",
+				["recipeID"] = 25659,
+			}),
 			{
 				["name"] = "Dragonbreath Chili",
 				["recipeID"] = 15906
