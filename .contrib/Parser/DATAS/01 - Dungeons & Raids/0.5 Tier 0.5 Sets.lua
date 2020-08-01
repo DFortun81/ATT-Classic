@@ -40,6 +40,62 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22108),	-- Feralheart Bracers
 					},
 				}),
+				q(8951, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16715, 1 },	-- Wildheart Boots
+						{ "i", 16719, 1 },	-- Wildheart Kilt
+						{ "i", 16718, 1 },	-- Wildheart Spaulders
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22107),	-- Feralheart Boots
+						i(22111),	-- Feralheart Kilt
+						i(22112),	-- Feralheart Spaulders
+					},
+				}),
+				q(9016, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { DRUID },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16715, 1 },	-- Wildheart Boots
+						{ "i", 16719, 1 },	-- Wildheart Kilt
+						{ "i", 16718, 1 },	-- Wildheart Spaulders
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22107),	-- Feralheart Boots
+						i(22111),	-- Feralheart Kilt
+						i(22112),	-- Feralheart Spaulders
+					},
+				}),
+				q(8926, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { DRUID },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16716, 1 },	-- Wildheart Belt
+						{ "i", 16717, 1 },	-- Wildheart Gloves
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22106),	-- Feralheart Belt
+						i(22110),	-- Feralheart Gloves
+					},
+				}),
 				q(8927, {	-- Just Compensation [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["sourceQuest"] = 8978,	-- Return to Mokvar
@@ -89,6 +145,62 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					["lvl"] = 58,
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
+					},
+				}),
+				q(8952, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16675, 1 },	-- Beaststalker's Boots
+						{ "i", 16678, 1 },	-- Beaststalker's Pants
+						{ "i", 16679, 1 },	-- Beaststalker's Mantle
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22061),	-- Beastmaster's Boots
+						i(22017),	-- Beastmaster's Pants
+						i(22016),	-- Beastmaster's Mantle
+					},
+				}),
+				q(9017, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { HUNTER },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16675, 1 },	-- Beaststalker's Boots
+						{ "i", 16678, 1 },	-- Beaststalker's Pants
+						{ "i", 16679, 1 },	-- Beaststalker's Mantle
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22061),	-- Beastmaster's Boots
+						i(22017),	-- Beastmaster's Pants
+						i(22016),	-- Beastmaster's Mantle
+					},
+				}),
+				q(8931, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { HUNTER },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16680, 1 },	-- Beaststalker's Belt
+						{ "i", 16676, 1 },	-- Beaststalker's Gloves
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22010),	-- Beastmaster's Belt
+						i(22015),	-- Beastmaster's Gloves
 					},
 				}),
 				q(8938, {	-- Just Compensation [HORDE]
@@ -142,6 +254,79 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22063),	-- Sorcerer's Bindings
 					},
 				}),
+				q(8953, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16682, 1 },	-- Magister's Boots
+						{ "i", 16687, 1 },	-- Magister's Leggings
+						{ "i", 16689, 1 },	-- Magister's Mantle
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22064),	-- Sorcerer's Boots
+						i(22067),	-- Sorcerer's Leggings
+						i(22068),	-- Sorcerer's Mantle
+					},
+				}),
+				q(9018, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16682, 1 },	-- Magister's Boots
+						{ "i", 16687, 1 },	-- Magister's Leggings
+						{ "i", 16689, 1 },	-- Magister's Mantle
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22064),	-- Sorcerer's Boots
+						i(22067),	-- Sorcerer's Leggings
+						i(22068),	-- Sorcerer's Mantle
+					},
+				}),
+				q(8932, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16685, 1 },	-- Magister's Belt
+						{ "i", 16684, 1 },	-- Magister's Gloves
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22062),	-- Sorcerer's Belt
+						i(22066),	-- Sorcerer's Gloves
+					},
+				}),
+				q(8939, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16685, 1 },	-- Magister's Belt
+						{ "i", 16684, 1 },	-- Magister's Gloves
+					},
+					["classes"] = { MAGE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(22062),	-- Sorcerer's Belt
+						i(22066),	-- Sorcerer's Gloves
+					},
+				}),
 			})),
 			cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 				q(8908, {	-- An Earnest Proposition [ALLIANCE]
@@ -158,6 +343,42 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					["lvl"] = 58,
 					["groups"] = {
 						i(22088),	-- Soulforge Bracers
+					},
+				}),
+				q(8954, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16725, 1 },	-- Lightforge Boots
+						{ "i", 16728, 1 },	-- Lightforge Legplates
+						{ "i", 16729, 1 },	-- Lightforge Spaulders
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22087),	-- Soulforge Boots
+						i(22092),	-- Soulforge Legplates
+						i(22093),	-- Soulforge Spaulders
+					},
+				}),
+				q(8933, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PALADIN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16723, 1 },	-- Lightforge Belt
+						{ "i", 16724, 1 },	-- Lightforge Gauntlets
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22086),	-- Soulforge Belt
+						i(22090),	-- Soulforge Gauntlets
 					},
 				}),
 			})),
@@ -194,6 +415,79 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22079),	-- Virtuous Bracers
 					},
 				}),
+				q(8955, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16691, 1 },	-- Devout Sandals
+						{ "i", 16694, 1 },	-- Devout Skirt
+						{ "i", 16695, 1 },	-- Devout Mantle
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22084),	-- Virtuous Sandals
+						i(22085),	-- Virtuous Skirt
+						i(22082),	-- Virtuous Mantle
+					},
+				}),
+				q(9019, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16691, 1 },	-- Devout Sandals
+						{ "i", 16694, 1 },	-- Devout Skirt
+						{ "i", 16695, 1 },	-- Devout Mantle
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22084),	-- Virtuous Sandals
+						i(22085),	-- Virtuous Skirt
+						i(22082),	-- Virtuous Mantle
+					},
+				}),
+				q(8934, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { PRIEST },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16696, 1 },	-- Devout Belt
+						{ "i", 16692, 1 },	-- Devout Gloves
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22078),	-- Virtuous Belt
+						i(22081),	-- Virtuous Gloves
+					},
+				}),
+				q(8940, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16696, 1 },	-- Devout Belt
+						{ "i", 16692, 1 },	-- Devout Gloves
+					},
+					["classes"] = { PRIEST },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(22078),	-- Virtuous Belt
+						i(22081),	-- Virtuous Gloves
+					},
+				}),
 			})),
 			cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 				q(8910, {	-- An Earnest Proposition [ALLIANCE]
@@ -228,6 +522,79 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22004),	-- Darkmantle Bracers
 					},
 				}),
+				q(8956, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16711, 1 },	-- Shadowcraft Boots
+						{ "i", 16709, 1 },	-- Shadowcraft Pants
+						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22003),	-- Darkmantle Boots
+						i(22007),	-- Darkmantle Pants
+						i(22008),	-- Darkmantle Spaulders
+					},
+				}),
+				q(9020, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16711, 1 },	-- Shadowcraft Boots
+						{ "i", 16709, 1 },	-- Shadowcraft Pants
+						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22003),	-- Darkmantle Boots
+						i(22007),	-- Darkmantle Pants
+						i(22008),	-- Darkmantle Spaulders
+					},
+				}),
+				q(8935, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { ROGUE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16713, 1 },	-- Shadowcraft Belt
+						{ "i", 16712, 1 },	-- Shadowcraft Gloves
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22002),	-- Darkmantle Belt
+						i(22006),	-- Darkmantle Gloves
+					},
+				}),
+				q(8941, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16713, 1 },	-- Shadowcraft Belt
+						{ "i", 16712, 1 },	-- Shadowcraft Gloves
+					},
+					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(22006),	-- Darkmantle Gloves
+						i(22002),	-- Darkmantle Belt
+					},
+				}),
 			})),
 			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 				q(8918,	{	-- An Earnest Proposition [HORDE]
@@ -244,6 +611,43 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					["lvl"] = 58,
 					["groups"] = {
 						i(22095),	-- Bindings of The Five Thunders
+					},
+				}),
+				q(8957, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16670, 1 },	-- Boots of Elements
+						{ "i", 16668, 1 },	-- Kilt of Elements
+						{ "i", 16669, 1 },	-- Pauldrons of Elements
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22096),	-- Boots of The Five Thunders
+						i(22100),	-- Kilt of The Five Thunders
+						i(22101),	-- Pauldrons of The Five Thunders
+					},
+				}),
+				q(8942, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16673, 1 },	-- Cord of Elements
+						{ "i", 16672, 1 },	-- Gauntlets of Elements
+					},
+					["classes"] = { SHAMAN },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(22098),	-- Cord of The Five Thunders
+						i(22099),	-- Gauntlets of The Five Thunders
 					},
 				}),
 			})),
@@ -280,6 +684,79 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22071),	-- Deathmist Bracers
 					},
 				}),
+				q(8958, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16704, 1 },	-- Dreadmist Sandals
+						{ "i", 16699, 1 },	-- Dreadmist Leggings
+						{ "i", 16701, 1 },	-- Dreadmist Mantle
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22076),	-- Deathmist Sandals
+						i(22072),	-- Deathmist Leggings
+						i(22073),	-- Deathmist Mantle
+					},
+				}),
+				q(9021, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16704, 1 },	-- Dreadmist Sandals
+						{ "i", 16699, 1 },	-- Dreadmist Leggings
+						{ "i", 16701, 1 },	-- Dreadmist Mantle
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(22076),	-- Deathmist Sandals
+						i(22072),	-- Deathmist Leggings
+						i(22073),	-- Deathmist Mantle
+					},
+				}),
+				q(8936, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16702, 1 },	-- Dreadmist Belt
+						{ "i", 16705, 1 },	-- Dreadmist Wraps
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22070),	-- Deathmist Belt
+						i(22077),	-- Deathmist Wraps
+					},
+				}),
+				q(8943, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16702, 1 },	-- Dreadmist Belt
+						{ "i", 16705, 1 },	-- Dreadmist Wraps
+					},
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(22070),	-- Deathmist Belt
+						i(22077),	-- Deathmist Wraps
+					},
+				}),
 			})),
 			cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 				q(8912, {	-- An Earnest Proposition [ALLIANCE]
@@ -312,6 +789,79 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					["lvl"] = 58,
 					["groups"] = {
 						i(21996),	-- Bracers of Heroism
+					},
+				}),
+				q(8959, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16734, 1 },	-- Boots of Valor
+						{ "i", 16732, 1 },	-- Legplates of Valor
+						{ "i", 16733, 1 },	-- Spaulders of Valor
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(21995),	-- Boots of Heroism
+						i(22000),	-- Legplates of Heroism
+						i(22001),	-- Spaulders of Heroism
+					},
+				}),
+				q(9022, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16734, 1 },	-- Boots of Valor
+						{ "i", 16732, 1 },	-- Legplates of Valor
+						{ "i", 16733, 1 },	-- Spaulders of Valor
+					},
+					["lvl"] = 58,
+					["g"] = {
+						i(21995),	-- Boots of Heroism
+						i(22000),	-- Legplates of Heroism
+						i(22001),	-- Spaulders of Heroism
+					},
+				}),
+				q(8937, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16736, 1 },	-- Belt of Valor
+						{ "i", 16737, 1 },	-- Gauntlets of Valor
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(21994),	-- Belt of Heroism
+						i(21998),	-- Gauntlets of Heroism
+					},
+				}),
+				q(8944, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 16736, 1 },	-- Belt of Valor
+						{ "i", 16737, 1 },	-- Gauntlets of Valor
+					},
+					["classes"] = { WARRIOR },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 58,
+					["g"] = {
+						i(21994),	-- Belt of Heroism
+						i(21998),	-- Gauntlets of Heroism
 					},
 				}),
 			})),
@@ -384,6 +934,97 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					},
 					["lvl"] = 58,
 				}),
+				q(8948, {	-- Anthion's Old Friend
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 8947,	-- Anthion's Strange Request
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS, DIRE_MAUL },
+					["cost"] = {
+						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
+					},
+					["lvl"] = 58,
+				}),
+				q(8947, {	-- Anthion's Strange Request
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 8946,	-- Proof of Life
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 11371, 3 },	-- Dark Iron Bar
+						{ "i", 12810, 20 },	-- Enchanted Leather
+						{ "i", 14342, 3 },	-- Mooncloth
+						{ "i", 15407, 4 },	-- Cured Rugged Hide
+					},
+					["lvl"] = 58,
+				}),
+				q(8960, {	-- Bodley's Unfortunate Fate [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuests"] = {
+						8951,	-- Anthion's Parting Words [ALLIANCE]
+						8952,	-- Anthion's Parting Words [ALLIANCE]
+						8953,	-- Anthion's Parting Words [ALLIANCE]
+						8954,	-- Anthion's Parting Words [ALLIANCE]
+						8955,	-- Anthion's Parting Words [ALLIANCE]
+						8956,	-- Anthion's Parting Words [ALLIANCE]
+						8958,	-- Anthion's Parting Words [ALLIANCE]
+						8959,	-- Anthion's Parting Words [ALLIANCE]
+					},
+					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
+					["coord"] = { 43.53, 52.64, IRONFORGE },
+					["maps"] = { IRONFORGE, BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["lvl"] = 58,
+				}),
+				q(9032, {	-- Bodley's Unfortunate Fate [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuests"] = {
+						9016,	-- Anthion's Parting Words [HORDE]
+						9017,	-- Anthion's Parting Words [HORDE]
+						9018,	-- Anthion's Parting Words [HORDE]
+						9019,	-- Anthion's Parting Words [HORDE]
+						9020,	-- Anthion's Parting Words [HORDE]
+						8957,	-- Anthion's Parting Words [HORDE]
+						9021,	-- Anthion's Parting Words [HORDE]
+						9022,	-- Anthion's Parting Words [HORDE]
+					},
+					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
+					["coord"] = { 34.95, 38.29, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, BLACKROCK_MOUNTAIN, BLACKROCK_SPIRE },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["lvl"] = 58,
+				}),
+				q(8945, {	-- Dead Man's Plea
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuests"] = {
+						8929,	-- In Search of Anthion [ALLIANCE]
+						8930,	-- In Search of Anthion [HORDE]
+					},
+					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
+					["lvl"] = 58,
+					["groups"] = {
+						i(22137),	-- Ysida's Satchel
+					},
+				}),
+				q(8949, {	-- Falrin's Vendetta
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["sourceQuest"] = 8948,	-- Anthion's Old Friend
+					["maps"] = { DIRE_MAUL },
+					["cost"] = {
+						{ "i", 21982, 25 },	-- Ogre Warbeads
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						i(22150),	-- Beads of Ogre Might
+						i(22149),	-- Beads of Ogre Mojo
+					},
+				}),
 				q(8924, {	-- Hunting for Ectoplasm
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuest"] = 8921,	-- The Ectoplasmic Distiller
@@ -394,6 +1035,53 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						{ "i", 21936, 12 },	-- Frozen Ectoplasm
 						{ "i", 21937, 12 },	-- Scorched Ectoplasm
 						{ "i", 21935, 12 },	-- Stable Ectoplasm
+					},
+					["lvl"] = 58,
+				}),
+				q(8929, {	-- In Search of Anthion [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuests"] = {
+						8926,	-- Just Compensation [ALLIANCE]
+						8931,	-- Just Compensation [ALLIANCE]
+						8933,	-- Just Compensation [ALLIANCE]
+						8934,	-- Just Compensation [ALLIANCE]
+						8935,	-- Just Compensation [ALLIANCE]
+						8936,	-- Just Compensation [ALLIANCE]
+						8937,	-- Just Compensation [ALLIANCE]
+					},
+					["coord"] = { 43.53, 52.64, IRONFORGE },
+					["maps"] = { IRONFORGE, EASTERN_PLAGUELANDS, STRATHOLME },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["lvl"] = 58,
+				}),
+				q(8930, {	-- In Search of Anthion [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuests"] = {
+						8927,	-- Just Compensation [HORDE]
+						8938,	-- Just Compensation [HORDE]
+						8940,	-- Just Compensation [HORDE]
+						8941,	-- Just Compensation [HORDE]
+						8942,	-- Just Compensation [HORDE]
+						8943,	-- Just Compensation [HORDE]
+						8944,	-- Just Compensation [HORDE]
+					},
+					["coord"] = { 34.95, 38.29, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, EASTERN_PLAGUELANDS, STRATHOLME },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
+					},
+					["lvl"] = 58,
+				}),
+				q(8946, {	-- Proof of Life
+					["qg"] = 16031,	-- Ysida Harmon
+					["sourceQuest"] = 8945,	-- Dead Man's Plea
+					["maps"] = { EASTERN_PLAGUELANDS, STRATHOLME },
+					["cost"] = {
+						{ "i", 22139, 1 },	-- Ysida's Locket
 					},
 					["lvl"] = 58,
 				}),
@@ -419,6 +1107,21 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 					},
 					["lvl"] = 58,
 				}),
+				q(9015, {	-- The Challenge
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
+					["maps"] = { DIRE_MAUL, BLACKROCK_DEPTHS },
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+					},
+					["lvl"] = 58,
+					["groups"] = {
+						{
+							["itemID"] = 21986,	-- Banner of Provocation
+							["description"] = "Long after Classic is over, you can use this item to summon Unobtainable bosses and earn quite a bit of gold doing so for Transmog and other purposes. Save this item forever.",
+						},
+					},
+				}),
 				q(8921, {	-- The Ectoplasmic Distiller
 					["qg"] = 16014,	-- Mux Manascrambler
 					["sourceQuests"] = {
@@ -439,110 +1142,16 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 						i(22320),	-- Mux's Quality Goods
 					},
 				}),
-				
-				
-				
-				q(8942, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
+				q(8950, {	-- The Instigator's Enchantment
+					["qg"] = 16032,	-- Falrin Treeshaper
+					["sourceQuest"] = 8949,	-- Falrin's Vendetta
+					["maps"] = { DIRE_MAUL },
 					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
+						{ "i", 22224, 1 },	-- Jeering Spectre's Essence
+						{ "i", 20520, 4 },	-- Dark Rune
+						{ "i", 14344, 8 },	-- Large Brilliant Shard
 					},
-					["classes"] = {  },
-					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
-						i(22098),	-- Cord of The Five Thunders
-						i(22099),	-- Gauntlets of The Five Thunders
-					},
-				}),
-				q(8943, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
-					},
-					["classes"] = {  },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["g"] = {
-						i(22070),	-- Deathmist Belt
-						i(22077),	-- Deathmist Wraps
-					},
-				}),
-				q(8939, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
-					},
-					["classes"] = {  },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["g"] = {
-						i(22062),	-- Sorcerer's Belt
-						i(22066),	-- Sorcerer's Gloves
-					},
-				}),
-				q(8941, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
-					},
-					["classes"] = {  },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["g"] = {
-						i(22006),	-- Darkmantle Gloves
-						i(22002),	-- Darkmantle Belt
-					},
-				}),
-				q(8940, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
-					},
-					["classes"] = {  },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["g"] = {
-						i(22078),	-- Virtuous Belt
-						i(22081),	-- Virtuous Gloves
-					},
-				}),
-				q(8944, {	-- Just Compensation
-					["qg"] = 16012,	-- Mokvar
-					["sourceQuest"] = 8978,	-- Return to Mokvar
-					["coord"] = { 35.0, 38.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["cost"] = {
-						{ "i", , 1 },	-- 
-						{ "i", , 1 },	-- 
-					},
-					["classes"] = { WARRIOR },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 58,
-					["g"] = {
-						i(21994),	-- Belt of Heroism
-						i(21998),	-- Gauntlets of Heroism
-					},
 				}),
 			}),
 		},

@@ -6,14 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, {
 		m(BLACKROCK_MOUNTAIN, {
 			n(QUESTS, {
-				un(PHASE_FIVE, q(9032, {	-- Bodley's Unfortunate Fate
-					["lvl"] = 58,
-					["qg"] = 16012,	-- Mokvar
-				})),
-				un(PHASE_FIVE, q(8960, {	-- Bodley's Unfortunate Fate
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-				})),
 				un(PHASE_FIVE, q(8962, {	-- Components of Importance
 					["lvl"] = 58,
 				})),

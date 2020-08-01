@@ -886,13 +886,16 @@ _.Instances = {
 				i(11627), 	-- Fleetfoot Greaves
 			}),
 			un(PHASE_FIVE, n(16059, { 	-- Theldren
-				["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
 				["provider"] = { "o", 181074 },	-- Arena Spoils
+				["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot grey chest on grey grate after killing the mobs.",
 				["cost"] = {
 					{ "i", 21986, 1 },	-- Banner of Provocation
 				},
 				["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
-					i(22047),	-- Top Piece of Lord Valthalak's Amulet
+					{
+						["itemID"] = 22047,	-- Top Piece of Lord Valthalak's Amulet
+						["questID"] = 9015,	-- The Challenge
+					},
 					i(22305), 	-- Ironweave Mantle
 					i(22317), 	-- Lefty's Brass Knuckle
 					i(22318), 	-- Malgen's Long Bow

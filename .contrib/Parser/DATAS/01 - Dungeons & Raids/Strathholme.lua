@@ -28,13 +28,6 @@ _.Instances = {
 						i(17045),	-- Blood of the Martyr
 					},
 				}),
-				un(PHASE_FIVE, q(8945, {	-- Dead Man's Plea
-					["qg"] = 16016,	-- Anthion Harmon
-					["sourceQuest"] = 8929,	-- In Search of Anthion
-					["coord"] = { 30.85, 16.75, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["lvl"] = 58,
-				})),
 				q(5861, {	-- Find Myranda
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuest"] = 5848,	-- Of Love and Family (2/2)
@@ -75,26 +68,6 @@ _.Instances = {
 						i(16058),	-- Fordring's Seal
 					},
 				}),
-				un(PHASE_FIVE, q(8929, {	-- In Search of Anthion
-					["qg"] = 16013,	-- Deliana
-					["coord"] = { 43.53, 52.64, IRONFORGE },
-					["maps"] = { IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
-					["lvl"] = 58,
-				})),
-				un(PHASE_FIVE, q(8930, {	-- In Search of Anthion
-					["qg"] = 16012,	-- Mokvar
-					["coord"] = { 34.95, 38.29, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 22115, 1 },	-- Extra-Dimensional Ghost Revealer
-					},
-					["lvl"] = 58,
-				})),
 				q(5264, {	-- Lord Maxwell Tyrosus
 					["qg"] = 11039,	-- Duke Nicholas Zverenhoff <The Argent Dawn>
 					["sourceQuest"] = 5263,	-- Above and Beyond
@@ -151,17 +124,6 @@ _.Instances = {
 					},
 					["lvl"] = 52,
 				}),
-				un(PHASE_FIVE, q(8946, {	-- Proof of Life
-					["qg"] = 16031,	-- Ysida Harmon
-					["sourceQuest"] = 8945,	-- Dead Man's Plea
-					["lvl"] = 58,
-					["groups"] = {
-						un(PHASE_FIVE, {
-							["itemID"] = 22139,	-- Ysida's Locket
-							["questID"] = 8946,	-- Proof of Life
-						}),
-					},
-				})),
 				q(6163, {	-- Ramstein
 					["qg"] = 11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					["coord"] = { 26.6, 74.8, EASTERN_PLAGUELANDS },

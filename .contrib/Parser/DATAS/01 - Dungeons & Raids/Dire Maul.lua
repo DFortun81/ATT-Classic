@@ -21,29 +21,6 @@ _.Instances = {
 					},
 					["lvl"] = 56,
 				}),
-				un(PHASE_FIVE, q(8948, {	-- Anthion's Old Friend
-					["sourceQuest"] = 8947,	-- Anthion's Strange Request
-					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["cost"] = {
-						{ "i", 21983, 1 },	-- Incomplete Banner of Provocation
-					},
-					["lvl"] = 58,
-				})),
-				un(PHASE_FIVE, q(8947, {	-- Anthion's Strange Request
-					["sourceQuest"] = 8946,	-- Proof of Life
-					["qg"] = 16016,	-- Anthion Harmon
-					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["cost"] = {
-						{ "i", 11371, 3 },	-- Dark Iron Bar
-						{ "i", 12810, 20 },	-- Enchanted Leather
-						{ "i", 14342, 3 },	-- Mooncloth
-						{ "i", 15407, 4 },	-- Cured Rugged Hide
-					},
-					["lvl"] = 58,
-				})),
 				q(7463, {	-- Arcane Refreshment
 					["qg"] = 14368,	-- Lorekeeper Lydros
 					["classes"] = { MAGE },
@@ -97,15 +74,6 @@ _.Instances = {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 54,
 				}),
-				un(PHASE_FIVE, q(8949, {	-- Falrin's Vendetta
-					["sourceQuest"] = 8948,	-- Anthion's Old Friend
-					["qg"] = 16032,	-- Falrin Treeshaper
-					["lvl"] = 58,
-					["groups"] = {
-						i(22150),	-- Beads of Ogre Might
-						i(22149),	-- Beads of Ogre Mojo
-					},
-				})),
 				q(7494, {	-- Feathermoon Stronghold
 					["qgs"] = {
 						2198,	-- Crier Goodman
@@ -303,20 +271,6 @@ _.Instances = {
 						i(18468),	-- Royal Seal of Eldre'Thalas
 					},
 				},
-				un(PHASE_FIVE, {
-					["questID"] = 9015,	-- The Challenge
-					["sourceQuest"] = 8950,	-- The Instigator's Enchantment
-					["qg"] = 16032,	-- Falrin Treeshaper
-					["maps"] = { BLACKROCK_DEPTHS },
-					["lvl"] = 58,
-					["groups"] = {
-						{
-							["itemID"] = 21986,	-- Banner of Provocation
-							["allianceQuestID"] = 9015,	-- The Challenge
-							["hordeQuestID"] = 9018,	-- Anthion's Parting Words
-						},
-					},
-				}),
 				{
 					["questID"] = 7506,	-- The Emerald Dream...
 					["qg"] = 14381,	-- Lorekeeper Javon
@@ -392,17 +346,6 @@ _.Instances = {
 						i(18473),	-- Royal Seal of Eldre'Thalas
 					},
 				},
-				un(PHASE_FIVE, {
-					["questID"] = 8950,	-- The Instigator's Enchantment
-					["sourceQuest"] = 8949,	-- Falrin's Vendetta
-					["qg"] = 16032,	-- Falrin Treeshaper
-					["cost"] = {
-						{ "i", 22224, 1 },	-- Jeering Spectre's Essence
-						{ "i", 20520, 4 },	-- Dark Rune
-						{ "i", 14344, 8 },	-- Large Brilliant Shard
-					},
-					["lvl"] = 58,
-				}),
 				{
 					["questID"] = 7501,	-- The Light and How To Swing It
 					["qg"] = 14382,	-- Lorekeeper Mykos
@@ -533,10 +476,42 @@ _.Instances = {
 				i(17682),	-- Book: Gift of the Wild Rank 1
 				i(17683),	-- Book: Gift of the Wild Rank 2
 				i(12662),	-- Demonic Rune
+				{
+					["itemID"] = 18250,	-- Gordok Shackle Key
+					["questID"] = 5525,	-- Free Knot!
+					["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
+					["crs"] = {
+						14325,	-- Captain Kromcrush
+						14321,	-- Guard Fengus
+						14326,	-- Guard Mol'dar
+						14323,	-- Guard Slip'kik
+						11441,	-- Gordok Brute
+						14351,	-- Gordok Bushwacker
+						11445,	-- Gordok Captain
+						11444,	-- Gordok Mage-Lord
+						11450,	-- Gordok Reaver
+						11448,	-- Gordok Warlock
+					},
+				},
 				i(18640),	-- Happy Fun Rock
 				i(18333),	-- Libram of Focus
 				i(18334),	-- Libram of Protection
 				i(18332),	-- Libram of Rapidity
+				un(PHASE_FIVE, {
+					["itemID"] = 21982,	-- Ogre Warbeads
+					["questID"] = 8949,	-- Falrin's Vendetta
+					["crs"] = {
+						11441,	-- Gordok Brute
+						14351,	-- Gordok Bushwacker
+						11445,	-- Gordok Captain
+						11440,	-- Gordok Enforcer
+						11444,	-- Gordok Mage-Lord
+						11442,	-- Gordok Mauler
+						11443,	-- Gordok Ogre-Mage
+						11450,	-- Gordok Reaver
+						11448,	-- Gordok Warlock
+					},
+				}),
 			}),
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",
@@ -677,17 +652,6 @@ _.Instances = {
 			n(-13, {	-- Gordok Commons [North - Ogres] [Straight]
 				["description"] = "This part of the instance can be accessed after clearing West or entering from the northern-most portal.",
 				["groups"] = {
-					n(ZONEDROPS, {
-						{
-							["itemID"] = 18250,	-- Gordok Shackle Key
-							["questID"] = 5525,	-- Free Knot!
-							["description"] = "Drops from any Gordok Ogre in Dire Maul North.\n\nNOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
-						},
-						un(PHASE_FIVE, {
-							["itemID"] = 21982,	-- Ogre Warbeads
-							["questID"] = 8949,	-- Falrin's Vendetta
-						}),
-					}),
 					n(14326, {	-- Guard Mol'dar
 						i(18498),	-- Hedgecutter
 						i(18462),	-- Jagged Bone Fist
@@ -855,6 +819,7 @@ _.Instances = {
 							["crs"] = {
 								11471,	-- Eldreth Apparition
 								11475,	-- Eldreth Phantasm
+								11469,	-- Eldreth Seether
 								11470,	-- Eldreth Sorcerer
 								11473,	-- Eldreth Spectre
 								11472,	-- Eldreth Spirit
