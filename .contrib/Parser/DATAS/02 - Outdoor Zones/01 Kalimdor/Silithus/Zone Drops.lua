@@ -28,6 +28,15 @@ _.Zones =
 						11725,	-- Hive'Zora Waywatcher
 					},
 				}),
+				un(PHASE_FIVE, i(22226, {	-- Druidical Remains
+					["crs"] = {
+						11730,	-- Hive'Regal Ambusher
+						11731,	-- Hive'Regal Burrower
+						11734,	-- Hive'Regal Hive Lord
+						11733,	-- Hive'Regal Slavemaker
+						11732,	-- Hive'Regal Spitfire
+					},
+				})),
 				i(20404, {	-- Encrypted Twilight Text
 					["questID"] = 8323,	-- True Believers
 					["crs"] = {
@@ -217,6 +226,10 @@ _.Zones =
 				i(20654, {	-- Amethyst War Staff
 					["cr"] = 15211,	-- Azure Templar <Abyssal Council>
 				}),
+				un(PHASE_FIVE, i(21989, {	-- Cinder of Cynders
+					["questID"] = 8961,	-- Three Kings of Flame
+					["cr"] = 15206,	-- The Duke of Cynders <Abyssal Council>
+				})),
 				i(20657, {	-- Crystal Tipped Stiletto
 					["cr"] = 15209,	-- Crimson Templar <Abyssal Council>
 				}),

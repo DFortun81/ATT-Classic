@@ -245,10 +245,6 @@ _.Zones =
 						i(5396),	-- Key to Searing Gorge
 					},
 				}),
-				un(PHASE_FIVE, q(8997, {	-- Back to the Beginning
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-				})),
 				q(8415, {	-- Chillwind Camp
 					["qg"] = 5149,	-- Brandur Ironhammer <Paladin Trainer>
 					["coord"] = { 23.6, 6.6, IRONFORGE },
@@ -448,78 +444,6 @@ _.Zones =
 					["sourceQuest"] = 637,	-- Sully Balloo's Letter
 					["coord"] = { 63.5, 67.2, IRONFORGE },
 				}),
-				un(PHASE_FIVE, q(9003, {	-- Saving the Best for Last
-					["classes"] = { PRIEST },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22080),	-- Virtuous Crown
-						i(22083),	-- Virtuous Robe
-					},
-				})),
-				un(PHASE_FIVE, q(9001, {	-- Saving the Best for Last
-					["classes"] = { MAGE },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22065),	-- Sorcerer's Crown
-						i(22069),	-- Sorcerer's Robes
-					},
-				})),
-				un(PHASE_FIVE, q(8999, {	-- Saving the Best for Last
-					["classes"] = { DRUID },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22109),	-- Feralheart Cowl
-						i(22113),	-- Feralheart Vest
-					},
-				})),
-				un(PHASE_FIVE, q(9006, {	-- Saving the Best for Last
-					["classes"] = { WARRIOR },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(21999),	-- Helm of Heroism
-						i(21997),	-- Breastplate of Heroism
-					},
-				})),
-				un(PHASE_FIVE, q(9005, {	-- Saving the Best for Last
-					["classes"] = { WARLOCK },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22074),	-- Deathmist Mask
-						i(22075),	-- Deathmist Robe
-					},
-				})),
-				un(PHASE_FIVE, q(9000, {	-- Saving the Best for Last
-					["classes"] = { HUNTER },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22013),	-- Beastmaster's Cap
-						i(22060),	-- Beastmaster's Tunic
-					},
-				})),
-				un(PHASE_FIVE, q(9004, {	-- Saving the Best for Last
-					["classes"] = { ROGUE },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22005),	-- Darkmantle Cap
-						i(22009),	-- Darkmantle Tunic
-					},
-				})),
-				un(PHASE_FIVE, q(9002, {	-- Saving the Best for Last
-					["classes"] = { PALADIN },
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(22091),	-- Soulforge Helm
-						i(22089),	-- Soulforge Breastplate
-					},
-				})),
 				q(2946, {	-- Seeing What Happens
 					["lvl"] = 45,
 					["races"] = ALLIANCE_ONLY,

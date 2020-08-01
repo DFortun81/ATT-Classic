@@ -17,6 +17,14 @@ _.Zones =
 				n(10857, {	-- Argent Quartermaster Lightspark <The Argent Dawn>
 					["coord"] = { 42.8, 83.7, WESTERN_PLAGUELANDS },
 					["groups"] = {
+						{
+							["itemID"] = 22014,	-- Hallowed Brazier
+							["questID"] = 8961,	-- Three Kings of Flame
+							["minReputation"] = { 529, HONORED },	-- Argent Dawn
+							["cost"] = {
+								{ "g", 1500000 },	-- 150g
+							},
+						},
 						i(18182, {	-- Chromatic Mantle of the Dawn
 							["sourceQuests"] = {
 								5517,	-- Chromatic Mantle of the Dawn

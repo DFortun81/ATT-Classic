@@ -168,6 +168,13 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["cr"] = 2269,	-- Hillsbrad Miner
 				}),
+				un(PHASE_FIVE, i(22229, {	-- Soul Ashes of the Banished
+					["crs"] = {
+						7071,	-- Cursed Paladin
+						7072,	-- Cursed Justicar
+						7075,	-- Writhing Mage
+					},
+				})),
 				i(3510, {	-- Torn Fin Eye
 					["questID"] = 515,	-- Elixir of Agony
 					["races"] = HORDE_ONLY,

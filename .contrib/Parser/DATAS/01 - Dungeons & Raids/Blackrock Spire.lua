@@ -827,6 +827,7 @@ _.Instances = {
 				}),
 				i(16680),	-- Beaststalker's Belt
 				i(16681),	-- Beaststalker's Bindings
+				i(16736),	-- Belt of Valor
 				i(16735),	-- Bracers of Valor
 				i(16673), 	-- Cord of Elements
 				i(16696),	-- Devout Belt
@@ -835,6 +836,7 @@ _.Instances = {
 				i(16683),	-- Magister's Bindings
 				i(16713),	-- Shadowcraft Belt
 				i(16716),	-- Wildheart Belt
+				i(16717),	-- Wildheart Gloves
 				i(13260),	-- Wind Dancer Boots
 				i(13371),	-- Father Flame
 			}),
@@ -891,7 +893,6 @@ _.Instances = {
 					i(13167),	-- Fist of Omokk
 					i(13166),	-- Slamshot Shoulders
 					i(13168),	-- Plate of the Shaman King
-					i(16736),	-- Belt of Valor
 					i(13170),	-- Skyshroud Leggings
 					i(13169),	-- Tressermane Leggings
 					i(16670),	-- Boots of Elements
@@ -934,20 +935,14 @@ _.Instances = {
 					i(13173),	-- Flightblade Throwing Axe
 				}),
 				un(PHASE_FIVE, n(16080, {	-- Mor Grayhoof
-					["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 					["cost"] = {
-						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor]
+						{ "i", 22049, 1 },	-- Brazier of Beckoning [Mor Grayhoof]
 						{ "i", 22057, 1 },	-- Brazier of Invocation
 					},
 					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
-						{
-							["itemID"] = 21984,	-- Left Piece of Lord Valthalak's Amulet
-							["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet
-						},
-						{
-							["itemID"] = 22046,	-- Right Piece of Lord Valthalak's Amulet
-							["questID"] = 8989,	-- The Right Piece of Lord Valthalak's Amulet
-						},
+						i(21984),	-- Left Piece of Lord Valthalak's Amulet
+						i(22046),	-- Right Piece of Lord Valthalak's Amulet
 						i(22322),	-- The Jaw Breaker
 						i(22319),	-- Tome of Divine Right
 						i(22325),	-- Belt of the Trickster
@@ -996,27 +991,18 @@ _.Instances = {
 						},
 						i(13258),	-- Slaghide Gauntlets
 						un(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
-						i(16670),	-- Boots of Elements
 						i(13259),	-- Ribsteel Footguards
 						i(13178),	-- Rosewine Circle
 					},
 				}),
 				n(9736, {	-- Quartermaster Zigris
 					i(12835),	-- Plans: Annihilator
+					i(13253),	-- Hands of Power
+					i(13252),	-- Cloudrunner Girdle
 					{
 						["itemID"] = 13247,	-- Quartermaster Zigris' Footlocker
 						["description"] = "Contains a random green item.",
 					},
-					i(13253),	-- Hands of Power
-					i(16680),	-- Beaststalker's Belt
-					i(16735),	-- Bracers of Valor
-					i(13252),	-- Cloudrunner Girdle
-					i(16673),	-- Cord of Elements
-					i(16696),	-- Devout Belt
-					i(16703),	-- Dreadmist Bracers
-					i(16683),	-- Magister's Bindings
-					i(16713),	-- Shadowcraft Belt
-					i(16716),	-- Wildheart Belt
 				}),
 				n(10221, {	-- Bloodaxe Worg Pup
 					["description"] = "Can be pulled outside of the room without engaging the boss.",
@@ -1208,9 +1194,9 @@ _.Instances = {
 						}),
 					}),
 					un(PHASE_FIVE, n(16042, { 	-- Lord Valthalak
-						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
-							{ "i", 22056, 1 },	-- Brazier of Beckoning [Valthalak]
+							{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {

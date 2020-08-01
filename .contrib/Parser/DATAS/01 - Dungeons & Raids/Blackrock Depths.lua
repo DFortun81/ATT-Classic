@@ -1204,6 +1204,7 @@ _.Instances = {
 				i(11934),	-- Emperor's Seal
 				i(11815),	-- Hand of Justice
 				i(12033),	-- Thaurissan Family Jewels
+				i(16724),	-- Lightforge Gauntlets
 			}),
 		},
 	}),

@@ -499,13 +499,17 @@ _.Instances = {
 						}),
 					})),
 					un(PHASE_FIVE, n(16102, { 	-- Sothos
-						["crs"] = 16101,	-- Jarien
-						["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+						["crs"] = {
+							16101,	-- Jarien
+						},
+						["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 						["cost"] = {
 							{ "i", 22051, 1 },	-- Brazier of Beckoning [Jarien & Sothos]
 							{ "i", 22057, 1 },	-- Brazier of Invocation
 						},
 						["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+							i(21984),	-- Left Piece of Lord Valthalak's Amulet
+							i(22046),	-- Right Piece of Lord Valthalak's Amulet
 							i(22329),	-- Scepter of Interminable Focus
 							i(22327),	-- Amulet of the Redeemed
 							i(22301), 	-- Ironweave Robe

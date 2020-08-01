@@ -20,6 +20,9 @@ _.Zones =
 						11878,	-- Nathanos Blightcaller <Champion of the Banshee Queen>
 					},
 				}),
+				un(PHASE_FIVE, i(22228, {	-- Brilliant Sword of Zealotry
+					["cr"] = 9448,	-- Scarlet Praetorian
+				})),
 				i(17309, {	-- Discordant Bracers
 					["questID"] = 6804,	-- Poisoned Water
 					["crs"] = {
@@ -35,16 +38,6 @@ _.Zones =
 				i(16222, {	-- Formula: Enchant Chest - Superior Spirit
 					["cr"] = 9447,	-- Scarlet Warder
 				}),
-				un(PHASE_FIVE, i(21936, {	-- Frozen Ectoplasm
-					["questID"] = 8924,	-- Hunting for Ectoplasm
-					["crs"] = {
-						7524,	-- Anguished Highborne
-						7523,	-- Suffering Highborne
-					},
-					["cost"] = {
-						{ "i", 21946, 1 },	-- Ectoplasmic Distiller
-					},
-				})),
 				i(18512, {	-- Larval Acid
 					["crs"] = {
 						8605,	-- Carrion Devourer

@@ -24,6 +24,14 @@ _.Zones =
 				n(10856, {	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					["groups"] = {
+						{
+							["itemID"] = 22014,	-- Hallowed Brazier
+							["questID"] = 8961,	-- Three Kings of Flame
+							["minReputation"] = { 529, HONORED },	-- Argent Dawn
+							["cost"] = {
+								{ "g", 1500000 },	-- 150g
+							},
+						},
 						i(18182, {	-- Chromatic Mantle of the Dawn
 							["sourceQuests"] = {
 								5517,	-- Chromatic Mantle of the Dawn

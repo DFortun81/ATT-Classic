@@ -467,8 +467,10 @@ _.Instances = {
 				i(18697),	-- Coldstone Slippers
 				i(16671),	-- Bindings of Elements
 				i(16702),	-- Dreadmist Belt
+				i(16705),	-- Dreadmist Wraps
 				i(16722),	-- Lightforge Bracers
 				i(16685),	-- Magister's Belt
+				i(16684),	-- Magister's Gloves
 				i(16710),	-- Shadowcraft Bracers
 				i(16714),	-- Wildheart Bracers
 				i(16716),	-- Wildheart Belt
@@ -628,20 +630,14 @@ _.Instances = {
 				i(18694),	-- Shadowy Mail Greaves
 			}),
 			un(PHASE_FIVE, n(16118, {	-- Kormok
-				["description"] = "This boss was summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
+				["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",
 				["cost"] = {
 					{ "i", 22052, 1 },	-- Brazier of Beckoning [Kormok]
 					{ "i", 22057, 1 },	-- Brazier of Invocation
 				},
 				["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
-					{
-						["itemID"] = 21984,	-- Left Piece of Lord Valthalak's Amulet
-						["questID"] = 8966,	-- The Left Piece of Lord Valthalak's Amulet
-					},
-					{
-						["itemID"] = 22046,	-- Right Piece of Lord Valthalak's Amulet
-						["questID"] = 8989,	-- The Right Piece of Lord Valthalak's Amulet
-					},
+					i(21984),	-- Left Piece of Lord Valthalak's Amulet
+					i(22046),	-- Right Piece of Lord Valthalak's Amulet
 					i(22332),	-- Blade of Necromancy
 					i(22333),	-- Hammer of Divine Might
 					i(22303),	-- Ironweave Pants
@@ -679,7 +675,6 @@ _.Instances = {
 					i(14623),	-- Deathbone Legguards
 					i(14621),	-- Deathbone Sabatons
 					i(18682),	-- Ghoul Skin Leggings
-					i(16684),	-- Magister's Gloves
 					i(14633),	-- Necropile Mantle
 					i(14626),	-- Necropile Robe
 					i(14629),	-- Necropile Cuffs

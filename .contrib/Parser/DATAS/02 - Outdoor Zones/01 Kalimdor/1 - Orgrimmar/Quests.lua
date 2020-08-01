@@ -92,11 +92,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
-				un(PHASE_FIVE, q(8998, {	-- Back to the Beginning
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["qg"] = 16033,	-- Bodley
-				})),
 				q(1508, {	-- Blind Cazul
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
@@ -284,70 +279,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
-				un(PHASE_FIVE, q(9008, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22013),	-- Beastmaster's Cap
-						i(22060),	-- Beastmaster's Tunic
-					},
-				})),
-				un(PHASE_FIVE, q(9010, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22005),	-- Darkmantle Cap
-						i(22009),	-- Darkmantle Tunic
-					},
-				})),
-				un(PHASE_FIVE, q(9012, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22074),	-- Deathmist Mask
-						i(22075),	-- Deathmist Robe
-					},
-				})),
-				un(PHASE_FIVE, q(9007, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22109),	-- Feralheart Cowl
-						i(22113),	-- Feralheart Vest
-					},
-				})),
-				un(PHASE_FIVE, q(9014, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22065),	-- Sorcerer's Crown
-						i(22069),	-- Sorcerer's Robes
-					},
-				})),
-				un(PHASE_FIVE, q(9009, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22080),	-- Virtuous Crown
-						i(22083),	-- Virtuous Robe
-					},
-				})),
-				un(PHASE_FIVE, q(9011, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(22097),	-- Coif of The Five Thunders
-						i(22102),	-- Vest of The Five Thunders
-					},
-				})),
-				un(PHASE_FIVE, q(9013, {	-- Saving the Best for Last
-					["lvl"] = 58,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						i(21999),	-- Helm of Heroism
-						i(21997),	-- Breastplate of Heroism
-					},
-				})),
 				q(2996, {	-- Seeking Strahad
 					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["races"] = { ORC, UNDEAD },
