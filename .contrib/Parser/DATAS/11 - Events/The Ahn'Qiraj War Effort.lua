@@ -24,6 +24,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Stormwind",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 1 },	-- Alliance Commendation Signet
 						},
@@ -56,6 +57,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Ironforge",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 1 },	-- Alliance Commendation Signet
 						},
@@ -88,6 +90,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Darnassus",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 1 },	-- Alliance Commendation Signet
 						},
@@ -120,6 +123,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Gnomeregan",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 1 },	-- Alliance Commendation Signet
 						},
@@ -152,6 +156,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Stormwind",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 10 },	-- Alliance Commendation Signet
 						},
@@ -184,6 +189,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Ironforge",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 10 },	-- Alliance Commendation Signet
 						},
@@ -216,6 +222,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Darnassus",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 10 },	-- Alliance Commendation Signet
 						},
@@ -248,6 +255,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Gnomeregan",
 						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21436, 10 },	-- Alliance Commendation Signet
 						},
