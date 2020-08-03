@@ -54,19 +54,21 @@ _.Zones =
 						3789, -- Assisting Arch Druid Staghelm (Stormwind)		
 					},
 				}),
-				{
-					["questID"] = 4510,	-- Calm Before the Storm (2/2)
-					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
+				q(4510, {	-- Calm Before the Storm (2/2)
 					["qg"] = 7740,	-- Gracina Spiritmight
+					["sourceQuest"] = 4508,	-- Calm Before the Storm (1/2)
 					["coord"] = { 42.0, 85.8, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 11843, 1 },	-- Bank Voucher
+					},
 					["lvl"] = 50,
 					["groups"] = {
 						i(11870),	-- Oblivion Orb
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
-				},
+				}),
 				q(2242, {	-- Destiny Calls
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls

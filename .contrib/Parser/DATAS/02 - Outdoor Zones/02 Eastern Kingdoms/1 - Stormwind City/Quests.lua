@@ -568,12 +568,19 @@ _.Zones =
 					["qg"] = 7766,	-- Tyrion
 					["sourceQuest"] = 2746,	-- Items of Some Consequence
 				}),
-				q(1689, {	-- The Binding
-					["lvl"] = 10,
-					["races"] = { HUMAN, GNOME },
-					["classes"] = { WARLOCK },
+				q(1689, {	-- The Binding (Voidwalker)
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1688,	-- Surena Caledon
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["cr"] = 5676,	-- Summoned Voidwalker
+					["cost"] = {
+						{ "i", 6928, 1 },	-- Bloodstone Choker
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(697),	-- Summon Voidwalker
+					},
 				}),
 				q(392, {	-- The Curious Visitor
 					["lvl"] = 16,

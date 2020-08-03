@@ -84,6 +84,7 @@ _.Zones =
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["maps"] = { DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 11844, 1 },	-- Pestlezugg's Un'Goro Report
 					},
@@ -94,6 +95,7 @@ _.Zones =
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["coord"] = { 50.8, 27.0, TANARIS },
 					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 11844, 1 },	-- Pestlezugg's Un'Goro Report
 					},

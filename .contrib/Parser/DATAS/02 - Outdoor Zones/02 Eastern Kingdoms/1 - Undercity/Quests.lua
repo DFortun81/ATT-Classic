@@ -351,17 +351,24 @@ _.Zones =
 					},
 				}),
 				q(1471, {	-- The Binding (Voidwalker)
-					["lvl"] = 10,
-					["races"] = { UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 5675,	-- Carendin Halgar
+					["classes"] = { WARLOCK },
+					["races"] = { UNDEAD },
+					["cr"] = 5676,	-- Summoned Voidwalker
+					["cost"] = {
+						{ "i", 6284, 1 },	-- Runes of Summoning
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						recipe(697),	-- Summon Voidwalker
+					},
 				}),
 				q(1474, {	-- The Binding (Succubus)
-					["lvl"] = 20,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
 					["qg"] = 5675,	-- Carendin Halgar
 					["sourceQuest"] = 1476,	-- Hearts of the Pure
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
 				}),
 				q(5961, {	-- The Champion of the Banshee Queen
 					["lvl"] = 54,
