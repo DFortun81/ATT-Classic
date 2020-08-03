@@ -73,11 +73,32 @@ _.Zones =
 					["sourceQuest"] = 4507,	-- Pawn Captures Queen
 					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
 					["coord"] = { 50.8, 27.0, TANARIS },
+					["maps"] = { DARNASSUS, ORGRIMMAR },
 					["cost"] = {
 						{ "i", 11844, 1 },	-- Pestlezugg's Un'Goro Report
 					},
 					["lvl"] = 50,
 				},
+				q(4508, {	-- Calm Before the Storm (1/2) [ALLIANCE]
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["coord"] = { 50.8, 27.0, TANARIS },
+					["maps"] = { DARNASSUS },
+					["cost"] = {
+						{ "i", 11844, 1 },	-- Pestlezugg's Un'Goro Report
+					},
+					["lvl"] = 50,
+				}),
+				q(4509, {	-- Calm Before the Storm (1/2) [HORDE]
+					["qg"] = 5594,	-- Alchemist Pestlezugg <Alchemy Supplies>
+					["sourceQuest"] = 4507,	-- Pawn Captures Queen
+					["coord"] = { 50.8, 27.0, TANARIS },
+					["maps"] = { ORGRIMMAR },
+					["cost"] = {
+						{ "i", 11844, 1 },	-- Pestlezugg's Un'Goro Report
+					},
+					["lvl"] = 50,
+				}),
 				q(6610, {	-- Clamlette Surprise
 					["qg"] = 8125,	-- Dirge Quikcleave
 					["coord"] = { 52.63, 28.12, TANARIS },
