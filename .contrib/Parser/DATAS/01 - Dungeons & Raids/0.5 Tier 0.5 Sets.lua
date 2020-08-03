@@ -82,6 +82,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8926, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { DRUID },
@@ -223,6 +224,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8931, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
 					["classes"] = { HUNTER },
@@ -364,6 +366,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8932, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { MAGE },
@@ -469,6 +472,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8933, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_DEPTHS, STRATHOLME },
 					["classes"] = { PALADIN },
@@ -576,6 +580,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8934, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { PRIEST },
@@ -717,6 +722,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8935, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
 					["classes"] = { ROGUE },
@@ -930,6 +936,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8936, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, SCHOLOMANCE, STRATHOLME },
 					["classes"] = { WARLOCK },
@@ -1071,6 +1078,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				}),
 				q(8937, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
 					["coord"] = { 43.5, 52.6, IRONFORGE },
 					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, STRATHOLME },
 					["classes"] = { WARRIOR },
