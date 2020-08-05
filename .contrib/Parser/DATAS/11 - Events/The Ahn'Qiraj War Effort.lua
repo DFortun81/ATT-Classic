@@ -769,6 +769,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Orgrimmar",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 1 },	-- Horde Commendation Signet
 						},
@@ -801,6 +802,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Undercity",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 1 },	-- Horde Commendation Signet
 						},
@@ -833,6 +835,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Thunder Bluff",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 1 },	-- Horde Commendation Signet
 						},
@@ -865,6 +868,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 5 reputation with Darkspear",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 1 },	-- Horde Commendation Signet
 						},
@@ -897,6 +901,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Orgrimmar",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 10 },	-- Horde Commendation Signet
 						},
@@ -929,6 +934,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Undercity",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 10 },	-- Horde Commendation Signet
 						},
@@ -961,6 +967,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Thunder Bluff",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 10 },	-- Horde Commendation Signet
 						},
@@ -993,6 +1000,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE },
 						},
 						["description"] = "Grants 150 reputation with Darkspear",
 						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 21438, 10 },	-- Horde Commendation Signet
 						},
