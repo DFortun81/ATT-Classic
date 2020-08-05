@@ -13,6 +13,7 @@ _.WorldEvents = bubbleDown({["u"] = PHASE_FIVE },
 			--SILVERPINE_FOREST,
 			--TANARIS,
 		},
+		["u"] = PHASE_FIVE,
 		["lvl"] = 60,
 		["groups"] = {
 			n(QUESTS, {
@@ -43,11 +44,11 @@ _.WorldEvents = bubbleDown({["u"] = PHASE_FIVE },
 				q(8743, {	-- Bang a Gong!
 					["provider"] = { "o", 180717 },	-- The Scarab Gong
 					["sourceQuest"] = 8742,	-- The Might of Kalimdor
-					["description"] = "Only one person from your server can bang the gong.",
 					["coord"] = { 25.7, 90.9, SILITHUS },
 					["cost"] = {
 						{ "i", 21175, 1 },	-- The Scepter of the Shifting Sands
 					},
+					["u"] = PHASE_FIVE_GONG,
 					["lvl"] = 60,
 					["groups"] = {
 						--[[

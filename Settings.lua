@@ -144,11 +144,12 @@ local UnobtainableSettingsBase = {
 		[3] = false,	-- Future Releases [TODO: Convert these, you dummy!]
 		
 		-- Future Content Releases
-		[11] = 2,	-- Phase 1
+		[11] = 2,		-- Phase 1
 		[12] = true,	-- Phase 2
 		[13] = true,	-- Phase 3
 		[14] = true,	-- Phase 4
 		[15] = true,	-- Phase 5
+		[15.1] = true,	-- AQ War Effort
 		[16] = false,	-- Phase 6
 		
 		-- Seasonal Filters
@@ -1232,10 +1233,11 @@ table.insert(settings.MostRecentTab.objects, FutureContentReleasesLabel);
 -- Future Content Releases
 yoffset = -4;
 last = FutureContentReleasesLabel;
-for i,u in ipairs({ 11, 12, 13, 14, 15, 16  }) do
+for i,o in ipairs({ { 11, 0 }, { 12, 0 }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, 4 }, { 1502, 0 }, { 16, -4 } }) do
+	local u = o[1];
 	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2]);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2] .. (L["UNOBTAINABLE_ITEM_REASONS"][u][5] or ""));
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", o[2], yoffset);
 	filter.u = u;
 	last = filter;
 	yoffset = 6;
