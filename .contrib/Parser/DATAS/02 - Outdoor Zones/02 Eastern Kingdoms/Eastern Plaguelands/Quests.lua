@@ -77,6 +77,11 @@ _.Zones =
 					["sourceQuest"] = 5513,	-- Mantles of the Dawn
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["altQuests"] = {
+						5517,	-- Chromatic Mantle of the Dawn
+						5521,	-- Chromatic Mantle of the Dawn
+						5524,	-- Chromatic Mantle of the Dawn
+					},
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},

@@ -241,6 +241,11 @@ _.Zones =
 					["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["altQuests"] = {
+						5517,	-- Chromatic Mantle of the Dawn
+						5521,	-- Chromatic Mantle of the Dawn
+						5524,	-- Chromatic Mantle of the Dawn
+					},
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},
@@ -255,6 +260,11 @@ _.Zones =
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
 					["coord"] = { 42.8, 83.8, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						5517,	-- Chromatic Mantle of the Dawn
+						5521,	-- Chromatic Mantle of the Dawn
+						5524,	-- Chromatic Mantle of the Dawn
+					},
 					["cost"] = {
 						{ "i", 12844, 25 },	-- Argent Dawn Valor Token
 					},
