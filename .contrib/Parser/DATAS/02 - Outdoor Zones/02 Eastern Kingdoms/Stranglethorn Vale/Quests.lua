@@ -1092,6 +1092,7 @@ _.Zones =
 				q(638, {	-- Trollbane
 					["qg"] = 2497,	-- Nimboya
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 32,
 				}),
 				q(587, {	-- Up to Snuff

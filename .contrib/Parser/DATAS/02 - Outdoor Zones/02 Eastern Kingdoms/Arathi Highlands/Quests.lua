@@ -246,6 +246,7 @@ _.Zones =
 				}),
 				q(639, {	-- Sigil of Strom
 					["qg"] = 2703,	-- Zengu
+					["sourceQuest"] = 638,	-- Trollbane
 					["coord"] = { 73.8, 33.8, ARATHI_HIGHLANDS },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
