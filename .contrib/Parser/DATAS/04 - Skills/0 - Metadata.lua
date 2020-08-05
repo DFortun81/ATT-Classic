@@ -467,6 +467,11 @@ _.Skills =
 				["coords"] = { 
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
+				["OnUpdate"] = [[function(t)
+					if _.ClassIndex == ]] .. SHAMAN .. [[ then
+						t.visible = _.IsSpellKnown(16269);
+					end
+				end]],
 			},
 			{
 				["recipeID"] = 199,	-- Two-Handed Maces
@@ -479,6 +484,11 @@ _.Skills =
 				["coords"] = { 
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
+				["OnUpdate"] = [[function(t)
+					if _.ClassIndex == ]] .. SHAMAN .. [[ then
+						t.visible = _.IsSpellKnown(16269);
+					end
+				end]],
 			},
 			{
 				["recipeID"] = 202,	-- Two-Handed Swords
