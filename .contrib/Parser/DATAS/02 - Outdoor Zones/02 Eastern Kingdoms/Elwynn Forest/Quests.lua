@@ -605,6 +605,9 @@ _.Zones =
 							["itemID"] = 6785,	-- Powers of the Void
 							["questID"] = 1598,	-- The Stolen Tome
 							["coord"] = { 56.7, 44.0, ELWYNN_FOREST },
+							["altQuests"] = {
+								1599,	-- Beginnings
+							},
 						},
 						recipe(688),	-- Summon Imp
 					},
