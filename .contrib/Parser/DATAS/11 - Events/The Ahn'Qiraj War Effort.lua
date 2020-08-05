@@ -1,7 +1,7 @@
 --------------------------------------------
 --       E V E N T S    M O D U L E       --
 --------------------------------------------
-_.WorldEvents = 
+_.WorldEvents = bubbleDown({ ["u"] = PHASE_FIVE_WAR_EFFORT }, 
 {
 	n(-538, {	-- The Ahn'Qiraj War Effort
 		["description"] = "When Phase 5 is eventually released, the Ruins of Ahn'Qiraj and Temple of Ahn'Qiraj will not be immediately available. Instead, server communities will have to undertake a massive war effort to open the raids by gathering supplies to prepare for the war and completing an epic questline that ultimately culminates in the banging of a gong to open the gates and release the horrors within upon the world.\n\nOnce both factions have finished their contribution, there is a 5-day grace period where. Afterwards, there is a server-wide 10 hour event which spans several zones in Kalimdor the moment someone bangs the gong.\n\nHow quickly Ahn'Qiraj opens depends on the server and its faction balance.\n\nWe recommend delaying the War Effort as long as possible to allow for the most number of people to obtain the Scarab Lord mount as everyone that finishes The Scepter of the Shifting Sands quest line will be granted the same rewards!",
@@ -9,8 +9,7 @@ _.WorldEvents =
 			ORGRIMMAR,
 			IRONFORGE,
 		},
-		["u"] = PHASE_FIVE,
-		["groups"] = bubbleDown({ ["u"] = PHASE_FIVE_WAR_EFFORT }, {
+		["groups"] = {
 			n(-30, {	-- Alliance
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -1524,6 +1523,6 @@ _.WorldEvents =
 					["description"] = "Contains a random assortment of common, uncommon, and rare quality items between levels 50-52.",
 				}),
 			}),
-		}),
+		},
 	}),
-};
+});

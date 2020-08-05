@@ -898,8 +898,8 @@ app.L = {
 		[13] = {2, "|CFFAAFFAAThis will not be available until Phase 3 of WoW Classic.|r", "Phase 3", true },
 		[14] = {2, "|CFFAAFFAAThis will not be available until Phase 4 of WoW Classic.|r", "Phase 4", true },
 		[15] = {2, "|CFFAAFFAAThis will not be available until Phase 5 of WoW Classic.|r", "Phase 5", true },
-		[1501] = {2, "|CFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r", "AQ War Effort", true, "\n \n|CFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r" },
-		[1502] = {2, "|CFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r", "Gates Unopened", true, "\n \n|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
+		[1501] = {2, "|CFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r", "AQ War Effort", nil, "\n \n|CFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r" },
+		[1502] = {2, "|CFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r", "Gates Unopened", nil, "\n \n|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
 		[16] = {2, "|CFFAAFFAAThis will not be available until Phase 6 of WoW Classic.|r", "Phase 6" },
 		
 		-- Seasonal Filters
