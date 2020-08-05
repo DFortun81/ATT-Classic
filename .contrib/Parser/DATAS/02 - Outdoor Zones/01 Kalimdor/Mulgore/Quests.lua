@@ -176,7 +176,7 @@ _.Zones =
 					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["classes"] = { HUNTER },
 					["cost"] = {
 						{ "i", 9565, 1 },	-- Etched Note
@@ -317,7 +317,7 @@ _.Zones =
 					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["classes"] = { SHAMAN },
 					["cost"] = {
 						{ "i", 9552, 1 },	-- Rune-Inscribed Note
@@ -335,7 +335,7 @@ _.Zones =
 					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["classes"] = { WARRIOR },
 					["cost"] = {
 						{ "i", 9547, 1 },	-- Simple Note
@@ -567,7 +567,7 @@ _.Zones =
 					["qg"] = 2980,	-- Grull Hawkwind
 					["sourceQuest"] = 747,	-- The Hunt Begins
 					["coord"] = { 44.9, 77.1, MULGORE },
-					["races"] = HORDE_ONLY,
+					["races"] = { TAUREN },
 					["classes"] = { DRUID },
 					["cost"] = {
 						{ "i", 9581, 1 },	-- Verdant Note
