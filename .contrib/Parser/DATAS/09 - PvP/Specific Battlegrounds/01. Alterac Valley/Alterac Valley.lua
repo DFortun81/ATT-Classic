@@ -333,6 +333,7 @@ _.PvP =
 							q(7123, {	-- Speak with our Quartermaster
 								["qg"] = 13798,	-- Jotek
 								["coord"] = { 50.8, 81.4, ALTERAC_VALLEY },
+								["isBreadcrumb"] = true,
 								["races"] = HORDE_ONLY,
 								["lvl"] = 51,
 							}),
