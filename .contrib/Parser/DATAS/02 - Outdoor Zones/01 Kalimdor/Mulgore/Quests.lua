@@ -91,8 +91,8 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["altQuests"] = {
-							1517, -- Call of Earth (2/3 Durotar)
-							},
+						1517, -- Call of Earth (2/3 Durotar)
+					},
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
@@ -164,19 +164,13 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["classes"] = { SHAMAN },
 					["altQuests"] = {
-							1463, -- Earth Sapta (Durotar)
-							},
+						1463, -- Earth Sapta (Durotar)
+					},
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
 					["lvl"] = 4,
-					["groups"] = {
-						{
-							["itemID"] = 6635,	-- Earth Sapta
-							["questID"] = 1521,	-- Call of Earth (3/3)
-						},
-					},
 				}),
 				q(3092, {	-- Etched Note
 					["qg"] = 2980,	-- Grull Hawkwind

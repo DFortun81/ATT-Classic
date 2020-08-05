@@ -212,18 +212,12 @@ _.Zones =
 					["classes"] = { SHAMAN },
 					["repeatable"] = true,
 					["altQuests"] = {
-							1462, -- Earth Sapta (Mulgore)
-							},
+						1462, -- Earth Sapta (Mulgore)
+					},
 					["cost"] = {
 						{ "i", 6635, 1 },	-- Earth Sapta
 					},
 					["lvl"] = 4,
-					["groups"] = {
-						{
-							["itemID"] = 6635,	-- Earth Sapta
-							["questID"] = 1518,	-- Call of Earth (3/3)
-						},
-					},
 				}),
 				q(837, {	-- Encroachment
 					["qg"] = 3139,	-- Gar'Thok
