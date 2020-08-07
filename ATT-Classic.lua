@@ -2593,6 +2593,12 @@ local function AttachTooltip(self)
 								else
 									self:AddDoubleLine(L["TITLE"], "Author");
 								end
+							elseif target == "Player-4372-004A0418" then	-- Jubilee
+								-- Gold Tycoon
+								local leftSide = _G[self:GetName() .. "TextLeft1"];
+								if leftSide then
+									leftSide:SetText("|cffff8000Gold Tycoon " .. leftSide:GetText() .. "|r");
+								end
 							end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
