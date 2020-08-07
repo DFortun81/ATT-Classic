@@ -4597,6 +4597,9 @@ app.SpellNameToSpellID = setmetatable({}, {
 		for skillID,spellID in pairs(app.SkillIDToSpellID) do
 			app.GetSpellName(spellID);
 		end
+		for specID,spellID in pairs(app.SpecializationSpellIDs) do
+			app.GetSpellName(spellID);
+		end
 		if dirty then
 			dirty = false;
 			return rawget(t, key);
