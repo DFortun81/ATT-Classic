@@ -848,7 +848,7 @@ _.Zones =
 					},
 					["lvl"] = 57,
 				}),
-				un(PHASE_FIVE, q(8857, {	-- Secrets of the Colossus - Ashi
+				un(PHASE_FIVE_WAR, q(8857, {	-- Secrets of the Colossus - Ashi
 					["provider"] = { "i", 21534 },	-- Colossus of Ashi's Husk
 					["cr"] = 15742,	-- Colossus of Ashi
 					["lvl"] = 51,
@@ -856,7 +856,7 @@ _.Zones =
 						i(21528),	-- Colossal Bag of Loot
 					},
 				})),
-				un(PHASE_FIVE, q(8858, {	-- Secrets of the Colossus - Regal
+				un(PHASE_FIVE_WAR, q(8858, {	-- Secrets of the Colossus - Regal
 					["provider"] = { "i", 21535 },	-- Colossus of Regal's Husk
 					["cr"] = 15741,	-- Colossus of Regal
 					["lvl"] = 51,
@@ -864,7 +864,7 @@ _.Zones =
 						i(21528),	-- Colossal Bag of Loot
 					},
 				})),
-				un(PHASE_FIVE, q(8859, {	-- Secrets of the Colossus - Zora
+				un(PHASE_FIVE_WAR, q(8859, {	-- Secrets of the Colossus - Zora
 					["provider"] = { "i", 21533 },	-- Colossus of Zora's Husk
 					["cr"] = 15740,	-- Colossus of Zora
 					["lvl"] = 51,

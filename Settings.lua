@@ -1233,7 +1233,7 @@ table.insert(settings.MostRecentTab.objects, FutureContentReleasesLabel);
 -- Future Content Releases
 yoffset = -4;
 last = FutureContentReleasesLabel;
-for i,o in ipairs({ { 11, 0 }, { 12, 0 }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, 4 }, { 1502, 0 }, { 16, -4 } }) do
+for i,o in ipairs({ { 11, 0 }, { 12, 0 }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, 4 }, { 1502, 0 }, { 1503, 0 }, { 16, -4 } }) do
 	local u = o[1];
 	local filter = settings:CreateCheckBox(L["UNOBTAINABLE_ITEM_REASONS"][u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(L["UNOBTAINABLE_ITEM_REASONS"][u][2] .. (L["UNOBTAINABLE_ITEM_REASONS"][u][5] or ""));
