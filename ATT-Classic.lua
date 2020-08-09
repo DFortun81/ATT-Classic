@@ -2593,7 +2593,7 @@ local function AttachTooltip(self)
 								else
 									self:AddDoubleLine(L["TITLE"], "Author");
 								end
-							elseif target == "Player-4372-004A0418" then	-- Jubilee
+							elseif target == "Player-4372-004A0418" or target == "Player-4372-00273DCA" then	-- Jubilee & Havadin
 								-- Gold Tycoon
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then
