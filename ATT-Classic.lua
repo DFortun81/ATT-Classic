@@ -2494,6 +2494,15 @@ app.RefreshCollections = RefreshCollections;
 app.OpenMainList = OpenMainList;
 
 -- Tooltip Functions
+local EXTERMINATOR = {
+	["Player-4372-004A0418"] = true,	-- Jubilee
+	["Player-4372-00273DCA"] = true,	-- Havadin
+	["Player-4372-00DED426"] = true,	-- Krieve
+};
+local GOLD_TYCOON = {
+	["Player-4372-004A0418"] = true,	-- Jubilee
+	["Player-4372-00273DCA"] = true,	-- Havadin
+};
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
 		-- If there was info text generated for this search result, then display that first.
@@ -2593,12 +2602,12 @@ local function AttachTooltip(self)
 								else
 									self:AddDoubleLine(L["TITLE"], "Author");
 								end
-							elseif target == "Player-4372-004A0418" or target == "Player-4372-00273DCA" then	-- Jubilee & Havadin
-								-- Gold Tycoon
+							elseif GOLD_TYCOON[target] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then
-									leftSide:SetText("|cffff8000Gold Tycoon " .. leftSide:GetText() .. "|r");
-								end
+								if leftSide then leftSide:SetText("|cffff8000Gold Tycoon " .. leftSide:GetText() .. "|r"); end
+							elseif EXTERMINATOR[target] then
+								local leftSide = _G[self:GetName() .. "TextLeft1"];
+								if leftSide then leftSide:SetText("|cffa335ee" .. leftSide:GetText() .. " the Exterminator|r"); end
 							end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
