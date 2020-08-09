@@ -2498,6 +2498,7 @@ local EXTERMINATOR = {
 	["Player-4372-004A0418"] = true,	-- Jubilee
 	["Player-4372-00273DCA"] = true,	-- Havadin
 	["Player-4372-00DED426"] = true,	-- Krieve
+	["Player-4372-012A730E"] = true,	-- Allysandra
 };
 local GOLD_TYCOON = {
 	["Player-4372-004A0418"] = true,	-- Jubilee
