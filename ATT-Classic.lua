@@ -2506,6 +2506,7 @@ local EXTERMINATOR = {
 	["Player-4372-00D38E94"] = true,	-- Havachant
 	["Player-4372-01353958"] = true,	-- Naromot
 	["Player-4372-001F92DA"] = true,	-- Shadrac
+	["Player-4372-00E5AE25"] = true,	-- Villeinia
 };
 local GOLD_TYCOON = {
 	["Player-4372-004A0418"] = true,	-- Jubilee
