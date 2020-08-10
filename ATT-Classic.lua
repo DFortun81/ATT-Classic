@@ -2503,6 +2503,7 @@ local EXTERMINATOR = {
 	["Player-4372-000B3C4D"] = true,	-- Congelatore
 	["Player-4372-00A3A0FD"] = true,	-- Fairplay
 	["Player-4372-004A7A3F"] = true,	-- Fortress
+	["Player-4372-00D38E94"] = true,	-- Havachant
 	["Player-4372-01353958"] = true,	-- Naromot
 	["Player-4372-001F92DA"] = true,	-- Shadrac
 };
