@@ -2516,6 +2516,9 @@ local GOLD_TYCOON = {
 	["Player-4372-004A0418"] = true,	-- Jubilee
 	["Player-4372-00273DCA"] = true,	-- Havadin
 };
+local SCARAB_LORD = {
+	["Player-4372-00A64EA0"] = true,	-- Macpayn
+};
 local function AttachTooltipRawSearchResults(self, group)
 	if group then
 		-- If there was info text generated for this search result, then display that first.
@@ -2615,6 +2618,9 @@ local function AttachTooltip(self)
 								else
 									self:AddDoubleLine(L["TITLE"], "Author");
 								end
+							elseif SCARAB_LORD[target] then
+								local leftSide = _G[self:GetName() .. "TextLeft1"];
+								if leftSide then leftSide:SetText("|cffff8000Scarab Lord " .. leftSide:GetText() .. "|r"); end
 							elseif GOLD_TYCOON[target] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then leftSide:SetText("|cffff8000Gold Tycoon " .. leftSide:GetText() .. "|r"); end
