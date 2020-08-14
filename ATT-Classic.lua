@@ -2513,6 +2513,7 @@ local EXTERMINATOR = {
 	["Player-4372-007AF4B7"] = true,	-- Intothefray
 	["Player-4372-01353958"] = true,	-- Naromot
 	["Player-4372-01294037"] = true,	-- Necrid
+	["Player-4372-00793732"] = true,	-- Nirv
 	["Player-4372-0058A418"] = true,	-- Saitosan
 	["Player-4372-00F82168"] = true,	-- Semiha
 	["Player-4372-001F92DA"] = true,	-- Shadrac
