@@ -2508,6 +2508,7 @@ local EXTERMINATOR = {
 	["Player-4372-0124174F"] = true,	-- Dubsteve
 	["Player-4372-00A3A0FD"] = true,	-- Fairplay
 	["Player-4372-004A7A3F"] = true,	-- Fortress
+	["Player-4372-00E8CC3C"] = true,	-- Hairyplodder
 	["Player-4372-00D38E94"] = true,	-- Havachant
 	["Player-4372-00312AD9"] = true,	-- Hewn
 	["Player-4372-0046F7E8"] = true,	-- Holochops
