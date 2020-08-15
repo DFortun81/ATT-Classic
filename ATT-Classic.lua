@@ -2516,6 +2516,7 @@ local EXTERMINATOR = {
 	["Player-4372-01294037"] = true,	-- Necrid
 	["Player-4372-00793732"] = true,	-- Nirv
 	["Player-4372-0058A418"] = true,	-- Saitosan
+	["Player-4372-00C2F945"] = true,	-- Rooni
 	["Player-4372-00F82168"] = true,	-- Semiha
 	["Player-4372-001F92DA"] = true,	-- Shadrac
 	["Player-4372-00E5AE25"] = true,	-- Villeinia
