@@ -2495,6 +2495,7 @@ app.OpenMainList = OpenMainList;
 
 -- Tooltip Functions
 local EXTERMINATOR = {
+	["Player-4372-0000CE6B"] = true,	-- Aivet
 	["Player-4372-004A0418"] = true,	-- Jubilee
 	["Player-4372-00273DCA"] = true,	-- Havadin
 	["Player-4372-00DED426"] = true,	-- Krieve
