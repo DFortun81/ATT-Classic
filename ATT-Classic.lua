@@ -2522,6 +2522,7 @@ local EXTERMINATOR = {
 local GOLD_TYCOON = {
 	["Player-4372-004A0418"] = true,	-- Jubilee
 	["Player-4372-00273DCA"] = true,	-- Havadin
+	["Player-4372-0068D548"] = true,	-- Headphones
 	["Player-4372-00F2D620"] = true,	-- Notloknido
 };
 local SCARAB_LORD = {
