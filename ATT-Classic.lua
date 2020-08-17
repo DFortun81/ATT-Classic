@@ -2611,15 +2611,15 @@ local function AttachTooltip(self)
 				local target = select(2, self:GetUnit());
 				if target then
 					-- Yes.
-					target = UnitGUID(target);
-					if target then
-						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",target);
-						-- print(target, type, npcID);
+					local guid = UnitGUID(target);
+					if guid then
+						local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+						-- print(guid, type, npcID);
 						if type == "Player" then
-							if target == "Player-4372-0000390A" then
+							if guid == "Player-4372-0000390A" then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
 								if leftSide then
-									leftSide:SetText("|cffff8000" .. leftSide:GetText() .. "|r");
+									leftSide:SetText("|cffff8000" .. UnitName(target) .. " the Completionist|r");
 								end
 								local rightSide = _G[self:GetName() .. "TextRight2"];
 								leftSide = _G[self:GetName() .. "TextLeft2"];
@@ -2631,15 +2631,15 @@ local function AttachTooltip(self)
 								else
 									self:AddDoubleLine(L["TITLE"], "Author");
 								end
-							elseif SCARAB_LORD[target] then
+							elseif SCARAB_LORD[guid] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cffff8000Scarab Lord " .. leftSide:GetText() .. "|r"); end
-							elseif GOLD_TYCOON[target] then
+								if leftSide then leftSide:SetText("|cffff8000Scarab Lord " .. UnitName(target) .. "|r"); end
+							elseif GOLD_TYCOON[guid] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cffff8000Gold Tycoon " .. leftSide:GetText() .. "|r"); end
-							elseif EXTERMINATOR[target] then
+								if leftSide then leftSide:SetText("|cffff8000Gold Tycoon " .. UnitName(target) .. "|r"); end
+							elseif EXTERMINATOR[guid] then
 								local leftSide = _G[self:GetName() .. "TextLeft1"];
-								if leftSide then leftSide:SetText("|cffa335ee" .. leftSide:GetText() .. " the Exterminator|r"); end
+								if leftSide then leftSide:SetText("|cffa335ee" .. UnitName(target) .. " the Exterminator|r"); end
 							end
 						elseif type == "Creature" or type == "Vehicle" then
 							if app.Settings:GetTooltipSetting("creatureID") then self:AddDoubleLine(L["CREATURE_ID"], tostring(npcID)); end
