@@ -9472,8 +9472,7 @@ app.events.VARIABLES_LOADED = function()
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
 		"TomTomIgnoreCompletedObjects",
-		"ValidSuffixesPerItemID",
-		"ScarabLordCallToArms"
+		"ValidSuffixesPerItemID"
 	}) do
 		oldsettings[key] = ATTClassicAD[key];
 	end
@@ -9492,27 +9491,6 @@ app.events.VARIABLES_LOADED = function()
 	app.PushSoftReserve(true);
 	app.Settings:Initialize();
 	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
-	
-	-- If the character is on Atiesh, show the message.
-	if realm == "Atiesh" and not GetDataMember("ScarabLordCallToArms") then
-		StartCoroutine("ScarabLordCallToArms", function()
-			-- While the player is in combat, wait for combat to end.
-			while InCombatLockdown() do coroutine.yield(); end
-			
-			-- Wait 1/2 second. For multiple simultaneous requests, each one will reapply the delay.
-			local countdown = 30;
-			while countdown > 0 do
-				countdown = countdown - 1;
-				coroutine.yield();
-			end
-			
-			-- Show the Scarab Lord Call To Arms
-			app:ShowPopupDialog("We noticed you play on Atiesh... Did you know the |Cffb4b4ff<All The Things>|r guild is here, too?\n\n|CFF40C7EBCongelatore|r is still working on Scarab Lord and could use your help collecting\n\n|TInterface\\Icons\\Inv_misc_monsterscales_13:0|t Silithid Carapace Fragments!\n\nWhisper |Cffff8000Crieve|r or |CFFFFF569Krieve|r to find out more!\n(Click Yes for this to stop popping up.)",
-			function()
-				app.SetDataMember("ScarabLordCallToArms", true);
-			end);
-		end);
-	end
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
