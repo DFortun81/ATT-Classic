@@ -2523,6 +2523,7 @@ local EXTERMINATOR = {
 	["Player-4372-0058A418"] = true,	-- Saitosan [Druid]
 	["Player-4372-00F82168"] = true,	-- Semiha
 	["Player-4372-001F92DA"] = true,	-- Shadrac
+	["Player-4372-00732218"] = true,	-- Solow
 	["Player-4372-00E5AE25"] = true,	-- Villeinia
 };
 local GOLD_TYCOON = {
