@@ -2513,6 +2513,7 @@ local EXTERMINATOR = {
 	["Player-4372-00312AD9"] = true,	-- Hewn
 	["Player-4372-0046F7E8"] = true,	-- Holochops
 	["Player-4372-007AF4B7"] = true,	-- Intothefray
+	["Player-4372-01390D2A"] = true,	-- Manamontanna
 	["Player-4372-00FE5DA2"] = true,	-- Mimico
 	["Player-4372-01353958"] = true,	-- Naromot
 	["Player-4372-01294037"] = true,	-- Necrid
