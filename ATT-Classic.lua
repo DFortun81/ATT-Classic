@@ -2517,8 +2517,8 @@ local EXTERMINATOR = {
 	["Player-4372-01353958"] = true,	-- Naromot
 	["Player-4372-01294037"] = true,	-- Necrid
 	["Player-4372-00793732"] = true,	-- Nirv
-	["Player-4372-0058A418"] = true,	-- Saitosan
 	["Player-4372-00C2F945"] = true,	-- Rooni
+	["Player-4372-0058A418"] = true,	-- Saitosan [Druid]
 	["Player-4372-00F82168"] = true,	-- Semiha
 	["Player-4372-001F92DA"] = true,	-- Shadrac
 	["Player-4372-00E5AE25"] = true,	-- Villeinia
@@ -2528,6 +2528,7 @@ local GOLD_TYCOON = {
 	["Player-4372-00273DCA"] = true,	-- Havadin
 	["Player-4372-0068D548"] = true,	-- Headphones
 	["Player-4372-00F2D620"] = true,	-- Notloknido
+	["Player-4372-00FF84F0"] = true,	-- Saitosan [Priest]
 };
 local SCARAB_LORD = {
 	["Player-4372-00A64EA0"] = true,	-- Macpayn
