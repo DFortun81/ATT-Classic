@@ -2503,7 +2503,6 @@ local EXTERMINATOR = {
 	["Player-4372-012A730E"] = true,	-- Allysandra
 	["Player-4372-00FE5CE7"] = true,	-- Amiera
 	["Player-4372-00E86132"] = true,	-- Borlemont
-	["Player-4372-000B3C4D"] = true,	-- Congelatore
 	["Player-4372-0100DF23"] = true,	-- Dizplaced
 	["Player-4372-002719C4"] = true,	-- Drunkninja
 	["Player-4372-0124174F"] = true,	-- Dubsteve
@@ -2534,6 +2533,7 @@ local GOLD_TYCOON = {
 	["Player-4372-00FF84F0"] = true,	-- Saitosan [Priest]
 };
 local SCARAB_LORD = {
+	["Player-4372-000B3C4D"] = true,	-- Congelatore
 	["Player-4372-00A64EA0"] = true,	-- Macpayn
 };
 local function AttachTooltipRawSearchResults(self, group)
