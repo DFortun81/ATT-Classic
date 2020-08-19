@@ -2510,6 +2510,7 @@ local EXTERMINATOR = {
 	["Player-4372-0014521D"] = true,	-- Bombeon
 	["Player-4372-00E86132"] = true,	-- Borlemont
 	["Player-4372-010B9178"] = true,	-- Braven
+	["Player-4372-0063664F"] = true,	-- Brittbrat
 	["Player-4372-0100DF23"] = true,	-- Dizplaced
 	["Player-4372-01230376"] = true,	-- Drixxtwo
 	["Player-4372-002719C4"] = true,	-- Drunkninja
