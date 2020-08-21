@@ -26,9 +26,13 @@ _.Zones =
 					["coord"] = { 48.1, 42.9, ELWYNN_FOREST },
 				}),
 				q(84, {	-- Back to Billy
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["sourceQuest"] = 86,	-- Pie for Billy
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 962, 1 },	-- Pork Belly Pie
+					},
+					["lvl"] = 5,
 				}),
 				q(6, {	-- Bounty on Garrick Padfoot
 					["qg"] = 823,	-- Deputy Willem
@@ -304,9 +308,9 @@ _.Zones =
 					},
 				}),
 				q(85, {	-- Lost Necklace
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 246,	-- "Auntie" Bernice Stonefield
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 5,
 				}),
 				q(147, {	-- Manhunt
 					["lvl"] = 7,
@@ -355,9 +359,13 @@ _.Zones =
 					["lvl"] = 5,
 				}),
 				q(86, {	-- Pie for Billy
-					["lvl"] = 5,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 247,	-- Billy Maclure
+					["sourceQuest"] = 85,	-- Lost Necklace
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 769, 4 },	-- Chunk of Boar Meat
+					},
+					["lvl"] = 5,
 				}),
 				q(88, {	-- Princess Must Die!
 					["qg"] = 244,	-- Ma Stonefield
