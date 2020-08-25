@@ -1369,7 +1369,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				i(22396),	-- Totem of Life
 			}),
 			n(15299, {	-- Viscidus
-				["description"] = "This boss requires 20 frost hits to freeze. Once frozen, you need 30 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
+				["description"] = "This boss requires 200 frost hits to freeze. Once frozen, you need 75 melee hits to shatter him. Equipping barov peasant caller trinket and using it after boss freezes will help to do this.",
 				["groups"] = {
 					i(20928),	-- Qiraji Bindings of Command
 					i(20932),	-- Qiraji Bindings of Dominance

@@ -3875,6 +3875,13 @@ app.GetCurrentMapID = function()
 		local otherMapID = (real and text_to_mapID[real]) or (zone and text_to_mapID[zone]);
 		if otherMapID then return otherMapID; end
 	end
+	text_to_mapID = app.L["ALT_ZONE_TEXT_TO_MAP_ID"];
+	if text_to_mapID then
+		local real = GetRealZoneText();
+		local zone = GetSubZoneText();
+		local otherMapID = (real and text_to_mapID[real]) or (zone and text_to_mapID[zone]);
+		if otherMapID then return otherMapID; end
+	end
 	return mapID;
 end
 app.GetMapLevel = function(mapID)
@@ -3895,6 +3902,11 @@ app.GetMapName = function(mapID)
 			return info.name;
 		else
 			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
+				if mapID == m then
+					return name;
+				end
+			end
+			for name,m in pairs(L["ALT_ZONE_TEXT_TO_MAP_ID"]) do
 				if mapID == m then
 					return name;
 				end

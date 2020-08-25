@@ -351,8 +351,12 @@ _.Zones =
 				}),
 				q(240, {	-- Return to Jitters
 					["qg"] = 272,	-- Chef Grual
+					["sourceQuest"] = 93,	-- Dusky Crab Cakes
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2250, 1 },	-- Dusky Crab Cakes
+					},
 					["lvl"] = 17,
 				}),
 				q(268, {	-- Return to Sven
