@@ -882,6 +882,7 @@ app.L = {
 	};
 	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
 		["Ahn'Qiraj"] = 320,
+		["Gates of Ahn'Qiraj"] = 1451,
 	};
 
 	-- Unobtainable Listing
