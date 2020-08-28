@@ -555,6 +555,12 @@ _.Zones =
 					["coord"] = { 22.2, 53.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
+					["groups"] = {
+						objective(1, {	-- View the Tome of Mel'Thandris
+							["icon"] = "Interface\\Icons\\INV_Misc_Book_09",
+							["coord"] = { 50.5, 39.1, ASHENVALE },
+						}),
+					},
 				}),
 				q(247, {	-- The Hunt Completed
 					["qg"] = 12696,	-- Senani Thunderheart

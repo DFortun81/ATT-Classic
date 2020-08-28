@@ -108,10 +108,17 @@ _.Zones =
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5718, 1 },	-- Venture Co. Engineering Plans
+					},
 					["lvl"] = 17,
 					["g"] = {
-						i(5695),	-- NG-5 Explosives (Blue)
-						i(5694),	-- NG-5 Explosives (Red)
+						{
+							["itemID"] = 5718,	-- Venture Co. Engineering Plans
+							["questID"] = 1079,	-- Covert Ops - Alpha
+							["coord"] = { 66.1, 51.3, STONETALON_MOUNTAINS },
+						},
+						i(5738),	-- Covert Ops Pack
 					},
 				}),
 				q(1080, {	-- Covert Ops - Beta
@@ -122,7 +129,18 @@ _.Zones =
 						1077,	-- Special Delivery for Gaxim
 					},
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5717, 1 },	-- Venture Co. Letters
+					},
 					["lvl"] = 17,
+					["g"] = {
+						{
+							["itemID"] = 5717,	-- Venture Co. Letters
+							["questID"] = 1080,	-- Covert Ops - Beta
+							["coord"] = { 74.4, 59.2, STONETALON_MOUNTAINS },
+						},
+						i(5738),	-- Covert Ops Pack
+					},
 				}),
 				q(6301, {	-- Cycle of Rebirth
 					["qg"] = 11864,	-- Tammra Windfield
@@ -167,6 +185,9 @@ _.Zones =
 					["qg"] = 4201,	-- Ziz Fizziks
 					["sourceQuest"] = 1093,	-- Super Reaper 6000
 					["coord"] = { 59.00, 62.53, STONETALON_MOUNTAINS },
+					["cost"] = {
+						{ "i", 5735, 1 },	-- Sealed Envelope
+					},
 					["lvl"] = 16,
 				}),
 				q(1095, {	-- Further Instructions (2/2)
