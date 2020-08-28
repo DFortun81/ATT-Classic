@@ -2538,6 +2538,7 @@ local EXTERMINATOR = {
 	["Player-4372-0008B144"] = true,	-- Pixl
 	["Player-4372-00C2F945"] = true,	-- Rooni
 	["Player-4372-0058A418"] = true,	-- Saitosan [Druid]
+	["Player-4372-0123A5BE"] = true,	-- Sheisskopf
 	["Player-4372-00F82168"] = true,	-- Semiha
 	["Player-4372-001F92DA"] = true,	-- Shadrac
 	["Player-4372-00732218"] = true,	-- Solow
