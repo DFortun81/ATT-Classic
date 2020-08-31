@@ -151,6 +151,21 @@ _.Zones =
 						{ "i", 9563, 1 },	-- Consecrated Rune
 					},
 				}),
+				q(5637, {	-- Desperate Prayer
+					["qg"] = 1226,	-- Maxan Anvol <Priest Trainer>
+					["coord"] = { 47.2, 52.2, DUN_MOROGH },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer
+						5635,	-- Desperate Prayer
+						5636,	-- Desperate Prayer
+						5638,	-- Desperate Prayer
+						5639,	-- Desperate Prayer
+						5640,	-- Desperate Prayer
+					},
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+				}),
 				q(308, {	-- Distracting Jarven
 					["qg"] = 1373,	-- Jarven Thunderbrew
 					["altQuests"] = {

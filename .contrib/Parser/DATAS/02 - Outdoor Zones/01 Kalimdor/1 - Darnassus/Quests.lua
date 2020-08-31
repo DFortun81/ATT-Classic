@@ -69,6 +69,21 @@ _.Zones =
 						i(11872),	-- Eschewal Greaves
 					},
 				}),
+				q(5640, {	-- Desperate Prayer
+					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
+					["coord"] = { 39.6, 80.8, DARNASSUS },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer
+						5635,	-- Desperate Prayer
+						5636,	-- Desperate Prayer
+						5637,	-- Desperate Prayer
+						5638,	-- Desperate Prayer
+						5639,	-- Desperate Prayer
+					},
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+				}),
 				q(2242, {	-- Destiny Calls
 					["qg"] = 4163,	-- Syurna
 					["sourceQuest"] = 2241,	-- The Apple Falls

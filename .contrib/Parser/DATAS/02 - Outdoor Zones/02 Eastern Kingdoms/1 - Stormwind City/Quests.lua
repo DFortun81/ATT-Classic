@@ -192,6 +192,21 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
+				q(5634, {	-- Desperate Prayer
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["altQuests"] = {
+						5635,	-- Desperate Prayer
+						5636,	-- Desperate Prayer
+						5637,	-- Desperate Prayer
+						5638,	-- Desperate Prayer
+						5639,	-- Desperate Prayer
+						5640,	-- Desperate Prayer
+					},
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+				}),
 				q(1716, {	-- Devourer of Souls
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1717,	-- Gakin's Summons

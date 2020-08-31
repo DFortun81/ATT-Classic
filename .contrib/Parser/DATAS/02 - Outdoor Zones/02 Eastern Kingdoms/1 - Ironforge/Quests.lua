@@ -252,6 +252,21 @@ _.Zones =
 					["classes"] = { PALADIN },
 					["lvl"] = 50,
 				}),
+				q(5639, {	-- Desperate Prayer
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 26.4, 7.6, IRONFORGE },
+					["altQuests"] = {
+						5634,	-- Desperate Prayer
+						5635,	-- Desperate Prayer
+						5636,	-- Desperate Prayer
+						5637,	-- Desperate Prayer
+						5638,	-- Desperate Prayer
+						5640,	-- Desperate Prayer
+					},
+					["races"] = { HUMAN, DWARF },
+					["classes"] = { PRIEST },
+					["lvl"] = 10,
+				}),
 				q(3371, {	-- Dwarven Justice
 					["lvl"] = 40,
 					["races"] = ALLIANCE_ONLY,
