@@ -101,6 +101,17 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
+				q(5676, {	-- Arcane Feedback
+					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
+					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["altQuests"] = {
+						5677,	-- Arcane Feedback
+						5678,	-- Arcane Feedback
+					},
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["qg"] = 6740,	-- Innkeeper Allison
 					["races"] = ALLIANCE_ONLY,

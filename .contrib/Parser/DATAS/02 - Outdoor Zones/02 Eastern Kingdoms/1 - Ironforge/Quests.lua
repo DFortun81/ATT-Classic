@@ -195,6 +195,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
 				}),
+				q(5677, {	-- Arcane Feedback
+					["qg"] = 11406,	-- High Priest Rohan <Priest Trainer>
+					["coord"] = { 26.4, 7.6, IRONFORGE },
+					["altQuests"] = {
+						5676,	-- Arcane Feedback
+						5678,	-- Arcane Feedback
+					},
+					["races"] = { HUMAN },
+					["classes"] = { PRIEST },
+					["lvl"] = 20,
+				}),
 				q(3449, {	-- Arcane Runes
 					["qg"] = 8507,	-- Tymor
 					["sourceQuest"] = 3448,	-- Passing the Burden
