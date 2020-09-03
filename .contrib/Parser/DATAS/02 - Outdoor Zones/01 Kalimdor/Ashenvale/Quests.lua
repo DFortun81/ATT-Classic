@@ -351,7 +351,7 @@ _.Zones =
 				q(1055, {	-- Raene's Cleansing (7)
 					["provider"] = { "o", 19024 },	-- Hidden Shrine
 					["sourceQuest"] = 1028,	-- Raene's Cleansing (6)
-					["coord"] = { 53.4, 46.2, ASHENVALE },
+					["coord"] = { 56.38, 49.24, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
 				}),
