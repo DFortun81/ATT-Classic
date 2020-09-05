@@ -3425,20 +3425,17 @@ app.CreateDeathClass = function()
 		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
 		if deathsPerCharacter then
 			local characters = GetDataMember("Characters");
-			local characterDeaths = {};
+			local c = {};
 			for guid,deaths in pairs(deathsPerCharacter) do
-				if deaths and deaths > 0 then
-					local character = {};
-					table.insert(character, characters[guid] or guid);
-					table.insert(character, deaths or 0);
-					table.insert(characterDeaths, character);
+				if guid and deaths and deaths > 0 then
+					table.insert(c, { ["name"] = characters[guid] or guid or "???", ["deaths"] = deaths or 0 });
 				end
 			end
-			table.sort(characterDeaths, function(a, b)
-				return a[2] >= b[2];
+			table.sort(c, function(a, b)
+				return a.deaths > b.deaths;
 			end);
-			for i,data in ipairs(characterDeaths) do
-				tooltip:AddDoubleLine("  " .. data[1], data[2], 1, 1, 1);
+			for i,data in ipairs(c) do
+				tooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
 			end
 		else
 			tooltip:AddLine("  No Deaths! Literal god!");
