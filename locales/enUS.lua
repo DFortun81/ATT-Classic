@@ -246,6 +246,7 @@ app.L = {
 		[-538] = "Interface\\Icons\\inv_box_01",									-- The Ahn'Qiraj War Effort
 		[-539] = "Interface\\Icons\\Inv_hammer_25",									-- The Scepter of the Shifting Sands
 		[-540] = "Interface\\Icons\\inv_stone_02",									-- The Scourge Invasion
+		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",					-- The Silithyst Must Flow
 		
 		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",						-- Cities
 	};
@@ -320,6 +321,7 @@ app.L = {
 		[-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "The Scepter of the Shifting Sands",
 		[-540] = "The Scourge Invasion",
+		[-541] = "The Silithyst Must Flow",
 -- Factions / Cities
 		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-10066] = "Legendary",
@@ -905,6 +907,7 @@ app.L = {
 		[1501] = {2, "|CFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r", "AQ War Effort", nil, "\n \n|CFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r" },
 		[1502] = {2, "|CFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r", "Gates Unopened", nil, "\n \n|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
 		[1503] = {2, "|CFFAAFFAAThis was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.|r", "10-Hour War", nil, "\n \n|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
+		[1504] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", nil, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
 		[16] = {2, "|CFFAAFFAAThis will not be available until Phase 6 of WoW Classic.|r", "Phase 6" },
 		
 		-- Seasonal Filters

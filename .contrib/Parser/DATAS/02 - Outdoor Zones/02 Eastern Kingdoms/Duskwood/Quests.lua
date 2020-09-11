@@ -404,6 +404,7 @@ _.Zones =
 				}),
 				q(230, {	-- Sven's Camp
 					["provider"] = { "o", 59 },	-- Mound of loose dirt
+					["sourceQuest"] = 95,	-- Sven's Revenge
 					["coord"] = { 49.9, 77.7, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
@@ -607,8 +608,12 @@ _.Zones =
 				}),
 				q(262, {	-- The Shadowy Figure
 					["qg"] = 311,	-- Sven Yorgen
+					["sourceQuest"] = 230,	-- Sven's Camp
 					["coord"] = { 7.8, 34.0, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2161, 1 },	-- Book from Sven's Farm
+					},
 					["lvl"] = 20,
 				}),
 				q(265, {	-- The Shadowy Search Continues

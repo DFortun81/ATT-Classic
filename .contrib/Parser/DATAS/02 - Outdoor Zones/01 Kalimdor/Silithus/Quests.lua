@@ -767,18 +767,6 @@ _.Zones =
 						i(13447),	-- Elixir of the Sages
 					},
 				}),
-				un(PHASE_FIVE, q(9416, {	-- Report to General Kirika
-					["qg"] = 17081,	-- Scout Bloodfist
-					["coord"] = { 49.0, 36.7, SILITHUS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 53,
-				})),
-				un(PHASE_FIVE, q(9415, {	-- Report to Marshal Bluewall
-					["qg"] = 17082,	-- Rifleman Torrig
-					["coord"] = { 50.7, 34.7, SILITHUS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 53,
-				})),
 				q(8352, {	-- Scepter of the Council
 					["qg"] = 15306,	-- Bor Wildmane
 					["sourceQuest"] = 8351,	-- Bor Wishes to Speak
@@ -791,28 +779,6 @@ _.Zones =
 						i(20602),	-- Chest of Spoils
 					},
 				}),
-				un(PHASE_FIVE, q(9419, {	-- Scouring the Desert [ALLIANCE]
-					["qg"] = 17080,	-- Marshal Bluewall
-					["sourceQuest"] = 9415,	-- Report to Marshal Bluewall
-					["coord"] = { 33.3, 51.1, SILITHUS },
-					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 53,
-					["groups"] = {
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
-					},
-				})),
-				un(PHASE_FIVE, q(9422, {	-- Scouring the Desert [HORDE]
-					["qg"] = 17079,	-- General Kirika
-					["sourceQuest"] = 9416,	-- Report to General Kirika
-					["coord"] = { 50.8, 69.5, SILITHUS },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 53,
-					["groups"] = {
-						i(13446),	-- Major Healing Potion
-						i(13444),	-- Major Mana Potion
-					},
-				})),
 				un(PHASE_FIVE, q(8779, {	-- Scrying Materials
 					["provider"] = { "i", 21259 },	-- Logistics Task Briefing V
 					["repeatable"] = true,
