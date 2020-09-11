@@ -342,6 +342,7 @@ _.Zones =
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, EXALTED },	-- Cenarion Circle
 					["coord"] = { 51.2, 38.9, SILITHUS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -899,6 +900,7 @@ _.Zones =
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle
 					["coord"] = { 51.2, 38.9, SILITHUS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 20802, 15 },	-- Cenarion Combat Badge
 						{ "i", 20800, 20 },	-- Cenarion Logistics Badge
@@ -1326,6 +1328,7 @@ _.Zones =
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle
 					["coord"] = { 51.2, 38.9, SILITHUS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 20802, 7 },	-- Cenarion Combat Badge
 						{ "i", 20800, 4 },	-- Cenarion Logistics Badge
@@ -1343,6 +1346,7 @@ _.Zones =
 					["sourceQuest"] = 8800,	-- Cenarion Battlegear
 					["minReputation"] = { 609, FRIENDLY },	-- Cenarion Circle
 					["coord"] = { 51.2, 38.9, SILITHUS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 20802, 5 },	-- Cenarion Combat Badge
 						{ "i", 20800, 3 },	-- Cenarion Logistics Badge
