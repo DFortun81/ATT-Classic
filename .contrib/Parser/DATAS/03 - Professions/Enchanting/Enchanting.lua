@@ -281,6 +281,10 @@ profession(ENCHANTING, {
 				["name"] = "Defense",
 				["recipeID"] = 13635
 			},
+			un(PHASE_FIVE, {
+				["name"] = "Dodge",
+				["recipeID"] = 25086,
+			}),
 			{
 				["name"] = "Fire Resistance",
 				["recipeID"] = 13657
@@ -333,6 +337,14 @@ profession(ENCHANTING, {
 				["name"] = "Resistance",
 				["recipeID"] = 13794
 			},
+			un(PHASE_FIVE, {
+				["name"] = "Stealth",
+				["recipeID"] = 25083,
+			}),
+			un(PHASE_FIVE, {
+				["name"] = "Subtlety",
+				["recipeID"] = 25084,
+			}),
 			{
 				["name"] = "Superior Defense",
 				["recipeID"] = 20015
@@ -406,7 +418,15 @@ profession(ENCHANTING, {
 			{
 				["name"] = "Strength",
 				["recipeID"] = 13887
-			}
+			},
+			un(PHASE_FIVE, {
+				["name"] = "Superior Agility",
+				["recipeID"] = 25080,
+			}),
+			un(PHASE_FIVE, {
+				["name"] = "Threat",
+				["recipeID"] = 25072,
+			}),
 		}
 	},
 	{
