@@ -2711,8 +2711,7 @@ _.WorldDrops =
 		prof(BLACKSMITHING, {
 			i(7992),	-- Plans: Blue Glittering Axe
 			i(3609),	-- Plans: Copper Chain Vest
-			--[[ Added in TBC Pre-patch
-				i(12698),	-- Plans: Dawnbringer Shoulders]]--
+			un(NEVER_IMPLEMENTED, i(12698)),	-- Plans: Dawnbringer Shoulders
 			i(7993),	-- Plans: Dazzling Mithril Rapier
 			i(2883),	-- Plans: Deadly Bronze Poniard
 			i(3868),	-- Plans: Frost Tiger Blade

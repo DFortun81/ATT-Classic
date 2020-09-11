@@ -41,12 +41,11 @@ profession(BLACKSMITHING, {
 				["name"] = "Shoulders",
 				["categoryID"] = 24,
 				["g"] = {
-					--[[ Added in TBC pre-patch, will never be available in Classic
-						 {
+					un(NEVER_IMPLEMENTED, {
 						["name"] = "Dawnbringer Shoulders",
 						["recipeID"] = 16660,
 						["requireSkill"] = 9788,
-					},]]--
+					}),
 					{
 						["name"] = "Fiery Chain Shoulders",
 						["recipeID"] = 20873,

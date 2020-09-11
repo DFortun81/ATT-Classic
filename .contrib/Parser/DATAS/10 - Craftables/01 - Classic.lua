@@ -142,8 +142,7 @@ _.Craftables =
 			i(19691),	-- Bloodsoul Shoulders
 			i(11605),	-- Dark Iron Shoulders
 			i(19695),	-- Darksoul Shoulders
-			--[[ Added in TBC Pre-patch
-			i(12625),	-- Dawnbringer Shoulders ]]--
+			un(NEVER_IMPLEMENTED, i(12625)),	-- Dawnbringer Shoulders
 			i(16988),	-- Fiery Chain Shoulders
 			i(3841),	-- Golden Scale Shoulders
 			i(3840),	-- Green Iron Shoulders
