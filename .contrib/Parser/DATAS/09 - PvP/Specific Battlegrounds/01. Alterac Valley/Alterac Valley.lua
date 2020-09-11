@@ -688,6 +688,9 @@ _.PvP =
 								["sourceQuest"] = 7261,	-- The Sovereign Imperative
 								["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 								["races"] = ALLIANCE_ONLY,
+								["cost"] = {
+									{ "i", 17849, 1 },	-- Stormpike Banner
+								},
 								["lvl"] = 51,
 								["groups"] = {
 									i(17691),	-- Stormpike Insignia Rank 1
