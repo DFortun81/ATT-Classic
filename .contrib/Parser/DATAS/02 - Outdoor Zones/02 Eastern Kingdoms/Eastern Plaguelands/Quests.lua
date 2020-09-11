@@ -795,6 +795,9 @@ _.Zones =
 					["qg"] = 11063,	-- Carlin Redpath
 				}),
 				q(6041, {	-- When Smokey Sings, I Get Violent
+					["cost"] = {
+						{ "i", 15736, 1 },	-- Smokey's Special Compound
+					},
 					["lvl"] = 54,
 					["g"] = {
 						i(16992),	-- Smokey's Explosive Launcher
