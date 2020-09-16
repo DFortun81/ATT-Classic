@@ -290,6 +290,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 298,	-- Excavation Progress Report
+					["cost"] = {
+						{ "i", 2637, 1 },	-- Ironbrand's Progress Report
+					},
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell

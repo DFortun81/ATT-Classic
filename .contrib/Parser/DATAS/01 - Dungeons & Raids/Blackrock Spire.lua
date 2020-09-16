@@ -731,6 +731,7 @@ _.Instances = {
 					["coord"] = { 49.8, 68.2, UNDERCITY },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 57,
 				},
 				{

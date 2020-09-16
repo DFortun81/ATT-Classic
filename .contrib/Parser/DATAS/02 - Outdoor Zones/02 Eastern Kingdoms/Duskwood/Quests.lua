@@ -124,8 +124,12 @@ _.Zones =
 				}),
 				q(453, {	-- Finding the Shadowy Figure
 					["qg"] = 273,	-- Tavernkeep Smitts
+					["sourceQuest"] = 266,	-- Inquire at the Inn
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2161, 1 },	-- Book from Sven's Farm
+					},
 					["lvl"] = 20,
 				}),
 				q(156, {	-- Gather Rot Blossoms
@@ -158,8 +162,12 @@ _.Zones =
 				}),
 				q(266, {	-- Inquire at the Inn
 					["qg"] = 267,	-- Clerk Daltry
+					["sourceQuest"] = 265,	-- The Shadowy Search Continues
 					["coord"] = { 72.6, 46.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2161, 1 },	-- Book from Sven's Farm
+					},
 					["lvl"] = 20,
 				}),
 				q(5, {	-- Jitters' Growling Gut
@@ -170,8 +178,12 @@ _.Zones =
 				}),
 				q(159, {	-- Juice Delivery
 					["qg"] = 273,	-- Tavernkeep Smitts
+					["sourceQuest"] = 156,	-- Gather Rot Blossoms
 					["coord"] = { 73.8, 44.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 1451, 1 },	-- Bottle of Zombie Juice
+					},
 					["lvl"] = 20,
 				}),
 				q(174, {	-- Look To The Stars
@@ -618,8 +630,12 @@ _.Zones =
 				}),
 				q(265, {	-- The Shadowy Search Continues
 					["qg"] = 265,	-- Madame Eva
+					["sourceQuest"] = 262,	-- The Shadowy Figure
 					["coord"] = { 75.8, 45.3, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2161, 1 },	-- Book from Sven's Farm
+					},
 					["lvl"] = 20,
 				}),
 				q(101, {	-- The Totem of Infliction
