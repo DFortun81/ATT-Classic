@@ -562,7 +562,7 @@ _.Zones =
 					["classes"] = { HUNTER },
 					["lvl"] = 10,
 				}),
-				q(6085, {	-- Taming the Beast
+				q(6086, {	-- Taming the Beast
 					["qg"] = 1231,	-- Grif Wildheart <Hunter Trainer>
 					["sourceQuest"] = 6085,  -- Taming the Beast
 					["coord"] = { 45.8, 53.0, DUN_MOROGH },
