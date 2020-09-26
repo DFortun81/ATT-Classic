@@ -1031,6 +1031,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				q(8802, {	-- The Savior of Kalimdor
 					["qg"] = 15379,	-- Caelestrasz
 					["sourceQuest"] = 8801,	-- C'Thun's Legacy
+					["cost"] = {
+						{ "i", 21221 },	-- Eye of C'Thun
+					},
 					["groups"] = {
 						i(21712),	-- Amulet of the Fallen God
 						i(21710),	-- Cloak of the Fallen God
