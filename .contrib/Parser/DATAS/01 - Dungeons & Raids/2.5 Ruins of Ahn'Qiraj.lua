@@ -459,49 +459,156 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				["groups"] = {
 					-- Class Books
 					cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
-						i(21294),	-- Book of Healing Touch XI
-						i(21295),	-- Book of Starfire VII
-						i(21296),	-- Book of Rejuvenation XI
+						{
+							["itemID"] = 21294,		-- Book of Healing Touch XI
+							["spellID"] = 25297,	-- Healing Touch XI
+							["rank"] = 11,
+						},
+						{
+							["itemID"] = 21295,		-- Book of Starfire VII
+							["spellID"] = 25298,	-- Starfire VII
+							["rank"] = 7,
+						},
+						{
+							["itemID"] = 21296,		-- Book of Rejuvenation XI
+							["spellID"] = 25299,	-- Rejuvenation XI
+							["rank"] = 11,
+						},
 					})),
 					cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
-						i(21304),	-- Guide: Multi-Shot V
-						i(21306),	-- Guide: Serpent Sting IX
-						i(21307),	-- Guide: Aspect of the Hawk VII
+						{
+							["itemID"] = 21304,		-- Guide: Multi-Shot V
+							["spellID"] = 25294,	-- Multi-Shot V
+							["rank"] = 5,
+						},
+						{
+							["itemID"] = 21306,		-- Guide: Serpent Sting IX
+							["spellID"] = 25295,	-- Serpent Sting IX
+							["rank"] = 9,
+						},
+						{
+							["itemID"] = 21307,		-- Guide: Aspect of the Hawk VII
+							["spellID"] = 25296,	-- Aspect of the Hawk VII
+							["rank"] = 7,
+						},
 					})),
 					cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
-						i(21280),	-- Tome of Arcane Missiles VIII
-						i(21279),	-- Tome of Fireball XII
-						i(21214),	-- Tome of Frostbolt XI
+						{
+							["itemID"] = 21280,		-- Tome of Arcane Missiles VIII
+							["spellID"] = 25345,	-- Arcane Missiles VIII
+							["rank"] = 8,
+						},
+						{
+							["itemID"] = 21279,		-- Tome of Fireball XII
+							["spellID"] = 25306,	-- Fireball XII
+							["rank"] = 12,
+						},
+						{
+							["itemID"] = 21214,		-- Tome of Frostbolt XI
+							["spellID"] = 25304,	-- Frostbolt XI
+							["rank"] = 11,
+						},
 					})),
 					cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
-						i(21289),	-- Libram: Blessing of Might VII
-						i(21288),	-- Libram: Blessing of Wisdom VI
-						i(21290),	-- Libram: Holy Light IX
+						{
+							["itemID"] = 21289,		-- Libram: Blessing of Might VII
+							["spellID"] = 25291,	-- Blessing of Might VII
+							["rank"] = 7,
+						},
+						{
+							["itemID"] = 21288,		-- Libram: Blessing of Wisdom VI
+							["spellID"] = 25290,	-- Blessing of Wisdom VI
+							["rank"] = 6,
+						},
+						{
+							["itemID"] = 21290,		-- Libram: Holy Light IX
+							["spellID"] = 25292,	-- Holy Light IX
+							["rank"] = 9,
+						},
 					})),
 					cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
-						i(21284),	-- Codex of Greater Heal V
-						i(21285),	-- Codex of Renew X
-						i(21287),	-- Codex of Prayer of Healing V
+						{
+							["itemID"] = 21284,		-- Codex of Greater Heal V
+							["spellID"] = 25314,	-- Greater Heal V
+							["rank"] = 5,
+						},
+						{
+							["itemID"] = 21285,		-- Codex of Renew X
+							["spellID"] = 25315,	-- Renew X
+							["rank"] = 10,
+						},
+						{
+							["itemID"] = 21287,		-- Codex of Prayer of Healing V
+							["spellID"] = 25316,	-- Prayer of Healing V
+							["rank"] = 5,
+						},
 					})),
 					cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
-						i(21300),	-- Handbook of Backstab IX
-						i(21302),	-- Handbook of Deadly Poison V
-						i(21303),	-- Handbook of Feint V
+						{
+							["itemID"] = 21300,		-- Handbook of Backstab IX
+							["spellID"] = 25300,	-- Backstab IX
+							["rank"] = 9,
+						},
+						{
+							["itemID"] = 21302,		-- Handbook of Deadly Poison V
+							["recipeID"] = 25347,	-- Deadly Poison V
+						},
+						{
+							["itemID"] = 21303,		-- Handbook of Feint V
+							["spellID"] = 25302,	-- Feint V
+							["rank"] = 5,
+						},
 					})),
 					cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
-						i(21293),	-- Tablet of Grace of Air Totem III
-						i(21291),	-- Tablet of Healing Wave X
-						i(21292),	-- Tablet of Strength of Earth Totem V
+						{
+							["itemID"] = 21293,		-- Tablet of Grace of Air Totem III
+							["spellID"] = 25359,	-- Grace of Air Totem III
+							["rank"] = 3,
+						},
+						{
+							["itemID"] = 21291,		-- Tablet of Healing Wave X
+							["spellID"] = 25357,	-- Healing Wave X
+							["rank"] = 10,
+						},
+						{
+							["itemID"] = 21292,		-- Tablet of Strength of Earth Totem V
+							["spellID"] = 25361,	-- Strength of Earth Totem V
+							["rank"] = 5,
+						},
 					})),
 					cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
-						i(21283),	-- Grimoire of Corruption VII
-						i(21282),	-- Grimoire of Immolate VIII
-						i(21281),	-- Grimoire of Shadow Bolt X
+						{
+							["itemID"] = 21283,		-- Grimoire of Corruption VII
+							["spellID"] = 25311,	-- Corruption VII
+							["rank"] = 7,
+						},
+						{
+							["itemID"] = 21282,		-- Grimoire of Immolate VIII
+							["spellID"] = 25309,	-- Immolate VIII
+							["rank"] = 8,
+						},
+						{
+							["itemID"] = 21281,		-- Grimoire of Shadow Bolt X
+							["spellID"] = 25307,	-- Shadow Bolt X
+							["rank"] = 10,
+						},
 					})),
 					cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
-						i(21298),	-- Manual of Battle Shout VII
-						i(21297),	-- Manual of Heroic Strike IX
-						i(21299),	-- Manual of Revenge VI
+						{
+							["itemID"] = 21298,		-- Manual of Battle Shout VII
+							["spellID"] = 25289,	-- Battle Shout VII
+							["rank"] = 7,
+						},
+						{
+							["itemID"] = 21297,		-- Manual of Heroic Strike IX
+							["spellID"] = 25286,	-- Heroic Strike IX
+							["rank"] = 9,
+						},
+						{
+							["itemID"] = 21299,		-- Manual of Revenge VI
+							["spellID"] = 25288,	-- Revenge VI
+							["rank"] = 6,
+						},
 					})),
 					
 					-- Enchants
