@@ -1,6 +1,6 @@
 profession(40, {	-- Poisons
 	{	
-		["classes"] = {4},
+		["classes"] = { ROGUE },
 		["name"] = "Consumable",
 		["categoryID"] = 70,
 		["g"] = {
@@ -32,10 +32,10 @@ profession(40, {	-- Poisons
 				["name"] = "Deadly Poison IV",
 				["recipeID"] = 11358
 			},
-			--[[{
+			un(PHASE_FIVE, {
 				["name"] = "Deadly Poison V",
 				["recipeID"] = 25347
-			},]] -- will be added in a later phase (drops in Ruins of AQ)
+			}),
 			{
 				["name"] = "Instant Poison",
 				["recipeID"] = 8681
