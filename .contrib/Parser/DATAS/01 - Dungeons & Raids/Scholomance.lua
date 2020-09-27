@@ -432,10 +432,6 @@ _.Instances = {
 				}),
 			}),
 			n(ZONEDROPS, {
-				i(17682),	-- Book: Gift of the Wild Rank 1
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-					["description"] = "This can only drop from Elites."
-				}),
 				i(16255, {	-- Formula: Enchant 2H Weapon - Major Spirit
 					["cr"] = 10469,	-- Scholomance Adept
 				}),

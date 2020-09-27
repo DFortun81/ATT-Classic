@@ -287,9 +287,6 @@ _.Instances = {
 						10417,	-- Venom Belcher
 					},
 				},
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-					["description"] = "This can only drop from Elites."	-- Commenting it out for Live, will be relevant for Classic
-				}),
 				i(16249, {  -- Formula: Enchant 2H Weapon - Major Intellect
 					["crs"] = {
 						10422,  -- Crimson Sorcerer
@@ -459,7 +456,11 @@ _.Instances = {
 							["questID"] = 5848,	-- Of Love and Family
 							["description"] = "Found the wall near Archivist Galford.",
 						},
-						i(22897),	-- Tome of Conjure Food VII
+						un(PHASE_SIX, {
+							["itemID"] = 22897,	-- Tome of Conjure Food VII
+							["spellID"] = 28612,	-- Conjure Food VII
+							["rank"] = 7,
+						}),
 						i(13385),	-- Tome of Knowledge
 						i(13386),	-- Archivist Cape
 						i(16692),	-- Devout Gloves

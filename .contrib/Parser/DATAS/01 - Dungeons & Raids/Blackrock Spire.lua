@@ -808,9 +808,12 @@ _.Instances = {
 				i(16250, {	-- Formula: Enchant Weapon - Superior Striking
 					["cr"] = 9216,	-- Spirestone Warlord
 				}),
-				un(PHASE_SIX, i(24102, {	-- Manual of Eviscerate IX
+				un(PHASE_SIX, {
+					["itemID"] = 24102,		-- Manual of Eviscerate IX
+					["spellID"] = 31016,	-- Eviscerate IX
+					["rank"] = 9,
 					["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
-				})),
+				}),
 				i(14513, {	-- Pattern: Robe of the Archmage
 					["cr"] = 9264,	-- Firebrand Pyromancer
 				}),
@@ -845,7 +848,10 @@ _.Instances = {
 				n(9257, {	-- Scarshield Warlock
 					["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",
 					["groups"] = {
-						i(9214),	-- Grimoire of Inferno
+						i(9214, {	-- Grimoire of Inferno
+							["spellID"] = 1122,	-- Inferno
+							["classes"] = { WARLOCK },
+						}),
 						n(10263, {	-- Burning Felguard
 							["description"] = "This mob is infinitely farmable if you don't kill all of the Scarshield Warlocks.",
 							["groups"] = {
@@ -1080,7 +1086,11 @@ _.Instances = {
 						i(12927),	-- Truestrike Shoulders
 						i(16672),	-- Gauntlets of Elements
 						i(12926),	-- Flaming Band
-						un(PHASE_SIX, i(23320)),	-- Tablet of Flame Shock VI
+						un(PHASE_SIX, {
+							["itemID"] = 23320,		-- Tablet of Flame Shock VI
+							["spellID"] = 29228,	-- Flame Shock VI
+							["rank"] = 6,
+						}),
 					}),
 					n(10264, { 	-- Solakar Flamewreath
 						["description"] = "This is spawned by clicking on the Father Flame and killing 8 waves of drake adds in the Leeroy Jenkins room.",
@@ -1175,7 +1185,11 @@ _.Instances = {
 						i(18103),	-- Band of Rumination
 					}),
 					n(10430, { 	-- The Beast
-						un(PHASE_SIX, i(24101)),	-- Book of Ferocious Bite V
+						un(PHASE_SIX, {
+							["itemID"] = 24101,		-- Book of Ferocious Bite V
+							["spellID"] = 31018,	-- Ferocious Bite V
+							["rank"] = 5,
+						}),
 						i(12709),	-- Finkle's Skinner
 						i(12969), 	-- Seeping Willow
 						i(12967),	-- Bloodmoon Cloak

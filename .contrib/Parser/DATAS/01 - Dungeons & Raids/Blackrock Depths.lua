@@ -784,10 +784,6 @@ _.Instances = {
 				i(12546),	-- Aristocratic Cuffs
 				i(12555),	-- Battlechaser's Greaves
 				i(12552),	-- Blisterbane Wrap
-				i(17682),	-- Book: Gift of the Wild Rank 1
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-					["description"] = "This can only drop from Elites.",
-				}),
 				i(12549),	-- Braincage
 				i(18945),	-- Dark Iron Residue
 				un(PHASE_FIVE, i(22528)),	-- Dark Iron Scraps

@@ -336,9 +336,11 @@ _.Instances = {
 				i(16859),	-- Lawbringer Boots (Paladin)
 				i(18879),	-- Heavy Dark Iron Ring
 				i(19147),	-- Ring of Spell Power
-				i(16665, {	-- Tome of Tranquilizing Shot
+				{
+					["itemID"] = 16665,		-- Tome of Tranquilizing Shot
+					["recipeID"] = 19801,	-- Tranquilizing Shot
 					["classes"] = { HUNTER },
-				}),
+				}
 			}),
 			n(11982, {	-- Magmadar
 				i(17073),	-- Earthshaker

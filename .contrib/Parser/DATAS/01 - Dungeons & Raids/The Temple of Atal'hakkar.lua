@@ -405,10 +405,6 @@ _.Instances = {
 					["questID"] = 1445,	-- The Temple of Atal'Hakkar
 					["races"] = HORDE_ONLY,
 				},
-				i(17682),	-- Book: Gift of the Wild Rank 1
-				i(17683, {	-- Book: Gift of the Wild Rank 2
-					["description"] = "This can only drop from Elites.",
-				}),
 				i(16216, {	-- Formula: Enchant Cloak - Greater Resistance
 					["cr"] = 5259,	-- Atal'ai Witch Doctor
 				}),

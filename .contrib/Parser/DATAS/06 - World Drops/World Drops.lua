@@ -2673,17 +2673,53 @@ _.WorldDrops =
 		un(PHASE_THREE, i(19284)),	-- Eight of Portals
 	}),
 	filter(200, {	-- Recipes
+		cl(DRUID, {
+			{
+				["itemID"] = 17682,		-- Book: Gift of the Wild
+				["spellID"] = 21849,	-- Gift of the Wild
+				["rank"] = 1,
+			},
+			{
+				["itemID"] = 17683,		-- Book: Gift of the Wild II
+				["spellID"] = 21850,	-- Gift of the Wild II
+				["rank"] = 2,
+			},
+		}),
 		cl(MAGE, {
-			i(18600),	-- Tome of Arcane Brilliance
-			un(PHASE_SIX, i(22890)),	-- Tome of Frost Ward V [Phase 6]
+			{
+				["itemID"] = 18600,		-- Tome of Arcane Brilliance
+				["spellID"] = 23028,	-- Arcane Brilliance
+				["rank"] = 1,
+			},
+			un(PHASE_SIX, {
+				["itemID"] = 22890,		-- Tome of Frost Ward V [Phase 6]
+				["spellID"] = 28609,	-- Frost Ward V
+				["rank"] = 5,
+			}),
 		}),
 		cl(PRIEST, {
-			i(17413),	-- Codex: Prayer of Fortitude
-			i(17414),	-- Codex: Prayer of Fortitude II
-			un(PHASE_FIVE, i(22393)),	-- Codex: Prayer of Shadow Protection [Phase 5]
+			{
+				["itemID"] = 17413,		-- Codex: Prayer of Fortitude
+				["spellID"] = 21562,	-- Prayer of Fortitude
+				["rank"] = 1,
+			},
+			{
+				["itemID"] = 17414,		-- Codex: Prayer of Fortitude II
+				["spellID"] = 21564,	-- Prayer of Fortitude II
+				["rank"] = 2,
+			},
+			un(PHASE_FIVE, {
+				["itemID"] = 22393,		-- Codex: Prayer of Shadow Protection [Phase 5]
+				["spellID"] = 27683,	-- Prayer of Shadow Protection
+				["rank"] = 1,
+			}),
 		}),
 		cl(WARLOCK, {
-			un(PHASE_SIX, i(22891)),	-- Grimoire of Shadow Ward IV [Phase 6]
+			un(PHASE_SIX, {
+				["itemID"] = 22891,		-- Grimoire of Shadow Ward IV [Phase 6]
+				["spellID"] = 28610,	-- Shadow Ward IV
+				["rank"] = 4,
+			}),
 		}),
 		prof(ALCHEMY, {
 			i(3832),	-- Recipe: Elixir of Detect Lesser Invisibility
