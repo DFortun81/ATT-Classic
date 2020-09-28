@@ -216,12 +216,6 @@ _.Zones =
 					["races"] = { UNDEAD },
 					["lvl"] = 10,
 				}),
-				q(7562, {	-- Mor'zul Bloodbringer
-					["qg"] = 5753,	-- Martha Strain <Demon Trainer>
-					["coord"] = { 85.8, 15.8, UNDERCITY },
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
-				}),
 				q(8273, {	-- Oran's Gratitude
 					["qg"] = 7825,	-- Oran Snakewrithe
 					["sourceQuest"] = 2782,	-- Rin'ji's Secret

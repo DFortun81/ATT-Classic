@@ -216,6 +216,29 @@ _.Zones =
 					},
 					["lvl"] = 60,
 				}),
+				q(7562, {	-- Mor'zul Bloodbringer
+					["qgs"] = {
+						6382,	-- Jubahl Corpseseeker <Demon Trainer>
+						5815,	-- Kurgul <Demon Trainer>
+						5520,	-- Spackle Thornberry <Demon Trainer>
+						5753,	-- Martha Strain <Demon Trainer>
+					},
+					["coords"] = {
+						{ 52.8, 6.0, IRONFORGE },
+						{ 47.6, 46.8, ORGRIMMAR },
+						{ 25.8, 77.6, STORMWIND_CITY },
+						{ 85.8, 15.8, UNDERCITY },
+					},
+					["maps"] = {
+						IRONFORGE,
+						ORGRIMMAR,
+						STORMWIND_CITY,
+						UNDERCITY,
+					},
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 60,
+				}),
 				q(3825, {	-- Ogre Head On A Stick = Party
 					["qg"] = 9177,	-- Oralius
 					["sourceQuest"] = 3824,	-- Gor'tesh the Brute Lord

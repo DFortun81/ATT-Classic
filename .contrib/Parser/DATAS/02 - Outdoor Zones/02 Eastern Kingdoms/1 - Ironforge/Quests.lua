@@ -413,12 +413,6 @@ _.Zones =
 						i(9514),	-- Arcane Staff
 					},
 				}),
-				q(7562, {	-- Mor'zul Bloodbringer
-					["qg"] = 6382,	-- Jubahl Corpseseeker <Demon Trainer>
-					["coord"] = { 52.8, 6.0, IRONFORGE },
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
-				}),
 				q(3448, {	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.2, 11.8, IRONFORGE },

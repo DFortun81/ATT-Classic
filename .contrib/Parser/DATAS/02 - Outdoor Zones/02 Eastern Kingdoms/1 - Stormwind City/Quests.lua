@@ -445,12 +445,6 @@ _.Zones =
 						i(9513),	-- Ley Staff
 					},
 				}),
-				q(7562, {	-- Mor'zul Bloodbringer
-					["qg"] = 5520,	-- Spackle Thornberry <Demon Trainer>
-					["coord"] = { 25.8, 77.6, STORMWIND_CITY },
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
-				}),
 				q(6187, {	-- Order Must Be Restored
 					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["sourceQuest"] = 6186,	-- The Blightcaller Cometh

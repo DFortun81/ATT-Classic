@@ -245,12 +245,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 7010,	-- Zilzibin Drumlore
 				}),
-				q(7562, {	-- Mor'zul Bloodbringer
-					["qg"] = 5815,	-- Kurgul <Demon Trainer>
-					["coord"] = { 47.6, 46.8, ORGRIMMAR },
-					["classes"] = { WARLOCK },
-					["lvl"] = 60,
-				}),
 				q(1509, {	-- News of Dogran (1/2)
 					["lvl"] = 20,
 					["races"] = { ORC, UNDEAD },
