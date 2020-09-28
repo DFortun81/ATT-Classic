@@ -109,7 +109,7 @@ _.Zones =
 					["sourceQuest"] = 7,	-- Kobold Camp Cleanup
 					["coord"] = { 48.9, 41.6, ELWYNN_FOREST },
 					["classes"] = { PALADIN },
-					["races"] = ALLIANCE_ONLY,
+					["races"] = { HUMAN },
 				}),
 				q(1667, {	-- Dead-tooth Jack
 					["qg"] = 294,	-- Marshal Haggard
