@@ -1111,38 +1111,122 @@ _.Instances = {
 				},
 			}),
 			n(12944, { 	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
-				["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
-				["groups"] = {
-					un(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect
-					un(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Spirit
-					un(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength
-					i(17025),  	-- Pattern: Black Dragonscale Boots
-					un(PHASE_THREE, i(19331)),  	-- Pattern: Chromatic Gauntlets
-					un(PHASE_THREE, i(19332)), 	-- Pattern: Corehound Belt
-					i(17022),  	-- Pattern: Corehound Boots
-					i(17018),  	-- Pattern: Flarecore Gloves
-					un(PHASE_THREE, i(19220)),  	-- Pattern: Flarecore Leggings
-					i(17017),  	-- Pattern: Flarecore Mantle
-					un(PHASE_THREE, i(19219)),  	-- Pattern: Flarecore Robe
-					un(PHASE_THREE, i(19330)),  	-- Pattern: Lava Belt
-					un(PHASE_THREE, i(19333)),  	-- Pattern: Molten Belt
-					i(17023),  	-- Pattern: Molten Helm
-					un(PHASE_THREE, i(19208)),  	-- Plans: Black Amnesty
-					un(PHASE_THREE, i(19209)),  	-- Plans: Blackfury
-					un(PHASE_THREE, i(19211)), 	-- Plans: Blackguard
-					un(PHASE_FOUR, i(20040)),  	-- Plans: Dark Iron Boots
-					i(17051),  	-- Plans: Dark Iron Bracers
-					i(17060),  	-- Plans: Dark Iron Destroyer
-					un(PHASE_THREE, i(19207)),  	-- Plans: Dark Iron Gauntlets
-					un(PHASE_THREE, i(19206)),  	-- Plans: Dark Iron Helm
-					i(17052),  	-- Plans: Dark Iron Leggings
-					i(17059),  	-- Plans: Dark Iron Reaver
-					un(PHASE_THREE, i(19210)),  	-- Plans: Ebon Hand
-					i(17049),  	-- Plans: Fiery Chain Girdle
-					i(17053),  	-- Plans: Fiery Chain Shoulders
-					un(PHASE_THREE, i(19212)),  	-- Plans: Nightfall
-					un(PHASE_FIVE, i(20761)),	-- Recipe: Transmute Elemental Fire
+				un(PHASE_THREE, {
+					["itemID"] = 19449,	-- Formula: Enchant Weapon - Mighty Intellect
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19448,	-- Formula: Enchant Weapon - Mighty Spirit
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19444,	-- Formula: Enchant Weapon - Strength
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				}),
+				{
+					["itemID"] = 17025,	-- Pattern: Black Dragonscale Boots
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
 				},
+				un(PHASE_THREE, {
+					["itemID"] = 19331,	-- Pattern: Chromatic Gauntlets
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19332,	-- Pattern: Corehound Belt
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				{
+					["itemID"] = 17022,	-- Pattern: Corehound Boots
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				},
+				{
+					["itemID"] = 17018,	-- Pattern: Flarecore Gloves
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19220,	-- Pattern: Flarecore Leggings
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				{
+					["itemID"] = 17017,	-- Pattern: Flarecore Mantle
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19219,	-- Pattern: Flarecore Robe
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19330,	-- Pattern: Lava Belt
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19333,	-- Pattern: Molten Belt
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				{
+					["itemID"] = 17023,	-- Pattern: Molten Helm
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19208,	-- Plans: Black Amnesty
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19209,	-- Plans: Blackfury
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19211,	-- Plans: Blackguard
+					["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+				}),
+				un(PHASE_FOUR, {
+					["itemID"] = 20040,	-- Plans: Dark Iron Boots
+					["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+				}),
+				{
+					["itemID"] = 17051,	-- Plans: Dark Iron Bracers
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				},
+				{
+					["itemID"] = 17060,	-- Plans: Dark Iron Destroyer
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19207,	-- Plans: Dark Iron Gauntlets
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				}),
+				un(PHASE_THREE, {
+					["itemID"] = 19206,	-- Plans: Dark Iron Helm
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				}),
+				{
+					["itemID"] = 17052,	-- Plans: Dark Iron Leggings
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				},
+				{
+					["itemID"] = 17059,	-- Plans: Dark Iron Reaver
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19210,	-- Plans: Ebon Hand
+					["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+				}),
+				{
+					["itemID"] = 17049,	-- Plans: Fiery Chain Girdle
+					["minReputation"] = { 59, HONORED },	-- The Thorium Brotherhood, Honored.
+				},
+				{
+					["itemID"] = 17053,	-- Plans: Fiery Chain Shoulders
+					["minReputation"] = { 59, REVERED },	-- The Thorium Brotherhood, Revered.
+				},
+				un(PHASE_THREE, {
+					["itemID"] = 19212,	-- Plans: Nightfall
+					["minReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+				}),
+				un(PHASE_FIVE, {
+					["itemID"] = 20761,	-- Recipe: Transmute Elemental Fire
+					["minReputation"] = { 59, FRIENDLY },	-- The Thorium Brotherhood, Friendly.
+				}),
 			}),
 			n(9156, {	-- Ambassador Flamelash
 				i(11809), 	-- Flame Wrath
