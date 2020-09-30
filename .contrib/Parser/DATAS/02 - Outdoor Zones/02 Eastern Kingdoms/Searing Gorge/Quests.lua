@@ -138,6 +138,11 @@ _.Zones =
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18944, 2 },	-- Incendosaur Scale
+						{ "i", 4234, 10 },	-- Heavy Leather
+						{ "i", 3857, 1 },	-- Coal
+					},
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -147,6 +152,11 @@ _.Zones =
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18944, 2 },	-- Incendosaur Scale
+						{ "i", 3575, 4 },	-- Iron Bar
+						{ "i", 3857, 1 },	-- Coal
+					},
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
@@ -156,6 +166,11 @@ _.Zones =
 					["maxReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
+					["cost"] = {
+						{ "i", 18944, 2 },	-- Incendosaur Scale
+						{ "i", 3356, 4 },	-- Kingsblood
+						{ "i", 3857, 1 },	-- Coal
+					},
 					["repeatable"] = true,
 					["lvl"] = 45,
 				}),
