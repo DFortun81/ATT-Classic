@@ -14,6 +14,9 @@ _.Holidays = bubbleDown({ ["u"] = HARVEST_FESTIVAL },
 				i(19997),	-- Harvest Nectar
 			},
 		}),
+		n(-297, {	-- Mailbox
+			i(19697),	-- Bounty of the Harvest
+		}),
 		n(QUESTS, {
 			{
 				["questID"] = 8150,	-- Honoring a Hero
