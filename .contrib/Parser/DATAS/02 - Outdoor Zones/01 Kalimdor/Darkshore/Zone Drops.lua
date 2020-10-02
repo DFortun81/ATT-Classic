@@ -11,6 +11,15 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["cr"] = 2212,	-- Deth'ryll Satyr
 				}),
+				i(5352, { 	-- Book: The Powers Below
+					["questID"] = 968,	-- The Powers Below
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						2339,	-- Twilight Thug
+						2338,	-- Twilight Disciple
+					},
+					["lvl"] = 10,
+				}),
 				i(7500, {	-- Bottom of Gelkak's Key
 					["questID"] = 2098,	-- Gyromast's Retrieval
 					["races"] = ALLIANCE_ONLY,

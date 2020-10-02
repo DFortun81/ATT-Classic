@@ -634,11 +634,6 @@ _.Zones =
 				q(968, { 	-- The Powers Below
 					["provider"] = { "i", 5352 },	-- Book: The Powers Below
 					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-					["crs"] = {
-						2339,	-- Twilight Thug
-						2338,	-- Twilight Disciple
-					},
 					["lvl"] = 10,
 				}),
 				q(4811, {	-- The Red Crystal
