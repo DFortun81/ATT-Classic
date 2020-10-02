@@ -346,13 +346,59 @@ _.Zones =
 						4641,	-- Your Place In The World
 					},
 				}),
-				q(1963, {	-- The Shattered Hand
+				q(1963, {	-- The Shattered Hand (1/2)
 					["qg"] = 6446,	-- Therzok
-					["sourceQuest"] = 1859,	-- Therzok
+					["sourceQuests"] = {
+						1885,	-- Mennet Carkad
+						1859,	-- Therzok
+					},
 					["coord"] = { 42.74, 53.52, ORGRIMMAR },
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
+					["maps"] = { THE_BARRENS },
+					["cost"] = {
+						{ "i", 7209 },	-- Tazan's Satchel
+					},
 					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 7209,	-- Tazan's Satchel
+							["questID"] = 1963,	-- The Shattered Hand (1/2)
+							["coord"] = { 63.8, 44.6, THE_BARRENS },
+							["cr"] = 6494,	-- Tazan
+						},
+					},
+				}),
+				q(1858, {	-- The Shattered Hand (2/2)
+					["qg"] = 6446,	-- Therzok
+					["sourceQuest"] = 1963,	-- The Shattered Hand (1/2)
+					["coord"] = { 42.74, 53.52, ORGRIMMAR },
+					["races"] = { ORC, TROLL },
+					["classes"] = { ROGUE },
+					["cost"] = {
+						{ "i", 7295 },	-- Tazan's Logbook
+					},
+					["lvl"] = 10,
+					["groups"] = {
+						{
+							["itemID"] = 7298,	-- Tazan's Key
+							["questID"] = 1858,	-- The Shattered Hand (2/2)
+							["coord"] = { 54.2, 68.2, ORGRIMMAR },
+							["cr"] = 6466,	-- Gamon
+						},
+						i(7209, {	-- Tazan's Satchel
+							["cost"] = {
+								{ "i", 7298 },	-- Tazan's Key
+							},
+							["groups"] = {
+								{
+									["itemID"] = 7295,	-- Tazan's Logbook
+									["questID"] = 1858,	-- The Shattered Hand (2/2)
+								},
+							},
+						}),
+						i(7298),	-- Blade of Cunning
+					},
 				}),
 				q(2460, {	-- The Shattered Salute
 					["lvl"] = 20,
