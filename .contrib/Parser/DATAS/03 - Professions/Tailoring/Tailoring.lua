@@ -107,7 +107,7 @@ profession(TAILORING, {
 			},
 			un(PHASE_FIVE, {
 				["name"] = "Satchel of Cenarius",
-				["recipeID"] = 27730,
+				["recipeID"] = 27725,
 			}),
 			{
 				["name"] = "Small Silk Pack",
