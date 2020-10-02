@@ -179,7 +179,7 @@ profession(TAILORING, {
 				["name"] = "Stormcloth Headband",
 				["recipeID"] = 12083,
 			}),
-			un(PHASE_FIVE, {
+			un(PHASE_SIX, {
 				["name"] = "Sylvan Crown",
 				["recipeID"] = 28481,
 			}),
@@ -257,7 +257,7 @@ profession(TAILORING, {
 				["name"] = "Stormcloth Shoulders",
 				["recipeID"] = 12087,
 			}),
-			un(PHASE_FIVE, {
+			un(PHASE_SIX, {
 				["name"] = "Sylvan Shoulders",
 				["recipeID"] = 28482,
 			})
@@ -451,7 +451,7 @@ profession(TAILORING, {
 				["name"] = "Stormcloth Vest",
 				["recipeID"] = 12068,
 			}),
-			un(PHASE_FIVE, {
+			un(PHASE_SIX, {
 				["name"] = "Sylvan Vest",
 				["recipeID"] = 28480,
 			}),
