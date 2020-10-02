@@ -207,6 +207,7 @@ _.Zones =
 					["sourceQuest"] = 861,	-- The Hunter's Way
 					["coord"] = { 61.52, 80.91, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(1131, {	-- Steelsnap
