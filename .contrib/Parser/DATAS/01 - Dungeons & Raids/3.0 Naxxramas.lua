@@ -891,78 +891,133 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 				}),
 				cl(9, {	-- Warlock
-					{
-						["questID"] = 9105,	-- Plagueheart Circlet
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9105, {	-- Plagueheart Circlet
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22367, 1 },	-- Desecrated Circlet
+							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 3 },	-- Mooncloth
+							{ "i", 14344, 3 },	-- Large Brilliant Shard
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22506),	-- Plagueheart Circlet
 						},
-					},
-					{
-						["questID"] = 9106,	-- Plagueheart Shoulderpads
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9106, {	-- Plagueheart Shoulderpads
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22507),	-- Plagueheart Shoulderpads
 						},
-					},
-					{
-						["questID"] = 9103,	-- Plagueheart Robe
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9103, {	-- Plagueheart Robe
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22351, 1 },	-- Desecrated Robe
+							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22504),	-- Plagueheart Robe
 						},
-					},
-					{
-						["questID"] = 9110,	-- Plagueheart Bindings
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9110, {	-- Plagueheart Bindings
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22369, 1 },	-- Desecrated Bindings
+							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+							{ "i", 12363, 1 },	-- Arcane Crystal
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22511),	-- Plagueheart Bindings
 						},
-					},
-					{
-						["questID"] = 9108,	-- Plagueheart Gloves
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9108, {	-- Plagueheart Gloves
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22371, 1 },	-- Desecrated Gloves
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22509),	-- Plagueheart Gloves
 						},
-					},
-					{
-						["questID"] = 9109,	-- Plagueheart Belt
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9109, {	-- Plagueheart Belt
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22370, 1 },	-- Desecrated Belt
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 12363, 2 },	-- Arcane Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22510),	-- Plagueheart Belt
 						},
-					},
-					{
-						["questID"] = 9104,	-- Plagueheart Leggings
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9104, {	-- Plagueheart Leggings
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22366, 1 },	-- Desecrated Leggings
+							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22505),	-- Plagueheart Leggings
 						},
-					},
-					{
-						["questID"] = 9107,	-- Plagueheart Sandals
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9107, {	-- Plagueheart Sandals
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22372, 1 },	-- Desecrated Sandals
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22508),	-- Plagueheart Sandals
 						},
-					},
+					}),
 				}),
 				cl(11, {	-- Druid
 					q(9088,	{	-- Dreamwalker Headpiece
