@@ -219,78 +219,134 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					}),
 				}),
 				cl(2, {	-- Paladin
-					{
-						["questID"] = 9045,	-- Redemption Headpiece
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9045, {	-- Redemption Headpiece
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22360, 1 },	-- Desecrated Headpiece
+							{ "i", 22375, 15 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 5 },	-- Arcanite Bar
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22428),	-- Redemption Headpiece
 						},
-					},
-					{
-						["questID"] = 9046,	-- Redemption Spaulders
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9046, {	-- Redemption Spaulders
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22361, 1 },	-- Desecrated Spaulders
+							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22429),	-- Redemption Spaulders
 						},
-					},
-					{
-						["questID"] = 9050,	-- Redemption Wristguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9043, {	-- Redemption Tunic
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-						["groups"] = {
-							i(22424),	-- Redemption Wristguards
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22350, 1 },	-- Desecrated Tunic
+							{ "i", 22375, 25 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
 						},
-					},
-					{
-						["questID"] = 9048,	-- Redemption Handguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
-						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-						["groups"] = {
-							i(22426),	-- Redemption Handguards
-						},
-					},
-					{
-						["questID"] = 9043,	-- Redemption Tunic
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
-						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["lvl"] = 60,
 						["groups"] = {
 							i(22425),	-- Redemption Tunic
 						},
-					},
-					{
-						["questID"] = 9049,	-- Redemption Girdle
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9050, {	-- Redemption Wristguards
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22362, 1 },	-- Desecrated Wristguards
+							{ "i", 22375, 6 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
+						["groups"] = {
+							i(22424),	-- Redemption Wristguards
+						},
+					}),
+					q(9048, {	-- Redemption Handguards
+						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22364, 1 },	-- Desecrated Handguards
+							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
+						["groups"] = {
+							i(22426),	-- Redemption Handguards
+						},
+					}),
+					q(9049, {	-- Redemption Girdle
+						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22363, 1 },	-- Desecrated Girdle
+							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22431),	-- Redemption Girdle
 						},
-					},
-					{
-						["questID"] = 9044,	-- Redemption Legguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9044, {	-- Redemption Legguards
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22359, 1 },	-- Desecrated Legguards
+							{ "i", 22375, 20 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22427),	-- Redemption Legguards
 						},
-					},
-					{
-						["questID"] = 9047,	-- Redemption Boots
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9047, {	-- Redemption Boots
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22365, 1 },	-- Desecrated Boots
+							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22430),	-- Redemption Boots
 						},
-					},
+					}),
 				}),
 				cl(3, {	-- Hunter
 					{
