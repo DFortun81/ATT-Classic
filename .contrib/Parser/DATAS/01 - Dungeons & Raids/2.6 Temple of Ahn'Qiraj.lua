@@ -1441,6 +1441,11 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					["itemID"] = 21221,	-- Eye of C'Thun
 					["questID"] = 8801,	-- C'Thun's Legacy
 				},
+				un(PHASE_SIX, {
+					["itemID"] = 22734,	-- Base of Atiesh
+					["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
+					["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+				}),
 				i(20929),	-- Carapace of the Old God
 				i(20933),	-- Husk of the Old God
 				i(21134),	-- Dark Edge of Insanity

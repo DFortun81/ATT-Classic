@@ -13,31 +13,25 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 				["title"] = "Atiesh, Greatstaff of the Guardian",
 				["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
+				["description"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
+				["maps"] = { CAVERNS_OF_TIME },
 				["isRaid"] = true,
 				["groups"] = {
-					{
-						["itemID"] = 22726,	-- Splinter of Atiesh
-						["description"] = "This item used to drop from all of the bosses in Naxxramas.",
-						["groups"] = {
-							{
-								["itemID"] = 22727,	-- Frame of Atiesh
-								["questID"] = 9250,	-- Frame of Atiesh [Quest]
-							},
-						},
-					},
-					{
+					q(9251, {	-- Atiesh, the Befouled Greatstaff
 						["qg"] = 15192,	-- Anachronos
-						["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
 						["sourceQuest"] = 9250,	-- Frame of Atiesh
+						["maps"] = { TEMPLE_OF_AHNQIRAJ },
+						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 						["cost"] = {
 							{ "i", 22734, 1 },	-- Base of Atiesh
 							{ "i", 22733, 1 },	-- Staff Head of Atiesh
 						},
-					},
-					{
+						["lvl"] = 60,
+					}),
+					q(9257, {	-- Atiesh, Greatstaff of the Guardian [Priest]
 						["qg"] = 15192,	-- Anachronos
-						["questID"] = 9257,	-- Atiesh, Greatstaff of the Guardian [Priest]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+						["maps"] = { STRATHOLME },
 						["classes"] = { PRIEST },
 						["cost"] = {
 							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
@@ -45,11 +39,11 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["groups"] = {
 							i(22631),	-- Atiesh, Greatstaff of the Guardian (Priest)
 						},
-					},
-					{
+					}),
+					q(9270, {	-- Atiesh, Greatstaff of the Guardian [Mage]
 						["qg"] = 15192,	-- Anachronos
-						["questID"] = 9270,	-- Atiesh, Greatstaff of the Guardian [Mage]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+						["maps"] = { STRATHOLME },
 						["classes"] = { MAGE },
 						["cost"] = {
 							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
@@ -57,11 +51,11 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["groups"] = {
 							i(22589),	-- Atiesh, Greatstaff of the Guardian (Mage)
 						},
-					},
-					{
+					}),
+					q(9271, {	-- Atiesh, Greatstaff of the Guardian [Warlock]
 						["qg"] = 15192,	-- Anachronos
-						["questID"] = 9271,	-- Atiesh, Greatstaff of the Guardian [Warlock]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+						["maps"] = { STRATHOLME },
 						["classes"] = { WARLOCK },
 						["cost"] = {
 							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
@@ -69,11 +63,11 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["groups"] = {
 							i(22630),	-- Atiesh, Greatstaff of the Guardian (Warlock)
 						},
-					},
-					{
+					}),
+					q(9269, {	-- Atiesh, Greatstaff of the Guardian [Druid]
 						["qg"] = 15192,	-- Anachronos
-						["questID"] = 9269,	-- Atiesh, Greatstaff of the Guardian [Druid]
 						["sourceQuest"] = 9251,	-- Atiesh, the Befouled Greatstaff
+						["maps"] = { STRATHOLME },
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 22737, 1 },	-- Atiesh, Greatstaff of the Guardian
@@ -81,83 +75,148 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["groups"] = {
 							i(22632),	-- Atiesh, Greatstaff of the Guardian (Druid)
 						},
-					},
+					}),
+					q(9250, {	-- Frame of Atiesh
+						["provider"] = { "i", 22727 },	-- Frame of Atiesh
+						["description"] = "Collect 40 of the Splinters to craft the Frame of Atiesh. This starts the quest chain for Atiesh. You will need to coordinate with your guild to get priority on Splinters.",
+						["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+						["cost"] = {
+							{ "i", 22726, 40 },	-- Splinter of Atiesh
+						},
+						["lvl"] = 60,
+					}),
 				},
 			}),
 			n(QUESTS, {
 				cl(1, {	-- Warrior
-					{
-						["questID"] = 9037,	-- Dreadnaught Helmet
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9037, {	-- Dreadnaught Helmet
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22353, 1 },	-- Desecrated Helmet
+							{ "i", 22375, 15 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 5 },	-- Arcanite Bar
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22418),	-- Dreadnaught Helmet
 						},
-					},
-					{
-						["questID"] = 9038,	-- Dreadnaught Pauldrons
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9038, {	-- Dreadnaught Pauldrons
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22354, 1 },	-- Desecrated Pauldrons
+							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22419),	-- Dreadnaught Pauldrons
 						},
-					},
-					{
-						["questID"] = 9034,	-- Dreadnaught Breastplate
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9034, {	-- Dreadnaught Breastplate
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22349, 1 },	-- Desecrated Breastplate
+							{ "i", 22375, 25 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22416),	-- Dreadnaught Breastplate
 						},
-					},
-					{
-						["questID"] = 9042,	-- Dreadnaught Bracers
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9042, {	-- Dreadnaught Bracers
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22355, 1 },	-- Desecrated Bracers
+							{ "i", 22375, 6 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22423),	-- Dreadnaught Bracers
 						},
-					},
-					{
-						["questID"] = 9040,	-- Dreadnaught Gauntlets
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9040, {	-- Dreadnaught Gauntlets
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22357, 1 },	-- Desecrated Gauntlets
+							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22421),	-- Dreadnaught Gauntlets
 						},
-					},
-					{
-						["questID"] = 9041,	-- Dreadnaught Waistguard
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9041, {	-- Dreadnaught Waistguard
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22356, 1 },	-- Desecrated Waistguard
+							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22422),	-- Dreadnaught Waistguard
 						},
-					},
-					{
-						["questID"] = 9036,	-- Dreadnaught Legplates
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9036, {	-- Dreadnaught Legplates
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22352, 1 },	-- Desecrated Legplates
+							{ "i", 22375, 20 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22417),	-- Dreadnaught Legplates
 						},
-					},
-					{
-						["questID"] = 9039,	-- Dreadnaught Sabatons
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9039, {	-- Dreadnaught Sabatons
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22358, 1 },	-- Desecrated Sabatons
+							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22420),	-- Dreadnaught Sabatons
 						},
-					},
+					}),
 				}),
 				cl(2, {	-- Paladin
 					{
@@ -1001,6 +1060,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				}),
 				q(9233, {	-- Omarion's Handbook
 					["provider"] = { "i", 22719 },	-- Omarion's Handbook
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 					["lvl"] = 60,
 				}),
 				q(9241, {	-- Polar Bracers
@@ -1157,32 +1217,112 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
-				i(22682),	-- Frozen Rune
-				i(22370),	-- Desecrated Belt
-				i(22369),	-- Desecrated Bindings
-				i(22365),	-- Desecrated Boots
-				i(22355),	-- Desecrated Bracers
-				i(22349),	-- Desecrated Breastplate
-				i(22367),	-- Desecrated Circlet
-				i(22357),	-- Desecrated Gauntlets
-				i(22363),	-- Desecrated Girdle
-				i(22371),	-- Desecrated Gloves
-				i(22364),	-- Desecrated Handguards
-				i(22360),	-- Desecrated Headpiece
-				i(22353),	-- Desecrated Helmet
-				i(22366),	-- Desecrated Leggings
-				i(22359),	-- Desecrated Legguards
-				i(22352),	-- Desecrated Legplates
-				i(22354),	-- Desecrated Pauldrons
-				i(22351),	-- Desecrated Robe
-				i(22358),	-- Desecrated Sabatons
-				i(22372),	-- Desecrated Sandals
-				i(22368),	-- Desecrated Shoulderpads
-				i(22361),	-- Desecrated Spaulders
-				i(22350),	-- Desecrated Tunic
-				i(22356),	-- Desecrated Waistguard
-				i(22362),	-- Desecrated Wristguards
+				-- Helms
+				-- Thaddius Only
+				
+				-- Shoulders
+				i(22354, {	-- Desecrated Pauldrons
+					["crs"] = {
+						16028,	-- Patchwerk
+						15931,	-- Grobbulus
+						15932,	-- Gluth
+					},
+				}),
+				i(22368, {	-- Desecrated Shoulderpads
+					["crs"] = {
+						16028,	-- Patchwerk
+						15931,	-- Grobbulus
+						15932,	-- Gluth
+					},
+				}),
+				i(22361, {	-- Desecrated Spaulders
+					["crs"] = {
+						16028,	-- Patchwerk
+						15931,	-- Grobbulus
+						15932,	-- Gluth
+					},
+				}),
+				
+				-- Chest
+				-- Four Horsemen Only
+				
+				-- Bracers
+				i(22369, {	-- Desecrated Bindings
+					["crs"] = {
+						15956,	-- Anub'Rekhan
+						15953,	-- Grand Widow Faerlina
+						15932,	-- Gluth
+					},
+				}),
+				i(22355, {	-- Desecrated Bracers
+					["crs"] = {
+						15956,	-- Anub'Rekhan
+						15953,	-- Grand Widow Faerlina
+						15932,	-- Gluth
+					},
+				}),
+				i(22362, {	-- Desecrated Wristguards
+					["crs"] = {
+						15956,	-- Anub'Rekhan
+						15953,	-- Grand Widow Faerlina
+						15932,	-- Gluth
+					},
+				}),
+				
+				-- Gloves
+				-- Maexxna Only
+				
+				-- Belts
+				i(22370, {	-- Desecrated Belt
+					["crs"] = {
+						15954,	-- Noth the Plaguebringer
+						15936,	-- Heigan the Unclean
+						15932,	-- Gluth
+					},
+				}),
+				i(22363, {	-- Desecrated Girdle
+					["crs"] = {
+						15954,	-- Noth the Plaguebringer
+						15936,	-- Heigan the Unclean
+						15932,	-- Gluth
+					},
+				}),
+				i(22356, {	-- Desecrated Waistguard
+					["crs"] = {
+						15954,	-- Noth the Plaguebringer
+						15936,	-- Heigan the Unclean
+						15932,	-- Gluth
+					},
+				}),
+				
+				-- Legs
+				-- Loatheb Only
+				
+				-- Boots
+				i(22365, {	-- Desecrated Boots
+					["crs"] = {
+						16061,	-- Instructor Razuvious
+						16060,	-- Gothik the Harvester
+						15932,	-- Gluth
+					},
+				}),
+				i(22358, {	-- Desecrated Sabatons
+					["crs"] = {
+						16061,	-- Instructor Razuvious
+						16060,	-- Gothik the Harvester
+						15932,	-- Gluth
+					},
+				}),
+				i(22372, {	-- Desecrated Sandals
+					["crs"] = {
+						16061,	-- Instructor Razuvious
+						16060,	-- Gothik the Harvester
+						15932,	-- Gluth
+					},
+				}),
+				
 				i(22726, {	-- Splinter of Atiesh
+					["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 					["crs"] = {
 						15956,	-- Anub'Rekhan
 						15953,	-- Grand Widow Faerlina
@@ -1199,6 +1339,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						15928,	-- Thaddius
 					},
 				}),
+				i(22682),	-- Frozen Rune
 			}),
 			n(ZONEDROPS, {
 				{
@@ -1244,6 +1385,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(22941),	-- Polar Shoulder Pads
 					}),
 					n(15952, {	-- Maexxna
+						i(22357),	-- Desecrated Gauntlets
+						i(22371),	-- Desecrated Gloves
+						i(22364),	-- Desecrated Handguards
 						i(22804),	-- Maexxna's Fang
 						i(22807),	-- Wraith Blade
 						i(22947),	-- Pendant of Forgotten Names
@@ -1259,10 +1403,10 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(22816),	-- Hatchet of Sundered Bone
 						i(23029),	-- Noth's Frigid Heart
 						i(23030),	-- Cloak of the Scourge
-						i(23028),	-- Hailstone Band
 						i(23031),	-- Band of the Inevitable
-						i(23005),	-- Totem of Flowing Water
+						i(23028),	-- Hailstone Band
 						i(23006),	-- Libram of Light
+						i(23005),	-- Totem of Flowing Water
 					}),
 					n(15936, {	-- Heigan the Unclean
 						i(23019),	-- Icebane Helmet
@@ -1272,6 +1416,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(23068),	-- Legplates of Carnage
 					}),
 					n(16011, {	-- Loatheb
+						i(22366),	-- Desecrated Leggings
+						i(22359),	-- Desecrated Legguards
+						i(22352),	-- Desecrated Legplates
 						i(22800),	-- Brimstone Staff
 						i(23039),	-- The Eye of Nerub
 						i(23038),	-- Band of Unnatural Forces
@@ -1287,22 +1434,62 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["description"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
 						["groups"] = {
 							i(22719, {	-- Omarion's Handbook
-								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 								["questID"] = 9233,	-- Omarion's Handbook [Quest]
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 							}),
-							i(22685),	-- Pattern: Glacial Cloak
-							i(22684),	-- Pattern: Glacial Gloves
-							i(22686),	-- Pattern: Glacial Vest
-							i(22687), 	-- Pattern: Glacial Wrists
-							i(22705),	-- Pattern: Icebane Bracers
-							i(22703),	-- Pattern: Icebane Breastplate
-							i(22704),	-- Pattern: Icebane Gauntlets
-							i(22698),	-- Pattern: Icy Scale Bracers
-							i(22696),	-- Pattern: Icy Scale Breastplate
-							i(22697),	-- Pattern: Icy Scale Gauntlets
-							i(22695),	-- Pattern: Polar Bracers
-							i(22694),	-- Pattern: Polar Gloves
-							i(22692),	-- Pattern: Polar Tunic
+							{
+								["itemID"] = 22685,	-- Pattern: Glacial Cloak
+								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							},
+							{
+								["itemID"] = 22684,	-- Pattern: Glacial Gloves
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22686,	-- Pattern: Glacial Vest
+								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							},
+							{
+								["itemID"] = 22687,	-- Pattern: Glacial Wrists
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22705,	-- Pattern: Icebane Bracers
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22703,	-- Pattern: Icebane Breastplate
+								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							},
+							{
+								["itemID"] = 22704,	-- Pattern: Icebane Gauntlets
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22698,	-- Pattern: Icy Scale Bracers
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22696,	-- Pattern: Icy Scale Breastplate
+								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							},
+							{
+								["itemID"] = 22697,	-- Pattern: Icy Scale Gauntlets
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22695,	-- Pattern: Polar Bracers
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22694,	-- Pattern: Polar Gloves
+								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							},
+							{
+								["itemID"] = 22692,	-- Pattern: Polar Tunic
+								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							},
 						},
 					}),
 					n(16061, {	-- Instructor Razuvious
@@ -1321,6 +1508,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(23073),	-- Boots of Displacement
 					}),
 					n(16062, {	-- Highlord Mograine <The Ashbringer>
+						i(22349),	-- Desecrated Breastplate
+						i(22351),	-- Desecrated Robe
+						i(22350),	-- Desecrated Tunic
 						un(NEVER_IMPLEMENTED, {
 							["itemID"] = 13262,	-- Ashbringer
 							["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
@@ -1360,6 +1550,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(22983),	-- Rime Covered Mantle
 					}),
 					n(15928, {	-- Thaddius
+						i(22367),	-- Desecrated Circlet
+						i(22360),	-- Desecrated Headpiece
+						i(22353),	-- Desecrated Helmet
 						i(22801),	-- Spire of Twilight
 						i(22808),	-- The Castigator
 						i(23000),	-- Plated Abomination Ribcage
@@ -1378,7 +1571,12 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(23048),	-- Sapphiron's Right Eye
 						i(23050),	-- Cloak of the Necropolis
 						i(23045),	-- Shroud of Dominion
-						i(23072),	-- Fists of the Unrelenting
+						{
+							-- NOTE: It was believed these no longer drop as of 1.11. However, it appears they have been added in 2.03 as a drop from Sapphiron. 
+							["itemID"] = 23072,	-- Fists of the Unrelenting
+							["description"] = "These were originally not implemented until patch 2.03. Please let the ATT Discord know if you happen to get them to drop or see someone with this item.",
+							["u"] = NEVER_IMPLEMENTED,
+						},
 						i(23047),	-- Eye of the Dead
 						i(23040),	-- Glyph of Deflection
 						i(23041),	-- Slayer's Crest
@@ -1393,8 +1591,12 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 							["itemID"] = 22520,	-- The Phylactery of Kel'Thuzad
 							["questID"] = 9120,	-- The Fall of Kel'Thuzad
 						},
+						{
+							["itemID"] = 22733,	-- Staff Head of Atiesh
+							["questID"] = 9251,	-- Atiesh, the Befouled Greatstaff
+							["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
+						},
 						i(22821),	-- Doomfinger
-						i(23057),	-- Gem of Trapped Innocents
 						i(23054),	-- Gressil, Dawn of Ruin
 						i(23056),	-- Hammer of the Twisting Nether
 						i(22802),	-- Kingsfall
@@ -1403,6 +1605,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(22799),	-- Soulseeker
 						i(23577),	-- The Hungering Cold
 						i(22819),	-- Shield of Condemnation
+						i(23057),	-- Gem of Trapped Innocents
 						i(23053),	-- Stormrage's Talisman of Seething
 						i(23060),	-- Bonescythe Ring
 						i(23062),	-- Frostfire Ring
