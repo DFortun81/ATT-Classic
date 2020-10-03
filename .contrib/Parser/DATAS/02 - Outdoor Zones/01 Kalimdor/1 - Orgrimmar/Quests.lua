@@ -381,14 +381,14 @@ _.Zones =
 					["lvl"] = 10,
 					["groups"] = {
 						{
-							["itemID"] = 7298,	-- Tazan's Key
+							["itemID"] = 7208,	-- Tazan's Key
 							["questID"] = 1858,	-- The Shattered Hand (2/2)
 							["coord"] = { 54.2, 68.2, ORGRIMMAR },
 							["cr"] = 6466,	-- Gamon
 						},
 						i(7209, {	-- Tazan's Satchel
 							["cost"] = {
-								{ "i", 7298, 1 },	-- Tazan's Key
+								{ "i", 7208, 1 },	-- Tazan's Key
 							},
 							["groups"] = {
 								{
