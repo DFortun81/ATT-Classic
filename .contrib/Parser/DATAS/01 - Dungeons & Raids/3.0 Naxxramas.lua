@@ -349,78 +349,134 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					}),
 				}),
 				cl(3, {	-- Hunter
-					{
-						["questID"] = 9056,	-- Cryptstalker Headpiece
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9056, {	-- Cryptstalker Headpiece
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22360, 1 },	-- Desecrated Headpiece
+							{ "i", 22374, 15 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22438),	-- Cryptstalker Headpiece
 						},
-					},
-					{
-						["questID"] = 9057,	-- Cryptstalker Spaulders
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9057, {	-- Cryptstalker Spaulders
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22361, 1 },	-- Desecrated Spaulders
+							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22439),	-- Cryptstalker Spaulders
 						},
-					},
-					{
-						["questID"] = 9054,	-- Cryptstalker Tunic
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9054, {	-- Cryptstalker Tunic
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22350, 1 },	-- Desecrated Tunic
+							{ "i", 22374, 25 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22436),	-- Cryptstalker Tunic
 						},
-					},
-					{
-						["questID"] = 9061,	-- Cryptstalker Wristguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9061, {	-- Cryptstalker Wristguards
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22362, 1 },	-- Desecrated Wristguards
+							{ "i", 22374, 6 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22443),	-- Cryptstalker Wristguards
 						},
-					},
-					{
-						["questID"] = 9059,	-- Cryptstalker Handguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9059, {	-- Cryptstalker Handguards
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22364, 1 },	-- Desecrated Handguards
+							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22441),	-- Cryptstalker Handguards
 						},
-					},
-					{
-						["questID"] = 9060,	-- Cryptstalker Girdle
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9060, {	-- Cryptstalker Girdle
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22363, 1 },	-- Desecrated Girdle
+							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22442),	-- Cryptstalker Girdle
 						},
-					},
-					{
-						["questID"] = 9055,	-- Cryptstalker Legguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9055, {	-- Cryptstalker Legguards
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22359, 1 },	-- Desecrated Legguards
+							{ "i", 22374, 20 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 3 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22437),	-- Cryptstalker Legguards
 						},
-					},
-					{
-						["questID"] = 9058,	-- Cryptstalker Boots
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9058, {	-- Cryptstalker Boots
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22365, 1 },	-- Desecrated Boots
+							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22440),	-- Cryptstalker Boots
 						},
-					},
+					}),
 				}),
 				cl(4, {	-- Rogue
 					{
