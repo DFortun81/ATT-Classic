@@ -817,78 +817,133 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 				}),
 				cl(8, {	-- Mage
-					{
-						["questID"] = 9097,	-- Frostfire Circlet
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9097, {	-- Frostfire Circlet
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22367, 1 },	-- Desecrated Circlet
+							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 3 },	-- Mooncloth
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22498),	-- Frostfire Circlet
 						},
-					},
-					{
-						["questID"] = 9098,	-- Frostfire Shoulderpads
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9098, {	-- Frostfire Shoulderpads
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22499),	-- Frostfire Shoulderpads
 						},
-					},
-					{
-						["questID"] = 9095,	-- Frostfire Robe
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9095, {	-- Frostfire Robe
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22351, 1 },	-- Desecrated Robe
+							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22496),	-- Frostfire Robe
 						},
-					},
-					{
-						["questID"] = 9102,	-- Frostfire Bindings
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9102, {	-- Frostfire Bindings
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22369, 1 },	-- Desecrated Bindings
+							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+							{ "i", 12363, 1 },	-- Arcane Crystal
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22503),	-- Frostfire Bindings
 						},
-					},
-					{
-						["questID"] = 9100,	-- Frostfire Gloves
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9100, {	-- Frostfire Gloves
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22371, 1 },	-- Desecrated Gloves
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22501),	-- Frostfire Gloves
 						},
-					},
-					{
-						["questID"] = 9101,	-- Frostfire Belt
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9101, {	-- Frostfire Belt
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22370, 1 },	-- Desecrated Belt
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 12363, 2 },	-- Arcane Crystal
+							{ "i", 14342, 2 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22502),	-- Frostfire Belt
 						},
-					},
-					{
-						["questID"] = 9096,	-- Frostfire Leggings
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9096, {	-- Frostfire Leggings
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22366, 1 },	-- Desecrated Leggings
+							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22497),	-- Frostfire Leggings
 						},
-					},
-					{
-						["questID"] = 9099,	-- Frostfire Sandals
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9099, {	-- Frostfire Sandals
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22372, 1 },	-- Desecrated Sandals
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22500),	-- Frostfire Sandals
 						},
-					},
+					}),
 				}),
 				cl(9, {	-- Warlock
 					q(9105, {	-- Plagueheart Circlet
