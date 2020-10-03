@@ -357,7 +357,7 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["maps"] = { THE_BARRENS },
 					["cost"] = {
-						{ "i", 7209 },	-- Tazan's Satchel
+						{ "i", 7209, 1 },	-- Tazan's Satchel
 					},
 					["lvl"] = 10,
 					["groups"] = {
@@ -376,7 +376,7 @@ _.Zones =
 					["races"] = { ORC, TROLL },
 					["classes"] = { ROGUE },
 					["cost"] = {
-						{ "i", 7295 },	-- Tazan's Logbook
+						{ "i", 7295, 1 },	-- Tazan's Logbook
 					},
 					["lvl"] = 10,
 					["groups"] = {
@@ -388,7 +388,7 @@ _.Zones =
 						},
 						i(7209, {	-- Tazan's Satchel
 							["cost"] = {
-								{ "i", 7298 },	-- Tazan's Key
+								{ "i", 7298, 1 },	-- Tazan's Key
 							},
 							["groups"] = {
 								{

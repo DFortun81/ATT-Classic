@@ -85,188 +85,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				},
 			}),
 			n(QUESTS, {
-				{	-- Echoes of War
-					["questID"] = 9033,	-- Echoes of War
-					["sourceQuests"] = {
-						9121,	-- The Dread Citadel - Naxxramas
-						9122,	-- The Dread Citadel - Naxxramas
-						9123,	-- The Dread Citadel - Naxxramas
-					},
-					["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
-				},
-				{	-- Glacial Cloak
-					["questID"] = 9237,	-- Glacial Cloak
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22658),	-- Glacial Cloak
-					},
-				},
-				{	-- Glacial Gloves
-					["questID"] = 9239,	-- Glacial Gloves
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22654),	-- Glacial Gloves
-					},
-				},
-				{	-- Glacial Vest
-					["questID"] = 9240,	-- Glacial Vest
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22652),	-- Glacial Vest
-					},
-				},
-				{	-- Glacial Wrists
-					["questID"] = 9238,	-- Glacial Wrists
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22655),	-- Glacial Wrists
-					},
-				},
-				{	-- Icebane Bracers
-					["questID"] = 9235,	-- Icebane Bracers
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(28244),	-- Plans: Icebane Bracers
-					},
-				},
-				{	-- Icebane Breastplate
-					["questID"] = 9236,	-- Icebane Breastplate
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(28242),	-- Plans: Icebane Breastplate
-					},
-				},
-				{	-- Icebane Gauntlets
-					["questID"] = 9234,	-- Icebane Gauntlets
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(28243),	-- Plans: Icebane Gauntlets
-					},
-				},
-				{	-- Icy Scale Bracers
-					["questID"] = 9244,	-- Icy Scale Bracers
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22665),	-- Icy Scale Bracers
-					},
-				},
-				{	-- Icy Scale Breastplate
-					["questID"] = 9246,	-- Icy Scale Breastplate
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22664),	-- Icy Scale Breastplate
-					},
-				},
-				{	-- Icy Scale Gauntlets
-					["questID"] = 9245,	-- Icy Scale Gauntlets
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22666),	-- Icy Scale Gauntlets
-					},
-				},
-				{	-- Polar Bracers
-					["questID"] = 9241,	-- Polar Bracers
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22663),	-- Polar Bracers
-					},
-				},
-				{	-- Polar Gloves
-					["questID"] = 9242,	-- Polar Gloves
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22662),	-- Polar Gloves
-					},
-				},
-				{	-- Polar Tunic
-					["questID"] = 9243,	-- Polar Tunic
-					["sourceQuest"] = 9233,	-- Omarion's Handbook
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22661),	-- Polar Tunic
-					},
-				},
-				{	-- Ramaladni's Icy Grasp
-					["questID"] = 9230,	-- Ramaladni's Icy Grasp
-					["sourceQuest"] = 9229,	-- The Fate of Ramaldni
-					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
-					["groups"] = {
-						i(22707),	-- Ramaladni's Icy Grasp
-					},
-				},
-				{	-- The Dread Citadel - Naxxramas [Honored]
-					["questID"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
-					["altQuests"] = {
-						9122,	-- The Dread Citadel - Naxxramas [Revered]
-						9123,	-- The Dread Citadel - Naxxramas [Exalted]
-					},
-					["cost"] = {
-						{ "i", 12363, 6 },	-- Arcane Crystal
-						{ "i", 14344, 2 },	-- Large Brilliant Shard
-						{ "i", 20725, 2 },	-- Nexus Crystal
-						{ "i", 12811, 1 },	-- Righteous Orb
-						{ "g", 600000 },	-- 60g
-					},
-				},
-				{	-- The Dread Citadel - Naxxramas [Revered]
-					["questID"] = 9122,	-- The Dread Citadel - Naxxramas [Revered]
-					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
-					["altQuests"] = {
-						9121,	-- The Dread Citadel - Naxxramas [Honored]
-						9123,	-- The Dread Citadel - Naxxramas [Exalted]
-					},
-					["cost"] = {
-						{ "i", 12363, 2 },	-- Arcane Crystal
-						{ "i", 20725, 1 },	-- Nexus Crystal
-						{ "g", 300000 },	-- 30g
-					},
-				},
-				{	-- The Dread Citadel - Naxxramas [Exalted]
-					["questID"] = 9123,	-- The Dread Citadel - Naxxramas [Exalted]
-					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-					["maps"] = { EASTERN_PLAGUELANDS },
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
-					["altQuests"] = {
-						9121,	-- The Dread Citadel - Naxxramas [Honored]
-						9122,	-- The Dread Citadel - Naxxramas [Revered]
-					},
-				},
-				{	-- The Fate of Ramaldni
-					["questID"] = 9229,	-- The Fate of Ramaldni
-					["sourceQuest"] = 9033,	-- Echoes of War
-					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
-				},
-				{	-- The Only Song I Know...
-					["questID"] = 9232,	-- The Only Song I Know...
-					["sourceQuest"] = 9033,	-- Echoes of War
-					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
-					["groups"] = {
-						i(22700),	-- Glacial Leggings
-						i(22699),	-- Icebane Leggings
-						i(22702),	-- Icy Scale Leggings
-						i(22701),	-- Polar Leggings
-					},
-				},
 				cl(1, {	-- Warrior
 					{
 						["questID"] = 9037,	-- Dreadnaught Helmet
@@ -564,78 +382,132 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 				}),
 				cl(5, {	-- Priest
-					{
-						["questID"] = 9113,	-- Circlet of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9113, {	-- Circlet of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22367, 1 },	-- Desecrated Circlet
+							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 3 },	-- Mooncloth
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22514),	-- Circlet of Faith
 						},
-					},
-					{
-						["questID"] = 9114,	-- Shoulderpads of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9114, {	-- Shoulderpads of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22515),	-- Shoulderpads of Faith
 						},
-					},
-					{
-						["questID"] = 9111,	-- Robe of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9111, {	-- Robe of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22351, 1 },	-- Desecrated Robe
+							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22512),	-- Robe of Faith
 						},
-					},
-					{
-						["questID"] = 9118,	-- Bindings of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9118, {	-- Bindings of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22369, 1 },	-- Desecrated Bindings
+							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
+							{ "i", 12363, 1 },	-- Arcane Crystal
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22519),	-- Bindings of Faith
 						},
-					},
-					{
-						["questID"] = 9116,	-- Gloves of Faith
+					}),
+					q(9116, {	-- Gloves of Faith
+						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["repeatable"] = true,
-						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["cost"] = {
+							{ "i", 22371, 1 },	-- Desecrated Gloves
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22517),	-- Gloves of Faith
 						},
-					},
-					{
-						["questID"] = 9117,	-- Belt of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9117, {	-- Belt of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22370, 1 },	-- Desecrated Belt
+							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
+							{ "i", 12363, 2 },	-- Arcane Crystal
+							{ "i", 14342, 2 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22518),	-- Belt of Faith
 						},
-					},
-					{
-						["questID"] = 9112,	-- Leggings of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9112, {	-- Leggings of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22366, 1 },	-- Desecrated Leggings
+							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 4 },	-- Mooncloth
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22513),	-- Leggings of Faith
 						},
-					},
-					{
-						["questID"] = 9115,	-- Sandals of Faith
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9115, {	-- Sandals of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22372, 1 },	-- Desecrated Sandals
+							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
+							{ "i", 14342, 2 },	-- Mooncloth
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22516),	-- Sandals of Faith
 						},
-					},
+					}),
 				}),
 				cl(7, {	-- Shaman
 					{
@@ -933,6 +805,356 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						},
 					},
 				}),
+				q(9033, {	-- Echoes of War
+					["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
+					["sourceQuests"] = {
+						9121,	-- The Dread Citadel - Naxxramas
+						9122,	-- The Dread Citadel - Naxxramas
+						9123,	-- The Dread Citadel - Naxxramas
+					},
+					["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["lvl"] = 60,
+				}),
+				q(9237, {	-- Glacial Cloak
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 22682, 5 },	-- Frozen Rune
+						{ "i",  7080, 2 },	-- Essence of Water
+						{ "i", 14048, 4 },	-- Bolt of Runecloth
+						{ "i", 14227, 4 },	-- Ironweb Spider Silk
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22658),	-- Glacial Cloak
+					},
+				}),
+				q(9239, {	-- Glacial Gloves
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["cost"] = {
+						{ "i", 22682, 5 },	-- Frozen Rune
+						{ "i",  7080, 4 },	-- Essence of Water
+						{ "i", 14048, 4 },	-- Bolt of Runecloth
+						{ "i", 14227, 2 },	-- Ironweb Spider Silk
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22654),	-- Glacial Gloves
+					},
+				}),
+				q(9240, {	-- Glacial Vest
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["cost"] = {
+						{ "i", 22682, 8 },	-- Frozen Rune
+						{ "i",  7080, 6 },	-- Essence of Water
+						{ "i", 14048, 8 },	-- Bolt of Runecloth
+						{ "i", 14227, 4 },	-- Ironweb Spider Silk
+						{ "g", 3000000 },	-- 300g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22652),	-- Glacial Vest
+					},
+				}),
+				q(9238, {	-- Glacial Wrists
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["cost"] = {
+						{ "i", 22682, 4 },	-- Frozen Rune
+						{ "i",  7080, 2 },	-- Essence of Water
+						{ "i", 14048, 2 },	-- Bolt of Runecloth
+						{ "i", 14227, 2 },	-- Ironweb Spider Silk
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22655),	-- Glacial Wrists
+					},
+				}),
+				q(9235, {	-- Icebane Bracers
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR, PALADIN },
+					["cost"] = {
+						{ "i", 22682, 4 },	-- Frozen Rune
+						{ "i", 7080, 2 },	-- Essence of Water
+						{ "i", 12359, 12 },	-- Thorium Bar
+						{ "i", 12360, 2 },	-- Arcanite Bar
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(28244),	-- Plans: Icebane Bracers
+					},
+				}),
+				q(9236, {	-- Icebane Breastplate
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR, PALADIN },
+					["cost"] = {
+						{ "i", 22682, 8 },	-- Frozen Rune
+						{ "i", 7080, 4 },	-- Essence of Water
+						{ "i", 12359, 16 },	-- Thorium Bar
+						{ "i", 12360, 2 },	-- Arcanite Bar
+						{ "g", 3000000 },	-- 300g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(28242),	-- Plans: Icebane Breastplate
+					},
+				}),
+				q(9234, {	-- Icebane Gauntlets
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { WARRIOR, PALADIN },
+					["cost"] = {
+						{ "i", 22682, 5 },	-- Frozen Rune
+						{ "i", 7080, 2 },	-- Essence of Water
+						{ "i", 12359, 12 },	-- Thorium Bar
+						{ "i", 12360, 2 },	-- Arcanite Bar
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(28243),	-- Plans: Icebane Gauntlets
+					},
+				}),
+				q(9244, {	-- Icy Scale Bracers
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { HUNTER, SHAMAN },
+					["cost"] = {
+						{ "i", 22682, 4 },	-- Frozen Rune
+						{ "i",  7080, 5 },	-- Essence of Water
+						{ "i", 15407, 3 },	-- Cured Rugged Hide
+						{ "i", 15408, 16 },	-- Heavy Scorpid Scale
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22665),	-- Icy Scale Bracers
+					},
+				}),
+				q(9246, {	-- Icy Scale Breastplate
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { HUNTER, SHAMAN },
+					["cost"] = {
+						{ "i", 22682, 8 },	-- Frozen Rune
+						{ "i",  7080, 7 },	-- Essence of Water
+						{ "i", 15407, 5 },	-- Cured Rugged Hide
+						{ "i", 15408, 24 },	-- Heavy Scorpid Scale
+						{ "g", 3000000 },	-- 300g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22664),	-- Icy Scale Breastplate
+					},
+				}),
+				q(9245, {	-- Icy Scale Gauntlets
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { HUNTER, SHAMAN },
+					["cost"] = {
+						{ "i", 22682, 5 },	-- Frozen Rune
+						{ "i",  7080, 5 },	-- Essence of Water
+						{ "i", 15407, 3 },	-- Cured Rugged Hide
+						{ "i", 15408, 16 },	-- Heavy Scorpid Scale
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22666),	-- Icy Scale Gauntlets
+					},
+				}),
+				q(9233, {	-- Omarion's Handbook
+					["provider"] = { "i", 22719 },	-- Omarion's Handbook
+					["lvl"] = 60,
+				}),
+				q(9241, {	-- Polar Bracers
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { ROGUE, DRUID },
+					["cost"] = {
+						{ "i", 22682, 4 },	-- Frozen Rune
+						{ "i",  7080, 3 },	-- Essence of Water
+						{ "i", 12810, 12 },	-- Enchanted Leather
+						{ "i", 15407, 3 },	-- Cured Rugged Hide
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22663),	-- Polar Bracers
+					},
+				}),
+				q(9242, {	-- Polar Gloves
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { ROGUE, DRUID },
+					["cost"] = {
+						{ "i", 22682, 5 },	-- Frozen Rune
+						{ "i",  7080, 3 },	-- Essence of Water
+						{ "i", 15407, 3 },	-- Cured Rugged Hide
+						{ "i", 12810, 12 },	-- Enchanted Leather
+						{ "g", 2000000 },	-- 200g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22662),	-- Polar Gloves
+					},
+				}),
+				q(9243, {	-- Polar Tunic
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9233,	-- Omarion's Handbook
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["classes"] = { ROGUE, DRUID },
+					["cost"] = {
+						{ "i", 22682, 8 },	-- Frozen Rune
+						{ "i",  7080, 5 },	-- Essence of Water
+						{ "i", 15407, 5 },	-- Cured Rugged Hide
+						{ "i", 12810, 16 },	-- Enchanted Leather
+						{ "g", 3000000 },	-- 300g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22661),	-- Polar Tunic
+					},
+				}),
+				q(9230, {	-- Ramaladni's Icy Grasp
+					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+					["sourceQuest"] = 9229,	-- The Fate of Ramaldni
+					["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 22682, 1 },	-- Frozen Rune
+						{ "i", 12361, 1 },	-- Blue Sapphire
+						{ "i", 12360, 1 },	-- Arcanite Bar
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22707),	-- Ramaladni's Icy Grasp
+					},
+				}),
+				q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
+					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+					["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["altQuests"] = {
+						9122,	-- The Dread Citadel - Naxxramas [Revered]
+						9123,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["cost"] = {
+						{ "i", 12363, 6 },	-- Arcane Crystal
+						{ "i", 14344, 2 },	-- Large Brilliant Shard
+						{ "i", 20725, 2 },	-- Nexus Crystal
+						{ "i", 12811, 1 },	-- Righteous Orb
+						{ "g", 600000 },	-- 60g
+					},
+					["lvl"] = 60,
+				}),
+				q(9122, {	-- The Dread Citadel - Naxxramas [Revered]
+					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+					["altQuests"] = {
+						9121,	-- The Dread Citadel - Naxxramas [Honored]
+						9123,	-- The Dread Citadel - Naxxramas [Exalted]
+					},
+					["cost"] = {
+						{ "i", 12363, 2 },	-- Arcane Crystal
+						{ "i", 20725, 1 },	-- Nexus Crystal
+						{ "g", 300000 },	-- 30g
+					},
+					["lvl"] = 60,
+				}),
+				q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
+					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
+					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["altQuests"] = {
+						9121,	-- The Dread Citadel - Naxxramas [Honored]
+						9122,	-- The Dread Citadel - Naxxramas [Revered]
+					},
+					["lvl"] = 60,
+				}),
+				q(9120, {	-- The Fall of Kel'Thuzad
+					["provider"] = { "i", 22520 },	-- The Phylactery of Kel'Thuzad
+					["lvl"] = 60,
+					["groups"] = {
+						i(23206),	-- Mark of the Champion
+						i(23207),	-- Mark of the Champion
+					},
+				}),
+				q(9229, {	-- The Fate of Ramaladni
+					["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
+					["sourceQuest"] = 9033,	-- Echoes of War
+					["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 22708, 1 },	-- Fate of Ramaladni
+					},
+					["lvl"] = 60,
+				}),
+				q(9232, {	-- The Only Song I Know...
+					["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
+					["sourceQuest"] = 9033,	-- Echoes of War
+					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 22682, 2 },	-- Frozen Rune
+						{ "i",  7080, 2 },	-- Essence of Water
+						{ "i", 12361, 2 },	-- Blue Sapphire
+						{ "g", 300000 },	-- 30g
+					},
+					["lvl"] = 60,
+					["groups"] = {
+						i(22700),	-- Glacial Leggings
+						i(22699),	-- Icebane Leggings
+						i(22702),	-- Icy Scale Leggings
+						i(22701),	-- Polar Leggings
+					},
+				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(22682),	-- Frozen Rune
@@ -960,8 +1182,37 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				i(22350),	-- Desecrated Tunic
 				i(22356),	-- Desecrated Waistguard
 				i(22362),	-- Desecrated Wristguards
+				i(22726, {	-- Splinter of Atiesh
+					["crs"] = {
+						15956,	-- Anub'Rekhan
+						15953,	-- Grand Widow Faerlina
+						15952,	-- Maexxna
+						15954,	-- Noth the Plaguebringer
+						15936,	-- Heigan the Unclean
+						16011,	-- Loatheb
+						16061,	-- Instructor Razuvious
+						16060,	-- Gothik the Harvester
+						16062,	-- Highlord Mograine <The Ashbringer>
+						16028,	-- Patchwerk
+						15931,	-- Grobbulus
+						15932,	-- Gluth
+						15928,	-- Thaddius
+					},
+				}),
 			}),
 			n(ZONEDROPS, {
+				{
+					["itemID"] = 22708,	-- Fate of Ramaladni
+					["questID"] = 9229,	-- The Fate of Ramaladni
+					["cr"] = 16018,	-- Bile Retcher
+				},
+				i(22374),	-- Wartorn Chain Scrap
+				i(22376),	-- Wartorn Cloth Scrap
+				i(22373),	-- Wartorn Leather Scrap
+				i(22375),	-- Wartorn Plate Scrap
+				i(23055, {	-- Word of Thawing
+					["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+				}),
 				i(23221),	-- Misplaced Servo Arm
 				i(23044),	-- Harbinger of Doom
 				i(23238),	-- Stygian Buckler
@@ -974,10 +1225,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				i(23665),	-- Leggings of Elemental Fury
 				i(23668),	-- Leggings of the Grand Crusader
 				i(23237),	-- Ring of the Eternal Flame
-				i(22374),	-- Wartorn Chain Scrap
-				i(22376),	-- Wartorn Cloth Scrap
-				i(22373),	-- Wartorn Leather Scrap
-				i(22375),	-- Wartorn Plate Scrap
 			}),
 			n(-368, { 	-- The Arachnid Quarter
 				["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
@@ -1039,6 +1286,10 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 						["description"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
 						["groups"] = {
+							i(22719, {	-- Omarion's Handbook
+								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+								["questID"] = 9233,	-- Omarion's Handbook [Quest]
+							}),
 							i(22685),	-- Pattern: Glacial Cloak
 							i(22684),	-- Pattern: Glacial Gloves
 							i(22686),	-- Pattern: Glacial Vest
@@ -1052,10 +1303,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 							i(22695),	-- Pattern: Polar Bracers
 							i(22694),	-- Pattern: Polar Gloves
 							i(22692),	-- Pattern: Polar Tunic
-							i(22719, {	-- Omarion's Handbook
-								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
-								["questID"] = 9233,	-- Omarion's Handbook [Quest]
-							}),
 						},
 					}),
 					n(16061, {	-- Instructor Razuvious
@@ -1145,10 +1392,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						{
 							["itemID"] = 22520,	-- The Phylactery of Kel'Thuzad
 							["questID"] = 9120,	-- The Fall of Kel'Thuzad
-							["groups"] = {
-								i(23206),	-- Mark of the Champion
-								i(23207),	-- Mark of the Champion
-							},
 						},
 						i(22821),	-- Doomfinger
 						i(23057),	-- Gem of Trapped Innocents
