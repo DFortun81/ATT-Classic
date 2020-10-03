@@ -743,78 +743,134 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					}),
 				}),
 				cl(7, {	-- Shaman
-					{
-						["questID"] = 9070,	-- Earthshatter Headpiece
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9070, {	-- Earthshatter Headpiece
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22360, 1 },	-- Desecrated Headpiece
+							{ "i", 22374, 15 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22466),	-- Earthshatter Headpiece
 						},
-					},
-					{
-						["questID"] = 9071,	-- Earthshatter Spaulders
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9071, {	-- Earthshatter Spaulders
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22361, 1 },	-- Desecrated Spaulders
+							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 14342, 2 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22467),	-- Earthshatter Spaulders
 						},
-					},
-					{
-						["questID"] = 9068,	-- Earthshatter Tunic
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9068, {	-- Earthshatter Tunic
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22350, 1 },	-- Desecrated Tunic
+							{ "i", 22374, 25 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 4 },	-- Arcanite Bar
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22464),	-- Earthshatter Tunic
 						},
-					},
-					{
-						["questID"] = 9075,	-- Earthshatter Wristguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9075, {	-- Earthshatter Wristguards
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22362, 1 },	-- Desecrated Wristguards
+							{ "i", 22374, 6 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22471),	-- Earthshatter Wristguards
 						},
-					},
-					{
-						["questID"] = 9073,	-- Earthshatter Handguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9073, {	-- Earthshatter Handguards
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22364, 1 },	-- Desecrated Handguards
+							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22469),	-- Earthshatter Handguards
 						},
-					},
-					{
-						["questID"] = 9074,	-- Earthshatter Girdle
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9074, {	-- Earthshatter Girdle
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22363, 1 },	-- Desecrated Girdle
+							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22470),	-- Earthshatter Girdle
 						},
-					},
-					{
-						["questID"] = 9069,	-- Earthshatter Legguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9069, {	-- Earthshatter Legguards
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22359, 1 },	-- Desecrated Legguards
+							{ "i", 22374, 20 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 3 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22465),	-- Earthshatter Legguards
 						},
-					},
-					{
-						["questID"] = 9072,	-- Earthshatter Boots
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9072, {	-- Earthshatter Boots
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22365, 1 },	-- Desecrated Boots
+							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 20725, 3 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22468),	-- Earthshatter Boots
 						},
-					},
+					}),
 				}),
 				cl(8, {	-- Mage
 					q(9097, {	-- Frostfire Circlet
