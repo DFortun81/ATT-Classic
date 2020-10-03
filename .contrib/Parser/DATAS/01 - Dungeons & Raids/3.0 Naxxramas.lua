@@ -965,78 +965,134 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 				}),
 				cl(11, {	-- Druid
-					{
-						["questID"] = 9088,	-- Dreamwalker Headpiece
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9088,	{	-- Dreamwalker Headpiece
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22360, 1 },	-- Desecrated Headpiece
+							{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 6 },	-- Cured Rugged Hide
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22490),	-- Dreamwalker Headpiece
 						},
-					},
-					{
-						["questID"] = 9089,	-- Dreamwalker Spaulders
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9089,	{	-- Dreamwalker Spaulders
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22361, 1 },	-- Desecrated Spaulders
+							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22491),	-- Dreamwalker Spaulders
 						},
-					},
-					{
-						["questID"] = 9086,	-- Dreamwalker Tunic
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9086,	{	-- Dreamwalker Tunic
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22350, 1 },	-- Desecrated Tunic
+							{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 6 },	-- Cured Rugged Hide
+							{ "i", 20725, 2 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22488),	-- Dreamwalker Tunic
 						},
-					},
-					{
-						["questID"] = 9093,	-- Dreamwalker Wristguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9093,	{	-- Dreamwalker Wristguards
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22362, 1 },	-- Desecrated Wristguards
+							{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+							{ "i", 12363, 1 },	-- Arcane Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22495),	-- Dreamwalker Wristguards
 						},
-					},
-					{
-						["questID"] = 9091,	-- Dreamwalker Handguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9091,	{	-- Dreamwalker Handguards
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22364, 1 },	-- Desecrated Handguards
+							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22493),	-- Dreamwalker Handguards
 						},
-					},
-					{
-						["questID"] = 9092,	-- Dreamwalker Girdle
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9092,	{	-- Dreamwalker Girdle
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22363, 1 },	-- Desecrated Girdle
+							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+							{ "i", 14342, 3 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22494),	-- Dreamwalker Girdle
 						},
-					},
-					{
-						["questID"] = 9087,	-- Dreamwalker Legguards
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9087,	{	-- Dreamwalker Legguards
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22359, 1 },	-- Desecrated Legguards
+							{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 8 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22489),	-- Dreamwalker Legguards
 						},
-					},
-					{
-						["questID"] = 9090,	-- Dreamwalker Boots
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9090,	{	-- Dreamwalker Boots
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22365, 1 },	-- Desecrated Boots
+							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+							{ "i", 14342, 3 },	-- Mooncloth
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22492),	-- Dreamwalker Boots
 						},
-					},
+					}),
 				}),
 				q(9033, {	-- Echoes of War
 					["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
