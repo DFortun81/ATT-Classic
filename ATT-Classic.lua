@@ -8571,11 +8571,16 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						end
 					end,
 					['OnUpdate'] = function(data)
-						if IsInGroup() and GetLootMethod() == "master" then
-							data.visible = true;
-							if app.IsMasterLooter() then
-								data.description = data.description_ML;
+						if IsInGroup() then
+							if GetLootMethod() == "master" then
+								data.visible = true;
+								if app.IsMasterLooter() then
+									data.description = data.description_ML;
+								else
+									data.description = data.description_PLEB;
+								end
 							else
+								data.visible = app.Settings:GetTooltipSetting("SoftReservesLocked");
 								data.description = data.description_PLEB;
 							end
 						else
@@ -9516,6 +9521,20 @@ app.events.VARIABLES_LOADED = function()
 		ATTClassicAD[key] = value;
 	end
 	
+	-- Check if the SRs are locked
+	if IsInGroup() then
+		if not app.IsMasterLooter() then
+			SendGroupMessage("?\tsrlock");
+		end
+	else
+		-- Unlock the Soft Reserves when not in a group
+		local locked = app.Settings:GetTooltipSetting("SoftReservesLocked");
+		if locked then
+			app.Settings:SetTooltipSetting("SoftReservesLocked", false);
+			wipe(searchCache);
+		end
+	end
+	
 	-- Wipe the Debugger Data
 	ATTClassicDebugData = nil;
 	ATTClassicAuctionData = nil;
@@ -10036,6 +10055,12 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						end
 					elseif a == "srml" then -- Soft Reserve (Master Looter) Command
 						app:QuerySoftReserve(UnitGUID(target), a, target);
+					elseif a == "srlock" then
+						if target == UnitName("player") then
+							return false;
+						else
+							response = "srlock\t" .. (app.Settings:GetTooltipSetting("SoftReservesLocked") and 1 or 0);
+						end
 					end
 				else
 					local data = app:GetWindow("Prime").data;
