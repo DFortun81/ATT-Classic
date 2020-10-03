@@ -2804,14 +2804,14 @@ local SoftReserveUnitOnClick = function(self, button)
 						else
 							app:UpdateSoftReserveInternal(guid, nil);
 						end
-						app:GetWindow("SoftReserves"):Update(true);
+						app:RefreshSoftReserveWindow();
 					end);
 				elseif UnitGUID("player") == guid then
 					-- A player can change their own, so long as it isn't locked.
 					app:ShowPopupDialog("Your Soft Reserve is currently set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nDo you want to delete it?",
 					function()
 						app:UpdateSoftReserve(guid, nil, time(), false, true);
-						app:GetWindow("SoftReserves"):Update(true);
+						app:RefreshSoftReserveWindow();
 					end);
 				elseif IsGUIDInGroup(guid) then
 					app.print("You must be the Master Looter to do that.");
@@ -2825,14 +2825,14 @@ local SoftReserveUnitOnClick = function(self, button)
 					app:ShowPopupDialogWithEditBox((self.ref.unitText or RETRIEVING_DATA) .. " has their Soft Reserve set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
 						if cmd and cmd ~= "" then
 							app:ParseSoftReserve(guid, cmd);
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow();
 						end
 					end);
 				else
 					app:ShowPopupDialogWithEditBox((self.ref.unitText or RETRIEVING_DATA) .. " does not have a Soft Reserve.\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
 						if cmd and cmd ~= "" then
 							app:ParseSoftReserve(guid, cmd);
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow();
 						end
 					end);
 				end
@@ -2842,14 +2842,14 @@ local SoftReserveUnitOnClick = function(self, button)
 					app:ShowPopupDialogWithEditBox("Your Soft Reserve is set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
 						if cmd and cmd ~= "" then
 							app:ParseSoftReserve(UnitGUID("player"), cmd, true, true);
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow();
 						end
 					end);
 				else
 					app:ShowPopupDialogWithEditBox("You do not have a Soft Reserve yet.\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
 						if cmd and cmd ~= "" then
 							app:ParseSoftReserve(UnitGUID("player"), cmd, true, true);
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow();
 						end
 					end);
 				end
@@ -3205,6 +3205,12 @@ app.QuerySoftReserve = function(app, guid, cmd, target)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
+app.RefreshSoftReserveWindow = function(app, force)
+	if app.SoftReservesDirty or force then
+		app.SoftReservesDirty = nil;
+		app:GetWindow("SoftReserves"):Update(true);
+	end
+end
 app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp, isCurrentPlayer)
 	local reserves = GetDataMember("SoftReserves");
 	local reservesByItemID = GetTempDataMember("SoftReservesByItemID");
@@ -3234,6 +3240,7 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp, isCurrent
 	
 	-- Update the Reservation
 	wipe(searchCache);
+	app.SoftReservesDirty = true;
 	if itemID and itemID > 0 then
 		if not timeStamp then timeStamp = time(); end
 		reserves[guid] = { itemID, timeStamp };
@@ -3262,7 +3269,7 @@ app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCur
 	else
 		-- If they didn't previously have a reserve, then allow it. If so, then reject it.
 		app:UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlayer);
-		app:GetWindow("SoftReserves"):Update(true);
+		app:RefreshSoftReserveWindow();
 		if not silentMode then
 			if itemID then
 				local searchResults = SearchForLink("itemid:" .. itemID);
@@ -10088,7 +10095,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							for i=3,#args,2 do
 								app:UpdateSoftReserveInternal(args[i], tonumber(args[i + 1]));
 							end
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow();
 						end
 					elseif a == "srlock" then
 						if target == UnitName("player") then
@@ -10096,7 +10103,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						else
 							app.Settings:SetTooltipSetting("SoftReservesLocked", tonumber(args[3]) == 1);
 							wipe(searchCache);
-							app:GetWindow("SoftReserves"):Update(true);
+							app:RefreshSoftReserveWindow(true);
 						end
 					end
 				end
