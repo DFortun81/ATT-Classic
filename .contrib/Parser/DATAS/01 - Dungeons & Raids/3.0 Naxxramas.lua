@@ -479,78 +479,140 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					}),
 				}),
 				cl(4, {	-- Rogue
-					{
-						["questID"] = 9079,	-- Bonescythe Helmet
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					q(9079,	{	-- Bonescythe Helmet
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22353, 1 },	-- Desecrated Helmet
+							{ "i", 22373, 15 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 8 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+							{ "g", 750000 },	-- 75g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22478),	-- Bonescythe Helmet
 						},
-					},
-					{
-						["questID"] = 9080,	-- Bonescythe Pauldrons
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9080,	{	-- Bonescythe Pauldrons
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22354, 1 },	-- Desecrated Pauldrons
+							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+							{ "g", 500000 },	-- 50g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22479),	-- Bonescythe Pauldrons
 						},
-					},
-					{
-						["questID"] = 9077,	-- Bonescythe Breastplate
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9077,	{	-- Bonescythe Breastplate
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22349, 1 },	-- Desecrated Breastplate
+							{ "i", 22373, 25 },	-- Wartorn Leather Scrap
+							{ "i", 12360, 2 },	-- Arcanite Bar
+							{ "i", 15407, 6 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22476),	-- Bonescythe Breastplate
 						},
-					},
-					{
-						["questID"] = 9084,	-- Bonescythe Bracers
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9084,	{	-- Bonescythe Bracers
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22355, 1 },	-- Desecrated Bracers
+							{ "i", 22373, 6 },	-- Wartorn Leather Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 2 },	-- Cured Rugged Hide
+							{ "g", 100000 },	-- 10g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22483),	-- Bonescythe Bracers
 						},
-					},
-					{
-						["questID"] = 9082,	-- Bonescythe Gauntlets
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9082,	{	-- Bonescythe Gauntlets
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22357, 1 },	-- Desecrated Gauntlets
+							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22481),	-- Bonescythe Gauntlets
 						},
-					},
-					{
-						["questID"] = 9083,	-- Bonescythe Waistguard
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9083,	{	-- Bonescythe Waistguard
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22356, 1 },	-- Desecrated Waistguard
+							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 5 },	-- Cured Rugged Hide
+							{ "i", 20725, 1 },	-- Nexus Crystal
+							{ "g", 150000 },	-- 15g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22482),	-- Bonescythe Waistguard
 						},
-					},
-					{
-						["questID"] = 9078,	-- Bonescythe Legplates
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9078,	{	-- Bonescythe Legplates
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22352, 1 },	-- Desecrated Legplates
+							{ "i", 22373, 20 },	-- Wartorn Leather Scrap
+							{ "i", 12360, 1 },	-- Arcanite Bar
+							{ "i", 15407, 8 },	-- Cured Rugged Hide
+							{ "g", 1000000 },	-- 100g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22477),	-- Bonescythe Legplates
 						},
-					},
-					{
-						["questID"] = 9081,	-- Bonescythe Sabatons
-						["sourceQuest"] = 9033,	-- Echoes of War
-						["repeatable"] = true,
+					}),
+					q(9081,	{	-- Bonescythe Sabatons
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
+						["sourceQuest"] = 9033,	-- Echoes of War
+						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
+						["repeatable"] = true,
+						["cost"] = {
+							{ "i", 22358, 1 },	-- Desecrated Sabatons
+							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
+							{ "i", 15407, 3 },	-- Cured Rugged Hide
+							{ "i", 20725, 2 },	-- Nexus Crystal
+							{ "g", 250000 },	-- 25g
+						},
+						["lvl"] = 60,
 						["groups"] = {
 							i(22480),	-- Bonescythe Sabatons
 						},
-					},
+					}),
 				}),
 				cl(5, {	-- Priest
 					q(9113, {	-- Circlet of Faith
