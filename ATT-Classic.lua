@@ -9528,6 +9528,17 @@ app.events.VARIABLES_LOADED = function()
 		ATTClassicAD[key] = value;
 	end
 	
+	-- Wipe the Debugger Data
+	ATTClassicDebugData = nil;
+	ATTClassicAuctionData = nil;
+	
+	-- Tooltip Settings
+	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
+	GetDataMember("TomTomIgnoreCompletedObjects", true);
+	app.Settings:Initialize();
+	app.PushSoftReserve(true);
+	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
+	
 	-- Check if the SRs are locked
 	if IsInGroup() then
 		if not app.IsMasterLooter() then
@@ -9542,16 +9553,6 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
-	-- Wipe the Debugger Data
-	ATTClassicDebugData = nil;
-	ATTClassicAuctionData = nil;
-	
-	-- Tooltip Settings
-	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
-	GetDataMember("TomTomIgnoreCompletedObjects", true);
-	app.PushSoftReserve(true);
-	app.Settings:Initialize();
-	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 end
 app.events.PLAYER_LOGIN = function()
 	app:UnregisterEvent("PLAYER_LOGIN");
