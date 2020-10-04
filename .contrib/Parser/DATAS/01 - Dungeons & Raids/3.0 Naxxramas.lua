@@ -1539,7 +1539,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						9123,	-- The Dread Citadel - Naxxramas [Exalted]
 					},
 					["cost"] = {
-						{ "i", 12363, 6 },	-- Arcane Crystal
+						{ "i", 12363, 5 },	-- Arcane Crystal
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 20725, 2 },	-- Nexus Crystal
 						{ "i", 12811, 1 },	-- Righteous Orb
