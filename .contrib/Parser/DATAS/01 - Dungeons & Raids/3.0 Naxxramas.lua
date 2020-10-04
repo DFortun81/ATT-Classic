@@ -1359,7 +1359,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						i(28244),	-- Plans: Icebane Bracers
+						i(22671),	-- Icebane Bracers
 					},
 				}),
 				q(9236, {	-- Icebane Breastplate
@@ -1378,7 +1378,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						i(28242),	-- Plans: Icebane Breastplate
+						i(22669),	-- Icebane Breastplate
 					},
 				}),
 				q(9234, {	-- Icebane Gauntlets
@@ -1396,7 +1396,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					},
 					["lvl"] = 60,
 					["groups"] = {
-						i(28243),	-- Plans: Icebane Gauntlets
+						i(22670),	-- Icebane Gauntlets
 					},
 				}),
 				q(9244, {	-- Icy Scale Bracers
@@ -1886,6 +1886,11 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 								["itemID"] = 22692,	-- Pattern: Polar Tunic
 								["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 							},
+							--[[
+							i(28244),	-- Plans: Icebane Bracers
+							i(28242),	-- Plans: Icebane Breastplate
+							i(28243),	-- Plans: Icebane Gauntlets
+							]]--
 						},
 					}),
 					n(16061, {	-- Instructor Razuvious
