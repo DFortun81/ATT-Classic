@@ -529,7 +529,7 @@ _.Skills =
 		["cost"] = 200000,
 	},
 	{
-		["recipeID"] = 10908,	-- Mechanostrider Piloting
+		["recipeID"] = 10907,	-- Mechanostrider Piloting
 		["races"] = { DWARF, GNOME },
 		["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
 		["description"] = "Available to Gnomes without faction requirements.",
