@@ -855,7 +855,7 @@ profession(TAILORING, {
 				["name"] = "Crimson Silk Cloak",
 				["recipeID"] = 8789
 			},
-			un(PHASE_FIVE, {
+			un(PHASE_SIX, {
 				["name"] = "Gaea's Embrace",
 				["recipeID"] = 28210,
 			}),
@@ -886,10 +886,6 @@ profession(TAILORING, {
 			{
 				["name"] = "Runecloth Cloak",
 				["recipeID"] = 18409
-			},
-			{
-				["name"] = "Spidersilk Drape",
-				["recipeID"] = 63742
 			},
 			{
 				["name"] = "Woolen Cape",
