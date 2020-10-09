@@ -6,6 +6,15 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(ZONEDROPS, {
+				i(12524, {	-- Blue-feathered Amulet
+					["questID"] = 4864,	-- Enraged Wildkin (4/4)
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						7454,	-- Berserk Owlbeast
+						7452,	-- Crazed Owlbeast
+						7453,	-- Moontouched Owlbeast
+					},
+				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
 					["cr"] = 7524,	-- Anguished Highborne
 				}),

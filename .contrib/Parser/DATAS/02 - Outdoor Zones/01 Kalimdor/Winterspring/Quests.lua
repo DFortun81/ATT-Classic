@@ -89,27 +89,43 @@ _.Zones =
 					["qg"] = 10431,	-- Gregor Greystone
 				}),
 				q(6604, {	-- Enraged Wildkin (1/4)
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11755,	-- Harlo Wigglesworth
+					["coord"] = { 61, 38.4, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = 53,
 				}),
 				q(4861, {	-- Enraged Wildkin (2/4)
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10301,	-- Jaron Stoneshaper
+					["sourceQuest"] = 6604,	-- Enraged Wildkin (1/4)
+					["coord"] = { 52, 30.4, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 53,
 				}),
 				q(4863, {	-- Enraged Wildkin (3/4)
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175587 },	-- Damaged Crate
 					["sourceQuest"] = 4861,	-- Enraged Wildkin (2/4)
+					["coord"] = { 59, 59.7, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 53,
 				}),
 				q(4864, {	-- Enraged Wildkin (4/4)
-					["lvl"] = 53,
-					["races"] = ALLIANCE_ONLY,
 					["provider"] = { "o", 175586 },	-- Jaron's Wagon
 					["sourceQuest"] = 4863,	-- Enraged Wildkin (3/4)
+					["coord"] = { 61.4, 60.6, WINTERSPRING },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 12525, 1 },	-- Jaron's Supplies
+						{ "i", 12524, 1 },	-- Blue-feathered Amulet
+					},
+					["lvl"] = 53,
+					["groups"] = {
+						{
+							["itemID"] = 12525,	-- Jaron's Supplies
+							["questID"] = 4864,	-- Enraged Wildkin (4/4)
+							["coord"] = { 61.4, 60.7, WINTERSPRING },
+						},
+					},
 				}),
 				q(5084, {	-- Falling to Corruption
 					["qg"] = 9298,	-- Donova Snowden

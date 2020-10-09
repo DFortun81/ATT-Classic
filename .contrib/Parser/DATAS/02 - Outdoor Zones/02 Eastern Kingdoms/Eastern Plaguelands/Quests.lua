@@ -418,6 +418,9 @@ _.Zones =
 					["qg"] = 10304,	-- Aurora Skycaller
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 5245,	-- Troubled Spirits of Kel'Theril
+					["cost"] = {
+						{ "i", 13313, 1 },	-- Sacred Highborne Writings
+					},
 				}),
 				q(5247, {	-- Fragments of the Past
 					["lvl"] = 53,
