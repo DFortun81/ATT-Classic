@@ -693,7 +693,7 @@ _.Zones =
 					["sourceQuest"] = 606,	-- Scaring Shaky
 					["coord"] = { 26.9, 73.6, STRANGLETHORN_VALE },
 					["cost"] = {
-						{ "i", 3919, 5 },	-- Mistvale Giblets
+						{ "i", 3922, 1 },	-- Shaky's Payment
 					},
 					["lvl"] = 30,
 				}),
@@ -732,6 +732,9 @@ _.Zones =
 				q(606, {	-- Scaring Shaky
 					["qg"] = 2501,	-- \"Sea Wolf\" MacKinley
 					["coord"] = { 27.78, 77.07, STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 3919, 5 },	-- Mistvale Giblets
+					},
 					["lvl"] = 30,
 				}),
 				q(605, {	-- Singing Blue Shards

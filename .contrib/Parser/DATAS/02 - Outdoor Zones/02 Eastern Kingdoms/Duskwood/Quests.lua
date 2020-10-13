@@ -9,6 +9,9 @@ _.Zones =
 				q(231, {	-- A Daughter's Love
 					["qg"] = 576,	-- Watcher Ladimore
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2162, 1 },	-- Sarah's Ring
+					},
 					["lvl"] = 28,
 					["g"] = {
 						i(2000),	-- Archeus
@@ -574,18 +577,28 @@ _.Zones =
 				}),
 				q(1244, {	-- The Missing Diplomat (5/17)
 					["qg"] = 840,	-- Watcher Backus
-					["sourceQuest"] = 1243,
+					["sourceQuest"] = 1243,	-- The Missing Diplomat (4/17)
+					["coord"] = { 73.21, 38.81, DUSKWOOD },
 					["maps"] = { STORMWIND_CITY },
-					["description"] = "This is part of a quest chain that begins in Stormwind City. Watcher Backus patrols the road heading north from Darkshire. The Defias Docket is located at 24.0, 72.1.",
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 28,
+					["groups"] = {
+						{
+							["itemID"] = 5947,	-- Defias Docket
+							["questID"] = 1244,	-- The Missing Diplomat (5/17)
+							["coord"] = { 24.0, 72.1, DUSKWOOD },
+						},
+					},
 				}),
 				q(1245, {	-- The Missing Diplomat (6/17)
 					["qg"] = 840,	-- Watcher Backus
-					["sourceQuest"] = 1244,
+					["sourceQuest"] = 1244,	-- The Missing Diplomat (5/17)
+					["coord"] = { 73.21, 38.81, DUSKWOOD },
 					["maps"] = { STORMWIND_CITY },
-					["description"] = "Watcher Backus patrols the road heading north from Darkshire.",
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5947, 1 },	-- Defias Docket
+					},
 					["lvl"] = 28,
 				}),
 				q(57, {	-- The Night Watch

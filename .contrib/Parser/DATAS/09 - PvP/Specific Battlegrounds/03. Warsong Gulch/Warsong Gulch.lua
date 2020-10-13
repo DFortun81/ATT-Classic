@@ -237,6 +237,7 @@ _.PvP =
 							}),
 							q(7865, {	-- Sentinel Advanced Care Package
 								["qg"] = 14753,	-- Illiyana Moonblaze
+								["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 45,
 								["g"] = {
@@ -245,6 +246,7 @@ _.PvP =
 							}),
 							q(7863, {	-- Sentinel Basic Care Package
 								["qg"] = 14753,	-- Illiyana Moonblaze
+								["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 25,
 								["g"] = {
@@ -253,6 +255,7 @@ _.PvP =
 							}),
 							q(7864, {	-- Sentinel Standard Care Package
 								["qg"] = 14753,	-- Illiyana Moonblaze
+								["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 								["races"] = ALLIANCE_ONLY,
 								["lvl"] = 35,
 								["g"] = {
@@ -463,6 +466,7 @@ _.PvP =
 							}),
 							q(7868, {	-- Outrider Advanced Care Package
 								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 45,
@@ -472,6 +476,7 @@ _.PvP =
 							}),
 							q(7866, {	-- Outrider Basic Care Package
 								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 25,
@@ -481,6 +486,7 @@ _.PvP =
 							}),
 							q(7867, {	-- Outrider Standard Care Package
 								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
+								["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["races"] = HORDE_ONLY,
 								["lvl"] = 35,

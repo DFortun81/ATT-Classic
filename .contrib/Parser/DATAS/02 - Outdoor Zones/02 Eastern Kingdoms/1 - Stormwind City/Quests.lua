@@ -84,9 +84,12 @@ _.Zones =
 					["lvl"] = 10,
 				}),
 				q(396, {	-- An Audience with the King
-					["sourceQuest"] = 395,	-- Brotherhood's End
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
+					["sourceQuest"] = 395,	-- Brotherhood's End
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2956, 1 },	-- Report on the Defias Brotherhood
+					},
 					["lvl"] = 16,
 					["g"] = {
 						i(2933),	-- Seal of Wrynn
@@ -674,6 +677,9 @@ _.Zones =
 					["coord"] = { 60.0, 64.3, STORMWIND_CITY },
 					["description"] = "Elling Trias is located on the 2nd floor of Trias' Cheese.",
 					["sourceQuest"] = 1242,
+					["cost"] = {
+						{ "i", 5960, 1 },	-- Sealed Note to Watcher Backus
+					},
 				}),
 				q(1246, {	-- The Missing Diplomat (7/17)
 					["lvl"] = 28,
