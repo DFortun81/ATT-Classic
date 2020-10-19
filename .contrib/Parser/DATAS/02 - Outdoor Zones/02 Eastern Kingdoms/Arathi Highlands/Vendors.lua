@@ -17,9 +17,21 @@ _.Zones =
 					["coord"] = { 27.0, 58.8, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(16084),	-- Expert First Aid - Under Wraps
-						i(16112),	-- Manual: Heavy Silk Bandage
-						i(16113),	-- Manual: Mageweave Bandage
+						{
+							["itemID"] = 16084,	-- Expert First Aid - Under Wraps
+							["spellID"] = 7924,	-- Expert First Aid
+							["requireSkill"] = FIRST_AID,
+						},
+						{
+							["itemID"] = 16112,	-- Manual: Heavy Silk Bandage
+							["spellID"] = 7929,	-- Heavy Silk Bandage
+							["requireSkill"] = FIRST_AID,
+						},
+						{
+							["itemID"] = 16113,	-- Manual: Mageweave Bandage
+							["spellID"] = 10840,	-- Mageweave Bandage
+							["requireSkill"] = FIRST_AID,
+						},
 					},
 				}),
 				n(2812, {	-- Drovnar Strongbrew <Alchemy Supplies>

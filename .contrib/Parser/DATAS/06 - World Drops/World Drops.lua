@@ -2841,7 +2841,11 @@ _.WorldDrops =
 			i(16051),	-- Schematic: Thorium Shells
 		}),
 		prof(FIRST_AID, {
-			i(6454),	-- Manual: Strong Anti-Venom
+			{
+				["itemID"] = 6454,	-- Manual: Strong Anti-Venom
+				["spellID"] = 7935,	-- Strong Anti-Venom
+				["requireSkill"] = FIRST_AID,
+			},
 		}),
 		prof(LEATHERWORKING, {
 			i(4301),	-- Pattern: Barbaric Belt
