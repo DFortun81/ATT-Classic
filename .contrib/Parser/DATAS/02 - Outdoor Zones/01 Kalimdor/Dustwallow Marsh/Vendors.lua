@@ -12,7 +12,7 @@ _.Zones =
 					["groups"] = {
 						{
 							["itemID"] = 16084,	-- Expert First Aid - Under Wraps
-							["spellID"] = 7924,	-- Expert First Aid
+							--["spellID"] = 7924,	-- Expert First Aid
 							["requireSkill"] = FIRST_AID,
 						},
 						{
