@@ -508,6 +508,9 @@ _.Zones =
 					["qg"] = 1992,	-- Tarindrella
 					["sourceQuest"] = 458,	-- The Woodland Protector
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3297, 8 },	-- Fel Moss
+					},
 					["groups"] = {
 						i(5398),	-- Canopy Leggings
 						i(5399),	-- Tracking Boots

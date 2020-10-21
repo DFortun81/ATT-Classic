@@ -25,6 +25,14 @@ _.Zones =
 				i(7094, {	-- Driftwood Branch
 					["cr"] = 2030,	-- Elder Timberling
 				}),
+				i(3297, {	-- Fel Moss
+					["questID"] = 459,	-- The Woodland Protector
+					["races"] = ALLIANCE_ONLY,
+					["crs"] = {
+						1988,	-- Grell
+						1989,	-- Grellkin
+					},
+				}),
 				i(3409, {	-- Nightsaber Fang
 					["questID"] = 488,	-- Zenn's Bidding
 					["races"] = ALLIANCE_ONLY,
