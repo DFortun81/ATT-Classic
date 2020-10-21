@@ -158,12 +158,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
-				q(2498, {	-- Return to Denalan
-					["lvl"] = 4,
-					["races"] = ALLIANCE_ONLY,
-					["qg"] = 3517,	-- Rellian Greenspyre
-					["sourceQuest"] = 923,	-- Tumors
-				}),
 				q(2520, {	-- Sathrah's Sacrifice
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 1150,	-- Tears of the Moon
@@ -285,20 +279,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["lvl"] = 14,
-				}),
-				q(923, {	-- Tumors
-					["qg"] = 3517,	-- Rellian Greenspyre
-					["sourceQuest"] = 922,	-- Rellian Greenspyre
-					["coord"] = { 38.2, 21.6, DARNASSUS },
-					["maps"] = { TELDRASSIL },
-					["races"] = ALLIANCE_ONLY,
-					["cost"] = {
-						{ "i", 5170, 5 },	-- Mossy Tumor
-					},
-					["lvl"] = 4,
-					["g"] = {
-						i(5605),	-- Pruning Knife
-					},
 				}),
 				q(3764, {	-- Un'Goro Soil
 					["lvl"] = 47,

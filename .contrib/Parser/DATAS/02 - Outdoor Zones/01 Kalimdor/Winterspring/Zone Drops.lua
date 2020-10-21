@@ -31,6 +31,12 @@ _.Zones =
 				i(18704, {	-- Mature Blue Dragon Sinew
 					["cr"] = 7437,	-- Cobalt Mageweaver
 				}),
+				i(12383, {	-- Moontouched Feather
+					["questID"] = 978,	-- Moontouched Wildkin
+					["description"] = "Scattered on the ground around Winterspring.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 52,
+				}),
 				i(15761, {	-- Pattern: Frostsaber Gloves
 					["cr"] = 7441,	-- Winterfall Totemic
 				}),

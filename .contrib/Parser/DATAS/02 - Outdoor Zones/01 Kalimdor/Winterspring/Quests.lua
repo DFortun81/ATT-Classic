@@ -312,6 +312,10 @@ _.Zones =
 					["lvl"] = 53,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 11079,	-- Wynd Nightchaser
+					["sourceQuests"] = {
+						5250,	-- Starfall
+						5249,	-- To Winterspring!
+					},
 				}),
 				q(5082, {	-- Threat of the Winterfall
 					["qg"] = 9298,	-- Donova Snowden

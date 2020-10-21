@@ -66,6 +66,12 @@ _.Zones =
 					["cr"] = 2686,	-- Witherbark Broodguard
 					["races"] = HORDE_ONLY,
 				}),
+				i(10819, {	-- Wildkin Feather
+					["questID"] = 3661,	-- Favored of Elune?
+					["description"] = "Scattered on the ground around the Hinterlands.",
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 42,
+				}),
 				i(8153, {	-- Wildvine
 					["description"] = "Can drop from any troll in The Hinterlands or Stranglethorn Vale.",
 				}),
