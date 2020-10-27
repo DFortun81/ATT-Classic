@@ -173,7 +173,7 @@ _.Instances = {
 				}),
 				q(5522, {	-- Leonid Barthalomew
 					["qg"] = 10267,	-- Tinkee Steamboil
-					["sourceQuest"] = 4734,	-- Egg Freezing
+					["sourceQuest"] = 4735,	-- Egg Collection
 					["coord"] = { 65.2, 23.8, BURNING_STEPPES },
 					["maps"] = { BURNING_STEPPES },
 					["cost"] = {
