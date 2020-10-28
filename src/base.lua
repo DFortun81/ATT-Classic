@@ -128,3 +128,74 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
+function app:ShowPopupDialogWithMultiLineEditBox(text)
+	if not ATTEditBox then
+		local f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
+		f:SetPoint("CENTER")
+		f:SetSize(600, 500)
+		f:SetBackdrop({
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
+			tile = true, tileSize = 16, edgeSize = 16, 
+			insets = { left = 4, right = 4, top = 4, bottom = 4 }
+		})
+		f:SetBackdropColor(0, 0, 0, 1);
+		
+		-- Movable
+		f:SetMovable(true)
+		f:SetClampedToScreen(true)
+		f:SetScript("OnMouseDown", function(self, button)
+			if button == "LeftButton" then
+				self:StartMoving()
+			end
+		end)
+		f:SetScript("OnMouseUp", f.StopMovingOrSizing)
+		
+		-- ScrollFrame
+		local sf = CreateFrame("ScrollFrame", "ATTEditBoxScrollFrame", ATTEditBox, "UIPanelScrollFrameTemplate")
+		sf:SetPoint("LEFT", 16, 0)
+		sf:SetPoint("RIGHT", -32, 0)
+		sf:SetPoint("TOP", 0, -16)
+		sf:SetPoint("BOTTOM", ATTEditBoxButton, "TOP", 0, 0)
+		
+		-- EditBox
+		local eb = CreateFrame("EditBox", "ATTEditBoxEditBox", ATTEditBoxScrollFrame)
+		eb:SetSize(sf:GetSize())
+		eb:SetMultiLine(true)
+		eb:SetAutoFocus(false) -- dont automatically focus
+		eb:SetFontObject("ChatFontNormal")
+		eb:SetScript("OnEscapePressed", function() f:Hide() end)
+		sf:SetScrollChild(eb)
+		
+		-- Resizable
+		f:SetResizable(true)
+		f:SetMinResize(150, 100)
+		
+		local rb = CreateFrame("Button", "ATTEditBoxResizeButton", ATTEditBox)
+		rb:SetPoint("BOTTOMRIGHT", -6, 7)
+		rb:SetSize(16, 16)
+		
+		rb:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
+		rb:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
+		rb:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
+		
+		rb:SetScript("OnMouseDown", function(self, button)
+			if button == "LeftButton" then
+				f:StartSizing("BOTTOMRIGHT")
+				self:GetHighlightTexture():Hide() -- more noticeable
+			end
+		end)
+		rb:SetScript("OnMouseUp", function(self, button)
+			f:StopMovingOrSizing()
+			self:GetHighlightTexture():Show()
+			eb:SetWidth(sf:GetWidth())
+		end)
+		f:Show()
+	end
+	if text then
+		ATTEditBoxEditBox:SetText(text)
+		ATTEditBoxEditBox:HighlightText();
+		ATTEditBoxEditBox:SetFocus();
+	end
+	ATTEditBox:Show()
+end

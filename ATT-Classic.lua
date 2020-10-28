@@ -8577,18 +8577,18 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['visible'] = true,
 					['g'] = {},
 					['OnClick'] = function(row, button)
-						print("Export the Soft Reserves list");
-						local d, s, count = date("%Y/%m/%d"), "", 0;
+						local s, count = "", 0;
 						for i,o in ipairs(self.data.g) do
 							if o.guid then
 								if count > 0 then
-									s = s .. "\\n";
+									s = s .. "\n";
 								end
-								s = s .. d .. "\\t" .. o.name .. "\\t" .. o.itemName;
+								s = s .. o.name .. "\\t" .. o.itemName;
 								count = count + 1;
 							end
 						end
-						print(s);
+						
+						app:ShowPopupDialogWithMultiLineEditBox(s);
 						return true;
 					end,
 					['OnUpdate'] = function(data)
