@@ -3011,6 +3011,18 @@ app.BaseSoftReserveUnit = {
 			return text;
 		elseif key == "OnClick" then
 			return SoftReserveUnitOnClick;
+		elseif key == "itemName" then
+			local itemID = t.itemID;
+			if itemID then
+				local itemName = GetItemInfo(itemID);
+				if itemName then
+					return itemName;
+				else
+					return RETRIEVING_DATA;
+				end
+			else
+				return "No Soft Reserve Selected";
+			end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -8539,6 +8551,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					table.insert(g, 1, data.pushGroupMembers);
 					table.insert(g, 1, data.lockSoftReserves);
 					table.insert(g, 1, data.lootMethodReminder);
+					table.insert(g, 1, data.exportSoftReserves);
 					data.g = g;
 					
 					-- Show non-group members.
@@ -8557,6 +8570,36 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end
 				end,
 				['g'] = {},
+				['exportSoftReserves'] = {
+					['text'] = "Export Soft Reserves",
+					['icon'] = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
+					['description'] = "Press this button to open an edit box containing the full content of your raid's Soft Reserve list.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						print("Export the Soft Reserves list");
+						local d, s, count = date("%Y/%m/%d"), "", 0;
+						for i,o in ipairs(self.data.g) do
+							if o.guid then
+								if count > 0 then
+									s = s .. "\\n";
+								end
+								s = s .. d .. "\\t" .. o.name .. "\\t" .. o.itemName;
+								count = count + 1;
+							end
+						end
+						print(s);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
+					end,
+					['back'] = 0.5,
+				},
 				['lockSoftReserves'] = setmetatable({
 					['text'] = "Lock All Soft Reserves",
 					['icon'] = "Interface\\Icons\\INV_MISC_KEY_13",
