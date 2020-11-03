@@ -446,14 +446,17 @@ _.Zones =
 				}),
 				q(1179, {	-- The Brassbolts Brothers
 					["qg"] = 2092,	-- Pilot Longbeard
-					--["coord"] = { },
+					["coord"] = { 72.4, 93.6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5849, 1 },	-- Crate of Crash Helmets
+					},
 					["lvl"] = 28,
 				}),
 				q(2769, {	-- The Brassbolts Brothers
 					["qg"] = 6169,	-- Klockmort Spannerspan
-					--["coord"] = { },
+					["coord"] = { 68.2, 46.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,

@@ -1353,7 +1353,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 				q(8949, {	-- Falrin's Vendetta
 					["qg"] = 16032,	-- Falrin Treeshaper
 					["sourceQuest"] = 8948,	-- Anthion's Old Friend
-					["maps"] = { DIRE_MAUL },
+					["maps"] = { DIRE_MAUL, BLACKROCK_SPIRE },
 					["cost"] = {
 						{ "i", 21982, 25 },	-- Ogre Warbeads
 					},

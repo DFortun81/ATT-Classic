@@ -843,6 +843,22 @@ _.Instances = {
 				i(16717),	-- Wildheart Gloves
 				i(13260),	-- Wind Dancer Boots
 				i(13371),	-- Father Flame
+				un(PHASE_FIVE, {
+					["itemID"] = 21982,	-- Ogre Warbeads
+					["questID"] = 8949,	-- Falrin's Vendetta
+					["crs"] = {
+						9196,	-- Highlord Omokk
+						10584,	-- Urok Doomhowl
+						9218,	-- Spirestone Battle Lord
+						9197,	-- Spirestone Battle Mage
+						9199,	-- Spirestone Enforcer
+						9217,	-- Spirestone Lord Magus
+						9198,	-- Spirestone Mystic
+						9201,	-- Spirestone Ogre Magus
+						9200,	-- Spirestone Reaver
+						9216,	-- Spirestone Warlord
+					},
+				}),
 			}),
 			n(-27, {	-- Lower
 				n(9257, {	-- Scarshield Warlock
