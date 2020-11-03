@@ -6,7 +6,7 @@ _.Zones =
 	m(KALIMDOR, {
 		m(SILITHUS, {
 			n(QUESTS, {
-				un(PHASE_SIX, q(9248, {	-- A Humble Offering
+				un(PHASE_FIVE_CATCH_UP, q(9248, {	-- A Humble Offering
 					["qg"] = 15282,	-- Aurel Goldleaf
 					["coord"] = { 52.0, 38.2, SILITHUS },
 					["minReputation"] = { 609, HONORED },	-- Cenarion Circle
@@ -15,7 +15,7 @@ _.Zones =
 					},
 					["lvl"] = 58,
 					["groups"] = {
-						un(PHASE_SIX, i(22725)),	-- Band of Cenarius
+						un(PHASE_FIVE_CATCH_UP, i(22725)),	-- Band of Cenarius
 					},
 				})),
 				q(8287, {	-- A Terrible Purpose

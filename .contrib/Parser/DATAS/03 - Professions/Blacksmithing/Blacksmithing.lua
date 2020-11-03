@@ -335,7 +335,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Ironforge Gauntlets",
 				["recipeID"] = 8368,
 			}),
-			un(PHASE_SIX, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Ironvine Gloves",
 				["recipeID"] = 28462,
 			}),
@@ -417,7 +417,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Ironforge Chain",
 				["recipeID"] = 8366,
 			}),
-			un(PHASE_SIX, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Ironvine Breastplate",
 				["recipeID"] = 28461,
 			}),
@@ -495,7 +495,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Imperial Plate Belt",
 				["recipeID"] = 16647
 			},
-			un(PHASE_SIX, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Ironvine Belt",
 				["recipeID"] = 28463,
 			}),

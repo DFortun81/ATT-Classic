@@ -125,7 +125,7 @@ profession(LEATHERWORKING, {
 				["name"] = "Big Voodoo Mask",
 				["recipeID"] = 10531
 			},
-			un(PHASE_FIVE, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Bramblewood Helm",
 				["recipeID"] = 28472,
 			}),
@@ -551,7 +551,7 @@ profession(LEATHERWORKING, {
 				["name"] = "Barbaric Belt",
 				["recipeID"] = 3779
 			},
-			un(PHASE_FIVE, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Bramblewood Belt",
 				["recipeID"] = 28474,
 			}),
@@ -703,7 +703,7 @@ profession(LEATHERWORKING, {
 		["name"] = "Boots",
 		["categoryID"] = 56,
 		["g"] = {
-			un(PHASE_FIVE, {
+			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Bramblewood Boots",
 				["recipeID"] = 28473,
 			}),

@@ -9,9 +9,9 @@ _.Zones =
 				n(15293, {	-- Aendel Windspear
 					["coord"] = { 62.6, 49.8, SILITHUS },
 					["groups"] = {
-						un(PHASE_SIX, i(22769)),	-- Pattern: Bramblewood Belt
-						un(PHASE_SIX, i(22770)),	-- Pattern: Bramblewood Boots
-						un(PHASE_SIX, i(22771)),	-- Pattern: Bramblewood Helm
+						un(PHASE_FIVE_CATCH_UP, i(22769)),	-- Pattern: Bramblewood Belt
+						un(PHASE_FIVE_CATCH_UP, i(22770)),	-- Pattern: Bramblewood Boots
+						un(PHASE_FIVE_CATCH_UP, i(22771)),	-- Pattern: Bramblewood Helm
 						un(PHASE_FOUR, i(20382)),	-- Pattern: Dreamscale Breastplate
 						un(PHASE_FOUR, i(20509)),	-- Pattern: Sandstalker Bracers
 						un(PHASE_FOUR, i(20511)),	-- Pattern: Sandstalker Breastplate
@@ -38,20 +38,20 @@ _.Zones =
 					["coord"] = { 49.8, 36.4, SILITHUS },
 					["groups"] = {
 						un(PHASE_FIVE, i(22310)),	-- Pattern: Cenarion Herb Bag
-						un(PHASE_SIX, i(22683)),	-- Pattern: Gaea's Embrace
+						un(PHASE_FIVE_CATCH_UP, i(22683)),	-- Pattern: Gaea's Embrace
 						un(PHASE_FIVE, i(22312)),	-- Pattern: Satchel of Cenarius
-						un(PHASE_SIX, i(22773)),	-- Pattern: Sylvan Crown
-						un(PHASE_SIX, i(22772)),	-- Pattern: Sylvan Shoulders
-						un(PHASE_SIX, i(22774)),	-- Pattern: Sylvan Vest
+						un(PHASE_FIVE_CATCH_UP, i(22773)),	-- Pattern: Sylvan Crown
+						un(PHASE_FIVE_CATCH_UP, i(22772)),	-- Pattern: Sylvan Shoulders
+						un(PHASE_FIVE_CATCH_UP, i(22774)),	-- Pattern: Sylvan Vest
 					},
 				}),
 				n(15176, {	-- Vargus <Blacksmith>
 					["coord"] = { 51.2, 38.8, SILITHUS },
 					["groups"] = {
 						un(PHASE_FIVE, i(22209)),	-- Plans: Heavy Obsidian Belt
-						un(PHASE_SIX, i(22768)),	-- Plans: Ironvine Belt
-						un(PHASE_SIX, i(22766)),	-- Plans: Ironvine Breastplate
-						un(PHASE_SIX, i(22767)),	-- Plans: Ironvine Gloves
+						un(PHASE_FIVE_CATCH_UP, i(22768)),	-- Plans: Ironvine Belt
+						un(PHASE_FIVE_CATCH_UP, i(22766)),	-- Plans: Ironvine Breastplate
+						un(PHASE_FIVE_CATCH_UP, i(22767)),	-- Plans: Ironvine Gloves
 						un(PHASE_FIVE, i(22214)),	-- Plans: Light Obsidian Belt
 					},
 				}),
