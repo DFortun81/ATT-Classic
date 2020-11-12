@@ -193,13 +193,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["qg"] = 7825,	-- Oran Snakewrithe
 				}),
-				q(8250, {	-- Magecraft
-					["qg"] = 4567,	-- Pierce Shackleton <Mage Trainer>
-					["coord"] = { 85.6, 14.0, UNDERCITY },
-					["races"] = HORDE_ONLY,
-					["classes"] = { MAGE },
-					["lvl"] = 50,
-				}),
 				q(4642, {	-- Melding of Influences
 					["lvl"] = 48,
 					["races"] = HORDE_ONLY,

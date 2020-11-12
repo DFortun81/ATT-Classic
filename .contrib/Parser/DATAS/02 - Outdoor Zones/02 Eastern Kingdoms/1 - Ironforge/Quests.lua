@@ -393,13 +393,6 @@ _.Zones =
 						i(6974),	-- Fire hardened Gauntlets
 					},
 				}),
-				q(8250, {	-- Magecraft
-					["qg"] = 7312,	-- Dink <Mage Trainer>
-					["coord"] = { 26.8, 8.6, IRONFORGE },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { MAGE },
-					["lvl"] = 50,
-				}),
 				q(1880,	{	-- Mage-tastic Gizmonitor
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["lvl"] = 10,

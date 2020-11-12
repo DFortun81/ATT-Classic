@@ -229,6 +229,32 @@ _.Zones =
 					},
 					["lvl"] = 45,
 				}),
+				q(8250, {	-- Magecraft
+					["qgs"] = {
+						7312,	-- Dink <Mage Trainer> [IRONFORGE]
+						7311,	-- Uthel'nay <Mage Trainer> [ORGRIMMAR]
+						331,	-- Maginor Dumas <Master Mage> [STORMWIND_CITY]
+						3047,	-- Archmage Shymm <Mage Trainer> [THUNDER_BLUFF]
+						4567,	-- Pierce Shackleton <Mage Trainer>	[UNDERCITY]
+					},
+					["coords"] = {
+						{ 26.8, 8.6, IRONFORGE },
+						{ 39.0, 86.0, ORGRIMMAR },
+						{ 38.2, 81.4, STORMWIND_CITY },
+						{ 22.6, 14.8, THUNDER_BLUFF },
+						{ 85.6, 14.0, UNDERCITY },
+					},
+					["maps"] = {
+						IRONFORGE,
+						ORGRIMMAR,
+						STORMWIND_CITY,
+						THUNDER_BLUFF,
+						UNDERCITY
+					},
+					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
+					["lvl"] = 50,
+				}),
 				q(8251, {	-- Magic Dust
 					["qg"] = 8379,	-- Archmage Xylem
 					["sourceQuest"] = 8250,	-- Magecraft
