@@ -475,6 +475,7 @@ _.Zones =
 				q(5142, {	-- Little Pamela
 					["qg"] = 10927,	-- Marlene Redpath
 					["coord"] = { 49.2, 78.4, WESTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 50,
 				}),
 				q(5059, {	-- Locked Away

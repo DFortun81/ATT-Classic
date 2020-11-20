@@ -1537,6 +1537,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					["altQuests"] = {
 						9122,	-- The Dread Citadel - Naxxramas [Revered]
 						9123,	-- The Dread Citadel - Naxxramas [Exalted]
+						9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 					},
 					["cost"] = {
 						{ "i", 12363, 5 },	-- Arcane Crystal
@@ -1555,6 +1556,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					["altQuests"] = {
 						9121,	-- The Dread Citadel - Naxxramas [Honored]
 						9123,	-- The Dread Citadel - Naxxramas [Exalted]
+						9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 					},
 					["cost"] = {
 						{ "i", 12363, 2 },	-- Arcane Crystal
@@ -1571,6 +1573,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					["altQuests"] = {
 						9121,	-- The Dread Citadel - Naxxramas [Honored]
 						9122,	-- The Dread Citadel - Naxxramas [Revered]
+						9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 					},
 					["lvl"] = 60,
 				}),

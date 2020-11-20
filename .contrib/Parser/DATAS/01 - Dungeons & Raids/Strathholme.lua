@@ -98,6 +98,9 @@ _.Instances = {
 					["sourceQuest"] = 5781,	-- Of Forgotten Memories
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 14625, 1 },	-- Symbol of Lost Honor
+					},
 					["lvl"] = 52,
 					["groups"] = {
 						{
@@ -182,8 +185,8 @@ _.Instances = {
 					["lvl"] = 55,
 				}),
 				q(5265, {	-- The Argent Hold
-					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["qg"] = 11034,	-- Lord Maxwell Tyrosus <The Argent Dawn>
+					["sourceQuest"] = 5264,	-- Lord Maxwell Tyrosus
 					["coord"] = { 81.6, 58.0, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["lvl"] = 55,
@@ -256,6 +259,7 @@ _.Instances = {
 				}),
 			}),
 			n(ZONEDROPS, {
+				un(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12843, {	-- Corruptor's Scourgestone
 					["description"] = "Can drop from any Undead rare mob or boss in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),

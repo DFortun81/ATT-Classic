@@ -43,8 +43,15 @@ _.NeverImplemented =
 	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
 	-- Argent Dawn Quests
-	q(5530),	-- <NYI> <TXT> Necklace of the Dawn
-	q(5532),	-- <NYI> <TXT> Ring of the Dawn
+	q(5530, {	-- <NYI> <TXT> Necklace of the Dawn
+		i(13811),	-- Necklace of the Dawn
+	}),
+	q(5532, {	-- <NYI> <TXT> Ring of the Dawn
+		i(13812),	-- Ring of the Dawn
+	}),
+	q(9031),	-- <TXT>Anthion's Parting Words
+	q(5303),	-- <UNUSED>
+	q(5304),	-- <UNUSED>
 	
 	-- Dustwallow Marsh Quests that were never added.
 	q(1293),	-- <nyi> <TXT> Centaur Hoofprints
@@ -416,7 +423,6 @@ _.NeverImplemented =
 	i(18970),	-- Ring of Critical Testing 2
 	i(18971),	-- Ring of Critical Testing 3
 	i(18982),	-- Ring of Critical Testing 4
-	i(13812),	-- Ring of the Dawn
 	i(20445),	-- Test Defense Ring +120
 	i(20446),	-- Test Defense Ring +80
 	i(16067),	-- Test Fire Res Ring
@@ -576,7 +582,6 @@ _.NeverImplemented =
 	
 	-- Neck
 	i(23058),	-- Life Channeling Necklace
-	i(13811),	-- Necklace of the Dawn
 	
 	-- Ring
 	i(17000),	-- Band of the Wraith

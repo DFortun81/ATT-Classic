@@ -170,6 +170,9 @@ _.Zones =
 					["coords"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3521, 1 },	-- Cleverly Encrypted Letter
+					},
 					["lvl"] = 30,
 				}),
 				q(1714, {	-- Essence of the Exile
@@ -199,6 +202,9 @@ _.Zones =
 					["coords"] = { 58.3, 68.0, ALTERAC_MOUNTAINS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3718, 1 },	-- Foreboding Plans
+					},
 					["lvl"] = 26,
 				}),
 				q(525, {	-- Further Mysteries
@@ -215,6 +221,9 @@ _.Zones =
 					["coord"] = { 50.4, 57, HILLSBRAD_FOOTHILLS },
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 3521, 1 },	-- Cleverly Encrypted Letter
+					},
 					["lvl"] = 30,
 				}),
 				q(512, {	-- Noble Deaths

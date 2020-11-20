@@ -18,6 +18,7 @@ _.Zones =
 					["cr"] = 1852,	-- Araj the Summoner
 					["coord"] = { 45.6, 69.2, WESTERN_PLAGUELANDS },
 				}),
+				un(PHASE_SIX, i(22526)),	-- Bone Fragments
 				i(12841, {	-- Invader's Scourgestone
 					["description"] = "Can drop from any Undead mobs in the Plaguelands and associated dungeons so long as you are equipped with one of the Argent Dawn trinkets.",
 				}),

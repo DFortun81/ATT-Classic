@@ -362,6 +362,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 				}),
 				q(6145, {	-- The Crimson Courier
+					["qg"] = 2425,	-- Varimathras
 					["sourceQuest"] = 6144,	-- The Call to Command
 					["races"] = HORDE_ONLY,
 					["cost"] = {

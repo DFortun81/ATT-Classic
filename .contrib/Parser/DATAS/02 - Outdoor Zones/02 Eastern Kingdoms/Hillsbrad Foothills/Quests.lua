@@ -399,6 +399,9 @@ _.Zones =
 					["qg"] = 2228,	-- Lieutenant Farren Orinelle
 					["sourceQuest"] = 562,	-- Stormwind Ho!
 					["coord"] = { 51.4, 58.4, HILLSBRAD_FOOTHILLS },
+					["cost"] = {
+						{ "i", 3721, 1 },	-- Farren's Report
+					},
 				}),
 				q(542, {	-- Return to Milton
 					["qg"] = 2277,	-- Loremaster Dibbs

@@ -93,6 +93,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 2790,	-- Grand Mason Marblesten
 					["sourceQuest"] = 686,	-- A King's Tribute (1/3)
+					["cost"] = {
+						{ "i", 4521, 1 },	-- Alterac Granite
+					},
 				}),
 				q(700, {	-- A King's Tribute
 					["lvl"] = 25,
