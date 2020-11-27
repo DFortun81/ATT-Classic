@@ -313,6 +313,32 @@ _.Zones =
 					},
 					["lvl"] = 45,
 				}),
+				q(8151, {	-- The Hunter's Charm
+					["qgs"] = {
+						4205,	-- Dorion <Hunter Trainer>
+						5116,	-- Olmin Burningbeard <Hunter Trainer>
+						3352,	-- Ormak Grimshot <Hunter Trainer>
+						3406,	-- Xor'juul <Hunter Trainer>
+						5516,	-- Ulfir Ironbeard <Hunter Trainer>
+						3038,	-- Kary Thunderhorn <Hunter Trainer>
+					},
+					["coords"] = {
+						{ 42.2, 7.6, DARNASSUS },
+						{ 70.6, 83.8, IRONFORGE },
+						{ 66.2, 18.6, ORGRIMMAR },
+						{ 62.0, 15.0, STORMWIND_CITY },
+						{ 58.4, 88.0, THUNDER_BLUFF },
+					},
+					["maps"] = {
+						DARNASSUS,
+						IRONFORGE,
+						ORGRIMMAR,
+						STORMWIND_CITY,
+						THUNDER_BLUFF,
+					},
+					["classes"] = { HUNTER },
+					["lvl"] = 50,
+				}),
 				q(8256, {	-- The Ichor of Undeath
 					["qg"] = 8405,	-- Ogtinc
 					["sourceQuest"] = 8255,	-- Of Coursers We Know

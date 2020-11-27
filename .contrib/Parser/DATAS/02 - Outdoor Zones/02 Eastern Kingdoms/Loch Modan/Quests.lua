@@ -129,10 +129,10 @@ _.Zones =
 					["lvl"] = 36,
 				}),
 				q(2038, {	-- Bingles' Missing Supplies
-					["lvl"] = 12,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6577,	-- Bingles Blastenheimer
 					["sourceQuest"] = 2039,	-- Find Bingles
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 12,
 					["g"] = {
 						i(12522),	-- Bingles' Flying Gloves
 					},
@@ -169,16 +169,16 @@ _.Zones =
 					["description"] = "Enter the building at 23.3, 17.9 and go up the stairs to access Mountaineer Stormpike.",
 				}),
 				q(738, {	-- Find Agmond
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1344,	-- Prospector Ironband
 					["sourceQuest"] = 707,	-- Ironband Wants You!
+					["coord"] = { 65.93, 65.62, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 30,
 					["g"] = {
 						i(4982),	-- Ripped Prospector Belt
 						i(2776),	-- Gold Ore
 						i(1529),	-- Jade
 					},
-					["coord"] = { 65.93, 65.62, LOCH_MODAN },
 				}),
 				q(297, {	-- Gathering Idols
 					["lvl"] = 13,
@@ -193,10 +193,13 @@ _.Zones =
 					["coord"] = { 64.9, 66.7, LOCH_MODAN },
 				}),
 				q(6387, {	-- Honor Students
-					["lvl"] = 10,
-					["races"] = { DWARF, GNOME },
 					["qg"] = 1681,	-- Brock Stoneseeker
-					["description"] = "Enter the building at 37.2, 47.0 and go down the stairs to get to Brock Stoneseeker.",
+					["coord"] = { 37, 47.8, LOCH_MODAN },
+					["races"] = { DWARF, GNOME },
+					["cost"] = {
+						{ "i", 16310, 1 },	-- Brock's List
+					},
+					["lvl"] = 10,
 				}),
 				q(224, {	-- In Defense of the King's Lands (1/4)
 					["lvl"] = 10,
@@ -256,12 +259,23 @@ _.Zones =
 					["qg"] = 1340,	-- Mountaineer Kadrell
 					["isBreadcrumb"] = true,
 				}),
-				q(3182, {	-- Proof of Deed
-					["lvl"] = 40,
+				q(302, {	-- Powder to Ironband
+					["qg"] = 1356,	-- Prospector Stormpike
+					["sourceQuest"] = 301,	-- Report to Ironforge
+					["coord"] = { 74.4, 12, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 10,
+				}),
+				q(3182, {	-- Proof of Deed
 					["qg"] = 3836,	-- Mountaineer Pebblebitty
 					["sourceQuest"] = 3181,	-- The Horn of the Beast
 					["coord"] = { 18.2, 84.0, LOCH_MODAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10005, 1 },	-- Margol's Gigantic Horn
+					},
+					["lvl"] = 40,
 				}),
 				q(309, {	-- Protecting the Shipment
 					["lvl"] = 10,
@@ -286,13 +300,13 @@ _.Zones =
 					},
 				}),
 				q(301, {	-- Report to Ironforge
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1105,	-- Jern Hornhelm
 					["sourceQuest"] = 298,	-- Excavation Progress Report
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 2637, 1 },	-- Ironbrand's Progress Report
 					},
+					["lvl"] = 10,
 				}),
 				q(468, {	-- Report to Mountaineer Rockgar
 					["qg"] = 1340,	-- Mountaineer Kadrell
@@ -308,11 +322,14 @@ _.Zones =
 					["sourceQuest"] = 302,	-- Powder to Ironband
 				}),
 				q(6391, {	-- Ride to Ironforge
-					["lvl"] = 10,
-					["races"] = { DWARF, GNOME },
-					["sourceQuest"] = 6387,	-- Honor Students
 					["qg"] = 1572,	-- Thorgrum Borrelson
+					["sourceQuest"] = 6387,	-- Honor Students
 					["coord"] = { 33.9, 50.9, LOCH_MODAN },
+					["races"] = { DWARF, GNOME },
+					["cost"] = {
+						{ "i", 16310, 1 },	-- Brock's List
+					},
+					["lvl"] = 10,
 				}),
 				un(NEVER_IMPLEMENTED, q(912, {	-- Stonesplinter Trogg Disguise
 					["lvl"] = 10,

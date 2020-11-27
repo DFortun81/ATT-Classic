@@ -150,8 +150,9 @@ _.Zones =
 					},
 				}),
 				q(2965, {	-- Portents of Uldum
-					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]
 					["qg"] = 3978,	-- Sage Truthseeker
+					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]
+					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 45,
 				}),
@@ -172,19 +173,20 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
-				q(2967, {	-- Return to Thunder Bluff
-					["lvl"] = 45,
-					["races"] = HORDE_ONLY,
-					["provider"] = { "o", 142343 },	-- Uldum Pedestal
-				}),
 				q(1067, {	-- Return to Thunder Bluff
 					["lvl"] = 13,
 					["races"] = HORDE_ONLY,
 					["qg"] = 2216,	-- Apothecary Lydon
 				}),
 				q(2966, {	-- Seeing What Happens
-					["lvl"] = 45,
+					["qg"] = 5770,	-- Nara Wildmane
+					["sourceQuest"] = 2965,	-- Portents of Uldum
+					["coord"] = { 75.6, 31.2, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6064, 1 },	-- Miniature Platinum Discs
+					},
+					["lvl"] = 45,
 				}),
 				q(860, {	-- Sergra Darkthorn
 					["qg"] = 3441,	-- Melor Stonehoof
@@ -215,13 +217,6 @@ _.Zones =
 					["coord"] = { 22.85, 20.90, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 13,
-				}),
-				q(8151, {	-- The Hunter's Charm
-					["qg"] = 3038,	-- Kary Thunderhorn <Hunter Trainer>
-					["coord"] = { 58.4, 88.0, THUNDER_BLUFF },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 50,
 				}),
 				q(1195, {	-- The Sacred Flame
 					["qg"] = 4721,	-- Zangen Stonehoof

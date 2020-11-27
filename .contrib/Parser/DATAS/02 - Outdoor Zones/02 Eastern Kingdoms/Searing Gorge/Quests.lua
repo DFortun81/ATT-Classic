@@ -23,6 +23,14 @@ _.Zones =
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
 					["lvl"] = 40,
 				}),
+				q(3371, {	-- Dwarven Justice
+					["qg"] = 8256,	-- Curator Thorius
+					["sourceQuest"] = 3368,	-- Suntara Stones (2/2)
+					["coord"] = { 71.4, 16.2, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
+				}),
 				q(7724, {	-- Fiery Menace!
 					["qg"] = 14627,	-- Hansel Heavyhands
 					["coord"] = { 38.6, 27.8, SEARING_GORGE },
@@ -129,8 +137,19 @@ _.Zones =
 				q(3372, {	-- Release Them
 					["qg"] = 8417,	-- Dying Archaeologist
 					["sourceQuest"] = 3371,	-- Dwarven Justice
+					["coord"] = { 41.2, 25.6, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 10442, 1 },	-- Mysterious Artifact
+					},
 					["lvl"] = 40,
+					["groups"] = {
+						{
+							["itemID"] = 10442,	-- Mysterious Artifact
+							["questID"] = 3372,	-- Release Them
+							["coord"] = { 29.2, 25.9, SEARING_GORGE },
+						},
+					},
 				}),
 				q(8242, {	-- Restoring Fiery Flux Supplies via Heavy Leather
 					["qg"] = 14624,	-- Master Smith Burninate
@@ -177,6 +196,7 @@ _.Zones =
 				q(3566, {	-- Rise, Obsidion!
 					["qg"] = 8417,	-- Dying Archaeologist
 					["sourceQuest"] = 3372,	-- Release Them
+					["coord"] = { 41.2, 25.6, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 10447, 1 },	-- Head of Lathoric the Black
@@ -234,14 +254,15 @@ _.Zones =
 					["coord"] = { 39.1, 39.0, SEARING_GORGE },
 					["lvl"] = 40,
 				}),
-				q(3367, {	-- Suntara Stones
+				q(3367, {	-- Suntara Stones (1/2)
 					["qg"] = 8284,	-- Dorius Stonetender
+					["coord"] = { 63.8, 60.8, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 40,
 				}),
-				q(3368, {	-- Suntara Stones
+				q(3368, {	-- Suntara Stones (2/2)
 					["provider"] = { "i", 10443 },	-- Singed Letter
-					["sourceQuest"] = 3367,	-- Suntara Stones
+					["sourceQuest"] = 3367,	-- Suntara Stones (1/2)
 					["description"] = "The Signed Letter will be on the ground after you finish escorting Dorius Stonetender.",
 					["coord"] = { 74.5, 19.3, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
@@ -268,6 +289,7 @@ _.Zones =
 				}),
 				q(3181, {	-- The Horn of the Beast
 					["provider"] = { "i", 10000 },	-- Margol's Horn
+					["coord"] = { 73.0, 77.2, SEARING_GORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 10005, 1 },	-- Margol's Gigantic Horn

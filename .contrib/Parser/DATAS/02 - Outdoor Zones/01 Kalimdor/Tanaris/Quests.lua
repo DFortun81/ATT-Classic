@@ -269,6 +269,28 @@ _.Zones =
 						i(11502),	-- Loreskin Shoulders
 					},
 				}),
+				q(2977, {	-- Return to Ironforge
+					["provider"] = { "o", 142343 },	-- Uldum Pedestal
+					["sourceQuest"] = 2954,	-- The Stone Watcher
+					["coord"] = { 37.7, 81.5, TANARIS },
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 6064, 1 },	-- Miniature Platinum Discs
+					},
+					["lvl"] = 45,
+				}),
+				q(2967, {	-- Return to Thunder Bluff
+					["provider"] = { "o", 142343 },	-- Uldum Pedestal
+					["sourceQuest"] = 2954,	-- The Stone Watcher
+					["coord"] = { 37.7, 81.5, TANARIS },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6064, 1 },	-- Miniature Platinum Discs
+					},
+					["lvl"] = 45,
+				}),
 				{
 					["allianceQuestID"] = 162,	-- Rise of the Silithid
 					["hordeQuestID"] = 32,	-- Rise of the Silithid
@@ -374,6 +396,11 @@ _.Zones =
 				}),
 				q(2954, {	-- The Stone Watcher
 					["provider"] = { "o", 142343 },	-- Uldum Pedestal
+					["sourceQuests"] = {
+						2946,	-- Seeing What Happens [Ironforge]
+						2966,	-- Seeing What Happens [Thunder Bluff]
+					},
+					["coord"] = { 37.7, 81.5, TANARIS },
 					["lvl"] = 45,
 				}),
 				q(8893, {	-- The Super Egg-O-Matic

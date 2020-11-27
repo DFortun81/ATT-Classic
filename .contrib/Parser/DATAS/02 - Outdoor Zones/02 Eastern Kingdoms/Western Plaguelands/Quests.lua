@@ -234,6 +234,23 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
+				q(8415, {	-- Chillwind Point
+					["qgs"] = {
+						5149,	-- Brandur Ironhammer <Paladin Trainer>
+						928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
+					},
+					["coords"] = {
+						{ 23.6, 6.6, IRONFORGE },
+						{ 37.6, 32.6, STORMWIND_CITY },
+					},
+					["maps"] = {
+						IRONFORGE,
+						STORMWIND_CITY,
+					},
+					["races"] = ALLIANCE_ONLY,
+					["classes"] = { PALADIN },
+					["lvl"] = 50,
+				}),
 				q(5524, {	-- Chromatic Mantle of the Dawn
 					["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 					["sourceQuest"] = 5504,	-- Mantles of the Dawn

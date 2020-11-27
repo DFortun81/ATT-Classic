@@ -189,14 +189,20 @@ _.Instances = {
 					["sourceQuest"] = 2278,	-- The Platinum Discs
 					["provider"] = { "o", 131474 },	-- The Discs of Norgannon
 					["description"] = "Talk to the Lore Keeper until he has finished talking and then pick up this quest from The Discs of Norgannon again.",
+					["cost"] = {
+						{ "i", 6064, 1 },	-- Miniature Platinum Discs
+					},
 					["lvl"] = 40,
 				},
 				q(2439, {	-- The Platinum Discs [Alliance - Part 3]
-					["sourceQuest"] = 2279,	-- The Platinum Discs [Alliance]
 					["qg"] = 5387,	-- High Explorer Magellas <Explorers' League>
+					["sourceQuest"] = 2279,	-- The Platinum Discs [Alliance]
 					["coord"] = { 69.9, 18.6, IRONFORGE },
 					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 8070, 1 },	-- Reward Voucher
+					},
 					["lvl"] = 40,
 					["groups"] = {
 						i(9587),	-- Thawpelt Sack
@@ -205,11 +211,14 @@ _.Instances = {
 					},
 				}),
 				q(2440, {	-- The Platinum Discs [Horde - Part 3]
-					["sourceQuest"] = 2280,	-- The Platinum Discs [Horde]
 					["qg"] = 3978,	-- Sage Truthseeker
-					["coord"] = { 36.8, 26.4, MULGORE },
-					["maps"] = { MULGORE },
+					["sourceQuest"] = 2280,	-- The Platinum Discs [Horde]
+					["coord"] = { 34.6, 47.2, THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8070, 1 },	-- Reward Voucher
+					},
 					["lvl"] = 40,
 					["groups"] = {
 						i(9587),	-- Thawpelt Sack

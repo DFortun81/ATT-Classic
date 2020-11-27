@@ -136,21 +136,6 @@ _.Zones =
 					},
 					["lvl"] = 4,
 				}),
-				q(5636, {	-- Desperate Prayer
-					["qg"] = 3600,	-- Laurna Morninglight <Priest Trainer>
-					["coord"] = { 55.6, 56.8, TELDRASSIL },
-					["altQuests"] = {
-						5634,	-- Desperate Prayer
-						5635,	-- Desperate Prayer
-						5637,	-- Desperate Prayer
-						5638,	-- Desperate Prayer
-						5639,	-- Desperate Prayer
-						5640,	-- Desperate Prayer
-					},
-					["races"] = { HUMAN, DWARF },
-					["classes"] = { PRIEST },
-					["lvl"] = 10,
-				}),
 				q(2159, {	-- Dolanaar Delivery
 					["qg"] = 6780,	-- Porthannius
 					["coord"] = { 61.2, 47.6, TELDRASSIL },

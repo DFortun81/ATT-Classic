@@ -44,15 +44,15 @@ _.Zones =
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 				}),
 				q(3763, {	-- Assisting Arch Druid Staghelm
-					["lvl"] = 47,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 6735,	-- Innkeeper Saelienne
 					["coord"] = { 67.4, 15.7, DARNASSUS },
+					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						3790, -- Assisting Arch Druid Staghelm (Ironforge)
 						3789, -- Assisting Arch Druid Staghelm (Stormwind)		
 					},
+					["lvl"] = 47,
 				}),
 				q(4510, {	-- Calm Before the Storm (2/2)
 					["qg"] = 7740,	-- Gracina Spiritmight
@@ -68,21 +68,6 @@ _.Zones =
 						i(11871),	-- Snarkshaw Spaulders
 						i(11872),	-- Eschewal Greaves
 					},
-				}),
-				q(5640, {	-- Desperate Prayer
-					["qg"] = 11401,	-- Priestess Alathea <Priest Trainer>
-					["coord"] = { 39.6, 80.8, DARNASSUS },
-					["altQuests"] = {
-						5634,	-- Desperate Prayer
-						5635,	-- Desperate Prayer
-						5636,	-- Desperate Prayer
-						5637,	-- Desperate Prayer
-						5638,	-- Desperate Prayer
-						5639,	-- Desperate Prayer
-					},
-					["races"] = { HUMAN, DWARF },
-					["classes"] = { PRIEST },
-					["lvl"] = 10,
 				}),
 				q(2242, {	-- Destiny Calls
 					["qg"] = 4163,	-- Syurna
@@ -238,13 +223,6 @@ _.Zones =
 					["coord"] = { 61.8, 39.4, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
-				}),
-				q(8151, {	-- The Hunter's Charm
-					["qg"] = 4205,	-- Dorion <Hunter Trainer>
-					["coord"] = { 42.2, 7.6, DARNASSUS },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 50,
 				}),
 				q(1686, {	-- The Shade of Elura
 					["qg"] = 4088,	-- Elanaria

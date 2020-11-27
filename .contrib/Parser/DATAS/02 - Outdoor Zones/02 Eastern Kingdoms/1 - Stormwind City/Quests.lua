@@ -105,25 +105,37 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5676, {	-- Arcane Feedback
-					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["qgs"] = {
+						11406,	-- High Priest Rohan <Priest Trainer>
+						376,	-- High Priestess Laurena <Priest Trainer>
+					},
+					["coords"] = {
+						{ 26.4, 7.6, IRONFORGE },
+						{ 38.8, 26.6, STORMWIND_CITY },
+					},
 					["altQuests"] = {
-						5677,	-- Arcane Feedback
-						5678,	-- Arcane Feedback
+						5678,	-- Arcane Feedback (NYI?)
+						5677,	-- Arcane Feedback (Ironforge)
 					},
 					["races"] = { HUMAN },
 					["classes"] = { PRIEST },
 					["lvl"] = 20,
+					["groups"] = {
+						{
+							["spellID"] = 13896,	-- Feedback (Rank 1)
+							["rank"] = 1,
+						},
+					},
 				}),
 				q(3789, {	-- Assisting Arch Druid Staghelm
 					["qg"] = 6740,	-- Innkeeper Allison
 					["races"] = ALLIANCE_ONLY,
-					["lvl"] = 47,
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						3790,	-- Assisting Arch Druid Staghelm (Ironforge)
 						3763,	-- Assisting Arch Druid Staghelm (Darnassus)
 					},
+					["lvl"] = 47,
 				}),
 				q(1942, {	-- Astral Knot Garment
 					["qg"] = 1309,	-- Wynne Larson <Robe Merchant>
@@ -199,27 +211,50 @@ _.Zones =
 					["classes"] = { PRIEST },
 					["lvl"] = 50,
 				}),
-				q(8415, {	-- Chillwind Camp
-					["qg"] = 928,	-- Lord Grayson Shadowbreaker <Paladin Trainer>
-					["coord"] = { 37.6, 32.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { PALADIN },
-					["lvl"] = 50,
-				}),
 				q(5634, {	-- Desperate Prayer
-					["qg"] = 376,	-- High Priestess Laurena <Priest Trainer>
-					["coord"] = { 38.8, 26.6, STORMWIND_CITY },
+					["qgs"] = {
+						11401,	-- Priestess Alathea <Priest Trainer>
+						1226,	-- Maxan Anvol <Priest Trainer>
+						377,	-- Priestess Josetta <Priest Trainer>
+						11406,	-- High Priest Rohan <Priest Trainer>
+						11397,	-- Nara Meideros <Priest Trainer>
+						376,	-- High Priestess Laurena <Priest Trainer>
+						3600,	-- Laurna Morninglight <Priest Trainer>
+					},
+					["coords"] = {
+						{ 39.6, 80.8, DARNASSUS },
+						{ 47.2, 52.2, DUN_MOROGH },
+						{ 43.4, 65.6, ELWYNN_FOREST },
+						{ 26.4, 7.6, IRONFORGE },
+						{ 20.8, 50.2, STORMWIND_CITY },
+						{ 38.8, 26.6, STORMWIND_CITY },
+						{ 55.6, 56.8, TELDRASSIL },
+					},
+					["maps"] = {
+						DARNASSUS,
+						DUN_MOROGH,
+						ELWYNN_FOREST,
+						IRONFORGE,
+						STORMWIND_CITY,
+						TELDRASSIL,
+					},
 					["altQuests"] = {
-						5635,	-- Desperate Prayer
-						5636,	-- Desperate Prayer
-						5637,	-- Desperate Prayer
-						5638,	-- Desperate Prayer
-						5639,	-- Desperate Prayer
-						5640,	-- Desperate Prayer
+						5635,	-- Desperate Prayer (Elwynn Forest)
+						5636,	-- Desperate Prayer (Teldrassil)
+						5637,	-- Desperate Prayer (Dun Morogh)
+						5638,	-- Desperate Prayer (Stormwind City #2)
+						5639,	-- Desperate Prayer (Ironforge)
+						5640,	-- Desperate Prayer (Darnassus)
 					},
 					["races"] = { HUMAN, DWARF },
 					["classes"] = { PRIEST },
 					["lvl"] = 10,
+					["groups"] = {
+						{
+							["spellID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["rank"] = 1,
+						},
+					},
 				}),
 				q(1716, {	-- Devourer of Souls
 					["qg"] = 6122,	-- Gakin the Darkbinder
@@ -245,8 +280,8 @@ _.Zones =
 					["sourceQuest"] = 1702,	-- The Shieldsmith
 					["coord"] = { 58.0, 16.8, STORMWIND_CITY },
 					["maps"] = { RAZORFEN_KRAUL, WETLANDS, STONETALON_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 6842, 1 },	-- Furen's Instructions
 						{ "i", 6838, 50 },	-- Scorched Spider Fang
@@ -329,8 +364,18 @@ _.Zones =
 					},
 				}),
 				q(1939, {	-- High Sorcerer Andromath
-					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
-					["coord"] = { 38.6, 79.6, STORMWIND_CITY },
+					["qgs"] = {
+						5144,	-- Bink <Mage Trainer>
+						5497,	-- Jennea Cannon <Mage Trainer>
+					},
+					["coords"] = {
+						{ 27.0, 8.2, IRONFORGE },
+						{ 38.6, 79.6, STORMWIND_CITY },
+					},
+					["maps"] = {
+						IRONFORGE,
+						STORMWIND_CITY,
+					},
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["lvl"] = 26,
@@ -397,6 +442,17 @@ _.Zones =
 						},
 					},
 				}),
+				q(1704, {	-- Klockmort Spannerspan
+					["qg"] = 5413,	-- Furen Longbeard
+					["sourceQuest"] = 1701,	-- Fire Hardened Mail
+					["coord"] = { 58.0, 16.8, STORMWIND_CITY },
+					["classes"] = { WARRIOR },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 6926, 1 },	-- Furen's Notes
+					},
+					["lvl"] = 20,
+				}),
 				q(350, {	-- Look to an Old Friend
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
@@ -431,12 +487,19 @@ _.Zones =
 				}),
 				q(1861, {	-- Mirror Lake
 					["qg"] = 5497,	-- Jennea Cannon <Mage Trainer>
-					["lvl"] = 10,
-					["races"] = ALLIANCE_ONLY,
+					["sourceQuest"] = 1860,	-- Speak with Jennea
+					["coord"] = { 38.6, 79.4, STORMWIND_CITY },
+					["maps"] = { ELWYNN_FOREST },
 					["classes"] = { MAGE },
+					["races"] = ALLIANCE_ONLY,
 					["altQuests"] = {
 						1880,	-- Mage-tastic Gizmonitor
 					},
+					["cost"] = {
+						{ "i", 7207, 1 },	-- Jennea's Flask
+						{ "i", 7206, 1 },	-- Mirror Lake Water Sample
+					},
+					["lvl"] = 10,
 					["groups"] = {
 						i(7508),	-- Ley Orb
 						i(9513),	-- Ley Staff
@@ -648,13 +711,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["sourceQuest"] = 434,	-- The Attack!
 					["qg"] = 482,	-- Elling Trias <Master of Cheese>
-				}),
-				q(8151, {	-- The Hunter's Charm
-					["qg"] = 5516,	-- Ulfir Ironbeard <Hunter Trainer>
-					["coord"] = { 62.0, 15.0, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 50,
 				}),
 				q(1274, {	-- The Missing Diplomat (1/17)
 					["lvl"] = 28,

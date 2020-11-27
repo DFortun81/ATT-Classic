@@ -7,6 +7,62 @@ _.PvP =
   n(-30, {	-- Alliance 
     ["races"] = ALLIANCE_ONLY,
     ["g"] = {
+		n(QUESTS, {
+			q(8371, {	-- Concerted Efforts
+				["qg"] = 15351,	-- Alliance Brigadier General
+				["coords"] = {
+					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+					{ 45.6, 45.8, ARATHI_HIGHLANDS },
+					{ 61.8, 83.8, ASHENVALE },
+					{ 57.8, 34.6, DARNASSUS },
+					{ 69.8, 90, IRONFORGE },
+					{ 79.4, 18, STORMWIND_CITY },
+				},
+				["maps"] = {
+					ALTERAC_MOUNTAINS,
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					DARNASSUS,
+					IRONFORGE,
+					STORMWIND_CITY,
+				},
+				["races"] = ALLIANCE_ONLY,
+				["cost"] = {
+					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
+					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				},
+				["lvl"] = 51,
+			}),
+			q(8385, {	-- Concerted Efforts
+				["qg"] = 15351,	-- Alliance Brigadier General
+				["sourceQuest"] = 8371,	-- Concerted Efforts
+				["coords"] = {
+					{ 39.4, 82.2, ALTERAC_MOUNTAINS },
+					{ 45.6, 45.8, ARATHI_HIGHLANDS },
+					{ 61.8, 83.8, ASHENVALE },
+					{ 57.8, 34.6, DARNASSUS },
+					{ 69.8, 90, IRONFORGE },
+					{ 79.4, 18, STORMWIND_CITY },
+				},
+				["maps"] = {
+					ALTERAC_MOUNTAINS,
+					ARATHI_HIGHLANDS,
+					ASHENVALE,
+					DARNASSUS,
+					IRONFORGE,
+					STORMWIND_CITY,
+				},
+				["races"] = ALLIANCE_ONLY,
+				["repeatable"] = true,
+				["cost"] = {
+					{ "i", 20560, 3 },	-- Alterac Valley Mark of Honor
+					{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
+					{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
+				},
+				["lvl"] = 51,
+			}),
+		}),
       pvprank(1, {	-- Private
         n(12805, {	-- Officer Areyn <Accessories Quartermaster>
           ["g"] = {

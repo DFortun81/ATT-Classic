@@ -325,16 +325,6 @@ _.Zones =
 						recipe(697),	-- Summon Voidwalker
 					},
 				}),
-				q(8151, {	-- The Hunter's Charm
-					["qgs"] = {
-						3352,	-- Ormak Grimshot <Hunter Trainer>
-						3406,	-- Xor'juul <Hunter Trainer>
-					},
-					["coord"] = { 66.2, 18.6, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-					["classes"] = { HUNTER },
-					["lvl"] = 50,
-				}),
 				q(787, {	-- The New Horde
 					["races"] = HORDE_ONLY,
 					["qg"] = 3144,	-- Eitrigg

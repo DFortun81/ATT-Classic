@@ -136,21 +136,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 7,
 				}),
-				q(5635, {	-- Desperate Prayer
-					["qg"] = 377,	-- Priestess Josetta <Priest Trainer>
-					["coord"] = { 43.4, 65.6, ELWYNN_FOREST },
-					["altQuests"] = {
-						5634,	-- Desperate Prayer
-						5636,	-- Desperate Prayer
-						5637,	-- Desperate Prayer
-						5638,	-- Desperate Prayer
-						5639,	-- Desperate Prayer
-						5640,	-- Desperate Prayer
-					},
-					["races"] = { HUMAN, DWARF },
-					["classes"] = { PRIEST },
-					["lvl"] = 10,
-				}),
 				q(45, {	-- Discover Rolf's Fate
 					["provider"] = { "o", 55 },	-- A half-eaten body
 					["sourceQuest"] = 37,	-- Find the Lost Guards
