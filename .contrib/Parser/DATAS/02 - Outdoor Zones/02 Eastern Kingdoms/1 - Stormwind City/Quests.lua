@@ -448,6 +448,7 @@ _.Zones =
 					["coord"] = { 58.0, 16.8, STORMWIND_CITY },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["cost"] = {
 						{ "i", 6926, 1 },	-- Furen's Notes
 					},
