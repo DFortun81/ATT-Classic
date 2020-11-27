@@ -59,8 +59,8 @@ _.Zones =
 					},
 				}),
 				i(6840, {	-- Galvanized Horn
-					["questID"] = 1701,	-- Fire Hardened Mail
-					["races"] = ALLIANCE_ONLY,
+					["allianceQuestID"] = 1701,	-- Fire Hardened Mail
+					["hordeQuestID"] = 1844,	-- Chimaeric Horn
 					["classes"] = { WARRIOR },
 					["cr"] = 6167,	-- Chimaera Matriarch
 				}),

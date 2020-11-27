@@ -42,11 +42,11 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(3762, {	-- Assisting Arch Druid Runetotem
+				q(3762, {	-- Assisting Arch Druid Runetotem (Thunder Bluff)
 					["qg"] = 6746,	-- Innkeeper Pala
 					["altQuests"] = {
-						936,	-- Assisting Arch Druid Runetotem
-						3784, 	-- Assisting Arch Druid Runetotem
+						936,	-- Assisting Arch Druid Runetotem (Orgrimmar)
+						3784, 	-- Assisting Arch Druid Runetotem (Undercity)
 					},
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
@@ -148,15 +148,6 @@ _.Zones =
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},
-				}),
-				q(1840, {	-- Orm Stonehoof and the Brutal Helm
-					["qg"] = 5878,	-- Thun'grim Firegaze
-					["sourceQuest"] = 1838,	-- Brutal Armor
-					["coord"] = { 57.2, 30.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
 				}),
 				q(2965, {	-- Portents of Uldum
 					["sourceQuest"] = 2440,	-- The Platinum Discs [Horde - Part 3]

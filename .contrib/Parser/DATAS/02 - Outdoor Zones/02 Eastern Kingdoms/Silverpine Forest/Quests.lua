@@ -289,6 +289,9 @@ _.Zones =
 					["sourceQuest"] = 6321,	-- Supplying the Sepulcher
 					["coord"] = { 45.6, 42.4, SILVERPINE_FOREST },
 					["races"] = { UNDEAD },
+					["cost"] = {
+						{ "i", 16209, 1 },	-- Podrig's Order
+					},
 					["lvl"] = 10,
 				}),
 				q(439, {	-- Rot Hide Clues
@@ -333,6 +336,9 @@ _.Zones =
 					},
 					["maps"] = { TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
+					["cost"] = {
+						{ "i", 16209, 1 },	-- Podrig's Order
+					},
 					["lvl"] = 10,
 				}),
 				q(437, {	-- The Dead Fields
@@ -442,6 +448,9 @@ _.Zones =
 					["coord"] = { 42.8, 40.8, SILVERPINE_FOREST },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 6016, 1 },	-- Wolf Heart Sample
+					},
 					["lvl"] = 10,
 				}),
 			}),

@@ -829,6 +829,17 @@ _.Zones =
 						},
 					},
 				}),
+				q(5049, {	-- The Jeremiah Blues
+					["qg"] = 10781,	-- Royal Overseer Bauhaus <Undercity Census>
+					["sourceQuest"] = 5023,	-- Better Late Than Never
+					["coord"] = { 69.6, 43.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12724, 1 },	-- Janice's Parcel
+					},
+					["lvl"] = 50,
+				}),
 				q(5215, {	-- The Scourge Cauldrons
 					["qg"] = 10838,	-- Commander Ashlam Valorfist
 					["sourceQuest"] = 5092,	-- Clear the Way

@@ -118,11 +118,15 @@ _.Zones =
 				}),
 				q(431, {	-- Candles of Beckoning
 					["provider"] = { "o", 1586 },	-- Crate of Candles
+					["coord"] = { 68.1, 42, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 5,
 					["g"] = {
-						i(3080),	-- Candle of Beckoning
+						{
+							["itemID"] = 3080,	-- Candle of Beckoning
+							["questID"] = 409,	-- Proving Allegiance
+						},
 					},
 				}),
 				q(354, {	-- Deaths in the Family
@@ -227,6 +231,9 @@ _.Zones =
 					["qg"] = 5724,	-- Ageron Kargal
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1506,	-- Gan'rul's Summons
+					},
 					["lvl"] = 10,
 				}),
 				q(1822,  {	-- Heirloom Weapon
@@ -312,7 +319,12 @@ _.Zones =
 				}),
 				q(409, {	-- Proving Allegiance
 					["qg"] = 1497,	-- Gunther Arcanus
+					["sourceQuest"]= 366,	-- Return the Book
+					["coord"] = { 68.2, 42, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3080, 1 },	-- Candle of Beckoning
+					},
 					["lvl"] = 5,
 				}),
 				q(3901, {	-- Rattling the Rattlecages
@@ -333,7 +345,13 @@ _.Zones =
 				}),
 				q(366, {	-- Return the Book
 					["qg"] = 1498,	-- Bethor Iceshard
+					["sourceQuest"] = 357,	-- The Lich's Identity
+					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3016, 1 },	-- Gunther's Spellbook
+					},
 					["lvl"] = 5,
 				}),
 				q(360, {	-- Return to the Magistrate
@@ -361,13 +379,12 @@ _.Zones =
 				q(1881, {	-- Speak with Anastasia
 					["qg"] = 2128,	-- Cain Firesong <Mage Trainer>
 					["coord"] = { 61.8, 52.4, TIRISFAL_GLADES },
-					["isBreadcrumb"] = true,
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
-					["lvl"] = 10,
 					["altQuests"] = {
 						1883,	-- Speak with Un'thuwa
 					},
+					["lvl"] = 10,
 				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
@@ -488,6 +505,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 				}),
+				q(357, {	-- The Lich's Identity
+					["qg"] = 1498,	-- Bethor Iceshard
+					["sourceQuest"] = 405,	-- The Prodigal Lich
+					["coord"] = { 84.2, 17.4, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 2833, 1 },	-- The Lich's Spellbook
+					},
+					["lvl"] = 5,
+				}),
 				q(426, {	-- The Mills Overrun
 					["qg"] = 1496,	-- Deathguard Dillinger
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
@@ -516,6 +544,9 @@ _.Zones =
 					["qg"] = 1499,	-- Magistrate Sevren
 					["coord"] = { 61.2, 50.8, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3017, 1 },	-- Sevren's Orders
+					},
 					["lvl"] = 5,
 				}),
 				q(411, {	-- The Prodigal Lich Returns

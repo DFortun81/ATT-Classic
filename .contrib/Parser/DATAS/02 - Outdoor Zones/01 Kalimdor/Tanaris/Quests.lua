@@ -253,6 +253,22 @@ _.Zones =
 						i(9644),	-- Thermotastic Egg Timer
 					},
 				}),
+				q(864, {	-- Return to Apothecary Zinge
+					["qg"] = 7407,	-- Chief Engineer Bilgewhizzle <Gadgetzan Water Co.>
+					["sourceQuest"] = 654,	-- Tanaris Field Sampling
+					["coord"] = { 52.4, 28.4, TANARIS },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = { 
+						{ "i", 8527, 1 },	-- Sealed Field Testing Kit
+					},
+					["lvl"] = 38,
+					["g"] = {
+						i(9634),	-- Skilled Handling Gloves
+						i(9635),	-- Master Apothecary Cape
+						i(11502),	-- Loreskin Shoulders
+					},
+				}),
 				{
 					["allianceQuestID"] = 162,	-- Rise of the Silithid
 					["hordeQuestID"] = 32,	-- Rise of the Silithid
@@ -274,8 +290,11 @@ _.Zones =
 				}),
 				q(379, {	-- Slake That Thirst
 					["sourceQuest"] = 243,	-- Into the Field
-					["lvl"] = 38,
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 8483, 5 },	-- Wastewander Water Pouch
+					},
+					["lvl"] = 38,
 					["g"] = {
 						i(8524),	-- Model 4711-FTZ Power Source
 					},

@@ -276,11 +276,15 @@ _.Zones =
 					["lvl"] = 12,
 				}),
 				q(1511, {	-- Ken'zigla's Draught
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 4197,	-- Ken'zigla
 					["sourceQuest"] = 1510,	-- News of Dogran (2/2)
+					["coord"] = { 73.2, 95, STONETALON_MOUNTAINS },
+					["classes"] = { WARLOCK },
+					["races"] = { ORC, UNDEAD },
+					["cost"] = {
+						{ "i", 6624, 1 },	-- Ken'zigla's Draught
+					},
+					["lvl"] = 20,
 				}),
 				q(6629, {	-- Kill Grundig Darkcloud
 					["qg"] = 11857,	-- Makaba Flathoof

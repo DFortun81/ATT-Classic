@@ -331,6 +331,9 @@ _.Zones =
 					["coord"] = { 54.2, 41.2, DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1478,	-- Halgar's Summons
+					},
 					["lvl"] = 10,
 				}),
 				q(5648, {	-- Garments of Spirituality
@@ -373,10 +376,14 @@ _.Zones =
 				}),
 				q(1884, {	-- Ju-Ju Heaps
 					["qg"] = 5880,	-- Un'Thuwa <Mage Trainer>
-					["sourceQuest"] = 1883,	-- Speak with Un'thuwa
+					["sourceQuests"] = {
+						1881,	-- Speak with Anastasia
+						1883,	-- Speak with Un'thuwa
+					},
 					["coord"] = { 56.2, 75.0, DUROTAR },
 					["races"] = { UNDEAD, TROLL },
 					["classes"] = { MAGE },
+					["lvl"] = 10,
 					["groups"] = {
 						i(7508),	-- Ley Orb
 						i(9513),	-- Ley Staff
@@ -594,6 +601,7 @@ _.Zones =
 					["altQuests"] = {
 						1881,	-- Speak with Anastasia
 					},
+					["lvl"] = 10,
 				}),
 				q(789, {	-- Sting of the Scorpid
 					["qg"] = 3143,	-- Gornek
@@ -783,15 +791,6 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 16,
-				}),
-				q(1839, {	-- Ula'elek and the Brutal Gauntlets
-					["qg"] = 5878,	-- Thun'grim Firegaze
-					["sourceQuest"] = 1838,	-- Brutal Armor
-					["coord"] = { 57.2, 30.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARRIOR },
-					["lvl"] = 20,
 				}),
 				q(784, {	-- Vanquish the Betrayers
 					["qg"] = 3139,	-- Gar'Thok

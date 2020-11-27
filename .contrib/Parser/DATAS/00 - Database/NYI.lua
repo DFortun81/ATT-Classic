@@ -116,6 +116,10 @@ _.NeverImplemented =
 	q(8339),	-- Royalty of the Council <NYI> <TXT> UNUSED
 	q(8340),	-- Twilight Signet Ring <NYI> <TXT>
 	
+	-- Undercity Quests (Unused)
+	q(6003),	-- <nyi> <txt> Green With Envy
+	q(6841),	-- <UNUSED>
+	
 	-- Retired PVP Battleground Quests
 	-- Warsong Gulch
 	i(19213),	-- Silverwing Talisman of Merit
@@ -208,6 +212,9 @@ _.NeverImplemented =
 	q(7677),	-- White Stallion Exchange
 	q(7660),	-- Wolf Swapping - Arctic Wolf
 	q(7661),	-- Wolf Swapping - Red Wolf
+	
+	-- Rogue Quests
+	q(2019),	-- Tools of the Trade (Obsolete)
 	
 	-- Bind Type 0
 	-- Invalid (Filter Type 0)

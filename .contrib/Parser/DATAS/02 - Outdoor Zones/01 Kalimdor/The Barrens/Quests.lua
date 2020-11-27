@@ -265,6 +265,12 @@ _.Zones =
 				}),
 				q(1796, {	-- Components for the Enchanted Gold Bloodrobe (1/5)
 					["qg"] = 6266,	-- Menara Voidrender
+					["sourceQuests"] = {
+						4736,	-- In Search of Menara Voidrender (Ironforge)
+						4737,	-- In Search of Menara Voidrender (Orgrimmar)
+						4738,	-- In Search of Menara Voidrender (Stormwind)
+						4739,	-- In Search of Menara Voidrender (Undercity)
+					},
 					["coord"] = { 62.4, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["cost"] = {
@@ -366,11 +372,15 @@ _.Zones =
 					["lvl"] = 9,
 				}),
 				q(1515, {	-- Dogran's Captivity
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 5911,	-- Grunt Logmar
 					["sourceQuest"] = 1511,	-- Ken'zigla's Draught
+					["coord"] = { 44.6, 59.2, THE_BARRENS },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6624, 1 },	-- Ken'zigla's Draught
+					},
+					["lvl"] = 20,
 				}),
 				q(6385, {	-- Doras the Wind Rider Master
 					["qg"] = 6929,	-- Innkeeper Gryshka
@@ -510,6 +520,24 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 12,
 				}),
+				q(1738, {	-- Heartswood
+					["qg"] = 6244,	-- Takar the Seer
+					["sourceQuest"] = 1716,	-- Devourer of Souls
+					["coord"] = { 49.2, 57.0, THE_BARRENS },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6912, 1 },	-- Heartswood
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						{
+							["itemID"] = 6912,	-- Heartswood
+							["questID"] = 1738,	-- Heartswood
+							["coord"] = { 31, 31, ASHENVALE },
+						},
+					},
+				}),
 				q(852, {	-- Hezrul Bloodmark
 					["qg"] = 3389,	-- Regthar Deathgate
 					["sourceQuest"] = 851,	-- Verog the Dervish
@@ -530,6 +558,42 @@ _.Zones =
 						i(10653),	-- Trailblazer Boots
 						i(10654),	-- Jutebraid Gloves
 					},
+				}),
+				q(4736, {	-- In Search of Menara Voidrender (Ironforge)
+					["qg"] = 5172,	-- Briarthorn
+					["coord"] = { 50.2, 6, IRONFORGE },
+					["maps"] = { IRONFORGE },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 31,
+				}),
+				q(4737, {	-- In Search of Menara Voidrender (Orgrimmar)
+					["qg"] = 3326,	-- Zevrost
+					["coord"] = { 48.4, 45.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 31,
+				}),
+				q(4738, {	-- In Search of Menara Voidrender (Stormwind)
+					["qg"] = 461,	-- Demisette Cloyce
+					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 31,
+				}),
+				q(4739, {	-- In Search of Menara Voidrender (Undercity)
+					["qg"] = 4563,	-- Kaal Soulreaper
+					["coord"] = { 86, 15.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 31,
 				}),
 				q(858, {	-- Ignition
 					["qg"] = 3439,	-- Wizzlecrank's Shredder
@@ -633,11 +697,15 @@ _.Zones =
 					["lvl"] = 14,
 				}),
 				q(1512, {	-- Love's Gift
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 5908,	-- Grunt Dogran
 					["sourceQuest"] = 1515,	-- Dogran's Captivity
+					["coord"] = { 43.2, 47.8, THE_BARRENS },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["cost"] = {
+						{ "i", 6625, 1 },	-- Dirt-caked Pendant
+					},
+					["lvl"] = 20,
 				}),
 				q(874, {	-- Mahren Skyseer
 					["qg"] = 3387,	-- Jorn Skyseer
@@ -703,11 +771,12 @@ _.Zones =
 					},
 				}),
 				q(1510, {	-- News of Dogran (2/2)
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 3464,	-- Gazrog
 					["sourceQuest"] = 1509,	-- News of Dogran (1/2)
+					["coord"] = { 51.8, 30.2, THE_BARRENS },
+					["classes"] = { WARLOCK },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 20,
 				}),
 				q(3922, {	-- Nugget Slugs
 					["qg"] = 9316,	-- Wenikee Boltbucket
@@ -715,6 +784,15 @@ _.Zones =
 					["coord"] = { 49.05, 11.17, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 10,
+				}),
+				q(1840, {	-- Orm Stonehoof and the Brutal Helm
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["maps"] = { THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(884, {	-- Owatanka
 					["cr"] = 3473,	-- Owatanka
@@ -907,10 +985,29 @@ _.Zones =
 						i(11148),	-- Samophlange Manual Page
 					},
 				}),
-				q(1798, {	-- Seeking Strahad
+				q(2996, {	-- Seeking Strahad (Orgrimmar)
+					["qg"] = 5875,	-- Gan'rul Bloodeye
+					["coord"] = { 48.2, 45.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["races"] = { ORC, UNDEAD },
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(1798, {	-- Seeking Strahad (Stormwind)
 					["qg"] = 6122,	-- Gakin the Darkbinder
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY, 
+					["classes"] = { WARLOCK },
+					["isBreadcrumb"] = true,
+					["lvl"] = 30,
+				}),
+				q(3001, {	-- Seeking Strahad (Undercity)
+					["qg"] = 5675,	-- Carendin Halgar
+					["coord"] = { 85, 25.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["isBreadcrumb"] = true,
 					["lvl"] = 30,
@@ -941,12 +1038,14 @@ _.Zones =
 					["qgs"] = {
 						3354,	-- Sorek
 						3041,	-- Torm Ragetotem
+						4595,	-- Baltus Fowler <Warrior Trainer>
 					},
 					["coords"] = {
-						{ 80.36, 32.39, ORGRIMMAR },
-						{ 57.00, 89.45, THUNDER_BLUFF },
+						{ 80.2, 32.4, ORGRIMMAR },
+						{ 57.4, 87.2, THUNDER_BLUFF },
+						{ 47.2, 17, UNDERCITY },
 					},
-					["maps"] = { ORGRIMMAR, THUNDER_BLUFF },
+					["maps"] = { ORGRIMMAR, THUNDER_BLUFF, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 20,
@@ -988,14 +1087,51 @@ _.Zones =
 						i(2694),	-- Settler's Leggings
 					},
 				}),
-				q(4488, {	-- Summon Felsteed
-					["qg"] = 6251,	-- Strahad Farsan
-					["races"] = ALLIANCE_ONLY,
+				q(4487, {	-- Summon Felsteed (Ironforge)
+					["qg"] = 5172,	-- Briarthorn
+					["coord"] = { 50.2, 6, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
+				q(3631, {	-- Summon Felsteed (Orgrimmar)
+					["qg"] = 3326,	-- Zevrost
+					["coord"] = { 48.4, 45.6, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
+				q(4488, {	-- Summon Felsteed (Stormwind)
+					["qg"] = 461,	-- Demisette Cloyce <Warlock Trainer>
+					["coord"] = { 25.4, 78.2, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["classes"] = { WARLOCK },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["lvl"] = 40,
+				}),
+				q(4489, {	-- Summon Felsteed (Undercity)
+					["qg"] = 4563,	-- Kaal Soulreaper
+					["coord"] = { 86, 15.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 40,
 				}),
 				q(4490, {	-- Summon Felsteed
 					["qg"] = 6251,	-- Strahad Farsan
+					["sourceQuests"] = {
+						4487,	-- Summon Felsteed (Ironforge)
+						3631,	-- Summon Felsteed (Orgrimmar)
+						4488,	-- Summon Felsteed (Stormwind)
+						4489,	-- Summon Felsteed (Undercity)
+					},
+					["coord"] = { 62.6, 35.4, THE_BARRENS },
 					["classes"] = { WARLOCK },
 					["lvl"] = 40,
 					["groups"] = {
@@ -1244,12 +1380,19 @@ _.Zones =
 				}),
 				q(1758, {	-- Tome of the Cabal (1/3 Alliance)
 					["qg"] = 6251,	-- Strahad Farsan
+					["sourceQuest"] = 1798,	-- Seeking Strahad
+					["coord"] = { 62.6, 35.4, THE_BARRENS },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
 				}),
 				q(1801, {	-- Tome of the Cabal (1/3 Horde)
 					["qg"] = 6251,	-- Strahad Farsan
+					["sourceQuests"] = {
+						2996,	-- Seeking Strahad (Orgrimmar)
+						3001,	-- Seeking Strahad (Undercity)
+					},
+					["coord"] = { 62.6, 35.4, THE_BARRENS },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
 					["lvl"] = 30,
@@ -1273,6 +1416,15 @@ _.Zones =
 					["coord"] = { 44.55, 59.26, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 14,
+				}),
+				q(1839, {	-- Ula'elek and the Brutal Gauntlets
+					["qg"] = 5878,	-- Thun'grim Firegaze
+					["sourceQuest"] = 1838,	-- Brutal Armor
+					["coord"] = { 57.2, 30.2, THE_BARRENS },
+					["maps"] = { DUROTAR },
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["lvl"] = 20,
 				}),
 				q(851, {	-- Verog the Dervish
 					["qg"] = 3389,	-- Regthar Deathgate

@@ -285,6 +285,13 @@ _.Zones =
 						{ "i", 7249, 6 },	-- Charged Rift Gem
 					},
 					["lvl"] = 15,
+					["groups"] = {
+						{
+							["itemID"] = 7249,	-- Charged Rift Gem
+							["questID"] = 1921,	-- Gathering Materials
+							["coord"] = { 35, 27, LOCH_MODAN },
+						},
+					},
 				}),
 				q(5048, {	-- Good Natured Emma
 					["qg"] = 10782,	-- Royal Factor Bathrilor <Stormwind Census>
@@ -342,12 +349,6 @@ _.Zones =
 					["coord"] = { 49.1, 30.3, STORMWIND_CITY },
 					["description"] = "Daros Alexston is located in City Hall at 47.6, 31.4.",
 				});
-				q(4738, {	-- In Search of Menara Voidrender
-					["lvl"] = 31,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 461,	-- Demisette Cloyce
-				}),
 				q(1448, {	-- In Search of The Temple
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
 					["coord"] = { 70.0, 55.0, SWAMP_OF_SORROWS },
@@ -556,6 +557,7 @@ _.Zones =
 				q(1688, {	-- Surena Caledon
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1685,	-- Gakin's Summons
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["maps"] = { ELWYNN_FOREST },
@@ -572,21 +574,32 @@ _.Zones =
 						},
 					},
 				}),
-				q(4488, {	-- Summon Felsteed
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 461,	-- Demisette Cloyce
-				}),
 				q(434, {	-- The Attack!
 					["lvl"] = 16,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 7766,	-- Tyrion
 					["sourceQuest"] = 2746,	-- Items of Some Consequence
 				}),
+				q(1739, {	-- The Binding (Succubus)
+					["qg"] = 6122,	-- Gakin the Darkbinder
+					["sourceQuest"] = 1738,	-- Heartswood
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
+					["races"] = { HUMAN, GNOME },
+					["classes"] = { WARLOCK },
+					["cr"] = 5677,	-- Summoned Succubus
+					["cost"] = {
+						{ "i", 6913, 1 },	-- Heartswood Core
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						recipe(712),	-- Summon Succubus
+						i(22243),	-- Small Soul Pouch
+					},
+				}),
 				q(1689, {	-- The Binding (Voidwalker)
 					["qg"] = 6122,	-- Gakin the Darkbinder
 					["sourceQuest"] = 1688,	-- Surena Caledon
+					["coord"] = { 25.4, 78.4, STORMWIND_CITY },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { WARLOCK },
 					["cr"] = 5676,	-- Summoned Voidwalker

@@ -1022,6 +1022,24 @@ _.Zones =
 						i(17004),	-- Sarah's Guide
 					},
 				}),
+				q(6145, {	-- The Crimson Courier
+					["qg"] = 2425,	-- Varimathras
+					["sourceQuest"] = 6144,	-- The Call to Command
+					["coord"] = { 56.2, 92.6, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 15868, 1 },	-- The Grand Crusader's Command
+					},
+					["lvl"] = 56,
+					["groups"] = {
+						{
+							["itemID"] = 15868,	-- The Grand Crusader's Command
+							["questID"] = 6145,	-- The Crimson Courier
+							["cr"] = 12337,	-- Crimson Courier
+						},
+					},
+				}),
 				un(PHASE_SIX, q(9128, {	-- The Elemental Equation
 					["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 					["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },

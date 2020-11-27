@@ -318,15 +318,23 @@ _.Zones =
 				q(1015, {	-- The New Frontier
 					["qg"] = 2198,	-- Crier Goodman
 					["coord"] = { 54.8, 62.6, STORMWIND_CITY },
-					["maps"] = { DARNASSUS, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						1019,   -- The New Frontier [Ironforge]
+						1047,   -- The New Frontier [Darnassus]
+					},
 					["lvl"] = 54,
 				}),
 				q(1019, {	-- The New Frontier
 					["qg"] = 10877,	-- Courier Hammerfall
 					["coord"] = { 31.6, 67, IRONFORGE },
-					["maps"] = { DARNASSUS, IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						1015,	-- The New Frontier [Stormwind City]
+						1047,   -- The New Frontier [Darnassus]
+					},
 					["lvl"] = 54,
 				}),
 				q(1047, {	-- The New Frontier
@@ -334,6 +342,10 @@ _.Zones =
 					["coord"] = { 36.4, 39.8, DARNASSUS },
 					["maps"] = { DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
+					["altQuests"] = {
+						1015,	-- The New Frontier [Stormwind City]
+						1019,   -- The New Frontier [Ironforge]
+					},
 					["lvl"] = 54,
 				}),
 				q(6761, {	-- The New Frontier
@@ -352,20 +364,32 @@ _.Zones =
 					["qg"] = 10881,	-- Bluff Runner Windstrider
 					["coords"] = { 41.4, 54.2, THUNDER_BLUFF },
 					["maps"] = { THUNDER_BLUFF },
+					["sourceQuests"] = {
+						1018,	-- The New Frontier [Orgrimmar]
+						1004,   -- The New Frontier [Undercity]
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1004, {	-- The New Frontier
 					["qg"] = 10879,	-- Harbinger Balthazad
 					["coords"] = { 68.8, 48.4, UNDERCITY },
-					["maps"] = { THUNDER_BLUFF, UNDERCITY },
+					["maps"] = { UNDERCITY },
+					["sourceQuests"] = {
+						1018,	-- The New Frontier [Orgrimmar]
+						1000,   -- The New Frontier [Thunder Bluff]
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),
 				q(1018, {	-- The New Frontier
 					["qg"] = 10880,	-- Warcaller Gorlach
 					["coords"] = { 46.6, 64.6, ORGRIMMAR },
-					["maps"] = { THUNDER_BLUFF, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
+					["sourceQuests"] = {
+						1000,   -- The New Frontier [Thunder Bluff]
+						1004,   -- The New Frontier [Undercity]
+					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = 54,
 				}),

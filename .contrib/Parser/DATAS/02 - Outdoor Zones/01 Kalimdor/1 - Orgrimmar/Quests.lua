@@ -82,21 +82,26 @@ _.Zones =
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(936, {	-- Assisting Arch Druid Runetotem
+				q(936, {	-- Assisting Arch Druid Runetotem (Orgrimmar)
 					["qg"] = 6929,	-- Innkeeper Gryshka
 					["altQuests"] = {
-						3762,	-- Assisting Arch Druid Runetotem
-						3784, 	-- Assisting Arch Druid Runetotem
+						3762,	-- Assisting Arch Druid Runetotem (Thunder Bluff)
+						3784, 	-- Assisting Arch Druid Runetotem (Undercity)
 					},
 					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 47,
 				}),
 				q(1508, {	-- Blind Cazul
-					["lvl"] = 20,
+					["qg"] = 5909,	-- Cazul
+					["sourceQuests"] = {
+						1507,	-- Devourer of Souls (Orgrimmar)
+						1472,	-- Devourer of Souls (Undercity)
+					},
+					["coord"] = { 47.2, 46.6, ORGRIMMAR },
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["qg"] = 5909,	-- Cazul
+					["lvl"] = 20,
 				}),
 				q(4300, {	-- Bone-Bladed Weapons
 					["lvl"] = 48,
@@ -133,6 +138,9 @@ _.Zones =
 					["maps"] = { DUROTAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						1473,	-- Creature of the Void
+					},
 					["cost"] = {
 						{ "i", 6535, 1 },	-- Tablet of Verga
 					},
@@ -156,8 +164,10 @@ _.Zones =
 					["qg"] = 5875,	-- Dan'rul Bloodeye
 					["races"] = { ORC, UNDEAD },
 					["classes"] = { WARLOCK },
-					["description"] = "Completing this quest (1507) prevents you from completing the quest in Orgrimmar also named Devourer of Souls (1472).",
 					["isBreadcrumb"] = true,
+					["altQuests"] = {
+						1472,	-- Devourer of Souls (Undercity)
+					},
 					["lvl"] = 20,
 				}),
 				q(8410, {	-- Elemental Mastery
@@ -215,12 +225,6 @@ _.Zones =
 					["classes"] = { ROGUE },
 					["sourceQuest"] = 2478,	-- Mission: Possible But Not Probable
 				}),
-				q(4737, {	-- In Search of Menara Voidrender
-					["lvl"] = 31,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 3326,	-- Zevrost
-				}),
 				q(1945, {	-- Laughing Sisters
 					["qg"] = 5885,	-- Deino <Mage Trainer>
 					["sourceQuest"] = 1944,	-- Waters of Xavian
@@ -239,11 +243,12 @@ _.Zones =
 					["qg"] = 7010,	-- Zilzibin Drumlore
 				}),
 				q(1509, {	-- News of Dogran (1/2)
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
 					["qg"] = 5910,	-- Zankaja
 					["sourceQuest"] = 1508,	-- Blind Cazul
+					["coord"] = { 37, 59.6, ORGRIMMAR },
+					["classes"] = { WARLOCK },
+					["races"] = { ORC, UNDEAD },
+					["lvl"] = 20,
 				}),
 				q(1959, {	-- Report to Anastasia
 					["qg"] = 7311,	-- Uthel'nay <Mage Trainer>
@@ -266,13 +271,6 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 42,
 				}),
-				q(2996, {	-- Seeking Strahad
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
-					["isBreadcrumb"] = true,
-					["lvl"] = 30,
-				}),
 				q(1943, {	-- Speak with Deino
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
 					["coord"] = { 85, 10.2, UNDERCITY },
@@ -281,12 +279,6 @@ _.Zones =
 					["classes"] = { MAGE },
 					["isBreadcrumb"] = true,
 					["lvl"] = 26,
-				}),
-				q(3631, {	-- Summon Felsteed
-					["lvl"] = 40,
-					["races"] = HORDE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 3326,	-- Zevrost
 				}),
 				q(235, {	-- The Ashenvale Hunt
 					["qg"] = 10880,	-- Warcaller Gorlach
@@ -297,29 +289,40 @@ _.Zones =
 					},
 					["lvl"] = 20,
 				}),
-				q(1504, {	-- The Binding
+				q(1513, {	-- The Binding (Succubus)
+					["qg"] = 5875,	-- Gan'rul Bloodeye
+					["sourceQuest"] = 1512,	-- Love's Gift
+					["classes"] = { WARLOCK },
+					["races"] = HORDE_ONLY,
+					["cr"] = 5677,	-- Summoned Succubus
+					["cost"] = {
+						{ "i", 6626, 1 },	-- Dogran's Pendant
+					},
+					["altQuests"] = {
+						1474,	-- The Binding (Succubus) [Undercity]
+					},
+					["lvl"] = 20,
+					["groups"] = {
+						recipe(712),	-- Summon Succubus
+						i(22243),	-- Small Soul Pouch
+					},
+				}),
+				q(1504, {	-- The Binding (Voidwalker)
 					["qg"] = 5875,	-- Gan'rul Bloodeye
 					["sourceQuest"] = 1501,	-- Creature of the Void
 					["coord"] = { 48.2, 45.6, ORGRIMMAR },
 					["races"] = { ORC, TROLL, UNDEAD },
 					["classes"] = { WARLOCK },
 					["cr"] = 5676,	-- Summoned Voidwalker
+					["altQuests"] = {
+						1471,	-- The Binding (Voidwalker) [Undercity]
+					},
 					["cost"] = {
 						{ "i", 7464, 1 },	-- Glyphs of Summoning
 					},
 					["lvl"] = 10,
 					["groups"] = {
 						recipe(697),	-- Summon Voidwalker
-					},
-				}),
-				q(1513, {	-- The Binding (Succubus)
-					["lvl"] = 20,
-					["races"] = { ORC, UNDEAD },
-					["classes"] = { WARLOCK },
-					["qg"] = 5875,	-- Gan'rul Bloodeye
-					["sourceQuest"] = 1512,	-- Love's Gift
-					["g"] = {
-						i(22243),	-- Small Soul Pouch
 					},
 				}),
 				q(8151, {	-- The Hunter's Charm
@@ -431,6 +434,7 @@ _.Zones =
 				q(2382, {	-- Wrenix of Ratchet
 					["qg"] = 3402,	-- Zando'zan
 					["sourceQuest"] = 2379,	-- Zando'zan
+					["coord"] = { 42.8, 53, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },
 					["lvl"] = 16,

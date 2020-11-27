@@ -8585,6 +8585,20 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								end
 								s = s .. o.name .. "\\t" .. o.itemName;
 								count = count + 1;
+								--[[
+							elseif o.g then
+								for i,o in ipairs(o.g) do
+									if o.guid then
+										if count > 0 then
+											s = s .. "\n";
+										end
+										s = s .. o.name .. "\\t" .. o.itemName;
+										count = count + 1;
+									else
+										
+									end
+								end
+								]]--
 							end
 						end
 						

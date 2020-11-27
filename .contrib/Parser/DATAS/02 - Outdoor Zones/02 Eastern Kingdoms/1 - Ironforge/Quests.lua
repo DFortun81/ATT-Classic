@@ -330,12 +330,6 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["lvl"] = 26,
 				}),
-				q(4736, {	-- In Search of Menara Voidrender
-					["lvl"] = 31,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 5172,	-- Briarthorn
-				}),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
@@ -497,12 +491,6 @@ _.Zones =
 					["qg"] = 6569,	-- Gnoarn
 					["isBreadcrumb"] = true,
 					["coord"] = { 69.4, 50.8, IRONFORGE },
-				}),
-				q(4487, {	-- Summon Felsteed
-					["lvl"] = 40,
-					["races"] = ALLIANCE_ONLY,
-					["classes"] = { WARLOCK },
-					["qg"] = 5172,	-- Briarthorn
 				}),
 				q(8151, {	-- The Hunter's Charm
 					["qg"] = 5116,	-- Olmin Burningbeard <Hunter Trainer>

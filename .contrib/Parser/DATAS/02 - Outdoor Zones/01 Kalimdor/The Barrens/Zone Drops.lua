@@ -35,6 +35,18 @@ _.Zones =
 				}),
 				i(6663),	-- Recipe: Elixir of Giant Growth
 				i(6661),	-- Recipe: Savory Deviate Delight
+				i(7119, {	-- Twitching Antenna
+					["questID"] = 1824,	-- Trial at the Field of Giants
+					["races"] = HORDE_ONLY,
+					["classes"] = { WARRIOR },
+					["crs"] = {
+						3250,	-- Silithid Creeper
+						3251,	-- Silithid Grub
+						3253,	-- Silithid Harvester
+						3503,	-- Silithid Protector
+						3252,	-- Silithid Swarmer
+					},
+				}),
 				i(5086, {	-- Zhevra Hooves
 					["questID"] = 845,	-- The Zhevra
 					["races"] = HORDE_ONLY,
