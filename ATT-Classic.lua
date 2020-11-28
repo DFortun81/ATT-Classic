@@ -3502,7 +3502,7 @@ app.BaseFaction = {
 			else
 				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
 			end
-			if t.standing == 8 then
+			if t.standing >= t.maxstanding then
 				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
 				return 1;
@@ -3513,6 +3513,8 @@ app.BaseFaction = {
 			return nil;	-- TODO: Add a faction icon?
 		elseif key == "standing" then
 			return select(3, GetFactionInfoByID(t.factionID)) or 4;
+		elseif key == "maxstanding" then
+			return 8;
 		elseif key == "description" then
 			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 		elseif key == "name" then
@@ -7021,7 +7023,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 					app.CreateMap(162, {	-- Naxxramas
 						['icon'] = "Interface\\Icons\\INV_Trinket_Naxxramas03",
 						['description'] = "These are players attuned to Naxxramas.\n\nPeople can whisper you '!naxx' to mark themselves attuned.",
-						['questID'] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
+						['questID'] = 9378,	-- Attunement [HIDDEN QUEST TRIGGER]
 						['visible'] = true,
 						["isRaid"] = true,
 						['back'] = 0.5,
@@ -7034,7 +7036,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 					}),
 				},
 			};
-			selectedInstance = instances.options[2];
+			selectedInstance = instances.options[5];
 			selectedQuest = app.CreateQuest(971);
 			instanceSelector = app.CreateMap(1455, {
 				['visible'] = true,
@@ -7061,27 +7063,45 @@ app:GetWindow("Attuned", UIParent, function(self)
 					wipe(data.g);
 					
 					-- Assign the Selected Instance.
+					instanceSelector.locks = nil;
+					data.questID = selectedInstance.questID;
 					instanceSelector.mapID = selectedInstance.mapID;
 					instanceSelector.icon = selectedInstance.icon;
 					instanceSelector.text = selectedInstance.text;
 					instanceSelector.description = selectedInstance.description;
 					instanceSelector.questID = selectedInstance.questID;
-					selectedQuest.questID = selectedInstance.questID;
-					data.questID = selectedInstance.questID;
 					table.insert(data.g, data.queryGroupMembers);
 					table.insert(data.g, data.queryGuildMembers);
 					table.insert(data.g, instanceSelector);
 					table.insert(data.g, selectedQuest);
-					local searchResults = SearchForField("questID", data.questID);
-					if searchResults and #searchResults > 0 then
-						wipe(selectedQuest);
-						for i,questData in ipairs(searchResults) do
-							for key,value in pairs(questData) do
-								selectedQuest[key] = value;
+					if data.questID == 9378 then	-- Naxx Attunement needs to be handled different, display-wise.
+						-- Based on current Argent Dawn rep, show a different quest. (still querying for the hidden attunement quest)
+						local currentStanding = app.CreateFaction(529).standing or 6;
+						local searchResults = SearchForField("questID", (currentStanding == 8 and 9123) or (currentStanding == 7 and 9122) or 9121);
+						if searchResults and #searchResults > 0 then
+							wipe(selectedQuest);
+							for i,questData in ipairs(searchResults) do
+								for key,value in pairs(questData) do
+									selectedQuest[key] = value;
+								end
 							end
+							selectedQuest.OnUpdate = app.AlwaysShowUpdate;
 						end
-						selectedQuest.OnUpdate = app.AlwaysShowUpdate;
+						selectedQuest.text = "The Dread Citadel - Naxxramas";
+					else
+						local searchResults = SearchForField("questID", data.questID);
+						if searchResults and #searchResults > 0 then
+							wipe(selectedQuest);
+							for i,questData in ipairs(searchResults) do
+								for key,value in pairs(questData) do
+									selectedQuest[key] = value;
+								end
+							end
+							selectedQuest.OnUpdate = app.AlwaysShowUpdate;
+						end
 					end
+					selectedQuest.questID = selectedInstance.questID;
+					
 					
 					local nameToGUID = {};
 					local groupMembers = {};
