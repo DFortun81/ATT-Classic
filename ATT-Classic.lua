@@ -7077,12 +7077,15 @@ app:GetWindow("Attuned", UIParent, function(self)
 					if data.questID == 9378 then	-- Naxx Attunement needs to be handled different, display-wise.
 						-- Based on current Argent Dawn rep, show a different quest. (still querying for the hidden attunement quest)
 						local currentStanding = app.CreateFaction(529).standing or 6;
-						local searchResults = SearchForField("questID", (currentStanding == 8 and 9123) or (currentStanding == 7 and 9122) or 9121);
+						local specificQuestID = (currentStanding == 8 and 9123) or (currentStanding == 7 and 9122) or 9121;
+						local searchResults = SearchForField("questID", specificQuestID);
 						if searchResults and #searchResults > 0 then
 							wipe(selectedQuest);
 							for i,questData in ipairs(searchResults) do
-								for key,value in pairs(questData) do
-									selectedQuest[key] = value;
+								if questData.questID == specificQuestID then
+									for key,value in pairs(questData) do
+										selectedQuest[key] = value;
+									end
 								end
 							end
 							selectedQuest.OnUpdate = app.AlwaysShowUpdate;
