@@ -811,6 +811,7 @@ _.Instances = {
 				un(PHASE_SIX, {
 					["itemID"] = 24102,		-- Manual of Eviscerate IX
 					["spellID"] = 31016,	-- Eviscerate IX
+					["classes"] = { ROGUE },
 					["rank"] = 9,
 					["cr"] = 10318,	-- Blackhand Assassin <Blackhand Legion>
 				}),
@@ -1105,6 +1106,7 @@ _.Instances = {
 						un(PHASE_SIX, {
 							["itemID"] = 23320,		-- Tablet of Flame Shock VI
 							["spellID"] = 29228,	-- Flame Shock VI
+							["classes"] = { SHAMAN },
 							["rank"] = 6,
 						}),
 					}),
@@ -1204,6 +1206,7 @@ _.Instances = {
 						un(PHASE_SIX, {
 							["itemID"] = 24101,		-- Book of Ferocious Bite V
 							["spellID"] = 31018,	-- Ferocious Bite V
+							["classes"] = { DRUID },
 							["rank"] = 5,
 						}),
 						i(12709),	-- Finkle's Skinner

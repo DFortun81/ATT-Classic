@@ -462,6 +462,7 @@ _.Instances = {
 						},
 						un(PHASE_SIX, {
 							["itemID"] = 22897,	-- Tome of Conjure Food VII
+							["classes"] = { MAGE },
 							["spellID"] = 28612,	-- Conjure Food VII
 							["rank"] = 7,
 						}),
