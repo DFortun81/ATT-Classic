@@ -2816,6 +2816,13 @@ local SoftReserveUnitOnClick = function(self, button)
 				elseif IsGUIDInGroup(guid) then
 					app.print("You must be the Master Looter to do that.");
 					return true;
+				else
+					-- You can do whatever you want to non-group members.
+					app:ShowPopupDialog((self.ref.text or RETRIEVING_DATA) .. "\n \nAre you sure you want to delete this?",
+					function()
+						app:UpdateSoftReserveInternal(guid, nil);
+						app:RefreshSoftReserveWindow();
+					end);
 				end
 			end
 		elseif button == "LeftButton" then
