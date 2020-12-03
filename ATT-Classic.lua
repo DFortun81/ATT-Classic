@@ -6951,7 +6951,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 		if not self.initialized then
 			self.initialized = true;
 			
-			-- Soft Reserves
+			-- Attunements
 			local instances, instanceSelector, selectedInstance, attunements;
 			instances = {
 				['text'] = 'Instances',
@@ -7217,7 +7217,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 					['g'] = {},
 					['OnClick'] = function(row, button)
 						local message = "?\tq";
-						for i,instance in ipairs(instances) do
+						for i,instance in ipairs(instances.options) do
 							message = message .. "\t" .. instance.questID;
 						end
 						SendGuildMessage(message);
