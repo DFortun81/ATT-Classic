@@ -2826,7 +2826,7 @@ local SoftReserveUnitOnClick = function(self, button)
 				end
 			end
 		elseif button == "LeftButton" then
-			if IsShiftKeyDown() then
+			if IsShiftKeyDown() or IsControlKeyDown() then
 				return false;
 			end
 			if app.IsMasterLooter() then
