@@ -2826,6 +2826,9 @@ local SoftReserveUnitOnClick = function(self, button)
 				end
 			end
 		elseif button == "LeftButton" then
+			if IsShiftKeyDown() then
+				return false;
+			end
 			if app.IsMasterLooter() then
 				-- Master Looters can do whatever they want.
 				if self.ref.itemID then
