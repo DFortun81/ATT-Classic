@@ -138,9 +138,9 @@ _.Instances = {
 				i(10762),	-- Robes of the Lich
 				i(10765),	-- Bonefingers
 			}),
-			un(PHASE_SIX, n(14686, {	-- Lady Falther'ess
-				["description"] = "Only available during the Scourge Invasion.",
-				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+			un(PHASE_SIX_SCOURGE_INVASION, n(14686, {	-- Lady Falther'ess
+				["description"] = "Located inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION }, {
 					i(23177),	-- Lady Falther'ess' Finger
 					i(23178),	-- Mantle of Lady Falther'ess
 				}),

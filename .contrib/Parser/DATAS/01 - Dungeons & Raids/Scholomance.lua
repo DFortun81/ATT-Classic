@@ -502,9 +502,9 @@ _.Instances = {
 					i(13967),	-- Windreaver Greaves
 				},
 			}),
-			un(PHASE_SIX, n(14695, {	-- Lord Blackwood
-				["description"] = "Only available during the Scourge Invasion.",
-				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+			un(PHASE_SIX_SCOURGE_INVASION, n(14695, {	-- Lord Blackwood
+				["description"] = "Send Crieve information on exactly where in Scholomance this guy spawns please.",
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION }, {
 					i(23156),	-- Blackwood's Thigh
 					i(23132),	-- Lord Blackwood's Blade
 					i(23139),	-- Lord Blackwood's Buckler

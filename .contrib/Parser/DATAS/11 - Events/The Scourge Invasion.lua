@@ -5,11 +5,10 @@
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION =    i(13444);	-- Major Mana Potion
 
-_.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
+_.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 {
 	n(-540, {	-- The Scourge Invasion
 		["description"] = "The Scourge Invasion was a world event in Patch 1.11 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
-		-- ["maps"] = { },	-- Eastern Plaguelands (eventually)
 		["groups"] = {
 			n(QUESTS, {
 				q(9094, {	-- Argent Dawn Gloves
@@ -180,7 +179,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9262, {	-- Investigate the Scourge of Darnassus
 					["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
 					["coord"] = { 77.7, 42.7, DARNASSUS },
-					-- ["maps"] = { DARNASSUS },
+					["maps"] = { DARNASSUS },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -195,7 +194,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9261, {	-- Investigate the Scourge of Ironforge
 					["qg"] = 16484,	-- Lieutenant Nevell <The Argent Dawn>
 					["coord"] = { 53.2, 35.0, DUN_MOGORH },
-					-- ["maps"] = { IRONFORGE },
+					["maps"] = { IRONFORGE },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -210,7 +209,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9263, {	-- Investigate the Scourge of Orgrimmar
 					["qg"] = 16493,	-- Lieutenant Dagel <The Argent Dawn>
 					["coord"] = { 51.7, 83.3, ORGRIMMAR },
-					-- ["maps"] = { ORGRIMMAR },
+					["maps"] = { ORGRIMMAR },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -225,7 +224,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9260, {	-- Investigate the Scourge of Stormwind
 					["qg"] = 16478,	-- Lieutenant Orrin <The Argent Dawn>
 					["coord"] = { 63.8, 75.5, STORMWIND_CITY },
-					-- ["maps"] = { STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -240,7 +239,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9265, {	-- Investigate the Scourge of the Undercity
 					["qg"] = 16494,	-- Lieutenant Rukag <The Argent Dawn>
 					["coord"] = { 66.2, 21.4, UNDERCITY },
-					-- ["maps"] = { UNDERCITY },
+					["maps"] = { UNDERCITY },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -255,7 +254,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 				q(9264, {	-- Investigate the Scourge of Thunder Bluff
 					["qg"] = 16490,	-- Lieutenant Lisande <The Argent Dawn>
 					["coord"] = { 33.1, 59.9, THUNDER_BLUFF },
-					-- ["maps"] = { THUNDER_BLUFF },
+					["maps"] = { THUNDER_BLUFF },
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -275,9 +274,33 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX },
 					["lvl"] = 45,
 				}),
 				q(9154, {	-- Light's Hope Chapel
-					["qg"] = 16241,	-- Argent Recruiter
-					-- ["coords"] = { },	-- Capital Cities
-					-- ["maps"] = { },	-- Capital Cities
+					["qgs"] = {
+						16241,	-- Argent Recruiter <The Argent Dawn>
+						16255,	-- Argent Scout <The Argent Dawn>
+					},
+					["coords"] = {
+						{ 64.5, 44.2, DARNASSUS },
+						{ 77.3, 42.8, DARNASSUS },
+						{ 53.1, 35.0, DUN_MOGORH },
+						{ 35.3, 68.7, IRONFORGE },
+						{ 53.1, 73.6, ORGRIMMAR },
+						{ 51.7, 83.6, ORGRIMMAR },
+						{ 55.0, 62.0, STORMWIND_CITY },
+						{ 64.1, 75.0, STORMWIND_CITY },
+						{ 32.9, 60.1, THUNDER_BLUFF },
+						{ 43.5, 53.2, THUNDER_BLUFF },
+						{ 49.5, 32.1, UNDERCITY },
+						{ 65.9, 21.4, UNDERCITY },
+					},
+					["maps"] = {
+						DARNASSUS,
+						DUN_MOGORH,
+						IRONFORGE,
+						ORGRIMMAR,
+						STORMWIND_CITY,
+						THUNDER_BLUFF,
+						UNDERCITY,
+					},
 					["cost"] = {
 						{ "i", 22595, 1 },	-- Call to Arms Announcement
 					},

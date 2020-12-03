@@ -180,9 +180,9 @@ _.Instances = {
 				i(6323),	-- Baron's Scepter
 				i(6321),	-- Silverlaine's Family Seal
 			}),
-			un(PHASE_SIX, n(14682, {	-- Sever
-				["description"] = "Only available during the Scourge Invasion.",
-				["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+			un(PHASE_SIX_SCOURGE_INVASION, n(14682, {	-- Sever
+				["description"] = "He can be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+				["groups"] = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION }, {
 					i(23171),	-- The Axe of Severing
 					i(23173),	-- Abomination Skin Leggings
 				}),

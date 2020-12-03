@@ -927,9 +927,9 @@ _.Instances = {
 						i(18378),	-- Silvermoon Leggings
 						i(18395),	-- Emerald Flame Ring
 					}),
-					un(PHASE_SIX, n(14690, {	-- Revanchion
-						["description"] = "This NPC was only available during the pre-WotLK Scourge Invasion.",
-						["groups"] = bubbleDown({ ["u"] = PHASE_SIX }, {
+					un(PHASE_SIX_SCOURGE_INVASION, n(14690, {	-- Revanchion
+						["description"] = "Located in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
+						["groups"] = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION }, {
 							i(23127),	-- Cloak of Revanchion
 							i(23129),	-- Bracers of Mending
 							i(23128),	-- The Shadow's Grasp
