@@ -7138,25 +7138,59 @@ app:GetWindow("Attuned", UIParent, function(self)
 					end
 					
 					-- Insert Guild Members
-					local guildMembers = data.guildMembersHeader.g;
-					wipe(guildMembers);
-					local count = GetNumGuildMembers();
-					if count > 0 then
-						for guildIndex = 1, count, 1 do
-							local guid = select(17, GetGuildRosterInfo(guildIndex));
-							if guid then
-								local unit = app.CreateQuestUnit(guid);
-								local name = unit.name;
-								if name then nameToGUID[name] = guid; end
-								if not (UnitInParty(name) or UnitInRaid(name)) then
-									table.insert(guildMembers, unit);
+					local guildRanks = data.guildMembersHeader.g;
+					if #guildRanks < 1 then
+						local numRanks = GuildControlGetNumRanks();
+						if numRanks > 0 then
+							local tempRanks = {};
+							for rankIndex = 1, numRanks, 1 do
+								table.insert(tempRanks, {
+									["text"] = GuildControlGetRankName(rankIndex),
+									["icon"] = format("%s%02d","Interface\\PvPRankBadges\\PvPRank", (15 - rankIndex)),
+									["OnUpdate"] = app.AlwaysShowUpdate,
+									["visible"] = true,
+									["g"] = {}
+								});
+							end
+							for rankIndex = 1, min(#tempRanks, #guildRanks), 1 do
+								if guildRanks[rankIndex].expanded then
+									tempRanks[rankIndex].expanded = true;
+								end
+							end
+							data.guildMembersHeader.g = tempRanks;
+							guildRanks = tempRanks;
+							
+							local debugMode = app.Settings:Get("DebugMode");
+							local count = GetNumGuildMembers();
+							if count > 0 then
+								for guildIndex = 1, count, 1 do
+									local name, _, rankIndex, level, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
+									if guid and level > 54 then
+										local yearsOffline, monthsOffline, daysOffline, hoursOffline = GetGuildRosterLastOnline(guildIndex);
+										if (((yearsOffline or 0) * 12) + (monthsOffline or 0)) < 3 or debugMode then
+											local unit = app.CreateQuestUnit(guid);
+											local name = unit.name;
+											if name then nameToGUID[name] = guid; end
+											local a = guildRanks[rankIndex + 1];
+											if a then table.insert(a.g, unit); end
+										end
+									end
+								end
+								
+								local any = false;
+								for rankIndex = 1, numRanks, 1 do
+									if #guildRanks[rankIndex].g > 0 then
+										table.sort(guildRanks[rankIndex].g, data.Sort);
+										any = true;
+									end
+								end
+								if any then
+									table.insert(data.g, data.guildMembersHeader);
 								end
 							end
 						end
-						if #guildMembers > 0 then
-							table.sort(guildMembers, data.Sort);
-							table.insert(data.g, data.guildMembersHeader);
-						end
+					else
+						table.insert(data.g, data.guildMembersHeader);
 					end
 					
 					-- Process Addon Messages
@@ -7184,8 +7218,9 @@ app:GetWindow("Attuned", UIParent, function(self)
 				['guildMembersHeader'] = {
 					['text'] = "Guild Members",
 					['icon'] = "Interface\\Icons\\Ability_Warrior_BattleShout",
-					['description'] = "These players are in your guild.",
+					['description'] = "These active characters are in your guild.\n\nOnly showing level 55+. (2 months)",
 					['visible'] = true,
+					['dirty'] = true,
 					['g'] = {},
 				},
 				['queryGroupMembers'] = {
@@ -7237,10 +7272,12 @@ app:GetWindow("Attuned", UIParent, function(self)
 			end
 			
 			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:SetScript("OnEvent", function(self, e, ...)
+				self.dirty = true;
+				self:Update();
+			end);
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
 			self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
-			self:RegisterEvent("GUILD_ROSTER_UPDATE");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
 			self:Reset();
 		end
@@ -8552,6 +8589,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 	if self:IsVisible() then
 		if not self.initialized then
 			self.initialized = true;
+			self.dirty = true;
 			
 			-- Soft Reserves
 			local softReserves = {
@@ -8562,9 +8600,11 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['expanded'] = true,
 				['back'] = 1,
 				['OnUpdate'] = function(data)
+					if not self.dirty then return nil; end
+					self.dirty = nil;
+					
 					local g = {};
 					local groupMembers = {};
-					groupMembers[app.GUID] = true;	-- Prevent the player's 
 					local count = GetNumGroupMembers();
 					if count > 0 then
 						for raidIndex = 1, 40, 1 do
@@ -8595,22 +8635,70 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					table.insert(g, 1, data.exportSoftReserves);
 					data.g = g;
 					
-					-- Show non-group members.
-					local nonGroupMembers = {};
-					local softReserves = GetDataMember("SoftReserves");
-					for guid,reserve in pairs(softReserves) do
-						if not groupMembers[guid] then
-							groupMembers[guid] = true;
-							table.insert(nonGroupMembers, app.CreateSoftReserveUnit(guid));
+					-- Insert Guild Members
+					local guildRanks = data.guildMembersHeader.g;
+					if #guildRanks < 1 then
+						local numRanks = GuildControlGetNumRanks();
+						if numRanks > 0 then
+							local tempRanks = {};
+							for rankIndex = 1, numRanks, 1 do
+								table.insert(tempRanks, {
+									["text"] = GuildControlGetRankName(rankIndex),
+									["icon"] = format("%s%02d","Interface\\PvPRankBadges\\PvPRank", (15 - rankIndex)),
+									["OnUpdate"] = app.AlwaysShowUpdate,
+									["visible"] = true,
+									["g"] = {}
+								});
+							end
+							for rankIndex = 1, min(#tempRanks, #guildRanks), 1 do
+								if guildRanks[rankIndex].expanded then
+									tempRanks[rankIndex].expanded = true;
+								end
+							end
+							data.guildMembersHeader.g = tempRanks;
+							guildRanks = tempRanks;
+							
+							local debugMode = app.Settings:Get("DebugMode");
+							local count = GetNumGuildMembers();
+							if count > 0 then
+								for guildIndex = 1, count, 1 do
+									local _, _, rankIndex, _, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
+									if guid then
+										if not groupMembers[guid] then
+											groupMembers[guid] = true;
+											local yearsOffline, monthsOffline, daysOffline, hoursOffline = GetGuildRosterLastOnline(guildIndex);
+											if (((yearsOffline or 0) * 12) + (monthsOffline or 0)) < 3 or debugMode then
+												local a = guildRanks[rankIndex + 1];
+												if a then table.insert(a.g, app.CreateSoftReserveUnit(guid)); end
+											end
+										end
+									end
+								end
+								
+								local any = false;
+								for rankIndex = 1, numRanks, 1 do
+									if #guildRanks[rankIndex].g > 0 then
+										table.sort(guildRanks[rankIndex].g, data.Sort);
+										any = true;
+									end
+								end
+								if any then
+									table.insert(data.g, data.guildMembersHeader);
+								end
+							end
 						end
-					end
-					if #nonGroupMembers > 0 then
-						data.nonGroupMembersHeader.g = nonGroupMembers;
-						table.sort(nonGroupMembers, data.Sort);
-						table.insert(data.g, data.nonGroupMembersHeader);
+					else
+						table.insert(data.g, data.guildMembersHeader);
 					end
 				end,
 				['g'] = {},
+				['guildMembersHeader'] = {
+					['text'] = "Guild Members",
+					['icon'] = "Interface\\Icons\\Ability_Warrior_BattleShout",
+					['description'] = "These active characters are in your guild.\n\nOnly showing characters logged in the last 2 months.",
+					['visible'] = true,
+					['g'] = {},
+				},
 				['exportSoftReserves'] = {
 					['text'] = "Export Soft Reserves",
 					['icon'] = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
@@ -8858,7 +8946,10 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 			end
 			
 			-- Setup Event Handlers and register for events
-			self:SetScript("OnEvent", function(self, e, ...) self:Update(); end);
+			self:SetScript("OnEvent", function(self, e, ...)
+				self.dirty = true;
+				self:Update();
+			end);
 			self:RegisterEvent("CHAT_MSG_SYSTEM");
 			self:RegisterEvent("GROUP_ROSTER_UPDATE");
 			self:RegisterEvent("PARTY_LOOT_METHOD_CHANGED");
