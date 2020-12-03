@@ -150,7 +150,8 @@ local UnobtainableSettingsBase = {
 		[14] = true,	-- Phase 4
 		[15] = true,	-- Phase 5
 		[15.1] = true,	-- AQ War Effort
-		[16] = false,	-- Phase 6
+		[16] = true,	-- Phase 6
+		[1504] = true,	-- Silithyst
 		
 		-- Seasonal Filters
 		[1000] = false,	-- Brewfest
