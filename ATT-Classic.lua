@@ -7191,12 +7191,16 @@ app:GetWindow("Attuned", UIParent, function(self)
 				['queryGroupMembers'] = {
 					['text'] = "Query Group Members",
 					['icon'] = "Interface\\Icons\\INV_Wand_05",
-					['description'] = "Press this button to send an addon message to your Group Members if they are attuned for this instance.",
+					['description'] = "Press this button to send an addon message to your Group Members if they are attuned for all of these instances.",
 					['visible'] = true,
 					['back'] = 0.5,
 					['g'] = {},
 					['OnClick'] = function(row, button)
-						SendGroupMessage("?\tq\t" .. selectedQuest.questID);
+						local message = "?\tq";
+						for i,instance in ipairs(instances) do
+							message = message .. "\t" .. instance.questID;
+						end
+						SendGroupMessage(message);
 						self:Reset();
 						return true;
 					end,
@@ -7207,12 +7211,16 @@ app:GetWindow("Attuned", UIParent, function(self)
 				['queryGuildMembers'] = {
 					['text'] = "Query Guild Members",
 					['icon'] = "Interface\\Icons\\INV_Wand_04",
-					['description'] = "Press this button to send an addon message to your Guild Members if they are attuned for this instance.",
+					['description'] = "Press this button to send an addon message to your Guild Members if they are attuned for all of these instances.",
 					['visible'] = true,
 					['back'] = 0.5,
 					['g'] = {},
 					['OnClick'] = function(row, button)
-						SendGuildMessage("?\tq\t" .. selectedQuest.questID);
+						local message = "?\tq";
+						for i,instance in ipairs(instances) do
+							message = message .. "\t" .. instance.questID;
+						end
+						SendGuildMessage(message);
 						self:Reset();
 						return true;
 					end,
