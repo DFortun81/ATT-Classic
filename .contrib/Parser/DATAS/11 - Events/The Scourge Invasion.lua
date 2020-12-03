@@ -179,7 +179,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9262, {	-- Investigate the Scourge of Darnassus
 					["qg"] = 16495,	-- Lieutenant Beitha <The Argent Dawn>
 					["coord"] = { 77.7, 42.7, DARNASSUS },
-					["maps"] = { DARNASSUS },
+					["maps"] = { DARNASSUS, TELDRASSIL },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -193,8 +194,9 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				}),
 				q(9261, {	-- Investigate the Scourge of Ironforge
 					["qg"] = 16484,	-- Lieutenant Nevell <The Argent Dawn>
-					["coord"] = { 53.2, 35.0, DUN_MOGORH },
-					["maps"] = { IRONFORGE },
+					["coord"] = { 53.2, 35.0, DUN_MOROGH },
+					["maps"] = { DUN_MOROGH, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -209,7 +211,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9263, {	-- Investigate the Scourge of Orgrimmar
 					["qg"] = 16493,	-- Lieutenant Dagel <The Argent Dawn>
 					["coord"] = { 51.7, 83.3, ORGRIMMAR },
-					["maps"] = { ORGRIMMAR },
+					["maps"] = { DUROTAR, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -224,7 +227,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9260, {	-- Investigate the Scourge of Stormwind
 					["qg"] = 16478,	-- Lieutenant Orrin <The Argent Dawn>
 					["coord"] = { 63.8, 75.5, STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
+					["maps"] = { ELWYNN_FOREST, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -239,7 +243,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9265, {	-- Investigate the Scourge of the Undercity
 					["qg"] = 16494,	-- Lieutenant Rukag <The Argent Dawn>
 					["coord"] = { 66.2, 21.4, UNDERCITY },
-					["maps"] = { UNDERCITY },
+					["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -254,7 +259,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9264, {	-- Investigate the Scourge of Thunder Bluff
 					["qg"] = 16490,	-- Lieutenant Lisande <The Argent Dawn>
 					["coord"] = { 33.1, 59.9, THUNDER_BLUFF },
-					["maps"] = { THUNDER_BLUFF },
+					["maps"] = { MULGORE, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -411,7 +417,6 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				}),
 				q(9085, {	-- Shadows of Doom
 					["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
-					["sourceQuest"] = 9153,	-- Under the Shadow
 					["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
 					["cr"] = 16143,	-- Shadow of Doom
 					["lvl"] = 50,
@@ -464,8 +469,9 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9247, {	-- The Keeper's Call
 					["qg"] = 16281,	-- Keeper of the Rolls <The Argent Dawn>
 					["coord"] = { 81.1, 60.5, EASTERN_PLAGUELANDS },
+					["description"] = "You should receive this in the mail at level 60.",
 					["cost"] = {
-						{ "i", 22723, 1 },	-- A Letter from the Keeper of the Rolls [Not sure where you get this from, to be honest.]
+						{ "i", 22723, 1 },	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 					},
 					["lvl"] = 60,
 					["groups"] = {

@@ -862,9 +862,7 @@ _.Zones =
 				}),
 				un(PHASE_SIX, q(9136, {	-- Savage Flora
 					["qg"] = 16135,	-- Rayne
-					["sourceQuest"] = 9137,	-- Savage Fronds
 					["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22529, 30 },	-- Savage Frond
 					},
@@ -876,7 +874,9 @@ _.Zones =
 				})),
 				un(PHASE_SIX, q(9137, {	-- Savage Fronds
 					["qg"] = 16135,	-- Rayne
+					["sourceQuest"] = 9136,	-- Savage Flora
 					["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22529, 30 },	-- Savage Frond
 					},
