@@ -158,6 +158,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["qg"] = 16431,	-- Cracked Necrotic Crystal
 					["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 22949, 1 },	-- Cracked Necrotic Crystal
 					},
@@ -183,6 +184,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				}),
 				q(9310, {	-- Faint Necrotic Crystal
 					["qg"] = 16531,	-- Faint Necrotic Crystal
+					["description"] = "If you hear the yell across the city that they've invaded the Sewers, head for the canals between the Sewers and the Royal Quarter, that is where the elite abomination will be.\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 					["maps"] = { TIRISFAL_GLADES, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -516,41 +518,26 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					},
 				}),
 			}),
-			n(COMMON_BOSS_DROPS, {
-				["crs"] = {
-					16380,	-- Bone Witch
-					16383,	-- Flameshocker
-					14697,	-- Lumbering Horror
-					16143,	-- Shadow of Doom
-				},
+			n(16143, {	-- Shadow of Doom
+				["description"] = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
+				["cost"] = { "i", 22484, 8 },	-- Necrotic Rune
 				["groups"] = {
 					i(22484),	-- Necrotic Rune
-					i(23084),	-- Gloves of Undead Cleansing
-					i(23085),	-- Robe of Undead Cleansing
-					i(23091),	-- Bracers of Undead Cleansing
-					i(23081),	-- Handwraps of Undead Slaying
-					i(23089),	-- Tunic of Undead Slaying
-					i(23093),	-- Wristwraps of Undead Slaying
-					i(23082),	-- Handguards of Undead Slaying
-					i(23088),	-- Chestguard of Undead Slaying
-					i(23092),	-- Wristguards of Undead Slaying
-					i(23078),	-- Gauntlets of Undead Slaying
 					i(23087),	-- Breastplate of Undead Slaying
-					i(23090),	-- Bracers of Undead Slaying
+					i(23088),	-- Chestguard of Undead Slaying
+					i(23085),	-- Robe of Undead Cleansing
+					i(23089),	-- Tunic of Undead Slaying
 				},
 			}),
 			n(ZONEDROPS, {
 				["crs"] = {
-					16380,	-- Bone Witch
 					16383,	-- Flameshocker
-					14697,	-- Lumbering Horror
-					16143,	-- Shadow of Doom
 					16141,	-- Ghoul Berserker
 					16299,	-- Skeletal Shocktrooper
 					16298,	-- Spectral Soldier
-					16379,	-- Spirit of the Damned
 				},
 				["groups"] = {
+					i(22484),	-- Necrotic Rune
 					{
 						["itemID"] = 22970,	-- A Bloodstained Envelope
 						["questID"] = 9301,	-- Envelope from the Front
@@ -575,6 +562,19 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 						["itemID"] = 22977,	-- A Torn Letter
 						["questID"] = 9295,	-- Letter from the Front
 					},
+				},
+			}),
+			n(RARES, {
+				["crs"] = {
+					16380,	-- Bone Witch
+					14697,	-- Lumbering Horror
+					16143,	-- Shadow of Doom
+				},
+				["groups"] = {
+					i(23091),	-- Bracers of Undead Cleansing
+					i(23093),	-- Wristwraps of Undead Slaying
+					i(23092),	-- Wristguards of Undead Slaying
+					i(23090),	-- Bracers of Undead Slaying
 				},
 			}),
 		},
