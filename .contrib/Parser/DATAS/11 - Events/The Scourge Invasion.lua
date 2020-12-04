@@ -9,11 +9,20 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 {
 	n(-540, {	-- The Scourge Invasion
 		["description"] = "The Scourge Invasion was a world event in Patch 1.11 that heralded the opening of Naxxramas, the citadel of the dreaded Kel'Thuzad.\n\nSeveral regions of Azeroth came under attack by Scourge forces. Members of the Argent Dawn organized a worldwide counter to the Scourge invasion, keeping an eye out for any necropolis sightings and passing on their information to all adventurers willing to aid them in their struggle.\n\nWith each victory against the Scourge, the defense grows stronger. As more and more invasion attempts are beaten back by the defenders, the Argent Dawn will be able to bestow increasingly more powerful blessings upon those fighting the invaders. If the mortal races focus on clearing the Scourge camps all over the world that have sprung up beneath each necropolis, perhaps the invasion can effectively be halted or even repelled. Those who wish to take up arms against the undead invaders should speak with a representative of the Argent Dawn to learn what regions need help and how the defense is holding up.",
+		["maps"] = {
+			AZSHARA,
+			BLASTED_LANDS,
+			BURNING_STEPPES,
+			EASTERN_PLAGUELANDS,
+			TANARIS,
+			WINTERSPRING,
+		},
 		["groups"] = {
 			n(QUESTS, {
 				q(9094, {	-- Argent Dawn Gloves
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.3, 62.8, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -37,6 +46,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9333, {	-- Argent Dawn Gloves
 					["qg"] = 16787,	-- Argent Outfitter <The Argent Dawn>
 					["sourceQuest"] = 9094,	-- Argent Dawn Gloves
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.3, 62.8, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -61,6 +71,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9334, {	-- Blessed Wizard Oil
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -81,6 +92,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9318, {	-- Blessed Wizard Oil
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9334,	-- Blessed Wizard Oil
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -102,6 +114,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9335, {	-- Consecrated Sharpening Stones
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -122,6 +135,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9317, {	-- Consecrated Sharpening Stones
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9335,	-- Consecrated Sharpening Stones
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -142,6 +156,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				}),
 				q(9292, {	-- Cracked Necrotic Crystal
 					["qg"] = 16431,	-- Cracked Necrotic Crystal
+					["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
+					["maps"] = { STORMWIND_CITY },
 					["cost"] = {
 						{ "i", 22949, 1 },	-- Cracked Necrotic Crystal
 					},
@@ -167,6 +183,8 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				}),
 				q(9310, {	-- Faint Necrotic Crystal
 					["qg"] = 16531,	-- Faint Necrotic Crystal
+					["maps"] = { TIRISFAL_GLADES, UNDERCITY },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 22950, 1 },	-- Faint Necrotic Crystal
 					},
@@ -315,6 +333,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9336, {	-- Major Healing Potion
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -335,6 +354,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9321, {	-- Major Healing Potion
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9336,	-- Major Healing Potion
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -356,6 +376,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9337, {	-- Major Mana Potion
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -376,6 +397,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9320, {	-- Major Mana Potion
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9337,	-- Major Mana Potion
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -428,6 +450,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9343, {	-- Tabard of the Argent Dawn
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9153,	-- Under the Shadow
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -448,6 +471,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 				q(9341, {	-- Tabard of the Argent Dawn
 					["qg"] = 16786,	-- Argent Quartermaster <The Argent Dawn>
 					["sourceQuest"] = 9343,	-- Tabard of the Argent Dawn
+					["repeatable"] = true,
 					["coords"] = {
 						{ 54.7, 62.2, STORMWIND_CITY },
 						{ 34.0, 66.4, IRONFORGE },
@@ -515,8 +539,18 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					i(23090),	-- Bracers of Undead Slaying
 				},
 			}),
-			n(RARES, {
-				n(16383, {	-- Flameshocker
+			n(ZONEDROPS, {
+				["crs"] = {
+					16380,	-- Bone Witch
+					16383,	-- Flameshocker
+					14697,	-- Lumbering Horror
+					16143,	-- Shadow of Doom
+					16141,	-- Ghoul Berserker
+					16299,	-- Skeletal Shocktrooper
+					16298,	-- Spectral Soldier
+					16379,	-- Spirit of the Damned
+				},
+				["groups"] = {
 					{
 						["itemID"] = 22970,	-- A Bloodstained Envelope
 						["questID"] = 9301,	-- Envelope from the Front
@@ -541,7 +575,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 						["itemID"] = 22977,	-- A Torn Letter
 						["questID"] = 9295,	-- Letter from the Front
 					},
-				}),
+				},
 			}),
 		},
 	}),
