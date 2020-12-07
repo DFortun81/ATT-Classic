@@ -577,6 +577,17 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					i(23090),	-- Bracers of Undead Slaying
 				},
 			}),
+			n(REWARDS, {
+				["description"] = "These are mailed to you about 48 hours after you turn in the random drop letter quests and there is one unique flavor message per letter. I'm not sure if speaking to the npcs mentioned in the responses leads to more flavor text, but someone should probably look into that.",
+				["groups"] = {
+					i(23008),	-- Sealed Research Report
+					i(23010),	-- Sealed Research Report
+					i(23011),	-- Sealed Research Report
+					i(23012),	-- Sealed Research Report
+					i(23013),	-- Sealed Research Report
+					i(23016),	-- Sealed Research Report
+				},
+			}),
 		},
 	}),
 });

@@ -8605,6 +8605,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					
 					local g = {};
 					local groupMembers = {};
+					groupMembers[app.GUID] = true;
 					local count = GetNumGroupMembers();
 					if count > 0 then
 						for raidIndex = 1, 40, 1 do

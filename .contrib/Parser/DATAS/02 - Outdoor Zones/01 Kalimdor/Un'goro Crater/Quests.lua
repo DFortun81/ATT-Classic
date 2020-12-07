@@ -165,6 +165,9 @@ _.Zones =
 				q(974, {	-- Finding the Source
 					["lvl"] = 51,
 					["qg"] = 10302,	-- Krakle
+					["cost"] = {
+						{ "i", 12472, 1 },	-- Krackle's Thermometer
+					},
 				}),
 				q(3962, {	-- It's Dangerous to Go Alone
 					["qg"] = 8737,	-- Linken
@@ -304,13 +307,32 @@ _.Zones =
 					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(4292, {	-- The Bait for Lar'korwi
-					["lvl"] = 48,
 					["qg"] = 9619,	-- Torwa Pathfinder
+					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
+					["cost"] = {
+						{ "i", 11510, 1 },	-- Lar'korwi's Head
+					},
+					["lvl"] = 48,
 					["g"] = {
+						i(11568, {	-- Torwa's Pouch
+							{
+								["itemID"] = 11570,	-- Preserved Pheromone Mixture
+								["questID"] = 4292,	-- The Bait for Lar'korwi
+							},
+							{
+								["itemID"] = 11569,	-- Preserved Threshadon Meat
+								["questID"] = 4292,	-- The Bait for Lar'korwi
+							},
+						}),
+						{
+							["itemID"] = 11510,	-- Lar'korwi's Head
+							["questID"] = 4292,	-- The Bait for Lar'korwi
+							["cr"] = 9684,	-- Lar'korwi
+							["coord"] = { 79.9, 49.9, UNGORO_CRATER },
+						},
 						i(11876),	-- Plainstalker Tunic
 						i(11882),	-- Outrider Leggings
 					},
-					["coord"] = { 71.6, 76.0, UNGORO_CRATER },
 				}),
 				q(4287, {	-- The Eastern Pylon
 					["lvl"] = 47,
