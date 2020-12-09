@@ -363,6 +363,10 @@ profession(TAILORING, {
 				["name"] = "Ghostweave Vest",
 				["recipeID"] = 18416
 			},
+			un(PHASE_SIX, {
+				["name"] = "Glacial Vest",
+				["recipeID"] = 28207,
+			}),
 			{
 				["name"] = "Gray Woolen Robe",
 				["recipeID"] = 2403
@@ -489,6 +493,10 @@ profession(TAILORING, {
 				["name"] = "Flarecore Wraps",
 				["recipeID"] = 22759
 			},
+			un(PHASE_SIX, {
+				["name"] = "Glacial Wrists",
+				["recipeID"] = 28209,
+			}),
 			{
 				["name"] = "Green Linen Bracers",
 				["recipeID"] = 3841
@@ -589,6 +597,10 @@ profession(TAILORING, {
 				["name"] = "Ghostweave Gloves",
 				["recipeID"] = 18413
 			},
+			un(PHASE_SIX, {
+				["name"] = "Glacial Gloves",
+				["recipeID"] = 28205,
+			}),
 			{
 				["name"] = "Gloves of Meditation",
 				["recipeID"] = 3852
@@ -858,6 +870,10 @@ profession(TAILORING, {
 			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Gaea's Embrace",
 				["recipeID"] = 28210,
+			}),
+			un(PHASE_SIX, {
+				["name"] = "Glacial Cloak",
+				["recipeID"] = 28208,
 			}),
 			{
 				["name"] = "Heavy Woolen Cloak",
