@@ -859,6 +859,7 @@ _.Zones =
 					["qg"] = 10176,	-- Kaltunk
 					["coord"] = { 43.2, 68.4, DUROTAR },
 					["altQuests"] = { 787 },	-- The New Horde
+					["isBreadcrumb"] = true,
 					["races"] = HORDE_ONLY,
 				}),
 				q(826, {	-- Zalazane

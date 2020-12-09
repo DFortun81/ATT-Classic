@@ -535,9 +535,9 @@ _.Instances = {
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 					["questID"] = 7786,	-- Thunderaan the Windseeker
 					["classes"] = {
-						11,	-- Druid
+						4,	-- Rogue
+						3,  -- Hunter
 						2,	-- Paladin
-						7,	-- Shaman
 						1,	-- Warrior
 					},
 				}),

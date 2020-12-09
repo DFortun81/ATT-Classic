@@ -756,7 +756,7 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(4112, {	-- Salve via Disenchanting (1/2)
+				q(5891, {	-- Salve via Disenchanting (1/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4102,	-- Cleansing Felwood (H)
 					["coord"] = { 46.8, 83, FELWOOD },
@@ -770,7 +770,7 @@ _.Zones =
 						i(11516),	-- Cenarion Plant Salve
 					},
 				}),
-				q(5891, {	-- Salve via Disenchanting (2/2)
+				q(4112, {	-- Salve via Disenchanting (2/2)
 					["qg"] = 9529,	-- Maybess Riverbreeze
 					["sourceQuest"] = 4112,	-- Salve via Disenchanting (1/2)
 					["coord"] = { 46.8, 83, FELWOOD },

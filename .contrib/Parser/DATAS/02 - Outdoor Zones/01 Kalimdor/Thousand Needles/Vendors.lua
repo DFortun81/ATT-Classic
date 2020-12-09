@@ -13,6 +13,12 @@ _.Zones =
 						i(5973),	-- Pattern: Barbaric Leggings				
 					},
 				}),
+				n(4878, {   -- Montarr <Lorekeeper>
+					["coord"] = { 45.2, 50.6, THOUSAND_NEEDLES },
+					["groups"] = {
+						i(6068),  -- Recipe: Shadow Oil
+					},
+				}),
 				n(6730, {	-- Jinky Twizzlefixxit <Engineering Supplies>
 					["coord"] = { 77.7, 77.8, THOUSAND_NEEDLES },
 					["groups"] = {

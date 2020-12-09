@@ -45,7 +45,6 @@ _.Zones =
 						i(5489),  -- Recipe: Lean Venison
 						i(5643),  -- Recipe: Great Rage Potion
 						i(5973),  -- Pattern: Barbaric Leggings
-						i(6068),  -- Recipe: Shadow Oil
 						i(7613),  -- Pattern: Green Leather Armor
 						i(12228),  -- Recipe: Roast Raptor
 						i(12231),  -- Recipe: Jungle Stew

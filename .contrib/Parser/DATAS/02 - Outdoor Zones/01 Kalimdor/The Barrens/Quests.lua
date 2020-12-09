@@ -633,6 +633,7 @@ _.Zones =
 					["qg"] = 3418,	-- Kirge Sternhorn
 					["coord"] = { 44.8, 58.6, THE_BARRENS },
 					["races"] = { TAUREN },
+					["isBreadcrumb"] = true,
 					["lvl"] = 9,
 				}),
 				q(4967, {	-- Knowledge of the Orb of Orahil
