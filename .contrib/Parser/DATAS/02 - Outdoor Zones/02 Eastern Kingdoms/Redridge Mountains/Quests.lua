@@ -482,6 +482,7 @@ _.Zones =
 					["maps"] = { DARNASSUS, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
+					["isBreadcrumb"] = true,
 					["lvl"] = 20,
 				}),
 			}),

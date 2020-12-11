@@ -342,6 +342,7 @@ _.Zones =
 					["lvl"] = 20,
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
+					["isBreadcrumb"] = true,
 					["sourceQuest"] = 1701,	-- Fire Hardened Mail
 					["qg"] = 5413,	-- Furen Longbeard
 				}),

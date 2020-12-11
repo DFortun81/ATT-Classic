@@ -567,6 +567,7 @@ _.Zones =
 					["coord"] = { 70.6, 90.4, IRONFORGE },
 					["classes"] = { WARRIOR },
 					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
 					["lvl"] = 10,
 				}),
 				q(1678, {	-- Vejrek
