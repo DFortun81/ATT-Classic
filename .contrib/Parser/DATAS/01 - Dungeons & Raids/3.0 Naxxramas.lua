@@ -93,7 +93,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22353, 1 },	-- Desecrated Helmet
 							{ "i", 22375, 15 },	-- Wartorn Plate Scrap
@@ -109,7 +109,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22354, 1 },	-- Desecrated Pauldrons
 							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
@@ -125,7 +125,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22349, 1 },	-- Desecrated Breastplate
 							{ "i", 22375, 25 },	-- Wartorn Plate Scrap
@@ -141,7 +141,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22355, 1 },	-- Desecrated Bracers
 							{ "i", 22375, 6 },	-- Wartorn Plate Scrap
@@ -157,7 +157,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22357, 1 },	-- Desecrated Gauntlets
 							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
@@ -173,7 +173,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22356, 1 },	-- Desecrated Waistguard
 							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
@@ -189,7 +189,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22352, 1 },	-- Desecrated Legplates
 							{ "i", 22375, 20 },	-- Wartorn Plate Scrap
@@ -205,7 +205,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.8, 58.1, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22358, 1 },	-- Desecrated Sabatons
 							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
@@ -223,7 +223,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22360, 1 },	-- Desecrated Headpiece
 							{ "i", 22375, 15 },	-- Wartorn Plate Scrap
@@ -239,7 +239,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22361, 1 },	-- Desecrated Spaulders
 							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
@@ -255,7 +255,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22350, 1 },	-- Desecrated Tunic
 							{ "i", 22375, 25 },	-- Wartorn Plate Scrap
@@ -271,7 +271,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22362, 1 },	-- Desecrated Wristguards
 							{ "i", 22375, 6 },	-- Wartorn Plate Scrap
@@ -287,7 +287,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22364, 1 },	-- Desecrated Handguards
 							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
@@ -303,7 +303,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22363, 1 },	-- Desecrated Girdle
 							{ "i", 22375, 8 },	-- Wartorn Plate Scrap
@@ -319,7 +319,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22359, 1 },	-- Desecrated Legguards
 							{ "i", 22375, 20 },	-- Wartorn Plate Scrap
@@ -335,7 +335,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22365, 1 },	-- Desecrated Boots
 							{ "i", 22375, 12 },	-- Wartorn Plate Scrap
@@ -353,7 +353,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22360, 1 },	-- Desecrated Headpiece
 							{ "i", 22374, 15 },	-- Wartorn Chain Scrap
@@ -369,7 +369,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22361, 1 },	-- Desecrated Spaulders
 							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
@@ -385,7 +385,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22350, 1 },	-- Desecrated Tunic
 							{ "i", 22374, 25 },	-- Wartorn Chain Scrap
@@ -401,7 +401,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22362, 1 },	-- Desecrated Wristguards
 							{ "i", 22374, 6 },	-- Wartorn Chain Scrap
@@ -417,7 +417,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22364, 1 },	-- Desecrated Handguards
 							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
@@ -433,7 +433,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22363, 1 },	-- Desecrated Girdle
 							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
@@ -449,7 +449,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22359, 1 },	-- Desecrated Legguards
 							{ "i", 22374, 20 },	-- Wartorn Chain Scrap
@@ -465,7 +465,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 82.5, 58.6, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22365, 1 },	-- Desecrated Boots
 							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
@@ -483,7 +483,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22353, 1 },	-- Desecrated Helmet
 							{ "i", 22373, 15 },	-- Wartorn Leather Scrap
@@ -500,7 +500,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22354, 1 },	-- Desecrated Pauldrons
 							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
@@ -517,7 +517,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22349, 1 },	-- Desecrated Breastplate
 							{ "i", 22373, 25 },	-- Wartorn Leather Scrap
@@ -533,7 +533,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22355, 1 },	-- Desecrated Bracers
 							{ "i", 22373, 6 },	-- Wartorn Leather Scrap
@@ -550,7 +550,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22357, 1 },	-- Desecrated Gauntlets
 							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
@@ -566,7 +566,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22356, 1 },	-- Desecrated Waistguard
 							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
@@ -583,7 +583,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22352, 1 },	-- Desecrated Legplates
 							{ "i", 22373, 20 },	-- Wartorn Leather Scrap
@@ -600,7 +600,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.5, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22358, 1 },	-- Desecrated Sabatons
 							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
@@ -619,7 +619,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22367, 1 },	-- Desecrated Circlet
 							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
@@ -635,7 +635,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -651,7 +651,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22351, 1 },	-- Desecrated Robe
 							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
@@ -667,7 +667,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22369, 1 },	-- Desecrated Bindings
 							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
@@ -682,7 +682,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					q(9116, {	-- Gloves of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22371, 1 },	-- Desecrated Gloves
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -697,7 +697,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22370, 1 },	-- Desecrated Belt
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -713,7 +713,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22366, 1 },	-- Desecrated Leggings
 							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
@@ -729,7 +729,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22372, 1 },	-- Desecrated Sandals
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -747,7 +747,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22360, 1 },	-- Desecrated Headpiece
 							{ "i", 22374, 15 },	-- Wartorn Chain Scrap
@@ -763,7 +763,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22361, 1 },	-- Desecrated Spaulders
 							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
@@ -779,7 +779,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22350, 1 },	-- Desecrated Tunic
 							{ "i", 22374, 25 },	-- Wartorn Chain Scrap
@@ -795,7 +795,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22362, 1 },	-- Desecrated Wristguards
 							{ "i", 22374, 6 },	-- Wartorn Chain Scrap
@@ -811,7 +811,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22364, 1 },	-- Desecrated Handguards
 							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
@@ -827,7 +827,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22363, 1 },	-- Desecrated Girdle
 							{ "i", 22374, 8 },	-- Wartorn Chain Scrap
@@ -843,7 +843,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22359, 1 },	-- Desecrated Legguards
 							{ "i", 22374, 20 },	-- Wartorn Chain Scrap
@@ -859,7 +859,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.1, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22365, 1 },	-- Desecrated Boots
 							{ "i", 22374, 12 },	-- Wartorn Chain Scrap
@@ -877,7 +877,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22367, 1 },	-- Desecrated Circlet
 							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
@@ -893,7 +893,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -909,7 +909,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22351, 1 },	-- Desecrated Robe
 							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
@@ -925,7 +925,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22369, 1 },	-- Desecrated Bindings
 							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
@@ -941,7 +941,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22371, 1 },	-- Desecrated Gloves
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -956,7 +956,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22370, 1 },	-- Desecrated Belt
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -972,7 +972,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22366, 1 },	-- Desecrated Leggings
 							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
@@ -988,7 +988,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22372, 1 },	-- Desecrated Sandals
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -1006,7 +1006,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22367, 1 },	-- Desecrated Circlet
 							{ "i", 22376, 15 },	-- Wartorn Cloth Scrap
@@ -1022,7 +1022,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22368, 1 },	-- Desecrated Shoulderpads
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -1038,7 +1038,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22351, 1 },	-- Desecrated Robe
 							{ "i", 22376, 25 },	-- Wartorn Cloth Scrap
@@ -1054,7 +1054,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22369, 1 },	-- Desecrated Bindings
 							{ "i", 22376, 6 },	-- Wartorn Cloth Scrap
@@ -1070,7 +1070,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22371, 1 },	-- Desecrated Gloves
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -1085,7 +1085,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22370, 1 },	-- Desecrated Belt
 							{ "i", 22376, 8 },	-- Wartorn Cloth Scrap
@@ -1101,7 +1101,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22366, 1 },	-- Desecrated Leggings
 							{ "i", 22376, 20 },	-- Wartorn Cloth Scrap
@@ -1117,7 +1117,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.4, 58.2, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22372, 1 },	-- Desecrated Sandals
 							{ "i", 22376, 12 },	-- Wartorn Cloth Scrap
@@ -1135,7 +1135,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22360, 1 },	-- Desecrated Headpiece
 							{ "i", 22373, 15 },	-- Wartorn Leather Scrap
@@ -1151,7 +1151,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22361, 1 },	-- Desecrated Spaulders
 							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
@@ -1167,7 +1167,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22350, 1 },	-- Desecrated Tunic
 							{ "i", 22373, 25 },	-- Wartorn Leather Scrap
@@ -1183,7 +1183,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22362, 1 },	-- Desecrated Wristguards
 							{ "i", 22373, 6 },	-- Wartorn Leather Scrap
@@ -1199,7 +1199,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22364, 1 },	-- Desecrated Handguards
 							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
@@ -1215,7 +1215,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22363, 1 },	-- Desecrated Girdle
 							{ "i", 22373, 8 },	-- Wartorn Leather Scrap
@@ -1231,7 +1231,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22359, 1 },	-- Desecrated Legguards
 							{ "i", 22373, 20 },	-- Wartorn Leather Scrap
@@ -1247,7 +1247,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
 						["coord"] = { 81.2, 59.0, EASTERN_PLAGUELANDS },
-						-- ["repeatable"] = true,
+						["repeatable"] = true,
 						["cost"] = {
 							{ "i", 22365, 1 },	-- Desecrated Boots
 							{ "i", 22373, 12 },	-- Wartorn Leather Scrap
