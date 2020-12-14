@@ -2460,6 +2460,11 @@ local function RefreshSkills()
 		end
 	end
 	
+	-- Hunter Only
+	if app.ClassIndex == 3 then
+		activeSkills[5149] = { 1, 1 };
+	end
+	
 	-- Clone the data for the specializations.
 	for specID,spellID in pairs(app.SpecializationSpellIDs) do
 		local baseSpell = activeSkills[spellID];
