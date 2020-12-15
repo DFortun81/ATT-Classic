@@ -1200,6 +1200,7 @@ _.Zones =
 				un(PHASE_SIX, q(9165, {	-- Writ of Safe Passage
 					["qg"] = 16226,	-- Guard Didier <Brotherhood of the Light>
 					["description"] = "Twice per day, Guard Didier starts a caravan westward. Simply protect him and the mules, but if any of them die, it's over. After the caravan arrives at its destination, he will offer this quest.",
+					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 22593, 1 },	-- Writ of Safe Passage
 					},
