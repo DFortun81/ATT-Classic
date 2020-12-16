@@ -564,6 +564,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 			}),
 			n(14682, {	-- Sever
 				["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+				["maps"] = { SHADOWFANG_KEEP },
 				["groups"] = {
 					i(23171),	-- The Axe of Severing
 					i(23173),	-- Abomination Skin Leggings
