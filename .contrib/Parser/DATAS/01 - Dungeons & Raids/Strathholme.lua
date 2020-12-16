@@ -496,14 +496,6 @@ _.Instances = {
 							i(16725),	-- Lightforge Boots
 						},
 					}),
-					un(PHASE_SIX_SCOURGE_INVASION, n(14684, { 	-- Balzaphon
-						["description"] = "Can be found wandering in a circle around the fountain in the courtyard.",
-						["groups"] = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION }, {
-							i(23124),	-- Staff of Balzaphon
-							i(23125),	-- Chains of the Lich
-							i(23126),	-- Waistband of Balzaphon
-						}),
-					})),
 					un(PHASE_FIVE, n(16102, { 	-- Sothos
 						["crs"] = {
 							16101,	-- Jarien

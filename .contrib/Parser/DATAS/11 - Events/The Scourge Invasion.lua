@@ -518,6 +518,57 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					},
 				}),
 			}),
+			n(14684, { 	-- Balzaphon
+				["description"] = "Located in Stratholme.\n\nCan be found wandering in a circle around the fountain in the courtyard.",
+				["maps"] = { STRATHOLME },
+				["groups"] = {
+					i(23124),	-- Staff of Balzaphon
+					i(23125),	-- Chains of the Lich
+					i(23126),	-- Waistband of Balzaphon
+				},
+			}),
+			n(14686, {	-- Lady Falther'ess
+				["description"] = "Located in Razorfen Downs.\n\nCan be found inside one of the prison cells, before the skeleton pile. Looks like a human female until you talk to her upon she transforms into a Banshee.",
+				["maps"] = { RAZORFEN_DOWNS },
+				["groups"] = {
+					i(23177),	-- Lady Falther'ess' Finger
+					i(23178),	-- Mantle of Lady Falther'ess
+				},
+			}),
+			n(14695, {	-- Lord Blackwood
+				["description"] = "Located in Scholomance.\n\nCan be found in the room just before the plagued hatchlings.",
+				["maps"] = { SCHOLOMANCE },
+				["groups"] = {
+					i(23156),	-- Blackwood's Thigh
+					i(23132),	-- Lord Blackwood's Blade
+					i(23139),	-- Lord Blackwood's Buckler
+				},
+			}),
+			n(14690, {	-- Revanchion
+				["description"] = "Located in Dire Maul West.\n\nCan be found in the corridor above and behind Tendris Warpwood, the same one Magister Kalendris is in.",
+				["maps"] = { DIRE_MAUL },
+				["groups"] = {
+					i(23127),	-- Cloak of Revanchion
+					i(23129),	-- Bracers of Mending
+					i(23128),	-- The Shadow's Grasp
+				},
+			}),
+			n(14693, {	-- Scorn
+				["description"] = "Located in Scarlet Monastery Graveyard.\n\nHe patrols the graveyard after killing the last boss.",
+				["maps"] = { SCARLET_MONASTERY },
+				["g"] = {
+					i(23168),	-- Scorn's Focal Dagger
+					i(23169),	-- Scorn's Icy Choker
+					i(23170),	-- The Frozen Clutch
+				},
+			}),
+			n(14682, {	-- Sever
+				["description"] = "Located in Shadowfang Keep.\n\nCan be found in the room up the ramp to the right of the entrance to the Butcher's room in the courtyard.",
+				["groups"] = {
+					i(23171),	-- The Axe of Severing
+					i(23173),	-- Abomination Skin Leggings
+				},
+			}),
 			n(16143, {	-- Shadow of Doom
 				["description"] = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
 				["cost"] = { "i", 22484, 8 },	-- Necrotic Rune
