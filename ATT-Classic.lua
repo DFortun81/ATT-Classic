@@ -791,6 +791,14 @@ local function SetPortraitIcon(self, data, x)
 		return true;
 	end
 end
+local function GetBestMapForGroup(group)
+	if group then
+		if group.mapID then return group.mapID; end
+		if group.maps then return group.maps[1]; end
+		if group.coords then return group.coords[1][3]; end
+		if group.parent then return GetBestMapForGroup(group.parent); end
+	end
+end
 local function GetRelativeMap(group, currentMapID)
 	if group then
 		if group.mapID then return group.mapID; end
@@ -1747,6 +1755,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						for i,item in ipairs(entries) do
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							local mapID = GetBestMapForGroup(item.group);
+							if mapID and mapID ~= app.GetCurrentMapID() then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
@@ -1755,6 +1765,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							local item = entries[i];
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
+							local mapID = GetBestMapForGroup(item.group);
+							if mapID and mapID ~= app.GetCurrentMapID() then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
@@ -1920,7 +1932,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		if #info > 0 then
 			local uniques, dupes, _ = {}, {};
 			for i,item in ipairs(info) do
-				_ = item.left;
+				_ = item.hash or item.left;
 				if not _ then
 					tinsert(uniques, item);
 				else
