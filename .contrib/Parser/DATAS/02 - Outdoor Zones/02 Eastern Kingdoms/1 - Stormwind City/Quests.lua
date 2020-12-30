@@ -726,6 +726,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 78.4, 25.4, STORMWIND_CITY },
 					["sourceQuest"] = 1274,
+					["cost"] = {
+						{ "i", 5948, 1 },	-- Letter to Jorgen
+					},
 				}),
 				q(1242, {	-- The Missing Diplomat (3/17)
 					["lvl"] = 28,
@@ -733,6 +736,9 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.2, 78.6, STORMWIND_CITY },
 					["sourceQuest"] = 1241,
+					["cost"] = {
+						{ "i", 5946, 1 },	-- Sealed Note to Elling
+					},
 				}),
 				q(1243, {	-- The Missing Diplomat (4/17)
 					["lvl"] = 28,

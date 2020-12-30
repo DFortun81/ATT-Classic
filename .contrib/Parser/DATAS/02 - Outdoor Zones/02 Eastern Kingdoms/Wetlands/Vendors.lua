@@ -48,7 +48,6 @@ _.Zones =
 						i(4793),	-- Sylvan Cloak						
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6275),	-- Pattern: Greater Adept's Robe
-						i(7290),	-- Pattern: Red Whelp Gloves
 					},
 				}),
 				n(1459, {	-- Naela Trance <Bowyer>
