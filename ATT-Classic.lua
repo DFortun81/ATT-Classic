@@ -4610,7 +4610,11 @@ app.BaseRecipe = {
 			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
 		elseif key == "link" then
 			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
-			return "spell:" .. t.spellID;
+			if GetRelativeValue(t, "requireSkill") == 333 then
+				return "|cffffffff|Henchant:" .. t.spellID .. "|h[" .. t.text .. "]|h|r";
+			else
+				return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.text .. "]|h|r";
+			end
 		elseif key == "collectible" then
 			return app.CollectibleRecipes;
 		elseif key == "collected" then
@@ -4782,7 +4786,11 @@ app.BaseSpell = {
 					return link;
 				end
 			end
-			return "spell:" .. t.spellID;
+			if GetRelativeValue(t, "requireSkill") == 333 then
+				return "|cffffffff|Henchant:" .. t.spellID .. "|h[" .. t.text .. "]|h|r";
+			else
+				return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.text .. "]|h|r";
+			end
 		elseif key == "collectible" then
 			return false;
 		elseif key == "collected" then
