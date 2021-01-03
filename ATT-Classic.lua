@@ -4684,6 +4684,7 @@ app.CraftTypeIDToColor = function(craftTypeID)
 	if craftType then return colors[craftType]; end
 	return nil;
 end
+app.MaxSpellRankPerSpellName = {};
 app.SpellIDToSpellName = {};
 app.GetSpellName = function(spellID, rank)
 	local spellName = rawget(app.SpellIDToSpellName, spellID);
@@ -4695,7 +4696,10 @@ app.GetSpellName = function(spellID, rank)
 	end
 	if spellName and spellName ~= "" then
 		if rank then
-			spellName = spellName .. " (Rank " .. rank .. ")";
+			if (rawget(app.MaxSpellRankPerSpellName, spellName) or 0) < rank then
+				rawset(app.MaxSpellRankPerSpellName, spellName, rank);
+			end
+			spellName = spellName .. " (" .. RANK .. " " .. rank .. ")";
 		end
 		dirty = true;
 		rawset(app.SpellIDToSpellName, spellID, spellName);
@@ -4707,6 +4711,22 @@ app.IsSpellKnown = function(spellID, rank)
 	if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
 		or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
 		return true;
+	end
+	if rank then
+		local spellName = GetSpellInfo(spellID);
+		if spellName then
+			local maxRank = rawget(app.MaxSpellRankPerSpellName, spellName);
+			if maxRank and maxRank > rank then
+				spellName = spellName .. " (" .. RANK .. " ";
+				for i=maxRank,rank,-1 do
+					spellID = app.SpellNameToSpellID[spellName .. i .. ")"];
+					if spellID and (IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
+						or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true)) then
+						return true;
+					end
+				end
+			end
+		end
 	end
 end
 app.SpellNameToSpellID = setmetatable({}, {
