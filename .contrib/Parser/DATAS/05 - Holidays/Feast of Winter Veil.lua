@@ -265,7 +265,9 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 			},
 			{
 				["allianceQuestID"] = 8827,	-- Winter's Presents (Alliance)
+				["isBreadcrumb"] = true,
 				["hordeQuestID"] = 8828,	-- Winter's Presents (Horde)
+				["isBreadcrumb"] = true,
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>
 			},
 		}),

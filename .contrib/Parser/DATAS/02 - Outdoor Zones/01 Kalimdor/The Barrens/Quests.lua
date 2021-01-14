@@ -1028,7 +1028,18 @@ _.Zones =
 				q(4962, {	-- Shard of a Felhound
 					["lvl"] = 35,
 					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						4963 -- Shard of an Infernal
+					},
 					["qg"] = 6254,	-- Acolyte Wytula
+				}),
+				q(4963, {   -- Shard of an Infernal
+					["lvl"] = 35,
+					["classes"] = { WARLOCK },
+					["altQuests"] = {
+						4962 -- Shard of a Felhound
+					},
+					["qg"] = 6252, -- Acolyte Magaz
 				}),
 				q(887, {	-- Southsea Freebooters
 					["qg"] = 3391,	-- Gazlowe
