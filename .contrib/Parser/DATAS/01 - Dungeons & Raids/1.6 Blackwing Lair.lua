@@ -23,7 +23,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_THREE }, {
 				{
 					["questID"] = 7782,	-- The Lord of Blackrock
 					["sourceQuest"] = 7781,	-- The Lord of Blackrock
-					["qg"] = 1750,	-- Grand Admiral Jes-Tereth
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						i(19366), 	-- Master Dragonslayer's Orb
