@@ -1093,7 +1093,6 @@ _.WorldDrops =
 		i(15126),	-- Robust Leggings
 		i(15127),	-- Robust Shoulders
 		i(15128),	-- Robust Tunic
-		i(5968),	-- Rugged Boots
 		i(13111),	-- Sandals of the Insurgent
 		i(14553),	-- Sash of Mercy
 		i(9827),	-- Scaled Leather Belt

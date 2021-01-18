@@ -300,6 +300,7 @@ _.NeverImplemented =
 	i(16145),	-- Test Shadow Res Waist Cloth
 	
 	-- Leather
+	i(5968),	-- Rugged Boots
 	i(14550),	-- Bladebane Armguards
 	i(21594),	-- Bracers of the Fallen Son
 	i(19743),	-- Cloaked Hood TEST
