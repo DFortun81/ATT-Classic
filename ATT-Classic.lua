@@ -4831,7 +4831,26 @@ function app.NoFilter()
 	return true;
 end
 function app.FilterGroupsByLevel(group)
-	return app.Level >= (group.lvl or 0);
+	-- after 9.0, transition to a req lvl range, either min, or min + max
+    if group.lvl then
+        local minlvl, maxlvl;
+        if type(group.lvl) == "table" then
+            minlvl = group.lvl[1];
+            maxlvl = group.lvl[2];
+        else
+            minlvl = group.lvl;
+        end
+
+        if maxlvl then
+            -- min and max provided
+            return app.Level >= minlvl and app.Level <= maxlvl;
+        elseif minlvl then
+            -- only min provided
+            return app.Level >= minlvl;
+        end
+    end
+    -- no level requirement on the group, have to include it
+    return true;
 end
 function app.FilterGroupsByCompletion(group)
 	return group.progress < group.total;
@@ -5974,8 +5993,22 @@ local function RowOnEnter(self)
 		elseif reference.retries then
 			GameTooltip:AddLine("Failed to acquire information. This quest may have been removed from the game. " .. tostring(reference.retries), 1, 1, 1);
 		end
-		local lvl = reference.lvl or 0;
-		if lvl > 1 then GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(lvl)); end
+		if reference.lvl then
+			local minlvl, maxlvl;
+			if type(reference.lvl) == "table" then
+				minlvl = reference.lvl[1] or 0;
+				maxlvl = reference.lvl[2] or 0;
+			else
+				minlvl = reference.lvl;
+			end
+			-- i suppose a maxlvl of 1 might exist?
+			if maxlvl and maxlvl > 0 then
+				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl) .. " to " .. tostring(maxlvl));
+			-- no point to show 'requires lvl 1'
+			elseif minlvl and minlvl > 1 then
+				GameTooltip:AddDoubleLine(L["REQUIRES_LEVEL"], tostring(minlvl));
+			end
+		end
 		if reference.b and app.Settings:GetTooltipSetting("binding") then GameTooltip:AddDoubleLine("Binding", tostring(reference.b)); end
 		if reference.requireSkill then GameTooltip:AddDoubleLine(L["REQUIRES"], GetSpellInfo(app.SkillIDToSpellID[reference.requireSkill] or 0) or RETRIEVING_DATA); end
 		if reference.f and reference.f > 0 and app.Settings:GetTooltipSetting("filterID") then GameTooltip:AddDoubleLine(L["FILTER_ID"], tostring(L["FILTER_ID_TYPES"][reference.f])); end

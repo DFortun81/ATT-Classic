@@ -36,7 +36,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8390, {	-- Conquering Arathi Basin [Level 20]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -64,7 +64,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8436, {	-- Conquering Arathi Basin [Level 30]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -92,7 +92,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8440, {	-- Conquering Arathi Basin [Level 30]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -120,7 +120,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8437, {	-- Conquering Arathi Basin [Level 40]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -148,7 +148,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8441, {	-- Conquering Arathi Basin [Level 40]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -176,7 +176,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8438, {	-- Conquering Arathi Basin [Level 50]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -204,7 +204,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8442, {	-- Conquering Arathi Basin [Level 50]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -232,7 +232,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8439, {	-- Conquering Arathi Basin [Level 60]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -260,7 +260,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(8443, {	-- Conquering Arathi Basin [Level 60]
 								["qg"] = 15350,	-- Horde Warbringer
@@ -288,7 +288,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(8265, {	-- Defiler's Advanced Care Package
 								["qg"] = 15126,	-- Rutherford Twing
@@ -305,7 +305,7 @@ _.PvP =
 								["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
 								["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
 								["races"] = HORDE_ONLY,
-								["lvl"] = 25,
+								["lvl"] = { 25, 34 },
 								["groups"] = {
 									i(20229),	-- Defiler's Basic Care Package
 								},
@@ -315,7 +315,7 @@ _.PvP =
 								["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
 								["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
 								["races"] = HORDE_ONLY,
-								["lvl"] = 35,
+								["lvl"] = { 35, 44 },
 								["groups"] = {
 									i(20230),	-- Defiler's Standard Care Package
 								},
@@ -434,7 +434,7 @@ _.PvP =
 								["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
 								["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 25,
+								["lvl"] = { 25, 34 },
 								["groups"] = {
 									i(20233),	-- Arathor Basic Care Package
 								},
@@ -444,7 +444,7 @@ _.PvP =
 								["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
 								["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 35,
+								["lvl"] = { 35, 44 },
 								["groups"] = {
 									i(20236),	-- Arathor Standard Care Package
 								},
@@ -475,7 +475,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8384, {	-- Claiming Arathi Basin [Level 20]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -503,7 +503,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8391, {	-- Claiming Arathi Basin [Level 30]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -531,7 +531,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8393, {	-- Claiming Arathi Basin [Level 30]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -559,7 +559,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8392, {	-- Claiming Arathi Basin [Level 40]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -587,7 +587,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8394, {	-- Claiming Arathi Basin [Level 40]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -615,7 +615,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8395, {	-- Claiming Arathi Basin [Level 50]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -643,7 +643,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8397, {	-- Claiming Arathi Basin [Level 50]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -671,7 +671,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8396, {	-- Claiming Arathi Basin [Level 60]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -699,7 +699,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(8398, {	-- Claiming Arathi Basin [Level 60]
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -727,7 +727,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20559, 3 },	-- Arathi Basin Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 						}),
 						n(VENDORS, {

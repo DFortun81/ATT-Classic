@@ -122,7 +122,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 10,
+								["lvl"] = { 10, 19 },
 							}),
 							q(8399, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -131,7 +131,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8400, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -140,7 +140,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8401, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -149,7 +149,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8402, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -158,7 +158,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8403, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -167,7 +167,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(8386, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -178,7 +178,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 10,
+								["lvl"] = { 10, 19 },
 							}),
 							q(8404, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -189,7 +189,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8405, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -200,7 +200,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8406, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -211,7 +211,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8407, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -222,7 +222,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8408, {	-- Fight for Warsong Gulch
 								["qg"] = 15351,	-- Alliance Brigadier General
@@ -233,7 +233,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(7865, {	-- Sentinel Advanced Care Package
 								["qg"] = 14753,	-- Illiyana Moonblaze
@@ -248,7 +248,7 @@ _.PvP =
 								["qg"] = 14753,	-- Illiyana Moonblaze
 								["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 25,
+								["lvl"] = { 25, 34 },
 								["g"] = {
 									i(19150),	-- Sentinel Basic Care Package
 								},
@@ -257,7 +257,7 @@ _.PvP =
 								["qg"] = 14753,	-- Illiyana Moonblaze
 								["minReputation"] = { 890, FRIENDLY },	-- Silverwing Sentinels, Friendly.
 								["races"] = ALLIANCE_ONLY,
-								["lvl"] = 35,
+								["lvl"] = { 35, 44 },
 								["g"] = {
 									i(19151),	-- Sentinel Standard Care Package
 								},
@@ -351,7 +351,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 10,
+								["lvl"] = { 10, 19 },
 							}),
 							q(8426, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -360,7 +360,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8427, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -369,7 +369,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8428, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -378,7 +378,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8429, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -387,7 +387,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8430, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -396,7 +396,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(8389, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -407,7 +407,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 10,
+								["lvl"] = { 10, 19 },
 							}),
 							q(8431, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -418,7 +418,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 20,
+								["lvl"] = { 20, 29 },
 							}),
 							q(8432, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -429,7 +429,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 30,
+								["lvl"] = { 30, 39 },
 							}),
 							q(8433, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -440,7 +440,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 40,
+								["lvl"] = { 40, 49 },
 							}),
 							q(8434, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -451,7 +451,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 50,
+								["lvl"] = { 50, 59 },
 							}),
 							q(8435, {	-- Battle of Warsong Gulch
 								["qg"] = 15350,	-- Horde Warbringer
@@ -462,7 +462,7 @@ _.PvP =
 								["cost"] = {
 									{ "i", 20558, 3 },	-- Warsong Gulch Mark of Honor
 								},
-								["lvl"] = 60,
+								["lvl"] = { 60, 69 },
 							}),
 							q(7868, {	-- Outrider Advanced Care Package
 								["qg"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
@@ -479,7 +479,7 @@ _.PvP =
 								["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["races"] = HORDE_ONLY,
-								["lvl"] = 25,
+								["lvl"] = { 25, 34 },
 								["g"] = {
 									i(19154),	-- Outrider Basic Care Package
 								},
@@ -489,7 +489,7 @@ _.PvP =
 								["minReputation"] = { 889, FRIENDLY },	-- Warsong Outriders, Friendly.
 								["coord"] = { 46.6, 8.4, THE_BARRENS },
 								["races"] = HORDE_ONLY,
-								["lvl"] = 35,
+								["lvl"] = { 35, 44 },
 								["g"] = {
 									i(19155),	-- Outrider Standard Care Package
 								},
