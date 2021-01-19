@@ -387,14 +387,14 @@ _.WorldEvents = bubbleDown({["u"] = PHASE_FIVE },
 						{
 							["itemID"] = 21112,	-- Magical Book Binding
 							["cost"] = {
-								21103,	-- Draconic for Dummies [Chapter I] (Doctor Weavil)
-								21104,	-- Draconic for Dummies [Chapter II] (Blasted Lands Demons)
-								21105,	-- Draconic for Dummies [Chapter III] (Winterspring Demons)
-								21106,	-- Draconic for Dummies [Chapter IV] (Undercity)
-								21107,	-- Draconic for Dummies [Chapter V] (Stormwind Library)
-								21108,	-- Draconic for Dummies [Chapter VI] (Onyxia)
-								21109,	-- Draconic for Dummies [Chapter VII] (Blackwing Lair)
-								21110,	-- Draconic for Dummies [Chapter VIII] (Ragnaros)
+								{ "i", 21103, 1 },	-- Draconic for Dummies [Chapter I] (Doctor Weavil)
+								{ "i", 21104, 1 },	-- Draconic for Dummies [Chapter II] (Blasted Lands Demons)
+								{ "i", 21105, 1 },	-- Draconic for Dummies [Chapter III] (Winterspring Demons)
+								{ "i", 21106, 1 },	-- Draconic for Dummies [Chapter IV] (Undercity)
+								{ "i", 21107, 1 },	-- Draconic for Dummies [Chapter V] (Stormwind Library)
+								{ "i", 21108, 1 },	-- Draconic for Dummies [Chapter VI] (Onyxia)
+								{ "i", 21109, 1 },	-- Draconic for Dummies [Chapter VII] (Blackwing Lair)
+								{ "i", 21110, 1 },	-- Draconic for Dummies [Chapter VIII] (Ragnaros)
 							},
 							["groups"] = {
 								{

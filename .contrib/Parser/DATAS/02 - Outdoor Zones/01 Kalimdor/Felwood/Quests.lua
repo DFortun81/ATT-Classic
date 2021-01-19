@@ -83,7 +83,7 @@ _.Zones =
 					["coord"] = { 49.4, 14.4, FELWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 11445, },	-- Flute of the Ancients
+						{ "i", 11445, 1 },	-- Flute of the Ancients
 					},
 					["lvl"] = 49,
 					["g"] = {

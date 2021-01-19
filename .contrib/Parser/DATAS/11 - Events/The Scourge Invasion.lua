@@ -572,7 +572,9 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 			}),
 			n(16143, {	-- Shadow of Doom
 				["description"] = "To summon this mob, speak to the cultist and give them 8 runes. This will automatically tag that mob for your group.",
-				["cost"] = { "i", 22484, 8 },	-- Necrotic Rune
+				["cost"] = {
+					{ "i", 22484, 8 },	-- Necrotic Rune
+				},
 				["groups"] = {
 					i(22484),	-- Necrotic Rune
 					i(23087),	-- Breastplate of Undead Slaying
