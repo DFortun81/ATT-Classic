@@ -106,7 +106,7 @@ app.L = {
 	["FILTER_ID_TYPES"] = {
 		-- Armor
 		[1] = INVTYPE_HOLDABLE, 								-- Held in Off-Hand
-		[2] = GetItemSubClassInfo(4,5),							-- Cosmetic
+		[2] = "Cosmetic",										-- Cosmetic
 		[3] = INVTYPE_CLOAK,									-- Cloaks
 		[4] = GetItemSubClassInfo(4,1),							-- Cloth
 		[5] = GetItemSubClassInfo(4,2),							-- Leather

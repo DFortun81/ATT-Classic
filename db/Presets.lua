@@ -41,6 +41,9 @@ select(2, ...).Presets = {
 		false, -- [35]
 		true, -- [36]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[103] = true,
 		[100] = true,
@@ -49,9 +52,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[106] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -94,6 +94,9 @@ select(2, ...).Presets = {
 		false, -- [35]
 		true, -- [36]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[106] = true,
 		[103] = true,
@@ -102,9 +105,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[104] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -147,6 +147,9 @@ select(2, ...).Presets = {
 		false, -- [35]
 		true, -- [36]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[103] = true,
 		[100] = true,
@@ -155,9 +158,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[106] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -200,6 +200,9 @@ select(2, ...).Presets = {
 		false, -- [35]
 		true, -- [36]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[103] = true,
 		[100] = true,
@@ -208,9 +211,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[106] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -228,6 +228,9 @@ select(2, ...).Presets = {
 		true, -- [10]
 		true, -- [11]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[31] = false,
 		[32] = false,
 		[33] = false,
@@ -250,9 +253,6 @@ select(2, ...).Presets = {
 		[29] = false,
 		[100] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -296,6 +296,9 @@ select(2, ...).Presets = {
 		true, -- [34]
 		false, -- [35]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[103] = true,
 		[100] = true,
@@ -304,9 +307,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[106] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -324,6 +324,9 @@ select(2, ...).Presets = {
 		true, -- [10]
 		true, -- [11]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[31] = false,
 		[32] = false,
@@ -346,9 +349,6 @@ select(2, ...).Presets = {
 		[29] = false,
 		[100] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -367,6 +367,9 @@ select(2, ...).Presets = {
 		true, -- [10]
 		true, -- [11]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[30] = false,
 		[31] = false,
 		[32] = false,
@@ -389,9 +392,6 @@ select(2, ...).Presets = {
 		[29] = false,
 		[100] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,
@@ -434,6 +434,9 @@ select(2, ...).Presets = {
 		false, -- [35]
 		true, -- [36]
 		[50] = true,
+		[51] = true,
+		[52] = true,
+		[53] = true,
 		[57] = true,
 		[103] = true,
 		[100] = true,
@@ -442,9 +445,6 @@ select(2, ...).Presets = {
 		[102] = true,
 		[106] = true,
 		[200] = true,
-		[51] = false,
-		[52] = false,
-		[53] = false,
 		[54] = false,
 		[55] = false,
 		[113] = false,

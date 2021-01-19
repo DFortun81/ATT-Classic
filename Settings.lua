@@ -1058,7 +1058,7 @@ end
 
 -- Weapons
 yoffset = -4;
-for i,filterID in ipairs({ 20, 29, 28  }) do
+for i,filterID in ipairs({ 20, 29, 28, 27  }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1068,7 +1068,7 @@ end
 
 -- Big Ole Boys
 yoffset = -4;
-for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 8 }) do
+for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 34, 8 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1078,7 +1078,7 @@ end
 
 -- Weird Boys
 yoffset = -4;
-for i,filterID in ipairs({ 50, 57, 34, 27 }) do
+for i,filterID in ipairs({ 2, 50, 57 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1088,7 +1088,7 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 2, 10, 9, 33, 32, 31 }) do
+for i,filterID in ipairs({ 33, 32, 31, 10, 9, 51, 52, 53 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
