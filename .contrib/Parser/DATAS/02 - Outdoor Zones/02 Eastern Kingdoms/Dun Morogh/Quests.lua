@@ -631,6 +631,7 @@ _.Zones =
 					["qg"] = 1977,	-- Senator Mehr Stonehallow
 					["coord"] = { 68.6, 56, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["lvl"] = 6,
 				}),
 				q(291, {	-- The Reports
