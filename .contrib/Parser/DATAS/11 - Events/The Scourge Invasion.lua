@@ -159,6 +159,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["description"] = "If you hear the yell across the city that they've invaded the Park, head for the canals between the Keep and the Park, that is where the elite abomination will be (heading from the Park to the Keep on the north side of the canal).\n\nWhen he dies, the crystal appears above his corpse and everyone (of the appropriate level) can click on it and get the quest regardless of who tagged him first.",
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22949, 1 },	-- Cracked Necrotic Crystal
 					},
@@ -190,6 +191,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["cost"] = {
 						{ "i", 22950, 1 },	-- Faint Necrotic Crystal
 					},
+					["isYearly"] = true,
 					["lvl"] = 1,
 					["groups"] = {
 						i(23123),	-- Blessed Wizard Oil
@@ -201,6 +203,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 77.7, 42.7, DARNASSUS },
 					["maps"] = { DARNASSUS, TELDRASSIL },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -217,6 +220,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 53.2, 35.0, DUN_MOROGH },
 					["maps"] = { DUN_MOROGH, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -233,6 +237,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 51.7, 83.3, ORGRIMMAR },
 					["maps"] = { DUROTAR, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -249,6 +254,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 63.8, 75.5, STORMWIND_CITY },
 					["maps"] = { ELWYNN_FOREST, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -265,6 +271,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 66.2, 21.4, UNDERCITY },
 					["maps"] = { TIRISFAL_GLADES, UNDERCITY },
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -281,6 +288,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["coord"] = { 33.1, 59.9, THUNDER_BLUFF },
 					["maps"] = { MULGORE, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
+					["isYearly"] = true,
 					["cost"] = {
 						{ "i", 22892, 3 },	-- Dim Necrotic Stone
 					},
@@ -330,6 +338,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["cost"] = {
 						{ "i", 22595, 1 },	-- Call to Arms Announcement
 					},
+					["isYearly"] = true,
 					["lvl"] = 50,
 				}),
 				q(9336, {	-- Major Healing Potion
@@ -443,6 +452,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["qg"] = 16361,	-- Commander Thomas Helleran <The Argent Dawn>
 					["coord"] = { 81.1, 60.6, EASTERN_PLAGUELANDS },
 					["cr"] = 16143,	-- Shadow of Doom
+					["isYearly"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(23123),	-- Blessed Wizard Oil
@@ -499,6 +509,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["cost"] = {
 						{ "i", 22723, 1 },	-- A Letter from the Keeper of the Rolls [You get this in the mail.]
 					},
+					["isYearly"] = true,
 					["lvl"] = 60,
 					["groups"] = {
 						i(23123),	-- Blessed Wizard Oil
@@ -511,6 +522,7 @@ _.WorldEvents = bubbleDown({ ["u"] = PHASE_SIX_SCOURGE_INVASION },
 					["cost"] = {
 						{ "i", 22484, 10 },	-- Necrotic Rune
 					},
+					["isYearly"] = true,
 					["lvl"] = 50,
 					["groups"] = {
 						i(23123),	-- Blessed Wizard Oil
