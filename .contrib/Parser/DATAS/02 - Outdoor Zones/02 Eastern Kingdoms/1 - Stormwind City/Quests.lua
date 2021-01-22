@@ -560,6 +560,7 @@ _.Zones =
 					["maps"] = { IRONFORGE },
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
+					["isBreadcrumb"] = true,
 					["lvl"] = 15,
 				}),
 				q(6285, {	-- Return to Lewis

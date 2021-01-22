@@ -104,6 +104,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				},
 			}),
 			q(7045, {	-- A Smokywood Pastures' Thank You! (Alliance)
+				["isYearly"] = true,
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
@@ -145,11 +146,13 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				},
 			}),
 			q(7022, {	-- Greatfather Winter is Here!
+				["isYearly"] = true,
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 			}),
 			q(7023, {	-- Greatfather Winter is Here!
+			["isYearly"] = true,
 				["qg"] = 13435,	-- Khole Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
@@ -163,6 +166,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				},
 			}),
 			q(8762, {	-- Metzen the Reindeer (Alliance)
+				["isYearly"] = true,
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 40,
@@ -181,25 +185,30 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 			},
 			q(6963, {	-- Stolen Winter Veil Treats (Horde)
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
+				["isYearly"] = true,
 				["races"] = HORDE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(7042, {	-- Stolen Winter Veil Treats (Alliance)
+				["isYearly"] = true,
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 30,
 			}),
 			q(7061, {	-- The Feast of Winter Veil
+				["isYearly"] = true,
 				["qg"] = 13417,	-- Sagorne Creststrider <Shaman Trainer>
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
 			}),
 			q(7063, {	-- The Feast of Winter Veil
+				["isYearly"] = true,
 				["qg"] = 2916,	-- Historian Karnik
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 			}),
 			q(8763, {	-- The Hero of the Day
+				["isYearly"] = true,
 				["qg"] = 13433,	-- Wulmort Jinglepocket <Smokywood Pastures>
 				["description"] = 'Requires Cooking Skill Level 300',
 				["requireSkill"] = COOKING,
@@ -210,16 +219,19 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				},
 			}),
 			q(6964, {	-- The Reason for the Season (Horde)
+				["isYearly"] = true,
 				["qg"] = 1365,	-- Goli Krumn
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
 			}),
 			q(7062, {	-- The Reason for the Season (Alliance)
+				["isYearly"] = true,
 				["qg"] = 1365,	-- Goli Krumn
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
 			}),
 			q(6962, {	-- Treats for Greatfather Winter (Horde)
+				["isYearly"] = true,
 				["qg"] = 13445,	-- Great-father Winter
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
@@ -228,6 +240,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				},
 			}),
 			q(7025, {	-- Treats for Greatfather Winter (Alliance)
+				["isYearly"] = true,
 				["qg"] = 13444,	-- Greatfather Winter
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
@@ -244,7 +257,9 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 			{	-- You're a Mean One...
 				["qg"] = 13636,	-- Strange Snowman
 				["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
+				["isYearly"] = true,
 				["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
+				["isYearly"] = true,
 				["sourceQuests"] = {
 					7042,	-- Stolen Winter Veil Treats (Alliance)
 					6963,	-- Stolen Winter Veil Treats (Horde)
@@ -258,7 +273,9 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 					{
 						["itemID"] = 17662,	-- Stolen Treats
 						["allianceQuestID"] = 7043,	-- You're a Mean One... (Alliance)
+						["isYearly"] = true,
 						["hordeQuestID"] = 6983,	-- You're a Mean One... (Horde)
+						["isYearly"] = true,
 						["cr"] = 13602,	-- The Abominable Greench
 					},
 				},
@@ -266,6 +283,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 			{
 				["allianceQuestID"] = 8827,	-- Winter's Presents (Alliance)
 				["isBreadcrumb"] = true,
+				["isYearly"] = true,
 				["hordeQuestID"] = 8828,	-- Winter's Presents (Horde)
 				["isBreadcrumb"] = true,
 				["qg"] = 15732,	-- Wonderform Operator <Smokywood Pastures>

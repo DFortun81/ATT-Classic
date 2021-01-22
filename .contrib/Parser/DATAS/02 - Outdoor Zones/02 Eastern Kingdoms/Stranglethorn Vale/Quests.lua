@@ -68,6 +68,7 @@ _.Zones =
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
 					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
 					["lvl"] = 55,
 					["groups"] = {
@@ -80,6 +81,19 @@ _.Zones =
 					["coord"] = { 27.4, 69.4, STRANGLETHORN_VALE },
 					["lvl"] = 55,
 					["isBreadcrumb"] = true,
+				}),
+				q(9272, {	-- Dressing the Part
+					["qg"] = 2546,	-- Fleet Master Firallon
+					["minReputation"] = { 87, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+					["coord"] = { 30.6, 90.6, STRANGLETHORN_VALE },
+					["lvl"] = 49,
+					["groups"] = {
+						i(22746),	-- Buccaneer's Uniform
+						i(22742),	-- Bloodsail Shirt
+						i(22743),	-- Bloodsail Sash
+						i(22745),	-- Bloodsail Pants
+						i(22744),	-- Bloodsail Boots
+					},
 				}),
 				q(7810, {	-- Arena Master
 					["provider"] = { "i", 18706 },	-- Arena Master (trinket)

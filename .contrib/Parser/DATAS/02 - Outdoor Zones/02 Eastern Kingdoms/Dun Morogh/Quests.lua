@@ -260,6 +260,7 @@ _.Zones =
 					["sourceQuest"] = 179,	-- Dwarven Outfitters
 					["coord"] = { 29.8, 71.2, DUN_MOROGH },
 					["races"] = { DWARF },
+					["isYearly"] = true,
 					["classes"] = { PRIEST },
 					["cost"] = {
 						{ "i", 9556, 1 },	-- Hallowed Rune

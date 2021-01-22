@@ -7,6 +7,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 		n(QUESTS, {
 		
 			q(9319, {	-- A Light in Dark Places
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -73,6 +74,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9365, {	-- A Thief's Reward
+				["isYearly"] = true,
 				["qg"] = 16817,	-- Festival Loremaster
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -228,6 +230,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9324, {	-- Stealing Orgrimmar's Flame
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -275,6 +278,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9325, {	-- Stealing Thunder Bluff's Flame
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -299,6 +303,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9326, {	-- Stealing the Undercity's Flame
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -322,6 +327,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9367, {	-- The Festival of Fire
+				["isYearly"] = true,
 				["qg"] = 16817,	-- Festival Loremaster
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -351,6 +357,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9322, {	-- Wild Fires in Kalimdor
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
@@ -392,6 +399,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				},
 			}),
 			q(9323, {	-- Wild Fires in the Eastern Kingdoms
+				["isYearly"] = true,
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
