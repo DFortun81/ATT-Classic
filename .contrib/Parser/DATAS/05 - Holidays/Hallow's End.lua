@@ -126,6 +126,12 @@ _.Holidays = bubbleDown({ ["u"] = HALLOWS_END },
 				["qg"] = 15197,	-- Darkcaller Yanka
 				["repeatable"] = true,
 			}),
+			q(1658, {	-- Crashing the Wickerman Festival
+				["lvl"] = 25,
+				["races"] = ALLIANCE_ONLY,
+				["qg"] = 15199,	-- Sergeant Hartman
+				["isYearly"] = true,
+			}),
 			q(8373, {	-- The Power of Pine
 				["lvl"] = 25,
 				["races"] = ALLIANCE_ONLY,

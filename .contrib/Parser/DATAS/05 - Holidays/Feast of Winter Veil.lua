@@ -152,7 +152,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				["lvl"] = 10,
 			}),
 			q(7023, {	-- Greatfather Winter is Here!
-			["isYearly"] = true,
+				["isYearly"] = true,
 				["qg"] = 13435,	-- Khole Jinglepocket <Smokywood Pastures>
 				["races"] = ALLIANCE_ONLY,
 				["lvl"] = 10,
