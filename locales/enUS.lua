@@ -661,12 +661,6 @@ app.L = {
 		[189990] = "Dark Iron Mole Machine Wreckage",
 	};
 	
-	["SUBMAP_NAMES"] = {
-		[1429] = {	-- Elwynn Forest
-			[1] = "TEST",	-- 
-		},
-	},
-	
 	["TRADESKILL_CATEGORY_ICONS"] = {
 		-- Engineering
 		[1] = "Interface\\Icons\\INV_Ammo_Bullet_01",	-- Bullets

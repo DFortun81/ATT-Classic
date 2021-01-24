@@ -3921,6 +3921,1010 @@ local ExploredSubMapsByID = setmetatable({}, { __index = function(t, id)
 	rawset(t, id, submaps);
 	return submaps;
 end })
+
+local EXPLORATION_MAP_ID_TO_AREA_ID_MAP = {
+	-- Eastern Kingdoms
+	[1416] = { areaID = 36 }, 						-- Alterac Mountains
+	[1417] = { areaID = 45 }, 						-- Arathi Highlands
+	[1418] = { areaID = 3 }, 						-- Badlands
+	[1419] = { areaID = 4 }, 						-- Blasted Lands
+	[1428] = { areaID = 46 }, 						-- Burning Steppes
+	[1430] = { areaID = 41 }, 						-- Deadwind Pass
+	[1426] = { areaID = 1 }, 						-- Dun Morogh
+	[1431] = { areaID = 10 }, 						-- Duskwood
+	[1423] = { areaID = 139 }, 						-- Eastern Plaguelands
+	[1429] = { areaID = 12 }, 						-- Elwynn Forest
+	[1424] = { areaID = 267 }, 						-- Hillsbrad Foothills
+	[1432] = { areaID = 38 }, 						-- Loch Modan
+	[1433] = { areaID = 44 }, 						-- Redridge Mountains
+	[1427] = { areaID = 51 }, 						-- Searing Gorge
+	[1421] = { areaID = 130 }, 						-- Silverpine Forest
+	[1434] = { areaID = 33 }, 						-- Stranglethorn Vale
+	[1435] = { areaID = 8 }, 						-- Swamp of Sorrows
+	[1425] = { areaID = 47 }, 						-- The Hinterlands
+	[1420] = { areaID = 85 }, 						-- Tirisfal Glades
+	[1436] = { areaID = 40 }, 						-- Westfall
+	[1422] = { areaID = 28 }, 						-- Western Plaguelands
+	[1437] = { areaID = 11 }, 						-- Wetlands
+
+	-- Kalimdor
+	[1440] = { areaID = 331 }, 						-- Ashenvale
+	[1447] = { areaID = 16 }, 						-- Azshara
+	[1439] = { areaID = 148 }, 						-- Darkshore
+	[1443] = { areaID = 405 }, 						-- Desolace
+	[1411] = { areaID = 14 }, 						-- Durotar
+	[1445] = { areaID = 15 }, 						-- Dustwallow Marsh
+	[1448] = { areaID = 361 }, 						-- Felwood
+	[1444] = { areaID = 357 }, 						-- Feralas
+	[1450] = { areaID = 493 }, 						-- Moonglade
+	[1412] = { areaID = 215 }, 						-- Mulgore
+	[1451] = { areaID = 1377 }, 					-- Silithus
+	[1442] = { areaID = 406 }, 						-- Stonetalon Mountains
+	[1446] = { areaID = 440 }, 						-- Tanaris
+	[1438] = { areaID = 141 }, 						-- Teldrassil
+	[1413] = { areaID = 17 }, 						-- The Barrens
+	[1441] = { areaID = 400 }, 						-- Thousand Needles
+	[1449] = { areaID = 490 }, 						-- Un'Goro Crater
+	[1452] = { areaID = 618 }  						-- Winterspring
+};
+
+local EXPLORATION_AREA_ID_MAP = {
+	[1] = {                                      -- Dun Morogh
+		[77] = 1,                                -- Anvilmar
+		[131] = 2,                               -- Kharanos
+		[132] = 3,                               -- Coldridge Valley
+		[133] = 4,                               -- Gnomeregan
+		[134] = 5,                               -- Gol'Bolar Quarry
+		[135] = 6,                               -- Frostmane Hold
+		[136] = 7,                               -- The Grizzled Den
+		[137] = 8,                               -- Brewnall Village
+		[138] = 9,                               -- Misty Pine Refuge
+		[189] = 10,                              -- Steelgrill's Depot
+		[211] = 11,                              -- Iceflow Lake
+		[212] = 12,                              -- Helm's Bed Lake
+		[716] = 13,                              -- Ironband's Compound
+		[800] = 14,                              -- Coldridge Pass
+		[801] = 15,                              -- Chill Breeze Valley
+		[802] = 16,                              -- Shimmer Ridge
+		[803] = 17,                              -- Amberstill Ranch
+		[804] = 18,                              -- The Tundrid Hills
+		[805] = 19,                              -- South Gate Pass
+		[806] = 20,                              -- South Gate Outpost
+		[807] = 21,                              -- North Gate Pass
+		[808] = 22,                              -- North Gate Outpost
+		[809] = 23,                              -- Gates of Ironforge
+		[2102] = 24,                             -- Thunderbrew Distillery
+	},
+	[3] = {                                      -- Badlands
+		[337] = 1,                               -- Apocryphan's Rest
+		[338] = 2,                               -- Angor Fortress
+		[339] = 3,                               -- Lethlor Ravine
+		[340] = 4,                               -- Kargath
+		[341] = 5,                               -- Camp Kosh
+		[342] = 6,                               -- Camp Boff
+		[343] = 7,                               -- Camp Wurg
+		[344] = 8,                               -- Camp Cagg
+		[345] = 9,                               -- Agmond's End
+		[346] = 10,                              -- Hammertoe's Digsite
+		[347] = 11,                              -- Dustbelch Grotto
+		[1517] = 12,                             -- Uldaman
+		[1877] = 13,                             -- Valley of Fangs
+		[1878] = 14,                             -- The Dustbowl
+		[1879] = 15,                             -- Mirage Flats
+		[1897] = 16,                             -- The Maker's Terrace
+		[1898] = 17,                             -- Dustwind Gulch
+	},
+	[4] = {                                      -- Blasted Lands
+		[72] = 1,                                -- The Dark Portal
+		[73] = 2,                                -- The Tainted Scar
+		[1437] = 3,                              -- Dreadmaul Hold
+		[1438] = 4,                              -- Nethergarde Keep
+		[1439] = 5,                              -- Dreadmaul Post
+		[1440] = 6,                              -- Serpent's Coil
+		[1441] = 7,                              -- Altar of Storms
+		[1457] = 8,                              -- Garrison Armory
+		[2517] = 9,                              -- Rise of the Defiler
+	},
+	[8] = {                                      -- Swamp of Sorrows
+		[74] = 1,                                -- Pool of Tears
+		[75] = 2,                                -- Stonard
+		[76] = 3,                                -- Fallow Sanctuary
+		[116] = 4,                               -- Misty Valley
+		[300] = 5,                               -- Misty Reed Strand
+		[657] = 6,                               -- The Harborage
+		[1777] = 7,                              -- Itharius's Cave
+		[1778] = 8,                              -- Sorrowmurk
+		[1779] = 9,                              -- Draenil'dur Village
+		[1780] = 10,                             -- Splinterspear Junction
+		[1797] = 11,                             -- Stagalbog
+		[1798] = 12,                             -- The Shifting Mire
+		[1817] = 13,                             -- Stagalbog Cave
+		[1978] = 14,                             -- Misty Reed Post
+		[2403] = 15,                             -- The Forbidding Sea
+	},
+	[10] = {                                     -- Duskwood
+		[13] = 1,                                -- The World Tree
+		[32] = 2,                                -- The Cemetary
+		[42] = 3,                                -- Darkshire
+		[93] = 4,                                -- Vul'Gol Ogre Mound
+		[94] = 5,                                -- Raven Hill
+		[121] = 6,                               -- Tranquil Gardens Cemetery
+		[241] = 7,                               -- The Rotting Orchard
+		[242] = 8,                               -- Brightwood Grove
+		[243] = 9,                               -- Forlorn Rowe
+		[244] = 10,                              -- The Whipple Estate
+		[245] = 11,                              -- The Yorgen Farmstead
+		[492] = 12,                              -- Raven Hill Cemetery
+		[536] = 13,                              -- Addle's Stead
+		[576] = 14,                              -- Beggar's Haunt
+		[799] = 15,                              -- The Darkened Bank
+		[856] = 16,                              -- Twilight Grove
+		[1097] = 17,                             -- The Hushed Bank
+		[1098] = 18,                             -- Manor Mistmantle
+		[2098] = 19,                             -- Dawning Wood Catacombs
+		[2161] = 20,                             -- Roland's Doom
+	},
+	[11] = {                                     -- Wetlands
+		[118] = 1,                               -- Whelgar's Excavation Site
+		[150] = 2,                               -- Menethil Harbor
+		[205] = 3,                               -- Dun Modr
+		[298] = 4,                               -- Baradin Bay
+		[299] = 5,                               -- Menethil Bay
+		[309] = 6,                               -- Ironbeard's Tomb
+		[836] = 7,                               -- Dun Algaz
+		[881] = 8,                               -- Thandol Span
+		[1016] = 9,                              -- Direforge Hill
+		[1017] = 10,                             -- Raptor Ridge
+		[1018] = 11,                             -- Black Channel Marsh
+		[1020] = 12,                             -- Mosshide Fen
+		[1021] = 13,                             -- Thelgen Rock
+		[1022] = 14,                             -- Bluegill Marsh
+		[1023] = 15,                             -- Saltspray Glen
+		[1024] = 16,                             -- Sundown Marsh
+		[1025] = 17,                             -- The Green Belt
+		[1036] = 18,                             -- Angerfang Encampment
+		[1037] = 19,                             -- Grim Batol
+		[1038] = 20,                             -- Dragonmaw Gates
+		[1039] = 21,                             -- The Lost Fleet
+		[2103] = 22,                             -- Menethil Keep
+		[2104] = 23,                             -- Deepwater Tavern
+		[2365] = 24,                             -- The Great Sea
+		[2402] = 25,                             -- The Forbidding Sea
+	},
+	[12] = {                                     -- Elwynn Forest
+		[9] = 1,                                 -- Northshire Valley
+		[18] = 2,                                -- Crystal Lake
+		[23] = 3,                                -- Northshire River
+		[24] = 4,                                -- Northshire Abbey
+		[34] = 5,                                -- Echo Ridge Mine
+		[53] = 6,                                -- Thieves Camp
+		[54] = 7,                                -- Jasperlode Mine
+		[55] = 8,                                -- Valley of Heroes UNUSED
+		[56] = 9,                                -- Heroes' Vigil
+		[57] = 10,                               -- Fargodeep Mine
+		[59] = 11,                               -- Northshire Vineyards
+		[60] = 12,                               -- Forest's Edge
+		[61] = 13,                               -- Thunder Falls
+		[62] = 14,                               -- Brackwell Pumpkin Patch
+		[63] = 15,                               -- The Stonefield Farm
+		[64] = 16,                               -- The Maclure Vineyards
+		[80] = 17,                               -- Stormwind Mountains
+		[86] = 18,                               -- Stone Cairn Lake
+		[87] = 19,                               -- Goldshire
+		[88] = 20,                               -- Eastvale Logging Camp
+		[89] = 21,                               -- Mirror Lake Orchard
+		[91] = 22,                               -- Tower of Azora
+		[92] = 23,                               -- Mirror Lake
+		[120] = 24,                              -- Westbrook Garrison
+		[797] = 25,                              -- Jerod's Landing
+		[798] = 26,                              -- Ridgepoint Tower
+	},
+	[14] = {                                     -- Durotar
+		[362] = 1,                               -- Razor Hill
+		[363] = 2,                               -- Valley of Trials
+		[364] = 3,                               -- The Den
+		[365] = 4,                               -- Burning Blade Coven
+		[366] = 5,                               -- Kolkar Crag
+		[367] = 6,                               -- Sen'jin Village
+		[368] = 7,                               -- Echo Isles
+		[369] = 8,                               -- Thunder Ridge
+		[370] = 9,                               -- Drygulch Ravine
+		[371] = 10,                              -- Dustwind Cave
+		[372] = 11,                              -- Tiragarde Keep
+		[373] = 12,                              -- Scuttle Coast
+		[374] = 13,                              -- Bladefist Bay
+		[375] = 14,                              -- Deadeye Shore
+		[393] = 15,                              -- Darkspear Strand
+		[407] = 16,                              -- Orgrimmar UNUSED
+		[410] = 17,                              -- Razorwind Canyon
+		[638] = 18,                              -- Hidden Path
+		[639] = 19,                              -- Spirit Rock
+		[640] = 20,                              -- Shrine of the Dormant Flame
+		[814] = 21,                              -- Southfury River
+		[816] = 22,                              -- Razormane Grounds
+		[817] = 23,                              -- Skull Rock
+		[1296] = 24,                             -- Rocktusk Farm
+		[1297] = 25,                             -- Jaggedswine Farm
+		[2320] = 26,                             -- The Great Sea
+		[2337] = 27,                             -- Razor Hill Barracks
+		[2979] = 28,                             -- Tor'kren Farm
+	},
+	[15] = {                                     -- Dustwallow Marsh
+		[403] = 1,                               -- Shady Rest Inn
+		[496] = 2,                               -- Brackenwall Village
+		[497] = 3,                               -- Swamplight Manor
+		[498] = 4,                               -- Bloodfen Burrow
+		[499] = 5,                               -- Darkmist Cavern
+		[500] = 6,                               -- Moggle Point
+		[501] = 7,                               -- Beezil's Wreck
+		[502] = 8,                               -- Witch Hill
+		[503] = 9,                               -- Sentry Point
+		[504] = 10,                              -- North Point Tower
+		[505] = 11,                              -- West Point Tower
+		[506] = 12,                              -- Lost Point
+		[507] = 13,                              -- Bluefen
+		[508] = 14,                              -- Stonemaul Ruins
+		[509] = 15,                              -- The Den of Flame
+		[510] = 16,                              -- The Dragonmurk
+		[511] = 17,                              -- Wyrmbog
+		[512] = 18,                              -- Onyxia's Lair UNUSED
+		[513] = 19,                              -- Theramore Isle
+		[514] = 20,                              -- Foothold Citadel
+		[515] = 21,                              -- Ironclad Prison
+		[516] = 22,                              -- Dustwallow Bay
+		[517] = 23,                              -- Tidefury Cove
+		[518] = 24,                              -- Dreadmurk Shore
+		[2079] = 25,                             -- Alcaz Island
+		[2158] = 26,                             -- Emberstrife's Den
+		[2302] = 27,                             -- The Quagmire
+		[2318] = 28,                             -- The Great Sea
+	},
+	[16] = {                                     -- Azshara
+		[878] = 1,                               -- Southfury River
+		[1216] = 2,                              -- Timbermaw Hold
+		[1217] = 3,                              -- Vanndir Encampment
+		[1218] = 4,                              -- TESTAzshara
+		[1219] = 5,                              -- Legash Encampment
+		[1220] = 6,                              -- Thalassian Base Camp
+		[1221] = 7,                              -- Ruins of Eldarath
+		[1222] = 8,                              -- Hetaera's Clutch
+		[1223] = 9,                              -- Temple of Zin-Malor
+		[1224] = 10,                             -- Bear's Head
+		[1225] = 11,                             -- Ursolan
+		[1226] = 12,                             -- Temple of Arkkoran
+		[1227] = 13,                             -- Bay of Storms
+		[1228] = 14,                             -- The Shattered Strand
+		[1229] = 15,                             -- Tower of Eldara
+		[1230] = 16,                             -- Jagged Reef
+		[1231] = 17,                             -- Southridge Beach
+		[1232] = 18,                             -- Ravencrest Monument
+		[1233] = 19,                             -- Forlorn Ridge
+		[1234] = 20,                             -- Lake Mennar
+		[1235] = 21,                             -- Shadowsong Shrine
+		[1236] = 22,                             -- Haldarr Encampment
+		[1237] = 23,                             -- Valormok
+		[1256] = 24,                             -- The Ruined Reaches
+		[2321] = 25,                             -- The Great Sea
+		[2497] = 26,                             -- Bitter Reaches
+		[3137] = 27,                             -- Talrendis Point
+		[3138] = 28,                             -- Rethress Sanctum
+		[3140] = 29,                             -- Scalebeard's Cave
+	},
+	[17] = {                                     -- The Barrens
+		[359] = 1,                               -- Bael Modan
+		[378] = 2,                               -- Camp Taurajo
+		[379] = 3,                               -- Far Watch Post
+		[380] = 4,                               -- The Crossroads
+		[381] = 5,                               -- Boulder Lode Mine
+		[382] = 6,                               -- The Sludge Fen
+		[383] = 7,                               -- The Dry Hills
+		[384] = 8,                               -- Dreadmist Peak
+		[385] = 9,                               -- Northwatch Hold
+		[386] = 10,                              -- The Forgotten Pools
+		[387] = 11,                              -- Lushwater Oasis
+		[388] = 12,                              -- The Stagnant Oasis
+		[390] = 13,                              -- Field of Giants
+		[391] = 14,                              -- The Merchant Coast
+		[392] = 15,                              -- Ratchet
+		[401] = 16,                              -- The Tidus Stair
+		[458] = 17,                              -- Gold Road
+		[720] = 18,                              -- Fray Island
+		[815] = 19,                              -- Southfury River
+		[877] = 20,                              -- Delete ME
+		[1156] = 21,                             -- Southern Barrens
+		[1157] = 22,                             -- Southern Gold Road
+		[1316] = 23,                             -- Razorfen Downs
+		[1597] = 24,                             -- Raptor Grounds UNUSED
+		[1598] = 25,                             -- Grol'dom Farm UNUSED
+		[1599] = 26,                             -- Mor'shan Base Camp
+		[1600] = 27,                             -- Honor's Stand UNUSED
+		[1601] = 28,                             -- Blackthorn Ridge UNUSED
+		[1602] = 29,                             -- Bramblescar UNUSED
+		[1603] = 30,                             -- Agama'gor UNUSED
+		[1697] = 31,                             -- Raptor Grounds
+		[1698] = 32,                             -- Bramblescar
+		[1699] = 33,                             -- Thorn Hill
+		[1700] = 34,                             -- Agama'gor
+		[1701] = 35,                             -- Blackthorn Ridge
+		[1702] = 36,                             -- Honor's Stand
+		[1703] = 37,                             -- The Mor'shan Rampart
+		[1704] = 38,                             -- Grol'dom Farm
+		[1717] = 39,                             -- Razorfen Kraul
+		[1718] = 40,                             -- The Great Lift
+		[2138] = 41,                             -- Dreadmist Den
+		[2157] = 42,                             -- Bael'dun Keep
+		[2319] = 43,                             -- The Great Sea
+		[2757] = 44,                             -- Shrine of the Fallen Warrior
+	},
+	[28] = {                                     -- Western Plaguelands
+		[190] = 1,                               -- Hearthglen
+		[192] = 2,                               -- Northridge Lumber Camp
+		[193] = 3,                               -- Ruins of Andorhal
+		[195] = 4,                               -- School of Necromancy
+		[196] = 5,                               -- Uther's Tomb
+		[197] = 6,                               -- Sorrow Hill
+		[198] = 7,                               -- The Weeping Cave
+		[199] = 8,                               -- Felstone Field
+		[200] = 9,                               -- Dalson's Tears
+		[201] = 10,                              -- Gahrron's Withering
+		[202] = 11,                              -- The Writhing Haunt
+		[203] = 12,                              -- Mardenholde Keep
+		[813] = 13,                              -- The Bulwark
+		[2297] = 14,                             -- Darrowmere Lake
+		[2298] = 15,                             -- Caer Darrow
+		[2620] = 16,                             -- Thondroril River
+		[3197] = 17,                             -- Chillwind Camp
+	},
+	[33] = {                                     -- Stranglethorn Vale
+		[7] = 1,                                 -- Blackwater Cove
+		[19] = 2,                                -- Zul'Gurub
+		[35] = 3,                                -- Booty Bay
+		[37] = 4,                                -- Lake Nazferiti
+		[43] = 5,                                -- Wild Shore
+		[99] = 6,                                -- Rebel Camp
+		[100] = 7,                               -- Nesingwary's Expedition
+		[101] = 8,                               -- Kurzen's Compound
+		[102] = 9,                               -- Ruins of Zul'Kunda
+		[103] = 10,                              -- Ruins of Zul'Mamwe
+		[104] = 11,                              -- The Vile Reef
+		[105] = 12,                              -- Mosh'Ogg Ogre Mound
+		[106] = 13,                              -- The Stockpile
+		[117] = 14,                              -- Grom'gol Base Camp
+		[122] = 15,                              -- Zuuldaia Ruins
+		[123] = 16,                              -- Bal'lal Ruins
+		[125] = 17,                              -- Kal'ai Ruins
+		[126] = 18,                              -- Tkashi Ruins
+		[127] = 19,                              -- Balia'mah Ruins
+		[128] = 20,                              -- Ziata'jai Ruins
+		[129] = 21,                              -- Mizjah Ruins
+		[297] = 22,                              -- Jaguero Isle
+		[301] = 23,                              -- The Savage Coast
+		[302] = 24,                              -- The Crystal Shore
+		[303] = 25,                              -- Shell Beach
+		[310] = 26,                              -- Crystalvein Mine
+		[311] = 27,                              -- Ruins of Aboraz
+		[312] = 28,                              -- Janeiro's Point
+		[477] = 29,                              -- Ruins of Jubuwal
+		[1577] = 30,                             -- The Cape of Stranglethorn
+		[1578] = 31,                             -- Southern Savage Coast
+		[1737] = 32,                             -- Mistvale Valley
+		[1738] = 33,                             -- Nek'mani Wellspring
+		[1739] = 34,                             -- Bloodsail Compound
+		[1740] = 35,                             -- Venture Co. Base Camp
+		[1741] = 36,                             -- Gurubashi Arena
+		[1742] = 37,                             -- Spirit Den
+		[1757] = 38,                             -- The Crimson Veil
+		[1758] = 39,                             -- The Riptide
+		[1759] = 40,                             -- The Damsel's Luck
+		[1760] = 41,                             -- Venture Co. Operations Center
+		[2177] = 42,                             -- Battle Ring
+		[2338] = 43,                             -- South Seas
+		[2339] = 44,                             -- The Great Sea
+		[3357] = 45,                             -- Yojamba Isle
+	},
+	[36] = {                                     -- Alterac Mountains
+		[277] = 1,                               -- The Foothill Caverns
+		[278] = 2,                               -- Lordamere Internment Camp
+		[279] = 3,                               -- Dalaran
+		[280] = 4,                               -- Strahnbrad
+		[281] = 5,                               -- Ruins of Alterac
+		[282] = 6,                               -- Crushridge Hold
+		[283] = 7,                               -- Slaughter Hollow
+		[284] = 8,                               -- The Uplands
+		[1339] = 9,                              -- Lordamere Lake
+		[1357] = 10,                             -- Gallows' Corner
+		[1677] = 11,                             -- Gavin's Naze
+		[1678] = 12,                             -- Sofera's Naze
+		[1679] = 13,                             -- Corrahn's Dagger
+		[1680] = 14,                             -- The Headland
+		[1681] = 15,                             -- Misty Shore
+		[1682] = 16,                             -- Dandred's Fold
+		[1683] = 17,                             -- Growless Cave
+		[1684] = 18,                             -- Chillwind Point
+		[2839] = 19,                             -- Alterac Valley
+		[3486] = 20,                             -- Ravenholdt Manor
+	},
+	[38] = {                                     -- Loch Modan
+		[142] = 1,                               -- Ironband's Excavation Site
+		[143] = 2,                               -- Mo'grosh Stronghold
+		[144] = 3,                               -- Thelsamar
+		[145] = 4,                               -- Algaz Gate
+		[146] = 5,                               -- Stonewrought Dam
+		[147] = 6,                               -- The Farstrider Lodge
+		[149] = 7,                               -- Silver Stream Mine
+		[556] = 8,                               -- The Loch
+		[837] = 9,                               -- Dun Algaz
+		[838] = 10,                              -- North Gate Pass
+		[839] = 11,                              -- South Gate Pass
+		[923] = 12,                              -- Stonesplinter Valley
+		[924] = 13,                              -- Valley of Kings
+		[925] = 14,                              -- Algaz Station
+		[936] = 15,                              -- Grizzlepaw Ridge
+		[2101] = 16,                             -- Stoutlager Inn
+	},
+	[40] = {                                     -- Westfall
+		[2] = 1,                                 -- Longshore
+		[20] = 2,                                -- Moonbrook
+		[26] = 3,                                -- Lighthouse
+		[107] = 4,                               -- Saldean's Farm
+		[108] = 5,                               -- Sentinel Hill
+		[109] = 6,                               -- Furlbrow's Pumpkin Farm
+		[111] = 7,                               -- Jangolode Mine
+		[113] = 8,                               -- Gold Coast Quarry
+		[115] = 9,                               -- Westfall Lighthouse
+		[219] = 10,                              -- Alexston Farmstead
+		[916] = 11,                              -- The Jansen Stead
+		[917] = 12,                              -- The Dead Acre
+		[918] = 13,                              -- The Molsen Farm
+		[919] = 14,                              -- Stendel's Pond
+		[920] = 15,                              -- The Dagger Hills
+		[921] = 16,                              -- Demont's Place
+		[922] = 17,                              -- The Dust Plains
+		[1518] = 18,                             -- Not Used Deadmines
+		[2364] = 19,                             -- The Great Sea
+	},
+	[41] = {                                     -- Deadwind Pass
+		[2558] = 1,                              -- Deadwind Ravine
+		[2559] = 2,                              -- Diamondhead River
+		[2560] = 3,                              -- Ariden's Camp
+		[2561] = 4,                              -- The Vice
+		[2562] = 5,                              -- Karazhan
+		[2563] = 6,                              -- Morgan's Plot
+		[2697] = 7,                              -- Deadman's Crossing
+		[2837] = 8,                              -- The Master's Cellar
+		[2937] = 9,                              -- Grosh'gok Compound
+		[2938] = 10,                             -- Sleeping Gorge
+	},
+	[44] = {                                     -- Redridge Mountains
+		[68] = 1,                                -- Lake Everstill
+		[69] = 2,                                -- Lakeshire
+		[70] = 3,                                -- Stonewatch
+		[71] = 4,                                -- Stonewatch Falls
+		[95] = 5,                                -- Redridge Canyons
+		[96] = 6,                                -- Tower of Ilgalar
+		[97] = 7,                                -- Alther's Mill
+		[98] = 8,                                -- Rethban Caverns
+		[996] = 9,                               -- Render's Camp
+		[997] = 10,                              -- Render's Valley
+		[998] = 11,                              -- Render's Rock
+		[999] = 12,                              -- Stonewatch Tower
+		[1000] = 13,                             -- Galardell Valley
+		[1001] = 14,                             -- Lakeridge Highway
+		[1002] = 15,                             -- Three Corners
+		[2099] = 16,                             -- Stonewatch Keep
+	},
+	[45] = {                                     -- Arathi Highlands
+		[313] = 1,                               -- Northfold Manor
+		[314] = 2,                               -- Go'Shek Farm
+		[315] = 3,                               -- Dabyrie's Farmstead
+		[316] = 4,                               -- Boulderfist Hall
+		[317] = 5,                               -- Witherbark Village
+		[318] = 6,                               -- Drywhisker Gorge
+		[320] = 7,                               -- Refuge Pointe
+		[321] = 8,                               -- Hammerfall
+		[322] = 9,                               -- Blackwater Shipwrecks
+		[323] = 10,                              -- O'Breen's Camp
+		[324] = 11,                              -- Stromgarde Keep
+		[325] = 12,                              -- The Tower of Arathor
+		[326] = 13,                              -- The Sanctum
+		[327] = 14,                              -- Faldir's Cove
+		[328] = 15,                              -- The Drowned Reef
+		[333] = 16,                              -- Circle of East Binding
+		[334] = 17,                              -- Circle of West Binding
+		[335] = 18,                              -- Circle of Inner Binding
+		[336] = 19,                              -- Circle of Outer Binding
+		[880] = 20,                              -- Thandol Span
+		[1837] = 21,                             -- Witherbark Caverns
+		[1857] = 22,                             -- Thoradin's Wall
+		[1858] = 23,                             -- Boulder'gor
+		[2401] = 24,                             -- The Forbidding Sea
+	},
+	[46] = {                                     -- Burning Steppes
+		[249] = 1,                               -- Dreadmaul Rock
+		[250] = 2,                               -- Ruins of Thaurissan
+		[251] = 3,                               -- Flame Crest
+		[252] = 4,                               -- Blackrock Stronghold
+		[253] = 5,                               -- The Pillar of Ash
+		[254] = 6,                               -- Blackrock Mountain
+		[255] = 7,                               -- Altar of Storms
+		[2417] = 8,                              -- Blackrock Pass
+		[2418] = 9,                              -- Morgan's Vigil
+		[2419] = 10,                             -- Slither Rock
+		[2420] = 11,                             -- Terror Wing Path
+		[2421] = 12,                             -- Draco'dar
+	},
+	[47] = {                                     -- The Hinterlands
+		[307] = 1,                               -- The Overlook Cliffs
+		[348] = 2,                               -- Aerie Peak
+		[349] = 3,                               -- Wildhammer Keep
+		[350] = 4,                               -- Quel'Danil Lodge
+		[351] = 5,                               -- Skulk Rock
+		[352] = 6,                               -- Zun'watha
+		[353] = 7,                               -- Shadra'Alor
+		[354] = 8,                               -- Jintha'Alor
+		[355] = 9,                               -- The Altar of Zul
+		[356] = 10,                              -- Seradane
+		[1880] = 11,                             -- Featherbeard's Hovel
+		[1881] = 12,                             -- Shindigger's Camp
+		[1882] = 13,                             -- Plaguemist Ravine
+		[1883] = 14,                             -- Valorwind Lake
+		[1884] = 15,                             -- Agol'watha
+		[1885] = 16,                             -- Hiri'watha
+		[1886] = 17,                             -- The Creeping Ruin
+		[1887] = 18,                             -- Bogen's Ledge
+		[1917] = 19,                             -- Shaol'watha
+		[2400] = 20,                             -- The Forbidding Sea
+		[3317] = 21,                             -- Revantusk Village
+	},
+	[51] = {                                     -- Searing Gorge
+		[246] = 1,                               -- The Cauldron
+		[247] = 2,                               -- Grimesilt Dig Site
+		[1442] = 3,                              -- Firewatch Ridge
+		[1443] = 4,                              -- The Slag Pit
+		[1444] = 5,                              -- The Sea of Cinders
+		[1445] = 6,                              -- Blackrock Mountain
+		[1446] = 7,                              -- Thorium Point
+		[1957] = 8,                              -- Blackchar Cave
+		[1958] = 9,                              -- Tanner Camp
+		[1959] = 10,                             -- Dustfire Valley
+		[2838] = 11,                             -- Stonewrought Pass
+	},
+	[85] = {                                     -- Tirisfal Glades
+		[152] = 1,                               -- The Bulwark
+		[153] = 2,                               -- Ruins of Lordaeron
+		[154] = 3,                               -- Deathknell
+		[155] = 4,                               -- Night Web's Hollow
+		[156] = 5,                               -- Solliden Farmstead
+		[157] = 6,                               -- Agamand Mills
+		[158] = 7,                               -- Agamand Family Crypt
+		[159] = 8,                               -- Brill
+		[160] = 9,                               -- Whispering Gardens
+		[161] = 10,                              -- Terrace of Repose
+		[162] = 11,                              -- Brightwater Lake
+		[163] = 12,                              -- Gunther's Retreat
+		[164] = 13,                              -- Garren's Haunt
+		[165] = 14,                              -- Balnir Farmstead
+		[166] = 15,                              -- Cold Hearth Manor
+		[167] = 16,                              -- Crusader Outpost
+		[168] = 17,                              -- The North Coast
+		[169] = 18,                              -- Whispering Shore
+		[173] = 19,                              -- Faol's Rest
+		[459] = 20,                              -- Scarlet Watch Post
+		[810] = 21,                              -- Stillwater Pond
+		[811] = 22,                              -- Nightmare Vale
+		[812] = 23,                              -- Venomweb Vale
+		[2117] = 24,                             -- Shadow Grave
+		[2118] = 25,                             -- Brill Town Hall
+		[2119] = 26,                             -- Gallows' End Tavern
+		[2399] = 27,                             -- The Great Sea
+	},
+	[130] = {                                    -- Silverpine Forest
+		[172] = 1,                               -- Fenris Isle
+		[204] = 2,                               -- Pyrewood Village
+		[213] = 3,                               -- Deep Elem Mine
+		[226] = 4,                               -- The Skittering Dark
+		[227] = 5,                               -- Valgan's Field
+		[228] = 6,                               -- The Sepulcher
+		[229] = 7,                               -- Olsen's Farthing
+		[230] = 8,                               -- The Greymane Wall
+		[231] = 9,                               -- Beren's Peril
+		[232] = 10,                              -- The Dawning Isles
+		[233] = 11,                              -- Ambermill
+		[235] = 12,                              -- Fenris Keep
+		[236] = 13,                              -- Shadowfang Keep
+		[237] = 14,                              -- The Decrepit Ferry
+		[238] = 15,                              -- Malden's Orchard
+		[239] = 16,                              -- The Ivar Patch
+		[240] = 17,                              -- The Dead Field
+		[305] = 18,                              -- North Tide's Run
+		[306] = 19,                              -- South Tide's Run
+		[926] = 20,                              -- Bucklebree Farm
+		[927] = 21,                              -- The Shining Strand
+		[928] = 22,                              -- North Tide's Hollow
+		[1338] = 23,                             -- Lordamere Lake
+		[2398] = 24,                             -- The Great Sea
+	},
+	[139] = {                                    -- Eastern Plaguelands
+		[1019] = 1,                              -- The Green Belt
+		[2258] = 2,                              -- The Fungal Vale
+		[2259] = 3,                              -- UNUSEDThe Marris Stead
+		[2260] = 4,                              -- The Marris Stead
+		[2261] = 5,                              -- The Undercroft
+		[2262] = 6,                              -- Darrowshire
+		[2263] = 7,                              -- Crown Guard Tower
+		[2264] = 8,                              -- Corin's Crossing
+		[2265] = 9,                              -- Scarlet Base Camp
+		[2266] = 10,                             -- Tyr's Hand
+		[2267] = 11,                             -- The Scarlet Basilica
+		[2268] = 12,                             -- Light's Hope Chapel
+		[2269] = 13,                             -- Browman Mill
+		[2270] = 14,                             -- The Noxious Glade
+		[2271] = 15,                             -- Eastwall Tower
+		[2272] = 16,                             -- Northdale
+		[2273] = 17,                             -- Zul'Mashar
+		[2274] = 18,                             -- Mazra'Alor
+		[2275] = 19,                             -- Northpass Tower
+		[2276] = 20,                             -- Quel'Lithien Lodge
+		[2277] = 21,                             -- Plaguewood
+		[2278] = 22,                             -- Scourgehold
+		[2279] = 23,                             -- Stratholme
+		[2299] = 24,                             -- Darrowmere Lake
+		[2619] = 25,                             -- Thondroril River
+		[2621] = 26,                             -- Lake Mereldar
+		[2622] = 27,                             -- Pestilent Scar
+		[2623] = 28,                             -- The Infectis Scar
+		[2624] = 29,                             -- Blackwood Lake
+		[2625] = 30,                             -- Eastwall Gate
+		[2626] = 31,                             -- Terrorweb Tunnel
+		[2627] = 32,                             -- Terrordale
+	},
+	[141] = {                                    -- Teldrassil
+		[186] = 1,                               -- Dolanaar
+		[187] = 2,                               -- Darnassus UNUSED
+		[188] = 3,                               -- Shadowglen
+		[256] = 4,                               -- Aldrassil
+		[257] = 5,                               -- Shadowthread Cave
+		[258] = 6,                               -- Fel Rock
+		[259] = 7,                               -- Lake Al'Ameth
+		[260] = 8,                               -- Starbreeze Village
+		[261] = 9,                               -- Gnarlpine Hold
+		[262] = 10,                              -- Ban'ethil Barrow Den
+		[263] = 11,                              -- The Cleft
+		[264] = 12,                              -- The Oracle Glade
+		[265] = 13,                              -- Wellspring River
+		[266] = 14,                              -- Wellspring Lake
+		[478] = 15,                              -- Pools of Arlithrien
+		[696] = 16,                              -- Craftsmen's Terrace UNUSED
+		[697] = 17,                              -- Tradesmen's Terrace UNUSED
+		[698] = 18,                              -- The Temple Gardens UNUSED
+		[699] = 19,                              -- Temple of Elune UNUSED
+		[700] = 20,                              -- Cenarion Enclave UNUSED
+		[701] = 21,                              -- Warrior's Terrace UNUSED
+		[702] = 22,                              -- Rut'theran Village
+		[736] = 23,                              -- Ban'ethil Hollow
+		[2322] = 24,                             -- The Veiled Sea
+	},
+	[148] = {                                    -- Darkshore
+		[442] = 1,                               -- Auberdine
+		[443] = 2,                               -- Ruins of Mathystra
+		[444] = 3,                               -- Tower of Althalaxx
+		[445] = 4,                               -- Cliffspring Falls
+		[446] = 5,                               -- Bashal'Aran
+		[447] = 6,                               -- Ameth'Aran
+		[448] = 7,                               -- Grove of the Ancients
+		[449] = 8,                               -- The Master's Glaive
+		[450] = 9,                               -- Remtravel's Excavation
+		[452] = 10,                              -- Mist's Edge
+		[453] = 11,                              -- The Long Wash
+		[454] = 12,                              -- Wildbend River
+		[455] = 13,                              -- Blackwood Den
+		[456] = 14,                              -- Cliffspring River
+		[2077] = 15,                             -- Twilight Vale
+		[2078] = 16,                             -- Twilight Shore
+		[2326] = 17,                             -- The Veiled Sea
+	},
+	[215] = {                                    -- Mulgore
+		[220] = 1,                               -- Red Cloud Mesa
+		[221] = 2,                               -- Camp Narache
+		[222] = 3,                               -- Bloodhoof Village
+		[223] = 4,                               -- Stonebull Lake
+		[224] = 5,                               -- Ravaged Caravan
+		[225] = 6,                               -- Red Rocks
+		[358] = 7,                               -- Brambleblade Ravine
+		[360] = 8,                               -- The Venture Co. Mine
+		[396] = 9,                               -- Winterhoof Water Well
+		[397] = 10,                              -- Thunderhorn Water Well
+		[398] = 11,                              -- Wildmane Water Well
+		[399] = 12,                              -- Skyline Ridge
+		[404] = 13,                              -- Bael'dun Digsite
+		[470] = 14,                              -- Thunder Bluff UNUSED
+		[471] = 15,                              -- Brave Wind Mesa
+		[472] = 16,                              -- Fire Stone Mesa
+		[473] = 17,                              -- Mantle Rock
+		[474] = 18,                              -- Hunter Rise UNUSED
+		[475] = 19,                              -- Spirit RiseUNUSED
+		[476] = 20,                              -- Elder RiseUNUSED
+		[637] = 21,                              -- Kodo Rock
+		[818] = 22,                              -- Palemane Rock
+		[819] = 23,                              -- Windfury Ridge
+		[820] = 24,                              -- The Golden Plains
+		[821] = 25,                              -- The Rolling Plains
+		[2137] = 26,                             -- The Pools of VisionUNUSED
+	},
+	[267] = {                                    -- Hillsbrad Foothills
+		[271] = 1,                               -- Southshore
+		[272] = 2,                               -- Tarren Mill
+		[275] = 3,                               -- Durnholde Keep
+		[285] = 4,                               -- Southpoint Tower
+		[286] = 5,                               -- Hillsbrad Fields
+		[287] = 6,                               -- Hillsbrad
+		[288] = 7,                               -- Azurelode Mine
+		[289] = 8,                               -- Nethander Stead
+		[290] = 9,                               -- Dun Garok
+		[294] = 10,                              -- Eastern Strand
+		[295] = 11,                              -- Western Strand
+		[896] = 12,                              -- Purgation Isle
+		[1056] = 13,                             -- Darrow Hill
+		[1057] = 14,                             -- Thoradin's Wall
+		[2397] = 15,                             -- The Great Sea
+		[2777] = 16,                             -- UNUSED Alterac Valley
+	},
+	[331] = {                                    -- Ashenvale
+		[411] = 1,                               -- Bathran's Haunt
+		[412] = 2,                               -- The Ruins of Ordil'Aran
+		[413] = 3,                               -- Maestra's Post
+		[414] = 4,                               -- The Zoram Strand
+		[415] = 5,                               -- Astranaar
+		[416] = 6,                               -- The Shrine of Aessina
+		[417] = 7,                               -- Fire Scar Shrine
+		[418] = 8,                               -- The Ruins of Stardust
+		[419] = 9,                               -- The Howling Vale
+		[420] = 10,                              -- Silverwind Refuge
+		[421] = 11,                              -- Mystral Lake
+		[422] = 12,                              -- Fallen Sky Lake
+		[424] = 13,                              -- Iris Lake
+		[425] = 14,                              -- Moonwell
+		[426] = 15,                              -- Raynewood Retreat
+		[427] = 16,                              -- The Shady Nook
+		[428] = 17,                              -- Night Run
+		[429] = 18,                              -- Xavian
+		[430] = 19,                              -- Satyrnaar
+		[431] = 20,                              -- Splintertree Post
+		[432] = 21,                              -- The Dor'Danil Barrow Den
+		[433] = 22,                              -- Falfarren River
+		[434] = 23,                              -- Felfire Hill
+		[435] = 24,                              -- Demon Fall Canyon
+		[436] = 25,                              -- Demon Fall Ridge
+		[437] = 26,                              -- Warsong Lumber Camp
+		[438] = 27,                              -- Bough Shadow
+		[441] = 28,                              -- Lake Falathim
+		[879] = 29,                              -- Southfury River
+		[1276] = 30,                             -- The Talondeep Path
+		[2301] = 31,                             -- Thistlefur Village
+		[2325] = 32,                             -- The Veiled Sea
+		[2357] = 33,                             -- Bloodtooth Camp
+		[2358] = 34,                             -- Forest Song
+		[2359] = 35,                             -- Greenpaw Village
+		[2360] = 36,                             -- Silverwing Outpost
+		[2457] = 37,                             -- Nightsong Woods
+		[2637] = 38,                             -- Kargathia Keep
+		[2797] = 39,                             -- Blackfathom Deeps
+		[2897] = 40,                             -- Zoram'gar Outpost
+		[3177] = 41,                             -- Warsong Labor Camp
+		[3319] = 42,                             -- Silverwing Grove
+	},
+	[357] = {                                    -- Feralas
+		[489] = 1,                               -- Thalanaar
+		[1099] = 2,                              -- Camp Mojache
+		[1100] = 3,                              -- Grimtotem Compound
+		[1101] = 4,                              -- The Writhing Deep
+		[1102] = 5,                              -- Wildwind Lake
+		[1103] = 6,                              -- Gordunni Outpost
+		[1104] = 7,                              -- Mok'Gordun
+		[1105] = 8,                              -- Feral Scar Vale
+		[1106] = 9,                              -- Frayfeather Highlands
+		[1107] = 10,                             -- Idlewind Lake
+		[1108] = 11,                             -- The Forgotten Coast
+		[1109] = 12,                             -- East Pillar
+		[1110] = 13,                             -- West Pillar
+		[1111] = 14,                             -- Dream Bough
+		[1112] = 15,                             -- Jademir Lake
+		[1113] = 16,                             -- Oneiros
+		[1114] = 17,                             -- Ruins of Ravenwind
+		[1115] = 18,                             -- Rage Scar Hold
+		[1116] = 19,                             -- Feathermoon Stronghold
+		[1117] = 20,                             -- Ruins of Solarsal
+		[1118] = 21,                             -- Lower Wilds UNUSED
+		[1119] = 22,                             -- The Twin Colossals
+		[1120] = 23,                             -- Sardor Isle
+		[1121] = 24,                             -- Isle of Dread
+		[1136] = 25,                             -- High Wilderness
+		[1137] = 26,                             -- Lower Wilds
+		[2323] = 27,                             -- The Veiled Sea
+		[2518] = 28,                             -- Lariss Pavilion
+		[2519] = 29,                             -- Woodpaw Hills
+		[2520] = 30,                             -- Woodpaw Den
+		[2521] = 31,                             -- Verdantis River
+		[2522] = 32,                             -- Ruins of Isildien
+		[2577] = 33,                             -- Dire Maul
+		[3117] = 34,                             -- Shalzaru's Lair
+	},
+	[361] = {                                    -- Felwood
+		[1761] = 1,                              -- Deadwood Village
+		[1762] = 2,                              -- Felpaw Village
+		[1763] = 3,                              -- Jaedenar
+		[1764] = 4,                              -- Bloodvenom River
+		[1765] = 5,                              -- Bloodvenom Falls
+		[1766] = 6,                              -- Shatter Scar Vale
+		[1767] = 7,                              -- Irontree Woods
+		[1768] = 8,                              -- Irontree Cavern
+		[1769] = 9,                              -- Timbermaw Hold
+		[1770] = 10,                             -- Shadow Hold
+		[1771] = 11,                             -- Shrine of the Deceiver
+		[1997] = 12,                             -- Bloodvenom Post
+		[1998] = 13,                             -- Talonbranch Glade
+		[2478] = 14,                             -- Morlos'Aran
+		[2479] = 15,                             -- Emerald Sanctuary
+		[2480] = 16,                             -- Jadefire Glen
+		[2481] = 17,                             -- Ruins of Constellas
+		[2618] = 18,                             -- Jadefire Run
+	},
+	[400] = {                                    -- Thousand Needles
+		[439] = 1,                               -- The Shimmering Flats
+		[479] = 2,                               -- The Rustmaul Dig Site
+		[480] = 3,                               -- Camp E'thok
+		[481] = 4,                               -- Splithoof Crag
+		[482] = 5,                               -- Highperch
+		[483] = 6,                               -- The Screeching Canyon
+		[484] = 7,                               -- Freewind Post
+		[485] = 8,                               -- The Great Lift
+		[486] = 9,                               -- Galak Hold
+		[487] = 10,                              -- Roguefeather Den
+		[488] = 11,                              -- The Weathered Nook
+		[1557] = 12,                             -- Splithoof Hold
+		[2097] = 13,                             -- Darkcloud Pinnacle
+		[2237] = 14,                             -- Whitereach Post
+		[2238] = 15,                             -- Gornia
+		[2239] = 16,                             -- Zane's Eye Crater
+		[2240] = 17,                             -- Mirage Raceway
+		[2303] = 18,                             -- Windbreak Canyon
+		[3037] = 19,                             -- Ironstone Camp
+		[3038] = 20,                             -- Weazel's Crater
+		[3039] = 21,                             -- Tahonda Ruins
+	},
+	[405] = {                                    -- Desolace
+		[596] = 1,                               -- Kodo Graveyard
+		[597] = 2,                               -- Ghost Walker Post
+		[598] = 3,                               -- Sar'theris Strand
+		[599] = 4,                               -- Thunder Axe Fortress
+		[600] = 5,                               -- Bolgan's Hole
+		[602] = 6,                               -- Mannoroc Coven
+		[603] = 7,                               -- Sargeron
+		[604] = 8,                               -- Magram Village
+		[606] = 9,                               -- Gelkis Village
+		[607] = 10,                              -- Valley of Spears
+		[608] = 11,                              -- Nijel's Point
+		[609] = 12,                              -- Kolkar Village
+		[2198] = 13,                             -- Shadowbreak Ravine
+		[2217] = 14,                             -- Broken Spear Village
+		[2324] = 15,                             -- The Veiled Sea
+		[2404] = 16,                             -- Tethris Aran
+		[2405] = 17,                             -- Ethel Rethor
+		[2406] = 18,                             -- Ranazjar Isle
+		[2407] = 19,                             -- Kormek's Hut
+		[2408] = 20,                             -- Shadowprey Village
+		[2617] = 21,                             -- Scrabblescrew's Camp
+		[2657] = 22,                             -- Valley of Bones
+	},
+	[406] = {                                    -- Stonetalon Mountains
+		[460] = 1,                               -- Sun Rock Retreat
+		[461] = 2,                               -- Windshear Crag
+		[463] = 3,                               -- Cragpool Lake
+		[464] = 4,                               -- Mirkfallon Lake
+		[465] = 5,                               -- The Charred Vale
+		[466] = 6,                               -- Valley of the Bloodfuries
+		[467] = 7,                               -- Stonetalon Peak
+		[468] = 8,                               -- The Talon Den
+		[469] = 9,                               -- Greatwood Vale
+		[636] = 10,                              -- Blackwolf River
+		[1076] = 11,                             -- Webwinder Path
+		[1277] = 12,                             -- The Talondeep Path
+		[2160] = 13,                             -- Windshear Mine
+		[2537] = 14,                             -- Grimtotem Post
+		[2538] = 15,                             -- Camp Aparaje
+		[2539] = 16,                             -- Malaka'jin
+		[2540] = 17,                             -- Boulderslide Ravine
+		[2541] = 18,                             -- Sishir Canyon
+		[3157] = 19,                             -- Boulderslide Cavern
+	},
+	[440] = {                                    -- Tanaris
+		[976] = 1,                               -- Gadgetzan
+		[977] = 2,                               -- Steamwheedle Port
+		[978] = 3,                               -- Zul'Farrak
+		[979] = 4,                               -- Sandsorrow Watch
+		[980] = 5,                               -- Thistleshrub Valley
+		[981] = 6,                               -- The Gaping Chasm
+		[982] = 7,                               -- The Noxious Lair
+		[983] = 8,                               -- Dunemaul Compound
+		[984] = 9,                               -- Eastmoon Ruins
+		[985] = 10,                              -- Waterspring Field
+		[986] = 11,                              -- Zalashji's Den
+		[987] = 12,                              -- Land's End Beach
+		[988] = 13,                              -- Wavestrider Beach
+		[989] = 14,                              -- Uldum
+		[990] = 15,                              -- Valley of the Watchers
+		[991] = 16,                              -- Gunstan's Post
+		[992] = 17,                              -- Southmoon Ruins
+		[1336] = 18,                             -- Lost Rigger Cove
+		[1937] = 19,                             -- Noonshade Ruins
+		[1938] = 20,                             -- Broken Pillar
+		[1939] = 21,                             -- Abyssal Sands
+		[1940] = 22,                             -- Southbreak Shore
+		[2300] = 23,                             -- Caverns of Time
+		[2317] = 24,                             -- South Seas
+		[2857] = 25,                             -- The Rumble Cage
+	},
+	[490] = {                                    -- Un'Goro Crater
+		[537] = 1,                               -- Fire Plume Ridge
+		[538] = 2,                               -- Lakkari Tar Pits
+		[539] = 3,                               -- Terror Run
+		[540] = 4,                               -- The Slithering Scar
+		[541] = 5,                               -- Marshal's Refuge
+		[542] = 6,                               -- Fungal Rock
+		[543] = 7,                               -- Golakka Hot Springs
+		[1942] = 8,                              -- The Marshlands
+		[1943] = 9,                              -- Ironstone Plateau
+	},
+	[493] = {                                    -- Moonglade
+		[656] = 1,                               -- Lake Elune'ara
+		[2361] = 2,                              -- Nighthaven
+		[2362] = 3,                              -- Shrine of Remulos
+		[2363] = 4,                              -- Stormrage Barrow Dens
+	},
+	[618] = {                                    -- Winterspring
+		[2241] = 1,                              -- Frostsaber Rock
+		[2242] = 2,                              -- The Hidden Grove
+		[2243] = 3,                              -- Timbermaw Post
+		[2244] = 4,                              -- Winterfall Village
+		[2245] = 5,                              -- Mazthoril
+		[2246] = 6,                              -- Frostfire Hot Springs
+		[2247] = 7,                              -- Ice Thistle Hills
+		[2248] = 8,                              -- Dun Mandarr
+		[2249] = 9,                              -- Frostwhisper Gorge
+		[2250] = 10,                             -- Owl Wing Thicket
+		[2251] = 11,                             -- Lake Kel'Theril
+		[2252] = 12,                             -- The Ruins of Kel'Theril
+		[2253] = 13,                             -- Starfall Village
+		[2254] = 14,                             -- Ban'Thallow Barrow Den
+		[2255] = 15,                             -- Everlook
+		[2256] = 16,                             -- Darkwhisper Gorge
+		[3139] = 17,                             -- Moon Horror Den
+	},
+	[1377] = {                                   -- Silithus
+		[2477] = 1,                              -- The Veiled Sea
+		[2737] = 2,                              -- The Scarab Wall
+		[2738] = 3,                              -- Southwind Village
+		[2739] = 4,                              -- Twilight Base Camp
+		[2740] = 5,                              -- The Crystal Vale
+		[2741] = 6,                              -- The Scarab Dais
+		[2742] = 7,                              -- Hive'Ashi
+		[2743] = 8,                              -- Hive'Zora
+		[2744] = 9,                              -- Hive'Regal
+		[3077] = 10,                             -- Valor's Rest
+		[3097] = 11,                             -- The Swarming Pillar
+		[3098] = 12,                             -- Twilight Post
+		[3099] = 13,                             -- Twilight Outpost
+		[3100] = 14,                             -- Ravaged Twilight Camp
+		[3257] = 15,                             -- Bones of Grakkarond
+		[3425] = 16,                             -- Cenarion Hold
+		[3426] = 17,                             -- Staghelm Point
+		[3427] = 18,                             -- Bronzebeard Encampment
+		[3446] = 19,                             -- Twilight's Run
+		[3447] = 20,                             -- Ortell's Hideout
+		[3454] = 21,                             -- Ruins of Ahn'Qiraj
+	},
+}
+
 local EXPLORATION_ID_MAP = {
 	[1194] = {
 		["128:110:464:33"] = 1,
@@ -4744,11 +5748,24 @@ app.ExplorationClass = {
 			return "explorationID";
 		elseif key == "text" then
 			local mapID = t.mapID;
-			if mapID and L.SUBMAP_NAMES[mapID] then
-				return L.SUBMAP_NAMES[mapID][t.explorationID] or ("Unknown #" .. t.explorationID .. " [" .. t.hash .. "]");
-			else
-				return "Unknown Map ID for Exploration #" .. t.explorationID;
+
+			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
+				local areaID = EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID].areaID;
+
+				if EXPLORATION_AREA_ID_MAP[areaID] then
+					for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
+						if explorationID == t.explorationID then
+							local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
+
+							if subZoneName then
+								return subZoneName
+							end
+						end
+					end
+				end
 			end
+
+			return "Unknown Map ID for Exploration #" .. t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
 		elseif key == "mapID" then
