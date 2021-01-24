@@ -3916,6 +3916,27 @@ local arrOfNodes = {
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
+local ExploredSubMapsByID = setmetatable({}, { __index = function(t, id)
+	local submaps = {};
+	rawset(t, id, submaps);
+	return submaps;
+end })
+local EXPLORATION_ID_MAP = {
+	[1228] = {
+		["225:220:422:332"] = 1,
+		["240:220:250:270"] = 2,
+		["255:250:551:292"] = 3,
+		["256:210:704:330"] = 4,
+		["256:237:425:431"] = 5,
+		["256:240:238:428"] = 6,
+		["256:249:577:419"] = 7,
+		["256:256:381:147"] = 8,
+		["256:341:124:327"] = 9,
+		["306:233:696:435"] = 10,
+		["310:256:587:190"] = 11,
+		["485:405:0:0"] = 12
+	},
+};
 app.GetCurrentMapID = function()
 	local mapID = C_Map_GetBestMapForUnit("player");
 	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
@@ -4123,6 +4144,88 @@ app.events.TAXIMAP_OPENED = function()
 		end
 	end
 end
+app.ExplorationClass = {
+	__index = function(t, key)
+		if key == "key" then
+			return "explorationID";
+		elseif key == "text" then
+			local mapID = t.mapID;
+			if mapID and L.SUBMAP_NAMES[mapID] then
+				return L.SUBMAP_NAMES[mapID][t.explorationID] or ("Unknown #" .. t.explorationID .. " [" .. t.hash .. "]");
+			else
+				return "Unknown Map ID for Exploration #" .. t.explorationID;
+			end
+		elseif key == "icon" then
+			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
+		elseif key == "mapID" then
+			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
+		elseif key == "collectible" then
+			return true;
+		elseif key == "collected" then
+			local mapID = t.mapID;
+			if mapID then
+				local artID = t.artID;
+				if artID and EXPLORATION_ID_MAP[artID] then
+					local submaps = ExploredSubMapsByID[mapID];
+					local exploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures(mapID)
+					if exploredMapTextures then
+						for _,info in ipairs(exploredMapTextures) do
+							local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+							local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
+							if remappedExplorationID then
+								submaps[remappedExplorationID] = 1;
+							else
+								-- print("Missing Exploration ID for ", hash);
+							end
+						end
+					end
+					return submaps[t.explorationID];
+				else
+					-- print("Missing EXPLORATION_ID_MAP for Map #", mapID);
+				end
+			end
+		elseif key == "hash" then
+			local artID = t.artID;
+			if artID then
+				if EXPLORATION_ID_MAP[artID] then
+					for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+						if explorationID == t.explorationID then
+							return hash;
+						end
+					end
+				end
+			end
+		elseif key == "artID" then
+			local mapID = t.mapID;
+			if mapID then
+				return C_Map.GetMapArtID(mapID);
+			end
+		elseif key == "coords" then
+			local artID = t.artID;
+			if artID then
+				if EXPLORATION_ID_MAP[artID] then
+					local layers = C_Map.GetMapArtLayers(t.mapID);
+					if layers and layers[1] then
+						for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+							if explorationID == t.explorationID then
+								local coords = {};
+								local width, height, offsetX, offsetY = strsplit(":", hash);
+								tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
+								return coords;
+							end
+						end
+					end
+				end
+			end
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateExploration = function(id, t)
+	return setmetatable(constructor(id, t, "explorationID"), app.ExplorationClass);
+end
 app.BaseFlightPath = {
 	__index = function(t, key)
 		if key == "key" then
@@ -4239,7 +4342,27 @@ app.BaseMap = {
 	end
 };
 app.CreateMap = function(id, t)
-	return setmetatable(constructor(id, t, "mapID"), app.BaseMap);
+	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
+	local artID = C_Map.GetMapArtID(id);
+	if artID and map.g then
+		map.artID = artID;
+		local maxExplorationID = 0;
+		if EXPLORATION_ID_MAP[artID] then
+			for _,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+				if explorationID > maxExplorationID then
+					maxExplorationID = explorationID;
+				end
+			end
+		end
+		if maxExplorationID > 0 then
+			local explorationObjects = {};
+			for explorationID=1,maxExplorationID,1 do
+				tinsert(explorationObjects, app.CreateExploration(explorationID, {artID=artID}));
+			end
+			tinsert(map.g, 1, app.CreateNPC(-15, explorationObjects))
+		end
+	end
+	return map;
 end
 end)();
 

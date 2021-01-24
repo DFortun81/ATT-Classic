@@ -140,6 +140,7 @@ COMMON_BOSS_DROPS = -1;
 REWARDS = -18;
 QUESTS = -17;
 RARES = -16;
+EXPLORATION = -15;
 VENDORS = -2;
 ZONEDROPS = 0;
 
@@ -563,6 +564,9 @@ currency = function(id, t)								-- Create a CURRENCY Object
 end
 faction = function(id, t)								-- Create an FACTION Object
 	return struct("factionID", id, t);
+end
+exploration = function(id, t)							-- Create an EXPLORATION Object
+	return struct("explorationID", id, t);
 end
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightPathID", id, t);
