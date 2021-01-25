@@ -1823,8 +1823,8 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						tinsert(info, { left = "Used in Recipes:" });
 						if #entries < 25 then
 							table.sort(entries, function(a, b)
-								if a.group.name then
-									if b.group.name then
+								if a and a.group.name then
+									if b and b.group.name then
 										return a.group.name <= b.group.name;
 									end
 									return true;
