@@ -5748,7 +5748,6 @@ app.ExplorationClass = {
 			return "explorationID";
 		elseif key == "text" then
 			local mapID = t.mapID;
-
 			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
 				local areaID = EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID].areaID;
 
@@ -5756,7 +5755,6 @@ app.ExplorationClass = {
 					for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
 						if explorationID == t.explorationID then
 							local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
-
 							if subZoneName then
 								return subZoneName
 							end
@@ -5791,8 +5789,6 @@ app.ExplorationClass = {
 						end
 					end
 					return submaps[t.explorationID];
-				else
-					-- print("Missing EXPLORATION_ID_MAP for Map #", mapID);
 				end
 			end
 		elseif key == "hash" then
@@ -5964,6 +5960,9 @@ app.CreateMap = function(id, t)
 					maxExplorationID = explorationID;
 				end
 			end
+		else
+			-- NOTE: Crieve tested this, but you can't detect if you've discovered a major city. The map is always visible.
+			-- print("Missing EXPLORATION_ID_MAP for Map #", id , ", Art #", artID);
 		end
 		if maxExplorationID > 0 then
 			local explorationObjects = {};
