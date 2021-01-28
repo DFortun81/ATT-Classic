@@ -2808,10 +2808,6 @@ local classIcons = {
 	[11] = app.asset("ClassIcon_Druid"),
 };
 local SoftReserveUnitOnClick = function(self, button)
-	if app.Settings:GetTooltipSetting("SoftReservesLocked") then
-		app.print("You can't do that while the session is locked.");
-		return true;
-	end
 	local guid = self.ref.guid or self.ref.unit;
 	if guid then
 		if button == "RightButton" then
@@ -2828,6 +2824,10 @@ local SoftReserveUnitOnClick = function(self, button)
 						app:RefreshSoftReserveWindow();
 					end);
 				elseif UnitGUID("player") == guid then
+					if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+						app.print("You can't do that while the session is locked.");
+						return true;
+					end
 					-- A player can change their own, so long as it isn't locked.
 					app:ShowPopupDialog("Your Soft Reserve is currently set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nDo you want to delete it?",
 					function()
@@ -2868,6 +2868,10 @@ local SoftReserveUnitOnClick = function(self, button)
 					end);
 				end
 			elseif UnitGUID("player") == guid then
+				if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+					app.print("You can't do that while the session is locked.");
+					return true;
+				end
 				-- A player can change their own, so long as it isn't locked.
 				if self.ref.itemID then
 					app:ShowPopupDialogWithEditBox("Your Soft Reserve is set to:\n \n" .. (self.ref.itemText or RETRIEVING_DATA) .. "\n \nEnter a new Item ID or an Item Link.", "", function(cmd)
@@ -3356,7 +3360,7 @@ app.UpdateSoftReserveInternal = function(app, guid, itemID, timeStamp, isCurrent
 	end
 end
 app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCurrentPlayer)
-	if IsInGroup() and GetDataMember("SoftReserves")[guid] and app.Settings:GetTooltipSetting("SoftReservesLocked") then
+	if IsInGroup() and GetDataMember("SoftReserves")[guid] and not app.IsMasterLooter() and app.Settings:GetTooltipSetting("SoftReservesLocked") then
 		if not silentMode then
 			SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
 		end
@@ -3373,6 +3377,9 @@ app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCur
 					end
 					if app.IsMasterLooter() then
 						C_ChatInfo.SendAddonMessage("ATTC", "!\tsrml\t" .. guid .. "\t" .. itemID, app.GetGroupType());
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+							SendGroupChatMessage("Updated " .. (app:GetWindow("SoftReserves").GUIDToName(guid) or UnitName(guid) or guid) .. " to " .. (searchResults[1].link or select(1, GetItemInfo(itemID)) or ("itemid:" .. itemID)));
+						end
 					end
 				end
 			else
@@ -9077,6 +9084,17 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 			
 			self.Reset = function()
 				self.data = softReserves;
+			end
+			self.GUIDToName = function(guid)
+				local count = GetNumGroupMembers();
+				if count > 0 then
+					for raidIndex = 1, 40, 1 do
+						local name = select(1, GetRaidRosterInfo(raidIndex));
+						if name and UnitGUID(name) == guid then
+							return name;
+						end
+					end
+				end
 			end
 			
 			-- Setup Event Handlers and register for events
