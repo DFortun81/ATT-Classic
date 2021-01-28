@@ -2996,12 +2996,17 @@ app.BaseSoftReserveUnit = {
 			if itemID then
 				local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
 				if itemLink then
-					return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink;
+					return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink .. (t.mapText or "");
 				else
 					return RETRIEVING_DATA;
 				end
 			else
 				return "No Soft Reserve Selected";
+			end
+		elseif key == "mapText" then
+			local mapID = t.mapID;
+			if mapID and mapID ~= app.GetCurrentMapID() then
+				return " (" .. app.GetMapName(mapID) .. ")";
 			end
 		elseif key == "text" then
 			local name = t.unitText;
@@ -3053,6 +3058,52 @@ app.BaseSoftReserveUnit = {
 				end
 			else
 				return "No Soft Reserve Selected";
+			end
+		elseif key == "crs" then
+			local itemID = t.itemID;
+			if itemID then
+				local searchResults = app.SearchForField("itemID", itemID);
+				if searchResults and #searchResults > 0 then
+					for i,o in ipairs(searchResults) do
+						if o.itemID then
+							if o.crs then
+								return o.crs;
+							end
+							if o.qgs then
+								return o.qgs;
+							end
+							if o.parent then
+								if o.parent.npcID and o.parent.npcID > 0 then
+									return { o.parent.npcID };
+								end
+								if o.parent.cr then
+									return { o.parent.cr };
+								end
+								if o.parent.crs then
+									return o.parent.crs;
+								end
+								if o.parent.qgs then
+									return o.parent.qgs;
+								end
+							end
+						end
+					end
+				end
+			end
+		elseif key == "mapID" then
+			local itemID = t.itemID;
+			if itemID then
+				local searchResults = app.SearchForField("itemID", itemID);
+				if searchResults and #searchResults > 0 then
+					for i,o in ipairs(searchResults) do
+						if o.itemID then
+							local mapID = GetRelativeValue(o, "mapID");
+							if mapID then
+								return mapID;
+							end
+						end
+					end
+				end
 			end
 		else
 			-- Something that isn't dynamic.
