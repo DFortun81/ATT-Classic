@@ -128,7 +128,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
 end
-function app:ShowPopupDialogWithMultiLineEditBox(text)
+function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 	if not ATTEditBox then
 		local f = CreateFrame("Frame", "ATTEditBox", UIParent, "DialogBoxFrame")
 		f:SetPoint("CENTER")
@@ -140,8 +140,6 @@ function app:ShowPopupDialogWithMultiLineEditBox(text)
 			insets = { left = 4, right = 4, top = 4, bottom = 4 }
 		})
 		f:SetBackdropColor(0, 0, 0, 1);
-		
-		-- Movable
 		f:SetMovable(true)
 		f:SetClampedToScreen(true)
 		f:SetScript("OnMouseDown", function(self, button)
@@ -165,6 +163,12 @@ function app:ShowPopupDialogWithMultiLineEditBox(text)
 		eb:SetAutoFocus(false) -- dont automatically focus
 		eb:SetFontObject("ChatFontNormal")
 		eb:SetScript("OnEscapePressed", function() f:Hide() end)
+		ATTEditBoxButton:SetScript("OnClick", function (self, button, down)
+			if self:GetParent().OnClick then
+				self:GetParent().OnClick(ATTEditBoxEditBox:GetText());
+			end
+			self:GetParent():Hide();
+		end);
 		sf:SetScrollChild(eb)
 		
 		-- Resizable
@@ -192,6 +196,7 @@ function app:ShowPopupDialogWithMultiLineEditBox(text)
 		end)
 		f:Show()
 	end
+	ATTEditBox.OnClick = onclick;
 	if text then
 		ATTEditBoxEditBox:SetText(text)
 		ATTEditBoxEditBox:HighlightText();
