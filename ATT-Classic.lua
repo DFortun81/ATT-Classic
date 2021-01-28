@@ -3034,6 +3034,30 @@ app.BaseSoftReserveUnit = {
 					return type(reserve) == 'number' and reserve or reserve[1];
 				end
 			end
+		elseif key == "persistence" then
+			local guid = t.guid;
+			if guid then
+				local reserve = rawget(GetDataMember("SoftReserves"), guid);
+				if reserve then
+					local itemID = type(reserve) == 'number' and reserve or reserve[1];
+					if itemID then
+						local persistence = rawget(GetDataMember("SoftReservePersistence"), guid);
+						if persistence then return persistence[itemID]; end
+						return 0;
+					end
+				end
+			end
+		elseif key == "roll" then
+			if app.Settings:GetTooltipSetting("SoftReservePersistence") then
+				local persistence = t.persistence;
+				if persistence then
+					if persistence > 0 then
+						return 100 + (persistence * 10);
+					else
+						return 100;
+					end
+				end
+			end
 		elseif key == "preview" then
 			return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
 		elseif key == "link" then
@@ -3043,12 +3067,16 @@ app.BaseSoftReserveUnit = {
 		elseif key == "tooltipText" then
 			local text = t.unitText;
 			local guid = t.guid;
+			local roll = t.roll;
 			local icon = t.icon;
 			if icon then text = "|T" .. icon .. ":0|t " .. text; end
+			if roll and app.Settings:GetTooltipSetting("SoftReservePersistence") then text = text .. " (" .. roll .. ")"; end
 			if guid and not IsGUIDInGroup(guid) then
 				text = text .. " |CFFFFFFFF(Not in Group)|r";
 			end
 			return text;
+		elseif key == "summary" then
+			return t.roll;
 		elseif key == "OnClick" then
 			return SoftReserveUnitOnClick;
 		elseif key == "itemName" then
@@ -3145,6 +3173,15 @@ app.IsUnitMasterLooter = function(name)
 				return name == UnitName("party" .. partyIndex);
 			end
 		end
+	end
+end
+app.ParsePlayerGUID = function(info)
+	-- Let WoW parse it.
+	local guid = UnitGUID(info);
+	if guid then return guid; end
+	if string.match(info, "Player-") then
+		-- Already a GUID!
+		return info;
 	end
 end
 app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
@@ -3809,6 +3846,33 @@ local BestWeightPerItemID = setmetatable({}, { __index = function(t, id)
 		return weight;
 	end
 end });
+app.ParseItemID = function(itemName)
+	if type(itemName) == "number" then
+		return itemName;
+	else
+		local itemID = tonumber(itemName);
+		if string.match(tostring(itemID), itemName) then
+			-- This was actually an item ID.
+			return itemID;
+		else
+			-- The itemID given was actually the name or a link.
+			itemID = select(1, GetItemInfoInstant(itemName));
+			if itemID then
+				-- Oh good, it was cached by WoW.
+				return itemID;
+			else
+				-- Oh no, gonna need to work for it.
+				local iCache = fieldCache["itemID"];
+				for id,_ in pairs(iCache) do
+					local text = BestItemLinkPerItemID[id];
+					if text and string.match(text, itemName) then
+						return id;
+					end
+				end
+			end
+		end
+	end
+end
 app.ClearItemCache = function()
 	wipe(BestSuffixPerItemID);
 	wipe(BestItemLinkPerItemID);
@@ -5637,7 +5701,7 @@ local function SetRowData(self, row, data)
 			relative = "RIGHT";
 			x = 4;
 		end
-		local summary = GetProgressTextForRow(data);
+		local summary = GetProgressTextForRow(data) or data.summary;
 		if not summary then
 			if data.g and not data.expanded and #data.g > 0 then
 				summary = "+++";
@@ -8766,14 +8830,17 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					
 					-- Insert Control Methods
 					table.insert(g, 1, app.CreateSoftReserveUnit(app.GUID));
+					table.insert(g, 1, data.exportSoftReservesReadable);
+					table.insert(g, 1, data.exportSoftReserves);
 					table.insert(g, 1, data.queryMasterLooter);
 					table.insert(g, 1, data.queryGuildMembers);
 					table.insert(g, 1, data.queryGroupMembers);
 					table.insert(g, 1, data.pushSoftReserve);
 					table.insert(g, 1, data.pushGroupMembers);
+					table.insert(g, 1, data.importPersistence);
+					table.insert(g, 1, data.usePersistence);
 					table.insert(g, 1, data.lockSoftReserves);
 					table.insert(g, 1, data.lootMethodReminder);
-					table.insert(g, 1, data.exportSoftReserves);
 					data.g = g;
 					
 					-- Insert Guild Members
@@ -8843,7 +8910,37 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 				['exportSoftReserves'] = {
 					['text'] = "Export Soft Reserves",
 					['icon'] = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
-					['description'] = "Press this button to open an edit box containing the full content of your raid's Soft Reserve list.",
+					['description'] = "Press this button to open an edit box containing the full content of your raid's Soft Reserve list in the format expected by the Persistence importer.\n\nYou can give this string to your raid members for them to import the full persistence list for the session.",
+					['visible'] = true,
+					['g'] = {},
+					['OnClick'] = function(row, button)
+						local s, count = "", 0;
+						for i,o in ipairs(self.data.g) do
+							if o.guid then
+								if count > 0 then
+									s = s .. "\n";
+								end
+								s = s .. o.guid .. "\\t" .. o.itemID .. "\\t" .. (o.persistence or 0);
+								count = count + 1;
+							end
+						end
+						
+						app:ShowPopupDialogWithMultiLineEditBox(s);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
+					end,
+					['back'] = 0.5,
+				},
+				['exportSoftReservesReadable'] = {
+					['text'] = "Export Soft Reserves (Readable)",
+					['icon'] = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
+					['description'] = "Press this button to open an edit box containing the full content of your raid's Soft Reserve list in human readable format.",
 					['visible'] = true,
 					['g'] = {},
 					['OnClick'] = function(row, button)
@@ -8855,20 +8952,6 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								end
 								s = s .. o.name .. "\\t" .. o.itemName;
 								count = count + 1;
-								--[[
-							elseif o.g then
-								for i,o in ipairs(o.g) do
-									if o.guid then
-										if count > 0 then
-											s = s .. "\n";
-										end
-										s = s .. o.name .. "\\t" .. o.itemName;
-										count = count + 1;
-									else
-										
-									end
-								end
-								]]--
 							end
 						end
 						
@@ -9077,6 +9160,146 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end,
 					['back'] = 0.5,
 				},
+				['importPersistence'] = {
+					['text'] = "Import Persistence",
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+					['description'] = "Click this to import Persistence from a CSV document.\n\nFORMAT:\nPLAYER NAME/GUID \\t ITEM NAME/ID \\t PERSISTENCE\n\nNOTE: There's an issue with Blizzard not finding player GUIDs that aren't in your raid and items that you personally have never encountered. For best performance, import Player GUIDs, Item IDs, and Persistence values.\n\nPersistence is stored locally and not sent to your group.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						--if app.IsMasterLooter() then
+							app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
+								local pers, g, word, l, esc, c = {}, {}, "", string.len(text), false;
+								for i=1,l,1 do
+									c = string.sub(text, i, i);
+									if c == "\\" then
+										esc = true;
+									elseif esc then
+										if c == "t" then
+											if string.len(word) > 0 then
+												tinsert(g, word);
+												word = "";
+											end
+										elseif c == "n" or c == "r" then
+											if string.len(word) > 0 then
+												tinsert(g, word);
+												word = "";
+											end
+											if #g > 2 then
+												if not string.match(g[1], "FORMAT: ") then
+													tinsert(pers, g);
+												end
+												g = {};
+											end
+										end
+										esc = false;
+									elseif c == "\t" then
+										if string.len(word) > 0 then
+											tinsert(g, word);
+											word = "";
+										end
+									elseif c == "\n" or c == "\r" then
+										if string.len(word) > 0 then
+											tinsert(g, word);
+											word = "";
+										end
+										if #g > 2 then
+											if not string.match(g[1], "FORMAT: ") then
+												tinsert(pers, g);
+											end
+											g = {};
+										end
+									else
+										word = word .. c;
+									end
+								end
+								if string.len(word) > 0 then
+									tinsert(g, word);
+								end
+								if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end
+								if #pers > 0 then
+									local allpersistence, allsrs = GetDataMember("SoftReservePersistence"), GetDataMember("SoftReserves");
+									for i,g in ipairs(pers) do
+										local guid, itemID = app.ParsePlayerGUID(g[1]), app.ParseItemID(g[2]);
+										if guid and itemID then
+											local persistence = rawget(allpersistence, guid);
+											if not persistence then
+												persistence = {};
+												allpersistence[guid] = persistence;
+											end
+											persistence[itemID] = tonumber(g[3]);
+											app.print(g[1] .. ": " .. (select(2, GetItemInfo(itemID)) or g[2]) .. " [+" .. g[3] .. "]");
+										else
+											app.print("FAILED TO IMPORT: ", g[1], g[2], guid, itemID);
+										end
+									end
+								end
+							end);
+							wipe(searchCache);
+							self:Update();
+							return true;
+						--else
+						--	app.print("You must be the Master Looter to modify Persistence.");
+						--end
+					end,
+					['OnUpdate'] = function(data)
+						if IsInGroup() and GetLootMethod() == "master" then
+							data.visible = true;
+						else
+							data.visible = false;
+						end
+					end,
+				},
+				['usePersistence'] = setmetatable({
+					['text'] = "Use Persistence",
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_13",
+					['description_ML'] = "Click to toggle Persistence for this raid.\n\nIf Persistence is active, each member of the raid with a persistence value on their Soft Reserved item gets a +10 to the top end of their roll for each Persistence they have on the item.\n\nYou may import Persistence from a CSV document.\n\nPersistence is stored locally and not sent to your group.",
+					['description_PLEB'] = "Your Master Looter controls whether Persistence is active or not.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						if app.IsMasterLooter() then
+							local persistence = not app.Settings:GetTooltipSetting("SoftReservePersistence");
+							SendGroupMessage("!\tsrpersistence\t" .. (persistence and 1 or 0));
+							app.Settings:SetTooltipSetting("SoftReservePersistence", persistence);
+							--SendGroupChatMessage(persistence and "Persistence activated." or "Persistence deactivated.");
+							wipe(searchCache);
+							self:Update();
+							return true;
+						else
+							app.print("You must be the Master Looter to modify Persistence.");
+						end
+					end,
+					['OnUpdate'] = function(data)
+						if IsInGroup() then
+							if GetLootMethod() == "master" then
+								data.visible = true;
+								if app.IsMasterLooter() then
+									data.description = data.description_ML;
+								else
+									data.description = data.description_PLEB;
+								end
+							else
+								data.visible = app.Settings:GetTooltipSetting("SoftReservePersistence");
+								data.description = data.description_PLEB;
+							end
+						else
+							data.visible = false;
+						end
+					end,
+				}, {
+					__index = function(t, key)
+						if key == "title" then
+							if t.saved then return "Persistence Active"; end
+						elseif key == "saved" then
+							if app.Settings:GetTooltipSetting("SoftReservePersistence") then
+								return 1;
+							end
+						elseif key == "trackable" then
+							return true;
+						else
+							return table[key];
+						end
+					end
+				}),
 				['Sort'] = function(a, b)
 					return b.text > a.text;
 				end,
@@ -9705,6 +9928,7 @@ app.events.VARIABLES_LOADED = function()
 	
 	-- Check the format of the Soft Reserve Cache
 	local reserves = GetDataMember("SoftReserves", {});
+	local persistence = GetDataMember("SoftReservePersistence", {});
 	local reservesByItemID = GetTempDataMember("SoftReservesByItemID", {});
 	for guid,reserve in pairs(reserves) do
 		if type(reserve) == 'number' then
@@ -9856,6 +10080,7 @@ app.events.VARIABLES_LOADED = function()
 		"RandomSearchFilter",
 		"Reagents",
 		"SoftReserves",
+		"SoftReservePersistence",
 		"SpellRanksPerCharacter",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
@@ -9884,6 +10109,7 @@ app.events.VARIABLES_LOADED = function()
 	if IsInGroup() then
 		if not app.IsMasterLooter() then
 			SendGroupMessage("?\tsrlock");
+			SendGroupMessage("?\tsrpersistence");
 		end
 	else
 		-- Unlock the Soft Reserves when not in a group
@@ -10410,6 +10636,12 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 						else
 							response = "srlock\t" .. (app.Settings:GetTooltipSetting("SoftReservesLocked") and 1 or 0);
 						end
+					elseif a == "srpersistence" then
+						if target == UnitName("player") then
+							return false;
+						else
+							response = "srpersistence\t" .. (app.Settings:GetTooltipSetting("SoftReservePersistence") and 1 or 0);
+						end
 					end
 				else
 					local data = app:GetWindow("Prime").data;
@@ -10444,6 +10676,14 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, zone
 							return false;
 						else
 							app.Settings:SetTooltipSetting("SoftReservesLocked", tonumber(args[3]) == 1);
+							wipe(searchCache);
+							app:RefreshSoftReserveWindow(true);
+						end
+					elseif a == "srpersistence" then
+						if target == UnitName("player") then
+							return false;
+						else
+							app.Settings:SetTooltipSetting("SoftReservePersistence", tonumber(args[3]) == 1);
 							wipe(searchCache);
 							app:RefreshSoftReserveWindow(true);
 						end
