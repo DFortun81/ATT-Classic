@@ -3004,7 +3004,7 @@ app.BaseSoftReserveUnit = {
 				return "No Soft Reserve Selected";
 			end
 		elseif key == "mapText" then
-			local mapID = t.mapID;
+			local mapID = t.internalMapID;
 			if mapID and mapID ~= app.GetCurrentMapID() then
 				return " (" .. app.GetMapName(mapID) .. ")";
 			end
@@ -3090,7 +3090,7 @@ app.BaseSoftReserveUnit = {
 					end
 				end
 			end
-		elseif key == "mapID" then
+		elseif key == "internalMapID" then
 			local itemID = t.itemID;
 			if itemID then
 				local searchResults = app.SearchForField("itemID", itemID);
