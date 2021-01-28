@@ -267,6 +267,7 @@ app.L = {
 		[-20] = "Silithid Royalty",												-- Silithid Royalty
 		[-21] = "Captains",
 		[-22] = "Atal'ai Defenders",											-- Atal'ai Defenders
+		[-23] = "The Four Horsemen",											-- The Four Horsemen
 		[-27] = "Lower",														-- Lower (Blackrock Spire)
 		[-28] = "Upper",														-- Upper (Blackrock Spire)
 		[-30] = FACTION_ALLIANCE,												-- Alliance

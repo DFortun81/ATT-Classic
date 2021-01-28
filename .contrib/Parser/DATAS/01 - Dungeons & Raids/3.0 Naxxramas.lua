@@ -1911,21 +1911,30 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						i(23021),	-- The Soul Harvester's Bindings
 						i(23073),	-- Boots of Displacement
 					}),
-					n(16062, {	-- Highlord Mograine <The Ashbringer>
-						i(22349),	-- Desecrated Breastplate
-						i(22351),	-- Desecrated Robe
-						i(22350),	-- Desecrated Tunic
-						un(NEVER_IMPLEMENTED, {
-							["itemID"] = 13262,	-- Ashbringer
-							["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
-							["collectible"] = false,
-						}),
-						i(22691),	-- Corrupted Ashbringer
-						i(22809),	-- Maul of the Redeemed Crusader
-						i(22811),	-- Soulstring
-						i(23071),	-- Leggings of Apocalypse
-						i(23025),	-- Seal of the Damned
-						i(23027),	-- Warmth of Forgiveness
+					n(-23, {	-- The Four Horsemen
+						["qgs"] = {
+							16062,	-- Highlord Mograine <The Ashbringer>
+							16065,	-- Lady Blaumeux
+							16063,	-- Sir Zeliek
+							16064,	-- Thane Korth'azz
+						},
+						["modelScale"] = 2,
+						["groups"] = {
+							i(22349),	-- Desecrated Breastplate
+							i(22351),	-- Desecrated Robe
+							i(22350),	-- Desecrated Tunic
+							un(NEVER_IMPLEMENTED, {
+								["itemID"] = 13262,	-- Ashbringer
+								["description"] = "This is here so that you can quickly compare the Corrupted Ashbringer with the original Ashbringer model. It was never available to players.\n\nThis weapon was eventually turned into an Artifact weapon with an updated model for the Legion expansion for Retribution Paladins.",
+								["collectible"] = false,
+							}),
+							i(22691),	-- Corrupted Ashbringer
+							i(22809),	-- Maul of the Redeemed Crusader
+							i(22811),	-- Soulstring
+							i(23071),	-- Leggings of Apocalypse
+							i(23025),	-- Seal of the Damned
+							i(23027),	-- Warmth of Forgiveness
+						},
 					}),
 				},
 			}),
@@ -1933,18 +1942,24 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
 				["groups"] = {
 					n(16028, {	-- Patchwerk
-						i(22815),	-- Severance
-						i(22818),	-- The Plague Bearer
-						i(22820),	-- Wand of Fates
-						i(22960),	-- Cloak of Suturing
-						i(22961),	-- Band of Reanimation
+						["modelScale"] = 2,
+						["groups"] = {
+							i(22815),	-- Severance
+							i(22818),	-- The Plague Bearer
+							i(22820),	-- Wand of Fates
+							i(22960),	-- Cloak of Suturing
+							i(22961),	-- Band of Reanimation
+						},
 					}),
 					n(15931, {	-- Grobbulus
-						i(22803),	-- Midnight Haze
-						i(22988),	-- The End of Dreams
-						i(22810),	-- Toxin Injector
-						i(22968),	-- Glacial Mantle
-						i(22967),	-- Icy Scale Spaulders
+						["modelScale"] = 3,
+						["groups"] = {
+							i(22803),	-- Midnight Haze
+							i(22988),	-- The End of Dreams
+							i(22810),	-- Toxin Injector
+							i(22968),	-- Glacial Mantle
+							i(22967),	-- Icy Scale Spaulders
+						},
 					}),
 					n(15932, {	-- Gluth
 						i(22813),	-- Claymore of Unholy Might
@@ -1969,26 +1984,29 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 				["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
 				["groups"] = {
 					n(15989, {	-- Sapphiron
-						i(23242),	-- Claw of the Frost Wyrm
-						i(23043),	-- The Face of Death
-						i(23049),	-- Sapphiron's Left Eye
-						i(23048),	-- Sapphiron's Right Eye
-						i(23050),	-- Cloak of the Necropolis
-						i(23045),	-- Shroud of Dominion
-						{
-							-- NOTE: It was believed these no longer drop as of 1.11. However, it appears they have been added in 2.03 as a drop from Sapphiron. 
-							["itemID"] = 23072,	-- Fists of the Unrelenting
-							["description"] = "These were originally not implemented until patch 2.03. Please let the ATT Discord know if you happen to get them to drop or see someone with this item.",
-							["u"] = NEVER_IMPLEMENTED,
+						["modelScale"] = 2,
+						["groups"] = {
+							i(23242),	-- Claw of the Frost Wyrm
+							i(23043),	-- The Face of Death
+							i(23049),	-- Sapphiron's Left Eye
+							i(23048),	-- Sapphiron's Right Eye
+							i(23050),	-- Cloak of the Necropolis
+							i(23045),	-- Shroud of Dominion
+							{
+								-- NOTE: It was believed these no longer drop as of 1.11. However, it appears they have been added in 2.03 as a drop from Sapphiron. 
+								["itemID"] = 23072,	-- Fists of the Unrelenting
+								["description"] = "These were originally not implemented until patch 2.03. Please let the ATT Discord know if you happen to get them to drop or see someone with this item.",
+								["u"] = NEVER_IMPLEMENTED,
+							},
+							i(23047),	-- Eye of the Dead
+							i(23040),	-- Glyph of Deflection
+							i(23041),	-- Slayer's Crest
+							i(23046),	-- The Restrained Essence of Sapphiron
+							i(23549),	-- Fortitude of the Scourge
+							i(23548),	-- Might of the Scourge
+							i(23545),	-- Power of the Scourge
+							i(23547),	-- Resilience of the Scourge
 						},
-						i(23047),	-- Eye of the Dead
-						i(23040),	-- Glyph of Deflection
-						i(23041),	-- Slayer's Crest
-						i(23046),	-- The Restrained Essence of Sapphiron
-						i(23549),	-- Fortitude of the Scourge
-						i(23548),	-- Might of the Scourge
-						i(23545),	-- Power of the Scourge
-						i(23547),	-- Resilience of the Scourge
 					}),
 					n(15990, {	-- Kel'Thuzad
 						{
