@@ -3050,12 +3050,10 @@ app.BaseSoftReserveUnit = {
 		elseif key == "roll" then
 			if app.Settings:GetTooltipSetting("SoftReservePersistence") then
 				local persistence = t.persistence;
-				if persistence then
-					if persistence > 0 then
-						return 100 + (persistence * 10);
-					else
-						return 100;
-					end
+				if persistence and persistence > 0 then
+					return 100 + (persistence * 10);
+				else
+					return 100;
 				end
 			end
 		elseif key == "preview" then
@@ -9166,101 +9164,80 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['description'] = "Click this to import Persistence from a CSV document.\n\nFORMAT:\nPLAYER NAME/GUID \\t ITEM NAME/ID \\t PERSISTENCE\n\nNOTE: There's an issue with Blizzard not finding player GUIDs that aren't in your raid and items that you personally have never encountered. For best performance, import Player GUIDs, Item IDs, and Persistence values.\n\nPersistence is stored locally and not sent to your group.",
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						--if app.IsMasterLooter() then
-							app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
-								local u, pers, g, word, l, esc, c = "", {}, {}, "", string.len(text), false;
-								for i=1,l,1 do
-									c = string.sub(text, i, i);
-									if c == "\\" then
-										esc = true;
-									elseif esc then
-										if c == "t" then
-											if string.len(word) > 0 then
-												if #g < 1 then
-													u = word;
-												end
-												tinsert(g, word);
-												word = "";
-											else
-												if #g < 1 and string.len(u) > 0 then
-													tinsert(g, u);
-												end
-											end
-										elseif c == "n" or c == "r" then
-											if string.len(word) > 0 then
-												tinsert(g, word);
-												word = "";
-											end
-											if #g > 2 then
-												if not string.match(g[1], "FORMAT: ") then
-													tinsert(pers, g);
-												end
-												g = {};
-											end
-										end
-										esc = false;
-									elseif c == "\t" then
-										if string.len(word) > 0 then
-											if #g < 1 then
-												u = word;
-											end
-											tinsert(g, word);
-											word = "";
-										else
-											if #g < 1 and string.len(u) > 0 then
-												tinsert(g, u);
-											end
-										end
-									elseif c == "\n" or c == "\r" then
-										if string.len(word) > 0 then
-											tinsert(g, word);
-											word = "";
-										end
-										if #g > 2 then
-											if not string.match(g[1], "FORMAT: ") then
-												tinsert(pers, g);
-											end
-											g = {};
-										end
+						app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
+							text = string.gsub(text, "    ", "\t");	-- The WoW UI converts tab characters into 4 spaces in the English Client.
+							local u, pers, g, word, l, esc, c = "", {}, {}, "", string.len(text), false;
+							for i=1,l,1 do
+								c = string.sub(text, i, i);
+								if c == "\\" then
+									esc = true;
+								elseif esc then
+									esc = false;
+									if c == "t" then
+										c = tab;
+									elseif c == "n" or c == "r" then
+										c = nl;
 									else
-										word = word .. c;
+										-- Add back the backslash.
+										word = word .. "\\";
 									end
 								end
-								if string.len(word) > 0 then
-									tinsert(g, word);
-								end
-								if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end
-								if #pers > 0 then
-									local allpersistence, allsrs = GetDataMember("SoftReservePersistence"), GetDataMember("SoftReserves");
-									for i,g in ipairs(pers) do
-										local guid, itemID = app.ParsePlayerGUID(g[1]), app.ParseItemID(g[2]);
-										if guid and itemID then
-											local persistence = rawget(allpersistence, guid);
-											if not persistence then
-												persistence = {};
-												allpersistence[guid] = persistence;
-											end
-											persistence[itemID] = tonumber(g[3]);
-											app.print(g[1] .. ": " .. (select(2, GetItemInfo(itemID)) or g[2]) .. " [+" .. g[3] .. "]");
-										else
-											app.print("FAILED TO IMPORT: ", g[1], g[2], guid, itemID);
+								
+								if c == "\t" then
+									if string.len(word) > 0 then
+										if #g < 1 then
+											u = word;
+										end
+										tinsert(g, word);
+										word = "";
+									else
+										if #g < 1 and string.len(u) > 0 then
+											tinsert(g, u);
 										end
 									end
+								elseif c == "\n" or c == "\r" then
+									if string.len(word) > 0 then
+										tinsert(g, word);
+										word = "";
+									end
+									if #g > 2 then
+										if not string.match(g[1], "FORMAT: ") then
+											tinsert(pers, g);
+										end
+										g = {};
+									end
+								else
+									word = word .. c;
 								end
-							end);
-							wipe(searchCache);
-							self:Update();
-							return true;
-						--else
-						--	app.print("You must be the Master Looter to modify Persistence.");
-						--end
+							end
+							if string.len(word) > 0 then
+								tinsert(g, word);
+							end
+							if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); print("inserting g"); end
+							if #pers > 0 then
+								local allpersistence, allsrs = GetDataMember("SoftReservePersistence"), GetDataMember("SoftReserves");
+								for i,g in ipairs(pers) do
+									local guid, itemID = app.ParsePlayerGUID(g[1]), app.ParseItemID(g[2]);
+									if guid and itemID then
+										local persistence = rawget(allpersistence, guid);
+										if not persistence then
+											persistence = {};
+											allpersistence[guid] = persistence;
+										end
+										persistence[itemID] = tonumber(g[3]);
+										app.print(g[1] .. ": " .. (select(2, GetItemInfo(itemID)) or g[2]) .. " [+" .. g[3] .. "]");
+									else
+										app.print("FAILED TO IMPORT: ", g[1], g[2], guid, itemID);
+									end
+								end
+							end
+						end);
+						wipe(searchCache);
+						self:Update();
+						return true;
 					end,
 					['OnUpdate'] = function(data)
-						if IsInGroup() and GetLootMethod() == "master" then
-							data.visible = true;
-						else
-							data.visible = false;
-						end
+						data.visible = true;
 					end,
 				},
 				['usePersistence'] = setmetatable({
@@ -9268,13 +9245,13 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['icon'] = "Interface\\Icons\\INV_MISC_KEY_13",
 					['description_ML'] = "Click to toggle Persistence for this raid.\n\nIf Persistence is active, each member of the raid with a persistence value on their Soft Reserved item gets a +10 to the top end of their roll for each Persistence they have on the item.\n\nYou may import Persistence from a CSV document.\n\nPersistence is stored locally and not sent to your group.",
 					['description_PLEB'] = "Your Master Looter controls whether Persistence is active or not.",
+					['description_SOLO'] = "Click to toggle Persistence for viewing the list outside of raid.\n\nThis state will change when you join a group whose Persistence is inactive.",
 					['visible'] = true,
 					['OnClick'] = function(row, button)
-						if app.IsMasterLooter() then
+						if app.IsMasterLooter() or not IsInGroup() then
 							local persistence = not app.Settings:GetTooltipSetting("SoftReservePersistence");
-							SendGroupMessage("!\tsrpersistence\t" .. (persistence and 1 or 0));
 							app.Settings:SetTooltipSetting("SoftReservePersistence", persistence);
-							--SendGroupChatMessage(persistence and "Persistence activated." or "Persistence deactivated.");
+							SendGroupMessage("!\tsrpersistence\t" .. (persistence and 1 or 0));
 							wipe(searchCache);
 							self:Update();
 							return true;
@@ -9296,7 +9273,8 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								data.description = data.description_PLEB;
 							end
 						else
-							data.visible = false;
+							data.visible = true;
+							data.description = data.description_SOLO;
 						end
 					end,
 				}, {
