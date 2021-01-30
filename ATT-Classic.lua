@@ -9168,7 +9168,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					['OnClick'] = function(row, button)
 						--if app.IsMasterLooter() then
 							app:ShowPopupDialogWithMultiLineEditBox("FORMAT: PLAYER NAME\\tITEM NAME/ID\\tPERSISTENCE\n\n", function(text)
-								local pers, g, word, l, esc, c = {}, {}, "", string.len(text), false;
+								local u, pers, g, word, l, esc, c = "", {}, {}, "", string.len(text), false;
 								for i=1,l,1 do
 									c = string.sub(text, i, i);
 									if c == "\\" then
@@ -9176,8 +9176,15 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 									elseif esc then
 										if c == "t" then
 											if string.len(word) > 0 then
+												if #g < 1 then
+													u = word;
+												end
 												tinsert(g, word);
 												word = "";
+											else
+												if #g < 1 and string.len(u) > 0 then
+													tinsert(g, u);
+												end
 											end
 										elseif c == "n" or c == "r" then
 											if string.len(word) > 0 then
@@ -9194,8 +9201,15 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 										esc = false;
 									elseif c == "\t" then
 										if string.len(word) > 0 then
+											if #g < 1 then
+												u = word;
+											end
 											tinsert(g, word);
 											word = "";
+										else
+											if #g < 1 and string.len(u) > 0 then
+												tinsert(g, u);
+											end
 										end
 									elseif c == "\n" or c == "\r" then
 										if string.len(word) > 0 then
