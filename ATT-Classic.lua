@@ -2896,6 +2896,36 @@ local SoftReserveUnitOnClick = function(self, button)
 	end
 	return true;
 end
+local guildCheckCooldown = 0;
+app.PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
+	-- Let WoW parse it.
+	local guid = UnitGUID(info);
+	if guid then
+		rawset(t, info, guid);
+		return guid;
+	end
+	if string.match(info, "Player-") then
+		-- Already a GUID!
+		rawset(t, info, info);
+		return info;
+	end
+	
+	-- Only check the guild once every 10 seconds.
+	if guildCheckCooldown <= time() then
+		local count = GetNumGuildMembers();
+		if count > 0 then
+			for guildIndex = 1, count, 1 do
+				local name, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
+				if name and guid then
+					rawset(t, strsplit('-', name), guid);
+				end
+			end
+		end
+		guildCheckCooldown = time() + 10;
+		return rawget(t, info);
+	end
+end });
+
 app.GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
 		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
@@ -3171,15 +3201,6 @@ app.IsUnitMasterLooter = function(name)
 				return name == UnitName("party" .. partyIndex);
 			end
 		end
-	end
-end
-app.ParsePlayerGUID = function(info)
-	-- Let WoW parse it.
-	local guid = UnitGUID(info);
-	if guid then return guid; end
-	if string.match(info, "Player-") then
-		-- Already a GUID!
-		return info;
 	end
 end
 app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
@@ -9213,11 +9234,11 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 							if string.len(word) > 0 then
 								tinsert(g, word);
 							end
-							if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); print("inserting g"); end
+							if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end
 							if #pers > 0 then
 								local allpersistence, allsrs = GetDataMember("SoftReservePersistence"), GetDataMember("SoftReserves");
 								for i,g in ipairs(pers) do
-									local guid, itemID = app.ParsePlayerGUID(g[1]), app.ParseItemID(g[2]);
+									local guid, itemID = app.PlayerGUIDFromInfo[g[1]], app.ParseItemID(g[2]);
 									if guid and itemID then
 										local persistence = rawget(allpersistence, guid);
 										if not persistence then
