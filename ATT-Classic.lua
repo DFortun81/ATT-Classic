@@ -8849,7 +8849,6 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					
 					-- Insert Control Methods
 					table.insert(g, 1, app.CreateSoftReserveUnit(app.GUID));
-					table.insert(g, 1, data.exportSoftReservesReadable);
 					table.insert(g, 1, data.exportSoftReserves);
 					table.insert(g, 1, data.queryMasterLooter);
 					table.insert(g, 1, data.queryGuildMembers);
@@ -8939,37 +8938,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								if count > 0 then
 									s = s .. "\n";
 								end
-								s = s .. o.guid .. "\\t" .. o.itemID .. "\\t" .. (o.persistence or 0);
-								count = count + 1;
-							end
-						end
-						
-						app:ShowPopupDialogWithMultiLineEditBox(s);
-						return true;
-					end,
-					['OnUpdate'] = function(data)
-						if app.Settings:GetTooltipSetting("SoftReservesLocked") then
-							data.visible = true;
-						else
-							data.visible = false;
-						end
-					end,
-					['back'] = 0.5,
-				},
-				['exportSoftReservesReadable'] = {
-					['text'] = "Export Soft Reserves (Readable)",
-					['icon'] = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
-					['description'] = "Press this button to open an edit box containing the full content of your raid's Soft Reserve list in human readable format.",
-					['visible'] = true,
-					['g'] = {},
-					['OnClick'] = function(row, button)
-						local s, count = "", 0;
-						for i,o in ipairs(self.data.g) do
-							if o.guid then
-								if count > 0 then
-									s = s .. "\n";
-								end
-								s = s .. o.name .. "\\t" .. o.itemName;
+								s = s .. o.guid .. "\\t" .. o.itemID .. "\\t" .. (o.persistence or 0) .. "\\t" .. o.name .. "\\t" .. o.itemName;
 								count = count + 1;
 							end
 						end
