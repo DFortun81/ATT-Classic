@@ -72,7 +72,6 @@ _.Zones =
 				}),
 				q(4804, {	-- Chillwind E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -136,7 +135,6 @@ _.Zones =
 				}),
 				q(4806, {	-- Frostmaul E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -145,7 +143,6 @@ _.Zones =
 				}),
 				q(4801, {	-- Frostsaber E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -187,7 +184,6 @@ _.Zones =
 				}),
 				q(4805, {	-- Ice Thistle E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -237,7 +233,6 @@ _.Zones =
 				}),
 				q(4803, {	-- Shardtooth E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -356,7 +351,6 @@ _.Zones =
 				}),
 				q(4807, {	-- Wildkin E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
@@ -365,7 +359,6 @@ _.Zones =
 				}),
 				q(4802, {	-- Winterfall E'ko
 					["lvl"] = 55,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
 					["g"] = {
