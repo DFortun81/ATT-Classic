@@ -8938,7 +8938,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								if count > 0 then
 									s = s .. "\n";
 								end
-								s = s .. o.guid .. "\\t" .. o.itemID .. "\\t" .. (o.persistence or 0) .. "\\t" .. o.name .. "\\t" .. o.itemName;
+								s = s .. o.guid .. "\\t" .. (o.itemID or 0) .. "\\t" .. (o.persistence or 0) .. "\\t" .. o.name .. "\\t" .. o.itemName;
 								count = count + 1;
 							end
 						end
