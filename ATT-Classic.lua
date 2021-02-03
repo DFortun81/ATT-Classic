@@ -9205,6 +9205,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 							end
 							if #g > 2 and not string.match(g[1], "FORMAT: ") then tinsert(pers, g); end
 							if #pers > 0 then
+								local success = 0;
 								local allpersistence, allsrs = GetDataMember("SoftReservePersistence"), GetDataMember("SoftReserves");
 								for i,g in ipairs(pers) do
 									local guid, itemID = app.PlayerGUIDFromInfo[g[1]], app.ParseItemID(g[2]);
@@ -9215,10 +9216,14 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 											allpersistence[guid] = persistence;
 										end
 										persistence[itemID] = tonumber(g[3]);
-										app.print(g[1] .. ": " .. (select(2, GetItemInfo(itemID)) or g[2]) .. " [+" .. g[3] .. "]");
+										success = success + 1;
+										-- app.print(g[1] .. ": " .. (select(2, GetItemInfo(itemID)) or g[2]) .. " [+" .. g[3] .. "]");
 									else
 										app.print("FAILED TO IMPORT: ", g[1], g[2], guid, itemID);
 									end
+								end
+								if success > 0 then
+									app.print("Successfully imported " .. success .. " Persistence entries.");
 								end
 							end
 						end);
