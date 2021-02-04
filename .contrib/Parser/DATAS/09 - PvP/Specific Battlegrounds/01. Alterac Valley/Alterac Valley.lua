@@ -230,6 +230,7 @@ _.PvP =
 								["coord"] = { 49.8, 71.2, ORGRIMMAR },
 								["maps"] = { ORGRIMMAR },
 								["races"] = HORDE_ONLY,
+								["isBreadcrumb"] = true,
 								["lvl"] = 51,
 							}),
 							q(8369, {	-- Invaders of Alterac Valley
