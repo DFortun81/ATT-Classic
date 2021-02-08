@@ -672,6 +672,9 @@ _.Zones =
 					["provider"] = { "o", 176091 },	-- Deadwood Cauldron
 					["sourceQuest"] = 5084,	-- Falling to Corruption
 					["coord"] = { 60.2, 5.9, FELWOOD },
+					["cost"] = {
+						{ "i", 12813, 1 },	-- Flask of Mystery Goo
+					},
 					["lvl"] = 52,
 				}),
 				q(4442, {	-- Purified!
