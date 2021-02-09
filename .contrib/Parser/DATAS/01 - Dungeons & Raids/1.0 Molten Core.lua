@@ -14,130 +14,118 @@ _.Instances = {
 				["qg"] = 13278,	-- Duke Hydraxis
 				["coord"] = { 79.2, 73.6, AZSHARA },
 				["maps"] = { AZSHARA },
-				["groups"] = {
-					q(7486, {	-- A Hero's Reward
-						["qg"] = 13278,	-- Duke Hydraxis
-						["sourceQuest"] = 6824,	-- Hands of the Enemy
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["lvl"] = 55,
-						["g"] = {
-							i(18399),	-- Ocean's Breeze
-							i(18398),	-- Tidal Loop
-						},
-					}),
-					q(6823, {	-- Agent of Hydraxis
-						["qg"] = 13278,	-- Duke Hydraxis
-						["sourceQuest"] = 6822,	-- The Molten Core
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
-						["lvl"] = 55,
-					}),
-					q(6821, {	-- Eye of the Emberseer
-						["qg"] = 13278,	-- Duke Hydraxis
-						["sourceQuests"] = {
-							6804,	-- Poisoned Water
-							6805,	-- Stormers and Rumblers
-						},
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["maps"] = { BLACKROCK_SPIRE },
-						["cost"] = {
-							{ "i", 17322, 1 },	-- Eye of the Emberseer
-						},
-						["lvl"] = 55,
-					}),
-					q(6824, {	-- Hands of the Enemy
-						["qg"] = 13278,	-- Duke Hydraxis
-						["sourceQuest"] = 6823,	-- Agent of Hydraxis
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["cost"] = {
-							{ "i", 17331, 1 },	-- Hand of Gehennas
-							{ "i", 17329, 1 },	-- Hand of Lucifron
-							{ "i", 17332, 1 },	-- Hand of Shazzrah
-							{ "i", 17330, 1 },	-- Hand of Sulfuron
-						},
-						["lvl"] = 55,
-					}),
-					q(6804, {	-- Poisoned Water
-						["qg"] = 13278,	-- Duke Hydraxis
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["maps"] = { EASTERN_PLAGUELANDS },
-						["cost"] = {
-							{ "i", 17310, 1 },	-- Aspect of Neptulon
-							{ "i", 17309, 12 },	-- Discordant Bracers
-						},
-						["lvl"] = 55,
-					}),
-					
-					q(6805, {	-- Stormers and Rumblers
-						["qg"] = 13278,	-- Duke Hydraxis
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["maps"] = { SILITHUS },
-						["lvl"] = 55,
-					}),
-					q(6822, {	-- The Molten Core
-						["qg"] = 13278,	-- Duke Hydraxis
-						["sourceQuest"] = 6821,	-- Eye of the Emberseer
-						["coord"] = { 79.2, 73.6, AZSHARA },
-						["lvl"] = 55,
-					}),
-				},
 			}),
 			n(QUESTS, {
-				{
-					["questID"] = 7633,	-- An Introduction
+				q(7486, {	-- A Hero's Reward
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["lvl"] = 55,
+					["g"] = {
+						i(18399),	-- Ocean's Breeze
+						i(18398),	-- Tidal Loop
+					},
+				}),
+				q(6823, {	-- Agent of Hydraxis
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6822,	-- The Molten Core
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["maps"] = { AZSHARA },
+					["lvl"] = 55,
+				}),
+				q(7633, {	-- An Introduction
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["sourceQuest"] = 7632,	-- The Ancient Leaf
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
 					["lvl"] = 60,
-				},
-				{
-					["questID"] = 7848,	-- Attunement to the Core
+				}),
+				q(7848, {	-- Attunement to the Core
 					["qg"] = 14387,	-- Lothos Riftwaker
 					["altQuests"] = {
 						7487,	-- Attunement to the Core [Original??]
 					},
-					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.\n\nNOTE: This is mandatory in most raiding guilds.",
+					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
+					["cost"] = {
+						{ "i", 18412, 1 },	-- Core Fragment
+					},
 					["lvl"] = 55,
 					["maps"] = {
 						BLACKROCK_DEPTHS,
 						BLACKROCK_MOUNTAIN,
 					},
-				},
-				{
-					["questID"] = 7785,	-- Examine the Vessel
+				}),
+				q(7785, {	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
-					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
+					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
+					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!\n\nNOTE: Can be looted to Mages and Warlocks despite what the tooltip for the Bindings themselves say, however, during Classic WoW, it might be more optimal in the hands of a Warrior or Paladin Tank. As such, ATT will continue to not display this legendary for Mages or Warlocks to prevent unnecessary completion drama.",
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["lvl"] = 60,
 					["cost"] = {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
-					["groups"] = {
-						{
-							["itemID"] = 19016,	-- Vessel of Rebirth
-							["questID"] = 7785,	-- Examine the Vessel
-						},
+				}),
+				q(6821, {	-- Eye of the Emberseer
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuests"] = {
+						6804,	-- Poisoned Water
+						6805,	-- Stormers and Rumblers
 					},
-				},
-				{
-					["questID"] = 7787,	-- Rise, Thunderfury!
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, BLACKROCK_SPIRE },
+					["cost"] = {
+						{ "i", 17322, 1 },	-- Eye of the Emberseer
+					},
+					["lvl"] = 55,
+				}),
+				q(6824, {	-- Hands of the Enemy
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6823,	-- Agent of Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["cost"] = {
+						{ "i", 17331, 1 },	-- Hand of Gehennas
+						{ "i", 17329, 1 },	-- Hand of Lucifron
+						{ "i", 17332, 1 },	-- Hand of Shazzrah
+						{ "i", 17330, 1 },	-- Hand of Sulfuron
+					},
+					["lvl"] = 55,
+				}),
+				q(6804, {	-- Poisoned Water
+					["qg"] = 13278,	-- Duke Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, EASTERN_PLAGUELANDS },
+					["cost"] = {
+						{ "i", 17310, 1 },	-- Aspect of Neptulon
+						{ "i", 17309, 12 },	-- Discordant Bracers
+					},
+					["lvl"] = 55,
+				}),
+				q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
+					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
 					["lvl"] = 60,
 					["groups"] = {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
-				},
-				{
-					["questID"] = 7632,	-- The Ancient Leaf
+				}),
+				q(6805, {	-- Stormers and Rumblers
+					["qg"] = 13278,	-- Duke Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA, SILITHUS },
+					["lvl"] = 55,
+				}),
+				q(7632, {	-- The Ancient Leaf
 					["qg"] = 14524,	-- Vartrus the Ancient
 					["description"] = "To find Vartrus go to the Irontree Woods in Felwood, there is an island in the middle of the green sludge with a little hill on it, go up the hill and Vartrus will appear to you.",
 					["coord"] = { 47, 24.48, FELWOOD },
@@ -147,9 +135,15 @@ _.Instances = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
 					["lvl"] = 60,
-				},
-				{
-					["questID"] = 7786,	-- Thunderaan the Windseeker
+				}),
+				q(6822, {	-- The Molten Core
+					["qg"] = 13278,	-- Duke Hydraxis
+					["sourceQuest"] = 6821,	-- Eye of the Emberseer
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+					["lvl"] = 55,
+				}),
+				q(7786, {	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
 					["altQuests"] = {
 						7521,	-- Thunderaan the Windseeker [Original?]
@@ -168,6 +162,7 @@ _.Instances = {
 					["groups"] = {
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
 							["description"] = "This is a 40 man raid boss.",
+							["modelScale"] = 20,
 							["groups"] = {
 								{
 									["itemID"] = 19018,	-- Dormant Wind Kissed Blade
@@ -176,7 +171,20 @@ _.Instances = {
 							},
 						}),
 					},
-				},
+				}),
+			}),
+			n(REWARDS, {
+				i(17333, {	-- Aqual Quintessence
+					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
+					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+				}),
+				i(22754, {	-- Eternal Quintessence
+					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
+					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
+					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					["u"] = PHASE_THREE,
+				}),
 			}),
 			n(ZONEDROPS, {
 				un(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles

@@ -435,7 +435,7 @@ _.Zones =
 					["coord"] = { 44.8, 43.4, FERALAS },
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 18958, 10 },	-- Water Elemental Core
+						{ "i", 18958, 6 },	-- Water Elemental Core
 					},
 					["lvl"] = 45,
 				}),
