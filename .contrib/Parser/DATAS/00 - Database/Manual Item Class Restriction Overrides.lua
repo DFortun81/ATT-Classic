@@ -40,6 +40,7 @@ i(16606, PRIEST);	-- Juju Hex Robes
 i(16604, PRIEST);	-- Moon Robes of Elune
 i(18609, PRIEST);	-- Anathema
 i(18608, PRIEST);	-- Benediction
+i(14154, PRIEST);	-- Truefaith Vestments
 i(7298, ROGUE);	-- Blade of Cunning
 i(22244, WARLOCK);	-- Box of Souls
 i(21342, WARLOCK);	-- Core Felcloth Bag
