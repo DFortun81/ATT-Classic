@@ -650,9 +650,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 						i(20769),	-- Disgusting Oozeling
 					},
 				}),
-				i(21156, {	-- Scarab Bag
-					["description"] = "Contains a couple of random scarabs.",
-				}),
 				i(21761, {	-- Scarab Coffer Key
 					["timeline"] = {
 						"added 1.13.0.28211",
@@ -743,7 +740,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					i(20871),	-- Obsidian Idol
 					i(20867),	-- Onyx Idol
 					i(20872),	-- Vermillion Idol
-					i(21156),	-- Scarab Bag
+					i(21156, {	-- Scarab Bag
+						["description"] = "Contains a couple of random scarabs.",
+					}),
 				},
 			}),
 			n(15348, { 	-- Kurinnaxx

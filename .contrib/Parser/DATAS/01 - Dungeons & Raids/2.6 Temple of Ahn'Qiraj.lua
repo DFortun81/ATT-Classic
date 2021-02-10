@@ -1255,9 +1255,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 						"deleted 4.2.2.28211"
 					},
 				}),
-				i(21156, {	-- Scarab Bag
-					["description"] = "Contains a couple of random scarabs.",
-				}),
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
@@ -1265,7 +1262,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
 				},
 				["groups"] = {
-					i(21156),	-- Scarab Bag
 					i(20876),	-- Idol of Death
 					i(20879),	-- Idol of Life
 					i(20875),	-- Idol of Night
@@ -1274,6 +1270,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					i(20877),	-- Idol of the Sage
 					i(20874),	-- Idol of the Sun
 					i(20882),	-- Idol of War
+					i(21156, {	-- Scarab Bag
+						["description"] = "Contains a couple of random scarabs.",
+					}),
 				},
 			}),
 			n(15263, {	-- The Prophet Skeram

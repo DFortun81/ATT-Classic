@@ -237,7 +237,6 @@ _.Instances = {
 				{
 					["itemID"] = 18705,	-- Mature Black Dragon Sinew
 					["questID"] = 7635,	-- A Proper String
-					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				},
 				i(17966),	-- Onyxia Hide Backpack (Bag)

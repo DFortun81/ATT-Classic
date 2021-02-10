@@ -5,6 +5,28 @@ local i = function(itemID, ...)
 end
 
 -- Classic
+-- Zul'Gurub
+i(19724, HUNTER, ROGUE, PRIEST);	-- Primal Hakkari Aegis
+i(19717, WARRIOR, ROGUE, SHAMAN);	-- Primal Hakkari Armsplint
+i(19716, PALADIN, HUNTER, MAGE);	-- Primal Hakkari Bindings
+i(19719, WARRIOR, ROGUE, SHAMAN);	-- Primal Hakkari Girdle
+i(19723, WARRIOR, MAGE, WARLOCK);	-- Primal Hakkari Kossack
+i(19720, PRIEST, WARLOCK, DRUID);	-- Primal Hakkari Sash
+i(19721, PALADIN, HUNTER, MAGE);	-- Primal Hakkari Shawl
+i(19718, PRIEST, WARLOCK, DRUID);	-- Primal Hakkari Stanchion
+i(19722, PALADIN, SHAMAN, DRUID);	-- Primal Hakkari Tabard
+
+i(19821, DRUID);	-- Punctured Voodoo Doll [Druid]
+i(19814, ROGUE);	-- Punctured Voodoo Doll [Rogue]
+i(19816, HUNTER);	-- Punctured Voodoo Doll [Hunter]
+i(19819, WARLOCK);	-- Punctured Voodoo Doll [Warlock]
+i(19813, WARRIOR);	-- Punctured Voodoo Doll [Warrior]
+i(19818, MAGE);	-- Punctured Voodoo Doll [Mage]
+i(19820, PRIEST);	-- Punctured Voodoo Doll [Priest]
+i(19815, PALADIN);	-- Punctured Voodoo Doll [Paladin]
+i(19817, SHAMAN);	-- Punctured Voodoo Doll [Shaman]
+i(22739, MAGE);	-- Tome of Polymorph: Turtle
+
 -- Tier 1
 i(16802, MAGE);	-- Arcanist Belt (Mage)
 i(16799, MAGE);	-- Arcanist Bindings (Mage)
@@ -60,6 +82,7 @@ i(16852, HUNTER);	-- Giantstalker's Gloves (Hunter)
 i(16848, HUNTER);	-- Giantstalker's Epaulets (Hunter)
 i(16845, HUNTER);	-- Giantstalker's Breastplate (Hunter)
 i(18703, HUNTER);	-- Ancient Petrified Leaf
+i(18705, HUNTER);	-- Mature Black Dragon Sinew
 i(16665, HUNTER);	-- Tome of Tranquilizing Shot
 
 i(16817, PRIEST);	-- Girdle of Prophecy (Priest)
@@ -92,20 +115,96 @@ i(16820, ROGUE);	-- Nightslayer Chestpiece (Rogue)
 
 
 -- TIER 2
+i(16908, ROGUE);	-- Bloodfang Hood (Rogue)
 i(16909, ROGUE);	-- Bloodfang Pants (Rogue)
+i(16911, ROGUE);	-- Bloodfang Bracers (Rogue)
+i(16910, ROGUE);	-- Bloodfang Belt (Rogue)
+i(16906, ROGUE);	-- Bloodfang Boots (Rogue)
+i(16907, ROGUE);	-- Bloodfang Gloves (Rogue)
+i(16832, ROGUE);	-- Bloodfang Spaulders (Rogue)
+i(16905, ROGUE);	-- Bloodfang Chestpiece (Rogue)
+i(19342, ROGUE);	-- Venomous Totem (Rogue)
 
+i(16939, HUNTER);	-- Dragonstalker's Helm (Hunter)
 i(16938, HUNTER);	-- Dragonstalker's Legguards (Hunter)
+i(16935, HUNTER);	-- Dragonstalker's Bracers (Hunter)
+i(16936, HUNTER);	-- Dragonstalker's Belt (Hunter)
+i(16941, HUNTER);	-- Dragonstalker's Greaves (Hunter)
+i(16940, HUNTER);	-- Dragonstalker's Gauntlets (Hunter)
+i(16937, HUNTER);	-- Dragonstalker's Spaulders (Hunter)
+i(16942, HUNTER);	-- Dragonstalker's Breastplate (Hunter)
+i(19336, HUNTER);	-- Arcane Infused Gem (Hunter)
 
+i(16955, PALADIN);	-- Judgment Crown (Paladin)
 i(16954, PALADIN);	-- Judgment Legplates (Paladin)
+i(16951, PALADIN);	-- Judgment Bindings (Paladin)
+i(16952, PALADIN);	-- Judgment Belt (Paladin)
+i(16957, PALADIN);	-- Judgment Sabatons (Paladin)
+i(16956, PALADIN);	-- Judgment Gauntlets (Paladin)
+i(16953, PALADIN);	-- Judgment Spaulders (Paladin)
+i(16958, PALADIN);	-- Judgment Breastplate (Paladin)
+i(19343, PALADIN);	-- Scrolls of Blinding Light (Paladin)
 
+i(16921, PRIEST);	-- Halo of Transcendence (Priest)
 i(16922, PRIEST);	-- Leggings of Transcendence (Priest)
+i(16926, PRIEST);	-- Bindings of Transcendence (Priest)
+i(16925, PRIEST);	-- Belt of Transcendence (Priest)
+i(16919, PRIEST);	-- Boots of Transcendence (Priest)
+i(16920, PRIEST);	-- Handguards of Transcendence (Priest)
+i(16924, PRIEST);	-- Pauldrons of Transcendence (Priest)
+i(16923, PRIEST);	-- Robes of Transcendence (Priest)
+i(19345, PRIEST);	-- Aegis of Preservation (Priest)
 
+i(16947, SHAMAN);	-- Helmet of Ten Storms (Shaman)
 i(16946, SHAMAN);	-- Legplates of Ten Storms (Shaman)
+i(16943, SHAMAN);	-- Bracers of Ten Storms (Shaman)
+i(16944, SHAMAN);	-- Belt of Ten Storms (Shaman)
+i(16949, SHAMAN);	-- Greaves of Ten Storms (Shaman)
+i(16948, SHAMAN);	-- Gauntlets of Ten Storms (Shaman)
+i(16945, SHAMAN);	-- Epaulets of Ten Storms (Shaman)
+i(16950, SHAMAN);	-- Breastplate of Ten Storms (Shaman)
+i(19344, SHAMAN);	-- Natural Alignment Crystal (Shaman)
 
+i(16963, WARRIOR);	-- Helm of Wrath (Warrior)
 i(16962, WARRIOR);	-- Legplates of Wrath (Warrior)
+i(16959, WARRIOR);	-- Bracelets of Wrath (Warrior)
+i(16960, WARRIOR);	-- Waistband of Wrath (Warrior)
+i(16965, WARRIOR);	-- Sabatons of Wrath (Warrior)
+i(16964, WARRIOR);	-- Gauntlets of Wrath (Warrior)
+i(16961, WARRIOR);	-- Pauldrons of Wrath (Warrior)
+i(16966, WARRIOR);	-- Breastplate of Wrath (Warrior)
+i(19341, WARRIOR);	-- Lifegiving Gem (Warrior)
 
+i(16929, WARLOCK);	-- Nemesis Skullcap (Warlock)
 i(16930, WARLOCK);	-- Nemesis Leggings (Warlock)
+i(16934, WARLOCK);	-- Nemesis Bracers (Warlock)
+i(16933, WARLOCK);	-- Nemesis Belt (Warlock)
+i(16927, WARLOCK);	-- Nemesis Boots (Warlock)
+i(16928, WARLOCK);	-- Nemesis Gloves (Warlock)
+i(16932, WARLOCK);	-- Nemesis Spaulders (Warlock)
+i(16931, WARLOCK);	-- Nemesis Robes (Warlock)
+i(19337, WARLOCK);	-- The Black Book (Warlock)
 
+i(16914, MAGE);	-- Netherwind Crown (Mage)
 i(16915, MAGE);	-- Netherwind Pants (Mage)
+i(16918, MAGE);	-- Netherwind Bindings (Mage)
+i(16818, MAGE);	-- Netherwind Belt (Mage)
+i(16912, MAGE);	-- Netherwind Boots (Mage)
+i(16913, MAGE);	-- Netherwind Gloves (Mage)
+i(16917, MAGE);	-- Netherwind Mantle (Mage)
+i(16916, MAGE);	-- Netherwind Robes (Mage)
+i(19339, MAGE);	-- Mind Quickening Gem (Mage)
 
+i(16900, DRUID);	-- Stormrage Cover (Druid)
 i(16901, DRUID);	-- Stormrage Legguards (Druid)
+i(16904, DRUID);	-- Stormrage Bracers (Druid)
+i(16903, DRUID);	-- Stormrage Belt (Druid)
+i(16898, DRUID);	-- Stormrage Boots (Druid)
+i(16899, DRUID);	-- Stormrage Handguards (Druid)
+i(16902, DRUID);	-- Stormrage Pauldrons (Druid)
+i(16897, DRUID);	-- Stormrage Chestguard (Druid)
+i(19340, DRUID);	-- Rune of Metamorphosis (Druid)
+
+
+-- TIER 3
+-- NOTE: The Tier 3 is not specifically class locked, but the quests and related quest items themselves are.

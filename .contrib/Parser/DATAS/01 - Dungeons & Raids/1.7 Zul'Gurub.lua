@@ -1212,7 +1212,9 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 			o(180229, {	-- Jinxed Hoodoo Pile
 				["description"] = "These can randomly mind control a nearby player. Be careful.\n\nAlso don't kill them! (Looking at you, Diz!)",
 				["groups"] = {
-					i(19727),	-- Blood Scythe
+					i(19727, {	-- Blood Scythe
+						["requireSkill"] = SKINNING,
+					}),
 					{
 						["itemID"] = 19821,	-- Punctured Voodoo Doll [Druid]
 						["cost"] = {
@@ -1331,7 +1333,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 				i(20265),	-- Peacekeeper Boots
 				i(20262),	-- Seafury Boots
 				i(19920),	-- Primalist's Band
-				i(19767),	-- Primal Bat Leather
 			}),
 			n(14507, {	-- High Priest Venoxis
 				un(PHASE_FIVE, {
@@ -1413,7 +1414,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 				i(20260),	-- Seafury Leggings
 				i(19897),	-- Betrayer's Boots
 				i(19898),	-- Seal of Jin
-				i(19768),	-- Primal Tiger Leather
 			}),
 			o(180366, {	-- Battered Tackle Box
 				["description"] = "Fishermen with 300 skill can interact with this to receive the quest item.",
@@ -1438,10 +1438,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 					i(19946),	-- Tigule's Harpoon
 					i(19945),	-- Foror's Eyepatch
 					i(19947),	-- Nat Pagle's Broken Reel
-					{
-						["itemID"] = 22739,	-- Tome of Polymorph: Turtle
-						["classes"] = { MAGE },
-					},
+					i(22739),	-- Tome of Polymorph: Turtle
 				},
 			}),
 			n(14515, {	-- High Priestess Arlokk

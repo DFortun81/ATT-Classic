@@ -90,6 +90,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_THREE }, {
 				i(18562, {	-- Elementium Ingot
 					["crs"] = {
 						13996,	-- Blackwing Technician
+						14401,	-- Master Elemental Shaper Krixix
 					},
 				}),
 				i(19435, {	-- Essence Gatherer
@@ -193,7 +194,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_THREE }, {
 						["recipeID"] = 22967,	-- Smelt Elementium
 						["requireSkill"] = MINING,
 					},
-					i(18562),	-- Elementium Ingot
 				},
 			}),
 			n(14601, {	-- Ebonroc
