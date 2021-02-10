@@ -347,7 +347,6 @@ _.Instances = {
 				{
 					["itemID"] = 16665,		-- Tome of Tranquilizing Shot
 					["recipeID"] = 19801,	-- Tranquilizing Shot
-					["classes"] = { HUNTER },
 				}
 			}),
 			n(11982, {	-- Magmadar
@@ -519,13 +518,11 @@ _.Instances = {
 				{
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
-					["classes"] = { HUNTER },
 					["lvl"] = 60,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
 					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
-					["classes"] = { PRIEST },
 				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
