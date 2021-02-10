@@ -5,6 +5,46 @@ local i = function(itemID, ...)
 end
 
 -- Classic
+-- AQ20
+i(20873, WARRIOR, MAGE, DRUID);	-- Alabaster Idol
+i(20869, PALADIN, HUNTER, SHAMAN, WARLOCK);	-- Amber Idol
+i(20866, HUNTER, ROGUE, MAGE);	-- Azure Idol
+i(20870, PRIEST, WARLOCK, DRUID);	-- Jasper Idol
+i(20868, WARRIOR, HUNTER, PRIEST);	-- Lambent Idol
+i(20871, PALADIN, PRIEST, SHAMAN, MAGE);	-- Obsidian Idol
+i(20867, WARRIOR, ROGUE, WARLOCK);	-- Onyx Idol
+i(20872, PALADIN, ROGUE, SHAMAN, DRUID);	-- Vermillion Idol
+
+i(20888, HUNTER, ROGUE, PRIEST, WARLOCK);	-- Qiraji Ceremonial Ring
+i(20884, WARRIOR, PALADIN, SHAMAN, MAGE, DRUID);	-- Qiraji Magisterial Ring
+i(20885, WARRIOR, ROGUE, PRIEST, MAGE);	-- Qiraji Martial Drape
+i(20889, PALADIN, HUNTER, SHAMAN, WARLOCK, DRUID);	-- Qiraji Regal Drape
+i(20890, PRIEST, MAGE, WARLOCK, DRUID);	-- Qiraji Ornate Hilt
+i(20886, WARRIOR, PALADIN, HUNTER, ROGUE, SHAMAN);	-- Qiraji Spiked Hilt
+
+-- AQ40
+i(20876, WARRIOR, PRIEST, MAGE, WARLOCK);	-- Idol of Death
+i(20879, PALADIN, HUNTER, PRIEST, SHAMAN, DRUID);	-- Idol of Life
+i(20875, WARRIOR, ROGUE, MAGE, WARLOCK);	-- Idol of Night
+i(20878, PALADIN, PRIEST, SHAMAN, WARLOCK, DRUID);	-- Idol of Rebirth
+i(20881, PALADIN, HUNTER, ROGUE, SHAMAN, DRUID);	-- Idol of Strife
+i(20877, PALADIN, PRIEST, SHAMAN, MAGE, WARLOCK);	-- Idol of the Sage
+i(20874, WARRIOR, HUNTER, ROGUE, MAGE);	-- Idol of the Sun
+i(20882, WARRIOR, HUNTER, ROGUE, DRUID);	-- Idol of War
+i(21890, SHAMAN);	-- Gloves of the Fallen Prophet
+i(21889, PALADIN);	-- Gloves of the Redeemed Prophecy
+i(22402, PALADIN);	-- Libram of Grace
+i(22396, SHAMAN);	-- Totem of Life
+i(22399, DRUID);	-- Idol of Health
+i(20928, WARRIOR, HUNTER, ROGUE, PRIEST);	-- Qiraji Bindings of Command
+i(20932, PALADIN, SHAMAN, MAGE, WARLOCK, DRUID);	-- Qiraji Bindings of Dominance
+i(20930, PALADIN, HUNTER, ROGUE, SHAMAN, DRUID);	-- Vek'lor's Diadem
+i(20926, WARRIOR, PRIEST, MAGE, WARLOCK);	-- Vek'nilash's Circlet
+i(20927, WARRIOR, ROGUE, PRIEST, MAGE);	-- Ouro's Intact Hide
+i(20931, PALADIN, HUNTER, SHAMAN, WARLOCK, DRUID);	-- Skin of the Great Sandworm
+i(20929, WARRIOR, PALADIN, HUNTER, ROGUE, SHAMAN);	-- Carapace of the Old God
+i(20933, PRIEST, MAGE, WARLOCK, DRUID);	-- Husk of the Old God
+
 -- Zul'Gurub
 i(19724, HUNTER, ROGUE, PRIEST);	-- Primal Hakkari Aegis
 i(19717, WARRIOR, ROGUE, SHAMAN);	-- Primal Hakkari Armsplint
@@ -208,3 +248,55 @@ i(19340, DRUID);	-- Rune of Metamorphosis (Druid)
 
 -- TIER 3
 -- NOTE: The Tier 3 is not specifically class locked, but the quests and related quest items themselves are.
+i(22374, HUNTER, SHAMAN);	-- Wartorn Chain Scrap
+i(22376, PRIEST, MAGE, WARLOCK);	-- Wartorn Cloth Scrap
+i(22373, ROGUE, DRUID);	-- Wartorn Leather Scrap
+i(22375, WARRIOR, PALADIN);	-- Wartorn Plate Scrap
+i(23664, SHAMAN);	-- Pauldrons of Elemental Fury
+i(23667, PALADIN);	-- Spaulders of the Grand Crusader
+i(23069, PRIEST, MAGE, WARLOCK);	-- Necro-Knight's Garb
+i(23666, PALADIN);	-- Belt of the Grand Crusader
+i(23665, SHAMAN);	-- Leggings of Elemental Fury
+i(23668, PALADIN);	-- Leggings of the Grand Crusader
+
+i(23006, PALADIN);	-- Libram of Light
+i(23005, SHAMAN);	-- Totem of Flowing Water
+i(23004, DRUID);	-- Idol of Longevity
+
+i(22726, PRIEST, MAGE, WARLOCK, DRUID);	-- Splinter of Atiesh
+i(22353, WARRIOR, ROGUE);	-- Desecrated Helmet
+i(22354, WARRIOR, ROGUE);	-- Desecrated Pauldrons
+i(22349, WARRIOR, ROGUE);	-- Desecrated Breastplate
+i(22355, WARRIOR, ROGUE);	-- Desecrated Bracers
+i(22357, WARRIOR, ROGUE);	-- Desecrated Gauntlets
+i(22356, WARRIOR, ROGUE);	-- Desecrated Waistguard
+i(22352, WARRIOR, ROGUE);	-- Desecrated Legplates
+i(22358, WARRIOR, ROGUE);	-- Desecrated Sabatons
+
+i(22367, PRIEST, MAGE, WARLOCK);	-- Desecrated Circlet
+i(22368, PRIEST, MAGE, WARLOCK);	-- Desecrated Shoulderpads
+i(22351, PRIEST, MAGE, WARLOCK);	-- Desecrated Robe
+i(22369, PRIEST, MAGE, WARLOCK);	-- Desecrated Bindings
+i(22371, PRIEST, MAGE, WARLOCK);	-- Desecrated Gloves
+i(22370, PRIEST, MAGE, WARLOCK);	-- Desecrated Belt
+i(22366, PRIEST, MAGE, WARLOCK);	-- Desecrated Leggings
+i(22372, PRIEST, MAGE, WARLOCK);	-- Desecrated Sandals
+
+i(22360, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Headpiece
+i(22361, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Spaulders
+i(22350, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Tunic
+i(22362, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Wristguards
+i(22364, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Handguards
+i(22363, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Girdle
+i(22359, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Legguards
+i(22365, PALADIN, HUNTER, SHAMAN, DRUID);	-- Desecrated Boots
+
+i(23060, ROGUE);	-- Bonescythe Ring
+i(23062, MAGE);	-- Frostfire Ring
+i(23063, WARLOCK);	-- Plagueheart Ring
+i(23061, PRIEST);	-- Ring of Faith
+i(23066, PALADIN);	-- Ring of Redemption
+i(23067, HUNTER);	-- Ring of the Cryptstalker
+i(23059, WARRIOR);	-- Ring of the Dreadnaught
+i(23064, DRUID);	-- Ring of the Dreamwalker
+i(23065, SHAMAN);	-- Ring of the Earthshatterer
