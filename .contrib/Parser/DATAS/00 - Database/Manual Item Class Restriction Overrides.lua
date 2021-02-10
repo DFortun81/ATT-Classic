@@ -5,6 +5,99 @@ local i = function(itemID, ...)
 end
 
 -- Classic
+-- Assorted Items
+i(8345, DRUID);	-- Wolfshead Helm
+i(13968, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID);	-- Eye of the Beast
+i(16608, DRUID);	-- Aquarius Belt
+i(15866, DRUID);	-- Veildust Medicine Bag
+i(18714, HUNTER);	-- Ancient Sinew Wrapped Lamina
+i(18724, HUNTER);	-- Enchanted Black Dragon Sinew
+i(18715, HUNTER);	-- Lok'delar, Stave of the Ancient Keepers
+i(18705, HUNTER);	-- Mature Black Dragon Sinew
+i(18713, HUNTER);	-- Rhok'delar, Longbow of the Ancient Keepers
+i(7507, MAGE);	-- Arcane Orb
+i(9514, MAGE);	-- Arcane Staff
+i(9516, MAGE);	-- Astral Knot Blouse
+i(7511, MAGE);	-- Astral Knot Robe
+i(7515, MAGE);	-- Celestial Orb
+i(9517, MAGE);	-- Celestial Stave
+i(10572, MAGE);	-- Freezing Shard
+i(7514, MAGE);	-- Icefury Wand
+i(7510, MAGE);	-- Lesser Spellfire Robes
+i(7508, MAGE);	-- Ley Orb
+i(9513, MAGE);	-- Ley Staff
+i(7509, MAGE);	-- Manaweave Robe
+i(11263, MAGE);	-- Nether Force Wand
+i(7512, MAGE);	-- Nether-lace Robe
+i(9515, MAGE);	-- Nether-lace Tunic
+i(7513, MAGE);	-- Ragefire Wand
+i(14152, MAGE);	-- Robe of the Archmage
+i(9607, PALADIN);	-- Bastion of Stormwind
+i(6953, PALADIN);	-- Verigan's Fist
+i(16607, PRIEST);	-- Acolyte's Sacrificial Robes
+i(16605, PRIEST);	-- Friar's Robes of the Light
+i(16606, PRIEST);	-- Juju Hex Robes
+i(16604, PRIEST);	-- Moon Robes of Elune
+i(18609, PRIEST);	-- Anathema
+i(18608, PRIEST);	-- Benediction
+i(7298, ROGUE);	-- Blade of Cunning
+i(22244, WARLOCK);	-- Box of Souls
+i(21342, WARLOCK);	-- Core Felcloth Bag
+i(10049, WARLOCK);	-- Diabolist's Blade [NYI]
+i(3556, WARLOCK);	-- Dread Mage Hat
+i(6900, WARLOCK);	-- Enchanted Gold Bloodrobe
+i(21341, WARLOCK);	-- Felcloth Bag
+i(15108, WARLOCK);	-- Orb of Dar'Orahil
+i(15107, WARLOCK);	-- Orb of Noh'Orahil
+i(6898, WARLOCK);	-- Orb of Soran'ruk
+i(18354, WARLOCK);	-- Pimgib's Collar
+i(14153, WARLOCK);	-- Robe of the Void
+i(22243, WARLOCK);	-- Small Soul Pouch
+i(21340, WARLOCK);	-- Soul Pouch
+i(15106, WARLOCK);	-- Staff of Dar'Orahil
+i(15105, WARLOCK);	-- Staff of Noh'Orahil
+i(15109, WARLOCK);	-- Staff of Soran'ruk
+i(18602, WARLOCK);	-- Tome of Sacrifice
+i(7129, WARRIOR);	-- Brutal Gauntlets
+i(7133, WARRIOR);	-- Brutal Hauberk
+i(7130, WARRIOR);	-- Brutal Helm
+i(7132, WARRIOR);	-- Brutal Legguards
+i(6966, WARRIOR);	-- Elunite Axe
+i(6969, WARRIOR);	-- Elunite Dagger
+i(6968, WARRIOR);	-- Elunite Hammer
+i(6967, WARRIOR);	-- Elunite Sword
+i(6971, WARRIOR);	-- Fire Hardened Coif
+i(6974, WARRIOR);	-- Fire Hardened Gauntlets
+i(6972, WARRIOR);	-- Fire Hardened Hauberk
+i(6973, WARRIOR);	-- Fire Hardened Leggings
+i(6970, WARRIOR);	-- Furen's Favor
+i(6979, WARRIOR);	-- Haggard's Axe
+i(6980, WARRIOR);	-- Haggard's Dagger
+i(6983, WARRIOR);	-- Haggard's Hammer
+i(6985, WARRIOR);	-- Haggard's Sword
+i(7115, WARRIOR);	-- Heirloom Axe
+i(7116, WARRIOR);	-- Heirloom Dagger
+i(7117, WARRIOR);	-- Heirloom Hammer
+i(7118, WARRIOR);	-- Heirloom Sword
+i(7120, WARRIOR);	-- Ruga's Bulwark
+i(9391, WARRIOR);	-- The Shoveler
+i(7326, WARRIOR);	-- Thun'grim's Axe
+i(7327, WARRIOR);	-- Thun'grim's Dagger
+i(7328, WARRIOR);	-- Thun'grim's Mace
+i(7329, WARRIOR);	-- Thun'grim's Sword
+i(6978, WARRIOR);	-- Umbral Axe
+i(6981, WARRIOR);	-- Umbral Dagger
+i(6982, WARRIOR);	-- Umbral Mace
+i(6984, WARRIOR);	-- Umbral Sword
+i(6975, WARRIOR);	-- Whirlwind Axe
+i(6977, WARRIOR);	-- Whirlwind Sword
+i(6976, WARRIOR);	-- Whirlwind Warhammer
+i(18348, WARRIOR, PALADIN);	-- Quel'Serrar
+i(21563, PRIEST, MAGE, WARLOCK);	-- Don Rodrigo's Band
+i(16979, PRIEST, MAGE, WARLOCK);	-- Flarecore Gloves
+i(14146, PRIEST, MAGE, WARLOCK);	-- Gloves of Spell Mastery
+i(12752, PRIEST, SHAMAN, MAGE, WARLOCK, DRUID);	-- Cap of the Scarlet Savant
+
 -- AQ20
 i(20873, WARRIOR, MAGE, DRUID);	-- Alabaster Idol
 i(20869, PALADIN, HUNTER, SHAMAN, WARLOCK);	-- Amber Idol
