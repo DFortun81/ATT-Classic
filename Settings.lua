@@ -88,6 +88,7 @@ local GeneralSettingsBase = {
 		["AccountWide:Reputations"] = true,
 		["Thing:Deaths"] = true,
 		["Thing:FlightPaths"] = true,
+		["Thing:Loot"] = false,
 		["Thing:Quests"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
@@ -410,6 +411,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideReputations = true;
 		
 		app.CollectibleFlightPaths = true;
+		app.CollectibleLoot = true;
 		app.CollectibleQuests = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
@@ -428,6 +430,7 @@ settings.UpdateMode = function(self)
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
 		
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
+		app.CollectibleLoot = self:Get("Thing:Loot");
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
@@ -723,6 +726,25 @@ end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
+local LootCheckBox = settings:CreateCheckBox("Loot / Drops / Items",
+function(self)
+	self:SetChecked(settings:Get("Thing:Loot"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Loot", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+LootCheckBox:SetATTTooltip("Enable this option to track loot.\n\nLoot being any item you can get from a mob, quest, or container. Loot that qualifies for one of the other filters will still appear in ATT if this filter is turned off.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
+LootCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local QuestsCheckBox = settings:CreateCheckBox("Quests",
 function(self)
 	self:SetChecked(settings:Get("Thing:Quests"));
@@ -740,7 +762,7 @@ function(self)
 	app:RefreshData();
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and Repeatable Quests are tracked in the Blizzard Database.");
-QuestsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)

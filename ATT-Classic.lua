@@ -5108,6 +5108,8 @@ end
 -- Processing Functions (Coroutines)
 local UpdateGroup, UpdateGroups;
 UpdateGroup = function(parent, group)
+	local visible = false;
+	
 	-- Determine if this user can enter the instance or acquire the item.
 	if app.GroupRequirementsFilter(group) then
 		-- Check if this is a group
@@ -5124,7 +5126,7 @@ UpdateGroup = function(parent, group)
 			end
 			
 			-- Update the subgroups recursively...
-			UpdateGroups(group, group.g);
+			visible = UpdateGroups(group, group.g);
 			
 			-- If the 'can equip' filter says true
 			if app.GroupFilter(group) then
@@ -5134,15 +5136,14 @@ UpdateGroup = function(parent, group)
 				
 				-- If this group is trackable, then we should show it.
 				if group.total > 0 and app.GroupVisibilityFilter(group) then
-					group.visible = true;
-				elseif app.ShowIncompleteThings(group) then
-					group.visible = not group.saved;
-				else
-					group.visible = false;
+					visible = true;
+				elseif app.ShowIncompleteThings(group) and not group.saved then
+					visible = true;
+				elseif group.itemID and app.CollectibleLoot and group.f then
+					visible = true;
 				end
 			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				visible = false;
 			end
 		else
 			-- If the 'can equip' filter says true
@@ -5153,44 +5154,47 @@ UpdateGroup = function(parent, group)
 					
 					-- If we've collected the item, use the "Show Collected Items" filter.
 					if group.collected then
-						group.visible = app.CollectedItemVisibilityFilter(group);
 						parent.progress = (parent.progress or 0) + 1;
+						if app.CollectedItemVisibilityFilter(group) then
+							visible = true;
+						end
 					else
-						group.visible = true;
+						visible = true;
 					end
 				elseif group.trackable then
 					-- If this group is trackable, then we should show it.
-					if app.ShowIncompleteThings(group) then
-						group.visible = not group.saved;
-					else
-						-- Hide this group. We aren't filtering for it.
-						group.visible = false;
+					if app.ShowIncompleteThings(group) and not group.saved then
+						visible = true;
 					end
-				else
-					-- Hide this group.
-					group.visible = false;
+				elseif group.itemID and app.CollectibleLoot and group.f then
+					visible = true;
 				end
 			else
-				-- Hide this group. We aren't filtering for it.
-				group.visible = false;
+				visible = false;
 			end
 		end
-	else
-		-- This group doesn't meet requirements.
-		group.visible = false;
 	end
-
+	
+	-- Set the visibility
+	group.visible = visible;
 	if group.OnUpdate then group:OnUpdate(); end
+	return group.visible;
 end
 UpdateGroups = function(parent, g)
 	if g then
+		local visible = false;
 		for key, group in ipairs(g) do
-			UpdateGroup(parent, group);
+			if UpdateGroup(parent, group) then
+				visible = true;
+			end
 		end
+		return visible;
 	end
 end
 local function UpdateParentProgress(group)
-	group.progress = group.progress + 1;
+	if group.collectible then
+		group.progress = group.progress + 1;
+	end
 	
 	-- Continue on to this object's parent.
 	if group.parent then
