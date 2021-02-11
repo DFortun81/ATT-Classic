@@ -5139,7 +5139,7 @@ UpdateGroup = function(parent, group)
 					visible = true;
 				elseif app.ShowIncompleteThings(group) and not group.saved then
 					visible = true;
-				elseif group.itemID and app.CollectibleLoot and group.f then
+				elseif group.itemID and app.CollectibleLoot then
 					visible = true;
 				end
 			else
@@ -5166,7 +5166,7 @@ UpdateGroup = function(parent, group)
 					if app.ShowIncompleteThings(group) and not group.saved then
 						visible = true;
 					end
-				elseif group.itemID and app.CollectibleLoot and group.f then
+				elseif group.itemID and app.CollectibleLoot then
 					visible = true;
 				end
 			else
