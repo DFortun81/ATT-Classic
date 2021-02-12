@@ -5615,11 +5615,7 @@ local function CreateMiniListForGroup(group)
 		else
 			-- This is a standalone item
 			group.visible = true;
-			popout.data = {
-				["text"] = "Standalone Item",
-				["icon"] = "Interface\\Icons\\Achievement_Garrison_blueprint_medium.blp",
-				["g"] = { group },
-			};
+			popout.data = group;
 		end
 		
 		-- Clone the data and then insert it into the Raw Data table.
