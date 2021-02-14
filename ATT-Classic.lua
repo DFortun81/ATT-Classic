@@ -4852,7 +4852,7 @@ app.GetSpellName = function(spellID, rank)
 		return spellName;
 	end
 end
-app.IsSpellKnown = function(spellID, rank)
+app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 	if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
 		or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
 		return true;
@@ -4860,8 +4860,8 @@ app.IsSpellKnown = function(spellID, rank)
 	if rank then
 		local spellName = GetSpellInfo(spellID);
 		if spellName then
-			local maxRank = rawget(app.MaxSpellRankPerSpellName, spellName);
-			if maxRank and maxRank > rank then
+			local maxRank = ignoreHigherRanks and rank or  rawget(app.MaxSpellRankPerSpellName, spellName);
+			if maxRank then
 				spellName = spellName .. " (" .. RANK .. " ";
 				for i=maxRank,rank,-1 do
 					spellID = app.SpellNameToSpellID[spellName .. i .. ")"];
@@ -4938,7 +4938,7 @@ app.BaseSpell = {
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
 			end
-			if app.IsSpellKnown(t.spellID, t.rank) then
+			if app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261) then
 				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
