@@ -9426,9 +9426,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				if tradeSkillName and tradeSkillName ~= "UNKNOWN" then
 					local shouldShowSpellRanks = tradeSkillLevel and tradeSkillLevel ~= math.max(300, tradeSkillMaxLevel);
 					tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
-					if tradeSkillID == 0 then
-						app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
-					elseif tradeSkillID == 2656 then	-- Smelting, point this to Mining.
+					if tradeSkillID == 2656 then	-- Smelting, point this to Mining.
 						tradeSkillID = 2575;
 					end
 					
@@ -9467,8 +9465,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							end
 						end
 					end
-				else
-					tradeSkillID = 0;
+				elseif CraftFrameTitleText then
+					tradeSkillName = CraftFrameTitleText:GetText();
+					tradeSkillID = app.SpellNameToSpellID[CraftFrameTitleText:GetText()] or 0;
+				end
+				if tradeSkillID == 0 then
+					app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
 				end
 				
 				-- Open the Tradeskill list for this Profession
