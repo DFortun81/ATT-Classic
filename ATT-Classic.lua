@@ -4933,7 +4933,7 @@ app.BaseSpell = {
 				return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
 			end
 		elseif key == "collectible" then
-			return false;
+			return app.CollectibleRecipes;
 		elseif key == "collected" then
 			if app.RecipeChecker("CollectedSpells", t.spellID) then
 				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
@@ -9371,110 +9371,128 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				rawset(app.SpellNameToSpellID, 0, nil);
 				app.GetSpellName(0);
 				
-				-- Crafting Skills (Enchanting Only?)
-				local craftSkillName, craftSkillLevel, craftSkillMaxLevel = GetCraftDisplaySkillLine();
-				if craftSkillName and craftSkillName ~= "UNKNOWN" then
-					local shouldShowSpellRanks = craftSkillLevel and craftSkillLevel ~= math.max(300, craftSkillMaxLevel);
-					craftSkillID = app.SpellNameToSpellID[craftSkillName] or 0;
-					if craftSkillID == 0 then
-						app.print("Could not find spellID for", craftSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+				if CraftFrame and CraftFrame:IsVisible() then
+					-- Crafting Skills (Enchanting and Beast Training Only)
+					local craftSkillName, craftSkillLevel, craftSkillMaxLevel = GetCraftDisplaySkillLine();
+					if craftSkillName and craftSkillName ~= "UNKNOWN" then
+						local shouldShowSpellRanks = craftSkillLevel and craftSkillLevel ~= math.max(300, craftSkillMaxLevel);
+						craftSkillID = app.SpellNameToSpellID[craftSkillName] or 0;
+						if craftSkillID == 0 then
+							app.print("Could not find spellID for", craftSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+						end
+					elseif CraftFrameTitleText then
+						craftSkillName = CraftFrameTitleText:GetText();
+						craftSkillID = app.SpellNameToSpellID[craftSkillName] or 0;
+						if craftSkillID == 0 then
+							app.print("Could not find spellID for", craftSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+						end
+					else
+						craftSkillID = 0;
 					end
 					
-					local numberOfCrafts = GetNumCrafts();
-					for craftIndex = 1,numberOfCrafts do
-						local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
-						if craftType ~= "header" and craftType ~= "none" then
-							local spellID = craftSubSpellName and select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName];
-							if spellID then
-								SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil);
-								SetTempDataSubMember("CollectedSpells", spellID, 1);
-								if not GetDataSubMember("CollectedSpells", spellID) then
-									SetDataSubMember("CollectedSpells", spellID, 1);
-									learned = learned + 1;
+					if craftSkillID ~= 0 then
+						local numberOfCrafts, spellID = GetNumCrafts();
+						for craftIndex = 1,numberOfCrafts do
+							spellID = 0;
+							local craftName, craftSubSpellName, craftType, numAvailable, isExpanded, trainingPointCost, requiredLevel = GetCraftInfo(craftIndex);
+							if craftType ~= "header" then
+								spellID = craftSubSpellName and (select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
+								if spellID then
+									SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil);
+									SetTempDataSubMember("CollectedSpells", spellID, 1);
+									if not GetDataSubMember("CollectedSpells", spellID) then
+										SetDataSubMember("CollectedSpells", spellID, 1);
+										learned = learned + 1;
+									end
+									if not skillCache[spellID] then
+										app.print("Missing " .. craftName .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
+										skillCache[spellID] = { {} };
+									end
+								else
+									app.print("Missing " .. craftName .. " spellID in ATT Database. Please report it!");
 								end
-								if not skillCache[spellID] then
-									app.print("Missing " .. craftName .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
-									skillCache[spellID] = { {} };
-								end
-							else
-								app.print("Missing " .. craftName .. " spellID in ATT Database. Please report it!");
-							end
-							NPCHarvester:SetCraftSpell(craftIndex);
-							local link, craftedItemID = select(2, NPCHarvester:GetItem());
-							if link then craftedItemID = GetItemInfoInstant(link); end
-							
-							-- Cache the Reagents used to make this item.
-							for i=1,GetCraftNumReagents(craftIndex) do
-								local name, texturePath, reagentCount = GetCraftReagentInfo(craftIndex, i);
-								local itemID = GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
 								
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs
-								-- Index 2: The Crafted Item IDs
-								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								if craftType ~= "none" then
+									-- Attempt to harvest the item associated with this craft.
+									NPCHarvester:SetCraftSpell(craftIndex);
+									local link, craftedItemID = select(2, NPCHarvester:GetItem());
+									if link then craftedItemID = GetItemInfoInstant(link); end
+									
+									-- Cache the Reagents used to make this item.
+									for i=1,GetCraftNumReagents(craftIndex) do
+										local itemID = GetItemInfoInstant(GetCraftReagentItemLink(craftIndex, i));
+										if itemID then
+											-- Make sure a cache table exists for this item.
+											local _, _, reagentCount = GetCraftReagentInfo(craftIndex, i);
+											if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+											
+											-- Index 1: The Recipe Skill IDs
+											if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
+											
+											-- Index 2: The Crafted Item IDs
+											if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+										end
+									end
+								end
 							end
 						end
 					end
-				else
-					craftSkillID = 0;
 				end
 				
-				-- Trade Skills (Non-Enchanting)
-				local tradeSkillName, tradeSkillLevel, tradeSkillMaxLevel = GetTradeSkillLine();
-				if tradeSkillName and tradeSkillName ~= "UNKNOWN" then
-					local shouldShowSpellRanks = tradeSkillLevel and tradeSkillLevel ~= math.max(300, tradeSkillMaxLevel);
-					tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
-					if tradeSkillID == 2656 then	-- Smelting, point this to Mining.
-						tradeSkillID = 2575;
-					end
-					
-					local numTradeSkills = GetNumTradeSkills();
-					for skillIndex = 1,numTradeSkills do
-						local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
-						if skillType ~= "header" then
-							local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
-							local spellID = app.SpellNameToSpellID[skillName];
-							if spellID then
-								SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil);
-								SetTempDataSubMember("CollectedSpells", spellID, 1);
-								if not GetDataSubMember("CollectedSpells", spellID) then
-									SetDataSubMember("CollectedSpells", spellID, 1);
-									learned = learned + 1;
+				if TradeSkillFrame and TradeSkillFrame:IsVisible() then
+					-- Trade Skills (Non-Enchanting)
+					local tradeSkillName, tradeSkillLevel, tradeSkillMaxLevel = GetTradeSkillLine();
+					if tradeSkillName and tradeSkillName ~= "UNKNOWN" then
+						local shouldShowSpellRanks = tradeSkillLevel and tradeSkillLevel ~= math.max(300, tradeSkillMaxLevel);
+						tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
+						if tradeSkillID == 2656 then	-- Smelting, point this to Mining.
+							tradeSkillID = 2575;
+						elseif tradeSkillID == 0 then
+							app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
+						end
+						
+						local numTradeSkills = GetNumTradeSkills();
+						for skillIndex = 1,numTradeSkills do
+							local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
+							if skillType ~= "header" then
+								local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
+								local spellID = app.SpellNameToSpellID[skillName];
+								if spellID then
+									SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil);
+									SetTempDataSubMember("CollectedSpells", spellID, 1);
+									if not GetDataSubMember("CollectedSpells", spellID) then
+										SetDataSubMember("CollectedSpells", spellID, 1);
+										learned = learned + 1;
+									end
+									if not skillCache[spellID] then
+										app.print("Missing " .. (skillName or "[??]") .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
+										skillCache[spellID] = { {} };
+									end
+								else
+									app.print("Missing " .. (skillName or "[??]") .. " spellID in ATT Database. Please report it!");
 								end
-								if not skillCache[spellID] then
-									app.print("Missing " .. (skillName or "[??]") .. " (Spell ID #" .. spellID .. ") in ATT Database. Please report it!");
-									skillCache[spellID] = { {} };
-								end
-							else
-								app.print("Missing " .. (skillName or "[??]") .. " spellID in ATT Database. Please report it!");
-							end
-							
-							-- Cache the Reagents used to make this item.
-							for i=1,GetTradeSkillNumReagents(skillIndex) do
-								local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
-								local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
 								
-								-- Make sure a cache table exists for this item.
-								-- Index 1: The Recipe Skill IDs
-								-- Index 2: The Crafted Item IDs
-								if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
-								if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
-								if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								-- Cache the Reagents used to make this item.
+								for i=1,GetTradeSkillNumReagents(skillIndex) do
+									local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
+									local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
+									
+									-- Make sure a cache table exists for this item.
+									-- Index 1: The Recipe Skill IDs
+									-- Index 2: The Crafted Item IDs
+									if not reagentCache[itemID] then reagentCache[itemID] = { {}, {} }; end
+									if spellID then reagentCache[itemID][1][spellID] = reagentCount; end
+									if craftedItemID then reagentCache[itemID][2][craftedItemID] = reagentCount; end
+								end
 							end
 						end
+					else
+						tradeSkillID = 0;
 					end
-				elseif CraftFrameTitleText then
-					tradeSkillName = CraftFrameTitleText:GetText();
-					tradeSkillID = app.SpellNameToSpellID[CraftFrameTitleText:GetText()] or 0;
-				end
-				if tradeSkillID == 0 then
-					app.print("Could not find spellID for", tradeSkillName, GetLocale(), "! Please report this to the ATT Discord!");
 				end
 				
 				-- Open the Tradeskill list for this Profession
-				if app.Categories.Professions then
+				if app.Categories.Professions and (craftSkillID ~= 0 or tradeSkillID ~= 0) then
 					local g = {};
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then

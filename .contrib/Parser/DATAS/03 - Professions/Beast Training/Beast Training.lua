@@ -3,24 +3,29 @@ profession(261, {	-- Beast Training
 	["lvl"] = 10,
 	["groups"] = {
 		{
-			["recipeID"] = 24493,	-- Arcane Resistance [Rank 1]
+			["spellID"] = 24493,	-- Arcane Resistance [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 24497,	-- Arcane Resistance [Rank 2]
+			["spellID"] = 24497,	-- Arcane Resistance [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24500,	-- Arcane Resistance [Rank 3]
+			["spellID"] = 24500,	-- Arcane Resistance [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 24501,	-- Arcane Resistance [Rank 4]
+			["spellID"] = 24501,	-- Arcane Resistance [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 50,
 		},
 
 		{
-			["recipeID"] = 17253,	-- Bite [Rank 1]
+			["spellID"] = 17253,	-- Bite [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				1509,	-- Ragged Scavenger (Wolf, 2-3, Tirisfal Glades)
@@ -38,7 +43,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17255,	-- Bite [Rank 2]
+			["spellID"] = 17255,	-- Bite [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 10,
 			["crs"] = {
 				1133,	-- Starving Winter Wolf (Wolf, 8-9, Dun Morogh)
@@ -59,7 +65,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17256,	-- Bite [Rank 3]
+			["spellID"] = 17256,	-- Bite [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 16,
 			["crs"] = {
 				1923,	-- Bloodsnout Worg (Wolf, 16-17, Silverpine Forest)
@@ -82,7 +89,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17257,	-- Bite [Rank 4]
+			["spellID"] = 17257,	-- Bite [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 24,
 			["crs"] = {
 				628,	-- Black Ravager (Wolf, 24-25, Duskwood)
@@ -100,7 +108,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17258,	-- Bite [Rank 5]
+			["spellID"] = 17258,	-- Bite [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 32,
 			["crs"] = {
 				2563,	-- Plains Creeper (Spider, 32-33, Arathi Highlands)
@@ -116,7 +125,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17259,	-- Bite [Rank 6]
+			["spellID"] = 17259,	-- Bite [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 38,
 			["crs"] = {
 				2753,	-- Barnabus (Wolf, 38, Badlands)
@@ -135,7 +145,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17260,	-- Bite [Rank 7]
+			["spellID"] = 17260,	-- Bite [Rank 7]
+			["rank"] = 7,
 			["lvl"] = 48,
 			["crs"] = {
 				8277,	-- Rekk'tilac (Spider, 48, Searing Gorge)
@@ -149,7 +160,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 17261,	-- Bite [Rank 8]
+			["spellID"] = 17261,	-- Bite [Rank 8]
+			["rank"] = 8,
 			["lvl"] = 56,
 			["crs"] = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
@@ -157,7 +169,8 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 7371,	-- Charge [Rank 1]
+			["spellID"] = 7371,	-- Charge [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				1984,	-- Young Thistle Boar (Boar, 1-2, Teldrassil)
@@ -182,7 +195,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26177,	-- Charge [Rank 2]
+			["spellID"] = 26177,	-- Charge [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 12,
 			["crs"] = {
 				454,	-- Young Goretusk (Boar, 12-13, Westfall)
@@ -193,7 +207,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26178,	-- Charge [Rank 3]
+			["spellID"] = 26178,	-- Charge [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 24,
 			["crs"] = {
 				345,	-- Bellygrub (Boar, 24, Redridge Mountains)
@@ -203,11 +218,13 @@ profession(261, {	-- Beast Training
 			},
 		},
 		un(NEVER_IMPLEMENTED, {
-			["recipeID"] = 26179,	-- Charge [Rank 4]
+			["spellID"] = 26179,	-- Charge [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 36,
 		}),
 		{
-			["recipeID"] = 26201,	-- Charge [Rank 5]
+			["spellID"] = 26201,	-- Charge [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 48,
 			["crs"] = {
 				5992,	-- Ashmane Boar (Boar, 48-49, Blasted Lands)
@@ -215,7 +232,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 27685,	-- Charge [Rank 6]
+			["spellID"] = 27685,	-- Charge [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 60,
 			["crs"] = {
 				16117,	-- Plagued Swine (Boar, 60, Eastern Plaguelands)
@@ -223,7 +241,8 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 16827,	-- Claw [Rank 1]
+			["spellID"] = 16827,	-- Claw [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				3124,	-- Scorpid Worker (Scorpid, 3, Durotar)
@@ -234,7 +253,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16828,	-- Claw [Rank 2]
+			["spellID"] = 16828,	-- Claw [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 10,
 			["crs"] = {
 				822,	-- Young Forest Bear (Bear, 8-9, Elwynn Forest)
@@ -250,7 +270,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16829,	-- Claw [Rank 3]
+			["spellID"] = 16829,	-- Claw [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 16,
 			["crs"] = {
 				1189,	-- Black Bear Patriarch (Bear, 16-17, Loch Modan)
@@ -266,7 +287,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16830,	-- Claw [Rank 4]
+			["spellID"] = 16830,	-- Claw [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 25,
 			["crs"] = {
 				3810,	-- Elder Ashenvale Bear (Bear, 25-26, Ashenvale)
@@ -276,7 +298,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16831,	-- Claw [Rank 5]
+			["spellID"] = 16831,	-- Claw [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 34,
 			["crs"] = {
 				4697,	-- Scorpashi Lasher (Scorpid, 34-35, Desolace)
@@ -286,7 +309,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16832,	-- Claw [Rank 6]
+			["spellID"] = 16832,	-- Claw [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 40,
 			["crs"] = {
 				5422,	-- Scorpid Hunter (Scorpid, 40-41, Tanaris)
@@ -298,7 +322,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 3010,	-- Claw [Rank 7]
+			["spellID"] = 3010,	-- Claw [Rank 7]
+			["rank"] = 7,
 			["lvl"] = 48,
 			["crs"] = {
 				5274,	-- Ironfur Patriarch (Bear, 48-49, Feralas)
@@ -314,7 +339,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 3009,	-- Claw [Rank 8]
+			["spellID"] = 3009,	-- Claw [Rank 8]
+			["rank"] = 8,
 			["lvl"] = 57,
 			["crs"] = {
 				7456,	-- Winterspring Screecher (Owl, 57-59, Winterspring)
@@ -323,7 +349,8 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 1742,	-- Cower [Rank 1]
+			["spellID"] = 1742,	-- Cower [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				1199,	-- Juvenile Snow Leopard (Cat, 5-6, Dun Morogh)
@@ -339,7 +366,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1753,	-- Cower [Rank 2]
+			["spellID"] = 1753,	-- Cower [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 15,
 			["crs"] = {
 				3241,	-- Savannah Patriarch (Cat, 15-16, The Barrens)
@@ -351,7 +379,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1754,	-- Cower [Rank 3]
+			["spellID"] = 1754,	-- Cower [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 25,
 			["crs"] = {
 				4126,	-- Crag Stalker (Cat, 25-26, Thousand Needles)
@@ -364,7 +393,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1755,	-- Cower [Rank 4]
+			["spellID"] = 1755,	-- Cower [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 36,
 			["crs"] = {
 				2731,	-- Ridge Stalker (Cat, 36-37, Badlands)
@@ -373,7 +403,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 1756,	-- Cower [Rank 5]
+			["spellID"] = 1756,	-- Cower [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 50,
 			["crs"] = {
 				2522,	-- Jaguero Stalker (Cat, 50, Stranglethorn Vale)
@@ -382,7 +413,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 16697,	-- Cower [Rank 6]
+			["spellID"] = 16697,	-- Cower [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 55,
 			["crs"] = {
 				7430,	-- Frostsaber Cub (Cat, 55-56, Winterspring)
@@ -391,7 +423,8 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 23099,	-- Dash [Rank 1]
+			["spellID"] = 23099,	-- Dash [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
 				976,	-- Kurzen War Tiger (Cat, 32-33, Stranglethorn Vale)
@@ -409,7 +442,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23109,	-- Dash [Rank 2]
+			["spellID"] = 23109,	-- Dash [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
 				5286,	-- Longtooth Runner (Wolf, 40-41, Feralas)
@@ -426,7 +460,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23110,	-- Dash [Rank 3]
+			["spellID"] = 23110,	-- Dash [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
 				2681,	-- Vilebranch Raiding Wolf (Wolf, 50-51, The Hinterlands)
@@ -443,7 +478,8 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 23145,	-- Dive [Rank 1]
+			["spellID"] = 23145,	-- Dive [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 30,
 			["crs"] = {
 				4538,	-- Kraul Bat (Bat, 30-31, Razorfen Kraul)
@@ -456,7 +492,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23147,	-- Dive [Rank 2]
+			["spellID"] = 23147,	-- Dive [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 41,
 			["crs"] = {
 				5307,	-- Vale Screecher (Wind Serpent, 41-43, Feralas)
@@ -470,7 +507,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 23148,	-- Dive [Rank 3]
+			["spellID"] = 23148,	-- Dive [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
 				8927,	-- Dark Screecher (Bat, 50-52, Blackrock Depths)
@@ -488,41 +526,50 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 23992,	-- Fire Resistance [Rank 1]
+			["spellID"] = 23992,	-- Fire Resistance [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 24439,	-- Fire Resistance [Rank 2]
+			["spellID"] = 24439,	-- Fire Resistance [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24444,	-- Fire Resistance [Rank 3]
+			["spellID"] = 24444,	-- Fire Resistance [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 24445,	-- Fire Resistance [Rank 4]
+			["spellID"] = 24445,	-- Fire Resistance [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["recipeID"] = 24446,	-- Frost Resistance [Rank 1]
+			["spellID"] = 24446,	-- Frost Resistance [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 24447,	-- Frost Resistance [Rank 2]
+			["spellID"] = 24447,	-- Frost Resistance [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24448,	-- Frost Resistance [Rank 3]
+			["spellID"] = 24448,	-- Frost Resistance [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 24449,	-- Frost Resistance [Rank 4]
+			["spellID"] = 24449,	-- Frost Resistance [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 50,
 		},
 
 		{
-			["recipeID"] = 24604,	-- Furious Howl [Rank 1]
+			["spellID"] = 24604,	-- Furious Howl [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				2960,	-- Prairie Wolf Alpha (Wolf, 9-10, Mulgore)
@@ -532,7 +579,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24605,	-- Furious Howl [Rank 2]
+			["spellID"] = 24605,	-- Furious Howl [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 25,
 			["crs"] = {
 				1258,	-- Black Ravager Mastiff (Wolf, 25-26, Duskwood)
@@ -543,7 +591,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24603,	-- Furious Howl [Rank 3]
+			["spellID"] = 24603,	-- Furious Howl [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 			["crs"] = {
 				5286,	-- Longtooth Runner (Wolf, 40-41, Feralas)
@@ -554,7 +603,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24597,	-- Furious Howl [Rank 4]
+			["spellID"] = 24597,	-- Furious Howl [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
 				9696,	-- Bloodaxe Worg (Wolf, 56-57, Blackrock Spire)
@@ -562,80 +612,99 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["recipeID"] = 4187,	-- Great Stamina [Rank 1]
+			["spellID"] = 4187,	-- Great Stamina [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["recipeID"] = 4188,	-- Great Stamina [Rank 2]
+			["spellID"] = 4188,	-- Great Stamina [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 12,
 		},
 		{
-			["recipeID"] = 4189,	-- Great Stamina [Rank 3]
+			["spellID"] = 4189,	-- Great Stamina [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 18,
 		},
 		{
-			["recipeID"] = 4190,	-- Great Stamina [Rank 4]
+			["spellID"] = 4190,	-- Great Stamina [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 24,
 		},
 		{
-			["recipeID"] = 4191,	-- Great Stamina [Rank 5]
+			["spellID"] = 4191,	-- Great Stamina [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 4192,	-- Great Stamina [Rank 6]
+			["spellID"] = 4192,	-- Great Stamina [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 36,
 		},
 		{
-			["recipeID"] = 4193,	-- Great Stamina [Rank 7]
+			["spellID"] = 4193,	-- Great Stamina [Rank 7]
+			["rank"] = 7,
 			["lvl"] = 42,
 		},
 		{
-			["recipeID"] = 4194,	-- Great Stamina [Rank 8]
+			["spellID"] = 4194,	-- Great Stamina [Rank 8]
+			["rank"] = 8,
 			["lvl"] = 48,
 		},
 		{
-			["recipeID"] = 5041,	-- Great Stamina [Rank 9]
+			["spellID"] = 5041,	-- Great Stamina [Rank 9]
+			["rank"] = 9,
 			["lvl"] = 54,
 		},
 		{
-			["recipeID"] = 5042,	-- Great Stamina [Rank 10]
+			["spellID"] = 5042,	-- Great Stamina [Rank 10]
+			["rank"] = 10,
 			["lvl"] = 60,
 		},
 		
 		{
-			["recipeID"] = 2649,	-- Growl [Rank 1]
+			["spellID"] = 2649,	-- Growl [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["recipeID"] = 14916,	-- Growl [Rank 2]
+			["spellID"] = 14916,	-- Growl [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 10,
 		},
 		{
-			["recipeID"] = 14917,	-- Growl [Rank 3]
+			["spellID"] = 14917,	-- Growl [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 14918,	-- Growl [Rank 4]
+			["spellID"] = 14918,	-- Growl [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 14919,	-- Growl [Rank 5]
+			["spellID"] = 14919,	-- Growl [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 14920,	-- Growl [Rank 6]
+			["spellID"] = 14920,	-- Growl [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 50,
 		},
 		{
-			["recipeID"] = 14921,	-- Growl [Rank 7]
+			["spellID"] = 14921,	-- Growl [Rank 7]
+			["rank"] = 7,
 			["lvl"] = 60,
 		},
 		un(NEVER_IMPLEMENTED, {
-			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
+			["spellID"] = 24844,	-- Lightning Breath [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 		}),
 		{
-			["recipeID"] = 25008,	-- Lightning Breath [Rank 2]
+			["spellID"] = 25008,	-- Lightning Breath [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 15,
 			["crs"] = {
 				3630,	-- Deviate Coiler (Wind Serpent, 15-16, The Wailing Caverns)
@@ -648,7 +717,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25009,	-- Lightning Breath [Rank 3]
+			["spellID"] = 25009,	-- Lightning Breath [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 25,
 			["crs"] = {
 				4117,	-- Cloud Serpent (Wind Serpent, 25-26, Thousand Needles)
@@ -658,7 +728,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25010,	-- Lightning Breath [Rank 4]
+			["spellID"] = 25010,	-- Lightning Breath [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 41,
 			["crs"] = {
 				5307,	-- Vale Screecher (Wind Serpent, 41-43, Feralas)
@@ -666,7 +737,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 25011,	-- Lightning Breath [Rank 5]
+			["spellID"] = 25011,	-- Lightning Breath [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 49,
 			["crs"] = {
 				8336,	-- Hakkari Sapper (Wind Serpent, 49-50, The Temple of Atal'Hakkar)
@@ -676,7 +748,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		un(PHASE_FOUR, {
-			["recipeID"] = 25012,	-- Lightning Breath [Rank 6]
+			["spellID"] = 25012,	-- Lightning Breath [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 60,
 			["crs"] = {
 				11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
@@ -684,65 +757,80 @@ profession(261, {	-- Beast Training
 		}),	
 
 		{
-			["recipeID"] = 24545,	-- Natural Armor [Rank 1]
+			["spellID"] = 24545,	-- Natural Armor [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["recipeID"] = 24549,	-- Natural Armor [Rank 2]
+			["spellID"] = 24549,	-- Natural Armor [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 12,
 		},
 		{
-			["recipeID"] = 24550,	-- Natural Armor [Rank 3]
+			["spellID"] = 24550,	-- Natural Armor [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 18,
 		},
 		{
-			["recipeID"] = 24551,	-- Natural Armor [Rank 4]
+			["spellID"] = 24551,	-- Natural Armor [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 24,
 		},
 		{
-			["recipeID"] = 24552,	-- Natural Armor [Rank 5]
+			["spellID"] = 24552,	-- Natural Armor [Rank 5]
+			["rank"] = 5,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24553,	-- Natural Armor [Rank 6]
+			["spellID"] = 24553,	-- Natural Armor [Rank 6]
+			["rank"] = 6,
 			["lvl"] = 36,
 		},
 		{
-			["recipeID"] = 24554,	-- Natural Armor [Rank 7]
+			["spellID"] = 24554,	-- Natural Armor [Rank 7]
+			["rank"] = 7,
 			["lvl"] = 42,
 		},
 		{
-			["recipeID"] = 24555,	-- Natural Armor [Rank 8]
+			["spellID"] = 24555,	-- Natural Armor [Rank 8]
+			["rank"] = 8,
 			["lvl"] = 48,
 		},
 		{
-			["recipeID"] = 24629,	-- Natural Armor [Rank 9]
+			["spellID"] = 24629,	-- Natural Armor [Rank 9]
+			["rank"] = 9,
 			["lvl"] = 54,
 		},
 		{
-			["recipeID"] = 24630,	-- Natural Armor [Rank 10]
+			["spellID"] = 24630,	-- Natural Armor [Rank 10]
+			["rank"] = 10,
 			["lvl"] = 60,
 		},
 		
 		{
-			["recipeID"] = 24492,	-- Nature Resistance [Rank 1]
+			["spellID"] = 24492,	-- Nature Resistance [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 24502,	-- Nature Resistance [Rank 2]
+			["spellID"] = 24502,	-- Nature Resistance [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24503,	-- Nature Resistance [Rank 3]
+			["spellID"] = 24503,	-- Nature Resistance [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 24504,	-- Nature Resistance [Rank 4]
+			["spellID"] = 24504,	-- Nature Resistance [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["recipeID"] = 24450,	-- Prowl [Rank 1]
+			["spellID"] = 24450,	-- Prowl [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
 				2406,	-- Mountain Lion (Cat, 32-33, Alterac Mountains)
@@ -752,7 +840,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24452,	-- Prowl [Rank 2]
+			["spellID"] = 24452,	-- Prowl [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
 				2734,	-- Ridge Stalker Patriarch (Cat, 40-41, Badlands)
@@ -760,7 +849,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24453,	-- Prowl [Rank 3]
+			["spellID"] = 24453,	-- Prowl [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
 				2522,	-- Jaguero Stalker (Cat, 50, Stranglethorn Vale)
@@ -769,7 +859,8 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 24640,	-- Scorpid Poison [Rank 1]
+			["spellID"] = 24640,	-- Scorpid Poison [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
 				3127,	-- Venomtail Scorpid (Scorpid, 9-10, Durotar)
@@ -780,7 +871,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24583,	-- Scorpid Poison [Rank 2]
+			["spellID"] = 24583,	-- Scorpid Poison [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 			["crs"] = {
 				4696,	-- Scorpashi Snapper (Scorpid, 30-31, Desolace)
@@ -792,7 +884,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24586,	-- Scorpid Poison [Rank 3]
+			["spellID"] = 24586,	-- Scorpid Poison [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 			["crs"] = {
 				5422,	-- Scorpid Hunter (Scorpid, 40-41, Tanaris)
@@ -807,7 +900,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24587,	-- Scorpid Poison [Rank 4]
+			["spellID"] = 24587,	-- Scorpid Poison [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
 				14476,	-- Krellack (Scorpid, 56, Silithus)
@@ -818,14 +912,16 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 24423,	-- Screech [Rank 1]
+			["spellID"] = 24423,	-- Screech [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 16,
 			["crs"] = {
 				154,	-- Greater Fleshripper (Carrion Bird, 16-17, Westfall)
 			},
 		},
 		{
-			["recipeID"] = 24577,	-- Screech [Rank 2]
+			["spellID"] = 24577,	-- Screech [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 32,
 			["crs"] = {
 				4158,	-- Salt Flats Vulture (Carrion Bird, 32-34, Thousand Needles)
@@ -834,7 +930,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24578,	-- Screech [Rank 3]
+			["spellID"] = 24578,	-- Screech [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 48,
 			["crs"] = {
 				7097,	-- Ironbeak Owl (Owl, 48-49, Felwood)
@@ -843,7 +940,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 24579,	-- Screech [Rank 4]
+			["spellID"] = 24579,	-- Screech [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
 				8602,	-- Monstrous Plaguebat (Bat, 56-58, Eastern Plaguelands)
@@ -852,24 +950,29 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 24488,	-- Shadow Resistance [Rank 1]
+			["spellID"] = 24488,	-- Shadow Resistance [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["recipeID"] = 24505,	-- Shadow Resistance [Rank 2]
+			["spellID"] = 24505,	-- Shadow Resistance [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["recipeID"] = 24506,	-- Shadow Resistance [Rank 3]
+			["spellID"] = 24506,	-- Shadow Resistance [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["recipeID"] = 24507,	-- Shadow Resistance [Rank 4]
+			["spellID"] = 24507,	-- Shadow Resistance [Rank 4]
+			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["recipeID"] = 26064,	-- Shell Shield [Rank 1]
+			["spellID"] = 26064,	-- Shell Shield [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 20,
 			["crs"] = {
 				3653,	-- Kresh (Turtle, 20, The Wailing Caverns)
@@ -881,7 +984,8 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["recipeID"] = 26090,	-- Thunderstomp [Rank 1]
+			["spellID"] = 26090,	-- Thunderstomp [Rank 1]
+			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
 				1108,	-- Mistvale Gorilla (Gorilla, 32-33, Stranglethorn Vale)
@@ -889,7 +993,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26187,	-- Thunderstomp [Rank 2]
+			["spellID"] = 26187,	-- Thunderstomp [Rank 2]
+			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
 				1557,	-- Elder Mistvale Gorilla (Gorilla, 40-41, Stranglethorn Vale)
@@ -897,7 +1002,8 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["recipeID"] = 26188,	-- Thunderstomp [Rank 3]
+			["spellID"] = 26188,	-- Thunderstomp [Rank 3]
+			["rank"] = 3,
 			["lvl"] = 52,
 			["crs"] = {
 				6516,	-- Un'Goro Thunderer (Gorilla, 52-53, Un'Goro Crater)
