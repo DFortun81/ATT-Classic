@@ -508,7 +508,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 									{ "i", 19817, 1 },	-- Punctured Voodoo Doll [Shaman]
 								},
 								["groups"] = {
-									i(19786),	-- Vodouisant's Vigilant Embrace []
+									i(19786),	-- Vodouisant's Vigilant Embrace [Shaman]
 								},
 							}),
 							q(8075, {	-- Paragons of Power: The Augur's Hauberk [Revered]

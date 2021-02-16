@@ -127,9 +127,6 @@ i(20874, WARRIOR, HUNTER, ROGUE, MAGE);	-- Idol of the Sun
 i(20882, WARRIOR, HUNTER, ROGUE, DRUID);	-- Idol of War
 i(21890, SHAMAN);	-- Gloves of the Fallen Prophet
 i(21889, PALADIN);	-- Gloves of the Redeemed Prophecy
-i(22402, PALADIN);	-- Libram of Grace
-i(22396, SHAMAN);	-- Totem of Life
-i(22399, DRUID);	-- Idol of Health
 i(20928, WARRIOR, HUNTER, ROGUE, PRIEST);	-- Qiraji Bindings of Command
 i(20932, PALADIN, SHAMAN, MAGE, WARLOCK, DRUID);	-- Qiraji Bindings of Dominance
 i(20930, PALADIN, HUNTER, ROGUE, SHAMAN, DRUID);	-- Vek'lor's Diadem
@@ -353,10 +350,6 @@ i(23666, PALADIN);	-- Belt of the Grand Crusader
 i(23665, SHAMAN);	-- Leggings of Elemental Fury
 i(23668, PALADIN);	-- Leggings of the Grand Crusader
 
-i(23006, PALADIN);	-- Libram of Light
-i(23005, SHAMAN);	-- Totem of Flowing Water
-i(23004, DRUID);	-- Idol of Longevity
-
 i(22726, PRIEST, MAGE, WARLOCK, DRUID);	-- Splinter of Atiesh
 i(22353, WARRIOR, ROGUE);	-- Desecrated Helmet
 i(22354, WARRIOR, ROGUE);	-- Desecrated Pauldrons
@@ -394,3 +387,23 @@ i(23067, HUNTER);	-- Ring of the Cryptstalker
 i(23059, WARRIOR);	-- Ring of the Dreadnaught
 i(23064, DRUID);	-- Ring of the Dreamwalker
 i(23065, SHAMAN);	-- Ring of the Earthshatterer
+
+-- Relics / Librams / Idols / Totems
+i(23198, DRUID);	-- Idol of Brutality
+i(22397, DRUID);	-- Idol of Ferocity
+i(22399, DRUID);	-- Idol of Health
+i(23004, DRUID);	-- Idol of Longevity
+i(22398, DRUID);	-- Idol of Rejuvenation
+i(23197, DRUID);	-- Idol of the Moon
+i(23201, PALADIN);	-- Libram of Divinity
+i(23203, PALADIN);	-- Libram of Fervor
+i(22402, PALADIN);	-- Libram of Grace
+i(22401, PALADIN);	-- Libram of Hope
+i(23006, PALADIN);	-- Libram of Light
+i(22400, PALADIN);	-- Libram of Truth
+i(23005, SHAMAN);	-- Totem of Flowing Water
+i(22396, SHAMAN);	-- Totem of Life
+i(22395, SHAMAN);	-- Totem of Rage
+i(22345, SHAMAN);	-- Totem of Rebirth
+i(23200, SHAMAN);	-- Totem of Sustaining
+i(23199, SHAMAN);	-- Totem of the Storm

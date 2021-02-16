@@ -30,7 +30,30 @@ i(15906, 34);	-- Left-Handed Brass Knuckles
 i(15907, 34);	-- Left-Handed Claw
 i(11505, 34);	-- Monster - Claw - Bear Offhand
 i(11506, 34);	-- Monster - Claw Offhand
-i(11863, 34);	-- White Bone Shredder-- Mounts
+i(11863, 34);	-- White Bone Shredder
+
+-- Relics / Librams / Idols / Totems
+i(23198, 54);	-- Idol of Brutality
+i(22397, 54);	-- Idol of Ferocity
+i(22399, 54);	-- Idol of Health
+i(23004, 54);	-- Idol of Longevity
+i(22398, 54);	-- Idol of Rejuvenation
+i(23197, 54);	-- Idol of the Moon
+i(23201, 54);	-- Libram of Divinity
+i(23203, 54);	-- Libram of Fervor
+i(22402, 54);	-- Libram of Grace
+i(22401, 54);	-- Libram of Hope
+i(23006, 54);	-- Libram of Light
+i(22400, 54);	-- Libram of Truth
+i(23005, 54);	-- Totem of Flowing Water
+i(22396, 54);	-- Totem of Life
+i(22395, 54);	-- Totem of Rage
+i(22345, 54);	-- Totem of Rebirth
+i(23200, 54);	-- Totem of Sustaining
+i(23199, 54);	-- Totem of the Storm
+
+
+-- Mounts
 i(18243, 100);	-- Black Battlestrider
 i(21176, 100);	-- Black Qiraji Resonating Crystal
 i(13328, 100);	-- Black Ram
