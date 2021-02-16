@@ -1738,7 +1738,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 						15928,	-- Thaddius
 					},
 				}),
-				i(22682),	-- Frozen Rune
 			}),
 			n(ZONEDROPS, {
 				{
@@ -1746,6 +1745,12 @@ _.Instances = bubbleDown({ ["u"] = PHASE_SIX }, {
 					["questID"] = 9229,	-- The Fate of Ramaladni
 					["cr"] = 16018,	-- Bile Retcher
 				},
+				i(22682, {	-- Frozen Rune
+					["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
+					["cost"] = {
+						{ "i", 23055, 1 },	-- Word of Thawing
+					},
+				}),
 				i(22374),	-- Wartorn Chain Scrap
 				i(22376),	-- Wartorn Cloth Scrap
 				i(22373),	-- Wartorn Leather Scrap
