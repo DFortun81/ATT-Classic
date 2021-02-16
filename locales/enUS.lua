@@ -138,10 +138,13 @@ app.L = {
 		[51] = INVTYPE_NECK,									-- Neck
 		[52] = INVTYPE_FINGER,									-- Finger
 		[53] = INVTYPE_TRINKET,									-- Trinket
+		[54] = INVTYPE_RELIC,									-- Relic / Libram / Idols
+		[55] = AUCTION_CATEGORY_CONSUMABLES,					-- Consumable
 		[57] = GetItemSubClassInfo(2,20),						-- Fishing Poles
 
 		-- Non-Equipment
-		[100] = GetItemSubClassInfo(15,5),						-- Mounts
+		[100] = MOUNTS,											-- Mounts
+		[104] = AUCTION_CATEGORY_QUEST_ITEMS, 					-- Quest Items
 		[113] = INVTYPE_BAG, 									-- Bags
 		[200] = AUCTION_CATEGORY_RECIPES,						-- Recipes
 	};

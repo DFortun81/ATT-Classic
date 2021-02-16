@@ -1070,7 +1070,7 @@ local ItemFilterOnRefresh = function(self)
 		self:SetAlpha(0.2);
 	end
 end;
-for i,filterID in ipairs({ 4, 5, 6, 7 }) do
+for i,filterID in ipairs({ 2, 4, 5, 6, 7 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1080,7 +1080,17 @@ end
 
 -- Weapons
 yoffset = -4;
-for i,filterID in ipairs({ 20, 29, 28, 27  }) do
+for i,filterID in ipairs({ 20, 34, 29, 8, 28  }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Ranged Weapons
+yoffset = -4;
+for i,filterID in ipairs({ 33, 32, 31, 27  }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1090,17 +1100,7 @@ end
 
 -- Big Ole Boys
 yoffset = -4;
-for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 34, 8 }) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
--- Weird Boys
-yoffset = -4;
-for i,filterID in ipairs({ 2, 50, 57 }) do
+for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1110,12 +1110,32 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 33, 32, 31, 10, 9, 51, 52, 53 }) do
+for i,filterID in ipairs({ 10, 9, 51, 52, 53 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
 	last = filter;
 	xoffset = 0;
+	yoffset = 6;
+end
+
+-- Secondary Weapon Classes
+yoffset = -4;
+for i,filterID in ipairs({ 50, 57, 100, 54, 1 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Miscellaneous
+yoffset = -4;
+for i,filterID in ipairs({ 113, 55, 104, 200 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
 	yoffset = 6;
 end
 
@@ -1201,14 +1221,14 @@ local UnobtainableOnRefresh = function(self)
 	end
 end;
 local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -120, -8);
+LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -110, -8);
 LegacyFiltersLabel:SetJustifyH("LEFT");
 LegacyFiltersLabel:SetText("Seasonal & Unobtainable Filters");
 LegacyFiltersLabel:Show();
 table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
 
 local SeasonalHolidayFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-SeasonalHolidayFiltersLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
+SeasonalHolidayFiltersLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 4, -8);
 SeasonalHolidayFiltersLabel:SetJustifyH("LEFT");
 SeasonalHolidayFiltersLabel:SetText("|CFFAAAAFFSeasonal Holiday Filters|r");
 SeasonalHolidayFiltersLabel:Show();
@@ -1246,7 +1266,7 @@ for i,u in ipairs({ 1, 2, 3  }) do
 end
 
 local FutureContentReleasesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-FutureContentReleasesLabel:SetPoint("RIGHT", line, "RIGHT", -10, 0);
+FutureContentReleasesLabel:SetPoint("RIGHT", line, "RIGHT", -20, 0);
 FutureContentReleasesLabel:SetPoint("TOP", LegacyFiltersLabel, "BOTTOM", 0, -8);
 FutureContentReleasesLabel:SetJustifyH("LEFT");
 FutureContentReleasesLabel:SetText("|CFFAAFFAAFuture Content Releases|r");

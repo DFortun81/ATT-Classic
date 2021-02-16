@@ -52,6 +52,27 @@ i(22345, 54);	-- Totem of Rebirth
 i(23200, 54);	-- Totem of Sustaining
 i(23199, 54);	-- Totem of the Storm
 
+-- Consumables
+i(22137, 55);	-- Ysida's Satchel
+i(22320, 55);	-- Mux's Quality Goods
+i(17333, 55);	-- Aqual Quintessence
+i(22754, 55);	-- Eternal Quintessence
+i(19790, 55);	-- Animist's Caress [Druid]
+i(19785, 55);	-- Falcon's Call [Hunter]
+i(19787, 55);	-- Presence of Sight [Mage]
+i(19783, 55);	-- Syncretist's Sigil [Paladin]
+i(19789, 55);	-- Prophetic Aura [Priest]
+i(19784, 55);	-- Death's Embrace [Rogue]
+i(19786, 55);	-- Vodouisant's Vigilant Embrace [Shaman]
+i(19788, 55);	-- Hoodoo Hex [Warlock]
+i(19782, 55);	-- Presence of Might [Warrior]
+i(22682, 55);	-- Frozen Rune
+i(23055, 55);	-- Word of Thawing
+i(23549, 55);	-- Fortitude of the Scourge
+i(23548, 55);	-- Might of the Scourge
+i(23545, 55);	-- Power of the Scourge
+i(23547, 55);	-- Resilience of the Scourge
+--i(, 55);	-- 
 
 -- Mounts
 i(18243, 100);	-- Black Battlestrider

@@ -3948,6 +3948,8 @@ app.BaseItem = {
 			return BestWeightPerItemID[t.itemID];
 		elseif key == "b" then
 			return 2;
+		elseif key == "f" then
+			if t.questID then return 104; end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4777,6 +4779,8 @@ app.BaseRecipe = {
 			return t.requireSkill;
 		elseif key == "b" then
 			return t.itemID and app.AccountWideRecipes and 2;
+		elseif key == "f" then
+			return t.itemID and 200;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
