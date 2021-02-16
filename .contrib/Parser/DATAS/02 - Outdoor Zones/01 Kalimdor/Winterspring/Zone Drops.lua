@@ -29,7 +29,16 @@ _.Zones =
 					},
 				})),
 				i(18704, {	-- Mature Blue Dragon Sinew
-					["cr"] = 7437,	-- Cobalt Mageweaver
+					["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
+					["classes"] = { HUNTER },
+					["crs"] = {
+						7435,	-- Cobalt Wyrmkin
+						7436,	-- Cobalt Scalebane
+						7437,	-- Cobalt Mageweaver
+						10196,	-- General Colbatann
+						10663,	-- Manaclaw
+						10664,	-- Scryer
+					},
 				}),
 				i(12383, {	-- Moontouched Feather
 					["questID"] = 978,	-- Moontouched Wildkin

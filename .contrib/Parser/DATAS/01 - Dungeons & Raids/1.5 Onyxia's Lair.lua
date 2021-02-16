@@ -39,6 +39,9 @@ _.Instances = {
 						7435,	-- Cobalt Wyrmkin
 						7436,	-- Cobalt Scalebane
 						7437,	-- Cobalt Mageweaver
+						10196,	-- General Colbatann
+						10663,	-- Manaclaw
+						10664,	-- Scryer
 					},
 					["lvl"] = 60,
 					["cost"] = {

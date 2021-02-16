@@ -13,7 +13,10 @@ _.Instances = {
 				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
-					i(18704),	-- Mature Blue Dragon Sinew
+					i(18704, {	-- Mature Blue Dragon Sinew
+						["questID"] = 7634,	-- Ancient Sinew Wrapped Lamina
+						["classes"] = { HUNTER },
+					}),
 					i(19130),	-- Cold Snap
 					i(18202),	-- Eskhandar's Left Claw
 					i(17070),	-- Fang of the Mystics
