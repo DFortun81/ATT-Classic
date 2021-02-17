@@ -8154,6 +8154,107 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		UpdateWindow(self, true, got);
 	end
 end);
+app:GetWindow("ItemFilter", UIParent, function(self)
+	if self:IsVisible() then
+		if not self.initialized then
+			self.initialized = true;
+			self.dirty = true;
+			
+			-- Item Filter
+			local actions = {
+				['text'] = "Item Filters",
+				['icon'] = app.asset("Achievement_Dungeon_HEROIC_GloryoftheRaider"), 
+				["description"] = "You can search the ATT Database by using a item filter.",
+				['visible'] = true, 
+				['expanded'] = true,
+				['back'] = 1,
+				['OnUpdate'] = function(data)
+					if not self.dirty then return nil; end
+					self.dirty = nil;
+					
+					local g = {};
+					table.insert(g, 1, data.setItemFilter);
+					if #data.results > 0 then
+						for i,result in ipairs(data.results) do
+							table.insert(g, result);
+						end
+					end
+					data.g = g;
+					if #g > 0 then
+						for i,entry in ipairs(g) do
+							entry.indent = nil;
+						end
+						data.indent = 0;
+						data.visible = true;
+						BuildGroups(data, data.g);
+						app.UpdateGroups(data, data.g);
+						if not data.expanded then
+							data.expanded = true;
+							ExpandGroupsRecursively(data, true);
+						end
+					end
+				end,
+				['g'] = {},
+				['results'] = {},
+				['setItemFilter'] = {
+					['text'] = "Set Item Filter",
+					['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+					['description'] = "Click this to change the item filter you want to search for within ATT.",
+					['visible'] = true,
+					['OnClick'] = function(row, button)
+						app:ShowPopupDialogWithEditBox("Which Item Filter would you like to search for?", "", function(text)
+							text = string.lower(text);
+							local filterID = tonumber(text);
+							if tostring(filterID) ~= text then
+								-- The string form did not match, the filter must have been by name.
+								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
+									if string.find(string.lower(filter), text) then
+										filterID = tonumber(id);
+										break;
+									end
+								end
+							end
+							if filterID then
+								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", filterID);
+								self.dirty = true;
+							end
+							wipe(searchCache);
+							self:Update();
+						end);
+						return true;
+					end,
+					['OnUpdate'] = function(data)
+						data.visible = true;
+					end,
+				},
+			};
+			
+			self.Reset = function()
+				self.data = actions;
+			end
+			
+			-- Setup Event Handlers and register for events
+			self:SetScript("OnEvent", function(self, e, ...)
+				self.dirty = true;
+				self:Update();
+			end);
+			self:Reset();
+		end
+		
+		-- Update the window and all of its row data
+		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
+		for i,g in ipairs(self.data.g) do
+			if g.OnUpdate then g.OnUpdate(g, self); end
+		end
+		
+		-- Update the groups without forcing Debug Mode.
+		local visibilityFilter = app.VisibilityFilter;
+		app.VisibilityFilter = app.ObjectVisibilityFilter;
+		BuildGroups(self.data, self.data.g);
+		UpdateWindow(self, true);
+		app.VisibilityFilter = visibilityFilter;
+	end
+end);
 app:GetWindow("ItemFinder", UIParent, function(self, ...)
 	if self:IsVisible() then
 		if not self.initialized then

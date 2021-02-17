@@ -127,6 +127,7 @@ i(18945, 104);	-- Dark Iron Residue
 i(19883, 104);	-- Sacred Cord
 i(20464, 104);	-- Glyphs of Calling
 i(11568, 104);	-- Torwa's Pouch
+i(19182, 104);	-- Darkmoon Faire Prize Ticket
 i(19227, 104);	-- Ace of Beasts
 i(19230, 104);	-- Two of Beasts
 i(19231, 104);	-- Three of Beasts
