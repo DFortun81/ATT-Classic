@@ -4,6 +4,9 @@ local i = function(itemID, filterID)
 	return o;
 end
 
+-- Expert Cook
+_.ItemDB[16072] = { ["spellID"] = 0 };	-- Temporarily do not have a fix.
+
 -- Axes
 i(9608, 21);	-- Shoni's Disarming Tool
 i(12502, 21);	-- Monster - Glaive - Demonhunter Black Offhand
