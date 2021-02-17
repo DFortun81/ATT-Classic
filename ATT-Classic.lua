@@ -3902,13 +3902,8 @@ app.BaseItem = {
 		if key == "key" then
 			return "itemID";
 		elseif key == "collectible" then
-			return (t.questID and app.CollectibleQuests and not t.repeatable and not t.isBreadcrumb) or (t.factionID and app.CollectibleReputations); -- (t.weight and t.weight > 0) or 
+			return (t.questID and app.CollectibleQuests and not t.repeatable and not t.isBreadcrumb) or (t.factionID and app.CollectibleReputations);
 		elseif key == "collected" then
-			--[[
-			if t.weight and t.weight > 0 then
-				return false;
-			end
-			]]--
 			if t.factionID then
 				-- This is used by reputation tokens. (turn in items)
 				if app.AccountWideReputations then
@@ -3950,6 +3945,10 @@ app.BaseItem = {
 			return 2;
 		elseif key == "f" then
 			if t.questID then return 104; end
+			for i,o in ipairs(SearchForField("itemID", t.itemID)) do
+				if o.questID then return 104; end
+			end
+			if not t.g then return 50; end
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -4650,6 +4649,8 @@ app.BaseQuest = {
 			return t.isDaily or t.isWeekly or t.isYearly;
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
+		elseif key == "f" then
+			if t.itemID then return 104; end
 		else
 			-- Something that isn't dynamic.
 			return table[key];

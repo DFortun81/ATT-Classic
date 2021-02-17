@@ -17,6 +17,9 @@ i(1018, 25);	-- Chows Blade of DOOM! (Test)
 i(12939, 25);	-- Dal'Rend's Tribal Guardian
 i(19866, 25);	-- Warblade of the Hakkari
 
+-- Two-Handed Maces
+i(17204, 24);	-- Eye of Sulfuras
+
 -- Fist Weapons
 i(19910, 34);	-- Arlokk's Grasp
 i(17738, 34);	-- Claw of Celebras
@@ -31,6 +34,15 @@ i(15907, 34);	-- Left-Handed Claw
 i(11505, 34);	-- Monster - Claw - Bear Offhand
 i(11506, 34);	-- Monster - Claw Offhand
 i(11863, 34);	-- White Bone Shredder
+
+-- Cloth
+i(18457, 4);	-- Sergeant Major's Silk Cuffs (45)
+
+-- Miscellaneous
+i(18606, 50);	-- Alliance Battle Standard
+i(18607, 50);	-- Horde Battle Standard
+i(19046, 50);	-- Frostwolf Battle Standard
+i(19045, 50);	-- Stormpike Battle Standard
 
 -- Relics / Librams / Idols / Totems
 i(23198, 54);	-- Idol of Brutality
@@ -72,7 +84,81 @@ i(23549, 55);	-- Fortitude of the Scourge
 i(23548, 55);	-- Might of the Scourge
 i(23545, 55);	-- Power of the Scourge
 i(23547, 55);	-- Resilience of the Scourge
+i(22192, 55);	-- Bloodkelp Elixir of Dodging
+i(22193, 55);	-- Bloodkelp Elixir of Resistance
+i(20031, 55);	-- Essence Mango
+i(22635, 55);	-- Savage Guard
+i(20080, 55);	-- Sheen of Zanza
+i(20079, 55);	-- Spirit of Zanza
+i(20081, 55);	-- Swiftness of Zanza
+i(12003, 55);	-- Dark Dwarven Lager
+i(18269, 55);	-- Gordok Green Grog
+i(18284, 55);	-- Kreeg's Stout Beatdown
+i(12662, 55);	-- Demonic Rune
+i(6149, 55);	-- Greater Mana Potion
+i(3928, 55);	-- Superior Healing Potion
+i(1970, 55);	-- Restoring Balm
+i(5816, 55);	-- Light of Elune
+i(11846, 55);	-- Wizbang's Special Brew
+i(5996, 55);	-- Elixir of Water Breathing
+i(4852, 55);	-- Flash Bomb
+i(22636, 55);	-- Ice Guard
+i(22638, 55);	-- Shadow Guard
+i(2863, 55);	-- Coarse Sharpening Stone
+i(20748, 55);	-- Brilliant Mana Oil
+i(20749, 55);	-- Brilliant Wizard Oil
+i(20747, 55);	-- Lesser Mana Oil
+i(20746, 55);	-- Lesser Wizard Oil
+i(20745, 55);	-- Minor Mana Oil
+i(20744, 55);	-- Minor Wizard Oil
+i(20750, 55);	-- Wizard Oil
 --i(, 55);	-- 
+
+-- Quest Items
+i(18333, 104);	-- Libram of Focus
+i(18334, 104);	-- Libram of Protection
+i(18332, 104);	-- Libram of Rapidity
+i(21986, 104);	-- Banner of Provocation
+i(22057, 104);	-- Brazier of Invocation
+i(22048, 104);	-- Lord Valthalak's Amulet
+i(21984, 104);	-- Left Piece of Lord Valthalak's Amulet
+i(22046, 104);	-- Right Piece of Lord Valthalak's Amulet
+i(18945, 104);	-- Dark Iron Residue
+i(19883, 104);	-- Sacred Cord
+i(20464, 104);	-- Glyphs of Calling
+i(11568, 104);	-- Torwa's Pouch
+i(19227, 104);	-- Ace of Beasts
+i(19230, 104);	-- Two of Beasts
+i(19231, 104);	-- Three of Beasts
+i(19232, 104);	-- Four of Beasts
+i(19233, 104);	-- Five of Beasts
+i(19234, 104);	-- Six of Beasts
+i(19235, 104);	-- Seven of Beasts
+i(19236, 104);	-- Eight of Beasts
+i(19258, 104);	-- Ace of Warlords
+i(19259, 104);	-- Two of Warlords
+i(19260, 104);	-- Three of Warlords
+i(19261, 104);	-- Four of Warlords
+i(19262, 104);	-- Five of Warlords
+i(19263, 104);	-- Six of Warlords
+i(19264, 104);	-- Seven of Warlords
+i(19265, 104);	-- Eight of Warlords
+i(19268, 104);	-- Ace of Elementals
+i(19269, 104);	-- Two of Elementals
+i(19270, 104);	-- Three of Elementals
+i(19271, 104);	-- Four of Elementals
+i(19272, 104);	-- Five of Elementals
+i(19273, 104);	-- Six of Elementals
+i(19274, 104);	-- Seven of Elementals
+i(19275, 104);	-- Eight of Elementals
+i(19276, 104);	-- Ace of Portals
+i(19278, 104);	-- Two of Portals
+i(19279, 104);	-- Three of Portals
+i(19280, 104);	-- Four of Portals
+i(19281, 104);	-- Five of Portals
+i(19282, 104);	-- Six of Portals
+i(19283, 104);	-- Seven of Portals
+i(19284, 104);	-- Eight of Portals
 
 -- Mounts
 i(18243, 100);	-- Black Battlestrider

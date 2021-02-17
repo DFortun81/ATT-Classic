@@ -449,9 +449,6 @@ _.Zones =
 				q(2605, {	-- The Thirsty Goblin
 					["lvl"] = 44,
 					["qg"] = 7564,	-- Marin Noggenfogger
-					["g"] = {
-						i(8429),	-- Punctured Dew Gland
-					},
 					["coord"] = { 51.8, 28.6, TANARIS },
 				}),
 				q(3362, {	-- Thistleshrub Valley

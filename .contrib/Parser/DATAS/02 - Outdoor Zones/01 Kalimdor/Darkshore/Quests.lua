@@ -246,7 +246,6 @@ _.Zones =
 							["coord"] = { 55.1, 34.6, DARKSHORE },
 						},
 						i(5610),	-- Gustweald Cloak
-						i(4605),	-- Red-speckled Mushroom
 					},
 				}),
 				q(2138, {	-- Cleansing of the Infected

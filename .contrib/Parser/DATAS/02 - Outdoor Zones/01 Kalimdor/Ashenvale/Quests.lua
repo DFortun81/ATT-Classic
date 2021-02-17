@@ -12,10 +12,6 @@ _.Zones =
 					["coord"] = { 36.6, 49.6, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 18,
-					["g"] = {
-						i(4542),	-- Moist Cornbread
-						i(1205),	-- Melon Juice
-					},
 				}),
 				q(6503, {	-- Ashenvale Outrunners
 					["qg"] = 12867,	-- Kuray'bin
