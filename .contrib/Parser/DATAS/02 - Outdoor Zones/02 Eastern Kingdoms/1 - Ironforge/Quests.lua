@@ -99,7 +99,7 @@ _.Zones =
 					["maps"] = { HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 4521, 1 },	-- Alterac Granite
+						{ "i", 4521, 5 },	-- Alterac Granite
 					},
 					["lvl"] = 25,
 				}),

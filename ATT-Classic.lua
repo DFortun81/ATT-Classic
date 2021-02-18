@@ -3945,8 +3945,11 @@ app.BaseItem = {
 			return 2;
 		elseif key == "f" then
 			if t.questID then return 104; end
-			for i,o in ipairs(SearchForField("itemID", t.itemID)) do
-				if o.questID then return 104; end
+			local results = SearchForField("itemID", t.itemID);
+			if results then
+				for i,o in ipairs(SearchForField("itemID", t.itemID)) do
+					if o.questID then return 104; end
+				end
 			end
 			if not t.g then return 50; end
 		else
@@ -4879,7 +4882,7 @@ app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 		end
 	end
 end
-app.SpellNameToSpellID = setmetatable({}, {
+app.SpellNameToSpellID = setmetatable({["Ingénierie"] = 4036}, {
 	__index = function(t, key)
 		local cache = fieldCache["spellID"];
 		for spellID,g in pairs(cache) do

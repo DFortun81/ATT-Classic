@@ -209,21 +209,25 @@ _.Zones =
 						{
 							["itemID"] = 5736,	-- Gerenzo's Mechanical Arm
 							["questID"] = 1096,	-- Gerenzo Wrenchwhistle
-							["cr"] = 1096,	-- Gerenzo Wrenchwhistle
+							["cr"] = 4202,	-- Gerenzo Wrenchwhistle
 							["coord"] = { 63.6, 39.6, STONETALON_MOUNTAINS },
 						},
 						i(6667),	-- Engineer's Cloak
 						i(6668),	-- Draftsman Boots
 					},
 				}),
-				q(1090, {	-- Gerenzo's Orders
+				q(1090, {	-- Gerenzo's Orders (1/2)
 					["qg"] = 4276,	-- Piznik
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
 					["lvl"] = 17,
 				}),
-				q(1092, {	-- Gerenzo's Orders
+				q(1092, {	-- Gerenzo's Orders (2/2)
 					["qg"] = 4276,	-- Piznik
+					["sourceQuest"] = 1090,	-- Gerenzo's Orders (1/2)
 					["coord"] = { 71.80, 60.05, STONETALON_MOUNTAINS },
+					["cost"] = {
+						{ "i", 5733, 1 },	-- Unidentified Ore
+					},
 					["lvl"] = 17,
 					["g"] = {
 						i(6666),	-- Dredge Boots
@@ -266,6 +270,9 @@ _.Zones =
 					},
 					["coord"] = { 59.6, 67.0, STONETALON_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 5717, 1 },	-- Venture Co. Letters
+					},
 					["lvl"] = 17,
 				}),
 				q(6401, {	-- Kaya's Alive
