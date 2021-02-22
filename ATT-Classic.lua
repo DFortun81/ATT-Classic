@@ -4797,7 +4797,6 @@ end
 
 -- Spell Lib
 (function()
-local dirty = false;
 local colors = {
 	optimal=RGBToHex(255,128,64),
 	medium=RGBToHex(255,255,0),
@@ -4854,7 +4853,6 @@ app.GetSpellName = function(spellID, rank)
 			end
 			spellName = spellName .. " (" .. RANK .. " " .. rank .. ")";
 		end
-		dirty = true;
 		rawset(app.SpellIDToSpellName, spellID, spellName);
 		rawset(app.SpellNameToSpellID, spellName, spellID);
 		return spellName;
@@ -4901,8 +4899,8 @@ app.SpellNameToSpellID = setmetatable({["Ingénierie"] = 4036}, {
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
 			app.GetSpellName(spellID);
 		end
-		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), 0, "", 1;
-		for spellTabIndex=1,numSpellTabs do
+		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), select(4, GetSpellTabInfo(1)), "", 1;
+		for spellTabIndex=2,numSpellTabs do
 			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
 			for spellIndex=1,numSpells do
 				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
@@ -4917,10 +4915,7 @@ app.SpellNameToSpellID = setmetatable({["Ingénierie"] = 4036}, {
 			end
 			offset = offset + numSpells;
 		end
-		if dirty then
-			dirty = false;
-			return rawget(t, key);
-		end
+		return rawget(t, key);
 	end
 });
 app.BaseSpell = {
