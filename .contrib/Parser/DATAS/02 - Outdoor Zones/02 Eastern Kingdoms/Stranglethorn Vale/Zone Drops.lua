@@ -223,6 +223,13 @@ _.Zones =
 					["questID"] = 205,	-- Troll Witchery
 					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
+						780,	-- Skullsplitter Mystic
+						670,	-- Skullsplitter Witch Doctor
+					},
+				}),
+				i(1524, {  -- Skullsplitter Tusk
+					["questID"] = 209,	-- Skullsplitter Tusks
+					["crs"] = {
 						1059,	-- Ana'thek the Cruel <Skullsplitter Chief>
 						696,	-- Skullsplitter Axe Thrower
 						784,	-- Skullsplitter Beastmaster
@@ -233,13 +240,6 @@ _.Zones =
 						782,	-- Skullsplitter Scout
 						672,	-- Skullsplitter Spiritchaser
 						667,	-- Skullsplitter Warrior
-						670,	-- Skullsplitter Witch Doctor
-					},
-				}),
-				i(1524, {  -- Skullsplitter Tusk
-					["questID"] = 209,	-- Skullsplitter Tusks
-					["crs"] = {
-						780,	-- Skullsplitter Mystic
 						670,	-- Skullsplitter Witch Doctor
 					},
 				}),
