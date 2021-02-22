@@ -101,7 +101,10 @@ _.Zones =
 						},
 						recipe(5487),	-- Bear Form
 						recipe(6795),	-- Growl
-						recipe(6807),	-- Maul
+						{
+							["spellID"] = 6807,	-- Maul (Rank 1)
+							["rank"] = 1,
+						},
 					},
 				}),
 				q(6002, {	-- Body and Heart
@@ -120,7 +123,10 @@ _.Zones =
 						},
 						recipe(5487),	-- Bear Form
 						recipe(6795),	-- Growl
-						recipe(6807),	-- Maul
+						{
+							["spellID"] = 6807,	-- Maul (Rank 1)
+							["rank"] = 1,
+						},
 					},
 				}),
 				q(5929, {	-- Great Bear Spirit

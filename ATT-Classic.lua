@@ -4901,6 +4901,22 @@ app.SpellNameToSpellID = setmetatable({["Ingénierie"] = 4036}, {
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
 			app.GetSpellName(spellID);
 		end
+		local numSpellTabs, offset, lastSpellName, currentSpellRank = GetNumSpellTabs(), 0, "", 1;
+		for spellTabIndex=1,numSpellTabs do
+			local numSpells = select(4, GetSpellTabInfo(spellTabIndex));
+			for spellIndex=1,numSpells do
+				local spellName, _, _, _, _, _, spellID = GetSpellInfo(offset + spellIndex, BOOKTYPE_SPELL);
+				if lastSpellName == spellName then
+					currentSpellRank = currentSpellRank + 1;
+				else
+					lastSpellName = spellName;
+					currentSpellRank = 1;
+				end
+				app.GetSpellName(spellID, currentSpellRank);
+				rawset(app.SpellNameToSpellID, spellName, spellID);
+			end
+			offset = offset + numSpells;
+		end
 		if dirty then
 			dirty = false;
 			return rawget(t, key);
