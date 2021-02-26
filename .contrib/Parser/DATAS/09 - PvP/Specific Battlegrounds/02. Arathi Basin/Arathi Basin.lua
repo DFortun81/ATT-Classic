@@ -320,13 +320,97 @@ _.PvP =
 									i(20230),	-- Defiler's Standard Care Package
 								},
 							}),
+							q(8122, {	-- Control Five Bases
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["minReputation"] = { 510, EXALTED },	-- The Defilers, Exalted.
+								["sourceQuest"] = 8121,	-- Control Four Bases
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = 60,
+								["groups"] = {
+									i(20131),	-- Battle Tabard of the Defilers
+								},
+							}),
+							q(8121, {	-- Control Four Bases
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["minReputation"] = { 510, FRIENDLY },	-- The Defilers, Friendly.
+								["sourceQuests"] = {
+									8171,	-- The Battle for Arathi Basin! [Level 20]
+									8170,	-- The Battle for Arathi Basin! [Level 30]
+									8169,	-- The Battle for Arathi Basin! [Level 40]
+									8120,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = 60,
+							}),
+							q(8171, {	-- The Battle for Arathi Basin! [Level 20]
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["sourceQuests"] = {
+									8171,	-- The Battle for Arathi Basin! [Level 20]
+									8170,	-- The Battle for Arathi Basin! [Level 30]
+									8169,	-- The Battle for Arathi Basin! [Level 40]
+									8120,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = { 20, 29 },
+							}),
+							q(8170, {	-- The Battle for Arathi Basin! [Level 30]
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["sourceQuests"] = {
+									8171,	-- The Battle for Arathi Basin! [Level 20]
+									8170,	-- The Battle for Arathi Basin! [Level 30]
+									8169,	-- The Battle for Arathi Basin! [Level 40]
+									8120,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = { 30, 39 },
+							}),
+							q(8169, {	-- The Battle for Arathi Basin! [Level 40]
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["sourceQuests"] = {
+									8171,	-- The Battle for Arathi Basin! [Level 20]
+									8170,	-- The Battle for Arathi Basin! [Level 30]
+									8169,	-- The Battle for Arathi Basin! [Level 40]
+									8120,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = { 40, 49 },
+							}),
+							q(8120, {	-- The Battle for Arathi Basin! [Level 50]
+								["qg"] = 15021,	-- Deathmaster Dwire
+								["sourceQuests"] = {
+									8171,	-- The Battle for Arathi Basin! [Level 20]
+									8170,	-- The Battle for Arathi Basin! [Level 30]
+									8169,	-- The Battle for Arathi Basin! [Level 40]
+									8120,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 73.3, 29.7, ARATHI_HIGHLANDS },
+								},
+								["races"] = HORDE_ONLY,
+								["lvl"] = 50,
+							}),
 						}),
 						n(VENDORS, {
 							n(15126, {	-- Rutherford Twing
 								["coord"] = { 73.4, 29.8, ARATHI_HIGHLANDS },
 								["groups"] = {
 									-- Tabard & Weapons
-									i(20131),	-- Battle Tabard of the Defilers
+									--i(20131),	-- Battle Tabard of the Defilers [Cannot be purchased, it's a quest reward.]
 									i(20220),	-- Ironbark Staff
 									i(20214),	-- Mindfang
 									
@@ -729,13 +813,97 @@ _.PvP =
 								},
 								["lvl"] = { 60, 69 },
 							}),
+							q(8115, {	-- Control Five Bases
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["minReputation"] = { 509, EXALTED },	-- The League of Arathor, Exalted.
+								["sourceQuest"] = 8114,	-- Control Four Bases
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 60,
+								["groups"] = {
+									i(20132),	-- Arathor Battle Tabard
+								},
+							}),
+							q(8114, {	-- Control Four Bases
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["minReputation"] = { 509, FRIENDLY },	-- The League of Arathor, Friendly.
+								["sourceQuests"] = {
+									8168,	-- The Battle for Arathi Basin! [Level 20]
+									8167,	-- The Battle for Arathi Basin! [Level 30]
+									8166,	-- The Battle for Arathi Basin! [Level 40]
+									8105,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 60,
+							}),
+							q(8168, {	-- The Battle for Arathi Basin! [Level 20]
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["altQuests"] = {
+									8168,	-- The Battle for Arathi Basin! [Level 20]
+									8167,	-- The Battle for Arathi Basin! [Level 30]
+									8166,	-- The Battle for Arathi Basin! [Level 40]
+									8105,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = { 20, 29 },
+							}),
+							q(8167, {	-- The Battle for Arathi Basin! [Level 30]
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["altQuests"] = {
+									8168,	-- The Battle for Arathi Basin! [Level 20]
+									8167,	-- The Battle for Arathi Basin! [Level 30]
+									8166,	-- The Battle for Arathi Basin! [Level 40]
+									8105,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = { 30, 39 },
+							}),
+							q(8166, {	-- The Battle for Arathi Basin! [Level 40]
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["altQuests"] = {
+									8168,	-- The Battle for Arathi Basin! [Level 20]
+									8167,	-- The Battle for Arathi Basin! [Level 30]
+									8166,	-- The Battle for Arathi Basin! [Level 40]
+									8105,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = { 40, 49 },
+							}),
+							q(8105, {	-- The Battle for Arathi Basin! [Level 50]
+								["qg"] = 14983,	-- Field Marshal Oslight
+								["altQuests"] = {
+									8168,	-- The Battle for Arathi Basin! [Level 20]
+									8167,	-- The Battle for Arathi Basin! [Level 30]
+									8166,	-- The Battle for Arathi Basin! [Level 40]
+									8105,	-- The Battle for Arathi Basin! [Level 50]
+								},
+								["coords"] = {
+									{ 45.8, 45.6, ARATHI_HIGHLANDS },
+								},
+								["races"] = ALLIANCE_ONLY,
+								["lvl"] = 50,
+							}),
 						}),
 						n(VENDORS, {
 							n(15127, {	-- Samuel Hawke <League of Arathor Supply Officer>
 								["coord"] = { 46.0, 45.2, ARATHI_HIGHLANDS },
 								["groups"] = {
 									-- Tabard & Weapons
-									i(20132),	-- Arathor Battle Tabard
+									--i(20132),	-- Arathor Battle Tabard [Cannot be purchased, it's a quest reward.]
 									i(20069),	-- Ironbark Staff
 									i(20070),	-- Sageclaw
 									-- Cloak
