@@ -586,6 +586,7 @@ _.Zones =
 					["qg"] = 15270,	-- Huum Wildmane
 					["minReputation"] = { 609, REVERED },	-- Cenarion Circle
 					["coord"] = { 48.6, 37.9, SILITHUS },
+					["isBreadcrumb"] = true,
 					["lvl"] = 54,
 				}),
 				un(PHASE_FIVE, q(8541, {	-- Grinding Stones for the Guard
