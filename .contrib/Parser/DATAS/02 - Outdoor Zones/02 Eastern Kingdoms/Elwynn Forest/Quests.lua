@@ -680,6 +680,9 @@ _.Zones =
 					["sourceQuest"] = 5261,	-- Eagan Peltskinner
 					["coord"] = { 48.9, 40.1, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 750, 8 },	-- Tough Wolf Meat
+					},
 					["g"] = {
 						i(80),	-- Soft Fur-lined Shoes
 						i(6070),	-- Wolfskin Bracers
