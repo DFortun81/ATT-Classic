@@ -185,18 +185,14 @@ _.Zones =
 						i(9664),	-- Sentinel's Guard
 					},
 				}),
-				q(2972, {	-- Doling Justice (1/2)
+				q(2970, {	-- Doling Justice (1/2)
 					["qg"] = 7957,	-- Jer'kai Moonweaver
 					["sourceQuest"] = 2969,	-- Freedom for All Creatures
 					["coord"] = { 65.8, 45.6, FERALAS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 38,
-					["g"] = {
-						i(10705),	-- Firwillow Wristbands
-						i(10706),	-- Nightscale Girdle
-					},
 				}),
-				q(2970, {	-- Doling Justice (2/2)
+				q(2972, {	-- Doling Justice (2/2)
 					["qg"] = 7957,	-- Jer'kai Moonweaver
 					["sourceQuest"] = 2970,	-- Doling Justice (1/2)
 					["coord"] = { 65.8, 45.6, FERALAS },
@@ -205,6 +201,10 @@ _.Zones =
 						{ "i", 9368, 1 },	-- Jer'kai's Signet Ring
 					},
 					["lvl"] = 38,
+					["g"] = {
+						i(10705),	-- Firwillow Wristbands
+						i(10706),	-- Nightscale Girdle
+					},
 				}),
 				q(3125, {	-- Faerie Dragon Muisek
 					["qg"] = 8115,	-- Witch Doctor Uzer'i

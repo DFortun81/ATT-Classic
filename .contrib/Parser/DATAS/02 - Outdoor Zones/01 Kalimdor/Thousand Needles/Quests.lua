@@ -329,6 +329,9 @@ _.Zones =
 					},
 					["coord"] = { 78.8, 77.3, THOUSAND_NEEDLES },
 					["maps"] = { STRANGLETHORN_VALE },
+					["cost"] = {
+						{ "i", 5807, 1 },	-- Fool's Stout Report
+					},
 					["lvl"] = 35,
 				}),
 				q(1194, {	-- Rizzle's Schematics
