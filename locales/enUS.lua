@@ -63,6 +63,7 @@ app.L = {
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	
 	-- Filter Text
+	["ART_ID"] = "Art ID";
 	["CREATURE_ID"] = "Creature ID";
 	["CURRENCY_ID"] = "Currency ID";
 	["FILTER_ID"] = "Filter ID";

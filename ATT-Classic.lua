@@ -5931,7 +5931,7 @@ app.ExplorationClass = {
 				end
 			end
 
-			return "Unknown Map ID for Exploration #" .. t.explorationID;
+			return t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
 		elseif key == "artID" then
@@ -7962,6 +7962,7 @@ local function RowOnEnter(self)
 		end
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
+		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local currentMapID, j, str = app.GetCurrentMapID(), 0;
 			for i,coord in ipairs(reference.coords) do

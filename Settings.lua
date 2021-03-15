@@ -1655,6 +1655,7 @@ DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
+	["artID"] = "Art ID",
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
 	["Coordinates"] = "Coordinates",
@@ -1675,7 +1676,7 @@ local ids = {
 	["spellID"] = "Spell ID",
 };
 local last = nil;
-for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
