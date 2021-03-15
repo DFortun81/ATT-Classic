@@ -5939,7 +5939,7 @@ app.ExplorationClass = {
 		elseif key == "mapID" then
 			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
 		elseif key == "collectible" then
-			return true;
+			return app.CollectibleExploration;
 		elseif key == "collected" then
 			return ExploredSubMapsByID[t.mapID][t.explorationID];
 		elseif key == "hash" then
