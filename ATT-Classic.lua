@@ -4061,56 +4061,52 @@ local arrOfNodes = {
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
-local ExploredSubMapsByID = setmetatable({}, { __index = function(t, id)
-	local submaps = {};
-	rawset(t, id, submaps);
-	return submaps;
-end })
+local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
 
 local EXPLORATION_MAP_ID_TO_AREA_ID_MAP = {
 	-- Eastern Kingdoms
-	[1416] = { areaID = 36 }, 						-- Alterac Mountains
-	[1417] = { areaID = 45 }, 						-- Arathi Highlands
-	[1418] = { areaID = 3 }, 						-- Badlands
-	[1419] = { areaID = 4 }, 						-- Blasted Lands
-	[1428] = { areaID = 46 }, 						-- Burning Steppes
-	[1430] = { areaID = 41 }, 						-- Deadwind Pass
-	[1426] = { areaID = 1 }, 						-- Dun Morogh
-	[1431] = { areaID = 10 }, 						-- Duskwood
-	[1423] = { areaID = 139 }, 						-- Eastern Plaguelands
-	[1429] = { areaID = 12 }, 						-- Elwynn Forest
-	[1424] = { areaID = 267 }, 						-- Hillsbrad Foothills
-	[1432] = { areaID = 38 }, 						-- Loch Modan
-	[1433] = { areaID = 44 }, 						-- Redridge Mountains
-	[1427] = { areaID = 51 }, 						-- Searing Gorge
-	[1421] = { areaID = 130 }, 						-- Silverpine Forest
-	[1434] = { areaID = 33 }, 						-- Stranglethorn Vale
-	[1435] = { areaID = 8 }, 						-- Swamp of Sorrows
-	[1425] = { areaID = 47 }, 						-- The Hinterlands
-	[1420] = { areaID = 85 }, 						-- Tirisfal Glades
-	[1436] = { areaID = 40 }, 						-- Westfall
-	[1422] = { areaID = 28 }, 						-- Western Plaguelands
-	[1437] = { areaID = 11 }, 						-- Wetlands
+	[1416] = 36, 						-- Alterac Mountains
+	[1417] = 45, 						-- Arathi Highlands
+	[1418] = 3, 						-- Badlands
+	[1419] = 4, 						-- Blasted Lands
+	[1428] = 46, 						-- Burning Steppes
+	[1430] = 41, 						-- Deadwind Pass
+	[1426] = 1, 						-- Dun Morogh
+	[1431] = 10, 						-- Duskwood
+	[1423] = 139, 						-- Eastern Plaguelands
+	[1429] = 12, 						-- Elwynn Forest
+	[1424] = 267, 						-- Hillsbrad Foothills
+	[1432] = 38, 						-- Loch Modan
+	[1433] = 44, 						-- Redridge Mountains
+	[1427] = 51, 						-- Searing Gorge
+	[1421] = 130, 						-- Silverpine Forest
+	[1434] = 33, 						-- Stranglethorn Vale
+	[1435] = 8, 						-- Swamp of Sorrows
+	[1425] = 47, 						-- The Hinterlands
+	[1420] = 85, 						-- Tirisfal Glades
+	[1436] = 40, 						-- Westfall
+	[1422] = 28, 						-- Western Plaguelands
+	[1437] = 11, 						-- Wetlands
 
 	-- Kalimdor
-	[1440] = { areaID = 331 }, 						-- Ashenvale
-	[1447] = { areaID = 16 }, 						-- Azshara
-	[1439] = { areaID = 148 }, 						-- Darkshore
-	[1443] = { areaID = 405 }, 						-- Desolace
-	[1411] = { areaID = 14 }, 						-- Durotar
-	[1445] = { areaID = 15 }, 						-- Dustwallow Marsh
-	[1448] = { areaID = 361 }, 						-- Felwood
-	[1444] = { areaID = 357 }, 						-- Feralas
-	[1450] = { areaID = 493 }, 						-- Moonglade
-	[1412] = { areaID = 215 }, 						-- Mulgore
-	[1451] = { areaID = 1377 }, 					-- Silithus
-	[1442] = { areaID = 406 }, 						-- Stonetalon Mountains
-	[1446] = { areaID = 440 }, 						-- Tanaris
-	[1438] = { areaID = 141 }, 						-- Teldrassil
-	[1413] = { areaID = 17 }, 						-- The Barrens
-	[1441] = { areaID = 400 }, 						-- Thousand Needles
-	[1449] = { areaID = 490 }, 						-- Un'Goro Crater
-	[1452] = { areaID = 618 }  						-- Winterspring
+	[1440] = 331, 						-- Ashenvale
+	[1447] = 16, 						-- Azshara
+	[1439] = 148, 						-- Darkshore
+	[1443] = 405, 						-- Desolace
+	[1411] = 14, 						-- Durotar
+	[1445] = 15, 						-- Dustwallow Marsh
+	[1448] = 361, 						-- Felwood
+	[1444] = 357, 						-- Feralas
+	[1450] = 493, 						-- Moonglade
+	[1412] = 215, 						-- Mulgore
+	[1451] = 1377, 						-- Silithus
+	[1442] = 406, 						-- Stonetalon Mountains
+	[1446] = 440, 						-- Tanaris
+	[1438] = 141, 						-- Teldrassil
+	[1413] = 17, 						-- The Barrens
+	[1441] = 400, 						-- Thousand Needles
+	[1449] = 490, 						-- Un'Goro Crater
+	[1452] = 618, 						-- Winterspring
 };
 
 local EXPLORATION_AREA_ID_MAP = {
@@ -5680,6 +5676,33 @@ local EXPLORATION_ID_MAP = {
 		["300:300:335:172"] = 3,
 	},
 };
+
+local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
+	local submaps = {};
+	local artID = C_Map.GetMapArtID(mapID);
+	if artID then
+		submaps = setmetatable(submaps, { __index = function(t2, submapid)
+			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(mapID)
+			if exploredMapTextures then
+				for _,info in ipairs(exploredMapTextures) do
+					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+					local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
+					if remappedExplorationID then
+						rawset(t2, remappedExplorationID, true);
+					else
+						-- print("Missing Exploration ID for ", hash);
+					end
+				end
+			end
+			if rawget(t2, submapid) then
+				return true;
+			end
+		end });
+	end
+	rawset(t, mapID, submaps);
+	return submaps;
+end };
+local ExploredSubMapsByID = setmetatable({}, ExploredSubMapsByIDMeta);
 app.GetCurrentMapID = function()
 	local mapID = C_Map_GetBestMapForUnit("player");
 	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
@@ -5894,14 +5917,14 @@ app.ExplorationClass = {
 		elseif key == "text" then
 			local mapID = t.mapID;
 			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
-				local areaID = EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID].areaID;
+				local areaID = EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID];
 
 				if EXPLORATION_AREA_ID_MAP[areaID] then
 					for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
 						if explorationID == t.explorationID then
 							local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
 							if subZoneName then
-								return subZoneName
+								return subZoneName;
 							end
 						end
 					end
@@ -5911,31 +5934,14 @@ app.ExplorationClass = {
 			return "Unknown Map ID for Exploration #" .. t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
+		elseif key == "artID" then
+			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
 		elseif key == "mapID" then
 			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
 		elseif key == "collectible" then
 			return true;
 		elseif key == "collected" then
-			local mapID = t.mapID;
-			if mapID then
-				local artID = t.artID;
-				if artID and EXPLORATION_ID_MAP[artID] then
-					local submaps = ExploredSubMapsByID[mapID];
-					local exploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures(mapID)
-					if exploredMapTextures then
-						for _,info in ipairs(exploredMapTextures) do
-							local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-							local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
-							if remappedExplorationID then
-								submaps[remappedExplorationID] = 1;
-							else
-								-- print("Missing Exploration ID for ", hash);
-							end
-						end
-					end
-					return submaps[t.explorationID];
-				end
-			end
+			return ExploredSubMapsByID[t.mapID][t.explorationID];
 		elseif key == "hash" then
 			local artID = t.artID;
 			if artID then
@@ -5947,26 +5953,15 @@ app.ExplorationClass = {
 					end
 				end
 			end
-		elseif key == "artID" then
-			local mapID = t.mapID;
-			if mapID then
-				return C_Map.GetMapArtID(mapID);
-			end
 		elseif key == "coords" then
-			local artID = t.artID;
-			if artID then
-				if EXPLORATION_ID_MAP[artID] then
-					local layers = C_Map.GetMapArtLayers(t.mapID);
-					if layers and layers[1] then
-						for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
-							if explorationID == t.explorationID then
-								local coords = {};
-								local width, height, offsetX, offsetY = strsplit(":", hash);
-								tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
-								return coords;
-							end
-						end
-					end
+			local hash = t.hash;
+			if hash then
+				local layers = C_Map.GetMapArtLayers(t.mapID);
+				if layers and layers[1] then
+					local coords = {};
+					local width, height, offsetX, offsetY = strsplit(":", hash);
+					tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
+					return coords;
 				end
 			end
 		else
@@ -6079,6 +6074,8 @@ app.BaseMap = {
 			return "Interface/ICONS/INV_Misc_Map_01";
 		elseif key == "lvl" then
 			return app.GetMapLevel(t.mapID);
+		elseif key == "artID" then
+			return C_Map.GetMapArtID(t.mapID);
 		elseif key == "saved" then
 			return t.locks;
 		elseif key == "locks" then
@@ -6095,9 +6092,8 @@ app.BaseMap = {
 };
 app.CreateMap = function(id, t)
 	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
-	local artID = C_Map.GetMapArtID(id);
+	local artID = map.artID;
 	if artID and map.g then
-		map.artID = artID;
 		local maxExplorationID = 0;
 		if EXPLORATION_ID_MAP[artID] then
 			for _,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
