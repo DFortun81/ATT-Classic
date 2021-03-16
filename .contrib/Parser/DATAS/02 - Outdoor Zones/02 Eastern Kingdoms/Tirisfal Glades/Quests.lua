@@ -363,6 +363,7 @@ _.Zones =
 					["qg"] = 1568,	-- Undertaker Mordo
 					["coord"] = { 30.2, 71.6, TIRISFAL_GLADES },
 					["races"] = { UNDEAD },
+					["isBreadcrumb"] = true
 				}),
 				q(3902, {	-- Scavenging Deathknell
 					["qg"] = 1740,	-- Deathguard Saltain
@@ -385,6 +386,7 @@ _.Zones =
 						1883,	-- Speak with Un'thuwa
 					},
 					["lvl"] = 10,
+					["isBreadcrumb"] = true
 				}),
 				q(1820, {	-- Speak with Coleman
 					["qg"] = 1496,	-- Deathguard Dillinger
