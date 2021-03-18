@@ -602,6 +602,7 @@ _.Zones =
 						1881,	-- Speak with Anastasia
 					},
 					["lvl"] = 10,
+					["isBreadcrumb"] = true
 				}),
 				q(789, {	-- Sting of the Scorpid
 					["qg"] = 3143,	-- Gornek
