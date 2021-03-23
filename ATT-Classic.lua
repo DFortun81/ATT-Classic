@@ -2349,6 +2349,8 @@ local function AddTomTomWaypoint(group, auto)
 				world = true
 			};
 			if group.title then opt.title = opt.title .. "\n" .. group.title; end
+			if group.subAreaID then opt.title = opt.title .. "\nSub Area ID " .. group.subAreaID; end
+			if group.explorationID then opt.title = opt.title .. "\nExploration ID " .. group.explorationID; end
 			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
 			local displayID = GetDisplayID(group);
 			if displayID then
@@ -5488,7 +5490,7 @@ local EXPLORATION_ID_MAP = {
 		["200:170:305:412"] = 8,
 		["230:190:375:94"] = 9,
 	},
-	[1248] = {
+	[1248] = {	-- Ashenvale
 		["128:195:131:137"] = 1,
 		["146:200:856:151"] = 2,
 		["155:150:260:373"] = 3,
@@ -5914,18 +5916,10 @@ app.ExplorationClass = {
 		if key == "key" then
 			return "explorationID";
 		elseif key == "text" then
-			local areaID = t.areaID;
-			if areaID and EXPLORATION_AREA_ID_MAP[areaID] then
-				for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
-					if explorationID == t.explorationID then
-						local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
-						if subZoneName then
-							return subZoneName;
-						end
-					end
-				end
+			local subAreaID = t.subAreaID;
+			if subAreaID then
+				return C_Map.GetAreaInfo(subAreaID) or t.explorationID;
 			end
-
 			return t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
@@ -5938,6 +5932,15 @@ app.ExplorationClass = {
 			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
 		elseif key == "mapID" then
 			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
+		elseif key == "subAreaID" then
+			local areaID = t.areaID;
+			if areaID and EXPLORATION_AREA_ID_MAP[areaID] then
+				for subAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
+					if explorationID == t.explorationID then
+						return subAreaID;
+					end
+				end
+			end
 		elseif key == "collectible" then
 			return app.CollectibleExploration;
 		elseif key == "collected" then
@@ -7962,6 +7965,8 @@ local function RowOnEnter(self)
 		end
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
+		if reference.areaID and app.Settings:GetTooltipSetting("areaID") then GameTooltip:AddDoubleLine(L["AREA_ID"], tostring(reference.areaID)); end
+		if reference.subAreaID and app.Settings:GetTooltipSetting("subAreaID") then GameTooltip:AddDoubleLine(L["SUB_AREA_ID"], tostring(reference.subAreaID)); end
 		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
 		if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
