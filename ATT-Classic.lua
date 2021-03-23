@@ -5915,17 +5915,13 @@ app.ExplorationClass = {
 		if key == "key" then
 			return "explorationID";
 		elseif key == "text" then
-			local mapID = t.mapID;
-			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
-				local areaID = EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID];
-
-				if EXPLORATION_AREA_ID_MAP[areaID] then
-					for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
-						if explorationID == t.explorationID then
-							local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
-							if subZoneName then
-								return subZoneName;
-							end
+			local areaID = t.areaID;
+			if areaID and EXPLORATION_AREA_ID_MAP[areaID] then
+				for subZoneAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
+					if explorationID == t.explorationID then
+						local subZoneName = C_Map.GetAreaInfo(subZoneAreaID)
+						if subZoneName then
+							return subZoneName;
 						end
 					end
 				end
@@ -5934,6 +5930,11 @@ app.ExplorationClass = {
 			return t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
+		elseif key == "areaID" then
+			local mapID = t.mapID;
+			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
+				return EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID];
+			end
 		elseif key == "artID" then
 			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
 		elseif key == "mapID" then

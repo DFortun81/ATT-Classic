@@ -393,7 +393,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["coord"] = { 49.1, 30.3, STORMWIND_CITY },
-					["description"] = "Daros Alexston is located in City Hall at 47.6, 31.4.",
 				});
 				q(1448, {	-- In Search of The Temple
 					["qg"] = 5384,	-- Brohann Caskbelly <Explorers' League>
