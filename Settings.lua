@@ -407,6 +407,7 @@ settings.UpdateMode = function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
 		
+		app.AccountWideDeaths = true;
 		app.AccountWideExploration = true;
 		app.AccountWideFlightPaths = true;
 		app.AccountWideQuests = true;
@@ -428,6 +429,7 @@ settings.UpdateMode = function(self)
 			app.SeasonalItemFilter = app.NoFilter;
 		end
 		
+		app.AccountWideDeaths = self:Get("AccountWide:Deaths");
 		app.AccountWideExploration = self:Get("AccountWide:Exploration");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
@@ -686,11 +688,20 @@ DeathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
 
 local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
-	self:SetChecked(true);
-	self:Disable();
-	self:SetAlpha(0.2);
+	self:SetChecked(settings:Get("AccountWide:Deaths"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Deaths") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
 end,
-nil);
+function(self)
+	settings:Set("AccountWide:Deaths", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
 DeathsAccountWideCheckBox:SetATTTooltip("Most people keep this setting turned on. It may be considered insane to turn it off!");
 DeathsAccountWideCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "TOPLEFT", 220, 0);
 

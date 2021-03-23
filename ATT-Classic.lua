@@ -3560,16 +3560,14 @@ app.BaseDeathClass = {
 			return "Total Deaths";
 		elseif key == "icon" then
 			return app.asset("Normal");
-		elseif key == "collectible" then
-			return app.Settings:Get("Thing:Deaths");
 		elseif key == "progress" then
-			if t.collectible then
-				return math.min(1000, GetDataMember("Deaths", 0));
+			if t.visible then
+				return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
 			else
 				return 0;
 			end
 		elseif key == "total" then
-			if t.collectible then
+			if t.visible then
 				return 1000;
 			else
 				return 0;
@@ -3606,6 +3604,7 @@ app.CreateDeathClass = function()
 		end
 	end
 	t.OnUpdate = function(self)
+		t.visible = app.Settings:Get("Thing:Deaths");
 		t.parent.progress = t.parent.progress + t.progress;
 		t.parent.total = t.parent.total + t.total;
 	end
@@ -7964,6 +7963,7 @@ local function RowOnEnter(self)
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
+		if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local currentMapID, j, str = app.GetCurrentMapID(), 0;
 			for i,coord in ipairs(reference.coords) do
