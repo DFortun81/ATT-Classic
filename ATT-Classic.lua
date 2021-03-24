@@ -4067,7 +4067,7 @@ local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExpl
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Darkshire" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Stormwind City" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -4760,44 +4760,33 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1228] = {	-- Elwynn Forest
-		["225:220:422:332"] = 1,
-		["240:220:250:270"] = 2,
-		["255:250:551:292"] = 3,
-		["256:210:704:330"] = 4,
-		["256:237:425:431"] = 5,
-		["256:240:238:428"] = 6,
-		["256:249:577:419"] = 7,
-		["256:256:381:147"] = 8,
-		["256:341:124:327"] = 9,
-		["306:233:696:435"] = 10,
-		["310:256:587:190"] = 11,
-		["485:405:0:0"] = 12,
+		["225:220:422:332"] = 18,	-- Crystal Lake
+		["240:220:250:270"] = 87,	-- Goldshire
+		["255:250:551:292"] = 91,	-- Tower of Azora
+		["256:210:704:330"] = 88,	-- Eastvale Logging Camp
+		["256:237:425:431"] = 797,	-- Jerod's Landing
+		["256:240:238:428"] = 57,	-- Fargodeep Mine
+		["256:249:577:419"] = 62,	-- Brackwell Pumpkin Patch
+		["256:256:381:147"] = 9,	-- Northshire Valley
+		["256:341:124:327"] = 60,	-- Forest's Edge
+		["306:233:696:435"] = 798,	-- Ridgepoint Tower
+		["310:256:587:190"] = 86,	-- Stone Cairn Lake
+		["485:405:0:0"] = 1519,	-- Stormwind City
 		--[[
-		[9] = 1,                                 -- Northshire Valley
-		[18] = 2,                                -- Crystal Lake
 		[23] = 3,                                -- Northshire River
 		[24] = 4,                                -- Northshire Abbey
 		[34] = 5,                                -- Echo Ridge Mine
 		[53] = 6,                                -- Thieves Camp
 		[54] = 7,                                -- Jasperlode Mine
 		[56] = 9,                                -- Heroes' Vigil
-		[57] = 10,                               -- Fargodeep Mine
 		[59] = 11,                               -- Northshire Vineyards
-		[60] = 12,                               -- Forest's Edge
 		[61] = 13,                               -- Thunder Falls
-		[62] = 14,                               -- Brackwell Pumpkin Patch
 		[63] = 15,                               -- The Stonefield Farm
 		[64] = 16,                               -- The Maclure Vineyards
 		[80] = 17,                               -- Stormwind Mountains
-		[86] = 18,                               -- Stone Cairn Lake
-		[87] = 19,                               -- Goldshire
-		[88] = 20,                               -- Eastvale Logging Camp
 		[89] = 21,                               -- Mirror Lake Orchard
-		[91] = 22,                               -- Tower of Azora
 		[92] = 23,                               -- Mirror Lake
 		[120] = 24,                              -- Westbrook Garrison
-		[797] = 25,                              -- Jerod's Landing
-		[798] = 26,                              -- Ridgepoint Tower
 		]]--
 	},
 	[1214] = {	-- Hillsbrad Forest
