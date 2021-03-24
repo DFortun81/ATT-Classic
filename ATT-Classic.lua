@@ -4643,29 +4643,19 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["384:450:212:178"] = 73,	-- The Tainted Scar
 	},
 	[1224] = {	-- Burning Steppes
-		["220:225:707:168"] = 1,
-		["225:220:36:109"] = 2,
-		["245:265:334:114"] = 3,
-		["256:280:173:101"] = 4,
-		["270:285:513:99"] = 5,
-		["270:310:589:279"] = 6,
-		["280:355:722:46"] = 7,
-		["294:270:708:311"] = 8,
-		["320:270:377:285"] = 9,
-		["415:315:56:258"] = 10,
+		["220:225:707:168"] = 249,	-- Dreadmaul Rock
+		["225:220:36:109"] = 255,	-- Altar of Storms
+		["245:265:334:114"] = 252,	-- Blackrock Stronghold
+		["256:280:173:101"] = 254,	-- Blackrock Mountain
+		["270:285:513:99"] = 250,	-- Ruins of Thaurissan
+		["270:310:589:279"] = 2417,	-- Blackrock Pass
+		["280:355:722:46"] = 2420,	-- Terror Wing Path
+		["294:270:708:311"] = 2418,	-- Morgan's Vigil
+		["320:270:377:285"] = 253,	-- The Pillar of Ash
+		["415:315:56:258"] = 2421,	-- Draco'dar
 		--[[
-		[249] = 1,                               -- Dreadmaul Rock
-		[250] = 2,                               -- Ruins of Thaurissan
 		[251] = 3,                               -- Flame Crest
-		[252] = 4,                               -- Blackrock Stronghold
-		[253] = 5,                               -- The Pillar of Ash
-		[254] = 6,                               -- Blackrock Mountain
-		[255] = 7,                               -- Altar of Storms
-		[2417] = 8,                              -- Blackrock Pass
-		[2418] = 9,                              -- Morgan's Vigil
 		[2419] = 10,                             -- Slither Rock
-		[2420] = 11,                             -- Terror Wing Path
-		[2421] = 12,                             -- Draco'dar
 		]]--
 	},
 	[1233] = {	-- Deadwind Pass
