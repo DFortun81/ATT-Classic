@@ -1710,7 +1710,6 @@ DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
-	["areaID"] = "Area ID",
 	["artID"] = "Art ID",
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
@@ -1718,6 +1717,7 @@ local ids = {
 	["currencyID"] = "Currency ID",
 	["Descriptions"] = "Descriptions",
 	["displayID"] = "Display ID",
+	["explorationID"] = "Exploration ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["flightPathID"] = "Flight Path ID",
@@ -1730,10 +1730,9 @@ local ids = {
 	["questID"] = "Quest ID",
 	["QuestGivers"] = "Quest Givers",
 	["spellID"] = "Spell ID",
-	["subAreaID"] = "Sub Area ID",
 };
 local last = nil;
-for _,id in pairs({"areaID", "artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -1750,7 +1749,7 @@ for _,id in pairs({"areaID", "artID", "creatureID","creatures","Coordinates","cu
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID", "subAreaID"}) do
+for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self) 
 		self:SetChecked(settings:GetTooltipSetting(id));

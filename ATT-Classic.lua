@@ -4064,52 +4064,6 @@ local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
 
-local EXPLORATION_MAP_ID_TO_AREA_ID_MAP = {
-	-- Eastern Kingdoms
-	[1416] = 36, 						-- Alterac Mountains
-	[1417] = 45, 						-- Arathi Highlands
-	[1418] = 3, 						-- Badlands
-	[1419] = 4, 						-- Blasted Lands
-	[1428] = 46, 						-- Burning Steppes
-	[1430] = 41, 						-- Deadwind Pass
-	[1426] = 1, 						-- Dun Morogh
-	[1431] = 10, 						-- Duskwood
-	[1423] = 139, 						-- Eastern Plaguelands
-	[1429] = 12, 						-- Elwynn Forest
-	[1424] = 267, 						-- Hillsbrad Foothills
-	[1432] = 38, 						-- Loch Modan
-	[1433] = 44, 						-- Redridge Mountains
-	[1427] = 51, 						-- Searing Gorge
-	[1421] = 130, 						-- Silverpine Forest
-	[1434] = 33, 						-- Stranglethorn Vale
-	[1435] = 8, 						-- Swamp of Sorrows
-	[1425] = 47, 						-- The Hinterlands
-	[1420] = 85, 						-- Tirisfal Glades
-	[1436] = 40, 						-- Westfall
-	[1422] = 28, 						-- Western Plaguelands
-	[1437] = 11, 						-- Wetlands
-
-	-- Kalimdor
-	[1440] = 331, 						-- Ashenvale
-	[1447] = 16, 						-- Azshara
-	[1439] = 148, 						-- Darkshore
-	[1443] = 405, 						-- Desolace
-	[1411] = 14, 						-- Durotar
-	[1445] = 15, 						-- Dustwallow Marsh
-	[1448] = 361, 						-- Felwood
-	[1444] = 357, 						-- Feralas
-	[1450] = 493, 						-- Moonglade
-	[1412] = 215, 						-- Mulgore
-	[1451] = 1377, 						-- Silithus
-	[1442] = 406, 						-- Stonetalon Mountains
-	[1446] = 440, 						-- Tanaris
-	[1438] = 141, 						-- Teldrassil
-	[1413] = 17, 						-- The Barrens
-	[1441] = 400, 						-- Thousand Needles
-	[1449] = 490, 						-- Un'Goro Crater
-	[1452] = 618, 						-- Winterspring
-};
-
 local EXPLORATION_AREA_ID_MAP = {
 	[1] = {                                      -- Dun Morogh
 		[77] = 1,                                -- Anvilmar
@@ -4261,36 +4215,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[797] = 25,                              -- Jerod's Landing
 		[798] = 26,                              -- Ridgepoint Tower
 	},
-	[14] = {                                     -- Durotar
-		[362] = 1,                               -- Razor Hill
-		[363] = 2,                               -- Valley of Trials
-		[364] = 3,                               -- The Den
-		[365] = 4,                               -- Burning Blade Coven
-		[366] = 5,                               -- Kolkar Crag
-		[367] = 6,                               -- Sen'jin Village
-		[368] = 7,                               -- Echo Isles
-		[369] = 8,                               -- Thunder Ridge
-		[370] = 9,                               -- Drygulch Ravine
-		[371] = 10,                              -- Dustwind Cave
-		[372] = 11,                              -- Tiragarde Keep
-		[373] = 12,                              -- Scuttle Coast
-		[374] = 13,                              -- Bladefist Bay
-		[375] = 14,                              -- Deadeye Shore
-		[393] = 15,                              -- Darkspear Strand
-		[407] = 16,                              -- Orgrimmar UNUSED
-		[410] = 17,                              -- Razorwind Canyon
-		[638] = 18,                              -- Hidden Path
-		[639] = 19,                              -- Spirit Rock
-		[640] = 20,                              -- Shrine of the Dormant Flame
-		[814] = 21,                              -- Southfury River
-		[816] = 22,                              -- Razormane Grounds
-		[817] = 23,                              -- Skull Rock
-		[1296] = 24,                             -- Rocktusk Farm
-		[1297] = 25,                             -- Jaggedswine Farm
-		[2320] = 26,                             -- The Great Sea
-		[2337] = 27,                             -- Razor Hill Barracks
-		[2979] = 28,                             -- Tor'kren Farm
-	},
 	[15] = {                                     -- Dustwallow Marsh
 		[403] = 1,                               -- Shady Rest Inn
 		[496] = 2,                               -- Brackenwall Village
@@ -4320,37 +4244,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2158] = 26,                             -- Emberstrife's Den
 		[2302] = 27,                             -- The Quagmire
 		[2318] = 28,                             -- The Great Sea
-	},
-	[16] = {                                     -- Azshara
-		[878] = 1,                               -- Southfury River
-		[1216] = 2,                              -- Timbermaw Hold
-		[1217] = 3,                              -- Vanndir Encampment
-		[1218] = 4,                              -- TESTAzshara
-		[1219] = 5,                              -- Legash Encampment
-		[1220] = 6,                              -- Thalassian Base Camp
-		[1221] = 7,                              -- Ruins of Eldarath
-		[1222] = 8,                              -- Hetaera's Clutch
-		[1223] = 9,                              -- Temple of Zin-Malor
-		[1224] = 10,                             -- Bear's Head
-		[1225] = 11,                             -- Ursolan
-		[1226] = 12,                             -- Temple of Arkkoran
-		[1227] = 13,                             -- Bay of Storms
-		[1228] = 14,                             -- The Shattered Strand
-		[1229] = 15,                             -- Tower of Eldara
-		[1230] = 16,                             -- Jagged Reef
-		[1231] = 17,                             -- Southridge Beach
-		[1232] = 18,                             -- Ravencrest Monument
-		[1233] = 19,                             -- Forlorn Ridge
-		[1234] = 20,                             -- Lake Mennar
-		[1235] = 21,                             -- Shadowsong Shrine
-		[1236] = 22,                             -- Haldarr Encampment
-		[1237] = 23,                             -- Valormok
-		[1256] = 24,                             -- The Ruined Reaches
-		[2321] = 25,                             -- The Great Sea
-		[2497] = 26,                             -- Bitter Reaches
-		[3137] = 27,                             -- Talrendis Point
-		[3138] = 28,                             -- Rethress Sanctum
-		[3140] = 29,                             -- Scalebeard's Cave
 	},
 	[17] = {                                     -- The Barrens
 		[359] = 1,                               -- Bael Modan
@@ -4746,25 +4639,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[736] = 23,                              -- Ban'ethil Hollow
 		[2322] = 24,                             -- The Veiled Sea
 	},
-	[148] = {                                    -- Darkshore
-		[442] = 1,                               -- Auberdine
-		[443] = 2,                               -- Ruins of Mathystra
-		[444] = 3,                               -- Tower of Althalaxx
-		[445] = 4,                               -- Cliffspring Falls
-		[446] = 5,                               -- Bashal'Aran
-		[447] = 6,                               -- Ameth'Aran
-		[448] = 7,                               -- Grove of the Ancients
-		[449] = 8,                               -- The Master's Glaive
-		[450] = 9,                               -- Remtravel's Excavation
-		[452] = 10,                              -- Mist's Edge
-		[453] = 11,                              -- The Long Wash
-		[454] = 12,                              -- Wildbend River
-		[455] = 13,                              -- Blackwood Den
-		[456] = 14,                              -- Cliffspring River
-		[2077] = 15,                             -- Twilight Vale
-		[2078] = 16,                             -- Twilight Shore
-		[2326] = 17,                             -- The Veiled Sea
-	},
 	[215] = {                                    -- Mulgore
 		[220] = 1,                               -- Red Cloud Mesa
 		[221] = 2,                               -- Camp Narache
@@ -4810,50 +4684,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[1057] = 14,                             -- Thoradin's Wall
 		[2397] = 15,                             -- The Great Sea
 		[2777] = 16,                             -- UNUSED Alterac Valley
-	},
-	[331] = {                                    -- Ashenvale
-		[411] = 1,                               -- Bathran's Haunt
-		[412] = 2,                               -- The Ruins of Ordil'Aran
-		[413] = 3,                               -- Maestra's Post
-		[414] = 4,                               -- The Zoram Strand
-		[415] = 5,                               -- Astranaar
-		[416] = 6,                               -- The Shrine of Aessina
-		[417] = 7,                               -- Fire Scar Shrine
-		[418] = 8,                               -- The Ruins of Stardust
-		[419] = 9,                               -- The Howling Vale
-		[420] = 10,                              -- Silverwind Refuge
-		[421] = 11,                              -- Mystral Lake
-		[422] = 12,                              -- Fallen Sky Lake
-		[424] = 13,                              -- Iris Lake
-		[425] = 14,                              -- Moonwell
-		[426] = 15,                              -- Raynewood Retreat
-		[427] = 16,                              -- The Shady Nook
-		[428] = 17,                              -- Night Run
-		[429] = 18,                              -- Xavian
-		[430] = 19,                              -- Satyrnaar
-		[431] = 20,                              -- Splintertree Post
-		[432] = 21,                              -- The Dor'Danil Barrow Den
-		[433] = 22,                              -- Falfarren River
-		[434] = 23,                              -- Felfire Hill
-		[435] = 24,                              -- Demon Fall Canyon
-		[436] = 25,                              -- Demon Fall Ridge
-		[437] = 26,                              -- Warsong Lumber Camp
-		[438] = 27,                              -- Bough Shadow
-		[441] = 28,                              -- Lake Falathim
-		[879] = 29,                              -- Southfury River
-		[1276] = 30,                             -- The Talondeep Path
-		[2301] = 31,                             -- Thistlefur Village
-		[2325] = 32,                             -- The Veiled Sea
-		[2357] = 33,                             -- Bloodtooth Camp
-		[2358] = 34,                             -- Forest Song
-		[2359] = 35,                             -- Greenpaw Village
-		[2360] = 36,                             -- Silverwing Outpost
-		[2457] = 37,                             -- Nightsong Woods
-		[2637] = 38,                             -- Kargathia Keep
-		[2797] = 39,                             -- Blackfathom Deeps
-		[2897] = 40,                             -- Zoram'gar Outpost
-		[3177] = 41,                             -- Warsong Labor Camp
-		[3319] = 42,                             -- Silverwing Grove
 	},
 	[357] = {                                    -- Feralas
 		[489] = 1,                               -- Thalanaar
@@ -4933,30 +4763,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[3037] = 19,                             -- Ironstone Camp
 		[3038] = 20,                             -- Weazel's Crater
 		[3039] = 21,                             -- Tahonda Ruins
-	},
-	[405] = {                                    -- Desolace
-		[596] = 1,                               -- Kodo Graveyard
-		[597] = 2,                               -- Ghost Walker Post
-		[598] = 3,                               -- Sar'theris Strand
-		[599] = 4,                               -- Thunder Axe Fortress
-		[600] = 5,                               -- Bolgan's Hole
-		[602] = 6,                               -- Mannoroc Coven
-		[603] = 7,                               -- Sargeron
-		[604] = 8,                               -- Magram Village
-		[606] = 9,                               -- Gelkis Village
-		[607] = 10,                              -- Valley of Spears
-		[608] = 11,                              -- Nijel's Point
-		[609] = 12,                              -- Kolkar Village
-		[2198] = 13,                             -- Shadowbreak Ravine
-		[2217] = 14,                             -- Broken Spear Village
-		[2324] = 15,                             -- The Veiled Sea
-		[2404] = 16,                             -- Tethris Aran
-		[2405] = 17,                             -- Ethel Rethor
-		[2406] = 18,                             -- Ranazjar Isle
-		[2407] = 19,                             -- Kormek's Hut
-		[2408] = 20,                             -- Shadowprey Village
-		[2617] = 21,                             -- Scrabblescrew's Camp
-		[2657] = 22,                             -- Valley of Bones
 	},
 	[406] = {                                    -- Stonetalon Mountains
 		[460] = 1,                               -- Sun Rock Retreat
@@ -5067,8 +4873,143 @@ local EXPLORATION_AREA_ID_MAP = {
 	},
 }
 
-local EXPLORATION_ID_MAP = {
-	[1194] = {
+-- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
+-- This is now a table of hash,subAreaID (explorationID in ATT)
+-- The commented sections are areas associated with the map, but not collectible. (afaik)
+local EXPLORATION_ID_META = { __index = function(t, artID)
+	local exploration = {};
+	rawset(t, artID, exploration);
+	return exploration;
+end };
+local EXPLORATION_ID_MAP = setmetatable({ 
+	-- Kalimdor
+	[1248] = {	-- Ashenvale
+		["128:195:131:137"] = 441,	-- Lake Falathim
+		["146:200:856:151"] = 438,	-- Bough Shadow
+		["155:150:260:373"] = 418,	-- The Ruins of Stardust
+		["165:175:189:324"] = 417,	-- Fire Scar Shrine
+		["180:245:520:238"] = 426,	-- Raynewood Retreat
+		["200:160:796:311"] = 437,	-- Warsong Lumber Camp
+		["200:205:392:218"] = 424,	-- Iris Lake
+		["205:185:272:251"] = 415,	-- Astranaar
+		["210:185:463:141"] = 419,	-- The Howling Vale
+		["215:305:205:38"] = 413,	-- Maestra's Post
+		["220:195:104:259"] = 416,	-- The Shrine of Aessina
+		["225:255:597:258"] = 428,	-- Night Run
+		["235:205:547:426"] = 422,	-- Fallen Sky Lake
+		["245:245:19:28"] = 414,	-- The Zoram Strand
+		["245:255:713:344"] = 434,	-- Felfire Hill
+		["255:195:203:158"] = 2301,	-- Thistlefur Village
+		["275:240:356:347"] = 421,	-- Mystral Lake
+		["285:185:694:225"] = 430,	-- Satyrnaar
+		--[[
+		[411] = 1,                               -- Bathran's Haunt
+		[412] = 2,                               -- The Ruins of Ordil'Aran
+		[420] = 10,                              -- Silverwind Refuge
+		[425] = 14,                              -- Moonwell
+		[427] = 16,                              -- The Shady Nook
+		[429] = 18,                              -- Xavian
+		[431] = 20,                              -- Splintertree Post
+		[432] = 21,                              -- The Dor'Danil Barrow Den
+		[433] = 22,                              -- Falfarren River
+		[435] = 24,                              -- Demon Fall Canyon
+		[436] = 25,                              -- Demon Fall Ridge
+		[879] = 29,                              -- Southfury River
+		[1276] = 30,                             -- The Talondeep Path
+		[2325] = 32,                             -- The Veiled Sea
+		[2357] = 33,                             -- Bloodtooth Camp
+		[2358] = 34,                             -- Forest Song
+		[2359] = 35,                             -- Greenpaw Village
+		[2360] = 36,                             -- Silverwing Outpost
+		[2457] = 37,                             -- Nightsong Woods
+		[2637] = 38,                             -- Kargathia Keep
+		[2797] = 39,                             -- Blackfathom Deeps
+		[2897] = 40,                             -- Zoram'gar Outpost
+		[3177] = 41,                             -- Warsong Labor Camp
+		[3319] = 42,                             -- Silverwing Grove
+		]]--
+	},
+	[1259] = {	-- Azshara
+		["120:155:818:107"] = 1229,	-- Tower of Eldara
+		["145:215:422:95"] = 1225,	-- Ursolan
+		["160:210:404:194"] = 1228,	-- The Shattered Strand
+		["190:200:681:153"] = 1226,	-- Temple of Arkkoran
+		["200:150:77:331"] = 1236,	-- Haldarr Encampment
+		["215:175:84:229"] = 1237,	-- Valormok
+		["220:255:191:369"] = 1233,	-- Forlorn Ridge
+		["225:180:35:422"] = 1235,	-- Shadowsong Shrine
+		["235:140:478:44"] = 1219,	-- Legash Encampment
+		["235:270:250:106"] = 1216,	-- Timbermaw Hold
+		["240:125:552:499"] = 1232,	-- Ravencrest Monument
+		["240:155:499:119"] = 1220,	-- Thalassian Base Camp
+		["245:185:644:40"] = 2497,	-- Bitter Reaches
+		["265:280:238:221"] = 1221,	-- Ruins of Eldarath
+		["270:300:479:201"] = 1227,	-- Bay of Storms
+		["315:200:296:429"] = 1234,	-- Lake Mennar
+		["370:220:389:353"] = 1231,	-- Southridge Beach
+		["395:128:396:540"] = 1256,	-- The Ruined Reaches
+		["570:170:366:0"] = 1230,	-- Jagged Reef
+		--[[
+		[878] = 1,                               -- Southfury River
+		[1217] = 3,                              -- Vanndir Encampment
+		[1218] = 4,                              -- TESTAzshara
+		[1222] = 8,                              -- Hetaera's Clutch
+		[1223] = 9,                              -- Temple of Zin-Malor
+		[1224] = 10,                             -- Bear's Head
+		[2321] = 25,                             -- The Great Sea
+		[3137] = 27,                             -- Talrendis Point
+		[3138] = 28,                             -- Rethress Sanctum
+		[3140] = 29,                             -- Scalebeard's Cave
+		]]--
+	},
+	[1247] = {	-- Darkshore
+		["150:215:318:162"] = 442,	-- Auberdine
+		["170:195:468:85"] = 444,	-- Tower of Althalaxx
+		["175:158:329:510"] = 449,	-- The Master's Glaive
+		["175:183:229:485"] = 450,	-- Remtravel's Excavation
+		["180:195:365:181"] = 446,	-- Bashal'Aran
+		["190:205:324:306"] = 447,	-- Ameth'Aran
+		["195:215:510:0"] = 443,	-- Ruins of Mathystra
+		["200:170:305:412"] = 448,	-- Grove of the Ancients
+		["230:190:375:94"] = 456,	-- Cliffspring River
+		--[[
+		[445] = 4,                               -- Cliffspring Falls
+		[452] = 10,                              -- Mist's Edge
+		[453] = 11,                              -- The Long Wash
+		[454] = 12,                              -- Wildbend River
+		[455] = 13,                              -- Blackwood Den
+		[2077] = 15,                             -- Twilight Vale
+		[2078] = 16,                             -- Twilight Shore
+		[2326] = 17,                             -- The Veiled Sea
+		]]--
+	},
+	[1251] = {	-- Desolace
+		["100:100:241:6"] = 2406,	-- Ranazjar Isle
+		["170:160:555:181"] = 2407,	-- Kormek's Hut
+		["190:220:447:102"] = 599,	-- Thunder Axe Fortress
+		["195:242:293:426"] = 606,	-- Gelkis Village
+		["200:250:554:0"] = 608,	-- Nijel's Point
+		["205:145:431:0"] = 2404,	-- Tethris Aran
+		["205:195:690:444"] = 2198,	-- Shadowbreak Ravine
+		["205:250:311:61"] = 2405,	-- Ethel Rethor
+		["205:285:590:365"] = 604,	-- Magram Village
+		["220:220:607:215"] = 609,	-- Kolkar Village
+		["230:230:167:389"] = 2408,	-- Shadowprey Village
+		["245:285:212:215"] = 607,	-- Valley of Spears
+		["275:250:387:244"] = 596,	-- Kodo Graveyard
+		["285:245:625:33"] = 603,	-- Sargeron
+		["285:280:399:380"] = 602,	-- Mannoroc Coven
+		--[[
+		[597] = 2,                               -- Ghost Walker Post
+		[598] = 3,                               -- Sar'theris Strand
+		[600] = 5,                               -- Bolgan's Hole
+		[2217] = 14,                             -- Broken Spear Village
+		[2324] = 15,                             -- The Veiled Sea
+		[2617] = 21,                             -- Scrabblescrew's Camp
+		[2657] = 22,                             -- Valley of Bones
+		]]--
+	},
+	[1194] = {	-- Durotar
 		["128:110:464:33"] = 1,
 		["160:120:413:476"] = 2,
 		["160:190:474:384"] = 3,
@@ -5080,6 +5021,36 @@ local EXPLORATION_ID_MAP = {
 		["220:230:432:170"] = 9,
 		["230:230:301:189"] = 10,
 		["445:160:244:0"] = 11,
+		--[[
+		[362] = 1,                               -- Razor Hill
+		[363] = 2,                               -- Valley of Trials
+		[364] = 3,                               -- The Den
+		[365] = 4,                               -- Burning Blade Coven
+		[366] = 5,                               -- Kolkar Crag
+		[367] = 6,                               -- Sen'jin Village
+		[368] = 7,                               -- Echo Isles
+		[369] = 8,                               -- Thunder Ridge
+		[370] = 9,                               -- Drygulch Ravine
+		[371] = 10,                              -- Dustwind Cave
+		[372] = 11,                              -- Tiragarde Keep
+		[373] = 12,                              -- Scuttle Coast
+		[374] = 13,                              -- Bladefist Bay
+		[375] = 14,                              -- Deadeye Shore
+		[393] = 15,                              -- Darkspear Strand
+		[407] = 16,                              -- Orgrimmar UNUSED
+		[410] = 17,                              -- Razorwind Canyon
+		[638] = 18,                              -- Hidden Path
+		[639] = 19,                              -- Spirit Rock
+		[640] = 20,                              -- Shrine of the Dormant Flame
+		[814] = 21,                              -- Southfury River
+		[816] = 22,                              -- Razormane Grounds
+		[817] = 23,                              -- Skull Rock
+		[1296] = 24,                             -- Rocktusk Farm
+		[1297] = 25,                             -- Jaggedswine Farm
+		[2320] = 26,                             -- The Great Sea
+		[2337] = 27,                             -- Razor Hill Barracks
+		[2979] = 28,                             -- Tor'kren Farm
+		]]--
 	},
 	[1200] = {
 		["128:120:473:260"] = 1,
@@ -5479,37 +5450,7 @@ local EXPLORATION_ID_MAP = {
 		["256:185:436:380"] = 10,
 		["315:256:101:247"] = 11,
 	},
-	[1247] = {
-		["150:215:318:162"] = 1,
-		["170:195:468:85"] = 2,
-		["175:158:329:510"] = 3,
-		["175:183:229:485"] = 4,
-		["180:195:365:181"] = 5,
-		["190:205:324:306"] = 6,
-		["195:215:510:0"] = 7,
-		["200:170:305:412"] = 8,
-		["230:190:375:94"] = 9,
-	},
-	[1248] = {	-- Ashenvale
-		["128:195:131:137"] = 1,
-		["146:200:856:151"] = 2,
-		["155:150:260:373"] = 3,
-		["165:175:189:324"] = 4,
-		["180:245:520:238"] = 5,
-		["200:160:796:311"] = 6,
-		["200:205:392:218"] = 7,
-		["205:185:272:251"] = 8,
-		["210:185:463:141"] = 9,
-		["215:305:205:38"] = 10,
-		["220:195:104:259"] = 11,
-		["225:255:597:258"] = 12,
-		["235:205:547:426"] = 13,
-		["245:245:19:28"] = 14,
-		["245:255:713:344"] = 15,
-		["255:195:203:158"] = 16,
-		["275:240:356:347"] = 17,
-		["285:185:694:225"] = 18,
-	},
+	
 	[1249] = {
 		["190:190:31:155"] = 1,
 		["205:195:259:131"] = 2,
@@ -5534,23 +5475,7 @@ local EXPLORATION_ID_MAP = {
 		["288:355:457:282"] = 10,
 		["320:275:553:197"] = 11,
 	},
-	[1251] = {
-		["100:100:241:6"] = 1,
-		["170:160:555:181"] = 2,
-		["190:220:447:102"] = 3,
-		["195:242:293:426"] = 4,
-		["200:250:554:0"] = 5,
-		["205:145:431:0"] = 6,
-		["205:195:690:444"] = 7,
-		["205:250:311:61"] = 8,
-		["205:285:590:365"] = 9,
-		["220:220:607:215"] = 10,
-		["230:230:167:389"] = 11,
-		["245:285:212:215"] = 12,
-		["275:250:387:244"] = 13,
-		["285:245:625:33"] = 14,
-		["285:280:399:380"] = 15,
-	},
+	
 	[1252] = {
 		["110:110:493:70"] = 1,
 		["110:170:478:386"] = 2,
@@ -5600,27 +5525,7 @@ local EXPLORATION_ID_MAP = {
 		["215:180:363:194"] = 19,
 		["220:210:449:372"] = 20,
 	},
-	[1259] = {
-		["120:155:818:107"] = 1,
-		["145:215:422:95"] = 2,
-		["160:210:404:194"] = 3,
-		["190:200:681:153"] = 4,
-		["200:150:77:331"] = 5,
-		["215:175:84:229"] = 6,
-		["220:255:191:369"] = 7,
-		["225:180:35:422"] = 8,
-		["235:140:478:44"] = 9,
-		["235:270:250:106"] = 10,
-		["240:125:552:499"] = 11,
-		["240:155:499:119"] = 12,
-		["245:185:644:40"] = 13,
-		["265:280:238:221"] = 14,
-		["270:300:479:201"] = 15,
-		["315:200:296:429"] = 16,
-		["370:220:389:353"] = 17,
-		["395:128:396:540"] = 18,
-		["570:170:366:0"] = 19,
-	},
+	
 	[1260] = {
 		["145:159:496:509"] = 1,
 		["160:145:548:90"] = 2,
@@ -5676,7 +5581,7 @@ local EXPLORATION_ID_MAP = {
 		["270:240:348:13"] = 2,
 		["300:300:335:172"] = 3,
 	},
-};
+}, EXPLORATION_ID_META);
 
 local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
 	local submaps = {};
@@ -5691,7 +5596,7 @@ local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
 					if remappedExplorationID then
 						rawset(t2, remappedExplorationID, true);
 					else
-						-- print("Missing Exploration ID for ", hash);
+						print("Missing Exploration ID for ", hash);
 					end
 				end
 			end
@@ -5916,31 +5821,26 @@ app.ExplorationClass = {
 		if key == "key" then
 			return "explorationID";
 		elseif key == "text" then
-			local subAreaID = t.subAreaID;
-			if subAreaID then
-				return C_Map.GetAreaInfo(subAreaID) or t.explorationID;
-			end
-			return t.explorationID;
+			return (t.explorationID < 50 and t.hash) or C_Map.GetAreaInfo(t.explorationID) or t.hash or t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
-		elseif key == "areaID" then
-			local mapID = t.mapID;
-			if mapID and EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID] then
-				return EXPLORATION_MAP_ID_TO_AREA_ID_MAP[mapID];
+		elseif key == "preview" then
+			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
+			if exploredMapTextures then
+				for _,info in ipairs(exploredMapTextures) do
+					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+					if hash == t.hash then
+						local texture = info.fileDataIDs[1];
+						rawset(t, "preview", info.texture);
+						return texture;
+					end
+				end
 			end
+			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
 		elseif key == "artID" then
 			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
 		elseif key == "mapID" then
 			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
-		elseif key == "subAreaID" then
-			local areaID = t.areaID;
-			if areaID and EXPLORATION_AREA_ID_MAP[areaID] then
-				for subAreaID, explorationID in pairs(EXPLORATION_AREA_ID_MAP[areaID]) do
-					if explorationID == t.explorationID then
-						return subAreaID;
-					end
-				end
-			end
 		elseif key == "collectible" then
 			return app.CollectibleExploration;
 		elseif key == "collected" then
@@ -5948,11 +5848,9 @@ app.ExplorationClass = {
 		elseif key == "hash" then
 			local artID = t.artID;
 			if artID then
-				if EXPLORATION_ID_MAP[artID] then
-					for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
-						if explorationID == t.explorationID then
-							return hash;
-						end
+				for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+					if explorationID == t.explorationID then
+						return hash;
 					end
 				end
 			end
@@ -6097,23 +5995,22 @@ app.CreateMap = function(id, t)
 	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 	local artID = map.artID;
 	if artID and map.g then
-		local maxExplorationID = 0;
-		if EXPLORATION_ID_MAP[artID] then
-			for _,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
-				if explorationID > maxExplorationID then
-					maxExplorationID = explorationID;
+		local exploration = EXPLORATION_ID_MAP[artID];
+		local explored = C_MapExplorationInfo_GetExploredMapTextures(id);
+		if explored then
+			for i,info in pairs(explored) do
+				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				if not exploration[hash] then
+					exploration[hash] = -i;
 				end
 			end
-		else
-			-- NOTE: Crieve tested this, but you can't detect if you've discovered a major city. The map is always visible.
-			-- print("Missing EXPLORATION_ID_MAP for Map #", id , ", Art #", artID);
 		end
-		if maxExplorationID > 0 then
-			local explorationObjects = {};
-			for explorationID=1,maxExplorationID,1 do
-				tinsert(explorationObjects, app.CreateExploration(explorationID, {artID=artID}));
-			end
-			tinsert(map.g, 1, app.CreateNPC(-15, explorationObjects))
+		local explorationObjects = {};
+		for hash,explorationID in pairs(exploration) do
+			tinsert(explorationObjects, app.CreateExploration(explorationID, {artID=artID,hash=hash}));
+		end
+		if #explorationObjects > 0 then
+			tinsert(map.g, 1, app.CreateNPC(-15, explorationObjects));
 		end
 	end
 	return map;
@@ -7051,9 +6948,9 @@ local function MinimapButtonOnEnter(self)
 	GameTooltip:AddLine(L["MINIMAP_MOUSEOVER_TEXT"], 1, 1, 1);
 	GameTooltip:Show();
 	GameTooltipIcon:SetSize(72,72);
+	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
 	GameTooltipIcon:ClearAllPoints();
 	GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
 	local texcoord = reference.previewtexcoord or reference.texcoord;
 	if texcoord then
 		GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
@@ -7965,8 +7862,7 @@ local function RowOnEnter(self)
 		end
 		if reference.flightPathID and app.Settings:GetTooltipSetting("flightPathID")  then GameTooltip:AddDoubleLine(L["FLIGHT_PATH_ID"], tostring(reference.flightPathID)); end
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
-		if reference.areaID and app.Settings:GetTooltipSetting("areaID") then GameTooltip:AddDoubleLine(L["AREA_ID"], tostring(reference.areaID)); end
-		if reference.subAreaID and app.Settings:GetTooltipSetting("subAreaID") then GameTooltip:AddDoubleLine(L["SUB_AREA_ID"], tostring(reference.subAreaID)); end
+		if reference.explorationID and app.Settings:GetTooltipSetting("explorationID") then GameTooltip:AddDoubleLine(L["EXPLORATION_ID"], tostring(reference.explorationID)); end
 		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
 		if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
@@ -8109,16 +8005,24 @@ local function RowOnEnter(self)
 		elseif reference.isMontly then GameTooltip:AddLine("This can be completed monthly.");
 		elseif reference.isYearly then GameTooltip:AddLine("This can be completed yearly.");
 		elseif reference.repeatable then GameTooltip:AddLine("This can be repeated multiple times."); end
-		if not GameTooltipModel:TrySetModel(reference) and reference.icon then
-			GameTooltipIcon:SetSize(72,72);
-			GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
-			local texcoord = reference.previewtexcoord or reference.texcoord;
-			if texcoord then
-				GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
-			else
-				GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+		if not GameTooltipModel:TrySetModel(reference) then
+			local texture = reference.preview or reference.icon;
+			if texture then
+				if reference.explorationID and reference.hash then
+					local width, height, offsetX, offsetY = strsplit(":", reference.hash);
+					GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
+				else
+					GameTooltipIcon:SetSize(72,72);
+				end
+				GameTooltipIcon.icon:SetTexture(texture);
+				local texcoord = reference.previewtexcoord or reference.texcoord;
+				if texcoord then
+					GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
+				else
+					GameTooltipIcon.icon:SetTexCoord(0, 1, 0, 1);
+				end
+				GameTooltipIcon:Show();
 			end
-			GameTooltipIcon:Show();
 		end
 		if reference.displayID and app.Settings:GetTooltipSetting("displayID") then
 			GameTooltip:AddDoubleLine("Display ID", reference.displayID);

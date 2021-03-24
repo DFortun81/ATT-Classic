@@ -63,10 +63,10 @@ app.L = {
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	
 	-- Filter Text
-	["AREA_ID"] = "Area ID";
 	["ART_ID"] = "Art ID";
 	["CREATURE_ID"] = "Creature ID";
 	["CURRENCY_ID"] = "Currency ID";
+	["EXPLORATION_ID"] = "Exploration ID";
 	["FILTER_ID"] = "Filter ID";
 	["ITEM_ID"] = "Item ID";
 	["FACTION_ID"] = "Faction ID";
@@ -76,7 +76,6 @@ app.L = {
 	["OBJECT_ID"] = "Object ID";
 	["QUEST_ID"] = "Quest ID";
 	["SPELL_ID"] = "Spell ID";
-	["SUB_AREA_ID"] = "Sub Area ID";
 	
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\ATT-Classic\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
