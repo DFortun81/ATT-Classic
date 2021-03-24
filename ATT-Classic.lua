@@ -4632,26 +4632,15 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1209] = {	-- Blasted Lands
-		["170:145:405:123"] = 1,
-		["170:200:472:9"] = 2,
-		["185:155:310:133"] = 3,
-		["185:190:559:30"] = 4,
-		["195:180:361:15"] = 5,
-		["225:170:501:140"] = 6,
-		["245:195:361:195"] = 7,
-		["265:220:453:259"] = 8,
-		["384:450:212:178"] = 9,
-		--[[
-		[72] = 1,                                -- The Dark Portal
-		[73] = 2,                                -- The Tainted Scar
-		[1437] = 3,                              -- Dreadmaul Hold
-		[1438] = 4,                              -- Nethergarde Keep
-		[1439] = 5,                              -- Dreadmaul Post
-		[1440] = 6,                              -- Serpent's Coil
-		[1441] = 7,                              -- Altar of Storms
-		[1457] = 8,                              -- Garrison Armory
-		[2517] = 9,                              -- Rise of the Defiler
-		]]--
+		["170:145:405:123"] = 2517,	-- Rise of the Defiler
+		["170:200:472:9"] = 1457,	-- Garrison Armory
+		["185:155:310:133"] = 1441,	-- Altar of Storms
+		["185:190:559:30"] = 1438,	-- Nethergarde Keep
+		["195:180:361:15"] = 1437,	-- Dreadmaul Hold
+		["225:170:501:140"] = 1440,	-- Serpent's Coil
+		["245:195:361:195"] = 1439,	-- Dreadmaul Post
+		["265:220:453:259"] = 72,	-- The Dark Portal
+		["384:450:212:178"] = 73,	-- The Tainted Scar
 	},
 	[1224] = {	-- Burning Steppes
 		["220:225:707:168"] = 1,
