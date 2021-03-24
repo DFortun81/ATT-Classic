@@ -4876,6 +4876,7 @@ local EXPLORATION_AREA_ID_MAP = {
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik)
+-- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Orgrimmar" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -5010,29 +5011,21 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1194] = {	-- Durotar
-		["128:110:464:33"] = 1,
-		["160:120:413:476"] = 2,
-		["160:190:474:384"] = 3,
-		["190:180:462:286"] = 4,
-		["190:200:327:60"] = 5,
-		["200:240:549:427"] = 6,
-		["210:160:427:78"] = 7,
-		["215:215:355:320"] = 8,
-		["220:230:432:170"] = 9,
-		["230:230:301:189"] = 10,
-		["445:160:244:0"] = 11,
+		["128:110:464:33"] = 817,	-- Skull Rock
+		["160:120:413:476"] = 366,	-- Kolkar Crag
+		["160:190:474:384"] = 367,	-- Sen'jin Village
+		["190:180:462:286"] = 372,	-- Tiragarde Keep
+		["190:200:327:60"] = 369,	-- Thunder Ridge
+		["200:240:549:427"] = 368,	-- Echo Isles
+		["210:160:427:78"] = 370,	-- Drygulch Ravine
+		["215:215:355:320"] = 363,	-- Valley of Trials
+		["220:230:432:170"] = 362,	-- Razor Hill
+		["230:230:301:189"] = 816,	-- Razormane Grounds
+		["445:160:244:0"] = 1637,	-- Orgrimmar
 		--[[
-		[362] = 1,                               -- Razor Hill
-		[363] = 2,                               -- Valley of Trials
 		[364] = 3,                               -- The Den
 		[365] = 4,                               -- Burning Blade Coven
-		[366] = 5,                               -- Kolkar Crag
-		[367] = 6,                               -- Sen'jin Village
-		[368] = 7,                               -- Echo Isles
-		[369] = 8,                               -- Thunder Ridge
-		[370] = 9,                               -- Drygulch Ravine
 		[371] = 10,                              -- Dustwind Cave
-		[372] = 11,                              -- Tiragarde Keep
 		[373] = 12,                              -- Scuttle Coast
 		[374] = 13,                              -- Bladefist Bay
 		[375] = 14,                              -- Deadeye Shore
@@ -5043,8 +5036,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[639] = 19,                              -- Spirit Rock
 		[640] = 20,                              -- Shrine of the Dormant Flame
 		[814] = 21,                              -- Southfury River
-		[816] = 22,                              -- Razormane Grounds
-		[817] = 23,                              -- Skull Rock
 		[1296] = 24,                             -- Rocktusk Farm
 		[1297] = 25,                             -- Jaggedswine Farm
 		[2320] = 26,                             -- The Great Sea
