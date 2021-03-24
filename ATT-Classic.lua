@@ -4849,24 +4849,17 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1220] = {	-- Searing Gorge
-		["275:235:77:366"] = 1,
-		["305:220:494:300"] = 2,
-		["305:230:545:407"] = 3,
-		["360:280:247:388"] = 4,
-		["405:430:85:30"] = 5,
-		["425:325:250:170"] = 6,
-		["460:365:422:8"] = 7,
+		["275:235:77:366"] = 1957,	-- Blackchar Cave
+		["305:220:494:300"] = 247,	-- Grimesilt Dig Site
+		["305:230:545:407"] = 1958,	-- Tanner Camp
+		["360:280:247:388"] = 1444,	-- The Sea of Cinders
+		["405:430:85:30"] = 1442,	-- Firewatch Ridge
+		["425:325:250:170"] = 246,	-- The Cauldron
+		["460:365:422:8"] = 1959,	-- Dustfire Valley
 		--[[
-		[246] = 1,                               -- The Cauldron
-		[247] = 2,                               -- Grimesilt Dig Site
-		[1442] = 3,                              -- Firewatch Ridge
 		[1443] = 4,                              -- The Slag Pit
-		[1444] = 5,                              -- The Sea of Cinders
 		[1445] = 6,                              -- Blackrock Mountain
 		[1446] = 7,                              -- Thorium Point
-		[1957] = 8,                              -- Blackchar Cave
-		[1958] = 9,                              -- Tanner Camp
-		[1959] = 10,                             -- Dustfire Valley
 		[2838] = 11,                             -- Stonewrought Pass
 		]]--
 	},
