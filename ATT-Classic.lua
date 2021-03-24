@@ -4650,54 +4650,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[3038] = 20,                             -- Weazel's Crater
 		[3039] = 21,                             -- Tahonda Ruins
 	},
-	[406] = {                                    -- Stonetalon Mountains
-		[460] = 1,                               -- Sun Rock Retreat
-		[461] = 2,                               -- Windshear Crag
-		[463] = 3,                               -- Cragpool Lake
-		[464] = 4,                               -- Mirkfallon Lake
-		[465] = 5,                               -- The Charred Vale
-		[466] = 6,                               -- Valley of the Bloodfuries
-		[467] = 7,                               -- Stonetalon Peak
-		[468] = 8,                               -- The Talon Den
-		[469] = 9,                               -- Greatwood Vale
-		[636] = 10,                              -- Blackwolf River
-		[1076] = 11,                             -- Webwinder Path
-		[1277] = 12,                             -- The Talondeep Path
-		[2160] = 13,                             -- Windshear Mine
-		[2537] = 14,                             -- Grimtotem Post
-		[2538] = 15,                             -- Camp Aparaje
-		[2539] = 16,                             -- Malaka'jin
-		[2540] = 17,                             -- Boulderslide Ravine
-		[2541] = 18,                             -- Sishir Canyon
-		[3157] = 19,                             -- Boulderslide Cavern
-	},
-	[440] = {                                    -- Tanaris
-		[976] = 1,                               -- Gadgetzan
-		[977] = 2,                               -- Steamwheedle Port
-		[978] = 3,                               -- Zul'Farrak
-		[979] = 4,                               -- Sandsorrow Watch
-		[980] = 5,                               -- Thistleshrub Valley
-		[981] = 6,                               -- The Gaping Chasm
-		[982] = 7,                               -- The Noxious Lair
-		[983] = 8,                               -- Dunemaul Compound
-		[984] = 9,                               -- Eastmoon Ruins
-		[985] = 10,                              -- Waterspring Field
-		[986] = 11,                              -- Zalashji's Den
-		[987] = 12,                              -- Land's End Beach
-		[988] = 13,                              -- Wavestrider Beach
-		[989] = 14,                              -- Uldum
-		[990] = 15,                              -- Valley of the Watchers
-		[991] = 16,                              -- Gunstan's Post
-		[992] = 17,                              -- Southmoon Ruins
-		[1336] = 18,                             -- Lost Rigger Cove
-		[1937] = 19,                             -- Noonshade Ruins
-		[1938] = 20,                             -- Broken Pillar
-		[1939] = 21,                             -- Abyssal Sands
-		[1940] = 22,                             -- Southbreak Shore
-		[2300] = 23,                             -- Caverns of Time
-		[2317] = 24,                             -- South Seas
-		[2857] = 25,                             -- The Rumble Cage
-	},
 	[490] = {                                    -- Un'Goro Crater
 		[537] = 1,                               -- Fire Plume Ridge
 		[538] = 2,                               -- Lakkari Tar Pits
@@ -5054,6 +5006,58 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[3446] = 19,                             -- Twilight's Run
 		[3447] = 20,                             -- Ortell's Hideout
 		[3454] = 21,                             -- Ruins of Ahn'Qiraj
+		]]--
+	},
+	[1250] = {	-- Stonetalon Mountains
+		["125:125:475:433"] = 2541,	-- Sishir Canyon
+		["125:86:663:582"] = 2539,	-- Malaka'jin
+		["145:107:572:561"] = 2540,	-- Boulderslide Ravine
+		["150:150:389:320"] = 460,	-- Sun Rock Retreat
+		["190:97:718:571"] = 2538,	-- Camp Aparaje
+		["200:215:390:145"] = 464,	-- Mirkfallon Lake
+		["225:120:668:515"] = 2537,	-- Grimtotem Post
+		["230:355:210:234"] = 465,	-- The Charred Vale
+		["270:205:247:0"] = 467,	-- Stonetalon Peak
+		["288:355:457:282"] = 1076,	-- Webwinder Path
+		["320:275:553:197"] = 461,	-- Windshear Crag
+		--[[
+		[463] = 3,                               -- Cragpool Lake
+		[466] = 6,                               -- Valley of the Bloodfuries
+		[468] = 8,                               -- The Talon Den
+		[469] = 9,                               -- Greatwood Vale
+		[636] = 10,                              -- Blackwolf River
+		[1277] = 12,                             -- The Talondeep Path
+		[2160] = 13,                             -- Windshear Mine
+		[3157] = 19,                             -- Boulderslide Cavern
+		]]--
+	},
+	[1254] = {	-- Tanaris
+		["110:140:611:147"] = 986,	-- Zalashji's Den
+		["110:180:473:234"] = 1938,	-- Broken Pillar
+		["120:135:533:104"] = 1937,	-- Noonshade Ruins
+		["150:160:291:434"] = 990,	-- Valley of the Watchers
+		["155:150:561:256"] = 2300,	-- Caverns of Time
+		["155:150:592:75"] = 977,	-- Steamwheedle Port
+		["160:150:395:346"] = 984,	-- Eastmoon Ruins
+		["160:190:629:220"] = 1336,	-- Lost Rigger Cove
+		["165:180:509:168"] = 985,	-- Waterspring Field
+		["175:165:421:91"] = 976,	-- Gadgetzan
+		["180:200:252:199"] = 982,	-- The Noxious Lair
+		["185:250:203:286"] = 980,	-- Thistleshrub Valley
+		["195:175:299:100"] = 979,	-- Sandsorrow Watch
+		["195:210:323:359"] = 992,	-- Southmoon Ruins
+		["205:145:325:289"] = 983,	-- Dunemaul Compound
+		["205:157:445:511"] = 987,	-- Land's End Beach
+		["210:175:254:0"] = 978,	-- Zul'Farrak
+		["215:175:499:293"] = 1940,	-- Southbreak Shore
+		["215:180:363:194"] = 1939,	-- Abyssal Sands
+		["220:210:449:372"] = 981,	-- The Gaping Chasm
+		--[[
+		[988] = 13,                              -- Wavestrider Beach
+		[989] = 14,                              -- Uldum
+		[991] = 16,                              -- Gunstan's Post
+		[2317] = 24,                             -- South Seas
+		[2857] = 25,                             -- The Rumble Cage
 		]]--
 	},
 	
@@ -5451,44 +5455,11 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["305:310:0:0"] = 8,
 		["320:365:610:300"] = 9,
 	},
-	[1250] = {
-		["125:125:475:433"] = 1,
-		["125:86:663:582"] = 2,
-		["145:107:572:561"] = 3,
-		["150:150:389:320"] = 4,
-		["190:97:718:571"] = 5,
-		["200:215:390:145"] = 6,
-		["225:120:668:515"] = 7,
-		["230:355:210:234"] = 8,
-		["270:205:247:0"] = 9,
-		["288:355:457:282"] = 10,
-		["320:275:553:197"] = 11,
-	},
 	
 	
 	
-	[1254] = {
-		["110:140:611:147"] = 1,
-		["110:180:473:234"] = 2,
-		["120:135:533:104"] = 3,
-		["150:160:291:434"] = 4,
-		["155:150:561:256"] = 5,
-		["155:150:592:75"] = 6,
-		["160:150:395:346"] = 7,
-		["160:190:629:220"] = 8,
-		["165:180:509:168"] = 9,
-		["175:165:421:91"] = 10,
-		["180:200:252:199"] = 11,
-		["185:250:203:286"] = 12,
-		["195:175:299:100"] = 13,
-		["195:210:323:359"] = 14,
-		["205:145:325:289"] = 15,
-		["205:157:445:511"] = 16,
-		["210:175:254:0"] = 17,
-		["215:175:499:293"] = 18,
-		["215:180:363:194"] = 19,
-		["220:210:449:372"] = 20,
-	},
+	
+	
 	
 	
 	[1261] = {
