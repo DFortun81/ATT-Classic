@@ -5017,36 +5017,23 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1212] = {	-- Western Plaguelands
-		["160:125:300:311"] = 1,
-		["160:200:566:198"] = 2,
-		["170:165:600:412"] = 3,
-		["170:190:451:323"] = 4,
-		["180:205:520:250"] = 5,
-		["205:340:590:86"] = 6,
-		["220:150:381:265"] = 7,
-		["220:180:382:164"] = 8,
-		["225:185:137:293"] = 9,
-		["285:230:260:355"] = 10,
-		["300:206:355:462"] = 11,
-		["340:288:307:16"] = 12,
-		["370:270:504:343"] = 13,
+		["160:125:300:311"] = 199,	-- Felstone Field
+		["160:200:566:198"] = 198,	-- The Weeping Cave
+		["170:165:600:412"] = 2298,	-- Caer Darrow
+		["170:190:451:323"] = 202,	-- The Writhing Haunt
+		["180:205:520:250"] = 201,	-- Gahrron's Withering
+		["205:340:590:86"] = 2620,	-- Thondroril River
+		["220:150:381:265"] = 200,	-- Dalson's Tears
+		["220:180:382:164"] = 192,	-- Northridge Lumber Camp
+		["225:185:137:293"] = 813,	-- The Bulwark
+		["285:230:260:355"] = 193,	-- Ruins of Andorhal
+		["300:206:355:462"] = 197,	-- Sorrow Hill
+		["340:288:307:16"] = 190,	-- Hearthglen
+		["370:270:504:343"] = 2297,	-- Darrowmere Lake
 		--[[
-		[190] = 1,                               -- Hearthglen
-		[192] = 2,                               -- Northridge Lumber Camp
-		[193] = 3,                               -- Ruins of Andorhal
 		[195] = 4,                               -- School of Necromancy
 		[196] = 5,                               -- Uther's Tomb
-		[197] = 6,                               -- Sorrow Hill
-		[198] = 7,                               -- The Weeping Cave
-		[199] = 8,                               -- Felstone Field
-		[200] = 9,                               -- Dalson's Tears
-		[201] = 10,                              -- Gahrron's Withering
-		[202] = 11,                              -- The Writhing Haunt
 		[203] = 12,                              -- Mardenholde Keep
-		[813] = 13,                              -- The Bulwark
-		[2297] = 14,                             -- Darrowmere Lake
-		[2298] = 15,                             -- Caer Darrow
-		[2620] = 16,                             -- Thondroril River
 		[3197] = 17,                             -- Chillwind Camp
 		]]--
 	},
