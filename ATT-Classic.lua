@@ -4195,7 +4195,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[34] = 5,                                -- Echo Ridge Mine
 		[53] = 6,                                -- Thieves Camp
 		[54] = 7,                                -- Jasperlode Mine
-		[55] = 8,                                -- Valley of Heroes UNUSED
 		[56] = 9,                                -- Heroes' Vigil
 		[57] = 10,                               -- Fargodeep Mine
 		[59] = 11,                               -- Northshire Vineyards
@@ -4506,7 +4505,6 @@ local EXPLORATION_AREA_ID_MAP = {
 	[139] = {                                    -- Eastern Plaguelands
 		[1019] = 1,                              -- The Green Belt
 		[2258] = 2,                              -- The Fungal Vale
-		[2259] = 3,                              -- UNUSEDThe Marris Stead
 		[2260] = 4,                              -- The Marris Stead
 		[2261] = 5,                              -- The Undercroft
 		[2262] = 6,                              -- Darrowshire
@@ -4553,44 +4551,13 @@ local EXPLORATION_AREA_ID_MAP = {
 		[1056] = 13,                             -- Darrow Hill
 		[1057] = 14,                             -- Thoradin's Wall
 		[2397] = 15,                             -- The Great Sea
-		[2777] = 16,                             -- UNUSED Alterac Valley
-	},
-	[490] = {                                    -- Un'Goro Crater
-		[537] = 1,                               -- Fire Plume Ridge
-		[538] = 2,                               -- Lakkari Tar Pits
-		[539] = 3,                               -- Terror Run
-		[540] = 4,                               -- The Slithering Scar
-		[541] = 5,                               -- Marshal's Refuge
-		[542] = 6,                               -- Fungal Rock
-		[543] = 7,                               -- Golakka Hot Springs
-		[1942] = 8,                              -- The Marshlands
-		[1943] = 9,                              -- Ironstone Plateau
-	},
-	[618] = {                                    -- Winterspring
-		[2241] = 1,                              -- Frostsaber Rock
-		[2242] = 2,                              -- The Hidden Grove
-		[2243] = 3,                              -- Timbermaw Post
-		[2244] = 4,                              -- Winterfall Village
-		[2245] = 5,                              -- Mazthoril
-		[2246] = 6,                              -- Frostfire Hot Springs
-		[2247] = 7,                              -- Ice Thistle Hills
-		[2248] = 8,                              -- Dun Mandarr
-		[2249] = 9,                              -- Frostwhisper Gorge
-		[2250] = 10,                             -- Owl Wing Thicket
-		[2251] = 11,                             -- Lake Kel'Theril
-		[2252] = 12,                             -- The Ruins of Kel'Theril
-		[2253] = 13,                             -- Starfall Village
-		[2254] = 14,                             -- Ban'Thallow Barrow Den
-		[2255] = 15,                             -- Everlook
-		[2256] = 16,                             -- Darkwhisper Gorge
-		[3139] = 17,                             -- Moon Horror Den
 	},
 }
 
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Darnassus" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Darnassus" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -4744,7 +4711,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[374] = 13,                              -- Bladefist Bay
 		[375] = 14,                              -- Deadeye Shore
 		[393] = 15,                              -- Darkspear Strand
-		[407] = 16,                              -- Orgrimmar UNUSED
 		[410] = 17,                              -- Razorwind Canyon
 		[638] = 18,                              -- Hidden Path
 		[639] = 19,                              -- Spirit Rock
@@ -4779,7 +4745,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[507] = 13,                              -- Bluefen
 		[508] = 14,                              -- Stonemaul Ruins
 		[510] = 16,                              -- The Dragonmurk
-		[512] = 18,                              -- Onyxia's Lair UNUSED
 		[514] = 20,                              -- Foothold Citadel
 		[515] = 21,                              -- Ironclad Prison
 		[516] = 22,                              -- Dustwallow Bay
@@ -4839,7 +4804,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[1115] = 18,                             -- Rage Scar Hold
 		[1116] = 19,                             -- Feathermoon Stronghold
 		[1117] = 20,                             -- Ruins of Solarsal
-		[1118] = 21,                             -- Lower Wilds UNUSED
 		[1136] = 25,                             -- High Wilderness
 		[2323] = 27,                             -- The Veiled Sea
 		[2518] = 28,                             -- Lariss Pavilion
@@ -4877,15 +4841,10 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[223] = 4,                               -- Stonebull Lake
 		[358] = 7,                               -- Brambleblade Ravine
 		[399] = 12,                              -- Skyline Ridge
-		[470] = 14,                              -- Thunder Bluff UNUSED
 		[471] = 15,                              -- Brave Wind Mesa
 		[472] = 16,                              -- Fire Stone Mesa
 		[473] = 17,                              -- Mantle Rock
-		[474] = 18,                              -- Hunter Rise UNUSED
-		[475] = 19,                              -- Spirit RiseUNUSED
-		[476] = 20,                              -- Elder RiseUNUSED
 		[637] = 21,                              -- Kodo Rock
-		[2137] = 26,                             -- The Pools of VisionUNUSED
 		]]--
 	},
 	[1264] = {	-- Silithus
@@ -4978,19 +4937,12 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["256:185:436:380"] = 259,	-- Lake Al'Ameth
 		["315:256:101:247"] = 1657,	-- Darnassus
 		--[[
-		[187] = 2,                               -- Darnassus UNUSED
 		[256] = 4,                               -- Aldrassil
 		[257] = 5,                               -- Shadowthread Cave
 		[258] = 6,                               -- Fel Rock
 		[262] = 10,                              -- Ban'ethil Barrow Den
 		[263] = 11,                              -- The Cleft
 		[265] = 13,                              -- Wellspring River
-		[696] = 16,                              -- Craftsmen's Terrace UNUSED
-		[697] = 17,                              -- Tradesmen's Terrace UNUSED
-		[698] = 18,                              -- The Temple Gardens UNUSED
-		[699] = 19,                              -- Temple of Elune UNUSED
-		[700] = 20,                              -- Cenarion Enclave UNUSED
-		[701] = 21,                              -- Warrior's Terrace UNUSED
 		[2322] = 24,                             -- The Veiled Sea
 		]]
 	},
@@ -5060,7 +5012,42 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[3039] = 21,                             -- Tahonda Ruins
 		]]
 	},
+	[1261] = {	-- Un'Goro Crater
+		["285:285:582:67"] = 1943,	-- Ironstone Plateau
+		["295:270:367:178"] = 537,	-- Fire Plume Ridge
+		["310:355:560:240"] = 1942,	-- The Marshlands
+		["315:345:121:151"] = 543,	-- Golakka Hot Springs
+		["345:285:158:368"] = 539,	-- Terror Run
+		["345:285:367:380"] = 540,	-- The Slithering Scar
+		["570:265:160:6"] = 538,	-- Lakkari Tar Pits
+		--[[
+		[541] = 5,                               -- Marshal's Refuge
+		[542] = 6,                               -- Fungal Rock
+		]]--
+	},
+	[1266] = {	-- Winterspring
+		["125:165:611:242"] = 2247,	-- Ice Thistle Hills
+		["145:125:617:158"] = 2244,	-- Winterfall Village
+		["165:140:593:340"] = 2250,	-- Owl Wing Thicket
+		["165:200:509:107"] = 2255,	-- Everlook
+		["175:185:555:27"] = 2242,	-- The Hidden Grove
+		["185:160:392:137"] = 2253,	-- Starfall Village
+		["185:180:493:258"] = 2245,	-- Mazthoril
+		["200:160:523:376"] = 2249,	-- Frostwhisper Gorge
+		["215:185:401:198"] = 2251,	-- Lake Kel'Theril
+		["230:120:229:243"] = 2243,	-- Timbermaw Post
+		["240:140:222:172"] = 2246,	-- Frostfire Hot Springs
+		["250:180:368:7"] = 2241,	-- Frostsaber Rock
+		["255:205:447:441"] = 2256,	-- Darkwhisper Gorge
+		--[[
+		[2248] = 8,                              -- Dun Mandarr
+		[2252] = 12,                             -- The Ruins of Kel'Theril
+		[2254] = 14,                             -- Ban'Thallow Barrow Den
+		[3139] = 17,                             -- Moon Horror Den
+		]]--
+	},
 	
+	-- Eastern Kingdoms
 	[1205] = {
 		["160:175:225:478"] = 1,
 		["165:197:314:471"] = 2,
@@ -5402,30 +5389,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["256:250:507:115"] = 13,
 		["300:240:92:82"] = 14,
 		["350:360:611:230"] = 15,
-	},
-	[1261] = {
-		["285:285:582:67"] = 1,
-		["295:270:367:178"] = 2,
-		["310:355:560:240"] = 3,
-		["315:345:121:151"] = 4,
-		["345:285:158:368"] = 5,
-		["345:285:367:380"] = 6,
-		["570:265:160:6"] = 7,
-	},
-	[1266] = {
-		["125:165:611:242"] = 1,
-		["145:125:617:158"] = 2,
-		["165:140:593:340"] = 3,
-		["165:200:509:107"] = 4,
-		["175:185:555:27"] = 5,
-		["185:160:392:137"] = 6,
-		["185:180:493:258"] = 7,
-		["200:160:523:376"] = 8,
-		["215:185:401:198"] = 9,
-		["230:120:229:243"] = 10,
-		["240:140:222:172"] = 11,
-		["250:180:368:7"] = 12,
-		["255:205:447:441"] = 13,
 	},
 	[1273] = {
 		["235:290:399:375"] = 1,
