@@ -4737,12 +4737,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[1942] = 8,                              -- The Marshlands
 		[1943] = 9,                              -- Ironstone Plateau
 	},
-	[493] = {                                    -- Moonglade
-		[656] = 1,                               -- Lake Elune'ara
-		[2361] = 2,                              -- Nighthaven
-		[2362] = 3,                              -- Shrine of Remulos
-		[2363] = 4,                              -- Stormrage Barrow Dens
-	},
 	[618] = {                                    -- Winterspring
 		[2241] = 1,                              -- Frostsaber Rock
 		[2242] = 2,                              -- The Hidden Grove
@@ -4789,7 +4783,7 @@ local EXPLORATION_AREA_ID_MAP = {
 
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
--- The commented sections are areas associated with the map, but not collectible. (afaik)
+-- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
 -- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Orgrimmar" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
@@ -5047,6 +5041,14 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2520] = 30,                             -- Woodpaw Den
 		[2521] = 31,                             -- Verdantis River
 		[3117] = 34,                             -- Shalzaru's Lair
+		]]--
+	},
+	[1263] = {	-- Moonglade
+		["555:510:244:89"] = 656,	-- Lake Elune'ara
+		--[[
+		[2361] = 2,                              -- Nighthaven
+		[2362] = 3,                              -- Shrine of Remulos
+		[2363] = 4,                              -- Stormrage Barrow Dens
 		]]--
 	},
 	[1200] = {
@@ -5507,9 +5509,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["345:285:158:368"] = 5,
 		["345:285:367:380"] = 6,
 		["570:265:160:6"] = 7,
-	},
-	[1263] = {
-		["555:510:244:89"] = 1,
 	},
 	[1264] = {
 		["288:256:116:413"] = 1,
