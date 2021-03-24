@@ -4215,36 +4215,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[797] = 25,                              -- Jerod's Landing
 		[798] = 26,                              -- Ridgepoint Tower
 	},
-	[15] = {                                     -- Dustwallow Marsh
-		[403] = 1,                               -- Shady Rest Inn
-		[496] = 2,                               -- Brackenwall Village
-		[497] = 3,                               -- Swamplight Manor
-		[498] = 4,                               -- Bloodfen Burrow
-		[499] = 5,                               -- Darkmist Cavern
-		[500] = 6,                               -- Moggle Point
-		[501] = 7,                               -- Beezil's Wreck
-		[502] = 8,                               -- Witch Hill
-		[503] = 9,                               -- Sentry Point
-		[504] = 10,                              -- North Point Tower
-		[505] = 11,                              -- West Point Tower
-		[506] = 12,                              -- Lost Point
-		[507] = 13,                              -- Bluefen
-		[508] = 14,                              -- Stonemaul Ruins
-		[509] = 15,                              -- The Den of Flame
-		[510] = 16,                              -- The Dragonmurk
-		[511] = 17,                              -- Wyrmbog
-		[512] = 18,                              -- Onyxia's Lair UNUSED
-		[513] = 19,                              -- Theramore Isle
-		[514] = 20,                              -- Foothold Citadel
-		[515] = 21,                              -- Ironclad Prison
-		[516] = 22,                              -- Dustwallow Bay
-		[517] = 23,                              -- Tidefury Cove
-		[518] = 24,                              -- Dreadmurk Shore
-		[2079] = 25,                             -- Alcaz Island
-		[2158] = 26,                             -- Emberstrife's Den
-		[2302] = 27,                             -- The Quagmire
-		[2318] = 28,                             -- The Great Sea
-	},
 	[17] = {                                     -- The Barrens
 		[359] = 1,                               -- Bael Modan
 		[378] = 2,                               -- Camp Taurajo
@@ -5043,6 +5013,38 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2979] = 28,                             -- Tor'kren Farm
 		]]--
 	},
+	[1253] = {	-- Dustwallow Marsh
+		["200:195:660:21"] = 2079,	-- Alcaz Island
+		["230:205:534:224"] = 513,	-- Theramore Isle
+		["250:315:422:0"] = 502,	-- Witch Hill
+		["255:250:257:313"] = 509,	-- The Den of Flame
+		["280:270:230:0"] = 496,	-- Brackenwall Village
+		["285:240:367:381"] = 511,	-- Wyrmbog
+		["400:255:239:189"] = 2302,	-- The Quagmire
+		--[[
+		[403] = 1,                               -- Shady Rest Inn
+		[497] = 3,                               -- Swamplight Manor
+		[498] = 4,                               -- Bloodfen Burrow
+		[499] = 5,                               -- Darkmist Cavern
+		[500] = 6,                               -- Moggle Point
+		[501] = 7,                               -- Beezil's Wreck
+		[503] = 9,                               -- Sentry Point
+		[504] = 10,                              -- North Point Tower
+		[505] = 11,                              -- West Point Tower
+		[506] = 12,                              -- Lost Point
+		[507] = 13,                              -- Bluefen
+		[508] = 14,                              -- Stonemaul Ruins
+		[510] = 16,                              -- The Dragonmurk
+		[512] = 18,                              -- Onyxia's Lair UNUSED
+		[514] = 20,                              -- Foothold Citadel
+		[515] = 21,                              -- Ironclad Prison
+		[516] = 22,                              -- Dustwallow Bay
+		[517] = 23,                              -- Tidefury Cove
+		[518] = 24,                              -- Dreadmurk Shore
+		[2158] = 26,                             -- Emberstrife's Den
+		[2318] = 28,                             -- The Great Sea
+		]]--
+	},
 	[1200] = {
 		["128:120:473:260"] = 1,
 		["128:155:379:242"] = 2,
@@ -5485,15 +5487,7 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["240:220:618:298"] = 15,
 		["285:245:319:75"] = 16,
 	},
-	[1253] = {
-		["200:195:660:21"] = 1,
-		["230:205:534:224"] = 2,
-		["250:315:422:0"] = 3,
-		["255:250:257:313"] = 4,
-		["280:270:230:0"] = 5,
-		["285:240:367:381"] = 6,
-		["400:255:239:189"] = 7,
-	},
+	
 	[1254] = {
 		["110:140:611:147"] = 1,
 		["110:180:473:234"] = 2,
