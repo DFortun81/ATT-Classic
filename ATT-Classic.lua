@@ -4215,52 +4215,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[797] = 25,                              -- Jerod's Landing
 		[798] = 26,                              -- Ridgepoint Tower
 	},
-	[17] = {                                     -- The Barrens
-		[359] = 1,                               -- Bael Modan
-		[378] = 2,                               -- Camp Taurajo
-		[379] = 3,                               -- Far Watch Post
-		[380] = 4,                               -- The Crossroads
-		[381] = 5,                               -- Boulder Lode Mine
-		[382] = 6,                               -- The Sludge Fen
-		[383] = 7,                               -- The Dry Hills
-		[384] = 8,                               -- Dreadmist Peak
-		[385] = 9,                               -- Northwatch Hold
-		[386] = 10,                              -- The Forgotten Pools
-		[387] = 11,                              -- Lushwater Oasis
-		[388] = 12,                              -- The Stagnant Oasis
-		[390] = 13,                              -- Field of Giants
-		[391] = 14,                              -- The Merchant Coast
-		[392] = 15,                              -- Ratchet
-		[401] = 16,                              -- The Tidus Stair
-		[458] = 17,                              -- Gold Road
-		[720] = 18,                              -- Fray Island
-		[815] = 19,                              -- Southfury River
-		[877] = 20,                              -- Delete ME
-		[1156] = 21,                             -- Southern Barrens
-		[1157] = 22,                             -- Southern Gold Road
-		[1316] = 23,                             -- Razorfen Downs
-		[1597] = 24,                             -- Raptor Grounds UNUSED
-		[1598] = 25,                             -- Grol'dom Farm UNUSED
-		[1599] = 26,                             -- Mor'shan Base Camp
-		[1600] = 27,                             -- Honor's Stand UNUSED
-		[1601] = 28,                             -- Blackthorn Ridge UNUSED
-		[1602] = 29,                             -- Bramblescar UNUSED
-		[1603] = 30,                             -- Agama'gor UNUSED
-		[1697] = 31,                             -- Raptor Grounds
-		[1698] = 32,                             -- Bramblescar
-		[1699] = 33,                             -- Thorn Hill
-		[1700] = 34,                             -- Agama'gor
-		[1701] = 35,                             -- Blackthorn Ridge
-		[1702] = 36,                             -- Honor's Stand
-		[1703] = 37,                             -- The Mor'shan Rampart
-		[1704] = 38,                             -- Grol'dom Farm
-		[1717] = 39,                             -- Razorfen Kraul
-		[1718] = 40,                             -- The Great Lift
-		[2138] = 41,                             -- Dreadmist Den
-		[2157] = 42,                             -- Bael'dun Keep
-		[2319] = 43,                             -- The Great Sea
-		[2757] = 44,                             -- Shrine of the Fallen Warrior
-	},
 	[28] = {                                     -- Western Plaguelands
 		[190] = 1,                               -- Hearthglen
 		[192] = 2,                               -- Northridge Lumber Camp
@@ -4583,32 +4537,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2626] = 31,                             -- Terrorweb Tunnel
 		[2627] = 32,                             -- Terrordale
 	},
-	[141] = {                                    -- Teldrassil
-		[186] = 1,                               -- Dolanaar
-		[187] = 2,                               -- Darnassus UNUSED
-		[188] = 3,                               -- Shadowglen
-		[256] = 4,                               -- Aldrassil
-		[257] = 5,                               -- Shadowthread Cave
-		[258] = 6,                               -- Fel Rock
-		[259] = 7,                               -- Lake Al'Ameth
-		[260] = 8,                               -- Starbreeze Village
-		[261] = 9,                               -- Gnarlpine Hold
-		[262] = 10,                              -- Ban'ethil Barrow Den
-		[263] = 11,                              -- The Cleft
-		[264] = 12,                              -- The Oracle Glade
-		[265] = 13,                              -- Wellspring River
-		[266] = 14,                              -- Wellspring Lake
-		[478] = 15,                              -- Pools of Arlithrien
-		[696] = 16,                              -- Craftsmen's Terrace UNUSED
-		[697] = 17,                              -- Tradesmen's Terrace UNUSED
-		[698] = 18,                              -- The Temple Gardens UNUSED
-		[699] = 19,                              -- Temple of Elune UNUSED
-		[700] = 20,                              -- Cenarion Enclave UNUSED
-		[701] = 21,                              -- Warrior's Terrace UNUSED
-		[702] = 22,                              -- Rut'theran Village
-		[736] = 23,                              -- Ban'ethil Hollow
-		[2322] = 24,                             -- The Veiled Sea
-	},
 	[267] = {                                    -- Hillsbrad Foothills
 		[271] = 1,                               -- Southshore
 		[272] = 2,                               -- Tarren Mill
@@ -4685,7 +4613,7 @@ local EXPLORATION_AREA_ID_MAP = {
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Thunder Bluff" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Darnassus" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -5060,34 +4988,77 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2857] = 25,                             -- The Rumble Cage
 		]]--
 	},
-	
-	[1202] = {
-		["100:165:564:52"] = 1,
-		["115:110:507:294"] = 2,
-		["120:110:555:0"] = 3,
-		["120:125:384:115"] = 4,
-		["125:115:492:63"] = 5,
-		["125:125:556:189"] = 6,
-		["125:165:442:298"] = 7,
-		["128:100:412:0"] = 8,
-		["128:105:419:63"] = 9,
-		["128:128:306:130"] = 10,
-		["128:128:341:537"] = 11,
-		["128:128:431:479"] = 12,
-		["140:128:498:119"] = 13,
-		["145:125:365:350"] = 14,
-		["150:120:527:307"] = 15,
-		["155:115:407:553"] = 16,
-		["155:128:335:462"] = 17,
-		["155:128:481:211"] = 18,
-		["155:155:431:118"] = 19,
-		["170:120:456:0"] = 20,
-		["175:185:365:177"] = 21,
-		["200:145:317:29"] = 22,
-		["200:185:340:234"] = 23,
-		["210:150:355:402"] = 24,
-		["95:100:581:247"] = 25,
+	[1244] = {	-- Teldrassil
+		["128:100:494:548"] = 702,	-- Rut'theran Village
+		["128:190:335:313"] = 478,	-- Pools of Arlithrien
+		["160:210:382:281"] = 736,	-- Ban'ethil Hollow
+		["170:240:272:127"] = 264,	-- The Oracle Glade
+		["180:256:377:93"] = 266,	-- Wellspring Lake
+		["185:128:368:443"] = 261,	-- Gnarlpine Hold
+		["190:128:462:323"] = 186,	-- Dolanaar
+		["200:200:561:292"] = 260,	-- Starbreeze Village
+		["225:225:491:153"] = 188,	-- Shadowglen
+		["256:185:436:380"] = 259,	-- Lake Al'Ameth
+		["315:256:101:247"] = 1657,	-- Darnassus
+		--[[
+		[187] = 2,                               -- Darnassus UNUSED
+		[256] = 4,                               -- Aldrassil
+		[257] = 5,                               -- Shadowthread Cave
+		[258] = 6,                               -- Fel Rock
+		[262] = 10,                              -- Ban'ethil Barrow Den
+		[263] = 11,                              -- The Cleft
+		[265] = 13,                              -- Wellspring River
+		[696] = 16,                              -- Craftsmen's Terrace UNUSED
+		[697] = 17,                              -- Tradesmen's Terrace UNUSED
+		[698] = 18,                              -- The Temple Gardens UNUSED
+		[699] = 19,                              -- Temple of Elune UNUSED
+		[700] = 20,                              -- Cenarion Enclave UNUSED
+		[701] = 21,                              -- Warrior's Terrace UNUSED
+		[2322] = 24,                             -- The Veiled Sea
+		]]
 	},
+	[1202] = {	-- The Barrens
+		["100:165:564:52"] = 379,	-- Far Watch Post
+		["115:110:507:294"] = 1697,	-- Raptor Grounds
+		["120:110:555:0"] = 381,	-- Boulder Lode Mine
+		["120:125:384:115"] = 386,	-- The Forgotten Pools
+		["125:115:492:63"] = 1704,	-- Grol'dom Farm
+		["125:125:556:189"] = 392,	-- Ratchet
+		["125:165:442:298"] = 1698,	-- Bramblescar
+		["128:100:412:0"] = 1703,	-- The Mor'shan Rampart
+		["128:105:419:63"] = 384,	-- Dreadmist Peak
+		["128:128:306:130"] = 1702,	-- Honor's Stand
+		["128:128:341:537"] = 1717,	-- Razorfen Kraul
+		["128:128:431:479"] = 359,	-- Bael Modan
+		["140:128:498:119"] = 1699,	-- Thorn Hill
+		["145:125:365:350"] = 378,	-- Camp Taurajo
+		["150:120:527:307"] = 385,	-- Northwatch Hold
+		["155:115:407:553"] = 1316,	-- Razorfen Downs
+		["155:128:335:462"] = 1701,	-- Blackthorn Ridge
+		["155:128:481:211"] = 388,	-- The Stagnant Oasis
+		["155:155:431:118"] = 380,	-- The Crossroads
+		["170:120:456:0"] = 382,	-- The Sludge Fen
+		["175:185:365:177"] = 387,	-- Lushwater Oasis
+		["200:145:317:29"] = 383,	-- The Dry Hills
+		["200:185:340:234"] = 1700,	-- Agama'gor
+		["210:150:355:402"] = 390,	-- Field of Giants
+		["95:100:581:247"] = 391,	-- The Merchant Coast
+		--[[
+		[401] = 16,                              -- The Tidus Stair
+		[458] = 17,                              -- Gold Road
+		[720] = 18,                              -- Fray Island
+		[815] = 19,                              -- Southfury River
+		[1156] = 21,                             -- Southern Barrens
+		[1157] = 22,                             -- Southern Gold Road
+		[1599] = 26,                             -- Mor'shan Base Camp
+		[1718] = 40,                             -- The Great Lift
+		[2138] = 41,                             -- Dreadmist Den
+		[2157] = 42,                             -- Bael'dun Keep
+		[2319] = 43,                             -- The Great Sea
+		[2757] = 44,                             -- Shrine of the Fallen Warrior
+		]]--
+	},
+	
 	[1205] = {
 		["160:175:225:478"] = 1,
 		["165:197:314:471"] = 2,
@@ -5430,19 +5401,7 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["300:240:92:82"] = 14,
 		["350:360:611:230"] = 15,
 	},
-	[1244] = {
-		["128:100:494:548"] = 1,
-		["128:190:335:313"] = 2,
-		["160:210:382:281"] = 3,
-		["170:240:272:127"] = 4,
-		["180:256:377:93"] = 5,
-		["185:128:368:443"] = 6,
-		["190:128:462:323"] = 7,
-		["200:200:561:292"] = 8,
-		["225:225:491:153"] = 9,
-		["256:185:436:380"] = 10,
-		["315:256:101:247"] = 11,
-	},
+	
 	
 	[1249] = {
 		["190:190:31:155"] = 1,
