@@ -6,7 +6,7 @@
 ## SavedVariables: ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
 ## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
-## Version: 0.4.6
+## Version: 0.4.7
 lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
