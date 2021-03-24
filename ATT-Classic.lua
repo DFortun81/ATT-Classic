@@ -4555,29 +4555,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2397] = 15,                             -- The Great Sea
 		[2777] = 16,                             -- UNUSED Alterac Valley
 	},
-	[400] = {                                    -- Thousand Needles
-		[439] = 1,                               -- The Shimmering Flats
-		[479] = 2,                               -- The Rustmaul Dig Site
-		[480] = 3,                               -- Camp E'thok
-		[481] = 4,                               -- Splithoof Crag
-		[482] = 5,                               -- Highperch
-		[483] = 6,                               -- The Screeching Canyon
-		[484] = 7,                               -- Freewind Post
-		[485] = 8,                               -- The Great Lift
-		[486] = 9,                               -- Galak Hold
-		[487] = 10,                              -- Roguefeather Den
-		[488] = 11,                              -- The Weathered Nook
-		[1557] = 12,                             -- Splithoof Hold
-		[2097] = 13,                             -- Darkcloud Pinnacle
-		[2237] = 14,                             -- Whitereach Post
-		[2238] = 15,                             -- Gornia
-		[2239] = 16,                             -- Zane's Eye Crater
-		[2240] = 17,                             -- Mirage Raceway
-		[2303] = 18,                             -- Windbreak Canyon
-		[3037] = 19,                             -- Ironstone Camp
-		[3038] = 20,                             -- Weazel's Crater
-		[3039] = 21,                             -- Tahonda Ruins
-	},
 	[490] = {                                    -- Un'Goro Crater
 		[537] = 1,                               -- Fire Plume Ridge
 		[538] = 2,                               -- Lakkari Tar Pits
@@ -5058,6 +5035,31 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2757] = 44,                             -- Shrine of the Fallen Warrior
 		]]--
 	},
+	[1249] = {	-- Thousand Needles
+		["190:190:31:155"] = 482,	-- Highperch
+		["205:195:259:131"] = 2097,	-- Darkcloud Pinnacle
+		["210:180:205:70"] = 485,	-- The Great Lift
+		["210:190:357:264"] = 484,	-- Freewind Post
+		["210:195:391:192"] = 481,	-- Splithoof Crag
+		["240:220:492:250"] = 2303,	-- Windbreak Canyon
+		["250:240:179:200"] = 483,	-- The Screeching Canyon
+		["305:310:0:0"] = 480,		-- Camp E'thok
+		["320:365:610:300"] = 439,	-- The Shimmering Flats
+		--[[
+		[479] = 2,                               -- The Rustmaul Dig Site
+		[486] = 9,                               -- Galak Hold
+		[487] = 10,                              -- Roguefeather Den/
+		[488] = 11,                              -- The Weathered Nook
+		[1557] = 12,                             -- Splithoof Hold
+		[2237] = 14,                             -- Whitereach Post
+		[2238] = 15,                             -- Gornia
+		[2239] = 16,                             -- Zane's Eye Crater
+		[2240] = 17,                             -- Mirage Raceway
+		[3037] = 19,                             -- Ironstone Camp
+		[3038] = 20,                             -- Weazel's Crater
+		[3039] = 21,                             -- Tahonda Ruins
+		]]
+	},
 	
 	[1205] = {
 		["160:175:225:478"] = 1,
@@ -5401,26 +5403,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["300:240:92:82"] = 14,
 		["350:360:611:230"] = 15,
 	},
-	
-	
-	[1249] = {
-		["190:190:31:155"] = 1,
-		["205:195:259:131"] = 2,
-		["210:180:205:70"] = 3,
-		["210:190:357:264"] = 4,
-		["210:195:391:192"] = 5,
-		["240:220:492:250"] = 6,
-		["250:240:179:200"] = 7,
-		["305:310:0:0"] = 8,
-		["320:365:610:300"] = 9,
-	},
-	
-	
-	
-	
-	
-	
-	
 	[1261] = {
 		["285:285:582:67"] = 1,
 		["295:270:367:178"] = 2,
@@ -5430,7 +5412,6 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["345:285:367:380"] = 6,
 		["570:265:160:6"] = 7,
 	},
-	
 	[1266] = {
 		["125:165:611:242"] = 1,
 		["145:125:617:158"] = 2,
@@ -5701,12 +5682,11 @@ app.ExplorationClass = {
 					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
 					if hash == t.hash then
 						local texture = info.fileDataIDs[1];
-						rawset(t, "preview", info.texture);
+						rawset(t, "preview", texture);
 						return texture;
 					end
 				end
 			end
-			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
 		elseif key == "artID" then
 			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
 		elseif key == "mapID" then
@@ -7878,7 +7858,7 @@ local function RowOnEnter(self)
 		if not GameTooltipModel:TrySetModel(reference) then
 			local texture = reference.preview or reference.icon;
 			if texture then
-				if reference.explorationID and reference.hash then
+				if reference.explorationID and reference.hash and reference.preview then
 					local width, height, offsetX, offsetY = strsplit(":", reference.hash);
 					GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
 				else
