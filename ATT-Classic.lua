@@ -4790,32 +4790,20 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1214] = {	-- Hillsbrad Forest
-		["125:100:109:482"] = 1,
-		["165:200:175:275"] = 2,
-		["205:155:414:154"] = 3,
-		["215:240:541:236"] = 4,
-		["220:310:509:0"] = 5,
-		["230:320:524:339"] = 6,
-		["235:270:418:201"] = 7,
-		["240:275:637:294"] = 8,
-		["285:155:208:368"] = 9,
-		["288:225:2:192"] = 10,
-		["305:275:198:155"] = 11,
-		["384:365:605:75"] = 12,
+		["125:100:109:482"] = 896,	-- Purgation Isle
+		["165:200:175:275"] = 288,	-- Azurelode Mine
+		["205:155:414:154"] = 1056,	-- Darrow Hill
+		["215:240:541:236"] = 289,	-- Nethander Stead
+		["220:310:509:0"] = 272,	-- Tarren Mill
+		["230:320:524:339"] = 294,	-- Eastern Strand
+		["235:270:418:201"] = 271,	-- Southshore
+		["240:275:637:294"] = 290,	-- Dun Garok
+		["285:155:208:368"] = 295,	-- Western Strand
+		["288:225:2:192"] = 285,	-- Southpoint Tower
+		["305:275:198:155"] = 286,	-- Hillsbrad Fields
+		["384:365:605:75"] = 275,	-- Durnholde Keep
 		--[[
-		[271] = 1,                               -- Southshore
-		[272] = 2,                               -- Tarren Mill
-		[275] = 3,                               -- Durnholde Keep
-		[285] = 4,                               -- Southpoint Tower
-		[286] = 5,                               -- Hillsbrad Fields
 		[287] = 6,                               -- Hillsbrad
-		[288] = 7,                               -- Azurelode Mine
-		[289] = 8,                               -- Nethander Stead
-		[290] = 9,                               -- Dun Garok
-		[294] = 10,                              -- Eastern Strand
-		[295] = 11,                              -- Western Strand
-		[896] = 12,                              -- Purgation Isle
-		[1056] = 13,                             -- Darrow Hill
 		[1057] = 14,                             -- Thoradin's Wall
 		[2397] = 15,                             -- The Great Sea
 		]]--
