@@ -4609,34 +4609,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[736] = 23,                              -- Ban'ethil Hollow
 		[2322] = 24,                             -- The Veiled Sea
 	},
-	[215] = {                                    -- Mulgore
-		[220] = 1,                               -- Red Cloud Mesa
-		[221] = 2,                               -- Camp Narache
-		[222] = 3,                               -- Bloodhoof Village
-		[223] = 4,                               -- Stonebull Lake
-		[224] = 5,                               -- Ravaged Caravan
-		[225] = 6,                               -- Red Rocks
-		[358] = 7,                               -- Brambleblade Ravine
-		[360] = 8,                               -- The Venture Co. Mine
-		[396] = 9,                               -- Winterhoof Water Well
-		[397] = 10,                              -- Thunderhorn Water Well
-		[398] = 11,                              -- Wildmane Water Well
-		[399] = 12,                              -- Skyline Ridge
-		[404] = 13,                              -- Bael'dun Digsite
-		[470] = 14,                              -- Thunder Bluff UNUSED
-		[471] = 15,                              -- Brave Wind Mesa
-		[472] = 16,                              -- Fire Stone Mesa
-		[473] = 17,                              -- Mantle Rock
-		[474] = 18,                              -- Hunter Rise UNUSED
-		[475] = 19,                              -- Spirit RiseUNUSED
-		[476] = 20,                              -- Elder RiseUNUSED
-		[637] = 21,                              -- Kodo Rock
-		[818] = 22,                              -- Palemane Rock
-		[819] = 23,                              -- Windfury Ridge
-		[820] = 24,                              -- The Golden Plains
-		[821] = 25,                              -- The Rolling Plains
-		[2137] = 26,                             -- The Pools of VisionUNUSED
-	},
 	[267] = {                                    -- Hillsbrad Foothills
 		[271] = 1,                               -- Southshore
 		[272] = 2,                               -- Tarren Mill
@@ -4784,7 +4756,7 @@ local EXPLORATION_AREA_ID_MAP = {
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Orgrimmar" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,2000,1 do if C_Map.GetAreaInfo(areaID) == "Thunder Bluff" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -5051,21 +5023,36 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2363] = 4,                              -- Stormrage Barrow Dens
 		]]--
 	},
-	[1200] = {
-		["128:120:473:260"] = 1,
-		["128:155:379:242"] = 2,
-		["128:205:303:307"] = 3,
-		["170:128:458:369"] = 4,
-		["185:128:291:0"] = 5,
-		["205:128:395:0"] = 6,
-		["205:230:502:16"] = 7,
-		["210:180:255:214"] = 8,
-		["215:240:428:80"] = 9,
-		["225:235:532:238"] = 10,
-		["256:190:523:356"] = 11,
-		["256:200:367:303"] = 12,
-		["280:240:249:59"] = 13,
-		["470:243:270:425"] = 14,
+	[1200] = {	-- Mulgore
+		["128:120:473:260"] = 224,	-- Ravaged Caravan
+		["128:155:379:242"] = 397,	-- Thunderhorn Water Well
+		["128:205:303:307"] = 818,	-- Palemane Rock
+		["170:128:458:369"] = 396,	-- Winterhoof Water Well
+		["185:128:291:0"] = 398,	-- Wildmane Water Well
+		["205:128:395:0"] = 819,	-- Windfury Ridge
+		["205:230:502:16"] = 225,	-- Red Rocks
+		["210:180:255:214"] = 404,	-- Bael'dun Digsite
+		["215:240:428:80"] = 820,	-- The Golden Plains
+		["225:235:532:238"] = 360,	-- The Venture Co. Mine
+		["256:190:523:356"] = 821,	-- The Rolling Plains
+		["256:200:367:303"] = 222,	-- Bloodhoof Village
+		["280:240:249:59"] = 1638,	-- Thunder Bluff
+		["470:243:270:425"] = 220,	-- Red Cloud Mesa
+		--[[
+		[221] = 2,                               -- Camp Narache
+		[223] = 4,                               -- Stonebull Lake
+		[358] = 7,                               -- Brambleblade Ravine
+		[399] = 12,                              -- Skyline Ridge
+		[470] = 14,                              -- Thunder Bluff UNUSED
+		[471] = 15,                              -- Brave Wind Mesa
+		[472] = 16,                              -- Fire Stone Mesa
+		[473] = 17,                              -- Mantle Rock
+		[474] = 18,                              -- Hunter Rise UNUSED
+		[475] = 19,                              -- Spirit RiseUNUSED
+		[476] = 20,                              -- Elder RiseUNUSED
+		[637] = 21,                              -- Kodo Rock
+		[2137] = 26,                             -- The Pools of VisionUNUSED
+		]]--
 	},
 	[1202] = {
 		["100:165:564:52"] = 1,
