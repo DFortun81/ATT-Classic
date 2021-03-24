@@ -4829,33 +4829,22 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1237] = {	-- Redridge Mountains
-		["235:270:399:129"] = 1,
-		["250:250:654:161"] = 2,
-		["255:300:500:215"] = 3,
-		["275:256:277:0"] = 4,
-		["320:210:595:320"] = 5,
-		["340:195:83:197"] = 6,
-		["365:245:121:72"] = 7,
-		["365:350:0:284"] = 8,
-		["430:290:187:333"] = 9,
-		["465:255:484:361"] = 10,
-		["535:275:133:240"] = 11,
+		["235:270:399:129"] = 97,	-- Alther's Mill
+		["250:250:654:161"] = 1000,	-- Galardell Valley
+		["255:300:500:215"] = 70,	-- Stonewatch
+		["275:256:277:0"] = 996,	-- Render's Camp
+		["320:210:595:320"] = 71,	-- Stonewatch Falls
+		["340:195:83:197"] = 69,	-- Lakeshire
+		["365:245:121:72"] = 95,	-- Redridge Canyons
+		["365:350:0:284"] = 1002,	-- Three Corners
+		["430:290:187:333"] = 1001,	-- Lakeridge Highway
+		["465:255:484:361"] = 997,	-- Render's Valley
+		["535:275:133:240"] = 68,	-- Lake Everstill
 		--[[
-		[68] = 1,                                -- Lake Everstill
-		[69] = 2,                                -- Lakeshire
-		[70] = 3,                                -- Stonewatch
-		[71] = 4,                                -- Stonewatch Falls
-		[95] = 5,                                -- Redridge Canyons
 		[96] = 6,                                -- Tower of Ilgalar
-		[97] = 7,                                -- Alther's Mill
 		[98] = 8,                                -- Rethban Caverns
-		[996] = 9,                               -- Render's Camp
-		[997] = 10,                              -- Render's Valley
 		[998] = 11,                              -- Render's Rock
 		[999] = 12,                              -- Stonewatch Tower
-		[1000] = 13,                             -- Galardell Valley
-		[1001] = 14,                             -- Lakeridge Highway
-		[1002] = 15,                             -- Three Corners
 		[2099] = 16,                             -- Stonewatch Keep
 		]]--
 	},
