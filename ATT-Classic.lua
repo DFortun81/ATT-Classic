@@ -4659,65 +4659,44 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1233] = {	-- Deadwind Pass
-		["270:270:426:299"] = 1,
-		["300:245:269:337"] = 2,
-		["380:365:249:76"] = 3,
+		["270:270:426:299"] = 2561,	-- The Vice
+		["300:245:269:337"] = 2562,	-- Karazhan
+		["380:365:249:76"] = 2697,	-- Deadman's Crossing
 		--[[
 		[2558] = 1,                              -- Deadwind Ravine
 		[2559] = 2,                              -- Diamondhead River
 		[2560] = 3,                              -- Ariden's Camp
-		[2561] = 4,                              -- The Vice
-		[2562] = 5,                              -- Karazhan
 		[2563] = 6,                              -- Morgan's Plot
-		[2697] = 7,                              -- Deadman's Crossing
 		[2837] = 8,                              -- The Master's Cellar
 		[2937] = 9,                              -- Grosh'gok Compound
 		[2938] = 10,                             -- Sleeping Gorge
 		]]--
 	},
 	[1216] = {	-- Dun Morogh
-		["115:115:252:249"] = 1,
-		["125:125:217:287"] = 2,
-		["128:120:792:279"] = 3,
-		["128:128:573:280"] = 4,
-		["128:165:502:221"] = 5,
-		["128:165:759:173"] = 6,
-		["128:180:281:167"] = 7,
-		["128:190:347:163"] = 8,
-		["150:128:295:385"] = 9,
-		["155:128:522:322"] = 10,
-		["155:170:694:273"] = 11,
-		["165:165:608:291"] = 12,
-		["180:128:274:296"] = 13,
-		["180:165:166:184"] = 14,
-		["200:185:314:311"] = 15,
-		["200:200:386:294"] = 16,
-		["240:185:155:403"] = 17,
-		["315:200:397:163"] = 18,
+		["115:115:252:249"] = 137,	-- Brewnall Village
+		["125:125:217:287"] = 135,	-- Frostmane Hold
+		["128:120:792:279"] = 806,	-- South Gate Outpost
+		["128:128:573:280"] = 803,	-- Amberstill Ranch
+		["128:165:502:221"] = 138,	-- Misty Pine Refuge
+		["128:165:759:173"] = 808,	-- North Gate Outpost
+		["128:180:281:167"] = 211,	-- Iceflow Lake
+		["128:190:347:163"] = 802,	-- Shimmer Ridge
+		["150:128:295:385"] = 800,	-- Coldridge Pass
+		["155:128:522:322"] = 804,	-- The Tundrid Hills
+		["155:170:694:273"] = 212,	-- Helm's Bed Lake
+		["165:165:608:291"] = 134,	-- Gol'Bolar Quarry
+		["180:128:274:296"] = 801,	-- Chill Breeze Valley
+		["180:165:166:184"] = 133,	-- Gnomeregan
+		["200:185:314:311"] = 136,	-- The Grizzled Den
+		["200:200:386:294"] = 131,	-- Kharanos
+		["240:185:155:403"] = 132,	-- Coldridge Valley
+		["315:200:397:163"] = 809,	-- Gates of Ironforge
 		--[[
 		[77] = 1,                                -- Anvilmar
-		[131] = 2,                               -- Kharanos
-		[132] = 3,                               -- Coldridge Valley
-		[133] = 4,                               -- Gnomeregan
-		[134] = 5,                               -- Gol'Bolar Quarry
-		[135] = 6,                               -- Frostmane Hold
-		[136] = 7,                               -- The Grizzled Den
-		[137] = 8,                               -- Brewnall Village
-		[138] = 9,                               -- Misty Pine Refuge
 		[189] = 10,                              -- Steelgrill's Depot
-		[211] = 11,                              -- Iceflow Lake
-		[212] = 12,                              -- Helm's Bed Lake
 		[716] = 13,                              -- Ironband's Compound
-		[800] = 14,                              -- Coldridge Pass
-		[801] = 15,                              -- Chill Breeze Valley
-		[802] = 16,                              -- Shimmer Ridge
-		[803] = 17,                              -- Amberstill Ranch
-		[804] = 18,                              -- The Tundrid Hills
 		[805] = 19,                              -- South Gate Pass
-		[806] = 20,                              -- South Gate Outpost
 		[807] = 21,                              -- North Gate Pass
-		[808] = 22,                              -- North Gate Outpost
-		[809] = 23,                              -- Gates of Ironforge
 		[2102] = 24,                             -- Thunderbrew Distillery
 		]]--
 	},
