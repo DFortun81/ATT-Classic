@@ -4067,7 +4067,7 @@ local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExpl
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Stormwind City" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Undercity" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -4985,46 +4985,31 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1210] = {	-- Tirisfal Glades
-		["128:158:537:299"] = 1,
-		["150:128:474:327"] = 2,
-		["173:128:694:289"] = 3,
-		["174:220:497:145"] = 4,
-		["175:247:689:104"] = 5,
-		["186:128:395:277"] = 6,
-		["201:288:587:139"] = 7,
-		["211:189:746:125"] = 8,
-		["216:179:630:326"] = 9,
-		["230:205:698:362"] = 10,
-		["237:214:757:205"] = 11,
-		["243:199:363:349"] = 12,
-		["245:205:227:328"] = 13,
-		["256:156:239:250"] = 14,
-		["256:210:335:139"] = 15,
-		["315:235:463:361"] = 16,
+		["128:158:537:299"] = 159,	-- Brill
+		["150:128:474:327"] = 166,	-- Cold Hearth Manor
+		["173:128:694:289"] = 167,	-- Crusader Outpost
+		["174:220:497:145"] = 164,	-- Garren's Haunt
+		["175:247:689:104"] = 459,	-- Scarlet Watch Post
+		["186:128:395:277"] = 810,	-- Stillwater Pond
+		["201:288:587:139"] = 162,	-- Brightwater Lake
+		["211:189:746:125"] = 160,	-- Whispering Gardens
+		["216:179:630:326"] = 165,	-- Balnir Farmstead
+		["230:205:698:362"] = 152,	-- The Bulwark
+		["237:214:757:205"] = 812,	-- Venomweb Vale
+		["243:199:363:349"] = 811,	-- Nightmare Vale
+		["245:205:227:328"] = 154,	-- Deathknell
+		["256:156:239:250"] = 156,	-- Solliden Farmstead
+		["256:210:335:139"] = 157,	-- Agamand Mills
+		["315:235:463:361"] = 1497,	-- Undercity
 		--[[
-		[152] = 1,                               -- The Bulwark
 		[153] = 2,                               -- Ruins of Lordaeron
-		[154] = 3,                               -- Deathknell
 		[155] = 4,                               -- Night Web's Hollow
-		[156] = 5,                               -- Solliden Farmstead
-		[157] = 6,                               -- Agamand Mills
 		[158] = 7,                               -- Agamand Family Crypt
-		[159] = 8,                               -- Brill
-		[160] = 9,                               -- Whispering Gardens
 		[161] = 10,                              -- Terrace of Repose
-		[162] = 11,                              -- Brightwater Lake
 		[163] = 12,                              -- Gunther's Retreat
-		[164] = 13,                              -- Garren's Haunt
-		[165] = 14,                              -- Balnir Farmstead
-		[166] = 15,                              -- Cold Hearth Manor
-		[167] = 16,                              -- Crusader Outpost
 		[168] = 17,                              -- The North Coast
 		[169] = 18,                              -- Whispering Shore
 		[173] = 19,                              -- Faol's Rest
-		[459] = 20,                              -- Scarlet Watch Post
-		[810] = 21,                              -- Stillwater Pond
-		[811] = 22,                              -- Nightmare Vale
-		[812] = 23,                              -- Venomweb Vale
 		[2117] = 24,                             -- Shadow Grave
 		[2118] = 25,                             -- Brill Town Hall
 		[2119] = 26,                             -- Gallows' End Tavern
