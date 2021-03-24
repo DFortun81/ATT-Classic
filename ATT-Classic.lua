@@ -4728,29 +4728,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2256] = 16,                             -- Darkwhisper Gorge
 		[3139] = 17,                             -- Moon Horror Den
 	},
-	[1377] = {                                   -- Silithus
-		[2477] = 1,                              -- The Veiled Sea
-		[2737] = 2,                              -- The Scarab Wall
-		[2738] = 3,                              -- Southwind Village
-		[2739] = 4,                              -- Twilight Base Camp
-		[2740] = 5,                              -- The Crystal Vale
-		[2741] = 6,                              -- The Scarab Dais
-		[2742] = 7,                              -- Hive'Ashi
-		[2743] = 8,                              -- Hive'Zora
-		[2744] = 9,                              -- Hive'Regal
-		[3077] = 10,                             -- Valor's Rest
-		[3097] = 11,                             -- The Swarming Pillar
-		[3098] = 12,                             -- Twilight Post
-		[3099] = 13,                             -- Twilight Outpost
-		[3100] = 14,                             -- Ravaged Twilight Camp
-		[3257] = 15,                             -- Bones of Grakkarond
-		[3425] = 16,                             -- Cenarion Hold
-		[3426] = 17,                             -- Staghelm Point
-		[3427] = 18,                             -- Bronzebeard Encampment
-		[3446] = 19,                             -- Twilight's Run
-		[3447] = 20,                             -- Ortell's Hideout
-		[3454] = 21,                             -- Ruins of Ahn'Qiraj
-	},
 }
 
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
@@ -5054,6 +5031,32 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[2137] = 26,                             -- The Pools of VisionUNUSED
 		]]--
 	},
+	[1264] = {	-- Silithus
+		["288:256:116:413"] = 2737,	-- The Scarab Wall
+		["320:256:344:197"] = 3425,	-- Cenarion Hold
+		["320:289:104:24"] = 2740,	-- The Crystal Vale
+		["384:384:500:65"] = 2738,	-- Southwind Village
+		["384:512:97:144"] = 2743,	-- Hive'Zora
+		["512:320:265:12"] = 2742,	-- Hive'Ashi
+		["512:384:245:285"] = 2744,	-- Hive'Regal
+		--[[
+		[2477] = 1,                              -- The Veiled Sea
+		[2739] = 4,                              -- Twilight Base Camp
+		[2741] = 6,                              -- The Scarab Dais
+		[3077] = 10,                             -- Valor's Rest
+		[3097] = 11,                             -- The Swarming Pillar
+		[3098] = 12,                             -- Twilight Post
+		[3099] = 13,                             -- Twilight Outpost
+		[3100] = 14,                             -- Ravaged Twilight Camp
+		[3257] = 15,                             -- Bones of Grakkarond
+		[3426] = 17,                             -- Staghelm Point
+		[3427] = 18,                             -- Bronzebeard Encampment
+		[3446] = 19,                             -- Twilight's Run
+		[3447] = 20,                             -- Ortell's Hideout
+		[3454] = 21,                             -- Ruins of Ahn'Qiraj
+		]]--
+	},
+	
 	[1202] = {
 		["100:165:564:52"] = 1,
 		["115:110:507:294"] = 2,
@@ -5497,15 +5500,7 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["345:285:367:380"] = 6,
 		["570:265:160:6"] = 7,
 	},
-	[1264] = {
-		["288:256:116:413"] = 1,
-		["320:256:344:197"] = 2,
-		["320:289:104:24"] = 3,
-		["384:384:500:65"] = 4,
-		["384:512:97:144"] = 5,
-		["512:320:265:12"] = 6,
-		["512:384:245:285"] = 7,
-	},
+	
 	[1266] = {
 		["125:165:611:242"] = 1,
 		["145:125:617:158"] = 2,
