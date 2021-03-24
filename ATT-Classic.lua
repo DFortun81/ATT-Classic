@@ -4691,26 +4691,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2577] = 33,                             -- Dire Maul
 		[3117] = 34,                             -- Shalzaru's Lair
 	},
-	[361] = {                                    -- Felwood
-		[1761] = 1,                              -- Deadwood Village
-		[1762] = 2,                              -- Felpaw Village
-		[1763] = 3,                              -- Jaedenar
-		[1764] = 4,                              -- Bloodvenom River
-		[1765] = 5,                              -- Bloodvenom Falls
-		[1766] = 6,                              -- Shatter Scar Vale
-		[1767] = 7,                              -- Irontree Woods
-		[1768] = 8,                              -- Irontree Cavern
-		[1769] = 9,                              -- Timbermaw Hold
-		[1770] = 10,                             -- Shadow Hold
-		[1771] = 11,                             -- Shrine of the Deceiver
-		[1997] = 12,                             -- Bloodvenom Post
-		[1998] = 13,                             -- Talonbranch Glade
-		[2478] = 14,                             -- Morlos'Aran
-		[2479] = 15,                             -- Emerald Sanctuary
-		[2480] = 16,                             -- Jadefire Glen
-		[2481] = 17,                             -- Ruins of Constellas
-		[2618] = 18,                             -- Jadefire Run
-	},
 	[400] = {                                    -- Thousand Needles
 		[439] = 1,                               -- The Shimmering Flats
 		[479] = 2,                               -- The Rustmaul Dig Site
@@ -5043,6 +5023,28 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[518] = 24,                              -- Dreadmurk Shore
 		[2158] = 26,                             -- Emberstrife's Den
 		[2318] = 28,                             -- The Great Sea
+		]]--
+	},
+	[1260] = {	-- Felwood
+		["145:159:496:509"] = 2478,	-- Morlos'Aran
+		["160:145:548:90"] = 1998,	-- Talonbranch Glade
+		["165:155:332:465"] = 2480,	-- Jadefire Glen
+		["175:135:408:533"] = 1761,	-- Deadwood Village
+		["185:160:405:429"] = 2479,	-- Emerald Sanctuary
+		["195:170:330:29"] = 2618,	-- Jadefire Run
+		["215:215:420:54"] = 1767,	-- Irontree Woods
+		["235:145:292:263"] = 1765,	-- Bloodvenom Falls
+		["235:155:297:381"] = 2481,	-- Ruins of Constellas
+		["235:200:307:123"] = 1766,	-- Shatter Scar Vale
+		["240:145:483:0"] = 1762,	-- Felpaw Village
+		["245:128:271:331"] = 1763,	-- Jaedenar
+		--[[
+		[1764] = 4,                              -- Bloodvenom River
+		[1768] = 8,                              -- Irontree Cavern
+		[1769] = 9,                              -- Timbermaw Hold
+		[1770] = 10,                             -- Shadow Hold
+		[1771] = 11,                             -- Shrine of the Deceiver
+		[1997] = 12,                             -- Bloodvenom Post
 		]]--
 	},
 	[1200] = {
@@ -5511,20 +5513,7 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["220:210:449:372"] = 20,
 	},
 	
-	[1260] = {
-		["145:159:496:509"] = 1,
-		["160:145:548:90"] = 2,
-		["165:155:332:465"] = 3,
-		["175:135:408:533"] = 4,
-		["185:160:405:429"] = 5,
-		["195:170:330:29"] = 6,
-		["215:215:420:54"] = 7,
-		["235:145:292:263"] = 8,
-		["235:155:297:381"] = 9,
-		["235:200:307:123"] = 10,
-		["240:145:483:0"] = 11,
-		["245:128:271:331"] = 12,
-	},
+	
 	[1261] = {
 		["285:285:582:67"] = 1,
 		["295:270:367:178"] = 2,
