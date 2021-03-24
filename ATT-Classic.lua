@@ -4655,42 +4655,6 @@ local EXPLORATION_AREA_ID_MAP = {
 		[2397] = 15,                             -- The Great Sea
 		[2777] = 16,                             -- UNUSED Alterac Valley
 	},
-	[357] = {                                    -- Feralas
-		[489] = 1,                               -- Thalanaar
-		[1099] = 2,                              -- Camp Mojache
-		[1100] = 3,                              -- Grimtotem Compound
-		[1101] = 4,                              -- The Writhing Deep
-		[1102] = 5,                              -- Wildwind Lake
-		[1103] = 6,                              -- Gordunni Outpost
-		[1104] = 7,                              -- Mok'Gordun
-		[1105] = 8,                              -- Feral Scar Vale
-		[1106] = 9,                              -- Frayfeather Highlands
-		[1107] = 10,                             -- Idlewind Lake
-		[1108] = 11,                             -- The Forgotten Coast
-		[1109] = 12,                             -- East Pillar
-		[1110] = 13,                             -- West Pillar
-		[1111] = 14,                             -- Dream Bough
-		[1112] = 15,                             -- Jademir Lake
-		[1113] = 16,                             -- Oneiros
-		[1114] = 17,                             -- Ruins of Ravenwind
-		[1115] = 18,                             -- Rage Scar Hold
-		[1116] = 19,                             -- Feathermoon Stronghold
-		[1117] = 20,                             -- Ruins of Solarsal
-		[1118] = 21,                             -- Lower Wilds UNUSED
-		[1119] = 22,                             -- The Twin Colossals
-		[1120] = 23,                             -- Sardor Isle
-		[1121] = 24,                             -- Isle of Dread
-		[1136] = 25,                             -- High Wilderness
-		[1137] = 26,                             -- Lower Wilds
-		[2323] = 27,                             -- The Veiled Sea
-		[2518] = 28,                             -- Lariss Pavilion
-		[2519] = 29,                             -- Woodpaw Hills
-		[2520] = 30,                             -- Woodpaw Den
-		[2521] = 31,                             -- Verdantis River
-		[2522] = 32,                             -- Ruins of Isildien
-		[2577] = 33,                             -- Dire Maul
-		[3117] = 34,                             -- Shalzaru's Lair
-	},
 	[400] = {                                    -- Thousand Needles
 		[439] = 1,                               -- The Shimmering Flats
 		[479] = 2,                               -- The Rustmaul Dig Site
@@ -5045,6 +5009,44 @@ local EXPLORATION_ID_MAP = setmetatable({
 		[1770] = 10,                             -- Shadow Hold
 		[1771] = 11,                             -- Shrine of the Deceiver
 		[1997] = 12,                             -- Bloodvenom Post
+		]]--
+	},
+	[1252] = {	-- Feralas
+		["110:110:493:70"] = 1113,	-- Oneiros
+		["110:170:478:386"] = 1106,	-- Frayfeather Highlands
+		["115:115:486:329"] = 1105,	-- Feral Scar Vale
+		["120:195:623:167"] = 1100,	-- Grimtotem Compound
+		["140:165:690:141"] = 1103,	-- Gordunni Outpost
+		["145:320:404:256"] = 1108,	-- The Forgotten Coast
+		["150:125:454:0"] = 1111,	-- Dream Bough
+		["155:160:689:233"] = 1099,	-- Camp Mojache
+		["180:180:208:234"] = 1120,	-- Sardor Isle
+		["190:155:305:0"] = 1114,	-- Ruins of Ravenwind
+		["190:250:540:320"] = 2522,	-- Ruins of Isildien
+		["215:293:192:375"] = 1121,	-- Isle of Dread
+		["225:180:751:198"] = 1137,	-- Lower Wilds
+		["230:195:454:201"] = 2577,	-- Dire Maul
+		["240:220:618:298"] = 1101,	-- The Writhing Deep
+		["285:245:319:75"] = 1119,	-- The Twin Colossals
+		--[[
+		[489] = 1,                               -- Thalanaar
+		[1102] = 5,                              -- Wildwind Lake
+		[1104] = 7,                              -- Mok'Gordun
+		[1107] = 10,                             -- Idlewind Lake
+		[1109] = 12,                             -- East Pillar
+		[1110] = 13,                             -- West Pillar
+		[1112] = 15,                             -- Jademir Lake
+		[1115] = 18,                             -- Rage Scar Hold
+		[1116] = 19,                             -- Feathermoon Stronghold
+		[1117] = 20,                             -- Ruins of Solarsal
+		[1118] = 21,                             -- Lower Wilds UNUSED
+		[1136] = 25,                             -- High Wilderness
+		[2323] = 27,                             -- The Veiled Sea
+		[2518] = 28,                             -- Lariss Pavilion
+		[2519] = 29,                             -- Woodpaw Hills
+		[2520] = 30,                             -- Woodpaw Den
+		[2521] = 31,                             -- Verdantis River
+		[3117] = 34,                             -- Shalzaru's Lair
 		]]--
 	},
 	[1200] = {
@@ -5471,24 +5473,7 @@ local EXPLORATION_ID_MAP = setmetatable({
 		["320:275:553:197"] = 11,
 	},
 	
-	[1252] = {
-		["110:110:493:70"] = 1,
-		["110:170:478:386"] = 2,
-		["115:115:486:329"] = 3,
-		["120:195:623:167"] = 4,
-		["140:165:690:141"] = 5,
-		["145:320:404:256"] = 6,
-		["150:125:454:0"] = 7,
-		["155:160:689:233"] = 8,
-		["180:180:208:234"] = 9,
-		["190:155:305:0"] = 10,
-		["190:250:540:320"] = 11,
-		["215:293:192:375"] = 12,
-		["225:180:751:198"] = 13,
-		["230:195:454:201"] = 14,
-		["240:220:618:298"] = 15,
-		["285:245:319:75"] = 16,
-	},
+	
 	
 	[1254] = {
 		["110:140:611:147"] = 1,
