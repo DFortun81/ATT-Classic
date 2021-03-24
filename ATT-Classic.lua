@@ -4809,33 +4809,22 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1236] = {	-- Loch Modan
-		["195:250:109:370"] = 1,
-		["230:300:125:12"] = 2,
-		["235:270:229:11"] = 3,
-		["255:285:215:348"] = 4,
-		["256:230:217:203"] = 5,
-		["290:175:339:11"] = 6,
-		["295:358:309:310"] = 7,
-		["315:235:542:48"] = 8,
-		["320:410:352:87"] = 9,
-		["345:256:482:321"] = 10,
-		["370:295:546:199"] = 11,
+		["195:250:109:370"] = 924,	-- Valley of Kings
+		["230:300:125:12"] = 838,	-- North Gate Pass
+		["235:270:229:11"] = 149,	-- Silver Stream Mine
+		["255:285:215:348"] = 923,	-- Stonesplinter Valley
+		["256:230:217:203"] = 144,	-- Thelsamar
+		["290:175:339:11"] = 146,	-- Stonewrought Dam
+		["295:358:309:310"] = 936,	-- Grizzlepaw Ridge
+		["315:235:542:48"] = 143,	-- Mo'grosh Stronghold
+		["320:410:352:87"] = 556,	-- The Loch
+		["345:256:482:321"] = 142,	-- Ironband's Excavation Site
+		["370:295:546:199"] = 147,	-- The Farstrider Lodge
 		--[[
-		[142] = 1,                               -- Ironband's Excavation Site
-		[143] = 2,                               -- Mo'grosh Stronghold
-		[144] = 3,                               -- Thelsamar
 		[145] = 4,                               -- Algaz Gate
-		[146] = 5,                               -- Stonewrought Dam
-		[147] = 6,                               -- The Farstrider Lodge
-		[149] = 7,                               -- Silver Stream Mine
-		[556] = 8,                               -- The Loch
 		[837] = 9,                               -- Dun Algaz
-		[838] = 10,                              -- North Gate Pass
 		[839] = 11,                              -- South Gate Pass
-		[923] = 12,                              -- Stonesplinter Valley
-		[924] = 13,                              -- Valley of Kings
 		[925] = 14,                              -- Algaz Station
-		[936] = 15,                              -- Grizzlepaw Ridge
 		[2101] = 16,                             -- Stoutlager Inn
 		]]--
 	},
