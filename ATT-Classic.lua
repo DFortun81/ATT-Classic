@@ -4067,7 +4067,7 @@ local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExpl
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
--- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Dun Baldar" then print("Area ID: ", areaID); end end
+-- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Darkshire" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
 	local exploration = {};
 	rawset(t, artID, exploration);
@@ -4701,38 +4701,25 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1235] = {	-- Duskwood
-		["160:330:19:132"] = 1,
-		["195:145:102:302"] = 2,
-		["200:175:653:120"] = 3,
-		["220:220:690:353"] = 4,
-		["220:340:504:117"] = 5,
-		["235:250:390:382"] = 6,
-		["250:230:539:369"] = 7,
-		["255:285:243:348"] = 8,
-		["275:250:55:342"] = 9,
-		["315:280:631:162"] = 10,
-		["350:300:85:149"] = 11,
-		["360:420:298:79"] = 12,
-		["910:210:89:31"] = 13,
+		["160:330:19:132"] = 1097,	-- The Hushed Bank
+		["195:145:102:302"] = 94,	-- Raven Hill
+		["200:175:653:120"] = 1098,	-- Manor Mistmantle
+		["220:220:690:353"] = 121,	-- Tranquil Gardens Cemetery
+		["220:340:504:117"] = 242,	-- Brightwood Grove
+		["235:250:390:382"] = 245,	-- The Yorgen Farmstead
+		["250:230:539:369"] = 241,	-- The Rotting Orchard
+		["255:285:243:348"] = 93,	-- Vul'Gol Ogre Mound
+		["275:250:55:342"] = 536,	-- Addle's Stead
+		["315:280:631:162"] = 42,	-- Darkshire
+		["350:300:85:149"] = 492,	-- Raven Hill Cemetery
+		["360:420:298:79"] = 856,	-- Twilight Grove
+		["910:210:89:31"] = 799,	-- The Darkened Bank
 		--[[
 		[13] = 1,                                -- The World Tree
 		[32] = 2,                                -- The Cemetary
-		[42] = 3,                                -- Darkshire
-		[93] = 4,                                -- Vul'Gol Ogre Mound
-		[94] = 5,                                -- Raven Hill
-		[121] = 6,                               -- Tranquil Gardens Cemetery
-		[241] = 7,                               -- The Rotting Orchard
-		[242] = 8,                               -- Brightwood Grove
 		[243] = 9,                               -- Forlorn Rowe
 		[244] = 10,                              -- The Whipple Estate
-		[245] = 11,                              -- The Yorgen Farmstead
-		[492] = 12,                              -- Raven Hill Cemetery
-		[536] = 13,                              -- Addle's Stead
 		[576] = 14,                              -- Beggar's Haunt
-		[799] = 15,                              -- The Darkened Bank
-		[856] = 16,                              -- Twilight Grove
-		[1097] = 17,                             -- The Hushed Bank
-		[1098] = 18,                             -- Manor Mistmantle
 		[2098] = 19,                             -- Dawning Wood Catacombs
 		[2161] = 20,                             -- Roland's Doom
 		]]--
@@ -5547,7 +5534,7 @@ app.ExplorationClass = {
 		if key == "key" then
 			return "explorationID";
 		elseif key == "text" then
-			return (t.explorationID < 50 and t.hash) or C_Map.GetAreaInfo(t.explorationID) or t.hash or t.explorationID;
+			return (t.explorationID < 40 and t.hash) or C_Map.GetAreaInfo(t.explorationID) or t.hash or t.explorationID;
 		elseif key == "icon" then
 			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
 		elseif key == "preview" then
