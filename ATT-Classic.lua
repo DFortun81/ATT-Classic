@@ -5038,39 +5038,24 @@ local EXPLORATION_ID_MAP = setmetatable({
 		]]--
 	},
 	[1240] = {	-- Westfall
-		["165:200:488:0"] = 1,
-		["195:240:442:241"] = 2,
-		["200:185:208:375"] = 3,
-		["200:240:524:252"] = 4,
-		["210:215:387:11"] = 5,
-		["215:215:307:29"] = 6,
-		["220:200:317:331"] = 7,
-		["225:205:328:148"] = 8,
-		["225:210:459:105"] = 9,
-		["225:256:220:102"] = 10,
-		["256:175:339:418"] = 11,
-		["280:190:205:467"] = 12,
-		["288:235:523:377"] = 13,
-		["305:210:204:260"] = 14,
+		["165:200:488:0"] = 916,	-- The Jansen Stead
+		["195:240:442:241"] = 108,	-- Sentinel Hill
+		["200:185:208:375"] = 921,	-- Demont's Place
+		["200:240:524:252"] = 917,	-- The Dead Acre
+		["210:215:387:11"] = 109,	-- Furlbrow's Pumpkin Farm
+		["215:215:307:29"] = 111,	-- Jangolode Mine
+		["220:200:317:331"] = 20,	-- Moonbrook
+		["225:205:328:148"] = 918,	-- The Molsen Farm
+		["225:210:459:105"] = 107,	-- Saldean's Farm
+		["225:256:220:102"] = 113,	-- Gold Coast Quarry
+		["256:175:339:418"] = 920,	-- The Dagger Hills
+		["280:190:205:467"] = 115,	-- Westfall Lighthouse
+		["288:235:523:377"] = 922,	-- The Dust Plains
+		["305:210:204:260"] = 219,	-- Alexston Farmstead
 		--[[
 		[2] = 1,                                 -- Longshore
-		[20] = 2,                                -- Moonbrook
 		[26] = 3,                                -- Lighthouse
-		[107] = 4,                               -- Saldean's Farm
-		[108] = 5,                               -- Sentinel Hill
-		[109] = 6,                               -- Furlbrow's Pumpkin Farm
-		[111] = 7,                               -- Jangolode Mine
-		[113] = 8,                               -- Gold Coast Quarry
-		[115] = 9,                               -- Westfall Lighthouse
-		[219] = 10,                              -- Alexston Farmstead
-		[916] = 11,                              -- The Jansen Stead
-		[917] = 12,                              -- The Dead Acre
-		[918] = 13,                              -- The Molsen Farm
 		[919] = 14,                              -- Stendel's Pond
-		[920] = 15,                              -- The Dagger Hills
-		[921] = 16,                              -- Demont's Place
-		[922] = 17,                              -- The Dust Plains
-		[1518] = 18,                             -- Not Used Deadmines
 		[2364] = 19,                             -- The Great Sea
 		]]--
 	},
