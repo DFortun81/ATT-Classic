@@ -3652,6 +3652,11 @@ app.BaseFaction = {
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
 				return 1;
 			end
+			
+			-- If your reputation is higher than the maximum for a different faction, passively collect this reputation.
+			if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+				return 2;
+			end
 		elseif key == "title" then
 			return _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "icon" then
@@ -3659,6 +3664,9 @@ app.BaseFaction = {
 		elseif key == "standing" then
 			return select(3, GetFactionInfoByID(t.factionID)) or 4;
 		elseif key == "maxstanding" then
+			if t.minReputation and t.minReputation[1] == t.factionID then
+				return app.GetFactionStanding(t.minReputation[2]);
+			end
 			return 8;
 		elseif key == "description" then
 			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
@@ -7332,30 +7340,39 @@ local function RowOnEnter(self)
 		if reference.factionID and app.Settings:GetTooltipSetting("factionID") then GameTooltip:AddDoubleLine(L["FACTION_ID"], tostring(reference.factionID)); end
 		if reference.minReputation and not reference.maxReputation then
 			local standingId, offset = app.GetFactionStanding(reference.minReputation[2])
-			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
 			local msg = "Requires a minimum standing of"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. factionName .. "."
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.maxReputation and not reference.minReputation then
 			local standingId, offset = app.GetFactionStanding(reference.maxReputation[2])
-			local factionName = GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction";
 			local msg = "Requires a standing lower than"
 			if offset ~= 0 then msg = msg .. " " .. offset end
-			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. factionName .. "."
+			msg = msg .. " " .. app.GetFactionStandingText(standingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
 			GameTooltip:AddLine(msg);
 		end
 		if reference.minReputation and reference.maxReputation then
 			local minStandingId, minOffset = app.GetFactionStanding(reference.minReputation[2])
 			local maxStandingId, maxOffset = app.GetFactionStanding(reference.maxReputation[2])
-			local factionName = GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction";
-			local msg = "Requires a standing between"
-			if minOffset ~= 0 then msg = msg .. " " .. minOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
-			if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
-			msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. factionName .. ".";
-			GameTooltip:AddLine(msg);
+			if reference.maxReputation[1] == reference.minReputation[1] then
+				local msg = "Requires a standing between"
+				if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+				msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " and"
+				if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+				msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. ".";
+				GameTooltip:AddLine(msg);
+			else
+				local msg = "Requires a minimum standing of"
+				if minOffset ~= 0 then msg = msg .. " " .. minOffset end
+				msg = msg .. " " .. app.GetFactionStandingText(minStandingId) .. " with " .. (GetFactionInfoByID(reference.minReputation[1]) or "the opposite faction") .. "."
+				GameTooltip:AddLine(msg);
+				
+				msg = "Requires a standing lower than"
+				if maxOffset ~= 0 then msg = msg .. " " .. maxOffset end
+				msg = msg .. " " .. app.GetFactionStandingText(maxStandingId) .. " with " .. (GetFactionInfoByID(reference.maxReputation[1]) or "the opposite faction") .. "."
+				GameTooltip:AddLine(msg);
+			end
 		end
 		if reference.objectID and app.Settings:GetTooltipSetting("objectID") then GameTooltip:AddDoubleLine(L["OBJECT_ID"], tostring(reference.objectID)); end
 		if reference.spellID then
@@ -7385,7 +7402,7 @@ local function RowOnEnter(self)
 		if reference.mapID and app.Settings:GetTooltipSetting("mapID") then GameTooltip:AddDoubleLine(L["MAP_ID"], tostring(reference.mapID)); end
 		if reference.explorationID and app.Settings:GetTooltipSetting("explorationID") then GameTooltip:AddDoubleLine(L["EXPLORATION_ID"], tostring(reference.explorationID)); end
 		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
-		if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
+		--if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
 			local currentMapID, j, str = app.GetCurrentMapID(), 0;
 			for i,coord in ipairs(reference.coords) do
