@@ -83,12 +83,9 @@ _.Zones =
 					},
 				}),
 				q(635, {	-- Crystal in the Mountains
-					["lvl"] = 30,
 					["provider"] = { "i", 4614 },  -- Pendant of Myzrael
-					["isBreadcrumb"] = true,
-					["altQuests"] = {
-						642,	-- The Princess Trapped
-					},
+					["description"] = "If you miss out on picking up the necklace first, you can still complete this quest even after finishing the rest of the chain.",
+					["lvl"] = 30,
 				}),
 				q(667, {	-- Death From Below
 					["qg"] = 2610,	-- Shakes O'Breen <Blackwater Raiders>
