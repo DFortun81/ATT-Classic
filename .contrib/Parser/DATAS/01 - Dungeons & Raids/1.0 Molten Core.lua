@@ -62,7 +62,7 @@ _.Instances = {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!\n\nNOTE: Can be looted to Mages and Warlocks despite what the tooltip for the Bindings themselves say, however, during Classic WoW, it might be more optimal in the hands of a Warrior or Paladin Tank. As such, ATT will continue to not display this legendary for Mages or Warlocks to prevent unnecessary completion drama.",
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
 					["lvl"] = 60,
@@ -111,7 +111,7 @@ _.Instances = {
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
 					["sourceQuest"] = 7786,	-- Thunderaan the Windseeker
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
 					["lvl"] = 60,
@@ -151,7 +151,7 @@ _.Instances = {
 					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER },
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 					["cost"] = {
 						{ "i", 17771, 10 },	-- Elementium Bar x10
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
@@ -398,7 +398,11 @@ _.Instances = {
 				i(19147),	-- Ring of Spell Power
 			}),
 			n(12057, {	-- Garr
-				i(18564),	-- Bindings of the Windseeker (Right)
+				{
+					["itemID"] = 18564,	-- Bindings of the Windseeker (Right)
+					["questID"] = 7786,	-- Thunderaan the Windseeker
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+				},
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
 				i(18832),	-- Brutality Blade
@@ -447,7 +451,11 @@ _.Instances = {
 				i(19147),	-- Ring of Spell Power
 			}),
 			n(12056, {	-- Baron Geddon
-				i(18563),	-- Bindings of the Windseeker (Left)
+				{
+					["itemID"] = 18563,	-- Bindings of the Windseeker (Left)
+					["questID"] = 7786,	-- Thunderaan the Windseeker
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+				},
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
 				i(16797),	-- Arcanist Mantle (Mage)
