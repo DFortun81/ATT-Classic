@@ -547,21 +547,11 @@ _.Instances = {
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
 					["questID"] = 7786,	-- Thunderaan the Windseeker
-					["classes"] = {
-						4,	-- Rogue
-						3,  -- Hunter
-						2,	-- Paladin
-						1,	-- Warrior
-					},
+					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 				}),
 				{	-- Eye of Sulfuras
 					["itemID"] = 17204,	-- Eye of Sulfuras
-					["classes"] = {
-						11,	-- Druid
-						2,	-- Paladin
-						7,	-- Shaman
-						1,	-- Warrior
-					},
+					["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
 					["cost"] = {
 						{ "i", 17193, 1 },	-- Sulfuron Hammer
 					},
