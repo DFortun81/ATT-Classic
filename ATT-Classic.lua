@@ -5421,15 +5421,6 @@ app.BaseFlightPath = {
 			if qg then return { qg }; end
 		elseif key == "mapID" then
 			return t.info.mapID;
-		elseif key == "races" then
-			local faction = t.info.faction;
-			if faction and faction > 0 then
-				if faction == Enum.FlightPathFaction.Horde then
-					return {2,5,6,8};
-				else
-					return {1,3,4,7};
-				end
-			end
 		elseif key == "nmc" then
 			local c = t.info.c;
 			if c and not containsValue(c, app.ClassIndex) then
@@ -5438,11 +5429,14 @@ app.BaseFlightPath = {
 			end
 			rawset(t, "nmc", false); -- "My Class"
 			return false;
-		elseif key == "nmr" then
+		elseif key == "r" then
 			local faction = t.info.faction;
 			if faction and faction > 0 then
-				return faction ~= app.FactionID;
+				return faction;
 			end
+		elseif key == "nmr" then
+			local r = t.r;
+			return r and r ~= app.FactionID;
 		elseif key == "info" then
 			local info = app.FlightPathDB[t.flightPathID];
 			if info then
@@ -7521,8 +7515,11 @@ local function RowOnEnter(self)
 		if reference.c and app.Settings:GetTooltipSetting("ClassRequirements") then
 			local str = "";
 			for i,cl in ipairs(reference.c) do
-				if i > 1 then str = str .. ", "; end
-				str = str .. C_CreatureInfo.GetClassInfo(cl).className;
+				local info = C_CreatureInfo.GetClassInfo(cl);
+				if info then
+					if i > 1 then str = str .. ", "; end
+					str = str .. info.className;
+				end
 			end
 			GameTooltip:AddDoubleLine("Classes", str);
 		end
@@ -7530,8 +7527,11 @@ local function RowOnEnter(self)
 			if reference.races then
 				local str = "";
 				for i,race in ipairs(reference.races) do
-					if i > 1 then str = str .. ", "; end
-					str = str .. C_CreatureInfo.GetRaceInfo(race).raceName;
+					local info = C_CreatureInfo.GetRaceInfo(race);
+					if info then
+						if i > 1 then str = str .. "*, "; end
+						str = str .. info.raceName;
+					end
 				end
 				GameTooltip:AddDoubleLine("Races", str);
 			elseif reference.r and reference.r > 0 then
