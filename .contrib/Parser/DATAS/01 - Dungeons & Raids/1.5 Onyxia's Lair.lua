@@ -104,7 +104,10 @@ _.Instances = {
 							["coord"] = { 60.3, 13.2, WINTERSPRING },
 							["crs"] = { 14531 },	-- Artorius the Amiable
 							["groups"] = {
-								i(18955),	-- Artorius's Head
+								{
+									["itemID"] = 18955,	-- Artorius's Head
+									["questID"] = 7636,	-- Stave of the Ancients
+								},
 							},
 						}),
 						n(14534, {	-- Klinfran the Crazed
@@ -112,7 +115,10 @@ _.Instances = {
 							["coord"] = { 25.3, 65.9, BURNING_STEPPES },
 							["crs"] = { 14529 },	-- Franklin the Friendly
 							["groups"] = {
-								i(18953),	-- Klinfran's Head
+								{
+									["itemID"] = 18953,	-- Klinfran's Head
+									["questID"] = 7636,	-- Stave of the Ancients
+								},
 							},
 						}),
 						n(14533, {	-- Simone the Seductress
@@ -120,7 +126,10 @@ _.Instances = {
 							["coord"] = { 34.5, 41.1, UNGORO_CRATER },
 							["crs"] = { 14527 },	-- Simone the Inconspicuous
 							["groups"] = {
-								i(18952),	-- Simone's Head
+								{
+									["itemID"] = 18952,	-- Simone's Head
+									["questID"] = 7636,	-- Stave of the Ancients
+								},
 							},
 						}),
 						n(14530, {	-- Solenor the Slayer
@@ -128,7 +137,10 @@ _.Instances = {
 							["coord"] = { 24.7, 76.0, SILITHUS },
 							["crs"] = { 14536 },	-- Nelson the Nice
 							["groups"] = {
-								i(18954),	-- Solenor's Head
+								{
+									["itemID"] = 18954,	-- Solenor's Head
+									["questID"] = 7636,	-- Stave of the Ancients
+								},
 							},
 						}),
 						{

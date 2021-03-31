@@ -79,6 +79,17 @@ _.Zones =
 						i(13482),	-- Recipe: Transmute Air to Fire
 					},
 				}),
+				n(10667, {	-- Chromie
+					["coord"] = { 39.4, 66.8, WESTERN_PLAGUELANDS },
+					["groups"] = bubbleDown({ ["u"] = PHASE_SIX_CLASSICERA }, {
+						i(184937, {	-- Chronoboon Displacer
+							["sourceQuest"] = 4972,	-- Counting Out Time
+							["groups"] = {
+								i(184938),	-- Supercharged Chronoboon Displacer
+							},
+						}),
+					}),
+				}),
 				n(12942, {	-- Leonard Porter <Leatherworking Supplies>
 					["coord"] = { 43.0, 84.3, WESTERN_PLAGUELANDS },
 					["races"] = ALLIANCE_ONLY,

@@ -24,7 +24,7 @@ _.Zones =
 					["cr"] = 1658,	-- Captain Dargol
 				}),
 				i(2858, {	-- Darkhound Blood
-					["questID"] = 367,	-- A New Plague
+					["questID"] = 367,	-- A New Plague (1/4)
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						1548,	-- Cursed Darkhound
@@ -43,6 +43,10 @@ _.Zones =
 				i(3296, {	-- Deadman Dagger
 					["cr"] = 1916,	-- Stephen Bhartec
 				}),
+				i(13702, {	-- Doom Weed
+					["questID"] = 5482,	-- Doom Weed
+					["races"] = HORDE_ONLY,
+				}),
 				i(2876, {	-- Duskbat Pelt
 					["questID"] = 375,	-- The Chill of Death
 					["races"] = HORDE_ONLY,
@@ -58,14 +62,6 @@ _.Zones =
 						1512,	-- Duskbat
 						1553,	-- Greater Duskbat
 						1513,	-- Mangy Duskbat
-					},
-				}),
-				i(3265, {	-- Scavenger Paw
-					["questID"] = 376,	-- The Damned
-					["races"] = HORDE_ONLY,
-					["crs"] = {
-						1509,	-- Ragged Scavenger
-						1508,	-- Young Scavenger
 					},
 				}),
 				i(2834, {	-- Embalming Ichor
@@ -86,6 +82,10 @@ _.Zones =
 						1656,	-- Thurman Agamand
 						1934,	-- Tirisfal Farmer
 					},
+				}),
+				i(12737, {	-- Gloom Weed
+					["questID"] = 5481,	-- Gordo's Task
+					["races"] = HORDE_ONLY,
 				}),
 				i(3321, {	-- Gray Fur Booties
 					["cr"] = 1549,	-- Ravenous Darkhound
@@ -121,6 +121,14 @@ _.Zones =
 					["classes"] = { WARLOCK },
 					["cr"] = 1890,	-- Rattlecage Skeleton
 				}),
+				i(3265, {	-- Scavenger Paw
+					["questID"] = 376,	-- The Damned
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						1509,	-- Ragged Scavenger
+						1508,	-- Young Scavenger
+					},
+				}),
 				i(3266, {	-- Scarlet Armband
 					["questID"] = 381,	-- The Scarlet Crusade
 					["races"] = HORDE_ONLY,
@@ -149,6 +157,10 @@ _.Zones =
 				i(3260, {	-- Scarlet Initiate Robes
 					["cr"] = 1507,	-- Scarlet Initiate
 				}),
+				i(11127, {	-- Scavenged Goods
+					["questID"] = 3902,	-- Scavenging Deathknell
+					["races"] = HORDE_ONLY,
+				}),
 				i(3319, {	-- Short Sabre
 					["cr"] = 1529,	-- Bleeding Horror
 				}),
@@ -164,8 +176,12 @@ _.Zones =
 				i(2754, {	-- Tarnished Bastard Sword
 					["cr"] = 1506,	-- Scarlet Convert
 				}),
+				i(2846, {	-- Tirisfal Pumpkin
+					["questID"] = 365,	-- Fields of Grief (1/2)
+					["races"] = HORDE_ONLY,
+				}),
 				i(2872, {	-- Vicious Night Web Spider Venom
-					["questID"] = 369,	-- A New Plague
+					["questID"] = 369,	-- A New Plague (3/4)
 					["cr"] = 1555,	-- Vicious Night Web Spider
 					["races"] = HORDE_ONLY,
 				}),
@@ -176,7 +192,7 @@ _.Zones =
 					["cr"] = 1544,	-- Vile Fin Minor Oracle
 				}),
 				i(2859, {	-- Vile Fin Scale
-					["questID"] = 368,	-- A New Plague
+					["questID"] = 368,	-- A New Plague (2/4)
 					["races"] = HORDE_ONLY,
 					["crs"] = {
 						1544,	-- Vile Fin Minor Oracle

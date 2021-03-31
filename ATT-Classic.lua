@@ -9077,6 +9077,15 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 			end
 		end
+		local Sort = function(a, b)
+			if a and a.text then
+				if b and b.text then
+					return a.text < b.text;
+				end
+				return true;
+			end
+			return false;
+		end
 		self.SetMapID = function(self, mapID)
 			self.mapID = mapID;
 			self:SetVisible(true);
@@ -9235,8 +9244,18 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				end
 				
 				-- Check to see completion...
-				BuildGroups(self.data, self.data.g);
-				UpdateGroups(self.data, self.data.g);
+				local g = self.data.g;
+				BuildGroups(self.data, g);
+				UpdateGroups(self.data, g);
+				if g then
+					for i=#g,1,-1 do
+						local o = g[i];
+						if o.npcID and o.npcID == -17 and o.g then
+							table.sort(o.g, Sort);
+							break;
+						end
+					end
+				end
 			end
 			
 			-- If we don't have any map data on this area, report it to the chat window.

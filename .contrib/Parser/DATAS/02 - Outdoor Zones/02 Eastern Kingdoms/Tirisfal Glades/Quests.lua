@@ -14,7 +14,7 @@ _.Zones =
 					},
 					["lvl"] = 4,
 				}),
-				q(367, {	-- A New Plague
+				q(367, {	-- A New Plague (1/4)
 					["qg"] = 1518,	-- Apothecary Johaan
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
@@ -26,8 +26,9 @@ _.Zones =
 						i(3382),	-- Weak Troll's Blood Potion
 					},
 				}),
-				q(368, {	-- A New Plague
+				q(368, {	-- A New Plague (2/4)
 					["qg"] = 1518,	-- Apothecary Johaan
+					["sourceQuest"] = 367,	-- A New Plague (1/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -38,8 +39,9 @@ _.Zones =
 						i(3434),	-- Slumber Sand
 					},
 				}),
-				q(369, {	-- A New Plague
+				q(369, {	-- A New Plague (3/4)
 					["qg"] = 1518,	-- Apothecary Johaan
+					["sourceQuest"] = 368,	-- A New Plague (2/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -50,8 +52,9 @@ _.Zones =
 						i(3442),	-- Apprentice Sash
 					},
 				}),
-				q(492, {	-- A New Plague
+				q(492, {	-- A New Plague (4/4)
 					["qg"] = 1518,	-- Apothecary Johaan
+					["sourceQuest"] = 369,	-- A New Plague (3/4)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -69,7 +72,12 @@ _.Zones =
 					["lvl"] = 4,
 				}),
 				q(590, {	-- A Rogue's Deal
+					["qg"] = 6784,	-- Calvin Montague
+					["coord"] = { 38.2, 56.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 7628, 1 },	-- Nondescript Letter
+					},
 				}),
 				q(8, {	-- A Rogue's Deal
 					["qg"] = 6784,	-- Calvin Montague
@@ -131,6 +139,7 @@ _.Zones =
 				}),
 				q(354, {	-- Deaths in the Family
 					["qg"] = 1500,	-- Coleman Farthing
+					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 2829, 1 },	-- Gregor's Remains
@@ -166,26 +175,36 @@ _.Zones =
 					["lvl"] = 9,
 				}),
 				q(5482, {	-- Doom Weed
-					["lvl"] = 5,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10665,	-- Junior Apothecary Holland
 					["sourceQuest"] = 5481,	-- Gordo's Task
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 13702, 10 },	-- Doom Weed
+					},
+					["lvl"] = 5,
 				}),
 				q(3096, {	-- Encrypted Scroll
 					["qg"] = 1569,	-- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { ROGUE },
 				}),
-				q(365, {	-- Fields of Grief
+				q(365, {	-- Fields of Grief (1/2)
 					["qg"] = 1519,	-- Deathguard Simmer
 					["coord"] = { 40.9, 54.2, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 2846, 10 },	-- Tirisfal Pumpkin
+					},
 					["lvl"] = 4,
 				}),
-				q(407, {	-- Fields of Grief
+				q(407, {	-- Fields of Grief (2/2)
 					["qg"] = 1518,	-- Apothecary Johaan
+					["sourceQuest"] = 365,	-- Fields of Grief (1/2)
 					["coord"] = { 59.5, 52.4, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 3035, 1 },	-- Laced Pumpkin
+					},
 					["lvl"] = 4,
 				}),
 				q(359, {	-- Forsaken Duties
@@ -208,10 +227,16 @@ _.Zones =
 					["qg"] = 1569,	-- Shadow Priest Sarvis
 					["races"] = { UNDEAD },
 					["classes"] = { MAGE },
+					["cost"] = {
+						{ "i", 9574, 1 },	-- Glyphic Scroll
+					},
 				}),
 				q(5481, {	-- Gordo's Task
 					["qg"] = 10666,	-- Gordo
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 12737, 3 },	-- Gloom Weed
+					},
 					["lvl"] = 5,
 				}),
 				q(358, {	-- Graverobbers
@@ -239,6 +264,7 @@ _.Zones =
 				q(1822,  {	-- Heirloom Weapon
 					["qg"] = 1500,	-- Coleman Farthing
 					["sourceQuest"] = 1821,	-- Agamand Heirlooms
+					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
@@ -370,6 +396,9 @@ _.Zones =
 					["sourceQuest"] = 376,	-- The Damned
 					["coord"] = { 31.6, 65.6, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 11127, 6 },	-- Scavenged Goods
+					},
 					["lvl"] = 2,
 					["g"] = {
 						i(11848),	-- Flax Belt
@@ -408,6 +437,7 @@ _.Zones =
 				}),
 				q(355, {	-- Speak with Sevren
 					["qg"] = 1500,	-- Coleman Farthing
+					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 7,
 				}),
@@ -504,8 +534,20 @@ _.Zones =
 				}),
 				q(362, {	-- The Haunted Mills
 					["qg"] = 1500,	-- Coleman Farthing
+					["coord"] = { 61.73, 52.30, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 2831, 1 },	-- Devlin's Remains
+					},
 					["lvl"] = 7,
+					["g"] = {
+						{
+							["itemID"] = 2831,	-- Devlin's Remains
+							["questID"] = 362,	-- The Haunted Mills
+							["cr"] = 1657,	-- Devlin Agamand
+							["coord"] = { 47.6, 40.2, TIRISFAL_GLADES },
+						},
+					},
 				}),
 				q(357, {	-- The Lich's Identity
 					["qg"] = 1498,	-- Bethor Iceshard
@@ -520,6 +562,7 @@ _.Zones =
 				}),
 				q(426, {	-- The Mills Overrun
 					["qg"] = 1496,	-- Deathguard Dillinger
+					["sourceQuest"] = 404,	-- A Putrid Task
 					["coord"] = { 58.21, 51.45, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
@@ -610,6 +653,9 @@ _.Zones =
 					["sourceQuest"] = 382,	-- The Red Messenger
 					["coord"] = { 32.2, 66.0, TIRISFAL_GLADES },
 					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 2885, 1 },	-- Scarlet Crusade Documents
+					},
 					["lvl"] = 2,
 				}),
 				q(398, {	-- Wanted: Maggot Eye
