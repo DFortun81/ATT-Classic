@@ -842,13 +842,6 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 								i(20078),	-- Zandalar Signet of Serenity
 							},
 						}),
-						q(8182, {	-- The Hand of Rastakhan
-							["qg"] = 10460,	-- Prospector Ironboot
-							["sourceQuest"] = 8181,	-- Confront Yeh'kinya
-							["coord"] = { 66.8, 24, TANARIS },
-							["maps"] = { TANARIS },
-							["lvl"] = 40,
-						}),
 						q(8183, {	-- The Heart of Hakkar
 							["provider"] = { "i", 19802 },	-- The Heart of Hakkar
 							["groups"] = {
