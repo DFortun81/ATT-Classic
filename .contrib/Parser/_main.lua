@@ -7,7 +7,7 @@ HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -4200
 
 -- Map Constants for quick and easy replacement when we can get mapIDs on live!
 -- NOTE: All of these must be changed!
--- Raids (Custom)
+-- Raids (Classic)
 BLACKWING_LAIR = 287;
 MOLTEN_CORE = 232;
 NAXXRAMAS = 162;
@@ -16,7 +16,7 @@ RUINS_OF_AHNQIRAJ = 247;
 TEMPLE_OF_AHNQIRAJ = 320;
 ZULGURUB = 337;
 
--- Dungeons (Custom)
+-- Dungeons (Classic)
 BLACKFATHOM_DEEPS = 221;
 BLACKROCK_DEPTHS = 242;
 BLACKROCK_SPIRE = 250;
@@ -38,15 +38,44 @@ ULDAMAN = 230;
 WAILING_CAVERNS = 279;
 ZULFARRAK = 219;
 
+-- Raids (TBC)
+KARAZHAN = 350;
+GRUULS_LAIR = 330;	-- Confirmed!
+MAGTHERIDONS_LAIR = 331;	-- Confirmed!
+SERPENTSHRINE_CAVERN = 332;	-- Confirmed! 1554 also
+TEMPEST_KEEP_THE_EYE = 334;	-- Confirmed!
+THE_BATTLE_FOR_MOUNT_HYJAL = 329;
+THE_BLACK_TEMPLE = 339;	-- Confirmed!
+SUNWELL_PLATEAU = 335;
+ZULAMAN = 333;
+
+-- Dungeons (TBC)
+AUCHINDOUN_AUCHENAI_CRYPTS = 256;	-- Confirmed! 257 also
+AUCHINDOUN_MANA_TOMBS = 272;	-- Confirmed!
+AUCHINDOUN_SETHEKK_HALLS = 258;	-- Confirmed! 259 also
+AUCHINDOUN_SHADOW_LABYRINTH = 260;	-- Confirmed!
+CAVERNS_OF_TIME_BLACK_MORASS = 273;
+CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS = 274;
+COILFANG_RESERVOIR_SLAVE_PENS = 265;	-- Confirmed!
+COILFANG_RESERVOIR_STEAMVAULT = 263;	-- Confirmed!
+COILFANG_RESERVOIR_UNDERBOG = 262;	-- Confirmed!
+HELLFIRE_CITADEL_BLOOD_FURNACE = 261;	-- Confirmed!
+HELLFIRE_CITADEL_RAMPARTS = 347;	-- Confirmed!
+HELLFIRE_CITADEL_SHATTERED_HALLS = 246;	-- Confirmed!
+MAGISTERS_TERRACE = 348;
+TEMPEST_KEEP_ARCATRAZ = 269;	-- Confirmed! 270, 271 also
+TEMPEST_KEEP_BOTANICA = 266;	-- Confirmed!
+TEMPEST_KEEP_MECHANAR = 267;	-- Confirmed! 268 also
+
 -- Battlegrounds
 ALTERAC_VALLEY = 1459;
+EYE_OF_THE_STORM = 1956;
 
--- Continents
+-- World Map
 COSMIC = 947;	-- Confirmed!
-EASTERN_KINGDOMS = 1415;	-- Confirmed!
-KALIMDOR = 1414;	-- Confirmed!
 
 -- Kalimdor
+KALIMDOR = 1414;	-- Confirmed!
 ASHENVALE = 1440;	-- Confirmed!
 AZSHARA = 1447;	-- Confirmed!
 DARKSHORE = 1439;	-- Confirmed!
@@ -70,6 +99,7 @@ UNGORO_CRATER = 1449;	-- Confirmed!
 WINTERSPRING = 1452;	-- Confirmed!
 
 -- Eastern Kingdoms
+EASTERN_KINGDOMS = 1415;	-- Confirmed!
 ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
 ARATHI_HIGHLANDS = 1417;	-- Confirmed!
 BADLANDS = 1418;	-- Confirmed!
@@ -97,6 +127,25 @@ WESTERN_PLAGUELANDS = 1422;	-- Confirmed!
 WESTFALL = 1436;	-- Confirmed!
 WETLANDS = 1437;	-- Confirmed!
 
+-- Outland & TBC Additions
+OUTLAND = 1945;	-- Confirmed!
+EVERSONG_WOODS = 1941;	-- Confirmed!
+GHOSTLANDS = 1942;	-- Confirmed!
+ISLE_OF_QUELDANAS = 1957;	-- Confirmed!
+SILVERMOON_CITY = 1954;	-- Confirmed!
+AZUREMYST_ISLE = 1943;	-- Confirmed!
+BLOODMYST_ISLE = 1950;	-- Confirmed!
+AMMEN_VALE = 9997;
+THE_EXODAR = 1947;	-- Confirmed!
+HELLFIRE_PENINSULA = 1944;	-- Confirmed!
+ZANGARMARSH = 1946;	-- Confirmed!
+NAGRAND = 1951;	-- Confirmed!
+NETHERSTORM = 1953;	-- Confirmed!
+TERROKAR_FOREST = 1952;	-- Confirmed!
+SHATTRATH_CITY = 1955;	-- Confirmed!
+BLADESEDGE_MOUNTAINS = 1949;	-- Confirmed!
+SHADOWMOON_VALLEY = 1948;	-- Confirmed!
+
 -- Custom Maps
 BLACKROCK_MOUNTAIN = 35;
 CAVERNS_OF_TIME = 75;
@@ -107,10 +156,13 @@ PALADIN = 2;
 HUNTER = 3;
 ROGUE = 4;
 PRIEST = 5;
+DEATHKNIGHT = 6;
 SHAMAN = 7;
 MAGE = 8;
 WARLOCK = 9;
+MONK = 10;
 DRUID = 11;
+DEMONHUNTER = 12;
 
 ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	WARRIOR,
@@ -118,10 +170,28 @@ ALL_CLASSES = {	-- NOTE: Use this with the exclude function.
 	HUNTER,
 	ROGUE,
 	PRIEST,
+	DEATHKNIGHT,
 	SHAMAN,
 	MAGE,
 	WARLOCK,
+	MONK,
 	DRUID,
+	DEMONHUNTER,
+};
+TANKS = {
+	DEATHKNIGHT,
+	DEMONHUNTER,
+	DRUID,
+	MONK,
+	PALADIN,
+	WARRIOR
+};
+HEALERS = {
+	DRUID,
+	MONK,
+	PALADIN,
+	PRIEST,
+	SHAMAN
 };
 
 -- RACES
@@ -129,11 +199,61 @@ HUMAN = 1;
 DWARF = 3;
 NIGHTELF = 4;
 GNOME = 7;
+DRAENEI = 11;
+WORGEN = 22;
+VOIDELF = 29;
+LIGHTFORGED = 30;
+KULTIRAN = 32;
+DARKIRON = 34;
+MAGHAR = 36;
+
+PANDAREN_NEUTRAL = 24;
+PANDAREN_ALLIANCE = 25;
+PANDAREN_HORDE = 26;
 
 ORC = 2;
 UNDEAD = 5;
 TAUREN = 6;
 TROLL = 8;
+GOBLIN = 9;
+BLOODELF = 10;
+NIGHTBORNE = 27;
+HIGHMOUNTAIN = 28;
+ZANDALARI = 31;
+VULPERA = 35;
+MECHAGNOME = 37;
+
+ALLIANCE_ONLY = {
+	HUMAN,
+	DWARF,
+	NIGHTELF,
+	GNOME,
+	DRAENEI,
+	WORGEN,
+	PANDAREN_ALLIANCE,
+	VOIDELF,
+	LIGHTFORGED,
+	KULTIRAN,
+	DARKIRON,
+	MECHAGNOME,
+};
+HORDE_ONLY = {
+	ORC,
+	UNDEAD,
+	TAUREN,
+	TROLL,
+	GOBLIN,
+	BLOODELF,
+	PANDAREN_HORDE,
+	NIGHTBORNE,
+	HIGHMOUNTAIN,
+	ZANDALARI,
+	MAGHAR,
+	VULPERA,
+};
+ALL_RACES = { PANDAREN_NEUTRAL }	-- NOTE: Use this with the exclude function.
+for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
+for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 
 -- Common Custom NPCs used for headers
 COMMON_BOSS_DROPS = -1;
@@ -161,6 +281,8 @@ TAILORING = 197;
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = 1;
 REMOVED_FROM_GAME = 2;
+
+-- Classic Phases
 PHASE_ONE = 11;
 PHASE_TWO = 12;
 PHASE_THREE = 13;
@@ -174,6 +296,27 @@ PHASE_SIX = 16;
 PHASE_SIX_SCOURGE_INVASION = 1601;
 PHASE_SIX_SILITHYST = 1602;
 PHASE_SIX_CLASSICERA = 1603;
+
+-- TBC Classic Phases
+TBC_PHASE_ONE = 17;
+TBC_PHASE_TWO = 18;
+TBC_PHASE_THREE = 19;
+TBC_PHASE_FOUR = 20;
+TBC_PHASE_FIVE = 21;
+TBC_PHASE_SIX = 22;
+
+-- Wrath Classic Phases
+WRATH_PHASE_ONE = 23;
+WRATH_PHASE_TWO = 24;
+WRATH_PHASE_THREE = 25;
+WRATH_PHASE_FOUR = 26;
+WRATH_PHASE_FIVE = 27;
+WRATH_PHASE_SIX = 28;
+
+-- Cataclysm Classic Phases
+CATA_PHASE_ONE = 29;	-- NOTE: Reason for this is to show when stuff is going away eventually.
+
+-- Holiday Filters
 BREWFEST = 1000;
 CHILDRENS_WEEK = 1001;
 DAY_OF_THE_DEAD = 1002;
@@ -188,29 +331,6 @@ NOBLEGARDEN = 1010;
 PIRATES_DAY = 1011;
 
 -- Helper Tables
-ALLIANCE_ONLY = {
-	HUMAN,
-	DWARF,
-	NIGHTELF,
-	GNOME,
-};
-HORDE_ONLY = {
-	ORC,
-	UNDEAD,
-	TAUREN,
-	TROLL,
-};
-ALL_RACES = {	-- NOTE: Use this with the exclude function.
-	ORC,
-	UNDEAD,
-	TAUREN,
-	TROLL,
-	HUMAN,
-	DWARF,
-	NIGHTELF,
-	GNOME,
-};
-
 ItemClassInfo = {
 	{
 		"Soul Bag", -- [1]

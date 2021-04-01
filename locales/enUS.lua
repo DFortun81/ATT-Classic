@@ -850,6 +850,7 @@ app.L = {
 	-- If your saves aren't lining up, it's probably because Blizzard
 	-- didn't use the same localization for the instance. Sorry.
 	["SAVED_TO_DJ_INSTANCES"] = {
+		-- Classic
 		["Stormwind Stockade"] = "The Stockade";
 		["Ahn'Qiraj"] = "Temple of Ahn'Qiraj";
 		["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
@@ -858,6 +859,7 @@ app.L = {
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
 	["ZONE_TEXT_TO_MAP_ID"] = {
+		-- Classic
 		["Blackfathom Deeps"] = 221,
 		["Blackrock Depths"] = 242,
 		["Blackwing Lair"] = 287,
@@ -889,10 +891,56 @@ app.L = {
 		["Wailing Caverns"] = 279,
 		["Zul'Farrak"] = 219,
 		["Zul'Gurub"] = 337,
+		
+		-- TBC
+		["Karazhan"] = 350,
+		["Gruul's Lair"] = 330,
+		["Magtheridon's Lair"] = 331,
+		["Serpentshrine Cavern"] = 332,
+		["Tempest Keep: The Eye"] = 334,
+		["The Battle for Mount Hyjal"] = 329,
+		["The Black Temple"] = 340,
+		["Sunwell Plataeu"] = 335,
+		["Zul'Aman"] = 333,
+		["Auchindoun: Auchenai Crypts"] = 256,
+		["Auchindoun: Mana Tombs"] = 272,
+		["Auchindoun: Sethekk Halls"] = 258,
+		["Auchindoun: Shadow Labyrinth"] = 260,
+		["Caverns of Time: The Black Morass"] = 273,
+		["Caverns of Time: Old Hillsbrad Foothills"] = 274,
+		["Coilfang Reservoir: The Slave Pens"] = 265,
+		["Coilfang Reservoir: The Steamvault"] = 263,
+		["Coilfang Reservoir: The Underbog"] = 262,
+		["Magister's Terrace"] = 348,
+		["Hellfire Citadel: The Blood Furnace"] = 261,
+		["Hellfire Citadel: Hellfire Ramparts"] = 347,
+		["Hellfire Citadel: The Shattered Halls"] = 246,
+		["Tempest Keep: The Arcatraz"] = 269,
+		["Tempest Keep: The Botanica"] = 266,
+		["Tempest Keep: The Mechanar"] = 267,
 	};
 	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
+		-- Classic
 		["Ahn'Qiraj"] = 320,
 		["Gates of Ahn'Qiraj"] = 1451,
+		
+		-- TBC
+		["The Eye"] = 334,
+		["Auchenai Crypts"] = 256,
+		["Mana Tombs"] = 272,
+		["Sethekk Halls"] = 258,
+		["Shadow Labyrinth"] = 260,
+		["The Black Morass"] = 273,
+		["Old Hillsbrad Foothills"] = 274,
+		["The Slave Pens"] = 265,
+		["The Steamvault"] = 263,
+		["The Underbog"] = 262,
+		["The Blood Furnace"] = 261,
+		["Hellfire Ramparts"] = 347,
+		["The Shattered Halls"] = 246,
+		["The Arcatraz"] = 269,
+		["The Botanica"] = 266,
+		["The Mechanar"] = 267,
 	};
 
 	-- Unobtainable Listing

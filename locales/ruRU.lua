@@ -26,6 +26,49 @@ L.ZONE_TEXT_TO_MAP_ID["Ульдаман"] = 230;	-- ULDA
 L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
 L.ZONE_TEXT_TO_MAP_ID["Зул'Фаррак"] = 219;	-- ZF
 
+L.ZONE_TEXT_TO_MAP_ID["Аукиндон: Аукенайские гробницы"] = 256;	-- CRYPTS
+L.ZONE_TEXT_TO_MAP_ID["Аукиндон: Гробницы маны"] = 272;	-- MT
+L.ZONE_TEXT_TO_MAP_ID["Аукиндон: Сетеккские залы"] = 258;	-- SETH
+L.ZONE_TEXT_TO_MAP_ID["Аукиндон: Темный лабиринт"] = 260;	-- SLABS
+L.ZONE_TEXT_TO_MAP_ID["Пещеры Времени: Черные топи"] = 273;	-- BLKM
+L.ZONE_TEXT_TO_MAP_ID["Пещеры Времени: Старые предгорья Хилсбрада"] = 274;	-- OHF
+L.ZONE_TEXT_TO_MAP_ID["Coilfang Reservoir: The Slave Pens"] = 265;	-- SPENS
+L.ZONE_TEXT_TO_MAP_ID["Coilfang Reservoir: The Steamvault"] = 263;	-- SVALT
+L.ZONE_TEXT_TO_MAP_ID["Coilfang Reservoir: The Underbog"] = 262;	-- UNBOG
+L.ZONE_TEXT_TO_MAP_ID["Hellfire Citadel: The Blood Furnace"] = 261;	-- BF
+L.ZONE_TEXT_TO_MAP_ID["Hellfire Citadel: Hellfire Ramparts"] = 347;	-- RAMPS
+L.ZONE_TEXT_TO_MAP_ID["Hellfire Citadel: The Shattered Halls"] = 246;	-- SHALLS
+L.ZONE_TEXT_TO_MAP_ID["Tempest Keep: The Arcatraz"] = 269;	-- ARCA
+L.ZONE_TEXT_TO_MAP_ID["Tempest Keep: The Botanica"] = 266;	-- BOT
+L.ZONE_TEXT_TO_MAP_ID["Tempest Keep: The Mechanar"] = 267;	-- MECH
+L.ZONE_TEXT_TO_MAP_ID["Magister's Terrace"] = 348;	-- MGT
+L.ZONE_TEXT_TO_MAP_ID["Karazhan"] = 350;	-- KARA
+L.ZONE_TEXT_TO_MAP_ID["Gruul's Lair"] = 330;	-- GRUL
+L.ZONE_TEXT_TO_MAP_ID["Magtheridon's Lair"] = 331;	-- MAG
+L.ZONE_TEXT_TO_MAP_ID["Serpentshrine Cavern"] = 332;	-- SSC
+L.ZONE_TEXT_TO_MAP_ID["Крепость Бурь"] = 334;	-- TK
+L.ZONE_TEXT_TO_MAP_ID["The Battle for Mount Hyjal"] = 329;	-- HYJAL
+L.ZONE_TEXT_TO_MAP_ID["The Black Temple"] = 340;	-- BT
+L.ZONE_TEXT_TO_MAP_ID["Sunwell Plataeu"] = 335;	-- SWP
+L.ZONE_TEXT_TO_MAP_ID["Zul'Aman"] = 333;	-- ZA
+
+L.ALT_ZONE_TEXT_TO_MAP_ID["Крепость Бурь"] = 334;		-- TK
+L.ALT_ZONE_TEXT_TO_MAP_ID["Аукенайские гробницы"] = 256;	-- CRYPTS
+L.ALT_ZONE_TEXT_TO_MAP_ID["Гробницы маны"] = 272;	-- MT
+L.ALT_ZONE_TEXT_TO_MAP_ID["Сетеккские залы"] = 258;	-- SETH
+L.ALT_ZONE_TEXT_TO_MAP_ID["Темный лабиринт"] = 260;	-- SLABS
+L.ALT_ZONE_TEXT_TO_MAP_ID["Черные топи"] = 273;	-- BLKM
+L.ALT_ZONE_TEXT_TO_MAP_ID["Старые предгорья Хилсбрада"] = 274;	-- OHF
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Slave Pens"] = 265;	-- SPENS
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Steamvault"] = 263;	-- SVALT
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Underbog"] = 262;	-- UNBOG
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Blood Furnace"] = 261;	-- BF
+L.ALT_ZONE_TEXT_TO_MAP_ID["Hellfire Ramparts"] = 347;	-- RAMPS
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Shattered Halls"] = 246;	-- SHALLS
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
+L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
+
 local a = L.NPC_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
