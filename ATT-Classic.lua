@@ -6231,6 +6231,78 @@ app.CreateSpell = function(id, t)
 end
 end)();
 
+-- Tier Lib
+(function()
+	local tiers = {
+		{	-- Classic
+			["text"] = "Classic",
+			["icon"] = app.asset("Expansion_CLASSIC"),
+			["description"] = L["CLASSIC_TIER_DESC"],
+		},
+		{	-- Burning Crusade
+			["text"] = "Burning Crusade",
+			["icon"] = app.asset("Expansion_TBC"),
+			["description"] = L["TBC_TIER_DESC"],
+			["lvl"] = 55,
+		},
+		{	-- Wrath of the Lich King
+			["text"] = "Wrath of the Lich King",
+			["icon"] = app.asset("Expansion_WOLK"),
+			["description"] = L["WOTLK_TIER_DESC"],
+			["lvl"] = 65,
+		},
+		{	-- Cataclysm
+			["text"] = "Cataclysm",
+			["icon"] = app.asset("Expansion_CATA"),
+			["description"] = L["CATA_TIER_DESC"],
+			["lvl"] = 75,
+		},
+		{	-- Mists of Pandaria
+			["text"] = "Mists of Pandaria",
+			["icon"] = app.asset("Expansion_MOP"),
+			["description"] = L["MOP_TIER_DESC"],
+			["lvl"] = 82,
+		},
+		{	-- Warlords of Draenor
+			["text"] = "Warlords of Draenor",
+			["icon"] = app.asset("Expansion_WOD"),
+			["description"] = L["WOD_TIER_DESC"],
+			["lvl"] = 88,
+		},
+		{	-- Legion
+			["text"] = "Legion",
+			["icon"] = app.asset("Expansion_LEGION"),
+			["description"] = L["LEGION_TIER_DESC"],
+			["lvl"] = 98,
+		},
+		{	-- Battle of Azeroth
+			["text"] = "Battle of Azeroth",
+			["icon"] = app.asset("Expansion_BFA"),
+			["description"] = L["BFA_TIER_DESC"],
+			["lvl"] = 108,
+		},
+		{	-- Shadowlands
+			["text"] = "Shadowlands",
+			["icon"] = app.asset("Expansion_SL"),
+			["description"] = L["SL_TIER_DESC"],
+			["lvl"] = 50,
+		},
+	};
+	app.BaseTier = {
+		__index = function(t, key)
+			if key == "key" then
+				return "tierID";
+			else
+				local info = rawget(tiers, t.tierID);
+				return info and rawget(info, key);
+			end
+		end
+	};
+	app.CreateTier = function(id, t)
+		return setmetatable(constructor(id, t, "tierID"), app.BaseTier);
+	end
+end)();
+
 -- Filtering
 function app.Filter()
 	-- Meaning "Don't display."
