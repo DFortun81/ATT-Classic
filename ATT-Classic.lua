@@ -3666,7 +3666,7 @@ local fields = {
 		return "difficultyID";
 	end,
 	["text"] = function(t)
-		return (L["CUSTOM_DIFFICULTIES"] and L["CUSTOM_DIFFICULTIES"][t.difficultyID]) or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+		return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
 	end,
 	["icon"] = function(t)
 		return app.DifficultyIcons[t.difficultyID];
