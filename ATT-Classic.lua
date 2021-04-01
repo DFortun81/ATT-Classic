@@ -2776,6 +2776,17 @@ end
 	end
 end)();
 
+-- Lib Helpers
+-- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
+app.BaseObjectFields = function(fields)
+	return {
+	__index = function(t, key)
+		_cache = rawget(fields, key);
+		return _cache and _cache(t);
+	end
+};
+end
+
 -- Category Lib
 app.BaseCategory = {
 	__index = function(t, key)
@@ -3611,6 +3622,132 @@ app.CreateDeathClass = function()
 	end
 	return t;
 end
+
+-- Difficulty Lib
+(function()
+app.DifficultyColors = {
+	[2] = "ff0070dd",
+	[5] = "ff0070dd",
+	[6] = "ff0070dd",
+	[7] = "ff9d9d9d",
+	[15] = "ff0070dd",
+	[16] = "ffa335ee",
+	[17] = "ff9d9d9d",
+	[23] = "ffa335ee",
+	[24] = "ffe6cc80",
+	[33] = "ffe6cc80",
+};
+app.DifficultyIcons = {
+	[-1] = app.asset("LFR"),
+	[-2] = app.asset("Normal"),
+	[-3] = app.asset("Heroic"),
+	[-4] = app.asset("Mythic"),
+	[1] = app.asset("Normal"),
+	[2] = app.asset("Heroic"),
+	[3] = app.asset("Normal"),
+	[4] = app.asset("Normal"),
+	[5] = app.asset("Heroic"),
+	[6] = app.asset("Heroic"),
+	[7] = app.asset("LFR"),
+	[9] = app.asset("Mythic"),
+	[11] = app.asset("Normal"),
+	[12] = app.asset("Heroic"),
+	[14] = app.asset("Normal"),
+	[15] = app.asset("Heroic"),
+	[16] = app.asset("Mythic"),
+	[17] = app.asset("LFR"),
+	[18] = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	[23] = app.asset("Mythic"),
+	[24] = app.asset("Timewalking"),
+	[33] = app.asset("Timewalking"),
+};
+local fields = {
+	["key"] = function(t)
+		return "difficultyID";
+	end,
+	["text"] = function(t)
+		return (L["CUSTOM_DIFFICULTIES"] and L["CUSTOM_DIFFICULTIES"][t.difficultyID]) or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+	end,
+	["icon"] = function(t)
+		return app.DifficultyIcons[t.difficultyID];
+	end,
+	["saved"] = function(t)
+		return t.locks;
+	end,
+	["locks"] = function(t)
+		local locks = t.parent and t.parent.locks;
+		if locks then
+			if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
+				rawset(t, "locks", locks.shared);
+				return locks.shared;
+			else
+				-- Look for this difficulty's lockout.
+				for difficultyKey, lock in pairs(locks) do
+					if difficultyKey == "shared" then
+						-- ignore this one
+					elseif difficultyKey == t.difficultyID then
+						rawset(t, "locks", lock);
+						return lock;
+					end
+				end
+			end
+		end
+	end,
+	["u"] = function(t)
+		if t.difficultyID == 24 or t.difficultyID == 33 then
+			return 42;
+		end
+	end,
+	["description"] = function(t)
+		if t.difficultyID == 24 or t.difficultyID == 33 then
+			return L["WE_JUST_HATE_TIMEWALKING"];
+		end
+	end,
+};
+app.BaseDifficulty = app.BaseObjectFields(fields);
+-- app.BaseDifficulty = {
+-- 	__index = function(t, key)
+-- 		if key == "key" then
+-- 			return "difficultyID";
+-- 		elseif key == "text" then
+-- 			return L["CUSTOM_DIFFICULTIES"][t.difficultyID] or GetDifficultyInfo(t.difficultyID) or "Unknown Difficulty";
+-- 		elseif key == "icon" then
+-- 			return app.DifficultyIcons[t.difficultyID];
+-- 		elseif key == "saved" then
+-- 			return t.locks;
+-- 		elseif key == "locks" and t.parent then
+-- 			local locks = t.parent.locks;
+-- 			if locks then
+-- 				if t.parent.isLockoutShared and not (t.difficultyID == 7 or t.difficultyID == 17) then
+-- 					rawset(t, key, locks.shared);
+-- 					return locks.shared;
+-- 				else
+-- 					-- Look for this difficulty's lockout.
+-- 					for difficultyKey, lock in pairs(locks) do
+-- 						if difficultyKey == "shared" then
+-- 							-- ignore this one
+-- 						elseif difficultyKey == t.difficultyID then
+-- 							rawset(t, key, lock);
+-- 							return lock;
+-- 						end
+-- 					end
+-- 				end
+-- 			end
+-- 		elseif key == "u" then
+-- 			if t.difficultyID == 24 or t.difficultyID == 33 then
+-- 				return 42;
+-- 			end
+-- 		elseif key == "description" then
+-- 			if t.difficultyID == 24 or t.difficultyID == 33 then
+-- 				return L["WE_JUST_HATE_TIMEWALKING"];		--L["WE_JUST_HATE_TIMEWALKING"] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one."
+-- 			end
+-- 		end
+-- 	end
+-- };
+app.CreateDifficulty = function(id, t)
+	return setmetatable(constructor(id, t, "difficultyID"), app.BaseDifficulty);
+end
+end)();
 
 -- Faction Lib
 (function()
@@ -5344,7 +5481,7 @@ app.ExplorationClass = {
 		elseif key == "text" then
 			return C_Map.GetAreaInfo(t.explorationID) or t.hash;
 		elseif key == "icon" then
-			return "Interface\\Addons\\ATT-Classic\\assets\\INV_Misc_Map02";
+			return app.asset("INV_Misc_Map02");
 		elseif key == "preview" then
 			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
 			if exploredMapTextures then
