@@ -1,7 +1,7 @@
 AllTheThings = {};
 _ = AllTheThings;
 
--- Static values for minReputation/maxReputation properties. 
+-- Static values for minReputation/maxReputation properties.
 -- The values are based on a "distance from zero" to match what Blizzard tracks internally as "totalEarned" rep
 HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000
 
@@ -256,6 +256,7 @@ for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
 for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 
 -- Common Custom NPCs used for headers
+ACHIEVEMENTS = -4;
 COMMON_BOSS_DROPS = -1;
 REWARDS = -18;
 QUESTS = -17;
@@ -266,6 +267,7 @@ ZONEDROPS = 0;
 
 -- Professions
 ALCHEMY = 171;
+ARCHAEOLOGY = 794;
 BLACKSMITHING = 164;
 COOKING = 185;
 ENCHANTING = 333;
@@ -273,6 +275,8 @@ ENGINEERING = 202;
 FIRST_AID = 129;
 FISHING = 356;
 HERBALISM = 182;
+INSCRIPTION = 773;
+JEWELCRAFTING = 755;
 LEATHERWORKING = 165;
 MINING = 186;
 SKINNING = 393;
@@ -683,7 +687,10 @@ cr = creature;											-- Create a CREATURE Object (alternative shortcut)
 currency = function(id, t)								-- Create a CURRENCY Object
 	return struct("currencyID", id, t);
 end
-faction = function(id, t)								-- Create an FACTION Object
+d = function(id, t)										-- Create a DIFFICULTY Object
+	return struct("difficultyID", id, t);
+end
+faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 exploration = function(id, t)							-- Create an EXPLORATION Object
@@ -693,7 +700,7 @@ flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightPathID", id, t);
 end
 fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
-filter = function(id, t)								-- Create an FILTER Object
+filter = function(id, t)								-- Create a FILTER Object
 	return struct("f", id, t);
 end
 holiday = function(id, t)								-- Create an HOLIDAY Object
@@ -746,6 +753,9 @@ spell = function(id, t)									-- Create a SPELL Object
 	return struct("spellID", id, t);
 end
 sp = spell;												-- Create a SPELL Object (alternative shortcut)
+tier = function(id, t)									-- Create a TIER Object
+	return struct("tierID", id, t);
+end
 title = function(id, t)									-- Create a TITLE Object
 	return struct("titleID", id, t);
 end
