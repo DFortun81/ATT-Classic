@@ -1,20 +1,10 @@
 select(2, ...).FlightPathDB = {
-	[1] = {
-		name="Northshire Abbey",
-		faction=2,
-		u=1,
-	},
 	[2] = {
 		name="Stormwind, Elwynn",
 		faction=2,
 		mapID=1453,
 		coord={ 66.2, 62.4, 1453},
 		qg=352,	-- Dungar Longdrink <Gryphon Master>
-	},
-	[3] = {
-		name="Programmer Isle",
-		faction=3,	-- GMs only
-		u=1,
 	},
 	[4] = {
 		name="Sentinel Hill, Westfall",
@@ -51,12 +41,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 33.8, 50.8, 1432},
 		qg=1572,	-- Thorgrum Borrelson <Gryphon Master>
 	},
-	[9] = {
-		name="Booty Bay, Stranglethorn",
-		faction=0,
-		mapID=1434,
-		u=1
-	},
 	[10] = {
 		name="The Sepulcher, Silverpine Forest",
 		faction=1,
@@ -91,12 +75,6 @@ select(2, ...).FlightPathDB = {
 		mapID=1424,
 		coord={ 49.4, 52.4, 1424},
 		qg=2432,	-- Darla Harris <Gryphon Master>
-	},
-	[15] = {
-		name="Eastern Plaguelands",	-- The Unused Portal in the north of the zone.
-		faction=0,
-		mapID=1423,
-		u=1
 	},
 	[16] = {
 		name="Refuge Pointe, Arathi",
@@ -153,11 +131,6 @@ select(2, ...).FlightPathDB = {
 		mapID=1454,
 		coord={ 45.2, 63.8, 1454 },
 		qg=3310,	-- Doras <Wind Rider Master>
-	},
-	[24] = {
-		name="Generic, World target for Zeppelin Paths",
-		faction=3,
-		u=1,
 	},
 	[25] = {
 		name="Crossroads, The Barrens",
@@ -222,21 +195,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 36.4, 7.2, 1442 },
 		qg=4407,	-- Teloren <Hippogryph Master>
 	},
-	[34] = {
-		name="Transport, Booty Bay - Ratchet",
-		faction=0,
-		u=1,
-	},
-	[35] = {
-		name="Transport, Orgrimmar Zepplins",
-		faction=1,
-		u=1,
-	},
-	[36] = {
-		name="Generic, World target",
-		faction=3,
-		u=1,
-	},
 	[37] = {
 		name="Nijel's Point, Desolace",
 		faction=2,
@@ -300,17 +258,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 65.6, 24.4, 1419},
 		qg=8609,	-- Alexandra Constantine <Gryphon Master>
 	},
-	[46] = {
-		name="Southshore Ferry, Hillsbrad",
-		faction=2,
-		mapID=1424,
-		u=1,
-	},
-	[47] = {
-		name="Transport, Grom'gol - Orgrimmar",
-		faction=1,
-		u=1,
-	},
 	[48] = {
 		name="Bloodvenom Post, Felwood",
 		faction=1,
@@ -324,16 +271,6 @@ select(2, ...).FlightPathDB = {
 		mapID=1450,
 		coord={ 48.0, 67.2, 1450 },
 		qg=10897,	-- Sindrayl <Hippogryph Master>
-	},
-	[50] = {
-		name="Transport, Menethil Ships",
-		faction=2,
-		u=1,
-	},
-	[51] = {
-		name="Transport, Rut'theran - Auberdine",
-		faction=2,
-		u=1,
 	},
 	[52] = {
 		name="Everlook, Winterspring",
@@ -349,11 +286,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 62.2, 36.6, 1452 },
 		qg=11138,	-- Maethrya <Hippogryph Master>
 	},
-	[54] = {
-		name="Transport, Feathermoon - Feralas",
-		faction=2,
-		u=1,
-	},
 	[55] = {
 		name="Brackenwall Village, Dustwallow Marsh",
 		faction=1,
@@ -367,12 +299,6 @@ select(2, ...).FlightPathDB = {
 		mapID=1435,
 		coord={ 46.0, 54.6, 1435 },
 		qg=6026,	-- Breyk <Wind Rider Master>
-	},
-	[57] = {
-		name="Fishing Village, Teldrassil",
-		faction=2,
-		mapID=1438,
-		u=1
 	},
 	[58] = {
 		name="Zoram'gar Outpost, Ashenvale",
@@ -502,11 +428,6 @@ select(2, ...).FlightPathDB = {
 		coord={ 44.4, 59.0, 1413 },
 		qg=10378,	-- Omusa Thunderhorn <Wind Rider Master>
 	},
-	[78] = {
-		name="Naxxramas",
-		faction=0,
-		u=1,
-	},
 	[79] = {
 		name="Marshal's Refuge, Un'Goro Crater",
 		faction=0,
@@ -520,37 +441,5 @@ select(2, ...).FlightPathDB = {
 		mapID=1413,
 		coord={ 63.0, 37.0, 1413 },
 		qg=16227,	-- Bragok <Flight Master>
-	},
-	[84] = {
-		name="Plaguewood Tower, Eastern Plaguelands",
-		faction=0,
-		mapID=1423,
-		qg=17209,	-- William Kielar <Spectral Gryphon Master>
-		description="Your faction must capture all of the Towers to utilize this one-way flight point to any of the other towers.",
-		u=3,	-- Added in a later phase
-	},
-	[85] = {
-		name="Northpass Tower, Eastern Plaguelands",
-		faction=0,
-		mapID=1423,
-		qg=17209,	-- William Kielar <Spectral Gryphon Master>
-		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
-		u=3,	-- Added in a later phase
-	},
-	[86] = {
-		name="Eastwall Tower, Eastern Plaguelands",
-		faction=0,
-		mapID=1423,
-		qg=17209,	-- William Kielar <Spectral Gryphon Master>
-		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
-		u=3,	-- Added in a later phase
-	},
-	[87] = {
-		name="Crown Guard Tower, Eastern Plaguelands",
-		faction=0,
-		mapID=1423,
-		qg=17209,	-- William Kielar <Spectral Gryphon Master>
-		description="Your faction must capture all of the Towers to utilize this one-way flight point from Plaguewood Tower.",
-		u=3,	-- Added in a later phase
 	},
 };
