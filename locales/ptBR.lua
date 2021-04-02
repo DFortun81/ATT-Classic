@@ -3,7 +3,7 @@ if GetLocale() ~= "ptBR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
---TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data for all classes of your current faction.";
+--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
 
 --TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 
