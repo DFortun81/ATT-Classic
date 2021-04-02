@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = bubbleDown({ ["u"] = PHASE_THREE }, {
+_.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_THREE }, {	-- Classic
 	map(BLACKWING_LAIR, {
 		["description"] = "In the dark recesses of the mountain's peak, Nefarian, the eldest son of Deathwing, conducts some of his most awful experimentation, controlling mighty beings like puppets and combining the eggs of different dragonflights with horrific results. Should he prove successful, even darker pursuits rest on the horizon.\n\nAnd, yet, the Lord of Blackrock is not a mere scientist - he is a great dragon cornered in his lair. Can he truly be defeated by mortal hands?",
 		["sourceQuest"] = 7761,	-- Blackhand's Command
@@ -301,4 +301,4 @@ _.Instances = bubbleDown({ ["u"] = PHASE_THREE }, {
 			})
 		},
 	}),
-});
+}))};

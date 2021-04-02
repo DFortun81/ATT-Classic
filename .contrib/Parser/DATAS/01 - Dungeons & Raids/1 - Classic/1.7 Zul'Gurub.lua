@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
+_.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FOUR }, {	-- Classic
 	map(ZULGURUB, {
 		["description"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		["isRaid"] = true,
@@ -1479,4 +1479,4 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FOUR }, {
 			}),
 		},
 	}),
-});
+}))};

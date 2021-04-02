@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = {
+_.Instances = { tier(1, {	-- Classic
 	map(ULDAMAN, {
 		["description"] = "Uldaman is an ancient Titan vault buried deep within the Khaz Mountains, accessible from the Badlands. Partially excavated, it has since fallen into the hands of the Dark Iron dwarves who seek to corrupt its riches for their master, Ragnaros.",
 		["lvl"] = 35,
@@ -434,4 +434,4 @@ _.Instances = {
 			}),
 		},
 	}),
-};
+})};

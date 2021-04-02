@@ -971,6 +971,7 @@ app.L = {
 		
 		-- Future Content Releases
 		[11] = {2, "|CFFAAFFAAThis will not be available until Phase 1 of WoW Classic.|r", "Phase 1", true },
+		[1101] = {2, "|CFFAAFFAAThis became available with the Dire Maul Phase Release of WoW Classic.|r", "Dire Maul", true },
 		[12] = {2, "|CFFAAFFAAThis will not be available until Phase 2 of WoW Classic.|r", "Phase 2", true },
 		[13] = {2, "|CFFAAFFAAThis will not be available until Phase 3 of WoW Classic.|r", "Phase 3", true },
 		[14] = {2, "|CFFAAFFAAThis will not be available until Phase 4 of WoW Classic.|r", "Phase 4", true },

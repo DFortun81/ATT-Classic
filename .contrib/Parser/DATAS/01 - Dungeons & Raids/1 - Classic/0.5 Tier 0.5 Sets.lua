@@ -2,8 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
-{
+_.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 	n(-420, {	-- Tier 0.5 Sets
 		["description"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 		["groups"] = {
@@ -1761,4 +1760,4 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE },
 			}),
 		},
 	}),
-});
+}))};

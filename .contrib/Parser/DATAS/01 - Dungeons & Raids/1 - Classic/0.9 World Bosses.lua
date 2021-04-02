@@ -2,7 +2,7 @@
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
 
-_.Instances = {
+_.Instances = { tier(1, {	-- Classic
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 60,
@@ -154,4 +154,4 @@ _.Instances = {
 			
 		},
 	}),
-};
+})};

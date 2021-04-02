@@ -2080,6 +2080,7 @@ fieldCache["objectID"] = {};
 fieldCache["questID"] = {};
 fieldCache["requireSkill"] = {};
 fieldCache["spellID"] = {};
+fieldCache["tierID"] = {};
 fieldCache["titleID"] = {};
 fieldConverters = {
 	-- Simple Converters
@@ -2119,6 +2120,9 @@ fieldConverters = {
 	end,
 	["spellID"] = function(group, value)
 		CacheField(group, "spellID", value);
+	end,
+	["tierID"] = function(group, value)
+		CacheField(group, "tierID", value);
 	end,
 	["titleID"] = function(group, value)
 		CacheField(group, "titleID", value);
@@ -8370,6 +8374,40 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Prime").data = allData;
 		CacheFields(allData);
+		
+		-- Determine how many tierID instances could be found
+		local tierCounter = 0;
+		for key,value in pairs(fieldCache["tierID"]) do
+			tierCounter = tierCounter + 1;
+		end
+		if tierCounter == 1 then
+			-- Purge the Tier Objects. This is the Classic Layout style.
+			for key,values in pairs(fieldCache["tierID"]) do
+				for j,value in ipairs(values) do
+					local parent = value.parent;
+					if parent then
+						-- Remove the tier object reference.
+						for i=#parent.g,1,-1 do
+							if parent.g[i] == value then
+								table.remove(parent.g, i);
+								break;
+							end
+						end
+						
+						-- Feed the children to its parent.
+						if value.g then
+							for i,child in ipairs(value.g) do
+								child.parent = parent;
+								table.insert(parent.g, child);
+							end
+						end
+					end
+				end
+			end
+			
+			-- Wipe out the tier object cache.
+			fieldCache["tierID"] = {};
+		end
 		
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
