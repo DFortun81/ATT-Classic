@@ -46,31 +46,6 @@ local HORDE_ONLY = {
 	36,
 };
 
---[[
-local protectedAura = {
-	[22888]=true,	-- Rallying Cry of the Dragonslayer
-	[16609]=true,	-- Warchief's Blessing
-	[15366]=true,	-- Songflower Serenade
-	[24425]=true,	-- Spirit of Zandalar
-	[17538]=true,	-- Elixir of the Mongoose
-	[20875]=true,	-- Rumsey Rum
-};
-local origBuffButton_OnClick = _G["BuffButton_OnClick"];
-function BuffButton_OnClick(self, ...)
-	if self.unit == "player" then
-		local name, _, _, _, _, _, _, _, _, spellID = UnitAura(self.unit, self:GetID(), self.filter);
-		if spellID then
-			print(name, spellID);
-			if protectedAura[spellID] then
-				print("HOW ABOUT NOOOO");
-				return false;
-			end
-		end
-	end
-	return origBuffButton_OnClick(self, ...);
-end
-]]--
-
 -- Coroutine Helper Functions
 app.RawData = {};
 app.refreshing = {};
