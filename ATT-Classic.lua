@@ -3571,7 +3571,7 @@ app.BaseDeathClass = {
 		elseif key == "text" then
 			return "Total Deaths";
 		elseif key == "icon" then
-			return app.asset("Normal");
+			return app.asset("Difficulty_LFR");
 		elseif key == "progress" then
 			if t.visible then
 				return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
