@@ -6,10 +6,6 @@ _.Zones =
 	m(KALIMDOR, {
 		m(WINTERSPRING, {
 			n(QUESTS, {
-				un(NEVER_IMPLEMENTED, q(6606, {	-- A Little Luck
-					["races"] = HORDE_ONLY,
-					["lvl"] = 55,
-				})),
 				q(6605, {	-- A Strange One
 					["qg"] = 11755,	-- Harlo Wigglesworth
 					["coord"] = { 61, 38.4, WINTERSPRING },
@@ -57,10 +53,12 @@ _.Zones =
 					["lvl"] = 50,
 				}),
 				q(5055, {	-- Brumeran of the Chillwind
-					["lvl"] = 53,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5054,	-- Ursius of the Shardtooth
+					-- #if CLASSIC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					["lvl"] = 53,
 				}),
 				q(975, {	-- Cache of Mau'ari
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
@@ -183,31 +181,33 @@ _.Zones =
 					},
 				}),
 				q(4805, {	-- Ice Thistle E'ko
-					["lvl"] = 55,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["repeatable"] = true,
+					["lvl"] = 55,
 					["g"] = {
 						i(12459),	-- Juju Escape
 					},
 				}),
 				q(969, {	-- Luck Be With You
-					["lvl"] = 55,
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
+					["lvl"] = 55,
 				}),
 				q(5057, {	-- Past Endeavors
-					["lvl"] = 53,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5056,	-- Shy-Rotam
+					-- #if CLASSIC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					["lvl"] = 53,
 					["g"] = {
 						i(15704),	-- Hunter's Insignia Medal
 					},
 				}),
 				q(5981, {	-- Rampaging Giants
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["lvl"] = 58,
 				}),
 				q(5252, {	-- Remorseful Highborne
 					["qg"] = 10684,	-- Remorseful Highborne
@@ -240,14 +240,27 @@ _.Zones =
 					},
 				}),
 				q(5056, {	-- Shy-Rotam
-					["lvl"] = 53,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5055,	-- Brumeran of the Chillwind
+					["cr"] = 10737,	-- Shy-Rotam
+					-- #if CLASSIC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					["lvl"] = 53,
 					["g"] = {
 						i(15783),	-- Beasthunter Dagger
 						i(15782),	-- Beaststalker Blade
-						i(12733),	-- Sacred Frostsaber Meat
+						i(12733, {	-- Sacred Frostsaber Meat
+							["questID"] = 5056,	-- Shy-Rotam
+							["coord"] = { 49.8, 9.8, WINTERSPRING },
+							["crs"] = {
+								7431,	-- Frostsaber
+								7430,	-- Frostsaber Cub
+								7433,	-- Frostsaber Huntress
+								7434,	-- Frostsaber Pride Watcher
+								7432,	-- Frostsaber Stalker
+							},
+						}),
 					},
 				}),
 				q(5601, {	-- Sister Pamela
@@ -345,9 +358,11 @@ _.Zones =
 					["lvl"] = 49,
 				}),
 				q(5054, {	-- Ursius of the Shardtooth
-					["lvl"] = 53,
-					["races"] = HORDE_ONLY,
 					["qg"] = 10303,	-- Storm Shadowhoof
+					-- #if CLASSIC
+					["races"] = HORDE_ONLY,
+					-- #endif
+					["lvl"] = 53,
 				}),
 				q(4807, {	-- Wildkin E'ko
 					["lvl"] = 55,

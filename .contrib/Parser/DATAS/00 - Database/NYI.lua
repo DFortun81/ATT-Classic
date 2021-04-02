@@ -122,6 +122,9 @@ _.NeverImplemented =
 	q(6003),	-- <nyi> <txt> Green With Envy
 	q(6841),	-- <UNUSED>
 	
+	-- Winterspring Quests (Unused)
+	q(6606),	-- A Little Luck
+	
 	-- Retired PVP Battleground Quests
 	-- Warsong Gulch
 	i(19213),	-- Silverwing Talisman of Merit
