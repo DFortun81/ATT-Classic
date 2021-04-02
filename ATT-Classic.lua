@@ -6315,7 +6315,7 @@ end)();
 		},
 		{	-- Wrath of the Lich King
 			["text"] = "Wrath of the Lich King",
-			["icon"] = app.asset("Expansion_WOLK"),
+			["icon"] = app.asset("Expansion_WOTLK"),
 			["description"] = L["WOTLK_TIER_DESC"],
 			["lvl"] = 65,
 		},
@@ -6343,8 +6343,8 @@ end)();
 			["description"] = L["LEGION_TIER_DESC"],
 			["lvl"] = 98,
 		},
-		{	-- Battle of Azeroth
-			["text"] = "Battle of Azeroth",
+		{	-- Battle for Azeroth
+			["text"] = "Battle for Azeroth",
 			["icon"] = app.asset("Expansion_BFA"),
 			["description"] = L["BFA_TIER_DESC"],
 			["lvl"] = 108,
