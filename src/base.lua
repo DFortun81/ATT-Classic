@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---            Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)             --
+--            Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)             --
 --------------------------------------------------------------------------------
 -- This is a hidden frame that intercepts all of the event notifications that we have registered for.
 local name, app = ...;
@@ -13,7 +13,7 @@ end
 
 -- Create an Event Processor.
 local events = {};
-local _ = CreateFrame("FRAME", nil, UIParent);
+local _ = CreateFrame("FRAME", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 _:SetScript("OnEvent", function(self, e, ...) (rawget(events, e) or print)(...); end);
 _:SetPoint("BOTTOMLEFT", UIParent, "TOPLEFT", 0, 0);
 _:SetSize(1, 1);
@@ -103,15 +103,15 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 	if not popup then
 		popup = {
 			button1 = "Okay",
-			timeout = timeout,
+			timeout = timeout or 10,
 			showAlert = true,
 			whileDead = true,
 			hideOnEscape = true,
 			enterClicksFirstButton = true,
 			hasEditBox = true,
 			OnAccept = function(self)
-				if popup.callback then
-					popup.callback(self.editBox:GetText());
+				if self.callback then
+					self.callback(self.editBox:GetText());
 				end
 			end,
 			preferredIndex = 3,  -- avoid some UI taint, see http://www.wowace.com/announcements/how-to-avoid-some-ui-taint/
@@ -123,7 +123,7 @@ function app:ShowPopupDialogWithEditBox(msg, text, callback, timeout)
 		self.editBox:SetJustifyH("CENTER");
 		self.editBox:SetWidth(240);
 	end;
-	popup.text = msg or "";
+	popup.text = msg or "Ctrl+A, Ctrl+C to Copy to your Clipboard.";
 	popup.callback = callback;
 	StaticPopup_Hide ("ALL_THE_THINGS_EDITBOX");
 	StaticPopup_Show ("ALL_THE_THINGS_EDITBOX");
