@@ -243,9 +243,10 @@ settings.GetModeString = function(self)
 		mode = "Debug " .. mode;
 	else
 		if self:Get("AccountMode") then
-			mode = "Account " .. mode;
 			if self:Get("FactionMode") then
-				mode = mode .. " (Current Faction)";
+				mode = FACTION .. " " .. mode;
+			else
+				mode = "Account " .. mode;
 			end
 		end
 		
