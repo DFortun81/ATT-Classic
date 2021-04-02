@@ -5452,9 +5452,9 @@ app.events.GOSSIP_SHOW = function()
 end
 app.events.TAXIMAP_OPENED = function()
 	local nodes = {};
+	-- Refresh the current location.
+	app.CurrentMapID = app.GetCurrentMapID();
 	if app.CacheFlightPathDataForTarget(nodes) == 0 then
-		-- Refresh the current location.
-		app.CurrentMapID = app.GetCurrentMapID();
 		if app.CacheFlightPathDataForMap(app.CurrentMapID, nodes) == 0 then
 			print("Failed to find nearest Flight Path. Please report this to the ATT Discord!");
 			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
@@ -5467,7 +5467,7 @@ app.events.TAXIMAP_OPENED = function()
 		end
 	end
 	
-	local allNodeData = C_TaxiMap.GetAllTaxiNodes(GetTaxiMapID());
+	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.CurrentMapID);
 	if allNodeData then
 		for j,nodeData in ipairs(allNodeData) do
 			if nodeData.state and nodeData.state < 2 then

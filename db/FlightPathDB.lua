@@ -211,17 +211,17 @@ select(2, ...).FlightPathDB = {
 	},
 	[39] = {
 		name="Gadgetzan, Tanaris",
-		faction=1,
-		mapID=1446,
-		coord={ 51.6, 26.6, 1446 },
-		qg=7824,	-- Bulkrek Ragefist <Wind Rider Master>
-	},
-	[40] = {
-		name="Gadgetzan, Tanaris",
 		faction=2,
 		mapID=1446,
 		coord={ 51.0, 29.2, 1446 },
 		qg=7823,	-- Bera Stonehammer <Gryphon Master>
+	},
+	[40] = {
+		name="Gadgetzan, Tanaris",
+		faction=1,
+		mapID=1446,
+		coord={ 51.6, 26.6, 1446 },
+		qg=7824,	-- Bulkrek Ragefist <Wind Rider Master>
 	},
 	[41] = {
 		name="Feathermoon, Feralas",
@@ -274,17 +274,17 @@ select(2, ...).FlightPathDB = {
 	},
 	[52] = {
 		name="Everlook, Winterspring",
-		faction=1,
-		mapID=1452,
-		coord={ 60.4, 36.4, 1452 },
-		qg=11139,	-- Yugrek <Wind Rider Master>
-	},
-	[53] = {
-		name="Everlook, Winterspring",
 		faction=2,
 		mapID=1452,
 		coord={ 62.2, 36.6, 1452 },
 		qg=11138,	-- Maethrya <Hippogryph Master>
+	},
+	[53] = {
+		name="Everlook, Winterspring",
+		faction=1,
+		mapID=1452,
+		coord={ 60.4, 36.4, 1452 },
+		qg=11139,	-- Yugrek <Wind Rider Master>
 	},
 	[55] = {
 		name="Brackenwall Village, Dustwallow Marsh",
@@ -353,17 +353,17 @@ select(2, ...).FlightPathDB = {
 	},
 	[67] = {
 		name="Light's Hope Chapel, Eastern Plaguelands",
-		faction=1,
-		mapID=1423,
-		coord={ 80.2, 57.0, 1423 },
-		qg=12636,	-- Georgia <Bat Handler>
-	},
-	[68] = {
-		name="Light's Hope Chapel, Eastern Plaguelands",
 		faction=2,
 		mapID=1423,
 		coord={ 81.6, 59.2, 1423},
 		qg=12617,	-- Khaelyn Steelwing <Gryphon Master>
+	},
+	[68] = {
+		name="Light's Hope Chapel, Eastern Plaguelands",
+		faction=1,
+		mapID=1423,
+		coord={ 80.2, 57.0, 1423 },
+		qg=12636,	-- Georgia <Bat Handler>
 	},
 	[69] = {
 		name="Moonglade",
@@ -402,17 +402,17 @@ select(2, ...).FlightPathDB = {
 	},
 	[74] = {
 		name="Thorium Point, Searing Gorge",
-		faction=1,
-		mapID=1427,
-		coord={ 34.8, 30.6, 1427},
-		qg=3305,	-- Grisha <Wind Rider Master>
-	},
-	[75] = {
-		name="Thorium Point, Searing Gorge",
 		faction=2,
 		mapID=1427,
 		coord={ 37.8, 30.6, 1427},
 		qg=2941,	-- Lanie Reed <Gryphon Master>
+	},
+	[75] = {
+		name="Thorium Point, Searing Gorge",
+		faction=1,
+		mapID=1427,
+		coord={ 34.8, 30.6, 1427},
+		qg=3305,	-- Grisha <Wind Rider Master>
 	},
 	[76] = {
 		name="Revantusk Village, The Hinterlands",
