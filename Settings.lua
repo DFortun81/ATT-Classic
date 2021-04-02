@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local app = select(2, ...);
 local L = app.L;
@@ -30,7 +30,7 @@ BINDING_NAME_ATTC_REROLL_RANDOM = L["REROLL_RANDOM"];
 -- The Settings Frame
 local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent, BackdropTemplateMixin and "BackdropTemplate");
 app.Settings = settings;
-settings.name = "ATT-Classic";
+settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings:Hide();
 settings.Tabs = {};
@@ -150,6 +150,7 @@ local UnobtainableSettingsBase = {
 
 		-- Future Content Releases
 		[11] = 2,		-- Phase 1
+		[1101] = true,	-- Dire Maul
 		[12] = true,	-- Phase 2
 		[13] = true,	-- Phase 3
 		[14] = true,	-- Phase 4
@@ -494,7 +495,6 @@ settings.UpdateMode = function(self)
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
 	end
-
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -506,7 +506,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") then
+	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
