@@ -17,6 +17,34 @@ local GetItemStats = _G["GetItemStats"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local MAX_CREATURES_PER_ENCOUNTER = 9;
 local DESCRIPTION_SEPARATOR = "`";
+local ALLIANCE_ONLY = {
+	1,
+	3,
+	4,
+	7,
+	11,
+	22,
+	25,
+	29,
+	30,
+	32,
+	34,
+	37,
+};
+local HORDE_ONLY = {
+	2,
+	5,
+	6,
+	8,
+	9,
+	10,
+	26,
+	27,
+	28,
+	31,
+	35,
+	36,
+};
 
 --[[
 local protectedAura = {
@@ -6403,6 +6431,40 @@ end
 function app.FilterItemClass_RequireRaces(item)
 	return not item.nmr;
 end
+function app.FilterItemClass_RequireRacesCurrentFaction(item)
+	if item.nmr then
+		if item.r then
+			if item.r == app.FactionID then
+				return true;
+			else
+				return false;
+			end
+		end
+		if item.races then
+			if app.FactionID == Enum.FlightPathFaction.Horde then
+				return containsAny(item.races, HORDE_ONLY);
+			else
+				return containsAny(item.races, ALLIANCE_ONLY);
+			end
+		else
+			return false;
+		end
+	else
+		if item.nmc then
+			if item.c and #item.c == 1 then
+				if app.FactionID == Enum.FlightPathFaction.Horde then
+					return item.c[1] ~= 2;	-- Check for Paladin
+				else
+					return item.c[1] ~= 7;	-- Check for Shaman
+				end
+			else
+				return true;
+			end
+		else
+			return true;
+		end
+	end
+end
 function app.FilterItemClass_RequireBinding(item)
 	if item.b and (item.b == 2 or item.b == 3) then
 		return false;
@@ -11743,13 +11805,40 @@ app.events.ADDON_LOADED = function(addonName)
 						app.Settings:ToggleAccountMode();
 					end,
 					['OnUpdate'] = function(data)
-						data.visible = true;
-						if app.Settings:Get("AccountMode") then
-							data.trackable = true;
-							data.saved = true;
+						if app.Settings:Get("DebugMode") then
+							data.visible = false;
 						else
-							data.trackable = nil;
-							data.saved = nil;
+							data.visible = true;
+							if app.Settings:Get("AccountMode") then
+								data.trackable = true;
+								data.saved = true;
+							else
+								data.trackable = nil;
+								data.saved = nil;
+							end
+						end
+					end,
+				},
+				{
+					["text"] = "Toggle Faction Mode",
+					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+					["description"] = "Click this button to toggle faction mode to show everything for your faction!",
+					["visible"] = true,
+					["OnClick"] = function() 
+						app.Settings:ToggleFactionMode();
+					end,
+					['OnUpdate'] = function(data)
+						if app.Settings:Get("DebugMode") or not app.Settings:Get("AccountMode") then
+							data.visible = false;
+						else
+							data.visible = true;
+							if app.Settings:Get("FactionMode") then
+								data.trackable = true;
+								data.saved = true;
+							else
+								data.trackable = nil;
+								data.saved = nil;
+							end
 						end
 					end,
 				},

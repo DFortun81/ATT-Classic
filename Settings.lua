@@ -10,6 +10,7 @@ local L = app.L;
 BINDING_HEADER_ATTC = L["TITLE"];
 BINDING_NAME_ATTC_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"];
 BINDING_NAME_ATTC_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
+BINDING_NAME_ATTC_TOGGLEFACTIONMODE = L["TOGGLE_FACTION_MODE"];
 
 BINDING_HEADER_ATTC_PREFERENCES = L["PREFERENCES"];
 BINDING_NAME_ATTC_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
@@ -81,6 +82,7 @@ local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
 		["DebugMode"] = false,
+		["FactionMode"] = false,
 		["AccountWide:Deaths"] = true,
 		["AccountWide:Exploration"] = false,
 		["AccountWide:FlightPaths"] = true,
@@ -242,6 +244,9 @@ settings.GetModeString = function(self)
 	else
 		if self:Get("AccountMode") then
 			mode = "Account " .. mode;
+			if self:Get("FactionMode") then
+				mode = mode .. " (Current Faction)";
+			end
 		end
 		
 		local things = {};
@@ -364,6 +369,15 @@ end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
 end
+settings.SetFactionMode = function(self, factionMode)
+	self:Set("FactionMode", factionMode);
+	self:UpdateMode();
+	if factionMode then app.RefreshCollections(); end
+	app:RefreshData();
+end
+settings.ToggleFactionMode = function(self)
+	self:SetFactionMode(not self:Get("FactionMode"));
+end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
 	self:Set("Show:CollectedThings", checked);
@@ -442,17 +456,22 @@ settings.UpdateMode = function(self)
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
-	end
-	if self:Get("AccountMode") then
-		app.ItemTypeFilter = app.NoFilter;
-		app.ClassRequirementFilter = app.NoFilter;
-		app.RaceRequirementFilter = app.NoFilter;
-		app.RequiredSkillFilter = app.NoFilter;
-	else
-		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
-		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
-		app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+		
+		if self:Get("AccountMode") then
+			app.ItemTypeFilter = app.NoFilter;
+			app.ClassRequirementFilter = app.NoFilter;
+			app.RequiredSkillFilter = app.NoFilter;
+			if self:Get("FactionMode") then
+				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
+			else
+				app.RaceRequirementFilter = app.NoFilter;
+			end
+		else
+			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
+			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
+			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+		end
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
@@ -576,7 +595,7 @@ end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
 
-local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r (All Characters)",
+local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r",
 function(self)
 	self:SetChecked(settings:Get("AccountMode"));
 	if settings:Get("DebugMode") then
@@ -593,7 +612,22 @@ end);
 AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
 AccountModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 
-
+local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
+function(self)
+	self:SetChecked(settings:Get("FactionMode"));
+	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFactionMode(self:GetChecked());
+end);
+FactionModeCheckBox:SetATTTooltip("Turn this setting on if you want to see Account Mode data for all classes of your current faction.");
+FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 140, 0);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");

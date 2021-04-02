@@ -29,6 +29,7 @@ app.L = {
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
 	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
+	["TOGGLE_FACTION_MODE"] = "Toggle Faction Mode";
 	["PREFERENCES"] = "Preferences";
 	["TOGGLE_COMPLETEDTHINGS"] = "Toggle Completed Things (Both)";
 	["TOGGLE_COMPLETEDGROUPS"] = "Toggle Completed Groups";

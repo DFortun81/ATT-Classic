@@ -5,6 +5,9 @@
 	<Binding name="ATTC_TOGGLEDEBUGMODE" category="ADDONS">
 		ATTC.Settings:ToggleDebugMode();
 	</Binding>
+	<Binding name="ATTC_TOGGLEFACTIONMODE" category="ADDONS">
+		ATTC.Settings:ToggleFactionMode();
+	</Binding>
 	<Binding name="ATTC_TOGGLECOMPLETEDTHINGS" header="ATTC_PREFERENCES" category="ADDONS">
 		ATTC.Settings:ToggleCompletedThings();
 	</Binding>
