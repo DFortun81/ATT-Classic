@@ -37,7 +37,6 @@ _.PvP =
 			["maps"] = { ASHENVALE, THE_BARRENS },
 			["g"] = {
 				faction(890, {	-- Silverwing Sentinels
-					["creatureID"] = 14753,	-- Illiyana Moonblaze <Silverwing Supply Officer>
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
@@ -266,7 +265,6 @@ _.PvP =
 					},
 				}),
 				faction(889, {	-- Warsong Outriders
-					["creatureID"] = 14754,	-- Kelm Hargunth <Warsong Supply Officer>
 					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
 					["races"] = HORDE_ONLY,
 					["g"] = {

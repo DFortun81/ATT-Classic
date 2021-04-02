@@ -7,6 +7,8 @@ i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
 q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
 _.NeverImplemented =
 {
+	q(63769),	-- Holiday Reset Yearly Quest
+	
 	i(7093),	-- Pattern: Boots of Darkness
 	i(21369),	-- Pattern: Felcloth Bag (item is not in game; you learn the pattern from Jandice Barov's Journal)
 	i(6273),	-- Pattern: Green Woolen Robe
