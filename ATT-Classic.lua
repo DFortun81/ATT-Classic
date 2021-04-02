@@ -430,12 +430,12 @@ end
 local lastPlayedFanfare;
 function app:PlayCompleteSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
+		app:PlayAudio(app.Settings.AUDIO_COMPLETE_TABLE);
 	end
 end
 function app:PlayDeathSound()
 	if app.Settings:GetTooltipSetting("PlayDeathSound") then
-		PlayAudio(app.Settings.AUDIO_DEATH_TABLE);
+		app:PlayAudio(app.Settings.AUDIO_DEATH_TABLE);
 	end
 end
 function app:PlayFanfare()
@@ -444,20 +444,20 @@ function app:PlayFanfare()
 		local now = time();
 		if lastPlayedFanfare and (now - lastPlayedFanfare) < 1 then return nil; end
 		lastPlayedFanfare = now;
-		PlayAudio(app.Settings.AUDIO_FANFARE_TABLE);
+		app:PlayAudio(app.Settings.AUDIO_FANFARE_TABLE);
 	end
 end
 function app:PlayRareFindSound()
 	if app.Settings:GetTooltipSetting("Celebrate") then
-		PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE);
+		app:PlayAudio(app.Settings.AUDIO_RAREFIND_TABLE);
 	end
 end
 function app:PlayRemoveSound()
 	if app.Settings:GetTooltipSetting("Warn:Removed") then
-		PlayAudio(app.Settings.AUDIO_REMOVE_TABLE);
+		app:PlayAudio(app.Settings.AUDIO_REMOVE_TABLE);
 	end
 end
-function PlayAudio(targetAudio)
+function app:PlayAudio(targetAudio)
 	if targetAudio and type(targetAudio) == "table" then
 		local id = math.random(1, #targetAudio);
 		if targetAudio[id] then PlaySoundFile(targetAudio[id], app.Settings:GetTooltipSetting("Channel")); end
@@ -2241,10 +2241,9 @@ local function SearchForFieldContainer(field)
 end
 local function SearchForField(field, id)
 	if field and id then
-		local group = app:GetDataCache();
 		_cache = rawget(fieldCache, field);
 		if _cache then return rawget(_cache, id), field, id; end
-		return SearchForFieldRecursively(group, field, id), field, id;
+		return SearchForFieldRecursively(app:GetDataCache(), field, id), field, id;
 	end
 end
 app.SearchForField = SearchForField;
@@ -2321,9 +2320,9 @@ local function SearchForMissingItemsRecursively(group, listing)
 	end
 end
 local function SearchForMissingItems(group)
-	local listing = {}; 
+	local listing = {};
 	SearchForMissingItemsRecursively(group, listing);
-	return listing; 
+	return listing;
 end
 local function SearchForMissingItemNames(group)
 	-- Auctionator needs unique Item Names. Nothing else.
@@ -2338,7 +2337,7 @@ local function SearchForMissingItemNames(group)
 	for key,value in pairs(uniqueNames) do
 		table.insert(arr, key);
 	end
-	return arr; 
+	return arr;
 end
 local function UpdateSearchResults(searchResults)
 	if searchResults and #searchResults > 0 then
