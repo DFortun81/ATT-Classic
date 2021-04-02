@@ -3758,7 +3758,7 @@ app.BaseFaction = {
 		elseif key == "title" then
 			return _G["FACTION_STANDING_LABEL" .. t.standing];
 		elseif key == "icon" then
-			return nil;	-- TODO: Add a faction icon?
+			return app.asset("Category_Factions");
 		elseif key == "standing" then
 			return select(3, GetFactionInfoByID(t.factionID)) or 4;
 		elseif key == "maxstanding" then
