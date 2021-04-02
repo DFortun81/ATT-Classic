@@ -5584,7 +5584,7 @@ app.BaseMap = {
 				return 1;
 			end
 		elseif key == "icon" then
-			return "Interface/ICONS/INV_Misc_Map_01";
+			return app.asset("Category_Zones");
 		elseif key == "lvl" then
 			return app.GetMapLevel(t.mapID);
 		elseif key == "artID" then
@@ -8893,7 +8893,7 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 			self.initialized = true;
 			self.data = {
 				['text'] = "Cosmic Infuser",
-				['icon'] = "Interface/ICONS/INV_Misc_Map_01", 
+				['icon'] = app.asset("Category_Zones"), 
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true, 
 				['expanded'] = true,
@@ -10970,13 +10970,13 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								self.cache[group.spellID] = cache;
 								local requireSkill = cache.requireSkill;
 								local response = app:BuildSearchResponse(app.Categories.Instances, "requireSkill", requireSkill);
-								if response then tinsert(cache.g, {text=GROUP_FINDER,icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan",g=response}); end
+								if response then tinsert(cache.g, {text=GROUP_FINDER,icon = app.asset("Category_D&R"),g=response}); end
 								response = app:BuildSearchResponse(app.Categories.Zones, "requireSkill", requireSkill);
-								if response then tinsert(cache.g, {text=BUG_CATEGORY2,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+								if response then tinsert(cache.g, {text=BUG_CATEGORY2,icon = app.asset("Category_Zones"),g=response});  end
 								response = app:BuildSearchResponse(app.Categories.WorldDrops, "requireSkill", requireSkill);
-								if response then tinsert(cache.g, {text=TRANSMOG_SOURCE_4,icon = "Interface/ICONS/INV_Misc_Map_01",g=response});  end
+								if response then tinsert(cache.g, {text=TRANSMOG_SOURCE_4,icon = app.asset("Category_WorldDrops"),g=response});  end
 								response = app:BuildSearchResponse(app.Categories.Craftables, "requireSkill", requireSkill);
-								if response then tinsert(cache.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = "Interface\\ICONS\\ability_repair",g=response});  end
+								if response then tinsert(cache.g, {text=LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM,icon = app.asset("Category_Crafting"),g=response});  end
 							end
 							table.insert(g, cache);
 						end
