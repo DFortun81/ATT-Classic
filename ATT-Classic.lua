@@ -912,6 +912,13 @@ local IsQuestFlaggedCompletedForObject = function(t)
 				return 2;
 			end
 		end
+		if app.AccountWideQuests then
+			for i,questID in ipairs(t.altQuests) do
+				if GetDataSubMember("CollectedQuests", questID) then
+					return 2;
+				end
+			end
+		end
 	end
 end
 
@@ -1426,7 +1433,36 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if app.Settings:Get("AccountMode") then
 						for i,j in ipairs(group) do
 							if app.RecursiveUnobtainableFilter(j) then
-								tinsert(regroup, j);
+								if j.questID and j.itemID then
+									if not j.saved then
+										-- Only show the item on the tooltip if the quest is active and incomplete or the item is a provider.
+										if C_QuestLog.IsOnQuest(j.questID) then
+											if not IsQuestComplete(j.questID) then
+												tinsert(regroup, j);
+											end
+										elseif j.providers then
+											tinsert(regroup, j);
+										else
+											-- Do a quick search on the itemID.
+											local searchResults = app.SearchForField("itemID", j.itemID);
+											if searchResults and #searchResults > 0 then
+												for k,searchResult in ipairs(searchResults) do
+													if searchResult.providers then
+														for l,provider in ipairs(searchResult.providers) do
+															if provider[1] == 'i' and provider[2] == j.itemID then
+																tinsert(regroup, j);
+																break;
+															end
+														end
+														break;
+													end
+												end
+											end
+										end
+									end
+								else
+									tinsert(regroup, j);
+								end
 							end
 						end
 					else
