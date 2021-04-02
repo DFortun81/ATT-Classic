@@ -3571,7 +3571,7 @@ app.BaseDeathClass = {
 		elseif key == "text" then
 			return "Total Deaths";
 		elseif key == "icon" then
-			return app.asset("Difficulty_LFR");
+			return app.asset("Category_Deaths");
 		elseif key == "progress" then
 			if t.visible then
 				return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
@@ -8083,7 +8083,7 @@ function app:GetDataCache()
 		-- Dungeons & Raids
 		db = {};
 		db.text = GROUP_FINDER;
-		db.icon = "Interface\\LFGFRAME\\LFGIcon-ReturntoKarazhan";
+		db.icon = app.asset("Category_D&R");
 		db.g = app.Categories.Instances;
 		table.insert(g, db);
 		
@@ -8092,7 +8092,7 @@ function app:GetDataCache()
 			db = {};
 			db.mapID = 947;
 			db.text = BUG_CATEGORY2;
-			db.icon = "Interface/ICONS/INV_Misc_Map_01"
+			db.icon = app.asset("Category_Zones");
 			db.g = app.Categories.Zones;
 			table.insert(g, db);
 		end
@@ -8101,7 +8101,7 @@ function app:GetDataCache()
 		if app.Categories.WorldDrops then
 			db = {};
 			db.text = TRANSMOG_SOURCE_4;
-			db.icon = "Interface/ICONS/INV_Misc_Map_01";
+			db.icon = app.asset("Category_WorldDrops");
 			db.g = app.Categories.WorldDrops;
 			table.insert(g, db);
 		end
@@ -8110,7 +8110,7 @@ function app:GetDataCache()
 		if app.Categories.Factions then
 			db = {};
 			db.text = "Factions";
-			db.icon = "Interface/ICONS/INV_Misc_Map_01";
+			db.icon = app.asset("Category_Factions");
 			db.g = app.Categories.Factions;
 			table.insert(g, db);
 		end
@@ -8119,7 +8119,7 @@ function app:GetDataCache()
 		if app.Categories.PvP then
 			db = {};
 			db.text = PVP;
-			db.icon = "Interface/ICONS/INV_Misc_Map_01";
+			db.icon = app.asset("Category_PvP");
 			db.g = app.Categories.PvP;
 			table.insert(g, db);
 		end
@@ -8129,7 +8129,7 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
-			db.icon = "Interface\\ICONS\\ability_repair";
+			db.icon = app.asset("Category_Crafting");
 			db.g = app.Categories.Craftables;
 			db.collectible = false;
 			table.insert(g, db);
@@ -8183,7 +8183,7 @@ function app:GetDataCache()
 			return cache;
 		end)();
 		db.expanded = false;
-		db.icon = "Interface\\Minimap\\Tracking\\Flightmaster";
+		db.icon = app.asset("Category_FlightPaths");
 		db.text = "Flight Paths";
 		table.insert(g, db);
 		
@@ -8192,7 +8192,7 @@ function app:GetDataCache()
 			db = {};
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
-			db.icon = "Interface\\ICONS\\INV_Scroll_04";
+			db.icon = app.asset("Category_Professions");
 			db.g = app.Categories.Professions;
 			db.collectible = false;
 			table.insert(g, db);
@@ -8221,8 +8221,8 @@ function app:GetDataCache()
 		if app.Categories.WorldEvents then
 			db = {};
 			db.text = BATTLE_PET_SOURCE_7;
-			db.description = "These events occur at different times in the game's timeline, typically as one time server wide events with the exception of the Darkmoon Faire, which happens once per month every month.";
-			db.icon = "Interface\\Icons\\Spell_arcane_portalstormwind";
+			db.description = "These events occur at different times in the game's timeline, typically as one time server wide events. Special celebrations such as Anniversary events and such may be found within this category.";
+			db.icon = app.asset("Category_Event");
 			db.g = app.Categories.WorldEvents;
 			db.expanded = false;
 			table.insert(g, db);
