@@ -3,6 +3,10 @@ if GetLocale() ~= "frFR" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data for all classes of your current faction.";
+
+--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
+
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Temple noir"] = "Le Temple noir";
 L.SAVED_TO_DJ_INSTANCES["Le Puits de soleil"] = "Plateau du Puits de soleil";

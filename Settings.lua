@@ -35,9 +35,9 @@ settings.MostRecentTab = nil;
 settings:Hide();
 settings.Tabs = {};
 settings:SetBackdrop({
-	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = false, edgeSize = 16, 
+	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = false, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 });
 settings:SetBackdropColor(0, 0, 0, 1);
@@ -102,7 +102,7 @@ local GeneralSettingsBase = {
 };
 local FilterSettingsBase = {
 	__index = {
-		
+
 	},
 };
 local TooltipSettingsBase = {
@@ -147,7 +147,7 @@ local UnobtainableSettingsBase = {
 		[1] = false,	-- Never Implemented
 		[2] = false,	-- Removed From Game
 		[3] = false,	-- Future Releases [TODO: Convert these, you dummy!]
-		
+
 		-- Future Content Releases
 		[11] = 2,		-- Phase 1
 		[12] = true,	-- Phase 2
@@ -157,7 +157,7 @@ local UnobtainableSettingsBase = {
 		[16] = true,	-- Phase 6
 		[1601] = true,	-- Scourge Invasion
 		[1602] = true,	-- Silithyst
-		
+
 		-- Seasonal Filters
 		[1000] = false,	-- Brewfest
 		[1001] = false,	-- Children's Week
@@ -191,7 +191,7 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
-	
+
 	-- Assign the default settings
 	if not ATTClassicSettings then ATTClassicSettings = {}; end
 	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
@@ -200,13 +200,13 @@ settings.Initialize = function(self)
 	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
 	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
 	setmetatable(ATTClassicSettings.Unobtainables, UnobtainableSettingsBase);
-	
+
 	-- Assign the preset filters for your character class as the default states
 	if not ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = {}; end
 	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
 	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
-	
+
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
@@ -220,7 +220,7 @@ settings.Initialize = function(self)
 	end
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
-	
+
 	if self:GetTooltipSetting("Auto:MainList") then
 		app:OpenMainList();
 	end
@@ -249,7 +249,7 @@ settings.GetModeString = function(self)
 				mode = "Account " .. mode;
 			end
 		end
-		
+
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
@@ -421,14 +421,14 @@ settings.UpdateMode = function(self)
 		app.GroupFilter = app.NoFilter;
 		app.SeasonalItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
-		
+
 		app.AccountWideDeaths = true;
 		app.AccountWideExploration = true;
 		app.AccountWideFlightPaths = true;
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
-		
+
 		app.CollectibleExploration = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleLoot = true;
@@ -443,21 +443,21 @@ settings.UpdateMode = function(self)
 		else
 			app.SeasonalItemFilter = app.NoFilter;
 		end
-		
+
 		app.AccountWideDeaths = self:Get("AccountWide:Deaths");
 		app.AccountWideExploration = self:Get("AccountWide:Exploration");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
-		
+
 		app.CollectibleExploration = self:Get("Thing:Exploration");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleLoot = self:Get("Thing:Loot");
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
-		
+
 		if self:Get("AccountMode") then
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
@@ -494,7 +494,7 @@ settings.UpdateMode = function(self)
 	else
 		app.RecipeChecker = app.GetTempDataSubMember;
 	end
-	
+
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -627,7 +627,7 @@ end,
 function(self)
 	settings:SetFactionMode(self:GetChecked());
 end);
-FactionModeCheckBox:SetATTTooltip("Turn this setting on if you want to see Account Mode data for all classes of your current faction.");
+FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
 FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 140, 0);
 
 -- This creates the "Precision" slider.
@@ -1123,7 +1123,7 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab("Filters");
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -1243,7 +1243,7 @@ f:SetScript("OnClick", function(self)
 	app:RefreshData();
 end);
 f:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1284,7 +1284,7 @@ f:SetScript("OnClick", function(self)
 	end
 end);
 f:SetATTTooltip("Click this button to toggle all of the filters at once.");
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1383,7 +1383,7 @@ end)();
 --[[
 (function()
 local tab = settings:CreateTab("Social");
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	-- We aren't ready yet. :(
 	PanelTemplates_DisableTab(settings, self:GetID());
 end;
@@ -1769,7 +1769,7 @@ local ids = {
 local last = nil;
 for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)
@@ -1786,7 +1786,7 @@ end
 last = nil;
 for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)

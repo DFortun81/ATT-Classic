@@ -15,17 +15,19 @@ app.L = {
 	["TITLE"] = "|cffb4b4ffATT-Classic|r";
 	["AUCTION_TAB"] = "|cffb4b4ffATT-C|r";
 	["DESCRIPTION"] = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
-	
+
 	-- Instructional Text
 	["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\nCtrl + Left click to open the Mini List.\nShift + Left click to Refresh Collections.";
 	["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
-    ["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffAlt + Right Click to Plot Waypoints|r";
+	["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffAlt + Right Click to Plot Waypoints|r";
 	["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
 	["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
 	["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["I_ONLY_CARE_ABOUT_MY_MAIN"] = "|cff3399ffI only care about my main.|r";
-	
+
+	["FACTION_MODE_TOOLTIP"] = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
+
 	-- Binding Localizations
 	["TOGGLE_ACCOUNT_MODE"] = "Toggle Account Mode";
 	["TOGGLE_DEBUG_MODE"] = "Toggle Debug Mode";
@@ -62,7 +64,7 @@ app.L = {
 	["REQUIRES"] = "Requires";
 	["REQUIRES_LEVEL"] = "Requires Level";
 	["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
-	
+
 	-- Filter Text
 	["ART_ID"] = "Art ID";
 	["CREATURE_ID"] = "Creature ID";
@@ -77,7 +79,7 @@ app.L = {
 	["OBJECT_ID"] = "Object ID";
 	["QUEST_ID"] = "Quest ID";
 	["SPELL_ID"] = "Spell ID";
-	
+
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\ATT-Classic\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
 	["COLLECTED_ICON"] = "|TInterface\\Addons\\ATT-Classic\\assets\\known:0|t";	-- Acquired the colors and icon from CanIMogIt.
@@ -124,7 +126,7 @@ app.L = {
 		[8] = GetItemSubClassInfo(4,6),							-- Shields
 		[9] = INVTYPE_TABARD,									-- Tabards
 		[10] = INVTYPE_BODY,									-- Shirts
-		
+
 		-- Weapons
 		[20] = GetItemSubClassInfo(2,15),						-- Daggers
 		[21] = GetItemSubClassInfo(2,0),						-- 1H Axes
@@ -232,7 +234,7 @@ app.L = {
 		[-86] = "Interface\\Icons\\INV_Misc_Book_13",										-- Library (SM)
 		[-87] = "Interface\\Icons\\inv_helmet_25",											-- Armory (SM)
 		[-88] = "Interface\\Icons\\inv_helmet_12",											-- Cathedral (SM)
-		
+
 		[-297] = "Interface\\Icons\\inv_letter_17", 								-- Mailbox
 		[-304] = "Interface\\Icons\\INV_BannerPVP_02",								-- Battlegrounds
 		[-318] = "Interface\\Icons\\INV_Chest_Plate03",								-- Armor
@@ -246,7 +248,7 @@ app.L = {
 		[-328] = "Interface\\Icons\\inv_belt_24",									-- Waist
 		[-329] = "Interface\\Icons\\inv_pants_09",									-- Legs
 		[-330] = "Interface\\Icons\\inv_boots_09",									-- Feet
-		
+
 		[-367] = "Interface\\Icons\\ability_rogue_deviouspoisons",					-- The Construct Quarter
 		[-368] = "Interface\\Icons\\inv_trinket_naxxramas04",						-- The Arachnid Quarter
 		[-369] = "Interface\\Icons\\spell_deathknight_classicon",					-- The Military Quarter
@@ -293,7 +295,7 @@ app.L = {
 		[-55] = "Pirate's Day",
 		[-56] = "Brewfest",														-- Brewfest
 		[-57] = "Harvest Festival",												-- Harvest Festival
- 		[-58] = "Hallow's End",													-- Hallow's End
+		[-58] = "Hallow's End",													-- Hallow's End
 		[-60] = "Pilgrim's Bounty",												-- Pilgrim's Bounty
 		[-61] = "Feast of Winter Veil",											-- Feast of Winter Veil
 		[-62] = "Stranglethorn Fishing Extravaganza",
@@ -329,7 +331,7 @@ app.L = {
 		[-388] = "Main Gate",													-- Main Gate (Stratholme)
 		[-389] = "Service Entrance",											-- Service Entrance (Stratholme)
 		[-420] = "Tier 0.5 Sets",												-- Tier 0.5 Sets
-		
+
 -- Blizzard Events and Anniversaries
 		[-538] = "The Ahn'Qiraj War Effort",
 		[-539] = "The Scepter of the Shifting Sands",
@@ -372,8 +374,8 @@ app.L = {
 		[15085] = "Interface\\Icons\\inv_misc_enggizmos_09",
 		[20805] = "Interface\\Icons\\inv_scroll_03",
 		[20985] = "Interface\\Icons\\inv_misc_dust",
-		[20992] = "Interface\\Icons\\inv_shield_04", 
-		[21042] = "Interface\\Icons\\inv_shield_05", 
+		[20992] = "Interface\\Icons\\inv_shield_04",
+		[21042] = "Interface\\Icons\\inv_shield_05",
 		[35251] = "Interface\\Icons\\Garrison_BronzeChest",
 		[37099] = "Interface\\Icons\\INV_Misc_StoneTablet_03",
 		[62483] = "Interface\\Icons\\INV_WorseRobot",
@@ -405,7 +407,7 @@ app.L = {
 		[177904] = "Interface\\Icons\\ability_hunter_pet_spider",
 		[179485] = "Interface\\Icons\\Ability_Hunter_TrapLauncher",
 		[179501] = "Interface\\Icons\\INV_Crate_01",
-		[179697] = "Interface\\Icons\\INV_Box_02", 
+		[179697] = "Interface\\Icons\\INV_Box_02",
 		[179832] = "Interface\\Icons\\inv_misc_armorkit_06",
 		[180327] = "Interface\\Icons\\inv_poison_mindnumbing",
 		[180366] = "Interface\\Icons\\INV_Fishingpole_02",
@@ -517,7 +519,7 @@ app.L = {
 		[20805] = "Rizzle's Unguarded Plans",
 		[20985] = "Loose Dirt",
 		[20992] = "Black Shield",
-		[21042] = "Theramore Guard Badge", 
+		[21042] = "Theramore Guard Badge",
 		[35251] = "Karnitol's Chest",
 		[37099] = "Atal'ai Tablet",
 		[51708] = "Eliza's Grave Dirt",
@@ -670,7 +672,7 @@ app.L = {
 		[189989] = "Dark Iron Mole Machine Wreckage",
 		[189990] = "Dark Iron Mole Machine Wreckage",
 	};
-	
+
 	-- Tier Text
 	["CLASSIC_TIER_DESC"] = "Four years after the Battle of Mount Hyjal, tensions between the Alliance & the Horde begin to arise once again. Intent on settling the arid region of Durotar, Thrall's new Horde expanded its ranks, inviting the undead Forsaken to join orcs, tauren, & trolls. Meanwhile, dwarves, gnomes & the ancient night elves pledged their loyalties to a reinvigorated Alliance, guided by the human kingdom of Stormwind. After Stormwind's king, Varian Wrynn, mysteriously disappeared, Highlord Bolvar Fordragon served as Regent but his service was marred by the manipulations & mind control of the Onyxia, who ruled in disguise as a human noblewoman. As heroes investigated Onyxia's manipulations, ancient foes surfaced in lands throughout the world to menace Horde & Alliance alike.";
 	["TBC_TIER_DESC"] = "The Burning Crusade is the first expansion. Its main features include an increase of the level cap up to 70, the introduction of the blood elves & the draenei as playable races, & the addition of the world of Outland, along with many new zones, dungeons, items, quests, & monsters.";
@@ -681,7 +683,7 @@ app.L = {
 	["LEGION_TIER_DESC"] = "Legion is the sixth expansion. Gul'dan is expelled into Azeroth to reopen the Tomb of Sargeras & the gateway to Argus, commencing the third invasion of the Burning Legion. After the defeat at the Broken Shore, the defenders of Azeroth search for the Pillars of Creation, which were Azeroth's only hope for closing the massive demonic portal at the heart of the Tomb. However, the Broken Isles came with their own perils to overcome, from Xavius, to God-King Skovald, to the nightborne, & to Tidemistress Athissa. Khadgar moved Dalaran to the shores of this land, the city serves as a central hub for the heroes. The death knights of Acherus also took their floating necropolis to the Isles. The heroes of Azeroth sought out legendary artifact weapons to wield in battle, but also found unexpected allies in the form of the Illidari. Ongoing conflict between the Alliance & the Horde led to the formation of the class orders, with exceptional commanders putting aside faction to lead their classes in the fight against the Legion.";
 	["BFA_TIER_DESC"] = "Battle for Azeroth is the seventh expansion. Azeroth paid a terrible price to end the apocalyptic march of the Legion's crusade—but even as the world's wounds are tended, it is the shattered trust between the Alliance and Horde that may prove the hardest to mend. In Battle for Azeroth, the fall of the Burning Legion sets off a series of disastrous incidents that reignites the conflict at the heart of the Warcraft saga. As a new age of warfare begins, Azeroth's heroes must set out on a journey to recruit new allies, race to claim the world's mightiest resources, and fight on several fronts to determine whether the Horde or Alliance will lead Azeroth into its uncertain future.";
 	["SL_TIER_DESC"] = "Shadowlands is the eighth expansion. What lies beyond the world you know? The Shadowlands, resting place for every mortal soul—virtuous or vile—that has ever lived.";
-	
+
 	["TRADESKILL_CATEGORY_ICONS"] = {
 		-- Engineering
 		[1] = "Interface\\Icons\\INV_Ammo_Bullet_01",	-- Bullets
@@ -696,7 +698,7 @@ app.L = {
 		[10] = "Interface\\Icons\\INV_Misc_Food_12",	-- Everyday Cooking
 		[11] = "Interface\\Icons\\INV_Misc_Food_62",	-- Holiday Cooking
 		[12] = "Interface\\Icons\\INV_Helmet_66",	-- Unusual Delights
-		
+
 		-- Alchemy
 		[13] = "Interface\\Icons\\INV_Cask_02",	-- Materials
 		[14] = "Interface\\Icons\\INV_Potion_51",	-- Potions
@@ -705,7 +707,7 @@ app.L = {
 		[17] = "Interface\\Icons\\Spell_Fire_Volcano",	-- Transmutes
 		[18] = "Interface\\Icons\\INV_Misc_Orb_01",	-- Trinkets
 		[19] = "Interface\\Icons\\INV_Drink_12",	-- Oils
-		
+
 		-- Blacksmithing
 		[20] = "Interface\\Icons\\inv_stone_grindingstone_05",	-- Materials
 		[21] = "Interface\\Icons\\inv_stone_sharpeningstone_03",	-- Weapon Mods
@@ -721,7 +723,7 @@ app.L = {
 		[31] = "Interface\\Icons\\INV_Shield_06",	-- Shields
 		[32] = "Interface\\Icons\\INV_Weapon_Halberd_10",	-- Weapons
 		[33] = "Interface\\Icons\\INV_Misc_Key_11",	-- Skeleton Keys
-		
+
 		-- Enchanting
 		[34] = "Interface\\Icons\\INV_Staff_01",	-- Rods
 		[35] = "Interface\\Icons\\Inv_ingot_eternium",	-- Reagents
@@ -735,7 +737,7 @@ app.L = {
 		[43] = "Interface\\Icons\\INV_Wand_06",	-- Wands
 		[44] = "Interface\\Icons\\Inv_poison_mindnumbing",	-- Oils
 		[45] = "Interface\\Icons\\inv_misc_gem_bloodstone_01",	-- Trinket
-		
+
 		-- Leatherworking
 		[46] = "Interface\\Icons\\INV_Misc_LeatherScrap_03",	-- Materials
 		[47] = "Interface\\Icons\\INV_Misc_ArmorKit_17",	-- Armor Kits
@@ -749,7 +751,7 @@ app.L = {
 		[55] = "Interface\\Icons\\INV_Pants_12",	-- Pants
 		[56] = "Interface\\Icons\\INV_Boots_Chain_01",	-- Boots
 		[57] = "Interface\\Icons\\INV_Misc_Cape_03",	-- Cloaks
-		
+
 		-- Tailoring
 		[58] = "Interface\\Icons\\inv_fabric_silk_03",	-- Materials
 		[59] = "Interface\\Icons\\inv_misc_bag_19",	-- Bags
@@ -763,10 +765,10 @@ app.L = {
 		[67] = "Interface\\Icons\\inv_boots_05",	-- Boots
 		[68] = "Interface\\Icons\\inv_misc_cape_16",	-- Cloaks
 		[69] = "Interface\\Icons\\inv_shirt_red_01",	-- Shirts
-		
+
 		-- Poisons
 		[70] = "Interface\\Icons\\ability_creature_poison_06", -- Consumable
-		
+
 		-- Weapon Skills
 		[71] = "Interface\\Icons\\INV_Weapon_Halberd_10", -- Weapon Skills
 	},
@@ -781,12 +783,12 @@ app.L = {
 		[7] = "Parts",	-- Parts
 		[8] = "Scopes",	-- Scopes
 		[9] = "Tools",	-- Tools
-		
+
 		-- Cooking
 		[10] = "Everyday Cooking",	-- Everyday Cooking
 		[11] = "Holiday Cooking",	-- Holiday Cooking
 		[12] = "Unusual Delights",	-- Unusual Delights
-		
+
 		-- Alchemy
 		[13] = "Materials",	-- Materials
 		[14] = "Potions",	-- Potions
@@ -795,7 +797,7 @@ app.L = {
 		[17] = "Transmutes",	-- Transmutes
 		[18] = "Trinkets",	-- Trinkets
 		[19] = "Oils",	-- Oils
-		
+
 		-- Blacksmithing
 		[20] = "Materials",	-- Materials
 		[21] = "Weapon Mods",	-- Weapon Mods
@@ -811,7 +813,7 @@ app.L = {
 		[31] = "Shields",	-- Shields
 		[32] = "Weapons",	-- Weapons
 		[33] = "Skeleton Keys",	-- Skeleton Keys
-		
+
 		-- Enchanting
 		[34] = "Rods",	-- Rods
 		[35] = "Reagents",	-- Reagents
@@ -825,7 +827,7 @@ app.L = {
 		[43] = "Wands",	-- Wands
 		[44] = "Oils",	-- Oils
 		[45] = "Trinket",	-- Trinket
-		
+
 		-- Leatherworking
 		[46] = "Materials",	-- Materials
 		[47] = "Armor Kits",	-- Armor Kits
@@ -839,7 +841,7 @@ app.L = {
 		[55] = "Pants",	-- Pants
 		[56] = "Boots",	-- Boots
 		[57] = "Cloaks",	-- Cloaks
-		
+
 		-- Tailoring
 		[58] = "Materials",	-- Materials
 		[59] = "Bags",	-- Bags
@@ -853,14 +855,14 @@ app.L = {
 		[67] = "Boots",	-- Boots
 		[68] = "Cloaks",	-- Cloaks
 		[69] = "Shirts",	-- Shirts
-		
+
 		-- Poisons
 		[70] = "Consumable",	-- Consumable
 
 		-- Weapon Skills
 		[71] = "Weapon Skills", -- Weapon Skills
 	},
-	
+
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter
 	-- If your saves aren't lining up, it's probably because Blizzard
 	-- didn't use the same localization for the instance. Sorry.
@@ -906,7 +908,7 @@ app.L = {
 		["Wailing Caverns"] = 279,
 		["Zul'Farrak"] = 219,
 		["Zul'Gurub"] = 337,
-		
+
 		-- TBC
 		["Karazhan"] = 350,
 		["Gruul's Lair"] = 330,
@@ -938,7 +940,7 @@ app.L = {
 		-- Classic
 		["Ahn'Qiraj"] = 320,
 		["Gates of Ahn'Qiraj"] = 1451,
-		
+
 		-- TBC
 		["The Eye"] = 334,
 		["Auchenai Crypts"] = 256,
@@ -968,7 +970,7 @@ app.L = {
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"},
 		[3] = {1, "|CFFFF0000This is not available until a later Phase of Release in WoW Classic.|r", "Future Releases"}, -- No Hope -- 3
-		
+
 		-- Future Content Releases
 		[11] = {2, "|CFFAAFFAAThis will not be available until Phase 1 of WoW Classic.|r", "Phase 1", true },
 		[1101] = {2, "|CFFAAFFAAThis became available with the Dire Maul Phase Release of WoW Classic.|r", "Dire Maul", true },
@@ -984,7 +986,7 @@ app.L = {
 		[1601] = {2, "|CFFAAFFAAThis was only available during the Scourge Invasion.|r", "Scourge Invasion", nil, "\n \n|CFFFFAAAAIf the Scourge Invasion has been completed on your server, simply turn this off.|r" },
 		[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", true, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
 		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", nil, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
-		
+
 		-- Seasonal Filters
 		[1000] = {3, "|CFFAAAAFFThis requires the Brewfest Holiday to be Active.|r", "Brewfest" },
 		[1001] = {3, "|CFFAAAAFFThis requires the Children's Week Holiday to be Active.|r", "Children's Week" },

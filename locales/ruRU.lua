@@ -3,7 +3,9 @@ if GetLocale() ~= "ruRU" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- TODO
+L.FACTION_MODE_TOOLTIP = "Включите данную настройку, если Вы хотите отслеживать Штучки в Режиме Аккаунта только для рас и классов Вашей текущей фракции.";
+
+L.TOGGLE_FACTION_MODE = "Переключить режим Фракции";
 
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Непроглядная Пучина"] = 221;	-- BFD

@@ -3,7 +3,9 @@ if GetLocale() ~= "esES" then return; end
 local app = select(2, ...);
 local L = app.L;
 
--- TODO
+--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data for all classes of your current faction.";
+
+--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 
 -- Dungeons
 L.ZONE_TEXT_TO_MAP_ID["Cavernas de Brazanegra"] = 221;	-- BFD

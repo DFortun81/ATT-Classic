@@ -3,6 +3,10 @@ if GetLocale() ~= "deDE" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data for all classes of your current faction.";
+
+--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
+
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Violette Festung"] = "Die Violette Festung";
 L.SAVED_TO_DJ_INSTANCES["Geschmolzener Kern"] = "Der Geschmolzene Kern";
@@ -89,7 +93,7 @@ do a[key] = value; end
 local a = L.OBJECT_ID_NAMES;
 for key,value in pairs({
 	-- Enter translated OBJECTID's here
-    [31] = "Alte Löwenstatue",
+	[31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[55] = "Ein halb aufgefressener Körper",
 	[56] = "Rolfs Leichnam",
