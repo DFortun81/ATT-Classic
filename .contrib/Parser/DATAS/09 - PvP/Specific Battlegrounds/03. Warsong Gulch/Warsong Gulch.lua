@@ -104,7 +104,7 @@ _.PvP =
 									un(PHASE_SIX, i(21565)),	-- Rune of Perfection
 									un(PHASE_SIX, i(21566)),	-- Rune of Perfection
 									un(PHASE_SIX, i(22748)),	-- Sentinel's Chain Leggings
-									un(PHASE_SIX, i(30497)),	-- Sentinel's Mail Leggings
+									un(TBC_PHASE_ONE, i(30497)),	-- Sentinel's Mail Leggings
 									un(PHASE_SIX, i(22753)),	-- Sentinel's Lamellar Legguards
 									un(PHASE_SIX, i(22749)),	-- Sentinel's Leather Pants
 									un(PHASE_SIX, i(22750)),	-- Sentinel's Lizardhide Pants
@@ -332,7 +332,7 @@ _.PvP =
 									un(PHASE_SIX, i(21565)),	-- Rune of Perfection
 									un(PHASE_SIX, i(21566)),	-- Rune of Perfection
 									un(PHASE_SIX, i(22673)),	-- Outrider's Chain Leggings
-									un(PHASE_SIX, i(30498)),	-- Outrider's Lamellar Legguards
+									un(TBC_PHASE_ONE, i(30498)),	-- Outrider's Lamellar Legguards
 									un(PHASE_SIX, i(22740)),	-- Outrider's Leather Pants
 									un(PHASE_SIX, i(22741)),	-- Outrider's Lizardhide Pants
 									un(PHASE_SIX, i(22676)),	-- Outrider's Mail Leggings

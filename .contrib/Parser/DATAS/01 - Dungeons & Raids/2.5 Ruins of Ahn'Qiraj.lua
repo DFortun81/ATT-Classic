@@ -712,6 +712,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				}),
 				-- Key (Post 4.3 Only!)
 				i(76401, {	-- Scarab Coffer Key
+					["u"] = CATA_PHASE_ONE,
 					["timeline"] = {
 						"added 4.3.0.15005"
 					},
@@ -728,8 +729,8 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 			o(180691, {	-- Scarab Coffer
 				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
 				["cost"] = {
-					{ "i", 21761, 1 },	-- Scarab Coffer Key [pre-4.3]
-					{ "i", 76401, 1 },	-- Scarab Coffer Key [4.3]
+					{ "i", 21761, 1, PHASE_ONE },	-- Scarab Coffer Key [pre-4.3]
+					{ "i", 76401, 1, CATA_PHASE_ONE },	-- Scarab Coffer Key [4.3]
 				},
 				["groups"] = {
 					i(20873),	-- Alabaster Idol

@@ -1093,6 +1093,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					},
 				}),
 				i(76402, {	-- Greater Scarab Coffer Key
+					["u"] = CATA_PHASE_ONE,
 					["timeline"] = {
 						"added 4.3.0.15005"
 					},
@@ -1258,8 +1259,8 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 			}),
 			o(180690, {	-- Large Scarab Coffer
 				["cost"] = {
-					{ "i", 21762, 1 },	-- Greater Scarab Coffer Key [pre-4.3]
-					{ "i", 76402, 1 },	-- Greater Scarab Coffer Key [4.3]
+					{ "i", 21762, 1, PHASE_ONE },	-- Greater Scarab Coffer Key [pre-4.3]
+					{ "i", 76402, 1, CATA_PHASE_ONE },	-- Greater Scarab Coffer Key [4.3]
 				},
 				["groups"] = {
 					i(20876),	-- Idol of Death
@@ -1291,6 +1292,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				i(21706),	-- Boots of the Unwavering Will
 				i(21707),	-- Ring of Swarming Thought
 				i(93041, {	-- Jewel of Maddening Whispers (Pet)
+					["u"] = MOP_PHASE_ONE,
 					["timeline"] = {
 						"added 5.1.0.16309",
 					},
@@ -1383,6 +1385,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 					i(21625),	-- Scarab Brooch
 					i(22399),	-- Idol of Health
 					i(93039, {	-- Viscidus Globule (Pet)
+						["u"] = MOP_PHASE_ONE,
 						["timeline"] = {
 							"added 5.1.0.16309",
 						},
@@ -1409,6 +1412,7 @@ _.Instances = bubbleDown({ ["u"] = PHASE_FIVE }, {
 				i(21600), 	-- Boots of Epiphany
 				i(21601),	-- Ring of Emperor Vek'lor
 				i(93040, {	-- Anubisath Idol (Pet)
+					["u"] = MOP_PHASE_ONE,
 					["timeline"] = {
 						"added 5.1.0.16309",
 					},

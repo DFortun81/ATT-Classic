@@ -260,8 +260,6 @@ app.L = {
 		[-539] = "Interface\\Icons\\Inv_hammer_25",									-- The Scepter of the Shifting Sands
 		[-540] = "Interface\\Icons\\inv_stone_02",									-- The Scourge Invasion
 		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",					-- The Silithyst Must Flow
-		
-		[-6014] = "Interface\\Icons\\Spell_Arcane_PortalUnderCity",						-- Cities
 	};
 	["NPC_ID_NAMES"] = {
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1, 									-- Zone Drop
@@ -338,7 +336,6 @@ app.L = {
 		[-540] = "The Scourge Invasion",
 		[-541] = "The Silithyst Must Flow",
 -- Factions / Cities
-		[-6014] = BUG_CATEGORY4,													-- Cities
 		[-10066] = "Legendary",
 	},
 

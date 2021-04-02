@@ -310,15 +310,31 @@ TBC_PHASE_FIVE = 21;
 TBC_PHASE_SIX = 22;
 
 -- Wrath Classic Phases
-WRATH_PHASE_ONE = 23;
-WRATH_PHASE_TWO = 24;
-WRATH_PHASE_THREE = 25;
-WRATH_PHASE_FOUR = 26;
-WRATH_PHASE_FIVE = 27;
-WRATH_PHASE_SIX = 28;
+WRATH_PHASE_ONE = 30;
+WRATH_PHASE_TWO = 31;
+WRATH_PHASE_THREE = 32;
+WRATH_PHASE_FOUR = 33;
+WRATH_PHASE_FIVE = 34;
+WRATH_PHASE_SIX = 35;
 
+-- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
-CATA_PHASE_ONE = 29;	-- NOTE: Reason for this is to show when stuff is going away eventually.
+CATA_PHASE_ONE = 40;
+
+-- Mists of Pandaria Classic Phases
+MOP_PHASE_ONE = 50;
+
+-- Warlords of Draenor Classic Phases
+WOD_PHASE_ONE = 60;
+
+-- Legion Classic Phases
+LEGION_PHASE_ONE = 70;
+
+-- Battle for Azeroth Phases
+BFA_PHASE_ONE = 80;
+
+-- Shadowlands Phases
+SHADOWLANDS_PHASE_ONE = 90;
 
 -- Holiday Filters
 BREWFEST = 1000;
