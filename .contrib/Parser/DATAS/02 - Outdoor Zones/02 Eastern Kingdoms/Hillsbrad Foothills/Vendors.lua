@@ -10,6 +10,9 @@ _.Zones =
 					["coord"] = { 62.2, 19.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
+						i(20971, {	-- Design: Heavy Iron Knuckles
+							["u"] = TBC_PHASE_ONE,
+						}),
 						i(5788),	-- Pattern: Thick Murloc Armor
 						i(6054),	-- Recipe: Shadow Protection Potion
 					},
@@ -74,6 +77,12 @@ _.Zones =
 					["coord"] = { 49.0, 55.2, HILLSBRAD_FOOTHILLS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						i(20973, {	-- Design: Blazing Citrine Ring
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(20971, {	-- Design: Heavy Iron Knuckles
+							["u"] = TBC_PHASE_ONE,
+						}),
 						i(11163),	-- Formula: Enchant Bracer - Lesser Deflection
 						i(4355),	-- Pattern: Icy Cloak
 						i(5788),	-- Pattern: Thick Murloc Armor

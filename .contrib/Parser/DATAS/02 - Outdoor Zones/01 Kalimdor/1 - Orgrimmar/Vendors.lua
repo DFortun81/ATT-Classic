@@ -76,9 +76,19 @@ _.Zones =
 					["coord"] = { 75.6, 25.2, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(16041),	-- Schematic: Thorium Grenade
-						i(16042),	-- Schematic: Thorium Widget
-						i(18647),	-- Schematic: Red Firework
+						i(18647, {	-- Schematic: Red Firework
+							["isLimited"] = true,
+						}),
+						i(16041, {	-- Schematic: Thorium Grenade
+							["isLimited"] = true,
+						}),
+						i(16042, {	-- Schematic: Thorium Widget
+							["isLimited"] = true,
+						}),
+						i(22729, {	-- Schematic: Steam Tonk Controller
+							["isLimited"] = true,
+							["u"] = TBC_PHASE_ONE,
+						}),
 					},
 				}),
 				n(3356, {	-- Sumi <Blacksmithing Supplier>

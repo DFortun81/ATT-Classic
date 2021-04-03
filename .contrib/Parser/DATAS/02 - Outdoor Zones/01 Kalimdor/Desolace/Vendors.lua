@@ -22,6 +22,18 @@ _.Zones =
 						i(12233),	-- Recipe: Mystery Stew
 					},
 				}),
+				n(9636, {	-- Kireena <Trade Goods>
+					["coord"] = { 51.0, 53.5, DESOLACE },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(20973, {	-- Design: Blazing Citrine Ring
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(7114),	-- Pattern: Azure Silk Gloves
+						i(12232),	-- Recipe: Carrion Surprise
+						i(12240),	-- Recipe: Heavy Kodo Stew
+					},
+				}),
 				n(9636, {	-- Mavralyn <Leather Armor & Leatherworking Supplies>
 					["coord"] = { 37.0, 41.2, DESOLACE },
 					["races"] = HORDE_ONLY,

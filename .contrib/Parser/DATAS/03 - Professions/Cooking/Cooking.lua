@@ -264,6 +264,11 @@ profession(COOKING, {
 				["recipeID"] = 3400
 			},
 			{
+				["name"] = "Spice Bread",
+				["recipeID"] = 37836,
+				["u"] = TBC_PHASE_ONE,
+			},
+			{
 				["name"] = "Spiced Chili Crab",
 				["recipeID"] = 15915
 			},
