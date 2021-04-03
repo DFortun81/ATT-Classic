@@ -83,6 +83,17 @@ _.Zones =
 					["classes"] = { WARRIOR },
 					["lvl"] = 10,
 				}),
+				q(11451, {	-- Alicia's Poem
+					["qg"] = 24729,	-- Alicia
+					["coord"] = { 66.9, 13.8, STORMWIND_CITY },
+					["maps"] = { SHATTRATH_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["cost"] = {
+						{ "i", 34089, 1 },	-- Alicia's Poem
+					},
+					["lvl"] = 60,
+				}),
 				q(396, {	-- An Audience with the King
 					["qg"] = 1646,	-- Baros Alexston <City Architect>
 					["sourceQuest"] = 395,	-- Brotherhood's End

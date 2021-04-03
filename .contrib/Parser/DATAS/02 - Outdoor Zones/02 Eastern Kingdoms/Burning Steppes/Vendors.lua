@@ -9,7 +9,9 @@ _.Zones =
 				n(9544, {	-- Yuka Screwspigot
 					["coord"] = { 66.0, 22.0, BURNING_STEPPES },
 					["groups"] = {
-						i(10602),	-- Schematic: Deadly Scope
+						i(10602, {	-- Schematic: Deadly Scope
+							["isLimited"] = true,
+						}),
 					},
 				}),	
 				n(14437, {	-- Gorzeeki Wildeyes

@@ -10,8 +10,12 @@ _.Zones =
 					["coord"] = { 43.3, 74.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6274),	-- Pattern: Blue Overalls
-						i(10325),	-- Pattern: White Wedding Dress
+						i(6274, {	-- Pattern: Blue Overalls
+							["isLimited"] = true,
+						}),
+						i(10325, {	-- Pattern: White Wedding Dress
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(5494, {	-- Catherine Leland <Fishing Supplier>
@@ -27,19 +31,43 @@ _.Zones =
 					["coord"] = { 32.4, 79.9, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4824),	-- Blurred Axe
-						i(4825),	-- Callous Axe
-						i(4826),	-- Marauder Axe
-						i(4827),	-- Wizard's Belt
-						i(4828),	-- Nightwind Belt
-						i(4829),	-- Dreamer's Belt
+						i(4824, {	-- Blurred Axe
+							["isLimited"] = true,
+						}),
+						i(4825, {	-- Callous Axe
+							["isLimited"] = true,
+						}),
+						i(4826, {	-- Marauder Axe
+							["isLimited"] = true,
+						}),
+						i(4827, {	-- Wizard's Belt
+							["isLimited"] = true,
+						}),
+						i(4828, {	-- Nightwind Belt
+							["isLimited"] = true,
+						}),
+						i(4829, {	-- Dreamer's Belt
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(1304, {	-- Darian Singh <Fireworks Vendor>
 					["coord"] = { 29.6, 67.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18649),	-- Schematic: Blue Firework
+						i(18649, {	-- Schematic: Blue Firework
+							["isLimited"] = true,
+						}),
+					},
+				}),
+				n(1286, {	-- Edna Mullby <Trade Supplies>
+					["coord"] = { 58.2, 60.5, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(20856, {	-- Design: Heavy Golden Necklace of Battle
+							["isLimited"] = true,
+							["u"] = TBC_PHASE_ONE,
+						}),
 					},
 				}),
 				n(5483, {	-- Erika Tate <Cooking Supplier>
@@ -54,24 +82,39 @@ _.Zones =
 					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(11303),   -- Fine Shortbow
-						i(11306),	-- Sturdy Recurve
-						i(11307),	-- Massive Longbow
+						i(11303, {	-- Fine Shortbow
+							["isLimited"] = true,
+						}),
+						i(11307, {	-- Massive Longbow
+							["isLimited"] = true,
+						}),
+						i(11306, {	-- Sturdy Recurve
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(1318, {	-- Jessara Cordell <Enchanting Supplies>
 					["coord"] = { 43.0, 64.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
+					["groups"] = {
+						i(6342, {	-- Formula: Enchant Chest - Minor Mana
+							["isLimited"] = true,
+						}),
+						-- #if NOT CLASSIC
+						i(20753),	-- Formula: Lesser Wizard Oil
+						i(20752),	-- Formula: Minor Mana Oil
+						i(20758),	-- Formula: Minor Wizard Oil
+						-- #endif
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(5512, {	-- Kaita Deepforge <Blacksmithing Supplies>
 					["coord"] = { 56.3, 17.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
-						i(12162),	-- Plans: Hardened Iron Shortsword
+					["groups"] = {
+						i(12162, {	-- Plans: Hardened Iron Shortsword
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(340, {	-- Kendor Kabonka <Master of Cooking Recipes>
@@ -96,21 +139,25 @@ _.Zones =
 				n(8666, {	-- Lil Timmy <Boy with kittens>
 					["coord"] = { 64.0, 38.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
-						i(8489),	-- Cat Carrier 'White Kitten'
+					["groups"] = {
+						i(8489, {	-- Cat Carrier 'White Kitten'
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(1313, {	-- Maria Lumere <Alchemy Supplies>
 					["coord"] = { 46.6, 79.0, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
-						i(9301),	-- Recipe: Elixir of Shadow Power
+					["groups"] = {
+						i(9301, {	-- Recipe: Elixir of Shadow Power
+							["isLimited"] = true,
+						}),
 					},
 				}),
 				n(277, {	-- Roberto Pupellyverbos <Merlot Connoisseur>
 					["coord"] = { 52.0, 67.8, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						{
 							["itemID"] = 1941,	-- Cask of Merlot
 							["questID"] = 116,	-- Dry Times
