@@ -5244,28 +5244,51 @@ local EXPLORATION_ID_MAP = setmetatable({
 	},
 }, EXPLORATION_ID_META);
 
-local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
-	local submaps = {};
-	local artID = C_Map.GetMapArtID(mapID);
-	if artID then
-		submaps = setmetatable(submaps, { __index = function(t2, submapid)
-			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(mapID)
-			if exploredMapTextures then
-				for _,info in ipairs(exploredMapTextures) do
-					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-					local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
-					if remappedExplorationID then
-						rawset(t2, remappedExplorationID, true);
-					else
-						print("Missing Exploration ID for ", hash);
-					end
+local ExploredMapDataByIDMeta = { __index = function(t, mapID)
+	local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(mapID);
+	if exploredMapTextures then
+		local missingExplorationGroup;
+		local artID = C_Map.GetMapArtID(mapID);
+		local explorationByID, missingHashes = {}, {};
+		rawset(t, mapID, explorationByID);
+		for _,info in ipairs(exploredMapTextures) do
+			if info.textureWidth > 0 and info.textureHeight > 0 then
+				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
+				if remappedExplorationID then
+					rawset(explorationByID, remappedExplorationID, true);
+				else
+					table.insert(missingHashes, hash);
 				end
 			end
-			if rawget(t2, submapid) then
-				return true;
+		end
+		if #missingHashes > 0 then
+			if not missingExplorationGroup then
+				missingExplorationGroup = {};
+				missingExplorationGroup.text = "Missing Exploration Data for Map " .. mapID;
+				missingExplorationGroup.icon = "Interface\\Worldmap\\Gear_64Grey";
+				missingExplorationGroup.g = {};
+				missingExplorationGroup.map = setmetatable(constructor(mapID, NIL, "mapID"), app.BaseMap);
+				missingExplorationGroup.map.artID = artID;
+				missingExplorationGroup.map.parent = missingExplorationGroup;
+				table.insert(missingExplorationGroup.g, missingExplorationGroup.map);
 			end
-		end });
+			missingExplorationGroup.map.g = {};
+			for i,hash in ipairs(missingHashes) do
+				local exploration = app.CreateExploration(-1);
+				exploration.parent = missingExplorationGroup.map;
+				exploration.hash = hash;
+				table.insert(missingExplorationGroup.map.g, exploration);
+				print("Missing Exploration ID for ", hash, " for mapID ", mapID);
+			end
+			app.CreateMiniListForGroup(missingExplorationGroup);
+		end
+		return explorationByID;
 	end
+end };
+local ExploredMapDataByID = setmetatable({}, ExploredMapDataByIDMeta);
+local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
+	local submaps = C_Map.GetMapArtID(mapID) and ExploredMapDataByID[mapID] or {};
 	rawset(t, mapID, submaps);
 	return submaps;
 end };
@@ -5492,8 +5515,10 @@ app.ExplorationClass = {
 					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
 					if hash == t.hash then
 						local texture = info.fileDataIDs[1];
-						rawset(t, "preview", texture);
-						return texture;
+						if texture then
+							rawset(t, "preview", texture);
+							return texture;
+						end
 					end
 				end
 			end
@@ -5677,6 +5702,11 @@ app.CreateMap = function(id, t)
 		end
 	end
 	return map;
+end
+app:RegisterEvent("MAP_EXPLORATION_UPDATED");
+app.events.MAP_EXPLORATION_UPDATED = function(...)
+	print("MAP_EXPLORATION_UPDATED", ...);
+	wipe(ExploredMapDataByID);
 end
 end)();
 
@@ -8011,7 +8041,8 @@ CreateRow = function(self)
 	ClearRowData(row);
 	return row;
 end
-
+app.CreateMiniListForGroup = CreateMiniListForGroup;
+ 
 -- Collection Window Creation
 app.Windows = {};
 local function OnScrollBarMouseWheel(self, delta)
