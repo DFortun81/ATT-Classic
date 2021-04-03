@@ -2830,23 +2830,23 @@ app.BaseObjectFields = function(fields)
 end
 
 -- Category Lib
-app.BaseCategory = {
-	__index = function(t, key)
-		if key == "key" then
-			return "categoryID";
-		elseif key == "text" then
-			return L.TRADESKILL_CATEGORY_NAMES[t.categoryID] or ("Unknown Category #" .. t.categoryID);
-		elseif key == "icon" then
-			return L.TRADESKILL_CATEGORY_ICONS[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "categoryID";
+	end,
+	["text"] = function(t)
+		return L.TRADESKILL_CATEGORY_NAMES[t.categoryID] or ("Unknown Category #" .. t.categoryID);
+	end,
+	["icon"] = function(t)
+		return L.TRADESKILL_CATEGORY_ICONS[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
+	end,
 };
+app.BaseCategory = app.BaseObjectFields(fields);
 app.CreateCategory = function(id, t)
 	return setmetatable(constructor(id, t, "categoryID"), app.BaseCategory);
 end
+end)();
 
 -- Character Class Lib
 (function()
