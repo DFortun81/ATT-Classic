@@ -3801,105 +3801,137 @@ end)();
 
 -- Faction Lib
 (function()
-app.FACTION_RACES = {
-	[1] = {
-		1,	-- Human
-		3,	-- Dwarf
-		4,	-- Night Elf
-		7,	-- Gnome
+local StandingByID = {
+	{	-- 1: HATED
+		["color"] = GetProgressColor(0),
+		["threshold"] = -42000,
 	},
-	[2] = {
-		2,	-- Orc
-		5,	-- Undead
-		6,	-- Tauren
-		8,	-- Troll
-		9,	-- Goblin
-	}
+	{	-- 2: HOSTILE
+		["color"] = "00FF0000",
+		["threshold"] = -6000,
+	},
+	{	-- 3: UNFRIENDLY
+		["color"] = "00EE6622",
+		["threshold"] = -3000,
+	},
+	{	-- 4: NEUTRAL
+		["color"] = "00FFFF00",
+		["threshold"] = 0,
+	},
+	{	-- 5: FRIENDLY
+		["color"] = "0000FF00",
+		["threshold"] = 3000,
+	},
+	{	-- 6: HONORED
+		["color"] = "0000FF88",
+		["threshold"] = 9000,
+	},
+	{	-- 7: REVERED
+		["color"] = "0000FFCC",
+		["threshold"] = 21000,
+	},
+	{	-- 8: EXALTED
+		["color"] = GetProgressColor(1),
+		["threshold"] = 42000,
+	},
 };
-local HATED, HOSTILE, UNFRIENDLY, NEUTRAL, FRIENDLY, HONORED, REVERED, EXALTED = -42000, -6000, -3000, 0, 3000, 9000, 21000, 42000;
-app.BaseFaction = {
-	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
-	__index = function(t, key)
-		if key == "key" then
-			return "factionID";
-		elseif key == "filterID" then
-			return 112;
-		elseif key == "text" then
-			return app.ColorizeStandingText(t.standing, t.name);
-		elseif key == "trackable" or key == "collectible" then
-			return app.CollectibleReputations;
-		elseif key == "saved" or key == "collected" then
-			if app.AccountWideReputations then
-				if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			else
-				if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-			end
-			if t.standing >= t.maxstanding then
-				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-				SetDataSubMember("CollectedFactions", t.factionID, 1);
-				return 1;
-			end
-			
-			-- If your reputation is higher than the maximum for a different faction, passively collect this reputation.
-			if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
-				return 2;
-			end
-		elseif key == "title" then
-			return _G["FACTION_STANDING_LABEL" .. t.standing];
-		elseif key == "icon" then
-			return app.asset("Category_Factions");
-		elseif key == "standing" then
-			return select(3, GetFactionInfoByID(t.factionID)) or 4;
-		elseif key == "maxstanding" then
-			if t.minReputation and t.minReputation[1] == t.factionID then
-				return app.GetFactionStanding(t.minReputation[2]);
-			end
-			return 8;
-		elseif key == "description" then
-			return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
-		elseif key == "name" then
-			return app.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or ("Faction #" .. t.factionID)) .. " *NEW*");
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateFaction = function(id, t)
-	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
-end
-app.GetFactionStanding = function(reputationPoints)
-	-- total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket
-	-- This math is awful. There's got to be a more sensible way of doing this. [Pr3vention]
-	if not reputationPoints then return 0, 0
-	elseif reputationPoints < HOSTILE then return 1, HATED - reputationPoints
-	elseif reputationPoints < UNFRIENDLY then return 2, HOSTILE - reputationPoints
-	elseif reputationPoints < NEUTRAL then return 3, UNFRIENDLY - reputationPoints
-	elseif reputationPoints < FRIENDLY then return 4, reputationPoints - NEUTRAL
-	elseif reputationPoints < HONORED then return 5, reputationPoints - FRIENDLY
-	elseif reputationPoints < REVERED then return 6, reputationPoints - HONORED
-	elseif reputationPoints < EXALTED then return 7, reputationPoints - REVERED
-	elseif reputationPoints >= EXALTED then return 8, 0
-	else return 0
-	end
-end
-app.GetFactionStandingText = function(standingID)
-	local text = _G["FACTION_STANDING_LABEL" .. standingID];
-	return text and app.ColorizeStandingText(standingID, text) or "|cCC222200UNKNOWN|r"
-end
 app.ColorizeStandingText = function(standingID, text)
-	if standingID == 1 then return "|c00CC2222" .. text .. "|r"
-	elseif standingID == 2 then return "|c00FF0000" .. text .. "|r"
-	elseif standingID == 3 then return "|c00EE6622" .. text .. "|r"
-	elseif standingID == 4 then return "|c00FFFF00" .. text .. "|r"
-	elseif standingID == 5 then return "|c0000FF00" .. text .. "|r"
-	elseif standingID == 6 then return "|c0000FF88" .. text .. "|r"
-	elseif standingID == 7 then return "|c0000FFCC" .. text .. "|r"
-	elseif standingID == 8 then return "|c0000FFFF" .. text .. "|r"
+	local standing = StandingByID[standingID];
+	if standing then
+		return Colorize(text, standing.color);
 	else
 		local rgb = FACTION_BAR_COLORS[standingID];
 		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 	end
+end
+app.GetFactionStanding = function(reputation)
+	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
+	if reputation then
+		for i=#StandingByID,1,-1 do
+			local threshold = StandingByID[i].threshold;
+			if reputation >= threshold then
+				return i, threshold < 0 and (threshold - reputation) or (reputation - threshold);
+			end
+		end
+	end
+	return 1, 0
+end
+app.GetFactionStandingText = function(standingID)
+	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
+end
+local fields = {
+	["key"] = function(t)
+		return "factionID";
+	end,
+	["text"] = function(t)
+		return app.ColorizeStandingText((t.saved and 8) or (t.standing + (t.isFriend and 2 or 0)), t.name);
+	end,
+	["name"] = function(t)
+		return app.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or (FACTION .. " #" .. t.factionID)));
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Factions");
+	end,
+	["filterID"] = function(t)
+		return 112;
+	end,
+	["trackable"] = function(t)
+		return app.CollectibleReputations;
+	end,
+	["saved"] = function(t)
+		if app.AccountWideReputations then
+			if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
+		else
+			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+		end
+		if t.standing >= t.maxstanding then
+			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+			SetDataSubMember("CollectedFactions", t.factionID, 1);
+			return 1;
+		end
+		
+		-- If your reputation is higher than the maximum for a different faction, passively collect this reputation.
+		if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
+			return 2;
+		end
+	end,
+	["title"] = function(t)
+		local reputation = t.reputation;
+		local amount, maxreputation = select(2, app.GetFactionStanding(reputation)), t.maxreputation;
+		local title = _G["FACTION_STANDING_LABEL" .. t.standing];
+		if t.maxreputation then
+			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. t.maxreputation;
+			if reputation < 42000 then
+				return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
+			end
+		end
+		return title;
+	end,
+	["reputation"] = function(t)
+		return select(6, GetFactionInfoByID(t.factionID));
+	end,
+	["maxreputation"] = function(t)
+		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
+		return ma and m and (ma - m);
+	end,
+	["standing"] = function(t)
+		return select(3, GetFactionInfoByID(t.factionID)) or 1;
+	end,
+	["maxstanding"] = function(t)
+		if t.minReputation and t.minReputation[1] == t.factionID then
+			return app.GetFactionStanding(t.minReputation[2]);
+		end
+		return 8;
+	end,
+	["description"] = function(t)
+		return select(2, GetFactionInfoByID(t.factionID)) or "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	end,
+};
+fields.collectible = fields.trackable;
+fields.collected = fields.saved;
+app.BaseFaction = app.BaseObjectFields(fields);
+app.CreateFaction = function(id, t)
+	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
 end)();
 
