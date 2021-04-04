@@ -3897,7 +3897,7 @@ local fields = {
 		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
 		local title = _G["FACTION_STANDING_LABEL" .. t.standing];
 		if ceiling then
-			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. maxreputation;
+			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. ceiling;
 			if reputation < 42000 then
 				return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
 			end
