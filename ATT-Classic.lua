@@ -3745,7 +3745,7 @@ app.DifficultyIcons = {
 	[15] = app.asset("Difficulty_Heroic"),
 	[16] = app.asset("Difficulty_Mythic"),
 	[17] = app.asset("Difficulty_LFR"),
-	[18] = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	[18] = app.asset("Category_Event"),
 	[23] = app.asset("Difficulty_Mythic"),
 	[24] = app.asset("Difficulty_Timewalking"),
 	[33] = app.asset("Difficulty_Timewalking"),
@@ -5789,7 +5789,9 @@ app.BaseNPC = {
 		elseif key == "title" then
 			return NPCTitlesFromID[t.npcID];
 		elseif key == "icon" then
-			return L["NPC_ID_ICONS"][t.npcID] or "Interface\\Icons\\INV_Misc_Head_Human_01";
+			return L["NPC_ID_ICONS"][t.npcID]
+			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
 		elseif key == "displayID" then
 			return NPCDisplayIDFromID[t.npcID];
 		elseif key == "creatureID" then
