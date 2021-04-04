@@ -3623,23 +3623,26 @@ end
 end)();
 
 -- Currency Lib
-app.BaseCurrencyClass = {
-	__index = function(t, key)
-		if key == "key" then
-			return "currencyID";
-		elseif key == "text" then
-			return GetCurrencyLink(t.currencyID, 1) or select(1, GetCurrencyInfo(t.currencyID));
-		elseif key == "icon" then
-			return select(3, GetCurrencyInfo(t.currencyID));
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "currencyID";
+	end,
+	["text"] = function(t)
+		return t.link or select(1, GetCurrencyInfo(t.currencyID));
+	end,
+	["icon"] = function(t)
+		return select(3, GetCurrencyInfo(t.currencyID));
+	end,
+	["link"] = function(t)
+		return GetCurrencyLink(t.currencyID, 1);
+	end,
 };
+app.BaseCurrencyClass = app.BaseObjectFields(fields);
 app.CreateCurrencyClass = function(id, t)
 	return setmetatable(constructor(id, t, "currencyID"), app.BaseCurrencyClass);
 end
+end)();
 
 app.BaseDeathClass = {
 	__index = function(t, key)
