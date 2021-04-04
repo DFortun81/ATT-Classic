@@ -3584,19 +3584,12 @@ local fields = {
 	["text"] = function(t)
 		local name = UnitName(t.unit);
 		if name then
-			rawset(t, "name", name);
-			local className, classFile, classID = UnitClass(t.unit);
+			local classFile = select(2, UnitClass(t.unit));
 			if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-			rawset(t, "className", className);
-			rawset(t, "classFile", classFile);
-			rawset(t, "classID", classID);
 			rawset(t, "text", name);
 			return name;
 		end
 		return t.unit;
-	end,
-	["icon"] = function(t)
-		return t.unit ~= "player" and t.classID and classIcons[t.classID];
 	end,
 	["name"] = function(t)
 		return UnitName(t.unit);
@@ -10043,11 +10036,11 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 								local lootMethod, partyIndex, raidIndex = GetLootMethod();
 								if lootMethod == "master" then
 									if raidIndex then
-										data.unit = GetRaidRosterInfo(raidIndex);
+										data.unit = "raid" .. raidIndex;
 									elseif partyIndex == 0 then
 										data.unit = "player";
 									else
-										data.unit = UnitName("party" .. partyIndex);
+										data.unit = "party" .. partyIndex;
 									end
 									data.text = nil;
 									data.visible = true;
