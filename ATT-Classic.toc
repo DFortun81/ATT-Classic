@@ -24,7 +24,6 @@ locales\zhCN.lua
 db\Presets.lua
 Settings.lua
 ATT-Classic.lua
-db\FactionDB.lua
 db\FlightPathDB.lua
 db\RaceDB.lua
 db\Categories.lua

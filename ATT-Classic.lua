@@ -3867,7 +3867,7 @@ local fields = {
 		return app.ColorizeStandingText((t.saved and 8) or (t.standing + (t.isFriend and 2 or 0)), t.name);
 	end,
 	["name"] = function(t)
-		return app.FactionDB[t.factionID] or ((select(1, GetFactionInfoByID(t.factionID)) or (FACTION .. " #" .. t.factionID)));
+		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
 	end,
 	["icon"] = function(t)
 		return app.asset("Category_Factions");
