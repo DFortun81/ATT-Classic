@@ -2861,6 +2861,13 @@ local classIcons = {
 	[9] = app.asset("ClassIcon_Warlock"),
 	[11] = app.asset("ClassIcon_Druid"),
 };
+local GetClassIDFromClassFile = function(classFile)
+	for i,icon in pairs(classIcons) do
+		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
+			return i;
+		end
+	end
+end
 local SoftReserveUnitOnClick = function(self, button)
 	local guid = self.ref.guid or self.ref.unit;
 	if guid then
@@ -2950,284 +2957,6 @@ local SoftReserveUnitOnClick = function(self, button)
 	end
 	return true;
 end
-local guildCheckCooldown = 0;
-app.PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
-	-- Let WoW parse it.
-	local guid = UnitGUID(info);
-	if guid then
-		rawset(t, info, guid);
-		return guid;
-	end
-	if string.match(info, "Player-") then
-		-- Already a GUID!
-		rawset(t, info, info);
-		return info;
-	end
-	
-	-- Only check the guild once every 10 seconds.
-	if guildCheckCooldown <= time() then
-		local count = GetNumGuildMembers();
-		if count > 0 then
-			for guildIndex = 1, count, 1 do
-				local name, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
-				if name and guid then
-					rawset(t, strsplit('-', name), guid);
-				end
-			end
-		end
-		guildCheckCooldown = time() + 10;
-		return rawget(t, info);
-	end
-end });
-
-app.GetClassIDFromClassFile = function(classFile)
-	for i,icon in pairs(classIcons) do
-		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
-			return i;
-		end
-	end
-end
-app.BaseCharacterClass = {
-	__index = function(t, key)
-		if key == "key" then
-			return "classID";
-		elseif key == "text" then
-			local text = "|c" .. t.classColors.colorStr .. t.name .. "|r";
-			rawset(t, "text", text);
-			return text;
-		elseif key == "name" then
-			return C_CreatureInfo.GetClassInfo(t.classID).className;
-		elseif key == "icon" then
-			return classIcons[t.classID];
-		elseif key == "c" then
-			local c = { t.classID };
-			rawset(t, "c", c);
-			return c;
-		elseif key == "nmc" then
-			return t.classID ~= app.ClassIndex;
-		elseif key == "classColors" then
-			return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateCharacterClass = function(id, t)
-	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
-end
-app.BaseUnit = {
-	__index = function(t, key)
-		if key == "key" then
-			return "unit";
-		elseif key == "text" then
-			local name = UnitName(t.unit);
-			if name then
-				rawset(t, "name", name);
-				local className, classFile, classID = UnitClass(t.unit);
-				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-				if rawget(t, "isML") then name = name .. " |cFFFFFFFF(" .. MASTER_LOOTER .. ")|r"; end
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
-				rawset(t, "text", name);
-				return name;
-			end
-			return t.unit;
-		elseif key == "name" then
-			return UnitName(t.unit);
-		elseif key == "guid" then
-			return UnitGUID(t.unit);
-		elseif key == "title" then
-			if IsInGroup() then
-				if rawget(t, "isML") then return MASTER_LOOTER; end
-				if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
-			end
-		elseif key == "description" then
-			return LEVEL .. " " .. (UnitLevel(t.unit) or RETRIEVING_DATA) .. " " .. (UnitRace(t.unit) or RETRIEVING_DATA) .. " " .. (UnitClass(t.unit) or RETRIEVING_DATA);
-		elseif key == "icon" then
-			if t.classID then return classIcons[t.classID]; end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateUnit = function(unit, t)
-	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
-end
-app.BaseSoftReserveUnit = {
-	__index = function(t, key)
-		if key == "key" then
-			return "unit";
-		elseif key == "unitText" then
-			local name, className, classFile, classID = UnitName(t.unit);
-			if name then
-				className, classFile, classID = UnitClass(t.unit);
-			elseif #{strsplit("-", t.unit)} > 1 then
-				-- It's a GUID.
-				rawset(t, "guid", t.unit);
-				className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
-				classID = app.GetClassIDFromClassFile(classFile);
-			end
-			if name then
-				rawset(t, "name", name);
-				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
-				return name;
-			end
-			return t.unit;
-		elseif key == "itemText" then
-			local itemID = t.itemID;
-			if itemID then
-				local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
-				if itemLink then
-					return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink .. (t.mapText or "");
-				else
-					return RETRIEVING_DATA;
-				end
-			else
-				return "No Soft Reserve Selected";
-			end
-		elseif key == "mapText" then
-			local mapID = t.internalMapID;
-			if mapID and mapID ~= app.GetCurrentMapID() then
-				return " (" .. app.GetMapName(mapID) .. ")";
-			end
-		elseif key == "text" then
-			local name = t.unitText;
-			if name then
-				return name .. " - " .. t.itemText;
-			end
-			return t.unit;
-		elseif key == "name" then
-			return UnitName(t.unit);
-		elseif key == "guid" then
-			return UnitGUID(t.unit);
-		elseif key == "icon" then
-			if t.classID then return classIcons[t.classID]; end
-		elseif key == "visible" then
-			return true;
-		elseif key == "itemID" then
-			local guid = t.guid;
-			if guid then
-				local reserve = rawget(GetDataMember("SoftReserves"), guid);
-				if reserve then
-					return type(reserve) == 'number' and reserve or reserve[1];
-				end
-			end
-		elseif key == "persistence" then
-			local guid = t.guid;
-			if guid then
-				local reserve = rawget(GetDataMember("SoftReserves"), guid);
-				if reserve then
-					local itemID = type(reserve) == 'number' and reserve or reserve[1];
-					if itemID then
-						local persistence = rawget(GetDataMember("SoftReservePersistence"), guid);
-						if persistence then return persistence[itemID]; end
-						return 0;
-					end
-				end
-			end
-		elseif key == "roll" then
-			if app.Settings:GetTooltipSetting("SoftReservePersistence") then
-				local persistence = t.persistence;
-				if persistence and persistence > 0 then
-					return 100 + (persistence * 10);
-				else
-					return 100;
-				end
-			end
-		elseif key == "preview" then
-			return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
-		elseif key == "link" then
-			if t.itemID then
-				return select(2, GetItemInfo(t.itemID));
-			end
-		elseif key == "tooltipText" then
-			local text = t.unitText;
-			local guid = t.guid;
-			local roll = t.roll;
-			local icon = t.icon;
-			if icon then text = "|T" .. icon .. ":0|t " .. text; end
-			if roll and app.Settings:GetTooltipSetting("SoftReservePersistence") then text = text .. " (" .. roll .. ")"; end
-			if guid and not IsGUIDInGroup(guid) then
-				text = text .. " |CFFFFFFFF(Not in Group)|r";
-			end
-			return text;
-		elseif key == "summary" then
-			return t.roll;
-		elseif key == "OnClick" then
-			return SoftReserveUnitOnClick;
-		elseif key == "itemName" then
-			local itemID = t.itemID;
-			if itemID then
-				local itemName = GetItemInfo(itemID);
-				if itemName then
-					return itemName;
-				else
-					return RETRIEVING_DATA;
-				end
-			else
-				return "No Soft Reserve Selected";
-			end
-		elseif key == "crs" then
-			local itemID = t.itemID;
-			if itemID then
-				local searchResults = app.SearchForField("itemID", itemID);
-				if searchResults and #searchResults > 0 then
-					for i,o in ipairs(searchResults) do
-						if o.itemID then
-							if o.crs then
-								return o.crs;
-							end
-							if o.qgs then
-								return o.qgs;
-							end
-							if o.parent then
-								if o.parent.npcID and o.parent.npcID > 0 then
-									return { o.parent.npcID };
-								end
-								if o.parent.cr then
-									return { o.parent.cr };
-								end
-								if o.parent.crs then
-									return o.parent.crs;
-								end
-								if o.parent.qgs then
-									return o.parent.qgs;
-								end
-							end
-						end
-					end
-				end
-			end
-		elseif key == "internalMapID" then
-			local itemID = t.itemID;
-			if itemID then
-				local searchResults = app.SearchForField("itemID", itemID);
-				if searchResults and #searchResults > 0 then
-					for i,o in ipairs(searchResults) do
-						if o.itemID then
-							local mapID = GetRelativeValue(o, "mapID");
-							if mapID then
-								return mapID;
-							end
-						end
-					end
-				end
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateSoftReserveUnit = function(unit, t)
-	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
-end
 app.GetGroupType = function()
 	if IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance() then
 		return "INSTANCE_CHAT";
@@ -3285,6 +3014,34 @@ app.ParseSoftReserve = function(app, guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Send back an error message.
 	SendGUIDWhisper("Unrecognized Command. Please use '!sr [itemLink/itemID]'. You can send an item link or an itemID from WoWHead. EX: '!sr 12345' or '!sr [Azuresong Mageblade]'", guid);
 end
+app.PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
+	-- Let WoW parse it.
+	local guid = UnitGUID(info);
+	if guid then
+		rawset(t, info, guid);
+		return guid;
+	end
+	if string.match(info, "Player-") then
+		-- Already a GUID!
+		rawset(t, info, info);
+		return info;
+	end
+	
+	-- Only check the guild once every 10 seconds.
+	if (t.cooldown or 0) <= time() then
+		local count = GetNumGuildMembers();
+		if count > 0 then
+			for guildIndex = 1, count, 1 do
+				local name, _, _, _, _, _, _, _, _, _, _, _, _, _, _, _, guid = GetGuildRosterInfo(guildIndex);
+				if name and guid then
+					rawset(t, strsplit('-', name), guid);
+				end
+			end
+		end
+		t.cooldown = time() + 10;
+		return rawget(t, info);
+	end
+end });
 app.PushSoftReserve = function(ignoreZero)
 	local guid, itemID, timeStamp = UnitGUID("player");
 	local reserves = GetDataMember("SoftReserves");
@@ -3503,6 +3260,224 @@ app.UpdateSoftReserve = function(app, guid, itemID, timeStamp, silentMode, isCur
 		end
 	end
 end
+
+local fields = {
+	["key"] = function(t)
+		return "classID";
+	end,
+	["text"] = function(t)
+		local text = "|c" .. t.classColors.colorStr .. t.name .. "|r";
+		rawset(t, "text", text);
+		return text;
+	end,
+	["icon"] = function(t)
+		return classIcons[t.classID];
+	end,
+	["name"] = function(t)
+		return C_CreatureInfo.GetClassInfo(t.classID).className;
+	end,
+	["c"] = function(t)
+		local c = { t.classID };
+		rawset(t, "c", c);
+		return c;
+	end,
+	["nmc"] = function(t)
+		return t.classID ~= app.ClassIndex;
+	end,
+	["classColors"] = function(t)
+		return RAID_CLASS_COLORS[C_CreatureInfo.GetClassInfo(t.classID).classFile];
+	end,
+};
+app.BaseCharacterClass = app.BaseObjectFields(fields);
+app.CreateCharacterClass = function(id, t)
+	return setmetatable(constructor(id, t, "classID"), app.BaseCharacterClass);
+end
+
+local fields = {
+	["key"] = function(t)
+		return "unit";
+	end,
+	["text"] = function(t)
+		local name = t.unitText;
+		if name then
+			return name .. " - " .. t.itemText;
+		end
+		return t.unit;
+	end,
+	["unitText"] = function(t)
+		local name, className, classFile, classID = UnitName(t.unit);
+		if name then
+			className, classFile, classID = UnitClass(t.unit);
+		elseif #{strsplit("-", t.unit)} > 1 then
+			-- It's a GUID.
+			rawset(t, "guid", t.unit);
+			className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
+			classID = GetClassIDFromClassFile(classFile);
+		end
+		if name then
+			rawset(t, "name", name);
+			if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+			rawset(t, "className", className);
+			rawset(t, "classFile", classFile);
+			rawset(t, "classID", classID);
+			return name;
+		end
+		return t.unit;
+	end,
+	["itemText"] = function(t)
+		local itemID = t.itemID;
+		if itemID then
+			local itemName, itemLink,_,_,_,_,_,_,_,icon = GetItemInfo(itemID);
+			if itemLink then
+				return (icon and ("|T" .. icon .. ":0|t") or "") .. itemLink .. (t.mapText or "");
+			else
+				return RETRIEVING_DATA;
+			end
+		else
+			return "No Soft Reserve Selected";
+		end
+	end,
+	["mapText"] = function(t)
+		local mapID = t.internalMapID;
+		if mapID and mapID ~= app.GetCurrentMapID() then
+			return " (" .. app.GetMapName(mapID) .. ")";
+		end
+	end,
+	["name"] = function(t)
+		return UnitName(t.unit);
+	end,
+	["guid"] = function(t)
+		return UnitGUID(t.unit);
+	end,
+	["icon"] = function(t)
+		return t.classID and classIcons[t.classID];
+	end,
+	["visible"] = function(t)
+		return true;
+	end,
+	["itemID"] = function(t)
+		local guid = t.guid;
+		if guid then
+			local reserve = rawget(GetDataMember("SoftReserves"), guid);
+			if reserve then
+				return type(reserve) == 'number' and reserve or reserve[1];
+			end
+		end
+	end,
+	["persistence"] = function(t)
+		local guid = t.guid;
+		if guid then
+			local reserve = rawget(GetDataMember("SoftReserves"), guid);
+			if reserve then
+				local itemID = type(reserve) == 'number' and reserve or reserve[1];
+				if itemID then
+					local persistence = rawget(GetDataMember("SoftReservePersistence"), guid);
+					if persistence then return persistence[itemID]; end
+					return 0;
+				end
+			end
+		end
+	end,
+	["roll"] = function(t)
+		if app.Settings:GetTooltipSetting("SoftReservePersistence") then
+			local persistence = t.persistence;
+			if persistence and persistence > 0 then
+				return 100 + (persistence * 10);
+			else
+				return 100;
+			end
+		end
+	end,
+	["preview"] = function(t)
+		return t.itemID and select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+	end,
+	["link"] = function(t)
+		return t.itemID and select(2, GetItemInfo(t.itemID));
+	end,
+	["tooltipText"] = function(t)
+		local text = t.unitText;
+		local guid = t.guid;
+		local roll = t.roll;
+		local icon = t.icon;
+		if icon then text = "|T" .. icon .. ":0|t " .. text; end
+		if roll and app.Settings:GetTooltipSetting("SoftReservePersistence") then text = text .. " (" .. roll .. ")"; end
+		if guid and not IsGUIDInGroup(guid) then
+			text = text .. " |CFFFFFFFF(Not in Group)|r";
+		end
+		return text;
+	end,
+	["summary"] = function(t)
+		return t.roll;
+	end,
+	["OnClick"] = function(t)
+		return SoftReserveUnitOnClick;
+	end,
+	["itemName"] = function(t)
+		local itemID = t.itemID;
+		if itemID then
+			local itemName = GetItemInfo(itemID);
+			if itemName then
+				return itemName;
+			else
+				return RETRIEVING_DATA;
+			end
+		else
+			return "No Soft Reserve Selected";
+		end
+	end,
+	["crs"] = function(t)
+		local itemID = t.itemID;
+		if itemID then
+			local searchResults = app.SearchForField("itemID", itemID);
+			if searchResults and #searchResults > 0 then
+				for i,o in ipairs(searchResults) do
+					if o.itemID then
+						if o.crs then
+							return o.crs;
+						end
+						if o.qgs then
+							return o.qgs;
+						end
+						if o.parent then
+							if o.parent.npcID and o.parent.npcID > 0 then
+								return { o.parent.npcID };
+							end
+							if o.parent.cr then
+								return { o.parent.cr };
+							end
+							if o.parent.crs then
+								return o.parent.crs;
+							end
+							if o.parent.qgs then
+								return o.parent.qgs;
+							end
+						end
+					end
+				end
+			end
+		end
+	end,
+	["internalMapID"] = function(t)
+		local itemID = t.itemID;
+		if itemID then
+			local searchResults = app.SearchForField("itemID", itemID);
+			if searchResults and #searchResults > 0 then
+				for i,o in ipairs(searchResults) do
+					if o.itemID then
+						local mapID = GetRelativeValue(o, "mapID");
+						if mapID then
+							return mapID;
+						end
+					end
+				end
+			end
+		end
+	end,
+};
+app.BaseSoftReserveUnit = app.BaseObjectFields(fields);
+app.CreateSoftReserveUnit = function(unit, t)
+	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
+end
 app.BaseQuestUnit = {
 	__index = function(t, key)
 		if key == "key" then
@@ -3515,7 +3490,7 @@ app.BaseQuestUnit = {
 				-- It's a GUID.
 				rawset(t, "guid", t.unit);
 				className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
-				classID = app.GetClassIDFromClassFile(classFile);
+				classID = GetClassIDFromClassFile(classFile);
 			end
 			if name then
 				rawset(t, "name", name);
@@ -3584,6 +3559,46 @@ app.BaseQuestUnit = {
 };
 app.CreateQuestUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseQuestUnit);
+end
+app.BaseUnit = {
+	__index = function(t, key)
+		if key == "key" then
+			return "unit";
+		elseif key == "text" then
+			local name = UnitName(t.unit);
+			if name then
+				rawset(t, "name", name);
+				local className, classFile, classID = UnitClass(t.unit);
+				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+				if rawget(t, "isML") then name = name .. " |cFFFFFFFF(" .. MASTER_LOOTER .. ")|r"; end
+				rawset(t, "className", className);
+				rawset(t, "classFile", classFile);
+				rawset(t, "classID", classID);
+				rawset(t, "text", name);
+				return name;
+			end
+			return t.unit;
+		elseif key == "name" then
+			return UnitName(t.unit);
+		elseif key == "guid" then
+			return UnitGUID(t.unit);
+		elseif key == "title" then
+			if IsInGroup() then
+				if rawget(t, "isML") then return MASTER_LOOTER; end
+				if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
+			end
+		elseif key == "description" then
+			return LEVEL .. " " .. (UnitLevel(t.unit) or RETRIEVING_DATA) .. " " .. (UnitRace(t.unit) or RETRIEVING_DATA) .. " " .. (UnitClass(t.unit) or RETRIEVING_DATA);
+		elseif key == "icon" then
+			return t.classID and classIcons[t.classID];
+		else
+			-- Something that isn't dynamic.
+			return table[key];
+		end
+	end
+};
+app.CreateUnit = function(unit, t)
+	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
 end)();
 
@@ -10773,9 +10788,9 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								elseif esc then
 									esc = false;
 									if c == "t" then
-										c = tab;
+										c = "\t";
 									elseif c == "n" or c == "r" then
-										c = nl;
+										c = "\n";
 									else
 										-- Add back the backslash.
 										word = word .. "\\";
