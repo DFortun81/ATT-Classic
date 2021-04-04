@@ -2862,14 +2862,18 @@ local classIcons = {
 	[3] = app.asset("ClassIcon_Hunter"),
 	[4] = app.asset("ClassIcon_Rogue"),
 	[5] = app.asset("ClassIcon_Priest"),
+	[6] = app.asset("ClassIcon_DeathKnight"),
 	[7] = app.asset("ClassIcon_Shaman"),
 	[8] = app.asset("ClassIcon_Mage"),
 	[9] = app.asset("ClassIcon_Warlock"),
+	[10] = app.asset("ClassIcon_Monk"),
 	[11] = app.asset("ClassIcon_Druid"),
+	[12] = app.asset("ClassIcon_DemonHunter"),
 };
 local GetClassIDFromClassFile = function(classFile)
 	for i,icon in pairs(classIcons) do
-		if C_CreatureInfo.GetClassInfo(i).classFile == classFile then
+		local info = C_CreatureInfo.GetClassInfo(i);
+		if info and info.classFile == classFile then
 			return i;
 		end
 	end
@@ -3585,11 +3589,16 @@ local fields = {
 		local name = UnitName(t.unit);
 		if name then
 			local classFile = select(2, UnitClass(t.unit));
-			if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-			rawset(t, "text", name);
+			if classFile then
+				name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r";
+				rawset(t, "classID", GetClassIDFromClassFile(classFile));
+			end
 			return name;
 		end
 		return t.unit;
+	end,
+	["icon"] = function(t)
+		if t.classID and not app.Settings:GetTooltipSetting("Models") then return classIcons[t.classID]; end
 	end,
 	["name"] = function(t)
 		return UnitName(t.unit);
