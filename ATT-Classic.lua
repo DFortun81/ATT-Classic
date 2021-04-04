@@ -3879,11 +3879,8 @@ local fields = {
 		return app.CollectibleReputations;
 	end,
 	["saved"] = function(t)
-		if app.AccountWideReputations then
-			if GetDataSubMember("CollectedFactions", t.factionID) then return 1; end
-		else
-			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-		end
+		if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 		if t.standing >= t.maxstanding then
 			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 			SetDataSubMember("CollectedFactions", t.factionID, 1);
