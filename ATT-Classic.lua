@@ -3887,17 +3887,17 @@ local fields = {
 			return 1;
 		end
 		
-		-- If your reputation is higher than the maximum for a different faction, passively collect this reputation.
+		-- If your reputation is higher than the maximum for a different faction, return partial completion.
 		if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
 			return 2;
 		end
 	end,
 	["title"] = function(t)
 		local reputation = t.reputation;
-		local amount, maxreputation = select(2, app.GetFactionStanding(reputation)), t.maxreputation;
+		local amount, ceiling = select(2, app.GetFactionStanding(reputation)), t.ceiling;
 		local title = _G["FACTION_STANDING_LABEL" .. t.standing];
-		if t.maxreputation then
-			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. t.maxreputation;
+		if ceiling then
+			title = title .. DESCRIPTION_SEPARATOR .. amount .. " / " .. maxreputation;
 			if reputation < 42000 then
 				return title .. " (" .. (42000 - reputation) .. " to " .. _G["FACTION_STANDING_LABEL8"] .. ")";
 			end
@@ -3907,7 +3907,7 @@ local fields = {
 	["reputation"] = function(t)
 		return select(6, GetFactionInfoByID(t.factionID));
 	end,
-	["maxreputation"] = function(t)
+	["ceiling"] = function(t)
 		local _, _, _, m, ma = GetFactionInfoByID(t.factionID);
 		return ma and m and (ma - m);
 	end,
