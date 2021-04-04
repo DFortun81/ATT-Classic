@@ -3644,64 +3644,73 @@ app.CreateCurrencyClass = function(id, t)
 end
 end)();
 
-app.BaseDeathClass = {
-	__index = function(t, key)
-		if key == "key" then
-			return "deaths";
-		elseif key == "text" then
-			return "Total Deaths";
-		elseif key == "icon" then
-			return app.asset("Category_Deaths");
-		elseif key == "progress" then
-			if t.visible then
-				return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
-			else
-				return 0;
-			end
-		elseif key == "total" then
-			if t.visible then
-				return 1000;
-			else
-				return 0;
-			end
-		elseif key == "description" then
-			return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
+-- Death Tracker Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "deaths";
+	end,
+	["text"] = function(t)
+		return "Total Deaths";
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Deaths");
+	end,
+	["progress"] = function(t)
+		if t.visible then
+			return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
 		else
-			-- Something that isn't dynamic.
-			return table[key];
+			return 0;
 		end
-	end
-};
-app.CreateDeathClass = function()
-	local t = setmetatable({}, app.BaseDeathClass);
-	t.OnTooltip = function(self, tooltip)
-		tooltip:AddLine("Total Deaths Per Character:");
+	end,
+	["total"] = function(t)
+		if t.visible then
+			return 1000;
+		else
+			return 0;
+		end
+	end,
+	["description"] = function(t)
+		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
+	end,
+	["OnTooltip"] = function(t)
+		local c = {};
 		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
 		if deathsPerCharacter then
 			local characters = GetDataMember("Characters");
-			local c = {};
 			for guid,deaths in pairs(deathsPerCharacter) do
 				if guid and deaths and deaths > 0 then
-					table.insert(c, { ["name"] = characters[guid] or guid or "???", ["deaths"] = deaths or 0 });
+					table.insert(c, {
+						["name"] = characters[guid] or guid or "???",
+						["deaths"] = deaths or 0
+					});
 				end
 			end
+		end
+		if #c > 0 then
+			GameTooltip:AddLine(" ");
+			GameTooltip:AddLine("Deaths Per Character:");
 			table.sort(c, function(a, b)
 				return a.deaths > b.deaths;
 			end);
 			for i,data in ipairs(c) do
-				tooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
+				GameTooltip:AddDoubleLine("  " .. data.name, data.deaths, 1, 1, 1);
 			end
-		else
-			tooltip:AddLine("  No Deaths! Literal god!");
 		end
-	end
-	t.OnUpdate = function(self)
+	end,
+	["OnUpdate"] = function(t)
 		t.visible = app.Settings:Get("Thing:Deaths");
-		t.parent.progress = t.parent.progress + t.progress;
-		t.parent.total = t.parent.total + t.total;
-	end
-	return t;
+		if t.visible then
+			t.parent.progress = t.parent.progress + t.progress;
+			t.parent.total = t.parent.total + t.total;
+		end
+	end,
+};
+app.BaseDeathClass = app.BaseObjectFields(fields);
+app.CreateDeathClass = function()
+	return setmetatable({}, app.BaseDeathClass);
 end
+end)();
 
 -- Difficulty Lib
 (function()
@@ -7924,7 +7933,7 @@ local function RowOnEnter(self)
 			end
 		end
 		
-		if reference.OnTooltip then reference:OnTooltip(GameTooltip); end
+		if reference.OnTooltip then reference:OnTooltip(); end
 		
 		-- Show Quest Prereqs
 		if reference.sourceQuests and not reference.saved then
