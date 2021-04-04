@@ -381,6 +381,12 @@ GameTooltipModel.TrySetModel = function(self, reference)
 			self.Model:Show();
 			self:Show();
 			return true;
+		elseif reference.unit and not reference.icon then
+			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
+			self.Model:SetCamDistanceScale(reference.modelScale or 1);
+			self.Model:SetUnit(reference.unit);
+			self.Model:Show();
+			self:Show();
 		end
 		if reference.model then
 			self.Model:SetFacing(reference.modelRotation and ((reference.modelRotation * math.pi) / 180) or MODELFRAME_DEFAULT_ROTATION);
@@ -3478,125 +3484,137 @@ app.BaseSoftReserveUnit = app.BaseObjectFields(fields);
 app.CreateSoftReserveUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseSoftReserveUnit);
 end
-app.BaseQuestUnit = {
-	__index = function(t, key)
-		if key == "key" then
-			return "unit";
-		elseif key == "unitText" then
-			local name, className, classFile, classID = UnitName(t.unit);
-			if name then
-				className, classFile, classID = UnitClass(t.unit);
-			elseif #{strsplit("-", t.unit)} > 1 then
-				-- It's a GUID.
-				rawset(t, "guid", t.unit);
-				className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
-				classID = GetClassIDFromClassFile(classFile);
-			end
+
+local fields = {
+	["key"] = function(t)
+		return "unit";
+	end,
+	["unitText"] = function(t)
+		local name, className, classFile, classID = UnitName(t.unit);
+		if name then
+			className, classFile, classID = UnitClass(t.unit);
+		elseif #{strsplit("-", t.unit)} > 1 then
+			-- It's a GUID.
+			rawset(t, "guid", t.unit);
+			className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
+			classID = GetClassIDFromClassFile(classFile);
+		end
+		if name then
+			rawset(t, "name", name);
+			if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+			rawset(t, "className", className);
+			rawset(t, "classFile", classFile);
+			rawset(t, "classID", classID);
+			return name;
+		end
+		return t.unit;
+	end,
+	["text"] = function(t)
+		return t.unitText;
+	end,
+	["icon"] = function(t)
+		return t.classID and classIcons[t.classID];
+	end,
+	["name"] = function(t)
+		local name = UnitName(t.unit);
+		if name then
+			rawset(t, "name", name);
+			return name;
+		elseif #{strsplit("-", t.unit)} > 1 then
+			-- It's a GUID.
+			rawset(t, "guid", t.unit);
+			local className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
 			if name then
 				rawset(t, "name", name);
-				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
 				return name;
 			end
-			return t.unit;
-		elseif key == "text" then
-			return t.unitText;
-		elseif key == "name" then
-			local name = UnitName(t.unit);
-			if name then
-				rawset(t, "name", name);
-				return name;
-			elseif #{strsplit("-", t.unit)} > 1 then
-				-- It's a GUID.
-				rawset(t, "guid", t.unit);
-				local className, classFile, _, _, _, name = GetPlayerInfoByGUID(t.unit);
-				if name then
-					rawset(t, "name", name);
-					return name;
-				end
-			end
-		elseif key == "guid" then
-			return UnitGUID(t.unit);
-		elseif key == "icon" then
-			if t.classID then return classIcons[t.classID]; end
-		elseif key == "visible" then
-			return true;
-		elseif key == "collectible" then
-			return true;
-		elseif key == "trackable" then
-			return true;
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "OnClick" then
-			return app.NoFilter;
-		elseif key == "OnUpdate" then
-			return app.AlwaysShowUpdate;
-		elseif key == "saved" then
-			local questID = GetRelativeValue(t, "questID");
-			if questID then
-				local guid = t.guid;
-				if guid and questID then
-					if guid == app.GUID then
-						return IsQuestFlaggedCompleted(questID);
-					else
-						local questsForGUID = GetDataMember("GroupQuestsByGUID")[guid] or GetDataMember("CollectedQuestsPerCharacter")[guid];
-						return questsForGUID and questsForGUID[questID];
-					end
-				end
-			end
-		elseif key == "tooltipText" then
-			local text = t.unitText;
-			local icon = t.icon;
-			if icon then text = "|T" .. icon .. ":0|t " .. text; end
-			return text;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
 		end
 	end,
+	["guid"] = function(t)
+		return UnitGUID(t.unit);
+	end,
+	["visible"] = function(t)
+		return true;
+	end,
+	["collectible"] = function(t)
+		return true;
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["collected"] = function(t)
+		return t.saved;
+	end,
+	["OnClick"] = function(t)
+		return app.NoFilter;
+	end,
+	["OnUpdate"] = function(t)
+		return app.AlwaysShowUpdate;
+	end,
+	["saved"] = function(t)
+		local questID = GetRelativeValue(t, "questID");
+		if questID then
+			local guid = t.guid;
+			if guid and questID then
+				if guid == app.GUID then
+					return IsQuestFlaggedCompleted(questID);
+				else
+					local questsForGUID = GetDataMember("GroupQuestsByGUID")[guid] or GetDataMember("CollectedQuestsPerCharacter")[guid];
+					return questsForGUID and questsForGUID[questID];
+				end
+			end
+		end
+	end,
+	["tooltipText"] = function(t)
+		local text = t.unitText;
+		local icon = t.icon;
+		if icon then text = "|T" .. icon .. ":0|t " .. text; end
+		return text;
+	end,
 };
+app.BaseQuestUnit = app.BaseObjectFields(fields);
 app.CreateQuestUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseQuestUnit);
 end
-app.BaseUnit = {
-	__index = function(t, key)
-		if key == "key" then
-			return "unit";
-		elseif key == "text" then
-			local name = UnitName(t.unit);
-			if name then
-				rawset(t, "name", name);
-				local className, classFile, classID = UnitClass(t.unit);
-				if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
-				if rawget(t, "isML") then name = name .. " |cFFFFFFFF(" .. MASTER_LOOTER .. ")|r"; end
-				rawset(t, "className", className);
-				rawset(t, "classFile", classFile);
-				rawset(t, "classID", classID);
-				rawset(t, "text", name);
-				return name;
-			end
-			return t.unit;
-		elseif key == "name" then
-			return UnitName(t.unit);
-		elseif key == "guid" then
-			return UnitGUID(t.unit);
-		elseif key == "title" then
-			if IsInGroup() then
-				if rawget(t, "isML") then return MASTER_LOOTER; end
-				if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
-			end
-		elseif key == "description" then
-			return LEVEL .. " " .. (UnitLevel(t.unit) or RETRIEVING_DATA) .. " " .. (UnitRace(t.unit) or RETRIEVING_DATA) .. " " .. (UnitClass(t.unit) or RETRIEVING_DATA);
-		elseif key == "icon" then
-			return t.classID and classIcons[t.classID];
-		else
-			-- Something that isn't dynamic.
-			return table[key];
+
+local fields = {
+	["key"] = function(t)
+		return "unit";
+	end,
+	["text"] = function(t)
+		local name = UnitName(t.unit);
+		if name then
+			rawset(t, "name", name);
+			local className, classFile, classID = UnitClass(t.unit);
+			if classFile then name = "|c" .. RAID_CLASS_COLORS[classFile].colorStr .. name .. "|r"; end
+			rawset(t, "className", className);
+			rawset(t, "classFile", classFile);
+			rawset(t, "classID", classID);
+			rawset(t, "text", name);
+			return name;
 		end
-	end
+		return t.unit;
+	end,
+	["icon"] = function(t)
+		return t.unit ~= "player" and t.classID and classIcons[t.classID];
+	end,
+	["name"] = function(t)
+		return UnitName(t.unit);
+	end,
+	["guid"] = function(t)
+		return UnitGUID(t.unit);
+	end,
+	["title"] = function(t)
+		if IsInGroup() then
+			if rawget(t, "isML") then return MASTER_LOOTER; end
+			if UnitIsGroupLeader(t.name) then return RAID_LEADER; end
+		end
+	end,
+	["description"] = function(t)
+		return LEVEL .. " " .. (UnitLevel(t.unit) or RETRIEVING_DATA) .. " " .. (UnitRace(t.unit) or RETRIEVING_DATA) .. " " .. (UnitClass(t.unit) or RETRIEVING_DATA);
+	end,
 };
+app.BaseUnit = app.BaseObjectFields(fields);
 app.CreateUnit = function(unit, t)
 	return setmetatable(constructor(unit, t, "unit"), app.BaseUnit);
 end
@@ -8388,6 +8406,24 @@ function app:GetDataCache()
 		
 		-- Track Deaths!
 		table.insert(g, app:CreateDeathClass());
+		
+		-- Yourself.
+		table.insert(g, app.CreateUnit("player", {
+			["description"] = "Awarded for logging in.\n\nGood job! YOU DID IT!\n\nOnly visible while in Debug Mode.",
+			["races"] = { app.RaceIndex },
+			["c"] = { app.ClassIndex },
+			["r"] = app.FactionID,
+			["collected"] = 1,
+			["nmr"] = false,
+			["OnUpdate"] = function(self)
+				self.lvl = app.Level;
+				if app.Settings:Get("DebugMode") then
+					self.collectible = true;
+				else
+					self.collectible = false;
+				end
+			end
+		}));
 		
 		-- The Main Window's Data
 		app.refreshDataForce = true;
