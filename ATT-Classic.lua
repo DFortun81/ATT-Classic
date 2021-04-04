@@ -3951,6 +3951,268 @@ app.CreateFilter = function(id, t)
 end
 end)();
 
+-- Flight Path Lib
+(function()
+local arrOfNodes = {
+	1414,	-- Kalimdor
+	1415,	-- Eastern Kingdoms
+	1941,	-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+	1943,	-- Azuremyst Isle (and Bloodmyst)
+	1944,	-- Hellfire Peninsula (All of Outland)
+	
+	-- TODO:
+	--118,	-- Icecrown (All of Northrend)
+	--422,	-- Dread Wastes (All of Pandaria)
+	--525,	-- Frostfire Ridge (All of Draenor)
+	--630,	-- Azsuna (All of Broken Isles)
+	--882,	-- Mac'Aree (All of Argus)
+	--862,	-- Zuldazar (All of Zuldazar)
+	--896,	-- Drustvar (All of Kul Tiras)
+};
+app.CacheFlightPathData = function()
+	for i,mapID in ipairs(arrOfNodes) do
+		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
+		if allNodeData then
+			for j,nodeData in ipairs(allNodeData) do
+				if nodeData.name then 
+					local node = app.FlightPathDB[nodeData.nodeID];
+					if node then
+						node.name = nodeData.name;
+					elseif true then	-- Turn this off when you're done harvesting.
+						node = {};
+						node.name = "*NEW* " .. nodeData.name;
+						if nodeData.faction then
+							node.faction = nodeData.faction;
+						elseif nodeData.atlasName then
+							if nodeData.atlasName == "TaxiNode_Alliance" then
+								node.faction = 2;
+							elseif nodeData.atlasName == "TaxiNode_Horde" then
+								node.faction = 1;
+							end
+						end
+						app.FlightPathDB[nodeData.nodeID] = node;
+						SetDataMember("FlightPathData", app.FlightPathDB);
+					end
+				end
+			end
+		end
+	end
+end
+app.CacheFlightPathDataForMap = function(mapID, nodes)
+	local count = 0;
+	local temp = {};
+	for nodeID,node in pairs(app.FlightPathDB) do
+		if node.mapID == mapID and not node.u then
+			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
+				temp[nodeID] = true;
+				count = count + 1;
+			end
+		end
+	end
+	if count > 0 then
+		if count > 1 then
+			count = 0;
+			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
+			if pos then
+				local px, py = pos:GetXY();
+				px = px * 100;
+				py = py * 100;
+				
+				-- Select the best flight path node.
+				for nodeID,_ in pairs(temp) do
+					local node = app.FlightPathDB[nodeID];
+					if node.coord then
+						-- Allow for a little bit of leeway.
+						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
+							nodes[nodeID] = true;
+						end
+					end
+				end
+			end
+		else
+			for nodeID,_ in pairs(temp) do
+				nodes[nodeID] = true;
+			end
+		end
+	end
+	return count;
+end
+app.CacheFlightPathDataForTarget = function(nodes)
+	local guid = UnitGUID("npc") or UnitGUID("target");
+	if guid then
+		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
+		if type == "Creature" and npcID then
+			npcID = tonumber(npcID);
+			local count = 0;
+			local searchResults = SearchForField("creatureID", npcID);
+			if searchResults and #searchResults > 0 then
+				for i,group in ipairs(searchResults) do
+					if group.flightPathID and not group.nmr and not group.nmc and not group.u then
+						nodes[group.flightPathID] = true;
+						count = count + 1;
+					end
+				end
+			end
+			return count;
+		end
+	end
+	return 0;
+end
+app.BaseFlightPath = {
+	__index = function(t, key)
+		if key == "key" then
+			return "flightPathID";
+		elseif key == "collectible" then
+			return app.CollectibleFlightPaths;
+		elseif key == "collected" then
+			if app.AccountWideFlightPaths then
+				if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
+					return 1;
+				end
+			else
+				if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
+					return 1;
+				end
+			end
+		elseif key == "text" then
+			return t.info.name or "Visit the Flight Master to cache.";
+		elseif key == "u" then
+			return t.info.u;
+		elseif key == "coord" then
+			return t.info.coord;
+		elseif key == "crs" then
+			local qg = t.info.qg;
+			if qg then return { qg }; end
+		elseif key == "mapID" then
+			return t.info.mapID;
+		elseif key == "nmc" then
+			local c = t.info.c;
+			if c and not containsValue(c, app.ClassIndex) then
+				rawset(t, "nmc", true); -- "Not My Class"
+				return true;
+			end
+			rawset(t, "nmc", false); -- "My Class"
+			return false;
+		elseif key == "r" then
+			local faction = t.info.faction;
+			if faction and faction > 0 then
+				return faction;
+			end
+		elseif key == "nmr" then
+			local r = t.r;
+			return r and r ~= app.FactionID;
+		elseif key == "info" then
+			local info = app.FlightPathDB[t.flightPathID];
+			if info then
+				rawset(t, key, info);
+				if info.mapID then CacheField(t, "mapID", info.mapID); end
+				if info.qg then CacheField(t, "creatureID", info.qg); end
+				return info;
+			end
+		elseif key == "description" then
+			local description = t.info.description;
+			if description then
+				description = description .."\n\n";
+			else
+				description = "";
+			end
+			return description .. "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
+		elseif key == "icon" then
+			local faction = t.info.faction;
+			if faction and faction > 0 then
+				if faction == Enum.FlightPathFaction.Horde then
+					return app.asset("fp_horde");
+				else
+					return app.asset("fp_alliance");
+				end
+			end
+			return app.asset("fp_neutral");
+		else
+			-- Something that isn't dynamic.
+			return rawget(t.info, key);
+		end
+	end
+};
+app.CreateFlightPath = function(id, t)
+	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
+end
+app.events.GOSSIP_SHOW = function()
+	local nodes = {};
+	if app.CacheFlightPathDataForTarget(nodes) > 0 then
+		if app.AccountWideFlightPaths then
+			for nodeID,_ in pairs(nodes) do
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		else
+			for nodeID,_ in pairs(nodes) do
+				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+					UpdateSearchResults(SearchForField("flightPathID", nodeID));
+				end
+			end
+		end
+	end
+end
+app.events.TAXIMAP_OPENED = function()
+	local nodes = {};
+	-- Refresh the current location.
+	app.CurrentMapID = app.GetCurrentMapID();
+	if app.CacheFlightPathDataForTarget(nodes) == 0 then
+		if app.CacheFlightPathDataForMap(app.CurrentMapID, nodes) == 0 then
+			print("Failed to find nearest Flight Path. Please report this to the ATT Discord!");
+			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
+			if pos then
+				local px, py = pos:GetXY();
+				print(" Location: " .. (math.floor(px * 10000) * 0.01) .. ", " ..(math.floor(py * 10000) * 0.01) .. ", " .. app.CurrentMapID);
+				local target = UnitGUID("target");
+				if target then print(" Master: ", target); end
+			end
+		end
+	end
+	
+	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.CurrentMapID);
+	if allNodeData then
+		for j,nodeData in ipairs(allNodeData) do
+			if nodeData.state and nodeData.state < 2 then
+				nodes[nodeData.nodeID] = true;
+			end
+			if nodeData.name then 
+				local node = app.FlightPathDB[nodeData.nodeID];
+				if not node then
+					node = {};
+					node.name = nodeData.name .. " *NEW*";
+					node.faction = nodeData.faction;
+					app.FlightPathDB[nodeData.nodeID] = node;
+				end
+			end
+		end
+	end
+	
+	if app.AccountWideFlightPaths then
+		for nodeID,_ in pairs(nodes) do
+			SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+			if not GetDataSubMember("CollectedFlightPaths", nodeID) then
+				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+			end
+		end
+	else
+		for nodeID,_ in pairs(nodes) do
+			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				UpdateSearchResults(SearchForField("flightPathID", nodeID));
+			end
+		end
+	end
+end
+end)();
+
 -- Holiday Lib
 (function()
 local function GetHolidayCache()
@@ -4278,10 +4540,6 @@ end)();
 
 -- Map Lib
 (function()
-local arrOfNodes = {
-	1414,		-- Kalimdor
-	1415,		-- Eastern Kingdoms
-};
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
@@ -5420,162 +5678,8 @@ app.GetMapName = function(mapID)
 		return "Map ID #???";
 	end
 end
-app.CacheFlightPathData = function()
-	for i,mapID in ipairs(arrOfNodes) do
-		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-		if allNodeData then
-			local keys = {};
-			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.name then 
-					local node = app.FlightPathDB[nodeData.nodeID];
-					if node then
-						node.name = nodeData.name;
-					else
-						node = {};
-						node.faction = nodeData.faction;
-						node.name = nodeData.name .. " *NEW*";
-						app.FlightPathDB[nodeData.nodeID] = node;
-					end
-				end
-			end
-		end
-	end
-end
-app.CacheFlightPathDataForMap = function(mapID, nodes)
-	local count = 0;
-	local temp = {};
-	for nodeID,node in pairs(app.FlightPathDB) do
-		if node.mapID == mapID and not node.u then
-			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
-				temp[nodeID] = true;
-				count = count + 1;
-			end
-		end
-	end
-	if count > 0 then
-		if count > 1 then
-			count = 0;
-			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
-			if pos then
-				local px, py = pos:GetXY();
-				px = px * 100;
-				py = py * 100;
-				
-				-- Select the best flight path node.
-				for nodeID,_ in pairs(temp) do
-					local node = app.FlightPathDB[nodeID];
-					if node.coord then
-						-- Allow for a little bit of leeway.
-						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
-							nodes[nodeID] = true;
-						end
-					end
-				end
-			end
-		else
-			for nodeID,_ in pairs(temp) do
-				nodes[nodeID] = true;
-			end
-		end
-	end
-	return count;
-end
-app.CacheFlightPathDataForTarget = function(nodes)
-	local guid = UnitGUID("npc") or UnitGUID("target");
-	if guid then
-		local type, zero, server_id, instance_id, zone_uid, npcID, spawn_uid = strsplit("-",guid);
-		if type == "Creature" and npcID then
-			npcID = tonumber(npcID);
-			local count = 0;
-			local searchResults = SearchForField("creatureID", npcID);
-			if searchResults and #searchResults > 0 then
-				for i,group in ipairs(searchResults) do
-					if group.flightPathID and not group.nmr and not group.nmc and not group.u then
-						nodes[group.flightPathID] = true;
-						count = count + 1;
-					end
-				end
-			end
-			return count;
-		end
-	end
-	return 0;
-end
-app.events.GOSSIP_SHOW = function()
-	local nodes = {};
-	if app.CacheFlightPathDataForTarget(nodes) > 0 then
-		if app.AccountWideFlightPaths then
-			for nodeID,_ in pairs(nodes) do
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-					SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-					UpdateSearchResults(SearchForField("flightPathID", nodeID));
-				end
-			end
-		else
-			for nodeID,_ in pairs(nodes) do
-				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-					SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-					UpdateSearchResults(SearchForField("flightPathID", nodeID));
-				end
-			end
-		end
-	end
-end
-app.events.TAXIMAP_OPENED = function()
-	local nodes = {};
-	-- Refresh the current location.
-	app.CurrentMapID = app.GetCurrentMapID();
-	if app.CacheFlightPathDataForTarget(nodes) == 0 then
-		if app.CacheFlightPathDataForMap(app.CurrentMapID, nodes) == 0 then
-			print("Failed to find nearest Flight Path. Please report this to the ATT Discord!");
-			local pos = C_Map.GetPlayerMapPosition(app.CurrentMapID, "player");
-			if pos then
-				local px, py = pos:GetXY();
-				print(" Location: " .. (math.floor(px * 10000) * 0.01) .. ", " ..(math.floor(py * 10000) * 0.01) .. ", " .. app.CurrentMapID);
-				local target = UnitGUID("target");
-				if target then print(" Master: ", target); end
-			end
-		end
-	end
-	
-	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.CurrentMapID);
-	if allNodeData then
-		for j,nodeData in ipairs(allNodeData) do
-			if nodeData.state and nodeData.state < 2 then
-				nodes[nodeData.nodeID] = true;
-			end
-			if nodeData.name then 
-				local node = app.FlightPathDB[nodeData.nodeID];
-				if not node then
-					node = {};
-					node.name = nodeData.name .. " *NEW*";
-					node.faction = nodeData.faction;
-					app.FlightPathDB[nodeData.nodeID] = node;
-				end
-			end
-		end
-	end
-	
-	if app.AccountWideFlightPaths then
-		for nodeID,_ in pairs(nodes) do
-			SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-			if not GetDataSubMember("CollectedFlightPaths", nodeID) then
-				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				UpdateSearchResults(SearchForField("flightPathID", nodeID));
-			end
-		end
-	else
-		for nodeID,_ in pairs(nodes) do
-			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
-				UpdateSearchResults(SearchForField("flightPathID", nodeID));
-			end
-		end
-	end
-end
+
+
 app.ExplorationClass = {
 	__index = function(t, key)
 		if key == "key" then
@@ -5634,84 +5738,6 @@ app.ExplorationClass = {
 };
 app.CreateExploration = function(id, t)
 	return setmetatable(constructor(id, t, "explorationID"), app.ExplorationClass);
-end
-app.BaseFlightPath = {
-	__index = function(t, key)
-		if key == "key" then
-			return "flightPathID";
-		elseif key == "collectible" then
-			return app.CollectibleFlightPaths;
-		elseif key == "collected" then
-			if app.AccountWideFlightPaths then
-				if GetDataSubMember("CollectedFlightPaths", t.flightPathID) then
-					return 1;
-				end
-			else
-				if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then
-					return 1;
-				end
-			end
-		elseif key == "text" then
-			return t.info.name or "Visit the Flight Master to cache.";
-		elseif key == "u" then
-			return t.info.u;
-		elseif key == "coord" then
-			return t.info.coord;
-		elseif key == "crs" then
-			local qg = t.info.qg;
-			if qg then return { qg }; end
-		elseif key == "mapID" then
-			return t.info.mapID;
-		elseif key == "nmc" then
-			local c = t.info.c;
-			if c and not containsValue(c, app.ClassIndex) then
-				rawset(t, "nmc", true); -- "Not My Class"
-				return true;
-			end
-			rawset(t, "nmc", false); -- "My Class"
-			return false;
-		elseif key == "r" then
-			local faction = t.info.faction;
-			if faction and faction > 0 then
-				return faction;
-			end
-		elseif key == "nmr" then
-			local r = t.r;
-			return r and r ~= app.FactionID;
-		elseif key == "info" then
-			local info = app.FlightPathDB[t.flightPathID];
-			if info then
-				rawset(t, key, info);
-				if info.mapID then CacheField(t, "mapID", info.mapID); end
-				if info.qg then CacheField(t, "creatureID", info.qg); end
-				return info;
-			end
-		elseif key == "description" then
-			local description = t.info.description;
-			if description then
-				description = description .."\n\n";
-			else
-				description = "";
-			end
-			return description .. "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
-		elseif key == "icon" then
-			local faction = t.info.faction;
-			if faction and faction > 0 then
-				if faction == Enum.FlightPathFaction.Horde then
-					return app.asset("fp_horde");
-				else
-					return app.asset("fp_alliance");
-				end
-			end
-			return app.asset("fp_neutral");
-		else
-			-- Something that isn't dynamic.
-			return rawget(t.info, key);
-		end
-	end
-};
-app.CreateFlightPath = function(id, t)
-	return setmetatable(constructor(id, t, "flightPathID"), app.BaseFlightPath);
 end
 app.BaseMap = {
 	__index = function(t, key)
@@ -8377,16 +8403,22 @@ function app:GetDataCache()
 		
 		-- Flight Paths (Dynamic)
 		db = {};
-		db.g = (function()
-			local cache = {};
-			for key,fp in pairs(app.FlightPathDB) do
-				tinsert(cache, app.CreateFlightPath(tonumber(key)));
+		db.g = {};
+		db.fps = {};
+		app.CacheFlightPathData();
+		db.OnUpdate = function(self)
+			for i,fp in pairs(app.FlightPathDB) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					tinsert(self.g, fp);
+				end
 			end
-			table.sort(cache, function(a, b)
+			table.sort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
-			return cache;
-		end)();
+		end;
+		db.OnUpdate(db);
 		db.expanded = false;
 		db.icon = app.asset("Category_FlightPaths");
 		db.text = "Flight Paths";
@@ -11866,7 +11898,6 @@ app.events.PLAYER_LOGIN = function()
 	app:RegisterEvent("QUEST_TURNED_IN");
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	StartCoroutine("RefreshSaves", RefreshSaves);
-	app.CacheFlightPathData();
 	app:RefreshData(false);
 	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
