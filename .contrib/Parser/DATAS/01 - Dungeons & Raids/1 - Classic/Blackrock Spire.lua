@@ -973,7 +973,13 @@ _.Instances = { tier(1, {	-- Classic
 					i(13179),	-- Brazecore Armguards
 					i(16676),	-- Beaststalker's Gloves
 					i(22231),	-- Kayser's Boots of Precision
-					i(13173),	-- Flightblade Throwing Axe
+					i(13173, {	-- Flightblade Throwing Axe [Classic] / Broken Flightblade Throwing Axe [TBC]
+						["timeline"] = {
+							"added 1.11.1.5462",
+							"removed 2.0.1.5678"
+						},
+					}),
+					un(TBC_PHASE_ONE, i(28972)),	-- Flightblade Throwing Axe [TBC]
 				}),
 				un(PHASE_FIVE, n(16080, {	-- Mor Grayhoof
 					["description"] = "This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.",

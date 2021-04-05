@@ -625,7 +625,13 @@ _.Zones =
 					},
 					["lvl"] = 30,
 					["g"] = {
-						i(3463),	-- Silver Star
+						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 2.0.1.5678"
+							},
+						}),
+						un(TBC_PHASE_ONE, i(32378)),	-- Silver Star [TBC]
 						i(3464),	-- Feathered Arrow
 						i(3465),	-- Exploding Shot
 					},

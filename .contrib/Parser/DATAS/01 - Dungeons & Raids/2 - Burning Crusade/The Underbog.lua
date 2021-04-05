@@ -5,6 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	map(COILFANG_RESERVOIR_UNDERBOG, { 	-- The Underbog
 		["description"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
+		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
 		["lvl"] = 60,
 		["groups"] = {
 			n(QUESTS, {
@@ -79,9 +80,11 @@ _.Instances = { tier(2, {	-- Burning Crusade
 			}),
 			d(1, {	-- Normal
 				n(17770, {	-- Hungarfen
+					i(27631),	-- Needle Shrike
 					i(24451),	-- Lykul Bloodbands
 					i(24450),	-- Manaspark Gloves
 					i(24452),	-- Starlight Gauntlets
+					i(24413),	-- Totem of the Thunderhead
 				}),
 				n(18105, {	-- Ghaz'an
 					i(24461),	-- Hatebringer
@@ -132,6 +135,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27745),	-- Hungarhide Gauntlets
 						i(27743),	-- Girdle of Living Flame
 						i(27748),	-- Cassock of the Loyal
+						i(27744),	-- Idol of Ursoc
 					}),
 					n(18105, {	-- Ghaz'an
 						i(27757),	-- Greatstaff of the Leviathan

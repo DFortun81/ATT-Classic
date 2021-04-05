@@ -48,7 +48,13 @@ _.Zones =
 						},
 						["lvl"] = 50,
 						["groups"] = {
-							i(20086),	-- Dusksteel Throwing Knife
+							i(20086, {	-- Dusksteel Throwing Knife [Classic] / Broken Dusksteel Throwing Knife [TBC]
+								["timeline"] = {
+									"added 1.11.1.5462",
+									"removed 2.0.1.5678"
+								},
+							}),
+							un(TBC_PHASE_ONE, i(25878)),	-- Dusksteel Throwing Knife [TBC]
 						},
 					}),
 					q(8234, {	-- Sealed Azure Bag
