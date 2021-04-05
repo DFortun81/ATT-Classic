@@ -96,6 +96,7 @@ _.Zones =
 				i(18947, {	-- Rage Scar Yeti Hide
 					["allianceQuestID"] = 7733,	-- Improved Quality
 					["hordeQuestID"] = 7734,	-- Improved Quality
+					["description"] = "Can also be looted via Skinning to speed up your progress.",
 					["crs"] = {
 						5297,	-- Elder Rage Scar
 						5299,	-- Ferocious Rage Scar
@@ -121,6 +122,7 @@ _.Zones =
 				i(8973, {	-- Thick Yeti Hide
 					["allianceQuestID"] = 2821,	-- The Mark of Quality
 					["hordeQuestID"] = 2822,	-- The Mark of Quality
+					["description"] = "Can also be looted via Skinning to speed up your progress.",
 					["crs"] = {
 						5346,	-- Bloodroar the Stalker
 						5295,	-- Enraged Feral Scar

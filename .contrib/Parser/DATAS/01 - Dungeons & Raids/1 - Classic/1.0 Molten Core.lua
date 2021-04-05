@@ -322,6 +322,15 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
+			prof(SKINNING, {
+				["crs"] = {
+					11673,	-- Ancient Core Hound
+					11982,	-- Magmadar
+				},
+				["groups"] = {
+					i(17012),	-- Core Leather
+				},
+			}),
 			n(12118, {	-- Lucifron
 				{
 					["itemID"] = 17329,	-- Hand of Lucifron

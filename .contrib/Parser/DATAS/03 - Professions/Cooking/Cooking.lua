@@ -227,10 +227,10 @@ profession(COOKING, {
 				["name"] = "Rockscale Cod",
 				["recipeID"] = 7828
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Runn Tum Tuber Surprise",
 				["recipeID"] = 22761,
-			},
+			}),
 			{
 				["name"] = "Sagefish Delight",
 				["recipeID"] = 25954
@@ -251,10 +251,10 @@ profession(COOKING, {
 				["name"] = "Smoked Bear Meat",
 				["recipeID"] = 8607
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Smoked Desert Dumplings",
 				["recipeID"] = 24801,
-			},
+			}),
 			{
 				["name"] = "Smoked Sagefish",
 				["recipeID"] = 25704

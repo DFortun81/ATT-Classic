@@ -295,10 +295,6 @@ profession(LEATHERWORKING, {
 				["name"] = "Nightscape Tunic",
 				["recipeID"] = 10499
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Onyxia Scale Breastplate",
-				["recipeID"] = 19106,
-			}),
 			un(PHASE_SIX, {
 				["name"] = "Polar Tunic",
 				["recipeID"] = 28219,
@@ -309,7 +305,8 @@ profession(LEATHERWORKING, {
 			}),
 			{
 				["name"] = "Raptor Hide Harness",
-				["recipeID"] = 4096
+				["recipeID"] = 4096,
+				["races"] = HORDE_ONLY,
 			},
 			{
 				["name"] = "Runic Leather Armor",
@@ -619,7 +616,8 @@ profession(LEATHERWORKING, {
 			},
 			{
 				["name"] = "Raptor Hide Belt",
-				["recipeID"] = 4097
+				["recipeID"] = 4097,
+				["races"] = ALLIANCE_ONLY,
 			},
 			{
 				["name"] = "Runic Leather Belt",
@@ -803,10 +801,6 @@ profession(LEATHERWORKING, {
 				["name"] = "Hillman's Cloak",
 				["recipeID"] = 3760
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Nightscape Cloak",
-				["recipeID"] = 10550,
-			}),
 			{
 				["name"] = "Onyxia Scale Cloak",
 				["recipeID"] = 19093

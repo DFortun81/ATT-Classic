@@ -97,22 +97,6 @@ _.Zones =
 						i(20769),	-- Disgusting Oozeling
 					},
 				}),
-				i(11512, {	-- Patch of Tainted Skin
-					["description"] = "In order for this to drop while Skinning, you must have the Cenarion Beacon in your bags.",
-					["cost"] = {
-						{ "i", 11511, 1 },	-- Cenarion Beacon
-					},
-					["crs"] = {
-						8956,	-- Angerclaw Bear
-						8957,	-- Angerclaw Grizzly
-						8958,	-- Angerclaw Mauler
-						8961,	-- Felpaw Ravager
-						8960,	-- Felpaw Scavenger
-						8959,	-- Felpaw Wolf
-						7125,	-- Jaedenar Hound
-						7126,	-- Jaedenar Hunter
-					},
-				}),
 				i(15752, {	-- Pattern: Living Leggings
 					["cr"] = 7158,	-- Deadwood Shaman
 				}),

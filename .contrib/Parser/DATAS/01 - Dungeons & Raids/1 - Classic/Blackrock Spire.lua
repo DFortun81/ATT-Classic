@@ -868,6 +868,16 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
+			prof(SKINNING, {
+				["crs"] = {
+					10447,	-- Chromatic Dragonspawn
+					10814,	-- Chromatic Elite Guard
+					10442,	-- Chromatic Whelp
+				},
+				["groups"] = {
+					i(12607),	-- Brilliant Chromatic Scale
+				},
+			}),
 			n(-27, {	-- Lower
 				n(9257, {	-- Scarshield Warlock
 					["description"] = "DO NOT KILL this mob if you are trying to get the Burning Felguard to spawn.",

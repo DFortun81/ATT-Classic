@@ -175,10 +175,6 @@ profession(TAILORING, {
 				["name"] = "Silk Headband",
 				["recipeID"] = 8762
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Stormcloth Headband",
-				["recipeID"] = 12083,
-			}),
 			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Sylvan Crown",
 				["recipeID"] = 28481,
@@ -197,10 +193,10 @@ profession(TAILORING, {
 		["name"] = "Shoulders",
 		["categoryID"] = 61,
 		["g"] = {
-			{
+			un(PHASE_THREE, {
 				["name"] = "Argent Shoulders",
 				["recipeID"] = 23665,
-			},
+			}),
 			{
 				["name"] = "Azure Shoulders",
 				["recipeID"] = 8795
@@ -229,10 +225,10 @@ profession(TAILORING, {
 				["name"] = "Green Silken Shoulders",
 				["recipeID"] = 8774
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Mantle of the Timbermaw",
 				["recipeID"] = 23663,
-			},
+			}),
 			{
 				["name"] = "Mooncloth Shoulders",
 				["recipeID"] = 18448
@@ -253,10 +249,6 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Shoulders",
 				["recipeID"] = 12076
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Stormcloth Shoulders",
-				["recipeID"] = 12087,
-			}),
 			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Sylvan Shoulders",
 				["recipeID"] = 28482,
@@ -283,10 +275,10 @@ profession(TAILORING, {
 				["name"] = "Black Mageweave Vest",
 				["recipeID"] = 12048
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodvine Vest",
 				["recipeID"] = 24091,
-			},
+			}),
 			{
 				["name"] = "Blue Linen Robe",
 				["recipeID"] = 7633
@@ -379,10 +371,6 @@ profession(TAILORING, {
 				["name"] = "Green Silk Armor",
 				["recipeID"] = 8784
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Green Woolen Robe",
-				["recipeID"] = 7636,
-			}),
 			{
 				["name"] = "Green Woolen Vest",
 				["recipeID"] = 2399
@@ -451,10 +439,6 @@ profession(TAILORING, {
 				["name"] = "Simple Dress",
 				["recipeID"] = 8465
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Stormcloth Vest",
-				["recipeID"] = 12068,
-			}),
 			un(PHASE_FIVE_CATCH_UP, {
 				["name"] = "Sylvan Vest",
 				["recipeID"] = 28480,
@@ -547,10 +531,10 @@ profession(TAILORING, {
 				["name"] = "Star Belt",
 				["recipeID"] = 3864
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Wisdom of the Timbermaw",
 				["recipeID"] = 23662,
-			}
+			}),
 		}
 	},
 	{
@@ -645,10 +629,6 @@ profession(TAILORING, {
 				["name"] = "Shadoweave Gloves",
 				["recipeID"] = 12071
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Stormcloth Gloves",
-				["recipeID"] = 12063,
-			}),
 			{
 				["name"] = "Truefaith Gloves",
 				["recipeID"] = 8782
@@ -667,10 +647,10 @@ profession(TAILORING, {
 				["name"] = "Black Mageweave Leggings",
 				["recipeID"] = 12049
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodvine Leggings",
 				["recipeID"] = 24092,
-			},
+			}),
 			{
 				["name"] = "Brightcloth Pants",
 				["recipeID"] = 18439
@@ -747,10 +727,6 @@ profession(TAILORING, {
 				["name"] = "Simple Linen Pants",
 				["recipeID"] = 12044
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Stormcloth Pants",
-				["recipeID"] = 12062,
-			}),
 			{
 				["name"] = "Tuxedo Pants",
 				["recipeID"] = 12089
@@ -765,21 +741,17 @@ profession(TAILORING, {
 		["name"] = "Boots",
 		["categoryID"] = 67,
 		["g"] = {
-			{
+			un(PHASE_THREE, {
 				["name"] = "Argent Boots",
 				["recipeID"] = 23664,
-			},
+			}),
 			{
 				["name"] = "Black Mageweave Boots",
 				["recipeID"] = 12073
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodvine Boots",
 				["recipeID"] = 24093,
-			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Boots of Darkness",
-				["recipeID"] = 8778,
 			}),
 			{
 				["name"] = "Boots of the Enchanter",

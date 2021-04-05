@@ -179,6 +179,10 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				}),
 			}),
+			prof(SKINNING, {
+				i(6470),	-- Deviate Scale
+				i(6471),	-- Perfect Deviate Scale
+			}),
 			n(3671, { 	-- Lady Anacondra
 				{
 					["itemID"] = 9739,	-- Gem of Anacondra
