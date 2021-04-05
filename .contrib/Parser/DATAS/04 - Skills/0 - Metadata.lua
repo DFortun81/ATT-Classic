@@ -508,6 +508,7 @@ _.Skills =
 			},
 		},
 	},
+	-- #if CLASSIC
 	{
 		["recipeID"] = 824,	-- Horse Riding
 		["races"] = ALLIANCE_ONLY,
@@ -558,6 +559,7 @@ _.Skills =
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
+	-- #endif
 	{
 		["recipeID"] = 23214,	-- Summon Charger
 		["classes"] = { PALADIN },
@@ -584,6 +586,7 @@ _.Skills =
 		["sourceQuest"] = 1661,	-- The Tome of Nobility
 		["lvl"] = 40,
 	},
+	-- #if CLASSIC
 	{
 		["recipeID"] = 828,	-- Tiger Riding
 		["races"] = ALLIANCE_ONLY,
@@ -614,4 +617,5 @@ _.Skills =
 		["lvl"] = 40,
 		["cost"] = 200000,
 	},
+	-- #endif
 };

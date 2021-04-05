@@ -401,7 +401,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(3472),	-- Runed Copper Gauntlets
 			i(3483),	-- Silvered Bronze Gauntlets
 		}),
-		category(25, {		-- Chest
+		category(25, {	-- Chest
 			i(7914),	-- Barbaric Iron Breastplate
 			un(PHASE_FOUR, i(19690)),	-- Bloodsoul Breastplate
 			i(3471),	-- Copper Chain Vest
@@ -428,7 +428,7 @@ _.Craftables = { tier(1, {	-- Classic
 			un(PHASE_FIVE, i(22196)),	-- Thick Obsidian Breastplate
 			i(12405),	-- Thorium Armor
 		}),
-		category(28, {		-- Belts
+		category(28, {	-- Belts
 			i(2851),	-- Copper Chain Belt
 			un(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
 			un(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
@@ -440,7 +440,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(2857),	-- Runed Copper Belt
 			i(12406),	-- Thorium Belt
 		}),
-		category(29, {		-- Legs
+		category(29, {	-- Legs
 			i(2852),	-- Copper Chain Pants
 			un(PHASE_FOUR, i(19694)),	-- Darksoul Leggings
 			i(3843),	-- Golden Scale Leggings
@@ -457,7 +457,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(10423),	-- Silvered Bronze Leggings
 			i(12414),	-- Thorium Leggings
 		}),
-		category(30, {		-- Boots
+		category(30, {	-- Boots
 			i(7916),	-- Barbaric Iron Boots
 			i(3469),	-- Copper Chain Boots
 			i(3847),	-- Golden Scale Boots

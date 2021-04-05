@@ -2015,6 +2015,135 @@ _.WorldDrops = { tier(1, {	-- Classic
 			i(4562),	-- Severing Axe
 			i(15268),	-- Twin-bladed Axe
 		}),
+		filter(23, {	-- 1H Maces
+			i(868),		-- Ardent Custodian
+			i(15222),	-- Barbed Club
+			i(15224),	-- Battlesmasher
+			i(13024),	-- Beazel's Basher
+			i(15229),	-- Blesswind Hammer
+			i(13028),	-- Bludstone Hammer
+			i(13027),	-- Bonesnapper
+			i(13025),	-- Deadwood Sledge
+			i(2194),	-- Diamond Hammer
+			i(15227),	-- Diamond-Tip Bludgeon
+			i(15226),	-- Giant Club
+			i(8194),	-- Goblin Nutcracker
+			i(810),		-- Hammer of the Northern Wind
+			i(2243),	-- Hand of Edward the Odd
+			i(13026),	-- Heaven's Light
+			i(15223),	-- Jagged Star
+			i(865),		-- Leaden Mace
+			i(13048),	-- Looming Gavel
+			i(13006),	-- Mass of McGowan
+			i(936),		-- Midnight Mace
+			i(4090),	-- Mug O' Hurt
+			i(1207),	-- Murphstar
+			i(2075),	-- Priest's Mace
+			i(15225),	-- Sequoia Hammer
+			i(2079),	-- Sergeant's Warhammer
+			i(2256),	-- Skeletal Club
+			i(1608),	-- Skullcrusher Mace
+			i(15228),	-- Smashing Star
+			i(4569),	-- Staunch Hammer
+			i(789),		-- Stout Battlehammer
+			i(1721),	-- Viking Warhammer
+		}),
+		filter(24, {	-- 2H Maces
+			i(15264),	-- Backbreaker
+			i(1990),	-- Ballast Maul
+			i(3198),	-- Battering Hammer
+			i(4570),	-- Birchwood Maul
+			i(13046),	-- Blanchard's Stout
+			i(15267),	-- Brutehammer
+			i(3208),	-- Conk Hammer
+			i(3203),	-- Dense Triangle Mace
+			i(15266),	-- Fierce Mauler
+			i(15262),	-- Greater Maul
+			i(15259),	-- Hefty Battlehammer
+			i(3193),	-- Oak Mallet
+			i(15265),	-- Painbringer
+			i(12983),	-- Rakzur Club
+			i(15263),	-- Royal Mallet
+			i(15261),	-- Sequoia Branch
+			i(4564),	-- Spiked Club
+			i(15260),	-- Stone Hammer
+			i(2915),	-- Taran Icebreaker
+			i(1722),	-- Thornstone Sledgehammer
+			i(13047),	-- Twig of the World Tree
+			i(13045),	-- Viscous Hammer
+		}),
+		filter(25, {	-- 1H Swords
+			i(13036),	-- Assassination Blade
+			i(15220),	-- Battlefell Sabre
+			i(809),		-- Bloodrazor
+			i(15218),	-- Crystal Sword
+			i(869),		-- Dazzling Longsword
+			i(3740),	-- Decapitating Sword
+			i(15219),	-- Dimensional Blade
+			i(8196),	-- Ebon Scimitar
+			i(15212),	-- Fighter Broadsword
+			i(15215),	-- Furious Falchion
+			i(8190),	-- Hanzo Sword
+			i(15221),	-- Holy War Sword
+			i(12976),	-- Ironpatch Blade
+			i(864),		-- Knightly Longsword
+			i(2244),	-- Krol Blade
+			i(15213),	-- Mercenary Blade
+			i(15211),	-- Militant Shortsword
+			i(935),		-- Night Watch Shortsword
+			i(15214),	-- Nobles Brand
+			i(2078),	-- Northern Shortsword
+			i(727),		-- Notched Shortsword
+			i(15210),	-- Raider Shortsword
+			i(15216),	-- Rune Sword
+			i(1265),	-- Scorpion Sting
+			i(13035),	-- Serpent Slicer
+			i(754),		-- Shortsword of Vengeance
+			i(13034),	-- Speedsteel Rapier
+			i(13032),	-- Sword of Corruption
+			i(6622),	-- Sword of Zeal
+			i(1728),	-- Teebu's Blazing Longsword
+			i(12974),	-- The Black Knight
+			i(2011),	-- Twisted Sabre
+			i(3186),	-- Viking Sword
+			i(15217),	-- Widow Blade
+			i(13033),	-- Zealot Blade
+		}),
+		filter(26, {	-- 2H Swords
+			i(9385),	-- Archaic Defender
+			i(8199),	-- Battlefield Destroyer
+			i(15253),	-- Beheading Blade
+			i(2801),	-- Blade of Hanna
+			i(13043),	-- Blade of the Titans
+			i(3206),	-- Cavalier Two-hander
+			i(2877),	-- Combatant Claymore
+			i(15254),	-- Dark Espadon
+			i(13049),	-- Deanship Claymore
+			i(13044),	-- Demonslayer
+			i(647),		-- Destiny
+			i(15258),	-- Divine Warblade
+			i(13053),	-- Doombringer
+			i(3196),	-- Edged Bastard Sword
+			i(1625),	-- Exquisite Flamberge
+			i(15255),	-- Gallant Flamberge
+			i(15248),	-- Gleaming Claymore
+			i(15250),	-- Glimmering Flamberge
+			i(13041),	-- Guardian Blade
+			i(15251),	-- Headstriker Sword
+			i(15256),	-- Massacre Sword
+			i(4567),	-- Merc Sword
+			i(1982),	-- Nightblade
+			i(15249),	-- Polished Zweihander
+			i(12992),	-- Searing Blade
+			i(15257),	-- Shin Blade
+			i(3192),	-- Short Bastard Sword
+			i(3197),	-- Stonecutter Claymore
+			i(13042),	-- Sword of the Magistrate
+			i(8178),	-- Training Sword
+			i(15252),	-- Tusker Sword
+			i(13052),	-- Warmonger
+			i(13051),	-- Witchfury
+		}),
 		filter(32, {	-- Bows
 			i(15285),	-- Archer's Longbow
 			i(15289),	-- Archstrike Bow
@@ -2095,63 +2224,6 @@ _.WorldDrops = { tier(1, {	-- Classic
 			i(3430),	-- Sniper Rifle
 			i(13138),	-- The Silencer
 		}),
-		filter(23, {	-- 1H Maces
-			i(868),		-- Ardent Custodian
-			i(15222),	-- Barbed Club
-			i(15224),	-- Battlesmasher
-			i(13024),	-- Beazel's Basher
-			i(15229),	-- Blesswind Hammer
-			i(13028),	-- Bludstone Hammer
-			i(13027),	-- Bonesnapper
-			i(13025),	-- Deadwood Sledge
-			i(2194),	-- Diamond Hammer
-			i(15227),	-- Diamond-Tip Bludgeon
-			i(15226),	-- Giant Club
-			i(8194),	-- Goblin Nutcracker
-			i(810),		-- Hammer of the Northern Wind
-			i(2243),	-- Hand of Edward the Odd
-			i(13026),	-- Heaven's Light
-			i(15223),	-- Jagged Star
-			i(865),		-- Leaden Mace
-			i(13048),	-- Looming Gavel
-			i(13006),	-- Mass of McGowan
-			i(936),		-- Midnight Mace
-			i(4090),	-- Mug O' Hurt
-			i(1207),	-- Murphstar
-			i(2075),	-- Priest's Mace
-			i(15225),	-- Sequoia Hammer
-			i(2079),	-- Sergeant's Warhammer
-			i(2256),	-- Skeletal Club
-			i(1608),	-- Skullcrusher Mace
-			i(15228),	-- Smashing Star
-			i(4569),	-- Staunch Hammer
-			i(789),		-- Stout Battlehammer
-			i(1721),	-- Viking Warhammer
-		}),
-		filter(24, {	-- 2H Maces
-			i(15264),	-- Backbreaker
-			i(1990),	-- Ballast Maul
-			i(3198),	-- Battering Hammer
-			i(4570),	-- Birchwood Maul
-			i(13046),	-- Blanchard's Stout
-			i(15267),	-- Brutehammer
-			i(3208),	-- Conk Hammer
-			i(3203),	-- Dense Triangle Mace
-			i(15266),	-- Fierce Mauler
-			i(15262),	-- Greater Maul
-			i(15259),	-- Hefty Battlehammer
-			i(3193),	-- Oak Mallet
-			i(15265),	-- Painbringer
-			i(12983),	-- Rakzur Club
-			i(15263),	-- Royal Mallet
-			i(15261),	-- Sequoia Branch
-			i(4564),	-- Spiked Club
-			i(15260),	-- Stone Hammer
-			i(2915),	-- Taran Icebreaker
-			i(1722),	-- Thornstone Sledgehammer
-			i(13047),	-- Twig of the World Tree
-			i(13045),	-- Viscous Hammer
-		}),
 		filter(29, {	-- Polearms
 			i(13057),	-- Bloodpike
 			i(13055),	-- Bonechewer
@@ -2185,78 +2257,6 @@ _.WorldDrops = { tier(1, {	-- Classic
 			i(15275),	-- Thaumaturgist Staff
 			i(890),		-- Twisted Chanter's Staff
 			i(943),		-- Warden Staff
-		}),
-		filter(25, {	-- 1H Swords
-			i(13036),	-- Assassination Blade
-			i(15220),	-- Battlefell Sabre
-			i(809),		-- Bloodrazor
-			i(15218),	-- Crystal Sword
-			i(869),		-- Dazzling Longsword
-			i(3740),	-- Decapitating Sword
-			i(15219),	-- Dimensional Blade
-			i(8196),	-- Ebon Scimitar
-			i(15212),	-- Fighter Broadsword
-			i(15215),	-- Furious Falchion
-			i(8190),	-- Hanzo Sword
-			i(15221),	-- Holy War Sword
-			i(12976),	-- Ironpatch Blade
-			i(864),		-- Knightly Longsword
-			i(2244),	-- Krol Blade
-			i(15213),	-- Mercenary Blade
-			i(15211),	-- Militant Shortsword
-			i(935),		-- Night Watch Shortsword
-			i(15214),	-- Nobles Brand
-			i(2078),	-- Northern Shortsword
-			i(727),		-- Notched Shortsword
-			i(15210),	-- Raider Shortsword
-			i(15216),	-- Rune Sword
-			i(1265),	-- Scorpion Sting
-			i(13035),	-- Serpent Slicer
-			i(754),		-- Shortsword of Vengeance
-			i(13034),	-- Speedsteel Rapier
-			i(13032),	-- Sword of Corruption
-			i(6622),	-- Sword of Zeal
-			i(1728),	-- Teebu's Blazing Longsword
-			i(12974),	-- The Black Knight
-			i(2011),	-- Twisted Sabre
-			i(3186),	-- Viking Sword
-			i(15217),	-- Widow Blade
-			i(13033),	-- Zealot Blade
-		}),
-		filter(26, {	-- 2H Swords
-			i(9385),	-- Archaic Defender
-			i(8199),	-- Battlefield Destroyer
-			i(15253),	-- Beheading Blade
-			i(2801),	-- Blade of Hanna
-			i(13043),	-- Blade of the Titans
-			i(3206),	-- Cavalier Two-hander
-			i(2877),	-- Combatant Claymore
-			i(15254),	-- Dark Espadon
-			i(13049),	-- Deanship Claymore
-			i(13044),	-- Demonslayer
-			i(647),		-- Destiny
-			i(15258),	-- Divine Warblade
-			i(13053),	-- Doombringer
-			i(3196),	-- Edged Bastard Sword
-			i(1625),	-- Exquisite Flamberge
-			i(15255),	-- Gallant Flamberge
-			i(15248),	-- Gleaming Claymore
-			i(15250),	-- Glimmering Flamberge
-			i(13041),	-- Guardian Blade
-			i(15251),	-- Headstriker Sword
-			i(15256),	-- Massacre Sword
-			i(4567),	-- Merc Sword
-			i(1982),	-- Nightblade
-			i(15249),	-- Polished Zweihander
-			i(12992),	-- Searing Blade
-			i(15257),	-- Shin Blade
-			i(3192),	-- Short Bastard Sword
-			i(3197),	-- Stonecutter Claymore
-			i(13042),	-- Sword of the Magistrate
-			i(8178),	-- Training Sword
-			i(15252),	-- Tusker Sword
-			i(13052),	-- Warmonger
-			i(13051),	-- Witchfury
 		}),
 		filter(27, {	-- Wands
 			i(5212),	-- Blazing Wand
