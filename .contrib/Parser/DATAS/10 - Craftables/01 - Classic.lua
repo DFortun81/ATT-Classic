@@ -944,7 +944,6 @@ _.Craftables = { tier(1, {	-- Classic
 		category(47, {	-- Armor Kits
 			i(18251),	-- Core Armor Kit
 			i(4265),	-- Heavy Armor Kit
-			i(18662),	-- Heavy Leather Ball
 			i(2304),	-- Light Armor Kit
 			i(2313),	-- Medium Armor Kit
 			i(15564),	-- Rugged Armor Kit
