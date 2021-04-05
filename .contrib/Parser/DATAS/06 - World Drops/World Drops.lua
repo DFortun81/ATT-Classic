@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
-_.WorldDrops =
-{
+_.WorldDrops = { tier(1, {	-- Classic
 	filter(3, {	-- Cloaks
 		i(9938),	-- Abjurer's Cloak
 		i(10258),	-- Adventurer's Cape
@@ -2940,4 +2939,4 @@ _.WorldDrops =
 			i(10301),	-- Pattern: White Bandit Mask
 		}),
 	}),
-};
+})};
