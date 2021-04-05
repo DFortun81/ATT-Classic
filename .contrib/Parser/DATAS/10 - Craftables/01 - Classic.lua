@@ -1,5 +1,4 @@
-_.Craftables =
-{
+_.Craftables = { tier(1, {	-- Classic
 	prof(ALCHEMY, {
 		i(9149),	-- Philosopher's Stone
 	}),
@@ -927,4 +926,4 @@ _.Craftables =
 			i(4308),	-- Green Linen Bracers
 		}),
 	}),
-};
+})};
