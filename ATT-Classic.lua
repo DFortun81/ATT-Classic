@@ -5891,6 +5891,7 @@ end
 (function()
 app.SkillIDToSpellID = setmetatable({
 	[171] = 2259,	-- Alchemy
+	[794] = 158762,	-- Arch
 	[261] = 5149,	-- Beast Training
 	[164] = 2018,	-- Blacksmithing
 	[185] = 2550,	-- Cooking
@@ -5899,10 +5900,13 @@ app.SkillIDToSpellID = setmetatable({
 	[356] = 7620,	-- Fishing
 	[129] = 3273,	-- First Aid
 	[182] = 2366,	-- Herb Gathering
+	[773] = 45357,	-- Inscription
+	[755] = 25229,	-- Jewelcrafting
 	[165] = 2108,	-- Leatherworking
 	[186] = 2575,	-- Mining
 	[393] = 8613,	-- Skinning
 	[197] = 3908,	-- Tailoring
+	[960] = 53428,  -- Runeforging
 	[40] = 2842,	-- Poison
 	
 	-- Specializations
