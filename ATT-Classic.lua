@@ -3880,12 +3880,12 @@ local fields = {
 	end,
 	["saved"] = function(t)
 		if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
-		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 		if t.standing >= t.maxstanding then
 			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
 			SetDataSubMember("CollectedFactions", t.factionID, 1);
 			return 1;
 		end
+		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 		
 		-- If your reputation is higher than the maximum for a different faction, return partial completion.
 		if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
