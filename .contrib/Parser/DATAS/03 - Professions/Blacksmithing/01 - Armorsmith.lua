@@ -41,7 +41,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Shoulders",
 				["categoryID"] = 24,
 				["g"] = {
-					un(NEVER_IMPLEMENTED, {
+					un(TBC_PHASE_ONE, {
 						["name"] = "Dawnbringer Shoulders",
 						["recipeID"] = 16660,
 						["requireSkill"] = 9788,
