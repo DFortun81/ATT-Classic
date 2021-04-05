@@ -1311,7 +1311,9 @@ _.Craftables = { tier(1, {	-- Classic
 		},
 	}),
 	prof(40, {	-- Poisons
+		-- #if CLASSIC
 		i(5530),	-- Blinding Powder
+		-- #endif
 		i(3775),	-- Crippling Poison
 		i(3776),	-- Crippling Poison II
 		i(2892),	-- Deadly Poison

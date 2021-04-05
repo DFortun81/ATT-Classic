@@ -4,10 +4,12 @@ profession(40, {	-- Poisons
 		["name"] = "Consumable",
 		["categoryID"] = 70,
 		["g"] = {
+			-- #if CLASSIC
 			{
 				["name"] = "Blinding Powder",
 				["recipeID"] = 6510
 			},
+			-- #endif
 			{
 				["name"] = "Crippling Poison",
 				["recipeID"] = 3420
