@@ -694,6 +694,9 @@ end
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
+category = function(id, t)								-- Create a CATEGORY Object.
+	return struct("categoryID", id, t);
+end
 cl = function(id, t)									-- Create a CHARACTER CLASS Object
 	return struct("classID", id, t);
 end
