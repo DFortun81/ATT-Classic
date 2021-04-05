@@ -89,6 +89,8 @@ _.NeverImplemented =
 		["recipeID"] = 8778,
 	}),
 	
+	un(NEVER_IMPLEMENTED, i(24315)),	-- Pattern: Heavy Netherweave Net
+	
 	-- Argent Dawn Quests
 	q(5530, {	-- <NYI> <TXT> Necklace of the Dawn
 		i(13811),	-- Necklace of the Dawn

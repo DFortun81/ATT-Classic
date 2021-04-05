@@ -691,6 +691,15 @@ icon = function(path)
 end
 
 -- SHORTCUTS for Object Class Types
+ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
+	if t or type(altID) == "number" then
+		t = struct("allianceAchievementID", id, t or {});
+		t["hordeAchievementID"] = altID;
+		return t;
+	else
+		return struct("achievementID", id, altID);
+	end
+end
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
