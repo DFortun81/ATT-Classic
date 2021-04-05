@@ -1,7 +1,12 @@
 _.Craftables = { tier(1, {	-- Classic
 	prof(ALCHEMY, {
-		category(35, {	-- Reagents
+		category(20, {	-- Materials
 			i(12360),	-- Arcanite Bar
+			i(16207),	-- Runed Arcanite Rod
+			i(6218),	-- Runed Copper Rod
+			i(11130),	-- Runed Golden Rod
+			i(6339),	-- Runed Silver Rod
+			i(11145),	-- Runed Truesilver Rod
 		}),
 		category(18, {	-- Trinkets
 			i(9149),	-- Philosopher's Stone
@@ -313,7 +318,7 @@ _.Craftables = { tier(1, {	-- Classic
 			un(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
 			un(PHASE_FIVE, i(20750)),	-- Wizard Oil
 		})),
-		category(35, {	-- Reagents
+		category(20, {	-- Materials
 			i(12655),	-- Enchanted Thorium Bar
 		}),
 	}),
@@ -470,6 +475,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(2308),	-- Fine Leather Cloak
 			i(7377),	-- Frost Leather Cloak
 			i(5965),	-- Guardian Cloak
+			i(7276),	-- Handstitched Leather Cloak
 			i(3719),	-- Hillman's Cloak
 			i(15138),	-- Onyxia Scale Cloak
 		}),
@@ -537,6 +543,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(4243),	-- Fine Leather Tunic
 				i(2311),	-- White Leather Jerkin
 				i(2300),	-- Embossed Leather Vest
+				i(5957),	-- Handstitched Leather Vest
 			}),
 			n(-326, {	-- Wrists
 				un(PHASE_SIX, i(22663)),	-- Polar Bracers
@@ -550,6 +557,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(4259),	-- Green Leather Bracers
 				i(18948),	-- Barbaric Bracers
 				i(7281),	-- Light Leather Bracers
+				i(7277),	-- Handstitched Leather Bracers
 			}),
 			n(-327, {	-- Hands
 				i(19049),	-- Timbermaw Brawlers
@@ -601,6 +609,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(6468),	-- Deviate Scale Belt
 				i(5780),	-- Murloc Scale Belt
 				i(4246),	-- Fine Leather Belt
+				i(4237),	-- Handstitched Leather Belt
 			}),
 			n(-329, {	-- Legs
 				i(15095),	-- Runic Leather Pants (Trainable now, old Pattern id 15765 used to teach this.)
@@ -623,6 +632,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(7282),	-- Light Leather Pants
 				i(4242),	-- Embossed Leather Pants
 				i(7280),	-- Rugged Leather Pants
+				i(2303),	-- Handstitched Leather Pants
 			}),
 			n(-330, {	-- Feet
 				un(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
@@ -638,6 +648,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(2315),	-- Dark Leather Boots
 				i(2307),	-- Fine Leather Boots
 				i(2309),	-- Embossed Leather Boots
+				i(2302),	-- Handstitched Leather Boots
 			}),
 		}),
 		filter(6, {	-- Mail
