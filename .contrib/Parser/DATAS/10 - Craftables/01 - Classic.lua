@@ -127,7 +127,7 @@ _.Craftables = { tier(1, {	-- Classic
 					i(12633),	-- Whitesoul Helm
 				}),
 				category(24, {	-- Shoulders
-					un(NEVER_IMPLEMENTED, i(12625)),	-- Dawnbringer Shoulders
+					un(TBC_PHASE_ONE, i(12625)),	-- Dawnbringer Shoulders
 					i(16988),	-- Fiery Chain Shoulders
 				}),
 				category(27, {	-- Bracers
