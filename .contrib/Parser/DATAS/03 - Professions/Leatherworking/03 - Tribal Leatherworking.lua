@@ -84,11 +84,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Belts",
 				["categoryID"] = 54,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Corehound Belt",
 						["recipeID"] = 23709,
 						["requireSkill"] = 10660,
-					},
+					}),
 				}
 			},
 			{
@@ -142,11 +142,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Cloaks",
 				["categoryID"] = 57,
 				["g"] = {
-					{
+					un(PHASE_ONE_DIRE_MAUL, {
 						["name"] = "Hide of the Wild",
 						["recipeID"] = 22927,
 						["requireSkill"] = 10660,
-					},
+					}),
 				}
 			},
 		},

@@ -43,6 +43,14 @@ _.NeverImplemented =
 	q(55296),	-- This quest was reported as missing on Discord, but has no information related to it similar to 6842 and 7069.
 	q(3366),	-- The Glowing Shard [Quests #6981 and #3366 look identical, but WoWHead doesn't have much info on 3366]
 	
+	-- #if CLASSIC
+	i(22729),	-- Schematic: Steam Tonk Controller [This doesn't get added until TBC]
+	-- #endif
+	
+	un(NEVER_IMPLEMENTED, {	-- Greater Holy Protection Potion
+		["recipeID"] = 17579,
+	}),
+	
 	-- Argent Dawn Quests
 	q(5530, {	-- <NYI> <TXT> Necklace of the Dawn
 		i(13811),	-- Necklace of the Dawn
@@ -391,6 +399,9 @@ _.NeverImplemented =
 	i(22814),	-- Naxxramas Sword 2H 2 PH
 	i(18882),	-- TEST Level 80 Epic
 	i(12764),	-- Thorium Greatsword
+	
+	-- Thrown
+	i(21135),	-- Assassin's Throwing Axe
 
 	-- Wand
 	i(21124),	-- Ahn'Qiraj Wand PH

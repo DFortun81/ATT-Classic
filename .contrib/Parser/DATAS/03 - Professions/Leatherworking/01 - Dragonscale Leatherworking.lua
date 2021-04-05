@@ -41,11 +41,11 @@ profession(LEATHERWORKING, {
 						["recipeID"] = 10650,
 						["requireSkill"] = 10656,
 					},
-					{
+					un(PHASE_FOUR, {
 						["name"] = "Dreamscale Breastplate",
 						["recipeID"] = 24703,
 						["requireSkill"] = 10656,
-					},
+					}),
 					{
 						["name"] = "Green Dragonscale Breastplate",
 						["recipeID"] = 19050,
@@ -62,11 +62,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Gloves",
 				["categoryID"] = 53,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Chromatic Gauntlets",
 						["recipeID"] = 23708,
 						["requireSkill"] = 10656,
-					},
+					}),
 					{
 						["name"] = "Dragonscale Gauntlets",
 						["recipeID"] = 10619,
@@ -115,11 +115,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Cloaks",
 				["categoryID"] = 57,
 				["g"] = {
-					{
+					un(PHASE_ONE_DIRE_MAUL, {
 						["name"] = "Chromatic Cloak",
 						["recipeID"] = 22926,
 						["requireSkill"] = 10656,
-					},
+					}),
 				}
 			},
 		},

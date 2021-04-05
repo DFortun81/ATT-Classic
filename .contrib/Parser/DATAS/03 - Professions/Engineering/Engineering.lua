@@ -4,12 +4,12 @@ profession(ENGINEERING, {
 		["categoryID"] = 1,
 		["g"] = {
 			{
-				["name"] = "Crafted Light Shot",
-				["recipeID"] = 3920,
-			},
-			{
 				["name"] = "Crafted Heavy Shot",
 				["recipeID"] = 3930,
+			},
+			{
+				["name"] = "Crafted Light Shot",
+				["recipeID"] = 3920,
 			},
 			{
 				["name"] = "Crafted Solid Shot",
@@ -46,16 +46,8 @@ profession(ENGINEERING, {
 				["recipeID"] = 19830
 			},
 			{
-				["name"] = "Clockwork Box",
-				["recipeID"] = 8334
-			},
-			{
 				["name"] = "Compact Harvest Reaper Kit",
 				["recipeID"] = 3963
-			},
-			{
-				["name"] = "Deepdive Helmet",
-				["recipeID"] = 12617
 			},
 			{
 				["name"] = "Discombobulator Ray",
@@ -122,6 +114,10 @@ profession(ENGINEERING, {
 				["recipeID"] = 3928
 			},
 			{
+				["name"] = "Minor Recombobulator",
+				["recipeID"] = 3952
+			},
+			{
 				["name"] = "Mithril Mechanical Dragonling",
 				["recipeID"] = 12624
 			},
@@ -136,6 +132,10 @@ profession(ENGINEERING, {
 			{
 				["name"] = "Parachute Cloak",
 				["recipeID"] = 12616
+			},
+			{
+				["name"] = "Practice Lock",
+				["recipeID"] = 8334
 			},
 			{
 				["name"] = "Salt Shaker",
@@ -356,14 +356,14 @@ profession(ENGINEERING, {
 		["name"] = "Goggles",
 		["categoryID"] = 5,
 		["g"] = {
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodvine Goggles",
 				["recipeID"] = 24356,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Bloodvine Lens",
 				["recipeID"] = 24357,
-			},
+			}),
 			{
 				["name"] = "Bright-Eye Goggles",
 				["recipeID"] = 12587
@@ -375,6 +375,10 @@ profession(ENGINEERING, {
 			{
 				["name"] = "Craftsman's Monocle",
 				["recipeID"] = 3966
+			},
+			{
+				["name"] = "Deepdive Helmet",
+				["recipeID"] = 12617
 			},
 			{
 				["name"] = "Fire Goggles",
@@ -515,10 +519,6 @@ profession(ENGINEERING, {
 			{
 				["name"] = "Iron Strut",
 				["recipeID"] = 3958
-			},
-			{
-				["name"] = "Minor Recombobulator",
-				["recipeID"] = 3952
 			},
 			{
 				["name"] = "Mithril Casing",

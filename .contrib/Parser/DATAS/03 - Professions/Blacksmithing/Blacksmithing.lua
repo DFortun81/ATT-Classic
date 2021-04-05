@@ -137,10 +137,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Barbaric Iron Helm",
 				["recipeID"] = 9814
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Darkrune Helm",
 				["recipeID"] = 24913,
-			},
+			}),
 			{
 				["name"] = "Golden Scale Coif",
 				["recipeID"] = 3503
@@ -191,18 +191,18 @@ profession(BLACKSMITHING, {
 				["name"] = "Barbaric Iron Shoulders",
 				["recipeID"] = 9811
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodsoul Shoulders",
 				["recipeID"] = 24137,
-			},
+			}),
 			{
 				["name"] = "Dark Iron Shoulders",
 				["recipeID"] = 15295
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Darksoul Shoulders",
 				["recipeID"] = 24141,
-			},
+			}),
 			{
 				["name"] = "Golden Scale Shoulders",
 				["recipeID"] = 3505
@@ -299,22 +299,22 @@ profession(BLACKSMITHING, {
 				["name"] = "Black Grasp of the Destroyer",
 				["recipeID"] = 27589,
 			}),
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodsoul Gauntlets",
 				["recipeID"] = 24138,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Darkrune Gauntlets",
 				["recipeID"] = 24912,
-			},
+			}),
 			{
 				["name"] = "Gemmed Copper Gauntlets",
 				["recipeID"] = 3325
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Gloves of the Dawn",
 				["recipeID"] = 23633,
-			},
+			}),
 			{
 				["name"] = "Golden Scale Gauntlets",
 				["recipeID"] = 11643
@@ -369,10 +369,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Barbaric Iron Breastplate",
 				["recipeID"] = 9813
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Bloodsoul Breastplate",
 				["recipeID"] = 24136,
-			},
+			}),
 			{
 				["name"] = "Copper Chain Vest",
 				["recipeID"] = 3321
@@ -381,14 +381,14 @@ profession(BLACKSMITHING, {
 				["name"] = "Dark Iron Mail",
 				["recipeID"] = 15293
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Darkrune Breastplate",
 				["recipeID"] = 24914,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Darksoul Breastplate",
 				["recipeID"] = 24139,
-			},
+			}),
 			{
 				["name"] = "Golden Scale Cuirass",
 				["recipeID"] = 3511
@@ -438,12 +438,12 @@ profession(BLACKSMITHING, {
 				["recipeID"] = 2670
 			},
 			{
-				["name"] = "Rough Copper Vest",
-				["recipeID"] = 12260
-			},
-			{
 				["name"] = "Runed Copper Breastplate",
 				["recipeID"] = 2667
+			},
+			{
+				["name"] = "Rough Copper Vest",
+				["recipeID"] = 12260
 			},
 			{
 				["name"] = "Runic Breastplate",
@@ -479,18 +479,18 @@ profession(BLACKSMITHING, {
 				["name"] = "Copper Chain Belt",
 				["recipeID"] = 2661
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Girdle of the Dawn",
 				["recipeID"] = 23632,
-			},
+			}),
 			un(PHASE_FIVE, {
 				["name"] = "Heavy Obsidian Belt",
 				["recipeID"] = 27585,
 			}),
-			{
+			un(PHASE_THREE, {
 				["name"] = "Heavy Timbermaw Belt",
 				["recipeID"] = 23628,
-			},
+			}),
 			{
 				["name"] = "Imperial Plate Belt",
 				["recipeID"] = 16647
@@ -525,10 +525,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Copper Chain Pants",
 				["recipeID"] = 2662
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Darksoul Leggings",
 				["recipeID"] = 24140,
-			},
+			}),
 			{
 				["name"] = "Golden Scale Leggings",
 				["recipeID"] = 3507
@@ -608,10 +608,10 @@ profession(BLACKSMITHING, {
 				["name"] = "Heavy Mithril Boots",
 				["recipeID"] = 9968
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Heavy Timbermaw Boots",
 				["recipeID"] = 23629,
-			},
+			}),
 			{
 				["name"] = "Imperial Plate Boots",
 				["recipeID"] = 16657

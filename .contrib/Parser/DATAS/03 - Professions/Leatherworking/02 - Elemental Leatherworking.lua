@@ -84,11 +84,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Belts",
 				["categoryID"] = 54,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Molten Belt",
 						["recipeID"] = 23710,
 						["requireSkill"] = 10658,
-					},
+					}),
 				},
 			},
 			{
@@ -116,11 +116,11 @@ profession(LEATHERWORKING, {
 				["name"] = "Cloaks",
 				["categoryID"] = 57,
 				["g"] = {
-					{
+					un(PHASE_ONE_DIRE_MAUL, {
 						["name"] = "Shifting Cloak",
 						["recipeID"] = 22928,
 						["requireSkill"] = 10658,
-					},
+					}),
 				}
 			},
 		},

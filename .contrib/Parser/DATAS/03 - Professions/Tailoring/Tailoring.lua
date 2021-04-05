@@ -23,10 +23,10 @@ profession(TAILORING, {
 				["name"] = "Bolt of Woolen Cloth",
 				["recipeID"] = 2964
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Gordok Ogre Suit",
 				["recipeID"] = 22813
-			},
+			}),
 			{
 				["name"] = "Mooncloth",
 				["recipeID"] = 18560
@@ -511,10 +511,10 @@ profession(TAILORING, {
 				["name"] = "Azure Silk Belt",
 				["recipeID"] = 8766
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Belt of the Archmage",
 				["recipeID"] = 22866,
-			},
+			}),
 			{
 				["name"] = "Crimson Silk Belt",
 				["recipeID"] = 8772
@@ -581,10 +581,10 @@ profession(TAILORING, {
 				["name"] = "Dreamweave Gloves",
 				["recipeID"] = 12067
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Felcloth Gloves",
 				["recipeID"] = 22867,
-			},
+			}),
 			{
 				["name"] = "Flarecore Gloves",
 				["recipeID"] = 20849
@@ -621,14 +621,14 @@ profession(TAILORING, {
 				["name"] = "Heavy Woolen Gloves",
 				["recipeID"] = 3843
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Inferno Gloves",
 				["recipeID"] = 22868,
-			},
-			{
+			}),
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Mooncloth Gloves",
 				["recipeID"] = 22869,
-			},
+			}),
 			{
 				["name"] = "Phoenix Gloves",
 				["recipeID"] = 3868
@@ -859,10 +859,10 @@ profession(TAILORING, {
 				["name"] = "Cloak of Fire",
 				["recipeID"] = 18422
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Cloak of Warding",
 				["recipeID"] = 22870,
-			},
+			}),
 			{
 				["name"] = "Crimson Silk Cloak",
 				["recipeID"] = 8789

@@ -39,11 +39,11 @@ profession(BLACKSMITHING, {
 			prof(17040, {	-- Master Hammersmith
 				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				["groups"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Ebon Hand",
 						["recipeID"] = 23650,
 						["requireSkill"] = 17040,
-					},
+					}),
 					{
 						["name"] = "Enchanted Battlehammer",
 						["recipeID"] = 16973,
@@ -59,11 +59,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16993,
 						["requireSkill"] = 17040,
 					},
-					{
+					un(PHASE_FIVE, {
 						["name"] = "Persuader",
 						["recipeID"] = 27830,
 						["requireSkill"] = 17040,
-					},
+					}),
 					{
 						["name"] = "Serenity",
 						["recipeID"] = 16983,
@@ -79,11 +79,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16990,
 						["requireSkill"] = 17039,
 					},
-					{
+					un(PHASE_THREE, {
 						["name"] = "Blackguard",
 						["recipeID"] = 23652,
 						["requireSkill"] = 17039,
-					},
+					}),
 					{
 						["name"] = "Blazing Rapier",
 						["recipeID"] = 16978,
@@ -104,11 +104,11 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16992,
 						["requireSkill"] = 17039,
 					},
-					{
+					un(PHASE_FIVE, {
 						["name"] = "Sageblade",
 						["recipeID"] = 27832,
 						["requireSkill"] = 17039,
-					},
+					}),
 				},
 			}),
 			{
@@ -116,16 +116,16 @@ profession(BLACKSMITHING, {
 				["description"] = "These can be crafted by any Weaponsmith.",
 				["categoryID"] = 32,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Black Amnesty",
 						["recipeID"] = 23638,
 						["requireSkill"] = 9787,
-					},
-					{
+					}),
+					un(PHASE_THREE, {
 						["name"] = "Blackfury",
 						["recipeID"] = 23639,
 						["requireSkill"] = 9787,
-					},
+					}),
 					un(NEVER_IMPLEMENTED, {
 						["name"] = "Bleakwood Hew",
 						["recipeID"] = 16965,
@@ -146,16 +146,16 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 15292,
 						["requireSkill"] = 9787,
 					},
-					un(NEVER_IMPLEMENTED, {
-						["name"] = "Darkspear",
-						["recipeID"] = 16987,
-						["requireSkill"] = 9787,
-					}),
 					{
 						["name"] = "Dark Iron Sunderer",
 						["recipeID"] = 15294,
 						["requireSkill"] = 9787,
 					},
+					un(NEVER_IMPLEMENTED, {
+						["name"] = "Darkspear",
+						["recipeID"] = 16987,
+						["requireSkill"] = 9787,
+					}),
 					{
 						["name"] = "Heartseeker",
 						["recipeID"] = 16995,

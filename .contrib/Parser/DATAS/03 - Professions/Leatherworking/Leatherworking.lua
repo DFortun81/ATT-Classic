@@ -23,10 +23,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Cured Thick Hide",
 				["recipeID"] = 10482
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Gordok Ogre Suit",
 				["recipeID"] = 22815
-			},
+			}),
 			{
 				["name"] = "Heavy Leather",
 				["recipeID"] = 20649
@@ -60,10 +60,6 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Heavy Armor Kit",
 				["recipeID"] = 3780
-			},
-			{
-				["name"] = "Heavy Leather Ball",
-				["recipeID"] = 23190
 			},
 			{
 				["name"] = "Light Armor Kit",
@@ -114,6 +110,16 @@ profession(LEATHERWORKING, {
 			{
 				["name"] = "Thick Leather Ammo Pouch",
 				["recipeID"] = 14932
+			},
+		}
+	},
+	{
+		["name"] = "Devices",
+		["categoryID"] = 2,
+		["g"] = {
+			{
+				["name"] = "Heavy Leather Ball",
+				["recipeID"] = 23190
 			},
 		}
 	},
@@ -171,10 +177,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Barbaric Shoulders",
 				["recipeID"] = 7151
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Blood Tiger Shoulders",
 				["recipeID"] = 24125,
-			},
+			}),
 			{
 				["name"] = "Dark Leather Shoulders",
 				["recipeID"] = 3769
@@ -183,10 +189,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Earthen Leather Shoulders",
 				["recipeID"] = 9147
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Golden Mantle of the Dawn",
 				["recipeID"] = 23706,
-			},
+			}),
 			{
 				["name"] = "Heavy Scorpid Shoulders",
 				["recipeID"] = 19100
@@ -229,10 +235,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Black Whelp Tunic",
 				["recipeID"] = 24940
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Blood Tiger Breastplate",
 				["recipeID"] = 24124,
-			},
+			}),
 			{
 				["name"] = "Dark Leather Tunic",
 				["recipeID"] = 2169
@@ -297,10 +303,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Polar Tunic",
 				["recipeID"] = 28219,
 			}),
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Primal Batskin Jerkin",
 				["recipeID"] = 24121,
-			},
+			}),
 			{
 				["name"] = "Raptor Hide Harness",
 				["recipeID"] = 4096
@@ -309,14 +315,14 @@ profession(LEATHERWORKING, {
 				["name"] = "Runic Leather Armor",
 				["recipeID"] = 19102
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Sandstalker Breastplate",
 				["recipeID"] = 24851,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Spitfire Breastplate",
 				["recipeID"] = 24848,
-			},
+			}),
 			{
 				["name"] = "Thick Murloc Armor",
 				["recipeID"] = 6704
@@ -395,26 +401,26 @@ profession(LEATHERWORKING, {
 				["name"] = "Polar Bracers",
 				["recipeID"] = 28221,
 			}),
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Primal Batskin Bracers",
 				["recipeID"] = 24123,
-			},
+			}),
 			{
 				["name"] = "Runic Leather Bracers",
 				["recipeID"] = 19065
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Sandstalker Bracers",
 				["recipeID"] = 24849,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Spitfire Bracers",
 				["recipeID"] = 24846,
-			},
-			{
+			}),
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Swift Flight Bracers",
 				["recipeID"] = 22923,
-			},
+			}),
 			{
 				["name"] = "Tough Scorpid Bracers",
 				["recipeID"] = 10533
@@ -497,10 +503,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Polar Gloves",
 				["recipeID"] = 28220,
 			}),
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Primal Batskin Gloves",
 				["recipeID"] = 24122,
-			},
+			}),
 			{
 				["name"] = "Red Whelp Gloves",
 				["recipeID"] = 9072
@@ -509,22 +515,22 @@ profession(LEATHERWORKING, {
 				["name"] = "Runic Leather Gauntlets",
 				["recipeID"] = 19055
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Sandstalker Gauntlets",
 				["recipeID"] = 24850,
-			},
+			}),
 			{
 				["name"] = "Shadowskin Gloves",
 				["recipeID"] = 22711
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Spitfire Gauntlets",
 				["recipeID"] = 24847,
-			},
-			{
+			}),
+			un(PHASE_THREE, {
 				["name"] = "Timbermaw Brawlers",
 				["recipeID"] = 23704,
-			},
+			}),
 			{
 				["name"] = "Tough Scorpid Gloves",
 				["recipeID"] = 10542
@@ -575,10 +581,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Gem-studded Leather Belt",
 				["recipeID"] = 3778
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Girdle of Insight",
 				["recipeID"] = 22921,
-			},
+			}),
 			{
 				["name"] = "Green Leather Belt",
 				["recipeID"] = 3774
@@ -599,14 +605,14 @@ profession(LEATHERWORKING, {
 				["name"] = "Hillman's Belt",
 				["recipeID"] = 3767
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Lava Belt",
 				["recipeID"] = 23707
-			},
-			{
+			}),
+			un(PHASE_THREE, {
 				["name"] = "Might of the Timbermaw",
 				["recipeID"] = 23703,
-			},
+			}),
 			{
 				["name"] = "Murloc Scale Belt",
 				["recipeID"] = 6702
@@ -711,10 +717,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Dark Leather Boots",
 				["recipeID"] = 2167
 			},
-			{
+			un(PHASE_THREE, {
 				["name"] = "Dawn Treaders",
 				["recipeID"] = 23705,
-			},
+			}),
 			{
 				["name"] = "Dusky Boots",
 				["recipeID"] = 9207
@@ -731,10 +737,10 @@ profession(LEATHERWORKING, {
 				["name"] = "Handstitched Leather Boots",
 				["recipeID"] = 2149
 			},
-			{
+			un(PHASE_ONE_DIRE_MAUL, {
 				["name"] = "Mongoose Boots",
 				["recipeID"] = 22922,
-			},
+			}),
 			{
 				["name"] = "Nightscape Boots",
 				["recipeID"] = 10558

@@ -33,10 +33,10 @@ profession(ENCHANTING, {
 				["name"] = "Enchanted Leather",
 				["recipeID"] = 17181
 			},
-			un(PHASE_THREE, {
+			{
 				["name"] = "Enchanted Thorium Bar",
 				["recipeID"] = 17180
-			})
+			}
 		}
 	},
 	{

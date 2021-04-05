@@ -1,279 +1,253 @@
 _.Craftables = { tier(1, {	-- Classic
 	prof(ALCHEMY, {
 		category(20, {	-- Materials
+			i(9210),	-- Ghost Dye
+			i(9061),	-- Goblin Rocket Fuel
+			un(PHASE_FOUR, i(19931)),	-- Gurubashi Mojo Madness
+		}),
+		category(14, {	-- Potions
+			i(4596),	-- Discolored Healing Potion
+			i(12190),	-- Dreamless Sleep Potion
+			i(6049),	-- Fire Protection Potion
+			i(5634),	-- Free Action Potion
+			i(6050),	-- Frost Protection Potion
+			i(5633),	-- Great Rage Potion
+			i(13461),	-- Greater Arcane Protection Potion
+			un(PHASE_FOUR, i(20002)),	-- Greater Dreamless Sleep Potion
+			i(13457),	-- Greater Fire Protection Potion
+			i(13456),	-- Greater Frost Protection Potion
+			i(1710),	-- Greater Healing Potion
+			i(6149),	-- Greater Mana Potion
+			i(13458),	-- Greater Nature Protection Potion
+			i(13459),	-- Greater Shadow Protection Potion
+			i(13455),	-- Greater Stoneshield Potion
+			i(929),		-- Healing Potion
+			i(6051),	-- Holy Protection Potion
+			i(9172),	-- Invisibility Potion
+			i(858),		-- Lesser Healing Potion
+			i(3823),	-- Lesser Invisibility Potion
+			i(3385),	-- Lesser Mana Potion
+			i(4623),	-- Lesser Stoneshield Potion
+			i(3387),	-- Limited Invulnerability Potion
+			un(PHASE_FOUR, i(20008)),	-- Living Action Potion
+			un(PHASE_FOUR, i(20007)),	-- Mageblood Potion
+			i(9036),	-- Magic Resistance Potion
+			i(13446),	-- Major Healing Potion
+			i(13444),	-- Major Mana Potion
+			i(18253),	-- Major Rejuvenation Potion
+			i(20004),	-- Major Troll's Blood Potion
+			i(3827),	-- Mana Potion
+			i(13442),	-- Mighty Rage Potion
+			un(PHASE_FOUR, i(3826)),	-- Mighty Troll's Blood Potion
+			i(118),		-- Minor Healing Potion
+			i(2455),	-- Minor Mana Potion
+			i(2456),	-- Minor Rejuvenation Potion
+			i(3384),	-- Minor Magic Resistance Potion
+			i(6052),	-- Nature Protection Potion
+			i(3386),	-- Potion of Curing (TBC) / Elixir of Poison Resistance (Classic)
+			i(13462),	-- Purification Potion
+			i(5631),	-- Rage Potion
+			i(9030),	-- Restorative Potion
+			i(6048),	-- Shadow Protection Potion
+			i(3388),	-- Strong Troll's Blood Potion
+			i(3928),	-- Superior Healing Potion
+			i(13443),	-- Superior Mana Potion
+			i(2459),	-- Swiftness Potion
+			i(6372),	-- Swim Speed Potion
+			i(3382),	-- Weak Troll's Blood Potion
+			i(9144),	-- Wildvine Potion
+		}),
+		category(15, {	-- Elixirs
+			i(9155),	-- Arcane Elixir
+			i(10592),	-- Catseye Elixir
+			i(8949),	-- Elixir of Agility
+			i(13453),	-- Elixir of Brute Force
+			i(3389),	-- Elixir of Defense
+			i(9224),	-- Elixir of Demonslaying
+			i(9233),	-- Elixir of Detect Demon
+			i(3828),	-- Elixir of Detect Lesser Invisibility
+			i(9154),	-- Elixir of Detect Undead
+			i(9197),	-- Elixir of Dream Vision
+			i(6373),	-- Elixir of Firepower
+			i(3825),	-- Elixir of Fortitude
+			i(17708),	-- Elixir of Frost Power
+			i(6662),	-- Elixir of Giant Growth
+			i(9206),	-- Elixir of Giants
+			i(9187),	-- Elixir of Greater Agility
+			i(8951),	-- Elixir of Greater Defense
+			i(21546),	-- Elixir of Greater Firepower
+			i(9179),	-- Elixir of Greater Intellect
+			i(18294),	-- Elixir of Greater Water Breathing
+			i(3390),	-- Elixir of Lesser Agility
+			i(2454),	-- Elixir of Lion's Strength
+			i(2457),	-- Elixir of Minor Agility
+			i(5997),	-- Elixir of Minor Defense
+			i(2458),	-- Elixir of Minor Fortitude
+			i(3391),	-- Elixir of Ogre's Strength
+			i(9264),	-- Elixir of Shadow Power
+			i(13445),	-- Elixir of Superior Defense
+			i(13452),	-- Elixir of the Mongoose
+			i(13447),	-- Elixir of the Sages
+			i(5996),	-- Elixir of Water Breathing
+			i(3383),	-- Elixir of Wisdom
+			i(9088),	-- Gift of Arthas
+			i(13454),	-- Greater Arcane Elixir
+		}),
+		category(16, {	-- Flasks
+			i(13513),	-- Flask of Chromatic Resistance
+			i(13511),	-- Flask of Distilled Wisdom
+			i(13506),	-- Flask of Petrification
+			i(13512),	-- Flask of Supreme Power
+			i(13510),	-- Flask of the Titans
+		}),
+		category(17, {	-- Transmutes
 			i(12360),	-- Arcanite Bar
-			i(16207),	-- Runed Arcanite Rod
-			i(6218),	-- Runed Copper Rod
-			i(11130),	-- Runed Golden Rod
-			i(6339),	-- Runed Silver Rod
-			i(11145),	-- Runed Truesilver Rod
 		}),
 		category(18, {	-- Trinkets
 			i(9149),	-- Philosopher's Stone
 		}),
+		category(19, {	-- Oils
+			i(6370),	-- Blackmouth Oil
+			i(6371),	-- Fire Oil
+			i(3829),	-- Frost Oil
+			i(8956),	-- Oil of Immolation
+			i(3824),	-- Shadow Oil
+			i(13423),	-- Stonescale Oil
+		}),
 	}),
 	prof(BLACKSMITHING, {
-		filter(20, {	-- Daggers
-			i(3848),	-- Big Bronze Knife
-			i(19166),	-- Black Amnesty
-			i(3490),	-- Deadly Bronze Poniard
-			i(7947),	-- Ebon Shiv
-			i(12259),	-- Glinting Steel Dagger
-			i(12783),	-- Heartseeker
-			i(5540),	-- Pearl-Handled Dagger
-			i(12260),	-- Searing Golden Blade
+		prof(9788, {	-- Armorsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
+			["groups"] = {
+				category(23, {	-- Helms
+					un(PHASE_THREE, i(19148)),	-- Dark Iron Helm
+					un(PHASE_THREE, i(12620)),	-- Enchanted Thorium Helm
+					i(12636),	-- Helm of the Great Chief
+					i(12640),	-- Lionheart Helm
+					i(12633),	-- Whitesoul Helm
+				}),
+				category(24, {	-- Shoulders
+					un(NEVER_IMPLEMENTED, i(12625)),	-- Dawnbringer Shoulders
+					i(16988),	-- Fiery Chain Shoulders
+				}),
+				category(27, {	-- Bracers
+					i(17014),	-- Dark Iron Bracers
+				}),
+				category(26, {	-- Gauntlets
+					un(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
+					i(12631),	-- Fiery Plate Gauntlets
+					i(12632),	-- Storm Gauntlets
+					i(12639),	-- Stronghold Gauntlets
+					i(7938),	-- Truesilver Gauntlets
+				}),
+				category(25, {	-- Chest
+					i(11604),	-- Dark Iron Plate
+					i(12628),	-- Demon Forged Breastplate
+					un(PHASE_THREE, i(12618)),	-- Enchanted Thorium Breastplate
+					i(12641),	-- Invulnerable Mail
+					i(7939),	-- Truesilver Breastplate
+					i(12624),	-- Wildthorn Mail
+				}),
+				category(28, {	-- Belts
+					i(16989),	-- Fiery Chain Girdle
+				}),
+				category(29, {	-- Legs
+					i(17013),	-- Dark Iron Leggings
+					un(PHASE_THREE, i(12619)),	-- Enchanted Thorium Leggings
+					un(PHASE_FIVE, i(22385)),	-- Titanic Leggings
+				}),
+				category(30, {	-- Boots
+					un(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
+				}),
+			},
 		}),
-		filter(21, {	-- 1H Axes
-			i(12798),	-- Annihilator
-			i(7942),	-- Blue Glittering Axe
-			i(2849),	-- Bronze Axe
-			i(12774),	-- Dawn's Edge
-			i(17016),	-- Dark Iron Destroyer
-			i(17704),	-- Edge of Winter
-			i(7941),	-- Heavy Mithril Axe
-			i(12773),	-- Ornate Thorium Handaxe
-			i(3489),	-- Thick War Axe
-		}),
-		filter(22, {	-- 2H Axes
-			i(12784),	-- Arcanite Reaper
-			i(12769, {	-- Bleakwood Hew
-				["timeline"] = {
-					"created 1.11.1.5462",	-- Was originally never implemented.
-					"added 7.1.5.23360",
-				},
-			}),
-			i(7958),	-- Bronze Battle Axe
-			i(3488),	-- Copper Battle Axe
-			i(11607),	-- Dark Iron Sunderer
-			i(12775),	-- Huge Thorium Battleaxe
-			i(3855),	-- Massive Iron Axe
-			i(19169),	-- Nightfall
-			i(3856),	-- Shadow Crescent Axe
-		}),
-		filter(23, {	-- 1H Maces
-			i(7945),	-- Big Black Mace
-			i(2848),	-- Bronze Mace
-			i(19170),	-- Ebon Hand
-			i(3491),	-- Heavy Bronze Mace
-			i(5541),	-- Iridescent Hammer
-			i(12794),	-- Masterwork Stormhammer
-			i(3492),	-- Mighty Iron Hammer
-			i(22384),	-- Persuader
-			i(7946),	-- Runed Mithril Hammer
-			i(12781),	-- Serenity
-			i(7954),	-- The Shatterer
-			i(12792),	-- Volcanic Hammer
-		}),
-		filter(24, {	-- 2H Maces
-			i(7956),	-- Bronze Warhammer
-			i(11608),	-- Dark Iron Pulverizer
-			i(12776),	-- Enchanted Battlehammer
-			i(3852),	-- Golden Iron Destroyer
-			i(12796),	-- Hammer of the Titans
-			i(6214),	-- Heavy Copper Maul
-			i(3851),	-- Solid Iron Maul
-			i(17193),	-- Sulfuron Hammer
-		}),
-		filter(25, {	-- 1H Swords
-			i(19168),	-- Blackguard
-			i(12777, {	-- Blazing Rapier
-				["timeline"] = {
-					"added 1.11.1.5462",
-					"removed 4.0.1.13287",
-					"added 7.1.5.23360",
-				},
-			}),
-			i(2850),	-- Bronze Shortsword
-			i(17015),	-- Dark Iron Reaver
-			i(7944),	-- Dazzling Mithril Rapier
-			i(12797),	-- Frostguard
-			i(3849),	-- Hardened Iron Shortsword
-			i(3850),	-- Jade Serpentblade
-			i(7961),	-- Phantom Blade
-			i(22383),	-- Sageblade
-			i(7943),	-- Wicked Mithril Blade
-		}),
-		filter(26, {	-- 2H Swords
-			i(12790, {	-- Arcanite Champion
-				["timeline"] = {
-					"added 1.11.1.5462",
-					"removed 4.0.1.13287",
-					"added 7.1.5.23360",
-				},
-			}),
-			i(7957),	-- Bronze Greatsword
-			i(12782),	-- Corruption
-			i(3854),	-- Frost Tiger Blade
-			i(3487),	-- Heavy Copper Broadsword
-			i(3853),	-- Moonsteel Broadsword
-			i(7960),	-- Truesilver Champion
-		}),
-		filter(29, {	-- Polearms
-			i(19167),	-- Blackfury
-			i(7959, {	-- Blight
-				["timeline"] = {
-					"added 1.11.1.5462",
-					"removed 4.0.1.13287",
-					"added 7.1.5.23360",
-				},
-			}),
-			i(12802, {	-- Darkspear
-				["timeline"] = {
-					"created 1.12.1.6898",	-- Was originally never implemented.
-					"added 7.1.5.23360",
-				},
-			}),
-		}),
-		filter(8, {		-- Shield
-			un(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield (AQ)
-		}),
-		n(-320, {		-- Head
-			i(7915),	-- Barbaric Iron Helm
-			i(19148),	-- Dark Iron Helm
-			i(20551),	-- Darkrune Helm
-			un(PHASE_THREE, i(12620)),	-- Enchanted Thorium Helm
-			i(3837),	-- Golden Scale Coif
-			i(3836),	-- Green Iron Helm
-			i(7934),	-- Heavy Mithril Helm
-			i(12636),	-- Helm of the Great Chief
-			i(12427),	-- Imperial Plate Helm
-			i(12640),	-- Lionheart Helm
-			i(7931),	-- Mithril Coif
-			i(7937),	-- Ornate Mithril Helm
-			i(12417),	-- Radiant Circlet
-			i(12612),	-- Runic Plate Helm
-			i(7922),	-- Steel Plate Helm
-			i(12410),	-- Thorium Helm
-			i(12633),	-- Whitesoul Helm
-		}),
-		n(-321, {		-- Shoulders
-			i(7913),	-- Barbaric Iron Shoulders
-			i(19691),	-- Bloodsoul Shoulders
-			i(11605),	-- Dark Iron Shoulders
-			i(19695),	-- Darksoul Shoulders
-			un(NEVER_IMPLEMENTED, i(12625)),	-- Dawnbringer Shoulders
-			i(16988),	-- Fiery Chain Shoulders
-			i(3841),	-- Golden Scale Shoulders
-			i(3840),	-- Green Iron Shoulders
-			i(7918),	-- Heavy Mithril Shoulder
-			i(12428),	-- Imperial Plate Shoulders
-			i(7932),	-- Mithril Scale Shoulders
-			i(7928),	-- Ornate Mithril Shoulder
-			i(3480),	-- Rough Bronze Shoulders
-			i(12610),	-- Runic Plate Shoulders
-			i(3481),	-- Silvered Bronze Shoulders
-		}),
-		n(-323, {		-- Chest
-			i(7914),	-- Barbaric Iron Breastplate
-			i(19690),	-- Bloodsoul Breastplate
-			i(3471),	-- Copper Chain Vest
-			i(11604),	-- Dark Iron Plate
-			i(11606),	-- Dark Iron Plate
-			i(20550),	-- Darkrune Breastplate
-			i(19693),	-- Darksoul Breastplate
-			i(12628),	-- Demon Forged Breastplate
-			un(PHASE_THREE, i(12618)),	-- Enchanted Thorium Breastplate
-			i(3845),	-- Golden Scale Cuirass
-			i(3844),	-- Green Iron Hauberk
-			i(7930),	-- Heavy Mithril Breastplate
-			un(PHASE_SIX, i(22669)),	-- Icebane Breastplate
-			i(12422),	-- Imperial Plate Chest
-			i(12641),	-- Invulnerable Mail
-			i(6731),	-- Ironforge Breastplate
-			un(PHASE_FIVE_CATCH_UP, i(22762)),	-- Ironvine Breastplate
-			un(PHASE_FIVE, i(22191)),	-- Obsidian Mail Tunic
-			i(7935),	-- Ornate Mithril Breastplate
-			i(12415),	-- Radiant Breastplate
-			i(2866),	-- Rough Bronze Cuirass
-			i(2864),	-- Runed Copper Breastplate
-			i(12613),	-- Runic Breastplate
-			i(2870),	-- Shining Silver Breastplate
-			i(2869),	-- Silvered Bronze Breastplate
-			i(7963),	-- Steel Breastplate
-			un(PHASE_FIVE, i(22196)),	-- Thick Obsidian Breastplate
-			i(12405),	-- Thorium Armor
-			i(7939),	-- Truesilver Breastplate
-			i(12624),	-- Wildthorn Mail
-		}),
-		n(-327, {		-- Hands
-			i(7917),	-- Barbaric Iron Gloves
-			un(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
-			i(19692),	-- Bloodsoul Gauntlets
-			i(19164),	-- Dark Iron Gauntlets
-			i(20549),	-- Darkrune Gauntlets
-			i(12631),	-- Fiery Plate Gauntlets
-			i(3474),	-- Gemmed Copper Gauntlets
-			i(19057),	-- Gloves of the Dawn
-			i(9366),	-- Golden Scale Gauntlets
-			i(3485),	-- Green Iron Gauntlets
-			i(7919),	-- Heavy Mithril Gauntlet
-			un(PHASE_SIX, i(22670)),	-- Icebane Gauntlets
-			un(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
-			i(7927),	-- Ornate Mithril Gloves
-			i(12418),	-- Radiant Gloves
-			i(3472),	-- Runed Copper Gauntlets
-			i(3483),	-- Silvered Bronze Gauntlets
-			i(12632),	-- Storm Gauntlets
-			i(12639),	-- Stronghold Gauntlets
-			i(7938),	-- Truesilver Gauntlets
-		}),
-		n(-326, {		-- Wrist
-			i(17014),	-- Dark Iron Bracers
-			i(6040),	-- Golden Scale Bracers
-			i(3835),	-- Green Iron Bracers
-			un(PHASE_SIX, i(22671)),	-- Icebane Bracers
-			i(12425),	-- Imperial Plate Bracers
-			i(7924),	-- Mithril Scale Bracers
-			i(2868),	-- Patterned Bronze Bracers
-			i(2854),	-- Runed Copper Bracers
-			i(12408),	-- Thorium Bracers
-		}),
-		n(-328, {		-- Waist
-			i(16989),	-- Fiery Chain Girdle
-			i(19051),	-- Girdle of the Dawn
-			un(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
-			i(19043),	-- Heavy Timbermaw Belt
-			i(12424),	-- Imperial Plate Belt
-			un(PHASE_FIVE_CATCH_UP, i(22764)),	-- Ironvine Belt
-			un(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
-			i(12416),	-- Radiant Belt
-			i(2857),	-- Runed Copper Belt
-			i(12406),	-- Thorium Belt
-		}),
-		n(-329, {		-- Legs
-			i(17013),	-- Dark Iron Leggings
-			i(19694),	-- Darksoul Leggings
-			un(PHASE_THREE, i(12619)),	-- Enchanted Thorium Leggings
-			i(3843),	-- Golden Scale Leggings
-			i(3842),	-- Green Iron Leggings
-			i(7921),	-- Heavy Mithril Pants
-			i(12429),	-- Imperial Plate Leggings
-			i(7920),	-- Mithril Scale Pants
-			i(7929),	-- Orcish War Leggings
-			i(7926),	-- Ornate Mithril Pants
-			i(12420),	-- Radiant Leggings
-			i(2865),	-- Rough Bronze Leggings
-			i(3473),	-- Runed Copper Pants
-			i(12614),	-- Runic Plate Leggings
-			i(10423),	-- Silvered Bronze Leggings
-			i(12414),	-- Thorium Leggings
-			un(PHASE_FIVE, i(22385)),	-- Titanic Leggings
-		}),
-		n(-330, {		-- Feet
-			i(7916),	-- Barbaric Iron Boots
-			i(20039),	-- Dark Iron Boots
-			i(3847),	-- Golden Scale Boots
-			i(3484),	-- Green Iron Boots
-			i(7933),	-- Heavy Mithril Boots
-			i(19048),	-- Heavy Timbermaw Boots
-			i(12426),	-- Imperial Plate Boots
-			i(7936),	-- Ornate Mithril Boots
-			i(3846),	-- Polished Steel Boots
-			i(12419),	-- Radiant Boots
-			i(6350),	-- Rough Bronze Boots
-			i(12611),	-- Runic Plate Boots
-			i(3482),	-- Silvered Bronze Boots
-			i(12409),	-- Thorium Boots
+		prof(9787, {	-- Weaponsmith
+			["description"] = "These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.",
+			["groups"] = {
+				prof(17041, {	-- Master Axesmith
+					["description"] = "These items can only be crafted by Master Axesmith specialized Weaponsmiths.",
+					["groups"] = {
+						i(12798),	-- Annihilator
+						i(12784),	-- Arcanite Reaper
+						i(17016),	-- Dark Iron Destroyer
+						i(12774),	-- Dawn's Edge
+						i(19169),	-- Nightfall
+					},
+				}),
+				prof(17040, {	-- Master Hammersmith
+					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
+					["groups"] = {
+						un(PHASE_THREE, i(19170)),	-- Ebon Hand
+						i(12776),	-- Enchanted Battlehammer
+						i(12796),	-- Hammer of the Titans
+						i(12794),	-- Masterwork Stormhammer
+						un(PHASE_FIVE, i(22384)),	-- Persuader
+						i(12781),	-- Serenity
+					},
+				}),
+				prof(17039, {	-- Master Swordsmith
+					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
+					["groups"] = {
+						i(12790, {	-- Arcanite Champion
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						un(PHASE_THREE, i(19168)),	-- Blackguard
+						i(12777, {	-- Blazing Rapier
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						i(12782),	-- Corruption
+						i(17015),	-- Dark Iron Reaver
+						i(12797),	-- Frostguard
+						un(PHASE_FIVE, i(22383)),	-- Sageblade
+					},
+				}),
+				category(32, {	-- Weapons
+					["description"] = "These can be crafted by any Weaponsmith.",
+					["groups"] = {
+						un(PHASE_THREE, i(19166)),	-- Black Amnesty
+						un(PHASE_THREE, i(19167)),	-- Blackfury
+						i(12769, {	-- Bleakwood Hew
+							["timeline"] = {
+								"created 1.11.1.5462",	-- Was originally never implemented.
+								"added 7.1.5.23360",
+							},
+						}),
+						i(7959, {	-- Blight
+							["timeline"] = {
+								"added 1.11.1.5462",
+								"removed 4.0.1.13287",
+								"added 7.1.5.23360",
+							},
+						}),
+						i(12795, {	-- Blood Talon
+							["timeline"] = {
+								"created 1.12.1.6898",	-- Was originally never implemented.
+								"added 7.1.5.23360",
+							},
+						}),
+						i(11608),	-- Dark Iron Pulverizer
+						i(11607),	-- Dark Iron Sunderer
+						i(12802, {	-- Darkspear
+							["timeline"] = {
+								"created 1.12.1.6898",	-- Was originally never implemented.
+								"added 7.1.5.23360",
+							},
+						}),
+						i(12783),	-- Heartseeker
+						i(7961),	-- Phantom Blade
+						i(7954),	-- The Shatterer
+						i(7960),	-- Truesilver Champion
+					},
+				}),
+			},
 		}),
 		category(20, {	-- Materials
 			i(16206),	-- Arcanite Rod
@@ -288,18 +262,326 @@ _.Craftables = { tier(1, {	-- Classic
 			i(7966),	-- Solid Grinding Stone
 			i(11144),	-- Truesilver Rod
 		}),
-		filter(50, {	-- Miscellaneous
-			i(15872),	-- Arcanite Skeleton Key
+		category(21, {	-- Weapon Mods
+			i(2863),	-- Coarse Sharpening Stone
+			i(3240),	-- Coarse Weightstone
+			i(12404),	-- Dense Sharpening Stone
+			i(12643),	-- Dense Weightstone
 			i(18262),	-- Elemental Sharpening Stone
-			i(15870),	-- Golden Skeleton Key
+			i(2871),	-- Heavy Sharpening Stone
+			i(3241),	-- Heavy Weightstone
+			i(6043),	-- Iron Counterweight
+			i(2862),	-- Rough Sharpening Stone
+			i(3239),	-- Rough Weightstone
+			i(7964),	-- Solid Sharpening Stone
+			i(7965),	-- Solid Weightstone
+			i(6041),	-- Steel Weapon Chain
+		}),
+		category(22, {	-- Armor Mods
+			i(6042),	-- Iron Shield Spike
 			i(7967),	-- Mithril Shield Spike
 			i(7969),	-- Mithril Spurs
-			i(15869),	-- Silver Skeleton Key
 			i(12645),	-- Thorium Shield Spike
+		}),
+		filter(20, {	-- Daggers
+			i(3848),	-- Big Bronze Knife
+			i(7166),	-- Copper Dagger
+			i(3490),	-- Deadly Bronze Poniard
+			i(7947),	-- Ebon Shiv
+			i(12259),	-- Glinting Steel Dagger
+			i(5540),	-- Pearl-Handled Dagger
+			i(12260),	-- Searing Golden Blade
+		}),
+		filter(21, {	-- 1H Axes
+			i(7942),	-- Blue Glittering Axe
+			i(2849),	-- Bronze Axe
+			i(2845),	-- Copper Axe
+			i(17704),	-- Edge of Winter
+			i(7941),	-- Heavy Mithril Axe
+			i(12773),	-- Ornate Thorium Handaxe
+			i(3489),	-- Thick War Axe
+		}),
+		filter(22, {	-- 2H Axes
+			i(7958),	-- Bronze Battle Axe
+			i(3488),	-- Copper Battle Axe
+			i(12775),	-- Huge Thorium Battleaxe
+			i(3855),	-- Massive Iron Axe
+			i(3856),	-- Shadow Crescent Axe
+		}),
+		filter(23, {	-- 1H Maces
+			i(7945),	-- Big Black Mace
+			i(2848),	-- Bronze Mace
+			i(2844),	-- Copper Mace
+			i(3491),	-- Heavy Bronze Mace
+			i(5541),	-- Iridescent Hammer
+			i(3492),	-- Mighty Iron Hammer
+			i(7946),	-- Runed Mithril Hammer
+			i(12792),	-- Volcanic Hammer
+		}),
+		filter(24, {	-- 2H Maces
+			i(7956),	-- Bronze Warhammer
+			i(3852),	-- Golden Iron Destroyer
+			i(12796),	-- Hammer of the Titans
+			i(6214),	-- Heavy Copper Maul
+			i(3851),	-- Solid Iron Maul
+			i(17193),	-- Sulfuron Hammer
+		}),
+		filter(25, {	-- 1H Swords
+			i(2850),	-- Bronze Shortsword
+			i(2847),	-- Copper Shortsword
+			i(7944),	-- Dazzling Mithril Rapier
+			i(3849),	-- Hardened Iron Shortsword
+			i(3850),	-- Jade Serpentblade
+			i(7943),	-- Wicked Mithril Blade
+		}),
+		filter(26, {	-- 2H Swords
+			i(7957),	-- Bronze Greatsword
+			i(7955),	-- Copper Claymore
+			i(3854),	-- Frost Tiger Blade
+			i(3487),	-- Heavy Copper Broadsword
+			i(3853),	-- Moonsteel Broadsword
+		}),
+		filter(8, {		-- Shields
+			un(PHASE_FIVE, i(22198)),	-- Jagged Obsidian Shield (AQ)
+		}),
+		category(23, {	-- Helms
+			i(7915),	-- Barbaric Iron Helm
+			un(PHASE_FOUR, i(20551)),	-- Darkrune Helm
+			i(3837),	-- Golden Scale Coif
+			i(3836),	-- Green Iron Helm
+			i(7934),	-- Heavy Mithril Helm
+			i(12427),	-- Imperial Plate Helm
+			i(7931),	-- Mithril Coif
+			i(7937),	-- Ornate Mithril Helm
+			i(12417),	-- Radiant Circlet
+			i(12612),	-- Runic Plate Helm
+			i(7922),	-- Steel Plate Helm
+			i(12410),	-- Thorium Helm
+		}),
+		category(24, {	-- Shoulders
+			i(7913),	-- Barbaric Iron Shoulders
+			un(PHASE_FOUR, i(19691)),	-- Bloodsoul Shoulders
+			i(11605),	-- Dark Iron Shoulders
+			un(PHASE_FOUR, i(19695)),	-- Darksoul Shoulders
+			i(3841),	-- Golden Scale Shoulders
+			i(3840),	-- Green Iron Shoulders
+			i(7918),	-- Heavy Mithril Shoulder
+			i(12428),	-- Imperial Plate Shoulders
+			i(7932),	-- Mithril Scale Shoulders
+			i(7928),	-- Ornate Mithril Shoulder
+			i(3480),	-- Rough Bronze Shoulders
+			i(12610),	-- Runic Plate Shoulders
+			i(3481),	-- Silvered Bronze Shoulders
+		}),
+		category(27, {	-- Bracers
+			i(2853),	-- Copper Bracers
+			i(6040),	-- Golden Scale Bracers
+			i(3835),	-- Green Iron Bracers
+			un(PHASE_SIX, i(22671)),	-- Icebane Bracers
+			i(12425),	-- Imperial Plate Bracers
+			i(7924),	-- Mithril Scale Bracers
+			i(2868),	-- Patterned Bronze Bracers
+			i(2854),	-- Runed Copper Bracers
+			i(12408),	-- Thorium Bracers
+		}),
+		category(26, {	-- Gauntlets
+			i(7917),	-- Barbaric Iron Gloves
+			un(PHASE_FIVE, i(22194)),	-- Black Grasp of the Destroyer
+			un(PHASE_FOUR, i(19692)),	-- Bloodsoul Gauntlets
+			un(PHASE_FOUR, i(20549)),	-- Darkrune Gauntlets
+			i(3474),	-- Gemmed Copper Gauntlets
+			un(PHASE_THREE, i(19057)),	-- Gloves of the Dawn
+			i(9366),	-- Golden Scale Gauntlets
+			i(3485),	-- Green Iron Gauntlets
+			i(7919),	-- Heavy Mithril Gauntlet
+			un(PHASE_SIX, i(22670)),	-- Icebane Gauntlets
+			un(PHASE_FIVE_CATCH_UP, i(22763)),	-- Ironvine Gloves
+			i(7927),	-- Ornate Mithril Gloves
+			i(12418),	-- Radiant Gloves
+			i(3472),	-- Runed Copper Gauntlets
+			i(3483),	-- Silvered Bronze Gauntlets
+		}),
+		category(25, {		-- Chest
+			i(7914),	-- Barbaric Iron Breastplate
+			un(PHASE_FOUR, i(19690)),	-- Bloodsoul Breastplate
+			i(3471),	-- Copper Chain Vest
+			i(11606),	-- Dark Iron Mail
+			un(PHASE_FOUR, i(20550)),	-- Darkrune Breastplate
+			un(PHASE_FOUR, i(19693)),	-- Darksoul Breastplate
+			i(3845),	-- Golden Scale Cuirass
+			i(3844),	-- Green Iron Hauberk
+			i(7930),	-- Heavy Mithril Breastplate
+			un(PHASE_SIX, i(22669)),	-- Icebane Breastplate
+			i(12422),	-- Imperial Plate Chest
+			i(6731),	-- Ironforge Breastplate
+			un(PHASE_FIVE_CATCH_UP, i(22762)),	-- Ironvine Breastplate
+			un(PHASE_FIVE, i(22191)),	-- Obsidian Mail Tunic
+			i(7935),	-- Ornate Mithril Breastplate
+			i(12415),	-- Radiant Breastplate
+			i(2866),	-- Rough Bronze Cuirass
+			i(2864),	-- Runed Copper Breastplate
+			i(10421),	-- Rough Copper Vest
+			i(12613),	-- Runic Breastplate
+			i(2870),	-- Shining Silver Breastplate
+			i(2869),	-- Silvered Bronze Breastplate
+			i(7963),	-- Steel Breastplate
+			un(PHASE_FIVE, i(22196)),	-- Thick Obsidian Breastplate
+			i(12405),	-- Thorium Armor
+		}),
+		category(28, {		-- Belts
+			i(2851),	-- Copper Chain Belt
+			un(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
+			un(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
+			un(PHASE_THREE, i(19043)),	-- Heavy Timbermaw Belt
+			i(12424),	-- Imperial Plate Belt
+			un(PHASE_FIVE_CATCH_UP, i(22764)),	-- Ironvine Belt
+			un(PHASE_FIVE, i(22195)),	-- Light Obsidian Belt
+			i(12416),	-- Radiant Belt
+			i(2857),	-- Runed Copper Belt
+			i(12406),	-- Thorium Belt
+		}),
+		category(29, {		-- Legs
+			i(2852),	-- Copper Chain Pants
+			un(PHASE_FOUR, i(19694)),	-- Darksoul Leggings
+			i(3843),	-- Golden Scale Leggings
+			i(3842),	-- Green Iron Leggings
+			i(7921),	-- Heavy Mithril Pants
+			i(12429),	-- Imperial Plate Leggings
+			i(7920),	-- Mithril Scale Pants
+			i(7929),	-- Orcish War Leggings
+			i(7926),	-- Ornate Mithril Pants
+			i(12420),	-- Radiant Leggings
+			i(2865),	-- Rough Bronze Leggings
+			i(3473),	-- Runed Copper Pants
+			i(12614),	-- Runic Plate Leggings
+			i(10423),	-- Silvered Bronze Leggings
+			i(12414),	-- Thorium Leggings
+		}),
+		category(30, {		-- Boots
+			i(7916),	-- Barbaric Iron Boots
+			i(3469),	-- Copper Chain Boots
+			i(3847),	-- Golden Scale Boots
+			i(3484),	-- Green Iron Boots
+			i(7933),	-- Heavy Mithril Boots
+			un(PHASE_THREE, i(19048)),	-- Heavy Timbermaw Boots
+			i(12426),	-- Imperial Plate Boots
+			i(7936),	-- Ornate Mithril Boots
+			i(3846),	-- Polished Steel Boots
+			i(12419),	-- Radiant Boots
+			i(6350),	-- Rough Bronze Boots
+			i(12611),	-- Runic Plate Boots
+			i(3482),	-- Silvered Bronze Boots
+			i(12409),	-- Thorium Boots
+		}),
+		category(33, {	-- Skeleton Keys
+			i(15872),	-- Arcanite Skeleton Key
+			i(15870),	-- Golden Skeleton Key
+			i(15869),	-- Silver Skeleton Key
 			i(15871),	-- Truesilver Skeleton Key
 		}),
 	}),
+	prof(COOKING, {
+		category(10, {	-- Everyday Cooking
+			i(13935),	-- Baked Salmon
+			i(4457),	-- Barbecued Buzzard Wing
+			i(2888),	-- Beer Basted Boar Ribs
+			i(3726),	-- Big Bear Steak
+			i(3220),	-- Blood Sausage
+			i(5525),	-- Boiled Clams
+			i(6290),	-- Brilliant Smallfish
+			i(4593),	-- Bristle Whisker Catfish
+			i(12213),	-- Carrion Surprise
+			i(2679),	-- Charred Wolf Meat
+			i(5526),	-- Clam Chowder
+			i(2682),	-- Cooked Crab Claw
+			i(13927),	-- Cooked Glossy Mightfish
+			i(2684),	-- Coyote Steak
+			i(2683),	-- Crab Cake
+			i(12224),	-- Crispy Bat Wing
+			i(5479),	-- Crispy Lizard Tail
+			i(3664),	-- Crocolisk Gumbo
+			i(3662),	-- Crocolisk Steak
+			i(3665),	-- Curiously Tasty Omelet
+			i(5478),	-- Dig Rat Stew
+			i(2687),	-- Dry Pork Ribs
+			i(13930),	-- Filet of Redgill
+			i(5476),	-- Fillet of Frenzy
+			i(6038),	-- Giant Clam Scorcho
+			i(5527),	-- Goblin Deviled Clams
+			i(10841),	-- Goldthorn Tea
+			i(3666),	-- Gooey Spider Cake
+			i(724),		-- Goretusk Liver Pie
+			i(13928),	-- Grilled Squid
+			i(20074),	-- Heavy Crocolisk Stew
+			i(12215),	-- Heavy Kodo Stew
+			i(6888),	-- Herb Baked Egg
+			i(3727),	-- Hot Lion Chops
+			i(13929),	-- Hot Smoked Bass
+			i(13851),	-- Hot Wolf Ribs
+			i(12212),	-- Jungle Stew
+			i(5472),	-- Kaldorei Spider Kabob
+			i(5480),	-- Lean Venison
+			i(12209),	-- Lean Wolf Steak
+			i(13933),	-- Lobster Stew
+			i(6316),	-- Loch Frenzy Delight
+			i(4592),	-- Longjaw Mud Snapper
+			i(13934),	-- Mightfish Steak
+			i(8364),	-- Mithril Head Trout
+			i(12218),	-- Monster Omelet
+			i(3663),	-- Murloc Fin Soup
+			i(12214),	-- Mystery Stew
+			i(13931),	-- Nightfin Soup
+			i(13932),	-- Poached Sunscale Salmon
+			i(5095),	-- Rainbow Fin Albacore
+			i(1082),	-- Redridge Goulash
+			i(12210),	-- Roast Raptor
+			i(2681),	-- Roasted Boar Meat
+			i(5474),	-- Roasted Kodo Meat
+			i(4594),	-- Rockscale Cod
+			i(18254),	-- Runn Tum Tuber Surprise
+			i(21217),	-- Sagefish Delight
+			i(5473),	-- Scorpid Surprise
+			i(1017),	-- Seasoned Wolf Kabob
+			i(787),		-- Slitherskin Mackerel
+			i(6890),	-- Smoked Bear Meat
+			i(20452),	-- Smoked Desert Dumplings
+			i(21072),	-- Smoked Sagefish
+			i(3729),	-- Soothing Turtle Bisque
+			un(TBC_PHASE_ONE, i(30816)),	-- Spice Bread
+			i(12216),	-- Spiced Chili Crab
+			i(2680),	-- Spiced Wolf Meat
+			i(17222),	-- Spider Sausage
+			i(6887),	-- Spotted Yellowtail
+			i(5477),	-- Strider Stew
+			i(2685),	-- Succulent Pork Ribs
+			i(3728),	-- Tasty Lion Steak
+			i(18045),	-- Tender Wolf Steak
+			i(16766),	-- Undermine Clam Chowder
+			i(733),		-- Westfall Stew
+		}),
+		category(11, {	-- Holiday Cooking
+			i(17197),	-- Gingerbread Cookie
+			i(17198),	-- Egg Nog
+		}),
+		category(12, {	-- Unusual Delights
+			un(PHASE_FIVE, i(21023)),	-- Dirge's Kickin' Chimaerok Chops
+			i(12217),	-- Dragonbreath Chili
+			i(6657),	-- Savory Deviate Delight
+			i(7676),	-- Thistle Tea
+		}),
+	}),
 	prof(ENCHANTING, {
+		category(34, {	-- Rods
+			i(16207),	-- Runed Arcanite Rod
+			i(6218),	-- Runed Copper Rod
+			i(11130),	-- Runed Golden Rod
+			i(6339),	-- Runed Silver Rod
+			i(11145),	-- Runed Truesilver Rod
+		}),
+		category(35, {	-- Reagents
+			i(12810),	-- Enchanted Leather
+			i(12655),	-- Enchanted Thorium Bar
+		}),
 		filter(27, {	-- Wands
 			i(11288),	-- Greater Magic Wand
 			i(11290),	-- Greater Mystic Wand
@@ -318,105 +600,295 @@ _.Craftables = { tier(1, {	-- Classic
 			un(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
 			un(PHASE_FIVE, i(20750)),	-- Wizard Oil
 		})),
-		category(20, {	-- Materials
-			i(12655),	-- Enchanted Thorium Bar
-		}),
 	}),
 	prof(ENGINEERING, {
-		n(-319, {	-- Weapons
-			i(6219),	-- Arclight Spanner
-			-- Guns
-			i(18282),	-- Core Marksman Rifle*
-			i(16004),	-- Dark Iron Rifle*
-			i(4369),	-- Deadly Blunderbuss*
-			i(16007),	-- Flawless Arcanite Rifle
-			i(4372),	-- Lovingly Crafted Boomstick*
-			i(10508),	-- Mithril Blunderbuss*
-			i(10510),	-- Mithril Heavy-Bore Rifle*
-			i(4383),	-- Moonsight Rifle*
-			i(4362),	-- Rough Boomstick*
-			i(4379),	-- Silver-Plated Shotgun*
-			i(15995),	-- Thorium Rifle*
+		prof(20219, {	-- Gnomish Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",
+			["groups"] = {
+				category(2, {	-- Devices
+					i(18645),	-- Gnomish Alarm-o-Bot
+					i(10725),	-- Gnomish Battle Chicken
+					i(10645),	-- Gnomish Death Ray
+					i(10721),	-- Gnomish Harm Prevention Belt
+					i(10726),	-- Gnomish Mind Control Cap
+					i(10720),	-- Gnomish Net-o-Matic Projector
+					i(10724),	-- Gnomish Rocket Boots
+					i(10716),	-- Gnomish Shrink Ray
+					i(11826),	-- Lil' Smoky
+					i(18986),	-- Ultrasafe Transporter: Gadgetzan
+					i(18660),	-- World Enlarger
+				}),
+				category(5, {	-- Goggles
+					i(10545),	-- Gnomish Goggles
+				}),
+				category(7, {	-- Parts
+					i(10713, {	-- Plans: Inlaid Mithril Cylinder
+						["description"] = "This recipe is crafted by Gnomish Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Gnomish Engineer to craft it for you.",
+					}),
+				}),
+			},
 		}),
-		filter(8, {	-- Shields
-			i(18168),	-- Force Reactive Disk*
+		prof(20222, {	-- Goblin Engineering
+			["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.",
+			["groups"] = {
+				category(2, {	-- Devices
+					i(18984),	-- Dimensional Ripper - Everlook
+					i(10543),	-- Goblin Construction Helmet
+					i(18587),	-- Goblin Jumper Cables XL
+					i(10542),	-- Goblin Mining Helmet
+					i(7189),	-- Goblin Rocket Boots
+					i(10588),	-- Goblin Rocket Helmet
+					i(11825),	-- Pet Bombling
+				}),
+				category(3, {	-- Explosives
+					i(10587),	-- Goblin Bomb Dispenser
+					i(10727),	-- Goblin Dragon Gun
+					i(10577),	-- Goblin Mortar
+					i(10646),	-- Goblin Sapper Charge
+					i(10586),	-- The Big One
+				}),
+				category(7, {	-- Parts
+					i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
+						["description"] = "This recipe is crafted by Goblin Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask a Goblin Engineer to craft it for you.",
+					}),
+				}),
+			},
 		}),
-		n(-318, {	-- Armor
-			-- Head
-			un(PHASE_FOUR, i(19999)),	-- Bloodvine Goggles
-			un(PHASE_FOUR, i(19998)),	-- Bloodvine Lens
-			i(10499),	-- Bright-Eye Goggles*
-			i(10501),	-- Catseye Ultra Goggles*
-			i(4393),	-- Craftsman's Monocle*
-			i(10506),	-- Deepdive Helmet*
-			i(10500),	-- Fire Goggles*
-			i(4368),	-- Flying Tiger Goggles*
-			i(10545),	-- Gnomish Goggles*
-			i(10726),	-- Gnomish Mind Control Cap*
-			i(10543),	-- Goblin Construction Helmet*
-			i(10542),	-- Goblin Mining Helmet*
-			i(10588),	-- Goblin Rocket Helmet*
-			i(10504),	-- Green Lens*
-			i(4385),	-- Green Tinted Goggles*
-			i(16008),	-- Master Engineer's Goggles*
-			i(10503),	-- Rose Colored Goggles*
-			i(4373),	-- Shadow Goggles*
-			i(10502),	-- Spellpower Goggles Xtreme*
-			i(15999),	-- Spellpower Goggles Xtreme Plus*
-			-- Neck
-			i(16009),	-- Voice Amplification Modulator*
-			-- Back
-			i(10518),	-- Parachute Cloak*
-			-- Waist
-			i(10721),	-- Gnomish Harm Prevention Belt*
-			-- Feet
-			i(10724),	-- Gnomish Rocket Boots*
-			i(7189),	-- Goblin Rocket Boots*
+		category(1, {	-- Bullets
+			i(8068),	-- Crafted Heavy Shot
+			i(8067),	-- Crafted Light Shot
+			i(8069),	-- Crafted Solid Shot
+			i(10512),	-- Hi-Impact Mithril Slugs
+			i(10513),	-- Mithril Gyro-Shot
+			i(15997),	-- Thorium Shells
 		}),
-		filter(200, {	-- Recipes
-			i(10644, {	-- Recipe: Goblin Rocket Fuel (Engineers make the recipe for alchemists)
-				["description"] = "This recipe is crafted by Engineers and given to Alchemists to learn so that the Alchemist can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
-			i(10713, {	-- Plans: Inlaid Mithril Cylinder
-				["description"] = "This recipe is crafted by Engineers and given to Blacksmiths to learn so that the Blacksmith can craft the item needed by the Engineer.\n\nIf you are missing this recipe, ask an Engineer to craft it for you.",
-			}),
-		}),
-		filter(50, {	-- Miscellaneous
-			i(4407),	-- Accurate Scope
+		category(2, {	-- Devices
 			i(4392),	-- Advanced Target Dummy
 			i(6533),	-- Aquadynamic Fish Attractor
+			i(16022),	-- Arcanite Dragonling
+			i(4391),	-- Compact Harvest Reaper Kit
+			i(4388),	-- Discombobulator Ray
+			i(18232),	-- Field Repair Bot 74A
+			i(4376),	-- Flame Deflector
+			i(4397),	-- Gnomish Cloaking Device
+			i(7506),	-- Gnomish Universal Remote
+			i(7148),	-- Goblin Jumper Cables
+			i(18634),	-- Gyrofreeze Ice Reflector
+			i(18638),	-- Hyper-Radiant Flame Reflector
+			i(4386),	-- Ice Deflector
+			i(15996),	-- Lifelike Mechanical Toad
+			i(18637),	-- Major Recombobulator
+			i(16023),	-- Masterwork Target Dummy
+			i(4396),	-- Mechanical Dragonling
+			i(11590),	-- Mechanical Repair Kit
+			i(4401),	-- Mechanical Squirrel Box
+			i(4381),	-- Minor Recombobulator
+			i(10576),	-- Mithril Mechanical Dragonling
+			i(5507),	-- Ornate Spyglass
+			i(10518),	-- Parachute Cloak
+			i(6712),	-- Practice Lock
+			i(15846),	-- Salt Shaker
+			i(17716),	-- Snowmaster 9000
+			un(TBC_PHASE_ONE, i(22728)),	-- Steam Tonk Controller
+			i(4366),	-- Target Dummy
+			i(21277),	-- Tranquil Mechanical Yeti
+			i(18639),	-- Ultra-Flash Shadow Reflector
+			i(16009),	-- Voice Amplification Modulator
+		}),
+		category(3, {	-- Explosives
 			i(16040),	-- Arcane Bomb
+			i(4380),	-- Big Bronze Bomb
+			i(4394),	-- Big Iron Bomb
+			i(4365),	-- Coarse Dynamite
+			i(16005),	-- Dark Iron Bomb
+			i(18641),	-- Dense Dynamite
+			i(4384),	-- Explosive Sheep
+			i(6714),	-- EZ-Thro Dynamite
+			i(18588),	-- EZ-Thro Dynamite II
+			i(4852),	-- Flash Bomb
+			i(4395),	-- Goblin Land Mine
+			i(4378),	-- Heavy Dynamite
+			i(10562),	-- Hi-Explosive Bomb
+			i(4390),	-- Iron Grenade
+			i(4370),	-- Large Copper Bomb
+			i(4398),	-- Large Seaforium Charge
+			i(10514),	-- Mithril Frag Bomb
+			i(4403),	-- Portable Bronze Mortar
+			i(18594),	-- Powerful Seaforium Charge
+			i(4360),	-- Rough Copper Bomb
+			i(4358),	-- Rough Dynamite
+			i(4374),	-- Small Bronze Bomb
+			i(4367),	-- Small Seaforium Charge
+			i(10507),	-- Solid Dynamite
+			i(15993),	-- Thorium Grenade
+		}),
+		category(4, {	-- Fireworks
+			i(9312),	-- Blue Firework
+			i(21571),	-- Blue Rocket Cluster
+			i(21570),	-- Cluster Launcher
+			i(21569),	-- Firework Launcher
+			i(9313),	-- Green Firework
+			i(21574),	-- Green Rocket Cluster
+			i(21589),	-- Large Blue Rocket
+			i(21714),	-- Large Blue Rocket Cluster
+			i(21590),	-- Large Green Rocket
+			i(21716),	-- Large Green Rocket Cluster
+			i(21592),	-- Large Red Rocket
+			i(21718),	-- Large Red Rocket Cluster
+			i(9318),	-- Red Firework
+			i(21576),	-- Red Rocket Cluster
+			i(21558),	-- Small Blue Rocket
+			i(21559),	-- Small Green Rocket
+			i(21557),	-- Small Red Rocket
+			i(19026),	-- Snake Burst Firework
+		}),
+		category(5, {	-- Goggles
+			un(PHASE_FOUR, i(19999)),	-- Bloodvine Goggles
+			un(PHASE_FOUR, i(19998)),	-- Bloodvine Lens
+			i(10499),	-- Bright-Eye Goggles
+			i(10501),	-- Catseye Ultra Goggles
+			i(4393),	-- Craftsman's Monocle
+			i(10506),	-- Deepdive Helmet
+			i(10500),	-- Fire Goggles
+			i(4368),	-- Flying Tiger Goggles
+			i(10504),	-- Green Lens
+			i(4385),	-- Green Tinted Goggles
+			i(16008),	-- Master Engineer's Goggles
+			i(10503),	-- Rose Colored Goggles
+			i(4373),	-- Shadow Goggles
+			i(10502),	-- Spellpower Goggles Xtreme
+			i(15999),	-- Spellpower Goggles Xtreme Plus
+		}),
+		category(6, {	-- Guns
+			i(18282),	-- Core Marksman Rifle
+			i(16004),	-- Dark Iron Rifle
+			i(4369),	-- Deadly Blunderbuss
+			i(16007),	-- Flawless Arcanite Rifle
+			i(4372),	-- Lovingly Crafted Boomstick
+			i(10508),	-- Mithril Blunderbuss
+			i(10510),	-- Mithril Heavy-Bore Rifle
+			i(4383),	-- Moonsight Rifle
+			i(4362),	-- Rough Boomstick
+			i(4379),	-- Silver-Plated Shotgun
+			i(15995),	-- Thorium Rifle
+		}),
+		category(7, {	-- Parts
+			i(4382),	-- Bronze Framework
+			i(4371),	-- Bronze Tube
+			i(4364),	-- Coarse Blasting Powder
+			i(4363),	-- Copper Modulator
+			i(4361),	-- Copper Tube
+			i(16006),	-- Delicate Arcanite Converter
+			i(15992),	-- Dense Blasting Powder
+			i(10558),	-- Gold Power Core
+			i(4389),	-- Gyrochronatom
+			i(4359),	-- Handful of Copper Bolts
+			i(4377),	-- Heavy Blasting Powder
+			i(4387),	-- Iron Strut
+			i(10561),	-- Mithril Casing
+			i(10559),	-- Mithril Tube
+			i(4357),	-- Rough Blasting Powder
+			i(4404),	-- Silver Contact
+			i(10505),	-- Solid Blasting Powder
+			i(16000),	-- Thorium Tube
+			i(15994),	-- Thorium Widget
+			i(18631),	-- Truesilver Transformer
+			i(10560),	-- Unstable Trigger
+			i(4375),	-- Whirring Bronze Gizmo
+		}),
+		category(8, {	-- Scopes
+			i(4407),	-- Accurate Scope
 			i(18283),	-- Biznicks 247x128 Accurascope
 			i(4405),	-- Crude Scope
 			i(10546),	-- Deadly Scope
-			i(18645),	-- Gnomish Alarm-O-Bot
-			i(15996),	-- Lifelike Mechanical Toad*
-			i(11826),	-- Lil' Smoky*
-			i(4401),	-- Mechanical Squirrel Box*
-			i(5507),	-- Ornate Spyglass
-			i(11825),	-- Pet Bombling*
-			i(21277),	-- Tranquil Mechanical Yeti*
 			i(10548),	-- Sniper Scope
-			i(17716),	-- Snowmaster 9000*
 			i(4406),	-- Standard Scope
-			i(18660),	-- World Enlarger*
 		}),
-		filter(53, {	-- Trinkets
-			i(16022),	-- Arcanite Dragonling*
-			i(18984),	-- Dimensional Ripper - Everlook*
-			i(4397),	-- Gnomish Cloaking Device*
-			i(10720),	-- Gnomish Net-o-Matic Projector*
-			i(10716),	-- Gnomish Shrink Ray*
-			i(7506),	-- Gnomish Universal Remote*
-			i(10577),	-- Goblin Mortar*
-			i(18634),	-- Gyrofreeze Ice Reflector*
-			i(18638),	-- Hyper-Radiant Flame Reflector
-			i(18637),	-- Major Recombobulator*
-			i(4396),	-- Mechanical Dragonling*
-			i(4381),	-- Minor Recombobulator*
-			i(10576),	-- Mithril Mechanical Dragonling*
-			i(18639),	-- Ultra-Flash Shadow Reflector*
-			i(18986),	-- Ultrasafe Transporter: Gadgetzan*
+		filter(8, {		-- Shields
+			i(18168),	-- Force Reactive Disk*
+		}),
+		category(9, {	-- Tools
+			i(6219),	-- Arclight Spanner
+			i(10498),	-- Gyromatic Micro-Adjustor
+		}),
+	}),
+	prof(FIRST_AID, {
+		i(1251),	-- Linen Bandage
+		i(2581),	-- Heavy Linen Bandage
+		i(6452),	-- Anti-Venom
+		i(3530),	-- Wool Bandage
+		i(3531),	-- Heavy Wool Bandage
+		i(6453),	-- Strong Anti-Venom
+		i(6450),	-- Silk Bandage
+		i(6451),	-- Heavy Silk Bandage
+		i(8544),	-- Mageweave Bandage
+		i(8545),	-- Heavy Mageweave Bandage
+		i(14529),	-- Runecloth Bandage
+		i(14530),	-- Heavy Runecloth Bandage
+		i(19440),	-- Powerful Anti-Venom
+	}),
+	prof(FISHING, {
+		filter(23, {	-- 1H Maces
+			i(19808),	-- Rockhide Strongfish
+			i(6360),	-- Steelscale Crushfish
+		}),
+		filter(52, {	-- Finger
+			i(8350),	-- The 1 Ring
+		}),
+		filter(1, {		-- Held in Off-hand
+			i(6292),	-- 10 Pound Mud Snapper
+			i(6294),	-- 12 Pound Mud Snapper
+			i(6295),	-- 15 Pound Mud Snapper
+			i(13901),	-- 15 Pound Salmon
+			i(6309),	-- 17 Pound Catfish
+			i(13902),	-- 18 Pound Salmon
+			i(6310),	-- 19 Pound Catfish
+			i(6311),	-- 22 Pound Catfish
+			i(13903),	-- 22 Pound Salmon
+			i(13904),	-- 25 Pound Salmon
+			i(6363),	-- 26 Pound Catfish
+			i(13905),	-- 29 Pound Salmon
+			i(6364),	-- 32 Pound Catfish
+			i(13906),	-- 32 Pound Salmon
+			i(13885),	-- 34 Pound Redgill
+			i(13886),	-- 37 Pound Redgill
+			i(13882),	-- 42 Pound Redgill
+			i(13883),	-- 45 Pound Redgill
+			i(13884),	-- 49 Pound Redgill
+			i(13887),	-- 52 Pound Redgill
+			i(13914),	-- 70 Pound Mightfish
+			i(13915),	-- 85 Pound Mightfish
+			i(13916),	-- 92 Pound Mightfish
+			i(13917),	-- 103 Pound Mightfish
+		}),
+		filter(50, {	-- Miscellaneous
+			i(13907),	-- 7 Pound Lobster
+			i(13908),	-- 9 Pound Lobster
+			i(13909),	-- 12 Pound Lobster
+			i(13910),	-- 15 Pound Lobster
+			i(13911),	-- 19 Pound Lobster
+			i(13912),	-- 21 Pound Lobster
+			i(13913),	-- 22 Pound Lobster
+			i(13876),	-- 40 Pound Grouper
+			i(13877),	-- 47 Pound Grouper
+			i(13878),	-- 53 Pound Grouper
+			i(13879),	-- 59 Pound Grouper
+			i(13880),	-- 68 Pound Grouper
+			i(6646),	-- Bloated Albacore
+			i(6647),	-- Bloated Catfish
+			i(21163),	-- Bloated Firefin
+			i(6644),	-- Bloated Mackerel
+			i(21243),	-- Bloated Mightfish
+			i(6645),	-- Bloated Mud Snapper
+			i(21162),	-- Bloated Oily Blackmouth
+			i(13881, {	-- Bloated Redgill
+				i(7551),	-- Entwined Opaline Talisman
+				i(7549),	-- Fairy's Embrace
+			}),
+			i(21164),	-- Bloated Rockscale Cod
+			i(13891),	-- Bloated Salmon
+			i(6643),	-- Bloated Smallfish
+			i(8366),	-- Bloated Trout
 		}),
 	}),
 	prof(HERBALISM, {
@@ -425,7 +897,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(8836),	-- Arthas' Tears [Herbalism 220]
 			i(13468),	-- Black Lotus [Herbalism 300]
 			i(8839),	-- Blindweed [Herbalism 235]
-			i(19726),	-- Bloodvine [Herbalism 210] [ZG Only]
+			un(PHASE_FOUR, i(19726)),	-- Bloodvine [Herbalism 210] [ZG Only]
 			i(2450),	-- Briarthorn [Herbalism 70]
 			i(2453),	-- Bruiseweed [Herbalism 100]
 			i(13463),	-- Dreamfoil [Herbalism 270]
@@ -456,17 +928,45 @@ _.Craftables = { tier(1, {	-- Classic
 		},
 	}),
 	prof(LEATHERWORKING, {
-		filter(113, {	-- Bags
+		category(58, {	-- Materials
+			i(4236),	-- Cured Heavy Hide
+			i(4231),	-- Cured Light Hide
+			i(4233),	-- Cured Medium Hide
+			i(15407),	-- Cured Rugged Hide
+			i(8172),	-- Cured Thick Hide
+			un(PHASE_ONE_DIRE_MAUL, i(18258)),	-- Gordok Ogre Suit
+			i(4234),	-- Heavy Leather
+			i(2318),	-- Light Leather
+			i(2319),	-- Medium Leather
+			i(8170),	-- Rugged Leather
+			i(4304),	-- Thick Leather
+		}),
+		category(47, {	-- Armor Kits
+			i(18251),	-- Core Armor Kit
+			i(4265),	-- Heavy Armor Kit
+			i(18662),	-- Heavy Leather Ball
+			i(2304),	-- Light Armor Kit
+			i(2313),	-- Medium Armor Kit
+			i(15564),	-- Rugged Armor Kit
+			i(8173),	-- Thick Armor Kit
+		}),
+		category(48, {	-- Bags
 			i(7372),	-- Heavy Leather Ammo Pouch
 			i(7371),	-- Heavy Quiver
+			i(5081),	-- Kodo Hide Bag
+			i(7278),	-- Light Leather Quiver
 			i(8217),	-- Quickdraw Quiver
+			i(7279),	-- Small Leather Ammo Pouch
 			i(8218),	-- Thick Leather Ammo Pouch
 		}),
+		category(2, {	-- Devices
+			i(18662),	-- Heavy Leather Ball
+		}),
 		filter(3, {	-- Cloak
-			i(18509),	-- Chromatic Cloak
+			un(PHASE_ONE_DIRE_MAUL, i(18509)),	-- Chromatic Cloak
 			i(6466),	-- Deviate Scale Cloak
-			i(18510),	-- Hide of the Wild
-			i(18511),	-- Shifting Cloak
+			un(PHASE_ONE_DIRE_MAUL, i(18510)),	-- Hide of the Wild
+			un(PHASE_ONE_DIRE_MAUL, i(18511)),	-- Shifting Cloak
 			i(8215),	-- Wild Leather Cloak
 			i(8216),	-- Big Voodoo Cloak
 			i(7283),	-- Black Whelp Cloak
@@ -496,7 +996,7 @@ _.Craftables = { tier(1, {	-- Classic
 				un(PHASE_FOUR, i(19689)),	-- Blood Tiger Shoulders
 				i(15058),	-- Stormshroud Shoulders
 				i(15055),	-- Volcanic Shoulders
-				i(19058),	-- Golden Mantle of the Dawn
+				un(PHASE_THREE, i(19058)),	-- Golden Mantle of the Dawn
 				i(15061),	-- Living Shoulders
 				i(15096),	-- Runic Leather Shoulders (Trainable now, old Pattern id 15777 used to teach this.)
 				i(15067),	-- Ironfeather Shoulders
@@ -560,7 +1060,7 @@ _.Craftables = { tier(1, {	-- Classic
 				i(7277),	-- Handstitched Leather Bracers
 			}),
 			n(-327, {	-- Hands
-				i(19049),	-- Timbermaw Brawlers
+				un(PHASE_THREE, i(19049)),	-- Timbermaw Brawlers
 				un(PHASE_SIX, i(22662)),	-- Polar Gloves
 				un(PHASE_FOUR, i(19686)),	-- Primal Batskin Gloves
 				i(15070),	-- Frostsaber Gloves
@@ -587,13 +1087,13 @@ _.Craftables = { tier(1, {	-- Classic
 				i(4239),	-- Embossed Leather Gloves
 			}),
 			n(-328, {	-- Waist
-				i(18504),	-- Girdle of Insight
+				un(PHASE_ONE_DIRE_MAUL, i(18504)),	-- Girdle of Insight
 				un(PHASE_FIVE_CATCH_UP, i(22761)),	-- Bramblewood Belt
-				i(19163),	-- Molten Belt
+				un(PHASE_THREE, i(19163)),	-- Molten Belt
 				un(PHASE_THREE, i(19162)),	-- Corehound Belt
-				i(19149),	-- Lava Belt
+				un(PHASE_THREE, i(19149)),	-- Lava Belt
 				i(15088),	-- Wicked Leather Belt (Trainable now, old Pattern id 15768 used to teach this.)
-				i(19044),	-- Might of the Timbermaw
+				un(PHASE_THREE, i(19044)),	-- Might of the Timbermaw
 				i(15093),	-- Runic Leather Belt (Trainable now, old Pattern id 15745 used to teach this.)
 				i(4264),	-- Barbaric Belt
 				i(7387),	-- Dusky Belt
@@ -637,8 +1137,8 @@ _.Craftables = { tier(1, {	-- Classic
 			n(-330, {	-- Feet
 				un(PHASE_FIVE_CATCH_UP, i(22760)),	-- Bramblewood Boots
 				i(16982),	-- Corehound Boots
-				i(18506),	-- Mongoose Boots
-				i(19052),	-- Dawn Treaders
+				un(PHASE_ONE_DIRE_MAUL, i(18506)),	-- Mongoose Boots
+				un(PHASE_THREE, i(19052)),	-- Dawn Treaders
 				i(15073),	-- Chimeric Boots
 				i(15071),	-- Frostsaber Boots
 				i(8213),	-- Wild Leather Boots
@@ -665,9 +1165,9 @@ _.Craftables = { tier(1, {	-- Classic
 			}),
 			n(-323, {	-- Chest
 				un(NEVER_IMPLEMENTED, i(15141)),	-- Onyxia Scale Breastplate (never made it out of Beta)
-				i(20479),	-- Spitfire Breastplate
-				i(20478),	-- Sandstalker Breastplate
-				i(20380),	-- Dreamscale Breastplate
+				un(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
+				un(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
+				un(PHASE_FOUR, i(20380)),	-- Dreamscale Breastplate
 				un(PHASE_SIX, i(22664)),	-- Icy Scale Breastplate
 				i(15047),	-- Red Dragonscale Breastplate
 				i(15048),	-- Blue Dragonscale Breastplate
@@ -680,21 +1180,21 @@ _.Craftables = { tier(1, {	-- Classic
 			}),
 			n(-326, {	-- Wrists
 				un(PHASE_SIX, i(22665)),	-- Icy Scale Bracers
-				i(18508),	-- Swift Flight Bracers
-				i(20481),	-- Spitfire Bracers
-				i(20476),	-- Sandstalker Bracers
+				un(PHASE_ONE_DIRE_MAUL, i(18508)),	-- Swift Flight Bracers
+				un(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
+				un(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				i(15077),	-- Heavy Scorpid Bracers
 				i(8205),	-- Tough Scorpid Bracers
 				i(8198),	-- Turtle Scale Bracers
 			}),
 			n(-327, {	-- Hands
-				i(19157),	-- Chromatic Gauntlets
+				un(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
 				un(PHASE_SIX, i(22666)),	-- Icy Scale Gauntlets
-				i(20480),	-- Spitfire Gauntlets
-				i(20477),	-- Sandstalker Gauntlets
+				un(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
+				un(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
 				i(15078),	-- Heavy Scorpid Gauntlets
 				i(20296),	-- Green Dragonscale Gauntlets
-				i(8347),		-- Dragonscale Gauntlets
+				i(8347),	-- Dragonscale Gauntlets
 				i(8204),	-- Tough Scorpid Gloves
 				i(8187),	-- Turtle Scale Gloves
 				i(7348),	-- Fletcher's Gloves
@@ -715,44 +1215,63 @@ _.Craftables = { tier(1, {	-- Classic
 				i(8209),	-- Tough Scorpid Boots
 			}),
 		}),
-		filter(50, {	-- Miscellaneous
-			i(18251),	-- Core Armor Kit
-		}),
 	}),
 	prof(MINING, {
 		["description"] = "The following items can be gathered by Miners out in the world.",
 		["groups"] = {
+			spell(2656, {	-- Smelting
+				["description"] = "The following items can be smelted by Miners in a city at the Black Forge in BRD.",
+				["collectible"] = false,
+				["groups"] = {
+					i(2841),	-- Bronze Bar
+					i(2840),	-- Copper Bar
+					i(11371),	-- Dark Iron Bar
+					i(17771),	-- Elementium Bar
+					i(3577),	-- Gold Bar
+					i(3575),	-- Iron Bar
+					i(3860),	-- Mithril Bar
+					i(2842),	-- Silver Bar
+					i(3859),	-- Steel Bar
+					i(12359),	-- Thorium Bar
+					i(3576),	-- Tin Bar
+					i(6037),	-- Truesilver Bar
+				},
+			}),
+			i(2836),	-- Coarse Stone
 			i(2770),	-- Copper Ore
 			i(11370),	-- Dark Iron Ore
+			i(12365),	-- Dense Stone
 			i(2776),	-- Gold Ore
+			i(2838),	-- Heavy Stone
 			i(2772),	-- Iron Ore
+			i(22203),	-- Large Obsidian Shard
 			i(3858),	-- Mithril Ore
+			i(2835),	-- Rough Stone
 			i(2775),	-- Silver Ore
+			i(22202),	-- Small Obsidian Shard
+			i(7912),	-- Solid Stone
 			i(10620),	-- Thorium Ore
 			i(2771),	-- Tin Ore
 			i(7911),	-- Truesilver Ore
 		},
 	}),
-	spell(2656, {	-- Smelting
-		["description"] = "The following items can be smelted by Miners in a city at the Black Forge in BRD.",
-		["collectible"] = false,
+	prof(SKINNING, {
+		["description"] = "The following items can be gathered by skinning creatures out in the world.",
 		["groups"] = {
-			i(2841),	-- Bronze Bar
-			i(2840),	-- Copper Bar
-			i(11371),	-- Dark Iron Bar
-			i(17771),	-- Elementium Bar
-			i(3577),	-- Gold Bar
-			i(3575),	-- Iron Bar
-			i(3860),	-- Mithril Bar
-			i(2842),	-- Silver Bar
-			i(3859),	-- Steel Bar
-			i(12359),	-- Thorium Bar
-			i(3576),	-- Tin Bar
-			i(6037),	-- Truesilver Bar
+			
 		},
 	}),
 	prof(TAILORING, {
-		filter(113, {	-- Bags
+		category(58, {	-- Materials
+			i(2996),	-- Bolt of Linen Cloth
+			i(4339),	-- Bolt of Mageweave
+			i(14048),	-- Bolt of Runecloth
+			i(4305),	-- Bolt of Silk Cloth
+			i(2997),	-- Bolt of Woolen Cloth
+			un(PHASE_ONE_DIRE_MAUL, i(18258)),	-- Gordok Ogre Suit
+			i(14342),	-- Mooncloth
+		}),
+		category(59, {	-- Bags
 			un(PHASE_FIVE, i(22249)),	-- Big Bag of Enchantment
 			i(5765),	-- Black Silk Pack
 			i(14156),	-- Bottomless Bag
@@ -827,7 +1346,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(14103),	-- Brightcloth Cloak
 			i(14044),	-- Cindercloth Cloak
 			i(14134),	-- Cloak of Fire
-			i(18413),	-- Cloak of Warding
+			un(PHASE_ONE_DIRE_MAUL, i(18413)),	-- Cloak of Warding
 			i(7056),	-- Crimson Silk Cloak
 			un(PHASE_FIVE_CATCH_UP, i(22660)),	-- Gaea's Embrace
 			i(4311),	-- Heavy Woolen Cloak
@@ -864,7 +1383,7 @@ _.Craftables = { tier(1, {	-- Classic
 			i(14043),	-- Cindercloth Gloves
 			i(7064),	-- Crimson Silk Gloves
 			i(10019),	-- Dreamweave Gloves
-			i(18407),	-- Felcloth Gloves
+			un(PHASE_ONE_DIRE_MAUL, i(18407)),	-- Felcloth Gloves
 			i(16979),	-- Flarecore Gloves
 			i(13870),	-- Frostweave Gloves
 			i(14142),	-- Ghostweave Gloves
@@ -873,8 +1392,8 @@ _.Craftables = { tier(1, {	-- Classic
 			i(7047),	-- Hands of Darkness
 			i(4307),	-- Heavy Linen Gloves
 			i(4310),	-- Heavy Woolen Gloves
-			i(18408),	-- Inferno Gloves
-			i(18409),	-- Mooncloth Gloves
+			un(PHASE_ONE_DIRE_MAUL, i(18408)),	-- Inferno Gloves
+			un(PHASE_ONE_DIRE_MAUL, i(18409)),	-- Mooncloth Gloves
 			i(4331),	-- Phoenix Gloves
 			i(10018),	-- Red Mageweave Gloves
 			i(13863),	-- Runecloth Gloves
@@ -965,7 +1484,7 @@ _.Craftables = { tier(1, {	-- Classic
 		}),
 		n(-328, {	-- Waist
 			i(7052),	-- Azure Silk Belt
-			i(18405),	-- Belt of the Archmage
+			un(PHASE_ONE_DIRE_MAUL, i(18405)),	-- Belt of the Archmage
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
 			i(14143),	-- Ghostweave Belt

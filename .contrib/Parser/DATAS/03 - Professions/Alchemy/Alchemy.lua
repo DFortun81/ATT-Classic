@@ -49,10 +49,10 @@ profession(ALCHEMY, {
 				["name"] = "Greater Arcane Protection Potion",
 				["recipeID"] = 17577
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Greater Dreamless Sleep Potion",
 				["recipeID"] = 24366,
-			},
+			}),
 			{
 				["name"] = "Greater Fire Protection Potion",
 				["recipeID"] = 17574
@@ -65,10 +65,6 @@ profession(ALCHEMY, {
 				["name"] = "Greater Healing Potion",
 				["recipeID"] = 7181
 			},
-			un(NEVER_IMPLEMENTED, {
-				["name"] = "Greater Holy Protection Potion",
-				["recipeID"] = 17579,
-			}),
 			{
 				["name"] = "Greater Mana Potion",
 				["recipeID"] = 11448
@@ -117,14 +113,14 @@ profession(ALCHEMY, {
 				["name"] = "Limited Invulnerability Potion",
 				["recipeID"] = 3175
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Living Action Potion",
 				["recipeID"] = 24367,
-			},
-			{
+			}),
+			un(PHASE_FOUR, {
 				["name"] = "Mageblood Potion",
 				["recipeID"] = 24365,
-			},
+			}),
 			{
 				["name"] = "Magic Resistance Potion",
 				["recipeID"] = 11453
@@ -153,10 +149,10 @@ profession(ALCHEMY, {
 				["name"] = "Mighty Rage Potion",
 				["recipeID"] = 17552
 			},
-			{
+			un(PHASE_FOUR, {
 				["name"] = "Mighty Troll's Blood Potion",
 				["recipeID"] = 3451
-			},
+			}),
 			{
 				["name"] = "Minor Healing Potion",
 				["recipeID"] = 2330
@@ -178,7 +174,7 @@ profession(ALCHEMY, {
 				["recipeID"] = 7259
 			},
 			{
-				["name"] = "Potion of Curing",
+				["name"] = "Potion of Curing / Elixir of Poison Resistance",
 				["recipeID"] = 3174
 			},
 			{

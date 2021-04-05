@@ -10,11 +10,11 @@ profession(BLACKSMITHING, {
 				["name"] = "Helms",
 				["categoryID"] = 23,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Dark Iron Helm",
 						["recipeID"] = 23636,
 						["requireSkill"] = 9788,
-					},
+					}),
 					un(PHASE_THREE, {
 						["name"] = "Enchanted Thorium Helm",
 						["recipeID"] = 16742,
@@ -68,19 +68,14 @@ profession(BLACKSMITHING, {
 				["name"] = "Gauntlets",
 				["categoryID"] = 26,
 				["g"] = {
-					{
+					un(PHASE_THREE, {
 						["name"] = "Dark Iron Gauntlets",
 						["recipeID"] = 23637,
 						["requireSkill"] = 9788,
-					},
+					}),
 					{
 						["name"] = "Fiery Plate Gauntlets",
 						["recipeID"] = 16655,
-						["requireSkill"] = 9788,
-					},
-					{
-						["name"] = "Truesilver Gauntlets",
-						["recipeID"] = 9954,
 						["requireSkill"] = 9788,
 					},
 					{
@@ -91,6 +86,11 @@ profession(BLACKSMITHING, {
 					{
 						["name"] = "Stronghold Gauntlets",
 						["recipeID"] = 16741,
+						["requireSkill"] = 9788,
+					},
+					{
+						["name"] = "Truesilver Gauntlets",
+						["recipeID"] = 9954,
 						["requireSkill"] = 9788,
 					},
 				},
@@ -167,11 +167,11 @@ profession(BLACKSMITHING, {
 				["name"] = "Boots",
 				["categoryID"] = 30,
 				["g"] = {
-					{
+					un(PHASE_FOUR, {
 						["name"] = "Dark Iron Boots",
 						["recipeID"] = 24399,
 						["requireSkill"] = 9788,
-					},
+					}),
 				}
 			},
 		},
