@@ -3038,7 +3038,7 @@ app.PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 	end
 	
 	-- Only check the guild once every 10 seconds.
-	if (t.cooldown or 0) <= time() then
+	if (rawget(t, "cooldown") or 0) <= time() then
 		local count = GetNumGuildMembers();
 		if count > 0 then
 			for guildIndex = 1, count, 1 do
@@ -3048,7 +3048,7 @@ app.PlayerGUIDFromInfo = setmetatable({}, { __index = function(t, info)
 				end
 			end
 		end
-		t.cooldown = time() + 10;
+		rawset(t, "cooldown", time() + 10);
 		return rawget(t, info);
 	end
 end });
