@@ -1,6 +1,11 @@
 _.Craftables = { tier(1, {	-- Classic
 	prof(ALCHEMY, {
-		i(9149),	-- Philosopher's Stone
+		category(35, {	-- Reagents
+			i(12360),	-- Arcanite Bar
+		}),
+		category(18, {	-- Trinkets
+			i(9149),	-- Philosopher's Stone
+		}),
 	}),
 	prof(BLACKSMITHING, {
 		filter(20, {	-- Daggers
@@ -265,6 +270,19 @@ _.Craftables = { tier(1, {	-- Classic
 			i(3482),	-- Silvered Bronze Boots
 			i(12409),	-- Thorium Boots
 		}),
+		category(20, {	-- Materials
+			i(16206),	-- Arcanite Rod
+			i(3478),	-- Coarse Grinding Stone
+			i(12644),	-- Dense Grinding Stone
+			i(11128),	-- Golden Rod
+			i(3486),	-- Heavy Grinding Stone
+			i(9060),	-- Inlaid Mithril Cylinder
+			i(7071),	-- Iron Buckle
+			i(3470),	-- Rough Grinding Stone
+			i(6338),	-- Silver Rod
+			i(7966),	-- Solid Grinding Stone
+			i(11144),	-- Truesilver Rod
+		}),
 		filter(50, {	-- Miscellaneous
 			i(15872),	-- Arcanite Skeleton Key
 			i(18262),	-- Elemental Sharpening Stone
@@ -286,17 +304,17 @@ _.Craftables = { tier(1, {	-- Classic
 		filter(53, {	-- Trinkets
 			i(11811),	-- Smoking Heart of the Mountain
 		}),
-		un(PHASE_FIVE, {
-			["categoryID"] = 44,	-- Oils
-			["groups"] = {
-				un(PHASE_FIVE, i(20748)),	-- Brilliant Mana Oil
-				un(PHASE_FIVE, i(20749)),	-- Brilliant Wizard Oil
-				un(PHASE_FIVE, i(20747)),	-- Lesser Mana Oil
-				un(PHASE_FIVE, i(20746)),	-- Lesser Wizard Oil
-				un(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
-				un(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
-				un(PHASE_FIVE, i(20750)),	-- Wizard Oil
-			},
+		un(PHASE_FIVE, category(44, {	-- Oils
+			un(PHASE_FIVE, i(20748)),	-- Brilliant Mana Oil
+			un(PHASE_FIVE, i(20749)),	-- Brilliant Wizard Oil
+			un(PHASE_FIVE, i(20747)),	-- Lesser Mana Oil
+			un(PHASE_FIVE, i(20746)),	-- Lesser Wizard Oil
+			un(PHASE_FIVE, i(20745)),	-- Minor Mana Oil
+			un(PHASE_FIVE, i(20744)),	-- Minor Wizard Oil
+			un(PHASE_FIVE, i(20750)),	-- Wizard Oil
+		})),
+		category(35, {	-- Reagents
+			i(12655),	-- Enchanted Thorium Bar
 		}),
 	}),
 	prof(ENGINEERING, {
@@ -693,7 +711,33 @@ _.Craftables = { tier(1, {	-- Classic
 	prof(MINING, {
 		["description"] = "The following items can be gathered by Miners out in the world.",
 		["groups"] = {
-			
+			i(2770),	-- Copper Ore
+			i(11370),	-- Dark Iron Ore
+			i(2776),	-- Gold Ore
+			i(2772),	-- Iron Ore
+			i(3858),	-- Mithril Ore
+			i(2775),	-- Silver Ore
+			i(10620),	-- Thorium Ore
+			i(2771),	-- Tin Ore
+			i(7911),	-- Truesilver Ore
+		},
+	}),
+	spell(2656, {	-- Smelting
+		["description"] = "The following items can be smelted by Miners in a city at the Black Forge in BRD.",
+		["collectible"] = false,
+		["groups"] = {
+			i(2841),	-- Bronze Bar
+			i(2840),	-- Copper Bar
+			i(11371),	-- Dark Iron Bar
+			i(17771),	-- Elementium Bar
+			i(3577),	-- Gold Bar
+			i(3575),	-- Iron Bar
+			i(3860),	-- Mithril Bar
+			i(2842),	-- Silver Bar
+			i(3859),	-- Steel Bar
+			i(12359),	-- Thorium Bar
+			i(3576),	-- Tin Bar
+			i(6037),	-- Truesilver Bar
 		},
 	}),
 	prof(TAILORING, {
