@@ -684,10 +684,44 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 					},
 				}),
 			}),
-			n(REWARDS, {
+			n(VENDORS, {
+				n(14860, {	-- Flik
+					["coords"] = {
+						{ 36.4, 36.0, MULGORE },
+						{ 37.6, 39.6, MULGORE },
+						{ 42.8, 66.6, ELWYNN_FOREST },
+						{ 41.4, 69.8, ELWYNN_FOREST },
+						{ 43.6, 71.0, ELWYNN_FOREST },
+					},
+					["groups"] = {
+						HEAVY_LEATHER_BALL,
+						i(11026),	-- Tree Frog Box
+						i(11027),	-- Wood Frog Box
+					},
+				}),
+				n(14846, {	-- Lhara <Darkmoon Faire Exotic Goods>
+					["coords"] = {
+						{ 36.4, 38.0, MULGORE },
+						{ 41.2, 69.8, ELWYNN_FOREST },
+					},
+					["groups"] = {
+						BIG_STICK,
+						DARING_DIRK,
+						i(19303),	-- Darkmoon Necklace
+						i(19302),	-- Darkmoon Ring
+						DENSE_SHORTBOW,
+						FINE_SHORTBOW,
+						STURDY_RECURVE,
+						SLYVAN_SHORTBOW,
+					},
+				}),
 				i(19422, {	-- Darkmoon Faire Fortune
-					["description"] = "This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.",
+					["description"] = "This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2 +10% Magical Resist\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",
 					["cr"] = 14822,	-- Sayge
+					["coords"] = {
+						{ 36.8, 38.2, MULGORE },
+						{ 42.0, 69.0, ELWYNN_FOREST },
+					},
 					["groups"] = {
 						i(19229),	-- Sayge's Fortune #1
 						i(19256),	-- Sayge's Fortune #2
@@ -726,38 +760,6 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						}),
 						i(19453),	-- Sayge's Fortune #28
 						i(19454),	-- Sayge's Fortune #29
-					},
-				}),
-			}),
-			n(VENDORS, {
-				n(14860, {	-- Flik
-					["coords"] = {
-						{ 36.4, 36.0, MULGORE },
-						{ 37.6, 39.6, MULGORE },
-						{ 42.8, 66.6, ELWYNN_FOREST },
-						{ 41.4, 69.8, ELWYNN_FOREST },
-						{ 43.6, 71.0, ELWYNN_FOREST },
-					},
-					["groups"] = {
-						HEAVY_LEATHER_BALL,
-						i(11026),	-- Tree Frog Box
-						i(11027),	-- Wood Frog Box
-					},
-				}),
-				n(14846, {	-- Lhara <Darkmoon Faire Exotic Goods>
-					["coords"] = {
-						{ 36.4, 38.0, MULGORE },
-						{ 41.2, 69.8, ELWYNN_FOREST },
-					},
-					["groups"] = {
-						BIG_STICK,
-						DARING_DIRK,
-						i(19303),	-- Darkmoon Necklace
-						i(19302),	-- Darkmoon Ring
-						DENSE_SHORTBOW,
-						FINE_SHORTBOW,
-						STURDY_RECURVE,
-						SLYVAN_SHORTBOW,
 					},
 				}),
 			}),
