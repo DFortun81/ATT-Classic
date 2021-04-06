@@ -17,12 +17,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 		["maps"] = { ELWYNN_FOREST, MULGORE },
 		["groups"] = {
 			n(QUESTS, {
-				q(7885,  {	-- Armor Kits
+				q(7885,  {	-- Armor Kits [Tier 5]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
@@ -32,12 +33,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7892,  {	-- Big Black Mace
+				q(7892,  {	-- Big Black Mace [Tier 4]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 7945, 1 },	-- Big Black Mace
@@ -47,12 +49,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7881,  {	-- Carnival Boots
+				q(7881,  {	-- Carnival Boots [Tier 1]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 2309, 3 },	-- Embossed Leather Boots
@@ -61,12 +64,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7882,  {	-- Carnival Jerkins
+				q(7882,  {	-- Carnival Jerkins [Tier 2]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
+					
+					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 2314, 3 },	-- Toughened Leather Armor
@@ -76,12 +81,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7889,  {	-- Coarse Weightstone
+				q(7889,  {	-- Coarse Weightstone [Tier 1]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3240, 10 },	-- Coarse Weightstone
@@ -90,12 +96,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7894,  {	-- Copper Modulator
+				q(7894,  {	-- Copper Modulator [Tier 1]
 					["qg"] = 14841,  -- Rinling
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4363, 5 },	-- Copper Modulator
@@ -104,12 +111,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7884,  {	-- Crocolisk Boy and the Bearded Murloc
+				q(7884,  {	-- Crocolisk Boy and the Bearded Murloc [Tier 4]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8185, 1 },	-- Turtle Scale Leggings
@@ -159,12 +167,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19287),	-- Darkmoon Card: Heroism
 					},
 				}),
-				q(7903,  {	-- Evil Bat Eyes
+				q(7903,  {	-- Evil Bat Eyes [Tier 5]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11404, 10 },	-- Evil Bat Eye
@@ -174,12 +183,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(8222,  {	-- Glowing Scorpid Blood
+				q(8222,  {	-- Glowing Scorpid Blood [Tier 5]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19933, 10 },	-- Glowing Scorpid Blood
@@ -189,12 +199,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7896,  {	-- Green Fireworks
+				q(7896,  {	-- Green Fireworks [Tier 3]
 					["qg"] = 14841,  -- Rinling
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 9313, 36 },	-- Green Firework
@@ -204,12 +215,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7891,  {	-- Green Iron Bracers
+				q(7891,  {	-- Green Iron Bracers [Tier 3]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3835, 3 },	-- Green Iron Bracers
@@ -219,12 +231,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7890,  {	-- Heavy Grinding Stone
+				q(7890,  {	-- Heavy Grinding Stone [Tier 2]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					
+					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3486, 7 },	-- Heavy Grinding Stone
@@ -234,12 +248,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7897,  {	-- Mechanical Repair Kits
+				q(7897,  {	-- Mechanical Repair Kits [Tier 4]
 					["qg"] = 14841,  -- Rinling
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11590, 6 },	-- Mechanical Repair Kit
@@ -249,13 +264,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7941,  {	-- More Armor Kits
+				q(7941,  {	-- More Armor Kits [Tier 5]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
 					["sourceQuest"] = 7885,	-- Armor Kits
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
@@ -265,12 +281,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7943,  {	-- More Bat Eyes
+				q(7943,  {	-- More Bat Eyes [Tier 5]
 					["qg"] = 14829,  -- Yebb Neblegear
+					["sourceQuest"] = 7903,	-- Evil Bat Eyes
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11404, 10 },	-- Evil Bat Eye
@@ -280,13 +298,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7939,  {	-- More Dense Grinding Stones
+				q(7939,  {	-- More Dense Grinding Stones [Tier 5]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["sourceQuest"] = 7893,	-- Rituals of Strength
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12644, 8 },	-- Dense Grinding Stone
@@ -296,13 +315,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(8223,  {	-- More Glowing Scorpid Blood
+				q(8223,  {	-- More Glowing Scorpid Blood [Tier 5]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19933, 10 },	-- Glowing Scorpid Blood
@@ -312,13 +332,14 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7942,  {	-- More Thorium Widgets
+				q(7942,  {	-- More Thorium Widgets [Tier 5]
 					["qg"] = 14841,  -- Rinling
 					["sourceQuest"] = 7898,	-- Thorium Widget
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15994, 6 },	-- Thorium Widget
@@ -328,12 +349,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7893,  {	-- Rituals of Strength
+				q(7893,  {	-- Rituals of Strength [Tier 5]
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12644, 8 },	-- Dense Grinding Stone
@@ -343,12 +365,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7899,  {	-- Small Furry Paws
+				q(7899,  {	-- Small Furry Paws [Tier 1]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5134, 5 },	-- Small Furry Paw
@@ -357,12 +380,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7901,  {	-- Soft Bushy Tails
+				q(7901,  {	-- Soft Bushy Tails [Tier 3]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4582, 5 },	-- Soft Bushy Tail
@@ -411,12 +435,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7883,  {	-- The World's Largest Gnome!
+				q(7883,  {	-- The World's Largest Gnome! [Tier 3]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5739, 3 },	-- Barbaric Harness
@@ -426,12 +451,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7898,  {	-- Thorium Widgets
+				q(7898,  {	-- Thorium Widgets [Tier 5]
 					["qg"] = 14841,  -- Rinling
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
+					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15994, 6 },	-- Thorium Widget
@@ -441,12 +467,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7900,  {	-- Torn Bear Pelts
+				q(7900,  {	-- Torn Bear Pelts [Tier 2]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11407, 5 },	-- Torn Bear Pelt
@@ -456,12 +483,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7902,  {	-- Vibrant Plumes
+				q(7902,  {	-- Vibrant Plumes [Tier 4]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5117, 5 },	-- Vibrant Plume
@@ -471,12 +499,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7895,  {	-- Whirring Bronze Gizmo
+				q(7895,  {	-- Whirring Bronze Gizmo [Tier 2]
 					["qg"] = 14829,  -- Yebb Neblegear
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
+					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4375, 7 },	-- Whirring Bronze Gizmo
