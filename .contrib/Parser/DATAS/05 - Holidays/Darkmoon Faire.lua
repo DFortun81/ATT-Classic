@@ -17,6 +17,134 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 		["maps"] = { ELWYNN_FOREST, MULGORE },
 		["groups"] = {
 			n(QUESTS, {
+				q(7930, {	-- 5 Tickets - Darkmoon Flower
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 5 },	-- Darkmoon Faire Prize Ticket
+					},
+					["lvl"] = 6,
+					["g"] = {
+						i(19295),	-- Darkmoon Flower
+					},
+				}),
+				q(7931, {	-- 5 Tickets - Minor Darkmoon Prize
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 5 },	-- Darkmoon Faire Prize Ticket
+					},
+					["lvl"] = 15,
+					["g"] = {
+						i(19298),	-- Minor Darkmoon Prize
+					},
+				}),
+				q(7935, {	-- 10 Tickets - Last Month's Mutton
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 10 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19292),	-- Last Month's Mutton
+					},
+				}),
+				q(7932, {	-- 12 Tickets - Lesser Darkmoon Prize
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 12 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19297),	-- Lesser Darkmoon Prize
+					},
+				}),
+				q(7933, {	-- 40 Tickets - Greater Darkmoon Prize
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 40 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19296),	-- Greater Darkmoon Prize
+					},
+				}),
+				q(7934, {	-- 50 Tickets - Darkmoon Storage Box
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 50 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19291),	-- Darkmoon Storage Box
+					},
+				}),
+				q(7936, {	-- 50 Tickets - Last Year's Mutton
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 50 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19293),	-- Last Year's Mutton
+					},
+				}),
+				q(7981, {	-- 1200 Tickets - Amulet of the Darkmoon
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 1200 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19491),	-- Amulet of the Darkmoon
+					},
+				}),
+				q(7940, {	-- 1200 Tickets - Orb of the Darkmoon
+					["qg"] = 14828,  -- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
+					["coords"] = {
+						{ 37.3, 37.7, MULGORE },
+						{ 41.6, 68.8, ELWYNN_FOREST },
+					},
+					["repeatable"] = true,
+					["cost"] = {
+						{ "i", 19182, 1200 },	-- Darkmoon Faire Prize Ticket
+					},
+					["g"] = {
+						i(19426),	-- Orb of the Darkmoon
+					},
+				}),
 				q(7885,  {	-- Armor Kits [Tier 5]
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
@@ -401,6 +529,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 					["cost"] = {
 						{ "i", 11325, 2 },	-- Dark Iron Ale Mug
 					},
+					["repeatable"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19462, {	-- Unhatched Jubling Egg
@@ -516,7 +645,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7937,  {	-- Your Fortune Awaits You...
 					["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
+					["coord"] = { 84.7, 64.4, ELWYNN_FOREST },
 					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19425),	-- Mysterious Lockbox
@@ -524,7 +655,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7938,  {	-- Your Fortune Awaits You...
 					["provider"] = { "i", 19424 },	-- Sayge's Fortune #24
+					["maps"] = { DEADMINES },
 					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19425),	-- Mysterious Lockbox
@@ -532,7 +665,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7944,  {	-- Your Fortune Awaits You...
 					["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
+					["maps"] = { WAILING_CAVERNS },
 					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19425),	-- Mysterious Lockbox
@@ -540,7 +675,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7945,  {	-- Your Fortune Awaits You...
 					["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
+					["coord"] = { 35, 61.5, MULGORE },
 					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19425),	-- Mysterious Lockbox
@@ -575,17 +712,17 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19254),	-- Sayge's Fortune #21
 						i(19255),	-- Sayge's Fortune #22
 						i(19423, {	-- Sayge's Fortune #23
-							["questID"] = 7937,	-- Your Fortune Awaits You...
+							--["questID"] = 7937,	-- Your Fortune Awaits You...
 						}),
 						i(19424, {	-- Sayge's Fortune #24
-							["questID"] = 7938,	-- Your Fortune Awaits You...
+							--["questID"] = 7938,	-- Your Fortune Awaits You...
 						}),
 						i(19443, {	-- Sayge's Fortune #25
-							["questID"] = 7944,	-- Your Fortune Awaits You...
+							--["questID"] = 7944,	-- Your Fortune Awaits You...
 						}),
 						i(19451),	-- Sayge's Fortune #26
 						i(19452, {	-- Sayge's Fortune #27
-							["questID"] = 7945,	-- Your Fortune Awaits You...
+							--["questID"] = 7945,	-- Your Fortune Awaits You...
 						}),
 						i(19453),	-- Sayge's Fortune #28
 						i(19454),	-- Sayge's Fortune #29
@@ -605,23 +742,6 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						HEAVY_LEATHER_BALL,
 						i(11026),	-- Tree Frog Box
 						i(11027),	-- Wood Frog Box
-					},
-				}),
-				n(14828, {	-- Gelvas Grimegate <Darkmoon Faire Ticket Redemption>
-					["coords"] = {
-						{ 37.3, 37.7, MULGORE },
-						{ 41.6, 68.8, ELWYNN_FOREST },
-					},
-					["groups"] = {
-						i(19295),	-- Darkmoon Flower
-						i(19298),	-- Minor Darkmoon Prize
-						i(19292),	-- Last Month's Mutton
-						i(19297),	-- Lesser Darkmoon Prize
-						i(19296),	-- Greater Darkmoon Prize
-						i(19291),	-- Darkmoon Storage Box
-						i(19293),	-- Last Year's Mutton
-						i(19491),	-- Amulet of the Darkmoon
-						i(19426),	-- Orb of the Darkmoon
 					},
 				}),
 				n(14846, {	-- Lhara <Darkmoon Faire Exotic Goods>
