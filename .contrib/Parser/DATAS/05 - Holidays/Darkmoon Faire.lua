@@ -70,7 +70,6 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					
 					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
 					["repeatable"] = true,
 					["cost"] = {

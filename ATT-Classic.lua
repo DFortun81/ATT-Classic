@@ -4427,7 +4427,12 @@ local itemFields = {
 				if o.questID then return 104; end
 			end
 		end
-		if not t.g then return 50; end
+		local results = SearchForField("itemIDAsCost", t.itemID);
+		if results then
+			for i,o in ipairs(results) do
+				if o.questID then return 104; end
+			end
+		end
 	end,
 	["tsm"] = function(t)
 		return string.format("i:%d", t.itemID);
@@ -6152,8 +6157,11 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID));
+			return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID)) or (app.CollectibleReputations and t.maxReputation);
 		elseif key == "collected" then
+			if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
+				return true;
+			end
 			return t.saved;
 		elseif key == "repeatable" then
 			return t.isDaily or t.isWeekly or t.isYearly;
