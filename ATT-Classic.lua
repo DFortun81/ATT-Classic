@@ -722,6 +722,13 @@ local function CloneData(data)
 	end
 	return clone;
 end
+local function RawCloneData(data)
+	local clone = {};
+	for key,value in pairs(data) do
+		rawset(clone, key, value);
+	end
+	return clone;
+end
 app.IsComplete = function(o)
 	if o.total then return o.total == o.progress; end
 	if o.collectible then return o.collected; end
@@ -2056,6 +2063,7 @@ fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["itemID"] = {};
+fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
 fieldCache["objectID"] = {};
 fieldCache["questID"] = {};
@@ -2175,6 +2183,7 @@ fieldConverters = {
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
 					CacheField(group, "itemID", v[2]);
+					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "o" and v[2] > 0 then
 					CacheField(group, "objectID", v[2]);
 				end
@@ -4295,16 +4304,6 @@ end)();
 
 -- Item Lib
 (function()
-local itemStats = {};
-local function GetItemWeight(itemLink)
-	wipe(itemStats);
-	GetItemStats(itemLink, itemStats);
-	for key,value in pairs(itemStats) do
-		--print(_G[key], value);
-		return 1;
-	end
-end
-app.GetItemWeight = GetItemWeight;
 local BestSuffixPerItemID = setmetatable({}, { __index = function(t, id)
 	local suffixes = GetDataSubMember("ValidSuffixesPerItemID", id);
 	if suffixes then
@@ -4329,11 +4328,43 @@ local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 		return link;
 	end
 end });
-local BestWeightPerItemID = setmetatable({}, { __index = function(t, id)
-	local weight = GetItemWeight(string.format("item:%d:0:0:0:0:0:%d", id, BestSuffixPerItemID[id]));
-	if weight then
-		rawset(t, id, weight);
-		return weight;
+local CollectedAsCostPerItemID = setmetatable({}, { __index = function(t, id)
+	local results = app.SearchForField("itemIDAsCost", id, true);
+	if results and #results > 0 then
+		local collected, count = true, 0;
+		for _,ref in pairs(results) do
+			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				if ref.collectible then
+					count = count + 1;
+					if not ref.collected then
+						collected = false;
+					end
+				end
+			end
+		end
+		if count > 0 then
+			return collected;
+		end
+		return false;
+	else
+		rawset(t, id, false);
+		return false;
+	end
+end });
+local CollectibleAsCostPerItemID = setmetatable({}, { __index = function(t, id)
+	local results = app.SearchForField("itemIDAsCost", id, true);
+	if results and #results > 0 then
+		for _,ref in pairs(results) do
+			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+				if ref.collectible then
+					return true;
+				end
+			end
+		end
+		return false;
+	else
+		rawset(t, id, false);
+		return false;
 	end
 end });
 app.ParseItemID = function(itemName)
@@ -4368,68 +4399,129 @@ app.ClearItemCache = function()
 	wipe(BestItemLinkPerItemID);
 	wipe(BestWeightPerItemID);
 end
-app.BaseItem = {
-	__index = function(t, key)
-		if key == "key" then
-			return "itemID";
-		elseif key == "collectible" then
-			return (t.questID and app.CollectibleQuests and not t.repeatable and not t.isBreadcrumb) or (t.factionID and app.CollectibleReputations);
-		elseif key == "collected" then
-			if t.factionID then
-				-- This is used by reputation tokens. (turn in items)
-				if app.AccountWideReputations then
-					if GetDataSubMember("CollectedFactions", t.factionID) then
-						return 1;
-					end
-				else
-					if GetTempDataSubMember("CollectedFactions", t.factionID) then
-						return 1;
-					end
-				end
-				
-				if select(3, GetFactionInfoByID(t.factionID)) == 8 then
-					SetTempDataSubMember("CollectedFactions", t.factionID, 1);
-					SetDataSubMember("CollectedFactions", t.factionID, 1);
-					return 1;
-				end
+local itemFields = {
+	["key"] = function(t)
+		return "itemID";
+	end,
+	["text"] = function(t)
+		return t.link;
+	end,
+	["icon"] = function(t)
+		return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
+	end,
+	["link"] = function(t)
+		return BestItemLinkPerItemID[t.itemID];
+	end,
+	["name"] = function(t)
+		local link = t.link;
+		return link and GetItemInfo(link);
+	end,
+	["b"] = function(t)
+		return 2;
+	end,
+	["f"] = function(t)
+		if t.questID then return 104; end
+		local results = SearchForField("itemID", t.itemID);
+		if results then
+			for i,o in ipairs(results) do
+				if o.questID then return 104; end
 			end
-			return t.saved;
-		elseif key == "text" then
-			return t.link;
-		elseif key == "icon" then
-			return select(5, GetItemInfoInstant(t.itemID)) or "Interface\\Icons\\INV_Misc_QuestionMark";
-		elseif key == "link" then
-			return BestItemLinkPerItemID[t.itemID];
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "name" then
-			return t.link and GetItemInfo(t.link);
-		elseif key == "tsm" then
-			return string.format("i:%d", t.itemID);
-		elseif key == "weight" then
-			return BestWeightPerItemID[t.itemID];
-		elseif key == "b" then
-			return 2;
-		elseif key == "f" then
-			if t.questID then return 104; end
-			local results = SearchForField("itemID", t.itemID);
-			if results then
-				for i,o in ipairs(SearchForField("itemID", t.itemID)) do
-					if o.questID then return 104; end
-				end
+		end
+		if not t.g then return 50; end
+	end,
+	["tsm"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
+	["repeatable"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
+	["collectible"] = function(t)
+		return t.collectibleAsCost;
+	end,
+	["collectibleAsCost"] = function(t)
+		return CollectibleAsCostPerItemID[t.itemID];
+	end,
+	["collectibleAsFaction"] = function(t)
+		return app.CollectibleReputations or t.collectibleAsCost;
+	end,
+	["collectibleAsFactionOnly"] = function(t)
+		return app.CollectibleReputations;
+	end,
+	["collectibleAsFactionOrQuest"] = function(t)
+		return t.collectibleAsFactionOnly or t.collectibleAsQuestOnly;
+	end,
+	["collectibleAsQuest"] = function(t)
+		if app.CollectibleQuests then
+			return (not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID);
+		end
+		return t.collectibleAsCost;
+	end,
+	["collected"] = function(t)
+		return t.collectedAsCost;
+	end,
+	["collectedAsCost"] = function(t)
+		return CollectedAsCostPerItemID[t.itemID];
+	end,
+	["collectedAsFaction"] = function(t)
+		return t.collectedAsFactionOnly or t.collectedAsCost;
+	end,
+	["collectedAsFactionOnly"] = function(t)
+		if t.factionID then
+			-- This is used by reputation tokens. (turn in items)
+			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+			if select(3, GetFactionInfoByID(t.factionID)) == 8 then
+				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+				SetDataSubMember("CollectedFactions", t.factionID, 1);
+				return 1;
 			end
-			if not t.g then return 50; end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
+		end
+	end,
+	["collectedAsFactionOrQuest"] = function(t)
+		return t.collectedAsFactionOnly or t.collectedAsQuest;
+	end,
+	["collectedAsQuest"] = function(t)
+		return t.saved or t.collectedAsCost;
+	end,
+	["savedAsQuest"] = function(t) 
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+};
+app.BaseItem = app.BaseObjectFields(itemFields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsFaction;
+fields.collected = itemFields.collectedAsFaction;
+app.BaseItemWithFactionID = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsQuest;
+fields.collected = itemFields.collectedAsQuest;
+fields.trackable = itemFields.trackableAsQuest;
+fields.saved = itemFields.savedAsQuest;
+app.BaseItemWithQuestID = app.BaseObjectFields(fields);
+
+local fields = RawCloneData(itemFields);
+fields.collectible = itemFields.collectibleAsFactionOrQuest;
+fields.collected = itemFields.collectedAsFactionOrQuest;
+fields.trackable = itemFields.trackableAsQuest;
+fields.saved = itemFields.savedAsQuest;
+app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
+app.CreateItem = function(id, t)
+	if t then
+		if rawget(t, "factionID") then
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
+			else
+				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithFactionID);
+			end
+		elseif rawget(t, "questID") then
+			return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestID);
 		end
 	end
-};
-app.CreateItem  = function(id, t)
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
 end
 end)();
@@ -5839,7 +5931,7 @@ app.BaseNPC = {
 		elseif key == "trackable" then
 			return t.questID;
 		elseif key == "collectible" then
-			return t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
+			return t.questID and app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
 		elseif key == "saved" then
 			return IsQuestFlaggedCompletedForObject(t);
 		elseif key == "collected" then
@@ -5870,7 +5962,7 @@ app.BaseObject = {
 		elseif key == "icon" then
 			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
 		elseif key == "collectible" then
-			return (t.questID and not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests);
+			return t.questID and app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "trackable" then
@@ -6060,7 +6152,7 @@ app.BaseQuest = {
 		elseif key == "trackable" then
 			return true;
 		elseif key == "collectible" then
-			return not t.repeatable and not t.isBreadcrumb and app.CollectibleQuests;
+			return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID));
 		elseif key == "collected" then
 			return t.saved;
 		elseif key == "repeatable" then
