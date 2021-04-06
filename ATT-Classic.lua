@@ -2593,6 +2593,7 @@ local EXTERMINATOR = {
 	["Player-4372-0124174F"] = true,	-- Dubsteve
 	["Player-4372-00BD6CC7"] = true,	-- Enthira
 	["Player-4372-00A3A0FD"] = true,	-- Fairplay
+	["Player-4372-0046DDA0"] = true,	-- Firasia
 	["Player-4372-004A7A3F"] = true,	-- Fortress
 	["Player-4372-00CF7821"] = true,	-- Glas
 	["Player-4372-0108DCC1"] = true,	-- Grotesque
