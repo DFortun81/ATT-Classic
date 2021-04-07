@@ -606,10 +606,6 @@ local NPCNameFromID = setmetatable({}, { __index = function(t, id)
 			rawset(t, id, title);
 			return title;
 		end
-	else
-		local title = L["NPC_ID_NAMES"][id];
-		rawset(t, id, title);
-		return title;
 	end
 end});
 
@@ -5927,43 +5923,92 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 	end
 end});
 app.NPCDisplayIDFromID = NPCDisplayIDFromID;
-app.BaseNPC = {
-	__index = function(t, key)
-		if key == "key" then
-			return "npcID";
-		elseif key == "text" then
-			if t["isRaid"] and t.name then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "name" then
-			return NPCNameFromID[t.npcID];
-		elseif key == "title" then
-			return NPCTitlesFromID[t.npcID];
-		elseif key == "icon" then
-			return L["NPC_ID_ICONS"][t.npcID]
-			or (t.parent and t.parent.npcID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
+
+local npcFields = {
+	["key"] = function(t)
+		return "npcID";
+	end,
+	["text"] = function(t)
+		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
+	end,
+	["name"] = function(t)
+		return NPCNameFromID[t.npcID] or RETRIEVING_DATA;
+	end,
+	["icon"] = function(t)
+		return (t.parent and t.parent.headerID == -2 and "Interface\\Icons\\INV_Misc_Coin_01")
 			or app.DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
-		elseif key == "displayID" then
-			return NPCDisplayIDFromID[t.npcID];
-		elseif key == "creatureID" then
-			return t.npcID;
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "repeatable" then
-			return t.isDaily or t.isWeekly or t.isYearly;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+	end,
+	["title"] = function(t)
+		return NPCTitlesFromID[t.npcID];
+	end,
+	["displayID"] = function(t)
+		return app.NPCDisplayIDFromID[t.npcID];
+	end,
+	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+		return t.npcID;
+	end,
+	["sort"] = function(t)
+		return (t.order or "51") .. t.name;
+	end,
+	
+	["collectibleAsQuest"] = function(t)
+		return app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
+	end,
+	["collectedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
+	["repeatableAsQuest"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly")or rawget(t, "isYearly");
+	end,
 };
+npcFields.icon = npcFields.iconAsDefault;
+npcFields.saved = npcFields.collected;
+app.BaseNPC = app.BaseObjectFields(npcFields);
+
+local fields = RawCloneData(npcFields);
+fields.collectible = npcFields.collectibleAsQuest;
+fields.collected = npcFields.collectedAsQuest;
+fields.trackable = npcFields.trackableAsQuest;
+fields.repeatable = npcFields.repeatableAsQuest;
+app.BaseNPCWithQuest = app.BaseObjectFields(fields);
+
+local headerFields = {
+	["key"] = function(t)
+		return "headerID";
+	end,
+	["text"] = function(t)
+		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
+	end,
+	["name"] = function(t)
+		return L["NPC_ID_NAMES"][t.headerID];
+	end,
+	["icon"] = function(t)
+		return L["NPC_ID_ICONS"][t.headerID];
+	end,
+	["sort"] = function(t)
+		return (t.order or "50") .. t.name;
+	end,
+};
+app.BaseHeader = app.BaseObjectFields(headerFields);
 app.CreateNPC = function(id, t)
-	return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+	if t then
+		if id < 1 then
+			return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+		else
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
+			else
+				return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+			end
+		end
+	elseif id > 1 then
+		return setmetatable(constructor(id, t, "npcID"), app.BaseNPC);
+	else
+		return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+	end
 end
 end)();
 
