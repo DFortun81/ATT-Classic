@@ -1808,7 +1808,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							local mapID = GetBestMapForGroup(item.group);
-							if mapID and mapID ~= app.GetCurrentMapID() then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
@@ -1818,7 +1818,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							left = item.group.text or RETRIEVING_DATA;
 							if left == RETRIEVING_DATA or left:find("%[]") then working = true; end
 							local mapID = GetBestMapForGroup(item.group);
-							if mapID and mapID ~= app.GetCurrentMapID() then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
+							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
 						end
@@ -2407,7 +2407,7 @@ local function AddTomTomWaypoint(group, auto)
 			};
 			if group.title then opt.title = opt.title .. "\n" .. group.title; end
 			--if group.explorationID then opt.title = opt.title .. "\nExploration ID " .. group.explorationID; end
-			local defaultMapID = GetRelativeMap(group, app.GetCurrentMapID());
+			local defaultMapID = GetRelativeMap(group, app.CurrentMapID);
 			local displayID = GetDisplayID(group);
 			if displayID then
 				opt.minimap_displayID = displayID;
@@ -3359,7 +3359,7 @@ local fields = {
 	end,
 	["mapText"] = function(t)
 		local mapID = t.internalMapID;
-		if mapID and mapID ~= app.GetCurrentMapID() then
+		if mapID and mapID ~= app.CurrentMapID then
 			return " (" .. app.GetMapName(mapID) .. ")";
 		end
 	end,
@@ -4174,8 +4174,6 @@ app.events.GOSSIP_SHOW = function()
 end
 app.events.TAXIMAP_OPENED = function()
 	local knownNodeIDs = {};
-	-- Refresh the current location.
-	app.CurrentMapID = app.GetCurrentMapID();
 	if app.CacheFlightPathDataForTarget(knownNodeIDs) == 0 then
 		if app.CacheFlightPathDataForMap(app.CurrentMapID, knownNodeIDs) == 0 then
 			print("Failed to find nearest Flight Path. Please report this to the ATT Discord!");
@@ -4629,10 +4627,48 @@ end)();
 
 -- Map Lib
 (function()
+local C_Map_GetMapArtID = C_Map.GetMapArtID;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
 local C_Map_GetMapLevels = C_Map.GetMapLevels;
 local C_Map_GetBestMapForUnit = C_Map.GetBestMapForUnit;
 local C_MapExplorationInfo_GetExploredMapTextures = C_MapExplorationInfo.GetExploredMapTextures;
+app.GetCurrentMapID = function()
+	local ZONE_TEXT_TO_MAP_ID = app.L["ZONE_TEXT_TO_MAP_ID"];
+	local ALT_ZONE_TEXT_TO_MAP_ID = app.L["ALT_ZONE_TEXT_TO_MAP_ID"];
+	local real = GetRealZoneText();
+	if real then
+		local otherMapID = ZONE_TEXT_TO_MAP_ID[real] or ALT_ZONE_TEXT_TO_MAP_ID[real];
+		if otherMapID then return otherMapID; end
+	end
+	local zone = GetSubZoneText();
+	if zone then
+		local otherMapID = ZONE_TEXT_TO_MAP_ID[zone] or ALT_ZONE_TEXT_TO_MAP_ID[zone];
+		if otherMapID then return otherMapID; end
+	end
+	return C_Map_GetBestMapForUnit("player");
+end
+app.GetMapName = function(mapID)
+	if mapID and mapID > 0 then
+		local info = C_Map_GetMapInfo(mapID);
+		if info then
+			return info.name;
+		else
+			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
+				if mapID == m then
+					return name;
+				end
+			end
+			for name,m in pairs(L["ALT_ZONE_TEXT_TO_MAP_ID"]) do
+				if mapID == m then
+					return name;
+				end
+			end
+		end
+		return "Map ID #" .. mapID;
+	else
+		return "Map ID #???";
+	end
+end
 
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
 -- This is now a table of hash,subAreaID (explorationID in ATT)
@@ -5671,7 +5707,7 @@ local ExploredMapDataByIDMeta = { __index = function(t, mapID)
 	local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(mapID);
 	if exploredMapTextures then
 		local missingExplorationGroup;
-		local artID = C_Map.GetMapArtID(mapID);
+		local artID = C_Map_GetMapArtID(mapID);
 		local explorationByID, missingHashes = {}, {};
 		rawset(t, mapID, explorationByID);
 		for _,info in ipairs(exploredMapTextures) do
@@ -5711,156 +5747,116 @@ local ExploredMapDataByIDMeta = { __index = function(t, mapID)
 end };
 local ExploredMapDataByID = setmetatable({}, ExploredMapDataByIDMeta);
 local ExploredSubMapsByIDMeta = { __index = function(t, mapID)
-	local submaps = C_Map.GetMapArtID(mapID) and ExploredMapDataByID[mapID] or {};
+	local submaps = C_Map_GetMapArtID(mapID) and ExploredMapDataByID[mapID] or {};
 	rawset(t, mapID, submaps);
 	return submaps;
 end };
 local ExploredSubMapsByID = setmetatable({}, ExploredSubMapsByIDMeta);
-app.GetCurrentMapID = function()
-	local mapID = C_Map_GetBestMapForUnit("player");
-	local text_to_mapID = app.L["ZONE_TEXT_TO_MAP_ID"];
-	if text_to_mapID then
-		local real = GetRealZoneText();
-		local zone = GetSubZoneText();
-		local otherMapID = (real and text_to_mapID[real]) or (zone and text_to_mapID[zone]);
-		if otherMapID then return otherMapID; end
-	end
-	text_to_mapID = app.L["ALT_ZONE_TEXT_TO_MAP_ID"];
-	if text_to_mapID then
-		local real = GetRealZoneText();
-		local zone = GetSubZoneText();
-		local otherMapID = (real and text_to_mapID[real]) or (zone and text_to_mapID[zone]);
-		if otherMapID then return otherMapID; end
-	end
-	return mapID;
-end
-app.GetMapLevel = function(mapID)
-	return select(1, C_Map_GetMapLevels(mapID));
-end
-app.GetMapParent = function(mapID)
-	local mapInfo = C_Map_GetMapInfo(mapID);
-	if mapInfo then
-		return mapInfo.parentMapID;
-	else
-		
-	end
-end
-app.GetMapName = function(mapID)
-	if mapID and mapID > 0 then
-		local info = C_Map_GetMapInfo(mapID);
-		if info then
-			return info.name;
-		else
-			for name,m in pairs(L["ZONE_TEXT_TO_MAP_ID"]) do
-				if mapID == m then
-					return name;
-				end
-			end
-			for name,m in pairs(L["ALT_ZONE_TEXT_TO_MAP_ID"]) do
-				if mapID == m then
-					return name;
-				end
-			end
-		end
-		return "Map ID #" .. mapID;
-	else
-		return "Map ID #???";
-	end
-end
 
-
-app.ExplorationClass = {
-	__index = function(t, key)
-		if key == "key" then
-			return "explorationID";
-		elseif key == "text" then
-			return C_Map.GetAreaInfo(t.explorationID) or t.hash;
-		elseif key == "icon" then
-			return app.asset("INV_Misc_Map02");
-		elseif key == "preview" then
-			local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
-			if exploredMapTextures then
-				for _,info in ipairs(exploredMapTextures) do
-					local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-					if hash == t.hash then
-						local texture = info.fileDataIDs[1];
-						if texture then
-							rawset(t, "preview", texture);
-							return texture;
-						end
+local fields = {
+	["key"] = function(t)
+		return "explorationID";
+	end,
+	["text"] = function(t)
+		return C_Map.GetAreaInfo(t.explorationID) or t.hash;
+	end,
+	["icon"] = function(t)
+		return app.asset("INV_Misc_Map02");
+	end,
+	["preview"] = function(t)
+		local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
+		if exploredMapTextures then
+			for _,info in ipairs(exploredMapTextures) do
+				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				if hash == t.hash then
+					local texture = info.fileDataIDs[1];
+					if texture then
+						rawset(t, "preview", texture);
+						return texture;
 					end
 				end
 			end
-		elseif key == "artID" then
-			return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
-		elseif key == "mapID" then
-			return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
-		elseif key == "collectible" then
-			return app.CollectibleExploration;
-		elseif key == "collected" then
-			return ExploredSubMapsByID[t.mapID][t.explorationID];
-		elseif key == "hash" then
-			local artID = t.artID;
-			if artID then
-				for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
-					if explorationID == t.explorationID then
-						return hash;
-					end
-				end
-			end
-		elseif key == "coords" then
-			local hash = t.hash;
-			if hash then
-				local layers = C_Map.GetMapArtLayers(t.mapID);
-				if layers and layers[1] then
-					local coords = {};
-					local width, height, offsetX, offsetY = strsplit(":", hash);
-					tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
-					return coords;
-				end
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
 		end
-	end
+	end,
+	["artID"] = function(t)
+		return t.parent and (t.parent.artID or (t.parent.parent and t.parent.parent.artID));
+	end,
+	["mapID"] = function(t)
+		return t.parent and (t.parent.mapID or (t.parent.parent and t.parent.parent.mapID));
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleExploration;
+	end,
+	["collected"] = function(t)
+		return ExploredSubMapsByID[t.mapID][t.explorationID];
+	end,
+	["hash"] = function(t)
+		local artID = t.artID;
+		if artID then
+			for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+				if explorationID == t.explorationID then
+					return hash;
+				end
+			end
+		end
+	end,
+	["coords"] = function(t)
+		local hash = t.hash;
+		if hash then
+			local layers = C_Map.GetMapArtLayers(t.mapID);
+			if layers and layers[1] then
+				local coords = {};
+				local width, height, offsetX, offsetY = strsplit(":", hash);
+				tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
+				return coords;
+			end
+		end
+	end,
 };
+app.ExplorationClass = app.BaseObjectFields(fields);
 app.CreateExploration = function(id, t)
 	return setmetatable(constructor(id, t, "explorationID"), app.ExplorationClass);
 end
-app.BaseMap = {
-	__index = function(t, key)
-		if key == "key" then
-			return "mapID";
-		elseif key == "name" then
-			return app.GetMapName(t.mapID);
-		elseif key == "text" then
-			if t["isRaid"] then return "|cffff8000" .. t.name .. "|r"; end
-			return t.name;
-		elseif key == "back" then
-			if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
-				return 1;
-			end
-		elseif key == "icon" then
-			return app.asset("Category_Zones");
-		elseif key == "lvl" then
-			return app.GetMapLevel(t.mapID);
-		elseif key == "artID" then
-			return C_Map.GetMapArtID(t.mapID);
-		elseif key == "saved" then
-			return t.locks;
-		elseif key == "locks" then
-			local locks = GetTempDataSubMember("lockouts", t.name);
-			if locks then
-				rawset(t, "locks", locks);
-				return locks;
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
+
+local fields = {
+	["key"] = function(t)
+		return "mapID";
+	end,
+	["text"] = function(t)
+		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
+	end,
+	["name"] = function(t)
+		return app.GetMapName(t.mapID);
+	end,
+	["icon"] = function(t)
+		return app.asset("Category_Zones");
+	end,
+	["back"] = function(t)
+		if app.CurrentMapID == t.mapID or (t.maps and contains(t.maps, app.CurrentMapID)) then
+			return 1;
 		end
-	end
+	end,
+	["artID"] = function(t)
+		return C_Map_GetMapArtID(t.mapID);
+	end,
+	["lvl"] = function(t)
+		return select(1, C_Map_GetMapLevels(t.mapID));
+	end,
+	["locks"] = function(t)
+		local locks = GetTempDataSubMember("lockouts", t.name);
+		if locks then
+			rawset(t, "locks", locks);
+			return locks;
+		end
+	end,
+	["saved"] = function(t)
+		return t.locks;
+	end,
+	["sort"] = function(t)
+		return (t.order or (t.isRaid and "50") or "51") .. t.name;
+	end,
 };
+app.BaseMap = app.BaseObjectFields(fields);
 app.CreateMap = function(id, t)
 	local map = setmetatable(constructor(id, t, "mapID"), app.BaseMap);
 	local artID = map.artID;
@@ -5894,11 +5890,21 @@ app.CreateMap = function(id, t)
 	end
 	return map;
 end
-app:RegisterEvent("MAP_EXPLORATION_UPDATED");
+
 app.events.MAP_EXPLORATION_UPDATED = function(...)
 	print("MAP_EXPLORATION_UPDATED", ...);
 	wipe(ExploredMapDataByID);
+	app.CurrentMapID = app.GetCurrentMapID();
 end
+app.events.ZONE_CHANGED = function()
+	app.CurrentMapID = app.GetCurrentMapID();
+end
+app.events.ZONE_CHANGED_NEW_AREA = function()
+	app.CurrentMapID = app.GetCurrentMapID();
+end
+app:RegisterEvent("MAP_EXPLORATION_UPDATED");
+app:RegisterEvent("ZONE_CHANGED");
+app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 end)();
 
 -- NPC Lib
@@ -7874,7 +7880,7 @@ local function RowOnEnter(self)
 		if reference.artID and app.Settings:GetTooltipSetting("artID") then GameTooltip:AddDoubleLine(L["ART_ID"], tostring(reference.artID)); end
 		--if reference.hash then GameTooltip:AddDoubleLine("Hash", tostring(reference.hash)); end
 		if reference.coords and app.Settings:GetTooltipSetting("Coordinates") then
-			local currentMapID, j, str = app.GetCurrentMapID(), 0;
+			local currentMapID, j, str = app.CurrentMapID, 0;
 			for i,coord in ipairs(reference.coords) do
 				local x, y = coord[1], coord[2];
 				local mapID = coord[3] or currentMapID;
@@ -8815,7 +8821,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 		window.AddObject = function(self, info)
 			-- Bubble Up the Maps
 			local mapInfo;
-			local mapID = app.GetCurrentMapID();
+			local mapID = app.CurrentMapID;
 			if mapID then
 				local pos = C_Map.GetPlayerMapPosition(mapID, "player");
 				if pos then
@@ -9421,7 +9427,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 			elseif e == "ZONE_CHANGED" or e == "ZONE_CHANGED_NEW_AREA" then
 				-- Bubble Up the Maps
 				local mapInfo, info;
-				local mapID = app.GetCurrentMapID();
+				local mapID = app.CurrentMapID;
 				if mapID then
 					repeat
 						info = { ["mapID"] = mapID, ["g"] = info and { info } or nil };
@@ -9861,6 +9867,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				coroutine.yield();
 				mapID = app.GetCurrentMapID();
 			end
+			app.CurrentMapID = mapID;
 			OpenMiniList(mapID);
 		end
 		local function RefreshLocation()
@@ -11734,8 +11741,6 @@ app:RegisterEvent("CHAT_MSG_WHISPER")
 app:RegisterEvent("PLAYER_DEAD");
 app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
-app:RegisterEvent("ZONE_CHANGED");
-app:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 app:RegisterEvent("PARTY_LOOT_METHOD_CHANGED");
 
 -- Define Event Behaviours
@@ -12650,12 +12655,6 @@ app.events.LOOT_CLOSED = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	app:RegisterEvent("UPDATE_INSTANCE_INFO");
 	RequestRaidInfo();
-end
-app.events.ZONE_CHANGED = function()
-	app.CurrentMapID = app.GetCurrentMapID();
-end
-app.events.ZONE_CHANGED_NEW_AREA = function()
-	app.CurrentMapID = app.GetCurrentMapID();
 end
 app.events.UPDATE_INSTANCE_INFO = function()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
