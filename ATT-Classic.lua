@@ -5957,6 +5957,9 @@ local npcFields = {
 	["collectedAsQuest"] = function(t)
 		return IsQuestFlaggedCompletedForObject(t);
 	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
 	["trackableAsQuest"] = function(t)
 		return true;
 	end,
@@ -5965,7 +5968,6 @@ local npcFields = {
 	end,
 };
 npcFields.icon = npcFields.iconAsDefault;
-npcFields.saved = npcFields.collected;
 app.BaseNPC = app.BaseObjectFields(npcFields);
 
 local fields = RawCloneData(npcFields);
@@ -5973,6 +5975,7 @@ fields.collectible = npcFields.collectibleAsQuest;
 fields.collected = npcFields.collectedAsQuest;
 fields.trackable = npcFields.trackableAsQuest;
 fields.repeatable = npcFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
 app.BaseNPCWithQuest = app.BaseObjectFields(fields);
 
 local headerFields = {
