@@ -4567,55 +4567,61 @@ local setLootThreshold = function(self, button)
 	if self then self:GetParent():GetParent():Reset(); end
 	return true;
 end;
-app.BaseLootMethod = {
-	__index = function(t, key)
-		if key == "key" then
-			return "id";
-		elseif key == "text" then
-			return UnitLootMethod[t.id].text;
-		elseif key == "description" then
-			return UnitLootMethod[t.id].tooltipText;
-		elseif key == "icon" then
-			return lootMethodIcons[t.id];
-		elseif key == "visible" then
-			return true;
-		elseif key == "back" then
-			return 0.5;
-		elseif key == "OnClick" then
-			return setLootMethod;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+local fields = {
+	["key"] = function(t)
+		return "id";
+	end,
+	["text"] = function(t)
+		return UnitLootMethod[t.id].text;
+	end,
+	["icon"] = function(t)
+		return lootMethodIcons[t.id];
+	end,
+	["description"] = function(t)
+		return UnitLootMethod[t.id].tooltipText;
+	end,
+	["visible"] = function(t)
+		return true;
+	end,
+	["back"] = function(t)
+		return 0.5;
+	end,
+	["OnClick"] = function(t)
+		return setLootMethod;
+	end,
 };
+app.BaseLootMethod = app.BaseObjectFields(fields);
 app.CreateLootMethod = function(id, t)
 	return setmetatable(constructor(id, t, "id"), app.BaseLootMethod);
 end
-app.BaseLootThreshold = {
-	__index = function(t, key)
-		if key == "key" then
-			return "id";
-		elseif key == "text" then
-			return ITEM_QUALITY_COLORS[t.id].hex .. t.name .. "|r";
-		elseif key == "name" then
-			return _G["ITEM_QUALITY" .. t.id .. "_DESC"];
-		elseif key == "description" then
-			return NEWBIE_TOOLTIP_UNIT_LOOT_THRESHOLD;
-		elseif key == "icon" then
-			return lootThresholdIcons[t.id];
-		elseif key == "visible" then
-			return true;
-		elseif key == "back" then
-			return 0.5;
-		elseif key == "OnClick" then
-			return setLootThreshold;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+
+local fields = {
+	["key"] = function(t)
+		return "id";
+	end,
+	["text"] = function(t)
+		return ITEM_QUALITY_COLORS[t.id].hex .. t.name .. "|r";
+	end,
+	["name"] = function(t)
+		return _G["ITEM_QUALITY" .. t.id .. "_DESC"];
+	end,
+	["icon"] = function(t)
+		return lootThresholdIcons[t.id];
+	end,
+	["description"] = function(t)
+		return NEWBIE_TOOLTIP_UNIT_LOOT_THRESHOLD;
+	end,
+	["visible"] = function(t)
+		return true;
+	end,
+	["back"] = function(t)
+		return 0.5;
+	end,
+	["OnClick"] = function(t)
+		return setLootThreshold;
+	end,
 };
+app.BaseLootThreshold = app.BaseObjectFields(fields);
 app.CreateLootThreshold = function(id, t)
 	return setmetatable(constructor(id, t, "id"), app.BaseLootThreshold);
 end
