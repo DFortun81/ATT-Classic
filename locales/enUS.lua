@@ -1026,7 +1026,10 @@ app.L = {
 		["The Botanica"] = 266,
 		["The Mechanar"] = 267,
 	};
-
+	
+	-- This is necessary because sometimes the names of spells do not match for different languages.
+	["ALT_PROFESSION_TEXT_TO_ID"] = {};
+	
 	-- Unobtainable Listing
 	["UNOBTAINABLE_ITEM_TEXTURES"] = {
 		"Interface\\FriendsFrame\\StatusIcon-DnD", 		-- No Hope
