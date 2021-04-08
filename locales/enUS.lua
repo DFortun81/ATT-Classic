@@ -340,7 +340,7 @@ app.L = {
 -- Factions / Cities
 		[-10066] = "Legendary",
 	},
-	["HEADER_DESCRIPTIONS"] - {
+	["HEADER_DESCRIPTIONS"] = {
 	};
 	
 	["OBJECT_ID_ICONS"] = {
