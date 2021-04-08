@@ -805,40 +805,22 @@ local function SetPortraitIcon(self, data, x)
 end
 local function GetBestMapForGroup(group)
 	if group then
-		if group.mapID then return group.mapID; end
-		if group.maps then return group.maps[1]; end
-		if group.coords then return group.coords[1][3]; end
-		if group.parent then return GetBestMapForGroup(group.parent); end
+		return group.mapID or (group.maps and group.maps[1]) or (group.coords and group.coords[1][3]) or GetBestMapForGroup(group.parent);
 	end
 end
 local function GetRelativeMap(group, currentMapID)
 	if group then
-		if group.mapID then return group.mapID; end
-		if group.maps then
-			if contains(group.maps, currentMapID) then
-				return currentMapID;
-			else
-				return group.maps[1];
-			end
-		end
-		if group.parent then return GetRelativeMap(group.parent, currentMapID); end
+		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.parent, currentMapID);
 	end
-	return currentMapID;
 end
 local function GetRelativeField(group, field, value)
 	if group then
-		if group[field] then
-			if group[field] == value then
-				return true;
-			end
-		end
-		if group.parent then return GetRelativeField(group.parent, field, value); end
+		return group[field] == value or GetRelativeField(group.parent, field, value);
 	end
 end
 local function GetRelativeValue(group, field)
 	if group then
-		if group[field] then return group[field]; end
-		if group.parent then return GetRelativeValue(group.parent, field); end
+		return group[field] or GetRelativeValue(group.parent, field);
 	end
 end
 
