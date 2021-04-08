@@ -4417,7 +4417,6 @@ end
 app.ClearItemCache = function()
 	wipe(BestSuffixPerItemID);
 	wipe(BestItemLinkPerItemID);
-	wipe(BestWeightPerItemID);
 end
 local itemFields = {
 	["key"] = function(t)
