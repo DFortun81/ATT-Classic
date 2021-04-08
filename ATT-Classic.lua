@@ -652,12 +652,12 @@ local function BuildGroups(parent, g)
 end
 local function BuildSourceText(group, l)
 	if group.parent then
-		if not group.itemID and (group.parent.key == "filterID" or group.parent.key == "spellID" or ((group.parent.npcID or (group.parent.spellID and group.categoryID)) 
-			and ((group.parent.npcID == -2 or group.parent.npcID == -17 or group.parent.npcID == -7) or (group.parent.parent and group.parent.parent.parent)))) then
+		if not group.itemID and (group.parent.key == "filterID" or group.parent.key == "spellID" or ((group.parent.headerID or (group.parent.spellID and group.categoryID)) 
+			and ((group.parent.headerID == -2 or group.parent.headerID == -17 or group.parent.headerID == -7) or (group.parent.parent and group.parent.parent.parent)))) then
 			return BuildSourceText(group.parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (group.parent.text or RETRIEVING_DATA) .. ")";
 		end
-		if group.npcID then
-			if group.npcID == 0 then
+		if group.headerID then
+			if group.headerID == 0 then
 				if group.crs and #group.crs == 1 then
 					return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
 				end
@@ -667,7 +667,7 @@ local function BuildSourceText(group, l)
 				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 			end
 		end
-		if group.key == "filterID" or group.key == "spellID" then
+		if group.parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or (group.parent.key == "mapID" and group.key == "npcID") then
 			return BuildSourceText(group.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 		end
 		if l < 1 then
@@ -677,7 +677,7 @@ local function BuildSourceText(group, l)
 				return BuildSourceText(group.parent, l + 1);
 			end
 		end
-		return BuildSourceText(group.parent, l + 1) .. " -> " .. (group.text or RETRIEVING_DATA);
+		return BuildSourceText(group.parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
 	end
 	return group.text or RETRIEVING_DATA;
 end
@@ -690,7 +690,7 @@ local function BuildSourceTextForChat(group, l)
 				return BuildSourceTextForChat(group.parent, l + 1);
 			end
 		else
-			return BuildSourceTextForChat(group.parent, l + 1) .. " -> " .. (group.text or "*");
+			return BuildSourceTextForChat(group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
 		return group.text or "*";
 	end
@@ -951,6 +951,7 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"classID",
 	"professionID",
 	"categoryID",
+	"headerID",
 };
 local function GetKey(t)
 	for i,key in ipairs(keysByPriority) do
@@ -1020,6 +1021,8 @@ CreateObject = function(t)
 				t = app.CreateCharacterClass(t.classID, t);
 			elseif t.npcID or t.creatureID then
 				t = app.CreateNPC(t.npcID or t.creatureID, t);
+			elseif t.headerID then
+				t = app.CreateNPC(t.headerID, t);	-- For now.
 			elseif t.questID then
 				t = app.CreateQuest(t.questID, t);
 			else
@@ -1523,7 +1526,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						end
 					end
 					table.sort(regroup, function(a, b)
-						return not (a.npcID and a.npcID == -1) and b.npcID and b.npcID == -1;
+						return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 					end);
 				end
 				group = regroup;
@@ -1634,9 +1637,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			local abbrevs = L["ABBREVIATIONS"];
 			local abbrevs_post = L["ABBREVIATIONS_POST"];
 			if not abbrevs_post[" true "] then
-				abbrevs_post[" %-%> " .. app.GetMapName(947)] = "";
-				abbrevs_post[" %-%> " .. app.GetMapName(1415)] = "";
-				abbrevs_post[" %-%> " .. app.GetMapName(1414)] = "";
+				abbrevs_post[" %> " .. app.GetMapName(947)] = "";
+				abbrevs_post[" %> " .. app.GetMapName(1415)] = "";
+				abbrevs_post[" %> " .. app.GetMapName(1414)] = "";
 				abbrevs_post[" false "] = " 0 ";
 				abbrevs_post[" true "] = " 1 ";
 			end
@@ -1703,20 +1706,20 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				for left,splitCount in pairs(splitCounts) do
 					if splitCount.count < 6 then
 						if #splitCount.variants < 1 then
-							tinsert(info, 1, { left = left, wrap = not string.find(left, " -> ") });
+							tinsert(info, 1, { left = left, wrap = not string.find(left, " > ") });
 							count = count + 1;
 						else
 							for i,right in ipairs(splitCount.variants) do
-								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
 								count = count + 1;
 							end
 						end
 					else
-						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " -> ") });
+						tinsert(info, 1, { left = left, right = TRACKER_HEADER_QUESTS, wrap = not string.find(left, " > ") });
 						count = count + 1;
 						for i,right in ipairs(splitCount.variants) do
 							if not string.find(right, BATTLE_PET_SOURCE_2) then
-								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " -> ") });
+								tinsert(info, 1, { left = left, right = right, wrap = not string.find(left, " > ") });
 								count = count + 1;
 							end
 						end
@@ -6217,9 +6220,7 @@ app.BaseQuest = {
 			if t.retries and t.retries > 120 then
 				if t.npcID then
 					if t.npcID > 0 then
-						return t.npcID > 0 and NPCNameFromID[t.npcID];
-					else
-						return L["HEADER_NAMES"][t.npcID];
+						return NPCNameFromID[t.npcID];
 					end
 				end
 			end
@@ -7142,7 +7143,7 @@ app.CreateMinimapButton = CreateMinimapButton;
 local CreateRow;
 local function CreateMiniListForGroup(group)
 	-- Pop Out Functionality! :O
-	local suffix = BuildSourceTextForChat(group, 0) .. " -> " .. (group.text or "") .. (group.key and group[group.key] or "");
+	local suffix = BuildSourceTextForChat(group, 0) .. " > " .. (group.text or "") .. (group.key and group[group.key] or "");
 	local popout = app.Windows[suffix];
 	if not popout then
 		popout = app:GetWindow(suffix);
@@ -7893,7 +7894,7 @@ local function RowOnEnter(self)
 		if app.Settings:GetTooltipSetting("creatureID") then 
 			if reference.creatureID then
 				GameTooltip:AddDoubleLine(L["CREATURE_ID"], tostring(reference.creatureID));
-			elseif reference.npcID and reference.npcID > 0 then
+			elseif reference.npcID then
 				GameTooltip:AddDoubleLine(L["NPC_ID"], tostring(reference.npcID));
 			end
 		end
@@ -8794,7 +8795,7 @@ function app:GetDataCache()
 			for npcID,_ in pairs(searchResults) do
 				for i,data in ipairs(_) do
 					if not data.coords and data.parent then
-						if data.parent.npcID == -2 or data.parent.npcID == -16 then 
+						if data.parent.headerID == -2 or data.parent.headerID == -16 then 
 							-- If this is a rare or vendor with no coordinates
 							tinsert(missingCoordinates, npcID);
 							break;
@@ -9759,15 +9760,15 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					
 					-- If this is relative to a holiday, let's do something special
 					local holidayID = GetRelativeValue(group, "holidayID");
-					if holidayID or GetRelativeField(group, "npcID", -5) then
-						if group.key == "npcID" then
-							if GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								if group.npcID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
-							elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
-								if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
+					if holidayID or GetRelativeField(group, "headerID", -5) then
+						if group.key == "headerID" then
+							if GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
+							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
+								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
 							end
 						elseif group.key == "questID" then
-							if group.npcID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
+							if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
 						end
 						if holidayID then group = app.CreateHoliday(holidayID, { g = { group } }); end
 						MergeObject(holiday, group);
@@ -9775,10 +9776,10 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						header.key = group.key;
 						header[group.key] = group[group.key];
 						MergeObject({header}, group);
-					elseif group.key == "npcID" then
-						if GetRelativeField(group, "npcID", -2) or GetRelativeField(group, "npcID", -173) then	-- It's a Vendor. (or a timewaking vendor)
+					elseif group.key == "headerID" then
+						if GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
 							MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
-						elseif GetRelativeField(group, "npcID", -17) then	-- It's a Quest.
+						elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
 							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
 						else
 							MergeObject(groups, group);
@@ -9816,7 +9817,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						else
 							-- Attempt to scan for the main holiday header.
 							local done = false;
-							for j,o in ipairs(SearchForField("npcID", -5)) do
+							for j,o in ipairs(SearchForField("headerID", -5)) do
 								if o.g and #o.g > 5 and o.g[1].holidayID then
 									for k,group in ipairs(o.g) do
 										if group.holidayID and group.u == u then
@@ -9896,7 +9897,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					while mapID do
 						mapInfo = C_Map.GetMapInfo(mapID);
 						if mapInfo then
-							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
+							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " > " .. mapPath;
 							mapID = mapInfo.parentMapID;
 						else
 							break;

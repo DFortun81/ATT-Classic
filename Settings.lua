@@ -122,6 +122,7 @@ local TooltipSettingsBase = {
 		["Locations"] = 5,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
+		["Objectives"] = true,
 		["PlayDeathSound"] = false,
 		["Precision"] = 2,
 		["Progress"] = true,
