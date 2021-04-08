@@ -6141,28 +6141,50 @@ end
 end)();
 
 -- PVP Ranks
-app.BasePVPRank = {
-	__index = function(t, key)
-		if key == "key" then
-			return "pvpRankID";
-		elseif key == "text" then
-			return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.s or 0)];
-		elseif key == "icon" then
-			return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
-		elseif key == "description" then
-			return "Opposite faction equivalent: " .. _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.s == 1 and 0 or 1))];
-		elseif key == "title" then
-			return RANK .. " " .. t.pvpRankID;
-		elseif key == "r" then
-			return t.parent.r or app.FactionID;
-		elseif key == "s" then
-			return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
-		end
+(function()
+local fields = {
+	["key"] = function(t)
+		return "pvpRankID";
+	end,
+	["text"] = function(t)
+		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
+	end,
+	["icon"] = function(t)
+		return format("%s%02d","Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
+	end,
+	["title"] = function(t)
+		return RANK .. " " .. t.pvpRankID .. DESCRIPTION_SEPARATOR ..  _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.inverseR == 1 and 0 or 1))] .. " (" .. (t.r == Enum.FlightPathFaction.Alliance and FACTION_HORDE or FACTION_ALLIANCE) .. ")";
+	end,
+	["description"] = function(t)
+		return "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
+	end,
+	["r"] = function(t)
+		return t.parent.r or app.FactionID;
+	end,
+	["inverseR"] = function(t)
+		return t.r == Enum.FlightPathFaction.Alliance and 1 or 0;
+	end,
+	["lifetimeRank"] = function(t)
+		return select(3, GetPVPLifetimeStats());
+	end,
+	["collectible"] = function(t)
+		return false;	-- TODO?
+	end,
+	["collected"] = function(t)
+		return t.lifetimeRank >= t.pvpRankID;
+	end,
+	["u"] = function(t)
+		return app.Settings:GetUnobtainableFilter(17) and 2;
+	end,
+	["OnTooltip"] = function(t)
+		GameTooltip:AddDoubleLine("Your lifetime highest rank: ", _G["PVP_RANK_" .. (t.lifetimeRank) .. "_" .. (app.FactionID == 2 and 1 or 0)], 1, 1, 1, 1, 1, 1);
 	end
 };
+app.BasePVPRank = app.BaseObjectFields(fields);
 app.CreatePVPRank = function(id, t)
 	return setmetatable(constructor(id, t, "pvpRankID"), app.BasePVPRank);
 end
+end)();
 
 -- Quest Lib
 (function()
