@@ -812,6 +812,7 @@ local function GetRelativeMap(group, currentMapID)
 	if group then
 		return group.mapID or (group.maps and (contains(group.maps, currentMapID) and currentMapID or group.maps[1])) or GetRelativeMap(group.parent, currentMapID);
 	end
+	return currentMapID;
 end
 local function GetRelativeField(group, field, value)
 	if group then
