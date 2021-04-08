@@ -55,7 +55,7 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
-L.ALT_PROFESSION_TEXT_TO_ID = ["가죽 세공"] = 165;	-- Leatherworking
+L.ALT_PROFESSION_TEXT_TO_ID["가죽 세공"] = 165;	-- Leatherworking
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
