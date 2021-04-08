@@ -232,7 +232,7 @@ _.Zones =
 					["lvl"] = 40,
 				}),
 				q(4265, {	-- Freed from the Hive
-					["provider"] = { "o", 1645954 },	-- Zukk'ash Pod
+					["provider"] = { "o", 164954 },	-- Zukk'ash Pod
 					["sourceQuest"] = 4135,	-- The Writhing Deep
 					["coord"] = { 72.1, 63.7, FERALAS },
 					["races"] = ALLIANCE_ONLY,
