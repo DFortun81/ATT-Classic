@@ -6492,7 +6492,7 @@ app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 		end
 	end
 end
-app.SpellNameToSpellID = setmetatable({["Ingénierie"] = 4036}, {
+app.SpellNameToSpellID = setmetatable(L.ALT_PROFESSION_TEXT_TO_ID, {
 	__index = function(t, key)
 		local cache = fieldCache["spellID"];
 		for spellID,g in pairs(cache) do
@@ -11388,7 +11388,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 					local tradeSkillName, tradeSkillLevel, tradeSkillMaxLevel = GetTradeSkillLine();
 					if tradeSkillName and tradeSkillName ~= "UNKNOWN" then
 						local shouldShowSpellRanks = tradeSkillLevel and tradeSkillLevel ~= math.max(300, tradeSkillMaxLevel);
-						tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or L.ALT_PROFESSION_TEXT_TO_ID[tradeSkillName] or 0;
+						tradeSkillID = app.SpellNameToSpellID[tradeSkillName] or 0;
 						if tradeSkillID == 2656 then	-- Smelting, point this to Mining.
 							tradeSkillID = 2575;
 						elseif tradeSkillID == 0 then

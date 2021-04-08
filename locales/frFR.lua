@@ -62,6 +62,9 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
+-- Professions
+L.ALT_PROFESSION_TEXT_TO_ID["Ingénierie"] = 4036;	-- Engineering
+
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
