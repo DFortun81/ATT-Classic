@@ -6116,24 +6116,25 @@ app.SpecializationSpellIDs = setmetatable({
 	[10658] = 2108,	-- Elemental Leatherworking
 	[10660] = 2108,	-- Tribal Leatherworking
 }, {__index = function(t,k) return k; end})
-app.BaseProfession = {
-	__index = function(t, key)
-		if key == "key" then
-			return "professionID";
-		elseif key == "text" then
-			return select(1, GetSpellInfo(t.spellID));
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "spellID" then
-			return app.SkillIDToSpellID[t.professionID];
-		elseif key == "requireSkill" then
-			return t.professionID;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+
+local fields = {
+	["key"] = function(t)
+		return "professionID";
+	end,
+	["text"] = function(t)
+		return select(1, GetSpellInfo(t.spellID));
+	end,
+	["icon"] = function(t)
+		return select(3, GetSpellInfo(t.spellID));
+	end,
+	["spellID"] = function(t)
+		return app.SkillIDToSpellID[t.professionID];
+	end,
+	["requireSkill"] = function(t)
+		return t.professionID;
+	end,
 };
+app.BaseProfession = app.BaseObjectFields(fields);
 app.CreateProfession = function(id, t)
 	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
 end
