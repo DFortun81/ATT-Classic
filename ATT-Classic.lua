@@ -6136,15 +6136,15 @@ app.SpecializationSpellIDs = setmetatable({
 app.BaseProfession = {
 	__index = function(t, key)
 		if key == "key" then
-			return "skillID";
+			return "professionID";
 		elseif key == "text" then
 			return select(1, GetSpellInfo(t.spellID));
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "spellID" then
-			return app.SkillIDToSpellID[t.skillID];
+			return app.SkillIDToSpellID[t.professionID];
 		elseif key == "requireSkill" then
-			return GetRelativeValue(t, "EnforceSkillRequirements") and t.skillID;
+			return t.professionID;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6152,7 +6152,7 @@ app.BaseProfession = {
 	end
 };
 app.CreateProfession = function(id, t)
-	return setmetatable(constructor(id, t, "skillID"), app.BaseProfession);
+	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
 end
 end)();
 
@@ -6389,8 +6389,6 @@ app.BaseRecipe = {
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
 			end
-		elseif key == "skillID" then
-			return t.requireSkill;
 		elseif key == "b" then
 			return t.itemID and app.AccountWideRecipes and 2;
 		elseif key == "f" then
@@ -6503,7 +6501,7 @@ app.SpellNameToSpellID = setmetatable(L.ALT_PROFESSION_TEXT_TO_ID, {
 			end
 			app.GetSpellName(spellID, rank);
 		end
-		for skillID,spellID in pairs(app.SkillIDToSpellID) do
+		for _,spellID in pairs(app.SkillIDToSpellID) do
 			app.GetSpellName(spellID);
 		end
 		for specID,spellID in pairs(app.SpecializationSpellIDs) do
@@ -6578,8 +6576,6 @@ app.BaseSpell = {
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
 			end
-		elseif key == "skillID" then
-			return t.requireSkill;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6705,7 +6701,7 @@ function app.FilterItemClass(item)
 		if app.ItemBindFilter(item) then return true; end
 		return app.ItemTypeFilter(item)
 			and app.RequireBindingFilter(item)
-			and app.RequiredSkillFilter(item.requireSkill)
+			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
 			and app.RaceRequirementFilter(item);
 	end
@@ -6768,8 +6764,9 @@ function app.FilterItemClass_RequireBinding(item)
 		return true;
 	end
 end
-function app.FilterItemClass_RequiredSkill(requireSkill)
-	if requireSkill then
+function app.FilterItemClass_RequiredSkill(item)
+	local requireSkill = item.requireSkill;
+	if requireSkill and (not item.professionID or GetRelativeValue(item, "EnforceSkillRequirements")) then
 		requireSkill = app.SkillIDToSpellID[requireSkill];
 		return requireSkill and GetTempDataMember("ActiveSkills")[requireSkill];
 	else
