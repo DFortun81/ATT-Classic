@@ -6136,17 +6136,15 @@ app.SpecializationSpellIDs = setmetatable({
 app.BaseProfession = {
 	__index = function(t, key)
 		if key == "key" then
-			return "requireSkill";
+			return "skillID";
 		elseif key == "text" then
-			if t.spellID then
-				return select(1, GetSpellInfo(t.spellID));
-			end
+			return select(1, GetSpellInfo(t.spellID));
 		elseif key == "icon" then
 			return select(3, GetSpellInfo(t.spellID));
 		elseif key == "spellID" then
-			return app.SkillIDToSpellID[t.requireSkill];
-		elseif key == "skillID" then
-			return t.requireSkill;
+			return app.SkillIDToSpellID[t.skillID];
+		elseif key == "requireSkill" then
+			return GetRelativeValue(t, "EnforceSkillRequirements") and t.skillID;
 		else
 			-- Something that isn't dynamic.
 			return table[key];
@@ -6154,7 +6152,7 @@ app.BaseProfession = {
 	end
 };
 app.CreateProfession = function(id, t)
-	return setmetatable(constructor(id, t, "requireSkill"), app.BaseProfession);
+	return setmetatable(constructor(id, t, "skillID"), app.BaseProfession);
 end
 end)();
 
@@ -8548,7 +8546,6 @@ function app:GetDataCache()
 			db.text = LOOT_JOURNAL_LEGENDARIES_SOURCE_CRAFTED_ITEM;
 			db.icon = app.asset("Category_Crafting");
 			db.g = app.Categories.Craftables;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -8616,8 +8613,9 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRADE_SKILLS;
 			db.icon = app.asset("Category_Professions");
+			db.description = "This section will only show your character's professions outside of Account and Debug Mode.";
+			db.EnforceSkillRequirements = true;
 			db.g = app.Categories.Professions;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 		
@@ -8628,7 +8626,6 @@ function app:GetDataCache()
 			db.text = SKILLS;
 			db.icon = "Interface\\ICONS\\SPELL_NATURE_THUNDERCLAP";
 			db.g = app.Categories.Skills;
-			db.collectible = false;
 			table.insert(g, db);
 		end
 		
