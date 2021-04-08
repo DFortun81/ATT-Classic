@@ -195,7 +195,7 @@ app.L = {
 	},
 
 	-- These need to be localized manually.
-	["NPC_ID_ICONS"] = {
+	["HEADER_ICONS"] = {
 		[0] = "Interface\\Addons\\ATT-Classic\\assets\\INV_TreasureChest_FelfireCitadel", 	-- Zone Drop
 		[-1] = "Interface\\Addons\\ATT-Classic\\assets\\Achievement_Garrison_Horde_PVE", 	-- Common Boss Drop
 		[-2] = "Interface\\Icons\\INV_Misc_Coin_02", 										-- Vendors
@@ -263,7 +263,7 @@ app.L = {
 		[-540] = "Interface\\Icons\\inv_stone_02",									-- The Scourge Invasion
 		[-541] = "Interface\\Icons\\spell_holiday_tow_spicecloud",					-- The Silithyst Must Flow
 	};
-	["NPC_ID_NAMES"] = {
+	["HEADER_NAMES"] = {
 		[0] = ZONE.." "..BATTLE_PET_SOURCE_1, 									-- Zone Drop
 		[-1] = BATTLE_PET_BREED_QUALITY2.." "..TRANSMOG_SOURCE_1,				-- Common Boss Drop
 		[-2] = BATTLE_PET_SOURCE_3, 											-- Vendor
@@ -340,7 +340,9 @@ app.L = {
 -- Factions / Cities
 		[-10066] = "Legendary",
 	},
-
+	["HEADER_DESCRIPTIONS"] - {
+	};
+	
 	["OBJECT_ID_ICONS"] = {
 		[31] = "Interface\\Icons\\INV_Mount_AllianceLionG",
 		[34] = "Interface\\Icons\\INV_Drink_11",
@@ -508,6 +510,10 @@ app.L = {
 		[2868] = "Crumpled Map",
 		[2875] = "Battered Dwarven Skeleton",
 		[2908] = "Sealed Supply Crate",
+		[3189] = "Attack Plan: Valley of Trials",
+		[3190] = "Attack Plan: Sen'jin Village",
+		[3192] = "Attack Plan: Orgrimmar",
+		[3239] = "Benedict's Chest",
 		[3972] = "WANTED: Baron Longshore",
 		[4141] = "Control Console",
 		[5620] = "Flawed Power Stones",

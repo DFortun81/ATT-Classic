@@ -2058,6 +2058,7 @@ end
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
 fieldCache["flightPathID"] = {};
+fieldCache["headerID"] = {};
 fieldCache["itemID"] = {};
 fieldCache["itemIDAsCost"] = {};
 fieldCache["mapID"] = {};
@@ -2083,6 +2084,15 @@ fieldConverters = {
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
 	end,
+	["headerID"] = function(group, value)
+		-- WARNING: DEV ONLY START
+		if not L["HEADER_NAMES"][value] then
+			print("Header Missing Name ", value);
+			L["HEADER_NAMES"][value] = "Header #" .. value;
+		end
+		-- WARNING: DEV ONLY END
+		CacheField(group, "headerID", value);
+	end,
 	["itemID"] = function(group, value)
 		CacheField(group, "itemID", value);
 	end,
@@ -2095,6 +2105,12 @@ fieldConverters = {
 		end
 	end,
 	["objectID"] = function(group, value)
+		-- WARNING: DEV ONLY START
+		if not L["OBJECT_ID_NAMES"][value] then
+			print("Object Missing Name ", value);
+			L["OBJECT_ID_NAMES"][value] = "Object #" .. value;
+		end
+		-- WARNING: DEV ONLY END
 		CacheField(group, "objectID", value);
 	end,
 	["questID"] = function(group, value)
@@ -2145,6 +2161,12 @@ fieldConverters = {
 				elseif v[1] == "i" then
 					rawget(fieldConverters, "itemID")(group, v[2]);
 				elseif v[1] == "o" then
+					-- WARNING: DEV ONLY START
+					if not L["OBJECT_ID_NAMES"][v[2]] then
+						print("Object Missing Name ", v[2]);
+						L["OBJECT_ID_NAMES"][v[2]] = "Object #" .. v[2];
+					end
+					-- WARNING: DEV ONLY END
 					rawget(fieldConverters, "objectID")(group, v[2]);
 				end
 			end
@@ -5848,9 +5870,6 @@ local fields = {
 	["saved"] = function(t)
 		return t.locks;
 	end,
-	["sort"] = function(t)
-		return (t.order or (t.isRaid and "50") or "51") .. t.name;
-	end,
 };
 app.BaseMap = app.BaseObjectFields(fields);
 app.CreateMap = function(id, t)
@@ -5947,9 +5966,6 @@ local npcFields = {
 	["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
 		return t.npcID;
 	end,
-	["sort"] = function(t)
-		return (t.order or "51") .. t.name;
-	end,
 	
 	["collectibleAsQuest"] = function(t)
 		return app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
@@ -5986,13 +6002,13 @@ local headerFields = {
 		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		return L["NPC_ID_NAMES"][t.headerID];
+		return L["HEADER_NAMES"][t.headerID];
 	end,
 	["icon"] = function(t)
-		return L["NPC_ID_ICONS"][t.headerID];
+		return L["HEADER_ICONS"][t.headerID];
 	end,
-	["sort"] = function(t)
-		return (t.order or "50") .. t.name;
+	["description"] = function(t)
+		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
@@ -6016,34 +6032,54 @@ end
 end)();
 
 -- Object Lib (as in "World Object")
-app.BaseObject = {
-	__index = function(t, key)
-		if key == "key" then
-			return "objectID";
-		elseif key == "text" then
-			local name = L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
-			if t["isRaid"] then name = "|cffff8000" .. name .. "|r"; end
-			rawset(t, "text", name);
-			return name;
-		elseif key == "icon" then
-			return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
-		elseif key == "collectible" then
-			return t.questID and app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
-		elseif key == "collected" then
-			return t.saved;
-		elseif key == "trackable" then
-			return t.questID;
-		elseif key == "saved" then
-			return IsQuestFlaggedCompletedForObject(t);
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
+(function()
+local objectFields = {
+	["key"] = function(t)
+		return "objectID";
+	end,
+	["text"] = function(t)
+		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
+	end,
+	["name"] = function(t)
+		return L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
+	end,
+	["icon"] = function(t)
+		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+	end,
+	
+	["collectibleAsQuest"] = function(t)
+		return app.CollectibleQuests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog.IsOnQuest(t.questID));
+	end,
+	["collectedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t);
+	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
+	["repeatableAsQuest"] = function(t)
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+	end,
 };
+app.BaseObject = app.BaseObjectFields(objectFields);
+
+local fields = RawCloneData(objectFields);
+fields.collectible = objectFields.collectibleAsQuest;
+fields.collected = objectFields.collectedAsQuest;
+fields.trackable = objectFields.trackableAsQuest;
+fields.repeatable = objectFields.repeatableAsQuest;
+fields.saved = fields.savedAsQuest;
+app.BaseObjectWithQuest = app.BaseObjectFields(fields);
 app.CreateObject = function(id, t)
-	return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+	if t and rawget(t, "questID") then
+		return setmetatable(constructor(id, t, "objectID"), app.BaseObjectWithQuest);
+	else
+		return setmetatable(constructor(id, t, "objectID"), app.BaseObject);
+	end
 end
+end)();
 
 -- Profession Lib
 (function()
@@ -6183,7 +6219,7 @@ app.BaseQuest = {
 					if t.npcID > 0 then
 						return t.npcID > 0 and NPCNameFromID[t.npcID];
 					else
-						return L["NPC_ID_NAMES"][t.npcID];
+						return L["HEADER_NAMES"][t.npcID];
 					end
 				end
 			end

@@ -62,7 +62,7 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
-local a = L.NPC_ID_NAMES;
+local a = L.HEADER_NAMES;
 for key,value in pairs({
 	-- Enter translated NPCID's here
 })
