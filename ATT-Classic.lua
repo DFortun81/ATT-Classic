@@ -6173,10 +6173,10 @@ local fields = {
 		return select(3, GetPVPLifetimeStats());
 	end,
 	["collectible"] = function(t)
-		return false;	-- TODO?
+		return app.CollectiblePVPRanks;
 	end,
 	["collected"] = function(t)
-		return t.lifetimeRank >= t.pvpRankID;
+		return t.lifetimeRank >= (t.pvpRankID + 4);
 	end,
 	["u"] = function(t)
 		return app.Settings:GetUnobtainableFilter(17) and 2;

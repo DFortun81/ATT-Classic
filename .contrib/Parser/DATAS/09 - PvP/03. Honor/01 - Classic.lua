@@ -7,20 +7,6 @@ _.PvP =
 	n(-30, {	-- Alliance 
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
-			pvprank(1),	-- Private
-			pvprank(2),	-- Corporal
-			pvprank(3),	-- Sergeant
-			pvprank(4),	-- Master Sergeant
-			pvprank(5),	-- Sergeant Major
-			pvprank(6),	-- Knight
-			pvprank(7),	-- Knight-Lieutenant
-			pvprank(8),	-- Knight-Captain
-			pvprank(9),	-- Knight-Champion
-			pvprank(10),	-- Lieutenant Commander
-			pvprank(11),	-- Commander
-			pvprank(12),	-- Marshal
-			pvprank(13),	-- Field Marshal
-			pvprank(14),	-- Grand Marshal
 			n(QUESTS, {
 				q(8371, {	-- Concerted Efforts
 					["qg"] = 15351,	-- Alliance Brigadier General
@@ -637,20 +623,6 @@ _.PvP =
 	n(-31, {	-- Horde 
 		["races"] = HORDE_ONLY,
 		["groups"] = {
-			pvprank(1),	-- Scout
-			pvprank(2),	-- Grunt
-			pvprank(3),	-- Sergeant
-			pvprank(4),	-- Senior Sergeant
-			pvprank(5),	-- First Sergeant
-			pvprank(6),	-- Stone Guard
-			pvprank(7),	-- Blood Guard
-			pvprank(8),	-- Legionnaire
-			pvprank(9),	-- Centurion
-			pvprank(10),	-- Champion
-			pvprank(11),	-- Lieutenant General
-			pvprank(12),	-- General
-			pvprank(13),	-- Warlord
-			pvprank(14),	-- High Warlord
 			n(VENDORS, {
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 					["description"] = "Found within the Champion's Hall in Orgrimmar.",
