@@ -9760,38 +9760,37 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						end
 					end
 					setmetatable(clone, getmetatable(group));
-					group = clone;
 					
 					-- If this is relative to a holiday, let's do something special
 					local holidayID = GetRelativeValue(group, "holidayID");
 					if holidayID or GetRelativeField(group, "headerID", -5) then
 						if group.key == "headerID" then
 							if GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-								if group.headerID ~= -2 then group = app.CreateNPC(-2, { g = { group } }); end
+								if group.headerID ~= -2 then clone = app.CreateNPC(-2, { g = { clone } }); end
 							elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
-								if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
+								if group.headerID ~= -17 then clone = app.CreateNPC(-17, { g = { clone } }); end
 							end
 						elseif group.key == "questID" then
-							if group.headerID ~= -17 then group = app.CreateNPC(-17, { g = { group } }); end
+							if group.headerID ~= -17 then clone = app.CreateNPC(-17, { g = { clone } }); end
 						end
-						if holidayID then group = app.CreateHoliday(holidayID, { g = { group } }); end
-						MergeObject(holiday, group);
+						if holidayID then clone = app.CreateHoliday(holidayID, { g = { clone } }); end
+						MergeObject(holiday, clone);
 					elseif group.key == "mapID" then
 						header.key = group.key;
 						header[group.key] = group[group.key];
-						MergeObject({header}, group);
-					elseif group.key == "headerID" then
+						MergeObject({header}, clone);
+					elseif group.key == "npcID" then
 						if GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-							MergeObject(groups, app.CreateNPC(-2, { g = { group } }), 1);
+							MergeObject(groups, app.CreateNPC(-2, { g = { clone } }), 1);
 						elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
-							MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+							MergeObject(groups, app.CreateNPC(-17, { g = { clone } }), 1);
 						else
-							MergeObject(groups, group);
+							MergeObject(groups, clone);
 						end
 					elseif group.key == "questID" then
-						MergeObject(groups, app.CreateNPC(-17, { g = { group } }), 1);
+						MergeObject(groups, app.CreateNPC(-17, { g = { clone } }), 1);
 					else
-						MergeObject(groups, group);
+						MergeObject(groups, clone);
 					end
 				end
 				
