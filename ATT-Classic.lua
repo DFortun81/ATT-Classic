@@ -651,44 +651,38 @@ local function BuildGroups(parent, g)
 	end
 end
 local function BuildSourceText(group, l)
-	if group.parent then
-		if not group.itemID and (group.parent.key == "filterID" or group.parent.key == "spellID" or ((group.parent.headerID or (group.parent.spellID and group.categoryID)) 
-			and ((group.parent.headerID == -2 or group.parent.headerID == -17 or group.parent.headerID == -7) or (group.parent.parent and group.parent.parent.parent)))) then
-			return BuildSourceText(group.parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (group.parent.text or RETRIEVING_DATA) .. ")";
+	local parent = group.parent;
+	if parent then
+		if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID)) 
+			and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
+			return BuildSourceText(parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 		end
 		if group.headerID then
 			if group.headerID == 0 then
 				if group.crs and #group.crs == 1 then
-					return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
+					return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (NPCNameFromID[group.crs[1]] or RETRIEVING_DATA) .. " (Drop)";
 				end
-				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+				return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 			end
-			if group.parent.parent then
-				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+			if parent.parent then
+				return BuildSourceText(parent, l + 1) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 			end
 		end
-		if group.parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or (group.parent.key == "mapID" and group.key == "npcID") then
-			return BuildSourceText(group.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
+		if parent.key == "categoryID" or group.key == "filterID" or group.key == "spellID" or group.key == "encounterID" or (parent.key == "mapID" and group.key == "npcID") then
+			return BuildSourceText(parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 		end
 		if l < 1 then
-			if group.dr then
-				return BuildSourceText(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
-			else
-				return BuildSourceText(group.parent, l + 1);
-			end
+			return BuildSourceText(parent, l + 1);
+		else
+			return BuildSourceText(parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
 		end
-		return BuildSourceText(group.parent, l + 1) .. " > " .. (group.text or RETRIEVING_DATA);
 	end
 	return group.text or RETRIEVING_DATA;
 end
 local function BuildSourceTextForChat(group, l)
 	if group.parent then
 		if l < 1 then
-			if group.dr then
-				return BuildSourceTextForChat(group.parent, l + 1) .. DESCRIPTION_SEPARATOR .. "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r";
-			else
-				return BuildSourceTextForChat(group.parent, l + 1);
-			end
+			return BuildSourceTextForChat(group.parent, l + 1);
 		else
 			return BuildSourceTextForChat(group.parent, l + 1) .. " > " .. (group.text or "*");
 		end
@@ -1370,9 +1364,6 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 			end
 			
 			if right then
-				-- If this group has a droprate, add it to the display.
-				if group.dr then right = "|c" .. GetProgressColor(group.dr * 0.01) .. tostring(group.dr) .. "%|r " .. right; end
-				
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then
@@ -4438,7 +4429,7 @@ local itemFields = {
 		return string.format("i:%d", t.itemID);
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly");
 	end,
 	["trackableAsQuest"] = function(t)
 		return true;
@@ -5963,7 +5954,7 @@ local npcFields = {
 		return true;
 	end,
 	["repeatableAsQuest"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly")or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly");
 	end,
 };
 npcFields.icon = npcFields.iconAsDefault;
@@ -6043,7 +6034,7 @@ local objectFields = {
 		return true;
 	end,
 	["repeatableAsQuest"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly");
 	end,
 };
 app.BaseObject = app.BaseObjectFields(objectFields);
@@ -6240,7 +6231,7 @@ local questFields = {
 		--return "quest:" .. t.questID;
 	end,
 	["repeatable"] = function(t)
-		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isYearly");
+		return rawget(t, "isDaily") or rawget(t, "isWeekly") or rawget(t, "isMonthly") or rawget(t, "isYearly");
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID));
@@ -8028,7 +8019,6 @@ local function RowOnEnter(self)
 				counter = counter + 1;
 			end
 		end
-		if reference.dr then GameTooltip:AddDoubleLine(L["DROP_RATE"], "|c" .. GetProgressColor(reference.dr * 0.01) .. tostring(reference.dr) .. "%|r"); end
 		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
 			local found = false;
 			for i=1,GameTooltip:NumLines() do
