@@ -141,9 +141,9 @@ HELLFIRE_PENINSULA = 1944;	-- Confirmed!
 ZANGARMARSH = 1946;	-- Confirmed!
 NAGRAND = 1951;	-- Confirmed!
 NETHERSTORM = 1953;	-- Confirmed!
-TERROKAR_FOREST = 1952;	-- Confirmed!
+TEROKKAR_FOREST = 1952;	-- Confirmed!
 SHATTRATH_CITY = 1955;	-- Confirmed!
-BLADESEDGE_MOUNTAINS = 1949;	-- Confirmed!
+BLADES_EDGE_MOUNTAINS = 1949;	-- Confirmed!
 SHADOWMOON_VALLEY = 1948;	-- Confirmed!
 
 -- Custom Maps
@@ -705,9 +705,9 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
 		t = struct("allianceAchievementID", id, t or {});
 		t["hordeAchievementID"] = altID;
-		return t;
+		return un(WRATH_PHASE_ONE, t);
 	else
-		return struct("achievementID", id, altID);
+		return un(WRATH_PHASE_ONE, struct("achievementID", id, altID));
 	end
 end
 cat = function(id, t)									-- Create a CATEGORY Object.
@@ -803,4 +803,70 @@ v = function(id, t)										-- Create a VIGNETTE Object
 end
 
 -- SHORTCUTS for Field Modifiers (not objects, you can apply these anywhere)
+a = function(t)	-- Flag as Alliance Only
+	if t.races then
+		for key,value in pairs(t) do
+			if key == "g" then
+				-- Do nothing.
+			elseif type(value) == "table" then
+				-- Show the table.
+				local statement = "";
+				local count = 0;
+				for j,value2 in ipairs(value) do
+					if count > 0 then statement = statement .. ", "; end
+					statement = statement .. tostring(value2);
+					count = count + 1;
+				end
+				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
+			else
+				print("\t" .. tostring(key) .. ": " .. tostring(value));
+			end
+		end
+		error("Attempted to assign RACES as ALLIANCE_ONLY on a thing already marked with races.");
+	else
+		t.races = ALLIANCE_ONLY;
+	end
+	return t;
+end
+crit = function(criteriaID, t)           -- Create an Achievement Criteria Object (localized automatically)
+	if not t then t = {};
+	elseif not t.groups then
+		if not isarray(t) then
+			-- DO NOT do that lol
+		else
+			t = { ["groups"] = t };
+		end
+	end
+	t.criteriaID = criteriaID;
+	return un(WRATH_PHASE_ONE, t);
+end
+model = function(displayID, t)
+	t.displayID = displayID;
+	return t;
+end
+h = function(t) -- Flag as Horde Only
+	if t.races then
+		for key,value in pairs(t) do
+			if key == "g" then
+				-- Do nothing.
+			elseif type(value) == "table" then
+				-- Show the table.
+				local statement = "";
+				local count = 0;
+				for j,value2 in ipairs(value) do
+					if count > 0 then statement = statement .. ", "; end
+					statement = statement .. tostring(value2);
+					count = count + 1;
+				end
+				print("\t" .. tostring(key) .. ": { " .. statement .. " }");
+			else
+				print("\t" .. tostring(key) .. ": " .. tostring(value));
+			end
+		end
+		error("Attempted to assign RACES as HORDE_ONLY on a thing already marked with races.");
+	else
+		t.races = HORDE_ONLY;
+	end
+	return t;
+end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
