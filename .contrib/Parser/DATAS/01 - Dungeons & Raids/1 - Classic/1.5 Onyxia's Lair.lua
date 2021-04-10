@@ -85,8 +85,9 @@ _.Instances = { tier(1, {	-- Classic
 					},
 				},
 				{
-					["questID"] = 7636,	-- Stave of the Ancients
 					["qg"] = 14524,	-- Vartrus the Ancient
+					["questID"] = 7636,	-- Stave of the Ancients
+					["sourceQuest"] = 7633, 	-- An Introduction
 					["description"] = "You must defeat the 4 demons listed below by yourself with no pet in order to complete this quest.",
 					["coord"] = { 47, 24.48, FELWOOD },
 					["classes"] = { HUNTER },
