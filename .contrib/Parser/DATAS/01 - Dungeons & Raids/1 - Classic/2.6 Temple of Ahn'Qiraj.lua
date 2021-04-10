@@ -1063,71 +1063,6 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					i(20731),	-- Formula: Enchant Gloves - Superior Agility
 				},
 			}),
-			n(COMMON_BOSS_DROPS, {
-				i(21232, {	-- Imperial Qiraji Armaments
-					["crs"] = {
-						15510,	-- Fankriss the Unyielding
-						15516,	-- Battleguard Sartura
-						15509,	-- Princess Huhuran
-						15275,	-- Emperor Vek'nilash
-						15276,	-- Emperor Vek'lor
-						15544,	-- Vem
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15543,	-- Princess Yauj
-						15299,	-- Viscidus
-					},
-				}),
-				i(21237, {	-- Imperial Qiraji Regalia
-					["crs"] = {
-						15510,	-- Fankriss the Unyielding
-						15516,	-- Battleguard Sartura
-						15509,	-- Princess Huhuran
-						15275,	-- Emperor Vek'nilash
-						15276,	-- Emperor Vek'lor
-						15544,	-- Vem
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15543,	-- Princess Yauj
-						15299,	-- Viscidus
-					},
-				}),
-				i(76402, {	-- Greater Scarab Coffer Key
-					["u"] = CATA_PHASE_ONE,
-					["timeline"] = {
-						"added 4.3.0.15005"
-					},
-					["crs"] = {
-						15516,	-- Battleguard Sartura
-						15727,	-- C'Thun
-						15276,	-- Emperor Vek'lor
-						15275,	-- Emperor Vek'nilash
-						15510,	-- Fankriss the Unyielding
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15509,	-- Princess Huhuran
-						15543,	-- Princess Yauj
-						15263,	-- The Prophet Skeram
-						15544,	-- Vem
-						15299,	-- Viscidus
-					},
-				}),
-				i(21229, {	-- Qiraji Lord's Insignia
-					["crs"] = {
-						15516,	-- Battleguard Sartura
-						15276,	-- Emperor Vek'lor
-						15275,	-- Emperor Vek'nilash
-						15510,	-- Fankriss the Unyielding
-						15511,	-- Lord Kri
-						15517,	-- Ouro
-						15509,	-- Princess Huhuran
-						15543,	-- Princess Yauj
-						15263,	-- The Prophet Skeram
-						15544,	-- Vem
-						15299,	-- Viscidus
-					},
-				}),
-			}),
 			n(ZONEDROPS, {
 				i(21218),	-- Blue Qiraji Resonating Crystal
 				i(21323),	-- Green Qiraji Resonating Crystal
@@ -1254,6 +1189,71 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["timeline"] = {
 						"added 1.13.0.28211",
 						"deleted 4.2.2.28211"
+					},
+				}),
+			}),
+			n(COMMON_BOSS_DROPS, {
+				i(21232, {	-- Imperial Qiraji Armaments
+					["crs"] = {
+						15510,	-- Fankriss the Unyielding
+						15516,	-- Battleguard Sartura
+						15509,	-- Princess Huhuran
+						15275,	-- Emperor Vek'nilash
+						15276,	-- Emperor Vek'lor
+						15544,	-- Vem
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15543,	-- Princess Yauj
+						15299,	-- Viscidus
+					},
+				}),
+				i(21237, {	-- Imperial Qiraji Regalia
+					["crs"] = {
+						15510,	-- Fankriss the Unyielding
+						15516,	-- Battleguard Sartura
+						15509,	-- Princess Huhuran
+						15275,	-- Emperor Vek'nilash
+						15276,	-- Emperor Vek'lor
+						15544,	-- Vem
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15543,	-- Princess Yauj
+						15299,	-- Viscidus
+					},
+				}),
+				i(76402, {	-- Greater Scarab Coffer Key
+					["u"] = CATA_PHASE_ONE,
+					["timeline"] = {
+						"added 4.3.0.15005"
+					},
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15727,	-- C'Thun
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
+					},
+				}),
+				i(21229, {	-- Qiraji Lord's Insignia
+					["crs"] = {
+						15516,	-- Battleguard Sartura
+						15276,	-- Emperor Vek'lor
+						15275,	-- Emperor Vek'nilash
+						15510,	-- Fankriss the Unyielding
+						15511,	-- Lord Kri
+						15517,	-- Ouro
+						15509,	-- Princess Huhuran
+						15543,	-- Princess Yauj
+						15263,	-- The Prophet Skeram
+						15544,	-- Vem
+						15299,	-- Viscidus
 					},
 				}),
 			}),

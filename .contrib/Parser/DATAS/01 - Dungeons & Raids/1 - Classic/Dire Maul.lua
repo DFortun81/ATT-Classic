@@ -414,6 +414,48 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_ONE_DIREMAUL }, {	-- Classic
 					},
 				},
 			}),
+			n(ZONEDROPS, {
+				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
+					["description"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.\n\nThis can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.",
+				}),
+				i(12662),	-- Demonic Rune
+				{
+					["itemID"] = 18250,	-- Gordok Shackle Key
+					["questID"] = 5525,	-- Free Knot!
+					["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
+					["crs"] = {
+						14325,	-- Captain Kromcrush
+						14321,	-- Guard Fengus
+						14326,	-- Guard Mol'dar
+						14323,	-- Guard Slip'kik
+						11441,	-- Gordok Brute
+						14351,	-- Gordok Bushwacker
+						11445,	-- Gordok Captain
+						11444,	-- Gordok Mage-Lord
+						11450,	-- Gordok Reaver
+						11448,	-- Gordok Warlock
+					},
+				},
+				i(18640),	-- Happy Fun Rock
+				i(18333),	-- Libram of Focus
+				i(18334),	-- Libram of Protection
+				i(18332),	-- Libram of Rapidity
+				un(PHASE_FIVE, {
+					["itemID"] = 21982,	-- Ogre Warbeads
+					["questID"] = 8949,	-- Falrin's Vendetta
+					["crs"] = {
+						11441,	-- Gordok Brute
+						14351,	-- Gordok Bushwacker
+						11445,	-- Gordok Captain
+						11440,	-- Gordok Enforcer
+						11444,	-- Gordok Mage-Lord
+						11442,	-- Gordok Mauler
+						11443,	-- Gordok Ogre-Mage
+						11450,	-- Gordok Reaver
+						11448,	-- Gordok Warlock
+					},
+				}),
+			}),
 			n(COMMON_BOSS_DROPS, {
 				["description"] = "The following items can drop from any boss in Dire Maul.",
 				["groups"] = {
@@ -468,48 +510,6 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_ONE_DIREMAUL }, {	-- Classic
 						["classes"] = { PALADIN },
 					},
 				},
-			}),
-			n(ZONEDROPS, {
-				i(18365, {	-- A Thoroughly Read Copy of "Nat Pagle's Guide to Extreme Anglin'."
-					["description"] = "This item is utterly worthless, however there was a rumor that this item could be used to obtain the original Ashbringer via fishing.\n\nThis can be found in various places throughout all the wings of Dire Maul.\n\nDire Maul North: Southwest corner of Guard Fengus's courtyard or next to King Gordok and Cho'Rush the Observer.\n\nDire Maul East: Eastern wall of the garden, the ledge above the garden, next to Lethtendris, or next to Alzzin the Wildshaper.\n\nDire Maul West: By the southern generator in Immol'thar's room.",
-				}),
-				i(12662),	-- Demonic Rune
-				{
-					["itemID"] = 18250,	-- Gordok Shackle Key
-					["questID"] = 5525,	-- Free Knot!
-					["description"] = "NOTE: Do NOT Free Knot if you are doing a Tribute Run. He runs away.",
-					["crs"] = {
-						14325,	-- Captain Kromcrush
-						14321,	-- Guard Fengus
-						14326,	-- Guard Mol'dar
-						14323,	-- Guard Slip'kik
-						11441,	-- Gordok Brute
-						14351,	-- Gordok Bushwacker
-						11445,	-- Gordok Captain
-						11444,	-- Gordok Mage-Lord
-						11450,	-- Gordok Reaver
-						11448,	-- Gordok Warlock
-					},
-				},
-				i(18640),	-- Happy Fun Rock
-				i(18333),	-- Libram of Focus
-				i(18334),	-- Libram of Protection
-				i(18332),	-- Libram of Rapidity
-				un(PHASE_FIVE, {
-					["itemID"] = 21982,	-- Ogre Warbeads
-					["questID"] = 8949,	-- Falrin's Vendetta
-					["crs"] = {
-						11441,	-- Gordok Brute
-						14351,	-- Gordok Bushwacker
-						11445,	-- Gordok Captain
-						11440,	-- Gordok Enforcer
-						11444,	-- Gordok Mage-Lord
-						11442,	-- Gordok Mauler
-						11443,	-- Gordok Ogre-Mage
-						11450,	-- Gordok Reaver
-						11448,	-- Gordok Warlock
-					},
-				}),
 			}),
 			n(-12, {	-- Warpwood Quarter [East - Demon]
 				["description"] = "This part of the instance can be accessed from the eastern-most portal. (right side)",

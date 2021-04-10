@@ -1615,6 +1615,38 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					},
 				}),
 			}),
+			n(ZONEDROPS, {
+				{
+					["itemID"] = 22708,	-- Fate of Ramaladni
+					["questID"] = 9229,	-- The Fate of Ramaladni
+					["cr"] = 16018,	-- Bile Retcher
+				},
+				i(22682, {	-- Frozen Rune
+					["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
+					["cost"] = {
+						{ "i", 23055, 1 },	-- Word of Thawing
+					},
+				}),
+				i(22374),	-- Wartorn Chain Scrap
+				i(22376),	-- Wartorn Cloth Scrap
+				i(22373),	-- Wartorn Leather Scrap
+				i(22375),	-- Wartorn Plate Scrap
+				i(23055, {	-- Word of Thawing
+					["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
+				}),
+				i(23221),	-- Misplaced Servo Arm
+				i(23044),	-- Harbinger of Doom
+				i(23238),	-- Stygian Buckler
+				i(23664),	-- Pauldrons of Elemental Fury
+				i(23667),	-- Spaulders of the Grand Crusader
+				i(23226),	-- Ghoul Skin Tunic
+				i(23069),	-- Necro-Knight's Garb
+				i(23666),	-- Belt of the Grand Crusader
+				i(23663),	-- Girdle of Elemental Fury
+				i(23665),	-- Leggings of Elemental Fury
+				i(23668),	-- Leggings of the Grand Crusader
+				i(23237),	-- Ring of the Eternal Flame
+			}),
 			n(COMMON_BOSS_DROPS, {
 				-- Helms
 				-- Thaddius Only
@@ -1738,38 +1770,6 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						15928,	-- Thaddius
 					},
 				}),
-			}),
-			n(ZONEDROPS, {
-				{
-					["itemID"] = 22708,	-- Fate of Ramaladni
-					["questID"] = 9229,	-- The Fate of Ramaladni
-					["cr"] = 16018,	-- Bile Retcher
-				},
-				i(22682, {	-- Frozen Rune
-					["description"] = "Use a Word of Thawing on Frozen Rune objects around Naxx to collect 3-6 of these.",
-					["cost"] = {
-						{ "i", 23055, 1 },	-- Word of Thawing
-					},
-				}),
-				i(22374),	-- Wartorn Chain Scrap
-				i(22376),	-- Wartorn Cloth Scrap
-				i(22373),	-- Wartorn Leather Scrap
-				i(22375),	-- Wartorn Plate Scrap
-				i(23055, {	-- Word of Thawing
-					["description"] = "These can be used to loot the Frozen Runes scattered around the inside of Naxxramas.",
-				}),
-				i(23221),	-- Misplaced Servo Arm
-				i(23044),	-- Harbinger of Doom
-				i(23238),	-- Stygian Buckler
-				i(23664),	-- Pauldrons of Elemental Fury
-				i(23667),	-- Spaulders of the Grand Crusader
-				i(23226),	-- Ghoul Skin Tunic
-				i(23069),	-- Necro-Knight's Garb
-				i(23666),	-- Belt of the Grand Crusader
-				i(23663),	-- Girdle of Elemental Fury
-				i(23665),	-- Leggings of Elemental Fury
-				i(23668),	-- Leggings of the Grand Crusader
-				i(23237),	-- Ring of the Eternal Flame
 			}),
 			n(-368, { 	-- The Arachnid Quarter
 				["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
