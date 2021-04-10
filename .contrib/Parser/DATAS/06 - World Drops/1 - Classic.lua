@@ -2637,7 +2637,7 @@ _.WorldDrops = { tier(1, {	-- Classic
 		un(PHASE_FIVE, i(23199)),	-- Totem of the Storm [Phase 5/6]
 		i(4500),	-- Traveler's Backpack
 	}),
-	n(QUESTS, {
+	category(72, {	-- Tarot Cards
 		un(PHASE_THREE, i(19230)),	-- Two of Beasts
 		un(PHASE_THREE, i(19231)),	-- Three of Beasts
 		un(PHASE_THREE, i(19232)),	-- Four of Beasts
@@ -2645,14 +2645,6 @@ _.WorldDrops = { tier(1, {	-- Classic
 		un(PHASE_THREE, i(19234)),	-- Six of Beasts
 		un(PHASE_THREE, i(19235)),	-- Seven of Beasts
 		un(PHASE_THREE, i(19236)),	-- Eight of Beasts
-
-		un(PHASE_THREE, i(19259)),	-- Two of Warlords
-		un(PHASE_THREE, i(19260)),	-- Three of Warlords
-		un(PHASE_THREE, i(19261)),	-- Four of Warlords
-		un(PHASE_THREE, i(19262)),	-- Five of Warlords
-		un(PHASE_THREE, i(19263)),	-- Six of Warlords
-		un(PHASE_THREE, i(19264)),	-- Seven of Warlords
-		un(PHASE_THREE, i(19265)),	-- Eight of Warlords
 
 		un(PHASE_THREE, i(19269)),	-- Two of Elementals
 		un(PHASE_THREE, i(19270)),	-- Three of Elementals
@@ -2669,6 +2661,14 @@ _.WorldDrops = { tier(1, {	-- Classic
 		un(PHASE_THREE, i(19282)),	-- Six of Portals
 		un(PHASE_THREE, i(19283)),	-- Seven of Portals
 		un(PHASE_THREE, i(19284)),	-- Eight of Portals
+
+		un(PHASE_THREE, i(19259)),	-- Two of Warlords
+		un(PHASE_THREE, i(19260)),	-- Three of Warlords
+		un(PHASE_THREE, i(19261)),	-- Four of Warlords
+		un(PHASE_THREE, i(19262)),	-- Five of Warlords
+		un(PHASE_THREE, i(19263)),	-- Six of Warlords
+		un(PHASE_THREE, i(19264)),	-- Seven of Warlords
+		un(PHASE_THREE, i(19265)),	-- Eight of Warlords
 	}),
 	filter(200, {	-- Recipes
 		cl(DRUID, {

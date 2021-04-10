@@ -9,6 +9,15 @@ local BIG_STICK = i(12251);
 local SLYVAN_SHORTBOW = i(11308);
 local STURDY_RECURVE = i(11306);
 local FINE_SHORTBOW = i(11303);
+local TIER_ONE_MAX_REPUTATION = { 909, NEUTRAL + 500 };	-- Darkmoon Faire, must be less than 500 over Neutral
+local TIER_TWO_MAX_REPUTATION = { 909, NEUTRAL + 1100 };	-- Darkmoon Faire, must be less than 1100 over Neutral
+local TIER_THREE_MAX_REPUTATION = { 909, NEUTRAL + 1700 };	-- Darkmoon Faire, must be less than 1700 over Neutral
+local TIER_FOUR_MAX_REPUTATION = { 909, NEUTRAL + 2500 };	-- Darkmoon Faire, must be less than 2500 over Neutral
+local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2000 };	-- Darkmoon Faire, must be less than 3000 over Friendly
+
+-- This is what every online guide ever says, but they're incorrect.
+-- The "More" quests appear to be infinitely repeatable, with 0 reputation gains.
+-- local TIER_FIVE_MAX_REPUTATION = { 909, HONORED - 1 };	-- Darkmoon Faire, must be less than Honored
 
 _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE }, 
 {
@@ -151,7 +160,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
+					["maxReputation"] = TIER_FIVE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
@@ -167,7 +176,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
+					["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 7945, 1 },	-- Big Black Mace
@@ -183,7 +192,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
+					["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 2309, 3 },	-- Embossed Leather Boots
@@ -198,7 +207,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
+					["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 2314, 3 },	-- Toughened Leather Armor
@@ -214,7 +223,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
+					["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3240, 10 },	-- Coarse Weightstone
@@ -229,7 +238,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
+					["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4363, 5 },	-- Copper Modulator
@@ -244,7 +253,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
+					["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 8185, 1 },	-- Turtle Scale Leggings
@@ -257,39 +266,59 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				q(7907,  {	-- Darkmoon Beast Deck
 					["provider"] = { "i", 19228 },  -- Beasts Deck
 					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 19228, 1 },	-- Beasts Deck
-					},
 					["g"] = {
 						i(19288),	-- Darkmoon Card: Blue Dragon
+					},
+				}),
+				q(10938,  {	-- Darkmoon Blessings Deck
+					["provider"] = { "i", 31890 },  -- Blessings Deck
+					["repeatable"] = true,
+					["u"] = TBC_PHASE_ONE,
+					["g"] = {
+						i(31856),	-- Darkmoon Card: Crusade
 					},
 				}),
 				q(7929,  {	-- Darkmoon Elementals Deck
 					["provider"] = { "i", 19267 },  -- Elementals Deck
 					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 19267, 1 },	-- Elementals Deck
-					},
 					["g"] = {
 						i(19289),	-- Darkmoon Card: Maelstrom
+					},
+				}),
+				q(10940,  {	-- Darkmoon Furies Deck
+					["provider"] = { "i", 31907 },  -- Furies Deck
+					["repeatable"] = true,
+					["u"] = TBC_PHASE_ONE,
+					["g"] = {
+						i(31858),	-- Darkmoon Card: Vengeance
+					},
+				}),
+				q(10941,  {	-- Darkmoon Lunacy Deck
+					["provider"] = { "i", 31914 },  -- Lunacy Deck
+					["repeatable"] = true,
+					["u"] = TBC_PHASE_ONE,
+					["g"] = {
+						i(31859),	-- Darkmoon Card: Madness
 					},
 				}),
 				q(7927,  {	-- Darkmoon Portals Deck
 					["provider"] = { "i", 19277 },  -- Portals Deck
 					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 19277, 1 },	-- Portals Deck
-					},
 					["g"] = {
 						i(19290),	-- Darkmoon Card: Twisting Nether
+					},
+				}),
+				q(10939,  {	-- Darkmoon Storms Deck
+					["provider"] = { "i", 31891 },  -- Storms Deck
+					["repeatable"] = true,
+					["u"] = TBC_PHASE_ONE,
+					["g"] = {
+						i(31857),	-- Darkmoon Card: Wrath
 					},
 				}),
 				q(7928,  {	-- Darkmoon Warlords Deck
 					["provider"] = { "i", 19257 },  -- Warlords Deck
 					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 19257, 1 },	-- Warlords Deck
-					},
 					["g"] = {
 						i(19287),	-- Darkmoon Card: Heroism
 					},
@@ -300,7 +329,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
+					["maxReputation"] = TIER_FIVE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11404, 10 },	-- Evil Bat Eye
@@ -316,7 +345,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
+					["maxReputation"] = TIER_FIVE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19933, 10 },	-- Glowing Scorpid Blood
@@ -332,7 +361,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
+					["maxReputation"] = TIER_THREE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 9313, 36 },	-- Green Firework
@@ -348,7 +377,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
+					["maxReputation"] = TIER_THREE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3835, 3 },	-- Green Iron Bracers
@@ -364,8 +393,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					
-					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
+					["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 3486, 7 },	-- Heavy Grinding Stone
@@ -381,7 +409,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
+					["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11590, 6 },	-- Mechanical Repair Kit
@@ -391,14 +419,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7941,  {	-- More Armor Kits [Tier 5]
+				q(7941,  {	-- More Armor Kits [Tier 5] (Not Really)
 					["qg"] = 14833,  -- Chronos <He Who Never Forgets!>
 					["coords"] = {
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
 					["sourceQuest"] = 7885,	-- Armor Kits
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15564, 8 },	-- Rugged Armor Kit
@@ -408,14 +435,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7943,  {	-- More Bat Eyes [Tier 5]
+				q(7943,  {	-- More Bat Eyes [Tier 5] (Not Really)
 					["qg"] = 14829,  -- Yebb Neblegear
 					["sourceQuest"] = 7903,	-- Evil Bat Eyes
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11404, 10 },	-- Evil Bat Eye
@@ -425,14 +451,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7939,  {	-- More Dense Grinding Stones [Tier 5]
+				q(7939,  {	-- More Dense Grinding Stones [Tier 5] (Not Really)
 					["qg"] = 14832,  -- Kerri Hicks <The Strongest Woman Alive!>
 					["sourceQuest"] = 7893,	-- Rituals of Strength
 					["coords"] = {
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12644, 8 },	-- Dense Grinding Stone
@@ -442,14 +467,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(8223,  {	-- More Glowing Scorpid Blood [Tier 5]
+				q(8223,  {	-- More Glowing Scorpid Blood [Tier 5] (Not Really)
 					["qg"] = 14829,  -- Yebb Neblegear
 					["sourceQuest"] = 8222,	-- Glowing Scorpid Blood
 					["coords"] = {
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 19933, 10 },	-- Glowing Scorpid Blood
@@ -459,14 +483,13 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7942,  {	-- More Thorium Widgets [Tier 5]
+				q(7942,  {	-- More Thorium Widgets [Tier 5] (Not Really)
 					["qg"] = 14841,  -- Rinling
 					["sourceQuest"] = 7898,	-- Thorium Widget
 					["coords"] = {
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15994, 6 },	-- Thorium Widget
@@ -482,7 +505,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.5, 69.9, ELWYNN_FOREST },
 						{ 37.8, 39.8, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
+					["maxReputation"] = TIER_FIVE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 12644, 8 },	-- Dense Grinding Stone
@@ -498,7 +521,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 500 },	-- Darkmoon Faire, must be less than 500 over Neutral
+					["maxReputation"] = TIER_ONE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5134, 5 },	-- Small Furry Paw
@@ -513,7 +536,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
+					["maxReputation"] = TIER_THREE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4582, 5 },	-- Soft Bushy Tail
@@ -569,7 +592,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 43.5, 71.1, ELWYNN_FOREST },
 						{ 36.2, 35.2, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1700 },	-- Darkmoon Faire, must be less than 1700 over Neutral
+					["maxReputation"] = TIER_THREE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5739, 3 },	-- Barbaric Harness
@@ -585,7 +608,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 41.7, 70.7, ELWYNN_FOREST },
 						{ 37.1, 37.2, MULGORE },
 					},
-					["maxReputation"] = { 909, HONORED },	-- Darkmoon Faire, must be less than Honored.
+					["maxReputation"] = TIER_FIVE_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 15994, 6 },	-- Thorium Widget
@@ -601,7 +624,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
+					["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 11407, 5 },	-- Torn Bear Pelt
@@ -617,7 +640,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 2500 },	-- Darkmoon Faire, must be less than 2500 over Neutral
+					["maxReputation"] = TIER_FOUR_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 5117, 5 },	-- Vibrant Plume
@@ -633,7 +656,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						{ 40.2, 69.7, ELWYNN_FOREST },
 						{ 37.5, 39.6, MULGORE },
 					},
-					["maxReputation"] = { 909, NEUTRAL + 1100 },	-- Darkmoon Faire, must be less than 1100 over Neutral
+					["maxReputation"] = TIER_TWO_MAX_REPUTATION,
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 4375, 7 },	-- Whirring Bronze Gizmo
@@ -761,6 +784,112 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19453),	-- Sayge's Fortune #28
 						i(19454),	-- Sayge's Fortune #29
 					},
+				}),
+			}),
+			category(73, {	-- Tarot Decks
+				i(19228, {	-- Beasts Deck
+					["cost"] = {
+						{ "i", 19227, 1 },	-- Ace of Beasts
+						{ "i", 19230, 1 },	-- Two of Beasts
+						{ "i", 19231, 1 },	-- Three of Beasts
+						{ "i", 19232, 1 },	-- Four of Beasts
+						{ "i", 19233, 1 },	-- Five of Beasts
+						{ "i", 19234, 1 },	-- Six of Beasts
+						{ "i", 19235, 1 },	-- Seven of Beasts
+						{ "i", 19236, 1 },	-- Eight of Beasts
+					},
+					["lvl"] = 55,
+				}),
+				i(31890, {	-- Blessings Deck
+					["u"] = TBC_PHASE_ONE,
+					["cost"] = {
+						{ "i", 31882, 1 },	-- Ace of Blessings
+						{ "i", 31889, 1 },	-- Two of Blessings
+						{ "i", 31888, 1 },	-- Three of Blessings
+						{ "i", 31885, 1 },	-- Four of Blessings
+						{ "i", 31884, 1 },	-- Five of Blessings
+						{ "i", 31887, 1 },	-- Six of Blessings
+						{ "i", 31886, 1 },	-- Seven of Blessings
+						{ "i", 31883, 1 },	-- Eight of Blessings
+					},
+				}),
+				i(19267, {	-- Elementals Deck
+					["cost"] = {
+						{ "i", 19268, 1 },	-- Ace of Elementals
+						{ "i", 19269, 1 },	-- Two of Elementals
+						{ "i", 19270, 1 },	-- Three of Elementals
+						{ "i", 19271, 1 },	-- Four of Elementals
+						{ "i", 19272, 1 },	-- Five of Elementals
+						{ "i", 19273, 1 },	-- Six of Elementals
+						{ "i", 19274, 1 },	-- Seven of Elementals
+						{ "i", 19275, 1 },	-- Eight of Elementals
+					},
+					["lvl"] = 55,
+				}),
+				i(31907, {	-- Furies Deck
+					["u"] = TBC_PHASE_ONE,
+					["cost"] = {
+						{ "i", 31901, 1 },	-- Ace of Furies
+						{ "i", 31909, 1 },	-- Two of Furies
+						{ "i", 31908, 1 },	-- Three of Furies
+						{ "i", 31904, 1 },	-- Four of Furies
+						{ "i", 31903, 1 },	-- Five of Furies
+						{ "i", 31906, 1 },	-- Six of Furies
+						{ "i", 31905, 1 },	-- Seven of Furies
+						{ "i", 31902, 1 },	-- Eight of Furies
+					},
+				}),
+				i(31914, {	-- Lunacy Deck
+					["u"] = TBC_PHASE_ONE,
+					["cost"] = {
+						{ "i", 31910, 1 },	-- Ace of Lunacy
+						{ "i", 31918, 1 },	-- Two of Lunacy
+						{ "i", 31917, 1 },	-- Three of Lunacy
+						{ "i", 31913, 1 },	-- Four of Lunacy
+						{ "i", 31912, 1 },	-- Five of Lunacy
+						{ "i", 31916, 1 },	-- Six of Lunacy
+						{ "i", 31915, 1 },	-- Seven of Lunacy
+						{ "i", 31911, 1 },	-- Eight of Lunacy
+					},
+				}),
+				i(19277, {	-- Portals Deck
+					["cost"] = {
+						{ "i", 19276, 1 },	-- Ace of Portals
+						{ "i", 19278, 1 },	-- Two of Portals
+						{ "i", 19279, 1 },	-- Three of Portals
+						{ "i", 19280, 1 },	-- Four of Portals
+						{ "i", 19281, 1 },	-- Five of Portals
+						{ "i", 19282, 1 },	-- Six of Portals
+						{ "i", 19283, 1 },	-- Seven of Portals
+						{ "i", 19284, 1 },	-- Eight of Portals
+					},
+					["lvl"] = 55,
+				}),
+				i(31891, {	-- Storms Deck
+					["u"] = TBC_PHASE_ONE,
+					["cost"] = {
+						{ "i", 31892, 1 },	-- Ace of Storms
+						{ "i", 31900, 1 },	-- Two of Storms
+						{ "i", 31899, 1 },	-- Three of Storms
+						{ "i", 31895, 1 },	-- Four of Storms
+						{ "i", 31894, 1 },	-- Five of Storms
+						{ "i", 31898, 1 },	-- Six of Storms
+						{ "i", 31896, 1 },	-- Seven of Storms
+						{ "i", 31893, 1 },	-- Eight of Storms
+					},
+				}),
+				i(19257, {	-- Warlords Deck
+					["cost"] = {
+						{ "i", 19258, 1 },	-- Ace of Warlords
+						{ "i", 19259, 1 },	-- Two of Warlords
+						{ "i", 19260, 1 },	-- Three of Warlords
+						{ "i", 19261, 1 },	-- Four of Warlords
+						{ "i", 19262, 1 },	-- Five of Warlords
+						{ "i", 19263, 1 },	-- Six of Warlords
+						{ "i", 19264, 1 },	-- Seven of Warlords
+						{ "i", 19265, 1 },	-- Eight of Warlords
+					},
+					["lvl"] = 55,
 				}),
 			}),
 		},

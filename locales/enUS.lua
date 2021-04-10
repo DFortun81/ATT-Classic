@@ -914,6 +914,10 @@ app.L = {
 
 		-- Weapon Skills
 		[71] = "Interface\\Icons\\INV_Weapon_Halberd_10", -- Weapon Skills
+		
+		-- Inscription
+		[72] = "Interface\\Icons\\Inv_misc_ticket_tarot_portal_01",	-- Tarot Cards
+		[73] = "Interface\\Icons\\inv_misc_ticket_tarot_stack_01",	-- Tarot Decks
 	},
 	["TRADESKILL_CATEGORY_NAMES"] = {
 		-- Engineering
@@ -1004,6 +1008,10 @@ app.L = {
 
 		-- Weapon Skills
 		[71] = "Weapon Skills", -- Weapon Skills
+		
+		-- Inscription
+		[72] = "Tarot Cards",	-- Tarot Cards
+		[73] = "Tarot Decks",	-- Tarot Decks
 	},
 
 	-- Saved Instance Name => Dungeon Journal Instance Name Converter

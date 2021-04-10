@@ -910,9 +910,11 @@ _.WorldDrops = { un(TBC_PHASE_ONE, tier(2, {	-- Burning Crusade
 		i(25098),	-- Tuurik Torch
 		i(25099),	-- Draenei Crystal Rod
 	}),
-	n(QUESTS, {
+	filter(50, {	-- Miscellaneous
 		i(29739),	-- Arcane Tome
 		i(29740),	-- Fel Armament
+	}),
+	category(72, {	-- Tarrot Cards
 		-- Blessings Deck
 		i(31882),	-- Ace of Blessings
 		i(31889),	-- Two of Blessings
