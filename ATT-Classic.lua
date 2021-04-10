@@ -4480,10 +4480,10 @@ local itemFields = {
 		return t.collectedAsFactionOnly or t.collectedAsQuest;
 	end,
 	["collectedAsQuest"] = function(t)
-		return t.saved or t.collectedAsCost;
+		return IsQuestFlaggedCompletedForObject(t) or t.collectedAsCost;
 	end,
 	["savedAsQuest"] = function(t) 
-		return IsQuestFlaggedCompletedForObject(t);
+		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
