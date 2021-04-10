@@ -4321,12 +4321,7 @@ local CollectedAsCostPerItemID = setmetatable({}, { __index = function(t, id)
 		local collected, count = true, 0;
 		for _,ref in pairs(results) do
 			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.total and ref.total > 0 then
-					count = count + 1;
-					if ref.progress < ref.total then
-						collected = false;
-					end
-				elseif ref.collectible then
+				if ref.collectible then
 					count = count + 1;
 					if not ref.collected then
 						collected = false;
@@ -4348,7 +4343,7 @@ local CollectibleAsCostPerItemID = setmetatable({}, { __index = function(t, id)
 	if results and #results > 0 then
 		for _,ref in pairs(results) do
 			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.collectible or (ref.total and ref.total > 0) then
+				if ref.collectible then
 					return true;
 				end
 			end
