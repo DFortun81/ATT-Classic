@@ -5,7 +5,7 @@
 _.Instances = { tier(2, {	-- Burning Crusade
 	map(COILFANG_RESERVOIR_UNDERBOG, { 	-- The Underbog
 		["description"] = "Underbog is the 2nd 5-man instance within the Coilfang Reservoir found on the east side of the naga invested complex. The Underbog is home to the last vestiges of natural life left within Coilfang Reservoir that has not been completely stamped out by the Naga incursion. The only Naga presence in this section defends the structure they built to house their hydra god, Ghaz'an. The rest of the Underbog is a natural habitat, home to the most powerful species of animal life in Zangarmarsh.",
-		["coord"] = { 54.24, 34.45, 102 },	-- The Underbog, Zangarmarsh
+		["coord"] = { 54.24, 34.45, ZANGARMARSH },	-- The Underbog, Zangarmarsh
 		["lvl"] = 60,
 		["groups"] = {
 			n(QUESTS, {
@@ -101,7 +101,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 					i(24456),	-- Greaves of the Iron Guardian
 				}),
 				n(17882, {	-- The Black Stalker
-					un(WRATH_PHASE_ONE, ach(650)),	-- Underbog
+					ach(650),	-- Underbog
 					i(24464),	-- The Stalker's Fangs
 					i(24463),	-- Pauldrons of Brute Force
 					i(24481),	-- Robes of the Augurer
@@ -154,7 +154,7 @@ _.Instances = { tier(2, {	-- Burning Crusade
 						i(27762),	-- Weathered Band of the Swamplord
 					}),
 					n(17882, {	-- The Black Stalker
-						un(WRATH_PHASE_ONE, ach(670)),	-- Heroic: Underbog
+						ach(670),	-- Heroic: Underbog
 						i(27769),	-- Endbringer
 						i(29350),	-- The Black Stalk
 						i(27772),	-- Stormshield of Renewal
