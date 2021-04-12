@@ -2031,6 +2031,7 @@ end
 -- These are the fields we store.
 fieldCache["creatureID"] = {};
 fieldCache["currencyID"] = {};
+fieldCache["factionID"] = {};
 fieldCache["flightPathID"] = {};
 fieldCache["headerID"] = {};
 fieldCache["itemID"] = {};
@@ -2051,6 +2052,9 @@ fieldConverters = {
 	end,
 	["currencyID"] = function(group, value)
 		CacheField(group, "currencyID", value);
+	end,
+	["factionID"] = function(group, value)
+		CacheField(group, "factionID", value);
 	end,
 	["flightPathID"] = function(group, value)
 		CacheField(group, "flightPathID", value);
