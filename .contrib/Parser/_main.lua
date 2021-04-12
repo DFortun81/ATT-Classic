@@ -691,6 +691,12 @@ end
 isarray = function(t)
 	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
+function unpack (t, i)
+  i = i or 1
+  if t[i] ~= nil then
+	return t[i], unpack(t, i + 1)
+  end
+end
 
 -- Asset Path Helper Functions
 asset = function(path)
@@ -710,6 +716,13 @@ ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 		return un(WRATH_PHASE_ONE, struct("achievementID", id, altID));
 	end
 end
+battlepet = function(id, t)								-- Create a BATTLE PET Object (Battle Pet == Species == Pet)
+	t = struct("speciesID", id, t);
+	t.u = WRATH_PHASE_ONE;
+	return t;
+end
+p = battlepet;											-- Create a BATTLE PET Object (alternative shortcut)
+pet = p;												-- Create a BATTLE PET Object (alternative shortcut)
 cat = function(id, t)									-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
@@ -755,6 +768,10 @@ map = function(id, t)									-- Create a MAP Object
 end
 m = map;												-- Create a MAP Object (alternative shortcut)
 npc = function(id, t)									-- Create an NPC Object (negative indicates that it is custom)
+	if not id then
+		--error("NPC ID Missing");
+		return unpack(t);
+	end
 	return struct("npcID", id, t);
 end
 n = npc;												-- Create an NPC Object (alternative shortcut)
