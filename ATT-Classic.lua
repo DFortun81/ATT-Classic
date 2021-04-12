@@ -4315,45 +4315,6 @@ local BestItemLinkPerItemID = setmetatable({}, { __index = function(t, id)
 		return link;
 	end
 end });
-local CollectedAsCostPerItemID = setmetatable({}, { __index = function(t, id)
-	local results = app.SearchForField("itemIDAsCost", id, true);
-	if results and #results > 0 then
-		local collected, count = true, 0;
-		for _,ref in pairs(results) do
-			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.collectible then
-					count = count + 1;
-					if not ref.collected then
-						collected = false;
-					end
-				end
-			end
-		end
-		if count > 0 then
-			return collected;
-		end
-		return false;
-	else
-		rawset(t, id, false);
-		return false;
-	end
-end });
-local CollectibleAsCostPerItemID = setmetatable({}, { __index = function(t, id)
-	local results = app.SearchForField("itemIDAsCost", id, true);
-	if results and #results > 0 then
-		for _,ref in pairs(results) do
-			if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-				if ref.collectible then
-					return true;
-				end
-			end
-		end
-		return false;
-	else
-		rawset(t, id, false);
-		return false;
-	end
-end });
 app.ParseItemID = function(itemName)
 	if type(itemName) == "number" then
 		return itemName;
@@ -4433,7 +4394,24 @@ local itemFields = {
 		return t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		return CollectibleAsCostPerItemID[t.itemID];
+		local id = t.itemID;
+		local results = app.SearchForField("itemIDAsCost", id, true);
+		if results and #results > 0 then
+			for _,ref in pairs(results) do
+				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+					if ref.collectible or (ref.total and ref.total > 0) then
+						return true;
+					end
+				end
+			end
+			return false;
+		elseif t.metaAfterFailure then
+			setmetatable(t, t.metaAfterFailure);
+			return false;
+		end
+	end,
+	["collectibleAsCostAfterFailure"] = function(t)
+		return false;
 	end,
 	["collectibleAsFaction"] = function(t)
 		return app.CollectibleReputations or t.collectibleAsCost;
@@ -4454,7 +4432,33 @@ local itemFields = {
 		return t.collectedAsCost;
 	end,
 	["collectedAsCost"] = function(t)
-		return CollectedAsCostPerItemID[t.itemID];
+		local id = t.itemID;
+		local results = app.SearchForField("itemIDAsCost", id, true);
+		if results and #results > 0 then
+			local collected, count = true, 0;
+			for _,ref in pairs(results) do
+				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
+					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
+						count = count + 1;
+						if ref.progress < ref.total then
+							collected = false;
+						end
+					elseif ref.collectible then
+						count = count + 1;
+						if not ref.collected then
+							collected = false;
+						end
+					end
+				end
+			end
+			if count > 0 then
+				return collected;
+			end
+			return false;
+		end
+	end,
+	["collectedAsCostAfterFailure"] = function(t)
+		
 	end,
 	["collectedAsFaction"] = function(t)
 		return t.collectedAsFactionOnly or t.collectedAsCost;
@@ -4482,11 +4486,25 @@ local itemFields = {
 	end,
 };
 app.BaseItem = app.BaseObjectFields(itemFields);
+(function()
+local fieldsAfterFailure = RawCloneData(itemFields);
+fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+itemFields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFaction;
 fields.collected = itemFields.collectedAsFaction;
 app.BaseItemWithFactionID = app.BaseObjectFields(fields);
+(function()
+local fieldsAfterFailure = RawCloneData(fields);
+fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+fields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsQuest;
@@ -4494,6 +4512,13 @@ fields.collected = itemFields.collectedAsQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestID = app.BaseObjectFields(fields);
+(function()
+local fieldsAfterFailure = RawCloneData(fields);
+fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+fields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 
 local fields = RawCloneData(itemFields);
 fields.collectible = itemFields.collectibleAsFactionOrQuest;
@@ -4501,6 +4526,13 @@ fields.collected = itemFields.collectedAsFactionOrQuest;
 fields.trackable = itemFields.trackableAsQuest;
 fields.saved = itemFields.savedAsQuest;
 app.BaseItemWithQuestIDAndFactionID = app.BaseObjectFields(fields);
+(function()
+local fieldsAfterFailure = RawCloneData(fields);
+fieldsAfterFailure.collectibleAsCost = itemFields.collectibleAsCostAfterFailure;
+fieldsAfterFailure.collectedAsCost = itemFields.collectedAsCostAfterFailure;
+local newMeta = app.BaseObjectFields(fieldsAfterFailure);
+fields.metaAfterFailure = function(t) return newMeta; end;
+end)();
 app.CreateItem = function(id, t)
 	if t then
 		if rawget(t, "factionID") then
