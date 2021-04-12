@@ -6569,22 +6569,29 @@ local spellFields = {
 	end,
 };
 spellFields.baseIcon = spellFields.baseIconAsSpell;
+spellFields.link = spellFields.linkAsSpell;
 spellFields.name = spellFields.nameAsSpell;
 app.BaseSpell = app.BaseObjectFields(spellFields);
 app.CreateSpell = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
+	if t and rawget(t, "itemID") then
+		return setmetatable(constructor(id, t, "spellID"), app.BaseRecipeWithItem);
+	else
+		return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
+	end
 end
 
 local recipeFields = RawCloneData(spellFields);
 recipeFields.baseIcon = recipeFields.baseIconAsSpell;
 recipeFields.collectible = recipeFields.collectibleAsSpell;
 recipeFields.collected = recipeFields.collectedAsSpell;
+recipeFields.link = recipeFields.linkAsSpell;
 recipeFields.name = recipeFields.nameAsSpell;
 recipeFields.f = recipeFields.fAsSpell;
 app.BaseRecipe = app.BaseObjectFields(recipeFields);
 
 local fields = RawCloneData(recipeFields);
 fields.baseIcon = recipeFields.baseIconAsItem;
+fields.link = recipeFields.linkAsItem;
 fields.name = recipeFields.nameAsItem;
 fields.tsm = recipeFields.tsmAsItem;
 fields.b = recipeFields.bAsItem;
