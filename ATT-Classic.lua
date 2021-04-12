@@ -6410,6 +6410,10 @@ app.BaseRecipe = {
 				SetDataSubMember("CollectedSpells", t.spellID, 1);
 				return 1;
 			end
+		elseif key == "trackable" then
+			return true;
+		elseif key == "saved" then
+			return GetSpellCooldown(t.spellID) > 0 and 1;
 		elseif key == "craftTypeID" then
 			return GetTempDataSubMember("SpellRanks", t.spellID);
 		elseif key == "tsm" then
@@ -6599,6 +6603,10 @@ app.BaseSpell = {
 			end
 		elseif key == "craftTypeID" then
 			return GetTempDataSubMember("SpellRanks", t.spellID);
+		elseif key == "trackable" then
+			return true;
+		elseif key == "saved" then
+			return GetSpellCooldown(t.spellID) > 0 and 1;
 		elseif key == "tsm" then
 			if t.itemID then
 				return string.format("i:%d", t.itemID);
