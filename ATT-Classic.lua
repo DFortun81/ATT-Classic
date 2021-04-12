@@ -80,7 +80,7 @@ local function StartCoroutine(name, method)
 				if ok then return true;	-- This means more work is required.
 				else
 					-- Show the error. Returning nothing is the same as canceling the work.
-					print(err);
+					error(err,2);
 				end
 			end
 			app.refreshing[name] = nil;
