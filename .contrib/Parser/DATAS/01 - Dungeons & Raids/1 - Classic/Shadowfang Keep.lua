@@ -111,7 +111,7 @@ _.Instances = { tier(1, {	-- Classic
 					["classes"] = { PALADIN },
 					["lvl"] = 20,
 					["g"] = {
-						spell(5502),	-- Sense Undead
+						recipe(5502),	-- Sense Undead
 						i(9607),	-- Bastion of Stormwind
 					},
 				}),

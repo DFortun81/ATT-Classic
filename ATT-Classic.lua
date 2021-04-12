@@ -917,7 +917,6 @@ local keysByPriority = {	-- Sorted by frequency of use.
 	"objectID",
 	"mapID",
 	"currencyID",
-	"recipeID",
 	"spellID",
 	"classID",
 	"professionID",
@@ -985,7 +984,11 @@ CreateObject = function(t)
 			elseif t.recipeID then
 				t = app.CreateRecipe(t.recipeID, t);
 			elseif t.spellID then
-				t = app.CreateRecipe(t.spellID, t);
+				if t.f == 200 then
+					t = app.CreateRecipe(t.spellID, t);
+				else
+					t = app.CreateSpell(t.spellID, t);
+				end
 			elseif t.itemID then
 				t = app.CreateItem(t.itemID, t);
 			elseif t.classID then
@@ -6402,78 +6405,17 @@ app.CreateQuestObjective = function(id, t)
 end
 end)();
 
--- Recipe Lib
-app.BaseRecipe = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "filterID" then
-			return 200;
-		elseif key == "name" then
-			return select(1, GetSpellLink(t.spellID));
-		elseif key == "text" then
-			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
-			if t.craftTypeID then return Colorize(t.name, app.CraftTypeIDToColor(t.craftTypeID)); end
-			return t.name;
-		elseif key == "icon" then
-			local icon = t.baseicon;
-			if icon and icon ~= 136235 and icon ~= 136192 then
-				return icon;
-			end
-			return "Interface\\ICONS\\INV_Scroll_04";
-		elseif key == "baseicon" then
-			if t.itemID then return select(5, GetItemInfoInstant(t.itemID)); end
-			return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
-		elseif key == "link" then
-			if t.itemID then return select(2, GetItemInfo(t.itemID)); end
-			if GetRelativeValue(t, "requireSkill") == 333 then
-				return "|cffffffff|Henchant:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
-			else
-				return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
-			end
-		elseif key == "collectible" then
-			return app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if app.IsSpellKnown(t.spellID, t.rank) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			return GetSpellCooldown(t.spellID) > 0 and 1;
-		elseif key == "craftTypeID" then
-			return GetTempDataSubMember("SpellRanks", t.spellID);
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		elseif key == "b" then
-			return t.itemID and app.AccountWideRecipes and 2;
-		elseif key == "f" then
-			return t.itemID and 200;
-		else
-			-- Something that isn't dynamic.
-			return table[key];
-		end
-	end
-};
-app.CreateRecipe = function(id, t)
-	return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
-end
-
--- Spell Lib
+-- Recipe & Spell Lib
 (function()
-local colors = {
-	optimal=RGBToHex(255,128,64),
-	medium=RGBToHex(255,255,0),
-	easy=RGBToHex(64,192,64),
-	trivial=RGBToHex(128, 128, 128),
+local craftColors = {
+	RGBToHex(64,192,64),
+	RGBToHex(255,255,0),
+	RGBToHex(255,128,64),
+	[0]=RGBToHex(128, 128, 128),
 };
+local CraftTypeIDToColor = function(craftTypeID)
+	return craftColors[craftTypeID];
+end
 app.CraftTypeToCraftTypeID = function(craftType)
 	if craftType then
 		if craftType == "optimal" then
@@ -6488,29 +6430,10 @@ app.CraftTypeToCraftTypeID = function(craftType)
 	end
 	return nil;
 end
-app.CraftTypeIDToCraftType = function(craftTypeID)
-	if craftTypeID then
-		if craftTypeID == 3 then
-			return "optimal";
-		elseif craftTypeID == 2 then
-			return "medium";
-		elseif craftTypeID == 1 then
-			return "easy";
-		elseif craftTypeID == 0 then
-			return "trivial";
-		end
-	end
-	return nil;
-end
-app.CraftTypeIDToColor = function(craftTypeID)
-	local craftType = app.CraftTypeIDToCraftType(craftTypeID);
-	if craftType then return colors[craftType]; end
-	return nil;
-end
-app.MaxSpellRankPerSpellName = {};
-app.SpellIDToSpellName = {};
+local MaxSpellRankPerSpellName = {};
+local SpellIDToSpellName = {};
 app.GetSpellName = function(spellID, rank)
-	local spellName = rawget(app.SpellIDToSpellName, spellID);
+	local spellName = rawget(SpellIDToSpellName, spellID);
 	if spellName then return spellName; end
 	if rank then
 		spellName = GetSpellInfo(spellID, rank);
@@ -6519,12 +6442,12 @@ app.GetSpellName = function(spellID, rank)
 	end
 	if spellName and spellName ~= "" then
 		if rank then
-			if (rawget(app.MaxSpellRankPerSpellName, spellName) or 0) < rank then
-				rawset(app.MaxSpellRankPerSpellName, spellName, rank);
+			if (rawget(MaxSpellRankPerSpellName, spellName) or 0) < rank then
+				rawset(MaxSpellRankPerSpellName, spellName, rank);
 			end
 			spellName = spellName .. " (" .. RANK .. " " .. rank .. ")";
 		end
-		rawset(app.SpellIDToSpellName, spellID, spellName);
+		rawset(SpellIDToSpellName, spellID, spellName);
 		rawset(app.SpellNameToSpellID, spellName, spellID);
 		return spellName;
 	end
@@ -6537,7 +6460,7 @@ app.IsSpellKnown = function(spellID, rank, ignoreHigherRanks)
 	if rank then
 		local spellName = GetSpellInfo(spellID);
 		if spellName then
-			local maxRank = ignoreHigherRanks and rank or  rawget(app.MaxSpellRankPerSpellName, spellName);
+			local maxRank = ignoreHigherRanks and rank or  rawget(MaxSpellRankPerSpellName, spellName);
 			if maxRank then
 				spellName = spellName .. " (" .. RANK .. " ";
 				for i=maxRank,rank,-1 do
@@ -6589,68 +6512,104 @@ app.SpellNameToSpellID = setmetatable(L.ALT_PROFESSION_TEXT_TO_ID, {
 		return rawget(t, key);
 	end
 });
-app.BaseSpell = {
-	__index = function(t, key)
-		if key == "key" then
-			return "spellID";
-		elseif key == "name" then
-			return select(1, GetSpellLink(t.spellID)) or RETRIEVING_DATA;
-		elseif key == "text" then
-			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			if t.craftTypeID then return Colorize(t.name, app.CraftTypeIDToColor(t.craftTypeID)); end
-			return t.name;
-		elseif key == "icon" then
-			return select(3, GetSpellInfo(t.spellID));
-		elseif key == "link" then
-			if t.itemID and t.filterID ~= 200 and t.f ~= 200 then
-				local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(t.itemID);
-				if link then
-					t.link = link;
-					t.icon = icon;
-					return link;
-				end
-			end
-			if GetRelativeValue(t, "requireSkill") == 333 then
-				return "|cffffffff|Henchant:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
-			else
-				return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
-			end
-		elseif key == "collectible" then
-			return app.CollectibleRecipes;
-		elseif key == "collected" then
-			if app.RecipeChecker("CollectedSpells", t.spellID) then
-				return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
-			end
-			if app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261) then
-				SetTempDataSubMember("CollectedSpells", t.spellID, 1);
-				SetDataSubMember("CollectedSpells", t.spellID, 1);
-				return 1;
-			end
-		elseif key == "craftTypeID" then
-			return GetTempDataSubMember("SpellRanks", t.spellID);
-		elseif key == "trackable" then
-			return true;
-		elseif key == "saved" then
-			return GetSpellCooldown(t.spellID) > 0 and 1;
-		elseif key == "tsm" then
-			if t.itemID then
-				return string.format("i:%d", t.itemID);
-			end
-		else
-			-- Something that isn't dynamic.
-			return table[key];
+
+-- The difference between a recipe and a spell is that a spell is not collectible.
+local spellFields = {
+	["key"] = function(t)
+		return "spellID";
+	end,
+	["text"] = function(t)
+		return t.craftTypeID and Colorize(t.name, CraftTypeIDToColor(t.craftTypeID)) or t.name;
+	end,
+	["icon"] = function(t)
+		local icon = t.baseIcon;
+		if icon and icon ~= 136235 and icon ~= 136192 then
+			return icon;
 		end
-	end
+		return "Interface\\ICONS\\INV_Scroll_04";
+	end,
+	["craftTypeID"] = function(t)
+		return GetTempDataSubMember("SpellRanks", t.spellID);
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["saved"] = function(t)
+		return GetSpellCooldown(t.spellID) > 0 and 1;
+	end,
+	
+	["bAsItem"] = function(t)
+		return app.AccountWideRecipes and 2;
+	end,
+	["fAsSpell"] = function(t)
+		return 200;
+	end,
+	["collectibleAsSpell"] = function(t)
+		return app.CollectibleRecipes;
+	end,
+	["collectedAsSpell"] = function(t)
+		if app.RecipeChecker("CollectedSpells", t.spellID) then
+			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+		end
+		if app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261) then
+			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			return 1;
+		end
+	end,
+	["baseIconAsItem"] = function(t)
+		return select(5, GetItemInfoInstant(t.itemID)) or t.baseIconAsSpell;
+	end,
+	["baseIconAsSpell"] = function(t)
+		return select(3, GetSpellInfo(t.spellID)) or (t.requireSkill and select(3, GetSpellInfo(t.requireSkill)));
+	end,
+	["linkAsItem"] = function(t)
+		return select(2, GetItemInfo(t.itemID)) or t.linkAsSpell;
+	end,
+	["linkAsSpell"] = function(t)
+		if GetRelativeValue(t, "requireSkill") == 333 then
+			return "|cffffffff|Henchant:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
+		else
+			return "|cffffffff|Hspell:" .. t.spellID .. "|h[" .. t.name .. "]|h|r";
+		end
+	end,
+	["nameAsItem"] = function(t)
+		return select(2, GetItemInfo(t.itemID)) or t.nameAsSpell;
+	end,
+	["nameAsSpell"] = function(t)
+		return select(1, GetSpellLink(t.spellID)) or RETRIEVING_DATA;
+	end,
+	["tsmAsItem"] = function(t)
+		return string.format("i:%d", t.itemID);
+	end,
 };
+spellFields.baseIcon = spellFields.baseIconAsSpell;
+spellFields.name = spellFields.nameAsSpell;
+app.BaseSpell = app.BaseObjectFields(spellFields);
 app.CreateSpell = function(id, t)
 	return setmetatable(constructor(id, t, "spellID"), app.BaseSpell);
+end
+
+local recipeFields = RawCloneData(spellFields);
+recipeFields.baseIcon = recipeFields.baseIconAsSpell;
+recipeFields.collectible = recipeFields.collectibleAsSpell;
+recipeFields.collected = recipeFields.collectedAsSpell;
+recipeFields.name = recipeFields.nameAsSpell;
+recipeFields.f = recipeFields.fAsSpell;
+app.BaseRecipe = app.BaseObjectFields(recipeFields);
+
+local fields = RawCloneData(recipeFields);
+fields.baseIcon = recipeFields.baseIconAsItem;
+fields.name = recipeFields.nameAsItem;
+fields.tsm = recipeFields.tsmAsItem;
+fields.b = recipeFields.bAsItem;
+app.BaseRecipeWithItem = app.BaseObjectFields(fields);
+app.CreateRecipe = function(id, t)
+	if t and rawget(t, "itemID") then
+		return setmetatable(constructor(id, t, "spellID"), app.BaseRecipeWithItem);
+	else
+		return setmetatable(constructor(id, t, "spellID"), app.BaseRecipe);
+	end
 end
 end)();
 
@@ -10084,18 +10043,18 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 					['OnClick'] = function(row, button)
 						app:ShowPopupDialogWithEditBox("Which Item Filter would you like to search for?", "", function(text)
 							text = string.lower(text);
-							local filterID = tonumber(text);
-							if tostring(filterID) ~= text then
+							local f = tonumber(text);
+							if tostring(f) ~= text then
 								-- The string form did not match, the filter must have been by name.
 								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
 									if string.find(string.lower(filter), text) then
-										filterID = tonumber(id);
+										filter = tonumber(id);
 										break;
 									end
 								end
 							end
-							if filterID then
-								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", filterID);
+							if f then
+								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
 								self.dirty = true;
 							end
 							wipe(searchCache);

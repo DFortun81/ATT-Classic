@@ -21,7 +21,7 @@ _.Zones =
 					},
 				}),
 				i(4213, {	-- Grimoire of Doom
-					["spellID"] = 18540,	-- Ritual of Doom
+					["recipeID"] = 18540,	-- Ritual of Doom
 					["classes"] = { WARLOCK },
 					["crs"] = {
 						12396,	-- Doomguard Commander

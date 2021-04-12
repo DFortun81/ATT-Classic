@@ -164,7 +164,7 @@ _.Zones =
 					["lvl"] = 60,
 					["groups"] = {
 						{
-							["spellID"] = 18540,	-- Ritual of Doom
+							["recipeID"] = 18540,	-- Ritual of Doom
 							["classes"] = { WARLOCK },
 						},
 						i(18602),	-- Tome of Sacrifice

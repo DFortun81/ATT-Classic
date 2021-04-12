@@ -1276,7 +1276,6 @@ _.Craftables = { tier(1, {	-- Classic
 		["groups"] = {
 			spell(2656, {	-- Smelting
 				["description"] = "The following items can be smelted by Miners in a city at the Black Forge in BRD.",
-				["collectible"] = false,
 				["groups"] = {
 					i(2841),	-- Bronze Bar
 					i(2840),	-- Copper Bar

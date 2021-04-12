@@ -133,7 +133,7 @@ _.Zones =
 					["lvl"] = 20,
 					["groups"] = {
 						{
-							["spellID"] = 13896,	-- Feedback (Rank 1)
+							["recipeID"] = 13896,	-- Feedback (Rank 1)
 							["rank"] = 1,
 						},
 					},
@@ -262,7 +262,7 @@ _.Zones =
 					["lvl"] = 10,
 					["groups"] = {
 						{
-							["spellID"] = 13908,	-- Desperate Prayer (Rank 1)
+							["recipeID"] = 13908,	-- Desperate Prayer (Rank 1)
 							["rank"] = 1,
 						},
 					},

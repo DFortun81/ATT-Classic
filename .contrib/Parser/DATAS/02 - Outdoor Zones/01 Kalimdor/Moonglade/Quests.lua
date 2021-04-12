@@ -102,7 +102,7 @@ _.Zones =
 						recipe(5487),	-- Bear Form
 						recipe(6795),	-- Growl
 						{
-							["spellID"] = 6807,	-- Maul (Rank 1)
+							["recipeID"] = 6807,	-- Maul (Rank 1)
 							["rank"] = 1,
 						},
 					},
@@ -124,7 +124,7 @@ _.Zones =
 						recipe(5487),	-- Bear Form
 						recipe(6795),	-- Growl
 						{
-							["spellID"] = 6807,	-- Maul (Rank 1)
+							["recipeID"] = 6807,	-- Maul (Rank 1)
 							["rank"] = 1,
 						},
 					},

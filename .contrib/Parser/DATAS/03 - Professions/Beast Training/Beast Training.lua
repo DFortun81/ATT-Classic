@@ -3,28 +3,28 @@ profession(261, {	-- Beast Training
 	["lvl"] = 10,
 	["groups"] = {
 		{
-			["spellID"] = 24493,	-- Arcane Resistance [Rank 1]
+			["recipeID"] = 24493,	-- Arcane Resistance [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 24497,	-- Arcane Resistance [Rank 2]
+			["recipeID"] = 24497,	-- Arcane Resistance [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24500,	-- Arcane Resistance [Rank 3]
+			["recipeID"] = 24500,	-- Arcane Resistance [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 24501,	-- Arcane Resistance [Rank 4]
+			["recipeID"] = 24501,	-- Arcane Resistance [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 50,
 		},
 
 		{
-			["spellID"] = 17253,	-- Bite [Rank 1]
+			["recipeID"] = 17253,	-- Bite [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -43,7 +43,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17255,	-- Bite [Rank 2]
+			["recipeID"] = 17255,	-- Bite [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 10,
 			["crs"] = {
@@ -65,7 +65,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17256,	-- Bite [Rank 3]
+			["recipeID"] = 17256,	-- Bite [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 16,
 			["crs"] = {
@@ -89,7 +89,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17257,	-- Bite [Rank 4]
+			["recipeID"] = 17257,	-- Bite [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 24,
 			["crs"] = {
@@ -108,7 +108,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17258,	-- Bite [Rank 5]
+			["recipeID"] = 17258,	-- Bite [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 32,
 			["crs"] = {
@@ -125,7 +125,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17259,	-- Bite [Rank 6]
+			["recipeID"] = 17259,	-- Bite [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 38,
 			["crs"] = {
@@ -145,7 +145,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17260,	-- Bite [Rank 7]
+			["recipeID"] = 17260,	-- Bite [Rank 7]
 			["rank"] = 7,
 			["lvl"] = 48,
 			["crs"] = {
@@ -160,7 +160,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 17261,	-- Bite [Rank 8]
+			["recipeID"] = 17261,	-- Bite [Rank 8]
 			["rank"] = 8,
 			["lvl"] = 56,
 			["crs"] = {
@@ -169,7 +169,7 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 7371,	-- Charge [Rank 1]
+			["recipeID"] = 7371,	-- Charge [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -195,7 +195,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 26177,	-- Charge [Rank 2]
+			["recipeID"] = 26177,	-- Charge [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 12,
 			["crs"] = {
@@ -207,7 +207,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 26178,	-- Charge [Rank 3]
+			["recipeID"] = 26178,	-- Charge [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 24,
 			["crs"] = {
@@ -218,12 +218,12 @@ profession(261, {	-- Beast Training
 			},
 		},
 		un(NEVER_IMPLEMENTED, {
-			["spellID"] = 26179,	-- Charge [Rank 4]
+			["recipeID"] = 26179,	-- Charge [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 36,
 		}),
 		{
-			["spellID"] = 26201,	-- Charge [Rank 5]
+			["recipeID"] = 26201,	-- Charge [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 48,
 			["crs"] = {
@@ -232,7 +232,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 27685,	-- Charge [Rank 6]
+			["recipeID"] = 27685,	-- Charge [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 60,
 			["crs"] = {
@@ -241,7 +241,7 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 16827,	-- Claw [Rank 1]
+			["recipeID"] = 16827,	-- Claw [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -253,7 +253,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16828,	-- Claw [Rank 2]
+			["recipeID"] = 16828,	-- Claw [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 10,
 			["crs"] = {
@@ -270,7 +270,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16829,	-- Claw [Rank 3]
+			["recipeID"] = 16829,	-- Claw [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 16,
 			["crs"] = {
@@ -287,7 +287,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16830,	-- Claw [Rank 4]
+			["recipeID"] = 16830,	-- Claw [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 25,
 			["crs"] = {
@@ -298,7 +298,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16831,	-- Claw [Rank 5]
+			["recipeID"] = 16831,	-- Claw [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 34,
 			["crs"] = {
@@ -309,7 +309,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16832,	-- Claw [Rank 6]
+			["recipeID"] = 16832,	-- Claw [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 40,
 			["crs"] = {
@@ -322,7 +322,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 3010,	-- Claw [Rank 7]
+			["recipeID"] = 3010,	-- Claw [Rank 7]
 			["rank"] = 7,
 			["lvl"] = 48,
 			["crs"] = {
@@ -339,7 +339,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 3009,	-- Claw [Rank 8]
+			["recipeID"] = 3009,	-- Claw [Rank 8]
 			["rank"] = 8,
 			["lvl"] = 57,
 			["crs"] = {
@@ -349,7 +349,7 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 1742,	-- Cower [Rank 1]
+			["recipeID"] = 1742,	-- Cower [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -366,7 +366,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 1753,	-- Cower [Rank 2]
+			["recipeID"] = 1753,	-- Cower [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 15,
 			["crs"] = {
@@ -379,7 +379,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 1754,	-- Cower [Rank 3]
+			["recipeID"] = 1754,	-- Cower [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 25,
 			["crs"] = {
@@ -393,7 +393,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 1755,	-- Cower [Rank 4]
+			["recipeID"] = 1755,	-- Cower [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 36,
 			["crs"] = {
@@ -403,7 +403,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 1756,	-- Cower [Rank 5]
+			["recipeID"] = 1756,	-- Cower [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 50,
 			["crs"] = {
@@ -413,7 +413,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 16697,	-- Cower [Rank 6]
+			["recipeID"] = 16697,	-- Cower [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 55,
 			["crs"] = {
@@ -423,7 +423,7 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 23099,	-- Dash [Rank 1]
+			["recipeID"] = 23099,	-- Dash [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
@@ -442,7 +442,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 23109,	-- Dash [Rank 2]
+			["recipeID"] = 23109,	-- Dash [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
@@ -460,7 +460,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 23110,	-- Dash [Rank 3]
+			["recipeID"] = 23110,	-- Dash [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
@@ -478,7 +478,7 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 23145,	-- Dive [Rank 1]
+			["recipeID"] = 23145,	-- Dive [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 30,
 			["crs"] = {
@@ -492,7 +492,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 23147,	-- Dive [Rank 2]
+			["recipeID"] = 23147,	-- Dive [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 41,
 			["crs"] = {
@@ -507,7 +507,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 23148,	-- Dive [Rank 3]
+			["recipeID"] = 23148,	-- Dive [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
@@ -526,49 +526,49 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 23992,	-- Fire Resistance [Rank 1]
+			["recipeID"] = 23992,	-- Fire Resistance [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 24439,	-- Fire Resistance [Rank 2]
+			["recipeID"] = 24439,	-- Fire Resistance [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24444,	-- Fire Resistance [Rank 3]
+			["recipeID"] = 24444,	-- Fire Resistance [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 24445,	-- Fire Resistance [Rank 4]
+			["recipeID"] = 24445,	-- Fire Resistance [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["spellID"] = 24446,	-- Frost Resistance [Rank 1]
+			["recipeID"] = 24446,	-- Frost Resistance [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 24447,	-- Frost Resistance [Rank 2]
+			["recipeID"] = 24447,	-- Frost Resistance [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24448,	-- Frost Resistance [Rank 3]
+			["recipeID"] = 24448,	-- Frost Resistance [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 24449,	-- Frost Resistance [Rank 4]
+			["recipeID"] = 24449,	-- Frost Resistance [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 50,
 		},
 
 		{
-			["spellID"] = 24604,	-- Furious Howl [Rank 1]
+			["recipeID"] = 24604,	-- Furious Howl [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -579,7 +579,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24605,	-- Furious Howl [Rank 2]
+			["recipeID"] = 24605,	-- Furious Howl [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 25,
 			["crs"] = {
@@ -591,7 +591,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24603,	-- Furious Howl [Rank 3]
+			["recipeID"] = 24603,	-- Furious Howl [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 			["crs"] = {
@@ -603,7 +603,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24597,	-- Furious Howl [Rank 4]
+			["recipeID"] = 24597,	-- Furious Howl [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
@@ -612,98 +612,98 @@ profession(261, {	-- Beast Training
 		},
 
 		{
-			["spellID"] = 4187,	-- Great Stamina [Rank 1]
+			["recipeID"] = 4187,	-- Great Stamina [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["spellID"] = 4188,	-- Great Stamina [Rank 2]
+			["recipeID"] = 4188,	-- Great Stamina [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 12,
 		},
 		{
-			["spellID"] = 4189,	-- Great Stamina [Rank 3]
+			["recipeID"] = 4189,	-- Great Stamina [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 18,
 		},
 		{
-			["spellID"] = 4190,	-- Great Stamina [Rank 4]
+			["recipeID"] = 4190,	-- Great Stamina [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 24,
 		},
 		{
-			["spellID"] = 4191,	-- Great Stamina [Rank 5]
+			["recipeID"] = 4191,	-- Great Stamina [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 4192,	-- Great Stamina [Rank 6]
+			["recipeID"] = 4192,	-- Great Stamina [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 36,
 		},
 		{
-			["spellID"] = 4193,	-- Great Stamina [Rank 7]
+			["recipeID"] = 4193,	-- Great Stamina [Rank 7]
 			["rank"] = 7,
 			["lvl"] = 42,
 		},
 		{
-			["spellID"] = 4194,	-- Great Stamina [Rank 8]
+			["recipeID"] = 4194,	-- Great Stamina [Rank 8]
 			["rank"] = 8,
 			["lvl"] = 48,
 		},
 		{
-			["spellID"] = 5041,	-- Great Stamina [Rank 9]
+			["recipeID"] = 5041,	-- Great Stamina [Rank 9]
 			["rank"] = 9,
 			["lvl"] = 54,
 		},
 		{
-			["spellID"] = 5042,	-- Great Stamina [Rank 10]
+			["recipeID"] = 5042,	-- Great Stamina [Rank 10]
 			["rank"] = 10,
 			["lvl"] = 60,
 		},
 		
 		{
-			["spellID"] = 2649,	-- Growl [Rank 1]
+			["recipeID"] = 2649,	-- Growl [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["spellID"] = 14916,	-- Growl [Rank 2]
+			["recipeID"] = 14916,	-- Growl [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 10,
 		},
 		{
-			["spellID"] = 14917,	-- Growl [Rank 3]
+			["recipeID"] = 14917,	-- Growl [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 14918,	-- Growl [Rank 4]
+			["recipeID"] = 14918,	-- Growl [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 14919,	-- Growl [Rank 5]
+			["recipeID"] = 14919,	-- Growl [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 14920,	-- Growl [Rank 6]
+			["recipeID"] = 14920,	-- Growl [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 50,
 		},
 		{
-			["spellID"] = 14921,	-- Growl [Rank 7]
+			["recipeID"] = 14921,	-- Growl [Rank 7]
 			["rank"] = 7,
 			["lvl"] = 60,
 		},
 		un(NEVER_IMPLEMENTED, {
-			["spellID"] = 24844,	-- Lightning Breath [Rank 1]
+			["recipeID"] = 24844,	-- Lightning Breath [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 		}),
 		{
-			["spellID"] = 25008,	-- Lightning Breath [Rank 2]
+			["recipeID"] = 25008,	-- Lightning Breath [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 15,
 			["crs"] = {
@@ -717,7 +717,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 25009,	-- Lightning Breath [Rank 3]
+			["recipeID"] = 25009,	-- Lightning Breath [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 25,
 			["crs"] = {
@@ -728,7 +728,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 25010,	-- Lightning Breath [Rank 4]
+			["recipeID"] = 25010,	-- Lightning Breath [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 41,
 			["crs"] = {
@@ -737,7 +737,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 25011,	-- Lightning Breath [Rank 5]
+			["recipeID"] = 25011,	-- Lightning Breath [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 49,
 			["crs"] = {
@@ -748,7 +748,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		un(PHASE_FOUR, {
-			["spellID"] = 25012,	-- Lightning Breath [Rank 6]
+			["recipeID"] = 25012,	-- Lightning Breath [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 60,
 			["crs"] = {
@@ -757,79 +757,79 @@ profession(261, {	-- Beast Training
 		}),	
 
 		{
-			["spellID"] = 24545,	-- Natural Armor [Rank 1]
+			["recipeID"] = 24545,	-- Natural Armor [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 		},
 		{
-			["spellID"] = 24549,	-- Natural Armor [Rank 2]
+			["recipeID"] = 24549,	-- Natural Armor [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 12,
 		},
 		{
-			["spellID"] = 24550,	-- Natural Armor [Rank 3]
+			["recipeID"] = 24550,	-- Natural Armor [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 18,
 		},
 		{
-			["spellID"] = 24551,	-- Natural Armor [Rank 4]
+			["recipeID"] = 24551,	-- Natural Armor [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 24,
 		},
 		{
-			["spellID"] = 24552,	-- Natural Armor [Rank 5]
+			["recipeID"] = 24552,	-- Natural Armor [Rank 5]
 			["rank"] = 5,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24553,	-- Natural Armor [Rank 6]
+			["recipeID"] = 24553,	-- Natural Armor [Rank 6]
 			["rank"] = 6,
 			["lvl"] = 36,
 		},
 		{
-			["spellID"] = 24554,	-- Natural Armor [Rank 7]
+			["recipeID"] = 24554,	-- Natural Armor [Rank 7]
 			["rank"] = 7,
 			["lvl"] = 42,
 		},
 		{
-			["spellID"] = 24555,	-- Natural Armor [Rank 8]
+			["recipeID"] = 24555,	-- Natural Armor [Rank 8]
 			["rank"] = 8,
 			["lvl"] = 48,
 		},
 		{
-			["spellID"] = 24629,	-- Natural Armor [Rank 9]
+			["recipeID"] = 24629,	-- Natural Armor [Rank 9]
 			["rank"] = 9,
 			["lvl"] = 54,
 		},
 		{
-			["spellID"] = 24630,	-- Natural Armor [Rank 10]
+			["recipeID"] = 24630,	-- Natural Armor [Rank 10]
 			["rank"] = 10,
 			["lvl"] = 60,
 		},
 		
 		{
-			["spellID"] = 24492,	-- Nature Resistance [Rank 1]
+			["recipeID"] = 24492,	-- Nature Resistance [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 24502,	-- Nature Resistance [Rank 2]
+			["recipeID"] = 24502,	-- Nature Resistance [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24503,	-- Nature Resistance [Rank 3]
+			["recipeID"] = 24503,	-- Nature Resistance [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 24504,	-- Nature Resistance [Rank 4]
+			["recipeID"] = 24504,	-- Nature Resistance [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["spellID"] = 24450,	-- Prowl [Rank 1]
+			["recipeID"] = 24450,	-- Prowl [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
@@ -840,7 +840,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24452,	-- Prowl [Rank 2]
+			["recipeID"] = 24452,	-- Prowl [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
@@ -849,7 +849,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24453,	-- Prowl [Rank 3]
+			["recipeID"] = 24453,	-- Prowl [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 50,
 			["crs"] = {
@@ -859,7 +859,7 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["spellID"] = 24640,	-- Scorpid Poison [Rank 1]
+			["recipeID"] = 24640,	-- Scorpid Poison [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 10,
 			["crs"] = {
@@ -871,7 +871,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24583,	-- Scorpid Poison [Rank 2]
+			["recipeID"] = 24583,	-- Scorpid Poison [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 			["crs"] = {
@@ -884,7 +884,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24586,	-- Scorpid Poison [Rank 3]
+			["recipeID"] = 24586,	-- Scorpid Poison [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 			["crs"] = {
@@ -900,7 +900,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24587,	-- Scorpid Poison [Rank 4]
+			["recipeID"] = 24587,	-- Scorpid Poison [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
@@ -912,7 +912,7 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["spellID"] = 24423,	-- Screech [Rank 1]
+			["recipeID"] = 24423,	-- Screech [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 16,
 			["crs"] = {
@@ -920,7 +920,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24577,	-- Screech [Rank 2]
+			["recipeID"] = 24577,	-- Screech [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 32,
 			["crs"] = {
@@ -930,7 +930,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24578,	-- Screech [Rank 3]
+			["recipeID"] = 24578,	-- Screech [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 48,
 			["crs"] = {
@@ -940,7 +940,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 24579,	-- Screech [Rank 4]
+			["recipeID"] = 24579,	-- Screech [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 56,
 			["crs"] = {
@@ -950,28 +950,28 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["spellID"] = 24488,	-- Shadow Resistance [Rank 1]
+			["recipeID"] = 24488,	-- Shadow Resistance [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 		},
 		{
-			["spellID"] = 24505,	-- Shadow Resistance [Rank 2]
+			["recipeID"] = 24505,	-- Shadow Resistance [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 30,
 		},
 		{
-			["spellID"] = 24506,	-- Shadow Resistance [Rank 3]
+			["recipeID"] = 24506,	-- Shadow Resistance [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 40,
 		},
 		{
-			["spellID"] = 24507,	-- Shadow Resistance [Rank 4]
+			["recipeID"] = 24507,	-- Shadow Resistance [Rank 4]
 			["rank"] = 4,
 			["lvl"] = 50,
 		},
 		
 		{
-			["spellID"] = 26064,	-- Shell Shield [Rank 1]
+			["recipeID"] = 26064,	-- Shell Shield [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 20,
 			["crs"] = {
@@ -984,7 +984,7 @@ profession(261, {	-- Beast Training
 		},
 		
 		{
-			["spellID"] = 26090,	-- Thunderstomp [Rank 1]
+			["recipeID"] = 26090,	-- Thunderstomp [Rank 1]
 			["rank"] = 1,
 			["lvl"] = 32,
 			["crs"] = {
@@ -993,7 +993,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 26187,	-- Thunderstomp [Rank 2]
+			["recipeID"] = 26187,	-- Thunderstomp [Rank 2]
 			["rank"] = 2,
 			["lvl"] = 40,
 			["crs"] = {
@@ -1002,7 +1002,7 @@ profession(261, {	-- Beast Training
 			},
 		},
 		{
-			["spellID"] = 26188,	-- Thunderstomp [Rank 3]
+			["recipeID"] = 26188,	-- Thunderstomp [Rank 3]
 			["rank"] = 3,
 			["lvl"] = 52,
 			["crs"] = {
