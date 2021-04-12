@@ -5999,12 +5999,26 @@ local headerFields = {
 	["description"] = function(t)
 		return L["HEADER_DESCRIPTIONS"][t.headerID];
 	end,
+	["savedAsQuest"] = function(t)
+		return IsQuestFlaggedCompletedForObject(t) == 1;
+	end,
+	["trackableAsQuest"] = function(t)
+		return true;
+	end,
 };
 app.BaseHeader = app.BaseObjectFields(headerFields);
+local fields = RawCloneData(headerFields);
+fields.saved = headerFields.savedAsQuest;
+fields.trackable = headerFields.trackableAsQuest;
+app.BaseHeaderWithQuest = app.BaseObjectFields(fields);
 app.CreateNPC = function(id, t)
 	if t then
 		if id < 1 then
-			return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+			if rawget(t, "questID") then
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeaderWithQuest);
+			else
+				return setmetatable(constructor(id, t, "headerID"), app.BaseHeader);
+			end
 		else
 			if rawget(t, "questID") then
 				return setmetatable(constructor(id, t, "npcID"), app.BaseNPCWithQuest);
