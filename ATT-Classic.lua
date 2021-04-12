@@ -5896,7 +5896,6 @@ app.CreateMap = function(id, t)
 end
 
 app.events.MAP_EXPLORATION_UPDATED = function(...)
-	print("MAP_EXPLORATION_UPDATED", ...);
 	wipe(ExploredMapDataByID);
 	app.CurrentMapID = app.GetCurrentMapID();
 end
