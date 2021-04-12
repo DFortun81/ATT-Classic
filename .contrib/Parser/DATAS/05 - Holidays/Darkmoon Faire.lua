@@ -14,6 +14,7 @@ local TIER_TWO_MAX_REPUTATION = { 909, NEUTRAL + 1100 };	-- Darkmoon Faire, must
 local TIER_THREE_MAX_REPUTATION = { 909, NEUTRAL + 1700 };	-- Darkmoon Faire, must be less than 1700 over Neutral
 local TIER_FOUR_MAX_REPUTATION = { 909, NEUTRAL + 2500 };	-- Darkmoon Faire, must be less than 2500 over Neutral
 local TIER_FIVE_MAX_REPUTATION = { 909, FRIENDLY + 2000 };	-- Darkmoon Faire, must be less than 3000 over Friendly
+local DECK_MAX_REPUTATION = { 909, EXALTED + 999 };	-- Darkmoon Faire, must be less than Exalted 999/1000.
 
 -- This is what every online guide ever says, but they're incorrect.
 -- The "More" quests appear to be infinitely repeatable, with 0 reputation gains.
@@ -265,6 +266,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7907,  {	-- Darkmoon Beast Deck
 					["provider"] = { "i", 19228 },  -- Beasts Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["g"] = {
 						i(19288),	-- Darkmoon Card: Blue Dragon
@@ -272,6 +274,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(10938,  {	-- Darkmoon Blessings Deck
 					["provider"] = { "i", 31890 },  -- Blessings Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["u"] = TBC_PHASE_ONE,
 					["g"] = {
@@ -280,6 +283,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7929,  {	-- Darkmoon Elementals Deck
 					["provider"] = { "i", 19267 },  -- Elementals Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["g"] = {
 						i(19289),	-- Darkmoon Card: Maelstrom
@@ -287,6 +291,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(10940,  {	-- Darkmoon Furies Deck
 					["provider"] = { "i", 31907 },  -- Furies Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["u"] = TBC_PHASE_ONE,
 					["g"] = {
@@ -295,6 +300,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(10941,  {	-- Darkmoon Lunacy Deck
 					["provider"] = { "i", 31914 },  -- Lunacy Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["u"] = TBC_PHASE_ONE,
 					["g"] = {
@@ -303,6 +309,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7927,  {	-- Darkmoon Portals Deck
 					["provider"] = { "i", 19277 },  -- Portals Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["g"] = {
 						i(19290),	-- Darkmoon Card: Twisting Nether
@@ -310,6 +317,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(10939,  {	-- Darkmoon Storms Deck
 					["provider"] = { "i", 31891 },  -- Storms Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["u"] = TBC_PHASE_ONE,
 					["g"] = {
@@ -318,6 +326,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7928,  {	-- Darkmoon Warlords Deck
 					["provider"] = { "i", 19257 },  -- Warlords Deck
+					["maxReputation"] = DECK_MAX_REPUTATION,
 					["repeatable"] = true,
 					["g"] = {
 						i(19287),	-- Darkmoon Card: Heroism
@@ -548,11 +557,11 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 				}),
 				q(7946,  {	-- Spawn of Jubjub
 					["qg"] = 14871,  -- Morja
-					["description"] = "You need to throw down a Dark Iron Ale mug near her and wait for the jubling to come hopping to it, then she'll offer this quest.",
+					["description"] = "You need to throw down a Dark Iron Ale mug near her (hence why you need 2 of them) and wait for the jubling to come hopping to it, then she'll offer this quest.",
 					["cost"] = {
 						{ "i", 11325, 2 },	-- Dark Iron Ale Mug
 					},
-					["repeatable"] = true,
+					["isMonthly"] = true,
 					["lvl"] = 10,
 					["g"] = {
 						i(19462, {	-- Unhatched Jubling Egg
@@ -666,17 +675,7 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19182),	-- Darkmoon Faire Prize Ticket
 					},
 				}),
-				q(7937,  {	-- Your Fortune Awaits You...
-					["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
-					["coord"] = { 84.7, 64.4, ELWYNN_FOREST },
-					["cr"] = 14822,	-- Sayge
-					["repeatable"] = true,
-					["lvl"] = 10,
-					["g"] = {
-						i(19425),	-- Mysterious Lockbox
-					},
-				}),
-				q(7938,  {	-- Your Fortune Awaits You...
+				q(7938,  {	-- Your Fortune Awaits You... [Deadmines]
 					["provider"] = { "i", 19424 },	-- Sayge's Fortune #24
 					["maps"] = { DEADMINES },
 					["cr"] = 14822,	-- Sayge
@@ -686,9 +685,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19425),	-- Mysterious Lockbox
 					},
 				}),
-				q(7944,  {	-- Your Fortune Awaits You...
-					["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
-					["maps"] = { WAILING_CAVERNS },
+				q(7937,  {	-- Your Fortune Awaits You... [Elwynn Forest]
+					["provider"] = { "i", 19423 },	-- Sayge's Fortune #23
+					["coord"] = { 84.7, 64.4, ELWYNN_FOREST },
 					["cr"] = 14822,	-- Sayge
 					["repeatable"] = true,
 					["lvl"] = 10,
@@ -696,9 +695,19 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 						i(19425),	-- Mysterious Lockbox
 					},
 				}),
-				q(7945,  {	-- Your Fortune Awaits You...
+				q(7945,  {	-- Your Fortune Awaits You... [Mulgore]
 					["provider"] = { "i", 19452 },	-- Sayge's Fortune #27
 					["coord"] = { 35, 61.5, MULGORE },
+					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
+					["lvl"] = 10,
+					["g"] = {
+						i(19425),	-- Mysterious Lockbox
+					},
+				}),
+				q(7944,  {	-- Your Fortune Awaits You... [Wailing Caverns]
+					["provider"] = { "i", 19443 },	-- Sayge's Fortune #25
+					["maps"] = { WAILING_CAVERNS },
 					["cr"] = 14822,	-- Sayge
 					["repeatable"] = true,
 					["lvl"] = 10,
@@ -739,8 +748,9 @@ _.Holidays = bubbleDown({ ["u"] = DARKMOON_FAIRE },
 					},
 				}),
 				i(19422, {	-- Darkmoon Faire Fortune
-					["description"] = "This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2 +10% Magical Resist\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",
+					["description"] = "This is a reward from completing the Sayge's Fortune. The answers you select to get your buff do not affect the contents of this container.\n\nSayge offers a buff if you answer his questions correctly.\n\n1:1 +10% Damage\n1:2  +25 Magical Resistance\n1:3 +10% Armor\n2:1 +10% Spirit\n2:2 +10% Int\n2:3  +25 Magical Resistance\n3:1 +10% Stamina\n3:2 +10% Strength\n3:3 +10% Agility\n4:1 +10% Int\n4:2 +10% Spirit\n4:3 +10% Armor",
 					["cr"] = 14822,	-- Sayge
+					["repeatable"] = true,
 					["coords"] = {
 						{ 36.8, 38.2, MULGORE },
 						{ 42.0, 69.0, ELWYNN_FOREST },

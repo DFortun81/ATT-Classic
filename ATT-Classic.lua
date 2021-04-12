@@ -2128,9 +2128,10 @@ fieldConverters = {
 		for k,v in pairs(value) do
 			if v[2] > 0 then
 				if v[1] == "n" then
-					rawget(fieldConverters, "creatureID")(group, v[2]);
+					CacheField(group, "creatureID", v[2]);
 				elseif v[1] == "i" then
-					rawget(fieldConverters, "itemID")(group, v[2]);
+					CacheField(group, "itemIDAsCost", v[2]);
+					CacheField(group, "itemID", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
 					if not L["OBJECT_ID_NAMES"][v[2]] then
@@ -2149,22 +2150,6 @@ fieldConverters = {
 			_cache(group, mapID);
 		end
 	end,
-	--[[
-	-- TODO: Mark coordinates in a special way.
-	["coord"] = function(group, value)
-		if value[3] then
-			rawget(fieldConverters, "mapID")(group, value[3]);
-		end
-	end,
-	["coords"] = function(group, value)
-		_cache = rawget(fieldConverters, "mapID");
-		for i,coord in ipairs(value) do
-			if coord[3] then
-				_cache(group, coord[3]);
-			end
-		end
-	end,
-	]]--
 	["cost"] = function(group, value)
 		if type(value) == "number" then
 			return;
@@ -8013,7 +7998,7 @@ local function RowOnEnter(self)
 				counter = counter + 1;
 			end
 		end
-		if reference.description and app.Settings:GetTooltipSetting("Descriptions") then
+		if reference.description and app.Settings:GetTooltipSetting("Descriptions") and not reference.itemID then
 			local found = false;
 			for i=1,GameTooltip:NumLines() do
 				if _G["GameTooltipTextLeft"..i]:GetText() == reference.description then
