@@ -1,3 +1,0 @@
-Darkmoon Faire
-i(11026),	-- Tree Frog Box
-i(11027),	-- Wood Frog Box [Flik]
