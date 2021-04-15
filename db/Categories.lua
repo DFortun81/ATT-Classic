@@ -2,7 +2,7 @@
 --   S O U R C E   D A T A B A S E   M O D U L E   --
 -----------------------------------------------------
 --   WARNING: This file is dynamically generated   --
---   UPDATED: Thursday, April 15, 2021 @ 7:59 AM   --
+--   UPDATED: Thursday, April 15, 2021 @ 10:47 AM  --
 -----------------------------------------------------
 local _ = select(2, ...); local rawset = rawset;
 local g = function(t,g) rawset(t,'g',g); return t; end
@@ -288,7 +288,7 @@ tinsert(l,i(20326,{f=4,lvl=60,u=1}));
 tinsert(l,i(20340,{f=4,lvl=60,u=1}));
 tinsert(l,i(21339,{f=4,lvl=60,u=1}));
 tinsert(l,i(18747,{f=4,lvl=58,u=1}));
-tinsert(l,i(12904,{f=4,u=1}));
+tinsert(l,i(12904,{f=4,lvl=61,u=1}));
 tinsert(l,i(16151,{f=4,lvl=30,u=1}));
 tinsert(l,i(16154,{f=4,lvl=30,u=1}));
 tinsert(l,i(16152,{f=4,lvl=30,u=1}));
@@ -373,7 +373,7 @@ tinsert(l,i(12772,{b=2,f=24,lvl=49,u=1}));
 tinsert(l,i(18881,{f=24,lvl=60,u=1}));
 tinsert(l,i(19158,{f=24,lvl=60,u=1}));
 tinsert(l,i(22805,{f=25,lvl=60,u=1}));
-tinsert(l,i(18582,{b=1,f=25,u=1}));
+tinsert(l,i(18582,{b=1,f=25,lvl=70,u=1}));
 tinsert(l,i(913,{b=2,f=26,lvl=24,u=1}));
 tinsert(l,i(22814,{f=26,lvl=60,u=1}));
 tinsert(l,i(18882,{f=26,lvl=60,u=1}));

@@ -745,6 +745,41 @@ end
 faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
+e = function(id, t)										-- Create an ENCOUNTER Object
+	-- #if BEFORE WRATH
+	-- Not yet supported in classic.
+	if t then
+		if t.groups or t.g then
+			-- Convert to a Header or NPC ID.
+			if t.npcID then
+				return t;
+			elseif t.creatureID then
+				t.npcID = t.creatureID;
+				t.creatureID = nil;
+				return t;
+			elseif t.cr then
+				t.npcID = t.cr;
+				t.cr = nil;
+				return t;
+			elseif t.crs then
+				t.npcID = t.crs[1];
+				table.remove(t.crs, 1);
+				if #t.crs < 1 then
+					t.crs = nil;
+				end
+				return t;
+			else
+				t.npcID = -1;
+				return t;
+			end
+		else
+			return { ["npcID"] = -1, ["g"] = t };
+		end
+	end
+	-- #else
+	return struct("encounterID", id, t);
+	-- #endif
+end
 exploration = function(id, t)							-- Create an EXPLORATION Object
 	return struct("explorationID", id, t);
 end
@@ -763,6 +798,35 @@ item = function(id, t)									-- Create an ITEM Object
 	return struct("itemID", id, t);
 end
 i = item;												-- Create an ITEM Object (alternative shortcut)
+inst = function(id, t)									-- Create an INSTANT Object
+	-- #if BEFORE WRATH
+	-- Not yet supported in classic.
+	if t then
+		if t.groups or t.g then
+			-- Convert to a MAP ID.
+			if t.mapID then
+				return t;
+			else
+				if t.maps then
+					t.mapID = t.maps[1];
+					table.remove(t.maps, 1);
+					if #t.maps < 1 then
+						t.maps = nil;
+					end
+				else
+					error("Instance Missing a MapID.");
+				end
+				return t;
+			end
+		else
+			return { ["npcID"] = -1, ["g"] = t };
+		end
+		
+	end
+	-- #else
+	return struct("encounterID", id, t);
+	-- #endif
+end
 map = function(id, t)									-- Create a MAP Object
 	return struct("mapID", id, t);
 end
