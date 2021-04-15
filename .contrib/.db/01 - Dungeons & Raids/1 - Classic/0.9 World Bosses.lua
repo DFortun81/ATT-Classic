@@ -1,16 +1,20 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
+local ESKHANDERS_LEFT_CLAW = i(18202);	-- Eskhandar's Left Claw [Note: For whatever reason, Blizzard moved this weapon to Magmadar after the boss was removed.]
 _.Instances = { tier(1, {	-- Classic
 	n(-7, {	-- World Bosses
 		["isRaid"] = true,
 		["lvl"] = 60,
 		["groups"] = {
-			un(PHASE_TWO, n(6109, {	-- Azuregos
+			n(6109, {	-- Azuregos
 				["coord"] = { 53.3, 80.4, AZSHARA },
 				["maps"] = { AZSHARA },
 				["isRaid"] = true,
+				-- #if ANYCLASSIC
+				["modelScale"] = 6.0,
+				["u"] = PHASE_TWO,
+				-- #endif
 				["lvl"] = 60,
 				["groups"] = {
 					i(18704, {	-- Mature Blue Dragon Sinew
@@ -18,7 +22,7 @@ _.Instances = { tier(1, {	-- Classic
 						["classes"] = { HUNTER },
 					}),
 					i(19130),	-- Cold Snap
-					i(18202),	-- Eskhandar's Left Claw
+					ESKHANDERS_LEFT_CLAW,
 					i(17070),	-- Fang of the Mystics
 					i(18542),	-- Typhoon
 					i(19132),	-- Crystal Adorned Crown
@@ -28,9 +32,8 @@ _.Instances = { tier(1, {	-- Classic
 					i(19131),	-- Snowblind Shoes
 					i(18547),	-- Unmelting Ice Girdle
 				},
-			})),
-			un(PHASE_FOUR, n(-19, {	-- Dragons of Nightmare
-				["isRaid"] = true,
+			}),
+			n(-19, {	-- Dragons of Nightmare
 				["description"] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
 				["coords"] = {
 					{ 51.2, 10.9, FERALAS },
@@ -50,6 +53,10 @@ _.Instances = { tier(1, {	-- Classic
 					14890,	-- Taerar
 					14887,	-- Ysondre
 				},
+				-- #if ANYCLASSIC
+				["u"] = PHASE_FOUR,
+				-- #endif
+				["isRaid"] = true,
 				["lvl"] = 60,
 				["groups"] = {
 					n(QUESTS, {
@@ -61,6 +68,7 @@ _.Instances = { tier(1, {	-- Classic
 							["qg"] = 11832,	-- Keeper Remulos
 							["sourceQuest"] = 8446,	-- Shrouded in Nightmare
 							["coord"] = { 36.18, 41.79, MOONGLADE },
+							["maps"] = { MOONGLADE },
 							["lvl"] = 60,
 							["groups"] = {
 								i(20600),	-- Malfurion's Signet Ring
@@ -86,6 +94,9 @@ _.Instances = { tier(1, {	-- Classic
 						}),
 					}),
 					n(14889, {	-- Emeriss
+						-- #if ANYCLASSIC
+						["modelScale"] = 6.0,
+						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -97,6 +108,9 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					n(14888, {	-- Lethon
+						-- #if ANYCLASSIC
+						["modelScale"] = 6.0,
+						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -109,6 +123,9 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					n(14890, {	-- Taerar
+						-- #if ANYCLASSIC
+						["modelScale"] = 6.0,
+						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -120,6 +137,9 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					n(14887, {	-- Ysondre
+						-- #if ANYCLASSIC
+						["modelScale"] = 6.0,
+						-- #endif
 						["isRaid"] = true,
 						["lvl"] = 60,
 						["groups"] = {
@@ -132,13 +152,26 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 				},
-			})),
-			un(PHASE_TWO, n(12397, {	-- Lord Kazzak
+			}),
+			{	-- Lord Kazzak / Highlord Kruul
+				-- #if CLASSIC
+				["npcID"] = 12397,	-- Lord Kazzak
+				-- #else
+				["npcID"] = 18338,	-- Highlord Kruul
+				["crs"] = { 12397 },	-- Lord Kazzak
+				-- #endif
 				["coord"] = { 36.6, 75.8, BLASTED_LANDS },
 				["maps"] = { BLASTED_LANDS },
+				["modelScale"] = 6.0,
 				["isRaid"] = true,
+				-- #if ANYCLASSIC
+				["u"] = PHASE_TWO,
+				-- #endif
 				["lvl"] = 60,
 				["groups"] = {
+					i(18665, {	-- The Eye of Shadow
+						["classes"] = { PRIEST },
+					}),
 					i(17113),	-- Amberseal Keeper
 					i(17112),	-- Empyrean Demolisher
 					i(18546),	-- Infernal Headcage
@@ -150,8 +183,14 @@ _.Instances = { tier(1, {	-- Classic
 					i(19133),	-- Fel Infused Leggings
 					i(18543),	-- Ring of Entropy
 				},
-			})),
-			
+			},
 		},
 	}),
 })};
+
+-- #if AFTER CATA
+-- Mark everything as removed from game.
+bubbleDown({ ["u"] = REMOVED_FROM_GAME }, _.Instances);
+_.Instances[1].u = nil;	-- Unmark Classic
+ESKHANDERS_LEFT_CLAW.u = nil;	-- Unmark Eskhandar's Claw.
+-- #endif
