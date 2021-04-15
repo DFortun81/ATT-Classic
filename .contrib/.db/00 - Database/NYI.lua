@@ -478,7 +478,6 @@ _.NeverImplemented =
 	i(16124),	-- Test Frost Res Neck
 	i(16123),	-- Test Nature Res Neck
 	i(17783),	-- Talisman of Binding Fragment
-	i(17782),	-- Talisman of Binding Shard
 	
 	-- Ring
 	i(24358),	-- QATest +1000 Spell Dmg Ring

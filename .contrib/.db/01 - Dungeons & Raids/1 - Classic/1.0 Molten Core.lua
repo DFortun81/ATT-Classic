@@ -5,10 +5,10 @@
 _.Instances = { tier(1, {	-- Classic
 	map(MOLTEN_CORE, {
 		["description"] = "The Molten Core was created during the War of the Three Hammers more than 300 years ago. Near the end of the war, Thaurissan, the leader of the Dark Iron Dwarves, sought to summon a powerful fire elemental to defeat the combined forces of the Bronzebeard and Wildhammer clans. He was more successful than he could have imagined, as he released Ragnaros the Firelord from millennia of captivity under the Redridge Mountains.\n\nRagnaros destroyed the city of Thaurissan and created the volcano of Blackrock Mountain. He dwells there to this day with his elemental servants and the enslaved remnants of the Dark Iron dwarf clan. The burning lake where Ragnaros lies sleeping acts as a rift connecting to the plane of fire, allowing the malicious elementals to pass through.",
-		["lvl"] = 50,
 		["sourceQuest"] = 7848,	-- Attunement to the Core
 		["crs"] = { 14387 },	-- Lothos Riftwaker
 		["isRaid"] = true,
+		["lvl"] = 50,
 		["groups"] = {
 			faction(749, { 	-- Hydraxian Waterlords
 				["qg"] = 13278,	-- Duke Hydraxis
@@ -21,10 +21,21 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
-					["g"] = {
-						i(18399),	-- Ocean's Breeze
-						i(18398),	-- Tidal Loop
+					["groups"] = {
+						i(18399, {	-- Ocean's Breeze
+							-- #if AFTER WRATH
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+						}),
+						i(18398, {	-- Tidal Loop
+							-- #if AFTER WRATH
+							["u"] = REMOVED_FROM_GAME,
+							-- #endif
+						}),
 					},
 				}),
 				q(6823, {	-- Agent of Hydraxis
@@ -33,6 +44,9 @@ _.Instances = { tier(1, {	-- Classic
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
 					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(7633, {	-- An Introduction
@@ -41,22 +55,28 @@ _.Instances = { tier(1, {	-- Classic
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 60,
 				}),
 				q(7848, {	-- Attunement to the Core
 					["qg"] = 14387,	-- Lothos Riftwaker
-					["altQuests"] = {
-						7487,	-- Attunement to the Core [Original??]
-					},
+					["altQuests"] = { 7487 },	-- Attunement to the Core [Original??]
+					-- #if BEFORE WRATH
 					["description"] = "Complete this quest to be able to quickly teleport to Molten Core by simply talking to Lothos.",
-					["cost"] = {
-						{ "i", 18412, 1 },	-- Core Fragment
-					},
-					["lvl"] = 55,
+					-- #else
+					["description"] = "This quest is no longer required to enter Molten Core - you can now speak to Lothos and have him transport you inside without doing the attunement.",
+					["coord"] = { 54.2, 83.3, BLACKROCK_MOUNTAIN },
+					-- #endif
 					["maps"] = {
 						BLACKROCK_DEPTHS,
 						BLACKROCK_MOUNTAIN,
 					},
+					["cost"] = {
+						{ "i", 18412, 1 },	-- Core Fragment
+					},
+					["lvl"] = 55,
 				}),
 				q(7785, {	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
@@ -82,6 +102,9 @@ _.Instances = { tier(1, {	-- Classic
 					["cost"] = {
 						{ "i", 17322, 1 },	-- Eye of the Emberseer
 					},
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(6824, {	-- Hands of the Enemy
@@ -95,6 +118,9 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 17332, 1 },	-- Hand of Shazzrah
 						{ "i", 17330, 1 },	-- Hand of Sulfuron
 					},
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(6804, {	-- Poisoned Water
@@ -105,6 +131,9 @@ _.Instances = { tier(1, {	-- Classic
 						{ "i", 17310, 1 },	-- Aspect of Neptulon
 						{ "i", 17309, 12 },	-- Discordant Bracers
 					},
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(7787, {	-- Rise, Thunderfury!
@@ -116,6 +145,9 @@ _.Instances = { tier(1, {	-- Classic
 					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
+						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
+							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
+						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				}),
@@ -123,6 +155,9 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { AZSHARA, SILITHUS },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(7632, {	-- The Ancient Leaf
@@ -131,6 +166,9 @@ _.Instances = { tier(1, {	-- Classic
 					["coord"] = { 47, 24.48, FELWOOD },
 					["maps"] = { FELWOOD },
 					["classes"] = { HUNTER },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["cost"] = {
 						{ "i", 18703, 1 },	-- Ancient Petrified Leaf
 					},
@@ -141,14 +179,15 @@ _.Instances = { tier(1, {	-- Classic
 					["sourceQuest"] = 6821,	-- Eye of the Emberseer
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					["maps"] = { AZSHARA },
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 55,
 				}),
 				q(7786, {	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
-					["altQuests"] = {
-						7521,	-- Thunderaan the Windseeker [Original?]
-					},
 					["sourceQuest"] = 7785,	-- Examine the Vessel
+					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["maps"] = { SILITHUS },
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
@@ -161,13 +200,10 @@ _.Instances = { tier(1, {	-- Classic
 					["lvl"] = 60,
 					["groups"] = {
 						n(14435, {	-- Prince Thunderaan <The Wind Seeker>
-							["description"] = "This is a 40 man raid boss.",
+							["description"] = "This is a 40-man raid boss.",
 							["modelScale"] = 20,
 							["groups"] = {
-								{
-									["itemID"] = 19018,	-- Dormant Wind Kissed Blade
-									["questID"] = 7787,	-- Rise, Thunderfury!
-								},
+								i(19018),	-- Dormant Wind Kissed Blade
 							},
 						}),
 					},
@@ -178,19 +214,30 @@ _.Instances = { tier(1, {	-- Classic
 					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
 					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				}),
 				i(22754, {	-- Eternal Quintessence
 					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
 					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #else
 					["u"] = PHASE_THREE,
+					-- #endif
 				}),
 			}),
 			n(ZONEDROPS, {
-				un(PHASE_FIVE, i(20951, {	-- Narain's Scrying Goggles
+				i(20951, {	-- Narain's Scrying Goggles
 					["description"] = "For this to drop, you must be on the Scrying Goggles? No Problem! quest.",
-					["questID"] = 8578,	-- Scrying Goggles? No Problem!
-				})),
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #elseif ANYCLASSIC
+					["u"] = PHASE_FIVE,
+					-- #endif
+				}),
 				i(16802),	-- Arcanist Belt (Mage)
 				i(16799),	-- Arcanist Bindings (Mage)
 				i(16864),	-- Belt of Might (Warrior)
@@ -334,7 +381,9 @@ _.Instances = { tier(1, {	-- Classic
 			n(12118, {	-- Lucifron
 				{
 					["itemID"] = 17329,	-- Hand of Lucifron
-					["questID"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
@@ -355,12 +404,24 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 				{
 					["itemID"] = 16665,		-- Tome of Tranquilizing Shot
+					["classes"] = { HUNTER },
+					-- #if BEFORE WRATH
 					["recipeID"] = 19801,	-- Tranquilizing Shot
-				}
+					-- #else
+					["spellID"] = 0,
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
+				},
 			}),
 			n(11982, {	-- Magmadar
+				i(93034, {	-- Blazing Rune (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17073),	-- Earthshaker
 				i(18822),	-- Obsidian Edged Blade
+				-- #if AFTER CATA
+				i(18202),	-- Eskhandar's Left Claw
+				-- #endif
 				i(18203),	-- Eskhandar's Right Claw
 				i(17069),	-- Striker's Mark
 				i(19142),	-- Fire Runed Grimoire
@@ -387,7 +448,9 @@ _.Instances = { tier(1, {	-- Classic
 			n(12259, {	-- Gehennas
 				{
 					["itemID"] = 17331,	-- Hand of Gehennas
-					["questID"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
@@ -407,11 +470,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			}),
 			n(12057, {	-- Garr
-				{
-					["itemID"] = 18564,	-- Bindings of the Windseeker (Right)
-					["questID"] = 7786,	-- Thunderaan the Windseeker
+				i(18564, {	-- Bindings of the Windseeker (Right)
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
-				},
+				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(17105),	-- Aurastone Hammer
 				i(18832),	-- Brutality Blade
@@ -436,11 +497,18 @@ _.Instances = { tier(1, {	-- Classic
 				i(19144),	-- Sabatons of the Flamewalker
 				i(18821),	-- Quick Strike Ring
 				i(18820),	-- Talisman of Ephemeral Power
+				-- #if ANYCLASSIC
+				un(NEVER_IMPLEMENTED, i(17782)),	-- Talisman of Binding Shard
+				-- #else
+				un(REMOVED_FROM_GAME, i(17782)),	-- Talisman of Binding Shard
+				-- #endif
 			}),
 			n(12264, {	-- Shazzrah
 				{
 					["itemID"] = 17332,	-- Hand of Shazzrah
-					["questID"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
 				i(18878),	-- Sorcerous Dagger
 				i(17077),	-- Crimson Shocker
@@ -460,11 +528,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			}),
 			n(12056, {	-- Baron Geddon
-				{
-					["itemID"] = 18563,	-- Bindings of the Windseeker (Left)
-					["questID"] = 7786,	-- Thunderaan the Windseeker
+				i(18563, {	-- Bindings of the Windseeker (Left)
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
-				},
+				}),
 				i(18822),	-- Obsidian Edged Blade
 				i(19142),	-- Fire Runed Grimoire
 				i(16797),	-- Arcanist Mantle (Mage)
@@ -486,8 +552,13 @@ _.Instances = { tier(1, {	-- Classic
 			n(12098, {	-- Sulfuron Harbinger
 				{
 					["itemID"] = 17330,	-- Hand of Sulfuron
-					["questID"] = 6824,	-- Hands of the Enemy
+					-- #if AFTER WRATH
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				},
+				i(93033, {	-- Mark of Flame (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17074),	-- Shadowstrike
 				i(17223),	-- Thunderstrike
 				i(18878),	-- Sorcerous Dagger
@@ -506,6 +577,9 @@ _.Instances = { tier(1, {	-- Classic
 				i(19147),	-- Ring of Spell Power
 			}),
 			n(11988, {	-- Golemagg the Incinerator
+				i(93035, {	-- Core of Hardened Ash (Pet)
+					["timeline"] = { "added 5.1.0.16309" },
+				}),
 				i(17203),	-- Sulfuron Ingot
 				i(18822),	-- Obsidian Edged Blade
 				i(18842),	-- Staff of Dominance
@@ -535,11 +609,18 @@ _.Instances = { tier(1, {	-- Classic
 				{
 					["itemID"] = 18703,	-- Ancient Petrified Leaf
 					["questID"] = 7632,	-- The Ancient Leaf
+					["classes"] = { HUNTER },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 					["lvl"] = 60,
 				},
 				i(18646, {	-- The Eye of Divinity
 					["description"] = "Reagent for the Splinter of Nordrassil. Used by Priests to create Benediction and Anathema.",
-					["sourceQuest"] = 7622,	-- The Balance of Light and Shadow
+					["classes"] = { PRIEST },
+					-- #if AFTER CATA
+					["u"] = REMOVED_FROM_GAME,
+					-- #endif
 				}),
 				i(18803),	-- Finkle's Lava Dredger
 				i(18805),	-- Core Hound Tooth
@@ -553,21 +634,26 @@ _.Instances = { tier(1, {	-- Classic
 				i(19140),	-- Cauterizing Band
 			}),
 			n(11502, {	-- Ragnaros
+				ach(686),	-- Molten Core
 				i(19017, {	-- Essence of the Firelord
 					["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
-					["questID"] = 7786,	-- Thunderaan the Windseeker
 					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
 				}),
-				{	-- Eye of Sulfuras
-					["itemID"] = 17204,	-- Eye of Sulfuras
+				i(17204, {	-- Eye of Sulfuras
 					["classes"] = { DEATHKNIGHT, DRUID, PALADIN, SHAMAN, WARRIOR },
-					["cost"] = {
-						{ "i", 17193, 1 },	-- Sulfuron Hammer
-					},
+					["cost"] = { { "i", 17193, 1 } },	-- Sulfuron Hammer
+					["f"] = 24,	-- To match Sulfuras, Hand of Ragnaros and cause it to display even if Quest Items are filtered
 					["groups"] = {
+						ach(429),	-- Sulfuras, Hand of Ragnaros
 						i(17182),	-- Sulfuras, Hand of Ragnaros
 					},
-				},
+				}),
+				i(138018, {	-- Clothes Chest Pattern: Molten Core
+					["timeline"] = { "added 7.0.3.22248" },
+				}),
+				i(138833, {	-- Illusion: Flametongue (Shaman)
+					["timeline"] = { "added 7.0.3.22248" },
+				}),
 				i(17076),	-- Bonereaver's Edge
 				i(17104),	-- Spinal Reaper
 				i(18816),	-- Perdition's Blade
@@ -590,7 +676,11 @@ _.Instances = { tier(1, {	-- Classic
 				i(19138),	-- Band of Sulfuras
 				i(18815),	-- Essence of the Pure Flame
 				i(17082),	-- Shard of the Flame
+				-- #if ANYCLASSIC
 				un(NEVER_IMPLEMENTED, i(17982)),	-- Ragnaros Core
+				-- #else
+				un(REMOVED_FROM_GAME, i(17982)),	-- Ragnaros Core
+				-- #endif
 			}),
 		},
 	}),
