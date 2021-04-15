@@ -60,7 +60,7 @@ _.Zones =
 					["cr"] = 2255,	-- Crushridge Mage
 				}),
 				i(5775, {	-- Pattern: Black Silk Pack
-					["crs"] = 2242,	-- Syndicate Spy
+					["cr"] = 2242,	-- Syndicate Spy
 				}),
 				i(3658, {	-- Recovered Tome
 					["questID"] = 540,	-- Preserving Knowledge
