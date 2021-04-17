@@ -730,11 +730,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_ONE_DIREMAUL }, {	-- Classic
 						i(18490),	-- Insightful Hood
 					}),
 					n(11501, {	-- King Gordok
-						{
-							["itemID"] = 18780,	-- Top Half of Advanced Armorsmithing: Volume I
-							["questID"] = 7649,	-- Enchanted Thorium Platemail: Volume I
-							["requireSkill"] = 9788,	-- Armorsmith
-						},
+						i(18780),	-- Top Half of Advanced Armorsmithing: Volume I
 						i(18520),	-- Barbarous Blade
 						i(18523),	-- Brightly Glowing Stone
 						i(18526),	-- Crown of the Ogre King

@@ -2,10 +2,16 @@ profession(BLACKSMITHING, {
 	n(QUESTS, {
 		q(7652, {	-- A Blue Light Bargain
 			["qg"] = 14567,	-- Derotain Mudsipper
+			-- #if AFTER TBC
+			["sourceQuests"] = {
+				10891,	-- Imperial Plate Armor [A]
+				10892,	-- Imperial Plate Armor [H]
+			},
+			-- #endif
+			["description"] = "You need 265 Blacksmithing. Does not require a specialization.",
 			["requireSkill"] = BLACKSMITHING,
 			["coord"] = { 51.4, 28.7, TANARIS },
 			["maps"] = { TANARIS },
-			["description"] = "You need 265 Blacksmithing. Does not require a specialization.",
 			["lvl"] = 50,
 		}),
 		q(2771, {	-- A Good Head On Your Shoulders
@@ -67,10 +73,9 @@ profession(BLACKSMITHING, {
 		},
 		q(5307, {	-- Corruption
 			["qg"] = 11193,	-- Seril Scourgebane
-			["requireSkill"] = 9787,	-- Weaponsmith
-			["description"] = "Upon finishing this quest, you will become a Master Swordsmith and be locked out of becoming a Master Hammersmith and Master Axesmith.",
 			["coord"] = { 61.2, 37.2, WINTERSPRING },
 			["maps"] = { WINTERSPRING, STRATHOLME },
+			["requireSkill"] = 9787,	-- Weaponsmith
 			["cost"] = {
 				{ "i", 13350, 1 },	-- Insignia of the Black Guard
 			},
@@ -225,12 +230,26 @@ profession(BLACKSMITHING, {
 			["maps"] = { BLACKROCK_SPIRE },
 			["lvl"] = 55,
 			["groups"] = {
-				{
-					["itemID"] = 12812,	-- Unfired Plate Gauntlets
-					["questID"] = 5124,	-- Fiery Plate Gauntlets
-					["requireSkill"] = 9788,	-- Armorsmith
-				},
+				i(12812),	-- Unfired Plate Gauntlets
 			},
+		}),
+		q(10891, {	-- Imperial Plate Armor [A]
+			["qg"] = 11145,	-- Myolor Sunderfury
+			["coord"] = { 52.0, 41.4, IRONFORGE },
+			["maps"] = { IRONFORGE },
+			["isBreadcrumb"] = true,
+			["races"] = ALLIANCE_ONLY,
+			["u"] = TBC_PHASE_ONE,
+			["lvl"] = 50,
+		}),
+		q(10892, {	-- Imperial Plate Armor [H]
+			["qg"] = 11176,	-- Krathok Moltenfist
+			["coord"] = { 80.0, 23.3, ORGRIMMAR },
+			["maps"] = { ORGRIMMAR },
+			["isBreadcrumb"] = true,
+			["races"] = HORDE_ONLY,
+			["u"] = TBC_PHASE_ONE,
+			["lvl"] = 50,
 		}),
 		q(7653, {	-- Imperial Plate Belt
 			["qg"] = 14567,	-- Derotain Mudsipper
@@ -500,25 +519,15 @@ profession(BLACKSMITHING, {
 			["coord"] = { 63.8, 73.8, WINTERSPRING },
 			["maps"] = { WINTERSPRING, BLACKROCK_SPIRE },
 			["cost"] = {
-				{ "i", 12848, 1 },	-- Blood Stained Pike
 				{ "i", 12847, 1 },	-- Soul Stained Pike
 				{ "i", 12806, 1 },	-- Unforged Rune Covered Breastplate
 			},
-			["crs"] = { 10899 },	-- Goraluk Anvilcrack
+			["cr"] = 10899,	-- Goraluk Anvilcrack
 			["lvl"] = 55,
 			["groups"] = {
 				i(12696),	-- Plans: Demon Forged Breastplate
 				i(9224),	-- Elixir of Demonslaying
-				i(12849, {	-- Demon Kissed Sack
-					i(10379),	-- Commander's Helm
-					i(10383),	-- Commander's Pauldrons
-					i(10377),	-- Commander's Vambraces
-					i(10380),	-- Commander's Gauntlets
-					i(10378),	-- Commander's Armor
-					i(10381),	-- Commander's Girdle
-					i(10382),	-- Commander's Leggings
-					i(10376),	-- Commander's Boots
-				}),
+				i(12849),	-- Demon Kissed Sack
 			},
 		}),
 		q(2762, {	-- The Great Silver Deceiver

@@ -1747,6 +1747,14 @@ _.WorldDrops = { tier(1, {	-- Classic
 		i(8141),	-- Chromite Greaves
 		i(8143),	-- Chromite Legplates
 		i(8144),	-- Chromite Pauldrons
+		i(10379),	-- Commander's Helm
+		i(10383),	-- Commander's Pauldrons
+		i(10377),	-- Commander's Vambraces
+		i(10380),	-- Commander's Gauntlets
+		i(10378),	-- Commander's Armor
+		i(10381),	-- Commander's Girdle
+		i(10382),	-- Commander's Leggings
+		i(10376),	-- Commander's Boots
 		i(14554),	-- Cloudkeeper Legplates
 		i(13075),	-- Direwing Legguards
 		i(9966),	-- Embossed Plate Armor

@@ -944,11 +944,7 @@ _.Instances = { tier(1, {	-- Classic
 						["questID"] = 4788,	-- The Final Tablets
 						["description"] = "Located directly behind the boss.",
 					},
-					{
-						["itemID"] = 13352,	-- Vosh'gajin's Snakestone
-						["questID"] = 5306,	-- Snakestone of the Shadow Huntress
-						["requireSkill"] = 9787,	-- Weaponsmith
-					},
+					i(13352),	-- Vosh'gajin's Snakestone
 					i(12651),	-- Blackcrow
 					i(12653),	-- Riphook
 					i(13257),	-- Demonic Runed Spaulders
@@ -1031,11 +1027,7 @@ _.Instances = { tier(1, {	-- Classic
 							["itemID"] = 12712,	-- Warosh's Mojo
 							["questID"] = 4867,	-- Urok Doomhowl
 						},
-						{
-							["itemID"] = 18784,	-- Top Half of Advanced Armorsmithing: Volume III
-							["questID"] = 7651,	-- Enchanted Thorium Platemail: Volume III
-							["requireSkill"] = 9788,	-- Armorsmith
-						},
+						i(18784),	-- Top Half of Advanced Armorsmithing: Volume III
 						i(13258),	-- Slaghide Gauntlets
 						un(PHASE_FIVE, i(22232)),	-- Marksman's Girdle
 						i(13259),	-- Ribsteel Footguards
@@ -1165,29 +1157,16 @@ _.Instances = { tier(1, {	-- Classic
 						},
 					}),
 					n(10899, {	-- Goraluk Anvilcrack
-						{
-							["itemID"] = 18779,	-- Bottom Half of Advanced Armorsmithing: Volume I
-							["questID"] = 7649,	-- Enchanted Thorium Platemail: Volume I
-							["requireSkill"] = 9788,	-- Armorsmith
-						},
-						{
-							["itemID"] = 12848,	-- Blood Stained Pike
-							["questID"] = 5127,	-- The Demon Forge
-							["requireSkill"] = 9788,	-- Armorsmith
-							["description"] = "Use this on Goraluk Anvilcrack's corpse.",
-							["groups"] = {
-								{
-									["itemID"] = 12847,	-- Soul Stained Pike
-									["questID"] = 5127,	-- The Demon Forge
-								},
+						i(18779),	-- Bottom Half of Advanced Armorsmithing: Volume I
+						i(12847, {	-- Soul Stained Pike
+							["description"] = "Use the Blood Stained Pike on his corpse.",
+							["cost"] = {
+								{ "i", 12848, 1 },	-- Blood Stained Pike
 							},
-						},
-						{
-							["itemID"] = 12848,	-- Unforged Rune Covered Breastplate
-							["questID"] = 5127,	-- The Demon Forge
-							["requireSkill"] = 9788,	-- Armorsmith
+						}),
+						i(12848, {	-- Unforged Rune Covered Breastplate
 							["description"] = "Found on the rack behind Anvilcrack in Upper Blackrock Spire.",
-						},
+						}),
 						i(12834),	-- Plans: Arcanite Champion
 						i(12728),	-- Plans: Invulnerable Mail
 						i(12837),	-- Plans: Masterwork Stormhammer
