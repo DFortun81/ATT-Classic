@@ -255,14 +255,18 @@ ALL_RACES = { PANDAREN_NEUTRAL }	-- NOTE: Use this with the exclude function.
 for _,v in pairs(ALLIANCE_ONLY) do table.insert(ALL_RACES,v) end
 for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 
--- Common Custom NPCs used for headers
+-- Headers
 ACHIEVEMENTS = -4;
 COMMON_BOSS_DROPS = -1;
-REWARDS = -18;
+EXPLORATION = -15;
+FACTIONS = -6013;
+FLIGHT_PATHS = -228;
 QUESTS = -17;
 RARES = -16;
-EXPLORATION = -15;
+REWARDS = -18;
+TREASURES = -212;
 VENDORS = -2;
+WORLD_QUESTS = -34;
 ZONEDROPS = 0;
 
 -- Professions
@@ -272,11 +276,14 @@ BLACKSMITHING = 164;
 COOKING = 185;
 ENCHANTING = 333;
 ENGINEERING = 202;
+GOBLIN_ENGINEERING = 20222;
+GNOMISH_ENGINEERING = 20219;
 FIRST_AID = 129;
 FISHING = 356;
 HERBALISM = 182;
 INSCRIPTION = 773;
 JEWELCRAFTING = 755;
+JUNKYARD_TINKERING = 2720;
 LEATHERWORKING = 165;
 MINING = 186;
 SKINNING = 393;
@@ -951,3 +958,34 @@ h = function(t) -- Flag as Horde Only
 	return t;
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
+
+-- Used by the Harvester (Parser)
+function Harvest(things)
+	if not _.ItemDB then _.ItemDB = {}; end
+	local thing;
+	for i,j in pairs(things) do
+		thing = _.ItemDB[i];
+		if not thing then
+			thing = {};
+			thing.mods = {};
+			thing.bonuses = {};
+			_.ItemDB[i] = thing;
+		else
+			if not thing.mods then thing.mods = {} end
+			if not thing.bonuses then thing.bonuses = {} end
+		end
+		if j.mods then
+			for l,modID in ipairs(j.mods) do
+				thing.mods[l] = modID;
+			end
+			for l,modID in pairs(j.mods) do
+				thing.mods[l] = modID;
+			end
+		end
+		if j.bonuses then
+			for l,bonusID in pairs(j.bonuses) do
+				thing.bonuses[l] = bonusID;
+			end
+		end
+	end
+end

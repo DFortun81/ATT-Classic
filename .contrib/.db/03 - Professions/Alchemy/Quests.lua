@@ -67,6 +67,7 @@ profession(ALCHEMY, {
 			["requireSkill"] = ALCHEMY,
 			["maps"] = { TELDRASSIL },
 			["races"] = ALLIANCE_ONLY,
+			["requireSkill"] = ALCHEMY,
 			["cost"] = {
 				{ "i", 2454, 4 },	-- Elixir of Lion's Strength
 				{ "i", 5997, 4 },	-- Elixir of Minor Defense
@@ -83,6 +84,7 @@ profession(ALCHEMY, {
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["maps"] = { HELLFIRE_PENINSULA },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				--10906,	-- Master of Elixirs (1/2)
 				10905,	-- Master of Potions (1/2)
@@ -101,6 +103,7 @@ profession(ALCHEMY, {
 			["description"] = "Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",
 			["coord"] = { 45.8, 20.4, SHATTRATH_CITY },
 			["maps"] = { SHATTRATH_CITY, CAVERNS_OF_TIME_BLACK_MORASS },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				--10897,	-- Master of Potions (2/2)
@@ -129,6 +132,7 @@ profession(ALCHEMY, {
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["maps"] = { HELLFIRE_PENINSULA },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				--10905,	-- Master of Potions (1/2)
@@ -147,6 +151,7 @@ profession(ALCHEMY, {
 			["description"] = "Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",
 			["coord"] = { 44.1, 36.6, ZANGARMARSH },
 			["maps"] = { ZANGARMARSH, TEMPEST_KEEP_BOTANICA },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				--10897,	-- Master of Potions (2/2)
@@ -175,6 +180,7 @@ profession(ALCHEMY, {
 				{ 53.8, 65.8, HELLFIRE_PENINSULA },	-- Alchemist Gribble <Alchemy Trainer>
 			},
 			["maps"] = { HELLFIRE_PENINSULA },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10906,	-- Master of Elixirs (1/2)
 				10905,	-- Master of Potions (1/2)
@@ -193,6 +199,7 @@ profession(ALCHEMY, {
 			["description"] = "Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",
 			["coord"] = { 44.1, 36.6, NETHERSTORM },
 			["maps"] = { NETHERSTORM },
+			["requireSkill"] = ALCHEMY,
 			["altQuests"] = {
 				10902,	-- Master of Elixirs (2/2)
 				10897,	-- Master of Potions (2/2)
