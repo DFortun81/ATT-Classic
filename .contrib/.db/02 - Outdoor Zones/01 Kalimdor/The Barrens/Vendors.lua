@@ -25,6 +25,17 @@ _.Zones =
 						i(4822),	-- Owl's Disk
 					},
 				}),
+				-- #if AFTER WRATH
+				n(3443, {	-- Grub
+					["coord"] = { 55.2, 31.8, THE_BARRENS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(44977, {	-- Recipe: Dig Rat Stew
+							["timeline"] = { "removed 4.3.0.2000" },
+						}),
+					},
+				}),
+				-- #endif
 				n(3486, {	-- Halija Whitestrider <Clothier>
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					["races"] = HORDE_ONLY,
@@ -89,6 +100,18 @@ _.Zones =
 						i(4789),	-- Stable Boots						
 					},
 				}),
+				-- #if AFTER WRATH
+				n(3392, {	-- Prospector Khazgorm <Explorers' League>
+					["coord"] = { 47.8, 85.6, THE_BARRENS },
+					["timeline"] = { "removed 4.3.0.2000" },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(44977, {	-- Recipe: Dig Rat Stew
+							["timeline"] = { "removed 4.3.0.2000" },
+						}),
+					},
+				}),
+				-- #endif
 				n(3499, {	-- Ranik <Trade Supplies>
 					["coord"] = { 61.9, 38.7, THE_BARRENS },
 					["groups"] = {

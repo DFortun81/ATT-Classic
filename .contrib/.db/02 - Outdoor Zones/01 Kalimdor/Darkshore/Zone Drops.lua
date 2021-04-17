@@ -121,6 +121,14 @@ _.Zones =
 						2157,	-- Stone Behemoth
 					},
 				}),
+				i(5469, {	-- Strider Meat
+					["crs"] = {
+						2322,	-- Foreststrider
+						2321,	-- Foreststrider Fledgling
+						2323,	-- Giant Foreststrider
+						2172,	-- Strider Clutchmother
+					},
+				}),
 				i(5412, {	-- Thresher Eye
 					["questID"] = 1001,	-- Buzzbox 411
 					["races"] = ALLIANCE_ONLY,

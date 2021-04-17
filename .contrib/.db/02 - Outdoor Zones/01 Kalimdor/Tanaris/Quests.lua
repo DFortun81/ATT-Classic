@@ -101,17 +101,6 @@ _.Zones =
 					},
 					["lvl"] = 50,
 				}),
-				q(6610, {	-- Clamlette Surprise
-					["qg"] = 8125,	-- Dirge Quikcleave
-					["coord"] = { 52.63, 28.12, TANARIS },
-					["requireSkill"] = COOKING,
-					["cost"] = {
-						{ "i", 12207, 12 },	-- Giant Egg
-						{ "i", 7974, 10 },	-- Zesty Clam Meat
-						{ "i", 8932, 20 },	-- Alterac Swiss
-					},
-					["lvl"] = 35,
-				}),
 				q(2882, {	-- Cuergo's Gold
 					["coord"] = { 55.4, 92.2, TANARIS },
 					["provider"] = { "i", 9254 },	-- Cuergo's Treasure Map

@@ -14,6 +14,10 @@ _.Zones =
 						3384,	-- Southsea Privateer
 					},
 				}),
+				i(5051, {	-- Dig Rat
+					["coord"] = { 48.8, 84.8, THE_BARRENS },
+					["cr"] = 3444,	-- Dig Rat
+				}),
 				i(5026, {	-- Fire Tar
 					["questID"] = 1525,	-- Call of Fire (3/5)
 					["races"] = HORDE_ONLY,

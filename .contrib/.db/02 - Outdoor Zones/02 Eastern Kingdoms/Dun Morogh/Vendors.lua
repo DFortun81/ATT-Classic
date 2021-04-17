@@ -17,16 +17,8 @@ _.Zones =
 					["coord"] = { 47.4, 52.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						{
-							["itemID"] = 2894,	-- Rhapsody Malt
-							["questID"] = 384,	-- Beer Basted Boar Ribs
-							["races"] = ALLIANCE_ONLY,
-						},
-						{
-							["itemID"] = 2686,	-- Thunder Ale
-							["questID"] = 310,	-- Bitter Rivals
-							["races"] = ALLIANCE_ONLY,
-						},
+						i(2894),	-- Rhapsody Malt
+						i(2686),	-- Thunder Ale
 					},
 				}),
 				n(7955, {	-- Milli Featherwhistle <Mechanostrider Merchant>
