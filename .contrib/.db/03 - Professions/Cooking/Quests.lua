@@ -309,7 +309,11 @@ profession(COOKING, {
 		}),
 		q(6611, {	-- To Gadgetzan You Go!
 			["qg"] = 3399,	-- Zamja
+			-- #if AFTER CATA
+			["coord"] = { 32.2, 69.4, ORGRIMMAR },
+			-- #else
 			["coord"] = { 57.4, 53.6, ORGRIMMAR },
+			-- #endif
 			["requireSkill"] = COOKING,
 			["maps"] = { ORGRIMMAR },
 			["races"] = HORDE_ONLY,

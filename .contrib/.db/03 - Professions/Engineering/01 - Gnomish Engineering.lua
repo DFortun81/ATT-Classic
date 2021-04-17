@@ -79,215 +79,133 @@ profession(ENGINEERING, {
 				}
 			},
 			n(QUESTS, {
-				i(11423, {	-- Gnome Engineer's Renewal Gift
-					["description"] = "If you destroy your Gnomish Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["groups"] = {
-						i(10603),	-- Schematic: Catseye Ultra Goggles
-						i(11827),	-- Schematic: Lil' Smoky
-						i(10606),	-- Schematic: Parachute Cloak
-					},
-				}),
-				q(3630, {	-- Gnome Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
-					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
-					["altQuests"] = {
-						3629,	-- Goblin Engineering
-						3632,	-- Gnome Engineering
-						3634,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3632, {	-- Gnome Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
-					["coord"] = { 68.8, 45.2, IRONFORGE },
-					["maps"] = { IRONFORGE },
-					["altQuests"] = {
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3634,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3634, {	-- Gnome Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["altQuests"] = {
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3635, {	-- Gnome Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 4586,	-- Graham Van Talen <Journeyman Engineer>
-					["coord"] = { 75.6, 74.6, UNDERCITY },
-					["maps"] = { UNDERCITY },
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3633,	-- Goblin Engineering
-						3637,	-- Gnome Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3637, {	-- Gnome Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["altQuests"] = {
-						3635,	-- Gnome Engineering
-						3526,	-- Goblin Engineering
-						3633,	-- Goblin Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
 				q(3645, {	-- Membership Card Renewal
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuest"] = 3643,	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { STRANGLETHORN_VALE },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["timeline"] = { "removed 4.0.3.2000" },
+					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
-					["sourceQuest"] = 3643,	-- Show Your Work
-					["altQuests"] = {
-						3647,	-- Membership Card Renewal
-					},
 					["g"] = {
 						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3647, {	-- Membership Card Renewal
+					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["sourceQuest"] = 3641,	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 69.8, 50.2, IRONFORGE },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["timeline"] = { "removed 4.0.3.2000" },
 					["repeatable"] = true,
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
+					["g"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
+				q(3641, {	-- Show Your Work
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
+					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639 },	-- Show Your Work
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["requireSkill"] = ENGINEERING,
 					["coord"] = { 69.8, 50.2, IRONFORGE },
 					["maps"] = { IRONFORGE },
-					["sourceQuest"] = 3641,	-- Show Your Work
-					["altQuests"] = {
-						3645,	-- Membership Card Renewal
+					["timeline"] = { "removed 4.0.3.2000" },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["lvl"] = 30,
+					["g"] = {
+						i(10790),	-- Gnome Engineer Membership Card
+					},
+				}),
+				q(3643, {	-- Show Your Work
+					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
+					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
+					["altQuests"] = { 3639 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
+					["timeline"] = { "removed 4.0.3.2000" },
+					["cost"] = {
+						{ "i", 4392, 2 },	-- Advanced Target Dummy
+						{ "i", 4407, 1 },	-- Accurate Scope
+						{ "i", 10559, 6 },	-- Mithril Tube
+					},
+					["lvl"] = 30,
 					["g"] = {
 						i(10790),	-- Gnome Engineer Membership Card
 					},
 				}),
 				q(3640, {	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["maps"] = { IRONFORGE },
 					["sourceQuests"] = {
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 						3630,	-- Gnome Engineering
 					},
-					["altQuests"] = {
-						3638,	-- The Pledge of Secrecy
-					},
+					["altQuests"] = { 3638 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 69.8, 50.2, IRONFORGE },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["timeline"] = { "removed 4.0.3.2000" },
 					["cost"] = {
 						{ "i", 11283, 1 },	-- Overspark's Signed Pledge
 					},
-				}),
-				q(3641, {	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
-					["coord"] = { 69.8, 50.2, IRONFORGE },
-					["maps"] = { IRONFORGE },
-					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
-					["altQuests"] = {
-						3639,	-- Show Your Work
-					},
-					["cost"] = {
-						{ "i", 4392, 2 },	-- Advanced Target Dummy
-						{ "i", 4407, 1 },	-- Accurate Scope
-						{ "i", 10559, 6 },	-- Mithril Tube
-					},
-					["g"] = {
-						i(10790),	-- Gnome Engineer Membership Card
+					["groups"] = {
+						i(10793, {	-- Overspark's Pledge of Secrecy
+							i(11283),	-- Overspark's Signed Pledge
+						}),
 					},
 				}),
 				q(3642, {	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
 					["sourceQuests"] = {
 						3635,	-- Gnome Engineering
 						3637,	-- Gnome Engineering
 					},
-					["altQuests"] = {
-						3638,	-- The Pledge of Secrecy
-					},
+					["altQuests"] = { 3638 },	-- The Pledge of Secrecy
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { STRANGLETHORN_VALE },
+					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 10794, 1 },	-- Oglethorpe's Signed Pledge
 					},
-				}),
-				q(3643, {	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
-					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
-					["maps"] = { STRANGLETHORN_VALE },
-					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
-					["altQuests"] = {
-						3639,	-- The Pledge of Secrecy
+					["groups"] = {
+						i(10794, {	-- Oglethorpe's Pledge of Secrecy
+							i(10794),	-- Oglethorpe's Signed Pledge
+						}),
 					},
-					["cost"] = {
-						{ "i", 4392, 2 },	-- Advanced Target Dummy
-						{ "i", 4407, 1 },	-- Accurate Scope
-						{ "i", 10559, 6 },	-- Mithril Tube
-					},
-					["g"] = {
-						i(10790),	-- Gnome Engineer Membership Card
+				}),
+			}),
+			n(REWARDS, {
+				i(11423, {	-- Gnome Engineer's Renewal Gift
+					["description"] = "If you destroy your Gnomish Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+					["timeline"] = { "removed 4.0.3.2000" },
+					["groups"] = {
+						i(10603),	-- Schematic: Catseye Ultra Goggles
+						i(11827),	-- Schematic: Lil' Smoky
+						i(10606),	-- Schematic: Parachute Cloak
 					},
 				}),
 			}),

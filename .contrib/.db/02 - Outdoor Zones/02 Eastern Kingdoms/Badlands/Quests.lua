@@ -148,17 +148,6 @@ _.Zones =
 						i(5421),	-- Fiery Blaze Enchantment
 					},
 				}),
-				{
-					["questID"] = 1559,	-- Flash Bomb Recipe
-					["sourceQuest"] = 705,	-- Pearl Diving
-					["qg"] = 2817,	-- Rigglefuzz
-					["coord"] = { 42.39, 52.93, BADLANDS },
-					["requireSkill"] = ENGINEERING,
-					["lvl"] = 30,
-					["groups"] = {
-						i(6672),	-- Schematic: Flash Bomb
-					},
-				},
 				q(737, {	-- Forbidden Knowledge
 					["sourceQuests"] = {
 						735,	-- To Ironforge for Yagyin's Digest

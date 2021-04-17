@@ -85,126 +85,57 @@ profession(ENGINEERING, {
 				}
 			},
 			n(QUESTS, {
-				i(11422, {	-- Goblin Engineer's Renewal Gift
-					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
-					["groups"] = {
-						i(4417),	-- Schematic: Large Seaforium Charge
-						i(11828),	-- Schematic: Pet Bombling
-						i(4416),	-- Schematic: Goblin Land Mine
-					},
-				}),
-				q(3526, {	-- Goblin Engineering
+				q(3644, {	-- Membership Card Renewal
+					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
+					["sourceQuest"] = 3639,	-- Show Your Work
 					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
+					["coord"] = { 54.4, 27.2, TANARIS },
 					["requireSkill"] = ENGINEERING,
-					["qg"] = 4586,	-- Graham Van Talen <Journeyman Engineer>
-					["coord"] = { 75.6, 74.6, UNDERCITY },
-					["maps"] = { UNDERCITY },
-					["altQuests"] = {
-						3633,	-- Goblin Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3629, {	-- Goblin Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 5518,	-- Lilliam Sparkspindle <Expert Engineer>
-					["coord"] = { 55.0, 8.6, STORMWIND_CITY },
-					["maps"] = { STORMWIND_CITY },
-					["altQuests"] = {
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3634,	-- Gnome Engineering
-						4181,	-- Goblin Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3633, {	-- Goblin Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = HORDE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 3494,	-- Tinkerwiz <Journeyman Engineer>
-					["coord"] = { 62.6, 36.2, THE_BARRENS },
-					["maps"] = { THE_BARRENS },
-					["altQuests"] = {
-						3526,	-- Goblin Engineering
-						3635,	-- Gnome Engineering
-						3637,	-- Gnome Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(4181, {	-- Goblin Engineering
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["races"] = ALLIANCE_ONLY,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 5174,	-- Springspindle Fizzlegear <Artisan Engineer>
-					["coord"] = { 68.8, 45.2, IRONFORGE },
-					["maps"] = { IRONFORGE },
-					["altQuests"] = {
-						3629,	-- Goblin Engineering
-						3630,	-- Gnome Engineering
-						3632,	-- Gnome Engineering
-						3634,	-- Gnome Engineering
-					},
-					["cost"] = {
-						{ "i", 10789, 1 },	-- Manual of Engineering Disciplines
-					},
-				}),
-				q(3645, {	-- Membership Card Renewal
-					["description"] = "Requires 200 Engineering to start this quest.",
+					["maps"] = { TANARIS },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["timeline"] = { "removed 4.0.3.2000" },
 					["repeatable"] = true,
 					["lvl"] = 30,
-					["requireSkill"] = ENGINEERING,
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["maps"] = { TANARIS },
-					["sourceQuest"] = 3639,	-- Show Your Work
-					["altQuests"] = {
-						3645,	-- Membership Card Renewal
-						3647,	-- Membership Card Renewal
-					},
 					["g"] = {
-						i(10790),	-- Gnome Engineer Membership Card
+						i(10791),	-- Goblin Engineer Membership Card
+					},
+				}),
+				q(3646, {	-- Membership Card Renewal
+					["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
+					["sourceQuest"] = 3639,	-- Show Your Work
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 62.6, 36.2, THE_BARRENS },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { THE_BARRENS },
+					["cost"] = { { "g", 20000 } },	-- 2g
+					["timeline"] = { "removed 4.0.3.2000" },
+					["repeatable"] = true,
+					["lvl"] = 30,
+					["g"] = {
+						i(10791),	-- Goblin Engineer Membership Card
 					},
 				}),
 				q(3639, {	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["requireSkill"] = ENGINEERING,
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["maps"] = { TANARIS },
 					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
 					["altQuests"] = {
 						3641,	-- Show Your Work
 						3643,	-- Show Your Work
 					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { TANARIS },
+					["timeline"] = { "removed 4.0.3.2000" },
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
 						{ "i", 10559, 6 },	-- Mithril Tube
 					},
+					["lvl"] = 30,
 				}),
 				q(3638, {	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["lvl"] = 30,
-					["requireSkill"] = ENGINEERING,
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["maps"] = { TANARIS },
 					["sourceQuests"] = {
 						3526,	-- Goblin Engineering
 						3629,	-- Goblin Engineering
@@ -215,8 +146,25 @@ profession(ENGINEERING, {
 						3640,	-- The Pledge of Secrecy
 						3642,	-- The Pledge of Secrecy
 					},
+					["description"] = "Requires 200 Engineering to start this quest.",
+					["coord"] = { 54.4, 27.2, TANARIS },
+					["requireSkill"] = ENGINEERING,
+					["maps"] = { TANARIS },
+					["timeline"] = { "removed 4.0.3.2000" },
 					["cost"] = {
 						{ "i", 10792, 1 },	-- Nixx's Pledge of Secrecy
+					},
+					["lvl"] = 30,
+				}),
+			}),
+			n(REWARDS, {
+				i(11422, {	-- Goblin Engineer's Renewal Gift
+					["description"] = "If you destroy your Goblin Engineer Membership Card, you can renew your membership for 2 Gold and will receive this gift in the mail in about a day.",
+					["timeline"] = { "removed 4.0.3.2000" },
+					["groups"] = {
+						i(4417),	-- Schematic: Large Seaforium Charge
+						i(11828),	-- Schematic: Pet Bombling
+						i(4416),	-- Schematic: Goblin Land Mine
 					},
 				}),
 			}),
