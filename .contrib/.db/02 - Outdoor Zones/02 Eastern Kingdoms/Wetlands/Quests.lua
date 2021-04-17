@@ -282,9 +282,6 @@ _.Zones =
 					["coord"] = { 8.4, 58.6, WETLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
-						i(929),	-- Healing Potion
-					},
 				}),
 				q(473, {	-- Report to Captain Stoutfist
 					["qg"] = 2086,	-- Valstag Ironjaw

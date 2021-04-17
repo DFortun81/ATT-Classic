@@ -205,9 +205,6 @@ _.Zones =
 					["lvl"] = 10,
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1089,	-- Mountaineer Cobbleflint
-					["g"] = {
-						i(414),	-- Dalaran Sharp
-					},
 					["coord"] = { 22.1, 73.2, LOCH_MODAN },
 				}),
 				q(237, {	-- In Defense of the King's Lands (2/4)
@@ -215,9 +212,6 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["qg"] = 1091,	-- Mountaineer Gravelgaw
 					["sourceQuest"] = 224,	-- In Defense of the King's Lands (1/4)
-					["g"] = {
-						i(858),	-- Lesser Healing Potion
-					},
 				}),
 				q(263, {	-- In Defense of the King's Lands (3/4)
 					["lvl"] = 10,

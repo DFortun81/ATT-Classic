@@ -142,7 +142,6 @@ _.Zones =
 							["coord"] = { 64.2, 62.5, HILLSBRAD_FOOTHILLS },
 						},
 						i(2459),	-- Swiftness Potion
-						i(929),	-- Healing Potion
 					},
 				}),
 				q(513, {	-- Elixir of Agony
