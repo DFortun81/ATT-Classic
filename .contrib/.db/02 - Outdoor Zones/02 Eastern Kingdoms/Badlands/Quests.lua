@@ -82,17 +82,6 @@ _.Zones =
 					},
 					["lvl"] = 36,
 				}),
-				q(2203, {	-- Badlands Reagent Run II
-					["qg"] = 6868,	-- Jarkal Mossmeld
-					["sourceQuest"] = 2202,	-- Uldaman Reagent Run
-					["coord"] = { 2.6, 46, BADLANDS },
-					["requireSkill"] = ALCHEMY,
-					["races"] = HORDE_ONLY,
-					["cost"] = {
-						{ "i", 7867, 3 },	-- Vessel of Dragon's Blood
-					},
-					["lvl"] = 40,
-				}),
 				q(703, {	-- Barbecued Buzzard Wings
 					["qg"] = 2817,	-- Rigglefuzz
 					["coord"] = { 42.39, 52.93, BADLANDS },

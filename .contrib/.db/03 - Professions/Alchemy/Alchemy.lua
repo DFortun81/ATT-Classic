@@ -187,7 +187,10 @@ profession(ALCHEMY, {
 			},
 			{
 				["name"] = "Restorative Potion",
-				["recipeID"] = 11452
+				["recipeID"] = 11452,
+				-- #if AFTER CATA
+				["u"] = REMOVED_FROM_GAME,
+				-- #endif
 			},
 			{
 				["name"] = "Shadow Protection Potion",
