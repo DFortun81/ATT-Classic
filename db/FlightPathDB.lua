@@ -442,4 +442,24 @@ select(2, ...).FlightPathDB = {
 		coord={ 63.0, 37.0, 1413 },
 		qg=16227,	-- Bragok <Flight Master>
 	},
+	[84] = {
+		name="Plaguewood Tower, Eastern Plaguelands",
+		faction=0,
+		u=1,
+	},
+	[85] = {
+		name="Northpass Tower, Eastern Plaguelands",
+		faction=0,
+		u=1,
+	},
+	[86] = {
+		name="Eastwall Tower, Eastern Plaguelands",
+		faction=0,
+		u=1,
+	},
+	[87] = {
+		name="Crown Guard Tower, Eastern Plaguelands",
+		faction=0,
+		u=1,
+	},
 };
