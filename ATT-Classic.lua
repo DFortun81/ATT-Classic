@@ -8608,9 +8608,11 @@ function app:GetDataCache()
 			for i,fp in pairs(app.FlightPathDB) do
 				if not self.fps[i] then
 					local fp = app.CreateFlightPath(tonumber(i));
-					fp.parent = self;
 					self.fps[i] = fp;
-					tinsert(self.g, fp);
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
 				end
 			end
 			table.sort(self.g, function(a, b)
