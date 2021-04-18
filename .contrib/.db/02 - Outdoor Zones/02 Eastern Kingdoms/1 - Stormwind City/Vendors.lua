@@ -97,9 +97,9 @@ _.Zones =
 					["coord"] = { 43.0, 64.2, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana
-							["isLimited"] = true,
-						}),
+						-- #if BEFORE CATA
+						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						-- #if NOT CLASSIC
 						i(20753),	-- Formula: Lesser Wizard Oil
 						i(20752),	-- Formula: Minor Mana Oil

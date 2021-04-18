@@ -37,7 +37,9 @@ _.Zones =
 					["coord"] = { 53.6, 38.0, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch

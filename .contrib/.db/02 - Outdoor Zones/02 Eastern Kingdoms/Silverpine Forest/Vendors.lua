@@ -46,7 +46,9 @@ _.Zones =
 					["coord"] = { 54.0, 82.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
 					},
@@ -55,7 +57,9 @@ _.Zones =
 					["coord"] = { 43.0, 50.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
 					},

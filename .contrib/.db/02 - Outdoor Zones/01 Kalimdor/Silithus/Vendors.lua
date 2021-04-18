@@ -24,6 +24,9 @@ _.Zones =
 				n(15419, {	-- Kania <Enchanting Supplies>
 					["coord"] = { 52.0, 39.7, SILITHUS },
 					["groups"] = bubbleDown({ ["u"] = PHASE_FIVE }, {
+						-- #if BEFORE CATA
+						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(20732),	-- Formula: Enchant Cloak - Greater Fire Resistance
 						i(20733),	-- Formula: Enchant Cloak - Greater Nature Resistance
 						i(20754),	-- Formula: Lesser Mana Oil

@@ -80,7 +80,9 @@ _.Zones =
 					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
 					["groups"] = {						
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
 					},
 				}),

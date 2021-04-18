@@ -121,9 +121,9 @@ _.Zones =
 					["coord"] = { 60.8, 44.2, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6342, {	-- Formula: Enchant Chest - Minor Mana
-							["isLimited"] = true,
-						}),
+						-- #if BEFORE CATA
+						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(6349, {	-- Formula: Enchant 2H Weapon - Lesser Intellect
 							["isLimited"] = true,
 						}),

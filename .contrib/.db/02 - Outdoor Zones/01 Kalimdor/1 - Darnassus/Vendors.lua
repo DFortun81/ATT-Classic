@@ -87,7 +87,9 @@ _.Zones =
 					["coord"] = { 58.6, 14.7, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),

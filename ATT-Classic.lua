@@ -3965,7 +3965,7 @@ app.CacheFlightPathData = function()
 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 		if allNodeData then
 			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.name then 
+				if nodeData.name then
 					local node = app.FlightPathDB[nodeData.nodeID];
 					if node then
 						node.name = nodeData.name;
@@ -8608,6 +8608,7 @@ function app:GetDataCache()
 			for i,fp in pairs(app.FlightPathDB) do
 				if not self.fps[i] then
 					local fp = app.CreateFlightPath(tonumber(i));
+					fp.parent = self;
 					self.fps[i] = fp;
 					tinsert(self.g, fp);
 				end
@@ -8616,7 +8617,7 @@ function app:GetDataCache()
 				return a.text < b.text;
 			end);
 		end;
-		db.OnUpdate(db);
+		db:OnUpdate();
 		db.expanded = false;
 		db.icon = app.asset("Category_FlightPaths");
 		db.text = "Flight Paths";

@@ -50,7 +50,17 @@ _.Zones =
 				}),
 				n(11185, {	-- Xizzer Fizzbolt <Engineering Supplies>
 					["coord"] = { 60.8, 38.6, WINTERSPRING },
-					["groups"] = {						
+					["groups"] = {
+						i(32381, {	-- Schematic: Fused Wiring
+							["spellID"] = 39895,	-- Fused Wiring
+							["requireSkill"] = ENGINEERING,
+							["isLimited"] = true,
+							-- #if AFTER MOP
+							["u"] = REMOVED_FROM_GAME,
+							-- #else
+							["u"] = TBC_PHASE_ONE,
+							-- #endif
+						}),
 						i(16046),	-- Schematic: Masterwork Target Dummy	
 						i(16047),	-- Schematic: Thorium Tube
 						i(16050),	-- Schematic: Delicate Arcanite Converter

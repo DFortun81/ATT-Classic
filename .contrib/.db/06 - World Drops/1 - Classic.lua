@@ -2822,6 +2822,7 @@ _.WorldDrops = { tier(1, {	-- Classic
 			i(16218),	-- Formula: Enchant Bracer - Superior Spirit
 			i(16251),	-- Formula: Enchant Bracer - Superior Stamina
 			i(16253),	-- Formula: Enchant Chest - Greater Stats
+			i(6342),	-- Formula: Enchant Chest - Minor Mana
 			i(11098),	-- Formula: Enchant Cloak - Lesser Shadow Resistance
 			i(11226),	-- Formula: Enchant Gloves - Riding Skill
 			i(11224),	-- Formula: Enchant Shield - Frost Resistance

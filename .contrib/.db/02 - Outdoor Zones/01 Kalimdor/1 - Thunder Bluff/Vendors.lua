@@ -46,7 +46,9 @@ _.Zones =
 					["coord"] = { 45.2, 40.0, THUNDER_BLUFF },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
+						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
+						-- #endif
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
 						i(6377),	-- Formula: Enchant Boots - Minor Agility
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
