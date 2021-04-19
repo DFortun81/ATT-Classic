@@ -2,9 +2,6 @@ profession(ENGINEERING, {
 	prof(20222, {	-- Goblin Engineering
 		["description"] = "These items can only be crafted by Engineers who have completed the Goblin Engineering quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level a second Engineer and complete the opposing specialization.",
 		["sourceQuest"] = 3639,	-- Show Your Work
-		["cost"] = {
-			{ "i", 10791, 1 },	-- Goblin Engineer Membership Card
-		},
 		["groups"] = {
 			{
 				["name"] = "Devices",
@@ -114,47 +111,6 @@ profession(ENGINEERING, {
 					["g"] = {
 						i(10791),	-- Goblin Engineer Membership Card
 					},
-				}),
-				q(3639, {	-- Show Your Work
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
-					["altQuests"] = {
-						3641,	-- Show Your Work
-						3643,	-- Show Your Work
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["requireSkill"] = ENGINEERING,
-					["maps"] = { TANARIS },
-					["timeline"] = { "removed 4.0.3.2000" },
-					["cost"] = {
-						{ "i", 4392, 2 },	-- Advanced Target Dummy
-						{ "i", 4407, 1 },	-- Accurate Scope
-						{ "i", 10559, 6 },	-- Mithril Tube
-					},
-					["lvl"] = 30,
-				}),
-				q(3638, {	-- The Pledge of Secrecy
-					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
-					["sourceQuests"] = {
-						3526,	-- Goblin Engineering
-						3629,	-- Goblin Engineering
-						3633,	-- Goblin Engineering
-						4181,	-- Goblin Engineering
-					},
-					["altQuests"] = {
-						3640,	-- The Pledge of Secrecy
-						3642,	-- The Pledge of Secrecy
-					},
-					["description"] = "Requires 200 Engineering to start this quest.",
-					["coord"] = { 54.4, 27.2, TANARIS },
-					["requireSkill"] = ENGINEERING,
-					["maps"] = { TANARIS },
-					["timeline"] = { "removed 4.0.3.2000" },
-					["cost"] = {
-						{ "i", 10792, 1 },	-- Nixx's Pledge of Secrecy
-					},
-					["lvl"] = 30,
 				}),
 			}),
 			n(REWARDS, {
