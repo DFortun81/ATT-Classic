@@ -165,6 +165,7 @@ local UnobtainableSettingsBase = {
 		[16] = true,	-- Phase 6
 		[1601] = true,	-- Scourge Invasion
 		[1602] = true,	-- Silithyst
+		[1603] = true,	-- Silithyst
 
 		-- Seasonal Filters
 		[1000] = false,	-- Brewfest

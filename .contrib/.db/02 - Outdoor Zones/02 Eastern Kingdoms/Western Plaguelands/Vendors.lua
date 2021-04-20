@@ -84,8 +84,11 @@ _.Zones =
 					["groups"] = bubbleDown({ ["u"] = PHASE_SIX_CLASSICERA }, {
 						i(184937, {	-- Chronoboon Displacer
 							["sourceQuest"] = 4972,	-- Counting Out Time
+							["f"] = 55,	-- Consumable
 							["groups"] = {
-								i(184938),	-- Supercharged Chronoboon Displacer
+								i(184938, {	-- Supercharged Chronoboon Displacer
+									["f"] = 55,	-- Consumable
+								}),
 							},
 						}),
 					}),

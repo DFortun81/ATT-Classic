@@ -1124,7 +1124,7 @@ app.L = {
 		[16] = {2, "|CFFAAFFAAThis will not be available until Phase 6 of WoW Classic.|r", "Phase 6", true },
 		[1601] = {2, "|CFFAAFFAAThis was only available during the Scourge Invasion.|r", "Scourge Invasion", nil, "\n \n|CFFFFAAAAIf the Scourge Invasion has been completed on your server, simply turn this off.|r" },
 		[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", true, "\n \n|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
-		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", nil, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
+		[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", true, "\n \n|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
 
 		-- Seasonal Filters
 		[1000] = {3, "|CFFAAAAFFThis requires the Brewfest Holiday to be Active.|r", "Brewfest" },

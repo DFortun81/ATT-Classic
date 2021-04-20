@@ -1,5 +1,5 @@
 ## Author: Crieve-Sargeras
-## Interface: 11306
+## Interface: 11307
 ## X-Curse-Project-ID: 267285
 ## Title: ATT-Classic
 ## Name: ATT-Classic
