@@ -545,12 +545,11 @@ _.Zones =
 					},
 					["lvl"] = 42,
 					["g"] = {
-						{
-							["itemID"] = 4103,	-- Shackle Key
-							["questID"] = 630,	-- Message in a Bottle (2/2)
+						i(4103, {	-- Shackle Key
 							["cr"] = 1559,	-- King Mukla
+							["questID"] = 630,	-- Message in a Bottle (2/2)
 							["coord"] = { 40.8, 83.2, STRANGLETHORN_VALE },
-						},
+						}),
 						i(4118),	-- Poobah's Nose Ring
 					},
 				}),
