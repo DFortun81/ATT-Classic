@@ -122,8 +122,11 @@ _.Zones =
 					},
 				}),
 				q(3785, {	-- Morrowgrain Research
-					["lvl"] = 47,
+					["cost"] = {
+						{ "i", 11040, 10 },	-- Morrowgrain
+					},
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 47,
 					["g"] = {
 						i(11887),	-- Cenarion Circle Cache
 					},

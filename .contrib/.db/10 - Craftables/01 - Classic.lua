@@ -894,6 +894,17 @@ _.Craftables = { tier(1, {	-- Classic
 	prof(HERBALISM, {
 		["description"] = "The following items can be gathered by Herbalists out in the world.",
 		["groups"] = {
+			i(11020, {	-- Evergreen Pouch
+				["cost"] = {
+					{ "i", 11018, 2 },	-- Un'Goro Soil
+					{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
+				},
+				["groups"] = {
+					i(11024, {	-- Evergreen Herb Casing
+						i(11040),	-- Morrowgrain
+					}),
+				},
+			}),
 			i(8836),	-- Arthas' Tears [Herbalism 220]
 			i(13468),	-- Black Lotus [Herbalism 300]
 			i(8839),	-- Blindweed [Herbalism 235]

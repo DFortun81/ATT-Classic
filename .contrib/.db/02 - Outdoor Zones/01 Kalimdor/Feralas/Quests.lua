@@ -646,21 +646,6 @@ _.Zones =
 					},
 					["lvl"] = 47,
 					["g"] = {
-						{
-							["itemID"] = 11020,	-- Evergreen Pouch
-							["cost"] = {
-								{ "i", 11018, 2 },	-- Un'Goro Soil
-								{ "i", 11022, 1 },	-- Packet of Tharlendris Seeds
-							},
-							["groups"] = {
-								i(11024, {	-- Evergreen Herb Casing
-									{
-										["itemID"] = 11040,	-- Morrowgrain
-										["questID"] = 3791,	-- The Mystery of Morrowgrain
-									},
-								}),
-							},
-						},
 						i(11888),	-- Quintis' Research Gloves
 						i(11889),	-- Bark Iron Pauldrons
 					},
