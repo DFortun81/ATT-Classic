@@ -469,7 +469,10 @@ _.Skills =
 				},
 				["OnUpdate"] = [[function(t)
 					if _.ClassIndex == ]] .. SHAMAN .. [[ then
-						t.visible = _.IsSpellKnown(16269);
+						rawset(t, 'collectible', nil);
+						if not _.IsSpellKnown(16269) then
+							rawset(t, 'collectible', false);
+						end
 					end
 				end]],
 			},
@@ -486,7 +489,10 @@ _.Skills =
 				},
 				["OnUpdate"] = [[function(t)
 					if _.ClassIndex == ]] .. SHAMAN .. [[ then
-						t.visible = _.IsSpellKnown(16269);
+						rawset(t, 'collectible', nil);
+						if not _.IsSpellKnown(16269) then
+							rawset(t, 'collectible', false);
+						end
 					end
 				end]],
 			},

@@ -427,7 +427,8 @@ GameTooltipModel.TrySetModel = function(self, reference)
 end
 GameTooltipModel:Hide();
 
-app.AlwaysShowUpdate = function(data) data.visible = true; end
+app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true;  end
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
@@ -3543,7 +3544,7 @@ local fields = {
 		return app.NoFilter;
 	end,
 	["OnUpdate"] = function(t)
-		return app.AlwaysShowUpdate;
+		return app.AlwaysShowUpdateWithoutReturn;
 	end,
 	["saved"] = function(t)
 		local questID = GetRelativeValue(t, "questID");
@@ -6138,6 +6139,24 @@ app.SpecializationSpellIDs = setmetatable({
 	[10660] = 2108,	-- Tribal Leatherworking
 }, {__index = function(t,k) return k; end})
 
+local BLACKSMITHING = ATTC.SkillIDToSpellID[164];
+local LEATHERWORKING = ATTC.SkillIDToSpellID[165];
+local TAILORING = ATTC.SkillIDToSpellID[197];
+app.OnUpdateForOmarionsHandbook = function(t)
+	t.visible = true;
+	rawset(t, "collectible", nil);
+	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") or CompletedQuests[9233] then
+		return false;
+	else
+		for spellID,skills in pairs(ATTC.GetDataSubMember("ActiveSkillsPerCharacter", ATTC.GUID)) do
+			if (spellID == BLACKSMITHING or spellID == LEATHERWORKING or spellID == TAILORING) and skills[1] > 290 then
+				rawset(t, "collectible", false);
+				t.visible = false;
+				return true;
+			end
+		end
+	end
+end;
 local fields = {
 	["key"] = function(t)
 		return "professionID";
@@ -6944,14 +6963,21 @@ UpdateGroup = function(parent, group)
 	
 	-- Set the visibility
 	group.visible = visible;
-	if group.OnUpdate then group:OnUpdate(); end
-	return group.visible;
+	return visible;
 end
 UpdateGroups = function(parent, g)
 	if g then
 		local visible = false;
 		for key, group in ipairs(g) do
-			if UpdateGroup(parent, group) then
+			if group.OnUpdate then
+				if not group:OnUpdate() then
+					if UpdateGroup(parent, group) then
+						visible = true;
+					end
+				elseif group.visible then
+					visible = true;
+				end
+			elseif UpdateGroup(parent, group) then
 				visible = true;
 			end
 		end
@@ -9226,7 +9252,6 @@ app:GetWindow("Attuned", UIParent, function(self)
 								table.insert(tempRanks, {
 									["text"] = GuildControlGetRankName(rankIndex),
 									["icon"] = format("%s%02d","Interface\\PvPRankBadges\\PvPRank", (15 - rankIndex)),
-									["OnUpdate"] = app.AlwaysShowUpdate,
 									["visible"] = true,
 									["g"] = {}
 								});
@@ -9386,7 +9411,6 @@ app:GetWindow("CosmicInfuser", UIParent, function(self)
 				["description"] = "This window helps debug when we're missing map IDs in the addon.",
 				['visible'] = true, 
 				['expanded'] = true,
-				['OnUpdate'] = app.AlwaysShowUpdate,
 				['g'] = {
 					{
 						['text'] = "Check for missing maps now!",
@@ -10059,14 +10083,15 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 							if tostring(f) ~= text then
 								-- The string form did not match, the filter must have been by name.
 								for id,filter in pairs(L["FILTER_ID_TYPES"]) do
-									if string.find(string.lower(filter), text) then
-										filter = tonumber(id);
+									if string.match(string.lower(filter), text) then
+										f = tonumber(id);
 										break;
 									end
 								end
 							end
 							if f then
 								self.data.results = app:BuildSearchResponse(app:GetWindow("Prime").data.g, "f", f);
+								row.ref.f = f;
 								self.dirty = true;
 							end
 							wipe(searchCache);
@@ -10092,9 +10117,6 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 		
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		for i,g in ipairs(self.data.g) do
-			if g.OnUpdate then g.OnUpdate(g, self); end
-		end
 		
 		-- Update the groups without forcing Debug Mode.
 		local visibilityFilter = app.VisibilityFilter;
@@ -10274,7 +10296,7 @@ app:GetWindow("RaidAssistant", UIParent, function(self)
 				['g'] = {},
 			};
 			lootthreshold = {
-				['text'] = LOOT_TRESHOLD,
+				['text'] = "Loot Threshold",
 				['icon'] = "Interface\\Icons\\INV_Misc_Coin_01.blp",
 				["description"] = "Select a new loot threshold.",
 				['OnClick'] = function(row, button)
@@ -10501,6 +10523,21 @@ app:GetWindow("Random", UIParent, function(self)
 					return temp;
 				end
 			end
+			function self:SelectQuest()
+				if searchCache["randomquest"] then
+					return searchCache["randomquest"];
+				else
+					local searchResults, dict, temp = {}, {} , {};
+					SearchRecursively(app:GetWindow("Prime").data, "questID", searchResults);
+					for i,o in pairs(searchResults) do
+						if not (o.saved or o.collected) and o.collectible then
+							tinsert(temp, o);
+						end
+					end
+					searchCache["randomquest"] = temp;
+					return temp;
+				end
+			end
 			function self:SelectInstance()
 				if searchCache["randominstance"] then
 					return searchCache["randominstance"];
@@ -10584,7 +10621,6 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = "Please select a search filter option.",
 				['visible'] = true,
 				['expanded'] = true,
-				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				['g'] = {
 					setmetatable({
@@ -10609,6 +10645,19 @@ app:GetWindow("Random", UIParent, function(self)
 						['visible'] = true,
 						['OnClick'] = function(row, button)
 							app.SetDataMember("RandomSearchFilter", "Item");
+							self.data = mainHeader;
+							self:Reroll();
+							return true;
+						end,
+						['OnUpdate'] = app.AlwaysShowUpdate,
+					},
+					{
+						['text'] = "Quest",
+						['icon'] = "Interface\\GossipFrame\\AvailableQuestIcon",
+						['description'] = "Click this button to select a random quest based on what you're missing.",
+						['visible'] = true,
+						['OnClick'] = function(row, button)
+							app.SetDataMember("RandomSearchFilter", "Quest");
 							self.data = mainHeader;
 							self:Reroll();
 							return true;
@@ -10675,7 +10724,6 @@ app:GetWindow("Random", UIParent, function(self)
 				["description"] = "This window allows you to randomly select a place or item to get. Go get 'em!",
 				['visible'] = true, 
 				['expanded'] = true,
-				['OnUpdate'] = app.AlwaysShowUpdate,
 				['back'] = 1,
 				["indent"] = 0,
 				['options'] = {

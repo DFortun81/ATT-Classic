@@ -1277,6 +1277,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 5 },	-- Frozen Rune
 						{ "i",  7080, 2 },	-- Essence of Water
@@ -1295,6 +1296,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 5 },	-- Frozen Rune
 						{ "i",  7080, 4 },	-- Essence of Water
@@ -1314,6 +1316,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 8 },	-- Frozen Rune
 						{ "i",  7080, 6 },	-- Essence of Water
@@ -1332,6 +1335,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { PRIEST, MAGE, WARLOCK },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 4 },	-- Frozen Rune
 						{ "i",  7080, 2 },	-- Essence of Water
@@ -1350,6 +1354,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { WARRIOR, PALADIN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 4 },	-- Frozen Rune
 						{ "i", 7080, 2 },	-- Essence of Water
@@ -1369,6 +1374,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { WARRIOR, PALADIN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 8 },	-- Frozen Rune
 						{ "i", 7080, 4 },	-- Essence of Water
@@ -1387,6 +1393,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { WARRIOR, PALADIN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 5 },	-- Frozen Rune
 						{ "i", 7080, 2 },	-- Essence of Water
@@ -1405,6 +1412,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { HUNTER, SHAMAN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 4 },	-- Frozen Rune
 						{ "i",  7080, 5 },	-- Essence of Water
@@ -1424,6 +1432,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { HUNTER, SHAMAN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 8 },	-- Frozen Rune
 						{ "i",  7080, 7 },	-- Essence of Water
@@ -1442,6 +1451,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { HUNTER, SHAMAN },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 5 },	-- Frozen Rune
 						{ "i",  7080, 5 },	-- Essence of Water
@@ -1457,6 +1467,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 				q(9233, {	-- Omarion's Handbook
 					["provider"] = { "i", 22719 },	-- Omarion's Handbook
 					["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["lvl"] = 60,
 				}),
 				q(9241, {	-- Polar Bracers
@@ -1465,6 +1476,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { ROGUE, DRUID },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 4 },	-- Frozen Rune
 						{ "i",  7080, 3 },	-- Essence of Water
@@ -1483,6 +1495,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { ROGUE, DRUID },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 5 },	-- Frozen Rune
 						{ "i",  7080, 3 },	-- Essence of Water
@@ -1502,6 +1515,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 					["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 					["maps"] = { EASTERN_PLAGUELANDS },
 					["classes"] = { ROGUE, DRUID },
+					["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 					["cost"] = {
 						{ "i", 22682, 8 },	-- Frozen Rune
 						{ "i",  7080, 5 },	-- Essence of Water
@@ -1841,6 +1855,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 								["questID"] = 9233,	-- Omarion's Handbook [Quest]
 								["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
 								["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
+								["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 							}),
 							{
 								["itemID"] = 22685,	-- Pattern: Glacial Cloak
