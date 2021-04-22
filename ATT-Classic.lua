@@ -10074,9 +10074,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 						end);
 						return true;
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
 			
@@ -10122,9 +10120,7 @@ app:GetWindow("ItemFinder", UIParent, function(self, ...)
 						self:Update(true);
 						return true;
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
 			db.blacklist = {
@@ -11188,9 +11184,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 						self:Update();
 						return true;
 					end,
-					['OnUpdate'] = function(data)
-						data.visible = true;
-					end,
+					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 				['usePersistence'] = setmetatable({
 					['text'] = "Use Persistence",
