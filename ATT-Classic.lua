@@ -1937,10 +1937,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #knownBy > 0 then
 				table.sort(knownBy);
 				local desc = "Known by ";
-				local characters = GetDataMember("Characters");
 				for i,key in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
-					desc = desc .. (characters[key] or key);
+					local character = ATTCharacterData[key];
+					desc = desc .. (character and character.text or key);
 				end
 				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 			end
@@ -3668,11 +3668,11 @@ local fields = {
 		local c = {};
 		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
 		if deathsPerCharacter then
-			local characters = GetDataMember("Characters");
 			for guid,deaths in pairs(deathsPerCharacter) do
 				if guid and deaths and deaths > 0 then
+					local character = ATTCharacterData[guid];
 					table.insert(c, {
-						["name"] = characters[guid] or guid or "???",
+						["name"] = character and character.text or guid or "???",
 						["deaths"] = deaths or 0
 					});
 				end
@@ -7993,9 +7993,10 @@ local function RowOnEnter(self)
 						return a[2] > b[2];
 					end);
 					GameTooltip:AddLine("|cff66ccffKnown by:|r");
-					local characters = GetDataMember("Characters");
 					for i,data in ipairs(knownBy) do
-						GameTooltip:AddDoubleLine("  " .. string.gsub(characters[data[1]] or data[1], "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
+						local guid = data[1];
+						local character = ATTCharacterData[guid];
+						GameTooltip:AddDoubleLine("  " .. string.gsub(character and character.text or guid, "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
 					end
 					
 				end
@@ -11924,6 +11925,40 @@ app.events.VARIABLES_LOADED = function()
 		app.FactionID = 0;
 	end
 	
+	-- Character Data Storage
+	local characterData = ATTCharacterData;
+	if not characterData then
+		characterData = {};
+		ATTCharacterData = characterData;
+	end
+	local currentCharacter = characterData[app.GUID];
+	if not currentCharacter then
+		currentCharacter = {};
+		app.CurrentCharacter = currentCharacter;
+		characterData[app.GUID] = currentCharacter;
+	end
+	if not currentCharacter.text then currentCharacter.text = app.Me; end
+	if not currentCharacter.name and name then currentCharacter.name = name; end
+	if not currentCharacter.realm and realm then currentCharacter.realm = realm; end
+	if not currentCharacter.guid and app.GUID then currentCharacter.guid = app.GUID; end
+	if not currentCharacter.lvl and app.Level then currentCharacter.lvl = app.Level; end
+	if not currentCharacter.factionID and app.FactionID then currentCharacter.factionID = app.FactionID; end
+	if not currentCharacter.classID and app.ClassIndex then currentCharacter.classID = app.ClassIndex; end
+	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
+	if not currentCharacter.class and class then currentCharacter.class = class; end
+	if not currentCharacter.race and race then currentCharacter.race = race; end
+	currentCharacter.lastPlayed = time();
+	
+	-- Convert over the deprecated Characters table.
+	local characters = GetDataMember("Characters");
+	if characters then
+		for guid,text in pairs(characters) do
+			if not characterData[guid] then
+				characterData[guid] = { ["text"] = text };
+			end
+		end
+	end
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFlightPaths", {});
@@ -12035,43 +12070,12 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedQuests", myQuests);
 	end
 	
-	-- GUID to Character Name cache
-	local characters = GetDataMember("Characters", {});
-	if not characters[app.GUID] or true then -- Temporary
-		-- Convert old-style "ME" data entries to "GUID" entries.
-		local nameF = name .. "%-" .. (realm or GetRealmName());
-		local CleanData = function(t, t2)
-			for key,data in pairs(t) do
-				if string.match(key, nameF) then
-					for id,state in pairs(data) do
-						t2[id] = state;
-					end
-					t[key] = nil;
-				elseif key ~= app.GUID then
-					local isEmpty = true;
-					for id,state in pairs(data) do
-						isEmpty = false;
-						break;
-					end
-					if isEmpty then
-						t[key] = nil;
-					end
-				end
-			end
-		end
-		CleanData(factions, myfactions);
-		CleanData(lockouts, myLockouts);
-		CleanData(recipes, myRecipes);
-		characters[app.GUID] = app.Me;
-	end
-	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
 		"AddonMessageProcessor",
 		"ActiveSkills",
 		"ActiveSkillsPerCharacter",
-		"Characters",
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
 		"CollectedFlightPaths",
