@@ -52,7 +52,7 @@ _.Zones =
 						{ 45.9, 51.1, WESTERN_PLAGUELANDS },
 						{ 47.9, 53.1, WESTERN_PLAGUELANDS },
 						{ 52.3, 55.0, WESTERN_PLAGUELANDS },
-						{ 47.0, 59.9, WESTERN_PLAGUELANDS },
+						{ 47.0, 69.9, WESTERN_PLAGUELANDS },
 						
 						-- The Writhing Haunt
 						{ 53.5, 63.5, WESTERN_PLAGUELANDS },

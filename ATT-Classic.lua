@@ -1767,12 +1767,14 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			tinsert(info, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = "ff66ccff" });
 		end
 		
+		local showOtherCharacterQuests = app.Settings:GetTooltipSetting("Show:OtherCharacterQuests");
 		if app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- Contents
 			if group.g and #group.g > 0 then
-				local entries, left, right = {};
+				local entries = {};
 				BuildContainsInfo(group.g, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 				if #entries > 0 then
+					local realmName, left, right = GetRealmName();
 					tinsert(info, { left = "Contains:" });
 					if #entries < 25 then
 						for i,item in ipairs(entries) do
@@ -1782,6 +1784,32 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
+							
+							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
+								local incompletes = {};
+								for guid,data in pairs(ATTCharacterData) do
+									if data.realm == realmName
+										and (not item.group.r or (data.factionID and item.group.r == data.factionID))
+										and (not item.group.races or (data.raceID and contains(item.group.races, data.raceID)))
+										and (not item.group.c or (data.classID and contains(item.group.c, data.classID))) then
+										incompletes[guid] = data;
+									end
+								end
+								for guid,quests in pairs(GetDataMember("CollectedQuestsPerCharacter")) do
+									if incompletes[guid] and quests[item.group.questID] then
+										incompletes[guid] = nil;
+									end
+								end
+								local desc, j = "", 0;
+								for guid,data in pairs(incompletes) do
+									if j > 0 then desc = desc .. ", "; end
+									desc = desc .. (data.text or guid);
+									j = j + 1;
+								end
+								if j > 0 then
+									tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+								end
+							end
 						end
 					else
 						for i=1,math.min(25, #entries) do
@@ -1792,6 +1820,27 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							if mapID and mapID ~= app.CurrentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 							if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 							tinsert(info, { left = item.prefix .. left, right = item.right });
+							
+							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
+								local incompletes = {};
+								for guid,data in pairs(ATTCharacterData) do
+									if data.realm == realmName then
+										incompletes[guid] = data;
+									end
+								end
+								for guid,quests in pairs(GetDataMember("CollectedQuestsPerCharacter")) do
+									if incompletes[guid] and quests[item.group.questID] then
+										incompletes[guid] = nil;
+									end
+								end
+								local desc, j = "", 0;
+								for guid,data in pairs(incompletes) do
+									if j > 0 then desc = desc .. ", "; end
+									desc = desc .. (data.text or guid);
+									j = j + 1;
+								end
+								tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
+							end
 						end
 						local more = #entries - 25;
 						if more > 0 then tinsert(info, { left = "And " .. more .. " more..." }); end
@@ -1802,9 +1851,10 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			-- Crafted Items
 			if crafted and #crafted > 0 then
 				if app.Settings:GetTooltipSetting("Show:CraftedItems") then
-					local entries, left, right = {};
+					local entries = {};
 					BuildContainsInfo(crafted, entries, paramA, paramB, "  ", app.noDepth and 99 or 1);
 					if #entries > 0 then
+						local left, right;
 						tinsert(info, { left = "Used to Craft:" });
 						if #entries < 25 then
 							table.sort(entries, function(a, b)

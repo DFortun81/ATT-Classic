@@ -136,6 +136,7 @@ local TooltipSettingsBase = {
 		["Report:CompletedQuests"] = false,
 		["ShowIconOnly"] = false,
 		["Show:CraftedItems"] = false,
+		["Show:OtherCharacterQuests"] = false,
 		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
 		["Show:SpellRanks"] = true,
@@ -1614,6 +1615,23 @@ end);
 ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowOtherCharactersCheckBox = settings:CreateCheckBox("Show Other Characters",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:OtherCharacterQuests"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:OtherCharacterQuests", self:GetChecked());
+end);
+ShowOtherCharactersCheckBox:SetATTTooltip("Enable this option if you want to see all of the characters on your account that still need to complete a quest in its tooltip.\n\nIE: You can look at a quest item and see that it may still be useful to a different character before getting rid of it.");
+ShowOtherCharactersCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Show Class Requirements",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("ClassRequirements"));
@@ -1629,7 +1647,7 @@ function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
 end);
 ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
-ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowOtherCharactersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Show Race Requirements",
 function(self)
