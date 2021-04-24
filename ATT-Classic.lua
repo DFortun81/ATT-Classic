@@ -848,8 +848,8 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 	if value then
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
+		app.CurrentCharacter.Quests[key] = 1;
 		SetDataSubMember("CollectedQuests", key, 1);
-		SetTempDataSubMember("CollectedQuests", key, 1);
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			local searchResults = app.SearchForField("questID", key);
 			if searchResults and #searchResults > 0 then
@@ -12058,6 +12058,19 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedQuestsPerCharacter table.
+	local collectedQuestsPerCharacter = GetDataMember("CollectedQuestsPerCharacter");
+	if collectedQuestsPerCharacter then
+		for guid,quests in pairs(collectedQuestsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.Quests = quests;
+		end
+	end
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("Deaths", 0);
 	GetDataMember("CollectedFactions", {});
@@ -12119,14 +12132,6 @@ app.events.VARIABLES_LOADED = function()
 	
 	
 	
-	-- Cache your character's quest data.
-	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
-	local myQuests = GetTempDataMember("CollectedQuests", quests[app.GUID]);
-	if not myQuests then
-		myQuests = {};
-		quests[app.GUID] = myQuests;
-		SetTempDataMember("CollectedQuests", myQuests);
-	end
 	
 	-- Clean up settings
 	local oldsettings = {};
@@ -12135,7 +12140,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFactions",
 		"CollectedFlightPaths",
 		"CollectedQuests",
-		"CollectedQuestsPerCharacter",
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
 		"Deaths",
