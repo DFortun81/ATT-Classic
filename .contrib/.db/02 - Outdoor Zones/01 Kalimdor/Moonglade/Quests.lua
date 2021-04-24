@@ -99,7 +99,14 @@ _.Zones =
 							["questID"] = 6001,	-- Body and Heart
 							["coord"] = { 43, 45, DARKSHORE },
 						},
-						recipe(5487),	-- Bear Form
+						{
+							["recipeID"] = 5487,	-- Bear Form // Dire Bear Form
+							["OnUpdate"] = [[function(t)
+								if _.IsSpellKnown(9634) then
+									t.collected = 2;
+								end
+							end]],
+						},
 						recipe(6795),	-- Growl
 						{
 							["recipeID"] = 6807,	-- Maul (Rank 1)
