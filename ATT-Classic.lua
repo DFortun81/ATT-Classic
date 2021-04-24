@@ -4135,7 +4135,7 @@ local fields = {
 		return app.CollectibleFlightPaths;
 	end,
 	["collected"] = function(t)
-		if GetTempDataSubMember("CollectedFlightPaths", t.flightPathID) then return 1; end
+		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
 		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
@@ -4189,9 +4189,9 @@ app.events.GOSSIP_SHOW = function()
 	if app.CacheFlightPathDataForTarget(knownNodeIDs) > 0 then
 		for nodeID,_ in pairs(knownNodeIDs) do
 			nodeID = tonumber(nodeID);
-			if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+			if not app.CurrentCharacter.FlightPaths[nodeID] then
 				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-				SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+				app.CurrentCharacter.FlightPaths[nodeID] = 1;
 				UpdateSearchResults(SearchForField("flightPathID", nodeID));
 			end
 		end
@@ -4223,9 +4223,9 @@ app.events.TAXIMAP_OPENED = function()
 	
 	for nodeID,_ in pairs(knownNodeIDs) do
 		nodeID = tonumber(nodeID);
-		if not GetTempDataSubMember("CollectedFlightPaths", nodeID) then
+		if not app.CurrentCharacter.FlightPaths[nodeID] then
 			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
-			SetTempDataSubMember("CollectedFlightPaths", nodeID, 1);
+			app.CurrentCharacter.FlightPaths[nodeID] = 1;
 			UpdateSearchResults(SearchForField("flightPathID", nodeID));
 		end
 	end
@@ -11991,7 +11991,8 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
-	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {} end
+	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -12028,6 +12029,19 @@ app.events.VARIABLES_LOADED = function()
 				characterData[guid] = character;
 			end
 			character.ActiveSkills = skills;
+		end
+	end
+	
+	-- Convert over the deprecated CollectedFlightPathsPerCharacter table.
+	local collectedFlightPathsPerCharacter = GetDataMember("CollectedFlightPathsPerCharacter");
+	if collectedFlightPathsPerCharacter then
+		for guid,flightPaths in pairs(collectedFlightPathsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.FlightPaths = flightPaths;
 		end
 	end
 	
@@ -12098,29 +12112,7 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedFactions", myfactions);
 	end
 	
-	-- Cache your character's flight path data.
-	local flightPaths = GetDataMember("CollectedFlightPathsPerCharacter", {});
-	local myFlightPaths = GetTempDataMember("CollectedFlightPaths", flightPaths[app.GUID]);
-	if not myFlightPaths then
-		myFlightPaths = {};
-		flightPaths[app.GUID] = myFlightPaths;
-		SetTempDataMember("CollectedFlightPaths", myFlightPaths);
-	end
 	
-	-- Migrate Flight Path data to the new containers.
-	if ATTClassicAD.FlightPaths then
-		for key,value in pairs(ATTClassicAD.FlightPaths) do
-			SetDataSubMember("CollectedFlightPaths", key, value);
-		end
-	end
-	if ATTCPCD and ATTCPCD.FlightPaths then
-		for key,value in pairs(ATTCPCD.FlightPaths) do
-			if value then
-				myFlightPaths[key] = value;
-				SetDataSubMember("CollectedFlightPaths", key, value);
-			end
-		end
-	end
 	
 	-- Cache your character's quest data.
 	local quests = GetDataMember("CollectedQuestsPerCharacter", {});
@@ -12138,7 +12130,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
 		"CollectedFlightPaths",
-		"CollectedFlightPathsPerCharacter",
 		"CollectedQuests",
 		"CollectedQuestsPerCharacter",
 		"CollectedSpells",
