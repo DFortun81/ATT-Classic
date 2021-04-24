@@ -2541,7 +2541,7 @@ local function RefreshSaves()
 end
 local function RefreshSkills()
 	-- Store Skill Data
-	local activeSkills = GetTempDataMember("ActiveSkills");
+	local activeSkills = app.CurrentCharacter.ActiveSkills;
 	wipe(activeSkills);
 	rawset(app.SpellNameToSpellID, 0, nil);
 	app.GetSpellName(0);
@@ -6192,7 +6192,7 @@ app.OnUpdateForOmarionsHandbook = function(t)
 	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") or CompletedQuests[9233] then
 		return false;
 	else
-		for spellID,skills in pairs(ATTC.GetDataSubMember("ActiveSkillsPerCharacter", ATTC.GUID)) do
+		for spellID,skills in pairs(app.CurrentCharacter.ActiveSkills) do
 			if (spellID == BLACKSMITHING or spellID == LEATHERWORKING or spellID == TAILORING) and skills[1] > 290 then
 				rawset(t, "collectible", false);
 				t.visible = false;
@@ -6866,7 +6866,7 @@ function app.FilterItemClass_RequiredSkill(item)
 	local requireSkill = item.requireSkill;
 	if requireSkill and (not item.professionID or not GetRelativeValue(item, "DontEnforceSkillRequirements") or item.b == 1) then
 		requireSkill = app.SkillIDToSpellID[requireSkill];
-		return requireSkill and GetTempDataMember("ActiveSkills")[requireSkill];
+		return requireSkill and app.CurrentCharacter.ActiveSkills[requireSkill];
 	else
 		return true;
 	end
@@ -8027,10 +8027,12 @@ local function RowOnEnter(self)
 			
 			-- If the item is a recipe, then show which characters know this recipe.
 			if not reference.collectible and app.Settings:GetTooltipSetting("KnownBy") then
-				local activeSkills, knownBy = GetDataMember("ActiveSkillsPerCharacter"), {};
-				for key,value in pairs(activeSkills) do
-					local skills = value[reference.spellID];
-					if skills then table.insert(knownBy, { key, skills[1], skills[2] }); end
+				local knownBy = {};
+				for _,character in pairs(ATTCharacterData) do
+					if character.ActiveSkills then
+						local skills = character.ActiveSkills[reference.spellID];
+						if skills then table.insert(knownBy, { character, skills[1], skills[2] }); end
+					end
 				end
 				if #knownBy > 0 then
 					table.sort(knownBy, function(a, b)
@@ -8038,9 +8040,8 @@ local function RowOnEnter(self)
 					end);
 					GameTooltip:AddLine("|cff66ccffKnown by:|r");
 					for i,data in ipairs(knownBy) do
-						local guid = data[1];
-						local character = ATTCharacterData[guid];
-						GameTooltip:AddDoubleLine("  " .. string.gsub(character and character.text or guid, "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
+						local character = data[1];
+						GameTooltip:AddDoubleLine("  " .. string.gsub(character and character.text or "???", "-" .. GetRealmName(), ""), data[2] .. " / " .. data[3]);
 					end
 					
 				end
@@ -11414,7 +11415,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			if skillCache then
 				-- Cache learned recipes and reagents
 				local reagentCache = app.GetDataMember("Reagents", {});
-				local activeSkills = GetTempDataMember("ActiveSkills");
 				local learned, craftSkillID, tradeSkillID = 0, 0, 0;
 				rawset(app.SpellNameToSpellID, 0, nil);
 				app.GetSpellName(0);
@@ -11991,6 +11991,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
+	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {} end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -12014,6 +12015,19 @@ app.events.VARIABLES_LOADED = function()
 				characterData[guid] = character;
 			end
 			character.Deaths = deaths;
+		end
+	end
+	
+	-- Convert over the deprecated ActiveSkillsPerCharacter table.
+	local activeSkillsPerCharacter = GetDataMember("ActiveSkillsPerCharacter");
+	if activeSkillsPerCharacter then
+		for guid,skills in pairs(activeSkillsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.ActiveSkills = skills;
 		end
 	end
 	
@@ -12055,15 +12069,6 @@ app.events.VARIABLES_LOADED = function()
 		myLockouts = {};
 		lockouts[app.GUID] = myLockouts;
 		SetTempDataMember("lockouts", myLockouts);
-	end
-	
-	-- Cache your character's skill data.
-	local skills = GetDataMember("ActiveSkillsPerCharacter", {});
-	local mySkills = GetTempDataMember("ActiveSkills", skills[app.GUID]);
-	if not mySkills then
-		mySkills = {};
-		skills[app.GUID] = mySkills;
-		SetTempDataMember("ActiveSkills", mySkills);
 	end
 	
 	-- Cache your character's spell ranks. (triviality of their recipes)
@@ -12130,8 +12135,6 @@ app.events.VARIABLES_LOADED = function()
 	local oldsettings = {};
 	for i,key in ipairs({
 		"AddonMessageProcessor",
-		"ActiveSkills",
-		"ActiveSkillsPerCharacter",
 		"CollectedFactions",
 		"CollectedFactionsPerCharacter",
 		"CollectedFlightPaths",
