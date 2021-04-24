@@ -1787,23 +1787,19 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							
 							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
 								local incompletes = {};
-								for guid,data in pairs(ATTCharacterData) do
-									if data.realm == realmName
-										and (not item.group.r or (data.factionID and item.group.r == data.factionID))
-										and (not item.group.races or (data.raceID and contains(item.group.races, data.raceID)))
-										and (not item.group.c or (data.classID and contains(item.group.c, data.classID))) then
-										incompletes[guid] = data;
-									end
-								end
-								for guid,quests in pairs(GetDataMember("CollectedQuestsPerCharacter")) do
-									if incompletes[guid] and quests[item.group.questID] then
-										incompletes[guid] = nil;
+								for guid,character in pairs(ATTCharacterData) do
+									if character.realm == realmName
+										and (not item.group.r or (character.factionID and item.group.r == character.factionID))
+										and (not item.group.races or (character.raceID and contains(item.group.races, character.raceID)))
+										and (not item.group.c or (character.classID and contains(item.group.c, character.classID)))
+										and (character.Quests and not character.Quests[item.group.questID]) then
+										incompletes[guid] = character;
 									end
 								end
 								local desc, j = "", 0;
-								for guid,data in pairs(incompletes) do
+								for guid,character in pairs(incompletes) do
 									if j > 0 then desc = desc .. ", "; end
-									desc = desc .. (data.text or guid);
+									desc = desc .. (character.text or guid);
 									j = j + 1;
 								end
 								if j > 0 then
@@ -1823,20 +1819,15 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							
 							if item.group.questID and not item.group.repeatable and showOtherCharacterQuests then
 								local incompletes = {};
-								for guid,data in pairs(ATTCharacterData) do
-									if data.realm == realmName then
-										incompletes[guid] = data;
-									end
-								end
-								for guid,quests in pairs(GetDataMember("CollectedQuestsPerCharacter")) do
-									if incompletes[guid] and quests[item.group.questID] then
-										incompletes[guid] = nil;
+								for guid,character in pairs(ATTCharacterData) do
+									if character.realm == realmName and character.Quests and not character.Quests[item.group.questID] then
+										incompletes[guid] = character;
 									end
 								end
 								local desc, j = "", 0;
-								for guid,data in pairs(incompletes) do
+								for guid,character in pairs(incompletes) do
 									if j > 0 then desc = desc .. ", "; end
-									desc = desc .. (data.text or guid);
+									desc = desc .. (character.text or guid);
 									j = j + 1;
 								end
 								tinsert(info, { left = " ", right = string.gsub(desc, "-" .. realmName, ""), hash = "HASH" .. item.group.questID });
@@ -1930,7 +1921,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						-- Show only the current character
 						local nonTrivialRecipes = {};
 						for i, o in pairs(recipes) do
-							local craftTypeID = GetTempDataSubMember("SpellRanks", o.spellID);
+							local craftTypeID = app.CurrentCharacter.SpellRanks[o.spellID];
 							if craftTypeID and craftTypeID > 0 then
 								o.craftTypeID = craftTypeID;
 								tinsert(nonTrivialRecipes, o);
@@ -1978,19 +1969,18 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 		
 		-- If the item is a recipe, then show which characters know this recipe.
 		if group.collectible and group.spellID and group.filterID ~= 100 and app.Settings:GetTooltipSetting("KnownBy") then
-			local recipes, knownBy = GetDataMember("CollectedSpellsPerCharacter"), {};
-			for key,value in pairs(recipes) do
-				if value[group.spellID] then
-					table.insert(knownBy, key);
+			local knownBy = {};
+			for guid,character in pairs(ATTCharacterData) do
+				if character.Spells and character.Spells[group.spellID] then
+					table.insert(knownBy, character);
 				end
 			end
 			if #knownBy > 0 then
 				table.sort(knownBy);
 				local desc = "Known by ";
-				for i,key in ipairs(knownBy) do
+				for i,character in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
-					local character = ATTCharacterData[key];
-					desc = desc .. (character and character.text or key);
+					desc = desc .. (character.text or "???");
 				end
 				tinsert(info, { left = string.gsub(desc, "-" .. GetRealmName(), ""), wrap = true, color = "ff66ccff" });
 			end
@@ -2567,7 +2557,7 @@ local function RefreshSkills()
 	-- Clone the data for the specializations.
 	for specID,spellID in pairs(app.SpecializationSpellIDs) do
 		local baseSpell = activeSkills[spellID];
-		if baseSpell and (app.GetTempDataSubMember("CollectedSpells", specID) or IsSpellKnown(specID)) then
+		if baseSpell and (app.CurrentCharacter.Spells[specID] or IsSpellKnown(specID)) then
 			activeSkills[specID] = baseSpell;
 		end
 	end
@@ -3604,7 +3594,7 @@ local fields = {
 				if guid == app.GUID then
 					return IsQuestFlaggedCompleted(questID);
 				else
-					local questsForGUID = GetDataMember("GroupQuestsByGUID")[guid] or GetDataMember("CollectedQuestsPerCharacter")[guid];
+					local questsForGUID = GetDataMember("GroupQuestsByGUID")[guid] or (ATTCharacterData[guid] and ATTCharacterData[guid].Quests);
 					return questsForGUID and questsForGUID[questID];
 				end
 			end
@@ -6594,7 +6584,7 @@ local spellFields = {
 		return "Interface\\ICONS\\INV_Scroll_04";
 	end,
 	["craftTypeID"] = function(t)
-		return GetTempDataSubMember("SpellRanks", t.spellID);
+		return app.CurrentCharacter.SpellRanks[t.spellID];
 	end,
 	["trackable"] = function(t)
 		return true;
@@ -6614,10 +6604,10 @@ local spellFields = {
 	end,
 	["collectedAsSpell"] = function(t)
 		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return GetTempDataSubMember("CollectedSpells", t.spellID) and 1 or 2;
+			return app.CurrentCharacter.Spells[t.spellID] and 1 or 2;
 		end
 		if app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261) then
-			SetTempDataSubMember("CollectedSpells", t.spellID, 1);
+			app.CurrentCharacter.Spells[t.spellID] = 1;
 			SetDataSubMember("CollectedSpells", t.spellID, 1);
 			return 1;
 		end
@@ -11446,8 +11436,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							if craftType ~= "header" then
 								spellID = craftSubSpellName and (select(7, GetSpellInfo(craftName, craftSubSpellName)) or app.SpellNameToSpellID[craftName .. " (" .. craftSubSpellName .. ")"]) or app.SpellNameToSpellID[craftName];
 								if spellID then
-									SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil);
-									SetTempDataSubMember("CollectedSpells", spellID, 1);
+									app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil;
+									app.CurrentCharacter.Spells[spellID] = 1;
 									if not GetDataSubMember("CollectedSpells", spellID) then
 										SetDataSubMember("CollectedSpells", spellID, 1);
 										learned = learned + 1;
@@ -11506,8 +11496,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
 								local spellID = app.SpellNameToSpellID[skillName];
 								if spellID then
-									SetTempDataSubMember("SpellRanks", spellID, shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil);
-									SetTempDataSubMember("CollectedSpells", spellID, 1);
+									app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil;
+									app.CurrentCharacter.Spells[spellID] = 1;
 									if not GetDataSubMember("CollectedSpells", spellID) then
 										SetDataSubMember("CollectedSpells", spellID, 1);
 										learned = learned + 1;
@@ -11683,8 +11673,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				if spellID then
 					local previousState = GetDataSubMember("CollectedSpells", spellID);
 					SetDataSubMember("CollectedSpells", spellID, 1);
-					if not GetTempDataSubMember("CollectedSpells", spellID) then
-						SetTempDataSubMember("CollectedSpells", spellID, 1);
+					if not app.CurrentCharacter.Spells[spellID] then
+						app.CurrentCharacter.Spells[spellID] = 1;
 						app:RefreshData(true, true);
 						if not previousState or not app.Settings:Get("AccountWide:Recipes") then
 							app:PlayFanfare();
@@ -11992,7 +11982,11 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.race and race then currentCharacter.race = race; end
 	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
+	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
+	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
+	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
+	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -12071,6 +12065,32 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedSpellsPerCharacter table.
+	local collectedSpellsPerCharacter = GetDataMember("CollectedSpellsPerCharacter");
+	if collectedSpellsPerCharacter then
+		for guid,spells in pairs(collectedSpellsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.Spells = spells;
+		end
+	end
+	
+	-- Convert over the deprecated SpellRanksPerCharacter table.
+	local spellRanksPerCharacter = GetDataMember("SpellRanksPerCharacter");
+	if spellRanksPerCharacter then
+		for guid,ranks in pairs(spellRanksPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.SpellRanks = ranks;
+		end
+	end
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("Deaths", 0);
 	GetDataMember("CollectedFactions", {});
@@ -12111,24 +12131,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("lockouts", myLockouts);
 	end
 	
-	-- Cache your character's spell ranks. (triviality of their recipes)
-	local spellRanks = GetDataMember("SpellRanksPerCharacter", {});
-	local mySpellRanks = GetTempDataMember("SpellRanks", spellRanks[app.GUID]);
-	if not mySpellRanks then
-		mySpellRanks = {};
-		spellRanks[app.GUID] = mySpellRanks;
-		SetTempDataMember("SpellRanks", mySpellRanks);
-	end
-	
-	-- Cache your character's profession data.
-	local recipes = GetDataMember("CollectedSpellsPerCharacter", {});
-	local myRecipes = GetTempDataMember("CollectedSpells", recipes[app.GUID]);
-	if not myRecipes then
-		myRecipes = {};
-		recipes[app.GUID] = myRecipes;
-		SetTempDataMember("CollectedSpells", myRecipes);
-	end
-	
 	
 	
 	
@@ -12141,7 +12143,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedFlightPaths",
 		"CollectedQuests",
 		"CollectedSpells",
-		"CollectedSpellsPerCharacter",
 		"Deaths",
 		"GroupQuestsByGUID",
 		"lockouts",
@@ -12150,7 +12151,6 @@ app.events.VARIABLES_LOADED = function()
 		"Reagents",
 		"SoftReserves",
 		"SoftReservePersistence",
-		"SpellRanksPerCharacter",
 		"WaypointFilters",
 		"EnableTomTomWaypointsOnTaxi",
 		"TomTomIgnoreCompletedObjects",
