@@ -3687,6 +3687,16 @@ end)();
 
 -- Death Tracker Lib
 (function()
+local OnUpdateForDeathTrackerLib = function(t)
+	if t.collectible then
+		t.visible = app.GroupVisibilityFilter(t);
+		t.parent.progress = t.parent.progress + t.progress;
+		t.parent.total = t.parent.total + t.total;
+	else
+		t.visible = false;
+	end
+	return true;
+end
 local fields = {
 	["key"] = function(t)
 		return "deaths";
@@ -3698,53 +3708,37 @@ local fields = {
 		return app.asset("Category_Deaths");
 	end,
 	["progress"] = function(t)
-		if t.visible then
-			return math.min(1000, (not app.AccountWideDeaths and (app.GUID and GetDataMember("DeathsPerCharacter")[app.GUID])) or GetDataMember("Deaths", 0));
-		else
-			return 0;
-		end
+		return math.min(1000, app.AccountWideDeaths and GetDataMember("Deaths", 0) or app.CurrentCharacter.Deaths);
 	end,
 	["total"] = function(t)
-		if t.visible then
-			return 1000;
-		else
-			return 0;
-		end
+		return 1000;
+	end,
+	["collectible"] = function(t)
+		return app.Settings:Get("Thing:Deaths");
 	end,
 	["description"] = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
 	end,
 	["OnTooltip"] = function(t)
 		local c = {};
-		local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-		if deathsPerCharacter then
-			for guid,deaths in pairs(deathsPerCharacter) do
-				if guid and deaths and deaths > 0 then
-					local character = ATTCharacterData[guid];
-					table.insert(c, {
-						["name"] = character and character.text or guid or "???",
-						["deaths"] = deaths or 0
-					});
-				end
+		for _,character in pairs(ATTCharacterData) do
+			if character and character.Deaths and character.Deaths > 0 then
+				table.insert(c, character);
 			end
 		end
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
 			table.sort(c, function(a, b)
-				return a.deaths > b.deaths;
+				return a.Deaths > b.Deaths;
 			end);
-			for i,data in ipairs(c) do
-				GameTooltip:AddDoubleLine("  " .. string.gsub(data.name, "-" .. GetRealmName(), ""), data.deaths, 1, 1, 1);
+			for i,character in ipairs(c) do
+				GameTooltip:AddDoubleLine("  " .. string.gsub(character.text, "-" .. GetRealmName(), ""), character.Deaths, 1, 1, 1);
 			end
 		end
 	end,
 	["OnUpdate"] = function(t)
-		t.visible = app.Settings:Get("Thing:Deaths");
-		if t.visible then
-			t.parent.progress = t.parent.progress + t.progress;
-			t.parent.total = t.parent.total + t.total;
-		end
+		return OnUpdateForDeathTrackerLib;
 	end,
 };
 app.BaseDeathClass = app.BaseObjectFields(fields);
@@ -11984,7 +11978,6 @@ app.events.VARIABLES_LOADED = function()
 	local currentCharacter = characterData[app.GUID];
 	if not currentCharacter then
 		currentCharacter = {};
-		app.CurrentCharacter = currentCharacter;
 		characterData[app.GUID] = currentCharacter;
 	end
 	if not currentCharacter.text then currentCharacter.text = app.Me; end
@@ -11997,7 +11990,9 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.raceID and app.RaceIndex then currentCharacter.raceID = app.RaceIndex; end
 	if not currentCharacter.class and class then currentCharacter.class = class; end
 	if not currentCharacter.race and race then currentCharacter.race = race; end
+	if not currentCharacter.Deaths then currentCharacter.Deaths = 0; end
 	currentCharacter.lastPlayed = time();
+	app.CurrentCharacter = currentCharacter;
 	
 	-- Convert over the deprecated Characters table.
 	local characters = GetDataMember("Characters");
@@ -12009,7 +12004,21 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated DeathsPerCharacter table.
+	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
+	if deathsPerCharacter then
+		for guid,deaths in pairs(deathsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.Deaths = deaths;
+		end
+	end
+	
 	-- Check to see if we have a leftover ItemDB cache
+	GetDataMember("Deaths", 0);
 	GetDataMember("CollectedFactions", {});
 	GetDataMember("CollectedFlightPaths", {});
 	GetDataMember("CollectedQuests", {});
@@ -12037,10 +12046,7 @@ app.events.VARIABLES_LOADED = function()
 		table.insert(reservesForItem, guid);
 	end
 	
-	-- Cache your character's deaths.
-	local totalDeaths = GetDataMember("Deaths", 0);
-	local deaths = GetDataMember("DeathsPerCharacter", {});
-	deaths[app.GUID] = deaths[app.GUID] or 0;
+	
 	
 	-- Cache your character's lockouts.
 	local lockouts = GetDataMember("lockouts", {});
@@ -12135,7 +12141,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedSpells",
 		"CollectedSpellsPerCharacter",
 		"Deaths",
-		"DeathsPerCharacter",
 		"GroupQuestsByGUID",
 		"lockouts",
 		"Position",
@@ -12207,8 +12212,7 @@ app.events.PLAYER_LOGIN = function()
 end
 app.events.PLAYER_DEAD = function()
 	SetDataMember("Deaths", GetDataMember("Deaths", 0) + 1);
-	local deathsPerCharacter = GetDataMember("DeathsPerCharacter");
-	deathsPerCharacter[app.GUID] = (deathsPerCharacter[app.GUID] or 0) + 1;
+	app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
 	app.refreshDataForce = true;
 	app:RefreshData(true, true);
 	app:PlayDeathSound();
