@@ -3914,9 +3914,9 @@ local fields = {
 		return app.CollectibleReputations;
 	end,
 	["saved"] = function(t)
-		if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+		if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 		if t.standing >= t.maxstanding then
-			SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+			app.CurrentCharacter.Factions[t.factionID] = 1;
 			SetDataSubMember("CollectedFactions", t.factionID, 1);
 			return 1;
 		end
@@ -4503,10 +4503,10 @@ local itemFields = {
 	["collectedAsFactionOnly"] = function(t)
 		if t.factionID then
 			-- This is used by reputation tokens. (turn in items)
-			if GetTempDataSubMember("CollectedFactions", t.factionID) then return 1; end
+			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
 			if select(3, GetFactionInfoByID(t.factionID)) == 8 then
-				SetTempDataSubMember("CollectedFactions", t.factionID, 1);
+				app.CurrentCharacter.Factions[t.factionID] = 1;
 				SetDataSubMember("CollectedFactions", t.factionID, 1);
 				return 1;
 			end
@@ -12045,6 +12045,19 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Convert over the deprecated CollectedFactionsPerCharacter table.
+	local collectedFactionsPerCharacter = GetDataMember("CollectedFactionsPerCharacter");
+	if collectedFactionsPerCharacter then
+		for guid,factions in pairs(collectedFactionsPerCharacter) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.Factions = factions;
+		end
+	end
+	
 	-- Check to see if we have a leftover ItemDB cache
 	GetDataMember("Deaths", 0);
 	GetDataMember("CollectedFactions", {});
@@ -12103,14 +12116,6 @@ app.events.VARIABLES_LOADED = function()
 		SetTempDataMember("CollectedSpells", myRecipes);
 	end
 	
-	-- Cache your character's faction data.
-	local factions = GetDataMember("CollectedFactionsPerCharacter", {});
-	local myfactions = GetTempDataMember("CollectedFactions", factions[app.GUID]);
-	if not myfactions then
-		myfactions = {};
-		factions[app.GUID] = myfactions;
-		SetTempDataMember("CollectedFactions", myfactions);
-	end
 	
 	
 	
@@ -12128,7 +12133,6 @@ app.events.VARIABLES_LOADED = function()
 	for i,key in ipairs({
 		"AddonMessageProcessor",
 		"CollectedFactions",
-		"CollectedFactionsPerCharacter",
 		"CollectedFlightPaths",
 		"CollectedQuests",
 		"CollectedQuestsPerCharacter",
