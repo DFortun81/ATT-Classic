@@ -9344,8 +9344,6 @@ app:GetWindow("Attuned", UIParent, function(self)
 								else
 									table.insert(unprocessedMessages, message);
 								end
-							else
-								table.insert(unprocessedMessages, message);
 							end
 						end
 						SetDataMember("AddonMessageProcessor", unprocessedMessages);
