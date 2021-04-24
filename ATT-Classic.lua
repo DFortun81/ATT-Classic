@@ -2480,23 +2480,17 @@ local function RefreshSaves()
 	
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
-	local lockouts = GetDataMember("lockouts");
-	local myLockouts = GetTempDataMember("lockouts");
+	local myLockouts = app.CurrentCharacter.Lockouts;
 	
 	-- Check to make sure that the old instance data has expired
-	for character,locks in pairs(lockouts) do
-		local lockCount = 0;
-		for name,lock in pairs(locks) do
-			if serverTime >= lock.reset then
-				-- Clean this up.
-				lock[name] = nil;
-			else
-				lockCount = lockCount + 1;
+	for guid,character in pairs(ATTCharacterData) do
+		local locks = character.Lockouts;
+		if locks then
+			for name,lock in pairs(locks) do
+				if serverTime >= lock.reset then
+					locks[name] = nil;
+				end
 			end
-		end
-		if lockCount == 0 then
-			-- Clean this up.
-			lockouts[character] = nil;
 		end
 	end
 	
@@ -5889,7 +5883,7 @@ local fields = {
 		return select(1, C_Map_GetMapLevels(t.mapID));
 	end,
 	["locks"] = function(t)
-		local locks = GetTempDataSubMember("lockouts", t.name);
+		local locks = app.CurrentCharacter.Lockouts[t.name];
 		if locks then
 			rawset(t, "locks", locks);
 			return locks;
@@ -11984,6 +11978,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.ActiveSkills then currentCharacter.ActiveSkills = {}; end
 	if not currentCharacter.Factions then currentCharacter.Factions = {}; end
 	if not currentCharacter.FlightPaths then currentCharacter.FlightPaths = {}; end
+	if not currentCharacter.Lockouts then currentCharacter.Lockouts = {}; end
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
@@ -12049,6 +12044,19 @@ app.events.VARIABLES_LOADED = function()
 				characterData[guid] = character;
 			end
 			character.Factions = factions;
+		end
+	end
+	
+	-- Convert over the deprecated lockouts table.
+	local lockouts = GetDataMember("lockouts");
+	if lockouts then
+		for guid,locks in pairs(lockouts) do
+			local character = characterData[guid];
+			if not character then
+				character = { ["guid"] = guid };
+				characterData[guid] = character;
+			end
+			character.Lockouts = locks;
 		end
 	end
 	
@@ -12120,21 +12128,6 @@ app.events.VARIABLES_LOADED = function()
 		table.insert(reservesForItem, guid);
 	end
 	
-	
-	
-	-- Cache your character's lockouts.
-	local lockouts = GetDataMember("lockouts", {});
-	local myLockouts = GetTempDataMember("lockouts", lockouts[app.GUID]);
-	if not myLockouts then
-		myLockouts = {};
-		lockouts[app.GUID] = myLockouts;
-		SetTempDataMember("lockouts", myLockouts);
-	end
-	
-	
-	
-	
-	
 	-- Clean up settings
 	local oldsettings = {};
 	for i,key in ipairs({
@@ -12145,7 +12138,6 @@ app.events.VARIABLES_LOADED = function()
 		"CollectedSpells",
 		"Deaths",
 		"GroupQuestsByGUID",
-		"lockouts",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
