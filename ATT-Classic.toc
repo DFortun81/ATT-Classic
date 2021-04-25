@@ -3,7 +3,7 @@
 ## X-Curse-Project-ID: 267285
 ## Title: ATT-Classic
 ## Name: ATT-Classic
-## SavedVariables: ATTCharacterData, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
+## SavedVariables: ATTCharacterData, ATTAccountWideData, ATTClassicSettings, ATTClassicAD, ATTClassicAuctionData, ATTClassicDebugData
 ## SavedVariablesPerCharacter: ATTClassicSettingsPerCharacter
 ## Notes: Addon for Tracking Collections & Account Completion
 ## Version: 0.5.0

@@ -503,11 +503,6 @@ settings.UpdateMode = function(self)
 	else
 		app.ShowIncompleteThings = app.Filter;
 	end
-	if self:Get("AccountWide:Recipes") then
-		app.RecipeChecker = app.GetDataSubMember;
-	else
-		app.RecipeChecker = app.GetTempDataSubMember;
-	end
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else

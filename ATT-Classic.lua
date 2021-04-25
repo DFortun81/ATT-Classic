@@ -849,7 +849,7 @@ local CompletedQuests = setmetatable({}, {__newindex = function (t, key, value)
 		rawset(t, key, value);
 		rawset(DirtyQuests, key, true);
 		app.CurrentCharacter.Quests[key] = 1;
-		SetDataSubMember("CollectedQuests", key, 1);
+		ATTAccountWideData.Quests[key] = 1;
 		if app.Settings:GetTooltipSetting("Report:CompletedQuests") then
 			local searchResults = app.SearchForField("questID", key);
 			if searchResults and #searchResults > 0 then
@@ -886,7 +886,7 @@ end
 local IsQuestFlaggedCompletedForObject = function(t)
 	if IsQuestFlaggedCompleted(t.questID) then return 1; end
 	if app.AccountWideQuests and not t.repeatable then
-		if t.questID and GetDataSubMember("CollectedQuests", t.questID) then
+		if t.questID and ATTAccountWideData.Quests[t.questID] then
 			return 2;
 		end
 	end
@@ -898,7 +898,7 @@ local IsQuestFlaggedCompletedForObject = function(t)
 		end
 		if app.AccountWideQuests then
 			for i,questID in ipairs(t.altQuests) do
-				if GetDataSubMember("CollectedQuests", questID) then
+				if  ATTAccountWideData.Quests[questID] then
 					return 2;
 				end
 			end
@@ -3692,7 +3692,7 @@ local fields = {
 		return app.asset("Category_Deaths");
 	end,
 	["progress"] = function(t)
-		return math.min(1000, app.AccountWideDeaths and GetDataMember("Deaths", 0) or app.CurrentCharacter.Deaths);
+		return math.min(1000, app.AccountWideDeaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
 	["total"] = function(t)
 		return 1000;
@@ -3901,10 +3901,10 @@ local fields = {
 		if app.CurrentCharacter.Factions[t.factionID] then return 1; end
 		if t.standing >= t.maxstanding then
 			app.CurrentCharacter.Factions[t.factionID] = 1;
-			SetDataSubMember("CollectedFactions", t.factionID, 1);
+			ATTAccountWideData.Factions[t.factionID] = 1;
 			return 1;
 		end
-		if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+		if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 		
 		-- If your reputation is higher than the maximum for a different faction, return partial completion.
 		if t.maxReputation and t.maxReputation[1] ~= t.factionID and (select(3, GetFactionInfoByID(t.maxReputation[1])) or 4) >= app.GetFactionStanding(t.maxReputation[2]) then
@@ -4120,7 +4120,7 @@ local fields = {
 	end,
 	["collected"] = function(t)
 		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
-		if app.AccountWideFlightPaths and GetDataSubMember("CollectedFlightPaths", t.flightPathID) then return 2; end
+		if app.AccountWideFlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
@@ -4174,7 +4174,7 @@ app.events.GOSSIP_SHOW = function()
 		for nodeID,_ in pairs(knownNodeIDs) do
 			nodeID = tonumber(nodeID);
 			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+				ATTAccountWideData.FlightPaths[nodeID] = 1;
 				app.CurrentCharacter.FlightPaths[nodeID] = 1;
 				UpdateSearchResults(SearchForField("flightPathID", nodeID));
 			end
@@ -4208,7 +4208,7 @@ app.events.TAXIMAP_OPENED = function()
 	for nodeID,_ in pairs(knownNodeIDs) do
 		nodeID = tonumber(nodeID);
 		if not app.CurrentCharacter.FlightPaths[nodeID] then
-			SetDataSubMember("CollectedFlightPaths", nodeID, 1);
+			ATTAccountWideData.FlightPaths[nodeID] = 1;
 			app.CurrentCharacter.FlightPaths[nodeID] = 1;
 			UpdateSearchResults(SearchForField("flightPathID", nodeID));
 		end
@@ -4488,10 +4488,10 @@ local itemFields = {
 		if t.factionID then
 			-- This is used by reputation tokens. (turn in items)
 			if app.CurrentCharacter.Factions[t.factionID] then return 1; end
-			if app.AccountWideReputations and GetDataSubMember("CollectedFactions", t.factionID) then return 2; end
+			if app.AccountWideReputations and ATTAccountWideData.Factions[t.factionID] then return 2; end
 			if select(3, GetFactionInfoByID(t.factionID)) == 8 then
 				app.CurrentCharacter.Factions[t.factionID] = 1;
-				SetDataSubMember("CollectedFactions", t.factionID, 1);
+				ATTAccountWideData.Factions[t.factionID] = 1;
 				return 1;
 			end
 		end
@@ -6597,12 +6597,11 @@ local spellFields = {
 		return app.CollectibleRecipes;
 	end,
 	["collectedAsSpell"] = function(t)
-		if app.RecipeChecker("CollectedSpells", t.spellID) then
-			return app.CurrentCharacter.Spells[t.spellID] and 1 or 2;
-		end
+		if app.CurrentCharacter.Spells[t.spellID] then return 1; end
+		if app.AccountWideRecipes and ATTAccountWideData.Spells[t.spellID] then return 2; end
 		if app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261) then
 			app.CurrentCharacter.Spells[t.spellID] = 1;
-			SetDataSubMember("CollectedSpells", t.spellID, 1);
+			ATTAccountWideData.Spells[t.spellID] = 1;
 			return 1;
 		end
 	end,
@@ -11430,8 +11429,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								if spellID then
 									app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil;
 									app.CurrentCharacter.Spells[spellID] = 1;
-									if not GetDataSubMember("CollectedSpells", spellID) then
-										SetDataSubMember("CollectedSpells", spellID, 1);
+									if not ATTAccountWideData.Spells[spellID] then
+										ATTAccountWideData.Spells[spellID] = 1;
 										learned = learned + 1;
 									end
 									if not skillCache[spellID] then
@@ -11490,8 +11489,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								if spellID then
 									app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil;
 									app.CurrentCharacter.Spells[spellID] = 1;
-									if not GetDataSubMember("CollectedSpells", spellID) then
-										SetDataSubMember("CollectedSpells", spellID, 1);
+									if not ATTAccountWideData.Spells[spellID] then
+										ATTAccountWideData.Spells[spellID] = 1;
 										learned = learned + 1;
 									end
 									if not skillCache[spellID] then
@@ -11663,8 +11662,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			elseif e == "NEW_RECIPE_LEARNED" or e == "LEARNED_SPELL_IN_TAB" then
 				local spellID = ...;
 				if spellID then
-					local previousState = GetDataSubMember("CollectedSpells", spellID);
-					SetDataSubMember("CollectedSpells", spellID, 1);
+					local previousState = ATTAccountWideData.Spells[spellID];
+					ATTAccountWideData.Spells[spellID] = 1;
 					if not app.CurrentCharacter.Spells[spellID] then
 						app.CurrentCharacter.Spells[spellID] = 1;
 						app:RefreshData(true, true);
@@ -12097,13 +12096,32 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
+	-- Account Wide Data Storage
+	local accountWideData = ATTAccountWideData;
+	if not accountWideData then
+		accountWideData = {};
+		ATTAccountWideData = accountWideData;
+	end
+	if not accountWideData.Deaths then accountWideData.Deaths = 0; end
+	if not accountWideData.Factions then accountWideData.Factions = {}; end
+	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
+	if not accountWideData.Quests then accountWideData.Quests = {}; end
+	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	
+	-- Convert over the deprecated account wide tables.
+	local data = GetDataMember("Deaths");
+	if data then accountWideData.Deaths = data; end
+	data = GetDataMember("CollectedFactions");
+	if data then accountWideData.Factions = data; end
+	data = GetDataMember("CollectedFlightPaths");
+	if data then accountWideData.FlightPaths = data; end
+	data = GetDataMember("CollectedQuests");
+	if data then accountWideData.Quests = data; end
+	data = GetDataMember("CollectedSpells");
+	if data then accountWideData.Spells = data; end
+	
+	
 	-- Check to see if we have a leftover ItemDB cache
-	GetDataMember("Deaths", 0);
-	GetDataMember("CollectedFactions", {});
-	GetDataMember("CollectedFlightPaths", {});
-	GetDataMember("CollectedQuests", {});
-	GetDataMember("CollectedSpells", {});
-	GetDataMember("WaypointFilters", {});
 	GetDataMember("GroupQuestsByGUID", {});
 	GetDataMember("AddonMessageProcessor", {});
 	GetDataMember("ValidSuffixesPerItemID", {});
@@ -12130,20 +12148,12 @@ app.events.VARIABLES_LOADED = function()
 	local oldsettings = {};
 	for i,key in ipairs({
 		"AddonMessageProcessor",
-		"CollectedFactions",
-		"CollectedFlightPaths",
-		"CollectedQuests",
-		"CollectedSpells",
-		"Deaths",
 		"GroupQuestsByGUID",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
 		"SoftReserves",
 		"SoftReservePersistence",
-		"WaypointFilters",
-		"EnableTomTomWaypointsOnTaxi",
-		"TomTomIgnoreCompletedObjects",
 		"ValidSuffixesPerItemID"
 	}) do
 		oldsettings[key] = ATTClassicAD[key];
@@ -12158,8 +12168,6 @@ app.events.VARIABLES_LOADED = function()
 	ATTClassicAuctionData = nil;
 	
 	-- Tooltip Settings
-	GetDataMember("EnableTomTomWaypointsOnTaxi", false);
-	GetDataMember("TomTomIgnoreCompletedObjects", true);
 	app.Settings:Initialize();
 	app.PushSoftReserve(true);
 	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
@@ -12203,7 +12211,7 @@ app.events.PLAYER_LOGIN = function()
 	});
 end
 app.events.PLAYER_DEAD = function()
-	SetDataMember("Deaths", GetDataMember("Deaths", 0) + 1);
+	ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
 	app.CurrentCharacter.Deaths = app.CurrentCharacter.Deaths + 1;
 	app.refreshDataForce = true;
 	app:RefreshData(true, true);
