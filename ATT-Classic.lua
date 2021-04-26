@@ -9605,7 +9605,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 		-- Setup Event Handlers and register for events
 		self:SetScript("OnEvent", function(self, e, ...)
 			--print(e, ...);
-			if e == "PLAYER_LOGIN" then
+			if e == "VARIABLES_LOADED" then
 				if not ATTClassicDebugData then
 					ATTClassicDebugData = app.GetDataMember("Debugger", {});
 					app.SetDataMember("Debugger", nil);
@@ -9757,7 +9757,7 @@ app:GetWindow("Debugger", UIParent, function(self)
 				end
 			end
 		end);
-		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("GOSSIP_SHOW");
 		self:RegisterEvent("QUEST_DETAIL");
 		self:RegisterEvent("TRADE_SKILL_LIST_UPDATE");
@@ -10080,7 +10080,7 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self:SetScript("OnEvent", function(self, e, ...)
 			RefreshLocation();
 		end);
-		self:RegisterEvent("PLAYER_LOGIN");
+		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
@@ -11948,7 +11948,6 @@ app:RegisterEvent("BOSS_KILL");
 app:RegisterEvent("CHAT_MSG_ADDON");
 app:RegisterEvent("CHAT_MSG_WHISPER")
 app:RegisterEvent("PLAYER_DEAD");
-app:RegisterEvent("PLAYER_LOGIN");
 app:RegisterEvent("VARIABLES_LOADED");
 app:RegisterEvent("PARTY_LOOT_METHOD_CHANGED");
 
@@ -11961,6 +11960,13 @@ app.events.VARIABLES_LOADED = function()
 		_G["ATTClassicAD"] = ATTClassicAD;
 	end
 	app:UpdateWindowColors();
+	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+		type = "launcher",
+		icon = app.asset("logo_32x32"),
+		OnClick = MinimapButtonOnClick,
+		OnEnter = MinimapButtonOnEnter,
+		OnLeave = MinimapButtonOnLeave,
+	});
 	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
@@ -12227,9 +12233,6 @@ app.events.VARIABLES_LOADED = function()
 		end
 	end
 	
-end
-app.events.PLAYER_LOGIN = function()
-	app:UnregisterEvent("PLAYER_LOGIN");
 	app.CurrentMapID = app.GetCurrentMapID();
 	app:GetDataCache();
 	
@@ -12242,13 +12245,6 @@ app.events.PLAYER_LOGIN = function()
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	StartCoroutine("RefreshSaves", RefreshSaves);
 	app:RefreshData(false);
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = MinimapButtonOnClick,
-		OnEnter = MinimapButtonOnEnter,
-		OnLeave = MinimapButtonOnLeave,
-	});
 end
 app.events.PLAYER_DEAD = function()
 	ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;
