@@ -428,7 +428,7 @@ end
 GameTooltipModel:Hide();
 
 app.AlwaysShowUpdate = function(data) data.visible = true; return true; end
-app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true;  end
+app.AlwaysShowUpdateWithoutReturn = function(data) data.visible = true; end
 app.print = function(...)
 	print(L["TITLE"], ...);
 end
@@ -1976,7 +1976,9 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if #knownBy > 0 then
-				table.sort(knownBy);
+				table.sort(knownBy, function(a, b)
+					return a.text < b.text;
+				end);
 				local desc = "Known by ";
 				for i,character in ipairs(knownBy) do
 					if i > 1 then desc = desc .. ", "; end
@@ -2480,7 +2482,6 @@ local function RefreshSaves()
 	
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
-	local myLockouts = app.CurrentCharacter.Lockouts;
 	
 	-- Check to make sure that the old instance data has expired
 	for guid,character in pairs(ATTCharacterData) do
@@ -2496,6 +2497,7 @@ local function RefreshSaves()
 	
 	-- Update Saved Instances
 	local converter = L["SAVED_TO_DJ_INSTANCES"];
+	local myLockouts = app.CurrentCharacter.Lockouts;
 	for instanceIter=1,GetNumSavedInstances() do
 		local name, id, reset, difficulty, locked, _, _, isRaid, _, _, numEncounters = GetSavedInstanceInfo(instanceIter);
 		if locked then
@@ -3672,7 +3674,7 @@ end)();
 -- Death Tracker Lib
 (function()
 local OnUpdateForDeathTrackerLib = function(t)
-	if t.collectible then
+	if app.Settings:Get("Thing:Deaths") then
 		t.visible = app.GroupVisibilityFilter(t);
 		t.parent.progress = t.parent.progress + t.progress;
 		t.parent.total = t.parent.total + t.total;
@@ -3696,9 +3698,6 @@ local fields = {
 	end,
 	["total"] = function(t)
 		return 1000;
-	end,
-	["collectible"] = function(t)
-		return app.Settings:Get("Thing:Deaths");
 	end,
 	["description"] = function(t)
 		return "The ATT Gods must be sated. Go forth and attempt to level, mortal!\n\n 'Live! Die! Live Again!'\n";
@@ -10099,6 +10098,13 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 							ExpandGroupsRecursively(data, true);
 						end
 					end
+					
+					-- Update the groups without forcing Debug Mode.
+					local visibilityFilter = app.VisibilityFilter;
+					app.VisibilityFilter = app.ObjectVisibilityFilter;
+					BuildGroups(self.data, self.data.g);
+					UpdateWindow(self, true);
+					app.VisibilityFilter = visibilityFilter;
 				end,
 				['g'] = {},
 				['results'] = {},
@@ -10148,13 +10154,7 @@ app:GetWindow("ItemFilter", UIParent, function(self)
 		
 		-- Update the window and all of its row data
 		if self.data.OnUpdate then self.data.OnUpdate(self.data, self); end
-		
-		-- Update the groups without forcing Debug Mode.
-		local visibilityFilter = app.VisibilityFilter;
-		app.VisibilityFilter = app.ObjectVisibilityFilter;
-		BuildGroups(self.data, self.data.g);
 		UpdateWindow(self, true);
-		app.VisibilityFilter = visibilityFilter;
 	end
 end);
 app:GetWindow("ItemFinder", UIParent, function(self, ...)
