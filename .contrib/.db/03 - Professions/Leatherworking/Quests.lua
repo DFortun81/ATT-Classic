@@ -69,6 +69,17 @@ profession(LEATHERWORKING, {
 			},
 			["lvl"] = 40,
 		}),
+		q(769, {	-- Kodo Hide Bag
+			["qg"] = 3050,	-- Veren Tallstrider
+			["requireSkill"] = LEATHERWORKING,
+			["coord"] = { 44, 44.6, THUNDER_BLUFF },
+			["maps"] = { THUNDER_BLUFF },
+			["races"] = HORDE_ONLY,
+			["lvl"] = 4,
+			["g"] = {
+				i(5083),	-- Pattern: Kodo Hide Bag
+			},
+		}),
 		q(2853, {	-- Master of the Wild Leather (A)
 			["qg"] = 7852,	-- Pratt McGrubben
 			["sourceQuests"] = {

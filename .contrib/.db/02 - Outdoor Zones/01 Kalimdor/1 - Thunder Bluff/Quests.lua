@@ -109,15 +109,6 @@ _.Zones =
 					["lvl"] = 13,
 					["sourceQuest"] = 1064,	-- Forsaken Aid
 				}),
-				q(769, {	-- Kodo Hide Bag
-					["lvl"] = 4,
-					["races"] = HORDE_ONLY,
-					["qg"] = 3050,	-- Veren Tallstrider
-					["requireSkill"] = LEATHERWORKING,
-					["g"] = {
-						i(5083),	-- Pattern: Kodo Hide Bag
-					},
-				}),
 				q(1130, {	-- Melor Sends Word
 					["lvl"] = 20,
 					["races"] = HORDE_ONLY,
