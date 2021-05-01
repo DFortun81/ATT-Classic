@@ -75,7 +75,7 @@ profession(LEATHERWORKING, {
 			["coord"] = { 44, 44.6, THUNDER_BLUFF },
 			["maps"] = { THUNDER_BLUFF },
 			["races"] = HORDE_ONLY,
-			["lvl"] = 4,
+			["lvl"] = 5,
 			["g"] = {
 				i(5083),	-- Pattern: Kodo Hide Bag
 			},
