@@ -8,9 +8,9 @@ local L = app.L;
 --TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 
 local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
 for key,value in pairs({
 	-- Classic
-	["안퀴라즈 사원"] = 320,	-- Ahn'Qiraj
 	["검은심연 나락"] = 221,	-- Blackfathom Deeps
 	["검은바위 나락"] = 242,	-- Blackrock Depths
 	["검은날개 둥지"] = 287,	-- Blackwing Lair
@@ -18,10 +18,7 @@ for key,value in pairs({
 	["검은바위 첨탑"] = 250,	-- Blackrock Spire
 	["시간의 동굴"] = 75,	-- Caverns of Time
 	["혈투의 전장"] = 234,	-- Dire Maul
-	["죽음의 폐광"] = 291,	-- Deadmines
-	-- [""] = 291,	-- The Deadmines
 	["깊은굴 지하철"] = 499,	-- Deeprun Tram
-	["안퀴라즈 관문"] = 1451,	-- Gates of Ahn'Qiraj
 	["놈리건"] = 226,	-- Gnomeregan
 	["마라우돈"] = 280,	-- Maraudon
 	["화산 심장부"] = 232,	-- Molten Core
@@ -35,7 +32,8 @@ for key,value in pairs({
 	["스칼로맨스"] = 476,	-- Scholomance
 	["그림자송곳니 성채"] = 310,	-- Shadowfang Keep
 	["스트라솔름"] = 317,	-- Stratholme
-	["안퀴라즈"] = 320,	-- Temple of Ahn'Qiraj
+	["안퀴라즈 사원"] = 320,	-- Temple of Ahn'Qiraj
+	["죽음의 폐광"] = 291,	-- The Deadmines
 	["아탈학카르 신전"] = 220,	-- The Temple of Atal'hakkar
 	["스톰윈드 지하감옥"] = 225,	-- The Stockade
 	["울다만"] = 230,	-- Uldaman
@@ -70,6 +68,16 @@ for key,value in pairs({
 	["증기 저장고"] = 263,	-- The Steamvault
 	["지하 수렁"] = 262,	-- The Underbog
 	["줄아만"] = 333,		-- Zul'Aman
+})
+do a[key] = value; end
+
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["안퀴라즈"] = 320,	-- Ahn'Qiraj
+	["죽음의 폐광"] = 291,	-- Deadmines
+	["안퀴라즈 관문"] = 1451,	-- Gates of Ahn'Qiraj
 })
 do a[key] = value; end
 

@@ -19,6 +19,7 @@ L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlo
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
 local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
 for key,value in pairs({
 	-- Classic
 	["Tiefschwarze Grotte"] = 221,	-- Blackfathom Deeps
@@ -28,36 +29,33 @@ for key,value in pairs({
 	["Blackrockspitze"] = 250,	-- Blackrock Spire
 	["Höhlen der Zeit"] = 75,	-- Caverns of Time
 	["Düsterbruch"] = 234,	-- Dire Maul
-	["Todesminen"] = 291,	-- Deadmines
-	["Die Todesminen"] = 291,	-- The Deadmines
 	["Die Tiefenbahn"] = 499,	-- Deeprun Tram
-	["Tore von Ahn'Qiraj"] = 1451,	-- Gates of Ahn'Qiraj
-	--[""] = 226,	-- Gnomeregan
-	--[""] = 280,	-- Maraudon
+	["Gnomeregan"] = 226,	-- Gnomeregan
+	["Maraudon"] = 280,	-- Maraudon
 	["Geschmolzener Kern"] = 232,	-- Molten Core
-	--[""] = 162,	-- Naxxramas
+	["Naxxramas"] = 162,	-- Naxxramas
 	["Onyxias Hort"] = 248,	-- Onyxia's Lair
 	["Ragefireabgrund"] = 213,	-- Ragefire Chasm
 	["Die Hügel von Razorfen"] = 300,	-- Razorfen Downs
 	["Der Kral von Razorfen"] = 301,	-- Razorfen Kraul
 	["Ruinen von Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
 	["Das scharlachrote Kloster"] = 435,	-- Scarlet Monastery
-	--[""] = 476,	-- Scholomance
+	["Scholomance"] = 476,	-- Scholomance
 	["Burg Schattenfang"] = 310,	-- Shadowfang Keep
 	["Strathholme"] = 317,	-- Stratholme
-	--[""] = 320,	-- Temple of Ahn'Qiraj
-	--[""] = 320,	-- Ahn'Qiraj
-	["Der Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'hakkar
-	--[""] = 220,	-- The Temple of Atal'Hakkar
+	["Tempel von Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
+	["Die Todesminen"] = 291,	-- The Deadmines
+	["Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'hakkar
+	["Der Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
 	["Das Verlies"] = 225,	-- The Stockade
-	--[""] = 230,	-- Uldaman
+	["Uldaman"] = 230,	-- Uldaman
 	["Die Höhlen des Wehklagens"] = 279,	-- Wailing Caverns
-	--[""] = 219,	-- Zul'Farrak
-	--[""] = 337,	-- Zul'Gurub
+	["Zul'Farrak"] = 219,	-- Zul'Farrak
+	["Zul'Gurub"] = 337,	-- Zul'Gurub
 	
 	-- TBC
 	["Auchenaikrypta"] = 256,	-- Auchenai Crypts
-	--[""] = 350,	-- Karazhan
+	["Karazhan"] = 350,	-- Karazhan
 	["Gruuls Unterschlupf"] = 330,	-- Gruul's Lair
 	["Höllenfeuerbollwerk"] = 347,	-- Hellfire Ramparts
 	["Terrasse der Magister"] = 348,	-- Magister's Terrace
@@ -81,7 +79,17 @@ for key,value in pairs({
 	["Die Sklavenunterkünfte"] = 265,	-- The Slave Pens
 	["Die Dampfkammer"] = 263,	-- The Steamvault
 	["Der Tiefensumpf"] = 262,	-- The Underbog
-	--[""] = 333,	-- Zul'Aman
+	["Zul'Aman"] = 333,	-- Zul'Aman
+})
+do a[key] = value; end
+
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Ahn'Qiraj"] = 320,	-- Ahn'Qiraj
+	["Todesminen"] = 291,	-- Deadmines
+	["Tore von Ahn'Qiraj"] = 1451,	-- Gates of Ahn'Qiraj
 })
 do a[key] = value; end
 

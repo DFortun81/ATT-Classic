@@ -1035,8 +1035,6 @@ app.L = {
 		["Blackrock Spire"] = 250,
 		[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 		["Dire Maul"] = 234,
-		["Deadmines"] = 291,
-		["The Deadmines"] = 291,
 		["Deeprun Tram"] = 499,
 		["Gnomeregan"] = 226,
 		["Maraudon"] = 280,
@@ -1052,6 +1050,7 @@ app.L = {
 		["Shadowfang Keep"] = 310,
 		["Stratholme"] = 317,
 		["Temple of Ahn'Qiraj"] = 320,
+		["The Deadmines"] = 291,
 		["The Temple of Atal'hakkar"] = 220,
 		["The Temple of Atal'Hakkar"] = 220,
 		["The Stockade"] = 225,
@@ -1061,39 +1060,41 @@ app.L = {
 		["Zul'Gurub"] = 337,
 
 		-- TBC
+		["Auchenai Crypts"] = 256,
 		["Karazhan"] = 350,
 		["Gruul's Lair"] = 330,
-		["Magtheridon's Lair"] = 331,
-		["Serpentshrine Cavern"] = 332,
-		["Tempest Keep"] = 334,
-		["The Battle for Mount Hyjal"] = 329,
-		["The Black Temple"] = 340,
-		["Sunwell Plataeu"] = 335,
-		["Zul'Aman"] = 333,
+		["Hellfire Ramparts"] = 347,
 		["Magister's Terrace"] = 348,
-	};
-	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
-		-- Classic
-		["Ahn'Qiraj"] = 320,
-		["Gates of Ahn'Qiraj"] = 1451,
-
-		-- TBC
-		["The Eye"] = 334,
-		["Auchenai Crypts"] = 256,
+		["Magtheridon's Lair"] = 331,
 		["Mana Tombs"] = 272,
+		["Old Hillsbrad Foothills"] = 274,
+		["Serpentshrine Cavern"] = 332,
 		["Sethekk Halls"] = 258,
 		["Shadow Labyrinth"] = 260,
+		["Tempest Keep"] = 334,
+		["The Arcatraz"] = 269,
+		["The Battle for Mount Hyjal"] = 329,
 		["The Black Morass"] = 273,
-		["Old Hillsbrad Foothills"] = 274,
+		["The Black Temple"] = 340,
+		["The Blood Furnace"] = 261,
+		["The Botanica"] = 266,
+		["The Eye"] = 334,
+		["The Mechanar"] = 267,
+		["The Shattered Halls"] = 246,
 		["The Slave Pens"] = 265,
 		["The Steamvault"] = 263,
 		["The Underbog"] = 262,
-		["The Blood Furnace"] = 261,
-		["Hellfire Ramparts"] = 347,
-		["The Shattered Halls"] = 246,
-		["The Arcatraz"] = 269,
-		["The Botanica"] = 266,
-		["The Mechanar"] = 267,
+		["Sunwell Plataeu"] = 335,
+		["Zul'Aman"] = 333,
+	};
+	
+	-- These are alternative map names that we don't want to display, but used for mapID calculations.
+	-- If there is a name provided in the table above, it will prefer that name association.
+	["ALT_ZONE_TEXT_TO_MAP_ID"] = {
+		-- Classic
+		["Ahn'Qiraj"] = 320,
+		["Deadmines"] = 291,
+		["Gates of Ahn'Qiraj"] = 1451,
 	};
 	
 	-- This is necessary because sometimes the names of spells do not match for different languages.
