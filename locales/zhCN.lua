@@ -1,77 +1,11 @@
--- Localization for Chinese (Simplified, PRC) Clients.
-if GetLocale() ~= "zhCN" then return; end
+-- Localization for Chinese (Simplified, PRC) and Chinese (Traditional, Taiwan) Clients.
+if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
 local app = select(2, ...);
 local L = app.L;
 
 --TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
 
 --TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
-
--- Dungeons
-L.ZONE_TEXT_TO_MAP_ID["黑暗深渊"] = 221;	-- BFD
-L.ZONE_TEXT_TO_MAP_ID["黑石深渊"] = 242;	-- BRD
-L.ZONE_TEXT_TO_MAP_ID["黑石山"] = 35;	-- BRM
-L.ZONE_TEXT_TO_MAP_ID["黑石塔"] = 250;	-- BRS
-L.ZONE_TEXT_TO_MAP_ID["死亡矿井"] = 291;	-- DM/VC
-L.ZONE_TEXT_TO_MAP_ID["厄运之槌"] = 234;	-- Dire Maul
-L.ZONE_TEXT_TO_MAP_ID["诺莫瑞根"] = 226;	-- Gnomer
-L.ZONE_TEXT_TO_MAP_ID["玛拉顿"] = 280;	-- Maraudon
-L.ZONE_TEXT_TO_MAP_ID["怒焰裂谷"] = 213;	-- RFC
-L.ZONE_TEXT_TO_MAP_ID["剃刀高地"] = 300;	-- RFD
-L.ZONE_TEXT_TO_MAP_ID["剃刀沼泽"] = 301;	-- RFK
-L.ZONE_TEXT_TO_MAP_ID["通灵学院"] = 310;	-- SCHOLO
-L.ZONE_TEXT_TO_MAP_ID["影牙城堡"] = 310;	-- SFK
-L.ZONE_TEXT_TO_MAP_ID["血色修道院"] = 435;	-- SM
-L.ZONE_TEXT_TO_MAP_ID["斯坦索姆"] = 317;	-- STRATH
-L.ZONE_TEXT_TO_MAP_ID["阿塔哈卡神庙"] = 220;	-- ST
-L.ZONE_TEXT_TO_MAP_ID["奥达曼"] = 230;	-- ULDA
-L.ZONE_TEXT_TO_MAP_ID["哀嚎洞穴"] = 279;	-- WC
-L.ZONE_TEXT_TO_MAP_ID["祖尔法拉克"] = 219;	-- ZF
-
-L.ZONE_TEXT_TO_MAP_ID["Magister's Terrace"] = 348;	-- MGT
-L.ZONE_TEXT_TO_MAP_ID["Karazhan"] = 350;	-- KARA
-L.ZONE_TEXT_TO_MAP_ID["Gruul's Lair"] = 330;	-- GRUL
-L.ZONE_TEXT_TO_MAP_ID["Magtheridon's Lair"] = 331;	-- MAG
-L.ZONE_TEXT_TO_MAP_ID["Serpentshrine Cavern"] = 332;	-- SSC
-L.ZONE_TEXT_TO_MAP_ID["风暴要塞"] = 334;	-- TK
-L.ZONE_TEXT_TO_MAP_ID["The Battle for Mount Hyjal"] = 329;	-- HYJAL
-L.ZONE_TEXT_TO_MAP_ID["The Black Temple"] = 340;	-- BT
-L.ZONE_TEXT_TO_MAP_ID["Sunwell Plataeu"] = 335;	-- SWP
-L.ZONE_TEXT_TO_MAP_ID["Zul'Aman"] = 333;	-- ZA
-
-L.ALT_ZONE_TEXT_TO_MAP_ID["奥金尼地穴"] = 256;	-- CRYPTS
-L.ALT_ZONE_TEXT_TO_MAP_ID["法力陵墓"] = 272;	-- MT
-L.ALT_ZONE_TEXT_TO_MAP_ID["塞泰克大厅"] = 258;	-- SETH
-L.ALT_ZONE_TEXT_TO_MAP_ID["暗影迷宫"] = 260;	-- SLABS
-L.ALT_ZONE_TEXT_TO_MAP_ID["黑色沼泽"] = 273;	-- BLKM
-L.ALT_ZONE_TEXT_TO_MAP_ID["Old Hillsbrad Foothills"] = 274;	-- OHF
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Slave Pens"] = 265;	-- SPENS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Steamvault"] = 263;	-- SVALT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Underbog"] = 262;	-- UNBOG
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Blood Furnace"] = 261;	-- BF
-L.ALT_ZONE_TEXT_TO_MAP_ID["Hellfire Ramparts"] = 347;	-- RAMPS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Shattered Halls"] = 246;	-- SHALLS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
-
-local a = L.ALT_PROFESSION_TEXT_TO_ID;
-for key,value in pairs({
-	["工程学"] = 4036,	-- Engineering
-	["急救"] = 3273,	-- First Aid
-	["制皮"] = 2108,	-- Leatherworking
-})
-do a[key] = value; end
-
-local a = L.HEADER_NAMES
-for key, value in pairs({}) do
-    a[key] = value
-end
-
-local a = L.OBJECT_ID_NAMES
-for key, value in pairs({}) do
-    a[key] = value
-end
 
 -- General Text
 L["TITLE"] = "|cffb4b4ffALL THE THINGS|r"
@@ -139,3 +73,95 @@ L["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47已完成|r"
 L["INCOMPLETE"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333未完成|r" -- Acquired the colors and icon from CanIMogIt.
 L["KNOWN_ON_CHARACTER"] = "|T" .. app.asset("known") .. ":0|t |cff15abff当前角色已知|r"
 L["UNKNOWN_ON_CHARACTER"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333当前角色未知|r"
+
+local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["黑暗深渊"] = 221,	-- Blackfathom Deeps
+	["黑石深渊"] = 242,	-- Blackrock Depths
+	["黑翼之巢"] = 287,	-- Blackwing Lair
+	["黑石山"] = 35,	-- Blackrock Mountain
+	["黑石塔"] = 250,	-- Blackrock Spire
+	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
+	["厄运之槌"] = 234,	-- Dire Maul
+	["矿道地铁"] = 499,	-- Deeprun Tram
+	["诺莫瑞根"] = 226,	-- Gnomeregan
+	["玛拉顿"] = 280,	-- Maraudon
+	["熔火之心"] = 232,	-- Molten Core
+	["纳克萨玛斯"] = 162,	-- Naxxramas
+	["奥妮克希亚的巢穴"] = 248,	-- Onyxia's Lair
+	["怒焰裂谷"] = 213,	-- Ragefire Chasm
+	["剃刀高地"] = 300,	-- Razorfen Downs
+	["剃刀沼泽"] = 301,	-- Razorfen Kraul
+	["安其拉废墟"] = 247,	-- Ruins of Ahn'Qiraj
+	["血色修道院"] = 435,	-- Scarlet Monastery
+	["通灵学院"] = 476,	-- Scholomance
+	["影牙城堡"] = 310,	-- Shadowfang Keep
+	["斯坦索姆"] = 317,	-- Stratholme
+	["安其拉神庙"] = 320,	-- Temple of Ahn'Qiraj
+	["死亡矿井"] = 291,	-- The Deadmines
+	["阿塔哈卡神庙"] = 220,	-- The Temple of Atal'hakkar
+	["监狱"] = 225,	-- The Stockade
+	["奥达曼"] = 230,	-- Uldaman
+	["哀嚎洞穴"] = 279,	-- Wailing Caverns
+	["祖尔法拉克"] = 219,	-- Zul'Farrak
+	["祖尔格拉布"] = 337,	-- Zul'Gurub
+	
+	-- TBC
+	["奥金尼地穴"] = 256,	-- Auchenai Crypts
+	["卡拉赞"] = 350,	-- Karazhan
+	["格鲁尔的巢穴"] = 330,	-- Gruul's Lair
+	["地狱火城墙"] = 347,	-- Hellfire Ramparts
+	["魔导师平台"] = 348,	-- Magister's Terrace
+	["玛瑟里顿的巢穴"] = 331,	-- Magtheridon's Lair
+	["法力陵墓"] = 272,	-- Mana Tombs
+	["旧希尔斯布莱德丘陵"] = 274,	-- Old Hillsbrad Foothills
+	["毒蛇神殿"] = 332,	-- Serpentshrine Cavern
+	["塞泰克大厅"] = 258,	-- Sethekk Halls
+	["暗影迷宫"] = 260,	-- Shadow Labyrinth
+	["太阳之井高地"] = 335,	-- Sunwell Plataeu
+	["风暴要塞"] = 334,	-- Tempest Keep
+	["禁魔监狱"] = 269,	-- The Arcatraz
+	["海加尔峰"] = 329,	-- The Battle for Mount Hyjal
+	["黑色沼泽"] = 273,	-- The Black Morass
+	["鲜血熔炉"] = 261,	-- The Blood Furnace
+	["黑暗神殿"] = 340,	-- The Black Temple
+	["生态船"] = 266,	-- The Botanica
+	["能源舰"] = 267,	-- The Mechanar
+	["破碎大厅"] = 246,	-- The Shattered Halls
+	["奴隶围栏"] = 265,	-- The Slave Pens
+	["蒸汽地窟"] = 263,	-- The Steamvault
+	["幽暗沼泽"] = 262,	-- The Underbog
+	["祖阿曼"] = 333,	-- Zul'Aman
+})
+do a[key] = value; end
+
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["安其拉"] = 320,	-- Ahn'Qiraj
+	["取消管理"] = 291,	-- Deadmines
+	["安其拉之门"] = 1451,	-- Gates of Ahn'Qiraj
+	["眼"] = 334,	-- The Eye
+})
+do a[key] = value; end
+
+local a = L.ALT_PROFESSION_TEXT_TO_ID;
+for key,value in pairs({
+	["工程学"] = 4036,	-- Engineering
+	["急救"] = 3273,	-- First Aid
+	["制皮"] = 2108,	-- Leatherworking
+})
+do a[key] = value; end
+
+local a = L.HEADER_NAMES
+for key, value in pairs({}) do
+    a[key] = value
+end
+
+local a = L.OBJECT_ID_NAMES
+for key, value in pairs({}) do
+    a[key] = value
+end
