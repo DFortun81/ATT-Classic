@@ -68,6 +68,14 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
+local a = L.ALT_PROFESSION_TEXT_TO_ID;
+for key,value in pairs({
+	["Ingenieurskunst"] = 4036,	-- Engineering
+	["Erste Hilfe"] = 3273,	-- First Aid
+	["Lederverarbeitung"] = 2108,	-- Leatherworking
+})
+do a[key] = value; end
+
 local a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1] = "Gemeinsame Bossbeute",										-- Common Boss Drop

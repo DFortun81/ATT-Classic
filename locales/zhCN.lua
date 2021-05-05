@@ -55,6 +55,14 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
 L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
+local a = L.ALT_PROFESSION_TEXT_TO_ID;
+for key,value in pairs({
+	["工程学"] = 4036,	-- Engineering
+	["急救"] = 3273,	-- First Aid
+	["制皮"] = 2108,	-- Leatherworking
+})
+do a[key] = value; end
+
 local a = L.HEADER_NAMES
 for key, value in pairs({}) do
     a[key] = value

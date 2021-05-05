@@ -72,6 +72,8 @@ do a[key] = value; end
 
 local a = L.ALT_PROFESSION_TEXT_TO_ID;
 for key,value in pairs({
+	["기계공학"] = 4036,	-- Engineering
+	["응급치료"] = 3273,	-- First Aid
 	["가죽 세공"] = 2108,	-- Leatherworking
 })
 do a[key] = value; end
