@@ -46,6 +46,7 @@ for key,value in pairs({
 	["카라잔"] = 350,		-- Karazhan
 	["그룰의 둥지"] = 330,	-- Gruul's Lair
 	["지옥불 성루"] = 347,	-- Hellfire Ramparts
+	["하이잘 정상"] = 329,	-- Hyjal Summit
 	["마법학자의 정원"] = 348,	-- Magister's Terrace
 	["마그테리돈의 둥지"] = 331,	-- Magtheridon's Lair
 	["마나 무덤"] = 272,	-- Mana Tombs
@@ -56,7 +57,6 @@ for key,value in pairs({
 	["태양샘 고원"] = 335,	-- Sunwell Plataeu
 	["폭풍우 요새"] = 334,	-- Tempest Keep
 	["알카트라즈"] = 269,	-- The Arcatraz
-	["하이잘 정상"] = 329,	-- The Battle for Mount Hyjal
 	["검은늪"] = 273,		-- The Black Morass
 	["피의 용광로"] = 261,	-- The Blood Furnace
 	["검은 사원"] = 340,	-- The Black Temple

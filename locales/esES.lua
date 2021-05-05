@@ -46,6 +46,7 @@ for key,value in pairs({
 	["Karazhan"] = 350,	-- Karazhan
 	["Guarida de Gruul"] = 330,	-- Gruul's Lair
 	["Murallas del Fuego Infernal"] = 347,	-- Hellfire Ramparts
+	["La Cima Hyjal"] = 329,	-- Hyjal Summit
 	["Bancal del Magister"] = 348,	-- Magister's Terrace
 	["Guarida de Magtheridon"] = 331,	-- Magtheridon's Lair
 	["Tumbas de Maná"] = 272,	-- Mana Tombs
@@ -56,7 +57,6 @@ for key,value in pairs({
 	["Meseta de La Fuente del Sol"] = 335,	-- Sunwell Plataeu
 	["El Castillo de la Tempestad"] = 334,	-- Tempest Keep
 	["El Arcatraz"] = 269,	-- The Arcatraz
-	["La Cima Hyjal"] = 329,	-- The Battle for Mount Hyjal
 	["La Ciénaga Negra"] = 273,	-- The Black Morass
 	["El Horno de Sangre"] = 261,	-- The Blood Furnace
 	["Templo Oscuro"] = 340,	-- The Black Temple

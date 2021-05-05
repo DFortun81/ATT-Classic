@@ -52,6 +52,7 @@ for key,value in pairs({
 	["Karazhan"] = 350,	-- Karazhan
 	["Repaire de Gruul"] = 330,	-- Gruul's Lair
 	["Remparts des Flammes infernales"] = 347,	-- Hellfire Ramparts
+	["Sommet d'Hyjal"] = 329,	-- Hyjal Summit
 	["Terrasse des Magistères"] = 348,	-- Magister's Terrace
 	["Le repaire de Magtheridon"] = 331,	-- Magtheridon's Lair
 	["Tombes-mana"] = 272,	-- Mana Tombs
@@ -62,7 +63,6 @@ for key,value in pairs({
 	["Plateau du Puits de soleil"] = 335,	-- Sunwell Plataeu
 	["Donjon de la Tempête"] = 334,	-- Tempest Keep
 	["L'Arcatraz"] = 269,	-- The Arcatraz
-	["Sommet d'Hyjal"] = 329,	-- The Battle for Mount Hyjal
 	["Le Noir marécage"] = 273,	-- The Black Morass
 	["La Fournaise du sang"] = 261,	-- The Blood Furnace
 	["Temple noir"] = 340,	-- The Black Temple

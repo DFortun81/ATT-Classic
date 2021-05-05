@@ -113,6 +113,7 @@ for key,value in pairs({
 	["卡拉赞"] = 350,	-- Karazhan
 	["格鲁尔的巢穴"] = 330,	-- Gruul's Lair
 	["地狱火城墙"] = 347,	-- Hellfire Ramparts
+	["海加尔峰"] = 329,	-- Hyjal Summit
 	["魔导师平台"] = 348,	-- Magister's Terrace
 	["玛瑟里顿的巢穴"] = 331,	-- Magtheridon's Lair
 	["法力陵墓"] = 272,	-- Mana Tombs
@@ -123,7 +124,6 @@ for key,value in pairs({
 	["太阳之井高地"] = 335,	-- Sunwell Plataeu
 	["风暴要塞"] = 334,	-- Tempest Keep
 	["禁魔监狱"] = 269,	-- The Arcatraz
-	["海加尔峰"] = 329,	-- The Battle for Mount Hyjal
 	["黑色沼泽"] = 273,	-- The Black Morass
 	["鲜血熔炉"] = 261,	-- The Blood Furnace
 	["黑暗神殿"] = 340,	-- The Black Temple

@@ -1064,6 +1064,7 @@ app.L = {
 		["Karazhan"] = 350,
 		["Gruul's Lair"] = 330,
 		["Hellfire Ramparts"] = 347,
+		["Hyjal Summit"] = 329,
 		["Magister's Terrace"] = 348,
 		["Magtheridon's Lair"] = 331,
 		["Mana Tombs"] = 272,
@@ -1073,7 +1074,6 @@ app.L = {
 		["Shadow Labyrinth"] = 260,
 		["Tempest Keep"] = 334,
 		["The Arcatraz"] = 269,
-		["The Battle for Mount Hyjal"] = 329,
 		["The Black Morass"] = 273,
 		["The Black Temple"] = 340,
 		["The Blood Furnace"] = 261,
@@ -1094,6 +1094,7 @@ app.L = {
 		["Ahn'Qiraj"] = 320,
 		["Deadmines"] = 291,
 		["Gates of Ahn'Qiraj"] = 1451,
+		["The Battle for Mount Hyjal"] = 329,
 		["The Eye"] = 334,
 	};
 	

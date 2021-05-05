@@ -7,53 +7,79 @@ local L = app.L;
 
 --TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
 
--- Dungeons
-L.ZONE_TEXT_TO_MAP_ID["Profundezas Negras"] = 221;	-- BFD
-L.ZONE_TEXT_TO_MAP_ID["Abismo Rocha Negra"] = 242;	-- BRD
-L.ZONE_TEXT_TO_MAP_ID["Montanha Rocha Negra"] = 35;	-- BRM
-L.ZONE_TEXT_TO_MAP_ID["Pico da Rocha Negra"] = 250;	-- BRS
-L.ZONE_TEXT_TO_MAP_ID["Minas Mortas"] = 291;	-- DM/VC
-L.ZONE_TEXT_TO_MAP_ID["Gládio Cruel"] = 234;	-- Dire Maul
-L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
-L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
-L.ZONE_TEXT_TO_MAP_ID["Cavernas Ígneas"] = 213;	-- RFC
-L.ZONE_TEXT_TO_MAP_ID["Urzal dos Mortos"] = 300;	-- RFD
-L.ZONE_TEXT_TO_MAP_ID["Urzal dos Tuscos"] = 301;	-- RFK
-L.ZONE_TEXT_TO_MAP_ID["Scolomântia"] = 310;	-- SCHOLO
-L.ZONE_TEXT_TO_MAP_ID["Bastilha da Presa Negra"] = 310;	-- SFK
-L.ZONE_TEXT_TO_MAP_ID["Monastério Escarlate"] = 435;	-- SM
-L.ZONE_TEXT_TO_MAP_ID["Stratholme"] = 317;	-- STRATH
-L.ZONE_TEXT_TO_MAP_ID["Templo de Atal'Hakkar"] = 220;	-- ST
-L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
-L.ZONE_TEXT_TO_MAP_ID["Caverna Ululante"] = 279;	-- WC
-L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF
+local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Profundezas Negras"] = 221,	-- Blackfathom Deeps
+	["Abismo Rocha Negra"] = 242,	-- Blackrock Depths
+	["Covil Asa Negra"] = 287,	-- Blackwing Lair
+	["Montanha Rocha Negra"] = 35,	-- Blackrock Mountain
+	["Pico da Rocha Negra"] = 250,	-- Blackrock Spire
+	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
+	["Gládio Cruel"] = 234,	-- Dire Maul
+	["Metrô Correfundo"] = 499,	-- Deeprun Tram
+	["Gnomeregan"] = 226,	-- Gnomeregan
+	["Maraudon"] = 280,	-- Maraudon
+	["Núcleo Derretido"] = 232,	-- Molten Core
+	["Naxxramas"] = 162,	-- Naxxramas
+	["Covil da Onyxia"] = 248,	-- Onyxia's Lair
+	["Cavernas Ígneas"] = 213,	-- Ragefire Chasm
+	["Urzal dos Mortos"] = 300,	-- Razorfen Downs
+	["Urzal dos Tuscos"] = 301,	-- Razorfen Kraul
+	["Ruínas de Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
+	["Monastério Escarlate"] = 435,	-- Scarlet Monastery
+	["Scolomântia"] = 476,	-- Scholomance
+	["Bastilha da Presa Negra"] = 310,	-- Shadowfang Keep
+	["Stratholme"] = 317,	-- Stratholme
+	["Templo de Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
+	["Minas Mortas"] = 291,	-- The Deadmines
+	["Templo de Atal'hakkar"] = 220,	-- The Temple of Atal'hakkar
+	["Templo de Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
+	["O Cárcere"] = 225,	-- The Stockade
+	["Uldaman"] = 230,	-- Uldaman
+	["Caverna Ululante"] = 279,	-- Wailing Caverns
+	["Zul'Farrak"] = 219,	-- Zul'Farrak
+	["Zul'Gurub"] = 337,	-- Zul'Gurub
+	
+	-- TBC
+	["Catacumbas Auchenai"] = 256,	-- Auchenai Crypts
+	["Karazhan"] = 350,	-- Karazhan
+	["Covil de Gruul"] = 330,	-- Gruul's Lair
+	["Muralha Fogo do Inferno"] = 347,	-- Hellfire Ramparts
+	["Pico Hyjal"] = 329,	-- Hyjal Summit
+	["Terraço dos Magísteres"] = 348,	-- Magister's Terrace
+	["Covil de Magtheridon"] = 331,	-- Magtheridon's Lair
+	["Tumbas de Mana"] = 272,	-- Mana Tombs
+	["Antigo Contraforte de Eira dos Montes"] = 274,	-- Old Hillsbrad Foothills
+	["Caverna do Serpentário"] = 332,	-- Serpentshrine Cavern
+	["Salões dos Sethekk"] = 258,	-- Sethekk Halls
+	["Labirinto Soturno"] = 260,	-- Shadow Labyrinth
+	["Platô da Nascente do Sol"] = 335,	-- Sunwell Plataeu
+	["Bastilha da Tormenta"] = 334,	-- Tempest Keep
+	["Arcatraz"] = 269,	-- The Arcatraz
+	["Lamaçal Negro"] = 273,	-- The Black Morass
+	["Fornalha de Sangue"] = 261,	-- The Blood Furnace
+	["Templo Negro"] = 340,	-- The Black Temple
+	["Jardim Botânico"] = 266,	-- The Botanica
+	["Mecanar"] = 267,	-- The Mechanar
+	["Salões Despedaçados"] = 246,	-- The Shattered Halls
+	["Pátio dos Escravos"] = 265,	-- The Slave Pens
+	["Câmara dos Vapores"] = 263,	-- The Steamvault
+	["Brejo Oculto"] = 262,	-- The Underbog
+	["Zul'Aman"] = 333,	-- Zul'Aman
+})
+do a[key] = value; end
 
-L.ZONE_TEXT_TO_MAP_ID["Magister's Terrace"] = 348;	-- MGT
-L.ZONE_TEXT_TO_MAP_ID["Karazhan"] = 350;	-- KARA
-L.ZONE_TEXT_TO_MAP_ID["Gruul's Lair"] = 330;	-- GRUL
-L.ZONE_TEXT_TO_MAP_ID["Magtheridon's Lair"] = 331;	-- MAG
-L.ZONE_TEXT_TO_MAP_ID["Serpentshrine Cavern"] = 332;	-- SSC
-L.ZONE_TEXT_TO_MAP_ID["Bastilha da Tormenta"] = 334;	-- TK
-L.ZONE_TEXT_TO_MAP_ID["The Battle for Mount Hyjal"] = 329;	-- HYJAL
-L.ZONE_TEXT_TO_MAP_ID["The Black Temple"] = 340;	-- BT
-L.ZONE_TEXT_TO_MAP_ID["Sunwell Plataeu"] = 335;	-- SWP
-L.ZONE_TEXT_TO_MAP_ID["Zul'Aman"] = 333;	-- ZA
-
-L.ALT_ZONE_TEXT_TO_MAP_ID["Catacumbas Auchenai"] = 256;	-- CRYPTS
-L.ALT_ZONE_TEXT_TO_MAP_ID["Tumbas de Mana"] = 272;	-- MT
-L.ALT_ZONE_TEXT_TO_MAP_ID["Salões dos Sethekk"] = 258;	-- SETH
-L.ALT_ZONE_TEXT_TO_MAP_ID["Labirinto Soturno"] = 260;	-- SLABS
-L.ALT_ZONE_TEXT_TO_MAP_ID["Lamaçal Negro"] = 273;	-- BLKM
-L.ALT_ZONE_TEXT_TO_MAP_ID["Antigo Contraforte de Eira dos Montes"] = 274;	-- OHF
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Slave Pens"] = 265;	-- SPENS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Steamvault"] = 263;	-- SVALT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Underbog"] = 262;	-- UNBOG
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Blood Furnace"] = 261;	-- BF
-L.ALT_ZONE_TEXT_TO_MAP_ID["Hellfire Ramparts"] = 347;	-- RAMPS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Shattered Halls"] = 246;	-- SHALLS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Ahn'Qiraj"] = 320,	-- Ahn'Qiraj
+	["Portões de Ahn'Qiraj"] = 1451,	-- Gates of Ahn'Qiraj
+	["O Olho"] = 334,	-- The Eye
+})
+do a[key] = value; end
 
 local a = L.ALT_PROFESSION_TEXT_TO_ID;
 for key,value in pairs({

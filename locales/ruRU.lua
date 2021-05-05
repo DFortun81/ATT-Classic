@@ -7,53 +7,80 @@ L.FACTION_MODE_TOOLTIP = "Включите данную настройку, ес
 
 L.TOGGLE_FACTION_MODE = "Переключить режим Фракции";
 
--- Dungeons
-L.ZONE_TEXT_TO_MAP_ID["Непроглядная Пучина"] = 221;	-- BFD
-L.ZONE_TEXT_TO_MAP_ID["Глубины Черной горы"] = 242;	-- BRD
-L.ZONE_TEXT_TO_MAP_ID["Черная гора"] = 35;	-- BRM
-L.ZONE_TEXT_TO_MAP_ID["Вершина Черной горы"] = 250;	-- BRS
-L.ZONE_TEXT_TO_MAP_ID["Мертвые копи"] = 291;	-- DM/VC
-L.ZONE_TEXT_TO_MAP_ID["Забытый Город"] = 234;	-- Dire Maul
-L.ZONE_TEXT_TO_MAP_ID["Гномреган"] = 226;	-- Gnomer
-L.ZONE_TEXT_TO_MAP_ID["Мародон"] = 280;	-- Maraudon
-L.ZONE_TEXT_TO_MAP_ID["Огненная пропасть"] = 213;	-- RFC
-L.ZONE_TEXT_TO_MAP_ID["Курганы Иглошкурых"] = 300;	-- RFD
-L.ZONE_TEXT_TO_MAP_ID["Лабиринты Иглошкурых"] = 301;	-- RFK
-L.ZONE_TEXT_TO_MAP_ID["Некроситет"] = 310;	-- SCHOLO
-L.ZONE_TEXT_TO_MAP_ID["Крепость Темного Клыка"] = 310;	-- SFK
-L.ZONE_TEXT_TO_MAP_ID["Монастырь Алого ордена"] = 435;	-- SM
-L.ZONE_TEXT_TO_MAP_ID["Стратхольм"] = 317;	-- STRATH
-L.ZONE_TEXT_TO_MAP_ID["Храм Атал'Хаккара"] = 220;	-- ST
-L.ZONE_TEXT_TO_MAP_ID["Ульдаман"] = 230;	-- ULDA
-L.ZONE_TEXT_TO_MAP_ID["Пещеры Стенаний"] = 279;	-- WC
-L.ZONE_TEXT_TO_MAP_ID["Зул'Фаррак"] = 219;	-- ZF
+local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Непроглядная Пучина"] = 221,	-- Blackfathom Deeps
+	["Глубины Черной горы"] = 242,	-- Blackrock Depths
+	["Логово Крыла Тьмы"] = 287,	-- Blackwing Lair
+	["Черная гора"] = 35,	-- Blackrock Mountain
+	["Вершина Черной горы"] = 250,	-- Blackrock Spire
+	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
+	["Забытый Город"] = 234,	-- Dire Maul
+	["Подземный поезд"] = 499,	-- Deeprun Tram
+	["Гномреган"] = 226,	-- Gnomeregan
+	["Мародон"] = 280,	-- Maraudon
+	["Огненные Недра"] = 232,	-- Molten Core
+	["Наксрамас"] = 162,	-- Naxxramas
+	["Логово Ониксии"] = 248,	-- Onyxia's Lair
+	["Огненная пропасть"] = 213,	-- Ragefire Chasm
+	["Курганы Иглошкурых"] = 300,	-- Razorfen Downs
+	["Лабиринты Иглошкурых"] = 301,	-- Razorfen Kraul
+	["Руины Ан'Киража"] = 247,	-- Ruins of Ahn'Qiraj
+	["Монастырь Алого ордена"] = 435,	-- Scarlet Monastery
+	["Некроситет"] = 476,	-- Scholomance
+	["Крепость Темного Клыка"] = 310,	-- Shadowfang Keep
+	["Стратхольм"] = 317,	-- Stratholme
+	["Храм Ан'Киража"] = 320,	-- Temple of Ahn'Qiraj
+	["Мертвые копи"] = 291,	-- The Deadmines
+	["Храм Атал'Хаккара"] = 220,	-- The Temple of Atal'hakkar
+	["Тюрьма"] = 225,	-- The Stockade
+	["Ульдаман"] = 230,	-- Uldaman
+	["Пещеры Стенаний"] = 279,	-- Wailing Caverns
+	["Зул'Фаррак"] = 219,	-- Zul'Farrak
+	["Зул'Гуруб"] = 337,	-- Zul'Gurub
+	
+	-- TBC
+	["Аукенайские гробницы"] = 256,	-- Auchenai Crypts
+	["Каражан"] = 350,	-- Karazhan
+	["Логово Груула"] = 330,	-- Gruul's Lair
+	["Бастионы Адского Пламени"] = 347,	-- Hellfire Ramparts
+	["Вершина Хиджала"] = 329,	-- Hyjal Summit
+	["Терраса Магистров"] = 348,	-- Magister's Terrace
+	["Логово Магтеридона"] = 331,	-- Magtheridon's Lair
+	["Гробницы маны"] = 272,	-- Mana Tombs
+	["Старые предгорья Хилсбрада"] = 274,	-- Old Hillsbrad Foothills
+	["Змеиное святилище"] = 332,	-- Serpentshrine Cavern
+	["Сетеккские залы"] = 258,	-- Sethekk Halls
+	["Темный лабиринт"] = 260,	-- Shadow Labyrinth
+	["Плато Солнечного Колодца"] = 335,	-- Sunwell Plataeu
+	["Крепость Бурь"] = 334,	-- Tempest Keep
+	["Аркатрац"] = 269,	-- The Arcatraz
+	["Черные топи"] = 273,	-- The Black Morass
+	["Кузня Крови"] = 261,	-- The Blood Furnace
+	["Черный храм"] = 340,	-- The Black Temple
+	["Ботаника"] = 266,	-- The Botanica
+	["Механар"] = 267,	-- The Mechanar
+	["Разрушенные залы"] = 246,	-- The Shattered Halls
+	["Узилище"] = 265,	-- The Slave Pens
+	["Паровое подземелье"] = 263,	-- The Steamvault
+	["Нижетопь"] = 262,	-- The Underbog
+	["Зул'Аман"] = 333,	-- Zul'Aman
+})
+do a[key] = value; end
 
-L.ZONE_TEXT_TO_MAP_ID["Magister's Terrace"] = 348;	-- MGT
-L.ZONE_TEXT_TO_MAP_ID["Karazhan"] = 350;	-- KARA
-L.ZONE_TEXT_TO_MAP_ID["Gruul's Lair"] = 330;	-- GRUL
-L.ZONE_TEXT_TO_MAP_ID["Magtheridon's Lair"] = 331;	-- MAG
-L.ZONE_TEXT_TO_MAP_ID["Serpentshrine Cavern"] = 332;	-- SSC
-L.ZONE_TEXT_TO_MAP_ID["Крепость Бурь"] = 334;	-- TK
-L.ZONE_TEXT_TO_MAP_ID["The Battle for Mount Hyjal"] = 329;	-- HYJAL
-L.ZONE_TEXT_TO_MAP_ID["The Black Temple"] = 340;	-- BT
-L.ZONE_TEXT_TO_MAP_ID["Sunwell Plataeu"] = 335;	-- SWP
-L.ZONE_TEXT_TO_MAP_ID["Zul'Aman"] = 333;	-- ZA
-
-L.ALT_ZONE_TEXT_TO_MAP_ID["Аукенайские гробницы"] = 256;	-- CRYPTS
-L.ALT_ZONE_TEXT_TO_MAP_ID["Гробницы маны"] = 272;	-- MT
-L.ALT_ZONE_TEXT_TO_MAP_ID["Сетеккские залы"] = 258;	-- SETH
-L.ALT_ZONE_TEXT_TO_MAP_ID["Темный лабиринт"] = 260;	-- SLABS
-L.ALT_ZONE_TEXT_TO_MAP_ID["Черные топи"] = 273;	-- BLKM
-L.ALT_ZONE_TEXT_TO_MAP_ID["Старые предгорья Хилсбрада"] = 274;	-- OHF
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Slave Pens"] = 265;	-- SPENS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Steamvault"] = 263;	-- SVALT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Underbog"] = 262;	-- UNBOG
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Blood Furnace"] = 261;	-- BF
-L.ALT_ZONE_TEXT_TO_MAP_ID["Hellfire Ramparts"] = 347;	-- RAMPS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Shattered Halls"] = 246;	-- SHALLS
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Arcatraz"] = 269;	-- ARCA
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Botanica"] = 266;	-- BOT
-L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Ан'Кираж"] = 320,	-- Ahn'Qiraj
+	["Мертвые копи"] = 291,	-- Deadmines
+	["Врата Ан'Киража"] = 1451,	-- Gates of Ahn'Qiraj
+	["The Arcatraz"] = 269,	-- The Arcatraz
+	["Глаз"] = 334,	-- The Eye
+})
+do a[key] = value; end
 
 local a = L.ALT_PROFESSION_TEXT_TO_ID;
 for key,value in pairs({
