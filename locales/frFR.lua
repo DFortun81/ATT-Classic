@@ -64,6 +64,7 @@ L.ALT_ZONE_TEXT_TO_MAP_ID["The Mechanar"] = 267;	-- MECH
 
 -- Professions
 L.ALT_PROFESSION_TEXT_TO_ID["Ingénierie"] = 4036;	-- Engineering
+L.ALT_PROFESSION_TEXT_TO_ID["Secourisme"] = 3273;	-- First Aid
 
 local a = L.HEADER_NAMES;
 for key,value in pairs({
