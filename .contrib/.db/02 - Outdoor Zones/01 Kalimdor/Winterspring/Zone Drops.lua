@@ -15,6 +15,13 @@ _.Zones =
 						7453,	-- Moontouched Owlbeast
 					},
 				}),
+				i(12623, {	-- Chillwind Meat
+					["crs"] = {
+						7448,	-- Chillwind Chimaera
+						7449,	-- Chillwind Ravager
+						7447,	-- Fledgling Chillwind
+					},
+				}),
 				i(16223, {	-- Formula: Enchant Weapon - Icy Chill
 					["cr"] = 7524,	-- Anguished Highborne
 				}),
@@ -66,6 +73,14 @@ _.Zones =
 				}),
 				i(16054, {	-- Schematic: Arcanite Dragonling
 					["cr"] = 7437,	-- Cobalt Mageweaver
+				}),
+				i(12622, {	-- Shardtooth Meat
+					["crs"] = {
+						7445,	-- Elder Shardtooth
+						7446,	-- Rabid Shardtooth
+						7444,	-- Shardtooth Bear
+						7443,	-- Shardtooth Mauler
+					},
 				}),
 				un(PHASE_FIVE, i(22227, {	-- Starbreeze Village Relic
 					["crs"] = {

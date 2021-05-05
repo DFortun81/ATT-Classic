@@ -723,10 +723,14 @@ _.Zones =
 				}),
 				q(9267, {	-- Mending Old Wounds
 					["qg"] = 16418,	-- Mupsi Shacklefridd
-					["repeatable"] = true,
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
-					["lvl"] = 10,
 					["maxReputation"] = { 470, NEUTRAL },	-- Ratchet, must be less than Neutral
+					["cost"] = {
+						{ "i", 2589, 40 },	-- Linen Cloth
+						{ "i", 3371, 4 },	-- Empty Vial
+					},
+					["repeatable"] = true,
+					["lvl"] = 10,
 				}),
 				q(896, {	-- Miner's Fortune
 					["qg"] = 3453,	-- Wharfmaster Dizzywig

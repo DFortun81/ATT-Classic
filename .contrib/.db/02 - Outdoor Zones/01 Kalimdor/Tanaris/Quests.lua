@@ -465,10 +465,15 @@ _.Zones =
 					["provider"] = { "o", 142122 },	-- Wanted Poster
 				}),
 				q(9268, {	-- War at Sea
-					["lvl"] = 40,
-					["repeatable"] = true,
-					["maxReputation"] = { 369, NEUTRAL },	-- Gadgetzan, must be less than Neutral
 					["qg"] = 16417,	-- Rumsen Fizzlebrack
+					["coord"] = { 50.4, 26.2, TANARIS },
+					["maxReputation"] = { 369, NEUTRAL },	-- Gadgetzan, must be less than Neutral
+					["cost"] = {
+						{ "i", 4338, 40 },	-- Mageweave Cloth
+						{ "i", 3466, 4 },	-- Strong Flux
+					},
+					["repeatable"] = true,
+					["lvl"] = 40,
 				}),
 				q(1690, {	-- Wastewander Justice
 					["lvl"] = 40,

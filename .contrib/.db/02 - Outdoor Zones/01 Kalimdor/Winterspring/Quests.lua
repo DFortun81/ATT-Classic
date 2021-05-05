@@ -148,9 +148,15 @@ _.Zones =
 					},
 				}),
 				q(4970, {	-- Frostsaber Provisions
-					["lvl"] = 58,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["minReputation"] = { 589, NEUTRAL },	-- Wintersaber Trainers, Neutral.
+					["maxReputation"] = { 589, NEUTRAL + 1500 },	-- Wintersaber Trainers, 1500 Neutral.
+					["cost"] = {
+						{ "i", 12623, 5 },	-- Chillwind Meat
+						{ "i", 12622, 5 },	-- Shardtooth Meat
+					},
 					["repeatable"] = true,
+					["lvl"] = 58,
 				}),
 				q(4901, {	-- Guardians of the Altar
 					["qg"] = 10300,	-- Ranshalla
@@ -192,6 +198,17 @@ _.Zones =
 					["qg"] = 10307,	-- Witch Doctor Mau'ari
 					["lvl"] = 55,
 				}),
+				q(9266, {	-- Making Amends
+					["qg"] = 16416,	-- Bronn Fitzwrench
+					["coord"] = { 59.8, 39.7, WINTERSPRING },
+					["maxReputation"] = { 577, NEUTRAL },	-- Everlook, must be less than Neutral
+					["cost"] = {
+						{ "i", 14047, 40 },	-- Runecloth
+						{ "i", 3857, 4 },	-- Coal
+					},
+					["repeatable"] = true,
+					["lvl"] = 40,
+				}),
 				q(5057, {	-- Past Endeavors
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["sourceQuest"] = 5056,	-- Shy-Rotam
@@ -205,6 +222,8 @@ _.Zones =
 				}),
 				q(5981, {	-- Rampaging Giants
 					["qg"] = 10618,	-- Rivern Frostwind
+					["minReputation"] = { 589, HONORED },	-- Wintersaber Trainers, Honored.
+					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["lvl"] = 58,
@@ -396,10 +415,12 @@ _.Zones =
 					["provider"] = { "i", 12771 },	-- Empty Firewater Flask
 				}),
 				q(5201, {	-- Winterfall Intrusion
-					["lvl"] = 58,
-					["races"] = ALLIANCE_ONLY,
 					["qg"] = 10618,	-- Rivern Frostwind
+					["minReputation"] = { 589, NEUTRAL + 1500 },	-- Wintersaber Trainers, Neutral + 1500.
+					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
+					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
+					["lvl"] = 58,
 				}),
 				q(8471, {	-- Winterfall Ritual Totem
 					["provider"] = { "i", 20742 },	-- Winterfall Ritual Totem

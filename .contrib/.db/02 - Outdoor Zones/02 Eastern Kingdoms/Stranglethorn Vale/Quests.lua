@@ -1091,8 +1091,12 @@ _.Zones =
 				}),
 				q(9259, {	-- Traitor to the Bloodsail
 					["qg"] = 16399,	-- Bloodsail Traitor
-					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["coord"] = { 31.8, 70.9, STRANGLETHORN_VALE },
+					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
+					["cost"] = {
+						{ "i", 4306, 40 },	-- Silk Cloth
+						{ "i", 2604, 4 },	-- Red Dye
+					},
 					["repeatable"] = true,
 					["lvl"] = 30,
 				}),

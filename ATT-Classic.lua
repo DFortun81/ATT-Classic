@@ -7088,9 +7088,6 @@ function app.QuestCompletionHelper(questID)
 				end
 			end
 		end
-		
-		-- Don't force a full refresh.
-		app:RefreshData(true, true);
 	end
 end
 
@@ -12901,12 +12898,15 @@ app.events.QUEST_ACCEPTED = function(questID)
 	wipe(searchCache);
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	CompletedQuests[questID] = true;
-	for questID,completed in pairs(DirtyQuests) do
-		app.QuestCompletionHelper(tonumber(questID));
+	if not fieldCache.questID[questID] and not fieldCache.questID[questID][1].repeatable then
+		CompletedQuests[questID] = true;
+		for questID,completed in pairs(DirtyQuests) do
+			app.QuestCompletionHelper(tonumber(questID));
+		end
+		wipe(DirtyQuests);
+		wipe(searchCache);
 	end
-	wipe(DirtyQuests);
-	wipe(searchCache);
+	app:RefreshData(true, true);
 end
 app.events.QUEST_LOG_UPDATE = function()
 	GetQuestsCompleted(CompletedQuests);
@@ -12915,5 +12915,6 @@ app.events.QUEST_LOG_UPDATE = function()
 	end
 	wipe(DirtyQuests);
 	wipe(searchCache);
+	app:RefreshData(true, true);
 	app:UnregisterEvent("QUEST_LOG_UPDATE");
 end
