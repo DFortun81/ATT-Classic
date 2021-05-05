@@ -1078,7 +1078,6 @@ app.L = {
 		["The Black Temple"] = 340,
 		["The Blood Furnace"] = 261,
 		["The Botanica"] = 266,
-		["The Eye"] = 334,
 		["The Mechanar"] = 267,
 		["The Shattered Halls"] = 246,
 		["The Slave Pens"] = 265,
@@ -1095,6 +1094,7 @@ app.L = {
 		["Ahn'Qiraj"] = 320,
 		["Deadmines"] = 291,
 		["Gates of Ahn'Qiraj"] = 1451,
+		["The Eye"] = 334,
 	};
 	
 	-- This is necessary because sometimes the names of spells do not match for different languages.

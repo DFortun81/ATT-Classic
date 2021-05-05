@@ -51,17 +51,16 @@ for key,value in pairs({
 	["마나 무덤"] = 272,	-- Mana Tombs
 	["옛 언덕마루 구릉지"] = 274,	-- Old Hillsbrad Foothills
 	["불뱀 제단"] = 332,	-- Serpentshrine Cavern
-	["폭풍우 요새"] = 334,	-- Tempest Keep
 	["세데크 전당"] = 258,	-- Sethekk Halls
 	["어둠의 미궁"] = 260,	-- Shadow Labyrinth
 	["태양샘 고원"] = 335,	-- Sunwell Plataeu
+	["폭풍우 요새"] = 334,	-- Tempest Keep
 	["알카트라즈"] = 269,	-- The Arcatraz
 	["하이잘 정상"] = 329,	-- The Battle for Mount Hyjal
 	["검은늪"] = 273,		-- The Black Morass
 	["피의 용광로"] = 261,	-- The Blood Furnace
 	["검은 사원"] = 340,	-- The Black Temple
 	["신록의 정원"] = 266,	-- The Botanica
-	["폭풍우 요새"] = 334,	-- The Eye
 	["메카나르"] = 267,		-- The Mechanar
 	["으스러진 손의 전당"] = 246,	-- The Shattered Halls
 	["강제 노역소"] = 265,	-- The Slave Pens
@@ -78,6 +77,7 @@ for key,value in pairs({
 	["안퀴라즈"] = 320,	-- Ahn'Qiraj
 	["죽음의 폐광"] = 291,	-- Deadmines
 	["안퀴라즈 관문"] = 1451,	-- Gates of Ahn'Qiraj
+	["폭풍우 요새"] = 334,	-- The Eye
 })
 do a[key] = value; end
 

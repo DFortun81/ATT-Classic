@@ -13,7 +13,6 @@ lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\base.lua
 locales\enUS.lua
 locales\esES.lua
-locales\esMX.lua
 locales\deDE.lua
 locales\frFR.lua
 locales\itIT.lua

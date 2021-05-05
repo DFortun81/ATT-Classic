@@ -57,17 +57,16 @@ for key,value in pairs({
 	["Tombes-mana"] = 272,	-- Mana Tombs
 	["Contreforts de Hautebrande d’antan"] = 274,	-- Old Hillsbrad Foothills
 	["Caverne du sanctuaire du Serpent"] = 332,	-- Serpentshrine Cavern
-	["Donjon de la Tempête"] = 334,	-- Tempest Keep
 	["Les salles des Sethekk"] = 258,	-- Sethekk Halls
 	["Labyrinthe des ombres"] = 260,	-- Shadow Labyrinth
 	["Plateau du Puits de soleil"] = 335,	-- Sunwell Plataeu
+	["Donjon de la Tempête"] = 334,	-- Tempest Keep
 	["L'Arcatraz"] = 269,	-- The Arcatraz
 	["Sommet d'Hyjal"] = 329,	-- The Battle for Mount Hyjal
 	["Le Noir marécage"] = 273,	-- The Black Morass
 	["La Fournaise du sang"] = 261,	-- The Blood Furnace
 	["Temple noir"] = 340,	-- The Black Temple
 	["La Botanica"] = 266,	-- The Botanica
-	["L'oeil"] = 334,	-- The Eye
 	["Le Méchanar"] = 267,	-- The Mechanar
 	["Les Salles brisées"] = 246,	-- The Shattered Halls
 	["Les enclos aux esclaves"] = 265,	-- The Slave Pens
@@ -84,6 +83,7 @@ for key,value in pairs({
 	["Ahn'Qiraj"] = 320,	-- Ahn'Qiraj
 	["Mortemines"] = 291,	-- Deadmines
 	["Portes d'Ahn'Qiraj"] = 1451,	-- Gates of Ahn'Qiraj
+	["L'oeil"] = 334,	-- The Eye
 })
 do a[key] = value; end
 
