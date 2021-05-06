@@ -5805,12 +5805,15 @@ local fields = {
 	["preview"] = function(t)
 		local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
 		if exploredMapTextures then
-			for _,info in ipairs(exploredMapTextures) do
+			for i,info in ipairs(exploredMapTextures) do
 				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
 				if hash == t.hash then
 					local texture = info.fileDataIDs[1];
 					if texture then
 						rawset(t, "preview", texture);
+						local exploration = EXPLORATION_ID_MAP[t.artID];
+						local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+						if not exploration[hash] then exploration[hash] = -i; end
 						return texture;
 					end
 				end
@@ -5929,7 +5932,9 @@ end
 
 app.events.MAP_EXPLORATION_UPDATED = function(...)
 	wipe(ExploredMapDataByID);
+	wipe(ExploredSubMapsByID);
 	app.CurrentMapID = app.GetCurrentMapID();
+	app:RefreshData(true, true);
 end
 app.events.ZONE_CHANGED = function()
 	app.CurrentMapID = app.GetCurrentMapID();
@@ -12896,6 +12901,7 @@ app.events.UPDATE_INSTANCE_INFO = function()
 end
 app.events.QUEST_ACCEPTED = function(questID)
 	wipe(searchCache);
+	app:RefreshData(true, true);
 end
 app.events.QUEST_TURNED_IN = function(questID)
 	if not fieldCache.questID[questID] and not fieldCache.questID[questID][1].repeatable then
