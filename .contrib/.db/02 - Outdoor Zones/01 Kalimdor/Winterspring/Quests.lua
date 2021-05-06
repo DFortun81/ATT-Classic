@@ -150,7 +150,7 @@ _.Zones =
 				q(4970, {	-- Frostsaber Provisions
 					["qg"] = 10618,	-- Rivern Frostwind
 					["minReputation"] = { 589, NEUTRAL },	-- Wintersaber Trainers, Neutral.
-					["maxReputation"] = { 589, NEUTRAL + 1500 },	-- Wintersaber Trainers, 1500 Neutral.
+					["maxReputation"] = { 589, EXALTED },	-- Wintersaber Trainers, Exalted.
 					["cost"] = {
 						{ "i", 12623, 5 },	-- Chillwind Meat
 						{ "i", 12622, 5 },	-- Shardtooth Meat
