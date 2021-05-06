@@ -159,6 +159,7 @@ _.Zones =
 				q(8249, {	-- Junkboxes Needed
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
 					["coord"] = { 84.4, 80.3, ALTERAC_MOUNTAINS },
+					["maxReputation"] = { 349, EXALTED },	-- Ravenholdt, Exalted.
 					["repeatable"] = true,
 					["cost"] = {
 						{ "i", 16885, 5 },	-- Heavy Junkbox
@@ -219,7 +220,7 @@ _.Zones =
 					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
-					["maxReputation"] = { 349, FRIENDLY },
+					["maxReputation"] = { 349, FRIENDLY },	-- Ravenholdt, Friendly.
 					["classes"] = { ROGUE },
 					["repeatable"] = true,
 					["cost"] = {
