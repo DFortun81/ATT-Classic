@@ -259,7 +259,7 @@ for _,v in pairs(HORDE_ONLY) do table.insert(ALL_RACES,v) end
 ACHIEVEMENTS = -4;
 COMMON_BOSS_DROPS = -1;
 EXPLORATION = -15;
-FACTIONS = -6013;
+FACTIONS = -8;
 FLIGHT_PATHS = -6;
 QUESTS = -17;
 RARES = -16;

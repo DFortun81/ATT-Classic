@@ -6330,7 +6330,7 @@ local questFields = {
 	end,
 	
 	["collectibleAsReputation"] = function(t)
-		return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID)) or (app.CollectibleReputations and t.maxReputation);
+		return app.CollectibleQuests and ((not t.repeatable and not t.isBreadcrumb) or C_QuestLog.IsOnQuest(t.questID) or (app.CollectibleReputations and t.maxReputation));
 	end,
 	["collectedAsReputation"] = function(t)
 		if app.CollectibleReputations and t.maxReputation and (select(6, GetFactionInfoByID(t.maxReputation[1])) or 0) >= t.maxReputation[2] then
@@ -8634,15 +8634,6 @@ function app:GetDataCache()
 			table.insert(g, db);
 		end
 
-		-- Factions
-		if app.Categories.Factions then
-			db = {};
-			db.text = "Factions";
-			db.icon = app.asset("Category_Factions");
-			db.g = app.Categories.Factions;
-			table.insert(g, db);
-		end
-
 		-- PvP
 		if app.Categories.PvP then
 			db = {};
@@ -8699,12 +8690,10 @@ function app:GetDataCache()
 		]]--
 		
 		-- Factions (Dynamic)
-		local factionsCategory = {};
+		local factionsCategory = app.CreateNPC(-8, {});
 		factionsCategory.g = {};
 		factionsCategory.factions = {};
 		factionsCategory.expanded = false;
-		factionsCategory.icon = app.asset("Category_Factions");
-		factionsCategory.text = FACTION;
 		table.insert(g, factionsCategory);
 		
 		-- Flight Paths (Dynamic)
@@ -8843,6 +8832,7 @@ function app:GetDataCache()
 				return a.text < b.text;
 			end);
 		end
+		factionsCategory:OnUpdate();
 		
 		-- Update Flight Path data.
 		app.CacheFlightPathData();
@@ -8870,13 +8860,13 @@ function app:GetDataCache()
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
-					CacheFields(fp);
 				end
 			end
 			table.sort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
 		end;
+		flightPathsCategory:OnUpdate();
 		
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;
@@ -9890,8 +9880,22 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 			local results = SearchForField("mapID", self.mapID);
 			if results then
 				-- Simplify the returned groups
-				local groups, holiday = {}, {};
+				local groups = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				local factionsHeader = app.CreateNPC(-8, { ["g"] = {} });
+				table.insert(groups, factionsHeader);
+				local flightPathsHeader = app.CreateNPC(-6, { ["g"] = {} });
+				table.insert(groups, flightPathsHeader);
+				local holidaysHeader = app.CreateNPC(-5, { ["g"] = {} });
+				table.insert(groups, holidaysHeader);
+				local questsHeader = app.CreateNPC(-17, { ["g"] = {} });
+				table.insert(groups, questsHeader);
+				local raresHeader = app.CreateNPC(-16, { ["g"] = {} });
+				table.insert(groups, raresHeader);
+				local vendorsHeader = app.CreateNPC(-2, { ["g"] = {} });
+				table.insert(groups, vendorsHeader);
+				local zoneDropsHeader = app.CreateNPC(0, { ["g"] = {} });
+				table.insert(groups, zoneDropsHeader);
 				for i, group in ipairs(results) do
 					local clone = {};
 					for key,value in pairs(group) do
@@ -9928,72 +9932,28 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 							if group.headerID ~= -17 then clone = app.CreateNPC(-17, { g = { clone } }); end
 						end
 						if holidayID then clone = app.CreateHoliday(holidayID, { g = { clone } }); end
-						MergeObject(holiday, clone);
+						MergeObject(holidaysHeader.g, clone);
 					elseif group.key == "mapID" then
 						header.key = group.key;
 						header[group.key] = group[group.key];
 						MergeObject({header}, clone);
 					elseif group.key == "npcID" then
 						if GetRelativeField(group, "headerID", -2) or GetRelativeField(group, "headerID", -173) then	-- It's a Vendor. (or a timewaking vendor)
-							MergeObject(groups, app.CreateNPC(-2, { g = { clone } }), 1);
+							MergeObject(vendorsHeader.g, clone, 1);
 						elseif GetRelativeField(group, "headerID", -17) then	-- It's a Quest.
-							MergeObject(groups, app.CreateNPC(-17, { g = { clone } }), 1);
+							MergeObject(questsHeader.g, clone, 1);
 						else
 							MergeObject(groups, clone);
 						end
 					elseif group.key == "questID" then
-						MergeObject(groups, app.CreateNPC(-17, { g = { clone } }), 1);
+						MergeObject(questsHeader.g, clone, 1);
+					elseif group.key == "factionID" then
+						MergeObject(factionsHeader.g, clone);
+					elseif group.key == "flightPathID" then
+						MergeObject(flightPathsHeader.g, clone);
 					else
 						MergeObject(groups, clone);
 					end
-				end
-				
-				if #holiday > 0 then
-					-- Search for Holiday entries that are not within a holidayID and attempt to find the appropriate group for them.
-					local holidays, unlinked = {}, {};
-					for i=#holiday,1,-1 do
-						local group = holiday[i];
-						if group.holidayID then
-							if group.u then holidays[group.u] = group; end
-						elseif group.u then
-							local temp = unlinked[group.u];
-							if not temp then
-								temp = {};
-								unlinked[group.u] = temp;
-							end
-							table.insert(temp, group);
-							table.remove(holiday, i);
-						end
-					end
-					for u,temp in pairs(unlinked) do
-						local h = holidays[u];
-						if h then
-							for i,data in ipairs(temp) do
-								MergeObject(h.g, data);
-							end
-						else
-							-- Attempt to scan for the main holiday header.
-							local done = false;
-							for j,o in ipairs(SearchForField("headerID", -5)) do
-								if o.g and #o.g > 5 and o.g[1].holidayID then
-									for k,group in ipairs(o.g) do
-										if group.holidayID and group.u == u then
-											MergeObject(holiday, app.CreateHoliday(group.holidayID, { g = temp, u = u }));
-											done = true;
-										end
-									end
-									break;
-								end
-							end
-							if not done then
-								for i,data in ipairs(temp) do
-									MergeObject(holiday, data);
-								end
-							end
-						end
-					end
-					
-					tinsert(groups, 1, app.CreateNPC(-5, { g = holiday, description = "A specific holiday may need to be active for you to complete the referenced Things within this section." }));
 				end
 				
 				-- Swap out the map data for the header.
@@ -10018,15 +9978,30 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 					self.data.classID and app.BaseCharacterClass
 					or app.BaseMap);
 				
-				-- If we have determined that we want to expand this section, then do it
+				-- Move all "isRaid" entries to the top of the list.
 				if results.g then
 					local bottom = {};
 					local top = {};
 					for i=#results.g,1,-1 do
 						local o = results.g[i];
-						if o.isRaid or o.flightPathID then
+						if o.key == "factionID" then
+							table.remove(results.g, i);
+							MergeObject(factionsHeader.g, o, 1);
+						elseif o.key == "flightPathID" then
+							table.remove(results.g, i);
+							MergeObject(flightPathsHeader.g, o, 1);
+						elseif o.key == "questID" then
+							table.remove(results.g, i);
+							MergeObject(questsHeader.g, o, 1);
+						end
+					end
+					for i=#results.g,1,-1 do
+						local o = results.g[i];
+						if o.isRaid then
 							table.remove(results.g, i);
 							table.insert(top, o);
+						elseif o.g and #o.g < 1 and o.key == "headerID" then
+							table.remove(results.g, i);
 						end
 					end
 					for i,o in ipairs(top) do
