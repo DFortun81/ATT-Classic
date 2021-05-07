@@ -10082,7 +10082,6 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 		self:SetScript("OnEvent", function(self, e, ...)
 			RefreshLocation();
 		end);
-		self:RegisterEvent("VARIABLES_LOADED");
 		self:RegisterEvent("ZONE_CHANGED");
 		self:RegisterEvent("ZONE_CHANGED_NEW_AREA");
 	end
@@ -12247,6 +12246,7 @@ app.events.VARIABLES_LOADED = function()
 	app:RegisterEvent("SKILL_LINES_CHANGED");
 	StartCoroutine("RefreshSaves", RefreshSaves);
 	app:RefreshData(false);
+	app:RefreshLocation();
 end
 app.events.PLAYER_DEAD = function()
 	ATTAccountWideData.Deaths = ATTAccountWideData.Deaths + 1;

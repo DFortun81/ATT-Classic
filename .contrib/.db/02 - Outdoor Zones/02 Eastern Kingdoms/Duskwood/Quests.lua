@@ -111,6 +111,9 @@ _.Zones =
 					["qg"] = 272,	-- Chef Grual
 					["coord"] = { 73.8, 43.5, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2251, 6 },	-- Gooey Spider Leg
+					},
 					["lvl"] = 17,
 					["g"] = {
 						i(3683),	-- Recipe: Gooey Spider Cake
