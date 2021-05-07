@@ -7124,7 +7124,7 @@ local function MinimapButtonOnEnter(self)
 	GameTooltipIcon.icon:SetTexture(reference.preview or reference.icon);
 	GameTooltipIcon:ClearAllPoints();
 	GameTooltipIcon:SetPoint("TOPRIGHT", GameTooltip, "TOPLEFT", 0, 0);
-	local texcoord = reference.previewtexcoord or reference.texcoord;
+	local texcoord = reference.texcoord;
 	if texcoord then
 		GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
 	else
@@ -8230,7 +8230,7 @@ local function RowOnEnter(self)
 					GameTooltipIcon:SetSize(72,72);
 				end
 				GameTooltipIcon.icon:SetTexture(texture);
-				local texcoord = reference.previewtexcoord or reference.texcoord;
+				local texcoord = reference.texcoord;
 				if texcoord then
 					GameTooltipIcon.icon:SetTexCoord(texcoord[1], texcoord[2], texcoord[3], texcoord[4]);
 				else
@@ -8596,9 +8596,8 @@ function app:GetDataCache()
 			end
 		});
 		allData.expanded = true;
-		allData.icon = app.asset("content");
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
+		allData.icon = app.asset("logo_32x32");
+		allData.preview = app.asset("Discord_2_128");
 		allData.text = L["TITLE"];
 		allData.description = L["DESCRIPTION"];
 		allData.visible = true;
@@ -8916,9 +8915,8 @@ function app:GetDataCache()
 		-- Now build the hidden "Unsorted" Window's Data
 		allData = {};
 		allData.expanded = true;
-		allData.icon = app.asset("content");
-		allData.texcoord = {429 / 512, (429 + 36) / 512, 217 / 256, (217 + 36) / 256};
-		allData.previewtexcoord = {1 / 512, (1 + 72) / 512, 75 / 256, (75 + 72) / 256};
+		allData.icon = app.asset("logo_32x32");
+		allData.preview = app.asset("Discord_2_128");
 		allData.font = "GameFontNormalLarge";
 		allData.text = L["TITLE"];
 		allData.title = "Unsorted";
@@ -10757,7 +10755,7 @@ app:GetWindow("Random", UIParent, function(self)
 						end,
 						['OnUpdate'] = app.AlwaysShowUpdate,
 					}, { __index = function(t, key)
-						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" or key == "previewtexcoord" then
+						if key == "text" or key == "icon" or key == "preview" or key == "texcoord" then
 							return app:GetWindow("Prime").data[key];
 						end
 					end}),
