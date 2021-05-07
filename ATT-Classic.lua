@@ -8838,7 +8838,6 @@ function app:GetDataCache()
 						faction.parent = self;
 						tinsert(self.g, faction);
 					end
-					CacheFields(faction);
 				end
 			end
 			table.sort(self.g, function(a, b)
@@ -8862,7 +8861,6 @@ function app:GetDataCache()
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
-					CacheFields(fp);
 				end
 			end
 			for i,_ in pairs(app.FlightPathDB) do
@@ -8880,8 +8878,6 @@ function app:GetDataCache()
 				return a.text < b.text;
 			end);
 		end;
-		--flightPathsCategory:OnUpdate();
-		--CacheFields(flightPathsCategory);
 		
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;

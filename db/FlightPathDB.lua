@@ -1,10 +1,6 @@
 select(2, ...).FlightPathDB = {
 	[2] = {
 		name="Stormwind, Elwynn",
-		faction=2,
-		mapID=1453,
-		coord={ 66.2, 62.4, 1453},
-		qg=352,	-- Dungar Longdrink <Gryphon Master>
 	},
 	[4] = {
 		name="Sentinel Hill, Westfall",
