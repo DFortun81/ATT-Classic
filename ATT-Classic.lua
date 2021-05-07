@@ -8699,31 +8699,23 @@ function app:GetDataCache()
 		table.insert(g, db);
 		]]--
 		
+		-- Factions (Dynamic)
+		local factionsCategory = {};
+		factionsCategory.g = {};
+		factionsCategory.factions = {};
+		factionsCategory.expanded = false;
+		factionsCategory.icon = app.asset("Category_Factions");
+		factionsCategory.text = FACTION;
+		table.insert(g, factionsCategory);
+		
 		-- Flight Paths (Dynamic)
-		db = {};
-		db.g = {};
-		db.fps = {};
-		app.CacheFlightPathData();
-		db.OnUpdate = function(self)
-			for i,fp in pairs(app.FlightPathDB) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					self.fps[i] = fp;
-					if not fp.u or fp.u ~= 1 then
-						fp.parent = self;
-						tinsert(self.g, fp);
-					end
-				end
-			end
-			table.sort(self.g, function(a, b)
-				return a.text < b.text;
-			end);
-		end;
-		db:OnUpdate();
-		db.expanded = false;
-		db.icon = app.asset("Category_FlightPaths");
-		db.text = "Flight Paths";
-		table.insert(g, db);
+		local flightPathsCategory = {};
+		flightPathsCategory.g = {};
+		flightPathsCategory.fps = {};
+		flightPathsCategory.expanded = false;
+		flightPathsCategory.icon = app.asset("Category_FlightPaths");
+		flightPathsCategory.text = "Flight Paths";
+		table.insert(g, flightPathsCategory);
 		
 		-- Professions
 		if app.Categories.Professions then
@@ -8827,6 +8819,69 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Prime").data = allData;
 		CacheFields(allData);
+		
+		-- Update Faction data.
+		factionsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["factionID"]) do
+				if not self.factions[i] then
+					local faction = app.CreateFaction(tonumber(i));
+					for j,o in ipairs(_) do
+						if o.key == "factionID" then
+							for key,value in pairs(o) do rawset(faction, key, value); end
+						end
+					end
+					faction.progress = nil;
+					faction.total = nil;
+					faction.g = nil;
+					self.factions[i] = faction;
+					if not faction.u or faction.u ~= 1 then
+						faction.parent = self;
+						tinsert(self.g, faction);
+					end
+					CacheFields(faction);
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end
+		
+		-- Update Flight Path data.
+		app.CacheFlightPathData();
+		flightPathsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["flightPathID"]) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(fp, key, value); end
+					end
+					fp.g = nil;
+					fp.maps = nil;
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+					CacheFields(fp);
+				end
+			end
+			for i,_ in pairs(app.FlightPathDB) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+					CacheFields(fp);
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end;
+		--flightPathsCategory:OnUpdate();
+		--CacheFields(flightPathsCategory);
 		
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;
