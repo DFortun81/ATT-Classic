@@ -7,7 +7,9 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_ONE_DIREMAUL }, {	-- Classic
 		["description"] = "Dire Maul is a three-wing instance found in north-central Feralas. It was once a proud Highborne city called Eldre'Thalas, but now lies in ruins, overrun by ogres, satyrs, and undead. Only a tiny remnant of the original Highborne population remains in the form of a murderous sect called the Shen'dralar.",
 		["lvl"] = 44,
 		["groups"] = {
-			faction(809),	-- Shen'dralar
+			n(FACTIONS, {
+				faction(809),	-- Shen'dralar
+			}),
 			n(QUESTS, {
 				q(1193, {	-- A Broken Trap
 					["description"] = "Use the items on the Broken Trap to trap Guard Slip'kik. It takes a few seconds to finish fixing the trap.\n\nYou must activate this trap in order to do the Tribute Run.",

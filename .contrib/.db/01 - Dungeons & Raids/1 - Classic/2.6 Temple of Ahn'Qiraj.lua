@@ -8,9 +8,11 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
-			faction(910, { 	-- Brood of Nozdormu
-				["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
-				["maps"] = { CAVERNS_OF_TIME },
+			n(FACTIONS, {
+				faction(910, { 	-- Brood of Nozdormu
+					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
+					["maps"] = { CAVERNS_OF_TIME },
+				}),
 			}),
 			n(QUESTS, {
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {

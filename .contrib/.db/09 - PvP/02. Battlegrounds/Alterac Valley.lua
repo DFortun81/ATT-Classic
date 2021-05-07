@@ -87,13 +87,15 @@ _.PvP =
 						})),
 					},
 				}),
-				faction(729, {	-- Frostwolf Clan
-					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
-					["races"] = HORDE_ONLY,
-				}),
-				faction(730, {	-- Stormpike Guard
-					["icon"] = "Interface\\Icons\\INV_Jewelry_StormPikeTrinket_05",
-					["races"] = ALLIANCE_ONLY,
+				n(FACTIONS, {
+					faction(729, {	-- Frostwolf Clan
+						["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
+						["races"] = HORDE_ONLY,
+					}),
+					faction(730, {	-- Stormpike Guard
+						["icon"] = "Interface\\Icons\\INV_Jewelry_StormPikeTrinket_05",
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 				n(QUESTS, {
 					q(7385, {	-- A Gallon of Blood

@@ -7,7 +7,9 @@ _.Instances = { tier(1, {	-- Classic
 		["description"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
 		["lvl"] = 48,
 		["groups"] = {
-			faction(59), 	-- Thorium Brotherhood
+			n(FACTIONS, {
+				faction(59), 	-- Thorium Brotherhood
+			}),
 			n(QUESTS, {
 				{
 					["itemID"] = 18628,	-- Thorium Brotherhood Contract

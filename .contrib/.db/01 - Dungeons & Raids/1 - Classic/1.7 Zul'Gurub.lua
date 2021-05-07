@@ -8,9 +8,11 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FOUR }, {	-- Classic
 		["isRaid"] = true,
 		["lvl"] = 58,
 		["groups"] = {
-			faction(270, {	-- Zandalar Tribe
-				["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
-				["maps"] = { STRANGLETHORN_VALE },
+			n(FACTIONS, {
+				faction(270, {	-- Zandalar Tribe
+					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
+					["maps"] = { STRANGLETHORN_VALE },
+				}),
 			}),
 			n(QUESTS, {
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID }, ["lvl"] = 58 }, {

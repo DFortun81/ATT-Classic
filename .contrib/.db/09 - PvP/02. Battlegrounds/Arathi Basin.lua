@@ -5,11 +5,13 @@ _.PvP =
 			["maps"] = { ARATHI_HIGHLANDS },
 			["description"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 1,600 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 			["groups"] = {
-				faction(510, {	-- The Defilers
-					["races"] = HORDE_ONLY,
-				}),
-				faction(509, {	-- The League of Arathor
-					["races"] = ALLIANCE_ONLY,
+				n(FACTIONS, {
+					faction(510, {	-- The Defilers
+						["races"] = HORDE_ONLY,
+					}),
+					faction(509, {	-- The League of Arathor
+						["races"] = ALLIANCE_ONLY,
+					}),
 				}),
 				n(QUESTS, {
 					q(8262, {	-- Arathor Advanced Care Package

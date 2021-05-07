@@ -8,9 +8,11 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
-			faction(609, { 	-- Cenarion Circle
-				["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
-				["maps"] = { SILITHUS },
+			n(FACTIONS, {
+				faction(609, { 	-- Cenarion Circle
+					["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
+					["maps"] = { SILITHUS },
+				}),
 			}),
 			n(QUESTS, {
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
@@ -447,6 +449,42 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					},
 				}),
 			}),
+			n(ZONEDROPS, {
+				i(21801),	-- Antenna of Invigoration
+				i(21804),	-- Coif of Elemental Fury
+				i(21803),	-- Helm of the Holy Avenger
+				i(21805),	-- Polished Obsidian Pauldrons
+				i(21800),	-- Silithid Husked Launcher
+				i(21802),	-- The Lost Kris of Zedd
+				i(20873),	-- Alabaster Idol
+				i(20869),	-- Amber Idol
+				i(20866),	-- Azure Idol
+				i(20870),	-- Jasper Idol
+				i(20868),	-- Lambent Idol
+				i(20871),	-- Obsidian Idol
+				i(20867),	-- Onyx Idol
+				i(20872),	-- Vermillion Idol
+				i(20864),	-- Bone Scarab
+				i(20861),	-- Bronze Scarab
+				i(20863),	-- Clay Scarab
+				i(20862),	-- Crystal Scarab
+				i(20859),	-- Gold Scarab
+				i(20865),	-- Ivory Scarab
+				i(20860),	-- Silver Scarab
+				i(20858),	-- Stone Scarab
+				i(20768, {	-- Oozing Bag
+					["cr"] = 15335,	-- Flesh Hunter
+					["groups"] = {
+						i(20769),	-- Disgusting Oozeling
+					},
+				}),
+				i(21761, {	-- Scarab Coffer Key
+					["timeline"] = {
+						"added 1.13.0.28211",
+						"deleted 4.2.2.28211"
+					},
+				}),
+			}),
 			filter(200, {	-- Recipes
 				["crs"] = {
 					15369,	-- Ayamiss the Hunter
@@ -620,42 +658,6 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					i(20736),	-- Formula: Enchant Cloak - Dodge
 					i(20734),	-- Formula: Enchant Cloak - Stealth
 				},
-			}),
-			n(ZONEDROPS, {
-				i(21801),	-- Antenna of Invigoration
-				i(21804),	-- Coif of Elemental Fury
-				i(21803),	-- Helm of the Holy Avenger
-				i(21805),	-- Polished Obsidian Pauldrons
-				i(21800),	-- Silithid Husked Launcher
-				i(21802),	-- The Lost Kris of Zedd
-				i(20873),	-- Alabaster Idol
-				i(20869),	-- Amber Idol
-				i(20866),	-- Azure Idol
-				i(20870),	-- Jasper Idol
-				i(20868),	-- Lambent Idol
-				i(20871),	-- Obsidian Idol
-				i(20867),	-- Onyx Idol
-				i(20872),	-- Vermillion Idol
-				i(20864),	-- Bone Scarab
-				i(20861),	-- Bronze Scarab
-				i(20863),	-- Clay Scarab
-				i(20862),	-- Crystal Scarab
-				i(20859),	-- Gold Scarab
-				i(20865),	-- Ivory Scarab
-				i(20860),	-- Silver Scarab
-				i(20858),	-- Stone Scarab
-				i(20768, {	-- Oozing Bag
-					["cr"] = 15335,	-- Flesh Hunter
-					["groups"] = {
-						i(20769),	-- Disgusting Oozeling
-					},
-				}),
-				i(21761, {	-- Scarab Coffer Key
-					["timeline"] = {
-						"added 1.13.0.28211",
-						"deleted 4.2.2.28211"
-					},
-				}),
 			}),
 			n(COMMON_BOSS_DROPS, {
 				i(20888, {	-- Qiraji Ceremonial Ring

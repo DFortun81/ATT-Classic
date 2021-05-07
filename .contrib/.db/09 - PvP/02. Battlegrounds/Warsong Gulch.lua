@@ -36,13 +36,15 @@ _.PvP =
 		m(1460, {	-- Warsong Gulch
 			["maps"] = { ASHENVALE, THE_BARRENS },
 			["g"] = {
-				faction(890, {	-- Silverwing Sentinels
-					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
-					["races"] = ALLIANCE_ONLY,
-				}),
-				faction(889, {	-- Warsong Outriders
-					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
-					["races"] = HORDE_ONLY,
+				n(FACTIONS, {
+					faction(890, {	-- Silverwing Sentinels
+						["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
+						["races"] = ALLIANCE_ONLY,
+					}),
+					faction(889, {	-- Warsong Outriders
+						["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
+						["races"] = HORDE_ONLY,
+					}),
 				}),
 				n(QUESTS, {
 					q(8368, {	-- Battle of Warsong Gulch

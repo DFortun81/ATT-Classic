@@ -10,10 +10,12 @@ _.Instances = { tier(1, {	-- Classic
 		["isRaid"] = true,
 		["lvl"] = 50,
 		["groups"] = {
-			faction(749, { 	-- Hydraxian Waterlords
-				["qg"] = 13278,	-- Duke Hydraxis
-				["coord"] = { 79.2, 73.6, AZSHARA },
-				["maps"] = { AZSHARA },
+			n(FACTIONS, {
+				faction(749, { 	-- Hydraxian Waterlords
+					["qg"] = 13278,	-- Duke Hydraxis
+					["coord"] = { 79.2, 73.6, AZSHARA },
+					["maps"] = { AZSHARA },
+				}),
 			}),
 			n(QUESTS, {
 				q(7486, {	-- A Hero's Reward
