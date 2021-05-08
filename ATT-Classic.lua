@@ -4001,9 +4001,12 @@ app.CacheFlightPathData = function()
 							node.name = nodeData.name;
 							ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID] = node;
 						end
-					elseif true then	-- Turn this off when you're done harvesting.
+					else
 						node = {};
 						node.name = nodeData.name;
+						ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID] = node;
+					end
+					if not fieldCache.flightPathID[nodeData.nodeID] then
 						if nodeData.faction and nodeData.faction > 0 then
 							node.r = nodeData.faction;
 						elseif nodeData.atlasName then
@@ -4013,10 +4016,8 @@ app.CacheFlightPathData = function()
 								node.r = Enum.FlightPathFaction.Horde;
 							end
 						end
-						ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
 						anyNew = true;
-						
 					end
 				end
 			end
@@ -8819,7 +8820,7 @@ function app:GetDataCache()
 		-- Update Flight Path data.
 		app.CacheFlightPathData();
 		flightPathsCategory.OnUpdate = function(self)
-			for i,_ in pairs(fieldCache["flightPathID"]) do
+			for i,_ in pairs(fieldCache.flightPathID) do
 				if not self.fps[i] then
 					local fp = app.CreateFlightPath(tonumber(i));
 					for j,o in ipairs(_) do
