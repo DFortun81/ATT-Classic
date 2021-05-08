@@ -35,6 +35,7 @@ _.NeverImplemented =
 		fp(136),	-- Quest - Hellfire, Aerial Mission (Horde) End
 		fp(137),	-- Quest - Hellfire, Aerial Mission (Alliance) Start
 		fp(138),	-- Quest - Hellfire, Aerial Mission (Alliance) End
+		fp(142),	-- Hellfire Peninsula - Reaver's Fall (not actually a flight path)
 		fp(143),	-- Quest - Caverns of Time (Intro Flight Path) (End)
 		fp(144),	-- Quest - Caverns of Time (Intro Flight Path) (Start)
 		fp(145),	-- Quest - Netherstorm - Stealth Flight - Begin
