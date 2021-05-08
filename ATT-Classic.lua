@@ -3988,44 +3988,58 @@ local arrOfNodes = {
 	--896,	-- Drustvar (All of Kul Tiras)
 };
 app.CacheFlightPathData = function()
-	local newNodes = {};
+	local newNodes, anyNew = {}, false;
 	for i,mapID in ipairs(arrOfNodes) do
 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
 		if allNodeData then
 			for j,nodeData in ipairs(allNodeData) do
 				if nodeData.name then
-					local node = app.FlightPathDB[nodeData.nodeID];
+					local node = ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID];
 					if node then
-						node.name = nodeData.name;
+						-- Update the name of the node for this flight path.
+						if node.name ~= nodeData.name then
+							node.name = nodeData.name;
+							ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID] = node;
+						end
 					elseif true then	-- Turn this off when you're done harvesting.
 						node = {};
-						node.name = "*NEW* " .. nodeData.name;
-						if nodeData.faction then
-							node.faction = nodeData.faction;
+						node.name = nodeData.name;
+						if nodeData.faction and nodeData.faction > 0 then
+							node.r = nodeData.faction;
 						elseif nodeData.atlasName then
 							if nodeData.atlasName == "TaxiNode_Alliance" then
-								node.faction = 2;
+								node.r = Enum.FlightPathFaction.Alliance;
 							elseif nodeData.atlasName == "TaxiNode_Horde" then
-								node.faction = 1;
+								node.r = Enum.FlightPathFaction.Horde;
 							end
 						end
-						app.FlightPathDB[nodeData.nodeID] = node;
+						ATTClassicAD.LocalizedFlightPathDB[nodeData.nodeID] = node;
 						newNodes[nodeData.nodeID] = node;
-						SetDataMember("NewFlightPathData", newNodes);
+						anyNew = true;
+						
 					end
 				end
 			end
 		end
 	end
+	if anyNew then
+		print("Found new flight path data:");
+		for i,node in ipairs(newNodes) do
+			print(i, node.name);
+		end
+		SetDataMember("NewFlightPathData", newNodes);
+	end
 end
 app.CacheFlightPathDataForMap = function(mapID, nodes)
 	local count = 0;
 	local temp = {};
-	for nodeID,node in pairs(app.FlightPathDB) do
-		if node.mapID == mapID and not node.u then
-			if not node.faction or node.faction < 1 or node.faction == app.FactionID then
-				temp[nodeID] = true;
-				count = count + 1;
+	for nodeID,_ in pairs(fieldCache.flightPathID) do
+		for i,node in ipairs(_) do
+			if not node.u and node.coords and node.coords[1][3] == mapID then
+				if not node.r or node.r == app.FactionID then
+					temp[nodeID] = node;
+					count = count + 1;
+				end
 			end
 		end
 	end
@@ -4039,11 +4053,11 @@ app.CacheFlightPathDataForMap = function(mapID, nodes)
 				py = py * 100;
 				
 				-- Select the best flight path node.
-				for nodeID,_ in pairs(temp) do
-					local node = app.FlightPathDB[nodeID];
-					if node.coord then
+				for nodeID,node in pairs(temp) do
+					local coord = node.coords and node.coords[1];
+					if coord then
 						-- Allow for a little bit of leeway.
-						if math.sqrt((node.coord[1] - px)^2 + (node.coord[2] - py)^2) < 0.6 then
+						if math.sqrt((coord[1] - px)^2 + (coord[2] - py)^2) < 0.6 then
 							nodes[nodeID] = true;
 						end
 					end
@@ -4082,21 +4096,12 @@ local fields = {
 	["key"] = function(t)
 		return "flightPathID";
 	end,
-	["info"] = function(t)
-		local info = app.FlightPathDB[t.flightPathID];
-		if info then
-			rawset(t, "info", info);
-			if info.mapID then CacheField(t, "mapID", info.mapID); end
-			if info.qg then CacheField(t, "creatureID", info.qg); end
-			return info;
-		end
-		return {};
-	end,
 	["text"] = function(t)
 		return t.name;
 	end,
 	["name"] = function(t)
-		return t.info.name or "Visit the Flight Master to cache.";
+		local info = ATTClassicAD.LocalizedFlightPathDB[t.flightPathID];
+		return info and info.name or "Visit the Flight Master to cache.";
 	end,
 	["icon"] = function(t)
 		local r = t.r;
@@ -4110,9 +4115,7 @@ local fields = {
 		return app.asset("fp_neutral");
 	end,
 	["description"] = function(t)
-		local description = t.info.description;
-		return (description and (description .."\n\n") or "")
-			.. "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
+		return "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
 	end,
 	["collectible"] = function(t)
 		return app.CollectibleFlightPaths;
@@ -4127,27 +4130,6 @@ local fields = {
 				end
 			end
 		end
-	end,
-	["coord"] = function(t)
-		return t.info.coord;
-	end,
-	["c"] = function(t)
-		return t.info.c;
-	end,
-	["r"] = function(t)
-		local faction = t.info.faction;
-		if faction and faction > 0 then
-			return faction;
-		end
-	end,
-	["u"] = function(t)
-		return t.info.u;
-	end,
-	["crs"] = function(t)
-		return t.info.qg and { t.info.qg };
-	end,
-	["mapID"] = function(t)
-		return t.info.mapID;
 	end,
 	["nmc"] = function(t)
 		local c = t.c;
@@ -8818,11 +8800,11 @@ function app:GetDataCache()
 							for key,value in pairs(o) do rawset(faction, key, value); end
 						end
 					end
-					faction.progress = nil;
-					faction.total = nil;
-					faction.g = nil;
 					self.factions[i] = faction;
 					if not faction.u or faction.u ~= 1 then
+						faction.progress = nil;
+						faction.total = nil;
+						faction.g = nil;
 						faction.parent = self;
 						tinsert(self.g, faction);
 					end
@@ -8843,20 +8825,21 @@ function app:GetDataCache()
 					for j,o in ipairs(_) do
 						for key,value in pairs(o) do rawset(fp, key, value); end
 					end
-					fp.g = nil;
-					fp.maps = nil;
 					self.fps[i] = fp;
 					if not fp.u or fp.u ~= 1 then
+						fp.g = nil;
+						fp.maps = nil;
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
 				end
 			end
-			for i,_ in pairs(app.FlightPathDB) do
+			for i,_ in pairs(ATTClassicAD.LocalizedFlightPathDB) do
 				if not self.fps[i] then
 					local fp = app.CreateFlightPath(tonumber(i));
 					self.fps[i] = fp;
-					if not fp.u or fp.u ~= 1 then
+					if not _.u or _.u ~= 1 then
+						fp.u = _.u;
 						fp.parent = self;
 						tinsert(self.g, fp);
 					end
@@ -11993,6 +11976,10 @@ app.events.VARIABLES_LOADED = function()
 		OnLeave = MinimapButtonOnLeave,
 	});
 	
+	-- Cache the Localized Flight Path Data
+	ATTClassicAD.LocalizedFlightPathDB = setmetatable(ATTClassicAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
+	app.FlightPathDB = nil;
+	
 	-- Cache information about the player.
 	local _, class, classIndex = UnitClass("player");
 	local classInfo = C_CreatureInfo.GetClassInfo(classIndex);
@@ -12220,12 +12207,13 @@ app.events.VARIABLES_LOADED = function()
 	for i,key in ipairs({
 		"AddonMessageProcessor",
 		"GroupQuestsByGUID",
+		"LocalizedFlightPathDB",
 		"Position",
 		"RandomSearchFilter",
 		"Reagents",
 		"SoftReserves",
 		"SoftReservePersistence",
-		"ValidSuffixesPerItemID"
+		"ValidSuffixesPerItemID",
 	}) do
 		oldsettings[key] = ATTClassicAD[key];
 	end
