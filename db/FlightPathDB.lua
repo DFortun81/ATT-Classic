@@ -4,59 +4,27 @@ select(2, ...).FlightPathDB = {
 	},
 	[4] = {
 		name="Sentinel Hill, Westfall",
-		faction=2,
-		mapID=1436,
-		coord={ 56.6, 52.6, 1436},
-		qg=523,	-- Thor <Gryphon Master>
 	},
 	[5] = {
 		name="Lakeshire, Redridge",
-		faction=2,
-		mapID=1433,
-		coord={ 30.6, 59.6, 1433},
-		qg=931,	-- Ariena Stormfeather <Gryphon Master>
 	},
 	[6] = {
 		name="Ironforge, Dun Morogh",
-		faction=2,
-		mapID=1455,
-		coord={ 55.6, 48.0, 1455},
-		qg=1573,	-- Gryth Thurden <Gryphon Master>
 	},
 	[7] = {
 		name="Menethil Harbor, Wetlands",
-		faction=2,
-		mapID=1437,
-		coord={ 9.6, 59.6, 1437},
-		qg=1571,	-- Shellei Brondir <Gryphon Master>
 	},
 	[8] = {
 		name="Thelsamar, Loch Modan",
-		faction=2,
-		mapID=1432,
-		coord={ 33.8, 50.8, 1432},
-		qg=1572,	-- Thorgrum Borrelson <Gryphon Master>
 	},
 	[10] = {
 		name="The Sepulcher, Silverpine Forest",
-		faction=1,
-		mapID=1421,
-		coord={ 45.6, 42.6, 1421 },
-		qg=2226,	-- Karos Razok <Bat Handler>
 	},
 	[11] = {
 		name="Undercity, Tirisfal",
-		faction=1,
-		mapID=1458,
-		coord={ 63.6, 48.6, 1458 },
-		qg=4551,	-- Michael Garrett <Bat Handler>
 	},
 	[12] = {
 		name="Darkshire, Duskwood",
-		faction=2,
-		mapID=1431,
-		coord={ 77.6, 44.4, 1431},
-		qg=2409,	-- Felicia Maline <Gryphon Master>
 	},
 	[13] = {
 		name="Tarren Mill, Hillsbrad",
