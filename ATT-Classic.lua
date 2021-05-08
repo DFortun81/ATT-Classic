@@ -8791,67 +8791,6 @@ function app:GetDataCache()
 		app:GetWindow("Prime").data = allData;
 		CacheFields(allData);
 		
-		-- Update Faction data.
-		factionsCategory.OnUpdate = function(self)
-			for i,_ in pairs(fieldCache["factionID"]) do
-				if not self.factions[i] then
-					local faction = app.CreateFaction(tonumber(i));
-					for j,o in ipairs(_) do
-						if o.key == "factionID" then
-							for key,value in pairs(o) do rawset(faction, key, value); end
-						end
-					end
-					self.factions[i] = faction;
-					if not faction.u or faction.u ~= 1 then
-						faction.progress = nil;
-						faction.total = nil;
-						faction.g = nil;
-						faction.parent = self;
-						tinsert(self.g, faction);
-					end
-				end
-			end
-			table.sort(self.g, function(a, b)
-				return a.text < b.text;
-			end);
-		end
-		factionsCategory:OnUpdate();
-		
-		-- Update Flight Path data.
-		app.CacheFlightPathData();
-		flightPathsCategory.OnUpdate = function(self)
-			for i,_ in pairs(fieldCache.flightPathID) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(fp, key, value); end
-					end
-					self.fps[i] = fp;
-					if not fp.u or fp.u ~= 1 then
-						fp.g = nil;
-						fp.maps = nil;
-						fp.parent = self;
-						tinsert(self.g, fp);
-					end
-				end
-			end
-			for i,_ in pairs(ATTClassicAD.LocalizedFlightPathDB) do
-				if not self.fps[i] then
-					local fp = app.CreateFlightPath(tonumber(i));
-					self.fps[i] = fp;
-					if not _.u or _.u ~= 1 then
-						fp.u = _.u;
-						fp.parent = self;
-						tinsert(self.g, fp);
-					end
-				end
-			end
-			table.sort(self.g, function(a, b)
-				return a.text < b.text;
-			end);
-		end;
-		flightPathsCategory:OnUpdate();
-		
 		-- Determine how many tierID instances could be found
 		local tierCounter = 0;
 		for key,value in pairs(fieldCache["tierID"]) do
@@ -8922,6 +8861,68 @@ function app:GetDataCache()
 		BuildGroups(allData, allData.g);
 		app:GetWindow("Unsorted").data = allData;
 		CacheFields(allData);
+		
+		-- Update Faction data.
+		factionsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache["factionID"]) do
+				if not self.factions[i] then
+					local faction = app.CreateFaction(tonumber(i));
+					for j,o in ipairs(_) do
+						if o.key == "factionID" then
+							for key,value in pairs(o) do rawset(faction, key, value); end
+						end
+					end
+					self.factions[i] = faction;
+					if not faction.u or faction.u ~= 1 then
+						faction.progress = nil;
+						faction.total = nil;
+						faction.g = nil;
+						faction.parent = self;
+						tinsert(self.g, faction);
+					end
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end
+		factionsCategory:OnUpdate();
+		
+		-- Update Flight Path data.
+		app.CacheFlightPathData();
+		flightPathsCategory.OnUpdate = function(self)
+			for i,_ in pairs(fieldCache.flightPathID) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					for j,o in ipairs(_) do
+						for key,value in pairs(o) do rawset(fp, key, value); end
+					end
+					self.fps[i] = fp;
+					if not fp.u or fp.u ~= 1 then
+						fp.g = nil;
+						fp.maps = nil;
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+				end
+			end
+			for i,_ in pairs(ATTClassicAD.LocalizedFlightPathDB) do
+				if not self.fps[i] then
+					local fp = app.CreateFlightPath(tonumber(i));
+					self.fps[i] = fp;
+					if not _.u or _.u ~= 1 then
+						fp.r = _.r;
+						fp.u = _.u;
+						fp.parent = self;
+						tinsert(self.g, fp);
+					end
+				end
+			end
+			table.sort(self.g, function(a, b)
+				return a.text < b.text;
+			end);
+		end;
+		flightPathsCategory:OnUpdate();
 		
 		-- Check for Vendors missing Coordinates
 		--[[

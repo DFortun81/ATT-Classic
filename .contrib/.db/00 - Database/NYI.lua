@@ -2,11 +2,54 @@
 --         N E V E R       I M P L E M E N T E D       M O D U L E      	--
 ---------------------------------------------------------------------------
 -- Everything in this file hasn't been implemented yet.
-local oldI, oldQ = i, q;
+local oldI, oldQ, oldFP = i, q, fp;
 i = function(...) return un(NEVER_IMPLEMENTED, oldI(...)); end
 q = function(...) return un(NEVER_IMPLEMENTED, oldQ(...)); end
+fp = function(...) return un(NEVER_IMPLEMENTED, oldFP(...)); end
 _.NeverImplemented =
 {
+	n(FLIGHT_PATHS, {
+		fp(84),	-- Plaguewood Tower, Eastern Plaguelands
+		fp(85),	-- Northpass Tower, Eastern Plaguelands
+		fp(86),	-- Eastwall Tower, Eastern Plaguelands
+		fp(87),	-- Crown Guard Tower, Eastern Plaguelands
+		-- #if AFTER TBC
+		fp(95),	-- Zangarmarsh - Quest - As the Crow Flies
+		fp(97),	-- Quest - Elekk Path to Kessel
+		fp(103),	-- Nagrand - PvP - Attack Run Start 1
+		fp(104),	-- Nagrand - PvP - Attack Run End 1
+		fp(105),	-- Nagrand - PvP - Attack Run Start 2
+		fp(106),	-- Nagrand - PvP - Attack Run End 2
+		fp(107),	-- Nagrand - PvP - Attack Run Start 3
+		fp(108),	-- Nagrand - PvP - Attack Run End 3
+		fp(109),	-- Nagrand - PvP - Attack Run Start 4
+		fp(110),	-- Nagrand - PvP - Attack Run End 4
+		fp(111),	-- Eversong - Duskwither Teleport
+		fp(112),	-- Eversong - Duskwither Teleport End
+		fp(113),	-- Quest - Nethrandamus Start
+		fp(131),	-- Quest - Horde Hellfire Start
+		fp(132),	-- Quest - Horde Hellfire End
+		fp(133),	-- Quest - Hellfire Peninsula (Alliance Path) Start
+		fp(134),	-- Quest - Hellfire Peninsula (Alliance) End
+		fp(135),	-- Quest - Hellfire, Aerial Mission (Horde) Start
+		fp(136),	-- Quest - Hellfire, Aerial Mission (Horde) End
+		fp(137),	-- Quest - Hellfire, Aerial Mission (Alliance) Start
+		fp(138),	-- Quest - Hellfire, Aerial Mission (Alliance) End
+		fp(143),	-- Quest - Caverns of Time (Intro Flight Path) (End)
+		fp(144),	-- Quest - Caverns of Time (Intro Flight Path) (Start)
+		fp(145),	-- Quest - Netherstorm - Stealth Flight - Begin
+		fp(147),	-- Hellfire Peninsula - Force Camp Beach Head
+		fp(148),	-- Shatter Point, Hellfire Peninsula (Beach Assault)
+		fp(152),	-- Quest - Netherstorm - Manaforge Ultris (Start)
+		fp(153),	-- Quest - Netherstorm - Manaforge Ultris (End)
+		fp(154),	-- Quest - Netherstorm - Manaforge Ultris (Second Pass) Start
+		fp(157),	-- Quest - Blade's Edge - Vision Guide - Start
+		fp(169),	-- Quest - Netherwing Ledge - Mine Cart Ride - South - Start
+		fp(209),	-- Quest - Sunwell Daily - Dead Scar Bombing - Start
+		fp(211),	-- Quest - Sunwell Daily - Ship Bombing - Start
+		fp(212),	-- Quest - Sunwell Daily - Ship Bombing - End
+		-- #endif
+	}),
 	q(63769),	-- Holiday Reset Yearly Quest
 	
 	i(7093),	-- Pattern: Boots of Darkness
