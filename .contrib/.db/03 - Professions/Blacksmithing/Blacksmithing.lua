@@ -736,6 +736,15 @@ profession(BLACKSMITHING, {
 				["name"] = "Edge of Winter",
 				["recipeID"] = 21913
 			},
+			-- #if BEFORE MOP
+			un(TBC_PHASE_ONE, {
+				["recipeID"] = 34982,	-- Enchanted Thorium Blades
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			-- #endif
 			{
 				["name"] = "Frost Tiger Blade",
 				["recipeID"] = 3497
@@ -828,6 +837,15 @@ profession(BLACKSMITHING, {
 				["name"] = "Sulfuron Hammer",
 				["recipeID"] = 21161
 			},
+			-- #if BEFORE MOP
+			un(TBC_PHASE_ONE, {
+				["recipeID"] = 34979,	-- Thick Bronze Darts
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			-- #endif
 			{
 				["name"] = "Thick War Axe",
 				["recipeID"] = 3294
@@ -840,6 +858,15 @@ profession(BLACKSMITHING, {
 				["name"] = "Volcanic Hammer",
 				["recipeID"] = 16984
 			},
+			-- #if BEFORE MOP
+			un(TBC_PHASE_ONE, {
+				["recipeID"] = 34981,	-- Whirling Steel Axes
+				["timeline"] = {
+					"added 2.0.1.10000",
+					"removed 5.0.4.10000"
+				},
+			}),
+			-- #endif
 			{
 				["name"] = "Wicked Mithril Blade",
 				["recipeID"] = 9997

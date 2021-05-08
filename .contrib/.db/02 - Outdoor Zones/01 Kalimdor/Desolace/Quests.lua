@@ -620,18 +620,26 @@ _.Zones =
 					},
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["timeline"] = { "removed 4.0.3.10000" },
 					["cost"] = {
 						{ "i", 6069, 6 },	-- Crudely Dried Meat
 					},
 					["lvl"] = 30,
 					["g"] = {
+						-- #if BEFORE MOP
 						i(3463, {	-- Silver Star [Classic] / Broken Silver Star [TBC]
 							["timeline"] = {
 								"added 1.11.1.5462",
 								"removed 2.0.1.5678"
 							},
 						}),
-						un(TBC_PHASE_ONE, i(32378)),	-- Silver Star [TBC]
+						un(TBC_PHASE_ONE, i(32378, {	-- Silver Star [TBC]
+							["timeline"] = {
+								"added 2.0.1.5678",
+								"removed 4.0.3.10000",
+							},
+						})),
+						-- #endif
 						i(3464),	-- Feathered Arrow
 						i(3465),	-- Exploding Shot
 					},

@@ -82,8 +82,25 @@ _.Zones =
 					["qg"] = 2916,	-- Historian Karnik
 					["sourceQuest"] = 2977,	-- Return to Ironforge
 					["coord"] = { 77.2, 11.8, IRONFORGE },
+					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 45,
+					["groups"] = {
+						un(TBC_PHASE_ONE, i(34418, {	-- Scrying Wand
+							["timeline"] = {
+								"added 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
+						-- #if BEFORE MOP
+						un(TBC_PHASE_ONE, i(34419, {	-- Thorium Flight Blade
+							["timeline"] = {
+								"added 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
+						-- #endif
+					},
 				}),
 				q(686, {	-- A King's Tribute (1/3)
 					["qg"] = 2784,	-- King Magni Bronzebeard

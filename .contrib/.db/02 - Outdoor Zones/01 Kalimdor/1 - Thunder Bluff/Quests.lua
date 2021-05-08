@@ -31,8 +31,23 @@ _.Zones =
 					["lvl"] = 12,
 				}),
 				q(2968, {	-- A Future Task
-					["lvl"] = 45,
+					["timeline"] = { "removed 4.0.3.10000" },
 					["races"] = HORDE_ONLY,
+					["lvl"] = 45,
+					["groups"] = {
+						un(TBC_PHASE_ONE, i(34421, {	-- Cave Crawler's Mail Treads
+							["timeline"] = {
+								"added 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
+						un(TBC_PHASE_ONE, i(34422, {	-- Tempered Thorium Boots
+							["timeline"] = {
+								"added 2.3.0.10000",
+								"removed 4.0.3.10000",
+							},
+						})),
+					},
 				}),
 				q(7825, {	-- Additional Runecloth
 					["qg"] = 14728,	-- Rumstag Proudstrider

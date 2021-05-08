@@ -479,6 +479,26 @@ _.Craftables = { tier(1, {	-- Classic
 			i(15869),	-- Silver Skeleton Key
 			i(15871),	-- Truesilver Skeleton Key
 		}),
+		-- #if BEFORE MOP
+		un(TBC_PHASE_ONE, i(29203, {	-- Enchanted Thorium Blades
+			["timeline"] = {
+				"added 2.0.1.10000",
+				"removed 5.0.4.10000"
+			},
+		})),
+		un(TBC_PHASE_ONE, i(29201, {	-- Thick Bronze Darts
+			["timeline"] = {
+				"added 2.0.1.10000",
+				"removed 5.0.4.10000"
+			},
+		})),
+		un(TBC_PHASE_ONE, i(29202, {	-- Whirling Steel Axes
+			["timeline"] = {
+				"added 2.0.1.10000",
+				"removed 5.0.4.10000"
+			},
+		})),
+		-- #endif
 	}),
 	prof(COOKING, {
 		category(10, {	-- Everyday Cooking
