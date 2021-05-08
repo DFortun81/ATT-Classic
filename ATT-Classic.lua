@@ -4024,7 +4024,7 @@ app.CacheFlightPathData = function()
 	end
 	if anyNew then
 		print("Found new flight path data:");
-		for i,node in ipairs(newNodes) do
+		for i,node in pairs(newNodes) do
 			print(i, node.name);
 		end
 		SetDataMember("NewFlightPathData", newNodes);
