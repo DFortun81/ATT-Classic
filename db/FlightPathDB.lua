@@ -28,52 +28,24 @@ select(2, ...).FlightPathDB = {
 	},
 	[13] = {
 		name="Tarren Mill, Hillsbrad",
-		faction=1,
-		mapID=1424,
-		coord={ 60.2, 18.6, 1424 },
-		qg=2389,	-- Zarise <Bat Handler>
 	},
 	[14] = {
 		name="Southshore, Hillsbrad",
-		faction=2,
-		mapID=1424,
-		coord={ 49.4, 52.4, 1424},
-		qg=2432,	-- Darla Harris <Gryphon Master>
 	},
 	[16] = {
 		name="Refuge Pointe, Arathi",
-		faction=2,
-		mapID=1417,
-		coord={ 45.8, 46.2, 1417},
-		qg=2835,	-- Cedrik Prose <Gryphon Master>
 	},
 	[17] = {
 		name="Hammerfall, Arathi",
-		faction=1,
-		mapID=1417,
-		coord={ 73.0, 32.6, 1417 },
-		qg=2851,	-- Urda <Wind Rider Master>
 	},
 	[18] = {
 		name="Booty Bay, Stranglethorn",
-		faction=1,
-		mapID=1434,
-		coord={ 26.8, 77.0, 1434 },
-		qg=2858,	-- Gringer <Wind Rider Master>
 	},
 	[19] = {
 		name="Booty Bay, Stranglethorn",
-		faction=2,
-		mapID=1434,
-		coord={ 27.4, 77.6, 1434 },
-		qg=2859,	-- Gyll <Gryphon Master>
 	},
 	[20] = {
 		name="Grom'gol, Stranglethorn",
-		faction=1,
-		mapID=1434,
-		coord={ 32.6, 29.2, 1434},
-		qg=1387,	-- Thysta <Wind Rider Master>
 	},
 	[21] = {
 		name="Kargath, Badlands",
