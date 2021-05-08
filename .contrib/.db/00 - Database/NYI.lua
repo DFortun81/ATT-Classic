@@ -792,3 +792,4 @@ _.NeverImplemented =
 };
 i = oldI;
 q = oldQ;
+fp = oldFP;
