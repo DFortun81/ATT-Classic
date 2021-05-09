@@ -790,6 +790,11 @@ _.NeverImplemented =
 	i(5743),	-- Prismstone Ring
 	i(5008),	-- Quicksilver Ring
 	i(7466),	-- Vermilion Band
+	
+	-- TBC
+	i(35530, {	-- Plans: Dawnsteel Shoulders
+		["spellID"] = 0,	-- This is now available via 32739, need to delink the old plans from the recipe
+	}),
 };
 i = oldI;
 q = oldQ;

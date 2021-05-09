@@ -88,7 +88,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 				},
 			}),
 			n(QUESTS, {
-				cl(1, {	-- Warrior
+				cl(WARRIOR, {
 					q(9037, {	-- Dreadnaught Helmet
 						["qg"] = 16112,	-- Korfax, Champion of the Light <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -218,7 +218,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(2, {	-- Paladin
+				cl(PALADIN, {
 					q(9045, {	-- Redemption Headpiece
 						["qg"] = 16115,	-- Commander Eligor Dawnbringer <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -348,7 +348,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(3, {	-- Hunter
+				cl(HUNTER, {
 					q(9056, {	-- Cryptstalker Headpiece
 						["qg"] = 16132,	-- Huntsman Leopold <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -478,7 +478,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(4, {	-- Rogue
+				cl(ROGUE, {
 					q(9079,	{	-- Bonescythe Helmet
 						["qg"] = 16131,	-- Rohan the Assassin <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -614,7 +614,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(5, {	-- Priest
+				cl(PRIEST, {
 					q(9113, {	-- Circlet of Faith
 						["qg"] = 16113,	-- Father Inigo Montoy <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -742,7 +742,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(7, {	-- Shaman
+				cl(SHAMAN, {
 					q(9070, {	-- Earthshatter Headpiece
 						["qg"] = 16134,	-- Rimblat Earthshatter <The Earthen Ring>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -872,7 +872,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(8, {	-- Mage
+				cl(MAGE, {
 					q(9097, {	-- Frostfire Circlet
 						["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -1001,7 +1001,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(9, {	-- Warlock
+				cl(WARLOCK, {
 					q(9105, {	-- Plagueheart Circlet
 						["qg"] = 16133,	-- Mataus the Wrathcaster <The Scarlet Crusade>
 						["sourceQuest"] = 9033,	-- Echoes of War
@@ -1130,7 +1130,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 						},
 					}),
 				}),
-				cl(11, {	-- Druid
+				cl(DRUID, {
 					q(9088,	{	-- Dreamwalker Headpiece
 						["qg"] = 16135,	-- Rayne <Cenarion Circle>
 						["sourceQuest"] = 9033,	-- Echoes of War
