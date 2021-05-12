@@ -473,7 +473,6 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_ONE_DIREMAUL }, {	-- Classic
 					},
 					{
 						["itemID"] = 18401,	-- Foror's Compendium of Dragon Slaying
-						["questID"] = 7507,	-- Foror's Compendium
 						["classes"] = { WARRIOR, PALADIN },
 					},
 					{

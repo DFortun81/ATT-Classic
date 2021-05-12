@@ -590,21 +590,36 @@ struct = function(field, id, t)
 end
 
 -- Helper Functions
+isarray = function(t)
+	return type(t) == 'table' and (#t > 0 or next(t) == nil);
+end
 addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
 bubbleDown = function(data, t)
-	for i, group in ipairs(t) do
-		for key, value in pairs(data) do
-			if not group[key] then
-				group[key] = value;
+	if t then
+		if t.g or t.groups then
+			for key, value in pairs(data) do
+				if not t[key] then
+					t[key] = value;
+				end
+			end
+			bubbleDown(data, t.groups);
+			bubbleDown(data, t.g);
+		elseif isarray(t) then
+			for i,group in ipairs(t) do
+				bubbleDown(data, group);
+			end
+		else
+			for key, value in pairs(data) do
+				if not t[key] then
+					t[key] = value;
+				end
 			end
 		end
-		if group.groups then bubbleDown(data, group.groups); end
-		if group.g then bubbleDown(data, group.g); end
+		return t;
 	end
-	return t;
 end
 bubbleUp = function(t)
 	local t2 = {};
@@ -694,9 +709,6 @@ merge = function(...)
 		end
 	end
 	return t;
-end
-isarray = function(t)
-	return type(t) == 'table' and (#t > 0 or next(t) == nil);
 end
 function unpack (t, i)
   i = i or 1
