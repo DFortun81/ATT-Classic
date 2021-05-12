@@ -713,6 +713,38 @@ icon = function(path)
 	return "Interface\\Icons\\" .. path;
 end
 
+-- Classic / Retail Helper Functions
+isanyclassic = function(modifier, data)
+	-- #if ANYCLASSIC
+	return modifier(data);
+	-- #else
+	return data;
+	-- #endif
+end
+applyclassicphase = function(phase, data)
+	-- #if ANYCLASSIC
+	return bubbleDown({ ["u"] = phase }, data);
+	-- #else
+	return data;
+	-- #endif
+end
+applylegacyclassicphase = function(phase, data)
+	-- #if ANYCLASSIC
+	return bubbleDown({ ["u"] = phase }, data);
+	-- #else
+	return bubbleDown({ ["u"] = REMOVED_FROM_GAME }, data);
+	-- #endif
+end
+lvlsquish = function(originalLvl, shadowlandsLvl, retailLvl)
+	-- #if ANYCLASSIC
+	return originalLvl;
+	-- #elseif AFTER SHADOWLANDS
+	return shadowlandsLvl;
+	-- #else
+	return retailLvl or originalLvl;
+	-- #endif
+end
+
 -- SHORTCUTS for Object Class Types
 ach = function(id, altID, t)							-- Create an ACHIEVEMENT Object
 	if t or type(altID) == "number" then
