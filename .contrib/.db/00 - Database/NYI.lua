@@ -792,12 +792,17 @@ _.NeverImplemented =
 	i(7466),	-- Vermilion Band
 	
 	-- TBC
+	-- #if AFTER TBC
 	i(35530, {	-- Plans: Dawnsteel Shoulders
 		["spellID"] = 0,
 	}),
 	i(35532, {	-- Plans: Swiftsteel Shoulders
 		["spellID"] = 0,
 	}),
+	i(35555, {	-- Plans: Sunblessed Breastplate
+		["spellID"] = 0,
+	}),
+	-- #endif
 };
 i = oldI;
 q = oldQ;
