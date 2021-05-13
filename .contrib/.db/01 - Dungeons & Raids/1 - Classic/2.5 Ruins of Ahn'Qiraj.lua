@@ -1,12 +1,27 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
-	map(RUINS_OF_AHNQIRAJ, {
+-- #if BEFORE CATA
+local KEYL_LOCATION = { 51.8, 39.5, SILITHUS };
+local WARDEN_LOCATION = { 51.1, 38.9, SILITHUS };
+local WINDCALLER_LOCATION = { 52.0, 38.2, SILITHUS };
+-- #else
+local KEYL_LOCATION = { 59.4, 14.0, 327 };
+local WARDEN_LOCATION = { 59.4, 14.0, 327 };
+local WINDCALLER_LOCATION = { 59.4, 14.0, 327 };
+-- #endif
+_.Instances = { tier(1, applyclassicphase(PHASE_FIVE, {	-- Classic
+	inst(743, { 	-- Ruins of Ahn'Qiraj
 		["description"] = "Deep within the deserts of Silithus lies an ancient and powerful race of beings known as the Qiraji. One thousand years ago, the Night Elves and Bronze Dragonflight combined their considerable powers to seal the Qiraji behind the scarab wall with the help of the children of some of the aspects. This is remembered as the \"War of the Shifting Sands\".\n\nRecently it was discovered that some of the Qiraji were finding ways past the wall. Anachronos, the bronze dragon, helped the adventurers of Azeroth open the Scarab Wall to prevent more incursions. The mortal races have now banded together to confront the evil Qiraji in their own land. A champion has opened the gate and the Horde and Alliance have driven the armies of the Qiraji back into the ruins in retreat. It now falls to heroes to delve into the lair of the Qiraji and put an end to their masters once and for all",
+		-- #if AFTER CATA
+		["coord"] = { 58.93, 14.26, 327 },	-- Ruins of Ahn'Qiraj, Ahn Qiraj: The Fallen Kingdom
+		-- #else
+		-- TODO: Add a coordinate for Classic.
+		-- #endif
+		["mapID"] = RUINS_OF_AHNQIRAJ,
+		["sharedLockout"] = 1,
 		["isRaid"] = true,
-		["lvl"] = 50,
+		["lvl"] = lvlsquish(50, 25, 50),
 		["groups"] = {
 			n(FACTIONS, {
 				faction(609, { 	-- Cenarion Circle
@@ -19,7 +34,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
@@ -34,7 +49,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
@@ -49,7 +64,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
@@ -66,7 +81,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
@@ -81,7 +96,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
@@ -96,7 +111,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
@@ -113,7 +128,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
@@ -128,7 +143,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8691, {	-- Drape of Vaulted Secrets
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
@@ -143,7 +158,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
@@ -160,7 +175,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
@@ -175,7 +190,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
@@ -190,7 +205,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
@@ -207,7 +222,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
@@ -222,7 +237,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
@@ -237,7 +252,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
@@ -254,7 +269,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
@@ -269,7 +284,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
@@ -284,7 +299,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
@@ -301,7 +316,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
@@ -316,7 +331,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
@@ -331,7 +346,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
@@ -348,7 +363,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
 							{ "i", 20888, 1 },	-- Qiraji Ceremonial Ring
@@ -363,7 +378,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
 							{ "i", 20889, 1 },	-- Qiraji Regal Drape
@@ -378,7 +393,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
 							{ "i", 20890, 1 },	-- Qiraji Ornate Hilt
@@ -395,7 +410,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
 						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
-						["coord"] = { 52.0, 38.2, SILITHUS },
+						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
 							{ "i", 20884, 1 },	-- Qiraji Magisterial Ring
@@ -410,7 +425,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
 						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
-						["coord"] = { 51.8, 39.5, SILITHUS },
+						["coord"] = KEYL_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
 							{ "i", 20885, 1 },	-- Qiraji Martial Drape
@@ -425,7 +440,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
 						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
-						["coord"] = { 51.1, 38.9, SILITHUS },
+						["coord"] = WARDEN_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
 							{ "i", 20886, 1 },	-- Qiraji Spiked Hilt
@@ -714,10 +729,11 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 				}),
 				-- Key (Post 4.3 Only!)
 				i(76401, {	-- Scarab Coffer Key
+					-- #if ANYCLASSIC
 					["u"] = CATA_PHASE_ONE,
-					["timeline"] = {
-						"added 4.3.0.15005"
-					},
+					-- #else
+					["timeline"] = { "added 4.3.0.15005" },
+					-- #endif
 					["crs"] = {
 						15369,	-- Ayamiss the Hunter
 						15370,	-- Buru the Gorger
@@ -731,8 +747,12 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 			o(180691, {	-- Scarab Coffer
 				["description"] = "These can be found along the walls of the instance and require a coffer key to open.",
 				["cost"] = {
+					-- #if ANYCLASSIC
 					{ "i", 21761, 1, PHASE_ONE },	-- Scarab Coffer Key [pre-4.3]
 					{ "i", 76401, 1, CATA_PHASE_ONE },	-- Scarab Coffer Key [4.3]
+					-- #else
+					{ "i", 76401, 1 },	-- Scarab Coffer Key [4.3]
+					-- #endif
 				},
 				["groups"] = {
 					i(20873),	-- Alabaster Idol
@@ -748,21 +768,22 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					}),
 				},
 			}),
-			n(15348, { 	-- Kurinnaxx
-				{
-					["itemID"] = 22217,	-- Kurinnaxx's Venom Sac
-					["questID"] = 9023,	-- The Perfect Poison
-					["timeline"] = {
-						"added 1.13.0.28211",
-						"deleted 4.2.2.28211"
-					},
+			e(1537, { 	-- Kurinnaxx
+				["creatureID"] = 15348,
+				["groups"] = {
+					i(22217, {	-- Kurinnaxx's Venom Sac
+						["timeline"] = {
+							"added 1.13.0.28211",
+							"deleted 4.2.2.28211"
+						},
+					}),
+					i(21498),	-- Qiraji Sacrificial Dagger
+					i(21499),	-- Vestments of the Shifting Sands
+					i(21502),	-- Sand Reaver Wristguards
+					i(21501),	-- Toughened Silithis Hide Gloves
+					i(21503),	-- Belt of the Sand Reaver
+					i(21500),	-- Belt of the Inquisition
 				},
-				i(21498),	-- Qiraji Sacrificial Dagger
-				i(21499),	-- Vestments of the Shifting Sands
-				i(21502),	-- Sand Reaver Wristguards
-				i(21501),	-- Toughened Silithis Hide Gloves
-				i(21503),	-- Belt of the Sand Reaver
-				i(21500),	-- Belt of the Inquisition
 			}),
 			n(15471, {	-- Lieutenant General Andorov
 				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
@@ -771,11 +792,11 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					i(22221),	-- Plans: Obsidian Mail Tunic
 				},
 			}),
-			n(15341, { 	-- General Rajaxx
+			e(1538, { 	-- General Rajaxx
 				["description"] = "Speak with Lieutenant General Andorov in order to start the encounter. Andorov must survive the fight in order to defeat the encounter.",
+				["creatureID"] = 15341,
 				["groups"] = {
-					{
-						["npcID"] = -21,	-- Captains
+					n(-21, {	-- Captains
 						["qgs"] = {
 							15390, 	-- Captain Xurrem
 							15391, 	-- Captain Qeez
@@ -789,7 +810,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 							i(21809),	-- Fury of the Forgotten Swarm
 							i(21810),	-- Treads of the Wandering Nomad
 						},
-					},
+					}),
 					i(21492),	-- Manslayer of the Qiraji
 					i(21496),	-- Bracers of Qiraji Command
 					i(21494),	-- Southwind's Grasp
@@ -798,64 +819,74 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					i(21493),	-- Boots of the Vanguard
 				},
 			}),
-			n(15370, { 	-- Buru the Gorger
-				i(21485),	-- Buru's Skull Fragment
-				i(21487),	-- Slimy Scaled Gauntlets
-				i(21486),	-- Gloves of the Swarm
-				i(21491),	-- Scaled Bracers of the Gorger
-				i(21490),	-- Slime Kickers
-				i(21489),	-- Quicksand Waders
-				i(21488),	-- Fetish of Chitinous Spikes
-			}),
-			n(15369, { 	-- Ayamiss the Hunter
-				i(21466),	-- Stinger of Ayamiss
-				i(21478),	-- Bow of Taut Sinew
-				i(21479),	-- Gauntlets of the Immovable
-				i(21484),	-- Helm of Regrowth
-				i(21480),	-- Scaled Silithid Gauntlets
-				i(21483),	-- Ring of the Desert Winds
-				i(21481),	-- Boots of the Desert Protector
-				i(21482, {	-- Boots of the Fiery Sands
-					["timeline"] = {
-						"added 1.13.0.28211",
-						"removed 4.2.2.28211"
-					},
-				}),
-			}),
-			n(15340, { 	-- Moam
-				i(21471),	-- Talon of Furious Concentration
-				i(21455),	-- Southwind Helm
-				i(21472),	-- Dustwind Turbin
-				i(21474),	-- Chitinous Shoulderguards
-				i(21468),	-- Mantle of Maz'Nadir
-				i(21470),	-- Cloak of the Savior
-				i(21467),	-- Thick Silithis Chestguard
-				i(21469),	-- Gauntlets of Southwind
-				i(21479),	-- Gauntlets of the Immovable
-				i(21475),	-- Legplates of the Destroyer
-				i(21476),	-- Obsidian Scaled Leggings
-				i(21477),	-- Ring of Fury
-				i(21473),	-- Eye of Moam
-				i(22220),	-- Plans: Black Grasp of the Destroyer
-			}),
-			n(15339, { 	-- Ossirian the Unscarred
-				{
-					["itemID"] = 21220,	-- Head of Ossirian the Unscarred
-					["questID"] = 8791,	-- The Fall of Ossirian
+			e(1540, { 	-- Buru the Gorger
+				["creatureID"] = 15370,
+				["groups"] = {
+					i(21485),	-- Buru's Skull Fragment
+					i(21487),	-- Slimy Scaled Gauntlets
+					i(21486),	-- Gloves of the Swarm
+					i(21491),	-- Scaled Bracers of the Gorger
+					i(21490),	-- Slime Kickers
+					i(21489),	-- Quicksand Waders
+					i(21488),	-- Fetish of Chitinous Spikes
 				},
-				i(21452),	-- Staff of the Ruins
-				i(21715),	-- Sand Polished Hammer
-				i(21459),	-- Crossbow of Imminent Doom
-				i(21460),	-- Helm of Domination
-				i(21454),	-- Runic Stone Shoulders
-				i(21456),	-- Sandstorm Cloak
-				i(21457),	-- Bracers of Brutality
-				i(21464),	-- Shackles of the Unscarred
-				i(21462),	-- Gloves of Dark Wisdom
-				i(21458),	-- Gauntlets of New Life
-				i(21463),	-- Ossirian's Binding
-				i(21461),	-- Leggings of the Black Blizzard
-				i(21453),	-- Mantle of the Horusath
+			}),
+			e(1541, { 	-- Ayamiss the Hunter
+				["creatureID"] = 15369,
+				["groups"] = {
+					i(21466),	-- Stinger of Ayamiss
+					i(21478),	-- Bow of Taut Sinew
+					i(21479),	-- Gauntlets of the Immovable
+					i(21484),	-- Helm of Regrowth
+					i(21480),	-- Scaled Silithid Gauntlets
+					i(21481),	-- Boots of the Desert Protector
+					i(21482, {	-- Boots of the Fiery Sands
+						["timeline"] = {
+							"added 1.13.0.28211",
+							"removed 4.2.2.28211"
+						},
+					}),
+					i(21483),	-- Ring of the Desert Winds
+				},
+			}),
+			e(1539, { 	-- Moam
+				["creatureID"] = 15340,
+				["groups"] = {
+					i(21471),	-- Talon of Furious Concentration
+					i(21455),	-- Southwind Helm
+					i(21472),	-- Dustwind Turbin
+					i(21474),	-- Chitinous Shoulderguards
+					i(21468),	-- Mantle of Maz'Nadir
+					i(21470),	-- Cloak of the Savior
+					i(21467),	-- Thick Silithis Chestguard
+					i(21469),	-- Gauntlets of Southwind
+					i(21479),	-- Gauntlets of the Immovable
+					i(21475),	-- Legplates of the Destroyer
+					i(21476),	-- Obsidian Scaled Leggings
+					i(21477),	-- Ring of Fury
+					i(21473),	-- Eye of Moam
+					i(22220),	-- Plans: Black Grasp of the Destroyer
+				},
+			}),
+			e(1542, { 	-- Ossirian the Unscarred
+				["creatureID"] = 15339,
+				["groups"] = {
+					ach(689),	-- Ruins of Ahn'Qiraj
+					i(21220),	-- Head of Ossirian the Unscarred
+					i(21452),	-- Staff of the Ruins
+					i(21715),	-- Sand Polished Hammer
+					i(21459),	-- Crossbow of Imminent Doom
+					i(21460),	-- Helm of Domination
+					i(21454),	-- Runic Stone Shoulders
+					i(21456),	-- Sandstorm Cloak
+					i(21457),	-- Bracers of Brutality
+					i(21464),	-- Shackles of the Unscarred
+					i(21462),	-- Gloves of Dark Wisdom
+					i(21458),	-- Gauntlets of New Life
+					i(21463),	-- Ossirian's Binding
+					i(21461),	-- Leggings of the Black Blizzard
+					i(21453),	-- Mantle of the Horusath
+				},
 			}),
 		},
 	}),
