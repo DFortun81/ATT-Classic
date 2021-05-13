@@ -20,7 +20,7 @@ for key,value in pairs({
 	["Profondeurs de Brassenoire"] = 221,	-- Blackfathom Deeps
 	["Profondeurs de Blackrock"] = 242,	-- Blackrock Depths
 	["Repaire de l'Aile noire"] = 287,	-- Blackwing Lair
-	["Mont Blackrock"] = 35,	-- Blackrock Mountain
+	["Mont Blackrock"] = 33,	-- Blackrock Mountain
 	["Pic Blackrock"] = 250,	-- Blackrock Spire
 	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["Hache-tripes"] = 234,	-- Dire Maul

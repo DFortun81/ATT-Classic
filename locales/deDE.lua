@@ -25,7 +25,7 @@ for key,value in pairs({
 	["Tiefschwarze Grotte"] = 221,	-- Blackfathom Deeps
 	["Blackrocktiefen"] = 242,	-- Blackrock Depths
 	["Pechschwingenhort"] = 287,	-- Blackwing Lair
-	["Der Blackrock"] = 35,	-- Blackrock Mountain
+	["Der Blackrock"] = 33,	-- Blackrock Mountain
 	["Blackrockspitze"] = 250,	-- Blackrock Spire
 	["Höhlen der Zeit"] = 75,	-- Caverns of Time
 	["Düsterbruch"] = 234,	-- Dire Maul

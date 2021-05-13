@@ -14,7 +14,7 @@ for key,value in pairs({
 	["Blackfathom Deeps"] = 221,	-- Blackfathom Deeps
 	["Blackrock Depths"] = 242,	-- Blackrock Depths
 	["Blackwing Lair"] = 287,	-- Blackwing Lair
-	["Blackrock Mountain"] = 35,	-- Blackrock Mountain
+	["Blackrock Mountain"] = 33,	-- Blackrock Mountain
 	["Blackrock Spire"] = 250,	-- Blackrock Spire
 	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["Dire Maul"] = 234,	-- Dire Maul

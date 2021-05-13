@@ -14,7 +14,7 @@ for key,value in pairs({
 	["Cavernas de Brazanegra"] = 221,	-- Blackfathom Deeps
 	["Profundidades de Roca Negra"] = 242,	-- Blackrock Depths
 	["Guarida Alanegra"] = 287,	-- Blackwing Lair
-	["Montaña Roca Negra"] = 35,	-- Blackrock Mountain
+	["Montaña Roca Negra"] = 33,	-- Blackrock Mountain
 	["Cumbre de Roca Negra"] = 250,	-- Blackrock Spire
 	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["La Masacre"] = 234,	-- Dire Maul

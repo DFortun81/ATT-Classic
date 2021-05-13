@@ -78,6 +78,7 @@ COSMIC = 947;	-- Confirmed!
 KALIMDOR = 1414;	-- Confirmed!
 ASHENVALE = 1440;	-- Confirmed!
 AZSHARA = 1447;	-- Confirmed!
+CAVERNS_OF_TIME = 75;
 DARKSHORE = 1439;	-- Confirmed!
 DARNASSUS = 1457;	-- Confirmed!
 DESOLACE = 1443;	-- Confirmed!
@@ -103,6 +104,9 @@ EASTERN_KINGDOMS = 1415;	-- Confirmed!
 ALTERAC_MOUNTAINS = 1416;	-- Confirmed!
 ARATHI_HIGHLANDS = 1417;	-- Confirmed!
 BADLANDS = 1418;	-- Confirmed!
+BLACKROCK_MOUNTAIN = 33;
+BLACKROCK_MOUNTAIN_LEVEL2 = 34;
+BLACKROCK_MOUNTAIN_LEVEL3 = 35;
 BLASTED_LANDS = 1419;	-- Confirmed!
 BURNING_STEPPES = 1428;	-- Confirmed!
 DEEPRUN_TRAM = 499;	-- Confirmed!
@@ -145,10 +149,6 @@ TEROKKAR_FOREST = 1952;	-- Confirmed!
 SHATTRATH_CITY = 1955;	-- Confirmed!
 BLADES_EDGE_MOUNTAINS = 1949;	-- Confirmed!
 SHADOWMOON_VALLEY = 1948;	-- Confirmed!
-
--- Custom Maps
-BLACKROCK_MOUNTAIN = 35;
-CAVERNS_OF_TIME = 75;
 
 -- CLASSES
 WARRIOR = 1;

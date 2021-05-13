@@ -14,7 +14,7 @@ for key,value in pairs({
 	["Profundezas Negras"] = 221,	-- Blackfathom Deeps
 	["Abismo Rocha Negra"] = 242,	-- Blackrock Depths
 	["Covil Asa Negra"] = 287,	-- Blackwing Lair
-	["Montanha Rocha Negra"] = 35,	-- Blackrock Mountain
+	["Montanha Rocha Negra"] = 33,	-- Blackrock Mountain
 	["Pico da Rocha Negra"] = 250,	-- Blackrock Spire
 	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["Gládio Cruel"] = 234,	-- Dire Maul

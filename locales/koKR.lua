@@ -14,7 +14,7 @@ for key,value in pairs({
 	["검은심연 나락"] = 221,	-- Blackfathom Deeps
 	["검은바위 나락"] = 242,	-- Blackrock Depths
 	["검은날개 둥지"] = 287,	-- Blackwing Lair
-	["검은바위 산"] = 35,	-- Blackrock Mountain
+	["검은바위 산"] = 33,	-- Blackrock Mountain
 	["검은바위 첨탑"] = 250,	-- Blackrock Spire
 	["시간의 동굴"] = 75,	-- Caverns of Time
 	["혈투의 전장"] = 234,	-- Dire Maul

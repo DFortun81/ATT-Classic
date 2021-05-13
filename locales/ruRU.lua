@@ -14,7 +14,7 @@ for key,value in pairs({
 	["Непроглядная Пучина"] = 221,	-- Blackfathom Deeps
 	["Глубины Черной горы"] = 242,	-- Blackrock Depths
 	["Логово Крыла Тьмы"] = 287,	-- Blackwing Lair
-	["Черная гора"] = 35,	-- Blackrock Mountain
+	["Черная гора"] = 33,	-- Blackrock Mountain
 	["Вершина Черной горы"] = 250,	-- Blackrock Spire
 	[DUNGEON_FLOOR_TANARIS18] = 75,	-- Caverns of Time
 	["Забытый Город"] = 234,	-- Dire Maul
