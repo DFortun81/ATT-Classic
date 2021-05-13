@@ -1,8 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
-_.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
+_.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 	n(-420, {	-- Tier 0.5 Sets
 		["description"] = "The Dungeon Set 2 class sets, commonly referred to as Tier 0.5, are obtained by completing a long quest chain to upgrade the first set available as drops in end game dungeons into stronger versions of themselves. In current WoW, these sets are covetted by Collectors as the quest chain was completely removed from the game with Cataclysm. In WoW Classic, you should finish this quest chain on all of your characters before then!",
 		["groups"] = {
@@ -73,7 +72,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16718, 1 },	-- Wildheart Spaulders
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22107),	-- Feralheart Boots
 						i(22111),	-- Feralheart Kilt
 						i(22112),	-- Feralheart Spaulders
@@ -108,7 +107,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22106),	-- Feralheart Belt
 						i(22110),	-- Feralheart Gloves
 					},
@@ -142,7 +141,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { DRUID },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22109),	-- Feralheart Cowl
 						i(22113),	-- Feralheart Vest
 					},
@@ -215,7 +214,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16679, 1 },	-- Beaststalker's Mantle
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22061),	-- Beastmaster's Boots
 						i(22017),	-- Beastmaster's Pants
 						i(22016),	-- Beastmaster's Mantle
@@ -250,7 +249,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22010),	-- Beastmaster's Belt
 						i(22015),	-- Beastmaster's Gloves
 					},
@@ -284,7 +283,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { HUNTER },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22013),	-- Beastmaster's Cap
 						i(22060),	-- Beastmaster's Tunic
 					},
@@ -357,7 +356,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16689, 1 },	-- Magister's Mantle
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22064),	-- Sorcerer's Boots
 						i(22067),	-- Sorcerer's Leggings
 						i(22068),	-- Sorcerer's Mantle
@@ -392,7 +391,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22062),	-- Sorcerer's Belt
 						i(22066),	-- Sorcerer's Gloves
 					},
@@ -426,7 +425,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { MAGE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22065),	-- Sorcerer's Crown
 						i(22069),	-- Sorcerer's Robes
 					},
@@ -444,6 +443,25 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					},
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 58,
+					["groups"] = {
+						i(22088),	-- Soulforge Bracers
+					},
+				}),
+				q(10493, {	-- An Earnest Proposition [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, SILITHUS, BLACKROCK_SPIRE },
+					["cost"] = {
+						{ "i", 22381, 15 },	-- Silithus Venom Sample
+						{ "i", 16722, 1 },	-- Lightforge Bracers
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
 					["lvl"] = 58,
 					["groups"] = {
 						i(22088),	-- Soulforge Bracers
@@ -469,6 +487,29 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						i(22093),	-- Soulforge Spaulders
 					},
 				}),
+				q(10497, {	-- Anthion's Parting Words [HORDE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16725, 1 },	-- Lightforge Boots
+						{ "i", 16728, 1 },	-- Lightforge Legplates
+						{ "i", 16729, 1 },	-- Lightforge Spaulders
+					},
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22087),	-- Soulforge Boots
+						i(22092),	-- Soulforge Legplates
+						i(22093),	-- Soulforge Spaulders
+					},
+				}),
 				q(8933, {	-- Just Compensation [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8977,	-- Return to Deliana
@@ -486,6 +527,26 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						i(22090),	-- Soulforge Gauntlets
 					},
 				}),
+				q(10495, {	-- Just Compensation [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8978,	-- Return to Mokvar
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE, STRATHOLME },
+					["cost"] = {
+						{ "i", 16723, 1 },	-- Lightforge Belt
+						{ "i", 16724, 1 },	-- Lightforge Gauntlets
+					},
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22086),	-- Soulforge Belt
+						i(22090),	-- Soulforge Gauntlets
+					},
+				}),
 				q(9002, {	-- Saving the Best for Last [ALLIANCE]
 					["qg"] = 16013,	-- Deliana
 					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
@@ -497,6 +558,23 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					},
 					["classes"] = { PALADIN },
 					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 58,
+					["groups"] = {
+						i(22091),	-- Soulforge Helm
+						i(22089),	-- Soulforge Breastplate
+					},
+				}),
+				q(10499, {	-- Saving the Best for Last [HORDE]
+					["qg"] = 16012,	-- Mokvar
+					["sourceQuest"] = 8998,	-- Back to the Beginning [HORDE]
+					["coord"] = { 35.0, 38.3, ORGRIMMAR },
+					["maps"] = { ORGRIMMAR, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["cost"] = {
+						{ "i", 16727, 1 },	-- Lightforge Helm
+						{ "i", 16726, 1 },	-- Lightforge Breastplate
+					},
+					["classes"] = { PALADIN },
+					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
 					["groups"] = {
 						i(22091),	-- Soulforge Helm
@@ -571,7 +649,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16695, 1 },	-- Devout Mantle
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22084),	-- Virtuous Sandals
 						i(22085),	-- Virtuous Skirt
 						i(22082),	-- Virtuous Mantle
@@ -606,7 +684,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22078),	-- Virtuous Belt
 						i(22081),	-- Virtuous Gloves
 					},
@@ -640,7 +718,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { PRIEST },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22080),	-- Virtuous Crown
 						i(22083),	-- Virtuous Robe
 					},
@@ -713,7 +791,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16708, 1 },	-- Shadowcraft Spaulders
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22003),	-- Darkmantle Boots
 						i(22007),	-- Darkmantle Pants
 						i(22008),	-- Darkmantle Spaulders
@@ -748,7 +826,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22006),	-- Darkmantle Gloves
 						i(22002),	-- Darkmantle Belt
 					},
@@ -782,13 +860,32 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { ROGUE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22005),	-- Darkmantle Cap
 						i(22009),	-- Darkmantle Tunic
 					},
 				}),
 			})),
 			cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
+				q(10492, {	-- An Earnest Proposition [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE, WINTERSPRING, SCHOLOMANCE, STRATHOLME },
+					["cost"] = {
+						{ "i", 21928, 15 },	-- Winterspring Blood Sample
+						{ "i", 16671, 1 },	-- Bindings of Elements
+						{ "g", 200000 },	-- 20g
+					},
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22095),	-- Bindings of The Five Thunders
+					},
+				}),
 				q(8918,	{	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar
 					["coord"] = { 35.0, 38.3, ORGRIMMAR },
@@ -805,6 +902,29 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						i(22095),	-- Bindings of The Five Thunders
 					},
 				}),
+				q(10496, {	-- Anthion's Parting Words [ALLIANCE]
+					["qg"] = 16016,	-- Anthion Harmon
+					["sourceQuest"] = 9015,	-- The Challenge
+					["coord"] = { 30.9, 16.8, EASTERN_PLAGUELANDS },
+					["maps"] = { EASTERN_PLAGUELANDS, SCHOLOMANCE, STRATHOLME },
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
+						{ "i", 16670, 1 },	-- Boots of Elements
+						{ "i", 16668, 1 },	-- Kilt of Elements
+						{ "i", 16669, 1 },	-- Pauldrons of Elements
+					},
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22096),	-- Boots of The Five Thunders
+						i(22100),	-- Kilt of The Five Thunders
+						i(22101),	-- Pauldrons of The Five Thunders
+					},
+				}),
 				q(8957, {	-- Anthion's Parting Words [HORDE]
 					["qg"] = 16016,	-- Anthion Harmon
 					["sourceQuest"] = 9015,	-- The Challenge
@@ -819,10 +939,30 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16669, 1 },	-- Pauldrons of Elements
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22096),	-- Boots of The Five Thunders
 						i(22100),	-- Kilt of The Five Thunders
 						i(22101),	-- Pauldrons of The Five Thunders
+					},
+				}),
+				q(10494, {	-- Just Compensation [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8977,	-- Return to Deliana
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE, BLACKROCK_SPIRE },
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 16673, 1 },	-- Cord of Elements
+						{ "i", 16672, 1 },	-- Gauntlets of Elements
+					},
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22098),	-- Cord of The Five Thunders
+						i(22099),	-- Gauntlets of The Five Thunders
 					},
 				}),
 				q(8942, {	-- Just Compensation [HORDE]
@@ -837,9 +977,29 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22098),	-- Cord of The Five Thunders
 						i(22099),	-- Gauntlets of The Five Thunders
+					},
+				}),
+				q(10498, {	-- Saving the Best for Last [ALLIANCE]
+					["qg"] = 16013,	-- Deliana
+					["sourceQuest"] = 8997,	-- Back to the Beginning [ALLIANCE]
+					["coord"] = { 43.5, 52.6, IRONFORGE },
+					["maps"] = { IRONFORGE, BLACKROCK_SPIRE, SCHOLOMANCE },
+					["cost"] = {
+						{ "i", 16667, 1 },	-- Coif of Elements
+						{ "i", 16666, 1 },	-- Vest of Elements
+					},
+					["classes"] = { SHAMAN },
+					["races"] = ALLIANCE_ONLY,
+					-- #if ANYCLASSIC
+					["u"] = TBC_PHASE_ONE,
+					-- #endif
+					["lvl"] = 58,
+					["groups"] = {
+						i(22097),	-- Coif of The Five Thunders
+						i(22102),	-- Vest of The Five Thunders
 					},
 				}),
 				q(9011, {	-- Saving the Best for Last [HORDE]
@@ -854,7 +1014,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { SHAMAN },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22097),	-- Coif of The Five Thunders
 						i(22102),	-- Vest of The Five Thunders
 					},
@@ -927,7 +1087,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16701, 1 },	-- Dreadmist Mantle
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22076),	-- Deathmist Sandals
 						i(22072),	-- Deathmist Leggings
 						i(22073),	-- Deathmist Mantle
@@ -962,7 +1122,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22070),	-- Deathmist Belt
 						i(22077),	-- Deathmist Wraps
 					},
@@ -996,7 +1156,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { WARLOCK },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22074),	-- Deathmist Mask
 						i(22075),	-- Deathmist Robe
 					},
@@ -1069,7 +1229,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 16733, 1 },	-- Spaulders of Valor
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(21995),	-- Boots of Heroism
 						i(22000),	-- Legplates of Heroism
 						i(22001),	-- Spaulders of Heroism
@@ -1104,7 +1264,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(21994),	-- Belt of Heroism
 						i(21998),	-- Gauntlets of Heroism
 					},
@@ -1138,7 +1298,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 					["classes"] = { WARRIOR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(21999),	-- Helm of Heroism
 						i(21997),	-- Breastplate of Heroism
 					},
@@ -1182,6 +1342,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8908,	-- An Earnest Proposition [PALADIN]
 						8909,	-- An Earnest Proposition [PRIEST]
 						8910,	-- An Earnest Proposition [ROGUE]
+						10492,	-- An Earnest Proposition [SHAMAN]
 						8911,	-- An Earnest Proposition [WARLOCK]
 						8912,	-- An Earnest Proposition [WARRIOR]
 					},
@@ -1199,9 +1360,10 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8913,	-- An Earnest Proposition [DRUID]
 						8914,	-- An Earnest Proposition [HUNTER]
 						8915,	-- An Earnest Proposition [MAGE]
-						8918,	-- An Earnest Proposition [SHAMAN]
+						10493,	-- An Earnest Proposition [PALADIN]
 						8916,	-- An Earnest Proposition [PRIEST]
 						8917,	-- An Earnest Proposition [ROGUE]
+						8918,	-- An Earnest Proposition [SHAMAN]
 						8919,	-- An Earnest Proposition [WARLOCK]
 						8920,	-- An Earnest Proposition [WARRIOR]
 					},
@@ -1261,6 +1423,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8956,	-- Anthion's Parting Words [ALLIANCE]
 						8958,	-- Anthion's Parting Words [ALLIANCE]
 						8959,	-- Anthion's Parting Words [ALLIANCE]
+						10496,	-- Anthion's Parting Words [ALLIANCE]
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["coord"] = { 43.53, 52.64, IRONFORGE },
@@ -1282,6 +1445,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8956,	-- Anthion's Parting Words [ALLIANCE]
 						8958,	-- Anthion's Parting Words [ALLIANCE]
 						8959,	-- Anthion's Parting Words [ALLIANCE]
+						10496,	-- Anthion's Parting Words [ALLIANCE]
 					},
 					["coord"] = { 43.53, 52.64, IRONFORGE },
 					["maps"] = { IRONFORGE },
@@ -1300,6 +1464,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8957,	-- Anthion's Parting Words [HORDE]
 						9021,	-- Anthion's Parting Words [HORDE]
 						9022,	-- Anthion's Parting Words [HORDE]
+						10497,	-- Anthion's Parting Words [HORDE]
 					},
 					["description"] = "Bodley is standing right outside the entrance to Blackrock Spire.",
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
@@ -1433,6 +1598,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8935,	-- Just Compensation [ALLIANCE]
 						8936,	-- Just Compensation [ALLIANCE]
 						8937,	-- Just Compensation [ALLIANCE]
+						10494,	-- Just Compensation [ALLIANCE]
 					},
 					["coord"] = { 43.53, 52.64, IRONFORGE },
 					["maps"] = { IRONFORGE, EASTERN_PLAGUELANDS, STRATHOLME },
@@ -1452,6 +1618,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						8942,	-- Just Compensation [HORDE]
 						8943,	-- Just Compensation [HORDE]
 						8944,	-- Just Compensation [HORDE]
+						10495,	-- Just Compensation [HORDE]
 					},
 					["coord"] = { 34.95, 38.29, ORGRIMMAR },
 					["maps"] = { ORGRIMMAR, EASTERN_PLAGUELANDS, STRATHOLME },
@@ -1549,7 +1716,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 						{ "i", 22056, 1 },	-- Brazier of Beckoning [Lord Valthalak]
 					},
 					["lvl"] = 58,
-					["g"] = {
+					["groups"] = {
 						i(22057),	-- Brazier of Invocation
 						i(22344),	-- Brazier of Invocation: User's Manual
 					},
@@ -1750,7 +1917,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_FIVE }, {	-- Classic
 				}),
 			}),
 			n(REWARDS, {
-				i(22048, {
+				i(22048, {	-- Lord Valthalak's Amulet
 					["cost"] = {
 						{ "i", 22047, 1 },	-- Top Piece of Lord Valthalak's Amulet
 						{ "i", 22046, 1 },	-- Right Piece of Lord Valthalak's Amulet
