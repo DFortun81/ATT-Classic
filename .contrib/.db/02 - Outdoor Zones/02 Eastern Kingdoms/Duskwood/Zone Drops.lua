@@ -20,7 +20,6 @@ _.Zones =
 				}),
 				{
 					["itemID"] = 6844,	-- Burning Blood
-					["questID"] = 1705,	-- Burning Blood
 					["coord"] = { 74.2, 77.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
@@ -34,7 +33,6 @@ _.Zones =
 				},
 				{
 					["itemID"] = 6845,	-- Burning Rock
-					["questID"] = 1705,	-- Burning Blood
 					["cr"] = 6170,	-- Gutspill
 					["coord"] = { 74.2, 77.8, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
@@ -50,8 +48,6 @@ _.Zones =
 					["cr"] = 910,	-- Defias Enchanter
 				}),
 				i(1129, {	-- Ghoul Fang
-					["questID"] = 101,	-- The Totem of Infliction
-					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						210,	-- Bone Chewer
 						570,	-- Brain Eater
@@ -62,8 +58,6 @@ _.Zones =
 					},
 				}),
 				i(884, {	-- Ghoul Rib
-					["questID"] = 133,	-- Ghoulish Effigy
-					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						210,	-- Bone Chewer
 						570,	-- Brain Eater
@@ -106,7 +100,6 @@ _.Zones =
 					["cr"] = 910,	-- Defias Enchanter
 				}),
 				i(7267, {	-- Pristine Spider Silk
-					["questID"] = 1940,	-- Pristine Spider Silk
 					["races"] = { HUMAN, GNOME },
 					["classes"] = { MAGE },
 					["crs"] = {
@@ -115,8 +108,6 @@ _.Zones =
 					},
 				}),
 				i(1598, {	-- Rot Blossom
-					["questID"] = 156,	-- Gather Rot Blossoms
-					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						531,	-- Skeletal Fiend
 						202,	-- Skeletal Horror
@@ -129,8 +120,6 @@ _.Zones =
 					["cr"] = 1110,	-- Skeletal Raider
 				}),
 				i(2378, {	-- Skeleton Finger
-					["questID"] = 101,	-- The Totem of Infliction
-					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						531,	-- Skeletal Fiend
 						787,	-- Skeletal Healer
@@ -154,8 +143,6 @@ _.Zones =
 					["cr"] = 217,	-- Venom Web Spider
 				}),
 				i(1130, {	-- Vial of Spider Venom
-					["questID"] = 101,	-- The Totem of Infliction
-					["races"] = ALLIANCE_ONLY,
 					["crs"] = {
 						930,	-- Black Widow Hatchling
 						949,	-- Carrion Recluse

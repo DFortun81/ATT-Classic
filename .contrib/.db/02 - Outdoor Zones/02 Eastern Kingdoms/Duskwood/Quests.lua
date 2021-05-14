@@ -159,6 +159,7 @@ _.Zones =
 				}),
 				q(133, {	-- Ghoulish Effigy
 					["qg"] = 289,	-- Abercrombie
+					["sourceQuest"] = 159,	-- Juice Delivery
 					["coord"] = { 28.0, 31.5, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
