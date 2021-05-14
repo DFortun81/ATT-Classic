@@ -78,6 +78,13 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 					},
 				}),
+				n(1303, {	-- Felicia Gump <Herbalism Supplier>
+					["coord"] = { 64.2, 60.6, STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(2665),	-- Stormwind Seasoning Herbs
+					},
+				}),
 				n(1298, {	-- Frederick Stover <Bow & Arrow Merchant>
 					["coord"] = { 50.3, 57.7, STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
