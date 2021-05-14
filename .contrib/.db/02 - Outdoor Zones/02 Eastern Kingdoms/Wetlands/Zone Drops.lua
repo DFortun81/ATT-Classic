@@ -98,6 +98,9 @@ _.Zones =
 						324,	-- The Lost Ingots
 					},
 				}),
+				i(2784, {	-- Musquash Root
+					["coord"] = { 64.7, 75.5, WETLANDS },
+				}),
 				i(5788, {	-- Pattern: Thick Murloc Armor
 					["cr"] = 1160,	-- Captain Halyndor
 				}),

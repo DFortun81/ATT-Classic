@@ -147,6 +147,9 @@ _.Zones =
 				i(3360, {	-- Stitches' Femur
 					["cr"] = 412,	-- Stitches <Gift from the Embalmer>
 				}),
+				i(2779, {	-- Tear of Tilloa
+					["coord"] = { 78.5, 36.0, DUSKWOOD },
+				}),
 				i(899, {	-- Venom Web Fang
 					["cr"] = 217,	-- Venom Web Spider
 				}),

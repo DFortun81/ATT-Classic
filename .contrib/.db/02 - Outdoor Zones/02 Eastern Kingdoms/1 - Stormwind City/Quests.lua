@@ -58,11 +58,19 @@ _.Zones =
 				q(335, {	-- A Noble Brew (1)
 					["qg"] = 1435,	-- Zardeth of the Black Claw
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2784, 1 },	-- Musquash Root
+						{ "i", 2779, 1 },	-- Tear of Tilloa
+					},
 					["lvl"] = 25,
 				}),
 				q(336, {	-- A Noble Brew (2)
 					["qg"] = 1435,	-- Zardeth of the Black Claw
+					["sourceQuest"] = 335,	-- A Noble Brew (1)
 					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 2788, 1 },	-- Black Claw Stout
+					},
 					["lvl"] = 25,
 				}),
 				q(1638, {	-- A Warrior's Training
