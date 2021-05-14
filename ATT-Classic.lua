@@ -11440,6 +11440,8 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 			['g'] = { },
 		};
 		self.data = self.header;
+		self.previousCraftSkillID = 0;
+		self.previousTradeSkillID = 0;
 		self.CacheRecipes = function(self)
 			-- Cache Learned Spells
 			local skillCache = fieldCache["spellID"];
@@ -11534,7 +11536,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						for skillIndex = 1,numTradeSkills do
 							local skillName, skillType, numAvailable, isExpanded = GetTradeSkillInfo(skillIndex);
 							if skillType ~= "header" then
-								local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
 								local spellID = app.SpellNameToSpellID[skillName];
 								if spellID then
 									app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil;
@@ -11552,6 +11553,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 								end
 								
 								-- Cache the Reagents used to make this item.
+								local craftedItemID = GetItemInfoInstant(GetTradeSkillItemLink(skillIndex));
 								for i=1,GetTradeSkillNumReagents(skillIndex) do
 									local reagentCount = select(3, GetTradeSkillReagentInfo(skillIndex, i));
 									local itemID = GetItemInfoInstant(GetTradeSkillReagentItemLink(skillIndex, i));
@@ -11571,7 +11573,9 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 				end
 				
 				-- Open the Tradeskill list for this Profession
-				if app.Categories.Professions and (craftSkillID ~= 0 or tradeSkillID ~= 0) then
+				if app.Categories.Professions and (craftSkillID ~= 0 or tradeSkillID ~= 0) and (craftSkillID ~= self.previousCraftSkillID or tradeSkillID ~= self.previousTradeSkillID) then
+					self.previousCraftSkillID = craftSkillID;
+					self.previousTradeSkillID = tradeSkillID;
 					local g = {};
 					for i,group in ipairs(app.Categories.Professions) do
 						if group.spellID == craftSkillID or group.spellID == tradeSkillID then
@@ -11630,7 +11634,12 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						self.wait = self.wait - 1;
 						coroutine.yield();
 					end
+					while not self:IsVisible() do
+						coroutine.yield();
+					end
 					self:CacheRecipes();
+					self:Update();
+					wipe(searchCache);
 				end);
 			end
 		end
@@ -11698,8 +11707,6 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 		self:SetScript("OnEvent", function(self, e, ...)
 			if e == "TRADE_SKILL_LIST_UPDATE" or e == "SKILL_LINES_CHANGED" then
 				self:RefreshRecipes();
-				self:Update();
-				wipe(searchCache);
 			elseif e == "TRADE_SKILL_SHOW" or e == "CRAFT_SHOW" then
 				if self.TSMCraftingVisible == nil then
 					self:SetTSMCraftingVisible(false);
@@ -11722,13 +11729,10 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 						end
 					end
 					self:RefreshRecipes();
-					self:Update();
-					wipe(searchCache);
 				end
 			elseif e == "TRADE_SKILL_CLOSE" or e == "CRAFT_CLOSE" then
 				StartCoroutine("TSMWHY3", function()
 					self:RefreshRecipes();
-					self:Update();
 					if not self:UpdateFrameVisibility() then
 						self:SetVisible(false);
 					end
