@@ -12922,7 +12922,7 @@ app.events.QUEST_ACCEPTED = function(questID)
 	app:RefreshData(true, true);
 end
 app.events.QUEST_TURNED_IN = function(questID)
-	if not fieldCache.questID[questID] and not fieldCache.questID[questID][1].repeatable then
+	if fieldCache.questID[questID] and not fieldCache.questID[questID][1].repeatable then
 		CompletedQuests[questID] = true;
 		for questID,completed in pairs(DirtyQuests) do
 			app.QuestCompletionHelper(tonumber(questID));
