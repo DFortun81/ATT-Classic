@@ -802,6 +802,10 @@ _.NeverImplemented =
 	i(35555, {	-- Plans: Sunblessed Breastplate
 		["spellID"] = 0,
 	}),
+	q(8489),	-- BETA An Intact Converter [Eversong Woods]
+	q(8478),	-- BETA Choose Your Weapon [Eversong Woods]
+	q(9357),	-- BETA Report to Aeldon Sunbrand [Eversong Woods]
+	q(8896),	-- BETA The Dwarven Spy [Eversong Woods]
 	-- #endif
 };
 i = oldI;

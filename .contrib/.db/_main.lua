@@ -124,6 +124,7 @@ SILVERPINE_FOREST = 1421;	-- Confirmed!
 STORMWIND_CITY = 1453;	-- Confirmed!
 STRANGLETHORN_VALE = 1434;	-- Confirmed!
 SWAMP_OF_SORROWS = 1435;	-- Confirmed!
+SUNSTRIDER_ISLE = 467;	-- This is what it is in Retail, if they ever add a map, update this.
 THE_HINTERLANDS = 1425;	-- Confirmed!
 TIRISFAL_GLADES = 1420;	-- Confirmed!
 UNDERCITY = 1458;	-- Confirmed!

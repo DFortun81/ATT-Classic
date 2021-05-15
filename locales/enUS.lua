@@ -1067,6 +1067,7 @@ app.L = {
 		["Scholomance"] = 476,
 		["Shadowfang Keep"] = 310,
 		["Stratholme"] = 317,
+		["Sunstrider Isle"] = 467,
 		["Temple of Ahn'Qiraj"] = 320,
 		["The Deadmines"] = 291,
 		["The Temple of Atal'hakkar"] = 220,
