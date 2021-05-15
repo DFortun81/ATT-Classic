@@ -2468,18 +2468,6 @@ local function RefreshSaves()
 	-- While the player is still logging in, wait.
 	while not app.GUID do coroutine.yield(); end
 	
-	-- While the player is still waiting for information, wait.
-	-- NOTE: Usually, this is only 1 wait.
-	local counter = 0;
-	while GetNumSavedInstances() < 1 do
-		coroutine.yield();
-		counter = counter + 1;
-		if counter > 600 then
-			app.refreshingSaves = false;
-			coroutine.yield(false);
-		end
-	end
-	
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
 	
@@ -2492,6 +2480,18 @@ local function RefreshSaves()
 					locks[name] = nil;
 				end
 			end
+		end
+	end
+	
+	-- While the player is still waiting for information, wait.
+	-- NOTE: Usually, this is only 1 wait.
+	local counter = 0;
+	while GetNumSavedInstances() < 1 do
+		coroutine.yield();
+		counter = counter + 1;
+		if counter > 600 then
+			app.refreshingSaves = false;
+			coroutine.yield(false);
 		end
 	end
 	
