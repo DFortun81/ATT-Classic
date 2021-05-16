@@ -13,6 +13,13 @@ _.Zones =
 						16353,	-- Mistbat
 					},
 				}),
+				i(22597, {	-- The Lady's Necklace
+					["races"] = HORDE_ONLY,
+					["crs"] = {
+						16315,	-- Deatholme Acolyte
+						16314,	-- Fallen Ranger
+					},
+				}),
 			}),
 		}),
 	})),

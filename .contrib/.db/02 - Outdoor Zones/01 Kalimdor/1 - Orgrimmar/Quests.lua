@@ -435,6 +435,11 @@ _.Zones =
 						2378,	-- Find the Shattered Hand
 						2380,	-- To Orgrimmar!
 					},
+					-- #if AFTER TBC
+					["altQuests"] = {
+						10372,	-- A Discreet Inquiry
+					},
+					-- #endif
 					["coord"] = { 43, 53.4, ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["classes"] = { ROGUE },

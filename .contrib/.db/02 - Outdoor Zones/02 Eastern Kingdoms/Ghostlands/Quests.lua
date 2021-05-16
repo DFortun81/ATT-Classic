@@ -6,11 +6,6 @@ _.Zones =
 	m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		m(GHOSTLANDS, {
 			n(QUESTS, {
-				q(10372, {	-- A Discreet Inquiry
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
-					["classes"] = { ROGUE },
-				}),
 				q(9275, {	-- A Little Dash of Seasoning
 					["provider"] = { "n", 16464 },	-- Apothecary Venustus
 					["coord"] = { 72.6, 31.5, GHOSTLANDS },
@@ -253,11 +248,26 @@ _.Zones =
 				}),
 				-- #endif
 				q(9491, {	-- Greed
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+					["qg"] = 16268,	-- Eralan <Poison Supplies>
+					["sourceQuest"] = 10372,	-- A Discreet Inquiry
+					["coord"] = { 47.2, 34.3, GHOSTLANDS },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 5060, 1 },	-- Thieves' Tools
+						{ "i", 23717, 1 },	-- Pitted Gold Band
+					},
 					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 1, 16),
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(23921)),	-- Bulging Sack of Silver
+						objective(1, {	-- 0/1 Pitted Gold Band
+							["description"] = "Use your lockpicking skill to open the Burial Chests.",
+							["timeline"] = { "removed 4.0.3.10000" },
+							["coord"] = { 63.8, 28.9, GHOSTLANDS },
+						}),
+						i(23921, {	-- Bulging Sack of Silver
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
 					},
 				}),
 				q(9145, {	-- Help Ranger Valanna!
@@ -441,6 +451,7 @@ _.Zones =
 				q(9175, {	-- The Lady's Necklace
 					["provider"] = { "i", 22597 },	-- The Lady's Necklace
 					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(15, 1, 15),
 				}),
 				q(9149, {	-- The Plagued Coast
 					["provider"] = { "n", 16198 },	-- Apothecary Renzithen
@@ -452,12 +463,28 @@ _.Zones =
 					},
 				}),
 				q(10548, {	-- The Sad Truth
-					["u"] = REMOVED_FROM_GAME,
-					["races"] = HORDE_ONLY,
+					["qg"] = 16268,	-- Eralan <Poison Supplies>
+					["sourceQuest"] = 9491,	-- Greed
+					["coord"] = { 47.2, 34.3, GHOSTLANDS },
+					["timeline"] = { "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 30503, 1 },	-- Archeologist's Shrunken Head
+					},
 					["classes"] = { ROGUE },
+					["races"] = HORDE_ONLY,
+					["lvl"] = lvlsquish(16, 1, 16),
 					["groups"] = {
-						un(REMOVED_FROM_GAME, i(30504)),	-- Leafblade-dagger
-						un(REMOVED_FROM_GAME, i(30505)),	-- Ghostclaw Tunic
+						objective(1, {	-- 0/1 Archeologist's Shrunken Head
+							["description"] = "Use your lockpicking skill to open the Primitive Chests.",
+							["timeline"] = { "removed 4.0.3.10000" },
+							["coord"] = { 75.6, 43.7, GHOSTLANDS },
+						}),
+						i(30504, {	-- Leafblade-dagger
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
+						i(30505, {	-- Ghostclaw Tunic
+							["timeline"] = { "removed 4.0.3.10000" },
+						}),
 					},
 				}),
 				q(9151, {	-- The Sanctum of the Sun [TODO: Check this is actually a breadcrumb or not and if it has a source quest.]

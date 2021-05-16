@@ -599,6 +599,15 @@ addObject = function(o, t)
 	table.insert(t, o);
 	return t;
 end
+appendGroups = function(common, groups)
+	if not groups then groups = {}; end
+	if common then
+		for i,o in ipairs(common) do
+			table.insert(groups, o);
+		end
+	end
+	return groups;
+end
 bubbleDown = function(data, t)
 	if t then
 		if t.g or t.groups then

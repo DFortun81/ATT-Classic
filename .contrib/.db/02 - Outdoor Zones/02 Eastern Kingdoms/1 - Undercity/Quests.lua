@@ -111,6 +111,9 @@ _.Zones =
 					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
 					["coord"] = { 57.8, 90.6, UNDERCITY },
 					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3.10000" },
+					["cost"] = {
+						{ "i", 22629, 1 },	-- Sealed Sin'dorei Orders
+					},
 					["races"] = { BLOODELF },
 					["lvl"] = lvlsquish(15, 1, 15),
 				}),
