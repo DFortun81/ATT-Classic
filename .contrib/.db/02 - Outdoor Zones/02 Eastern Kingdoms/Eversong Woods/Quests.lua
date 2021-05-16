@@ -213,7 +213,6 @@ _.Zones =
 					["qg"] = 16280,	-- Perascamin <Riding Trainer>
 					["coord"] = { 61.2, 54, EVERSONG_WOODS },
 					["description"] = "This quest is automatically offered to Blood Elves upon reaching the specified level.",
-					["classes"] = exclude({ PALADIN, WARLOCK }, ALL_CLASSES),
 					["timeline"] = { "created 5.2.0.10000", "added 5.2.0.10000" },
 					["races"] = { BLOODELF },
 					["DisablePartySync"] = true,
@@ -684,7 +683,7 @@ _.Zones =
 					["sourceQuest"] = 8474,	-- Old Whitebark's Pendant
 					["coord"] = { 34.0, 80.0, EVERSONG_WOODS },
 					["cost"] = {
-						{ "i", 23228, 1 },	-- Old Whitebark's Pendant
+						{ "i", 28209, 1 },	-- Old Whitebark's Pendant
 					},
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(7, 1, 7),

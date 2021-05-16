@@ -106,6 +106,14 @@ _.Zones =
 						},
 					},
 				}),
+				q(9189, {	-- Delivery to the Sepulcher
+					["qg"] = 16287,	-- Ambassador Sunsorrow
+					["sourceQuest"] = 9180,	-- Journey to Undercity [Blood Elf Only]
+					["coord"] = { 57.8, 90.6, UNDERCITY },
+					["timeline"] = { "added 3.3.0.10772", "removed 4.0.3.10000" },
+					["races"] = { BLOODELF },
+					["lvl"] = lvlsquish(15, 1, 15),
+				}),
 				q(1472, {	-- Devourer of Souls
 					["qg"] = 5675,	-- Carendin Halgar
 					["coord"] = { 85, 25.6, UNDERCITY },
