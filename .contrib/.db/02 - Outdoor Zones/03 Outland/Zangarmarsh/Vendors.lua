@@ -63,7 +63,7 @@ _.Zones =
 						i(35374),	-- Wyrmhide Spaulders
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

@@ -134,9 +134,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick)
 		f:SetPoint("CENTER")
 		f:SetSize(600, 500)
 		f:SetBackdrop({
-			bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-			edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-			tile = true, tileSize = 16, edgeSize = 16, 
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			tile = true, tileSize = 16, edgeSize = 16,
 			insets = { left = 4, right = 4, top = 4, bottom = 4 }
 		})
 		f:SetBackdropColor(0, 0, 0, 1);

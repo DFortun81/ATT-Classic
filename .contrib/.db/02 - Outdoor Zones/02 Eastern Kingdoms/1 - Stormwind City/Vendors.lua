@@ -24,7 +24,7 @@ _.Zones =
 					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6330),	-- Recipe: Bristle Whisker Catfish
-						i(6368),	-- Recipe: Rainbow Fin Albacore						
+						i(6368),	-- Recipe: Rainbow Fin Albacore
 					},
 				}),
 				n(1307, {	-- Charys Yserian <Arcane Trinkets Vendor>
@@ -172,7 +172,7 @@ _.Zones =
 						},
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

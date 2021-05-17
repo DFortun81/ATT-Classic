@@ -179,7 +179,7 @@ _.Zones =
 					["sourceQuest"] = 1640,	-- Beat Bartleby
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 6781, 1 },	-- Bartleby's Mug
 					},
 					["lvl"] = 10,
@@ -217,7 +217,7 @@ _.Zones =
 					["maps"] = { DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 6844, 20 },	-- Burning Blood
 						{ "i", 6845, 1 },	-- Burning Rock
 					},
@@ -815,7 +815,7 @@ _.Zones =
 							["itemID"] = 3684,	-- Perenolde Tiara
 							["questID"] = 543,	-- The Perenolde Tiara
 							["cr"] = 2417,	-- Grel'borg the Miser
-							["coord"] = { 39.6, 52.8, ALTERAC_MOUNTAINS },	
+							["coord"] = { 39.6, 52.8, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),

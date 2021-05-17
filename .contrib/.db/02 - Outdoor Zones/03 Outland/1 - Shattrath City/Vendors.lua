@@ -7,7 +7,7 @@ _.Zones =
 		m(SHATTRATH_CITY, {
 			n(VENDORS, {
 			
-			}),	
+			}),
 		}),
 	}),
 };

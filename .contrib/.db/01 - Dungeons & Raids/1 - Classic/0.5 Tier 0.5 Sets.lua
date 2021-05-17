@@ -162,7 +162,7 @@ _.Instances = { tier(1, applylegacyclassicphase(PHASE_FIVE, {	-- Classic
 					["lvl"] = 58,
 					["groups"] = {
 						i(22011),	-- Beastmaster's Bindings
-					},					
+					},
 				}),
 				q(8914, {	-- An Earnest Proposition [HORDE]
 					["qg"] = 16012,	-- Mokvar

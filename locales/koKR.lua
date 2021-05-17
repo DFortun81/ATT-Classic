@@ -137,7 +137,7 @@ for key,value in pairs({
 	[27] = "손목",	-- Bracers
 	[28] = "허리",	-- Belts
 	[29] = "다리",	-- Legs
-	[30] = "발",	-- Boots	
+	[30] = "발",	-- Boots
 	[33] = "해골 열쇠",	-- Skeleton Keys
 
 	-- Enchanting

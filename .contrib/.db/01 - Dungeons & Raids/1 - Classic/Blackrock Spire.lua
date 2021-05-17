@@ -84,7 +84,7 @@ _.Instances = { tier(1, {	-- Classic
 					["lvl"] = 55,
 					["groups"] = {
 						{
-							["itemID"] = 16309,	-- Drakefire Amulet 
+							["itemID"] = 16309,	-- Drakefire Amulet
 							["allianceQuestID"] = 6502,	-- Drakefire Amulet
 							["hordeQuestID"] = 6602,	-- Blood of the Black Dragon Champion
 						},

@@ -2013,7 +2013,7 @@ _.Instances = { tier(1, bubbleDown({ ["u"] = PHASE_SIX }, {	-- Classic
 							i(23050),	-- Cloak of the Necropolis
 							i(23045),	-- Shroud of Dominion
 							{
-								-- NOTE: It was believed these no longer drop as of 1.11. However, it appears they have been added in 2.03 as a drop from Sapphiron. 
+								-- NOTE: It was believed these no longer drop as of 1.11. However, it appears they have been added in 2.03 as a drop from Sapphiron.
 								["itemID"] = 23072,	-- Fists of the Unrelenting
 								["description"] = "These were originally not implemented until patch 2.03. Please let the ATT Discord know if you happen to get them to drop or see someone with this item.",
 								["u"] = NEVER_IMPLEMENTED,

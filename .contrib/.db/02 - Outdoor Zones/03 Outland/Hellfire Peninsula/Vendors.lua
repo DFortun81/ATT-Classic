@@ -249,7 +249,7 @@ _.Zones =
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = 
+					["groups"] =
 						-- #if BEFORE WRATH
 						JEWELCRAFTING_PATTERNS,
 						-- #else

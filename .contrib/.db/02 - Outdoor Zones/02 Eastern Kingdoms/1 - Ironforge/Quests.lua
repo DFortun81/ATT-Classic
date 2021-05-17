@@ -11,7 +11,7 @@ _.Zones =
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
-						{ "i", 4338, 60 },	-- Mageweave Cloth 
+						{ "i", 4338, 60 },	-- Mageweave Cloth
 					},
 					["lvl"] = 40,
 				}),
@@ -73,7 +73,7 @@ _.Zones =
 					["qg"] = 14724,	-- Bubulo Acerbus
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 2592, 60 },	-- Wool Cloth
 					},
 					["lvl"] = 12,
@@ -201,7 +201,7 @@ _.Zones =
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 14047, 20 }, 	-- Runecloth
 					},
 					["lvl"] = 50,
@@ -213,7 +213,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["cost"] = {
-						{ "i", 14047, 20 },	-- Runecloth 
+						{ "i", 14047, 20 },	-- Runecloth
 					},
 					["lvl"] = 50,
 				}),
@@ -288,7 +288,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						3763, -- Assisting Arch Druid Staghelm (Darnassus)
-						3789, -- Assisting Arch Druid Staghelm (Stormwind) 
+						3789, -- Assisting Arch Druid Staghelm (Stormwind)
 					},
 					["lvl"] = 47,
 				}),
