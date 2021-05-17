@@ -17,7 +17,7 @@ profession(ENGINEERING, {
 					{
 						["name"] = "Gnomish Battle Chicken",
 						["recipeID"] = 12906
-					},	
+					},
 					{
 						["name"] = "Gnomish Death Ray",
 						["recipeID"] = 12759

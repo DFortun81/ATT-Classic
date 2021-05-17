@@ -146,7 +146,7 @@ _.Instances = { tier(1, {	-- Classic
 					["qg"] = 1855,	-- Tirion Fordring
 					["sourceQuests"] = {
 						5543,	-- Blood Tinged Skies
-						5544,	-- Carrion Grubbage						
+						5544,	-- Carrion Grubbage
 						5542,	-- Demon Dogs
 					},
 					["coord"] = { 7.4, 43.6, EASTERN_PLAGUELANDS },

@@ -50,7 +50,7 @@ _.Zones =
 					["isBreadcrumb"] = true,
 					["altQuests"] = {
 						3790, -- Assisting Arch Druid Staghelm (Ironforge)
-						3789, -- Assisting Arch Druid Staghelm (Stormwind)		
+						3789, -- Assisting Arch Druid Staghelm (Stormwind)
 					},
 					["lvl"] = 47,
 				}),
@@ -166,7 +166,7 @@ _.Zones =
 					["qg"] = 4088,	-- Elanaria
 					["classes"] = { WARRIOR },
 					["sourceQuest"] = 1686,	-- The Shade of Elura
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 6812, 1 },	-- Case of Elunite
 					},
 				}),
@@ -234,7 +234,7 @@ _.Zones =
 					["maps"] = { DARKSHORE },
 					["races"] = ALLIANCE_ONLY,
 					["classes"] = { WARRIOR },
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 6808, 8 },	-- Elunite Ore
 						{ "i", 6809, 1 },	-- Elura's Medallion
 					},

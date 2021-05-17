@@ -754,7 +754,7 @@ profession(261, {	-- Beast Training
 			["crs"] = {
 				11357,	-- Son of Hakkar (Wind Serpent, 60, Zul'Gurub)
 			},
-		}),	
+		}),
 
 		{
 			["recipeID"] = 24545,	-- Natural Armor [Rank 1]

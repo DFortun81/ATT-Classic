@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL }, 
+_.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 {
 	n(-53, {	-- Midsummer Fire Festival
 		n(QUESTS, {
@@ -361,7 +361,7 @@ _.Holidays = bubbleDown({ ["u"] = MIDSUMMER_FIRE_FESTIVAL },
 				["qg"] = 16788,	-- Festival Flamekeeper
 				["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
 				["coords"] = {
-					{ 38.5, 61.1, STORMWIND_CITY}, 
+					{ 38.5, 61.1, STORMWIND_CITY},
 					{ 63.6, 24.7, IRONFORGE },
 					{ 56.5, 92.0, TELDRASSIL },
 					{ 21.6, 26.2, THUNDER_BLUFF },

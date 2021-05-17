@@ -105,7 +105,7 @@ _.Zones =
 					["cr"] = 1197,  -- Stonesplinter Shaman
 				}),
 				i(5109),	-- Stonesplinter Rags
-			}),	
+			}),
 		}),
 	}),
 };

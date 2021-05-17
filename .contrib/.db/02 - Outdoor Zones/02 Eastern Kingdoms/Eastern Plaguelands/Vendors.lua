@@ -76,8 +76,8 @@ _.Zones =
 						i(19205), 	-- Plans: Gloves of the Dawn
 						i(13482),	-- Recipe: Transmute Air to Fire
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };

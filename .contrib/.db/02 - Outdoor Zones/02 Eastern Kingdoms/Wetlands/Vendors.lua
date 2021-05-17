@@ -42,10 +42,10 @@ _.Zones =
 					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt
-						i(4829),	-- Dreamer's Belt			
+						i(4829),	-- Dreamer's Belt
 						i(4790),	-- Inferno Cloak
 						i(4792),	-- Spirit Cloak
-						i(4793),	-- Sylvan Cloak						
+						i(4793),	-- Sylvan Cloak
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6275),	-- Pattern: Greater Adept's Robe
 					},

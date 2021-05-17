@@ -9,7 +9,7 @@ _.Zones =
 				n(2393, {	-- Christoph Jeffcoat <Tradesman>
 					["coord"] = { 62.2, 19.0, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(20971, {	-- Design: Heavy Iron Knuckles
 							["u"] = TBC_PHASE_ONE,
 						}),
@@ -20,7 +20,7 @@ _.Zones =
 				n(2397, {	-- Derak Nightfall <Cook>
 					["coord"] = { 63.0, 19.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(21099),	-- Recipe: Smoked Sagefish
 						i(21219),	-- Recipe: Sagefish Delight
@@ -29,15 +29,15 @@ _.Zones =
 				n(2698, {	-- George Candarte <Leatherworking Supplies>
 					["coord"] = { 92.0, 38.6, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(7613),	-- Pattern: Green Leather Armor
 					},
 				}),
 				n(3536, {	-- Kris Legace <Freewheeling Tradeswoman>
 					["coord"] = { 80.0, 39.0, HILLSBRAD_FOOTHILLS },
-					["groups"] = {	
+					["groups"] = {
 						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers						
+						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
 						i(4830),	-- Saber Leggings
 						i(4831),	-- Stalking Pants
@@ -50,7 +50,7 @@ _.Zones =
 					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout						
+						i(17062),	-- Recipe: Mithril Head Trout
 					},
 				}),
 				n(2394, {	-- Mallen Swain <Tailoring Supplies>
@@ -58,7 +58,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(6274),	-- Pattern: Blue Overalls
-						i(6401),	-- Pattern: Dark Silk Shirt						
+						i(6401),	-- Pattern: Dark Silk Shirt
 					},
 				}),
 				n(2357, {	-- Merideth Carlson <Horse Breeder>
@@ -129,20 +129,20 @@ _.Zones =
 						{ 55.6, 34.6, HILLSBRAD_FOOTHILLS },
 						{ 50.4, 50.8, HILLSBRAD_FOOTHILLS },
 					},
-					["groups"] = {						
+					["groups"] = {
 						i(4827),	-- Wizard's Belt
 						i(4828),	-- Nightwind Belt
-						i(4829),	-- Dreamer's Belt						
+						i(4829),	-- Dreamer's Belt
 						i(4836),	-- Fireproof Orb
-						i(4837),	-- Strength of Will						
-						i(4838),	-- Orb of Power						
+						i(4837),	-- Strength of Will
+						i(4838),	-- Orb of Power
 						i(5772),	-- Pattern: Red Woolen Bag
 						i(6377),	-- Formula: Enchant Boots - Minor Agility
 						i(7362),	-- Pattern: Earthen Leather Shoulders
 						i(7561),	-- Schematic: Goblin Jumper Cables
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

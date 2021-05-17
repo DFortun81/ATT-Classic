@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL }, 
+_.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 {
 	n(-61, {	-- Feast of Winter Veil
 		n(COMMON_BOSS_DROPS, {
@@ -110,7 +110,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				["lvl"] = 30,
 				["g"] = {
 					i(17726, {	-- Smokywood Pastures Special Gift
-						i(17725),	-- Formula: Enchant Weapon - Winter's Might							
+						i(17725),	-- Formula: Enchant Weapon - Winter's Might
 						i(17722),	-- Pattern: Gloves of the Greatfather
 						i(17706),	-- Plans: Edge of Winter
 						i(17709),	-- Recipe: Elixir of Frost Power
@@ -122,27 +122,27 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
-				["altQuests"] = { 
-					7021,  -- Greatfather Winter is Here! 
-					7124,  -- Greatfather Winter is Here! 
+				["altQuests"] = {
+					7021,  -- Greatfather Winter is Here!
+					7124,  -- Greatfather Winter is Here!
 				},
 			}),
 			q(7021, {	-- Greatfather Winter is Here!
 				["qg"] = 13431,	-- Whulwert Copperpinch <Smokywood Pastures>
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
-				["altQuests"] = { 
-					6961,  -- Greatfather Winter is Here! 
-					7124,  -- Greatfather Winter is Here! 
+				["altQuests"] = {
+					6961,  -- Greatfather Winter is Here!
+					7124,  -- Greatfather Winter is Here!
 				},
 			}),
 			q(7024, {	-- Greatfather Winter is Here!
 				["qg"] = 13418,	-- Kaymard Copperpinch <Smokywood Pastures>
 				["races"] = HORDE_ONLY,
 				["lvl"] = 10,
-				["altQuests"] = { 
-					6961,  -- Greatfather Winter is Here! 
-					7021,  -- Greatfather Winter is Here! 
+				["altQuests"] = {
+					6961,  -- Greatfather Winter is Here!
+					7021,  -- Greatfather Winter is Here!
 				},
 			}),
 			q(7022, {	-- Greatfather Winter is Here!
@@ -246,7 +246,7 @@ _.Holidays = bubbleDown({ ["u"] = FEAST_OF_WINTER_VEIL },
 				["lvl"] = 10,
 				["g"] = {
 					i(17727, {	-- Smokywood Pastures Special Gift
-						i(17725),	-- Formula: Enchant Weapon - Winter's Might							
+						i(17725),	-- Formula: Enchant Weapon - Winter's Might
 						i(17722),	-- Pattern: Gloves of the Greatfather
 						i(17706),	-- Plans: Edge of Winter
 						i(17709),	-- Recipe: Elixir of Frost Power

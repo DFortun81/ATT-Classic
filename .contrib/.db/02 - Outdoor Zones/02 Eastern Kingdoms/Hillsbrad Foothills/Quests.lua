@@ -276,7 +276,7 @@ _.Zones =
 					["qg"] = 2429,	-- Novice Thaivand
 					["coord"] = { 63.87, 19.66, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 3708, 1 },	-- Helcular's Rod
 					},
 					["lvl"] = 29,
@@ -333,7 +333,7 @@ _.Zones =
 							["itemID"] = 4482,	-- Sealed Folder
 							["questID"] = 658,	-- Hints of a New Plague?
 							["cr"] = 2714,	-- Forsaken Courier
-							["coord"] = { 52.6, 61.6, ARATHI_HIGHLANDS },	
+							["coord"] = { 52.6, 61.6, ARATHI_HIGHLANDS },
 						},
 					},
 				}),
@@ -355,7 +355,7 @@ _.Zones =
 					["sourceQuest"] = 498,	-- The Rescue,
 					["coord"] = { 63.24, 20.68, HILLSBRAD_FOOTHILLS },
 					["races"] = HORDE_ONLY,
-					["lvl"] = 29, 
+					["lvl"] = 29,
 				}),
 				q(507, {	-- Lord Aliden Perenolde
 					["qg"] = 2229,	-- Krusk
@@ -405,7 +405,7 @@ _.Zones =
 							["itemID"] = 3688,	-- Bloodstone Oval
 							["questID"] = 544,	-- Prison Break In
 							["cr"] = 2414,	-- Kegan Darkmar
-							["coord"] = { 18.0, 83.6, ALTERAC_MOUNTAINS },	
+							["coord"] = { 18.0, 83.6, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),
@@ -504,19 +504,19 @@ _.Zones =
 							["itemID"] = 3552,	-- Glommus's Head
 							["questID"] = 519,	-- The Crown of Will
 							["cr"] = 2422,	-- Glommus
-							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },	
+							["coord"] = { 39.4, 41.8, ALTERAC_MOUNTAINS },
 						},
 						{
 							["itemID"] = 3551,	-- Muckrake's Head
 							["questID"] = 519,	-- The Crown of Will
 							["cr"] = 2421,	-- Muckrake
-							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },	
+							["coord"] = { 38.8, 47.2, ALTERAC_MOUNTAINS },
 						},
 						{
 							["itemID"] = 3550,	-- Targ's Head
 							["questID"] = 519,	-- The Crown of Will
 							["cr"] = 2420,	-- Targ
-							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },	
+							["coord"] = { 39.6, 53.0, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),
@@ -535,7 +535,7 @@ _.Zones =
 							["itemID"] = 3553,	-- Mug'thol's Head
 							["questID"] = 520,	-- The Crown of Will
 							["cr"] = 2257,	-- Mug'thol
-							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },	
+							["coord"] = { 35.8, 54.0, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),
@@ -633,7 +633,7 @@ _.Zones =
 							["itemID"] = 3626,	-- Head of Baron Vardus
 							["questID"] = 566,	-- WANTED: Baron Vardus
 							["cr"] = 2306,	-- Baron Vardus
-							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },	
+							["coord"] = { 56.0, 26.2, ALTERAC_MOUNTAINS },
 						},
 						i(2231),	-- Inferno Robe
 					},

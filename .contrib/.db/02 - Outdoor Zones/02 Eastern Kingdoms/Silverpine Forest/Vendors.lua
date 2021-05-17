@@ -45,23 +45,23 @@ _.Zones =
 				n(5758, {	-- Leo Sarn <Enchanting Supplies>
 					["coord"] = { 54.0, 82.2, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						-- #endif
 						i(6349),	-- Formula: Enchant 2H Weapon - Lesser Intellect
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(5757, {	-- Lilly <Enchanting Supplies>
 					["coord"] = { 43.0, 50.8, SILVERPINE_FOREST },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						-- #endif
 						i(6346),	-- Formula: Enchant Chest - Lesser Mana
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
 				n(9553, {	-- Nadia Vernon <Bowyer>
@@ -82,7 +82,7 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

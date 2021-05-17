@@ -318,29 +318,29 @@ _.Skills =
 		["g"] = {
 			{
 				["recipeID"] = 264,	-- Bows
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					ROGUE,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
 				},
 			},
 			{
 				["recipeID"] = 5011,	-- Crossbows
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					ROGUE,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
 				},
 			},
 			{
 				["recipeID"] = 1180,	-- Daggers
-				["classes"] = { 
+				["classes"] = {
 					DRUID,
 					HUNTER,
 					MAGE,
@@ -350,7 +350,7 @@ _.Skills =
 					WARLOCK,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
 					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
 					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
@@ -358,44 +358,44 @@ _.Skills =
 			},
 			{
 				["recipeID"] = 15590,	-- Fist Weapons
-				["classes"] = { 
+				["classes"] = {
 					DRUID,
 					HUNTER,
 					ROGUE,
 					SHAMAN,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
 				["recipeID"] = 266,	-- Guns
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					ROGUE,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
 				["recipeID"] = 196,	-- One-Handed Axes
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					PALADIN,
 					SHAMAN,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
 				["recipeID"] = 198,	-- One-Handed Maces
-				["classes"] = { 
+				["classes"] = {
 					DRUID,
 					PALADIN,
 					PRIEST,
@@ -403,13 +403,13 @@ _.Skills =
 					SHAMAN,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 			},
 			{
 				["recipeID"] = 201,	-- One-Handed Swords
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					MAGE,
 					PALADIN,
@@ -417,13 +417,13 @@ _.Skills =
 					WARLOCK,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
 				},
 			},
 			{
 				["recipeID"] = 200,	-- Polearms
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					PALADIN,
 					WARRIOR,
@@ -431,7 +431,7 @@ _.Skills =
 			},
 			{
 				["recipeID"] = 227,	-- Staves
-				["classes"] = { 
+				["classes"] = {
 					DRUID,
 					HUNTER,
 					MAGE,
@@ -440,31 +440,31 @@ _.Skills =
 					WARLOCK,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.1, 57.7, STORMWIND_CITY },	-- Woo Ping
 				},
 			},
 			{
 				["recipeID"] = 2567,	-- Thrown
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					ROGUE,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 57.5, 46.8, DARNASSUS },	-- Ilyenia Moonfire
 					{ 62.2, 89.6, IRONFORGE },	-- Bixi Wobblebonk
 				},
 			},
 			{
 				["recipeID"] = 197,	-- Two-Handed Axes
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					PALADIN,
 					SHAMAN,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 				["OnUpdate"] = [[function(t)
@@ -478,13 +478,13 @@ _.Skills =
 			},
 			{
 				["recipeID"] = 199,	-- Two-Handed Maces
-				["classes"] = { 
+				["classes"] = {
 					DRUID,
 					PALADIN,
 					SHAMAN,
 					WARRIOR,
 				},
-				["coords"] = { 
+				["coords"] = {
 					{ 61.2, 89.5, IRONFORGE },	-- Buliwyf Stonehand
 				},
 				["OnUpdate"] = [[function(t)
@@ -498,7 +498,7 @@ _.Skills =
 			},
 			{
 				["recipeID"] = 202,	-- Two-Handed Swords
-				["classes"] = { 
+				["classes"] = {
 					HUNTER,
 					PALADIN,
 					WARRIOR,
@@ -506,7 +506,7 @@ _.Skills =
 			},
 			{
 				["recipeID"] = 5009,	-- Wands
-				["classes"] = { 
+				["classes"] = {
 					MAGE,
 					PRIEST,
 					WARLOCK,

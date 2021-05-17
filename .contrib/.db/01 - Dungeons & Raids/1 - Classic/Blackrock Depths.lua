@@ -1,7 +1,6 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-
 _.Instances = { tier(1, {	-- Classic
 	map(BLACKROCK_DEPTHS, {
 		["description"] = "Once the capital city of the Dark Iron dwarves, this volcanic labyrinth now serves as the seat of power for Ragnaros the Firelord. Ragnaros has uncovered the secret to creating life from stone and plans to build an army of unstoppable golems to aid him in conquering the whole of Blackrock Mountain. Obsessed with defeating Nefarian and his draconic minions, Ragnaros will go to any extreme to achieve final victory.",
@@ -183,7 +182,7 @@ _.Instances = { tier(1, {	-- Classic
 					["lvl"] = 50,
 					["groups"] = {
 						{
-							["itemID"] = 16309,	-- Drakefire Amulet 
+							["itemID"] = 16309,	-- Drakefire Amulet
 							["allianceQuestID"] = 6502,	-- Drakefire Amulet
 							["hordeQuestID"] = 6602,	-- Blood of the Black Dragon Champion
 						},
@@ -990,7 +989,7 @@ _.Instances = { tier(1, {	-- Classic
 			}),
 			n(9476, {	-- Watchman Doomgrip
 				["description"] = "Watchman Doomgrip spawns once all twelve Relic Coffers have been opened using Relic Coffer Keys that can drop from any Dark Iron mob in the instance. Upon defeating all enemies, a hidden door beneath the Dark Coffer will open allowing access to the Secret Safe as well as the Heart of the Mountain.",
-				["cost"] = { 
+				["cost"] = {
 					{ "i", 11078, 12 },	-- Relic Coffer Key
 				},
 				["groups"] = {

@@ -33,7 +33,7 @@ _.Zones =
 						i(18773),	-- Swift White Mechanostrider
 						i(18774),	-- Swift Yellow Mechanostrider
 					},
-				}),	
+				}),
 				n(1261, {	-- Veron Amberstill <Ram Breeder>
 					["coord"] = { 63.4, 50.6, DUN_MOROGH },
 					["races"] = ALLIANCE_ONLY,
@@ -45,8 +45,8 @@ _.Zones =
 						i(18786),	-- Swift Brown Ram
 						i(18787),	-- Swift Gray Ram
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };

@@ -29,7 +29,7 @@ _.Zones =
 				}),
 				un(NEVER_IMPLEMENTED, q(785, {	-- A Strategic Alliance
 					-- low enough questID for classic, but unable to verify if it actually was in vanilla
-					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely. 
+					-- since Neeru Fireblade was moved to Orgrimmar for launch, it seems unlikely.
 					["qg"] = 3216,	-- Neeru Fireblade
 					["coord"] = { 49.64, 50.31, ORGRIMMAR },
 					["races"] = HORDE_ONLY,

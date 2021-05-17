@@ -379,7 +379,7 @@ _.Zones =
 							["cr"] = 2757,	-- Blacklash
 							["coord"] = { 82.6, 48.8, BADLANDS },
 						},
-						{	-- 
+						{	--
 							["itemID"] = 4645,	-- Chains of Hematus
 							["allianceQuestID"] = 717,	-- Tremors of the Earth
 							["hordeQuestID"] = 793,	-- Broken Alliances

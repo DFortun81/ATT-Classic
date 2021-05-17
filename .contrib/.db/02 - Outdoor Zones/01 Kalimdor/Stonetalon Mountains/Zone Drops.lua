@@ -71,7 +71,7 @@ _.Zones =
 						4038,	-- Burning Destroyer
 						4037,	-- Burning Ravager
 						4036,	-- Rogue Flame Spirit
-					},						
+					},
 				}),
 				i(5808, {	-- Pridewing Venom Sac
 					["questID"] = 1134,	-- Pridewings of Stonetalon
@@ -101,7 +101,7 @@ _.Zones =
 						4002,	-- Windshear Stonecutter
 						4001,	-- Windshear Tunnel Rat
 						3998,	-- Windshear Vermin
-					},						
+					},
 				}),
 				i(5659, {	-- Smoldering Embers
 					["questID"] = 1083,	-- Enraged Spirits
@@ -110,7 +110,7 @@ _.Zones =
 						4038,	-- Burning Destroyer
 						4037,	-- Burning Ravager
 						4036,	-- Rogue Flame Spirit
-					},						
+					},
 				}),
 				i(5582, {	-- Stonetalon Sap
 					["questID"] = 1058,	-- Jin'Zil's Forest Magic

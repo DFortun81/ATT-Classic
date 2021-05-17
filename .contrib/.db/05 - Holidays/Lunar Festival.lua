@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL }, 
+_.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 {
 	n(-47, {	-- Lunar Festival
 		n(-297, {	-- Mailbox
@@ -136,7 +136,7 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				},
 			}),
 			q(8684, {	-- Dreamseer the Elder
-				["isYearly"] = true, 
+				["isYearly"] = true,
 				["qg"] = 15586,	-- Elder Dreamseer
 				["maps"] = { TANARIS },
 				["coord"] = { 51.5, 27.8, TANARIS },
@@ -618,9 +618,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["coord"] = { 30.9, 61.6, IRONFORGE },
 				["maps"] = { IRONFORGE },
-				["altQuests"] = { 
-					8871,  -- The Lunar Festival 
-					8872,  -- The Lunar Festival 
+				["altQuests"] = {
+					8871,  -- The Lunar Festival
+					8872,  -- The Lunar Festival
 				},
 			}),
 			q(8871, {	-- The Lunar Festival
@@ -629,9 +629,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["coord"] = { 54.3, 66.3, STORMWIND_CITY },
 				["maps"] = { STORMWIND_CITY },
-				["altQuests"] = { 
-					8870,  -- The Lunar Festival 
-					8872,  -- The Lunar Festival 
+				["altQuests"] = {
+					8870,  -- The Lunar Festival
+					8872,  -- The Lunar Festival
 				},
 			}),
 			q(8872, {	-- The Lunar Festival
@@ -640,9 +640,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["coord"] = { 42.2, 44.0, DARNASSUS },
 				["maps"] = { DARNASSUS },
-				["altQuests"] = { 
-					8870,  -- The Lunar Festival 
-					8871,  -- The Lunar Festival 
+				["altQuests"] = {
+					8870,  -- The Lunar Festival
+					8871,  -- The Lunar Festival
 				},
 			}),
 			q(8873, {	-- The Lunar Festival
@@ -650,9 +650,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["races"] = HORDE_ONLY,
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["maps"] = { ORGRIMMAR },
-				["altQuests"] = { 
-					8874,  -- The Lunar Festival 
-					8875,  -- The Lunar Festival 
+				["altQuests"] = {
+					8874,  -- The Lunar Festival
+					8875,  -- The Lunar Festival
 				},
 			}),
 			q(8874, {	-- The Lunar Festival
@@ -660,9 +660,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["races"] = HORDE_ONLY,
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["maps"] = { UNDERCITY },
-				["altQuests"] = { 
-					8873,  -- The Lunar Festival 
-					8875,  -- The Lunar Festival 
+				["altQuests"] = {
+					8873,  -- The Lunar Festival
+					8875,  -- The Lunar Festival
 				},
 			}),
 			q(8875, {	-- The Lunar Festival
@@ -670,9 +670,9 @@ _.Holidays = bubbleDown({ ["u"] = LUNAR_FESTIVAL },
 				["races"] = HORDE_ONLY,
 				["qg"] = 15892,  -- Lunar Festival Emissary
 				["maps"] = { THUNDER_BLUFF },
-				["altQuests"] = { 
-					8873,  -- The Lunar Festival 
-					8874,  -- The Lunar Festival 
+				["altQuests"] = {
+					8873,  -- The Lunar Festival
+					8874,  -- The Lunar Festival
 				},
 			}),
 			q(8681, {	-- Thunderhorn the Elder

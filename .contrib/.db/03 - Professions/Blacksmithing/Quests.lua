@@ -22,7 +22,7 @@ profession(BLACKSMITHING, {
 			["maps"] = { TANARIS },
 			["cost"] = {
 				{ "i", 7931, 2 },	-- Mithril Coif
-				{ "i", 7928, 1 },	-- Ornate Mithril Shoulder 
+				{ "i", 7928, 1 },	-- Ornate Mithril Shoulder
 			},
 			["lvl"] = 40,
 			["g"] = {

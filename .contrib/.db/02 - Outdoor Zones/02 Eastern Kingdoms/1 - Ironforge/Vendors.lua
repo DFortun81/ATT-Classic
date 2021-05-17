@@ -41,9 +41,9 @@ _.Zones =
 					["coord"] = { 67.9, 42.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(18649, {	-- Schematic: Blue Firework	
+						i(18649, {	-- Schematic: Blue Firework
 							["isLimited"] = true,
-						}),		
+						}),
 						i(7560, {	-- Schematic: Gnomish Universal Remote
 							["isLimited"] = true,
 						}),
@@ -110,11 +110,11 @@ _.Zones =
 				n(5162, {	-- Tansy Puddlefizz <Fishing Supplier>
 					["coord"] = { 47.8, 6.6, IRONFORGE },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(6326),	-- Recipe: Slitherskin Mackerel
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout						
+						i(17062),	-- Recipe: Mithril Head Trout
 					},
 				}),
 				n(5158, {	-- Tilli Thistlefuzz <Enchanting Supplies>
@@ -135,7 +135,7 @@ _.Zones =
 						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

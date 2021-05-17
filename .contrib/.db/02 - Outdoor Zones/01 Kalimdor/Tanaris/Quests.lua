@@ -248,7 +248,7 @@ _.Zones =
 					["coord"] = { 52.4, 28.4, TANARIS },
 					["maps"] = { UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 8527, 1 },	-- Sealed Field Testing Kit
 					},
 					["lvl"] = 38,

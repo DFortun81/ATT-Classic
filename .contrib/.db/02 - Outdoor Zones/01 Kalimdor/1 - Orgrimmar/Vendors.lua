@@ -122,7 +122,7 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

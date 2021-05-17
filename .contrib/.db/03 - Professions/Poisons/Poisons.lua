@@ -1,5 +1,5 @@
 profession(40, {	-- Poisons
-	{	
+	{
 		["classes"] = { ROGUE },
 		["name"] = "Consumable",
 		["categoryID"] = 70,

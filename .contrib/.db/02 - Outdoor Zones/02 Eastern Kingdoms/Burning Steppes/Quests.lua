@@ -175,7 +175,7 @@ _.Zones =
 					["cost"] = {
 						{ "i", 11754, 1 },	-- Black Diamond
 						{ "i", 11734, 1 },	-- Libram of Tenacity
-						{ "i", 11564, 4 },	-- Crystal Ward 
+						{ "i", 11564, 4 },	-- Crystal Ward
 						{ "i", 11753, 1 },	-- Eye of Kajal
 						{ "g", 300000 },   -- 30g
 					},

@@ -62,7 +62,7 @@ _.Zones =
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

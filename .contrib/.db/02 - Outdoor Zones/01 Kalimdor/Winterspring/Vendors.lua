@@ -9,13 +9,13 @@ _.Zones =
 				n(11188, {	-- Evie Whirlbrew <Alchemy Supplies>
 					["coord"] = { 60.8, 37.8, WINTERSPRING },
 					["groups"] = {
-						i(13480),	-- Recipe: Major Healing Potion		
+						i(13480),	-- Recipe: Major Healing Potion
 					},
 				}),
 				n(11187, {	-- Himmik <Food & Drink>
 					["coord"] = { 61.2, 39.0, WINTERSPRING },
 					["groups"] = {
-						i(16110),	-- Recipe: Monster Omelet	
+						i(16110),	-- Recipe: Monster Omelet
 					},
 				}),
 				n(10618, {	-- Rivern Frostwind <Wintersaber Trainer>
@@ -30,10 +30,10 @@ _.Zones =
 					["coord"] = { 61.2, 37.2, WINTERSPRING },
 					["groups"] = {
 						i(14468),	-- Pattern: Runecloth Bag
-						i(14481),	-- Pattern: Runecloth Gloves	
+						i(14481),	-- Pattern: Runecloth Gloves
 						i(14526),	-- Pattern: Mooncloth
 						i(15740),	-- Pattern: Frostsaber Boots
-						i(16221),	-- Formula: Enchant Chest - Major Health						
+						i(16221),	-- Formula: Enchant Chest - Major Health
 					},
 				}),
 				n(16015, {	-- Vi'el <Exotic Reagent Merchant>
@@ -61,14 +61,14 @@ _.Zones =
 							["u"] = TBC_PHASE_ONE,
 							-- #endif
 						}),
-						i(16046),	-- Schematic: Masterwork Target Dummy	
+						i(16046),	-- Schematic: Masterwork Target Dummy
 						i(16047),	-- Schematic: Thorium Tube
 						i(16050),	-- Schematic: Delicate Arcanite Converter
 						i(18656),	-- Schematic: Powerful Seaforium Charge
-						i(18652),	-- Schematic: Gyrofreeze Ice Reflector						
+						i(18652),	-- Schematic: Gyrofreeze Ice Reflector
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

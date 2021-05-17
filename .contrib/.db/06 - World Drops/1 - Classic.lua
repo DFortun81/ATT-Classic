@@ -1958,7 +1958,7 @@ _.WorldDrops = { tier(1, {	-- Classic
 		i(14944),	-- Warbringer's Crown
 		i(14942),	-- Warbringer's Gauntlets
 		i(14945),	-- Warbringer's Legguards
-		i(14940),	-- Warbringer's Sabatons 
+		i(14940),	-- Warbringer's Sabatons
 		i(14946),	-- Warbringer's Spaulders
 		i(14864),	-- Warleader's Belt
 		i(14869),	-- Warleader's Bracers

@@ -10,7 +10,7 @@ _.Zones =
 					["coord"] = { 46.0, 51.6, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(5973),	-- Pattern: Barbaric Leggings				
+						i(5973),	-- Pattern: Barbaric Leggings
 					},
 				}),
 				n(4878, {   -- Montarr <Lorekeeper>
@@ -23,7 +23,7 @@ _.Zones =
 					["coord"] = { 77.7, 77.8, THOUSAND_NEEDLES },
 					["groups"] = {
 						i(7560),	-- Schematic: Gnomish Universal Remote
-						i(13309),	-- Schematic: Lovingly Crafted Boomstick					
+						i(13309),	-- Schematic: Lovingly Crafted Boomstick
 					},
 				}),
 				n(6548, {	-- Magus Tirth
@@ -35,12 +35,12 @@ _.Zones =
 				n(9551, {	-- Starn <Gunsmith & Bowyer>
 					["coord"] = { 45.0, 50.6, THOUSAND_NEEDLES },
 					["races"] = HORDE_ONLY,
-					["groups"] = {										
+					["groups"] = {
 						i(11304),	-- Fine Longbow
 						i(11305),	-- Dense Shortbow
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

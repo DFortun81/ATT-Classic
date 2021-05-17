@@ -65,7 +65,7 @@ _.Zones =
 						i(15762),	-- Pattern: Heavy Scorpid Helm
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

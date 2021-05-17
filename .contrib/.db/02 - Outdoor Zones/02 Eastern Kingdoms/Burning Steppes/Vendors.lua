@@ -13,7 +13,7 @@ _.Zones =
 							["isLimited"] = true,
 						}),
 					},
-				}),	
+				}),
 				n(14437, {	-- Gorzeeki Wildeyes
 					["coord"] = { 12.6, 31.6, BURNING_STEPPES },
 					["classes"] = { WARLOCK },
@@ -40,7 +40,7 @@ _.Zones =
 						}),
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

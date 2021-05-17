@@ -30,7 +30,7 @@ local HORDE_BATTLE_FOR_WSG_TIER_2 = {	-- Repeatables
 	8434,	-- Battle of Warsong Gulch
 	8435,	-- Battle of Warsong Gulch
 };
-_.PvP = 
+_.PvP =
 {
 	n(-304, {	-- Battlegrounds
 		m(1460, {	-- Warsong Gulch

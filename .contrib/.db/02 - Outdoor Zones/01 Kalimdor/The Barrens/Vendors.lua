@@ -9,14 +9,14 @@ _.Zones =
 				n(3495, {	-- Gagsprocket <Engineering Goods>
 					["coord"] = { 62.7, 36.3, THE_BARRENS },
 					["groups"] = {
-						i(18648),	-- Schematic: Green Firework				
+						i(18648),	-- Schematic: Green Firework
 					},
 				}),
 				n(3493, {	-- Grazlix <Armorer & Shieldcrafter>
 					["coord"] = { 62.2, 38.4, THE_BARRENS },
 					["groups"] = {
 						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed Cloak					
+						i(4798),	-- Heavy Runed Cloak
 						i(4799),	-- Antiquated Cloak
 						i(4800),	-- Mighty Chain Pants
 						i(4816),	-- Legionnaire's Leggings
@@ -39,20 +39,20 @@ _.Zones =
 				n(3486, {	-- Halija Whitestrider <Clothier>
 					["coord"] = { 52.2, 31.8, THE_BARRENS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {										
+					["groups"] = {
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
 						i(4786),	-- Wise Man's Belt
 						i(4790),	-- Inferno Cloak
 						i(4792),	-- Spirit Cloak
-						i(4793),	-- Sylvan Cloak	
+						i(4793),	-- Sylvan Cloak
 					},
 				}),
 				n(3490, {	-- Hula'mahi <Reagents and Herbs>
 					["coord"] = { 51.4, 30.2, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(6053),	-- Recipe: Holy Protection Potion				
+						i(6053),	-- Recipe: Holy Protection Potion
 					},
 				}),
 				n(3683, {	-- Kiknikle <Stylish Clothier>
@@ -81,7 +81,7 @@ _.Zones =
 						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade
 						i(4777),	-- Ironwood Maul
-						i(4778),	-- Heavy Spiked Mace						
+						i(4778),	-- Heavy Spiked Mace
 					},
 				}),
 				n(3479, {	-- Nargal Deatheye <Weaponsmith>
@@ -89,7 +89,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4765),	-- Enamelled Broadsword
-						i(4766),	-- Feral Blade						
+						i(4766),	-- Feral Blade
 					},
 				}),
 				n(3684, {	-- Pizznukle <Leather Armor Merchant>
@@ -97,7 +97,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(4788),	-- Agile Boots
-						i(4789),	-- Stable Boots						
+						i(4789),	-- Stable Boots
 					},
 				}),
 				-- #if AFTER WRATH
@@ -117,7 +117,7 @@ _.Zones =
 					["groups"] = {
 						i(5640),	-- Recipe: Rage Potion
 						i(6272),	-- Pattern: Blue Linen Robe
-						i(6275),	-- Pattern: Greater Adept's Robe					
+						i(6275),	-- Pattern: Greater Adept's Robe
 					},
 				}),
 				n(8307, {	-- Tarban Hearthgrain <Baker>
@@ -125,7 +125,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(21099),	-- Recipe: Smoked Sagefish
-						i(21219),	-- Recipe: Sagefish Delight				
+						i(21219),	-- Recipe: Sagefish Delight
 					},
 				}),
 				n(3482, {	-- Tari'qa <Trade Supplies>
@@ -133,22 +133,22 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5486),	-- Recipe: Strider Stew
-						i(5488),	-- Recipe: Crispy Lizard Tail			
+						i(5488),	-- Recipe: Crispy Lizard Tail
 					},
 				}),
 				n(3488, {	-- Uthrok <Bowyer & Gunsmith>
 					["coord"] = { 51.0, 29.0, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(11304),	-- Fine Longbow		
+						i(11304),	-- Fine Longbow
 					},
 				}),
 				n(3492, {	-- Vexspindle <Cloth & Leather Armor Merchant>
 					["coord"] = { 62.2, 38.4, THE_BARRENS },
-					["groups"] = {						
+					["groups"] = {
 						i(4794),	-- Wolf Bracers
 						i(4795),	-- Bear Bracers
-						i(4796),	-- Owl Bracers					
+						i(4796),	-- Owl Bracers
 					},
 				}),
 				n(3682, {	-- Vrang Wildgore <Weaponsmith & Armorcrafter>
@@ -160,10 +160,10 @@ _.Zones =
 						i(4777),	-- Ironwood Maul
 						i(4778),	-- Heavy Spiked Mace
 						i(4797),	-- Fiery Cloak
-						i(4798),	-- Heavy Runed Cloak					
+						i(4798),	-- Heavy Runed Cloak
 						i(4799),	-- Antiquated Cloak
 						i(4800),	-- Mighty Chain Pants
-						i(4816),	-- Legionnaire's Leggings						
+						i(4816),	-- Legionnaire's Leggings
 					},
 				}),
 				n(5944, {	-- Yonada <Tailoring & Leatherworking Supplies>
@@ -171,17 +171,17 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(5772),	-- Pattern: Red Woolen Bag
-						i(6274),	-- Pattern: Blue Overalls						
+						i(6274),	-- Pattern: Blue Overalls
 					},
 				}),
 				n(3489, {	-- Zargh <Butcher>
 					["coord"] = { 52.6, 29.8, THE_BARRENS },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						i(3735),	-- Recipe: Hot Lion Chops					
+						i(3735),	-- Recipe: Hot Lion Chops
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

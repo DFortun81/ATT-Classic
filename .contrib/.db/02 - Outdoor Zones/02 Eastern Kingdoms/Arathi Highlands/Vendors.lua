@@ -38,7 +38,7 @@ _.Zones =
 					["coord"] = { 46.4, 47.0, ARATHI_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6056),	-- Recipe: Frost Protection Potion				
+						i(6056),	-- Recipe: Frost Protection Potion
 					},
 				}),
 				n(2810, {	-- Hammon Karwn <Superior Tradesman>
@@ -100,7 +100,7 @@ _.Zones =
 						i(13287),	-- Pattern: Raptor Hide Harness
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

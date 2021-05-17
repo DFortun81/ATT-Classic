@@ -88,7 +88,7 @@ _.Zones =
 							["itemID"] = 3672,	-- Head of Nagaz
 							["questID"] = 537,	-- Dark Council
 							["cr"] = 2320,	-- Nagaz
-							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },	
+							["coord"] = { 39.6, 15.8, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),
@@ -292,7 +292,7 @@ _.Zones =
 							["itemID"] = 6894,	-- Whirlwind Heart
 							["questID"] = 1713,	-- The Summoning
 							["cr"] = 6239,	-- Cyclonian
-							["coord"] = { 80.6, 62.6, ALTERAC_MOUNTAINS },	
+							["coord"] = { 80.6, 62.6, ALTERAC_MOUNTAINS },
 						},
 					},
 				}),

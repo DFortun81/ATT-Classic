@@ -630,7 +630,7 @@ _.Zones =
 						{
 							["provider"] = { "o", 178553 },	-- Hive'Ashi Pod
 							["itemID"] = 17345,	-- Silithid Goo
-							["coord"] = { 60.3, 52.6, SILITHUS },	
+							["coord"] = { 60.3, 52.6, SILITHUS },
 							["groups"] = {
 								{
 									["itemID"] = 17346,	-- Encrusted Silithid Object

@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = 
+_.Holidays =
 {
 	n(-383, {	-- Miscellaneous
 		-- TODO: Valentine's Day Holiday

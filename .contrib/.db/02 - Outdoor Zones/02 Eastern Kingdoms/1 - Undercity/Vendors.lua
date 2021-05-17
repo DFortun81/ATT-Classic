@@ -48,11 +48,11 @@ _.Zones =
 				n(4574, {	-- Lizbeth Cromwell <Fishing Supplier>
 					["coord"] = { 82.1, 30.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(6325),	-- Recipe: Brilliant Smallfish
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 						i(6369),	-- Recipe: Rockscale Cod
-						i(17062),	-- Recipe: Mithril Head Trout						
+						i(17062),	-- Recipe: Mithril Head Trout
 					},
 				}),
 				n(4577, {	-- Millie Gregorian <Tailoring Supplies>
@@ -69,7 +69,7 @@ _.Zones =
 				n(4553, {	-- Ronald Burch <Cooking Supplier>
 					["coord"] = { 62.6, 43.6, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						i(6330),	-- Recipe: Bristle Whisker Catfish
 						i(6368),	-- Recipe: Rainbow Fin Albacore
 						i(21099),	-- Recipe: Smoked Sagefish
@@ -79,14 +79,14 @@ _.Zones =
 				n(4617, {	-- Thaddeus Webb <Enchanting Supplies>
 					["coord"] = { 62.0, 60.8, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						-- #if BEFORE CATA
 						i(6342),	-- Formula: Enchant Chest - Minor Mana
 						-- #endif
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch						
+						i(22307),	-- Pattern: Enchanted Mageweave Pouch
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

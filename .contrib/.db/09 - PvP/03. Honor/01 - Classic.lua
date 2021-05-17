@@ -2,9 +2,9 @@
 -- Add Vendors
 -- https://classic.wowhead.com/npc=12783/lieutenant-karter
 -- https://classic.wowhead.com/npc=12796/raider-bork
-_.PvP = 
+_.PvP =
 {
-	n(-30, {	-- Alliance 
+	n(-30, {	-- Alliance
 		["races"] = ALLIANCE_ONLY,
 		["groups"] = {
 			n(QUESTS, {
@@ -620,7 +620,7 @@ _.PvP =
 			}),
 		},
 	}),
-	n(-31, {	-- Horde 
+	n(-31, {	-- Horde
 		["races"] = HORDE_ONLY,
 		["groups"] = {
 			n(VENDORS, {

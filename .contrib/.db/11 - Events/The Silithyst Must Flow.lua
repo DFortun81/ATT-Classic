@@ -5,7 +5,7 @@
 local MAJOR_HEALING_POTION = i(13446);	-- Major Healing Potion
 local MAJOR_MANA_POTION =    i(13444);	-- Major Mana Potion
 
-_.WorldEvents = bubbleDown({["u"] = PHASE_SIX_SILITHYST }, 
+_.WorldEvents = bubbleDown({["u"] = PHASE_SIX_SILITHYST },
 {
 	n(-541, {	-- The Silithyst Must Flow
 		["description"] = "The Silithyst Must Flow is the name of the world PvP event in Silithus, where players of both factions must try and secure as much Silithyst as possible. Silithyst is a red crystalline dust that reaches the surface through geysers exclusive to the Silithus desert. Both the Alliance and the Horde have taken an interest in this new substance, and researchers on both sides have discovered unique and valuable properties in the dust. The Horde and Alliance camps in the region have both been outfitted with turn-in stations where players can unload the Silithyst they collect. ",

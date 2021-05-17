@@ -33,7 +33,7 @@ _.Zones =
 				q(1220, {	-- Captain Vimes
 					["qg"] = 4947,	-- Theramore Lieutenant
 					["sourceQuest"] = 1219,	-- The Orc Report
-					["coords"] = { 
+					["coords"] = {
 						{ 68.1, 48.2, DUSTWALLOW_MARSH },
 						{ 67.2, 51.0, DUSTWALLOW_MARSH },
 						{ 65.1, 47.1, DUSTWALLOW_MARSH },
@@ -154,8 +154,8 @@ _.Zones =
 					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["cost"] = {
-						{ "i", 5840, 15 },	-- Searing Tongue 
-						{ "i", 5841, 15 },	-- Searing Heart 
+						{ "i", 5840, 15 },	-- Searing Tongue
+						{ "i", 5841, 15 },	-- Searing Heart
 					},
 					["lvl"] = 38,
 					["g"] = {
@@ -447,7 +447,7 @@ _.Zones =
 					},
 				}),
 				q(1268, {	-- Suspicious Hoofprints
-					["providers"] = { 
+					["providers"] = {
 						{ "o", 21015 },	-- Hoofprints
 						{ "o", 21016 },	-- Hoofprints
 					},
@@ -456,7 +456,7 @@ _.Zones =
 					["lvl"] = 30,
 				}),
 				q(1284, {	-- Suspicious Hoofprints
-					["providers"] = { 
+					["providers"] = {
 						{ "o", 21015 },	-- Hoofprints
 						{ "o", 21016 },	-- Hoofprints
 					},

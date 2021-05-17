@@ -151,11 +151,11 @@ _.Zones =
 				}),
 				q(1097, {	-- Elmore's Task
 					["qgs"] = {
-						514,	-- Smith Argus 
+						514,	-- Smith Argus
 						415,	-- Verner Osgood
 					},
 					["maps"] = { REDRIDGE_MOUNTAINS, },
-					["coords"] = { 
+					["coords"] = {
 						{ 41.7, 65.5, ELWYNN_FOREST },	-- Smith Argus
 						{ 31.0, 47.4, REDRIDGE_MOUNTAINS },	-- Verner Osgood
 					},

@@ -407,7 +407,7 @@ _.Zones =
 						i(21318),	-- Earth Warder's Gloves
 						i(21319),	-- Gloves of the Pathfinder
 						i(21320),	-- Vest of the Den Watcher
-						i(21322),	-- Ursa's Embrace						
+						i(21322),	-- Ursa's Embrace
 					},
 				}),
 				q(5083, {	-- Winterfall Firewater

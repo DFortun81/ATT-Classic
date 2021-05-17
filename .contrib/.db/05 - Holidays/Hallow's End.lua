@@ -1,7 +1,7 @@
 --------------------------------------------
 --     H O L I D A Y S  M O D U L E       --
 --------------------------------------------
-_.Holidays = bubbleDown({ ["u"] = HALLOWS_END }, 
+_.Holidays = bubbleDown({ ["u"] = HALLOWS_END },
 {
 	n(-58, {	-- Hallow's End
 		n(QUESTS, {

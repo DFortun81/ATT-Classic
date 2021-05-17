@@ -418,8 +418,8 @@ _.Zones =
 					["cost"] = {
 						{ "i", 9468, 1 },	-- Sharpbeak's Feather
 					},
-					["races"] = ALLIANCE_ONLY,	
-					["lvl"] = 40,			
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 40,
 				}),
 				q(2989, { 	-- The Altar of Zul
 					["qg"] = 5636,	-- Gryphon Master Talonaxe

@@ -83,7 +83,7 @@ _.Zones =
 					["sourceQuest"] = 2869,	-- Against the Hatecrest (2/2)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 9248, 1 }, -- Mysterious Relic
 					},
 					["lvl"] = 40,
@@ -108,7 +108,7 @@ _.Zones =
 					["sourceQuest"] = 3130,	-- Against the Hatecrest (1/2)
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 9247, 10 },	-- Hatecrest Naga Scale
 					},
 					["lvl"] = 40,
@@ -176,7 +176,7 @@ _.Zones =
 					["sourceQuest"] = 2870,	-- Against Lord Shalzaru
 					["coord"] = { 30.4, 46.2, FERALAS },
 					["races"] = ALLIANCE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 9248, 1 } -- Mysterious Relic
 					},
 					["lvl"] = 40,

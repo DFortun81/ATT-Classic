@@ -60,7 +60,7 @@ _.Zones =
 							["itemID"] = 3631,	-- Bellygrub's Tusk
 							["questID"] = 34,	-- An Unwelcome Guest
 							["cr"] = 345,	-- Bellygrub
-							["coord"] = { 16.6, 49.8, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 16.6, 49.8, REDRIDGE_MOUNTAINS },
 						},
 						i(2562),	-- Bouquet of Scarlet Begonias
 					},
@@ -137,7 +137,7 @@ _.Zones =
 				}),
 				q(126, {	-- Howling in the Hills
 					["qg"] = 415,	-- Verner Osgood
-					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },	
+					["coord"] = { 31.0, 47.4, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3614, 1},	-- Yowler's Paw
@@ -148,11 +148,11 @@ _.Zones =
 							["itemID"] = 3614,	-- Yowler's Paw
 							["questID"] = 126,	-- Howling in the Hills
 							["cr"] = 518,	-- Yowler
-							["coord"] = { 28.8, 23.2, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 28.8, 23.2, REDRIDGE_MOUNTAINS },
 						},
 						i(1319),	-- Ring of Iron Will
 						i(2910),	-- Gold Militia Boots
-					},				
+					},
 				}),
 				q(248, {	-- Looking Further
 					["provider"] = { "o", 31 },	-- Old Lion Statue
@@ -243,7 +243,7 @@ _.Zones =
 							["itemID"] = 3617,	-- Pendant of Shadow
 							["questID"] = 249,	-- Morganth
 							["cr"] = 397,	-- Morganth
-							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 80, 49, REDRIDGE_MOUNTAINS },
 						},
 						i(5274),	-- Rose Mantle
 					},
@@ -333,11 +333,11 @@ _.Zones =
 							["itemID"] = 1260,	-- Tharil'zun's Head
 							["questID"] = 19,	-- Tharil'zun
 							["cr"] = 486,	-- Tharil'zun
-							["coord"] = { 68.4, 58.8, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 68.4, 58.8, REDRIDGE_MOUNTAINS },
 						},
 						i(1276),	-- Fire Hardened Buckler
 						i(6093),	-- Orc Crusher
-					},				
+					},
 				}),
 				q(132, {	-- The Defias Brotherhood (2/7)
 					["qg"] = 266,	-- Wiley the Black
@@ -453,13 +453,13 @@ _.Zones =
 							["itemID"] = 3633,	-- Head of Gath'Ilzogg
 							["questID"] = 169,	-- Wanted: Gath'Ilzogg
 							["cr"] = 334,	-- Gath'Ilzogg <Warlord of the Blackrock Clan>
-							["coord"] = { 69.6, 55.8, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 69.6, 55.8, REDRIDGE_MOUNTAINS },
 						},
 					},
 				}),
 				q(180, {	-- Wanted: Lieutenant Fangore
 					["provider"] = { "o", 47 },	-- Wanted: Lieutenant Fangore
-					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },	
+					["coord"] = { 26.7, 46.5, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["cost"] = {
 						{ "i", 3632, 1 },	-- Fangore's Paw
@@ -470,7 +470,7 @@ _.Zones =
 							["itemID"] = 3632,	-- Fangore's Paw
 							["questID"] = 180,	-- Wanted: Lieutenant Fangore
 							["cr"] = 703,	-- Lieutenant Fangore
-							["coord"] = { 80.0, 39.0, REDRIDGE_MOUNTAINS },	
+							["coord"] = { 80.0, 39.0, REDRIDGE_MOUNTAINS },
 						},
 					},
 				}),

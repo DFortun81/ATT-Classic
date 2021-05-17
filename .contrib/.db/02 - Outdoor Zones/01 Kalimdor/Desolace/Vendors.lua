@@ -73,8 +73,8 @@ _.Zones =
 						i(7087),  -- Pattern: Crimson Silk Cloak
 						i(7561),  -- Schematic: Goblin Jumper Cables
 						i(12227),  -- Recipe: Lean Wolf Steak
-						i(12229),  -- Recipe: Hot Wolf Ribs	
-						i(12233),  -- Recipe: Mystery Stew						
+						i(12229),  -- Recipe: Hot Wolf Ribs
+						i(12233),  -- Recipe: Mystery Stew
 						i(12239),  -- Recipe: Dragonbreath Chili
 						i(13310),  -- Schematic: Accurate Scope
 					},
@@ -90,7 +90,7 @@ _.Zones =
 						i(21099),	-- Recipe: Smoked Sagefish
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };
