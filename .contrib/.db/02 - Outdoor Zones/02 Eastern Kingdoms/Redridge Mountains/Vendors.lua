@@ -19,20 +19,20 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
-						i(4778),	-- Heavy Spiked Mace	
+						i(4778),	-- Heavy Spiked Mace
 						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers						
+						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
-						i(4817),	-- Blessed Claymore	
+						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					},
 				}),
 				n(3097, {	-- Bernard Brubaker <Leather Armor Merchant>
 					["coord"] = { 88.2, 71.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {	
+					["groups"] = {
 						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers						
+						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
 					},
 				}),
@@ -54,8 +54,8 @@ _.Zones =
 				}),
 				n(3091, {	-- Franklin Hamar <Tailoring Supplies>
 					["coord"] = { 27.2, 45.4, REDRIDGE_MOUNTAINS },
-					["races"] = ALLIANCE_ONLY,				
-					["groups"] = {										
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
 						i(4781),	-- Whispering Vest
 						i(4782),	-- Solstice Robe
 						i(4786),	-- Wise Man's Belt
@@ -73,12 +73,12 @@ _.Zones =
 					["coord"] = { 30.6, 46.6, REDRIDGE_MOUNTAINS },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4820),	-- Guardian Buckler					
+						i(4820),	-- Guardian Buckler
 						i(4821),	-- Bear Buckler
 						i(4822),	-- Owl's Disk
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };

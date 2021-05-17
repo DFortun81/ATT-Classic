@@ -255,7 +255,7 @@ _.Zones =
 						i(5425),	-- Runescale Girdle
 						i(5426),	-- Serpent's Kiss
 					},
-				}), 
+				}),
 			}),
 		}),
 	}),

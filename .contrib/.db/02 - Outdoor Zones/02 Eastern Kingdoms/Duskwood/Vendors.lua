@@ -33,7 +33,7 @@ _.Zones =
 				n(274, {	-- Barkeep Hann <Bartender>
 					["coord"] = { 73.8, 44.2, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						{
 							["itemID"] = 1942,	-- Bottle of Moonshine
 							["questID"] = 116,	-- Dry Times
@@ -80,7 +80,7 @@ _.Zones =
 					["coord"] = { 73.9, 48.9, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4797),	-- Fiery Cloak					
+						i(4797),	-- Fiery Cloak
 						i(4798),	-- Heavy Runed Cloak
 						i(4799),	-- Antiquated Cloak
 						i(4800),	-- Mighty Chain Pants
@@ -91,11 +91,11 @@ _.Zones =
 					["coord"] = { 75.6, 45.4, DUSKWOOD },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(6401),	-- Pattern: Dark Silk Shirt				
+						i(6401),	-- Pattern: Dark Silk Shirt
 						i(6275),	-- Pattern: Greater Adept's Robe
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

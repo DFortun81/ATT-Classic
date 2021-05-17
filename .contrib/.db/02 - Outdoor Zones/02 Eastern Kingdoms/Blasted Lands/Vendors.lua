@@ -12,8 +12,8 @@ _.Zones =
 					["groups"] = {
 						i(9300),	-- Recipe: Elixir of Demonslaying
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };

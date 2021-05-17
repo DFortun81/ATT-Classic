@@ -11,7 +11,7 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(6326),	-- Recipe: Slitherskin Mackerel
-						i(6368),	-- Recipe: Rainbow Fin Albacore				
+						i(6368),	-- Recipe: Rainbow Fin Albacore
 					},
 				}),
 				n(4265, {	-- Nyoma <Cooking Supplies>
@@ -24,7 +24,7 @@ _.Zones =
 						i(21219),	-- Recipe: Sagefish Delight
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

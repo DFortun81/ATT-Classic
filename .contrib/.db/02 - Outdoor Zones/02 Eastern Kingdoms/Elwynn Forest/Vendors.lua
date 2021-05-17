@@ -15,18 +15,18 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
-						i(4778),	-- Heavy Spiked Mace	
+						i(4778),	-- Heavy Spiked Mace
 						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers						
+						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
-						i(4817),	-- Blessed Claymore	
+						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					},
 				}),
 				n(465, {	-- Barkeep Dobbins <Bartender>
 					["coord"] = { 43.8, 65.8, ELWYNN_FOREST },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {						
+					["groups"] = {
 						{
 							["itemID"] = 1939,	-- Skin of Sweet Rum
 							["questID"] = 116,	-- Dry Times
@@ -79,7 +79,7 @@ _.Zones =
 						i(6328),	-- Recipe: Longjaw Mud Snapper
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

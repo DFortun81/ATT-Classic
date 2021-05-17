@@ -6,7 +6,7 @@
 local app = select(2, ...);
 local L = app.L;
 
--- Performance Cache 
+-- Performance Cache
 -- While this may seem silly, caching references to commonly used APIs is actually a performance gain...
 local SetPortraitTexture = _G["SetPortraitTexture"];
 local SetPortraitTextureFromDisplayID = _G["SetPortraitTextureFromCreatureDisplayID"];
@@ -63,7 +63,7 @@ local function Push(self, name, method)
 	if not self.__stack then
 		self.__stack = {};
 		self:SetScript("OnUpdate", OnUpdate);
-	elseif #self.__stack < 1 then 
+	elseif #self.__stack < 1 then
 		self:SetScript("OnUpdate", OnUpdate);
 	end
 	--print("Push->" .. name);
@@ -157,7 +157,7 @@ local function SetDataSubMember(member, submember, data)
 end
 local function GetDataSubMember(member, submember, default)
 	attData = rawget(ATTClassicAD,member);
-	if attData then 
+	if attData then
 		attData = rawget(attData, submember);
 		if attData == nil then
 			rawset(rawget(ATTClassicAD,member), submember, default);
@@ -184,7 +184,7 @@ local function SetTempDataSubMember(member, submember, data)
 end
 local function GetTempDataSubMember(member, submember, default)
 	attData = rawget(ATTCTempData,member);
-	if attData then 
+	if attData then
 		attData = rawget(attData, submember);
 		if attData == nil then
 			rawset(rawget(ATTCTempData,member), submember, default);
@@ -207,9 +207,9 @@ app.GetTempDataMember = GetTempDataMember;
 app.GetTempDataSubMember = GetTempDataSubMember;
 
 local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = true, tileSize = 16, edgeSize = 16, 
+	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 };
 
@@ -483,9 +483,9 @@ local function HexToRGB(hex)
 	return tonumber("0x"..hex:sub(1,2)), tonumber("0x"..hex:sub(3,4)), tonumber("0x"..hex:sub(5,6));
 end
 local function RGBToHex(r, g, b)
-	return string.format("ff%02x%02x%02x", 
-		r <= 255 and r >= 0 and r or 0, 
-		g <= 255 and g >= 0 and g or 0, 
+	return string.format("ff%02x%02x%02x",
+		r <= 255 and r >= 0 and r or 0,
+		g <= 255 and g >= 0 and g or 0,
 		b <= 255 and b >= 0 and b or 0);
 end
 local function ConvertColorRgbToHsv(r, g, b)
@@ -654,7 +654,7 @@ end
 local function BuildSourceText(group, l)
 	local parent = group.parent;
 	if parent then
-		if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID)) 
+		if not group.itemID and (parent.key == "filterID" or parent.key == "spellID" or ((parent.headerID or (parent.spellID and group.categoryID))
 			and ((parent.headerID == -2 or parent.headerID == -17 or parent.headerID == -7) or (parent.parent and parent.parent.parent)))) then
 			return BuildSourceText(parent.parent, 5) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA) .. " (" .. (parent.text or RETRIEVING_DATA) .. ")";
 		end
@@ -1530,7 +1530,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if app.Settings:GetTooltipSetting("itemString") then tinsert(info, { left = itemString }); end
 					local itemID2 = select(2, strsplit(":", itemString));
 					if itemID2 then
-						itemID = tonumber(itemID2); 
+						itemID = tonumber(itemID2);
 						paramA = "itemID";
 						paramB = itemID;
 					end
@@ -1593,7 +1593,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							for i,o in ipairs(searchResults) do
 								if not o.itemID and o.cost then
 									-- Reagent for something that crafts a thing required for something else.
-									MergeObject(group, CreateObject({ ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CreateObject(o) } })); 
+									MergeObject(group, CreateObject({ ["itemID"] = craftedItemID, ["count"] = count, ["g"] = { CreateObject(o) } }));
 								end
 							end
 						end

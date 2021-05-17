@@ -144,7 +144,7 @@ _.Zones =
 					["qg"] = 5204,	-- Apothecary Zinge
 					["coord"] = { 50, 68.4, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 8525, 1 },	-- Zinge's Purchase Order
 					},
 					["lvl"] = 38,
@@ -154,7 +154,7 @@ _.Zones =
 					["sourceQuest"] = 232,	-- Errand for Apothecary Zinge (1/2)
 					["coord"] = { 58.2, 55.2, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 8523, 1 },	-- Field Testing Kit
 					},
 					["lvl"] = 38,
@@ -234,7 +234,7 @@ _.Zones =
 					["sourceQuest"] = 238,	-- Errand for Apothecary Zinge (2/2)
 					["coord"] = { 50.13, 67.98, UNDERCITY },
 					["races"] = HORDE_ONLY,
-					["cost"] = { 
+					["cost"] = {
 						{ "i", 8523, 1 },	-- Field Testing Kit
 					},
 					["lvl"] = 38,
@@ -571,19 +571,19 @@ _.Zones =
 							["itemID"] = 5831,	-- Fardel's Head
 							["questID"] = 1164,	-- To Steal From Thieves
 							["cr"] = 4479,	-- Fardel Dabyrie
-							["coord"] = { 55.0, 40.0, ARATHI_HIGHLANDS },	
+							["coord"] = { 55.0, 40.0, ARATHI_HIGHLANDS },
 						},
 						{
 							["itemID"] = 5830,	-- Kenata's Head
 							["questID"] = 1164,	-- To Steal From Thieves
 							["cr"] = 4480,	-- Kenata Dabyrie
-							["coord"] = { 56.2, 36.0, ARATHI_HIGHLANDS },	
+							["coord"] = { 56.2, 36.0, ARATHI_HIGHLANDS },
 						},
 						{
 							["itemID"] = 5832,	-- Marcel's Head
 							["questID"] = 1164,	-- To Steal From Thieves
 							["cr"] = 4481,	-- Marcel Dabyrie
-							["coord"] = { 54.5, 38.6, ARATHI_HIGHLANDS },	
+							["coord"] = { 54.5, 38.6, ARATHI_HIGHLANDS },
 						},
 						i(4443),	-- Grim Pauldrons
 						i(2032),	-- Gallan Cuffs

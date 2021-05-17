@@ -1,4 +1,4 @@
-_.PvP = 
+_.PvP =
 {
 	n(-304, {	-- Battlegrounds
 		m(ALTERAC_VALLEY, {	-- Alterac Valley

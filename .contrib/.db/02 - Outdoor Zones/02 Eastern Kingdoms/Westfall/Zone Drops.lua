@@ -167,7 +167,7 @@ _.Zones =
 						449,	-- Defias Knuckleduster
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

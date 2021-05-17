@@ -30,8 +30,8 @@ _.Zones =
 					["groups"] = {
 						i(7742),	-- Schematic: Gnomish Cloaking Device
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };

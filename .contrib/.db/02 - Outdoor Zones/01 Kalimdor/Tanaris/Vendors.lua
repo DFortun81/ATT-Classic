@@ -10,7 +10,7 @@ _.Zones =
 					["coord"] = { 50.9, 27.0, TANARIS },
 					["groups"] = {
 						i(6057),	-- Recipe: Nature Protection Potion
-						i(9303),	-- Recipe: Philosopher's Stone					
+						i(9303),	-- Recipe: Philosopher's Stone
 						i(9304),	-- Recipe: Transmute Iron to Gold
 						i(9305),	-- Recipe: Transmute Mithril to Truesilver
 						i(12958),	-- Recipe: Transmute Arcanite
@@ -30,11 +30,11 @@ _.Zones =
 				}),
 				n(8137, {	-- Gikkix <Fisherman>
 					["coord"] = { 66.6, 22.1, TANARIS },
-					["groups"] = {					
-						i(13939),	-- Recipe: Spotted Yellowtail				
+					["groups"] = {
+						i(13939),	-- Recipe: Spotted Yellowtail
 						i(13942),	-- Recipe: Grilled Squid
 						i(13945),	-- Recipe: Nightfin Soup
-						i(13946),	-- Recipe: Poached Sunscale Salmon						
+						i(13946),	-- Recipe: Poached Sunscale Salmon
 					},
 				}),
 				n(8139, {	-- Jabbey <General Goods>
@@ -56,7 +56,7 @@ _.Zones =
 						i(21358),	-- Pattern: Soul Pouch
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

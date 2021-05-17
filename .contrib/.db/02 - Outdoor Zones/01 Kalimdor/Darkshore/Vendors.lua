@@ -40,7 +40,7 @@ _.Zones =
 						i(6270),	-- Pattern: Blue Linen Vest
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

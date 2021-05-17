@@ -50,7 +50,7 @@ _.Zones =
 					["coord"] = { 34.0, 46.6, LOCH_MODAN },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						i(4765),	-- Enamelled Broadsword						
+						i(4765),	-- Enamelled Broadsword
 						i(4766),	-- Feral Blade
 					},
 				}),
@@ -78,7 +78,7 @@ _.Zones =
 						i(6053),	-- Recipe: Holy Protection Potion
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

@@ -86,7 +86,7 @@ _.Zones =
 						i(19027),	-- Schematic: Snake Burst Firework
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

@@ -167,7 +167,7 @@ _.Zones =
 					["questID"] = 692,	-- The Lost Fragments
 					["cr"] = 2791,	-- Enraged Rock Elemental
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

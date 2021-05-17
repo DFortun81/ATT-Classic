@@ -14,11 +14,11 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(4777),	-- Ironwood Maul
-						i(4778),	-- Heavy Spiked Mace	
+						i(4778),	-- Heavy Spiked Mace
 						i(4794),	-- Wolf Bracers
-						i(4795),	-- Bear Bracers						
+						i(4795),	-- Bear Bracers
 						i(4796),	-- Owl Bracers
-						i(4817),	-- Blessed Claymore	
+						i(4817),	-- Blessed Claymore
 						i(4818),	-- Executioner's Sword
 					},
 				}),
@@ -58,7 +58,7 @@ _.Zones =
 						i(11304),	-- Fine Longbow
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

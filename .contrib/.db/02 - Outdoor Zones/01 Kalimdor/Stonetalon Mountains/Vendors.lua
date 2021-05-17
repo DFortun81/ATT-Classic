@@ -43,7 +43,7 @@ _.Zones =
 				}),
 				n(4086, {	-- Veenix <Venture Co. Merchant>
 					["coord"] = { 58.2, 51.6, STONETALON_MOUNTAINS },
-					["groups"] = {										
+					["groups"] = {
 						i(4817),	-- Orb of Power
 						i(4818),	-- Executioner's Sword
 						i(4836),	-- Fireproof Orb
@@ -52,7 +52,7 @@ _.Zones =
 						i(7561),	-- Schematic: Goblin Jumper Cables
 					},
 				}),
-			}),	
+			}),
 		}),
 	}),
 };

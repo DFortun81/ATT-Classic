@@ -11,8 +11,8 @@ _.Zones =
 					["groups"] = {
 						i(10858),	-- Plans: Solid Iron Maul
 					},
-				}),				
-			}),	
+				}),
+			}),
 		}),
 	}),
 };
