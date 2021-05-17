@@ -4925,6 +4925,9 @@ app.events.MAP_EXPLORATION_UPDATED = function(...)
 	wipe(ExploredMapDataByID);
 	wipe(ExploredSubMapsByID);
 	app.CurrentMapID = app.GetCurrentMapID();
+	if #ExploredMapDataByID[app.CurrentMapID] > 0 then
+		-- Do nothing.
+	end
 	app:RefreshData(true, true);
 end
 app.events.ZONE_CHANGED = function()
