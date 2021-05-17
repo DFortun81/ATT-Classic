@@ -4895,6 +4895,9 @@ app.CreateMap = function(id, t)
 		end
 		if #newExplorationObjects > 0 then
 			if explorationHeader then
+				if not explorationHeader.g then
+					explorationHeader.g = {};
+				end
 				for i,o in ipairs(newExplorationObjects) do
 					table.insert(explorationHeader.g, o);
 				end
@@ -8872,6 +8875,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 				-- Simplify the returned groups
 				local groups = {};
 				local header = app.CreateMap(self.mapID, { g = groups });
+				local explorationHeader = app.CreateNPC(-15, { ["g"] = {} });
+				table.insert(groups, explorationHeader);
 				local factionsHeader = app.CreateNPC(-8, { ["g"] = {} });
 				table.insert(groups, factionsHeader);
 				local flightPathsHeader = app.CreateNPC(-6, { ["g"] = {} });
@@ -8939,6 +8944,8 @@ app:GetWindow("CurrentInstance", UIParent, function(self, force, got)
 						MergeObject(questsHeader.g, clone, 1);
 					elseif group.key == "factionID" then
 						MergeObject(factionsHeader.g, clone);
+					elseif group.key == "explorationID" then
+						MergeObject(explorationHeader.g, clone);
 					elseif group.key == "flightPathID" then
 						MergeObject(flightPathsHeader.g, clone);
 					else
