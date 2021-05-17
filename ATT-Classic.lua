@@ -4893,6 +4893,9 @@ app.CreateMap = function(id, t)
 				end
 			end
 		end
+		if ExploredMapDataByID[id] then
+			-- Do nothing.
+		end
 		if #newExplorationObjects > 0 then
 			if explorationHeader then
 				if not explorationHeader.g then
@@ -4925,7 +4928,7 @@ app.events.MAP_EXPLORATION_UPDATED = function(...)
 	wipe(ExploredMapDataByID);
 	wipe(ExploredSubMapsByID);
 	app.CurrentMapID = app.GetCurrentMapID();
-	if #ExploredMapDataByID[app.CurrentMapID] > 0 then
+	if ExploredMapDataByID[app.CurrentMapID] then
 		-- Do nothing.
 	end
 	app:RefreshData(true, true);
