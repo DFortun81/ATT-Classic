@@ -4693,7 +4693,7 @@ app.GetMapName = function(mapID)
 end
 
 -- NOTE: Get these values by dumping C_MapExplorationInfo_GetExploredMapTextures(mapID)
--- This is now a table of hash,subAreaID (explorationID in ATT)
+-- This is now a table of maphash,subAreaID (explorationID in ATT)
 -- The commented sections are areas associated with the map, but not collectible. (afaik, they might add them later)
 -- /script for areaID=1,5000,1 do if C_Map.GetAreaInfo(areaID) == "Undercity" then print("Area ID: ", areaID); end end
 local EXPLORATION_ID_META = { __index = function(t, artID)
@@ -4701,1029 +4701,7 @@ local EXPLORATION_ID_META = { __index = function(t, artID)
 	rawset(t, artID, exploration);
 	return exploration;
 end };
-local EXPLORATION_ID_MAP = setmetatable({ 
-	-- Kalimdor
-	[1248] = {	-- Ashenvale
-		["128:195:131:137"] = 441,	-- Lake Falathim
-		["146:200:856:151"] = 438,	-- Bough Shadow
-		["155:150:260:373"] = 418,	-- The Ruins of Stardust
-		["165:175:189:324"] = 417,	-- Fire Scar Shrine
-		["180:245:520:238"] = 426,	-- Raynewood Retreat
-		["200:160:796:311"] = 437,	-- Warsong Lumber Camp
-		["200:205:392:218"] = 424,	-- Iris Lake
-		["205:185:272:251"] = 415,	-- Astranaar
-		["210:185:463:141"] = 419,	-- The Howling Vale
-		["215:305:205:38"] = 413,	-- Maestra's Post
-		["220:195:104:259"] = 416,	-- The Shrine of Aessina
-		["225:255:597:258"] = 428,	-- Night Run
-		["235:205:547:426"] = 422,	-- Fallen Sky Lake
-		["245:245:19:28"] = 414,	-- The Zoram Strand
-		["245:255:713:344"] = 434,	-- Felfire Hill
-		["255:195:203:158"] = 2301,	-- Thistlefur Village
-		["275:240:356:347"] = 421,	-- Mystral Lake
-		["285:185:694:225"] = 430,	-- Satyrnaar
-		--[[
-		[411] = 1,                               -- Bathran's Haunt
-		[412] = 2,                               -- The Ruins of Ordil'Aran
-		[420] = 10,                              -- Silverwind Refuge
-		[425] = 14,                              -- Moonwell
-		[427] = 16,                              -- The Shady Nook
-		[429] = 18,                              -- Xavian
-		[431] = 20,                              -- Splintertree Post
-		[432] = 21,                              -- The Dor'Danil Barrow Den
-		[433] = 22,                              -- Falfarren River
-		[435] = 24,                              -- Demon Fall Canyon
-		[436] = 25,                              -- Demon Fall Ridge
-		[879] = 29,                              -- Southfury River
-		[1276] = 30,                             -- The Talondeep Path
-		[2325] = 32,                             -- The Veiled Sea
-		[2357] = 33,                             -- Bloodtooth Camp
-		[2358] = 34,                             -- Forest Song
-		[2359] = 35,                             -- Greenpaw Village
-		[2360] = 36,                             -- Silverwing Outpost
-		[2457] = 37,                             -- Nightsong Woods
-		[2637] = 38,                             -- Kargathia Keep
-		[2797] = 39,                             -- Blackfathom Deeps
-		[2897] = 40,                             -- Zoram'gar Outpost
-		[3177] = 41,                             -- Warsong Labor Camp
-		[3319] = 42,                             -- Silverwing Grove
-		]]--
-	},
-	[1259] = {	-- Azshara
-		["120:155:818:107"] = 1229,	-- Tower of Eldara
-		["145:215:422:95"] = 1225,	-- Ursolan
-		["160:210:404:194"] = 1228,	-- The Shattered Strand
-		["190:200:681:153"] = 1226,	-- Temple of Arkkoran
-		["200:150:77:331"] = 1236,	-- Haldarr Encampment
-		["215:175:84:229"] = 1237,	-- Valormok
-		["220:255:191:369"] = 1233,	-- Forlorn Ridge
-		["225:180:35:422"] = 1235,	-- Shadowsong Shrine
-		["235:140:478:44"] = 1219,	-- Legash Encampment
-		["235:270:250:106"] = 1216,	-- Timbermaw Hold
-		["240:125:552:499"] = 1232,	-- Ravencrest Monument
-		["240:155:499:119"] = 1220,	-- Thalassian Base Camp
-		["245:185:644:40"] = 2497,	-- Bitter Reaches
-		["265:280:238:221"] = 1221,	-- Ruins of Eldarath
-		["270:300:479:201"] = 1227,	-- Bay of Storms
-		["315:200:296:429"] = 1234,	-- Lake Mennar
-		["370:220:389:353"] = 1231,	-- Southridge Beach
-		["395:128:396:540"] = 1256,	-- The Ruined Reaches
-		["570:170:366:0"] = 1230,	-- Jagged Reef
-		--[[
-		[878] = 1,                               -- Southfury River
-		[1217] = 3,                              -- Vanndir Encampment
-		[1218] = 4,                              -- TESTAzshara
-		[1222] = 8,                              -- Hetaera's Clutch
-		[1223] = 9,                              -- Temple of Zin-Malor
-		[1224] = 10,                             -- Bear's Head
-		[2321] = 25,                             -- The Great Sea
-		[3137] = 27,                             -- Talrendis Point
-		[3138] = 28,                             -- Rethress Sanctum
-		[3140] = 29,                             -- Scalebeard's Cave
-		]]--
-	},
-	[1247] = {	-- Darkshore
-		["150:215:318:162"] = 442,	-- Auberdine
-		["170:195:468:85"] = 444,	-- Tower of Althalaxx
-		["175:158:329:510"] = 449,	-- The Master's Glaive
-		["175:183:229:485"] = 450,	-- Remtravel's Excavation
-		["180:195:365:181"] = 446,	-- Bashal'Aran
-		["190:205:324:306"] = 447,	-- Ameth'Aran
-		["195:215:510:0"] = 443,	-- Ruins of Mathystra
-		["200:170:305:412"] = 448,	-- Grove of the Ancients
-		["230:190:375:94"] = 456,	-- Cliffspring River
-		--[[
-		[445] = 4,                               -- Cliffspring Falls
-		[452] = 10,                              -- Mist's Edge
-		[453] = 11,                              -- The Long Wash
-		[454] = 12,                              -- Wildbend River
-		[455] = 13,                              -- Blackwood Den
-		[2077] = 15,                             -- Twilight Vale
-		[2078] = 16,                             -- Twilight Shore
-		[2326] = 17,                             -- The Veiled Sea
-		]]--
-	},
-	[1251] = {	-- Desolace
-		["100:100:241:6"] = 2406,	-- Ranazjar Isle
-		["170:160:555:181"] = 2407,	-- Kormek's Hut
-		["190:220:447:102"] = 599,	-- Thunder Axe Fortress
-		["195:242:293:426"] = 606,	-- Gelkis Village
-		["200:250:554:0"] = 608,	-- Nijel's Point
-		["205:145:431:0"] = 2404,	-- Tethris Aran
-		["205:195:690:444"] = 2198,	-- Shadowbreak Ravine
-		["205:250:311:61"] = 2405,	-- Ethel Rethor
-		["205:285:590:365"] = 604,	-- Magram Village
-		["220:220:607:215"] = 609,	-- Kolkar Village
-		["230:230:167:389"] = 2408,	-- Shadowprey Village
-		["245:285:212:215"] = 607,	-- Valley of Spears
-		["275:250:387:244"] = 596,	-- Kodo Graveyard
-		["285:245:625:33"] = 603,	-- Sargeron
-		["285:280:399:380"] = 602,	-- Mannoroc Coven
-		--[[
-		[597] = 2,                               -- Ghost Walker Post
-		[598] = 3,                               -- Sar'theris Strand
-		[600] = 5,                               -- Bolgan's Hole
-		[2217] = 14,                             -- Broken Spear Village
-		[2324] = 15,                             -- The Veiled Sea
-		[2617] = 21,                             -- Scrabblescrew's Camp
-		[2657] = 22,                             -- Valley of Bones
-		]]--
-	},
-	[1194] = {	-- Durotar
-		["128:110:464:33"] = 817,	-- Skull Rock
-		["160:120:413:476"] = 366,	-- Kolkar Crag
-		["160:190:474:384"] = 367,	-- Sen'jin Village
-		["190:180:462:286"] = 372,	-- Tiragarde Keep
-		["190:200:327:60"] = 369,	-- Thunder Ridge
-		["200:240:549:427"] = 368,	-- Echo Isles
-		["210:160:427:78"] = 370,	-- Drygulch Ravine
-		["215:215:355:320"] = 363,	-- Valley of Trials
-		["220:230:432:170"] = 362,	-- Razor Hill
-		["230:230:301:189"] = 816,	-- Razormane Grounds
-		["445:160:244:0"] = 1637,	-- Orgrimmar
-		--[[
-		[364] = 3,                               -- The Den
-		[365] = 4,                               -- Burning Blade Coven
-		[371] = 10,                              -- Dustwind Cave
-		[373] = 12,                              -- Scuttle Coast
-		[374] = 13,                              -- Bladefist Bay
-		[375] = 14,                              -- Deadeye Shore
-		[393] = 15,                              -- Darkspear Strand
-		[410] = 17,                              -- Razorwind Canyon
-		[638] = 18,                              -- Hidden Path
-		[639] = 19,                              -- Spirit Rock
-		[640] = 20,                              -- Shrine of the Dormant Flame
-		[814] = 21,                              -- Southfury River
-		[1296] = 24,                             -- Rocktusk Farm
-		[1297] = 25,                             -- Jaggedswine Farm
-		[2320] = 26,                             -- The Great Sea
-		[2337] = 27,                             -- Razor Hill Barracks
-		[2979] = 28,                             -- Tor'kren Farm
-		]]--
-	},
-	[1253] = {	-- Dustwallow Marsh
-		["200:195:660:21"] = 2079,	-- Alcaz Island
-		["230:205:534:224"] = 513,	-- Theramore Isle
-		["250:315:422:0"] = 502,	-- Witch Hill
-		["255:250:257:313"] = 509,	-- The Den of Flame
-		["280:270:230:0"] = 496,	-- Brackenwall Village
-		["285:240:367:381"] = 511,	-- Wyrmbog
-		["400:255:239:189"] = 2302,	-- The Quagmire
-		--[[
-		[403] = 1,                               -- Shady Rest Inn
-		[497] = 3,                               -- Swamplight Manor
-		[498] = 4,                               -- Bloodfen Burrow
-		[499] = 5,                               -- Darkmist Cavern
-		[500] = 6,                               -- Moggle Point
-		[501] = 7,                               -- Beezil's Wreck
-		[503] = 9,                               -- Sentry Point
-		[504] = 10,                              -- North Point Tower
-		[505] = 11,                              -- West Point Tower
-		[506] = 12,                              -- Lost Point
-		[507] = 13,                              -- Bluefen
-		[508] = 14,                              -- Stonemaul Ruins
-		[510] = 16,                              -- The Dragonmurk
-		[514] = 20,                              -- Foothold Citadel
-		[515] = 21,                              -- Ironclad Prison
-		[516] = 22,                              -- Dustwallow Bay
-		[517] = 23,                              -- Tidefury Cove
-		[518] = 24,                              -- Dreadmurk Shore
-		[2158] = 26,                             -- Emberstrife's Den
-		[2318] = 28,                             -- The Great Sea
-		]]--
-	},
-	[1260] = {	-- Felwood
-		["145:159:496:509"] = 2478,	-- Morlos'Aran
-		["160:145:548:90"] = 1998,	-- Talonbranch Glade
-		["165:155:332:465"] = 2480,	-- Jadefire Glen
-		["175:135:408:533"] = 1761,	-- Deadwood Village
-		["185:160:405:429"] = 2479,	-- Emerald Sanctuary
-		["195:170:330:29"] = 2618,	-- Jadefire Run
-		["215:215:420:54"] = 1767,	-- Irontree Woods
-		["235:145:292:263"] = 1765,	-- Bloodvenom Falls
-		["235:155:297:381"] = 2481,	-- Ruins of Constellas
-		["235:200:307:123"] = 1766,	-- Shatter Scar Vale
-		["240:145:483:0"] = 1762,	-- Felpaw Village
-		["245:128:271:331"] = 1763,	-- Jaedenar
-		--[[
-		[1764] = 4,                              -- Bloodvenom River
-		[1768] = 8,                              -- Irontree Cavern
-		[1769] = 9,                              -- Timbermaw Hold
-		[1770] = 10,                             -- Shadow Hold
-		[1771] = 11,                             -- Shrine of the Deceiver
-		[1997] = 12,                             -- Bloodvenom Post
-		]]--
-	},
-	[1252] = {	-- Feralas
-		["110:110:493:70"] = 1113,	-- Oneiros
-		["110:170:478:386"] = 1106,	-- Frayfeather Highlands
-		["115:115:486:329"] = 1105,	-- Feral Scar Vale
-		["120:195:623:167"] = 1100,	-- Grimtotem Compound
-		["140:165:690:141"] = 1103,	-- Gordunni Outpost
-		["145:320:404:256"] = 1108,	-- The Forgotten Coast
-		["150:125:454:0"] = 1111,	-- Dream Bough
-		["155:160:689:233"] = 1099,	-- Camp Mojache
-		["180:180:208:234"] = 1120,	-- Sardor Isle
-		["190:155:305:0"] = 1114,	-- Ruins of Ravenwind
-		["190:250:540:320"] = 2522,	-- Ruins of Isildien
-		["215:293:192:375"] = 1121,	-- Isle of Dread
-		["225:180:751:198"] = 1137,	-- Lower Wilds
-		["230:195:454:201"] = 2577,	-- Dire Maul
-		["240:220:618:298"] = 1101,	-- The Writhing Deep
-		["285:245:319:75"] = 1119,	-- The Twin Colossals
-		--[[
-		[489] = 1,                               -- Thalanaar
-		[1102] = 5,                              -- Wildwind Lake
-		[1104] = 7,                              -- Mok'Gordun
-		[1107] = 10,                             -- Idlewind Lake
-		[1109] = 12,                             -- East Pillar
-		[1110] = 13,                             -- West Pillar
-		[1112] = 15,                             -- Jademir Lake
-		[1115] = 18,                             -- Rage Scar Hold
-		[1116] = 19,                             -- Feathermoon Stronghold
-		[1117] = 20,                             -- Ruins of Solarsal
-		[1136] = 25,                             -- High Wilderness
-		[2323] = 27,                             -- The Veiled Sea
-		[2518] = 28,                             -- Lariss Pavilion
-		[2519] = 29,                             -- Woodpaw Hills
-		[2520] = 30,                             -- Woodpaw Den
-		[2521] = 31,                             -- Verdantis River
-		[3117] = 34,                             -- Shalzaru's Lair
-		]]--
-	},
-	[1263] = {	-- Moonglade
-		["555:510:244:89"] = 656,	-- Lake Elune'ara
-		--[[
-		[2361] = 2,                              -- Nighthaven
-		[2362] = 3,                              -- Shrine of Remulos
-		[2363] = 4,                              -- Stormrage Barrow Dens
-		]]--
-	},
-	[1200] = {	-- Mulgore
-		["128:120:473:260"] = 224,	-- Ravaged Caravan
-		["128:155:379:242"] = 397,	-- Thunderhorn Water Well
-		["128:205:303:307"] = 818,	-- Palemane Rock
-		["170:128:458:369"] = 396,	-- Winterhoof Water Well
-		["185:128:291:0"] = 398,	-- Wildmane Water Well
-		["205:128:395:0"] = 819,	-- Windfury Ridge
-		["205:230:502:16"] = 225,	-- Red Rocks
-		["210:180:255:214"] = 404,	-- Bael'dun Digsite
-		["215:240:428:80"] = 820,	-- The Golden Plains
-		["225:235:532:238"] = 360,	-- The Venture Co. Mine
-		["256:190:523:356"] = 821,	-- The Rolling Plains
-		["256:200:367:303"] = 222,	-- Bloodhoof Village
-		["280:240:249:59"] = 1638,	-- Thunder Bluff
-		["470:243:270:425"] = 220,	-- Red Cloud Mesa
-		--[[
-		[221] = 2,                               -- Camp Narache
-		[223] = 4,                               -- Stonebull Lake
-		[358] = 7,                               -- Brambleblade Ravine
-		[399] = 12,                              -- Skyline Ridge
-		[471] = 15,                              -- Brave Wind Mesa
-		[472] = 16,                              -- Fire Stone Mesa
-		[473] = 17,                              -- Mantle Rock
-		[637] = 21,                              -- Kodo Rock
-		]]--
-	},
-	[1264] = {	-- Silithus
-		["288:256:116:413"] = 2737,	-- The Scarab Wall
-		["320:256:344:197"] = 3425,	-- Cenarion Hold
-		["320:289:104:24"] = 2740,	-- The Crystal Vale
-		["384:384:500:65"] = 2738,	-- Southwind Village
-		["384:512:97:144"] = 2743,	-- Hive'Zora
-		["512:320:265:12"] = 2742,	-- Hive'Ashi
-		["512:384:245:285"] = 2744,	-- Hive'Regal
-		--[[
-		[2477] = 1,                              -- The Veiled Sea
-		[2739] = 4,                              -- Twilight Base Camp
-		[2741] = 6,                              -- The Scarab Dais
-		[3077] = 10,                             -- Valor's Rest
-		[3097] = 11,                             -- The Swarming Pillar
-		[3098] = 12,                             -- Twilight Post
-		[3099] = 13,                             -- Twilight Outpost
-		[3100] = 14,                             -- Ravaged Twilight Camp
-		[3257] = 15,                             -- Bones of Grakkarond
-		[3426] = 17,                             -- Staghelm Point
-		[3427] = 18,                             -- Bronzebeard Encampment
-		[3446] = 19,                             -- Twilight's Run
-		[3447] = 20,                             -- Ortell's Hideout
-		[3454] = 21,                             -- Ruins of Ahn'Qiraj
-		]]--
-	},
-	[1250] = {	-- Stonetalon Mountains
-		["125:125:475:433"] = 2541,	-- Sishir Canyon
-		["125:86:663:582"] = 2539,	-- Malaka'jin
-		["145:107:572:561"] = 2540,	-- Boulderslide Ravine
-		["150:150:389:320"] = 460,	-- Sun Rock Retreat
-		["190:97:718:571"] = 2538,	-- Camp Aparaje
-		["200:215:390:145"] = 464,	-- Mirkfallon Lake
-		["225:120:668:515"] = 2537,	-- Grimtotem Post
-		["230:355:210:234"] = 465,	-- The Charred Vale
-		["270:205:247:0"] = 467,	-- Stonetalon Peak
-		["288:355:457:282"] = 1076,	-- Webwinder Path
-		["320:275:553:197"] = 461,	-- Windshear Crag
-		--[[
-		[463] = 3,                               -- Cragpool Lake
-		[466] = 6,                               -- Valley of the Bloodfuries
-		[468] = 8,                               -- The Talon Den
-		[469] = 9,                               -- Greatwood Vale
-		[636] = 10,                              -- Blackwolf River
-		[1277] = 12,                             -- The Talondeep Path
-		[2160] = 13,                             -- Windshear Mine
-		[3157] = 19,                             -- Boulderslide Cavern
-		]]--
-	},
-	[1254] = {	-- Tanaris
-		["110:140:611:147"] = 986,	-- Zalashji's Den
-		["110:180:473:234"] = 1938,	-- Broken Pillar
-		["120:135:533:104"] = 1937,	-- Noonshade Ruins
-		["150:160:291:434"] = 990,	-- Valley of the Watchers
-		["155:150:561:256"] = 2300,	-- Caverns of Time
-		["155:150:592:75"] = 977,	-- Steamwheedle Port
-		["160:150:395:346"] = 984,	-- Eastmoon Ruins
-		["160:190:629:220"] = 1336,	-- Lost Rigger Cove
-		["165:180:509:168"] = 985,	-- Waterspring Field
-		["175:165:421:91"] = 976,	-- Gadgetzan
-		["180:200:252:199"] = 982,	-- The Noxious Lair
-		["185:250:203:286"] = 980,	-- Thistleshrub Valley
-		["195:175:299:100"] = 979,	-- Sandsorrow Watch
-		["195:210:323:359"] = 992,	-- Southmoon Ruins
-		["205:145:325:289"] = 983,	-- Dunemaul Compound
-		["205:157:445:511"] = 987,	-- Land's End Beach
-		["210:175:254:0"] = 978,	-- Zul'Farrak
-		["215:175:499:293"] = 1940,	-- Southbreak Shore
-		["215:180:363:194"] = 1939,	-- Abyssal Sands
-		["220:210:449:372"] = 981,	-- The Gaping Chasm
-		--[[
-		[988] = 13,                              -- Wavestrider Beach
-		[989] = 14,                              -- Uldum
-		[991] = 16,                              -- Gunstan's Post
-		[2317] = 24,                             -- South Seas
-		[2857] = 25,                             -- The Rumble Cage
-		]]--
-	},
-	[1244] = {	-- Teldrassil
-		["128:100:494:548"] = 702,	-- Rut'theran Village
-		["128:190:335:313"] = 478,	-- Pools of Arlithrien
-		["160:210:382:281"] = 736,	-- Ban'ethil Hollow
-		["170:240:272:127"] = 264,	-- The Oracle Glade
-		["180:256:377:93"] = 266,	-- Wellspring Lake
-		["185:128:368:443"] = 261,	-- Gnarlpine Hold
-		["190:128:462:323"] = 186,	-- Dolanaar
-		["200:200:561:292"] = 260,	-- Starbreeze Village
-		["225:225:491:153"] = 188,	-- Shadowglen
-		["256:185:436:380"] = 259,	-- Lake Al'Ameth
-		["315:256:101:247"] = 1657,	-- Darnassus
-		--[[
-		[256] = 4,                               -- Aldrassil
-		[257] = 5,                               -- Shadowthread Cave
-		[258] = 6,                               -- Fel Rock
-		[262] = 10,                              -- Ban'ethil Barrow Den
-		[263] = 11,                              -- The Cleft
-		[265] = 13,                              -- Wellspring River
-		[2322] = 24,                             -- The Veiled Sea
-		]]
-	},
-	[1202] = {	-- The Barrens
-		["100:165:564:52"] = 379,	-- Far Watch Post
-		["115:110:507:294"] = 1697,	-- Raptor Grounds
-		["120:110:555:0"] = 381,	-- Boulder Lode Mine
-		["120:125:384:115"] = 386,	-- The Forgotten Pools
-		["125:115:492:63"] = 1704,	-- Grol'dom Farm
-		["125:125:556:189"] = 392,	-- Ratchet
-		["125:165:442:298"] = 1698,	-- Bramblescar
-		["128:100:412:0"] = 1703,	-- The Mor'shan Rampart
-		["128:105:419:63"] = 384,	-- Dreadmist Peak
-		["128:128:306:130"] = 1702,	-- Honor's Stand
-		["128:128:341:537"] = 1717,	-- Razorfen Kraul
-		["128:128:431:479"] = 359,	-- Bael Modan
-		["140:128:498:119"] = 1699,	-- Thorn Hill
-		["145:125:365:350"] = 378,	-- Camp Taurajo
-		["150:120:527:307"] = 385,	-- Northwatch Hold
-		["155:115:407:553"] = 1316,	-- Razorfen Downs
-		["155:128:335:462"] = 1701,	-- Blackthorn Ridge
-		["155:128:481:211"] = 388,	-- The Stagnant Oasis
-		["155:155:431:118"] = 380,	-- The Crossroads
-		["170:120:456:0"] = 382,	-- The Sludge Fen
-		["175:185:365:177"] = 387,	-- Lushwater Oasis
-		["200:145:317:29"] = 383,	-- The Dry Hills
-		["200:185:340:234"] = 1700,	-- Agama'gor
-		["210:150:355:402"] = 390,	-- Field of Giants
-		["95:100:581:247"] = 391,	-- The Merchant Coast
-		--[[
-		[401] = 16,                              -- The Tidus Stair
-		[458] = 17,                              -- Gold Road
-		[720] = 18,                              -- Fray Island
-		[815] = 19,                              -- Southfury River
-		[1156] = 21,                             -- Southern Barrens
-		[1157] = 22,                             -- Southern Gold Road
-		[1599] = 26,                             -- Mor'shan Base Camp
-		[1718] = 40,                             -- The Great Lift
-		[2138] = 41,                             -- Dreadmist Den
-		[2157] = 42,                             -- Bael'dun Keep
-		[2319] = 43,                             -- The Great Sea
-		[2757] = 44,                             -- Shrine of the Fallen Warrior
-		]]--
-	},
-	[1249] = {	-- Thousand Needles
-		["190:190:31:155"] = 482,	-- Highperch
-		["205:195:259:131"] = 2097,	-- Darkcloud Pinnacle
-		["210:180:205:70"] = 485,	-- The Great Lift
-		["210:190:357:264"] = 484,	-- Freewind Post
-		["210:195:391:192"] = 481,	-- Splithoof Crag
-		["240:220:492:250"] = 2303,	-- Windbreak Canyon
-		["250:240:179:200"] = 483,	-- The Screeching Canyon
-		["305:310:0:0"] = 480,		-- Camp E'thok
-		["320:365:610:300"] = 439,	-- The Shimmering Flats
-		--[[
-		[479] = 2,                               -- The Rustmaul Dig Site
-		[486] = 9,                               -- Galak Hold
-		[487] = 10,                              -- Roguefeather Den/
-		[488] = 11,                              -- The Weathered Nook
-		[1557] = 12,                             -- Splithoof Hold
-		[2237] = 14,                             -- Whitereach Post
-		[2238] = 15,                             -- Gornia
-		[2239] = 16,                             -- Zane's Eye Crater
-		[2240] = 17,                             -- Mirage Raceway
-		[3037] = 19,                             -- Ironstone Camp
-		[3038] = 20,                             -- Weazel's Crater
-		[3039] = 21,                             -- Tahonda Ruins
-		]]
-	},
-	[1261] = {	-- Un'Goro Crater
-		["285:285:582:67"] = 1943,	-- Ironstone Plateau
-		["295:270:367:178"] = 537,	-- Fire Plume Ridge
-		["310:355:560:240"] = 1942,	-- The Marshlands
-		["315:345:121:151"] = 543,	-- Golakka Hot Springs
-		["345:285:158:368"] = 539,	-- Terror Run
-		["345:285:367:380"] = 540,	-- The Slithering Scar
-		["570:265:160:6"] = 538,	-- Lakkari Tar Pits
-		--[[
-		[541] = 5,                               -- Marshal's Refuge
-		[542] = 6,                               -- Fungal Rock
-		]]--
-	},
-	[1266] = {	-- Winterspring
-		["125:165:611:242"] = 2247,	-- Ice Thistle Hills
-		["145:125:617:158"] = 2244,	-- Winterfall Village
-		["165:140:593:340"] = 2250,	-- Owl Wing Thicket
-		["165:200:509:107"] = 2255,	-- Everlook
-		["175:185:555:27"] = 2242,	-- The Hidden Grove
-		["185:160:392:137"] = 2253,	-- Starfall Village
-		["185:180:493:258"] = 2245,	-- Mazthoril
-		["200:160:523:376"] = 2249,	-- Frostwhisper Gorge
-		["215:185:401:198"] = 2251,	-- Lake Kel'Theril
-		["230:120:229:243"] = 2243,	-- Timbermaw Post
-		["240:140:222:172"] = 2246,	-- Frostfire Hot Springs
-		["250:180:368:7"] = 2241,	-- Frostsaber Rock
-		["255:205:447:441"] = 2256,	-- Darkwhisper Gorge
-		--[[
-		[2248] = 8,                              -- Dun Mandarr
-		[2252] = 12,                             -- The Ruins of Kel'Theril
-		[2254] = 14,                             -- Ban'Thallow Barrow Den
-		[3139] = 17,                             -- Moon Horror Den
-		]]--
-	},
-	
-	-- Eastern Kingdoms
-	[1205] = {	-- Alterac Mountains
-		["160:175:225:478"] = 1677,	-- Gavin's Naze
-		["165:197:314:471"] = 1680,	-- The Headland
-		["190:170:317:372"] = 1683,	-- Growless Cave
-		["195:288:399:380"] = 1679,	-- Corrahn's Dagger
-		["200:200:406:279"] = 1357,	-- Gallows' Corner
-		["220:280:196:131"] = 1681,	-- Misty Shore
-		["235:200:462:77"] = 284,	-- The Uplands
-		["255:255:270:197"] = 281,	-- Ruins of Alterac
-		["255:320:462:307"] = 1678,	-- Sofera's Naze
-		["280:240:334:162"] = 282,	-- Crushridge Hold
-		["285:230:276:0"] = 1682,	-- Dandred's Fold
-		["300:300:26:262"] = 279,	-- Dalaran
-		["330:265:44:403"] = 278,	-- Lordamere Internment Camp
-		["350:370:626:253"] = 1684,	-- Chillwind Point
-		["370:300:549:105"] = 280,	-- Strahnbrad
-		--[[
-		[277] = 1,                               -- The Foothill Caverns
-		[283] = 7,                               -- Slaughter Hollow
-		[1339] = 9,                              -- Lordamere Lake
-		[2839] = 19,                             -- Alterac Valley
-		[3486] = 20,                             -- Ravenholdt Manor
-		]]--
-	},
-	[1206] = {	-- Arathi Highlands
-		["160:230:558:112"] = 333,	-- Circle of East Binding
-		["170:155:419:293"] = 336,	-- Circle of Outer Binding
-		["175:225:370:186"] = 320,	-- Refuge Pointe
-		["180:210:472:165"] = 315,	-- Dabyrie's Farmstead
-		["190:210:138:54"] = 334,	-- Circle of West Binding
-		["190:240:87:138"] = 1857,	-- Thoradin's Wall
-		["200:220:355:412"] = 880,	-- Thandol Span
-		["205:250:655:120"] = 321,	-- Hammerfall
-		["210:185:286:310"] = 335,	-- Circle of Inner Binding
-		["215:210:559:333"] = 317,	-- Witherbark Village
-		["215:235:432:362"] = 316,	-- Boulderfist Hall
-		["230:195:531:276"] = 314,	-- Go'Shek Farm
-		["230:240:192:90"] = 313,	-- Northfold Manor
-		["240:230:108:287"] = 324,	-- Stromgarde Keep
-		["245:245:232:145"] = 1858,	-- Boulder'gor
-		["256:215:171:424"] = 327,	-- Faldir's Cove
-		--[[
-		[318] = 6,                               -- Drywhisker Gorge
-		[322] = 9,                               -- Blackwater Shipwrecks
-		[323] = 10,                              -- O'Breen's Camp
-		[325] = 12,                              -- The Tower of Arathor
-		[326] = 13,                              -- The Sanctum
-		[328] = 15,                              -- The Drowned Reef
-		[1837] = 21,                             -- Witherbark Caverns
-		[2401] = 24,                             -- The Forbidding Sea
-		]]--
-	},
-	[1207] = {	-- Badlands
-		["195:200:325:148"] = 338,	-- Angor Fortress
-		["200:195:445:120"] = 346,	-- Hammertoe's Digsite
-		["220:220:551:48"] = 341,	-- Camp Kosh
-		["230:230:349:256"] = 1877,	-- Valley of Fangs
-		["240:255:0:148"] = 340,	-- Kargath
-		["245:205:389:7"] = 1897,	-- The Maker's Terrace
-		["245:205:498:209"] = 1898,	-- Dustwind Gulch
-		["255:205:17:310"] = 337,	-- Apocryphan's Rest
-		["255:220:12:428"] = 344,	-- Camp Cagg
-		["255:280:501:341"] = 342,	-- Camp Boff
-		["265:270:345:389"] = 345,	-- Agmond's End
-		["270:275:159:199"] = 1878,	-- The Dustbowl
-		["285:240:148:384"] = 1879,	-- Mirage Flats
-		["370:455:611:110"] = 339,	-- Lethlor Ravine
-		--[[
-		[343] = 7,                               -- Camp Wurg
-		[347] = 11,                              -- Dustbelch Grotto
-		[1517] = 12,                             -- Uldaman
-		]]--
-	},
-	[1209] = {	-- Blasted Lands
-		["170:145:405:123"] = 2517,	-- Rise of the Defiler
-		["170:200:472:9"] = 1457,	-- Garrison Armory
-		["185:155:310:133"] = 1441,	-- Altar of Storms
-		["185:190:559:30"] = 1438,	-- Nethergarde Keep
-		["195:180:361:15"] = 1437,	-- Dreadmaul Hold
-		["225:170:501:140"] = 1440,	-- Serpent's Coil
-		["245:195:361:195"] = 1439,	-- Dreadmaul Post
-		["265:220:453:259"] = 72,	-- The Dark Portal
-		["384:450:212:178"] = 73,	-- The Tainted Scar
-	},
-	[1224] = {	-- Burning Steppes
-		["220:225:707:168"] = 249,	-- Dreadmaul Rock
-		["225:220:36:109"] = 255,	-- Altar of Storms
-		["245:265:334:114"] = 252,	-- Blackrock Stronghold
-		["256:280:173:101"] = 254,	-- Blackrock Mountain
-		["270:285:513:99"] = 250,	-- Ruins of Thaurissan
-		["270:310:589:279"] = 2417,	-- Blackrock Pass
-		["280:355:722:46"] = 2420,	-- Terror Wing Path
-		["294:270:708:311"] = 2418,	-- Morgan's Vigil
-		["320:270:377:285"] = 253,	-- The Pillar of Ash
-		["415:315:56:258"] = 2421,	-- Draco'dar
-		--[[
-		[251] = 3,                               -- Flame Crest
-		[2419] = 10,                             -- Slither Rock
-		]]--
-	},
-	[1233] = {	-- Deadwind Pass
-		["270:270:426:299"] = 2561,	-- The Vice
-		["300:245:269:337"] = 2562,	-- Karazhan
-		["380:365:249:76"] = 2697,	-- Deadman's Crossing
-		--[[
-		[2558] = 1,                              -- Deadwind Ravine
-		[2559] = 2,                              -- Diamondhead River
-		[2560] = 3,                              -- Ariden's Camp
-		[2563] = 6,                              -- Morgan's Plot
-		[2837] = 8,                              -- The Master's Cellar
-		[2937] = 9,                              -- Grosh'gok Compound
-		[2938] = 10,                             -- Sleeping Gorge
-		]]--
-	},
-	[1216] = {	-- Dun Morogh
-		["115:115:252:249"] = 137,	-- Brewnall Village
-		["125:125:217:287"] = 135,	-- Frostmane Hold
-		["128:120:792:279"] = 806,	-- South Gate Outpost
-		["128:128:573:280"] = 803,	-- Amberstill Ranch
-		["128:165:502:221"] = 138,	-- Misty Pine Refuge
-		["128:165:759:173"] = 808,	-- North Gate Outpost
-		["128:180:281:167"] = 211,	-- Iceflow Lake
-		["128:190:347:163"] = 802,	-- Shimmer Ridge
-		["150:128:295:385"] = 800,	-- Coldridge Pass
-		["155:128:522:322"] = 804,	-- The Tundrid Hills
-		["155:170:694:273"] = 212,	-- Helm's Bed Lake
-		["165:165:608:291"] = 134,	-- Gol'Bolar Quarry
-		["180:128:274:296"] = 801,	-- Chill Breeze Valley
-		["180:165:166:184"] = 133,	-- Gnomeregan
-		["200:185:314:311"] = 136,	-- The Grizzled Den
-		["200:200:386:294"] = 131,	-- Kharanos
-		["240:185:155:403"] = 132,	-- Coldridge Valley
-		["315:200:397:163"] = 809,	-- Gates of Ironforge
-		--[[
-		[77] = 1,                                -- Anvilmar
-		[189] = 10,                              -- Steelgrill's Depot
-		[716] = 13,                              -- Ironband's Compound
-		[805] = 19,                              -- South Gate Pass
-		[807] = 21,                              -- North Gate Pass
-		[2102] = 24,                             -- Thunderbrew Distillery
-		]]--
-	},
-	[1235] = {	-- Duskwood
-		["160:330:19:132"] = 1097,	-- The Hushed Bank
-		["195:145:102:302"] = 94,	-- Raven Hill
-		["200:175:653:120"] = 1098,	-- Manor Mistmantle
-		["220:220:690:353"] = 121,	-- Tranquil Gardens Cemetery
-		["220:340:504:117"] = 242,	-- Brightwood Grove
-		["235:250:390:382"] = 245,	-- The Yorgen Farmstead
-		["250:230:539:369"] = 241,	-- The Rotting Orchard
-		["255:285:243:348"] = 93,	-- Vul'Gol Ogre Mound
-		["275:250:55:342"] = 536,	-- Addle's Stead
-		["315:280:631:162"] = 42,	-- Darkshire
-		["350:300:85:149"] = 492,	-- Raven Hill Cemetery
-		["360:420:298:79"] = 856,	-- Twilight Grove
-		["910:210:89:31"] = 799,	-- The Darkened Bank
-		--[[
-		[13] = 1,                                -- The World Tree
-		[32] = 2,                                -- The Cemetary
-		[243] = 9,                               -- Forlorn Rowe
-		[244] = 10,                              -- The Whipple Estate
-		[576] = 14,                              -- Beggar's Haunt
-		[2098] = 19,                             -- Dawning Wood Catacombs
-		[2161] = 20,                             -- Roland's Doom
-		]]--
-	},
-	[1213] = {	-- Eastern Plaguelands
-		["165:160:537:367"] = 2264,	-- Corin's Crossing
-		["175:245:716:299"] = 2268,	-- Light's Hope Chapel
-		["180:160:592:241"] = 2271,	-- Eastwall Tower
-		["185:150:172:477"] = 2261,	-- The Undercroft
-		["190:205:620:128"] = 2272,	-- Northdale
-		["190:205:79:98"] = 2627,	-- Terrordale
-		["195:275:620:291"] = 2622,	-- Pestilent Scar
-		["200:205:156:360"] = 2260,	-- The Marris Stead
-		["205:165:291:401"] = 2263,	-- Crown Guard Tower
-		["205:165:614:30"] = 2273,	-- Zul'Mashar
-		["205:250:409:345"] = 2623,	-- The Infectis Scar
-		["210:179:309:489"] = 2262,	-- Darrowshire
-		["210:210:271:261"] = 2258,	-- The Fungal Vale
-		["220:360:7:231"] = 2619,	-- Thondroril River
-		["225:215:722:166"] = 2270,	-- The Noxious Glade
-		["230:150:422:36"] = 2276,	-- Quel'Lithien Lodge
-		["230:235:442:199"] = 2624,	-- Blackwood Lake
-		["240:195:457:109"] = 2275,	-- Northpass Tower
-		["240:200:194:9"] = 2279,	-- Stratholme
-		["245:170:717:471"] = 2266,	-- Tyr's Hand
-		["250:175:537:463"] = 2621,	-- Lake Mereldar
-		["360:270:169:83"] = 2277,	-- Plaguewood
-		--[[
-		[1019] = 1,                              -- The Green Belt
-		[2265] = 9,                              -- Scarlet Base Camp
-		[2267] = 11,                             -- The Scarlet Basilica
-		[2269] = 13,                             -- Browman Mill
-		[2274] = 18,                             -- Mazra'Alor
-		[2278] = 22,                             -- Scourgehold
-		[2299] = 24,                             -- Darrowmere Lake
-		[2625] = 30,                             -- Eastwall Gate
-		[2626] = 31,                             -- Terrorweb Tunnel
-		]]--
-	},
-	[1228] = {	-- Elwynn Forest
-		["225:220:422:332"] = 18,	-- Crystal Lake
-		["240:220:250:270"] = 87,	-- Goldshire
-		["255:250:551:292"] = 91,	-- Tower of Azora
-		["256:210:704:330"] = 88,	-- Eastvale Logging Camp
-		["256:237:425:431"] = 797,	-- Jerod's Landing
-		["256:240:238:428"] = 57,	-- Fargodeep Mine
-		["256:249:577:419"] = 62,	-- Brackwell Pumpkin Patch
-		["256:256:381:147"] = 9,	-- Northshire Valley
-		["256:341:124:327"] = 60,	-- Forest's Edge
-		["306:233:696:435"] = 798,	-- Ridgepoint Tower
-		["310:256:587:190"] = 86,	-- Stone Cairn Lake
-		["485:405:0:0"] = 1519,	-- Stormwind City
-		--[[
-		[23] = 3,                                -- Northshire River
-		[24] = 4,                                -- Northshire Abbey
-		[34] = 5,                                -- Echo Ridge Mine
-		[53] = 6,                                -- Thieves Camp
-		[54] = 7,                                -- Jasperlode Mine
-		[56] = 9,                                -- Heroes' Vigil
-		[59] = 11,                               -- Northshire Vineyards
-		[61] = 13,                               -- Thunder Falls
-		[63] = 15,                               -- The Stonefield Farm
-		[64] = 16,                               -- The Maclure Vineyards
-		[80] = 17,                               -- Stormwind Mountains
-		[89] = 21,                               -- Mirror Lake Orchard
-		[92] = 23,                               -- Mirror Lake
-		[120] = 24,                              -- Westbrook Garrison
-		]]--
-	},
-	[1214] = {	-- Hillsbrad Forest
-		["125:100:109:482"] = 896,	-- Purgation Isle
-		["165:200:175:275"] = 288,	-- Azurelode Mine
-		["205:155:414:154"] = 1056,	-- Darrow Hill
-		["215:240:541:236"] = 289,	-- Nethander Stead
-		["220:310:509:0"] = 272,	-- Tarren Mill
-		["230:320:524:339"] = 294,	-- Eastern Strand
-		["235:270:418:201"] = 271,	-- Southshore
-		["240:275:637:294"] = 290,	-- Dun Garok
-		["285:155:208:368"] = 295,	-- Western Strand
-		["288:225:2:192"] = 285,	-- Southpoint Tower
-		["305:275:198:155"] = 286,	-- Hillsbrad Fields
-		["384:365:605:75"] = 275,	-- Durnholde Keep
-		--[[
-		[287] = 6,                               -- Hillsbrad
-		[1057] = 14,                             -- Thoradin's Wall
-		[2397] = 15,                             -- The Great Sea
-		]]--
-	},
-	[1236] = {	-- Loch Modan
-		["195:250:109:370"] = 924,	-- Valley of Kings
-		["230:300:125:12"] = 838,	-- North Gate Pass
-		["235:270:229:11"] = 149,	-- Silver Stream Mine
-		["255:285:215:348"] = 923,	-- Stonesplinter Valley
-		["256:230:217:203"] = 144,	-- Thelsamar
-		["290:175:339:11"] = 146,	-- Stonewrought Dam
-		["295:358:309:310"] = 936,	-- Grizzlepaw Ridge
-		["315:235:542:48"] = 143,	-- Mo'grosh Stronghold
-		["320:410:352:87"] = 556,	-- The Loch
-		["345:256:482:321"] = 142,	-- Ironband's Excavation Site
-		["370:295:546:199"] = 147,	-- The Farstrider Lodge
-		--[[
-		[145] = 4,                               -- Algaz Gate
-		[837] = 9,                               -- Dun Algaz
-		[839] = 11,                              -- South Gate Pass
-		[925] = 14,                              -- Algaz Station
-		[2101] = 16,                             -- Stoutlager Inn
-		]]--
-	},
-	[1237] = {	-- Redridge Mountains
-		["235:270:399:129"] = 97,	-- Alther's Mill
-		["250:250:654:161"] = 1000,	-- Galardell Valley
-		["255:300:500:215"] = 70,	-- Stonewatch
-		["275:256:277:0"] = 996,	-- Render's Camp
-		["320:210:595:320"] = 71,	-- Stonewatch Falls
-		["340:195:83:197"] = 69,	-- Lakeshire
-		["365:245:121:72"] = 95,	-- Redridge Canyons
-		["365:350:0:284"] = 1002,	-- Three Corners
-		["430:290:187:333"] = 1001,	-- Lakeridge Highway
-		["465:255:484:361"] = 997,	-- Render's Valley
-		["535:275:133:240"] = 68,	-- Lake Everstill
-		--[[
-		[96] = 6,                                -- Tower of Ilgalar
-		[98] = 8,                                -- Rethban Caverns
-		[998] = 11,                              -- Render's Rock
-		[999] = 12,                              -- Stonewatch Tower
-		[2099] = 16,                             -- Stonewatch Keep
-		]]--
-	},
-	[1220] = {	-- Searing Gorge
-		["275:235:77:366"] = 1957,	-- Blackchar Cave
-		["305:220:494:300"] = 247,	-- Grimesilt Dig Site
-		["305:230:545:407"] = 1958,	-- Tanner Camp
-		["360:280:247:388"] = 1444,	-- The Sea of Cinders
-		["405:430:85:30"] = 1442,	-- Firewatch Ridge
-		["425:325:250:170"] = 246,	-- The Cauldron
-		["460:365:422:8"] = 1959,	-- Dustfire Valley
-		--[[
-		[1443] = 4,                              -- The Slag Pit
-		[1445] = 6,                              -- Blackrock Mountain
-		[1446] = 7,                              -- Thorium Point
-		[2838] = 11,                             -- Stonewrought Pass
-		]]--
-	},
-	[1211] = {	-- Silverpine Forest
-		["140:125:391:446"] = 204,	-- Pyrewood Village
-		["160:170:470:261"] = 213,	-- Deep Elem Mine
-		["165:185:382:252"] = 229,	-- Olsen's Farthing
-		["175:165:402:65"] = 240,	-- The Dead Field
-		["180:128:323:128"] = 928,	-- North Tide's Hollow
-		["180:185:457:144"] = 237,	-- The Decrepit Ferry
-		["185:165:286:37"] = 226,	-- The Skittering Dark
-		["210:160:352:168"] = 228,	-- The Sepulcher
-		["210:215:379:447"] = 230,	-- The Greymane Wall
-		["220:160:364:359"] = 236,	-- Shadowfang Keep
-		["240:180:491:417"] = 231,	-- Beren's Peril
-		["240:240:494:262"] = 233,	-- Ambermill
-		["250:215:593:74"] = 172,	-- Fenris Isle
-		["256:160:465:0"] = 238,	-- Malden's Orchard
-		["256:220:459:13"] = 927,	-- The Shining Strand
-		--[[
-		[235] = 1,                               -- Fenris Keep
-		[227] = 5,                               -- Valgan's Field
-		[232] = 10,                              -- The Dawning Isles
-		[239] = 16,                              -- The Ivar Patch
-		[305] = 18,                              -- North Tide's Run
-		[306] = 19,                              -- South Tide's Run
-		[926] = 20,                              -- Bucklebree Farm
-		[1338] = 23,                             -- Lordamere Lake
-		[2398] = 24,                             -- The Great Sea
-		]]--
-	},
-	[1238] = {	-- Stranglethorn Vale
-		["105:110:311:131"] = 129,	-- Mizjah Ruins
-		["105:125:387:64"] = 1740,	-- Venture Co. Base Camp
-		["110:105:260:132"] = 117,	-- Grom'gol Base Camp
-		["110:110:306:301"] = 477,	-- Ruins of Jubuwal
-		["110:140:371:129"] = 127,	-- Balia'mah Ruins
-		["115:115:156:42"] = 122,	-- Zuuldaia Ruins
-		["120:120:345:276"] = 310,	-- Crystalvein Mine
-		["125:120:314:493"] = 297,	-- Jaguero Isle
-		["125:125:280:368"] = 1737,	-- Mistvale Valley
-		["125:140:196:3"] = 102,	-- Ruins of Zul'Kunda
-		["128:125:331:59"] = 37,	-- Lake Nazferiti
-		["128:125:364:231"] = 128,	-- Ziata'jai Ruins
-		["128:175:432:94"] = 105,	-- Mosh'Ogg Ogre Mound
-		["140:110:269:26"] = 100,	-- Nesingwary's Expedition
-		["145:128:203:433"] = 35,	-- Booty Bay
-		["155:150:388:0"] = 101,	-- Kurzen's Compound
-		["165:175:194:284"] = 1739,	-- Bloodsail Compound
-		["165:190:229:422"] = 43,	-- Wild Shore
-		["170:125:394:212"] = 103,	-- Ruins of Zul'Mamwe
-		["170:90:284:0"] = 99,		-- Rebel Camp
-		["190:175:152:90"] = 104,	-- The Vile Reef
-		["200:185:235:189"] = 1741,	-- Gurubashi Arena
-		["245:220:483:8"] = 19,		-- Zul'Gurub
-		["90:115:211:359"] = 1738,	-- Nek'mani Wellspring
-		["90:80:241:92"] = 123,		-- Bal'lal Ruins
-		["95:95:299:88"] = 125,		-- Kal'ai Ruins
-		["95:95:350:335"] = 311,	-- Ruins of Aboraz
-		--[[
-		[7] = 1,                                 -- Blackwater Cove
-		[106] = 13,                              -- The Stockpile
-		[126] = 18,                              -- Tkashi Ruins
-		[301] = 23,                              -- The Savage Coast
-		[302] = 24,                              -- The Crystal Shore
-		[303] = 25,                              -- Shell Beach
-		[312] = 28,                              -- Janeiro's Point
-		[1577] = 30,                             -- The Cape of Stranglethorn
-		[1578] = 31,                             -- Southern Savage Coast
-		[1742] = 37,                             -- Spirit Den
-		[1757] = 38,                             -- The Crimson Veil
-		[1758] = 39,                             -- The Riptide
-		[1759] = 40,                             -- The Damsel's Luck
-		[1760] = 41,                             -- Venture Co. Operations Center
-		[2177] = 42,                             -- Battle Ring
-		[2338] = 43,                             -- South Seas
-		[2339] = 44,                             -- The Great Sea
-		[3357] = 45,                             -- Yojamba Isle
-		]]--
-	},
-	[1239] = {	-- Swamp of Sorrows
-		["215:365:724:120"] = 1778,	-- Sorrowmurk
-		["235:205:171:145"] = 657,	-- The Harborage
-		["240:245:0:262"] = 1777,	-- Itharius's Cave
-		["245:305:0:140"] = 116,	-- Misty Valley
-		["256:668:746:0"] = 300,	-- Misty Reed Strand
-		["275:240:129:236"] = 1780,	-- Splinterspear Junction
-		["300:275:565:218"] = 74,	-- Pool of Tears
-		["315:235:286:110"] = 1798,	-- The Shifting Mire
-		["345:250:552:378"] = 1797,	-- Stagalbog
-		["360:315:279:237"] = 75,	-- Stonard
-		["365:305:492:0"] = 76,		-- Fallow Sanctuary
-		--[[
-		[1779] = 9,                              -- Draenil'dur Village
-		[1817] = 13,                             -- Stagalbog Cave
-		[1978] = 14,                             -- Misty Reed Post
-		[2403] = 15,                             -- The Forbidding Sea
-		]]--
-	},
-	[1215] = {	-- The Hinterlands
-		["145:220:158:149"] = 1882,	-- Plaguemist Ravine
-		["160:145:512:232"] = 351,	-- Skulk Rock
-		["170:170:319:302"] = 1883,	-- Valorwind Lake
-		["170:310:693:303"] = 307,	-- The Overlook Cliffs
-		["180:170:408:260"] = 1886,	-- The Creeping Ruin
-		["185:195:237:185"] = 350,	-- Quel'Danil Lodge
-		["195:185:240:387"] = 353,	-- Shadra'Alor
-		["200:165:373:365"] = 355,	-- The Altar of Zul
-		["205:195:374:164"] = 1884,	-- Agol'watha
-		["225:200:171:306"] = 1885,	-- Hiri'watha
-		["235:285:505:333"] = 354,	-- Jintha'Alor
-		["255:205:13:245"] = 348,	-- Aerie Peak
-		["275:275:509:19"] = 356,	-- Seradane
-		["280:205:571:239"] = 1917,	-- Shaol'watha
-		--[[
-		[349] = 3,                               -- Wildhammer Keep
-		[352] = 6,                               -- Zun'watha
-		[1880] = 11,                             -- Featherbeard's Hovel
-		[1881] = 12,                             -- Shindigger's Camp
-		[1887] = 18,                             -- Bogen's Ledge
-		[2400] = 20,                             -- The Forbidding Sea
-		[3317] = 21,                             -- Revantusk Village
-		]]--
-	},
-	[1210] = {	-- Tirisfal Glades
-		["128:158:537:299"] = 159,	-- Brill
-		["150:128:474:327"] = 166,	-- Cold Hearth Manor
-		["173:128:694:289"] = 167,	-- Crusader Outpost
-		["174:220:497:145"] = 164,	-- Garren's Haunt
-		["175:247:689:104"] = 459,	-- Scarlet Watch Post
-		["186:128:395:277"] = 810,	-- Stillwater Pond
-		["201:288:587:139"] = 162,	-- Brightwater Lake
-		["211:189:746:125"] = 160,	-- Whispering Gardens
-		["216:179:630:326"] = 165,	-- Balnir Farmstead
-		["230:205:698:362"] = 152,	-- The Bulwark
-		["237:214:757:205"] = 812,	-- Venomweb Vale
-		["243:199:363:349"] = 811,	-- Nightmare Vale
-		["245:205:227:328"] = 154,	-- Deathknell
-		["256:156:239:250"] = 156,	-- Solliden Farmstead
-		["256:210:335:139"] = 157,	-- Agamand Mills
-		["315:235:463:361"] = 1497,	-- Undercity
-		--[[
-		[153] = 2,                               -- Ruins of Lordaeron
-		[155] = 4,                               -- Night Web's Hollow
-		[158] = 7,                               -- Agamand Family Crypt
-		[161] = 10,                              -- Terrace of Repose
-		[163] = 12,                              -- Gunther's Retreat
-		[168] = 17,                              -- The North Coast
-		[169] = 18,                              -- Whispering Shore
-		[173] = 19,                              -- Faol's Rest
-		[2117] = 24,                             -- Shadow Grave
-		[2118] = 25,                             -- Brill Town Hall
-		[2119] = 26,                             -- Gallows' End Tavern
-		[2399] = 27,                             -- The Great Sea
-		]]--
-	},
-	[1212] = {	-- Western Plaguelands
-		["160:125:300:311"] = 199,	-- Felstone Field
-		["160:200:566:198"] = 198,	-- The Weeping Cave
-		["170:165:600:412"] = 2298,	-- Caer Darrow
-		["170:190:451:323"] = 202,	-- The Writhing Haunt
-		["180:205:520:250"] = 201,	-- Gahrron's Withering
-		["205:340:590:86"] = 2620,	-- Thondroril River
-		["220:150:381:265"] = 200,	-- Dalson's Tears
-		["220:180:382:164"] = 192,	-- Northridge Lumber Camp
-		["225:185:137:293"] = 813,	-- The Bulwark
-		["285:230:260:355"] = 193,	-- Ruins of Andorhal
-		["300:206:355:462"] = 197,	-- Sorrow Hill
-		["340:288:307:16"] = 190,	-- Hearthglen
-		["370:270:504:343"] = 2297,	-- Darrowmere Lake
-		--[[
-		[195] = 4,                               -- School of Necromancy
-		[196] = 5,                               -- Uther's Tomb
-		[203] = 12,                              -- Mardenholde Keep
-		[3197] = 17,                             -- Chillwind Camp
-		]]--
-	},
-	[1240] = {	-- Westfall
-		["165:200:488:0"] = 916,	-- The Jansen Stead
-		["195:240:442:241"] = 108,	-- Sentinel Hill
-		["200:185:208:375"] = 921,	-- Demont's Place
-		["200:240:524:252"] = 917,	-- The Dead Acre
-		["210:215:387:11"] = 109,	-- Furlbrow's Pumpkin Farm
-		["215:215:307:29"] = 111,	-- Jangolode Mine
-		["220:200:317:331"] = 20,	-- Moonbrook
-		["225:205:328:148"] = 918,	-- The Molsen Farm
-		["225:210:459:105"] = 107,	-- Saldean's Farm
-		["225:256:220:102"] = 113,	-- Gold Coast Quarry
-		["256:175:339:418"] = 920,	-- The Dagger Hills
-		["280:190:205:467"] = 115,	-- Westfall Lighthouse
-		["288:235:523:377"] = 922,	-- The Dust Plains
-		["305:210:204:260"] = 219,	-- Alexston Farmstead
-		--[[
-		[2] = 1,                                 -- Longshore
-		[26] = 3,                                -- Lighthouse
-		[919] = 14,                              -- Stendel's Pond
-		[2364] = 19,                             -- The Great Sea
-		]]--
-	},
-	[1243] = {	-- Wetlands
-		["175:128:13:314"] = 150,	-- Menethil Harbor
-		["185:240:456:125"] = 1025,	-- The Green Belt
-		["190:160:628:176"] = 1017,	-- Raptor Ridge
-		["195:185:247:205"] = 118,	-- Whelgar's Excavation Site
-		["200:185:349:115"] = 309,	-- Ironbeard's Tomb
-		["200:240:237:41"] = 1023,	-- Saltspray Glen
-		["205:180:401:21"] = 205,	-- Dun Modr
-		["205:245:527:264"] = 1020,	-- Mosshide Fen
-		["225:185:347:218"] = 1036,	-- Angerfang Encampment
-		["225:190:89:142"] = 1022,	-- Bluegill Marsh
-		["230:190:470:371"] = 1021,	-- Thelgen Rock
-		["240:175:77:245"] = 1018,	-- Black Channel Marsh
-		["256:250:507:115"] = 1016,	-- Direforge Hill
-		["300:240:92:82"] = 1024,	-- Sundown Marsh
-		["350:360:611:230"] = 1038,	-- Dragonmaw Gates
-		--[[
-		[298] = 4,                               -- Baradin Bay
-		[299] = 5,                               -- Menethil Bay
-		[836] = 7,                               -- Dun Algaz
-		[881] = 8,                               -- Thandol Span
-		[1037] = 19,                             -- Grim Batol
-		[1039] = 21,                             -- The Lost Fleet
-		[2103] = 22,                             -- Menethil Keep
-		[2104] = 23,                             -- Deepwater Tavern
-		[2365] = 24,                             -- The Great Sea
-		[2402] = 25,                             -- The Forbidding Sea
-		]]--
-	},
-	
-	-- Battlegrounds
-	[1273] = {	-- Alterac Valley
-		["235:290:399:375"] = 2978,	-- Frostwolf Keep
-		["270:240:348:13"] = 2959,	-- Dun Baldar
-		["300:300:335:172"] = 3057,	-- Field of Strife
-	},
-}, EXPLORATION_ID_META);
+local EXPLORATION_ID_MAP = setmetatable({}, EXPLORATION_ID_META);
 
 local ExploredMapDataByIDMeta = { __index = function(t, mapID)
 	local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(mapID);
@@ -5734,12 +4712,12 @@ local ExploredMapDataByIDMeta = { __index = function(t, mapID)
 		rawset(t, mapID, explorationByID);
 		for _,info in ipairs(exploredMapTextures) do
 			if info.textureWidth > 0 and info.textureHeight > 0 then
-				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-				local remappedExplorationID = EXPLORATION_ID_MAP[artID][hash];
+				local maphash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				local remappedExplorationID = EXPLORATION_ID_MAP[artID][maphash];
 				if remappedExplorationID then
 					rawset(explorationByID, remappedExplorationID, true);
 				else
-					table.insert(missingHashes, hash);
+					table.insert(missingHashes, maphash);
 				end
 			end
 		end
@@ -5755,12 +4733,12 @@ local ExploredMapDataByIDMeta = { __index = function(t, mapID)
 				table.insert(missingExplorationGroup.g, missingExplorationGroup.map);
 			end
 			missingExplorationGroup.map.g = {};
-			for i,hash in ipairs(missingHashes) do
+			for i,maphash in ipairs(missingHashes) do
 				local exploration = app.CreateExploration(-1);
 				exploration.parent = missingExplorationGroup.map;
-				exploration.hash = hash;
+				exploration.maphash = maphash;
 				table.insert(missingExplorationGroup.map.g, exploration);
-				print("Missing Exploration ID for ", hash, " for mapID ", mapID);
+				print("Missing Exploration ID for ", maphash, " for mapID ", mapID);
 			end
 			app.CreateMiniListForGroup(missingExplorationGroup);
 		end
@@ -5780,26 +4758,21 @@ local fields = {
 		return "explorationID";
 	end,
 	["text"] = function(t)
-		return C_Map.GetAreaInfo(t.explorationID) or t.hash;
+		return C_Map.GetAreaInfo(t.explorationID) or t.maphash;
+	end,
+	["title"] = function(t)
+		return t.maphash;
 	end,
 	["icon"] = function(t)
 		return app.asset("INV_Misc_Map02");
 	end,
 	["preview"] = function(t)
-		local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
-		if exploredMapTextures then
-			for i,info in ipairs(exploredMapTextures) do
-				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-				if hash == t.hash then
-					local texture = info.fileDataIDs[1];
-					if texture then
-						rawset(t, "preview", texture);
-						local exploration = EXPLORATION_ID_MAP[t.artID];
-						local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-						if not exploration[hash] then exploration[hash] = -i; end
-						return texture;
-					end
-				end
+		local exploredMapTextureInfo = t.exploredMapTextureInfo;
+		if exploredMapTextureInfo then
+			local texture = exploredMapTextureInfo.fileDataIDs[1];
+			if texture then
+				rawset(t, "preview", texture);
+				return texture;
 			end
 		end
 	end,
@@ -5813,25 +4786,37 @@ local fields = {
 		return app.CollectibleExploration;
 	end,
 	["collected"] = function(t)
-		return ExploredSubMapsByID[t.mapID][t.explorationID];
+		return t.exploredMapTextureInfo and 1;
 	end,
-	["hash"] = function(t)
+	["exploredMapTextureInfo"] = function(t)
+		local exploredMapTextures = C_MapExplorationInfo_GetExploredMapTextures(t.mapID)
+		if exploredMapTextures then
+			for i,info in ipairs(exploredMapTextures) do
+				local maphash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				if maphash == t.maphash then
+					rawset(t, "exploredMapTextureInfo", info);
+					return info;
+				end
+			end
+		end
+	end,
+	["maphash"] = function(t)
 		local artID = t.artID;
 		if artID then
-			for hash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
+			for maphash,explorationID in pairs(EXPLORATION_ID_MAP[artID]) do
 				if explorationID == t.explorationID then
-					return hash;
+					return maphash;
 				end
 			end
 		end
 	end,
 	["coords"] = function(t)
-		local hash = t.hash;
-		if hash then
+		local maphash = t.maphash;
+		if maphash then
 			local layers = C_Map.GetMapArtLayers(t.mapID);
 			if layers and layers[1] then
 				local coords = {};
-				local width, height, offsetX, offsetY = strsplit(":", hash);
+				local width, height, offsetX, offsetY = strsplit(":", maphash);
 				tinsert(coords, {((offsetX + (width * 0.5)) * 100) / layers[1].layerWidth, ((offsetY + (height * 0.5)) * 100) / layers[1].layerHeight, t.mapID});
 				return coords;
 			end
@@ -5884,21 +4869,42 @@ app.CreateMap = function(id, t)
 	local artID = map.artID;
 	if artID and map.g then
 		local exploration = EXPLORATION_ID_MAP[artID];
+		local explorationHeader = nil;
+		for i,o in ipairs(map.g) do
+			if o.key == "headerID" and o.headerID == -15 then
+				explorationHeader = o;
+				if o.g then
+					for j,e in ipairs(o.g) do
+						exploration[e.maphash] = e.explorationID;
+					end
+				end
+				break;
+			end
+		end
+		
+		local newExplorationObjects = {};
 		local explored = C_MapExplorationInfo_GetExploredMapTextures(id);
 		if explored then
 			for i,info in pairs(explored) do
-				local hash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
-				if not exploration[hash] then
-					exploration[hash] = -i;
+				local maphash = info.textureWidth..":"..info.textureHeight..":"..info.offsetX..":"..info.offsetY;
+				if not exploration[maphash] then
+					exploration[maphash] = -i;
+					tinsert(newExplorationObjects, app.CreateExploration(-i, {artID=artID,maphash=maphash}));
 				end
 			end
 		end
-		local explorationObjects = {};
-		for hash,explorationID in pairs(exploration) do
-			tinsert(explorationObjects, app.CreateExploration(explorationID, {artID=artID,hash=hash}));
+		if #newExplorationObjects > 0 then
+			if explorationHeader then
+				for i,o in ipairs(newExplorationObjects) do
+					table.insert(explorationHeader.g, o);
+				end
+			else
+				explorationHeader = app.CreateNPC(-15, newExplorationObjects);
+				tinsert(map.g, 1, explorationHeader);
+			end
 		end
-		if #explorationObjects > 0 then
-			table.sort(explorationObjects, function(a, b)
+		if explorationHeader and explorationHeader.g then
+			table.sort(explorationHeader.g, function(a, b)
 				if a and a.text then
 					if b and b.text then
 						return a.text <= b.text;
@@ -5907,7 +4913,6 @@ app.CreateMap = function(id, t)
 				end
 				return false;
 			end);
-			tinsert(map.g, 1, app.CreateNPC(-15, explorationObjects));
 		end
 	end
 	return map;
@@ -8206,8 +7211,8 @@ local function RowOnEnter(self)
 		if not GameTooltipModel:TrySetModel(reference) then
 			local texture = reference.preview or reference.icon;
 			if texture then
-				if reference.explorationID and reference.hash and reference.preview then
-					local width, height, offsetX, offsetY = strsplit(":", reference.hash);
+				if reference.explorationID and reference.maphash and reference.preview then
+					local width, height, offsetX, offsetY = strsplit(":", reference.maphash);
 					GameTooltipIcon:SetSize(tonumber(width) or 72,tonumber(height) or 72);
 				else
 					GameTooltipIcon:SetSize(72,72);

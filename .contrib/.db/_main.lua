@@ -843,7 +843,15 @@ e = function(id, t)										-- Create an ENCOUNTER Object
 	-- #endif
 end
 exploration = function(id, t)							-- Create an EXPLORATION Object
+	if type(t) == "string" then t = { ["maphash"] = t }; end
 	return struct("explorationID", id, t);
+end
+explorationBatch = function(data)
+	local groups = {};
+	for maphash,explorationID in pairs(data) do
+		table.insert(groups, exploration(explorationID, maphash));
+	end
+	return groups;
 end
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
 	return struct("flightPathID", id, t);
