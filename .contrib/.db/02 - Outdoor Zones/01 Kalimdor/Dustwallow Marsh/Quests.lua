@@ -16,16 +16,25 @@ _.Zones =
 						{ "i", 5938, 12 },	-- Pristine Crawler Leg
 					},
 					["lvl"] = 33,
-					["g"] = {
+					["groups"] = {
 						i(6801),	-- Baroque Apron
 					},
+				}),
+				q(11136, {	-- A Disturbing Development
+					["qg"] = 23951,	-- Lieutenant Aden
+					["sourceQuest"] = 11134,	-- The End of the Deserters
+					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
 				}),
 				q(1168, {	-- Army of the Black Dragon
 					["qg"] = 4502,	-- Tharg
 					["coord"] = { 37.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
-					["g"] = {
+					["groups"] = {
 						i(9706),	-- Tharg's Disk
 						i(9705),	-- Tharg's Shoelace
 					},
@@ -61,7 +70,7 @@ _.Zones =
 					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
-					["g"] = {
+					["groups"] = {
 						i(10703),	-- Fiendish Skiv
 						i(10704),	-- Chillnail Splinter
 					},
@@ -84,6 +93,17 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				q(11193, {	-- Dastardly Denizens of the Deep
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["sourceQuest"] = 11192,	-- Thresher Oil
+					["coord"] = { 72.1, 47.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33127, 1 },	-- Dastardly Denizens of the Deep
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+				}),
 				q(1205, {	-- Deadmire
 					["qg"] = 3441,	-- Melor Stonehoof
 					["coord"] = { 61.52, 80.88, THUNDER_BLUFF },
@@ -102,6 +122,35 @@ _.Zones =
 						},
 					},
 				}),
+				q(11137, {	-- Defias in Dustwallow?
+					["qg"] = 5086,	-- Captain Wymor
+					["sourceQuest"] = 11136,	-- A Disturbing Development
+					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33037, 1 },	-- Defias Orders
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+					["groups"] = {
+						i(23679, {	-- Defias Orders
+							["cr"] = 23679,	-- Garn Mathers
+							["coord"] = { 64.9, 27.3, DUSTWALLOW_MARSH },
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
+				}),
+				q(11133, {	-- Discrediting the Deserters
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11128,	-- Propaganda War
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33015, 1 },	-- Altered Leaflets
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+				}),
 				q(1271, {	-- Feast at the Blue Recluse
 					["qg"] = 1141,	-- Angus Stern
 					["sourceQuests"] = {
@@ -113,7 +162,7 @@ _.Zones =
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(5951),	-- Moist Towelette
 					},
 				}),
@@ -133,7 +182,7 @@ _.Zones =
 						{ "i", 5809, 10 },	-- Highperch Venom Sac
 					},
 					["lvl"] = 25,
-					["g"] = {
+					["groups"] = {
 						i(6719),	-- Windborne Belt
 					},
 				}),
@@ -144,7 +193,7 @@ _.Zones =
 						{ "i", 5847, 12 },	-- Mirefin Head
 					},
 					["lvl"] = 32,
-					["g"] = {
+					["groups"] = {
 						i(9518),	-- Mud's Crushers
 						i(9519),	-- Durtfeet Stompers
 					},
@@ -158,7 +207,7 @@ _.Zones =
 						{ "i", 5841, 15 },	-- Searing Heart
 					},
 					["lvl"] = 38,
-					["g"] = {
+					["groups"] = {
 						i(9703),	-- Scorched Cape
 						i(9704),	-- Rustler Gloves
 					},
@@ -201,6 +250,22 @@ _.Zones =
 						}),
 					},
 				}),
+				q(11194, {	-- Is it Real?
+					["qg"] = 23896,	-- "Dirty" Michael Crowe <Fish Merchant>
+					["sourceQuest"] = 11193,	-- Dastardly Denizens of the Deep
+					["coord"] = { 69.2, 51.9, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+				}),
+				q(11141, {	-- Jaina Must Know
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11140,	-- Recover the Cargo!
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 33,
+				}),
 				q(1203, {	-- Jarl Needs a Blade
 					["qg"] = 4792,	-- "Swamp Eye" Jarl
 					["sourceQuest"] = 1206,	-- Jarl Needs Eyes
@@ -209,7 +274,7 @@ _.Zones =
 						{ "i", 3853, 1 },	-- Moonsteel Broadsword
 					},
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(9622),	-- Reedknot Ring
 						i(5016),	-- Artisan's Trousers
 					},
@@ -307,6 +372,13 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
+				q(11214, {	-- Mission to Mudsprocket
+					["qg"] = 23951,	-- Lieutenant Aden
+					["coord"] = { 65.1, 47.1, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 39,
+				}),
 				q(1260, {	-- Morgan Stern
 					["qg"] = 1141,	-- Angus Stern
 					["coord"] = { 41.4, 89.2, STORMWIND_CITY },
@@ -325,6 +397,28 @@ _.Zones =
 					},
 					["lvl"] = 33,
 				}),
+				q(11209, {	-- Nat's Bargain
+					["qg"] = 12919,	-- Nat Pagle
+					["sourceQuest"] = 11194,	-- Is it Real?
+					["coord"] = { 58.8, 60.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33166, 1 },	-- Pagle's Fish Paste, Extra Strength
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+					["groups"] = {
+						i(19221),	-- Darkmoon Special Reserve
+					},
+				}),
+				q(11210, {	-- Oh, It's Real
+					["qg"] = 12919,	-- Nat Pagle
+					["sourceQuest"] = 11209,	-- Nat's Bargain
+					["coord"] = { 58.8, 60.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+				}),
 				q(1166, {	-- Overlord Mok'Morokk's Concern
 					["qg"] = 4500,	-- Overlord Mok'Morokk
 					["coord"] = { 36.2, 31.4, DUSTWALLOW_MARSH },
@@ -335,7 +429,7 @@ _.Zones =
 						{ "i", 5836, 1 },	-- Mok'Morokk's Strongbox
 					},
 					["lvl"] = 38,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5835,	-- Mok'Morokk's Grog
 							["questID"] = 1166,	-- Overlord Mok'Morokk's Concern
@@ -354,16 +448,65 @@ _.Zones =
 						i(10702),	-- Enormous Ogre Boots
 					},
 				}),
+				q(11128, {	-- Propaganda War
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11126,	-- Traitors Among Us
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33008, 1 },	-- Deserter Propaganda
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+					["groups"] = {
+						i(33008, {	-- Deserter Propaganda
+							["coord"] = { 67.9, 58.7, DUSTWALLOW_MARSH },
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
+				}),
 				q(1273, {	-- Questioning Reethe
 					["qg"] = 4983,	-- Ogron
 					["sourceQuest"] = 1269,	-- Lieutenant Paval Reethe
 					["coord"] = { 40.8, 36.6, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(6797),	-- Eyepoker
 						i(6798),	-- Blasting Hackbut
 					},
+				}),
+				q(11140, applyclassicphase(TBC_PHASE_ONE, {	-- Recover the Cargo!
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11139,	-- Secondhand Diving Gear
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33041, 6 },	-- Salvaged Strongbox
+					},
+					["lvl"] = 32,
+					["groups"] = {
+						i(33045, {	-- Renn's Supplies
+							i(33040),	-- Repaired Diving Gear
+							i(33044, {	-- Salvage Kit
+								i(33041),	-- Salvaged Strongbox
+							}),
+						}),
+						i(33267),	-- Fleshripper
+						i(33270),	-- Mariner's Sword
+						i(33259),	-- Crimson Barbut
+					},
+				})),
+				q(11138, {	-- Renn McGill
+					["qg"] = 5086,	-- Captain Wymor
+					["sourceQuest"] = 11137,	-- Defias in Dustwallow?
+					["coord"] = { 59.7, 41.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33037, 1 },	-- Defias Orders
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
 				}),
 				q(1262, {	-- Report to Zor
 					["qg"] = 4791,	-- Nazeer Bloodpike
@@ -375,6 +518,19 @@ _.Zones =
 					},
 					["lvl"] = 30,
 				}),
+				q(11223, applyclassicphase(TBC_PHASE_ONE, {	-- Return to Jaina
+					["qg"] = 1748,	-- Highlord Bolvar Fordragon
+					["sourceQuest"] = 11222,	-- Warn Bolvar!
+					["coord"] = { 78.2, 18.1, STORMWIND_CITY },
+					["maps"] = { STORMWIND_CITY },
+					["races"] = ALLIANCE_ONLY,
+					["lvl"] = 33,
+					["groups"] = {
+						i(33269),	-- Bejeweled Dagger
+						i(33252),	-- Gleaming Scale Breastplate
+						i(33250),	-- Archer's Wristguard
+					},
+				})),
 				q(1953, {	-- Return to the Marsh
 					["qgs"] = {
 						5885,	-- Deino <Mage Trainer>
@@ -405,6 +561,24 @@ _.Zones =
 					},
 					["lvl"] = 40,
 				}),
+				q(11139, {	-- Secondhand Diving Gear
+					["qg"] = 23569,	-- Renn McGill <SI:7 Salvage Diver>
+					["sourceQuest"] = 11138,	-- Renn McGill
+					["coord"] = { 63.7, 17.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33038, 1 },	-- Damaged Diving Gear
+						{ "i", 33039, 1 },	-- Tool Kit
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+					["groups"] = {
+						i(33038, {	-- Damaged Diving Gear
+							["coord"] = { 62.6, 18.2, DUSTWALLOW_MARSH },
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
+				}),
 				q(7541, {	-- Service to the Horde
 					["qg"] = 4047,	-- Zor Lonetree
 					["sourceQuest"] = 1262,	-- Report to Zor
@@ -412,7 +586,7 @@ _.Zones =
 					["maps"] = { ORGRIMMAR },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(18585),	-- Band of Allegiance
 						i(18586),	-- Lonetree's Circle
 					},
@@ -424,7 +598,7 @@ _.Zones =
 						{ "i", 3713, 3 },	-- Soothing Spices
 					},
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(6807),	-- Frog Leg Stew
 					},
 				}),
@@ -433,7 +607,7 @@ _.Zones =
 					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
 				}),
@@ -442,9 +616,17 @@ _.Zones =
 					["coord"] = { 46.9, 17.5, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
-					["g"] = {
+					["groups"] = {
 						i(3825),	-- Elixir of Fortitude
 					},
+				}),
+				q(11142, {	-- Survey Alcaz Island
+					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
+					["sourceQuest"] = 11141,	-- Jaina Must Know
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 33,
 				}),
 				q(1268, {	-- Suspicious Hoofprints
 					["providers"] = {
@@ -463,6 +645,32 @@ _.Zones =
 					["coord"] = { 29.7, 47.7, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(11212, {	-- Tabetha's Farm
+					["qg"] = 4921,	-- Guard Byron
+					["coord"] = { 66.2, 46.1, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 37,
+				}),
+				q(11198, {	-- Take Down Tethyr!
+					["qg"] = 23905,	-- Major Mills
+					["sourceQuest"] = 11210,	-- Oh, It's Real
+					["coord"] = { 69.7, 51.2, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+					["groups"] = {
+						i(33228, {	-- Crimson Tunic
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(33253, {	-- Golden Helm
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(33247, {	-- Swift Wind Spaulders
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
 				}),
 				q(1253, {	-- The Black Shield (1/3)
 					["provider"] = { "o", 20992 },	-- Black Shield
@@ -556,7 +764,7 @@ _.Zones =
 					["coord"] = { 37, 33, DUSTWALLOW_MARSH },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 38,
-					["g"] = {
+					["groups"] = {
 						i(10700),	-- Encarmine Boots
 						i(10701),	-- Boots of Zua'tec
 					},
@@ -575,6 +783,25 @@ _.Zones =
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
 				}),
+				q(11134, {	-- The End of the Deserters
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["sourceQuest"] = 11133,	-- Discrediting the Deserters
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+					["groups"] = {
+						i(33232, {	-- Journeyman's Cowl
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(33249, {	-- Boots of the Skirmisher
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(33274, {	-- Mercenary's Crossbow
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
+				}),
 				q(1955, {	-- The Exorcism
 					["qg"] = 6546,	-- Tabetha
 					["sourceQuest"] = 1954,	-- The Infernal Orb
@@ -582,6 +809,14 @@ _.Zones =
 					["classes"] = { MAGE },
 					["cr"] = 6549,	-- Demon of the Orb
 					["lvl"] = 35,
+				}),
+				q(11177, {	-- The Hermit of Swamplight Manor
+					["qg"] = 23835,	-- Sergeant Amelyn
+					["sourceQuest"] = 11134,	-- The End of the Deserters
+					["coord"] = { 68.3, 51.8, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
 				}),
 				q(1954, {	-- The Infernal Orb
 					["qg"] = 6546,	-- Tabetha
@@ -694,6 +929,39 @@ _.Zones =
 					["coord"] = { 66, 46, DUSTWALLOW_MARSH },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 30,
+				}),
+				q(11191, {	-- This Old Lighthouse
+					["qg"] = 23835,	-- Sergeant Amelyn
+					["coord"] = { 68.3, 51.8, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+				}),
+				q(11126, {	-- Traitors Among Us
+					["qg"] = 23566,	-- Calia Hastings <SI:7>
+					["coord"] = { 68.3, 51.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 32,
+				}),
+				q(11192, {	-- Thresher Oil
+					["qg"] = 23892,	-- Babs Fizzletorque
+					["sourceQuest"] = 11191,	-- This Old Lighthouse
+					["coord"] = { 72.1, 47.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 33126, 4 },	-- Thresher Oil
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 30,
+				}),
+				q(11222, {	-- Warn Bolvar!
+					["qg"] = 4968,	-- Lady Jaina Proudmoore <Ruler of Theramore>
+					["sourceQuest"] = 11142,	-- Survey Alcaz Island
+					["coord"] = { 66.3, 49.0, DUSTWALLOW_MARSH },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 33,
 				}),
 			}),
 		}),

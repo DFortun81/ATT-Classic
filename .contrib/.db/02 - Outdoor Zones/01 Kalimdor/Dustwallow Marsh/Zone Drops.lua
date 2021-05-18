@@ -104,6 +104,16 @@ _.Zones =
 						4324,	-- Searing Whelp
 					},
 				}),
+				i(33126, {	-- Thresher Oil
+					["cr"] = 4388,	-- Young Murk Thresher
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+				}),
+				i(33039, {	-- Tool Kit
+					["cr"] = 23589,	-- Defias Rummager
+					["coord"] = { 64.9, 26.9, DUSTWALLOW_MARSH },
+					["u"] = TBC_PHASE_ONE,
+				}),
 				i(5884, {	-- Unpopped Darkmist Eye
 					["questID"] = 1206,	-- Jarl Needs Eyes
 					["crs"] = {

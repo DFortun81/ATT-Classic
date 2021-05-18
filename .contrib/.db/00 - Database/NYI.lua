@@ -46,6 +46,7 @@ _.NeverImplemented =
 		fp(154),	-- Quest - Netherstorm - Manaforge Ultris (Second Pass) Start
 		fp(157),	-- Quest - Blade's Edge - Vision Guide - Start
 		fp(169),	-- Quest - Netherwing Ledge - Mine Cart Ride - South - Start
+		fp(171),	-- Skettis [as far as I know, there's no Flight Path up there?]
 		fp(209),	-- Quest - Sunwell Daily - Dead Scar Bombing - Start
 		fp(211),	-- Quest - Sunwell Daily - Ship Bombing - Start
 		fp(212),	-- Quest - Sunwell Daily - Ship Bombing - End

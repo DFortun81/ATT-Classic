@@ -13,7 +13,7 @@ _.Zones =
 				}),
 				fp(166, {	-- Emerald Sanctuary, Felwood
 					["cr"] = 22931,	-- Gorrim <Emerald Circle Flight Master>
-					["coord"] = { 51.5, 82.2, ASHENVALE },
+					["coord"] = { 51.5, 82.2, FELWOOD },
 					["u"] = TBC_PHASE_ONE,
 				}),
 				fp(65, {	-- Talonbranch Glade, Felwood
