@@ -1372,7 +1372,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then
 					local reason = L["UNOBTAINABLE_ITEM_REASONS"][group.u];
-					if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then
+					if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
 						o.prefix = string.sub(o.prefix, 4) .. "|T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t ";
 					end
 				end
@@ -1560,7 +1560,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if j.itemID == itemID then
 						if j.u and (not j.crs or paramA == "itemID") then
 							local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
-							if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then
+							if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
 								tinsert(info, { left = reason[2] });
 							end
 							break;
@@ -1629,7 +1629,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					local didthing = false;
 					if j.u then
 						local reason = L["UNOBTAINABLE_ITEM_REASONS"][j.u];
-						if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then
+						if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
 							tinsert(unfiltered, text .. " |T" .. L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]] .. ":0|t");
 							didthing = true;
 						end
@@ -6532,7 +6532,7 @@ local function SetRowData(self, row, data)
 		end
 		if data.u then
 			local reason = L["UNOBTAINABLE_ITEM_REASONS"][data.u];
-			if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then
+			if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then
 				local texture = L["UNOBTAINABLE_ITEM_TEXTURES"][reason[1]];
 				if texture then
 					row.Indicator:SetTexture(texture);
@@ -6939,7 +6939,7 @@ local function RowOnEnter(self)
 					GameTooltip:AddLine("Item #" .. reference.itemID);
 					if reference and reference.u then
 						local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-						if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+						if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
 					end
 					AttachTooltipSearchResults(GameTooltip, "itemID:" .. reference.itemID, SearchForField, "itemID", reference.itemID);
 				end
@@ -7160,7 +7160,7 @@ local function RowOnEnter(self)
 			end
 			if reference.u then
 				local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
-				if reason and (not reason[4] or select(4, GetBuildInfo()) < reason[4]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
+				if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
 			end
 		end
 		if reference.questID and app.Settings:GetTooltipSetting("questID") then GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID)); end
