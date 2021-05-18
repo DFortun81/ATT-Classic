@@ -51,21 +51,17 @@ _.WorldEvents = bubbleDown({["u"] = PHASE_FIVE },
 					["u"] = PHASE_FIVE_GONG,
 					["lvl"] = 60,
 					["groups"] = {
-						--[[
-						{
-							["achievementID"] = 416,	-- Scarab Lord (Achievement)
-							["timeline"] = {
-								"added 3.0.1.28000",	-- Added in Wrath of the Lich King Prepatch
-							},
-						},
-						{
-							["titleID"] = 33,	-- Scarab Lord Crieve
-							["timeline"] = {
-								"added 2.0.3.28000",	-- Added in Burning Crusade
-							},
-						},
-						]]--
-						i(21176),	-- Black Qiraji Resonating Crystal
+						ach(416, {	-- Scarab Lord (Achievement)
+							["timeline"] = { "added 3.0.1.28000" },	-- Added in Wrath of the Lich King Prepatch
+							["u"] = WRATH_PHASE_ONE,
+						}),
+						title(33, {	-- Scarab Lord Crieve
+							["timeline"] = { "added 2.0.3.28000" },	-- Added in Burning Crusade
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(21176, {	-- Black Qiraji Resonating Crystal
+							["u"] = PHASE_FIVE_GONG,
+						}),
 					},
 				}),
 				q(8606, {	-- Decoy!

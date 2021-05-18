@@ -5751,6 +5751,112 @@ end)();
 	end
 end)();
 
+-- Title Lib
+(function()
+local fields = {
+	["key"] = function(t)
+		return "titleID";
+	end,
+	["filterID"] = function(t)
+		return 110;
+	end,
+	["icon"] = function(t)
+		return "Interface\\Icons\\INV_Misc_Horn_01";
+	end,
+	["description"] = function(t)
+		return L["TITLES_DESC"];
+	end,
+	["text"] = function(t)
+		local name = t.playerTitle;
+		if name then
+			name = "|cff00ccff" .. name .. "|r";
+			rawset(t, "name", name);
+			return name;
+		end
+	end,
+	["playerTitle"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local style = t.style;
+			if style == 0 then
+				-- Prefix
+				return name .. UnitName("player");
+			elseif style == 1 then
+				-- Player Name First
+				return UnitName("player") .. name;
+			elseif style == 2 then
+				-- Player Name First (with space)
+				return UnitName("player") .. " " .. name;
+			elseif style == 3 then
+				-- Comma Separated
+				return UnitName("player") .. ", " .. name;
+			end
+		end
+	end,
+	["style"] = function(t)
+		local name = GetTitleName(t.titleID);
+		if name then
+			local first = string.sub(name, 1, 1);
+			if first == " " then
+				-- Suffix
+				first = string.sub(name, 2, 2);
+				if first == string.upper(first) then
+					-- Comma Separated
+					return 3;
+				end
+
+				-- Player Name First
+				return 1;
+			else
+				local last = string.sub(name, -1);
+				if last == " " then
+					-- Prefix
+					return 0;
+				end
+
+				-- Suffix
+				if first == string.lower(first) then
+					-- Player Name First with a space
+					return 2;
+				end
+
+				-- Comma Separated
+				return 3;
+			end
+		end
+
+		return 1;	-- Player Name First
+	end,
+	["collectible"] = function(t)
+		return app.CollectibleTitles;
+	end,
+	["trackable"] = function(t)
+		return true;
+	end,
+	["collected"] = function(t)
+		if app.CurrentCharacter.Titles[t.titleID] then return 1; end
+		if app.AccountWideTitles and ATTAccountWideData.Titles[t.titleID] then return 2; end
+		if IsTitleKnown(t.titleID) then
+			app.CurrentCharacter.Titles[t.titleID] = 1;
+			ATTAccountWideData.Titles[t.titleID] = 1;
+			return 1;
+		end
+	end,
+	["saved"] = function(t)
+		if app.CurrentCharacter.Titles[t.titleID] then return true; end
+		if IsTitleKnown(t.titleID) then
+			app.CurrentCharacter.Titles[t.titleID] = 1;
+			ATTAccountWideData.Titles[t.titleID] = 1;
+			return true;
+		end
+	end,
+};
+app.BaseTitle = app.BaseObjectFields(fields);
+app.CreateTitle = function(id, t)
+	return setmetatable(constructor(id, t, "titleID"), app.BaseTitle);
+end
+end)();
+
 -- Filtering
 function app.Filter()
 	-- Meaning "Don't display."
@@ -7172,6 +7278,11 @@ local function RowOnEnter(self)
 				local reason = L["UNOBTAINABLE_ITEM_REASONS"][reference.u];
 				if reason and (not reason[5] or select(4, GetBuildInfo()) < reason[5]) then GameTooltip:AddLine(reason[2], 1, 1, 1, true); end
 			end
+		end
+		if reference.titleID then
+			if app.Settings:GetTooltipSetting("titleID") then GameTooltip:AddDoubleLine(L["TITLE_ID"], tostring(reference.titleID)); end
+			GameTooltip:AddDoubleLine(" ", L[IsTitleKnown(reference.titleID) and "KNOWN_ON_CHARACTER" or "UNKNOWN_ON_CHARACTER"]);
+			AttachTooltipSearchResults(GameTooltip, "titleID:" .. reference.titleID, SearchForField, "titleID", reference.titleID);
 		end
 		if reference.questID and app.Settings:GetTooltipSetting("questID") then GameTooltip:AddDoubleLine(L["QUEST_ID"], tostring(reference.questID)); end
 		if reference.qgs and app.Settings:GetTooltipSetting("QuestGivers") then
@@ -11071,6 +11182,7 @@ app.events.VARIABLES_LOADED = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.SpellRanks then currentCharacter.SpellRanks = {}; end
+	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
 	currentCharacter.lastPlayed = time();
 	app.CurrentCharacter = currentCharacter;
 	
@@ -11199,6 +11311,7 @@ app.events.VARIABLES_LOADED = function()
 	if not accountWideData.FlightPaths then accountWideData.FlightPaths = {}; end
 	if not accountWideData.Quests then accountWideData.Quests = {}; end
 	if not accountWideData.Spells then accountWideData.Spells = {}; end
+	if not accountWideData.Titles then accountWideData.Titles = {}; end
 	
 	-- Convert over the deprecated account wide tables.
 	local data = GetDataMember("Deaths");

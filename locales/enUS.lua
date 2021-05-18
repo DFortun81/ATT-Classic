@@ -79,6 +79,7 @@ app.L = {
 	["OBJECT_ID"] = "Object ID";
 	["QUEST_ID"] = "Quest ID";
 	["SPELL_ID"] = "Spell ID";
+	["TITLE_ID"] = "Title ID";
 
 	-- Icons and Collection Text
 	["LOGO_SMALL"] = "Interface\\Addons\\ATT-Classic\\assets\\logo_tiny";		-- Winner of the Logo Contest (Used to be "Interface\\Icons\\INV_Axe_106.blp")
