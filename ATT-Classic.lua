@@ -3948,6 +3948,16 @@ app.BaseFaction = app.BaseObjectFields(fields);
 app.CreateFaction = function(id, t)
 	return setmetatable(constructor(id, t, "factionID"), app.BaseFaction);
 end
+app.OnUpdateReputationRequired = function(t)
+	if app.Settings:Get("DebugMode") or app.Settings:Get("AccountMode") then
+		t.visible = true;
+		return false;
+	else
+		local reputationID = t.minReputation[1];
+		t.visible = (select(3, GetFactionInfoByID(reputationID)) or 1) >= 4;
+		return true;
+	end
+end
 end)();
 
 -- Filter Lib
