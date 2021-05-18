@@ -3,7 +3,7 @@
 ---------------------------------------------------
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(RARES, {
 				n(18678, {	-- Fulgorge
@@ -67,5 +67,5 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
