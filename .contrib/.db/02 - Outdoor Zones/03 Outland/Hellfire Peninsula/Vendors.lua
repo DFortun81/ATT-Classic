@@ -93,9 +93,14 @@ local VENDOR_GEMS = {
 	i(28467),	-- Smooth Amber (Both)
 	i(28470),	-- Thick Amber (TBC) / Subtle Amber (Cata+)
 };
+local FELANNIA_JOHAN_GROUPS = {};
+-- #if AFTER WRATH
+-- All of these were removed and the associated recipes are now available through trainers now.
+bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS);
+-- #endif
 _.Zones =
 {
-	m(OUTLAND, {
+	m(OUTLAND, applyclassicphase(TBC_PHASE_ONE, {
 		m(HELLFIRE_PENINSULA, {
 			n(VENDORS, {
 				n(18802, {	-- Alchemist Gribble <Alchemy Trainer>
@@ -106,6 +111,7 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -117,6 +123,7 @@ _.Zones =
 							["spellID"] = 28543,	-- Elixir of Camouflage
 							["requireSkill"] = ALCHEMY,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -189,15 +196,7 @@ _.Zones =
 				n(18753, {	-- Felannia <Enchanting Trainer>
 					["coord"] = { 52.2, 36.0, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(16602, {	-- Floyd Pinkus <Innkeeper>
 					["coord"] = { 56.7, 37.5, HELLFIRE_PENINSULA },
@@ -236,26 +235,12 @@ _.Zones =
 				n(18773, {	-- Johan Barnes <Enchanting Trainer>
 					["coord"] = { 53.6, 66.0, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(20753),	-- Formula: Lesser Wizard Oil
-						i(20752),	-- Formula: Minor Mana Oil
-						i(20758),	-- Formula: Minor Wizard Oil
-						i(22307),	-- Pattern: Enchanted Mageweave Pouch
-						-- #if BEFORE CATA
-						i(6342),	-- Formula: Enchant Chest - Minor Mana
-						-- #endif
-					},
+					["groups"] = FELANNIA_JOHAN_GROUPS,
 				}),
 				n(18751, {	-- Kalaen <Jewelcrafting Trainer>
 					["coord"] = { 56.78, 37.79, HELLFIRE_PENINSULA },
 					["races"] = HORDE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["spellID"] = 0, ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
 				}),
 				n(18775, {	-- Lebowski <Engineering Trainer>
 					["coord"] = { 55.6, 65.6, HELLFIRE_PENINSULA },
@@ -265,11 +250,13 @@ _.Zones =
 							["spellID"] = 30316,	-- Cogspinner Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23805, {	-- Schematic: Ultra-Spectropic Detection Goggles
 							["spellID"] = 30318,	-- Ultra-Spectropic Detection Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -354,7 +341,7 @@ _.Zones =
 						}),
 						i(25870, {	-- Recipe: Transmute Skyfire Diamond
 							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
+							["requireSkill"] = ALCHEMY,
 						}),
 						i(29169),	-- Ring of Convalescence
 						i(25826),	-- Sage's Band
@@ -383,11 +370,13 @@ _.Zones =
 							["spellID"] = 30329,	-- Adamantite Scope
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 						i(23803, {	-- Schematic: Cogspinner Goggles
 							["spellID"] = 30316,	-- Cogspinner Goggles
 							["requireSkill"] = ENGINEERING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -473,7 +462,7 @@ _.Zones =
 						}),
 						i(29232, {	-- Recipe: Transmute Skyfire Diamond
 							["spellID"] = 32766,	-- Transmute Skyfire Diamond
-							["requireSkill"] = JEWELCRAFTING,
+							["requireSkill"] = ALCHEMY,
 						}),
 						i(35339),	-- Satin Hood
 						i(35409),	-- Savage Plate Helm
@@ -501,11 +490,13 @@ _.Zones =
 							["spellID"] = 32657,	-- Eternium Rod
 							["requireSkill"] = BLACKSMITHING,
 							["timeline"] = { "removed 5.0.4.10000" },
+							["f"] = 200,
 						}),
 						i(23638, {	-- Plans: Lesser Ward of Shielding
 							["spellID"] = 29728,	-- Lesser Ward of Shielding
 							["requireSkill"] = BLACKSMITHING,
 							["isLimited"] = true,
+							["f"] = 200,
 						}),
 					},
 				}),
@@ -534,13 +525,7 @@ _.Zones =
 				n(18774, {	-- Tatiana <Jewelcrafting Trainer>
 					["coord"] = { 54.6, 63.6, HELLFIRE_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] =
-						-- #if BEFORE WRATH
-						JEWELCRAFTING_PATTERNS,
-						-- #else
-						-- All of these were removed and the associated recipes are now available through trainers now.
-						bubbleDown({ ["u"] = REMOVED_FROM_GAME }, JEWELCRAFTING_PATTERNS),
-						-- #endif
+					["groups"] = JEWELCRAFTING_PATTERNS,
 				}),
 				n(18266, {	-- Warrant Officer Tracy Proudwell
 					["coord"] = { 56.4, 62.8, HELLFIRE_PENINSULA },
@@ -581,5 +566,16 @@ _.Zones =
 				}),
 			}),
 		}),
-	}),
+	})),
 };
+
+-- Add in the items that aren't locked by phase.
+appendGroups({
+	i(20753),	-- Formula: Lesser Wizard Oil
+	i(20752),	-- Formula: Minor Mana Oil
+	i(20758),	-- Formula: Minor Wizard Oil
+	i(22307),	-- Pattern: Enchanted Mageweave Pouch
+	-- #if BEFORE CATA
+	i(6342),	-- Formula: Enchant Chest - Minor Mana
+	-- #endif
+}, FELANNIA_JOHAN_GROUPS);
