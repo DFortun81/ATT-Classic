@@ -12,6 +12,24 @@ _.Zones =
 					["cr"] = 12759,	-- Tideress
 					["races"] = HORDE_ONLY,
 				}),
+				i(23780, {	-- Diabolical Plans [Alliance]
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["crs"] = {
+						11697,	-- Mannoroc Lasher
+						6115,	-- Roaming Felguard
+						6073,	-- Searing Infernal
+					},
+				}),
+				i(23798, {	-- Diabolical Plans [Horde]
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["crs"] = {
+						11697,	-- Mannoroc Lasher
+						6115,	-- Roaming Felguard
+						6073,	-- Searing Infernal
+					},
+				}),
 				i(1351, {	-- Fingerbone Bracers
 					["cr"] = 3808,	-- Forsaken Dark Stalker
 				}),

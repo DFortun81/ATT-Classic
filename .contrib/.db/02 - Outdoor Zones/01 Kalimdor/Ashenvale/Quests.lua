@@ -6,6 +6,31 @@ _.Zones =
 	m(KALIMDOR, {
 		m(ASHENVALE, {
 			n(QUESTS, {
+				q(9533, {	-- A Helping Hand
+					["qg"] = 17106,	-- Vindicator Palanaar
+					["coord"] = { 34.9, 49.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 22,
+				}),
+				q(9517, {	-- A Shameful Waste
+					["qg"] = 17291,	-- Architect Nemos
+					["coord"] = { 86.8, 44.8, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 23776, 15 },	-- Warsong Lumber
+						{ "i", 24081, 5 },	-- Satyrnaar Fel Wood
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 24,
+				}),
+				q(9518, {	-- Agents of Destruction
+					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
+					["coord"] = { 86.0, 44.4, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 24,
+				}),
 				q(1025, {	-- An Aggressive Defense
 					["qg"] = 3691,	-- Raene Wolfrunner
 					["sourceQuest"] = 1023,	-- Raene's Cleansing (2)
@@ -49,7 +74,7 @@ _.Zones =
 						{ "i", 5544, 1 },	-- Dal Bloodclaw's Skull
 					},
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5544,	-- Dal Bloodclaw's Skull
 							["questID"] = 1054,	-- Culling the Threat
@@ -59,6 +84,32 @@ _.Zones =
 						i(1970),	-- Restoring Balm
 					},
 				}),
+				q(9516, {	-- Destroy the Legion [Alliance]
+					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
+					["coord"] = { 86.5, 44.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 26,
+				}),
+				q(9534, {	-- Destroy the Legion [Horde]
+					["qg"] = 17355,	-- Valusha
+					["coord"] = { 73.2, 60.4, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 26,
+				}),
+				q(9520, {	-- Diabolical Plans [Alliance]
+					["provider"] = { "i", 23780 },	-- Diabolical Plans
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+				}),
+				q(9535, {	-- Diabolical Plans [Horde]
+					["provider"] = { "i", 23798 },	-- Diabolical Plans
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+				}),
 				q(1016, {	-- Elemental Bracers
 					["qg"] = 3885,	-- Sentinel Velene Starstrike
 					["coord"] = { 49.8, 67.2, ASHENVALE },
@@ -67,7 +118,7 @@ _.Zones =
 						{ "i", 5455, 1 },	-- Divined Scroll
 					},
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5456,	-- Divining Scroll
 							["cost"] = {
@@ -108,7 +159,7 @@ _.Zones =
 						{ "i", 5508, 1 },	-- Fallen Moonstone
 					},
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5508,	-- Fallen Moonstone
 							["questID"] = 1035,	-- Fallen Sky Lake
@@ -149,7 +200,7 @@ _.Zones =
 					["coord"] = { 85.3, 44.7, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 24,
-					["g"] = {
+					["groups"] = {
 						i(5813),	-- Emil's Brand
 					},
 				}),
@@ -162,7 +213,7 @@ _.Zones =
 						{ "i", 16408, 1 },	-- Befouled Water Globe
 					},
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						i(16659),	-- Deftkin Belt
 						i(16660),	-- Driftmire Shield
 						i(16661),	-- Soft Willow Cape
@@ -195,7 +246,7 @@ _.Zones =
 						{ "i", 16976, 1 },	-- Murgut's Totem
 					},
 					["lvl"] = 21,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16976,	-- Murgut's Totem
 							["questID"] = 6621,	-- King of the Foulweald
@@ -217,7 +268,7 @@ _.Zones =
 						{ "i", 5537, 1 },	-- Sarilus Foulborne's Head
 					},
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5537,	-- Sarilus Foulborne's Head
 							["questID"] = 1017,	-- Mage Summoner
@@ -238,6 +289,44 @@ _.Zones =
 						{ "i", 5490, 20 },	-- Wrathtail Head
 					},
 					["lvl"] = 14,
+				}),
+				q(9522, {	-- Never Again! [Alliance]
+					["qg"] = 17303,	-- Vindicator Vedaar <Hand of Argus>
+					["sourceQuest"] = 9520,	-- Diabolical Plans [Alliance]
+					["coord"] = { 86.5, 44.2, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+					["groups"] = {
+						i(24119, {	-- Band of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(24120, {	-- Seal of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(24118, {	-- Signet of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
+				}),
+				q(9536, {	-- Never Again! [Horde]
+					["qg"] = 17355,	-- Valusha
+					["sourceQuest"] = 9535,	-- Diabolical Plans [Horde]
+					["coord"] = { 73.2, 60.4, ASHENVALE },
+					["races"] = HORDE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 27,
+					["groups"] = {
+						i(24119, {	-- Band of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(24120, {	-- Seal of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+						i(24118, {	-- Signet of Argas
+							["u"] = TBC_PHASE_ONE,
+						}),
+					},
 				}),
 				q(1070, {	-- On Guard in Stonetalon
 					["qg"] = 4079,	-- Sentinel Thenysil
@@ -340,7 +429,7 @@ _.Zones =
 						{ "i", 5547, 1 },	-- Reconstructed Rod
 					},
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						i(5462),	-- Dartol's Rod of Transformation
 					},
 				}),
@@ -380,7 +469,7 @@ _.Zones =
 						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
 					},
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5388,	-- Ran Bloodtooth's Skull
 							["questID"] = 1045,	-- Raene's Cleansing (10)
@@ -399,7 +488,7 @@ _.Zones =
 						{ "i", 5462, 1 },	-- Dartol's Rod of Transformation
 					},
 					["lvl"] = 18,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5462,	-- Dartol's Rod of Transformation
 							["description"] = "There's a trick to keep this item forever:\nBefore turning in the quest to Raene, destroy the item. Ask Raene for it back. Then turn in the quest. The item will be removed from your inventory. However, since you destroyed the first one, you can then use the Blizzard Item Restoration tool to get your destroyed rod back.",
@@ -415,12 +504,32 @@ _.Zones =
 					["maps"] = { STONETALON_MOUNTAINS, DARNASSUS },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						i(7334),	-- Efflorescent Robe
 						i(7335),	-- Grizzly Tunic
 						i(7336),	-- Wildwood Chain
 						i(6678),	-- Band of Elven Grace
 					},
+				}),
+				q(9526, {	-- Reclaiming Felfire Hill
+					["qg"] = 17310,	-- Gnarl <Ancient of War>
+					["coord"] = { 84.2, 45.6, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 23788, 1 },	-- Tree Seedlings
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 24,
+				}),
+				q(9521, {	-- Report from the Northern Front
+					["qg"] = 17287,	-- Sentinel Luciel Starwhisper <Silverwing Sentinels>
+					["coord"] = { 86.0, 44.4, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 23778, 1 },	-- Sentinel Luciel's Report
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 21,
 				}),
 				q(1009, {	-- Ruuzel
 					["qg"] = 3846,	-- Talen
@@ -431,7 +540,7 @@ _.Zones =
 						{ "i", 5445, 1 },	-- Ring of Zoram
 					},
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5445,	-- Ring of Zoram
 							["questID"] = 1009,	-- Ruuzel
@@ -460,7 +569,7 @@ _.Zones =
 					},
 					["lvl"] = 26,
 				}),
-				q(24, {	-- Shadumbra's Head
+				q(24, {		-- Shadumbra's Head
 					["provider"] = { "i", 16304 },	-- Shadumbra's Head
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 					["coord"] = { 59.8, 54.6, ASHENVALE },
@@ -468,7 +577,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(2, {	-- Sharptalon's Claw
+				q(2, {		-- Sharptalon's Claw
 					["provider"] = { "i", 16305 },	-- Sharptalon's Claw
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 					["coord"] = { 75.8, 69.6, ASHENVALE },
@@ -476,7 +585,7 @@ _.Zones =
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
 				}),
-				q(25, {	-- Stonetalon Standstill
+				q(25, {		-- Stonetalon Standstill
 					["qg"] = 12737,	-- Mastok Wrilehiss
 					["coord"] = { 73.66, 60.01, ASHENVALE },
 					["races"] = HORDE_ONLY,
@@ -488,7 +597,7 @@ _.Zones =
 					["coord"] = { 26.2, 38.9, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 19,
-					["g"] = {
+					["groups"] = {
 						i(5323),	-- Everglow Lantern
 						i(6721),	-- Chestplate of Kor
 					},
@@ -535,7 +644,7 @@ _.Zones =
 						{ "i", 5461, 1 },	-- Branch of Cenarius
 					},
 					["lvl"] = 26,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5461,	-- Branch of Cenarius
 							["questID"] = 1031,	-- The Branch of Cenarius
@@ -568,8 +677,23 @@ _.Zones =
 					["coord"] = { 73.78, 61.47, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						i(16658),	-- Wildhunter Cloak
+					},
+				}),
+				q(9519, {	-- The Lost Chalice
+					["qg"] = 3848,	-- Kayneth Stillwind
+					["coord"] = { 85.3, 44.7, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["cost"] = {
+						{ "i", 23760, 1 },	-- Chalice of Elune
+					},
+					["u"] = TBC_PHASE_ONE,
+					["lvl"] = 23,
+					["groups"] = {
+						i(23760, {	-- Chalice of Elune
+							["coord"] = { 81.4, 48.9, ASHENVALE },
+						}),
 					},
 				}),
 				q(6504, {	-- The Lost Pages
@@ -582,7 +706,7 @@ _.Zones =
 						{ "i", 16644, 1 },	-- Shredder Operating Manual - Chapter 3
 					},
 					["lvl"] = 23,
-					["g"] = {
+					["groups"] = {
 						i(16642, {	-- Shredder Operating Manual - Chapter 1
 							["questID"] = 6504,	-- The Lost Pages
 							["cost"] = {
@@ -650,7 +774,7 @@ _.Zones =
 						{ "i", 5533, 1 },	-- Ilkrud Magthrull's Tome
 					},
 					["lvl"] = 13,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 5533,	-- Ilkrud Magthrull's Tome
 							["questID"] = 973,	-- The Tower of Althalaxx (5/9)
@@ -689,7 +813,7 @@ _.Zones =
 					["coord"] = { 68.34, 75.30, ASHENVALE },
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						i(16889),	-- Polished Walking Staff
 						i(16890),	-- Slatemetal Cutlass
 					},
@@ -711,7 +835,7 @@ _.Zones =
 						},
 					},
 				}),
-				q(23, {	-- Ursangous's Paw
+				q(23, {		-- Ursangous's Paw
 					["provider"] = { "i", 16303 },	-- Ursangous's Paw
 					["sourceQuest"] = 6383,	-- The Ashenvale Hunt
 					["coord"] = { 41.6, 66.8, ASHENVALE },
@@ -738,7 +862,7 @@ _.Zones =
 					["cr"] = 12940,	-- Vorsha the Lasher
 					["races"] = HORDE_ONLY,
 					["lvl"] = 20,
-					["g"] = {
+					["groups"] = {
 						i(17692),	-- Horn Ring
 					},
 				}),
@@ -752,7 +876,7 @@ _.Zones =
 						{ "i", 16746, 1 },	-- Warsong Report
 					},
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16765,	-- Warsong Outrider Update
 							["questID"] = 6543,	-- The Warsong Reports
@@ -769,7 +893,7 @@ _.Zones =
 						{ "i", 16746, 1 },	-- Warsong Report
 					},
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16763,	-- Warsong Runner Update
 							["questID"] = 6543,	-- The Warsong Reports
@@ -786,7 +910,7 @@ _.Zones =
 						{ "i", 4369, 1 },	-- Deadly Blunderbuss
 					},
 					["lvl"] = 22,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16742,	-- Warsong Saw Blades
 							["questID"] = 6571,	-- Warsong Supplies
@@ -803,7 +927,7 @@ _.Zones =
 						{ "i", 16746, 1 },	-- Warsong Report
 					},
 					["lvl"] = 17,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16764,	-- Warsong Scout Update
 							["questID"] = 6543,	-- The Warsong Reports
@@ -822,7 +946,7 @@ _.Zones =
 						{ "i", 16742, 1 },	-- Warsong Saw Blades
 					},
 					["lvl"] = 22,
-					["g"] = {
+					["groups"] = {
 						{
 							["itemID"] = 16745,	-- Warsong Axe Shipment
 							["questID"] = 6571,	-- Warsong Supplies
