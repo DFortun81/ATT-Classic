@@ -11,6 +11,12 @@ _.Zones =
 					["coord"] = { 34.4, 48.0, ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
+				fp(167, {	-- Forest Song, Ashenvale
+					["cr"] = 22935,	-- Suralais Farwind <Hippogryph Master>
+					["coord"] = { 85.1, 43.5, ASHENVALE },
+					["races"] = ALLIANCE_ONLY,
+					["u"] = TBC_PHASE_ONE,
+				}),
 				fp(61, {	-- Splintertree Post, Ashenvale
 					["cr"] = 12616,	-- Vhulgra <Wind Rider Master>
 					["coord"] = { 73.2, 61.6, ASHENVALE },
