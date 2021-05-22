@@ -39,3 +39,4 @@ obj/
 .contrib/.tools/ATT.pdb
 .contrib/.tools/Parser V2.exe.config
 .contrib/.tools/Parser V2.pdb
+.contrib/.tools/Parser V2.exe
