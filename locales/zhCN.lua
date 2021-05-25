@@ -156,12 +156,12 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.HEADER_NAMES
+local a = L.HEADER_NAMES;
 for key, value in pairs({}) do
     a[key] = value
 end
 
-local a = L.OBJECT_ID_NAMES
+local a = app.ObjectNames;
 for key, value in pairs({}) do
     a[key] = value
 end

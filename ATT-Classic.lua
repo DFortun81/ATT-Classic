@@ -116,6 +116,20 @@ local containsValue = function(dict, value)
 		if value2 == value then return true; end
 	end
 end
+local defaultComparison = function(a,b)
+	return a > b;
+end
+local insertionSort = function(t, compare)
+	if not compare then compare = defaultComparison; end
+	local j;
+	for i=2,#t,1 do
+		j = i;
+		while j > 1 and compare(t[j], t[j - 1]) do
+			t[j],t[j - 1] = t[j - 1],t[j];
+			j = j - 1;
+		end
+	end
+end
 
 -- Data Lib
 local attData;
@@ -823,6 +837,9 @@ end
 -- Quest Completion Lib
 local DirtyQuests = {};
 local IgnoreErrorQuests = {
+	[1516]=1, 	-- Call of Earth (1/3 Durotar)
+	[1519]=1, 	-- Call of Earth (1/3 Mulgore)
+	[9449]=1, 	-- Call of Earth (1/3 Ammen Vale)
 	[555]=1,	-- Soothing Turtle Bisque (A)
 	[7321]=1,	-- Soothing Turtle Bisque (H)
 	[3630]=1,	-- Gnome Engineering [A]
@@ -1550,7 +1567,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 							end
 						end
 					end
-					table.sort(regroup, function(a, b)
+					insertionSort(regroup, function(a, b)
 						return not (a.headerID and a.headerID == -1) and b.headerID and b.headerID == -1;
 					end);
 				end
@@ -1706,7 +1723,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			if #temp > 0 then
 				local listing = {};
 				local maximum = app.Settings:GetTooltipSetting("Locations");
-				table.sort(temp);
+				insertionSort(temp);
 				for i,j in ipairs(temp) do
 					if not contains(listing, j) then
 						tinsert(listing, 1, j);
@@ -1901,7 +1918,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						local left, right;
 						tinsert(info, { left = "Used to Craft:" });
 						if #entries < 25 then
-							table.sort(entries, function(a, b)
+							insertionSort(entries, function(a, b)
 								if a.group.name then
 									if b.group.name then
 										return a.group.name <= b.group.name;
@@ -1939,7 +1956,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 					if #entries > 0 then
 						tinsert(info, { left = "Used in Recipes:" });
 						if #entries < 25 then
-							table.sort(entries, function(a, b)
+							insertionSort(entries, function(a, b)
 								if a and a.group.name then
 									if b and b.group.name then
 										return a.group.name <= b.group.name;
@@ -1985,7 +2002,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 						if #entries > 0 then
 							tinsert(info, { left = "Available Skill Ups:" });
 							if #entries < 25 then
-								table.sort(entries, function(a, b)
+								insertionSort(entries, function(a, b)
 									if a.group.craftTypeID == b.group.craftTypeID then
 										if a.group.name then
 											if b.group.name then
@@ -2029,7 +2046,7 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				end
 			end
 			if #knownBy > 0 then
-				table.sort(knownBy, function(a, b)
+				insertionSort(knownBy, function(a, b)
 					return a.text < b.text;
 				end);
 				local desc = "Known by ";
@@ -2177,9 +2194,9 @@ fieldConverters = {
 	end,
 	["objectID"] = function(group, value)
 		-- WARNING: DEV ONLY START
-		if not L["OBJECT_ID_NAMES"][value] then
+		if not app.ObjectNames[value] then
 			print("Object Missing Name ", value);
-			L["OBJECT_ID_NAMES"][value] = "Object #" .. value;
+			app.ObjectNames[value] = "Object #" .. value;
 		end
 		-- WARNING: DEV ONLY END
 		CacheField(group, "objectID", value);
@@ -2234,9 +2251,9 @@ fieldConverters = {
 					CacheField(group, "itemID", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
-					if not L["OBJECT_ID_NAMES"][v[2]] then
+					if not app.ObjectNames[v[2]] then
 						print("Object Missing Name ", v[2]);
-						L["OBJECT_ID_NAMES"][v[2]] = "Object #" .. v[2];
+						app.ObjectNames[v[2]] = "Object #" .. v[2];
 					end
 					-- WARNING: DEV ONLY END
 					rawget(fieldConverters, "objectID")(group, v[2]);
@@ -2922,10 +2939,10 @@ local fields = {
 		return "categoryID";
 	end,
 	["text"] = function(t)
-		return L.TRADESKILL_CATEGORY_NAMES[t.categoryID] or ("Unknown Category #" .. t.categoryID);
+		return ATTClassicAD.LocalizedCategoryNames[t.categoryID] or ("Unknown Category #" .. t.categoryID);
 	end,
 	["icon"] = function(t)
-		return L.TRADESKILL_CATEGORY_ICONS[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
+		return ATTC.CategoryIcons[t.categoryID] or "Interface/ICONS/INV_Misc_Gear_02";
 	end,
 };
 app.BaseCategory = app.BaseObjectFields(fields);
@@ -3765,7 +3782,7 @@ local fields = {
 		if #c > 0 then
 			GameTooltip:AddLine(" ");
 			GameTooltip:AddLine("Deaths Per Character:");
-			table.sort(c, function(a, b)
+			insertionSort(c, function(a, b)
 				return a.Deaths > b.Deaths;
 			end);
 			for i,character in ipairs(c) do
@@ -4821,7 +4838,7 @@ local fields = {
 		return "explorationID";
 	end,
 	["text"] = function(t)
-		return C_Map.GetAreaInfo(t.explorationID) or t.maphash;
+		return C_Map.GetAreaInfo(t.explorationID) or t.maphash or "";
 	end,
 	["title"] = function(t)
 		return t.maphash;
@@ -4970,7 +4987,7 @@ app.CreateMap = function(id, t)
 			end
 		end
 		if explorationHeader and explorationHeader.g then
-			table.sort(explorationHeader.g, function(a, b)
+			insertionSort(explorationHeader.g, function(a, b)
 				if a and a.text then
 					if b and b.text then
 						return a.text <= b.text;
@@ -5137,10 +5154,13 @@ local objectFields = {
 		return rawget(t, "isRaid") and ("|cffff8000" .. t.name .. "|r") or t.name;
 	end,
 	["name"] = function(t)
-		return L["OBJECT_ID_NAMES"][t.objectID] or ("Object ID #" .. t.objectID);
+		return app.ObjectNames[t.objectID] or ("Object ID #" .. t.objectID);
 	end,
 	["icon"] = function(t)
-		return L["OBJECT_ID_ICONS"][t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+		return app.ObjectIcons[t.objectID] or "Interface\\Icons\\INV_Misc_Bag_10";
+	end,
+	["model"] = function(t)
+		return app.ObjectModels[t.objectID];
 	end,
 	
 	["collectibleAsQuest"] = function(t)
@@ -5351,7 +5371,7 @@ local questFields = {
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
 					if v[1] == "o" then
-						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
+						return app.ObjectIcons[v[2]] or "Interface\\Icons\\INV_Misc_Bag_10";
 					elseif v[1] == "i" then
 						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Icons\\INV_Misc_Book_09";
 					end
@@ -5364,6 +5384,17 @@ local questFields = {
 			return "Interface\\GossipFrame\\DailyQuestIcon";
 		else
 			return "Interface\\GossipFrame\\AvailableQuestIcon";
+		end
+	end,
+	["model"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return app.ObjectModels[v[2]];
+					end
+				end
+			end
 		end
 	end,
 	["link"] = function(t)
@@ -5435,7 +5466,7 @@ local fields = {
 			for k,v in ipairs(t.providers) do
 				if v[2] > 0 then
 					if v[1] == "o" then
-						return L["OBJECT_ID_ICONS"][v[2]] or "Interface\\Worldmap\\Gear_64Grey";
+						return app.ObjectIcons[v[2]] or "Interface\\Worldmap\\Gear_64Grey";
 					elseif v[1] == "i" then
 						return select(5, GetItemInfoInstant(v[2])) or "Interface\\Worldmap\\Gear_64Grey";
 					end
@@ -5443,6 +5474,17 @@ local fields = {
 			end
 		end
 		return t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+	end,
+	["model"] = function(t)
+		if t.providers then
+			for k,v in ipairs(t.providers) do
+				if v[2] > 0 then
+					if v[1] == "o" then
+						return app.ObjectModels[v[2]];
+					end
+				end
+			end
+		end
 	end,
 	["objectiveID"] = function(t)
 		return 1;
@@ -5522,7 +5564,7 @@ app.CompareQuestieDB = function()
 				table.insert(missingQuestIDs, id);
 			end
 		end
-		table.sort(missingQuestIDs);
+		insertionSort(missingQuestIDs);
 		for _,id in ipairs(missingQuestIDs) do
 			print("Missing Quest ", id);
 		end
@@ -7248,7 +7290,7 @@ local function RowOnEnter(self)
 					end
 				end
 				if #knownBy > 0 then
-					table.sort(knownBy, function(a, b)
+					insertionSort(knownBy, function(a, b)
 						return a[2] > b[2];
 					end);
 					GameTooltip:AddLine("|cff66ccffKnown by:|r");
@@ -7300,7 +7342,7 @@ local function RowOnEnter(self)
 				local providerID = provider[2] or 0
 				local providerString = "UNKNOWN"
 				if providerType == "o" then
-					providerString = L["OBJECT_ID_NAMES"][providerID] or reference.text or 'Object #'..providerID
+					providerString = app.ObjectNames[providerID] or reference.text or 'Object #'..providerID
 				elseif providerType == "n" then
 					providerString = (providerID > 0 and NPCNameFromID[providerID]) or "Creature #"..providerID
 				elseif providerType == "i" then
@@ -8093,7 +8135,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			table.sort(self.g, function(a, b)
+			insertionSort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
 		end
@@ -8129,7 +8171,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			table.sort(self.g, function(a, b)
+			insertionSort(self.g, function(a, b)
 				return a.text < b.text;
 			end);
 		end;
@@ -8151,7 +8193,7 @@ function app:GetDataCache()
 					end
 				end
 			end
-			table.sort(missingCoordinates);
+			insertionSort(missingCoordinates);
 			for i,npcID in ipairs(missingCoordinates) do
 				print("NPC ID " .. npcID .. " is missing coordinates.");
 			end
@@ -8546,7 +8588,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 					end
 					
 					-- Sort Member List
-					table.sort(groupMembers, data.Sort);
+					insertionSort(groupMembers, data.Sort);
 					for i,unit in ipairs(groupMembers) do
 						table.insert(data.g, unit);
 					end
@@ -8593,7 +8635,7 @@ app:GetWindow("Attuned", UIParent, function(self)
 								local any = false;
 								for rankIndex = 1, numRanks, 1 do
 									if #guildRanks[rankIndex].g > 0 then
-										table.sort(guildRanks[rankIndex].g, data.Sort);
+										insertionSort(guildRanks[rankIndex].g, data.Sort);
 										any = true;
 									end
 								end
@@ -10142,7 +10184,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 					end
 					
 					-- Sort Member List
-					table.sort(g, data.Sort);
+					insertionSort(g, data.Sort);
 					
 					-- Insert Control Methods
 					table.insert(g, 1, app.CreateSoftReserveUnit(app.GUID));
@@ -10201,7 +10243,7 @@ app:GetWindow("SoftReserves", UIParent, function(self)
 								local any = false;
 								for rankIndex = 1, numRanks, 1 do
 									if #guildRanks[rankIndex].g > 0 then
-										table.sort(guildRanks[rankIndex].g, data.Sort);
+										insertionSort(guildRanks[rankIndex].g, data.Sort);
 										any = true;
 									end
 								end
@@ -11222,6 +11264,10 @@ app.events.VARIABLES_LOADED = function()
 		OnLeave = MinimapButtonOnLeave,
 	});
 	
+	-- Cache the Localized Category Data
+	ATTClassicAD.LocalizedCategoryNames = setmetatable(ATTClassicAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
+	app.CategoryNames = nil;
+	
 	-- Cache the Localized Flight Path Data
 	ATTClassicAD.LocalizedFlightPathDB = setmetatable(ATTClassicAD.LocalizedFlightPathDB or {}, { __index = app.FlightPathDB });
 	app.FlightPathDB = nil;
@@ -11455,6 +11501,7 @@ app.events.VARIABLES_LOADED = function()
 	for i,key in ipairs({
 		"AddonMessageProcessor",
 		"GroupQuestsByGUID",
+		"LocalizedCategoryNames",
 		"LocalizedFlightPathDB",
 		"Position",
 		"RandomSearchFilter",
@@ -11842,7 +11889,7 @@ app.events.ADDON_LOADED = function(addonName)
 				end
 				table.insert(window.data.g, subdata);
 			end
-			table.sort(window.data.g, function(a, b)
+			insertionSort(window.data.g, function(a, b)
 				return (b.priority or 0) > (a.priority or 0);
 			end);
 			BuildGroups(window.data, window.data.g);

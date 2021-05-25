@@ -96,7 +96,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.OBJECT_ID_NAMES;
+local a = app.ObjectNames;
 for key,value in pairs({
 	-- Enter translated OBJECTID's here
 })

@@ -95,13 +95,13 @@ for key,value in pairs({
 })
 do a[key] = value; end
 
-local a = L.OBJECT_ID_NAMES;
+local a = app.ObjectNames;
 for key,value in pairs({
 	-- Enter translated OBJECTID's here
 })
 do a[key] = value; end
 
-local a = L.TRADESKILL_CATEGORY_NAMES;
+local a = app.CategoryNames;
 for key,value in pairs({
 	-- Engineering
 	[1] = "투사체",	-- Bullets
