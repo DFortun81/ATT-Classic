@@ -430,8 +430,6 @@ app.L = {
 		["Scholomance"] = 476,
 		["Shadowfang Keep"] = 310,
 		["Stratholme"] = 317,
-		[C_Map.GetAreaInfo(3431)] = 467,	-- Sunstrider Isle
-		[C_Map.GetAreaInfo(3526)] = 468,	-- Ammen Vale
 		["Temple of Ahn'Qiraj"] = 320,
 		["The Deadmines"] = 291,
 		["The Temple of Atal'hakkar"] = 220,
@@ -478,12 +476,6 @@ app.L = {
 		["The Temple of Atal'Hakkar"] = 220,
 		["The Battle for Mount Hyjal"] = 329,
 		["The Eye"] = 334,
-		[C_Map.GetAreaInfo(3527)] = 468,	-- Ammen Vale (Crash Site)
-		[C_Map.GetAreaInfo(3560)] = 468,	-- Ammen Vale (Ammen Fields)
-		[C_Map.GetAreaInfo(3528)] = 468,	-- Ammen Vale (Silverline Lake)
-		[C_Map.GetAreaInfo(3559)] = 468,	-- Ammen Vale (Nestlewood Hills)
-		[C_Map.GetAreaInfo(3529)] = 468,	-- Ammen Vale (Nestlewood Thicket)
-		[C_Map.GetAreaInfo(3561)] = 468,	-- Ammen Vale (The Sacred Grove)
 	};
 	
 	-- This is necessary because sometimes the names of spells do not match for different languages.
