@@ -463,6 +463,7 @@ settings.UpdateMode = function(self)
 			app.ItemTypeFilter = app.NoFilter;
 			app.ClassRequirementFilter = app.NoFilter;
 			app.RequiredSkillFilter = app.NoFilter;
+			app.RequireFactionFilter = app.NoFilter;
 			if self:Get("FactionMode") then
 				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
 			else
@@ -473,6 +474,7 @@ settings.UpdateMode = function(self)
 			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
 			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
 			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 		end
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then

@@ -1009,9 +1009,7 @@ end
 local function CreateHash(t)
 	local key = t.key or GetKey(t);
 	if key then
-		local hash = key .. (rawget(t, key) or t[key]);
-		rawset(t, "hash", hash);
-		return hash;
+		return key .. t[key];
 	end
 end
 local function GetHash(t)
@@ -1431,6 +1429,8 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 						else
 							right = L["NOT_COLLECTED_ICON"];
 						end
+					elseif group.visible then
+						right = group.count and (group.count .. "x") or "---";
 					end
 				elseif group.visible then
 					right = group.count and (group.count .. "x") or "---";
@@ -1672,6 +1672,27 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 			end
 		end
 		
+		--[[
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				for i,o in ipairs(costResults) do
+					MergeObject(group, o);
+				end
+			end
+		elseif paramA == "itemID" then
+			local costResults = app.SearchForField("itemIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				for i,o in ipairs(costResults) do
+					if o.itemID ~= paramB then
+						print(o.key, o[o.key], o.text);
+						MergeObject(group, o);
+					end
+				end
+			end
+		end
+		]]
+		
 		-- Create a list of sources
 		if app.Settings:GetTooltipSetting("SourceLocations") and (not paramA or (app.Settings:GetTooltipSetting(paramA == "creatureID" and "SourceLocations:Creatures" or "SourceLocations:Things"))) then
 			local temp = {};
@@ -1817,7 +1838,60 @@ local function GetCachedSearchResults(search, method, paramA, paramB, ...)
 				group = CreateObject({ [paramA] = paramB });
 				group.g = merged;
 			end
-			
+		end
+		
+		
+		
+		-- Resolve Cost
+		--[[
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not group.g then group.g = {} end
+				for i,o in ipairs(costResults) do
+					MergeObject(group.g, o);
+				end
+			end
+		elseif paramA == "itemID" or (paramA == "s" and group.itemID) then
+			local costResults = app.SearchForField("itemIDAsCost", group.itemID or paramB);
+			if costResults and #costResults > 0 then
+				if not group.g then group.g = {} end
+				for i,o in ipairs(costResults) do
+					if o.itemID ~= paramB then
+						MergeObject(group.g, o);
+					end
+				end
+			end
+		end
+		]]
+		-- Resolve Cost
+		if paramA == "currencyID" then
+			local costResults = app.SearchForField("currencyIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not group.g then group.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(group.g, usedToBuy);
+			end
+		elseif paramA == "itemID" then
+			local costResults = app.SearchForField("itemIDAsCost", paramB);
+			if costResults and #costResults > 0 then
+				if not group.g then group.g = {} end
+				local usedToBuy = app.CreateNPC(-2);
+				usedToBuy.text = "Currency For";
+				if not usedToBuy.g then usedToBuy.g = {}; end
+				for i,o in ipairs(costResults) do
+					MergeObject(usedToBuy.g, CreateObject(o));
+				end
+				MergeObject(group.g, usedToBuy);
+			end
+		end
+		
+		if group.g then
 			group.total = 0;
 			group.progress = 0;
 			app.UpdateGroups(group, group.g);
@@ -2248,7 +2322,6 @@ fieldConverters = {
 					CacheField(group, "creatureID", v[2]);
 				elseif v[1] == "i" then
 					CacheField(group, "itemIDAsCost", v[2]);
-					CacheField(group, "itemID", v[2]);
 				elseif v[1] == "o" then
 					-- WARNING: DEV ONLY START
 					if not app.ObjectNames[v[2]] then
@@ -2273,7 +2346,6 @@ fieldConverters = {
 		else
 			for k,v in pairs(value) do
 				if v[1] == "i" and v[2] > 0 then
-					CacheField(group, "itemID", v[2]);
 					CacheField(group, "itemIDAsCost", v[2]);
 				elseif v[1] == "o" and v[2] > 0 then
 					CacheField(group, "objectID", v[2]);
@@ -2975,6 +3047,15 @@ local GetClassIDFromClassFile = function(classFile)
 		end
 	end
 end
+app.ClassDB = setmetatable({}, { __index = function(t, className)
+	for i,_ in pairs(classIcons) do
+		local info = C_CreatureInfo.GetClassInfo(i);
+		if info and info.className == className then
+			rawset(t, className, i);
+			return i;
+		end
+	end
+end });
 local SoftReserveUnitOnClick = function(self, button)
 	local guid = self.ref.guid or self.ref.unit;
 	if guid then
@@ -3923,6 +4004,21 @@ local StandingByID = {
 		["threshold"] = 42000,
 	},
 };
+app.FactionNameByID = setmetatable({}, { __index = function(t, id)
+	local name = select(1, GetFactionInfoByID(id));
+	if name then
+		rawset(t, id, name);
+		rawset(app.FactionIDByName, name, id);
+		return name;
+	end
+end });
+app.FactionIDByName = setmetatable({}, { __index = function(t, name)
+	for i=1,3000,1 do
+		if app.FactionNameByID[i] == name then
+			return i;
+		end
+	end
+end });
 app.ColorizeStandingText = function(standingID, text)
 	local standing = StandingByID[standingID];
 	if standing then
@@ -3931,6 +4027,10 @@ app.ColorizeStandingText = function(standingID, text)
 		local rgb = FACTION_BAR_COLORS[standingID];
 		return Colorize(text, RGBToHex(rgb.r * 255, rgb.g * 255, rgb.b * 255));
 	end
+end
+app.GetFactionIDByName = function(name)
+	name = strtrim(name);
+	return app.FactionIDByName[name] or name;
 end
 app.GetFactionStanding = function(reputation)
 	-- Total earned rep from GetFactionInfoByID is a value AWAY FROM ZERO, not a value within the standing bracket.
@@ -3947,6 +4047,17 @@ end
 app.GetFactionStandingText = function(standingID)
 	return app.ColorizeStandingText(standingID, _G["FACTION_STANDING_LABEL" .. standingID] or UNKNOWN);
 end
+app.GetFactionStandingThresholdFromString = function(replevel)
+	replevel = strtrim(replevel);
+	for standing=1,8,1 do
+		if _G["FACTION_STANDING_LABEL" .. standing] == replevel then
+			return StandingByID[standing].threshold;
+		end
+	end
+end
+app.IsFactionExclusive = function(factionID)
+	return factionID == 934 or factionID == 932;
+end
 local fields = {
 	["key"] = function(t)
 		return "factionID";
@@ -3955,7 +4066,7 @@ local fields = {
 		return app.ColorizeStandingText((t.saved and 8) or (t.standing + (t.isFriend and 2 or 0)), t.name);
 	end,
 	["name"] = function(t)
-		return select(1, GetFactionInfoByID(t.factionID)) or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
+		return app.FactionNameByID[t.factionID] or (t.creatureID and NPCNameFromID[t.creatureID]) or (FACTION .. " #" .. t.factionID);
 	end,
 	["icon"] = function(t)
 		return app.asset("Category_Factions");
@@ -4451,17 +4562,9 @@ local itemFields = {
 	end,
 	["f"] = function(t)
 		if t.questID then return 104; end
-		local results = SearchForField("itemID", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
-		end
 		local results = SearchForField("itemIDAsCost", t.itemID);
-		if results then
-			for i,o in ipairs(results) do
-				if o.questID then return 104; end
-			end
+		if results and #results > 0 then
+			return 104;
 		end
 	end,
 	["tsm"] = function(t)
@@ -4518,26 +4621,14 @@ local itemFields = {
 		local id = t.itemID;
 		local results = app.SearchForField("itemIDAsCost", id, true);
 		if results and #results > 0 then
-			local collected, count = true, 0;
 			for _,ref in pairs(results) do
 				if ref.itemID ~= id and app.RecursiveGroupRequirementsFilter(ref) then
-					if ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) then
-						count = count + 1;
-						if ref.progress < ref.total then
-							collected = false;
-						end
-					elseif ref.collectible then
-						count = count + 1;
-						if not ref.collected then
-							collected = false;
-						end
+					if (ref.collectible and not ref.collected) or (ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) and ref.progress < ref.total) then
+						return false;
 					end
 				end
 			end
-			if count > 0 then
-				return collected;
-			end
-			return false;
+			return true;
 		end
 	end,
 	["collectedAsCostAfterFailure"] = function(t)
@@ -4618,6 +4709,11 @@ fields.metaAfterFailure = function(t) return newMeta; end;
 end)();
 app.CreateItem = function(id, t)
 	if t then
+		--[[
+		if t.requireSkill and t.f == 200 then
+			print("Missing SpellID for ItemID ", id);
+		end
+		]]--
 		if rawget(t, "factionID") then
 			if rawget(t, "questID") then
 				return setmetatable(constructor(id, t, "itemID"), app.BaseItemWithQuestIDAndFactionID);
@@ -4629,6 +4725,167 @@ app.CreateItem = function(id, t)
 		end
 	end
 	return setmetatable(constructor(id, t, "itemID"), app.BaseItem);
+end
+
+local HarvestedItemDatabase = {};
+local itemHarvesterFields = RawCloneData(itemFields);
+itemHarvesterFields.collectible = function(t)
+	return true;
+end
+itemHarvesterFields.collected = function(t)
+	return false;
+end
+itemHarvesterFields.text = function(t)
+	local link = t.link;
+	if link then
+		local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount,
+		itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent
+			= GetItemInfo(link);
+		if itemName then
+			local spellName, spellID;
+			if class == "Recipe" or class == "Mount" then
+				spellName, spellID = GetItemSpell(t.itemID);
+				if spellName == "Learning" then spellID = nil; end	-- RIP.
+				setmetatable(t, app.BaseItemTooltipHarvester);
+			else
+				setmetatable(t, app.BaseItemTooltipHarvester);
+			end
+			local info = {
+				["name"] = itemName,
+				["itemID"] = t.itemID,
+				["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+				["class"] = classID,
+				["subclass"] = subclassID,
+				["inventoryType"] = C_Item.GetItemInventoryTypeByID(t.itemID),
+				["b"] = bindType,
+				["q"] = itemQuality,
+				["iLvl"] = itemLevel,
+				["spellID"] = spellID,
+			};
+			if itemMinLevel and itemMinLevel > 0 then
+				info.lvl = itemMinLevel;
+			end
+			if info.inventoryType == 0 then
+				info.inventoryType = nil;
+			end
+			if info.b and info.b < 1 then
+				info.b = nil;
+			end
+			if info.iLvl and info.iLvl < 2 then
+				info.iLvl = nil;
+			end
+			t.itemType = itemType;
+			t.itemSubType = itemSubType;
+			t.info = info;
+			t.retries = nil;
+			HarvestedItemDatabase[t.itemID] = info;
+			ATTClassicAD.HarvestedItemDatabase = HarvestedItemDatabase;
+			return link;
+		end
+	end
+	
+	t.retries = (t.retries or 0) + 1;
+	if t.retries > 30 then
+		rawset(t, "collected", true);
+	end
+end
+app.BaseItemHarvester = app.BaseObjectFields(itemHarvesterFields);
+
+local ItemHarvester = CreateFrame("GameTooltip", "ATTCItemHarvester", UIParent, "GameTooltipTemplate");
+local itemTooltipHarvesterFields = RawCloneData(itemHarvesterFields);
+itemTooltipHarvesterFields.text = function(t)
+	local link = t.link;
+	if link then
+		ItemHarvester:SetOwner(UIParent,"ANCHOR_NONE")
+		ItemHarvester:SetHyperlink(link);
+		local lineCount = ItemHarvester:NumLines();
+		if ATTCItemHarvesterTextLeft1:GetText() and ATTCItemHarvesterTextLeft1:GetText() ~= RETRIEVING_DATA and lineCount > 0 then
+			local requirements = {};
+			for index=2,lineCount,1 do
+				local line = _G["ATTCItemHarvesterTextLeft" .. index] or _G["ATTCItemHarvesterText" .. index];
+				if line then
+					local text = line:GetText();
+					if text then
+						if string.find(text, "Classes: ") then
+							local classes = {};
+							local _,list = strsplit(":", text);
+							for i,s in ipairs({strsplit(",", list)}) do
+								table.insert(classes, app.ClassDB[strtrim(s)]);
+							end
+							if #classes > 0 then
+								t.info.classes = classes;
+							end
+						elseif string.find(text, "Races: ") then
+							local races = {};
+							local _,list = strsplit(":", text);
+							for i,s in ipairs({strsplit(",", list)}) do
+								table.insert(races, app.RaceDB[strtrim(s)]);
+							end
+							if #races > 0 then
+								t.info.races = races;
+							end
+						elseif string.find(text, "Requires") and not string.find(text, "Level") and not string.find(text, "Riding") then
+							local c = strsub(text, 1, 1);
+							if c ~= " " and c ~= "\t" and c ~= "\n" and c ~= "\r" then
+								text = strsub(strtrim(text), 9);
+								if string.find(text, "-") then
+									local faction,replevel = strsplit("-", text);
+									t.info.minReputation = { app.GetFactionIDByName(faction), app.GetFactionStandingThresholdFromString(replevel) };
+								else
+									text = strtrim(text);
+									if string.find(text, "%(") then
+										local spellName = strsplit("(", text);
+										spellName = strtrim(spellName);
+										if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+										local spellID = app.SpellNameToSpellID[spellName];
+										if spellID then
+											local skillID = app.SpellIDToSkillID[spellID];
+											if skillID then
+												t.info.requireSkill = skillID;
+											else
+												print("Unknown Skill::()", text);
+												table.insert(requirements, text);
+											end
+										else
+											print("Unknown Spell::()", text);
+											table.insert(requirements, text);
+										end
+									else
+										local spellName = strtrim(text);
+										if spellName == "Herbalism" then spellName = "Herb Gathering"; end
+										local spellID = app.SpellNameToSpellID[spellName];
+										if spellID then
+											local skillID = app.SpellIDToSkillID[spellID];
+											if skillID then
+												t.info.requireSkill = skillID;
+											else
+												print("Unknown Skill", text);
+												table.insert(requirements, text);
+											end
+										else
+											print("Unknown Spell", text);
+											table.insert(requirements, text);
+										end
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+			if #requirements > 0 then
+				t.info.otherRequirements = requirements;
+			end
+			rawset(t, "text", link);
+			rawset(t, "collected", true);
+		end
+		ItemHarvester:Hide();
+		return link;
+	end
+end
+app.BaseItemTooltipHarvester = app.BaseObjectFields(itemTooltipHarvesterFields);
+app.CreateItemHarvester = function(id, t)
+	return setmetatable(constructor(id, t, "itemID"), app.BaseItemHarvester);
 end
 end)();
 
@@ -5230,6 +5487,9 @@ app.SkillIDToSpellID = setmetatable({
 	[10656] = 10656,	-- Dragonscale Leatherworking
 	[10658] = 10658,	-- Elemental Leatherworking
 	[10660] = 10660,	-- Tribal Leatherworking
+	[26801] = 26801,	-- Shadoweave Tailoring
+	[26797] = 26797,	-- Spellfire Tailoring
+	[26798] = 26798,	-- Mooncloth Tailoring
 }, {__index = function(t,k) return k; end});
 app.SpellIDToSkillID = {};
 for skillID,spellID in pairs(app.SkillIDToSpellID) do
@@ -5246,6 +5506,9 @@ app.SpecializationSpellIDs = setmetatable({
 	[10656] = 2108,	-- Dragonscale Leatherworking
 	[10658] = 2108,	-- Elemental Leatherworking
 	[10660] = 2108,	-- Tribal Leatherworking
+	[26801] = 3908,	-- Shadoweave Tailoring
+	[26797] = 3908,	-- Spellfire Tailoring
+	[26798] = 3908,	-- Mooncloth Tailoring
 }, {__index = function(t,k) return k; end})
 
 local BLACKSMITHING = ATTC.SkillIDToSpellID[164];
@@ -6019,7 +6282,8 @@ function app.FilterItemClass(item)
 			and app.RequireBindingFilter(item)
 			and app.RequiredSkillFilter(item)
 			and app.ClassRequirementFilter(item)
-			and app.RaceRequirementFilter(item);
+			and app.RaceRequirementFilter(item)
+			and app.RequireFactionFilter(item);
 	end
 end
 function app.FilterItemClass_RequireClasses(item)
@@ -6089,6 +6353,18 @@ function app.FilterItemClass_RequiredSkill(item)
 		return true;
 	end
 end
+function app.FilterItemClass_RequireFaction(item)
+	if item.minReputation and app.IsFactionExclusive(item.minReputation[1]) then
+		if item.minReputation[2] >= (select(6, GetFactionInfoByID(item.minReputation[1])) or 0) then
+			--print("Filtering Out", item.key, item[item.key], item.text, item.minReputation[1], app.CreateFaction(item.minReputation[1]).text);
+			return false;
+		else
+			return true;
+		end
+	else
+		return true;
+	end
+end
 function app.FilterItemClass_UnobtainableItem(item)
 	if item.u and not ATTClassicSettings.Unobtainables[item.u] then
 		return false;
@@ -6115,6 +6391,7 @@ app.ClassRequirementFilter = app.NoFilter;
 app.RaceRequirementFilter = app.NoFilter;
 app.RequireBindingFilter = app.NoFilter;
 app.RequiredSkillFilter = app.NoFilter;
+app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 app.UnobtainableItemFilter = app.FilterItemClass_UnobtainableItem;
 app.ShowIncompleteThings = app.Filter;
 
@@ -6694,6 +6971,10 @@ local function CreateMiniListForGroup(group)
 		else
 			-- This is a standalone item
 			group.visible = true;
+			if not group.g and (group.itemID or group.currencyID) then
+				local cmd = group.link or group.key .. ":" .. group[group.key];
+				group = GetCachedSearchResults(cmd, SearchForLink, cmd);
+			end
 			popout.data = group;
 		end
 		
@@ -8335,7 +8616,10 @@ function app:GetWindow(suffix, parent, onUpdate)
 		end
 		window.DelayedUpdate = function(self)
 			window.delayRemaining = 180;
-			StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
+			StartCoroutine(window:GetName() .. ":DelayedUpdatePreWarm", function()
+				coroutine.yield();
+				StartCoroutine(window:GetName() .. ":DelayedUpdate", DelayedUpdateCoroutine);
+			end);
 		end
 		
 		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
@@ -9483,71 +9767,32 @@ app:GetWindow("ItemFinder", UIParent, function(self, ...)
 					['OnUpdate'] = app.AlwaysShowUpdate,
 				},
 			};
-			db.blacklist = {
-				[25]=1,
-				[35]=1,
-				[36]=1,
-				[37]=1,
-				[39]=1,
-				[40]=1,
-				[41]=1,
-				[42]=1,
-				[43]=1,
-				[44]=1,
-				[46]=1,
-				[47]=1,
-				[48]=1,
-				[50]=1,
-				[51]=1,
-				[52]=1,
-				[54]=1,
-				[55]=1,
-				[56]=1,
-				[57]=1,
-				[58]=1,
-				[59]=1,
-				[77]=1,
-				[85]=1,
-				[86]=1,
-				[87]=1,
-				[88]=1,
-			};
-			db.OnUpdate = function(db)
-				if self:IsVisible() then
-					local iCache = fieldCache["itemID"];
-					for i=761,23720 do
-						if not iCache[i] then
-							local t = app.CreateItem(i);
-							t.parent = db;
-							t.fails = 0;
-							t.OnUpdate = function(source)
-								local text = source.text;
-								if text and text ~= RETRIEVING_DATA then
-									source.OnUpdate = nil;
-								else
-									source.fails = source.fails + 1;
-									self.shouldFullRefresh = true;
-								end
+			db.OnUpdate = function(t)
+				local g = t.g;
+				if g then
+					local count = #g;
+					if count > 0 then
+						for i=count,1,-1 do
+							if g[i].collected then
+								table.remove(g, i);
+								self.shouldFullRefresh = true;
 							end
-							tinsert(db.g, t);
 						end
 					end
-					db.OnUpdate = function(self)
-						local g = self.g;
-						if g then
-							local count = #g;
-							if count > 0 then
-								for i=count,1,-1 do
-									if g[i].fails > 2 then
-										table.remove(g, i);
-									end
-								end
-							end
+					for count=#g,100 do
+						local i = db.currentItemID - 1;
+						if i > 0 then
+							db.currentItemID = i;
+							local t = app.CreateItemHarvester(i);
+							t.parent = db;
+							tinsert(g, t);
+							self.shouldFullRefresh = true;
 						end
-					end;
-					
+					end
+					self:DelayedUpdate(true);
+					self.delayRemaining = 1;
 				end
-			end
+			end;
 			db.text = "Item Finder";
 			db.icon = app.asset("Achievement_Dungeon_GloryoftheRaider");
 			db.description = "This is a contribution debug tool. NOT intended to be used by the majority of the player base.\n\nUsing this tool will lag your WoW every 5 seconds. Not sure why - likely a bad Blizzard Database thing.";
@@ -9556,6 +9801,7 @@ app:GetWindow("ItemFinder", UIParent, function(self, ...)
 			db.progress = 0;
 			db.total = 0;
 			db.back = 1;
+			db.currentItemID = 40001;
 			self.data = db;
 		end
 		self.data.progress = 0;
