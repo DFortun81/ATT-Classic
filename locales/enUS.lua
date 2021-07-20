@@ -164,6 +164,8 @@ app.L = {
 		[32] = GetItemSubClassInfo(2,2),						-- Bows
 		[33] = GetItemSubClassInfo(2,18),						-- Crossbows
 		[34] = GetItemSubClassInfo(2,13),						-- Fist Weapons
+		[35] = INVTYPE_AMMO,									-- Ammo
+		[36] = INVTYPE_THROWN,									-- Thrown
 
 		-- Accessories
 		[50] = AUCTION_CATEGORY_MISCELLANEOUS,					-- Miscellaneous
@@ -205,6 +207,8 @@ app.L = {
 		[32] = "Interface\\Icons\\inv_weapon_bow_05",						-- Bows
 		[33] = "Interface\\Icons\\inv_weapon_crossbow_01",					-- Crossbows
 		[34] = "Interface\\Icons\\inv_misc_monsterclaw_02",					-- Fist Weapons
+		[35] = "Interface\\Icons\\inv_ammo_bullet_01",						-- Ammo
+		[36] = "Interface\\Icons\\inv_throwingknife_02",					-- Thrown
 		[50] = "Interface\\Icons\\Spell_Misc_Drink",						-- Miscellaneous
 		[51] = "Interface\\Icons\\INV_Jewelry_Necklace_02",					-- Neck
 		[52] = "Interface\\Icons\\INV_Jewelry_Ring_04",						-- Finger
@@ -319,6 +323,7 @@ app.L = {
 		[-30] = FACTION_ALLIANCE,												-- Alliance
 		[-31] = FACTION_HORDE, 													-- Horde
 		[-32] = "Honor Titles",													-- Honor Titles
+		[-37] = BATTLE_PET_SOURCE_11,											-- Discovery
 -- World Events
 		[-47] = "Lunar Festival",												-- Lunar Festival
 		[-50] = "Love is in the Air",											-- Love is in the Air
@@ -404,6 +409,27 @@ app.L = {
 		["Ahn'Qiraj"] = "Temple of Ahn'Qiraj";
 		["Ahn'Qiraj Temple"] = "Temple of Ahn'Qiraj";
 		["Sunken Temple"] = "The Temple of Atal'hakkar";
+		["Auchindoun: Auchenai Crypts"] = "Auchenai Crypts";
+		["Auchindoun: Crypts"] = "Auchenai Crypts";
+		["Auchindoun: Mana-Tombs"] = "Mana Tombs";
+		["Auchindoun: The Mana Tombs"] = "Mana Tombs";
+		["Auchindoun: Sethekk Halls"] = "Sethekk Halls";
+		["Auchindoun: Shadow Labyrinth"] = "Shadow Labyrinth";
+		["Auchindoun: The Shadow Labyrinth"] = "Shadow Labyrinth";
+		["Coilfang: Slave Pens"] = "The Slave Pens";
+		["Coilfang: The Slave Pens"] = "The Slave Pens";
+		["Coilfang: The Steamvault"] = "The Steamvault";
+		["Coilfang: Underbog"] = "The Underbog";
+		["Coilfang: The Underbog"] = "The Underbog";
+		["Caverns of Time: Old Hillsbrad Foothills"] = "Old Hillsbrad Foothills";
+		["Caverns of Time: The Black Morass"] = "The Black Morass";
+		["Hellfire Citadel: Ramparts"] = "Hellfire Ramparts";
+		["Hellfire Citadel: Blood Furnace"] = "The Blood Furnace";
+		["Hellfire Citadel: The Blood Furnace"] = "The Blood Furnace";
+		["Hellfire Citadel: The Shattered Halls"] = "The Shattered Halls";
+		["Tempest Keep: The Arcatraz"] = "The Arcatraz";
+		["Tempest Keep: The Botanica"] = "The Botanica";
+		["Tempest Keep: The Mechanar"] = "The Mechanar";
 	};
 
 	-- This is necessary to have because Blizzard does not always have the correct map ID at the time of zone change.
@@ -512,6 +538,9 @@ app.L = {
 		[1701] = {2, "|CFFAAFFAAThis was only available during the Opening of the Dark Portal event before the launch of TBC.|r", "Dark Portal Opens", 20501, nil, "\n \n|CFFFFAAAAIf the Dark Portal has been opened on your server, simply turn this off.|r" },
 		[18] = {2, "|CFFAAFFAAThis was not available until Phase 2 of TBC Classic.|r", "Phase 2", 20501, 20502 },
 		[19] = {2, "|CFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r", "Phase 3", 20501, 20503 },
+		[1901] = {2, "|CFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r", "Netherwing", 20501, nil, "\n \n|CFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r" },
+		[1902] = {2, "|CFFAAFFAAThis became available with the Skyguard Faction during TBC Classic.|r", "Skyguard", 20501, nil, "\n \n|CFFFFAAAAIf the Skyguard Faction is available on your server, simply turn this on.|r" },
+		[1903] = {2, "|CFFAAFFAAThis became available with the Ogri'la Faction during TBC Classic.|r", "Ogri'la", 20501, nil, "\n \n|CFFFFAAAAIf the Ogri'la Faction is available on your server, simply turn this on.|r" },
 		[20] = {2, "|CFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r", "Phase 4", 20501, 20504 },
 		[21] = {2, "|CFFAAFFAAThis was not available until Phase 5 of TBC Classic.|r", "Phase 5", 20501, 20505 },
 
