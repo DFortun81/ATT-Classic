@@ -11067,7 +11067,7 @@ app:GetWindow("Tradeskills", UIParent, function(self, ...)
 							
 							if craftType ~= "none" then
 								-- Attempt to harvest the item associated with this craft.
-								NPCHarvester:SetCraftSpell(craftIndex);
+								GameTooltip.SetCraftSpell(NPCHarvester, craftIndex);
 								local link, craftedItemID = select(2, NPCHarvester:GetItem());
 								if link then craftedItemID = GetItemInfoInstant(link); end
 								
