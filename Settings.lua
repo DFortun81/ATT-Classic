@@ -17,6 +17,7 @@ BINDING_NAME_ATTC_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
 BINDING_NAME_ATTC_TOGGLECOMPLETEDGROUPS = L["TOGGLE_COMPLETEDGROUPS"];
 BINDING_NAME_ATTC_TOGGLECOLLECTEDTHINGS = L["TOGGLE_COLLECTEDTHINGS"];
 BINDING_NAME_ATTC_TOGGLEBOEITEMS = L["TOGGLE_BOEITEMS"];
+BINDING_NAME_ATTC_TOGGLELOOTDROPS = L["TOGGLE_LOOTDROPS"];
 BINDING_NAME_ATTC_TOGGLESOURCETEXT = L["TOGGLE_SOURCETEXT"];
 
 BINDING_HEADER_ATTC_MODULES = L["MODULES"];
@@ -83,21 +84,31 @@ local GeneralSettingsBase = {
 		["AccountMode"] = false,
 		["DebugMode"] = false,
 		["FactionMode"] = false,
+		["AccountWide:Achievements"] = false,
+		["AccountWide:BattlePets"] = true,
 		["AccountWide:Deaths"] = true,
 		["AccountWide:Exploration"] = false,
 		["AccountWide:FlightPaths"] = true,
+		["AccountWide:Mounts"] = true,
 		["AccountWide:PVPRanks"] = false,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
+		["AccountWide:Titles"] = true,
+		["AccountWide:Toys"] = true,
+		["Thing:Achievements"] = true,
+		["Thing:BattlePets"] = true,
 		["Thing:Deaths"] = true,
 		["Thing:Exploration"] = true,
 		["Thing:FlightPaths"] = true,
-		["Thing:Loot"] = false,
-		["Thing:PVPRanks"] = false,
+		--["Thing:Loot"] = false,
+		--["Thing:Mounts"] = false,
+		--["Thing:PVPRanks"] = false,
 		["Thing:Quests"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
+		["Thing:Titles"] = true,
+		["Thing:Toys"] = true,
 		["Show:CompletedGroups"] = false,
 		["Show:CollectedThings"] = false,
 	},
@@ -120,6 +131,7 @@ local TooltipSettingsBase = {
 		["Enabled"] = true,
 		["KnownBy"] = true,
 		["Locations"] = 5,
+		["Lore"] = true,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
 		["MinimapButton"] = true,
@@ -154,6 +166,7 @@ local UnobtainableSettingsBase = {
 	__index = {
 		[1] = false,	-- Never Implemented
 		[2] = false,	-- Removed From Game
+		[3] = false,	-- Blizzard Balance
 
 		-- Seasonal Filters
 		[1000] = false,	-- Brewfest
@@ -167,6 +180,7 @@ local UnobtainableSettingsBase = {
 		[1008] = false,	-- Midsummer Fire Festival
 		[1010] = false,	-- Noblegarden
 		[1011] = false,	-- Pirate's Day
+		[1013] = false,	-- Pilgrim's Bounty
 	},
 };
 local OnClickForTab = function(self)
@@ -269,6 +283,10 @@ settings.GetModeString = function(self)
 			mode = "Insane " .. mode;
 		else
 			mode = "Normal " .. mode;
+		end
+		
+		if self:Get("Thing:Mounts") then
+			mode = mode .. " + Mounts";
 		end
 	end
 	if self:Get("Filter:ByLevel") then
@@ -419,21 +437,31 @@ settings.UpdateMode = function(self)
 		app.SeasonalItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
 
+		app.AccountWideAchievements = true;
+		app.AccountWideBattlePets = true;
 		app.AccountWideDeaths = true;
 		app.AccountWideExploration = true;
 		app.AccountWideFlightPaths = true;
+		app.AccountWideMounts = true;
 		app.AccountWidePVPRanks = true;
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
+		app.AccountWideTitles = true;
+		app.AccountWideToys = true;
 
+		app.CollectibleAchievements = true;
+		app.CollectibleBattlePets = true;
 		app.CollectibleExploration = true;
 		app.CollectibleFlightPaths = true;
 		app.CollectibleLoot = true;
+		app.CollectibleMounts = true;
 		app.CollectiblePVPRanks = true;
 		app.CollectibleQuests = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
+		app.CollectibleTitles = true;
+		app.CollectibleToys = true;
 	else
 		app.VisibilityFilter = app.ObjectVisibilityFilter;
 		app.GroupFilter = app.FilterItemClass;
@@ -443,21 +471,31 @@ settings.UpdateMode = function(self)
 			app.SeasonalItemFilter = app.NoFilter;
 		end
 
+		app.AccountWideAchievements = self:Get("AccountWide:Achievements");
+		app.AccountWideBattlePets = self:Get("AccountWide:BattlePets");
 		app.AccountWideDeaths = self:Get("AccountWide:Deaths");
 		app.AccountWideExploration = self:Get("AccountWide:Exploration");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
+		app.AccountWideMounts = self:Get("AccountWide:Mounts");
 		app.AccountWidePVPRanks = self:Get("AccountWide:PVPRanks");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
+		app.AccountWideTitles = self:Get("AccountWide:Titles");
+		app.AccountWideToys = self:Get("AccountWide:Toys");
 
+		app.CollectibleAchievements = self:Get("Thing:Achievements");
+		app.CollectibleBattlePets = self:Get("Thing:BattlePets");
 		app.CollectibleExploration = self:Get("Thing:Exploration");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
 		app.CollectibleLoot = self:Get("Thing:Loot");
+		app.CollectibleMounts = self:Get("Thing:Mounts");
 		app.CollectiblePVPRanks = self:Get("Thing:PVPRanks");
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
+		app.CollectibleTitles = self:Get("Thing:Titles");
+		app.CollectibleToys = self:Get("Thing:Toys");
 
 		if self:Get("AccountMode") then
 			app.ItemTypeFilter = app.NoFilter;
@@ -542,22 +580,22 @@ settings.version = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings, "BOTTOMLEFT", 0, -6);
-f:SetText("https://www.twitch.tv/crieve");
+f:SetText("discord.gg/allthethings");
 f:SetWidth(230);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!");
+f:SetATTTooltip("Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!");
 settings.twitch = f;
 
 f = CreateFrame("Button", nil, settings, "OptionsButtonTemplate");
 f:SetPoint("TOPLEFT", settings.twitch, "TOPRIGHT", 4, 0);
-f:SetText("https://discord.gg/9GFDsgy");
+f:SetText("twitch.tv/crieve");
 f:SetWidth(200);
 f:SetHeight(30);
 f:RegisterForClicks("AnyUp");
 f:SetScript("OnClick", settings.ShowCopyPasteDialog);
-f:SetATTTooltip("Click this button to copy the url to get to the ALL THE THINGS Discord.\n\nYou can share your progress/frustrations with other collectors!");
+f:SetATTTooltip("Click this button to copy the url to get to my Twitch Channel.\n\nYou can ask questions while I'm streaming and I will try my best to answer them!");
 settings.community = f;
 
 ------------------------------------------
@@ -699,6 +737,82 @@ ThingsLabel.OnRefresh = function(self)
 	end
 end;
 
+local AchievementsCheckBox = settings:CreateCheckBox(TRACKER_FILTER_ACHIEVEMENTS,
+function(self)
+	self:SetChecked(settings:Get("Thing:Achievements"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Achievements", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AchievementsCheckBox:SetATTTooltip("Enable this option to track achievements.\n\nNOTE: At this time, they are not officially implemented in WoW's API, but ATT can kinda make its own until then.");
+AchievementsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+
+local AchievementsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Achievements"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Achievements") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Achievements", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+AchievementsAccountWideCheckBox:SetATTTooltip("This behaviour is dependent on whether an achievement supports detection account wide or not. Unchecking this option just tells the achievement that you only want to check your current character. Some achievements are exclusively per-character.");
+AchievementsAccountWideCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "TOPLEFT", 220, 0);
+
+local BattlePetsCheckBox = settings:CreateCheckBox(AUCTION_CATEGORY_BATTLE_PETS,
+function(self)
+	self:SetChecked(settings:Get("Thing:BattlePets"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:BattlePets", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+BattlePetsCheckBox:SetATTTooltip("Enable this option to track battle & companion pets.\n\nNOTE: At this time, you cannot use them for battling, but they can follow you around and be all cute and stuff.\n\nGotta Horde 'em all!");
+BattlePetsCheckBox:SetPoint("TOPLEFT", AchievementsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local BattlePetsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:BattlePets"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:BattlePets") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:BattlePets", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+BattlePetsAccountWideCheckBox:SetATTTooltip("Companion pets can be collected on multiple characters and realistically would require that you have an insane amount of bag space in order to collect them all on one character.\n\nWe recommend you keep this turned on, but you do you fam.");
+BattlePetsAccountWideCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "TOPLEFT", 220, 0);
+
 local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
 function(self)
 	self:SetChecked(settings:Get("Thing:Deaths"));
@@ -716,7 +830,7 @@ function(self)
 	app:RefreshData();
 end);
 DeathsCheckBox:SetATTTooltip("Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.");
-DeathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+DeathsCheckBox:SetPoint("TOPLEFT", BattlePetsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -832,6 +946,44 @@ end);
 LootCheckBox:SetATTTooltip("Enable this option to track loot.\n\nLoot being any item you can get from a mob, quest, or container. Loot that qualifies for one of the other filters will still appear in ATT if this filter is turned off.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
 LootCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
 
+
+local MountsCheckBox = settings:CreateCheckBox("Mounts",
+function(self)
+	self:SetChecked(settings:Get("Thing:Mounts"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Mounts", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+MountsCheckBox:SetATTTooltip("Enable this option to track mounts.\n\nFair warning! Do this at your own risk, it will take up a lot of inventory space across your account and they can not be sent between characters!\n\nAdditionally, the cost of all Vendor mounts is reduced to 1/10 of their current prices with Wrath.");
+MountsCheckBox:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, 4);
+
+local MountsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Mounts"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Mounts") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Mounts", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+MountsAccountWideCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "TOPLEFT", 220, 0);
+
 local QuestsCheckBox = settings:CreateCheckBox("Quests",
 function(self)
 	self:SetChecked(settings:Get("Thing:Quests"));
@@ -849,7 +1001,7 @@ function(self)
 	app:RefreshData();
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and Repeatable Quests are tracked in the Blizzard Database.");
-QuestsCheckBox:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox:SetPoint("TOPLEFT", MountsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -944,6 +1096,82 @@ function(self)
 end);
 ReputationsAccountWideCheckBox:SetATTTooltip("Reputations are not normally tracked account wide in Blizzard's database, but we can do that.");
 ReputationsAccountWideCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "TOPLEFT", 220, 0);
+
+local TitlesCheckBox = settings:CreateCheckBox(PAPERDOLL_SIDEBAR_TITLES,
+function(self)
+	self:SetChecked(settings:Get("Thing:Titles"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Titles", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+TitlesCheckBox:SetATTTooltip("Enable this option to track character titles.");
+TitlesCheckBox:SetPoint("TOPLEFT", ReputationsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local TitlesAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Titles"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Titles") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Titles", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+TitlesAccountWideCheckBox:SetATTTooltip("Titles are not normally tracked account wide in Blizzard's database, but we can do that.");
+TitlesAccountWideCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "TOPLEFT", 220, 0);
+
+local ToysCheckBox = settings:CreateCheckBox(TOY_BOX,
+function(self)
+	self:SetChecked(settings:Get("Thing:Toys"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Toys", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ToysCheckBox:SetATTTooltip("Enable this option to track items that currently act as a toy or become a collectible toy in the future.");
+ToysCheckBox:SetPoint("TOPLEFT", TitlesCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ToysAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Toys"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Toys") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Toys", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ToysAccountWideCheckBox:SetATTTooltip("Toys are not normally tracked account wide in Blizzard's database, but we can do that.");
+ToysAccountWideCheckBox:SetPoint("TOPLEFT", ToysCheckBox, "TOPLEFT", 220, 0);
 
 local ShowMinimapButtonCheckBox = settings:CreateCheckBox("Show the Minimap Button",
 function(self)
@@ -1350,16 +1578,16 @@ ClassicPhasesLabel:Show();
 table.insert(settings.MostRecentTab.objects, ClassicPhasesLabel);
 
 -- Classic Phases
-local last, xoffset, yoffset, offset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 0, 8, 1;
-for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, -spacing, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, 0 }, { 1503, 0 }, { 1504, 0 }, { 16, -spacing, -vspacing }, { 1601, spacing, -vspacing }, { 1602, 0 }, { 1603, 0 }, }) do
+local last, xoffset, yoffset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 8, 1;
+for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, spacing }, { 1503, spacing }, { 1504, spacing }, { 16, 0, -vspacing }, { 1601, spacing, -vspacing }, { 1602, spacing }, { 1603, spacing }, }) do
 	local u = o[1];
-	offset = offset + o[2];
 	yoffset = o[3] or 6;
 	local reason = reasons[u];
 	local filter = settings:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", o[2], yoffset);
-	filter:SetScale(offset > 0 and 0.8 or 1);
+	filter:SetPoint("LEFT", ClassicPhasesLabel, "LEFT", o[2], 0);
+	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+	filter:SetScale(o[2] > 0 and 0.8 or 1);
 	filter.u = u;
 	last = filter;
 end
@@ -1371,16 +1599,16 @@ TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
 TBCPhasesLabel:Show();
 table.insert(settings.MostRecentTab.objects, TBCPhasesLabel);
 
-last, xoffset, yoffset, offset = TBCPhasesLabel, 0, -4, 0;
-for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, -spacing, -vspacing }, { 19, 0 }, {1901, spacing, -vspacing }, { 1902, 0 }, { 1903, 0 }, { 20, -spacing, -vspacing }, { 21, 0 }, }) do
+last, xoffset, yoffset = TBCPhasesLabel, 0, -4;
+for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing },  { 1802, spacing },  { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 20, 0, -vspacing }, { 21, 0 }, }) do
 	local u = o[1];
-	offset = offset + o[2];
 	yoffset = o[3] or 6;
 	local reason = reasons[u];
 	local filter = settings:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", o[2], yoffset);
-	filter:SetScale(offset > 0 and 0.8 or 1);
+	filter:SetPoint("LEFT", TBCPhasesLabel, "LEFT", o[2], 0);
+	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+	filter:SetScale(o[2] > 0 and 0.8 or 1);
 	filter.u = u;
 	last = filter;
 end
@@ -1394,7 +1622,7 @@ table.insert(settings.MostRecentTab.objects, SeasonalHolidayFiltersLabel);
 
 -- Seasonal Filters
 last, xoffset, yoffset = SeasonalHolidayFiltersLabel, 0, -4;
-for i,u in ipairs({ 1000, 1001, 1002, 1012, 1003, 1004, 1005, 1006, 1007, 1008, 1010, 1011 }) do
+for i,u in ipairs({ 1000, 1001, 1002, 1012, 1003, 1004, 1005, 1006, 1007, 1008, 1010, 1011, 1013, 1015 }) do
 	local filter = settings:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(reasons[u][2]);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1413,7 +1641,7 @@ table.insert(settings.MostRecentTab.objects, GeneralUnobtainableFiltersLabel);
 -- General Unobtainable Filters
 yoffset = -4;
 last = GeneralUnobtainableFiltersLabel;
-for i,u in ipairs({ 1, 2  }) do
+for i,u in ipairs({ 1, 2, 3 }) do
 	local filter = settings:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
 	filter:SetATTTooltip(reasons[u][2]);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
@@ -1795,6 +2023,7 @@ DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
+	["achievementID"] = "Achievement ID",
 	["artID"] = "Art ID",
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
@@ -1808,6 +2037,7 @@ local ids = {
 	["flightPathID"] = "Flight Path ID",
 	["itemID"] = "Item ID",
 	["itemString"] = "Item String",
+	["Lore"] = "Lore",
 	["mapID"] = "Map ID",
 	["modelID"] = "Model ID",
 	["objectID"] = "Object ID",
@@ -1817,7 +2047,7 @@ local ids = {
 	["spellID"] = "Spell ID",
 };
 local last = nil;
-for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"achievementID","artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
@@ -1834,7 +2064,7 @@ for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID",
 	last = filter;
 end
 last = nil;
-for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
+for _,id in pairs({"itemID","itemString","Lore","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
 	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));

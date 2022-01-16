@@ -20,6 +20,11 @@
 	<Binding name="ATTC_TOGGLEBOEITEMS" category="ADDONS">
 		ATTC.Settings:ToggleBOEItems();
 	</Binding>
+	<Binding name="ATTC_TOGGLELOOTDROPS" category="ADDONS">
+		ATTC.Settings:Set("Thing:Loot", not ATTC.Settings:Get("Thing:Loot"));
+		ATTC.Settings:UpdateMode();
+		ATTC:RefreshData();
+	</Binding>
 	<Binding name="ATTC_TOGGLESOURCETEXT" category="ADDONS">
 		ATTC.Settings:SetTooltipSetting("SourceLocations", 
 		not ATTC.Settings:GetTooltipSetting("SourceLocations"));
