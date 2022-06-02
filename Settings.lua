@@ -35,6 +35,7 @@ settings.name = app:GetName();
 settings.MostRecentTab = nil;
 settings:Hide();
 settings.Tabs = {};
+settings.TabsByName = {};
 settings:SetBackdrop({
 	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
 	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -122,6 +123,8 @@ local TooltipSettingsBase = {
 	__index = {
 		["Auto:MiniList"] = true,
 		["Auto:ProfessionList"] = true,
+		["Auto:Sync"] = true,
+		["Integrate:LFGBulletinBoard"] = true,
 		["Celebrate"] = true,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
@@ -241,6 +244,33 @@ settings.Initialize = function(self)
 	if self:GetTooltipSetting("Auto:WorldQuestsList") then
 		app:GetWindow("WorldQuests"):Show();
 	end
+	
+	-- Account Synchronization
+	self.TabsByName["Features"]:InitializeSyncWindow();
+	if self:GetTooltipSetting("Auto:Sync") then
+		C_Timer.After(1, function()
+			app:Synchronize(true);
+		end);
+	end
+end
+settings.CheckSeasonalDate = function(self, u, startMonth, startDay, endMonth, endDay)
+	local today = date("*t");
+	local now, start, ends = time({day=today.day,month=today.month,year=today.year,hour=0,min=0,sec=0});
+	if startMonth <= endMonth then
+		start = time({day=startDay,month=startMonth,year=today.year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=today.year,hour=0,min=0,sec=0});
+	else
+		local year = today.year;
+		if today.month < startMonth then year = year - 1; end
+		start = time({day=startDay,month=startMonth,year=year,hour=0,min=0,sec=0});
+		ends = time({day=endDay,month=endMonth,year=year + 1,hour=0,min=0,sec=0});
+	end
+	
+	local active = (now >= start and now <= ends);
+	UnobtainableSettingsBase.__index[u] = active;
+end
+settings.CheckWeekDay = function(self, u, weekDay)
+	UnobtainableSettingsBase.__index[u] = date("*t").wday == weekDay;
 end
 settings.Get = function(self, setting)
 	return ATTClassicSettings.General[setting];
@@ -360,6 +390,7 @@ settings.CreateTab = function(self, text)
 	tab.objects = {};
 	tab:SetID(id);
 	tab:SetText(text);
+	self.TabsByName[text] = tab;
 	PanelTemplates_TabResize(tab, 0);
 	tab:SetScript('OnClick', OnClickForTab);
 	return tab;
@@ -515,6 +546,11 @@ settings.UpdateMode = function(self)
 			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
 		end
 	end
+	
+	self:SetFilter(100, app.CollectibleMounts);
+	self:SetFilter(101, app.CollectibleBattlePets);
+	self:SetFilter(102, app.CollectibleToys);
+	self:SetFilter(200, app.CollectibleRecipes);
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
 	else
@@ -1436,7 +1472,7 @@ end
 
 -- Secondary Weapon Classes
 yoffset = -4;
-for i,filterID in ipairs({ 50, 57, 100, 54, 1 }) do
+for i,filterID in ipairs({ 50, 57, 54, 1 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1446,7 +1482,7 @@ end
 
 -- Miscellaneous
 yoffset = -4;
-for i,filterID in ipairs({ 113, 55, 104, 200 }) do
+for i,filterID in ipairs({ 113, 55, 104 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1534,7 +1570,17 @@ tab.OnRefresh = function(self)
 	end
 end;
 local UnobtainableFilterOnClick = function(self)
-	settings:SetUnobtainableFilter(self.u, self:GetChecked());
+	local checked = self:GetChecked();
+	if checked then
+		-- If the phase is active, fall through to the base setting.
+		if UnobtainableSettingsBase.__index[self.u] then
+			settings:SetUnobtainableFilter(self.u, nil);
+		else
+			settings:SetUnobtainableFilter(self.u, true);
+		end
+	else
+		settings:SetUnobtainableFilter(self.u, false);
+	end
 end;
 local UnobtainableOnRefresh = function(self)
 	if settings:Get("DebugMode") then
@@ -1550,6 +1596,11 @@ local UnobtainableOnRefresh = function(self)
 		else
 			self:Enable();
 			self:SetAlpha(1);
+			if UnobtainableSettingsBase.__index[self.u] then
+				self.Text:SetTextColor(0.6, 0.7, 1);
+			else
+				self.Text:SetTextColor(1, 1, 1);
+			end
 		end
 	end
 end;
@@ -1600,7 +1651,7 @@ TBCPhasesLabel:Show();
 table.insert(settings.MostRecentTab.objects, TBCPhasesLabel);
 
 last, xoffset, yoffset = TBCPhasesLabel, 0, -4;
-for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing },  { 1802, spacing },  { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 20, 0, -vspacing }, { 21, 0 }, }) do
+for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local reason = reasons[u];
@@ -2253,6 +2304,16 @@ end);
 OpenRaidAssistantAutomatically:SetATTTooltip("Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra");
 OpenRaidAssistantAutomatically:SetPoint("TOPLEFT", OpenProfessionListAutomatically, "BOTTOMLEFT", 0, 4);
 
+local IntegrateWithLFGBulletinBoard = settings:CreateCheckBox("Integrate With LFG Bulletin Board",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Integrate:LFGBulletinBoard"));
+end,
+function(self)
+	settings:SetTooltipSetting("Integrate:LFGBulletinBoard", self:GetChecked());
+end);
+IntegrateWithLFGBulletinBoard:SetATTTooltip("Enable this option if you want ATT to inject completion data on to the headers of LFG Bulletin Board if it is installed. In addition, holding Shift while Right Clicking the instance header will open the instance in an ATT mini list.\n\nDefault: On");
+IntegrateWithLFGBulletinBoard:SetPoint("TOPLEFT", OpenRaidAssistantAutomatically, "BOTTOMLEFT", 0, -4);
+
 local CelebrationsLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 CelebrationsLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -50, -8);
 CelebrationsLabel:SetJustifyH("LEFT");
@@ -2302,6 +2363,55 @@ function(self)
 end);
 WarnRemovedThingsCheckBox:SetATTTooltip("Enable this option if you want to hear a warning sound effect when you accidentally sell back or trade an item that granted you an appearance that would cause you to lose that appearance from your collection.\n\nThis can be extremely helpful if you vendor an item with a purchase timer. The addon will tell you that you've made a mistake.");
 WarnRemovedThingsCheckBox:SetPoint("TOPLEFT", DeathSoundCheckBox, "BOTTOMLEFT", 0, 4);
+
+local SyncLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
+SyncLabel:SetPoint("LEFT", ModulesLabel, "LEFT", 0, 0);
+SyncLabel:SetPoint("TOP", IntegrateWithLFGBulletinBoard, "BOTTOM", 0, -4);
+SyncLabel:SetJustifyH("LEFT");
+SyncLabel:SetText("Account Synchronization");
+SyncLabel:Show();
+table.insert(settings.MostRecentTab.objects, SyncLabel);
+
+local AutomaticallySyncAccountDataCheckBox = settings:CreateCheckBox("Automatically Sync Account Data",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Auto:Sync"));
+end,
+function(self)
+	local checked = self:GetChecked();
+	settings:SetTooltipSetting("Auto:Sync", checked);
+	if checked then app:Synchronize(true); end
+end);
+AutomaticallySyncAccountDataCheckBox:SetATTTooltip("Enable this option if you want ATT to attempt to automatically synchronize account data between accounts when logging in or reloading the UI.");
+AutomaticallySyncAccountDataCheckBox:SetPoint("TOPLEFT", SyncLabel, "BOTTOMLEFT", 4, 0);
+
+function tab:InitializeSyncWindow()
+	local syncWindow = app:GetWindow("Sync");
+	local syncWindow_Show,naughty = syncWindow.Show;
+	syncWindow.OnRefresh = syncWindow.Update;
+	syncWindow.Show = function(self)
+		if not naughty then
+			naughty = true;
+			syncWindow_Show(self);
+			self:Update();
+		end
+		naughty = nil;
+	end
+	syncWindow.CloseButton:Disable();
+	syncWindow:SetClampedToScreen(false);
+	syncWindow:SetUserPlaced(false);
+	syncWindow:SetToplevel(false);
+	syncWindow:SetMovable(false);
+	syncWindow:SetResizable(false);
+	syncWindow:SetParent(settings);
+	syncWindow.Refresh = function(self)
+		self:ClearAllPoints();
+		self:SetPoint("LEFT", SyncLabel, "LEFT", 0, 0);
+		self:SetPoint("RIGHT", SyncLabel, "LEFT", 300, 0);
+		self:SetPoint("TOP", AutomaticallySyncAccountDataCheckBox, "BOTTOM", 0, 4);
+		self:SetPoint("BOTTOM", settings, "BOTTOM", 0, 4);
+	end
+	table.insert(tab.objects, syncWindow);
+end
 end)();
 
 ------------------------------------------
